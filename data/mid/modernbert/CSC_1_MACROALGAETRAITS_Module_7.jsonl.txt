@@ -1,0 +1,22 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+reducesAgitationCausedBy is ObjectProperty.
+EnvironmentalCausativeFactor is Class.
+EnvironmentalCausativeFactor DisjointWith PersonWithDementiaFocusedIntervention.
+EnvironmentalIntervention is Class.
+EnvironmentalIntervention SubClassOf PersonWithDementiaFocusedIntervention,.
+EnvironmentalIntervention SubClassOf reducesAgitationCausedBy some EnvironmentalCausativeFactor,.
+EnvironmentalIntervention SubClassOf reducesAgitationCausedBy only PersonWithDementiaFocusedIntervention.
+PersonWithDementiaFocusedIntervention is Class.
+PersonWithDementiaFocusedIntervention DisjointWith .
+PersonWithDementiaFocusedIntervention DisjointWith EnvironmentalCausativeFactor.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing is www.w3.org/2002/07/#.
+PhysicalEnvironmentalIntervention is Class.
+PhysicalEnvironmentalIntervention SubClassOf EnvironmentalIntervention.
+SocialEnvironmentalIntervention is Class.
+SocialEnvironmentalIntervention SubClassOf EnvironmentalIntervention.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.
+reducesAgitationCausedBy some EnvironmentalCausativeFactor is Class.
+reducesAgitationCausedBy some EnvironmentalCausativeFactor SubClassOf SocialEnvironmentalIntervention.

@@ -1,0 +1,60 @@
+www.w3.org/2000/01/-schema# is Datatype.
+anyURI is Datatype.
+string is Datatype.
+isAdministeredBy is ObjectProperty.
+calendarLink is DataProperty.
+calendarLink Domain CalendarLink.
+calendarLink Range anyURI.
+geo is DataProperty.
+key is DataProperty.
+key Domain Key.
+key Range anyURI.
+language is DataProperty.
+sortAs is DataProperty.
+timeZone is DataProperty.
+non_self_governing is Class.
+non_self_governing SubClassOf territory,.
+non_self_governing SubClassOf isAdministeredBy only self_governing,.
+Thing is isAdministeredBy max 1 www.w3.org/2002/07/#.
+self_governing is Class.
+territory is Class.
+ARG_2000010 is Class.
+ARG_2000011 is Class.
+ARG_2000011 SubClassOf ARG_2000010.
+BFO_0000002 is Class.
+BFO_0000031 is Class.
+BFO_0000031 SubClassOf BFO_0000002.
+IAO_0000030 is Class.
+IAO_0000030 SubClassOf BFO_0000031.
+OBI_0000571 is Class.
+Certificate is Class.
+Certificate SubClassOf Credential.
+Credential is Class.
+Foundation is Class.
+Organization is ns.com/foaf/0.1/.
+GraduateStudent is Class.
+GraduateStudent SubClassOf Student.
+NonFacultyAcademicPosition is Class.
+PostdocPosition is Class.
+PostdocPosition SubClassOf NonFacultyAcademicPosition.
+Student is Class.
+UndergraduateStudent is Class.
+UndergraduateStudent SubClassOf Student.
+www.w3.org/2002/07/# is Class.
+Address is Class.
+Address SubClassOf Addressing.
+Addressing is Class.
+Literal)) or ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema# is ((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#.
+Thing is www.w3.org/2002/07/#.
+Calendar is Class.
+CalendarLink is Class.
+CalendarLink EquivalentTo (calendarLink some anyURI).
+CalendarLink SubClassOf Calendar.
+Gender is Class.
+Key is Class.
+Key EquivalentTo (key some anyURI).
+Key SubClassOf Security.
+Security is Class.
+Unknown is Class.
+Unknown SubClassOf Gender.
+ns.com/foaf/0.1/ is Class.

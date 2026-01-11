@@ -1,0 +1,16 @@
+is(EnvironmentalFallMinimisationStrategy,Class):1.0
+SubClassOf(EnvironmentalFallMinimisationStrategy,FallMinimisationStrategy):1.0
+is(FallMinimisationStrategy,Class):1.0
+EquivalentTo(FallMinimisationStrategy,PressureUlcerMinimisationStrategy):1.0
+SubClassOf(FallMinimisationStrategy,MinimisationStrategy):1.0
+DisjointWith(FallMinimisationStrategy,PressureUlcerMinimisationStrategy):1.0
+is(MinimisationStrategy,Class):1.0
+SubClassOf(MinimisationStrategy,EnvironmentalFallMinimisationStrategy):1.0
+is(PressureUlcerMinimisationStrategy,Class):1.0
+EquivalentTo(PressureUlcerMinimisationStrategy,FallMinimisationStrategy):1.0
+DisjointWith(PressureUlcerMinimisationStrategy,FallMinimisationStrategy):1.0
+is(ProceduralDevice,Class):1.0
+SubClassOf(ProceduralDevice,FallMinimisationStrategy):1.0
+is(StructuralDevice,Class):1.0
+SubClassOf(StructuralDevice,FallMinimisationStrategy):1.0
+is(www.w3.org/2002/07/#,Class):1.0

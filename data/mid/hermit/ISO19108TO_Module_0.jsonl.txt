@@ -1,0 +1,185 @@
+TM_RelativePosition is Datatype
+TM_RelativePosition EquivalentTo {"After" , "Before" , "Begins" , "BegunBy" , "Contains" , "During" , "EndedBy" , "Ends" , "Equals" , "Meets" , "MetBy" , "OverlappedBy" , "Overlaps"}
+www.w3.org/2000/01/-schema# is Datatype
+integer is Datatype
+string is Datatype
+TM_Edge.end is ObjectProperty
+TM_Edge.end Domain TM_Edge
+TM_Edge.end Range TM_Node
+TM_Edge.end InverseOf TM_Node.previousEdge
+TM_Edge.geometry is ObjectProperty
+TM_Edge.geometry Domain TM_Edge
+TM_Edge.geometry Range TM_Period
+TM_Edge.geometry InverseOf TM_Period.topology
+TM_Edge.start is ObjectProperty
+TM_Edge.start Domain TM_Edge
+TM_Edge.start Range TM_Node
+TM_Edge.start InverseOf TM_Node.nextEdge
+TM_Instant.begunBy is ObjectProperty
+TM_Instant.begunBy Domain TM_Instant
+TM_Instant.begunBy Range TM_Period
+TM_Instant.begunBy InverseOf TM_Period.begin
+TM_Instant.endedBy is ObjectProperty
+TM_Instant.endedBy Domain TM_Instant
+TM_Instant.endedBy Range TM_Period
+TM_Instant.endedBy InverseOf TM_Period.end
+TM_Instant.position is ObjectProperty
+TM_Instant.position Domain TM_Instant
+TM_Instant.position Range TM_Position
+TM_Instant.topology is ObjectProperty
+TM_Instant.topology Domain TM_Instant
+TM_Instant.topology Range TM_Node
+TM_Instant.topology InverseOf TM_Node.geometry
+TM_Node.geometry is ObjectProperty
+TM_Node.geometry Domain TM_Node
+TM_Node.geometry Range TM_Instant
+TM_Node.geometry InverseOf TM_Instant.topology
+TM_Node.nextEdge is ObjectProperty
+TM_Node.nextEdge Domain TM_Node
+TM_Node.nextEdge Range TM_Edge
+TM_Node.nextEdge InverseOf TM_Edge.start
+TM_Node.previousEdge is ObjectProperty
+TM_Node.previousEdge Domain TM_Node
+TM_Node.previousEdge Range TM_Edge
+TM_Node.previousEdge InverseOf TM_Edge.end
+TM_Period.begin is ObjectProperty
+TM_Period.begin Domain TM_Period
+TM_Period.begin Range TM_Instant
+TM_Period.begin InverseOf TM_Instant.begunBy
+TM_Period.end is ObjectProperty
+TM_Period.end Domain TM_Period
+TM_Period.end Range TM_Instant
+TM_Period.end InverseOf TM_Instant.endedBy
+TM_Period.topology is ObjectProperty
+TM_Period.topology Domain TM_Period
+TM_Period.topology Range TM_Edge
+TM_Period.topology InverseOf TM_Edge.geometry
+TM_TopologicalComplex.primitive is ObjectProperty
+TM_TopologicalComplex.primitive Domain TM_TopologicalComplex
+TM_TopologicalComplex.primitive Range TM_TopologicalPrimitive
+TM_TopologicalComplex.primitive InverseOf TM_TopologicalPrimitive.complex
+TM_TopologicalPrimitive.complex is ObjectProperty
+TM_TopologicalPrimitive.complex Domain TM_TopologicalPrimitive
+TM_TopologicalPrimitive.complex Range TM_TopologicalComplex
+TM_TopologicalPrimitive.complex InverseOf TM_TopologicalComplex.primitive
+TM_IntervalLength.factor is DataProperty
+TM_IntervalLength.factor Domain TM_IntervalLength
+TM_IntervalLength.factor Range integer
+TM_IntervalLength.radix is DataProperty
+TM_IntervalLength.radix Domain TM_IntervalLength
+TM_IntervalLength.radix Range integer
+TM_IntervalLength.unit is DataProperty
+TM_IntervalLength.unit Domain TM_IntervalLength
+TM_IntervalLength.unit Range string
+TM_IntervalLength.value is DataProperty
+TM_IntervalLength.value Domain TM_IntervalLength
+TM_IntervalLength.value Range integer
+TM_PeriodDuration.days is DataProperty
+TM_PeriodDuration.days Domain TM_PeriodDuration
+TM_PeriodDuration.days Range string
+TM_PeriodDuration.designator is DataProperty
+TM_PeriodDuration.designator Domain TM_PeriodDuration
+TM_PeriodDuration.designator Range string
+TM_PeriodDuration.hours is DataProperty
+TM_PeriodDuration.hours Domain TM_PeriodDuration
+TM_PeriodDuration.hours Range string
+TM_PeriodDuration.minutes is DataProperty
+TM_PeriodDuration.minutes Domain TM_PeriodDuration
+TM_PeriodDuration.minutes Range string
+TM_PeriodDuration.months is DataProperty
+TM_PeriodDuration.months Domain TM_PeriodDuration
+TM_PeriodDuration.months Range string
+TM_PeriodDuration.seconds is DataProperty
+TM_PeriodDuration.seconds Domain TM_PeriodDuration
+TM_PeriodDuration.seconds Range string
+TM_PeriodDuration.timeIndicator is DataProperty
+TM_PeriodDuration.timeIndicator Domain TM_PeriodDuration
+TM_PeriodDuration.timeIndicator Range string
+TM_PeriodDuration.years is DataProperty
+TM_PeriodDuration.years Domain TM_PeriodDuration
+TM_PeriodDuration.years Range string
+TM_Complex is Class
+TM_Complex SubClassOf TM_Object
+TM_Duration is Class
+Thing is www.w3.org/2002/07/#
+TM_Edge is Class
+TM_Edge SubClassOf TM_TopologicalPrimitive,
+TM_Edge SubClassOf TM_Edge.end only TM_Node,
+TM_Edge SubClassOf TM_Edge.geometry only TM_Period,
+TM_Edge SubClassOf TM_Edge.start only TM_Node,
+Thing, is TM_Edge.end exactly 1 www.w3.org/2002/07/#
+Thing, is TM_Edge.start exactly 1 www.w3.org/2002/07/#
+Thing is TM_Edge.geometry max 1 www.w3.org/2002/07/#
+TM_GeometricPrimitive is Class
+TM_GeometricPrimitive SubClassOf TM_Primitive,
+TM_GeometricPrimitive SubClassOf TM_Separation
+TM_Instant is Class
+TM_Instant SubClassOf TM_GeometricPrimitive,
+TM_Instant SubClassOf TM_Instant.begunBy only TM_Period,
+TM_Instant SubClassOf TM_Instant.endedBy only TM_Period,
+TM_Instant SubClassOf TM_Instant.position only TM_Position,
+TM_Instant SubClassOf TM_Instant.topology only TM_Node,
+Thing, is TM_Instant.position exactly 1 www.w3.org/2002/07/#
+Thing is TM_Instant.topology max 1 www.w3.org/2002/07/#
+TM_IntervalLength is Class
+TM_IntervalLength SubClassOf TM_Duration,
+TM_IntervalLength SubClassOf TM_IntervalLength.factor only integer,
+TM_IntervalLength SubClassOf TM_IntervalLength.radix only integer,
+TM_IntervalLength SubClassOf TM_IntervalLength.unit only string,
+TM_IntervalLength SubClassOf TM_IntervalLength.value only integer,
+Literal, is TM_IntervalLength.factor exactly 1 www.w3.org/2000/01/-schema#
+Literal, is TM_IntervalLength.radix exactly 1 www.w3.org/2000/01/-schema#
+Literal, is TM_IntervalLength.unit exactly 1 www.w3.org/2000/01/-schema#
+Literal is TM_IntervalLength.value exactly 1 www.w3.org/2000/01/-schema#
+TM_Node is Class
+TM_Node SubClassOf TM_TopologicalPrimitive,
+TM_Node SubClassOf TM_Node.geometry only TM_Instant,
+TM_Node SubClassOf TM_Node.nextEdge only TM_Edge,
+TM_Node SubClassOf TM_Node.previousEdge only TM_Edge,
+Thing is TM_Node.geometry max 1 www.w3.org/2002/07/#
+TM_Object is Class
+Thing is www.w3.org/2002/07/#
+TM_Order is Class
+Thing is www.w3.org/2002/07/#
+TM_Period is Class
+TM_Period SubClassOf TM_GeometricPrimitive,
+TM_Period SubClassOf TM_Period.begin only TM_Instant,
+TM_Period SubClassOf TM_Period.end only TM_Instant,
+TM_Period SubClassOf TM_Period.topology only TM_Edge,
+Thing, is TM_Period.begin exactly 1 www.w3.org/2002/07/#
+Thing, is TM_Period.end exactly 1 www.w3.org/2002/07/#
+Thing is TM_Period.topology max 1 www.w3.org/2002/07/#
+TM_PeriodDuration is Class
+TM_PeriodDuration SubClassOf TM_Duration,
+TM_PeriodDuration SubClassOf TM_PeriodDuration.days only string,
+TM_PeriodDuration SubClassOf TM_PeriodDuration.designator only string,
+TM_PeriodDuration SubClassOf TM_PeriodDuration.hours only string,
+TM_PeriodDuration SubClassOf TM_PeriodDuration.minutes only string,
+TM_PeriodDuration SubClassOf TM_PeriodDuration.months only string,
+TM_PeriodDuration SubClassOf TM_PeriodDuration.seconds only string,
+TM_PeriodDuration SubClassOf TM_PeriodDuration.timeIndicator only string,
+TM_PeriodDuration SubClassOf TM_PeriodDuration.years only string,
+Literal, is TM_PeriodDuration.designator exactly 1 www.w3.org/2000/01/-schema#
+Literal, is TM_PeriodDuration.days max 1 www.w3.org/2000/01/-schema#
+Literal, is TM_PeriodDuration.hours max 1 www.w3.org/2000/01/-schema#
+Literal, is TM_PeriodDuration.minutes max 1 www.w3.org/2000/01/-schema#
+Literal, is TM_PeriodDuration.months max 1 www.w3.org/2000/01/-schema#
+Literal, is TM_PeriodDuration.seconds max 1 www.w3.org/2000/01/-schema#
+Literal, is TM_PeriodDuration.timeIndicator max 1 www.w3.org/2000/01/-schema#
+Literal is TM_PeriodDuration.years max 1 www.w3.org/2000/01/-schema#
+TM_Primitive is Class
+TM_Primitive SubClassOf TM_Object,
+TM_Primitive SubClassOf TM_Order
+TM_Separation is Class
+Thing is www.w3.org/2002/07/#
+TM_TopologicalComplex is Class
+TM_TopologicalComplex SubClassOf TM_Complex,
+TM_TopologicalComplex SubClassOf TM_TopologicalComplex.primitive only TM_TopologicalPrimitive,
+Thing is TM_TopologicalComplex.primitive min 1 www.w3.org/2002/07/#
+TM_TopologicalPrimitive is Class
+TM_TopologicalPrimitive SubClassOf TM_Primitive,
+TM_TopologicalPrimitive SubClassOf TM_TopologicalPrimitive.complex only TM_TopologicalComplex,
+Thing is TM_TopologicalPrimitive.complex exactly 1 www.w3.org/2002/07/#
+TM_Position is Class
+Thing is www.w3.org/2002/07/#
+www.w3.org/2002/07/# is Class

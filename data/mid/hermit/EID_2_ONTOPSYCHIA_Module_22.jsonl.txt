@@ -1,0 +1,150 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty
+string is Datatype
+a_pour_etat_civil is ObjectProperty
+est_correlatif_a is ObjectProperty
+est_correlatif_a_un_etat_emotionnel_negatif is ObjectProperty
+complement is Class
+complement SubClassOf intentional_change_about_change
+intentional_change_about_change is Class
+Absenteisme is Class
+Absenteisme DisjointWith 
+Absenteisme DisjointWith Universite
+www.w3.org/2000/01/-schema# is Annotations
+Thing is www.w3.org/2002/07/#
+Absenteisme_Scolaire is Class
+Absenteisme_Scolaire SubClassOf Absenteisme,
+Absenteisme_Scolaire SubClassOf est_correlatif_a some Scolarite
+Absenteisme_Travail is Class
+Absenteisme_Travail SubClassOf Absenteisme,
+Absenteisme_Travail SubClassOf est_correlatif_a some Travail
+Amelioration is Class
+Amelioration_Scolaire is Class
+Amelioration_Scolaire SubClassOf Amelioration,
+Amelioration_Scolaire SubClassOf est_correlatif_a some Scolarite
+Ami_Avec_Qualificatif is Class
+Ami_Celibataire is Class
+Ami_Celibataire SubClassOf Ami_Avec_Qualificatif,
+Ami_Celibataire SubClassOf a_pour_etat_civil some Etat_Civil_Celibataire
+Auxiliare_De_Justice is Class
+Changement_Condition_Vie is Class
+Classe_Cinquieme is Class
+Classe_Cinquieme SubClassOf Enseignement_Secondaire_College
+Classe_Premiere is Class
+Classe_Premiere SubClassOf Enseignement_Secondaire_Lycee
+Classe_Quatrieme is Class
+Classe_Quatrieme SubClassOf Enseignement_Secondaire_College
+Classe_Seconde is Class
+Classe_Seconde SubClassOf Enseignement_Secondaire_Lycee
+Classe_Sixieme is Class
+Classe_Sixieme SubClassOf Enseignement_Secondaire_College
+Classe_Terminale is Class
+Classe_Terminale SubClassOf Enseignement_Secondaire_Lycee
+Classe_Troisieme is Class
+Classe_Troisieme SubClassOf Enseignement_Secondaire_College
+Collegien is Class
+Collegien SubClassOf Eleve_College
+Collegienne is Class
+Collegienne SubClassOf Eleve_College
+Compagne is Class
+Concept_Education is Class
+Conseil_Superieur_De_La_Magistrature is Class
+Conseil_Superieur_De_La_Magistrature SubClassOf Juridiction_Penale_Premier_Degre
+Deces_Compagne is Class
+Deces_Compagne SubClassOf Deces_Membre_Couple,
+Deces_Compagne SubClassOf est_correlatif_a some Compagne
+Deces_Membre_Couple is Class
+Difficulte_Scolaire is Class
+Eleve is Class
+Eleve_College is Class
+Eleve_College SubClassOf Eleve
+Enseignement_Maternel is Class
+Enseignement_Maternel SubClassOf Enseignement_Scolaire
+Enseignement_Primaire is Class
+Enseignement_Primaire SubClassOf Enseignement_Scolaire
+Enseignement_Scolaire is Class
+Enseignement_Scolaire SubClassOf Concept_Education
+Enseignement_Secondaire is Class
+Enseignement_Secondaire SubClassOf Enseignement_Scolaire
+Enseignement_Secondaire_College is Class
+Enseignement_Secondaire_Lycee is Class
+Etat_Civil_Celibataire is Class
+Etat_Emotionnel_Negatif is Class
+Etude_Biologie is Class
+Etude_Biologie_Moleculaire is Class
+Etude_Biologie_Moleculaire SubClassOf Etude_Biologie
+Etude_Commerce is Class
+Etude_Commerce_International is Class
+Etude_Commerce_International SubClassOf Etude_Commerce
+Etude_Medecine is Class
+Etude_Medecine SubClassOf Etude_Medicale
+Etude_Medicale is Class
+Etude_Musique is Class
+Etude_Pharmacie is Class
+Etude_Pharmacie SubClassOf Etude_Medicale
+Etude_Piano is Class
+Etude_Piano SubClassOf Etude_Musique
+Etude_Superieur is Class
+Etude_Superieur SubClassOf Enseignement_Scolaire
+Harcelement is Class
+Harcelement_Scolaire is Class
+Harcelement_Scolaire SubClassOf Harcelement,
+Harcelement_Scolaire SubClassOf est_correlatif_a some Difficulte_Scolaire,
+Harcelement_Scolaire SubClassOf est_correlatif_a some Scolarite
+Harcelement_Sexuel is Class
+Harcelement_Sexuel SubClassOf Harcelement
+Harcelement_Telephonique is Class
+Harcelement_Telephonique SubClassOf Harcelement
+Inflechissement is Class
+Inflechissement_Scolaire is Class
+Inflechissement_Scolaire SubClassOf Inflechissement,
+Inflechissement_Scolaire SubClassOf est_correlatif_a some Scolarite
+Juridiction_Penale_Premier_Degre is Class
+Logement is Class
+Menace_Auto_Agressive is Class
+Menace_Suicidaire is Class
+Menace_Suicidaire SubClassOf Menace_Auto_Agressive
+Mere is Class
+Notaire is Class
+Notaire SubClassOf Auxiliare_De_Justice
+Personne_Morale is Class
+Personne_Morale_Droit_Prive is Class
+Personne_Morale_Droit_Prive SubClassOf Personne_Morale
+Perte_Logement is Class
+Perte_Logement SubClassOf Changement_Condition_Vie,
+Perte_Logement SubClassOf est_correlatif_a some Logement,
+Perte_Logement SubClassOf est_correlatif_a_un_etat_emotionnel_negatif some Etat_Emotionnel_Negatif
+Residence_Privee is Class
+Residence_Universitaire_Privee is Class
+Residence_Universitaire_Privee SubClassOf Residence_Privee,
+Residence_Universitaire_Privee SubClassOf est_correlatif_a some Universite,
+Residence_Universitaire_Privee SubClassOf est_correlatif_a only Absenteisme
+Rupture_Avec_Type is Class
+Rupture_Cursus_Universitaire is Class
+Rupture_Cursus_Universitaire SubClassOf Rupture_Scolaire,
+Rupture_Cursus_Universitaire SubClassOf est_correlatif_a some Universite
+Rupture_Scolaire is Class
+Rupture_Scolaire SubClassOf Rupture_Avec_Type,
+Rupture_Scolaire SubClassOf est_correlatif_a some Scolarite
+Scolarite is Class
+Service_Hospitalo_Universitaire is Class
+Service_Hospitalo_Universitaire SubClassOf Service_Interne_Hopital
+Service_Interne_Hopital is Class
+Travail is Class
+Travail_Alimentaire is Class
+Travail_Alimentaire SubClassOf Travail_Avec_Type
+Travail_Avec_Type is Class
+Unite_Mere is Class
+Unite_Mere SubClassOf Unite_Sante,
+Unite_Mere SubClassOf est_correlatif_a some Mere
+Unite_Mere_Bebe is Class
+Unite_Mere_Bebe SubClassOf Unite_Mere
+Unite_Mere_Enfant is Class
+Unite_Mere_Enfant SubClassOf Unite_Mere
+Unite_Sante is Class
+Unite_Universitaire is Class
+Unite_Universitaire SubClassOf Unite_Sante,
+Unite_Universitaire SubClassOf est_correlatif_a some Universite
+Universite is Class
+Universite DisjointWith Absenteisme
+www.w3.org/2002/07/# is Class
+www.w3.org/2000/01/-schema# is Annotations

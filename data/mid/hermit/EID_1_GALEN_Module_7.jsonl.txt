@@ -1,0 +1,3517 @@
+InverseContainmentAttribute is ObjectProperty
+IsDivisionOf is ObjectProperty
+LocativeAttribute is ObjectProperty
+actsOn is ObjectProperty
+actsSpecificallyOn is ObjectProperty
+boundsSpace is ObjectProperty
+hasAbnormalityStatus is ObjectProperty
+hasAbsoluteState is ObjectProperty
+hasAcquisitionMode is ObjectProperty
+hasAlphaConnection is ObjectProperty
+hasAnteriorPosteriorSelector is ObjectProperty
+hasAppropriateness is ObjectProperty
+hasBetaConnection is ObjectProperty
+hasCentralPeripheralSelector is ObjectProperty
+hasChronicity is ObjectProperty
+hasEffectiveness is ObjectProperty
+hasFunction is ObjectProperty
+hasIntentionality is ObjectProperty
+hasIntrinsicPathologicalStatus is ObjectProperty
+hasLeftRightSelector is ObjectProperty
+hasLocation is ObjectProperty
+hasMagnitude is ObjectProperty
+hasMedialLateralSelector is ObjectProperty
+hasOrdinalPosition is ObjectProperty
+hasPathologicalStatus is ObjectProperty
+hasPhenotypicalSex is ObjectProperty
+hasProximity is ObjectProperty
+hasQuantity is ObjectProperty
+hasShape is ObjectProperty
+hasSolidDivision is ObjectProperty
+hasSpecificFunction is ObjectProperty
+hasSpecificLayer is ObjectProperty
+hasSpecificLocation is ObjectProperty
+hasSpecificProximity is ObjectProperty
+hasSpecificSolidDivision is ObjectProperty
+hasSpecificStructuralComponent is ObjectProperty
+hasSpecificSurfaceDivision is ObjectProperty
+hasStructuralComponent is ObjectProperty
+hasSuperiorInferiorSelector is ObjectProperty
+hasSurfaceDivision is ObjectProperty
+hasSurfaceVisibility is ObjectProperty
+hasTopology is ObjectProperty
+hasUniqueAssociatedDisplacement is ObjectProperty
+hasUpperLowerSelector is ObjectProperty
+hasVolume is ObjectProperty
+isActedOnBy is ObjectProperty
+isActedOnSpecificallyBy is ObjectProperty
+isAlphaConnectionOf is ObjectProperty
+isAlphaPartitiveConnectionOf is ObjectProperty
+isBetaConnectionOf is ObjectProperty
+isBetaPartitiveConnectionOf is ObjectProperty
+isBranchOf is ObjectProperty
+isConnectionOf is ObjectProperty
+isConsequenceOf is ObjectProperty
+isDisplacementFrom is ObjectProperty
+isDisplacementTo is ObjectProperty
+isDivergentWith is ObjectProperty
+isFunctionOf is ObjectProperty
+isFunctionalComponentOf is ObjectProperty
+isLayerOf is ObjectProperty
+isLinearDivisionOf is ObjectProperty
+isMadeOf is ObjectProperty
+isMassOf is ObjectProperty
+isNonPartitivelyContainedIn is ObjectProperty
+isPairedOrUnpaired is ObjectProperty
+isPartitiveConnectionOf is ObjectProperty
+isScopeOf is ObjectProperty
+isServedBy is ObjectProperty
+isSolidDivisionOf is ObjectProperty
+isSpaceBoundedBy is ObjectProperty
+isSpaceDefinedBy is ObjectProperty
+isSpecificConsequenceOf is ObjectProperty
+isSpecificFunctionOf is ObjectProperty
+isSpecificImmediateConsequenceOf is ObjectProperty
+isSpecificLayerOf is ObjectProperty
+isSpecificLinearDivisionOf is ObjectProperty
+isSpecificLocationOf is ObjectProperty
+isSpecificSolidDivisionOf is ObjectProperty
+isSpecificStructuralComponentOf is ObjectProperty
+isSpecificSurfaceDivisionOf is ObjectProperty
+isSpecificallyMadeOf is ObjectProperty
+isSpecificallyNonPartitivelyContainedIn is ObjectProperty
+isSpecificallyPartitivelyContainedIn is ObjectProperty
+isStructuralComponentOf is ObjectProperty
+isSubprocessOf is ObjectProperty
+isSurfaceDivisionOf is ObjectProperty
+isTemporalPatternOf is ObjectProperty
+isTextureOf is ObjectProperty
+occursDuring is ObjectProperty
+partitivelyContains is ObjectProperty
+playsConsultationRole is ObjectProperty
+specificallyNonPartitivelyContains is ObjectProperty
+specificallyPartitivelyContains is ObjectProperty
+specificallyServes is ObjectProperty
+AbdominalCavity is Class
+AbdominalLymphnode is Class
+AbdominalLymphnode EquivalentTo Lymphnode and (InverseContainmentAttribute some AbdominalCavity)
+AbdominalLymphnode SubClassOf Lymphnode
+AbdominalMuscle is Class
+AbdominalMuscle EquivalentTo Muscle and (IsDivisionOf some AbdominalWall)
+AbdominalMuscle SubClassOf Muscle
+AbdominalWall is Class
+Abduction is Class
+AbductorDigitiMinimiTendonOfFoot is Class
+AbductorDigitiMinimiTendonOfFoot SubClassOf NAMEDTendon
+AbductorDigitiMinimiTendonOfHand is Class
+AbductorDigitiMinimiTendonOfHand SubClassOf NAMEDTendon
+AbnormalVascularNetwork is Class
+AbnormalVascularNetwork SubClassOf NAMEDVascularPlexus
+AbsolutePositionSelector is Class
+AcquisitionMode is Class
+AcromialBursa is Class
+AcromialBursa SubClassOf NAMEDBursa
+AcuteRenalFailure is Class
+AcuteRenalFailure EquivalentTo RenalInsufficiency and (hasChronicity some
+AcuteRenalFailure EquivalentTo (Chronicity and (hasAbsoluteState some acute)))
+AcuteRenalFailure SubClassOf RenalInsufficiency
+Adduction is Class
+AdductorBrevisOfThigh is Class
+AdductorLongusOfThigh is Class
+AdductorMagnusOfThigh is Class
+AdductorMuscleOfHip is Class
+AdductorMuscleOfHip EquivalentTo Muscle and (hasFunction some
+AdductorMuscleOfHip EquivalentTo (Adduction and (actsOn some HipJoint)))
+AdductorMuscleOfHip SubClassOf Muscle
+AdministrationToPatient is Class
+AdrenalCortex is Class
+AdrenalCortex EquivalentTo Cortex and (isSpecificLayerOf some AdrenalGland)
+AdrenalCortex SubClassOf Cortex,
+AdrenalCortex SubClassOf hasSpecificFunction some
+AdrenalCortex SubClassOf (Secretion and (actsSpecificallyOn some AdrenocorticalHormone) and (hasUniqueAssociatedDisplacement some
+AdrenalCortex SubClassOf (Displacement and (isDisplacementFrom some AdrenalGland) and (isDisplacementTo some Blood)))),
+AdrenalCortex SubClassOf hasSpecificLayer some ZonaFasciculata,
+AdrenalCortex SubClassOf hasSpecificLayer some ZonaGlomerulosa,
+AdrenalCortex SubClassOf hasSpecificLayer some ZonaReticularis
+AdrenalGland is Class
+AdrenalMedulla is Class
+AdrenalMedulla EquivalentTo Medulla and (isSpecificLayerOf some AdrenalGland)
+AdrenalMedulla SubClassOf Medulla
+AdrenocorticalHormone is Class
+AlveolarPartOfMandible is Class
+AmnioticMembrane is Class
+AmnioticMembrane SubClassOf NAMEDMembrane
+AmpullaOfVater is Class
+AmpullaOfVater SubClassOf NAMEDDuct
+AnabolicProcess is Class
+Angle is Class
+Angle SubClassOf GenericInternalStructure
+AngleOfMandible is Class
+AngleOfMandible EquivalentTo Angle and (isSpecificSolidDivisionOf some Mandible)
+AngleOfMandible SubClassOf Angle,
+AngleOfMandible SubClassOf isPairedOrUnpaired some mirrorImaged
+AngleOfMouth is Class
+AngleOfMouth EquivalentTo Angle and (isSpecificSolidDivisionOf some Lip)
+AngleOfMouth SubClassOf Angle
+AngleOfRib is Class
+AngleOfRib EquivalentTo Angle and (isSpecificSolidDivisionOf some Rib)
+AngleOfRib SubClassOf Angle
+AngleOfScapula is Class
+AngleOfScapula EquivalentTo Angle and (isSpecificSolidDivisionOf some Scapula)
+AngleOfScapula SubClassOf Angle
+AngularGyrus is Class
+AngularGyrus SubClassOf CerebralGyrus
+AnnularPlexus is Class
+AnnularPlexus SubClassOf NAMEDNervePlexus
+Anonymous-190 is Class
+Anonymous-190 EquivalentTo Cusp and (hasAnteriorPosteriorSelector some anteriorSelection) and (isSpecificStructuralComponentOf some PulmonaryValve)
+Anonymous-190 SubClassOf Cusp,
+Anonymous-190 SubClassOf isPairedOrUnpaired some leftRightPaired
+Anonymous-207 is Class
+Anonymous-207 SubClassOf CardiacMuscle
+Anonymous-222 is Class
+Anonymous-222 EquivalentTo Cusp and (hasAnteriorPosteriorSelector some posteriorSelection) and (isSpecificStructuralComponentOf some AorticValve)
+Anonymous-222 SubClassOf Cusp,
+Anonymous-222 SubClassOf isPairedOrUnpaired some leftRightPaired
+Anonymous-227 is Class
+Anonymous-227 EquivalentTo Meniscus and (hasMedialLateralSelector some MedialLateralPositionSelector)
+Anonymous-227 SubClassOf Meniscus,
+Anonymous-227 SubClassOf isPairedOrUnpaired some mirrorImaged
+Anonymous-566 is Class
+Anonymous-566 SubClassOf BloodVessel
+Anonymous-608 is Class
+Anonymous-608 EquivalentTo Leaflet and (hasAnteriorPosteriorSelector some posteriorSelection) and (isSpecificStructuralComponentOf some TricuspidValve)
+Anonymous-608 SubClassOf Leaflet,
+Anonymous-608 SubClassOf isPairedOrUnpaired some leftRightPaired
+Anonymous-695 is Class
+Anonymous-695 EquivalentTo Nerve and (isBranchOf some IntercostalNerve)
+Anonymous-695 SubClassOf Nerve,
+Anonymous-695 SubClassOf isSpecificallyNonPartitivelyContainedIn some IntercostalSpace
+Anonymous-741 is Class
+Anonymous-741 EquivalentTo Lobe and (isSpecificSolidDivisionOf some ThyroidGland)
+Anonymous-741 SubClassOf Lobe,
+Anonymous-741 SubClassOf isPairedOrUnpaired some mirrorImaged
+Anonymous-756 is Class
+Anonymous-756 SubClassOf BloodVessel
+Anonymous-828 is Class
+Anonymous-828 SubClassOf CardiacMuscle
+Anonymous-849 is Class
+Anonymous-849 SubClassOf CardiacMuscle
+AnserinePlexus is Class
+AnserinePlexus SubClassOf NAMEDNervePlexus
+AntebrachialFascia is Class
+AntebrachialFascia SubClassOf NAMEDFascia
+AnteriorCervicalLymphnode is Class
+AnteriorCervicalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some AnteriorJugularVein)
+AnteriorCervicalLymphnode SubClassOf Lymphnode,
+AnteriorCervicalLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+AnteriorCoronaryPlexus is Class
+AnteriorCoronaryPlexus SubClassOf NAMEDNervePlexus
+AnteriorCranialFossa is Class
+AnteriorCuspOfPulmonaryValve is Class
+AnteriorCuspOfPulmonaryValve EquivalentTo Cusp and (hasAnteriorPosteriorSelector some anteriorSelection) and (hasLeftRightSelector some leftSelection) and (isSpecificStructuralComponentOf some PulmonaryValve)
+AnteriorCuspOfPulmonaryValve SubClassOf Cusp
+AnteriorFascialCompartment is Class
+AnteriorFascialCompartment EquivalentTo FascialCompartment and (hasAnteriorPosteriorSelector some anteriorSelection)
+AnteriorFascialCompartment SubClassOf FascialCompartment
+AnteriorFascialCompartmentOfArm is Class
+AnteriorFascialCompartmentOfArm SubClassOf AnteriorFascialCompartment
+AnteriorFascialCompartmentOfForearm is Class
+AnteriorFascialCompartmentOfForearm SubClassOf AnteriorFascialCompartment
+AnteriorFascialCompartmentOfLeg is Class
+AnteriorFascialCompartmentOfLeg SubClassOf AnteriorFascialCompartment
+AnteriorFascialCompartmentOfThigh is Class
+AnteriorFascialCompartmentOfThigh SubClassOf AnteriorFascialCompartment
+AnteriorFontanelle is Class
+AnteriorFontanelle SubClassOf Fontanelle,
+AnteriorFontanelle SubClassOf isStructuralComponentOf some Cranium
+AnteriorHornOfLateralMensicus is Class
+AnteriorHornOfLateralMensicus EquivalentTo Horn and (hasAnteriorPosteriorSelector some anteriorSelection) and (isSpecificSolidDivisionOf some LateralMeniscus)
+AnteriorHornOfLateralMensicus SubClassOf Horn,
+AnteriorHornOfLateralMensicus SubClassOf isAlphaConnectionOf some TransverseLigamentOfKnee
+AnteriorHornOfMedialMensicus is Class
+AnteriorHornOfMedialMensicus EquivalentTo Horn and (hasAnteriorPosteriorSelector some anteriorSelection) and (isSpecificSolidDivisionOf some MedialMeniscus)
+AnteriorHornOfMedialMensicus SubClassOf Horn,
+AnteriorHornOfMedialMensicus SubClassOf isBetaConnectionOf some TransverseLigamentOfKnee
+AnteriorJugularVein is Class
+AnteriorLacrimalCrest is Class
+AnteriorLacrimalCrest SubClassOf LacrimalCrest
+AnteriorLeafletOfMitralValve is Class
+AnteriorLeafletOfMitralValve EquivalentTo Leaflet and (hasAnteriorPosteriorSelector some anteriorSelection) and (isSpecificStructuralComponentOf some MitralValve)
+AnteriorLeafletOfMitralValve SubClassOf Leaflet,
+AnteriorLeafletOfMitralValve SubClassOf isBetaConnectionOf some AnteriorMitralChordae
+AnteriorLeafletOfTricuspidValve is Class
+AnteriorLeafletOfTricuspidValve EquivalentTo Leaflet and (hasAnteriorPosteriorSelector some anteriorSelection) and (isSpecificStructuralComponentOf some TricuspidValve)
+AnteriorLeafletOfTricuspidValve SubClassOf Leaflet,
+AnteriorLeafletOfTricuspidValve SubClassOf isBetaConnectionOf some AnteriorTricuspidChordae
+AnteriorLobeOfPituitaryGland is Class
+AnteriorLobeOfPituitaryGland SubClassOf LobeOfPituitaryGland
+AnteriorMitralChordae is Class
+AnteriorMyocardium is Class
+AnteriorMyocardium SubClassOf CardiacMuscle
+AnteriorMyocardium DisjointWith ThirdLumbarVertebra
+AnteriorNasalSpine is Class
+AnteriorNasalSpine SubClassOf NAMEDSolidBoneDivisions,
+AnteriorNasalSpine SubClassOf isSpecificSolidDivisionOf some Maxilla
+AnteriorPoleOfOcularLens is Class
+AnteriorPoleOfOcularLens SubClassOf PoleOfOcularLens
+AnteriorPosteriorPositionSelector is Class
+AnteriorRectalWall is Class
+AnteriorTricuspidChordae is Class
+AnteriorTwoThirdsOfSoildDivisionOfTongue is Class
+AnterolateralFontanelle is Class
+AnterolateralFontanelle SubClassOf Fontanelle,
+AnterolateralFontanelle SubClassOf isStructuralComponentOf some Cranium
+Anus is Class
+Aorta is Class
+AorticArch is Class
+AorticLymphnode is Class
+AorticLymphnode EquivalentTo Lymphnode and (hasProximity some Aorta)
+AorticLymphnode SubClassOf Lymphnode,
+AorticLymphnode SubClassOf isPairedOrUnpaired some unpaired,
+AorticLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some AbdominalCavity
+AorticPlexus is Class
+AorticPlexus SubClassOf NAMEDNervePlexus
+AorticValve is Class
+AorticValveCusp is Class
+AorticValveCusp EquivalentTo Cusp and (isSpecificStructuralComponentOf some AorticValve)
+AorticValveCusp SubClassOf Cusp
+AorticValveLunule is Class
+AorticValveLunule EquivalentTo Lunule and (isSpecificStructuralComponentOf some AorticValve)
+AorticValveLunule SubClassOf Lunule
+AorticValveVestibule is Class
+AorticValveVestibule EquivalentTo Vestibule and (isAlphaConnectionOf some AorticValve)
+AorticValveVestibule SubClassOf Vestibule,
+AorticValveVestibule SubClassOf isStructuralComponentOf some LeftHeartVentricle
+Apex is Class
+Apex SubClassOf GenericInternalStructure
+ApexOfAdrenalGland is Class
+ApexOfAdrenalGland EquivalentTo Apex and (isSpecificSolidDivisionOf some AdrenalGland)
+ApexOfAdrenalGland SubClassOf Apex
+ApexOfBladder is Class
+ApexOfBladder EquivalentTo Apex and (isSpecificSolidDivisionOf some UrinaryBladder)
+ApexOfBladder SubClassOf Apex,
+ApexOfBladder SubClassOf hasBetaConnection some Urachus,
+ApexOfBladder SubClassOf isAlphaConnectionOf some Urachus
+ApexOfLeftHeartVentricle is Class
+ApexOfLeftHeartVentricle EquivalentTo Apex and (isSpecificSolidDivisionOf some LeftHeartVentricle)
+ApexOfLeftHeartVentricle SubClassOf Apex
+ApexOfLeftLung is Class
+ApexOfLeftLung EquivalentTo Apex and (isSpecificSolidDivisionOf some LeftLung)
+ApexOfLeftLung SubClassOf Apex
+ApexOfLung is Class
+ApexOfLung EquivalentTo Apex and (isSpecificSolidDivisionOf some Lung)
+ApexOfLung SubClassOf Apex,
+ApexOfLung SubClassOf hasStructuralComponent some
+ApexOfLung SubClassOf (MinorBronchus and (specificallyServes some ApexOfLung))
+ApexOfProstate is Class
+ApexOfProstate EquivalentTo Apex and (isSpecificStructuralComponentOf some ProstateGland)
+ApexOfProstate SubClassOf Apex
+ApexOfRightHeartVentricle is Class
+ApexOfRightHeartVentricle EquivalentTo Apex and (isSpecificSolidDivisionOf some RightHeartVentricle)
+ApexOfRightHeartVentricle SubClassOf Apex,
+ApexOfRightHeartVentricle SubClassOf hasSpecificStructuralComponent some TrabeculaSeptomarginalis
+ApexOfRightLung is Class
+ApexOfRightLung EquivalentTo Apex and (isSpecificSolidDivisionOf some RightLung)
+ApexOfRightLung SubClassOf Apex
+ApicalAxillaryLymphnode is Class
+ApicalAxillaryLymphnode SubClassOf AxillaryLymphnode
+Aponeurosis is Class
+Aponeurosis SubClassOf GenericInternalStructure
+Appropriateness is Class
+Arch is Class
+Arch SubClassOf GenericInternalStructure
+ArchedCollectingTubuleOfNephron is Class
+AreolarPlexus is Class
+AreolarPlexus SubClassOf NAMEDNervePlexus
+Arm is Class
+Arteriole is Class
+Arteriole SubClassOf BloodVessel
+Artery is Class
+Artery SubClassOf BloodVessel
+ArticularFacet is Class
+ArticularFacet EquivalentTo Facet and (hasFunction some ArticulationProcess) and (isSolidDivisionOf some Bone) and (isStructuralComponentOf some Joint)
+ArticularFacet SubClassOf Facet
+ArticularFacetOfCalcaneum is Class
+ArticularFacetOfCalcaneum SubClassOf ArticularFacet
+ArticularFacetOfVertebra is Class
+ArticularFacetOfVertebra SubClassOf ArticularFacet
+ArticularProcessOfAtlas is Class
+ArticularProcessOfAtlas SubClassOf ArticularFacet
+ArticularProcessOfAxis is Class
+ArticularProcessOfAxis SubClassOf ArticularFacet
+ArticulationProcess is Class
+ArticulatoryMuscleOfLowerExtremity is Class
+ArticulatoryMuscleOfLowerExtremity SubClassOf StriatedMuscle
+ArticulatoryMuscleOfUpperExtremity is Class
+ArticulatoryMuscleOfUpperExtremity SubClassOf StriatedMuscle
+AtlantoOccipitalMembrane is Class
+AtlantoOccipitalMembrane SubClassOf NAMEDMembrane
+AtrialMyocardialStructure is Class
+AtrialMyocardialStructure SubClassOf CardiacMuscle
+AtrialMyocardiumAsAWhole is Class
+AtrialMyocardiumAsAWhole SubClassOf CardiacMuscle
+AtrioventricularValve is Class
+AtrioventricularValveLeaflet is Class
+AtrioventricularValveLeaflet EquivalentTo Leaflet and (isSpecificStructuralComponentOf some AtrioventricularValve)
+AtrioventricularValveLeaflet SubClassOf Leaflet
+Atrium is Class
+Atrium SubClassOf GenericInternalStructure
+AuditoryCortex is Class
+AuditoryCortex SubClassOf CerebralCortex
+AuditoryNerve is Class
+Auricle is Class
+Auricle SubClassOf GenericInternalStructure
+AutonomicNerve is Class
+AutonomicNerve EquivalentTo Nerve and (isSpecificStructuralComponentOf some AutonomicNervousSystem)
+AutonomicNerve SubClassOf Nerve
+AutonomicNerveFibre is Class
+AutonomicNerveFibre SubClassOf NerveFibre
+AutonomicNervousSystem is Class
+Axilla is Class
+AxillaryFascia is Class
+AxillaryFascia SubClassOf NAMEDFascia
+AxillaryLymphaticPlexus is Class
+AxillaryLymphaticPlexus SubClassOf NAMEDLymphaticPlexus
+AxillaryLymphnode is Class
+AxillaryLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Axilla)
+AxillaryLymphnode SubClassOf Lymphnode,
+AxillaryLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+BaseOfAdrenalGland is Class
+BaseOfAdrenalGland EquivalentTo BaseOfStructure and (isSpecificSolidDivisionOf some AdrenalGland)
+BaseOfAdrenalGland SubClassOf BaseOfStructure
+BaseOfBrain is Class
+BaseOfBrain EquivalentTo BaseOfStructure and (isSpecificSolidDivisionOf some Brain)
+BaseOfBrain SubClassOf BaseOfStructure,
+BaseOfBrain SubClassOf hasStructuralComponent some CranialNerve,
+BaseOfBrain SubClassOf hasStructuralComponent some Hypothalamus,
+BaseOfBrain SubClassOf hasStructuralComponent some OlfactoryBulb,
+BaseOfBrain SubClassOf hasStructuralComponent some OpticChiasma,
+BaseOfBrain SubClassOf hasStructuralComponent some OpticTract,
+BaseOfBrain SubClassOf hasStructuralComponent some Rhombencephalon
+BaseOfLung is Class
+BaseOfLung EquivalentTo BaseOfStructure and (isSpecificSolidDivisionOf some Lung)
+BaseOfLung SubClassOf BaseOfStructure
+BaseOfProstate is Class
+BaseOfProstate EquivalentTo BaseOfStructure and (isSpecificStructuralComponentOf some ProstateGland)
+BaseOfProstate SubClassOf BaseOfStructure
+BaseOfSkull is Class
+BaseOfSkull EquivalentTo BaseOfStructure and (isSpecificSolidDivisionOf some Skull)
+BaseOfSkull SubClassOf BaseOfStructure,
+BaseOfSkull SubClassOf boundsSpace some AnteriorCranialFossa,
+BaseOfSkull SubClassOf boundsSpace some MiddleCranialFossa,
+BaseOfSkull SubClassOf boundsSpace some PosteriorCranialFossa,
+BaseOfSkull SubClassOf hasSpecificSolidDivision some FloorOfAnteriorCranialFossa,
+BaseOfSkull SubClassOf hasSpecificSolidDivision some FloorOfMiddleCranialFossa,
+BaseOfSkull SubClassOf hasSpecificSolidDivision some FloorOfPosteriorCranialFossa,
+BaseOfSkull SubClassOf hasStructuralComponent some RoofOfNasalCavity,
+BaseOfSkull SubClassOf isAlphaConnectionOf some PharyngealLigament
+BaseOfStructure is Class
+BaseOfStructure SubClassOf GenericInternalStructure
+BasementMembrane is Class
+BasementMembrane SubClassOf NAMEDMembrane
+BasilarMembrane is Class
+BasilarMembrane SubClassOf NAMEDMembrane
+Belly is Class
+Belly SubClassOf GenericInternalStructure
+BellyOfBicepsBrachii is Class
+BellyOfBicepsBrachii EquivalentTo Belly and (isSpecificStructuralComponentOf some BicepsBrachii)
+BellyOfBicepsBrachii SubClassOf Belly
+BellyOfBicepsFemoris is Class
+BellyOfBicepsFemoris EquivalentTo Belly and (isSpecificStructuralComponentOf some BicepsFemoris)
+BellyOfBicepsFemoris SubClassOf Belly
+BellyOfTricepsBrachii is Class
+BellyOfTricepsBrachii EquivalentTo Belly and (isSpecificStructuralComponentOf some TricepsBrachii)
+BellyOfTricepsBrachii SubClassOf Belly
+BeneficialStatus is Class
+BicepsBrachii is Class
+BicepsFemoris is Class
+BicepsTendon is Class
+BicepsTendon SubClassOf NAMEDTendon
+BicipitalAponeurosis is Class
+BicipitalAponeurosis SubClassOf NAMEDAponeurosis
+BicipitalBursa is Class
+BicipitalBursa SubClassOf NAMEDBursa
+BicipitoradialBursa is Class
+BicipitoradialBursa SubClassOf NAMEDBursa
+BileDuct is Class
+BileDuct SubClassOf NAMEDDuct
+BirthMembrane is Class
+BirthMembrane EquivalentTo Membrane and (isConsequenceOf some Conception)
+BirthMembrane SubClassOf Membrane
+Bleb is Class
+Bleb SubClassOf GenericInternalStructure
+BleedingSymptom is Class
+Blood is Class
+BloodVessel is Class
+BloodVessel SubClassOf LymphOrBloodVessel,
+BloodVessel SubClassOf hasSpecificFunction some
+BloodVessel SubClassOf (Flow and (actsSpecificallyOn some LiquidBlood)),
+BloodVessel SubClassOf hasTopology some
+BloodVessel SubClassOf (Topology and (hasAbsoluteState some tubular)),
+BloodVessel SubClassOf isMadeOf some Endothelium,
+BloodVessel SubClassOf isStructuralComponentOf some VascularSystem
+BloodVesselOfExtremity is Class
+BloodVesselOfExtremity SubClassOf BloodVessel
+BloodVesselOfFoetalCirculation is Class
+BloodVesselOfFoetalCirculation SubClassOf BloodVessel
+BloodVesselOfFoot is Class
+BloodVesselOfFoot SubClassOf BloodVessel
+BloodVesselOfHand is Class
+BloodVesselOfHand SubClassOf BloodVessel
+BloodVesselOfSystemicCirculation is Class
+BloodVesselOfSystemicCirculation SubClassOf BloodVessel
+BodyCavity is Class
+BodyOfCervicalVertebra is Class
+BodyOfCervicalVertebra EquivalentTo Corpus and (isSolidDivisionOf some CervicalVertebra)
+BodyOfCervicalVertebra SubClassOf Corpus
+BodyOfClitoris is Class
+BodyOfClitoris EquivalentTo Corpus and (isSpecificSolidDivisionOf some Clitoris)
+BodyOfClitoris SubClassOf Corpus,
+BodyOfClitoris SubClassOf isMadeOf some ErectileTissue,
+BodyOfClitoris SubClassOf isPairedOrUnpaired some unpaired
+BodyOfFifthCervicalVertebra is Class
+BodyOfFifthCervicalVertebra EquivalentTo Corpus and (isSpecificSolidDivisionOf some FifthCervicalVertebra)
+BodyOfFifthCervicalVertebra SubClassOf Corpus
+BodyOfFourthCervicalVertebra is Class
+BodyOfFourthCervicalVertebra EquivalentTo Corpus and (isSpecificSolidDivisionOf some FourthCervicalVertebra)
+BodyOfFourthCervicalVertebra SubClassOf Corpus
+BodyOfGallBladder is Class
+BodyOfGallBladder EquivalentTo Corpus and (isSpecificSolidDivisionOf some Gallbladder)
+BodyOfGallBladder SubClassOf Corpus
+BodyOfHyoidBone is Class
+BodyOfHyoidBone EquivalentTo Corpus and (isSpecificSolidDivisionOf some HyoidBone)
+BodyOfHyoidBone SubClassOf Corpus,
+BodyOfHyoidBone SubClassOf isPairedOrUnpaired some unpaired
+BodyOfLumbarVertebra is Class
+BodyOfLumbarVertebra EquivalentTo Corpus and (isSpecificSolidDivisionOf some LumbarVertebra)
+BodyOfLumbarVertebra SubClassOf Corpus
+BodyOfMandible is Class
+BodyOfMandible EquivalentTo Corpus and (isSpecificSolidDivisionOf some Mandible)
+BodyOfMandible SubClassOf Corpus,
+BodyOfMandible SubClassOf hasSpecificSolidDivision some AlveolarPartOfMandible,
+BodyOfMandible SubClassOf hasSpecificSolidDivision some IncisiveCanal,
+BodyOfMandible SubClassOf hasSpecificSolidDivision some MandibularCanal,
+BodyOfMandible SubClassOf hasSpecificSolidDivision some MandibularTubercle,
+BodyOfMandible SubClassOf hasSpecificSolidDivision some MentalForamen,
+BodyOfMandible SubClassOf hasSpecificSolidDivision some SymphysisMenti,
+BodyOfMandible SubClassOf isPairedOrUnpaired some unpaired
+BodyOfPancreas is Class
+BodyOfPancreas EquivalentTo Corpus and (isSpecificSolidDivisionOf some Pancreas)
+BodyOfPancreas SubClassOf Corpus
+BodyOfSacralVertebra is Class
+BodyOfSacralVertebra EquivalentTo Corpus and (isSpecificSolidDivisionOf some SacralVertebra)
+BodyOfSacralVertebra SubClassOf Corpus
+BodyOfScapula is Class
+BodyOfScapula EquivalentTo Corpus and (isSpecificSolidDivisionOf some Scapula)
+BodyOfScapula SubClassOf Corpus,
+BodyOfScapula SubClassOf hasSpecificSolidDivision some SpineOfScapula
+BodyOfSeventhCervicalVertebra is Class
+BodyOfSeventhCervicalVertebra EquivalentTo Corpus and (isSpecificSolidDivisionOf some SeventhCervicalVertebra)
+BodyOfSeventhCervicalVertebra SubClassOf Corpus
+BodyOfSixthCervicalVertebra is Class
+BodyOfSixthCervicalVertebra EquivalentTo Corpus and (isSpecificSolidDivisionOf some SixthCervicalVertebra)
+BodyOfSixthCervicalVertebra SubClassOf Corpus
+BodyOfSphenoidBone is Class
+BodyOfSphenoidBone EquivalentTo Corpus and (isSpecificSolidDivisionOf some SphenoidBone)
+BodyOfSphenoidBone SubClassOf Corpus,
+BodyOfSphenoidBone SubClassOf hasSpecificSolidDivision some DorsumSellae,
+BodyOfSphenoidBone SubClassOf hasSpecificSolidDivision some SellaTurcica,
+BodyOfSphenoidBone SubClassOf hasSpecificSolidDivision some TuberculumSellae,
+BodyOfSphenoidBone SubClassOf hasStructuralComponent some Clivus
+BodyOfTalus is Class
+BodyOfTalus EquivalentTo Corpus and (isSpecificSolidDivisionOf some Talus)
+BodyOfTalus SubClassOf Corpus
+BodyOfThirdCervicalVertebra is Class
+BodyOfThirdCervicalVertebra EquivalentTo Corpus and (isSpecificSolidDivisionOf some ThirdCervicalVertebra)
+BodyOfThirdCervicalVertebra SubClassOf Corpus
+BodyOfThoracicVertebra is Class
+BodyOfThoracicVertebra EquivalentTo Corpus and (isSpecificSolidDivisionOf some ThoracicVertebra)
+BodyOfThoracicVertebra SubClassOf Corpus
+BodyOfTongue is Class
+BodyOfTongue EquivalentTo Corpus and (isSpecificSolidDivisionOf some Tongue)
+BodyOfTongue SubClassOf Corpus,
+BodyOfTongue SubClassOf hasBetaConnection some TerminalSulcus,
+BodyOfTongue SubClassOf hasSolidDivision some AnteriorTwoThirdsOfSoildDivisionOfTongue,
+BodyOfTongue SubClassOf hasSolidDivision some DorsumOfTongue,
+BodyOfTongue SubClassOf hasSolidDivision some TipOfTongue,
+BodyOfTongue SubClassOf isPairedOrUnpaired some unpaired
+BodyOfVertebra is Class
+BodyOfVertebra EquivalentTo Corpus and (IsDivisionOf some Vertebra)
+BodyOfVertebra SubClassOf Corpus
+BodySpace is Class
+BodyWall is Class
+Bone is Class
+BorderOfThyroidLobe is Class
+BrachialFascia is Class
+BrachialFascia SubClassOf NAMEDFascia
+BrachialPlexus is Class
+BrachialPlexus SubClassOf NAMEDNervePlexus
+Brain is Class
+BrainVentricle is Class
+BrainVentricle SubClassOf NAMEDVentricle
+BranchOfCranialNerve is Class
+BranchOfCranialNerve EquivalentTo Nerve and (isBranchOf some CranialNerve)
+BranchOfCranialNerve SubClassOf Nerve,
+BranchOfCranialNerve SubClassOf hasCentralPeripheralSelector some bodyCentralSelection
+BranchOfFacialNerve is Class
+BranchOfFacialNerve EquivalentTo Nerve and (isBranchOf some FacialNerve)
+BranchOfFacialNerve SubClassOf Nerve
+BranchOfFemoralNerve is Class
+BranchOfFemoralNerve EquivalentTo Nerve and (isBranchOf some FemoralNerve)
+BranchOfFemoralNerve SubClassOf Nerve
+BranchOfGlossopharyngealNerve is Class
+BranchOfGlossopharyngealNerve EquivalentTo Nerve and (isBranchOf some GlossopharyngealNerve)
+BranchOfGlossopharyngealNerve SubClassOf Nerve
+BranchOfMandibularDivisionOfTrigeminalNerve is Class
+BranchOfMandibularDivisionOfTrigeminalNerve EquivalentTo Nerve and (isBranchOf some MandibularDivisionOfTrigeminalNerve)
+BranchOfMandibularDivisionOfTrigeminalNerve SubClassOf Nerve
+BranchOfMaxillaryDivisionOfTrigeminalNerve is Class
+BranchOfMaxillaryDivisionOfTrigeminalNerve EquivalentTo Nerve and (isBranchOf some MaxillaryDivisionOfTrigeminalNerve)
+BranchOfMaxillaryDivisionOfTrigeminalNerve SubClassOf Nerve
+BranchOfObturatorNerve is Class
+BranchOfObturatorNerve EquivalentTo Nerve and (isBranchOf some ObturatorNerve)
+BranchOfObturatorNerve SubClassOf Nerve
+BranchOfOphthalmicDivisionOfTrigeminalNerve is Class
+BranchOfOphthalmicDivisionOfTrigeminalNerve EquivalentTo Nerve and (isBranchOf some OphthalmicDivisionOfTrigeminalNerve)
+BranchOfOphthalmicDivisionOfTrigeminalNerve SubClassOf Nerve
+BranchOfPeripheralNerve is Class
+BranchOfPeripheralNerve EquivalentTo Nerve and (isBranchOf some PeripheralNerve)
+BranchOfPeripheralNerve SubClassOf Nerve
+BranchOfPeripheralVessel is Class
+BranchOfPeripheralVessel SubClassOf BloodVessel
+BranchOfRadialNerve is Class
+BranchOfRadialNerve EquivalentTo Nerve and (isBranchOf some RadialNerve)
+BranchOfRadialNerve SubClassOf Nerve
+BranchOfTrigeminalNerve is Class
+BranchOfTrigeminalNerve EquivalentTo Nerve and (isBranchOf some TrigeminalNerve)
+BranchOfTrigeminalNerve SubClassOf Nerve
+BranchOfUlnarNerve is Class
+BranchOfUlnarNerve EquivalentTo Nerve and (isBranchOf some UlnarNerve)
+BranchOfUlnarNerve SubClassOf Nerve
+BranchOfVagusNerve is Class
+BranchOfVagusNerve EquivalentTo Nerve and (isBranchOf some VagusNerve)
+BranchOfVagusNerve SubClassOf Nerve
+BranchOfVestibulocochlearNerve is Class
+BranchOfVestibulocochlearNerve EquivalentTo Nerve and (isBranchOf some AuditoryNerve)
+BranchOfVestibulocochlearNerve SubClassOf Nerve
+BreastLobule is Class
+BreastLobule EquivalentTo Lobe and (isSpecificSolidDivisionOf some MammaryGland)
+BreastLobule SubClassOf Lobe
+BridgingLeaflet is Class
+BridgingLeaflet SubClassOf LeafletOfCongenitallyDisplacedAtrioventricularValve
+BronchoPulmonarySegment is Class
+BronchopulmonaryLymphnode is Class
+BronchopulmonaryLymphnode EquivalentTo Lymphnode and (hasProximity some Lung) and (hasSpecificProximity some Bronchus)
+BronchopulmonaryLymphnode SubClassOf Lymphnode,
+BronchopulmonaryLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some Mediastinum
+Bronchus is Class
+BuccalLymphnode is Class
+BuccalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Buccinator)
+BuccalLymphnode SubClassOf Lymphnode,
+BuccalLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged,
+BuccalLymphnode SubClassOf isSpecificStructuralComponentOf some Head
+BuccalVestibule is Class
+BuccalVestibule SubClassOf VestibuleOfMouth
+Buccinator is Class
+BuccopharyngealFascia is Class
+BuccopharyngealFascia SubClassOf NAMEDFascia
+Bulb is Class
+Bulb SubClassOf GenericInternalStructure
+Bundle is Class
+Bundle SubClassOf GenericInternalStructure
+Bursa is Class
+Bursa SubClassOf GenericInternalStructure
+BursaAnserina is Class
+BursaAnserina SubClassOf NAMEDBursa
+BursaOfKnee is Class
+BursaOfKnee EquivalentTo Bursa and (IsDivisionOf some Knee)
+BursaOfKnee SubClassOf Bursa
+BursaOfKneeJoint is Class
+BursaOfKneeJoint EquivalentTo Bursa and (IsDivisionOf some KneeJoint)
+BursaOfKneeJoint SubClassOf Bursa
+BursaOfLowerLimb is Class
+BursaOfLowerLimb EquivalentTo Bursa and (IsDivisionOf some LowerExtremity)
+BursaOfLowerLimb SubClassOf Bursa
+BursaOfUpperLimb is Class
+BursaOfUpperLimb EquivalentTo Bursa and (IsDivisionOf some UpperExtremity)
+BursaOfUpperLimb SubClassOf Bursa
+C4C5IntervertebralSpace is Class
+C4C5IntervertebralSpace SubClassOf IntervertebralSpace,
+C4C5IntervertebralSpace SubClassOf isSpaceBoundedBy some FifthCervicalVertebra,
+C4C5IntervertebralSpace SubClassOf isSpaceBoundedBy some FourthCervicalVertebra
+CalcanealBursa is Class
+CalcanealBursa SubClassOf NAMEDBursa
+CalcaneusTendon is Class
+CalcaneusTendon SubClassOf NAMEDTendon
+CalcarineSulcus is Class
+CalcarineSulcus SubClassOf CerebralSulcus
+CampersFascia is Class
+CampersFascia SubClassOf NAMEDFascia
+Canal is Class
+Capillary is Class
+Capillary SubClassOf BloodVessel
+CapsuleOfAcromioclavicularJoint is Class
+CapsuleOfAcromioclavicularJoint SubClassOf FibrousMembrane
+CapsuleOfElbow is Class
+CapsuleOfElbow SubClassOf FibrousMembrane
+CapsuleOfHip is Class
+CapsuleOfHip SubClassOf FibrousMembrane
+CapsuleOfKidney is Class
+CapsuleOfKnee is Class
+CapsuleOfKnee SubClassOf FibrousMembrane
+CapsuleOfShoulder is Class
+CapsuleOfShoulder EquivalentTo Membrane and (boundsSpace some ShoulderJointCavity) and (isMadeOf some FibrousTissue) and (isSpecificStructuralComponentOf some ShoulderJoint)
+CapsuleOfShoulder SubClassOf Membrane,
+CapsuleOfShoulder SubClassOf hasStructuralComponent some CoracohumeralLigament,
+CapsuleOfShoulder SubClassOf hasStructuralComponent some GlenohumeralLigament,
+CapsuleOfShoulder SubClassOf hasStructuralComponent some TransverseHumeralLigament,
+CapsuleOfShoulder SubClassOf isBetaConnectionOf some InfraspinatusMuscle,
+CapsuleOfShoulder SubClassOf isBetaConnectionOf some SupraspinatusMuscle,
+CapsuleOfShoulder SubClassOf isBetaConnectionOf some TeresMinorMuscle
+CapsuleOfSternoclavicularJoint is Class
+CapsuleOfSternoclavicularJoint EquivalentTo Membrane and (boundsSpace some SternoclavicularJointCavity) and (isMadeOf some FibrousTissue) and (isSpecificStructuralComponentOf some SternoclavicularJoint)
+CapsuleOfSternoclavicularJoint SubClassOf Membrane
+CardiacGanglia is Class
+CardiacGanglia SubClassOf NAMEDGanglion
+CardiacMuscle is Class
+CardiacMuscle EquivalentTo Muscle and (isSpecificallyMadeOf some CardiacMuscleTissue)
+CardiacMuscle SubClassOf Muscle,
+CardiacMuscle SubClassOf hasSpecificLayer some Subendocardium,
+CardiacMuscle SubClassOf hasSpecificStructuralComponent some CardiacMyocyte,
+CardiacMuscle SubClassOf hasStructuralComponent some TrabeculaCarnae,
+CardiacMuscle SubClassOf isFunctionalComponentOf some Heart,
+CardiacMuscle SubClassOf isLayerOf some Heart,
+CardiacMuscle SubClassOf isSpecificallyMadeOf some InterstitialTissueOfMyocardium
+CardiacMuscleTissue is Class
+CardiacMyocyte is Class
+CardiacPlexus is Class
+CardiacPlexus SubClassOf NAMEDNervePlexus
+CardiacSeptum is Class
+CardiacSeptum SubClassOf Septum,
+CardiacSeptum SubClassOf hasSpecificSolidDivision some InteratrialSeptum,
+CardiacSeptum SubClassOf hasSpecificSolidDivision some InterventricularSeptum
+Catalysing is Class
+Catheter is Class
+CaudalCerebellarLobe is Class
+CaudalCerebellarLobe SubClassOf CerebellarLobe
+CaudateLobeOfLiver is Class
+CaudateLobeOfLiver SubClassOf LobeOfLiver
+CavalLymphnode is Class
+CavalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some InferiorVenaCava)
+CavalLymphnode SubClassOf Lymphnode,
+CavalLymphnode SubClassOf isPairedOrUnpaired some unpaired,
+CavalLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some AbdominalCavity
+CeliacLymphnode is Class
+CeliacLymphnode EquivalentTo Lymphnode and (hasProximity some Aorta) and (hasSpecificProximity some CeliacTrunk)
+CeliacLymphnode SubClassOf Lymphnode
+CeliacPlexus is Class
+CeliacPlexus SubClassOf NAMEDLymphaticPlexus
+CeliacTrunk is Class
+Cell is Class
+CellMembrane is Class
+CellMembrane EquivalentTo Membrane and (isStructuralComponentOf some Cell)
+CellMembrane SubClassOf Membrane
+CementumOfTooth is Class
+CentralAxillaryLymphnode is Class
+CentralAxillaryLymphnode SubClassOf AxillaryLymphnode
+CentralBloodVessel is Class
+CentralBloodVessel SubClassOf BloodVessel
+CentralNerve is Class
+CentralNerve EquivalentTo Nerve and (hasCentralPeripheralSelector some bodyCentralSelection)
+CentralNerve SubClassOf Nerve,
+CentralNerve SubClassOf isStructuralComponentOf some CentralNervousSystem
+CentralNervousSystem is Class
+CentralPeripheralSelector is Class
+CentralPeripheralSelector SubClassOf AbsolutePositionSelector
+CentralSulcus is Class
+CentralSulcus SubClassOf CerebralSulcus
+CentralTendonOfDiaphragm is Class
+CentralTendonOfDiaphragm SubClassOf NAMEDTendon
+Centrosome is Class
+Centrosome SubClassOf GenericInternalStructure
+CerebellarCortex is Class
+CerebellarCortex EquivalentTo Cortex and (isSpecificLayerOf some Cerebellum)
+CerebellarCortex SubClassOf Cortex,
+CerebellarCortex SubClassOf partitivelyContains some GreyMatter
+CerebellarLobe is Class
+CerebellarLobe EquivalentTo Lobe and (isSpecificSolidDivisionOf some Cerebellum)
+CerebellarLobe SubClassOf Lobe
+CerebellarPeduncle is Class
+CerebellarPeduncle EquivalentTo Peduncle and (isSpecificSolidDivisionOf some Cerebellum)
+CerebellarPeduncle SubClassOf Peduncle,
+CerebellarPeduncle SubClassOf isPairedOrUnpaired some mirrorImaged
+CerebellarVermis is Class
+CerebellarVermis EquivalentTo Vermis and (isSpecificSolidDivisionOf some Cerebellum)
+CerebellarVermis SubClassOf Vermis
+Cerebellum is Class
+CerebralCortex is Class
+CerebralCortex EquivalentTo Cortex and (isSpecificLayerOf some Telencephalon)
+CerebralCortex SubClassOf Cortex,
+CerebralCortex SubClassOf hasFunction some CognitiveProcess,
+CerebralCortex SubClassOf partitivelyContains some GreyMatter
+CerebralGyrus is Class
+CerebralGyrus EquivalentTo Gyrus and (isSpecificStructuralComponentOf some CerebralCortex)
+CerebralGyrus SubClassOf Gyrus
+CerebralHemisphere is Class
+CerebralLobe is Class
+CerebralLobe EquivalentTo Lobe and (isSpecificSolidDivisionOf some Telencephalon)
+CerebralLobe SubClassOf Lobe,
+CerebralLobe SubClassOf isPairedOrUnpaired some leftRightPaired
+CerebralPeduncle is Class
+CerebralPeduncle EquivalentTo Peduncle and (isSpecificSolidDivisionOf some CerebralHemisphere)
+CerebralPeduncle SubClassOf Peduncle,
+CerebralPeduncle SubClassOf hasSolidDivision some CrusCerebri,
+CerebralPeduncle SubClassOf hasSolidDivision some Tegmentum,
+CerebralPeduncle SubClassOf isPairedOrUnpaired some mirrorImaged,
+CerebralPeduncle SubClassOf isStructuralComponentOf some Mesencephalon
+CerebralSulcus is Class
+CerebralSulcus EquivalentTo Groove and (isSpecificStructuralComponentOf some CerebralCortex)
+CerebralSulcus SubClassOf Groove
+CervicalGanglion is Class
+CervicalGanglion SubClassOf NAMEDGanglion
+CervicalLymphnode is Class
+CervicalLymphnode EquivalentTo Lymphnode and (isStructuralComponentOf some Neck)
+CervicalLymphnode SubClassOf Lymphnode
+CervicalMarginOfTooth is Class
+CervicalPlexus is Class
+CervicalPlexus SubClassOf NAMEDNervePlexus
+CervicalVertebra is Class
+CervicobrachialisPlexus is Class
+CervicobrachialisPlexus SubClassOf NAMEDNervePlexus
+CervicothoracicGanglion is Class
+CervicothoracicGanglion SubClassOf NAMEDGanglion
+CervixUteri is Class
+ChaoticMenstrualCycle is Class
+ChaoticMenstrualCycle EquivalentTo MenstrualCycle and (hasAbsoluteState some randomlyRepeating)
+ChaoticMenstrualCycle SubClassOf MenstrualCycle
+ChemicalProcess is Class
+Chiasma is Class
+Chiasma SubClassOf GenericInternalStructure
+Chin is Class
+ChordaeTendinae is Class
+ChordaeTendinae SubClassOf NAMEDTendon
+ChorionicMembrane is Class
+ChorionicMembrane SubClassOf NAMEDMembrane
+ChoroidPlexus is Class
+ChoroidPlexus SubClassOf NAMEDVascularPlexus
+Chronicity is Class
+CiliaryGanglion is Class
+CiliaryGanglion SubClassOf NAMEDGanglion
+CiliaryGanglionicPlexus is Class
+CiliaryGanglionicPlexus SubClassOf NAMEDNervePlexus
+CingulateGyrus is Class
+CingulateGyrus SubClassOf CerebralGyrus
+CingulateSulcus is Class
+CingulateSulcus SubClassOf CerebralSulcus
+Cisterna is Class
+Cisterna SubClassOf GenericInternalStructure
+CisternaAmbiens is Class
+CisternaAmbiens SubClassOf NAMEDCisterna
+CisternaCerebellomedullaris is Class
+CisternaCerebellomedullaris SubClassOf NAMEDCisterna
+CisternaChiasmatis is Class
+CisternaChiasmatis SubClassOf NAMEDCisterna
+CisternaChylii is Class
+CisternaChylii SubClassOf NAMEDCisterna
+CisternaFossaeLateralisCerebri is Class
+CisternaFossaeLateralisCerebri SubClassOf NAMEDCisterna
+CisternaInterpeduncularis is Class
+CisternaInterpeduncularis SubClassOf NAMEDCisterna
+CisternaPontis is Class
+CisternaPontis SubClassOf NAMEDCisterna
+CisternaSubarachnoideales is Class
+CisternaSubarachnoideales EquivalentTo Cisterna and (IsDivisionOf some SubarachnoidSpace)
+CisternaSubarachnoideales SubClassOf Cisterna
+ClavipectoralFascia is Class
+ClavipectoralFascia SubClassOf NAMEDFascia
+Clitoris is Class
+Clivus is Class
+CoccygealGanglion is Class
+CoccygealGanglion SubClassOf NAMEDGanglion
+CoccygealPlexus is Class
+CoccygealPlexus SubClassOf NAMEDNervePlexus
+CognitiveProcess is Class
+CollateralSulcus is Class
+CollateralSulcus SubClassOf CerebralSulcus
+Colliculus is Class
+Colliculus SubClassOf GenericInternalStructure
+ColumellaNasi is Class
+Column is Class
+Column SubClassOf GenericInternalStructure
+ColumnOfSpinalCord is Class
+ColumnOfSpinalCord EquivalentTo Column and (isSpecificStructuralComponentOf some SpinalCord)
+ColumnOfSpinalCord SubClassOf Column,
+ColumnOfSpinalCord SubClassOf isPairedOrUnpaired some mirrorImaged
+CommonCarotidPlexus is Class
+CommonCarotidPlexus SubClassOf NAMEDNervePlexus
+CommonExtensorTendonOfForearm is Class
+CommonExtensorTendonOfForearm SubClassOf NAMEDTendon
+CommonFlexorTendonOfForearm is Class
+CommonFlexorTendonOfForearm SubClassOf NAMEDTendon
+CommonIliacArtery is Class
+CommonIliacLymphnode is Class
+CommonIliacLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some CommonIliacArtery)
+CommonIliacLymphnode SubClassOf Lymphnode,
+CommonIliacLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+ComplexCarbohydrate is Class
+ComponentOfCervicalVertebra is Class
+Conception is Class
+Conceptus is Class
+ConchalCrestOfPalatineBone is Class
+ConchalCrestOfPalatineBone EquivalentTo Crest and (isSpecificSolidDivisionOf some PalatineBone)
+ConchalCrestOfPalatineBone SubClassOf Crest
+ConductionFibres is Class
+ConductionFibres SubClassOf CardiacMuscle
+Cone is Class
+Cone SubClassOf GenericInternalStructure
+CongenitalPesValgus is Class
+CongenitalPesValgus EquivalentTo PesValgus and (hasAcquisitionMode some
+CongenitalPesValgus EquivalentTo (AcquisitionMode and (hasAbsoluteState some congenital)))
+CongenitalPesValgus SubClassOf PesValgus
+CongenitallyDisplacedAtrioventricularValve is Class
+ConjointTendon is Class
+ConjointTendon SubClassOf NAMEDTendon
+ControlOfFlow is Class
+CoracobrachialBursa is Class
+CoracobrachialBursa SubClassOf NAMEDBursa
+CoracohumeralLigament is Class
+CoracoidBursa is Class
+CoracoidBursa SubClassOf NAMEDBursa
+CornuOfHyoidBone is Class
+CornuOfHyoidBone EquivalentTo Horn and (isSpecificSolidDivisionOf some HyoidBone)
+CornuOfHyoidBone SubClassOf Horn,
+CornuOfHyoidBone SubClassOf isPairedOrUnpaired some mirrorImaged
+CoronalSuture is Class
+CoronalSuture SubClassOf NAMEDJoint,
+CoronalSuture SubClassOf isAlphaConnectionOf some LeftParietalBone,
+CoronalSuture SubClassOf isAlphaConnectionOf some RightParietalBone,
+CoronalSuture SubClassOf isBetaConnectionOf some FrontalBone,
+CoronalSuture SubClassOf isMadeOf some FibrousTissue,
+CoronalSuture SubClassOf isPairedOrUnpaired some unpaired,
+CoronalSuture SubClassOf isStructuralComponentOf some Skull
+CoronaryBloodVessel is Class
+CoronaryBloodVessel SubClassOf BloodVessel
+Corpus is Class
+Corpus SubClassOf GenericInternalStructure
+Cortex is Class
+Cortex SubClassOf GenericInternalStructure
+CortexOfKidney is Class
+CortexOfKidney EquivalentTo Cortex and (isSpecificLayerOf some RenalNonPelvis)
+CortexOfKidney SubClassOf Cortex,
+CortexOfKidney SubClassOf hasStructuralComponent some ArchedCollectingTubuleOfNephron,
+CortexOfKidney SubClassOf hasStructuralComponent some DistalTubule,
+CortexOfKidney SubClassOf hasStructuralComponent some Glomerulus,
+CortexOfKidney SubClassOf hasStructuralComponent some ProximalTubule
+CortexOfOcularLens is Class
+CortexOfOcularLens EquivalentTo Cortex and (isStructuralComponentOf some Lens)
+CortexOfOcularLens SubClassOf Cortex
+CranialCerebellarLobe is Class
+CranialCerebellarLobe SubClassOf CerebellarLobe
+CranialFontanelle is Class
+CranialFontanelle EquivalentTo Fontanelle and (IsDivisionOf some Cranium)
+CranialFontanelle SubClassOf Fontanelle
+CranialNerve is Class
+CraniallyInnervatedMuscle is Class
+CraniallyInnervatedMuscle SubClassOf StriatedMuscle
+Cranium is Class
+Crease is Class
+Crease SubClassOf GenericInternalStructure
+CremastericFascia is Class
+CremastericFascia SubClassOf NAMEDFascia
+Crest is Class
+Crest SubClassOf GenericInternalStructure
+CribriformFascia is Class
+CribriformFascia SubClassOf NAMEDFascia
+Crown is Class
+Crown SubClassOf GenericInternalStructure
+CruralFascia is Class
+CruralFascia SubClassOf NAMEDFascia
+CrusCerebri is Class
+Crypt is Class
+Crypt SubClassOf GenericInternalStructure
+CubitoradialBursa is Class
+CubitoradialBursa SubClassOf NAMEDBursa
+Culicidae is Class
+CulicidaeCulex is Class
+CulicidaeCulex SubClassOf Culicidae
+Cusp is Class
+Cusp SubClassOf GenericInternalStructure
+CysticLymphnode is Class
+CysticLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Gallbladder)
+CysticLymphnode SubClassOf Lymphnode,
+CysticLymphnode SubClassOf isPairedOrUnpaired some unpaired,
+CysticLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some AbdominalCavity
+CysticPlexus is Class
+CysticPlexus SubClassOf NAMEDNervePlexus
+Decussation is Class
+Decussation SubClassOf GenericInternalStructure
+DeepBloodVessel is Class
+DeepBloodVessel SubClassOf BloodVessel
+DeepCardiacPlexus is Class
+DeepCardiacPlexus SubClassOf NAMEDNervePlexus
+DeepCervicalLymphnode is Class
+DeepCervicalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some InternalJugularVein)
+DeepCervicalLymphnode SubClassOf Lymphnode,
+DeepCervicalLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+DeepInfraPatellarBursa is Class
+DeepInfraPatellarBursa SubClassOf NAMEDBursa
+DeepInguinalLymphNodes is Class
+DeepInguinalLymphNodes SubClassOf InguinalLymphnode
+DeepLingualArtery is Class
+DeferentialPlexus is Class
+DeferentialPlexus SubClassOf NAMEDNervePlexus
+DeltoPectoralLymphnode is Class
+DeltoPectoralLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some DeltoPectoralTriangle)
+DeltoPectoralLymphnode SubClassOf Lymphnode,
+DeltoPectoralLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+DeltoPectoralTriangle is Class
+DentateGyrus is Class
+DentateGyrus SubClassOf CerebralGyrus
+DevascularisedPedicle is Class
+DevascularisedPedicle SubClassOf Pedicle
+DiaphragmaticFascia is Class
+DiaphragmaticFascia SubClassOf NAMEDFascia
+DigastricTendon is Class
+DigastricTendon SubClassOf NAMEDTendon
+Digestion is Class
+DihydrofolateReductase is Class
+DihydrofolateReductase SubClassOf NAMEDEnzyme
+Disc is Class
+Disc SubClassOf GenericInternalStructure
+DiseasedCardiacMuscle is Class
+DiseasedCardiacMuscle SubClassOf CardiacMuscle
+DiseasedMuscle is Class
+DiseasedMuscle EquivalentTo Muscle and (hasPathologicalStatus some pathological)
+DiseasedMuscle SubClassOf Muscle
+Displacement is Class
+DistalHeadOfRadius is Class
+DistalPartOfTibia is Class
+DistalTubule is Class
+DiurnalEnuresis is Class
+DiurnalEnuresis EquivalentTo Micturition and (hasIntentionality some
+DiurnalEnuresis EquivalentTo (Intentionality and (hasAbsoluteState some involuntary))) and (hasPathologicalStatus some pathological) and (occursDuring some PeriodDuringDaylight)
+DiurnalEnuresis SubClassOf Micturition
+DivergentSquint is Class
+DivergentSquint EquivalentTo VisualAxis and (isDivergentWith some VisualAxis)
+DivergentSquint SubClassOf VisualAxis
+DopamineAsNeurotransmitter is Class
+DopamineNeurotransmitterDeficiency is Class
+DopamineNeurotransmitterDeficiency EquivalentTo Mass and (hasQuantity some
+DopamineNeurotransmitterDeficiency EquivalentTo (Level and (hasMagnitude some lowLevel))) and (isActedOnBy some Storing) and (isMassOf some DopamineAsNeurotransmitter)
+DopamineNeurotransmitterDeficiency SubClassOf Mass
+DorsalCerebellomedullaryCistern is Class
+DorsalCerebellomedullaryCistern SubClassOf NAMEDCisterna
+DorsumOfTongue is Class
+DorsumSellae is Class
+Duct is Class
+Duct SubClassOf GenericInternalStructure
+DuctusArteriosus is Class
+DuodenalPapilla is Class
+DuodenalPapilla EquivalentTo Papilla and (isSpecificStructuralComponentOf some Duodenum)
+DuodenalPapilla SubClassOf Papilla,
+DuodenalPapilla SubClassOf hasTopology some tubularTopology,
+DuodenalPapilla SubClassOf isBetaConnectionOf some AmpullaOfVater
+Duodenum is Class
+EarAtrium is Class
+EarAtrium SubClassOf NAMEDAtrium
+EbsteinsCongenitallyDisplacedAtrioventricularValve is Class
+EbsteinsCongenitallyDisplacedAtrioventricularValve SubClassOf CongenitallyDisplacedAtrioventricularValve
+EbsteinsCongenitallyDisplacedTricuspidValve is Class
+EbsteinsCongenitallyDisplacedTricuspidValve EquivalentTo TricuspidValve and (hasPathologicalStatus some pathological) and (isActedOnSpecificallyBy some OrganDisplacementProcess)
+EbsteinsCongenitallyDisplacedTricuspidValve SubClassOf TricuspidValve
+Effectiveness is Class
+EighthThoracicVertebra is Class
+EjaculatoryDuct is Class
+EjaculatoryDuct SubClassOf NAMEDDuct
+Elbow is Class
+ElbowJoint is Class
+EleventhThoracicVertebra is Class
+Endocardium is Class
+EndolymphaticDuct is Class
+EndolymphaticDuct SubClassOf Duct
+Endothelium is Class
+EndothoracicFascia is Class
+EndothoracicFascia SubClassOf NAMEDFascia
+EntericPlexus is Class
+EntericPlexus SubClassOf NAMEDNervePlexus
+Enterobacter is Class
+EnterobacterAerogenes is Class
+EnterobacterAerogenes SubClassOf Enterobacter
+EpiCranialAponeurosis is Class
+EpiCranialAponeurosis SubClassOf NAMEDAponeurosis
+EpidermalLayer is Class
+ErectileTissue is Class
+EscherichiaColi is Class
+EscherichiaColiEnterotoxigenic is Class
+EscherichiaColiEnterotoxigenic SubClassOf EscherichiaColi
+EsophagealPlexus is Class
+EsophagealPlexus SubClassOf NAMEDNervePlexus
+Extension is Class
+ExtensorMuscleOfArm is Class
+ExtensorMuscleOfArm SubClassOf StriatedMuscle
+ExtensorMuscleOfFinger is Class
+ExtensorMuscleOfFinger SubClassOf StriatedMuscle
+ExtensorMuscleOfFoot is Class
+ExtensorMuscleOfFoot SubClassOf StriatedMuscle
+ExtensorMuscleOfForearm is Class
+ExtensorMuscleOfForearm SubClassOf StriatedMuscle
+ExtensorMuscleOfHand is Class
+ExtensorMuscleOfHand SubClassOf StriatedMuscle
+ExtensorMuscleOfLeg is Class
+ExtensorMuscleOfLeg SubClassOf StriatedMuscle
+ExtensorMuscleOfThigh is Class
+ExtensorMuscleOfThigh SubClassOf StriatedMuscle
+ExtensorOfNeck is Class
+ExtensorOfNeck SubClassOf StriatedMuscle
+ExtensorTendon is Class
+ExtensorTendon EquivalentTo Tendon and (isLinearDivisionOf some
+ExtensorTendon EquivalentTo (Muscle and (hasFunction some Extension)))
+ExtensorTendon SubClassOf Tendon
+ExtensorTendonOfFinger is Class
+ExtensorTendonOfFinger EquivalentTo Tendon and (IsDivisionOf some ExtensorMuscleOfFinger)
+ExtensorTendonOfFinger SubClassOf Tendon,
+ExtensorTendonOfFinger SubClassOf isStructuralComponentOf some Forearm
+ExternalCarotidPlexus is Class
+ExternalCarotidPlexus SubClassOf NAMEDNervePlexus
+ExternalGenitalia is Class
+ExternalIliacArtery is Class
+ExternalIliacLymphnode is Class
+ExternalIliacLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some ExternalIliacArtery)
+ExternalIliacLymphnode SubClassOf Lymphnode,
+ExternalIliacLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+ExternalJugularVein is Class
+ExternalObturatorMuscle is Class
+Eye is Class
+Eyeball is Class
+Face is Class
+Facet is Class
+Facet SubClassOf GenericInternalStructure
+FacialExpressionProcess is Class
+FacialNerve is Class
+FacialPlexus is Class
+FacialPlexus SubClassOf NAMEDNervePlexus
+FalseCapsuleOfProstate is Class
+FalseCapsuleOfProstate EquivalentTo Sheath and (isSpecificStructuralComponentOf some ProstateGland)
+FalseCapsuleOfProstate SubClassOf Sheath
+FalseMembrane is Class
+FalseMembrane SubClassOf NAMEDMembrane
+Falx is Class
+Falx SubClassOf GenericInternalStructure
+FalxCerebelli is Class
+FalxCerebelli SubClassOf NAMEDFalx
+FalxCerebri is Class
+FalxCerebri SubClassOf NAMEDFalx
+Fascia is Class
+Fascia SubClassOf GenericInternalStructure
+FasciaLata is Class
+FasciaLata SubClassOf NAMEDFascia
+FasciaOfUrogenitalDiaphragm is Class
+FasciaOfUrogenitalDiaphragm SubClassOf NAMEDFascia
+FascialCompartment is Class
+FascialCompartment SubClassOf GenericInternalStructure
+FascialCompartmentOfArm is Class
+FascialCompartmentOfArm EquivalentTo FascialCompartment and (isSpecificSolidDivisionOf some Arm)
+FascialCompartmentOfArm SubClassOf FascialCompartment
+FascialCompartmentOfForearm is Class
+FascialCompartmentOfForearm EquivalentTo FascialCompartment and (isSpecificSolidDivisionOf some Forearm)
+FascialCompartmentOfForearm SubClassOf FascialCompartment
+FascialCompartmentOfLeg is Class
+FascialCompartmentOfLeg EquivalentTo FascialCompartment and (isSpecificSolidDivisionOf some Leg)
+FascialCompartmentOfLeg SubClassOf FascialCompartment
+FascialCompartmentOfThigh is Class
+FascialCompartmentOfThigh EquivalentTo FascialCompartment and (isSpecificSolidDivisionOf some Thigh)
+FascialCompartmentOfThigh SubClassOf FascialCompartment
+Fasciculus is Class
+Fasciculus SubClassOf GenericInternalStructure
+FemaleExternalGenitalia is Class
+FemalePelvicFloor is Class
+FemalePeriUrethralTissue is Class
+FemalePeriUrethralTissue EquivalentTo SoftTissue and (hasProximity some FemaleUrethra)
+FemalePeriUrethralTissue SubClassOf SoftTissue,
+FemalePeriUrethralTissue SubClassOf isStructuralComponentOf some FemaleUrethra
+FemaleUrethra is Class
+FemoralNerve is Class
+FemoralPlexus is Class
+FemoralPlexus SubClassOf NAMEDLymphaticPlexus
+Fibre is Class
+Fibre SubClassOf GenericInternalStructure
+Fibrocartilage is Class
+FibroelasticLaryngealMembrane is Class
+FibroelasticLaryngealMembrane EquivalentTo Membrane and (isSpecificStructuralComponentOf some Larynx) and (isSpecificallyMadeOf some FibroelasticTissue)
+FibroelasticLaryngealMembrane SubClassOf Membrane,
+FibroelasticLaryngealMembrane SubClassOf isPairedOrUnpaired some unpaired
+FibroelasticTissue is Class
+FibrousMembrane is Class
+FibrousMembrane EquivalentTo Membrane and (isMadeOf some FibrousTissue)
+FibrousMembrane SubClassOf Membrane
+FibrousTissue is Class
+FibularNotchOfTibia is Class
+FibularNotchOfTibia EquivalentTo Notch and (isSpecificSurfaceDivisionOf some DistalPartOfTibia)
+FibularNotchOfTibia SubClassOf Notch
+FifthCervicalVertebra is Class
+FifthLumbarVertebra is Class
+FifthMetatarsal is Class
+FirstInterMetatarsalSpace is Class
+FirstInterMetatarsalSpace EquivalentTo InterMetatarsalSpace and (hasOrdinalPosition some first)
+FirstInterMetatarsalSpace SubClassOf InterMetatarsalSpace,
+FirstInterMetatarsalSpace SubClassOf isSpaceBoundedBy some FirstMetatarsal,
+FirstInterMetatarsalSpace SubClassOf isSpaceBoundedBy some SecondMetatarsal
+FirstLumbarVertebra is Class
+FirstMetatarsal is Class
+FirstThoracicVertebra is Class
+Fistula is Class
+Flexion is Class
+FlexorMuscleOfArm is Class
+FlexorMuscleOfArm SubClassOf StriatedMuscle
+FlexorMuscleOfFinger is Class
+FlexorMuscleOfFinger SubClassOf StriatedMuscle
+FlexorMuscleOfFoot is Class
+FlexorMuscleOfFoot SubClassOf StriatedMuscle
+FlexorMuscleOfForearm is Class
+FlexorMuscleOfForearm SubClassOf StriatedMuscle
+FlexorMuscleOfHand is Class
+FlexorMuscleOfHand SubClassOf StriatedMuscle
+FlexorMuscleOfLeg is Class
+FlexorMuscleOfLeg SubClassOf StriatedMuscle
+FlexorMuscleOfThigh is Class
+FlexorMuscleOfThigh SubClassOf StriatedMuscle
+FlexorTendon is Class
+FlexorTendon EquivalentTo Tendon and (isLinearDivisionOf some
+FlexorTendon EquivalentTo (Muscle and (hasFunction some Flexion)))
+FlexorTendon SubClassOf Tendon
+FloorOfAnteriorCranialFossa is Class
+FloorOfMiddleCranialFossa is Class
+FloorOfPosteriorCranialFossa is Class
+Flow is Class
+Fluorescing is Class
+Fluorescing SubClassOf ChemicalProcess
+Fontanelle is Class
+Fontanelle SubClassOf GenericInternalStructure
+Foot is Class
+Forearm is Class
+FossaOvalis is Class
+FourthCervicalVertebra is Class
+FourthInterMetatarsalSpace is Class
+FourthInterMetatarsalSpace EquivalentTo InterMetatarsalSpace and (hasOrdinalPosition some fourth)
+FourthInterMetatarsalSpace SubClassOf InterMetatarsalSpace,
+FourthInterMetatarsalSpace SubClassOf isSpaceBoundedBy some FifthMetatarsal,
+FourthInterMetatarsalSpace SubClassOf isSpaceBoundedBy some FourthMetatarsal
+FourthLumbarVertebra is Class
+FourthMetatarsal is Class
+FrontalBone is Class
+FrontalLobe is Class
+FrontalLobe SubClassOf CerebralLobe
+FusiformGyrus is Class
+FusiformGyrus SubClassOf CerebralGyrus
+Gallbladder is Class
+Ganglion is Class
+Ganglion SubClassOf GenericInternalStructure
+GanglionOfVagusNerve is Class
+GanglionOfVagusNerve SubClassOf NAMEDGanglion
+GastrocnemiusBursa is Class
+GastrocnemiusBursa SubClassOf NAMEDBursa
+GastrointestinalAbnormality is Class
+GastrointestinalAbnormality EquivalentTo Phenomenon and (LocativeAttribute some GastrointestinalTract) and (hasAbnormalityStatus some nonNormal)
+GastrointestinalAbnormality SubClassOf Phenomenon
+GastrointestinalContent is Class
+GastrointestinalMotility is Class
+GastrointestinalMotility EquivalentTo Motility and (isFunctionOf some NAMEDGITractBodyPart)
+GastrointestinalMotility SubClassOf Motility
+GastrointestinalMucosa is Class
+GastrointestinalMucosa EquivalentTo MucousMembrane and (isSpecificLayerOf some
+GastrointestinalMucosa EquivalentTo (BodyWall and (isSpecificLayerOf some NAMEDGITractBodyPart)))
+GastrointestinalMucosa SubClassOf MucousMembrane,
+GastrointestinalMucosa SubClassOf isSpecificallyMadeOf some LaminaMuscularisMucosae
+GastrointestinalPeristalsis is Class
+GastrointestinalPeristalsis EquivalentTo Peristalsis and (isFunctionOf some GastrointestinalTract)
+GastrointestinalPeristalsis SubClassOf Peristalsis,
+GastrointestinalPeristalsis SubClassOf isSubprocessOf some Digestion
+GastrointestinalTract is Class
+GastrointestinalTransport is Class
+GastrointestinalTransport EquivalentTo Flow and (actsOn some GastrointestinalContent)
+GastrointestinalTransport SubClassOf Flow,
+GastrointestinalTransport SubClassOf isSpecificImmediateConsequenceOf some GastrointestinalPeristalsis
+GastrostomyCatheter is Class
+GastrostomyCatheter SubClassOf Catheter
+GeneralMedicine is Class
+GeneralMedicine SubClassOf Medicine
+GenericBodyStructure is Class
+GenericInternalStructure is Class
+GenericInternalStructure SubClassOf GenericBodyStructure,
+GenericInternalStructure SubClassOf hasSurfaceVisibility some internal
+GeniculateGanglion is Class
+GeniculateGanglion SubClassOf NAMEDGanglion
+GenitourinaryMedicine is Class
+GenitourinaryMedicine SubClassOf Medicine
+GingivalSulcus is Class
+GingivalSulcus EquivalentTo Groove and (isSpaceBoundedBy some CervicalMarginOfTooth) and (isSpaceBoundedBy some MarginalGingiva) and (isSpecificStructuralComponentOf some Gum)
+GingivalSulcus SubClassOf Groove
+GlenohumeralLigament is Class
+Glomerulus is Class
+GlossopharyngealGanglion is Class
+GlossopharyngealGanglion SubClassOf NAMEDGanglion
+GlossopharyngealNerve is Class
+GlutealFascia is Class
+GlutealFascia SubClassOf NAMEDFascia
+GlutealMuscle is Class
+GlutealMuscle EquivalentTo Muscle and (isServedBy some InferiorGlutealNerve)
+GlutealMuscle SubClassOf Muscle
+Glycogen is Class
+Glycogen SubClassOf ComplexCarbohydrate
+Gracilis is Class
+GradeOfExperience is Class
+GradeOfExperience SubClassOf OrganismFeature
+Granule is Class
+Granule SubClassOf GenericInternalStructure
+GreatVessel is Class
+GreatVessel SubClassOf BloodVessel
+GreaterCornuOfHyoidBone is Class
+GreaterCornuOfHyoidBone SubClassOf CornuOfHyoidBone
+GreyColumn is Class
+GreyColumn SubClassOf ColumnOfSpinalCord
+GreyMatter is Class
+Groove is Class
+Groove SubClassOf GenericInternalStructure
+Gum is Class
+Gyrus is Class
+Gyrus SubClassOf GenericInternalStructure
+Hand is Class
+HardPalate is Class
+Head is Class
+HeadOrNeck is Class
+Heart is Class
+HeartAtrium is Class
+HeartAtrium SubClassOf NAMEDAtrium
+HeartValveCusp is Class
+HeartValveCusp EquivalentTo Cusp and (isStructuralComponentOf some MajorHeartValve)
+HeartValveCusp SubClassOf Cusp
+HeartValveLunule is Class
+HeartValveLunule EquivalentTo Lunule and (isStructuralComponentOf some MajorHeartValve)
+HeartValveLunule SubClassOf Lunule
+HeartValveNodule is Class
+HeartValveNodule EquivalentTo Nodule and (hasLocation some MajorHeartValve)
+HeartValveNodule SubClassOf Nodule
+HeartVentricle is Class
+HeartVentricle SubClassOf NAMEDVentricle
+Hemopericardium is Class
+Hemopericardium SubClassOf PericardialSpace
+HepaticArtery is Class
+HepaticLymphnode is Class
+HepaticLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some HepaticArtery)
+HepaticLymphnode SubClassOf Lymphnode,
+HepaticLymphnode SubClassOf isPairedOrUnpaired some unpaired,
+HepaticLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some AbdominalCavity
+HepaticPlexus is Class
+HepaticPlexus SubClassOf NAMEDLymphaticPlexus
+Hilum is Class
+Hilum SubClassOf GenericInternalStructure
+HilumOfAdrenalGland is Class
+HilumOfAdrenalGland EquivalentTo Hilum and (isSpecificStructuralComponentOf some AdrenalGland)
+HilumOfAdrenalGland SubClassOf Hilum
+HilumOfKidney is Class
+HilumOfKidney EquivalentTo Hilum and (isSpecificStructuralComponentOf some Kidney)
+HilumOfKidney SubClassOf Hilum
+HilumOfLung is Class
+HilumOfLung EquivalentTo Hilum and (isSpecificStructuralComponentOf some Lung)
+HilumOfLung SubClassOf Hilum
+Hip is Class
+HipJoint is Class
+Horn is Class
+Horn SubClassOf GenericInternalStructure
+HornOfLateralVentricle is Class
+HornOfLateralVentricle EquivalentTo Horn and (isSpecificSolidDivisionOf some LateralVentricle)
+HornOfLateralVentricle SubClassOf Horn
+HornOfMeniscusOfKneeJoint is Class
+HornOfMeniscusOfKneeJoint EquivalentTo Horn and (isSpecificSolidDivisionOf some MeniscusOfKneeJoint)
+HornOfMeniscusOfKneeJoint SubClassOf Horn,
+HornOfMeniscusOfKneeJoint SubClassOf hasAnteriorPosteriorSelector some AnteriorPosteriorPositionSelector
+HyoidBone is Class
+HypogastricPlexus is Class
+HypogastricPlexus SubClassOf NAMEDNervePlexus
+HypoplasticMyocardium is Class
+HypoplasticMyocardium SubClassOf CardiacMuscle
+Hypothalamus is Class
+HypothenarFascia is Class
+HypothenarFascia SubClassOf NAMEDFascia
+IlealPeristalsis is Class
+IlealPeristalsis EquivalentTo Peristalsis and (isSpecificFunctionOf some Ileum)
+IlealPeristalsis SubClassOf Peristalsis
+IleocecalValve is Class
+IleocecalValve SubClassOf NAMEDValve
+IleocolicPlexus is Class
+IleocolicPlexus SubClassOf NAMEDNervePlexus
+Ileum is Class
+IliacArtery is Class
+IliacBursa is Class
+IliacBursa SubClassOf NAMEDBursa
+IliacLymphnode is Class
+IliacLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some IliacArtery)
+IliacLymphnode SubClassOf Lymphnode,
+IliacLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some PelvicCavity
+IliacPlexus is Class
+IliacPlexus SubClassOf NAMEDNervePlexus
+IliacusFascia is Class
+IliacusFascia SubClassOf NAMEDFascia
+IlioInguinalLymphnode is Class
+IlioInguinalLymphnode SubClassOf InguinalLymphnode
+IliopsoasFascia is Class
+IliopsoasFascia SubClassOf NAMEDFascia
+InappropriateVerbalStatement is Class
+InappropriateVerbalStatement EquivalentTo VerbalStatement and (hasAppropriateness some
+InappropriateVerbalStatement EquivalentTo (Appropriateness and (hasAbsoluteState some inappropriate)))
+InappropriateVerbalStatement SubClassOf VerbalStatement,
+InappropriateVerbalStatement SubClassOf hasPathologicalStatus some pathological
+IncisiveCanal is Class
+IncisiveForamen is Class
+IncisivePapilla is Class
+IncisivePapilla EquivalentTo Papilla and (hasProximity some IncisiveForamen) and (isSpecificSolidDivisionOf some HardPalate)
+IncisivePapilla SubClassOf Papilla
+Incisor is Class
+IncisuraTentoriiCerebelli is Class
+IncisuraTentoriiCerebelli EquivalentTo Notch and (isSpecificSolidDivisionOf some TentoriumCerebelli)
+IncisuraTentoriiCerebelli SubClassOf Notch
+IncompetentValve is Class
+IncompetentValve EquivalentTo Valve and (hasSpecificFunction some
+IncompetentValve EquivalentTo (ControlOfFlow and (hasEffectiveness some
+IncompetentValve EquivalentTo (Effectiveness and (hasAbsoluteState some ineffective)))))
+IncompetentValve SubClassOf Valve,
+IncompetentValve SubClassOf hasPathologicalStatus some pathological
+InferiorAngleOfScapula is Class
+InferiorAngleOfScapula SubClassOf AngleOfScapula
+InferiorArticularFacetOfAtlas is Class
+InferiorArticularFacetOfAtlas SubClassOf ArticularFacet
+InferiorArticularFacetOfAxis is Class
+InferiorArticularFacetOfAxis SubClassOf ArticularFacet
+InferiorBorderOfPectoralisMinor is Class
+InferiorCerebellarPeduncle is Class
+InferiorCerebellarPeduncle SubClassOf CerebellarPeduncle
+InferiorDentalPlexus is Class
+InferiorDentalPlexus SubClassOf NAMEDNervePlexus
+InferiorFrontalGyrus is Class
+InferiorFrontalGyrus SubClassOf CerebralGyrus
+InferiorGlutealNerve is Class
+InferiorHypogastricPlexus is Class
+InferiorHypogastricPlexus SubClassOf NAMEDNervePlexus
+InferiorLeafletOfTricuspidValve is Class
+InferiorLeafletOfTricuspidValve EquivalentTo Leaflet and (hasAnteriorPosteriorSelector some posteriorSelection) and (hasLeftRightSelector some rightSelection) and (isSpecificStructuralComponentOf some TricuspidValve)
+InferiorLeafletOfTricuspidValve SubClassOf Leaflet,
+InferiorLeafletOfTricuspidValve SubClassOf isBetaConnectionOf some InferiorTricuspidChordae
+InferiorMesentericArtery is Class
+InferiorMesentericLymphnode is Class
+InferiorMesentericLymphnode EquivalentTo Lymphnode and (hasProximity some Aorta) and (hasSpecificProximity some InferiorMesentericArtery)
+InferiorMesentericLymphnode SubClassOf Lymphnode
+InferiorMesentericPlexus is Class
+InferiorMesentericPlexus SubClassOf NAMEDLymphaticPlexus
+InferiorOccipitalGyrus is Class
+InferiorOccipitalGyrus SubClassOf CerebralGyrus
+InferiorOrbitalSeptum is Class
+InferiorOrbitalSeptum SubClassOf OrbitalSeptum
+InferiorPoleOfKidney is Class
+InferiorPoleOfKidney EquivalentTo Pole and (hasSuperiorInferiorSelector some inferiorSelection) and (isSpecificSolidDivisionOf some Kidney)
+InferiorPoleOfKidney SubClassOf Pole
+InferiorRectalPlexus is Class
+InferiorRectalPlexus SubClassOf NAMEDNervePlexus
+InferiorTemporalGyrus is Class
+InferiorTemporalGyrus SubClassOf CerebralGyrus
+InferiorThyroidPlexus is Class
+InferiorThyroidPlexus SubClassOf NAMEDNervePlexus
+InferiorTricuspidChordae is Class
+InferiorVenaCava is Class
+InferiorVertebralNotch is Class
+InferiorVertebralNotch EquivalentTo Notch and (hasSuperiorInferiorSelector some inferiorSelection) and (isSpecificSolidDivisionOf some VertebralPedicle)
+InferiorVertebralNotch SubClassOf Notch
+InfraOrbitalPlexus is Class
+InfraOrbitalPlexus SubClassOf NAMEDNervePlexus
+InfrahyoidBursa is Class
+InfrahyoidBursa SubClassOf NAMEDBursa
+InfrapatellarBursa is Class
+InfrapatellarBursa SubClassOf NAMEDBursa
+InfraspinatusMuscle is Class
+Infundibulum is Class
+Infundibulum SubClassOf GenericInternalStructure
+InfundibulumOfRightVentricle is Class
+InfundibulumOfRightVentricle EquivalentTo Infundibulum and (isSpecificSolidDivisionOf some RightHeartVentricle)
+InfundibulumOfRightVentricle SubClassOf Infundibulum
+InguinalLymphNode is Class
+InguinalLymphNode EquivalentTo Lymphnode and (hasSpecificProximity some InguinalRegion)
+InguinalLymphNode SubClassOf Lymphnode
+InguinalLymphnode is Class
+InguinalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some InguinalRegion)
+InguinalLymphnode SubClassOf Lymphnode,
+InguinalLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+InguinalPlexus is Class
+InguinalPlexus SubClassOf NAMEDLymphaticPlexus
+InguinalRegion is Class
+InguinoFemoralLymphnode is Class
+InguinoFemoralLymphnode SubClassOf InguinalLymphnode
+Insula is Class
+Insula SubClassOf GenericInternalStructure
+Intentionality is Class
+InterMenstrualTimePeriod is Class
+InterMenstrualTimePeriod SubClassOf PeriodDuringMenstrualCycle
+InterMetatarsalSpace is Class
+InteratrialSeptum is Class
+InteratrialSeptum SubClassOf Septum,
+InteratrialSeptum SubClassOf hasStructuralComponent some FossaOvalis,
+InteratrialSeptum SubClassOf hasStructuralComponent some OstiumPrimum,
+InteratrialSeptum SubClassOf hasStructuralComponent some OstiumSecundum,
+InteratrialSeptum SubClassOf hasStructuralComponent some SeptumPrimum,
+InteratrialSeptum SubClassOf hasStructuralComponent some SeptumSecundum
+InterclavicularLigament is Class
+IntercostalLymphnode is Class
+IntercostalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Rib)
+IntercostalLymphnode SubClassOf Lymphnode,
+IntercostalLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged,
+IntercostalLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some IntercostalSpace
+IntercostalNerve is Class
+IntercostalSpace is Class
+IntermenstrualSpotting is Class
+IntermenstrualSpotting SubClassOf LightIntermenstrualUterineBleeding
+IntermenstrualUterineBleeding is Class
+IntermenstrualUterineBleeding EquivalentTo UterineHaemorrhage and (occursDuring some InterMenstrualTimePeriod)
+IntermenstrualUterineBleeding SubClassOf UterineHaemorrhage
+IntermesentericPlexus is Class
+IntermesentericPlexus SubClassOf NAMEDNervePlexus
+InternalCarotidPlexus is Class
+InternalCarotidPlexus SubClassOf NAMEDNervePlexus
+InternalIliacArtery is Class
+InternalIliacLymphnode is Class
+InternalIliacLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some InternalIliacArtery)
+InternalIliacLymphnode SubClassOf Lymphnode,
+InternalIliacLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+InternalJugularVein is Class
+InternalMammaryArtery is Class
+InternalMammaryLymphNode is Class
+InternalMammaryLymphNode EquivalentTo Lymphnode and (hasSpecificProximity some InternalMammaryArtery)
+InternalMammaryLymphNode SubClassOf Lymphnode,
+InternalMammaryLymphNode SubClassOf isNonPartitivelyContainedIn some ThoracicCavity
+InternalMaxillaryPlexus is Class
+InternalMaxillaryPlexus SubClassOf NAMEDNervePlexus
+InternalObturatorMuscle is Class
+InterosseousMembrane is Class
+InterosseousMembrane SubClassOf NAMEDMembrane
+InterstitialMatrix is Class
+InterstitialMatrix SubClassOf GenericInternalStructure
+InterstitialTissueOfMyocardium is Class
+InterventricularSeptum is Class
+InterventricularSeptum SubClassOf Septum
+IntervertebralSpace is Class
+IntestinalHyperperistalsis is Class
+IntestinalHyperperistalsis SubClassOf GastrointestinalPeristalsis
+IntestinalLoop is Class
+IntestinalLoop EquivalentTo Loop and (isLinearDivisionOf some Intestine)
+IntestinalLoop SubClassOf Loop
+IntestinalMuscle is Class
+IntestinalMuscle SubClassOf SmoothMuscle
+IntestinalStasisProcess is Class
+IntestinalStasisProcess SubClassOf GastrointestinalTransport
+Intestine is Class
+IntraAbdominalSystemicBloodVessel is Class
+IntraAbdominalSystemicBloodVessel SubClassOf BloodVessel
+IntraCranialBloodVessel is Class
+IntraCranialBloodVessel SubClassOf BloodVessel
+IntraMenstrualTimePeriod is Class
+IntraMenstrualTimePeriod SubClassOf PeriodDuringMenstrualCycle
+IntraThoracicLymphnode is Class
+IntraThoracicLymphnode EquivalentTo Lymphnode and (InverseContainmentAttribute some ThoracicCavity)
+IntraThoracicLymphnode SubClassOf Lymphnode
+IntraThoracicSystemicBloodVessel is Class
+IntraThoracicSystemicBloodVessel SubClassOf BloodVessel
+IntracranialFornix is Class
+IntraglandularCleftOfPituitaryGland is Class
+IntraglandularCleftOfPituitaryGland EquivalentTo Groove and (isSpecificSurfaceDivisionOf some PituitaryGland)
+IntraglandularCleftOfPituitaryGland SubClassOf Groove
+IntramuralPlexus is Class
+IntramuralPlexus SubClassOf NAMEDNervePlexus
+IntraocularMuscle is Class
+IntraocularMuscle EquivalentTo Muscle and (InverseContainmentAttribute some Eyeball)
+IntraocularMuscle SubClassOf Muscle,
+IntraocularMuscle SubClassOf isStructuralComponentOf some Eye
+IntraorbitalMuscle is Class
+IntraorbitalMuscle EquivalentTo Muscle and (InverseContainmentAttribute some Orbit)
+IntraorbitalMuscle SubClassOf Muscle
+IntrinsicLaryngealMuscle is Class
+IntrinsicLaryngealMuscle SubClassOf StriatedMuscle
+IrregularMenstrualCycle is Class
+IrregularMenstrualCycle EquivalentTo MenstrualCycle and (hasAbsoluteState some irregularlyRepeating)
+IrregularMenstrualCycle SubClassOf MenstrualCycle,
+IrregularMenstrualCycle SubClassOf hasPathologicalStatus some pathological
+IschaemicMyocardium is Class
+IschaemicMyocardium SubClassOf CardiacMuscle
+Isthmus is Class
+Isthmus SubClassOf GenericInternalStructure
+IsthmusOfAorta is Class
+IsthmusOfAorta EquivalentTo Isthmus and (isSpecificSolidDivisionOf some AorticArch)
+IsthmusOfAorta SubClassOf Isthmus,
+IsthmusOfAorta SubClassOf isBetaConnectionOf some DuctusArteriosus,
+IsthmusOfAorta SubClassOf isConnectionOf some LigamentumArteriosum,
+IsthmusOfAorta SubClassOf isSpecificLinearDivisionOf some AorticArch
+IsthmusOfSalpinx is Class
+IsthmusOfSalpinx SubClassOf NAMEDIsthmus
+IsthmusOfThyroidGland is Class
+IsthmusOfThyroidGland EquivalentTo Isthmus and (isSpecificSolidDivisionOf some ThyroidGland)
+IsthmusOfThyroidGland SubClassOf Isthmus,
+IsthmusOfThyroidGland SubClassOf isPairedOrUnpaired some unpaired
+Jejunum is Class
+Joint is Class
+JointCapsule is Class
+JointCapsule EquivalentTo Membrane and (boundsSpace some JointCavity) and (isMadeOf some FibrousTissue) and (isSpecificStructuralComponentOf some Joint)
+JointCapsule SubClassOf Membrane
+JointCavity is Class
+JointLigament is Class
+JointLigament EquivalentTo Ligament and (isStructuralComponentOf some Joint)
+JointLigament SubClassOf Ligament
+JointMeniscus is Class
+JointMeniscus EquivalentTo Meniscus and (isSpecificStructuralComponentOf some Joint)
+JointMeniscus SubClassOf Meniscus
+JointOfCervicalSpine is Class
+JointOfCervicalSpine EquivalentTo Joint and (hasStructuralComponent some ComponentOfCervicalVertebra)
+JointOfCervicalSpine SubClassOf Joint
+JugularPlexus is Class
+JugularPlexus SubClassOf NAMEDLymphaticPlexus
+Kidney is Class
+KineticEnergy is Class
+Knee is Class
+KneeJoint is Class
+L1L2IntervertebralSpace is Class
+L1L2IntervertebralSpace SubClassOf IntervertebralSpace,
+L1L2IntervertebralSpace SubClassOf isSpaceBoundedBy some FirstLumbarVertebra,
+L1L2IntervertebralSpace SubClassOf isSpaceBoundedBy some SecondLumbarVertebra
+L2L3IntervertebralSpace is Class
+L2L3IntervertebralSpace SubClassOf IntervertebralSpace,
+L2L3IntervertebralSpace SubClassOf isSpaceBoundedBy some SecondLumbarVertebra,
+L2L3IntervertebralSpace SubClassOf isSpaceBoundedBy some ThirdLumbarVertebra
+L3L4IntervertebralSpace is Class
+L3L4IntervertebralSpace SubClassOf IntervertebralSpace,
+L3L4IntervertebralSpace SubClassOf isSpaceBoundedBy some FourthLumbarVertebra,
+L3L4IntervertebralSpace SubClassOf isSpaceBoundedBy some ThirdLumbarVertebra,
+L3L4IntervertebralSpace SubClassOf isSpaceBoundedBy only AnteriorMyocardium
+L4L5IntervertebralSpace is Class
+L4L5IntervertebralSpace SubClassOf IntervertebralSpace,
+L4L5IntervertebralSpace SubClassOf isSpaceBoundedBy some FifthLumbarVertebra,
+L4L5IntervertebralSpace SubClassOf isSpaceBoundedBy some FourthLumbarVertebra
+LabialVestibule is Class
+LabialVestibule SubClassOf VestibuleOfMouth
+LacrimalBone is Class
+LacrimalCrest is Class
+LacrimalCrest EquivalentTo Crest and (isSpecificSolidDivisionOf some LacrimalBone)
+LacrimalCrest SubClassOf Crest
+LacrimalDuct is Class
+LacrimalDuct SubClassOf NAMEDDuct
+LactiferousDuct is Class
+LactiferousDuct SubClassOf NAMEDDuct
+Lacuna is Class
+Lacuna SubClassOf GenericInternalStructure
+Lamina is Class
+Lamina SubClassOf GenericInternalStructure
+LaminaMuscularisMucosae is Class
+LargeIntestine is Class
+LaryngealAtrium is Class
+LaryngealAtrium SubClassOf NAMEDAtrium
+LaryngealLymphnode is Class
+LaryngealLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Larynx)
+LaryngealLymphnode SubClassOf Lymphnode,
+LaryngealLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+LaryngealPlexus is Class
+LaryngealPlexus SubClassOf NAMEDNervePlexus
+Larynx is Class
+LateralAxillaryLymphnode is Class
+LateralAxillaryLymphnode SubClassOf AxillaryLymphnode
+LateralCerebellomedullaryCistern is Class
+LateralCerebellomedullaryCistern SubClassOf NAMEDCisterna
+LateralCervicalLymphnode is Class
+LateralCervicalLymphnode SubClassOf CervicalLymphnode
+LateralCollateralStabilityOfKneeJoint is Class
+LateralCollateralStabilityOfKneeJoint EquivalentTo Scope and (isScopeOf some
+LateralCollateralStabilityOfKneeJoint EquivalentTo (Abduction and (actsSpecificallyOn some KneeJoint)))
+LateralCollateralStabilityOfKneeJoint SubClassOf Scope
+LateralFascialCompartmentOfLeg is Class
+LateralFascialCompartmentOfLeg EquivalentTo FascialCompartment and (hasAnteriorPosteriorSelector some lateralSelection) and (isSpecificSolidDivisionOf some Leg)
+LateralFascialCompartmentOfLeg SubClassOf FascialCompartment,
+LateralFascialCompartmentOfLeg SubClassOf partitivelyContains some PeroneusBrevis,
+LateralFascialCompartmentOfLeg SubClassOf partitivelyContains some PeroneusLongus
+LateralHeadOfTricepsBrachialis is Class
+LateralHeadOfTricepsBrachialis SubClassOf BellyOfTricepsBrachii
+LateralLobeOfProstate is Class
+LateralLobeOfProstate SubClassOf LobeOfProstate
+LateralMeniscus is Class
+LateralMeniscus EquivalentTo Meniscus and (hasMedialLateralSelector some lateralSelection) and (isSpecificStructuralComponentOf some KneeJoint)
+LateralMeniscus SubClassOf Meniscus
+LateralMyocardium is Class
+LateralMyocardium SubClassOf CardiacMuscle
+LateralSemicircularDuct is Class
+LateralSemicircularDuct SubClassOf SemicircularDuct
+LateralSulcus is Class
+LateralSulcus SubClassOf CerebralSulcus
+LateralVentricle is Class
+Leaflet is Class
+Leaflet SubClassOf GenericInternalStructure
+LeafletOfCongenitallyDisplacedAtrioventricularValve is Class
+LeafletOfCongenitallyDisplacedAtrioventricularValve EquivalentTo Leaflet and (isSpecificStructuralComponentOf some CongenitallyDisplacedAtrioventricularValve)
+LeafletOfCongenitallyDisplacedAtrioventricularValve SubClassOf Leaflet,
+LeafletOfCongenitallyDisplacedAtrioventricularValve SubClassOf hasAcquisitionMode some
+LeafletOfCongenitallyDisplacedAtrioventricularValve SubClassOf (AcquisitionMode and (hasAbsoluteState some congenital))
+LeftAdrenalCortex is Class
+LeftAdrenalCortex EquivalentTo Cortex and (isSpecificLayerOf some LeftAdrenalGland)
+LeftAdrenalCortex SubClassOf Cortex
+LeftAdrenalGland is Class
+LeftAtrialMuscle is Class
+LeftAtrialMuscle SubClassOf CardiacMuscle
+LeftCerebralHemisphere is Class
+LeftColicPlexus is Class
+LeftColicPlexus SubClassOf NAMEDNervePlexus
+LeftCuspOfAorticValve is Class
+LeftCuspOfAorticValve EquivalentTo Cusp and (hasAnteriorPosteriorSelector some posteriorSelection) and (hasLeftRightSelector some leftSelection) and (isSpecificStructuralComponentOf some AorticValve)
+LeftCuspOfAorticValve SubClassOf Cusp
+LeftCuspOfPulmonaryValve is Class
+LeftCuspOfPulmonaryValve EquivalentTo Cusp and (hasAnteriorPosteriorSelector some posteriorSelection) and (isSpecificStructuralComponentOf some PulmonaryValve)
+LeftCuspOfPulmonaryValve SubClassOf Cusp
+LeftGastroepiploicPlexus is Class
+LeftGastroepiploicPlexus SubClassOf NAMEDNervePlexus
+LeftHeartAtrium is Class
+LeftHeartVentricle is Class
+LeftLobeOfLiver is Class
+LeftLobeOfLiver SubClassOf LobeOfLiver
+LeftLobeOfThymusGland is Class
+LeftLobeOfThymusGland EquivalentTo Lobe and (hasLeftRightSelector some leftSelection) and (isSpecificSolidDivisionOf some ThymusGland)
+LeftLobeOfThymusGland SubClassOf Lobe
+LeftLobeOfThyroidGland is Class
+LeftLobeOfThyroidGland EquivalentTo Lobe and (hasLeftRightSelector some leftSelection) and (isSpecificSolidDivisionOf some ThyroidGland)
+LeftLobeOfThyroidGland SubClassOf Lobe,
+LeftLobeOfThyroidGland SubClassOf hasSpecificSurfaceDivision some SurfaceOfLeftThyroidLobe
+LeftLung is Class
+LeftParietalBone is Class
+LeftUpperIncisor is Class
+LeftUpperIncisor EquivalentTo UpperIncisor and (hasLeftRightSelector some leftSelection)
+LeftUpperIncisor SubClassOf UpperIncisor
+Leg is Class
+Lemniscus is Class
+Lemniscus SubClassOf GenericInternalStructure
+Lens is Class
+LesserCornuOfHyoidBone is Class
+LesserCornuOfHyoidBone SubClassOf CornuOfHyoidBone
+Level is Class
+Ligament is Class
+Ligament SubClassOf GenericInternalStructure
+LigamentOfElbow is Class
+LigamentOfElbow EquivalentTo Ligament and (IsDivisionOf some Elbow)
+LigamentOfElbow SubClassOf Ligament
+LigamentOfElbowJoint is Class
+LigamentOfElbowJoint EquivalentTo Ligament and (IsDivisionOf some ElbowJoint)
+LigamentOfElbowJoint SubClassOf Ligament
+LigamentOfElbowJoint DisjointWith Ligament and (IsDivisionOf some ElbowJoint)
+LigamentOfFoot is Class
+LigamentOfFoot EquivalentTo Ligament and (IsDivisionOf some Foot)
+LigamentOfFoot SubClassOf Ligament
+LigamentOfHand is Class
+LigamentOfHand EquivalentTo Ligament and (IsDivisionOf some Hand)
+LigamentOfHand SubClassOf Ligament
+LigamentOfHip is Class
+LigamentOfHip EquivalentTo Ligament and (IsDivisionOf some Hip)
+LigamentOfHip SubClassOf Ligament
+LigamentOfKnee is Class
+LigamentOfKnee EquivalentTo Ligament and (IsDivisionOf some Knee)
+LigamentOfKnee SubClassOf Ligament
+LigamentOfLowerLimb is Class
+LigamentOfLowerLimb EquivalentTo Ligament and (IsDivisionOf some LowerExtremity)
+LigamentOfLowerLimb SubClassOf Ligament
+LigamentOfNeck is Class
+LigamentOfNeck EquivalentTo Ligament and (IsDivisionOf some Neck)
+LigamentOfNeck SubClassOf Ligament
+LigamentOfShoulder is Class
+LigamentOfShoulder EquivalentTo Ligament and (IsDivisionOf some Shoulder)
+LigamentOfShoulder SubClassOf Ligament
+LigamentOfThorax is Class
+LigamentOfThorax EquivalentTo Ligament and (IsDivisionOf some Thorax)
+LigamentOfThorax SubClassOf Ligament
+LigamentOfUpperLimb is Class
+LigamentOfUpperLimb EquivalentTo Ligament and (IsDivisionOf some UpperExtremity)
+LigamentOfUpperLimb SubClassOf Ligament
+LigamentOfUterineCervix is Class
+LigamentOfUterineCervix EquivalentTo Ligament and (isConnectionOf some CervixUteri)
+LigamentOfUterineCervix SubClassOf Ligament
+LigamentOfUterus is Class
+LigamentOfUterus EquivalentTo Ligament and (isAlphaPartitiveConnectionOf some Uterus)
+LigamentOfUterus SubClassOf Ligament
+LigamentumArteriosum is Class
+LightIntermenstrualUterineBleeding is Class
+LightIntermenstrualUterineBleeding EquivalentTo IntermenstrualUterineBleeding and (hasVolume some
+LightIntermenstrualUterineBleeding EquivalentTo (Volume and (hasQuantity some
+LightIntermenstrualUterineBleeding EquivalentTo (Level and (hasMagnitude some lowLevel)))))
+LightIntermenstrualUterineBleeding SubClassOf IntermenstrualUterineBleeding
+LightPressureCell is Class
+LightPressureSignal is Class
+LightPressureSignal EquivalentTo Signal and (isSpecificConsequenceOf some
+LightPressureSignal EquivalentTo (TransducingProcess and (actsOn some KineticEnergy) and (isSpecificFunctionOf some LightPressureCell)))
+LightPressureSignal SubClassOf Signal
+LimbicLobe is Class
+LimbicLobe SubClassOf CerebralLobe
+LingualAponeurosis is Class
+LingualAponeurosis SubClassOf NAMEDAponeurosis
+LingualGyrus is Class
+LingualGyrus SubClassOf CerebralGyrus
+LingualPlexus is Class
+LingualPlexus SubClassOf NAMEDNervePlexus
+LingualSeptum is Class
+LingualSeptum EquivalentTo Septum and (isSpecificSolidDivisionOf some Tongue)
+LingualSeptum SubClassOf Septum
+LingualTonsil is Class
+Lip is Class
+LiquidBlood is Class
+Liver is Class
+LobarParenchymalStructure is Class
+Lobe is Class
+Lobe SubClassOf GenericInternalStructure
+LobeOfBrain is Class
+LobeOfBrain EquivalentTo Lobe and (IsDivisionOf some Brain)
+LobeOfBrain SubClassOf Lobe,
+LobeOfBrain SubClassOf isPairedOrUnpaired some atLeastPaired
+LobeOfLeftLung is Class
+LobeOfLeftLung EquivalentTo Lobe and (isSpecificSolidDivisionOf some LeftLung)
+LobeOfLeftLung SubClassOf Lobe
+LobeOfLiver is Class
+LobeOfLiver EquivalentTo Lobe and (isSpecificSolidDivisionOf some Liver)
+LobeOfLiver SubClassOf Lobe,
+LobeOfLiver SubClassOf isPairedOrUnpaired some atLeastPaired
+LobeOfLung is Class
+LobeOfLung EquivalentTo Lobe and (isSpecificSolidDivisionOf some Lung)
+LobeOfLung SubClassOf Lobe,
+LobeOfLung SubClassOf hasSpecificStructuralComponent some BronchoPulmonarySegment,
+LobeOfLung SubClassOf hasStructuralComponent some LobarParenchymalStructure,
+LobeOfLung SubClassOf hasTopology some actuallyHollowTopology
+LobeOfPituitaryGland is Class
+LobeOfPituitaryGland EquivalentTo Lobe and (isSpecificSolidDivisionOf some PituitaryGland)
+LobeOfPituitaryGland SubClassOf Lobe,
+LobeOfPituitaryGland SubClassOf isPairedOrUnpaired some exactlyPaired
+LobeOfPlacenta is Class
+LobeOfPlacenta EquivalentTo Lobe and (isSpecificSolidDivisionOf some Placenta)
+LobeOfPlacenta SubClassOf Lobe,
+LobeOfPlacenta SubClassOf isSpecificConsequenceOf some Conception,
+LobeOfPlacenta SubClassOf isStructuralComponentOf some Conceptus
+LobeOfProstate is Class
+LobeOfProstate EquivalentTo Lobe and (isSpecificStructuralComponentOf some ProstateGland)
+LobeOfProstate SubClassOf Lobe
+LobeOfRightLung is Class
+LobeOfRightLung EquivalentTo Lobe and (isSpecificSolidDivisionOf some RightLung)
+LobeOfRightLung SubClassOf Lobe
+LobeOfSpleen is Class
+LobeOfSpleen EquivalentTo Lobe and (isSpecificSolidDivisionOf some Spleen)
+LobeOfSpleen SubClassOf Lobe,
+LobeOfSpleen SubClassOf isPairedOrUnpaired some atLeastPaired
+LobeOfThymusGland is Class
+LobeOfThymusGland EquivalentTo Lobe and (isSpecificSolidDivisionOf some ThymusGland)
+LobeOfThymusGland SubClassOf Lobe,
+LobeOfThymusGland SubClassOf isPairedOrUnpaired some leftRightPaired
+LobeOfThyroidGland is Class
+LobeOfThyroidGland EquivalentTo Lobe and (isSolidDivisionOf some ThyroidGland)
+LobeOfThyroidGland SubClassOf Lobe,
+LobeOfThyroidGland SubClassOf hasSpecificSolidDivision some BorderOfThyroidLobe
+LobusInsularis is Class
+LobusInsularis SubClassOf CerebralLobe
+Locule is Class
+Locule SubClassOf GenericInternalStructure
+LongHeadOfBicepsBrachialis is Class
+LongHeadOfBicepsBrachialis SubClassOf BellyOfBicepsBrachii
+LongHeadOfBicepsFemoris is Class
+LongHeadOfBicepsFemoris SubClassOf BellyOfBicepsFemoris
+LongHeadOfTricepsBrachialis is Class
+LongHeadOfTricepsBrachialis SubClassOf BellyOfTricepsBrachii
+Loop is Class
+Loop SubClassOf GenericInternalStructure
+LoopOfHenle is Class
+LoopOfIleum is Class
+LoopOfIleum EquivalentTo Loop and (isSpecificLinearDivisionOf some Ileum)
+LoopOfIleum SubClassOf Loop
+LoopOfJejunum is Class
+LoopOfJejunum EquivalentTo Loop and (isSpecificLinearDivisionOf some Jejunum)
+LoopOfJejunum SubClassOf Loop
+LoopOfSmallIntestine is Class
+LoopOfSmallIntestine EquivalentTo Loop and (isLinearDivisionOf some SmallIntestine)
+LoopOfSmallIntestine SubClassOf Loop
+LowerExtremity is Class
+LowerGastrointestinalHaemorrhageSymptom is Class
+LowerGastrointestinalHaemorrhageSymptom EquivalentTo BleedingSymptom and (hasSpecificLocation some LargeIntestine)
+LowerGastrointestinalHaemorrhageSymptom SubClassOf BleedingSymptom
+LowerIncisor is Class
+LowerLip is Class
+LowerLobeOfLeftLung is Class
+LowerLobeOfLeftLung EquivalentTo Lobe and (hasUpperLowerSelector some lowerSelection) and (isSpecificSolidDivisionOf some LeftLung)
+LowerLobeOfLeftLung SubClassOf Lobe
+LowerLobeOfRightLung is Class
+LowerLobeOfRightLung EquivalentTo Lobe and (hasUpperLowerSelector some lowerSelection) and (isSpecificSolidDivisionOf some RightLung)
+LowerLobeOfRightLung SubClassOf Lobe
+LowerPoleOfTestis is Class
+LowerPoleOfTestis EquivalentTo Pole and (hasUpperLowerSelector some lowerSelection) and (isSpecificSolidDivisionOf some Testis)
+LowerPoleOfTestis SubClassOf Pole
+LumbarFascia is Class
+LumbarFascia SubClassOf NAMEDFascia
+LumbarGanglion is Class
+LumbarGanglion SubClassOf NAMEDGanglion
+LumbarIntervertebralSpace is Class
+LumbarIntervertebralSpace EquivalentTo IntervertebralSpace and (isSpaceBoundedBy some LumbarVertebra)
+LumbarIntervertebralSpace SubClassOf IntervertebralSpace
+LumbarLymphnode is Class
+LumbarLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some LumboSacralSpine)
+LumbarLymphnode SubClassOf Lymphnode,
+LumbarLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged,
+LumbarLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some AbdominalCavity
+LumbarPlexus is Class
+LumbarPlexus SubClassOf NAMEDNervePlexus
+LumbarVertebra is Class
+LumboSacralPlexus is Class
+LumboSacralPlexus SubClassOf NAMEDNervePlexus
+LumboSacralSpine is Class
+Lung is Class
+Lunule is Class
+Lunule SubClassOf GenericInternalStructure
+LutealPhaseTimePeriod is Class
+LutealPhaseTimePeriod SubClassOf PeriodDuringMenstrualCycle
+LymphOrBloodVessel is Class
+LymphOrBloodVessel SubClassOf GenericInternalStructure
+LymphVessel is Class
+LymphVessel SubClassOf LymphOrBloodVessel,
+LymphVessel SubClassOf hasTopology some tubularTopology,
+LymphVessel SubClassOf isStructuralComponentOf some LymphaticSystem
+LymphaticSystem is Class
+LymphaticTrunk is Class
+LymphaticTrunk SubClassOf NAMEDTruncus
+Lymphnode is Class
+Lymphnode SubClassOf GenericInternalStructure
+LymphnodeInMediastinum is Class
+LymphnodeInMediastinum EquivalentTo Lymphnode and (InverseContainmentAttribute some Mediastinum)
+LymphnodeInMediastinum SubClassOf Lymphnode
+LymphnodeOfHead is Class
+LymphnodeOfHead EquivalentTo Lymphnode and (isStructuralComponentOf some Head)
+LymphnodeOfHead SubClassOf Lymphnode
+LymphnodeOfHeadOrNeck is Class
+LymphnodeOfHeadOrNeck EquivalentTo Lymphnode and (isStructuralComponentOf some HeadOrNeck)
+LymphnodeOfHeadOrNeck SubClassOf Lymphnode
+LymphoidTonsil is Class
+MajorHeartValve is Class
+MaleExternalGenitalia is Class
+MaleExternalGenitalia EquivalentTo ExternalGenitalia and (hasPhenotypicalSex some
+MaleExternalGenitalia EquivalentTo (PhenotypicalSex and (hasAbsoluteState some maleSex)))
+MaleExternalGenitalia SubClassOf ExternalGenitalia,
+MaleExternalGenitalia SubClassOf hasStructuralComponent some MalePerineoScrotum,
+MaleExternalGenitalia SubClassOf hasStructuralComponent some MaleUrethra,
+MaleExternalGenitalia SubClassOf hasStructuralComponent some Penis,
+MaleExternalGenitalia SubClassOf hasStructuralComponent some ScrotalWall,
+MaleExternalGenitalia SubClassOf hasStructuralComponent some Scrotum,
+MaleExternalGenitalia SubClassOf hasStructuralComponent some Testis,
+MaleExternalGenitalia SubClassOf hasSurfaceDivision some Penis,
+MaleExternalGenitalia SubClassOf hasSurfaceDivision some Testis,
+MaleExternalGenitalia SubClassOf isStructuralComponentOf some MaleGenitoUrinarySystem,
+MaleExternalGenitalia SubClassOf isSurfaceDivisionOf some MalePerineum
+MaleGenitoUrinarySystem is Class
+MalePelvicFloor is Class
+MalePerineoScrotum is Class
+MalePerineum is Class
+MaleUrethra is Class
+MammaryGland is Class
+Mandible is Class
+MandibularCanal is Class
+MandibularDivisionOfTrigeminalNerve is Class
+MandibularTubercle is Class
+MarginalGingiva is Class
+Mass is Class
+Maxilla is Class
+MaxillaryDivisionOfTrigeminalNerve is Class
+MedialFascialCompartmentOfThigh is Class
+MedialFascialCompartmentOfThigh EquivalentTo FascialCompartment and (hasAnteriorPosteriorSelector some medialSelection) and (isSpecificSolidDivisionOf some Thigh)
+MedialFascialCompartmentOfThigh SubClassOf FascialCompartment,
+MedialFascialCompartmentOfThigh SubClassOf partitivelyContains some AdductorBrevisOfThigh,
+MedialFascialCompartmentOfThigh SubClassOf partitivelyContains some AdductorLongusOfThigh,
+MedialFascialCompartmentOfThigh SubClassOf partitivelyContains some AdductorMagnusOfThigh,
+MedialFascialCompartmentOfThigh SubClassOf partitivelyContains some ExternalObturatorMuscle,
+MedialFascialCompartmentOfThigh SubClassOf partitivelyContains some Gracilis,
+MedialFascialCompartmentOfThigh SubClassOf partitivelyContains some InternalObturatorMuscle,
+MedialFascialCompartmentOfThigh SubClassOf partitivelyContains some PectineusMuscle
+MedialFrontalGyrus is Class
+MedialFrontalGyrus SubClassOf CerebralGyrus
+MedialHeadOfTricepsBrachialis is Class
+MedialHeadOfTricepsBrachialis SubClassOf BellyOfTricepsBrachii
+MedialHumeralCondyle is Class
+MedialLateralPositionSelector is Class
+MedialMeniscus is Class
+MedialMeniscus EquivalentTo Meniscus and (hasMedialLateralSelector some medialSelection) and (isSpecificStructuralComponentOf some KneeJoint)
+MedialMeniscus SubClassOf Meniscus
+MedianLingualSulcus is Class
+MedianLingualSulcus EquivalentTo Groove and (isSpecificSurfaceDivisionOf some DorsumOfTongue)
+MedianLingualSulcus SubClassOf Groove
+MediastinalLymphnode is Class
+MediastinalLymphnode SubClassOf LymphnodeInMediastinum
+Mediastinum is Class
+Medicine is Class
+Medulla is Class
+Medulla SubClassOf GenericInternalStructure
+MedullaOfKidney is Class
+MedullaOfKidney EquivalentTo Medulla and (isSpecificLayerOf some RenalNonPelvis)
+MedullaOfKidney SubClassOf Medulla,
+MedullaOfKidney SubClassOf hasStructuralComponent some LoopOfHenle
+MedullaryPyramid is Class
+MedullaryPyramid EquivalentTo Pyramid and (isSpecificStructuralComponentOf some Myelencephalon)
+MedullaryPyramid SubClassOf Pyramid,
+MedullaryPyramid SubClassOf isPairedOrUnpaired some mirrorImaged
+Membrane is Class
+Membrane SubClassOf GenericInternalStructure
+MeningealPlexus is Class
+MeningealPlexus SubClassOf NAMEDNervePlexus
+Meninges is Class
+Meninges SubClassOf NAMEDMembrane
+Meniscus is Class
+Meniscus SubClassOf GenericInternalStructure
+MeniscusOfKneeJoint is Class
+MeniscusOfKneeJoint EquivalentTo Meniscus and (isSpecificStructuralComponentOf some KneeJoint)
+MeniscusOfKneeJoint SubClassOf Meniscus
+MenstrualCycle is Class
+MenstrualCycle EquivalentTo TemporalPattern and (isTemporalPatternOf some MenstruationProcess)
+MenstrualCycle SubClassOf TemporalPattern
+MenstruationProcess is Class
+MentalForamen is Class
+MentoLabialGroove is Class
+MentoLabialGroove EquivalentTo Groove and (isAlphaPartitiveConnectionOf some Chin) and (isBetaPartitiveConnectionOf some LowerLip)
+MentoLabialGroove SubClassOf Groove,
+MentoLabialGroove SubClassOf isSurfaceDivisionOf some Face
+Mesencephalon is Class
+MesentericArtery is Class
+MesentericLymphnode is Class
+MesentericLymphnode EquivalentTo Lymphnode and (hasProximity some Aorta) and (hasSpecificProximity some MesentericArtery)
+MesentericLymphnode SubClassOf Lymphnode
+Mesentery is Class
+Mesentery SubClassOf NAMEDMembrane
+Mesocolon is Class
+Mesocolon SubClassOf NAMEDMembrane
+Micturition is Class
+MiddleCerebellarPeduncle is Class
+MiddleCerebellarPeduncle SubClassOf CerebellarPeduncle
+MiddleColicPlexus is Class
+MiddleColicPlexus SubClassOf NAMEDNervePlexus
+MiddleCranialFossa is Class
+MiddleLobeOfProstate is Class
+MiddleLobeOfProstate SubClassOf LobeOfProstate
+MiddleLobeOfRightLung is Class
+MiddleLobeOfRightLung EquivalentTo Lobe and (hasUpperLowerSelector some middleSelection) and (isSpecificSolidDivisionOf some RightLung)
+MiddleLobeOfRightLung SubClassOf Lobe
+MiddleTemporalGyrus is Class
+MiddleTemporalGyrus SubClassOf CerebralGyrus
+MinorBronchus is Class
+MitralValve is Class
+MitralValveLeaflet is Class
+MitralValveLeaflet EquivalentTo Leaflet and (isSpecificStructuralComponentOf some MitralValve)
+MitralValveLeaflet SubClassOf Leaflet
+MitralValveVestibule is Class
+MitralValveVestibule EquivalentTo Vestibule and (isAlphaConnectionOf some MitralValve)
+MitralValveVestibule SubClassOf Vestibule,
+MitralValveVestibule SubClassOf isStructuralComponentOf some LeftHeartAtrium
+Motility is Class
+MotorNerve is Class
+MotorNerve EquivalentTo Nerve and (hasFunction some VoluntaryMovement)
+MotorNerve SubClassOf Nerve
+Mouth is Class
+MucousGlandDuct is Class
+MucousGlandDuct SubClassOf NAMEDDuct
+MucousMembrane is Class
+MucousMembrane SubClassOf NAMEDMembrane
+Muscle is Class
+Muscle SubClassOf GenericInternalStructure
+MuscleFasciculus is Class
+MuscleFasciculus EquivalentTo Fasciculus and (isSpecificStructuralComponentOf some StriatedMuscle)
+MuscleFasciculus SubClassOf Fasciculus
+MuscleOfAnteriorCompartmentOfForearm is Class
+MuscleOfAnteriorCompartmentOfForearm SubClassOf StriatedMuscle
+MuscleOfAnteriorCompartmentOfThigh is Class
+MuscleOfAnteriorCompartmentOfThigh SubClassOf StriatedMuscle
+MuscleOfArm is Class
+MuscleOfArm SubClassOf StriatedMuscle
+MuscleOfAxilla is Class
+MuscleOfAxilla SubClassOf StriatedMuscle
+MuscleOfBack is Class
+MuscleOfBack SubClassOf StriatedMuscle
+MuscleOfEye is Class
+MuscleOfEye EquivalentTo Muscle and (IsDivisionOf some Eye)
+MuscleOfEye SubClassOf Muscle
+MuscleOfFace is Class
+MuscleOfFace SubClassOf StriatedMuscle
+MuscleOfFacialExpression is Class
+MuscleOfFacialExpression EquivalentTo Muscle and (hasFunction some FacialExpressionProcess)
+MuscleOfFacialExpression SubClassOf Muscle
+MuscleOfFemalePelvicFloor is Class
+MuscleOfFemalePelvicFloor EquivalentTo Muscle and (IsDivisionOf some FemalePelvicFloor)
+MuscleOfFemalePelvicFloor SubClassOf Muscle
+MuscleOfFoot is Class
+MuscleOfFoot SubClassOf StriatedMuscle
+MuscleOfForearm is Class
+MuscleOfForearm SubClassOf StriatedMuscle
+MuscleOfHand is Class
+MuscleOfHand SubClassOf StriatedMuscle
+MuscleOfHead is Class
+MuscleOfHead SubClassOf StriatedMuscle
+MuscleOfHip is Class
+MuscleOfHip SubClassOf StriatedMuscle
+MuscleOfLeg is Class
+MuscleOfLeg SubClassOf StriatedMuscle
+MuscleOfLowerLimb is Class
+MuscleOfLowerLimb SubClassOf StriatedMuscle
+MuscleOfMalePelvicFloor is Class
+MuscleOfMalePelvicFloor EquivalentTo Muscle and (IsDivisionOf some MalePelvicFloor)
+MuscleOfMalePelvicFloor SubClassOf Muscle
+MuscleOfMouth is Class
+MuscleOfMouth EquivalentTo Muscle and (IsDivisionOf some Mouth)
+MuscleOfMouth SubClassOf Muscle
+MuscleOfNeck is Class
+MuscleOfNeck SubClassOf StriatedMuscle
+MuscleOfPelvicFloor is Class
+MuscleOfPelvicFloor EquivalentTo Muscle and (IsDivisionOf some PelvicFloor)
+MuscleOfPelvicFloor SubClassOf Muscle
+MuscleOfPelvis is Class
+MuscleOfPelvis SubClassOf StriatedMuscle
+MuscleOfPosteriorCompartmentOfForearm is Class
+MuscleOfPosteriorCompartmentOfForearm SubClassOf StriatedMuscle
+MuscleOfPosteriorCompartmentOfThigh is Class
+MuscleOfPosteriorCompartmentOfThigh SubClassOf StriatedMuscle
+MuscleOfThigh is Class
+MuscleOfThigh SubClassOf StriatedMuscle
+MuscleOfTrunk is Class
+MuscleOfTrunk SubClassOf StriatedMuscle
+MuscleOfUpperLimb is Class
+MuscleOfUpperLimb SubClassOf StriatedMuscle
+MuscularLayerOfStomach is Class
+MuscularLayerOfStomach SubClassOf SmoothMuscle
+MuscularisMucosae is Class
+MuscularisMucosae SubClassOf SmoothMuscle
+MusculoSkeletalSystem is Class
+Myelencephalon is Class
+MyentericPlexus is Class
+MyentericPlexus SubClassOf NAMEDNervePlexus
+MyoCutaneousPedicle is Class
+MyoCutaneousPedicle SubClassOf VascularisedPedicle
+NAMEDAngle is Class
+NAMEDAngle SubClassOf Angle
+NAMEDAponeurosis is Class
+NAMEDAponeurosis SubClassOf Aponeurosis
+NAMEDAtrium is Class
+NAMEDAtrium SubClassOf Atrium
+NAMEDBodySpace is Class
+NAMEDBursa is Class
+NAMEDBursa SubClassOf Bursa
+NAMEDCisterna is Class
+NAMEDCisterna SubClassOf Cisterna
+NAMEDDuct is Class
+NAMEDDuct SubClassOf Duct
+NAMEDEnzyme is Class
+NAMEDFalx is Class
+NAMEDFalx SubClassOf Falx
+NAMEDFascia is Class
+NAMEDFascia SubClassOf Fascia
+NAMEDGITractBodyPart is Class
+NAMEDGanglion is Class
+NAMEDGanglion SubClassOf Ganglion
+NAMEDIsthmus is Class
+NAMEDIsthmus SubClassOf Isthmus
+NAMEDJoint is Class
+NAMEDKidneySubPart is Class
+NAMEDLymphaticPlexus is Class
+NAMEDLymphaticPlexus SubClassOf Plexus,
+NAMEDLymphaticPlexus SubClassOf hasTopology some solidTopology,
+NAMEDLymphaticPlexus SubClassOf isStructuralComponentOf some LymphaticSystem
+NAMEDMembrane is Class
+NAMEDMembrane SubClassOf Membrane
+NAMEDNervePlexus is Class
+NAMEDNervePlexus SubClassOf Plexus,
+NAMEDNervePlexus SubClassOf isSpecificallyMadeOf some NeuralTissue,
+NAMEDNervePlexus SubClassOf isStructuralComponentOf some NervousSystem
+NAMEDSolidBoneDivisions is Class
+NAMEDSphincter is Class
+NAMEDSphincter SubClassOf Sphincter
+NAMEDSymphysis is Class
+NAMEDSymphysis SubClassOf Symphysis
+NAMEDTendon is Class
+NAMEDTendon SubClassOf Tendon
+NAMEDTruncus is Class
+NAMEDTruncus SubClassOf Truncus
+NAMEDValve is Class
+NAMEDValve SubClassOf Valve
+NAMEDVascularPlexus is Class
+NAMEDVascularPlexus SubClassOf Plexus,
+NAMEDVascularPlexus SubClassOf hasTopology some
+NAMEDVascularPlexus SubClassOf (Topology and (hasAbsoluteState some tubular)),
+NAMEDVascularPlexus SubClassOf isStructuralComponentOf some VascularSystem
+NAMEDVentricle is Class
+NAMEDVentricle SubClassOf Ventricle
+NasalObstruction is Class
+NasalObstruction EquivalentTo ObstructionProcess and (actsSpecificallyOn some NasalPassage)
+NasalObstruction SubClassOf ObstructionProcess,
+NasalObstruction SubClassOf hasPathologicalStatus some pathological
+NasalPassage is Class
+NasalSeptum is Class
+NasalSeptum SubClassOf Septum,
+NasalSeptum SubClassOf hasSolidDivision some ColumellaNasi,
+NasalSeptum SubClassOf isSpecificLayerOf some NasalPassage,
+NasalSeptum SubClassOf isSpecificStructuralComponentOf some Nose
+NasoLabialGroove is Class
+NasoLabialGroove EquivalentTo Groove and (isAlphaPartitiveConnectionOf some Nose) and (isBetaPartitiveConnectionOf some UpperLip)
+NasoLabialGroove SubClassOf Groove,
+NasoLabialGroove SubClassOf isSurfaceDivisionOf some Face
+NasolacrimalDuct is Class
+NasolacrimalDuct SubClassOf NAMEDDuct
+NasopalatinePlexus is Class
+NasopalatinePlexus SubClassOf NAMEDNervePlexus
+Neck is Class
+NeckOfTalus is Class
+Nerve is Class
+Nerve SubClassOf GenericInternalStructure
+NerveConduction is Class
+NerveFibre is Class
+NerveFibre EquivalentTo Fibre and (isSpecificLinearDivisionOf some Nerve)
+NerveFibre SubClassOf Fibre
+NervousSystem is Class
+NeuralPathway is Class
+NeuralPathway SubClassOf Pathway,
+NeuralPathway SubClassOf isStructuralComponentOf some NervousSystem
+NeuralTissue is Class
+NeuroVascularisedPedicle is Class
+NeuroVascularisedPedicle SubClassOf VascularisedPedicle
+Node is Class
+Node SubClassOf GenericInternalStructure
+Nodule is Class
+Nodule SubClassOf GenericInternalStructure
+NonNormalSkinTexture is Class
+NonNormalSkinTexture EquivalentTo Texture and (hasAbnormalityStatus some nonNormal) and (isTextureOf some SkinAsOrgan)
+NonNormalSkinTexture SubClassOf Texture
+NonNormalSkinTextureSymptom is Class
+NonNormalSkinTextureSymptom EquivalentTo NonNormalSkinTexture and (playsConsultationRole some SymptomRole)
+NonNormalSkinTextureSymptom SubClassOf NonNormalSkinTexture
+NonnormaGastrointestinalSymptom is Class
+NonnormaGastrointestinalSymptom EquivalentTo Phenomenon and (LocativeAttribute some GastrointestinalTract) and (hasAbnormalityStatus some nonNormal) and (playsConsultationRole some SymptomRole)
+NonnormaGastrointestinalSymptom SubClassOf Phenomenon
+Nose is Class
+Notch is Class
+Notch SubClassOf GenericInternalStructure
+ObstructionProcess is Class
+ObturatorCanal is Class
+ObturatorCanal SubClassOf Canal
+ObturatorLymphnode is Class
+ObturatorLymphnode SubClassOf PelvicLymphnode
+ObturatorNerve is Class
+OccipitalBone is Class
+OccipitalCrest is Class
+OccipitalCrest EquivalentTo Crest and (isSpecificSolidDivisionOf some OccipitalBone)
+OccipitalCrest SubClassOf Crest
+OccipitalLobe is Class
+OccipitalLobe SubClassOf CerebralLobe
+OccipitalLymphnode is Class
+OccipitalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Occiput)
+OccipitalLymphnode SubClassOf Lymphnode,
+OccipitalLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged,
+OccipitalLymphnode SubClassOf isSpecificStructuralComponentOf some Head
+OccipitalPlexus is Class
+OccipitalPlexus SubClassOf NAMEDNervePlexus
+OccipitoTemporalSulcus is Class
+OccipitoTemporalSulcus SubClassOf CerebralSulcus
+Occiput is Class
+OcularRotatoryMuscle is Class
+OcularRotatoryMuscle SubClassOf StriatedMuscle
+OlecranonBursa is Class
+OlecranonBursa SubClassOf NAMEDBursa
+OlfactoryBulb is Class
+OlfactoryBulb EquivalentTo Bulb and (isSpecificLinearDivisionOf some OlfactoryNerve)
+OlfactoryBulb SubClassOf Bulb,
+OlfactoryBulb SubClassOf isStructuralComponentOf some RoofOfNasalCavity
+OlfactoryNerve is Class
+OlfactoryPathway is Class
+OlfactoryPathway SubClassOf NeuralPathway
+OlfactorySulcus is Class
+OlfactorySulcus SubClassOf CerebralSulcus
+Omentum is Class
+Omentum SubClassOf NAMEDMembrane
+OmohyoidFascia is Class
+OmohyoidFascia SubClassOf NAMEDFascia
+OmohyoidMuscle is Class
+OphthalmicDivisionOfTrigeminalNerve is Class
+OphthalmicPlexus is Class
+OphthalmicPlexus SubClassOf NAMEDNervePlexus
+OpticChiasma is Class
+OpticChiasma EquivalentTo Chiasma and (isSpecificLinearDivisionOf some OpticTract)
+OpticChiasma SubClassOf Chiasma
+OpticTract is Class
+Orbit is Class
+OrbitalSeptum is Class
+OrbitalSeptum SubClassOf Septum,
+OrbitalSeptum SubClassOf isSpecificallyMadeOf some Fibrocartilage
+OrbitalSulcus is Class
+OrbitalSulcus SubClassOf CerebralSulcus
+OrganDisplacementProcess is Class
+OrganismFeature is Class
+OrganismState is Class
+OstiumPrimum is Class
+OstiumSecundum is Class
+OticGanglion is Class
+OticGanglion SubClassOf NAMEDGanglion
+Otolith is Class
+OvarianVessel is Class
+OvarianVessel SubClassOf BloodVessel
+Ovary is Class
+OvulatoryPhaseTimePeriod is Class
+OvulatoryPhaseTimePeriod SubClassOf PeriodDuringMenstrualCycle
+PainSignal is Class
+PalatineAponeurosis is Class
+PalatineAponeurosis SubClassOf NAMEDAponeurosis
+PalatineBone is Class
+PalmarFascia is Class
+PalmarFascia SubClassOf NAMEDFascia
+PalpebralFascia is Class
+PalpebralFascia SubClassOf NAMEDFascia
+Pancreas is Class
+PancreaticDuct is Class
+PancreaticDuct SubClassOf NAMEDDuct
+PancreaticPlexus is Class
+PancreaticPlexus SubClassOf NAMEDNervePlexus
+PanizzaPlexus is Class
+PanizzaPlexus SubClassOf NAMEDLymphaticPlexus
+Papilla is Class
+Papilla SubClassOf GenericInternalStructure
+ParaAorticLymphnode is Class
+ParaAorticLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Aorta)
+ParaAorticLymphnode SubClassOf Lymphnode
+ParaaorticLymphnode is Class
+ParaaorticLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Aorta)
+ParaaorticLymphnode SubClassOf Lymphnode
+PararectalLymphnode is Class
+PararectalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Rectum)
+PararectalLymphnode SubClassOf Lymphnode,
+PararectalLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged,
+PararectalLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some PelvicCavity
+ParatrachealLymphnode is Class
+ParatrachealLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Trachea)
+ParatrachealLymphnode SubClassOf Lymphnode,
+ParatrachealLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some Mediastinum
+ParavertebralGanglion is Class
+ParavertebralGanglion SubClassOf NAMEDGanglion
+ParietalGyrus is Class
+ParietalGyrus SubClassOf CerebralGyrus
+ParietalLobe is Class
+ParietalLobe SubClassOf CerebralLobe
+ParietoOccipitalSulcus is Class
+ParietoOccipitalSulcus SubClassOf CerebralSulcus
+ParotidFascia is Class
+ParotidFascia SubClassOf NAMEDFascia
+ParotidGland is Class
+ParotidLymphnode is Class
+ParotidLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some ParotidGland)
+ParotidLymphnode SubClassOf Lymphnode,
+ParotidLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged,
+ParotidLymphnode SubClassOf isSpecificStructuralComponentOf some Head
+PatellarPlexus is Class
+PatellarPlexus SubClassOf NAMEDNervePlexus
+Pathway is Class
+Pathway SubClassOf GenericInternalStructure
+PectinealFascia is Class
+PectinealFascia SubClassOf NAMEDFascia
+PectineusMuscle is Class
+PectoralFascia is Class
+PectoralFascia SubClassOf NAMEDFascia
+PectoralLymphnode is Class
+PectoralLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some InferiorBorderOfPectoralisMinor)
+PectoralLymphnode SubClassOf Lymphnode,
+PectoralLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+Pedicle is Class
+Pedicle SubClassOf GenericInternalStructure
+Peduncle is Class
+Peduncle SubClassOf GenericInternalStructure
+PeduncleOfLeftCerebralHemisphere is Class
+PeduncleOfLeftCerebralHemisphere EquivalentTo Peduncle and (isSpecificSolidDivisionOf some LeftCerebralHemisphere)
+PeduncleOfLeftCerebralHemisphere SubClassOf Peduncle
+PeduncleOfRightCerebralHemisphere is Class
+PeduncleOfRightCerebralHemisphere EquivalentTo Peduncle and (isSpecificSolidDivisionOf some RightCerebralHemisphere)
+PeduncleOfRightCerebralHemisphere SubClassOf Peduncle
+PelvicCavity is Class
+PelvicFascia is Class
+PelvicFascia SubClassOf NAMEDFascia
+PelvicFloor is Class
+PelvicLymphnode is Class
+PelvicLymphnode EquivalentTo Lymphnode and (InverseContainmentAttribute some PelvicCavity)
+PelvicLymphnode SubClassOf Lymphnode
+PelvicVasculature is Class
+PelvicVasculature SubClassOf BloodVessel
+Penis is Class
+Perception is Class
+PerianalFistula is Class
+PerianalFistula EquivalentTo Fistula and (isAlphaPartitiveConnectionOf some PieceOfSkinOrgan) and (isBetaPartitiveConnectionOf some Rectum)
+PerianalFistula SubClassOf Fistula
+PerianalSkinTag is Class
+PerianalSkinTag EquivalentTo SkinTag and (hasSpecificProximity some SkinOfAnus)
+PerianalSkinTag SubClassOf SkinTag,
+PerianalSkinTag SubClassOf hasLocation some Anus
+PericardialSpace is Class
+PericardialSpace EquivalentTo BodyCavity and (isSpaceDefinedBy some Pericardium)
+PericardialSpace SubClassOf BodyCavity,
+PericardialSpace SubClassOf isStructuralComponentOf some Heart
+Pericardium is Class
+PericornealPlexus is Class
+PericornealPlexus SubClassOf NAMEDVascularPlexus
+PerinealFascia is Class
+PerinealFascia SubClassOf NAMEDFascia
+PeriodDuringDaylight is Class
+PeriodDuringLifespan is Class
+PeriodDuringMenstrualCycle is Class
+PeriodDuringMenstrualCycle SubClassOf PeriodDuringLifespan
+PeriodontalLigament is Class
+PeriodontalLigament EquivalentTo Ligament and (isStructuralComponentOf some Periodontum)
+PeriodontalLigament SubClassOf Ligament,
+PeriodontalLigament SubClassOf isAlphaConnectionOf some CementumOfTooth,
+PeriodontalLigament SubClassOf isBetaConnectionOf some ToothSocket
+PeriodontalPocket is Class
+PeriodontalPocket EquivalentTo Groove and (hasPathologicalStatus some pathological) and (isSpaceBoundedBy some CervicalMarginOfTooth) and (isSpaceBoundedBy some MarginalGingiva) and (isSpecificStructuralComponentOf some Mouth)
+PeriodontalPocket SubClassOf Groove
+Periodontum is Class
+PeripheralBloodVessel is Class
+PeripheralBloodVessel SubClassOf BloodVessel
+PeripheralNerve is Class
+PeripheralNerve EquivalentTo Nerve and (hasCentralPeripheralSelector some bodyPeripherySelection)
+PeripheralNerve SubClassOf Nerve,
+PeripheralNerve SubClassOf isStructuralComponentOf some PeripheralNervousSystem
+PeripheralNervousSystem is Class
+PeripheralSensoryNerve is Class
+PeripheralSensoryNerve EquivalentTo Nerve and (hasCentralPeripheralSelector some bodyPeripherySelection) and (hasFunction some Perception)
+PeripheralSensoryNerve SubClassOf Nerve
+PerirenalSpace is Class
+PerirenalSpace SubClassOf NAMEDBodySpace,
+PerirenalSpace SubClassOf isSpaceBoundedBy some CapsuleOfKidney,
+PerirenalSpace SubClassOf isSpaceBoundedBy some Kidney
+Peristalsis is Class
+PeroneusBrevis is Class
+PeroneusLongus is Class
+PersonalityType is Class
+PersonalityType SubClassOf OrganismFeature
+PersonalityTypeState is Class
+PersonalityTypeState SubClassOf OrganismState
+PesValgus is Class
+PharyngealLigament is Class
+PharyngobasilarFascia is Class
+PharyngobasilarFascia SubClassOf NAMEDFascia
+Pharynx is Class
+Phenomenon is Class
+PhenotypicalSex is Class
+PhrenicPlexus is Class
+PhrenicPlexus SubClassOf NAMEDNervePlexus
+PieceOfSkinOrgan is Class
+PinealGland is Class
+PinealPeduncle is Class
+PinealPeduncle EquivalentTo Infundibulum and (isSpecificSolidDivisionOf some PinealGland)
+PinealPeduncle SubClassOf Infundibulum,
+PinealPeduncle SubClassOf isPairedOrUnpaired some unpaired
+PituitaryGland is Class
+PituitaryStalk is Class
+PituitaryStalk EquivalentTo Infundibulum and (isSpecificSolidDivisionOf some PituitaryGland)
+PituitaryStalk SubClassOf Infundibulum,
+PituitaryStalk SubClassOf isBetaConnectionOf some Hypothalamus,
+PituitaryStalk SubClassOf isPairedOrUnpaired some unpaired
+Placenta is Class
+PlantarFascia is Class
+PlantarFascia SubClassOf NAMEDFascia
+Plexus is Class
+Plexus SubClassOf GenericInternalStructure
+PlexusArteriaeCerebriAnterioris is Class
+PlexusArteriaeCerebriAnterioris SubClassOf NAMEDNervePlexus
+PlexusArteriaeCerebriMediae is Class
+PlexusArteriaeCerebriMediae SubClassOf NAMEDNervePlexus
+PlexusArteriaeChoroideae is Class
+PlexusArteriaeChoroideae SubClassOf NAMEDNervePlexus
+PlexusArteriaeOvaricae is Class
+PlexusArteriaeOvaricae SubClassOf NAMEDNervePlexus
+PlexusAuricularisPosterior is Class
+PlexusAuricularisPosterior SubClassOf NAMEDNervePlexus
+PlexusCavernosus is Class
+PlexusCavernosus SubClassOf NAMEDNervePlexus
+PlexusCavernosusClitoridis is Class
+PlexusCavernosusClitoridis SubClassOf NAMEDNervePlexus
+PlexusCavernosusPenis is Class
+PlexusCavernosusPenis SubClassOf NAMEDNervePlexus
+PlexusFemoralis is Class
+PlexusFemoralis SubClassOf NAMEDNervePlexus
+PlexusGastrici is Class
+PlexusGastrici SubClassOf NAMEDNervePlexus
+PlexusGastricusAnterior is Class
+PlexusGastricusAnterior SubClassOf NAMEDNervePlexus
+PlexusGastricusInferior is Class
+PlexusGastricusInferior SubClassOf NAMEDNervePlexus
+PlexusGastricusPosterior is Class
+PlexusGastricusPosterior SubClassOf NAMEDNervePlexus
+PlexusGastricusSuperior is Class
+PlexusGastricusSuperior SubClassOf NAMEDNervePlexus
+PlexusHaemorrhoidalisMedius is Class
+PlexusHaemorrhoidalisMedius SubClassOf NAMEDNervePlexus
+PlexusHaemorrhoidalisSuperior is Class
+PlexusHaemorrhoidalisSuperior SubClassOf NAMEDNervePlexus
+PlexusIliacusExternus is Class
+PlexusIliacusExternus SubClassOf NAMEDLymphaticPlexus
+PlexusMammarius is Class
+PlexusMammarius SubClassOf NAMEDLymphaticPlexus
+PlexusMammariusInternus is Class
+PlexusMammariusInternus SubClassOf NAMEDLymphaticPlexus
+PlexusNervorumSpinalum is Class
+PlexusNervorumSpinalum SubClassOf NAMEDNervePlexus
+PlexusPharyngeusAscendens is Class
+PlexusPharyngeusAscendens SubClassOf NAMEDNervePlexus
+PlexusPharyngeusNerviVagi is Class
+PlexusPharyngeusNerviVagi SubClassOf NAMEDNervePlexus
+PlexusPulmonalis is Class
+PlexusPulmonalis SubClassOf NAMEDNervePlexus
+PlexusPulmonalisAnterior is Class
+PlexusPulmonalisAnterior SubClassOf NAMEDNervePlexus
+PlexusPulmonalisPosterior is Class
+PlexusPulmonalisPosterior SubClassOf NAMEDNervePlexus
+PlexusSacralisMedius is Class
+PlexusSacralisMedius SubClassOf NAMEDLymphaticPlexus
+PlexusTemporalisSuperficialis is Class
+PlexusTemporalisSuperficialis SubClassOf NAMEDNervePlexus
+PlexusVertebralis is Class
+PlexusVertebralis SubClassOf NAMEDNervePlexus
+PlexusVesicale is Class
+PlexusVesicale SubClassOf NAMEDNervePlexus
+Pneumohaemia is Class
+Pneumohaemia SubClassOf BloodVessel
+Pneumopericardium is Class
+Pneumopericardium SubClassOf PericardialSpace
+Pole is Class
+Pole SubClassOf GenericInternalStructure
+PoleOfKidney is Class
+PoleOfKidney EquivalentTo Pole and (isSpecificSolidDivisionOf some Kidney)
+PoleOfKidney SubClassOf Pole
+PoleOfOcularLens is Class
+PoleOfOcularLens EquivalentTo Pole and (isStructuralComponentOf some CortexOfOcularLens)
+PoleOfOcularLens SubClassOf Pole
+PoleOfOvary is Class
+PoleOfOvary EquivalentTo Pole and (isSpecificSolidDivisionOf some Ovary)
+PoleOfOvary SubClassOf Pole
+PoleOfTestis is Class
+PoleOfTestis EquivalentTo Pole and (isSpecificSolidDivisionOf some Testis)
+PoleOfTestis SubClassOf Pole
+Pons is Class
+PontineGroove is Class
+PontineGroove EquivalentTo Groove and (isSpecificStructuralComponentOf some Pons)
+PontineGroove SubClassOf Groove
+PoplitealArtery is Class
+PoplitealBursa is Class
+PoplitealBursa SubClassOf NAMEDBursa
+PoplitealFascia is Class
+PoplitealFascia SubClassOf NAMEDFascia
+PoplitealFossa is Class
+PoplitealLymphnode is Class
+PoplitealLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some PoplitealArtery)
+PoplitealLymphnode SubClassOf Lymphnode,
+PoplitealLymphnode SubClassOf isNonPartitivelyContainedIn some PoplitealFossa,
+PoplitealLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+PoplitealPlexus is Class
+PoplitealPlexus SubClassOf NAMEDNervePlexus
+PostMenstrualTimePeriod is Class
+PostMenstrualTimePeriod SubClassOf PeriodDuringMenstrualCycle
+PostSynapticMembrane is Class
+PostSynapticMembrane SubClassOf CellMembrane
+PostcentralGyrus is Class
+PostcentralGyrus SubClassOf CerebralGyrus
+PosteriorCervicalPlexus is Class
+PosteriorCervicalPlexus SubClassOf NAMEDNervePlexus
+PosteriorCoronaryPlexus is Class
+PosteriorCoronaryPlexus SubClassOf NAMEDNervePlexus
+PosteriorCranialFossa is Class
+PosteriorCuspOfAorticValve is Class
+PosteriorCuspOfAorticValve EquivalentTo Cusp and (hasAnteriorPosteriorSelector some posteriorSelection) and (hasLeftRightSelector some rightSelection) and (isSpecificStructuralComponentOf some AorticValve)
+PosteriorCuspOfAorticValve SubClassOf Cusp
+PosteriorFascialCompartment is Class
+PosteriorFascialCompartment EquivalentTo FascialCompartment and (hasAnteriorPosteriorSelector some posteriorSelection)
+PosteriorFascialCompartment SubClassOf FascialCompartment
+PosteriorFascialCompartmentOfArm is Class
+PosteriorFascialCompartmentOfArm SubClassOf PosteriorFascialCompartment
+PosteriorFascialCompartmentOfForearm is Class
+PosteriorFascialCompartmentOfForearm SubClassOf PosteriorFascialCompartment
+PosteriorFascialCompartmentOfLeg is Class
+PosteriorFascialCompartmentOfLeg SubClassOf PosteriorFascialCompartment
+PosteriorFascialCompartmentOfThigh is Class
+PosteriorFascialCompartmentOfThigh SubClassOf PosteriorFascialCompartment
+PosteriorFontanelle is Class
+PosteriorFontanelle SubClassOf Fontanelle,
+PosteriorFontanelle SubClassOf isStructuralComponentOf some Cranium
+PosteriorHornOfLateralMensicus is Class
+PosteriorHornOfLateralMensicus EquivalentTo Horn and (hasAnteriorPosteriorSelector some posteriorSelection) and (isSpecificSolidDivisionOf some LateralMeniscus)
+PosteriorHornOfLateralMensicus SubClassOf Horn
+PosteriorHornOfMedialMensicus is Class
+PosteriorHornOfMedialMensicus EquivalentTo Horn and (hasAnteriorPosteriorSelector some posteriorSelection) and (isSpecificSolidDivisionOf some MedialMeniscus)
+PosteriorHornOfMedialMensicus SubClassOf Horn
+PosteriorLacrimalCrest is Class
+PosteriorLacrimalCrest SubClassOf LacrimalCrest
+PosteriorLeafletOfMitralValve is Class
+PosteriorLeafletOfMitralValve EquivalentTo Leaflet and (hasAnteriorPosteriorSelector some posteriorSelection) and (isSpecificStructuralComponentOf some MitralValve)
+PosteriorLeafletOfMitralValve SubClassOf Leaflet,
+PosteriorLeafletOfMitralValve SubClassOf isBetaConnectionOf some PosteriorMitralChordae
+PosteriorLobeOfPituitaryGland is Class
+PosteriorLobeOfPituitaryGland SubClassOf LobeOfPituitaryGland
+PosteriorMedianSeptumOfSpinalCord is Class
+PosteriorMedianSeptumOfSpinalCord EquivalentTo Septum and (hasAnteriorPosteriorSelector some posteriorSelection) and (isSpecificStructuralComponentOf some SpinalCord)
+PosteriorMedianSeptumOfSpinalCord SubClassOf Septum
+PosteriorMitralChordae is Class
+PosteriorMyocardium is Class
+PosteriorMyocardium SubClassOf CardiacMuscle
+PosteriorPoleOfOcularLens is Class
+PosteriorPoleOfOcularLens SubClassOf PoleOfOcularLens
+PosteriorSemicircularDuct is Class
+PosteriorSemicircularDuct SubClassOf SemicircularDuct
+PosteriorThirdOfSolidDivisionOfTongue is Class
+PosteriorTricuspidChordae is Class
+PosteriorVaginalWall is Class
+PosteroLateralCervicalLymphnode is Class
+PosteroLateralCervicalLymphnode SubClassOf CervicalLymphnode
+PosterolateralFontanelle is Class
+PosterolateralFontanelle SubClassOf Fontanelle,
+PosterolateralFontanelle SubClassOf isStructuralComponentOf some Cranium
+Pouch is Class
+Pouch SubClassOf GenericInternalStructure
+PreMenstrualTimePeriod is Class
+PreMenstrualTimePeriod SubClassOf LutealPhaseTimePeriod
+PrePatellarBursa is Class
+PrePatellarBursa SubClassOf NAMEDBursa
+PreSynapticMembrane is Class
+PreSynapticMembrane SubClassOf CellMembrane
+PrecentralGyrus is Class
+PrecentralGyrus SubClassOf CerebralGyrus
+PreinsularGyrus is Class
+PreinsularGyrus SubClassOf CerebralGyrus
+PretrachealFascia is Class
+PretrachealFascia SubClassOf NAMEDFascia
+PrevertebralFascia is Class
+PrevertebralFascia SubClassOf NAMEDFascia
+PrevertebralGanglion is Class
+PrevertebralGanglion SubClassOf NAMEDGanglion
+PrevertebralPlexus is Class
+PrevertebralPlexus SubClassOf NAMEDNervePlexus
+PrimaryPlexus is Class
+PrimaryPlexus SubClassOf NAMEDVascularPlexus
+ProliferativePhaseTimePeriod is Class
+ProliferativePhaseTimePeriod SubClassOf PostMenstrualTimePeriod
+ProstateGland is Class
+ProstaticDuct is Class
+ProstaticDuct SubClassOf NAMEDDuct
+ProstaticPlexus is Class
+ProstaticPlexus SubClassOf NAMEDNervePlexus
+Protuberance is Class
+Protuberance SubClassOf GenericInternalStructure
+ProximalHeadOfUlna is Class
+ProximalTubule is Class
+PsoasFascia is Class
+PsoasFascia SubClassOf NAMEDFascia
+PterygopalatineGanglion is Class
+PterygopalatineGanglion SubClassOf NAMEDGanglion
+PulmonaryLymphnode is Class
+PulmonaryLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Lung)
+PulmonaryLymphnode SubClassOf Lymphnode,
+PulmonaryLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some Mediastinum
+PulmonaryValve is Class
+PulmonaryValveCusp is Class
+PulmonaryValveCusp EquivalentTo Cusp and (isSpecificStructuralComponentOf some PulmonaryValve)
+PulmonaryValveCusp SubClassOf Cusp
+PulmonaryValveLunule is Class
+PulmonaryValveLunule EquivalentTo Lunule and (isSpecificStructuralComponentOf some PulmonaryValve)
+PulmonaryValveLunule SubClassOf Lunule
+PulmonaryValveVestibule is Class
+PulmonaryValveVestibule EquivalentTo Vestibule and (isAlphaConnectionOf some PulmonaryValve)
+PulmonaryValveVestibule SubClassOf Vestibule,
+PulmonaryValveVestibule SubClassOf isStructuralComponentOf some RightHeartVentricle
+PulmonaryVessel is Class
+PulmonaryVessel SubClassOf BloodVessel
+PyloricAntrum is Class
+PyloricAntrum EquivalentTo Vestibule and (isAlphaPartitiveConnectionOf some Pylorus)
+PyloricAntrum SubClassOf Vestibule,
+PyloricAntrum SubClassOf isStructuralComponentOf some Stomach
+PyloricCanal is Class
+PyloricCanal SubClassOf Canal,
+PyloricCanal SubClassOf isSpaceDefinedBy some Pylorus
+PyloricPlexus is Class
+PyloricPlexus SubClassOf NAMEDNervePlexus
+Pylorus is Class
+Pyramid is Class
+Pyramid SubClassOf GenericInternalStructure
+PyramidalLobeOfThyroidGland is Class
+PyramidalLobeOfThyroidGland SubClassOf LobeOfThyroidGland
+QuadrangularLaryngealMembrane is Class
+QuadrangularLaryngealMembrane EquivalentTo Membrane and (hasShape some
+QuadrangularLaryngealMembrane EquivalentTo (Shape and (hasAbsoluteState some rectangular))) and (isSpecificStructuralComponentOf some Supraglottis)
+QuadrangularLaryngealMembrane SubClassOf Membrane,
+QuadrangularLaryngealMembrane SubClassOf hasStructuralComponent some VestibularLigament,
+QuadrangularLaryngealMembrane SubClassOf isPairedOrUnpaired some unpaired
+QuadrateMembrane is Class
+QuadrateMembrane SubClassOf NAMEDMembrane
+QuadratusLumborumFascia is Class
+QuadratusLumborumFascia SubClassOf NAMEDFascia
+QuadtrateLobeOfLiver is Class
+QuadtrateLobeOfLiver SubClassOf LobeOfLiver
+RadialNerve is Class
+RadialNotchOfUlna is Class
+RadialNotchOfUlna EquivalentTo Notch and (isSpecificSurfaceDivisionOf some ProximalHeadOfUlna)
+RadialNotchOfUlna SubClassOf Notch
+RectoVaginalSeptum is Class
+RectoVaginalSeptum SubClassOf Septum,
+RectoVaginalSeptum SubClassOf isAlphaPartitiveConnectionOf some AnteriorRectalWall,
+RectoVaginalSeptum SubClassOf isBetaPartitiveConnectionOf some PosteriorVaginalWall
+RectovesicalFascia is Class
+RectovesicalFascia SubClassOf NAMEDFascia
+Rectum is Class
+RegularMenstrualCycle is Class
+RegularMenstrualCycle SubClassOf MenstrualCycle
+RenalFascia is Class
+RenalFascia SubClassOf NAMEDFascia
+RenalInsufficiency is Class
+RenalInterstitialStructure is Class
+RenalInterstitialStructure SubClassOf NAMEDKidneySubPart,
+RenalInterstitialStructure SubClassOf isStructuralComponentOf some RenalNonPelvis
+RenalNonPelvis is Class
+RenalPapilla is Class
+RenalPapilla EquivalentTo Papilla and (isSpecificStructuralComponentOf some MedullaOfKidney)
+RenalPapilla SubClassOf Papilla,
+RenalPapilla SubClassOf hasTopology some solidTopology
+RenalPlexus is Class
+RenalPlexus SubClassOf NAMEDNervePlexus
+RenalVessel is Class
+RenalVessel SubClassOf BloodVessel
+RetroauricularLymphnode is Class
+RetroauricularLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some TemporalBone)
+RetroauricularLymphnode SubClassOf Lymphnode,
+RetroauricularLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged,
+RetroauricularLymphnode SubClassOf isSpecificStructuralComponentOf some Head
+RetropharangealLymphnode is Class
+RetropharangealLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Pharynx)
+RetropharangealLymphnode SubClassOf Lymphnode,
+RetropharangealLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+Rhombencephalon is Class
+Rib is Class
+Ridge is Class
+Ridge SubClassOf GenericInternalStructure
+RightAdrenalCortex is Class
+RightAdrenalCortex EquivalentTo Cortex and (isSpecificLayerOf some RightAdrenalGland)
+RightAdrenalCortex SubClassOf Cortex
+RightAdrenalGland is Class
+RightAtrialMuscle is Class
+RightAtrialMuscle SubClassOf CardiacMuscle
+RightCerebralHemisphere is Class
+RightColicPlexus is Class
+RightColicPlexus SubClassOf NAMEDNervePlexus
+RightCuspOfAorticValve is Class
+RightCuspOfAorticValve EquivalentTo Cusp and (hasAnteriorPosteriorSelector some anteriorSelection) and (isSpecificStructuralComponentOf some AorticValve)
+RightCuspOfAorticValve SubClassOf Cusp
+RightCuspOfPulmonaryValve is Class
+RightCuspOfPulmonaryValve EquivalentTo Cusp and (hasAnteriorPosteriorSelector some anteriorSelection) and (hasLeftRightSelector some rightSelection) and (isSpecificStructuralComponentOf some PulmonaryValve)
+RightCuspOfPulmonaryValve SubClassOf Cusp
+RightHeartAtrium is Class
+RightHeartVentricle is Class
+RightLobeOfLiver is Class
+RightLobeOfLiver SubClassOf LobeOfLiver
+RightLobeOfThymusGland is Class
+RightLobeOfThymusGland EquivalentTo Lobe and (hasLeftRightSelector some rightSelection) and (isSpecificSolidDivisionOf some ThymusGland)
+RightLobeOfThymusGland SubClassOf Lobe
+RightLobeOfThyroidGland is Class
+RightLobeOfThyroidGland EquivalentTo Lobe and (hasLeftRightSelector some rightSelection) and (isSpecificSolidDivisionOf some ThyroidGland)
+RightLobeOfThyroidGland SubClassOf Lobe,
+RightLobeOfThyroidGland SubClassOf hasSpecificSurfaceDivision some SurfaceOfRightThyroidLobe
+RightLowerIncisor is Class
+RightLowerIncisor EquivalentTo LowerIncisor and (hasLeftRightSelector some rightSelection)
+RightLowerIncisor SubClassOf LowerIncisor
+RightLung is Class
+RightParietalBone is Class
+RightUpperIncisor is Class
+RightUpperIncisor EquivalentTo UpperIncisor and (hasLeftRightSelector some rightSelection)
+RightUpperIncisor SubClassOf UpperIncisor
+Rim is Class
+Rim SubClassOf GenericInternalStructure
+RoofOfNasalCavity is Class
+Root is Class
+Root SubClassOf GenericInternalStructure
+RootOfTongue is Class
+RootOfTongue EquivalentTo Root and (isSpecificSolidDivisionOf some Tongue)
+RootOfTongue SubClassOf Root,
+RootOfTongue SubClassOf hasAlphaConnection some TerminalSulcus,
+RootOfTongue SubClassOf hasSolidDivision some PosteriorThirdOfSolidDivisionOfTongue,
+RootOfTongue SubClassOf hasSpecificSolidDivision some LingualTonsil,
+RootOfTongue SubClassOf isPairedOrUnpaired some unpaired
+RotatorCuffMuscles is Class
+RotatorCuffMuscles SubClassOf StriatedMuscle
+SacralFascia is Class
+SacralFascia SubClassOf NAMEDFascia
+SacralGanglion is Class
+SacralGanglion SubClassOf NAMEDGanglion
+SacralLymphnode is Class
+SacralLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Sacrum)
+SacralLymphnode SubClassOf Lymphnode,
+SacralLymphnode SubClassOf isPairedOrUnpaired some unpaired,
+SacralLymphnode SubClassOf isSpecificallyNonPartitivelyContainedIn some PelvicCavity
+SacralPlexus is Class
+SacralPlexus SubClassOf NAMEDNervePlexus
+SacralVertebra is Class
+Sacrum is Class
+SagittalSuture is Class
+SagittalSuture SubClassOf NAMEDJoint,
+SagittalSuture SubClassOf isBetaConnectionOf some LeftParietalBone,
+SagittalSuture SubClassOf isBetaConnectionOf some RightParietalBone,
+SagittalSuture SubClassOf isMadeOf some FibrousTissue,
+SagittalSuture SubClassOf isPairedOrUnpaired some unpaired,
+SagittalSuture SubClassOf isStructuralComponentOf some Skull
+SalivaryDuct is Class
+SalivaryDuct SubClassOf NAMEDDuct
+Scapula is Class
+ScapularMuscle is Class
+ScapularMuscle SubClassOf StriatedMuscle
+ScarpasFascia is Class
+ScarpasFascia SubClassOf NAMEDFascia
+Scope is Class
+ScrotalFascia is Class
+ScrotalFascia SubClassOf NAMEDFascia
+ScrotalWall is Class
+Scrotum is Class
+SecondLumbarVertebra is Class
+SecondMetatarsal is Class
+SecondThoracicVertebra is Class
+Secretion is Class
+SellaTurcica is Class
+SemicircularDuct is Class
+SemicircularDuct SubClassOf Duct,
+SemicircularDuct SubClassOf specificallyPartitivelyContains some Otolith
+SemimenbranosusBursa is Class
+SemimenbranosusBursa SubClassOf NAMEDBursa
+SensoryNerve is Class
+SensoryNerve EquivalentTo Nerve and (hasFunction some Perception)
+SensoryNerve SubClassOf Nerve
+SeptalLeafletOfTricuspidValve is Class
+SeptalLeafletOfTricuspidValve EquivalentTo Leaflet and (hasAnteriorPosteriorSelector some posteriorSelection) and (hasLeftRightSelector some leftSelection) and (isSpecificStructuralComponentOf some TricuspidValve)
+SeptalLeafletOfTricuspidValve SubClassOf Leaflet,
+SeptalLeafletOfTricuspidValve SubClassOf isBetaConnectionOf some PosteriorTricuspidChordae
+Septum is Class
+Septum SubClassOf GenericInternalStructure
+SeptumInHeart is Class
+SeptumInHeart EquivalentTo Septum and (IsDivisionOf some Heart)
+SeptumInHeart SubClassOf Septum,
+SeptumInHeart SubClassOf hasSpecificLayer some CardiacMuscle,
+SeptumInHeart SubClassOf hasSpecificLayer some Endocardium
+SeptumOfSpinalCord is Class
+SeptumOfSpinalCord EquivalentTo Septum and (isSpecificStructuralComponentOf some SpinalCord)
+SeptumOfSpinalCord SubClassOf Septum,
+SeptumOfSpinalCord SubClassOf isPairedOrUnpaired some exactlyPaired
+SeptumPellucidum is Class
+SeptumPellucidum SubClassOf Septum,
+SeptumPellucidum SubClassOf isBetaConnectionOf some IntracranialFornix,
+SeptumPellucidum SubClassOf isStructuralComponentOf some LateralVentricle
+SeptumPrimum is Class
+SeptumPrimum SubClassOf Septum
+SeptumSecundum is Class
+SeptumSecundum SubClassOf Septum
+SerousMembrane is Class
+SerousMembrane SubClassOf NAMEDMembrane
+SeventhCervicalVertebra is Class
+SeventhThoracicVertebra is Class
+Shape is Class
+Sheath is Class
+Sheath SubClassOf GenericInternalStructure
+SheathOfPenis is Class
+SheathOfPenis EquivalentTo Sheath and (isSpecificStructuralComponentOf some Penis)
+SheathOfPenis SubClassOf Sheath
+ShortHeadOfBicepsBrachialis is Class
+ShortHeadOfBicepsBrachialis SubClassOf BellyOfBicepsBrachii
+ShortHeadOfBicepsFemoris is Class
+ShortHeadOfBicepsFemoris SubClassOf BellyOfBicepsFemoris
+Shoulder is Class
+ShoulderJoint is Class
+ShoulderJointCavity is Class
+Signal is Class
+Sinus is Class
+Sinus SubClassOf GenericInternalStructure
+SixthCervicalVertebra is Class
+SkinAsOrgan is Class
+SkinCovering is Class
+SkinOfAnus is Class
+SkinTag is Class
+SkinVessel is Class
+SkinVessel SubClassOf BloodVessel
+Skull is Class
+SmallBloodVessel is Class
+SmallBloodVessel SubClassOf BloodVessel
+SmallIntestine is Class
+SmoothMuscle is Class
+SmoothMuscle EquivalentTo Muscle and (isSpecificallyMadeOf some SmoothMuscleTissue)
+SmoothMuscle SubClassOf Muscle,
+SmoothMuscle SubClassOf hasSpecificSolidDivision some SmoothMuscleMyocyte
+SmoothMuscleMyocyte is Class
+SmoothMuscleOfUreter is Class
+SmoothMuscleOfUreter SubClassOf SmoothMuscle
+SmoothMuscleTissue is Class
+SoftTissue is Class
+SolarPlexus is Class
+SolarPlexus SubClassOf NAMEDNervePlexus
+SomaticNerveFibre is Class
+SomaticNerveFibre SubClassOf NerveFibre
+Soreness is Class
+SpenopalatineNotchOfPalatineBone is Class
+SpenopalatineNotchOfPalatineBone EquivalentTo Notch and (isSpecificSurfaceDivisionOf some PalatineBone)
+SpenopalatineNotchOfPalatineBone SubClassOf Notch
+SpermaticFascia is Class
+SpermaticFascia SubClassOf NAMEDFascia
+SpermaticPlexus is Class
+SpermaticPlexus SubClassOf NAMEDNervePlexus
+SphenoidBone is Class
+SphenoidPlexus is Class
+SphenoidPlexus SubClassOf NAMEDNervePlexus
+Sphincter is Class
+Sphincter SubClassOf Valve,
+Sphincter SubClassOf hasSpecificStructuralComponent some SmoothMuscle
+SphincterMuscle is Class
+SphincterMuscle EquivalentTo Muscle and (isStructuralComponentOf some Sphincter)
+SphincterMuscle SubClassOf Muscle
+SpinalCord is Class
+SpineOfScapula is Class
+SpiralGanglionOfCochlea is Class
+SpiralGanglionOfCochlea SubClassOf NAMEDGanglion
+SplanchnicGanglion is Class
+SplanchnicGanglion SubClassOf NAMEDGanglion
+Spleen is Class
+SplenicPlexus is Class
+SplenicPlexus SubClassOf NAMEDNervePlexus
+SternoclavicularJoint is Class
+SternoclavicularJointCavity is Class
+SternocleidomastoidMuscle is Class
+Sternum is Class
+Stomach is Class
+Storing is Class
+Stratum is Class
+Stratum SubClassOf GenericInternalStructure
+StratumLucidumEpidermis is Class
+StratumLucidumEpidermis SubClassOf EpidermalLayer
+StriatedMuscle is Class
+StriatedMuscle EquivalentTo Muscle and (isSpecificallyMadeOf some StripedMuscleTissue)
+StriatedMuscle SubClassOf Muscle,
+StriatedMuscle SubClassOf isStructuralComponentOf some MusculoSkeletalSystem
+StriatedUrethralSphincterMuscle is Class
+StriatedUrethralSphincterMuscle SubClassOf StriatedMuscle
+StripedMuscleTissue is Class
+StromaPlexus is Class
+StromaPlexus SubClassOf NAMEDNervePlexus
+Strongylus is Class
+StrongylusVentricosus is Class
+StrongylusVentricosus SubClassOf Strongylus
+SubacromialBursa is Class
+SubacromialBursa SubClassOf NAMEDBursa
+SubarachnoidSpace is Class
+SubareolarPlexus is Class
+SubareolarPlexus SubClassOf NAMEDLymphaticPlexus
+SubclavianPlexus is Class
+SubclavianPlexus SubClassOf NAMEDNervePlexus
+Subendocardium is Class
+SublingualGanglion is Class
+SublingualGanglion SubClassOf NAMEDGanglion
+SublingualVarix is Class
+SublingualVarix SubClassOf VaricoseVein
+SubmandibularGanglion is Class
+SubmandibularGanglion SubClassOf NAMEDGanglion
+SubmandibularGland is Class
+SubmandibularLymphnode is Class
+SubmandibularLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some SubmandibularGland)
+SubmandibularLymphnode SubClassOf Lymphnode,
+SubmandibularLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged,
+SubmandibularLymphnode SubClassOf isSpecificStructuralComponentOf some Head
+SubmentalLymphnode is Class
+SubmentalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some Chin)
+SubmentalLymphnode SubClassOf Lymphnode,
+SubmentalLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged,
+SubmentalLymphnode SubClassOf isSpecificStructuralComponentOf some Head
+Submucosa is Class
+Submucosa SubClassOf NAMEDMembrane
+SubmucosalPlexus is Class
+SubmucosalPlexus SubClassOf NAMEDNervePlexus
+SubsartorialPlexus is Class
+SubsartorialPlexus SubClassOf NAMEDNervePlexus
+SubscapularAponeurosis is Class
+SubscapularAponeurosis SubClassOf NAMEDAponeurosis
+SubscapularLymphnode is Class
+SubscapularLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some SubscapularisMuscle)
+SubscapularLymphnode SubClassOf Lymphnode,
+SubscapularLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+SubscapularisMuscle is Class
+SubserosalPlexus is Class
+SubserosalPlexus SubClassOf NAMEDNervePlexus
+SubtrapeziusPlexus is Class
+SubtrapeziusPlexus SubClassOf NAMEDNervePlexus
+SuccenturiateLobeOfPlacenta is Class
+SuccenturiateLobeOfPlacenta SubClassOf LobeOfPlacenta
+SulcusCalcanei is Class
+SulcusCalcanei EquivalentTo Groove and (isSpecificSolidDivisionOf some SuperiorSurfaceOfCalcaneum)
+SulcusCalcanei SubClassOf Groove
+SulcusTali is Class
+SulcusTali EquivalentTo Groove and (isSpecificSolidDivisionOf some NeckOfTalus)
+SulcusTali SubClassOf Groove
+SuperficialBloodVessel is Class
+SuperficialBloodVessel SubClassOf BloodVessel
+SuperficialCardiacPlexus is Class
+SuperficialCardiacPlexus SubClassOf NAMEDNervePlexus
+SuperficialCervicalLymphnode is Class
+SuperficialCervicalLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some ExternalJugularVein)
+SuperficialCervicalLymphnode SubClassOf Lymphnode,
+SuperficialCervicalLymphnode SubClassOf isPairedOrUnpaired some mirrorImaged
+SuperficialInfraPatellarBursa is Class
+SuperficialInfraPatellarBursa SubClassOf NAMEDBursa
+SuperficialInguinalLymphNodes is Class
+SuperficialInguinalLymphNodes SubClassOf InguinalLymphnode
+SuperficialPerinealFascia is Class
+SuperficialPerinealFascia SubClassOf NAMEDFascia
+SuperiorAngleOfScapula is Class
+SuperiorAngleOfScapula SubClassOf AngleOfScapula
+SuperiorArticularFacetOfAtlas is Class
+SuperiorArticularFacetOfAtlas SubClassOf ArticularFacet
+SuperiorArticularFacetOfAxis is Class
+SuperiorArticularFacetOfAxis SubClassOf ArticularFacet
+SuperiorCerebellarPeduncle is Class
+SuperiorCerebellarPeduncle SubClassOf CerebellarPeduncle
+SuperiorDentalPlexus is Class
+SuperiorDentalPlexus SubClassOf NAMEDNervePlexus
+SuperiorFrontalGyrus is Class
+SuperiorFrontalGyrus SubClassOf CerebralGyrus
+SuperiorHypogastricPlexus is Class
+SuperiorHypogastricPlexus SubClassOf NAMEDNervePlexus
+SuperiorMesentericArtery is Class
+SuperiorMesentericLymphnode is Class
+SuperiorMesentericLymphnode EquivalentTo Lymphnode and (hasProximity some Aorta) and (hasSpecificProximity some SuperiorMesentericArtery)
+SuperiorMesentericLymphnode SubClassOf Lymphnode
+SuperiorMesentericPlexus is Class
+SuperiorMesentericPlexus SubClassOf NAMEDLymphaticPlexus
+SuperiorOccipitalGyrus is Class
+SuperiorOccipitalGyrus SubClassOf CerebralGyrus
+SuperiorOrbitalSeptum is Class
+SuperiorOrbitalSeptum SubClassOf OrbitalSeptum
+SuperiorPoleOfKidney is Class
+SuperiorPoleOfKidney EquivalentTo Pole and (hasSuperiorInferiorSelector some superiorSelection) and (isSpecificSolidDivisionOf some Kidney)
+SuperiorPoleOfKidney SubClassOf Pole
+SuperiorSemicircularDuct is Class
+SuperiorSemicircularDuct SubClassOf SemicircularDuct
+SuperiorSurfaceOfCalcaneum is Class
+SuperiorTemporalGyrus is Class
+SuperiorTemporalGyrus SubClassOf CerebralGyrus
+SuperiorThyroidPlexus is Class
+SuperiorThyroidPlexus SubClassOf NAMEDNervePlexus
+SuperiorVenaCava is Class
+SuperiorVertebralNotch is Class
+SuperiorVertebralNotch EquivalentTo Notch and (hasSuperiorInferiorSelector some superiorSelection) and (isSpecificSolidDivisionOf some VertebralPedicle)
+SuperiorVertebralNotch SubClassOf Notch
+SupraClavicularLymphnode is Class
+SupraClavicularLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some SupraClavicularSpace)
+SupraClavicularLymphnode SubClassOf Lymphnode
+SupraClavicularSpace is Class
+SupraOmohyoidLymphnode is Class
+SupraOmohyoidLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some
+SupraOmohyoidLymphnode EquivalentTo (BodySpace and (isSpaceBoundedBy some OmohyoidMuscle) and (isSpaceBoundedBy some SternocleidomastoidMuscle) and (isSpaceBoundedBy some TrapeziusMuscle)))
+SupraOmohyoidLymphnode SubClassOf Lymphnode
+Supraglottis is Class
+SupramarginalGyrus is Class
+SupramarginalGyrus SubClassOf CerebralGyrus
+SuprapatellarBursa is Class
+SuprapatellarBursa SubClassOf NAMEDBursa
+SuprarenalPlexus is Class
+SuprarenalPlexus SubClassOf NAMEDNervePlexus
+SupraspinatusMuscle is Class
+SupraspinousAponeurosis is Class
+SupraspinousAponeurosis SubClassOf NAMEDAponeurosis
+SuprasternalNotch is Class
+SuprasternalNotch EquivalentTo Notch and (isSpecificSurfaceDivisionOf some Sternum)
+SuprasternalNotch SubClassOf Notch,
+SuprasternalNotch SubClassOf isBetaConnectionOf some InterclavicularLigament
+SupratrochlearLymphnode is Class
+SupratrochlearLymphnode EquivalentTo Lymphnode and (hasSpecificProximity some MedialHumeralCondyle)
+SupratrochlearLymphnode SubClassOf Lymphnode
+SurfaceOfLeftThyroidLobe is Class
+SurfaceOfRightThyroidLobe is Class
+SurgicalConstructingProcess is Class
+SurgicalPouch is Class
+SurgicalPouch EquivalentTo Pouch and (isSpecificConsequenceOf some SurgicalConstructingProcess)
+SurgicalPouch SubClassOf Pouch
+SurgicalSkinPouch is Class
+SurgicalSkinPouch EquivalentTo Pouch and (isSpecificConsequenceOf some SurgicalConstructingProcess) and (isSpecificallyPartitivelyContainedIn some SkinCovering)
+SurgicalSkinPouch SubClassOf Pouch
+SympatheticNerve is Class
+SympatheticNerve EquivalentTo Nerve and (isSpecificStructuralComponentOf some SympatheticNervousSystem)
+SympatheticNerve SubClassOf Nerve
+SympatheticNerveFibre is Class
+SympatheticNerveFibre EquivalentTo Fibre and (isSpecificLinearDivisionOf some SympatheticNerve)
+SympatheticNerveFibre SubClassOf Fibre
+SympatheticNervousSystem is Class
+Symphysis is Class
+Symphysis SubClassOf GenericInternalStructure
+SymphysisMenti is Class
+SymphysisMenti SubClassOf NAMEDSymphysis
+SymphysisPubis is Class
+SymphysisPubis SubClassOf NAMEDSymphysis
+SymptomRole is Class
+SynovialJoint is Class
+SynovialJointCapsule is Class
+SynovialJointCapsule EquivalentTo Membrane and (boundsSpace some JointCavity) and (isMadeOf some FibrousTissue) and (isSpecificStructuralComponentOf some SynovialJoint)
+SynovialJointCapsule SubClassOf Membrane
+SynovialMembrane is Class
+SynovialMembrane SubClassOf NAMEDMembrane
+SynovialShoulderoint is Class
+SynovialShoulderoint EquivalentTo SynovialJoint and (IsDivisionOf some Shoulder)
+SynovialShoulderoint SubClassOf SynovialJoint
+T10T11IntervertebralSpace is Class
+T10T11IntervertebralSpace SubClassOf IntervertebralSpace,
+T10T11IntervertebralSpace SubClassOf isSpaceBoundedBy some EleventhThoracicVertebra,
+T10T11IntervertebralSpace SubClassOf isSpaceBoundedBy some TenthThoracicVertebra
+T11T12IntervertebralSpace is Class
+T11T12IntervertebralSpace SubClassOf IntervertebralSpace,
+T11T12IntervertebralSpace SubClassOf isSpaceBoundedBy some EleventhThoracicVertebra,
+T11T12IntervertebralSpace SubClassOf isSpaceBoundedBy some TwelfthThoracicVertebra
+T12L1IntervertebralSpace is Class
+T12L1IntervertebralSpace SubClassOf IntervertebralSpace,
+T12L1IntervertebralSpace SubClassOf isSpaceBoundedBy some FirstLumbarVertebra,
+T12L1IntervertebralSpace SubClassOf isSpaceBoundedBy some TwelfthThoracicVertebra
+T1T2IntervertebralSpace is Class
+T1T2IntervertebralSpace SubClassOf IntervertebralSpace,
+T1T2IntervertebralSpace SubClassOf isSpaceBoundedBy some FirstThoracicVertebra,
+T1T2IntervertebralSpace SubClassOf isSpaceBoundedBy some SecondThoracicVertebra
+T7T8IntervertebralSpace is Class
+T7T8IntervertebralSpace SubClassOf IntervertebralSpace,
+T7T8IntervertebralSpace SubClassOf isSpaceBoundedBy some EighthThoracicVertebra,
+T7T8IntervertebralSpace SubClassOf isSpaceBoundedBy some SeventhThoracicVertebra
+TaloFibularArticularFacetOfTalus is Class
+TaloFibularArticularFacetOfTalus SubClassOf ArticularFacet
+TaloNavicularArticularFacetOfTalus is Class
+TaloNavicularArticularFacetOfTalus SubClassOf ArticularFacet
+TaloTibialArticularFacetOfTalus is Class
+TaloTibialArticularFacetOfTalus SubClassOf ArticularFacet
+Talus is Class
+Tegmentum is Class
+Telencephalon is Class
+TemporalBone is Class
+TemporalFascia is Class
+TemporalFascia SubClassOf NAMEDFascia
+TemporalHornOfLateralVentricle is Class
+TemporalHornOfLateralVentricle SubClassOf HornOfLateralVentricle
+TemporalLobe is Class
+TemporalLobe SubClassOf CerebralLobe
+TemporalPattern is Class
+TendoVastusLateralis is Class
+TendoVastusLateralis SubClassOf NAMEDTendon
+TendoVastusMedialis is Class
+TendoVastusMedialis SubClassOf NAMEDTendon
+Tendon is Class
+Tendon SubClassOf GenericInternalStructure
+TendonOfAbductorPollicisLongus is Class
+TendonOfAbductorPollicisLongus SubClassOf NAMEDTendon
+TendonOfAdductorPollicis is Class
+TendonOfAdductorPollicis SubClassOf NAMEDTendon
+TendonOfArm is Class
+TendonOfArm EquivalentTo Tendon and (IsDivisionOf some Arm)
+TendonOfArm SubClassOf Tendon
+TendonOfExtensorDigitorum is Class
+TendonOfExtensorDigitorum SubClassOf NAMEDTendon
+TendonOfExtensorPollicisLongus is Class
+TendonOfExtensorPollicisLongus SubClassOf NAMEDTendon
+TendonOfFlexorCarpiRadialis is Class
+TendonOfFlexorCarpiRadialis SubClassOf NAMEDTendon
+TendonOfFlexorCarpiUlnaris is Class
+TendonOfFlexorCarpiUlnaris SubClassOf NAMEDTendon
+TendonOfFlexorDigitorumProfundus is Class
+TendonOfFlexorDigitorumProfundus SubClassOf NAMEDTendon
+TendonOfFlexorDigitorumSuperficialis is Class
+TendonOfFlexorDigitorumSuperficialis SubClassOf NAMEDTendon
+TendonOfFlexorHallucisLongus is Class
+TendonOfFlexorHallucisLongus SubClassOf NAMEDTendon
+TendonOfFlexorOfHand is Class
+TendonOfFlexorOfHand EquivalentTo Tendon and (IsDivisionOf some FlexorMuscleOfHand)
+TendonOfFlexorOfHand SubClassOf Tendon,
+TendonOfFlexorOfHand SubClassOf isStructuralComponentOf some Forearm
+TendonOfFlexorPollicisLongus is Class
+TendonOfFlexorPollicisLongus SubClassOf NAMEDTendon
+TendonOfFoot is Class
+TendonOfFoot EquivalentTo Tendon and (IsDivisionOf some Foot)
+TendonOfFoot SubClassOf Tendon
+TendonOfForearm is Class
+TendonOfForearm EquivalentTo Tendon and (IsDivisionOf some Forearm)
+TendonOfForearm SubClassOf Tendon
+TendonOfHand is Class
+TendonOfHand EquivalentTo Tendon and (IsDivisionOf some Hand)
+TendonOfHand SubClassOf Tendon
+TendonOfHip is Class
+TendonOfHip EquivalentTo Tendon and (IsDivisionOf some Hip)
+TendonOfHip SubClassOf Tendon
+TendonOfLeg is Class
+TendonOfLeg EquivalentTo Tendon and (IsDivisionOf some Leg)
+TendonOfLeg SubClassOf Tendon
+TendonOfLowerLimb is Class
+TendonOfLowerLimb EquivalentTo Tendon and (IsDivisionOf some LowerExtremity)
+TendonOfLowerLimb SubClassOf Tendon
+TendonOfLumbricalOfHand is Class
+TendonOfLumbricalOfHand SubClassOf NAMEDTendon
+TendonOfPalmarisLongus is Class
+TendonOfPalmarisLongus SubClassOf NAMEDTendon
+TendonOfPeroneusBrevis is Class
+TendonOfPeroneusBrevis SubClassOf NAMEDTendon
+TendonOfPeroneusLongus is Class
+TendonOfPeroneusLongus SubClassOf NAMEDTendon
+TendonOfPeroneusTertius is Class
+TendonOfPeroneusTertius SubClassOf NAMEDTendon
+TendonOfPopliteus is Class
+TendonOfPopliteus SubClassOf NAMEDTendon
+TendonOfPsoasMinor is Class
+TendonOfPsoasMinor SubClassOf NAMEDTendon
+TendonOfQuadriceps is Class
+TendonOfQuadriceps SubClassOf NAMEDTendon
+TendonOfSemimembranosus is Class
+TendonOfSemimembranosus SubClassOf NAMEDTendon
+TendonOfSemitendinosus is Class
+TendonOfSemitendinosus SubClassOf NAMEDTendon
+TendonOfSubscapularis is Class
+TendonOfSubscapularis SubClassOf NAMEDTendon
+TendonOfSupraspinatus is Class
+TendonOfSupraspinatus SubClassOf NAMEDTendon
+TendonOfThigh is Class
+TendonOfThigh EquivalentTo Tendon and (IsDivisionOf some Thigh)
+TendonOfThigh SubClassOf Tendon
+TendonOfThumb is Class
+TendonOfThumb EquivalentTo Tendon and (IsDivisionOf some
+TendonOfThumb EquivalentTo (Muscle and (hasFunction some
+TendonOfThumb EquivalentTo (ArticulationProcess and (actsOn some Thumb)))))
+TendonOfThumb SubClassOf Tendon,
+TendonOfThumb SubClassOf isStructuralComponentOf some Forearm
+TendonOfTibialisAnterior is Class
+TendonOfTibialisAnterior SubClassOf NAMEDTendon
+TendonOfTibialisPosterior is Class
+TendonOfTibialisPosterior SubClassOf NAMEDTendon
+TendonOfUpperLimb is Class
+TendonOfUpperLimb EquivalentTo Tendon and (IsDivisionOf some UpperExtremity)
+TendonOfUpperLimb SubClassOf Tendon
+TendonSheath is Class
+TendonSheath EquivalentTo Sheath and (specificallyNonPartitivelyContains some Tendon)
+TendonSheath SubClassOf Sheath,
+TendonSheath SubClassOf isStructuralComponentOf some MusculoSkeletalSystem
+TenthThoracicVertebra is Class
+TentoriumCerebelli is Class
+TeresMinorMuscle is Class
+TerminalSulcus is Class
+TerminalSulcus SubClassOf Groove,
+TerminalSulcus SubClassOf isAlphaConnectionOf some RootOfTongue,
+TerminalSulcus SubClassOf isBetaConnectionOf some BodyOfTongue
+Testis is Class
+Texture is Class
+ThenarFascia is Class
+ThenarFascia SubClassOf NAMEDFascia
+Thigh is Class
+ThirdCervicalVertebra is Class
+ThirdLumbarVertebra is Class
+ThirdLumbarVertebra DisjointWith AnteriorMyocardium
+ThoracicCavity is Class
+ThoracicDuct is Class
+ThoracicDuct SubClassOf NAMEDDuct
+ThoracicGanglion is Class
+ThoracicGanglion SubClassOf NAMEDGanglion
+ThoracicVertebra is Class
+ThoracolumbarFascia is Class
+ThoracolumbarFascia SubClassOf NAMEDFascia
+Thorax is Class
+Thumb is Class
+ThymusGland is Class
+ThyroidGland is Class
+TipOfTongue is Class
+TipOfTongue EquivalentTo Apex and (isSpecificSolidDivisionOf some Tongue)
+TipOfTongue SubClassOf Apex,
+TipOfTongue SubClassOf hasStructuralComponent some DeepLingualArtery,
+TipOfTongue SubClassOf isPairedOrUnpaired some unpaired
+Tongue is Class
+TonsillarCrypt is Class
+TonsillarCrypt EquivalentTo Crypt and (IsDivisionOf some LymphoidTonsil)
+TonsillarCrypt SubClassOf Crypt
+TonsillarPlexus is Class
+TonsillarPlexus SubClassOf NAMEDNervePlexus
+ToothSocket is Class
+Topology is Class
+TrabeculaCarnae is Class
+TrabeculaSeptomarginalis is Class
+Trachea is Class
+TrachealLymphnode is Class
+TrachealLymphnode SubClassOf ParatrachealLymphnode
+TracheoBronchialLymphnode is Class
+TracheoBronchialLymphnode SubClassOf ParatrachealLymphnode
+TransducingProcess is Class
+TransversalisFascia is Class
+TransversalisFascia SubClassOf NAMEDFascia
+TransverseHumeralLigament is Class
+TransverseLigamentOfKnee is Class
+TrapeziusMuscle is Class
+TricepsBrachii is Class
+Trichomonas is Class
+TrichomonasVaginalis is Class
+TrichomonasVaginalis SubClassOf Trichomonas
+TricuspidValve is Class
+TricuspidValveLeaflet is Class
+TricuspidValveLeaflet EquivalentTo Leaflet and (isSpecificStructuralComponentOf some TricuspidValve)
+TricuspidValveLeaflet SubClassOf Leaflet
+TricuspidValveVestibule is Class
+TricuspidValveVestibule EquivalentTo Vestibule and (isAlphaConnectionOf some TricuspidValve)
+TricuspidValveVestibule SubClassOf Vestibule,
+TricuspidValveVestibule SubClassOf isStructuralComponentOf some RightHeartAtrium
+TrigeminalGanglion is Class
+TrigeminalGanglion SubClassOf NAMEDGanglion
+TrigeminalNerve is Class
+TrochleaTali is Class
+TrochleaTali SubClassOf ArticularFacet
+Truncus is Class
+Truncus SubClassOf GenericInternalStructure
+TubalPoleOfOvary is Class
+TubalPoleOfOvary SubClassOf PoleOfOvary
+TuberculumSellae is Class
+TwelfthThoracicVertebra is Class
+TympanicGanglion is Class
+TympanicGanglion SubClassOf NAMEDGanglion
+TympanicPlexus is Class
+TympanicPlexus SubClassOf NAMEDNervePlexus
+UlnarNerve is Class
+UlnarNotchOfRadius is Class
+UlnarNotchOfRadius EquivalentTo Notch and (isSpecificSurfaceDivisionOf some DistalHeadOfRadius)
+UlnarNotchOfRadius SubClassOf Notch
+Uncus is Class
+Uncus SubClassOf GenericInternalStructure
+UncusCorporisVertebrae is Class
+UncusCorporisVertebrae EquivalentTo Uncus and (IsDivisionOf some BodyOfCervicalVertebra)
+UncusCorporisVertebrae SubClassOf Uncus
+UncusOfFifthCervicalVertebra is Class
+UncusOfFifthCervicalVertebra EquivalentTo Uncus and (isSpecificSolidDivisionOf some BodyOfFifthCervicalVertebra)
+UncusOfFifthCervicalVertebra SubClassOf Uncus
+UncusOfFourthCervicalVertebra is Class
+UncusOfFourthCervicalVertebra EquivalentTo Uncus and (isSpecificSolidDivisionOf some BodyOfFourthCervicalVertebra)
+UncusOfFourthCervicalVertebra SubClassOf Uncus
+UncusOfSeventhCervicalVertebra is Class
+UncusOfSeventhCervicalVertebra EquivalentTo Uncus and (isSpecificSolidDivisionOf some BodyOfSeventhCervicalVertebra)
+UncusOfSeventhCervicalVertebra SubClassOf Uncus
+UncusOfSixthCervicalVertebra is Class
+UncusOfSixthCervicalVertebra EquivalentTo Uncus and (isSpecificSolidDivisionOf some BodyOfSixthCervicalVertebra)
+UncusOfSixthCervicalVertebra SubClassOf Uncus
+UncusOfTemporalLobe is Class
+UncusOfTemporalLobe EquivalentTo Uncus and (isSpecificSolidDivisionOf some TemporalLobe)
+UncusOfTemporalLobe SubClassOf Uncus
+UncusOfThirdCervicalVertebra is Class
+UncusOfThirdCervicalVertebra EquivalentTo Uncus and (isSpecificSolidDivisionOf some BodyOfThirdCervicalVertebra)
+UncusOfThirdCervicalVertebra SubClassOf Uncus
+UpperExtremity is Class
+UpperIncisor is Class
+UpperIncisor EquivalentTo Incisor and (hasUpperLowerSelector some upperSelection)
+UpperIncisor SubClassOf Incisor
+UpperLip is Class
+UpperLobeOfLeftLung is Class
+UpperLobeOfLeftLung EquivalentTo Lobe and (hasUpperLowerSelector some upperSelection) and (isSpecificSolidDivisionOf some LeftLung)
+UpperLobeOfLeftLung SubClassOf Lobe
+UpperLobeOfRightLung is Class
+UpperLobeOfRightLung EquivalentTo Lobe and (hasUpperLowerSelector some upperSelection) and (isSpecificSolidDivisionOf some RightLung)
+UpperLobeOfRightLung SubClassOf Lobe
+UpperPoleOfTestis is Class
+UpperPoleOfTestis EquivalentTo Pole and (hasUpperLowerSelector some upperSelection) and (isSpecificSolidDivisionOf some Testis)
+UpperPoleOfTestis SubClassOf Pole
+Urachus is Class
+Ureter is Class
+UretericPeristalsis is Class
+UretericPeristalsis EquivalentTo Peristalsis and (isSpecificFunctionOf some Ureter)
+UretericPeristalsis SubClassOf Peristalsis
+UretericPlexus is Class
+UretericPlexus SubClassOf NAMEDNervePlexus
+UretericValve is Class
+UretericValve SubClassOf NAMEDValve
+UrethralSphincter is Class
+UrethralSphincter SubClassOf NAMEDSphincter,
+UrethralSphincter SubClassOf hasSpecificStructuralComponent some StriatedUrethralSphincterMuscle
+UrethralValve is Class
+UrethralValve SubClassOf NAMEDValve
+UrinaryBladder is Class
+Uroporphyrin is Class
+UroporphyrinogenIIICosynthetase is Class
+UroporphyrinogenIIICosynthetase SubClassOf NAMEDEnzyme,
+UroporphyrinogenIIICosynthetase SubClassOf hasFunction some
+UroporphyrinogenIIICosynthetase SubClassOf (Catalysing and (actsSpecificallyOn some
+UroporphyrinogenIIICosynthetase SubClassOf (AnabolicProcess and (actsSpecificallyOn some Uroporphyrin))))
+UterineHaemorrhage is Class
+UterineIsthmus is Class
+UterineIsthmus SubClassOf NAMEDIsthmus
+UterinePlexus is Class
+UterinePlexus SubClassOf NAMEDNervePlexus
+UterinePoleOfOvary is Class
+UterinePoleOfOvary SubClassOf PoleOfOvary
+UterineSeptum is Class
+UterineSeptum SubClassOf Septum,
+UterineSeptum SubClassOf hasAcquisitionMode some
+UterineSeptum SubClassOf (AcquisitionMode and (hasAbsoluteState some congenital)),
+UterineSeptum SubClassOf hasIntrinsicPathologicalStatus some pathological,
+UterineSeptum SubClassOf hasSpecificLocation some Uterus
+UterovaginalPlexus is Class
+UterovaginalPlexus SubClassOf NAMEDNervePlexus
+Uterus is Class
+UtriculoSaccularDuct is Class
+UtriculoSaccularDuct SubClassOf Duct
+Vaccinating is Class
+Vaccinating EquivalentTo AdministrationToPatient and (actsSpecificallyOn some Vaccine)
+Vaccinating SubClassOf AdministrationToPatient
+Vaccine is Class
+Vagina is Class
+VaginalAtrium is Class
+VaginalAtrium SubClassOf NAMEDAtrium
+VaginalPlexus is Class
+VaginalPlexus SubClassOf NAMEDNervePlexus
+VaginalSeptum is Class
+VaginalSeptum SubClassOf Septum,
+VaginalSeptum SubClassOf hasAcquisitionMode some
+VaginalSeptum SubClassOf (AcquisitionMode and (hasAbsoluteState some congenital)),
+VaginalSeptum SubClassOf hasIntrinsicPathologicalStatus some pathological,
+VaginalSeptum SubClassOf hasSpecificLocation some Vagina
+VaginalSoreness is Class
+VaginalSorenessSymptom is Class
+VaginalSorenessSymptom EquivalentTo VaginalSoreness and (playsConsultationRole some SymptomRole)
+VaginalSorenessSymptom SubClassOf VaginalSoreness
+VagusNerve is Class
+Valve is Class
+Valve SubClassOf GenericInternalStructure
+ValveInHeart is Class
+ValveInHeart SubClassOf NAMEDValve
+ValveOfInferiorVenaCava is Class
+ValveOfInferiorVenaCava EquivalentTo Valve and (isPartitiveConnectionOf some InferiorVenaCava)
+ValveOfInferiorVenaCava SubClassOf Valve
+ValveOfSuperiorVenaCava is Class
+ValveOfSuperiorVenaCava EquivalentTo Valve and (isPartitiveConnectionOf some SuperiorVenaCava)
+ValveOfSuperiorVenaCava SubClassOf Valve,
+ValveOfSuperiorVenaCava SubClassOf hasAbnormalityStatus some variant
+ValveOfVenaCava is Class
+ValveOfVenaCava EquivalentTo Valve and (isPartitiveConnectionOf some VenaCava)
+ValveOfVenaCava SubClassOf Valve
+ValvulaVenosa is Class
+ValvulaVenosa SubClassOf NAMEDValve
+VaricoseVein is Class
+VaricoseVein EquivalentTo Vein and (isSpecificLocationOf some VarixLesion)
+VaricoseVein SubClassOf Vein
+VarixLesion is Class
+VascularGraft is Class
+VascularGraft SubClassOf BloodVessel
+VascularStructureOfAdrenalGland is Class
+VascularStructureOfAdrenalGland SubClassOf BloodVessel
+VascularStructureOfKidney is Class
+VascularStructureOfKidney SubClassOf BloodVessel
+VascularStructureOfLiver is Class
+VascularStructureOfLiver SubClassOf BloodVessel
+VascularStructureOfPancreas is Class
+VascularStructureOfPancreas SubClassOf BloodVessel
+VascularStructureOfPinealGland is Class
+VascularStructureOfPinealGland SubClassOf BloodVessel
+VascularStructureOfPituitaryGland is Class
+VascularStructureOfPituitaryGland SubClassOf BloodVessel
+VascularStructureOfThymusGland is Class
+VascularStructureOfThymusGland SubClassOf BloodVessel
+VascularStructureOfThyroidGland is Class
+VascularStructureOfThyroidGland SubClassOf BloodVessel
+VascularStructureServingOrgan is Class
+VascularStructureServingOrgan SubClassOf BloodVessel
+VascularStructureWithinOrgan is Class
+VascularStructureWithinOrgan SubClassOf BloodVessel
+VascularSystem is Class
+VascularisedPedicle is Class
+VascularisedPedicle SubClassOf Pedicle
+VasculatureOfNose is Class
+VasculatureOfNose SubClassOf BloodVessel
+Vein is Class
+Vein SubClassOf BloodVessel
+VenaCava is Class
+VenousPlexus is Class
+VenousPlexus SubClassOf NAMEDVascularPlexus
+Ventricle is Class
+Ventricle SubClassOf GenericInternalStructure
+VentricularMyocardialStructure is Class
+VentricularMyocardialStructure EquivalentTo CardiacMuscle and (IsDivisionOf some HeartVentricle)
+VentricularMyocardialStructure SubClassOf CardiacMuscle
+VentricularMyocardiumAsAWhole is Class
+VentricularMyocardiumAsAWhole SubClassOf CardiacMuscle
+Venule is Class
+Venule SubClassOf BloodVessel
+VerbalStatement is Class
+Vermis is Class
+Vermis SubClassOf GenericInternalStructure
+Vertebra is Class
+VertebralNotch is Class
+VertebralNotch EquivalentTo Notch and (isSolidDivisionOf some VertebralPedicle)
+VertebralNotch SubClassOf Notch
+VertebralPedicle is Class
+VesicalFascia is Class
+VesicalFascia SubClassOf NAMEDFascia
+VesselOfCerebrovascularCirculation is Class
+VesselOfCerebrovascularCirculation SubClassOf BloodVessel
+VesselOfDigestiveViscera is Class
+VesselOfDigestiveViscera SubClassOf BloodVessel
+VestibularGanglion is Class
+VestibularGanglion SubClassOf NAMEDGanglion
+VestibularLigament is Class
+Vestibule is Class
+Vestibule SubClassOf GenericInternalStructure
+VestibuleOfMouth is Class
+VestibuleOfMouth EquivalentTo Vestibule and (isStructuralComponentOf some Mouth)
+VestibuleOfMouth SubClassOf Vestibule
+VisualAxis is Class
+VisualPathway is Class
+VisualPathway SubClassOf NeuralPathway
+VitreousMembrane is Class
+VitreousMembrane SubClassOf NAMEDMembrane
+Volume is Class
+VoluntaryMovement is Class
+VulvalSoreness is Class
+VulvalSoreness EquivalentTo Soreness and (actsSpecificallyOn some
+VulvalSoreness EquivalentTo (PainSignal and (isConsequenceOf some
+VulvalSoreness EquivalentTo (NerveConduction and (hasUniqueAssociatedDisplacement some
+VulvalSoreness EquivalentTo (Displacement and (isDisplacementFrom some FemaleExternalGenitalia)))))))
+VulvalSoreness SubClassOf Soreness
+WhiteColumn is Class
+WhiteColumn SubClassOf ColumnOfSpinalCord
+XStrabismus is Class
+XStrabismus SubClassOf DivergentSquint
+ZonaFasciculata is Class
+ZonaGlomerulosa is Class
+ZonaReticularis is Class
+actuallyHollowTopology is Class
+acute is Class
+anteriorSelection is Class
+atLeastPaired is Class
+beneficial is Class
+beneficial SubClassOf BeneficialStatus
+bodyCentralSelection is Class
+bodyCentralSelection SubClassOf CentralPeripheralSelector
+bodyPeripherySelection is Class
+bodyPeripherySelection SubClassOf CentralPeripheralSelector
+congenital is Class
+dystonicPersonality is Class
+dystonicPersonality SubClassOf PersonalityTypeState
+exactlyPaired is Class
+first is Class
+fourth is Class
+inappropriate is Class
+ineffective is Class
+inferiorSelection is Class
+internal is Class
+involuntary is Class
+irregularlyRepeating is Class
+lateralSelection is Class
+leftRightPaired is Class
+leftSelection is Class
+lowLevel is Class
+lowerSelection is Class
+maleSex is Class
+medialSelection is Class
+middleSelection is Class
+mirrorImaged is Class
+nonNormal is Class
+pathological is Class
+posteriorSelection is Class
+randomlyRepeating is Class
+rectangular is Class
+rightSelection is Class
+solidTopology is Class
+superiorSelection is Class
+syntonicPersonality is Class
+syntonicPersonality SubClassOf PersonalityTypeState
+tubular is Class
+tubularTopology is Class
+unpaired is Class
+upperSelection is Class
+variant is Class
+www.w3.org/2002/07/# is Class

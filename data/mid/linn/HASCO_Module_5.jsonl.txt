@@ -1,0 +1,862 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(string,is,Datatype).
+predicate(SIO_000008,is,ObjectProperty).
+predicate(SIO_000011,is,ObjectProperty).
+predicate(SIO_000020,is,ObjectProperty).
+predicate(SIO_000028,is,ObjectProperty).
+predicate(SIO_000053,is,ObjectProperty).
+predicate(SIO_000059,is,ObjectProperty).
+predicate(SIO_000059,Characteristics,Irreflexive).
+predicate(SIO_000059,Domain,SIO_000616).
+predicate(SIO_000059,InverseOf,SIO_000095).
+predicate(SIO_000062,is,ObjectProperty).
+predicate(SIO_000068,is,ObjectProperty).
+predicate(SIO_000093,is,ObjectProperty).
+predicate(SIO_000095,is,ObjectProperty).
+predicate(SIO_000095,InverseOf,SIO_000059).
+predicate(SIO_000210,is,ObjectProperty).
+predicate(SIO_000212,is,ObjectProperty).
+predicate(SIO_000213,is,ObjectProperty).
+predicate(SIO_000214,is,ObjectProperty).
+predicate(SIO_000217,is,ObjectProperty).
+predicate(SIO_000272,is,ObjectProperty).
+predicate(SIO_000273,is,ObjectProperty).
+predicate(SIO_000332,is,ObjectProperty).
+predicate(SIO_000338,is,ObjectProperty).
+predicate(SIO_000355,is,ObjectProperty).
+predicate(SIO_000369,is,ObjectProperty).
+predicate(SIO_000420,is,ObjectProperty).
+predicate(SIO_000422,is,ObjectProperty).
+predicate(SIO_000422,Characteristics,Transitive).
+predicate(SIO_000422,Domain,SIO_000275).
+predicate(SIO_000422,Range,SIO_000275).
+predicate(SIO_000422,InverseOf,SIO_000424).
+predicate(SIO_000424,is,ObjectProperty).
+predicate(SIO_000424,Characteristics,Transitive).
+predicate(SIO_000424,Domain,SIO_000275).
+predicate(SIO_000424,Range,SIO_000275).
+predicate(SIO_000424,InverseOf,SIO_000422).
+predicate(SIO_000427,is,ObjectProperty).
+predicate(SIO_000427,SubPropertyOf,SIO_000424).
+predicate(SIO_000477,is,ObjectProperty).
+predicate(SIO_000477,SubPropertyOf,SIO_000422).
+predicate(SIO_000482,is,ObjectProperty).
+predicate(SIO_000482,Characteristics,Symmetric).
+predicate(SIO_000482,Domain,SIO_000275).
+predicate(SIO_000482,Range,SIO_000275).
+predicate(SIO_000484,is,ObjectProperty).
+predicate(SIO_000484,SubPropertyOf,SIO_000482).
+predicate(SIO_000490,is,ObjectProperty).
+predicate(SIO_000490,SubPropertyOf,SIO_000482).
+predicate(SIO_000491,is,ObjectProperty).
+predicate(SIO_000491,SubPropertyOf,SIO_000482).
+predicate(SIO_000563,is,ObjectProperty).
+predicate(SIO_000628,is,ObjectProperty).
+predicate(SIO_000631,is,ObjectProperty).
+predicate(SIO_000632,is,ObjectProperty).
+predicate(SIO_000668,is,ObjectProperty).
+predicate(SIO_000671,is,ObjectProperty).
+predicate(SIO_000674,is,ObjectProperty).
+predicate(SIO_000709,is,ObjectProperty).
+predicate(SIO_000975,is,ObjectProperty).
+predicate(SIO_001277,is,ObjectProperty).
+predicate(SIO_001277,Domain,SIO_000089).
+predicate(SIO_001277,InverseOf,SIO_001278).
+predicate(SIO_001278,is,ObjectProperty).
+predicate(SIO_001278,InverseOf,SIO_001277).
+predicate(SIO_000300,is,DataProperty).
+predicate(TextFieldEditor,is,Class).
+predicate(Cohort,is,Class).
+predicate(Cohort,SubClassOf,SIO_000620).
+predicate(Configurator,is,Class).
+predicate(Configurator,SubClassOf,Person).
+predicate(PossibleValue,is,Class).
+predicate(PossibleValue,SubClassOf,SIO_001259).
+predicate(QualityValue,is,Class).
+predicate(QualityValue,SubClassOf,SIO_000138).
+predicate(QualityVariable,is,Class).
+predicate(QualityVariable,SubClassOf,SIO_000138).
+predicate(QuantityVariable,is,Class).
+predicate(QuantityVariable,SubClassOf,SIO_000138).
+predicate(InstrumentOperatingMode,is,Class).
+predicate(InstrumentOperatingMode,SubClassOf,SIO_000510).
+predicate(SIO_000000,is,Class).
+predicate(SIO_000006,is,Class).
+predicate(SIO_000009,is,Class).
+predicate(SIO_000009,SubClassOf,SIO_000015).
+predicate(SIO_000010,is,Class).
+predicate(SIO_000010,SubClassOf,SIO_000009,).
+predicate(SIO_000010,SubClassOf,SIO_000059 only SIO_000776).
+predicate(SIO_000012,is,Class).
+predicate(SIO_000012,SubClassOf,SIO_000620).
+predicate(SIO_000015,is,Class).
+predicate(SIO_000015,SubClassOf,SIO_000776,).
+predicate(SIO_000015,SubClassOf,SIO_000053 only SIO_000015).
+predicate(SIO_000030,is,Class).
+predicate(SIO_000067,is,Class).
+predicate(SIO_000067,SubClassOf,SIO_000602,).
+predicate(SIO_000067,SubClassOf,SIO_000059 only SIO_000115).
+predicate(SIO_000069,is,Class).
+predicate(SIO_000069,SubClassOf,SIO_000602,).
+predicate(SIO_000069,SubClassOf,SIO_000062 some).
+predicate(SIO_000069,SubClassOf,(SIO_000006 and (SIO_000355 some SIO_000337))).
+predicate(SIO_000072,is,Class).
+predicate(SIO_000075,is,Class).
+predicate(SIO_000075,SubClassOf,SIO_000015).
+predicate(SIO_000078,is,Class).
+predicate(SIO_000078,SubClassOf,SIO_000015).
+predicate(SIO_000079,is,Class).
+predicate(SIO_000079,SubClassOf,SIO_000078).
+predicate(SIO_000080,is,Class).
+predicate(SIO_000080,SubClassOf,SIO_001194).
+predicate(SIO_000080,DisjointWith,SIO_000448).
+predicate(SIO_000081,is,Class).
+predicate(SIO_000081,SubClassOf,SIO_000080).
+predicate(SIO_000082,is,Class).
+predicate(SIO_000082,SubClassOf,SIO_000081).
+predicate(SIO_000083,is,Class).
+predicate(SIO_000083,SubClassOf,SIO_000904).
+predicate(SIO_000085,is,Class).
+predicate(SIO_000085,SubClassOf,SIO_000113).
+predicate(SIO_000087,is,Class).
+predicate(SIO_000087,SubClassOf,SIO_000148).
+predicate(SIO_000088,is,Class).
+predicate(SIO_000088,SubClassOf,SIO_000148).
+predicate(SIO_000089,is,Class).
+predicate(SIO_000089,EquivalentTo,SIO_000069 and (SIO_000059 only SIO_000069)).
+predicate(SIO_000089,SubClassOf,SIO_000069,).
+predicate(SIO_000089,SubClassOf,SIO_000213 some SIO_000396).
+predicate(SIO_000090,is,Class).
+predicate(SIO_000090,SubClassOf,SIO_000136,).
+predicate(SIO_000090,SubClassOf,SIO_000338 some SIO_000000,).
+predicate(SIO_000090,SubClassOf,SIO_000369 some SIO_000337,).
+predicate(SIO_000090,SubClassOf,SIO_000420 some SIO_000015).
+predicate(SIO_000091,is,Class).
+predicate(SIO_000091,SubClassOf,SIO_000090).
+predicate(SIO_000094,is,Class).
+predicate(SIO_000094,SubClassOf,SIO_000075).
+predicate(SIO_000097,is,Class).
+predicate(SIO_000097,SubClassOf,SIO_000602).
+predicate(SIO_000098,is,Class).
+predicate(SIO_000098,SubClassOf,SIO_000097).
+predicate(SIO_000099,is,Class).
+predicate(SIO_000099,SubClassOf,SIO_000097).
+predicate(SIO_000100,is,Class).
+predicate(SIO_000100,SubClassOf,SIO_000097).
+predicate(SIO_000101,is,Class).
+predicate(SIO_000101,SubClassOf,SIO_000097).
+predicate(SIO_000102,is,Class).
+predicate(SIO_000102,SubClassOf,SIO_000101).
+predicate(SIO_000103,is,Class).
+predicate(SIO_000103,SubClassOf,SIO_000097).
+predicate(SIO_000104,is,Class).
+predicate(SIO_000104,SubClassOf,SIO_000078).
+predicate(SIO_000105,is,Class).
+predicate(SIO_000105,SubClassOf,SIO_000612,).
+predicate(SIO_000105,SubClassOf,SIO_000210 some SIO_000000,).
+predicate(SIO_000105,SubClassOf,SIO_000332 some SIO_000000).
+predicate(SIO_000108,is,Class).
+predicate(SIO_000108,SubClassOf,SIO_000078).
+predicate(SIO_000110,is,Class).
+predicate(SIO_000110,SubClassOf,SIO_000651,).
+predicate(SIO_000110,SubClassOf,SIO_000273 some SIO_000113).
+predicate(SIO_000111,is,Class).
+predicate(SIO_000111,SubClassOf,SIO_000171).
+predicate(SIO_000113,is,Class).
+predicate(SIO_000113,SubClassOf,SIO_000483).
+predicate(SIO_000114,is,Class).
+predicate(SIO_000114,SubClassOf,SIO_000078,).
+predicate(SIO_000114,SubClassOf,SIO_000028 some SIO_001040,).
+predicate(SIO_000114,SubClassOf,SIO_000273 some SIO_000108).
+predicate(SIO_000115,is,Class).
+predicate(SIO_000115,SubClassOf,SIO_000179).
+predicate(SIO_000116,is,Class).
+predicate(SIO_000116,SubClassOf,SIO_000179).
+predicate(SIO_000122,is,Class).
+predicate(SIO_000122,SubClassOf,SIO_000342).
+predicate(SIO_000123,is,Class).
+predicate(SIO_000123,SubClassOf,SIO_000342).
+predicate(SIO_000124,is,Class).
+predicate(SIO_000124,SubClassOf,SIO_000342).
+predicate(SIO_000125,is,Class).
+predicate(SIO_000125,SubClassOf,SIO_000342).
+predicate(SIO_000126,is,Class).
+predicate(SIO_000126,SubClassOf,SIO_000342).
+predicate(SIO_000127,is,Class).
+predicate(SIO_000127,SubClassOf,SIO_000094).
+predicate(SIO_000129,is,Class).
+predicate(SIO_000129,SubClassOf,SIO_000148).
+predicate(SIO_000130,is,Class).
+predicate(SIO_000130,SubClassOf,SIO_000075).
+predicate(SIO_000131,is,Class).
+predicate(SIO_000131,SubClassOf,SIO_000130).
+predicate(SIO_000131,DisjointWith,SIO_001197).
+predicate(SIO_000133,is,Class).
+predicate(SIO_000133,SubClassOf,SIO_000275).
+predicate(SIO_000135,is,Class).
+predicate(SIO_000135,SubClassOf,SIO_000136).
+predicate(SIO_000136,is,Class).
+predicate(SIO_000136,SubClassOf,SIO_000078,).
+predicate(SIO_000136,SubClassOf,SIO_000563 only SIO_000000).
+predicate(SIO_000137,is,Class).
+predicate(SIO_000137,SubClassOf,SIO_000326).
+predicate(SIO_000138,is,Class).
+predicate(SIO_000138,SubClassOf,SIO_000289).
+predicate(SIO_000140,is,Class).
+predicate(SIO_000140,SubClassOf,SIO_000101).
+predicate(SIO_000144,is,Class).
+predicate(SIO_000144,SubClassOf,SIO_000920).
+predicate(SIO_000147,is,Class).
+predicate(SIO_000147,SubClassOf,SIO_000133).
+predicate(SIO_000148,is,Class).
+predicate(SIO_000148,SubClassOf,SIO_000651).
+predicate(SIO_000150,is,Class).
+predicate(SIO_000150,SubClassOf,SIO_000289,).
+predicate(SIO_000150,SubClassOf,SIO_000059 some SIO_000000).
+predicate(SIO_000151,is,Class).
+predicate(SIO_000151,SubClassOf,SIO_000148).
+predicate(SIO_000152,is,Class).
+predicate(SIO_000152,SubClassOf,SIO_000148).
+predicate(SIO_000169,is,Class).
+predicate(SIO_000169,SubClassOf,SIO_000148).
+predicate(SIO_000170,is,Class).
+predicate(SIO_000170,SubClassOf,SIO_000148).
+predicate(SIO_000171,is,Class).
+predicate(SIO_000171,SubClassOf,SIO_000651).
+predicate(SIO_000173,is,Class).
+predicate(SIO_000173,SubClassOf,SIO_000287).
+predicate(SIO_000174,is,Class).
+predicate(SIO_000174,SubClassOf,SIO_000171).
+predicate(SIO_000176,is,Class).
+predicate(SIO_000176,SubClassOf,SIO_000171).
+predicate(SIO_000177,is,Class).
+predicate(SIO_000177,SubClassOf,SIO_000944).
+predicate(SIO_000179,is,Class).
+predicate(SIO_000179,SubClassOf,SIO_000275).
+predicate(SIO_000180,is,Class).
+predicate(SIO_000180,SubClassOf,SIO_000179).
+predicate(SIO_000181,is,Class).
+predicate(SIO_000181,SubClassOf,SIO_000116).
+predicate(SIO_000185,is,Class).
+predicate(SIO_000185,SubClassOf,SIO_000179).
+predicate(SIO_000220,is,Class).
+predicate(SIO_000220,SubClassOf,SIO_000238).
+predicate(SIO_000237,is,Class).
+predicate(SIO_000237,SubClassOf,SIO_000179).
+predicate(SIO_000238,is,Class).
+predicate(SIO_000238,SubClassOf,SIO_000075).
+predicate(SIO_000239,is,Class).
+predicate(SIO_000239,SubClassOf,SIO_000238).
+predicate(SIO_000256,is,Class).
+predicate(SIO_000256,SubClassOf,SIO_000136,).
+predicate(SIO_000256,SubClassOf,SIO_000217 some SIO_000268,).
+predicate(SIO_000256,SubClassOf,SIO_000332 some SIO_000000).
+predicate(SIO_000259,is,Class).
+predicate(SIO_000259,SubClassOf,SIO_000256).
+predicate(SIO_000261,is,Class).
+predicate(SIO_000261,SubClassOf,SIO_000256).
+predicate(SIO_000262,is,Class).
+predicate(SIO_000262,SubClassOf,SIO_000256).
+predicate(SIO_000268,is,Class).
+predicate(SIO_000275,is,Class).
+predicate(SIO_000275,SubClassOf,SIO_000078,).
+predicate(SIO_000275,SubClassOf,SIO_000114 or SIO_000483).
+predicate(SIO_000280,is,Class).
+predicate(SIO_000280,SubClassOf,SIO_000238).
+predicate(SIO_000281,is,Class).
+predicate(SIO_000281,SubClassOf,SIO_000238).
+predicate(SIO_000282,is,Class).
+predicate(SIO_000282,SubClassOf,SIO_000280).
+predicate(SIO_000284,is,Class).
+predicate(SIO_000284,SubClassOf,SIO_000256).
+predicate(SIO_000285,is,Class).
+predicate(SIO_000285,SubClassOf,SIO_000012).
+predicate(SIO_000287,is,Class).
+predicate(SIO_000287,SubClassOf,SIO_000009).
+predicate(SIO_000289,is,Class).
+predicate(SIO_000289,SubClassOf,SIO_000075,).
+predicate(SIO_000289,SubClassOf,SIO_000059 only SIO_000000).
+predicate(SIO_000295,is,Class).
+predicate(SIO_000295,SubClassOf,SIO_000616).
+predicate(SIO_000297,is,Class).
+predicate(SIO_000297,SubClassOf,SIO_001194).
+predicate(SIO_000298,is,Class).
+predicate(SIO_000298,SubClassOf,SIO_000651,).
+predicate(SIO_000298,SubClassOf,SIO_000068 some SIO_000651).
+predicate(SIO_000299,is,Class).
+predicate(SIO_000299,SubClassOf,SIO_000298).
+predicate(SIO_000302,is,Class).
+predicate(SIO_000302,SubClassOf,SIO_000148).
+predicate(SIO_000304,is,Class).
+predicate(SIO_000304,SubClassOf,SIO_000148).
+predicate(SIO_000306,is,Class).
+predicate(SIO_000306,SubClassOf,SIO_000148).
+predicate(SIO_000315,is,Class).
+predicate(SIO_000315,SubClassOf,SIO_000090).
+predicate(SIO_000326,is,Class).
+predicate(SIO_000326,SubClassOf,SIO_000275).
+predicate(SIO_000337,is,Class).
+predicate(SIO_000337,SubClassOf,SIO_000256).
+predicate(SIO_000342,is,Class).
+predicate(SIO_000342,EquivalentTo,SIO_000275 and (SIO_000272 some SIO_000275)).
+predicate(SIO_000342,SubClassOf,SIO_000275,).
+predicate(SIO_000342,SubClassOf,SIO_000272 some SIO_000275).
+predicate(SIO_000359,is,Class).
+predicate(SIO_000359,SubClassOf,SIO_001053).
+predicate(SIO_000360,is,Class).
+predicate(SIO_000360,SubClassOf,SIO_000256).
+predicate(SIO_000367,is,Class).
+predicate(SIO_000367,SubClassOf,SIO_000075).
+predicate(SIO_000368,is,Class).
+predicate(SIO_000368,SubClassOf,SIO_000075).
+predicate(SIO_000396,is,Class).
+predicate(SIO_000396,SubClassOf,SIO_001194).
+predicate(SIO_000400,is,Class).
+predicate(SIO_000401,is,Class).
+predicate(SIO_000402,is,Class).
+predicate(SIO_000403,is,Class).
+predicate(SIO_000403,SubClassOf,SIO_000620).
+predicate(SIO_000413,is,Class).
+predicate(SIO_000415,is,Class).
+predicate(SIO_000415,SubClassOf,SIO_000413).
+predicate(SIO_000419,is,Class).
+predicate(SIO_000419,SubClassOf,SIO_000080).
+predicate(SIO_000437,is,Class).
+predicate(SIO_000437,EquivalentTo,SIO_000507 and (SIO_000369 only).
+predicate(SIO_000437,EquivalentTo,(SIO_000400 or SIO_000401)) and (SIO_000369 exactly 1 SIO_000400) and (SIO_000369 exactly 1 SIO_000401)).
+predicate(SIO_000437,SubClassOf,SIO_000507).
+predicate(SIO_000440,is,Class).
+predicate(SIO_000440,EquivalentTo,SIO_000507 and (SIO_000369 exactly 1 SIO_000400) and (SIO_000369 exactly 1 SIO_000401) and (SIO_000369 exactly 1 SIO_000402)).
+predicate(SIO_000440,SubClassOf,SIO_000507).
+predicate(SIO_000441,is,Class).
+predicate(SIO_000441,EquivalentTo,SIO_000507 and (SIO_000369 only SIO_000402) and (SIO_000369 exactly 1 SIO_000402)).
+predicate(SIO_000441,SubClassOf,SIO_000507).
+predicate(SIO_000448,is,Class).
+predicate(SIO_000448,SubClassOf,SIO_001194,).
+predicate(SIO_000448,SubClassOf,SIO_000093 some SIO_000080).
+predicate(SIO_000448,DisjointWith,SIO_000080).
+predicate(SIO_000449,is,Class).
+predicate(SIO_000449,SubClassOf,SIO_000448).
+predicate(SIO_000449,DisjointWith,SIO_000468).
+predicate(SIO_000464,is,Class).
+predicate(SIO_000464,SubClassOf,SIO_000150).
+predicate(SIO_000465,is,Class).
+predicate(SIO_000465,SubClassOf,SIO_000507,).
+predicate(SIO_000465,SubClassOf,SIO_000020 some SIO_000000).
+predicate(SIO_000468,is,Class).
+predicate(SIO_000468,SubClassOf,SIO_000448).
+predicate(SIO_000468,DisjointWith,SIO_000449).
+predicate(SIO_000472,is,Class).
+predicate(SIO_000472,SubClassOf,SIO_000069).
+predicate(SIO_000483,is,Class).
+predicate(SIO_000483,SubClassOf,SIO_000078,).
+predicate(SIO_000483,SubClassOf,SIO_000273 min 2 SIO_000114).
+predicate(SIO_000493,is,Class).
+predicate(SIO_000493,SubClassOf,SIO_000113).
+predicate(SIO_000494,is,Class).
+predicate(SIO_000500,is,Class).
+predicate(SIO_000500,SubClassOf,SIO_001335).
+predicate(SIO_000501,is,Class).
+predicate(SIO_000502,is,Class).
+predicate(SIO_000502,SubClassOf,SIO_000506,).
+predicate(SIO_000502,SubClassOf,SIO_000273 some SIO_000501).
+predicate(SIO_000503,is,Class).
+predicate(SIO_000503,SubClassOf,SIO_000506,).
+predicate(SIO_000503,SubClassOf,SIO_000068 some SIO_000505).
+predicate(SIO_000504,is,Class).
+predicate(SIO_000504,SubClassOf,SIO_000506,).
+predicate(SIO_000504,SubClassOf,SIO_000028 some SIO_000503).
+predicate(SIO_000505,is,Class).
+predicate(SIO_000505,SubClassOf,SIO_000506).
+predicate(SIO_000506,is,Class).
+predicate(SIO_000506,SubClassOf,SIO_000015).
+predicate(SIO_000507,is,Class).
+predicate(SIO_000507,SubClassOf,SIO_000506).
+predicate(SIO_000508,is,Class).
+predicate(SIO_000508,SubClassOf,SIO_000532).
+predicate(SIO_000509,is,Class).
+predicate(SIO_000509,SubClassOf,SIO_000532).
+predicate(SIO_000510,is,Class).
+predicate(SIO_000510,SubClassOf,SIO_000612,).
+predicate(SIO_000510,SubClassOf,SIO_000210 some SIO_000000).
+predicate(SIO_000511,is,Class).
+predicate(SIO_000511,EquivalentTo,SIO_000512 or SIO_000516 or SIO_000539).
+predicate(SIO_000511,SubClassOf,SIO_000608).
+predicate(SIO_000512,is,Class).
+predicate(SIO_000512,SubClassOf,SIO_000511).
+predicate(SIO_000513,is,Class).
+predicate(SIO_000515,is,Class).
+predicate(SIO_000515,SubClassOf,SIO_000513).
+predicate(SIO_000516,is,Class).
+predicate(SIO_000516,SubClassOf,SIO_000511).
+predicate(SIO_000517,is,Class).
+predicate(SIO_000517,SubClassOf,SIO_000505).
+predicate(SIO_000518,is,Class).
+predicate(SIO_000518,SubClassOf,SIO_000517).
+predicate(SIO_000520,is,Class).
+predicate(SIO_000520,SubClassOf,SIO_000505).
+predicate(SIO_000532,is,Class).
+predicate(SIO_000532,SubClassOf,SIO_000507).
+predicate(SIO_000534,is,Class).
+predicate(SIO_000534,SubClassOf,SIO_000511).
+predicate(SIO_000535,is,Class).
+predicate(SIO_000535,SubClassOf,SIO_000511).
+predicate(SIO_000539,is,Class).
+predicate(SIO_000539,SubClassOf,SIO_000511).
+predicate(SIO_000545,is,Class).
+predicate(SIO_000545,SubClassOf,SIO_000506,).
+predicate(SIO_000545,SubClassOf,SIO_000369 min 2 SIO_000512).
+predicate(SIO_000546,is,Class).
+predicate(SIO_000546,SubClassOf,SIO_000506,).
+predicate(SIO_000546,SubClassOf,SIO_000616,).
+predicate(SIO_000546,SubClassOf,SIO_000059 only SIO_000507).
+predicate(SIO_000565,is,Class).
+predicate(SIO_000565,SubClassOf,SIO_000566).
+predicate(SIO_000566,is,Class).
+predicate(SIO_000566,SubClassOf,SIO_000368).
+predicate(SIO_000567,is,Class).
+predicate(SIO_000567,SubClassOf,SIO_000569).
+predicate(SIO_000568,is,Class).
+predicate(SIO_000568,SubClassOf,SIO_000569).
+predicate(SIO_000569,is,Class).
+predicate(SIO_000569,SubClassOf,SIO_000368).
+predicate(SIO_000585,is,Class).
+predicate(SIO_000585,SubClassOf,SIO_000256).
+predicate(SIO_000600,is,Class).
+predicate(SIO_000602,is,Class).
+predicate(SIO_000602,SubClassOf,SIO_000015).
+predicate(SIO_000608,is,Class).
+predicate(SIO_000608,SubClassOf,SIO_000506).
+predicate(SIO_000612,is,Class).
+predicate(SIO_000612,SubClassOf,SIO_000015,).
+predicate(SIO_000612,SubClassOf,SIO_000632 some SIO_000000).
+predicate(SIO_000613,is,Class).
+predicate(SIO_000616,is,Class).
+predicate(SIO_000616,SubClassOf,SIO_000289,).
+predicate(SIO_000616,SubClassOf,SIO_000059 some SIO_000000).
+predicate(SIO_000617,is,Class).
+predicate(SIO_000617,SubClassOf,SIO_000289,).
+predicate(SIO_000617,SubClassOf,SIO_000059 exactly 0 SIO_000000).
+predicate(SIO_000618,is,Class).
+predicate(SIO_000618,SubClassOf,SIO_000090).
+predicate(SIO_000619,is,Class).
+predicate(SIO_000619,SubClassOf,SIO_000012).
+predicate(SIO_000620,is,Class).
+predicate(SIO_000620,SubClassOf,SIO_000010,).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000625,is,Class).
+predicate(SIO_000625,SubClassOf,SIO_000600).
+predicate(SIO_000626,is,Class).
+predicate(SIO_000626,SubClassOf,SIO_000625).
+predicate(SIO_000639,is,Class).
+predicate(SIO_000647,is,Class).
+predicate(SIO_000647,SubClassOf,SIO_000510,).
+predicate(SIO_000647,SubClassOf,SIO_000632 some SIO_000006).
+predicate(SIO_000647,DisjointWith,SIO_000648).
+predicate(SIO_000648,is,Class).
+predicate(SIO_000648,SubClassOf,SIO_000510,).
+predicate(SIO_000648,SubClassOf,Entity).
+predicate(SIO_000648,DisjointWith,SIO_000647).
+predicate(SIO_000651,is,Class).
+predicate(SIO_000651,SubClassOf,SIO_000078).
+predicate(SIO_000661,is,Class).
+predicate(SIO_000661,SubClassOf,SIO_000415).
+predicate(SIO_000662,is,Class).
+predicate(SIO_000662,SubClassOf,SIO_000415).
+predicate(SIO_000663,is,Class).
+predicate(SIO_000663,SubClassOf,SIO_000415).
+predicate(SIO_000664,is,Class).
+predicate(SIO_000664,SubClassOf,SIO_000415).
+predicate(SIO_000665,is,Class).
+predicate(SIO_000665,SubClassOf,SIO_000415).
+predicate(SIO_000666,is,Class).
+predicate(SIO_000666,SubClassOf,SIO_000415).
+predicate(SIO_000675,is,Class).
+predicate(SIO_000683,is,Class).
+predicate(SIO_000683,SubClassOf,SIO_000256).
+predicate(SIO_000688,is,Class).
+predicate(SIO_000688,SubClassOf,SIO_000012).
+predicate(SIO_000690,is,Class).
+predicate(SIO_000692,is,Class).
+predicate(SIO_000692,SubClassOf,SIO_000702,).
+predicate(SIO_000692,SubClassOf,SIO_000709 some SIO_000494).
+predicate(SIO_000692,DisjointWith,SIO_000694).
+predicate(SIO_000693,is,Class).
+predicate(SIO_000693,SubClassOf,SIO_000012).
+predicate(SIO_000694,is,Class).
+predicate(SIO_000694,DisjointWith,SIO_000692).
+predicate(SIO_000702,is,Class).
+predicate(SIO_000728,is,Class).
+predicate(SIO_000728,SubClassOf,SIO_000730).
+predicate(SIO_000730,is,Class).
+predicate(SIO_000730,SubClassOf,SIO_000115).
+predicate(SIO_000740,is,Class).
+predicate(SIO_000740,SubClassOf,SIO_000608).
+predicate(SIO_000741,is,Class).
+predicate(SIO_000741,SubClassOf,SIO_000465).
+predicate(SIO_000750,is,Class).
+predicate(SIO_000750,SubClassOf,SIO_000602).
+predicate(SIO_000752,is,Class).
+predicate(SIO_000752,SubClassOf,SIO_000602,).
+predicate(SIO_000752,SubClassOf,SIO_000053 some SIO_000755,).
+predicate(SIO_000752,SubClassOf,SIO_000671 some SIO_000115).
+predicate(SIO_000753,is,Class).
+predicate(SIO_000753,SubClassOf,SIO_000602,).
+predicate(SIO_000753,SubClassOf,SIO_000338 only).
+predicate(Literal) and (SIO_000300 only www.w3.org/2000/01/-schema#,is,(SIO_000755 and (SIO_000300 some www.w3.org/2000/01/-schema#).
+predicate(Literal) and (SIO_000300 only www.w3.org/2000/01/-schema#,is,SIO_000008 min 0 SIO_000116).
+predicate(SIO_000754,is,Class).
+predicate(SIO_000754,SubClassOf,SIO_000602,).
+predicate(SIO_000754,SubClassOf,SIO_000093 some SIO_000750).
+predicate(SIO_000755,is,Class).
+predicate(SIO_000755,SubClassOf,SIO_000602,).
+predicate(SIO_000755,SubClassOf,SIO_000628 some SIO_000000).
+predicate(SIO_000756,is,Class).
+predicate(SIO_000756,SubClassOf,SIO_000602,).
+predicate(SIO_000756,SubClassOf,SIO_000093 some SIO_000750).
+predicate(SIO_000757,is,Class).
+predicate(SIO_000757,SubClassOf,SIO_000753,).
+predicate(SIO_000757,SubClassOf,SIO_000093 some SIO_000754).
+predicate(SIO_000759,is,Class).
+predicate(SIO_000759,SubClassOf,SIO_000755,).
+predicate(SIO_000759,SubClassOf,SIO_000008 some SIO_000675).
+predicate(SIO_000760,is,Class).
+predicate(SIO_000760,SubClassOf,SIO_000755).
+predicate(SIO_000761,is,Class).
+predicate(SIO_000761,SubClassOf,SIO_000755,).
+predicate(SIO_000761,SubClassOf,SIO_000212 some SIO_000755).
+predicate(SIO_000762,is,Class).
+predicate(SIO_000762,SubClassOf,SIO_000602,).
+predicate(SIO_000762,SubClassOf,SIO_000369 some SIO_000753,).
+predicate(Literal,is,SIO_000300 some www.w3.org/2000/01/-schema#).
+predicate(SIO_000763,is,Class).
+predicate(SIO_000763,SubClassOf,SIO_000762,).
+predicate(SIO_000763,SubClassOf,not (SIO_000300 value "null"),).
+predicate(SIO_000763,SubClassOf,SIO_000674 some SIO_000752).
+predicate(SIO_000764,is,Class).
+predicate(SIO_000764,SubClassOf,SIO_000762,).
+predicate(SIO_000764,SubClassOf,SIO_000631 some SIO_000762).
+predicate(SIO_000776,is,Class).
+predicate(SIO_000780,is,Class).
+predicate(SIO_000780,SubClassOf,SIO_000690).
+predicate(SIO_000785,is,Class).
+predicate(SIO_000785,SubClassOf,SIO_000136).
+predicate(SIO_000786,is,Class).
+predicate(SIO_000786,SubClassOf,SIO_000078).
+predicate(SIO_000859,is,Class).
+predicate(SIO_000859,SubClassOf,SIO_000864).
+predicate(SIO_000864,is,Class).
+predicate(SIO_000894,is,Class).
+predicate(SIO_000894,SubClassOf,SIO_000692).
+predicate(SIO_000897,is,Class).
+predicate(SIO_000897,SubClassOf,SIO_000075,).
+predicate(SIO_000897,SubClassOf,SIO_000628 min 2 SIO_000000).
+predicate(SIO_000898,is,Class).
+predicate(SIO_000898,SubClassOf,SIO_000897).
+predicate(SIO_000904,is,Class).
+predicate(SIO_000904,SubClassOf,SIO_000080).
+predicate(SIO_000906,is,Class).
+predicate(SIO_000906,SubClassOf,SIO_000904).
+predicate(SIO_000907,is,Class).
+predicate(SIO_000907,SubClassOf,SIO_000904).
+predicate(SIO_000911,is,Class).
+predicate(SIO_000911,SubClassOf,SIO_000904).
+predicate(SIO_000920,is,Class).
+predicate(SIO_000920,SubClassOf,SIO_000367).
+predicate(SIO_000921,is,Class).
+predicate(SIO_000921,SubClassOf,SIO_000367).
+predicate(SIO_000922,is,Class).
+predicate(SIO_000922,SubClassOf,SIO_000904).
+predicate(SIO_000923,is,Class).
+predicate(SIO_000923,SubClassOf,SIO_000898).
+predicate(SIO_000924,is,Class).
+predicate(SIO_000924,SubClassOf,SIO_001194).
+predicate(SIO_000930,is,Class).
+predicate(SIO_000930,SubClassOf,SIO_000904).
+predicate(SIO_000931,is,Class).
+predicate(SIO_000931,SubClassOf,SIO_000904).
+predicate(SIO_000933,is,Class).
+predicate(SIO_000933,SubClassOf,SIO_000904).
+predicate(SIO_000937,is,Class).
+predicate(SIO_000937,SubClassOf,SIO_000904).
+predicate(SIO_000940,is,Class).
+predicate(SIO_000940,SubClassOf,SIO_000904).
+predicate(SIO_000942,is,Class).
+predicate(SIO_000942,SubClassOf,SIO_000179).
+predicate(SIO_000944,is,Class).
+predicate(SIO_000944,SubClassOf,SIO_000075).
+predicate(SIO_000946,is,Class).
+predicate(SIO_000946,SubClassOf,SIO_000904).
+predicate(SIO_000947,is,Class).
+predicate(SIO_000947,SubClassOf,SIO_000904).
+predicate(SIO_000977,is,Class).
+predicate(SIO_000977,SubClassOf,SIO_000786).
+predicate(SIO_000978,is,Class).
+predicate(SIO_000978,SubClassOf,SIO_000786).
+predicate(SIO_000979,is,Class).
+predicate(SIO_000979,SubClassOf,SIO_000786).
+predicate(SIO_000980,is,Class).
+predicate(SIO_000980,SubClassOf,SIO_000104).
+predicate(SIO_000981,is,Class).
+predicate(SIO_000981,SubClassOf,SIO_000104).
+predicate(SIO_000982,is,Class).
+predicate(SIO_000982,SubClassOf,SIO_000104).
+predicate(SIO_000983,is,Class).
+predicate(SIO_000983,SubClassOf,SIO_000897,).
+predicate(SIO_000983,SubClassOf,SIO_000628 some SIO_010035,).
+predicate(SIO_000983,SubClassOf,SIO_000628 some SIO_010299).
+predicate(SIO_000984,is,Class).
+predicate(SIO_000993,is,Class).
+predicate(SIO_000993,SubClassOf,SIO_000897,).
+predicate(SIO_000993,SubClassOf,(SIO_000628 some SIO_010004) and (SIO_000628 some SIO_010299)).
+predicate(SIO_001017,is,Class).
+predicate(SIO_001017,SubClassOf,SIO_000136).
+predicate(SIO_001025,is,Class).
+predicate(SIO_001025,SubClassOf,SIO_000256).
+predicate(SIO_001026,is,Class).
+predicate(SIO_001026,SubClassOf,SIO_000148).
+predicate(SIO_001040,is,Class).
+predicate(SIO_001040,SubClassOf,SIO_000078).
+predicate(SIO_001053,is,Class).
+predicate(SIO_001053,SubClassOf,SIO_000683).
+predicate(SIO_001061,is,Class).
+predicate(SIO_001061,SubClassOf,SIO_000620).
+predicate(SIO_001063,is,Class).
+predicate(SIO_001063,SubClassOf,SIO_000620).
+predicate(SIO_001064,is,Class).
+predicate(SIO_001064,SubClassOf,SIO_000620).
+predicate(SIO_001070,is,Class).
+predicate(SIO_001070,SubClassOf,SIO_000367).
+predicate(SIO_001071,is,Class).
+predicate(SIO_001072,is,Class).
+predicate(SIO_001073,is,Class).
+predicate(SIO_001073,SubClassOf,SIO_000651,).
+predicate(SIO_001073,SubClassOf,(SIO_000008 some SIO_001071) and (SIO_000008 some SIO_001072)).
+predicate(SIO_001099,is,Class).
+predicate(SIO_001099,SubClassOf,SIO_000625).
+predicate(SIO_001107,is,Class).
+predicate(SIO_001116,is,Class).
+predicate(SIO_001116,SubClassOf,SIO_000150).
+predicate(SIO_001117,is,Class).
+predicate(SIO_001117,SubClassOf,SIO_000150).
+predicate(SIO_001118,is,Class).
+predicate(SIO_001118,SubClassOf,SIO_000150).
+predicate(SIO_001120,is,Class).
+predicate(SIO_001120,SubClassOf,SIO_000983).
+predicate(SIO_001121,is,Class).
+predicate(SIO_001121,SubClassOf,SIO_000983).
+predicate(SIO_001145,is,Class).
+predicate(SIO_001146,is,Class).
+predicate(SIO_001146,SubClassOf,SIO_001151).
+predicate(SIO_001147,is,Class).
+predicate(SIO_001147,SubClassOf,SIO_001151).
+predicate(SIO_001151,is,Class).
+predicate(SIO_001151,SubClassOf,SIO_001145).
+predicate(SIO_001152,is,Class).
+predicate(SIO_001152,SubClassOf,SIO_001151).
+predicate(SIO_001165,is,Class).
+predicate(SIO_001165,SubClassOf,SIO_000602).
+predicate(SIO_001166,is,Class).
+predicate(SIO_001166,SubClassOf,SIO_000136,).
+predicate(SIO_001166,SubClassOf,SIO_000668 some SIO_000000).
+predicate(SIO_001167,is,Class).
+predicate(SIO_001167,SubClassOf,SIO_000256).
+predicate(SIO_001168,is,Class).
+predicate(SIO_001168,SubClassOf,SIO_001194).
+predicate(SIO_001170,is,Class).
+predicate(SIO_001170,SubClassOf,SIO_001194,).
+predicate(SIO_001170,SubClassOf,SIO_000053 some SIO_001370).
+predicate(SIO_001171,is,Class).
+predicate(SIO_001171,SubClassOf,SIO_000897).
+predicate(SIO_001172,is,Class).
+predicate(SIO_001172,SubClassOf,SIO_001171).
+predicate(SIO_001183,is,Class).
+predicate(SIO_001183,SubClassOf,SIO_000256).
+predicate(SIO_001187,is,Class).
+predicate(SIO_001187,SubClassOf,SIO_000752,).
+predicate(SIO_001187,SubClassOf,SIO_000093 some SIO_000754).
+predicate(SIO_001194,is,Class).
+predicate(SIO_001194,SubClassOf,SIO_000015).
+predicate(SIO_001196,is,Class).
+predicate(SIO_001196,SubClassOf,SIO_000136).
+predicate(SIO_001197,is,Class).
+predicate(SIO_001197,SubClassOf,SIO_000130).
+predicate(SIO_001197,DisjointWith,SIO_000131).
+predicate(SIO_001220,is,Class).
+predicate(SIO_001220,SubClassOf,SIO_001221).
+predicate(SIO_001221,is,Class).
+predicate(SIO_001221,SubClassOf,SIO_000639).
+predicate(SIO_001225,is,Class).
+predicate(SIO_001225,SubClassOf,SIO_010335).
+predicate(SIO_001241,is,Class).
+predicate(SIO_001241,SubClassOf,SIO_000616).
+predicate(SIO_001246,is,Class).
+predicate(SIO_001246,SubClassOf,SIO_000289).
+predicate(SIO_001250,is,Class).
+predicate(SIO_001250,SubClassOf,SIO_000897,).
+predicate(SIO_001250,SubClassOf,SIO_000628 some SIO_001107,).
+predicate(SIO_001250,SubClassOf,SIO_000628 some SIO_010004).
+predicate(SIO_001251,is,Class).
+predicate(SIO_001251,SubClassOf,SIO_001246).
+predicate(SIO_001252,is,Class).
+predicate(SIO_001252,SubClassOf,SIO_001246).
+predicate(SIO_001253,is,Class).
+predicate(SIO_001253,SubClassOf,SIO_001246).
+predicate(SIO_001254,is,Class).
+predicate(SIO_001254,SubClassOf,SIO_001246).
+predicate(SIO_001257,is,Class).
+predicate(SIO_001257,SubClassOf,SIO_000897,).
+predicate(SIO_001257,SubClassOf,SIO_000628 some SIO_010004,).
+predicate(SIO_001257,SubClassOf,SIO_000628 some SIO_010035).
+predicate(SIO_001258,is,Class).
+predicate(SIO_001258,SubClassOf,SIO_000075,).
+predicate(SIO_001258,SubClassOf,SIO_000095 some SIO_000289).
+predicate(SIO_001259,is,Class).
+predicate(SIO_001259,SubClassOf,SIO_001258,).
+predicate(SIO_001259,SubClassOf,SIO_000095 some SIO_000616).
+predicate(SIO_001260,is,Class).
+predicate(SIO_001260,SubClassOf,SIO_001258,).
+predicate(SIO_001260,SubClassOf,SIO_000628 some SIO_000000,).
+predicate(SIO_001260,SubClassOf,SIO_000975 some SIO_000150).
+predicate(SIO_001261,is,Class).
+predicate(SIO_001261,SubClassOf,SIO_001260).
+predicate(SIO_001300,is,Class).
+predicate(SIO_001300,SubClassOf,SIO_000602).
+predicate(SIO_001301,is,Class).
+predicate(SIO_001301,SubClassOf,SIO_001300).
+predicate(SIO_001301,DisjointWith,SIO_001302).
+predicate(SIO_001302,is,Class).
+predicate(SIO_001302,SubClassOf,SIO_001300).
+predicate(SIO_001302,DisjointWith,SIO_001301).
+predicate(SIO_001316,is,Class).
+predicate(SIO_001316,SubClassOf,SIO_000150).
+predicate(SIO_001330,is,Class).
+predicate(SIO_001330,SubClassOf,SIO_000069).
+predicate(SIO_001333,is,Class).
+predicate(SIO_001333,SubClassOf,SIO_000608).
+predicate(SIO_001334,is,Class).
+predicate(SIO_001334,SubClassOf,SIO_000511).
+predicate(SIO_001335,is,Class).
+predicate(SIO_001335,SubClassOf,SIO_000507).
+predicate(SIO_001336,is,Class).
+predicate(SIO_001337,is,Class).
+predicate(SIO_001337,SubClassOf,SIO_000897,).
+predicate(SIO_001337,SubClassOf,SIO_000628 exactly 2 SIO_001336).
+predicate(SIO_001370,is,Class).
+predicate(SIO_001370,SubClassOf,SIO_001194).
+predicate(SIO_001373,is,Class).
+predicate(SIO_001373,SubClassOf,SIO_000148).
+predicate(SIO_001377,is,Class).
+predicate(SIO_001377,SubClassOf,SIO_000089).
+predicate(SIO_001380,is,Class).
+predicate(SIO_001380,SubClassOf,SIO_000616).
+predicate(SIO_001382,is,Class).
+predicate(SIO_001382,SubClassOf,SIO_000616).
+predicate(SIO_001385,is,Class).
+predicate(SIO_001385,SubClassOf,SIO_000090).
+predicate(SIO_001394,is,Class).
+predicate(SIO_001394,SubClassOf,SIO_000256).
+predicate(SIO_001418,is,Class).
+predicate(SIO_001418,SubClassOf,SIO_001259).
+predicate(SIO_001419,is,Class).
+predicate(SIO_001419,SubClassOf,SIO_000616).
+predicate(SIO_001420,is,Class).
+predicate(SIO_001420,SubClassOf,SIO_001259).
+predicate(SIO_001421,is,Class).
+predicate(SIO_001421,SubClassOf,SIO_000616).
+predicate(SIO_001425,is,Class).
+predicate(SIO_001425,SubClassOf,SIO_001427).
+predicate(SIO_001427,is,Class).
+predicate(SIO_001429,is,Class).
+predicate(SIO_001429,SubClassOf,SIO_000075).
+predicate(SIO_001430,is,Class).
+predicate(SIO_001430,SubClassOf,SIO_001434).
+predicate(SIO_001431,is,Class).
+predicate(SIO_001431,SubClassOf,SIO_001429).
+predicate(SIO_001432,is,Class).
+predicate(SIO_001432,SubClassOf,SIO_000075,).
+predicate(SIO_001432,SubClassOf,SIO_000059 min 0 SIO_001430).
+predicate(SIO_001433,is,Class).
+predicate(SIO_001433,SubClassOf,SIO_001434).
+predicate(SIO_001434,is,Class).
+predicate(SIO_001434,SubClassOf,SIO_001429,).
+predicate(SIO_001434,SubClassOf,SIO_000053 only).
+predicate(SIO_001434,SubClassOf,(SIO_001429 and (SIO_000008 some SIO_000613))).
+predicate(SIO_001435,is,Class).
+predicate(SIO_001435,SubClassOf,SIO_000897,).
+predicate(SIO_001435,SubClassOf,SIO_000628 exactly 2 SIO_010004).
+predicate(SIO_001436,is,Class).
+predicate(SIO_001436,SubClassOf,SIO_000897,).
+predicate(SIO_001436,SubClassOf,SIO_000628 exactly 2 SIO_010299).
+predicate(SIO_001437,is,Class).
+predicate(SIO_001437,SubClassOf,SIO_000897,).
+predicate(SIO_001437,SubClassOf,SIO_000628 exactly 2 SIO_010035).
+predicate(SIO_001438,is,Class).
+predicate(SIO_001438,SubClassOf,SIO_000897,).
+predicate(SIO_001438,SubClassOf,SIO_000628 exactly 2 SIO_010043).
+predicate(SIO_001439,is,Class).
+predicate(SIO_001439,SubClassOf,SIO_000897).
+predicate(SIO_001440,is,Class).
+predicate(SIO_001440,SubClassOf,SIO_000897).
+predicate(SIO_010001,is,Class).
+predicate(SIO_010001,SubClassOf,SIO_010046).
+predicate(SIO_010002,is,Class).
+predicate(SIO_010003,is,Class).
+predicate(SIO_010004,is,Class).
+predicate(SIO_010007,is,Class).
+predicate(SIO_010015,is,Class).
+predicate(SIO_010015,SubClassOf,SIO_000030,).
+predicate(SIO_010015,SubClassOf,SIO_000011 some SIO_010007,).
+predicate(SIO_010015,SubClassOf,SIO_000210 some).
+predicate(SIO_010015,SubClassOf,(SIO_000626 and (SIO_000011 some SIO_010007))).
+predicate(SIO_010019,is,Class).
+predicate(SIO_010019,SubClassOf,SIO_000472).
+predicate(SIO_010035,is,Class).
+predicate(SIO_010043,is,Class).
+predicate(SIO_010046,is,Class).
+predicate(SIO_010051,is,Class).
+predicate(SIO_010053,is,Class).
+predicate(SIO_010053,SubClassOf,SIO_001196).
+predicate(SIO_010054,is,Class).
+predicate(SIO_010060,is,Class).
+predicate(SIO_010060,SubClassOf,SIO_001196).
+predicate(SIO_010066,is,Class).
+predicate(SIO_010066,SubClassOf,SIO_000616).
+predicate(SIO_010299,is,Class).
+predicate(SIO_010335,is,Class).
+predicate(SIO_010364,is,Class).
+predicate(SIO_010364,SubClassOf,SIO_000692).
+predicate(SIO_010368,is,Class).
+predicate(SIO_010368,SubClassOf,SIO_000692).
+predicate(SIO_010376,is,Class).
+predicate(SIO_010376,SubClassOf,SIO_010001).
+predicate(SIO_010531,is,Class).
+predicate(SIO_010531,SubClassOf,SIO_000130).
+predicate(SIO_010673,is,Class).
+predicate(SIO_010673,SubClassOf,SIO_001196).
+predicate(SIO_011119,is,Class).
+predicate(SIO_011120,is,Class).
+predicate(SIO_011120,SubClassOf,SIO_000396,).
+predicate(SIO_011120,SubClassOf,SIO_000028 some SIO_000072,).
+predicate(SIO_011120,SubClassOf,SIO_000028 some SIO_011121,).
+predicate(SIO_011120,SubClassOf,SIO_000214 some SIO_011119).
+predicate(SIO_011121,is,Class).
+predicate(SIO_011123,is,Class).
+predicate(SIO_011123,SubClassOf,SIO_000472).
+predicate(SIO_011130,is,Class).
+predicate(SIO_011130,SubClassOf,SIO_011120).
+predicate(SIO_011131,is,Class).
+predicate(SIO_011131,SubClassOf,SIO_000616).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(Entity,is,Class).
+predicate(KeyEntityPair,is,Class).
+predicate(KeyEntityPair,SubClassOf,SIO_000069).
+predicate(Person,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(ExpressionConstraintComponent-expression,is,Class).
+predicate(JSExecutable,is,Class).
+predicate(JSTargetType,is,Class).
+predicate(JSTargetType,SubClassOf,JSExecutable,).
+predicate(JSTargetType,SubClassOf,TargetType).
+predicate(TargetType,is,Class).
+predicate(TargetType,DisjointClasses,SIO_000984,SIO_010001,SIO_010002,SIO_010003,SIO_010051,SIO_010054).

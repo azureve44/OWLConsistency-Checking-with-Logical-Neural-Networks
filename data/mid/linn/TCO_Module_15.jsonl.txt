@@ -1,0 +1,97 @@
+predicate(is_a,is,ObjectProperty).
+predicate(part_of,is,ObjectProperty).
+predicate(Atypical_Mitoses,is,Class).
+predicate(Atypical_Mitoses,SubClassOf,Pathological_Characteristics).
+predicate(Bilateral_Malignant_Neoplasm,is,Class).
+predicate(Bilateral_Malignant_Neoplasm,SubClassOf,Pathological_Characteristics).
+predicate(Biphasic_Spindle_Cell,is,Class).
+predicate(Biphasic_Spindle_Cell,SubClassOf,Pathological_Characteristics).
+predicate(Bizarre_Malignant_Giant_Cell,is,Class).
+predicate(Bizarre_Malignant_Giant_Cell,SubClassOf,Pathological_Characteristics).
+predicate(C-cell_Hyperplasia,is,Class).
+predicate(C-cell_Hyperplasia,SubClassOf,Pathological_Characteristics).
+predicate(Clinically_Evident_Metastasis,is,Class).
+predicate(Clinically_Evident_Metastasis,EquivalentTo,is_a some Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Clinically_Evident_Metastasis,SubClassOf,Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Columnar_Cell,is,Class).
+predicate(Columnar_Cell,SubClassOf,Pathological_Characteristics).
+predicate(Convoluted_Nuclei,is,Class).
+predicate(Convoluted_Nuclei,SubClassOf,Pathological_Characteristics).
+predicate(Distant_Metastases,is,Class).
+predicate(Extracapsular_Nodal_Extension,is,Class).
+predicate(Extracapsular_Nodal_Extension,SubClassOf,Pathological_Characteristics).
+predicate(Extrathyroidal_Extension,is,Class).
+predicate(Extrathyroidal_Extension,SubClassOf,Pathological_Characteristics).
+predicate(Giant_Cell,is,Class).
+predicate(Giant_Cell,SubClassOf,Pathological_Characteristics).
+predicate(Hobnail_Variant_Thyroid_Gland_Papillary_Carcinoma,is,Class).
+predicate(Hobnail_Variant_Thyroid_Gland_Papillary_Carcinoma,SubClassOf,Pathological_Characteristics).
+predicate(Inflammatory_Infiltrate,is,Class).
+predicate(Inflammatory_Infiltrate,SubClassOf,Pathological_Characteristics).
+predicate(Insular_Carcinoma,is,Class).
+predicate(Insular_Carcinoma,SubClassOf,Pathological_Characteristics).
+predicate(Intratumoral_Fibrosis,is,Class).
+predicate(Intratumoral_Fibrosis,SubClassOf,Pathological_Characteristics).
+predicate(Isoechoic_Spongiform_Isoechoic_Spongiform,is,Class).
+predicate(Isoechoic_Spongiform_Isoechoic_Spongiform,SubClassOf,Pathological_Characteristics).
+predicate(Larger_Metastases,is,Class).
+predicate(Larger_Metastases,EquivalentTo,is_a some Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Larger_Metastases,SubClassOf,Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Metastasis,is,Class).
+predicate(Metastasis,SubClassOf,Pathological_Characteristics).
+predicate(Metastastatic_Malignant_Neoplasm_in_Lymph_Node,is,Class).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Bone,is,Class).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Bone,EquivalentTo,is_a some Distant_Metastases).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Bone,SubClassOf,Distant_Metastases).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Brain,is,Class).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Brain,EquivalentTo,is_a some Distant_Metastases).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Brain,SubClassOf,Distant_Metastases).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Liver,is,Class).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Liver,EquivalentTo,is_a some Distant_Metastases).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Liver,SubClassOf,Distant_Metastases).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Lung,is,Class).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Lung,EquivalentTo,is_a some Distant_Metastases).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Lung,SubClassOf,Distant_Metastases).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Mediastinum,is,Class).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Mediastinum,EquivalentTo,is_a some Distant_Metastases).
+predicate(Metastatic_Malignant_Neoplasm_in_the_Mediastinum,SubClassOf,Distant_Metastases).
+predicate(Multifocal_Lesion,is,Class).
+predicate(Multifocal_Lesion,SubClassOf,Pathological_Characteristics).
+predicate(Multiple_Metastases,is,Class).
+predicate(Multiple_Metastases,EquivalentTo,is_a some Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Multiple_Metastases,SubClassOf,Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Neoplastic_Bone_and_Cartilage,is,Class).
+predicate(Neoplastic_Bone_and_Cartilage,SubClassOf,Pathological_Characteristics).
+predicate(Osteoclast-like_Giant_Cells,is,Class).
+predicate(Osteoclast-like_Giant_Cells,SubClassOf,Pathological_Characteristics).
+predicate(Pathological_Characteristics,is,Class).
+predicate(Pathological_Characteristics,EquivalentTo,part_of some Pathology).
+predicate(Pathological_Characteristics,SubClassOf,Pathology).
+predicate(Pathology,is,Class).
+predicate(Paucicellular_Variant,is,Class).
+predicate(Paucicellular_Variant,SubClassOf,Pathological_Characteristics).
+predicate(Regional_Lymph_Node_Metastases,is,Class).
+predicate(Regional_Lymph_Node_Metastases,EquivalentTo,is_a some Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Regional_Lymph_Node_Metastases,SubClassOf,Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Skip_Metastases,is,Class).
+predicate(Skip_Metastases,EquivalentTo,is_a some Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Skip_Metastases,SubClassOf,Metastastatic_Malignant_Neoplasm_in_Lymph_Node).
+predicate(Solid,is,Class).
+predicate(Solid,SubClassOf,Pathological_Characteristics).
+predicate(Spindle_and_Squamoid_Cells,is,Class).
+predicate(Spindle_and_Squamoid_Cells,SubClassOf,Pathological_Characteristics).
+predicate(Squamous_Cell,is,Class).
+predicate(Squamous_Cell,SubClassOf,Pathological_Characteristics).
+predicate(Tall_Cell_Variant_Thyroid_Gland_Papillary_Carcinoma,is,Class).
+predicate(Tall_Cell_Variant_Thyroid_Gland_Papillary_Carcinoma,SubClassOf,Pathological_Characteristics).
+predicate(Thick_Capsule,is,Class).
+predicate(Thick_Capsule,SubClassOf,Pathological_Characteristics).
+predicate(Trabecular_Architecture,is,Class).
+predicate(Trabecular_Architecture,SubClassOf,Pathological_Characteristics).
+predicate(Tumor_Capsule_Invasion,is,Class).
+predicate(Tumor_Capsule_Invasion,SubClassOf,Pathological_Characteristics).
+predicate(Tumor_Cell_Necrosis,is,Class).
+predicate(Tumor_Cell_Necrosis,SubClassOf,Pathological_Characteristics).
+predicate(Tumor_Vascular_Invasion,is,Class).
+predicate(Tumor_Vascular_Invasion,SubClassOf,Pathological_Characteristics).
+predicate(www.w3.org/2002/07/#,is,Class).

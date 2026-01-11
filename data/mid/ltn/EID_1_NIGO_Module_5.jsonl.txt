@@ -1,0 +1,26 @@
+is(isAffectedBy,ObjectProperty):1.0
+Domain(isAffectedBy,NonpharmacologicalIntervention):1.0
+Range(isAffectedBy,FactorAffectingImplementationOfNonpharmacologicalInterventionToPsychoticSymptom):1.0
+is(reducesPsychoticSymptomCausedBy,ObjectProperty):1.0
+is(FactorAffectingImplementationOfNonpharmacologicalInterventionToPsychoticSymptom,Class):1.0
+is(FamilyMemberFocusedIntervention,Class):1.0
+SubClassOf(FamilyMemberFocusedIntervention,NonpharmacologicalIntervention):1.0
+is(HealthCareProfessionalFocusedIntervention,Class):1.0
+SubClassOf(HealthCareProfessionalFocusedIntervention,NonpharmacologicalIntervention):1.0
+DisjointWith(HealthCareProfessionalFocusedIntervention,PsychoticSymptomCausativeFactor):1.0
+is(Intervention,Class):1.0
+is(NonpharmacologicalIntervention,Class):1.0
+EquivalentTo(NonpharmacologicalIntervention,PharmacologicalIntervention):1.0
+SubClassOf(NonpharmacologicalIntervention,Intervention,):1.0
+SubClassOf(NonpharmacologicalIntervention,isAffectedBy some FactorAffectingImplementationOfNonpharmacologicalInterventionToPsychoticSymptom,):1.0
+SubClassOf(NonpharmacologicalIntervention,reducesPsychoticSymptomCausedBy some PsychoticSymptomCausativeFactor,):1.0
+SubClassOf(NonpharmacologicalIntervention,reducesPsychoticSymptomCausedBy only HealthCareProfessionalFocusedIntervention):1.0
+DisjointWith(NonpharmacologicalIntervention,PharmacologicalIntervention):1.0
+is(PersonWithDementiaFocusedIntervention,Class):1.0
+SubClassOf(PersonWithDementiaFocusedIntervention,NonpharmacologicalIntervention):1.0
+is(PharmacologicalIntervention,Class):1.0
+EquivalentTo(PharmacologicalIntervention,NonpharmacologicalIntervention):1.0
+DisjointWith(PharmacologicalIntervention,NonpharmacologicalIntervention):1.0
+is(PsychoticSymptomCausativeFactor,Class):1.0
+DisjointWith(PsychoticSymptomCausativeFactor,HealthCareProfessionalFocusedIntervention):1.0
+is(www.w3.org/2002/07/#,Class):1.0

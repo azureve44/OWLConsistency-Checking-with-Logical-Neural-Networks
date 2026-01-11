@@ -1,0 +1,344 @@
+boolean is Datatype.
+integer is Datatype.
+RTC_complex is ObjectProperty.
+RTC_complex Domain Non_Structural_Protein.
+RTC_complex Range Non_Structural_Protein.
+has_beginning_base is ObjectProperty.
+has_beginning_base Domain Stem_loop.
+has_beginning_base Range Nucleobase.
+has_ending_base is ObjectProperty.
+has_ending_base Domain Stem_loop.
+has_ending_base Range Nucleobase.
+has_first_base is ObjectProperty.
+has_first_codon is ObjectProperty.
+has_first_codon Domain RNA_Negative_Messenger,.
+has_first_codon Domain RNA_Positive,.
+has_first_codon Domain Subgenomic_Negative_Messenger,.
+has_first_codon Domain Subgenomic_Positive.
+has_first_codon Range Codon.
+has_genome_element is ObjectProperty.
+has_genome_element Domain Replication_element.
+has_genome_element Range Genome,.
+has_genome_element Range Replication_element.
+has_next is ObjectProperty.
+has_next Domain Nucleobase.
+has_next Range Nucleobase,.
+has_next Range Codon or CodonFS.
+has_second_base is ObjectProperty.
+has_third_base is ObjectProperty.
+has_transitive_next is ObjectProperty.
+has_transitive_next Domain Codon.
+has_transitive_next Range Codon.
+sequence_polyprotein_pp1a is ObjectProperty.
+sequence_polyprotein_pp1a Domain Codon.
+sequence_polyprotein_pp1a Range Codon.
+sequence_polyprotein_pp1ab is ObjectProperty.
+sequence_polyprotein_pp1ab Domain Codon.
+sequence_polyprotein_pp1ab Range CodonFS.
+frameshifting is DataProperty.
+frameshifting Domain Nucleobase.
+frameshifting Range boolean.
+has_Rank is DataProperty.
+has_Rank Domain Codon,.
+has_Rank Domain CodonFS,.
+has_Rank Domain Nucleobase.
+has_Rank Range integer.
+status is DataProperty.
+status Domain Genome.
+status Range boolean.
+Accessory_protein is Class.
+Accessory_protein SubClassOf Genome.
+Adenine is Class.
+Adenine SubClassOf Nucleobase.
+Alanine is Class.
+Alanine EquivalentTo Codon and ((has_first_base only Guanine) and (has_second_base only Cytosine) and (has_third_base only Nucleobase)).
+Alanine SubClassOf Amino_acid,.
+Alanine SubClassOf Codon.
+Amino_acid is Class.
+Amino_acid SubClassOf tRNA.
+Arginine is Class.
+Arginine EquivalentTo Codon and (((has_first_base only Adenine) and (has_second_base only Guanine) and (has_third_base only.
+Arginine EquivalentTo (Adenine or Guanine))) or ((has_first_base only Cytosine) and (has_second_base only Guanine) and (has_third_base only Nucleobase))).
+Arginine SubClassOf Amino_acid,.
+Arginine SubClassOf Codon.
+Asparagine is Class.
+Asparagine EquivalentTo Codon and ((has_first_base only Adenine) and (has_second_base only Adenine) and (has_third_base only.
+Asparagine EquivalentTo (Cytosine or Uracil))).
+Asparagine SubClassOf Amino_acid,.
+Asparagine SubClassOf Codon.
+Aspartic_acid is Class.
+Aspartic_acid EquivalentTo Codon and ((has_first_base only Guanine) and (has_second_base only Adenine) and (has_third_base only.
+Aspartic_acid EquivalentTo (Cytosine or Uracil))).
+Aspartic_acid SubClassOf Amino_acid,.
+Aspartic_acid SubClassOf Codon.
+Body_TRS is Class.
+Body_TRS SubClassOf Genome.
+Codon is Class.
+Codon SubClassOf Global_codon.
+CodonFS is Class.
+CodonFS SubClassOf Global_codon.
+Complex__RTC is Class.
+Complex__RTC EquivalentTo Replication_element and (has_genome_element only.
+Complex__RTC EquivalentTo (nsp10 and nsp12 and nsp14 and nsp7 and nsp8)).
+Complex__RTC SubClassOf Replication_element.
+Cysteine is Class.
+Cysteine EquivalentTo Codon and ((has_first_base only Uracil) and (has_second_base only Guanine) and (has_third_base only.
+Cysteine EquivalentTo (Cytosine or Uracil))).
+Cysteine SubClassOf Amino_acid,.
+Cysteine SubClassOf Codon.
+Cytosine is Class.
+Cytosine SubClassOf Nucleobase.
+E is Class.
+E SubClassOf Structural_protein.
+ER is Class.
+ER EquivalentTo Replication_element and (has_genome_element only.
+ER EquivalentTo (E and M and Spike)).
+ER SubClassOf Replication_element.
+ERGIC is Class.
+ERGIC EquivalentTo Replication_element and (has_genome_element only.
+ERGIC EquivalentTo (ER and Nucleoprotein_complex)).
+ERGIC SubClassOf Replication_element.
+Endoribonuclease is Class.
+Endoribonuclease EquivalentTo Replication_element and (has_genome_element only.
+Endoribonuclease EquivalentTo (nsp1 and nsp15)).
+Endoribonuclease SubClassOf Replication_element.
+Genome is Class.
+Thing is www.w3.org/2002/07/#.
+Global_codon is Class.
+Global_codon SubClassOf Genome.
+Glutamic_acid is Class.
+Glutamic_acid EquivalentTo Codon and ((has_first_base only Guanine) and (has_second_base only Adenine) and (has_third_base only.
+Glutamic_acid EquivalentTo (Adenine or Guanine))).
+Glutamic_acid SubClassOf Amino_acid,.
+Glutamic_acid SubClassOf Codon.
+Glutamine is Class.
+Glutamine EquivalentTo Codon and ((has_first_base only Cytosine) and (has_second_base only Adenine) and (has_third_base only.
+Glutamine EquivalentTo (Adenine or Guanine))).
+Glutamine SubClassOf Amino_acid,.
+Glutamine SubClassOf Codon.
+Glycine is Class.
+Glycine EquivalentTo Codon and ((has_first_base only Guanine) and (has_second_base only Guanine) and (has_third_base only Nucleobase)).
+Glycine SubClassOf Amino_acid,.
+Glycine SubClassOf Codon.
+Guanine is Class.
+Guanine SubClassOf Nucleobase.
+Helicase is Class.
+Helicase EquivalentTo nsp13.
+Helicase SubClassOf Non_Structural_Protein,.
+Helicase SubClassOf Replication_element.
+Histidine is Class.
+Histidine EquivalentTo Codon and ((has_first_base only Cytosine) and (has_second_base only Adenine) and (has_third_base only.
+Histidine EquivalentTo (Cytosine or Uracil))).
+Histidine SubClassOf Amino_acid,.
+Histidine SubClassOf Codon.
+Isoleucine is Class.
+Isoleucine EquivalentTo Codon and ((has_first_base only Adenine) and (has_second_base only Uracil) and (has_third_base only.
+Isoleucine EquivalentTo (Adenine or Cytosine or Uracil))).
+Isoleucine SubClassOf Amino_acid,.
+Isoleucine SubClassOf Codon.
+Leucine is Class.
+Leucine EquivalentTo Codon and (((has_first_base only Cytosine) and (has_second_base only Uracil) and (has_third_base only Nucleobase)) or ((has_first_base only Uracil) and (has_second_base only Uracil) and (has_third_base only.
+Leucine EquivalentTo (Adenine or Guanine)))).
+Leucine SubClassOf Amino_acid,.
+Leucine SubClassOf Codon.
+Lysine is Class.
+Lysine EquivalentTo Codon and ((has_first_base only Adenine) and (has_second_base only Adenine) and (has_third_base only.
+Lysine EquivalentTo (Adenine or Guanine))).
+Lysine SubClassOf Amino_acid,.
+Lysine SubClassOf Codon.
+M is Class.
+M SubClassOf Structural_protein.
+Methionine is Class.
+Methionine EquivalentTo Start,.
+Methionine EquivalentTo Codon and ((has_first_base only Adenine) and (has_second_base only Uracil) and (has_third_base only Guanine)).
+Methionine SubClassOf Amino_acid,.
+Methionine SubClassOf Codon.
+N is Class.
+N SubClassOf Structural_protein.
+Non_Structural_Protein is Class.
+Non_Structural_Protein SubClassOf Genome.
+Nucleobase is Class.
+Nucleobase SubClassOf Genome,.
+Nucleobase SubClassOf tRNA.
+Nucleoprotein_complex is Class.
+Nucleoprotein_complex EquivalentTo Replication_element and (has_genome_element only.
+Nucleoprotein_complex EquivalentTo (N and RNA_Positive)).
+Nucleoprotein_complex SubClassOf Replication_element.
+ORF10 is Class.
+ORF10 SubClassOf Accessory_protein.
+ORF1a is Class.
+ORF1a EquivalentTo pp1a.
+ORF1a SubClassOf Open_readin_frame,.
+ORF1a SubClassOf Polyprotein,.
+ORF1a SubClassOf Polyprotein and (has_genome_element only.
+ORF1a SubClassOf (nsp1 and nsp10 and nsp2 and nsp3 and nsp4 and nsp5 and nsp6 and nsp7 and nsp8 and nsp9)).
+ORF1b is Class.
+ORF1b SubClassOf Open_readin_frame,.
+ORF1b SubClassOf Polyprotein,.
+ORF1b SubClassOf Polyprotein and (has_genome_element only.
+ORF1b SubClassOf (nsp12 and nsp13 and nsp14 and nsp15 and nsp16)).
+ORF3a is Class.
+ORF3a SubClassOf Accessory_protein.
+ORF6 is Class.
+ORF6 SubClassOf Accessory_protein.
+ORF7a is Class.
+ORF7a SubClassOf Accessory_protein.
+ORF7b is Class.
+ORF7b SubClassOf Accessory_protein.
+ORF8 is Class.
+ORF8 SubClassOf Accessory_protein.
+Open_readin_frame is Class.
+Open_readin_frame SubClassOf Genome.
+Phenylalanine is Class.
+Phenylalanine EquivalentTo Codon and ((has_first_base only Uracil) and (has_second_base only Uracil) and (has_third_base only.
+Phenylalanine EquivalentTo (Cytosine or Uracil))).
+Phenylalanine SubClassOf Amino_acid,.
+Phenylalanine SubClassOf Codon.
+Polyprotein is Class.
+Polyprotein SubClassOf Genome.
+Primase is Class.
+Primase EquivalentTo nsp8.
+Primase SubClassOf Non_Structural_Protein,.
+Primase SubClassOf Replication_element.
+Proline is Class.
+Proline EquivalentTo Codon and ((has_first_base only Cytosine) and (has_second_base only Cytosine) and (has_third_base only Nucleobase)).
+Proline SubClassOf Amino_acid,.
+Proline SubClassOf Codon.
+Protease is Class.
+Protease EquivalentTo Replication_element and (has_genome_element only.
+Protease EquivalentTo (nsp3 and nsp5)).
+Protease SubClassOf Replication_element.
+RNA-dependent_RNA_polymerase is Class.
+RNA-dependent_RNA_polymerase EquivalentTo nsp12.
+RNA-dependent_RNA_polymerase SubClassOf Non_Structural_Protein,.
+RNA-dependent_RNA_polymerase SubClassOf Replication_element.
+RNA_Negative_Messenger is Class.
+RNA_Negative_Messenger SubClassOf Replication_element.
+RNA_Positive is Class.
+RNA_Positive SubClassOf Replication_element.
+Replication_element is Class.
+Thing is www.w3.org/2002/07/#.
+Serine is Class.
+Serine EquivalentTo Codon and (((has_first_base only Adenine) and (has_second_base only Guanine) and (has_third_base only.
+Serine EquivalentTo (Cytosine or Uracil))) or ((has_first_base only Uracil) and (has_second_base only Cytosine) and (has_third_base only Nucleobase))).
+Serine SubClassOf Amino_acid,.
+Serine SubClassOf Codon.
+Spike is Class.
+Spike SubClassOf Structural_protein.
+Start is Class.
+Start EquivalentTo Methionine.
+Start SubClassOf Amino_acid,.
+Start SubClassOf Codon.
+Stem_loop is Class.
+Stem_loop SubClassOf Genome.
+Stop is Class.
+Stop EquivalentTo Codon and (((has_first_base only Uracil) and (has_second_base only Adenine) and (has_third_base only.
+Stop EquivalentTo (Adenine or Guanine))) or ((has_first_base only Uracil) and (has_second_base only Guanine) and (has_third_base only Adenine))).
+Stop SubClassOf Amino_acid,.
+Stop SubClassOf Codon.
+Structural_protein is Class.
+Structural_protein SubClassOf Genome.
+Subgenomic_Negative_Messenger is Class.
+Subgenomic_Negative_Messenger SubClassOf Replication_element.
+Subgenomic_Positive is Class.
+Subgenomic_Positive SubClassOf Replication_element.
+Threonine is Class.
+Threonine EquivalentTo Codon and ((has_first_base only Adenine) and (has_second_base only Cytosine) and (has_third_base only Nucleobase)).
+Threonine SubClassOf Amino_acid,.
+Threonine SubClassOf Codon.
+Tryptophan is Class.
+Tryptophan EquivalentTo Codon and ((has_first_base only Uracil) and (has_second_base only Guanine) and (has_third_base only Guanine)).
+Tryptophan SubClassOf Amino_acid,.
+Tryptophan SubClassOf Codon.
+Tyrosine is Class.
+Tyrosine EquivalentTo Codon and ((has_first_base only Uracil) and (has_second_base only Adenine) and (has_third_base only.
+Tyrosine EquivalentTo (Cytosine or Uracil))).
+Tyrosine SubClassOf Amino_acid,.
+Tyrosine SubClassOf Codon.
+UTR3 is Class.
+UTR3 SubClassOf Genome.
+UTR5 is Class.
+UTR5 SubClassOf Genome.
+Uracil is Class.
+Uracil SubClassOf Nucleobase.
+Valine is Class.
+Valine EquivalentTo Codon and ((has_first_base only Guanine) and (has_second_base only Uracil) and (has_third_base only Nucleobase)).
+Valine SubClassOf Amino_acid,.
+Valine SubClassOf Codon.
+nsp1 is Class.
+nsp1 SubClassOf Non_Structural_Protein.
+nsp10 is Class.
+nsp10 SubClassOf Non_Structural_Protein.
+nsp12 is Class.
+nsp12 EquivalentTo RNA-dependent_RNA_polymerase.
+nsp12 SubClassOf Non_Structural_Protein,.
+nsp12 SubClassOf Replication_element.
+nsp13 is Class.
+nsp13 EquivalentTo Helicase.
+nsp13 SubClassOf Non_Structural_Protein,.
+nsp13 SubClassOf Replication_element.
+nsp14 is Class.
+nsp14 SubClassOf Non_Structural_Protein.
+nsp15 is Class.
+nsp15 SubClassOf Non_Structural_Protein.
+nsp16 is Class.
+nsp16 SubClassOf Non_Structural_Protein.
+nsp2 is Class.
+nsp2 SubClassOf Non_Structural_Protein.
+nsp3 is Class.
+nsp3 SubClassOf Non_Structural_Protein.
+nsp4 is Class.
+nsp4 SubClassOf Non_Structural_Protein.
+nsp5 is Class.
+nsp5 SubClassOf Non_Structural_Protein.
+nsp6 is Class.
+nsp6 SubClassOf Non_Structural_Protein.
+nsp7 is Class.
+nsp7 SubClassOf Non_Structural_Protein.
+nsp8 is Class.
+nsp8 EquivalentTo Primase.
+nsp8 SubClassOf Non_Structural_Protein,.
+nsp8 SubClassOf Replication_element.
+nsp9 is Class.
+nsp9 SubClassOf Non_Structural_Protein.
+pp1a is Class.
+pp1a EquivalentTo ORF1a.
+pp1a SubClassOf Open_readin_frame,.
+pp1a SubClassOf Polyprotein.
+pp1ab is Class.
+pp1ab EquivalentTo Polyprotein and (has_genome_element only.
+pp1ab EquivalentTo (ORF1a and ORF1b)).
+pp1ab SubClassOf Polyprotein.
+tRNA is Class.
+tRNA SubClassOf Replication_element.
+www.w3.org/2002/07/# is Class.
+A1 is Individual.
+A1 Types Adenine.
+A2 is Individual.
+A2 Types Adenine.
+A3 is Individual.
+A3 Types Adenine.
+C1 is Individual.
+C1 Types Cytosine.
+C2 is Individual.
+C2 Types Cytosine.
+C3 is Individual.
+C3 Types Cytosine.
+Codon1 is Individual.
+Codon1 Types Codon.
+Codon2 is Individual.
+Codon2 Types Codon.
+Codon3 is Individual.
+Codon3 Types Codon.
+G1 is Individual.
+G1 Types Guanine.
+G2 is Individual.
+G2 Types Guanine.
+G3 is Individual.
+G3 Types Guanine.
+U1 is Individual.
+U1 Types Uracil.
+U2 is Individual.
+U2 Types Uracil.
+U3 is Individual.
+U3 Types Uracil.

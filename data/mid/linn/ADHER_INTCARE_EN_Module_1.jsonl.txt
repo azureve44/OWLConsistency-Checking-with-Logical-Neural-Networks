@@ -1,0 +1,219 @@
+predicate(integer,is,Datatype).
+predicate(string,is,Datatype).
+predicate(Has_Degree_of_Objectivity_Type,is,ObjectProperty).
+predicate(Has_Type_Style,is,ObjectProperty).
+predicate(Identified_Adherence_Stage,is,ObjectProperty).
+predicate(It_is_Type_Presence_of,is,ObjectProperty).
+predicate(Adh_ASRQ_Value,is,DataProperty).
+predicate(Adh_BMQ__Value,is,DataProperty).
+predicate(Adh_Batalla__Value,is,DataProperty).
+predicate(Adh_Bogus-Pipeline__Value,is,DataProperty).
+predicate(Adh_ESPA__Value,is,DataProperty).
+predicate(Adh_HaynesSackett__Value,is,DataProperty).
+predicate(Adh_Hermes__Value,is,DataProperty).
+predicate(Adh_MAQ__Value,is,DataProperty).
+predicate(Adh_MARS-10__Value,is,DataProperty).
+predicate(Adh_SMAQ__Value_Question_1,is,DataProperty).
+predicate(Adh_SMAQ__Value_Question_2,is,DataProperty).
+predicate(Adh_SMAQ__Value_Question_3,is,DataProperty).
+predicate(Adh_SMAQ__Value_Question_4,is,DataProperty).
+predicate(Adh_SMAQ__Value_Question_5,is,DataProperty).
+predicate(Adh_SMAQ__Value_Question_6,is,DataProperty).
+predicate(Validation,is,DataProperty).
+predicate(ARMS,is,Class).
+predicate(ARMS,SubClassOf,Questionnaries_and_scales,).
+predicate(ARMS,SubClassOf,Identified_Adherence_Stage some).
+predicate(ARMS,SubClassOf,(P2_Implementation or P3_Discontinuation),).
+predicate(ARMS,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(ASRQ,is,Class).
+predicate(ASRQ,EquivalentTo,Satisfactory_adh_ASRQ_level1 or Satisfactory_adh_ASRQ_level2 or Unsatisfactory_adh_ASRQ_level3 or Unsatisfactory_adh_ASRQ_level4 or Unsatisfactory_adh_ASRQ_level5 or Unsatisfactory_adh_ASRQ_level6).
+predicate(ASRQ,SubClassOf,Questionnaries_and_scales,).
+predicate(ASRQ,SubClassOf,Identified_Adherence_Stage only P2_Implementation,).
+predicate(ASRQ,SubClassOf,Adh_ASRQ_Value exactly 1 integer,).
+predicate(ASRQ,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(Autoevaluations,is,Class).
+predicate(Autoevaluations,SubClassOf,Indicators,).
+predicate(Autoevaluations,SubClassOf,Has_Degree_of_Objectivity_Type only Subjective,).
+predicate(Autoevaluations,SubClassOf,Has_Type_Style only Indirect).
+predicate(Autoevaluations,DisjointWith,F_Support).
+predicate(BBQ,is,Class).
+predicate(BBQ,SubClassOf,Questionnaries_and_scales,).
+predicate(BBQ,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(BMQ,is,Class).
+predicate(BMQ,EquivalentTo,Satisfactory_adh_BMQ or Unsatisfactory_adh_BMQ).
+predicate(BMQ,SubClassOf,Questionnaries_and_scales,).
+predicate(BMQ,SubClassOf,Has_Type_Style only Indirect,).
+predicate(BMQ,SubClassOf,Identified_Adherence_Stage only P2_Implementation,).
+predicate(BMQ,SubClassOf,Adh_BMQ__Value exactly 1 integer,).
+predicate(BMQ,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(Batalla,is,Class).
+predicate(Batalla,EquivalentTo,Satisfactory_adh_batalla or Unsatisfactory_adh_batalla).
+predicate(Batalla,SubClassOf,Questionnaries_and_scales,).
+predicate(Batalla,SubClassOf,Has_Type_Style only Indirect,).
+predicate(Batalla,SubClassOf,Validation exactly 1 {"No"}).
+predicate(Bogus_Pipeline,is,Class).
+predicate(Bogus_Pipeline,EquivalentTo,Satisfactory_adh_bogus_pipeline or Unsatisfactory_adh_bogus_pipeline).
+predicate(Bogus_Pipeline,SubClassOf,Questionnaries_and_scales,).
+predicate(Bogus_Pipeline,SubClassOf,Adh_Bogus-Pipeline__Value exactly 1 string,).
+predicate(Bogus_Pipeline,SubClassOf,Validation exactly 1 {"No"}).
+predicate(Daily,is,Class).
+predicate(Daily,SubClassOf,Autoevaluations).
+predicate(ESPA,is,Class).
+predicate(ESPA,EquivalentTo,Satisfactory_adh_ESPA or Unsatisfactory_adh_ESPA).
+predicate(ESPA,SubClassOf,Questionnaries_and_scales,).
+predicate(ESPA,SubClassOf,Has_Type_Style only Indirect,).
+predicate(ESPA,SubClassOf,Adh_ESPA__Value exactly 1 integer,).
+predicate(ESPA,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(F_Support,is,Class).
+predicate(F_Support,DisjointWith,Autoevaluations).
+predicate(Face-to-face,is,Class).
+predicate(Haynes-Sackett,is,Class).
+predicate(Haynes-Sackett,EquivalentTo,Satisfactory_adh_Haynes_Sackett or Unsatisfactory_adh_Haynes_Sackett).
+predicate(Haynes-Sackett,SubClassOf,Questionnaries_and_scales,).
+predicate(Haynes-Sackett,SubClassOf,Has_Type_Style only Indirect,).
+predicate(Haynes-Sackett,SubClassOf,It_is_Type_Presence_of exactly 1 (Face-to-face or Non_Face-to-face)).
+predicate(Hermes,is,Class).
+predicate(Hermes,EquivalentTo,Satisfactory_adh_Hermes or Unsatisfactory_adh_Hermes).
+predicate(Hermes,SubClassOf,Questionnaries_and_scales,).
+predicate(Hermes,SubClassOf,Has_Type_Style only Indirect,).
+predicate(Hermes,SubClassOf,Adh_Hermes__Value exactly 1 integer).
+predicate(Hill-Bone,is,Class).
+predicate(Hill-Bone,SubClassOf,Questionnaries_and_scales,).
+predicate(Hill-Bone,SubClassOf,Identified_Adherence_Stage only P2_Implementation,).
+predicate(Hill-Bone,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(Indicators,is,Class).
+predicate(Indirect,is,Class).
+predicate(MAQ,is,Class).
+predicate(MAQ,EquivalentTo,Satisfactory_adh_MAQ or Unsatisfactory_adh_MAQ).
+predicate(MAQ,SubClassOf,Questionnaries_and_scales,).
+predicate(MAQ,SubClassOf,Identified_Adherence_Stage some).
+predicate(MAQ,SubClassOf,(P2_Implementation or P3_Discontinuation),).
+predicate(MAQ,SubClassOf,Adh_MAQ__Value exactly 1 integer,).
+predicate(MAQ,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(MARS,is,Class).
+predicate(MARS,EquivalentTo,Satisfactory_adh_MARS or Unsatisfactory_adh_MARS).
+predicate(MARS,SubClassOf,Questionnaries_and_scales,).
+predicate(MARS,SubClassOf,Identified_Adherence_Stage some).
+predicate(MARS,SubClassOf,(P2_Implementation or P3_Discontinuation),).
+predicate(MARS,SubClassOf,Adh_MARS-10__Value exactly 1 integer,).
+predicate(MARS,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(MMAS-8,is,Class).
+predicate(MMAS-8,SubClassOf,Questionnaries_and_scales,).
+predicate(MMAS-8,SubClassOf,Identified_Adherence_Stage some).
+predicate(MMAS-8,SubClassOf,(P2_Implementation or P3_Discontinuation),).
+predicate(MMAS-8,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(MUAH,is,Class).
+predicate(MUAH,SubClassOf,Questionnaries_and_scales,).
+predicate(MUAH,SubClassOf,Identified_Adherence_Stage only P2_Implementation,).
+predicate(MUAH,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(Non_Face-to-face,is,Class).
+predicate(P2_Implementation,is,Class).
+predicate(P3_Discontinuation,is,Class).
+predicate(Percentage_adh_30-64,is,Class).
+predicate(Percentage_adh_30-64,EquivalentTo,Adh_SMAQ__Value_Question_5 exactly 1 {"D"}).
+predicate(Percentage_adh_30-64,SubClassOf,SMAQ).
+predicate(Percentage_adh_65-84,is,Class).
+predicate(Percentage_adh_65-84,EquivalentTo,Adh_SMAQ__Value_Question_5 exactly 1 {"C"}).
+predicate(Percentage_adh_65-84,SubClassOf,SMAQ).
+predicate(Percentage_adh_85-94,is,Class).
+predicate(Percentage_adh_85-94,EquivalentTo,Adh_SMAQ__Value_Question_5 exactly 1 {"B"}).
+predicate(Percentage_adh_85-94,SubClassOf,SMAQ).
+predicate(Percentage_adh_95-100,is,Class).
+predicate(Percentage_adh_95-100,EquivalentTo,Adh_SMAQ__Value_Question_5 exactly 1 {"A"}).
+predicate(Percentage_adh_95-100,SubClassOf,SMAQ).
+predicate(Percentage_adh_lower_30,is,Class).
+predicate(Percentage_adh_lower_30,EquivalentTo,Adh_SMAQ__Value_Question_5 exactly 1 {"E"}).
+predicate(Percentage_adh_lower_30,SubClassOf,SMAQ).
+predicate(Questionnaries_and_scales,is,Class).
+predicate(Questionnaries_and_scales,SubClassOf,Autoevaluations).
+predicate(SDSCA,is,Class).
+predicate(SDSCA,SubClassOf,Questionnaries_and_scales,).
+predicate(SDSCA,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(SEAMS,is,Class).
+predicate(SEAMS,SubClassOf,Questionnaries_and_scales,).
+predicate(SEAMS,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(SMAQ,is,Class).
+predicate(SMAQ,EquivalentTo,Satisfactory_adh_SMAQ or Unsatisfactory_adh_SMAQ).
+predicate(SMAQ,SubClassOf,Questionnaries_and_scales,).
+predicate(SMAQ,SubClassOf,Identified_Adherence_Stage some).
+predicate(SMAQ,SubClassOf,(P2_Implementation or P3_Discontinuation),).
+predicate(SMAQ,SubClassOf,Has_Type_Style only Indirect,).
+predicate(SMAQ,SubClassOf,Validation exactly 1 {"Yes"}).
+predicate(Satisfactory_adh_ASRQ_level1,is,Class).
+predicate(Satisfactory_adh_ASRQ_level1,EquivalentTo,Adh_ASRQ_Value value 1).
+predicate(Satisfactory_adh_ASRQ_level1,SubClassOf,ASRQ).
+predicate(Satisfactory_adh_ASRQ_level2,is,Class).
+predicate(Satisfactory_adh_ASRQ_level2,EquivalentTo,Adh_ASRQ_Value value 2).
+predicate(Satisfactory_adh_ASRQ_level2,SubClassOf,ASRQ).
+predicate(Satisfactory_adh_BMQ,is,Class).
+predicate(Satisfactory_adh_BMQ,EquivalentTo,Adh_BMQ__Value value 0).
+predicate(Satisfactory_adh_BMQ,SubClassOf,BMQ).
+predicate(Satisfactory_adh_ESPA,is,Class).
+predicate(Adh_ESPA__Value exactly 1 ( not (integer[ 6]) and integer[= 5]),is,EquivalentTo).
+predicate(Adh_ESPA__Value exactly 1 ( not (integer[ 6]) and integer[= 5]),SubClassOf,ESPA).
+predicate(Satisfactory_adh_Haynes_Sackett,is,Class).
+predicate(Satisfactory_adh_Haynes_Sackett,EquivalentTo,Adh_HaynesSackett__Value exactly 1 {"Non_Fail"}).
+predicate(Satisfactory_adh_Haynes_Sackett,SubClassOf,Haynes-Sackett).
+predicate(Satisfactory_adh_Hermes,is,Class).
+predicate(Adh_Hermes__Value exactly 1 ( not (integer[ 4]) and integer[= 3]),is,EquivalentTo).
+predicate(Adh_Hermes__Value exactly 1 ( not (integer[ 4]) and integer[= 3]),SubClassOf,Hermes).
+predicate(Satisfactory_adh_MAQ,is,Class).
+predicate(Satisfactory_adh_MAQ,EquivalentTo,Adh_MAQ__Value exactly 1  not (integer[= 3])).
+predicate(Satisfactory_adh_MAQ,SubClassOf,MAQ).
+predicate(Satisfactory_adh_MARS,is,Class).
+predicate(Adh_MARS-10__Value exactly 1 ( not (integer[ 10]) and integer[= 6]),is,EquivalentTo).
+predicate(Adh_MARS-10__Value exactly 1 ( not (integer[ 10]) and integer[= 6]),SubClassOf,MARS).
+predicate(Satisfactory_adh_SMAQ,is,Class).
+predicate(Satisfactory_adh_SMAQ,EquivalentTo,(Adh_SMAQ__Value_Question_1 exactly 1 {"No"}) or (Adh_SMAQ__Value_Question_2 exactly 1 {"Yes"}) or (Adh_SMAQ__Value_Question_3 exactly 1 {"No"}) or (Adh_SMAQ__Value_Question_4 exactly 1 {"No"}) or (Adh_SMAQ__Value_Question_5 exactly 1 ({"A"} or {"B"})) or (Adh_SMAQ__Value_Question_6 exactly 1 integer[<= 2])).
+predicate(Satisfactory_adh_SMAQ,SubClassOf,SMAQ).
+predicate(Satisfactory_adh_batalla,is,Class).
+predicate(Satisfactory_adh_batalla,EquivalentTo,Adh_Batalla__Value exactly 1 {"Non-Fail"}).
+predicate(Satisfactory_adh_batalla,SubClassOf,Batalla).
+predicate(Satisfactory_adh_bogus_pipeline,is,Class).
+predicate(Satisfactory_adh_bogus_pipeline,EquivalentTo,Adh_Bogus-Pipeline__Value value "Accept").
+predicate(Satisfactory_adh_bogus_pipeline,SubClassOf,Bogus_Pipeline).
+predicate(Subjective,is,Class).
+predicate(Telephonic_call,is,Class).
+predicate(Telephonic_call,SubClassOf,Autoevaluations).
+predicate(Unsatisfactory_adh_ASRQ_level3,is,Class).
+predicate(Unsatisfactory_adh_ASRQ_level3,EquivalentTo,Adh_ASRQ_Value value 3).
+predicate(Unsatisfactory_adh_ASRQ_level3,SubClassOf,ASRQ).
+predicate(Unsatisfactory_adh_ASRQ_level4,is,Class).
+predicate(Unsatisfactory_adh_ASRQ_level4,EquivalentTo,Adh_ASRQ_Value value 4).
+predicate(Unsatisfactory_adh_ASRQ_level4,SubClassOf,ASRQ).
+predicate(Unsatisfactory_adh_ASRQ_level5,is,Class).
+predicate(Unsatisfactory_adh_ASRQ_level5,EquivalentTo,Adh_ASRQ_Value value 5).
+predicate(Unsatisfactory_adh_ASRQ_level5,SubClassOf,ASRQ).
+predicate(Unsatisfactory_adh_ASRQ_level6,is,Class).
+predicate(Unsatisfactory_adh_ASRQ_level6,EquivalentTo,Adh_ASRQ_Value value 6).
+predicate(Unsatisfactory_adh_ASRQ_level6,SubClassOf,ASRQ).
+predicate(Unsatisfactory_adh_BMQ,is,Class).
+predicate(Adh_BMQ__Value exactly 1 ( not (integer[= 12]) and integer[= 1]),is,EquivalentTo).
+predicate(Adh_BMQ__Value exactly 1 ( not (integer[= 12]) and integer[= 1]),SubClassOf,BMQ).
+predicate(Unsatisfactory_adh_ESPA,is,Class).
+predicate(Unsatisfactory_adh_ESPA,EquivalentTo,Adh_ESPA__Value exactly 1 integer[< 5]).
+predicate(Unsatisfactory_adh_ESPA,SubClassOf,ESPA).
+predicate(Unsatisfactory_adh_Haynes_Sackett,is,Class).
+predicate(Unsatisfactory_adh_Haynes_Sackett,EquivalentTo,Adh_HaynesSackett__Value exactly 1 {"Fail"}).
+predicate(Unsatisfactory_adh_Haynes_Sackett,SubClassOf,Haynes-Sackett).
+predicate(Unsatisfactory_adh_Hermes,is,Class).
+predicate(Unsatisfactory_adh_Hermes,EquivalentTo,Adh_Hermes__Value exactly 1 integer[< 3]).
+predicate(Unsatisfactory_adh_Hermes,SubClassOf,Hermes).
+predicate(Unsatisfactory_adh_MAQ,is,Class).
+predicate(Adh_MAQ__Value exactly 1 ( not (integer[= 4]) and integer[= 3]),is,EquivalentTo).
+predicate(Adh_MAQ__Value exactly 1 ( not (integer[= 4]) and integer[= 3]),SubClassOf,MAQ).
+predicate(Unsatisfactory_adh_MARS,is,Class).
+predicate(Unsatisfactory_adh_MARS,EquivalentTo,Adh_MARS-10__Value exactly 1  not (integer[= 6])).
+predicate(Unsatisfactory_adh_MARS,SubClassOf,MARS).
+predicate(Unsatisfactory_adh_SMAQ,is,Class).
+predicate(Unsatisfactory_adh_SMAQ,EquivalentTo,(Adh_SMAQ__Value_Question_1 exactly 1 {"Yes"}) or (Adh_SMAQ__Value_Question_2 exactly 1 {"No"}) or (Adh_SMAQ__Value_Question_3 exactly 1 {"Yes"}) or (Adh_SMAQ__Value_Question_4 exactly 1 {"Yes"}) or (Adh_SMAQ__Value_Question_5 exactly 1 ({"C"} or {"D"} or {"E"})) or (Adh_SMAQ__Value_Question_6 exactly 1 integer[ 2])).
+predicate(Unsatisfactory_adh_SMAQ,SubClassOf,SMAQ).
+predicate(Unsatisfactory_adh_batalla,is,Class).
+predicate(Unsatisfactory_adh_batalla,EquivalentTo,Adh_Batalla__Value exactly 1 {"Fail"}).
+predicate(Unsatisfactory_adh_batalla,SubClassOf,Batalla).
+predicate(Unsatisfactory_adh_bogus_pipeline,is,Class).
+predicate(Unsatisfactory_adh_bogus_pipeline,EquivalentTo,Adh_Bogus-Pipeline__Value value "Non Accept").
+predicate(Unsatisfactory_adh_bogus_pipeline,SubClassOf,Bogus_Pipeline).
+predicate(Voice_answer_system,is,Class).
+predicate(Voice_answer_system,SubClassOf,Autoevaluations).
+predicate(www.w3.org/2002/07/#,is,Class).

@@ -1,0 +1,442 @@
+is(www.w3.org/2000/01/-schema#,AnnotationProperty):1.0
+is(www.w3.org/2000/01/-schema#,Datatype):1.0
+is(dateTime,Datatype):1.0
+is(string,Datatype):1.0
+is(Observation.basedOn,ObjectProperty):1.0
+is(Observation.encounter,ObjectProperty):1.0
+is(Observation.performer,ObjectProperty):1.0
+is(Observation.subject,ObjectProperty):1.0
+is(acceptsOrDenies,ObjectProperty):1.0
+is(address,ObjectProperty):1.0
+is(aggregationOf,ObjectProperty):1.0
+is(arranges,ObjectProperty):1.0
+is(changesStatusOfHealthcareActivitiesIn,ObjectProperty):1.0
+is(clarifies,ObjectProperty):1.0
+is(componentOf,ObjectProperty):1.0
+is(controlsQualityOf,ObjectProperty):1.0
+is(delineates,ObjectProperty):1.0
+is(direct_controlTheSupply_useOf,ObjectProperty):1.0
+is(establishes,ObjectProperty):1.0
+is(evaluates,ObjectProperty):1.0
+is(evaluatesAspectsOf,ObjectProperty):1.0
+is(evaluatesOutcomeOf,ObjectProperty):1.0
+is(generates,ObjectProperty):1.0
+is(has,ObjectProperty):1.0
+is(hasBeenObservedDuring,ObjectProperty):1.0
+is(hasCarePeriodMandateFor,ObjectProperty):1.0
+is(hasDetermined,ObjectProperty):1.0
+is(hasOutput,ObjectProperty):1.0
+is(hasRatified,ObjectProperty):1.0
+is(hasRuledOut,ObjectProperty):1.0
+is(identifies,ObjectProperty):1.0
+is(influences,ObjectProperty):1.0
+is(initiatedDuring,ObjectProperty):1.0
+is(isAbleTobeAssigned,ObjectProperty):1.0
+is(isAppointmentFor,ObjectProperty):1.0
+is(isBackgroundFor,ObjectProperty):1.0
+is(isBasedOn,ObjectProperty):1.0
+is(isCausedBy,ObjectProperty):1.0
+is(isCentredOn,ObjectProperty):1.0
+is(isConsideredDuring,ObjectProperty):1.0
+is(isConsistentWith,ObjectProperty):1.0
+is(isDeficitIn,ObjectProperty):1.0
+is(isDocumentedIn,ObjectProperty):1.0
+is(isFinancedBy,ObjectProperty):1.0
+is(isIdentifiedBy,ObjectProperty):1.0
+is(isInputTo,ObjectProperty):1.0
+is(isListedIn,ObjectProperty):1.0
+is(isObservedAs,ObjectProperty):1.0
+is(isPerformedDuring,ObjectProperty):1.0
+is(isPerformedFor,ObjectProperty):1.0
+is(isPlannedIn,ObjectProperty):1.0
+is(isPrescribedBy,ObjectProperty):1.0
+is(isRecordedIn,ObjectProperty):1.0
+is(isResponsibleFor,ObjectProperty):1.0
+is(isScheduledIn,ObjectProperty):1.0
+is(isTheResultOf,ObjectProperty):1.0
+is(isTimeIntervalFor,ObjectProperty):1.0
+is(issues,ObjectProperty):1.0
+is(limits,ObjectProperty):1.0
+is(links,ObjectProperty):1.0
+is(maintains,ObjectProperty):1.0
+is(manages,ObjectProperty):1.0
+is(partOf,ObjectProperty):1.0
+is(participatesIn,ObjectProperty):1.0
+is(performs,ObjectProperty):1.0
+is(provides,ObjectProperty):1.0
+is(providesFeedbackTo,ObjectProperty):1.0
+is(receives,ObjectProperty):1.0
+is(relatesTo,ObjectProperty):1.0
+is(relatesToTheProvisionOf,ObjectProperty):1.0
+is(representsPotentialAspectsOf,ObjectProperty):1.0
+is(requires,ObjectProperty):1.0
+is(resultsIn,ObjectProperty):1.0
+is(reveals,ObjectProperty):1.0
+is(reviewedDuring,ObjectProperty):1.0
+is(sendsOut,ObjectProperty):1.0
+is(showsTheEvolutionOf,ObjectProperty):1.0
+is(states,ObjectProperty):1.0
+is(supports,ObjectProperty):1.0
+is(takesPlaceDuring,ObjectProperty):1.0
+is(targets,ObjectProperty):1.0
+is(terminatedDuring,ObjectProperty):1.0
+is(Observation.code,DataProperty):1.0
+is(Observation.effectiveDateTime,DataProperty):1.0
+is(Observation.identifier,DataProperty):1.0
+is(Observation.status,DataProperty):1.0
+is(adverse_event,Class):1.0
+SubClassOf(adverse_event,Event,):1.0
+SubClassOf(adverse_event,influences min 1 healthcare_process,):1.0
+SubClassOf(adverse_event,requires exactly 1 adverse_event_management):1.0
+is(adverse_event_management,Class):1.0
+SubClassOf(adverse_event_management,care_activity):1.0
+is(appointment,Class):1.0
+SubClassOf(appointment,Event):1.0
+is(automatedCare,Class):1.0
+SubClassOf(automatedCare,Event,):1.0
+SubClassOf(automatedCare,resultsIn some non-ratified_healthcare_information,):1.0
+SubClassOf(automatedCare,reviewedDuring some care_activity,):1.0
+SubClassOf(automatedCare,initiatedDuring exactly 1 care_activity,):1.0
+SubClassOf(automatedCare,terminatedDuring max 1 care_activity):1.0
+is(careProfessional,Class):1.0
+SubClassOf(careProfessional,care_personnel,):1.0
+SubClassOf(careProfessional,care_provider,):1.0
+SubClassOf(careProfessional,hasDetermined some working_diagnosis,):1.0
+SubClassOf(careProfessional,hasRatified some care_information_for_import,):1.0
+SubClassOf(careProfessional,hasRuledOut some excluded_condition,):1.0
+SubClassOf(careProfessional,identifies some prognostic_condition,):1.0
+SubClassOf(careProfessional,issues some referral,):1.0
+SubClassOf(careProfessional,issues some request,):1.0
+SubClassOf(careProfessional,maintains some socialRecord,):1.0
+SubClassOf(careProfessional,maintains some professional_health_record,):1.0
+SubClassOf(careProfessional,manages some care_activity_period,):1.0
+SubClassOf(careProfessional,manages some demand_for_care,):1.0
+SubClassOf(careProfessional,performs some social_care_needs_assessment,):1.0
+SubClassOf(careProfessional,performs some healthcare_needs_assessment,):1.0
+SubClassOf(careProfessional,issues only care_activity_mandate,):1.0
+SubClassOf(careProfessional,has min 1 healthcare_professional_entitlement):1.0
+is(care_activities_bundle,Class):1.0
+SubClassOf(care_activities_bundle,care_activity,):1.0
+SubClassOf(care_activities_bundle,partOf some care_activities_bundle,):1.0
+SubClassOf(care_activities_bundle,relatesTo some care_activity):1.0
+is(care_activity,Class):1.0
+SubClassOf(care_activity,Event,):1.0
+SubClassOf(care_activity,componentOf some adverse_event_management,):1.0
+SubClassOf(care_activity,componentOf some care_activity,):1.0
+SubClassOf(care_activity,componentOf some care_plan,):1.0
+SubClassOf(care_activity,isRecordedIn some health_record,):1.0
+SubClassOf(care_activity,requires some care_resource_management,):1.0
+SubClassOf(care_activity,aggregationOf min 1 care_activity_element,):1.0
+SubClassOf(care_activity,requires min 1 healthcare_resource,):1.0
+SubClassOf(care_activity,targets min 1 healthcare_goal,):1.0
+SubClassOf(care_activity,isPerformedDuring exactly 1 care_activity_period,):1.0
+SubClassOf(care_activity,isPerformedFor exactly 1 subject_of_care,):1.0
+SubClassOf(care_activity,componentOf max 1 care_activities_bundle,):1.0
+SubClassOf(care_activity,componentOf max 1 healthcare_process):1.0
+is(care_activity_delay,Class):1.0
+SubClassOf(care_activity_delay,health_related_period,):1.0
+SubClassOf(care_activity_delay,componentOf exactly 1 mandated_period_of_care):1.0
+is(care_activity_directory,Class):1.0
+is(care_activity_element,Class):1.0
+SubClassOf(care_activity_element,Event):1.0
+is(care_activity_management,Class):1.0
+SubClassOf(care_activity_management,care_activity_element,):1.0
+SubClassOf(care_activity_management,manages min 1 care_activity,):1.0
+SubClassOf(care_activity_management,changesStatusOfHealthcareActivitiesIn exactly 1 care_plan):1.0
+is(care_activity_mandate,Class):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(Thing, request,www.w3.org/2002/07/#):1.0
+is(care_activity_period,Class):1.0
+SubClassOf(care_activity_period,health_related_period,):1.0
+SubClassOf(care_activity_period,takesPlaceDuring max 1 care_appointment):1.0
+is(care_activity_period_element,Class):1.0
+SubClassOf(care_activity_period_element,episode_of_care,):1.0
+SubClassOf(care_activity_period_element,componentOf exactly 1 episode_of_care,):1.0
+SubClassOf(care_activity_period_element,partOf exactly 1 care_activity_period):1.0
+is(care_actor,Class):1.0
+is(care_administration,Class):1.0
+SubClassOf(care_administration,Event,):1.0
+SubClassOf(care_administration,supports min 1 healthcare_process):1.0
+is(care_appointment,Class):1.0
+SubClassOf(care_appointment,appointment,):1.0
+SubClassOf(care_appointment,isAppointmentFor exactly 1 contact,):1.0
+SubClassOf(care_appointment,isScheduledIn max 1 care_plan):1.0
+is(care_assessment,Class):1.0
+SubClassOf(care_assessment,care_activity_element):1.0
+is(care_commitment,Class):1.0
+SubClassOf(care_commitment,Event,):1.0
+SubClassOf(care_commitment,relatesToTheProvisionOf min 1 care_activity):1.0
+is(care_communication,Class):1.0
+SubClassOf(care_communication,care_activity_element):1.0
+is(care_documenting,Class):1.0
+SubClassOf(care_documenting,care_activity_element,):1.0
+SubClassOf(care_documenting,maintains min 1 health_record):1.0
+is(care_evaluation,Class):1.0
+SubClassOf(care_evaluation,care_activity_element,):1.0
+SubClassOf(care_evaluation,evaluatesAspectsOf min 1 care_activity):1.0
+is(care_information_for_import,Class):1.0
+is(care_investigation,Class):1.0
+SubClassOf(care_investigation,care_activity_element,):1.0
+SubClassOf(care_investigation,reveals some observed_condition,):1.0
+SubClassOf(care_investigation,clarifies exactly 1 health_state):1.0
+is(care_matter,Class):1.0
+SubClassOf(care_matter,State):1.0
+is(care_organization,Class):1.0
+SubClassOf(care_organization,care_provider):1.0
+is(care_period_mandate,Class):1.0
+is(care_personnel,Class):1.0
+SubClassOf(care_personnel,personRole,):1.0
+SubClassOf(care_personnel,role,):1.0
+SubClassOf(care_personnel,care_actor,):1.0
+SubClassOf(care_personnel,participatesIn some contact,):1.0
+SubClassOf(care_personnel,sendsOut some clinical_report):1.0
+is(care_plan,Class):1.0
+is(care_process_evaluation,Class):1.0
+SubClassOf(care_process_evaluation,care_evaluation,):1.0
+SubClassOf(care_process_evaluation,evaluates min 1 healthcare_process):1.0
+is(care_provider,Class):1.0
+SubClassOf(care_provider,care_actor,):1.0
+SubClassOf(care_provider,arranges some initial_contact,):1.0
+SubClassOf(care_provider,isResponsibleFor some socialRecord,):1.0
+SubClassOf(care_provider,isResponsibleFor some professional_health_record,):1.0
+SubClassOf(care_provider,isResponsibleFor some resource_delay,):1.0
+SubClassOf(care_provider,manages some episode_of_care,):1.0
+SubClassOf(care_provider,performs some care_resource_management,):1.0
+SubClassOf(care_provider,sendsOut some clinical_report,):1.0
+SubClassOf(care_provider,acceptsOrDenies min 1 demand_for_care,):1.0
+SubClassOf(care_provider,hasCarePeriodMandateFor min 1 mandated_period_of_care,):1.0
+SubClassOf(care_provider,isAbleTobeAssigned min 1 care_period_mandate,):1.0
+SubClassOf(care_provider,isResponsibleFor min 1 mandated_period_of_care,):1.0
+SubClassOf(care_provider,performs min 1 socialCareProviderActivity,):1.0
+SubClassOf(care_provider,performs min 1 care_provider_activity,):1.0
+SubClassOf(care_provider,provides min 1 healthcare,):1.0
+SubClassOf(care_provider,receives min 1 demand_for_care,):1.0
+SubClassOf(care_provider,states min 1 care_commitment,):1.0
+SubClassOf(care_provider,has exactly 1 care_activity_directory):1.0
+is(care_provider_activity,Class):1.0
+SubClassOf(care_provider_activity,care_activity,):1.0
+SubClassOf(care_provider_activity,generates some care_information_for_import,):1.0
+SubClassOf(care_provider_activity,address min 1 health_issue,):1.0
+SubClassOf(care_provider_activity,requires min 1 care_activity_mandate):1.0
+is(care_quality_management,Class):1.0
+SubClassOf(care_quality_management,care_activity_element,):1.0
+SubClassOf(care_quality_management,controlsQualityOf min 1 healthcare_process):1.0
+is(care_resource_management,Class):1.0
+SubClassOf(care_resource_management,care_activity_element,):1.0
+SubClassOf(care_resource_management,direct_controlTheSupply_useOf min 1 healthcare_resource):1.0
+is(care_third_party_activity,Class):1.0
+SubClassOf(care_third_party_activity,care_activity,):1.0
+SubClassOf(care_third_party_activity,generates some non-ratified_healthcare_information,):1.0
+SubClassOf(care_third_party_activity,requires min 1 care_activity_mandate):1.0
+is(care_treatment,Class):1.0
+SubClassOf(care_treatment,care_activity_element,):1.0
+SubClassOf(care_treatment,influences exactly 1 health_state):1.0
+is(clinical_process,Class):1.0
+SubClassOf(clinical_process,healthcare_process):1.0
+is(clinical_process_episode,Class):1.0
+SubClassOf(clinical_process_episode,health_related_period,):1.0
+SubClassOf(clinical_process_episode,isTimeIntervalFor exactly 1 clinical_process):1.0
+is(clinical_process_interest,Class):1.0
+SubClassOf(clinical_process_interest,health_thread):1.0
+is(clinical_process_outcome_evaluation,Class):1.0
+SubClassOf(clinical_process_outcome_evaluation,care_evaluation,):1.0
+SubClassOf(clinical_process_outcome_evaluation,evaluatesOutcomeOf exactly 1 clinical_process):1.0
+is(clinical_report,Class):1.0
+is(consent_competence,Class):1.0
+is(considered_condition,Class):1.0
+SubClassOf(considered_condition,potential_health_condition,):1.0
+SubClassOf(considered_condition,isBasedOn min 1 observed_condition):1.0
+is(contact,Class):1.0
+SubClassOf(contact,Event,):1.0
+SubClassOf(contact,takesPlaceDuring exactly 1 contact_period):1.0
+is(contact_period,Class):1.0
+SubClassOf(contact_period,care_activity_period):1.0
+is(demand_for_care,Class):1.0
+is(dissent,Class):1.0
+SubClassOf(dissent,Event,):1.0
+SubClassOf(dissent,limits min 1 care_matter,):1.0
+SubClassOf(dissent,requires exactly 1 consent_competence):1.0
+is(episode_of_care,Class):1.0
+SubClassOf(episode_of_care,health_related_period,):1.0
+SubClassOf(episode_of_care,isCentredOn exactly 1 health_issue):1.0
+is(episodes_of_care_bundle,Class):1.0
+SubClassOf(episodes_of_care_bundle,health_related_period,):1.0
+SubClassOf(episodes_of_care_bundle,aggregationOf min 1 episode_of_care):1.0
+is(excluded_condition,Class):1.0
+SubClassOf(excluded_condition,considered_condition):1.0
+is(healthApproach,Class):1.0
+SubClassOf(healthApproach,episode_of_care,):1.0
+SubClassOf(healthApproach,address exactly 1 healthcare_goal):1.0
+is(health_concern,Class):1.0
+is(health_condition,Class):1.0
+is(health_condition_delay,Class):1.0
+SubClassOf(health_condition_delay,care_activity_delay):1.0
+is(health_condition_evolution,Class):1.0
+SubClassOf(health_condition_evolution,health_thread,):1.0
+SubClassOf(health_condition_evolution,showsTheEvolutionOf min 1 health_condition,):1.0
+SubClassOf(health_condition_evolution,relatesTo exactly 1 input_health_state):1.0
+is(health_condition_period,Class):1.0
+SubClassOf(health_condition_period,health_related_period):1.0
+is(health_issue,Class):1.0
+is(health_need,Class):1.0
+SubClassOf(health_need,State,):1.0
+SubClassOf(health_need,isBackgroundFor some reason_for_demand_for_care,):1.0
+SubClassOf(health_need,isConsideredDuring some healthcare_needs_assessment,):1.0
+SubClassOf(health_need,isDeficitIn exactly 1 health_state):1.0
+is(health_problem_list,Class):1.0
+SubClassOf(health_problem_list,health_thread):1.0
+is(health_record,Class):1.0
+is(health_related_period,Class):1.0
+SubClassOf(health_related_period,Event,):1.0
+SubClassOf(health_related_period,aggregationOf some health_related_period,):1.0
+SubClassOf(health_related_period,relatesToTheProvisionOf some health_related_period):1.0
+is(health_state,Class):1.0
+SubClassOf(health_state,State,):1.0
+SubClassOf(health_state,isObservedAs some observed_condition):1.0
+is(health_thread,Class):1.0
+SubClassOf(health_thread,Event,):1.0
+SubClassOf(health_thread,links some care_matter,):1.0
+SubClassOf(health_thread,links some health_thread,):1.0
+SubClassOf(health_thread,delineates max 1 episodes_of_care_bundle,):1.0
+SubClassOf(health_thread,delineates max 1 health_concern):1.0
+is(healthcare,Class):1.0
+SubClassOf(healthcare,Event,):1.0
+SubClassOf(healthcare,isFinancedBy some healthcare_funds):1.0
+is(healthcare_funds,Class):1.0
+is(healthcare_goal,Class):1.0
+is(healthcare_needs_assessment,Class):1.0
+SubClassOf(healthcare_needs_assessment,care_assessment,):1.0
+SubClassOf(healthcare_needs_assessment,identifies some needed_care_activity):1.0
+is(healthcare_process,Class):1.0
+SubClassOf(healthcare_process,Process,):1.0
+SubClassOf(healthcare_process,isDocumentedIn some health_record,):1.0
+SubClassOf(healthcare_process,isPlannedIn some care_plan,):1.0
+SubClassOf(healthcare_process,isPerformedFor exactly 1 subject_of_care,):1.0
+SubClassOf(healthcare_process,hasOutput max 1 output_health_state,):1.0
+SubClassOf(healthcare_process,providesFeedbackTo max 1 care_quality_management):1.0
+is(healthcare_professional_entitlement,Class):1.0
+is(healthcare_resource,Class):1.0
+is(healthcare_service,Class):1.0
+SubClassOf(healthcare_service,service,):1.0
+SubClassOf(healthcare_service,isListedIn min 1 healthcare_service_directory,):1.0
+SubClassOf(healthcare_service,isTheResultOf exactly 1 healthcare_process):1.0
+is(healthcare_service_directory,Class):1.0
+is(informed_consent,Class):1.0
+is(initial_contact,Class):1.0
+SubClassOf(initial_contact,contact,):1.0
+SubClassOf(initial_contact,establishes exactly 1 clinical_process):1.0
+is(input_health_state,Class):1.0
+SubClassOf(input_health_state,health_state):1.0
+is(mandated_period_of_care,Class):1.0
+SubClassOf(mandated_period_of_care,health_related_period,):1.0
+SubClassOf(mandated_period_of_care,isDocumentedIn min 1 professional_health_record):1.0
+is(medicinal_product,Class):1.0
+SubClassOf(medicinal_product,product):1.0
+is(medium,Class):1.0
+SubClassOf(medium,Physical-Object):1.0
+is(needed_care_activity,Class):1.0
+SubClassOf(needed_care_activity,care_activities_bundle,):1.0
+SubClassOf(needed_care_activity,address min 1 health_need):1.0
+is(next_of_kin,Class):1.0
+SubClassOf(next_of_kin,personRole):1.0
+is(non-ratified_healthcare_information,Class):1.0
+is(observed_condition,Class):1.0
+SubClassOf(observed_condition,health_condition,):1.0
+SubClassOf(observed_condition,Observation.basedOn some informed_consent,):1.0
+SubClassOf(observed_condition,Observation.encounter some care_activity,):1.0
+SubClassOf(observed_condition,Observation.performer some careProfessional,):1.0
+SubClassOf(observed_condition,Observation.subject some subject_of_care,):1.0
+SubClassOf(observed_condition,hasBeenObservedDuring exactly 1 health_condition_period,):1.0
+is(Literal,,Observation.code some www.w3.org/2000/01/-schema#):1.0
+is(Literal,,Observation.identifier some www.w3.org/2000/01/-schema#):1.0
+is(Literal,,Observation.status some www.w3.org/2000/01/-schema#):1.0
+is(Literal,,Observation.effectiveDateTime only dateTime):1.0
+is(other_carer,Class):1.0
+SubClassOf(other_carer,personRole):1.0
+is(output_health_state,Class):1.0
+SubClassOf(output_health_state,health_state):1.0
+is(potential_health_condition,Class):1.0
+SubClassOf(potential_health_condition,health_condition,):1.0
+SubClassOf(potential_health_condition,representsPotentialAspectsOf exactly 1 health_state):1.0
+is(prescribed_self-care,Class):1.0
+SubClassOf(prescribed_self-care,self-care_activity,):1.0
+SubClassOf(prescribed_self-care,isPrescribedBy exactly 1 careProfessional,):1.0
+SubClassOf(prescribed_self-care,takesPlaceDuring exactly 1 self-care_period):1.0
+is(prescribed_third_party_activity,Class):1.0
+SubClassOf(prescribed_third_party_activity,care_third_party_activity,):1.0
+SubClassOf(prescribed_third_party_activity,isPrescribedBy exactly 1 careProfessional):1.0
+is(product,Class):1.0
+SubClassOf(product,Physical-Object):1.0
+is(professional_health_record,Class):1.0
+is(professionally_assessed_condition,Class):1.0
+SubClassOf(professionally_assessed_condition,observed_condition,):1.0
+SubClassOf(professionally_assessed_condition,isIdentifiedBy exactly 1 careProfessional):1.0
+is(prognostic_condition,Class):1.0
+SubClassOf(prognostic_condition,potential_health_condition):1.0
+is(reason_for_demand_for_care,Class):1.0
+is(referral,Class):1.0
+is(request,Class):1.0
+DisjointWith(request,care_activity_mandate):1.0
+is(resource_delay,Class):1.0
+SubClassOf(resource_delay,care_activity_delay):1.0
+is(resultant_condition,Class):1.0
+SubClassOf(resultant_condition,observed_condition,):1.0
+SubClassOf(resultant_condition,isInputTo some clinical_process_outcome_evaluation):1.0
+is(risk_condition,Class):1.0
+SubClassOf(risk_condition,potential_health_condition):1.0
+is(self-care_activity,Class):1.0
+SubClassOf(self-care_activity,care_activity,):1.0
+SubClassOf(self-care_activity,generates some non-ratified_healthcare_information):1.0
+is(self-care_period,Class):1.0
+SubClassOf(self-care_period,care_activity_period):1.0
+is(service,Class):1.0
+SubClassOf(service,Event):1.0
+is(subject_of_care,Class):1.0
+SubClassOf(subject_of_care,personRole):1.0
+is(subject_of_care_desire,Class):1.0
+SubClassOf(subject_of_care_desire,State):1.0
+is(subject_of_care_preference_delay,Class):1.0
+SubClassOf(subject_of_care_preference_delay,care_activity_delay,):1.0
+SubClassOf(subject_of_care_preference_delay,isCausedBy exactly 1 subject_of_care):1.0
+is(subject_of_care_proxy,Class):1.0
+SubClassOf(subject_of_care_proxy,personRole):1.0
+is(target_condition,Class):1.0
+SubClassOf(target_condition,potential_health_condition):1.0
+is(working_diagnosis,Class):1.0
+SubClassOf(working_diagnosis,considered_condition,):1.0
+SubClassOf(working_diagnosis,professionally_assessed_condition,):1.0
+SubClassOf(working_diagnosis,isConsistentWith min 1 observed_condition):1.0
+is(Event,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Physical-Object,Class):1.0
+is(Process,Class):1.0
+SubClassOf(Process,Stative):1.0
+is(State,Class):1.0
+SubClassOf(State,Stative):1.0
+is(Stative,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(administrative_division,Class):1.0
+is(country,Class):1.0
+SubClassOf(country,administrative_division):1.0
+is(personRole,Class):1.0
+SubClassOf(personRole,role):1.0
+is(socialCareProcess,Class):1.0
+SubClassOf(socialCareProcess,Process):1.0
+is(socialCareProviderActivity,Class):1.0
+SubClassOf(socialCareProviderActivity,social_care_activity):1.0
+is(socialNeed,Class):1.0
+SubClassOf(socialNeed,State,):1.0
+SubClassOf(socialNeed,isConsideredDuring some social_care_needs_assessment):1.0
+is(socialRecord,Class):1.0
+is(social_care_activity,Class):1.0
+SubClassOf(social_care_activity,Event,):1.0
+SubClassOf(social_care_activity,isPerformedFor exactly 1 subject_of_care):1.0
+is(social_care_needs_assessment,Class):1.0
+SubClassOf(social_care_needs_assessment,care_assessment):1.0
+is(socialcareActivityElement,Class):1.0
+SubClassOf(socialcareActivityElement,Event):1.0
+is(role,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(Italy,Individual):1.0
+Types(Italy,country):1.0

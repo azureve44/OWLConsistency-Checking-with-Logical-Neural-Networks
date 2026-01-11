@@ -1,0 +1,152 @@
+BFO_0000066 is ObjectProperty
+BFO_0000068 is ObjectProperty
+OBI_0000293 is ObjectProperty
+OBI_0000293 Domain OBI_0000011
+OBI_0000299 is ObjectProperty
+OBI_0000299 Domain OBI_0000011
+RO_0000057 is ObjectProperty
+www.obofoundry.org/ro/ro.# is ObjectProperty
+AERO_0000015 is Class
+preceded_by some is ProcessualEntity and (www.obofoundry.org/ro/ro.#
+preceded_by some is (OBI_0000274 or OBI_0600007))
+preceded_by some SubClassOf ProcessualEntity
+AERO_0000016 is Class
+preceded_by some VO_0000002) is AERO_0000015 and (www.obofoundry.org/ro/ro.#
+preceded_by some VO_0000002) SubClassOf AERO_0000015
+AERO_0000067 is Class
+AERO_0000067 SubClassOf ProcessualEntity,
+AERO_0000067 SubClassOf OBI_0000293 some OBI_0000968
+AERO_0000068 is Class
+AERO_0000080 is Class
+AERO_0000080 SubClassOf ProcessualEntity,
+AERO_0000080 SubClassOf OBI_0000299 some IAO_0000088
+AERO_0000207 is Class
+AERO_0000207 SubClassOf OBI_0000988
+AERO_0000209 is Class
+AERO_0000209 SubClassOf AERO_0000080,
+AERO_0000209 SubClassOf OBI_0000299 some AERO_0000068
+APOLLO_SV_00000008 is Class
+APOLLO_SV_00000008 EquivalentTo OBI_0000011 and (OBI_0000299 some
+APOLLO_SV_00000008 EquivalentTo (IAO_0000010 or IAO_0000096))
+APOLLO_SV_00000008 SubClassOf OBI_0000011
+APOLLO_SV_00000032 is Class
+APOLLO_SV_00000033 is Class
+APOLLO_SV_00000033 EquivalentTo OBI_0000011 and (OBI_0000299 some APOLLO_SV_00000032)
+APOLLO_SV_00000033 SubClassOf OBI_0000011
+APOLLO_SV_00000524 is Class
+APOLLO_SV_00000524 SubClassOf APOLLO_SV_00000008,
+APOLLO_SV_00000524 SubClassOf (OBI_0000293 some
+APOLLO_SV_00000524 SubClassOf (IAO_0000010 or IAO_0000096)) and (OBI_0000299 some IAO_0000010)
+APOLLO_SV_00000796 is Class
+APOLLO_SV_00000796 EquivalentTo OBI_0000011 and (OBI_0000299 some IAO_0000100)
+APOLLO_SV_00000796 SubClassOf OBI_0000011
+BFO_0000015 is Class
+IAO_0000010 is Class
+IAO_0000013 is Class
+IAO_0000027 is Class
+IAO_0000030 is Class
+IAO_0000088 is Class
+IAO_0000096 is Class
+IAO_0000100 is Class
+IAO_0000310 is Class
+IAO_0000443 is Class
+IAO_0000443 SubClassOf OBI_0000011,
+IAO_0000443 SubClassOf OBI_0000293 some IAO_0000013,
+IAO_0000443 SubClassOf OBI_0000299 some IAO_0000027
+IAO_0000444 is Class
+IAO_0000444 SubClassOf OBI_0000011
+IAO_0000572 is Class
+IAO_0000572 SubClassOf OBI_0000011,
+IAO_0000572 SubClassOf OBI_0000293 some IAO_0000030,
+IAO_0000572 SubClassOf OBI_0000299 some IAO_0000310
+IAO_0000574 is Class
+IAO_0000574 SubClassOf OBI_0000011,
+IAO_0000574 SubClassOf OBI_0000299 some IAO_0000577,
+IAO_0000574 SubClassOf RO_0000057 some IAO_0000579
+IAO_0000575 is Class
+IAO_0000575 SubClassOf OBI_0000011,
+IAO_0000575 SubClassOf OBI_0000293 some IAO_0000030,
+IAO_0000575 SubClassOf OBI_0000293 some IAO_0000577,
+IAO_0000575 SubClassOf RO_0000057 some IAO_0000579,
+IAO_0000575 SubClassOf RO_0000057 only (OBI_0000293 some IAO_0000030)
+IAO_0000577 is Class
+IAO_0000579 is Class
+IAO_0000579 DisjointWith OBI_0000293 some IAO_0000030
+IAO_0000580 is Class
+IAO_0000580 SubClassOf OBI_0000011,
+IAO_0000580 SubClassOf OBI_0000293 some IAO_0000577,
+IAO_0000580 SubClassOf OBI_0000299 some IAO_0000030,
+IAO_0000580 SubClassOf RO_0000057 some IAO_0000579
+IAO_0000650 is Class
+IAO_0000650 SubClassOf OBI_0000011,
+IAO_0000650 SubClassOf OBI_0000293 some IAO_0000030,
+IAO_0000650 SubClassOf OBI_0000299 some IAO_0000030
+IAO_0020000 is Class
+IAO_0020010 is Class
+IAO_0020010 EquivalentTo OBI_0000011 and (OBI_0000299 some IAO_0020000)
+IAO_0020010 SubClassOf OBI_0000011
+OBI_0000011 is Class
+OBI_0000011 SubClassOf BFO_0000015,
+OBI_0000011 SubClassOf ProcessualEntity
+OBI_0000066 is Class
+OBI_0000066 SubClassOf OBI_0000011
+OBI_0000075 is Class
+OBI_0000094 is Class
+OBI_0000094 SubClassOf OBI_0000011
+OBI_0000274 is Class
+OBI_0000274 SubClassOf OBI_0000652
+OBI_0000471 is Class
+OBI_0000471 SubClassOf OBI_0000011
+OBI_0000652 is Class
+OBI_0000652 SubClassOf OBI_0000094
+OBI_0000968 is Class
+OBI_0000988 is Class
+OBI_0000988 SubClassOf OBI_0200000,
+OBI_0000988 SubClassOf OBI_0000293 some OGMS_0000014,
+OBI_0000988 SubClassOf OBI_0000299 some OBI_0000075
+OBI_0200000 is Class
+OBI_0200000 SubClassOf OBI_0000011
+OBI_0600007 is Class
+OGMS_0000014 is Class
+OGMS_0000045 is Class
+OGMS_0000059 is Class
+OGMS_0000059 SubClassOf ProcessualEntity,
+OGMS_0000059 SubClassOf inverse (BFO_0000068) some OGMS_0000045
+UBERON_0001004 is Class
+UBERON_0012125 is Class
+VO_0000002 is Class
+ogms/ is Class
+GO_0006954 is purl.org/obo//GO#
+ogms/ is Class
+GO_0006954 is purl.org/obo//GO#
+ogms/ is Class
+OMRE_0000336 is ogms/
+ogms/ is Class
+ogms/ SubClassOf ProcessualEntity,
+ogms/ SubClassOf BFO_0000066 some UBERON_0001004
+ogms/ is Class
+OMRE_0000287 is ogms/
+ogms/ is Class
+ogms/ SubClassOf ProcessualEntity,
+ogms/ SubClassOf BFO_0000066 some UBERON_0001004
+ogms/ is Class
+ogms/ SubClassOf ProcessualEntity
+ogms/ is Class
+ogms/ SubClassOf ProcessualEntity,
+ogms/ SubClassOf BFO_0000066 some UBERON_0012125
+ogms/ is Class
+ogms/ SubClassOf ProcessualEntity,
+ogms/ SubClassOf BFO_0000066 some UBERON_0001004
+ogms/ is Class
+ogms/ SubClassOf ProcessualEntity
+ogms/ is Class
+ogms/ SubClassOf ProcessualEntity
+purl.org/obo//GO# is Class
+purl.org/obo//GO# SubClassOf ProcessualEntity
+purl.org/obo//GO# is Class
+purl.org/obo//GO# SubClassOf ProcessualEntity
+purl.org/obo//GO# is Class
+purl.org/obo//GO# SubClassOf ProcessualEntity
+ProcessualEntity is Class
+Thing is www.w3.org/2002/07/#
+www.w3.org/2002/07/# is Class

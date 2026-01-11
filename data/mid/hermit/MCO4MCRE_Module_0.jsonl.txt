@@ -1,0 +1,87 @@
+h&e is Class
+h&e SubClassOf pathology
+_any_instance is Class
+_any_instance EquivalentTo endoscopy or pathology or radiology
+Thing is www.w3.org/2002/07/#
+acid_fast is Class
+acid_fast SubClassOf other_staining
+alcian_blue is Class
+alcian_blue SubClassOf other_staining
+angiography is Class
+angiography SubClassOf radiology
+angiography DisjointWith no_angiography
+arthroscopy is Class
+arthroscopy SubClassOf endoscopy
+broncoscopy is Class
+broncoscopy SubClassOf endoscopy
+colonoscopy is Class
+colonoscopy SubClassOf endoscopy
+congo_red is Class
+congo_red SubClassOf other_staining
+ct is Class
+ct SubClassOf radiology
+cystoscopy is Class
+cystoscopy SubClassOf endoscopy
+echocardiogram is Class
+echocardiogram SubClassOf ultrasound
+echocardiogram DisjointWith other_ultrasound
+egd is Class
+egd SubClassOf endoscopy
+endoscopy is Class
+endoscopy EquivalentTo arthroscopy or broncoscopy or colonoscopy or cystoscopy or egd or gastroscopy or laryngoscopy
+endoscopy SubClassOf _any_instance
+fish is Class
+fish SubClassOf other_staining
+gastroscopy is Class
+gastroscopy SubClassOf endoscopy
+giemsa is Class
+giemsa SubClassOf other_staining
+gram is Class
+gram SubClassOf other_staining
+immunofluorescence is Class
+immunofluorescence SubClassOf other_staining
+immunostaining is Class
+immunostaining SubClassOf pathology
+laryngoscopy is Class
+laryngoscopy SubClassOf endoscopy
+masson_trichrome is Class
+masson_trichrome SubClassOf other_staining
+methenamine_silver is Class
+methenamine_silver SubClassOf other_staining
+methylene_blue is Class
+methylene_blue SubClassOf other_staining
+mri is Class
+mri SubClassOf radiology
+no_angiography is Class
+no_angiography SubClassOf radiology
+no_angiography DisjointWith angiography
+other_staining is Class
+other_staining EquivalentTo acid_fast or alcian_blue or congo_red or fish or giemsa or gram or immunofluorescence or masson_trichrome or methenamine_silver or methylene_blue or papanicolaou or pas or van_gieson
+other_staining SubClassOf pathology
+other_ultrasound is Class
+other_ultrasound SubClassOf ultrasound
+other_ultrasound DisjointWith echocardiogram
+papanicolaou is Class
+papanicolaou SubClassOf other_staining
+pas is Class
+pas SubClassOf other_staining
+pathology is Class
+pathology EquivalentTo immunostaining or other_staining or h&e
+pathology SubClassOf _any_instance
+radiology is Class
+radiology EquivalentTo angiography or no_angiography,
+radiology EquivalentTo ct or mri or ultrasound or x_ray
+radiology SubClassOf _any_instance
+ultrasound is Class
+ultrasound EquivalentTo echocardiogram or other_ultrasound
+ultrasound SubClassOf radiology
+van_gieson is Class
+van_gieson SubClassOf other_staining
+x_ray is Class
+x_ray SubClassOf radiology
+www.w3.org/2002/07/# is Class
+www.w3.org/2002/07/# DisjointClasses acid_fast,alcian_blue,congo_red,fish,giemsa,gram,immunofluorescence,masson_trichrome,methenamine_silver,methylene_blue,papanicolaou,pas,van_gieson
+www.w3.org/2002/07/# DisjointClasses arthroscopy,broncoscopy,colonoscopy,cystoscopy,egd,gastroscopy,laryngoscopy
+www.w3.org/2002/07/# DisjointClasses ct,mri,ultrasound,x_ray
+www.w3.org/2002/07/# DisjointClasses endoscopy,pathology,radiology
+www.w3.org/2002/07/# DisjointClasses immunostaining,other_staining,h&e

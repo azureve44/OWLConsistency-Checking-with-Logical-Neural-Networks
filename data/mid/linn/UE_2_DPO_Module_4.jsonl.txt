@@ -1,0 +1,286 @@
+predicate(short,is,Datatype).
+predicate(BFO_0000050,is,ObjectProperty).
+predicate(BFO_0000051,is,ObjectProperty).
+predicate(BFO_0000063,is,ObjectProperty).
+predicate(FBcv_0008000,is,ObjectProperty).
+predicate(FBdv_00018001,is,ObjectProperty).
+predicate(RO_0000052,is,ObjectProperty).
+predicate(RO_0000086,is,ObjectProperty).
+predicate(RO_0002351,is,ObjectProperty).
+predicate(RO_0002573,is,ObjectProperty).
+predicate(RO_0002029,is,DataProperty).
+predicate(BFO_0000020,is,Class).
+predicate(CARO_0000012,is,Class).
+predicate(CHEBI_15022,is,Class).
+predicate(CHEBI_15022,SubClassOf,CHEBI_17891).
+predicate(CHEBI_17891,is,Class).
+predicate(CHEBI_23367,is,Class).
+predicate(CHEBI_23367,SubClassOf,CHEBI_24431).
+predicate(CHEBI_24431,is,Class).
+predicate(CHEBI_24835,is,Class).
+predicate(CHEBI_24835,SubClassOf,CHEBI_23367).
+predicate(CHEBI_25806,is,Class).
+predicate(CHEBI_33232,is,Class).
+predicate(CHEBI_33252,is,Class).
+predicate(CHEBI_33252,SubClassOf,CHEBI_36347).
+predicate(CHEBI_33253,is,Class).
+predicate(CHEBI_33253,SubClassOf,CHEBI_36347).
+predicate(CHEBI_33259,is,Class).
+predicate(CHEBI_33259,SubClassOf,CHEBI_23367).
+predicate(CHEBI_33262,is,Class).
+predicate(CHEBI_33262,SubClassOf,CHEBI_24835,).
+predicate(CHEBI_33262,SubClassOf,CHEBI_25806,).
+predicate(CHEBI_33262,SubClassOf,CHEBI_33259).
+predicate(CHEBI_33263,is,Class).
+predicate(CHEBI_33263,SubClassOf,CHEBI_33262).
+predicate(CHEBI_33284,is,Class).
+predicate(CHEBI_33284,SubClassOf,CHEBI_78295).
+predicate(CHEBI_33579,is,Class).
+predicate(CHEBI_33579,SubClassOf,CHEBI_23367).
+predicate(CHEBI_35554,is,Class).
+predicate(CHEBI_35620,is,Class).
+predicate(CHEBI_35620,SubClassOf,CHEBI_35554).
+predicate(CHEBI_36342,is,Class).
+predicate(CHEBI_36347,is,Class).
+predicate(CHEBI_36347,SubClassOf,CHEBI_36342).
+predicate(CHEBI_36357,is,Class).
+predicate(CHEBI_36357,SubClassOf,CHEBI_23367).
+predicate(CHEBI_46662,is,Class).
+predicate(CHEBI_46662,SubClassOf,CHEBI_59999).
+predicate(CHEBI_52211,is,Class).
+predicate(CHEBI_59999,is,Class).
+predicate(CHEBI_59999,SubClassOf,CHEBI_24431).
+predicate(CHEBI_64047,is,Class).
+predicate(CHEBI_64047,SubClassOf,CHEBI_33232,).
+predicate(CHEBI_64047,SubClassOf,CHEBI_78295).
+predicate(CHEBI_77974,is,Class).
+predicate(CHEBI_77974,SubClassOf,CHEBI_64047).
+predicate(CHEBI_78017,is,Class).
+predicate(CHEBI_78017,SubClassOf,CHEBI_64047).
+predicate(CHEBI_78295,is,Class).
+predicate(CHEBI_78295,SubClassOf,CHEBI_52211).
+predicate(ENVO_01000305,is,Class).
+predicate(ENVO_01000305,EquivalentTo,ENVO_01000997 and (RO_0000086 some PATO_0001305)).
+predicate(ENVO_01000305,SubClassOf,ENVO_01000997,).
+predicate(ENVO_01000305,SubClassOf,RO_0000086 some PATO_0001305).
+predicate(ENVO_01000846,is,Class).
+predicate(ENVO_01000997,is,Class).
+predicate(ENVO_03520007,is,Class).
+predicate(ENVO_03520007,SubClassOf,ENVO_01000846).
+predicate(FBbt_00000001,is,Class).
+predicate(FBcv_0000006,is,Class).
+predicate(FBcv_0000006,SubClassOf,FBcv_0000376).
+predicate(FBcv_0000007,is,Class).
+predicate(FBcv_0000007,SubClassOf,FBcv_0000377).
+predicate(FBcv_0000347,is,Class).
+predicate(FBcv_0000347,SubClassOf,BFO_0000020).
+predicate(FBcv_0000348,is,Class).
+predicate(FBcv_0000348,SubClassOf,FBcv_0000347).
+predicate(FBcv_0000348,DisjointWith,FBcv_0001347).
+predicate(FBcv_0000349,is,Class).
+predicate(FBcv_0000349,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0000349,EquivalentTo,(PATO_0000719 and (RO_0000052 some FBbt_00000001))).
+predicate(FBcv_0000349,SubClassOf,FBcv_0000347,).
+predicate(FBcv_0000349,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0000349,SubClassOf,(PATO_0000719 and (RO_0000052 some FBbt_00000001))).
+predicate(FBcv_0000350,is,Class).
+predicate(FBcv_0000350,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0000350,EquivalentTo,((RO_0000052 some).
+predicate(FBcv_0000350,EquivalentTo,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0000350,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00007026)))) and (RO_0002351 only).
+predicate(FBcv_0000350,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00007026)))))) and (RO_0002029 some short[= "5"^^short , < "50"^^short]))).
+predicate(FBcv_0000350,SubClassOf,FBcv_0000349,).
+predicate(FBcv_0000350,SubClassOf,FBcv_0002015,).
+predicate(FBcv_0000350,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0000350,SubClassOf,((RO_0000052 some).
+predicate(FBcv_0000350,SubClassOf,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0000350,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00007026)))) and (RO_0002351 only).
+predicate(FBcv_0000350,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00007026)))))) and (RO_0002029 some short[= "5"^^short , < "50"^^short]))).
+predicate(FBcv_0000374,is,Class).
+predicate(FBcv_0000374,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0000374,EquivalentTo,(PATO_0000955 and (RO_0000052 some FBbt_00000001))).
+predicate(FBcv_0000374,SubClassOf,FBcv_0000347,).
+predicate(FBcv_0000374,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0000374,SubClassOf,(PATO_0000955 and (RO_0000052 some FBbt_00000001))).
+predicate(FBcv_0000375,is,Class).
+predicate(FBcv_0000375,SubClassOf,FBcv_0000374).
+predicate(FBcv_0000376,is,Class).
+predicate(FBcv_0000376,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0000376,EquivalentTo,(PATO_0000891 and (RO_0000052 some FBbt_00000001))).
+predicate(FBcv_0000376,SubClassOf,FBcv_0000374,).
+predicate(FBcv_0000376,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0000376,SubClassOf,(PATO_0000891 and (RO_0000052 some FBbt_00000001))).
+predicate(FBcv_0000377,is,Class).
+predicate(FBcv_0000377,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0000377,EquivalentTo,(PATO_0000888 and (RO_0000052 some FBbt_00000001))).
+predicate(FBcv_0000377,SubClassOf,FBcv_0000374,).
+predicate(FBcv_0000377,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0000377,SubClassOf,(PATO_0000888 and (RO_0000052 some FBbt_00000001))).
+predicate(FBcv_0001325,is,Class).
+predicate(FBcv_0001347,is,Class).
+predicate(FBcv_0001347,SubClassOf,FBcv_0000347).
+predicate(FBcv_0001347,DisjointWith,FBcv_0000348).
+predicate(FBcv_0002002,is,Class).
+predicate(FBcv_0002002,SubClassOf,FBcv_0002026).
+predicate(FBcv_0002003,is,Class).
+predicate(FBcv_0002005,is,Class).
+predicate(FBcv_0002005,SubClassOf,FBcv_0002010).
+predicate(FBcv_0002007,is,Class).
+predicate(FBcv_0002007,SubClassOf,FBcv_0002012).
+predicate(FBcv_0002008,is,Class).
+predicate(FBcv_0002008,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0002008,EquivalentTo,((RO_0000052 some).
+predicate(FBcv_0002008,EquivalentTo,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002008,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005338)))) and (RO_0002351 only).
+predicate(FBcv_0002008,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005338)))))) and (RO_0002029 some short[= "98"^^short]))).
+predicate(FBcv_0002008,SubClassOf,FBcv_0002003,).
+predicate(FBcv_0002008,SubClassOf,FBcv_0002007,).
+predicate(FBcv_0002008,SubClassOf,FBcv_0002013,).
+predicate(FBcv_0002008,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0002008,SubClassOf,((RO_0000052 some).
+predicate(FBcv_0002008,SubClassOf,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002008,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005338)))) and (RO_0002351 only).
+predicate(FBcv_0002008,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005338)))))) and (RO_0002029 some short[= "98"^^short])),).
+predicate(FBcv_0002008,SubClassOf,BFO_0000051 only (BFO_0000051 some).
+predicate(FBcv_0002008,SubClassOf,(PATO_0000955 and (RO_0000052 some FBbt_00000001)))).
+predicate(FBcv_0002010,is,Class).
+predicate(FBcv_0002010,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0002010,EquivalentTo,((RO_0000052 some).
+predicate(FBcv_0002010,EquivalentTo,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002010,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007001)))) and (RO_0002351 only).
+predicate(FBcv_0002010,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007001)))))) and (RO_0002029 some short[= "50"^^short]))).
+predicate(FBcv_0002010,SubClassOf,FBcv_0002020,).
+predicate(FBcv_0002010,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0002010,SubClassOf,((RO_0000052 some).
+predicate(FBcv_0002010,SubClassOf,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002010,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007001)))) and (RO_0002351 only).
+predicate(FBcv_0002010,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007001)))))) and (RO_0002029 some short[= "50"^^short]))).
+predicate(FBcv_0002011,is,Class).
+predicate(FBcv_0002011,SubClassOf,FBcv_0002012).
+predicate(FBcv_0002012,is,Class).
+predicate(FBcv_0002012,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0002012,EquivalentTo,((RO_0000052 some).
+predicate(FBcv_0002012,EquivalentTo,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002012,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005336)))) and (RO_0002351 only).
+predicate(FBcv_0002012,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005336)))))) and (RO_0002029 some short[= "50"^^short]))).
+predicate(FBcv_0002012,SubClassOf,FBcv_0002023,).
+predicate(FBcv_0002012,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0002012,SubClassOf,((RO_0000052 some).
+predicate(FBcv_0002012,SubClassOf,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002012,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005336)))) and (RO_0002351 only).
+predicate(FBcv_0002012,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005336)))))) and (RO_0002029 some short[= "50"^^short]))).
+predicate(FBcv_0002013,is,Class).
+predicate(FBcv_0002013,SubClassOf,FBcv_0002012,).
+predicate(FBcv_0002013,SubClassOf,FBcv_0002022).
+predicate(FBcv_0002014,is,Class).
+predicate(FBcv_0002014,SubClassOf,FBcv_0002012).
+predicate(FBcv_0002015,is,Class).
+predicate(FBcv_0002020,is,Class).
+predicate(FBcv_0002022,is,Class).
+predicate(FBcv_0002022,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0002022,EquivalentTo,((RO_0000052 some).
+predicate(FBcv_0002022,EquivalentTo,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002022,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005338)))) and (RO_0002351 only).
+predicate(FBcv_0002022,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005338)))))) and (RO_0002029 some short[= "5"^^short]))).
+predicate(FBcv_0002022,SubClassOf,FBcv_0002023,).
+predicate(FBcv_0002022,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0002022,SubClassOf,((RO_0000052 some).
+predicate(FBcv_0002022,SubClassOf,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002022,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005338)))) and (RO_0002351 only).
+predicate(FBcv_0002022,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005338)))))) and (RO_0002029 some short[= "5"^^short]))).
+predicate(FBcv_0002023,is,Class).
+predicate(FBcv_0002025,is,Class).
+predicate(FBcv_0002025,SubClassOf,FBcv_0002036).
+predicate(FBcv_0002026,is,Class).
+predicate(FBcv_0002026,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0002026,EquivalentTo,((RO_0000052 some).
+predicate(FBcv_0002026,EquivalentTo,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002026,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005349)))) and (RO_0002351 only).
+predicate(FBcv_0002026,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005349)))))) and (RO_0002029 some short[= "98"^^short]))).
+predicate(FBcv_0002026,SubClassOf,FBcv_0002027,).
+predicate(FBcv_0002026,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0002026,SubClassOf,((RO_0000052 some).
+predicate(FBcv_0002026,SubClassOf,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002026,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005349)))) and (RO_0002351 only).
+predicate(FBcv_0002026,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005349)))))) and (RO_0002029 some short[= "98"^^short]))).
+predicate(FBcv_0002027,is,Class).
+predicate(FBcv_0002030,is,Class).
+predicate(FBcv_0002030,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0002030,EquivalentTo,((RO_0000052 some).
+predicate(FBcv_0002030,EquivalentTo,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002030,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005349)))) and (RO_0002351 only).
+predicate(FBcv_0002030,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005349)))))) and (RO_0002029 some short[= "98"^^short]))).
+predicate(FBcv_0002030,SubClassOf,FBcv_0002005,).
+predicate(FBcv_0002030,SubClassOf,FBcv_0002027,).
+predicate(FBcv_0002030,SubClassOf,FBcv_0002034,).
+predicate(FBcv_0002030,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0002030,SubClassOf,((RO_0000052 some).
+predicate(FBcv_0002030,SubClassOf,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002030,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005349)))) and (RO_0002351 only).
+predicate(FBcv_0002030,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005349)))))) and (RO_0002029 some short[= "98"^^short]))).
+predicate(FBcv_0002031,is,Class).
+predicate(FBcv_0002031,SubClassOf,FBcv_0002026).
+predicate(FBcv_0002034,is,Class).
+predicate(FBcv_0002034,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0002034,EquivalentTo,((RO_0000052 some).
+predicate(FBcv_0002034,EquivalentTo,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002034,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005349)))) and (RO_0002351 only).
+predicate(FBcv_0002034,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005349)))))) and (RO_0002029 some short[= "50"^^short]))).
+predicate(FBcv_0002034,SubClassOf,FBcv_0002010,).
+predicate(FBcv_0002034,SubClassOf,FBcv_0002039,).
+predicate(FBcv_0002034,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0002034,SubClassOf,((RO_0000052 some).
+predicate(FBcv_0002034,SubClassOf,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002034,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005349)))) and (RO_0002351 only).
+predicate(FBcv_0002034,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005349)))))) and (RO_0002029 some short[= "50"^^short]))).
+predicate(FBcv_0002035,is,Class).
+predicate(FBcv_0002035,SubClassOf,FBcv_0002010).
+predicate(FBcv_0002036,is,Class).
+predicate(FBcv_0002036,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0002036,EquivalentTo,((RO_0000052 some).
+predicate(FBcv_0002036,EquivalentTo,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002036,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006011)))) and (RO_0002351 only).
+predicate(FBcv_0002036,EquivalentTo,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006011)))))) and (RO_0002029 some short[= "50"^^short]))).
+predicate(FBcv_0002036,SubClassOf,FBcv_0002010,).
+predicate(FBcv_0002036,SubClassOf,FBcv_0002038,).
+predicate(FBcv_0002036,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0002036,SubClassOf,((RO_0000052 some).
+predicate(FBcv_0002036,SubClassOf,(FBcv_0006003 and (RO_0002351 some).
+predicate(FBcv_0002036,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006011)))) and (RO_0002351 only).
+predicate(FBcv_0002036,SubClassOf,(CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006011)))))) and (RO_0002029 some short[= "50"^^short]))).
+predicate(FBcv_0002038,is,Class).
+predicate(FBcv_0002039,is,Class).
+predicate(FBcv_0006003,is,Class).
+predicate(FBcv_0007527,is,Class).
+predicate(FBcv_0007536,is,Class).
+predicate(FBcv_0007536,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0007536,EquivalentTo,(PATO_0000912 and (RO_0000052 some GO_0007628) and (RO_0002573 some PATO_0000460))).
+predicate(FBcv_0007536,SubClassOf,FBcv_0007527,).
+predicate(FBcv_0007536,SubClassOf,FBcv_0007538,).
+predicate(FBcv_0007536,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0007536,SubClassOf,(PATO_0000912 and (RO_0000052 some GO_0007628) and (RO_0002573 some PATO_0000460))).
+predicate(FBcv_0007538,is,Class).
+predicate(FBcv_0007548,is,Class).
+predicate(FBcv_0007548,EquivalentTo,BFO_0000051 some).
+predicate(FBcv_0007548,EquivalentTo,(PATO_0000911 and (RO_0000052 some GO_0007628) and (RO_0002573 some PATO_0000460))).
+predicate(FBcv_0007548,SubClassOf,FBcv_0007527,).
+predicate(FBcv_0007548,SubClassOf,FBcv_0007550,).
+predicate(FBcv_0007548,SubClassOf,BFO_0000051 some).
+predicate(FBcv_0007548,SubClassOf,(PATO_0000911 and (RO_0000052 some GO_0007628) and (RO_0002573 some PATO_0000460))).
+predicate(FBcv_0007550,is,Class).
+predicate(FBdv_00005336,is,Class).
+predicate(FBdv_00005338,is,Class).
+predicate(FBdv_00005349,is,Class).
+predicate(FBdv_00006011,is,Class).
+predicate(FBdv_00007001,is,Class).
+predicate(FBdv_00007026,is,Class).
+predicate(GO_0007628,is,Class).
+predicate(PATO_0000460,is,Class).
+predicate(PATO_0000719,is,Class).
+predicate(PATO_0000888,is,Class).
+predicate(PATO_0000891,is,Class).
+predicate(PATO_0000911,is,Class).
+predicate(PATO_0000912,is,Class).
+predicate(PATO_0000955,is,Class).
+predicate(PATO_0001305,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

@@ -1,0 +1,56 @@
+predicate(describes,is,ObjectProperty).
+predicate(is_a,is,ObjectProperty).
+predicate(part_of,is,ObjectProperty).
+predicate(Atrial_fibrillation,is,Class).
+predicate(Atrial_fibrillation,EquivalentTo,is_a some Heart_Disorder).
+predicate(Atrial_fibrillation,SubClassOf,Heart_Disorder).
+predicate(Biopsy_of_Thyroid_Gland,is,Class).
+predicate(Biopsy_of_Thyroid_Gland,SubClassOf,Investigation).
+predicate(Clinical_Aspects,is,Class).
+predicate(Cytologic_Test,is,Class).
+predicate(Diagnostic_Imaging,is,Class).
+predicate(Diagnostic_Imaging,SubClassOf,Investigation).
+predicate(FNA-Tg,is,Class).
+predicate(FNA-Tg,EquivalentTo,is_a some Fine-Needle_Aspiration).
+predicate(FNA-Tg,SubClassOf,Fine-Needle_Aspiration).
+predicate(FNA-calcitonin,is,Class).
+predicate(FNA-calcitonin,EquivalentTo,is_a some Fine-Needle_Aspiration).
+predicate(FNA-calcitonin,SubClassOf,Fine-Needle_Aspiration).
+predicate(Fine-Needle_Aspiration,is,Class).
+predicate(Heart_Disorder,is,Class).
+predicate(Indeterminate,is,Class).
+predicate(Indeterminate,EquivalentTo,describes some Cytologic_Test).
+predicate(Indeterminate,SubClassOf,Cytologic_Test).
+predicate(Investigation,is,Class).
+predicate(Investigation,EquivalentTo,part_of some Clinical_Aspects).
+predicate(Investigation,SubClassOf,Clinical_Aspects).
+predicate(Iodine_I_123_Iodobenzamide,is,Class).
+predicate(Iodine_I_123_Iodobenzamide,EquivalentTo,is_a some Radionuclide_Imaging).
+predicate(Iodine_I_123_Iodobenzamide,SubClassOf,Radionuclide_Imaging).
+predicate(Malignant,is,Class).
+predicate(Malignant,EquivalentTo,describes some Cytologic_Test).
+predicate(Malignant,SubClassOf,Cytologic_Test).
+predicate(Nondiagnosis,is,Class).
+predicate(Nondiagnosis,EquivalentTo,describes some Cytologic_Test).
+predicate(Nondiagnosis,SubClassOf,Cytologic_Test).
+predicate(Parathyroid_Function_Tests,is,Class).
+predicate(Parathyroid_Function_Tests,SubClassOf,Investigation).
+predicate(Positron_Emission_Tomography_and_Computed_Tomography_Scan,is,Class).
+predicate(Radionuclide_Imaging,is,Class).
+predicate(Suspicious_for_Malignancy,is,Class).
+predicate(Suspicious_for_Malignancy,EquivalentTo,describes some Cytologic_Test).
+predicate(Suspicious_for_Malignancy,SubClassOf,Cytologic_Test).
+predicate(Technetium_TC-99m,is,Class).
+predicate(Technetium_TC-99m,EquivalentTo,is_a some Radionuclide_Imaging).
+predicate(Technetium_TC-99m,SubClassOf,Radionuclide_Imaging).
+predicate(Technetium_TC-99m,DisjointWith,is_a some Radionuclide_Imaging).
+predicate(Thyroid_Function_Tests,is,Class).
+predicate(Thyroid_Function_Tests,SubClassOf,Investigation).
+predicate(Tumor_Marker,is,Class).
+predicate(Tumor_Marker,SubClassOf,Investigation).
+predicate(Voice_Assessment,is,Class).
+predicate(Voice_Assessment,SubClassOf,Investigation).
+predicate(Sodium_Fluoride_Positron_Emission_Tomography/,is,Class).
+predicate(Sodium_Fluoride_Positron_Emission_Tomography/,EquivalentTo,is_a some Positron_Emission_Tomography_and_Computed_Tomography_Scan).
+predicate(Sodium_Fluoride_Positron_Emission_Tomography/,SubClassOf,Positron_Emission_Tomography_and_Computed_Tomography_Scan).
+predicate(www.w3.org/2002/07/#,is,Class).

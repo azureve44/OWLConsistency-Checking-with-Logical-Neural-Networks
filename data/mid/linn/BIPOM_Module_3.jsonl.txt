@@ -1,0 +1,103 @@
+predicate(has_input,is,ObjectProperty).
+predicate(has_input,SubPropertyOf,has_participant).
+predicate(has_output,is,ObjectProperty).
+predicate(has_output,SubPropertyOf,has_participant).
+predicate(has_participant,is,ObjectProperty).
+predicate(has_participant,Domain,biological_process).
+predicate(has_participant,Range,participant).
+predicate(has_participant,InverseOf,participates_in).
+predicate(has_subprocess,is,ObjectProperty).
+predicate(mediated_by,is,ObjectProperty).
+predicate(mediated_by,SubPropertyOf,has_participant).
+predicate(participates_in,is,ObjectProperty).
+predicate(participates_in,InverseOf,has_participant).
+predicate(preceded_by,is,ObjectProperty).
+predicate(preceded_by,Domain,biological_process).
+predicate(preceded_by,Range,biological_process).
+predicate(preceded_by,InverseOf,precedes).
+predicate(precedes,is,ObjectProperty).
+predicate(precedes,InverseOf,preceded_by).
+predicate(requires,is,ObjectProperty).
+predicate(requires,Domain,biological_process).
+predicate(requires,Range,Activity).
+predicate(0000001,is,Class).
+predicate(0000001,SubClassOf,biological_process).
+predicate(0000177,is,Class).
+predicate(0000180,is,Class).
+predicate(0000344,is,Class).
+predicate(0000344,SubClassOf,biological_process).
+predicate(ADP,is,Class).
+predicate(Activity,is,Class).
+predicate(Biochemical_Process,is,Class).
+predicate(Biochemical_Process,SubClassOf,biological_process).
+predicate(C20633,is,Class).
+predicate(C20633,SubClassOf,0000001,).
+predicate(C20633,SubClassOf,has_subprocess only Biochemical_Process).
+predicate(Metabolic_pathway,is,Class).
+predicate(Metabolic_pathway,SubClassOf,C20633).
+predicate(biological_mediated_process,is,Class).
+predicate(biological_mediated_process,SubClassOf,biological_process).
+predicate(biological_mediated_process,DisjointWith,biological_spontaneous_process).
+predicate(biological_process,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,has_participant only participant,).
+predicate(Thing,,is,has_input min 1 participant,).
+predicate(Thing,,is,has_output min 1 participant).
+predicate(biological_spontaneous_process,is,Class).
+predicate(biological_spontaneous_process,SubClassOf,biological_process,).
+predicate(biological_spontaneous_process,SubClassOf,requires only spontaneous_activity).
+predicate(biological_spontaneous_process,DisjointWith,biological_mediated_process).
+predicate(metabolite_binding,is,Class).
+predicate(multimer_of_simple_chemicals,is,Class).
+predicate(non-covalent_complex,is,Class).
+predicate(non-gene_product,is,Class).
+predicate(participant,is,Class).
+predicate(protein_binding,is,Class).
+predicate(protein_complex,is,Class).
+predicate(protein_complex_assembly,is,Class).
+predicate(protein_complex_disassembly,is,Class).
+predicate(simple_chemical_dissociation,is,Class).
+predicate(simple_chemical_dissociation,SubClassOf,spontaneous_dissociation,).
+predicate(simple_chemical_dissociation,SubClassOf,has_input only multimer_of_simple_chemicals,).
+predicate(simple_chemical_dissociation,SubClassOf,has_output only non-gene_product).
+predicate(simple_chemical_non-covalent_binding,is,Class).
+predicate(simple_chemical_non-covalent_binding,SubClassOf,spontaneous_non-covalent_binding,).
+predicate(simple_chemical_non-covalent_binding,SubClassOf,has_input only non-gene_product,).
+predicate(simple_chemical_non-covalent_binding,SubClassOf,has_output only multimer_of_simple_chemicals,).
+predicate(simple_chemical_non-covalent_binding,SubClassOf,requires only metabolite_binding).
+predicate(spontaneous_activity,is,Class).
+predicate(spontaneous_addition_of_a_chemical_group,is,Class).
+predicate(spontaneous_addition_of_a_chemical_group,SubClassOf,spontaneous_covalent_reaction).
+predicate(spontaneous_cofactor_recruitment,is,Class).
+predicate(spontaneous_cofactor_recruitment,SubClassOf,spontaneous_protein_complex_assembly).
+predicate(spontaneous_covalent_reaction,is,Class).
+predicate(spontaneous_covalent_reaction,SubClassOf,biological_spontaneous_process).
+predicate(spontaneous_dissociation,is,Class).
+predicate(spontaneous_dissociation,SubClassOf,biological_spontaneous_process,).
+predicate(spontaneous_dissociation,SubClassOf,0000180,).
+predicate(spontaneous_dissociation,SubClassOf,has_input only non-covalent_complex,).
+predicate(spontaneous_dissociation,SubClassOf,has_input max 1 non-covalent_complex).
+predicate(spontaneous_metabolic_reaction,is,Class).
+predicate(spontaneous_metabolic_reaction,SubClassOf,biological_spontaneous_process).
+predicate(spontaneous_non-covalent_binding,is,Class).
+predicate(spontaneous_non-covalent_binding,SubClassOf,biological_spontaneous_process,).
+predicate(spontaneous_non-covalent_binding,SubClassOf,0000177,).
+predicate(spontaneous_non-covalent_binding,SubClassOf,has_output only non-covalent_complex,).
+predicate(spontaneous_non-covalent_binding,SubClassOf,has_output max 1 non-covalent_complex).
+predicate(spontaneous_protein-protein_complex_assembly,is,Class).
+predicate(spontaneous_protein-protein_complex_assembly,SubClassOf,spontaneous_protein_complex_assembly).
+predicate(spontaneous_protein-protein_complex_disassembly,is,Class).
+predicate(spontaneous_protein-protein_complex_disassembly,SubClassOf,spontaneous_protein_complex_disassembly).
+predicate(spontaneous_protein_complex_assembly,is,Class).
+predicate(spontaneous_protein_complex_assembly,SubClassOf,protein_complex_assembly,).
+predicate(spontaneous_protein_complex_assembly,SubClassOf,spontaneous_non-covalent_binding,).
+predicate(spontaneous_protein_complex_assembly,SubClassOf,has_output only protein_complex,).
+predicate(spontaneous_protein_complex_assembly,SubClassOf,requires only protein_binding).
+predicate(spontaneous_protein_complex_disassembly,is,Class).
+predicate(spontaneous_protein_complex_disassembly,SubClassOf,protein_complex_disassembly,).
+predicate(spontaneous_protein_complex_disassembly,SubClassOf,spontaneous_dissociation,).
+predicate(spontaneous_protein_complex_disassembly,SubClassOf,has_input only protein_complex).
+predicate(protein_modification_pathway,is,Class).
+predicate(protein_modification_pathway,SubClassOf,C20633).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,Activity,biological_process,participant).

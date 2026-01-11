@@ -1,0 +1,2714 @@
+predicate(IsDivisionOf,is,ObjectProperty).
+predicate(LocativeAttribute,is,ObjectProperty).
+predicate(actsSpecificallyOn,is,ObjectProperty).
+predicate(boundsSpace,is,ObjectProperty).
+predicate(definesSpace,is,ObjectProperty).
+predicate(hasAbnormalityStatus,is,ObjectProperty).
+predicate(hasAbsoluteState,is,ObjectProperty).
+predicate(hasAcquisitionMode,is,ObjectProperty).
+predicate(hasAlphaConnection,is,ObjectProperty).
+predicate(hasAlphaPartitiveConnection,is,ObjectProperty).
+predicate(hasBetaConnection,is,ObjectProperty).
+predicate(hasBetaPartitiveConnection,is,ObjectProperty).
+predicate(hasBlindPouchDivision,is,ObjectProperty).
+predicate(hasBranch,is,ObjectProperty).
+predicate(hasChronicity,is,ObjectProperty).
+predicate(hasDiseaseProcessExtent,is,ObjectProperty).
+predicate(hasDominance,is,ObjectProperty).
+predicate(hasFunction,is,ObjectProperty).
+predicate(hasFunctionalComponent,is,ObjectProperty).
+predicate(hasLayer,is,ObjectProperty).
+predicate(hasLeftRightSelector,is,ObjectProperty).
+predicate(hasLinearDivision,is,ObjectProperty).
+predicate(hasLocation,is,ObjectProperty).
+predicate(hasMedialLateralSelector,is,ObjectProperty).
+predicate(hasOcclusalNonOcclusalSelector,is,ObjectProperty).
+predicate(hasOrdinalPosition,is,ObjectProperty).
+predicate(hasParity,is,ObjectProperty).
+predicate(hasPartitiveConnection,is,ObjectProperty).
+predicate(hasPathologicalStatus,is,ObjectProperty).
+predicate(hasPhenotypicalSex,is,ObjectProperty).
+predicate(hasProximity,is,ObjectProperty).
+predicate(hasSexualMaturation,is,ObjectProperty).
+predicate(hasShapeAnalagousTo,is,ObjectProperty).
+predicate(hasSolidDivision,is,ObjectProperty).
+predicate(hasSpecificFunction,is,ObjectProperty).
+predicate(hasSpecificLayer,is,ObjectProperty).
+predicate(hasSpecificLinearDivision,is,ObjectProperty).
+predicate(hasSpecificSolidDivision,is,ObjectProperty).
+predicate(hasSpecificStructuralComponent,is,ObjectProperty).
+predicate(hasSpecificSurfaceDivision,is,ObjectProperty).
+predicate(hasStructuralComponent,is,ObjectProperty).
+predicate(hasSurfaceDivision,is,ObjectProperty).
+predicate(hasSurfaceVisibility,is,ObjectProperty).
+predicate(hasTopology,is,ObjectProperty).
+predicate(hasUniqueAssociatedDisplacement,is,ObjectProperty).
+predicate(isAlphaConnectionOf,is,ObjectProperty).
+predicate(isAlphaPartitiveConnectionOf,is,ObjectProperty).
+predicate(isBetaConnectionOf,is,ObjectProperty).
+predicate(isBetaPartitiveConnectionOf,is,ObjectProperty).
+predicate(isBlindPouchDivisionOf,is,ObjectProperty).
+predicate(isDisplacementFrom,is,ObjectProperty).
+predicate(isDisplacementTo,is,ObjectProperty).
+predicate(isDissolvedWithin,is,ObjectProperty).
+predicate(isFunctionalComponentOf,is,ObjectProperty).
+predicate(isLayerOf,is,ObjectProperty).
+predicate(isLinearDivisionOf,is,ObjectProperty).
+predicate(isMadeOf,is,ObjectProperty).
+predicate(isMixedThroughout,is,ObjectProperty).
+predicate(isNonPartitivelyContainedIn,is,ObjectProperty).
+predicate(isPairedOrUnpaired,is,ObjectProperty).
+predicate(isPartitiveConnectionOf,is,ObjectProperty).
+predicate(isPartitivelyContainedIn,is,ObjectProperty).
+predicate(isPositionedAbove,is,ObjectProperty).
+predicate(isPositionedAnteriorTo,is,ObjectProperty).
+predicate(isPositionedBelow,is,ObjectProperty).
+predicate(isPositionedMedialTo,is,ObjectProperty).
+predicate(isServedBy,is,ObjectProperty).
+predicate(isSolidDivisionOf,is,ObjectProperty).
+predicate(isSpaceDefinedBy,is,ObjectProperty).
+predicate(isSpecificConsequenceOf,is,ObjectProperty).
+predicate(isSpecificFunctionOf,is,ObjectProperty).
+predicate(isSpecificSolidDivisionOf,is,ObjectProperty).
+predicate(isSpecificStructuralComponentOf,is,ObjectProperty).
+predicate(isSpecificSurfaceDivisionOf,is,ObjectProperty).
+predicate(isSpecificallyMadeOf,is,ObjectProperty).
+predicate(isSpecificallyNonPartitivelyContainedIn,is,ObjectProperty).
+predicate(isSpecificallyServedBy,is,ObjectProperty).
+predicate(isStructuralComponentOf,is,ObjectProperty).
+predicate(isSurfaceDivisionOf,is,ObjectProperty).
+predicate(nonPartitivelyContains,is,ObjectProperty).
+predicate(partitivelyContains,is,ObjectProperty).
+predicate(passesThrough,is,ObjectProperty).
+predicate(playsPhysiologicalRole,is,ObjectProperty).
+predicate(specificallyMakesUp,is,ObjectProperty).
+predicate(specificallyNonPartitivelyContains,is,ObjectProperty).
+predicate(Abdomen,is,Class).
+predicate(Abdomen,SubClassOf,NAMEDTrunkBodyPart).
+predicate(AbdominalCavity,is,Class).
+predicate(Abrading,is,Class).
+predicate(Abrading,SubClassOf,SolidRemovingProcess).
+predicate(AbsenceOfWithdrawalBleeding,is,Class).
+predicate(AbsenceOfWithdrawalBleeding,SubClassOf,NAMEDGynaecologicalDiseaseProcess).
+predicate(AccessorySpleen,is,Class).
+predicate(AccessorySpleen,SubClassOf,InternalOrgan,).
+predicate(AccessorySpleen,SubClassOf,hasAbnormalityStatus some variant,).
+predicate(AccessorySpleen,SubClassOf,hasTopology some).
+predicate(AccessorySpleen,SubClassOf,(Topology and (hasAbsoluteState some topologicallySolid)),).
+predicate(AccessorySpleen,SubClassOf,isNonPartitivelyContainedIn some AbdominalCavity,).
+predicate(AccessorySpleen,SubClassOf,isStructuralComponentOf some HaematologicalSystem).
+predicate(AcquisitionMode,is,Class).
+predicate(ActivatedPartialThromboplastinTimeTest,is,Class).
+predicate(ActivatedPartialThromboplastinTimeTest,SubClassOf,HaematologyTest).
+predicate(ActiveDrugAdditiveRole,is,Class).
+predicate(AcuteRheumaticHeartDisease,is,Class).
+predicate(AcuteRheumaticHeartDisease,EquivalentTo,RheumaticHeartDisease and (hasChronicity some).
+predicate(AcuteRheumaticHeartDisease,EquivalentTo,(Chronicity and (hasAbsoluteState some acute)))).
+predicate(AcuteRheumaticHeartDisease,SubClassOf,RheumaticHeartDisease).
+predicate(AfferentFibre,is,Class).
+predicate(AfferentFibre,SubClassOf,NAMEDNervousSystemPart).
+predicate(Air,is,Class).
+predicate(Airway,is,Class).
+predicate(AlaNasi,is,Class).
+predicate(AlaNasi,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(AlarCartilage,is,Class).
+predicate(AlarCartilage,SubClassOf,NAMEDCartilage).
+predicate(Albumin,is,Class).
+predicate(AlbuminAsDrug,is,Class).
+predicate(AlbuminAsDrug,EquivalentTo,Albumin and (playsPhysiologicalRole some ActiveDrugAdditiveRole)).
+predicate(AlbuminAsDrug,SubClassOf,Albumin,).
+predicate(AlbuminAsDrug,SubClassOf,isSpecificConsequenceOf some).
+predicate(AlbuminAsDrug,SubClassOf,(ManufacturingProcess and (actsSpecificallyOn some Blood))).
+predicate(AlveolarPartOfBone,is,Class).
+predicate(Alveolus,is,Class).
+predicate(Alveolus,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(Alveolus,SubClassOf,hasFunction some).
+predicate(Alveolus,SubClassOf,(Diffusing and (actsSpecificallyOn some).
+predicate(Alveolus,SubClassOf,(Gas and (isDissolvedWithin some LiquidBlood)))),).
+predicate(Alveolus,SubClassOf,hasFunction some).
+predicate(Alveolus,SubClassOf,(Diffusing and (actsSpecificallyOn some).
+predicate(Alveolus,SubClassOf,(Gas and (isMixedThroughout some Air)))),).
+predicate(Alveolus,SubClassOf,hasTopology some tubularTopology).
+predicate(AmpullaOfSalpinx,is,Class).
+predicate(AmpullaOfSalpinx,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(AmurLeopard,is,Class).
+predicate(AmurLeopard,SubClassOf,Panthera).
+predicate(Amylase,is,Class).
+predicate(AnalColumn,is,Class).
+predicate(AnalColumn,SubClassOf,NAMEDGITractBodyPart,).
+predicate(AnalColumn,SubClassOf,isSpecificSolidDivisionOf some AnalWall).
+predicate(AnalCrypt,is,Class).
+predicate(AnalCrypt,SubClassOf,NAMEDGITractBodyPart,).
+predicate(AnalCrypt,SubClassOf,isSpecificStructuralComponentOf some Anus).
+predicate(AnalSphincter,is,Class).
+predicate(AnalSphincter,SubClassOf,NAMEDGITractBodyPart,).
+predicate(AnalSphincter,SubClassOf,NAMEDSphincter,).
+predicate(AnalSphincter,SubClassOf,hasStructuralComponent some SphincterAniMuscle,).
+predicate(AnalSphincter,SubClassOf,isStructuralComponentOf some Anus).
+predicate(AnalWall,is,Class).
+predicate(AnatomicalShape,is,Class).
+predicate(Anonymous-30,is,Class).
+predicate(Anonymous-30,SubClassOf,CerebralHemisphere).
+predicate(Anonymous-354,is,Class).
+predicate(Anonymous-354,SubClassOf,CerebralHemisphere).
+predicate(Anonymous-595,is,Class).
+predicate(Anonymous-595,SubClassOf,TasteBud).
+predicate(Anonymous-858,is,Class).
+predicate(Anonymous-858,SubClassOf,TasteBud).
+predicate(AnsaCervicalis,is,Class).
+predicate(AnsaCervicalis,SubClassOf,NAMEDNervousSystemPart).
+predicate(AntenatalBabyhood,is,Class).
+predicate(AntenatalBabyhood,SubClassOf,Babyhood).
+predicate(AnteriorCecalArtery,is,Class).
+predicate(AnteriorCerebralArtery,is,Class).
+predicate(AnteriorCerebralBifurcation,is,Class).
+predicate(AnteriorClinoidProcess,is,Class).
+predicate(AnteriorCommunicatingArtery,is,Class).
+predicate(AnteriorFascialCompartment,is,Class).
+predicate(AnteriorFascialCompartmentOfArm,is,Class).
+predicate(AnteriorFascialCompartmentOfArm,EquivalentTo,AnteriorFascialCompartment and (isSpecificSolidDivisionOf some Arm)).
+predicate(AnteriorFascialCompartmentOfArm,SubClassOf,AnteriorFascialCompartment,).
+predicate(AnteriorFascialCompartmentOfArm,SubClassOf,partitivelyContains some BicepsBrachii,).
+predicate(AnteriorFascialCompartmentOfArm,SubClassOf,partitivelyContains some Brachialis,).
+predicate(AnteriorFascialCompartmentOfArm,SubClassOf,partitivelyContains some CoracobrachialisMuscle).
+predicate(AnteriorFascialCompartmentOfLeg,is,Class).
+predicate(AnteriorFascialCompartmentOfLeg,EquivalentTo,AnteriorFascialCompartment and (isSpecificSolidDivisionOf some Leg)).
+predicate(AnteriorFascialCompartmentOfLeg,SubClassOf,AnteriorFascialCompartment,).
+predicate(AnteriorFascialCompartmentOfLeg,SubClassOf,partitivelyContains some ExtensorDigitorumLongusOfFoot,).
+predicate(AnteriorFascialCompartmentOfLeg,SubClassOf,partitivelyContains some ExtensorHallucisLongus,).
+predicate(AnteriorFascialCompartmentOfLeg,SubClassOf,partitivelyContains some PeroneusTertius,).
+predicate(AnteriorFascialCompartmentOfLeg,SubClassOf,partitivelyContains some TibialisAnterior).
+predicate(AnteriorFascialCompartmentOfThigh,is,Class).
+predicate(AnteriorFascialCompartmentOfThigh,EquivalentTo,AnteriorFascialCompartment and (isSpecificSolidDivisionOf some Thigh)).
+predicate(AnteriorFascialCompartmentOfThigh,SubClassOf,AnteriorFascialCompartment,).
+predicate(AnteriorFascialCompartmentOfThigh,SubClassOf,partitivelyContains some IlioPsoasMuscle,).
+predicate(AnteriorFascialCompartmentOfThigh,SubClassOf,partitivelyContains some QuadricepsFemoris,).
+predicate(AnteriorFascialCompartmentOfThigh,SubClassOf,partitivelyContains some SartoriusMuscle,).
+predicate(AnteriorFascialCompartmentOfThigh,SubClassOf,partitivelyContains some TensorfascialataMuscle).
+predicate(AnteriorHeartWall,is,Class).
+predicate(AnteriorHeartWall,SubClassOf,HeartWall).
+predicate(AnteriorHornCell,is,Class).
+predicate(AnteriorHornCell,SubClassOf,Neuron).
+predicate(AnteriorInferiorPancreaticoduodenalArtery,is,Class).
+predicate(AnteriorPerforatedSubstance,is,Class).
+predicate(AnteriorPerforatedSubstance,SubClassOf,PerforatedSubstance).
+predicate(AnteriorSpinalNerveRoot,is,Class).
+predicate(AnteriorSpinalNerveRoot,SubClassOf,SpinalNerveRoot).
+predicate(AnteriorTooth,is,Class).
+predicate(AnteriorTooth,SubClassOf,Tooth).
+predicate(AnterolateralHeartWall,is,Class).
+predicate(AnterolateralHeartWall,SubClassOf,HeartWall).
+predicate(AnulusFibrosus,is,Class).
+predicate(AnulusFibrosus,SubClassOf,NAMEDCVSBodyPart).
+predicate(Anus,is,Class).
+predicate(AorticPulmonaryBody,is,Class).
+predicate(AorticPulmonaryBody,SubClassOf,NAMEDChemoreceptor,).
+predicate(AorticPulmonaryBody,SubClassOf,isSpecificStructuralComponentOf some ChemoreceptorSystem,).
+predicate(AorticPulmonaryBody,SubClassOf,isStructuralComponentOf some CardiovascularSystem).
+predicate(AorticRing,is,Class).
+predicate(AorticRing,SubClassOf,AnulusFibrosus).
+predicate(AorticValve,is,Class).
+predicate(ApexOfBladder,is,Class).
+predicate(ApexOfHeart,is,Class).
+predicate(ApexOfHeart,SubClassOf,NAMEDCVSBodyPart,).
+predicate(ApexOfHeart,SubClassOf,hasSpecificSolidDivision some NotchOfApexOfHeart,).
+predicate(ApexOfHeart,SubClassOf,hasSpecificStructuralComponent some HeartWall).
+predicate(ApexOfNose,is,Class).
+predicate(ApexOfNose,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(ApicalForamenOfTooth,is,Class).
+predicate(ApicalForamenOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(ApicalForamenOfTooth,SubClassOf,hasTopology some tubularTopology,).
+predicate(ApicalForamenOfTooth,SubClassOf,isSpecificSolidDivisionOf some RootOfTooth).
+predicate(AppendicularArtery,is,Class).
+predicate(AppendixVermiformis,is,Class).
+predicate(AppendixVermiformis,SubClassOf,NAMEDGITractBodyPart,).
+predicate(AppendixVermiformis,SubClassOf,isBlindPouchDivisionOf some Cecum,).
+predicate(AppendixVermiformis,SubClassOf,isServedBy some AppendicularArtery).
+predicate(Arachnoid,is,Class).
+predicate(Arachnoid,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Arachnoid,SubClassOf,boundsSpace some PeriSpinalSpace,).
+predicate(Arachnoid,SubClassOf,boundsSpace some SubarachnoidOrSubduralSpace).
+predicate(Areola,is,Class).
+predicate(Areola,SubClassOf,NAMEDTrunkBodyPart).
+predicate(AreolaNipplePlate,is,Class).
+predicate(AreolaNipplePlate,SubClassOf,NAMEDTrunkBodyPart).
+predicate(Arm,is,Class).
+predicate(ArteriaeRectaeOfLargeIntestine,is,Class).
+predicate(ArteriaeRectaeOfSmallIntestine,is,Class).
+predicate(ArticulatingDisc,is,Class).
+predicate(ArticulatingDisc,SubClassOf,NAMEDSkeletalStructure).
+predicate(AryepiglotticFold,is,Class).
+predicate(AryepiglotticFold,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(AryepiglotticFold,SubClassOf,isPartitiveConnectionOf some ArytenoidCartilage,).
+predicate(AryepiglotticFold,SubClassOf,isPartitiveConnectionOf some Epiglottis,).
+predicate(AryepiglotticFold,SubClassOf,specificallyNonPartitivelyContains some AryepiglotticMuscle).
+predicate(AryepiglotticMuscle,is,Class).
+predicate(ArytenoidCartilage,is,Class).
+predicate(ArytenoidCartilage,SubClassOf,NAMEDCartilage).
+predicate(AsYetUnknownDiagnosis,is,Class).
+predicate(AscendingAorta,is,Class).
+predicate(AscendingColon,is,Class).
+predicate(AscendingColon,SubClassOf,NAMEDGITractBodyPart).
+predicate(AscendingRamusOfLateralSulcus,is,Class).
+predicate(AscendingRamusOfLateralSulcus,SubClassOf,RamusOfLateralSulcus).
+predicate(AtLeastPairedBodyWall,is,Class).
+predicate(AtlantoAxialJoint,is,Class).
+predicate(AtlantoAxialJoint,SubClassOf,Joint).
+predicate(AtrioventricularValveRing,is,Class).
+predicate(AtrioventricularValveRing,SubClassOf,AnulusFibrosus).
+predicate(AuricularAppendage,is,Class).
+predicate(AuricularAppendage,SubClassOf,NAMEDCVSBodyPart,).
+predicate(AuricularAppendage,SubClassOf,isPairedOrUnpaired some leftRightPaired).
+predicate(AxialSkeleton,is,Class).
+predicate(AxialSkeleton,SubClassOf,ComplexSkeletalStructure).
+predicate(Axon,is,Class).
+predicate(Axon,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Axon,SubClassOf,hasSpecificStructuralComponent some MyelinSheath).
+predicate(BNFBookAppendix,is,Class).
+predicate(BNFBreastFeedingAppendix,is,Class).
+predicate(BNFBreastFeedingAppendix,SubClassOf,BNFBookAppendix).
+predicate(Babyhood,is,Class).
+predicate(Back,is,Class).
+predicate(Back,SubClassOf,NAMEDTrunkBodyPart).
+predicate(BaroreceptorCell,is,Class).
+predicate(BasalNucleus,is,Class).
+predicate(BasalNucleus,SubClassOf,NAMEDNervousSystemPart,).
+predicate(BasalNucleus,SubClassOf,hasStructuralComponent some CapsulaExtrema,).
+predicate(BasalNucleus,SubClassOf,hasStructuralComponent some CapsulaNucleusLentiformis,).
+predicate(BasalNucleus,SubClassOf,hasStructuralComponent some Claustrum,).
+predicate(BasalNucleus,SubClassOf,hasStructuralComponent some CorpusAmygdaloideum,).
+predicate(BasalNucleus,SubClassOf,hasStructuralComponent some CorpusStriatum,).
+predicate(BasalNucleus,SubClassOf,isStructuralComponentOf some CerebralHemisphere).
+predicate(BaseOfBrain,is,Class).
+predicate(BaseOfFourthMetatarsal,is,Class).
+predicate(BaseOfHeart,is,Class).
+predicate(BaseOfHeart,SubClassOf,NAMEDCVSBodyPart).
+predicate(BaseOfThirdMetatarsal,is,Class).
+predicate(BicepsBrachii,is,Class).
+predicate(BileDuct,is,Class).
+predicate(BiliaryTract,is,Class).
+predicate(BiliaryTract,SubClassOf,NAMEDGITractBodyPart,).
+predicate(BiliaryTract,SubClassOf,hasSpecificStructuralComponent some BileDuct,).
+predicate(BiliaryTract,SubClassOf,hasSpecificStructuralComponent some Gallbladder,).
+predicate(BiliaryTract,SubClassOf,hasStructuralComponent some SphincterOfOddi).
+predicate(BlackHairyTongue,is,Class).
+predicate(BlackHairyTongue,SubClassOf,Tongue).
+predicate(BleedingDisorder,is,Class).
+predicate(BleedingDisorder,EquivalentTo,CoagulationOfBlood and (hasPathologicalStatus some pathological)).
+predicate(BleedingDisorder,SubClassOf,CoagulationOfBlood).
+predicate(Blood,is,Class).
+predicate(BodyCavity,is,Class).
+predicate(BodyJunctionalBodyPart,is,Class).
+predicate(BodyJunctionalBodyPart,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(BodyOfTongue,is,Class).
+predicate(Bone,is,Class).
+predicate(Bone,SubClassOf,NAMEDSkeletalStructure,).
+predicate(Bone,SubClassOf,isSpecificallyMadeOf some CorticalBone).
+predicate(BoneOfCranium,is,Class).
+predicate(BoneOfCranium,SubClassOf,Bone).
+predicate(BoneOfFoot,is,Class).
+predicate(BoneOfFoot,SubClassOf,Bone).
+predicate(BoneOfHand,is,Class).
+predicate(BoneOfHand,SubClassOf,Bone).
+predicate(BoneOfJoint,is,Class).
+predicate(BoneOfJoint,SubClassOf,Bone).
+predicate(BoneOfLowerLimb,is,Class).
+predicate(BoneOfLowerLimb,SubClassOf,Bone).
+predicate(BoneOfMiddleEar,is,Class).
+predicate(BoneOfMiddleEar,SubClassOf,Bone).
+predicate(BoneOfNose,is,Class).
+predicate(BoneOfNose,SubClassOf,Bone).
+predicate(BoneOfSkull,is,Class).
+predicate(BoneOfSkull,SubClassOf,Bone).
+predicate(BoneOfUpperLimb,is,Class).
+predicate(BoneOfUpperLimb,SubClassOf,Bone).
+predicate(BonyPartOfHardPalate,is,Class).
+predicate(BonyPartOfHardPalate,SubClassOf,ComplexSkeletalStructure).
+predicate(BorderOfScapula,is,Class).
+predicate(Boy,is,Class).
+predicate(Brachialis,is,Class).
+predicate(Brain,is,Class).
+predicate(Brain,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Brain,SubClassOf,hasSpecificSolidDivision some BaseOfBrain,).
+predicate(Brain,SubClassOf,hasSpecificSolidDivision some Brainstem,).
+predicate(Brain,SubClassOf,hasSpecificSolidDivision some Mesencephalon,).
+predicate(Brain,SubClassOf,hasSpecificSolidDivision some Prosencephalon,).
+predicate(Brain,SubClassOf,hasSpecificSolidDivision some Rhombencephalon,).
+predicate(Brain,SubClassOf,hasStructuralComponent some BrainVentricle,).
+predicate(Brain,SubClassOf,isNonPartitivelyContainedIn some CranialCavity,).
+predicate(Brain,SubClassOf,isStructuralComponentOf some CentralNervousSystem).
+predicate(BrainVentricle,is,Class).
+predicate(Brainstem,is,Class).
+predicate(Brainstem,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Brainstem,SubClassOf,hasLinearDivision some Mesencephalon,).
+predicate(Brainstem,SubClassOf,hasLinearDivision some Myelencephalon,).
+predicate(Brainstem,SubClassOf,hasLinearDivision some Pons,).
+predicate(Brainstem,SubClassOf,hasStructuralComponent some PerforatedSubstance,).
+predicate(Brainstem,SubClassOf,hasStructuralComponent some SubstantiaNigra,).
+predicate(Brainstem,SubClassOf,isNonPartitivelyContainedIn some PosteriorCranialFossa).
+predicate(BreakthroughVaginalBleeding,is,Class).
+predicate(BreakthroughVaginalBleeding,SubClassOf,NAMEDGynaecologicalDiseaseProcess).
+predicate(BridgeOfNose,is,Class).
+predicate(BridgeOfNose,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(BroadLigamentOfUterus,is,Class).
+predicate(BroadLigamentOfUterus,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(BronchialArtery,is,Class).
+predicate(Bronchiole,is,Class).
+predicate(Bronchiole,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(Bronchiole,SubClassOf,hasTopology some tubularTopology,).
+predicate(Bronchiole,SubClassOf,isNonPartitivelyContainedIn some ThoracicCavity,).
+predicate(Bronchiole,SubClassOf,isStructuralComponentOf some PulmonaryAcinus).
+predicate(BronchoPulmonarySegment,is,Class).
+predicate(BronchoPulmonarySegment,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(BronchoPulmonarySegment,SubClassOf,hasSpecificStructuralComponent some PulmonaryAcinus,).
+predicate(BronchoPulmonarySegment,SubClassOf,isSpecificStructuralComponentOf some LobeOfLung).
+predicate(Bronchus,is,Class).
+predicate(Bronchus,SubClassOf,LungOrBronchi).
+predicate(BuccalFatPad,is,Class).
+predicate(BuccalFatPad,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(BuccalFatPad,SubClassOf,isStructuralComponentOf some Cheek).
+predicate(BuccalGrooveOfTooth,is,Class).
+predicate(BuccalGrooveOfTooth,SubClassOf,GrooveOfTooth).
+predicate(BulbOfPenis,is,Class).
+predicate(BulbOfPenis,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(BulbOfVestibule,is,Class).
+predicate(BulbOfVestibule,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(BulbusCordis,is,Class).
+predicate(BulbusCordis,SubClassOf,NAMEDCVSBodyPart,).
+predicate(BulbusCordis,SubClassOf,isLinearDivisionOf some AscendingAorta).
+predicate(BurningParaesthesia,is,Class).
+predicate(CakeKidney,is,Class).
+predicate(CakeKidney,SubClassOf,Kidney).
+predicate(CalixOfKidney,is,Class).
+predicate(CalixOfKidney,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(CalixOfKidney,SubClassOf,hasTopology some).
+predicate(CalixOfKidney,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(CalixOfKidney,SubClassOf,isBlindPouchDivisionOf some RenalPelvis).
+predicate(Calvarium,is,Class).
+predicate(Calvarium,SubClassOf,ComplexSkeletalStructure).
+predicate(Canine,is,Class).
+predicate(Canine,SubClassOf,Tooth).
+predicate(CapsulaExterna,is,Class).
+predicate(CapsulaExterna,SubClassOf,CapsulaNucleusLentiformis).
+predicate(CapsulaExtrema,is,Class).
+predicate(CapsulaExtrema,SubClassOf,NAMEDNervousSystemPart,).
+predicate(CapsulaExtrema,SubClassOf,isStructuralComponentOf some CerebralHemisphere).
+predicate(CapsulaInterna,is,Class).
+predicate(CapsulaInterna,SubClassOf,CapsulaNucleusLentiformis).
+predicate(CapsulaNucleusLentiformis,is,Class).
+predicate(CapsulaNucleusLentiformis,SubClassOf,NAMEDNervousSystemPart,).
+predicate(CapsulaNucleusLentiformis,SubClassOf,isStructuralComponentOf some CerebralHemisphere).
+predicate(CapsuleOfKidney,is,Class).
+predicate(CardiacConductionSystemStructure,is,Class).
+predicate(CardiacMuscle,is,Class).
+predicate(CardiacMuscleTissue,is,Class).
+predicate(CardiacSeptum,is,Class).
+predicate(CardiacVein,is,Class).
+predicate(CardiovascularSystem,is,Class).
+predicate(Carina,is,Class).
+predicate(Carina,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(Carina,SubClassOf,isAlphaConnectionOf some LeftMainBronchus,).
+predicate(Carina,SubClassOf,isAlphaConnectionOf some RightMainBronchus,).
+predicate(Carina,SubClassOf,isBetaConnectionOf some Trachea,).
+predicate(Carina,SubClassOf,isNonPartitivelyContainedIn some ThoracicCavity,).
+predicate(Carina,SubClassOf,isPairedOrUnpaired some unpaired,).
+predicate(Carina,SubClassOf,isSpecificStructuralComponentOf some LowerRespiratoryTract).
+predicate(CarotidBody,is,Class).
+predicate(CarotidBody,SubClassOf,NAMEDChemoreceptor,).
+predicate(CarotidBody,SubClassOf,hasStructuralComponent some BaroreceptorCell,).
+predicate(CarotidBody,SubClassOf,isPairedOrUnpaired some mirrorImaged,).
+predicate(CarotidBody,SubClassOf,isSpecificStructuralComponentOf some ChemoreceptorSystem,).
+predicate(CarotidBody,SubClassOf,isStructuralComponentOf some CardiovascularSystem).
+predicate(CarpalRow,is,Class).
+predicate(CarpalRow,SubClassOf,ComplexSkeletalStructure).
+predicate(Cartilage,is,Class).
+predicate(CartilageOfEpiglottis,is,Class).
+predicate(CaudaEquina,is,Class).
+predicate(CaudaEquina,SubClassOf,NAMEDNervousSystemPart).
+predicate(CaudalPancreaticArtery,is,Class).
+predicate(CavityOfHeartChamber,is,Class).
+predicate(Cecum,is,Class).
+predicate(Cecum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Cecum,SubClassOf,hasAlphaPartitiveConnection some IleocecalValve,).
+predicate(Cecum,SubClassOf,hasBlindPouchDivision some AppendixVermiformis,).
+predicate(Cecum,SubClassOf,isBetaConnectionOf some IleocecalValve,).
+predicate(Cecum,SubClassOf,isServedBy some AnteriorCecalArtery,).
+predicate(Cecum,SubClassOf,isServedBy some PortalVein,).
+predicate(Cecum,SubClassOf,isServedBy some PosteriorCecalArtery).
+predicate(CementoenamelJunctionOfTooth,is,Class).
+predicate(CementumOfTooth,is,Class).
+predicate(CentralNervousSystem,is,Class).
+predicate(CerebellarCortex,is,Class).
+predicate(CerebellarHemisphere,is,Class).
+predicate(CerebellarHemisphere,SubClassOf,NAMEDNervousSystemPart,).
+predicate(CerebellarHemisphere,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(CerebellarPeduncle,is,Class).
+predicate(Cerebellum,is,Class).
+predicate(Cerebellum,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Cerebellum,SubClassOf,hasSpecificLayer some CerebellarCortex,).
+predicate(Cerebellum,SubClassOf,hasSpecificSolidDivision some CerebellarPeduncle,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some CerebellarHemisphere,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some DentateNucleus,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some FlocculusOfCerebellum,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some LingulaOfCerebellum,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some Neocerebellum,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some NoduleOfCerebellum,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some Paleocerebellum,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some PrimaryFissureOfCerebellum,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some PyramidOfCerebellum,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some RoofNucleusOfCerebellum,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some UvulaOfCerebellum,).
+predicate(Cerebellum,SubClassOf,hasStructuralComponent some ValleculaCerebelli,).
+predicate(Cerebellum,SubClassOf,isNonPartitivelyContainedIn some PosteriorCranialFossa).
+predicate(CerebralAqueduct,is,Class).
+predicate(CerebralCortex,is,Class).
+predicate(CerebralHemisphere,is,Class).
+predicate(CerebralHemisphere,SubClassOf,NAMEDNervousSystemPart,).
+predicate(CerebralHemisphere,SubClassOf,hasDominance some Dominance,).
+predicate(CerebralHemisphere,SubClassOf,hasSpecificSolidDivision some DivisionOfCerebralHemisphere,).
+predicate(CerebralHemisphere,SubClassOf,hasStructuralComponent some BasalNucleus,).
+predicate(CerebralHemisphere,SubClassOf,hasStructuralComponent some CapsulaExtrema,).
+predicate(CerebralHemisphere,SubClassOf,hasStructuralComponent some CapsulaNucleusLentiformis,).
+predicate(CerebralHemisphere,SubClassOf,hasStructuralComponent some Claustrum,).
+predicate(CerebralHemisphere,SubClassOf,hasStructuralComponent some CorpusStriatum,).
+predicate(CerebralHemisphere,SubClassOf,isPairedOrUnpaired some leftRightPaired).
+predicate(CerebralPeduncle,is,Class).
+predicate(CerebroVascularSystem,is,Class).
+predicate(CervicalNerveRoot,is,Class).
+predicate(CervicalNerveRoot,SubClassOf,SpinalNerveRoot).
+predicate(CervicalOs,is,Class).
+predicate(CervicalOs,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(CervicalSpine,is,Class).
+predicate(CervicalSpine,SubClassOf,ComplexSkeletalStructure).
+predicate(CervicoThoracicSpine,is,Class).
+predicate(CervicoThoracicSpine,SubClassOf,ComplexSkeletalStructure).
+predicate(CervixUteri,is,Class).
+predicate(CervixUteri,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(Chamaecyparis,is,Class).
+predicate(Chamaecyparis,SubClassOf,Cupressus).
+predicate(Cheek,is,Class).
+predicate(Cheek,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(ChemoreceptorSystem,is,Class).
+predicate(Chest,is,Class).
+predicate(Chest,SubClassOf,NAMEDTrunkBodyPart).
+predicate(Chin,is,Class).
+predicate(Chin,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(Choana,is,Class).
+predicate(Chronicity,is,Class).
+predicate(Cingulum,is,Class).
+predicate(Cingulum,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Cingulum,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(CingulumOfTooth,is,Class).
+predicate(CingulumOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(CingulumOfTooth,SubClassOf,isSolidDivisionOf some).
+predicate(CingulumOfTooth,SubClassOf,(SurfaceOfCrownOfTooth and (hasOcclusalNonOcclusalSelector some occlusalSelection))).
+predicate(CircleOfWillis,is,Class).
+predicate(CircleOfWillis,SubClassOf,NAMEDCVSBodyPart,).
+predicate(CircleOfWillis,SubClassOf,hasStructuralComponent some AnteriorCerebralArtery,).
+predicate(CircleOfWillis,SubClassOf,hasStructuralComponent some AnteriorCerebralBifurcation,).
+predicate(CircleOfWillis,SubClassOf,hasStructuralComponent some AnteriorCommunicatingArtery,).
+predicate(CircleOfWillis,SubClassOf,hasStructuralComponent some InternalCarotidBifurcation,).
+predicate(CircleOfWillis,SubClassOf,hasStructuralComponent some MiddleCerebralTrifurcation,).
+predicate(CircleOfWillis,SubClassOf,hasStructuralComponent some PosteriorCerebralArtery,).
+predicate(CircleOfWillis,SubClassOf,hasStructuralComponent some PosteriorCommunicatingArtery,).
+predicate(CircleOfWillis,SubClassOf,hasTopology some tubularTopology,).
+predicate(CircleOfWillis,SubClassOf,isNonPartitivelyContainedIn some CranialCavity,).
+predicate(CircleOfWillis,SubClassOf,isStructuralComponentOf some CerebroVascularSystem).
+predicate(Claustrum,is,Class).
+predicate(Claustrum,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Claustrum,SubClassOf,isStructuralComponentOf some CerebralHemisphere).
+predicate(ClitoralCrus,is,Class).
+predicate(ClitoralCrus,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(ClitoralPrepuce,is,Class).
+predicate(ClitoralPrepuce,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(Clitoris,is,Class).
+predicate(Clitoris,SubClassOf,NAMEDFemaleGenitalSurfaceBodyPart).
+predicate(CoagulationOfBlood,is,Class).
+predicate(CoccygealNerveRoot,is,Class).
+predicate(CoccygealNerveRoot,SubClassOf,SpinalNerveRoot).
+predicate(Coccyx,is,Class).
+predicate(Coccyx,SubClassOf,ComplexSkeletalStructure).
+predicate(Colon,is,Class).
+predicate(Colon,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Colon,SubClassOf,hasSpecificLinearDivision some LeftColon,).
+predicate(Colon,SubClassOf,hasSpecificLinearDivision some RightColon,).
+predicate(Colon,SubClassOf,hasSpecificLinearDivision some TransverseColon).
+predicate(ColonAndRectum,is,Class).
+predicate(ColonAndRectum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(ColonAndRectum,SubClassOf,hasSpecificLinearDivision some Colon,).
+predicate(ColonAndRectum,SubClassOf,hasSpecificLinearDivision some SigmoidToRectum).
+predicate(ColumellaNasi,is,Class).
+predicate(ColumellaNasi,SubClassOf,NAMEDRespiratoryBodyPart).
+predicate(CommonInferiorPancreaticoduodenalArtery,is,Class).
+predicate(CompetentAnalSphincter,is,Class).
+predicate(CompetentAnalSphincter,SubClassOf,AnalSphincter).
+predicate(ComplexSkeletalStructure,is,Class).
+predicate(ComplexSkeletalStructure,SubClassOf,NAMEDSkeletalStructure).
+predicate(ConchaOfPinna,is,Class).
+predicate(ConchaOfPinna,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(ConicalLingualPapilla,is,Class).
+predicate(ConicalLingualPapilla,SubClassOf,LingualPapilla).
+predicate(ConusMedullaris,is,Class).
+predicate(ConusMedullaris,SubClassOf,NAMEDNervousSystemPart).
+predicate(ConusOfLarynx,is,Class).
+predicate(ConusOfLarynx,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(ConusOfLarynx,SubClassOf,hasStructuralComponent some CricothyroidLigament,).
+predicate(ConusOfLarynx,SubClassOf,hasStructuralComponent some VocalLigament,).
+predicate(ConusOfLarynx,SubClassOf,isMadeOf some FibroelasticTissue).
+predicate(CoracobrachialisMuscle,is,Class).
+predicate(CorniculateCartilage,is,Class).
+predicate(CorniculateCartilage,SubClassOf,NAMEDCartilage).
+predicate(CoronalSuture,is,Class).
+predicate(CoronaryArtery,is,Class).
+predicate(CoronarySulcus,is,Class).
+predicate(CoronarySulcus,SubClassOf,NAMEDCVSBodyPart,).
+predicate(CoronarySulcus,SubClassOf,isPairedOrUnpaired some leftRightPaired).
+predicate(CorporaQuadrigemina,is,Class).
+predicate(CorporaQuadrigemina,SubClassOf,NAMEDNervousSystemPart,).
+predicate(CorporaQuadrigemina,SubClassOf,isStructuralComponentOf some TectumOfMidbrain).
+predicate(CorpusAlbicans,is,Class).
+predicate(CorpusAlbicans,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(CorpusAmygdaloideum,is,Class).
+predicate(CorpusAmygdaloideum,SubClassOf,NAMEDNervousSystemPart,).
+predicate(CorpusAmygdaloideum,SubClassOf,isStructuralComponentOf some TemporalLobe).
+predicate(CorpusCallosum,is,Class).
+predicate(CorpusCallosum,SubClassOf,NAMEDNervousSystemPart,).
+predicate(CorpusCallosum,SubClassOf,isAlphaConnectionOf some).
+predicate(CorpusCallosum,SubClassOf,(CerebralHemisphere and (hasLeftRightSelector some rightSelection)),).
+predicate(CorpusCallosum,SubClassOf,isBetaConnectionOf some).
+predicate(CorpusCallosum,SubClassOf,(CerebralHemisphere and (hasLeftRightSelector some leftSelection))).
+predicate(CorpusCavernosum,is,Class).
+predicate(CorpusCavernosum,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(CorpusLuteum,is,Class).
+predicate(CorpusLuteum,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(CorpusSpongiosum,is,Class).
+predicate(CorpusSpongiosum,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(CorpusStriatum,is,Class).
+predicate(CorpusStriatum,SubClassOf,NAMEDNervousSystemPart,).
+predicate(CorpusStriatum,SubClassOf,hasSpecificStructuralComponent some Neostriatum,).
+predicate(CorpusStriatum,SubClassOf,hasSpecificStructuralComponent some NucleusLentiformis,).
+predicate(CorpusStriatum,SubClassOf,isStructuralComponentOf some CerebralHemisphere).
+predicate(CorticalBone,is,Class).
+predicate(CostalCartilage,is,Class).
+predicate(CostalCartilage,SubClassOf,NAMEDCartilage).
+predicate(CranialCavity,is,Class).
+predicate(Cranium,is,Class).
+predicate(Cranium,SubClassOf,ComplexSkeletalStructure).
+predicate(CricoThyroidJoint,is,Class).
+predicate(CricoidCartilage,is,Class).
+predicate(CricoidCartilage,SubClassOf,NAMEDCartilage).
+predicate(CricothyroidLigament,is,Class).
+predicate(CricothyroidMuscle,is,Class).
+predicate(CristaSupraventricularis,is,Class).
+predicate(CristaSupraventricularis,SubClassOf,NAMEDCVSBodyPart).
+predicate(CristaTerminalisCordis,is,Class).
+predicate(CristaTerminalisCordis,SubClassOf,NAMEDCVSBodyPart).
+predicate(CrownOfAnteriorTooth,is,Class).
+predicate(CrownOfAnteriorTooth,SubClassOf,CrownOfTooth).
+predicate(CrownOfLowerTooth,is,Class).
+predicate(CrownOfLowerTooth,SubClassOf,CrownOfTooth).
+predicate(CrownOfPosteriorTooth,is,Class).
+predicate(CrownOfPosteriorTooth,SubClassOf,CrownOfTooth).
+predicate(CrownOfTooth,is,Class).
+predicate(CrownOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(CrownOfTooth,SubClassOf,isSpecificSolidDivisionOf some Tooth).
+predicate(CrownOfUpperTooth,is,Class).
+predicate(CrownOfUpperTooth,SubClassOf,CrownOfTooth).
+predicate(CrusCerebri,is,Class).
+predicate(CrusCerebri,SubClassOf,NAMEDNervousSystemPart,).
+predicate(CrusCerebri,SubClassOf,isSolidDivisionOf some CerebralPeduncle).
+predicate(CrusOfPenis,is,Class).
+predicate(CrusOfPenis,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(CuneiformCartilage,is,Class).
+predicate(CuneiformCartilage,SubClassOf,NAMEDCartilage).
+predicate(Cupressus,is,Class).
+predicate(CurvatureOfStomach,is,Class).
+predicate(CurvatureOfStomach,SubClassOf,NAMEDGITractBodyPart).
+predicate(CuspOfTooth,is,Class).
+predicate(CuspOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(CuspOfTooth,SubClassOf,isSolidDivisionOf some).
+predicate(CuspOfTooth,SubClassOf,(SurfaceOfCrownOfTooth and (hasOcclusalNonOcclusalSelector some occlusalSelection))).
+predicate(CysticArtery,is,Class).
+predicate(CysticDuct,is,Class).
+predicate(DalteparinSodium,is,Class).
+predicate(DalteparinSodium,SubClassOf,LowMolecularWeightHeparinActiveDrugAdditive).
+predicate(DarklyPigmentedIris,is,Class).
+predicate(DarklyPigmentedIris,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(DeciduousTooth,is,Class).
+predicate(DeciduousTooth,SubClassOf,Tooth).
+predicate(DefectOfTooth,is,Class).
+predicate(DefectOfTooth,SubClassOf,Tooth).
+predicate(DegenerativeLesion,is,Class).
+predicate(Dendrite,is,Class).
+predicate(Dendrite,SubClassOf,NAMEDNervousSystemPart).
+predicate(DentateNucleus,is,Class).
+predicate(DenticulateLigament,is,Class).
+predicate(DenticulateLigament,SubClassOf,NAMEDNervousSystemPart,).
+predicate(DenticulateLigament,SubClassOf,isSurfaceDivisionOf some PiaMater).
+predicate(DenticulatumLigament,is,Class).
+predicate(DescendingColon,is,Class).
+predicate(DescendingColon,SubClassOf,NAMEDGITractBodyPart).
+predicate(Dialysing,is,Class).
+predicate(Diaphragm,is,Class).
+predicate(Diaphragm,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(Diaphragm,SubClassOf,hasStructuralComponent some DiaphragmMuscle,).
+predicate(Diaphragm,SubClassOf,isAlphaConnectionOf some RightTriangularLigamentOfLiver,).
+predicate(Diaphragm,SubClassOf,isServedBy some LeftInferiorPhrenicArtery,).
+predicate(Diaphragm,SubClassOf,isServedBy some RightInferiorPhrenicArtery).
+predicate(DiaphragmMuscle,is,Class).
+predicate(DiaphragmOfVagina,is,Class).
+predicate(DiaphragmOfVagina,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(DiaphragmaticSurfaceOfHeart,is,Class).
+predicate(DiaphragmaticSurfaceOfHeart,SubClassOf,NAMEDCVSBodyPart).
+predicate(Diencephalon,is,Class).
+predicate(Diencephalon,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Diencephalon,SubClassOf,hasStructuralComponent some Epithalamus,).
+predicate(Diencephalon,SubClassOf,hasStructuralComponent some Hypothalamus,).
+predicate(Diencephalon,SubClassOf,hasStructuralComponent some Metathalamus,).
+predicate(Diencephalon,SubClassOf,hasStructuralComponent some Thalamus).
+predicate(Diffusing,is,Class).
+predicate(DigestiveSystem,is,Class).
+predicate(Digit,is,Class).
+predicate(Digit,SubClassOf,ExtremityBodyPart).
+predicate(DinoprostAsDrug,is,Class).
+predicate(DinoprostTrometamol,is,Class).
+predicate(DinoprostTrometamol,SubClassOf,DinoprostAsDrug).
+predicate(DiscreteItemSeparating,is,Class).
+predicate(DiseaseProcessExtent,is,Class).
+predicate(DislocatedJoint,is,Class).
+predicate(DislocatedJoint,SubClassOf,Joint).
+predicate(Displacement,is,Class).
+predicate(DivisionOfCerebralHemisphere,is,Class).
+predicate(Dominance,is,Class).
+predicate(DominantHemisphere,is,Class).
+predicate(DominantHemisphere,SubClassOf,CerebralHemisphere).
+predicate(DorsalHornOfSpinalCord,is,Class).
+predicate(DorsalHornOfSpinalCord,SubClassOf,HornOfSpinalCord).
+predicate(DorsalWhiteCommissureOfSpinalCord,is,Class).
+predicate(DorsalWhiteCommissureOfSpinalCord,SubClassOf,WhiteCommissureOfSpinalCord).
+predicate(DuodenalPapilla,is,Class).
+predicate(DuodenoJejunalFlexure,is,Class).
+predicate(Duodenum,is,Class).
+predicate(Duodenum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Duodenum,SubClassOf,hasSpecificStructuralComponent some DuodenalPapilla,).
+predicate(Duodenum,SubClassOf,isAlphaConnectionOf some DuodenoJejunalFlexure,).
+predicate(Duodenum,SubClassOf,isBetaConnectionOf some GastroduodenalJunction,).
+predicate(Duodenum,SubClassOf,isLinearDivisionOf some SmallIntestine,).
+predicate(Duodenum,SubClassOf,isServedBy some AnteriorInferiorPancreaticoduodenalArtery,).
+predicate(Duodenum,SubClassOf,isServedBy some PortalVein,).
+predicate(Duodenum,SubClassOf,isServedBy some PosteriorInferiorPancreaticoduodenalArtery,).
+predicate(Duodenum,SubClassOf,isServedBy some SupraduodenalArtery).
+predicate(DuraMater,is,Class).
+predicate(DuraMater,SubClassOf,NAMEDNervousSystemPart,).
+predicate(DuraMater,SubClassOf,boundsSpace some ExtraduralSpace,).
+predicate(DuraMater,SubClassOf,boundsSpace some SubduralSpace,).
+predicate(DuraMater,SubClassOf,hasBetaConnection some DenticulatumLigament,).
+predicate(DuraMater,SubClassOf,hasStructuralComponent some FalxCerebelli,).
+predicate(DuraMater,SubClassOf,hasStructuralComponent some FalxCerebri,).
+predicate(DuraMater,SubClassOf,hasStructuralComponent some IntraCranialVenousSinus,).
+predicate(DuraMater,SubClassOf,hasStructuralComponent some TentoriumCerebelli,).
+predicate(DuraMater,SubClassOf,isAlphaConnectionOf some DenticulatumLigament).
+predicate(DysfunctionalUterineBleed,is,Class).
+predicate(DysfunctionalUterineBleed,EquivalentTo,UterineHaemorrhage and (hasAbnormalityStatus some abnormal)).
+predicate(DysfunctionalUterineBleed,SubClassOf,UterineHaemorrhage).
+predicate(ETTAgeSexTarget,is,Class).
+predicate(ETTAgeSexTarget,SubClassOf,NormalETTResult).
+predicate(Ear,is,Class).
+predicate(Ear,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(EarAndNoseAndThroat,is,Class).
+predicate(EarAndNoseAndThroat,SubClassOf,NAMEDInternalBodyPart).
+predicate(EarLobe,is,Class).
+predicate(EarLobe,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(Ectocervix,is,Class).
+predicate(Ectocervix,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(EctopicUrinaryBladder,is,Class).
+predicate(EctopicUrinaryBladder,SubClassOf,UrinaryBladder).
+predicate(EfferentFibre,is,Class).
+predicate(EfferentFibre,SubClassOf,NAMEDNervousSystemPart).
+predicate(EmbryonicPeriod,is,Class).
+predicate(EmbryonicPeriod,SubClassOf,AntenatalBabyhood).
+predicate(EndocardialCushion,is,Class).
+predicate(EndocardialCushion,SubClassOf,NAMEDCVSBodyPart).
+predicate(EndocardialTissue,is,Class).
+predicate(Endocardium,is,Class).
+predicate(Endocardium,SubClassOf,NAMEDCVSBodyPart,).
+predicate(Endocardium,SubClassOf,isLayerOf some Heart,).
+predicate(Endocardium,SubClassOf,isSpecificallyMadeOf some EndocardialTissue).
+predicate(Endocervix,is,Class).
+predicate(Endocervix,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(EndocrinePancreas,is,Class).
+predicate(EndocrinePancreas,SubClassOf,InternalOrgan,).
+predicate(EndocrinePancreas,SubClassOf,hasSpecificFunction some).
+predicate(EndocrinePancreas,SubClassOf,(Secretion and (actsSpecificallyOn some Insulin) and (hasUniqueAssociatedDisplacement some).
+predicate(EndocrinePancreas,SubClassOf,(Displacement and (isDisplacementFrom some Pancreas) and (isDisplacementTo some Blood)))),).
+predicate(EndocrinePancreas,SubClassOf,hasStructuralComponent some IsletOfLangerhans,).
+predicate(EndocrinePancreas,SubClassOf,isStructuralComponentOf some EndocrineSystem,).
+predicate(EndocrinePancreas,SubClassOf,isStructuralComponentOf some Pancreas).
+predicate(EndocrineSystem,is,Class).
+predicate(Endometrium,is,Class).
+predicate(Endometrium,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(EpibronchialPartOfEsophagus,is,Class).
+predicate(EpibronchialPartOfEsophagus,SubClassOf,NAMEDGITractBodyPart).
+predicate(Epicanthus,is,Class).
+predicate(Epicanthus,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(Epididymis,is,Class).
+predicate(Epididymis,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(Epiglottis,is,Class).
+predicate(Epiglottis,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(Epiglottis,SubClassOf,hasPartitiveConnection some AryepiglotticFold,).
+predicate(Epiglottis,SubClassOf,hasSpecificLayer some CartilageOfEpiglottis,).
+predicate(Epiglottis,SubClassOf,isAlphaConnectionOf some HyoepiglotticLigament,).
+predicate(Epiglottis,SubClassOf,isAlphaConnectionOf some ThyroepiglotticLigament,).
+predicate(Epiglottis,SubClassOf,isAlphaConnectionOf some VestibularLigament,).
+predicate(Epiglottis,SubClassOf,isPairedOrUnpaired some unpaired).
+predicate(EpiphysealCartilage,is,Class).
+predicate(EpiphysealCartilage,SubClassOf,NAMEDCartilage).
+predicate(Epithalamus,is,Class).
+predicate(Epithalamus,SubClassOf,NAMEDNervousSystemPart).
+predicate(Erythrocytopoiesis,is,Class).
+predicate(EsophagealPeristalsis,is,Class).
+predicate(Esophagus,is,Class).
+predicate(Esophagus,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Esophagus,SubClassOf,hasBetaPartitiveConnection some LowerEsophagealSphincter,).
+predicate(Esophagus,SubClassOf,hasLinearDivision some EpibronchialPartOfEsophagus,).
+predicate(Esophagus,SubClassOf,hasLinearDivision some LowerEsophagealSphincter,).
+predicate(Esophagus,SubClassOf,hasLinearDivision some ParsAbdominalisEsophagi,).
+predicate(Esophagus,SubClassOf,hasLinearDivision some ParsCervicalisEsophagi,).
+predicate(Esophagus,SubClassOf,hasLinearDivision some ParsThoracicaEsophagi,).
+predicate(Esophagus,SubClassOf,hasLinearDivision some UnnamedTractOfEsophagus,).
+predicate(Esophagus,SubClassOf,hasSpecificFunction some EsophagealPeristalsis,).
+predicate(Esophagus,SubClassOf,hasSpecificLayer some TunicaAdventitiaEsophagi,).
+predicate(Esophagus,SubClassOf,hasStructuralComponent some OesophagealArtery,).
+predicate(Esophagus,SubClassOf,hasStructuralComponent some OesophagealVein,).
+predicate(Esophagus,SubClassOf,isAlphaConnectionOf some GastroesophagealJunction,).
+predicate(Esophagus,SubClassOf,isAlphaConnectionOf some LowerEsophagealSphincter,).
+predicate(Esophagus,SubClassOf,isBetaConnectionOf some PharyngoesophagealJunction).
+predicate(EustachianTube,is,Class).
+predicate(EustachianTube,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(EustachianTube,SubClassOf,isStructuralComponentOf some MiddleEar).
+predicate(ExocrinePancreas,is,Class).
+predicate(ExocrinePancreas,SubClassOf,InternalOrgan,).
+predicate(ExocrinePancreas,SubClassOf,hasFunction some).
+predicate(ExocrinePancreas,SubClassOf,((Secretion and (actsSpecificallyOn some Amylase)) and (hasUniqueAssociatedDisplacement some).
+predicate(ExocrinePancreas,SubClassOf,(Displacement and (isDisplacementFrom some Pancreas) and (isDisplacementTo some Duodenum)))),).
+predicate(ExocrinePancreas,SubClassOf,isFunctionalComponentOf some Pancreas,).
+predicate(ExocrinePancreas,SubClassOf,isStructuralComponentOf some DigestiveSystem).
+predicate(ExtensorDigitorumLongusOfFoot,is,Class).
+predicate(ExtensorHallucisLongus,is,Class).
+predicate(ExternalAspectOfEye,is,Class).
+predicate(ExternalAspectOfEye,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(ExternalGenitalia,is,Class).
+predicate(ExternalGenitalia,SubClassOf,NAMEDTrunkBodyPart).
+predicate(ExternalOrgan,is,Class).
+predicate(ExternalOrgan,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(ExtraduralSpace,is,Class).
+predicate(Extremity,is,Class).
+predicate(ExtremityBodyPart,is,Class).
+predicate(ExtremityBodyPart,SubClassOf,NAMEDSurfaceBodyPart,).
+predicate(ExtremityBodyPart,SubClassOf,hasTopology some).
+predicate(ExtremityBodyPart,SubClassOf,(Topology and (hasAbsoluteState some topologicallySolid)),).
+predicate(ExtremityBodyPart,SubClassOf,isStructuralComponentOf some Extremity).
+predicate(ExtrinsicMuscleOfTongue,is,Class).
+predicate(Eyebrow,is,Class).
+predicate(Eyebrow,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(Face,is,Class).
+predicate(Face,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(FacialBone,is,Class).
+predicate(FacialBone,SubClassOf,Bone).
+predicate(FacialJoint,is,Class).
+predicate(FacialJoint,SubClassOf,Joint).
+predicate(FallopianTube,is,Class).
+predicate(FallopianTube,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(FalxCerebelli,is,Class).
+predicate(FalxCerebri,is,Class).
+predicate(Fauces,is,Class).
+predicate(FemaleAdult,is,Class).
+predicate(FemalePelvicFloor,is,Class).
+predicate(FemalePelvicFloor,EquivalentTo,PelvicFloor and (hasPhenotypicalSex some).
+predicate(FemalePelvicFloor,EquivalentTo,(PhenotypicalSex and (hasAbsoluteState some femaleSex)))).
+predicate(FemalePelvicFloor,SubClassOf,PelvicFloor).
+predicate(FemalePerinealBody,is,Class).
+predicate(FemalePerinealBody,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(FemaleUrethra,is,Class).
+predicate(FemaleUrethra,SubClassOf,Urethra).
+predicate(FemaleUrogenitalDiaphragm,is,Class).
+predicate(FemaleUrogenitalDiaphragm,SubClassOf,UrogenitalDiaphragm).
+predicate(FibroelasticLaryngealMembrane,is,Class).
+predicate(FibroelasticTissue,is,Class).
+predicate(FibrousJoint,is,Class).
+predicate(FibrousJoint,SubClassOf,Joint).
+predicate(FibrousPericardium,is,Class).
+predicate(FibrousPericardium,SubClassOf,NAMEDCVSBodyPart).
+predicate(FibrousTrigoneOfHeart,is,Class).
+predicate(FibrousTrigoneOfHeart,SubClassOf,NAMEDCVSBodyPart).
+predicate(FilumTerminale,is,Class).
+predicate(FilumTerminale,SubClassOf,NAMEDNervousSystemPart).
+predicate(Fimbria,is,Class).
+predicate(Fimbria,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(FimbtiatedFolds,is,Class).
+predicate(FimbtiatedFolds,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(FimbtiatedFolds,SubClassOf,isSpecificSurfaceDivisionOf some SublingualSurfaceOfTongue).
+predicate(FingerJoint,is,Class).
+predicate(FingerJoint,SubClassOf,Joint).
+predicate(FissureOfTooth,is,Class).
+predicate(FissureOfTooth,SubClassOf,PitOrFissureOfTooth).
+predicate(FissuredTongue,is,Class).
+predicate(FissuredTongue,SubClassOf,Tongue).
+predicate(Flank,is,Class).
+predicate(Flank,SubClassOf,NAMEDTrunkBodyPart).
+predicate(FlatBone,is,Class).
+predicate(FlatBone,SubClassOf,Bone).
+predicate(FlocculusOfCerebellum,is,Class).
+predicate(FlocculusOfCerebellum,SubClassOf,NAMEDNervousSystemPart).
+predicate(FloorOfMouth,is,Class).
+predicate(FloorOfMouth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(FloorOfMouth,SubClassOf,hasAlphaConnection some Tongue,).
+predicate(FloorOfMouth,SubClassOf,hasSpecificSolidDivision some SublingualCaruncle,).
+predicate(FloorOfMouth,SubClassOf,hasSpecificSolidDivision some SublingualFold,).
+predicate(FloorOfMouth,SubClassOf,hasSpecificStructuralComponent some SubmandibularDuct).
+predicate(FoetalDevelopmentPeriod,is,Class).
+predicate(FoetalDevelopmentPeriod,SubClassOf,AntenatalBabyhood).
+predicate(FoetalHeart,is,Class).
+predicate(FoetalHeart,SubClassOf,Heart).
+predicate(FoliateLingualPapilla,is,Class).
+predicate(FoliateLingualPapilla,SubClassOf,LingualPapilla).
+predicate(FootJoint,is,Class).
+predicate(FootJoint,SubClassOf,Joint).
+predicate(ForamenCaecumLinguae,is,Class).
+predicate(ForamenCaecumOssisFrontalis,is,Class).
+predicate(ForamenMagna,is,Class).
+predicate(Forefoot,is,Class).
+predicate(Forefoot,SubClassOf,ExtremityBodyPart).
+predicate(Forehead,is,Class).
+predicate(Forehead,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(ForeignBodyInAirwaySymptom,is,Class).
+predicate(ForeignBodyInAirwaySymptom,EquivalentTo,ForeignBodySymptom and (isNonPartitivelyContainedIn some Airway)).
+predicate(ForeignBodyInAirwaySymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodySymptom,is,Class).
+predicate(FossaOfTooth,is,Class).
+predicate(FossaOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(FossaOfTooth,SubClassOf,isSolidDivisionOf some).
+predicate(FossaOfTooth,SubClassOf,(SurfaceOfCrownOfTooth and (hasOcclusalNonOcclusalSelector some occlusalSelection))).
+predicate(FossaOvalis,is,Class).
+predicate(FossaOvalis,SubClassOf,NAMEDCVSBodyPart,).
+predicate(FossaOvalis,SubClassOf,hasStructuralComponent some LimbusOfFossaOvalis).
+predicate(Fourchette,is,Class).
+predicate(Fourchette,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(FourthVentricle,is,Class).
+predicate(FrenulumOfClitoralGlans,is,Class).
+predicate(FrenulumOfClitoralGlans,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(FrenulumOfTongue,is,Class).
+predicate(FrontalBalding,is,Class).
+predicate(FrontalBalding,EquivalentTo,HairLosingProcess and (actsSpecificallyOn some SkinOfFrontalScalp)).
+predicate(FrontalBalding,SubClassOf,HairLosingProcess).
+predicate(FrontalBone,is,Class).
+predicate(FrontalBone,SubClassOf,FlatBone,).
+predicate(FrontalBone,SubClassOf,hasSpecificSolidDivision some OrbitalPlateOfFrontalBone,).
+predicate(FrontalBone,SubClassOf,hasStructuralComponent some ForamenCaecumOssisFrontalis,).
+predicate(FrontalBone,SubClassOf,hasTopology some).
+predicate(FrontalBone,SubClassOf,(Topology and (hasAbsoluteState some actuallyHollow)),).
+predicate(FrontalBone,SubClassOf,isAlphaConnectionOf some CoronalSuture,).
+predicate(FrontalBone,SubClassOf,isPairedOrUnpaired some mirrorImaged,).
+predicate(FrontalBone,SubClassOf,isStructuralComponentOf some Face).
+predicate(FungiformLingualPapilla,is,Class).
+predicate(FungiformLingualPapilla,SubClassOf,LingualPapilla).
+predicate(GITractFromEsophagusToDuodenum,is,Class).
+predicate(GITractFromEsophagusToDuodenum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(GITractFromEsophagusToDuodenum,SubClassOf,hasLinearDivision some Esophagus,).
+predicate(GITractFromEsophagusToDuodenum,SubClassOf,hasLinearDivision some StomachToDuodenum,).
+predicate(GITractFromEsophagusToDuodenum,SubClassOf,isLinearDivisionOf some UpperGastrointestinalTract).
+predicate(Gallbladder,is,Class).
+predicate(Gallbladder,SubClassOf,InternalOrgan,).
+predicate(Gallbladder,SubClassOf,hasTopology some).
+predicate(Gallbladder,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(Gallbladder,SubClassOf,isAlphaConnectionOf some CysticDuct,).
+predicate(Gallbladder,SubClassOf,isServedBy some CysticArtery,).
+predicate(Gallbladder,SubClassOf,isServedBy some PortalVein).
+predicate(Gas,is,Class).
+predicate(GastricCorpus,is,Class).
+predicate(GastricCorpus,SubClassOf,NAMEDGITractBodyPart).
+predicate(GastricFundus,is,Class).
+predicate(GastricFundus,SubClassOf,NAMEDGITractBodyPart).
+predicate(GastroduodenalJunction,is,Class).
+predicate(GastroepiploicArtery,is,Class).
+predicate(GastroesophagealJunction,is,Class).
+predicate(GastrointestinalAbsorption,is,Class).
+predicate(GastrointestinalTract,is,Class).
+predicate(GastrointestinalTract,SubClassOf,NAMEDGITractBodyPart,).
+predicate(GastrointestinalTract,SubClassOf,hasLinearDivision some Intestine,).
+predicate(GastrointestinalTract,SubClassOf,hasLinearDivision some LargeIntestine,).
+predicate(GastrointestinalTract,SubClassOf,hasLinearDivision some UpperGastrointestinalTract,).
+predicate(GastrointestinalTract,SubClassOf,hasSpecificFunction some GastrointestinalAbsorption,).
+predicate(GastrointestinalTract,SubClassOf,hasSpecificFunction some GastrointestinalTransport,).
+predicate(GastrointestinalTract,SubClassOf,hasStructuralComponent some IntestinalLumen).
+predicate(GastrointestinalTransport,is,Class).
+predicate(GeniculateBody,is,Class).
+predicate(GeniculateBody,SubClassOf,NAMEDNervousSystemPart,).
+predicate(GeniculateBody,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(GenitoUrinarySystem,is,Class).
+predicate(GingivalMucosa,is,Class).
+predicate(GlansOfClitoris,is,Class).
+predicate(GlansOfClitoris,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(GlenoHumeralJoint,is,Class).
+predicate(GlomusJugulare,is,Class).
+predicate(GlomusJugulare,SubClassOf,NAMEDChemoreceptor,).
+predicate(GlomusJugulare,SubClassOf,isSpecificStructuralComponentOf some ChemoreceptorSystem,).
+predicate(GlomusJugulare,SubClassOf,isStructuralComponentOf some CardiovascularSystem).
+predicate(Glottis,is,Class).
+predicate(Glottis,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(Glottis,SubClassOf,hasAlphaPartitiveConnection some VestibularFold,).
+predicate(Glottis,SubClassOf,hasStructuralComponent some ArytenoidCartilage,).
+predicate(Glottis,SubClassOf,hasStructuralComponent some ConusOfLarynx,).
+predicate(Glottis,SubClassOf,hasStructuralComponent some CricothyroidLigament,).
+predicate(Glottis,SubClassOf,hasStructuralComponent some CricothyroidMuscle,).
+predicate(Glottis,SubClassOf,hasStructuralComponent some LaryngealSinus,).
+predicate(Glottis,SubClassOf,hasStructuralComponent some RimaGlottidis,).
+predicate(Glottis,SubClassOf,hasStructuralComponent some VocalCord,).
+predicate(Glottis,SubClassOf,hasStructuralComponent some VocalLigament,).
+predicate(Glottis,SubClassOf,hasStructuralComponent some VocalisMuscle,).
+predicate(Glottis,SubClassOf,hasTopology some).
+predicate(Glottis,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(Glottis,SubClassOf,isBetaConnectionOf some VestibularFold,).
+predicate(Glottis,SubClassOf,isPairedOrUnpaired some unpaired,).
+predicate(Glottis,SubClassOf,isPositionedAbove some Subglottis).
+predicate(GraafianFollicle,is,Class).
+predicate(GraafianFollicle,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(GreatPancreaticArtery,is,Class).
+predicate(GreaterCurvatureOfStomach,is,Class).
+predicate(GreaterCurvatureOfStomach,SubClassOf,CurvatureOfStomach).
+predicate(GreyMatter,is,Class).
+predicate(GreyMatter,SubClassOf,NAMEDNervousSystemPart).
+predicate(GrooveOfTooth,is,Class).
+predicate(GrooveOfTooth,SubClassOf,NAMEDOralCavityBodyPart).
+predicate(Gum,is,Class).
+predicate(Gum,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(Gum,SubClassOf,hasSpecificLayer some GingivalMucosa,).
+predicate(Gum,SubClassOf,isPairedOrUnpaired some exactlyPaired,).
+predicate(Gum,SubClassOf,isSpecificallyMadeOf some FibroelasticTissue).
+predicate(GustatoryCell,is,Class).
+predicate(HaematologicalSystem,is,Class).
+predicate(HaematologyTest,is,Class).
+predicate(Hair,is,Class).
+predicate(Hair,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(HairFollicle,is,Class).
+predicate(HairFollicle,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(HairLosingProcess,is,Class).
+predicate(HandJoint,is,Class).
+predicate(HandJoint,SubClassOf,Joint).
+predicate(HardPalate,is,Class).
+predicate(HardPalate,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(HardPalate,SubClassOf,hasShapeAnalagousTo some).
+predicate(HardPalate,SubClassOf,(AnatomicalShape and (hasAbsoluteState some laminar)),).
+predicate(HardPalate,SubClassOf,hasSpecificSolidDivision some PalatineFoveola,).
+predicate(HardPalate,SubClassOf,hasSpecificSolidDivision some PalatineRaphe,).
+predicate(HardPalate,SubClassOf,hasSpecificSolidDivision some TransversePalatineFolds,).
+predicate(HardPalate,SubClassOf,hasStructuralComponent some BonyPartOfHardPalate,).
+predicate(HardPalate,SubClassOf,hasStructuralComponent some PalatineSalivaryGland).
+predicate(Hazelnut,is,Class).
+predicate(Hazelnut,SubClassOf,Nut).
+predicate(Head,is,Class).
+predicate(HeadAndNeck,is,Class).
+predicate(HeadAndNeck,SubClassOf,NAMEDInternalBodyPart).
+predicate(Heart,is,Class).
+predicate(Heart,SubClassOf,InternalOrgan,).
+predicate(Heart,SubClassOf,boundsSpace some Mediastinum,).
+predicate(Heart,SubClassOf,hasFunctionalComponent some CardiacConductionSystemStructure,).
+predicate(Heart,SubClassOf,hasFunctionalComponent some CardiacMuscle,).
+predicate(Heart,SubClassOf,hasFunctionalComponent some HeartChamber,).
+predicate(Heart,SubClassOf,hasFunctionalComponent some LeftSideOfHeart,).
+predicate(Heart,SubClassOf,hasFunctionalComponent some RightSideOfHeart,).
+predicate(Heart,SubClassOf,hasLayer some CardiacMuscle,).
+predicate(Heart,SubClassOf,hasLayer some Endocardium,).
+predicate(Heart,SubClassOf,hasLayer some VisceralPericardium,).
+predicate(Heart,SubClassOf,hasSolidDivision some CardiacSeptum,).
+predicate(Heart,SubClassOf,hasSpecificSolidDivision some ApexOfHeart,).
+predicate(Heart,SubClassOf,hasSpecificSolidDivision some BaseOfHeart,).
+predicate(Heart,SubClassOf,hasSpecificSolidDivision some FibrousTrigoneOfHeart,).
+predicate(Heart,SubClassOf,hasSpecificSolidDivision some VortexCordis,).
+predicate(Heart,SubClassOf,hasSpecificStructuralComponent some ValveInHeart,).
+predicate(Heart,SubClassOf,hasSpecificSurfaceDivision some WholeSurfaceOfHeart,).
+predicate(Heart,SubClassOf,hasStructuralComponent some CardiacVein,).
+predicate(Heart,SubClassOf,hasStructuralComponent some CoronaryArtery,).
+predicate(Heart,SubClassOf,hasStructuralComponent some EndocardialCushion,).
+predicate(Heart,SubClassOf,hasStructuralComponent some PartOfPericardium,).
+predicate(Heart,SubClassOf,hasStructuralComponent some PericardialSpace,).
+predicate(Heart,SubClassOf,hasStructuralComponent some Pericardium,).
+predicate(Heart,SubClassOf,hasTopology some).
+predicate(Heart,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(Heart,SubClassOf,isFunctionalComponentOf some CardiovascularSystem,).
+predicate(Heart,SubClassOf,isNonPartitivelyContainedIn some Mediastinum,).
+predicate(Heart,SubClassOf,isServedBy some CardiacVein,).
+predicate(Heart,SubClassOf,isSpecificallyServedBy some CoronaryArtery,).
+predicate(Heart,SubClassOf,isSpecificallyServedBy some VagusNerve).
+predicate(HeartAllograft,is,Class).
+predicate(HeartAllograft,SubClassOf,Heart).
+predicate(HeartAtrium,is,Class).
+predicate(HeartAtrium,SubClassOf,HeartChamber).
+predicate(HeartChamber,is,Class).
+predicate(HeartChamber,SubClassOf,NAMEDCVSBodyPart,).
+predicate(HeartChamber,SubClassOf,definesSpace some CavityOfHeartChamber,).
+predicate(HeartChamber,SubClassOf,hasTopology some).
+predicate(HeartChamber,SubClassOf,(Topology and (hasAbsoluteState some tubular))).
+predicate(HeartValveIncompetence,is,Class).
+predicate(HeartVentricle,is,Class).
+predicate(HeartVentricle,SubClassOf,HeartChamber).
+predicate(HeartWall,is,Class).
+predicate(HelixOfPinna,is,Class).
+predicate(HelixOfPinna,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(HepaticFlexureOfColon,is,Class).
+predicate(HepaticVein,is,Class).
+predicate(HilumOfKidney,is,Class).
+predicate(Hindfoot,is,Class).
+predicate(Hindfoot,SubClassOf,ExtremityBodyPart).
+predicate(HingeJoint,is,Class).
+predicate(HingeJoint,SubClassOf,Joint).
+predicate(Hippocampus,is,Class).
+predicate(Hippocampus,SubClassOf,NAMEDNervousSystemPart).
+predicate(HorizontalRamusOfLateralSulcus,is,Class).
+predicate(HorizontalRamusOfLateralSulcus,SubClassOf,RamusOfLateralSulcus).
+predicate(HornOfSpinalCord,is,Class).
+predicate(HornOfSpinalCord,SubClassOf,NAMEDNervousSystemPart,).
+predicate(HornOfSpinalCord,SubClassOf,isStructuralComponentOf some SpinalCord).
+predicate(HorseShoeKidney,is,Class).
+predicate(HorseShoeKidney,SubClassOf,Kidney).
+predicate(Hymen,is,Class).
+predicate(Hymen,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(HyoepiglotticLigament,is,Class).
+predicate(HyoidCartilage,is,Class).
+predicate(HyoidCartilage,SubClassOf,NAMEDCartilage).
+predicate(Hypothalamus,is,Class).
+predicate(IleocecalValve,is,Class).
+predicate(IleocecalValve,SubClassOf,NAMEDGITractBodyPart,).
+predicate(IleocecalValve,SubClassOf,NAMEDValve,).
+predicate(IleocecalValve,SubClassOf,hasAlphaConnection some Ileum,).
+predicate(IleocecalValve,SubClassOf,hasBetaConnection some Cecum,).
+predicate(IleocecalValve,SubClassOf,isAlphaPartitiveConnectionOf some Cecum,).
+predicate(IleocecalValve,SubClassOf,isBetaPartitiveConnectionOf some Ileum,).
+predicate(IleocecalValve,SubClassOf,isLinearDivisionOf some Intestine).
+predicate(Ileum,is,Class).
+predicate(Ileum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Ileum,SubClassOf,hasBetaPartitiveConnection some IleocecalValve,).
+predicate(Ileum,SubClassOf,isAlphaConnectionOf some IleocecalValve,).
+predicate(Ileum,SubClassOf,isLinearDivisionOf some SmallIntestine).
+predicate(IlioPsoasMuscle,is,Class).
+predicate(Incisor,is,Class).
+predicate(Incisor,SubClassOf,Tooth).
+predicate(IncisuraAngularis,is,Class).
+predicate(IncisuraAngularis,SubClassOf,NAMEDGITractBodyPart).
+predicate(IncompetentAnalSphincter,is,Class).
+predicate(IncompetentAnalSphincter,SubClassOf,AnalSphincter).
+predicate(InferiorColliculus,is,Class).
+predicate(InferiorColliculus,SubClassOf,CorporaQuadrigemina).
+predicate(InferiorPharyngealConstrictorMuscle,is,Class).
+predicate(InfundibulopelvicFold,is,Class).
+predicate(InfundibulopelvicFold,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(InfundibulumOfSalpinx,is,Class).
+predicate(InfundibulumOfSalpinx,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(InguinalRegion,is,Class).
+predicate(InguinalRegion,SubClassOf,NAMEDTrunkBodyPart).
+predicate(Insulin,is,Class).
+predicate(IntercavalSinus,is,Class).
+predicate(IntercavalSinus,SubClassOf,NAMEDCVSBodyPart).
+predicate(IntermediateHepaticArtery,is,Class).
+predicate(IntermetatarsalJoint,is,Class).
+predicate(InternalCarotidBifurcation,is,Class).
+predicate(InternalOrgan,is,Class).
+predicate(InternalOrgan,SubClassOf,NAMEDInternalBodyPart).
+predicate(InternalUrethralOrifice,is,Class).
+predicate(InternalUrethralOrifice,SubClassOf,NAMEDUrinaryTractBodyPart).
+predicate(InterpeduncularFossa,is,Class).
+predicate(InterstitialTissueOfMyocardium,is,Class).
+predicate(IntervenousTubercle,is,Class).
+predicate(IntervenousTubercle,SubClassOf,NAMEDCVSBodyPart).
+predicate(InterventricularSulcus,is,Class).
+predicate(InterventricularSulcus,SubClassOf,NAMEDCVSBodyPart,).
+predicate(InterventricularSulcus,SubClassOf,isPairedOrUnpaired some exactlyPaired).
+predicate(IntestinalLumen,is,Class).
+predicate(IntestinalParalysis,is,Class).
+predicate(Intestine,is,Class).
+predicate(Intestine,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Intestine,SubClassOf,hasLinearDivision some IleocecalValve,).
+predicate(Intestine,SubClassOf,hasLinearDivision some LargeIntestine,).
+predicate(Intestine,SubClassOf,hasLinearDivision some SmallIntestine,).
+predicate(Intestine,SubClassOf,isLinearDivisionOf some GastrointestinalTract,).
+predicate(Intestine,SubClassOf,isNonPartitivelyContainedIn some AbdominalCavity).
+predicate(IntraCranialVenousSinus,is,Class).
+predicate(IntracranialFornix,is,Class).
+predicate(IntracranialFornix,SubClassOf,NAMEDNervousSystemPart,).
+predicate(IntracranialFornix,SubClassOf,isAlphaConnectionOf some SeptumPellucidum).
+predicate(IntrinsicMuscleOfTongue,is,Class).
+predicate(IsletOfLangerhans,is,Class).
+predicate(Jaw,is,Class).
+predicate(Jaw,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(Jejunum,is,Class).
+predicate(Jejunum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Jejunum,SubClassOf,isBetaConnectionOf some DuodenoJejunalFlexure,).
+predicate(Jejunum,SubClassOf,isLinearDivisionOf some SmallIntestine).
+predicate(JejunumToIleum,is,Class).
+predicate(JejunumToIleum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(JejunumToIleum,SubClassOf,hasLinearDivision some Ileum,).
+predicate(JejunumToIleum,SubClassOf,hasLinearDivision some Jejunum,).
+predicate(JejunumToIleum,SubClassOf,isLinearDivisionOf some UpperGastrointestinalTract).
+predicate(Joint,is,Class).
+predicate(Joint,SubClassOf,NAMEDSkeletalStructure).
+predicate(JointOfCervicalSpine,is,Class).
+predicate(JointOfCervicalSpine,SubClassOf,Joint).
+predicate(JointOfLowerLimb,is,Class).
+predicate(JointOfLowerLimb,SubClassOf,Joint).
+predicate(JointOfPelvis,is,Class).
+predicate(JointOfPelvis,SubClassOf,Joint).
+predicate(JointOfThorax,is,Class).
+predicate(JointOfThorax,SubClassOf,Joint).
+predicate(JointOfUpperLimb,is,Class).
+predicate(JointOfUpperLimb,SubClassOf,Joint).
+predicate(KeratinNail,is,Class).
+predicate(KeratinNail,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(KeratinNailBed,is,Class).
+predicate(KeratinNailBed,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(KeratinNailMatrix,is,Class).
+predicate(KeratinNailMatrix,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(Kidney,is,Class).
+predicate(Kidney,SubClassOf,InternalOrgan,).
+predicate(Kidney,SubClassOf,boundsSpace some PerirenalSpace,).
+predicate(Kidney,SubClassOf,hasFunctionalComponent some RenalStructure,).
+predicate(Kidney,SubClassOf,hasSpecificLayer some CapsuleOfKidney,).
+predicate(Kidney,SubClassOf,hasSpecificSolidDivision some RenalNonPelvis,).
+predicate(Kidney,SubClassOf,hasSpecificStructuralComponent some HilumOfKidney,).
+predicate(Kidney,SubClassOf,hasStructuralComponent some RenalPelvis,).
+predicate(Kidney,SubClassOf,hasTopology some).
+predicate(Kidney,SubClassOf,(Topology and (hasAbsoluteState some topologicallySolid)),).
+predicate(Kidney,SubClassOf,isServedBy some RenalAnteriorInferiorSegmentalArtery,).
+predicate(Kidney,SubClassOf,isServedBy some RenalAnteriorSegmentalArtery,).
+predicate(Kidney,SubClassOf,isServedBy some RenalAnteriorSuperiorSegmentalArtery,).
+predicate(Kidney,SubClassOf,isServedBy some RenalInferiorSegmentalArtery,).
+predicate(Kidney,SubClassOf,isServedBy some RenalPosteriorSegmentalArtery,).
+predicate(Kidney,SubClassOf,isServedBy some RenalSuperiorSegmentalArtery).
+predicate(Labia,is,Class).
+predicate(Labia,SubClassOf,NAMEDFemaleGenitalSurfaceBodyPart).
+predicate(LaminaTerminalis,is,Class).
+predicate(LaminaTerminalis,SubClassOf,NAMEDNervousSystemPart,).
+predicate(LaminaTerminalis,SubClassOf,isPairedOrUnpaired some unpaired).
+predicate(LargeIntestine,is,Class).
+predicate(LargeIntestine,SubClassOf,NAMEDGITractBodyPart,).
+predicate(LargeIntestine,SubClassOf,hasLinearDivision some Cecum,).
+predicate(LargeIntestine,SubClassOf,hasLinearDivision some ColonAndRectum,).
+predicate(LargeIntestine,SubClassOf,hasLinearDivision some RectumToAnus,).
+predicate(LargeIntestine,SubClassOf,isLinearDivisionOf some GastrointestinalTract,).
+predicate(LargeIntestine,SubClassOf,isLinearDivisionOf some Intestine,).
+predicate(LargeIntestine,SubClassOf,isServedBy some ArteriaeRectaeOfLargeIntestine).
+predicate(LaryngealCommissure,is,Class).
+predicate(LaryngealMucousMembrane,is,Class).
+predicate(LaryngealSinus,is,Class).
+predicate(LaryngoPharynx,is,Class).
+predicate(LaryngoPharynx,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(LaryngoPharynx,SubClassOf,hasSpecificLayer some LaryngopharyngealMucousMembrane,).
+predicate(LaryngoPharynx,SubClassOf,isAlphaConnectionOf some Larynx,).
+predicate(LaryngoPharynx,SubClassOf,isBetaConnectionOf some OroPharynx).
+predicate(LaryngopharyngealMucousMembrane,is,Class).
+predicate(Larynx,is,Class).
+predicate(Larynx,SubClassOf,InternalOrgan,).
+predicate(Larynx,SubClassOf,hasSpecificLayer some LaryngealMucousMembrane,).
+predicate(Larynx,SubClassOf,hasSpecificStructuralComponent some FibroelasticLaryngealMembrane,).
+predicate(Larynx,SubClassOf,hasSpecificStructuralComponent some Glottis,).
+predicate(Larynx,SubClassOf,hasSpecificStructuralComponent some LaryngealCommissure,).
+predicate(Larynx,SubClassOf,hasSpecificStructuralComponent some Subglottis,).
+predicate(Larynx,SubClassOf,hasSpecificStructuralComponent some Supraglottis,).
+predicate(Larynx,SubClassOf,hasTopology some).
+predicate(Larynx,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(Larynx,SubClassOf,isAlphaConnectionOf some Trachea,).
+predicate(Larynx,SubClassOf,isBetaConnectionOf some LaryngoPharynx,).
+predicate(Larynx,SubClassOf,isPairedOrUnpaired some unpaired,).
+predicate(Larynx,SubClassOf,isPartitivelyContainedIn some Neck).
+predicate(LateralBodyWall,is,Class).
+predicate(LateralBodyWall,EquivalentTo,AtLeastPairedBodyWall and (hasMedialLateralSelector some lateralSelection)).
+predicate(LateralBodyWall,SubClassOf,AtLeastPairedBodyWall).
+predicate(LateralGeniculateBody,is,Class).
+predicate(LateralGeniculateBody,SubClassOf,GeniculateBody).
+predicate(LateralHornOfSpinalCord,is,Class).
+predicate(LateralHornOfSpinalCord,SubClassOf,HornOfSpinalCord).
+predicate(LateralOlfactoryTract,is,Class).
+predicate(LateralOlfactoryTract,SubClassOf,NAMEDNervousSystemPart,).
+predicate(LateralOlfactoryTract,SubClassOf,hasShapeAnalagousTo some elongatedSolid,).
+predicate(LateralOlfactoryTract,SubClassOf,isPairedOrUnpaired some atLeastPaired).
+predicate(LeftAuricularAppendage,is,Class).
+predicate(LeftAuricularAppendage,SubClassOf,AuricularAppendage).
+predicate(LeftCerebralHemisphere,is,Class).
+predicate(LeftCerebralHemisphere,SubClassOf,CerebralHemisphere).
+predicate(LeftColon,is,Class).
+predicate(LeftColon,SubClassOf,NAMEDGITractBodyPart,).
+predicate(LeftColon,SubClassOf,hasSpecificLinearDivision some DescendingColon,).
+predicate(LeftColon,SubClassOf,hasSpecificLinearDivision some SigmoidColon,).
+predicate(LeftColon,SubClassOf,hasSpecificLinearDivision some SplenicFlexureOfColon).
+predicate(LeftGastricArtery,is,Class).
+predicate(LeftHeartAtrium,is,Class).
+predicate(LeftHeartVentricle,is,Class).
+predicate(LeftInferiorPhrenicArtery,is,Class).
+predicate(LeftLung,is,Class).
+predicate(LeftLung,SubClassOf,Lung).
+predicate(LeftMainBronchus,is,Class).
+predicate(LeftMarginOfHeart,is,Class).
+predicate(LeftMarginOfHeart,SubClassOf,NAMEDCVSBodyPart).
+predicate(LeftParietalBone,is,Class).
+predicate(LeftParietalBone,SubClassOf,ParietalBone).
+predicate(LeftSideOfHeart,is,Class).
+predicate(LeftSideOfHeart,SubClassOf,NAMEDCVSBodyPart,).
+predicate(LeftSideOfHeart,SubClassOf,hasFunctionalComponent some LeftHeartAtrium,).
+predicate(LeftSideOfHeart,SubClassOf,hasFunctionalComponent some LeftHeartVentricle,).
+predicate(LeftSideOfHeart,SubClassOf,hasStructuralComponent some AorticValve,).
+predicate(LeftSideOfHeart,SubClassOf,hasStructuralComponent some MitralValve,).
+predicate(LeftSideOfHeart,SubClassOf,hasTopology some).
+predicate(LeftSideOfHeart,SubClassOf,(Topology and (hasAbsoluteState some tubular))).
+predicate(LeftTooth,is,Class).
+predicate(LeftTooth,SubClassOf,Tooth).
+predicate(Leg,is,Class).
+predicate(LesserCurvatureOfStomach,is,Class).
+predicate(LesserCurvatureOfStomach,SubClassOf,CurvatureOfStomach).
+predicate(LevatorVeliPalatiniMuscle,is,Class).
+predicate(LigamentOfTheOvary,is,Class).
+predicate(LigamentOfTheOvary,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(LimbusOfFossaOvalis,is,Class).
+predicate(LimbusOfFossaOvalis,SubClassOf,NAMEDCVSBodyPart).
+predicate(LineaSplendens,is,Class).
+predicate(LingualGrooveOfTooth,is,Class).
+predicate(LingualGrooveOfTooth,SubClassOf,GrooveOfTooth).
+predicate(LingualPapilla,is,Class).
+predicate(LingualPapilla,SubClassOf,NAMEDOralCavityBodyPart).
+predicate(LingualSalivaryGland,is,Class).
+predicate(LingualTonsil,is,Class).
+predicate(LingualTonsil,SubClassOf,LymphoidTonsil).
+predicate(LingulaOfCerebellum,is,Class).
+predicate(LingulaOfCerebellum,SubClassOf,NAMEDNervousSystemPart).
+predicate(Lip,is,Class).
+predicate(Lip,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(LiquidBlood,is,Class).
+predicate(Liver,is,Class).
+predicate(Liver,SubClassOf,InternalOrgan,).
+predicate(Liver,SubClassOf,hasStructuralComponent some LiverParenchymalStructure,).
+predicate(Liver,SubClassOf,hasTopology some).
+predicate(Liver,SubClassOf,(Topology and (hasAbsoluteState some topologicallySolid)),).
+predicate(Liver,SubClassOf,isServedBy some HepaticVein,).
+predicate(Liver,SubClassOf,isServedBy some IntermediateHepaticArtery,).
+predicate(Liver,SubClassOf,isServedBy some RightHepaticArtery,).
+predicate(Liver,SubClassOf,isStructuralComponentOf some DigestiveSystem).
+predicate(LiverParenchyma,is,Class).
+predicate(LiverParenchyma,SubClassOf,Parenchyma).
+predicate(LiverParenchymalStructure,is,Class).
+predicate(LobarParenchyma,is,Class).
+predicate(LobarParenchyma,SubClassOf,Parenchyma).
+predicate(LobeOfLung,is,Class).
+predicate(LobularParenchyma,is,Class).
+predicate(LobularParenchyma,SubClassOf,Parenchyma).
+predicate(LobularParenchymalStructure,is,Class).
+predicate(LocalBurningParaesthesia,is,Class).
+predicate(LocalBurningParaesthesia,EquivalentTo,BurningParaesthesia and (hasDiseaseProcessExtent some).
+predicate(LocalBurningParaesthesia,EquivalentTo,(DiseaseProcessExtent and (hasAbsoluteState some localisedDiseaseProcessExtent)))).
+predicate(LocalBurningParaesthesia,SubClassOf,BurningParaesthesia).
+predicate(LockedJoint,is,Class).
+predicate(LockedJoint,SubClassOf,Joint).
+predicate(LongBone,is,Class).
+predicate(LongBone,SubClassOf,Bone).
+predicate(LongFiliformLingualPapilla,is,Class).
+predicate(LongFiliformLingualPapilla,SubClassOf,LingualPapilla).
+predicate(LowMolecularWeightHeparinActiveDrugAdditive,is,Class).
+predicate(LowerEsophagealSphincter,is,Class).
+predicate(LowerEsophagealSphincter,SubClassOf,NAMEDGITractBodyPart,).
+predicate(LowerEsophagealSphincter,SubClassOf,NAMEDSphincter,).
+predicate(LowerEsophagealSphincter,SubClassOf,isAlphaPartitiveConnectionOf some Stomach,).
+predicate(LowerEsophagealSphincter,SubClassOf,isBetaPartitiveConnectionOf some Esophagus).
+predicate(LowerRenalCalyx,is,Class).
+predicate(LowerRenalCalyx,SubClassOf,CalixOfKidney).
+predicate(LowerRespiratoryTract,is,Class).
+predicate(LowerRespiratoryTract,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(LowerRespiratoryTract,SubClassOf,hasSpecificStructuralComponent some Carina,).
+predicate(LowerRespiratoryTract,SubClassOf,hasStructuralComponent some Alveolus,).
+predicate(LowerRespiratoryTract,SubClassOf,hasStructuralComponent some Bronchiole,).
+predicate(LowerRespiratoryTract,SubClassOf,hasStructuralComponent some Bronchus,).
+predicate(LowerRespiratoryTract,SubClassOf,hasStructuralComponent some Trachea).
+predicate(LowerTooth,is,Class).
+predicate(LowerTooth,SubClassOf,Tooth).
+predicate(LowerUrinaryTract,is,Class).
+predicate(LowerUrinaryTract,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(LowerUrinaryTract,SubClassOf,hasLinearDivision some InternalUrethralOrifice,).
+predicate(LowerUrinaryTract,SubClassOf,hasLinearDivision some Urethra,).
+predicate(LowerUrinaryTract,SubClassOf,hasLinearDivision some UrinaryBladder,).
+predicate(LowerUrinaryTract,SubClassOf,hasStructuralComponent some UrethralSphincter,).
+predicate(LowerUrinaryTract,SubClassOf,isPairedOrUnpaired some unpaired).
+predicate(LumbarNerveRoot,is,Class).
+predicate(LumbarNerveRoot,SubClassOf,SpinalNerveRoot).
+predicate(LumbarSac,is,Class).
+predicate(LumbarSac,SubClassOf,NAMEDNervousSystemPart).
+predicate(LumbarSpine,is,Class).
+predicate(LumbarSpine,SubClassOf,ComplexSkeletalStructure).
+predicate(LumboSacralSpine,is,Class).
+predicate(LumboSacralSpine,SubClassOf,ComplexSkeletalStructure).
+predicate(Lung,is,Class).
+predicate(Lung,SubClassOf,InternalOrgan,).
+predicate(Lung,SubClassOf,LungOrBronchi,).
+predicate(Lung,SubClassOf,boundsSpace some Mediastinum,).
+predicate(Lung,SubClassOf,hasStructuralComponent some BronchialArtery,).
+predicate(Lung,SubClassOf,hasStructuralComponent some LungParenchymalStructure,).
+predicate(Lung,SubClassOf,hasStructuralComponent some PleuralMembrane,).
+predicate(Lung,SubClassOf,hasStructuralComponent some PulmonaryArtery,).
+predicate(Lung,SubClassOf,hasStructuralComponent some PulmonaryVein,).
+predicate(Lung,SubClassOf,hasTopology some).
+predicate(Lung,SubClassOf,(Topology and (hasAbsoluteState some topologicallySolid)),).
+predicate(Lung,SubClassOf,isNonPartitivelyContainedIn some ThoracicCavity,).
+predicate(Lung,SubClassOf,isPairedOrUnpaired some leftRightPaired,).
+predicate(Lung,SubClassOf,isServedBy some BronchialArtery,).
+predicate(Lung,SubClassOf,isServedBy some PulmonaryArtery,).
+predicate(Lung,SubClassOf,isServedBy some PulmonaryVein,).
+predicate(Lung,SubClassOf,isSpecificallyNonPartitivelyContainedIn some PleuralMembrane).
+predicate(LungAllograft,is,Class).
+predicate(LungAllograft,SubClassOf,Lung).
+predicate(LungAndBronchi,is,Class).
+predicate(LungAndBronchi,SubClassOf,LungOrBronchi).
+predicate(LungOrBronchi,is,Class).
+predicate(LungOrBronchi,SubClassOf,NAMEDRespiratoryBodyPart).
+predicate(LungParenchyma,is,Class).
+predicate(LungParenchyma,SubClassOf,Parenchyma).
+predicate(LungParenchymalStructure,is,Class).
+predicate(LymphaticSystem,is,Class).
+predicate(LymphoidTissue,is,Class).
+predicate(LymphoidTonsil,is,Class).
+predicate(LymphoidTonsil,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(LymphoidTonsil,SubClassOf,hasTopology some solidTopology,).
+predicate(LymphoidTonsil,SubClassOf,isMadeOf some LymphoidTissue,).
+predicate(LymphoidTonsil,SubClassOf,isPairedOrUnpaired some mirrorImaged,).
+predicate(LymphoidTonsil,SubClassOf,isStructuralComponentOf some LymphaticSystem).
+predicate(Macroglia,is,Class).
+predicate(Macroglia,SubClassOf,NAMEDNervousSystemPart).
+predicate(MainBronchus,is,Class).
+predicate(MainExtremityBodyPart,is,Class).
+predicate(MainExtremityBodyPart,SubClassOf,ExtremityBodyPart).
+predicate(MainPancreaticDuct,is,Class).
+predicate(MajorBodyDivision,is,Class).
+predicate(MajorBodyDivision,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(MajorRenalCalyx,is,Class).
+predicate(MajorRenalCalyx,SubClassOf,CalixOfKidney).
+predicate(MalePelvicFloor,is,Class).
+predicate(MalePelvicFloor,EquivalentTo,PelvicFloor and (hasPhenotypicalSex some).
+predicate(MalePelvicFloor,EquivalentTo,(PhenotypicalSex and (hasAbsoluteState some maleSex)))).
+predicate(MalePelvicFloor,SubClassOf,PelvicFloor).
+predicate(MalePerinealBody,is,Class).
+predicate(MalePerinealBody,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(MalePerineoScrotum,is,Class).
+predicate(MalePerineoScrotum,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(MaleRetroUrinaryBladderSpace,is,Class).
+predicate(MaleUrethra,is,Class).
+predicate(MaleUrethra,SubClassOf,Urethra).
+predicate(MaleUrogenitalDiaphragm,is,Class).
+predicate(MaleUrogenitalDiaphragm,SubClassOf,UrogenitalDiaphragm).
+predicate(MamillaryBody,is,Class).
+predicate(MamillaryBody,SubClassOf,NAMEDNervousSystemPart,).
+predicate(MamillaryBody,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(Mandible,is,Class).
+predicate(ManufacturingProcess,is,Class).
+predicate(MaternalGrandfather,is,Class).
+predicate(MaternalGrandfather,SubClassOf,MaternalGrandparentRole).
+predicate(MaternalGrandmother,is,Class).
+predicate(MaternalGrandmother,SubClassOf,MaternalGrandparentRole).
+predicate(MaternalGrandparentRole,is,Class).
+predicate(MaternalGrandparentRole,SubClassOf,SecondDegreeGeneticRelativeRole).
+predicate(Maxilla,is,Class).
+predicate(MeckelDiverticulum,is,Class).
+predicate(MeckelDiverticulum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(MeckelDiverticulum,SubClassOf,hasAbnormalityStatus some variant,).
+predicate(MeckelDiverticulum,SubClassOf,hasAcquisitionMode some).
+predicate(MeckelDiverticulum,SubClassOf,(AcquisitionMode and (hasAbsoluteState some congenital))).
+predicate(MedialBodyWall,is,Class).
+predicate(MedialBodyWall,EquivalentTo,AtLeastPairedBodyWall and (hasMedialLateralSelector some medialSelection)).
+predicate(MedialBodyWall,SubClassOf,AtLeastPairedBodyWall).
+predicate(MedialBorderOfScapula,is,Class).
+predicate(MedialBorderOfScapula,EquivalentTo,BorderOfScapula and (hasMedialLateralSelector some medialSelection)).
+predicate(MedialBorderOfScapula,SubClassOf,BorderOfScapula).
+predicate(MedialGeniculateBody,is,Class).
+predicate(MedialGeniculateBody,EquivalentTo,GeniculateBody and (hasMedialLateralSelector some medialSelection)).
+predicate(MedialGeniculateBody,SubClassOf,GeniculateBody).
+predicate(MedialMedullaryLamina,is,Class).
+predicate(MedialMedullaryLamina,SubClassOf,NAMEDNervousSystemPart).
+predicate(MedialOlfactoryTract,is,Class).
+predicate(MedialOlfactoryTract,SubClassOf,NAMEDNervousSystemPart,).
+predicate(MedialOlfactoryTract,SubClassOf,hasShapeAnalagousTo some elongatedSolid,).
+predicate(MedialOlfactoryTract,SubClassOf,isPairedOrUnpaired some atLeastPaired).
+predicate(Mediastinum,is,Class).
+predicate(MedullaryOlive,is,Class).
+predicate(MedullaryOlive,SubClassOf,Olive).
+predicate(MedullarySpongeKidney,is,Class).
+predicate(MedullarySpongeKidney,SubClassOf,Kidney).
+predicate(MegaUrethra,is,Class).
+predicate(MegaUrethra,SubClassOf,Urethra).
+predicate(MegaloUreter,is,Class).
+predicate(MegaloUreter,SubClassOf,Ureter).
+predicate(MegaloUrethra,is,Class).
+predicate(MegaloUrethra,SubClassOf,Urethra).
+predicate(MeningesOfSpinalCord,is,Class).
+predicate(Mesencephalon,is,Class).
+predicate(Mesencephalon,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Mesencephalon,SubClassOf,hasStructuralComponent some CerebralAqueduct,).
+predicate(Mesencephalon,SubClassOf,hasStructuralComponent some CerebralPeduncle,).
+predicate(Mesencephalon,SubClassOf,hasStructuralComponent some InterpeduncularFossa,).
+predicate(Mesencephalon,SubClassOf,hasTopology some tubularTopology).
+predicate(Mesosalpinx,is,Class).
+predicate(Mesosalpinx,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(Mesovarium,is,Class).
+predicate(Mesovarium,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(Metathalamus,is,Class).
+predicate(Metathalamus,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Metathalamus,SubClassOf,hasStructuralComponent some GeniculateBody).
+predicate(Metencephalon,is,Class).
+predicate(Metencephalon,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Metencephalon,SubClassOf,hasStructuralComponent some Cerebellum,).
+predicate(Metencephalon,SubClassOf,hasStructuralComponent some Pons).
+predicate(Microglia,is,Class).
+predicate(Microglia,SubClassOf,NAMEDNervousSystemPart).
+predicate(MiddleCerebralTrifurcation,is,Class).
+predicate(MiddleEar,is,Class).
+predicate(MiddlePharyngealConstrictorMuscle,is,Class).
+predicate(MiddleRenalCalyx,is,Class).
+predicate(MiddleRenalCalyx,SubClassOf,CalixOfKidney).
+predicate(Midfoot,is,Class).
+predicate(Midfoot,SubClassOf,ExtremityBodyPart).
+predicate(MinorRenalCalyx,is,Class).
+predicate(MinorRenalCalyx,SubClassOf,CalixOfKidney).
+predicate(MitralRing,is,Class).
+predicate(MitralRing,SubClassOf,AnulusFibrosus).
+predicate(MitralValve,is,Class).
+predicate(Molar,is,Class).
+predicate(Molar,SubClassOf,Tooth).
+predicate(MonsPubis,is,Class).
+predicate(MonsPubis,SubClassOf,NAMEDFemaleGenitalSurfaceBodyPart).
+predicate(MotorEndPlate,is,Class).
+predicate(MotorEndPlate,SubClassOf,NAMEDNervousSystemPart).
+predicate(Mouth,is,Class).
+predicate(Mouth,SubClassOf,InternalOrgan,).
+predicate(Mouth,SubClassOf,hasStructuralComponent some Lip,).
+predicate(Mouth,SubClassOf,hasStructuralComponent some Mandible,).
+predicate(Mouth,SubClassOf,hasStructuralComponent some Maxilla,).
+predicate(Mouth,SubClassOf,hasStructuralComponent some NAMEDOralCavityBodyPart,).
+predicate(Mouth,SubClassOf,hasStructuralComponent some OralMeatus,).
+predicate(Mouth,SubClassOf,hasStructuralComponent some RimaOris,).
+predicate(Mouth,SubClassOf,hasStructuralComponent some SalivaryDuct,).
+predicate(Mouth,SubClassOf,hasStructuralComponent some SalivaryGland,).
+predicate(Mouth,SubClassOf,hasTopology some).
+predicate(Mouth,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(Mouth,SubClassOf,isBetaConnectionOf some OroPharynx,).
+predicate(Mouth,SubClassOf,isPairedOrUnpaired some unpaired,).
+predicate(Mouth,SubClassOf,isStructuralComponentOf some Head,).
+predicate(Mouth,SubClassOf,isStructuralComponentOf some OrodentalSystem).
+predicate(MucosaOfUndersideOfTongue,is,Class).
+predicate(MultiparousFemaleAdult,is,Class).
+predicate(MultiparousFemaleAdult,EquivalentTo,FemaleAdult and (hasParity some).
+predicate(MultiparousFemaleAdult,EquivalentTo,(Parity and (hasAbsoluteState some mutliParous)))).
+predicate(MultiparousFemaleAdult,SubClassOf,FemaleAdult).
+predicate(MuscleOfAnteriorCompartmentOfThigh,is,Class).
+predicate(MuscleOfAnteriorCompartmentOfThigh,EquivalentTo,StriatedMuscle and (IsDivisionOf some AnteriorFascialCompartmentOfThigh)).
+predicate(MuscleOfAnteriorCompartmentOfThigh,SubClassOf,StriatedMuscle).
+predicate(MuscleOfPosteriorCompartmentOfForearm,is,Class).
+predicate(MuscleOfPosteriorCompartmentOfForearm,EquivalentTo,StriatedMuscle and (IsDivisionOf some PosteriorFascialCompartmentOfForearm)).
+predicate(MuscleOfPosteriorCompartmentOfForearm,SubClassOf,StriatedMuscle).
+predicate(MusculusUvulae,is,Class).
+predicate(Myelencephalon,is,Class).
+predicate(Myelencephalon,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Myelencephalon,SubClassOf,hasShapeAnalagousTo some).
+predicate(Myelencephalon,SubClassOf,(AnatomicalShape and (hasAbsoluteState some linear)),).
+predicate(Myelencephalon,SubClassOf,isAlphaConnectionOf some SpinalCord,).
+predicate(Myelencephalon,SubClassOf,isBetaConnectionOf some Pons,).
+predicate(Myelencephalon,SubClassOf,passesThrough some ForamenMagna).
+predicate(MyelinSheath,is,Class).
+predicate(MyelinSheath,SubClassOf,NAMEDNervousSystemPart).
+predicate(NAMEDArticulatingDisc,is,Class).
+predicate(NAMEDArticulatingDisc,SubClassOf,ArticulatingDisc).
+predicate(NAMEDBodyPart,is,Class).
+predicate(NAMEDBone,is,Class).
+predicate(NAMEDBone,SubClassOf,Bone).
+predicate(NAMEDCVSBodyPart,is,Class).
+predicate(NAMEDCVSBodyPart,SubClassOf,NAMEDInternalBodyPart,).
+predicate(NAMEDCVSBodyPart,SubClassOf,isStructuralComponentOf some CardiovascularSystem).
+predicate(NAMEDCartilage,is,Class).
+predicate(NAMEDCartilage,SubClassOf,NAMEDSkeletalStructure,).
+predicate(NAMEDCartilage,SubClassOf,isSpecificallyMadeOf some Cartilage).
+predicate(NAMEDChemoreceptor,is,Class).
+predicate(NAMEDChemoreceptor,SubClassOf,NAMEDInternalBodyPart).
+predicate(NAMEDEndocrineSubpart,is,Class).
+predicate(NAMEDEndocrineSubpart,SubClassOf,NAMEDInternalOrganSubPart).
+predicate(NAMEDEyeDiseaseProcess,is,Class).
+predicate(NAMEDFemaleGenitalSurfaceBodyPart,is,Class).
+predicate(NAMEDFemaleGenitalSurfaceBodyPart,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(NAMEDFemaleGenitalTractBodyPart,is,Class).
+predicate(NAMEDFemaleGenitalTractBodyPart,SubClassOf,NAMEDGenitalTractBodyPart).
+predicate(NAMEDGITractBodyPart,is,Class).
+predicate(NAMEDGITractBodyPart,SubClassOf,NAMEDInternalBodyPart,).
+predicate(NAMEDGITractBodyPart,SubClassOf,hasTopology some).
+predicate(NAMEDGITractBodyPart,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(NAMEDGITractBodyPart,SubClassOf,isStructuralComponentOf some DigestiveSystem).
+predicate(NAMEDGenitalTractBodyPart,is,Class).
+predicate(NAMEDGenitalTractBodyPart,SubClassOf,NAMEDInternalBodyPart).
+predicate(NAMEDGynaecologicalDiseaseProcess,is,Class).
+predicate(NAMEDHeadSurfaceBodyPart,is,Class).
+predicate(NAMEDHeadSurfaceBodyPart,SubClassOf,NAMEDSurfaceBodyPart,).
+predicate(NAMEDHeadSurfaceBodyPart,SubClassOf,hasShapeAnalagousTo some).
+predicate(NAMEDHeadSurfaceBodyPart,SubClassOf,(AnatomicalShape and (hasAbsoluteState some laminar))).
+predicate(NAMEDInternalBodyPart,is,Class).
+predicate(NAMEDInternalBodyPart,SubClassOf,NAMEDBodyPart,).
+predicate(NAMEDInternalBodyPart,SubClassOf,hasSurfaceVisibility some internal).
+predicate(NAMEDInternalBodySubPart,is,Class).
+predicate(NAMEDInternalOrganSubPart,is,Class).
+predicate(NAMEDInternalOrganSubPart,SubClassOf,NAMEDInternalBodySubPart).
+predicate(NAMEDJoint,is,Class).
+predicate(NAMEDJoint,SubClassOf,Joint).
+predicate(NAMEDKidneySubPart,is,Class).
+predicate(NAMEDKidneySubPart,SubClassOf,NAMEDInternalOrganSubPart).
+predicate(NAMEDMaleGenitalSurfaceBodyPart,is,Class).
+predicate(NAMEDMaleGenitalSurfaceBodyPart,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(NAMEDMaleGenitalTractBodyPart,is,Class).
+predicate(NAMEDMaleGenitalTractBodyPart,SubClassOf,NAMEDGenitalTractBodyPart).
+predicate(NAMEDNeckBodyPart,is,Class).
+predicate(NAMEDNeckBodyPart,SubClassOf,NAMEDInternalBodyPart).
+predicate(NAMEDNervousSystemPart,is,Class).
+predicate(NAMEDNervousSystemPart,SubClassOf,NAMEDInternalBodyPart).
+predicate(NAMEDOralCavityBodyPart,is,Class).
+predicate(NAMEDOralCavityBodyPart,SubClassOf,NAMEDInternalBodyPart,).
+predicate(NAMEDOralCavityBodyPart,SubClassOf,isStructuralComponentOf some Mouth).
+predicate(NAMEDRespiratoryBodyPart,is,Class).
+predicate(NAMEDRespiratoryBodyPart,SubClassOf,NAMEDInternalBodyPart,).
+predicate(NAMEDRespiratoryBodyPart,SubClassOf,isStructuralComponentOf some RespiratorySystem).
+predicate(NAMEDSkeletalStructure,is,Class).
+predicate(NAMEDSkeletalStructure,SubClassOf,NAMEDInternalBodyPart).
+predicate(NAMEDSphincter,is,Class).
+predicate(NAMEDSurfaceBodyPart,is,Class).
+predicate(NAMEDSurfaceBodyPart,SubClassOf,NAMEDBodyPart,).
+predicate(NAMEDSurfaceBodyPart,SubClassOf,hasSurfaceVisibility some surfaceVisible).
+predicate(NAMEDTrunkBodyPart,is,Class).
+predicate(NAMEDTrunkBodyPart,SubClassOf,NAMEDSurfaceBodyPart,).
+predicate(NAMEDTrunkBodyPart,SubClassOf,hasShapeAnalagousTo some).
+predicate(NAMEDTrunkBodyPart,SubClassOf,(AnatomicalShape and (hasAbsoluteState some laminar))).
+predicate(NAMEDUrinaryTractBodyPart,is,Class).
+predicate(NAMEDUrinaryTractBodyPart,SubClassOf,NAMEDInternalBodyPart).
+predicate(NAMEDValve,is,Class).
+predicate(NapeOfNeck,is,Class).
+predicate(NapeOfNeck,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(NasalAntrum,is,Class).
+predicate(NasalAntrum,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(NasalAntrum,SubClassOf,isSpecificStructuralComponentOf some Nose).
+predicate(NasoPharynx,is,Class).
+predicate(NasoPharynx,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(NasoPharynx,SubClassOf,hasSpecificLayer some NasopharyngealMucousMembrane,).
+predicate(NasoPharynx,SubClassOf,hasStructuralComponent some EustachianTube,).
+predicate(NasoPharynx,SubClassOf,hasStructuralComponent some PharyngealTonsil,).
+predicate(NasoPharynx,SubClassOf,hasStructuralComponent some TubalTonsil,).
+predicate(NasoPharynx,SubClassOf,hasTopology some tubularTopology,).
+predicate(NasoPharynx,SubClassOf,isAlphaConnectionOf some OroPharynx,).
+predicate(NasoPharynx,SubClassOf,isBetaConnectionOf some Choana).
+predicate(NasopharyngealMeatus,is,Class).
+predicate(NasopharyngealMucousMembrane,is,Class).
+predicate(Neck,is,Class).
+predicate(Neocerebellum,is,Class).
+predicate(Neocerebellum,SubClassOf,NAMEDNervousSystemPart).
+predicate(Neostriatum,is,Class).
+predicate(Neostriatum,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Neostriatum,SubClassOf,hasSpecificStructuralComponent some NucleusCaudatus,).
+predicate(Neostriatum,SubClassOf,hasStructuralComponent some Putamen).
+predicate(NerveDistribution,is,Class).
+predicate(NerveDistribution,SubClassOf,NAMEDNervousSystemPart).
+predicate(NeuralTissue,is,Class).
+predicate(NeuroanatomicalArea,is,Class).
+predicate(NeuroanatomicalArea,SubClassOf,NAMEDNervousSystemPart).
+predicate(Neuron,is,Class).
+predicate(Neuron,SubClassOf,NAMEDNervousSystemPart).
+predicate(NinthCostalCartilage,is,Class).
+predicate(NinthCostalCartilage,EquivalentTo,CostalCartilage and (hasOrdinalPosition some ninth)).
+predicate(NinthCostalCartilage,SubClassOf,CostalCartilage,).
+predicate(NinthCostalCartilage,SubClassOf,hasAlphaConnection some NinthRib,).
+predicate(NinthCostalCartilage,SubClassOf,isBetaConnectionOf some NinthRib).
+predicate(NinthRib,is,Class).
+predicate(Nipple,is,Class).
+predicate(Nipple,SubClassOf,NAMEDTrunkBodyPart).
+predicate(NoduleOfCerebellum,is,Class).
+predicate(NoduleOfCerebellum,SubClassOf,NAMEDNervousSystemPart).
+predicate(Noise,is,Class).
+predicate(Noise,SubClassOf,WaveSignal).
+predicate(NonAxialSkeleton,is,Class).
+predicate(NonAxialSkeleton,SubClassOf,ComplexSkeletalStructure).
+predicate(NonDominantHemisphere,is,Class).
+predicate(NonDominantHemisphere,SubClassOf,CerebralHemisphere).
+predicate(NonTerminalBronchiole,is,Class).
+predicate(NonTerminalBronchiole,SubClassOf,Bronchiole).
+predicate(NonVitalTooth,is,Class).
+predicate(NonVitalTooth,SubClassOf,Tooth).
+predicate(NormalBodyCavity,is,Class).
+predicate(NormalBodyCavity,EquivalentTo,BodyCavity and (hasAbnormalityStatus some normal)).
+predicate(NormalBodyCavity,SubClassOf,BodyCavity).
+predicate(NormalETTResult,is,Class).
+predicate(Nose,is,Class).
+predicate(NoseAndThroat,is,Class).
+predicate(NoseAndThroat,SubClassOf,NAMEDInternalBodyPart).
+predicate(NotPyramidalTract,is,Class).
+predicate(NotPyramidalTract,SubClassOf,NAMEDNervousSystemPart).
+predicate(NotchOfApexOfHeart,is,Class).
+predicate(NotchOfApexOfHeart,SubClassOf,NAMEDCVSBodyPart).
+predicate(NucleusCaudatus,is,Class).
+predicate(NucleusLentiformis,is,Class).
+predicate(NucleusPulposus,is,Class).
+predicate(NucleusPulposus,SubClassOf,NAMEDSkeletalStructure).
+predicate(NulliparousFemaleAdult,is,Class).
+predicate(NulliparousFemaleAdult,EquivalentTo,FemaleAdult and (hasParity some).
+predicate(NulliparousFemaleAdult,EquivalentTo,(Parity and (hasAbsoluteState some nulliParous)))).
+predicate(NulliparousFemaleAdult,SubClassOf,FemaleAdult).
+predicate(Nut,is,Class).
+predicate(ObliqueArytenoidMuscle,is,Class).
+predicate(OccipitalBalding,is,Class).
+predicate(OccipitalBalding,EquivalentTo,HairLosingProcess and (actsSpecificallyOn some SkinOfOccipitalScalp)).
+predicate(OccipitalBalding,SubClassOf,HairLosingProcess).
+predicate(OcclusalGrooveOfTooth,is,Class).
+predicate(OcclusalGrooveOfTooth,SubClassOf,GrooveOfTooth).
+predicate(OesophagealArtery,is,Class).
+predicate(OesophagealVein,is,Class).
+predicate(Olive,is,Class).
+predicate(Olive,SubClassOf,NAMEDNervousSystemPart).
+predicate(OpeningOfVenaCava,is,Class).
+predicate(OpticChiasmaArea,is,Class).
+predicate(OpticChiasmaArea,SubClassOf,NeuroanatomicalArea).
+predicate(OralCavity,is,Class).
+predicate(OralMeatus,is,Class).
+predicate(Orbit,is,Class).
+predicate(Orbit,SubClassOf,ComplexSkeletalStructure).
+predicate(OrbitalPlateOfFrontalBone,is,Class).
+predicate(OroPharynx,is,Class).
+predicate(OroPharynx,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(OroPharynx,SubClassOf,hasSpecificLayer some OropharyngealMucousMembrane,).
+predicate(OroPharynx,SubClassOf,hasStructuralComponent some PalatineTonsil,).
+predicate(OroPharynx,SubClassOf,hasStructuralComponent some PalatoglossalArch,).
+predicate(OroPharynx,SubClassOf,hasStructuralComponent some PalatopharyngealArch,).
+predicate(OroPharynx,SubClassOf,hasStructuralComponent some Uvula,).
+predicate(OroPharynx,SubClassOf,isAlphaConnectionOf some LaryngoPharynx,).
+predicate(OroPharynx,SubClassOf,isBetaConnectionOf some Mouth,).
+predicate(OroPharynx,SubClassOf,isBetaConnectionOf some NasoPharynx).
+predicate(OrodentalSystem,is,Class).
+predicate(OropharyngealMucousMembrane,is,Class).
+predicate(Ovary,is,Class).
+predicate(Ovary,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(PalatalMucosa,is,Class).
+predicate(Palate,is,Class).
+predicate(Palate,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(Palate,SubClassOf,hasShapeAnalagousTo some).
+predicate(Palate,SubClassOf,(AnatomicalShape and (hasAbsoluteState some laminar)),).
+predicate(Palate,SubClassOf,hasSpecificLayer some PalatalMucosa,).
+predicate(Palate,SubClassOf,hasStructuralComponent some HardPalate,).
+predicate(Palate,SubClassOf,hasStructuralComponent some SoftPalate).
+predicate(PalatineAponeurosis,is,Class).
+predicate(PalatineFoveola,is,Class).
+predicate(PalatineFoveola,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(PalatineFoveola,SubClassOf,isSpecificSolidDivisionOf some HardPalate).
+predicate(PalatineRaphe,is,Class).
+predicate(PalatineRaphe,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(PalatineRaphe,SubClassOf,isSpecificSolidDivisionOf some HardPalate).
+predicate(PalatineSalivaryGland,is,Class).
+predicate(PalatineTonsil,is,Class).
+predicate(PalatineTonsil,SubClassOf,LymphoidTonsil).
+predicate(PalatoglossalArch,is,Class).
+predicate(PalatoglossalArch,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(PalatoglossalArch,SubClassOf,isStructuralComponentOf some OroPharynx,).
+predicate(PalatoglossalArch,SubClassOf,isStructuralComponentOf some SoftPalate).
+predicate(PalatoglossusMuscle,is,Class).
+predicate(PalatopharyngealArch,is,Class).
+predicate(PalatopharyngealArch,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(PalatopharyngealArch,SubClassOf,isStructuralComponentOf some OroPharynx,).
+predicate(PalatopharyngealArch,SubClassOf,isStructuralComponentOf some SoftPalate).
+predicate(PalatopharyngeusMuscle,is,Class).
+predicate(Paleocerebellum,is,Class).
+predicate(Paleocerebellum,SubClassOf,NAMEDNervousSystemPart).
+predicate(Paleothalamus,is,Class).
+predicate(Paleothalamus,SubClassOf,NAMEDNervousSystemPart).
+predicate(Pallidum,is,Class).
+predicate(Pallidum,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Pallidum,SubClassOf,hasSpecificStructuralComponent some MedialMedullaryLamina).
+predicate(Palpebrum,is,Class).
+predicate(Palpebrum,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(Pancreas,is,Class).
+predicate(Pancreas,SubClassOf,InternalOrgan,).
+predicate(Pancreas,SubClassOf,hasFunctionalComponent some ExocrinePancreas,).
+predicate(Pancreas,SubClassOf,hasSpecificStructuralComponent some PancreaticDuct,).
+predicate(Pancreas,SubClassOf,hasStructuralComponent some EndocrinePancreas,).
+predicate(Pancreas,SubClassOf,hasStructuralComponent some PancreaticVein,).
+predicate(Pancreas,SubClassOf,hasTopology some).
+predicate(Pancreas,SubClassOf,(Topology and (hasAbsoluteState some topologicallySolid)),).
+predicate(Pancreas,SubClassOf,isServedBy some AnteriorInferiorPancreaticoduodenalArtery,).
+predicate(Pancreas,SubClassOf,isServedBy some CaudalPancreaticArtery,).
+predicate(Pancreas,SubClassOf,isServedBy some CommonInferiorPancreaticoduodenalArtery,).
+predicate(Pancreas,SubClassOf,isServedBy some GreatPancreaticArtery,).
+predicate(Pancreas,SubClassOf,isServedBy some PosteriorInferiorPancreaticoduodenalArtery).
+predicate(PancreaticDuct,is,Class).
+predicate(PancreaticVein,is,Class).
+predicate(Panthera,is,Class).
+predicate(ParaRectalFossa,is,Class).
+predicate(ParaVesicalFossa,is,Class).
+predicate(ParaffinWhiteSoft,is,Class).
+predicate(ParaffinWhiteSoft,SubClassOf,SoftParaffin).
+predicate(ParaffinYellowSoft,is,Class).
+predicate(ParaffinYellowSoft,SubClassOf,SoftParaffin).
+predicate(ParaffinYellowSoftAsDrug,is,Class).
+predicate(ParaffinYellowSoftAsDrug,SubClassOf,ParaffinYellowSoft).
+predicate(Parahippocampus,is,Class).
+predicate(Parahippocampus,SubClassOf,NAMEDNervousSystemPart).
+predicate(ParanasalSinus,is,Class).
+predicate(Parenchyma,is,Class).
+predicate(Parenchyma,SubClassOf,SoftTissue).
+predicate(ParietalBalding,is,Class).
+predicate(ParietalBalding,EquivalentTo,HairLosingProcess and (actsSpecificallyOn some SkinOfParietalScalp)).
+predicate(ParietalBalding,SubClassOf,HairLosingProcess).
+predicate(ParietalBone,is,Class).
+predicate(ParietalBone,SubClassOf,FlatBone,).
+predicate(ParietalBone,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(Parity,is,Class).
+predicate(ParityState,is,Class).
+predicate(Parkinsonism,is,Class).
+predicate(Parkinsonism,EquivalentTo,Phenomenon and (LocativeAttribute some).
+predicate(Parkinsonism,EquivalentTo,(DegenerativeLesion and (hasLocation some BasalNucleus))) and (hasPathologicalStatus some pathological)).
+predicate(Parkinsonism,SubClassOf,Phenomenon).
+predicate(ParsAbdominalisEsophagi,is,Class).
+predicate(ParsAbdominalisEsophagi,SubClassOf,NAMEDGITractBodyPart,).
+predicate(ParsAbdominalisEsophagi,SubClassOf,hasLinearDivision some SubdiaphragmaticPartOfEsophagus,).
+predicate(ParsAbdominalisEsophagi,SubClassOf,isNonPartitivelyContainedIn some AbdominalCavity).
+predicate(ParsCardiacaGastris,is,Class).
+predicate(ParsCardiacaGastris,SubClassOf,NAMEDGITractBodyPart).
+predicate(ParsCervicalisEsophagi,is,Class).
+predicate(ParsCervicalisEsophagi,SubClassOf,NAMEDGITractBodyPart).
+predicate(ParsCompacta,is,Class).
+predicate(ParsCompacta,SubClassOf,NAMEDNervousSystemPart).
+predicate(ParsReticulata,is,Class).
+predicate(ParsReticulata,SubClassOf,NAMEDNervousSystemPart).
+predicate(ParsThoracicaEsophagi,is,Class).
+predicate(ParsThoracicaEsophagi,SubClassOf,NAMEDGITractBodyPart,).
+predicate(ParsThoracicaEsophagi,SubClassOf,hasLinearDivision some SupradiaphragmaticPartOfEsophagus).
+predicate(PartOfPericardium,is,Class).
+predicate(PatelloFemoralJoint,is,Class).
+predicate(PatelloFemoralJoint,SubClassOf,Joint).
+predicate(PectinateMuscles,is,Class).
+predicate(PectinateMuscles,SubClassOf,NAMEDCVSBodyPart).
+predicate(PelvicBone,is,Class).
+predicate(PelvicBone,SubClassOf,Bone).
+predicate(PelvicFloor,is,Class).
+predicate(PelvicFloor,SubClassOf,NAMEDInternalBodyPart).
+predicate(PelvicGirdle,is,Class).
+predicate(PelvicGirdle,SubClassOf,ComplexSkeletalStructure).
+predicate(PelvicPartOfTrunk,is,Class).
+predicate(PelvicPartOfTrunk,SubClassOf,NAMEDTrunkBodyPart).
+predicate(PelvicWall,is,Class).
+predicate(PelvicWall,SubClassOf,NAMEDInternalBodyPart).
+predicate(Pelvis,is,Class).
+predicate(Pelvis,SubClassOf,ComplexSkeletalStructure).
+predicate(PelviuretericJunction,is,Class).
+predicate(PerforatedSubstance,is,Class).
+predicate(PerforatedSubstance,SubClassOf,NAMEDNervousSystemPart,).
+predicate(PerforatedSubstance,SubClassOf,isPairedOrUnpaired some exactlyPaired,).
+predicate(PerforatedSubstance,SubClassOf,isStructuralComponentOf some Brainstem).
+predicate(PeriSpinalSpace,is,Class).
+predicate(PericardialSpace,is,Class).
+predicate(Pericardium,is,Class).
+predicate(PerinatalPeriod,is,Class).
+predicate(PerinatalPeriod,SubClassOf,AntenatalBabyhood).
+predicate(Perineum,is,Class).
+predicate(Perineum,SubClassOf,NAMEDTrunkBodyPart).
+predicate(PeriodontalLigament,is,Class).
+predicate(Periodontium,is,Class).
+predicate(Periodontium,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(Periodontium,SubClassOf,hasStructuralComponent some AlveolarPartOfBone,).
+predicate(Periodontium,SubClassOf,hasStructuralComponent some CementumOfTooth,).
+predicate(Periodontium,SubClassOf,hasStructuralComponent some Gum,).
+predicate(Periodontium,SubClassOf,hasStructuralComponent some PeriodontalLigament).
+predicate(Periodontum,is,Class).
+predicate(Periodontum,SubClassOf,NAMEDOralCavityBodyPart).
+predicate(PeripharyngealSpace,is,Class).
+predicate(PerirectalTissue,is,Class).
+predicate(PerirenalSpace,is,Class).
+predicate(PermanentTooth,is,Class).
+predicate(PermanentTooth,SubClassOf,Tooth).
+predicate(PeroneusTertius,is,Class).
+predicate(PharyngealMucousMembrane,is,Class).
+predicate(PharyngealTonsil,is,Class).
+predicate(PharyngealTonsil,SubClassOf,LymphoidTonsil).
+predicate(PharyngoesophagealJunction,is,Class).
+predicate(PharyngomaxillarySpace,is,Class).
+predicate(Pharynx,is,Class).
+predicate(Pharynx,SubClassOf,InternalOrgan,).
+predicate(Pharynx,SubClassOf,boundsSpace some OralCavity,).
+predicate(Pharynx,SubClassOf,hasSpecificLayer some PharyngealMucousMembrane,).
+predicate(Pharynx,SubClassOf,hasSpecificSolidDivision some LaryngoPharynx,).
+predicate(Pharynx,SubClassOf,hasSpecificSolidDivision some NasoPharynx,).
+predicate(Pharynx,SubClassOf,hasSpecificSolidDivision some OroPharynx,).
+predicate(Pharynx,SubClassOf,hasStructuralComponent some InferiorPharyngealConstrictorMuscle,).
+predicate(Pharynx,SubClassOf,hasStructuralComponent some MiddlePharyngealConstrictorMuscle,).
+predicate(Pharynx,SubClassOf,hasStructuralComponent some PalatopharyngeusMuscle,).
+predicate(Pharynx,SubClassOf,hasStructuralComponent some PeripharyngealSpace,).
+predicate(Pharynx,SubClassOf,hasStructuralComponent some SalpingopharyngeusMuscle,).
+predicate(Pharynx,SubClassOf,hasStructuralComponent some StylopharyngeusMuscle,).
+predicate(Pharynx,SubClassOf,hasStructuralComponent some SuperiorPharyngealConstrictorMuscle,).
+predicate(Pharynx,SubClassOf,hasTopology some).
+predicate(Pharynx,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(Pharynx,SubClassOf,isAlphaConnectionOf some PharyngoesophagealJunction,).
+predicate(Pharynx,SubClassOf,isPositionedAnteriorTo some RetropharyngealSpace,).
+predicate(Pharynx,SubClassOf,isPositionedMedialTo some PharyngomaxillarySpace,).
+predicate(Pharynx,SubClassOf,isSpecificStructuralComponentOf some UpperRespiratoryTract,).
+predicate(Pharynx,SubClassOf,isStructuralComponentOf some Head).
+predicate(Phenomenon,is,Class).
+predicate(PhenotypicalSex,is,Class).
+predicate(Philtrum,is,Class).
+predicate(Philtrum,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(PiaMater,is,Class).
+predicate(PiaMater,SubClassOf,NAMEDNervousSystemPart,).
+predicate(PiaMater,SubClassOf,boundsSpace some SubarachnoidSpace,).
+predicate(PiaMater,SubClassOf,hasStructuralComponent some DenticulatumLigament,).
+predicate(PiaMater,SubClassOf,hasStructuralComponent some LineaSplendens,).
+predicate(PiaMater,SubClassOf,hasSurfaceDivision some DenticulateLigament).
+predicate(Pinna,is,Class).
+predicate(Pinna,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(PiriformFossa,is,Class).
+predicate(PitOfTooth,is,Class).
+predicate(PitOfTooth,SubClassOf,PitOrFissureOfTooth).
+predicate(PitOrFissureOfTooth,is,Class).
+predicate(PitOrFissureOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(PitOrFissureOfTooth,SubClassOf,isSolidDivisionOf some).
+predicate(PitOrFissureOfTooth,SubClassOf,(SurfaceOfCrownOfTooth and (hasOcclusalNonOcclusalSelector some occlusalSelection))).
+predicate(Plasmodium,is,Class).
+predicate(PlasmodiumFalciparum,is,Class).
+predicate(PlasmodiumFalciparum,SubClassOf,Plasmodium).
+predicate(PleuralMembrane,is,Class).
+predicate(PlexusHaemorrhoidalis,is,Class).
+predicate(Pneumarthrosis,is,Class).
+predicate(Pneumarthrosis,SubClassOf,Joint).
+predicate(PneumaticBone,is,Class).
+predicate(PneumaticBone,SubClassOf,Bone).
+predicate(Pneumocardia,is,Class).
+predicate(Pneumocardia,SubClassOf,Heart).
+predicate(PoisoningProcess,is,Class).
+predicate(Pons,is,Class).
+predicate(Pons,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Pons,SubClassOf,isAlphaConnectionOf some Myelencephalon).
+predicate(PontoCerebellarAngle,is,Class).
+predicate(PontoCerebellarAngle,SubClassOf,NAMEDNervousSystemPart,).
+predicate(PontoCerebellarAngle,SubClassOf,isSpecificSolidDivisionOf some Rhombencephalon).
+predicate(PortalVein,is,Class).
+predicate(PosteriorCecalArtery,is,Class).
+predicate(PosteriorCerebralArtery,is,Class).
+predicate(PosteriorCommunicatingArtery,is,Class).
+predicate(PosteriorCranialFossa,is,Class).
+predicate(PosteriorCricoarytenoidMuscle,is,Class).
+predicate(PosteriorFascialCompartmentOfForearm,is,Class).
+predicate(PosteriorInferiorPancreaticoduodenalArtery,is,Class).
+predicate(PosteriorPerforatedSubstance,is,Class).
+predicate(PosteriorPerforatedSubstance,SubClassOf,PerforatedSubstance).
+predicate(PosteriorRamusOfLateralSulcus,is,Class).
+predicate(PosteriorRamusOfLateralSulcus,SubClassOf,RamusOfLateralSulcus).
+predicate(PosteriorSpinalNerveRoot,is,Class).
+predicate(PosteriorSpinalNerveRoot,SubClassOf,SpinalNerveRoot).
+predicate(PosteriorTooth,is,Class).
+predicate(PosteriorTooth,SubClassOf,Tooth).
+predicate(PostvertebralMuscleGroup,is,Class).
+predicate(PostvertebralMuscleGroup,SubClassOf,NAMEDInternalBodyPart).
+predicate(Premolar,is,Class).
+predicate(Premolar,SubClassOf,Tooth).
+predicate(PrepubertalBoy,is,Class).
+predicate(PrepubertalBoy,EquivalentTo,Boy and (hasSexualMaturation some).
+predicate(PrepubertalBoy,EquivalentTo,(SexualMaturation and (hasAbsoluteState some prepubertal)))).
+predicate(PrepubertalBoy,SubClassOf,Boy).
+predicate(PrimaryFissureOfCerebellum,is,Class).
+predicate(PrimaryFissureOfCerebellum,SubClassOf,NAMEDNervousSystemPart).
+predicate(ProcessusVaginalisPeritonei,is,Class).
+predicate(ProcessusVaginalisPeritonei,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(Prosencephalon,is,Class).
+predicate(Prosencephalon,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Prosencephalon,SubClassOf,hasStructuralComponent some Diencephalon,).
+predicate(Prosencephalon,SubClassOf,hasStructuralComponent some Telencephalon).
+predicate(ProstaticUtricle,is,Class).
+predicate(ProstaticUtricle,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(Pubes,is,Class).
+predicate(Pubes,SubClassOf,NAMEDTrunkBodyPart).
+predicate(PuboVaginalis,is,Class).
+predicate(PuboVaginalis,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(PulmonaryAcinus,is,Class).
+predicate(PulmonaryAcinus,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(PulmonaryAcinus,SubClassOf,hasStructuralComponent some LobularParenchymalStructure,).
+predicate(PulmonaryAcinus,SubClassOf,isSpecificStructuralComponentOf some BronchoPulmonarySegment).
+predicate(PulmonaryArtery,is,Class).
+predicate(PulmonaryRing,is,Class).
+predicate(PulmonaryRing,SubClassOf,AnulusFibrosus).
+predicate(PulmonarySurfaceOfHeart,is,Class).
+predicate(PulmonarySurfaceOfHeart,SubClassOf,NAMEDCVSBodyPart).
+predicate(PulmonaryValve,is,Class).
+predicate(PulmonaryVein,is,Class).
+predicate(PulpCavityOfTooth,is,Class).
+predicate(PulpChamberOfTooth,is,Class).
+predicate(PulpChamberOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(PulpChamberOfTooth,SubClassOf,hasTopology some tubularTopology,).
+predicate(PulpChamberOfTooth,SubClassOf,isSpecificSolidDivisionOf some Tooth).
+predicate(Pulvinar,is,Class).
+predicate(Pulvinar,SubClassOf,NAMEDNervousSystemPart).
+predicate(Putamen,is,Class).
+predicate(Putamen,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Putamen,SubClassOf,isStructuralComponentOf some Neostriatum,).
+predicate(Putamen,SubClassOf,isStructuralComponentOf some NucleusLentiformis).
+predicate(PyloricAntrum,is,Class).
+predicate(PyloricCanal,is,Class).
+predicate(Pylorus,is,Class).
+predicate(Pylorus,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Pylorus,SubClassOf,NAMEDSphincter,).
+predicate(Pylorus,SubClassOf,definesSpace some PyloricCanal,).
+predicate(Pylorus,SubClassOf,isStructuralComponentOf some Stomach).
+predicate(PyramidOfCerebellum,is,Class).
+predicate(PyramidOfCerebellum,SubClassOf,NAMEDNervousSystemPart).
+predicate(QuadricepsFemoris,is,Class).
+predicate(RadioHumeralJoint,is,Class).
+predicate(RadioHumeralJoint,SubClassOf,Joint).
+predicate(RamusOfLateralSulcus,is,Class).
+predicate(RamusOfLateralSulcus,SubClassOf,NAMEDNervousSystemPart).
+predicate(RectalArtery,is,Class).
+predicate(RectalVein,is,Class).
+predicate(RectoSigmoidJunction,is,Class).
+predicate(RectoUterinePouch,is,Class).
+predicate(RectoVaginalPouch,is,Class).
+predicate(Rectum,is,Class).
+predicate(Rectum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Rectum,SubClassOf,boundsSpace some MaleRetroUrinaryBladderSpace,).
+predicate(Rectum,SubClassOf,boundsSpace some RectoUterinePouch,).
+predicate(Rectum,SubClassOf,boundsSpace some RectoVaginalPouch,).
+predicate(Rectum,SubClassOf,hasStructuralComponent some PerirectalTissue,).
+predicate(Rectum,SubClassOf,isBetaConnectionOf some RectoSigmoidJunction,).
+predicate(Rectum,SubClassOf,isPositionedMedialTo some ParaRectalFossa,).
+predicate(Rectum,SubClassOf,isServedBy some PlexusHaemorrhoidalis,).
+predicate(Rectum,SubClassOf,isServedBy some RectalArtery,).
+predicate(Rectum,SubClassOf,isServedBy some RectalVein).
+predicate(RectumOrColon,is,Class).
+predicate(RectumOrColon,SubClassOf,NAMEDGITractBodyPart).
+predicate(RectumToAnus,is,Class).
+predicate(RectumToAnus,SubClassOf,NAMEDGITractBodyPart,).
+predicate(RectumToAnus,SubClassOf,hasLinearDivision some Anus,).
+predicate(RectumToAnus,SubClassOf,hasLinearDivision some Rectum).
+predicate(RenalAnteriorInferiorSegmentalArtery,is,Class).
+predicate(RenalAnteriorSegmentalArtery,is,Class).
+predicate(RenalAnteriorSuperiorSegmentalArtery,is,Class).
+predicate(RenalDialysing,is,Class).
+predicate(RenalDialysing,SubClassOf,Dialysing).
+predicate(RenalInferiorSegmentalArtery,is,Class).
+predicate(RenalNonPelvis,is,Class).
+predicate(RenalParenchyma,is,Class).
+predicate(RenalParenchyma,EquivalentTo,Parenchyma and (specificallyMakesUp some RenalNonPelvis)).
+predicate(RenalParenchyma,SubClassOf,Parenchyma).
+predicate(RenalPelvis,is,Class).
+predicate(RenalPelvis,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(RenalPelvis,SubClassOf,hasBlindPouchDivision some CalixOfKidney,).
+predicate(RenalPelvis,SubClassOf,isAlphaConnectionOf some PelviuretericJunction).
+predicate(RenalPosteriorSegmentalArtery,is,Class).
+predicate(RenalStructure,is,Class).
+predicate(RenalSuperiorSegmentalArtery,is,Class).
+predicate(RespiratoryAirway,is,Class).
+predicate(RespiratorySystem,is,Class).
+predicate(RespiratoryTract,is,Class).
+predicate(RespiratoryTract,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(RespiratoryTract,SubClassOf,definesSpace some RespiratoryAirway,).
+predicate(RespiratoryTract,SubClassOf,hasStructuralComponent some LowerRespiratoryTract,).
+predicate(RespiratoryTract,SubClassOf,hasStructuralComponent some UpperRespiratoryTract,).
+predicate(RespiratoryTract,SubClassOf,hasTopology some tubularTopology,).
+predicate(RespiratoryTract,SubClassOf,isPairedOrUnpaired some unpaired).
+predicate(ReticularFormation,is,Class).
+predicate(ReticularFormation,SubClassOf,NAMEDNervousSystemPart).
+predicate(RetroUrinaryBladderSpace,is,Class).
+predicate(RetrocavalUreter,is,Class).
+predicate(RetropharyngealSpace,is,Class).
+predicate(RheumaticHeartDisease,is,Class).
+predicate(RheumaticTricuspidIncompetence,is,Class).
+predicate(RheumaticTricuspidIncompetence,SubClassOf,TricuspidIncompetence).
+predicate(Rhizopus,is,Class).
+predicate(Rhizopus,SubClassOf,Zygomycota).
+predicate(Rhombencephalon,is,Class).
+predicate(Rhombencephalon,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Rhombencephalon,SubClassOf,hasSpecificSolidDivision some PontoCerebellarAngle,).
+predicate(Rhombencephalon,SubClassOf,hasStructuralComponent some FourthVentricle,).
+predicate(Rhombencephalon,SubClassOf,hasStructuralComponent some Metencephalon,).
+predicate(Rhombencephalon,SubClassOf,hasStructuralComponent some Myelencephalon).
+predicate(RibCage,is,Class).
+predicate(RibCage,SubClassOf,ComplexSkeletalStructure).
+predicate(RidgeOfTooth,is,Class).
+predicate(RidgeOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(RidgeOfTooth,SubClassOf,isSolidDivisionOf some).
+predicate(RidgeOfTooth,SubClassOf,(SurfaceOfCrownOfTooth and (hasOcclusalNonOcclusalSelector some occlusalSelection))).
+predicate(RightAuricularAppendage,is,Class).
+predicate(RightAuricularAppendage,SubClassOf,AuricularAppendage).
+predicate(RightCerebralHemisphere,is,Class).
+predicate(RightCerebralHemisphere,SubClassOf,CerebralHemisphere).
+predicate(RightColon,is,Class).
+predicate(RightColon,SubClassOf,NAMEDGITractBodyPart,).
+predicate(RightColon,SubClassOf,hasSpecificLinearDivision some AscendingColon,).
+predicate(RightColon,SubClassOf,hasSpecificLinearDivision some Cecum,).
+predicate(RightColon,SubClassOf,hasSpecificLinearDivision some HepaticFlexureOfColon).
+predicate(RightGastricArtery,is,Class).
+predicate(RightHeartAtrium,is,Class).
+predicate(RightHeartVentricle,is,Class).
+predicate(RightHepaticArtery,is,Class).
+predicate(RightInferiorPhrenicArtery,is,Class).
+predicate(RightLung,is,Class).
+predicate(RightLung,SubClassOf,Lung).
+predicate(RightMainBronchus,is,Class).
+predicate(RightMarginOfHeart,is,Class).
+predicate(RightMarginOfHeart,SubClassOf,NAMEDCVSBodyPart).
+predicate(RightParietalBone,is,Class).
+predicate(RightParietalBone,SubClassOf,ParietalBone).
+predicate(RightSideOfHeart,is,Class).
+predicate(RightSideOfHeart,SubClassOf,NAMEDCVSBodyPart,).
+predicate(RightSideOfHeart,SubClassOf,hasFunctionalComponent some RightHeartAtrium,).
+predicate(RightSideOfHeart,SubClassOf,hasFunctionalComponent some RightHeartVentricle,).
+predicate(RightSideOfHeart,SubClassOf,hasStructuralComponent some PulmonaryValve,).
+predicate(RightSideOfHeart,SubClassOf,hasStructuralComponent some TricuspidValve,).
+predicate(RightSideOfHeart,SubClassOf,hasTopology some).
+predicate(RightSideOfHeart,SubClassOf,(Topology and (hasAbsoluteState some tubular))).
+predicate(RightTooth,is,Class).
+predicate(RightTooth,SubClassOf,Tooth).
+predicate(RightTriangularLigamentOfLiver,is,Class).
+predicate(RimaGlottidis,is,Class).
+predicate(RimaOris,is,Class).
+predicate(RimaVestibuli,is,Class).
+predicate(RimaVocalis,is,Class).
+predicate(RoofNucleusOfCerebellum,is,Class).
+predicate(RootApexOfTooth,is,Class).
+predicate(RootApexOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(RootApexOfTooth,SubClassOf,isSpecificSolidDivisionOf some RootOfTooth).
+predicate(RootBodyOfTooth,is,Class).
+predicate(RootBodyOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(RootBodyOfTooth,SubClassOf,isSpecificSolidDivisionOf some RootOfTooth).
+predicate(RootCanalOfTooth,is,Class).
+predicate(RootCanalOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(RootCanalOfTooth,SubClassOf,isSpecificSolidDivisionOf some RootOfTooth).
+predicate(RootOfPenis,is,Class).
+predicate(RootOfPenis,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(RootOfTongue,is,Class).
+predicate(RootOfTooth,is,Class).
+predicate(RootOfTooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(RootOfTooth,SubClassOf,hasSpecificSolidDivision some ApicalForamenOfTooth,).
+predicate(RootOfTooth,SubClassOf,hasSpecificSolidDivision some RootApexOfTooth,).
+predicate(RootOfTooth,SubClassOf,hasSpecificSolidDivision some RootBodyOfTooth,).
+predicate(RootOfTooth,SubClassOf,hasSpecificSolidDivision some RootCanalOfTooth,).
+predicate(RootOfTooth,SubClassOf,isSpecificSolidDivisionOf some Tooth).
+predicate(RotatorCuff,is,Class).
+predicate(RotatorCuff,SubClassOf,NAMEDInternalBodyPart).
+predicate(RoundLigamentOfUterus,is,Class).
+predicate(RoundLigamentOfUterus,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(SacralNerveRoot,is,Class).
+predicate(SacralNerveRoot,SubClassOf,SpinalNerveRoot).
+predicate(Sacrum,is,Class).
+predicate(Sacrum,SubClassOf,ComplexSkeletalStructure).
+predicate(SalivaryDuct,is,Class).
+predicate(SalivaryGland,is,Class).
+predicate(SalpingopharyngeusMuscle,is,Class).
+predicate(SartoriusMuscle,is,Class).
+predicate(Scalp,is,Class).
+predicate(Scalp,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(SecondDegreeGeneticRelativeRole,is,Class).
+predicate(Secretion,is,Class).
+predicate(SeminalColliculus,is,Class).
+predicate(SeminalColliculus,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(SeminalVesicle,is,Class).
+predicate(SeminalVesicle,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(SeminiferousTubule,is,Class).
+predicate(SeminiferousTubule,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(SensoryNeuron,is,Class).
+predicate(SensoryNeuron,SubClassOf,Neuron).
+predicate(SeptumPellucidum,is,Class).
+predicate(SeromuscularLayerOfStomach,is,Class).
+predicate(SerousPericardium,is,Class).
+predicate(SerousPericardium,SubClassOf,NAMEDCVSBodyPart).
+predicate(SessamoidBone,is,Class).
+predicate(SessamoidBone,SubClassOf,Bone).
+predicate(SexualMaturation,is,Class).
+predicate(ShortBone,is,Class).
+predicate(ShortBone,SubClassOf,Bone).
+predicate(ShortGastricArtery,is,Class).
+predicate(ShoulderGirdle,is,Class).
+predicate(ShoulderGirdle,SubClassOf,ComplexSkeletalStructure).
+predicate(ShoulderJoint,is,Class).
+predicate(ShoulderJoint,SubClassOf,Joint).
+predicate(ShoulderJointCavity,is,Class).
+predicate(ShoulderJointCavity,EquivalentTo,BodyCavity and (isSpaceDefinedBy some GlenoHumeralJoint)).
+predicate(ShoulderJointCavity,SubClassOf,BodyCavity).
+predicate(SigmoidColon,is,Class).
+predicate(SigmoidColon,SubClassOf,NAMEDGITractBodyPart,).
+predicate(SigmoidColon,SubClassOf,isAlphaConnectionOf some RectoSigmoidJunction).
+predicate(SigmoidToRectum,is,Class).
+predicate(SigmoidToRectum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(SigmoidToRectum,SubClassOf,hasLinearDivision some Rectum,).
+predicate(SigmoidToRectum,SubClassOf,hasLinearDivision some SigmoidColon).
+predicate(Signal,is,Class).
+predicate(SinusVenarumCavarum,is,Class).
+predicate(SinusVenarumCavarum,SubClassOf,NAMEDCVSBodyPart,).
+predicate(SinusVenarumCavarum,SubClassOf,isBetaConnectionOf some OpeningOfVenaCava).
+predicate(Skeleton,is,Class).
+predicate(Skeleton,SubClassOf,NAMEDInternalBodyPart).
+predicate(SkinOfFrontalScalp,is,Class).
+predicate(SkinOfOccipitalScalp,is,Class).
+predicate(SkinOfParietalScalp,is,Class).
+predicate(SkinOfTemporalScalp,is,Class).
+predicate(Skull,is,Class).
+predicate(Skull,SubClassOf,ComplexSkeletalStructure).
+predicate(SlidingJoint,is,Class).
+predicate(SlidingJoint,SubClassOf,Joint).
+predicate(SmallIntestine,is,Class).
+predicate(SmallIntestine,SubClassOf,NAMEDGITractBodyPart,).
+predicate(SmallIntestine,SubClassOf,hasLinearDivision some DuodenoJejunalFlexure,).
+predicate(SmallIntestine,SubClassOf,hasLinearDivision some Duodenum,).
+predicate(SmallIntestine,SubClassOf,hasLinearDivision some Ileum,).
+predicate(SmallIntestine,SubClassOf,hasLinearDivision some Jejunum,).
+predicate(SmallIntestine,SubClassOf,isLinearDivisionOf some Intestine,).
+predicate(SmallIntestine,SubClassOf,isServedBy some ArteriaeRectaeOfSmallIntestine).
+predicate(SmoothMuscleOfUreter,is,Class).
+predicate(SoftPalate,is,Class).
+predicate(SoftPalate,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(SoftPalate,SubClassOf,hasShapeAnalagousTo some).
+predicate(SoftPalate,SubClassOf,(AnatomicalShape and (hasAbsoluteState some laminar)),).
+predicate(SoftPalate,SubClassOf,hasStructuralComponent some LevatorVeliPalatiniMuscle,).
+predicate(SoftPalate,SubClassOf,hasStructuralComponent some MusculusUvulae,).
+predicate(SoftPalate,SubClassOf,hasStructuralComponent some PalatineAponeurosis,).
+predicate(SoftPalate,SubClassOf,hasStructuralComponent some PalatoglossalArch,).
+predicate(SoftPalate,SubClassOf,hasStructuralComponent some PalatoglossusMuscle,).
+predicate(SoftPalate,SubClassOf,hasStructuralComponent some PalatopharyngealArch,).
+predicate(SoftPalate,SubClassOf,hasStructuralComponent some PalatopharyngeusMuscle,).
+predicate(SoftPalate,SubClassOf,hasStructuralComponent some TensorVeliPalatiniMuscle,).
+predicate(SoftPalate,SubClassOf,hasStructuralComponent some UvulaeMuscle).
+predicate(SoftParaffin,is,Class).
+predicate(SoftTissue,is,Class).
+predicate(SolidRemovingProcess,is,Class).
+predicate(Sorting,is,Class).
+predicate(Sorting,SubClassOf,DiscreteItemSeparating).
+predicate(SpermaticCord,is,Class).
+predicate(SpermaticCord,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(SphincterAniMuscle,is,Class).
+predicate(SphincterOfOddi,is,Class).
+predicate(SphincterOfOddi,SubClassOf,NAMEDGITractBodyPart,).
+predicate(SphincterOfOddi,SubClassOf,NAMEDSphincter,).
+predicate(SphincterOfOddi,SubClassOf,isStructuralComponentOf some BiliaryTract,).
+predicate(SphincterOfOddi,SubClassOf,isStructuralComponentOf some MainPancreaticDuct).
+predicate(SphincterVesicaeMuscle,is,Class).
+predicate(SpinalColumn,is,Class).
+predicate(SpinalColumn,SubClassOf,ComplexSkeletalStructure).
+predicate(SpinalCord,is,Class).
+predicate(SpinalCord,SubClassOf,NAMEDNervousSystemPart,).
+predicate(SpinalCord,SubClassOf,boundsSpace some PeriSpinalSpace,).
+predicate(SpinalCord,SubClassOf,hasAlphaConnection some DenticulatumLigament,).
+predicate(SpinalCord,SubClassOf,hasLinearDivision some CaudaEquina,).
+predicate(SpinalCord,SubClassOf,hasLinearDivision some ConusMedullaris,).
+predicate(SpinalCord,SubClassOf,hasLinearDivision some FilumTerminale,).
+predicate(SpinalCord,SubClassOf,hasShapeAnalagousTo some).
+predicate(SpinalCord,SubClassOf,(AnatomicalShape and (hasAbsoluteState some linear)),).
+predicate(SpinalCord,SubClassOf,hasSpecificStructuralComponent some MeningesOfSpinalCord,).
+predicate(SpinalCord,SubClassOf,hasStructuralComponent some HornOfSpinalCord,).
+predicate(SpinalCord,SubClassOf,hasStructuralComponent some LineaSplendens,).
+predicate(SpinalCord,SubClassOf,hasStructuralComponent some PeriSpinalSpace,).
+predicate(SpinalCord,SubClassOf,hasStructuralComponent some SpinalMedullaryCanal,).
+predicate(SpinalCord,SubClassOf,hasStructuralComponent some WhiteCommissureOfSpinalCord,).
+predicate(SpinalCord,SubClassOf,isAlphaConnectionOf some SpinalNerveRoot,).
+predicate(SpinalCord,SubClassOf,isBetaConnectionOf some DenticulatumLigament,).
+predicate(SpinalCord,SubClassOf,isBetaConnectionOf some Myelencephalon,).
+predicate(SpinalCord,SubClassOf,isNonPartitivelyContainedIn some PeriSpinalSpace,).
+predicate(SpinalCord,SubClassOf,isStructuralComponentOf some CentralNervousSystem).
+predicate(SpinalJoint,is,Class).
+predicate(SpinalJoint,SubClassOf,Joint).
+predicate(SpinalMedullaryCanal,is,Class).
+predicate(SpinalNerveRoot,is,Class).
+predicate(SpinalNerveRoot,SubClassOf,NAMEDNervousSystemPart,).
+predicate(SpinalNerveRoot,SubClassOf,isBetaPartitiveConnectionOf some SpinalCord,).
+predicate(SpinalNerveRoot,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(Spleen,is,Class).
+predicate(Spleen,SubClassOf,InternalOrgan,).
+predicate(Spleen,SubClassOf,hasSpecificFunction some Erythrocytopoiesis,).
+predicate(Spleen,SubClassOf,hasTopology some).
+predicate(Spleen,SubClassOf,(Topology and (hasAbsoluteState some topologicallySolid)),).
+predicate(Spleen,SubClassOf,isServedBy some PortalVein,).
+predicate(Spleen,SubClassOf,isServedBy some SplenicArtery).
+predicate(SplenicArtery,is,Class).
+predicate(SplenicFlexureOfColon,is,Class).
+predicate(SternocostalSurfaceOfHeart,is,Class).
+predicate(SternocostalSurfaceOfHeart,SubClassOf,NAMEDCVSBodyPart).
+predicate(Stomach,is,Class).
+predicate(Stomach,SubClassOf,NAMEDGITractBodyPart,).
+predicate(Stomach,SubClassOf,hasAlphaPartitiveConnection some LowerEsophagealSphincter,).
+predicate(Stomach,SubClassOf,hasSolidDivision some CurvatureOfStomach,).
+predicate(Stomach,SubClassOf,hasSolidDivision some GastricCorpus,).
+predicate(Stomach,SubClassOf,hasSolidDivision some GastricFundus,).
+predicate(Stomach,SubClassOf,hasSolidDivision some IncisuraAngularis,).
+predicate(Stomach,SubClassOf,hasSolidDivision some ParsCardiacaGastris,).
+predicate(Stomach,SubClassOf,hasStructuralComponent some PyloricAntrum,).
+predicate(Stomach,SubClassOf,hasStructuralComponent some Pylorus,).
+predicate(Stomach,SubClassOf,hasStructuralComponent some SeromuscularLayerOfStomach,).
+predicate(Stomach,SubClassOf,isAlphaConnectionOf some GastroduodenalJunction,).
+predicate(Stomach,SubClassOf,isBetaConnectionOf some GastroesophagealJunction,).
+predicate(Stomach,SubClassOf,isBetaConnectionOf some LowerEsophagealSphincter,).
+predicate(Stomach,SubClassOf,isServedBy some GastroepiploicArtery,).
+predicate(Stomach,SubClassOf,isServedBy some LeftGastricArtery,).
+predicate(Stomach,SubClassOf,isServedBy some PortalVein,).
+predicate(Stomach,SubClassOf,isServedBy some RightGastricArtery,).
+predicate(Stomach,SubClassOf,isServedBy some ShortGastricArtery).
+predicate(StomachToDuodenum,is,Class).
+predicate(StomachToDuodenum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(StomachToDuodenum,SubClassOf,hasLinearDivision some Duodenum,).
+predicate(StomachToDuodenum,SubClassOf,hasLinearDivision some Pylorus,).
+predicate(StomachToDuodenum,SubClassOf,hasLinearDivision some Stomach,).
+predicate(StomachToDuodenum,SubClassOf,isLinearDivisionOf some UpperGastrointestinalTract).
+predicate(StomachToJejunum,is,Class).
+predicate(StomachToJejunum,SubClassOf,NAMEDGITractBodyPart,).
+predicate(StomachToJejunum,SubClassOf,hasLinearDivision some Jejunum,).
+predicate(StomachToJejunum,SubClassOf,hasLinearDivision some StomachToDuodenum,).
+predicate(StomachToJejunum,SubClassOf,isLinearDivisionOf some UpperGastrointestinalTract).
+predicate(StriatedMuscle,is,Class).
+predicate(StylopharyngeusMuscle,is,Class).
+predicate(SubarachnoidOrSubduralSpace,is,Class).
+predicate(SubarachnoidSpace,is,Class).
+predicate(SubdiaphragmaticPartOfEsophagus,is,Class).
+predicate(SubdiaphragmaticPartOfEsophagus,SubClassOf,NAMEDGITractBodyPart).
+predicate(SubduralSpace,is,Class).
+predicate(Subendocardium,is,Class).
+predicate(Subendocardium,SubClassOf,NAMEDCVSBodyPart,).
+predicate(Subendocardium,SubClassOf,isSpecificallyMadeOf some CardiacMuscleTissue,).
+predicate(Subendocardium,SubClassOf,isSpecificallyMadeOf some InterstitialTissueOfMyocardium).
+predicate(Subglottis,is,Class).
+predicate(Subglottis,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(Subglottis,SubClassOf,hasStructuralComponent some CricoidCartilage,).
+predicate(Subglottis,SubClassOf,hasStructuralComponent some CricothyroidLigament,).
+predicate(Subglottis,SubClassOf,hasStructuralComponent some PosteriorCricoarytenoidMuscle,).
+predicate(Subglottis,SubClassOf,hasTopology some).
+predicate(Subglottis,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(Subglottis,SubClassOf,isPairedOrUnpaired some unpaired,).
+predicate(Subglottis,SubClassOf,isPositionedBelow some Glottis).
+predicate(SublingualCaruncle,is,Class).
+predicate(SublingualCaruncle,SubClassOf,NAMEDOralCavityBodyPart).
+predicate(SublingualFold,is,Class).
+predicate(SublingualFold,SubClassOf,NAMEDOralCavityBodyPart).
+predicate(SublingualSurfaceOfTongue,is,Class).
+predicate(SubmandibularDuct,is,Class).
+predicate(SubstantiaNigra,is,Class).
+predicate(SubstantiaNigra,SubClassOf,NAMEDNervousSystemPart,).
+predicate(SubstantiaNigra,SubClassOf,hasStructuralComponent some ParsCompacta,).
+predicate(SubstantiaNigra,SubClassOf,hasStructuralComponent some ParsReticulata,).
+predicate(SubstantiaNigra,SubClassOf,isStructuralComponentOf some Brainstem).
+predicate(SulcusTerminalisCordis,is,Class).
+predicate(SulcusTerminalisCordis,SubClassOf,NAMEDCVSBodyPart).
+predicate(SuperiorColliculus,is,Class).
+predicate(SuperiorColliculus,SubClassOf,CorporaQuadrigemina).
+predicate(SuperiorPharyngealConstrictorMuscle,is,Class).
+predicate(SupraVaginalCervix,is,Class).
+predicate(SupraVaginalCervix,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(SupradiaphragmaticPartOfEsophagus,is,Class).
+predicate(SupradiaphragmaticPartOfEsophagus,SubClassOf,NAMEDGITractBodyPart).
+predicate(SupraduodenalArtery,is,Class).
+predicate(Supraglottis,is,Class).
+predicate(Supraglottis,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(Supraglottis,SubClassOf,hasBetaPartitiveConnection some VestibularFold,).
+predicate(Supraglottis,SubClassOf,hasStructuralComponent some ArytenoidCartilage,).
+predicate(Supraglottis,SubClassOf,hasStructuralComponent some CorniculateCartilage,).
+predicate(Supraglottis,SubClassOf,hasStructuralComponent some CuneiformCartilage,).
+predicate(Supraglottis,SubClassOf,hasStructuralComponent some Epiglottis,).
+predicate(Supraglottis,SubClassOf,hasStructuralComponent some ObliqueArytenoidMuscle,).
+predicate(Supraglottis,SubClassOf,hasStructuralComponent some PiriformFossa,).
+predicate(Supraglottis,SubClassOf,hasStructuralComponent some RimaVestibuli,).
+predicate(Supraglottis,SubClassOf,hasStructuralComponent some TransverseArytenoidMuscle,).
+predicate(Supraglottis,SubClassOf,hasTopology some).
+predicate(Supraglottis,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(Supraglottis,SubClassOf,isAlphaConnectionOf some VestibularFold,).
+predicate(Supraglottis,SubClassOf,isPairedOrUnpaired some unpaired,).
+predicate(Supraglottis,SubClassOf,isPositionedAbove some Glottis).
+predicate(SurfaceBodyLandmark,is,Class).
+predicate(SurfaceBodyLandmark,SubClassOf,NAMEDSurfaceBodyPart).
+predicate(SurfaceOfCrownOfTooth,is,Class).
+predicate(SurgicalAbrading,is,Class).
+predicate(SurgicalAbrading,SubClassOf,Abrading).
+predicate(SuspensoryLigamentOfOvary,is,Class).
+predicate(SuspensoryLigamentOfOvary,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(SwollenJoint,is,Class).
+predicate(SwollenJoint,SubClassOf,Joint).
+predicate(SynovialJoint,is,Class).
+predicate(SynovialJoint,SubClassOf,Joint).
+predicate(SynovialMembrane,is,Class).
+predicate(TarsalJoint,is,Class).
+predicate(TarsalJoint,SubClassOf,Joint).
+predicate(TarsalRow,is,Class).
+predicate(TarsalRow,SubClassOf,ComplexSkeletalStructure).
+predicate(TasteBud,is,Class).
+predicate(TasteBud,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(TasteBud,SubClassOf,hasStructuralComponent some GustatoryCell,).
+predicate(TasteBud,SubClassOf,isStructuralComponentOf some FoliateLingualPapilla,).
+predicate(TasteBud,SubClassOf,isStructuralComponentOf some FungiformLingualPapilla,).
+predicate(TasteBud,SubClassOf,isStructuralComponentOf some VallateLingualPapilla).
+predicate(TectumOfMidbrain,is,Class).
+predicate(TectumOfMidbrain,SubClassOf,NAMEDNervousSystemPart,).
+predicate(TectumOfMidbrain,SubClassOf,hasStructuralComponent some CorporaQuadrigemina,).
+predicate(TectumOfMidbrain,SubClassOf,isSolidDivisionOf some Tegmentum).
+predicate(Tegmentum,is,Class).
+predicate(Tegmentum,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Tegmentum,SubClassOf,hasSolidDivision some TectumOfMidbrain,).
+predicate(Tegmentum,SubClassOf,isSolidDivisionOf some CerebralPeduncle).
+predicate(Telencephalon,is,Class).
+predicate(Telencephalon,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Telencephalon,SubClassOf,hasSpecificLayer some CerebralCortex,).
+predicate(Telencephalon,SubClassOf,hasSpecificStructuralComponent some IntracranialFornix,).
+predicate(Telencephalon,SubClassOf,hasStructuralComponent some CerebralHemisphere,).
+predicate(Telencephalon,SubClassOf,hasStructuralComponent some Cingulum,).
+predicate(Telencephalon,SubClassOf,hasStructuralComponent some CorpusCallosum,).
+predicate(Telencephalon,SubClassOf,hasStructuralComponent some LaminaTerminalis,).
+predicate(Telencephalon,SubClassOf,isSpecificallyMadeOf some NeuralTissue).
+predicate(Temple,is,Class).
+predicate(Temple,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(TemporalBalding,is,Class).
+predicate(TemporalBalding,EquivalentTo,HairLosingProcess and (actsSpecificallyOn some SkinOfTemporalScalp)).
+predicate(TemporalBalding,SubClassOf,HairLosingProcess).
+predicate(TemporalLobe,is,Class).
+predicate(TensorVeliPalatiniMuscle,is,Class).
+predicate(TensorfascialataMuscle,is,Class).
+predicate(TentoriumCerebelli,is,Class).
+predicate(TentoriumCerebelli,SubClassOf,NAMEDNervousSystemPart,).
+predicate(TentoriumCerebelli,SubClassOf,isBetaConnectionOf some AnteriorClinoidProcess).
+predicate(TerminalBronchiole,is,Class).
+predicate(TerminalBronchiole,SubClassOf,Bronchiole).
+predicate(TesticularParenchyma,is,Class).
+predicate(TesticularParenchyma,SubClassOf,Parenchyma).
+predicate(Testis,is,Class).
+predicate(Testis,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(Thalamus,is,Class).
+predicate(Thalamus,SubClassOf,NAMEDNervousSystemPart,).
+predicate(Thalamus,SubClassOf,hasStructuralComponent some Paleothalamus,).
+predicate(Thalamus,SubClassOf,hasStructuralComponent some Pulvinar,).
+predicate(Thalamus,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(Thigh,is,Class).
+predicate(ThirdIntermetatarsalJoint,is,Class).
+predicate(ThirdIntermetatarsalJoint,SubClassOf,IntermetatarsalJoint,).
+predicate(ThirdIntermetatarsalJoint,SubClassOf,hasSpecificStructuralComponent some).
+predicate(ThirdIntermetatarsalJoint,SubClassOf,(SynovialMembrane and (isSpecificStructuralComponentOf some ThirdIntermetatarsalJoint)),).
+predicate(ThirdIntermetatarsalJoint,SubClassOf,hasStructuralComponent some BaseOfFourthMetatarsal,).
+predicate(ThirdIntermetatarsalJoint,SubClassOf,hasStructuralComponent some BaseOfThirdMetatarsal).
+predicate(ThoracicCavity,is,Class).
+predicate(ThoracicNerveRoot,is,Class).
+predicate(ThoracicNerveRoot,SubClassOf,SpinalNerveRoot).
+predicate(ThoracicSpine,is,Class).
+predicate(ThoracicSpine,SubClassOf,ComplexSkeletalStructure).
+predicate(ThoracoLumbarSpine,is,Class).
+predicate(ThoracoLumbarSpine,SubClassOf,ComplexSkeletalStructure).
+predicate(Thorax,is,Class).
+predicate(Thorax,SubClassOf,NAMEDTrunkBodyPart).
+predicate(Throat,is,Class).
+predicate(Throat,SubClassOf,NAMEDNeckBodyPart,).
+predicate(Throat,SubClassOf,hasStructuralComponent some Fauces,).
+predicate(Throat,SubClassOf,hasStructuralComponent some Pharynx).
+predicate(ThyroepiglotticLigament,is,Class).
+predicate(ThyroglossalTract,is,Class).
+predicate(ThyroidCartilage,is,Class).
+predicate(ThyroidCartilage,SubClassOf,NAMEDCartilage).
+predicate(TibialisAnterior,is,Class).
+predicate(TipOfTongue,is,Class).
+predicate(ToeJoint,is,Class).
+predicate(ToeJoint,SubClassOf,Joint).
+predicate(Tongue,is,Class).
+predicate(Tongue,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(Tongue,SubClassOf,boundsSpace some OralCavity,).
+predicate(Tongue,SubClassOf,hasSpecificSolidDivision some BodyOfTongue,).
+predicate(Tongue,SubClassOf,hasSpecificSolidDivision some FrenulumOfTongue,).
+predicate(Tongue,SubClassOf,hasSpecificSolidDivision some RootOfTongue,).
+predicate(Tongue,SubClassOf,hasSpecificSolidDivision some TipOfTongue,).
+predicate(Tongue,SubClassOf,hasStructuralComponent some ExtrinsicMuscleOfTongue,).
+predicate(Tongue,SubClassOf,hasStructuralComponent some ForamenCaecumLinguae,).
+predicate(Tongue,SubClassOf,hasStructuralComponent some IntrinsicMuscleOfTongue,).
+predicate(Tongue,SubClassOf,hasStructuralComponent some LingualSalivaryGland,).
+predicate(Tongue,SubClassOf,isAlphaConnectionOf some FloorOfMouth,).
+predicate(Tongue,SubClassOf,isAlphaConnectionOf some ThyroglossalTract,).
+predicate(Tongue,SubClassOf,isPairedOrUnpaired some unpaired,).
+predicate(Tongue,SubClassOf,isPositionedAbove some MucosaOfUndersideOfTongue).
+predicate(Tongue-Tie,is,Class).
+predicate(Tongue-Tie,SubClassOf,Tongue).
+predicate(Tooth,is,Class).
+predicate(Tooth,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(Tooth,SubClassOf,hasSpecificSolidDivision some CrownOfTooth,).
+predicate(Tooth,SubClassOf,hasSpecificSolidDivision some PulpCavityOfTooth,).
+predicate(Tooth,SubClassOf,hasSpecificSolidDivision some PulpChamberOfTooth,).
+predicate(Tooth,SubClassOf,hasSpecificSolidDivision some RootOfTooth,).
+predicate(Tooth,SubClassOf,hasSurfaceDivision some CementoenamelJunctionOfTooth,).
+predicate(Tooth,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(ToothSocket,is,Class).
+predicate(ToothSocket,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(ToothSocket,SubClassOf,hasBetaConnection some PeriodontalLigament,).
+predicate(ToothSocket,SubClassOf,isStructuralComponentOf some AlveolarPartOfBone,).
+predicate(ToothSocket,SubClassOf,nonPartitivelyContains some Tooth).
+predicate(Topology,is,Class).
+predicate(ToxicIntestinalParalysis,is,Class).
+predicate(ToxicIntestinalParalysis,EquivalentTo,IntestinalParalysis and (isSpecificConsequenceOf some PoisoningProcess)).
+predicate(ToxicIntestinalParalysis,SubClassOf,IntestinalParalysis).
+predicate(TrabeculaCarnae,is,Class).
+predicate(TrabeculaCarnae,SubClassOf,NAMEDCVSBodyPart,).
+predicate(TrabeculaCarnae,SubClassOf,isStructuralComponentOf some CardiacMuscle).
+predicate(TrabeculaSeptomarginalis,is,Class).
+predicate(TrabeculaSeptomarginalis,SubClassOf,NAMEDCVSBodyPart).
+predicate(Trachea,is,Class).
+predicate(Trachea,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(Trachea,SubClassOf,hasBranch some MainBronchus,).
+predicate(Trachea,SubClassOf,hasSpecificLayer some TrachealMucousMembrane,).
+predicate(Trachea,SubClassOf,hasSpecificStructuralComponent some CricoThyroidJoint,).
+predicate(Trachea,SubClassOf,hasSpecificStructuralComponent some CricoidCartilage,).
+predicate(Trachea,SubClassOf,hasSpecificStructuralComponent some HyoidCartilage,).
+predicate(Trachea,SubClassOf,hasSpecificStructuralComponent some ThyroidCartilage,).
+predicate(Trachea,SubClassOf,hasSpecificStructuralComponent some TrachealCartilageRing,).
+predicate(Trachea,SubClassOf,hasTopology some tubularTopology,).
+predicate(Trachea,SubClassOf,isAlphaConnectionOf some Carina,).
+predicate(Trachea,SubClassOf,isBetaConnectionOf some Larynx,).
+predicate(Trachea,SubClassOf,isBetaConnectionOf some ThyroglossalTract).
+predicate(TrachealCartilageRing,is,Class).
+predicate(TrachealMucousMembrane,is,Class).
+predicate(TragusOfPinna,is,Class).
+predicate(TragusOfPinna,SubClassOf,NAMEDHeadSurfaceBodyPart).
+predicate(TransverseArytenoidMuscle,is,Class).
+predicate(TransverseColon,is,Class).
+predicate(TransverseColon,SubClassOf,NAMEDGITractBodyPart).
+predicate(TransversePalatineFolds,is,Class).
+predicate(TransversePalatineFolds,SubClassOf,NAMEDOralCavityBodyPart,).
+predicate(TransversePalatineFolds,SubClassOf,isSpecificSolidDivisionOf some HardPalate).
+predicate(TricuspidIncompetence,is,Class).
+predicate(TricuspidIncompetence,EquivalentTo,HeartValveIncompetence and (isSpecificFunctionOf some TricuspidValve)).
+predicate(TricuspidIncompetence,SubClassOf,HeartValveIncompetence).
+predicate(TricuspidReflux,is,Class).
+predicate(TricuspidReflux,SubClassOf,TricuspidIncompetence).
+predicate(TricuspidRing,is,Class).
+predicate(TricuspidRing,SubClassOf,AnulusFibrosus).
+predicate(TricuspidValve,is,Class).
+predicate(TrigoneOfUrinaryBladder,is,Class).
+predicate(TrigoneOfUrinaryBladder,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(TrigoneOfUrinaryBladder,SubClassOf,hasShapeAnalagousTo some).
+predicate(TrigoneOfUrinaryBladder,SubClassOf,(AnatomicalShape and (hasAbsoluteState some laminar))).
+predicate(TruncalHeartValveRing,is,Class).
+predicate(TruncalHeartValveRing,SubClassOf,AnulusFibrosus).
+predicate(TubalTonsil,is,Class).
+predicate(TubalTonsil,SubClassOf,LymphoidTonsil).
+predicate(TuberCinereum,is,Class).
+predicate(TuberCinereum,SubClassOf,NAMEDNervousSystemPart).
+predicate(TunicaAdventitiaEsophagi,is,Class).
+predicate(TunicaAdventitiaUreteris,is,Class).
+predicate(TunicaAlbuginea,is,Class).
+predicate(TunicaAlbuginea,SubClassOf,NAMEDGenitalTractBodyPart).
+predicate(TunicaAlbugineaOvarii,is,Class).
+predicate(TunicaAlbugineaOvarii,SubClassOf,TunicaAlbuginea).
+predicate(TunicaAlbugineaTestis,is,Class).
+predicate(TunicaAlbugineaTestis,SubClassOf,TunicaAlbuginea).
+predicate(TunicaVaginalis,is,Class).
+predicate(TunicaVaginalis,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(UlnoHumeralJoint,is,Class).
+predicate(UlnoHumeralJoint,SubClassOf,Joint).
+predicate(Umbilicus,is,Class).
+predicate(Umbilicus,SubClassOf,NAMEDTrunkBodyPart).
+predicate(UndiagnosedVaginalBleeding,is,Class).
+predicate(UndiagnosedVaginalBleeding,EquivalentTo,VaginalBleeding and (isSpecificConsequenceOf some AsYetUnknownDiagnosis)).
+predicate(UndiagnosedVaginalBleeding,SubClassOf,VaginalBleeding).
+predicate(UniventricularHeart,is,Class).
+predicate(UniventricularHeart,SubClassOf,Heart).
+predicate(UnnamedTractOfEsophagus,is,Class).
+predicate(UnnamedTractOfEsophagus,SubClassOf,NAMEDGITractBodyPart).
+predicate(UnstableJoint,is,Class).
+predicate(UnstableJoint,SubClassOf,Joint).
+predicate(UpperGastrointestinalTract,is,Class).
+predicate(UpperGastrointestinalTract,SubClassOf,NAMEDGITractBodyPart,).
+predicate(UpperGastrointestinalTract,SubClassOf,hasLinearDivision some GITractFromEsophagusToDuodenum,).
+predicate(UpperGastrointestinalTract,SubClassOf,hasLinearDivision some JejunumToIleum,).
+predicate(UpperGastrointestinalTract,SubClassOf,hasLinearDivision some SmallIntestine,).
+predicate(UpperGastrointestinalTract,SubClassOf,hasLinearDivision some StomachToDuodenum,).
+predicate(UpperGastrointestinalTract,SubClassOf,hasLinearDivision some StomachToJejunum,).
+predicate(UpperGastrointestinalTract,SubClassOf,isLinearDivisionOf some GastrointestinalTract).
+predicate(UpperRenalCalyx,is,Class).
+predicate(UpperRenalCalyx,SubClassOf,CalixOfKidney).
+predicate(UpperRespiratoryTract,is,Class).
+predicate(UpperRespiratoryTract,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(UpperRespiratoryTract,SubClassOf,hasSpecificStructuralComponent some Pharynx,).
+predicate(UpperRespiratoryTract,SubClassOf,hasStructuralComponent some Larynx,).
+predicate(UpperRespiratoryTract,SubClassOf,hasStructuralComponent some NasoPharynx,).
+predicate(UpperRespiratoryTract,SubClassOf,hasStructuralComponent some NasopharyngealMeatus,).
+predicate(UpperRespiratoryTract,SubClassOf,hasStructuralComponent some Nose,).
+predicate(UpperRespiratoryTract,SubClassOf,hasStructuralComponent some ParanasalSinus).
+predicate(UpperTooth,is,Class).
+predicate(UpperTooth,SubClassOf,Tooth).
+predicate(UpperUrinaryTract,is,Class).
+predicate(UpperUrinaryTract,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(UpperUrinaryTract,SubClassOf,hasLinearDivision some Ureter,).
+predicate(UpperUrinaryTract,SubClassOf,hasLinearDivision some UretericOrifice,).
+predicate(UpperUrinaryTract,SubClassOf,hasStructuralComponent some Kidney,).
+predicate(UpperUrinaryTract,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(Ureter,is,Class).
+predicate(Ureter,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(Ureter,SubClassOf,hasSpecificFunction some UretericPeristalsis,).
+predicate(Ureter,SubClassOf,hasSpecificLayer some SmoothMuscleOfUreter,).
+predicate(Ureter,SubClassOf,hasSpecificLayer some TunicaAdventitiaUreteris,).
+predicate(Ureter,SubClassOf,hasSpecificLinearDivision some RetrocavalUreter,).
+predicate(Ureter,SubClassOf,hasSpecificStructuralComponent some UretericValve,).
+predicate(Ureter,SubClassOf,isAlphaConnectionOf some VesicouretericJunction,).
+predicate(Ureter,SubClassOf,isBetaConnectionOf some PelviuretericJunction).
+predicate(UretericOrifice,is,Class).
+predicate(UretericOrifice,SubClassOf,NAMEDUrinaryTractBodyPart).
+predicate(UretericPeristalsis,is,Class).
+predicate(UretericValve,is,Class).
+predicate(Urethra,is,Class).
+predicate(Urethra,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(Urethra,SubClassOf,hasStructuralComponent some UrethralFascicle,).
+predicate(Urethra,SubClassOf,hasStructuralComponent some UrethralSphincter,).
+predicate(Urethra,SubClassOf,hasStructuralComponent some UrethralValve,).
+predicate(Urethra,SubClassOf,hasStructuralComponent some).
+predicate(Urethra,SubClassOf,(SoftTissue and (hasProximity some Urethra)),).
+predicate(Urethra,SubClassOf,isAlphaConnectionOf some UrethralMeatus).
+predicate(UrethralCrest,is,Class).
+predicate(UrethralCrest,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(UrethralFascicle,is,Class).
+predicate(UrethralFascicle,SubClassOf,NAMEDUrinaryTractBodyPart).
+predicate(UrethralMeatus,is,Class).
+predicate(UrethralSphincter,is,Class).
+predicate(UrethralValve,is,Class).
+predicate(UrinaryBladder,is,Class).
+predicate(UrinaryBladder,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(UrinaryBladder,SubClassOf,boundsSpace some MaleRetroUrinaryBladderSpace,).
+predicate(UrinaryBladder,SubClassOf,boundsSpace some UteroVesicalPouch,).
+predicate(UrinaryBladder,SubClassOf,boundsSpace some VesicoVaginalPouch,).
+predicate(UrinaryBladder,SubClassOf,hasSolidDivision some TrigoneOfUrinaryBladder,).
+predicate(UrinaryBladder,SubClassOf,hasSolidDivision some UrinaryBladderNeck,).
+predicate(UrinaryBladder,SubClassOf,hasSpecificSolidDivision some ApexOfBladder,).
+predicate(UrinaryBladder,SubClassOf,hasStructuralComponent some SphincterVesicaeMuscle,).
+predicate(UrinaryBladder,SubClassOf,isBetaConnectionOf some VesicouretericJunction,).
+predicate(UrinaryBladder,SubClassOf,isPositionedAnteriorTo some RetroUrinaryBladderSpace,).
+predicate(UrinaryBladder,SubClassOf,isPositionedMedialTo some ParaVesicalFossa).
+predicate(UrinaryBladderNeck,is,Class).
+predicate(UrinaryBladderNeck,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(UrinaryBladderNeck,SubClassOf,hasTopology some).
+predicate(UrinaryBladderNeck,SubClassOf,(Topology and (hasAbsoluteState some tubular))).
+predicate(UrinaryTract,is,Class).
+predicate(UrinaryTract,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(UrinaryTract,SubClassOf,hasLinearDivision some LowerUrinaryTract,).
+predicate(UrinaryTract,SubClassOf,hasLinearDivision some UpperUrinaryTract,).
+predicate(UrinaryTract,SubClassOf,hasTopology some).
+predicate(UrinaryTract,SubClassOf,(Topology and (hasAbsoluteState some tubular)),).
+predicate(UrinaryTract,SubClassOf,isStructuralComponentOf some GenitoUrinarySystem).
+predicate(UrogenitalDiaphragm,is,Class).
+predicate(UrogenitalDiaphragm,SubClassOf,NAMEDUrinaryTractBodyPart,).
+predicate(UrogenitalDiaphragm,SubClassOf,hasStructuralComponent some UrethralSphincter).
+predicate(UterineBody,is,Class).
+predicate(UterineBody,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(UterineCornuum,is,Class).
+predicate(UterineCornuum,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(UterineFundus,is,Class).
+predicate(UterineFundus,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(UterineHaemorrhage,is,Class).
+predicate(UteroVesicalPouch,is,Class).
+predicate(Uterus,is,Class).
+predicate(Uterus,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(Uvula,is,Class).
+predicate(Uvula,SubClassOf,NAMEDOralCavityBodyPart).
+predicate(UvulaOfCerebellum,is,Class).
+predicate(UvulaOfCerebellum,SubClassOf,NAMEDNervousSystemPart).
+predicate(UvulaeMuscle,is,Class).
+predicate(Vagina,is,Class).
+predicate(Vagina,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(VaginalBleeding,is,Class).
+predicate(VaginalCervix,is,Class).
+predicate(VaginalCervix,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(VaginalFornix,is,Class).
+predicate(VaginalFornix,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(VaginalVault,is,Class).
+predicate(VaginalVault,SubClassOf,NAMEDFemaleGenitalTractBodyPart).
+predicate(VagusNerve,is,Class).
+predicate(VallateLingualPapilla,is,Class).
+predicate(VallateLingualPapilla,SubClassOf,LingualPapilla).
+predicate(ValleculaCerebelli,is,Class).
+predicate(ValleculaCerebelli,SubClassOf,NAMEDNervousSystemPart).
+predicate(ValveInHeart,is,Class).
+predicate(VasDeferens,is,Class).
+predicate(VasDeferens,SubClassOf,NAMEDMaleGenitalTractBodyPart).
+predicate(VelumMedullare,is,Class).
+predicate(VelumMedullare,SubClassOf,NAMEDNervousSystemPart).
+predicate(VelumMedullareCaudale,is,Class).
+predicate(VelumMedullareCaudale,SubClassOf,VelumMedullare).
+predicate(VelumMedullareRostralis,is,Class).
+predicate(VelumMedullareRostralis,SubClassOf,VelumMedullare).
+predicate(VentralHornOfSpinalCord,is,Class).
+predicate(VentralHornOfSpinalCord,SubClassOf,HornOfSpinalCord).
+predicate(VentralWhiteCommissureOfSpinalCord,is,Class).
+predicate(VentralWhiteCommissureOfSpinalCord,SubClassOf,WhiteCommissureOfSpinalCord).
+predicate(Vertebra,is,Class).
+predicate(Vertebra,SubClassOf,Bone).
+predicate(VesicoVaginalPouch,is,Class).
+predicate(VesicouretericJunction,is,Class).
+predicate(VestibularFold,is,Class).
+predicate(VestibularFold,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(VestibularFold,SubClassOf,boundsSpace some RimaVestibuli,).
+predicate(VestibularFold,SubClassOf,hasAlphaConnection some Supraglottis,).
+predicate(VestibularFold,SubClassOf,hasBetaConnection some Glottis,).
+predicate(VestibularFold,SubClassOf,isAlphaPartitiveConnectionOf some Glottis,).
+predicate(VestibularFold,SubClassOf,isBetaPartitiveConnectionOf some Supraglottis,).
+predicate(VestibularFold,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(VestibularLigament,is,Class).
+predicate(VisceralPericardium,is,Class).
+predicate(VocalCord,is,Class).
+predicate(VocalCord,SubClassOf,NAMEDRespiratoryBodyPart,).
+predicate(VocalCord,SubClassOf,boundsSpace some RimaVocalis,).
+predicate(VocalCord,SubClassOf,isBetaConnectionOf some CricothyroidLigament,).
+predicate(VocalCord,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(VocalLigament,is,Class).
+predicate(VocalisMuscle,is,Class).
+predicate(VortexCordis,is,Class).
+predicate(VortexCordis,SubClassOf,NAMEDCVSBodyPart).
+predicate(WaveSignal,is,Class).
+predicate(WaveSignal,SubClassOf,Signal).
+predicate(WebSpace,is,Class).
+predicate(WebSpace,SubClassOf,ExtremityBodyPart).
+predicate(WhiteCommissureOfSpinalCord,is,Class).
+predicate(WhiteCommissureOfSpinalCord,SubClassOf,NAMEDNervousSystemPart,).
+predicate(WhiteCommissureOfSpinalCord,SubClassOf,isStructuralComponentOf some SpinalCord).
+predicate(WhiteMatter,is,Class).
+predicate(WhiteMatter,SubClassOf,NAMEDNervousSystemPart).
+predicate(WholeSurfaceOfHeart,is,Class).
+predicate(WholeSurfaceOfHeart,SubClassOf,NAMEDCVSBodyPart,).
+predicate(WholeSurfaceOfHeart,SubClassOf,hasSpecificSurfaceDivision some DiaphragmaticSurfaceOfHeart,).
+predicate(WholeSurfaceOfHeart,SubClassOf,hasSpecificSurfaceDivision some LeftMarginOfHeart,).
+predicate(WholeSurfaceOfHeart,SubClassOf,hasSpecificSurfaceDivision some PulmonarySurfaceOfHeart,).
+predicate(WholeSurfaceOfHeart,SubClassOf,hasSpecificSurfaceDivision some RightMarginOfHeart,).
+predicate(WholeSurfaceOfHeart,SubClassOf,hasSpecificSurfaceDivision some SternocostalSurfaceOfHeart).
+predicate(WithdrawalBleeding,is,Class).
+predicate(WithdrawalBleeding,SubClassOf,NAMEDGynaecologicalDiseaseProcess).
+predicate(ZonaIncerta,is,Class).
+predicate(ZonaIncerta,SubClassOf,NAMEDNervousSystemPart).
+predicate(ZygomaticArch,is,Class).
+predicate(ZygomaticArch,SubClassOf,ComplexSkeletalStructure).
+predicate(Zygomycota,is,Class).
+predicate(abnormal,is,Class).
+predicate(actuallyHollow,is,Class).
+predicate(acute,is,Class).
+predicate(atLeastPaired,is,Class).
+predicate(bending,is,Class).
+predicate(bending,SubClassOf,linear).
+predicate(congenital,is,Class).
+predicate(elongatedSolid,is,Class).
+predicate(exactlyPaired,is,Class).
+predicate(femaleSex,is,Class).
+predicate(internal,is,Class).
+predicate(laminar,is,Class).
+predicate(lateralSelection,is,Class).
+predicate(leftRightPaired,is,Class).
+predicate(leftSelection,is,Class).
+predicate(linear,is,Class).
+predicate(localisedDiseaseProcessExtent,is,Class).
+predicate(maleSex,is,Class).
+predicate(medialSelection,is,Class).
+predicate(mirrorImaged,is,Class).
+predicate(mutliParous,is,Class).
+predicate(mutliParous,SubClassOf,ParityState).
+predicate(ninth,is,Class).
+predicate(nonagonal,is,Class).
+predicate(nonagonal,SubClassOf,polygonal).
+predicate(normal,is,Class).
+predicate(nulliParous,is,Class).
+predicate(occlusalSelection,is,Class).
+predicate(pathological,is,Class).
+predicate(polygonal,is,Class).
+predicate(prepubertal,is,Class).
+predicate(rightSelection,is,Class).
+predicate(solidTopology,is,Class).
+predicate(surfaceVisible,is,Class).
+predicate(topologicallySolid,is,Class).
+predicate(tubular,is,Class).
+predicate(tubularTopology,is,Class).
+predicate(unpaired,is,Class).
+predicate(variant,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

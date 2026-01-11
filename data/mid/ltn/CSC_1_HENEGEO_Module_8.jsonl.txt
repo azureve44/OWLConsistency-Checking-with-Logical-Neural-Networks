@@ -1,0 +1,29 @@
+is(is-a-quality-of,ObjectProperty):1.0
+is(is-present-at,ObjectProperty):1.0
+is(is-measured-by,ObjectProperty):1.0
+Domain(is-measured-by,quality):1.0
+Range(is-measured-by,instrument-variable):1.0
+InverseOf(is-measured-by,measures):1.0
+is(measures,ObjectProperty):1.0
+InverseOf(measures,is-measured-by):1.0
+is(abstract,Class):1.0
+is(abstract-quality,Class):1.0
+SubClassOf(abstract-quality,quality):1.0
+is(endurant,Class):1.0
+is(particular,Class):1.0
+is(perdurant,Class):1.0
+is(physical-quality,Class):1.0
+SubClassOf(physical-quality,quality):1.0
+is(quality,Class):1.0
+SubClassOf(quality,particular,):1.0
+SubClassOf(quality,is-present-at min 1 time-interval,):1.0
+SubClassOf(quality,is-a-quality-of exactly 1 particular):1.0
+is(temporal-quality,Class):1.0
+SubClassOf(temporal-quality,quality):1.0
+is(time-interval,Class):1.0
+is(instrument-variable,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+DisjointClasses(www.w3.org/2002/07/#,abstract,endurant,perdurant,quality):1.0
+EquivalentClasses(www.w3.org/2002/07/#,abstract,endurant,perdurant,quality):1.0
+is(is-present-at min 1 time-interval,Class):1.0
+SubClassOf(is-present-at min 1 time-interval,abstract-quality):1.0

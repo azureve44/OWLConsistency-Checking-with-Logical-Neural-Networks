@@ -1,0 +1,308 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(anyURI,is,Datatype).
+predicate(type,is,ObjectProperty).
+predicate(hasCreatorList,is,ObjectProperty).
+predicate(hasCreatorList,Domain,hasIdentifier some ResourceIdentifier).
+predicate(hasCreatorList,Range,List).
+predicate(hasDescription,is,ObjectProperty).
+predicate(hasDescription,Domain,hasIdentifier some ResourceIdentifier).
+predicate(Thing,is,hasDescriptionType exactly 1 www.w3.org/2002/07/#).
+predicate(hasDescriptionType,is,ObjectProperty).
+predicate(hasDescriptionType,SubPropertyOf,type).
+predicate(hasDescriptionType,Domain,inverse (hasDescription) only (hasIdentifier some ResourceIdentifier)).
+predicate(hasDescriptionType,Range,DescriptionType).
+predicate(hasGeneralResourceType,is,ObjectProperty).
+predicate(hasGeneralResourceType,SubPropertyOf,type).
+predicate(hasGeneralResourceType,Domain,hasIdentifier some ResourceIdentifier).
+predicate(hasIdentifier,is,ObjectProperty).
+predicate(hasIdentifier,Characteristics,InverseFunctional).
+predicate(hasIdentifier,Range,Identifier).
+predicate(usesIdentifierScheme,is,ObjectProperty).
+predicate(usesIdentifierScheme,Domain,Identifier).
+predicate(usesIdentifierScheme,Range,IdentifierScheme).
+predicate(usesMetadataScheme,is,ObjectProperty).
+predicate(usesMetadataScheme,Range,MetadataScheme).
+predicate(hasLiteral,is,ObjectProperty).
+predicate(hasRegion,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(hasRegion,Range,Literal).
+predicate(hasRegion,InverseOf,isLiteralOf).
+predicate(hasSameLiteralValueAs,is,ObjectProperty).
+predicate(topObjectProperty,is,www.w3.org/2002/07/#).
+predicate(topObjectProperty,Characteristics,Symmetric,).
+predicate(topObjectProperty,Characteristics,Transitive).
+predicate(topObjectProperty,Domain,Literal).
+predicate(topObjectProperty,Range,Literal).
+predicate(isLiteralOf,is,ObjectProperty).
+predicate(isRegionFor,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(isRegionFor,Domain,Literal).
+predicate(isRegionFor,InverseOf,hasLiteral).
+predicate(www.ontologydesignpatterns.org/cp//region.#,is,ObjectProperty).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Region,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(isRegionFor,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(www.ontologydesignpatterns.org/cp//region.#,is,ObjectProperty).
+predicate(Region,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(hasRegion,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(www.w3.org/2002/07/#,is,ObjectProperty).
+predicate(hasURL,is,DataProperty).
+predicate(hasLiteralValue,is,DataProperty).
+predicate(hasLiteralValue,Characteristics,Functional).
+predicate(hasLiteralValue,Domain,Literal).
+predicate(Literal,is,www.w3.org/2000/01/-schema#).
+predicate(hasRegionDataValue,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(www.ontologydesignpatterns.org/cp//region.#,is,DataProperty).
+predicate(Region,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(List,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(AgentIdentifier,is,Class).
+predicate(AgentIdentifier,SubClassOf,Identifier,).
+predicate(AgentIdentifier,SubClassOf,usesIdentifierScheme only AgentIdentifier).
+predicate(AgentIdentifier,DisjointWith,ResourceIdentifier).
+predicate(AgentIdentifierScheme,is,Class).
+predicate(AgentIdentifierScheme,SubClassOf,IdentifierScheme,).
+predicate(AgentIdentifierScheme,SubClassOf,inverse (usesIdentifierScheme) some AgentIdentifier).
+predicate(AlternateResourceIdentifier,is,Class).
+predicate(AlternateResourceIdentifier,SubClassOf,ResourceIdentifier).
+predicate(AlternateResourceIdentifier,DisjointWith,PrimaryResourceIdentifier).
+predicate(DescriptionType,is,Class).
+predicate(FunderIdentifier,is,Class).
+predicate(FunderIdentifier,SubClassOf,AgentIdentifier,).
+predicate(FunderIdentifier,SubClassOf,usesIdentifierScheme only FunderIdentifierScheme).
+predicate(FunderIdentifierScheme,is,Class).
+predicate(FunderIdentifierScheme,SubClassOf,AgentIdentifierScheme,).
+predicate(FunderIdentifierScheme,SubClassOf,inverse (usesIdentifierScheme) some FunderIdentifier).
+predicate(Identifier,is,Class).
+predicate(Identifier,SubClassOf,Literal,).
+predicate(Identifier,SubClassOf,usesIdentifierScheme exactly 1 IdentifierScheme,).
+predicate(Thing,is,inverse (hasIdentifier) exactly 1 www.w3.org/2002/07/#).
+predicate(IdentifierScheme,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MetadataScheme,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(OrganizationIdentifier,is,Class).
+predicate(OrganizationIdentifier,SubClassOf,AgentIdentifier,).
+predicate(OrganizationIdentifier,SubClassOf,usesIdentifierScheme only OrganizationIdentifier).
+predicate(OrganizationIdentifierScheme,is,Class).
+predicate(OrganizationIdentifierScheme,SubClassOf,AgentIdentifierScheme,).
+predicate(OrganizationIdentifierScheme,SubClassOf,inverse (usesIdentifierScheme) some OrganizationIdentifier).
+predicate(PersonalIdentifier,is,Class).
+predicate(PersonalIdentifier,SubClassOf,AgentIdentifier,).
+predicate(PersonalIdentifier,SubClassOf,usesIdentifierScheme only PersonalIdentifierScheme).
+predicate(PersonalIdentifierScheme,is,Class).
+predicate(PersonalIdentifierScheme,SubClassOf,AgentIdentifierScheme,).
+predicate(PersonalIdentifierScheme,SubClassOf,inverse (usesIdentifierScheme) some PersonalIdentifier).
+predicate(PrimaryResourceIdentifier,is,Class).
+predicate(PrimaryResourceIdentifier,SubClassOf,ResourceIdentifier,).
+predicate(PrimaryResourceIdentifier,SubClassOf,usesIdentifierScheme value doi).
+predicate(PrimaryResourceIdentifier,DisjointWith,AlternateResourceIdentifier).
+predicate(ResourceIdentifier,is,Class).
+predicate(ResourceIdentifier,SubClassOf,Identifier,).
+predicate(ResourceIdentifier,SubClassOf,usesIdentifierScheme only ResourceIdentifierScheme).
+predicate(ResourceIdentifier,DisjointWith,AgentIdentifier).
+predicate(ResourceIdentifierScheme,is,Class).
+predicate(ResourceIdentifierScheme,SubClassOf,IdentifierScheme,).
+predicate(ResourceIdentifierScheme,SubClassOf,inverse (usesIdentifierScheme) some ResourceIdentifier).
+predicate(Literal,is,Class).
+predicate(Literal,is,hasLiteralValue exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Region,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(www.ontologydesignpatterns.org/cp//region.#,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(isRegionFor only www.w3.org/2002/07/#,is,www.ontologydesignpatterns.org/cp//region.#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(abstract,is,Individual).
+predicate(abstract,Types,DescriptionType).
+predicate(acm,is,Individual).
+predicate(acm,Types,PersonalIdentifierScheme).
+predicate(//dl.acm.org/"^^anyURI,is,hasURL  "https).
+predicate(ark,is,Individual).
+predicate(ark,Types,ResourceIdentifierScheme).
+predicate(//confluence.ucop.edu/display/Curation/ARK"^^anyURI,is,hasURL  "https).
+predicate(arxiv,is,Individual).
+predicate(arxiv,Types,ResourceIdentifierScheme).
+predicate(//arxiv.org/"^^anyURI,is,hasURL  "http).
+predicate(bibcode,is,Individual).
+predicate(bibcode,Types,ResourceIdentifierScheme).
+predicate(crossref,is,Individual).
+predicate(crossref,Types,OrganizationIdentifierScheme).
+predicate(//crossref.org/"^^anyURI,is,hasURL  "https).
+predicate(dblp,is,Individual).
+predicate(dblp,Types,PersonalIdentifierScheme).
+predicate(//dblp.org"^^anyURI,is,hasURL  "https).
+predicate(dblp-record,is,Individual).
+predicate(dblp-record,Types,ResourceIdentifierScheme).
+predicate(//dblp.org/"^^anyURI,is,hasURL  "https).
+predicate(dia,is,Individual).
+predicate(dia,Types,PersonalIdentifierScheme).
+predicate(//www.surf.nl/en/themas/openonderzoek/infrastructuur/Pages/digitalauthoridentifierdai.aspx"^^anyURI,is,hasURL  "http).
+predicate(dnb,is,Individual).
+predicate(dnb,Types,ResourceIdentifierScheme).
+predicate(//d-nb.info/"^^anyURI,is,hasURL  "https).
+predicate(doi,is,Individual).
+predicate(doi,Types,ResourceIdentifierScheme).
+predicate(//www.doi.org/"^^anyURI,is,hasURL  "http).
+predicate(ean13,is,Individual).
+predicate(ean13,Types,ResourceIdentifierScheme).
+predicate(//www.gs1.org/"^^anyURI,is,hasURL  "http).
+predicate(eissn,is,Individual).
+predicate(eissn,Types,ResourceIdentifierScheme).
+predicate(//www.issn.org/"^^anyURI,is,hasURL  "http).
+predicate(fundref,is,Individual).
+predicate(fundref,Types,FunderIdentifierScheme).
+predicate(//www.crossref.org/fundref/index.html"^^anyURI,is,hasURL  "http).
+predicate(gepris,is,Individual).
+predicate(gepris,Types,PersonalIdentifierScheme).
+predicate(//gepris.dfg.de"^^anyURI,is,hasURL  "http).
+predicate(github,is,Individual).
+predicate(github,Types,AgentIdentifierScheme).
+predicate(//github.com/"^^anyURI,is,hasURL  "https).
+predicate(gitlab,is,Individual).
+predicate(gitlab,Types,PersonalIdentifierScheme).
+predicate(//docs.gitlab.com/ee/user/profile/"^^anyURI,is,hasURL  "https).
+predicate(gnd,is,Individual).
+predicate(gnd,Types,IdentifierScheme).
+predicate(//gnd.network/"^^anyURI,is,hasURL  "https).
+predicate(google-scholar,is,Individual).
+predicate(google-scholar,Types,PersonalIdentifierScheme).
+predicate(//scholar.google.com/"^^anyURI,is,hasURL  "https).
+predicate(handle,is,Individual).
+predicate(handle,Types,ResourceIdentifierScheme).
+predicate(//www.handle.net/"^^anyURI,is,hasURL  "http).
+predicate(ieee,is,Individual).
+predicate(ieee,Types,PersonalIdentifierScheme).
+predicate(//ieeexplore.ieee.org/"^^anyURI,is,hasURL  "https).
+predicate(infouri,is,Individual).
+predicate(infouri,Types,ResourceIdentifierScheme).
+predicate(//info-uri.info/registry/docs/misc/faq.html"^^anyURI,is,hasURL  "http).
+predicate(isbn,is,Individual).
+predicate(isbn,Types,ResourceIdentifierScheme).
+predicate(//www.isbn-international.org/"^^anyURI,is,hasURL  "http).
+predicate(isni,is,Individual).
+predicate(isni,Types,OrganizationIdentifierScheme,).
+predicate(isni,Types,PersonalIdentifierScheme).
+predicate(//www.isni.org/"^^anyURI,is,hasURL  "http).
+predicate(issn,is,Individual).
+predicate(issn,Types,ResourceIdentifierScheme).
+predicate(//www.issn.org/"^^anyURI,is,hasURL  "http).
+predicate(istc,is,Individual).
+predicate(istc,Types,ResourceIdentifierScheme).
+predicate(//www.istc-international.org/html/"^^anyURI,is,hasURL  "http).
+predicate(jst,is,Individual).
+predicate(jst,Types,PersonalIdentifierScheme).
+predicate(lattes,is,Individual).
+predicate(lattes,Types,AgentIdentifierScheme).
+predicate(//lattes.cnpq.br/"^^anyURI,is,hasURL  "https).
+predicate(linkedin,is,Individual).
+predicate(linkedin,Types,AgentIdentifierScheme).
+predicate(//www.linkedin.com/"^^anyURI,is,hasURL  "https).
+predicate(lissn,is,Individual).
+predicate(lissn,Types,ResourceIdentifierScheme).
+predicate(//www.issn.org/"^^anyURI,is,hasURL  "http).
+predicate(loc,is,Individual).
+predicate(loc,Types,IdentifierScheme).
+predicate(//id.loc.gov/"^^anyURI,is,hasURL  "https).
+predicate(local-funder-identifier-scheme,is,Individual).
+predicate(local-funder-identifier-scheme,Types,FunderIdentifierScheme).
+predicate(local-organization-identifier-scheme,is,Individual).
+predicate(local-organization-identifier-scheme,Types,OrganizationIdentifierScheme).
+predicate(local-personal-identifier-scheme,is,Individual).
+predicate(local-personal-identifier-scheme,Types,PersonalIdentifierScheme).
+predicate(local-resource-identifier-scheme,is,Individual).
+predicate(local-resource-identifier-scheme,Types,ResourceIdentifierScheme).
+predicate(lsid,is,Individual).
+predicate(lsid,Types,ResourceIdentifierScheme).
+predicate(//www.ibm.com/developerworks/opensource/library/os-lsidbp/"^^anyURI,is,hasURL  "http).
+predicate(math-genealogy,is,Individual).
+predicate(math-genealogy,Types,PersonalIdentifierScheme).
+predicate(//mathgenealogy.org/"^^anyURI,is,hasURL  "https).
+predicate(methods,is,Individual).
+predicate(methods,Types,DescriptionType).
+predicate(national-insurance-number,is,Individual).
+predicate(national-insurance-number,Types,PersonalIdentifierScheme).
+predicate(nihmsid,is,Individual).
+predicate(nihmsid,Types,ResourceIdentifierScheme).
+predicate(//nexus.od.nih.gov/all/2009/09/01/nih-public-access-update-clarifying-use-of-the-nih-manuscript-submission-id-nihmsid/"^^anyURI,is,hasURL  "http).
+predicate(nii,is,Individual).
+predicate(nii,Types,PersonalIdentifierScheme).
+predicate(oci,is,Individual).
+predicate(oci,Types,ResourceIdentifierScheme).
+predicate(//w3id.org/oc/oci"^^anyURI,is,hasURL  "https).
+predicate(oclc,is,Individual).
+predicate(oclc,Types,ResourceIdentifierScheme).
+predicate(//www.worldcat.org/"^^anyURI,is,hasURL  "https).
+predicate(openalex,is,Individual).
+predicate(openalex,Types,IdentifierScheme).
+predicate(//docs.openalex.org/about-the-data"^^anyURI,is,hasURL  "https).
+predicate(openid,is,Individual).
+predicate(openid,Types,PersonalIdentifierScheme).
+predicate(//openid.net/foundation/"^^anyURI,is,hasURL  "http).
+predicate(orcid,is,Individual).
+predicate(orcid,Types,AgentIdentifierScheme).
+predicate(//orcid.org/"^^anyURI,is,hasURL  "http).
+predicate(other,is,Individual).
+predicate(other,Types,DescriptionType).
+predicate(pii,is,Individual).
+predicate(pii,Types,ResourceIdentifierScheme).
+predicate(pmcid,is,Individual).
+predicate(pmcid,Types,ResourceIdentifierScheme).
+predicate(//www.ncbi.nlm.nih.gov/pmc/"^^anyURI,is,hasURL  "http).
+predicate(pmid,is,Individual).
+predicate(pmid,Types,ResourceIdentifierScheme).
+predicate(//www.ncbi.nlm.nih.gov/pubmed/"^^anyURI,is,hasURL  "http).
+predicate(purl,is,Individual).
+predicate(purl,Types,ResourceIdentifierScheme).
+predicate(//purl.org/"^^anyURI,is,hasURL  "http).
+predicate(repec,is,Individual).
+predicate(repec,Types,PersonalIdentifierScheme).
+predicate(//authors.repec.org/"^^anyURI,is,hasURL  "https).
+predicate(research-gate,is,Individual).
+predicate(research-gate,Types,PersonalIdentifierScheme).
+predicate(//www.researchgate.net"^^anyURI,is,hasURL  "https).
+predicate(researcherid,is,Individual).
+predicate(researcherid,Types,PersonalIdentifierScheme).
+predicate(//www.researcherid.com/"^^anyURI,is,hasURL  "http).
+predicate(ror,is,Individual).
+predicate(ror,Types,OrganizationIdentifierScheme).
+predicate(//ror.org/"^^anyURI,is,hasURL  "https).
+predicate(scigraph,is,Individual).
+predicate(scigraph,Types,IdentifierScheme).
+predicate(//scigraph.springernature.com/explorer/datasets/data_at_a_glance/"^^anyURI,is,hasURL  "https).
+predicate(series-information,is,Individual).
+predicate(series-information,Types,DescriptionType).
+predicate(sici,is,Individual).
+predicate(sici,Types,ResourceIdentifierScheme).
+predicate(//en.wikipedia.org/wiki/Serial_Item_and_Contribution_Identifier"^^anyURI,is,hasURL  "http).
+predicate(social-security-number,is,Individual).
+predicate(social-security-number,Types,PersonalIdentifierScheme).
+predicate(spar,is,Individual).
+predicate(spar,Types,MetadataScheme).
+predicate(//www.sparontologies.net"^^anyURI,is,hasURL  "http).
+predicate(table-of-content,is,Individual).
+predicate(table-of-content,Types,DescriptionType).
+predicate(twitter,is,Individual).
+predicate(twitter,Types,AgentIdentifierScheme).
+predicate(//twitter.com/"^^anyURI,is,hasURL  "https).
+predicate(upc,is,Individual).
+predicate(upc,Types,ResourceIdentifierScheme).
+predicate(uri,is,Individual).
+predicate(uri,Types,ResourceIdentifierScheme).
+predicate(//tools.ietf.org/html/rfc3986"^^anyURI,is,hasURL  "http).
+predicate(url,is,Individual).
+predicate(url,Types,ResourceIdentifierScheme).
+predicate(urn,is,Individual).
+predicate(urn,Types,ResourceIdentifierScheme).
+predicate(//datatracker.ietf.org/wg/urn/charter/"^^anyURI,is,hasURL  "http).
+predicate(viaf,is,Individual).
+predicate(viaf,Types,PersonalIdentifierScheme).
+predicate(//viaf.org/"^^anyURI,is,hasURL  "http).
+predicate(wikidata,is,Individual).
+predicate(wikidata,Types,IdentifierScheme).
+predicate(//www.wikidata.org/"^^anyURI,is,hasURL  "https).
+predicate(wikipedia,is,Individual).
+predicate(wikipedia,Types,ResourceIdentifierScheme).
+predicate(//en.wikipedia.org/"^^anyURI,is,hasURL  "https).
+predicate(zbmath,is,Individual).
+predicate(zbmath,Types,PersonalIdentifierScheme).
+predicate(//zbmath.org/"^^anyURI,is,hasURL  "https).
+predicate(//zbmath.org/"^^anyURI,DisjointClasses,FunderIdentifier,PersonalIdentifier,ResourceIdentifier).
+predicate(//zbmath.org/"^^anyURI,Rule,hasSameLiteralValueAs(?x, ?y), hasLiteralValue(?y, ?v) - hasLiteralValue(?x, ?v)).

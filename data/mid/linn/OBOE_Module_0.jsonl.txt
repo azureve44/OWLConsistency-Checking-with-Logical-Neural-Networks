@@ -1,0 +1,856 @@
+predicate(decimal,is,Datatype).
+predicate(int,is,Datatype).
+predicate(integer,is,Datatype).
+predicate(hasUnit,is,ObjectProperty).
+predicate(ofCharacteristic,is,ObjectProperty).
+predicate(standardFor,is,ObjectProperty).
+predicate(usesStandard,is,ObjectProperty).
+predicate(hasPower,is,DataProperty).
+predicate(hasPower,Characteristics,Functional).
+predicate(hasPower,Domain,DerivedUnit).
+predicate(hasPower,Range,int).
+predicate(hasPrefixMultiplier,is,DataProperty).
+predicate(hasPrefixMultiplier,Characteristics,Functional).
+predicate(hasPrefixMultiplier,Domain,PrefixedUnit).
+predicate(hasPrefixMultiplier,Range,decimal).
+predicate(Amount,is,Class).
+predicate(AmountOfSubstanceConcentration,is,Class).
+predicate(Angle,is,Class).
+predicate(Area,is,Class).
+predicate(ArealDensity,is,Class).
+predicate(ArealMassDensity,is,Class).
+predicate(ArealMassDensityRate,is,Class).
+predicate(Conductance,is,Class).
+predicate(Conductivity,is,Class).
+predicate(Count,is,Class).
+predicate(Current,is,Class).
+predicate(Force,is,Class).
+predicate(Frequency,is,Class).
+predicate(Irradiance,is,Class).
+predicate(Length,is,Class).
+predicate(Luminosity,is,Class).
+predicate(Mass,is,Class).
+predicate(MassDensity,is,Class).
+predicate(MassPerMass,is,Class).
+predicate(Molality,is,Class).
+predicate(PhotonFluxDensity,is,Class).
+predicate(Pressure,is,Class).
+predicate(Proportion,is,Class).
+predicate(Radiance,is,Class).
+predicate(RadionucleotideActivity,is,Class).
+predicate(Speed,is,Class).
+predicate(Temperature,is,Class).
+predicate(Time,is,Class).
+predicate(Volume,is,Class).
+predicate(VolumetricMassDensityRate,is,Class).
+predicate(VolumetricRate,is,Class).
+predicate(WaveNumber,is,Class).
+predicate(BaseUnit,is,Class).
+predicate(BaseUnit,SubClassOf,Unit).
+predicate(BaseUnit,DisjointWith,PrefixedUnit).
+predicate(BaseUnit,DisjointWith,DerivedUnit).
+predicate(BaseUnit,DisjointWith,CompositeUnit).
+predicate(CategoricalStandard,is,Class).
+predicate(CategoricalStandard,SubClassOf,Standard).
+predicate(CategoricalStandard,DisjointWith,Unit).
+predicate(CategoricalStandard,DisjointWith,Index).
+predicate(Characteristic,is,Class).
+predicate(Characteristic,DisjointWith,Standard).
+predicate(CharacteristicQualifier,is,Class).
+predicate(CharacteristicQualifier,DisjointWith,Standard).
+predicate(CompositeUnit,is,Class).
+predicate(CompositeUnit,SubClassOf,Unit,).
+predicate(CompositeUnit,SubClassOf,hasUnit min 2 (BaseUnit or DerivedUnit or PrefixedUnit)).
+predicate(CompositeUnit,DisjointWith,PrefixedUnit).
+predicate(CompositeUnit,DisjointWith,DerivedUnit).
+predicate(CompositeUnit,DisjointWith,BaseUnit).
+predicate(DerivedUnit,is,Class).
+predicate(DerivedUnit,SubClassOf,Unit,).
+predicate(DerivedUnit,SubClassOf,not (hasPower value 0),).
+predicate(DerivedUnit,SubClassOf,not (hasPower value 1),).
+predicate(DerivedUnit,SubClassOf,hasPower some int).
+predicate(DerivedUnit,DisjointWith,PrefixedUnit).
+predicate(DerivedUnit,DisjointWith,CompositeUnit).
+predicate(DerivedUnit,DisjointWith,BaseUnit).
+predicate(Entity,is,Class).
+predicate(Entity,DisjointWith,Standard).
+predicate(Index,is,Class).
+predicate(Index,SubClassOf,Standard).
+predicate(Index,DisjointWith,Unit).
+predicate(Index,DisjointWith,CategoricalStandard).
+predicate(MeasuredValue,is,Class).
+predicate(MeasuredValue,DisjointWith,Standard).
+predicate(Measurement,is,Class).
+predicate(Measurement,DisjointWith,Standard).
+predicate(MeasurementType,is,Class).
+predicate(MeasurementType,DisjointWith,Standard).
+predicate(Observation,is,Class).
+predicate(Observation,DisjointWith,Standard).
+predicate(ObservationCollection,is,Class).
+predicate(ObservationCollection,DisjointWith,Standard).
+predicate(PrefixedUnit,is,Class).
+predicate(PrefixedUnit,SubClassOf,Unit,).
+predicate(PrefixedUnit,SubClassOf,not (hasPrefixMultiplier value 0),).
+predicate(PrefixedUnit,SubClassOf,hasUnit exactly 1 BaseUnit,).
+predicate(PrefixedUnit,SubClassOf,hasPrefixMultiplier some decimal).
+predicate(PrefixedUnit,DisjointWith,DerivedUnit).
+predicate(PrefixedUnit,DisjointWith,CompositeUnit).
+predicate(PrefixedUnit,DisjointWith,BaseUnit).
+predicate(Protocol,is,Class).
+predicate(Protocol,DisjointWith,Standard).
+predicate(Standard,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,inverse (usesStandard) some Measurement).
+predicate(Thing,,DisjointWith,Protocol).
+predicate(Thing,,DisjointWith,ObservationCollection).
+predicate(Thing,,DisjointWith,Observation).
+predicate(Thing,,DisjointWith,MeasurementType).
+predicate(Thing,,DisjointWith,Measurement).
+predicate(Thing,,DisjointWith,MeasuredValue).
+predicate(Thing,,DisjointWith,Entity).
+predicate(Thing,,DisjointWith,CharacteristicQualifier).
+predicate(Thing,,DisjointWith,Characteristic).
+predicate(Unit,is,Class).
+predicate(Unit,SubClassOf,Standard).
+predicate(Unit,DisjointWith,Index).
+predicate(Unit,DisjointWith,CategoricalStandard).
+predicate(Acre,is,Class).
+predicate(Acre,SubClassOf,DerivedUnit,).
+predicate(Acre,SubClassOf,hasUnit only).
+predicate(Acre,SubClassOf,(BaseUnit and (standardFor only).
+predicate(Acre,SubClassOf,(Measurement and (ofCharacteristic only Length)))),).
+predicate(Acre,SubClassOf,standardFor only).
+predicate(Acre,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(Acre,SubClassOf,hasPower value 2).
+predicate(Ampere,is,Class).
+predicate(Ampere,SubClassOf,BaseUnit,).
+predicate(Ampere,SubClassOf,standardFor only).
+predicate(Ampere,SubClassOf,(Measurement and (ofCharacteristic only Current))).
+predicate(Angstrom,is,Class).
+predicate(Angstrom,SubClassOf,BaseUnit,).
+predicate(Angstrom,SubClassOf,standardFor only).
+predicate(Angstrom,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(Are,is,Class).
+predicate(Are,SubClassOf,DerivedUnit,).
+predicate(Are,SubClassOf,hasUnit only Dekameter,).
+predicate(Are,SubClassOf,standardFor only).
+predicate(Are,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(Are,SubClassOf,hasPower value 2).
+predicate(Bar,is,Class).
+predicate(Bar,SubClassOf,BaseUnit,).
+predicate(Bar,SubClassOf,standardFor only).
+predicate(Bar,SubClassOf,(Measurement and (ofCharacteristic only Pressure))).
+predicate(Becquerel,is,Class).
+predicate(Becquerel,SubClassOf,DerivedUnit,).
+predicate(Becquerel,SubClassOf,hasUnit only Second,).
+predicate(Becquerel,SubClassOf,standardFor only).
+predicate(Becquerel,SubClassOf,(Measurement and (ofCharacteristic only RadionucleotideActivity)),).
+predicate(Becquerel,SubClassOf,hasPower value -1).
+predicate(Bushel,is,Class).
+predicate(Bushel,SubClassOf,DerivedUnit,).
+predicate(Bushel,SubClassOf,hasUnit only).
+predicate(Bushel,SubClassOf,(BaseUnit and (standardFor only).
+predicate(Bushel,SubClassOf,(Measurement and (ofCharacteristic only Length)))),).
+predicate(Bushel,SubClassOf,standardFor only).
+predicate(Bushel,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(Bushel,SubClassOf,hasPower value 3).
+predicate(Candela,is,Class).
+predicate(Candela,SubClassOf,BaseUnit,).
+predicate(Candela,SubClassOf,standardFor only).
+predicate(Candela,SubClassOf,(Measurement and (ofCharacteristic only Luminosity))).
+predicate(Celsius,is,Class).
+predicate(Celsius,SubClassOf,BaseUnit,).
+predicate(Celsius,SubClassOf,standardFor only).
+predicate(Celsius,SubClassOf,(Measurement and (ofCharacteristic only Temperature))).
+predicate(Centigram,is,Class).
+predicate(Centigram,SubClassOf,BaseUnit,).
+predicate(Centigram,SubClassOf,standardFor only).
+predicate(Centigram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(Centimeter,is,Class).
+predicate(Centimeter,SubClassOf,BaseUnit,).
+predicate(Centimeter,SubClassOf,standardFor only).
+predicate(Centimeter,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(CentimeterCubed,is,Class).
+predicate(CentimeterCubed,EquivalentTo,Milliliter).
+predicate(CentimeterCubed,SubClassOf,DerivedUnit,).
+predicate(CentimeterCubed,SubClassOf,hasUnit only Centimeter,).
+predicate(CentimeterCubed,SubClassOf,standardFor only).
+predicate(CentimeterCubed,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(CentimeterCubed,SubClassOf,hasPower value 3).
+predicate(CentimeterPerSecond,is,Class).
+predicate(CentimeterPerSecond,SubClassOf,CompositeUnit,).
+predicate(CentimeterPerSecond,SubClassOf,hasUnit some Centimeter,).
+predicate(CentimeterPerSecond,SubClassOf,hasUnit some).
+predicate(CentimeterPerSecond,SubClassOf,(DerivedUnit and (hasUnit only Second) and (hasPower value -1)),).
+predicate(CentimeterPerSecond,SubClassOf,standardFor only).
+predicate(CentimeterPerSecond,SubClassOf,(Measurement and (ofCharacteristic only Speed))).
+predicate(CentimeterSquared,is,Class).
+predicate(CentimeterSquared,SubClassOf,DerivedUnit,).
+predicate(CentimeterSquared,SubClassOf,hasUnit only Centimeter,).
+predicate(CentimeterSquared,SubClassOf,standardFor only).
+predicate(CentimeterSquared,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(CentimeterSquared,SubClassOf,hasPower value 2).
+predicate(Centisecond,is,Class).
+predicate(Centisecond,SubClassOf,BaseUnit,).
+predicate(Centisecond,SubClassOf,standardFor only).
+predicate(Centisecond,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Day,is,Class).
+predicate(Day,SubClassOf,BaseUnit,).
+predicate(Day,SubClassOf,standardFor only).
+predicate(Day,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Decibar,is,Class).
+predicate(Decibar,SubClassOf,BaseUnit,).
+predicate(Decibar,SubClassOf,standardFor only).
+predicate(Decibar,SubClassOf,(Measurement and (ofCharacteristic only Pressure))).
+predicate(Decigram,is,Class).
+predicate(Decigram,SubClassOf,BaseUnit,).
+predicate(Decigram,SubClassOf,standardFor only).
+predicate(Decigram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(Decimeter,is,Class).
+predicate(Decimeter,SubClassOf,BaseUnit,).
+predicate(Decimeter,SubClassOf,standardFor only).
+predicate(Decimeter,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(Decisecond,is,Class).
+predicate(Decisecond,SubClassOf,BaseUnit,).
+predicate(Decisecond,SubClassOf,standardFor only).
+predicate(Decisecond,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Degree,is,Class).
+predicate(Degree,SubClassOf,BaseUnit,).
+predicate(Degree,SubClassOf,standardFor only).
+predicate(Degree,SubClassOf,(Measurement and (ofCharacteristic only Angle))).
+predicate(Dekagram,is,Class).
+predicate(Dekagram,SubClassOf,BaseUnit,).
+predicate(Dekagram,SubClassOf,standardFor only).
+predicate(Dekagram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(Dekameter,is,Class).
+predicate(Dekameter,SubClassOf,BaseUnit,).
+predicate(Dekameter,SubClassOf,standardFor only).
+predicate(Dekameter,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(Dekasecond,is,Class).
+predicate(Dekasecond,SubClassOf,BaseUnit,).
+predicate(Dekasecond,SubClassOf,standardFor only).
+predicate(Dekasecond,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(FahrenheitDegree,is,Class).
+predicate(FahrenheitDegree,SubClassOf,BaseUnit,).
+predicate(FahrenheitDegree,SubClassOf,standardFor only).
+predicate(FahrenheitDegree,SubClassOf,(Measurement and (ofCharacteristic only Temperature))).
+predicate(Fathom,is,Class).
+predicate(Fathom,SubClassOf,BaseUnit,).
+predicate(Fathom,SubClassOf,standardFor only).
+predicate(Fathom,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(Foot,is,Class).
+predicate(Foot,SubClassOf,BaseUnit,).
+predicate(Foot,SubClassOf,standardFor only).
+predicate(Foot,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(FootGoldCoast,is,Class).
+predicate(FootGoldCoast,SubClassOf,BaseUnit,).
+predicate(FootGoldCoast,SubClassOf,standardFor only).
+predicate(FootGoldCoast,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(FootSquared,is,Class).
+predicate(FootSquared,SubClassOf,DerivedUnit,).
+predicate(FootSquared,SubClassOf,hasUnit only Foot,).
+predicate(FootSquared,SubClassOf,standardFor only).
+predicate(FootSquared,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(FootSquared,SubClassOf,hasPower value 2).
+predicate(Gallon,is,Class).
+predicate(Gallon,SubClassOf,DerivedUnit,).
+predicate(Gallon,SubClassOf,hasUnit only).
+predicate(Gallon,SubClassOf,(BaseUnit and (standardFor only).
+predicate(Gallon,SubClassOf,(Measurement and (ofCharacteristic only Length)))),).
+predicate(Gallon,SubClassOf,standardFor only).
+predicate(Gallon,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(Gallon,SubClassOf,hasPower value 3).
+predicate(Grad,is,Class).
+predicate(Grad,SubClassOf,BaseUnit,).
+predicate(Grad,SubClassOf,standardFor only).
+predicate(Grad,SubClassOf,(Measurement and (ofCharacteristic only Angle))).
+predicate(Gram,is,Class).
+predicate(Gram,SubClassOf,BaseUnit,).
+predicate(Gram,SubClassOf,standardFor only).
+predicate(Gram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(GramPerGram,is,Class).
+predicate(GramPerGram,SubClassOf,CompositeUnit,).
+predicate(GramPerGram,SubClassOf,hasUnit some Gram,).
+predicate(GramPerGram,SubClassOf,hasUnit some).
+predicate(GramPerGram,SubClassOf,(DerivedUnit and (hasUnit only Gram) and (hasPower value -1)),).
+predicate(GramPerGram,SubClassOf,standardFor only).
+predicate(GramPerGram,SubClassOf,(Measurement and (ofCharacteristic only MassPerMass)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(GramPerLiter,is,Class).
+predicate(GramPerLiter,SubClassOf,CompositeUnit,).
+predicate(GramPerLiter,SubClassOf,hasUnit some Gram,).
+predicate(GramPerLiter,SubClassOf,hasUnit some).
+predicate(GramPerLiter,SubClassOf,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),).
+predicate(GramPerLiter,SubClassOf,standardFor only).
+predicate(GramPerLiter,SubClassOf,(Measurement and (ofCharacteristic only MassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(GramPerMeterCubed,is,Class).
+predicate(GramPerMeterCubed,SubClassOf,CompositeUnit,).
+predicate(GramPerMeterCubed,SubClassOf,hasUnit some Gram,).
+predicate(GramPerMeterCubed,SubClassOf,hasUnit some).
+predicate(GramPerMeterCubed,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),).
+predicate(GramPerMeterCubed,SubClassOf,standardFor only).
+predicate(GramPerMeterCubed,SubClassOf,(Measurement and (ofCharacteristic only MassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(Hectare,is,Class).
+predicate(Hectare,SubClassOf,DerivedUnit,).
+predicate(Hectare,SubClassOf,hasUnit only Hectometer,).
+predicate(Hectare,SubClassOf,standardFor only).
+predicate(Hectare,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(Hectare,SubClassOf,hasPower value 2).
+predicate(Hectogram,is,Class).
+predicate(Hectogram,SubClassOf,BaseUnit,).
+predicate(Hectogram,SubClassOf,standardFor only).
+predicate(Hectogram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(Hectometer,is,Class).
+predicate(Hectometer,SubClassOf,BaseUnit,).
+predicate(Hectometer,SubClassOf,standardFor only).
+predicate(Hectometer,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(Hectopascal,is,Class).
+predicate(Hectopascal,EquivalentTo,Millibar).
+predicate(Hectopascal,SubClassOf,BaseUnit,).
+predicate(Hectopascal,SubClassOf,standardFor only).
+predicate(Hectopascal,SubClassOf,(Measurement and (ofCharacteristic only Pressure))).
+predicate(Hectosecond,is,Class).
+predicate(Hectosecond,SubClassOf,BaseUnit,).
+predicate(Hectosecond,SubClassOf,standardFor only).
+predicate(Hectosecond,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Hertz,is,Class).
+predicate(Hertz,SubClassOf,DerivedUnit,).
+predicate(Hertz,SubClassOf,hasUnit only Second,).
+predicate(Hertz,SubClassOf,standardFor only).
+predicate(Hertz,SubClassOf,(Measurement and (ofCharacteristic only Frequency)),).
+predicate(Hertz,SubClassOf,hasPower value -1).
+predicate(Hour,is,Class).
+predicate(Hour,SubClassOf,BaseUnit,).
+predicate(Hour,SubClassOf,standardFor only).
+predicate(Hour,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Inch,is,Class).
+predicate(Inch,SubClassOf,BaseUnit,).
+predicate(Inch,SubClassOf,standardFor only).
+predicate(Inch,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(InchCubed,is,Class).
+predicate(InchCubed,SubClassOf,DerivedUnit,).
+predicate(InchCubed,SubClassOf,hasUnit only Inch,).
+predicate(InchCubed,SubClassOf,standardFor only).
+predicate(InchCubed,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(InchCubed,SubClassOf,hasPower value 3).
+predicate(Kelvin,is,Class).
+predicate(Kelvin,SubClassOf,BaseUnit,).
+predicate(Kelvin,SubClassOf,standardFor only).
+predicate(Kelvin,SubClassOf,(Measurement and (ofCharacteristic only Temperature))).
+predicate(Kilogram,is,Class).
+predicate(Kilogram,SubClassOf,BaseUnit,).
+predicate(Kilogram,SubClassOf,standardFor only).
+predicate(Kilogram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(KilogramPerLiter,is,Class).
+predicate(KilogramPerLiter,SubClassOf,CompositeUnit,).
+predicate(KilogramPerLiter,SubClassOf,hasUnit some Kilogram,).
+predicate(KilogramPerLiter,SubClassOf,hasUnit some).
+predicate(KilogramPerLiter,SubClassOf,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),).
+predicate(KilogramPerLiter,SubClassOf,standardFor only).
+predicate(KilogramPerLiter,SubClassOf,(Measurement and (ofCharacteristic only MassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(KilogramPerMeterCubed,is,Class).
+predicate(KilogramPerMeterCubed,SubClassOf,CompositeUnit,).
+predicate(KilogramPerMeterCubed,SubClassOf,hasUnit some Kilogram,).
+predicate(KilogramPerMeterCubed,SubClassOf,hasUnit some).
+predicate(KilogramPerMeterCubed,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),).
+predicate(KilogramPerMeterCubed,SubClassOf,standardFor only).
+predicate(KilogramPerMeterCubed,SubClassOf,(Measurement and (ofCharacteristic only MassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(KilogramPerMeterSquared,is,Class).
+predicate(KilogramPerMeterSquared,SubClassOf,CompositeUnit,).
+predicate(KilogramPerMeterSquared,SubClassOf,hasUnit some Kilogram,).
+predicate(KilogramPerMeterSquared,SubClassOf,hasUnit some).
+predicate(KilogramPerMeterSquared,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),).
+predicate(KilogramPerMeterSquared,SubClassOf,standardFor only).
+predicate(KilogramPerMeterSquared,SubClassOf,(Measurement and (ofCharacteristic only ArealMassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(KilogramPerMeterSquaredPerDay,is,Class).
+predicate(KilogramPerMeterSquaredPerDay,SubClassOf,CompositeUnit,).
+predicate(KilogramPerMeterSquaredPerDay,SubClassOf,hasUnit some Kilogram,).
+predicate(KilogramPerMeterSquaredPerDay,SubClassOf,hasUnit some).
+predicate(KilogramPerMeterSquaredPerDay,SubClassOf,(DerivedUnit and (hasUnit only Day) and (hasPower value -1)),).
+predicate(KilogramPerMeterSquaredPerDay,SubClassOf,hasUnit some).
+predicate(KilogramPerMeterSquaredPerDay,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),).
+predicate(KilogramPerMeterSquaredPerDay,SubClassOf,standardFor only).
+predicate(KilogramPerMeterSquaredPerDay,SubClassOf,(Measurement and (ofCharacteristic only ArealMassDensityRate)),).
+predicate(Thing,is,hasUnit exactly 3 www.w3.org/2002/07/#).
+predicate(Kilohertz,is,Class).
+predicate(Kilohertz,SubClassOf,DerivedUnit,).
+predicate(Kilohertz,SubClassOf,hasUnit only Kilosecond,).
+predicate(Kilohertz,SubClassOf,standardFor only).
+predicate(Kilohertz,SubClassOf,(Measurement and (ofCharacteristic only Frequency)),).
+predicate(Kilohertz,SubClassOf,hasPower value -1).
+predicate(Kiloliter,is,Class).
+predicate(Kiloliter,EquivalentTo,MeterCubed).
+predicate(Kiloliter,SubClassOf,DerivedUnit,).
+predicate(Kiloliter,SubClassOf,hasUnit only Meter,).
+predicate(Kiloliter,SubClassOf,standardFor only).
+predicate(Kiloliter,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(Kiloliter,SubClassOf,hasPower value 3).
+predicate(Kilometer,is,Class).
+predicate(Kilometer,SubClassOf,BaseUnit,).
+predicate(Kilometer,SubClassOf,standardFor only).
+predicate(Kilometer,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(KilometerSquared,is,Class).
+predicate(KilometerSquared,SubClassOf,DerivedUnit,).
+predicate(KilometerSquared,SubClassOf,hasUnit only Kilometer,).
+predicate(KilometerSquared,SubClassOf,standardFor only).
+predicate(KilometerSquared,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(KilometerSquared,SubClassOf,hasPower value 2).
+predicate(Kilopascal,is,Class).
+predicate(Kilopascal,SubClassOf,CompositeUnit,).
+predicate(Kilopascal,SubClassOf,standardFor only).
+predicate(Kilopascal,SubClassOf,(Measurement and (ofCharacteristic only Pressure))).
+predicate(Kilosecond,is,Class).
+predicate(Kilosecond,SubClassOf,BaseUnit,).
+predicate(Kilosecond,SubClassOf,standardFor only).
+predicate(Kilosecond,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Knot,is,Class).
+predicate(Knot,SubClassOf,CompositeUnit,).
+predicate(Knot,SubClassOf,hasUnit some NauticalMile,).
+predicate(Knot,SubClassOf,hasUnit some).
+predicate(Knot,SubClassOf,(DerivedUnit and (hasUnit only Hour) and (hasPower value -1)),).
+predicate(Knot,SubClassOf,standardFor only).
+predicate(Knot,SubClassOf,(Measurement and (ofCharacteristic only Speed)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(LinkClarke,is,Class).
+predicate(LinkClarke,SubClassOf,BaseUnit,).
+predicate(LinkClarke,SubClassOf,standardFor only).
+predicate(LinkClarke,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(Liter,is,Class).
+predicate(Liter,SubClassOf,DerivedUnit,).
+predicate(Liter,SubClassOf,hasUnit only Decimeter,).
+predicate(Liter,SubClassOf,standardFor only).
+predicate(Liter,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(Liter,SubClassOf,hasPower value 3).
+predicate(LiterPerSecond,is,Class).
+predicate(LiterPerSecond,SubClassOf,CompositeUnit,).
+predicate(LiterPerSecond,SubClassOf,hasUnit some Liter,).
+predicate(LiterPerSecond,SubClassOf,hasUnit some).
+predicate(LiterPerSecond,SubClassOf,(DerivedUnit and (hasUnit only Second) and (hasPower value -1)),).
+predicate(LiterPerSecond,SubClassOf,standardFor only).
+predicate(LiterPerSecond,SubClassOf,(Measurement and (ofCharacteristic only VolumetricRate)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(Lumen,is,Class).
+predicate(Lumen,SubClassOf,BaseUnit,).
+predicate(Lumen,SubClassOf,standardFor only).
+predicate(Lumen,SubClassOf,(Measurement and (ofCharacteristic only Luminosity))).
+predicate(Megagram,is,Class).
+predicate(Megagram,SubClassOf,BaseUnit,).
+predicate(Megagram,SubClassOf,standardFor only).
+predicate(Megagram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(Megahertz,is,Class).
+predicate(Megahertz,SubClassOf,DerivedUnit,).
+predicate(Megahertz,SubClassOf,hasUnit only Megasecond,).
+predicate(Megahertz,SubClassOf,standardFor only).
+predicate(Megahertz,SubClassOf,(Measurement and (ofCharacteristic only Frequency)),).
+predicate(Megahertz,SubClassOf,hasPower value -1).
+predicate(Megameter,is,Class).
+predicate(Megameter,SubClassOf,BaseUnit,).
+predicate(Megameter,SubClassOf,standardFor only).
+predicate(Megameter,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(Megasecond,is,Class).
+predicate(Megasecond,SubClassOf,BaseUnit,).
+predicate(Megasecond,SubClassOf,standardFor only).
+predicate(Megasecond,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Meter,is,Class).
+predicate(Meter,SubClassOf,BaseUnit,).
+predicate(Meter,SubClassOf,standardFor only).
+predicate(Meter,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(MeterCubed,is,Class).
+predicate(MeterCubed,EquivalentTo,Kiloliter).
+predicate(MeterCubed,SubClassOf,DerivedUnit,).
+predicate(MeterCubed,SubClassOf,hasUnit only Meter,).
+predicate(MeterCubed,SubClassOf,standardFor only).
+predicate(MeterCubed,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(MeterCubed,SubClassOf,hasPower value 3).
+predicate(MeterPerSecond,is,Class).
+predicate(MeterPerSecond,SubClassOf,CompositeUnit,).
+predicate(MeterPerSecond,SubClassOf,hasUnit some Meter,).
+predicate(MeterPerSecond,SubClassOf,hasUnit some).
+predicate(MeterPerSecond,SubClassOf,(DerivedUnit and (hasUnit only Second) and (hasPower value -1)),).
+predicate(MeterPerSecond,SubClassOf,standardFor only).
+predicate(MeterPerSecond,SubClassOf,(Measurement and (ofCharacteristic only Speed)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(MeterSquared,is,Class).
+predicate(MeterSquared,SubClassOf,DerivedUnit,).
+predicate(MeterSquared,SubClassOf,hasUnit only Meter,).
+predicate(MeterSquared,SubClassOf,standardFor only).
+predicate(MeterSquared,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(MeterSquared,SubClassOf,hasPower value 2).
+predicate(MicroeinsteinsPerMeterSquaredPerSecond,is,Class).
+predicate(MicroeinsteinsPerMeterSquaredPerSecond,SubClassOf,CompositeUnit,).
+predicate(MicroeinsteinsPerMeterSquaredPerSecond,SubClassOf,standardFor only).
+predicate(MicroeinsteinsPerMeterSquaredPerSecond,SubClassOf,(Measurement and (ofCharacteristic only PhotonFluxDensity))).
+predicate(Microgram,is,Class).
+predicate(Microgram,SubClassOf,BaseUnit,).
+predicate(Microgram,SubClassOf,standardFor only).
+predicate(Microgram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(MicrogramPerGram,is,Class).
+predicate(MicrogramPerGram,SubClassOf,CompositeUnit,).
+predicate(MicrogramPerGram,SubClassOf,hasUnit some Microgram,).
+predicate(MicrogramPerGram,SubClassOf,hasUnit some).
+predicate(MicrogramPerGram,SubClassOf,(DerivedUnit and (hasUnit only Gram) and (hasPower value -1)),).
+predicate(MicrogramPerGram,SubClassOf,standardFor only).
+predicate(MicrogramPerGram,SubClassOf,(Measurement and (ofCharacteristic only MassPerMass)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(MicrogramPerLiter,is,Class).
+predicate(MicrogramPerLiter,SubClassOf,CompositeUnit,).
+predicate(MicrogramPerLiter,SubClassOf,hasUnit some Microgram,).
+predicate(MicrogramPerLiter,SubClassOf,hasUnit some).
+predicate(MicrogramPerLiter,SubClassOf,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),).
+predicate(MicrogramPerLiter,SubClassOf,standardFor only).
+predicate(MicrogramPerLiter,SubClassOf,(Measurement and (ofCharacteristic only MassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(MicrogramPerMeterCubed,is,Class).
+predicate(MicrogramPerMeterCubed,SubClassOf,CompositeUnit,).
+predicate(MicrogramPerMeterCubed,SubClassOf,hasUnit some Microgram,).
+predicate(MicrogramPerMeterCubed,SubClassOf,hasUnit some).
+predicate(MicrogramPerMeterCubed,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),).
+predicate(MicrogramPerMeterCubed,SubClassOf,standardFor only).
+predicate(MicrogramPerMeterCubed,SubClassOf,(Measurement and (ofCharacteristic only MassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(Microliter,is,Class).
+predicate(Microliter,SubClassOf,DerivedUnit,).
+predicate(Microliter,SubClassOf,hasUnit only Millimeter,).
+predicate(Microliter,SubClassOf,standardFor only).
+predicate(Microliter,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(Microliter,SubClassOf,hasPower value 3).
+predicate(Micrometer,is,Class).
+predicate(Micrometer,SubClassOf,BaseUnit,).
+predicate(Micrometer,SubClassOf,standardFor only).
+predicate(Micrometer,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(MicrometerSquared,is,Class).
+predicate(MicrometerSquared,SubClassOf,DerivedUnit,).
+predicate(MicrometerSquared,SubClassOf,hasUnit only Micrometer,).
+predicate(MicrometerSquared,SubClassOf,standardFor only).
+predicate(MicrometerSquared,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(MicrometerSquared,SubClassOf,hasPower value 2).
+predicate(MicromolePerKilogram,is,Class).
+predicate(MicromolePerKilogram,SubClassOf,CompositeUnit,).
+predicate(MicromolePerKilogram,SubClassOf,standardFor only).
+predicate(MicromolePerKilogram,SubClassOf,(Measurement and (ofCharacteristic only Molality))).
+predicate(MicromolePerLiter,is,Class).
+predicate(MicromolePerLiter,SubClassOf,CompositeUnit,).
+predicate(MicromolePerLiter,SubClassOf,standardFor only).
+predicate(MicromolePerLiter,SubClassOf,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))).
+predicate(MicromolePerMeterCubed,is,Class).
+predicate(MicromolePerMeterCubed,SubClassOf,CompositeUnit,).
+predicate(MicromolePerMeterCubed,SubClassOf,standardFor only).
+predicate(MicromolePerMeterCubed,SubClassOf,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))).
+predicate(Micron,is,Class).
+predicate(Micron,SubClassOf,BaseUnit,).
+predicate(Micron,SubClassOf,standardFor only).
+predicate(Micron,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(Microsecond,is,Class).
+predicate(Microsecond,SubClassOf,BaseUnit,).
+predicate(Microsecond,SubClassOf,standardFor only).
+predicate(Microsecond,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(MicrosiemensPerMeter,is,Class).
+predicate(MicrosiemensPerMeter,SubClassOf,CompositeUnit,).
+predicate(MicrosiemensPerMeter,SubClassOf,standardFor only).
+predicate(MicrosiemensPerMeter,SubClassOf,(Measurement and (ofCharacteristic only Conductivity))).
+predicate(Mile,is,Class).
+predicate(Mile,SubClassOf,BaseUnit,).
+predicate(Mile,SubClassOf,standardFor only).
+predicate(Mile,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(MileSquared,is,Class).
+predicate(MileSquared,SubClassOf,DerivedUnit,).
+predicate(MileSquared,SubClassOf,hasUnit only Mile,).
+predicate(MileSquared,SubClassOf,standardFor only).
+predicate(MileSquared,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(MileSquared,SubClassOf,hasPower value 2).
+predicate(Millibar,is,Class).
+predicate(Millibar,EquivalentTo,Hectopascal).
+predicate(Millibar,SubClassOf,BaseUnit,).
+predicate(Millibar,SubClassOf,standardFor only).
+predicate(Millibar,SubClassOf,(Measurement and (ofCharacteristic only Pressure))).
+predicate(Milligram,is,Class).
+predicate(Milligram,SubClassOf,BaseUnit,).
+predicate(Milligram,SubClassOf,standardFor only).
+predicate(Milligram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(MilligramPerLiter,is,Class).
+predicate(MilligramPerLiter,SubClassOf,CompositeUnit,).
+predicate(MilligramPerLiter,SubClassOf,hasUnit some Milligram,).
+predicate(MilligramPerLiter,SubClassOf,hasUnit some).
+predicate(MilligramPerLiter,SubClassOf,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),).
+predicate(MilligramPerLiter,SubClassOf,standardFor only).
+predicate(MilligramPerLiter,SubClassOf,(Measurement and (ofCharacteristic only MassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(MilligramPerMeterCubed,is,Class).
+predicate(MilligramPerMeterCubed,SubClassOf,CompositeUnit,).
+predicate(MilligramPerMeterCubed,SubClassOf,hasUnit some Milligram,).
+predicate(MilligramPerMeterCubed,SubClassOf,hasUnit some).
+predicate(MilligramPerMeterCubed,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),).
+predicate(MilligramPerMeterCubed,SubClassOf,standardFor only).
+predicate(MilligramPerMeterCubed,SubClassOf,(Measurement and (ofCharacteristic only MassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(MilligramPerMeterCubedPerDay,is,Class).
+predicate(MilligramPerMeterCubedPerDay,SubClassOf,CompositeUnit,).
+predicate(MilligramPerMeterCubedPerDay,SubClassOf,hasUnit some Milligram,).
+predicate(MilligramPerMeterCubedPerDay,SubClassOf,hasUnit some).
+predicate(MilligramPerMeterCubedPerDay,SubClassOf,(DerivedUnit and (hasUnit only Day) and (hasPower value -1)),).
+predicate(MilligramPerMeterCubedPerDay,SubClassOf,hasUnit some).
+predicate(MilligramPerMeterCubedPerDay,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),).
+predicate(MilligramPerMeterCubedPerDay,SubClassOf,standardFor only).
+predicate(MilligramPerMeterCubedPerDay,SubClassOf,(Measurement and (ofCharacteristic only VolumetricMassDensityRate)),).
+predicate(Thing,is,hasUnit exactly 3 www.w3.org/2002/07/#).
+predicate(MilligramPerMeterSquaredPerDay,is,Class).
+predicate(MilligramPerMeterSquaredPerDay,SubClassOf,CompositeUnit,).
+predicate(MilligramPerMeterSquaredPerDay,SubClassOf,hasUnit some Milligram,).
+predicate(MilligramPerMeterSquaredPerDay,SubClassOf,hasUnit some).
+predicate(MilligramPerMeterSquaredPerDay,SubClassOf,(DerivedUnit and (hasUnit only Day) and (hasPower value -1)),).
+predicate(MilligramPerMeterSquaredPerDay,SubClassOf,hasUnit some).
+predicate(MilligramPerMeterSquaredPerDay,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),).
+predicate(MilligramPerMeterSquaredPerDay,SubClassOf,standardFor only).
+predicate(MilligramPerMeterSquaredPerDay,SubClassOf,(Measurement and (ofCharacteristic only ArealMassDensityRate)),).
+predicate(Thing,is,hasUnit exactly 3 www.w3.org/2002/07/#).
+predicate(Millihertz,is,Class).
+predicate(Millihertz,SubClassOf,DerivedUnit,).
+predicate(Millihertz,SubClassOf,hasUnit only Millisecond,).
+predicate(Millihertz,SubClassOf,standardFor only).
+predicate(Millihertz,SubClassOf,(Measurement and (ofCharacteristic only Frequency)),).
+predicate(Millihertz,SubClassOf,hasPower value -1).
+predicate(Milliliter,is,Class).
+predicate(Milliliter,EquivalentTo,CentimeterCubed).
+predicate(Milliliter,SubClassOf,DerivedUnit,).
+predicate(Milliliter,SubClassOf,hasUnit only Centimeter,).
+predicate(Milliliter,SubClassOf,standardFor only).
+predicate(Milliliter,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(Milliliter,SubClassOf,hasPower value 3).
+predicate(MilliliterPerLIter,is,Class).
+predicate(MilliliterPerLIter,SubClassOf,CompositeUnit,).
+predicate(MilliliterPerLIter,SubClassOf,hasUnit some Milliliter,).
+predicate(MilliliterPerLIter,SubClassOf,hasUnit some).
+predicate(MilliliterPerLIter,SubClassOf,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),).
+predicate(MilliliterPerLIter,SubClassOf,standardFor only).
+predicate(MilliliterPerLIter,SubClassOf,(Measurement and (ofCharacteristic only Proportion)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(Millimeter,is,Class).
+predicate(Millimeter,SubClassOf,BaseUnit,).
+predicate(Millimeter,SubClassOf,standardFor only).
+predicate(Millimeter,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(MillimeterSquared,is,Class).
+predicate(MillimeterSquared,SubClassOf,DerivedUnit,).
+predicate(MillimeterSquared,SubClassOf,hasUnit only Millimeter,).
+predicate(MillimeterSquared,SubClassOf,standardFor only).
+predicate(MillimeterSquared,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(MillimeterSquared,SubClassOf,hasPower value 2).
+predicate(MillimolePerLiter,is,Class).
+predicate(MillimolePerLiter,SubClassOf,CompositeUnit,).
+predicate(MillimolePerLiter,SubClassOf,standardFor only).
+predicate(MillimolePerLiter,SubClassOf,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))).
+predicate(MillimolePerMeterCubed,is,Class).
+predicate(MillimolePerMeterCubed,SubClassOf,CompositeUnit,).
+predicate(MillimolePerMeterCubed,SubClassOf,standardFor only).
+predicate(MillimolePerMeterCubed,SubClassOf,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))).
+predicate(Millisecond,is,Class).
+predicate(Millisecond,SubClassOf,BaseUnit,).
+predicate(Millisecond,SubClassOf,standardFor only).
+predicate(Millisecond,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(MillisiemensPerMeter,is,Class).
+predicate(MillisiemensPerMeter,SubClassOf,CompositeUnit,).
+predicate(MillisiemensPerMeter,SubClassOf,standardFor only).
+predicate(MillisiemensPerMeter,SubClassOf,(Measurement and (ofCharacteristic only Conductivity))).
+predicate(Minute,is,Class).
+predicate(Minute,SubClassOf,BaseUnit,).
+predicate(Minute,SubClassOf,standardFor only).
+predicate(Minute,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Mole,is,Class).
+predicate(Mole,SubClassOf,BaseUnit,).
+predicate(Mole,SubClassOf,standardFor only).
+predicate(Mole,SubClassOf,(Measurement and (ofCharacteristic only Amount))).
+predicate(MolePerLiter,is,Class).
+predicate(MolePerLiter,SubClassOf,CompositeUnit,).
+predicate(MolePerLiter,SubClassOf,hasUnit some Mole,).
+predicate(MolePerLiter,SubClassOf,hasUnit some).
+predicate(MolePerLiter,SubClassOf,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),).
+predicate(MolePerLiter,SubClassOf,standardFor only).
+predicate(MolePerLiter,SubClassOf,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(MolePerMeterCubed,is,Class).
+predicate(MolePerMeterCubed,SubClassOf,CompositeUnit,).
+predicate(MolePerMeterCubed,SubClassOf,hasUnit some Mole,).
+predicate(MolePerMeterCubed,SubClassOf,hasUnit some).
+predicate(MolePerMeterCubed,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),).
+predicate(MolePerMeterCubed,SubClassOf,standardFor only).
+predicate(MolePerMeterCubed,SubClassOf,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(Nanogram,is,Class).
+predicate(Nanogram,SubClassOf,BaseUnit,).
+predicate(Nanogram,SubClassOf,standardFor only).
+predicate(Nanogram,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(NanogramPerLiter,is,Class).
+predicate(NanogramPerLiter,SubClassOf,CompositeUnit,).
+predicate(NanogramPerLiter,SubClassOf,hasUnit some Nanogram,).
+predicate(NanogramPerLiter,SubClassOf,hasUnit some).
+predicate(NanogramPerLiter,SubClassOf,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),).
+predicate(NanogramPerLiter,SubClassOf,standardFor only).
+predicate(NanogramPerLiter,SubClassOf,(Measurement and (ofCharacteristic only MassDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(Nanometer,is,Class).
+predicate(Nanometer,SubClassOf,BaseUnit,).
+predicate(Nanometer,SubClassOf,standardFor only).
+predicate(Nanometer,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(NanomolePerLiter,is,Class).
+predicate(NanomolePerLiter,SubClassOf,CompositeUnit,).
+predicate(NanomolePerLiter,SubClassOf,standardFor only).
+predicate(NanomolePerLiter,SubClassOf,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))).
+predicate(Nanosecond,is,Class).
+predicate(Nanosecond,SubClassOf,BaseUnit,).
+predicate(Nanosecond,SubClassOf,standardFor only).
+predicate(Nanosecond,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(NauticalMile,is,Class).
+predicate(NauticalMile,SubClassOf,BaseUnit,).
+predicate(NauticalMile,SubClassOf,standardFor only).
+predicate(NauticalMile,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(Newton,is,Class).
+predicate(Newton,SubClassOf,CompositeUnit,).
+predicate(Newton,SubClassOf,hasUnit some Kilogram,).
+predicate(Newton,SubClassOf,hasUnit some).
+predicate(Newton,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -1)),).
+predicate(Newton,SubClassOf,hasUnit some).
+predicate(Newton,SubClassOf,(DerivedUnit and (hasUnit only Second) and (hasPower value -2)),).
+predicate(Newton,SubClassOf,standardFor only).
+predicate(Newton,SubClassOf,(Measurement and (ofCharacteristic only Force)),).
+predicate(Thing,is,hasUnit exactly 3 www.w3.org/2002/07/#).
+predicate(NominalDay,is,Class).
+predicate(NominalDay,SubClassOf,BaseUnit,).
+predicate(NominalDay,SubClassOf,standardFor only).
+predicate(NominalDay,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(NominalHour,is,Class).
+predicate(NominalHour,SubClassOf,BaseUnit,).
+predicate(NominalHour,SubClassOf,standardFor only).
+predicate(NominalHour,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(NominalLeapYear,is,Class).
+predicate(NominalLeapYear,SubClassOf,BaseUnit,).
+predicate(NominalLeapYear,SubClassOf,standardFor only).
+predicate(NominalLeapYear,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(NominalMinute,is,Class).
+predicate(NominalMinute,SubClassOf,BaseUnit,).
+predicate(NominalMinute,SubClassOf,standardFor only).
+predicate(NominalMinute,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(NominalWeek,is,Class).
+predicate(NominalWeek,SubClassOf,BaseUnit,).
+predicate(NominalWeek,SubClassOf,standardFor only).
+predicate(NominalWeek,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(NominalYear,is,Class).
+predicate(NominalYear,SubClassOf,BaseUnit,).
+predicate(NominalYear,SubClassOf,standardFor only).
+predicate(NominalYear,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Number,is,Class).
+predicate(Number,SubClassOf,BaseUnit,).
+predicate(Number,SubClassOf,standardFor only).
+predicate(Number,SubClassOf,(Measurement and (ofCharacteristic only Count))).
+predicate(NumberPerMeterSquared,is,Class).
+predicate(NumberPerMeterSquared,SubClassOf,CompositeUnit,).
+predicate(NumberPerMeterSquared,SubClassOf,hasUnit some Number,).
+predicate(NumberPerMeterSquared,SubClassOf,hasUnit some).
+predicate(NumberPerMeterSquared,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),).
+predicate(NumberPerMeterSquared,SubClassOf,standardFor only).
+predicate(NumberPerMeterSquared,SubClassOf,(Measurement and (ofCharacteristic only ArealDensity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(PartPerThousand,is,Class).
+predicate(PartPerThousand,SubClassOf,BaseUnit,).
+predicate(PartPerThousand,SubClassOf,standardFor only).
+predicate(PartPerThousand,SubClassOf,(Measurement and (ofCharacteristic only Proportion))).
+predicate(Pascal,is,Class).
+predicate(Pascal,SubClassOf,CompositeUnit,).
+predicate(Pascal,SubClassOf,hasUnit some Kilogram,).
+predicate(Pascal,SubClassOf,hasUnit some).
+predicate(Pascal,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -1)),).
+predicate(Pascal,SubClassOf,hasUnit some).
+predicate(Pascal,SubClassOf,(DerivedUnit and (hasUnit only Second) and (hasPower value -2)),).
+predicate(Pascal,SubClassOf,standardFor only).
+predicate(Pascal,SubClassOf,(Measurement and (ofCharacteristic only Pressure)),).
+predicate(Thing,is,hasUnit exactly 3 www.w3.org/2002/07/#).
+predicate(Percent,is,Class).
+predicate(Percent,SubClassOf,BaseUnit,).
+predicate(Percent,SubClassOf,standardFor only).
+predicate(Percent,SubClassOf,(Measurement and (ofCharacteristic only Proportion))).
+predicate(Pint,is,Class).
+predicate(Pint,SubClassOf,DerivedUnit,).
+predicate(Pint,SubClassOf,hasUnit only).
+predicate(Pint,SubClassOf,(BaseUnit and (standardFor only).
+predicate(Pint,SubClassOf,(Measurement and (ofCharacteristic only Length)))),).
+predicate(Pint,SubClassOf,standardFor only).
+predicate(Pint,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(Pint,SubClassOf,hasPower value 3).
+predicate(Pound,is,Class).
+predicate(Pound,SubClassOf,BaseUnit,).
+predicate(Pound,SubClassOf,standardFor only).
+predicate(Pound,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(PracticalSalinityUnit,is,Class).
+predicate(PracticalSalinityUnit,SubClassOf,Index).
+predicate(Quart,is,Class).
+predicate(Quart,SubClassOf,DerivedUnit,).
+predicate(Quart,SubClassOf,hasUnit only).
+predicate(Quart,SubClassOf,(BaseUnit and (standardFor only).
+predicate(Quart,SubClassOf,(Measurement and (ofCharacteristic only Length)))),).
+predicate(Quart,SubClassOf,standardFor only).
+predicate(Quart,SubClassOf,(Measurement and (ofCharacteristic only Volume)),).
+predicate(Quart,SubClassOf,hasPower value 3).
+predicate(Radian,is,Class).
+predicate(Radian,SubClassOf,BaseUnit,).
+predicate(Radian,SubClassOf,standardFor only).
+predicate(Radian,SubClassOf,(Measurement and (ofCharacteristic only Angle))).
+predicate(ReciprocalMeter,is,Class).
+predicate(ReciprocalMeter,SubClassOf,DerivedUnit,).
+predicate(ReciprocalMeter,SubClassOf,hasUnit only Meter,).
+predicate(ReciprocalMeter,SubClassOf,standardFor only).
+predicate(ReciprocalMeter,SubClassOf,(Measurement and (ofCharacteristic only WaveNumber)),).
+predicate(ReciprocalMeter,SubClassOf,hasPower value -1).
+predicate(Second,is,Class).
+predicate(Second,SubClassOf,BaseUnit,).
+predicate(Second,SubClassOf,standardFor only).
+predicate(Second,SubClassOf,(Measurement and (ofCharacteristic only Time))).
+predicate(Siemens,is,Class).
+predicate(Siemens,SubClassOf,DerivedUnit,).
+predicate(Siemens,SubClassOf,standardFor only).
+predicate(Siemens,SubClassOf,(Measurement and (ofCharacteristic only Conductance))).
+predicate(SiemensPerMeter,is,Class).
+predicate(SiemensPerMeter,SubClassOf,CompositeUnit,).
+predicate(SiemensPerMeter,SubClassOf,hasUnit some Siemens,).
+predicate(SiemensPerMeter,SubClassOf,hasUnit some).
+predicate(SiemensPerMeter,SubClassOf,(DerivedUnit and (hasUnit only Meter) and (hasPower value -1)),).
+predicate(SiemensPerMeter,SubClassOf,standardFor only).
+predicate(SiemensPerMeter,SubClassOf,(Measurement and (ofCharacteristic only Conductivity)),).
+predicate(Thing,is,hasUnit exactly 2 www.w3.org/2002/07/#).
+predicate(Ton,is,Class).
+predicate(Ton,SubClassOf,BaseUnit,).
+predicate(Ton,SubClassOf,standardFor only).
+predicate(Ton,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(Tonne,is,Class).
+predicate(Tonne,SubClassOf,BaseUnit,).
+predicate(Tonne,SubClassOf,standardFor only).
+predicate(Tonne,SubClassOf,(Measurement and (ofCharacteristic only Mass))).
+predicate(Volt,is,Class).
+predicate(Volt,SubClassOf,CompositeUnit,).
+predicate(Volt,SubClassOf,standardFor only).
+predicate(Volt,SubClassOf,(Measurement and (ofCharacteristic only Force))).
+predicate(WattPerMeterSquared,is,Class).
+predicate(WattPerMeterSquared,SubClassOf,CompositeUnit,).
+predicate(WattPerMeterSquared,SubClassOf,standardFor only).
+predicate(WattPerMeterSquared,SubClassOf,(Measurement and (ofCharacteristic only Irradiance))).
+predicate(WattPerMeterSquaredPerSteradian,is,Class).
+predicate(WattPerMeterSquaredPerSteradian,SubClassOf,CompositeUnit,).
+predicate(WattPerMeterSquaredPerSteradian,SubClassOf,standardFor only).
+predicate(WattPerMeterSquaredPerSteradian,SubClassOf,(Measurement and (ofCharacteristic only Radiance))).
+predicate(Yard,is,Class).
+predicate(Yard,SubClassOf,BaseUnit,).
+predicate(Yard,SubClassOf,standardFor only).
+predicate(Yard,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(YardIndian,is,Class).
+predicate(YardIndian,SubClassOf,BaseUnit,).
+predicate(YardIndian,SubClassOf,standardFor only).
+predicate(YardIndian,SubClassOf,(Measurement and (ofCharacteristic only Length))).
+predicate(YardSquared,is,Class).
+predicate(YardSquared,SubClassOf,DerivedUnit,).
+predicate(YardSquared,SubClassOf,hasUnit only Yard,).
+predicate(YardSquared,SubClassOf,standardFor only).
+predicate(YardSquared,SubClassOf,(Measurement and (ofCharacteristic only Area)),).
+predicate(YardSquared,SubClassOf,hasPower value 2).
+predicate(www.w3.org/2002/07/#,is,Class).

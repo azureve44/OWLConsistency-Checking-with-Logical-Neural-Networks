@@ -1,0 +1,219 @@
+predicate(integer,is,Datatype).
+predicate(string,is,Datatype).
+predicate(etapa_adherencia_identificada,is,ObjectProperty).
+predicate(tiene_estilo_tipo,is,ObjectProperty).
+predicate(tiene_grado_objetividad_tipo,is,ObjectProperty).
+predicate(tiene_presencialidad_tipo,is,ObjectProperty).
+predicate(validacion,is,DataProperty).
+predicate(valor_adh_ASRQ,is,DataProperty).
+predicate(valor_adh_BMQ,is,DataProperty).
+predicate(valor_adh_Batalla,is,DataProperty).
+predicate(valor_adh_Bogus-Pipeline,is,DataProperty).
+predicate(valor_adh_ESPA,is,DataProperty).
+predicate(valor_adh_HaynesSackett,is,DataProperty).
+predicate(valor_adh_Hermes,is,DataProperty).
+predicate(valor_adh_MAQ,is,DataProperty).
+predicate(valor_adh_MARS-10,is,DataProperty).
+predicate(valor_adh_SMAQ_pregunta_1,is,DataProperty).
+predicate(valor_adh_SMAQ_pregunta_2,is,DataProperty).
+predicate(valor_adh_SMAQ_pregunta_3,is,DataProperty).
+predicate(valor_adh_SMAQ_pregunta_4,is,DataProperty).
+predicate(valor_adh_SMAQ_pregunta_5,is,DataProperty).
+predicate(valor_adh_SMAQ_pregunta_6,is,DataProperty).
+predicate(ARMS,is,Class).
+predicate(ARMS,SubClassOf,Cuestionarios_y_escalas,).
+predicate(ARMS,SubClassOf,etapa_adherencia_identificada some).
+predicate(ARMS,SubClassOf,(F2_Implementacion or F3_Discontinuacion),).
+predicate(ARMS,SubClassOf,validacion exactly 1 {"Si"}).
+predicate(ASRQ,is,Class).
+predicate(ASRQ,EquivalentTo,Insuficiente_adh_ASRQ_nivel3 or Insuficiente_adh_ASRQ_nivel4 or Insuficiente_adh_ASRQ_nivel5 or Insuficiente_adh_ASRQ_nivel6 or Suficiente_adh_ASRQ_nivel1 or Suficiente_adh_ASRQ_nivel2).
+predicate(ASRQ,SubClassOf,Cuestionarios_y_escalas,).
+predicate(ASRQ,SubClassOf,etapa_adherencia_identificada only F2_Implementacion,).
+predicate(ASRQ,SubClassOf,validacion exactly 1 {"Si"},).
+predicate(ASRQ,SubClassOf,valor_adh_ASRQ exactly 1 integer).
+predicate(Autoevaluaciones,is,Class).
+predicate(Autoevaluaciones,SubClassOf,Indicadores,).
+predicate(Autoevaluaciones,SubClassOf,tiene_estilo_tipo only Indirecto,).
+predicate(Autoevaluaciones,SubClassOf,tiene_grado_objetividad_tipo only Subjetivo).
+predicate(Autoevaluaciones,DisjointWith,F_Soporte).
+predicate(BBQ,is,Class).
+predicate(BBQ,SubClassOf,Cuestionarios_y_escalas,).
+predicate(BBQ,SubClassOf,validacion exactly 1 {"Si"}).
+predicate(BMQ,is,Class).
+predicate(BMQ,EquivalentTo,Insuficiente_adh_BMQ or Suficiente_adh_BMQ).
+predicate(BMQ,SubClassOf,Cuestionarios_y_escalas,).
+predicate(BMQ,SubClassOf,etapa_adherencia_identificada only F2_Implementacion,).
+predicate(BMQ,SubClassOf,tiene_estilo_tipo only Indirecto,).
+predicate(BMQ,SubClassOf,validacion exactly 1 {"Si"},).
+predicate(BMQ,SubClassOf,valor_adh_BMQ exactly 1 integer).
+predicate(Batalla,is,Class).
+predicate(Batalla,EquivalentTo,Insuficiente_adh_Batalla or Suficiente_adh_Batalla).
+predicate(Batalla,SubClassOf,Cuestionarios_y_escalas,).
+predicate(Batalla,SubClassOf,tiene_estilo_tipo only Indirecto,).
+predicate(Batalla,SubClassOf,validacion exactly 1 {"No"}).
+predicate(Bogus_pipeline,is,Class).
+predicate(Bogus_pipeline,EquivalentTo,Insuficiente_adh_bogus_pipeline or Suficiente_adh_bogus_pipeline).
+predicate(Bogus_pipeline,SubClassOf,Cuestionarios_y_escalas,).
+predicate(Bogus_pipeline,SubClassOf,validacion exactly 1 {"No"},).
+predicate(Bogus_pipeline,SubClassOf,valor_adh_Bogus-Pipeline exactly 1 string).
+predicate(Cuestionarios_y_escalas,is,Class).
+predicate(Cuestionarios_y_escalas,SubClassOf,Autoevaluaciones).
+predicate(Diario,is,Class).
+predicate(Diario,SubClassOf,Autoevaluaciones).
+predicate(ESPA,is,Class).
+predicate(ESPA,EquivalentTo,Insuficiente_adh_ESPA or Suficiente_adh_ESPA).
+predicate(ESPA,SubClassOf,Cuestionarios_y_escalas,).
+predicate(ESPA,SubClassOf,tiene_estilo_tipo only Indirecto,).
+predicate(ESPA,SubClassOf,validacion exactly 1 {"Sí"},).
+predicate(ESPA,SubClassOf,valor_adh_ESPA exactly 1 integer).
+predicate(F2_Implementacion,is,Class).
+predicate(F3_Discontinuacion,is,Class).
+predicate(F_Soporte,is,Class).
+predicate(F_Soporte,DisjointWith,Autoevaluaciones).
+predicate(Haynes-Sackett,is,Class).
+predicate(Haynes-Sackett,EquivalentTo,Insuficiente_adh_Haynes_Sackett or Suficiente_adh_Haynes-Sackett).
+predicate(Haynes-Sackett,SubClassOf,Cuestionarios_y_escalas,).
+predicate(Haynes-Sackett,SubClassOf,tiene_estilo_tipo only Indirecto,).
+predicate(Haynes-Sackett,SubClassOf,tiene_presencialidad_tipo exactly 1 (No_presencial or Presencial)).
+predicate(Hermes,is,Class).
+predicate(Hermes,EquivalentTo,Insuficiente_adh_Hermes or Suficiente_adh_Hermes).
+predicate(Hermes,SubClassOf,Cuestionarios_y_escalas,).
+predicate(Hermes,SubClassOf,tiene_estilo_tipo only Indirecto,).
+predicate(Hermes,SubClassOf,valor_adh_Hermes exactly 1 integer).
+predicate(Hill-Bone,is,Class).
+predicate(Hill-Bone,SubClassOf,Cuestionarios_y_escalas,).
+predicate(Hill-Bone,SubClassOf,etapa_adherencia_identificada only F2_Implementacion,).
+predicate(Hill-Bone,SubClassOf,validacion exactly 1 {"Sí"}).
+predicate(Indicadores,is,Class).
+predicate(Indirecto,is,Class).
+predicate(Insuficiente_adh_ASRQ_nivel3,is,Class).
+predicate(Insuficiente_adh_ASRQ_nivel3,EquivalentTo,valor_adh_ASRQ value 3).
+predicate(Insuficiente_adh_ASRQ_nivel3,SubClassOf,ASRQ).
+predicate(Insuficiente_adh_ASRQ_nivel4,is,Class).
+predicate(Insuficiente_adh_ASRQ_nivel4,EquivalentTo,valor_adh_ASRQ value 4).
+predicate(Insuficiente_adh_ASRQ_nivel4,SubClassOf,ASRQ).
+predicate(Insuficiente_adh_ASRQ_nivel5,is,Class).
+predicate(Insuficiente_adh_ASRQ_nivel5,EquivalentTo,valor_adh_ASRQ value 5).
+predicate(Insuficiente_adh_ASRQ_nivel5,SubClassOf,ASRQ).
+predicate(Insuficiente_adh_ASRQ_nivel6,is,Class).
+predicate(Insuficiente_adh_ASRQ_nivel6,EquivalentTo,valor_adh_ASRQ value 6).
+predicate(Insuficiente_adh_ASRQ_nivel6,SubClassOf,ASRQ).
+predicate(Insuficiente_adh_BMQ,is,Class).
+predicate(valor_adh_BMQ exactly 1 ( not (integer[= 12]) and integer[= 1]),is,EquivalentTo).
+predicate(valor_adh_BMQ exactly 1 ( not (integer[= 12]) and integer[= 1]),SubClassOf,BMQ).
+predicate(Insuficiente_adh_Batalla,is,Class).
+predicate(Insuficiente_adh_Batalla,EquivalentTo,valor_adh_Batalla exactly 1 {"Falla"}).
+predicate(Insuficiente_adh_Batalla,SubClassOf,Batalla).
+predicate(Insuficiente_adh_ESPA,is,Class).
+predicate(Insuficiente_adh_ESPA,EquivalentTo,valor_adh_ESPA exactly 1 integer[< 5]).
+predicate(Insuficiente_adh_ESPA,SubClassOf,ESPA).
+predicate(Insuficiente_adh_Haynes_Sackett,is,Class).
+predicate(Insuficiente_adh_Haynes_Sackett,EquivalentTo,valor_adh_HaynesSackett exactly 1 {"falla"}).
+predicate(Insuficiente_adh_Haynes_Sackett,SubClassOf,Haynes-Sackett).
+predicate(Insuficiente_adh_Hermes,is,Class).
+predicate(Insuficiente_adh_Hermes,EquivalentTo,valor_adh_Hermes exactly 1 integer[< 3]).
+predicate(Insuficiente_adh_Hermes,SubClassOf,Hermes).
+predicate(Insuficiente_adh_MAQ,is,Class).
+predicate(valor_adh_MAQ exactly 1 ( not (integer[= 4]) and integer[= 3]),is,EquivalentTo).
+predicate(valor_adh_MAQ exactly 1 ( not (integer[= 4]) and integer[= 3]),SubClassOf,MAQ).
+predicate(Insuficiente_adh_MARS,is,Class).
+predicate(Insuficiente_adh_MARS,EquivalentTo,valor_adh_MARS-10 exactly 1  not (integer[= 6])).
+predicate(Insuficiente_adh_MARS,SubClassOf,MARS).
+predicate(Insuficiente_adh_SMAQ,is,Class).
+predicate(Insuficiente_adh_SMAQ,EquivalentTo,(valor_adh_SMAQ_pregunta_1 exactly 1 {"Sí"}) or (valor_adh_SMAQ_pregunta_2 exactly 1 {"No"}) or (valor_adh_SMAQ_pregunta_3 exactly 1 {"Sí"}) or (valor_adh_SMAQ_pregunta_4 exactly 1 {"Sí"}) or (valor_adh_SMAQ_pregunta_5 exactly 1 ({"C"} or {"D"} or {"E"})) or (valor_adh_SMAQ_pregunta_6 exactly 1 integer[ 2])).
+predicate(Insuficiente_adh_SMAQ,SubClassOf,SMAQ).
+predicate(Insuficiente_adh_bogus_pipeline,is,Class).
+predicate(Insuficiente_adh_bogus_pipeline,EquivalentTo,valor_adh_Bogus-Pipeline value "no acepta").
+predicate(Insuficiente_adh_bogus_pipeline,SubClassOf,Bogus_pipeline).
+predicate(Llamada_telefonica,is,Class).
+predicate(Llamada_telefonica,SubClassOf,Autoevaluaciones).
+predicate(MAQ,is,Class).
+predicate(MAQ,EquivalentTo,Insuficiente_adh_MAQ or Suficiente_adh_MAQ).
+predicate(MAQ,SubClassOf,Cuestionarios_y_escalas,).
+predicate(MAQ,SubClassOf,etapa_adherencia_identificada some).
+predicate(MAQ,SubClassOf,(F2_Implementacion or F3_Discontinuacion),).
+predicate(MAQ,SubClassOf,validacion exactly 1 {"sí"},).
+predicate(MAQ,SubClassOf,valor_adh_MAQ exactly 1 integer).
+predicate(MARS,is,Class).
+predicate(MARS,EquivalentTo,Insuficiente_adh_MARS or Suficiente_adh_MARS).
+predicate(MARS,SubClassOf,Cuestionarios_y_escalas,).
+predicate(MARS,SubClassOf,etapa_adherencia_identificada some).
+predicate(MARS,SubClassOf,(F2_Implementacion or F3_Discontinuacion),).
+predicate(MARS,SubClassOf,validacion exactly 1 {"Sí"},).
+predicate(MARS,SubClassOf,valor_adh_MARS-10 exactly 1 integer).
+predicate(MMAS-8,is,Class).
+predicate(MMAS-8,SubClassOf,Cuestionarios_y_escalas,).
+predicate(MMAS-8,SubClassOf,etapa_adherencia_identificada some).
+predicate(MMAS-8,SubClassOf,(F2_Implementacion or F3_Discontinuacion),).
+predicate(MMAS-8,SubClassOf,validacion exactly 1 {"Sí"}).
+predicate(MUAH,is,Class).
+predicate(MUAH,SubClassOf,Cuestionarios_y_escalas,).
+predicate(MUAH,SubClassOf,etapa_adherencia_identificada only F2_Implementacion,).
+predicate(MUAH,SubClassOf,validacion exactly 1 {"Sí"}).
+predicate(No_presencial,is,Class).
+predicate(Porcentaje_adh_30-64,is,Class).
+predicate(Porcentaje_adh_30-64,EquivalentTo,valor_adh_SMAQ_pregunta_5 exactly 1 {"D"}).
+predicate(Porcentaje_adh_30-64,SubClassOf,SMAQ).
+predicate(Porcentaje_adh_65-84,is,Class).
+predicate(Porcentaje_adh_65-84,EquivalentTo,valor_adh_SMAQ_pregunta_5 exactly 1 {"C"}).
+predicate(Porcentaje_adh_65-84,SubClassOf,SMAQ).
+predicate(Porcentaje_adh_85-94,is,Class).
+predicate(Porcentaje_adh_85-94,EquivalentTo,valor_adh_SMAQ_pregunta_5 exactly 1 {"B"}).
+predicate(Porcentaje_adh_85-94,SubClassOf,SMAQ).
+predicate(Porcentaje_adh_95-100,is,Class).
+predicate(Porcentaje_adh_95-100,EquivalentTo,valor_adh_SMAQ_pregunta_5 exactly 1 {"A"}).
+predicate(Porcentaje_adh_95-100,SubClassOf,SMAQ).
+predicate(Porcentaje_adh_inferior_30,is,Class).
+predicate(Porcentaje_adh_inferior_30,EquivalentTo,valor_adh_SMAQ_pregunta_5 exactly 1 {"E"}).
+predicate(Porcentaje_adh_inferior_30,SubClassOf,SMAQ).
+predicate(Presencial,is,Class).
+predicate(SDSCA,is,Class).
+predicate(SDSCA,SubClassOf,Cuestionarios_y_escalas,).
+predicate(SDSCA,SubClassOf,validacion exactly 1 {"Sí"}).
+predicate(SEAMS,is,Class).
+predicate(SEAMS,SubClassOf,Cuestionarios_y_escalas,).
+predicate(SEAMS,SubClassOf,validacion exactly 1 {"Sí"}).
+predicate(SMAQ,is,Class).
+predicate(SMAQ,EquivalentTo,Insuficiente_adh_SMAQ or Suficiente_adh_SMAQ).
+predicate(SMAQ,SubClassOf,Cuestionarios_y_escalas,).
+predicate(SMAQ,SubClassOf,etapa_adherencia_identificada some).
+predicate(SMAQ,SubClassOf,(F2_Implementacion or F3_Discontinuacion),).
+predicate(SMAQ,SubClassOf,tiene_estilo_tipo only Indirecto,).
+predicate(SMAQ,SubClassOf,validacion exactly 1 {"Sí"}).
+predicate(Sistema_respuesta_por_voz,is,Class).
+predicate(Sistema_respuesta_por_voz,SubClassOf,Autoevaluaciones).
+predicate(Subjetivo,is,Class).
+predicate(Suficiente_adh_ASRQ_nivel1,is,Class).
+predicate(Suficiente_adh_ASRQ_nivel1,EquivalentTo,valor_adh_ASRQ value 1).
+predicate(Suficiente_adh_ASRQ_nivel1,SubClassOf,ASRQ).
+predicate(Suficiente_adh_ASRQ_nivel2,is,Class).
+predicate(Suficiente_adh_ASRQ_nivel2,EquivalentTo,valor_adh_ASRQ value 2).
+predicate(Suficiente_adh_ASRQ_nivel2,SubClassOf,ASRQ).
+predicate(Suficiente_adh_BMQ,is,Class).
+predicate(Suficiente_adh_BMQ,EquivalentTo,valor_adh_BMQ value 0).
+predicate(Suficiente_adh_BMQ,SubClassOf,BMQ).
+predicate(Suficiente_adh_Batalla,is,Class).
+predicate(Suficiente_adh_Batalla,EquivalentTo,valor_adh_Batalla exactly 1 {"No falla"}).
+predicate(Suficiente_adh_Batalla,SubClassOf,Batalla).
+predicate(Suficiente_adh_ESPA,is,Class).
+predicate(valor_adh_ESPA exactly 1 ( not (integer[ 6]) and integer[= 5]),is,EquivalentTo).
+predicate(valor_adh_ESPA exactly 1 ( not (integer[ 6]) and integer[= 5]),SubClassOf,ESPA).
+predicate(Suficiente_adh_Haynes-Sackett,is,Class).
+predicate(Suficiente_adh_Haynes-Sackett,EquivalentTo,valor_adh_HaynesSackett exactly 1 {"no falla"}).
+predicate(Suficiente_adh_Haynes-Sackett,SubClassOf,Haynes-Sackett).
+predicate(Suficiente_adh_Hermes,is,Class).
+predicate(valor_adh_Hermes exactly 1 ( not (integer[ 4]) and integer[= 3]),is,EquivalentTo).
+predicate(valor_adh_Hermes exactly 1 ( not (integer[ 4]) and integer[= 3]),SubClassOf,Hermes).
+predicate(Suficiente_adh_MAQ,is,Class).
+predicate(Suficiente_adh_MAQ,EquivalentTo,valor_adh_MAQ exactly 1  not (integer[= 3])).
+predicate(Suficiente_adh_MAQ,SubClassOf,MAQ).
+predicate(Suficiente_adh_MARS,is,Class).
+predicate(valor_adh_MARS-10 exactly 1 ( not (integer[ 10]) and integer[= 6]),is,EquivalentTo).
+predicate(valor_adh_MARS-10 exactly 1 ( not (integer[ 10]) and integer[= 6]),SubClassOf,MARS).
+predicate(Suficiente_adh_SMAQ,is,Class).
+predicate(Suficiente_adh_SMAQ,EquivalentTo,(valor_adh_SMAQ_pregunta_1 exactly 1 {"No"}) or (valor_adh_SMAQ_pregunta_2 exactly 1 {"Sí"}) or (valor_adh_SMAQ_pregunta_3 exactly 1 {"No"}) or (valor_adh_SMAQ_pregunta_4 exactly 1 {"No"}) or (valor_adh_SMAQ_pregunta_5 exactly 1 ({"A"} or {"B"})) or (valor_adh_SMAQ_pregunta_6 exactly 1 integer[<= 2])).
+predicate(Suficiente_adh_SMAQ,SubClassOf,SMAQ).
+predicate(Suficiente_adh_bogus_pipeline,is,Class).
+predicate(Suficiente_adh_bogus_pipeline,EquivalentTo,valor_adh_Bogus-Pipeline value "acepta").
+predicate(Suficiente_adh_bogus_pipeline,SubClassOf,Bogus_pipeline).
+predicate(www.w3.org/2002/07/#,is,Class).

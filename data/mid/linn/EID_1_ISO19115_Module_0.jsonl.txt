@@ -1,0 +1,2339 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(anyURI,is,Datatype).
+predicate(boolean,is,Datatype).
+predicate(date,is,Datatype).
+predicate(dateTime,is,Datatype).
+predicate(duration,is,Datatype).
+predicate(float,is,Datatype).
+predicate(int,is,Datatype).
+predicate(string,is,Datatype).
+predicate(accessConstraints,is,ObjectProperty).
+predicate(accessConstraints,Domain,MD_LegalConstraints).
+predicate(accessConstraints,Range,MD_RestrictionCode).
+predicate(address,is,ObjectProperty).
+predicate(address,Characteristics,Functional).
+predicate(address,Domain,CI_Contact).
+predicate(address,Range,CI_Address).
+predicate(applicationSchemaInfo,is,ObjectProperty).
+predicate(applicationSchemaInfo,Domain,MD_Metadata).
+predicate(applicationSchemaInfo,Range,MD_ApplicationSchemaInformation).
+predicate(applicationSchemaName,is,ObjectProperty).
+predicate(applicationSchemaName,Domain,MD_ApplicationSchemaInformation).
+predicate(applicationSchemaName,Range,CI_Citation).
+predicate(attributeDescription,is,ObjectProperty).
+predicate(attributeDescription,Characteristics,Functional).
+predicate(attributeDescription,Domain,MD_CoverageDescription).
+predicate(attributeDescription,Range,RecordType).
+predicate(attributeInstances,is,ObjectProperty).
+predicate(attributeInstances,Characteristics,Functional).
+predicate(attributeInstances,Domain,MD_ScopeDescription).
+predicate(attributeInstances,Range,GF_AttributeType).
+predicate(attributes,is,ObjectProperty).
+predicate(attributes,Characteristics,Functional).
+predicate(attributes,Domain,MD_ScopeDescription).
+predicate(attributes,Range,GF_AttributeType).
+predicate(authority,is,ObjectProperty).
+predicate(authority,Characteristics,Functional).
+predicate(authority,Domain,MD_Identifier).
+predicate(authority,Range,CI_Citation).
+predicate(axisDimensionProperties,is,ObjectProperty).
+predicate(axisDimensionProperties,Domain,MD_GridSpatialRepresentation).
+predicate(axisDimensionProperties,Range,MD_Dimension).
+predicate(axisUnits,is,ObjectProperty).
+predicate(axisUnits,Characteristics,Functional).
+predicate(axisUnits,Domain,MD_EllipsoidParameters).
+predicate(axisUnits,Range,UomLength).
+predicate(cellGeometry,is,ObjectProperty).
+predicate(cellGeometry,Characteristics,Functional).
+predicate(cellGeometry,Domain,MD_GridSpatialRepresentation).
+predicate(cellGeometry,Range,MD_CellGeometryCode).
+predicate(centerPoint,is,ObjectProperty).
+predicate(centerPoint,Characteristics,Functional).
+predicate(centerPoint,Domain,MD_Georectified).
+predicate(centerPoint,Range,GM_Point).
+predicate(citation,is,ObjectProperty).
+predicate(citation,Characteristics,Functional).
+predicate(citation,Domain,MD_Identification).
+predicate(citation,Range,CI_Citation).
+predicate(citedResponsibleParty,is,ObjectProperty).
+predicate(citedResponsibleParty,Domain,CI_Citation).
+predicate(citedResponsibleParty,Range,CI_ResponsibleParty).
+predicate(classification,is,ObjectProperty).
+predicate(classification,Characteristics,Functional).
+predicate(classification,Domain,MD_SecurityConstraints).
+predicate(classification,Range,MD_ClassificationCode).
+predicate(conformanceSpecification,is,ObjectProperty).
+predicate(conformanceSpecification,Characteristics,Functional).
+predicate(conformanceSpecification,Domain,DQ_ConformanceResult).
+predicate(conformanceSpecification,Range,CI_Citation).
+predicate(contact,is,ObjectProperty).
+predicate(contact,Characteristics,Functional).
+predicate(contact,Domain,MD_Metadata).
+predicate(contact,Range,CI_ResponsibleParty).
+predicate(contactInfo,is,ObjectProperty).
+predicate(contactInfo,Characteristics,Functional).
+predicate(contactInfo,Domain,CI_ResponsibleParty).
+predicate(contactInfo,Range,CI_Contact).
+predicate(contentInfo,is,ObjectProperty).
+predicate(contentInfo,Domain,MD_Metadata).
+predicate(contentInfo,Range,MD_ContentInformation).
+predicate(contentType,is,ObjectProperty).
+predicate(contentType,Characteristics,Functional).
+predicate(contentType,Domain,MD_CoverageDescription).
+predicate(contentType,Range,MD_CoverageContentTypeCode).
+predicate(cornerPoints,is,ObjectProperty).
+predicate(cornerPoints,Characteristics,Functional).
+predicate(cornerPoints,Domain,MD_Georectified).
+predicate(cornerPoints,Range,GM_Point).
+predicate(dataExtent,is,ObjectProperty).
+predicate(dataExtent,Domain,MD_DataIdentification).
+predicate(dataExtent,Range,EX_Extent).
+predicate(dataQualityInfo,is,ObjectProperty).
+predicate(dataQualityInfo,Domain,MD_Metadata).
+predicate(dataQualityInfo,Range,DQ_DataQuality).
+predicate(dataType,is,ObjectProperty).
+predicate(dataType,Characteristics,Functional).
+predicate(dataType,Domain,MD_ExtendedElementInformation).
+predicate(dataType,Range,MD_DataTypeCode).
+predicate(datasetCharacterSet,is,ObjectProperty).
+predicate(datasetCharacterSet,Domain,MD_DataIdentification).
+predicate(datasetCharacterSet,Range,MD_CharacterSetCode).
+predicate(dateOfNextUpdate,is,ObjectProperty).
+predicate(dateOfNextUpdate,Characteristics,Functional).
+predicate(dateOfNextUpdate,Domain,MD_MaintenanceInformation).
+predicate(dateType,is,ObjectProperty).
+predicate(dateType,Characteristics,Functional).
+predicate(dateType,Domain,CI_Date).
+predicate(dateType,Range,CI_DateTypeCode).
+predicate(datum,is,ObjectProperty).
+predicate(datum,Characteristics,Functional).
+predicate(datum,Domain,MD_CRS).
+predicate(datum,Range,RS_Identifier).
+predicate(descriptiveKeywords,is,ObjectProperty).
+predicate(descriptiveKeywords,Domain,MD_Identification).
+predicate(descriptiveKeywords,Range,MD_Keywords).
+predicate(dimension,is,ObjectProperty).
+predicate(dimension,Domain,MD_CoverageDescription).
+predicate(dimension,Range,MD_RangeDimension).
+predicate(dimensionName,is,ObjectProperty).
+predicate(dimensionName,Characteristics,Functional).
+predicate(dimensionName,Domain,MD_Dimension).
+predicate(dimensionName,Range,MD_DimensionNameTypeCode).
+predicate(distance,is,ObjectProperty).
+predicate(distance,Characteristics,Functional).
+predicate(distance,Domain,MD_Resolution).
+predicate(distance,Range,Distance).
+predicate(distributionFormat,is,ObjectProperty).
+predicate(distributionFormat,Domain,MD_Distribution).
+predicate(distributionFormat,Range,MD_Format).
+predicate(distributionInfo,is,ObjectProperty).
+predicate(distributionInfo,Characteristics,Functional).
+predicate(distributionInfo,Domain,MD_Metadata).
+predicate(distributionInfo,Range,MD_Distribution).
+predicate(distributionOrderProcess,is,ObjectProperty).
+predicate(distributionOrderProcess,Domain,MD_Distributor).
+predicate(distributionOrderProcess,Range,MD_StandardOrderProcess).
+predicate(distributionTransferOptions,is,ObjectProperty).
+predicate(distributionTransferOptions,Domain,MD_Distributor).
+predicate(distributionTransferOptions,Range,MD_DigitalTransferOptions).
+predicate(distributor,is,ObjectProperty).
+predicate(distributor,Domain,MD_Distribution).
+predicate(distributor,Range,MD_Distributor).
+predicate(distributorContact,is,ObjectProperty).
+predicate(distributorContact,Characteristics,Functional).
+predicate(distributorContact,Domain,MD_Distributor).
+predicate(distributorContact,Range,CI_ResponsibleParty).
+predicate(distributorFormat,is,ObjectProperty).
+predicate(distributorFormat,Domain,MD_Distributor).
+predicate(distributorFormat,Range,MD_Format).
+predicate(eastBoundLongitude,is,ObjectProperty).
+predicate(eastBoundLongitude,Characteristics,Functional).
+predicate(eastBoundLongitude,Domain,EX_GeographicBoundingBox).
+predicate(eastBoundLongitude,Range,Angle).
+predicate(ellipsoid,is,ObjectProperty).
+predicate(ellipsoid,Characteristics,Functional).
+predicate(ellipsoid,Domain,MD_CRS).
+predicate(ellipsoid,Range,RS_Identifier).
+predicate(ellipsoidParameters,is,ObjectProperty).
+predicate(ellipsoidParameters,Characteristics,Functional).
+predicate(ellipsoidParameters,Domain,MD_CRS).
+predicate(ellipsoidParameters,Range,MD_EllipsoidParameters).
+predicate(equivalentScale,is,ObjectProperty).
+predicate(equivalentScale,Characteristics,Functional).
+predicate(equivalentScale,Domain,MD_Resolution).
+predicate(equivalentScale,Range,MD_RepresentativeFraction).
+predicate(evaluationMethodType,is,ObjectProperty).
+predicate(evaluationMethodType,Characteristics,Functional).
+predicate(evaluationMethodType,Domain,DQ_Element).
+predicate(evaluationMethodType,Range,DQ_EvaluationMethodTypeCode).
+predicate(evaluationProcedure,is,ObjectProperty).
+predicate(evaluationProcedure,Characteristics,Functional).
+predicate(evaluationProcedure,Domain,DQ_Element).
+predicate(evaluationProcedure,Range,CI_Citation).
+predicate(exTemp,is,ObjectProperty).
+predicate(exTemp,Characteristics,Functional).
+predicate(exTemp,Domain,EX_TemporalExtent).
+predicate(exTemp,Range,TM_Primitive).
+predicate(extEleSrc,is,ObjectProperty).
+predicate(extEleSrc,Domain,MD_ExtendedElementInformation).
+predicate(extEleSrc,Range,CI_ResponsibleParty).
+predicate(extendedElementInformation,is,ObjectProperty).
+predicate(extendedElementInformation,Domain,MD_MetadataExtentInformation).
+predicate(extendedElementInformation,Range,MD_ExtendedElementInformation).
+predicate(extensionOnLineResource,is,ObjectProperty).
+predicate(extensionOnLineResource,Characteristics,Functional).
+predicate(extensionOnLineResource,Domain,MD_MetadataExtentInformation).
+predicate(extensionOnLineResource,Range,CI_OnlineResource).
+predicate(falseEastingNorthingUnits,is,ObjectProperty).
+predicate(falseEastingNorthingUnits,Characteristics,Functional).
+predicate(falseEastingNorthingUnits,Domain,MD_ProjectionParameters).
+predicate(falseEastingNorthingUnits,Range,UomLength).
+predicate(featureCatalogueCitation,is,ObjectProperty).
+predicate(featureCatalogueCitation,Domain,MD_FeatureCatalogueDescription).
+predicate(featureCatalogueCitation,Range,CI_Citation).
+predicate(featureCatalogueSupplement,is,ObjectProperty).
+predicate(featureCatalogueSupplement,Characteristics,Functional).
+predicate(featureCatalogueSupplement,Domain,MD_ApplicationSchemaInformation).
+predicate(featureCatalogueSupplement,Range,MD_SpatialAttributeSupplement).
+predicate(featureInstances,is,ObjectProperty).
+predicate(featureInstances,Characteristics,Functional).
+predicate(featureInstances,Domain,MD_ScopeDescription).
+predicate(featureInstances,Range,GF_FeatureType).
+predicate(featureTypes,is,ObjectProperty).
+predicate(featureTypes,Domain,MD_FeatureCatalogueDescription).
+predicate(featureTypes,Range,GenericName).
+predicate(features,is,ObjectProperty).
+predicate(features,Characteristics,Functional).
+predicate(features,Domain,MD_ScopeDescription).
+predicate(features,Range,GF_FeatureType).
+predicate(formatDistributor,is,ObjectProperty).
+predicate(formatDistributor,Domain,MD_Format).
+predicate(formatDistributor,Range,MD_Distributor).
+predicate(function,is,ObjectProperty).
+predicate(function,Characteristics,Functional).
+predicate(function,Domain,CI_OnlineResource).
+predicate(function,Range,CI_OnLineFunctionCode).
+predicate(geographicElement,is,ObjectProperty).
+predicate(geographicElement,Domain,EX_Extent).
+predicate(geographicElement,Range,EX_GeographicExtent).
+predicate(geographicIdentifier,is,ObjectProperty).
+predicate(geographicIdentifier,Characteristics,Functional).
+predicate(geographicIdentifier,Domain,EX_GeographicDescription).
+predicate(geographicIdentifier,Range,MD_Identifier).
+predicate(geometricObjectType,is,ObjectProperty).
+predicate(geometricObjectType,Characteristics,Functional).
+predicate(geometricObjectType,Domain,MD_GeometricObjects).
+predicate(geometricObjectType,Range,MD_GeometricObjectTypeCode).
+predicate(geometricObjects,is,ObjectProperty).
+predicate(geometricObjects,Characteristics,Symmetric).
+predicate(geometricObjects,Domain,MD_VectorSpatialRepresentation).
+predicate(geometricObjects,Range,MD_GeometricObjects).
+predicate(graphicOverview,is,ObjectProperty).
+predicate(graphicOverview,Domain,MD_Identification).
+predicate(graphicOverview,Range,MD_BrowseGraphics).
+predicate(hierarchyLevel,is,ObjectProperty).
+predicate(hierarchyLevel,Domain,MD_Metadata).
+predicate(hierarchyLevel,Range,MD_ScopeCode).
+predicate(identificationInfo,is,ObjectProperty).
+predicate(identificationInfo,Domain,MD_Metadata).
+predicate(identificationInfo,Range,MD_Identification).
+predicate(imageQualityCode,is,ObjectProperty).
+predicate(imageQualityCode,Characteristics,Functional).
+predicate(imageQualityCode,Domain,MD_ImageDescription).
+predicate(imageQualityCode,Range,MD_Identifier).
+predicate(imagingCondition,is,ObjectProperty).
+predicate(imagingCondition,Characteristics,Functional).
+predicate(imagingCondition,Domain,MD_ImageDescription).
+predicate(imagingCondition,Range,MD_ImagingConditionCode).
+predicate(level,is,ObjectProperty).
+predicate(level,Domain,DQ_Scope).
+predicate(level,Range,MD_ScopeCode).
+predicate(levelDescription,is,ObjectProperty).
+predicate(levelDescription,Domain,DQ_Scope).
+predicate(levelDescription,Range,MD_ScopeDescription).
+predicate(lineage,is,ObjectProperty).
+predicate(lineage,Characteristics,Functional).
+predicate(lineage,Domain,DQ_DataQuality).
+predicate(lineage,Range,LI_Lineage).
+predicate(maintenanceAndUpdateFrequency,is,ObjectProperty).
+predicate(maintenanceAndUpdateFrequency,Characteristics,Functional).
+predicate(maintenanceAndUpdateFrequency,Domain,MD_MaintenanceInformation).
+predicate(maintenanceAndUpdateFrequency,Range,MD_MaintenanceFrequenceCode).
+predicate(measureIdentification,is,ObjectProperty).
+predicate(measureIdentification,Characteristics,Functional).
+predicate(measureIdentification,Domain,DQ_Element).
+predicate(measureIdentification,Range,MD_Identifier).
+predicate(mediumFormat,is,ObjectProperty).
+predicate(mediumFormat,Domain,MD_Medium).
+predicate(mediumFormat,Range,MD_MediumFormatCode).
+predicate(mediumName,is,ObjectProperty).
+predicate(mediumName,Characteristics,Functional).
+predicate(mediumName,Domain,MD_Medium).
+predicate(mediumName,Range,MD_MediumNameCode).
+predicate(metadataCharacterSet,is,ObjectProperty).
+predicate(metadataCharacterSet,Characteristics,Functional).
+predicate(metadataCharacterSet,Domain,MD_Metadata).
+predicate(metadataCharacterSet,Range,MD_CharacterSetCode).
+predicate(metadataConstraints,is,ObjectProperty).
+predicate(metadataConstraints,Domain,MD_Metadata).
+predicate(metadataConstraints,Range,MD_Constraints).
+predicate(metadataExtentInfo,is,ObjectProperty).
+predicate(metadataExtentInfo,Domain,MD_Metadata).
+predicate(metadataExtentInfo,Range,MD_MetadataExtentInformation).
+predicate(metadataMaintenance,is,ObjectProperty).
+predicate(metadataMaintenance,Characteristics,Functional).
+predicate(metadataMaintenance,Domain,MD_Metadata).
+predicate(metadataMaintenance,Range,MD_MaintenanceInformation).
+predicate(northBoundLatitude,is,ObjectProperty).
+predicate(northBoundLatitude,Characteristics,Functional).
+predicate(northBoundLatitude,Domain,EX_GeographicBoundingBox).
+predicate(northBoundLatitude,Range,Angle).
+predicate(obligation,is,ObjectProperty).
+predicate(obligation,Characteristics,Functional).
+predicate(obligation,Domain,MD_ExtendedElementInformation).
+predicate(obligation,Range,MD_ObligationCode).
+predicate(obliqueLineAzimuthParameter,is,ObjectProperty).
+predicate(obliqueLineAzimuthParameter,Characteristics,Functional).
+predicate(obliqueLineAzimuthParameter,Domain,MD_ProjectionParameters).
+predicate(obliqueLineAzimuthParameter,Range,MD_ObliqueLineAzimuth).
+predicate(obliqueLinePointParameter,is,ObjectProperty).
+predicate(obliqueLinePointParameter,Domain,MD_ProjectionParameters).
+predicate(obliqueLinePointParameter,Range,MD_ObliqueLinePoint).
+predicate(offLine,is,ObjectProperty).
+predicate(offLine,Characteristics,Functional).
+predicate(offLine,Domain,MD_DigitalTransferOptions).
+predicate(offLine,Range,MD_Medium).
+predicate(onLine,is,ObjectProperty).
+predicate(onLine,Domain,MD_DigitalTransferOptions).
+predicate(onLine,Range,CI_OnlineResource).
+predicate(onlineResource,is,ObjectProperty).
+predicate(onlineResource,Characteristics,Functional).
+predicate(onlineResource,Domain,CI_Contact).
+predicate(onlineResource,Range,CI_OnlineResource).
+predicate(parameterCitation,is,ObjectProperty).
+predicate(parameterCitation,Domain,MD_Georeferenceable).
+predicate(parameterCitation,Range,CI_Citation).
+predicate(parameters,is,ObjectProperty).
+predicate(parameters,Characteristics,Functional).
+predicate(parameters,Domain,MD_Georeferenceable).
+predicate(parameters,Range,Record).
+predicate(phone,is,ObjectProperty).
+predicate(phone,Characteristics,Functional).
+predicate(phone,Domain,CI_Contact).
+predicate(phone,Range,CI_Telephone).
+predicate(pointInPixel,is,ObjectProperty).
+predicate(pointInPixel,Characteristics,Functional).
+predicate(pointInPixel,Domain,MD_Georectified).
+predicate(pointInPixel,Range,MD_PixelOrientationCode).
+predicate(pointOfContact,is,ObjectProperty).
+predicate(pointOfContact,Domain,MD_Identification).
+predicate(pointOfContact,Range,CI_ResponsibleParty).
+predicate(polygon,is,ObjectProperty).
+predicate(polygon,Domain,EX_BoundingPolygon).
+predicate(polygon,Range,GM_Object).
+predicate(portrayalCatalogueCitation,is,ObjectProperty).
+predicate(portrayalCatalogueCitation,Domain,MD_PortrayalCatalogueReference).
+predicate(portrayalCatalogueCitation,Range,CI_Citation).
+predicate(portrayalCatalogueInfo,is,ObjectProperty).
+predicate(portrayalCatalogueInfo,Domain,MD_Metadata).
+predicate(portrayalCatalogueInfo,Range,MD_PortrayalCatalogueReference).
+predicate(presentationForm,is,ObjectProperty).
+predicate(presentationForm,Domain,CI_Citation).
+predicate(presentationForm,Range,CI_PresentationFormCode).
+predicate(processStep,is,ObjectProperty).
+predicate(processStep,Domain,LI_Lineage).
+predicate(processStep,Range,LI_ProcessStep).
+predicate(processingLevelCode,is,ObjectProperty).
+predicate(processingLevelCode,Characteristics,Functional).
+predicate(processingLevelCode,Domain,MD_ImageDescription).
+predicate(processingLevelCode,Range,MD_Identifier).
+predicate(processor,is,ObjectProperty).
+predicate(processor,Domain,LI_ProcessStep).
+predicate(processor,Range,CI_ResponsibleParty).
+predicate(projection,is,ObjectProperty).
+predicate(projection,Characteristics,Functional).
+predicate(projection,Domain,MD_CRS).
+predicate(projection,Range,RS_Identifier).
+predicate(projectionParameter,is,ObjectProperty).
+predicate(projectionParameter,Characteristics,Functional).
+predicate(projectionParameter,Domain,MD_CRS).
+predicate(projectionParameter,Range,MD_ProjectionParameters).
+predicate(referenceDate,is,ObjectProperty).
+predicate(referenceDate,Domain,CI_Citation).
+predicate(referenceDate,Range,CI_Date).
+predicate(referenceSystemIdentifier,is,ObjectProperty).
+predicate(referenceSystemIdentifier,Characteristics,Functional).
+predicate(referenceSystemIdentifier,Domain,MD_ReferenceSystem).
+predicate(referenceSystemIdentifier,Range,RS_Identifier).
+predicate(referenceSystemInfo,is,ObjectProperty).
+predicate(referenceSystemInfo,Domain,MD_Metadata).
+predicate(referenceSystemInfo,Range,MD_ReferenceSystem).
+predicate(report,is,ObjectProperty).
+predicate(report,Domain,DQ_DataQuality).
+predicate(report,Range,DQ_Element).
+predicate(resolution,is,ObjectProperty).
+predicate(resolution,Characteristics,Functional).
+predicate(resolution,Domain,MD_Dimension).
+predicate(resolution,Range,Measure).
+predicate(resourceConstraints,is,ObjectProperty).
+predicate(resourceConstraints,Domain,MD_Identification).
+predicate(resourceConstraints,Range,MD_Constraints).
+predicate(resourceFormat,is,ObjectProperty).
+predicate(resourceFormat,Domain,MD_Identification).
+predicate(resourceFormat,Range,MD_Format).
+predicate(resourceMaintenance,is,ObjectProperty).
+predicate(resourceMaintenance,Domain,MD_Identification).
+predicate(resourceMaintenance,Range,MD_MaintenanceInformation).
+predicate(resourceSpecificUsage,is,ObjectProperty).
+predicate(resourceSpecificUsage,Domain,MD_Identification).
+predicate(resourceSpecificUsage,Range,MD_Usage).
+predicate(result,is,ObjectProperty).
+predicate(result,Domain,DQ_Element).
+predicate(result,Range,DQ_Result).
+predicate(role,is,ObjectProperty).
+predicate(role,Characteristics,Functional).
+predicate(role,Domain,CI_ResponsibleParty).
+predicate(role,Range,CI_RoleCode).
+predicate(scaleDenominator,is,ObjectProperty).
+predicate(scaleDenominator,Characteristics,Functional).
+predicate(scaleDenominator,Domain,LI_Source).
+predicate(scaleDenominator,Range,MD_RepresentativeFraction).
+predicate(scope,is,ObjectProperty).
+predicate(scope,Characteristics,Functional).
+predicate(scope,Domain,DQ_DataQuality).
+predicate(scope,Range,DQ_Scope).
+predicate(scopeExtent,is,ObjectProperty).
+predicate(scopeExtent,Domain,DQ_Scope).
+predicate(scopeExtent,Range,EX_Extent).
+predicate(sequenceIdentifier,is,ObjectProperty).
+predicate(sequenceIdentifier,Characteristics,Functional).
+predicate(sequenceIdentifier,Domain,MD_RangeDimension).
+predicate(sequenceIdentifier,Range,MemberName).
+predicate(series,is,ObjectProperty).
+predicate(series,Characteristics,Functional).
+predicate(series,Domain,CI_Citation).
+predicate(series,Range,CI_Series).
+predicate(softwareDevelopmentFile,is,ObjectProperty).
+predicate(softwareDevelopmentFile,Characteristics,Functional).
+predicate(softwareDevelopmentFile,Domain,MD_ApplicationSchemaInformation).
+predicate(softwareDevelopmentFile,Range,Binary).
+predicate(source,is,ObjectProperty).
+predicate(sourceCitation,is,ObjectProperty).
+predicate(sourceCitation,Characteristics,Functional).
+predicate(sourceCitation,Domain,LI_Source).
+predicate(sourceCitation,Range,CI_Citation).
+predicate(sourceExtent,is,ObjectProperty).
+predicate(sourceExtent,Domain,LI_Source).
+predicate(sourceExtent,Range,EX_Extent).
+predicate(sourceReferenceSystem,is,ObjectProperty).
+predicate(sourceReferenceSystem,Characteristics,Functional).
+predicate(sourceReferenceSystem,Domain,LI_Source).
+predicate(sourceReferenceSystem,Range,MD_ReferenceSystem).
+predicate(southBoundLatitude,is,ObjectProperty).
+predicate(southBoundLatitude,Characteristics,Functional).
+predicate(southBoundLatitude,Domain,EX_GeographicBoundingBox).
+predicate(southBoundLatitude,Range,Angle).
+predicate(spatialExtent,is,ObjectProperty).
+predicate(spatialExtent,Domain,EX_SpatialTemporalExtent).
+predicate(spatialExtent,Range,EX_GeographicExtent).
+predicate(spatialRepresentationInfo,is,ObjectProperty).
+predicate(spatialRepresentationInfo,Domain,MD_Metadata).
+predicate(spatialRepresentationInfo,Range,MD_SpatialRepresentation).
+predicate(spatialRepresentationType,is,ObjectProperty).
+predicate(spatialRepresentationType,Domain,MD_DataIdentification).
+predicate(spatialRepresentationType,Range,MD_SpatialRepresentationTypeCode).
+predicate(spatialResolution,is,ObjectProperty).
+predicate(spatialResolution,Domain,MD_DataIdentification).
+predicate(spatialResolution,Range,MD_Resolution).
+predicate(status,is,ObjectProperty).
+predicate(status,Domain,MD_Identification).
+predicate(status,Range,MD_ProgressCode).
+predicate(temporalElement,is,ObjectProperty).
+predicate(temporalElement,Domain,EX_Extent).
+predicate(temporalElement,Range,EX_TemporalExtent).
+predicate(temporalExtent,is,ObjectProperty).
+predicate(temporalExtent,Characteristics,Functional).
+predicate(temporalExtent,Domain,EX_TemporalExtent).
+predicate(temporalExtent,Range,EX_Extent).
+predicate(theFeatureTypeList,is,ObjectProperty).
+predicate(theFeatureTypeList,Domain,MD_SpatialAttributeSupplement).
+predicate(theFeatureTypeList,Range,MD_FeatureTypeList).
+predicate(thesaurusName,is,ObjectProperty).
+predicate(thesaurusName,Characteristics,Functional).
+predicate(thesaurusName,Domain,MD_Keywords).
+predicate(thesaurusName,Range,CI_Citation).
+predicate(topicCategory,is,ObjectProperty).
+predicate(topicCategory,Domain,MD_DataIdentification).
+predicate(topicCategory,Range,MD_TopicCategoryCode).
+predicate(topologyLevel,is,ObjectProperty).
+predicate(topologyLevel,Characteristics,Functional).
+predicate(topologyLevel,Domain,MD_VectorSpatialRepresentation).
+predicate(topologyLevel,Range,MD_TopologyLevelCode).
+predicate(transferOptions,is,ObjectProperty).
+predicate(transferOptions,Domain,MD_Distribution).
+predicate(transferOptions,Range,MD_DigitalTransferOptions).
+predicate(type,is,ObjectProperty).
+predicate(type,Characteristics,Functional).
+predicate(type,Domain,MD_Keywords).
+predicate(type,Range,MD_KeywordTypeCode).
+predicate(unitOfMeasure,is,ObjectProperty).
+predicate(unitOfMeasure,Characteristics,Functional).
+predicate(unitOfMeasure,Domain,EX_VerticalExtent).
+predicate(unitOfMeasure,Range,UomLength).
+predicate(units,is,ObjectProperty).
+predicate(units,Characteristics,Functional).
+predicate(units,Domain,MD_Band).
+predicate(units,Range,UomLength).
+predicate(updateScope,is,ObjectProperty).
+predicate(updateScope,Domain,MD_MaintenanceInformation).
+predicate(updateScope,Range,MD_ScopeCode).
+predicate(updateScopeDescription,is,ObjectProperty).
+predicate(updateScopeDescription,Domain,MD_MaintenanceInformation).
+predicate(updateScopeDescription,Range,MD_ScopeDescription).
+predicate(usageDateTime,is,ObjectProperty).
+predicate(usageDateTime,Characteristics,Functional).
+predicate(usageDateTime,Domain,MD_Usage).
+predicate(useConstraints,is,ObjectProperty).
+predicate(useConstraints,Domain,MD_LegalConstraints).
+predicate(useConstraints,Range,MD_RestrictionCode).
+predicate(userContactInfo,is,ObjectProperty).
+predicate(userContactInfo,Domain,MD_Usage).
+predicate(userContactInfo,Range,CI_ResponsibleParty).
+predicate(value,is,ObjectProperty).
+predicate(value,Domain,DQ_QuantitativeResult).
+predicate(value,Range,Record).
+predicate(valueType,is,ObjectProperty).
+predicate(valueType,Characteristics,Functional).
+predicate(valueType,Domain,DQ_QuantitativeResult).
+predicate(valueType,Range,RecordType).
+predicate(valueUnit,is,ObjectProperty).
+predicate(valueUnit,Characteristics,Functional).
+predicate(valueUnit,Domain,DQ_QuantitativeResult).
+predicate(valueUnit,Range,Measure).
+predicate(verticalDatum,is,ObjectProperty).
+predicate(verticalDatum,Characteristics,Functional).
+predicate(verticalDatum,Domain,EX_VerticalExtent).
+predicate(verticalDatum,Range,SC_VerticalDatum).
+predicate(verticalElement,is,ObjectProperty).
+predicate(verticalElement,Domain,EX_Extent).
+predicate(verticalElement,Range,EX_VerticalExtent).
+predicate(westBoundLongitude,is,ObjectProperty).
+predicate(westBoundLongitude,Characteristics,Functional).
+predicate(westBoundLongitude,Domain,EX_GeographicBoundingBox).
+predicate(westBoundLongitude,Range,Angle).
+predicate(ISBN,is,DataProperty).
+predicate(ISBN,Characteristics,Functional).
+predicate(ISBN,Domain,CI_Citation).
+predicate(ISBN,Range,string).
+predicate(ISSN,is,DataProperty).
+predicate(ISSN,Characteristics,Functional).
+predicate(ISSN,Domain,CI_Citation).
+predicate(ISSN,Range,string).
+predicate(abstract,is,DataProperty).
+predicate(abstract,Characteristics,Functional).
+predicate(abstract,Domain,MD_Identification).
+predicate(abstract,Range,string).
+predicate(administrativeArea,is,DataProperty).
+predicate(administrativeArea,Characteristics,Functional).
+predicate(administrativeArea,Domain,CI_Address).
+predicate(administrativeArea,Range,string).
+predicate(alternateTitle,is,DataProperty).
+predicate(alternateTitle,Domain,CI_Citation).
+predicate(alternateTitle,Range,string).
+predicate(amendmentNumber,is,DataProperty).
+predicate(amendmentNumber,Characteristics,Functional).
+predicate(amendmentNumber,Domain,MD_Format).
+predicate(amendmentNumber,Range,string).
+predicate(applicationProfile,is,DataProperty).
+predicate(applicationProfile,Characteristics,Functional).
+predicate(applicationProfile,Domain,CI_OnlineResource).
+predicate(applicationProfile,Range,string).
+predicate(azimuthAngle,is,DataProperty).
+predicate(azimuthAngle,Characteristics,Functional).
+predicate(azimuthAngle,Domain,MD_ObliqueLineAzimuth).
+predicate(azimuthAngle,Range,float).
+predicate(azimuthMeasurePointLongitude,is,DataProperty).
+predicate(azimuthMeasurePointLongitude,Characteristics,Functional).
+predicate(azimuthMeasurePointLongitude,Domain,MD_ObliqueLineAzimuth).
+predicate(azimuthMeasurePointLongitude,Range,float).
+predicate(bitsPerValue,is,DataProperty).
+predicate(bitsPerValue,Characteristics,Functional).
+predicate(bitsPerValue,Domain,MD_Band).
+predicate(bitsPerValue,Range,float).
+predicate(cameraCalibrationInformationAvailability,is,DataProperty).
+predicate(cameraCalibrationInformationAvailability,Characteristics,Functional).
+predicate(cameraCalibrationInformationAvailability,Domain,MD_ImageDescription).
+predicate(cameraCalibrationInformationAvailability,Range,boolean).
+predicate(catalogueLanguage,is,DataProperty).
+predicate(catalogueLanguage,Domain,MD_FeatureCatalogueDescription).
+predicate(catalogueLanguage,Range,string).
+predicate(checkPointAvailability,is,DataProperty).
+predicate(checkPointAvailability,Characteristics,Functional).
+predicate(checkPointAvailability,Domain,MD_Georectified).
+predicate(checkPointAvailability,Range,boolean).
+predicate(checkPointDescription,is,DataProperty).
+predicate(checkPointDescription,Characteristics,Functional).
+predicate(checkPointDescription,Domain,MD_Georectified).
+predicate(checkPointDescription,Range,string).
+predicate(city,is,DataProperty).
+predicate(city,Characteristics,Functional).
+predicate(city,Domain,CI_Address).
+predicate(city,Range,string).
+predicate(classificationSystem,is,DataProperty).
+predicate(classificationSystem,Characteristics,Functional).
+predicate(classificationSystem,Domain,MD_SecurityConstraints).
+predicate(classificationSystem,Range,string).
+predicate(cloudCoverPercentage,is,DataProperty).
+predicate(cloudCoverPercentage,Characteristics,Functional).
+predicate(cloudCoverPercentage,Domain,MD_ImageDescription).
+predicate(cloudCoverPercentage,Range,float).
+predicate(code,is,DataProperty).
+predicate(code,Characteristics,Functional).
+predicate(code,Domain,MD_Identifier).
+predicate(code,Range,string).
+predicate(collectiveTitle,is,DataProperty).
+predicate(collectiveTitle,Characteristics,Functional).
+predicate(collectiveTitle,Domain,CI_Citation).
+predicate(collectiveTitle,Range,string).
+predicate(complianceCode,is,DataProperty).
+predicate(complianceCode,Characteristics,Functional).
+predicate(complianceCode,Domain,MD_FeatureCatalogueDescription).
+predicate(complianceCode,Range,boolean).
+predicate(compressionGenerationQuantity,is,DataProperty).
+predicate(compressionGenerationQuantity,Characteristics,Functional).
+predicate(compressionGenerationQuantity,Domain,MD_ImageDescription).
+predicate(compressionGenerationQuantity,Range,int).
+predicate(condition,is,DataProperty).
+predicate(condition,Characteristics,Functional).
+predicate(condition,Domain,MD_ExtendedElementInformation).
+predicate(condition,Range,string).
+predicate(constraintLanguage,is,DataProperty).
+predicate(constraintLanguage,Characteristics,Functional).
+predicate(constraintLanguage,Domain,MD_ApplicationSchemaInformation).
+predicate(constraintLanguage,Range,string).
+predicate(contactInstructions,is,DataProperty).
+predicate(contactInstructions,Characteristics,Functional).
+predicate(contactInstructions,Domain,CI_Contact).
+predicate(contactInstructions,Range,string).
+predicate(controlPointAvailability,is,DataProperty).
+predicate(controlPointAvailability,Characteristics,Functional).
+predicate(controlPointAvailability,Domain,MD_Georeferenceable).
+predicate(controlPointAvailability,Range,boolean).
+predicate(country,is,DataProperty).
+predicate(country,Characteristics,Functional).
+predicate(country,Domain,CI_Address).
+predicate(country,Range,string).
+predicate(credit,is,DataProperty).
+predicate(credit,Domain,MD_Identification).
+predicate(credit,Range,string).
+predicate(dataLanguage,is,DataProperty).
+predicate(dataLanguage,Domain,MD_DataIdentification).
+predicate(dataLanguage,Range,string).
+predicate(dataSetURI,is,DataProperty).
+predicate(dataSetURI,Characteristics,Functional).
+predicate(dataSetURI,Domain,MD_Metadata).
+predicate(dataSetURI,Range,string).
+predicate(dataset,is,DataProperty).
+predicate(dataset,Characteristics,Functional).
+predicate(dataset,Domain,MD_ScopeDescription).
+predicate(dataset,Range,string).
+predicate(dateStamp,is,DataProperty).
+predicate(dateStamp,Domain,MD_Metadata).
+predicate(dateStamp,Range,date).
+predicate(definition,is,DataProperty).
+predicate(deliveryPoint,is,DataProperty).
+predicate(deliveryPoint,Domain,CI_Address).
+predicate(deliveryPoint,Range,string).
+predicate(denominationOfFlatteningRatio,is,DataProperty).
+predicate(denominationOfFlatteningRatio,Characteristics,Functional).
+predicate(denominationOfFlatteningRatio,Domain,MD_EllipsoidParameters).
+predicate(denominationOfFlatteningRatio,Range,float).
+predicate(denominator,is,DataProperty).
+predicate(denominator,Characteristics,Functional).
+predicate(denominator,Domain,MD_RepresentativeFraction).
+predicate(denominator,Range,int).
+predicate(density,is,DataProperty).
+predicate(density,Domain,MD_Medium).
+predicate(density,Range,float).
+predicate(densityUnits,is,DataProperty).
+predicate(densityUnits,Characteristics,Functional).
+predicate(densityUnits,Domain,MD_Medium).
+predicate(densityUnits,Range,string).
+predicate(descriptor,is,DataProperty).
+predicate(descriptor,Characteristics,Functional).
+predicate(descriptor,Domain,MD_RangeDimension).
+predicate(descriptor,Range,string).
+predicate(dimensionSize,is,DataProperty).
+predicate(dimensionSize,Characteristics,Functional).
+predicate(dimensionSize,Domain,MD_Dimension).
+predicate(dimensionSize,Range,int).
+predicate(domainCode,is,DataProperty).
+predicate(domainCode,Characteristics,Functional).
+predicate(domainCode,Domain,MD_ExtendedElementInformation).
+predicate(domainCode,Range,int).
+predicate(domainValue,is,DataProperty).
+predicate(domainValue,Characteristics,Functional).
+predicate(domainValue,Domain,MD_ExtendedElementInformation).
+predicate(domainValue,Range,string).
+predicate(edition,is,DataProperty).
+predicate(edition,Characteristics,Functional).
+predicate(edition,Domain,CI_Citation).
+predicate(edition,Range,string).
+predicate(editionDate,is,DataProperty).
+predicate(editionDate,Domain,CI_Citation).
+predicate(editionDate,Range,date).
+predicate(electronicMailAddress,is,DataProperty).
+predicate(electronicMailAddress,Domain,CI_Address).
+predicate(electronicMailAddress,Range,string).
+predicate(environmentDescription,is,DataProperty).
+predicate(environmentDescription,Domain,MD_DataIdentification).
+predicate(environmentDescription,Range,string).
+predicate(errorStatistic,is,DataProperty).
+predicate(errorStatistic,Characteristics,Functional).
+predicate(errorStatistic,Domain,DQ_QuantitativeResult).
+predicate(errorStatistic,Range,string).
+predicate(evaluationMethodDescription,is,DataProperty).
+predicate(evaluationMethodDescription,Characteristics,Functional).
+predicate(evaluationMethodDescription,Domain,DQ_Element).
+predicate(evaluationMethodDescription,Range,string).
+predicate(explanation,is,DataProperty).
+predicate(explanation,Characteristics,Functional).
+predicate(explanation,Domain,DQ_ConformanceResult).
+predicate(explanation,Range,string).
+predicate(extendedElementRationale,is,DataProperty).
+predicate(extendedElementRationale,Domain,MD_ExtendedElementInformation).
+predicate(extendedElementRationale,Range,string).
+predicate(extensionElementName,is,DataProperty).
+predicate(extensionElementName,Characteristics,Functional).
+predicate(extensionElementName,Domain,MD_ExtendedElementInformation).
+predicate(extensionElementName,Range,string).
+predicate(extentDescription,is,DataProperty).
+predicate(extentDescription,Characteristics,Functional).
+predicate(extentDescription,Domain,EX_Extent).
+predicate(extentDescription,Range,string).
+predicate(extentTypeCode,is,DataProperty).
+predicate(extentTypeCode,Characteristics,Functional).
+predicate(extentTypeCode,Domain,EX_GeographicExtent).
+predicate(extentTypeCode,Range,boolean).
+predicate(falseEasting,is,DataProperty).
+predicate(falseEasting,Characteristics,Functional).
+predicate(falseEasting,Domain,MD_ProjectionParameters).
+predicate(falseEasting,Range,float).
+predicate(falseNorthing,is,DataProperty).
+predicate(falseNorthing,Characteristics,Functional).
+predicate(falseNorthing,Domain,MD_ProjectionParameters).
+predicate(falseNorthing,Range,float).
+predicate(fascimile,is,DataProperty).
+predicate(fascimile,Domain,CI_Telephone).
+predicate(fascimile,Range,string).
+predicate(fees,is,DataProperty).
+predicate(fees,Characteristics,Functional).
+predicate(fees,Domain,MD_StandardOrderProcess).
+predicate(fees,Range,string).
+predicate(fileDecompressionTechnique,is,DataProperty).
+predicate(fileDecompressionTechnique,Characteristics,Functional).
+predicate(fileDecompressionTechnique,Domain,MD_Format).
+predicate(fileDecompressionTechnique,Range,string).
+predicate(fileDescription,is,DataProperty).
+predicate(fileDescription,Characteristics,Functional).
+predicate(fileDescription,Domain,MD_BrowseGraphics).
+predicate(fileDescription,Range,string).
+predicate(fileIdentifier,is,DataProperty).
+predicate(fileIdentifier,Characteristics,Functional).
+predicate(fileIdentifier,Domain,MD_Metadata).
+predicate(fileIdentifier,Range,string).
+predicate(fileName,is,DataProperty).
+predicate(fileName,Characteristics,Functional).
+predicate(fileName,Domain,MD_BrowseGraphics).
+predicate(fileName,Range,string).
+predicate(fileType,is,DataProperty).
+predicate(fileType,Characteristics,Functional).
+predicate(fileType,Domain,MD_BrowseGraphics).
+predicate(fileType,Range,string).
+predicate(filmDistortionInformationAvailibility,is,DataProperty).
+predicate(filmDistortionInformationAvailibility,Characteristics,Functional).
+predicate(filmDistortionInformationAvailibility,Domain,MD_ImageDescription).
+predicate(filmDistortionInformationAvailibility,Range,boolean).
+predicate(formatSpecification,is,DataProperty).
+predicate(formatSpecification,Characteristics,Functional).
+predicate(formatSpecification,Domain,MD_Format).
+predicate(formatSpecification,Range,string).
+predicate(geometricObjectCount,is,DataProperty).
+predicate(geometricObjectCount,Characteristics,Functional).
+predicate(geometricObjectCount,Domain,MD_GeometricObjects).
+predicate(geometricObjectCount,Range,int).
+predicate(graphicsFile,is,DataProperty).
+predicate(graphicsFile,Characteristics,Functional).
+predicate(graphicsFile,Domain,MD_ApplicationSchemaInformation).
+predicate(graphicsFile,Range,string).
+predicate(handlingDescription,is,DataProperty).
+predicate(handlingDescription,Characteristics,Functional).
+predicate(handlingDescription,Domain,MD_SecurityConstraints).
+predicate(handlingDescription,Range,string).
+predicate(heightOfProspectivePointAboveSurface,is,DataProperty).
+predicate(heightOfProspectivePointAboveSurface,Characteristics,Functional).
+predicate(heightOfProspectivePointAboveSurface,Domain,MD_ProjectionParameters).
+predicate(heightOfProspectivePointAboveSurface,Range,float).
+predicate(hierarchyLevelName,is,DataProperty).
+predicate(hierarchyLevelName,Domain,MD_Metadata).
+predicate(hierarchyLevelName,Range,string).
+predicate(hoursOfService,is,DataProperty).
+predicate(hoursOfService,Characteristics,Functional).
+predicate(hoursOfService,Domain,CI_Contact).
+predicate(hoursOfService,Range,string).
+predicate(identifier,is,DataProperty).
+predicate(identifier,Domain,CI_Citation).
+predicate(identifier,Range,string).
+predicate(identifierType,is,DataProperty).
+predicate(identifierType,Domain,CI_Citation).
+predicate(identifierType,Range,string).
+predicate(illuminationAzimuthAngle,is,DataProperty).
+predicate(illuminationAzimuthAngle,Characteristics,Functional).
+predicate(illuminationAzimuthAngle,Domain,MD_ImageDescription).
+predicate(illuminationAzimuthAngle,Range,float).
+predicate(illuminationElevationAngle,is,DataProperty).
+predicate(illuminationElevationAngle,Characteristics,Functional).
+predicate(illuminationElevationAngle,Domain,MD_ImageDescription).
+predicate(illuminationElevationAngle,Range,float).
+predicate(includeWithDataset,is,DataProperty).
+predicate(includeWithDataset,Characteristics,Functional).
+predicate(includeWithDataset,Domain,MD_FeatureCatalogueDescription).
+predicate(includeWithDataset,Range,boolean).
+predicate(individualName,is,DataProperty).
+predicate(individualName,Characteristics,Functional).
+predicate(individualName,Domain,CI_ResponsibleParty).
+predicate(individualName,Range,string).
+predicate(issuedIdentification,is,DataProperty).
+predicate(issuedIdentification,Characteristics,Functional).
+predicate(issuedIdentification,Domain,CI_Series).
+predicate(issuedIdentification,Range,string).
+predicate(keyword,is,DataProperty).
+predicate(keyword,Domain,MD_Keywords).
+predicate(keyword,Range,string).
+predicate(latitudeOfProjectionCenter,is,DataProperty).
+predicate(latitudeOfProjectionCenter,Characteristics,Functional).
+predicate(latitudeOfProjectionCenter,Domain,MD_ProjectionParameters).
+predicate(latitudeOfProjectionCenter,Range,float).
+predicate(latitudeOfProjectionOrigin,is,DataProperty).
+predicate(latitudeOfProjectionOrigin,Characteristics,Functional).
+predicate(latitudeOfProjectionOrigin,Domain,MD_ProjectionParameters).
+predicate(latitudeOfProjectionOrigin,Range,float).
+predicate(lenseDistortionInformationAvailibility,is,DataProperty).
+predicate(lenseDistortionInformationAvailibility,Characteristics,Functional).
+predicate(lenseDistortionInformationAvailibility,Domain,MD_ImageDescription).
+predicate(lenseDistortionInformationAvailibility,Range,boolean).
+predicate(linkage,is,DataProperty).
+predicate(linkage,Characteristics,Functional).
+predicate(linkage,Domain,CI_OnlineResource).
+predicate(linkage,Range,anyURI).
+predicate(longitudeOfCentralMeridian,is,DataProperty).
+predicate(longitudeOfCentralMeridian,Characteristics,Functional).
+predicate(longitudeOfCentralMeridian,Domain,MD_ProjectionParameters).
+predicate(longitudeOfCentralMeridian,Range,float).
+predicate(longitudeOfProjectionCenter,is,DataProperty).
+predicate(longitudeOfProjectionCenter,Characteristics,Functional).
+predicate(longitudeOfProjectionCenter,Domain,MD_ProjectionParameters).
+predicate(longitudeOfProjectionCenter,Range,float).
+predicate(maintenanceNote,is,DataProperty).
+predicate(maintenanceNote,Domain,MD_MaintenanceInformation).
+predicate(maintenanceNote,Range,string).
+predicate(maxValue,is,DataProperty).
+predicate(maxValue,Characteristics,Functional).
+predicate(maxValue,Domain,MD_Band).
+predicate(maxValue,Range,float).
+predicate(maximumOccurance,is,DataProperty).
+predicate(maximumOccurance,Characteristics,Functional).
+predicate(maximumOccurance,Domain,MD_ExtendedElementInformation).
+predicate(maximumOccurance,Range,string).
+predicate(maximumValue,is,DataProperty).
+predicate(maximumValue,Characteristics,Functional).
+predicate(maximumValue,Domain,EX_VerticalExtent).
+predicate(maximumValue,Range,float).
+predicate(measureDateTime,is,DataProperty).
+predicate(measureDateTime,Domain,DQ_Element).
+predicate(measureDateTime,Range,dateTime).
+predicate(measureDescription,is,DataProperty).
+predicate(measureDescription,Characteristics,Functional).
+predicate(measureDescription,Domain,DQ_Element).
+predicate(measureDescription,Range,string).
+predicate(mediumNote,is,DataProperty).
+predicate(mediumNote,Characteristics,Functional).
+predicate(mediumNote,Domain,MD_Medium).
+predicate(mediumNote,Range,string).
+predicate(metadataLanguage,is,DataProperty).
+predicate(metadataLanguage,Characteristics,Functional).
+predicate(metadataLanguage,Domain,MD_Metadata).
+predicate(metadataLanguage,Range,string).
+predicate(metadataStandardName,is,DataProperty).
+predicate(metadataStandardName,Characteristics,Functional).
+predicate(metadataStandardName,Domain,MD_Metadata).
+predicate(metadataStandardName,Range,string).
+predicate(metadataStandardVersion,is,DataProperty).
+predicate(metadataStandardVersion,Characteristics,Functional).
+predicate(metadataStandardVersion,Domain,MD_Metadata).
+predicate(metadataStandardVersion,Range,string).
+predicate(minValue,is,DataProperty).
+predicate(minValue,Characteristics,Functional).
+predicate(minValue,Domain,MD_Band).
+predicate(minValue,Range,float).
+predicate(minimumValue,is,DataProperty).
+predicate(minimumValue,Characteristics,Functional).
+predicate(minimumValue,Domain,EX_VerticalExtent).
+predicate(minimumValue,Range,float).
+predicate(nameOfMeasure,is,DataProperty).
+predicate(nameOfMeasure,Domain,DQ_Element).
+predicate(nameOfMeasure,Range,string).
+predicate(name_MD_Format,is,DataProperty).
+predicate(name_MD_Format,Characteristics,Functional).
+predicate(name_MD_Format,Domain,MD_Format).
+predicate(name_MD_Format,Range,string).
+predicate(numberOfDimensions,is,DataProperty).
+predicate(numberOfDimensions,Characteristics,Functional).
+predicate(numberOfDimensions,Domain,MD_GridSpatialRepresentation).
+predicate(numberOfDimensions,Range,int).
+predicate(obliqueLineLatitude,is,DataProperty).
+predicate(obliqueLineLatitude,Characteristics,Functional).
+predicate(obliqueLineLatitude,Domain,MD_ObliqueLinePoint).
+predicate(obliqueLineLatitude,Range,float).
+predicate(obliqueLineLongitude,is,DataProperty).
+predicate(obliqueLineLongitude,Characteristics,Functional).
+predicate(obliqueLineLongitude,Domain,MD_ObliqueLinePoint).
+predicate(obliqueLineLongitude,Range,float).
+predicate(offset,is,DataProperty).
+predicate(offset,Characteristics,Functional).
+predicate(offset,Domain,MD_Band).
+predicate(offset,Range,float).
+predicate(onlineResourceDescription,is,DataProperty).
+predicate(onlineResourceDescription,Characteristics,Functional).
+predicate(onlineResourceDescription,Domain,CI_OnlineResource).
+predicate(onlineResourceDescription,Range,string).
+predicate(onlineResourceName,is,DataProperty).
+predicate(onlineResourceName,Characteristics,Functional).
+predicate(onlineResourceName,Domain,CI_OnlineResource).
+predicate(onlineResourceName,Range,string).
+predicate(orderingInstructions,is,DataProperty).
+predicate(orderingInstructions,Characteristics,Functional).
+predicate(orderingInstructions,Domain,MD_StandardOrderProcess).
+predicate(orderingInstructions,Range,string).
+predicate(organisationName,is,DataProperty).
+predicate(organisationName,Characteristics,Functional).
+predicate(organisationName,Domain,CI_ResponsibleParty).
+predicate(organisationName,Range,string).
+predicate(orientationParameterAvailibility,is,DataProperty).
+predicate(orientationParameterAvailibility,Characteristics,Functional).
+predicate(orientationParameterAvailibility,Domain,MD_Georeferenceable).
+predicate(orientationParameterAvailibility,Range,boolean).
+predicate(orientationParameterDescription,is,DataProperty).
+predicate(orientationParameterDescription,Characteristics,Functional).
+predicate(orientationParameterDescription,Domain,MD_Georeferenceable).
+predicate(orientationParameterDescription,Range,string).
+predicate(other,is,DataProperty).
+predicate(other,Characteristics,Functional).
+predicate(other,Domain,MD_ScopeDescription).
+predicate(other,Range,string).
+predicate(otherCitationDetails,is,DataProperty).
+predicate(otherCitationDetails,Characteristics,Functional).
+predicate(otherCitationDetails,Domain,CI_Citation).
+predicate(otherCitationDetails,Range,string).
+predicate(otherConstraints,is,DataProperty).
+predicate(otherConstraints,Domain,MD_LegalConstraints).
+predicate(otherConstraints,Range,string).
+predicate(page,is,DataProperty).
+predicate(page,Characteristics,Functional).
+predicate(page,Domain,CI_Series).
+predicate(page,Range,string).
+predicate(parentEntity,is,DataProperty).
+predicate(parentEntity,Domain,MD_ExtendedElementInformation).
+predicate(parentEntity,Range,string).
+predicate(parentIdentifier,is,DataProperty).
+predicate(parentIdentifier,Characteristics,Functional).
+predicate(parentIdentifier,Domain,MD_Metadata).
+predicate(parentIdentifier,Range,string).
+predicate(pass,is,DataProperty).
+predicate(pass,Characteristics,Functional).
+predicate(pass,Domain,DQ_ConformanceResult).
+predicate(pass,Range,boolean).
+predicate(peakResponse,is,DataProperty).
+predicate(peakResponse,Characteristics,Functional).
+predicate(peakResponse,Domain,MD_Band).
+predicate(peakResponse,Range,float).
+predicate(plannedAvailableDateTime,is,DataProperty).
+predicate(plannedAvailableDateTime,Characteristics,Functional).
+predicate(plannedAvailableDateTime,Domain,MD_StandardOrderProcess).
+predicate(plannedAvailableDateTime,Range,dateTime).
+predicate(positionName,is,DataProperty).
+predicate(positionName,Characteristics,Functional).
+predicate(positionName,Domain,CI_ResponsibleParty).
+predicate(positionName,Range,string).
+predicate(postalCode,is,DataProperty).
+predicate(postalCode,Characteristics,Functional).
+predicate(postalCode,Domain,CI_Address).
+predicate(postalCode,Range,string).
+predicate(protocol,is,DataProperty).
+predicate(protocol,Characteristics,Functional).
+predicate(protocol,Domain,CI_OnlineResource).
+predicate(protocol,Range,string).
+predicate(purpose,is,DataProperty).
+predicate(purpose,Characteristics,Functional).
+predicate(purpose,Domain,MD_Identification).
+predicate(purpose,Range,string).
+predicate(radiometricCalibrationDataAvailability,is,DataProperty).
+predicate(radiometricCalibrationDataAvailability,Characteristics,Functional).
+predicate(radiometricCalibrationDataAvailability,Domain,MD_ImageDescription).
+predicate(radiometricCalibrationDataAvailability,Range,boolean).
+predicate(resourceReferenecDate,is,DataProperty).
+predicate(resourceReferenecDate,Domain,CI_Date).
+predicate(resourceReferenecDate,Range,date).
+predicate(rule,is,DataProperty).
+predicate(rule,Characteristics,Functional).
+predicate(rule,Domain,MD_ExtendedElementInformation).
+predicate(rule,Range,string).
+predicate(scaleFactor,is,DataProperty).
+predicate(scaleFactor,Characteristics,Functional).
+predicate(scaleFactor,Domain,MD_Band).
+predicate(scaleFactor,Range,float).
+predicate(scaleFactorAtCenterLine,is,DataProperty).
+predicate(scaleFactorAtCenterLine,Characteristics,Functional).
+predicate(scaleFactorAtCenterLine,Domain,MD_ProjectionParameters).
+predicate(scaleFactorAtCenterLine,Range,float).
+predicate(scaleFactorAtEquator,is,DataProperty).
+predicate(scaleFactorAtEquator,Characteristics,Functional).
+predicate(scaleFactorAtEquator,Domain,MD_ProjectionParameters).
+predicate(scaleFactorAtEquator,Range,float).
+predicate(scaleFactorAtProjectionOrigin,is,DataProperty).
+predicate(scaleFactorAtProjectionOrigin,Characteristics,Functional).
+predicate(scaleFactorAtProjectionOrigin,Domain,MD_ProjectionParameters).
+predicate(scaleFactorAtProjectionOrigin,Range,float).
+predicate(schemaAscii,is,DataProperty).
+predicate(schemaAscii,Characteristics,Functional).
+predicate(schemaAscii,Domain,MD_ApplicationSchemaInformation).
+predicate(schemaAscii,Range,string).
+predicate(schemaLanguage,is,DataProperty).
+predicate(schemaLanguage,Characteristics,Functional).
+predicate(schemaLanguage,Domain,MD_ApplicationSchemaInformation).
+predicate(schemaLanguage,Range,string).
+predicate(semiMajorAxis,is,DataProperty).
+predicate(semiMajorAxis,Characteristics,Functional).
+predicate(semiMajorAxis,Domain,MD_EllipsoidParameters).
+predicate(semiMajorAxis,Range,float).
+predicate(seriesName,is,DataProperty).
+predicate(seriesName,Characteristics,Functional).
+predicate(seriesName,Domain,CI_Series).
+predicate(seriesName,Range,string).
+predicate(shortName,is,DataProperty).
+predicate(shortName,Characteristics,Functional).
+predicate(shortName,Domain,MD_ExtendedElementInformation).
+predicate(shortName,Range,string).
+predicate(softwareDevelopmentFileFormat,is,DataProperty).
+predicate(softwareDevelopmentFileFormat,Characteristics,Functional).
+predicate(softwareDevelopmentFileFormat,Domain,MD_ApplicationSchemaInformation).
+predicate(softwareDevelopmentFileFormat,Range,string).
+predicate(sourceDescription,is,DataProperty).
+predicate(sourceDescription,Characteristics,Functional).
+predicate(sourceDescription,Domain,LI_Source).
+predicate(sourceDescription,Range,string).
+predicate(sourceStep,is,DataProperty).
+predicate(sourceStep,Domain,LI_Source).
+predicate(sourceStep,Range,string).
+predicate(spatialObject,is,DataProperty).
+predicate(spatialObject,Characteristics,Functional).
+predicate(spatialObject,Domain,MD_FeatureTypeList).
+predicate(spatialObject,Range,string).
+predicate(spatialSchemaName,is,DataProperty).
+predicate(spatialSchemaName,Characteristics,Functional).
+predicate(spatialSchemaName,Domain,MD_FeatureTypeList).
+predicate(spatialSchemaName,Range,string).
+predicate(specificUsage,is,DataProperty).
+predicate(specificUsage,Characteristics,Functional).
+predicate(specificUsage,Domain,MD_Usage).
+predicate(specificUsage,Range,string).
+predicate(standardParallel,is,DataProperty).
+predicate(standardParallel,Domain,MD_ProjectionParameters).
+predicate(standardParallel,Range,float).
+predicate(statement,is,DataProperty).
+predicate(statement,Characteristics,Functional).
+predicate(statement,Domain,LI_Lineage).
+predicate(statement,Range,string).
+predicate(stepDateTime,is,DataProperty).
+predicate(stepDateTime,Domain,LI_ProcessStep).
+predicate(stepDateTime,Range,dateTime).
+predicate(stepDescription,is,DataProperty).
+predicate(stepDescription,Characteristics,Functional).
+predicate(stepDescription,Domain,LI_ProcessStep).
+predicate(stepDescription,Range,string).
+predicate(stepRationale,is,DataProperty).
+predicate(stepRationale,Characteristics,Functional).
+predicate(stepRationale,Domain,LI_ProcessStep).
+predicate(stepRationale,Range,string).
+predicate(straightVerticalLongitudeFromPole,is,DataProperty).
+predicate(straightVerticalLongitudeFromPole,Characteristics,Functional).
+predicate(straightVerticalLongitudeFromPole,Domain,MD_ProjectionParameters).
+predicate(straightVerticalLongitudeFromPole,Range,float).
+predicate(supplementalInformation,is,DataProperty).
+predicate(supplementalInformation,Characteristics,Functional).
+predicate(supplementalInformation,Domain,MD_DataIdentification).
+predicate(supplementalInformation,Range,string).
+predicate(title,is,DataProperty).
+predicate(title,Characteristics,Functional).
+predicate(title,Domain,CI_Citation).
+predicate(title,Range,string).
+predicate(toneGradation,is,DataProperty).
+predicate(toneGradation,Characteristics,Functional).
+predicate(toneGradation,Domain,MD_Band).
+predicate(toneGradation,Range,int).
+predicate(transferSize,is,DataProperty).
+predicate(transferSize,Characteristics,Functional).
+predicate(transferSize,Domain,MD_DigitalTransferOptions).
+predicate(transferSize,Range,float).
+predicate(transformationDimensionDescription,is,DataProperty).
+predicate(transformationDimensionDescription,Characteristics,Functional).
+predicate(transformationDimensionDescription,Domain,MD_Georectified).
+predicate(transformationDimensionDescription,Range,string).
+predicate(transformationDimensionMapping,is,DataProperty).
+predicate(transformationDimensionMapping,Domain,MD_Georectified).
+predicate(transformationDimensionMapping,Range,string).
+predicate(transformationParameterAvailabiliy,is,DataProperty).
+predicate(transformationParameterAvailabiliy,Characteristics,Functional).
+predicate(transformationParameterAvailabiliy,Domain,MD_GridSpatialRepresentation).
+predicate(transformationParameterAvailabiliy,Range,boolean).
+predicate(triangulationIndicator,is,DataProperty).
+predicate(triangulationIndicator,Characteristics,Functional).
+predicate(triangulationIndicator,Domain,MD_ImageDescription).
+predicate(triangulationIndicator,Range,boolean).
+predicate(turnaround,is,DataProperty).
+predicate(turnaround,Characteristics,Functional).
+predicate(turnaround,Domain,MD_StandardOrderProcess).
+predicate(turnaround,Range,string).
+predicate(unitsOfDistribution,is,DataProperty).
+predicate(unitsOfDistribution,Characteristics,Functional).
+predicate(unitsOfDistribution,Domain,MD_DigitalTransferOptions).
+predicate(unitsOfDistribution,Range,string).
+predicate(useLimitation,is,DataProperty).
+predicate(useLimitation,Domain,MD_Constraints).
+predicate(useLimitation,Range,string).
+predicate(userDefinedMaintenanceFrequency,is,DataProperty).
+predicate(userDefinedMaintenanceFrequency,Domain,MD_MaintenanceInformation).
+predicate(userDefinedMaintenanceFrequency,Range,duration).
+predicate(userDeterminedLimitations,is,DataProperty).
+predicate(userDeterminedLimitations,Characteristics,Functional).
+predicate(userDeterminedLimitations,Domain,MD_Usage).
+predicate(userDeterminedLimitations,Range,string).
+predicate(userNote,is,DataProperty).
+predicate(userNote,Characteristics,Functional).
+predicate(userNote,Domain,MD_SecurityConstraints).
+predicate(userNote,Range,string).
+predicate(version,is,DataProperty).
+predicate(version,Characteristics,Functional).
+predicate(version,Domain,MD_Format).
+predicate(version,Range,string).
+predicate(voice,is,DataProperty).
+predicate(voice,Domain,CI_Telephone).
+predicate(voice,Range,string).
+predicate(volumes,is,DataProperty).
+predicate(volumes,Characteristics,Functional).
+predicate(volumes,Domain,MD_Medium).
+predicate(volumes,Range,int).
+predicate(zone,is,DataProperty).
+predicate(zone,Characteristics,Functional).
+predicate(zone,Domain,MD_ProjectionParameters).
+predicate(zone,Range,int).
+predicate(Angle,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Distance,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(GenericName,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Measure,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Record,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(RecordType,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(UomLength,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(GM_Object,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(GM_Point,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(TM_Primitive,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(GF_AttributeType,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(GF_FeatureType,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SC_VerticalDatum,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(RS_Identifier,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Binary,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_Address,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,administrativeArea min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,city min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,country min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,deliveryPoint min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,electronicMailAddress min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,postalCode min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,administrativeArea max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,city max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,country max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,postalCode max 1 www.w3.org/2000/01/-schema#).
+predicate(CI_Citation,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,citedResponsibleParty min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,presentationForm min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,referenceDate min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,series min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,series max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,ISBN min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,ISSN min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,alternateTitle min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,collectiveTitle min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,edition min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,editionDate min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,identifier min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,identifierType min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,otherCitationDetails min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,title exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,ISBN max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,ISSN max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,collectiveTitle max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,edition max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,editionDate max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,otherCitationDetails max 1 www.w3.org/2000/01/-schema#).
+predicate(CI_Contact,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,address min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,onlineResource min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,phone min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,address max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,onlineResource max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,phone max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,contactInstructions min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,hoursOfService min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,contactInstructions max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,hoursOfService max 1 www.w3.org/2000/01/-schema#).
+predicate(CI_Date,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,dateType exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,is,resourceReferenecDate exactly 1 www.w3.org/2000/01/-schema#).
+predicate(CI_DateTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_OnLineFunctionCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_OnlineResource,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,function min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,function max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,applicationProfile min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,protocol min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,linkage exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,applicationProfile max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,onlineResourceDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,onlineResourceName max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,protocol max 1 www.w3.org/2000/01/-schema#).
+predicate(CI_PresentationFormCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_ResponsibleParty,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,contactInfo min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,role exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,contactInfo max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,individualName min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,organisationName min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,positionName min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,individualName max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,organisationName max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,positionName max 1 www.w3.org/2000/01/-schema#).
+predicate(CI_RoleCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_Series,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,issuedIdentification min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,page min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,issuedIdentification max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,page max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,seriesName max 1 www.w3.org/2000/01/-schema#).
+predicate(CI_Telephone,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,fascimile min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,voice min 0 www.w3.org/2000/01/-schema#).
+predicate(DQ_AbsoluteExtenalPositionalAccuracy,is,Class).
+predicate(DQ_AbsoluteExtenalPositionalAccuracy,SubClassOf,DQ_PositionAccuracy).
+predicate(DQ_AccuracyOfATimeMeasurement,is,Class).
+predicate(DQ_AccuracyOfATimeMeasurement,SubClassOf,DQ_TemporalAccuracy).
+predicate(DQ_Completeness,is,Class).
+predicate(DQ_Completeness,SubClassOf,DQ_Element).
+predicate(DQ_CompletenessCommission,is,Class).
+predicate(DQ_CompletenessCommission,SubClassOf,DQ_Completeness).
+predicate(DQ_CompletenessOmission,is,Class).
+predicate(DQ_CompletenessOmission,SubClassOf,DQ_Completeness).
+predicate(DQ_ConceptualConsistency,is,Class).
+predicate(DQ_ConceptualConsistency,SubClassOf,DQ_LogicalConsistency).
+predicate(DQ_ConformanceResult,is,Class).
+predicate(DQ_ConformanceResult,SubClassOf,DQ_Result,).
+predicate(Thing,,is,conformanceSpecification exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,explanation exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,pass exactly 1 www.w3.org/2000/01/-schema#).
+predicate(DQ_DataQuality,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,lineage min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,report min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,scope exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,is,lineage max 1 www.w3.org/2002/07/#).
+predicate(DQ_DomainConsistency,is,Class).
+predicate(DQ_DomainConsistency,SubClassOf,DQ_LogicalConsistency).
+predicate(DQ_Element,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,evaluationMethodType min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,evaluationProcedure min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,measureIdentification min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,result min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,evaluationMethodType max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,evaluationProcedure max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,measureIdentification max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,result max 2 www.w3.org/2002/07/#).
+predicate(Literal,,is,evaluationMethodDescription min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,measureDescription min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameOfMeasure min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,evaluationMethodDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,measureDateTime max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,measureDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(DQ_EvaluationMethodTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(DQ_FormatConsistency,is,Class).
+predicate(DQ_FormatConsistency,SubClassOf,DQ_LogicalConsistency).
+predicate(DQ_GriddedDataPositionalAccuracy,is,Class).
+predicate(DQ_GriddedDataPositionalAccuracy,SubClassOf,DQ_PositionAccuracy).
+predicate(DQ_LogicalConsistency,is,Class).
+predicate(DQ_LogicalConsistency,SubClassOf,DQ_Element).
+predicate(DQ_NonQuantitativeAttributeAccuracy,is,Class).
+predicate(DQ_NonQuantitativeAttributeAccuracy,SubClassOf,DQ_ThematicAccuracy).
+predicate(DQ_PositionAccuracy,is,Class).
+predicate(DQ_PositionAccuracy,SubClassOf,DQ_Element).
+predicate(DQ_QuantitativeAttributeAccuracy,is,Class).
+predicate(DQ_QuantitativeAttributeAccuracy,SubClassOf,DQ_ThematicAccuracy).
+predicate(DQ_QuantitativeResult,is,Class).
+predicate(DQ_QuantitativeResult,SubClassOf,DQ_Result,).
+predicate(Thing,,is,value min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,valueType min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,valueUnit min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,valueUnit max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,errorStatistic min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,errorStatistic max 1 www.w3.org/2000/01/-schema#).
+predicate(DQ_RelativeInternalPositionalAccuracy,is,Class).
+predicate(DQ_RelativeInternalPositionalAccuracy,SubClassOf,DQ_PositionAccuracy).
+predicate(DQ_Result,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(DQ_Scope,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,level min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,levelDescription min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,scopeExtent max 1 www.w3.org/2002/07/#).
+predicate(DQ_TemporalAccuracy,is,Class).
+predicate(DQ_TemporalAccuracy,SubClassOf,DQ_Element).
+predicate(DQ_TemporalConsistency,is,Class).
+predicate(DQ_TemporalConsistency,SubClassOf,DQ_TemporalAccuracy).
+predicate(DQ_TemporalValidity,is,Class).
+predicate(DQ_TemporalValidity,SubClassOf,DQ_TemporalAccuracy).
+predicate(DQ_ThematicAccuracy,is,Class).
+predicate(DQ_ThematicAccuracy,SubClassOf,DQ_Element).
+predicate(DQ_ThematicClassificationCorrectness,is,Class).
+predicate(DQ_ThematicClassificationCorrectness,SubClassOf,DQ_ThematicAccuracy).
+predicate(DQ_TopologicalConsistency,is,Class).
+predicate(DQ_TopologicalConsistency,SubClassOf,DQ_LogicalConsistency).
+predicate(DS_AssociationTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(DS_InitiativeTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(EX_BoundingPolygon,is,Class).
+predicate(EX_BoundingPolygon,SubClassOf,EX_GeographicExtent,).
+predicate(Thing,is,polygon min 1 www.w3.org/2002/07/#).
+predicate(EX_Extent,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,geographicElement min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,temporalElement min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,verticalElement min 0 www.w3.org/2002/07/#).
+predicate(Literal,is,extentDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(EX_GeographicBoundingBox,is,Class).
+predicate(EX_GeographicBoundingBox,SubClassOf,EX_GeographicExtent,).
+predicate(Thing,,is,eastBoundLongitude exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,northBoundLatitude exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,southBoundLatitude exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,is,westBoundLongitude exactly 1 www.w3.org/2002/07/#).
+predicate(EX_GeographicDescription,is,Class).
+predicate(EX_GeographicDescription,SubClassOf,EX_GeographicExtent,).
+predicate(Thing,is,geographicIdentifier exactly 1 www.w3.org/2002/07/#).
+predicate(EX_GeographicExtent,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,extentTypeCode min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,extentTypeCode max 1 www.w3.org/2000/01/-schema#).
+predicate(EX_SpatialTemporalExtent,is,Class).
+predicate(EX_SpatialTemporalExtent,SubClassOf,EX_TemporalExtent,).
+predicate(Thing,is,spatialExtent min 1 www.w3.org/2002/07/#).
+predicate(EX_TemporalExtent,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,exTemp exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,is,temporalExtent exactly 1 www.w3.org/2002/07/#).
+predicate(EX_VerticalExtent,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,unitOfMeasure exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,verticalDatum exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,maximumValue exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,minimumValue exactly 1 www.w3.org/2000/01/-schema#).
+predicate(LI_Lineage,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,processStep min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,source min 0 www.w3.org/2002/07/#).
+predicate(Literal,,is,statement min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,statement max 1 www.w3.org/2000/01/-schema#).
+predicate(LI_ProcessStep,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,processor min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,source min 0 www.w3.org/2002/07/#).
+predicate(Literal,,is,stepDescription exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,stepDateTime max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,stepRationale max 1 www.w3.org/2000/01/-schema#).
+predicate(LI_Source,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,scaleDenominator min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,sourceCitation min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,sourceExtent min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,sourceReferenceSystem min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,scaleDenominator max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,sourceCitation max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,sourceReferenceSystem max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,sourceStep min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,sourceDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_ApplicationSchemaInformation,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,softwareDevelopmentFile min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,applicationSchemaName exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,featureCatalogueSupplement exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,softwareDevelopmentFile max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,graphicsFile min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,schemaAscii min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,softwareDevelopmentFileFormat min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,constraintLanguage exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,schemaLanguage exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,graphicsFile max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,schemaAscii max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,softwareDevelopmentFileFormat max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Band,is,Class).
+predicate(MD_Band,SubClassOf,MD_RangeDimension,).
+predicate(Thing,,is,units min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,units max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,bitsPerValue min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,maxValue min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,minValue min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,offset min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,peakResponse min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,scaleFactor min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,toneGradation min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,bitsPerValue max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,maxValue max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,minValue max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,offset max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,peakResponse max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,scaleFactor max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,toneGradation max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_BrowseGraphics,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,fileDescription min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,fileType min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,fileName exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,fileDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,fileType max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_CRS,is,Class).
+predicate(MD_CRS,SubClassOf,MD_ReferenceSystem,).
+predicate(Thing,,is,datum min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,ellipsoid min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,ellipsoidParameters min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,projection min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,projectionParameter min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,datum max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,ellipsoid max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,ellipsoidParameters max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,projection max 1 www.w3.org/2002/07/#).
+predicate(Thing,is,projectionParameter max 1 www.w3.org/2002/07/#).
+predicate(MD_CellGeometryCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_CharacterSetCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_ClassificationCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_Constraints,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,is,useLimitation min 0 www.w3.org/2000/01/-schema#).
+predicate(MD_ContentInformation,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_CoverageContentTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_CoverageDescription,is,Class).
+predicate(MD_CoverageDescription,SubClassOf,MD_ContentInformation,).
+predicate(Thing,,is,dimension min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,attributeDescription exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,is,contentType exactly 1 www.w3.org/2002/07/#).
+predicate(MD_DataIdentification,is,Class).
+predicate(MD_DataIdentification,SubClassOf,MD_Identification,).
+predicate(Thing,,is,spatialRepresentationType min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,spatialResolution min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,topicCategory min 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,dataLanguage min 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,environmentDescription min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,supplementalInformation min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,environmentDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,supplementalInformation max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_DataTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_DigitalTransferOptions,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,offLine min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,onLine min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,offLine max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,transferSize min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,unitsOfDistribution min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,transferSize max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,unitsOfDistribution max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Dimension,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,resolution min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,dimensionName exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,resolution max 1 www.w3.org/2002/07/#).
+predicate(Literal,is,dimensionSize exactly 1 www.w3.org/2000/01/-schema#).
+predicate(MD_DimensionNameTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_Distribution,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,distributionFormat min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,distributor min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,transferOptions min 0 www.w3.org/2002/07/#).
+predicate(MD_Distributor,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,distributionOrderProcess min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,distributionTransferOptions min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,distributorFormat min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,distributorContact exactly 1 www.w3.org/2002/07/#).
+predicate(MD_EllipsoidParameters,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,axisUnits exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,denominationOfFlatteningRatio min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,semiMajorAxis exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,denominationOfFlatteningRatio max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_ExtendedElementInformation,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,extEleSrc min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,obligation min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,dataType exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,obligation max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,condition min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,domainCode min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,domainValue min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,maximumOccurance min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,parentEntity min 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,shortName min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,definition exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,extensionElementName exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,rule exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,condition max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,domainCode max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,domainValue max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,maximumOccurance max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,shortName max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_FeatureCatalogueDescription,is,Class).
+predicate(MD_FeatureCatalogueDescription,SubClassOf,MD_ContentInformation,).
+predicate(Thing,,is,featureCatalogueCitation min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,featureTypes min 0 www.w3.org/2002/07/#).
+predicate(Literal,,is,complianceCode min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,includeWithDataset exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,complianceCode max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_FeatureTypeList,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,spatialObject exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,spatialSchemaName exactly 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Format,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,formatDistributor min 0 www.w3.org/2002/07/#).
+predicate(Literal,,is,amendmentNumber min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,fileDecompressionTechnique min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,formatSpecification min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,name_MD_Format exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,version exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,amendmentNumber max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,fileDecompressionTechnique max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,formatSpecification max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_GeometricObjectTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_GeometricObjects,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,geometricObjectType exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,geometricObjectCount min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,geometricObjectCount max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Georectified,is,Class).
+predicate(MD_Georectified,SubClassOf,MD_GridSpatialRepresentation,).
+predicate(Thing,,is,centerPoint min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,cornerPoints exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,pointInPixel exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,centerPoint max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,checkPointDescription min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,transformationDimensionDescription min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,transformationDimensionMapping min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,checkPointAvailability exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,checkPointDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,transformationDimensionDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,transformationDimensionMapping max 2 www.w3.org/2000/01/-schema#).
+predicate(MD_Georeferenceable,is,Class).
+predicate(MD_Georeferenceable,SubClassOf,MD_GridSpatialRepresentation,).
+predicate(Thing,,is,parameterCitation min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,parameters exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,orientationParameterAvailibility min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,controlPointAvailability exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,orientationParameterAvailibility exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,orientationParameterAvailibility max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_GridSpatialRepresentation,is,Class).
+predicate(MD_GridSpatialRepresentation,SubClassOf,MD_SpatialRepresentation,).
+predicate(Thing,,is,axisDimensionProperties exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,cellGeometry exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,numberOfDimensions exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,transformationParameterAvailabiliy exactly 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Identification,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,descriptiveKeywords min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,graphicOverview min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,pointOfContact min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,resourceConstraints min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,resourceFormat min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,resourceMaintenance min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,resourceSpecificUsage min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,status min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,citation exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,credit min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,purpose min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,abstract exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,purpose max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Identifier,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,authority min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,authority max 1 www.w3.org/2002/07/#).
+predicate(Literal,is,code exactly 1 www.w3.org/2000/01/-schema#).
+predicate(MD_ImageDescription,is,Class).
+predicate(MD_ImageDescription,SubClassOf,MD_CoverageDescription,).
+predicate(Thing,,is,imageQualityCode min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,imagingCondition min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,processingLevelCode min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,imageQualityCode max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,imagingCondition max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,processingLevelCode max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,cameraCalibrationInformationAvailability min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,cloudCoverPercentage min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,compressionGenerationQuantity min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,filmDistortionInformationAvailibility min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,illuminationAzimuthAngle min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,illuminationElevationAngle min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,lenseDistortionInformationAvailibility min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,radiometricCalibrationDataAvailability min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,triangulationIndicator min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,cameraCalibrationInformationAvailability max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,cloudCoverPercentage max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,compressionGenerationQuantity max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,filmDistortionInformationAvailibility max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,illuminationAzimuthAngle max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,illuminationElevationAngle max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,lenseDistortionInformationAvailibility max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,radiometricCalibrationDataAvailability max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,triangulationIndicator max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_ImagingConditionCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_KeywordTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_Keywords,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,thesaurusName min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,type min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,thesaurusName max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,type max 1 www.w3.org/2002/07/#).
+predicate(Literal,is,keyword min 1 www.w3.org/2000/01/-schema#).
+predicate(MD_LegalConstraints,is,Class).
+predicate(MD_LegalConstraints,SubClassOf,MD_Constraints,).
+predicate(Thing,,is,accessConstraints min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,useConstraints min 0 www.w3.org/2002/07/#).
+predicate(Literal,is,otherConstraints min 0 www.w3.org/2000/01/-schema#).
+predicate(MD_MaintenanceFrequenceCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_MaintenanceInformation,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,dateOfNextUpdate min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,updateScope min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,updateScopeDescription min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,maintenanceAndUpdateFrequency exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,dateOfNextUpdate max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,maintenanceNote min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,userDefinedMaintenanceFrequency min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,userDefinedMaintenanceFrequency max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Medium,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,mediumFormat min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,mediumName min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,mediumName max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,density min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,densityUnits min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,mediumNote min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,volumes min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,densityUnits max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,mediumNote max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,volumes max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_MediumFormatCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_MediumNameCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_Metadata,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,applicationSchemaInfo min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,contentInfo min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,dataQualityInfo min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,distributionInfo min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,hierarchyLevel min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,identificationInfo min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,metadataConstraints min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,metadataExtentInfo min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,metadataMaintenance min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,portrayalCatalogueInfo min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,referenceSystemInfo min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,spatialRepresentationInfo min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,contact exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,distributionInfo max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,metadataCharacterSet max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,metadataMaintenance max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,dataSetURI min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,fileIdentifier min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,hierarchyLevelName min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,metadataStandardName min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,metadataStandardVersion min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,parentIdentifier min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,dateStamp exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,dataSetURI max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,fileIdentifier max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,metadataLanguage max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,metadataStandardName max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,metadataStandardVersion max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,parentIdentifier max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_MetadataExtentInformation,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,extendedElementInformation min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,extensionOnLineResource min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,extensionOnLineResource max 1 www.w3.org/2002/07/#).
+predicate(MD_ObligationCode,is,Class).
+predicate(MD_ObligationCode,EquivalentTo,{conditional , mandatory , optional}).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_ObliqueLineAzimuth,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,azimuthAngle exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,azimuthMeasurePointLongitude exactly 1 www.w3.org/2000/01/-schema#).
+predicate(MD_ObliqueLinePoint,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,obliqueLineLatitude exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,obliqueLineLongitude exactly 1 www.w3.org/2000/01/-schema#).
+predicate(MD_PixelOrientationCode,is,Class).
+predicate(MD_PixelOrientationCode,EquivalentTo,{center , lowerLeft , lowerRight , upperLeft , upperRight}).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,upperRight}).
+predicate(Thing,DisjointWith,upperLeft).
+predicate(Thing,DisjointWith,lowerRight).
+predicate(Thing,DisjointWith,lowerLeft).
+predicate(Thing,DisjointWith,{center).
+predicate(MD_PortrayalCatalogueReference,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,is,portrayalCatalogueCitation min 1 www.w3.org/2002/07/#).
+predicate(MD_ProgressCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_ProjectionParameters,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,falseEastingNorthingUnits min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,obliqueLineAzimuthParameter min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,obliqueLinePointParameter min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,falseEastingNorthingUnits max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,obliqueLineAzimuthParameter max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,obliqueLinePointParameter max 2 www.w3.org/2002/07/#).
+predicate(Literal,,is,falseEasting min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,falseNorthing min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,heightOfProspectivePointAboveSurface min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,latitudeOfProjectionCenter min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,latitudeOfProjectionOrigin min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,longitudeOfCentralMeridian min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,longitudeOfProjectionCenter min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,scaleFactorAtCenterLine min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,scaleFactorAtEquator min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,scaleFactorAtProjectionOrigin min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,standardParallel min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,straightVerticalLongitudeFromPole min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,zone min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,falseEasting max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,falseNorthing max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,heightOfProspectivePointAboveSurface max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,latitudeOfProjectionOrigin max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,longitudeOfCentralMeridian max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,longitudeOfProjectionCenter max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,scaleFactorAtCenterLine max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,scaleFactorAtEquator max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,scaleFactorAtProjectionOrigin max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,standardParallel max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,straightVerticalLongitudeFromPole max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,zone max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_RangeDimension,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,sequenceIdentifier min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,sequenceIdentifier max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,descriptor min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,descriptor max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_ReferenceSystem,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,referenceSystemIdentifier min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,referenceSystemIdentifier max 1 www.w3.org/2002/07/#).
+predicate(MD_RepresentativeFraction,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,is,denominator exactly 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Resolution,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,distance min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,equivalentScale min 0 www.w3.org/2002/07/#).
+predicate(MD_RestrictionCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_ScopeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_ScopeDescription,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,attributeInstances exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,attributes exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,featureInstances exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,features exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,dataset exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,other exactly 1 www.w3.org/2000/01/-schema#).
+predicate(MD_SecurityConstraints,is,Class).
+predicate(MD_SecurityConstraints,SubClassOf,MD_Constraints,).
+predicate(Thing,,is,classification exactly 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,classificationSystem min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,handlingDescription min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,userNote min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,classificationSystem max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,handlingDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,userNote max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_ServiceIdentification,is,Class).
+predicate(MD_ServiceIdentification,SubClassOf,MD_Identification).
+predicate(MD_SpatialAttributeSupplement,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,is,theFeatureTypeList min 1 www.w3.org/2002/07/#).
+predicate(MD_SpatialRepresentation,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_SpatialRepresentationTypeCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_StandardOrderProcess,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,fees min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,orderingInstructions min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,plannedAvailableDateTime min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,turnaround min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,fees max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,orderingInstructions max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,plannedAvailableDateTime max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,turnaround max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_TopicCategoryCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_TopologyLevelCode,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_Usage,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,usageDateTime min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,userContactInfo min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,usageDateTime max 1 www.w3.org/2002/07/#).
+predicate(Literal,,is,userDeterminedLimitations min 0 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,specificUsage exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,userDeterminedLimitations max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_VectorSpatialRepresentation,is,Class).
+predicate(MD_VectorSpatialRepresentation,SubClassOf,MD_SpatialRepresentation,).
+predicate(Thing,,is,geometricObjects min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,topologyLevel min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,topologyLevel max 1 www.w3.org/2002/07/#).
+predicate(MemberName,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(_1quarterInchCartidgeTape,is,Individual).
+predicate(_1quarterInchCartidgeTape,Types,MD_MediumNameCode).
+predicate(_3480Cartidge,is,Individual).
+predicate(_3480Cartidge,Types,MD_MediumNameCode).
+predicate(_3490Cartidge,is,Individual).
+predicate(_3490Cartidge,Types,MD_MediumNameCode).
+predicate(_3580Cartidge,is,Individual).
+predicate(_3580Cartidge,Types,MD_MediumNameCode).
+predicate(_3halfIncFloppy,is,Individual).
+predicate(_3halfIncFloppy,Types,MD_MediumNameCode).
+predicate(_4mmCartidge,is,Individual).
+predicate(_4mmCartidge,Types,MD_MediumNameCode).
+predicate(_5quarterInchFloppy,is,Individual).
+predicate(_5quarterInchFloppy,Types,MD_MediumNameCode).
+predicate(_7trackTape,is,Individual).
+predicate(_7trackTape,Types,MD_MediumNameCode).
+predicate(_8859part1,is,Individual).
+predicate(_8859part1,Types,MD_CharacterSetCode).
+predicate(_8859part11,is,Individual).
+predicate(_8859part11,Types,MD_CharacterSetCode).
+predicate(_8859part14,is,Individual).
+predicate(_8859part14,Types,MD_CharacterSetCode).
+predicate(_8859part15,is,Individual).
+predicate(_8859part15,Types,MD_CharacterSetCode).
+predicate(_8859part2,is,Individual).
+predicate(_8859part2,Types,MD_CharacterSetCode).
+predicate(_8859part3,is,Individual).
+predicate(_8859part3,Types,MD_CharacterSetCode).
+predicate(_8859part4,is,Individual).
+predicate(_8859part4,Types,MD_CharacterSetCode).
+predicate(_8859part5,is,Individual).
+predicate(_8859part5,Types,MD_CharacterSetCode).
+predicate(_8859part6,is,Individual).
+predicate(_8859part6,Types,MD_CharacterSetCode).
+predicate(_8859part7,is,Individual).
+predicate(_8859part7,Types,MD_CharacterSetCode).
+predicate(_8859part8,is,Individual).
+predicate(_8859part8,Types,MD_CharacterSetCode).
+predicate(_8859part9,is,Individual).
+predicate(_8859part9,Types,MD_CharacterSetCode).
+predicate(_8mmCartidge,is,Individual).
+predicate(_8mmCartidge,Types,MD_MediumNameCode).
+predicate(_9trackTape,is,Individual).
+predicate(_9trackTape,Types,MD_MediumNameCode).
+predicate(_dataset,is,Individual).
+predicate(_dataset,Types,MD_ScopeCode).
+predicate(_point,is,Individual).
+predicate(_point,Types,MD_GeometricObjectTypeCode).
+predicate(_pointOfContact,is,Individual).
+predicate(_pointOfContact,Types,CI_RoleCode).
+predicate(_processor,is,Individual).
+predicate(_processor,Types,CI_RoleCode).
+predicate(_restricted,is,Individual).
+predicate(_restricted,Types,MD_ClassificationCode).
+predicate(_series,is,Individual).
+predicate(_series,Types,MD_ScopeCode).
+predicate(_source,is,Individual).
+predicate(_source,Types,DS_AssociationTypeCode).
+predicate(abstractClass,is,Individual).
+predicate(abstractClass,Types,MD_DataTypeCode).
+predicate(abstract_TopoLevCd,is,Individual).
+predicate(abstract_TopoLevCd,Types,MD_TopologyLevelCode).
+predicate(aggregatedClass,is,Individual).
+predicate(aggregatedClass,Types,MD_DataTypeCode).
+predicate(annually,is,Individual).
+predicate(annually,Types,MD_MaintenanceFrequenceCode).
+predicate(area,is,Individual).
+predicate(area,Types,MD_CellGeometryCode).
+predicate(asNeeded,is,Individual).
+predicate(asNeeded,Types,MD_MaintenanceFrequenceCode).
+predicate(association,is,Individual).
+predicate(association,Types,MD_DataTypeCode).
+predicate(attribute,is,Individual).
+predicate(attribute,Types,MD_ScopeCode).
+predicate(attributeType,is,Individual).
+predicate(attributeType,Types,MD_ScopeCode).
+predicate(biannually,is,Individual).
+predicate(biannually,Types,MD_MaintenanceFrequenceCode).
+predicate(big5,is,Individual).
+predicate(big5,Types,MD_CharacterSetCode).
+predicate(biota,is,Individual).
+predicate(biota,Types,MD_TopicCategoryCode).
+predicate(blurredImage,is,Individual).
+predicate(blurredImage,Types,MD_ImagingConditionCode).
+predicate(boundaries,is,Individual).
+predicate(boundaries,Types,MD_TopicCategoryCode).
+predicate(campaign,is,Individual).
+predicate(campaign,Types,DS_InitiativeTypeCode).
+predicate(cdRom,is,Individual).
+predicate(cdRom,Types,MD_MediumNameCode).
+predicate(center,is,Individual).
+predicate(center,Types,MD_PixelOrientationCode).
+predicate(characterString,is,Individual).
+predicate(characterString,Types,MD_DataTypeCode).
+predicate(class,is,Individual).
+predicate(class,Types,MD_DataTypeCode).
+predicate(cliomatologyMetereologyAtmosphere,is,Individual).
+predicate(cliomatologyMetereologyAtmosphere,Types,MD_TopicCategoryCode).
+predicate(cloud,is,Individual).
+predicate(cloud,Types,MD_ImagingConditionCode).
+predicate(codelist,is,Individual).
+predicate(codelist,Types,MD_DataTypeCode).
+predicate(codelistElement,is,Individual).
+predicate(codelistElement,Types,MD_DataTypeCode).
+predicate(collection,is,Individual).
+predicate(collection,Types,DS_InitiativeTypeCode).
+predicate(collectionHardware,is,Individual).
+predicate(collectionHardware,Types,MD_ScopeCode).
+predicate(collectionSession,is,Individual).
+predicate(collectionSession,Types,MD_ScopeCode).
+predicate(column,is,Individual).
+predicate(column,Types,MD_DimensionNameTypeCode).
+predicate(completed,is,Individual).
+predicate(completed,Types,MD_ProgressCode).
+predicate(complexes,is,Individual).
+predicate(complexes,Types,MD_GeometricObjectTypeCode).
+predicate(composites,is,Individual).
+predicate(composites,Types,MD_GeometricObjectTypeCode).
+predicate(conditional,is,Individual).
+predicate(conditional,Types,MD_ObligationCode).
+predicate(confidential,is,Individual).
+predicate(confidential,Types,MD_ClassificationCode).
+predicate(continual,is,Individual).
+predicate(continual,Types,MD_MaintenanceFrequenceCode).
+predicate(copyright,is,Individual).
+predicate(copyright,Types,MD_RestrictionCode).
+predicate(cpio,is,Individual).
+predicate(cpio,Types,MD_MediumFormatCode).
+predicate(creation,is,Individual).
+predicate(creation,Types,CI_DateTypeCode).
+predicate(crossReference,is,Individual).
+predicate(crossReference,Types,DS_AssociationTypeCode).
+predicate(crossTrack,is,Individual).
+predicate(crossTrack,Types,MD_DimensionNameTypeCode).
+predicate(curve,is,Individual).
+predicate(curve,Types,MD_GeometricObjectTypeCode).
+predicate(custodian,is,Individual).
+predicate(custodian,Types,CI_RoleCode).
+predicate(daily,is,Individual).
+predicate(daily,Types,MD_MaintenanceFrequenceCode).
+predicate(dataTypeClass,is,Individual).
+predicate(dataTypeClass,Types,MD_DataTypeCode).
+predicate(degradingObliquity,is,Individual).
+predicate(degradingObliquity,Types,MD_ImagingConditionCode).
+predicate(digitalLinearTape,is,Individual).
+predicate(digitalLinearTape,Types,MD_MediumNameCode).
+predicate(dimensionGroup,is,Individual).
+predicate(dimensionGroup,Types,MD_ScopeCode).
+predicate(directExternal,is,Individual).
+predicate(directExternal,Types,DQ_EvaluationMethodTypeCode).
+predicate(directInternal,is,Individual).
+predicate(directInternal,Types,DQ_EvaluationMethodTypeCode).
+predicate(discipline,is,Individual).
+predicate(discipline,Types,MD_KeywordTypeCode).
+predicate(distributors,is,Individual).
+predicate(distributors,Types,CI_RoleCode).
+predicate(documentDigital,is,Individual).
+predicate(documentDigital,Types,CI_PresentationFormCode).
+predicate(documentHardcopy,is,Individual).
+predicate(documentHardcopy,Types,CI_PresentationFormCode).
+predicate(download,is,Individual).
+predicate(download,Types,CI_OnLineFunctionCode).
+predicate(dvd,is,Individual).
+predicate(dvd,Types,MD_MediumNameCode).
+predicate(dvdRom,is,Individual).
+predicate(dvdRom,Types,MD_MediumNameCode).
+predicate(ebcdic,is,Individual).
+predicate(ebcdic,Types,MD_CharacterSetCode).
+predicate(economy,is,Individual).
+predicate(economy,Types,MD_TopicCategoryCode).
+predicate(elevation,is,Individual).
+predicate(elevation,Types,MD_TopicCategoryCode).
+predicate(enumeration,is,Individual).
+predicate(enumeration,Types,MD_DataTypeCode).
+predicate(environment,is,Individual).
+predicate(environment,Types,MD_TopicCategoryCode).
+predicate(eucJP,is,Individual).
+predicate(eucJP,Types,MD_CharacterSetCode).
+predicate(eucKR,is,Individual).
+predicate(eucKR,Types,MD_CharacterSetCode).
+predicate(exercise,is,Individual).
+predicate(exercise,Types,DS_InitiativeTypeCode).
+predicate(experiment,is,Individual).
+predicate(experiment,Types,DS_InitiativeTypeCode).
+predicate(farming,is,Individual).
+predicate(farming,Types,MD_TopicCategoryCode).
+predicate(feature,is,Individual).
+predicate(feature,Types,MD_ScopeCode).
+predicate(featureType,is,Individual).
+predicate(featureType,Types,MD_ScopeCode).
+predicate(fieldSesson,is,Individual).
+predicate(fieldSesson,Types,MD_ScopeCode).
+predicate(fog,is,Individual).
+predicate(fog,Types,MD_ImagingConditionCode).
+predicate(fortnightly,is,Individual).
+predicate(fortnightly,Types,MD_MaintenanceFrequenceCode).
+predicate(fullPlanarGraph,is,Individual).
+predicate(fullPlanarGraph,Types,MD_TopologyLevelCode).
+predicate(fullSurfaceGraph,is,Individual).
+predicate(fullSurfaceGraph,Types,MD_TopologyLevelCode).
+predicate(fullTopology3D,is,Individual).
+predicate(fullTopology3D,Types,MD_TopologyLevelCode).
+predicate(geometryOnly,is,Individual).
+predicate(geometryOnly,Types,MD_TopologyLevelCode).
+predicate(geoscientificInformation,is,Individual).
+predicate(geoscientificInformation,Types,MD_TopicCategoryCode).
+predicate(grid,is,Individual).
+predicate(grid,Types,MD_SpatialRepresentationTypeCode).
+predicate(hardcopy,is,Individual).
+predicate(hardcopy,Types,MD_MediumNameCode).
+predicate(health,is,Individual).
+predicate(health,Types,MD_TopicCategoryCode).
+predicate(heavySmokeOrDust,is,Individual).
+predicate(heavySmokeOrDust,Types,MD_ImagingConditionCode).
+predicate(highSierra,is,Individual).
+predicate(highSierra,Types,MD_MediumFormatCode).
+predicate(historicalArchive,is,Individual).
+predicate(historicalArchive,Types,MD_ProgressCode).
+predicate(iiregular,is,Individual).
+predicate(iiregular,Types,MD_MaintenanceFrequenceCode).
+predicate(image,is,Individual).
+predicate(image,Types,MD_CoverageContentTypeCode).
+predicate(imageDigital,is,Individual).
+predicate(imageDigital,Types,CI_PresentationFormCode).
+predicate(imageHardCopy,is,Individual).
+predicate(imageHardCopy,Types,CI_PresentationFormCode).
+predicate(imageryBaseMapsEarthCover,is,Individual).
+predicate(imageryBaseMapsEarthCover,Types,MD_TopicCategoryCode).
+predicate(indirect,is,Individual).
+predicate(indirect,Types,DQ_EvaluationMethodTypeCode).
+predicate(information,is,Individual).
+predicate(information,Types,CI_OnLineFunctionCode).
+predicate(inlandWaters,is,Individual).
+predicate(inlandWaters,Types,MD_TopicCategoryCode).
+predicate(integer,is,Individual).
+predicate(integer,Types,MD_DataTypeCode).
+predicate(intellectualPropertyrights,is,Individual).
+predicate(intellectualPropertyrights,Types,MD_RestrictionCode).
+predicate(intelligenceMilitary,is,Individual).
+predicate(intelligenceMilitary,Types,MD_TopicCategoryCode).
+predicate(interfaceClass,is,Individual).
+predicate(interfaceClass,Types,MD_DataTypeCode).
+predicate(iso9660,is,Individual).
+predicate(iso9660,Types,MD_MediumFormatCode).
+predicate(iso9660AppleHFS,is,Individual).
+predicate(iso9660AppleHFS,Types,MD_MediumFormatCode).
+predicate(iso9660RockRidge,is,Individual).
+predicate(iso9660RockRidge,Types,MD_MediumFormatCode).
+predicate(jis,is,Individual).
+predicate(jis,Types,MD_CharacterSetCode).
+predicate(largerWorkCitation,is,Individual).
+predicate(largerWorkCitation,Types,DS_AssociationTypeCode).
+predicate(license,is,Individual).
+predicate(license,Types,MD_RestrictionCode).
+predicate(line,is,Individual).
+predicate(line,Types,MD_DimensionNameTypeCode).
+predicate(location,is,Individual).
+predicate(location,Types,MD_TopicCategoryCode).
+predicate(lowerLeft,is,Individual).
+predicate(lowerLeft,Types,MD_PixelOrientationCode).
+predicate(lowerRight,is,Individual).
+predicate(lowerRight,Types,MD_PixelOrientationCode).
+predicate(mandatory,is,Individual).
+predicate(mandatory,Types,MD_ObligationCode).
+predicate(mapDigital,is,Individual).
+predicate(mapDigital,Types,CI_PresentationFormCode).
+predicate(mapHardCopy,is,Individual).
+predicate(mapHardCopy,Types,CI_PresentationFormCode).
+predicate(metaClass,is,Individual).
+predicate(metaClass,Types,MD_DataTypeCode).
+predicate(mission,is,Individual).
+predicate(mission,Types,DS_InitiativeTypeCode).
+predicate(model,is,Individual).
+predicate(model,Types,MD_ScopeCode).
+predicate(modelDigital,is,Individual).
+predicate(modelDigital,Types,CI_PresentationFormCode).
+predicate(modelHardcopy,is,Individual).
+predicate(modelHardcopy,Types,CI_PresentationFormCode).
+predicate(monthly,is,Individual).
+predicate(monthly,Types,MD_MaintenanceFrequenceCode).
+predicate(night,is,Individual).
+predicate(night,Types,MD_ImagingConditionCode).
+predicate(nonGeographicDataset,is,Individual).
+predicate(nonGeographicDataset,Types,MD_ScopeCode).
+predicate(nonImageSensor,is,Individual).
+predicate(nonImageSensor,Types,DS_InitiativeTypeCode).
+predicate(notPlanned,is,Individual).
+predicate(notPlanned,Types,MD_MaintenanceFrequenceCode).
+predicate(obsolete,is,Individual).
+predicate(obsolete,Types,MD_ProgressCode).
+predicate(oceans,is,Individual).
+predicate(oceans,Types,MD_TopicCategoryCode).
+predicate(offLineAccess,is,Individual).
+predicate(offLineAccess,Types,CI_OnLineFunctionCode).
+predicate(onGoing,is,Individual).
+predicate(onGoing,Types,MD_ProgressCode).
+predicate(onLineMedia,is,Individual).
+predicate(onLineMedia,Types,MD_MediumNameCode).
+predicate(operation,is,Individual).
+predicate(operation,Types,DS_InitiativeTypeCode).
+predicate(optional,is,Individual).
+predicate(optional,Types,MD_ObligationCode).
+predicate(order,is,Individual).
+predicate(order,Types,CI_OnLineFunctionCode).
+predicate(originator,is,Individual).
+predicate(originator,Types,CI_RoleCode).
+predicate(otherRestrictions,is,Individual).
+predicate(otherRestrictions,Types,MD_RestrictionCode).
+predicate(owner,is,Individual).
+predicate(owner,Types,CI_RoleCode).
+predicate(partOfSeamlessDatabase,is,Individual).
+predicate(partOfSeamlessDatabase,Types,DS_AssociationTypeCode).
+predicate(patent,is,Individual).
+predicate(patent,Types,MD_RestrictionCode).
+predicate(patentPending,is,Individual).
+predicate(patentPending,Types,MD_RestrictionCode).
+predicate(physicalMeasurement,is,Individual).
+predicate(physicalMeasurement,Types,MD_CoverageContentTypeCode).
+predicate(place,is,Individual).
+predicate(place,Types,MD_KeywordTypeCode).
+predicate(planarGraph,is,Individual).
+predicate(planarGraph,Types,MD_TopologyLevelCode).
+predicate(planned,is,Individual).
+predicate(planned,Types,MD_ProgressCode).
+predicate(planningCadastre,is,Individual).
+predicate(planningCadastre,Types,MD_TopicCategoryCode).
+predicate(platform,is,Individual).
+predicate(platform,Types,DS_InitiativeTypeCode).
+predicate(point,is,Individual).
+predicate(point,Types,MD_CellGeometryCode).
+predicate(principalInvestigator,is,Individual).
+predicate(principalInvestigator,Types,CI_RoleCode).
+predicate(process,is,Individual).
+predicate(process,Types,DS_InitiativeTypeCode).
+predicate(profileDigital,is,Individual).
+predicate(profileDigital,Types,CI_PresentationFormCode).
+predicate(profileHardcopy,is,Individual).
+predicate(profileHardcopy,Types,CI_PresentationFormCode).
+predicate(program,is,Individual).
+predicate(program,Types,DS_InitiativeTypeCode).
+predicate(project,is,Individual).
+predicate(project,Types,DS_InitiativeTypeCode).
+predicate(propertyType,is,Individual).
+predicate(propertyType,Types,MD_ScopeCode).
+predicate(publication,is,Individual).
+predicate(publication,Types,CI_DateTypeCode).
+predicate(publisher,is,Individual).
+predicate(publisher,Types,CI_RoleCode).
+predicate(quarterly,is,Individual).
+predicate(quarterly,Types,MD_MaintenanceFrequenceCode).
+predicate(rain,is,Individual).
+predicate(rain,Types,MD_ImagingConditionCode).
+predicate(required,is,Individual).
+predicate(required,Types,MD_ProgressCode).
+predicate(resourceProvider,is,Individual).
+predicate(resourceProvider,Types,CI_RoleCode).
+predicate(restricted,is,Individual).
+predicate(restricted,Types,MD_RestrictionCode).
+predicate(revision,is,Individual).
+predicate(revision,Types,CI_DateTypeCode).
+predicate(row,is,Individual).
+predicate(row,Types,MD_DimensionNameTypeCode).
+predicate(sample,is,Individual).
+predicate(sample,Types,MD_DimensionNameTypeCode).
+predicate(satellite,is,Individual).
+predicate(satellite,Types,MD_MediumNameCode).
+predicate(search,is,Individual).
+predicate(search,Types,CI_OnLineFunctionCode).
+predicate(secret,is,Individual).
+predicate(secret,Types,MD_ClassificationCode).
+predicate(semiDarkness,is,Individual).
+predicate(semiDarkness,Types,MD_ImagingConditionCode).
+predicate(service,is,Individual).
+predicate(service,Types,MD_ScopeCode).
+predicate(shadow,is,Individual).
+predicate(shadow,Types,MD_ImagingConditionCode).
+predicate(shiftJIS,is,Individual).
+predicate(shiftJIS,Types,MD_CharacterSetCode).
+predicate(society,is,Individual).
+predicate(society,Types,MD_TopicCategoryCode).
+predicate(software,is,Individual).
+predicate(software,Types,MD_ScopeCode).
+predicate(solid,is,Individual).
+predicate(solid,Types,MD_GeometricObjectTypeCode).
+predicate(specifiedClass,is,Individual).
+predicate(specifiedClass,Types,MD_DataTypeCode).
+predicate(stereoModel,is,Individual).
+predicate(stereoModel,Types,MD_SpatialRepresentationTypeCode).
+predicate(stereomate,is,Individual).
+predicate(stereomate,Types,DS_AssociationTypeCode).
+predicate(stratum,is,Individual).
+predicate(stratum,Types,MD_KeywordTypeCode).
+predicate(structure,is,Individual).
+predicate(structure,Types,MD_TopicCategoryCode).
+predicate(study,is,Individual).
+predicate(study,Types,DS_InitiativeTypeCode).
+predicate(surface,is,Individual).
+predicate(surface,Types,MD_GeometricObjectTypeCode).
+predicate(surfaceGraph,is,Individual).
+predicate(surfaceGraph,Types,MD_TopologyLevelCode).
+predicate(tableDigital,is,Individual).
+predicate(tableDigital,Types,CI_PresentationFormCode).
+predicate(tableHardcopy,is,Individual).
+predicate(tableHardcopy,Types,CI_PresentationFormCode).
+predicate(tar,is,Individual).
+predicate(tar,Types,MD_MediumFormatCode).
+predicate(task,is,Individual).
+predicate(task,Types,DS_InitiativeTypeCode).
+predicate(telephoneLink,is,Individual).
+predicate(telephoneLink,Types,MD_MediumNameCode).
+predicate(temporal,is,Individual).
+predicate(temporal,Types,MD_KeywordTypeCode).
+predicate(terrainMasking,is,Individual).
+predicate(terrainMasking,Types,MD_ImagingConditionCode).
+predicate(textTable,is,Individual).
+predicate(textTable,Types,MD_SpatialRepresentationTypeCode).
+predicate(thematicClassification,is,Individual).
+predicate(thematicClassification,Types,MD_CoverageContentTypeCode).
+predicate(theme,is,Individual).
+predicate(theme,Types,MD_KeywordTypeCode).
+predicate(time,is,Individual).
+predicate(time,Types,MD_DimensionNameTypeCode).
+predicate(tin,is,Individual).
+predicate(tin,Types,MD_SpatialRepresentationTypeCode).
+predicate(topology1D,is,Individual).
+predicate(topology1D,Types,MD_TopologyLevelCode).
+predicate(topology3D,is,Individual).
+predicate(topology3D,Types,MD_TopologyLevelCode).
+predicate(topsecret,is,Individual).
+predicate(topsecret,Types,MD_ClassificationCode).
+predicate(track,is,Individual).
+predicate(track,Types,MD_DimensionNameTypeCode).
+predicate(trademark,is,Individual).
+predicate(trademark,Types,MD_RestrictionCode).
+predicate(transportation,is,Individual).
+predicate(transportation,Types,MD_TopicCategoryCode).
+predicate(trial,is,Individual).
+predicate(trial,Types,DS_InitiativeTypeCode).
+predicate(typeClass,is,Individual).
+predicate(typeClass,Types,MD_DataTypeCode).
+predicate(ucs2,is,Individual).
+predicate(ucs2,Types,MD_CharacterSetCode).
+predicate(ucs4,is,Individual).
+predicate(ucs4,Types,MD_CharacterSetCode).
+predicate(unclassified,is,Individual).
+predicate(unclassified,Types,MD_ClassificationCode).
+predicate(underdevelopment,is,Individual).
+predicate(underdevelopment,Types,MD_ProgressCode).
+predicate(unionClass,is,Individual).
+predicate(unionClass,Types,MD_DataTypeCode).
+predicate(unknow,is,Individual).
+predicate(unknow,Types,MD_MaintenanceFrequenceCode).
+predicate(upperLeft,is,Individual).
+predicate(upperLeft,Types,MD_PixelOrientationCode).
+predicate(upperRight,is,Individual).
+predicate(upperRight,Types,MD_PixelOrientationCode).
+predicate(usAscii,is,Individual).
+predicate(usAscii,Types,MD_CharacterSetCode).
+predicate(user,is,Individual).
+predicate(user,Types,CI_RoleCode).
+predicate(utf16,is,Individual).
+predicate(utf16,Types,MD_CharacterSetCode).
+predicate(utf7,is,Individual).
+predicate(utf7,Types,MD_CharacterSetCode).
+predicate(utf8,is,Individual).
+predicate(utf8,Types,MD_CharacterSetCode).
+predicate(utilitiesCommunication,is,Individual).
+predicate(utilitiesCommunication,Types,MD_TopicCategoryCode).
+predicate(vector,is,Individual).
+predicate(vector,Types,MD_SpatialRepresentationTypeCode).
+predicate(vertical,is,Individual).
+predicate(vertical,Types,MD_DimensionNameTypeCode).
+predicate(video,is,Individual).
+predicate(video,Types,MD_SpatialRepresentationTypeCode).
+predicate(videoDigital,is,Individual).
+predicate(videoDigital,Types,CI_PresentationFormCode).
+predicate(videoHardcopy,is,Individual).
+predicate(videoHardcopy,Types,CI_PresentationFormCode).
+predicate(weekly,is,Individual).
+predicate(weekly,Types,MD_MaintenanceFrequenceCode).

@@ -1,0 +1,204 @@
+is(www.w3.org/2000/01/-schema#,Datatype):1.0
+is(date,Datatype):1.0
+is(dateTime,Datatype):1.0
+is(actsOnProperty,ObjectProperty):1.0
+InverseOf(actsOnProperty,isActedOnBy):1.0
+is(hasFeatureOfInterest,ObjectProperty):1.0
+InverseOf(hasFeatureOfInterest,isFeatureOfInterestOf):1.0
+is(hasResult,ObjectProperty):1.0
+InverseOf(hasResult,isResultOf):1.0
+is(hasSample,ObjectProperty):1.0
+Characteristics(hasSample,InverseFunctional):1.0
+InverseOf(hasSample,isSampleOf):1.0
+is(hosts,ObjectProperty):1.0
+SubPropertyChain(hosts,inDeployment o deployedSystem):1.0
+InverseOf(hosts,isHostedBy):1.0
+is(isActedOnBy,ObjectProperty):1.0
+InverseOf(isActedOnBy,actsOnProperty):1.0
+is(isFeatureOfInterestOf,ObjectProperty):1.0
+InverseOf(isFeatureOfInterestOf,hasFeatureOfInterest):1.0
+is(isHostedBy,ObjectProperty):1.0
+InverseOf(isHostedBy,hosts):1.0
+is(isObservedBy,ObjectProperty):1.0
+InverseOf(isObservedBy,observes):1.0
+is(isResultOf,ObjectProperty):1.0
+InverseOf(isResultOf,hasResult):1.0
+is(isSampleOf,ObjectProperty):1.0
+Characteristics(isSampleOf,Functional):1.0
+InverseOf(isSampleOf,hasSample):1.0
+is(madeActuation,ObjectProperty):1.0
+InverseOf(madeActuation,madeByActuator):1.0
+is(madeByActuator,ObjectProperty):1.0
+InverseOf(madeByActuator,madeActuation):1.0
+is(madeBySampler,ObjectProperty):1.0
+InverseOf(madeBySampler,madeSampling):1.0
+is(madeBySensor,ObjectProperty):1.0
+InverseOf(madeBySensor,madeObservation):1.0
+is(madeObservation,ObjectProperty):1.0
+InverseOf(madeObservation,madeBySensor):1.0
+is(madeSampling,ObjectProperty):1.0
+InverseOf(madeSampling,madeBySampler):1.0
+is(observedProperty,ObjectProperty):1.0
+is(observes,ObjectProperty):1.0
+SubPropertyOf(observes,forProperty):1.0
+InverseOf(observes,isObservedBy):1.0
+is(phenomenonTime,ObjectProperty):1.0
+is(usedProcedure,ObjectProperty):1.0
+SubPropertyChain(usedProcedure,madeByActuator o implements):1.0
+SubPropertyChain(usedProcedure,madeBySampler o implements):1.0
+SubPropertyChain(usedProcedure,madeBySensor o implements):1.0
+is(deployedOnPlatform,ObjectProperty):1.0
+InverseOf(deployedOnPlatform,inDeployment):1.0
+is(deployedSystem,ObjectProperty):1.0
+InverseOf(deployedSystem,hasDeployment):1.0
+is(detects,ObjectProperty):1.0
+is(forProperty,ObjectProperty):1.0
+is(hasDeployment,ObjectProperty):1.0
+InverseOf(hasDeployment,deployedSystem):1.0
+is(hasInput,ObjectProperty):1.0
+is(hasOutput,ObjectProperty):1.0
+is(hasProperty,ObjectProperty):1.0
+InverseOf(hasProperty,isPropertyOf):1.0
+is(hasSubSystem,ObjectProperty):1.0
+is(implementedBy,ObjectProperty):1.0
+InverseOf(implementedBy,implements):1.0
+is(implements,ObjectProperty):1.0
+InverseOf(implements,implementedBy):1.0
+is(inDeployment,ObjectProperty):1.0
+InverseOf(inDeployment,deployedOnPlatform):1.0
+is(isPropertyOf,ObjectProperty):1.0
+InverseOf(isPropertyOf,hasProperty):1.0
+is(isProxyFor,ObjectProperty):1.0
+is(wasOriginatedBy,ObjectProperty):1.0
+Characteristics(wasOriginatedBy,Functional):1.0
+is(hasSimpleResult,DataProperty):1.0
+is(resultTime,DataProperty):1.0
+Range(resultTime,dateTime):1.0
+is(Vocabulary,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(TemporalEntity,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(ActuatableProperty,Class):1.0
+SubClassOf(ActuatableProperty,Property,):1.0
+SubClassOf(ActuatableProperty,isActedOnBy only Actuation):1.0
+is(Actuation,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,actsOnProperty only ActuatableProperty,):1.0
+is(Thing,,hasFeatureOfInterest only FeatureOfInterest,):1.0
+is(Thing,,hasResult only Result,):1.0
+is(Thing,,madeByActuator only Actuator,):1.0
+is(Thing,,usedProcedure only Procedure,):1.0
+is(Thing,,actsOnProperty min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasResult min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasFeatureOfInterest exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,madeByActuator exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,resultTime exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Actuator,Class):1.0
+SubClassOf(Actuator,System,):1.0
+SubClassOf(Actuator,madeActuation only Actuation,):1.0
+SubClassOf(Actuator,forProperty only ActuatableProperty,):1.0
+is(Thing,implements min 1 www.w3.org/2002/07/#):1.0
+is(FeatureOfInterest,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasSample only Sample,):1.0
+is(Thing,,hasProperty only Property,):1.0
+is(Thing,hasProperty min 1 www.w3.org/2002/07/#):1.0
+is(ObservableProperty,Class):1.0
+SubClassOf(ObservableProperty,Property,):1.0
+SubClassOf(ObservableProperty,isObservedBy only Sensor,):1.0
+SubClassOf(ObservableProperty,inverse (observedProperty) only Observation,):1.0
+SubClassOf(ObservableProperty,inverse (isProxyFor) only Stimulus):1.0
+is(Observation,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasFeatureOfInterest only FeatureOfInterest,):1.0
+is(Thing,,hasResult only Result,):1.0
+is(Thing,,madeBySensor only Sensor,):1.0
+is(Thing,,observedProperty only ObservableProperty,):1.0
+is(Thing,,usedProcedure only Procedure,):1.0
+is(Thing,,wasOriginatedBy only Stimulus,):1.0
+is(Thing,,hasResult min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasFeatureOfInterest exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,madeBySensor exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,observedProperty exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,phenomenonTime exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,wasOriginatedBy exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,resultTime exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Platform,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hosts only System,):1.0
+is(Thing,,inDeployment only Deployment):1.0
+is(Procedure,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasInput only Input,):1.0
+is(Thing,,hasOutput only Output,):1.0
+is(Thing,,implementedBy only System):1.0
+is(Result,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,isResultOf min 1 www.w3.org/2002/07/#):1.0
+is(Sample,Class):1.0
+SubClassOf(Sample,FeatureOfInterest,):1.0
+SubClassOf(Sample,Result,):1.0
+SubClassOf(Sample,isResultOf only Sampling,):1.0
+SubClassOf(Sample,isSampleOf only FeatureOfInterest,):1.0
+is(Thing,,isResultOf min 1 www.w3.org/2002/07/#):1.0
+is(Thing,isSampleOf min 1 www.w3.org/2002/07/#):1.0
+is(Sampler,Class):1.0
+SubClassOf(Sampler,System,):1.0
+SubClassOf(Sampler,madeSampling only Sampling,):1.0
+is(Thing,implements min 1 www.w3.org/2002/07/#):1.0
+is(Sampling,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasFeatureOfInterest only FeatureOfInterest,):1.0
+is(Thing,,hasResult only Sample,):1.0
+is(Thing,,madeBySampler only Sampler,):1.0
+is(Thing,,usedProcedure only Procedure,):1.0
+is(Thing,,hasResult min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasFeatureOfInterest exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,madeBySampler exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,resultTime exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Sensor,Class):1.0
+SubClassOf(Sensor,System,):1.0
+SubClassOf(Sensor,madeObservation only Observation,):1.0
+SubClassOf(Sensor,observes only ObservableProperty,):1.0
+SubClassOf(Sensor,detects only Stimulus,):1.0
+is(Thing,implements min 1 www.w3.org/2002/07/#):1.0
+is(Deployment,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,deployedOnPlatform only Platform,):1.0
+is(Thing,,deployedSystem only System,):1.0
+is(Thing,,forProperty only Property):1.0
+is(Input,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,inverse (hasInput) only Procedure,):1.0
+is(Thing,inverse (hasInput) min 1 www.w3.org/2002/07/#):1.0
+is(Output,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,inverse (hasOutput) only Procedure,):1.0
+is(Thing,inverse (hasOutput) min 1 www.w3.org/2002/07/#):1.0
+is(Property,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,isPropertyOf only FeatureOfInterest):1.0
+is(Stimulus,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,isProxyFor only ObservableProperty,):1.0
+is(Thing,,inverse (detects) only Sensor,):1.0
+is(Thing,,inverse (wasOriginatedBy) only Observation):1.0
+is(System,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,isHostedBy only Platform,):1.0
+is(Thing,,hasDeployment only Deployment,):1.0
+is(Thing,,hasSubSystem only System,):1.0
+is(Thing,,implements only Procedure,):1.0
+is(Thing,,inverse (hasSubSystem) only System):1.0
+is(ns.com/foaf/0.1/,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+Types(Thing,Vocabulary):1.0
+is(_,Individual):1.0
+is(Agent,ns.com/foaf/0.1/):1.0
+is(_,Individual):1.0
+is(Agent,ns.com/foaf/0.1/):1.0
+is(_,Individual):1.0
+is(Agent,ns.com/foaf/0.1/):1.0
+is(_,Individual):1.0
+is(Agent,ns.com/foaf/0.1/):1.0

@@ -1,0 +1,18 @@
+is-a-well-formed-formula-of is ObjectProperty
+command-language is Class
+command-language DisjointWith data-manipulation-language-expression
+composite-expression is Class
+composite-expression SubClassOf computer-language-expression
+computer-language-expression is Class
+computer-language-expression SubClassOf formal-expression,
+computer-language-expression SubClassOf is-a-well-formed-formula-of some command-language,
+computer-language-expression SubClassOf is-a-well-formed-formula-of only data-manipulation-language-expression
+data-description-language-expression is Class
+data-description-language-expression SubClassOf computer-language-expression
+data-manipulation-language-expression is Class
+data-manipulation-language-expression SubClassOf computer-language-expression
+data-manipulation-language-expression DisjointWith command-language
+lexeme is Class
+lexeme SubClassOf computer-language-expression
+formal-expression is Class
+www.w3.org/2002/07/# is Class

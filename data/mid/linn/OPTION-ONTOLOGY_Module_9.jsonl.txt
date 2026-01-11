@@ -1,0 +1,32 @@
+predicate(IAO_0000235,is,ObjectProperty).
+predicate(IAO_0000235,Domain,BFO_0000001).
+predicate(IAO_0000235,Range,IAO_0000030).
+predicate(OBI_0000294,is,ObjectProperty).
+predicate(OBI_0000300,is,ObjectProperty).
+predicate(OBI_0000260,is,Class).
+predicate(BFO_0000001,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(BFO_0000002,is,Class).
+predicate(BFO_0000002,SubClassOf,BFO_0000001).
+predicate(BFO_0000003,is,Class).
+predicate(BFO_0000003,SubClassOf,BFO_0000001).
+predicate(BFO_0000005,is,Class).
+predicate(BFO_0000005,SubClassOf,ObsoleteClass).
+predicate(IAO_0000030,is,Class).
+predicate(PATO_0000051,is,Class).
+predicate(PATO_0000051,SubClassOf,PATO_0001241).
+predicate(PATO_0000122,is,Class).
+predicate(PATO_0000122,SubClassOf,PATO_0000051).
+predicate(PATO_0001241,is,Class).
+predicate(Random_sampling_technique,is,Class).
+predicate(benchmark_optimization_study_design,is,Class).
+predicate(benchmark_optimization_study_implementation,is,Class).
+predicate(benchmark_optimization_study_implementation,SubClassOf,OBI_0000260,).
+predicate(benchmark_optimization_study_implementation,SubClassOf,OBI_0000294 some benchmark_optimization_study_design,).
+predicate(benchmark_optimization_study_implementation,SubClassOf,OBI_0000300 some optimization_algorithm_benchmark_study_design_execution).
+predicate(benchmark_problem_transformation,is,Class).
+predicate(optimization_algorithm_benchmark_study_design_execution,is,Class).
+predicate(rotation_data_transformation,is,Class).
+predicate(rotation_data_transformation,SubClassOf,benchmark_problem_transformation).
+predicate(ObsoleteClass,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

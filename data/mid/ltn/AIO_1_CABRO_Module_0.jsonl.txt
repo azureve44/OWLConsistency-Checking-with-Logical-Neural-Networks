@@ -1,0 +1,206 @@
+is(has,ObjectProperty):1.0
+is(hasMeasurementOf,ObjectProperty):1.0
+is(hasSource,ObjectProperty):1.0
+is(isInvolvedIn,ObjectProperty):1.0
+is(isPartOf,ObjectProperty):1.0
+is(isStoredInto,ObjectProperty):1.0
+is(isUsing,ObjectProperty):1.0
+is(AdaptationSoftware,Class):1.0
+SubClassOf(AdaptationSoftware,Software):1.0
+is(AssistedLiving,Class):1.0
+SubClassOf(AssistedLiving,ClinicalProcess):1.0
+is(Bluetooth,Class):1.0
+SubClassOf(Bluetooth,CommunicationsTechnology):1.0
+is(BrainActivity,Class):1.0
+SubClassOf(BrainActivity,Metrics):1.0
+is(BrainActivitySensors,Class):1.0
+SubClassOf(BrainActivitySensors,Sensors,):1.0
+SubClassOf(BrainActivitySensors,hasMeasurementOf some BrainActivity):1.0
+is(ClinicalProcess,Class):1.0
+EquivalentTo(ClinicalProcess,Impairment):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,has some Interaction):1.0
+DisjointWith(Thing,,Software):1.0
+DisjointWith(Thing,,Setting):1.0
+DisjointWith(Thing,,Metrics):1.0
+DisjointWith(Thing,,MachineLearning):1.0
+DisjointWith(Thing,,Interaction):1.0
+DisjointWith(Thing,,Impairment):1.0
+DisjointWith(Thing,,Human):1.0
+is(Cognitive,Class):1.0
+SubClassOf(Cognitive,Impairment):1.0
+is(CommunicationsTechnology,Class):1.0
+SubClassOf(CommunicationsTechnology,Hardware):1.0
+is(Computer,Class):1.0
+SubClassOf(Computer,Hardware):1.0
+is(ComputerToPatientInteraction,Class):1.0
+SubClassOf(ComputerToPatientInteraction,Interaction):1.0
+is(ControlStick,Class):1.0
+SubClassOf(ControlStick,Hardware):1.0
+is(DataAnalysisSoftware,Class):1.0
+SubClassOf(DataAnalysisSoftware,Software):1.0
+is(DataClassification,Class):1.0
+SubClassOf(DataClassification,MachineLearning,):1.0
+SubClassOf(DataClassification,isUsing only ClinicalProcess):1.0
+is(DataFusion,Class):1.0
+SubClassOf(DataFusion,MachineLearning):1.0
+is(DataModelling,Class):1.0
+SubClassOf(DataModelling,MachineLearning):1.0
+is(DatabaseManagementSystem,Class):1.0
+SubClassOf(DatabaseManagementSystem,Software):1.0
+is(FeatureSelection,Class):1.0
+SubClassOf(FeatureSelection,MachineLearning):1.0
+is(GameScore,Class):1.0
+SubClassOf(GameScore,Metrics):1.0
+is(HardDiskDrive,Class):1.0
+SubClassOf(HardDiskDrive,Computer):1.0
+is(Hardware,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Setting):1.0
+DisjointWith(Thing,Impairment):1.0
+DisjointWith(Thing,Human):1.0
+is(HeartBeat,Class):1.0
+SubClassOf(HeartBeat,VitalSigns):1.0
+is(HomeBased,Class):1.0
+SubClassOf(HomeBased,Setting):1.0
+is(Human,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Software):1.0
+DisjointWith(Thing,Setting):1.0
+DisjointWith(Thing,Metrics):1.0
+DisjointWith(Thing,MachineLearning):1.0
+DisjointWith(Thing,Interaction):1.0
+DisjointWith(Thing,Impairment):1.0
+DisjointWith(Thing,Hardware):1.0
+DisjointWith(Thing,ClinicalProcess):1.0
+is(ICD,Class):1.0
+SubClassOf(ICD,TerminologiesAndClassifications):1.0
+is(Impairment,Class):1.0
+EquivalentTo(Impairment,ClinicalProcess):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Software):1.0
+DisjointWith(Thing,Setting):1.0
+DisjointWith(Thing,Metrics):1.0
+DisjointWith(Thing,MachineLearning):1.0
+DisjointWith(Thing,Interaction):1.0
+DisjointWith(Thing,Human):1.0
+DisjointWith(Thing,Hardware):1.0
+DisjointWith(Thing,ClinicalProcess):1.0
+is(InPatient,Class):1.0
+SubClassOf(InPatient,Setting):1.0
+is(Interaction,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Impairment):1.0
+DisjointWith(Thing,Human):1.0
+DisjointWith(Thing,ClinicalProcess):1.0
+is(InteractiveGames,Class):1.0
+SubClassOf(InteractiveGames,Software,):1.0
+SubClassOf(InteractiveGames,isUsing some TouchScreen):1.0
+is(InteractiveGaming,Class):1.0
+SubClassOf(InteractiveGaming,RehabilitationActivity,):1.0
+SubClassOf(InteractiveGaming,isPartOf some ClinicalProcess,):1.0
+SubClassOf(InteractiveGaming,isPartOf some):1.0
+SubClassOf(InteractiveGaming,(ClinicalProcess and Impairment),):1.0
+SubClassOf(InteractiveGaming,isUsing some InteractiveGames):1.0
+is(LowerExtremety,Class):1.0
+SubClassOf(LowerExtremety,Motor):1.0
+is(MachineLearning,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,isInvolvedIn some AdaptationSoftware,):1.0
+is(Thing,,isPartOf some DataAnalysisSoftware,):1.0
+is(Thing,,isPartOf some Robot,):1.0
+is(Thing,,isUsing some Metrics):1.0
+DisjointWith(Thing,,Impairment):1.0
+DisjointWith(Thing,,Human):1.0
+DisjointWith(Thing,,ClinicalProcess):1.0
+is(Metrics,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasSource some Patient,):1.0
+is(Thing,,isInvolvedIn some MachineLearning,):1.0
+is(Thing,,isStoredInto some DatabaseManagementSystem):1.0
+DisjointWith(Thing,,Impairment):1.0
+DisjointWith(Thing,,Human):1.0
+DisjointWith(Thing,,ClinicalProcess):1.0
+is(MotionSensor,Class):1.0
+SubClassOf(MotionSensor,Sensors):1.0
+is(Motor,Class):1.0
+SubClassOf(Motor,Impairment):1.0
+is(OutPatient,Class):1.0
+SubClassOf(OutPatient,Setting):1.0
+is(Patient,Class):1.0
+SubClassOf(Patient,Human,):1.0
+SubClassOf(Patient,has some Therapist,):1.0
+SubClassOf(Patient,isInvolvedIn some ClinicalProcess,):1.0
+SubClassOf(Patient,isInvolvedIn some Interaction,):1.0
+SubClassOf(Patient,isInvolvedIn some RehabilitationActivity,):1.0
+SubClassOf(Patient,isPartOf some Setting,):1.0
+SubClassOf(Patient,isUsing some ControlStick,):1.0
+SubClassOf(Patient,isUsing some TouchScreen,):1.0
+SubClassOf(Patient,isInvolvedIn only ClinicalProcess,):1.0
+SubClassOf(Patient,has min 1 Impairment):1.0
+is(PatientAssessment,Class):1.0
+SubClassOf(PatientAssessment,ClinicalProcess):1.0
+is(PatientMonitoring,Class):1.0
+SubClassOf(PatientMonitoring,ClinicalProcess):1.0
+is(PatientToComputerInteraction,Class):1.0
+SubClassOf(PatientToComputerInteraction,MachineLearning,):1.0
+SubClassOf(PatientToComputerInteraction,isUsing some Hardware):1.0
+is(PhysicalExercise,Class):1.0
+SubClassOf(PhysicalExercise,RehabilitationActivity):1.0
+is(PhysicalPower,Class):1.0
+SubClassOf(PhysicalPower,Metrics):1.0
+is(RehabilitationActivity,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Robot,Class):1.0
+SubClassOf(Robot,Hardware):1.0
+is(RobotArm,Class):1.0
+SubClassOf(RobotArm,Robot):1.0
+is(Sensors,Class):1.0
+SubClassOf(Sensors,Hardware):1.0
+is(Setting,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Impairment):1.0
+DisjointWith(Thing,Human):1.0
+DisjointWith(Thing,Hardware):1.0
+DisjointWith(Thing,ClinicalProcess):1.0
+is(Software,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,isUsing some Metrics):1.0
+DisjointWith(Thing,,Impairment):1.0
+DisjointWith(Thing,,Human):1.0
+DisjointWith(Thing,,ClinicalProcess):1.0
+is(SpeechImpairment,Class):1.0
+SubClassOf(SpeechImpairment,Impairment):1.0
+is(SpeechTherapy,Class):1.0
+SubClassOf(SpeechTherapy,RehabilitationActivity):1.0
+is(TerminologiesAndClassifications,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Therapist,Class):1.0
+SubClassOf(Therapist,Human):1.0
+is(TimeSeriesGraph,Class):1.0
+SubClassOf(TimeSeriesGraph,Visualization):1.0
+is(TouchScreen,Class):1.0
+SubClassOf(TouchScreen,Hardware):1.0
+is(Treatment,Class):1.0
+SubClassOf(Treatment,ClinicalProcess):1.0
+is(UpperExtremety,Class):1.0
+SubClassOf(UpperExtremety,Motor):1.0
+is(VisualImpairment,Class):1.0
+SubClassOf(VisualImpairment,Impairment):1.0
+is(Visualization,Class):1.0
+SubClassOf(Visualization,DataAnalysisSoftware):1.0
+is(VitalSigns,Class):1.0
+SubClassOf(VitalSigns,Metrics):1.0
+is(fNIRs,Class):1.0
+SubClassOf(fNIRs,BrainActivitySensors,):1.0
+SubClassOf(fNIRs,hasMeasurementOf some BrainActivity):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+SubClassOf(www.w3.org/2002/07/#,DataClassification):1.0
+is(DimitriosZikos,Individual):1.0
+Types(DimitriosZikos,Patient):1.0
+is(MySQL,Individual):1.0
+Types(MySQL,DatabaseManagementSystem):1.0
+is(OracleDB,Individual):1.0
+Types(OracleDB,DatabaseManagementSystem):1.0
+is(VassilisAthitsos,Individual):1.0
+Types(VassilisAthitsos,Therapist):1.0

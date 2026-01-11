@@ -1,0 +1,516 @@
+is(www.w3.org/2000/01/-schema#,Datatype):1.0
+is(integer,Datatype):1.0
+is(string,Datatype):1.0
+is(conformsToKnedgeRepresentationParadigm,ObjectProperty):1.0
+Domain(conformsToKnedgeRepresentationParadigm,Ontology):1.0
+Range(conformsToKnedgeRepresentationParadigm,KnedgeRepresentationParadigm):1.0
+is(contributesToOntology,ObjectProperty):1.0
+Domain(contributesToOntology,Party):1.0
+Range(contributesToOntology,Ontology):1.0
+InverseOf(contributesToOntology,hasContributor):1.0
+is(createsOntology,ObjectProperty):1.0
+Domain(createsOntology,Party):1.0
+Range(createsOntology,Ontology):1.0
+InverseOf(createsOntology,hasCreator):1.0
+is(definedBy,ObjectProperty):1.0
+Domain(definedBy,OntologyType):1.0
+Range(definedBy,Party):1.0
+InverseOf(definedBy,defines):1.0
+is(defines,ObjectProperty):1.0
+Domain(defines,Party):1.0
+Range(defines,OntologyType):1.0
+InverseOf(defines,definedBy):1.0
+is(designedForOntologyTask,ObjectProperty):1.0
+Domain(designedForOntologyTask,Ontology):1.0
+Range(designedForOntologyTask,OntologyTask):1.0
+is(developedBy,ObjectProperty):1.0
+Domain(developedBy,OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax):1.0
+Range(developedBy,Party):1.0
+InverseOf(developedBy,develops):1.0
+is(develops,ObjectProperty):1.0
+Domain(develops,Party):1.0
+Range(develops,OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax):1.0
+InverseOf(develops,developedBy):1.0
+is(endorsedBy,ObjectProperty):1.0
+Domain(endorsedBy,Ontology):1.0
+Range(endorsedBy,Party):1.0
+InverseOf(endorsedBy,endorses):1.0
+is(endorses,ObjectProperty):1.0
+Domain(endorses,Party):1.0
+Range(endorses,Ontology):1.0
+InverseOf(endorses,endorsedBy):1.0
+is(hasAffiliatedParty,ObjectProperty):1.0
+Domain(hasAffiliatedParty,Party):1.0
+Range(hasAffiliatedParty,Party):1.0
+is(hasContactPerson,ObjectProperty):1.0
+Domain(hasContactPerson,Organisation):1.0
+Range(hasContactPerson,Person):1.0
+InverseOf(hasContactPerson,isContactPerson):1.0
+is(hasContributor,ObjectProperty):1.0
+Domain(hasContributor,Ontology):1.0
+Range(hasContributor,Party):1.0
+InverseOf(hasContributor,contributesToOntology):1.0
+is(hasCreator,ObjectProperty):1.0
+Domain(hasCreator,Ontology):1.0
+Range(hasCreator,Party):1.0
+InverseOf(hasCreator,createsOntology):1.0
+is(hasDomain,ObjectProperty):1.0
+Domain(hasDomain,Ontology):1.0
+Range(hasDomain,OntologyDomain):1.0
+is(hasFormalityLevel,ObjectProperty):1.0
+Domain(hasFormalityLevel,Ontology):1.0
+Range(hasFormalityLevel,FormalityLevel):1.0
+is(hasLicense,ObjectProperty):1.0
+Domain(hasLicense,Ontology):1.0
+Range(hasLicense,LicenseModel):1.0
+is(hasOntologyLanguage,ObjectProperty):1.0
+Domain(hasOntologyLanguage,Ontology):1.0
+Range(hasOntologyLanguage,OntologyLanguage):1.0
+is(hasOntologySyntax,ObjectProperty):1.0
+Domain(hasOntologySyntax,Ontology):1.0
+Range(hasOntologySyntax,OntologySyntax):1.0
+is(hasPriorVersion,ObjectProperty):1.0
+Domain(hasPriorVersion,Ontology):1.0
+Range(hasPriorVersion,Ontology):1.0
+is(hasSyntax,ObjectProperty):1.0
+Domain(hasSyntax,OntologyLanguage):1.0
+Range(hasSyntax,OntologySyntax):1.0
+is(isBackwardCompatibleWith,ObjectProperty):1.0
+Domain(isBackwardCompatibleWith,Ontology):1.0
+Range(isBackwardCompatibleWith,Ontology):1.0
+is(isContactPerson,ObjectProperty):1.0
+Domain(isContactPerson,Person):1.0
+Range(isContactPerson,Organisation):1.0
+InverseOf(isContactPerson,hasContactPerson):1.0
+is(isIncompatibleWith,ObjectProperty):1.0
+Domain(isIncompatibleWith,Ontology):1.0
+Range(isIncompatibleWith,Ontology):1.0
+is(isLocatedAt,ObjectProperty):1.0
+Domain(isLocatedAt,Party):1.0
+Range(isLocatedAt,Location):1.0
+is(isOfType,ObjectProperty):1.0
+Domain(isOfType,Ontology):1.0
+Range(isOfType,OntologyType):1.0
+is(isSubDomainOf,ObjectProperty):1.0
+Domain(isSubDomainOf,OntologyDomain):1.0
+Range(isSubDomainOf,OntologyDomain):1.0
+is(specifiedBy,ObjectProperty):1.0
+Domain(specifiedBy,KnedgeRepresentationParadigm or LicenseModel):1.0
+Range(specifiedBy,Party):1.0
+InverseOf(specifiedBy,specifies):1.0
+is(specifies,ObjectProperty):1.0
+Domain(specifies,Party):1.0
+Range(specifies,KnedgeRepresentationParadigm or LicenseModel):1.0
+InverseOf(specifies,specifiedBy):1.0
+is(supportsRepresentationParadigm,ObjectProperty):1.0
+Domain(supportsRepresentationParadigm,OntologyLanguage):1.0
+Range(supportsRepresentationParadigm,KnedgeRepresentationParadigm):1.0
+is(useImports,ObjectProperty):1.0
+Domain(useImports,Ontology):1.0
+Range(useImports,Ontology):1.0
+is(usedOntologyEngineeringMethodology,ObjectProperty):1.0
+Domain(usedOntologyEngineeringMethodology,Ontology):1.0
+Range(usedOntologyEngineeringMethodology,OntologyEngineeringMethodology):1.0
+is(usedOntologyEngineeringTool,ObjectProperty):1.0
+Domain(usedOntologyEngineeringTool,Ontology):1.0
+Range(usedOntologyEngineeringTool,OntologyEngineeringTool):1.0
+is(URI,DataProperty):1.0
+Domain(URI,Ontology or OntologyDomain):1.0
+Range(URI,string):1.0
+is(acronym,DataProperty):1.0
+Domain(acronym,KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType or Organisation):1.0
+Range(acronym,string):1.0
+is(city,DataProperty):1.0
+Domain(city,Location):1.0
+Range(city,string):1.0
+is(country,DataProperty):1.0
+Domain(country,Location):1.0
+Range(country,string):1.0
+is(creationDate,DataProperty):1.0
+Domain(creationDate,Ontology):1.0
+Range(creationDate,string):1.0
+is(description,DataProperty):1.0
+Domain(description,FormalityLevel or KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType):1.0
+Range(description,string):1.0
+is(documentation,DataProperty):1.0
+Domain(documentation,KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType):1.0
+Range(documentation,string):1.0
+is(eMail,DataProperty):1.0
+Domain(eMail,Person):1.0
+Range(eMail,string):1.0
+is(faxNumber,DataProperty):1.0
+Domain(faxNumber,Person):1.0
+Range(faxNumber,string):1.0
+is(firstName,DataProperty):1.0
+Domain(firstName,Person):1.0
+Range(firstName,string):1.0
+is(keyClasses,DataProperty):1.0
+Domain(keyClasses,Ontology):1.0
+Range(keyClasses,string):1.0
+is(keywords,DataProperty):1.0
+Domain(keywords,Ontology):1.0
+Range(keywords,string):1.0
+is(knownUsage,DataProperty):1.0
+Domain(knownUsage,Ontology):1.0
+Range(knownUsage,string):1.0
+is(lastName,DataProperty):1.0
+Domain(lastName,Person):1.0
+Range(lastName,string):1.0
+is(modificationDate,DataProperty):1.0
+Domain(modificationDate,Ontology):1.0
+Range(modificationDate,string):1.0
+is(name,DataProperty):1.0
+Domain(name,FormalityLevel or KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyDomain or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType or Organisation):1.0
+Range(name,string):1.0
+is(naturalLanguage,DataProperty):1.0
+Domain(naturalLanguage,Ontology):1.0
+Range(naturalLanguage,string):1.0
+is(notes,DataProperty):1.0
+Domain(notes,Ontology):1.0
+Range(notes,string):1.0
+is(numberOfAxioms,DataProperty):1.0
+Domain(numberOfAxioms,Ontology):1.0
+Range(numberOfAxioms,integer):1.0
+is(numberOfClasses,DataProperty):1.0
+Domain(numberOfClasses,Ontology):1.0
+Range(numberOfClasses,integer):1.0
+is(numberOfIndividuals,DataProperty):1.0
+Domain(numberOfIndividuals,Ontology):1.0
+Range(numberOfIndividuals,integer):1.0
+is(numberOfProperties,DataProperty):1.0
+Domain(numberOfProperties,Ontology):1.0
+Range(numberOfProperties,integer):1.0
+is(phoneNumber,DataProperty):1.0
+Domain(phoneNumber,Person):1.0
+Range(phoneNumber,string):1.0
+is(reference,DataProperty):1.0
+Domain(reference,Ontology):1.0
+Range(reference,string):1.0
+is(resourceLocator,DataProperty):1.0
+Domain(resourceLocator,Ontology):1.0
+Range(resourceLocator,string):1.0
+is(state,DataProperty):1.0
+Domain(state,Location):1.0
+Range(state,string):1.0
+is(status,DataProperty):1.0
+Domain(status,Ontology):1.0
+Range(status,string):1.0
+is(street,DataProperty):1.0
+Domain(street,Location):1.0
+Range(street,string):1.0
+is(version,DataProperty):1.0
+Domain(version,Ontology):1.0
+Range(version,string):1.0
+is(FormalityLevel,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,description max 1 www.w3.org/2000/01/-schema#):1.0
+is(KnedgeRepresentationParadigm,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,specifiedBy only Party,):1.0
+is(Thing,,acronym only string,):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,documentation only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,acronym max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,description max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,documentation max 1 www.w3.org/2000/01/-schema#):1.0
+is(LicenseModel,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,specifiedBy only Party,):1.0
+is(Thing,,acronym only string,):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,documentation only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,acronym max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,description max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,documentation max 1 www.w3.org/2000/01/-schema#):1.0
+is(Location,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,city only string,):1.0
+is(Thing,,country only string,):1.0
+is(Thing,,state only string,):1.0
+is(Thing,,street only string,):1.0
+is(Literal,,city max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,country max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,state max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,street max 1 www.w3.org/2000/01/-schema#):1.0
+is(Ontology,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,conformsToKnedgeRepresentationParadigm only KnedgeRepresentationParadigm,):1.0
+is(Thing,,designedForOntologyTask only OntologyTask,):1.0
+is(Thing,,endorsedBy only Party,):1.0
+is(Thing,,hasContributor only Party,):1.0
+is(Thing,,hasCreator only Party,):1.0
+is(Thing,,hasDomain only OntologyDomain,):1.0
+is(Thing,,hasFormalityLevel only FormalityLevel,):1.0
+is(Thing,,hasLicense only LicenseModel,):1.0
+is(Thing,,hasOntologyLanguage only OntologyLanguage,):1.0
+is(Thing,,hasOntologySyntax only OntologySyntax,):1.0
+is(Thing,,hasPriorVersion only Ontology,):1.0
+is(Thing,,isBackwardCompatibleWith only Ontology,):1.0
+is(Thing,,isIncompatibleWith only Ontology,):1.0
+is(Thing,,isOfType only OntologyType,):1.0
+is(Thing,,useImports only Ontology,):1.0
+is(Thing,,usedOntologyEngineeringMethodology only OntologyEngineeringMethodology,):1.0
+is(Thing,,usedOntologyEngineeringTool only OntologyEngineeringTool,):1.0
+is(Thing,,hasCreator min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasFormalityLevel max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasLicense max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasOntologySyntax max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasPriorVersion max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,isOfType max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,URI only string,):1.0
+is(Thing,,acronym only string,):1.0
+is(Thing,,creationDate only string,):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,documentation only string,):1.0
+is(Thing,,keyClasses only string,):1.0
+is(Thing,,keywords only string,):1.0
+is(Thing,,knownUsage only string,):1.0
+is(Thing,,modificationDate only string,):1.0
+is(Thing,,name only string,):1.0
+is(Thing,,naturalLanguage only string,):1.0
+is(Thing,,notes only string,):1.0
+is(Thing,,numberOfAxioms only integer,):1.0
+is(Thing,,numberOfClasses only integer,):1.0
+is(Thing,,numberOfIndividuals only integer,):1.0
+is(Thing,,numberOfProperties only integer,):1.0
+is(Thing,,reference only string,):1.0
+is(Thing,,resourceLocator only string,):1.0
+is(Thing,,status only string,):1.0
+is(Thing,,version only string,):1.0
+is(Literal,,name min 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,URI exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,acronym exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,creationDate exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,description exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,resourceLocator exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,version exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,documentation max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,modificationDate max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,notes max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,numberOfAxioms max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,numberOfClasses max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,numberOfIndividuals max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,numberOfProperties max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,status max 1 www.w3.org/2000/01/-schema#):1.0
+is(OntologyDomain,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,isSubDomainOf only OntologyDomain,):1.0
+is(Thing,,URI only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,URI exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(OntologyEngineeringMethodology,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,developedBy only Party,):1.0
+is(Thing,,acronym only string,):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,documentation only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,acronym max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,description max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,documentation max 1 www.w3.org/2000/01/-schema#):1.0
+is(OntologyEngineeringTool,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,developedBy only Party,):1.0
+is(Thing,,acronym only string,):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,documentation only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,acronym max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,description max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,documentation max 1 www.w3.org/2000/01/-schema#):1.0
+is(OntologyLanguage,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,developedBy only Party,):1.0
+is(Thing,,hasSyntax only OntologySyntax,):1.0
+is(Thing,,supportsRepresentationParadigm only KnedgeRepresentationParadigm,):1.0
+is(Thing,,acronym only string,):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,documentation only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,acronym max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,description max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,documentation max 1 www.w3.org/2000/01/-schema#):1.0
+is(OntologySyntax,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,developedBy only Party,):1.0
+is(Thing,,acronym only string,):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,documentation only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,acronym max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,description max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,documentation max 1 www.w3.org/2000/01/-schema#):1.0
+is(OntologyTask,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,acronym only string,):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,documentation only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,acronym max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,description max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,documentation max 1 www.w3.org/2000/01/-schema#):1.0
+is(OntologyType,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,definedBy only Party,):1.0
+is(Thing,,acronym only string,):1.0
+is(Thing,,description only string,):1.0
+is(Thing,,documentation only string,):1.0
+is(Thing,,name only string,):1.0
+is(Literal,,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,acronym max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,description max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,documentation max 1 www.w3.org/2000/01/-schema#):1.0
+is(Organisation,Class):1.0
+SubClassOf(Organisation,Party,):1.0
+SubClassOf(Organisation,hasContactPerson only Person,):1.0
+SubClassOf(Organisation,acronym only string,):1.0
+SubClassOf(Organisation,name only string,):1.0
+is(Literal,,acronym exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,name exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Party,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,contributesToOntology only Ontology,):1.0
+is(Thing,,createsOntology only Ontology,):1.0
+is(Thing,,defines only OntologyType,):1.0
+is(Thing,,develops only):1.0
+is(Thing,,(OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax),):1.0
+is(Thing,,endorses only Ontology,):1.0
+is(Thing,,hasAffiliatedParty only Party,):1.0
+is(Thing,,isLocatedAt only Location,):1.0
+is(Thing,,specifies only):1.0
+is(Thing,,(KnedgeRepresentationParadigm or LicenseModel)):1.0
+is(Person,Class):1.0
+SubClassOf(Person,Party,):1.0
+SubClassOf(Person,isContactPerson only Organisation,):1.0
+SubClassOf(Person,eMail only string,):1.0
+SubClassOf(Person,faxNumber only string,):1.0
+SubClassOf(Person,firstName only string,):1.0
+SubClassOf(Person,lastName only string,):1.0
+SubClassOf(Person,phoneNumber only string,):1.0
+is(Literal,,eMail min 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,firstName exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,lastName exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(AcademicFreeLicense_AFL,Individual):1.0
+Types(AcademicFreeLicense_AFL,LicenseModel):1.0
+is(Altova_SemanticWorks,Individual):1.0
+Types(Altova_SemanticWorks,OntologyEngineeringTool):1.0
+name(Altova_SemanticWorks,"Altova SemanticWorks"):1.0
+is(AnnotationTask,Individual):1.0
+Types(AnnotationTask,OntologyTask):1.0
+is(ApplePublicSourceLicense_APSL,Individual):1.0
+Types(ApplePublicSourceLicense_APSL,LicenseModel):1.0
+is(ApplicationOntology,Individual):1.0
+Types(ApplicationOntology,OntologyType):1.0
+is(CommonPublicLicense_CPL,Individual):1.0
+Types(CommonPublicLicense_CPL,LicenseModel):1.0
+is(ConfigurationTask,Individual):1.0
+Types(ConfigurationTask,OntologyTask):1.0
+is(CoreOntology,Individual):1.0
+Types(CoreOntology,OntologyType):1.0
+is(DAML-OIL,Individual):1.0
+Types(DAML-OIL,OntologyLanguage):1.0
+is(DescriptionLogics,Individual):1.0
+Types(DescriptionLogics,KnedgeRepresentationParadigm):1.0
+is(DomainOntology,Individual):1.0
+Types(DomainOntology,OntologyType):1.0
+is(FilteringTask,Individual):1.0
+Types(FilteringTask,OntologyTask):1.0
+is(Frames,Individual):1.0
+Types(Frames,KnedgeRepresentationParadigm):1.0
+is(GeneralPublicLicense_GPL,Individual):1.0
+Types(GeneralPublicLicense_GPL,LicenseModel):1.0
+is(IBMPublicLicenseIBM_PL,Individual):1.0
+Types(IBMPublicLicenseIBM_PL,LicenseModel):1.0
+is(INTELOpenSourceLicenseINTEL_OSL,Individual):1.0
+Types(INTELOpenSourceLicenseINTEL_OSL,LicenseModel):1.0
+is(IndexingTask,Individual):1.0
+Types(IndexingTask,OntologyTask):1.0
+is(IntegrationTask,Individual):1.0
+Types(IntegrationTask,OntologyTask):1.0
+is(IsaViz,Individual):1.0
+Types(IsaViz,OntologyEngineeringTool):1.0
+name(IsaViz,"IsaViz"):1.0
+is(LesserGeneralPublicLicense_LGPL,Individual):1.0
+Types(LesserGeneralPublicLicense_LGPL,LicenseModel):1.0
+is(MatchingTask,Individual):1.0
+Types(MatchingTask,OntologyTask):1.0
+is(MediationTask,Individual):1.0
+Types(MediationTask,OntologyTask):1.0
+is(ModifiedBSDLicense_mBSD,Individual):1.0
+Types(ModifiedBSDLicense_mBSD,LicenseModel):1.0
+is(NeOn-Toolkit,Individual):1.0
+Types(NeOn-Toolkit,OntologyEngineeringTool):1.0
+name(NeOn-Toolkit,"NeOn-Toolkit"):1.0
+is(OWL,Individual):1.0
+Types(OWL,OntologyLanguage):1.0
+is(OWL-DL,Individual):1.0
+Types(OWL-DL,OntologyLanguage):1.0
+is(OWL-Full,Individual):1.0
+Types(OWL-Full,OntologyLanguage):1.0
+is(OWL-Lite,Individual):1.0
+Types(OWL-Lite,OntologyLanguage):1.0
+is(OWL-XML,Individual):1.0
+Types(OWL-XML,OntologySyntax):1.0
+is(OilEd,Individual):1.0
+Types(OilEd,OntologyEngineeringTool):1.0
+name(OilEd,"OilEd"):1.0
+is(OntoBuilder,Individual):1.0
+Types(OntoBuilder,OntologyEngineeringTool):1.0
+name(OntoBuilder,"OntoBuilder"):1.0
+is(OntoStudio,Individual):1.0
+Types(OntoStudio,OntologyEngineeringTool):1.0
+name(OntoStudio,"OntoStudio"):1.0
+is(OpenSoftwareLicense_OSL,Individual):1.0
+Types(OpenSoftwareLicense_OSL,LicenseModel):1.0
+is(PersonalizationTask,Individual):1.0
+Types(PersonalizationTask,OntologyTask):1.0
+is(Protégé,Individual):1.0
+Types(Protégé,OntologyEngineeringTool):1.0
+name(Protégé,"Protégé"):1.0
+is(QueryFormulationTask,Individual):1.0
+Types(QueryFormulationTask,OntologyTask):1.0
+is(QueryRewritingTask,Individual):1.0
+Types(QueryRewritingTask,OntologyTask):1.0
+is(RDF-S,Individual):1.0
+Types(RDF-S,OntologyLanguage):1.0
+is(RDF-XML,Individual):1.0
+Types(RDF-XML,OntologySyntax):1.0
+is(SWOOP,Individual):1.0
+Types(SWOOP,OntologyEngineeringTool):1.0
+name(SWOOP,"SWOOP"):1.0
+is(Schema,Individual):1.0
+Types(Schema,FormalityLevel):1.0
+is(SearchTask,Individual):1.0
+Types(SearchTask,OntologyTask):1.0
+is(TaskOntology,Individual):1.0
+Types(TaskOntology,OntologyType):1.0
+is(Taxonomy,Individual):1.0
+Types(Taxonomy,FormalityLevel):1.0
+is(Terminology,Individual):1.0
+Types(Terminology,FormalityLevel):1.0
+is(Thesaurus,Individual):1.0
+Types(Thesaurus,FormalityLevel):1.0
+is(UpperLevelOntology,Individual):1.0
+Types(UpperLevelOntology,OntologyType):1.0
+is(Vocabulary,Individual):1.0
+Types(Vocabulary,FormalityLevel):1.0
+is(WSMO_Studio,Individual):1.0
+Types(WSMO_Studio,OntologyEngineeringTool):1.0
+name(WSMO_Studio,"WSMO Studio"):1.0
+is(WebODE,Individual):1.0
+Types(WebODE,OntologyEngineeringTool):1.0
+name(WebODE,"WebODE"):1.0

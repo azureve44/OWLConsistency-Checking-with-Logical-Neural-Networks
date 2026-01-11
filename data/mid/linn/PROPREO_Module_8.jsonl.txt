@@ -1,0 +1,192 @@
+predicate(float,is,Datatype).
+predicate(int,is,Datatype).
+predicate(generated_by_proteolytic_enzyme,is,ObjectProperty).
+predicate(generated_by_proteolytic_enzyme,Domain,oligopeptide).
+predicate(generated_by_proteolytic_enzyme,Range,proteolytic_enzyme).
+predicate(has_material_part,is,ObjectProperty).
+predicate(has_material_part,Characteristics,Transitive).
+predicate(has_material_part,Domain,material_continuant).
+predicate(has_material_part,Range,material_continuant).
+predicate(has_parent_protein,is,ObjectProperty).
+predicate(has_parent_protein,Domain,oligopeptide).
+predicate(has_parent_protein,Range,protein).
+predicate(has_solvent,is,ObjectProperty).
+predicate(has_solvent,SubPropertyOf,has_material_part).
+predicate(has_units,is,ObjectProperty).
+predicate(is_described_by,is,ObjectProperty).
+predicate(is_described_by,Domain,chemical_entity).
+predicate(is_described_by,Range,substance_associated_data_collection or substance_parameter).
+predicate(material_part_of,is,ObjectProperty).
+predicate(material_part_of,Characteristics,Transitive).
+predicate(material_part_of,Domain,material_continuant).
+predicate(material_part_of,Range,material_continuant).
+predicate(has_value,is,DataProperty).
+predicate(Agilent_HPLC_data_processing_application,is,Class).
+predicate(Agilent_HPLC_data_processing_application,SubClassOf,HPLC_data_processing_application).
+predicate(Agilent_mass_spectrometer_data_processing_application,is,Class).
+predicate(Agilent_mass_spectrometer_data_processing_application,SubClassOf,MS_data_processing_application).
+predicate(Applied_Bio_Systems_mass_spectrometer_data_processing_application,is,Class).
+predicate(Applied_Bio_Systems_mass_spectrometer_data_processing_application,SubClassOf,MS_data_processing_application).
+predicate(Axiom_1,is,Class).
+predicate(Axiom_1,EquivalentTo,Proteinlynx_micromass_MALDI_data_processing_parameters_collection or Proteinlynx_micromass_electrospray_data_processing_parameters_collection).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Bruker_Daltomics_mass_spectrometer_data_processing_application,is,Class).
+predicate(Bruker_Daltomics_mass_spectrometer_data_processing_application,SubClassOf,MS_data_processing_application).
+predicate(DNA_nucleotide_sequence,is,Class).
+predicate(HPLC_data_processing_application,is,Class).
+predicate(HPLC_data_processing_application,SubClassOf,data_processing_application).
+predicate(LINUCS_ID,is,Class).
+predicate(LINUCS_ID,SubClassOf,glycan_accession_number).
+predicate(MALDI_matrix,is,Class).
+predicate(MALDI_matrix,SubClassOf,molecular_aggregate,).
+predicate(MALDI_matrix,SubClassOf,has_material_part only small_molecule).
+predicate(MS_analyzer_parameter,is,Class).
+predicate(MS_analyzer_scan_time,is,Class).
+predicate(MS_analyzer_scan_time,SubClassOf,MS_analyzer_parameter).
+predicate(MS_data_processing_application,is,Class).
+predicate(MS_data_processing_application,SubClassOf,data_processing_application).
+predicate(MS_source_ESI_parameter,is,Class).
+predicate(MS_source_MALDI_laser_intensity,is,Class).
+predicate(MS_source_MALDI_laser_intensity,EquivalentTo,has_value only float).
+predicate(MS_source_MALDI_laser_intensity,SubClassOf,MS_source_MALDI_parameter,).
+predicate(MS_source_MALDI_laser_intensity,SubClassOf,has_units only laser_pulse_intensity_units).
+predicate(MS_source_MALDI_number_of_laser_shots,is,Class).
+predicate(MS_source_MALDI_number_of_laser_shots,EquivalentTo,has_value only int).
+predicate(MS_source_MALDI_number_of_laser_shots,SubClassOf,MS_source_MALDI_parameter,).
+predicate(Thing,is,has_units exactly 0 www.w3.org/2002/07/#).
+predicate(MS_source_MALDI_parameter,is,Class).
+predicate(MS_source_cone_voltage,is,Class).
+predicate(MS_source_cone_voltage,EquivalentTo,has_value only float).
+predicate(MS_source_cone_voltage,SubClassOf,MS_source_ESI_parameter,).
+predicate(MS_source_cone_voltage,SubClassOf,has_units only electrical_potential_units).
+predicate(Micromass_mass_spectrometer_data_processing_application,is,Class).
+predicate(Micromass_mass_spectrometer_data_processing_application,SubClassOf,MS_data_processing_application).
+predicate(Proteinlynx_micromass_MALDI_data_processing_parameters_collection,is,Class).
+predicate(Proteinlynx_micromass_electrospray_data_processing_parameters_collection,is,Class).
+predicate(RNA_nucleotide_sequence,is,Class).
+predicate(ThermoElectron_mass_spectrometer_data_processing_application,is,Class).
+predicate(ThermoElectron_mass_spectrometer_data_processing_application,SubClassOf,MS_data_processing_application).
+predicate(agent,is,Class).
+predicate(agent,SubClassOf,material_continuant).
+predicate(archaea,is,Class).
+predicate(archaea,SubClassOf,procaryotic_organism).
+predicate(bacteria,is,Class).
+predicate(bacteria,SubClassOf,procaryotic_organism).
+predicate(biochemical_sample,is,Class).
+predicate(biochemical_sample,SubClassOf,molecular_aggregate,).
+predicate(biochemical_sample,SubClassOf,is_described_by only substance_parameter,).
+predicate(biochemical_sample,SubClassOf,is_described_by only (not (ion_parameter or molecular_parameter))).
+predicate(biological_continuant,is,Class).
+predicate(biological_continuant,SubClassOf,material_continuant).
+predicate(cell,is,Class).
+predicate(cell,SubClassOf,biological_continuant).
+predicate(chemical_agent,is,Class).
+predicate(chemical_agent,SubClassOf,agent).
+predicate(chemical_entity,is,Class).
+predicate(chemical_entity,SubClassOf,material_continuant).
+predicate(data_processing_application,is,Class).
+predicate(data_processing_application,SubClassOf,agent).
+predicate(electrical_potential_units,is,Class).
+predicate(enzyme,is,Class).
+predicate(enzyme,SubClassOf,chemical_agent,).
+predicate(enzyme,SubClassOf,protein).
+predicate(eucaryotic_organism,is,Class).
+predicate(eucaryotic_organism,SubClassOf,organism).
+predicate(experimental_chemical_mass,is,Class).
+predicate(experimental_chemical_mass,SubClassOf,experimental_mass).
+predicate(experimental_mass,is,Class).
+predicate(experimental_monoisotopic_mass,is,Class).
+predicate(experimental_monoisotopic_mass,SubClassOf,experimental_mass).
+predicate(fragment_ion,is,Class).
+predicate(fragment_ion,SubClassOf,ion).
+predicate(glycan,is,Class).
+predicate(glycan,SubClassOf,molecule,).
+predicate(glycan,SubClassOf,is_described_by only (not (molecular_sequence)),).
+predicate(glycan,SubClassOf,is_described_by only (not (polynucleotide_accession_number)),).
+predicate(glycan,SubClassOf,is_described_by only (not (protein_accession_number))).
+predicate(glycan_accession_number,is,Class).
+predicate(ion,is,Class).
+predicate(ion,SubClassOf,chemical_entity,).
+predicate(ion,SubClassOf,is_described_by only ion_parameter).
+predicate(ion_parameter,is,Class).
+predicate(isoelectric_point,is,Class).
+predicate(laser_pulse_intensity_units,is,Class).
+predicate(life-cycle_form,is,Class).
+predicate(life-cycle_form,SubClassOf,biological_continuant).
+predicate(manufacturer,is,Class).
+predicate(manufacturer,SubClassOf,agent).
+predicate(material_continuant,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(mixture,is,Class).
+predicate(mixture,SubClassOf,molecular_aggregate,).
+predicate(mixture,SubClassOf,is_described_by only mixture_component_descriptor).
+predicate(mixture_component_descriptor,is,Class).
+predicate(molecular_aggregate,is,Class).
+predicate(molecular_aggregate,SubClassOf,chemical_entity).
+predicate(molecular_parameter,is,Class).
+predicate(molecular_sequence,is,Class).
+predicate(molecule,is,Class).
+predicate(molecule,EquivalentTo,material_part_of only molecular_aggregate).
+predicate(molecule,SubClassOf,chemical_entity,).
+predicate(molecule,SubClassOf,is_described_by only).
+predicate(molecule,SubClassOf,(molecular_parameter or substance_accession_number)).
+predicate(oligopeptide,is,Class).
+predicate(oligopeptide,SubClassOf,molecule,).
+predicate(oligopeptide,SubClassOf,is_described_by only (not (glycan_accession_number)),).
+predicate(oligopeptide,SubClassOf,is_described_by only (not (polynucleotide_accession_number)),).
+predicate(oligopeptide,SubClassOf,is_described_by only (not (DNA_nucleotide_sequence or RNA_nucleotide_sequence))).
+predicate(organ,is,Class).
+predicate(organ,SubClassOf,biological_continuant).
+predicate(organism,is,Class).
+predicate(organism,SubClassOf,biological_continuant).
+predicate(parent_ion,is,Class).
+predicate(parent_ion,SubClassOf,ion).
+predicate(person,is,Class).
+predicate(person,SubClassOf,agent).
+predicate(polynucleotide_accession_number,is,Class).
+predicate(procaryotic_organism,is,Class).
+predicate(procaryotic_organism,SubClassOf,organism).
+predicate(process_data,is,Class).
+predicate(protein,is,Class).
+predicate(protein,SubClassOf,molecule,).
+predicate(protein,SubClassOf,is_described_by only (not (glycan_accession_number)),).
+predicate(protein,SubClassOf,is_described_by only (not (polynucleotide_accession_number)),).
+predicate(protein,SubClassOf,is_described_by only (not (DNA_nucleotide_sequence or RNA_nucleotide_sequence))).
+predicate(protein_accession_number,is,Class).
+predicate(proteolytic_enzyme,is,Class).
+predicate(proteolytic_enzyme,SubClassOf,enzyme).
+predicate(pure_substance,is,Class).
+predicate(pure_substance,SubClassOf,molecular_aggregate,).
+predicate(pure_substance,SubClassOf,has_material_part only molecule).
+predicate(quantify_data,is,Class).
+predicate(quantify_data,SubClassOf,process_data).
+predicate(salt,is,Class).
+predicate(salt,SubClassOf,molecule,).
+predicate(salt,SubClassOf,has_material_part only ion,).
+predicate(salt,SubClassOf,is_described_by only (not (isoelectric_point)),).
+predicate(salt,SubClassOf,is_described_by only (not (molecular_sequence)),).
+predicate(salt,SubClassOf,is_described_by only (not (substance_accession_number))).
+predicate(small_molecule,is,Class).
+predicate(small_molecule,SubClassOf,molecule).
+predicate(small_organic_molecule,is,Class).
+predicate(small_organic_molecule,SubClassOf,small_molecule).
+predicate(solid_mixture,is,Class).
+predicate(solid_mixture,SubClassOf,mixture).
+predicate(solution,is,Class).
+predicate(solution,SubClassOf,mixture).
+predicate(solvent,is,Class).
+predicate(solvent,SubClassOf,pure_substance).
+predicate(solvent_molecule,is,Class).
+predicate(solvent_molecule,SubClassOf,small_molecule).
+predicate(substance_accession_number,is,Class).
+predicate(substance_associated_data_collection,is,Class).
+predicate(substance_parameter,is,Class).
+predicate(tryptic_peptide,is,Class).
+predicate(tryptic_peptide,SubClassOf,oligopeptide).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(DHB_MALDI_matrix,is,Individual).
+predicate(DHB_MALDI_matrix,Types,MALDI_matrix).
+predicate(Homo_sapiens,is,Individual).
+predicate(Homo_sapiens,Types,eucaryotic_organism).
+predicate(alpha-cyano-4-hydroxycinnamic_acid_MALDI_matrix,is,Individual).
+predicate(alpha-cyano-4-hydroxycinnamic_acid_MALDI_matrix,Types,MALDI_matrix).

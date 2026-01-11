@@ -1,0 +1,1075 @@
+is(dateTime,Datatype):1.0
+is(double,Datatype):1.0
+is(integer,Datatype):1.0
+is(string,Datatype):1.0
+is(Accion_Proyecto,ObjectProperty):1.0
+Characteristics(Accion_Proyecto,Functional):1.0
+Domain(Accion_Proyecto,Accion_Comercial):1.0
+Range(Accion_Proyecto,Proyecto):1.0
+InverseOf(Accion_Proyecto,puedeDarAccion):1.0
+is(Autor,ObjectProperty):1.0
+Domain(Autor,Articulo):1.0
+Range(Autor,Empleado_Centro):1.0
+InverseOf(Autor,escribe):1.0
+is(DesarrolloDaA,ObjectProperty):1.0
+Domain(DesarrolloDaA,Desarrollo_Tecnologico):1.0
+Range(DesarrolloDaA,Mejora_Tecnologica,):1.0
+Range(DesarrolloDaA,Proceso,):1.0
+Range(DesarrolloDaA,Producto):1.0
+is(EvaluaciónDe,ObjectProperty):1.0
+Domain(EvaluaciónDe,Evaluacion_Marcha_Proyecto):1.0
+Range(EvaluaciónDe,Proyecto):1.0
+InverseOf(EvaluaciónDe,tieneEvaluacion):1.0
+is(NaceDe,ObjectProperty):1.0
+Domain(NaceDe,Proyecto):1.0
+InverseOf(NaceDe,daLugarA):1.0
+is(ProcesoDaA,ObjectProperty):1.0
+Domain(ProcesoDaA,Proceso):1.0
+Range(ProcesoDaA,Producto):1.0
+InverseOf(ProcesoDaA,vieneDeProceso):1.0
+is(PromovidoPorCentro,ObjectProperty):1.0
+SubPropertyOf(PromovidoPorCentro,esPromovidoPor):1.0
+Domain(PromovidoPorCentro,Ensayo_Clinico):1.0
+Range(PromovidoPorCentro,Centro):1.0
+InverseOf(PromovidoPorCentro,promueve):1.0
+is(PromovidoPorFarmaceutica,ObjectProperty):1.0
+SubPropertyOf(PromovidoPorFarmaceutica,esPromovidoPor):1.0
+Domain(PromovidoPorFarmaceutica,Ensayo_Clinico):1.0
+Range(PromovidoPorFarmaceutica,Farmaceutica):1.0
+InverseOf(PromovidoPorFarmaceutica,promueveFarm):1.0
+is(UAIDeCentro,ObjectProperty):1.0
+Characteristics(UAIDeCentro,Functional):1.0
+Domain(UAIDeCentro,UAI):1.0
+Range(UAIDeCentro,Centro):1.0
+InverseOf(UAIDeCentro,tieneUAI):1.0
+is(aPartirDeLicencia,ObjectProperty):1.0
+Domain(aPartirDeLicencia,Transferencia_Tecnologica):1.0
+Range(aPartirDeLicencia,Licencia):1.0
+is(acuerdoProviene,ObjectProperty):1.0
+Domain(acuerdoProviene,Acuerdo_Exclusividad):1.0
+Range(acuerdoProviene,Resultado_Proyecto):1.0
+InverseOf(acuerdoProviene,daLugarAcuerdo):1.0
+is(arisesFrom,ObjectProperty):1.0
+Domain(arisesFrom,Proyecto):1.0
+Range(arisesFrom,Idea):1.0
+InverseOf(arisesFrom,generates):1.0
+is(asisteA,ObjectProperty):1.0
+Domain(asisteA,Director_UAI,):1.0
+Domain(asisteA,Responsable):1.0
+Range(asisteA,Reunion):1.0
+InverseOf(asisteA,tieneAsistentes):1.0
+is(asisteEventos,ObjectProperty):1.0
+Domain(asisteEventos,Empleado):1.0
+Range(asisteEventos,Eventos_Difusion):1.0
+InverseOf(asisteEventos,dirigidoA):1.0
+is(daAConvocatoria,ObjectProperty):1.0
+Domain(daAConvocatoria,Politica_Tecnologica):1.0
+Range(daAConvocatoria,Convocatoria):1.0
+is(daLugarA,ObjectProperty):1.0
+InverseOf(daLugarA,NaceDe):1.0
+is(daLugarADesarrollo,ObjectProperty):1.0
+Domain(daLugarADesarrollo,Resultado_Proyecto):1.0
+Range(daLugarADesarrollo,Desarrollo_Tecnologico):1.0
+InverseOf(daLugarADesarrollo,procedeResultados):1.0
+is(daLugarAEBT,ObjectProperty):1.0
+Domain(daLugarAEBT,Licencia):1.0
+Range(daLugarAEBT,EBT):1.0
+InverseOf(daLugarAEBT,hayLicencia):1.0
+is(daLugarAcuerdo,ObjectProperty):1.0
+Domain(daLugarAcuerdo,Resultado_Proyecto):1.0
+Range(daLugarAcuerdo,Acuerdo_Exclusividad):1.0
+InverseOf(daLugarAcuerdo,acuerdoProviene):1.0
+is(desarrolla,ObjectProperty):1.0
+Domain(desarrolla,Centro):1.0
+Range(desarrolla,Ensayo_Clinico):1.0
+InverseOf(desarrolla,esDesarrolladoPor):1.0
+is(dirige,ObjectProperty):1.0
+Characteristics(dirige,Functional):1.0
+Domain(dirige,Responsable):1.0
+Range(dirige,Centro):1.0
+InverseOf(dirige,dirigidoPor):1.0
+is(dirigidaPor,ObjectProperty):1.0
+Domain(dirigidaPor,UAI):1.0
+Range(dirigidaPor,Director_UAI):1.0
+is(dirigidoA,ObjectProperty):1.0
+Domain(dirigidoA,Eventos_Difusion):1.0
+Range(dirigidoA,Empleado):1.0
+InverseOf(dirigidoA,asisteEventos):1.0
+is(dirigidoPor,ObjectProperty):1.0
+Domain(dirigidoPor,Centro):1.0
+Range(dirigidoPor,Responsable):1.0
+InverseOf(dirigidoPor,dirige):1.0
+is(esColaboradoraEn,ObjectProperty):1.0
+Characteristics(esColaboradoraEn,Functional):1.0
+Domain(esColaboradoraEn,Organizacion):1.0
+Range(esColaboradoraEn,ITEMAS):1.0
+InverseOf(esColaboradoraEn,tieneColaborador):1.0
+is(esDeEmpleado,ObjectProperty):1.0
+Domain(esDeEmpleado,Caracteristicas_Empleados):1.0
+Range(esDeEmpleado,Empleado):1.0
+InverseOf(esDeEmpleado,tieneCaracteristicasEmpleado):1.0
+is(esDesarrolladoPor,ObjectProperty):1.0
+Domain(esDesarrolladoPor,Ensayo_Clinico):1.0
+Range(esDesarrolladoPor,Centro):1.0
+InverseOf(esDesarrolladoPor,desarrolla):1.0
+is(esFirmadoPor,ObjectProperty):1.0
+Domain(esFirmadoPor,Acuerdo):1.0
+Range(esFirmadoPor,Organizacion):1.0
+InverseOf(esFirmadoPor,firma):1.0
+is(esMiembroEn,ObjectProperty):1.0
+Domain(esMiembroEn,Institucion):1.0
+Range(esMiembroEn,ITEMAS):1.0
+InverseOf(esMiembroEn,tieneMiembro):1.0
+is(esOriginadoEn,ObjectProperty):1.0
+Domain(esOriginadoEn,Objetivo_I_D_i):1.0
+Range(esOriginadoEn,Politica_I_D_i):1.0
+InverseOf(esOriginadoEn,originaObjetivo):1.0
+is(esPromovidoPor,ObjectProperty):1.0
+Domain(esPromovidoPor,Ensayo_Clinico):1.0
+is(esProtegidoPor,ObjectProperty):1.0
+Domain(esProtegidoPor,Resultado_Proyecto):1.0
+Range(esProtegidoPor,Derecho_Propiedad_Industrial):1.0
+InverseOf(esProtegidoPor,protege):1.0
+is(esSociaDe,ObjectProperty):1.0
+Domain(esSociaDe,Organizacion):1.0
+Range(esSociaDe,Consorcio):1.0
+InverseOf(esSociaDe,formadoPor):1.0
+is(esUnInstrumento,ObjectProperty):1.0
+Domain(esUnInstrumento,Acuerdo):1.0
+Range(esUnInstrumento,Instrumento_Legal):1.0
+is(esUna,ObjectProperty):1.0
+Domain(esUna,Vigilancia_Tecnologica):1.0
+Range(esUna,Actividad_Innovacion):1.0
+is(escribe,ObjectProperty):1.0
+Domain(escribe,Empleado_Centro):1.0
+Range(escribe,Articulo):1.0
+InverseOf(escribe,Autor):1.0
+is(estaEnFaseEmbudo,ObjectProperty):1.0
+is(estaFirmadoEn,ObjectProperty):1.0
+Domain(estaFirmadoEn,Proyecto):1.0
+Range(estaFirmadoEn,Contrato_I_D_i):1.0
+InverseOf(estaFirmadoEn,finalidadContrato):1.0
+is(estaLicenciadoEn,ObjectProperty):1.0
+Domain(estaLicenciadoEn,Derecho_Propiedad_Industrial):1.0
+Range(estaLicenciadoEn,Licencia):1.0
+InverseOf(estaLicenciadoEn,licenciaUn):1.0
+is(existeAccionComercial,ObjectProperty):1.0
+Domain(existeAccionComercial,F4_Transferencia):1.0
+Range(existeAccionComercial,Accion_Comercial):1.0
+is(existeInforme,ObjectProperty):1.0
+Domain(existeInforme,F2_Evaluacion):1.0
+Range(existeInforme,Informe):1.0
+is(existeMercado,ObjectProperty):1.0
+Domain(existeMercado,F5_Mercado):1.0
+is(existePrototipo,ObjectProperty):1.0
+Domain(existePrototipo,F3_Desarrollo):1.0
+Range(existePrototipo,Prototipo_Homologacion_Ensayo):1.0
+is(explota,ObjectProperty):1.0
+Domain(explota,Explotacion):1.0
+is(finalidadContrato,ObjectProperty):1.0
+Domain(finalidadContrato,Contrato_I_D_i):1.0
+Range(finalidadContrato,Proyecto):1.0
+InverseOf(finalidadContrato,estaFirmadoEn):1.0
+is(financia,ObjectProperty):1.0
+is(financiaUAI,ObjectProperty):1.0
+Domain(financiaUAI,ITEMAS):1.0
+Range(financiaUAI,Financiacion_UAI):1.0
+is(firma,ObjectProperty):1.0
+Domain(firma,Organizacion):1.0
+Range(firma,Acuerdo):1.0
+InverseOf(firma,esFirmadoPor):1.0
+is(formaParteDe,ObjectProperty):1.0
+Domain(formaParteDe,Conocimiento):1.0
+Range(formaParteDe,Capital_Intelectual):1.0
+InverseOf(formaParteDe,incluyeConocimiento):1.0
+is(formadoPor,ObjectProperty):1.0
+Domain(formadoPor,Consorcio):1.0
+Range(formadoPor,Organizacion):1.0
+InverseOf(formadoPor,esSociaDe):1.0
+is(genera,ObjectProperty):1.0
+Domain(genera,Resultado_Proyecto):1.0
+Range(genera,Conocimiento):1.0
+InverseOf(genera,surgede):1.0
+is(generates,ObjectProperty):1.0
+Domain(generates,Idea):1.0
+Range(generates,Proyecto):1.0
+InverseOf(generates,arisesFrom):1.0
+is(hayLicencia,ObjectProperty):1.0
+Domain(hayLicencia,EBT):1.0
+Range(hayLicencia,Licencia):1.0
+InverseOf(hayLicencia,daLugarAEBT):1.0
+is(ideaPerteneceA,ObjectProperty):1.0
+Domain(ideaPerteneceA,Idea):1.0
+Range(ideaPerteneceA,Empleado_Centro):1.0
+InverseOf(ideaPerteneceA,tieneIdea):1.0
+is(implicaFase,ObjectProperty):1.0
+is(includes,ObjectProperty):1.0
+Domain(includes,Fase_Embudo):1.0
+is(incluye,ObjectProperty):1.0
+Domain(incluye,Fase_Embudo):1.0
+Range(incluye,Idea):1.0
+is(incluyeConocimiento,ObjectProperty):1.0
+Domain(incluyeConocimiento,Capital_Intelectual):1.0
+Range(incluyeConocimiento,Conocimiento):1.0
+InverseOf(incluyeConocimiento,formaParteDe):1.0
+is(incluyeProyecto,ObjectProperty):1.0
+Domain(incluyeProyecto,Convocatoria):1.0
+Range(incluyeProyecto,Proyecto):1.0
+InverseOf(incluyeProyecto,tieneConvocatoria):1.0
+is(licenciaUn,ObjectProperty):1.0
+Domain(licenciaUn,Licencia):1.0
+Range(licenciaUn,Derecho_Propiedad_Industrial):1.0
+InverseOf(licenciaUn,estaLicenciadoEn):1.0
+is(llevaACaboProyecto,ObjectProperty):1.0
+Domain(llevaACaboProyecto,Consorcio):1.0
+Range(llevaACaboProyecto,Proyecto):1.0
+InverseOf(llevaACaboProyecto,tieneConsorcio):1.0
+is(objetivoSistema,ObjectProperty):1.0
+Domain(objetivoSistema,Sistema_Gestion_I_D_i):1.0
+Range(objetivoSistema,Politica_I_D_i):1.0
+is(organizaEvento,ObjectProperty):1.0
+Domain(organizaEvento,UAI):1.0
+Range(organizaEvento,Eventos_Difusion):1.0
+InverseOf(organizaEvento,organizadosPor):1.0
+is(organizadosPor,ObjectProperty):1.0
+Domain(organizadosPor,Eventos_Difusion):1.0
+Range(organizadosPor,UAI):1.0
+InverseOf(organizadosPor,organizaEvento):1.0
+is(originaObjetivo,ObjectProperty):1.0
+Domain(originaObjetivo,Politica_I_D_i):1.0
+Range(originaObjetivo,Objetivo_I_D_i):1.0
+InverseOf(originaObjetivo,esOriginadoEn):1.0
+is(participaEnProyecto,ObjectProperty):1.0
+Domain(participaEnProyecto,Empresa):1.0
+Range(participaEnProyecto,Proyecto):1.0
+InverseOf(participaEnProyecto,participadoPor):1.0
+is(participaSpinfOff,ObjectProperty):1.0
+Domain(participaSpinfOff,Institucion):1.0
+Range(participaSpinfOff,SpinOff):1.0
+InverseOf(participaSpinfOff,participadaPor):1.0
+is(participadaPor,ObjectProperty):1.0
+Domain(participadaPor,SpinOff):1.0
+Range(participadaPor,Institucion):1.0
+InverseOf(participadaPor,participaSpinfOff):1.0
+is(participadoPor,ObjectProperty):1.0
+Domain(participadoPor,Proyecto):1.0
+Range(participadoPor,Empresa):1.0
+InverseOf(participadoPor,participaEnProyecto):1.0
+is(perteneceACentro,ObjectProperty):1.0
+Domain(perteneceACentro,Caracteristicas_Centro):1.0
+Range(perteneceACentro,Centro):1.0
+InverseOf(perteneceACentro,tieneCaracteristicaCentro):1.0
+is(perteneceAGrupo,ObjectProperty):1.0
+Characteristics(perteneceAGrupo,Functional):1.0
+Domain(perteneceAGrupo,Investigador):1.0
+Range(perteneceAGrupo,Grupo_Investigacion):1.0
+InverseOf(perteneceAGrupo,tieneInvestigador):1.0
+is(perteneceAProyecto,ObjectProperty):1.0
+Domain(perteneceAProyecto,Objetivo_Proyecto):1.0
+Range(perteneceAProyecto,Proyecto):1.0
+InverseOf(perteneceAProyecto,tieneObjetivosProyecto):1.0
+is(perteneceATrUAI,ObjectProperty):1.0
+Domain(perteneceATrUAI,Formacion):1.0
+Range(perteneceATrUAI,trabajaUAI):1.0
+InverseOf(perteneceATrUAI,tieneFormacion):1.0
+is(perteneceAUAI,ObjectProperty):1.0
+Domain(perteneceAUAI,Unidades_UAI):1.0
+Range(perteneceAUAI,UAI):1.0
+InverseOf(perteneceAUAI,tieneUnidades):1.0
+is(pertenecePatente,ObjectProperty):1.0
+Domain(pertenecePatente,Patente):1.0
+Range(pertenecePatente,Familia_Patente):1.0
+is(perteneceUAI,ObjectProperty):1.0
+Domain(perteneceUAI,Financiacion_UAI):1.0
+Range(perteneceUAI,UAI):1.0
+is(planifica,ObjectProperty):1.0
+Domain(planifica,Planificacion_Actividades):1.0
+Range(planifica,Actividad_I_D_i):1.0
+InverseOf(planifica,tienenPlanificacion):1.0
+is(procedeDeEmpleado,ObjectProperty):1.0
+Domain(procedeDeEmpleado,Idea):1.0
+Range(procedeDeEmpleado,Empleado_Centro):1.0
+InverseOf(procedeDeEmpleado,tieneIdea):1.0
+is(procedeResultados,ObjectProperty):1.0
+Domain(procedeResultados,Desarrollo_Tecnologico):1.0
+Range(procedeResultados,Resultado_Proyecto):1.0
+InverseOf(procedeResultados,daLugarADesarrollo):1.0
+is(promueve,ObjectProperty):1.0
+Domain(promueve,Centro):1.0
+Range(promueve,Ensayo_Clinico):1.0
+InverseOf(promueve,PromovidoPorCentro):1.0
+is(promueveFarm,ObjectProperty):1.0
+Domain(promueveFarm,Farmaceutica):1.0
+Range(promueveFarm,Ensayo_Clinico):1.0
+InverseOf(promueveFarm,PromovidoPorFarmaceutica):1.0
+is(protege,ObjectProperty):1.0
+Domain(protege,Derecho_Propiedad_Industrial):1.0
+Range(protege,Resultado_Proyecto):1.0
+InverseOf(protege,esProtegidoPor):1.0
+is(publica,ObjectProperty):1.0
+Domain(publica,Metodo_Diseminacion):1.0
+Range(publica,Resultado_Proyecto):1.0
+is(puedeDarAInforme,ObjectProperty):1.0
+Domain(puedeDarAInforme,Proyecto):1.0
+Range(puedeDarAInforme,Informe):1.0
+InverseOf(puedeDarAInforme,vieneDe):1.0
+is(puedeDarAccion,ObjectProperty):1.0
+Domain(puedeDarAccion,Proyecto):1.0
+Range(puedeDarAccion,Accion_Comercial):1.0
+InverseOf(puedeDarAccion,Accion_Proyecto):1.0
+is(puedeDarProt,ObjectProperty):1.0
+Domain(puedeDarProt,Proyecto):1.0
+Range(puedeDarProt,Prototipo_Homologacion_Ensayo):1.0
+InverseOf(puedeDarProt,vieneDePr):1.0
+is(realizaAccion,ObjectProperty):1.0
+Domain(realizaAccion,Organizacion):1.0
+Range(realizaAccion,Accion_Comercial):1.0
+InverseOf(realizaAccion,realizadaPor):1.0
+is(realizaActividades,ObjectProperty):1.0
+Domain(realizaActividades,Proyecto):1.0
+Range(realizaActividades,Actividad_I_D_i):1.0
+is(realizaInvestigacion,ObjectProperty):1.0
+Domain(realizaInvestigacion,Grupo_Investigacion):1.0
+Range(realizaInvestigacion,Actividad_Investigacion):1.0
+is(realizadaPor,ObjectProperty):1.0
+Characteristics(realizadaPor,Functional):1.0
+Domain(realizadaPor,Accion_Comercial):1.0
+Range(realizadaPor,Organizacion):1.0
+InverseOf(realizadaPor,realizaAccion):1.0
+is(regidaPor,ObjectProperty):1.0
+Domain(regidaPor,Convocatoria):1.0
+Range(regidaPor,Politica_Tecnologica):1.0
+is(resultadoDe,ObjectProperty):1.0
+Domain(resultadoDe,Resultado_Proyecto):1.0
+Range(resultadoDe,Proyecto):1.0
+InverseOf(resultadoDe,tieneResultados):1.0
+is(surgeDeObjetivo,ObjectProperty):1.0
+Domain(surgeDeObjetivo,Meta_I_D_i):1.0
+Range(surgeDeObjetivo,Objetivo_I_D_i):1.0
+is(surgede,ObjectProperty):1.0
+Domain(surgede,Conocimiento):1.0
+Range(surgede,Resultado_Proyecto):1.0
+InverseOf(surgede,genera):1.0
+is(tiene,ObjectProperty):1.0
+Domain(tiene,UAI):1.0
+Range(tiene,Financiacion_UAI):1.0
+is(tieneAsistentes,ObjectProperty):1.0
+Domain(tieneAsistentes,Reunion):1.0
+Range(tieneAsistentes,Director_UAI,):1.0
+Range(tieneAsistentes,Responsable):1.0
+InverseOf(tieneAsistentes,asisteA):1.0
+is(tieneCapitalIntelectual,ObjectProperty):1.0
+SubPropertyOf(tieneCapitalIntelectual,tieneCaracteristicaCentro):1.0
+Domain(tieneCapitalIntelectual,Centro):1.0
+Range(tieneCapitalIntelectual,Capital_Intelectual):1.0
+is(tieneCaracteristicaCentro,ObjectProperty):1.0
+Domain(tieneCaracteristicaCentro,Centro):1.0
+Range(tieneCaracteristicaCentro,Caracteristicas_Centro):1.0
+InverseOf(tieneCaracteristicaCentro,perteneceACentro):1.0
+is(tieneCaracteristicasEmpleado,ObjectProperty):1.0
+Domain(tieneCaracteristicasEmpleado,Empleado):1.0
+Range(tieneCaracteristicasEmpleado,Caracteristicas_Empleados):1.0
+InverseOf(tieneCaracteristicasEmpleado,esDeEmpleado):1.0
+is(tieneColaborador,ObjectProperty):1.0
+Domain(tieneColaborador,ITEMAS):1.0
+Range(tieneColaborador,Organizacion):1.0
+InverseOf(tieneColaborador,esColaboradoraEn):1.0
+is(tieneCompetencias,ObjectProperty):1.0
+SubPropertyOf(tieneCompetencias,tieneCaracteristicasEmpleado):1.0
+Domain(tieneCompetencias,Empleado):1.0
+Range(tieneCompetencias,Competencias):1.0
+is(tieneConsorcio,ObjectProperty):1.0
+SubPropertyOf(tieneConsorcio,tieneProyecto):1.0
+Domain(tieneConsorcio,Proyecto):1.0
+Range(tieneConsorcio,Consorcio):1.0
+InverseOf(tieneConsorcio,llevaACaboProyecto):1.0
+is(tieneConvocatoria,ObjectProperty):1.0
+SubPropertyOf(tieneConvocatoria,tieneProyecto):1.0
+Domain(tieneConvocatoria,Proyecto):1.0
+Range(tieneConvocatoria,Convocatoria):1.0
+InverseOf(tieneConvocatoria,incluyeProyecto):1.0
+is(tieneCulturaInnovadora,ObjectProperty):1.0
+SubPropertyOf(tieneCulturaInnovadora,tieneCaracteristicaCentro):1.0
+Domain(tieneCulturaInnovadora,Centro):1.0
+Range(tieneCulturaInnovadora,Cultura_Innovadora):1.0
+is(tieneEntidadFinanciera,ObjectProperty):1.0
+Domain(tieneEntidadFinanciera,Proyecto):1.0
+Range(tieneEntidadFinanciera,Organizacion):1.0
+is(tieneEvaluacion,ObjectProperty):1.0
+SubPropertyOf(tieneEvaluacion,tieneProyecto):1.0
+Domain(tieneEvaluacion,Proyecto):1.0
+Range(tieneEvaluacion,Evaluacion_Marcha_Proyecto):1.0
+InverseOf(tieneEvaluacion,EvaluaciónDe):1.0
+is(tieneFormacion,ObjectProperty):1.0
+Domain(tieneFormacion,trabajaUAI):1.0
+Range(tieneFormacion,Formacion):1.0
+InverseOf(tieneFormacion,perteneceATrUAI):1.0
+is(tieneIdea,ObjectProperty):1.0
+Domain(tieneIdea,Empleado_Centro):1.0
+Range(tieneIdea,Idea):1.0
+InverseOf(tieneIdea,ideaPerteneceA,):1.0
+InverseOf(tieneIdea,procedeDeEmpleado):1.0
+is(tieneIdeaI,ObjectProperty):1.0
+SubPropertyOf(tieneIdeaI,tieneIdea):1.0
+is(tieneIdeaII,ObjectProperty):1.0
+SubPropertyOf(tieneIdeaII,tieneIdea):1.0
+is(tieneInvestigador,ObjectProperty):1.0
+Domain(tieneInvestigador,Grupo_Investigacion):1.0
+Range(tieneInvestigador,Investigador):1.0
+InverseOf(tieneInvestigador,perteneceAGrupo):1.0
+is(tieneLicencia,ObjectProperty):1.0
+Domain(tieneLicencia,Derecho_Propiedad_Industrial):1.0
+Range(tieneLicencia,Licencia):1.0
+is(tieneLicenciaDA,ObjectProperty):1.0
+SubPropertyOf(tieneLicenciaDA,tieneLicencia):1.0
+Domain(tieneLicenciaDA,Derecho_Autor):1.0
+Range(tieneLicenciaDA,Licencia):1.0
+is(tieneLicenciaKH,ObjectProperty):1.0
+SubPropertyOf(tieneLicenciaKH,tieneLicencia):1.0
+Domain(tieneLicenciaKH,Know_How):1.0
+Range(tieneLicenciaKH,Licencia):1.0
+is(tieneLicenciaPI,ObjectProperty):1.0
+SubPropertyOf(tieneLicenciaPI,tieneLicencia):1.0
+Domain(tieneLicenciaPI,PI_Explotacion):1.0
+Range(tieneLicenciaPI,Licencia):1.0
+is(tieneLicenciaPS,ObjectProperty):1.0
+SubPropertyOf(tieneLicenciaPS,tieneLicencia):1.0
+is(tieneLicenciaSI,ObjectProperty):1.0
+SubPropertyOf(tieneLicenciaSI,tieneLicencia):1.0
+Domain(tieneLicenciaSI,Secreto_Industrial):1.0
+Range(tieneLicenciaSI,Licencia):1.0
+is(tieneMetaI_D_i,ObjectProperty):1.0
+SubPropertyOf(tieneMetaI_D_i,tieneCaracteristicaCentro):1.0
+Domain(tieneMetaI_D_i,Centro):1.0
+Range(tieneMetaI_D_i,Meta_I_D_i):1.0
+is(tieneMiembro,ObjectProperty):1.0
+Domain(tieneMiembro,ITEMAS):1.0
+Range(tieneMiembro,Institucion):1.0
+InverseOf(tieneMiembro,esMiembroEn):1.0
+is(tieneObjetivoI_D_i,ObjectProperty):1.0
+SubPropertyOf(tieneObjetivoI_D_i,tieneCaracteristicaCentro):1.0
+Domain(tieneObjetivoI_D_i,Centro):1.0
+Range(tieneObjetivoI_D_i,Objetivo_I_D_i):1.0
+is(tieneObjetivosProyecto,ObjectProperty):1.0
+SubPropertyOf(tieneObjetivosProyecto,tieneProyecto):1.0
+Domain(tieneObjetivosProyecto,Proyecto):1.0
+Range(tieneObjetivosProyecto,Objetivo_Proyecto):1.0
+InverseOf(tieneObjetivosProyecto,perteneceAProyecto):1.0
+is(tienePatente,ObjectProperty):1.0
+Domain(tienePatente,Familia_Patente):1.0
+Range(tienePatente,Patente):1.0
+is(tienePoliticaI_D_i,ObjectProperty):1.0
+SubPropertyOf(tienePoliticaI_D_i,tieneCaracteristicaCentro):1.0
+Domain(tienePoliticaI_D_i,Centro):1.0
+Range(tienePoliticaI_D_i,Politica_I_D_i):1.0
+is(tieneProyecto,ObjectProperty):1.0
+Domain(tieneProyecto,Proyecto):1.0
+Range(tieneProyecto,Caracteristicas_proyecto):1.0
+is(tieneResponsabilidades,ObjectProperty):1.0
+SubPropertyOf(tieneResponsabilidades,tieneCaracteristicasEmpleado):1.0
+Domain(tieneResponsabilidades,Empleado):1.0
+Range(tieneResponsabilidades,Responsabilidades):1.0
+is(tieneResultados,ObjectProperty):1.0
+SubPropertyOf(tieneResultados,tieneProyecto):1.0
+Domain(tieneResultados,Proyecto):1.0
+Range(tieneResultados,Resultado_Proyecto):1.0
+InverseOf(tieneResultados,resultadoDe):1.0
+is(tieneSistemaGestionI_D_i,ObjectProperty):1.0
+SubPropertyOf(tieneSistemaGestionI_D_i,tieneCaracteristicaCentro):1.0
+Domain(tieneSistemaGestionI_D_i,Centro):1.0
+Range(tieneSistemaGestionI_D_i,Sistema_Gestion_I_D_i):1.0
+is(tieneUAI,ObjectProperty):1.0
+Characteristics(tieneUAI,Functional):1.0
+Domain(tieneUAI,Centro):1.0
+Range(tieneUAI,UAI):1.0
+InverseOf(tieneUAI,UAIDeCentro):1.0
+is(tieneUnidades,ObjectProperty):1.0
+Domain(tieneUnidades,UAI):1.0
+Range(tieneUnidades,Unidades_UAI):1.0
+InverseOf(tieneUnidades,perteneceAUAI):1.0
+is(tienenPlanificacion,ObjectProperty):1.0
+Domain(tienenPlanificacion,Actividad_I_D_i):1.0
+Range(tienenPlanificacion,Planificacion_Actividades):1.0
+InverseOf(tienenPlanificacion,planifica):1.0
+is(trabajaEn,ObjectProperty):1.0
+Characteristics(trabajaEn,Functional):1.0
+Domain(trabajaEn,Empleado):1.0
+Range(trabajaEn,Organizacion):1.0
+is(transfiere,ObjectProperty):1.0
+Domain(transfiere,Contrato_Transferencia):1.0
+Range(transfiere,Conocimiento):1.0
+is(vieneDe,ObjectProperty):1.0
+Domain(vieneDe,Informe):1.0
+Range(vieneDe,Proyecto):1.0
+InverseOf(vieneDe,puedeDarAInforme):1.0
+is(vieneDePr,ObjectProperty):1.0
+Domain(vieneDePr,Prototipo_Homologacion_Ensayo):1.0
+Range(vieneDePr,Proyecto):1.0
+InverseOf(vieneDePr,puedeDarProt):1.0
+is(vieneDeProceso,ObjectProperty):1.0
+Domain(vieneDeProceso,Producto):1.0
+Range(vieneDeProceso,Proceso):1.0
+InverseOf(vieneDeProceso,ProcesoDaA):1.0
+is(ambitoFormacion,DataProperty):1.0
+SubPropertyOf(ambitoFormacion,propiedadesFormacion):1.0
+is(ambitoOrganizacion,DataProperty):1.0
+Domain(ambitoOrganizacion,Organizacion):1.0
+Range(ambitoOrganizacion,{"Internacional" , "Nacional"}):1.0
+SubPropertyOf(ambitoOrganizacion,propiedadesOrganizacion):1.0
+is(ambitoProyecto,DataProperty):1.0
+SubPropertyOf(ambitoProyecto,propiedadesProyecto):1.0
+is(areaEstrategica,DataProperty):1.0
+Domain(areaEstrategica,Actividad_I_D_i):1.0
+is(cuantiaEnsayo,DataProperty):1.0
+SubPropertyOf(cuantiaEnsayo,propiedadesEnsayo):1.0
+is(cuantiaLicencia,DataProperty):1.0
+Domain(cuantiaLicencia,Licencia):1.0
+is(ebitda,DataProperty):1.0
+SubPropertyOf(ebitda,propiedadesEBT):1.0
+is(facturacionEBT,DataProperty):1.0
+SubPropertyOf(facturacionEBT,propiedadesEBT):1.0
+is(fechaEnsayo,DataProperty):1.0
+SubPropertyOf(fechaEnsayo,propiedadesEnsayo):1.0
+is(financiacionITEMAS,DataProperty):1.0
+Domain(financiacionITEMAS,ITEMAS):1.0
+Range(financiacionITEMAS,double):1.0
+is(fondosCaptadosEBT,DataProperty):1.0
+SubPropertyOf(fondosCaptadosEBT,propiedadesEBT):1.0
+is(frecuencia,DataProperty):1.0
+Domain(frecuencia,Reunion):1.0
+is(gruposTrabajo,DataProperty):1.0
+Domain(gruposTrabajo,ITEMAS):1.0
+is(jcr,DataProperty):1.0
+Domain(jcr,trabajaUAI):1.0
+is(jerarquia,DataProperty):1.0
+Domain(jerarquia,Director_UAI):1.0
+is(oficinaPatente,DataProperty):1.0
+is(propiedadesEBT,DataProperty):1.0
+Domain(propiedadesEBT,EBT):1.0
+is(propiedadesEnsayo,DataProperty):1.0
+Domain(propiedadesEnsayo,Ensayo_Clinico):1.0
+is(propiedadesFormacion,DataProperty):1.0
+Domain(propiedadesFormacion,Formacion):1.0
+is(propiedadesOrganizacion,DataProperty):1.0
+Domain(propiedadesOrganizacion,Organizacion):1.0
+is(propiedadesProyecto,DataProperty):1.0
+Domain(propiedadesProyecto,Proyecto):1.0
+is(resolucion,DataProperty):1.0
+Domain(resolucion,Convocatoria):1.0
+is(revista,DataProperty):1.0
+Domain(revista,Articulo):1.0
+Range(revista,{"AHCI" , "SCI" , "SSCI"}):1.0
+is(tipoActividadInnovacion,DataProperty):1.0
+Domain(tipoActividadInnovacion,Actividad_Innovacion):1.0
+Range(tipoActividadInnovacion,{"InnovacionEnTecnologia" , "InnovacionGestion" , "InnovacionTecnologica"}):1.0
+is(tipoFormacion,DataProperty):1.0
+SubPropertyOf(tipoFormacion,propiedadesFormacion):1.0
+is(tipoIdea,DataProperty):1.0
+Domain(tipoIdea,Idea):1.0
+Range(tipoIdea,{"Bio" , "Farma" , "Imagen" , "Materiales_Dispositivos" , "Organizativa_Asistencial" , "TIC_Salud"}):1.0
+is(tipoOrganizacion,DataProperty):1.0
+Domain(tipoOrganizacion,Organizacion):1.0
+Range(tipoOrganizacion,{"Privada" , "Publica"}):1.0
+SubPropertyOf(tipoOrganizacion,propiedadesOrganizacion):1.0
+is(tipoProyecto,DataProperty):1.0
+SubPropertyOf(tipoProyecto,propiedadesProyecto):1.0
+is(Accion_Comercial,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,Accion_Proyecto exactly 1 Proyecto,):1.0
+is(Thing,,implicaFase exactly 1 F4_Transferencia,):1.0
+is(Thing,,realizadaPor exactly 1 Organizacion):1.0
+is(Actividad_Desarrollo,Class):1.0
+SubClassOf(Actividad_Desarrollo,Actividad_I_D_i):1.0
+is(Actividad_I_D_i,Class):1.0
+EquivalentTo(Actividad_I_D_i,Actividad_Desarrollo or Actividad_Innovacion or Actividad_Investigacion):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,tienenPlanificacion exactly 1 Planificacion_Actividades,):1.0
+is(Thing,,areaEstrategica only string):1.0
+is(Actividad_Innovacion,Class):1.0
+SubClassOf(Actividad_Innovacion,Actividad_I_D_i,):1.0
+SubClassOf(Actividad_Innovacion,tipoActividadInnovacion only string):1.0
+is(Actividad_Investigacion,Class):1.0
+SubClassOf(Actividad_Investigacion,Actividad_I_D_i):1.0
+is(Acuerdo,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,esFirmadoPor exactly 1 Organizacion,):1.0
+is(Thing,,esUnInstrumento exactly 1 Instrumento_Legal):1.0
+is(Acuerdo_Exclusividad,Class):1.0
+SubClassOf(Acuerdo_Exclusividad,Acuerdo,):1.0
+SubClassOf(Acuerdo_Exclusividad,acuerdoProviene exactly 1 Resultado_Proyecto,):1.0
+SubClassOf(Acuerdo_Exclusividad,implicaFase exactly 1 F5_Mercado):1.0
+is(Alianza,Class):1.0
+SubClassOf(Alianza,Acuerdo):1.0
+is(Articulo,Class):1.0
+SubClassOf(Articulo,Diseminacion_Cientifica,):1.0
+SubClassOf(Articulo,Autor some Empleado_Centro,):1.0
+SubClassOf(Articulo,revista exactly 1 string):1.0
+is(Capital_Intelectual,Class):1.0
+SubClassOf(Capital_Intelectual,Caracteristicas_Centro,):1.0
+SubClassOf(Capital_Intelectual,incluyeConocimiento some Conocimiento):1.0
+is(Caracteristicas_Centro,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,perteneceACentro exactly 1 Centro):1.0
+is(Caracteristicas_Empleados,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,esDeEmpleado exactly 1 Empleado):1.0
+is(Caracteristicas_proyecto,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Cargo,Class):1.0
+SubClassOf(Cargo,Empleado_Centro):1.0
+is(Centro,Class):1.0
+EquivalentTo(Centro,Centro_Sanitario or IIS):1.0
+SubClassOf(Centro,Institucion,):1.0
+SubClassOf(Centro,desarrolla only Ensayo_Clinico,):1.0
+SubClassOf(Centro,promueve only Ensayo_Clinico,):1.0
+SubClassOf(Centro,tieneUAI only UAI,):1.0
+SubClassOf(Centro,dirigidoPor exactly 1 Responsable,):1.0
+SubClassOf(Centro,tieneCapitalIntelectual exactly 1 Capital_Intelectual,):1.0
+SubClassOf(Centro,tieneCulturaInnovadora exactly 1 Cultura_Innovadora,):1.0
+SubClassOf(Centro,tieneMetaI_D_i exactly 1 Meta_I_D_i,):1.0
+SubClassOf(Centro,tieneObjetivoI_D_i exactly 1 Objetivo_I_D_i,):1.0
+SubClassOf(Centro,tienePoliticaI_D_i exactly 1 Politica_I_D_i,):1.0
+SubClassOf(Centro,tieneSistemaGestionI_D_i exactly 1 Sistema_Gestion_I_D_i):1.0
+DisjointWith(Centro,Fundacion):1.0
+is(Centro_Sanit1,Class):1.0
+is(Centro_Sanitario,Class):1.0
+EquivalentTo(Centro_Sanitario,Centro and (not (IIS))):1.0
+SubClassOf(Centro_Sanitario,Centro):1.0
+DisjointWith(Centro_Sanitario,IIS):1.0
+is(Competencias,Class):1.0
+SubClassOf(Competencias,Caracteristicas_Empleados):1.0
+DisjointWith(Competencias,Responsabilidades):1.0
+is(Conocimiento,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,surgede some Resultado_Proyecto,):1.0
+is(Thing,,formaParteDe exactly 1 Capital_Intelectual):1.0
+is(Consorcio,Class):1.0
+is(Thing),Caracteristicas_proyecto and (formadoPor some www.w3.org/2002/07/#):1.0
+SubClassOf(Thing),Caracteristicas_proyecto,):1.0
+SubClassOf(Thing),formadoPor some Organizacion,):1.0
+SubClassOf(Thing),llevaACaboProyecto some Proyecto):1.0
+is(Contrato_I_D_i,Class):1.0
+SubClassOf(Contrato_I_D_i,Acuerdo,):1.0
+SubClassOf(Contrato_I_D_i,finalidadContrato exactly 1 Proyecto):1.0
+is(Contrato_Transferencia,Class):1.0
+SubClassOf(Contrato_Transferencia,Acuerdo,):1.0
+SubClassOf(Contrato_Transferencia,transfiere exactly 1 Conocimiento):1.0
+is(Convenio_Marco,Class):1.0
+SubClassOf(Convenio_Marco,Acuerdo):1.0
+is(Convocatoria,Class):1.0
+SubClassOf(Convocatoria,Caracteristicas_proyecto,):1.0
+SubClassOf(Convocatoria,incluyeProyecto some Proyecto,):1.0
+SubClassOf(Convocatoria,regidaPor only Politica_Tecnologica,):1.0
+SubClassOf(Convocatoria,resolucion exactly 1 dateTime):1.0
+is(Cultura_Innovadora,Class):1.0
+SubClassOf(Cultura_Innovadora,Caracteristicas_Centro):1.0
+is(Derecho_Autor,Class):1.0
+SubClassOf(Derecho_Autor,Tipos,):1.0
+SubClassOf(Derecho_Autor,tieneLicenciaDA exactly 1 Licencia):1.0
+is(Derecho_Propiedad_Industrial,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,estaLicenciadoEn exactly 1 Licencia,):1.0
+is(Thing,,protege exactly 1 Resultado_Proyecto):1.0
+is(Desarrollo_Tecnologico,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,(DesarrolloDaA only Mejora_Tecnologica) and (DesarrolloDaA only Proceso) and (DesarrolloDaA only Producto),):1.0
+is(Thing,,procedeResultados exactly 1 Resultado_Proyecto):1.0
+is(Difusion_Externa,Class):1.0
+SubClassOf(Difusion_Externa,Eventos_Difusion):1.0
+DisjointWith(Difusion_Externa,Difusion_Interna):1.0
+is(Difusion_Interna,Class):1.0
+EquivalentTo(Difusion_Interna,Eventos_Difusion and (dirigidoA some Empleado_Centro)):1.0
+SubClassOf(Difusion_Interna,Eventos_Difusion):1.0
+DisjointWith(Difusion_Interna,Difusion_Externa):1.0
+is(Director,Class):1.0
+EquivalentTo(Director,Responsable and (dirige exactly 1 IIS)):1.0
+SubClassOf(Director,Responsable):1.0
+DisjointWith(Director,Gerente):1.0
+is(Director_UAI,Class):1.0
+EquivalentTo(Director_UAI,trabajaUAI and (dirige exactly 1 UAI)):1.0
+SubClassOf(Director_UAI,trabajaUAI,):1.0
+SubClassOf(Director_UAI,asisteA only Reunion,):1.0
+SubClassOf(Director_UAI,jerarquia exactly 1 integer):1.0
+is(Diseminacion_Cientifica,Class):1.0
+SubClassOf(Diseminacion_Cientifica,Metodo_Diseminacion):1.0
+is(Diseno_Industrial,Class):1.0
+SubClassOf(Diseno_Industrial,Tipos):1.0
+is(Donacion,Class):1.0
+SubClassOf(Donacion,Acuerdo):1.0
+is(EBT,Class):1.0
+SubClassOf(EBT,Empresa,):1.0
+SubClassOf(EBT,hayLicencia exactly 1 Licencia,):1.0
+SubClassOf(EBT,ebitda exactly 1 double,):1.0
+SubClassOf(EBT,facturacionEBT exactly 1 double,):1.0
+SubClassOf(EBT,fondosCaptadosEBT exactly 1 double):1.0
+DisjointWith(EBT,Farmaceutica):1.0
+is(Empleado,Class):1.0
+EquivalentTo(Empleado,Empleado_Empresa or Empleado_Institucion):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,tieneCaracteristicasEmpleado some Caracteristicas_Empleados,):1.0
+is(Thing,,asisteEventos only Eventos_Difusion,):1.0
+is(Thing,,trabajaEn exactly 1 Organizacion):1.0
+is(Empleado1,Class):1.0
+is(Empleado_Centro,Class):1.0
+EquivalentTo(Empleado_Centro,Empleado_Institucion and (trabajaEn exactly 1 Centro)):1.0
+SubClassOf(Empleado_Centro,Empleado_Institucion,):1.0
+SubClassOf(Empleado_Centro,escribe only Articulo,):1.0
+SubClassOf(Empleado_Centro,tieneIdea only Idea):1.0
+is(Empleado_Empresa,Class):1.0
+SubClassOf(Empleado_Empresa,Empleado):1.0
+DisjointWith(Empleado_Empresa,Empleado_Institucion):1.0
+is(Empleado_Institucion,Class):1.0
+SubClassOf(Empleado_Institucion,Empleado):1.0
+DisjointWith(Empleado_Institucion,Empleado_Empresa):1.0
+is(Empresa,Class):1.0
+SubClassOf(Empresa,Organizacion,):1.0
+SubClassOf(Empresa,participaEnProyecto only Proyecto):1.0
+DisjointWith(Empresa,Institucion):1.0
+is(EmpresaBT1,Class):1.0
+is(Ensayo,Class):1.0
+SubClassOf(Ensayo,Prototipo_Homologacion_Ensayo):1.0
+is(Ensayo_Clinico,Class):1.0
+EquivalentTo(Ensayo_Clinico,Medicamento or Producto_Sanitario):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,(PromovidoPorCentro exactly 1 Centro) or (PromovidoPorFarmaceutica exactly 1 Farmaceutica),):1.0
+is(Thing,,esDesarrolladoPor exactly 1 Centro,):1.0
+is(Thing,,cuantiaEnsayo exactly 1 double,):1.0
+is(Thing,,fechaEnsayo exactly 1 dateTime):1.0
+is(Estado,Class):1.0
+SubClassOf(Estado,Derecho_Propiedad_Industrial):1.0
+is(Estado_Proyecto,Class):1.0
+SubClassOf(Estado_Proyecto,Proyecto):1.0
+is(Estudio_Mercado,Class):1.0
+SubClassOf(Estudio_Mercado,Informe):1.0
+is(Evaluacion_Marcha_Proyecto,Class):1.0
+SubClassOf(Evaluacion_Marcha_Proyecto,Caracteristicas_proyecto,):1.0
+SubClassOf(Evaluacion_Marcha_Proyecto,EvaluaciónDe exactly 1 Proyecto_Activo):1.0
+is(Evento,Class):1.0
+SubClassOf(Evento,Metodo_Diseminacion):1.0
+is(Eventos_Difusion,Class):1.0
+EquivalentTo(Eventos_Difusion,Difusion_Externa or Difusion_Interna):1.0
+SubClassOf(Eventos_Difusion,Diseminacion_Cientifica,):1.0
+SubClassOf(Eventos_Difusion,organizadosPor only UAI):1.0
+is(Explotacion,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,explota only):1.0
+is(Thing,,(Mejora_Tecnologica or Proceso or Producto)):1.0
+is(F1_Captacion,Class):1.0
+SubClassOf(F1_Captacion,Fase_Embudo):1.0
+is(F2_Evaluacion,Class):1.0
+SubClassOf(F2_Evaluacion,Fase_Embudo,):1.0
+SubClassOf(F2_Evaluacion,daLugarA some Proyecto,):1.0
+SubClassOf(F2_Evaluacion,existeInforme some Informe):1.0
+is(F3_Desarrollo,Class):1.0
+SubClassOf(F3_Desarrollo,Fase_Embudo,):1.0
+SubClassOf(F3_Desarrollo,existePrototipo some Prototipo_Homologacion_Ensayo):1.0
+is(F4_Transferencia,Class):1.0
+SubClassOf(F4_Transferencia,Fase_Embudo,):1.0
+SubClassOf(F4_Transferencia,existeAccionComercial some Accion_Comercial):1.0
+is(F5_Mercado,Class):1.0
+SubClassOf(F5_Mercado,Fase_Embudo,):1.0
+SubClassOf(F5_Mercado,(existeMercado some Acuerdo_Exclusividad) or (existeMercado some Licencia)):1.0
+is(Familia_Patente,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,tienePatente some Patente):1.0
+is(Farmaceutica,Class):1.0
+SubClassOf(Farmaceutica,Empresa,):1.0
+SubClassOf(Farmaceutica,promueveFarm only Ensayo_Clinico):1.0
+DisjointWith(Farmaceutica,EBT):1.0
+is(Fase_Embudo,Class):1.0
+EquivalentTo(Fase_Embudo,F1_Captacion or F2_Evaluacion or F3_Desarrollo or F4_Transferencia or F5_Mercado):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Financiacion_UAI,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,perteneceUAI exactly 1 UAI):1.0
+is(Formacion,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,perteneceATrUAI exactly 1 trabajaUAI,):1.0
+is(Thing,,ambitoFormacion exactly 1 string,):1.0
+is(Thing,,tipoFormacion exactly 1 string):1.0
+is(Fundacion,Class):1.0
+SubClassOf(Fundacion,Institucion):1.0
+DisjointWith(Fundacion,Centro):1.0
+is(Gerente,Class):1.0
+EquivalentTo(Gerente,Responsable and (dirige exactly 1 Centro_Sanitario)):1.0
+SubClassOf(Gerente,Responsable):1.0
+DisjointWith(Gerente,Director):1.0
+is(Grupo_Investigacion,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,(tieneInvestigador some IC) and (tieneInvestigador min 1 IP),):1.0
+is(Thing,,realizaInvestigacion some Actividad_Investigacion):1.0
+is(Hardware,Class):1.0
+SubClassOf(Hardware,Producto):1.0
+is(Homologacion,Class):1.0
+SubClassOf(Homologacion,Prototipo_Homologacion_Ensayo):1.0
+is(IC,Class):1.0
+SubClassOf(IC,Investigador):1.0
+DisjointWith(IC,IP):1.0
+is(IIS,Class):1.0
+EquivalentTo(IIS,Centro and (not (Centro_Sanitario))):1.0
+SubClassOf(IIS,Centro):1.0
+DisjointWith(IIS,Centro_Sanitario):1.0
+is(IP,Class):1.0
+SubClassOf(IP,Investigador):1.0
+DisjointWith(IP,IC):1.0
+is(ITEMAS,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,tieneMiembro some Institucion,):1.0
+is(Thing,,financiaUAI only Financiacion_UAI,):1.0
+is(Thing,,tieneColaborador only Organizacion,):1.0
+is(Thing,,gruposTrabajo some string,):1.0
+is(Thing,,financiacionITEMAS exactly 1 double):1.0
+is(Idea,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,(estaEnFaseEmbudo exactly 1 F1_Captacion) or (estaEnFaseEmbudo exactly 1 F2_Evaluacion),):1.0
+is(Thing,,generates only Proyecto,):1.0
+is(Thing,,ideaPerteneceA exactly 1 Empleado_Centro,):1.0
+is(Thing,,tipoIdea exactly 1 string):1.0
+is(Informe,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,implicaFase exactly 1 F2_Evaluacion,):1.0
+is(Thing,,vieneDe exactly 1 Proyecto):1.0
+is(Informe_Pantetabilidad,Class):1.0
+SubClassOf(Informe_Pantetabilidad,Informe):1.0
+is(Informe_Valor_Producto,Class):1.0
+SubClassOf(Informe_Valor_Producto,Informe):1.0
+is(Institucion,Class):1.0
+SubClassOf(Institucion,Organizacion,):1.0
+SubClassOf(Institucion,esMiembroEn only ITEMAS,):1.0
+SubClassOf(Institucion,participaSpinfOff only SpinOff):1.0
+DisjointWith(Institucion,Empresa):1.0
+is(Instrumento_Legal,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Investigador,Class):1.0
+SubClassOf(Investigador,Cargo,):1.0
+SubClassOf(Investigador,perteneceAGrupo exactly 1 Grupo_Investigacion):1.0
+is(Know_How,Class):1.0
+SubClassOf(Know_How,Tipos,):1.0
+SubClassOf(Know_How,tieneLicenciaKH exactly 1 Licencia):1.0
+is(Licencia,Class):1.0
+SubClassOf(Licencia,Acuerdo,):1.0
+SubClassOf(Licencia,daLugarAEBT only EBT,):1.0
+SubClassOf(Licencia,implicaFase exactly 1 F5_Mercado,):1.0
+SubClassOf(Licencia,licenciaUn exactly 1 Derecho_Propiedad_Industrial,):1.0
+SubClassOf(Licencia,cuantiaLicencia exactly 1 double):1.0
+is(Licencia1,Class):1.0
+is(MTA,Class):1.0
+SubClassOf(MTA,Acuerdo):1.0
+is(Marca,Class):1.0
+SubClassOf(Marca,Tipos):1.0
+is(Material,Class):1.0
+SubClassOf(Material,Producto):1.0
+is(Mecenazgo,Class):1.0
+SubClassOf(Mecenazgo,Acuerdo):1.0
+is(Medicamento,Class):1.0
+SubClassOf(Medicamento,Ensayo_Clinico):1.0
+DisjointWith(Medicamento,Producto_Sanitario):1.0
+is(Mejora_Tecnologica,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Meta_I_D_i,Class):1.0
+SubClassOf(Meta_I_D_i,Caracteristicas_Centro,):1.0
+SubClassOf(Meta_I_D_i,surgeDeObjetivo exactly 1 Objetivo_I_D_i):1.0
+is(Metodo_Diseminacion,Class):1.0
+EquivalentTo(Metodo_Diseminacion,publica exactly 1 Resultado_Proyecto):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Modelo_Utilidad,Class):1.0
+SubClassOf(Modelo_Utilidad,Tipos):1.0
+is(NDA,Class):1.0
+SubClassOf(NDA,Acuerdo):1.0
+is(Naturaleza_Proyecto,Class):1.0
+SubClassOf(Naturaleza_Proyecto,Proyecto):1.0
+is(Noticia,Class):1.0
+SubClassOf(Noticia,Metodo_Diseminacion):1.0
+is(Objetivo_I_D_i,Class):1.0
+SubClassOf(Objetivo_I_D_i,Caracteristicas_Centro,):1.0
+SubClassOf(Objetivo_I_D_i,esOriginadoEn exactly 1 Politica_I_D_i):1.0
+is(Objetivo_Proyecto,Class):1.0
+SubClassOf(Objetivo_Proyecto,Caracteristicas_proyecto,):1.0
+SubClassOf(Objetivo_Proyecto,perteneceAProyecto exactly 1 Proyecto):1.0
+is(Organizacion,Class):1.0
+EquivalentTo(Organizacion,Empresa or Institucion):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,esSociaDe only Consorcio,):1.0
+is(Thing,,financia only Proyecto,):1.0
+is(Thing,,firma only Acuerdo,):1.0
+is(Thing,,realizaAccion only Accion_Comercial,):1.0
+is(Thing,,esColaboradoraEn max 1 ITEMAS,):1.0
+is(Thing,,ambitoOrganizacion exactly 1 string,):1.0
+is(Thing,,tipoOrganizacion exactly 1 string):1.0
+is(PI_Concedida,Class):1.0
+SubClassOf(PI_Concedida,Estado):1.0
+is(PI_Explotacion,Class):1.0
+SubClassOf(PI_Explotacion,Estado,):1.0
+SubClassOf(PI_Explotacion,tieneLicenciaPI exactly 1 Licencia):1.0
+is(PI_Solicitada,Class):1.0
+SubClassOf(PI_Solicitada,Estado):1.0
+is(Patente,Class):1.0
+SubClassOf(Patente,Tipos,):1.0
+SubClassOf(Patente,pertenecePatente exactly 1 Familia_Patente,):1.0
+SubClassOf(Patente,oficinaPatente exactly 1 string):1.0
+is(Patente1,Class):1.0
+is(Planificacion_Actividades,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,planifica some Actividad_I_D_i):1.0
+is(Politica_I_D_i,Class):1.0
+SubClassOf(Politica_I_D_i,Caracteristicas_Centro,):1.0
+SubClassOf(Politica_I_D_i,originaObjetivo some Objetivo_I_D_i):1.0
+is(Politica_Tecnologica,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,daAConvocatoria only Convocatoria):1.0
+is(Proceso,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,ProcesoDaA only Producto):1.0
+is(Producto,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,vieneDeProceso only Proceso):1.0
+is(Producto_Sanitario,Class):1.0
+SubClassOf(Producto_Sanitario,Ensayo_Clinico):1.0
+DisjointWith(Producto_Sanitario,Medicamento):1.0
+is(Prototipo,Class):1.0
+SubClassOf(Prototipo,Prototipo_Homologacion_Ensayo):1.0
+is(Prototipo_Homologacion_Ensayo,Class):1.0
+EquivalentTo(Prototipo_Homologacion_Ensayo,Ensayo or Homologacion or Prototipo):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,implicaFase exactly 1 F3_Desarrollo,):1.0
+is(Thing,,vieneDePr exactly 1 Proyecto):1.0
+is(Proyecto,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,(estaEnFaseEmbudo exactly 1 F3_Desarrollo) or (estaEnFaseEmbudo exactly 1 F4_Transferencia) or (estaEnFaseEmbudo exactly 1 F5_Mercado),):1.0
+is(Thing,,tieneObjetivosProyecto some Objetivo_Proyecto,):1.0
+is(Thing,,participadoPor only Empresa,):1.0
+is(Thing,,puedeDarAInforme only Informe,):1.0
+is(Thing,,puedeDarAccion only Accion_Comercial,):1.0
+is(Thing,,puedeDarProt only Prototipo_Homologacion_Ensayo,):1.0
+is(Thing,,tieneConsorcio only Consorcio,):1.0
+is(Thing,,tieneConvocatoria only Convocatoria,):1.0
+is(Thing,,tieneEntidadFinanciera only Organizacion,):1.0
+is(Thing,,tieneProyecto only Caracteristicas_proyecto,):1.0
+is(Thing,,arisesFrom exactly 1 Idea,):1.0
+is(Thing,,estaFirmadoEn max 1 Contrato_I_D_i,):1.0
+is(Thing,,ambitoProyecto exactly 1 string,):1.0
+is(Thing,,tipoProyecto exactly 1 string):1.0
+is(Proyecto1,Class):1.0
+is(Proyecto_Activo,Class):1.0
+SubClassOf(Proyecto_Activo,Estado_Proyecto,):1.0
+SubClassOf(Proyecto_Activo,tieneResultados only Resultado_Proyecto,):1.0
+SubClassOf(Proyecto_Activo,tieneEvaluacion exactly 1 Evaluacion_Marcha_Proyecto):1.0
+is(Proyecto_Cerrado,Class):1.0
+SubClassOf(Proyecto_Cerrado,Estado_Proyecto,):1.0
+SubClassOf(Proyecto_Cerrado,tieneResultados exactly 1 Resultado_Proyecto):1.0
+is(Proyecto_Concedido,Class):1.0
+SubClassOf(Proyecto_Concedido,Estado_Proyecto):1.0
+is(Proyecto_Denegado,Class):1.0
+SubClassOf(Proyecto_Denegado,Estado_Proyecto):1.0
+is(Proyecto_Desarrollo,Class):1.0
+SubClassOf(Proyecto_Desarrollo,Naturaleza_Proyecto,):1.0
+SubClassOf(Proyecto_Desarrollo,realizaActividades some Actividad_Desarrollo):1.0
+is(Proyecto_Innovacion,Class):1.0
+SubClassOf(Proyecto_Innovacion,Naturaleza_Proyecto,):1.0
+SubClassOf(Proyecto_Innovacion,realizaActividades some Actividad_Innovacion):1.0
+is(Proyecto_Investigacion,Class):1.0
+SubClassOf(Proyecto_Investigacion,Naturaleza_Proyecto,):1.0
+SubClassOf(Proyecto_Investigacion,realizaActividades some Actividad_Investigacion):1.0
+is(Proyecto_Solicitado,Class):1.0
+SubClassOf(Proyecto_Solicitado,Estado_Proyecto):1.0
+is(Responsabilidades,Class):1.0
+SubClassOf(Responsabilidades,Caracteristicas_Empleados):1.0
+DisjointWith(Responsabilidades,Competencias):1.0
+is(Responsable,Class):1.0
+SubClassOf(Responsable,Cargo,):1.0
+SubClassOf(Responsable,asisteA only Reunion,):1.0
+SubClassOf(Responsable,dirige exactly 1 Centro):1.0
+is(Resultado1,Class):1.0
+is(Resultado_Proyecto,Class):1.0
+SubClassOf(Resultado_Proyecto,Caracteristicas_proyecto,):1.0
+SubClassOf(Resultado_Proyecto,(resultadoDe exactly 1 Proyecto_Activo) or (resultadoDe exactly 1 Proyecto_Cerrado),):1.0
+SubClassOf(Resultado_Proyecto,daLugarADesarrollo only Desarrollo_Tecnologico,):1.0
+SubClassOf(Resultado_Proyecto,daLugarAcuerdo only Acuerdo_Exclusividad,):1.0
+SubClassOf(Resultado_Proyecto,esProtegidoPor only Derecho_Propiedad_Industrial,):1.0
+SubClassOf(Resultado_Proyecto,genera only Conocimiento):1.0
+is(Reunion,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,(tieneAsistentes exactly 1 Director_UAI) and (tieneAsistentes exactly 1 Responsable),):1.0
+is(Thing,,frecuencia exactly 1 integer):1.0
+is(Secreto_Industrial,Class):1.0
+SubClassOf(Secreto_Industrial,Tipos,):1.0
+SubClassOf(Secreto_Industrial,tieneLicenciaSI exactly 1 Licencia):1.0
+is(Servicio,Class):1.0
+SubClassOf(Servicio,Producto):1.0
+is(Servicio_I_D_i,Class):1.0
+SubClassOf(Servicio_I_D_i,Servicio):1.0
+is(Sistema_Gestion_I_D_i,Class):1.0
+SubClassOf(Sistema_Gestion_I_D_i,Caracteristicas_Centro,):1.0
+SubClassOf(Sistema_Gestion_I_D_i,objetivoSistema exactly 1 Politica_I_D_i):1.0
+is(Software,Class):1.0
+SubClassOf(Software,Producto):1.0
+is(SpinOff,Class):1.0
+EquivalentTo(SpinOff,EBT and (participadaPor some Institucion)):1.0
+SubClassOf(SpinOff,EBT):1.0
+DisjointWith(SpinOff,StartUp):1.0
+is(StartUp,Class):1.0
+EquivalentTo(StartUp,EBT and (not (SpinOff))):1.0
+SubClassOf(StartUp,EBT):1.0
+DisjointWith(StartUp,SpinOff):1.0
+is(Tipos,Class):1.0
+SubClassOf(Tipos,Derecho_Propiedad_Industrial):1.0
+is(Transferencia_Tecnologica,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,aPartirDeLicencia exactly 1 Licencia):1.0
+is(UAI,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,tiene some Financiacion_UAI,):1.0
+is(Thing,,organizaEvento only Eventos_Difusion,):1.0
+is(Thing,,tieneUnidades only Unidades_UAI,):1.0
+is(Thing,,UAIDeCentro exactly 1 Centro,):1.0
+is(Thing,,dirigidaPor exactly 1 Director_UAI):1.0
+is(Unidad_Gestion_I_D_i,Class):1.0
+SubClassOf(Unidad_Gestion_I_D_i,Unidades_UAI):1.0
+DisjointWith(Unidad_Gestion_I_D_i,Unidad_I_D_i):1.0
+is(Unidad_I_D_i,Class):1.0
+SubClassOf(Unidad_I_D_i,Unidades_UAI):1.0
+DisjointWith(Unidad_I_D_i,Unidad_Gestion_I_D_i):1.0
+is(Unidades_UAI,Class):1.0
+EquivalentTo(Unidades_UAI,Unidad_Gestion_I_D_i or Unidad_I_D_i):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,perteneceAUAI exactly 1 UAI):1.0
+is(Viabilidad_Técnica,Class):1.0
+SubClassOf(Viabilidad_Técnica,Informe):1.0
+is(Vigilancia_Tecnologica,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,esUna exactly 1 Actividad_Innovacion):1.0
+is(trabajaUAI,Class):1.0
+EquivalentTo(trabajaUAI,Empleado_Centro and (trabajaEn exactly 1 UAI)):1.0
+SubClassOf(trabajaUAI,Empleado_Centro,):1.0
+SubClassOf(trabajaUAI,tieneFormacion some Formacion,):1.0
+SubClassOf(trabajaUAI,jcr exactly 1 double):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(Centro_Sanit1,Individual):1.0
+Types(Centro_Sanit1,IIS):1.0
+is(Empleado1,Individual):1.0
+Types(Empleado1,Empleado):1.0
+is(EmpresaBT1,Individual):1.0
+Types(EmpresaBT1,StartUp):1.0
+is(F5_Mercado,Individual):1.0
+Types(F5_Mercado,F5_Mercado):1.0
+is(Licencia1,Individual):1.0
+Types(Licencia1,Licencia):1.0
+is(Patente1,Individual):1.0
+Types(Patente1,PI_Concedida,):1.0
+Types(Patente1,Patente):1.0
+is(Proyecto1,Individual):1.0
+Types(Proyecto1,Proyecto_Cerrado,):1.0
+Types(Proyecto1,Proyecto_Investigacion):1.0
+is(Resultado1,Individual):1.0
+Types(Resultado1,Resultado_Proyecto):1.0
+DisjointClasses(Resultado1,Actividad_Desarrollo,Actividad_Innovacion,Actividad_Investigacion):1.0
+DisjointClasses(Resultado1,Acuerdo_Exclusividad,Alianza,Contrato_I_D_i,Contrato_Transferencia,Convenio_Marco,Donacion,Licencia,MTA,Mecenazgo,NDA):1.0
+DisjointClasses(Resultado1,Diseno_Industrial,Marca,Modelo_Utilidad,Patente):1.0
+DisjointClasses(Resultado1,Ensayo,Homologacion,Prototipo):1.0
+DisjointClasses(Resultado1,Estudio_Mercado,Informe_Pantetabilidad,Informe_Valor_Producto,Viabilidad_Técnica):1.0
+DisjointClasses(Resultado1,F1_Captacion,F2_Evaluacion,F3_Desarrollo,F4_Transferencia,F5_Mercado):1.0
+DisjointClasses(Resultado1,Hardware,Material,Servicio,Software):1.0
+DisjointClasses(Resultado1,Hardware,Material,Software):1.0
+DisjointClasses(Resultado1,PI_Concedida,PI_Explotacion,PI_Solicitada):1.0
+DisjointClasses(Resultado1,Proyecto_Activo,Proyecto_Cerrado,Proyecto_Concedido,Proyecto_Denegado,Proyecto_Solicitado):1.0
+DisjointClasses(Resultado1,Proyecto_Desarrollo,Proyecto_Innovacion,Proyecto_Investigacion):1.0

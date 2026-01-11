@@ -1,0 +1,192 @@
+float is Datatype.
+int is Datatype.
+generated_by_proteolytic_enzyme is ObjectProperty.
+generated_by_proteolytic_enzyme Domain oligopeptide.
+generated_by_proteolytic_enzyme Range proteolytic_enzyme.
+has_material_part is ObjectProperty.
+has_material_part Characteristics Transitive.
+has_material_part Domain material_continuant.
+has_material_part Range material_continuant.
+has_parent_protein is ObjectProperty.
+has_parent_protein Domain oligopeptide.
+has_parent_protein Range protein.
+has_solvent is ObjectProperty.
+has_solvent SubPropertyOf has_material_part.
+has_units is ObjectProperty.
+is_described_by is ObjectProperty.
+is_described_by Domain chemical_entity.
+is_described_by Range substance_associated_data_collection or substance_parameter.
+material_part_of is ObjectProperty.
+material_part_of Characteristics Transitive.
+material_part_of Domain material_continuant.
+material_part_of Range material_continuant.
+has_value is DataProperty.
+Agilent_HPLC_data_processing_application is Class.
+Agilent_HPLC_data_processing_application SubClassOf HPLC_data_processing_application.
+Agilent_mass_spectrometer_data_processing_application is Class.
+Agilent_mass_spectrometer_data_processing_application SubClassOf MS_data_processing_application.
+Applied_Bio_Systems_mass_spectrometer_data_processing_application is Class.
+Applied_Bio_Systems_mass_spectrometer_data_processing_application SubClassOf MS_data_processing_application.
+Axiom_1 is Class.
+Axiom_1 EquivalentTo Proteinlynx_micromass_MALDI_data_processing_parameters_collection or Proteinlynx_micromass_electrospray_data_processing_parameters_collection.
+Thing is www.w3.org/2002/07/#.
+Bruker_Daltomics_mass_spectrometer_data_processing_application is Class.
+Bruker_Daltomics_mass_spectrometer_data_processing_application SubClassOf MS_data_processing_application.
+DNA_nucleotide_sequence is Class.
+HPLC_data_processing_application is Class.
+HPLC_data_processing_application SubClassOf data_processing_application.
+LINUCS_ID is Class.
+LINUCS_ID SubClassOf glycan_accession_number.
+MALDI_matrix is Class.
+MALDI_matrix SubClassOf molecular_aggregate,.
+MALDI_matrix SubClassOf has_material_part only small_molecule.
+MS_analyzer_parameter is Class.
+MS_analyzer_scan_time is Class.
+MS_analyzer_scan_time SubClassOf MS_analyzer_parameter.
+MS_data_processing_application is Class.
+MS_data_processing_application SubClassOf data_processing_application.
+MS_source_ESI_parameter is Class.
+MS_source_MALDI_laser_intensity is Class.
+MS_source_MALDI_laser_intensity EquivalentTo has_value only float.
+MS_source_MALDI_laser_intensity SubClassOf MS_source_MALDI_parameter,.
+MS_source_MALDI_laser_intensity SubClassOf has_units only laser_pulse_intensity_units.
+MS_source_MALDI_number_of_laser_shots is Class.
+MS_source_MALDI_number_of_laser_shots EquivalentTo has_value only int.
+MS_source_MALDI_number_of_laser_shots SubClassOf MS_source_MALDI_parameter,.
+Thing is has_units exactly 0 www.w3.org/2002/07/#.
+MS_source_MALDI_parameter is Class.
+MS_source_cone_voltage is Class.
+MS_source_cone_voltage EquivalentTo has_value only float.
+MS_source_cone_voltage SubClassOf MS_source_ESI_parameter,.
+MS_source_cone_voltage SubClassOf has_units only electrical_potential_units.
+Micromass_mass_spectrometer_data_processing_application is Class.
+Micromass_mass_spectrometer_data_processing_application SubClassOf MS_data_processing_application.
+Proteinlynx_micromass_MALDI_data_processing_parameters_collection is Class.
+Proteinlynx_micromass_electrospray_data_processing_parameters_collection is Class.
+RNA_nucleotide_sequence is Class.
+ThermoElectron_mass_spectrometer_data_processing_application is Class.
+ThermoElectron_mass_spectrometer_data_processing_application SubClassOf MS_data_processing_application.
+agent is Class.
+agent SubClassOf material_continuant.
+archaea is Class.
+archaea SubClassOf procaryotic_organism.
+bacteria is Class.
+bacteria SubClassOf procaryotic_organism.
+biochemical_sample is Class.
+biochemical_sample SubClassOf molecular_aggregate,.
+biochemical_sample SubClassOf is_described_by only substance_parameter,.
+biochemical_sample SubClassOf is_described_by only (not (ion_parameter or molecular_parameter)).
+biological_continuant is Class.
+biological_continuant SubClassOf material_continuant.
+cell is Class.
+cell SubClassOf biological_continuant.
+chemical_agent is Class.
+chemical_agent SubClassOf agent.
+chemical_entity is Class.
+chemical_entity SubClassOf material_continuant.
+data_processing_application is Class.
+data_processing_application SubClassOf agent.
+electrical_potential_units is Class.
+enzyme is Class.
+enzyme SubClassOf chemical_agent,.
+enzyme SubClassOf protein.
+eucaryotic_organism is Class.
+eucaryotic_organism SubClassOf organism.
+experimental_chemical_mass is Class.
+experimental_chemical_mass SubClassOf experimental_mass.
+experimental_mass is Class.
+experimental_monoisotopic_mass is Class.
+experimental_monoisotopic_mass SubClassOf experimental_mass.
+fragment_ion is Class.
+fragment_ion SubClassOf ion.
+glycan is Class.
+glycan SubClassOf molecule,.
+glycan SubClassOf is_described_by only (not (molecular_sequence)),.
+glycan SubClassOf is_described_by only (not (polynucleotide_accession_number)),.
+glycan SubClassOf is_described_by only (not (protein_accession_number)).
+glycan_accession_number is Class.
+ion is Class.
+ion SubClassOf chemical_entity,.
+ion SubClassOf is_described_by only ion_parameter.
+ion_parameter is Class.
+isoelectric_point is Class.
+laser_pulse_intensity_units is Class.
+life-cycle_form is Class.
+life-cycle_form SubClassOf biological_continuant.
+manufacturer is Class.
+manufacturer SubClassOf agent.
+material_continuant is Class.
+Thing is www.w3.org/2002/07/#.
+mixture is Class.
+mixture SubClassOf molecular_aggregate,.
+mixture SubClassOf is_described_by only mixture_component_descriptor.
+mixture_component_descriptor is Class.
+molecular_aggregate is Class.
+molecular_aggregate SubClassOf chemical_entity.
+molecular_parameter is Class.
+molecular_sequence is Class.
+molecule is Class.
+molecule EquivalentTo material_part_of only molecular_aggregate.
+molecule SubClassOf chemical_entity,.
+molecule SubClassOf is_described_by only.
+molecule SubClassOf (molecular_parameter or substance_accession_number).
+oligopeptide is Class.
+oligopeptide SubClassOf molecule,.
+oligopeptide SubClassOf is_described_by only (not (glycan_accession_number)),.
+oligopeptide SubClassOf is_described_by only (not (polynucleotide_accession_number)),.
+oligopeptide SubClassOf is_described_by only (not (DNA_nucleotide_sequence or RNA_nucleotide_sequence)).
+organ is Class.
+organ SubClassOf biological_continuant.
+organism is Class.
+organism SubClassOf biological_continuant.
+parent_ion is Class.
+parent_ion SubClassOf ion.
+person is Class.
+person SubClassOf agent.
+polynucleotide_accession_number is Class.
+procaryotic_organism is Class.
+procaryotic_organism SubClassOf organism.
+process_data is Class.
+protein is Class.
+protein SubClassOf molecule,.
+protein SubClassOf is_described_by only (not (glycan_accession_number)),.
+protein SubClassOf is_described_by only (not (polynucleotide_accession_number)),.
+protein SubClassOf is_described_by only (not (DNA_nucleotide_sequence or RNA_nucleotide_sequence)).
+protein_accession_number is Class.
+proteolytic_enzyme is Class.
+proteolytic_enzyme SubClassOf enzyme.
+pure_substance is Class.
+pure_substance SubClassOf molecular_aggregate,.
+pure_substance SubClassOf has_material_part only molecule.
+quantify_data is Class.
+quantify_data SubClassOf process_data.
+salt is Class.
+salt SubClassOf molecule,.
+salt SubClassOf has_material_part only ion,.
+salt SubClassOf is_described_by only (not (isoelectric_point)),.
+salt SubClassOf is_described_by only (not (molecular_sequence)),.
+salt SubClassOf is_described_by only (not (substance_accession_number)).
+small_molecule is Class.
+small_molecule SubClassOf molecule.
+small_organic_molecule is Class.
+small_organic_molecule SubClassOf small_molecule.
+solid_mixture is Class.
+solid_mixture SubClassOf mixture.
+solution is Class.
+solution SubClassOf mixture.
+solvent is Class.
+solvent SubClassOf pure_substance.
+solvent_molecule is Class.
+solvent_molecule SubClassOf small_molecule.
+substance_accession_number is Class.
+substance_associated_data_collection is Class.
+substance_parameter is Class.
+tryptic_peptide is Class.
+tryptic_peptide SubClassOf oligopeptide.
+www.w3.org/2002/07/# is Class.
+DHB_MALDI_matrix is Individual.
+DHB_MALDI_matrix Types MALDI_matrix.
+Homo_sapiens is Individual.
+Homo_sapiens Types eucaryotic_organism.
+alpha-cyano-4-hydroxycinnamic_acid_MALDI_matrix is Individual.
+alpha-cyano-4-hydroxycinnamic_acid_MALDI_matrix Types MALDI_matrix.

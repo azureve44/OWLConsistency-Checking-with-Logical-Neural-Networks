@@ -1,0 +1,39 @@
+predicate(describes,is,ObjectProperty).
+predicate(is_a,is,ObjectProperty).
+predicate(part_of,is,ObjectProperty).
+predicate(Arc-like,is,Class).
+predicate(Arc-like,EquivalentTo,describes some Macrocalcifications).
+predicate(Arc-like,SubClassOf,Macrocalcifications).
+predicate(Clinical_Aspects,is,Class).
+predicate(Diagnosis,is,Class).
+predicate(Diagnosis,EquivalentTo,part_of some Clinical_Aspects).
+predicate(Diagnosis,SubClassOf,Clinical_Aspects).
+predicate(Diffuse_Sclerosing_Variant_Thyroid_Gland_Papillary_Carcinoma,is,Class).
+predicate(Diffuse_Sclerosing_Variant_Thyroid_Gland_Papillary_Carcinoma,EquivalentTo,is_a some Highly_Invasive_Papillary_Thyroid_Cancer).
+predicate(Diffuse_Sclerosing_Variant_Thyroid_Gland_Papillary_Carcinoma,SubClassOf,Highly_Invasive_Papillary_Thyroid_Cancer).
+predicate(High_Risk,is,Class).
+predicate(High_Risk,EquivalentTo,describes some Initial_Risk_Stratification_System).
+predicate(High_Risk,SubClassOf,Initial_Risk_Stratification_System).
+predicate(Highly_Invasive_Papillary_Thyroid_Cancer,is,Class).
+predicate(Initial_Risk_Stratification_System,is,Class).
+predicate(Intermediate_Risk,is,Class).
+predicate(Intermediate_Risk,EquivalentTo,describes some Initial_Risk_Stratification_System).
+predicate(Intermediate_Risk,SubClassOf,Initial_Risk_Stratification_System).
+predicate(Intermediate_Risk,DisjointWith,describes some Initial_Risk_Stratification_System).
+predicate(Low_Risk,is,Class).
+predicate(Low_Risk,EquivalentTo,describes some Initial_Risk_Stratification_System).
+predicate(Low_Risk,SubClassOf,Initial_Risk_Stratification_System).
+predicate(Macrocalcifications,is,Class).
+predicate(Osteoporosis,is,Class).
+predicate(Other_Diagnosis,is,Class).
+predicate(Other_Diagnosis,SubClassOf,Diagnosis).
+predicate(Recurrent_Risk_Stratification_System,is,Class).
+predicate(Recurrent_Risk_Stratification_System,SubClassOf,Diagnosis).
+predicate(Response_to_Therapy_Categories,is,Class).
+predicate(Response_to_Therapy_Categories,SubClassOf,Diagnosis).
+predicate(Staging_System,is,Class).
+predicate(Staging_System,SubClassOf,Diagnosis).
+predicate(Subclinical_Thyrotoxicosis,is,Class).
+predicate(Subclinical_Thyrotoxicosis,EquivalentTo,is_a some Osteoporosis).
+predicate(Subclinical_Thyrotoxicosis,SubClassOf,Osteoporosis).
+predicate(www.w3.org/2002/07/#,is,Class).

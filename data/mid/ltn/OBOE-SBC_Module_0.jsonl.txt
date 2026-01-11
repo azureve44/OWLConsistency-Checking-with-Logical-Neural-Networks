@@ -1,0 +1,902 @@
+is(decimal,Datatype):1.0
+is(int,Datatype):1.0
+is(integer,Datatype):1.0
+is(hasSourceUnit,ObjectProperty):1.0
+is(hasTargetUnit,ObjectProperty):1.0
+is(hasUnit,ObjectProperty):1.0
+is(measurementFor,ObjectProperty):1.0
+is(ofCharacteristic,ObjectProperty):1.0
+is(ofEntity,ObjectProperty):1.0
+is(standardFor,ObjectProperty):1.0
+Characteristics(standardFor,InverseFunctional):1.0
+Domain(standardFor,Standard):1.0
+Range(standardFor,Measurement):1.0
+InverseOf(standardFor,usesStandard):1.0
+is(usesStandard,ObjectProperty):1.0
+InverseOf(usesStandard,standardFor):1.0
+is(hasMultiplier,DataProperty):1.0
+is(hasOffset,DataProperty):1.0
+is(hasPower,DataProperty):1.0
+Characteristics(hasPower,Functional):1.0
+Domain(hasPower,DerivedUnit):1.0
+Range(hasPower,int):1.0
+is(Fish,Class):1.0
+is(Flow,Class):1.0
+is(OpenWaterBody,Class):1.0
+is(SBC_StreamWaterDiscreteSample,Class):1.0
+SubClassOf(SBC_StreamWaterDiscreteSample,Stream):1.0
+is(SBC_StreamWaterSensorSample,Class):1.0
+SubClassOf(SBC_StreamWaterSensorSample,Stream):1.0
+is(Salmonid,Class):1.0
+SubClassOf(Salmonid,Fish):1.0
+is(SockeyeSalmon,Class):1.0
+SubClassOf(SockeyeSalmon,Salmonid):1.0
+is(Stream,Class):1.0
+SubClassOf(Stream,OpenWaterBody):1.0
+is(StreamDischargeRate,Class):1.0
+SubClassOf(StreamDischargeRate,Flow):1.0
+is(CavitatedCompoundOrgan,Class):1.0
+is(OrgansimSubdivision,Class):1.0
+is(PortionOfCellSubstance,Class):1.0
+SubClassOf(PortionOfCellSubstance,PortionOfOrganismSubstance):1.0
+is(PortionOfOrganismSubstance,Class):1.0
+is(Stomach,Class):1.0
+SubClassOf(Stomach,CavitatedCompoundOrgan):1.0
+is(SurfaceStructure,Class):1.0
+SubClassOf(SurfaceStructure,OrgansimSubdivision):1.0
+is(Amount,Class):1.0
+is(AmountOfSubstanceConcentration,Class):1.0
+is(Angle,Class):1.0
+is(Area,Class):1.0
+is(ArealDensity,Class):1.0
+is(ArealMassDensity,Class):1.0
+is(ArealMassDensityRate,Class):1.0
+is(Conductance,Class):1.0
+is(Conductivity,Class):1.0
+is(Count,Class):1.0
+is(Current,Class):1.0
+is(Force,Class):1.0
+is(Frequency,Class):1.0
+is(Irradiance,Class):1.0
+is(Length,Class):1.0
+is(Luminosity,Class):1.0
+is(Mass,Class):1.0
+is(MassDensity,Class):1.0
+is(MassPerMass,Class):1.0
+is(Molality,Class):1.0
+is(PhotonFluxDensity,Class):1.0
+is(Pressure,Class):1.0
+is(Proportion,Class):1.0
+is(Radiance,Class):1.0
+is(RadionucleotideActivity,Class):1.0
+is(Speed,Class):1.0
+is(Temperature,Class):1.0
+is(Time,Class):1.0
+is(Volume,Class):1.0
+is(VolumetricMassDensityRate,Class):1.0
+is(VolumetricRate,Class):1.0
+is(WaveNumber,Class):1.0
+is(AmmoniumMoleToGram,Class):1.0
+SubClassOf(AmmoniumMoleToGram,SubstanceConversion):1.0
+is(GroundWater,Class):1.0
+SubClassOf(GroundWater,Porewater):1.0
+is(Porewater,Class):1.0
+is(Substance,Class):1.0
+is(SubstanceConversion,Class):1.0
+SubClassOf(SubstanceConversion,UnitConversion,):1.0
+SubClassOf(SubstanceConversion,hasSourceUnit only (standardFor only (measurementFor only (ofEntity only Substance))),):1.0
+SubClassOf(SubstanceConversion,hasTargetUnit only (standardFor only (measurementFor only (ofEntity only Substance)))):1.0
+is(BaseUnit,Class):1.0
+SubClassOf(BaseUnit,Unit):1.0
+is(Characteristic,Class):1.0
+DisjointWith(Characteristic,Standard):1.0
+is(CharacteristicQualifier,Class):1.0
+DisjointWith(CharacteristicQualifier,Standard):1.0
+is(CompositeUnit,Class):1.0
+SubClassOf(CompositeUnit,Unit,):1.0
+SubClassOf(CompositeUnit,hasUnit min 2 (BaseUnit or DerivedUnit)):1.0
+is(DerivedUnit,Class):1.0
+SubClassOf(DerivedUnit,Unit,):1.0
+SubClassOf(DerivedUnit,not (hasPower value 0),):1.0
+SubClassOf(DerivedUnit,not (hasPower value 1),):1.0
+SubClassOf(DerivedUnit,hasUnit exactly 1 (BaseUnit or DerivedUnit),):1.0
+SubClassOf(DerivedUnit,hasPower some int):1.0
+is(Entity,Class):1.0
+DisjointWith(Entity,Standard):1.0
+is(Measurement,Class):1.0
+DisjointWith(Measurement,Standard):1.0
+is(Observation,Class):1.0
+DisjointWith(Observation,Standard):1.0
+is(ObservationCollection,Class):1.0
+DisjointWith(ObservationCollection,Standard):1.0
+is(Protocol,Class):1.0
+DisjointWith(Protocol,Standard):1.0
+is(Standard,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,standardFor some Measurement):1.0
+DisjointWith(Thing,,Protocol):1.0
+DisjointWith(Thing,,ObservationCollection):1.0
+DisjointWith(Thing,,Observation):1.0
+DisjointWith(Thing,,Measurement):1.0
+DisjointWith(Thing,,Entity):1.0
+DisjointWith(Thing,,CharacteristicQualifier):1.0
+DisjointWith(Thing,,Characteristic):1.0
+is(Unit,Class):1.0
+SubClassOf(Unit,Standard):1.0
+is(UnitConversion,Class):1.0
+is(CompositeSolid,Class):1.0
+SubClassOf(CompositeSolid,SpatialSolid):1.0
+is(Grid,Class):1.0
+SubClassOf(Grid,SpatialImplicitGeometry):1.0
+is(RectifiedGrid,Class):1.0
+SubClassOf(RectifiedGrid,Grid):1.0
+is(Solid,Class):1.0
+SubClassOf(Solid,SpatialSolid):1.0
+is(SpatialImplicitGeometry,Class):1.0
+is(SpatialSolid,Class):1.0
+SubClassOf(SpatialSolid,SpatialSurface):1.0
+is(SpatialSurface,Class):1.0
+is(Acre,Class):1.0
+SubClassOf(Acre,DerivedUnit,):1.0
+SubClassOf(Acre,hasUnit only):1.0
+SubClassOf(Acre,(BaseUnit and (standardFor only):1.0
+SubClassOf(Acre,(Measurement and (ofCharacteristic only Length)))),):1.0
+SubClassOf(Acre,standardFor only):1.0
+SubClassOf(Acre,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(Acre,hasPower value 2):1.0
+is(Ampere,Class):1.0
+SubClassOf(Ampere,BaseUnit,):1.0
+SubClassOf(Ampere,standardFor only):1.0
+SubClassOf(Ampere,(Measurement and (ofCharacteristic only Current))):1.0
+is(Angstrom,Class):1.0
+SubClassOf(Angstrom,BaseUnit,):1.0
+SubClassOf(Angstrom,standardFor only):1.0
+SubClassOf(Angstrom,(Measurement and (ofCharacteristic only Length))):1.0
+is(Are,Class):1.0
+SubClassOf(Are,DerivedUnit,):1.0
+SubClassOf(Are,hasUnit only Dekameter,):1.0
+SubClassOf(Are,standardFor only):1.0
+SubClassOf(Are,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(Are,hasPower value 2):1.0
+is(Bar,Class):1.0
+SubClassOf(Bar,BaseUnit,):1.0
+SubClassOf(Bar,standardFor only):1.0
+SubClassOf(Bar,(Measurement and (ofCharacteristic only Pressure))):1.0
+is(Becquerel,Class):1.0
+SubClassOf(Becquerel,DerivedUnit,):1.0
+SubClassOf(Becquerel,hasUnit only Second,):1.0
+SubClassOf(Becquerel,standardFor only):1.0
+SubClassOf(Becquerel,(Measurement and (ofCharacteristic only RadionucleotideActivity)),):1.0
+SubClassOf(Becquerel,hasPower value -1):1.0
+is(Bushel,Class):1.0
+SubClassOf(Bushel,DerivedUnit,):1.0
+SubClassOf(Bushel,hasUnit only):1.0
+SubClassOf(Bushel,(BaseUnit and (standardFor only):1.0
+SubClassOf(Bushel,(Measurement and (ofCharacteristic only Length)))),):1.0
+SubClassOf(Bushel,standardFor only):1.0
+SubClassOf(Bushel,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(Bushel,hasPower value 3):1.0
+is(Candela,Class):1.0
+SubClassOf(Candela,BaseUnit,):1.0
+SubClassOf(Candela,standardFor only):1.0
+SubClassOf(Candela,(Measurement and (ofCharacteristic only Luminosity))):1.0
+is(Celsius,Class):1.0
+SubClassOf(Celsius,BaseUnit,):1.0
+SubClassOf(Celsius,standardFor only):1.0
+SubClassOf(Celsius,(Measurement and (ofCharacteristic only Temperature))):1.0
+is(Centigram,Class):1.0
+SubClassOf(Centigram,BaseUnit,):1.0
+SubClassOf(Centigram,standardFor only):1.0
+SubClassOf(Centigram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(Centimeter,Class):1.0
+SubClassOf(Centimeter,BaseUnit,):1.0
+SubClassOf(Centimeter,standardFor only):1.0
+SubClassOf(Centimeter,(Measurement and (ofCharacteristic only Length))):1.0
+is(CentimeterCubed,Class):1.0
+EquivalentTo(CentimeterCubed,Milliliter):1.0
+SubClassOf(CentimeterCubed,DerivedUnit,):1.0
+SubClassOf(CentimeterCubed,hasUnit only Centimeter,):1.0
+SubClassOf(CentimeterCubed,standardFor only):1.0
+SubClassOf(CentimeterCubed,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(CentimeterCubed,hasPower value 3):1.0
+is(CentimeterPerSecond,Class):1.0
+SubClassOf(CentimeterPerSecond,CompositeUnit,):1.0
+SubClassOf(CentimeterPerSecond,hasUnit some Centimeter,):1.0
+SubClassOf(CentimeterPerSecond,hasUnit some):1.0
+SubClassOf(CentimeterPerSecond,(DerivedUnit and (hasUnit only Second) and (hasPower value -1)),):1.0
+SubClassOf(CentimeterPerSecond,standardFor only):1.0
+SubClassOf(CentimeterPerSecond,(Measurement and (ofCharacteristic only Speed))):1.0
+is(CentimeterSquared,Class):1.0
+SubClassOf(CentimeterSquared,DerivedUnit,):1.0
+SubClassOf(CentimeterSquared,hasUnit only Centimeter,):1.0
+SubClassOf(CentimeterSquared,standardFor only):1.0
+SubClassOf(CentimeterSquared,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(CentimeterSquared,hasPower value 2):1.0
+is(Centisecond,Class):1.0
+SubClassOf(Centisecond,BaseUnit,):1.0
+SubClassOf(Centisecond,standardFor only):1.0
+SubClassOf(Centisecond,(Measurement and (ofCharacteristic only Time))):1.0
+is(Day,Class):1.0
+SubClassOf(Day,BaseUnit,):1.0
+SubClassOf(Day,standardFor only):1.0
+SubClassOf(Day,(Measurement and (ofCharacteristic only Time))):1.0
+is(Decibar,Class):1.0
+SubClassOf(Decibar,BaseUnit,):1.0
+SubClassOf(Decibar,standardFor only):1.0
+SubClassOf(Decibar,(Measurement and (ofCharacteristic only Pressure))):1.0
+is(Decigram,Class):1.0
+SubClassOf(Decigram,BaseUnit,):1.0
+SubClassOf(Decigram,standardFor only):1.0
+SubClassOf(Decigram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(Decimeter,Class):1.0
+SubClassOf(Decimeter,BaseUnit,):1.0
+SubClassOf(Decimeter,standardFor only):1.0
+SubClassOf(Decimeter,(Measurement and (ofCharacteristic only Length))):1.0
+is(Decisecond,Class):1.0
+SubClassOf(Decisecond,BaseUnit,):1.0
+SubClassOf(Decisecond,standardFor only):1.0
+SubClassOf(Decisecond,(Measurement and (ofCharacteristic only Time))):1.0
+is(DegreToRadian,Class):1.0
+SubClassOf(DegreToRadian,UnitConversion,):1.0
+SubClassOf(DegreToRadian,hasSourceUnit only Degree,):1.0
+SubClassOf(DegreToRadian,hasTargetUnit only Radian,):1.0
+SubClassOf(DegreToRadian,hasMultiplier value 0.0174533,):1.0
+SubClassOf(DegreToRadian,hasOffset value 0):1.0
+is(Degree,Class):1.0
+SubClassOf(Degree,BaseUnit,):1.0
+SubClassOf(Degree,standardFor only):1.0
+SubClassOf(Degree,(Measurement and (ofCharacteristic only Angle))):1.0
+is(Dekagram,Class):1.0
+SubClassOf(Dekagram,BaseUnit,):1.0
+SubClassOf(Dekagram,standardFor only):1.0
+SubClassOf(Dekagram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(Dekameter,Class):1.0
+SubClassOf(Dekameter,BaseUnit,):1.0
+SubClassOf(Dekameter,standardFor only):1.0
+SubClassOf(Dekameter,(Measurement and (ofCharacteristic only Length))):1.0
+is(Dekasecond,Class):1.0
+SubClassOf(Dekasecond,BaseUnit,):1.0
+SubClassOf(Dekasecond,standardFor only):1.0
+SubClassOf(Dekasecond,(Measurement and (ofCharacteristic only Time))):1.0
+is(FahrenheitDegree,Class):1.0
+SubClassOf(FahrenheitDegree,BaseUnit,):1.0
+SubClassOf(FahrenheitDegree,standardFor only):1.0
+SubClassOf(FahrenheitDegree,(Measurement and (ofCharacteristic only Temperature))):1.0
+is(Fathom,Class):1.0
+SubClassOf(Fathom,BaseUnit,):1.0
+SubClassOf(Fathom,standardFor only):1.0
+SubClassOf(Fathom,(Measurement and (ofCharacteristic only Length))):1.0
+is(Foot,Class):1.0
+SubClassOf(Foot,BaseUnit,):1.0
+SubClassOf(Foot,standardFor only):1.0
+SubClassOf(Foot,(Measurement and (ofCharacteristic only Length))):1.0
+is(FootGoldCoast,Class):1.0
+SubClassOf(FootGoldCoast,BaseUnit,):1.0
+SubClassOf(FootGoldCoast,standardFor only):1.0
+SubClassOf(FootGoldCoast,(Measurement and (ofCharacteristic only Length))):1.0
+is(FootSquared,Class):1.0
+SubClassOf(FootSquared,DerivedUnit,):1.0
+SubClassOf(FootSquared,hasUnit only Foot,):1.0
+SubClassOf(FootSquared,standardFor only):1.0
+SubClassOf(FootSquared,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(FootSquared,hasPower value 2):1.0
+is(Gallon,Class):1.0
+SubClassOf(Gallon,DerivedUnit,):1.0
+SubClassOf(Gallon,hasUnit only):1.0
+SubClassOf(Gallon,(BaseUnit and (standardFor only):1.0
+SubClassOf(Gallon,(Measurement and (ofCharacteristic only Length)))),):1.0
+SubClassOf(Gallon,standardFor only):1.0
+SubClassOf(Gallon,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(Gallon,hasPower value 3):1.0
+is(Grad,Class):1.0
+SubClassOf(Grad,BaseUnit,):1.0
+SubClassOf(Grad,standardFor only):1.0
+SubClassOf(Grad,(Measurement and (ofCharacteristic only Angle))):1.0
+is(Gram,Class):1.0
+SubClassOf(Gram,BaseUnit,):1.0
+SubClassOf(Gram,standardFor only):1.0
+SubClassOf(Gram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(GramPerGram,Class):1.0
+SubClassOf(GramPerGram,CompositeUnit,):1.0
+SubClassOf(GramPerGram,hasUnit some Gram,):1.0
+SubClassOf(GramPerGram,hasUnit some):1.0
+SubClassOf(GramPerGram,(DerivedUnit and (hasUnit only Gram) and (hasPower value -1)),):1.0
+SubClassOf(GramPerGram,standardFor only):1.0
+SubClassOf(GramPerGram,(Measurement and (ofCharacteristic only MassPerMass)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(GramPerLiter,Class):1.0
+SubClassOf(GramPerLiter,CompositeUnit,):1.0
+SubClassOf(GramPerLiter,hasUnit some Gram,):1.0
+SubClassOf(GramPerLiter,hasUnit some):1.0
+SubClassOf(GramPerLiter,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),):1.0
+SubClassOf(GramPerLiter,standardFor only):1.0
+SubClassOf(GramPerLiter,(Measurement and (ofCharacteristic only MassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(GramPerMeterCubed,Class):1.0
+SubClassOf(GramPerMeterCubed,CompositeUnit,):1.0
+SubClassOf(GramPerMeterCubed,hasUnit some Gram,):1.0
+SubClassOf(GramPerMeterCubed,hasUnit some):1.0
+SubClassOf(GramPerMeterCubed,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),):1.0
+SubClassOf(GramPerMeterCubed,standardFor only):1.0
+SubClassOf(GramPerMeterCubed,(Measurement and (ofCharacteristic only MassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(Hectare,Class):1.0
+SubClassOf(Hectare,DerivedUnit,):1.0
+SubClassOf(Hectare,hasUnit only Hectometer,):1.0
+SubClassOf(Hectare,standardFor only):1.0
+SubClassOf(Hectare,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(Hectare,hasPower value 2):1.0
+is(Hectogram,Class):1.0
+SubClassOf(Hectogram,BaseUnit,):1.0
+SubClassOf(Hectogram,standardFor only):1.0
+SubClassOf(Hectogram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(Hectometer,Class):1.0
+SubClassOf(Hectometer,BaseUnit,):1.0
+SubClassOf(Hectometer,standardFor only):1.0
+SubClassOf(Hectometer,(Measurement and (ofCharacteristic only Length))):1.0
+is(Hectopascal,Class):1.0
+EquivalentTo(Hectopascal,Millibar):1.0
+SubClassOf(Hectopascal,BaseUnit,):1.0
+SubClassOf(Hectopascal,standardFor only):1.0
+SubClassOf(Hectopascal,(Measurement and (ofCharacteristic only Pressure))):1.0
+is(Hectosecond,Class):1.0
+SubClassOf(Hectosecond,BaseUnit,):1.0
+SubClassOf(Hectosecond,standardFor only):1.0
+SubClassOf(Hectosecond,(Measurement and (ofCharacteristic only Time))):1.0
+is(Hertz,Class):1.0
+SubClassOf(Hertz,DerivedUnit,):1.0
+SubClassOf(Hertz,hasUnit only Second,):1.0
+SubClassOf(Hertz,standardFor only):1.0
+SubClassOf(Hertz,(Measurement and (ofCharacteristic only Frequency)),):1.0
+SubClassOf(Hertz,hasPower value -1):1.0
+is(Hour,Class):1.0
+SubClassOf(Hour,BaseUnit,):1.0
+SubClassOf(Hour,standardFor only):1.0
+SubClassOf(Hour,(Measurement and (ofCharacteristic only Time))):1.0
+is(Inch,Class):1.0
+SubClassOf(Inch,BaseUnit,):1.0
+SubClassOf(Inch,standardFor only):1.0
+SubClassOf(Inch,(Measurement and (ofCharacteristic only Length))):1.0
+is(InchCubed,Class):1.0
+SubClassOf(InchCubed,DerivedUnit,):1.0
+SubClassOf(InchCubed,hasUnit only Inch,):1.0
+SubClassOf(InchCubed,standardFor only):1.0
+SubClassOf(InchCubed,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(InchCubed,hasPower value 3):1.0
+is(Index,Class):1.0
+SubClassOf(Index,Standard):1.0
+is(Kelvin,Class):1.0
+SubClassOf(Kelvin,BaseUnit,):1.0
+SubClassOf(Kelvin,standardFor only):1.0
+SubClassOf(Kelvin,(Measurement and (ofCharacteristic only Temperature))):1.0
+is(Kilogram,Class):1.0
+SubClassOf(Kilogram,BaseUnit,):1.0
+SubClassOf(Kilogram,standardFor only):1.0
+SubClassOf(Kilogram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(KilogramPerLiter,Class):1.0
+SubClassOf(KilogramPerLiter,CompositeUnit,):1.0
+SubClassOf(KilogramPerLiter,hasUnit some Kilogram,):1.0
+SubClassOf(KilogramPerLiter,hasUnit some):1.0
+SubClassOf(KilogramPerLiter,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),):1.0
+SubClassOf(KilogramPerLiter,standardFor only):1.0
+SubClassOf(KilogramPerLiter,(Measurement and (ofCharacteristic only MassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(KilogramPerMeterCubed,Class):1.0
+SubClassOf(KilogramPerMeterCubed,CompositeUnit,):1.0
+SubClassOf(KilogramPerMeterCubed,hasUnit some Kilogram,):1.0
+SubClassOf(KilogramPerMeterCubed,hasUnit some):1.0
+SubClassOf(KilogramPerMeterCubed,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),):1.0
+SubClassOf(KilogramPerMeterCubed,standardFor only):1.0
+SubClassOf(KilogramPerMeterCubed,(Measurement and (ofCharacteristic only MassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(KilogramPerMeterSquared,Class):1.0
+SubClassOf(KilogramPerMeterSquared,CompositeUnit,):1.0
+SubClassOf(KilogramPerMeterSquared,hasUnit some Kilogram,):1.0
+SubClassOf(KilogramPerMeterSquared,hasUnit some):1.0
+SubClassOf(KilogramPerMeterSquared,(DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),):1.0
+SubClassOf(KilogramPerMeterSquared,standardFor only):1.0
+SubClassOf(KilogramPerMeterSquared,(Measurement and (ofCharacteristic only ArealMassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(KilogramPerMeterSquaredPerDay,Class):1.0
+SubClassOf(KilogramPerMeterSquaredPerDay,CompositeUnit,):1.0
+SubClassOf(KilogramPerMeterSquaredPerDay,hasUnit some Kilogram,):1.0
+SubClassOf(KilogramPerMeterSquaredPerDay,hasUnit some):1.0
+SubClassOf(KilogramPerMeterSquaredPerDay,(DerivedUnit and (hasUnit only Day) and (hasPower value -1)),):1.0
+SubClassOf(KilogramPerMeterSquaredPerDay,hasUnit some):1.0
+SubClassOf(KilogramPerMeterSquaredPerDay,(DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),):1.0
+SubClassOf(KilogramPerMeterSquaredPerDay,standardFor only):1.0
+SubClassOf(KilogramPerMeterSquaredPerDay,(Measurement and (ofCharacteristic only ArealMassDensityRate)),):1.0
+is(Thing,hasUnit exactly 3 www.w3.org/2002/07/#):1.0
+is(Kilohertz,Class):1.0
+SubClassOf(Kilohertz,DerivedUnit,):1.0
+SubClassOf(Kilohertz,hasUnit only Kilosecond,):1.0
+SubClassOf(Kilohertz,standardFor only):1.0
+SubClassOf(Kilohertz,(Measurement and (ofCharacteristic only Frequency)),):1.0
+SubClassOf(Kilohertz,hasPower value -1):1.0
+is(Kiloliter,Class):1.0
+EquivalentTo(Kiloliter,MeterCubed):1.0
+SubClassOf(Kiloliter,DerivedUnit,):1.0
+SubClassOf(Kiloliter,hasUnit only Meter,):1.0
+SubClassOf(Kiloliter,standardFor only):1.0
+SubClassOf(Kiloliter,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(Kiloliter,hasPower value 3):1.0
+is(Kilometer,Class):1.0
+SubClassOf(Kilometer,BaseUnit,):1.0
+SubClassOf(Kilometer,standardFor only):1.0
+SubClassOf(Kilometer,(Measurement and (ofCharacteristic only Length))):1.0
+is(KilometerSquared,Class):1.0
+SubClassOf(KilometerSquared,DerivedUnit,):1.0
+SubClassOf(KilometerSquared,hasUnit only Kilometer,):1.0
+SubClassOf(KilometerSquared,standardFor only):1.0
+SubClassOf(KilometerSquared,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(KilometerSquared,hasPower value 2):1.0
+is(Kilopascal,Class):1.0
+SubClassOf(Kilopascal,CompositeUnit,):1.0
+SubClassOf(Kilopascal,standardFor only):1.0
+SubClassOf(Kilopascal,(Measurement and (ofCharacteristic only Pressure))):1.0
+is(Kilosecond,Class):1.0
+SubClassOf(Kilosecond,BaseUnit,):1.0
+SubClassOf(Kilosecond,standardFor only):1.0
+SubClassOf(Kilosecond,(Measurement and (ofCharacteristic only Time))):1.0
+is(Knot,Class):1.0
+SubClassOf(Knot,CompositeUnit,):1.0
+SubClassOf(Knot,hasUnit some NauticalMile,):1.0
+SubClassOf(Knot,hasUnit some):1.0
+SubClassOf(Knot,(DerivedUnit and (hasUnit only Hour) and (hasPower value -1)),):1.0
+SubClassOf(Knot,standardFor only):1.0
+SubClassOf(Knot,(Measurement and (ofCharacteristic only Speed)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(LinkClarke,Class):1.0
+SubClassOf(LinkClarke,BaseUnit,):1.0
+SubClassOf(LinkClarke,standardFor only):1.0
+SubClassOf(LinkClarke,(Measurement and (ofCharacteristic only Length))):1.0
+is(Liter,Class):1.0
+SubClassOf(Liter,DerivedUnit,):1.0
+SubClassOf(Liter,hasUnit only Decimeter,):1.0
+SubClassOf(Liter,standardFor only):1.0
+SubClassOf(Liter,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(Liter,hasPower value 3):1.0
+is(LiterPerSecond,Class):1.0
+SubClassOf(LiterPerSecond,CompositeUnit,):1.0
+SubClassOf(LiterPerSecond,hasUnit some Liter,):1.0
+SubClassOf(LiterPerSecond,hasUnit some):1.0
+SubClassOf(LiterPerSecond,(DerivedUnit and (hasUnit only Second) and (hasPower value -1)),):1.0
+SubClassOf(LiterPerSecond,standardFor only):1.0
+SubClassOf(LiterPerSecond,(Measurement and (ofCharacteristic only VolumetricRate)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(Lumen,Class):1.0
+SubClassOf(Lumen,BaseUnit,):1.0
+SubClassOf(Lumen,standardFor only):1.0
+SubClassOf(Lumen,(Measurement and (ofCharacteristic only Luminosity))):1.0
+is(Megagram,Class):1.0
+SubClassOf(Megagram,BaseUnit,):1.0
+SubClassOf(Megagram,standardFor only):1.0
+SubClassOf(Megagram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(Megahertz,Class):1.0
+SubClassOf(Megahertz,DerivedUnit,):1.0
+SubClassOf(Megahertz,hasUnit only Megasecond,):1.0
+SubClassOf(Megahertz,standardFor only):1.0
+SubClassOf(Megahertz,(Measurement and (ofCharacteristic only Frequency)),):1.0
+SubClassOf(Megahertz,hasPower value -1):1.0
+is(Megameter,Class):1.0
+SubClassOf(Megameter,BaseUnit,):1.0
+SubClassOf(Megameter,standardFor only):1.0
+SubClassOf(Megameter,(Measurement and (ofCharacteristic only Length))):1.0
+is(Megasecond,Class):1.0
+SubClassOf(Megasecond,BaseUnit,):1.0
+SubClassOf(Megasecond,standardFor only):1.0
+SubClassOf(Megasecond,(Measurement and (ofCharacteristic only Time))):1.0
+is(Meter,Class):1.0
+SubClassOf(Meter,BaseUnit,):1.0
+SubClassOf(Meter,standardFor only):1.0
+SubClassOf(Meter,(Measurement and (ofCharacteristic only Length))):1.0
+is(MeterCubed,Class):1.0
+EquivalentTo(MeterCubed,Kiloliter):1.0
+SubClassOf(MeterCubed,DerivedUnit,):1.0
+SubClassOf(MeterCubed,hasUnit only Meter,):1.0
+SubClassOf(MeterCubed,standardFor only):1.0
+SubClassOf(MeterCubed,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(MeterCubed,hasPower value 3):1.0
+is(MeterPerSecond,Class):1.0
+SubClassOf(MeterPerSecond,CompositeUnit,):1.0
+SubClassOf(MeterPerSecond,hasUnit some Meter,):1.0
+SubClassOf(MeterPerSecond,hasUnit some):1.0
+SubClassOf(MeterPerSecond,(DerivedUnit and (hasUnit only Second) and (hasPower value -1)),):1.0
+SubClassOf(MeterPerSecond,standardFor only):1.0
+SubClassOf(MeterPerSecond,(Measurement and (ofCharacteristic only Speed)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(MeterSquared,Class):1.0
+SubClassOf(MeterSquared,DerivedUnit,):1.0
+SubClassOf(MeterSquared,hasUnit only Meter,):1.0
+SubClassOf(MeterSquared,standardFor only):1.0
+SubClassOf(MeterSquared,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(MeterSquared,hasPower value 2):1.0
+is(MicroeinsteinsPerMeterSquaredPerSecond,Class):1.0
+SubClassOf(MicroeinsteinsPerMeterSquaredPerSecond,CompositeUnit,):1.0
+SubClassOf(MicroeinsteinsPerMeterSquaredPerSecond,standardFor only):1.0
+SubClassOf(MicroeinsteinsPerMeterSquaredPerSecond,(Measurement and (ofCharacteristic only PhotonFluxDensity))):1.0
+is(Microgram,Class):1.0
+SubClassOf(Microgram,BaseUnit,):1.0
+SubClassOf(Microgram,standardFor only):1.0
+SubClassOf(Microgram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(MicrogramPerGram,Class):1.0
+SubClassOf(MicrogramPerGram,CompositeUnit,):1.0
+SubClassOf(MicrogramPerGram,hasUnit some Microgram,):1.0
+SubClassOf(MicrogramPerGram,hasUnit some):1.0
+SubClassOf(MicrogramPerGram,(DerivedUnit and (hasUnit only Gram) and (hasPower value -1)),):1.0
+SubClassOf(MicrogramPerGram,standardFor only):1.0
+SubClassOf(MicrogramPerGram,(Measurement and (ofCharacteristic only MassPerMass)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(MicrogramPerLiter,Class):1.0
+SubClassOf(MicrogramPerLiter,CompositeUnit,):1.0
+SubClassOf(MicrogramPerLiter,hasUnit some Microgram,):1.0
+SubClassOf(MicrogramPerLiter,hasUnit some):1.0
+SubClassOf(MicrogramPerLiter,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),):1.0
+SubClassOf(MicrogramPerLiter,standardFor only):1.0
+SubClassOf(MicrogramPerLiter,(Measurement and (ofCharacteristic only MassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(MicrogramPerMeterCubed,Class):1.0
+SubClassOf(MicrogramPerMeterCubed,CompositeUnit,):1.0
+SubClassOf(MicrogramPerMeterCubed,hasUnit some Microgram,):1.0
+SubClassOf(MicrogramPerMeterCubed,hasUnit some):1.0
+SubClassOf(MicrogramPerMeterCubed,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),):1.0
+SubClassOf(MicrogramPerMeterCubed,standardFor only):1.0
+SubClassOf(MicrogramPerMeterCubed,(Measurement and (ofCharacteristic only MassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(Microliter,Class):1.0
+SubClassOf(Microliter,DerivedUnit,):1.0
+SubClassOf(Microliter,hasUnit only Millimeter,):1.0
+SubClassOf(Microliter,standardFor only):1.0
+SubClassOf(Microliter,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(Microliter,hasPower value 3):1.0
+is(Micrometer,Class):1.0
+SubClassOf(Micrometer,BaseUnit,):1.0
+SubClassOf(Micrometer,standardFor only):1.0
+SubClassOf(Micrometer,(Measurement and (ofCharacteristic only Length))):1.0
+is(MicrometerSquared,Class):1.0
+SubClassOf(MicrometerSquared,DerivedUnit,):1.0
+SubClassOf(MicrometerSquared,hasUnit only Micrometer,):1.0
+SubClassOf(MicrometerSquared,standardFor only):1.0
+SubClassOf(MicrometerSquared,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(MicrometerSquared,hasPower value 2):1.0
+is(MicromolePerKilogram,Class):1.0
+SubClassOf(MicromolePerKilogram,CompositeUnit,):1.0
+SubClassOf(MicromolePerKilogram,standardFor only):1.0
+SubClassOf(MicromolePerKilogram,(Measurement and (ofCharacteristic only Molality))):1.0
+is(MicromolePerLiter,Class):1.0
+SubClassOf(MicromolePerLiter,CompositeUnit,):1.0
+SubClassOf(MicromolePerLiter,standardFor only):1.0
+SubClassOf(MicromolePerLiter,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))):1.0
+is(MicromolePerMeterCubed,Class):1.0
+SubClassOf(MicromolePerMeterCubed,CompositeUnit,):1.0
+SubClassOf(MicromolePerMeterCubed,standardFor only):1.0
+SubClassOf(MicromolePerMeterCubed,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))):1.0
+is(Micron,Class):1.0
+SubClassOf(Micron,BaseUnit,):1.0
+SubClassOf(Micron,standardFor only):1.0
+SubClassOf(Micron,(Measurement and (ofCharacteristic only Length))):1.0
+is(Microsecond,Class):1.0
+SubClassOf(Microsecond,BaseUnit,):1.0
+SubClassOf(Microsecond,standardFor only):1.0
+SubClassOf(Microsecond,(Measurement and (ofCharacteristic only Time))):1.0
+is(MicrosiemensPerMeter,Class):1.0
+SubClassOf(MicrosiemensPerMeter,CompositeUnit,):1.0
+SubClassOf(MicrosiemensPerMeter,standardFor only):1.0
+SubClassOf(MicrosiemensPerMeter,(Measurement and (ofCharacteristic only Conductivity))):1.0
+is(Mile,Class):1.0
+SubClassOf(Mile,BaseUnit,):1.0
+SubClassOf(Mile,standardFor only):1.0
+SubClassOf(Mile,(Measurement and (ofCharacteristic only Length))):1.0
+is(MileSquared,Class):1.0
+SubClassOf(MileSquared,DerivedUnit,):1.0
+SubClassOf(MileSquared,hasUnit only Mile,):1.0
+SubClassOf(MileSquared,standardFor only):1.0
+SubClassOf(MileSquared,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(MileSquared,hasPower value 2):1.0
+is(Millibar,Class):1.0
+EquivalentTo(Millibar,Hectopascal):1.0
+SubClassOf(Millibar,BaseUnit,):1.0
+SubClassOf(Millibar,standardFor only):1.0
+SubClassOf(Millibar,(Measurement and (ofCharacteristic only Pressure))):1.0
+is(Milligram,Class):1.0
+SubClassOf(Milligram,BaseUnit,):1.0
+SubClassOf(Milligram,standardFor only):1.0
+SubClassOf(Milligram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(MilligramPerLiter,Class):1.0
+SubClassOf(MilligramPerLiter,CompositeUnit,):1.0
+SubClassOf(MilligramPerLiter,hasUnit some Milligram,):1.0
+SubClassOf(MilligramPerLiter,hasUnit some):1.0
+SubClassOf(MilligramPerLiter,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),):1.0
+SubClassOf(MilligramPerLiter,standardFor only):1.0
+SubClassOf(MilligramPerLiter,(Measurement and (ofCharacteristic only MassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(MilligramPerMeterCubed,Class):1.0
+SubClassOf(MilligramPerMeterCubed,CompositeUnit,):1.0
+SubClassOf(MilligramPerMeterCubed,hasUnit some Milligram,):1.0
+SubClassOf(MilligramPerMeterCubed,hasUnit some):1.0
+SubClassOf(MilligramPerMeterCubed,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),):1.0
+SubClassOf(MilligramPerMeterCubed,standardFor only):1.0
+SubClassOf(MilligramPerMeterCubed,(Measurement and (ofCharacteristic only MassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(MilligramPerMeterCubedPerDay,Class):1.0
+SubClassOf(MilligramPerMeterCubedPerDay,CompositeUnit,):1.0
+SubClassOf(MilligramPerMeterCubedPerDay,hasUnit some Milligram,):1.0
+SubClassOf(MilligramPerMeterCubedPerDay,hasUnit some):1.0
+SubClassOf(MilligramPerMeterCubedPerDay,(DerivedUnit and (hasUnit only Day) and (hasPower value -1)),):1.0
+SubClassOf(MilligramPerMeterCubedPerDay,hasUnit some):1.0
+SubClassOf(MilligramPerMeterCubedPerDay,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),):1.0
+SubClassOf(MilligramPerMeterCubedPerDay,standardFor only):1.0
+SubClassOf(MilligramPerMeterCubedPerDay,(Measurement and (ofCharacteristic only VolumetricMassDensityRate)),):1.0
+is(Thing,hasUnit exactly 3 www.w3.org/2002/07/#):1.0
+is(MilligramPerMeterSquaredPerDay,Class):1.0
+SubClassOf(MilligramPerMeterSquaredPerDay,CompositeUnit,):1.0
+SubClassOf(MilligramPerMeterSquaredPerDay,hasUnit some Milligram,):1.0
+SubClassOf(MilligramPerMeterSquaredPerDay,hasUnit some):1.0
+SubClassOf(MilligramPerMeterSquaredPerDay,(DerivedUnit and (hasUnit only Day) and (hasPower value -1)),):1.0
+SubClassOf(MilligramPerMeterSquaredPerDay,hasUnit some):1.0
+SubClassOf(MilligramPerMeterSquaredPerDay,(DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),):1.0
+SubClassOf(MilligramPerMeterSquaredPerDay,standardFor only):1.0
+SubClassOf(MilligramPerMeterSquaredPerDay,(Measurement and (ofCharacteristic only ArealMassDensityRate)),):1.0
+is(Thing,hasUnit exactly 3 www.w3.org/2002/07/#):1.0
+is(Millihertz,Class):1.0
+SubClassOf(Millihertz,DerivedUnit,):1.0
+SubClassOf(Millihertz,hasUnit only Millisecond,):1.0
+SubClassOf(Millihertz,standardFor only):1.0
+SubClassOf(Millihertz,(Measurement and (ofCharacteristic only Frequency)),):1.0
+SubClassOf(Millihertz,hasPower value -1):1.0
+is(Milliliter,Class):1.0
+EquivalentTo(Milliliter,CentimeterCubed):1.0
+SubClassOf(Milliliter,DerivedUnit,):1.0
+SubClassOf(Milliliter,hasUnit only Centimeter,):1.0
+SubClassOf(Milliliter,standardFor only):1.0
+SubClassOf(Milliliter,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(Milliliter,hasPower value 3):1.0
+is(MilliliterPerLIter,Class):1.0
+SubClassOf(MilliliterPerLIter,CompositeUnit,):1.0
+SubClassOf(MilliliterPerLIter,hasUnit some Milliliter,):1.0
+SubClassOf(MilliliterPerLIter,hasUnit some):1.0
+SubClassOf(MilliliterPerLIter,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),):1.0
+SubClassOf(MilliliterPerLIter,standardFor only):1.0
+SubClassOf(MilliliterPerLIter,(Measurement and (ofCharacteristic only Proportion)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(Millimeter,Class):1.0
+SubClassOf(Millimeter,BaseUnit,):1.0
+SubClassOf(Millimeter,standardFor only):1.0
+SubClassOf(Millimeter,(Measurement and (ofCharacteristic only Length))):1.0
+is(MillimeterSquared,Class):1.0
+SubClassOf(MillimeterSquared,DerivedUnit,):1.0
+SubClassOf(MillimeterSquared,hasUnit only Millimeter,):1.0
+SubClassOf(MillimeterSquared,standardFor only):1.0
+SubClassOf(MillimeterSquared,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(MillimeterSquared,hasPower value 2):1.0
+is(MillimolePerLiter,Class):1.0
+SubClassOf(MillimolePerLiter,CompositeUnit,):1.0
+SubClassOf(MillimolePerLiter,standardFor only):1.0
+SubClassOf(MillimolePerLiter,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))):1.0
+is(MillimolePerMeterCubed,Class):1.0
+SubClassOf(MillimolePerMeterCubed,CompositeUnit,):1.0
+SubClassOf(MillimolePerMeterCubed,standardFor only):1.0
+SubClassOf(MillimolePerMeterCubed,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))):1.0
+is(Millisecond,Class):1.0
+SubClassOf(Millisecond,BaseUnit,):1.0
+SubClassOf(Millisecond,standardFor only):1.0
+SubClassOf(Millisecond,(Measurement and (ofCharacteristic only Time))):1.0
+is(MillisiemensPerMeter,Class):1.0
+SubClassOf(MillisiemensPerMeter,CompositeUnit,):1.0
+SubClassOf(MillisiemensPerMeter,standardFor only):1.0
+SubClassOf(MillisiemensPerMeter,(Measurement and (ofCharacteristic only Conductivity))):1.0
+is(Minute,Class):1.0
+SubClassOf(Minute,BaseUnit,):1.0
+SubClassOf(Minute,standardFor only):1.0
+SubClassOf(Minute,(Measurement and (ofCharacteristic only Time))):1.0
+is(Mole,Class):1.0
+SubClassOf(Mole,BaseUnit,):1.0
+SubClassOf(Mole,standardFor only):1.0
+SubClassOf(Mole,(Measurement and (ofCharacteristic only Amount))):1.0
+is(MolePerLiter,Class):1.0
+SubClassOf(MolePerLiter,CompositeUnit,):1.0
+SubClassOf(MolePerLiter,hasUnit some Mole,):1.0
+SubClassOf(MolePerLiter,hasUnit some):1.0
+SubClassOf(MolePerLiter,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),):1.0
+SubClassOf(MolePerLiter,standardFor only):1.0
+SubClassOf(MolePerLiter,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(MolePerMeterCubed,Class):1.0
+SubClassOf(MolePerMeterCubed,CompositeUnit,):1.0
+SubClassOf(MolePerMeterCubed,hasUnit some Mole,):1.0
+SubClassOf(MolePerMeterCubed,hasUnit some):1.0
+SubClassOf(MolePerMeterCubed,(DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),):1.0
+SubClassOf(MolePerMeterCubed,standardFor only):1.0
+SubClassOf(MolePerMeterCubed,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(Nanogram,Class):1.0
+SubClassOf(Nanogram,BaseUnit,):1.0
+SubClassOf(Nanogram,standardFor only):1.0
+SubClassOf(Nanogram,(Measurement and (ofCharacteristic only Mass))):1.0
+is(NanogramPerLiter,Class):1.0
+SubClassOf(NanogramPerLiter,CompositeUnit,):1.0
+SubClassOf(NanogramPerLiter,hasUnit some Nanogram,):1.0
+SubClassOf(NanogramPerLiter,hasUnit some):1.0
+SubClassOf(NanogramPerLiter,(DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),):1.0
+SubClassOf(NanogramPerLiter,standardFor only):1.0
+SubClassOf(NanogramPerLiter,(Measurement and (ofCharacteristic only MassDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(Nanometer,Class):1.0
+SubClassOf(Nanometer,BaseUnit,):1.0
+SubClassOf(Nanometer,standardFor only):1.0
+SubClassOf(Nanometer,(Measurement and (ofCharacteristic only Length))):1.0
+is(NanomolePerLiter,Class):1.0
+SubClassOf(NanomolePerLiter,CompositeUnit,):1.0
+SubClassOf(NanomolePerLiter,standardFor only):1.0
+SubClassOf(NanomolePerLiter,(Measurement and (ofCharacteristic only AmountOfSubstanceConcentration))):1.0
+is(Nanosecond,Class):1.0
+SubClassOf(Nanosecond,BaseUnit,):1.0
+SubClassOf(Nanosecond,standardFor only):1.0
+SubClassOf(Nanosecond,(Measurement and (ofCharacteristic only Time))):1.0
+is(NauticalMile,Class):1.0
+SubClassOf(NauticalMile,BaseUnit,):1.0
+SubClassOf(NauticalMile,standardFor only):1.0
+SubClassOf(NauticalMile,(Measurement and (ofCharacteristic only Length))):1.0
+is(Newton,Class):1.0
+SubClassOf(Newton,CompositeUnit,):1.0
+SubClassOf(Newton,hasUnit some Kilogram,):1.0
+SubClassOf(Newton,hasUnit some):1.0
+SubClassOf(Newton,(DerivedUnit and (hasUnit only Meter) and (hasPower value -1)),):1.0
+SubClassOf(Newton,hasUnit some):1.0
+SubClassOf(Newton,(DerivedUnit and (hasUnit only Second) and (hasPower value -2)),):1.0
+SubClassOf(Newton,standardFor only):1.0
+SubClassOf(Newton,(Measurement and (ofCharacteristic only Force)),):1.0
+is(Thing,hasUnit exactly 3 www.w3.org/2002/07/#):1.0
+is(NominalDay,Class):1.0
+SubClassOf(NominalDay,BaseUnit,):1.0
+SubClassOf(NominalDay,standardFor only):1.0
+SubClassOf(NominalDay,(Measurement and (ofCharacteristic only Time))):1.0
+is(NominalHour,Class):1.0
+SubClassOf(NominalHour,BaseUnit,):1.0
+SubClassOf(NominalHour,standardFor only):1.0
+SubClassOf(NominalHour,(Measurement and (ofCharacteristic only Time))):1.0
+is(NominalLeapYear,Class):1.0
+SubClassOf(NominalLeapYear,BaseUnit,):1.0
+SubClassOf(NominalLeapYear,standardFor only):1.0
+SubClassOf(NominalLeapYear,(Measurement and (ofCharacteristic only Time))):1.0
+is(NominalMinute,Class):1.0
+SubClassOf(NominalMinute,BaseUnit,):1.0
+SubClassOf(NominalMinute,standardFor only):1.0
+SubClassOf(NominalMinute,(Measurement and (ofCharacteristic only Time))):1.0
+is(NominalWeek,Class):1.0
+SubClassOf(NominalWeek,BaseUnit,):1.0
+SubClassOf(NominalWeek,standardFor only):1.0
+SubClassOf(NominalWeek,(Measurement and (ofCharacteristic only Time))):1.0
+is(NominalYear,Class):1.0
+SubClassOf(NominalYear,BaseUnit,):1.0
+SubClassOf(NominalYear,standardFor only):1.0
+SubClassOf(NominalYear,(Measurement and (ofCharacteristic only Time))):1.0
+is(Number,Class):1.0
+SubClassOf(Number,BaseUnit,):1.0
+SubClassOf(Number,standardFor only):1.0
+SubClassOf(Number,(Measurement and (ofCharacteristic only Count))):1.0
+is(NumberPerMeterSquared,Class):1.0
+SubClassOf(NumberPerMeterSquared,CompositeUnit,):1.0
+SubClassOf(NumberPerMeterSquared,hasUnit some Number,):1.0
+SubClassOf(NumberPerMeterSquared,hasUnit some):1.0
+SubClassOf(NumberPerMeterSquared,(DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),):1.0
+SubClassOf(NumberPerMeterSquared,standardFor only):1.0
+SubClassOf(NumberPerMeterSquared,(Measurement and (ofCharacteristic only ArealDensity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(PartPerThousand,Class):1.0
+SubClassOf(PartPerThousand,BaseUnit,):1.0
+SubClassOf(PartPerThousand,standardFor only):1.0
+SubClassOf(PartPerThousand,(Measurement and (ofCharacteristic only Proportion))):1.0
+is(Pascal,Class):1.0
+SubClassOf(Pascal,CompositeUnit,):1.0
+SubClassOf(Pascal,hasUnit some Kilogram,):1.0
+SubClassOf(Pascal,hasUnit some):1.0
+SubClassOf(Pascal,(DerivedUnit and (hasUnit only Meter) and (hasPower value -1)),):1.0
+SubClassOf(Pascal,hasUnit some):1.0
+SubClassOf(Pascal,(DerivedUnit and (hasUnit only Second) and (hasPower value -2)),):1.0
+SubClassOf(Pascal,standardFor only):1.0
+SubClassOf(Pascal,(Measurement and (ofCharacteristic only Pressure)),):1.0
+is(Thing,hasUnit exactly 3 www.w3.org/2002/07/#):1.0
+is(Percent,Class):1.0
+SubClassOf(Percent,BaseUnit,):1.0
+SubClassOf(Percent,standardFor only):1.0
+SubClassOf(Percent,(Measurement and (ofCharacteristic only Proportion))):1.0
+is(Pint,Class):1.0
+SubClassOf(Pint,DerivedUnit,):1.0
+SubClassOf(Pint,hasUnit only):1.0
+SubClassOf(Pint,(BaseUnit and (standardFor only):1.0
+SubClassOf(Pint,(Measurement and (ofCharacteristic only Length)))),):1.0
+SubClassOf(Pint,standardFor only):1.0
+SubClassOf(Pint,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(Pint,hasPower value 3):1.0
+is(Pound,Class):1.0
+SubClassOf(Pound,BaseUnit,):1.0
+SubClassOf(Pound,standardFor only):1.0
+SubClassOf(Pound,(Measurement and (ofCharacteristic only Mass))):1.0
+is(PracticalSalinityUnit,Class):1.0
+SubClassOf(PracticalSalinityUnit,Index):1.0
+is(Quart,Class):1.0
+SubClassOf(Quart,DerivedUnit,):1.0
+SubClassOf(Quart,hasUnit only):1.0
+SubClassOf(Quart,(BaseUnit and (standardFor only):1.0
+SubClassOf(Quart,(Measurement and (ofCharacteristic only Length)))),):1.0
+SubClassOf(Quart,standardFor only):1.0
+SubClassOf(Quart,(Measurement and (ofCharacteristic only Volume)),):1.0
+SubClassOf(Quart,hasPower value 3):1.0
+is(Radian,Class):1.0
+SubClassOf(Radian,BaseUnit,):1.0
+SubClassOf(Radian,standardFor only):1.0
+SubClassOf(Radian,(Measurement and (ofCharacteristic only Angle))):1.0
+is(ReciprocalMeter,Class):1.0
+SubClassOf(ReciprocalMeter,DerivedUnit,):1.0
+SubClassOf(ReciprocalMeter,hasUnit only Meter,):1.0
+SubClassOf(ReciprocalMeter,standardFor only):1.0
+SubClassOf(ReciprocalMeter,(Measurement and (ofCharacteristic only WaveNumber)),):1.0
+SubClassOf(ReciprocalMeter,hasPower value -1):1.0
+is(Second,Class):1.0
+SubClassOf(Second,BaseUnit,):1.0
+SubClassOf(Second,standardFor only):1.0
+SubClassOf(Second,(Measurement and (ofCharacteristic only Time))):1.0
+is(Siemens,Class):1.0
+SubClassOf(Siemens,DerivedUnit,):1.0
+SubClassOf(Siemens,standardFor only):1.0
+SubClassOf(Siemens,(Measurement and (ofCharacteristic only Conductance))):1.0
+is(SiemensPerMeter,Class):1.0
+SubClassOf(SiemensPerMeter,CompositeUnit,):1.0
+SubClassOf(SiemensPerMeter,hasUnit some Siemens,):1.0
+SubClassOf(SiemensPerMeter,hasUnit some):1.0
+SubClassOf(SiemensPerMeter,(DerivedUnit and (hasUnit only Meter) and (hasPower value -1)),):1.0
+SubClassOf(SiemensPerMeter,standardFor only):1.0
+SubClassOf(SiemensPerMeter,(Measurement and (ofCharacteristic only Conductivity)),):1.0
+is(Thing,hasUnit exactly 2 www.w3.org/2002/07/#):1.0
+is(Ton,Class):1.0
+SubClassOf(Ton,BaseUnit,):1.0
+SubClassOf(Ton,standardFor only):1.0
+SubClassOf(Ton,(Measurement and (ofCharacteristic only Mass))):1.0
+is(Tonne,Class):1.0
+SubClassOf(Tonne,BaseUnit,):1.0
+SubClassOf(Tonne,standardFor only):1.0
+SubClassOf(Tonne,(Measurement and (ofCharacteristic only Mass))):1.0
+is(Volt,Class):1.0
+SubClassOf(Volt,CompositeUnit,):1.0
+SubClassOf(Volt,standardFor only):1.0
+SubClassOf(Volt,(Measurement and (ofCharacteristic only Force))):1.0
+is(WattPerMeterSquared,Class):1.0
+SubClassOf(WattPerMeterSquared,CompositeUnit,):1.0
+SubClassOf(WattPerMeterSquared,standardFor only):1.0
+SubClassOf(WattPerMeterSquared,(Measurement and (ofCharacteristic only Irradiance))):1.0
+is(WattPerMeterSquaredPerSteradian,Class):1.0
+SubClassOf(WattPerMeterSquaredPerSteradian,CompositeUnit,):1.0
+SubClassOf(WattPerMeterSquaredPerSteradian,standardFor only):1.0
+SubClassOf(WattPerMeterSquaredPerSteradian,(Measurement and (ofCharacteristic only Radiance))):1.0
+is(Yard,Class):1.0
+SubClassOf(Yard,BaseUnit,):1.0
+SubClassOf(Yard,standardFor only):1.0
+SubClassOf(Yard,(Measurement and (ofCharacteristic only Length))):1.0
+is(YardIndian,Class):1.0
+SubClassOf(YardIndian,BaseUnit,):1.0
+SubClassOf(YardIndian,standardFor only):1.0
+SubClassOf(YardIndian,(Measurement and (ofCharacteristic only Length))):1.0
+is(YardIndianToMeter,Class):1.0
+SubClassOf(YardIndianToMeter,UnitConversion,):1.0
+SubClassOf(YardIndianToMeter,hasSourceUnit only YardIndian,):1.0
+SubClassOf(YardIndianToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(YardIndianToMeter,hasMultiplier value 0.914399,):1.0
+SubClassOf(YardIndianToMeter,hasOffset value 0):1.0
+is(YardSquared,Class):1.0
+SubClassOf(YardSquared,DerivedUnit,):1.0
+SubClassOf(YardSquared,hasUnit only Yard,):1.0
+SubClassOf(YardSquared,standardFor only):1.0
+SubClassOf(YardSquared,(Measurement and (ofCharacteristic only Area)),):1.0
+SubClassOf(YardSquared,hasPower value 2):1.0
+is(YardToMeter,Class):1.0
+SubClassOf(YardToMeter,UnitConversion,):1.0
+SubClassOf(YardToMeter,hasSourceUnit only Yard,):1.0
+SubClassOf(YardToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(YardToMeter,hasMultiplier value 0.914398,):1.0
+SubClassOf(YardToMeter,hasOffset value 0):1.0
+is(TimeGeometricPrimitive,Class):1.0
+is(TimeInstant,Class):1.0
+SubClassOf(TimeInstant,TimeGeometricPrimitive):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+DisjointClasses(www.w3.org/2002/07/#,BaseUnit,CompositeUnit,DerivedUnit):1.0

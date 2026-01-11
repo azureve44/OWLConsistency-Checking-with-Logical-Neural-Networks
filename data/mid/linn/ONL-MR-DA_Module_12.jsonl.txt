@@ -1,0 +1,85 @@
+predicate(has-for-part-during,is,ObjectProperty).
+predicate(has-for-cardinal,is,ObjectProperty).
+predicate(has-for-cardinal,Domain,collection).
+predicate(has-for-cardinal,Range,cardinal).
+predicate(has-for-cardinal,InverseOf,is-the-cardinal-of).
+predicate(has-for-member-during,is,ObjectProperty).
+predicate(has-for-member-during,Domain,collection).
+predicate(has-for-member-during,Range,endurant).
+predicate(has-for-member-during,InverseOf,is-member-of-during).
+predicate(has-for-name,is,ObjectProperty).
+predicate(is-extensionally-equivalent-to,is,ObjectProperty).
+predicate(is-extensionally-equivalent-to,Domain,collection).
+predicate(is-extensionally-equivalent-to,Range,collection).
+predicate(is-member-of-during,is,ObjectProperty).
+predicate(is-member-of-during,InverseOf,has-for-member-during).
+predicate(is-the-cardinal-of,is,ObjectProperty).
+predicate(is-the-cardinal-of,InverseOf,has-for-cardinal).
+predicate(is-associated-to,is,ObjectProperty).
+predicate(is-associated-to,Domain,experimental-group-of-subjects).
+predicate(is-associated-to,Range,study).
+predicate(collection-of-computer-language-expressions,is,Class).
+predicate(collection-of-computer-language-expressions,SubClassOf,collection,).
+predicate(collection-of-computer-language-expressions,SubClassOf,has-for-member-during only computer-language-expression,).
+predicate(collection-of-computer-language-expressions,SubClassOf,has-for-member-during min 1 computer-language-expression).
+predicate(collection-of-computers,is,Class).
+predicate(collection-of-computers,SubClassOf,collection,).
+predicate(collection-of-computers,SubClassOf,has-for-member-during min 2 computer).
+predicate(computer,is,Class).
+predicate(computer-language-expression,is,Class).
+predicate(library,is,Class).
+predicate(library,SubClassOf,collection-of-computer-language-expressions).
+predicate(network,is,Class).
+predicate(network,SubClassOf,collection-of-computers).
+predicate(software,is,Class).
+predicate(software,SubClassOf,collection-of-computer-language-expressions).
+predicate(endurant,is,Class).
+predicate(mental-object,is,Class).
+predicate(mental-object,SubClassOf,non-physical-object).
+predicate(non-physical-endurant,is,Class).
+predicate(non-physical-object,is,Class).
+predicate(non-physical-object,SubClassOf,non-physical-endurant,).
+predicate(non-physical-object,SubClassOf,has-for-part-during only non-physical-object).
+predicate(social-object,is,Class).
+predicate(social-object,SubClassOf,non-physical-object).
+predicate(agentive,is,Class).
+predicate(cardinal,is,Class).
+predicate(collection,is,Class).
+predicate(collection,SubClassOf,social-object,).
+predicate(collection,SubClassOf,has-for-cardinal exactly 1 cardinal).
+predicate(collective,is,Class).
+predicate(collective,SubClassOf,collection,).
+predicate(collective,SubClassOf,has-for-member-during only agentive).
+predicate(conceptualization,is,Class).
+predicate(conceptualization,SubClassOf,non-physical-object).
+predicate(expression,is,Class).
+predicate(expression,SubClassOf,non-physical-object).
+predicate(language,is,Class).
+predicate(language,SubClassOf,collection).
+predicate(non-agentive-social-object,is,Class).
+predicate(non-agentive-social-object,SubClassOf,social-object).
+predicate(non-negative-integer,is,Class).
+predicate(non-negative-integer,SubClassOf,non-negative-real-number).
+predicate(non-negative-real-number,is,Class).
+predicate(non-negative-real-number,SubClassOf,real-number).
+predicate(non-physical-artefact,is,Class).
+predicate(non-physical-artefact,SubClassOf,non-physical-object).
+predicate(non-targeted-object,is,Class).
+predicate(non-targeted-object,SubClassOf,producing-consequent).
+predicate(positive-real-number,is,Class).
+predicate(positive-real-number,SubClassOf,non-negative-real-number).
+predicate(producing-consequent,is,Class).
+predicate(real-number,is,Class).
+predicate(experimental-group-of-subjects,is,Class).
+predicate(experimental-group-of-subjects,SubClassOf,group-of-subjects,).
+predicate(experimental-group-of-subjects,SubClassOf,is-associated-to exactly 1 study).
+predicate(group-name,is,Class).
+predicate(group-of-healthy-volunteers,is,Class).
+predicate(group-of-healthy-volunteers,SubClassOf,group-of-subjects).
+predicate(group-of-patients,is,Class).
+predicate(group-of-patients,SubClassOf,group-of-subjects).
+predicate(group-of-subjects,is,Class).
+predicate(group-of-subjects,SubClassOf,collective,).
+predicate(group-of-subjects,SubClassOf,has-for-name some group-name).
+predicate(study,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

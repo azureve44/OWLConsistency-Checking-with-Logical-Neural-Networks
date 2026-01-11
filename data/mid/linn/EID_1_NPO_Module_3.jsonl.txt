@@ -1,0 +1,173 @@
+predicate(derives_from,is,ObjectProperty).
+predicate(determines_property,is,ObjectProperty).
+predicate(has_component_part,is,ObjectProperty).
+predicate(has_function,is,ObjectProperty).
+predicate(has_part,is,ObjectProperty).
+predicate(has_role,is,ObjectProperty).
+predicate(has_unit_of_measure,is,ObjectProperty).
+predicate(is_realized_in,is,ObjectProperty).
+predicate(part_of,is,ObjectProperty).
+predicate(quality_of,is,ObjectProperty).
+predicate(role_of,is,ObjectProperty).
+predicate(NPO_117,is,Class).
+predicate(NPO_1285,is,Class).
+predicate(NPO_1285,SubClassOf,NPO_1690,).
+predicate(UO_0000003,is,has_unit_of_measure some purl.org/obo//UO#).
+predicate(NPO_1286,is,Class).
+predicate(NPO_1286,SubClassOf,NPO_1285).
+predicate(NPO_1356,is,Class).
+predicate(NPO_1362,is,Class).
+predicate(NPO_1362,SubClassOf,NPO_1356,).
+predicate(PATO_0000117,is,determines_property some purl.org/obo//PATO#).
+predicate(NPO_1388,is,Class).
+predicate(NPO_1388,SubClassOf,NPO_552).
+predicate(NPO_1394,is,Class).
+predicate(NPO_1394,SubClassOf,NPO_1388).
+predicate(NPO_149,is,Class).
+predicate(NPO_152,is,Class).
+predicate(NPO_152,SubClassOf,NPO_555).
+predicate(NPO_1575,is,Class).
+predicate(NPO_1579,is,Class).
+predicate(NPO_1582,is,Class).
+predicate(NPO_1582,EquivalentTo,NPO_1575 and (quality_of some NPO_1586)).
+predicate(NPO_1582,SubClassOf,NPO_1575,).
+predicate(NPO_1582,SubClassOf,NPO_1579).
+predicate(NPO_1586,is,Class).
+predicate(NPO_1603,is,Class).
+predicate(NPO_1605,is,Class).
+predicate(NPO_1605,SubClassOf,NPO_599,).
+predicate(NPO_1605,SubClassOf,role_of some NPO_1603).
+predicate(NPO_1622,is,Class).
+predicate(NPO_1690,is,Class).
+predicate(NPO_175,is,Class).
+predicate(NPO_175,SubClassOf,NPO_648).
+predicate(NPO_1864,is,Class).
+predicate(NPO_1875,is,Class).
+predicate(NPO_1876,is,Class).
+predicate(NPO_1876,EquivalentTo,NPO_1875 and (has_component_part some NPO_273)).
+predicate(NPO_1876,SubClassOf,NPO_1864,).
+predicate(NPO_1876,SubClassOf,NPO_1875).
+predicate(NPO_188,is,Class).
+predicate(NPO_190,is,Class).
+predicate(NPO_190,SubClassOf,NPO_555).
+predicate(NPO_210,is,Class).
+predicate(NPO_210,SubClassOf,NPO_555).
+predicate(NPO_212,is,Class).
+predicate(NPO_273,is,Class).
+predicate(NPO_274,is,Class).
+predicate(NPO_295,is,Class).
+predicate(NPO_295,SubClassOf,NPO_212,).
+predicate(NPO_295,SubClassOf,derives_from some NPO_117,).
+predicate(NPO_295,SubClassOf,derives_from some NPO_502,).
+predicate(NPO_295,SubClassOf,part_of some NPO_747).
+predicate(NPO_315,is,Class).
+predicate(NPO_356,is,Class).
+predicate(NPO_394,is,Class).
+predicate(NPO_408,is,Class).
+predicate(NPO_408,SubClassOf,NPO_555).
+predicate(NPO_431,is,Class).
+predicate(NPO_431,SubClassOf,NPO_394,).
+predicate(NPO_431,SubClassOf,part_of some NPO_530).
+predicate(NPO_463,is,Class).
+predicate(NPO_463,SubClassOf,NPO_555).
+predicate(NPO_478,is,Class).
+predicate(NPO_478,SubClassOf,NPO_555).
+predicate(NPO_487,is,Class).
+predicate(NPO_487,SubClassOf,NPO_594).
+predicate(NPO_502,is,Class).
+predicate(NPO_502,DisjointWith,NPO_536).
+predicate(NPO_505,is,Class).
+predicate(NPO_505,SubClassOf,NPO_944,).
+predicate(NPO_505,SubClassOf,has_part some NPO_825).
+predicate(NPO_507,is,Class).
+predicate(NPO_507,SubClassOf,NPO_526,).
+predicate(NPO_507,SubClassOf,derives_from some NPO_502,).
+predicate(CHEBI_42485,,is,derives_from some purl.org/obo//CHEBI#).
+predicate(CHEBI_42485,,is,part_of some NPO_536,).
+predicate(CHEBI_42485,,is,part_of only NPO_502).
+predicate(NPO_515,is,Class).
+predicate(NPO_515,SubClassOf,NPO_274).
+predicate(NPO_526,is,Class).
+predicate(NPO_530,is,Class).
+predicate(NPO_536,is,Class).
+predicate(NPO_536,DisjointWith,NPO_502).
+predicate(NPO_552,is,Class).
+predicate(NPO_555,is,Class).
+predicate(NPO_555,EquivalentTo,NPO_152 or NPO_190 or NPO_408 or NPO_718 or NPO_845).
+predicate(NPO_555,SubClassOf,NPO_714).
+predicate(NPO_555,DisjointWith,NPO_152 or NPO_190 or NPO_408 or NPO_718 or NPO_845).
+predicate(NPO_556,is,Class).
+predicate(NPO_556,EquivalentTo,NPO_315 and (has_function some).
+predicate(GO_0048487))),is,(NPO_1622 and (is_realized_in some purl.org/obo//GO#).
+predicate(GO_0048487))),SubClassOf,NPO_315).
+predicate(NPO_563,is,Class).
+predicate(NPO_576,is,Class).
+predicate(NPO_594,is,Class).
+predicate(CHEBI_35610 and (has_role some,is,purl.org/obo//CHEBI#).
+predicate(GO_0008156))),is,(NPO_576 and (is_realized_in some purl.org/obo//GO#).
+predicate(CHEBI_35610,is,purl.org/obo//CHEBI#).
+predicate(NPO_599,is,Class).
+predicate(NPO_648,is,Class).
+predicate(NPO_648,SubClassOf,NPO_563).
+predicate(NPO_656,is,Class).
+predicate(NPO_656,SubClassOf,NPO_555).
+predicate(NPO_660,is,Class).
+predicate(NPO_660,SubClassOf,NPO_555).
+predicate(NPO_674,is,Class).
+predicate(NPO_674,SubClassOf,NPO_555).
+predicate(NPO_714,is,Class).
+predicate(NPO_715,is,Class).
+predicate(NPO_715,SubClassOf,NPO_356).
+predicate(NPO_718,is,Class).
+predicate(NPO_718,SubClassOf,NPO_555).
+predicate(NPO_747,is,Class).
+predicate(NPO_825,is,Class).
+predicate(NPO_845,is,Class).
+predicate(NPO_845,SubClassOf,NPO_555).
+predicate(NPO_871,is,Class).
+predicate(NPO_871,SubClassOf,NPO_555).
+predicate(NPO_911,is,Class).
+predicate(NPO_911,SubClassOf,NPO_555).
+predicate(NPO_939,is,Class).
+predicate(NPO_939,SubClassOf,NPO_594).
+predicate(NPO_944,is,Class).
+predicate(NPO_961,is,Class).
+predicate(NPO_961,SubClassOf,NPO_188).
+predicate(NPO_962,is,Class).
+predicate(NPO_962,SubClassOf,NPO_149).
+predicate(Retired_Concept_Current_Year,is,Class).
+predicate(Retired_Concept_Current_Year,SubClassOf,Retired_Concepts).
+predicate(Retired_Concepts,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(purl.org/obo//CHEBI#,is,Class).
+predicate(purl.org/obo//CHEBI#,is,Class).
+predicate(purl.org/obo//FIX#,is,Class).
+predicate(purl.org/obo//FIX#,is,Class).
+predicate(FIX_0000015,is,purl.org/obo//FIX#).
+predicate(purl.org/obo//GO#,is,Class).
+predicate(purl.org/obo//GO#,is,Class).
+predicate(GO_0051427,is,purl.org/obo//GO#).
+predicate(purl.org/obo//GO#,is,Class).
+predicate(GO_0035257,is,purl.org/obo//GO#).
+predicate(purl.org/obo//GO#,is,Class).
+predicate(purl.org/obo//GO#,is,Class).
+predicate(purl.org/obo//PATO#,is,Class).
+predicate(purl.org/obo//PATO#,is,Class).
+predicate(purl.org/obo//PATO#,is,Class).
+predicate(PATO_0001242,,is,purl.org/obo//PATO#).
+predicate(UO_0000001,is,has_unit_of_measure some purl.org/obo//UO#).
+predicate(purl.org/obo//UO#,is,Class).
+predicate(purl.org/obo//UO#,is,Class).
+predicate(OneDimensionalRegion,is,Class).
+predicate(OneDimensionalRegion,DisjointWith,TwoDimensionalRegion).
+predicate(SpatialRegion,is,Class).
+predicate(ThreeDimensionalRegion,is,Class).
+predicate(ThreeDimensionalRegion,DisjointWith,TwoDimensionalRegion).
+predicate(TwoDimensionalRegion,is,Class).
+predicate(TwoDimensionalRegion,SubClassOf,SpatialRegion).
+predicate(TwoDimensionalRegion,DisjointWith,ZeroDimensionalRegion).
+predicate(TwoDimensionalRegion,DisjointWith,ThreeDimensionalRegion).
+predicate(TwoDimensionalRegion,DisjointWith,OneDimensionalRegion).
+predicate(ZeroDimensionalRegion,is,Class).
+predicate(ZeroDimensionalRegion,DisjointWith,TwoDimensionalRegion).
+predicate(www.w3.org/2002/07/#,is,Class).

@@ -1,0 +1,243 @@
+predicate(integer,is,Datatype).
+predicate(www.w3.org/2002/07/#,is,Datatype).
+predicate(BFO_0000054,is,ObjectProperty).
+predicate(BFO_0000055,is,ObjectProperty).
+predicate(BFO_0000178,is,ObjectProperty).
+predicate(IAO_0000221,is,ObjectProperty).
+predicate(OBI_0000293,is,ObjectProperty).
+predicate(OBI_0000299,is,ObjectProperty).
+predicate(OBI_0000312,is,ObjectProperty).
+predicate(OBI_0000999,is,ObjectProperty).
+predicate(OBI_0001938,is,ObjectProperty).
+predicate(RO_0000059,is,ObjectProperty).
+predicate(RO_0000085,is,ObjectProperty).
+predicate(RO_0000087,is,ObjectProperty).
+predicate(is_process_profile_measurement_of,is,ObjectProperty).
+predicate(OBI_0001937,is,DataProperty).
+predicate(dataset,is,Class).
+predicate(template-dataset,is,Class).
+predicate(image_segmentation,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,OBI_0000293 some dataset).
+predicate(mean-diffusivity-calculation,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(BFO_0000019,is,Class).
+predicate(BFO_0000034,is,Class).
+predicate(BFO_0000144,is,Class).
+predicate(IAO_0000009,is,Class).
+predicate(IAO_0000027,is,Class).
+predicate(IAO_0000109,is,Class).
+predicate(OBI_0000093,is,Class).
+predicate(OBI_0000272,is,Class).
+predicate(OBI_0000471,is,Class).
+predicate(OBI_0000679,is,Class).
+predicate(OBI_0001554,is,Class).
+predicate(OBI_0001930,is,Class).
+predicate(OBI_0001933,is,Class).
+predicate(OBI_0302838,is,Class).
+predicate(PATO_0000918,is,Class).
+predicate(homo_sapiens,is,Class).
+predicate(organism,is,Class).
+predicate(www.-ontologies.com/QIBO.#,is,Class).
+predicate(Diatrizoate,is,Class).
+predicate(Diatrizoate,SubClassOf,Ionic_high-osmolality_monomeric_iodinated_contrast_agent).
+predicate(FDA_validated_QIB_measurement_protocol_function,is,Class).
+predicate(FDA_validated_QIB_measurement_protocol_function,SubClassOf,OBI_0302838).
+predicate(Geovalueal_shape,is,Class).
+predicate(Ionic_high-osmolality_monomeric_iodinated_contrast_agent,is,Class).
+predicate(Ionic_high-osmolality_monomeric_iodinated_contrast_agent,SubClassOf,Ionic_iodinated_contrast_agent).
+predicate(Ionic_iodinated_contrast_agent,is,Class).
+predicate(Iothalamate,is,Class).
+predicate(Iothalamate,SubClassOf,Ionic_high-osmolality_monomeric_iodinated_contrast_agent).
+predicate(Ioxithalamate,is,Class).
+predicate(Ioxithalamate,SubClassOf,Ionic_high-osmolality_monomeric_iodinated_contrast_agent).
+predicate(Metrizoate,is,Class).
+predicate(Metrizoate,SubClassOf,Ionic_high-osmolality_monomeric_iodinated_contrast_agent).
+predicate(QIB_based_investigation,is,Class).
+predicate(QIB_mean_value_calculation_algorithm,is,Class).
+predicate(Quantitation_Algorithm,is,www.-ontologies.com/QIBO.#).
+predicate(QIB_measurement_process,is,Class).
+predicate(QIB_measurement_process,EquivalentTo,BFO_0000055 some (RO_0000059 some QIB_measurement_protocol)).
+predicate(QIB_measurement_process,SubClassOf,OBI_0000471,).
+predicate(QIB_measurement_process,SubClassOf,OBI_0000293 some).
+predicate(QIB_measurement_process,SubClassOf,(IAO_0000027 or organism)).
+predicate(QIB_measurement_protocol,is,Class).
+predicate(QIB_measurement_protocol,EquivalentTo,RO_0000085 some QIB_measurement_protocol_function).
+predicate(QIB_measurement_protocol,SubClassOf,OBI_0000272,).
+predicate(QIB_measurement_protocol,SubClassOf,BFO_0000178 some image_analysis_protocol,).
+predicate(QIB_measurement_protocol,SubClassOf,BFO_0000178 some image_creation_protocol,).
+predicate(QIB_measurement_protocol,SubClassOf,BFO_0000178 some image_processing_protocol,).
+predicate(QIB_measurement_protocol,SubClassOf,BFO_0000178 some subject_preparation_protocol).
+predicate(QIB_measurement_protocol_function,is,Class).
+predicate(QIB_measurement_protocol_function,SubClassOf,BFO_0000034,).
+predicate(QIB_measurement_protocol_function,SubClassOf,BFO_0000054 only (OBI_0000299 some).
+predicate(QIB_measurement_protocol_function,SubClassOf,((QIB_value and (IAO_0000221 some BFO_0000019)) or (is_process_profile_measurement_of some BFO_0000144)))).
+predicate(QIB_value,is,Class).
+predicate(T2_star_weighted__dataset,is,Class).
+predicate(T2_star_weighted_template_dataset,is,Class).
+predicate(T2_star_weighted_template_dataset,SubClassOf,template-dataset,).
+predicate(T2_star_weighted_template_dataset,SubClassOf,T2_star_weighted__dataset).
+predicate(binary_categorical_imaging_biomarker_measurement_datum,is,Class).
+predicate(binary_categorical_imaging_biomarker_measurement_datum,SubClassOf,binary_categorical_measurement_datum,).
+predicate(binary_categorical_imaging_biomarker_measurement_datum,SubClassOf,categorical_imaging_biomarker_measurement_datum).
+predicate(binary_categorical_measurement_datum,is,Class).
+predicate(binary_categorical_measurement_datum,SubClassOf,categorical_measurement_datum).
+predicate(binary_discrete_measurement_datum,is,Class).
+predicate(binary_discrete_measurement_datum,SubClassOf,count_measurement_datum).
+predicate(categorical_VASARI_criteria,is,Class).
+predicate(categorical_VASARI_criteria,SubClassOf,categorical_imaging_biomarker_measurement_datum).
+predicate(categorical_imaging_biomarker_measurement_datum,is,Class).
+predicate(categorical_imaging_biomarker_measurement_datum,EquivalentTo,categorical_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some qualitative_image_analysis) and (OBI_0001938 some OBI_0001930)).
+predicate(categorical_imaging_biomarker_measurement_datum,SubClassOf,categorical_measurement_datum).
+predicate(categorical_measurement_datum,is,Class).
+predicate(categorical_measurement_datum,SubClassOf,IAO_0000109).
+predicate(clinical_practice_QIB_based_investigation,is,Class).
+predicate(clinical_practice_QIB_based_investigation,SubClassOf,QIB_based_investigation,).
+predicate(clinical_practice_QIB_based_investigation,SubClassOf,OBI_0000293 some).
+predicate(clinical_practice_QIB_based_investigation,SubClassOf,(homo_sapiens and (RO_0000087 some OBI_0000093))).
+predicate(continuous_measurement_datum,is,Class).
+predicate(continuous_measurement_datum,SubClassOf,numerical_measurement_datum).
+predicate(cortical_involvement_VASARI_criteria,is,Class).
+predicate(cortical_involvement_VASARI_criteria,SubClassOf,categorical_VASARI_criteria,).
+predicate(cortical_involvement_VASARI_criteria,SubClassOf,OBI_0001938 some cortical_involvement_value_specification).
+predicate(cortical_involvement_value_specification,is,Class).
+predicate(cortical_involvement_value_specification,SubClassOf,OBI_0001930).
+predicate(count_measurement_datum,is,Class).
+predicate(count_measurement_datum,SubClassOf,numerical_measurement_datum,).
+predicate(count_measurement_datum,SubClassOf,OBI_0001938 some count_value_specification).
+predicate(count_value_specification,is,Class).
+predicate(count_value_specification,SubClassOf,numeric_value_specification).
+predicate(cyst_VASARI_criteria,is,Class).
+predicate(cyst_VASARI_criteria,SubClassOf,categorical_VASARI_criteria).
+predicate(deep_WM_invasion_VASARI_criteria,is,Class).
+predicate(deep_WM_invasion_VASARI_criteria,SubClassOf,categorical_VASARI_criteria).
+predicate(derived_measurement_unit_label,is,Class).
+predicate(derived_measurement_unit_label,SubClassOf,IAO_0000009).
+predicate(diffusion_characteristics_VASARI_criteria,is,Class).
+predicate(diffusion_characteristics_VASARI_criteria,SubClassOf,categorical_VASARI_criteria).
+predicate(edema_crosses_midline_VASARI_criteria,is,Class).
+predicate(edema_crosses_midline_VASARI_criteria,SubClassOf,categorical_VASARI_criteria).
+predicate(edema_proportion_VASARI_criteria,is,Class).
+predicate(edema_proportion_VASARI_criteria,SubClassOf,ordered_and_categorical_imaging_biomarker_measurement_datum).
+predicate(eloquent_brain_VASARI_criteria,is,Class).
+predicate(eloquent_brain_VASARI_criteria,SubClassOf,categorical_VASARI_criteria,).
+predicate(eloquent_brain_VASARI_criteria,SubClassOf,OBI_0001938 some eloquent_brain_value_specification).
+predicate(eloquent_brain_value_specification,is,Class).
+predicate(enhancement_quality_VASARI_criteria,is,Class).
+predicate(enhancement_quality_VASARI_criteria,SubClassOf,ordered_and_categorical_imaging_biomarker_measurement_datum,).
+predicate(enhancement_quality_VASARI_criteria,SubClassOf,OBI_0001938 some enhancement_quality_value_specification).
+predicate(enhancement_quality_label,is,Class).
+predicate(enhancement_quality_value_specification,is,Class).
+predicate(enhancement_quality_value_specification,SubClassOf,ordinal_categorical_value_specification,).
+predicate(enhancement_quality_value_specification,SubClassOf,OBI_0000999 some enhancement_quality_label).
+predicate(enhancing_margin_definition_VASARI_criteria,is,Class).
+predicate(enhancing_margin_definition_VASARI_criteria,SubClassOf,categorical_VASARI_criteria).
+predicate(ependymal_invasion_VASARI_criteria,is,Class).
+predicate(ependymal_invasion_VASARI_criteria,SubClassOf,categorical_VASARI_criteria).
+predicate(hemorrhage_VASARI_criteria,is,Class).
+predicate(hemorrhage_VASARI_criteria,SubClassOf,categorical_VASARI_criteria).
+predicate(image_analysis_protocol,is,Class).
+predicate(image_creation_protocol,is,Class).
+predicate(image_processing_protocol,is,Class).
+predicate(imaging_biomarker_count_measurement_datum,is,Class).
+predicate(imaging_biomarker_count_measurement_datum,SubClassOf,count_measurement_datum).
+predicate(imaging_biomarker_scalar_score_from_composite_inputs,is,Class).
+predicate(imaging_biomarker_volume_measurement_datum,is,Class).
+predicate(mean_cerebral_blood_volume_value,is,Class).
+predicate(mean_cerebral_blood_volume_value,SubClassOf,OBI_0000679,).
+predicate(mean_cerebral_blood_volume_value,SubClassOf,imaging_biomarker_scalar_score_from_composite_inputs).
+predicate(metabolic_tumor_volume,is,Class).
+predicate(metabolic_tumor_volume,SubClassOf,PATO_0000918).
+predicate(multifocal_or_multicentric_VASARI_criteria,is,Class).
+predicate(multifocal_or_multicentric_VASARI_criteria,SubClassOf,categorical_VASARI_criteria,).
+predicate(multifocal_or_multicentric_VASARI_criteria,SubClassOf,OBI_0001938 some multifocal_or_multicentric_value_specification).
+predicate(multifocal_or_multicentric_label,is,Class).
+predicate(multifocal_or_multicentric_value_specification,is,Class).
+predicate(multifocal_or_multicentric_value_specification,SubClassOf,OBI_0001930,).
+predicate(multifocal_or_multicentric_value_specification,SubClassOf,OBI_0000999 some multifocal_or_multicentric_label).
+predicate(non-enhancing_margin_definition_VASARI_criteria,is,Class).
+predicate(non-enhancing_margin_definition_VASARI_criteria,SubClassOf,categorical_VASARI_criteria,).
+predicate(non-enhancing_margin_definition_VASARI_criteria,SubClassOf,OBI_0001938 some non_enhancing_margin_definition_value_specification).
+predicate(non_enhancing_margin_definition_value_specification,is,Class).
+predicate(numeric_imaging_biomarker_measurement_datum,is,Class).
+predicate(numeric_imaging_biomarker_measurement_datum,SubClassOf,numerical_measurement_datum).
+predicate(numeric_value_specification,is,Class).
+predicate(numeric_value_specification,SubClassOf,OBI_0001933,).
+predicate(real),is,OBI_0001937 some (integer or www.w3.org/2002/07/#).
+predicate(numerical_measurement_datum,is,Class).
+predicate(numerical_measurement_datum,EquivalentTo,IAO_0000109 and (OBI_0001938 some numeric_value_specification)).
+predicate(numerical_measurement_datum,SubClassOf,IAO_0000109).
+predicate(ordered_and_categorical_imaging_biomarker_measurement_datum,is,Class).
+predicate(ordered_and_categorical_imaging_biomarker_measurement_datum,EquivalentTo,ordered_categorical_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis) and (OBI_0001938 some ordinal_categorical_value_specification)).
+predicate(ordered_and_categorical_imaging_biomarker_measurement_datum,SubClassOf,ordered_categorical_measurement_datum).
+predicate(ordered_categorical_measurement_datum,is,Class).
+predicate(ordered_categorical_measurement_datum,EquivalentTo,categorical_measurement_datum and (OBI_0001938 some ordinal_categorical_value_specification)).
+predicate(ordered_categorical_measurement_datum,SubClassOf,categorical_measurement_datum).
+predicate(ordinal_categorical_value_specification,is,Class).
+predicate(percent_value_specification,is,Class).
+predicate(percent_value_specification,SubClassOf,numeric_value_specification,).
+predicate(real,is,OBI_0001937 min 2 www.w3.org/2002/07/#).
+predicate(pial_invasion_VASARI_criteria,is,Class).
+predicate(pial_invasion_VASARI_criteria,SubClassOf,categorical_VASARI_criteria).
+predicate(proportion_necrosis_VASARI_criteria,is,Class).
+predicate(proportion_necrosis_VASARI_criteria,SubClassOf,ordered_and_categorical_imaging_biomarker_measurement_datum).
+predicate(qualitative_image_analysis,is,Class).
+predicate(quantitative_image_analysis,is,Class).
+predicate(rate_imaging_biomarker_measurement_datum,is,Class).
+predicate(rate_imaging_biomarker_measurement_datum,EquivalentTo,OBI_0001554 and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis)).
+predicate(rate_imaging_biomarker_measurement_datum,SubClassOf,OBI_0001554).
+predicate(regional_cerebral_blood_flow_measurement_datum,is,Class).
+predicate(regional_cerebral_blood_flow_measurement_datum,SubClassOf,imaging_biomarker_volume_measurement_datum).
+predicate(side_of_lesion_epicenter_VASARI_criteria,is,Class).
+predicate(side_of_lesion_epicenter_VASARI_criteria,SubClassOf,categorical_VASARI_criteria,).
+predicate(side_of_lesion_epicenter_VASARI_criteria,SubClassOf,OBI_0001938 some side_of_tumor_epicenter_value_specification).
+predicate(side_of_tumor_epicenter_VASARI_criteria,is,Class).
+predicate(side_of_tumor_epicenter_VASARI_criteria,SubClassOf,categorical_VASARI_criteria,).
+predicate(side_of_tumor_epicenter_VASARI_criteria,SubClassOf,OBI_0001938 some side_of_tumor_epicenter_value_specification).
+predicate(side_of_tumor_epicenter_label,is,Class).
+predicate(side_of_tumor_epicenter_value_specification,is,Class).
+predicate(side_of_tumor_epicenter_value_specification,SubClassOf,OBI_0001930,).
+predicate(side_of_tumor_epicenter_value_specification,SubClassOf,OBI_0000999 some side_of_tumor_epicenter_label).
+predicate(subject_preparation_protocol,is,Class).
+predicate(thickness_of_enhancing_margin_VASARI_criteria,is,Class).
+predicate(thickness_of_enhancing_margin_VASARI_criteria,SubClassOf,ordered_and_categorical_imaging_biomarker_measurement_datum).
+predicate(three_dimension_ellipse,is,Class).
+predicate(three_dimension_ellipse,SubClassOf,three_dimension_geometrical_shape).
+predicate(three_dimension_ellipsoid,is,Class).
+predicate(three_dimension_ellipsoid,SubClassOf,three_dimension_geometrical_shape).
+predicate(three_dimension_geometrical_shape,is,Class).
+predicate(three_dimension_geometrical_shape,SubClassOf,Geovalueal_shape).
+predicate(three_dimension_multi_point,is,Class).
+predicate(three_dimension_multi_point,SubClassOf,three_dimension_geometrical_shape).
+predicate(three_dimension_point,is,Class).
+predicate(three_dimension_point,SubClassOf,three_dimension_geometrical_shape).
+predicate(three_dimension_polygon,is,Class).
+predicate(three_dimension_polygon,SubClassOf,three_dimension_geometrical_shape).
+predicate(three_dimension_polyline,is,Class).
+predicate(three_dimension_polyline,SubClassOf,three_dimension_geometrical_shape).
+predicate(three_dimension_spatial_coordinate,is,Class).
+predicate(three_dimension_spatial_coordinate,SubClassOf,three_dimension_geometrical_shape).
+predicate(tumor_location_VASARI_criteria,is,Class).
+predicate(tumor_location_VASARI_criteria,SubClassOf,categorical_VASARI_criteria,).
+predicate(tumor_location_VASARI_criteria,SubClassOf,OBI_0001938 some tumor_location_value_specification).
+predicate(tumor_location_categorical_label,is,Class).
+predicate(tumor_location_value_specification,is,Class).
+predicate(tumor_location_value_specification,SubClassOf,OBI_0001930,).
+predicate(tumor_location_value_specification,SubClassOf,OBI_0000999 some tumor_location_categorical_label).
+predicate(two_dimension_circle,is,Class).
+predicate(two_dimension_circle,SubClassOf,two_dimension_geomtrical_shape).
+predicate(two_dimension_ellipse,is,Class).
+predicate(two_dimension_ellipse,SubClassOf,two_dimension_geomtrical_shape).
+predicate(two_dimension_geomtrical_shape,is,Class).
+predicate(two_dimension_geomtrical_shape,SubClassOf,Geovalueal_shape).
+predicate(two_dimension_multi_point,is,Class).
+predicate(two_dimension_multi_point,SubClassOf,two_dimension_geomtrical_shape).
+predicate(two_dimension_point,is,Class).
+predicate(two_dimension_point,SubClassOf,two_dimension_geomtrical_shape).
+predicate(two_dimension_polyline,is,Class).
+predicate(two_dimension_polyline,SubClassOf,two_dimension_geomtrical_shape).
+predicate(two_dimension_spatial_coordinate,is,Class).
+predicate(two_dimension_spatial_coordinate,SubClassOf,two_dimension_geomtrical_shape).
+predicate(T1/,is,Class).
+predicate(T1/,SubClassOf,categorical_VASARI_criteria).
+predicate(www.w3.org/2002/07/#,is,Class).

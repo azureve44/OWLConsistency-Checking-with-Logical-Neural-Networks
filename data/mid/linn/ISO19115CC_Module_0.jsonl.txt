@@ -1,0 +1,182 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(string,is,Datatype).
+predicate(MD_BrowseGraphic.imageConstraints,is,ObjectProperty).
+predicate(MD_BrowseGraphic.imageConstraints,Domain,MD_BrowseGraphic).
+predicate(MD_BrowseGraphic.imageConstraints,Range,MD_Constraints).
+predicate(MD_BrowseGraphic.linkage,is,ObjectProperty).
+predicate(MD_BrowseGraphic.linkage,Domain,MD_BrowseGraphic).
+predicate(MD_BrowseGraphic.linkage,Range,CI_OnlineResource).
+predicate(MD_Identifier.authority,is,ObjectProperty).
+predicate(MD_Identifier.authority,Domain,MD_Identifier).
+predicate(MD_Identifier.authority,Range,CI_Citation).
+predicate(MD_Scope.extent,is,ObjectProperty).
+predicate(MD_Scope.extent,Domain,MD_Scope).
+predicate(MD_Scope.extent,Range,EX_Extent).
+predicate(MD_Scope.level,is,ObjectProperty).
+predicate(MD_Scope.level,Domain,MD_Scope).
+predicate(MD_Scope.level,Range,MD_ScopeCode).
+predicate(MD_Scope.levelDescription,is,ObjectProperty).
+predicate(MD_Scope.levelDescription,Domain,MD_Scope).
+predicate(MD_Scope.levelDescription,Range,MD_ScopeDescription).
+predicate(uAttributeInstances.attributeInstances,is,ObjectProperty).
+predicate(uAttributeInstances.attributeInstances,Domain,uAttributeInstances).
+predicate(uAttributeInstances.attributeInstances,Range,Set.lt.CharacterString.gt.).
+predicate(uAttributes.attributes,is,ObjectProperty).
+predicate(uAttributes.attributes,Domain,uAttributes).
+predicate(uAttributes.attributes,Range,Set.lt.CharacterString.gt.).
+predicate(uFeatureInstances.featureInstances,is,ObjectProperty).
+predicate(uFeatureInstances.featureInstances,Domain,uFeatureInstances).
+predicate(uFeatureInstances.featureInstances,Range,Set.lt.CharacterString.gt.).
+predicate(uFeatures.features,is,ObjectProperty).
+predicate(uFeatures.features,Domain,uFeatures).
+predicate(uFeatures.features,Range,Set.lt.CharacterString.gt.).
+predicate(MD_BrowseGraphic.fileDescription,is,DataProperty).
+predicate(MD_BrowseGraphic.fileDescription,Domain,MD_BrowseGraphic).
+predicate(MD_BrowseGraphic.fileDescription,Range,string).
+predicate(MD_BrowseGraphic.fileName,is,DataProperty).
+predicate(MD_BrowseGraphic.fileName,Domain,MD_BrowseGraphic).
+predicate(MD_BrowseGraphic.fileName,Range,string).
+predicate(MD_BrowseGraphic.fileType,is,DataProperty).
+predicate(MD_BrowseGraphic.fileType,Domain,MD_BrowseGraphic).
+predicate(MD_BrowseGraphic.fileType,Range,string).
+predicate(MD_Identifier.code,is,DataProperty).
+predicate(MD_Identifier.code,Domain,MD_Identifier).
+predicate(MD_Identifier.code,Range,string).
+predicate(MD_Identifier.codeSpace,is,DataProperty).
+predicate(MD_Identifier.codeSpace,Domain,MD_Identifier).
+predicate(MD_Identifier.codeSpace,Range,string).
+predicate(MD_Identifier.description,is,DataProperty).
+predicate(MD_Identifier.description,Domain,MD_Identifier).
+predicate(MD_Identifier.description,Range,string).
+predicate(MD_Identifier.version,is,DataProperty).
+predicate(MD_Identifier.version,Domain,MD_Identifier).
+predicate(MD_Identifier.version,Range,string).
+predicate(uDataset.dataset,is,DataProperty).
+predicate(uDataset.dataset,Domain,uDataset).
+predicate(uDataset.dataset,Range,string).
+predicate(uOther.other,is,DataProperty).
+predicate(uOther.other,Domain,uOther).
+predicate(uOther.other,Range,string).
+predicate(CI_Citation,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_OnlineResource,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_BrowseGraphic,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_BrowseGraphic.imageConstraints only MD_Constraints,).
+predicate(Thing,,is,MD_BrowseGraphic.linkage only CI_OnlineResource,).
+predicate(Thing,,is,MD_BrowseGraphic.fileDescription only string,).
+predicate(Thing,,is,MD_BrowseGraphic.fileName only string,).
+predicate(Thing,,is,MD_BrowseGraphic.fileType only string,).
+predicate(Literal,,is,MD_BrowseGraphic.fileName exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,MD_BrowseGraphic.fileDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,MD_BrowseGraphic.fileType max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Identifier,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Identifier.authority only CI_Citation,).
+predicate(Thing,,is,MD_Identifier.authority max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Identifier.code only string,).
+predicate(Thing,,is,MD_Identifier.codeSpace only string,).
+predicate(Thing,,is,MD_Identifier.description only string,).
+predicate(Thing,,is,MD_Identifier.version only string,).
+predicate(Literal,,is,MD_Identifier.code exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,MD_Identifier.codeSpace max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,MD_Identifier.description max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,MD_Identifier.version max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Scope,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Scope.extent only EX_Extent,).
+predicate(Thing,,is,MD_Scope.level only MD_ScopeCode,).
+predicate(Thing,,is,MD_Scope.levelDescription only MD_ScopeDescription,).
+predicate(Thing,is,MD_Scope.level exactly 1 www.w3.org/2002/07/#).
+predicate(MD_ScopeCode,is,Class).
+predicate(MD_ScopeDescription,is,Class).
+predicate(MD_ScopeDescription,EquivalentTo,uAttributeInstances or uAttributes or uDataset or uFeatureInstances or uFeatures or uOther).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(URI,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(uAttributeInstances,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,uAttributeInstances.attributeInstances only Set.lt.CharacterString.gt.,).
+predicate(Thing,is,uAttributeInstances.attributeInstances exactly 1 www.w3.org/2002/07/#).
+predicate(uAttributes,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,uAttributes.attributes only Set.lt.CharacterString.gt.,).
+predicate(Thing,is,uAttributes.attributes exactly 1 www.w3.org/2002/07/#).
+predicate(uDataset,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,uDataset.dataset only string,).
+predicate(Literal,is,uDataset.dataset exactly 1 www.w3.org/2000/01/-schema#).
+predicate(uFeatureInstances,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,uFeatureInstances.featureInstances only Set.lt.CharacterString.gt.,).
+predicate(Thing,is,uFeatureInstances.featureInstances exactly 1 www.w3.org/2002/07/#).
+predicate(uFeatures,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,uFeatures.features only Set.lt.CharacterString.gt.,).
+predicate(Thing,is,uFeatures.features exactly 1 www.w3.org/2002/07/#).
+predicate(uOther,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,uOther.other only string,).
+predicate(Literal,is,uOther.other exactly 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Constraints,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(EX_Extent,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Set.lt.CharacterString.gt.,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(MD_ScopeCode,is,Individual).
+predicate(MD_ScopeCodeCollection,is,Individual).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).
+predicate(MD_ScopeCode/,is,Individual).
+predicate(MD_ScopeCode/,Types,MD_ScopeCode).

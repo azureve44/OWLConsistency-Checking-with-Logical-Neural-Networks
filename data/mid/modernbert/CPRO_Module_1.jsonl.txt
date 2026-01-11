@@ -1,0 +1,268 @@
+actsOn is ObjectProperty.
+approachSite is ObjectProperty.
+approachSite Domain procedure.
+approachSite Range immaterial-anatomical-continuant.
+composedBy is ObjectProperty.
+findingSite is ObjectProperty.
+findingSite Domain clinical-finding.
+findingSite Range physical-anatomical-entity.
+hasContraindication is ObjectProperty.
+hasContraindication Domain therapeutic-act.
+hasContraindication InverseOf isContraindicationFor.
+hasIndication is ObjectProperty.
+hasIndication Domain therapeutic-act.
+hasIndication InverseOf isIndicationFor.
+hasOutput is ObjectProperty.
+hasRole is ObjectProperty.
+hypothesizedProblem is ObjectProperty.
+hypothesizedProblem Domain clinical-diagnosis.
+hypothesizedProblem Range pathological-disposition.
+includes is ObjectProperty.
+includes Domain recorded-clinical-situation.
+Thing is www.w3.org/2002/07/#.
+investigates is ObjectProperty.
+isConsequenceOf is ObjectProperty.
+isContraindicationFor is ObjectProperty.
+isContraindicationFor InverseOf hasContraindication.
+isIndicationFor is ObjectProperty.
+isIndicationFor InverseOf hasIndication.
+measurementOf is ObjectProperty.
+outputOf is ObjectProperty.
+representationOf is ObjectProperty.
+www.obofoundry.org/ro/ro.# is ObjectProperty.
+www.obofoundry.org/ro/ro.# is ObjectProperty.
+www.obofoundry.org/ro/ro.# is ObjectProperty.
+www.obofoundry.org/ro/ro.# is ObjectProperty.
+www.obofoundry.org/ro/ro.# is ObjectProperty.
+Prefix is Class.
+Prefix SubClassOf metadata-entity.
+QualityValue is Class.
+QualityValue SubClassOf data-entity.
+UnitOfMeasurement is Class.
+UnitOfMeasurement SubClassOf data-entity.
+anamnesis is Class.
+anamnesis EquivalentTo clinical-finding and (outputOf some medical-history-screening-act).
+anamnesis SubClassOf clinical-finding.
+anamnesis DisjointWith sign-recording.
+anamnesis DisjointWith laboratory-test-finding.
+anamnesis DisjointWith clinical-diagnosis.
+anatomical-structure is Class.
+anatomical-structure SubClassOf Object.
+anatomical-structure DisjointWith pharmacological-substance.
+anatomical-structure DisjointWith organism.
+anatomical-structure DisjointWith medical-device.
+anatomical-structure DisjointWith deoxyribonucleic-acid-structure.
+anatomical-structure DisjointWith computer-system.
+biological-process is Class.
+bodily-feature is Class.
+clinical-act is Class.
+clinical-administration-act is Class.
+clinical-administration-act SubClassOf clinical-act.
+clinical-analysis-act is Class.
+clinical-analysis-act SubClassOf clinical-investigation-act.
+clinical-artifact is Class.
+clinical-diagnosis is Class.
+clinical-diagnosis SubClassOf clinical-finding,.
+clinical-diagnosis SubClassOf hypothesizedProblem some pathological-disposition,.
+clinical-diagnosis SubClassOf outputOf some clinical-analysis-act.
+clinical-diagnosis DisjointWith sign-recording.
+clinical-diagnosis DisjointWith laboratory-test-finding.
+clinical-diagnosis DisjointWith anamnesis.
+clinical-examination is Class.
+clinical-examination SubClassOf screening-act.
+clinical-finding is Class.
+clinical-finding SubClassOf clinical-artifact,.
+clinical-finding SubClassOf composedBy some (hasRole some clinician-role),.
+clinical-finding SubClassOf outputOf some clinical-act,.
+clinical-finding SubClassOf representationOf some bodily-feature.
+clinical-finding DisjointWith symptom-recording.
+clinical-finding DisjointWith recorded-clinical-situation.
+clinical-finding DisjointWith patient-record.
+clinical-investigation-act is Class.
+clinical-investigation-act SubClassOf clinical-act,.
+clinical-investigation-act SubClassOf hasOutput some clinical-artifact,.
+clinical-investigation-act SubClassOf investigates some.
+clinical-investigation-act SubClassOf (etiologic-agent or (hasIndication some therapeutic-act)).
+clinician-role is Class.
+computer-system is Class.
+computer-system SubClassOf Object.
+computer-system DisjointWith pharmacological-substance.
+computer-system DisjointWith organism.
+computer-system DisjointWith medical-device.
+computer-system DisjointWith deoxyribonucleic-acid-structure.
+computer-system DisjointWith anatomical-structure.
+cpr-entities is Class.
+cpr-entities EquivalentTo patient-record or recorded-clinical-situation or sign-recording or symptom-recording or (representationOf only vital-sign).
+Thing is www.w3.org/2002/07/#.
+data-entity is Class.
+Thing is www.w3.org/2002/07/#.
+deoxyribonucleic-acid-structure is Class.
+deoxyribonucleic-acid-structure SubClassOf Object.
+deoxyribonucleic-acid-structure DisjointWith pharmacological-substance.
+deoxyribonucleic-acid-structure DisjointWith organism.
+deoxyribonucleic-acid-structure DisjointWith medical-device.
+deoxyribonucleic-acid-structure DisjointWith computer-system.
+deoxyribonucleic-acid-structure DisjointWith anatomical-structure.
+diagnostic-image is Class.
+diagnostic-image SubClassOf image,.
+diagnostic-image SubClassOf outputOf some clinical-investigation-act.
+diagnostic-procedure is Class.
+diagnostic-procedure SubClassOf clinical-investigation-act.
+etiologic-agent is Class.
+idiopathic-disease is Class.
+idiopathic-disease SubClassOf pathological-disposition.
+idiopathic-disease DisjointWith infectious-disease.
+image is Class.
+image SubClassOf representational-artifact.
+immaterial-anatomical-continuant is Class.
+infectious-disease is Class.
+infectious-disease SubClassOf pathological-disposition,.
+infectious-disease SubClassOf isConsequenceOf some pathogen.
+infectious-disease DisjointWith idiopathic-disease.
+laboratory-test is Class.
+laboratory-test SubClassOf clinical-investigation-act,.
+laboratory-test SubClassOf hasOutput only laboratory-test-finding.
+laboratory-test-finding is Class.
+laboratory-test-finding EquivalentTo clinical-finding and (measurementOf only QualityValue) and (outputOf only laboratory-test) and (representationOf only Quality).
+laboratory-test-finding SubClassOf clinical-finding.
+laboratory-test-finding DisjointWith sign-recording.
+laboratory-test-finding DisjointWith clinical-diagnosis.
+laboratory-test-finding DisjointWith anamnesis.
+linguistic-construct is Class.
+longitudinal-patient-medical-history is Class.
+longitudinal-patient-medical-history SubClassOf ProcessAggregate.
+medical-device is Class.
+medical-device DisjointWith deoxyribonucleic-acid-structure.
+medical-device DisjointWith computer-system.
+medical-device DisjointWith anatomical-structure.
+medical-history-screening-act is Class.
+medical-history-screening-act SubClassOf screening-act.
+medical-therapy is Class.
+medical-therapy SubClassOf therapeutic-act.
+medication is Class.
+medication SubClassOf pharmacological-substance.
+metadata-entity is Class.
+Thing is www.w3.org/2002/07/#.
+morphologic-alteration is Class.
+morphologic-alteration SubClassOf biological-process,.
+has_agent only pathological-disposition, is www.obofoundry.org/ro/ro.#.
+has_participant only physical-anatomical-entity, is www.obofoundry.org/ro/ro.#.
+part_of only pathological-process is www.obofoundry.org/ro/ro.#.
+organism is Class.
+organism DisjointWith deoxyribonucleic-acid-structure.
+organism DisjointWith computer-system.
+organism DisjointWith anatomical-structure.
+organismal-continuant is Class.
+organismal-process-aggregate is Class.
+organismal-process-aggregate SubClassOf ProcessAggregate.
+pathogen is Class.
+pathological-disposition is Class.
+pathological-disposition DisjointWith physiological-disposition.
+pathological-process is Class.
+pathological-process SubClassOf biological-process,.
+has_agent some pathological-disposition is www.obofoundry.org/ro/ro.#.
+patient is Class.
+participates_in some clinical-act) is person and (hasRole some patient-role) and (www.obofoundry.org/ro/ro.#.
+participates_in some clinical-act) SubClassOf person.
+patient-record is Class.
+patient-record SubClassOf clinical-artifact,.
+patient-record SubClassOf representationOf some longitudinal-patient-medical-history,.
+has_proper_part some representational-artifact is www.obofoundry.org/ro/ro.#.
+has_proper_part some representational-artifact DisjointWith symptom-recording.
+has_proper_part some representational-artifact DisjointWith recorded-clinical-situation.
+has_proper_part some representational-artifact DisjointWith clinical-finding.
+patient-role is Class.
+person is Class.
+pharmacological-substance is Class.
+pharmacological-substance DisjointWith deoxyribonucleic-acid-structure.
+pharmacological-substance DisjointWith computer-system.
+pharmacological-substance DisjointWith anatomical-structure.
+physical-anatomical-entity is Class.
+physical-therapy is Class.
+physical-therapy SubClassOf therapeutic-act.
+physician is Class.
+participates_in some is person and (hasRole some physician-role) and (www.obofoundry.org/ro/ro.#.
+participates_in some is (clinical-investigation-act or therapeutic-act)).
+participates_in some SubClassOf person.
+physician-role is Class.
+physician-role SubClassOf clinician-role.
+physiological-disposition is Class.
+physiological-disposition SubClassOf Disposition.
+physiological-disposition DisjointWith pathological-disposition.
+physiological-process is Class.
+physiological-process SubClassOf biological-process.
+physiological-role is Class.
+physiological-role SubClassOf Role.
+procedure is Class.
+procedure EquivalentTo diagnostic-procedure or therapeutic-procedure.
+procedure SubClassOf clinical-act,.
+procedure SubClassOf actsOn some organismal-continuant,.
+procedure SubClassOf approachSite some immaterial-anatomical-continuant.
+psychological-therapy is Class.
+psychological-therapy SubClassOf therapeutic-act.
+recorded-clinical-situation is Class.
+recorded-clinical-situation SubClassOf clinical-artifact.
+recorded-clinical-situation DisjointWith symptom-recording.
+recorded-clinical-situation DisjointWith patient-record.
+recorded-clinical-situation DisjointWith clinical-finding.
+representational-artifact is Class.
+screening-act is Class.
+screening-act SubClassOf clinical-investigation-act.
+sign-recording is Class.
+sign-recording EquivalentTo clinical-finding and (outputOf some clinical-examination).
+sign-recording SubClassOf clinical-finding.
+sign-recording DisjointWith laboratory-test-finding.
+sign-recording DisjointWith clinical-diagnosis.
+sign-recording DisjointWith anamnesis.
+symptom-recording is Class.
+symptom-recording DisjointWith recorded-clinical-situation.
+symptom-recording DisjointWith patient-record.
+symptom-recording DisjointWith clinical-finding.
+syndrome is Class.
+syndrome SubClassOf idiopathic-disease.
+therapeutic-act is Class.
+therapeutic-act SubClassOf clinical-act.
+therapeutic-procedure is Class.
+therapeutic-procedure SubClassOf therapeutic-act.
+vital-sign is Class.
+ObsoleteClass is Class.
+ObsoleteClass SubClassOf metadata-entity.
+Subset is Class.
+Subset SubClassOf metadata-entity.
+Synonym is Class.
+Synonym SubClassOf linguistic-construct.
+SynonymType is Class.
+SynonymType SubClassOf linguistic-construct.
+Entity is Class.
+Continuant is Class.
+Continuant DisjointWith Occurrent.
+Disposition is Class.
+Object is Class.
+Quality is Class.
+Role is Class.
+ConnectedSpatiotemporalRegion is Class.
+ConnectedTemporalRegion is Class.
+Occurrent is Class.
+Occurrent EquivalentTo ProcessualEntity or SpatiotemporalRegion or TemporalRegion.
+Occurrent SubClassOf Entity.
+Occurrent DisjointWith Continuant.
+ProcessAggregate is Class.
+ProcessualEntity is Class.
+ProcessualEntity SubClassOf Occurrent.
+SpatiotemporalInstant is Class.
+SpatiotemporalInstant SubClassOf ConnectedSpatiotemporalRegion.
+SpatiotemporalInstant DisjointWith SpatiotemporalInterval.
+SpatiotemporalInterval is Class.
+SpatiotemporalInterval SubClassOf ConnectedSpatiotemporalRegion.
+SpatiotemporalInterval DisjointWith SpatiotemporalInstant.
+SpatiotemporalRegion is Class.
+SpatiotemporalRegion SubClassOf Occurrent.
+TemporalInstant is Class.
+TemporalInstant SubClassOf ConnectedTemporalRegion.
+TemporalInstant DisjointWith TemporalInterval.
+TemporalInterval is Class.
+TemporalInterval SubClassOf ConnectedTemporalRegion.
+TemporalInterval DisjointWith TemporalInstant.
+TemporalRegion is Class.
+TemporalRegion SubClassOf Occurrent.
+www.w3.org/2002/07/# is Class.

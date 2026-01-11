@@ -1,0 +1,98 @@
+is(hasContext,ObjectProperty):1.0
+SubPropertyOf(hasContext,hasFeature):1.0
+Domain(hasContext,AgitationInDementia):1.0
+Range(hasContext,ContextOfAgitation):1.0
+InverseOf(hasContext,isContextOf):1.0
+is(hasDuration,ObjectProperty):1.0
+SubPropertyOf(hasDuration,hasFeature):1.0
+Domain(hasDuration,AgitationInDementia):1.0
+Range(hasDuration,DurationOfAgitation):1.0
+InverseOf(hasDuration,isDurationOf):1.0
+is(hasEffect,ObjectProperty):1.0
+Domain(hasEffect,AgitationInDementia):1.0
+Range(hasEffect,EffectOfAgitation):1.0
+InverseOf(hasEffect,isEffectOf):1.0
+is(hasFeature,ObjectProperty):1.0
+Domain(hasFeature,AgitationInDementia):1.0
+Range(hasFeature,FeatureOfAgitation):1.0
+InverseOf(hasFeature,isFeatureOf):1.0
+is(hasFrequency,ObjectProperty):1.0
+SubPropertyOf(hasFrequency,hasFeature):1.0
+Domain(hasFrequency,AgitationInDementia):1.0
+Range(hasFrequency,FrequencyOfAgitation):1.0
+InverseOf(hasFrequency,isFrequencyOf):1.0
+is(hasSeverity,ObjectProperty):1.0
+SubPropertyOf(hasSeverity,hasFeature):1.0
+Domain(hasSeverity,AgitationInDementia):1.0
+Range(hasSeverity,SeverityOfAgitation):1.0
+InverseOf(hasSeverity,isSeverityOf):1.0
+is(isAgitationOf,ObjectProperty):1.0
+Domain(isAgitationOf,AgitationInDementia):1.0
+Range(isAgitationOf,PersonWithDementia):1.0
+is(isAssessedBy,ObjectProperty):1.0
+Domain(isAssessedBy,AgitationInDementia):1.0
+Range(isAssessedBy,AgitationAssessmentTool):1.0
+is(isCausedBy,ObjectProperty):1.0
+Domain(isCausedBy,AgitationInDementia):1.0
+Range(isCausedBy,AgitationCausativeFactor):1.0
+is(isContextOf,ObjectProperty):1.0
+InverseOf(isContextOf,hasContext):1.0
+is(isDurationOf,ObjectProperty):1.0
+InverseOf(isDurationOf,hasDuration):1.0
+is(isEffectOf,ObjectProperty):1.0
+InverseOf(isEffectOf,hasEffect):1.0
+is(isFeatureOf,ObjectProperty):1.0
+InverseOf(isFeatureOf,hasFeature):1.0
+is(isFrequencyOf,ObjectProperty):1.0
+InverseOf(isFrequencyOf,hasFrequency):1.0
+is(isSeverityOf,ObjectProperty):1.0
+InverseOf(isSeverityOf,hasSeverity):1.0
+is(isTreatedBy,ObjectProperty):1.0
+Domain(isTreatedBy,AgitationInDementia):1.0
+Range(isTreatedBy,Intervention):1.0
+InverseOf(isTreatedBy,treats):1.0
+is(treats,ObjectProperty):1.0
+InverseOf(treats,isTreatedBy):1.0
+is(AgitationAssessmentTool,Class):1.0
+is(AgitationCausativeFactor,Class):1.0
+is(AgitationInDementia,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasContext some ContextOfAgitation,):1.0
+is(Thing,,hasDuration some DurationOfAgitation,):1.0
+is(Thing,,hasEffect some EffectOfAgitation,):1.0
+is(Thing,,hasFeature some FeatureOfAgitation,):1.0
+is(Thing,,hasFrequency some FrequencyOfAgitation,):1.0
+is(Thing,,hasSeverity some SeverityOfAgitation,):1.0
+is(Thing,,isAgitationOf some PersonWithDementia,):1.0
+is(Thing,,isAssessedBy some AgitationAssessmentTool,):1.0
+is(Thing,,isCausedBy some AgitationCausativeFactor,):1.0
+is(Thing,,isTreatedBy some Intervention,):1.0
+is(Thing,,hasFeature only (hasFeature some FeatureOfAgitation)):1.0
+is(AgitationManagementActivity,Class):1.0
+is(AgitationManagementApproach,Class):1.0
+is(BackgroundOfPersonWithDementia,Class):1.0
+is(CommunicationTechnique,Class):1.0
+is(ContextOfAgitation,Class):1.0
+is(DisruptiveVocalisation,Class):1.0
+SubClassOf(DisruptiveVocalisation,AgitationInDementia):1.0
+is(DurationOfAgitation,Class):1.0
+is(EffectOfAgitation,Class):1.0
+is(EmotionalDistress,Class):1.0
+SubClassOf(EmotionalDistress,AgitationInDementia):1.0
+is(FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,Class):1.0
+is(FeatureOfAgitation,Class):1.0
+SubClassOf(FeatureOfAgitation,isFeatureOf only AgitationAssessmentTool):1.0
+DisjointWith(FeatureOfAgitation,hasFeature some FeatureOfAgitation):1.0
+is(FrequencyOfAgitation,Class):1.0
+is(Intervention,Class):1.0
+is(Person,Class):1.0
+is(PersonWithDementia,Class):1.0
+is(PhysicallyAggressiveBehaviour,Class):1.0
+SubClassOf(PhysicallyAggressiveBehaviour,AgitationInDementia):1.0
+is(PhysicallyNonaggressiveBehaviour,Class):1.0
+SubClassOf(PhysicallyNonaggressiveBehaviour,AgitationInDementia,):1.0
+SubClassOf(PhysicallyNonaggressiveBehaviour,hasFeature only AgitationAssessmentTool):1.0
+is(SeverityOfAgitation,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+DisjointClasses(www.w3.org/2002/07/#,AgitationAssessmentTool,AgitationCausativeFactor,AgitationInDementia,AgitationManagementActivity,AgitationManagementApproach,BackgroundOfPersonWithDementia,CommunicationTechnique,EffectOfAgitation,FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,FeatureOfAgitation,Person):1.0
+EquivalentClasses(www.w3.org/2002/07/#,AgitationAssessmentTool,AgitationCausativeFactor,AgitationInDementia,AgitationManagementActivity,AgitationManagementApproach,BackgroundOfPersonWithDementia,CommunicationTechnique,EffectOfAgitation,FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,FeatureOfAgitation,Person):1.0

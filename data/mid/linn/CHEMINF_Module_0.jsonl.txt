@@ -1,0 +1,919 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(decimal,is,Datatype).
+predicate(double,is,Datatype).
+predicate(float,is,Datatype).
+predicate(int,is,Datatype).
+predicate(integer,is,Datatype).
+predicate(long,is,Datatype).
+predicate(string,is,Datatype).
+predicate(BFO_0000050,is,ObjectProperty).
+predicate(BFO_0000051,is,ObjectProperty).
+predicate(IAO_0000039,is,ObjectProperty).
+predicate(IAO_0000136,is,ObjectProperty).
+predicate(IAO_0000219,is,ObjectProperty).
+predicate(IAO_0000221,is,ObjectProperty).
+predicate(IAO_0000221,Domain,IAO_0000109).
+predicate(IAO_0000221,Range,BFO_0000019).
+predicate(IAO_0000221,InverseOf,IAO_0000417).
+predicate(IAO_0000407,is,ObjectProperty).
+predicate(IAO_0000407,Characteristics,Functional).
+predicate(IAO_0000407,Domain,IAO_0000400).
+predicate(IAO_0000407,Range,UO_0000001).
+predicate(IAO_0000413,is,ObjectProperty).
+predicate(IAO_0000413,Domain,IAO_0000416).
+predicate(IAO_0000413,Range,BFO_0000015).
+predicate(IAO_0000417,is,ObjectProperty).
+predicate(IAO_0000417,InverseOf,IAO_0000221).
+predicate(IAO_0000581,is,ObjectProperty).
+predicate(IAO_0000581,Characteristics,Functional).
+predicate(IAO_0000581,Domain,IAO_0000582).
+predicate(IAO_0000581,Range,IAO_0000416).
+predicate(IAO_0000583,is,ObjectProperty).
+predicate(IAO_0000583,Domain,IAO_0000582).
+predicate(IAO_0000583,Range,IAO_0000109 and (not (IAO_0000416))).
+predicate(OBI_0000312,is,ObjectProperty).
+predicate(CHEMINF_000047,is,ObjectProperty).
+predicate(CHEMINF_000143,is,ObjectProperty).
+predicate(CHEMINF_000143,Domain,IAO_0000027).
+predicate(CHEMINF_000143,Range,BFO_0000020).
+predicate(CHEMINF_000201,is,ObjectProperty).
+predicate(CHEMINF_000201,Domain,IAO_0000027).
+predicate(CHEMINF_000606,is,ObjectProperty).
+predicate(CHEMINF_000606,Domain,IAO_0000027).
+predicate(CHEMINF_000606,Range,IAO_0000064).
+predicate(IAO_0000004,is,DataProperty).
+predicate(IAO_0000004,Characteristics,Functional).
+predicate(IAO_0000004,Domain,IAO_0000032).
+predicate(IAO_0000004,Range,double).
+predicate(IAO_0000004,SubPropertyOf,CHEMINF_000012).
+predicate(IAO_0000404,is,DataProperty).
+predicate(IAO_0000404,Characteristics,Functional).
+predicate(IAO_0000404,Domain,IAO_0000400).
+predicate(IAO_0000404,Range,float).
+predicate(IAO_0000404,SubPropertyOf,CHEMINF_000012).
+predicate(IAO_0000405,is,DataProperty).
+predicate(IAO_0000405,Characteristics,Functional).
+predicate(IAO_0000405,Domain,IAO_0000400).
+predicate(IAO_0000405,Range,float).
+predicate(IAO_0000405,SubPropertyOf,CHEMINF_000012).
+predicate(IAO_0000406,is,DataProperty).
+predicate(IAO_0000406,Characteristics,Functional).
+predicate(IAO_0000406,Domain,IAO_0000400).
+predicate(IAO_0000406,Range,float).
+predicate(IAO_0000406,SubPropertyOf,CHEMINF_000012).
+predicate(CHEMINF_000009,is,DataProperty).
+predicate(CHEMINF_000009,SubPropertyOf,CHEMINF_000012).
+predicate(CHEMINF_000012,is,DataProperty).
+predicate(CHEMINF_000012,Domain,IAO_0000027).
+predicate(APOLLO_SV_00000032,is,Class).
+predicate(APOLLO_SV_00000032,EquivalentTo,IAO_0000027 and (OBI_0000312 some APOLLO_SV_00000033)).
+predicate(APOLLO_SV_00000032,SubClassOf,IAO_0000027,).
+predicate(APOLLO_SV_00000032,SubClassOf,IAO_0000109).
+predicate(APOLLO_SV_00000033,is,Class).
+predicate(BFO_0000009,is,Class).
+predicate(BFO_0000015,is,Class).
+predicate(BFO_0000018,is,Class).
+predicate(BFO_0000019,is,Class).
+predicate(BFO_0000020,is,Class).
+predicate(BFO_0000026,is,Class).
+predicate(BFO_0000028,is,Class).
+predicate(CHEBI_23367,is,Class).
+predicate(CHEBI_33250,is,Class).
+predicate(CHEBI_36357,is,Class).
+predicate(IAO_0000027,is,Class).
+predicate(IAO_0000027,SubClassOf,IAO_0000030,).
+predicate(Literal,is,CHEMINF_000012 some www.w3.org/2000/01/-schema#).
+predicate(IAO_0000030,is,Class).
+predicate(IAO_0000032,is,Class).
+predicate(IAO_0000032,SubClassOf,IAO_0000109,).
+predicate(Thing,,is,IAO_0000039 min 1 www.w3.org/2002/07/#).
+predicate(Literal,is,IAO_0000004 min 1 www.w3.org/2000/01/-schema#).
+predicate(IAO_0000064,is,Class).
+predicate(IAO_0000078,is,Class).
+predicate(IAO_0000078,EquivalentTo,{IAO_0000002 , IAO_0000120 , IAO_0000121 , IAO_0000122 , IAO_0000123 , IAO_0000124 , IAO_0000125 , IAO_0000423 , IAO_0000428}).
+predicate(IAO_0000078,SubClassOf,IAO_0000102).
+predicate(IAO_0000100,is,Class).
+predicate(IAO_0000100,SubClassOf,IAO_0000027).
+predicate(IAO_0000102,is,Class).
+predicate(IAO_0000102,SubClassOf,IAO_0000027).
+predicate(IAO_0000109,is,Class).
+predicate(IAO_0000109,SubClassOf,IAO_0000027,).
+predicate(IAO_0000109,SubClassOf,CHEMINF_000009 some float).
+predicate(IAO_0000140,is,Class).
+predicate(IAO_0000140,SubClassOf,IAO_0000027).
+predicate(IAO_0000225,is,Class).
+predicate(IAO_0000225,EquivalentTo,{IAO_0000103 , IAO_0000226 , IAO_0000227 , IAO_0000228 , IAO_0000229 , OMO_0001000}).
+predicate(IAO_0000225,SubClassOf,IAO_0000102).
+predicate(IAO_0000400,is,Class).
+predicate(IAO_0000400,SubClassOf,IAO_0000027,).
+predicate(IAO_0000400,SubClassOf,IAO_0000219 some BFO_0000018,).
+predicate(Thing,is,IAO_0000407 exactly 1 www.w3.org/2002/07/#).
+predicate(IAO_0000401,is,Class).
+predicate(IAO_0000401,SubClassOf,IAO_0000400,).
+predicate(IAO_0000401,SubClassOf,IAO_0000219 some).
+predicate(IAO_0000401,SubClassOf,(BFO_0000018 and (BFO_0000050 some BFO_0000026)),).
+predicate(Literal,is,IAO_0000404 exactly 1 www.w3.org/2000/01/-schema#).
+predicate(IAO_0000402,is,Class).
+predicate(IAO_0000402,SubClassOf,IAO_0000400,).
+predicate(IAO_0000402,SubClassOf,IAO_0000219 some).
+predicate(IAO_0000402,SubClassOf,(BFO_0000018 and (BFO_0000050 some BFO_0000009)),).
+predicate(Literal,,is,IAO_0000404 exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,IAO_0000406 exactly 1 www.w3.org/2000/01/-schema#).
+predicate(IAO_0000403,is,Class).
+predicate(IAO_0000403,SubClassOf,IAO_0000400,).
+predicate(IAO_0000403,SubClassOf,IAO_0000219 some).
+predicate(IAO_0000403,SubClassOf,(BFO_0000018 and (BFO_0000050 some BFO_0000028)),).
+predicate(Literal,,is,IAO_0000404 exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,IAO_0000405 exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,IAO_0000406 exactly 1 www.w3.org/2000/01/-schema#).
+predicate(IAO_0000408,is,Class).
+predicate(IAO_0000408,SubClassOf,IAO_0000032,).
+predicate(IAO_0000408,SubClassOf,IAO_0000039 some UO_0000001,).
+predicate(IAO_0000408,SubClassOf,IAO_0000221 some PATO_0000122).
+predicate(IAO_0000409,is,Class).
+predicate(IAO_0000409,EquivalentTo,{IAO_0000410 , IAO_0000420 , IAO_0000421}).
+predicate(IAO_0000409,SubClassOf,IAO_0000102).
+predicate(IAO_0000414,is,Class).
+predicate(IAO_0000414,SubClassOf,IAO_0000032,).
+predicate(IAO_0000414,SubClassOf,(IAO_0000039 only UO_0000002) and (IAO_0000221 only PATO_0000125)).
+predicate(IAO_0000416,is,Class).
+predicate(IAO_0000416,SubClassOf,IAO_0000032,).
+predicate(IAO_0000416,SubClassOf,(IAO_0000039 only UO_0000003) and (IAO_0000413 only BFO_0000015)).
+predicate(IAO_0000577,is,Class).
+predicate(IAO_0000582,is,Class).
+predicate(IAO_0000582,SubClassOf,IAO_0000109,).
+predicate(IAO_0000582,SubClassOf,(IAO_0000581 some IAO_0000416) and (IAO_0000583 some IAO_0000109)).
+predicate(IAO_0000584,is,Class).
+predicate(IAO_0000584,SubClassOf,IAO_0000100,).
+predicate(IAO_0000584,SubClassOf,BFO_0000051 some IAO_0000582).
+predicate(IAO_8000000,is,Class).
+predicate(IAO_8000000,SubClassOf,IAO_0000102).
+predicate(IAO_8000001,is,Class).
+predicate(IAO_8000001,SubClassOf,IAO_8000000).
+predicate(IAO_8000002,is,Class).
+predicate(IAO_8000002,SubClassOf,IAO_8000000).
+predicate(IAO_8000003,is,Class).
+predicate(IAO_8000003,SubClassOf,IAO_8000000).
+predicate(IAO_8000004,is,Class).
+predicate(IAO_8000004,SubClassOf,IAO_8000000).
+predicate(IAO_8000005,is,Class).
+predicate(IAO_8000005,SubClassOf,IAO_8000006).
+predicate(IAO_8000006,is,Class).
+predicate(IAO_8000006,SubClassOf,IAO_8000000).
+predicate(IAO_8000007,is,Class).
+predicate(IAO_8000007,SubClassOf,IAO_8000006).
+predicate(IAO_8000008,is,Class).
+predicate(IAO_8000008,SubClassOf,IAO_8000006).
+predicate(IAO_8000009,is,Class).
+predicate(IAO_8000009,SubClassOf,IAO_8000006).
+predicate(IAO_8000010,is,Class).
+predicate(IAO_8000010,SubClassOf,IAO_8000006).
+predicate(IAO_8000012,is,Class).
+predicate(IAO_8000012,SubClassOf,IAO_8000006).
+predicate(IAO_8000013,is,Class).
+predicate(IAO_8000013,SubClassOf,IAO_8000000).
+predicate(IAO_8000014,is,Class).
+predicate(IAO_8000014,SubClassOf,IAO_8000000).
+predicate(IAO_8000015,is,Class).
+predicate(IAO_8000015,SubClassOf,IAO_8000014).
+predicate(IAO_8000016,is,Class).
+predicate(IAO_8000016,SubClassOf,IAO_8000004).
+predicate(IAO_8000017,is,Class).
+predicate(IAO_8000017,SubClassOf,IAO_8000006).
+predicate(PATO_0000122,is,Class).
+predicate(PATO_0000125,is,Class).
+predicate(UO_0000001,is,Class).
+predicate(UO_0000002,is,Class).
+predicate(UO_0000003,is,Class).
+predicate(CHEMINF_000000,is,Class).
+predicate(CHEMINF_000001,is,Class).
+predicate(CHEMINF_000001,SubClassOf,CHEMINF_000094).
+predicate(CHEMINF_000002,is,Class).
+predicate(CHEMINF_000002,SubClassOf,CHEMINF_000094).
+predicate(CHEMINF_000005,is,Class).
+predicate(CHEMINF_000005,SubClassOf,CHEMINF_000027,).
+predicate(CHEMINF_000005,SubClassOf,CHEMINF_000047 some CHEMINF_000024,).
+predicate(CHEMINF_000005,SubClassOf,CHEMINF_000143 some CHEMINF_000074).
+predicate(CHEMINF_000006,is,Class).
+predicate(CHEMINF_000006,SubClassOf,CHEMINF_000005).
+predicate(CHEMINF_000007,is,Class).
+predicate(CHEMINF_000007,SubClassOf,CHEMINF_000018).
+predicate(CHEMINF_000010,is,Class).
+predicate(CHEMINF_000010,SubClassOf,CHEMINF_000041,).
+predicate(CHEMINF_000010,SubClassOf,IAO_0000136 some CHEBI_33250,).
+predicate(CHEMINF_000010,SubClassOf,CHEMINF_000012 some int).
+predicate(CHEMINF_000013,is,Class).
+predicate(CHEMINF_000014,is,Class).
+predicate(CHEMINF_000016,is,Class).
+predicate(CHEMINF_000016,SubClassOf,CHEMINF_000123).
+predicate(CHEMINF_000018,is,Class).
+predicate(CHEMINF_000018,SubClassOf,CHEMINF_000085,).
+predicate(CHEMINF_000018,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000018,SubClassOf,CHEMINF_000047 some CHEMINF_000020).
+predicate(CHEMINF_000019,is,Class).
+predicate(CHEMINF_000019,SubClassOf,CHEMINF_000085,).
+predicate(CHEMINF_000019,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000019,SubClassOf,CHEMINF_000047 some CHEMINF_000021).
+predicate(CHEMINF_000020,is,Class).
+predicate(CHEMINF_000021,is,Class).
+predicate(CHEMINF_000024,is,Class).
+predicate(CHEMINF_000025,is,Class).
+predicate(CHEMINF_000025,SubClassOf,CHEMINF_000123).
+predicate(CHEMINF_000027,is,Class).
+predicate(CHEMINF_000027,SubClassOf,CHEMINF_000123,).
+predicate(CHEMINF_000027,SubClassOf,CHEMINF_000143 some CHEMINF_000013).
+predicate(CHEMINF_000030,is,Class).
+predicate(CHEMINF_000032,is,Class).
+predicate(CHEMINF_000032,SubClassOf,CHEMINF_000018).
+predicate(CHEMINF_000034,is,Class).
+predicate(CHEMINF_000034,SubClassOf,CHEMINF_000005).
+predicate(CHEMINF_000038,is,Class).
+predicate(CHEMINF_000039,is,Class).
+predicate(CHEMINF_000041,is,Class).
+predicate(CHEMINF_000041,SubClassOf,CHEMINF_000123).
+predicate(CHEMINF_000042,is,Class).
+predicate(CHEMINF_000042,SubClassOf,CHEMINF_000136,).
+predicate(CHEMINF_000042,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000042,SubClassOf,CHEMINF_000143 some CHEMINF_000054).
+predicate(CHEMINF_000043,is,Class).
+predicate(CHEMINF_000043,SubClassOf,CHEMINF_000061,).
+predicate(CHEMINF_000043,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000043,SubClassOf,CHEMINF_000047 some CHEMINF_000039).
+predicate(CHEMINF_000044,is,Class).
+predicate(CHEMINF_000044,SubClassOf,CHEMINF_000043).
+predicate(CHEMINF_000048,is,Class).
+predicate(CHEMINF_000048,SubClassOf,CHEMINF_000027,).
+predicate(CHEMINF_000048,SubClassOf,IAO_0000136 some CHEBI_33250,).
+predicate(CHEMINF_000048,SubClassOf,CHEMINF_000047 some CHEMINF_000030,).
+predicate(CHEMINF_000048,SubClassOf,CHEMINF_000143 some CHEMINF_000074).
+predicate(CHEMINF_000049,is,Class).
+predicate(CHEMINF_000049,SubClassOf,CHEMINF_000048).
+predicate(CHEMINF_000050,is,Class).
+predicate(CHEMINF_000050,SubClassOf,CHEMINF_000048).
+predicate(CHEMINF_000051,is,Class).
+predicate(CHEMINF_000051,SubClassOf,CHEMINF_000027,).
+predicate(CHEMINF_000051,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000051,SubClassOf,CHEMINF_000143 some CHEMINF_000074).
+predicate(CHEMINF_000052,is,Class).
+predicate(CHEMINF_000052,SubClassOf,CHEMINF_000051).
+predicate(CHEMINF_000053,is,Class).
+predicate(CHEMINF_000053,SubClassOf,CHEMINF_000051).
+predicate(CHEMINF_000054,is,Class).
+predicate(CHEMINF_000055,is,Class).
+predicate(CHEMINF_000055,SubClassOf,CHEMINF_000085,).
+predicate(CHEMINF_000055,SubClassOf,IAO_0000136 some CHEBI_23367).
+predicate(CHEMINF_000056,is,Class).
+predicate(CHEMINF_000056,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000056,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000056,SubClassOf,CHEMINF_000143 some CHEMINF_000115).
+predicate(CHEMINF_000059,is,Class).
+predicate(CHEMINF_000059,SubClassOf,CHEMINF_000061,).
+predicate(CHEMINF_000059,SubClassOf,IAO_0000136 some CHEBI_36357).
+predicate(CHEMINF_000061,is,Class).
+predicate(CHEMINF_000062,is,Class).
+predicate(CHEMINF_000062,SubClassOf,CHEMINF_000093,).
+predicate(CHEMINF_000062,SubClassOf,IAO_0000136 some CHEMINF_000063).
+predicate(CHEMINF_000063,is,Class).
+predicate(CHEMINF_000064,is,Class).
+predicate(CHEMINF_000064,SubClassOf,CHEMINF_000123).
+predicate(CHEMINF_000065,is,Class).
+predicate(CHEMINF_000065,EquivalentTo,CHEMINF_000123 and (IAO_0000136 some CHEBI_23367)).
+predicate(CHEMINF_000065,SubClassOf,CHEMINF_000123,).
+predicate(CHEMINF_000065,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000065,SubClassOf,CHEMINF_000047 some CHEMINF_000014).
+predicate(CHEMINF_000068,is,Class).
+predicate(CHEMINF_000068,SubClassOf,CHEMINF_000085,).
+predicate(CHEMINF_000068,SubClassOf,IAO_0000136 some CHEBI_23367).
+predicate(CHEMINF_000074,is,Class).
+predicate(CHEMINF_000080,is,Class).
+predicate(CHEMINF_000080,SubClassOf,CHEMINF_000027,).
+predicate(CHEMINF_000080,SubClassOf,IAO_0000136 some CHEMINF_000063,).
+predicate(CHEMINF_000080,SubClassOf,CHEMINF_000047 some CHEMINF_000220).
+predicate(CHEMINF_000081,is,Class).
+predicate(CHEMINF_000081,SubClassOf,CHEMINF_000080).
+predicate(CHEMINF_000082,is,Class).
+predicate(CHEMINF_000082,SubClassOf,CHEMINF_000080).
+predicate(CHEMINF_000083,is,Class).
+predicate(CHEMINF_000083,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000083,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000083,SubClassOf,CHEMINF_000143 some PATO_0000125).
+predicate(CHEMINF_000084,is,Class).
+predicate(CHEMINF_000084,SubClassOf,CHEMINF_000083).
+predicate(CHEMINF_000085,is,Class).
+predicate(CHEMINF_000085,SubClassOf,CHEMINF_000123).
+predicate(CHEMINF_000086,is,Class).
+predicate(CHEMINF_000087,is,Class).
+predicate(CHEMINF_000087,SubClassOf,CHEMINF_000123).
+predicate(CHEMINF_000088,is,Class).
+predicate(CHEMINF_000088,SubClassOf,CHEMINF_000083).
+predicate(CHEMINF_000091,is,Class).
+predicate(CHEMINF_000092,is,Class).
+predicate(CHEMINF_000092,SubClassOf,CHEMINF_000123).
+predicate(CHEMINF_000093,is,Class).
+predicate(CHEMINF_000094,is,Class).
+predicate(CHEMINF_000094,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_000095,is,Class).
+predicate(CHEMINF_000095,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000095,SubClassOf,IAO_0000136 some CHEBI_33250,).
+predicate(CHEMINF_000095,SubClassOf,CHEMINF_000143 some CHEMINF_000091).
+predicate(CHEMINF_000096,is,Class).
+predicate(CHEMINF_000096,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000096,SubClassOf,IAO_0000136 some CHEBI_33250).
+predicate(CHEMINF_000097,is,Class).
+predicate(CHEMINF_000097,SubClassOf,CHEMINF_000094).
+predicate(CHEMINF_000099,is,Class).
+predicate(CHEMINF_000099,SubClassOf,CHEMINF_000094).
+predicate(CHEMINF_000100,is,Class).
+predicate(CHEMINF_000104,is,Class).
+predicate(CHEMINF_000104,SubClassOf,CHEMINF_000064,).
+predicate(CHEMINF_000104,SubClassOf,IAO_0000136 some CHEBI_23367).
+predicate(CHEMINF_000105,is,Class).
+predicate(CHEMINF_000105,SubClassOf,CHEMINF_000085).
+predicate(CHEMINF_000106,is,Class).
+predicate(CHEMINF_000106,SubClassOf,CHEMINF_000043).
+predicate(CHEMINF_000109,is,Class).
+predicate(CHEMINF_000109,SubClassOf,CHEMINF_000043).
+predicate(CHEMINF_000110,is,Class).
+predicate(CHEMINF_000110,SubClassOf,CHEMINF_000085,).
+predicate(CHEMINF_000110,SubClassOf,IAO_0000136 some CHEBI_23367).
+predicate(CHEMINF_000112,is,Class).
+predicate(CHEMINF_000112,SubClassOf,CHEMINF_000064,).
+predicate(CHEMINF_000112,SubClassOf,IAO_0000136 some CHEBI_23367).
+predicate(CHEMINF_000113,is,Class).
+predicate(CHEMINF_000113,SubClassOf,CHEMINF_000085,).
+predicate(CHEMINF_000113,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000113,SubClassOf,CHEMINF_000047 some CHEMINF_000038).
+predicate(CHEMINF_000114,is,Class).
+predicate(CHEMINF_000114,SubClassOf,CHEMINF_000085,).
+predicate(CHEMINF_000114,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000114,SubClassOf,CHEMINF_000047 some CHEMINF_000100).
+predicate(CHEMINF_000115,is,Class).
+predicate(CHEMINF_000116,is,Class).
+predicate(CHEMINF_000116,SubClassOf,CHEMINF_000093,).
+predicate(CHEMINF_000116,SubClassOf,IAO_0000136 some CHEBI_33250).
+predicate(CHEMINF_000117,is,Class).
+predicate(CHEMINF_000117,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_000118,is,Class).
+predicate(CHEMINF_000118,SubClassOf,CHEMINF_000131).
+predicate(CHEMINF_000119,is,Class).
+predicate(CHEMINF_000119,SubClassOf,CHEMINF_000131).
+predicate(CHEMINF_000120,is,Class).
+predicate(CHEMINF_000121,is,Class).
+predicate(CHEMINF_000122,is,Class).
+predicate(CHEMINF_000122,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000122,SubClassOf,IAO_0000136 some CHEBI_33250,).
+predicate(CHEMINF_000122,SubClassOf,CHEMINF_000143 some CHEMINF_000121).
+predicate(CHEMINF_000123,is,Class).
+predicate(CHEMINF_000123,SubClassOf,IAO_0000027).
+predicate(CHEMINF_000129,is,Class).
+predicate(CHEMINF_000130,is,Class).
+predicate(CHEMINF_000130,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000130,SubClassOf,IAO_0000136 some CHEMINF_000063,).
+predicate(CHEMINF_000130,SubClassOf,CHEMINF_000143 some CHEMINF_000129).
+predicate(CHEMINF_000131,is,Class).
+predicate(CHEMINF_000131,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000131,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000131,SubClassOf,CHEMINF_000143 some CHEMINF_000120).
+predicate(CHEMINF_000136,is,Class).
+predicate(CHEMINF_000137,is,Class).
+predicate(CHEMINF_000137,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_000149,is,Class).
+predicate(CHEMINF_000149,SubClassOf,CHEMINF_000018).
+predicate(CHEMINF_000177,is,Class).
+predicate(CHEMINF_000177,SubClassOf,CHEMINF_000085).
+predicate(CHEMINF_000178,is,Class).
+predicate(CHEMINF_000178,SubClassOf,CHEMINF_000177).
+predicate(CHEMINF_000179,is,Class).
+predicate(CHEMINF_000179,SubClassOf,CHEMINF_000094).
+predicate(CHEMINF_000180,is,Class).
+predicate(CHEMINF_000180,SubClassOf,CHEMINF_000219).
+predicate(CHEMINF_000181,is,Class).
+predicate(CHEMINF_000181,SubClassOf,CHEMINF_000093,).
+predicate(CHEMINF_000181,SubClassOf,IAO_0000136 some CHEBI_23367).
+predicate(CHEMINF_000182,is,Class).
+predicate(CHEMINF_000182,SubClassOf,CHEMINF_000185).
+predicate(CHEMINF_000183,is,Class).
+predicate(CHEMINF_000183,SubClassOf,CHEMINF_000185).
+predicate(CHEMINF_000184,is,Class).
+predicate(CHEMINF_000184,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_000185,is,Class).
+predicate(CHEMINF_000185,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_000186,is,Class).
+predicate(CHEMINF_000186,SubClassOf,CHEMINF_000251).
+predicate(CHEMINF_000187,is,Class).
+predicate(CHEMINF_000187,SubClassOf,CHEMINF_000251).
+predicate(CHEMINF_000188,is,Class).
+predicate(CHEMINF_000188,SubClassOf,CHEMINF_000189).
+predicate(CHEMINF_000189,is,Class).
+predicate(CHEMINF_000189,SubClassOf,CHEMINF_000093).
+predicate(CHEMINF_000190,is,Class).
+predicate(CHEMINF_000190,SubClassOf,CHEMINF_000189).
+predicate(CHEMINF_000191,is,Class).
+predicate(CHEMINF_000191,SubClassOf,CHEMINF_000094).
+predicate(CHEMINF_000192,is,Class).
+predicate(CHEMINF_000192,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_000193,is,Class).
+predicate(CHEMINF_000193,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_000194,is,Class).
+predicate(CHEMINF_000194,SubClassOf,CHEMINF_000193).
+predicate(CHEMINF_000195,is,Class).
+predicate(CHEMINF_000195,SubClassOf,CHEMINF_000193).
+predicate(CHEMINF_000207,is,Class).
+predicate(CHEMINF_000207,SubClassOf,CHEMINF_000016).
+predicate(CHEMINF_000208,is,Class).
+predicate(CHEMINF_000208,SubClassOf,CHEMINF_000016).
+predicate(CHEMINF_000210,is,Class).
+predicate(CHEMINF_000210,SubClassOf,CHEMINF_000016).
+predicate(CHEMINF_000219,is,Class).
+predicate(CHEMINF_000219,SubClassOf,CHEMINF_000085).
+predicate(CHEMINF_000220,is,Class).
+predicate(CHEMINF_000224,is,Class).
+predicate(CHEMINF_000224,SubClassOf,CHEMINF_000210).
+predicate(CHEMINF_000225,is,Class).
+predicate(CHEMINF_000225,SubClassOf,CHEMINF_000208).
+predicate(CHEMINF_000226,is,Class).
+predicate(CHEMINF_000226,SubClassOf,CHEMINF_000231).
+predicate(CHEMINF_000228,is,Class).
+predicate(CHEMINF_000231,is,Class).
+predicate(CHEMINF_000231,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000231,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_000231,SubClassOf,CHEMINF_000143 some CHEMINF_000236).
+predicate(CHEMINF_000236,is,Class).
+predicate(CHEMINF_000237,is,Class).
+predicate(CHEMINF_000237,SubClassOf,CHEMINF_000056).
+predicate(CHEMINF_000238,is,Class).
+predicate(CHEMINF_000239,is,Class).
+predicate(CHEMINF_000239,SubClassOf,CHEMINF_000207).
+predicate(CHEMINF_000241,is,Class).
+predicate(CHEMINF_000241,SubClassOf,CHEMINF_000207).
+predicate(CHEMINF_000248,is,Class).
+predicate(CHEMINF_000249,is,Class).
+predicate(CHEMINF_000249,SubClassOf,CHEMINF_000208).
+predicate(CHEMINF_000250,is,Class).
+predicate(CHEMINF_000250,SubClassOf,CHEMINF_000208).
+predicate(CHEMINF_000251,is,Class).
+predicate(CHEMINF_000251,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000251,SubClassOf,IAO_0000136 some CHEMINF_000266,).
+predicate(CHEMINF_000251,SubClassOf,CHEMINF_000143 some CHEMINF_000258).
+predicate(CHEMINF_000252,is,Class).
+predicate(CHEMINF_000252,SubClassOf,CHEMINF_000210).
+predicate(CHEMINF_000253,is,Class).
+predicate(CHEMINF_000253,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000253,SubClassOf,IAO_0000136 some CHEMINF_000266,).
+predicate(CHEMINF_000253,SubClassOf,CHEMINF_000143 some CHEMINF_000228).
+predicate(CHEMINF_000255,is,Class).
+predicate(CHEMINF_000256,is,Class).
+predicate(CHEMINF_000256,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000256,SubClassOf,IAO_0000136 some CHEMINF_000266,).
+predicate(CHEMINF_000256,SubClassOf,CHEMINF_000143 some CHEMINF_000238).
+predicate(CHEMINF_000257,is,Class).
+predicate(CHEMINF_000257,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000257,SubClassOf,IAO_0000136 some CHEMINF_000266,).
+predicate(CHEMINF_000257,SubClassOf,CHEMINF_000143 some CHEMINF_000255).
+predicate(CHEMINF_000258,is,Class).
+predicate(CHEMINF_000260,is,Class).
+predicate(CHEMINF_000260,SubClassOf,CHEMINF_000207).
+predicate(CHEMINF_000261,is,Class).
+predicate(CHEMINF_000261,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000261,SubClassOf,IAO_0000136 some CHEMINF_000266,).
+predicate(CHEMINF_000261,SubClassOf,CHEMINF_000143 some CHEMINF_000248).
+predicate(CHEMINF_000264,is,Class).
+predicate(CHEMINF_000264,SubClassOf,CHEMINF_000231).
+predicate(CHEMINF_000265,is,Class).
+predicate(CHEMINF_000265,SubClassOf,CHEMINF_000210).
+predicate(CHEMINF_000266,is,Class).
+predicate(CHEMINF_000268,is,Class).
+predicate(CHEMINF_000268,SubClassOf,CHEMINF_000131).
+predicate(CHEMINF_000291,is,Class).
+predicate(CHEMINF_000291,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000291,SubClassOf,IAO_0000136 some CHEMINF_000000,).
+predicate(CHEMINF_000291,SubClassOf,CHEMINF_000143 some CHEMINF_000086).
+predicate(CHEMINF_000292,is,Class).
+predicate(CHEMINF_000292,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_000292,SubClassOf,IAO_0000136 some CHEMINF_000000,).
+predicate(CHEMINF_000292,SubClassOf,CHEMINF_000143 some CHEMINF_000086).
+predicate(CHEMINF_000295,is,Class).
+predicate(CHEMINF_000295,SubClassOf,CHEMINF_000251).
+predicate(CHEMINF_000296,is,Class).
+predicate(CHEMINF_000296,SubClassOf,CHEMINF_000095).
+predicate(CHEMINF_000297,is,Class).
+predicate(CHEMINF_000297,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_000302,is,Class).
+predicate(CHEMINF_000302,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000303,is,Class).
+predicate(CHEMINF_000303,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000304,is,Class).
+predicate(CHEMINF_000304,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000312,is,Class).
+predicate(CHEMINF_000312,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000314,is,Class).
+predicate(CHEMINF_000314,SubClassOf,CHEMINF_000312).
+predicate(CHEMINF_000315,is,Class).
+predicate(CHEMINF_000315,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000317,is,Class).
+predicate(CHEMINF_000317,SubClassOf,CHEMINF_000315).
+predicate(CHEMINF_000318,is,Class).
+predicate(CHEMINF_000318,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000319,is,Class).
+predicate(CHEMINF_000319,SubClassOf,CHEMINF_000318).
+predicate(CHEMINF_000321,is,Class).
+predicate(CHEMINF_000321,SubClassOf,CHEMINF_000251).
+predicate(CHEMINF_000322,is,Class).
+predicate(CHEMINF_000322,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000323,is,Class).
+predicate(CHEMINF_000323,SubClassOf,CHEMINF_000322).
+predicate(CHEMINF_000326,is,Class).
+predicate(CHEMINF_000326,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000327,is,Class).
+predicate(CHEMINF_000327,SubClassOf,CHEMINF_000326).
+predicate(CHEMINF_000335,is,Class).
+predicate(CHEMINF_000335,SubClassOf,CHEMINF_000042).
+predicate(CHEMINF_000339,is,Class).
+predicate(CHEMINF_000339,SubClassOf,CHEMINF_000043).
+predicate(CHEMINF_000344,is,Class).
+predicate(CHEMINF_000344,SubClassOf,CHEMINF_000322).
+predicate(CHEMINF_000347,is,Class).
+predicate(CHEMINF_000347,SubClassOf,CHEMINF_000257).
+predicate(CHEMINF_000352,is,Class).
+predicate(CHEMINF_000352,SubClassOf,CHEMINF_000253).
+predicate(CHEMINF_000358,is,Class).
+predicate(CHEMINF_000358,SubClassOf,CHEMINF_000415).
+predicate(CHEMINF_000359,is,Class).
+predicate(CHEMINF_000359,SubClassOf,CHEMINF_000416).
+predicate(CHEMINF_000360,is,Class).
+predicate(CHEMINF_000360,SubClassOf,CHEMINF_000417).
+predicate(CHEMINF_000361,is,Class).
+predicate(CHEMINF_000361,SubClassOf,CHEMINF_000418).
+predicate(CHEMINF_000362,is,Class).
+predicate(CHEMINF_000362,SubClassOf,CHEMINF_000419).
+predicate(CHEMINF_000363,is,Class).
+predicate(CHEMINF_000363,SubClassOf,CHEMINF_000413).
+predicate(CHEMINF_000364,is,Class).
+predicate(CHEMINF_000364,SubClassOf,CHEMINF_000413).
+predicate(CHEMINF_000365,is,Class).
+predicate(CHEMINF_000365,SubClassOf,CHEMINF_000414).
+predicate(CHEMINF_000366,is,Class).
+predicate(CHEMINF_000366,SubClassOf,CHEMINF_000414).
+predicate(CHEMINF_000367,is,Class).
+predicate(CHEMINF_000367,SubClassOf,CHEMINF_000312).
+predicate(CHEMINF_000368,is,Class).
+predicate(CHEMINF_000368,SubClassOf,CHEMINF_000420).
+predicate(CHEMINF_000390,is,Class).
+predicate(CHEMINF_000390,SubClassOf,CHEMINF_000219).
+predicate(CHEMINF_000396,is,Class).
+predicate(CHEMINF_000396,SubClassOf,CHEMINF_000113).
+predicate(CHEMINF_000399,is,Class).
+predicate(CHEMINF_000399,SubClassOf,CHEMINF_000059).
+predicate(CHEMINF_000400,is,Class).
+predicate(CHEMINF_000400,SubClassOf,CHEMINF_000085).
+predicate(CHEMINF_000405,is,Class).
+predicate(CHEMINF_000405,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000406,is,Class).
+predicate(CHEMINF_000406,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000407,is,Class).
+predicate(CHEMINF_000407,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000408,is,Class).
+predicate(CHEMINF_000408,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000409,is,Class).
+predicate(CHEMINF_000409,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000411,is,Class).
+predicate(CHEMINF_000411,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000412,is,Class).
+predicate(CHEMINF_000412,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000413,is,Class).
+predicate(CHEMINF_000413,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000414,is,Class).
+predicate(CHEMINF_000414,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000414,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000415,is,Class).
+predicate(CHEMINF_000415,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000416,is,Class).
+predicate(CHEMINF_000416,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000416,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000417,is,Class).
+predicate(CHEMINF_000417,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000417,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000418,is,Class).
+predicate(CHEMINF_000418,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000419,is,Class).
+predicate(CHEMINF_000419,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000420,is,Class).
+predicate(CHEMINF_000420,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000423,is,Class).
+predicate(CHEMINF_000424,is,Class).
+predicate(CHEMINF_000425,is,Class).
+predicate(CHEMINF_000425,SubClassOf,CHEMINF_000506,).
+predicate(CHEMINF_000425,SubClassOf,CHEMINF_000606 some CHEMINF_000423).
+predicate(CHEMINF_000426,is,Class).
+predicate(CHEMINF_000426,SubClassOf,CHEMINF_000507,).
+predicate(CHEMINF_000426,SubClassOf,CHEMINF_000606 some CHEMINF_000424).
+predicate(CHEMINF_000431,is,Class).
+predicate(CHEMINF_000431,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000432,is,Class).
+predicate(CHEMINF_000432,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000432,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000433,is,Class).
+predicate(CHEMINF_000433,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000433,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000434,is,Class).
+predicate(CHEMINF_000434,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000434,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000435,is,Class).
+predicate(CHEMINF_000435,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000435,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000436,is,Class).
+predicate(CHEMINF_000436,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000436,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000437,is,Class).
+predicate(CHEMINF_000437,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000437,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000438,is,Class).
+predicate(CHEMINF_000438,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000438,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000439,is,Class).
+predicate(CHEMINF_000439,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000439,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000440,is,Class).
+predicate(CHEMINF_000440,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000440,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000441,is,Class).
+predicate(CHEMINF_000441,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000441,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000442,is,Class).
+predicate(CHEMINF_000442,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000442,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000443,is,Class).
+predicate(CHEMINF_000443,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000443,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000444,is,Class).
+predicate(CHEMINF_000444,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000444,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000445,is,Class).
+predicate(CHEMINF_000445,SubClassOf,CHEMINF_000025,).
+predicate(CHEMINF_000445,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000446,is,Class).
+predicate(CHEMINF_000446,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000447,is,Class).
+predicate(CHEMINF_000447,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000464,is,Class).
+predicate(CHEMINF_000464,SubClassOf,IAO_0000577,).
+predicate(CHEMINF_000464,SubClassOf,CHEMINF_000061).
+predicate(CHEMINF_000466,is,Class).
+predicate(CHEMINF_000466,SubClassOf,CHEMINF_000043).
+predicate(CHEMINF_000467,is,Class).
+predicate(CHEMINF_000467,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000487,is,Class).
+predicate(CHEMINF_000487,SubClassOf,CHEMINF_000016).
+predicate(CHEMINF_000488,is,Class).
+predicate(CHEMINF_000488,SubClassOf,CHEMINF_000083).
+predicate(CHEMINF_000490,is,Class).
+predicate(CHEMINF_000490,SubClassOf,CHEMINF_000042).
+predicate(CHEMINF_000496,is,Class).
+predicate(CHEMINF_000496,SubClassOf,CHEMINF_000025).
+predicate(CHEMINF_000500,is,Class).
+predicate(CHEMINF_000500,SubClassOf,IAO_0000027).
+predicate(CHEMINF_000501,is,Class).
+predicate(CHEMINF_000501,SubClassOf,IAO_0000027,).
+predicate(CHEMINF_000501,SubClassOf,CHEMINF_000047 some CHEMINF_000509,).
+predicate(CHEMINF_000501,SubClassOf,CHEMINF_000012 some (decimal or float or integer or long)).
+predicate(CHEMINF_000501,DisjointWith,CHEMINF_000502).
+predicate(CHEMINF_000502,is,Class).
+predicate(CHEMINF_000502,SubClassOf,IAO_0000027,).
+predicate(CHEMINF_000502,SubClassOf,CHEMINF_000047 some CHEMINF_000510,).
+predicate(CHEMINF_000502,SubClassOf,CHEMINF_000012 some string).
+predicate(CHEMINF_000502,DisjointWith,CHEMINF_000501).
+predicate(CHEMINF_000503,is,Class).
+predicate(CHEMINF_000503,EquivalentTo,CHEMINF_000500 and CHEMINF_000501).
+predicate(CHEMINF_000503,SubClassOf,CHEMINF_000500,).
+predicate(CHEMINF_000503,SubClassOf,CHEMINF_000501).
+predicate(CHEMINF_000504,is,Class).
+predicate(CHEMINF_000504,EquivalentTo,CHEMINF_000500 and CHEMINF_000502).
+predicate(CHEMINF_000504,SubClassOf,CHEMINF_000500,).
+predicate(CHEMINF_000504,SubClassOf,CHEMINF_000502).
+predicate(CHEMINF_000505,is,Class).
+predicate(CHEMINF_000505,SubClassOf,IAO_0000027).
+predicate(CHEMINF_000506,is,Class).
+predicate(CHEMINF_000506,SubClassOf,CHEMINF_000505).
+predicate(CHEMINF_000507,is,Class).
+predicate(CHEMINF_000507,SubClassOf,CHEMINF_000505).
+predicate(CHEMINF_000508,is,Class).
+predicate(CHEMINF_000508,SubClassOf,CHEMINF_000505).
+predicate(CHEMINF_000509,is,Class).
+predicate(CHEMINF_000510,is,Class).
+predicate(CHEMINF_000511,is,Class).
+predicate(CHEMINF_000511,EquivalentTo,CHEMINF_000123 and CHEMINF_000501).
+predicate(CHEMINF_000511,SubClassOf,CHEMINF_000123,).
+predicate(CHEMINF_000511,SubClassOf,CHEMINF_000501).
+predicate(CHEMINF_000512,is,Class).
+predicate(CHEMINF_000512,EquivalentTo,CHEMINF_000123 and CHEMINF_000502).
+predicate(CHEMINF_000512,SubClassOf,CHEMINF_000123,).
+predicate(CHEMINF_000512,SubClassOf,CHEMINF_000502).
+predicate(CHEMINF_000513,is,Class).
+predicate(CHEMINF_000513,EquivalentTo,CHEMINF_000123 and (IAO_0000136 some CHEMINF_000266)).
+predicate(CHEMINF_000513,SubClassOf,CHEMINF_000123).
+predicate(CHEMINF_000516,is,Class).
+predicate(CHEMINF_000516,SubClassOf,CHEMINF_000136).
+predicate(CHEMINF_000517,is,Class).
+predicate(CHEMINF_000517,SubClassOf,CHEMINF_000085,).
+predicate(CHEMINF_000517,SubClassOf,IAO_0000136 some CHEMINF_000266).
+predicate(CHEMINF_000518,is,Class).
+predicate(CHEMINF_000518,SubClassOf,CHEMINF_000061,).
+predicate(CHEMINF_000518,SubClassOf,CHEMINF_000085,).
+predicate(CHEMINF_000518,SubClassOf,IAO_0000136 some CHEBI_36357).
+predicate(CHEMINF_000519,is,Class).
+predicate(CHEMINF_000519,SubClassOf,CHEMINF_000027,).
+predicate(CHEMINF_000519,SubClassOf,CHEMINF_000143 some CHEMINF_000074).
+predicate(CHEMINF_000520,is,Class).
+predicate(CHEMINF_000520,SubClassOf,CHEMINF_000027,).
+predicate(CHEMINF_000520,SubClassOf,CHEMINF_000143 some CHEMINF_000074).
+predicate(CHEMINF_000523,is,Class).
+predicate(CHEMINF_000523,SubClassOf,CHEMINF_000043).
+predicate(CHEMINF_000524,is,Class).
+predicate(CHEMINF_000524,SubClassOf,CHEMINF_000113).
+predicate(CHEMINF_000552,is,Class).
+predicate(CHEMINF_000553,is,Class).
+predicate(CHEMINF_000553,SubClassOf,CHEMINF_000507,).
+predicate(CHEMINF_000553,SubClassOf,CHEMINF_000606 some CHEMINF_000424).
+predicate(CHEMINF_000554,is,Class).
+predicate(CHEMINF_000554,SubClassOf,CHEMINF_000506,).
+predicate(CHEMINF_000554,SubClassOf,CHEMINF_000606 some CHEMINF_000423).
+predicate(CHEMINF_000555,is,Class).
+predicate(CHEMINF_000555,SubClassOf,CHEMINF_000506,).
+predicate(CHEMINF_000555,SubClassOf,CHEMINF_000606 some CHEMINF_000552).
+predicate(CHEMINF_000556,is,Class).
+predicate(CHEMINF_000556,SubClassOf,CHEMINF_000507,).
+predicate(CHEMINF_000556,SubClassOf,CHEMINF_000606 some CHEMINF_000552).
+predicate(CHEMINF_000557,is,Class).
+predicate(CHEMINF_000557,SubClassOf,CHEMINF_000505).
+predicate(CHEMINF_000558,is,Class).
+predicate(CHEMINF_000558,SubClassOf,CHEMINF_000557,).
+predicate(CHEMINF_000558,SubClassOf,CHEMINF_000606 some CHEMINF_000552).
+predicate(CHEMINF_000559,is,Class).
+predicate(CHEMINF_000559,SubClassOf,CHEMINF_000557,).
+predicate(CHEMINF_000559,SubClassOf,CHEMINF_000606 some CHEMINF_000424).
+predicate(CHEMINF_000560,is,Class).
+predicate(CHEMINF_000560,SubClassOf,CHEMINF_000557,).
+predicate(CHEMINF_000560,SubClassOf,CHEMINF_000606 some CHEMINF_000423).
+predicate(CHEMINF_000561,is,Class).
+predicate(CHEMINF_000561,SubClassOf,CHEMINF_000043).
+predicate(CHEMINF_000562,is,Class).
+predicate(CHEMINF_000562,SubClassOf,CHEMINF_000043).
+predicate(CHEMINF_000563,is,Class).
+predicate(CHEMINF_000563,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000564,is,Class).
+predicate(CHEMINF_000564,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000565,is,Class).
+predicate(CHEMINF_000565,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000566,is,Class).
+predicate(CHEMINF_000566,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000569,is,Class).
+predicate(CHEMINF_000569,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000570,is,Class).
+predicate(CHEMINF_000570,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000571,is,Class).
+predicate(CHEMINF_000571,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000572,is,Class).
+predicate(CHEMINF_000572,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000573,is,Class).
+predicate(CHEMINF_000573,SubClassOf,CHEMINF_000464).
+predicate(CHEMINF_000802,is,Class).
+predicate(CHEMINF_000802,SubClassOf,CHEMINF_000312).
+predicate(CHEMINF_000805,is,Class).
+predicate(CHEMINF_000805,SubClassOf,CHEMINF_000251).
+predicate(CHEMINF_000806,is,Class).
+predicate(CHEMINF_000806,SubClassOf,CHEMINF_000042).
+predicate(CHEMINF_001100,is,Class).
+predicate(CHEMINF_001100,SubClassOf,CHEMINF_000087,).
+predicate(CHEMINF_001100,SubClassOf,IAO_0000136 some CHEBI_23367,).
+predicate(CHEMINF_001100,SubClassOf,CHEMINF_000143 some CHEMINF_000086).
+predicate(CHEMINF_001500,is,Class).
+predicate(CHEMINF_001500,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001501,is,Class).
+predicate(CHEMINF_001501,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001502,is,Class).
+predicate(CHEMINF_001502,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001503,is,Class).
+predicate(CHEMINF_001503,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001504,is,Class).
+predicate(CHEMINF_001504,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001505,is,Class).
+predicate(CHEMINF_001505,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001506,is,Class).
+predicate(CHEMINF_001506,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001507,is,Class).
+predicate(CHEMINF_001507,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001508,is,Class).
+predicate(CHEMINF_001508,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001509,is,Class).
+predicate(CHEMINF_001509,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001510,is,Class).
+predicate(CHEMINF_001510,SubClassOf,CHEMINF_000093).
+predicate(CHEMINF_001511,is,Class).
+predicate(CHEMINF_001511,SubClassOf,CHEMINF_001510).
+predicate(CHEMINF_001512,is,Class).
+predicate(CHEMINF_001512,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001513,is,Class).
+predicate(CHEMINF_001513,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001514,is,Class).
+predicate(CHEMINF_001514,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001515,is,Class).
+predicate(CHEMINF_001515,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001516,is,Class).
+predicate(CHEMINF_001516,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001517,is,Class).
+predicate(CHEMINF_001517,SubClassOf,CHEMINF_000136).
+predicate(CHEMINF_001518,is,Class).
+predicate(CHEMINF_001518,SubClassOf,CHEMINF_000136).
+predicate(CHEMINF_001519,is,Class).
+predicate(CHEMINF_001519,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001520,is,Class).
+predicate(CHEMINF_001520,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001521,is,Class).
+predicate(CHEMINF_001521,SubClassOf,CHEMINF_000093).
+predicate(CHEMINF_001522,is,Class).
+predicate(CHEMINF_001522,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001523,is,Class).
+predicate(CHEMINF_001523,SubClassOf,CHEMINF_000136).
+predicate(CHEMINF_001524,is,Class).
+predicate(CHEMINF_001524,SubClassOf,CHEMINF_000136).
+predicate(CHEMINF_001525,is,Class).
+predicate(CHEMINF_001525,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001526,is,Class).
+predicate(CHEMINF_001526,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001527,is,Class).
+predicate(CHEMINF_001527,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001528,is,Class).
+predicate(CHEMINF_001528,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001529,is,Class).
+predicate(CHEMINF_001529,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001530,is,Class).
+predicate(CHEMINF_001530,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001531,is,Class).
+predicate(CHEMINF_001531,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001532,is,Class).
+predicate(CHEMINF_001532,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001533,is,Class).
+predicate(CHEMINF_001533,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001534,is,Class).
+predicate(CHEMINF_001534,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001535,is,Class).
+predicate(CHEMINF_001535,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001536,is,Class).
+predicate(CHEMINF_001536,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001537,is,Class).
+predicate(CHEMINF_001537,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001538,is,Class).
+predicate(CHEMINF_001538,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001539,is,Class).
+predicate(CHEMINF_001539,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001540,is,Class).
+predicate(CHEMINF_001540,SubClassOf,CHEMINF_000093).
+predicate(CHEMINF_001541,is,Class).
+predicate(CHEMINF_001541,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001542,is,Class).
+predicate(CHEMINF_001542,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001543,is,Class).
+predicate(CHEMINF_001543,SubClassOf,CHEMINF_000092).
+predicate(CHEMINF_001544,is,Class).
+predicate(CHEMINF_001544,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001545,is,Class).
+predicate(CHEMINF_001545,SubClassOf,CHEMINF_000087).
+predicate(CHEMINF_001546,is,Class).
+predicate(CHEMINF_001546,SubClassOf,CHEMINF_000087).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(IAO_0000002,is,Individual).
+predicate(IAO_0000002,Types,IAO_0000078).
+predicate(IAO_0000103,is,Individual).
+predicate(IAO_0000103,Types,IAO_0000225).
+predicate(IAO_0000120,is,Individual).
+predicate(IAO_0000120,Types,IAO_0000078).
+predicate(IAO_0000121,is,Individual).
+predicate(IAO_0000121,Types,IAO_0000078).
+predicate(IAO_0000122,is,Individual).
+predicate(IAO_0000122,Types,IAO_0000078).
+predicate(IAO_0000123,is,Individual).
+predicate(IAO_0000123,Types,IAO_0000078).
+predicate(IAO_0000124,is,Individual).
+predicate(IAO_0000124,Types,IAO_0000078).
+predicate(IAO_0000125,is,Individual).
+predicate(IAO_0000125,Types,IAO_0000078).
+predicate(IAO_0000226,is,Individual).
+predicate(IAO_0000226,Types,IAO_0000225).
+predicate(IAO_0000227,is,Individual).
+predicate(IAO_0000227,Types,IAO_0000225).
+predicate(IAO_0000228,is,Individual).
+predicate(IAO_0000228,Types,IAO_0000225).
+predicate(IAO_0000229,is,Individual).
+predicate(IAO_0000229,Types,IAO_0000225).
+predicate(IAO_0000410,is,Individual).
+predicate(IAO_0000410,Types,IAO_0000409).
+predicate(IAO_0000420,is,Individual).
+predicate(IAO_0000420,Types,IAO_0000409).
+predicate(IAO_0000421,is,Individual).
+predicate(IAO_0000421,Types,IAO_0000409).
+predicate(IAO_0000423,is,Individual).
+predicate(IAO_0000423,Types,IAO_0000078).
+predicate(IAO_0000428,is,Individual).
+predicate(IAO_0000428,Types,IAO_0000078).
+predicate(OMO_0001000,is,Individual).
+predicate(OMO_0001000,Types,IAO_0000225).

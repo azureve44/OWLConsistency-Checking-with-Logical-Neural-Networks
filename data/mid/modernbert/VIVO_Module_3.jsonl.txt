@@ -1,0 +1,343 @@
+www.w3.org/2000/01/-schema# is Datatype.
+anyURI is Datatype.
+boolean is Datatype.
+string is Datatype.
+isInGroup is ObjectProperty.
+isInGroup Domain territory.
+isInGroup Range group.
+BFO_0000054 is ObjectProperty.
+BFO_0000054 Domain BFO_0000017.
+BFO_0000054 Range BFO_0000015.
+BFO_0000054 InverseOf BFO_0000055.
+BFO_0000055 is ObjectProperty.
+BFO_0000055 InverseOf BFO_0000054.
+ERO_0000775 is ObjectProperty.
+ERO_0000775 Domain ERO_0000595.
+ERO_0000775 Range ERO_0000776.
+ERO_0001518 is ObjectProperty.
+ERO_0001518 Domain ERO_0000016.
+OCRE100038 is purl.org/net/OCRe/study_design.#.
+ERO_0001521 is ObjectProperty.
+ERO_0001521 Domain ERO_0000015.
+Organization is ns.com/foaf/0.1/.
+assigns is ObjectProperty.
+dateTimeInterval is ObjectProperty.
+distributesFundingFrom is ObjectProperty.
+distributesFundingFrom Domain FundingOrganization.
+distributesFundingFrom Range FundingOrganization.
+distributesFundingFrom InverseOf providesFundingThrough.
+hasFundingVehicle is ObjectProperty.
+providesFundingThrough is ObjectProperty.
+providesFundingThrough Domain FundingOrganization.
+providesFundingThrough Range FundingOrganization.
+providesFundingThrough InverseOf distributesFundingFrom.
+roleContributesTo is ObjectProperty.
+roleContributesTo Domain BFO_0000023.
+GDPNotes is DataProperty.
+GDPTotalInCurrentPrices is DataProperty.
+GDPUnit is DataProperty.
+GDPYear is DataProperty.
+HDINotes is DataProperty.
+HDITotal is DataProperty.
+HDIUnit is DataProperty.
+HDIYear is DataProperty.
+agriculturalAreaNotes is DataProperty.
+agriculturalAreaTotal is DataProperty.
+agriculturalAreaUnit is DataProperty.
+agriculturalAreaYear is DataProperty.
+codeCurrency is DataProperty.
+countryAreaNotes is DataProperty.
+countryAreaTotal is DataProperty.
+countryAreaUnit is DataProperty.
+countryAreaYear is DataProperty.
+hasMaxLatitude is DataProperty.
+hasMaxLongitude is DataProperty.
+hasMinLatitude is DataProperty.
+hasMinLongitude is DataProperty.
+landAreaNotes is DataProperty.
+landAreaTotal is DataProperty.
+landAreaUnit is DataProperty.
+landAreaYear is DataProperty.
+nameCurrencyEN is DataProperty.
+nameCurrencyES is DataProperty.
+nameCurrencyFR is DataProperty.
+nameCurrencyIT is DataProperty.
+nameCurrencyRU is DataProperty.
+nameCurrencyZH is DataProperty.
+nationalityAR is DataProperty.
+nationalityEN is DataProperty.
+nationalityES is DataProperty.
+nationalityFR is DataProperty.
+nationalityIT is DataProperty.
+nationalityRU is DataProperty.
+nationalityZH is DataProperty.
+populationNotes is DataProperty.
+populationTotal is DataProperty.
+populationUnit is DataProperty.
+populationYear is DataProperty.
+ERO_0000424 is DataProperty.
+ERO_0000424 Domain ERO_0000015.
+ERO_0000424 Range string.
+ERO_0000774 is DataProperty.
+ERO_0000774 Domain ERO_0000595.
+ERO_0000774 Range string.
+contactInformation is DataProperty.
+description is DataProperty.
+hideFromDisplay is DataProperty.
+email is DataProperty.
+email Domain Email.
+email Range string.
+formattedName is DataProperty.
+formattedName Domain FormattedName.
+formattedName Range string.
+sound is DataProperty.
+sound Domain Sound.
+sound Range anyURI.
+area is Class.
+disputed is Class.
+disputed SubClassOf territory.
+group is Class.
+non_self_governing is Class.
+non_self_governing SubClassOf territory.
+organization is Class.
+organization SubClassOf group.
+other is Class.
+other SubClassOf territory.
+self_governing is Class.
+self_governing SubClassOf territory.
+territory is Class.
+territory SubClassOf area,.
+territory SubClassOf GeopoliticalEntity,.
+Literal, is GDPNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is GDPTotalInCurrentPrices max 1 www.w3.org/2000/01/-schema#.
+Literal, is GDPUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is GDPYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is HDINotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is HDITotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is HDIUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is HDIYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is agriculturalAreaNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is agriculturalAreaTotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is agriculturalAreaUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is agriculturalAreaYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeCurrency max 1 www.w3.org/2000/01/-schema#.
+Literal, is countryAreaNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is countryAreaTotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is countryAreaUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is countryAreaYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMaxLatitude max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMaxLongitude max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMinLatitude max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMinLongitude max 1 www.w3.org/2000/01/-schema#.
+Literal, is landAreaNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is landAreaTotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is landAreaUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is landAreaYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyEN max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyES max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyFR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyIT max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyRU max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyZH max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityAR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityEN max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityES max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityFR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityIT max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityRU max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityZH max 1 www.w3.org/2000/01/-schema#.
+Literal, is populationNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is populationTotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is populationUnit max 1 www.w3.org/2000/01/-schema#.
+Literal is populationYear max 1 www.w3.org/2000/01/-schema#.
+BFO_0000015 is Class.
+BFO_0000016 is Class.
+BFO_0000016 SubClassOf BFO_0000017.
+BFO_0000017 is Class.
+BFO_0000017 SubClassOf BFO_0000020.
+BFO_0000017 DisjointWith BFO_0000019.
+BFO_0000019 is Class.
+BFO_0000019 DisjointWith BFO_0000017.
+BFO_0000020 is Class.
+BFO_0000023 is Class.
+BFO_0000023 SubClassOf BFO_0000017,.
+BFO_0000023 SubClassOf dateTimeInterval only DateTimeInterval,.
+Literal, is description only www.w3.org/2000/01/-schema#.
+Literal, is hideFromDisplay only boolean.
+BFO_0000034 is Class.
+BFO_0000034 SubClassOf BFO_0000016.
+ERO_0000012 is Class.
+ERO_0000012 SubClassOf BFO_0000023.
+ERO_0000014 is Class.
+ERO_0000015 is Class.
+ERO_0000015 SubClassOf ERO_0000014.
+ERO_0000016 is Class.
+Interventional_study and (ERO_0001518 some purl.org/net/OCRe/study_design.# is purl.org/net/OCRe/research.#.
+Interventional_study is purl.org/net/OCRe/research.#.
+ERO_0000224 is Class.
+ERO_0000224 SubClassOf BFO_0000023.
+ERO_0000225 is Class.
+ERO_0000225 SubClassOf BFO_0000023.
+ERO_0000595 is Class.
+ERO_0000595 SubClassOf BFO_0000017,.
+ERO_0000595 SubClassOf dateTimeInterval only DateTimeInterval,.
+ERO_0000595 SubClassOf hasFundingVehicle only Grant,.
+Literal, is contactInformation only www.w3.org/2000/01/-schema#.
+Literal is description only www.w3.org/2000/01/-schema#.
+ERO_0000776 is Class.
+ERO_0000776 SubClassOf BFO_0000023.
+ERO_0000777 is Class.
+ERO_0000777 SubClassOf ERO_0000776.
+ERO_0000778 is Class.
+ERO_0000778 SubClassOf ERO_0000776.
+ERO_0000779 is Class.
+ERO_0000779 SubClassOf ERO_0000778.
+ERO_0000780 is Class.
+ERO_0000780 SubClassOf ERO_0000778.
+ERO_0000783 is Class.
+ERO_0000783 SubClassOf BFO_0000023.
+ERO_0000784 is Class.
+ERO_0000784 SubClassOf ERO_0000783.
+ERO_0000785 is Class.
+ERO_0000785 SubClassOf ERO_0000783.
+ERO_0000786 is Class.
+ERO_0000786 SubClassOf ERO_0000783.
+ERO_0000787 is Class.
+ERO_0000787 SubClassOf BFO_0000023.
+ERO_0000788 is Class.
+ERO_0000788 SubClassOf ERO_0000787.
+ERO_0000789 is Class.
+ERO_0000789 SubClassOf ERO_0000787.
+ERO_0000790 is Class.
+ERO_0000790 SubClassOf ERO_0000783.
+ERO_0000914 is Class.
+ERO_0000914 SubClassOf ERO_0000783.
+OBI_0000017 is Class.
+OBI_0000017 SubClassOf BFO_0000023.
+OBI_0000066 is Class.
+purl.org/net/OCRe/research.# is Class.
+purl.org/net/OCRe/study_design.# is Class.
+AdministratorRole is Class.
+AdministratorRole SubClassOf BFO_0000023.
+AdviseeRole is Class.
+AdviseeRole SubClassOf BFO_0000023.
+AdvisorRole is Class.
+AdvisorRole SubClassOf BFO_0000023.
+AttendeeRole is Class.
+AttendeeRole SubClassOf BFO_0000023.
+ClinicalRole is Class.
+ClinicalRole SubClassOf BFO_0000023.
+CoPrincipalInvestigatorRole is Class.
+CoPrincipalInvestigatorRole SubClassOf InvestigatorRole.
+Country is Class.
+Country SubClassOf territory.
+DateTimeInterval is Class.
+Division is Class.
+Organization is ns.com/foaf/0.1/.
+EditorRole is Class.
+EditorRole SubClassOf BFO_0000023.
+FundingOrganization is Class.
+FundingOrganization EquivalentTo assigns some Grant.
+Organization is ns.com/foaf/0.1/.
+GeopoliticalEntity is Class.
+Grant is Class.
+InvestigatorRole is Class.
+InvestigatorRole SubClassOf ResearcherRole.
+LeaderRole is Class.
+LeaderRole SubClassOf BFO_0000023.
+MemberRole is Class.
+MemberRole SubClassOf BFO_0000023.
+NonFacultyAcademic is Class.
+Person is ns.com/foaf/0.1/.
+OrganizerRole is Class.
+OrganizerRole SubClassOf BFO_0000023.
+OutreachProviderRole is Class.
+OutreachProviderRole SubClassOf BFO_0000023.
+PeerReviewerRole is Class.
+PeerReviewerRole SubClassOf ReviewerRole.
+Postdoc is Class.
+Postdoc SubClassOf NonFacultyAcademic.
+PresenterRole is Class.
+PresenterRole SubClassOf BFO_0000023.
+PrincipalInvestigatorRole is Class.
+PrincipalInvestigatorRole SubClassOf InvestigatorRole.
+ResearcherRole is Class.
+ResearcherRole SubClassOf BFO_0000023.
+ReviewerRole is Class.
+ReviewerRole SubClassOf BFO_0000023.
+TeacherRole is Class.
+TeacherRole SubClassOf BFO_0000023.
+Phase0ClinicalTrial is Class.
+Phase0ClinicalTrial SubClassOf ERO_0000016.
+Phase1ClinicalTrial is Class.
+Phase1ClinicalTrial SubClassOf ERO_0000016.
+Phase2ClinicalTrial is Class.
+Phase2ClinicalTrial SubClassOf ERO_0000016.
+Phase3ClinicalTrial is Class.
+Phase3ClinicalTrial SubClassOf ERO_0000016.
+Phase4ClinicalTrial is Class.
+Phase4ClinicalTrial SubClassOf ERO_0000016.
+www.w3.org/2002/07/# is Class.
+Acquaintance is Class.
+Acquaintance SubClassOf RelatedType.
+Agent is Class.
+Agent SubClassOf RelatedType.
+Child is Class.
+Child SubClassOf RelatedType.
+Code is Class.
+Colleague is Class.
+Colleague SubClassOf RelatedType.
+Communication is Class.
+Contact is Class.
+Contact SubClassOf RelatedType.
+Coresident is Class.
+Coresident SubClassOf RelatedType.
+Coworker is Class.
+Coworker SubClassOf RelatedType.
+Crush is Class.
+Crush SubClassOf RelatedType.
+Date is Class.
+Date SubClassOf RelatedType.
+Email is Class.
+Email EquivalentTo (email only string).
+Email SubClassOf Communication.
+Emergency is Class.
+Emergency SubClassOf RelatedType.
+Explanatory is Class.
+FormattedName is Class.
+Literal) is (formattedName some string) and (formattedName exactly 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Identification.
+Friend is Class.
+Friend SubClassOf RelatedType.
+Gender is Class.
+Identification is Class.
+Kin is Class.
+Kin SubClassOf RelatedType.
+Male is Class.
+Male SubClassOf Gender.
+Me is Class.
+Me SubClassOf RelatedType.
+Met is Class.
+Met SubClassOf RelatedType.
+Muse is Class.
+Muse SubClassOf RelatedType.
+Neighbor is Class.
+Neighbor SubClassOf RelatedType.
+Pager is Class.
+Pager SubClassOf TelephoneType.
+Parent is Class.
+Parent SubClassOf RelatedType.
+RelatedType is Class.
+RelatedType SubClassOf Code.
+Sibling is Class.
+Sibling SubClassOf RelatedType.
+Sound is Class.
+Sound EquivalentTo (sound only anyURI).
+Sound SubClassOf Explanatory.
+Spouse is Class.
+Spouse SubClassOf RelatedType.
+Sweetheart is Class.
+Sweetheart SubClassOf RelatedType.
+TelephoneType is Class.
+ns.com/foaf/0.1/ is Class.
+ns.com/foaf/0.1/ is Class.

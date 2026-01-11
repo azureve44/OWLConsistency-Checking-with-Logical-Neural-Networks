@@ -1,0 +1,668 @@
+is(decimal,Datatype):1.0
+is(integer,Datatype):1.0
+is(entityRelated,ObjectProperty):1.0
+Domain(entityRelated,Observation):1.0
+Range(entityRelated,Observation):1.0
+is(hasContext,ObjectProperty):1.0
+Characteristics(hasContext,Transitive):1.0
+Domain(hasContext,Observation):1.0
+Range(hasContext,Observation):1.0
+is(hasMeasurement,ObjectProperty):1.0
+Characteristics(hasMeasurement,InverseFunctional):1.0
+Domain(hasMeasurement,Observation):1.0
+Range(hasMeasurement,Measurement):1.0
+InverseOf(hasMeasurement,measurementFor):1.0
+is(hasMember,ObjectProperty):1.0
+Domain(hasMember,ObservationCollection):1.0
+Range(hasMember,Observation):1.0
+is(hasObservedRelation,ObjectProperty):1.0
+Characteristics(hasObservedRelation,InverseFunctional):1.0
+Domain(hasObservedRelation,Observation):1.0
+is(hasSourceUnit,ObjectProperty):1.0
+Characteristics(hasSourceUnit,Functional):1.0
+Domain(hasSourceUnit,UnitConversion):1.0
+Range(hasSourceUnit,Unit):1.0
+is(hasTargetUnit,ObjectProperty):1.0
+Characteristics(hasTargetUnit,Functional):1.0
+Domain(hasTargetUnit,UnitConversion):1.0
+Range(hasTargetUnit,Unit):1.0
+is(hasValue,ObjectProperty):1.0
+Characteristics(hasValue,Functional):1.0
+Domain(hasValue,Measurement):1.0
+Range(hasValue,MeasuredValue):1.0
+is(measurementFor,ObjectProperty):1.0
+Characteristics(measurementFor,Functional):1.0
+Domain(measurementFor,Measurement):1.0
+Range(measurementFor,Observation):1.0
+InverseOf(measurementFor,hasMeasurement):1.0
+is(measuresCharacteristic,ObjectProperty):1.0
+Characteristics(measuresCharacteristic,Functional):1.0
+Domain(measuresCharacteristic,MeasurementType):1.0
+Range(measuresCharacteristic,Characteristic):1.0
+is(measuresEntity,ObjectProperty):1.0
+Characteristics(measuresEntity,Functional):1.0
+Domain(measuresEntity,MeasurementType):1.0
+Range(measuresEntity,Entity):1.0
+is(measuresUsingProtocol,ObjectProperty):1.0
+Characteristics(measuresUsingProtocol,Functional):1.0
+Domain(measuresUsingProtocol,MeasurementType):1.0
+Range(measuresUsingProtocol,Protocol):1.0
+is(measuresUsingStandard,ObjectProperty):1.0
+Characteristics(measuresUsingStandard,Functional):1.0
+Domain(measuresUsingStandard,MeasurementType):1.0
+Range(measuresUsingStandard,Standard):1.0
+is(ofCharacteristic,ObjectProperty):1.0
+Characteristics(ofCharacteristic,Functional):1.0
+Domain(ofCharacteristic,Measurement):1.0
+Range(ofCharacteristic,Characteristic):1.0
+is(ofEntity,ObjectProperty):1.0
+Characteristics(ofEntity,Functional):1.0
+Domain(ofEntity,Observation):1.0
+Range(ofEntity,Entity):1.0
+is(usesProtocol,ObjectProperty):1.0
+Characteristics(usesProtocol,Functional,):1.0
+Characteristics(usesProtocol,InverseFunctional):1.0
+Domain(usesProtocol,Measurement):1.0
+Range(usesProtocol,Protocol):1.0
+is(usesStandard,ObjectProperty):1.0
+Characteristics(usesStandard,Functional,):1.0
+Characteristics(usesStandard,InverseFunctional):1.0
+Domain(usesStandard,Measurement):1.0
+Range(usesStandard,Standard):1.0
+is(hasCode,DataProperty):1.0
+Characteristics(hasCode,Functional):1.0
+Domain(hasCode,MeasuredValue):1.0
+is(hasMultiplier,DataProperty):1.0
+Characteristics(hasMultiplier,Functional):1.0
+Domain(hasMultiplier,UnitConversion):1.0
+Range(hasMultiplier,decimal):1.0
+is(hasOffset,DataProperty):1.0
+Characteristics(hasOffset,Functional):1.0
+Domain(hasOffset,UnitConversion):1.0
+Range(hasOffset,decimal):1.0
+is(hasPrecision,DataProperty):1.0
+Characteristics(hasPrecision,Functional):1.0
+Domain(hasPrecision,Measurement):1.0
+Range(hasPrecision,decimal):1.0
+is(usesMethod,DataProperty):1.0
+Characteristics(usesMethod,Functional):1.0
+Domain(usesMethod,Measurement):1.0
+is(BaseUnit,Class):1.0
+SubClassOf(BaseUnit,Unit):1.0
+is(CategoricalStandard,Class):1.0
+DisjointWith(CategoricalStandard,Unit):1.0
+is(Characteristic,Class):1.0
+DisjointWith(Characteristic,Protocol):1.0
+DisjointWith(Characteristic,ObservationCollection):1.0
+DisjointWith(Characteristic,Observation):1.0
+DisjointWith(Characteristic,MeasurementType):1.0
+DisjointWith(Characteristic,Measurement):1.0
+DisjointWith(Characteristic,MeasuredValue):1.0
+DisjointWith(Characteristic,Entity):1.0
+is(CharacteristicQualifier,Class):1.0
+DisjointWith(CharacteristicQualifier,UnitConversion):1.0
+DisjointWith(CharacteristicQualifier,Protocol):1.0
+DisjointWith(CharacteristicQualifier,ObservationCollection):1.0
+DisjointWith(CharacteristicQualifier,Observation):1.0
+DisjointWith(CharacteristicQualifier,MeasurementType):1.0
+DisjointWith(CharacteristicQualifier,Measurement):1.0
+DisjointWith(CharacteristicQualifier,MeasuredValue):1.0
+DisjointWith(CharacteristicQualifier,Entity):1.0
+is(CompositeUnit,Class):1.0
+SubClassOf(CompositeUnit,Unit):1.0
+is(DerivedUnit,Class):1.0
+SubClassOf(DerivedUnit,Unit):1.0
+is(Entity,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Standard):1.0
+DisjointWith(Thing,Protocol):1.0
+DisjointWith(Thing,ObservationCollection):1.0
+DisjointWith(Thing,Observation):1.0
+DisjointWith(Thing,MeasurementType):1.0
+DisjointWith(Thing,Measurement):1.0
+DisjointWith(Thing,CharacteristicQualifier):1.0
+DisjointWith(Thing,Characteristic):1.0
+is(Index,Class):1.0
+DisjointWith(Index,Unit):1.0
+is(MeasuredValue,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UnitConversion):1.0
+DisjointWith(Thing,Standard):1.0
+DisjointWith(Thing,Protocol):1.0
+DisjointWith(Thing,ObservationCollection):1.0
+DisjointWith(Thing,Observation):1.0
+DisjointWith(Thing,MeasurementType):1.0
+DisjointWith(Thing,Measurement):1.0
+DisjointWith(Thing,CharacteristicQualifier):1.0
+DisjointWith(Thing,Characteristic):1.0
+is(Measurement,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasValue some MeasuredValue,):1.0
+is(Thing,,ofCharacteristic some Characteristic,):1.0
+is(Thing,,usesProtocol some Protocol,):1.0
+is(Thing,,usesStandard some Standard,):1.0
+is(Thing,,measurementFor exactly 1 Observation):1.0
+DisjointWith(Thing,,Standard):1.0
+DisjointWith(Thing,,Protocol):1.0
+DisjointWith(Thing,,ObservationCollection):1.0
+DisjointWith(Thing,,Observation):1.0
+DisjointWith(Thing,,MeasurementType):1.0
+DisjointWith(Thing,,MeasuredValue):1.0
+DisjointWith(Thing,,Entity):1.0
+DisjointWith(Thing,,CharacteristicQualifier):1.0
+DisjointWith(Thing,,Characteristic):1.0
+is(MeasurementType,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,measuresCharacteristic some Characteristic,):1.0
+is(Thing,,measuresEntity some Entity,):1.0
+is(Thing,,measuresUsingProtocol some Protocol,):1.0
+is(Thing,,measuresUsingStandard some Standard):1.0
+DisjointWith(Thing,,UnitConversion):1.0
+DisjointWith(Thing,,Standard):1.0
+DisjointWith(Thing,,Protocol):1.0
+DisjointWith(Thing,,ObservationCollection):1.0
+DisjointWith(Thing,,Observation):1.0
+DisjointWith(Thing,,Measurement):1.0
+DisjointWith(Thing,,MeasuredValue):1.0
+DisjointWith(Thing,,Entity):1.0
+DisjointWith(Thing,,CharacteristicQualifier):1.0
+DisjointWith(Thing,,Characteristic):1.0
+is(Observation,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,ofEntity some Entity):1.0
+DisjointWith(Thing,,Standard):1.0
+DisjointWith(Thing,,Protocol):1.0
+DisjointWith(Thing,,ObservationCollection):1.0
+DisjointWith(Thing,,MeasurementType):1.0
+DisjointWith(Thing,,Measurement):1.0
+DisjointWith(Thing,,MeasuredValue):1.0
+DisjointWith(Thing,,Entity):1.0
+DisjointWith(Thing,,CharacteristicQualifier):1.0
+DisjointWith(Thing,,Characteristic):1.0
+is(ObservationCollection,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Standard):1.0
+DisjointWith(Thing,Protocol):1.0
+DisjointWith(Thing,Observation):1.0
+DisjointWith(Thing,MeasurementType):1.0
+DisjointWith(Thing,Measurement):1.0
+DisjointWith(Thing,MeasuredValue):1.0
+DisjointWith(Thing,Entity):1.0
+DisjointWith(Thing,CharacteristicQualifier):1.0
+DisjointWith(Thing,Characteristic):1.0
+is(PrefixedUnit,Class):1.0
+SubClassOf(PrefixedUnit,Unit):1.0
+is(Protocol,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,inverse (usesProtocol) some Measurement):1.0
+DisjointWith(Thing,,Standard):1.0
+DisjointWith(Thing,,ObservationCollection):1.0
+DisjointWith(Thing,,Observation):1.0
+DisjointWith(Thing,,MeasurementType):1.0
+DisjointWith(Thing,,Measurement):1.0
+DisjointWith(Thing,,MeasuredValue):1.0
+DisjointWith(Thing,,Entity):1.0
+DisjointWith(Thing,,CharacteristicQualifier):1.0
+DisjointWith(Thing,,Characteristic):1.0
+is(Standard,Class):1.0
+DisjointWith(Standard,Protocol):1.0
+DisjointWith(Standard,ObservationCollection):1.0
+DisjointWith(Standard,Observation):1.0
+DisjointWith(Standard,MeasurementType):1.0
+DisjointWith(Standard,Measurement):1.0
+DisjointWith(Standard,MeasuredValue):1.0
+DisjointWith(Standard,Entity):1.0
+is(Unit,Class):1.0
+EquivalentTo(Unit,BaseUnit or CompositeUnit or DerivedUnit or PrefixedUnit):1.0
+SubClassOf(Unit,Standard):1.0
+DisjointWith(Unit,Index):1.0
+DisjointWith(Unit,CategoricalStandard):1.0
+is(UnitConversion,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasSourceUnit some Unit,):1.0
+is(Thing,,hasTargetUnit some Unit,):1.0
+is(Thing,,hasMultiplier some decimal,):1.0
+is(Thing,,hasOffset some decimal):1.0
+DisjointWith(Thing,,MeasurementType):1.0
+DisjointWith(Thing,,MeasuredValue):1.0
+DisjointWith(Thing,,CharacteristicQualifier):1.0
+is(Acre,Class):1.0
+is(AcreToMeterSquared,Class):1.0
+SubClassOf(AcreToMeterSquared,UnitConversion,):1.0
+SubClassOf(AcreToMeterSquared,hasSourceUnit only Acre,):1.0
+SubClassOf(AcreToMeterSquared,hasTargetUnit only MeterSquared,):1.0
+SubClassOf(AcreToMeterSquared,hasMultiplier value 4046.85642,):1.0
+SubClassOf(AcreToMeterSquared,hasOffset value 0):1.0
+is(AcreToSquareMeter,Class):1.0
+SubClassOf(AcreToSquareMeter,UnitConversion,):1.0
+SubClassOf(AcreToSquareMeter,hasSourceUnit only Acre,):1.0
+SubClassOf(AcreToSquareMeter,hasTargetUnit only MeterSquared,):1.0
+SubClassOf(AcreToSquareMeter,hasMultiplier value 4046.8564,):1.0
+SubClassOf(AcreToSquareMeter,hasOffset value 0):1.0
+is(Angstrom,Class):1.0
+is(AngstromToMeter,Class):1.0
+SubClassOf(AngstromToMeter,UnitConversion,):1.0
+SubClassOf(AngstromToMeter,hasSourceUnit only Angstrom,):1.0
+SubClassOf(AngstromToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(AngstromToMeter,hasMultiplier value 0.0000000001,):1.0
+SubClassOf(AngstromToMeter,hasOffset value 0):1.0
+is(Bar,Class):1.0
+is(BarToKilopascal,Class):1.0
+SubClassOf(BarToKilopascal,UnitConversion,):1.0
+SubClassOf(BarToKilopascal,hasSourceUnit only Kilopascal,):1.0
+SubClassOf(BarToKilopascal,hasTargetUnit only Bar,):1.0
+SubClassOf(BarToKilopascal,hasMultiplier value 100,):1.0
+SubClassOf(BarToKilopascal,hasOffset value 0):1.0
+is(Bushel,Class):1.0
+is(BushelToLiter,Class):1.0
+SubClassOf(BushelToLiter,UnitConversion,):1.0
+SubClassOf(BushelToLiter,hasSourceUnit only Bushel,):1.0
+SubClassOf(BushelToLiter,hasTargetUnit only Liter,):1.0
+SubClassOf(BushelToLiter,hasMultiplier value 35.239072,):1.0
+SubClassOf(BushelToLiter,hasOffset value 0):1.0
+is(Celsius,Class):1.0
+is(CelsiusToKelvin,Class):1.0
+SubClassOf(CelsiusToKelvin,UnitConversion,):1.0
+SubClassOf(CelsiusToKelvin,hasSourceUnit only Celsius,):1.0
+SubClassOf(CelsiusToKelvin,hasTargetUnit only Kelvin,):1.0
+SubClassOf(CelsiusToKelvin,hasMultiplier value 1,):1.0
+SubClassOf(CelsiusToKelvin,hasOffset value 273.18):1.0
+is(Centigram,Class):1.0
+is(CentigramToKilogram,Class):1.0
+SubClassOf(CentigramToKilogram,UnitConversion,):1.0
+SubClassOf(CentigramToKilogram,hasSourceUnit only Centigram,):1.0
+SubClassOf(CentigramToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(CentigramToKilogram,hasMultiplier value 0.00001,):1.0
+SubClassOf(CentigramToKilogram,hasOffset value 0):1.0
+is(CentimeterToMeter,Class):1.0
+SubClassOf(CentimeterToMeter,UnitConversion):1.0
+is(Centisecond,Class):1.0
+is(CentisecondToSecond,Class):1.0
+SubClassOf(CentisecondToSecond,UnitConversion,):1.0
+SubClassOf(CentisecondToSecond,hasSourceUnit only Centisecond,):1.0
+SubClassOf(CentisecondToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(CentisecondToSecond,hasMultiplier value 0.01,):1.0
+SubClassOf(CentisecondToSecond,hasOffset value 0):1.0
+is(Decibar,Class):1.0
+is(DecibarToBar,Class):1.0
+SubClassOf(DecibarToBar,UnitConversion,):1.0
+SubClassOf(DecibarToBar,hasSourceUnit only Decibar,):1.0
+SubClassOf(DecibarToBar,hasTargetUnit only Bar,):1.0
+SubClassOf(DecibarToBar,hasMultiplier value 0.1,):1.0
+SubClassOf(DecibarToBar,hasOffset value 0.0):1.0
+is(Decigram,Class):1.0
+is(DecigramToKilogram,Class):1.0
+SubClassOf(DecigramToKilogram,UnitConversion,):1.0
+SubClassOf(DecigramToKilogram,hasSourceUnit only Decigram,):1.0
+SubClassOf(DecigramToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(DecigramToKilogram,hasMultiplier value 0.0001,):1.0
+SubClassOf(DecigramToKilogram,hasOffset value 0):1.0
+is(Decimeter,Class):1.0
+is(DecimeterToMeter,Class):1.0
+SubClassOf(DecimeterToMeter,UnitConversion,):1.0
+SubClassOf(DecimeterToMeter,hasSourceUnit only Decimeter,):1.0
+SubClassOf(DecimeterToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(DecimeterToMeter,hasMultiplier value 0.1,):1.0
+SubClassOf(DecimeterToMeter,hasOffset value 0):1.0
+is(Decisecond,Class):1.0
+is(DecisecondToSecond,Class):1.0
+SubClassOf(DecisecondToSecond,UnitConversion,):1.0
+SubClassOf(DecisecondToSecond,hasSourceUnit only Decisecond,):1.0
+SubClassOf(DecisecondToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(DecisecondToSecond,hasMultiplier value 0.1,):1.0
+SubClassOf(DecisecondToSecond,hasOffset value 0):1.0
+is(DegreToRadian,Class):1.0
+SubClassOf(DegreToRadian,UnitConversion,):1.0
+SubClassOf(DegreToRadian,hasSourceUnit only Degree,):1.0
+SubClassOf(DegreToRadian,hasTargetUnit only Radian,):1.0
+SubClassOf(DegreToRadian,hasMultiplier value 0.0174533,):1.0
+SubClassOf(DegreToRadian,hasOffset value 0):1.0
+is(Degree,Class):1.0
+is(Dekagram,Class):1.0
+is(DekagramToKilogram,Class):1.0
+SubClassOf(DekagramToKilogram,UnitConversion,):1.0
+SubClassOf(DekagramToKilogram,hasSourceUnit only Dekagram,):1.0
+SubClassOf(DekagramToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(DekagramToKilogram,hasMultiplier value 0.01,):1.0
+SubClassOf(DekagramToKilogram,hasOffset value 0):1.0
+is(Dekameter,Class):1.0
+is(DekameterToMeter,Class):1.0
+SubClassOf(DekameterToMeter,UnitConversion,):1.0
+SubClassOf(DekameterToMeter,hasSourceUnit only Dekameter,):1.0
+SubClassOf(DekameterToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(DekameterToMeter,hasMultiplier value 10,):1.0
+SubClassOf(DekameterToMeter,hasOffset value 0):1.0
+is(Dekasecond,Class):1.0
+is(DekasecondToSecond,Class):1.0
+SubClassOf(DekasecondToSecond,UnitConversion,):1.0
+SubClassOf(DekasecondToSecond,hasSourceUnit only Dekasecond,):1.0
+SubClassOf(DekasecondToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(DekasecondToSecond,hasMultiplier value 10,):1.0
+SubClassOf(DekasecondToSecond,hasOffset value 0):1.0
+is(FahrenheitDegree,Class):1.0
+is(FahrenheitDegreeToKelvin,Class):1.0
+SubClassOf(FahrenheitDegreeToKelvin,UnitConversion,):1.0
+SubClassOf(FahrenheitDegreeToKelvin,hasSourceUnit only FahrenheitDegree,):1.0
+SubClassOf(FahrenheitDegreeToKelvin,hasTargetUnit only Kelvin,):1.0
+SubClassOf(FahrenheitDegreeToKelvin,hasMultiplier value 0.556,):1.0
+SubClassOf(FahrenheitDegreeToKelvin,hasOffset value 255.402):1.0
+is(Fathom,Class):1.0
+is(FathomToMeter,Class):1.0
+SubClassOf(FathomToMeter,UnitConversion,):1.0
+SubClassOf(FathomToMeter,hasSourceUnit only Fathom,):1.0
+SubClassOf(FathomToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(FathomToMeter,hasMultiplier value 1.8288,):1.0
+SubClassOf(FathomToMeter,hasOffset value 0):1.0
+is(Foot,Class):1.0
+is(FootGoldCoast,Class):1.0
+is(FootGoldCoastToMeter,Class):1.0
+SubClassOf(FootGoldCoastToMeter,UnitConversion,):1.0
+SubClassOf(FootGoldCoastToMeter,hasSourceUnit only FootGoldCoast,):1.0
+SubClassOf(FootGoldCoastToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(FootGoldCoastToMeter,hasMultiplier value 0.3048,):1.0
+SubClassOf(FootGoldCoastToMeter,hasOffset value 0):1.0
+is(FootToMeter,Class):1.0
+SubClassOf(FootToMeter,UnitConversion,):1.0
+SubClassOf(FootToMeter,hasSourceUnit only Foot,):1.0
+SubClassOf(FootToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(FootToMeter,hasMultiplier value 0.3048,):1.0
+SubClassOf(FootToMeter,hasOffset value 0):1.0
+is(Gallon,Class):1.0
+is(GallonToLiter,Class):1.0
+SubClassOf(GallonToLiter,UnitConversion,):1.0
+SubClassOf(GallonToLiter,hasSourceUnit only Gallon,):1.0
+SubClassOf(GallonToLiter,hasTargetUnit only Liter,):1.0
+SubClassOf(GallonToLiter,hasMultiplier value 3.78541178,):1.0
+SubClassOf(GallonToLiter,hasOffset value 0):1.0
+is(Grad,Class):1.0
+is(GradToRadian,Class):1.0
+SubClassOf(GradToRadian,UnitConversion,):1.0
+SubClassOf(GradToRadian,hasSourceUnit only Grad,):1.0
+SubClassOf(GradToRadian,hasTargetUnit only Radian,):1.0
+SubClassOf(GradToRadian,hasMultiplier value 0.015707,):1.0
+SubClassOf(GradToRadian,hasOffset value 0):1.0
+is(Gram,Class):1.0
+is(GramToKilogram,Class):1.0
+SubClassOf(GramToKilogram,UnitConversion,):1.0
+SubClassOf(GramToKilogram,hasSourceUnit only Gram,):1.0
+SubClassOf(GramToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(GramToKilogram,hasMultiplier value 0.001,):1.0
+SubClassOf(GramToKilogram,hasOffset value 0):1.0
+is(Hectogram,Class):1.0
+is(HectogramToKilogram,Class):1.0
+SubClassOf(HectogramToKilogram,UnitConversion,):1.0
+SubClassOf(HectogramToKilogram,hasSourceUnit only Hectogram,):1.0
+SubClassOf(HectogramToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(HectogramToKilogram,hasMultiplier value 0.1,):1.0
+SubClassOf(HectogramToKilogram,hasOffset value 0):1.0
+is(HectometerToMeter,Class):1.0
+SubClassOf(HectometerToMeter,UnitConversion):1.0
+is(Hectopascal,Class):1.0
+is(HectopascalToPascal,Class):1.0
+SubClassOf(HectopascalToPascal,UnitConversion,):1.0
+SubClassOf(HectopascalToPascal,hasSourceUnit only Hectopascal,):1.0
+SubClassOf(HectopascalToPascal,hasTargetUnit only Pascal):1.0
+is(Hectosecond,Class):1.0
+is(HectosecondToSecond,Class):1.0
+SubClassOf(HectosecondToSecond,UnitConversion,):1.0
+SubClassOf(HectosecondToSecond,hasSourceUnit only Hectosecond,):1.0
+SubClassOf(HectosecondToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(HectosecondToSecond,hasMultiplier value 100,):1.0
+SubClassOf(HectosecondToSecond,hasOffset value 0):1.0
+is(Hour,Class):1.0
+is(HourToSecond,Class):1.0
+SubClassOf(HourToSecond,UnitConversion,):1.0
+SubClassOf(HourToSecond,hasSourceUnit only Hour,):1.0
+SubClassOf(HourToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(HourToSecond,hasMultiplier value 3600,):1.0
+SubClassOf(HourToSecond,hasOffset value 0):1.0
+is(Inch,Class):1.0
+is(InchToMeter,Class):1.0
+SubClassOf(InchToMeter,UnitConversion,):1.0
+SubClassOf(InchToMeter,hasSourceUnit only Inch,):1.0
+SubClassOf(InchToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(InchToMeter,hasMultiplier value 0.0254,):1.0
+SubClassOf(InchToMeter,hasOffset value 0):1.0
+is(Kelvin,Class):1.0
+is(Kilogram,Class):1.0
+is(Kilometer,Class):1.0
+is(KilometerToMeter,Class):1.0
+SubClassOf(KilometerToMeter,UnitConversion,):1.0
+SubClassOf(KilometerToMeter,hasSourceUnit only Kilometer,):1.0
+SubClassOf(KilometerToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(KilometerToMeter,hasMultiplier value 1000,):1.0
+SubClassOf(KilometerToMeter,hasOffset value 0):1.0
+is(Kilopascal,Class):1.0
+is(Kilosecond,Class):1.0
+is(KilosecondToSecond,Class):1.0
+SubClassOf(KilosecondToSecond,UnitConversion,):1.0
+SubClassOf(KilosecondToSecond,hasSourceUnit only Kilosecond,):1.0
+SubClassOf(KilosecondToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(KilosecondToSecond,hasMultiplier value 1000,):1.0
+SubClassOf(KilosecondToSecond,hasOffset value 0):1.0
+is(LinkClarke,Class):1.0
+is(LinkClarkeToMeter,Class):1.0
+SubClassOf(LinkClarkeToMeter,UnitConversion,):1.0
+SubClassOf(LinkClarkeToMeter,hasSourceUnit only LinkClarke,):1.0
+SubClassOf(LinkClarkeToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(LinkClarkeToMeter,hasMultiplier value 0.201166,):1.0
+SubClassOf(LinkClarkeToMeter,hasOffset value 0):1.0
+is(Liter,Class):1.0
+is(LiterToMeterCubed,Class):1.0
+SubClassOf(LiterToMeterCubed,UnitConversion,):1.0
+SubClassOf(LiterToMeterCubed,hasSourceUnit only Liter,):1.0
+SubClassOf(LiterToMeterCubed,hasTargetUnit only MeterCubed,):1.0
+SubClassOf(LiterToMeterCubed,hasMultiplier value 0.001,):1.0
+SubClassOf(LiterToMeterCubed,hasOffset value 0):1.0
+is(Megagram,Class):1.0
+is(MegagramToKilogram,Class):1.0
+SubClassOf(MegagramToKilogram,UnitConversion,):1.0
+SubClassOf(MegagramToKilogram,hasSourceUnit only Megagram,):1.0
+SubClassOf(MegagramToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(MegagramToKilogram,hasMultiplier value 1000,):1.0
+SubClassOf(MegagramToKilogram,hasOffset value 0):1.0
+is(Megameter,Class):1.0
+is(MegameterToMeter,Class):1.0
+SubClassOf(MegameterToMeter,UnitConversion,):1.0
+SubClassOf(MegameterToMeter,hasSourceUnit only Megameter,):1.0
+SubClassOf(MegameterToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(MegameterToMeter,hasMultiplier value 1000000,):1.0
+SubClassOf(MegameterToMeter,hasOffset value 0):1.0
+is(Megasecond,Class):1.0
+is(MegasecondToSecond,Class):1.0
+SubClassOf(MegasecondToSecond,UnitConversion,):1.0
+SubClassOf(MegasecondToSecond,hasSourceUnit only Megasecond,):1.0
+SubClassOf(MegasecondToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(MegasecondToSecond,hasMultiplier value 1000000,):1.0
+SubClassOf(MegasecondToSecond,hasOffset value 0):1.0
+is(Meter,Class):1.0
+is(MeterCubed,Class):1.0
+is(MeterSquared,Class):1.0
+is(Microgram,Class):1.0
+is(MicrogramToKilogram,Class):1.0
+SubClassOf(MicrogramToKilogram,UnitConversion,):1.0
+SubClassOf(MicrogramToKilogram,hasSourceUnit only Microgram,):1.0
+SubClassOf(MicrogramToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(MicrogramToKilogram,hasMultiplier value 1000000000,):1.0
+SubClassOf(MicrogramToKilogram,hasOffset value 0):1.0
+is(Micrometer,Class):1.0
+is(MicrometerToMeter,Class):1.0
+SubClassOf(MicrometerToMeter,UnitConversion,):1.0
+SubClassOf(MicrometerToMeter,hasSourceUnit only Micrometer,):1.0
+SubClassOf(MicrometerToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(MicrometerToMeter,hasMultiplier value 1000000,):1.0
+SubClassOf(MicrometerToMeter,hasOffset value 0):1.0
+is(Micron,Class):1.0
+is(MicronToMeter,Class):1.0
+SubClassOf(MicronToMeter,UnitConversion,):1.0
+SubClassOf(MicronToMeter,hasSourceUnit only Micron,):1.0
+SubClassOf(MicronToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(MicronToMeter,hasMultiplier value 1000000,):1.0
+SubClassOf(MicronToMeter,hasOffset value 0):1.0
+is(Microsecond,Class):1.0
+is(MicrosecondToSecond,Class):1.0
+SubClassOf(MicrosecondToSecond,UnitConversion,):1.0
+SubClassOf(MicrosecondToSecond,hasSourceUnit only Microsecond,):1.0
+SubClassOf(MicrosecondToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(MicrosecondToSecond,hasMultiplier value 1000000,):1.0
+SubClassOf(MicrosecondToSecond,hasOffset value 0):1.0
+is(Mile,Class):1.0
+is(MileToMeter,Class):1.0
+SubClassOf(MileToMeter,UnitConversion,):1.0
+SubClassOf(MileToMeter,hasSourceUnit only Mile,):1.0
+SubClassOf(MileToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(MileToMeter,hasMultiplier value 1609.344,):1.0
+SubClassOf(MileToMeter,hasOffset value 0):1.0
+is(Millibar,Class):1.0
+is(MillibarToBar,Class):1.0
+SubClassOf(MillibarToBar,UnitConversion,):1.0
+SubClassOf(MillibarToBar,hasSourceUnit only Millibar,):1.0
+SubClassOf(MillibarToBar,hasTargetUnit only Bar,):1.0
+SubClassOf(MillibarToBar,hasMultiplier value 0.0010,):1.0
+SubClassOf(MillibarToBar,hasOffset value 0.0):1.0
+is(Milligram,Class):1.0
+is(MilligramToKilogram,Class):1.0
+SubClassOf(MilligramToKilogram,UnitConversion,):1.0
+SubClassOf(MilligramToKilogram,hasSourceUnit only Milligram,):1.0
+SubClassOf(MilligramToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(MilligramToKilogram,hasMultiplier value 1000000,):1.0
+SubClassOf(MilligramToKilogram,hasOffset value 0):1.0
+is(Millimeter,Class):1.0
+is(MillimeterToMeter,Class):1.0
+SubClassOf(MillimeterToMeter,UnitConversion,):1.0
+SubClassOf(MillimeterToMeter,hasSourceUnit only Millimeter,):1.0
+SubClassOf(MillimeterToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(MillimeterToMeter,hasMultiplier value 0.001,):1.0
+SubClassOf(MillimeterToMeter,hasOffset value 0):1.0
+is(Millisecond,Class):1.0
+is(MillisecondToSecond,Class):1.0
+SubClassOf(MillisecondToSecond,UnitConversion,):1.0
+SubClassOf(MillisecondToSecond,hasSourceUnit only Millisecond,):1.0
+SubClassOf(MillisecondToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(MillisecondToSecond,hasMultiplier value 0.001,):1.0
+SubClassOf(MillisecondToSecond,hasOffset value 0):1.0
+is(Minute,Class):1.0
+is(MinuteToSecond,Class):1.0
+SubClassOf(MinuteToSecond,UnitConversion,):1.0
+SubClassOf(MinuteToSecond,hasSourceUnit only Minute,):1.0
+SubClassOf(MinuteToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(MinuteToSecond,hasMultiplier value 60,):1.0
+SubClassOf(MinuteToSecond,hasOffset value 0):1.0
+is(Nanogram,Class):1.0
+is(NanogramToKilogram,Class):1.0
+SubClassOf(NanogramToKilogram,UnitConversion,):1.0
+SubClassOf(NanogramToKilogram,hasSourceUnit only Nanogram,):1.0
+SubClassOf(NanogramToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(NanogramToKilogram,hasMultiplier value 1000000000000,):1.0
+SubClassOf(NanogramToKilogram,hasOffset value 0):1.0
+is(Nanometer,Class):1.0
+is(NanometerToMeter,Class):1.0
+SubClassOf(NanometerToMeter,UnitConversion,):1.0
+SubClassOf(NanometerToMeter,hasSourceUnit only Nanometer,):1.0
+SubClassOf(NanometerToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(NanometerToMeter,hasMultiplier value 1000000000,):1.0
+SubClassOf(NanometerToMeter,hasOffset value 0):1.0
+is(Nanosecond,Class):1.0
+is(NanosecondToSecond,Class):1.0
+SubClassOf(NanosecondToSecond,UnitConversion,):1.0
+SubClassOf(NanosecondToSecond,hasSourceUnit only Nanosecond,):1.0
+SubClassOf(NanosecondToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(NanosecondToSecond,hasMultiplier value 1000000000,):1.0
+SubClassOf(NanosecondToSecond,hasOffset value 0):1.0
+is(NauticalMileToMeter,Class):1.0
+SubClassOf(NauticalMileToMeter,UnitConversion):1.0
+is(NominalDay,Class):1.0
+is(NominalDayToSecond,Class):1.0
+SubClassOf(NominalDayToSecond,UnitConversion,):1.0
+SubClassOf(NominalDayToSecond,hasSourceUnit only NominalDay,):1.0
+SubClassOf(NominalDayToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(NominalDayToSecond,hasMultiplier value 86400,):1.0
+SubClassOf(NominalDayToSecond,hasOffset value 0):1.0
+is(NominalHour,Class):1.0
+is(NominalHourToSecond,Class):1.0
+SubClassOf(NominalHourToSecond,UnitConversion,):1.0
+SubClassOf(NominalHourToSecond,hasSourceUnit only NominalHour,):1.0
+SubClassOf(NominalHourToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(NominalHourToSecond,hasMultiplier value 3600,):1.0
+SubClassOf(NominalHourToSecond,hasOffset value 0):1.0
+is(NominalLeapYear,Class):1.0
+is(NominalLeapYearToSecond,Class):1.0
+SubClassOf(NominalLeapYearToSecond,UnitConversion,):1.0
+SubClassOf(NominalLeapYearToSecond,hasSourceUnit only NominalLeapYear,):1.0
+SubClassOf(NominalLeapYearToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(NominalLeapYearToSecond,hasMultiplier value 31643326,):1.0
+SubClassOf(NominalLeapYearToSecond,hasOffset value 0):1.0
+is(NominalMinute,Class):1.0
+is(NominalMinuteToSecond,Class):1.0
+SubClassOf(NominalMinuteToSecond,UnitConversion,):1.0
+SubClassOf(NominalMinuteToSecond,hasSourceUnit only NominalMinute,):1.0
+SubClassOf(NominalMinuteToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(NominalMinuteToSecond,hasMultiplier value 60,):1.0
+SubClassOf(NominalMinuteToSecond,hasOffset value 0):1.0
+is(NominalWeek,Class):1.0
+is(NominalWeekToSecond,Class):1.0
+SubClassOf(NominalWeekToSecond,UnitConversion,):1.0
+SubClassOf(NominalWeekToSecond,hasSourceUnit only NominalWeek,):1.0
+SubClassOf(NominalWeekToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(NominalWeekToSecond,hasMultiplier value 604800,):1.0
+SubClassOf(NominalWeekToSecond,hasOffset value 0):1.0
+is(NominalYear,Class):1.0
+is(NominalYearToSecond,Class):1.0
+SubClassOf(NominalYearToSecond,UnitConversion,):1.0
+SubClassOf(NominalYearToSecond,hasSourceUnit only NominalYear,):1.0
+SubClassOf(NominalYearToSecond,hasTargetUnit only Second,):1.0
+SubClassOf(NominalYearToSecond,hasMultiplier value 31556926,):1.0
+SubClassOf(NominalYearToSecond,hasOffset value 0):1.0
+is(Pascal,Class):1.0
+is(Pint,Class):1.0
+is(PintToLiter,Class):1.0
+SubClassOf(PintToLiter,UnitConversion,):1.0
+SubClassOf(PintToLiter,hasSourceUnit only Pint,):1.0
+SubClassOf(PintToLiter,hasTargetUnit only Liter,):1.0
+SubClassOf(PintToLiter,hasMultiplier value 0.473176473,):1.0
+SubClassOf(PintToLiter,hasOffset value 0):1.0
+is(Pound,Class):1.0
+is(PoundToKilogram,Class):1.0
+SubClassOf(PoundToKilogram,UnitConversion,):1.0
+SubClassOf(PoundToKilogram,hasSourceUnit only Pound,):1.0
+SubClassOf(PoundToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(PoundToKilogram,hasMultiplier value 0.4536,):1.0
+SubClassOf(PoundToKilogram,hasOffset value 0):1.0
+is(Quart,Class):1.0
+is(QuartToLiter,Class):1.0
+SubClassOf(QuartToLiter,UnitConversion,):1.0
+SubClassOf(QuartToLiter,hasSourceUnit only Quart,):1.0
+SubClassOf(QuartToLiter,hasTargetUnit only Liter,):1.0
+SubClassOf(QuartToLiter,hasMultiplier value 0.946352946,):1.0
+SubClassOf(QuartToLiter,hasOffset value 0):1.0
+is(Radian,Class):1.0
+is(Second,Class):1.0
+is(Ton,Class):1.0
+is(TonToKilogram,Class):1.0
+SubClassOf(TonToKilogram,UnitConversion,):1.0
+SubClassOf(TonToKilogram,hasSourceUnit only Ton,):1.0
+SubClassOf(TonToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(TonToKilogram,hasMultiplier value 907.2,):1.0
+SubClassOf(TonToKilogram,hasOffset value 0):1.0
+is(Tonne,Class):1.0
+is(TonneToKilogram,Class):1.0
+SubClassOf(TonneToKilogram,UnitConversion,):1.0
+SubClassOf(TonneToKilogram,hasSourceUnit only Tonne,):1.0
+SubClassOf(TonneToKilogram,hasTargetUnit only Kilogram,):1.0
+SubClassOf(TonneToKilogram,hasMultiplier value 1000,):1.0
+SubClassOf(TonneToKilogram,hasOffset value 0):1.0
+is(Yard,Class):1.0
+is(YardIndian,Class):1.0
+is(YardIndianToMeter,Class):1.0
+SubClassOf(YardIndianToMeter,UnitConversion,):1.0
+SubClassOf(YardIndianToMeter,hasSourceUnit only YardIndian,):1.0
+SubClassOf(YardIndianToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(YardIndianToMeter,hasMultiplier value 0.914399,):1.0
+SubClassOf(YardIndianToMeter,hasOffset value 0):1.0
+is(YardToMeter,Class):1.0
+SubClassOf(YardToMeter,UnitConversion,):1.0
+SubClassOf(YardToMeter,hasSourceUnit only Yard,):1.0
+SubClassOf(YardToMeter,hasTargetUnit only Meter,):1.0
+SubClassOf(YardToMeter,hasMultiplier value 0.914398,):1.0
+SubClassOf(YardToMeter,hasOffset value 0):1.0
+is(www.w3.org/2002/07/#,Class):1.0

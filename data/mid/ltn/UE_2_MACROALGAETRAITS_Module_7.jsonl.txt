@@ -1,0 +1,14 @@
+is(reducesAgitationCausedBy,ObjectProperty):1.0
+is(EnvironmentalCausativeFactor,Class):1.0
+DisjointWith(EnvironmentalCausativeFactor,PersonWithDementiaFocusedIntervention):1.0
+is(EnvironmentalIntervention,Class):1.0
+SubClassOf(EnvironmentalIntervention,PersonWithDementiaFocusedIntervention,):1.0
+SubClassOf(EnvironmentalIntervention,reducesAgitationCausedBy some EnvironmentalCausativeFactor,):1.0
+SubClassOf(EnvironmentalIntervention,reducesAgitationCausedBy only PersonWithDementiaFocusedIntervention):1.0
+is(PersonWithDementiaFocusedIntervention,Class):1.0
+DisjointWith(PersonWithDementiaFocusedIntervention,EnvironmentalCausativeFactor):1.0
+is(PhysicalEnvironmentalIntervention,Class):1.0
+SubClassOf(PhysicalEnvironmentalIntervention,EnvironmentalIntervention):1.0
+is(SocialEnvironmentalIntervention,Class):1.0
+SubClassOf(SocialEnvironmentalIntervention,EnvironmentalIntervention):1.0
+is(www.w3.org/2002/07/#,Class):1.0

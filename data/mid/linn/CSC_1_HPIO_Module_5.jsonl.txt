@@ -1,0 +1,44 @@
+predicate(Entity,is,Class).
+predicate(Entity,EquivalentTo,Continuant or Occurrent).
+predicate(Entity,SubClassOf,SpatialRegion,).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Continuant or Occurrent).
+predicate(Continuant,is,Class).
+predicate(Continuant,SubClassOf,Entity).
+predicate(DependentContinuant,is,Class).
+predicate(DependentContinuant,DisjointWith,SpatialRegion).
+predicate(GenericallyDependentContinuant,is,Class).
+predicate(GenericallyDependentContinuant,SubClassOf,DependentContinuant).
+predicate(GenericallyDependentContinuant,DisjointWith,SpecificallyDependentContinuant).
+predicate(IndependentContinuant,is,Class).
+predicate(IndependentContinuant,DisjointWith,SpatialRegion).
+predicate(OneDimensionalRegion,is,Class).
+predicate(OneDimensionalRegion,SubClassOf,SpatialRegion).
+predicate(OneDimensionalRegion,DisjointWith,ZeroDimensionalRegion).
+predicate(OneDimensionalRegion,DisjointWith,TwoDimensionalRegion).
+predicate(OneDimensionalRegion,DisjointWith,ThreeDimensionalRegion).
+predicate(SpatialRegion,is,Class).
+predicate(SpatialRegion,EquivalentTo,OneDimensionalRegion or ThreeDimensionalRegion or TwoDimensionalRegion or ZeroDimensionalRegion).
+predicate(SpatialRegion,SubClassOf,Continuant).
+predicate(SpatialRegion,DisjointWith,IndependentContinuant).
+predicate(SpatialRegion,DisjointWith,DependentContinuant).
+predicate(SpecificallyDependentContinuant,is,Class).
+predicate(SpecificallyDependentContinuant,DisjointWith,GenericallyDependentContinuant).
+predicate(ThreeDimensionalRegion,is,Class).
+predicate(ThreeDimensionalRegion,SubClassOf,SpatialRegion).
+predicate(ThreeDimensionalRegion,DisjointWith,ZeroDimensionalRegion).
+predicate(ThreeDimensionalRegion,DisjointWith,TwoDimensionalRegion).
+predicate(ThreeDimensionalRegion,DisjointWith,OneDimensionalRegion).
+predicate(TwoDimensionalRegion,is,Class).
+predicate(TwoDimensionalRegion,SubClassOf,SpatialRegion).
+predicate(TwoDimensionalRegion,DisjointWith,ZeroDimensionalRegion).
+predicate(TwoDimensionalRegion,DisjointWith,ThreeDimensionalRegion).
+predicate(TwoDimensionalRegion,DisjointWith,OneDimensionalRegion).
+predicate(ZeroDimensionalRegion,is,Class).
+predicate(ZeroDimensionalRegion,SubClassOf,SpatialRegion).
+predicate(ZeroDimensionalRegion,DisjointWith,TwoDimensionalRegion).
+predicate(ZeroDimensionalRegion,DisjointWith,ThreeDimensionalRegion).
+predicate(ZeroDimensionalRegion,DisjointWith,OneDimensionalRegion).
+predicate(Occurrent,is,Class).
+predicate(Occurrent,SubClassOf,Entity).
+predicate(www.w3.org/2002/07/#,is,Class).

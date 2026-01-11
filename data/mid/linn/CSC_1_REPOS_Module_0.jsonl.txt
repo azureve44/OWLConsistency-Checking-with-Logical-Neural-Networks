@@ -1,0 +1,76 @@
+predicate(integer,is,Datatype).
+predicate(string,is,Datatype).
+predicate(dibimbingOleh,is,ObjectProperty).
+predicate(dibimbingOleh,Domain,TugasAkhir).
+predicate(dibimbingOleh,Range,Dosen).
+predicate(dibimbingOleh,InverseOf,membimbing).
+predicate(ditulisOleh,is,ObjectProperty).
+predicate(ditulisOleh,Domain,TugasAkhir).
+predicate(ditulisOleh,Range,Mahasiswa).
+predicate(ditulisOleh,InverseOf,menulis).
+predicate(membimbing,is,ObjectProperty).
+predicate(membimbing,Domain,Dosen).
+predicate(membimbing,Range,Mahasiswa).
+predicate(membimbing,InverseOf,dibimbingOleh).
+predicate(menulis,is,ObjectProperty).
+predicate(menulis,Domain,Mahasiswa).
+predicate(menulis,Range,TugasAkhir).
+predicate(menulis,InverseOf,ditulisOleh).
+predicate(Judul,is,DataProperty).
+predicate(Judul,Domain,TugasAkhir).
+predicate(Kelas_Angkatan,is,DataProperty).
+predicate(Kelas_Angkatan,Domain,TugasAkhir).
+predicate(NIM,is,DataProperty).
+predicate(NIM,Domain,Mahasiswa).
+predicate(NIP,is,DataProperty).
+predicate(NIP,Domain,Dosen).
+predicate(Nama,is,DataProperty).
+predicate(Nama,Domain,CivitasAkademika).
+predicate(CivitasAkademika,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Dosen,is,Class).
+predicate(Dosen,SubClassOf,CivitasAkademika).
+predicate(Dosen,DisjointWith,Mahasiswa).
+predicate(Mahasiswa,is,Class).
+predicate(Mahasiswa,SubClassOf,CivitasAkademika).
+predicate(Mahasiswa,DisjointWith,Dosen).
+predicate(TugasAkhir,is,Class).
+predicate(TugasAkhir,EquivalentTo,TulisanIlmiah and ((dibimbingOleh some Dosen) and (ditulisOleh some Mahasiswa)) and (Judul some string)).
+predicate(TugasAkhir,SubClassOf,TulisanIlmiah).
+predicate(TugasAkhir,DisjointWith,TulisanIlmiah and ((dibimbingOleh some Dosen) and (ditulisOleh some Mahasiswa)) and (Judul some string)).
+predicate(TulisanIlmiah,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,SubClassOf,TugasAkhir).
+predicate(Desty_Rodiah,is,Individual).
+predicate(Desty_Rodiah,Types,Dosen).
+predicate(Desty_Rodiah,NIP,198912212020122011,).
+predicate(Desty_Rodiah,Nama,"Desty Rodiah, M.T.").
+predicate(Deteksi_Wajah_Menggunakan_Variasi_Segmentasi_dan_Randomized_Hough_Transform,is,Individual).
+predicate(Deteksi_Wajah_Menggunakan_Variasi_Segmentasi_dan_Randomized_Hough_Transform,Types,TugasAkhir).
+predicate(Deteksi_Wajah_Menggunakan_Variasi_Segmentasi_dan_Randomized_Hough_Transform,membimbing,Desty_Rodiah,).
+predicate(Deteksi_Wajah_Menggunakan_Variasi_Segmentasi_dan_Randomized_Hough_Transform,membimbing,M_Fachrurrozi,).
+predicate(Deteksi_Wajah_Menggunakan_Variasi_Segmentasi_dan_Randomized_Hough_Transform,menulis,Winda_Agusthia,).
+predicate(Deteksi_Wajah_Menggunakan_Variasi_Segmentasi_dan_Randomized_Hough_Transform,Judul,"Deteksi Wajah Menggunakan Variasi Segmentasi dan Randomized Hough Transform (RHT)").
+predicate(Diagnosa_Penyakit_Diabetes_Menggunakan_Jaringan_Syaraf_Tiruan_Backpropagation_dan_Algoritma_Levenberg-Marquardt,is,Individual).
+predicate(Diagnosa_Penyakit_Diabetes_Menggunakan_Jaringan_Syaraf_Tiruan_Backpropagation_dan_Algoritma_Levenberg-Marquardt,Types,TugasAkhir).
+predicate(Diagnosa_Penyakit_Diabetes_Menggunakan_Jaringan_Syaraf_Tiruan_Backpropagation_dan_Algoritma_Levenberg-Marquardt,membimbing,Desty_Rodiah,).
+predicate(Diagnosa_Penyakit_Diabetes_Menggunakan_Jaringan_Syaraf_Tiruan_Backpropagation_dan_Algoritma_Levenberg-Marquardt,membimbing,Dian_Palupi_Rini,).
+predicate(Diagnosa_Penyakit_Diabetes_Menggunakan_Jaringan_Syaraf_Tiruan_Backpropagation_dan_Algoritma_Levenberg-Marquardt,menulis,Ruben_Jupandi,).
+predicate(Diagnosa_Penyakit_Diabetes_Menggunakan_Jaringan_Syaraf_Tiruan_Backpropagation_dan_Algoritma_Levenberg-Marquardt,Judul,"Diagnosa Penyakit Diabetes Menggunakan Jaringan Syaraf Tiruan Backpropagation dan Algoritma Levenberg-Marquardt").
+predicate(Dian_Palupi_Rini,is,Individual).
+predicate(Dian_Palupi_Rini,Types,Dosen).
+predicate(Dian_Palupi_Rini,NIP,197802232006042002,).
+predicate(Dian_Palupi_Rini,Nama,"Dian Palupi Rini, M.Kom., Ph.D.").
+predicate(M_Fachrurrozi,is,Individual).
+predicate(M_Fachrurrozi,Types,Dosen).
+predicate(M_Fachrurrozi,NIP,198005222008121002,).
+predicate(M_Fachrurrozi,Nama,"M. Fachrurrozi, M.T.").
+predicate(Ruben_Jupandi,is,Individual).
+predicate(Ruben_Jupandi,Types,Mahasiswa).
+predicate(Ruben_Jupandi,NIM,"09021381621116",).
+predicate(Ruben_Jupandi,Nama,"Ruben Jupandi").
+predicate(Winda_Agusthia,is,Individual).
+predicate(Winda_Agusthia,Types,Mahasiswa).
+predicate(Winda_Agusthia,NIM,"09021381419070",).
+predicate(Winda_Agusthia,Nama,"Winda Agusthia").

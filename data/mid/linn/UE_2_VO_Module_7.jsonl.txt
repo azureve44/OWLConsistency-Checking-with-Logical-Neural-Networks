@@ -1,0 +1,18 @@
+predicate(is-a-well-formed-formula-of,is,ObjectProperty).
+predicate(command-language,is,Class).
+predicate(command-language,DisjointWith,data-manipulation-language-expression).
+predicate(composite-expression,is,Class).
+predicate(composite-expression,SubClassOf,computer-language-expression).
+predicate(computer-language-expression,is,Class).
+predicate(computer-language-expression,SubClassOf,formal-expression,).
+predicate(computer-language-expression,SubClassOf,is-a-well-formed-formula-of some command-language,).
+predicate(computer-language-expression,SubClassOf,is-a-well-formed-formula-of only data-manipulation-language-expression).
+predicate(data-description-language-expression,is,Class).
+predicate(data-description-language-expression,SubClassOf,computer-language-expression).
+predicate(data-manipulation-language-expression,is,Class).
+predicate(data-manipulation-language-expression,SubClassOf,computer-language-expression).
+predicate(data-manipulation-language-expression,DisjointWith,command-language).
+predicate(lexeme,is,Class).
+predicate(lexeme,SubClassOf,computer-language-expression).
+predicate(formal-expression,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

@@ -1,0 +1,347 @@
+predicate(boolean,is,Datatype).
+predicate(integer,is,Datatype).
+predicate(RTC_complex,is,ObjectProperty).
+predicate(RTC_complex,Domain,Non_Structural_Protein).
+predicate(RTC_complex,Range,Non_Structural_Protein).
+predicate(has_beginning_base,is,ObjectProperty).
+predicate(has_beginning_base,Domain,Stem_loop).
+predicate(has_beginning_base,Range,Nucleobase).
+predicate(has_ending_base,is,ObjectProperty).
+predicate(has_ending_base,Domain,Stem_loop).
+predicate(has_ending_base,Range,Nucleobase).
+predicate(has_first_base,is,ObjectProperty).
+predicate(has_first_codon,is,ObjectProperty).
+predicate(has_first_codon,Domain,RNA_Negative_Messenger,).
+predicate(has_first_codon,Domain,RNA_Positive,).
+predicate(has_first_codon,Domain,Subgenomic_Negative_Messenger,).
+predicate(has_first_codon,Domain,Subgenomic_Positive).
+predicate(has_first_codon,Range,Codon).
+predicate(has_genome_element,is,ObjectProperty).
+predicate(has_genome_element,Domain,Replication_element).
+predicate(has_genome_element,Range,Genome,).
+predicate(has_genome_element,Range,Replication_element).
+predicate(has_next,is,ObjectProperty).
+predicate(has_next,Domain,Nucleobase).
+predicate(has_next,Range,Nucleobase,).
+predicate(has_next,Range,Codon or CodonFS).
+predicate(has_second_base,is,ObjectProperty).
+predicate(has_third_base,is,ObjectProperty).
+predicate(has_transitive_next,is,ObjectProperty).
+predicate(has_transitive_next,Domain,Codon).
+predicate(has_transitive_next,Range,Codon).
+predicate(sequence_polyprotein_pp1a,is,ObjectProperty).
+predicate(sequence_polyprotein_pp1a,Domain,Codon).
+predicate(sequence_polyprotein_pp1a,Range,Codon).
+predicate(sequence_polyprotein_pp1ab,is,ObjectProperty).
+predicate(sequence_polyprotein_pp1ab,Domain,Codon).
+predicate(sequence_polyprotein_pp1ab,Range,CodonFS).
+predicate(frameshifting,is,DataProperty).
+predicate(frameshifting,Domain,Nucleobase).
+predicate(frameshifting,Range,boolean).
+predicate(has_Rank,is,DataProperty).
+predicate(has_Rank,Domain,Codon,).
+predicate(has_Rank,Domain,CodonFS,).
+predicate(has_Rank,Domain,Nucleobase).
+predicate(has_Rank,Range,integer).
+predicate(status,is,DataProperty).
+predicate(status,Domain,Genome).
+predicate(status,Range,boolean).
+predicate(Accessory_protein,is,Class).
+predicate(Accessory_protein,SubClassOf,Genome).
+predicate(Adenine,is,Class).
+predicate(Adenine,SubClassOf,Nucleobase).
+predicate(Alanine,is,Class).
+predicate(Alanine,EquivalentTo,Codon and ((has_first_base only Guanine) and (has_second_base only Cytosine) and (has_third_base only Nucleobase))).
+predicate(Alanine,SubClassOf,Amino_acid,).
+predicate(Alanine,SubClassOf,Codon).
+predicate(Amino_acid,is,Class).
+predicate(Amino_acid,SubClassOf,tRNA).
+predicate(Arginine,is,Class).
+predicate(Arginine,EquivalentTo,Codon and (((has_first_base only Adenine) and (has_second_base only Guanine) and (has_third_base only).
+predicate(Arginine,EquivalentTo,(Adenine or Guanine))) or ((has_first_base only Cytosine) and (has_second_base only Guanine) and (has_third_base only Nucleobase)))).
+predicate(Arginine,SubClassOf,Amino_acid,).
+predicate(Arginine,SubClassOf,Codon).
+predicate(Asparagine,is,Class).
+predicate(Asparagine,EquivalentTo,Codon and ((has_first_base only Adenine) and (has_second_base only Adenine) and (has_third_base only).
+predicate(Asparagine,EquivalentTo,(Cytosine or Uracil)))).
+predicate(Asparagine,SubClassOf,Amino_acid,).
+predicate(Asparagine,SubClassOf,Codon).
+predicate(Aspartic_acid,is,Class).
+predicate(Aspartic_acid,EquivalentTo,Codon and ((has_first_base only Guanine) and (has_second_base only Adenine) and (has_third_base only).
+predicate(Aspartic_acid,EquivalentTo,(Cytosine or Uracil)))).
+predicate(Aspartic_acid,SubClassOf,Amino_acid,).
+predicate(Aspartic_acid,SubClassOf,Codon).
+predicate(Body_TRS,is,Class).
+predicate(Body_TRS,SubClassOf,Genome).
+predicate(Codon,is,Class).
+predicate(Codon,SubClassOf,Global_codon).
+predicate(CodonFS,is,Class).
+predicate(CodonFS,SubClassOf,Global_codon).
+predicate(Complex__RTC,is,Class).
+predicate(Complex__RTC,EquivalentTo,Replication_element and (has_genome_element only).
+predicate(Complex__RTC,EquivalentTo,(nsp10 and nsp12 and nsp14 and nsp7 and nsp8))).
+predicate(Complex__RTC,SubClassOf,Replication_element).
+predicate(Cysteine,is,Class).
+predicate(Cysteine,EquivalentTo,Codon and ((has_first_base only Uracil) and (has_second_base only Guanine) and (has_third_base only).
+predicate(Cysteine,EquivalentTo,(Cytosine or Uracil)))).
+predicate(Cysteine,SubClassOf,Amino_acid,).
+predicate(Cysteine,SubClassOf,Codon).
+predicate(Cytosine,is,Class).
+predicate(Cytosine,SubClassOf,Nucleobase).
+predicate(E,is,Class).
+predicate(E,SubClassOf,Structural_protein).
+predicate(ER,is,Class).
+predicate(ER,EquivalentTo,Replication_element and (has_genome_element only).
+predicate(ER,EquivalentTo,(E and M and Spike))).
+predicate(ER,SubClassOf,Replication_element).
+predicate(ERGIC,is,Class).
+predicate(ERGIC,EquivalentTo,Replication_element and (has_genome_element only).
+predicate(ERGIC,EquivalentTo,(ER and Nucleoprotein_complex))).
+predicate(ERGIC,SubClassOf,Replication_element).
+predicate(Endoribonuclease,is,Class).
+predicate(Endoribonuclease,EquivalentTo,Replication_element and (has_genome_element only).
+predicate(Endoribonuclease,EquivalentTo,(nsp1 and nsp15))).
+predicate(Endoribonuclease,SubClassOf,Replication_element).
+predicate(Genome,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Global_codon,is,Class).
+predicate(Global_codon,SubClassOf,Genome).
+predicate(Glutamic_acid,is,Class).
+predicate(Glutamic_acid,EquivalentTo,Codon and ((has_first_base only Guanine) and (has_second_base only Adenine) and (has_third_base only).
+predicate(Glutamic_acid,EquivalentTo,(Adenine or Guanine)))).
+predicate(Glutamic_acid,SubClassOf,Amino_acid,).
+predicate(Glutamic_acid,SubClassOf,Codon).
+predicate(Glutamine,is,Class).
+predicate(Glutamine,EquivalentTo,Codon and ((has_first_base only Cytosine) and (has_second_base only Adenine) and (has_third_base only).
+predicate(Glutamine,EquivalentTo,(Adenine or Guanine)))).
+predicate(Glutamine,SubClassOf,Amino_acid,).
+predicate(Glutamine,SubClassOf,Codon).
+predicate(Glycine,is,Class).
+predicate(Glycine,EquivalentTo,Codon and ((has_first_base only Guanine) and (has_second_base only Guanine) and (has_third_base only Nucleobase))).
+predicate(Glycine,SubClassOf,Amino_acid,).
+predicate(Glycine,SubClassOf,Codon).
+predicate(Guanine,is,Class).
+predicate(Guanine,SubClassOf,Nucleobase).
+predicate(Helicase,is,Class).
+predicate(Helicase,EquivalentTo,nsp13).
+predicate(Helicase,SubClassOf,Non_Structural_Protein,).
+predicate(Helicase,SubClassOf,Replication_element).
+predicate(Histidine,is,Class).
+predicate(Histidine,EquivalentTo,Codon and ((has_first_base only Cytosine) and (has_second_base only Adenine) and (has_third_base only).
+predicate(Histidine,EquivalentTo,(Cytosine or Uracil)))).
+predicate(Histidine,SubClassOf,Amino_acid,).
+predicate(Histidine,SubClassOf,Codon).
+predicate(Isoleucine,is,Class).
+predicate(Isoleucine,EquivalentTo,Codon and ((has_first_base only Adenine) and (has_second_base only Uracil) and (has_third_base only).
+predicate(Isoleucine,EquivalentTo,(Adenine or Cytosine or Uracil)))).
+predicate(Isoleucine,SubClassOf,Amino_acid,).
+predicate(Isoleucine,SubClassOf,Codon).
+predicate(Leucine,is,Class).
+predicate(Leucine,EquivalentTo,Codon and (((has_first_base only Cytosine) and (has_second_base only Uracil) and (has_third_base only Nucleobase)) or ((has_first_base only Uracil) and (has_second_base only Uracil) and (has_third_base only).
+predicate(Leucine,EquivalentTo,(Adenine or Guanine))))).
+predicate(Leucine,SubClassOf,Amino_acid,).
+predicate(Leucine,SubClassOf,Codon).
+predicate(Lysine,is,Class).
+predicate(Lysine,EquivalentTo,Codon and ((has_first_base only Adenine) and (has_second_base only Adenine) and (has_third_base only).
+predicate(Lysine,EquivalentTo,(Adenine or Guanine)))).
+predicate(Lysine,SubClassOf,Amino_acid,).
+predicate(Lysine,SubClassOf,Codon).
+predicate(Lysine,DisjointWith,Codon and ((has_first_base only Adenine) and (has_second_base only Adenine) and (has_third_base only).
+predicate(Lysine,DisjointWith,(Adenine or Guanine)))).
+predicate(M,is,Class).
+predicate(M,SubClassOf,Structural_protein).
+predicate(Methionine,is,Class).
+predicate(Methionine,EquivalentTo,Start,).
+predicate(Methionine,EquivalentTo,Codon and ((has_first_base only Adenine) and (has_second_base only Uracil) and (has_third_base only Guanine))).
+predicate(Methionine,SubClassOf,Amino_acid,).
+predicate(Methionine,SubClassOf,Codon).
+predicate(N,is,Class).
+predicate(N,SubClassOf,Structural_protein).
+predicate(Non_Structural_Protein,is,Class).
+predicate(Non_Structural_Protein,SubClassOf,Genome).
+predicate(Nucleobase,is,Class).
+predicate(Nucleobase,SubClassOf,Genome,).
+predicate(Nucleobase,SubClassOf,tRNA).
+predicate(Nucleoprotein_complex,is,Class).
+predicate(Nucleoprotein_complex,EquivalentTo,Replication_element and (has_genome_element only).
+predicate(Nucleoprotein_complex,EquivalentTo,(N and RNA_Positive))).
+predicate(Nucleoprotein_complex,SubClassOf,Replication_element).
+predicate(ORF10,is,Class).
+predicate(ORF10,SubClassOf,Accessory_protein).
+predicate(ORF1a,is,Class).
+predicate(ORF1a,EquivalentTo,pp1a).
+predicate(ORF1a,SubClassOf,Open_readin_frame,).
+predicate(ORF1a,SubClassOf,Polyprotein,).
+predicate(ORF1a,SubClassOf,Polyprotein and (has_genome_element only).
+predicate(ORF1a,SubClassOf,(nsp1 and nsp10 and nsp2 and nsp3 and nsp4 and nsp5 and nsp6 and nsp7 and nsp8 and nsp9))).
+predicate(ORF1b,is,Class).
+predicate(ORF1b,SubClassOf,Open_readin_frame,).
+predicate(ORF1b,SubClassOf,Polyprotein,).
+predicate(ORF1b,SubClassOf,Polyprotein and (has_genome_element only).
+predicate(ORF1b,SubClassOf,(nsp12 and nsp13 and nsp14 and nsp15 and nsp16))).
+predicate(ORF3a,is,Class).
+predicate(ORF3a,SubClassOf,Accessory_protein).
+predicate(ORF6,is,Class).
+predicate(ORF6,SubClassOf,Accessory_protein).
+predicate(ORF7a,is,Class).
+predicate(ORF7a,SubClassOf,Accessory_protein).
+predicate(ORF7b,is,Class).
+predicate(ORF7b,SubClassOf,Accessory_protein).
+predicate(ORF8,is,Class).
+predicate(ORF8,SubClassOf,Accessory_protein).
+predicate(Open_readin_frame,is,Class).
+predicate(Open_readin_frame,SubClassOf,Genome).
+predicate(Phenylalanine,is,Class).
+predicate(Phenylalanine,EquivalentTo,Codon and ((has_first_base only Uracil) and (has_second_base only Uracil) and (has_third_base only).
+predicate(Phenylalanine,EquivalentTo,(Cytosine or Uracil)))).
+predicate(Phenylalanine,SubClassOf,Amino_acid,).
+predicate(Phenylalanine,SubClassOf,Codon).
+predicate(Polyprotein,is,Class).
+predicate(Polyprotein,SubClassOf,Genome).
+predicate(Primase,is,Class).
+predicate(Primase,EquivalentTo,nsp8).
+predicate(Primase,SubClassOf,Non_Structural_Protein,).
+predicate(Primase,SubClassOf,Replication_element).
+predicate(Proline,is,Class).
+predicate(Proline,EquivalentTo,Codon and ((has_first_base only Cytosine) and (has_second_base only Cytosine) and (has_third_base only Nucleobase))).
+predicate(Proline,SubClassOf,Amino_acid,).
+predicate(Proline,SubClassOf,Codon).
+predicate(Protease,is,Class).
+predicate(Protease,EquivalentTo,Replication_element and (has_genome_element only).
+predicate(Protease,EquivalentTo,(nsp3 and nsp5))).
+predicate(Protease,SubClassOf,Replication_element).
+predicate(RNA-dependent_RNA_polymerase,is,Class).
+predicate(RNA-dependent_RNA_polymerase,EquivalentTo,nsp12).
+predicate(RNA-dependent_RNA_polymerase,SubClassOf,Non_Structural_Protein,).
+predicate(RNA-dependent_RNA_polymerase,SubClassOf,Replication_element).
+predicate(RNA_Negative_Messenger,is,Class).
+predicate(RNA_Negative_Messenger,SubClassOf,Replication_element).
+predicate(RNA_Positive,is,Class).
+predicate(RNA_Positive,SubClassOf,Replication_element).
+predicate(Replication_element,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Serine,is,Class).
+predicate(Serine,EquivalentTo,Codon and (((has_first_base only Adenine) and (has_second_base only Guanine) and (has_third_base only).
+predicate(Serine,EquivalentTo,(Cytosine or Uracil))) or ((has_first_base only Uracil) and (has_second_base only Cytosine) and (has_third_base only Nucleobase)))).
+predicate(Serine,SubClassOf,Amino_acid,).
+predicate(Serine,SubClassOf,Codon).
+predicate(Spike,is,Class).
+predicate(Spike,SubClassOf,Structural_protein).
+predicate(Start,is,Class).
+predicate(Start,EquivalentTo,Methionine).
+predicate(Start,SubClassOf,Amino_acid,).
+predicate(Start,SubClassOf,Codon).
+predicate(Stem_loop,is,Class).
+predicate(Stem_loop,SubClassOf,Genome).
+predicate(Stop,is,Class).
+predicate(Stop,EquivalentTo,Codon and (((has_first_base only Uracil) and (has_second_base only Adenine) and (has_third_base only).
+predicate(Stop,EquivalentTo,(Adenine or Guanine))) or ((has_first_base only Uracil) and (has_second_base only Guanine) and (has_third_base only Adenine)))).
+predicate(Stop,SubClassOf,Amino_acid,).
+predicate(Stop,SubClassOf,Codon).
+predicate(Structural_protein,is,Class).
+predicate(Structural_protein,SubClassOf,Genome).
+predicate(Subgenomic_Negative_Messenger,is,Class).
+predicate(Subgenomic_Negative_Messenger,SubClassOf,Replication_element).
+predicate(Subgenomic_Positive,is,Class).
+predicate(Subgenomic_Positive,SubClassOf,Replication_element).
+predicate(Threonine,is,Class).
+predicate(Threonine,EquivalentTo,Codon and ((has_first_base only Adenine) and (has_second_base only Cytosine) and (has_third_base only Nucleobase))).
+predicate(Threonine,SubClassOf,Amino_acid,).
+predicate(Threonine,SubClassOf,Codon).
+predicate(Tryptophan,is,Class).
+predicate(Tryptophan,EquivalentTo,Codon and ((has_first_base only Uracil) and (has_second_base only Guanine) and (has_third_base only Guanine))).
+predicate(Tryptophan,SubClassOf,Amino_acid,).
+predicate(Tryptophan,SubClassOf,Codon).
+predicate(Tyrosine,is,Class).
+predicate(Tyrosine,EquivalentTo,Codon and ((has_first_base only Uracil) and (has_second_base only Adenine) and (has_third_base only).
+predicate(Tyrosine,EquivalentTo,(Cytosine or Uracil)))).
+predicate(Tyrosine,SubClassOf,Amino_acid,).
+predicate(Tyrosine,SubClassOf,Codon).
+predicate(UTR3,is,Class).
+predicate(UTR3,SubClassOf,Genome).
+predicate(UTR5,is,Class).
+predicate(UTR5,SubClassOf,Genome).
+predicate(Uracil,is,Class).
+predicate(Uracil,SubClassOf,Nucleobase).
+predicate(Valine,is,Class).
+predicate(Valine,EquivalentTo,Codon and ((has_first_base only Guanine) and (has_second_base only Uracil) and (has_third_base only Nucleobase))).
+predicate(Valine,SubClassOf,Amino_acid,).
+predicate(Valine,SubClassOf,Codon).
+predicate(nsp1,is,Class).
+predicate(nsp1,SubClassOf,Non_Structural_Protein).
+predicate(nsp10,is,Class).
+predicate(nsp10,SubClassOf,Non_Structural_Protein).
+predicate(nsp12,is,Class).
+predicate(nsp12,EquivalentTo,RNA-dependent_RNA_polymerase).
+predicate(nsp12,SubClassOf,Non_Structural_Protein,).
+predicate(nsp12,SubClassOf,Replication_element).
+predicate(nsp13,is,Class).
+predicate(nsp13,EquivalentTo,Helicase).
+predicate(nsp13,SubClassOf,Non_Structural_Protein,).
+predicate(nsp13,SubClassOf,Replication_element).
+predicate(nsp14,is,Class).
+predicate(nsp14,SubClassOf,Non_Structural_Protein).
+predicate(nsp15,is,Class).
+predicate(nsp15,SubClassOf,Non_Structural_Protein).
+predicate(nsp16,is,Class).
+predicate(nsp16,SubClassOf,Non_Structural_Protein).
+predicate(nsp2,is,Class).
+predicate(nsp2,SubClassOf,Non_Structural_Protein).
+predicate(nsp3,is,Class).
+predicate(nsp3,SubClassOf,Non_Structural_Protein).
+predicate(nsp4,is,Class).
+predicate(nsp4,SubClassOf,Non_Structural_Protein).
+predicate(nsp5,is,Class).
+predicate(nsp5,SubClassOf,Non_Structural_Protein).
+predicate(nsp6,is,Class).
+predicate(nsp6,SubClassOf,Non_Structural_Protein).
+predicate(nsp7,is,Class).
+predicate(nsp7,SubClassOf,Non_Structural_Protein).
+predicate(nsp8,is,Class).
+predicate(nsp8,EquivalentTo,Primase).
+predicate(nsp8,SubClassOf,Non_Structural_Protein,).
+predicate(nsp8,SubClassOf,Replication_element).
+predicate(nsp9,is,Class).
+predicate(nsp9,SubClassOf,Non_Structural_Protein).
+predicate(pp1a,is,Class).
+predicate(pp1a,EquivalentTo,ORF1a).
+predicate(pp1a,SubClassOf,Open_readin_frame,).
+predicate(pp1a,SubClassOf,Polyprotein).
+predicate(pp1ab,is,Class).
+predicate(pp1ab,EquivalentTo,Polyprotein and (has_genome_element only).
+predicate(pp1ab,EquivalentTo,(ORF1a and ORF1b))).
+predicate(pp1ab,SubClassOf,Polyprotein).
+predicate(tRNA,is,Class).
+predicate(tRNA,SubClassOf,Replication_element).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,SubClassOf,Open_readin_frame).
+predicate(A1,is,Individual).
+predicate(A1,Types,Adenine).
+predicate(A2,is,Individual).
+predicate(A2,Types,Adenine).
+predicate(A3,is,Individual).
+predicate(A3,Types,Adenine).
+predicate(C1,is,Individual).
+predicate(C1,Types,Cytosine).
+predicate(C2,is,Individual).
+predicate(C2,Types,Cytosine).
+predicate(C3,is,Individual).
+predicate(C3,Types,Cytosine).
+predicate(Codon1,is,Individual).
+predicate(Codon1,Types,Codon).
+predicate(Codon2,is,Individual).
+predicate(Codon2,Types,Codon).
+predicate(Codon3,is,Individual).
+predicate(Codon3,Types,Codon).
+predicate(G1,is,Individual).
+predicate(G1,Types,Guanine).
+predicate(G2,is,Individual).
+predicate(G2,Types,Guanine).
+predicate(G3,is,Individual).
+predicate(G3,Types,Guanine).
+predicate(U1,is,Individual).
+predicate(U1,Types,Uracil).
+predicate(U2,is,Individual).
+predicate(U2,Types,Uracil).
+predicate(U3,is,Individual).
+predicate(U3,Types,Uracil).

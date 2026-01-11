@@ -1,0 +1,16 @@
+predicate(BS,is,Class).
+predicate(HB,is,Class).
+predicate(HB,EquivalentTo,IB).
+predicate(HB,SubClassOf,BS).
+predicate(HB,DisjointWith,MB).
+predicate(HB,DisjointWith,IB).
+predicate(IB,is,Class).
+predicate(IB,EquivalentTo,HB).
+predicate(IB,DisjointWith,HB).
+predicate(MB,is,Class).
+predicate(MB,DisjointWith,HB).
+predicate(MY,is,Class).
+predicate(MY,SubClassOf,HB).
+predicate(P,is,Class).
+predicate(P,SubClassOf,HB).
+predicate(www.w3.org/2002/07/#,is,Class).

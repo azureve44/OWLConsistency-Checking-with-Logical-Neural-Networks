@@ -1,0 +1,342 @@
+has_function is ObjectProperty
+has_output_participant is ObjectProperty
+has_part is ObjectProperty
+has_quality is ObjectProperty
+has_role is ObjectProperty
+has_unit_of_measure is ObjectProperty
+is_realized_in is ObjectProperty
+part_of is ObjectProperty
+quality_of is ObjectProperty
+uses_instrument is ObjectProperty
+NPO_1022 is Class
+NPO_1344 is Class
+NPO_1397 is Class
+NPO_1415 is Class
+NPO_1416 is Class
+NPO_1418 is Class
+NPO_1418 SubClassOf NPO_1416
+NPO_1419 is Class
+NPO_1419 SubClassOf NPO_1418
+NPO_1428 is Class
+NPO_1428 SubClassOf NPO_1415,
+NPO_1428 SubClassOf uses_instrument some NPO_1438
+NPO_1429 is Class
+NPO_1429 SubClassOf NPO_1428
+NPO_1430 is Class
+NPO_1430 SubClassOf NPO_1428,
+NPO_1430 SubClassOf uses_instrument some NPO_1441
+NPO_1438 is Class
+NPO_1441 is Class
+NPO_1451 is Class
+NPO_1451 SubClassOf NPO_1430
+NPO_1454 is Class
+NPO_1454 SubClassOf NPO_1430
+NPO_147 is Class
+NPO_1485 is Class
+NPO_1485 SubClassOf NPO_1540,
+CHEBI_25741, is purl.org/obo//CHEBI#
+CHEBI_25741, is has_part some NPO_924,
+CHEBI_25741, is has_quality some NPO_669
+NPO_1487 is Class
+NPO_1488 is Class
+NPO_1488 EquivalentTo NPO_1344 and (quality_of some NPO_1487)
+NPO_1488 SubClassOf NPO_1344
+NPO_1495 is Class
+NPO_1504 is Class
+NPO_1505 is Class
+NPO_1506 is Class
+NPO_1506 SubClassOf NPO_1505,
+NPO_1506 SubClassOf quality_of some NPO_532
+NPO_1507 is Class
+NPO_1507 SubClassOf NPO_1506
+NPO_1508 is Class
+NPO_1508 SubClassOf NPO_1507,
+NPO_1508 SubClassOf quality_of some NPO_639
+NPO_1511 is Class
+NPO_1511 SubClassOf NPO_888,
+NPO_1511 SubClassOf quality_of some NPO_834
+NPO_1512 is Class
+NPO_1512 SubClassOf NPO_1511
+NPO_1513 is Class
+NPO_1513 SubClassOf NPO_1511
+NPO_1514 is Class
+NPO_1514 SubClassOf NPO_1511
+NPO_1515 is Class
+NPO_1515 SubClassOf NPO_1511
+NPO_1540 is Class
+CHEBI_25741 and (has_part some NPO_210) and (has_quality some NPO_669) is purl.org/obo//CHEBI#
+CHEBI_25741, is purl.org/obo//CHEBI#
+CHEBI_50819 is purl.org/obo//CHEBI#
+NPO_1543 is Class
+NPO_1543 SubClassOf NPO_1540,
+CHEBI_25741, is purl.org/obo//CHEBI#
+CHEBI_25741, is has_part some NPO_818,
+CHEBI_25741, is has_quality some NPO_669
+NPO_1545 is Class
+NPO_1545 SubClassOf NPO_1540,
+CHEBI_25741, is purl.org/obo//CHEBI#
+CHEBI_25741, is has_part some NPO_419,
+CHEBI_25741, is has_quality some NPO_669
+NPO_1546 is Class
+NPO_1546 SubClassOf NPO_1545
+NPO_1547 is Class
+NPO_1547 SubClassOf NPO_1545
+NPO_156 is Class
+NPO_156 SubClassOf NPO_274
+NPO_1617 is Class
+NPO_1622 is Class
+NPO_1623 is Class
+NPO_1628 is Class
+GO_0003677 is purl.org/obo//GO#
+NPO_1659 is Class
+NPO_1663 is Class
+NPO_1692 is Class
+NPO_1698 is Class
+NPO_1698 SubClassOf NPO_821,
+CHEBI_33839 is quality_of some purl.org/obo//CHEBI#
+NPO_1707 is Class
+NPO_1708 is Class
+NPO_1708 SubClassOf NPO_1707
+NPO_1709 is Class
+NPO_1709 SubClassOf NPO_1708
+NPO_1785 is Class
+NPO_1787 is Class
+NPO_1787 SubClassOf NPO_1785
+NPO_1799 is Class
+NPO_1808 is Class
+NPO_1808 EquivalentTo NPO_1344 and (quality_of some NPO_1617)
+NPO_1808 SubClassOf NPO_1344
+NPO_1837 is Class
+NPO_1838 is Class
+NPO_1838 SubClassOf NPO_1692,
+NPO_1838 SubClassOf quality_of some NPO_1837
+NPO_1843 is Class
+CHEBI_24866 is purl.org/obo//CHEBI#
+NPO_1847 is Class
+CHEBI_15377 is purl.org/obo//CHEBI#
+NPO_1848 is Class
+CHEBI_15377 is purl.org/obo//CHEBI#
+NPO_188 is Class
+NPO_188 SubClassOf NPO_549
+NPO_1888 is Class
+NPO_1888 SubClassOf NPO_1495,
+NPO_1888 SubClassOf part_of some NPO_1617
+NPO_1911 is Class
+NPO_1911 SubClassOf NPO_1708
+NPO_1916 is Class
+NPO_1916 SubClassOf NPO_1799
+NPO_1922 is Class
+NPO_1923 is Class
+NPO_1923 SubClassOf NPO_1922
+NPO_1924 is Class
+NPO_1924 SubClassOf NPO_1922
+NPO_1928 is Class
+NPO_1928 SubClassOf NPO_1922
+NPO_1929 is Class
+NPO_1935 is Class
+NPO_1935 SubClassOf NPO_1929
+NPO_1936 is Class
+NPO_1936 SubClassOf NPO_1935
+NPO_1937 is Class
+NPO_1937 SubClassOf NPO_1935
+NPO_1939 is Class
+NPO_1939 SubClassOf NPO_1935
+NPO_1940 is Class
+NPO_1940 SubClassOf NPO_1939
+NPO_1956 is Class
+NPO_1957 is Class
+NPO_1957 SubClassOf NPO_1956
+NPO_1962 is Class
+NPO_1965 is Class
+NPO_1965 SubClassOf NPO_1962
+NPO_1978 is Class
+NPO_1978 SubClassOf NPO_147
+NPO_210 is Class
+NPO_228 is Class
+NPO_228 SubClassOf NPO_351,
+NPO_228 SubClassOf has_part some NPO_948,
+NPO_228 SubClassOf has_part some NPO_976
+NPO_228 DisjointWith NPO_339
+NPO_231 is Class
+NPO_231 SubClassOf NPO_563
+NPO_273 is Class
+NPO_273 SubClassOf NPO_1540,
+CHEBI_25741, is purl.org/obo//CHEBI#
+CHEBI_25741, is has_part some NPO_568,
+CHEBI_25741, is has_quality some NPO_669
+NPO_274 is Class
+NPO_281 is Class
+NPO_286 is Class
+NPO_286 SubClassOf NPO_156
+NPO_306 is Class
+NPO_306 SubClassOf NPO_351,
+NPO_306 SubClassOf has_part some NPO_796,
+NPO_306 SubClassOf has_part some NPO_818
+NPO_320 is Class
+NPO_320 SubClassOf NPO_156
+NPO_339 is Class
+NPO_339 DisjointWith NPO_228
+NPO_342 is Class
+NPO_342 SubClassOf NPO_850
+NPO_351 is Class
+NPO_351 SubClassOf NPO_1978
+NPO_372 is Class
+NPO_372 SubClassOf NPO_231
+NPO_419 is Class
+NPO_435 is Class
+NPO_435 EquivalentTo NPO_442 and (has_role some
+NPO_435 EquivalentTo (NPO_576 and (is_realized_in some NPO_1659)))
+NPO_435 SubClassOf NPO_442
+NPO_439 is Class
+NPO_442 is Class
+NPO_473 is Class
+NPO_473 SubClassOf NPO_549
+NPO_481 is Class
+NPO_481 DisjointWith NPO_543
+NPO_532 is Class
+NPO_543 is Class
+NPO_543 SubClassOf NPO_916
+NPO_543 DisjointWith NPO_481
+NPO_549 is Class
+NPO_549 SubClassOf NPO_633
+NPO_563 is Class
+NPO_564 is Class
+NPO_568 is Class
+NPO_572 is Class
+NPO_572 SubClassOf NPO_549
+NPO_576 is Class
+NPO_614 is Class
+CHEBI_23019, is purl.org/obo//CHEBI#
+CHEBI_17087 is part_of some purl.org/obo//CHEBI#
+NPO_615 is Class
+NPO_633 is Class
+NPO_639 is Class
+NPO_666 is Class
+NPO_666 SubClassOf NPO_858
+NPO_669 is Class
+NPO_670 is Class
+NPO_678 is Class
+NPO_740 is Class
+NPO_740 SubClassOf NPO_944,
+NPO_740 SubClassOf has_part some NPO_339,
+NPO_740 SubClassOf has_part only NPO_228
+NPO_748 is Class
+NPO_748 SubClassOf NPO_563
+NPO_764 is Class
+NPO_764 SubClassOf NPO_1978
+NPO_796 is Class
+NPO_818 is Class
+NPO_821 is Class
+NPO_834 is Class
+NPO_850 is Class
+NPO_850 SubClassOf NPO_274
+NPO_858 is Class
+NPO_858 SubClassOf NPO_274
+NPO_888 is Class
+NPO_916 is Class
+NPO_924 is Class
+NPO_944 is Class
+NPO_948 is Class
+NPO_968 is Class
+NPO_976 is Class
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# SubClassOf NPO_670,
+CHEBI_33693, is purl.org/obo//CHEBI#
+CHEBI_33693, is has_quality some NPO_1504
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# SubClassOf NPO_1978
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# SubClassOf NPO_351,
+CHEBI_22563, is has_part some purl.org/obo//CHEBI#
+CHEBI_36916, is has_part some purl.org/obo//CHEBI#
+CHEBI_36916, is has_quality some NPO_1022
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# SubClassOf NPO_351,
+purl.org/obo//CHEBI# SubClassOf has_part some NPO_615,
+purl.org/obo//CHEBI# SubClassOf has_quality some NPO_1022
+purl.org/obo//CHEBI# is Class
+CHEBI_33862, is purl.org/obo//CHEBI#
+CHEBI_33862, is has_function some
+CHEBI_33862, is (NPO_1397 and (is_realized_in some NPO_564)),
+CHEBI_33862, is has_function some
+GO_0003677)), is (NPO_1622 and (is_realized_in some purl.org/obo//GO#
+GO_0003677)), is has_role some NPO_281,
+GO_0003677)), is has_role some
+GO_0003677)), is (NPO_1663 and (is_realized_in some NPO_1623))
+purl.org/obo//CHEBI# is Class
+CHEBI_33327 is purl.org/obo//CHEBI#
+purl.org/obo//CHEBI# is Class
+CHEBI_33862, is purl.org/obo//CHEBI#
+CHEBI_33862, is has_function some
+CHEBI_33862, is (NPO_1397 and (is_realized_in some NPO_564)),
+CHEBI_33862, is has_function some
+GO_0003677)), is (NPO_1622 and (is_realized_in some purl.org/obo//GO#
+GO_0003677)), is has_role some NPO_281,
+GO_0003677)), is has_role some
+GO_0003677)), is (NPO_1663 and (is_realized_in some NPO_1623))
+purl.org/obo//CHEBI# is Class
+CHEBI_33862, is purl.org/obo//CHEBI#
+CHEBI_33862, is has_function some
+CHEBI_33862, is (NPO_1397 and (is_realized_in some NPO_564)),
+CHEBI_33862, is has_function some
+GO_0003677)), is (NPO_1622 and (is_realized_in some purl.org/obo//GO#
+GO_0003677)), is has_role some NPO_281,
+GO_0003677)), is has_role some
+GO_0003677)), is (NPO_1663 and (is_realized_in some NPO_1623))
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# SubClassOf NPO_1978
+purl.org/obo//CHEBI# is Class
+CHEBI_25741, is purl.org/obo//CHEBI#
+CHEBI_25741, is has_part some NPO_439,
+CHEBI_25741, is has_quality some NPO_669
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# SubClassOf NPO_1978
+purl.org/obo//CHEBI# is Class
+CHEBI_33692 and (has_part some NPO_968) is purl.org/obo//CHEBI#
+CHEBI_33692 is purl.org/obo//CHEBI#
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# is Class
+CHEBI_33240, is purl.org/obo//CHEBI#
+CHEBI_33240, is has_part some NPO_678
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# SubClassOf NPO_273
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# SubClassOf NPO_273
+purl.org/obo//CHEBI# is Class
+purl.org/obo//CHEBI# SubClassOf NPO_273
+purl.org/obo//FIX# is Class
+purl.org/obo//FIX# SubClassOf NPO_1418
+purl.org/obo//GO# is Class
+purl.org/obo//GO# is Class
+GO_0032774 is purl.org/obo//GO#
+purl.org/obo//GO# is Class
+purl.org/obo//GO# is Class
+GO_0016070 and (has_output_participant some purl.org/obo//CHEBI# is purl.org/obo//GO#
+GO_0016070 is purl.org/obo//GO#
+GO_0016070 and (has_output_participant some purl.org/obo//CHEBI# is purl.org/obo//GO#
+purl.org/obo//PATO# is Class
+PATO_0001708, is purl.org/obo//PATO#
+UO_0000001 is has_unit_of_measure some purl.org/obo//UO#
+purl.org/obo//PATO# is Class
+purl.org/obo//UO# is Class
+FiatProcessPart is Class
+FiatProcessPart DisjointWith ProcessBoundary
+Process is Class
+Process DisjointWith ProcessBoundary
+ProcessAggregate is Class
+ProcessAggregate DisjointWith ProcessBoundary
+ProcessBoundary is Class
+ProcessBoundary SubClassOf ProcessualEntity
+ProcessBoundary DisjointWith ProcessualContext
+ProcessBoundary DisjointWith ProcessAggregate
+ProcessBoundary DisjointWith Process
+ProcessBoundary DisjointWith FiatProcessPart
+ProcessualContext is Class
+ProcessualContext DisjointWith ProcessBoundary
+ProcessualEntity is Class
+www.w3.org/2002/07/# is Class

@@ -1,0 +1,61 @@
+is(www.w3.org/2000/01/-schema#,AnnotationProperty):1.0
+is(string,Datatype):1.0
+is(produces,ObjectProperty):1.0
+is(T-HelperCellOrTh-CellOrCD4+Cell,Class):1.0
+SubClassOf(T-HelperCellOrTh-CellOrCD4+Cell,T-CellOrT-Lymphocyte):1.0
+is(ActivatedCD41-T-Cell,Class):1.0
+SubClassOf(ActivatedCD41-T-Cell,ActivatedT-Cell,):1.0
+SubClassOf(ActivatedCD41-T-Cell,produces some IL-31):1.0
+is(ActivatedT-Cell,Class):1.0
+is(ActivatedTH17-Cell,Class):1.0
+SubClassOf(ActivatedTH17-Cell,TH17-Cell,):1.0
+SubClassOf(ActivatedTH17-Cell,produces some IL-22,):1.0
+SubClassOf(ActivatedTH17-Cell,produces some IL-26):1.0
+is(Cell,Class):1.0
+is(GammaDeltaT-Cell,Class):1.0
+SubClassOf(GammaDeltaT-Cell,T-CellOrT-Lymphocyte):1.0
+is(HelperT-Cell,Class):1.0
+SubClassOf(HelperT-Cell,T-CellOrT-Lymphocyte):1.0
+is(IL-10,Class):1.0
+is(IL-16,Class):1.0
+is(IL-22,Class):1.0
+is(IL-24,Class):1.0
+DisjointWith(IL-24,IL-36RA):1.0
+is(IL-26,Class):1.0
+is(IL-3,Class):1.0
+is(IL-31,Class):1.0
+is(IL-32,Class):1.0
+is(IL-36A,Class):1.0
+is(IL-36B,Class):1.0
+is(IL-36G,Class):1.0
+is(IL-36RA,Class):1.0
+DisjointWith(IL-36RA,IL-24):1.0
+is(KillerT-Cell,Class):1.0
+SubClassOf(KillerT-Cell,T-CellOrT-Lymphocyte):1.0
+is(Lymphocyte,Class):1.0
+is(RegulatoryT-CellAbbrTreg-Cell,Class):1.0
+SubClassOf(RegulatoryT-CellAbbrTreg-Cell,T-CellOrT-Lymphocyte):1.0
+is(RestingT-Cell,Class):1.0
+SubClassOf(RestingT-Cell,T-CellOrT-Lymphocyte):1.0
+is(T-CellOrT-Lymphocyte,Class):1.0
+SubClassOf(T-CellOrT-Lymphocyte,Cell,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,Lymphocyte,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some IL-10,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some IL-16,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some IL-24,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some IL-3,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some IL-32,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some IL-36A,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some IL-36B,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some IL-36G,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some IL-36RA,):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces some):1.0
+SubClassOf(T-CellOrT-Lymphocyte,(IL-24 and IL-36RA),):1.0
+SubClassOf(T-CellOrT-Lymphocyte,produces only IL-36RA):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(TH17-Cell,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(produces some IL-3,Class):1.0
+SubClassOf(produces some IL-3,GammaDeltaT-Cell):1.0

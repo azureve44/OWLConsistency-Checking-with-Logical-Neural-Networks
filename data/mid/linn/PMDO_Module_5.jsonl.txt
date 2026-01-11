@@ -1,0 +1,25 @@
+predicate(hasClassified,is,ObjectProperty).
+predicate(isClassifierIn,is,ObjectProperty).
+predicate(Class,is,Class).
+predicate(ClassOfAbstractObject,is,Class).
+predicate(ClassOfAbstractObject,DisjointWith,ClassOfIndividual).
+predicate(ClassOfArrangedIndividual,is,Class).
+predicate(ClassOfArrangedIndividual,SubClassOf,ClassOfIndividual).
+predicate(ClassOfEvent,is,Class).
+predicate(ClassOfEvent,SubClassOf,ClassOfIndividual).
+predicate(ClassOfIndividual,is,Class).
+predicate(ClassOfIndividual,SubClassOf,Class,).
+predicate(ClassOfIndividual,SubClassOf,isClassifierIn only (hasClassified only PossibleIndividual)).
+predicate(ClassOfIndividual,DisjointWith,ClassOfAbstractObject).
+predicate(ClassOfPeriodInTime,is,Class).
+predicate(ClassOfPeriodInTime,SubClassOf,ClassOfIndividual).
+predicate(IndividualDimension,is,Class).
+predicate(IndividualDimension,SubClassOf,ClassOfIndividual).
+predicate(ParticipatingRoleAndDomain,is,Class).
+predicate(ParticipatingRoleAndDomain,SubClassOf,ClassOfIndividual).
+predicate(PossibleIndividual,is,Class).
+predicate(Property,is,Class).
+predicate(Property,SubClassOf,ClassOfIndividual).
+predicate(Status,is,Class).
+predicate(Status,SubClassOf,ClassOfIndividual).
+predicate(www.w3.org/2002/07/#,is,Class).

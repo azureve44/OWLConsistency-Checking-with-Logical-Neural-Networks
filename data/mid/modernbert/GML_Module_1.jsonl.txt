@@ -1,0 +1,890 @@
+www.w3.org/2000/01/-schema# is Datatype.
+anyURI is Datatype.
+boolean is Datatype.
+date is Datatype.
+dateTime is Datatype.
+double is Datatype.
+duration is Datatype.
+gYear is Datatype.
+gYearMonth is Datatype.
+int is Datatype.
+positiveInteger is Datatype.
+string is Datatype.
+_duration is ObjectProperty.
+_duration Characteristics Functional.
+_duration Domain TimePeriod.
+_duration Range TimeDuration.
+baseCurve is ObjectProperty.
+baseCurve Characteristics Functional.
+baseCurve Domain OrientableCurve.
+baseCurve Range _Curve.
+baseSurface is ObjectProperty.
+baseSurface Characteristics Functional.
+baseSurface Domain OrientableSurface.
+baseSurface Range _Surface.
+begin is ObjectProperty.
+complex is ObjectProperty.
+complex Characteristics Functional.
+complex Domain GeometricComplexProperty_complex.
+complex Range GeometricComplex.
+coord is ObjectProperty.
+curve is ObjectProperty.
+curve Characteristics Functional.
+curve Domain GeometricComplexProperty_curve.
+curve Range CompositeCurve.
+curveMember is ObjectProperty.
+curveMembers is ObjectProperty.
+curveMembers Characteristics Functional.
+curveMembers Domain MultiCurve.
+curveMembers Range _Curve.
+curveProperty is ObjectProperty.
+curveProperty Characteristics Functional.
+curveProperty Domain Edge.
+curveProperty Range _Curve.
+description is ObjectProperty.
+description Characteristics Functional.
+description Domain _GML.
+description Range StringOrRef.
+directedEdge is ObjectProperty.
+directedFace is ObjectProperty.
+directedNode is ObjectProperty.
+directedTopoSolid is ObjectProperty.
+domain is ObjectProperty.
+domain Characteristics Functional.
+domain Domain AbstractCoverage.
+domain Range DomainSet.
+end is ObjectProperty.
+endAngle is ObjectProperty.
+endAngle Characteristics Functional.
+endAngle Domain ArcByCenterPoint.
+endAngle Range Angle.
+exterior_Ring is ObjectProperty.
+exterior_Surface is ObjectProperty.
+exterior_Surface Characteristics Functional.
+exterior_Surface Domain Solid.
+exterior_Surface Range _Surface.
+geometryMember is ObjectProperty.
+geometryMember Domain MultiGeometry.
+geometryMember Range _Geometry.
+geometryMembers is ObjectProperty.
+geometryMembers Characteristics Functional.
+geometryMembers Domain MultiGeometry.
+geometryMembers Range _Geometry.
+has_Geometry is ObjectProperty.
+has_Geometry Characteristics Functional.
+has_Geometry Domain DomainSet.
+has_Geometry Range _Geometry.
+has_TimeObject is ObjectProperty.
+has_TimeObject Characteristics Functional.
+has_TimeObject Domain DomainSet.
+has_TimeObject Range _TimeObject.
+indeterminatePosition is ObjectProperty.
+indeterminatePosition Characteristics Functional.
+indeterminatePosition Domain TimePosition.
+indeterminatePosition Range TimeIndeterminateVlue.
+interior_Ring is ObjectProperty.
+interior_Surface is ObjectProperty.
+interpolation is ObjectProperty.
+knot is ObjectProperty.
+knotType is ObjectProperty.
+lineStringMember is ObjectProperty.
+lineStringMember Domain MultiLineString.
+lineStringMember Range LineString.
+metadataProperty is ObjectProperty.
+metadataProperty Domain _GML.
+metadataProperty Range MetadataPropertyChoice.
+name is ObjectProperty.
+name Domain _GML.
+name Range Code.
+normal is ObjectProperty.
+normal Domain ArcStringByBulge.
+normal Range Vector.
+orientation is ObjectProperty.
+patches is ObjectProperty.
+patches Domain Surface.
+patches Range _SurfacePatch.
+pointMember is ObjectProperty.
+pointMember Domain MultiPoint.
+pointMember Range Point.
+pointMembers is ObjectProperty.
+pointMembers Characteristics Functional.
+pointMembers Domain MultiPoint.
+pointMembers Range Point.
+pointProperty is ObjectProperty.
+pointProperty Characteristics Functional.
+pointProperty Domain Node.
+pointProperty Range Point.
+pointRep is ObjectProperty.
+pointRep Characteristics Functional.
+pointRep Domain Position.
+pointRep Range Point.
+polygonMember is ObjectProperty.
+polygonMember Domain MultiPolygon.
+polygonMember Range Polygon.
+pos is ObjectProperty.
+position is ObjectProperty.
+position Characteristics Functional.
+position Domain Point.
+position Range DirectPositionChoice.
+positions is ObjectProperty.
+range is ObjectProperty.
+range Characteristics Functional.
+range Domain AbstractCoverage.
+range Range RangeSet.
+segments is ObjectProperty.
+segments Domain Curve.
+segments Range _CurveSegment.
+solid is ObjectProperty.
+solid Characteristics Functional.
+solid Domain GeometricComplexProperty_solid.
+solid Range CompositeSolid.
+solidMembers is ObjectProperty.
+solidMembers Characteristics Functional.
+solidMembers Domain MultiSolid.
+solidMembers Range _Solid.
+solideMember is ObjectProperty.
+startAngle is ObjectProperty.
+startAngle Characteristics Functional.
+startAngle Domain ArcByCenterPoint.
+startAngle Range Angle.
+surface is ObjectProperty.
+surface Characteristics Functional.
+surface Domain GeometricComplexProperty_surface.
+surface Range CompositeSurface.
+surfaceMember is ObjectProperty.
+surfaceMembers is ObjectProperty.
+surfaceMembers Characteristics Functional.
+surfaceMembers Domain MultiSurface.
+surfaceMembers Range _Surface.
+surfaceProperty is ObjectProperty.
+surfaceProperty Characteristics Functional.
+surfaceProperty Domain Face.
+surfaceProperty Range _Surface.
+timePosition is ObjectProperty.
+timePosition Domain EnvelopeWithTimePeriod.
+timePosition Range TimePosition.
+unit is ObjectProperty.
+unit Characteristics Functional.
+unit Domain TimeIntervalLength.
+unit Range TimeUnitType.
+vectorAtStart is ObjectProperty.
+vectorAtStart Characteristics Functional.
+vectorAtStart Domain CubicSpline.
+vectorAtStart Range Vector.
+verctorAtEnd is ObjectProperty.
+verctorAtEnd Characteristics Functional.
+verctorAtEnd Domain CubicSpline.
+verctorAtEnd Range Vector.
+X is DataProperty.
+X Domain Coord.
+X Range double.
+Y is DataProperty.
+Y Domain Coord.
+Y Range double.
+Z is DataProperty.
+Z Domain Coord.
+Z Range double.
+anyURI is DataProperty.
+bulge is DataProperty.
+bulge Domain ArcStringByBulge.
+bulge Range double.
+calendarEraName is DataProperty.
+calendarEraName Characteristics Functional.
+calendarEraName Domain TimePosition.
+calendarEraName Range string.
+code is DataProperty.
+code Characteristics Functional.
+code Domain Code.
+code Range string.
+codeSpace is DataProperty.
+codeSpace Characteristics Functional.
+codeSpace Domain Code.
+codeSpace Range anyURI.
+conversionToPreferredUnit is DataProperty.
+conversionToPreferredUnit Characteristics Functional.
+conversionToPreferredUnit Domain ConventionalUnit.
+conversionToPreferredUnit Range string.
+date is DataProperty.
+date Characteristics Functional.
+date Domain TemporalPosition_date.
+date Range date.
+dateTime is DataProperty.
+dateTime Characteristics Functional.
+dateTime Domain TemporalPosition_dateTime.
+dateTime Range dateTime.
+decimal is DataProperty.
+degree is DataProperty.
+duration is DataProperty.
+duration Characteristics Functional.
+duration Domain TimeDuration_duration.
+duration Range duration.
+factor is DataProperty.
+factor Characteristics Functional.
+factor Domain TimeIntervalLength.
+factor Range int.
+gYear is DataProperty.
+gYear Characteristics Functional.
+gYear Domain TemporalPosition_gYear.
+gYear Range gYear.
+gYearMonth is DataProperty.
+gYearMonth Characteristics Functional.
+gYearMonth Domain TemporalPosition_gYearMonth.
+gYearMonth Range gYearMonth.
+id is DataProperty.
+isPolynomial is DataProperty.
+isPolynomial Characteristics Functional.
+isPolynomial Domain BSpline.
+isPolynomial Range boolean.
+numArc is DataProperty.
+numDerivativeInterior is DataProperty.
+numDerivativeInterior Characteristics Functional.
+numDerivativeInterior Domain _CurveSegment.
+numDerivativeInterior Range int.
+numDerivativesAtEnd is DataProperty.
+numDerivativesAtEnd Characteristics Functional.
+numDerivativesAtEnd Domain _CurveSegment.
+numDerivativesAtEnd Range int.
+numDerivativesAtStart is DataProperty.
+numDerivativesAtStart Characteristics Functional.
+numDerivativesAtStart Domain _CurveSegment.
+numDerivativesAtStart Range int.
+radius is DataProperty.
+radius Characteristics Functional.
+radius Domain ArcByCenterPoint.
+radius Range double.
+radix is DataProperty.
+radix Characteristics Functional.
+radix Domain TimeIntervalLength.
+radix Range positiveInteger.
+unitDerivation is DataProperty.
+unitsSystem is DataProperty.
+unitsSystem Characteristics Functional.
+unitsSystem Domain BaseUnit.
+unitsSystem Range anyURI.
+value is DataProperty.
+protege.stanford.edu/plugins//protege# is DataProperty.
+PAL-CONSTRAINT is protege.stanford.edu/plugins//protege#.
+PAL-CONSTRAINT Range string.
+protege.stanford.edu/plugins//protege# is DataProperty.
+PAL-CONSTRAINT is protege.stanford.edu/plugins//protege#.
+PAL-CONSTRAINT Range string.
+protege.stanford.edu/plugins//protege# is DataProperty.
+PAL-CONSTRAINT is protege.stanford.edu/plugins//protege#.
+PAL-CONSTRAINT Range string.
+protege.stanford.edu/plugins//protege# is DataProperty.
+PAL-CONSTRAINT is protege.stanford.edu/plugins//protege#.
+PAL-CONSTRAINT Range string.
+CurveInterpolation is Class.
+Thing is www.w3.org/2002/07/#.
+KnotType is Class.
+Thing is www.w3.org/2002/07/#.
+TimeIndeterminateVlue is Class.
+Thing is www.w3.org/2002/07/#.
+AbstractCoverage is Class.
+AbstractCoverage SubClassOf AbstractFeature,.
+Thing, is domain exactly 1 www.w3.org/2002/07/#.
+Thing is range exactly 1 www.w3.org/2002/07/#.
+AbstractFeature is Class.
+Thing is www.w3.org/2002/07/#.
+Angle is Class.
+Thing is www.w3.org/2002/07/#.
+Arc is Class.
+Arc SubClassOf ArcString.
+ArcByBulge is Class.
+ArcByBulge SubClassOf ArcStringByBulge,.
+Thing, is positions exactly 2 www.w3.org/2002/07/#.
+Thing, is numArc value "1"^^int,.
+Literal is numArc exactly 1 www.w3.org/2000/01/-schema#.
+ArcByCenterPoint is Class.
+ArcByCenterPoint SubClassOf _CurveSegment,.
+ArcByCenterPoint SubClassOf interpolation only CurveInterpolation,.
+ArcByCenterPoint SubClassOf interpolation value circularArcCenterPointWithRadius,.
+Thing, is endAngle min 0 www.w3.org/2002/07/#.
+Thing, is startAngle min 0 www.w3.org/2002/07/#.
+Thing, is interpolation exactly 1 www.w3.org/2002/07/#.
+Thing, is positions exactly 1 www.w3.org/2002/07/#.
+Thing, is endAngle max 1 www.w3.org/2002/07/#.
+Thing, is startAngle max 1 www.w3.org/2002/07/#.
+Thing, is numArc value "1"^^int,.
+Literal, is numArc exactly 1 www.w3.org/2000/01/-schema#.
+Literal is radius exactly 1 www.w3.org/2000/01/-schema#.
+ArcString is Class.
+ArcString SubClassOf _CurveSegment,.
+ArcString SubClassOf interpolation only CurveInterpolation,.
+ArcString SubClassOf interpolation value circularArc3Points,.
+Thing, is positions min 3 www.w3.org/2002/07/#.
+Thing, is interpolation exactly 1 www.w3.org/2002/07/#.
+Literal, is numArc min 0 www.w3.org/2000/01/-schema#.
+Literal is numArc max 1 www.w3.org/2000/01/-schema#.
+ArcStringByBulge is Class.
+ArcStringByBulge SubClassOf _CurveSegment,.
+ArcStringByBulge SubClassOf interpolation only CurveInterpolation,.
+ArcStringByBulge SubClassOf interpolation value circularArc2PointWithBulge,.
+Thing, is normal min 0 www.w3.org/2002/07/#.
+Thing, is positions min 2 www.w3.org/2002/07/#.
+Thing, is interpolation exactly 1 www.w3.org/2002/07/#.
+Literal, is bulge min 0 www.w3.org/2000/01/-schema#.
+Literal, is numArc min 0 www.w3.org/2000/01/-schema#.
+Literal is numArc max 1 www.w3.org/2000/01/-schema#.
+BSpline is Class.
+BSpline SubClassOf _CurveSegment,.
+BSpline SubClassOf interpolation only CurveInterpolation,.
+Thing, is knot min 2 www.w3.org/2002/07/#.
+Thing, is knotType min 0 www.w3.org/2002/07/#.
+Thing, is positions min 0 www.w3.org/2002/07/#.
+Thing, is interpolation exactly 1 www.w3.org/2002/07/#.
+Thing, is knotType max 1 www.w3.org/2002/07/#.
+Literal, is isPolynomial min 0 www.w3.org/2000/01/-schema#.
+Literal, is degree exactly 1 www.w3.org/2000/01/-schema#.
+Literal is isPolynomial max 1 www.w3.org/2000/01/-schema#.
+BaseUnit is Class.
+BaseUnit SubClassOf UnitDefinition,.
+Literal is unitsSystem exactly 1 www.w3.org/2000/01/-schema#.
+Bezier is Class.
+Bezier SubClassOf BSpline,.
+Bezier SubClassOf interpolation only CurveInterpolation,.
+Bezier SubClassOf interpolation value polynomialSpline,.
+Thing, is interpolation exactly 1 www.w3.org/2002/07/#.
+Thing, is knot exactly 2 www.w3.org/2002/07/#.
+Thing, is knotType exactly 0 www.w3.org/2002/07/#.
+Thing, is isPolynomial value true,.
+Literal is isPolynomial exactly 1 www.w3.org/2000/01/-schema#.
+Boolean is Class.
+Boolean SubClassOf _ScalarValue.
+BooleanList is Class.
+BooleanList SubClassOf _ScalarValueList.
+BoundedByChoice is Class.
+Thing is www.w3.org/2002/07/#.
+Category is Class.
+Category SubClassOf _ScalarValue.
+CategoryList is Class.
+CategoryList SubClassOf _ScalarValueList.
+CircleByCenterPoint is Class.
+CircleByCenterPoint SubClassOf ArcByCenterPoint.
+Code is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is codeSpace min 0 www.w3.org/2000/01/-schema#.
+Literal, is code exactly 1 www.w3.org/2000/01/-schema#.
+Literal is codeSpace max 1 www.w3.org/2000/01/-schema#.
+CompositeCurve is Class.
+CompositeCurve SubClassOf _Curve,.
+Thing is curveMember min 1 www.w3.org/2002/07/#.
+CompositeSolid is Class.
+CompositeSolid SubClassOf _Solid,.
+Thing is solideMember min 1 www.w3.org/2002/07/#.
+CompositeSurface is Class.
+CompositeSurface SubClassOf _Surface,.
+Thing is surfaceMember min 1 www.w3.org/2002/07/#.
+CompositeValue is Class.
+ContainerChoice is Class.
+Thing is www.w3.org/2002/07/#.
+ContinuousCoverage is Class.
+ContinuousCoverage SubClassOf AbstractCoverage.
+ConventionalUnit is Class.
+ConventionalUnit SubClassOf UnitDefinition,.
+Literal, is unitDerivation min 0 www.w3.org/2000/01/-schema#.
+Literal, is conversionToPreferredUnit exactly 1 www.w3.org/2000/01/-schema#.
+Literal is unitDerivation max 1 www.w3.org/2000/01/-schema#.
+Coord is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is Y min 0 www.w3.org/2000/01/-schema#.
+Literal, is Z min 0 www.w3.org/2000/01/-schema#.
+Literal, is X exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is Y max 1 www.w3.org/2000/01/-schema#.
+Literal is Z max 1 www.w3.org/2000/01/-schema#.
+Count is Class.
+Count SubClassOf _ScalarValue.
+CountList is Class.
+CountList SubClassOf _ScalarValueList.
+CubicSpline is Class.
+CubicSpline SubClassOf _CurveSegment,.
+CubicSpline SubClassOf interpolation only CurveInterpolation,.
+CubicSpline SubClassOf interpolation value cubicSpline,.
+Thing, is positions min 3 www.w3.org/2002/07/#.
+Thing, is interpolation exactly 1 www.w3.org/2002/07/#.
+Thing, is vectorAtStart exactly 1 www.w3.org/2002/07/#.
+Thing, is verctorAtEnd exactly 1 www.w3.org/2002/07/#.
+Thing, is degree value "3"^^int,.
+Literal is degree exactly 1 www.w3.org/2000/01/-schema#.
+Curve is Class.
+Curve SubClassOf _Curve,.
+Thing is segments min 1 www.w3.org/2002/07/#.
+CurveInterpolation is Class.
+CurveInterpolation SubClassOf Interpolation.
+CurveInterpolation DisjointWith SurfaceInterpolation.
+Definition is Class.
+Definition SubClassOf _GML.
+DerivedUnit is Class.
+DerivedUnit SubClassOf UnitDefinition,.
+Literal is unitDerivation exactly 1 www.w3.org/2000/01/-schema#.
+Dictionary is Class.
+Dictionary SubClassOf _GML.
+DirectPosition is Class.
+DirectPosition SubClassOf DoubleList.
+DirectPositionChoice is Class.
+DiscreteCoverage is Class.
+DiscreteCoverage SubClassOf AbstractCoverage.
+DomainSet is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is has_Geometry exactly 1 www.w3.org/2002/07/#.
+Thing is has_TimeObject exactly 1 www.w3.org/2002/07/#.
+DoubleList is Class.
+Thing is www.w3.org/2002/07/#.
+Edge is Class.
+Edge SubClassOf IsolatedChoice,.
+Edge SubClassOf _TopoPrimitive,.
+Thing, is curveProperty min 0 www.w3.org/2002/07/#.
+Thing, is directedFace min 0 www.w3.org/2002/07/#.
+Thing, is directedNode exactly 2 www.w3.org/2002/07/#.
+Thing is curveProperty max 1 www.w3.org/2002/07/#.
+Envelope is Class.
+Envelope SubClassOf BoundedByChoice.
+EnvelopeWithTimePeriod is Class.
+EnvelopeWithTimePeriod SubClassOf Envelope,.
+Thing is timePosition exactly 2 www.w3.org/2002/07/#.
+Face is Class.
+Face SubClassOf ContainerChoice,.
+Face SubClassOf _TopoPrimitive,.
+Thing, is directedEdge min 1 www.w3.org/2002/07/#.
+Thing, is directedTopoSolid min 0 www.w3.org/2002/07/#.
+Thing, is surfaceProperty min 0 www.w3.org/2002/07/#.
+Thing, is directedTopoSolid max 2 www.w3.org/2002/07/#.
+Thing is surfaceProperty max 1 www.w3.org/2002/07/#.
+GeometricComplex is Class.
+GeometricComplexProperty is Class.
+Thing is www.w3.org/2002/07/#.
+GeometricComplexProperty_complex is Class.
+GeometricComplexProperty_complex SubClassOf GeometricComplexProperty,.
+Thing is complex exactly 1 www.w3.org/2002/07/#.
+Thing DisjointWith GeometricComplexProperty_surface.
+Thing DisjointWith GeometricComplexProperty_solid.
+Thing DisjointWith GeometricComplexProperty_curve.
+GeometricComplexProperty_curve is Class.
+GeometricComplexProperty_curve SubClassOf GeometricComplexProperty,.
+Thing is curve exactly 1 www.w3.org/2002/07/#.
+Thing DisjointWith GeometricComplexProperty_surface.
+Thing DisjointWith GeometricComplexProperty_solid.
+Thing DisjointWith GeometricComplexProperty_complex.
+GeometricComplexProperty_solid is Class.
+GeometricComplexProperty_solid SubClassOf GeometricComplexProperty,.
+Thing is solid exactly 1 www.w3.org/2002/07/#.
+Thing DisjointWith GeometricComplexProperty_surface.
+Thing DisjointWith GeometricComplexProperty_curve.
+Thing DisjointWith GeometricComplexProperty_complex.
+GeometricComplexProperty_surface is Class.
+GeometricComplexProperty_surface SubClassOf GeometricComplexProperty,.
+Thing is surface exactly 1 www.w3.org/2002/07/#.
+Thing DisjointWith GeometricComplexProperty_solid.
+Thing DisjointWith GeometricComplexProperty_curve.
+Thing DisjointWith GeometricComplexProperty_complex.
+GriddedCoverage is Class.
+GriddedCoverage SubClassOf DiscreteCoverage.
+Interpolation is Class.
+Thing is www.w3.org/2002/07/#.
+IsolatedChoice is Class.
+Thing is www.w3.org/2002/07/#.
+LineString is Class.
+LineString SubClassOf _Curve.
+LineStringSegment is Class.
+LineStringSegment SubClassOf _CurveSegment,.
+LineStringSegment SubClassOf interpolation only CurveInterpolation,.
+LineStringSegment SubClassOf interpolation value linear,.
+Thing, is positions min 2 www.w3.org/2002/07/#.
+Thing is interpolation exactly 1 www.w3.org/2002/07/#.
+LinearRing is Class.
+LinearRing SubClassOf _Ring,.
+Thing is positions min 4 www.w3.org/2002/07/#.
+LocationChoice is Class.
+Thing is www.w3.org/2002/07/#.
+LocationKeyWord is Class.
+LocationKeyWord SubClassOf Code,.
+LocationKeyWord SubClassOf LocationChoice.
+LocationString is Class.
+LocationString SubClassOf LocationChoice,.
+LocationString SubClassOf StringOrRef.
+MetadataPropertyChoice is Class.
+Thing is www.w3.org/2002/07/#.
+MultiCurve is Class.
+MultiCurve SubClassOf _GeometricAggregate,.
+Thing, is curveMember min 0 www.w3.org/2002/07/#.
+Thing, is curveMembers min 0 www.w3.org/2002/07/#.
+Thing is curveMembers max 1 www.w3.org/2002/07/#.
+MultiGeometry is Class.
+MultiGeometry SubClassOf _GeometricAggregate,.
+Thing, is geometryMember min 0 www.w3.org/2002/07/#.
+Thing, is geometryMembers min 0 www.w3.org/2002/07/#.
+Thing is geometryMembers max 1 www.w3.org/2002/07/#.
+MultiLineString is Class.
+MultiLineString SubClassOf _GeometricAggregate,.
+Thing is lineStringMember min 0 www.w3.org/2002/07/#.
+MultiPoint is Class.
+MultiPoint SubClassOf _GeometricAggregate,.
+Thing, is pointMember min 0 www.w3.org/2002/07/#.
+Thing, is pointMembers min 0 www.w3.org/2002/07/#.
+Thing is pointMembers max 1 www.w3.org/2002/07/#.
+MultiPointCoverage is Class.
+MultiPointCoverage SubClassOf DiscreteCoverage.
+MultiPolygon is Class.
+MultiPolygon SubClassOf _GeometricAggregate,.
+Thing is polygonMember min 0 www.w3.org/2002/07/#.
+MultiSolid is Class.
+MultiSolid SubClassOf _GeometricAggregate,.
+Thing, is solidMembers min 0 www.w3.org/2002/07/#.
+Thing, is solideMember min 0 www.w3.org/2002/07/#.
+Thing is solidMembers max 1 www.w3.org/2002/07/#.
+MultiSurface is Class.
+MultiSurface SubClassOf _GeometricAggregate,.
+Thing, is surfaceMember min 0 www.w3.org/2002/07/#.
+Thing, is surfaceMembers min 0 www.w3.org/2002/07/#.
+Thing is surfaceMembers max 1 www.w3.org/2002/07/#.
+MultiSurfaceCoverage is Class.
+MultiSurfaceCoverage SubClassOf DiscreteCoverage.
+Node is Class.
+Node SubClassOf IsolatedChoice,.
+Node SubClassOf _TopoPrimitive,.
+Thing, is directedEdge min 0 www.w3.org/2002/07/#.
+Thing, is pointProperty min 0 www.w3.org/2002/07/#.
+Thing is pointProperty max 1 www.w3.org/2002/07/#.
+Null is Class.
+Null SubClassOf BoundedByChoice,.
+Null SubClassOf Value.
+OrientableCurve is Class.
+OrientableCurve SubClassOf _Curve,.
+Thing, is orientation min 0 www.w3.org/2002/07/#.
+Thing, is baseCurve exactly 1 www.w3.org/2002/07/#.
+Thing is orientation max 1 www.w3.org/2002/07/#.
+OrientableSurface is Class.
+OrientableSurface SubClassOf _Surface,.
+Thing, is orientation min 0 www.w3.org/2002/07/#.
+Thing, is baseSurface exactly 1 www.w3.org/2002/07/#.
+Thing is orientation max 1 www.w3.org/2002/07/#.
+Point is Class.
+Point SubClassOf _GeometricPrimitive,.
+Thing is position exactly 1 www.w3.org/2002/07/#.
+PointArray is Class.
+Thing is www.w3.org/2002/07/#.
+PointArray_coordinates is Class.
+PointArray_coordinates SubClassOf PointArray.
+PointArray_coordinates DisjointWith PointArray_positions.
+PointArray_positions is Class.
+PointArray_positions SubClassOf PointArray,.
+Thing is positions min 1 www.w3.org/2002/07/#.
+Thing DisjointWith PointArray_coordinates.
+Polygon is Class.
+Polygon SubClassOf _Surface,.
+Thing, is exterior_Ring min 0 www.w3.org/2002/07/#.
+Thing, is interior_Ring min 0 www.w3.org/2002/07/#.
+Thing is exterior_Ring max 1 www.w3.org/2002/07/#.
+PolygonPatch is Class.
+PolygonPatch SubClassOf _SurfacePatch,.
+PolygonPatch SubClassOf interpolation only SurfaceInterpolation,.
+PolygonPatch SubClassOf interpolation value planar,.
+Thing, is exterior_Ring min 0 www.w3.org/2002/07/#.
+Thing, is interior_Ring min 0 www.w3.org/2002/07/#.
+Thing, is interpolation exactly 1 www.w3.org/2002/07/#.
+Thing is exterior_Ring max 1 www.w3.org/2002/07/#.
+Position is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing is pointRep exactly 1 www.w3.org/2002/07/#.
+Position_coord is Class.
+Position_coord SubClassOf Position,.
+Thing is coord exactly 1 www.w3.org/2002/07/#.
+Thing DisjointWith Position_pos.
+Position_pos is Class.
+Position_pos SubClassOf Position,.
+Thing is pos exactly 1 www.w3.org/2002/07/#.
+Thing DisjointWith Position_coord.
+Quantity is Class.
+Quantity SubClassOf _ScalarValue.
+QuantityList is Class.
+QuantityList SubClassOf _ScalarValueList.
+RangeSet is Class.
+Thing is www.w3.org/2002/07/#.
+Rectangle is Class.
+Rectangle SubClassOf _SurfacePatch.
+RectifiedCoverage is Class.
+RectifiedCoverage SubClassOf DiscreteCoverage.
+Ring is Class.
+Ring SubClassOf _Ring,.
+Thing is curveMember min 1 www.w3.org/2002/07/#.
+Sign is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is {negative , positive}.
+Solid is Class.
+Solid SubClassOf _Solid,.
+Thing, is exterior_Surface min 0 www.w3.org/2002/07/#.
+Thing, is interior_Surface min 0 www.w3.org/2002/07/#.
+Thing is exterior_Surface max 1 www.w3.org/2002/07/#.
+StringOrRef is Class.
+Thing is www.w3.org/2002/07/#.
+Surface is Class.
+Surface SubClassOf _Surface,.
+Thing is patches min 1 www.w3.org/2002/07/#.
+SurfaceInterpolation is Class.
+SurfaceInterpolation SubClassOf Interpolation,.
+SurfaceInterpolation SubClassOf {planar}.
+SurfaceInterpolation DisjointWith CurveInterpolation.
+TemporalPosition is Class.
+Thing is www.w3.org/2002/07/#.
+TemporalPosition_anyURI is Class.
+TemporalPosition_anyURI SubClassOf TemporalPosition,.
+Literal is anyURI exactly 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith TemporalPosition_gYearMonth.
+Literal DisjointWith TemporalPosition_gYear.
+Literal DisjointWith TemporalPosition_decimal.
+Literal DisjointWith TemporalPosition_dateTime.
+Literal DisjointWith TemporalPosition_date.
+TemporalPosition_date is Class.
+TemporalPosition_date SubClassOf TemporalPosition,.
+Literal is date exactly 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith TemporalPosition_gYearMonth.
+Literal DisjointWith TemporalPosition_gYear.
+Literal DisjointWith TemporalPosition_decimal.
+Literal DisjointWith TemporalPosition_dateTime.
+Literal DisjointWith TemporalPosition_anyURI.
+TemporalPosition_dateTime is Class.
+TemporalPosition_dateTime SubClassOf TemporalPosition,.
+Literal is dateTime exactly 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith TemporalPosition_gYearMonth.
+Literal DisjointWith TemporalPosition_gYear.
+Literal DisjointWith TemporalPosition_decimal.
+Literal DisjointWith TemporalPosition_date.
+Literal DisjointWith TemporalPosition_anyURI.
+TemporalPosition_decimal is Class.
+TemporalPosition_decimal SubClassOf TemporalPosition,.
+Literal is decimal exactly 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith TemporalPosition_gYearMonth.
+Literal DisjointWith TemporalPosition_gYear.
+Literal DisjointWith TemporalPosition_dateTime.
+Literal DisjointWith TemporalPosition_date.
+Literal DisjointWith TemporalPosition_anyURI.
+TemporalPosition_gYear is Class.
+TemporalPosition_gYear SubClassOf TemporalPosition,.
+Literal is gYear exactly 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith TemporalPosition_gYearMonth.
+Literal DisjointWith TemporalPosition_decimal.
+Literal DisjointWith TemporalPosition_dateTime.
+Literal DisjointWith TemporalPosition_date.
+Literal DisjointWith TemporalPosition_anyURI.
+TemporalPosition_gYearMonth is Class.
+TemporalPosition_gYearMonth SubClassOf TemporalPosition,.
+Literal is gYearMonth exactly 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith TemporalPosition_gYear.
+Literal DisjointWith TemporalPosition_decimal.
+Literal DisjointWith TemporalPosition_dateTime.
+Literal DisjointWith TemporalPosition_date.
+Literal DisjointWith TemporalPosition_anyURI.
+TimeDuration is Class.
+Thing is www.w3.org/2002/07/#.
+TimeDuration_decimal is Class.
+TimeDuration_decimal SubClassOf TimeDuration,.
+Literal is decimal exactly 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith TimeDuration_duration.
+TimeDuration_duration is Class.
+TimeDuration_duration SubClassOf TimeDuration,.
+Literal is duration exactly 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith TimeDuration_decimal.
+TimeIndeterminateVlue is Class.
+TimeInstant is Class.
+TimeInstant SubClassOf TimePrimitive.
+TimeIntervalLength is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is unit exactly 1 www.w3.org/2002/07/#.
+Literal, is factor min 0 www.w3.org/2000/01/-schema#.
+Literal, is radix min 0 www.w3.org/2000/01/-schema#.
+Literal, is value exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is factor max 1 www.w3.org/2000/01/-schema#.
+Literal is radix max 1 www.w3.org/2000/01/-schema#.
+TimeIntervalLength_decimal is Class.
+TimeIntervalLength_decimal SubClassOf TimeDuration_decimal,.
+TimeIntervalLength_decimal SubClassOf TimeIntervalLength.
+TimeIntervalLength_decimal DisjointWith TimeIntervalLength_duration.
+TimeIntervalLength_duration is Class.
+TimeIntervalLength_duration SubClassOf TimeDuration_duration,.
+TimeIntervalLength_duration SubClassOf TimeIntervalLength.
+TimeIntervalLength_duration DisjointWith TimeIntervalLength_decimal.
+TimeOrdinalEra is Class.
+TimeOrdinalEra SubClassOf _GML.
+TimePeriod is Class.
+TimePeriod SubClassOf TimePrimitive,.
+Thing, is _duration min 0 www.w3.org/2002/07/#.
+Thing, is begin exactly 1 www.w3.org/2002/07/#.
+Thing, is end exactly 1 www.w3.org/2002/07/#.
+Thing is _duration max 1 www.w3.org/2002/07/#.
+TimePosition is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is indeterminatePosition min 0 www.w3.org/2002/07/#.
+Thing, is indeterminatePosition max 1 www.w3.org/2002/07/#.
+Literal, is calendarEraName min 0 www.w3.org/2000/01/-schema#.
+Literal is calendarEraName max 1 www.w3.org/2000/01/-schema#.
+TimePosition_anyURI is Class.
+TimePosition_anyURI SubClassOf TemporalPosition_anyURI,.
+TimePosition_anyURI SubClassOf TimePosition.
+TimePosition_anyURI DisjointWith TimePosition_gYearMonth.
+TimePosition_anyURI DisjointWith TimePosition_gYear.
+TimePosition_anyURI DisjointWith TimePosition_decimal.
+TimePosition_anyURI DisjointWith TimePosition_dateTime.
+TimePosition_anyURI DisjointWith TimePosition_date.
+TimePosition_date is Class.
+TimePosition_date SubClassOf TemporalPosition_date,.
+TimePosition_date SubClassOf TimePosition.
+TimePosition_date DisjointWith TimePosition_gYearMonth.
+TimePosition_date DisjointWith TimePosition_gYear.
+TimePosition_date DisjointWith TimePosition_decimal.
+TimePosition_date DisjointWith TimePosition_dateTime.
+TimePosition_date DisjointWith TimePosition_anyURI.
+TimePosition_dateTime is Class.
+TimePosition_dateTime SubClassOf TemporalPosition_dateTime,.
+TimePosition_dateTime SubClassOf TimePosition.
+TimePosition_dateTime DisjointWith TimePosition_gYearMonth.
+TimePosition_dateTime DisjointWith TimePosition_gYear.
+TimePosition_dateTime DisjointWith TimePosition_decimal.
+TimePosition_dateTime DisjointWith TimePosition_date.
+TimePosition_dateTime DisjointWith TimePosition_anyURI.
+TimePosition_decimal is Class.
+TimePosition_decimal SubClassOf TemporalPosition_decimal,.
+TimePosition_decimal SubClassOf TimePosition.
+TimePosition_decimal DisjointWith TimePosition_gYearMonth.
+TimePosition_decimal DisjointWith TimePosition_gYear.
+TimePosition_decimal DisjointWith TimePosition_dateTime.
+TimePosition_decimal DisjointWith TimePosition_date.
+TimePosition_decimal DisjointWith TimePosition_anyURI.
+TimePosition_gYear is Class.
+TimePosition_gYear SubClassOf TemporalPosition_gYear,.
+TimePosition_gYear SubClassOf TimePosition.
+TimePosition_gYear DisjointWith TimePosition_gYearMonth.
+TimePosition_gYear DisjointWith TimePosition_decimal.
+TimePosition_gYear DisjointWith TimePosition_dateTime.
+TimePosition_gYear DisjointWith TimePosition_date.
+TimePosition_gYear DisjointWith TimePosition_anyURI.
+TimePosition_gYearMonth is Class.
+TimePosition_gYearMonth SubClassOf TemporalPosition_gYearMonth,.
+TimePosition_gYearMonth SubClassOf TimePosition.
+TimePosition_gYearMonth DisjointWith TimePosition_gYear.
+TimePosition_gYearMonth DisjointWith TimePosition_decimal.
+TimePosition_gYearMonth DisjointWith TimePosition_dateTime.
+TimePosition_gYearMonth DisjointWith TimePosition_date.
+TimePosition_gYearMonth DisjointWith TimePosition_anyURI.
+TimePrimitive is Class.
+TimeReferenceSystem is Class.
+TimeReferenceSystem SubClassOf _GML.
+TimeUnitType is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is {day , hour , minute , month , second , year}.
+TopoCurve is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing is directedEdge min 1 www.w3.org/2002/07/#.
+TopoSolid is Class.
+TopoSolid SubClassOf ContainerChoice,.
+TopoSolid SubClassOf _TopoPrimitive,.
+Thing is directedFace min 1 www.w3.org/2002/07/#.
+TopoSurface is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing is directedFace min 1 www.w3.org/2002/07/#.
+TopoVolume is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing is directedTopoSolid min 1 www.w3.org/2002/07/#.
+Triangle is Class.
+Triangle SubClassOf _SurfacePatch,.
+Triangle SubClassOf interpolation only SurfaceInterpolation,.
+Triangle SubClassOf interpolation value planar,.
+Thing, is exterior_Ring exactly 1 www.w3.org/2002/07/#.
+Thing is interpolation exactly 1 www.w3.org/2002/07/#.
+UnitDefinition is Class.
+Value is Class.
+Thing is www.w3.org/2002/07/#.
+ValueArray is Class.
+ValueArray SubClassOf CompositeValue.
+Vector is Class.
+_CoordinateReferenceSystem is Class.
+_CoordinateReferenceSystem SubClassOf _GML.
+_Coverage is Class.
+_Coverage SubClassOf _GML.
+_Curve is Class.
+_Curve SubClassOf _GeometricPrimitive.
+_CurveSegment is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is numDerivativeInterior min 0 www.w3.org/2000/01/-schema#.
+Literal, is numDerivativesAtEnd min 0 www.w3.org/2000/01/-schema#.
+Literal, is numDerivativesAtStart min 0 www.w3.org/2000/01/-schema#.
+Literal, is numDerivativeInterior max 1 www.w3.org/2000/01/-schema#.
+Literal, is numDerivativesAtEnd max 1 www.w3.org/2000/01/-schema#.
+Literal is numDerivativesAtStart max 1 www.w3.org/2000/01/-schema#.
+_Feature is Class.
+_Feature SubClassOf _GML.
+_GML is Class.
+_GML SubClassOf _Object,.
+Thing, is description min 0 www.w3.org/2002/07/#.
+Thing, is metadataProperty min 0 www.w3.org/2002/07/#.
+Thing, is name min 0 www.w3.org/2002/07/#.
+Thing, is description max 1 www.w3.org/2002/07/#.
+Literal, is id min 0 www.w3.org/2000/01/-schema#.
+Literal is id max 1 www.w3.org/2000/01/-schema#.
+_GeometricAggregate is Class.
+_GeometricPrimitive is Class.
+_Geometry is Class.
+_Geometry SubClassOf LocationChoice,.
+_Geometry SubClassOf Value,.
+_Geometry SubClassOf _GML.
+_Metadata is Class.
+_Metadata SubClassOf MetadataPropertyChoice.
+_Object is Class.
+_Ring is Class.
+Thing is www.w3.org/2002/07/#.
+_ScalarValue is Class.
+_ScalarValueList is Class.
+_Solid is Class.
+_Solid SubClassOf _GeometricPrimitive.
+_Surface is Class.
+_Surface SubClassOf _GeometricPrimitive.
+_SurfacePatch is Class.
+Thing is www.w3.org/2002/07/#.
+_TimeObject is Class.
+_TimeObject SubClassOf Value,.
+_TimeObject SubClassOf _GML.
+_TopoPrimitive is Class.
+_Topology is Class.
+_Topology SubClassOf _GML.
+_Value is Class.
+_Value SubClassOf Value,.
+_Value SubClassOf _GML.
+protege.stanford.edu/plugins//protege# is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.
+after is Individual.
+after Types TimeIndeterminateVlue.
+before is Individual.
+before Types TimeIndeterminateVlue.
+circularArc2PointWithBulge is Individual.
+circularArc2PointWithBulge Types CurveInterpolation.
+circularArc3Points is Individual.
+circularArc3Points Types CurveInterpolation.
+circularArcCenterPointWithRadius is Individual.
+circularArcCenterPointWithRadius Types CurveInterpolation.
+cubicSpline is Individual.
+cubicSpline Types CurveInterpolation.
+day is Individual.
+hour is Individual.
+linear is Individual.
+linear Types CurveInterpolation.
+minute is Individual.
+month is Individual.
+negative is Individual.
+now is Individual.
+now Types TimeIndeterminateVlue.
+piecewiseBezier is Individual.
+piecewiseBezier Types KnotType.
+planar is Individual.
+polynomialSpline is Individual.
+polynomialSpline Types CurveInterpolation.
+positive is Individual.
+quasiUniform is Individual.
+quasiUniform Types KnotType.
+rationalSpline is Individual.
+rationalSpline Types CurveInterpolation.
+second is Individual.
+uniform is Individual.
+uniform Types KnotType.
+unknown is Individual.
+unknown Types TimeIndeterminateVlue.
+year is Individual.

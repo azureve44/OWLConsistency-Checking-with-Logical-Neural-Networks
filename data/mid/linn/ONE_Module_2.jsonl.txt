@@ -1,0 +1,13 @@
+predicate(Activity,is,Class).
+predicate(Daily_living_activity,is,Class).
+predicate(Daily_living_activity,SubClassOf,Activity).
+predicate(Exercise_leisure_activity,is,Class).
+predicate(Exercise_program,is,Class).
+predicate(Home_improvement_maintenance,is,Class).
+predicate(Home_improvement_maintenance,SubClassOf,Daily_living_activity).
+predicate(Housekeeping_chore,is,Class).
+predicate(Housekeeping_chore,SubClassOf,Daily_living_activity).
+predicate(Yard_work,is,Class).
+predicate(Yard_work,SubClassOf,Daily_living_activity).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,Daily_living_activity,Exercise_leisure_activity,Exercise_program).

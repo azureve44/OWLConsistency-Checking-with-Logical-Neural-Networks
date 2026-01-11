@@ -1,0 +1,85 @@
+predicate(function_of,is,ObjectProperty).
+predicate(function_of,SubPropertyOf,inheres_in).
+predicate(has_unit_of_measure,is,ObjectProperty).
+predicate(inheres_in,is,ObjectProperty).
+predicate(inheres_in,Domain,DependentContinuant).
+predicate(property_of,is,ObjectProperty).
+predicate(property_of,SubPropertyOf,inheres_in).
+predicate(quality_of,is,ObjectProperty).
+predicate(quality_of,SubPropertyOf,inheres_in).
+predicate(quality_of,Domain,Quality).
+predicate(role_of,is,ObjectProperty).
+predicate(role_of,SubPropertyOf,inheres_in).
+predicate(NPO_1235,is,Class).
+predicate(NPO_1235,SubClassOf,NPO_1364,).
+predicate(PATO_0001323,,is,purl.org/obo//PATO#).
+predicate(PATO_0001323,,is,quality_of some NPO_214).
+predicate(NPO_1292,is,Class).
+predicate(NPO_1344,is,Class).
+predicate(NPO_1364,is,Class).
+predicate(NPO_1364,EquivalentTo,SpecificallyDependentContinuant and (inheres_in some NPO_214)).
+predicate(NPO_1364,SubClassOf,SpecificallyDependentContinuant).
+predicate(NPO_1490,is,Class).
+predicate(NPO_1490,EquivalentTo,SpecificallyDependentContinuant and (inheres_in some).
+predicate(NPO_1490,EquivalentTo,(NPO_1496 or NPO_707 or NPO_868))).
+predicate(NPO_1490,SubClassOf,SpecificallyDependentContinuant).
+predicate(NPO_1496,is,Class).
+predicate(NPO_1685,is,Class).
+predicate(NPO_1685,SubClassOf,Quality).
+predicate(NPO_1686,is,Class).
+predicate(NPO_1686,SubClassOf,Quality).
+predicate(NPO_1687,is,Class).
+predicate(NPO_1687,SubClassOf,NPO_1686).
+predicate(NPO_1688,is,Class).
+predicate(NPO_1688,SubClassOf,NPO_1686).
+predicate(NPO_1691,is,Class).
+predicate(NPO_1811,is,Class).
+predicate(NPO_1811,EquivalentTo,NPO_1344 and (quality_of some NPO_214)).
+predicate(NPO_1811,SubClassOf,NPO_1344,).
+predicate(NPO_1811,SubClassOf,NPO_1364).
+predicate(NPO_1812,is,Class).
+predicate(NPO_1812,EquivalentTo,NPO_1292 and (quality_of some NPO_214)).
+predicate(NPO_1812,SubClassOf,NPO_1292,).
+predicate(NPO_1812,SubClassOf,NPO_1364).
+predicate(NPO_1830,is,Class).
+predicate(NPO_1830,SubClassOf,NPO_1490,).
+predicate(NPO_1830,SubClassOf,NPO_1691,).
+predicate(UO_0000052,,is,has_unit_of_measure some purl.org/obo//UO#).
+predicate(UO_0000052,,is,quality_of some NPO_1496).
+predicate(NPO_214,is,Class).
+predicate(NPO_689,is,Class).
+predicate(NPO_689,SubClassOf,NPO_1685).
+predicate(NPO_707,is,Class).
+predicate(NPO_728,is,Class).
+predicate(NPO_728,SubClassOf,NPO_1685).
+predicate(NPO_868,is,Class).
+predicate(purl.org/obo//PATO#,is,Class).
+predicate(purl.org/obo//PATO#,SubClassOf,Quality).
+predicate(purl.org/obo//PATO#,is,Class).
+predicate(purl.org/obo//PATO#,is,Class).
+predicate(purl.org/obo//PATO#,SubClassOf,Quality).
+predicate(purl.org/obo//PATO#,is,Class).
+predicate(PATO_0001018,is,purl.org/obo//PATO#).
+predicate(purl.org/obo//PATO#,is,Class).
+predicate(PATO_0001018,is,purl.org/obo//PATO#).
+predicate(purl.org/obo//UO#,is,Class).
+predicate(Continuant,is,Class).
+predicate(DependentContinuant,is,Class).
+predicate(DependentContinuant,SubClassOf,Continuant).
+predicate(DependentContinuant,DisjointWith,SpatialRegion).
+predicate(DependentContinuant,DisjointWith,IndependentContinuant).
+predicate(GenericallyDependentContinuant,is,Class).
+predicate(GenericallyDependentContinuant,SubClassOf,DependentContinuant).
+predicate(IndependentContinuant,is,Class).
+predicate(IndependentContinuant,DisjointWith,DependentContinuant).
+predicate(Quality,is,Class).
+predicate(Quality,SubClassOf,SpecificallyDependentContinuant,).
+predicate(Quality,SubClassOf,quality_of some IndependentContinuant).
+predicate(Quality,DisjointWith,RealizableEntity).
+predicate(RealizableEntity,is,Class).
+predicate(RealizableEntity,DisjointWith,Quality).
+predicate(SpatialRegion,is,Class).
+predicate(SpatialRegion,DisjointWith,DependentContinuant).
+predicate(SpecificallyDependentContinuant,is,Class).
+predicate(SpecificallyDependentContinuant,SubClassOf,DependentContinuant).
+predicate(www.w3.org/2002/07/#,is,Class).

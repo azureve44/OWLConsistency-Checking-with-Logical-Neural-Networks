@@ -1,0 +1,1389 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+www.w3.org/1999/02/22--syntax-ns# is Datatype.
+boolean is Datatype.
+date is Datatype.
+dateTime is Datatype.
+double is Datatype.
+int is Datatype.
+string is Datatype.
+unsignedInt is Datatype.
+hasClinicalData is ObjectProperty.
+hasClinicalData Domain Patient.
+hasClinicalData Range ClinicalData.
+hasClinicalReoccurrence is ObjectProperty.
+hasReoccurrence is neomark.#.
+hasReoccurrence Domain Patient.
+hasReoccurrence Range ClinicalReoccurrence.
+hasDiseaseInstance is ObjectProperty.
+hasDistantPedicledFlap is ObjectProperty.
+hasDistantPedicledFlap Domain SurgicalReconstruction.
+hasDistantPedicledFlap Range DistantPedicledFlap.
+hasFollowUpVisits is ObjectProperty.
+hasFreeFlap is ObjectProperty.
+hasFreeFlap Domain SurgicalReconstruction.
+hasFreeFlap Range FreeFlap.
+hasGeneralImagingData is ObjectProperty.
+hasGeneralImagingData Domain Evaluations.
+hasGeneralImagingData Range GeneralImagingData.
+hasGenomicReoccurrence is ObjectProperty.
+hasReoccurrence is neomark.#.
+hasReoccurrence Domain Patient.
+hasReoccurrence Range GenomicReoccurrence.
+hasImage is ObjectProperty.
+hasImage Domain Evaluations.
+hasImage Range Image.
+hasImagePreview is ObjectProperty.
+hasImagePreview Domain Evaluations.
+hasImagePreview Range ImagePreview.
+hasImagingReoccurrence is ObjectProperty.
+hasReoccurrence is neomark.#.
+hasReoccurrence Domain Patient.
+hasReoccurrence Range ImagingReoccurrence.
+hasLocalFlaps is ObjectProperty.
+hasLocalFlaps Domain SurgicalReconstruction.
+hasLocalFlaps Range LocalFlaps.
+hasLocoRegional is ObjectProperty.
+hasLocoRegional Domain SurgicalReconstruction.
+hasLocoRegional Range LocoRegional.
+hasLymphNode is ObjectProperty.
+hasMicroArrayData is ObjectProperty.
+hasMicroArrayData Domain MicroArrayList.
+hasMicroArrayData Range MicroArrayData.
+hasMicroArrayGroupData is ObjectProperty.
+hasMicroArrayGroupData Domain MicroArrayGroupList.
+hasMicroArrayGroupData Range MicroArrayGroupData.
+hasMicroArrayGroupList is ObjectProperty.
+hasMicroArrayGroupList Domain MicroArrayInfo.
+hasMicroArrayGroupList Range MicroArrayGroupList.
+hasMicroArrayInfo is ObjectProperty.
+hasMicroArrayInfo Domain Evaluations.
+hasMicroArrayInfo Range MicroArrayInfo.
+hasMicroArrayList is ObjectProperty.
+hasMicroArrayList Domain MicroArrayInfo.
+hasMicroArrayList Range MicroArrayList.
+hasNSurgicalProcedure is ObjectProperty.
+hasNSurgicalProcedure Domain Treatment.
+hasNSurgicalProcedure Range NSurgicalProcedure.
+hasOtherTreatments is ObjectProperty.
+hasOtherTreatments Domain Treatment.
+hasOtherTreatments Range OtherTreatments.
+hasPatient is ObjectProperty.
+hasPatient Domain Countries.
+hasPatient Range Patient.
+hasPcrData is ObjectProperty.
+hasPcrData Domain Evaluations.
+hasPcrData Range PcrData.
+hasPostTreatment is ObjectProperty.
+hasPostTreatment Domain Treatment.
+hasPostTreatment Range PostTreatment.
+hasQualityOfLife is ObjectProperty.
+hasQualityOfLife Domain FollowUpVisits.
+hasQualityOfLife Range QualityOfLife.
+hasRiskFactors is ObjectProperty.
+hasRiskFactors Domain Patient.
+hasRiskFactors Range RiskFactors.
+hasSurgicalReconstruction is ObjectProperty.
+hasSurgicalReconstruction Domain Treatment.
+hasSurgicalReconstruction Range SurgicalReconstruction.
+hasTSurgicalProcedure is ObjectProperty.
+hasTSurgicalProcedure Domain Treatment.
+hasTSurgicalProcedure Range TSurgicalProcedure.
+hasTumor is ObjectProperty.
+isClinicalDataOf is ObjectProperty.
+isClinicalDataOf Characteristics Functional.
+isClinicalDataOf Domain ClinicalData.
+isClinicalDataOf Range Patient.
+isClinicalReoccurrenceOf is ObjectProperty.
+isReoccurrenceOf is neomark.#.
+isReoccurrenceOf Characteristics Functional.
+isReoccurrenceOf Domain ClinicalReoccurrence.
+isReoccurrenceOf Range Patient.
+isDiseaseInstanceOf is ObjectProperty.
+isDiseaseInstanceOf Characteristics Functional.
+isDiseaseInstanceOf Domain DiseaseInstance.
+isDiseaseInstanceOf Range Evaluations or Patient.
+isDistantPedicledFlapOf is ObjectProperty.
+isDistantPedicledFlapOf Characteristics Functional.
+isDistantPedicledFlapOf Domain DistantPedicledFlap.
+isDistantPedicledFlapOf Range SurgicalReconstruction.
+isFollowUpVisitsOf is ObjectProperty.
+isFollowUpVisitsOf Characteristics Functional.
+isFollowUpVisitsOf Domain FollowUpVisits.
+isFollowUpVisitsOf Range DiseaseInstance or (DiseaseInstance or Evaluations).
+isFreeFlapOf is ObjectProperty.
+isFreeFlapOf Characteristics Functional.
+isFreeFlapOf Domain FreeFlap.
+isFreeFlapOf Range SurgicalReconstruction.
+isGeneralImagingDataOf is ObjectProperty.
+isGeneralImagingDataOf Characteristics Functional.
+isGeneralImagingDataOf Domain GeneralImagingData.
+isGeneralImagingDataOf Range Evaluations.
+isGenomicReoccurrenceOf is ObjectProperty.
+isReoccurrenceOf is neomark.#.
+isReoccurrenceOf Characteristics Functional.
+isReoccurrenceOf Domain GenomicReoccurrence.
+isReoccurrenceOf Range Patient.
+isImageOf is ObjectProperty.
+isImageOf Characteristics Functional.
+isImageOf Domain Image.
+isImageOf Range Evaluations.
+isImagePreviewOf is ObjectProperty.
+isImagePreviewOf Characteristics Functional.
+isImagePreviewOf Domain ImagePreview.
+isImagePreviewOf Range Evaluations.
+isImagingReoccurrenceOf is ObjectProperty.
+isReoccurrenceOf is neomark.#.
+isReoccurrenceOf Characteristics Functional.
+isReoccurrenceOf Domain ImagingReoccurrence.
+isReoccurrenceOf Range Patient.
+isLocalFlapsOf is ObjectProperty.
+isLocalFlapsOf Characteristics Functional.
+isLocalFlapsOf Domain LocalFlaps.
+isLocalFlapsOf Range SurgicalReconstruction.
+isLocoRegionalOf is ObjectProperty.
+isLocoRegionalOf Characteristics Functional.
+isLocoRegionalOf Domain LocoRegional.
+isLocoRegionalOf Range SurgicalReconstruction.
+isLymphNodeOf is ObjectProperty.
+isLymphNodeOf Characteristics Functional.
+isLymphNodeOf Domain LymphNode.
+isLymphNodeOf Range Evaluations or (NClinicalAspects or (GeometricData or LymphNodeImagingData)).
+isMicroArrayDataOf is ObjectProperty.
+isMicroArrayDataOf Characteristics Functional.
+isMicroArrayDataOf Domain MicroArrayData.
+isMicroArrayDataOf Range MicroArrayList.
+isMicroArrayGroupDataOf is ObjectProperty.
+isMicroArrayGroupDataOf Characteristics Functional.
+isMicroArrayGroupDataOf Domain MicroArrayGroupData.
+isMicroArrayGroupDataOf Range MicroArrayGroupList.
+isMicroArrayGroupListOf is ObjectProperty.
+isMicroArrayGroupListOf Characteristics Functional.
+isMicroArrayGroupListOf Domain MicroArrayGroupList.
+isMicroArrayGroupListOf Range MicroArrayInfo.
+isMicroArrayInfoOf is ObjectProperty.
+isMicroArrayInfoOf Characteristics Functional.
+isMicroArrayInfoOf Domain MicroArrayInfo.
+isMicroArrayInfoOf Range Evaluations.
+isMicroArrayListOf is ObjectProperty.
+isMicroArrayListOf Characteristics Functional.
+isMicroArrayListOf Domain MicroArrayList.
+isMicroArrayListOf Range MicroArrayInfo.
+isNSurgicalProcedureOf is ObjectProperty.
+isNSurgicalProcedureOf Characteristics Functional.
+isNSurgicalProcedureOf Domain NSurgicalProcedure.
+isNSurgicalProcedureOf Range Treatment.
+isOtherTreatmentsOf is ObjectProperty.
+isOtherTreatmentsOf Characteristics Functional.
+isOtherTreatmentsOf Domain OtherTreatments.
+isOtherTreatmentsOf Range Treatment.
+isPatientOf is ObjectProperty.
+isPatientOf Characteristics Functional.
+isPatientOf Domain Patient.
+isPatientOf Range Countries.
+isPcrDataOf is ObjectProperty.
+isPcrDataOf Characteristics Functional.
+isPcrDataOf Domain PcrData.
+isPcrDataOf Range Evaluations.
+isPostTreatmentOf is ObjectProperty.
+isPostTreatmentOf Characteristics Functional.
+isPostTreatmentOf Domain PostTreatment.
+isPostTreatmentOf Range Treatment.
+isQualityOfLifeOf is ObjectProperty.
+isQualityOfLifeOf Characteristics Functional.
+isQualityOfLifeOf Domain QualityOfLife.
+isQualityOfLifeOf Range FollowUpVisits.
+isRiskFactorsOf is ObjectProperty.
+isRiskFactorsOf Characteristics Functional.
+isRiskFactorsOf Domain RiskFactors.
+isRiskFactorsOf Range Patient.
+isSurgicalReconstructionOf is ObjectProperty.
+isSurgicalReconstructionOf Characteristics Functional.
+isSurgicalReconstructionOf Domain SurgicalReconstruction.
+isSurgicalReconstructionOf Range Treatment.
+isTSurgicalProcedureOf is ObjectProperty.
+isTSurgicalProcedureOf Characteristics Functional.
+isTSurgicalProcedureOf Domain TSurgicalProcedure.
+isTSurgicalProcedureOf Range Treatment.
+isTumorOf is ObjectProperty.
+isTumorOf Characteristics Functional.
+isTumorOf Domain Tumor.
+isTumorOf Range GeometricData or (PathologicalData or (TLocalization or (DiseaseInstance or (Treatment or (TumorImagingData or (DiseaseInstance or TClinicalAspects)))))).
+neomark.# is ObjectProperty.
+neomark.# Domain Patient.
+Reoccurrence is neomark.#.
+neomark.# is ObjectProperty.
+neomark.# Characteristics Functional.
+Reoccurrence is neomark.#.
+Reoccurrence Range Patient.
+clinicalDataDatatypeProperty is DataProperty.
+clinicalDataDatatypeProperty Domain ClinicalData.
+countriesDatatypeProperty is DataProperty.
+countriesDatatypeProperty Domain Countries.
+diseaseInstanceDatatypeProperty is DataProperty.
+diseaseInstanceDatatypeProperty Domain DiseaseInstance.
+distantPedicledFlapDatatypeProperty is DataProperty.
+distantPedicledFlapDatatypeProperty Domain DistantPedicledFlap.
+evaluationsDatatypeProperty is DataProperty.
+evaluationsDatatypeProperty Domain Evaluations.
+followUpVisitsDatatypeProperty is DataProperty.
+followUpVisitsDatatypeProperty Domain FollowUpVisits.
+freeFlapDatatypeProperty is DataProperty.
+freeFlapDatatypeProperty Domain FreeFlap.
+geometricDataDatatypeProperty is DataProperty.
+geometricDataDatatypeProperty Domain GeometricData.
+hasA_VitaminsHaematicConcentration is DataProperty.
+hasA_VitaminsHaematicConcentration SubPropertyOf riskFactorsDatatypeProperty.
+hasAlchool is DataProperty.
+hasAlchool SubPropertyOf riskFactorsDatatypeProperty.
+hasAllergies is DataProperty.
+hasAllergies SubPropertyOf clinicalDataDatatypeProperty.
+hasAllergiesDescription is DataProperty.
+hasAllergiesDescription SubPropertyOf clinicalDataDatatypeProperty.
+hasAlveolarProcessResection is DataProperty.
+hasAlveolarProcessResection SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasAnnerothsModScore is DataProperty.
+hasAnnerothsModScore SubPropertyOf pathologicalDataDatatypeProperty.
+hasAnterolateralTigh is DataProperty.
+hasAnterolateralTigh SubPropertyOf freeFlapDatatypeProperty.
+hasAreaForN is DataProperty.
+hasAreaForN SubPropertyOf otherTreatmentsDatatypeProperty.
+hasAreaForT is DataProperty.
+hasAreaForT SubPropertyOf otherTreatmentsDatatypeProperty.
+hasAreaOfIrradiation is DataProperty.
+hasAreaOfIrradiation SubPropertyOf riskFactorsDatatypeProperty.
+hasArterialAnastomosisType is DataProperty.
+hasArterialAnastomosisType SubPropertyOf freeFlapDatatypeProperty.
+hasAuricleResectionSite is DataProperty.
+hasAuricleResectionSite SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasAxis1 is DataProperty.
+hasAxis1 SubPropertyOf geometricDataDatatypeProperty.
+hasAxis2 is DataProperty.
+hasAxis2 SubPropertyOf geometricDataDatatypeProperty.
+hasAxis3 is DataProperty.
+hasAxis3 SubPropertyOf geometricDataDatatypeProperty.
+hasB12_VitaminsHaematicConcentration is DataProperty.
+hasB12_VitaminsHaematicConcentration SubPropertyOf riskFactorsDatatypeProperty.
+hasBMDentalMobility is DataProperty.
+hasBMDentalMobility SubPropertyOf tLocalizationDatatypeProperty.
+hasBMDentition is DataProperty.
+hasBMDentition SubPropertyOf tLocalizationDatatypeProperty.
+hasBMExtensionAnterior is DataProperty.
+hasBMExtensionAnterior SubPropertyOf tLocalizationDatatypeProperty.
+hasBMExtensionInferior is DataProperty.
+hasBMExtensionInferior SubPropertyOf tLocalizationDatatypeProperty.
+hasBMExtensionPosterior is DataProperty.
+hasBMExtensionPosterior SubPropertyOf tLocalizationDatatypeProperty.
+hasBMExtensionSuperoMedianAlveolarRidge is DataProperty.
+hasBMExtensionSuperoMedianAlveolarRidge SubPropertyOf tLocalizationDatatypeProperty.
+hasBMI is DataProperty.
+hasBMI SubPropertyOf riskFactorsDatatypeProperty.
+hasBMLocalizationImage is DataProperty.
+hasBMLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasBMSite is DataProperty.
+hasBMSite SubPropertyOf tLocalizationDatatypeProperty.
+hasBasaloidFeatures is DataProperty.
+hasBasaloidFeatures SubPropertyOf pathologicalDataDatatypeProperty.
+hasBilateralNodeStations is DataProperty.
+hasBilateralNodeStations SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasBurst is DataProperty.
+hasBurst SubPropertyOf otherTreatmentsDatatypeProperty.
+hasCaseNumber is DataProperty.
+hasCaseNumber SubPropertyOf pathologicalDataDatatypeProperty.
+hasCenterX is DataProperty.
+hasCenterX SubPropertyOf geometricDataDatatypeProperty.
+hasCenterY is DataProperty.
+hasCenterY SubPropertyOf geometricDataDatatypeProperty.
+hasCenterZ is DataProperty.
+hasCenterZ SubPropertyOf geometricDataDatatypeProperty.
+hasCertvicopectoral is DataProperty.
+hasCertvicopectoral SubPropertyOf locoRegionalDatatypeProperty.
+hasCervicofacial is DataProperty.
+hasCervicofacial SubPropertyOf locoRegionalDatatypeProperty.
+hasCheekResectionOtherInformation is DataProperty.
+hasCheekResectionOtherInformation SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasCheekResectionSite is DataProperty.
+hasCheekResectionSite SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasChemiotherapyDosage is DataProperty.
+hasChemiotherapyDosage SubPropertyOf otherTreatmentsDatatypeProperty.
+hasChemiotherapyEndDate is DataProperty.
+hasChemiotherapyEndDate SubPropertyOf otherTreatmentsDatatypeProperty.
+hasChemiotherapyKindOfDrugs is DataProperty.
+hasChemiotherapyKindOfDrugs SubPropertyOf otherTreatmentsDatatypeProperty.
+hasChemiotherapyStartDate is DataProperty.
+hasChemiotherapyStartDate SubPropertyOf otherTreatmentsDatatypeProperty.
+hasChipId is DataProperty.
+hasChipId SubPropertyOf pcrDataDatatypeProperty.
+hasCholesterol is DataProperty.
+hasCholesterol SubPropertyOf clinicalDataDatatypeProperty.
+hasContralateralNodeStations is DataProperty.
+hasContralateralNodeStations SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasCordectomy is DataProperty.
+hasCordectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasCorticotomyExternalVestibular is DataProperty.
+hasCorticotomyExternalVestibular SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasCorticotomyInternalLingual is DataProperty.
+hasCorticotomyInternalLingual SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasCountryDescription is DataProperty.
+hasCountryDescription SubPropertyOf countriesDatatypeProperty.
+hasCycleOk is DataProperty.
+hasCycleOk SubPropertyOf pcrDataDatatypeProperty.
+hasCyclinD1Stain is DataProperty.
+hasCyclinD1Stain SubPropertyOf pathologicalDataDatatypeProperty.
+hasD2_40Stain is DataProperty.
+hasD2_40Stain SubPropertyOf pathologicalDataDatatypeProperty.
+hasDateOfAnalysis is DataProperty.
+hasDateOfAnalysis SubPropertyOf pathologicalDataDatatypeProperty.
+hasDeglutition is DataProperty.
+hasDeglutition SubPropertyOf qualityOfLifeDatatypeProperty.
+hasDegreeOfCellsKeratinisation is DataProperty.
+hasDegreeOfCellsKeratinisation SubPropertyOf pathologicalDataDatatypeProperty.
+hasDentalCusps is DataProperty.
+hasDentalCusps SubPropertyOf riskFactorsDatatypeProperty.
+hasDepthOfInvasion is DataProperty.
+hasDepthOfInvasion SubPropertyOf pathologicalDataDatatypeProperty.
+hasDescription is DataProperty.
+hasDescription SubPropertyOf microArrayDataDatatypeProperty.
+hasDiabetes is DataProperty.
+hasDiabetes SubPropertyOf clinicalDataDatatypeProperty.
+hasDietDeficit is DataProperty.
+hasDietDeficit SubPropertyOf riskFactorsDatatypeProperty.
+hasDischargedWithTracheostomy is DataProperty.
+hasDischargedWithTracheostomy SubPropertyOf postTreatmentDatatypeProperty.
+hasDosageOfIrradiation is DataProperty.
+hasDosageOfIrradiation SubPropertyOf riskFactorsDatatypeProperty.
+hasDoseForN is DataProperty.
+hasDoseForN SubPropertyOf otherTreatmentsDatatypeProperty.
+hasDoseForT is DataProperty.
+hasDoseForT SubPropertyOf otherTreatmentsDatatypeProperty.
+hasDrinkingHabits is DataProperty.
+hasDrinkingHabits SubPropertyOf riskFactorsDatatypeProperty.
+hasDuration is DataProperty.
+hasDuration SubPropertyOf riskFactorsDatatypeProperty.
+hasEGFRStain is DataProperty.
+hasEGFRStain SubPropertyOf pathologicalDataDatatypeProperty.
+hasE_VitaminsHaematicConcentration is DataProperty.
+hasE_VitaminsHaematicConcentration SubPropertyOf riskFactorsDatatypeProperty.
+hasEatingHabits is DataProperty.
+hasEatingHabits SubPropertyOf riskFactorsDatatypeProperty.
+hasEcogStatus is DataProperty.
+hasEcogStatus SubPropertyOf clinicalDataDatatypeProperty.
+hasEmiglossectomy is DataProperty.
+hasEmiglossectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasEmimaxillectomy is DataProperty.
+hasEmimaxillectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasEx-Smoker is DataProperty.
+hasEx-Smoker SubPropertyOf riskFactorsDatatypeProperty.
+hasExenterationOrbitaeSite is DataProperty.
+hasExenterationOrbitaeSite SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasExternalCarotidartery is DataProperty.
+hasExternalCarotidartery SubPropertyOf freeFlapDatatypeProperty.
+hasExternalIugularVein is DataProperty.
+hasExternalIugularVein SubPropertyOf freeFlapDatatypeProperty.
+hasExtraCapsularSpreading is DataProperty.
+hasExtraCapsularSpreading SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasFacialArtery is DataProperty.
+hasFacialArtery SubPropertyOf freeFlapDatatypeProperty.
+hasFacialNerve is DataProperty.
+hasFacialNerve SubPropertyOf freeFlapDatatypeProperty.
+hasFacialNerveResection is DataProperty.
+hasFacialNerveResection SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasFamiliarHistoryOfMalignance is DataProperty.
+hasFamiliarHistoryOfMalignance SubPropertyOf riskFactorsDatatypeProperty.
+hasFe_HaematicConcentration is DataProperty.
+hasFe_HaematicConcentration SubPropertyOf riskFactorsDatatypeProperty.
+hasFibula is DataProperty.
+hasFibula SubPropertyOf freeFlapDatatypeProperty.
+hasFilename is DataProperty.
+hasFoMDeficit is DataProperty.
+hasFoMDeficit SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMDentalMobility is DataProperty.
+hasFoMDentalMobility SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMDentition is DataProperty.
+hasFoMDentition SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMExtensionInferior is DataProperty.
+hasFoMExtensionInferior SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMExtensionLateral is DataProperty.
+hasFoMExtensionLateral SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMExtensionMedian is DataProperty.
+hasFoMExtensionMedian SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMExtensionPosteriorInferior is DataProperty.
+hasFoMExtensionPosteriorInferior SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMExtensionSuperior is DataProperty.
+hasFoMExtensionSuperior SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMLocalizationImage is DataProperty.
+hasFoMLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMSite is DataProperty.
+hasFoMSite SubPropertyOf tLocalizationDatatypeProperty.
+hasFoMSymptomathology is DataProperty.
+hasFoMSymptomathology SubPropertyOf tLocalizationDatatypeProperty.
+hasFolati is DataProperty.
+hasFolati SubPropertyOf riskFactorsDatatypeProperty.
+hasForearm is DataProperty.
+hasForearm SubPropertyOf freeFlapDatatypeProperty.
+hasFreeFlapsLatissimusDorsii is DataProperty.
+hasFreeFlapsLatissimusDorsii SubPropertyOf freeFlapDatatypeProperty.
+hasFullThicknessResection is DataProperty.
+hasFullThicknessResection SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasGalvanicCurrent is DataProperty.
+hasGalvanicCurrent SubPropertyOf riskFactorsDatatypeProperty.
+hasGeneName is DataProperty.
+hasGeneName SubPropertyOf microArrayDataDatatypeProperty.
+hasGeneralComplicationsSet is DataProperty.
+hasGeneralComplicationsSet SubPropertyOf postTreatmentDatatypeProperty.
+hasGlossectomyPartial is DataProperty.
+hasGlossectomyPartial SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasGlossectomySubTotal is DataProperty.
+hasGlossectomySubTotal SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasGlossectomyTotal is DataProperty.
+hasGlossectomyTotal SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasGradeOfDifferentation is DataProperty.
+hasGradeOfDifferentation SubPropertyOf pathologicalDataDatatypeProperty.
+hasGraft is DataProperty.
+hasGraft SubPropertyOf surgicalReconstructionDatatypeProperty.
+hasHPDentalMobility is DataProperty.
+hasHPDentalMobility SubPropertyOf tLocalizationDatatypeProperty.
+hasHPDentition is DataProperty.
+hasHPDentition SubPropertyOf tLocalizationDatatypeProperty.
+hasHPExtensionAnteriorAndLateral is DataProperty.
+hasHPExtensionAnteriorAndLateral SubPropertyOf tLocalizationDatatypeProperty.
+hasHPExtensionMedian is DataProperty.
+hasHPExtensionMedian SubPropertyOf tLocalizationDatatypeProperty.
+hasHPExtensionPosterior is DataProperty.
+hasHPExtensionPosterior SubPropertyOf tLocalizationDatatypeProperty.
+hasHPExtensionSuperior is DataProperty.
+hasHPExtensionSuperior SubPropertyOf tLocalizationDatatypeProperty.
+hasHPLocalizationImage is DataProperty.
+hasHPLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasHPSite is DataProperty.
+hasHPSite SubPropertyOf tLocalizationDatatypeProperty.
+hasHPV_DNA is DataProperty.
+hasHPV_DNA SubPropertyOf pathologicalDataDatatypeProperty.
+hasHPV_Type is DataProperty.
+hasHPV_Type SubPropertyOf pathologicalDataDatatypeProperty.
+hasHardPalateResection is DataProperty.
+hasHardPalateResection SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasHb_HaematicConcentration is DataProperty.
+hasHb_HaematicConcentration SubPropertyOf riskFactorsDatatypeProperty.
+hasHeight is DataProperty.
+hasHeight SubPropertyOf clinicalDataDatatypeProperty.
+hasHemimandibulectomy is DataProperty.
+hasHemimandibulectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasHorizontalSovracricoidLaryngectomy is DataProperty.
+hasHorizontalSovracricoidLaryngectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasHorizontalSovraglotticLaryngectomy is DataProperty.
+hasHorizontalSovraglotticLaryngectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasHospitalizationEndDate is DataProperty.
+hasHospitalizationEndDate SubPropertyOf postTreatmentDatatypeProperty.
+hasHospitalizationStartDate is DataProperty.
+hasHospitalizationStartDate SubPropertyOf postTreatmentDatatypeProperty.
+hasHypertension is DataProperty.
+hasHypertension SubPropertyOf clinicalDataDatatypeProperty.
+hasHypogloss is DataProperty.
+hasHypogloss SubPropertyOf freeFlapDatatypeProperty.
+hasIARDentalMobility is DataProperty.
+hasIARDentalMobility SubPropertyOf tLocalizationDatatypeProperty.
+hasIARDentition is DataProperty.
+hasIARDentition SubPropertyOf tLocalizationDatatypeProperty.
+hasIARExtensionAnterior is DataProperty.
+hasIARExtensionAnterior SubPropertyOf tLocalizationDatatypeProperty.
+hasIARExtensionInferior is DataProperty.
+hasIARExtensionInferior SubPropertyOf tLocalizationDatatypeProperty.
+hasIARExtensionLateral is DataProperty.
+hasIARExtensionLateral SubPropertyOf tLocalizationDatatypeProperty.
+hasIARExtensionMedian is DataProperty.
+hasIARExtensionMedian SubPropertyOf tLocalizationDatatypeProperty.
+hasIARExtensionPosterior is DataProperty.
+hasIARExtensionPosterior SubPropertyOf tLocalizationDatatypeProperty.
+hasIARLocalizationImage is DataProperty.
+hasIARLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasIARSite is DataProperty.
+hasIARSite SubPropertyOf tLocalizationDatatypeProperty.
+hasIliacCrest is DataProperty.
+hasIliacCrest SubPropertyOf freeFlapDatatypeProperty.
+hasImageType is DataProperty.
+hasImmunoDuration is DataProperty.
+hasImmunoDuration SubPropertyOf riskFactorsDatatypeProperty.
+hasImmunoType is DataProperty.
+hasImmunoType SubPropertyOf riskFactorsDatatypeProperty.
+hasImmunosuppressorTreatments_Presence is DataProperty.
+hasImmunosuppressorTreatments_Presence SubPropertyOf riskFactorsDatatypeProperty.
+hasImmunotherapyDosages is DataProperty.
+hasImmunotherapyDosages SubPropertyOf otherTreatmentsDatatypeProperty.
+hasImmunotherapyEndDate is DataProperty.
+hasImmunotherapyEndDate SubPropertyOf otherTreatmentsDatatypeProperty.
+hasImmunotherapyKindOfDrugs is DataProperty.
+hasImmunotherapyKindOfDrugs SubPropertyOf otherTreatmentsDatatypeProperty.
+hasImmunotherapyStartDate is DataProperty.
+hasImmunotherapyStartDate SubPropertyOf otherTreatmentsDatatypeProperty.
+hasInfection is DataProperty.
+hasInfection SubPropertyOf riskFactorsDatatypeProperty.
+hasInternalIugularVein is DataProperty.
+hasInternalIugularVein SubPropertyOf freeFlapDatatypeProperty.
+hasKi67Stain is DataProperty.
+hasKi67Stain SubPropertyOf pathologicalDataDatatypeProperty.
+hasLaryngealNerveResection is DataProperty.
+hasLaryngealNerveResection SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasLaryngectomyOtherInformation is DataProperty.
+hasLaryngectomyOtherInformation SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasLatissimusDorsii is DataProperty.
+hasLatissimusDorsii SubPropertyOf distantPedicledFlapDatatypeProperty.
+hasLevelOfInvasion is DataProperty.
+hasLevelOfInvasion SubPropertyOf pathologicalDataDatatypeProperty.
+hasLingualArtery is DataProperty.
+hasLingualArtery SubPropertyOf freeFlapDatatypeProperty.
+hasLingualNerve is DataProperty.
+hasLingualNerve SubPropertyOf freeFlapDatatypeProperty.
+hasLipResectionSite is DataProperty.
+hasLipResectionSite SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasLocalComplicationsSet is DataProperty.
+hasLocalComplicationsSet SubPropertyOf postTreatmentDatatypeProperty.
+hasLocalFlap is DataProperty.
+hasLocalFlap SubPropertyOf localFlapsDatatypeProperty.
+hasLogRatio is DataProperty.
+hasLogRatio SubPropertyOf microArrayDataDatatypeProperty.
+hasLotNumber is DataProperty.
+hasLotNumber SubPropertyOf pcrDataDatatypeProperty.
+hasLymphoPlasmacyticRection is DataProperty.
+hasLymphoPlasmacyticRection SubPropertyOf pathologicalDataDatatypeProperty.
+hasLymphoVascularInvasion is DataProperty.
+hasLymphoVascularInvasion SubPropertyOf pathologicalDataDatatypeProperty.
+hasMStaging is DataProperty.
+hasMandibulectomyOtherInformation is DataProperty.
+hasMandibulectomyOtherInformation SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasMandibulectomyTotal is DataProperty.
+hasMandibulectomyTotal SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasMarginalMandibulectomy is DataProperty.
+hasMarginalMandibulectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasMartinezGimenoScore is DataProperty.
+hasMartinezGimenoScore SubPropertyOf pathologicalDataDatatypeProperty.
+hasMasseter is DataProperty.
+hasMasseter SubPropertyOf locoRegionalDatatypeProperty.
+hasMaxillectomyOtherInformation is DataProperty.
+hasMaxillectomyOtherInformation SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasMaxillectomySite is DataProperty.
+hasMaxillectomySite SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasMechanicalTrauma is DataProperty.
+hasMechanicalTrauma SubPropertyOf riskFactorsDatatypeProperty.
+hasMedicalDevice is DataProperty.
+hasMedicalDevice SubPropertyOf treatmentDatatypeProperty.
+hasMedicalDeviceNote is DataProperty.
+hasMedicalDeviceNote SubPropertyOf treatmentDatatypeProperty.
+hasMobileProsthesis is DataProperty.
+hasMobileProsthesis SubPropertyOf riskFactorsDatatypeProperty.
+hasMobilityNodalSkin is DataProperty.
+hasMobilityNodalSkin SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasMucosaResection is DataProperty.
+hasMucosaResection SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasNSide is DataProperty.
+hasNSide SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasNStaging is DataProperty.
+hasNSurgicalOtherInformation is DataProperty.
+hasNSurgicalOtherInformation SubPropertyOf nSurgicalProcedureDatatypeProperty.
+hasNSurgicalProcedureSite is DataProperty.
+hasNSurgicalProcedureSite SubPropertyOf nSurgicalProcedureDatatypeProperty.
+hasNasogarsticTubeFromDate is DataProperty.
+hasNasogarsticTubeFromDate SubPropertyOf postTreatmentDatatypeProperty.
+hasNasogarsticTubeToDate is DataProperty.
+hasNasogarsticTubeToDate SubPropertyOf postTreatmentDatatypeProperty.
+hasNasogastrictubeDischargedWithTracheostomy is DataProperty.
+hasNasogastrictubeDischargedWithTracheostomy SubPropertyOf postTreatmentDatatypeProperty.
+hasNeckDissection is DataProperty.
+hasNeckDissection SubPropertyOf nSurgicalProcedureDatatypeProperty.
+hasNerveResectionOtherInformation is DataProperty.
+hasNerveResectionOtherInformation SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasNerveResectionSet is DataProperty.
+hasNerveResectionSet SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasNerveResectionSite is DataProperty.
+hasNerveResectionSite SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasNo1 is DataProperty.
+hasNo1 SubPropertyOf pcrDataDatatypeProperty.
+hasNo10 is DataProperty.
+hasNo10 SubPropertyOf pcrDataDatatypeProperty.
+hasNo11 is DataProperty.
+hasNo11 SubPropertyOf pcrDataDatatypeProperty.
+hasNo12 is DataProperty.
+hasNo12 SubPropertyOf pcrDataDatatypeProperty.
+hasNo13 is DataProperty.
+hasNo13 SubPropertyOf pcrDataDatatypeProperty.
+hasNo14 is DataProperty.
+hasNo14 SubPropertyOf pcrDataDatatypeProperty.
+hasNo15 is DataProperty.
+hasNo15 SubPropertyOf pcrDataDatatypeProperty.
+hasNo16 is DataProperty.
+hasNo16 SubPropertyOf pcrDataDatatypeProperty.
+hasNo17 is DataProperty.
+hasNo17 SubPropertyOf pcrDataDatatypeProperty.
+hasNo18 is DataProperty.
+hasNo18 SubPropertyOf pcrDataDatatypeProperty.
+hasNo19 is DataProperty.
+hasNo19 SubPropertyOf pcrDataDatatypeProperty.
+hasNo2 is DataProperty.
+hasNo2 SubPropertyOf pcrDataDatatypeProperty.
+hasNo20 is DataProperty.
+hasNo20 SubPropertyOf pcrDataDatatypeProperty.
+hasNo3 is DataProperty.
+hasNo3 SubPropertyOf pcrDataDatatypeProperty.
+hasNo4 is DataProperty.
+hasNo4 SubPropertyOf pcrDataDatatypeProperty.
+hasNo5 is DataProperty.
+hasNo5 SubPropertyOf pcrDataDatatypeProperty.
+hasNo6 is DataProperty.
+hasNo6 SubPropertyOf pcrDataDatatypeProperty.
+hasNo7 is DataProperty.
+hasNo7 SubPropertyOf pcrDataDatatypeProperty.
+hasNo8 is DataProperty.
+hasNo8 SubPropertyOf pcrDataDatatypeProperty.
+hasNo9 is DataProperty.
+hasNo9 SubPropertyOf pcrDataDatatypeProperty.
+hasNoNeckDissection is DataProperty.
+hasNoNeckDissection SubPropertyOf nSurgicalProcedureDatatypeProperty.
+hasNoTreatmentOtherReason is DataProperty.
+hasNoTreatmentOtherReason SubPropertyOf otherTreatmentsDatatypeProperty.
+hasNoTreatmentReason is DataProperty.
+hasNoTreatmentReason SubPropertyOf otherTreatmentsDatatypeProperty.
+hasNodalConsistence is DataProperty.
+hasNodalConsistence SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasNodalDepth is DataProperty.
+hasNodalDepth SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasNodalDimension is DataProperty.
+hasNodalDimension SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasNodalForm is DataProperty.
+hasNodalForm SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasNodalPain is DataProperty.
+hasNodalPain SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasNodalQuantity is DataProperty.
+hasNodalQuantity SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasNormalizedLogRatio is DataProperty.
+hasNormalizedLogRatio SubPropertyOf microArrayDataDatatypeProperty.
+hasNoseResection is DataProperty.
+hasNoseResection SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasNotes is DataProperty.
+hasNotes SubPropertyOf clinicalDataDatatypeProperty.
+hasNuclearPleomorphism is DataProperty.
+hasNuclearPleomorphism SubPropertyOf pathologicalDataDatatypeProperty.
+hasNumbeOfMitosesPer10HPF is DataProperty.
+hasNumbeOfMitosesPer10HPF SubPropertyOf pathologicalDataDatatypeProperty.
+hasNumberLymphNodesBigger3 is DataProperty.
+hasNumberOfLymphNodes is DataProperty.
+hasNumberOfMetastaticLymphnodesPerLevel is DataProperty.
+hasNumberOfMetastaticLymphnodesPerLevel SubPropertyOf pathologicalDataDatatypeProperty.
+hasOTDentalMobility is DataProperty.
+hasOTDentalMobility SubPropertyOf tLocalizationDatatypeProperty.
+hasOTDentition is DataProperty.
+hasOTDentition SubPropertyOf tLocalizationDatatypeProperty.
+hasOTExtensionInferior is DataProperty.
+hasOTExtensionInferior SubPropertyOf tLocalizationDatatypeProperty.
+hasOTExtensionLateral is DataProperty.
+hasOTExtensionLateral SubPropertyOf tLocalizationDatatypeProperty.
+hasOTExtensionMedian is DataProperty.
+hasOTExtensionMedian SubPropertyOf tLocalizationDatatypeProperty.
+hasOTExtensionPosterior is DataProperty.
+hasOTExtensionPosterior SubPropertyOf tLocalizationDatatypeProperty.
+hasOTExtensionSuperior is DataProperty.
+hasOTExtensionSuperior SubPropertyOf tLocalizationDatatypeProperty.
+hasOTLocalizationImage is DataProperty.
+hasOTLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasOTSite is DataProperty.
+hasOTSite SubPropertyOf tLocalizationDatatypeProperty.
+hasOmolateralNodeStations is DataProperty.
+hasOmolateralNodeStations SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasOptionalDeglutition is DataProperty.
+hasOptionalDeglutition SubPropertyOf qualityOfLifeDatatypeProperty.
+hasOptionalRespiration is DataProperty.
+hasOptionalRespiration SubPropertyOf qualityOfLifeDatatypeProperty.
+hasOptionalSocialRehabilitation is DataProperty.
+hasOptionalSocialRehabilitation SubPropertyOf qualityOfLifeDatatypeProperty.
+hasOptionalSpeech is DataProperty.
+hasOptionalSpeech SubPropertyOf qualityOfLifeDatatypeProperty.
+hasOralHygiene is DataProperty.
+hasOralHygiene SubPropertyOf riskFactorsDatatypeProperty.
+hasOrbitalFloor is DataProperty.
+hasOrbitalFloor SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasOriginalLymphoNode is DataProperty.
+hasOriginalLymphoNode SubPropertyOf lymphNodeDatatypeProperty.
+hasOriginalVisitId is DataProperty.
+hasOriginalVisitId SubPropertyOf diseaseInstanceDatatypeProperty.
+hasOtherArterialAnastomosis is DataProperty.
+hasOtherArterialAnastomosis SubPropertyOf freeFlapDatatypeProperty.
+hasOtherDistantPedicledFlap is DataProperty.
+hasOtherDistantPedicledFlap SubPropertyOf distantPedicledFlapDatatypeProperty.
+hasOtherFacialBoneResectionNotes is DataProperty.
+hasOtherFacialBoneResectionNotes SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasOtherFreeFlap is DataProperty.
+hasOtherFreeFlap SubPropertyOf freeFlapDatatypeProperty.
+hasOtherGeneralComplications is DataProperty.
+hasOtherGeneralComplications SubPropertyOf postTreatmentDatatypeProperty.
+hasOtherGlossectomyNotes is DataProperty.
+hasOtherGlossectomyNotes SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasOtherLocalComplications is DataProperty.
+hasOtherLocalComplications SubPropertyOf postTreatmentDatatypeProperty.
+hasOtherLocalFlaps is DataProperty.
+hasOtherLocalFlaps SubPropertyOf localFlapsDatatypeProperty.
+hasOtherLocoRegional is DataProperty.
+hasOtherLocoRegional SubPropertyOf locoRegionalDatatypeProperty.
+hasOtherNerveAnastomosis is DataProperty.
+hasOtherNerveAnastomosis SubPropertyOf freeFlapDatatypeProperty.
+hasOtherNotes is DataProperty.
+hasOtherNotes SubPropertyOf otherTreatmentsDatatypeProperty.
+hasOtherRT is DataProperty.
+hasOtherRT SubPropertyOf otherTreatmentsDatatypeProperty.
+hasOtherSurgeryNotes is DataProperty.
+hasOtherSurgeryNotes SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasOtherVenousAnastomosis is DataProperty.
+hasOtherVenousAnastomosis SubPropertyOf freeFlapDatatypeProperty.
+hasP16Ink4aStain is DataProperty.
+hasP16Ink4aStain SubPropertyOf pathologicalDataDatatypeProperty.
+hasP53_STAIN is DataProperty.
+hasP53_STAIN SubPropertyOf pathologicalDataDatatypeProperty.
+hasPEGDischargedWithTracheostomy is DataProperty.
+hasPEGDischargedWithTracheostomy SubPropertyOf postTreatmentDatatypeProperty.
+hasPEGFromDate is DataProperty.
+hasPEGFromDate SubPropertyOf postTreatmentDatatypeProperty.
+hasPEGToDate is DataProperty.
+hasPEGToDate SubPropertyOf postTreatmentDatatypeProperty.
+hasPORTDischargedWithTracheostomy is DataProperty.
+hasPORTDischargedWithTracheostomy SubPropertyOf postTreatmentDatatypeProperty.
+hasPORTFromDate is DataProperty.
+hasPORTFromDate SubPropertyOf postTreatmentDatatypeProperty.
+hasPORTToDate is DataProperty.
+hasPORTToDate SubPropertyOf postTreatmentDatatypeProperty.
+hasPalliativeTreatmentNotes is DataProperty.
+hasPalliativeTreatmentNotes SubPropertyOf otherTreatmentsDatatypeProperty.
+hasPalpebralResectionSite is DataProperty.
+hasPalpebralResectionSite SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasPanelId is DataProperty.
+hasPanelId SubPropertyOf pcrDataDatatypeProperty.
+hasParaThyroidectomyNotes is DataProperty.
+hasParaThyroidectomyNotes SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasPartialPharyngectomy is DataProperty.
+hasPartialPharyngectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasPatternOfInvasion is DataProperty.
+hasPatternOfInvasion SubPropertyOf pathologicalDataDatatypeProperty.
+hasPectoralisMajor is DataProperty.
+hasPectoralisMajor SubPropertyOf distantPedicledFlapDatatypeProperty.
+hasPelvectomyLocation is DataProperty.
+hasPelvectomyLocation SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasPerineuralInvasion is DataProperty.
+hasPerineuralInvasion SubPropertyOf pathologicalDataDatatypeProperty.
+hasPeriodSmokingFrom is DataProperty.
+hasPeriodSmokingFrom SubPropertyOf riskFactorsDatatypeProperty.
+hasPeriodSmokingTo is DataProperty.
+hasPeriodSmokingTo SubPropertyOf riskFactorsDatatypeProperty.
+hasPhysicalAgents is DataProperty.
+hasPhysicalAgents SubPropertyOf riskFactorsDatatypeProperty.
+hasPlummerVinson is DataProperty.
+hasPlummerVinson SubPropertyOf riskFactorsDatatypeProperty.
+hasPostTreatmentType is DataProperty.
+hasPostTreatmentType SubPropertyOf postTreatmentDatatypeProperty.
+hasPrecancerousLesions is DataProperty.
+hasPrecancerousLesions SubPropertyOf riskFactorsDatatypeProperty.
+hasPreviousRelevantPathologicalSamples is DataProperty.
+hasPreviousRelevantPathologicalSamples SubPropertyOf pathologicalDataDatatypeProperty.
+hasPrimaryClosure is DataProperty.
+hasPrimaryClosure SubPropertyOf surgicalReconstructionDatatypeProperty.
+hasProbeName is DataProperty.
+hasProbeName SubPropertyOf microArrayDataDatatypeProperty.
+hasProtocolOk is DataProperty.
+hasProtocolOk SubPropertyOf pcrDataDatatypeProperty.
+hasQuantityPerDay is DataProperty.
+hasQuantityPerDay SubPropertyOf riskFactorsDatatypeProperty.
+hasQuittedSmoking is DataProperty.
+hasQuittedSmoking SubPropertyOf riskFactorsDatatypeProperty.
+hasRMDentalMobility is DataProperty.
+hasRMDentalMobility SubPropertyOf tLocalizationDatatypeProperty.
+hasRMDentition is DataProperty.
+hasRMDentition SubPropertyOf tLocalizationDatatypeProperty.
+hasRMExtensionAnterior is DataProperty.
+hasRMExtensionAnterior SubPropertyOf tLocalizationDatatypeProperty.
+hasRMExtensionInferoMedian is DataProperty.
+hasRMExtensionInferoMedian SubPropertyOf tLocalizationDatatypeProperty.
+hasRMExtensionPosterior is DataProperty.
+hasRMExtensionPosterior SubPropertyOf tLocalizationDatatypeProperty.
+hasRMExtensionPosteroMedian is DataProperty.
+hasRMExtensionPosteroMedian SubPropertyOf tLocalizationDatatypeProperty.
+hasRMExtensionSuperior is DataProperty.
+hasRMExtensionSuperior SubPropertyOf tLocalizationDatatypeProperty.
+hasRMLocalizationImage is DataProperty.
+hasRMLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasRMSite is DataProperty.
+hasRMSite SubPropertyOf tLocalizationDatatypeProperty.
+hasRT is DataProperty.
+hasRT SubPropertyOf otherTreatmentsDatatypeProperty.
+hasRTEndDate is DataProperty.
+hasRTEndDate SubPropertyOf otherTreatmentsDatatypeProperty.
+hasRTStartDate is DataProperty.
+hasRTStartDate SubPropertyOf otherTreatmentsDatatypeProperty.
+hasRadicalModified is DataProperty.
+hasRadicalModified SubPropertyOf nSurgicalProcedureDatatypeProperty.
+hasRectusAbdominis is DataProperty.
+hasRectusAbdominis SubPropertyOf freeFlapDatatypeProperty.
+hasReferral is DataProperty.
+hasReferral SubPropertyOf pathologicalDataDatatypeProperty.
+hasReferralImage is DataProperty.
+hasReferralImage SubPropertyOf pathologicalDataDatatypeProperty.
+hasRemarks is DataProperty.
+hasRespiration is DataProperty.
+hasRespiration SubPropertyOf qualityOfLifeDatatypeProperty.
+hasSARDentalMobility is DataProperty.
+hasSARDentalMobility SubPropertyOf tLocalizationDatatypeProperty.
+hasSARDentition is DataProperty.
+hasSARDentition SubPropertyOf tLocalizationDatatypeProperty.
+hasSARExtensionAnterior is DataProperty.
+hasSARExtensionAnterior SubPropertyOf tLocalizationDatatypeProperty.
+hasSARExtensionLateral is DataProperty.
+hasSARExtensionLateral SubPropertyOf tLocalizationDatatypeProperty.
+hasSARExtensionMedian is DataProperty.
+hasSARExtensionMedian SubPropertyOf tLocalizationDatatypeProperty.
+hasSARExtensionPosterior is DataProperty.
+hasSARExtensionPosterior SubPropertyOf tLocalizationDatatypeProperty.
+hasSARExtensionSuperior is DataProperty.
+hasSARExtensionSuperior SubPropertyOf tLocalizationDatatypeProperty.
+hasSARLocalizationImage is DataProperty.
+hasSARLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasSARSite is DataProperty.
+hasSARSite SubPropertyOf tLocalizationDatatypeProperty.
+hasSPExtensionAnterior is DataProperty.
+hasSPExtensionAnterior SubPropertyOf tLocalizationDatatypeProperty.
+hasSPExtensionInferior is DataProperty.
+hasSPExtensionInferior SubPropertyOf tLocalizationDatatypeProperty.
+hasSPExtensionMedian is DataProperty.
+hasSPExtensionMedian SubPropertyOf tLocalizationDatatypeProperty.
+hasSPExtensionSuperior is DataProperty.
+hasSPExtensionSuperior SubPropertyOf tLocalizationDatatypeProperty.
+hasSPLocalizationImage is DataProperty.
+hasSPLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasSPSite is DataProperty.
+hasSPSite SubPropertyOf tLocalizationDatatypeProperty.
+hasSegmentalLeft is DataProperty.
+hasSegmentalLeft SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSegmentalLeftTextChoice is DataProperty.
+hasSegmentalLeftTextChoice SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSegmentalMandibulectomy is DataProperty.
+hasSegmentalMandibulectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSegmentalMaxillectomy is DataProperty.
+hasSegmentalMaxillectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSegmentalRight is DataProperty.
+hasSegmentalRight SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSegmentalRightTextChoice is DataProperty.
+hasSegmentalRightTextChoice SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSegmentation is DataProperty.
+hasSegmentation SubPropertyOf geometricDataDatatypeProperty.
+hasSialoadenectomyProdedure is DataProperty.
+hasSialoadenectomyProdedure SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSialoadenectomySite is DataProperty.
+hasSialoadenectomySite SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSite is DataProperty.
+hasSite SubPropertyOf pathologicalDataDatatypeProperty.
+hasSize is DataProperty.
+hasSkinResection is DataProperty.
+hasSkinResection SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSmoker is DataProperty.
+hasSmoker SubPropertyOf riskFactorsDatatypeProperty.
+hasSmookingHabits is DataProperty.
+hasSmookingHabits SubPropertyOf riskFactorsDatatypeProperty.
+hasSocialRehabilitation is DataProperty.
+hasSocialRehabilitation SubPropertyOf qualityOfLifeDatatypeProperty.
+hasSoftPalate is DataProperty.
+hasSoftPalate SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSpeech is DataProperty.
+hasSpeech SubPropertyOf qualityOfLifeDatatypeProperty.
+hasSubmental is DataProperty.
+hasSubmental SubPropertyOf locoRegionalDatatypeProperty.
+hasSubstanceExposition is DataProperty.
+hasSubstanceExposition SubPropertyOf riskFactorsDatatypeProperty.
+hasSurface is DataProperty.
+hasSurface SubPropertyOf geometricDataDatatypeProperty.
+hasSurgicalAccess is DataProperty.
+hasSurgicalAccess SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSurgicalAccessNotes is DataProperty.
+hasSurgicalAccessNotes SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasSurgicalMargins is DataProperty.
+hasSurgicalMargins SubPropertyOf pathologicalDataDatatypeProperty.
+hasSystematicName is DataProperty.
+hasSystematicName SubPropertyOf microArrayDataDatatypeProperty.
+hasTBExtensionAnterior is DataProperty.
+hasTBExtensionAnterior SubPropertyOf tLocalizationDatatypeProperty.
+hasTBExtensionInferiorAndLateral is DataProperty.
+hasTBExtensionInferiorAndLateral SubPropertyOf tLocalizationDatatypeProperty.
+hasTBExtensionPosteriorInferior is DataProperty.
+hasTBExtensionPosteriorInferior SubPropertyOf tLocalizationDatatypeProperty.
+hasTBExtensionSuperior is DataProperty.
+hasTBExtensionSuperior SubPropertyOf tLocalizationDatatypeProperty.
+hasTBExtensionSuperoLateral is DataProperty.
+hasTBExtensionSuperoLateral SubPropertyOf tLocalizationDatatypeProperty.
+hasTBLocalizationImage is DataProperty.
+hasTBLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasTBSite is DataProperty.
+hasTBSite SubPropertyOf tLocalizationDatatypeProperty.
+hasTConsistence is DataProperty.
+hasTFExtensionInferior is DataProperty.
+hasTFExtensionInferior SubPropertyOf tLocalizationDatatypeProperty.
+hasTFExtensionPosterior is DataProperty.
+hasTFExtensionPosterior SubPropertyOf tLocalizationDatatypeProperty.
+hasTFExtensionSuperior is DataProperty.
+hasTFExtensionSuperior SubPropertyOf tLocalizationDatatypeProperty.
+hasTFLocalizationImage is DataProperty.
+hasTFLocalizationImage SubPropertyOf tLocalizationDatatypeProperty.
+hasTFSite is DataProperty.
+hasTFSite SubPropertyOf tLocalizationDatatypeProperty.
+hasTFormMacroscopicView is DataProperty.
+hasTNM_pM is DataProperty.
+hasTNM_pM SubPropertyOf pathologicalDataDatatypeProperty.
+hasTNM_pN is DataProperty.
+hasTNM_pN SubPropertyOf pathologicalDataDatatypeProperty.
+hasTNM_pT is DataProperty.
+hasTNM_pT SubPropertyOf pathologicalDataDatatypeProperty.
+hasTStaging is DataProperty.
+hasTemporalis is DataProperty.
+hasTemporalis SubPropertyOf locoRegionalDatatypeProperty.
+hasThyroidectomyProcedure is DataProperty.
+hasThyroidectomyProcedure SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasTiroidArtery is DataProperty.
+hasTiroidArtery SubPropertyOf freeFlapDatatypeProperty.
+hasTongueBase is DataProperty.
+hasTongueBase SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasTonsillaResection is DataProperty.
+hasTonsillaResection SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasTotalExtendedToPharynx is DataProperty.
+hasTotalExtendedToPharynx SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasTotalLaryngectomy is DataProperty.
+hasTotalLaryngectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasTotalMaxillectomy is DataProperty.
+hasTotalMaxillectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasTotalNumberOfLymphnodesForLevel is DataProperty.
+hasTotalNumberOfLymphnodesForLevel SubPropertyOf pathologicalDataDatatypeProperty.
+hasTotalPharyngectomy is DataProperty.
+hasTotalPharyngectomy SubPropertyOf tSurgicalProcedureDatatypeProperty.
+hasTracheostomyFromDate is DataProperty.
+hasTracheostomyFromDate SubPropertyOf postTreatmentDatatypeProperty.
+hasTracheostomyToDate is DataProperty.
+hasTracheostomyToDate SubPropertyOf postTreatmentDatatypeProperty.
+hasTransversCervicalArtery is DataProperty.
+hasTransversCervicalArtery SubPropertyOf freeFlapDatatypeProperty.
+hasTrapezius is DataProperty.
+hasTrapezius SubPropertyOf distantPedicledFlapDatatypeProperty.
+hasTreatmentDate is DataProperty.
+hasTreatmentDate SubPropertyOf treatmentDatatypeProperty.
+hasTumorMaximumdiameter is DataProperty.
+hasTumorMaximumdiameter SubPropertyOf pathologicalDataDatatypeProperty.
+hasTumorThickness is DataProperty.
+hasTumorThickness SubPropertyOf pathologicalDataDatatypeProperty.
+hasTypeExtraCapsularSpreading is DataProperty.
+hasTypeExtraCapsularSpreading SubPropertyOf nClinicalAspectsDatatypeProperty.
+hasTypeOfDrug is DataProperty.
+hasTypeOfDrug SubPropertyOf riskFactorsDatatypeProperty.
+hasTypeOfInfection is DataProperty.
+hasTypeOfInfection SubPropertyOf riskFactorsDatatypeProperty.
+hasTypeOfMalignancy is DataProperty.
+hasTypeOfMalignancy SubPropertyOf riskFactorsDatatypeProperty.
+hasTypeOfPhysicalAgent is DataProperty.
+hasTypeOfPhysicalAgent SubPropertyOf riskFactorsDatatypeProperty.
+hasTypeOfRelative is DataProperty.
+hasTypeOfRelative SubPropertyOf riskFactorsDatatypeProperty.
+hasTyreoLingualTrunk is DataProperty.
+hasTyreoLingualTrunk SubPropertyOf freeFlapDatatypeProperty.
+hasValue is DataProperty.
+hasValue SubPropertyOf microArrayGroupDataDatatypeProperty.
+hasVenousAnastomosisType is DataProperty.
+hasVenousAnastomosisType SubPropertyOf freeFlapDatatypeProperty.
+hasVisitDate is DataProperty.
+hasVisitDate SubPropertyOf followUpVisitsDatatypeProperty.
+hasVolume is DataProperty.
+hasVolume SubPropertyOf geometricDataDatatypeProperty.
+hasWeight is DataProperty.
+hasWeight SubPropertyOf clinicalDataDatatypeProperty.
+localFlapsDatatypeProperty is DataProperty.
+localFlapsDatatypeProperty Domain LocalFlaps.
+locoRegionalDatatypeProperty is DataProperty.
+locoRegionalDatatypeProperty Domain LocoRegional.
+lymphNodeDatatypeProperty is DataProperty.
+lymphNodeDatatypeProperty Domain LymphNode.
+microArrayDataDatatypeProperty is DataProperty.
+microArrayDataDatatypeProperty Domain MicroArrayData.
+microArrayGroupDataDatatypeProperty is DataProperty.
+microArrayGroupDataDatatypeProperty Domain MicroArrayGroupData.
+microArrayGroupListDatatypeProperty is DataProperty.
+microArrayGroupListDatatypeProperty Domain MicroArrayGroupList.
+microArrayInfoDatatypeProperty is DataProperty.
+microArrayInfoDatatypeProperty Domain MicroArrayInfo.
+microArrayListDatatypeProperty is DataProperty.
+microArrayListDatatypeProperty Domain MicroArrayList.
+nClinicalAspectsDatatypeProperty is DataProperty.
+nClinicalAspectsDatatypeProperty Domain NClinicalAspects.
+nSurgicalProcedureDatatypeProperty is DataProperty.
+nSurgicalProcedureDatatypeProperty Domain NSurgicalProcedure.
+otherTreatmentsDatatypeProperty is DataProperty.
+otherTreatmentsDatatypeProperty Domain OtherTreatments.
+pathologicalDataDatatypeProperty is DataProperty.
+pathologicalDataDatatypeProperty Domain PathologicalData.
+patientDatatypeProperty is DataProperty.
+patientDatatypeProperty Domain Patient.
+pcrDataDatatypeProperty is DataProperty.
+pcrDataDatatypeProperty Domain PcrData.
+postTreatmentDatatypeProperty is DataProperty.
+postTreatmentDatatypeProperty Domain PostTreatment.
+qualityOfLifeDatatypeProperty is DataProperty.
+qualityOfLifeDatatypeProperty Domain QualityOfLife.
+riskFactorsDatatypeProperty is DataProperty.
+riskFactorsDatatypeProperty Domain RiskFactors.
+surgicalReconstructionDatatypeProperty is DataProperty.
+surgicalReconstructionDatatypeProperty Domain SurgicalReconstruction.
+tLocalizationDatatypeProperty is DataProperty.
+tLocalizationDatatypeProperty Domain TLocalization.
+tSurgicalProcedureDatatypeProperty is DataProperty.
+tSurgicalProcedureDatatypeProperty Domain TSurgicalProcedure.
+treatmentDatatypeProperty is DataProperty.
+treatmentDatatypeProperty Domain Treatment.
+tumorDatatypeProperty is DataProperty.
+tumorDatatypeProperty Domain Tumor.
+neomark.# is DataProperty.
+neomark.# Characteristics Functional.
+GeneOntologyReference is neomark.#.
+GeneOntologyReference Range string.
+neomark.# is DataProperty.
+neomark.# is DataProperty.
+neomark.# is DataProperty.
+ExternalReference is neomark.#.
+ExternalReference Range string.
+neomark.# is DataProperty.
+neomark.# SubPropertyOf diseaseInstanceDatatypeProperty.
+neomark.# is DataProperty.
+neomark.# SubPropertyOf followUpVisitsDatatypeProperty.
+ClinicalData is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isClinicalDataOf only Patient,.
+Thing, is isClinicalDataOf exactly 1 Patient,.
+Thing, is hasAllergies some boolean,.
+Thing, is hasCholesterol some boolean,.
+Thing, is hasDiabetes some boolean,.
+Thing, is hasEcogStatus some int,.
+Thing, is hasHypertension some boolean.
+ClinicalReoccurrence is Class.
+Reoccurrence is neomark.#.
+Countries is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasPatient only Patient,.
+www.w3.org/2000/01/-schema# is Annotations.
+www.w3.org/2000/01/-schema# is hasPatient max 1 Patient,.
+www.w3.org/2000/01/-schema# is hasCountryDescription some string.
+DiseaseInstance is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasFollowUpVisits only FollowUpVisits,.
+Thing, is hasTumor only Tumor,.
+Thing, is isDiseaseInstanceOf only.
+Thing, is (Evaluations or Patient),.
+Thing, is hasFollowUpVisits min 1 FollowUpVisits,.
+Thing, is hasTumor min 1 Tumor,.
+Thing, is isDiseaseInstanceOf exactly 1 Patient,.
+Thing, is isDiseaseInstanceOf max 1 Evaluations.
+DistantPedicledFlap is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isDistantPedicledFlapOf exactly 1 SurgicalReconstruction.
+Evaluations is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasDiseaseInstance only DiseaseInstance,.
+Thing, is hasFollowUpVisits only FollowUpVisits,.
+Thing, is hasGeneralImagingData only GeneralImagingData,.
+Thing, is hasImage only Image,.
+Thing, is hasImagePreview only ImagePreview,.
+Thing, is hasLymphNode only LymphNode,.
+Thing, is hasMicroArrayInfo only MicroArrayInfo,.
+Thing, is hasPcrData only PcrData,.
+Thing, is hasImage min 1 Image,.
+Thing, is hasImagePreview min 1 ImagePreview,.
+Thing, is hasLymphNode min 1 LymphNode,.
+Thing, is hasPcrData min 1 PcrData,.
+Thing, is hasGeneralImagingData exactly 1 GeneralImagingData,.
+Thing, is hasMicroArrayInfo exactly 1 MicroArrayInfo,.
+Thing, is hasDiseaseInstance max 1 DiseaseInstance,.
+Thing, is hasFollowUpVisits max 1 FollowUpVisits.
+FollowUpVisits is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasQualityOfLife only QualityOfLife,.
+Thing, is isFollowUpVisitsOf only.
+Thing, is (DiseaseInstance or Evaluations),.
+Thing, is hasQualityOfLife exactly 1 QualityOfLife,.
+Thing, is isFollowUpVisitsOf exactly 1 DiseaseInstance,.
+Thing, is isFollowUpVisitsOf max 1 Evaluations,.
+Thing, is hasVisitDate some dateTime,.
+hasTimeSlice some string is neomark.#.
+FreeFlap is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isFreeFlapOf exactly 1 SurgicalReconstruction.
+GeneralImagingData is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isGeneralImagingDataOf only Evaluations,.
+Thing, is isGeneralImagingDataOf exactly 1 Evaluations,.
+Thing, is hasNumberLymphNodesBigger3 some boolean,.
+Thing, is hasNumberOfLymphNodes some unsignedInt.
+GenomicReoccurrence is Class.
+Reoccurrence, is neomark.#.
+hasInput some int, is neomark.#.
+hasOutput some int is neomark.#.
+GeometricData is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasLymphNode only LymphNode,.
+Thing, is hasTumor only Tumor,.
+Thing, is hasLymphNode max 1 LymphNode,.
+Thing, is hasTumor max 1 Tumor.
+Image is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isImageOf only Evaluations,.
+Thing, is isImageOf exactly 1 Evaluations,.
+Thing, is hasFilename some string,.
+Thing, is hasImageType some string,.
+Thing, is hasRemarks some string.
+ImagePreview is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isImagePreviewOf only Evaluations,.
+Thing, is isImagePreviewOf exactly 1 Evaluations,.
+Thing, is hasFilename some string,.
+Thing, is hasImageType some string,.
+Thing, is hasRemarks some string.
+ImagingReoccurrence is Class.
+Reoccurrence, is neomark.#.
+hasInput some int, is neomark.#.
+hasOutput some int is neomark.#.
+LocalFlaps is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isLocalFlapsOf exactly 1 SurgicalReconstruction.
+LocoRegional is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isLocoRegionalOf exactly 1 SurgicalReconstruction.
+LymphNode is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isLymphNodeOf only.
+Thing, is (Evaluations or GeometricData or LymphNodeImagingData or NClinicalAspects),.
+Thing, is isLymphNodeOf exactly 1 Evaluations,.
+Thing, is isLymphNodeOf max 1 GeometricData,.
+Thing, is isLymphNodeOf max 1 LymphNodeImagingData,.
+Thing, is isLymphNodeOf max 1 NClinicalAspects.
+LymphNodeImagingData is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasLymphNode only LymphNode,.
+Thing, is hasLymphNode max 1 LymphNode.
+MicroArrayData is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isMicroArrayDataOf only MicroArrayList,.
+Thing, is isMicroArrayDataOf exactly 1 MicroArrayList,.
+Thing, is hasDescription some string,.
+Thing, is hasGeneName some string,.
+Thing, is hasLogRatio some double,.
+Thing, is hasNormalizedLogRatio some double,.
+Thing, is hasProbeName some string,.
+Thing, is hasSystematicName some string.
+MicroArrayGroupData is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isMicroArrayGroupDataOf only MicroArrayGroupList,.
+Thing, is isMicroArrayGroupDataOf exactly 1 MicroArrayGroupList.
+MicroArrayGroupList is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasMicroArrayGroupData only MicroArrayGroupData,.
+Thing, is isMicroArrayGroupListOf only MicroArrayInfo,.
+Thing, is hasMicroArrayGroupData min 1 MicroArrayGroupData,.
+Thing, is isMicroArrayGroupListOf exactly 1 MicroArrayInfo.
+MicroArrayInfo is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasMicroArrayGroupList only MicroArrayGroupList,.
+Thing, is hasMicroArrayList only MicroArrayList,.
+Thing, is isMicroArrayInfoOf only Evaluations,.
+Thing, is hasMicroArrayGroupList exactly 1 MicroArrayGroupList,.
+Thing, is hasMicroArrayList exactly 1 MicroArrayList,.
+Thing, is isMicroArrayInfoOf exactly 1 Evaluations.
+MicroArrayList is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasMicroArrayData only MicroArrayData,.
+Thing, is isMicroArrayListOf only MicroArrayInfo,.
+Thing, is hasMicroArrayData min 1 MicroArrayData,.
+Thing, is isMicroArrayListOf exactly 1 MicroArrayInfo.
+NClinicalAspects is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasLymphNode only LymphNode,.
+Thing, is hasLymphNode max 1 LymphNode.
+NSurgicalProcedure is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isNSurgicalProcedureOf exactly 1 Treatment.
+OtherTreatments is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isOtherTreatmentsOf exactly 1 Treatment.
+PathologicalData is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasTumor only Tumor,.
+Thing, is hasTumor max 1 Tumor,.
+Thing, is hasBasaloidFeatures some boolean,.
+Thing, is hasCaseNumber some string,.
+Thing, is hasDateOfAnalysis some date,.
+Thing, is hasDepthOfInvasion some double,.
+Thing, is hasLevelOfInvasion some string,.
+Thing, is hasLymphoPlasmacyticRection some string,.
+Thing, is hasLymphoVascularInvasion some boolean,.
+Thing, is hasNuclearPleomorphism some string,.
+Thing, is hasPerineuralInvasion some boolean,.
+Thing, is hasSite some string,.
+Thing, is hasTNM_pM some string,.
+Thing, is hasTNM_pN some string,.
+Thing, is hasTNM_pT some string,.
+Thing, is hasTumorMaximumdiameter some double,.
+Thing, is hasTumorThickness some double.
+Patient is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasClinicalData only ClinicalData,.
+Thing, is hasClinicalReoccurrence only ClinicalReoccurrence,.
+Thing, is hasDiseaseInstance only DiseaseInstance,.
+Thing, is hasGenomicReoccurrence only GenomicReoccurrence,.
+Thing, is hasImagingReoccurrence only ImagingReoccurrence,.
+Thing, is hasRiskFactors only RiskFactors,.
+Thing, is isPatientOf only Countries,.
+Thing, is hasClinicalReoccurrence min 1 ClinicalReoccurrence,.
+Thing, is hasDiseaseInstance min 1 DiseaseInstance,.
+Thing, is hasGenomicReoccurrence min 1 GenomicReoccurrence,.
+Thing, is hasImagingReoccurrence min 1 ImagingReoccurrence,.
+Thing, is isPatientOf max 1 Countries.
+PcrData is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isPcrDataOf only Evaluations,.
+Thing, is isPcrDataOf exactly 1 Evaluations,.
+Thing, is hasChipId some int,.
+Thing, is hasCycleOk some string,.
+Thing, is hasLotNumber some int,.
+Thing, is hasNo1 some double,.
+Thing, is hasNo10 some double,.
+Thing, is hasNo11 some double,.
+Thing, is hasNo12 some double,.
+Thing, is hasNo13 some double,.
+Thing, is hasNo14 some double,.
+Thing, is hasNo15 some double,.
+Thing, is hasNo16 some double,.
+Thing, is hasNo17 some double,.
+Thing, is hasNo18 some double,.
+Thing, is hasNo19 some double,.
+Thing, is hasNo2 some double,.
+Thing, is hasNo20 some double,.
+Thing, is hasNo3 some double,.
+Thing, is hasNo4 some double,.
+Thing, is hasNo5 some double,.
+Thing, is hasNo6 some double,.
+Thing, is hasNo7 some double,.
+Thing, is hasNo8 some double,.
+Thing, is hasNo9 some double,.
+Thing, is hasPanelId some int,.
+Thing, is hasProtocolOk some string.
+PostTreatment is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isPostTreatmentOf exactly 1 Treatment,.
+Thing, is hasHospitalizationStartDate some date,.
+Thing, is hasPostTreatmentType some string.
+QualityOfLife is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isQualityOfLifeOf only FollowUpVisits,.
+Thing, is isQualityOfLifeOf exactly 1 FollowUpVisits.
+RiskFactors is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isRiskFactorsOf only Patient,.
+Thing, is isRiskFactorsOf exactly 1 Patient,.
+Thing, is hasAlchool some boolean,.
+Thing, is hasDietDeficit some boolean,.
+Thing, is hasEatingHabits some string,.
+Thing, is hasEx-Smoker some boolean,.
+Thing, is hasFamiliarHistoryOfMalignance some boolean,.
+Thing, is hasImmunosuppressorTreatments_Presence some boolean,.
+Thing, is hasInfection some boolean,.
+Thing, is hasMechanicalTrauma some boolean,.
+Thing, is hasOralHygiene some string,.
+Thing, is hasPhysicalAgents some boolean,.
+Thing, is hasPrecancerousLesions some string,.
+Thing, is hasSmoker some boolean,.
+Thing, is hasSubstanceExposition some string.
+SurgicalReconstruction is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasDistantPedicledFlap only DistantPedicledFlap,.
+Thing, is hasFreeFlap only FreeFlap,.
+Thing, is hasLocalFlaps only LocalFlaps,.
+Thing, is hasLocoRegional only LocoRegional,.
+Thing, is isSurgicalReconstructionOf exactly 1 Treatment.
+TClinicalAspects is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasTumor only Tumor,.
+Thing, is hasTumor max 1 Tumor,.
+Thing, is hasMStaging some string,.
+Thing, is hasNStaging some string,.
+Thing, is hasSize some string,.
+Thing, is hasTConsistence some string,.
+Thing, is hasTFormMacroscopicView some string,.
+Thing, is hasTStaging some string.
+TLocalization is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasTumor only Tumor,.
+Thing, is hasTumor max 1 Tumor.
+TSurgicalProcedure is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isTSurgicalProcedureOf exactly 1 Treatment,.
+Thing, is hasSurgicalAccess some string.
+Treatment is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasNSurgicalProcedure only NSurgicalProcedure,.
+Thing, is hasOtherTreatments only OtherTreatments,.
+Thing, is hasPostTreatment only PostTreatment,.
+Thing, is hasSurgicalReconstruction only SurgicalReconstruction,.
+Thing, is hasTSurgicalProcedure only TSurgicalProcedure,.
+Thing, is hasTumor only Tumor,.
+Thing, is hasTSurgicalProcedure exactly 1 TSurgicalProcedure,.
+Thing, is hasTumor max 1 Tumor,.
+Thing, is hasMedicalDevice some dateTime,.
+Thing, is hasTreatmentDate some date.
+Tumor is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is isTumorOf only.
+Thing, is (DiseaseInstance or GeometricData or PathologicalData or TClinicalAspects or TLocalization or Treatment or TumorImagingData),.
+Thing, is isTumorOf exactly 1 DiseaseInstance,.
+Thing, is isTumorOf max 1 GeometricData,.
+Thing, is isTumorOf max 1 PathologicalData,.
+Thing, is isTumorOf max 1 TClinicalAspects,.
+Thing, is isTumorOf max 1 TLocalization,.
+Thing, is isTumorOf max 1 Treatment,.
+Thing, is isTumorOf max 1 TumorImagingData.
+TumorImagingData is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasTumor only Tumor,.
+Thing, is hasTumor max 1 Tumor.
+neomark.# is Class.
+Thing is www.w3.org/2002/07/#.
+neomark.# is Class.
+GeneOntologyReference is neomark.#.
+neomark.# is Class.
+CellKilling is neomark.#.
+neomark.# is Class.
+BiologicalProcess is neomark.#.
+neomark.# is Class.
+Thing is www.w3.org/2002/07/#.
+neomark.# is Class.
+BiologicalProcess is neomark.#.
+neomark.# is Class.
+Thing, is www.w3.org/2002/07/#.
+hasReferencedClassName some string is neomark.#.
+neomark.# is Class.
+CellularComponent is neomark.#.
+neomark.# is Class.
+CellularComponent is neomark.#.
+neomark.# is Class.
+Thing is www.w3.org/2002/07/#.
+neomark.# is Class.
+ExternalReference, is neomark.#.
+hasGOId some string is neomark.#.
+neomark.# is Class.
+BiologicalProcess is neomark.#.
+neomark.# is Class.
+CellularComponent is neomark.#.
+neomark.# is Class.
+Thing, is www.w3.org/2002/07/#.
+isReoccurrenceOf only Patient, is neomark.#.
+isReoccurrenceOf exactly 1 Patient is neomark.#.
+neomark.# is Class.
+BiologicalProcess is neomark.#.
+neomark.# is Class.
+BiologicalProcess is neomark.#.
+www.w3.org/2002/07/# is Class.
+BiologicalProcess,neomark.# is ClinicalData,Countries,DiseaseInstance,DistantPedicledFlap,Evaluations,FollowUpVisits,FreeFlap,GeneralImagingData,GeometricData,Image,ImagePreview,LocalFlaps,LocoRegional,LymphNode,LymphNodeImagingData,MicroArrayData,MicroArrayGroupData,MicroArrayGroupList,MicroArrayInfo,MicroArrayList,NClinicalAspects,NSurgicalProcedure,OtherTreatments,PathologicalData,Patient,PcrData,PostTreatment,QualityOfLife,RiskFactors,SurgicalReconstruction,TClinicalAspects,TLocalization,TSurgicalProcedure,Treatment,Tumor,TumorImagingData,neomark.#.
+BiologicalProcess,neomark.# DisjointClasses ClinicalReoccurrence,GenomicReoccurrence,ImagingReoccurrence.
+BiologicalRegulation,neomark.# is neomark.#.
+ExtracellularRegion,neomark.# is neomark.#.

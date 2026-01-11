@@ -1,0 +1,283 @@
+address is ObjectProperty.
+aggregationOf is ObjectProperty.
+applies is ObjectProperty.
+asksFor is ObjectProperty.
+attests is ObjectProperty.
+authorizes is ObjectProperty.
+becomes is ObjectProperty.
+commissions is ObjectProperty.
+compliesWith is ObjectProperty.
+componentOf is ObjectProperty.
+concerns is ObjectProperty.
+contributesToAchivementOf is ObjectProperty.
+delivers is ObjectProperty.
+derivesFrom is ObjectProperty.
+determines is ObjectProperty.
+extracts is ObjectProperty.
+givesWayTo is ObjectProperty.
+has is ObjectProperty.
+hasTopic is ObjectProperty.
+implements is ObjectProperty.
+impliesAccessTo is ObjectProperty.
+impliesTheRightToCommunicate is ObjectProperty.
+includes is ObjectProperty.
+informs is ObjectProperty.
+initiatedDuring is ObjectProperty.
+isAccessedDuring is ObjectProperty.
+isAssignedTo is ObjectProperty.
+isBasedUpon is ObjectProperty.
+isCentredOn is ObjectProperty.
+isExpressedBy is ObjectProperty.
+isExtractedFrom is ObjectProperty.
+isFunding is ObjectProperty.
+isImportedInto is ObjectProperty.
+isIssuedBy is ObjectProperty.
+isReceivedAs is ObjectProperty.
+isRecordedIn is ObjectProperty.
+isStoredOn is ObjectProperty.
+isTheResultOf is ObjectProperty.
+isUsedAsLabelFor is ObjectProperty.
+justifies is ObjectProperty.
+motivates is ObjectProperty.
+permits is ObjectProperty.
+refersTo is ObjectProperty.
+regulates is ObjectProperty.
+requires is ObjectProperty.
+resultsIn is ObjectProperty.
+targets is ObjectProperty.
+triggers is ObjectProperty.
+authorization_by_law is Class.
+authorization_by_law SubClassOf Mental-Object.
+automatedCare is Class.
+automatic_medical_device is Class.
+automatic_medical_device SubClassOf medical_device,.
+automatic_medical_device SubClassOf delivers some automatedCare.
+care_activity is Class.
+care_activity_directory is Class.
+care_activity_directory SubClassOf Mental-Object,.
+care_activity_directory SubClassOf includes min 1 care_provider_activity.
+care_activity_mandate is Class.
+care_activity_mandate SubClassOf care_matter.
+care_activity_mandate DisjointWith health_record_extract.
+care_activity_period is Class.
+care_activity_period_element is Class.
+care_actor is Class.
+care_commitment is Class.
+care_information is Class.
+care_information SubClassOf Mental-Object.
+care_information_for_import is Class.
+care_information_for_import SubClassOf care_information,.
+care_information_for_import SubClassOf isImportedInto exactly 1 professional_health_record.
+care_matter is Class.
+care_matter SubClassOf Mental-Object,.
+care_matter SubClassOf State,.
+care_matter SubClassOf derivesFrom some care_matter,.
+care_matter SubClassOf impliesAccessTo some health_record,.
+care_matter SubClassOf isRecordedIn some health_record,.
+care_matter SubClassOf isUsedAsLabelFor some health_record_component,.
+care_matter SubClassOf isUsedAsLabelFor some health_record_extract,.
+care_matter SubClassOf isUsedAsLabelFor only care_activity_mandate,.
+care_matter SubClassOf regulates min 1 healthcare_process,.
+care_matter SubClassOf concerns exactly 1 subject_of_care,.
+care_matter SubClassOf isAssignedTo exactly 1 care_actor,.
+care_matter SubClassOf requires exactly 1 care_commitment,.
+care_matter SubClassOf requires max 1 authorization_by_law,.
+care_matter SubClassOf requires max 1 informed_consent.
+care_period_mandate is Class.
+care_period_mandate SubClassOf care_matter,.
+care_period_mandate SubClassOf authorizes some care_provider_activity,.
+care_period_mandate SubClassOf commissions min 1 healthcare_service,.
+care_period_mandate SubClassOf hasTopic min 1 care_matter,.
+care_period_mandate SubClassOf commissions exactly 1 mandated_period_of_care.
+care_plan is Class.
+care_plan SubClassOf Mental-Object,.
+care_plan SubClassOf address some health_thread,.
+care_plan SubClassOf compliesWith some clinical_guideline,.
+care_plan SubClassOf implements some protocol,.
+care_plan SubClassOf isBasedUpon some core_carePlan,.
+care_plan SubClassOf address min 1 health_issue,.
+care_plan SubClassOf isTheResultOf min 1 care_planning,.
+care_plan SubClassOf targets min 1 health_objective,.
+care_plan SubClassOf targets min 1 healthcare_goal.
+care_planning is Class.
+care_planning SubClassOf Mental-Object,.
+care_planning SubClassOf isBasedUpon some clinical_guideline.
+care_provider_activity is Class.
+certificate_related_to_a_healthcare_matter is Class.
+certificate_related_to_a_healthcare_matter SubClassOf Mental-Object,.
+certificate_related_to_a_healthcare_matter SubClassOf aggregationOf min 1 health_record_component,.
+certificate_related_to_a_healthcare_matter SubClassOf attests min 1 care_matter,.
+certificate_related_to_a_healthcare_matter SubClassOf isIssuedBy min 1 care_actor.
+clinical_guideline is Class.
+clinical_guideline SubClassOf Mental-Object,.
+clinical_guideline SubClassOf isCentredOn min 1 health_issue.
+clinical_pathway is Class.
+clinical_pathway SubClassOf Mental-Object,.
+clinical_pathway SubClassOf address min 1 health_condition,.
+clinical_pathway SubClassOf informs min 1 core_carePlan,.
+clinical_pathway SubClassOf refersTo min 1 clinical_guideline.
+clinical_process is Class.
+clinical_process SubClassOf healthcare_process,.
+clinical_process SubClassOf address min 1 health_issue,.
+clinical_process SubClassOf includes min 1 mandated_period_of_care,.
+clinical_process SubClassOf has max 1 clinical_process_interest.
+clinical_process_interest is Class.
+clinical_report is Class.
+clinical_report SubClassOf health_record_extract,.
+clinical_report SubClassOf isReceivedAs some non-ratified_healthcare_information.
+consent_competence is Class.
+consent_competence SubClassOf Mental-Object.
+contact is Class.
+continuity_facilitator_mandate is Class.
+continuity_facilitator_mandate SubClassOf care_matter,.
+continuity_facilitator_mandate SubClassOf hasTopic some health_thread,.
+continuity_facilitator_mandate SubClassOf applies min 1 care_period_mandate.
+core_carePlan is Class.
+core_carePlan SubClassOf Mental-Object.
+data_repository is Class.
+data_repository SubClassOf Mental-Object.
+demand_for_care is Class.
+demand_for_care SubClassOf Mental-Object,.
+demand_for_care SubClassOf justifies some demand_mandate,.
+demand_for_care SubClassOf asksFor min 1 care_provider_activity,.
+demand_for_care SubClassOf concerns min 1 care_matter,.
+demand_for_care SubClassOf triggers max 1 care_period_mandate.
+demand_for_initial_contact is Class.
+demand_for_initial_contact SubClassOf demand_for_care,.
+demand_for_initial_contact SubClassOf resultsIn max 1 initial_contact.
+demand_mandate is Class.
+demand_mandate SubClassOf care_matter,.
+demand_mandate SubClassOf givesWayTo some care_period_mandate,.
+demand_mandate SubClassOf permits some continuity_facilitator_mandate,.
+demand_mandate SubClassOf permits some mandate_to_export_personal_information,.
+demand_mandate SubClassOf hasTopic min 1 care_matter.
+discharge_report is Class.
+discharge_report SubClassOf clinical_report.
+electronic_health_record_component is Class.
+electronic_health_record_component SubClassOf health_record_component.
+electronic_health_record_extract is Class.
+electronic_health_record_extract SubClassOf health_record_extract,.
+electronic_health_record_extract SubClassOf isExtractedFrom some sharable_data_repository,.
+electronic_health_record_extract SubClassOf isImportedInto some sharable_data_repository,.
+electronic_health_record_extract SubClassOf aggregationOf min 1 electronic_health_record_component.
+electronic_patient_summary is Class.
+electronic_patient_summary SubClassOf electronic_health_record_extract.
+health_concern is Class.
+health_concern SubClassOf health_record_extract.
+health_condition is Class.
+health_condition SubClassOf health_issue.
+health_issue is Class.
+health_issue SubClassOf care_matter,.
+health_issue SubClassOf determines some care_activity_period_element.
+health_need is Class.
+health_objective is Class.
+health_objective SubClassOf Mental-Object,.
+health_objective SubClassOf address min 1 health_need.
+health_record is Class.
+health_record SubClassOf data_repository,.
+health_record SubClassOf isAccessedDuring min 1 care_activity,.
+health_record SubClassOf isAccessedDuring min 1 care_activity_period,.
+health_record SubClassOf isStoredOn min 1 medium,.
+health_record SubClassOf concerns exactly 1 subject_of_care.
+health_record_component is Class.
+health_record_component SubClassOf data_repository,.
+health_record_component SubClassOf componentOf some health_record_component.
+health_record_extract is Class.
+health_record_extract SubClassOf Mental-Object,.
+health_record_extract SubClassOf extracts min 1 health_record_component,.
+health_record_extract SubClassOf isExtractedFrom exactly 1 health_record.
+health_record_extract DisjointWith care_activity_mandate.
+health_thread is Class.
+healthcare_funds is Class.
+healthcare_funds SubClassOf resource,.
+healthcare_funds SubClassOf isFunding some healthcare_resource.
+healthcare_goal is Class.
+healthcare_goal SubClassOf Mental-Object,.
+healthcare_goal SubClassOf contributesToAchivementOf min 1 health_objective.
+healthcare_information_request is Class.
+healthcare_information_request SubClassOf request.
+healthcare_process is Class.
+healthcare_professional_entitlement is Class.
+healthcare_professional_entitlement SubClassOf Mental-Object.
+healthcare_resource is Class.
+healthcare_resource SubClassOf resource.
+healthcare_service is Class.
+healthcare_service_directory is Class.
+healthcare_service_directory SubClassOf Mental-Object.
+informed_consent is Class.
+informed_consent SubClassOf Mental-Object,.
+informed_consent SubClassOf requires exactly 1 consent_competence.
+initial_contact is Class.
+mandate_to_export_personal_information is Class.
+mandate_to_export_personal_information SubClassOf care_matter,.
+mandate_to_export_personal_information SubClassOf hasTopic min 1 care_matter,.
+mandate_to_export_personal_information SubClassOf impliesTheRightToCommunicate min 1 health_record_extract.
+mandated_period_of_care is Class.
+medical_device is Class.
+medical_device SubClassOf Physical-Object.
+medium is Class.
+medium SubClassOf Physical-Object.
+multi-professional_carePlan is Class.
+multi-professional_carePlan SubClassOf care_plan.
+non-ratified_healthcare_information is Class.
+non-ratified_healthcare_information SubClassOf care_information,.
+non-ratified_healthcare_information SubClassOf becomes some care_information_for_import,.
+non-ratified_healthcare_information SubClassOf isRecordedIn some health_record.
+personal_health_record is Class.
+personal_health_record SubClassOf health_record.
+product is Class.
+product SubClassOf Physical-Object.
+professional_health_record is Class.
+professional_health_record SubClassOf health_record.
+protocol is Class.
+protocol SubClassOf clinical_guideline.
+reason_for_demand_for_care is Class.
+reason_for_demand_for_care SubClassOf Mental-Object,.
+reason_for_demand_for_care SubClassOf isExpressedBy some subject_of_care_proxy,.
+reason_for_demand_for_care SubClassOf motivates some demand_for_care,.
+reason_for_demand_for_care SubClassOf isExpressedBy max 1 subject_of_care.
+referral is Class.
+referral SubClassOf demand_for_care,.
+referral SubClassOf initiatedDuring some contact,.
+referral SubClassOf asksFor exactly 1 care_commitment.
+request is Class.
+request SubClassOf demand_for_care.
+resource is Class.
+resource SubClassOf Non-Physical-Object.
+sharable_data_repository is Class.
+sharable_data_repository SubClassOf data_repository.
+subject_of_care is Class.
+subject_of_care_proxy is Class.
+summarized_healthcare_information_repository is Class.
+summarized_healthcare_information_repository SubClassOf sharable_data_repository.
+uniprofessional_carePlan is Class.
+uniprofessional_carePlan SubClassOf care_plan.
+MedicationRequest is Class.
+MedicationRequest SubClassOf request.
+Agentive-Social-Object is Class.
+Agentive-Social-Object SubClassOf Social-Object.
+Mental-Object is Class.
+Mental-Object SubClassOf Non-Physical-Object.
+Natural-Person is Class.
+Natural-Person SubClassOf Physical-Object.
+Non-Physical-Object is Class.
+Thing is www.w3.org/2002/07/#.
+Physical-Object is Class.
+Thing is www.w3.org/2002/07/#.
+Social-Agent is Class.
+Social-Agent SubClassOf Agentive-Social-Object.
+Social-Object is Class.
+Social-Object SubClassOf Non-Physical-Object.
+Socially-Constructed-Person is Class.
+Socially-Constructed-Person SubClassOf Social-Agent.
+State is Class.
+administrative_division is Class.
+administrative_division SubClassOf location.
+location is Class.
+location SubClassOf Physical-Object.
+socialRecord is Class.
+socialRecord SubClassOf data_repository,.
+socialRecord SubClassOf concerns exactly 1 subject_of_care.
+socialcareReport is Class.
+socialcareReport SubClassOf health_record_extract.
+www.w3.org/2002/07/# is Class.

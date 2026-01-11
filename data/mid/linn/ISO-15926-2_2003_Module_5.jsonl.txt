@@ -1,0 +1,179 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(boolean,is,Datatype).
+predicate(double,is,Datatype).
+predicate(hexBinary,is,Datatype).
+predicate(long,is,Datatype).
+predicate(normalizedString,is,Datatype).
+predicate(string,is,Datatype).
+predicate(hasClassOfPart,is,ObjectProperty).
+predicate(hasClassOfWhole,is,ObjectProperty).
+predicate(hasCodomain,is,ObjectProperty).
+predicate(hasDomain,is,ObjectProperty).
+predicate(hasContent,is,DataProperty).
+predicate(hasDay,is,DataProperty).
+predicate(hasDay,Domain,RepresentationOfGregorianDateAndUtcTime).
+predicate(hasHour,is,DataProperty).
+predicate(hasHour,Domain,RepresentationOfGregorianDateAndUtcTime).
+predicate(hasMinute,is,DataProperty).
+predicate(hasMinute,Domain,RepresentationOfGregorianDateAndUtcTime).
+predicate(hasMonth,is,DataProperty).
+predicate(hasMonth,Domain,RepresentationOfGregorianDateAndUtcTime).
+predicate(hasSecond,is,DataProperty).
+predicate(hasSecond,Domain,RepresentationOfGregorianDateAndUtcTime).
+predicate(hasYear,is,DataProperty).
+predicate(hasYear,Domain,RepresentationOfGregorianDateAndUtcTime).
+predicate(ArrangementOfIndividual,is,Class).
+predicate(AssemblyOfIndividual,is,Class).
+predicate(AssemblyOfIndividual,SubClassOf,ArrangementOfIndividual).
+predicate(AssemblyOfIndividual,DisjointWith,FeatureWholePart).
+predicate(Beginning,is,Class).
+predicate(Beginning,SubClassOf,TemporalBounding).
+predicate(Beginning,DisjointWith,Ending).
+predicate(Class,is,Class).
+predicate(ClassOfAbstractObject,is,Class).
+predicate(ClassOfAbstractObject,DisjointWith,ClassOfIndividual).
+predicate(ClassOfArrangedIndividual,is,Class).
+predicate(ClassOfArrangedIndividual,SubClassOf,ClassOfIndividual).
+predicate(ClassOfArrangementOfIndividual,is,Class).
+predicate(ClassOfAssemblyOfIndividual,is,Class).
+predicate(ClassOfAssemblyOfIndividual,SubClassOf,ClassOfArrangementOfIndividual).
+predicate(ClassOfAssemblyOfIndividual,DisjointWith,Namespace).
+predicate(ClassOfAssemblyOfIndividual,DisjointWith,ClassOfFeatureWholePart).
+predicate(ClassOfEvent,is,Class).
+predicate(ClassOfEvent,SubClassOf,ClassOfIndividual).
+predicate(ClassOfExpressInformationRepresentation,is,Class).
+predicate(ClassOfExpressInformationRepresentation,EquivalentTo,ExpressBinary or ExpressBoolean or ExpressInteger or ExpressLogical or ExpressReal or ExpressString).
+predicate(ClassOfExpressInformationRepresentation,SubClassOf,ClassOfInformationRepresentation).
+predicate(ClassOfExpressInformationRepresentation,DisjointWith,RepresentationOfGregorianDateAndUtcTime).
+predicate(ClassOfFeatureWholePart,is,Class).
+predicate(ClassOfFeatureWholePart,SubClassOf,ClassOfArrangementOfIndividual).
+predicate(ClassOfFeatureWholePart,DisjointWith,Namespace).
+predicate(ClassOfFeatureWholePart,DisjointWith,ClassOfAssemblyOfIndividual).
+predicate(ClassOfIndividual,is,Class).
+predicate(ClassOfIndividual,SubClassOf,Class).
+predicate(ClassOfIndividual,DisjointWith,ClassOfAbstractObject).
+predicate(ClassOfInformationRepresentation,is,Class).
+predicate(ClassOfIsomorphicFunctionalMapping,is,Class).
+predicate(ClassOfOrganism,is,Class).
+predicate(ClassOfPeriodInTime,is,Class).
+predicate(ClassOfPeriodInTime,SubClassOf,ClassOfIndividual).
+predicate(ClassOfPerson,is,Class).
+predicate(ClassOfPerson,SubClassOf,ClassOfOrganism).
+predicate(ClassOfScaleConversion,is,Class).
+predicate(ClassOfScaleConversion,SubClassOf,ClassOfIsomorphicFunctionalMapping,).
+predicate(ClassOfScaleConversion,SubClassOf,hasCodomain only Scale,).
+predicate(ClassOfScaleConversion,SubClassOf,hasDomain only Scale).
+predicate(ClassOfScaleConversion,DisjointWith,Scale).
+predicate(ClassOfShape,is,Class).
+predicate(ClassOfShape,SubClassOf,PropertySpace).
+predicate(Ending,is,Class).
+predicate(Ending,SubClassOf,TemporalBounding).
+predicate(Ending,DisjointWith,Beginning).
+predicate(ExpressBinary,is,Class).
+predicate(ExpressBinary,SubClassOf,ClassOfExpressInformationRepresentation,).
+predicate(ExpressBinary,SubClassOf,hasContent only hexBinary,).
+predicate(Literal,is,hasContent exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,DisjointWith,ExpressString).
+predicate(Literal,DisjointWith,ExpressReal).
+predicate(Literal,DisjointWith,ExpressLogical).
+predicate(Literal,DisjointWith,ExpressInteger).
+predicate(Literal,DisjointWith,ExpressBoolean).
+predicate(ExpressBoolean,is,Class).
+predicate(ExpressBoolean,SubClassOf,ClassOfExpressInformationRepresentation,).
+predicate(ExpressBoolean,SubClassOf,hasContent only boolean,).
+predicate(Literal,is,hasContent exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,DisjointWith,ExpressString).
+predicate(Literal,DisjointWith,ExpressReal).
+predicate(Literal,DisjointWith,ExpressLogical).
+predicate(Literal,DisjointWith,ExpressInteger).
+predicate(Literal,DisjointWith,ExpressBinary).
+predicate(ExpressInteger,is,Class).
+predicate(ExpressInteger,SubClassOf,ClassOfExpressInformationRepresentation,).
+predicate(ExpressInteger,SubClassOf,hasContent only long,).
+predicate(Literal,is,hasContent exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,DisjointWith,ExpressString).
+predicate(Literal,DisjointWith,ExpressReal).
+predicate(Literal,DisjointWith,ExpressLogical).
+predicate(Literal,DisjointWith,ExpressBoolean).
+predicate(Literal,DisjointWith,ExpressBinary).
+predicate(ExpressLogical,is,Class).
+predicate(ExpressLogical,SubClassOf,ClassOfExpressInformationRepresentation,).
+predicate(ExpressLogical,SubClassOf,hasContent only {"false" , "true" , "unknown"},).
+predicate(Literal,is,hasContent exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,DisjointWith,ExpressString).
+predicate(Literal,DisjointWith,ExpressReal).
+predicate(Literal,DisjointWith,ExpressInteger).
+predicate(Literal,DisjointWith,ExpressBoolean).
+predicate(Literal,DisjointWith,ExpressBinary).
+predicate(ExpressReal,is,Class).
+predicate(ExpressReal,SubClassOf,ClassOfExpressInformationRepresentation,).
+predicate(ExpressReal,SubClassOf,hasContent only double,).
+predicate(Literal,is,hasContent exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,DisjointWith,ExpressString).
+predicate(Literal,DisjointWith,ExpressLogical).
+predicate(Literal,DisjointWith,ExpressInteger).
+predicate(Literal,DisjointWith,ExpressBoolean).
+predicate(Literal,DisjointWith,ExpressBinary).
+predicate(ExpressString,is,Class).
+predicate(ExpressString,SubClassOf,ClassOfExpressInformationRepresentation,).
+predicate(ExpressString,SubClassOf,hasContent only normalizedString,).
+predicate(Literal,is,hasContent exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,DisjointWith,ExpressReal).
+predicate(Literal,DisjointWith,ExpressLogical).
+predicate(Literal,DisjointWith,ExpressInteger).
+predicate(Literal,DisjointWith,ExpressBoolean).
+predicate(Literal,DisjointWith,ExpressBinary).
+predicate(FeatureWholePart,is,Class).
+predicate(FeatureWholePart,SubClassOf,ArrangementOfIndividual).
+predicate(FeatureWholePart,DisjointWith,AssemblyOfIndividual).
+predicate(IndividualDimension,is,Class).
+predicate(IndividualDimension,SubClassOf,ClassOfIndividual).
+predicate(LeftNamespace,is,Class).
+predicate(LeftNamespace,SubClassOf,Namespace).
+predicate(LeftNamespace,DisjointWith,RightNamespace).
+predicate(MultidimensionalScale,is,Class).
+predicate(MultidimensionalScale,SubClassOf,Scale).
+predicate(Namespace,is,Class).
+predicate(Namespace,EquivalentTo,LeftNamespace or RightNamespace).
+predicate(Namespace,SubClassOf,ClassOfArrangementOfIndividual,).
+predicate(Namespace,SubClassOf,hasClassOfPart only ClassOfInformationRepresentation,).
+predicate(Namespace,SubClassOf,hasClassOfWhole only ClassOfInformationRepresentation).
+predicate(Namespace,DisjointWith,ClassOfFeatureWholePart).
+predicate(Namespace,DisjointWith,ClassOfAssemblyOfIndividual).
+predicate(NumberSpace,is,Class).
+predicate(ParticipatingRoleAndDomain,is,Class).
+predicate(ParticipatingRoleAndDomain,SubClassOf,ClassOfIndividual).
+predicate(Property,is,Class).
+predicate(Property,SubClassOf,ClassOfIndividual).
+predicate(PropertyRange,is,Class).
+predicate(PropertyRange,SubClassOf,PropertySpace).
+predicate(PropertySpace,is,Class).
+predicate(RepresentationOfGregorianDateAndUtcTime,is,Class).
+predicate(RepresentationOfGregorianDateAndUtcTime,SubClassOf,ClassOfInformationRepresentation,).
+predicate(RepresentationOfGregorianDateAndUtcTime,SubClassOf,hasDay only long,).
+predicate(RepresentationOfGregorianDateAndUtcTime,SubClassOf,hasHour only long,).
+predicate(RepresentationOfGregorianDateAndUtcTime,SubClassOf,hasMinute only long,).
+predicate(RepresentationOfGregorianDateAndUtcTime,SubClassOf,hasMonth only long,).
+predicate(RepresentationOfGregorianDateAndUtcTime,SubClassOf,hasSecond only double,).
+predicate(RepresentationOfGregorianDateAndUtcTime,SubClassOf,hasYear only long,).
+predicate(Literal,,is,hasYear exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,hasDay max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,hasHour max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,hasMinute max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,hasMonth max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,hasSecond max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,DisjointWith,ClassOfExpressInformationRepresentation).
+predicate(RightNamespace,is,Class).
+predicate(RightNamespace,SubClassOf,Namespace).
+predicate(RightNamespace,DisjointWith,LeftNamespace).
+predicate(Scale,is,Class).
+predicate(Scale,SubClassOf,ClassOfIsomorphicFunctionalMapping,).
+predicate(Scale,SubClassOf,hasCodomain only NumberSpace,).
+predicate(Scale,SubClassOf,hasDomain only PropertySpace).
+predicate(Scale,DisjointWith,ClassOfScaleConversion).
+predicate(SinglePropertyDimension,is,Class).
+predicate(SinglePropertyDimension,SubClassOf,PropertySpace).
+predicate(Status,is,Class).
+predicate(Status,SubClassOf,ClassOfIndividual).
+predicate(TemporalBounding,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

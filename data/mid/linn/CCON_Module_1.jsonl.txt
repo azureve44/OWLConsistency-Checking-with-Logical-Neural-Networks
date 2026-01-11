@@ -1,0 +1,148 @@
+predicate(affects,is,ObjectProperty).
+predicate(EcologicalPhenomena,is,www.fao.org/aims/aos/cwr.#).
+predicate(EcologicalPhenomena,Range,Environment).
+predicate(EcologicalPhenomena,InverseOf,isAffectedBy).
+predicate(decreases,is,ObjectProperty).
+predicate(decreases,SubPropertyOf,affects).
+predicate(hasComponent,is,ObjectProperty).
+predicate(increases,is,ObjectProperty).
+predicate(increases,SubPropertyOf,affects).
+predicate(isAffectedBy,is,ObjectProperty).
+predicate(isAffectedBy,Domain,Environment).
+predicate(EcologicalPhenomena,is,www.fao.org/aims/aos/cwr.#).
+predicate(EcologicalPhenomena,InverseOf,affects).
+predicate(isCharacteristicOf,is,ObjectProperty).
+predicate(EcologicalPhenomena,is,www.fao.org/aims/aos/cwr.#).
+predicate(Community,is,www.fao.org/aims/aos/cwr.#).
+predicate(Community,InverseOf,isCharacterizedBy).
+predicate(isCharacterizedBy,is,ObjectProperty).
+predicate(isCharacterizedBy,InverseOf,isCharacteristicOf).
+predicate(isPartOf,is,ObjectProperty).
+predicate(BasalArea,is,Class).
+predicate(CommunityStructure,is,www.fao.org/aims/aos/cwr.#).
+predicate(Biodiversity,is,Class).
+predicate(Diversity,is,www.fao.org/aims/aos/cwr.#).
+predicate(BiologicalOrganizationLevel,is,Class).
+predicate(Cerrado,is,Class).
+predicate(Cerrado,SubClassOf,Ecoregion).
+predicate(CerradoDeterminingFactors,is,Class).
+predicate(CerradoDeterminingFactors,SubClassOf,Environment).
+predicate(Climate,is,Class).
+predicate(Climate,SubClassOf,CerradoDeterminingFactors,).
+predicate(Climate,SubClassOf,hasComponent some Precipitation,).
+predicate(Climate,SubClassOf,hasComponent some RelativeHumidity).
+predicate(ComunityDynamics,is,Class).
+predicate(EcologicalPhenomena,is,www.fao.org/aims/aos/cwr.#).
+predicate(DiversityIndex,is,Class).
+predicate(DrySeason,is,Class).
+predicate(DrySeason,DisjointWith,WetSeason).
+predicate(Ecoregion,is,Class).
+predicate(Ecoregion,SubClassOf,BiologicalOrganizationLevel,).
+predicate(Biosphere,is,isPartOf some www.fao.org/aims/aos/cwr.#).
+predicate(Environment,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,affects some BiologicalOrganizationLevel,).
+predicate(Thing,,is,affects some Species,).
+predicate(EcologicalPhenomena,is,affects some www.fao.org/aims/aos/cwr.#).
+predicate(FireIncidence,is,Class).
+predicate(FireIncidence,SubClassOf,ENVO_01000203,).
+predicate(FireIncidence,SubClassOf,decreases only WoodLayer,).
+predicate(FireIncidence,SubClassOf,increases only GroundLayer).
+predicate(FireRegime,is,Class).
+predicate(FireRegime,SubClassOf,CerradoDeterminingFactors).
+predicate(Grass,is,Class).
+predicate(Angiosperm,,is,www.fao.org/aims/aos/cwr.#).
+predicate(Angiosperm,,is,isPartOf only GroundLayer).
+predicate(Angiosperm,,DisjointWith,Tree).
+predicate(Angiosperm,,DisjointWith,Shrub).
+predicate(Angiosperm,,DisjointWith,HerbaceousPlant).
+predicate(GroundLayer,is,Class).
+predicate(VegetationCover,is,www.fao.org/aims/aos/cwr.#).
+predicate(HerbaceousPlant,is,Class).
+predicate(Angiosperm,,is,www.fao.org/aims/aos/cwr.#).
+predicate(Angiosperm,,is,isPartOf only GroundLayer).
+predicate(Angiosperm,,DisjointWith,Tree).
+predicate(Angiosperm,,DisjointWith,Shrub).
+predicate(Angiosperm,,DisjointWith,Grass).
+predicate(Metapopulation,is,Class).
+predicate(Metapopulation,SubClassOf,BiologicalOrganizationLevel,).
+predicate(Metapopulation,SubClassOf,isPartOf some Species,).
+predicate(Community,is,isPartOf some www.fao.org/aims/aos/cwr.#).
+predicate(NumberOfIndividuos,is,Class).
+predicate(PopulationSize,is,www.fao.org/aims/aos/cwr.#).
+predicate(PopulationSize,SubClassOf,PopulationDynamics,).
+predicate(CommunityStructure,is,www.fao.org/aims/aos/cwr.#).
+predicate(PielousEvenness,is,Class).
+predicate(PielousEvenness,SubClassOf,SpeciesEvenness).
+predicate(PopulationDynamics,is,Class).
+predicate(EcologicalPhenomena,is,www.fao.org/aims/aos/cwr.#).
+predicate(Precipitation,is,Class).
+predicate(Precipitation,SubClassOf,ENVO_01000203).
+predicate(RelativeHumidity,is,Class).
+predicate(RelativeHumidity,SubClassOf,ENVO_01000203).
+predicate(Season,is,Class).
+predicate(Season,SubClassOf,Environment).
+predicate(Shrub,is,Class).
+predicate(Angiosperm,,is,www.fao.org/aims/aos/cwr.#).
+predicate(Angiosperm,,is,isPartOf only WoodLayer).
+predicate(Angiosperm,,DisjointWith,Tree).
+predicate(Angiosperm,,DisjointWith,HerbaceousPlant).
+predicate(Angiosperm,,DisjointWith,Grass).
+predicate(SimpsonsIndex,is,Class).
+predicate(SimpsonsIndex,SubClassOf,SpeciesDiversity).
+predicate(Soil,is,Class).
+predicate(Soil,SubClassOf,CerradoDeterminingFactors).
+predicate(Species,is,Class).
+predicate(SpeciesDiversity,is,Class).
+predicate(SpeciesEvenness,is,Class).
+predicate(SpeciesEvenness,SubClassOf,DiversityIndex).
+predicate(Temperature,is,Class).
+predicate(Temperature,SubClassOf,ENVO_01000203).
+predicate(Tree,is,Class).
+predicate(Tree,DisjointWith,Shrub).
+predicate(Tree,DisjointWith,HerbaceousPlant).
+predicate(Tree,DisjointWith,Grass).
+predicate(TropicalSeason,is,Class).
+predicate(WetSeason,is,Class).
+predicate(WetSeason,SubClassOf,TropicalSeason).
+predicate(WetSeason,DisjointWith,DrySeason).
+predicate(WoodLayer,is,Class).
+predicate(VegetationCover,is,www.fao.org/aims/aos/cwr.#).
+predicate(ENVO_00000428,is,Class).
+predicate(ENVO_00000428,SubClassOf,BiologicalOrganizationLevel,).
+predicate(Biosphere,is,isPartOf some www.fao.org/aims/aos/cwr.#).
+predicate(ENVO_00000446,is,Class).
+predicate(ENVO_00000446,SubClassOf,ENVO_00000428).
+predicate(ENVO_01000203,is,Class).
+predicate(ENVO_01000203,SubClassOf,Environment).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(VascularPlant,is,www.fao.org/aims/aos/cwr.#).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(EcologicalPhenomena,is,www.fao.org/aims/aos/cwr.#).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(EcologicalPhenomena,is,www.fao.org/aims/aos/cwr.#).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(www.fao.org/aims/aos/cwr.#,SubClassOf,Environment).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(Community,is,www.fao.org/aims/aos/cwr.#).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(www.fao.org/aims/aos/cwr.#,EquivalentTo,NumberOfIndividuos).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(www.fao.org/aims/aos/cwr.#,SubClassOf,Environment).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(Sample,is,www.fao.org/aims/aos/cwr.#).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(www.fao.org/aims/aos/cwr.#,SubClassOf,ENVO_00000428).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(Plant,is,www.fao.org/aims/aos/cwr.#).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(PlantCommunity,is,www.fao.org/aims/aos/cwr.#).
+predicate(www.fao.org/aims/aos/cwr.#,is,Class).
+predicate(Vegetation,is,www.fao.org/aims/aos/cwr.#).
+predicate(www.w3.org/2002/07/#,is,Class).

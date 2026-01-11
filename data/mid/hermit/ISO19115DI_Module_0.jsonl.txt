@@ -1,0 +1,199 @@
+www.w3.org/2000/01/-schema# is Datatype
+dateTime is Datatype
+double is Datatype
+integer is Datatype
+string is Datatype
+MD_DigitalTransferOptions.distributionFormat is ObjectProperty
+MD_DigitalTransferOptions.distributionFormat Domain MD_DigitalTransferOptions
+MD_DigitalTransferOptions.distributionFormat Range MD_Format
+MD_DigitalTransferOptions.offLine is ObjectProperty
+MD_DigitalTransferOptions.offLine Domain MD_DigitalTransferOptions
+MD_DigitalTransferOptions.offLine Range MD_Medium
+MD_DigitalTransferOptions.onLine is ObjectProperty
+MD_DigitalTransferOptions.onLine Domain MD_DigitalTransferOptions
+MD_DigitalTransferOptions.onLine Range CI_OnlineResource
+MD_DigitalTransferOptions.transferFrequency is ObjectProperty
+MD_DigitalTransferOptions.transferFrequency Domain MD_DigitalTransferOptions
+MD_DigitalTransferOptions.transferFrequency Range TM_PeriodDuration
+MD_Distribution.distributionFormat is ObjectProperty
+MD_Distribution.distributionFormat Domain MD_Distribution
+MD_Distribution.distributionFormat Range MD_Format
+MD_Distribution.distributor is ObjectProperty
+MD_Distribution.distributor Domain MD_Distribution
+MD_Distribution.distributor Range MD_Distributor
+MD_Distribution.transferOptions is ObjectProperty
+MD_Distribution.transferOptions Domain MD_Distribution
+MD_Distribution.transferOptions Range MD_DigitalTransferOptions
+MD_Distributor.distributionOrderProcess is ObjectProperty
+MD_Distributor.distributionOrderProcess Domain MD_Distributor
+MD_Distributor.distributionOrderProcess Range MD_StandardOrderProcess
+MD_Distributor.distributorContact is ObjectProperty
+MD_Distributor.distributorContact Domain MD_Distributor
+MD_Distributor.distributorContact Range CI_Responsibility
+MD_Distributor.distributorFormat is ObjectProperty
+MD_Distributor.distributorFormat Domain MD_Distributor
+MD_Distributor.distributorFormat Range MD_Format
+MD_Distributor.distributorFormat InverseOf MD_Format.formatDistributor
+MD_Distributor.distributorTransferOptions is ObjectProperty
+MD_Distributor.distributorTransferOptions Domain MD_Distributor
+MD_Distributor.distributorTransferOptions Range MD_DigitalTransferOptions
+MD_Format.formatDistributor is ObjectProperty
+MD_Format.formatDistributor Domain MD_Format
+MD_Format.formatDistributor Range MD_Distributor
+MD_Format.formatDistributor InverseOf MD_Distributor.distributorFormat
+MD_Format.formatSpecificationCitation is ObjectProperty
+MD_Format.formatSpecificationCitation Domain MD_Format
+MD_Format.formatSpecificationCitation Range CI_Citation
+MD_Format.medium is ObjectProperty
+MD_Format.medium Domain MD_Format
+MD_Format.medium Range MD_Medium
+MD_Medium.identifier is ObjectProperty
+MD_Medium.identifier Domain MD_Medium
+MD_Medium.identifier Range MD_Identifier
+MD_Medium.mediumFormat is ObjectProperty
+MD_Medium.mediumFormat Domain MD_Medium
+MD_Medium.mediumFormat Range MD_MediumFormatCode
+MD_Medium.name is ObjectProperty
+MD_Medium.name Domain MD_Medium
+MD_Medium.name Range CI_Citation
+MD_StandardOrderProcess.orderOptions is ObjectProperty
+MD_StandardOrderProcess.orderOptions Domain MD_StandardOrderProcess
+MD_StandardOrderProcess.orderOptions Range Record
+MD_StandardOrderProcess.orderOptionsType is ObjectProperty
+MD_StandardOrderProcess.orderOptionsType Domain MD_StandardOrderProcess
+MD_StandardOrderProcess.orderOptionsType Range RecordType
+MD_DigitalTransferOptions.transferSize is DataProperty
+MD_DigitalTransferOptions.transferSize Domain MD_DigitalTransferOptions
+MD_DigitalTransferOptions.transferSize Range double
+MD_DigitalTransferOptions.unitsOfDistribution is DataProperty
+MD_DigitalTransferOptions.unitsOfDistribution Domain MD_DigitalTransferOptions
+MD_DigitalTransferOptions.unitsOfDistribution Range string
+MD_Distribution.description is DataProperty
+MD_Distribution.description Domain MD_Distribution
+MD_Distribution.description Range string
+MD_Format.amendmentNumber is DataProperty
+MD_Format.amendmentNumber Domain MD_Format
+MD_Format.amendmentNumber Range string
+MD_Format.fileDecompressionTechnique is DataProperty
+MD_Format.fileDecompressionTechnique Domain MD_Format
+MD_Format.fileDecompressionTechnique Range string
+MD_Medium.density is DataProperty
+MD_Medium.density Domain MD_Medium
+MD_Medium.density Range integer
+MD_Medium.densityUnits is DataProperty
+MD_Medium.densityUnits Domain MD_Medium
+MD_Medium.densityUnits Range string
+MD_Medium.mediumNote is DataProperty
+MD_Medium.mediumNote Domain MD_Medium
+MD_Medium.mediumNote Range string
+MD_Medium.volumes is DataProperty
+MD_Medium.volumes Domain MD_Medium
+MD_Medium.volumes Range integer
+MD_StandardOrderProcess.fees is DataProperty
+MD_StandardOrderProcess.fees Domain MD_StandardOrderProcess
+MD_StandardOrderProcess.fees Range string
+MD_StandardOrderProcess.orderingInstructions is DataProperty
+MD_StandardOrderProcess.orderingInstructions Domain MD_StandardOrderProcess
+MD_StandardOrderProcess.orderingInstructions Range string
+MD_StandardOrderProcess.plannedAvailableDateTime is DataProperty
+MD_StandardOrderProcess.plannedAvailableDateTime Domain MD_StandardOrderProcess
+MD_StandardOrderProcess.plannedAvailableDateTime Range dateTime
+MD_StandardOrderProcess.turnaround is DataProperty
+MD_StandardOrderProcess.turnaround Domain MD_StandardOrderProcess
+MD_StandardOrderProcess.turnaround Range string
+Record is Class
+Thing is www.w3.org/2002/07/#
+RecordType is Class
+Thing is www.w3.org/2002/07/#
+TM_PeriodDuration is Class
+Thing is www.w3.org/2002/07/#
+CI_Citation is Class
+Thing is www.w3.org/2002/07/#
+CI_OnlineResource is Class
+Thing is www.w3.org/2002/07/#
+CI_Responsibility is Class
+Thing is www.w3.org/2002/07/#
+MD_Identifier is Class
+Thing is www.w3.org/2002/07/#
+MD_DigitalTransferOptions is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is MD_DigitalTransferOptions.distributionFormat only MD_Format,
+Thing, is MD_DigitalTransferOptions.offLine only MD_Medium,
+Thing, is MD_DigitalTransferOptions.onLine only CI_OnlineResource,
+Thing, is MD_DigitalTransferOptions.transferFrequency only TM_PeriodDuration,
+Thing, is MD_DigitalTransferOptions.transferFrequency max 1 www.w3.org/2002/07/#
+Thing, is MD_DigitalTransferOptions.transferSize only double,
+Thing, is MD_DigitalTransferOptions.unitsOfDistribution only string,
+Literal, is MD_DigitalTransferOptions.transferSize max 1 www.w3.org/2000/01/-schema#
+Literal is MD_DigitalTransferOptions.unitsOfDistribution max 1 www.w3.org/2000/01/-schema#
+MD_Distribution is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is MD_Distribution.distributionFormat only MD_Format,
+Thing, is MD_Distribution.distributor only MD_Distributor,
+Thing, is MD_Distribution.transferOptions only MD_DigitalTransferOptions,
+Thing, is MD_Distribution.description only string,
+Literal is MD_Distribution.description max 1 www.w3.org/2000/01/-schema#
+MD_Distributor is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is MD_Distributor.distributionOrderProcess only MD_StandardOrderProcess,
+Thing, is MD_Distributor.distributorContact only CI_Responsibility,
+Thing, is MD_Distributor.distributorFormat only MD_Format,
+Thing, is MD_Distributor.distributorTransferOptions only MD_DigitalTransferOptions,
+Thing is MD_Distributor.distributorContact exactly 1 www.w3.org/2002/07/#
+MD_Format is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is MD_Format.formatDistributor only MD_Distributor,
+Thing, is MD_Format.formatSpecificationCitation only CI_Citation,
+Thing, is MD_Format.medium only MD_Medium,
+Thing, is MD_Format.formatSpecificationCitation exactly 1 www.w3.org/2002/07/#
+Thing, is MD_Format.amendmentNumber only string,
+Thing, is MD_Format.fileDecompressionTechnique only string,
+Literal, is MD_Format.amendmentNumber max 1 www.w3.org/2000/01/-schema#
+Literal is MD_Format.fileDecompressionTechnique max 1 www.w3.org/2000/01/-schema#
+MD_Medium is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is MD_Medium.identifier only MD_Identifier,
+Thing, is MD_Medium.mediumFormat only MD_MediumFormatCode,
+Thing, is MD_Medium.name only CI_Citation,
+Thing, is MD_Medium.identifier max 1 www.w3.org/2002/07/#
+Thing, is MD_Medium.name max 1 www.w3.org/2002/07/#
+Thing, is MD_Medium.density only integer,
+Thing, is MD_Medium.densityUnits only string,
+Thing, is MD_Medium.mediumNote only string,
+Thing, is MD_Medium.volumes only integer,
+Literal, is MD_Medium.density max 1 www.w3.org/2000/01/-schema#
+Literal, is MD_Medium.densityUnits max 1 www.w3.org/2000/01/-schema#
+Literal, is MD_Medium.mediumNote max 1 www.w3.org/2000/01/-schema#
+Literal is MD_Medium.volumes max 1 www.w3.org/2000/01/-schema#
+MD_MediumFormatCode is Class
+MD_StandardOrderProcess is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is MD_StandardOrderProcess.orderOptions only Record,
+Thing, is MD_StandardOrderProcess.orderOptionsType only RecordType,
+Thing, is MD_StandardOrderProcess.orderOptions max 1 www.w3.org/2002/07/#
+Thing, is MD_StandardOrderProcess.orderOptionsType max 1 www.w3.org/2002/07/#
+Thing, is MD_StandardOrderProcess.fees only string,
+Thing, is MD_StandardOrderProcess.orderingInstructions only string,
+Thing, is MD_StandardOrderProcess.plannedAvailableDateTime only dateTime,
+Thing, is MD_StandardOrderProcess.turnaround only string,
+Literal, is MD_StandardOrderProcess.fees max 1 www.w3.org/2000/01/-schema#
+Literal, is MD_StandardOrderProcess.orderingInstructions max 1 www.w3.org/2000/01/-schema#
+Literal, is MD_StandardOrderProcess.plannedAvailableDateTime max 1 www.w3.org/2000/01/-schema#
+Literal is MD_StandardOrderProcess.turnaround max 1 www.w3.org/2000/01/-schema#
+www.w3.org/2002/07/# is Class
+MD_MediumFormatCode is Individual
+MD_MediumFormatCodeCollection is Individual
+MD_MediumFormatCode/ is Individual
+MD_MediumFormatCode/ Types MD_MediumFormatCode
+MD_MediumFormatCode/ is Individual
+MD_MediumFormatCode/ Types MD_MediumFormatCode
+MD_MediumFormatCode/ is Individual
+MD_MediumFormatCode/ Types MD_MediumFormatCode
+MD_MediumFormatCode/ is Individual
+MD_MediumFormatCode/ Types MD_MediumFormatCode
+MD_MediumFormatCode/ is Individual
+MD_MediumFormatCode/ Types MD_MediumFormatCode
+MD_MediumFormatCode/ is Individual
+MD_MediumFormatCode/ Types MD_MediumFormatCode
+MD_MediumFormatCode/ is Individual
+MD_MediumFormatCode/ Types MD_MediumFormatCode

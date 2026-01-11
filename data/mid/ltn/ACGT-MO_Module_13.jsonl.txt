@@ -1,0 +1,268 @@
+is(clinicalStudyLeaderOf,ObjectProperty):1.0
+Domain(clinicalStudyLeaderOf,HumanBeing):1.0
+Range(clinicalStudyLeaderOf,ClinicalStudy):1.0
+InverseOf(clinicalStudyLeaderOf,hasClinicalStudyLeader):1.0
+is(clinicalTrialLeaderOf,ObjectProperty):1.0
+Domain(clinicalTrialLeaderOf,HumanBeing):1.0
+Range(clinicalTrialLeaderOf,ClinicalTrial):1.0
+InverseOf(clinicalTrialLeaderOf,hasClinicalTrialLeader):1.0
+is(denies,ObjectProperty):1.0
+Domain(denies,HumanBeing):1.0
+Range(denies,Consenting):1.0
+InverseOf(denies,isDeniedBy):1.0
+is(fulfils,ObjectProperty):1.0
+is(hasBloodPressure,ObjectProperty):1.0
+Domain(hasBloodPressure,HumanBeing):1.0
+Range(hasBloodPressure,BloodPressure):1.0
+is(hasClinicalStudyLeader,ObjectProperty):1.0
+InverseOf(hasClinicalStudyLeader,clinicalStudyLeaderOf):1.0
+is(hasClinicalTrialLeader,ObjectProperty):1.0
+InverseOf(hasClinicalTrialLeader,clinicalTrialLeaderOf):1.0
+is(hasDisease,ObjectProperty):1.0
+is(hasGender,ObjectProperty):1.0
+is(hasHabit,ObjectProperty):1.0
+Domain(hasHabit,HumanBeing):1.0
+is(hasHeight,ObjectProperty):1.0
+is(hasIdentifier,ObjectProperty):1.0
+is(hasMagnitude,ObjectProperty):1.0
+is(hasMother,ObjectProperty):1.0
+is(hasPartNeoplasm,ObjectProperty):1.0
+is(hasProgenitor,ObjectProperty):1.0
+is(hasQuality,ObjectProperty):1.0
+is(hasRelative,ObjectProperty):1.0
+is(hasRole,ObjectProperty):1.0
+is(hasSibling,ObjectProperty):1.0
+is(hasSize,ObjectProperty):1.0
+is(hasSymptom,ObjectProperty):1.0
+Domain(hasSymptom,HumanBeing):1.0
+Range(hasSymptom,Symptom):1.0
+InverseOf(hasSymptom,symptomOf):1.0
+is(hasWeight,ObjectProperty):1.0
+is(isDeniedBy,ObjectProperty):1.0
+InverseOf(isDeniedBy,denies):1.0
+is(patientAt,ObjectProperty):1.0
+is(receives,ObjectProperty):1.0
+is(receivesPreTherapy,ObjectProperty):1.0
+is(residentOf,ObjectProperty):1.0
+Domain(residentOf,HumanBeing):1.0
+is(samples,ObjectProperty):1.0
+Domain(samples,HumanBeing):1.0
+Range(samples,SubstanceSample):1.0
+is(signs,ObjectProperty):1.0
+Characteristics(signs,Irreflexive):1.0
+Domain(signs,HumanBeing):1.0
+Range(signs,Document):1.0
+is(symptomOf,ObjectProperty):1.0
+InverseOf(symptomOf,hasSymptom):1.0
+is(undergoes,ObjectProperty):1.0
+is(undergoesMedicalProcess,ObjectProperty):1.0
+is(undertakes,ObjectProperty):1.0
+Domain(undertakes,HumanBeing):1.0
+Range(undertakes,ProcessualEntity):1.0
+is(uses,ObjectProperty):1.0
+is(hasPart,ObjectProperty):1.0
+is(participatesIn,ObjectProperty):1.0
+is(Address,Class):1.0
+is(Adenomastectomy,Class):1.0
+is(AdministrativeRole,Class):1.0
+is(Age,Class):1.0
+is(AxillaryNodeDissection,Class):1.0
+is(BiologicalIndependentContinuant,Class):1.0
+SubClassOf(BiologicalIndependentContinuant,Object,):1.0
+SubClassOf(BiologicalIndependentContinuant,receivesPreTherapy min 0 PreTherapy):1.0
+DisjointWith(BiologicalIndependentContinuant,Institution):1.0
+DisjointWith(BiologicalIndependentContinuant,ChemicalSubstance):1.0
+is(BloodPressure,Class):1.0
+is(BodyMassIndex,Class):1.0
+is(BodySurfaceArea,Class):1.0
+is(BoostIrradiation,Class):1.0
+is(Brachytherapy,Class):1.0
+is(Breast,Class):1.0
+is(BreastResection,Class):1.0
+is(CardioPerformanceRating,Class):1.0
+is(CertaintyLevel,Class):1.0
+is(ChemicalSubstance,Class):1.0
+DisjointWith(ChemicalSubstance,BiologicalIndependentContinuant):1.0
+is(Chemotherapy,Class):1.0
+is(ChemotherapyCycle,Class):1.0
+is(ClinicalExamination,Class):1.0
+is(ClinicalResearch,Class):1.0
+is(ClinicalStudy,Class):1.0
+is(ClinicalTrial,Class):1.0
+is(Computertomography,Class):1.0
+is(ConsentForm,Class):1.0
+is(Consenting,Class):1.0
+is(Document,Class):1.0
+is(DoseIncrease,Class):1.0
+is(DoseReduction,Class):1.0
+is(Drug,Class):1.0
+is(ECG,Class):1.0
+is(ECOGPerformanceRating,Class):1.0
+is(EligibilityCriterion,Class):1.0
+is(ExtraOrganismalIndependenContinuant,Class):1.0
+SubClassOf(ExtraOrganismalIndependenContinuant,BiologicalIndependentContinuant):1.0
+is(Female,Class):1.0
+is(FemaleHumanBeing,Class):1.0
+SubClassOf(FemaleHumanBeing,HumanBeing,):1.0
+SubClassOf(FemaleHumanBeing,hasGender some Female,):1.0
+SubClassOf(FemaleHumanBeing,hasGender only Female,):1.0
+SubClassOf(FemaleHumanBeing,undergoes min 0 Hysterectomy,):1.0
+SubClassOf(FemaleHumanBeing,undergoes min 0 PartialHysterectomy,):1.0
+SubClassOf(FemaleHumanBeing,undergoes min 0 TotalHysterectomy):1.0
+is(FirstName,Class):1.0
+is(FullName,Class):1.0
+is(GeneTherapy,Class):1.0
+is(GeneralHealthRating,Class):1.0
+is(HearingDevice,Class):1.0
+is(HeartRate,Class):1.0
+is(Hospital,Class):1.0
+is(HumanBeing,Class):1.0
+EquivalentTo(HumanBeing,FemaleHumanBeing or MaleHumanBeing):1.0
+SubClassOf(HumanBeing,Organism,):1.0
+SubClassOf(HumanBeing,hasMagnitude some Age,):1.0
+SubClassOf(HumanBeing,hasMagnitude some CardioPerformanceRating,):1.0
+SubClassOf(HumanBeing,hasMagnitude some ECOGPerformanceRating,):1.0
+SubClassOf(HumanBeing,hasMagnitude some GeneralHealthRating,):1.0
+SubClassOf(HumanBeing,hasSize some BodySurfaceArea,):1.0
+SubClassOf(HumanBeing,hasPart some Breast,):1.0
+SubClassOf(HumanBeing,hasPart some Lung,):1.0
+SubClassOf(HumanBeing,denies min 0 Consenting,):1.0
+SubClassOf(HumanBeing,fulfils min 0 EligibilityCriterion,):1.0
+is(Thing,,hasDisease min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,hasIdentifier min 0 Address,):1.0
+is(Thing,,hasIdentifier min 0 FirstName,):1.0
+is(Thing,,hasIdentifier min 0 FullName,):1.0
+is(Thing,,hasIdentifier min 0 Identifier,):1.0
+is(Thing,,hasIdentifier min 0 LastName,):1.0
+is(Thing,,hasMagnitude min 0 KarnofskyRating,):1.0
+is(Thing,,hasMagnitude min 0 LanskyRating,):1.0
+is(Thing,,hasMagnitude min 0 RFSDays,):1.0
+is(Thing,,hasPartNeoplasm min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,hasQuality min 0 CertaintyLevel,):1.0
+is(Thing,,hasQuality min 0 NumberOfLymphNodes,):1.0
+is(Thing,,hasRelative min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,hasRole min 0 MedicalPractitioner,):1.0
+is(Thing,,hasRole min 0 (AdministrativeRole or ProfessionalRole),):1.0
+is(Thing,,hasSibling min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,patientAt min 0 Hospital,):1.0
+is(Thing,,receives min 0 Drug,):1.0
+is(Thing,,receives min 0 InformationObject,):1.0
+is(Thing,,receives min 0 PharmaceuticalSubstance,):1.0
+is(Thing,,signs min 0 ConsentForm,):1.0
+is(Thing,,undergoes min 0 Adenomastectomy,):1.0
+is(Thing,,undergoes min 0 AxillaryNodeDissection,):1.0
+is(Thing,,undergoes min 0 BoostIrradiation,):1.0
+is(Thing,,undergoes min 0 Brachytherapy,):1.0
+is(Thing,,undergoes min 0 BreastResection,):1.0
+is(Thing,,undergoes min 0 Chemotherapy,):1.0
+is(Thing,,undergoes min 0 ChemotherapyCycle,):1.0
+is(Thing,,undergoes min 0 ClinicalExamination,):1.0
+is(Thing,,undergoes min 0 Computertomography,):1.0
+is(Thing,,undergoes min 0 DoseIncrease,):1.0
+is(Thing,,undergoes min 0 DoseReduction,):1.0
+is(Thing,,undergoes min 0 ECG,):1.0
+is(Thing,,undergoes min 0 GeneTherapy,):1.0
+is(Thing,,undergoes min 0 Immunotherapy,):1.0
+is(Thing,,undergoes min 0 LostToFollowUp,):1.0
+is(Thing,,undergoes min 0 Lumpectomy,):1.0
+is(Thing,,undergoes min 0 MUGAScan,):1.0
+is(Thing,,undergoes min 0 MaddenMastectomy,):1.0
+is(Thing,,undergoes min 0 MagneticResonanceImaging,):1.0
+is(Thing,,undergoes min 0 Mastectomy,):1.0
+is(Thing,,undergoes min 0 Mastopexy,):1.0
+is(Thing,,undergoes min 0 NuclearImaging,):1.0
+is(Thing,,undergoes min 0 PartialMastectomy,):1.0
+is(Thing,,undergoes min 0 PateyMastectomy,):1.0
+is(Thing,,undergoes min 0 PatientManagement,):1.0
+is(Thing,,undergoes min 0 ProtocolChange,):1.0
+is(Thing,,undergoes min 0 PsychosocialCare,):1.0
+is(Thing,,undergoes min 0 Quadrantectomy,):1.0
+is(Thing,,undergoes min 0 ReconstructiveBreastSurgery,):1.0
+is(Thing,,undergoes min 0 Registration,):1.0
+is(Thing,,undergoes min 0 SegmentalMastectomy,):1.0
+is(Thing,,undergoes min 0 SkinSparingTotalMastectomy,):1.0
+is(Thing,,undergoes min 0 SubcutaneousMastectomy,):1.0
+is(Thing,,undergoes min 0 TotalMastectomy,):1.0
+is(Thing,,undergoes min 0 ProcessualEntity,):1.0
+is(Thing,,undergoesMedicalProcess min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,uses min 0 HearingDevice,):1.0
+is(Thing,,participatesIn min 0 ClinicalResearch,):1.0
+is(Thing,,hasBloodPressure exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasGender exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasHeight exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasMagnitude exactly 1 BodyMassIndex,):1.0
+is(Thing,,hasMother exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasProgenitor exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasQuality exactly 1 HeartRate,):1.0
+is(Thing,hasWeight exactly 1 www.w3.org/2002/07/#):1.0
+is(Hysterectomy,Class):1.0
+is(Identifier,Class):1.0
+is(Immunotherapy,Class):1.0
+is(InformationObject,Class):1.0
+is(Institution,Class):1.0
+DisjointWith(Institution,BiologicalIndependentContinuant):1.0
+is(KarnofskyRating,Class):1.0
+is(Labor,Class):1.0
+is(LanskyRating,Class):1.0
+is(LastName,Class):1.0
+is(LostToFollowUp,Class):1.0
+is(Lumpectomy,Class):1.0
+is(Lung,Class):1.0
+is(MUGAScan,Class):1.0
+is(MaddenMastectomy,Class):1.0
+is(MagneticResonanceImaging,Class):1.0
+is(Male,Class):1.0
+is(MaleHumanBeing,Class):1.0
+SubClassOf(MaleHumanBeing,HumanBeing,):1.0
+SubClassOf(MaleHumanBeing,not (undergoes some Labor),):1.0
+SubClassOf(MaleHumanBeing,not (undergoes some Menopause),):1.0
+SubClassOf(MaleHumanBeing,not (undergoes some Menstruation),):1.0
+SubClassOf(MaleHumanBeing,not (undergoes some Parturition),):1.0
+SubClassOf(MaleHumanBeing,not (undergoes some Pregnancy),):1.0
+SubClassOf(MaleHumanBeing,hasGender some Male,):1.0
+SubClassOf(MaleHumanBeing,hasPart some Prostate,):1.0
+SubClassOf(MaleHumanBeing,hasGender only Male):1.0
+is(Mastectomy,Class):1.0
+is(Mastopexy,Class):1.0
+is(MedicalPractitioner,Class):1.0
+is(Menopause,Class):1.0
+is(Menstruation,Class):1.0
+is(NerveTrunk,Class):1.0
+SubClassOf(NerveTrunk,SegmentOfNeuralTreeOrgan):1.0
+is(NuclearImaging,Class):1.0
+is(NumberOfLymphNodes,Class):1.0
+is(OpticChiasm,Class):1.0
+SubClassOf(OpticChiasm,NerveTrunk):1.0
+is(OpticNerve,Class):1.0
+SubClassOf(OpticNerve,NerveTrunk):1.0
+is(Organism,Class):1.0
+SubClassOf(Organism,BiologicalIndependentContinuant):1.0
+is(OrganismalIndependentContinuant,Class):1.0
+SubClassOf(OrganismalIndependentContinuant,BiologicalIndependentContinuant):1.0
+is(PartialHysterectomy,Class):1.0
+is(PartialMastectomy,Class):1.0
+is(Parturition,Class):1.0
+is(PateyMastectomy,Class):1.0
+is(PatientManagement,Class):1.0
+is(PharmaceuticalSubstance,Class):1.0
+is(PreTherapy,Class):1.0
+is(Pregnancy,Class):1.0
+is(ProfessionalRole,Class):1.0
+is(Prostate,Class):1.0
+is(ProtocolChange,Class):1.0
+is(PsychosocialCare,Class):1.0
+is(Quadrantectomy,Class):1.0
+is(RFSDays,Class):1.0
+is(ReconstructiveBreastSurgery,Class):1.0
+is(Registration,Class):1.0
+is(SegmentOfNeuralTreeOrgan,Class):1.0
+is(SegmentalMastectomy,Class):1.0
+is(SkinSparingTotalMastectomy,Class):1.0
+is(SubcutaneousMastectomy,Class):1.0
+is(SubstanceSample,Class):1.0
+is(Symptom,Class):1.0
+is(TotalHysterectomy,Class):1.0
+is(TotalMastectomy,Class):1.0
+is(Object,Class):1.0
+is(ProcessualEntity,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0

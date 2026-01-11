@@ -1,0 +1,21 @@
+predicate(OBI_0100026,is,Class).
+predicate(OBI_0100026,SubClassOf,MaterialEntity).
+predicate(purl.org/obo//CHEBI#,is,Class).
+predicate(purl.org/obo//CHEBI#,SubClassOf,MaterialEntity).
+predicate(FiatObjectPart,is,Class).
+predicate(FiatObjectPart,SubClassOf,MaterialEntity).
+predicate(IndependentContinuant,is,Class).
+predicate(MaterialEntity,is,Class).
+predicate(MaterialEntity,EquivalentTo,FiatObjectPart or Object or ObjectAggregate).
+predicate(MaterialEntity,SubClassOf,IndependentContinuant).
+predicate(MaterialEntity,DisjointWith,Site).
+predicate(MaterialEntity,DisjointWith,ObjectBoundary).
+predicate(Object,is,Class).
+predicate(Object,SubClassOf,MaterialEntity).
+predicate(ObjectAggregate,is,Class).
+predicate(ObjectAggregate,SubClassOf,MaterialEntity).
+predicate(ObjectBoundary,is,Class).
+predicate(ObjectBoundary,DisjointWith,MaterialEntity).
+predicate(Site,is,Class).
+predicate(Site,DisjointWith,MaterialEntity).
+predicate(www.w3.org/2002/07/#,is,Class).

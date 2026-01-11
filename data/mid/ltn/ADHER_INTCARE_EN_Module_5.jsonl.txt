@@ -1,0 +1,103 @@
+is(Has_Degree_of_Objectivity_Type,ObjectProperty):1.0
+Domain(Has_Degree_of_Objectivity_Type,Indicators):1.0
+Range(Has_Degree_of_Objectivity_Type,Degree_of_Objectivity):1.0
+InverseOf(Has_Degree_of_Objectivity_Type,It_is_Kind_of_Objectivity):1.0
+is(Has_Presence_of_Type,ObjectProperty):1.0
+Domain(Has_Presence_of_Type,Indicators):1.0
+Range(Has_Presence_of_Type,Face-to-face,):1.0
+Range(Has_Presence_of_Type,Non_Face-to-face):1.0
+InverseOf(Has_Presence_of_Type,It_is_Type_Presence_of):1.0
+is(Has_Type_Continuity,ObjectProperty):1.0
+is(Has_Type_Style,ObjectProperty):1.0
+Domain(Has_Type_Style,Indicators):1.0
+is(Indirect,Direct/):1.0
+InverseOf(Indirect,It_is_Kind_of):1.0
+is(It_is_Kind_of,ObjectProperty):1.0
+InverseOf(It_is_Kind_of,Has_Type_Style):1.0
+is(It_is_Kind_of_Continiuty_of,ObjectProperty):1.0
+is(It_is_Kind_of_Objectivity,ObjectProperty):1.0
+InverseOf(It_is_Kind_of_Objectivity,Has_Degree_of_Objectivity_Type):1.0
+is(It_is_Type_Presence_of,ObjectProperty):1.0
+InverseOf(It_is_Type_Presence_of,Has_Presence_of_Type):1.0
+is(Achieved_therapy,Class):1.0
+SubClassOf(Achieved_therapy,Indicators):1.0
+is(Autoevaluations,Class):1.0
+SubClassOf(Autoevaluations,Indicators):1.0
+is(Biological,Class):1.0
+SubClassOf(Biological,Indicators):1.0
+is(Biological_markers,Class):1.0
+is(Blood,Class):1.0
+is(CMA,Class):1.0
+SubClassOf(CMA,Supply_Compliance_Measures,):1.0
+SubClassOf(CMA,Has_Type_Continuity only Continuous):1.0
+is(CMG,Class):1.0
+SubClassOf(CMG,Supply_Compliance_Measures,):1.0
+SubClassOf(CMG,Has_Type_Continuity only Continuous):1.0
+is(CSA,Class):1.0
+SubClassOf(CSA,Supply_Compliance_Measures,):1.0
+SubClassOf(CSA,Has_Type_Continuity only Continuous):1.0
+is(CSG,Class):1.0
+SubClassOf(CSG,Supply_Compliance_Measures,):1.0
+SubClassOf(CSG,Has_Type_Continuity only Continuous):1.0
+is(Continuation,Class):1.0
+is(Continuous,Class):1.0
+SubClassOf(Continuous,Continuation,):1.0
+SubClassOf(Continuous,It_is_Kind_of_Continiuty_of exactly 1 (CMA or CMG or CSA or CSG or MPR)):1.0
+DisjointWith(Continuous,Discontinuous):1.0
+is(Count,Class):1.0
+SubClassOf(Count,Indicators):1.0
+is(Data_analisys_derived_patterns,Class):1.0
+SubClassOf(Data_analisys_derived_patterns,Indicators):1.0
+is(Degree_of_Objectivity,Class):1.0
+is(Dichotomous_Variable,Class):1.0
+SubClassOf(Dichotomous_Variable,Supply_Compliance_Measures,):1.0
+SubClassOf(Dichotomous_Variable,Has_Type_Continuity only Discontinuous):1.0
+is(Direct,Class):1.0
+is(Indirect,,Direct/):1.0
+is(Indirect,,It_is_Kind_of exactly 1 (Biological or Biological_markers or Blood or Direct_observation or Saliva or Skin or Urine)):1.0
+DisjointWith(Indirect,,Indirect):1.0
+is(Direct_observation,Class):1.0
+SubClassOf(Direct_observation,Indicators):1.0
+is(Discontinuous,Class):1.0
+SubClassOf(Discontinuous,Continuation,):1.0
+SubClassOf(Discontinuous,It_is_Kind_of_Continiuty_of exactly 1 Dichotomous_Variable):1.0
+DisjointWith(Discontinuous,Continuous):1.0
+is(Electronic_device,Class):1.0
+SubClassOf(Electronic_device,Indicators):1.0
+is(Face-to-face,Class):1.0
+is(G_Review,Class):1.0
+DisjointWith(G_Review,Indicators):1.0
+is(Indicator_types,Class):1.0
+SubClassOf(Indicator_types,Indicators):1.0
+is(Indicators,Class):1.0
+SubClassOf(Indicators,Medication_adherence):1.0
+DisjointWith(Indicators,G_Review):1.0
+is(Indirect,Class):1.0
+DisjointWith(Indirect,Direct):1.0
+is(MPR,Class):1.0
+SubClassOf(MPR,Supply_Compliance_Measures,):1.0
+SubClassOf(MPR,Has_Type_Continuity only Continuous):1.0
+is(Medication_adherence,Class):1.0
+is(Medication_adverse_effects,Class):1.0
+SubClassOf(Medication_adverse_effects,Indicators):1.0
+is(Non_Face-to-face,Class):1.0
+is(Objective,Class):1.0
+SubClassOf(Objective,Degree_of_Objectivity,):1.0
+SubClassOf(Objective,It_is_Kind_of_Objectivity exactly 1 (Count or Electronic_device or Pharmacy_Database)):1.0
+DisjointWith(Objective,Subjective):1.0
+is(Pharmaceutical_judgement,Class):1.0
+SubClassOf(Pharmaceutical_judgement,Indicators):1.0
+is(Pharmacy_Database,Class):1.0
+is(STOPPFrail_criteria,Class):1.0
+SubClassOf(STOPPFrail_criteria,Indicators):1.0
+is(STOPP_START_criteria,Class):1.0
+SubClassOf(STOPP_START_criteria,Indicators):1.0
+is(Saliva,Class):1.0
+is(Skin,Class):1.0
+is(Subjective,Class):1.0
+SubClassOf(Subjective,Degree_of_Objectivity):1.0
+DisjointWith(Subjective,Objective):1.0
+is(Supply_Compliance_Measures,Class):1.0
+is(Urine,Class):1.0
+is(Direct/,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0

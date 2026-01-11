@@ -1,0 +1,148 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(string,is,Datatype).
+predicate(MD_Constraints.constraintApplicationScope,is,ObjectProperty).
+predicate(MD_Constraints.constraintApplicationScope,Domain,MD_Constraints).
+predicate(MD_Constraints.constraintApplicationScope,Range,MD_Scope).
+predicate(MD_Constraints.graphic,is,ObjectProperty).
+predicate(MD_Constraints.graphic,Domain,MD_Constraints).
+predicate(MD_Constraints.graphic,Range,MD_BrowseGraphic).
+predicate(MD_Constraints.reference,is,ObjectProperty).
+predicate(MD_Constraints.reference,Domain,MD_Constraints).
+predicate(MD_Constraints.reference,Range,CI_Citation).
+predicate(MD_Constraints.releasability,is,ObjectProperty).
+predicate(MD_Constraints.releasability,Domain,MD_Constraints).
+predicate(MD_Constraints.releasability,Range,MD_Releasability).
+predicate(MD_Constraints.responsibleParty,is,ObjectProperty).
+predicate(MD_Constraints.responsibleParty,Domain,MD_Constraints).
+predicate(MD_Constraints.responsibleParty,Range,CI_Responsibility).
+predicate(MD_LegalConstraints.accessConstraints,is,ObjectProperty).
+predicate(MD_LegalConstraints.accessConstraints,Domain,MD_LegalConstraints).
+predicate(MD_LegalConstraints.accessConstraints,Range,MD_RestrictionCode).
+predicate(MD_LegalConstraints.useConstraints,is,ObjectProperty).
+predicate(MD_LegalConstraints.useConstraints,Domain,MD_LegalConstraints).
+predicate(MD_LegalConstraints.useConstraints,Range,MD_RestrictionCode).
+predicate(MD_Releasability.addressee,is,ObjectProperty).
+predicate(MD_Releasability.addressee,Domain,MD_Releasability).
+predicate(MD_Releasability.addressee,Range,CI_Responsibility).
+predicate(MD_Releasability.disseminationConstraints,is,ObjectProperty).
+predicate(MD_Releasability.disseminationConstraints,Domain,MD_Releasability).
+predicate(MD_Releasability.disseminationConstraints,Range,MD_RestrictionCode).
+predicate(MD_SecurityConstraints.classification,is,ObjectProperty).
+predicate(MD_SecurityConstraints.classification,Domain,MD_SecurityConstraints).
+predicate(MD_SecurityConstraints.classification,Range,MD_ClassificationCode).
+predicate(MD_Constraints.useLimitation,is,DataProperty).
+predicate(MD_Constraints.useLimitation,Domain,MD_Constraints).
+predicate(MD_Constraints.useLimitation,Range,string).
+predicate(MD_LegalConstraints.otherConstraints,is,DataProperty).
+predicate(MD_LegalConstraints.otherConstraints,Domain,MD_LegalConstraints).
+predicate(MD_LegalConstraints.otherConstraints,Range,string).
+predicate(MD_Releasability.statement,is,DataProperty).
+predicate(MD_Releasability.statement,Domain,MD_Releasability).
+predicate(MD_Releasability.statement,Range,string).
+predicate(MD_SecurityConstraints.classificationSystem,is,DataProperty).
+predicate(MD_SecurityConstraints.classificationSystem,Domain,MD_SecurityConstraints).
+predicate(MD_SecurityConstraints.classificationSystem,Range,string).
+predicate(MD_SecurityConstraints.handlingDescription,is,DataProperty).
+predicate(MD_SecurityConstraints.handlingDescription,Domain,MD_SecurityConstraints).
+predicate(MD_SecurityConstraints.handlingDescription,Range,string).
+predicate(MD_SecurityConstraints.userNote,is,DataProperty).
+predicate(MD_SecurityConstraints.userNote,Domain,MD_SecurityConstraints).
+predicate(MD_SecurityConstraints.userNote,Range,string).
+predicate(CI_Citation,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_Responsibility,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_BrowseGraphic,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_Scope,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_ClassificationCode,is,Class).
+predicate(MD_Constraints,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Constraints.constraintApplicationScope only MD_Scope,).
+predicate(Thing,,is,MD_Constraints.graphic only MD_BrowseGraphic,).
+predicate(Thing,,is,MD_Constraints.reference only CI_Citation,).
+predicate(Thing,,is,MD_Constraints.releasability only MD_Releasability,).
+predicate(Thing,,is,MD_Constraints.responsibleParty only CI_Responsibility,).
+predicate(Thing,,is,MD_Constraints.constraintApplicationScope max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Constraints.releasability max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Constraints.useLimitation only string).
+predicate(MD_LegalConstraints,is,Class).
+predicate(MD_LegalConstraints,SubClassOf,MD_Constraints,).
+predicate(MD_LegalConstraints,SubClassOf,MD_LegalConstraints.accessConstraints only MD_RestrictionCode,).
+predicate(MD_LegalConstraints,SubClassOf,MD_LegalConstraints.useConstraints only MD_RestrictionCode,).
+predicate(MD_LegalConstraints,SubClassOf,MD_LegalConstraints.otherConstraints only string).
+predicate(MD_Releasability,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Releasability.addressee only CI_Responsibility,).
+predicate(Thing,,is,MD_Releasability.disseminationConstraints only MD_RestrictionCode,).
+predicate(Thing,,is,MD_Releasability.statement only string,).
+predicate(Literal,is,MD_Releasability.statement max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_RestrictionCode,is,Class).
+predicate(MD_SecurityConstraints,is,Class).
+predicate(MD_SecurityConstraints,SubClassOf,MD_Constraints,).
+predicate(MD_SecurityConstraints,SubClassOf,MD_SecurityConstraints.classification only MD_ClassificationCode,).
+predicate(Thing,,is,MD_SecurityConstraints.classification exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_SecurityConstraints.classificationSystem only string,).
+predicate(Thing,,is,MD_SecurityConstraints.handlingDescription only string,).
+predicate(Thing,,is,MD_SecurityConstraints.userNote only string,).
+predicate(Literal,,is,MD_SecurityConstraints.classificationSystem max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,MD_SecurityConstraints.handlingDescription max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,MD_SecurityConstraints.userNote max 1 www.w3.org/2000/01/-schema#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(MD_ClassificationCode,is,Individual).
+predicate(MD_ClassificationCodeCollection,is,Individual).
+predicate(MD_RestrictionCode,is,Individual).
+predicate(MD_RestrictionCodeCollection,is,Individual).
+predicate(MD_ClassificationCode/,is,Individual).
+predicate(MD_ClassificationCode/,Types,MD_ClassificationCode).
+predicate(MD_ClassificationCode/,is,Individual).
+predicate(MD_ClassificationCode/,Types,MD_ClassificationCode).
+predicate(MD_ClassificationCode/,is,Individual).
+predicate(MD_ClassificationCode/,Types,MD_ClassificationCode).
+predicate(MD_ClassificationCode/,is,Individual).
+predicate(MD_ClassificationCode/,Types,MD_ClassificationCode).
+predicate(MD_ClassificationCode/,is,Individual).
+predicate(MD_ClassificationCode/,Types,MD_ClassificationCode).
+predicate(MD_ClassificationCode/,is,Individual).
+predicate(MD_ClassificationCode/,Types,MD_ClassificationCode).
+predicate(MD_ClassificationCode/,is,Individual).
+predicate(MD_ClassificationCode/,Types,MD_ClassificationCode).
+predicate(MD_ClassificationCode/,is,Individual).
+predicate(MD_ClassificationCode/,Types,MD_ClassificationCode).
+predicate(MD_ClassificationCode/,is,Individual).
+predicate(MD_ClassificationCode/,Types,MD_ClassificationCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).
+predicate(MD_RestrictionCode/,is,Individual).
+predicate(MD_RestrictionCode/,Types,MD_RestrictionCode).

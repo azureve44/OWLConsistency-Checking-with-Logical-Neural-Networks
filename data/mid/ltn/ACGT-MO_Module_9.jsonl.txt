@@ -1,0 +1,390 @@
+is(creates,ObjectProperty):1.0
+is(followUpOf,ObjectProperty):1.0
+Domain(followUpOf,MedicalProcess):1.0
+Range(followUpOf,MedicalProcess):1.0
+InverseOf(followUpOf,hasFollowUp):1.0
+is(hasFollowUp,ObjectProperty):1.0
+Domain(hasFollowUp,MedicalProcess):1.0
+Range(hasFollowUp,MedicalProcess):1.0
+InverseOf(hasFollowUp,followUpOf):1.0
+is(hasIdentifier,ObjectProperty):1.0
+is(hasOutcome,ObjectProperty):1.0
+is(hasPatient,ObjectProperty):1.0
+is(hasPlace,ObjectProperty):1.0
+is(hasQuality,ObjectProperty):1.0
+is(implements,ObjectProperty):1.0
+is(makesUseOfTechnicalObject,ObjectProperty):1.0
+Domain(makesUseOfTechnicalObject,MedicalProcess):1.0
+Range(makesUseOfTechnicalObject,IndependentContinuant):1.0
+InverseOf(makesUseOfTechnicalObject,usedInMedicalProcess):1.0
+is(pictures,ObjectProperty):1.0
+Domain(pictures,Imaging):1.0
+Range(pictures,OrganismalIndependentContinuant):1.0
+is(promptedBy,ObjectProperty):1.0
+is(reveals,ObjectProperty):1.0
+is(undergoneBy,ObjectProperty):1.0
+is(undertakenBy,ObjectProperty):1.0
+is(usedInMedicalProcess,ObjectProperty):1.0
+InverseOf(usedInMedicalProcess,makesUseOfTechnicalObject):1.0
+is(hasAgent,ObjectProperty):1.0
+is(hasPart,ObjectProperty):1.0
+is(hasParticipant,ObjectProperty):1.0
+is(ALPLevel,Class):1.0
+is(ALTCount,Class):1.0
+is(ANC,Class):1.0
+SubClassOf(ANC,HematologicalBiochemicalTest,):1.0
+SubClassOf(ANC,reveals some ANCount,):1.0
+SubClassOf(ANC,reveals only ANCount):1.0
+is(ANCount,Class):1.0
+is(ASTCount,Class):1.0
+is(AlkalinePhosphataseTest,Class):1.0
+SubClassOf(AlkalinePhosphataseTest,HematologicalBiochemicalTest,):1.0
+SubClassOf(AlkalinePhosphataseTest,reveals some ALPLevel,):1.0
+SubClassOf(AlkalinePhosphataseTest,reveals only ALPLevel):1.0
+is(Audiometry,Class):1.0
+SubClassOf(Audiometry,DiagnosticProcess):1.0
+is(Autopsy,Class):1.0
+SubClassOf(Autopsy,DiagnosticProcess):1.0
+DisjointWith(Autopsy,UrineExam):1.0
+DisjointWith(Autopsy,Surveillance):1.0
+DisjointWith(Autopsy,SputumExam):1.0
+DisjointWith(Autopsy,PregnancyTest):1.0
+DisjointWith(Autopsy,MacropathologicalExamination):1.0
+DisjointWith(Autopsy,HistologicalExamination):1.0
+DisjointWith(Autopsy,HematologicalBiochemicalTest):1.0
+DisjointWith(Autopsy,CytologicalExamination):1.0
+is(Biopsy,Class):1.0
+EquivalentTo(Biopsy,BiopsyWithIncision or BiopsyWithoutIncision):1.0
+SubClassOf(Biopsy,DiagnosticProcess,):1.0
+SubClassOf(Biopsy,hasOutcome some HistologicalSample,):1.0
+SubClassOf(Biopsy,undergoneBy some Organism):1.0
+DisjointWith(Biopsy,ClinicalExamination):1.0
+is(BiopsyNeedle,Class):1.0
+is(BiopsyWithIncision,Class):1.0
+SubClassOf(BiopsyWithIncision,Biopsy):1.0
+DisjointWith(BiopsyWithIncision,BiopsyWithoutIncision):1.0
+is(BiopsyWithoutIncision,Class):1.0
+SubClassOf(BiopsyWithoutIncision,Biopsy,):1.0
+SubClassOf(BiopsyWithoutIncision,hasParticipant min 0 BiopsyNeedle):1.0
+DisjointWith(BiopsyWithoutIncision,BiopsyWithIncision):1.0
+is(BloodPressureMeasuringProcess,Class):1.0
+SubClassOf(BloodPressureMeasuringProcess,DiagnosticProcess):1.0
+is(BoneScintigraphy,Class):1.0
+SubClassOf(BoneScintigraphy,Scintigraphy):1.0
+is(CellCounting,Class):1.0
+SubClassOf(CellCounting,DiagnosticProcess):1.0
+is(CerebrospinalLiquidPuncture,Class):1.0
+SubClassOf(CerebrospinalLiquidPuncture,DiagnosticProcess,):1.0
+SubClassOf(CerebrospinalLiquidPuncture,creates min 0 CerebrospinalLiquidSample):1.0
+is(CerebrospinalLiquidSample,Class):1.0
+is(ChemicalSubstance,Class):1.0
+is(ClinicalExamination,Class):1.0
+SubClassOf(ClinicalExamination,DiagnosticProcess,):1.0
+SubClassOf(ClinicalExamination,undergoneBy some Organism):1.0
+DisjointWith(ClinicalExamination,Biopsy):1.0
+is(Computertomography,Class):1.0
+SubClassOf(Computertomography,Imaging,):1.0
+SubClassOf(Computertomography,hasParticipant min 0 ChemicalSubstance):1.0
+DisjointWith(Computertomography,Ultrasound):1.0
+DisjointWith(Computertomography,RoentgenologicalImaging):1.0
+DisjointWith(Computertomography,MagneticResonanceImaging):1.0
+is(ConeBiopsy,Class):1.0
+SubClassOf(ConeBiopsy,BiopsyWithoutIncision):1.0
+is(CoreNeedleBiopsy,Class):1.0
+SubClassOf(CoreNeedleBiopsy,BiopsyWithoutIncision):1.0
+is(CountingPlatelets,Class):1.0
+SubClassOf(CountingPlatelets,HematologicalBiochemicalTest,):1.0
+SubClassOf(CountingPlatelets,reveals some PlateletCount,):1.0
+SubClassOf(CountingPlatelets,reveals only PlateletCount):1.0
+is(CountingRedBloodCells,Class):1.0
+SubClassOf(CountingRedBloodCells,HematologicalBiochemicalTest,):1.0
+SubClassOf(CountingRedBloodCells,reveals some TotalRBC,):1.0
+SubClassOf(CountingRedBloodCells,reveals only TotalRBC):1.0
+is(CytogeneticExamination,Class):1.0
+SubClassOf(CytogeneticExamination,DiagnosticProcess):1.0
+is(CytologicalExamination,Class):1.0
+SubClassOf(CytologicalExamination,DiagnosticProcess):1.0
+DisjointWith(CytologicalExamination,UrineExam):1.0
+DisjointWith(CytologicalExamination,Surveillance):1.0
+DisjointWith(CytologicalExamination,SputumExam):1.0
+DisjointWith(CytologicalExamination,PregnancyTest):1.0
+DisjointWith(CytologicalExamination,MacropathologicalExamination):1.0
+DisjointWith(CytologicalExamination,HistologicalExamination):1.0
+DisjointWith(CytologicalExamination,HematologicalBiochemicalTest):1.0
+DisjointWith(CytologicalExamination,Autopsy):1.0
+is(DCISHistologicalAssessment,Class):1.0
+SubClassOf(DCISHistologicalAssessment,HistologicalExamination):1.0
+is(DiagnosticProcess,Class):1.0
+SubClassOf(DiagnosticProcess,MedicalProcess):1.0
+is(DifferentiationClass,Class):1.0
+is(ECG,Class):1.0
+SubClassOf(ECG,DiagnosticProcess,):1.0
+SubClassOf(ECG,reveals some ESV,):1.0
+SubClassOf(ECG,undergoneBy some Organism):1.0
+is(EPOLevelTest,Class):1.0
+SubClassOf(EPOLevelTest,HematologicalBiochemicalTest):1.0
+is(ER,Class):1.0
+is(ERHistologicalAssessment,Class):1.0
+SubClassOf(ERHistologicalAssessment,HistologicalExamination,):1.0
+SubClassOf(ERHistologicalAssessment,reveals some ERStatus,):1.0
+SubClassOf(ERHistologicalAssessment,hasPart some IHC,):1.0
+SubClassOf(ERHistologicalAssessment,hasParticipant some ER):1.0
+is(ERStatus,Class):1.0
+is(ESV,Class):1.0
+is(Echocardiography,Class):1.0
+SubClassOf(Echocardiography,Ultrasound):1.0
+is(EndOfFrequencyRecordingProcess,Class):1.0
+SubClassOf(EndOfFrequencyRecordingProcess,RecordingProcessEnd):1.0
+DisjointWith(EndOfFrequencyRecordingProcess,EndOfWeightRecordingProcess):1.0
+DisjointWith(EndOfFrequencyRecordingProcess,EndOfPressureRecordingProcess):1.0
+is(EndOfPressureRecordingProcess,Class):1.0
+DisjointWith(EndOfPressureRecordingProcess,EndOfFrequencyRecordingProcess):1.0
+is(EndOfWeightRecordingProcess,Class):1.0
+DisjointWith(EndOfWeightRecordingProcess,EndOfFrequencyRecordingProcess):1.0
+is(EndoscopicBiopsy,Class):1.0
+SubClassOf(EndoscopicBiopsy,BiopsyWithoutIncision):1.0
+is(FineNeedleBiopsy,Class):1.0
+SubClassOf(FineNeedleBiopsy,BiopsyWithoutIncision):1.0
+is(HbTest,Class):1.0
+SubClassOf(HbTest,HematologicalBiochemicalTest,):1.0
+SubClassOf(HbTest,reveals some HemoglobinConcentration,):1.0
+SubClassOf(HbTest,reveals only HemoglobinConcentration):1.0
+is(HematologicalBiochemicalTest,Class):1.0
+SubClassOf(HematologicalBiochemicalTest,DiagnosticProcess,):1.0
+SubClassOf(HematologicalBiochemicalTest,undergoneBy some Organism):1.0
+DisjointWith(HematologicalBiochemicalTest,UrineExam):1.0
+DisjointWith(HematologicalBiochemicalTest,Surveillance):1.0
+DisjointWith(HematologicalBiochemicalTest,SputumExam):1.0
+DisjointWith(HematologicalBiochemicalTest,PregnancyTest):1.0
+DisjointWith(HematologicalBiochemicalTest,MacropathologicalExamination):1.0
+DisjointWith(HematologicalBiochemicalTest,HistologicalExamination):1.0
+DisjointWith(HematologicalBiochemicalTest,CytologicalExamination):1.0
+DisjointWith(HematologicalBiochemicalTest,Autopsy):1.0
+is(HemoglobinConcentration,Class):1.0
+is(HistologicalExamination,Class):1.0
+SubClassOf(HistologicalExamination,DiagnosticProcess,):1.0
+SubClassOf(HistologicalExamination,undergoneBy some MaterialOrganismalIndependentContinuant,):1.0
+SubClassOf(HistologicalExamination,undergoneBy some Organism,):1.0
+SubClassOf(HistologicalExamination,reveals only HistologicalType,):1.0
+SubClassOf(HistologicalExamination,implements min 0 JournalNumber):1.0
+DisjointWith(HistologicalExamination,UrineExam):1.0
+DisjointWith(HistologicalExamination,Surveillance):1.0
+DisjointWith(HistologicalExamination,SputumExam):1.0
+DisjointWith(HistologicalExamination,PregnancyTest):1.0
+DisjointWith(HistologicalExamination,MacropathologicalExamination):1.0
+DisjointWith(HistologicalExamination,HematologicalBiochemicalTest):1.0
+DisjointWith(HistologicalExamination,CytologicalExamination):1.0
+DisjointWith(HistologicalExamination,Autopsy):1.0
+is(HistologicalSample,Class):1.0
+is(HistologicalType,Class):1.0
+is(HistopathologicTypeAssessment,Class):1.0
+SubClassOf(HistopathologicTypeAssessment,HistologicalExamination):1.0
+is(HumanBeing,Class):1.0
+is(IHC,Class):1.0
+is(Identifier,Class):1.0
+is(Imaging,Class):1.0
+SubClassOf(Imaging,DiagnosticProcess,):1.0
+SubClassOf(Imaging,hasOutcome some MedicalImage,):1.0
+SubClassOf(Imaging,pictures min 1 OrganismalIndependentContinuant):1.0
+is(ImmunohistochemicalExamination,Class):1.0
+SubClassOf(ImmunohistochemicalExamination,DiagnosticProcess):1.0
+is(Inking,Class):1.0
+SubClassOf(Inking,DiagnosticProcess):1.0
+is(Institution,Class):1.0
+is(IntentionalProcess,Class):1.0
+is(InvasiveDuctalCarcinomaAssessment,Class):1.0
+SubClassOf(InvasiveDuctalCarcinomaAssessment,HistopathologicTypeAssessment):1.0
+is(InvasiveLobularCarcinomaAssessment,Class):1.0
+SubClassOf(InvasiveLobularCarcinomaAssessment,HistopathologicTypeAssessment):1.0
+is(JournalNumber,Class):1.0
+is(LCISHistologicalAssessment,Class):1.0
+SubClassOf(LCISHistologicalAssessment,HistologicalExamination):1.0
+is(LocalRadiologist,Class):1.0
+SubClassOf(LocalRadiologist,Radiologist):1.0
+is(LumbarCerebrospinalFluidPuncture,Class):1.0
+SubClassOf(LumbarCerebrospinalFluidPuncture,CerebrospinalLiquidPuncture):1.0
+is(MUGAScan,Class):1.0
+SubClassOf(MUGAScan,NuclearImaging):1.0
+is(MacropathologicalExamination,Class):1.0
+SubClassOf(MacropathologicalExamination,DiagnosticProcess):1.0
+DisjointWith(MacropathologicalExamination,UrineExam):1.0
+DisjointWith(MacropathologicalExamination,Surveillance):1.0
+DisjointWith(MacropathologicalExamination,SputumExam):1.0
+DisjointWith(MacropathologicalExamination,PregnancyTest):1.0
+DisjointWith(MacropathologicalExamination,HistologicalExamination):1.0
+DisjointWith(MacropathologicalExamination,HematologicalBiochemicalTest):1.0
+DisjointWith(MacropathologicalExamination,CytologicalExamination):1.0
+DisjointWith(MacropathologicalExamination,Autopsy):1.0
+is(MagneticResonanceImaging,Class):1.0
+SubClassOf(MagneticResonanceImaging,Imaging,):1.0
+SubClassOf(MagneticResonanceImaging,hasParticipant min 0 ChemicalSubstance):1.0
+DisjointWith(MagneticResonanceImaging,Ultrasound):1.0
+DisjointWith(MagneticResonanceImaging,RoentgenologicalImaging):1.0
+DisjointWith(MagneticResonanceImaging,Computertomography):1.0
+is(MaleHumanBeing,Class):1.0
+is(MalignancyRelatedDiagnosticProcess,Class):1.0
+SubClassOf(MalignancyRelatedDiagnosticProcess,DiagnosticProcess):1.0
+is(MaterialOrganismalIndependentContinuant,Class):1.0
+is(MedicalImage,Class):1.0
+is(MedicalProcess,Class):1.0
+EquivalentTo(MedicalProcess,DiagnosticProcess or TherapeuticProcess):1.0
+SubClassOf(MedicalProcess,IntentionalProcess,):1.0
+SubClassOf(MedicalProcess,hasAgent some HumanBeing,):1.0
+SubClassOf(MedicalProcess,hasParticipant some Organism,):1.0
+is(Thing,,followUpOf min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,hasFollowUp min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,hasIdentifier min 0 Identifier,):1.0
+is(Thing,,hasPatient min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasPlace min 1 Institution,):1.0
+is(Thing,,hasQuality min 0 Toxicity,):1.0
+is(Thing,,promptedBy min 0 ProcessualEntity,):1.0
+is(Thing,undertakenBy min 1 www.w3.org/2002/07/#):1.0
+is(MicropathologicalExamination,Class):1.0
+SubClassOf(MicropathologicalExamination,DiagnosticProcess):1.0
+is(MoleculargeneticExamination,Class):1.0
+SubClassOf(MoleculargeneticExamination,DiagnosticProcess):1.0
+is(Neoplasm,Class):1.0
+is(NeurologicalExamination,Class):1.0
+SubClassOf(NeurologicalExamination,DiagnosticProcess):1.0
+is(NodalStatus,Class):1.0
+is(NodalStatusAssessment,Class):1.0
+SubClassOf(NodalStatusAssessment,TumorClassAssessment,):1.0
+SubClassOf(NodalStatusAssessment,reveals some NodalStatus,):1.0
+SubClassOf(NodalStatusAssessment,undergoneBy some Organism,):1.0
+SubClassOf(NodalStatusAssessment,reveals only NodalStatus):1.0
+is(NuclearImaging,Class):1.0
+SubClassOf(NuclearImaging,Imaging):1.0
+is(OphtalmologicalDiagnosticProcess,Class):1.0
+SubClassOf(OphtalmologicalDiagnosticProcess,DiagnosticProcess):1.0
+is(Organism,Class):1.0
+is(OrganismalIndependentContinuant,Class):1.0
+is(PR,Class):1.0
+is(PRHistologicalAssessment,Class):1.0
+SubClassOf(PRHistologicalAssessment,HistologicalExamination,):1.0
+SubClassOf(PRHistologicalAssessment,reveals some PRStatus,):1.0
+SubClassOf(PRHistologicalAssessment,hasPart some IHC,):1.0
+SubClassOf(PRHistologicalAssessment,hasParticipant some PR):1.0
+is(PRStatus,Class):1.0
+is(PlateletCount,Class):1.0
+is(PregnancyStatus,Class):1.0
+is(PregnancyTest,Class):1.0
+SubClassOf(PregnancyTest,DiagnosticProcess,):1.0
+SubClassOf(PregnancyTest,not (undergoneBy some MaleHumanBeing),):1.0
+SubClassOf(PregnancyTest,reveals some PregnancyStatus,):1.0
+SubClassOf(PregnancyTest,undergoneBy some Organism,):1.0
+SubClassOf(PregnancyTest,reveals only PregnancyStatus):1.0
+DisjointWith(PregnancyTest,UrineExam):1.0
+DisjointWith(PregnancyTest,Surveillance):1.0
+DisjointWith(PregnancyTest,SputumExam):1.0
+DisjointWith(PregnancyTest,MacropathologicalExamination):1.0
+DisjointWith(PregnancyTest,HistologicalExamination):1.0
+DisjointWith(PregnancyTest,HematologicalBiochemicalTest):1.0
+DisjointWith(PregnancyTest,CytologicalExamination):1.0
+DisjointWith(PregnancyTest,Autopsy):1.0
+is(PrenatalDiagnosticProcess,Class):1.0
+SubClassOf(PrenatalDiagnosticProcess,DiagnosticProcess):1.0
+is(ProphylacticCheckUp,Class):1.0
+SubClassOf(ProphylacticCheckUp,DiagnosticProcess):1.0
+is(PunchBiopsy,Class):1.0
+SubClassOf(PunchBiopsy,BiopsyWithoutIncision):1.0
+is(Radiologist,Class):1.0
+is(RecordingProcessEnd,Class):1.0
+is(ReferenceRoentgenologicalImaging,Class):1.0
+SubClassOf(ReferenceRoentgenologicalImaging,RoentgenologicalImaging):1.0
+is(RhabdoidTumorPredispositionSyndromProcess,Class):1.0
+SubClassOf(RhabdoidTumorPredispositionSyndromProcess,SyndromeProcess):1.0
+is(RoentgenologicalImaging,Class):1.0
+SubClassOf(RoentgenologicalImaging,Imaging):1.0
+DisjointWith(RoentgenologicalImaging,Ultrasound):1.0
+DisjointWith(RoentgenologicalImaging,MagneticResonanceImaging):1.0
+DisjointWith(RoentgenologicalImaging,Computertomography):1.0
+is(Scintigraphy,Class):1.0
+SubClassOf(Scintigraphy,Imaging):1.0
+is(Screening,Class):1.0
+SubClassOf(Screening,DiagnosticProcess):1.0
+is(SerumCreatinineConcentration,Class):1.0
+is(SerumCreatinineTest,Class):1.0
+SubClassOf(SerumCreatinineTest,HematologicalBiochemicalTest,):1.0
+SubClassOf(SerumCreatinineTest,reveals some SerumCreatinineConcentration):1.0
+is(SputumExam,Class):1.0
+SubClassOf(SputumExam,DiagnosticProcess,):1.0
+SubClassOf(SputumExam,undergoneBy some Organism):1.0
+DisjointWith(SputumExam,UrineExam):1.0
+DisjointWith(SputumExam,Surveillance):1.0
+DisjointWith(SputumExam,PregnancyTest):1.0
+DisjointWith(SputumExam,MacropathologicalExamination):1.0
+DisjointWith(SputumExam,HistologicalExamination):1.0
+DisjointWith(SputumExam,HematologicalBiochemicalTest):1.0
+DisjointWith(SputumExam,CytologicalExamination):1.0
+DisjointWith(SputumExam,Autopsy):1.0
+is(SurfaceBiopsy,Class):1.0
+SubClassOf(SurfaceBiopsy,BiopsyWithoutIncision):1.0
+is(Surveillance,Class):1.0
+SubClassOf(Surveillance,DiagnosticProcess):1.0
+DisjointWith(Surveillance,UrineExam):1.0
+DisjointWith(Surveillance,SputumExam):1.0
+DisjointWith(Surveillance,PregnancyTest):1.0
+DisjointWith(Surveillance,MacropathologicalExamination):1.0
+DisjointWith(Surveillance,HistologicalExamination):1.0
+DisjointWith(Surveillance,HematologicalBiochemicalTest):1.0
+DisjointWith(Surveillance,CytologicalExamination):1.0
+DisjointWith(Surveillance,Autopsy):1.0
+is(SyndromeProcess,Class):1.0
+is(TherapeuticProcess,Class):1.0
+SubClassOf(TherapeuticProcess,MedicalProcess):1.0
+is(TotalBilirubin,Class):1.0
+is(TotalBilirubinTest,Class):1.0
+SubClassOf(TotalBilirubinTest,HematologicalBiochemicalTest,):1.0
+SubClassOf(TotalBilirubinTest,reveals some TotalBilirubin,):1.0
+SubClassOf(TotalBilirubinTest,reveals only TotalBilirubin):1.0
+is(TotalRBC,Class):1.0
+is(Toxicity,Class):1.0
+is(TransaminaseBiochemistry,Class):1.0
+SubClassOf(TransaminaseBiochemistry,HematologicalBiochemicalTest,):1.0
+SubClassOf(TransaminaseBiochemistry,reveals some ALTCount,):1.0
+SubClassOf(TransaminaseBiochemistry,reveals some ASTCount,):1.0
+SubClassOf(TransaminaseBiochemistry,reveals only):1.0
+SubClassOf(TransaminaseBiochemistry,(ALTCount or ASTCount)):1.0
+is(TroponinTest,Class):1.0
+SubClassOf(TroponinTest,HematologicalBiochemicalTest):1.0
+is(TrucutBiopsy,Class):1.0
+SubClassOf(TrucutBiopsy,BiopsyWithoutIncision):1.0
+is(TumorCellCounting,Class):1.0
+SubClassOf(TumorCellCounting,CellCounting):1.0
+is(TumorClassAssessment,Class):1.0
+SubClassOf(TumorClassAssessment,DiagnosticProcess):1.0
+is(TumorGradeAssessment,Class):1.0
+SubClassOf(TumorGradeAssessment,TumorClassAssessment,):1.0
+SubClassOf(TumorGradeAssessment,reveals some DifferentiationClass,):1.0
+SubClassOf(TumorGradeAssessment,undergoneBy some Neoplasm,):1.0
+SubClassOf(TumorGradeAssessment,undergoneBy some Organism,):1.0
+SubClassOf(TumorGradeAssessment,reveals only DifferentiationClass):1.0
+is(Ultrasound,Class):1.0
+SubClassOf(Ultrasound,Imaging):1.0
+DisjointWith(Ultrasound,RoentgenologicalImaging):1.0
+DisjointWith(Ultrasound,MagneticResonanceImaging):1.0
+DisjointWith(Ultrasound,Computertomography):1.0
+is(UrineExam,Class):1.0
+SubClassOf(UrineExam,DiagnosticProcess,):1.0
+SubClassOf(UrineExam,undergoneBy some Organism,):1.0
+SubClassOf(UrineExam,hasParticipant some UrineSample):1.0
+DisjointWith(UrineExam,Surveillance):1.0
+DisjointWith(UrineExam,SputumExam):1.0
+DisjointWith(UrineExam,PregnancyTest):1.0
+DisjointWith(UrineExam,MacropathologicalExamination):1.0
+DisjointWith(UrineExam,HistologicalExamination):1.0
+DisjointWith(UrineExam,HematologicalBiochemicalTest):1.0
+DisjointWith(UrineExam,CytologicalExamination):1.0
+DisjointWith(UrineExam,Autopsy):1.0
+is(UrineSample,Class):1.0
+is(VentricularCerebrospinalFluidPuncture,Class):1.0
+SubClassOf(VentricularCerebrospinalFluidPuncture,CerebrospinalLiquidPuncture):1.0
+is(WBC,Class):1.0
+SubClassOf(WBC,HematologicalBiochemicalTest,):1.0
+SubClassOf(WBC,reveals some WBCCount,):1.0
+SubClassOf(WBC,reveals only WBCCount):1.0
+is(WBCCount,Class):1.0
+is(SIOP2001/,Class):1.0
+is(IndependentContinuant,Class):1.0
+is(ProcessualEntity,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0

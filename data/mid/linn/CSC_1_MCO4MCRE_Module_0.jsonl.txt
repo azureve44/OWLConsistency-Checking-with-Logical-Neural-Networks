@@ -1,0 +1,89 @@
+predicate(h&e,is,Class).
+predicate(h&e,SubClassOf,pathology).
+predicate(_any_instance,is,Class).
+predicate(_any_instance,EquivalentTo,endoscopy or pathology or radiology).
+predicate(_any_instance,SubClassOf,ct,).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(acid_fast,is,Class).
+predicate(acid_fast,SubClassOf,other_staining).
+predicate(alcian_blue,is,Class).
+predicate(alcian_blue,SubClassOf,other_staining).
+predicate(angiography,is,Class).
+predicate(angiography,SubClassOf,radiology).
+predicate(angiography,DisjointWith,no_angiography).
+predicate(arthroscopy,is,Class).
+predicate(arthroscopy,SubClassOf,endoscopy).
+predicate(broncoscopy,is,Class).
+predicate(broncoscopy,SubClassOf,endoscopy).
+predicate(colonoscopy,is,Class).
+predicate(colonoscopy,SubClassOf,endoscopy).
+predicate(congo_red,is,Class).
+predicate(congo_red,SubClassOf,other_staining).
+predicate(ct,is,Class).
+predicate(ct,SubClassOf,radiology).
+predicate(cystoscopy,is,Class).
+predicate(cystoscopy,SubClassOf,endoscopy).
+predicate(echocardiogram,is,Class).
+predicate(echocardiogram,SubClassOf,ultrasound).
+predicate(echocardiogram,DisjointWith,other_ultrasound).
+predicate(egd,is,Class).
+predicate(egd,SubClassOf,endoscopy).
+predicate(endoscopy,is,Class).
+predicate(endoscopy,EquivalentTo,arthroscopy or broncoscopy or colonoscopy or cystoscopy or egd or gastroscopy or laryngoscopy).
+predicate(endoscopy,SubClassOf,_any_instance).
+predicate(fish,is,Class).
+predicate(fish,SubClassOf,other_staining).
+predicate(gastroscopy,is,Class).
+predicate(gastroscopy,SubClassOf,endoscopy).
+predicate(giemsa,is,Class).
+predicate(giemsa,SubClassOf,other_staining).
+predicate(gram,is,Class).
+predicate(gram,SubClassOf,other_staining).
+predicate(immunofluorescence,is,Class).
+predicate(immunofluorescence,SubClassOf,other_staining).
+predicate(immunostaining,is,Class).
+predicate(immunostaining,SubClassOf,pathology).
+predicate(laryngoscopy,is,Class).
+predicate(laryngoscopy,SubClassOf,endoscopy).
+predicate(masson_trichrome,is,Class).
+predicate(masson_trichrome,SubClassOf,other_staining).
+predicate(methenamine_silver,is,Class).
+predicate(methenamine_silver,SubClassOf,other_staining).
+predicate(methylene_blue,is,Class).
+predicate(methylene_blue,SubClassOf,other_staining).
+predicate(mri,is,Class).
+predicate(mri,SubClassOf,radiology).
+predicate(no_angiography,is,Class).
+predicate(no_angiography,SubClassOf,radiology).
+predicate(no_angiography,DisjointWith,angiography).
+predicate(other_staining,is,Class).
+predicate(other_staining,EquivalentTo,acid_fast or alcian_blue or congo_red or fish or giemsa or gram or immunofluorescence or masson_trichrome or methenamine_silver or methylene_blue or papanicolaou or pas or van_gieson).
+predicate(other_staining,SubClassOf,pathology).
+predicate(other_staining,DisjointWith,acid_fast or alcian_blue or congo_red or fish or giemsa or gram or immunofluorescence or masson_trichrome or methenamine_silver or methylene_blue or papanicolaou or pas or van_gieson).
+predicate(other_ultrasound,is,Class).
+predicate(other_ultrasound,SubClassOf,ultrasound).
+predicate(other_ultrasound,DisjointWith,echocardiogram).
+predicate(papanicolaou,is,Class).
+predicate(papanicolaou,SubClassOf,other_staining).
+predicate(pas,is,Class).
+predicate(pas,SubClassOf,other_staining).
+predicate(pathology,is,Class).
+predicate(pathology,EquivalentTo,immunostaining or other_staining or h&e).
+predicate(pathology,SubClassOf,_any_instance).
+predicate(radiology,is,Class).
+predicate(radiology,EquivalentTo,angiography or no_angiography,).
+predicate(radiology,EquivalentTo,ct or mri or ultrasound or x_ray).
+predicate(radiology,SubClassOf,_any_instance).
+predicate(ultrasound,is,Class).
+predicate(ultrasound,EquivalentTo,echocardiogram or other_ultrasound).
+predicate(ultrasound,SubClassOf,radiology).
+predicate(van_gieson,is,Class).
+predicate(van_gieson,SubClassOf,other_staining).
+predicate(x_ray,is,Class).
+predicate(x_ray,SubClassOf,radiology).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,acid_fast,alcian_blue,congo_red,fish,giemsa,gram,immunofluorescence,masson_trichrome,methenamine_silver,methylene_blue,papanicolaou,pas,van_gieson).
+predicate(www.w3.org/2002/07/#,DisjointClasses,arthroscopy,broncoscopy,colonoscopy,cystoscopy,egd,gastroscopy,laryngoscopy).
+predicate(www.w3.org/2002/07/#,DisjointClasses,ct,mri,ultrasound,x_ray).
+predicate(www.w3.org/2002/07/#,DisjointClasses,endoscopy,pathology,radiology).
+predicate(www.w3.org/2002/07/#,DisjointClasses,immunostaining,other_staining,h&e).

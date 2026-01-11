@@ -1,0 +1,103 @@
+predicate(Has_Degree_of_Objectivity_Type,is,ObjectProperty).
+predicate(Has_Degree_of_Objectivity_Type,Domain,Indicators).
+predicate(Has_Degree_of_Objectivity_Type,Range,Degree_of_Objectivity).
+predicate(Has_Degree_of_Objectivity_Type,InverseOf,It_is_Kind_of_Objectivity).
+predicate(Has_Presence_of_Type,is,ObjectProperty).
+predicate(Has_Presence_of_Type,Domain,Indicators).
+predicate(Has_Presence_of_Type,Range,Face-to-face,).
+predicate(Has_Presence_of_Type,Range,Non_Face-to-face).
+predicate(Has_Presence_of_Type,InverseOf,It_is_Type_Presence_of).
+predicate(Has_Type_Continuity,is,ObjectProperty).
+predicate(Has_Type_Style,is,ObjectProperty).
+predicate(Has_Type_Style,Domain,Indicators).
+predicate(Indirect,is,Direct/).
+predicate(Indirect,InverseOf,It_is_Kind_of).
+predicate(It_is_Kind_of,is,ObjectProperty).
+predicate(It_is_Kind_of,InverseOf,Has_Type_Style).
+predicate(It_is_Kind_of_Continiuty_of,is,ObjectProperty).
+predicate(It_is_Kind_of_Objectivity,is,ObjectProperty).
+predicate(It_is_Kind_of_Objectivity,InverseOf,Has_Degree_of_Objectivity_Type).
+predicate(It_is_Type_Presence_of,is,ObjectProperty).
+predicate(It_is_Type_Presence_of,InverseOf,Has_Presence_of_Type).
+predicate(Achieved_therapy,is,Class).
+predicate(Achieved_therapy,SubClassOf,Indicators).
+predicate(Autoevaluations,is,Class).
+predicate(Autoevaluations,SubClassOf,Indicators).
+predicate(Biological,is,Class).
+predicate(Biological,SubClassOf,Indicators).
+predicate(Biological_markers,is,Class).
+predicate(Blood,is,Class).
+predicate(CMA,is,Class).
+predicate(CMA,SubClassOf,Supply_Compliance_Measures,).
+predicate(CMA,SubClassOf,Has_Type_Continuity only Continuous).
+predicate(CMG,is,Class).
+predicate(CMG,SubClassOf,Supply_Compliance_Measures,).
+predicate(CMG,SubClassOf,Has_Type_Continuity only Continuous).
+predicate(CSA,is,Class).
+predicate(CSA,SubClassOf,Supply_Compliance_Measures,).
+predicate(CSA,SubClassOf,Has_Type_Continuity only Continuous).
+predicate(CSG,is,Class).
+predicate(CSG,SubClassOf,Supply_Compliance_Measures,).
+predicate(CSG,SubClassOf,Has_Type_Continuity only Continuous).
+predicate(Continuation,is,Class).
+predicate(Continuous,is,Class).
+predicate(Continuous,SubClassOf,Continuation,).
+predicate(Continuous,SubClassOf,It_is_Kind_of_Continiuty_of exactly 1 (CMA or CMG or CSA or CSG or MPR)).
+predicate(Continuous,DisjointWith,Discontinuous).
+predicate(Count,is,Class).
+predicate(Count,SubClassOf,Indicators).
+predicate(Data_analisys_derived_patterns,is,Class).
+predicate(Data_analisys_derived_patterns,SubClassOf,Indicators).
+predicate(Degree_of_Objectivity,is,Class).
+predicate(Dichotomous_Variable,is,Class).
+predicate(Dichotomous_Variable,SubClassOf,Supply_Compliance_Measures,).
+predicate(Dichotomous_Variable,SubClassOf,Has_Type_Continuity only Discontinuous).
+predicate(Direct,is,Class).
+predicate(Indirect,,is,Direct/).
+predicate(Indirect,,is,It_is_Kind_of exactly 1 (Biological or Biological_markers or Blood or Direct_observation or Saliva or Skin or Urine)).
+predicate(Indirect,,DisjointWith,Indirect).
+predicate(Direct_observation,is,Class).
+predicate(Direct_observation,SubClassOf,Indicators).
+predicate(Discontinuous,is,Class).
+predicate(Discontinuous,SubClassOf,Continuation,).
+predicate(Discontinuous,SubClassOf,It_is_Kind_of_Continiuty_of exactly 1 Dichotomous_Variable).
+predicate(Discontinuous,DisjointWith,Continuous).
+predicate(Electronic_device,is,Class).
+predicate(Electronic_device,SubClassOf,Indicators).
+predicate(Face-to-face,is,Class).
+predicate(G_Review,is,Class).
+predicate(G_Review,DisjointWith,Indicators).
+predicate(Indicator_types,is,Class).
+predicate(Indicator_types,SubClassOf,Indicators).
+predicate(Indicators,is,Class).
+predicate(Indicators,SubClassOf,Medication_adherence).
+predicate(Indicators,DisjointWith,G_Review).
+predicate(Indirect,is,Class).
+predicate(Indirect,DisjointWith,Direct).
+predicate(MPR,is,Class).
+predicate(MPR,SubClassOf,Supply_Compliance_Measures,).
+predicate(MPR,SubClassOf,Has_Type_Continuity only Continuous).
+predicate(Medication_adherence,is,Class).
+predicate(Medication_adverse_effects,is,Class).
+predicate(Medication_adverse_effects,SubClassOf,Indicators).
+predicate(Non_Face-to-face,is,Class).
+predicate(Objective,is,Class).
+predicate(Objective,SubClassOf,Degree_of_Objectivity,).
+predicate(Objective,SubClassOf,It_is_Kind_of_Objectivity exactly 1 (Count or Electronic_device or Pharmacy_Database)).
+predicate(Objective,DisjointWith,Subjective).
+predicate(Pharmaceutical_judgement,is,Class).
+predicate(Pharmaceutical_judgement,SubClassOf,Indicators).
+predicate(Pharmacy_Database,is,Class).
+predicate(STOPPFrail_criteria,is,Class).
+predicate(STOPPFrail_criteria,SubClassOf,Indicators).
+predicate(STOPP_START_criteria,is,Class).
+predicate(STOPP_START_criteria,SubClassOf,Indicators).
+predicate(Saliva,is,Class).
+predicate(Skin,is,Class).
+predicate(Subjective,is,Class).
+predicate(Subjective,SubClassOf,Degree_of_Objectivity).
+predicate(Subjective,DisjointWith,Objective).
+predicate(Supply_Compliance_Measures,is,Class).
+predicate(Urine,is,Class).
+predicate(Direct/,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

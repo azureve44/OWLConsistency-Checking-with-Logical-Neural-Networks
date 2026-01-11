@@ -1,0 +1,516 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(integer,is,Datatype).
+predicate(string,is,Datatype).
+predicate(conformsToKnedgeRepresentationParadigm,is,ObjectProperty).
+predicate(conformsToKnedgeRepresentationParadigm,Domain,Ontology).
+predicate(conformsToKnedgeRepresentationParadigm,Range,KnedgeRepresentationParadigm).
+predicate(contributesToOntology,is,ObjectProperty).
+predicate(contributesToOntology,Domain,Party).
+predicate(contributesToOntology,Range,Ontology).
+predicate(contributesToOntology,InverseOf,hasContributor).
+predicate(createsOntology,is,ObjectProperty).
+predicate(createsOntology,Domain,Party).
+predicate(createsOntology,Range,Ontology).
+predicate(createsOntology,InverseOf,hasCreator).
+predicate(definedBy,is,ObjectProperty).
+predicate(definedBy,Domain,OntologyType).
+predicate(definedBy,Range,Party).
+predicate(definedBy,InverseOf,defines).
+predicate(defines,is,ObjectProperty).
+predicate(defines,Domain,Party).
+predicate(defines,Range,OntologyType).
+predicate(defines,InverseOf,definedBy).
+predicate(designedForOntologyTask,is,ObjectProperty).
+predicate(designedForOntologyTask,Domain,Ontology).
+predicate(designedForOntologyTask,Range,OntologyTask).
+predicate(developedBy,is,ObjectProperty).
+predicate(developedBy,Domain,OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax).
+predicate(developedBy,Range,Party).
+predicate(developedBy,InverseOf,develops).
+predicate(develops,is,ObjectProperty).
+predicate(develops,Domain,Party).
+predicate(develops,Range,OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax).
+predicate(develops,InverseOf,developedBy).
+predicate(endorsedBy,is,ObjectProperty).
+predicate(endorsedBy,Domain,Ontology).
+predicate(endorsedBy,Range,Party).
+predicate(endorsedBy,InverseOf,endorses).
+predicate(endorses,is,ObjectProperty).
+predicate(endorses,Domain,Party).
+predicate(endorses,Range,Ontology).
+predicate(endorses,InverseOf,endorsedBy).
+predicate(hasAffiliatedParty,is,ObjectProperty).
+predicate(hasAffiliatedParty,Domain,Party).
+predicate(hasAffiliatedParty,Range,Party).
+predicate(hasContactPerson,is,ObjectProperty).
+predicate(hasContactPerson,Domain,Organisation).
+predicate(hasContactPerson,Range,Person).
+predicate(hasContactPerson,InverseOf,isContactPerson).
+predicate(hasContributor,is,ObjectProperty).
+predicate(hasContributor,Domain,Ontology).
+predicate(hasContributor,Range,Party).
+predicate(hasContributor,InverseOf,contributesToOntology).
+predicate(hasCreator,is,ObjectProperty).
+predicate(hasCreator,Domain,Ontology).
+predicate(hasCreator,Range,Party).
+predicate(hasCreator,InverseOf,createsOntology).
+predicate(hasDomain,is,ObjectProperty).
+predicate(hasDomain,Domain,Ontology).
+predicate(hasDomain,Range,OntologyDomain).
+predicate(hasFormalityLevel,is,ObjectProperty).
+predicate(hasFormalityLevel,Domain,Ontology).
+predicate(hasFormalityLevel,Range,FormalityLevel).
+predicate(hasLicense,is,ObjectProperty).
+predicate(hasLicense,Domain,Ontology).
+predicate(hasLicense,Range,LicenseModel).
+predicate(hasOntologyLanguage,is,ObjectProperty).
+predicate(hasOntologyLanguage,Domain,Ontology).
+predicate(hasOntologyLanguage,Range,OntologyLanguage).
+predicate(hasOntologySyntax,is,ObjectProperty).
+predicate(hasOntologySyntax,Domain,Ontology).
+predicate(hasOntologySyntax,Range,OntologySyntax).
+predicate(hasPriorVersion,is,ObjectProperty).
+predicate(hasPriorVersion,Domain,Ontology).
+predicate(hasPriorVersion,Range,Ontology).
+predicate(hasSyntax,is,ObjectProperty).
+predicate(hasSyntax,Domain,OntologyLanguage).
+predicate(hasSyntax,Range,OntologySyntax).
+predicate(isBackwardCompatibleWith,is,ObjectProperty).
+predicate(isBackwardCompatibleWith,Domain,Ontology).
+predicate(isBackwardCompatibleWith,Range,Ontology).
+predicate(isContactPerson,is,ObjectProperty).
+predicate(isContactPerson,Domain,Person).
+predicate(isContactPerson,Range,Organisation).
+predicate(isContactPerson,InverseOf,hasContactPerson).
+predicate(isIncompatibleWith,is,ObjectProperty).
+predicate(isIncompatibleWith,Domain,Ontology).
+predicate(isIncompatibleWith,Range,Ontology).
+predicate(isLocatedAt,is,ObjectProperty).
+predicate(isLocatedAt,Domain,Party).
+predicate(isLocatedAt,Range,Location).
+predicate(isOfType,is,ObjectProperty).
+predicate(isOfType,Domain,Ontology).
+predicate(isOfType,Range,OntologyType).
+predicate(isSubDomainOf,is,ObjectProperty).
+predicate(isSubDomainOf,Domain,OntologyDomain).
+predicate(isSubDomainOf,Range,OntologyDomain).
+predicate(specifiedBy,is,ObjectProperty).
+predicate(specifiedBy,Domain,KnedgeRepresentationParadigm or LicenseModel).
+predicate(specifiedBy,Range,Party).
+predicate(specifiedBy,InverseOf,specifies).
+predicate(specifies,is,ObjectProperty).
+predicate(specifies,Domain,Party).
+predicate(specifies,Range,KnedgeRepresentationParadigm or LicenseModel).
+predicate(specifies,InverseOf,specifiedBy).
+predicate(supportsRepresentationParadigm,is,ObjectProperty).
+predicate(supportsRepresentationParadigm,Domain,OntologyLanguage).
+predicate(supportsRepresentationParadigm,Range,KnedgeRepresentationParadigm).
+predicate(useImports,is,ObjectProperty).
+predicate(useImports,Domain,Ontology).
+predicate(useImports,Range,Ontology).
+predicate(usedOntologyEngineeringMethodology,is,ObjectProperty).
+predicate(usedOntologyEngineeringMethodology,Domain,Ontology).
+predicate(usedOntologyEngineeringMethodology,Range,OntologyEngineeringMethodology).
+predicate(usedOntologyEngineeringTool,is,ObjectProperty).
+predicate(usedOntologyEngineeringTool,Domain,Ontology).
+predicate(usedOntologyEngineeringTool,Range,OntologyEngineeringTool).
+predicate(URI,is,DataProperty).
+predicate(URI,Domain,Ontology or OntologyDomain).
+predicate(URI,Range,string).
+predicate(acronym,is,DataProperty).
+predicate(acronym,Domain,KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType or Organisation).
+predicate(acronym,Range,string).
+predicate(city,is,DataProperty).
+predicate(city,Domain,Location).
+predicate(city,Range,string).
+predicate(country,is,DataProperty).
+predicate(country,Domain,Location).
+predicate(country,Range,string).
+predicate(creationDate,is,DataProperty).
+predicate(creationDate,Domain,Ontology).
+predicate(creationDate,Range,string).
+predicate(description,is,DataProperty).
+predicate(description,Domain,FormalityLevel or KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType).
+predicate(description,Range,string).
+predicate(documentation,is,DataProperty).
+predicate(documentation,Domain,KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType).
+predicate(documentation,Range,string).
+predicate(eMail,is,DataProperty).
+predicate(eMail,Domain,Person).
+predicate(eMail,Range,string).
+predicate(faxNumber,is,DataProperty).
+predicate(faxNumber,Domain,Person).
+predicate(faxNumber,Range,string).
+predicate(firstName,is,DataProperty).
+predicate(firstName,Domain,Person).
+predicate(firstName,Range,string).
+predicate(keyClasses,is,DataProperty).
+predicate(keyClasses,Domain,Ontology).
+predicate(keyClasses,Range,string).
+predicate(keywords,is,DataProperty).
+predicate(keywords,Domain,Ontology).
+predicate(keywords,Range,string).
+predicate(knownUsage,is,DataProperty).
+predicate(knownUsage,Domain,Ontology).
+predicate(knownUsage,Range,string).
+predicate(lastName,is,DataProperty).
+predicate(lastName,Domain,Person).
+predicate(lastName,Range,string).
+predicate(modificationDate,is,DataProperty).
+predicate(modificationDate,Domain,Ontology).
+predicate(modificationDate,Range,string).
+predicate(name,is,DataProperty).
+predicate(name,Domain,FormalityLevel or KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyDomain or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType or Organisation).
+predicate(name,Range,string).
+predicate(naturalLanguage,is,DataProperty).
+predicate(naturalLanguage,Domain,Ontology).
+predicate(naturalLanguage,Range,string).
+predicate(notes,is,DataProperty).
+predicate(notes,Domain,Ontology).
+predicate(notes,Range,string).
+predicate(numberOfAxioms,is,DataProperty).
+predicate(numberOfAxioms,Domain,Ontology).
+predicate(numberOfAxioms,Range,integer).
+predicate(numberOfClasses,is,DataProperty).
+predicate(numberOfClasses,Domain,Ontology).
+predicate(numberOfClasses,Range,integer).
+predicate(numberOfIndividuals,is,DataProperty).
+predicate(numberOfIndividuals,Domain,Ontology).
+predicate(numberOfIndividuals,Range,integer).
+predicate(numberOfProperties,is,DataProperty).
+predicate(numberOfProperties,Domain,Ontology).
+predicate(numberOfProperties,Range,integer).
+predicate(phoneNumber,is,DataProperty).
+predicate(phoneNumber,Domain,Person).
+predicate(phoneNumber,Range,string).
+predicate(reference,is,DataProperty).
+predicate(reference,Domain,Ontology).
+predicate(reference,Range,string).
+predicate(resourceLocator,is,DataProperty).
+predicate(resourceLocator,Domain,Ontology).
+predicate(resourceLocator,Range,string).
+predicate(state,is,DataProperty).
+predicate(state,Domain,Location).
+predicate(state,Range,string).
+predicate(status,is,DataProperty).
+predicate(status,Domain,Ontology).
+predicate(status,Range,string).
+predicate(street,is,DataProperty).
+predicate(street,Domain,Location).
+predicate(street,Range,string).
+predicate(version,is,DataProperty).
+predicate(version,Domain,Ontology).
+predicate(version,Range,string).
+predicate(FormalityLevel,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,description max 1 www.w3.org/2000/01/-schema#).
+predicate(KnedgeRepresentationParadigm,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,specifiedBy only Party,).
+predicate(Thing,,is,acronym only string,).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,documentation only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,acronym max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,description max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,documentation max 1 www.w3.org/2000/01/-schema#).
+predicate(LicenseModel,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,specifiedBy only Party,).
+predicate(Thing,,is,acronym only string,).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,documentation only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,acronym max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,description max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,documentation max 1 www.w3.org/2000/01/-schema#).
+predicate(Location,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,city only string,).
+predicate(Thing,,is,country only string,).
+predicate(Thing,,is,state only string,).
+predicate(Thing,,is,street only string,).
+predicate(Literal,,is,city max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,country max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,state max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,street max 1 www.w3.org/2000/01/-schema#).
+predicate(Ontology,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,conformsToKnedgeRepresentationParadigm only KnedgeRepresentationParadigm,).
+predicate(Thing,,is,designedForOntologyTask only OntologyTask,).
+predicate(Thing,,is,endorsedBy only Party,).
+predicate(Thing,,is,hasContributor only Party,).
+predicate(Thing,,is,hasCreator only Party,).
+predicate(Thing,,is,hasDomain only OntologyDomain,).
+predicate(Thing,,is,hasFormalityLevel only FormalityLevel,).
+predicate(Thing,,is,hasLicense only LicenseModel,).
+predicate(Thing,,is,hasOntologyLanguage only OntologyLanguage,).
+predicate(Thing,,is,hasOntologySyntax only OntologySyntax,).
+predicate(Thing,,is,hasPriorVersion only Ontology,).
+predicate(Thing,,is,isBackwardCompatibleWith only Ontology,).
+predicate(Thing,,is,isIncompatibleWith only Ontology,).
+predicate(Thing,,is,isOfType only OntologyType,).
+predicate(Thing,,is,useImports only Ontology,).
+predicate(Thing,,is,usedOntologyEngineeringMethodology only OntologyEngineeringMethodology,).
+predicate(Thing,,is,usedOntologyEngineeringTool only OntologyEngineeringTool,).
+predicate(Thing,,is,hasCreator min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasFormalityLevel max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasLicense max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasOntologySyntax max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasPriorVersion max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,isOfType max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,URI only string,).
+predicate(Thing,,is,acronym only string,).
+predicate(Thing,,is,creationDate only string,).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,documentation only string,).
+predicate(Thing,,is,keyClasses only string,).
+predicate(Thing,,is,keywords only string,).
+predicate(Thing,,is,knownUsage only string,).
+predicate(Thing,,is,modificationDate only string,).
+predicate(Thing,,is,name only string,).
+predicate(Thing,,is,naturalLanguage only string,).
+predicate(Thing,,is,notes only string,).
+predicate(Thing,,is,numberOfAxioms only integer,).
+predicate(Thing,,is,numberOfClasses only integer,).
+predicate(Thing,,is,numberOfIndividuals only integer,).
+predicate(Thing,,is,numberOfProperties only integer,).
+predicate(Thing,,is,reference only string,).
+predicate(Thing,,is,resourceLocator only string,).
+predicate(Thing,,is,status only string,).
+predicate(Thing,,is,version only string,).
+predicate(Literal,,is,name min 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,URI exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,acronym exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,creationDate exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,description exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,resourceLocator exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,version exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,documentation max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,modificationDate max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,notes max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,numberOfAxioms max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,numberOfClasses max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,numberOfIndividuals max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,numberOfProperties max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,status max 1 www.w3.org/2000/01/-schema#).
+predicate(OntologyDomain,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isSubDomainOf only OntologyDomain,).
+predicate(Thing,,is,URI only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,URI exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(OntologyEngineeringMethodology,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,developedBy only Party,).
+predicate(Thing,,is,acronym only string,).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,documentation only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,acronym max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,description max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,documentation max 1 www.w3.org/2000/01/-schema#).
+predicate(OntologyEngineeringTool,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,developedBy only Party,).
+predicate(Thing,,is,acronym only string,).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,documentation only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,acronym max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,description max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,documentation max 1 www.w3.org/2000/01/-schema#).
+predicate(OntologyLanguage,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,developedBy only Party,).
+predicate(Thing,,is,hasSyntax only OntologySyntax,).
+predicate(Thing,,is,supportsRepresentationParadigm only KnedgeRepresentationParadigm,).
+predicate(Thing,,is,acronym only string,).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,documentation only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,acronym max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,description max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,documentation max 1 www.w3.org/2000/01/-schema#).
+predicate(OntologySyntax,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,developedBy only Party,).
+predicate(Thing,,is,acronym only string,).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,documentation only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,acronym max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,description max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,documentation max 1 www.w3.org/2000/01/-schema#).
+predicate(OntologyTask,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,acronym only string,).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,documentation only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,acronym max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,description max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,documentation max 1 www.w3.org/2000/01/-schema#).
+predicate(OntologyType,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,definedBy only Party,).
+predicate(Thing,,is,acronym only string,).
+predicate(Thing,,is,description only string,).
+predicate(Thing,,is,documentation only string,).
+predicate(Thing,,is,name only string,).
+predicate(Literal,,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,acronym max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,description max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,documentation max 1 www.w3.org/2000/01/-schema#).
+predicate(Organisation,is,Class).
+predicate(Organisation,SubClassOf,Party,).
+predicate(Organisation,SubClassOf,hasContactPerson only Person,).
+predicate(Organisation,SubClassOf,acronym only string,).
+predicate(Organisation,SubClassOf,name only string,).
+predicate(Literal,,is,acronym exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,name exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Party,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,contributesToOntology only Ontology,).
+predicate(Thing,,is,createsOntology only Ontology,).
+predicate(Thing,,is,defines only OntologyType,).
+predicate(Thing,,is,develops only).
+predicate(Thing,,is,(OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax),).
+predicate(Thing,,is,endorses only Ontology,).
+predicate(Thing,,is,hasAffiliatedParty only Party,).
+predicate(Thing,,is,isLocatedAt only Location,).
+predicate(Thing,,is,specifies only).
+predicate(Thing,,is,(KnedgeRepresentationParadigm or LicenseModel)).
+predicate(Person,is,Class).
+predicate(Person,SubClassOf,Party,).
+predicate(Person,SubClassOf,isContactPerson only Organisation,).
+predicate(Person,SubClassOf,eMail only string,).
+predicate(Person,SubClassOf,faxNumber only string,).
+predicate(Person,SubClassOf,firstName only string,).
+predicate(Person,SubClassOf,lastName only string,).
+predicate(Person,SubClassOf,phoneNumber only string,).
+predicate(Literal,,is,eMail min 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,firstName exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,lastName exactly 1 www.w3.org/2000/01/-schema#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(AcademicFreeLicense_AFL,is,Individual).
+predicate(AcademicFreeLicense_AFL,Types,LicenseModel).
+predicate(Altova_SemanticWorks,is,Individual).
+predicate(Altova_SemanticWorks,Types,OntologyEngineeringTool).
+predicate(Altova_SemanticWorks,name,"Altova SemanticWorks").
+predicate(AnnotationTask,is,Individual).
+predicate(AnnotationTask,Types,OntologyTask).
+predicate(ApplePublicSourceLicense_APSL,is,Individual).
+predicate(ApplePublicSourceLicense_APSL,Types,LicenseModel).
+predicate(ApplicationOntology,is,Individual).
+predicate(ApplicationOntology,Types,OntologyType).
+predicate(CommonPublicLicense_CPL,is,Individual).
+predicate(CommonPublicLicense_CPL,Types,LicenseModel).
+predicate(ConfigurationTask,is,Individual).
+predicate(ConfigurationTask,Types,OntologyTask).
+predicate(CoreOntology,is,Individual).
+predicate(CoreOntology,Types,OntologyType).
+predicate(DAML-OIL,is,Individual).
+predicate(DAML-OIL,Types,OntologyLanguage).
+predicate(DescriptionLogics,is,Individual).
+predicate(DescriptionLogics,Types,KnedgeRepresentationParadigm).
+predicate(DomainOntology,is,Individual).
+predicate(DomainOntology,Types,OntologyType).
+predicate(FilteringTask,is,Individual).
+predicate(FilteringTask,Types,OntologyTask).
+predicate(Frames,is,Individual).
+predicate(Frames,Types,KnedgeRepresentationParadigm).
+predicate(GeneralPublicLicense_GPL,is,Individual).
+predicate(GeneralPublicLicense_GPL,Types,LicenseModel).
+predicate(IBMPublicLicenseIBM_PL,is,Individual).
+predicate(IBMPublicLicenseIBM_PL,Types,LicenseModel).
+predicate(INTELOpenSourceLicenseINTEL_OSL,is,Individual).
+predicate(INTELOpenSourceLicenseINTEL_OSL,Types,LicenseModel).
+predicate(IndexingTask,is,Individual).
+predicate(IndexingTask,Types,OntologyTask).
+predicate(IntegrationTask,is,Individual).
+predicate(IntegrationTask,Types,OntologyTask).
+predicate(IsaViz,is,Individual).
+predicate(IsaViz,Types,OntologyEngineeringTool).
+predicate(IsaViz,name,"IsaViz").
+predicate(LesserGeneralPublicLicense_LGPL,is,Individual).
+predicate(LesserGeneralPublicLicense_LGPL,Types,LicenseModel).
+predicate(MatchingTask,is,Individual).
+predicate(MatchingTask,Types,OntologyTask).
+predicate(MediationTask,is,Individual).
+predicate(MediationTask,Types,OntologyTask).
+predicate(ModifiedBSDLicense_mBSD,is,Individual).
+predicate(ModifiedBSDLicense_mBSD,Types,LicenseModel).
+predicate(NeOn-Toolkit,is,Individual).
+predicate(NeOn-Toolkit,Types,OntologyEngineeringTool).
+predicate(NeOn-Toolkit,name,"NeOn-Toolkit").
+predicate(OWL,is,Individual).
+predicate(OWL,Types,OntologyLanguage).
+predicate(OWL-DL,is,Individual).
+predicate(OWL-DL,Types,OntologyLanguage).
+predicate(OWL-Full,is,Individual).
+predicate(OWL-Full,Types,OntologyLanguage).
+predicate(OWL-Lite,is,Individual).
+predicate(OWL-Lite,Types,OntologyLanguage).
+predicate(OWL-XML,is,Individual).
+predicate(OWL-XML,Types,OntologySyntax).
+predicate(OilEd,is,Individual).
+predicate(OilEd,Types,OntologyEngineeringTool).
+predicate(OilEd,name,"OilEd").
+predicate(OntoBuilder,is,Individual).
+predicate(OntoBuilder,Types,OntologyEngineeringTool).
+predicate(OntoBuilder,name,"OntoBuilder").
+predicate(OntoStudio,is,Individual).
+predicate(OntoStudio,Types,OntologyEngineeringTool).
+predicate(OntoStudio,name,"OntoStudio").
+predicate(OpenSoftwareLicense_OSL,is,Individual).
+predicate(OpenSoftwareLicense_OSL,Types,LicenseModel).
+predicate(PersonalizationTask,is,Individual).
+predicate(PersonalizationTask,Types,OntologyTask).
+predicate(Protégé,is,Individual).
+predicate(Protégé,Types,OntologyEngineeringTool).
+predicate(Protégé,name,"Protégé").
+predicate(QueryFormulationTask,is,Individual).
+predicate(QueryFormulationTask,Types,OntologyTask).
+predicate(QueryRewritingTask,is,Individual).
+predicate(QueryRewritingTask,Types,OntologyTask).
+predicate(RDF-S,is,Individual).
+predicate(RDF-S,Types,OntologyLanguage).
+predicate(RDF-XML,is,Individual).
+predicate(RDF-XML,Types,OntologySyntax).
+predicate(SWOOP,is,Individual).
+predicate(SWOOP,Types,OntologyEngineeringTool).
+predicate(SWOOP,name,"SWOOP").
+predicate(Schema,is,Individual).
+predicate(Schema,Types,FormalityLevel).
+predicate(SearchTask,is,Individual).
+predicate(SearchTask,Types,OntologyTask).
+predicate(TaskOntology,is,Individual).
+predicate(TaskOntology,Types,OntologyType).
+predicate(Taxonomy,is,Individual).
+predicate(Taxonomy,Types,FormalityLevel).
+predicate(Terminology,is,Individual).
+predicate(Terminology,Types,FormalityLevel).
+predicate(Thesaurus,is,Individual).
+predicate(Thesaurus,Types,FormalityLevel).
+predicate(UpperLevelOntology,is,Individual).
+predicate(UpperLevelOntology,Types,OntologyType).
+predicate(Vocabulary,is,Individual).
+predicate(Vocabulary,Types,FormalityLevel).
+predicate(WSMO_Studio,is,Individual).
+predicate(WSMO_Studio,Types,OntologyEngineeringTool).
+predicate(WSMO_Studio,name,"WSMO Studio").
+predicate(WebODE,is,Individual).
+predicate(WebODE,Types,OntologyEngineeringTool).
+predicate(WebODE,name,"WebODE").

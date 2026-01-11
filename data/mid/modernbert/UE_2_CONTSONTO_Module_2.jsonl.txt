@@ -1,0 +1,324 @@
+boolean is Datatype.
+dateTime is Datatype.
+integer is Datatype.
+string is Datatype.
+MedicationRequest.subject.Reference is ObjectProperty.
+Patient.contact.organization is ObjectProperty.
+patient.address.city is ObjectProperty.
+patient.address.country is ObjectProperty.
+patient.address.district is ObjectProperty.
+adopts is ObjectProperty.
+aggregationOf is ObjectProperty.
+applies is ObjectProperty.
+appoints is ObjectProperty.
+assigns is ObjectProperty.
+componentOf is ObjectProperty.
+concerns is ObjectProperty.
+defines is ObjectProperty.
+describes is ObjectProperty.
+expresses is ObjectProperty.
+gives is ObjectProperty.
+governsTheChoiceOf is ObjectProperty.
+has is ObjectProperty.
+hasObserved is ObjectProperty.
+hasTheRightToTakeDecisionsOnBehalfOf is ObjectProperty.
+identifiesOrStates is ObjectProperty.
+influences is ObjectProperty.
+isBasedOn is ObjectProperty.
+isConsideredDuring is ObjectProperty.
+isInputTo is ObjectProperty.
+isNotConsistentWith is ObjectProperty.
+isObservedAs is ObjectProperty.
+isRecordedIn is ObjectProperty.
+isResponsibleFor is ObjectProperty.
+isTopicFor is ObjectProperty.
+maintains is ObjectProperty.
+makesDecisionsAssistedBy is ObjectProperty.
+participatesIn is ObjectProperty.
+performs is ObjectProperty.
+provides is ObjectProperty.
+receives is ObjectProperty.
+represents is ObjectProperty.
+roleOf is ObjectProperty.
+seeksToReceive is ObjectProperty.
+sendsOut is ObjectProperty.
+states is ObjectProperty.
+supports is ObjectProperty.
+social_determinants_of_health_(SDH) is DataProperty.
+MedicationRequest.courseOfTherapyType is DataProperty.
+MedicationRequest.dispenseRequest.expectedSupplyDuration is DataProperty.
+MedicationRequest.dispenseRequest.initialFill.Duration is DataProperty.
+MedicationRequest.dispenseRequest.initialFill.quantity is DataProperty.
+MedicationRequest.dispenseRequest.numberOfRepeatsAllowed is DataProperty.
+MedicationRequest.dispenseRequest.quantity is DataProperty.
+MedicationRequest.note is DataProperty.
+MedicationRequest.status is DataProperty.
+MedicationRequest.statusReason is DataProperty.
+Patient.active is DataProperty.
+Patient.birthDate is DataProperty.
+Patient.contact.gender is DataProperty.
+Patient.forename is DataProperty.
+Patient.identifier is DataProperty.
+Patient.photo is DataProperty.
+Patient.surname is DataProperty.
+ValueSet/ is DataProperty.
+Community_near_landfills is DataProperty.
+authorization_by_law is Class.
+authorization_by_law SubClassOf Mental-Object.
+automatedCare is Class.
+care_activity_directory is Class.
+care_activity_directory SubClassOf Mental-Object.
+care_activity_element is Class.
+care_actor is Class.
+care_actor SubClassOf role,.
+care_actor SubClassOf applies some care_plan,.
+care_actor SubClassOf assigns some care_matter,.
+care_actor SubClassOf defines some health_thread,.
+care_actor SubClassOf describes some potential_health_condition,.
+care_actor SubClassOf expresses some demand_for_care,.
+care_actor SubClassOf hasObserved some observed_condition,.
+care_actor SubClassOf identifiesOrStates some care_matter,.
+care_actor SubClassOf isResponsibleFor some automatedCare,.
+care_actor SubClassOf isResponsibleFor some sharable_data_repository,.
+care_actor SubClassOf makesDecisionsAssistedBy some clinical_guideline,.
+care_actor SubClassOf performs some care_activity_element,.
+care_actor SubClassOf provides some healthcare_funds,.
+care_actor SubClassOf receives some socialcareReport,.
+care_actor SubClassOf receives some clinical_report,.
+care_actor SubClassOf receives some healthcare_information_request,.
+care_actor SubClassOf roleOf some.
+care_actor SubClassOf (Natural-Person or Organization),.
+care_actor SubClassOf sendsOut some socialcareReport,.
+care_actor SubClassOf sendsOut some clinical_report,.
+care_actor SubClassOf sendsOut some healthcare_information_request,.
+care_actor SubClassOf participatesIn min 1 healthcare.
+care_information is Class.
+care_information SubClassOf Mental-Object.
+care_matter is Class.
+care_matter SubClassOf Mental-Object.
+care_organization is Class.
+care_organization SubClassOf Organization,.
+care_organization SubClassOf organizationRole,.
+care_organization SubClassOf care_provider,.
+care_organization SubClassOf adopts some core_carePlan,.
+care_organization SubClassOf appoints some care_personnel,.
+care_organization SubClassOf performs min 1 care_quality_management.
+care_personnel is Class.
+care_personnel SubClassOf role,.
+care_personnel SubClassOf care_actor.
+care_plan is Class.
+care_plan SubClassOf Mental-Object.
+care_planning is Class.
+care_planning SubClassOf Mental-Object.
+care_provider is Class.
+care_provider SubClassOf care_actor.
+care_quality_management is Class.
+care_supporting_organization is Class.
+care_supporting_organization SubClassOf Organization,.
+care_supporting_organization SubClassOf organizationRole,.
+care_supporting_organization SubClassOf role.
+care_third_party is Class.
+care_third_party SubClassOf care_actor,.
+care_third_party SubClassOf sendsOut some clinical_report,.
+care_third_party SubClassOf performs min 1 care_third_party_activity,.
+care_third_party SubClassOf supports min 1 subject_of_care.
+care_third_party_activity is Class.
+certificate_related_to_a_healthcare_matter is Class.
+certificate_related_to_a_healthcare_matter SubClassOf Mental-Object.
+clinical_guideline is Class.
+clinical_guideline SubClassOf Mental-Object.
+clinical_pathway is Class.
+clinical_pathway SubClassOf Mental-Object.
+clinical_pathway DisjointWith patient.address.city some city.
+clinical_process_outcome_evaluation is Class.
+clinical_report is Class.
+consent_competence is Class.
+consent_competence SubClassOf Mental-Object.
+considered_condition is Class.
+contact is Class.
+core_carePlan is Class.
+core_carePlan SubClassOf Mental-Object.
+data_repository is Class.
+data_repository SubClassOf Mental-Object.
+demand_for_care is Class.
+demand_for_care SubClassOf Mental-Object.
+discharge_report is Class.
+discharge_report SubClassOf clinical_report,.
+discharge_report SubClassOf concerns exactly 1 mandated_period_of_care.
+discharge_summary is Class.
+discharge_summary SubClassOf discharge_report.
+dissent is Class.
+electronic_health_record_component is Class.
+electronic_health_record_component SubClassOf health_record_component.
+electronic_health_record_extract is Class.
+electronic_patient_summary is Class.
+electronic_patient_summary SubClassOf electronic_health_record_extract,.
+electronic_patient_summary SubClassOf componentOf some summarized_healthcare_information_repository.
+excluded_condition is Class.
+excluded_condition SubClassOf considered_condition,.
+excluded_condition SubClassOf isNotConsistentWith min 1 observed_condition.
+health_condition is Class.
+health_condition SubClassOf health_issue,.
+health_condition SubClassOf governsTheChoiceOf some clinical_pathway,.
+health_condition SubClassOf governsTheChoiceOf only (patient.address.city some city).
+health_issue is Class.
+health_need is Class.
+health_objective is Class.
+health_objective SubClassOf Mental-Object.
+health_problem is Class.
+health_problem SubClassOf health_condition.
+health_record is Class.
+health_record_component is Class.
+health_record_extract is Class.
+health_record_extract SubClassOf Mental-Object.
+health_state is Class.
+health_thread is Class.
+healthcare is Class.
+healthcare_funds is Class.
+healthcare_goal is Class.
+healthcare_goal SubClassOf Mental-Object.
+healthcare_information_request is Class.
+healthcare_information_request SubClassOf request,.
+healthcare_information_request SubClassOf isTopicFor some health_record_extract.
+healthcare_needs_assessment is Class.
+healthcare_process is Class.
+healthcare_professional_entitlement is Class.
+healthcare_professional_entitlement SubClassOf Mental-Object.
+healthcare_service_directory is Class.
+healthcare_service_directory SubClassOf Mental-Object.
+informed_consent is Class.
+informed_consent SubClassOf Mental-Object.
+input_health_state is Class.
+input_health_state SubClassOf health_state,.
+input_health_state SubClassOf isInputTo exactly 1 healthcare_process.
+mandated_period_of_care is Class.
+next_of_kin is Class.
+observed_condition is Class.
+observed_condition SubClassOf health_condition.
+other_carer is Class.
+other_carer SubClassOf personRole,.
+other_carer SubClassOf care_third_party.
+output_health_state is Class.
+output_health_state SubClassOf health_state,.
+output_health_state SubClassOf isObservedAs some resultant_condition.
+party is Class.
+party SubClassOf role.
+personal_health_record is Class.
+personal_health_record SubClassOf health_record.
+potential_health_condition is Class.
+potential_health_condition SubClassOf health_condition.
+professional_health_record is Class.
+professional_health_record SubClassOf health_record.
+professionally_assessed_condition is Class.
+prognostic_condition is Class.
+prognostic_condition SubClassOf potential_health_condition,.
+prognostic_condition SubClassOf isBasedOn min 1 professionally_assessed_condition.
+reason_for_demand_for_care is Class.
+reason_for_demand_for_care SubClassOf Mental-Object.
+request is Class.
+resultant_condition is Class.
+risk_condition is Class.
+risk_condition SubClassOf potential_health_condition.
+self-care_activity is Class.
+sharable_data_repository is Class.
+subject_of_care is Class.
+subject_of_care SubClassOf personRole,.
+subject_of_care SubClassOf care_actor,.
+subject_of_care SubClassOf Patient.contact.organization some Organization,.
+subject_of_care SubClassOf patient.address.city some city,.
+subject_of_care SubClassOf patient.address.country some country,.
+subject_of_care SubClassOf patient.address.district some district,.
+subject_of_care SubClassOf expresses some subject_of_care_desire,.
+subject_of_care SubClassOf gives some informed_consent,.
+subject_of_care SubClassOf has some socialNeed,.
+subject_of_care SubClassOf has some health_need,.
+subject_of_care SubClassOf has some next_of_kin,.
+subject_of_care SubClassOf maintains some personal_health_record,.
+subject_of_care SubClassOf participatesIn some contact,.
+subject_of_care SubClassOf performs some self-care_activity,.
+subject_of_care SubClassOf states some dissent,.
+subject_of_care SubClassOf seeksToReceive min 1 healthcare,.
+subject_of_care SubClassOf has exactly 1 health_state,.
+subject_of_care SubClassOf has max 1 consent_competence,.
+subject_of_care SubClassOf Patient.active some boolean,.
+subject_of_care SubClassOf Patient.forename some string,.
+subject_of_care SubClassOf Patient.photo some string,.
+subject_of_care SubClassOf Patient.surname some string,.
+subject_of_care SubClassOf Community_near_landfills some boolean,.
+subject_of_care SubClassOf social_determinants_of_health_(SDH) some boolean,.
+subject_of_care SubClassOf Patient.identifier min 1 string,.
+subject_of_care SubClassOf Patient.birthDate exactly 1 dateTime,.
+subject_of_care SubClassOf Patient.contact.gender exactly 1 string,.
+administrative-gender exactly 1 string is ValueSet/.
+subject_of_care_desire is Class.
+subject_of_care_desire SubClassOf State,.
+subject_of_care_desire SubClassOf influences some care_matter,.
+subject_of_care_desire SubClassOf isRecordedIn some health_record,.
+subject_of_care_desire SubClassOf isConsideredDuring min 1 healthcare_needs_assessment.
+subject_of_care_proxy is Class.
+subject_of_care_proxy SubClassOf personRole,.
+subject_of_care_proxy SubClassOf expresses some subject_of_care_desire,.
+subject_of_care_proxy SubClassOf gives some informed_consent,.
+subject_of_care_proxy SubClassOf maintains some personal_health_record,.
+subject_of_care_proxy SubClassOf states some dissent,.
+subject_of_care_proxy SubClassOf has exactly 1 consent_competence,.
+subject_of_care_proxy SubClassOf hasTheRightToTakeDecisionsOnBehalfOf exactly 1 subject_of_care.
+summarized_healthcare_information_repository is Class.
+summarized_healthcare_information_repository SubClassOf sharable_data_repository,.
+summarized_healthcare_information_repository SubClassOf aggregationOf some electronic_patient_summary.
+target_condition is Class.
+target_condition SubClassOf potential_health_condition,.
+target_condition SubClassOf isInputTo some clinical_process_outcome_evaluation,.
+target_condition SubClassOf represents some health_objective,.
+target_condition SubClassOf represents some healthcare_goal.
+MedicationRequest is Class.
+MedicationRequest SubClassOf request,.
+MedicationRequest SubClassOf MedicationRequest.subject.Reference some subject_of_care,.
+MedicationRequest SubClassOf MedicationRequest.courseOfTherapyType some string,.
+MedicationRequest SubClassOf MedicationRequest.dispenseRequest.expectedSupplyDuration some string,.
+MedicationRequest SubClassOf MedicationRequest.dispenseRequest.initialFill.Duration some string,.
+MedicationRequest SubClassOf MedicationRequest.dispenseRequest.initialFill.quantity some integer,.
+MedicationRequest SubClassOf MedicationRequest.dispenseRequest.numberOfRepeatsAllowed some integer,.
+MedicationRequest SubClassOf MedicationRequest.dispenseRequest.quantity some integer,.
+MedicationRequest SubClassOf MedicationRequest.note some string,.
+MedicationRequest SubClassOf MedicationRequest.status some string,.
+MedicationRequest SubClassOf MedicationRequest.statusReason some string.
+Legally-Constructed-Person is Class.
+Legally-Constructed-Person SubClassOf Socially-Constructed-Person.
+Mental-Object is Class.
+Mental-Object SubClassOf Non-Physical-Object.
+Natural-Person is Class.
+Natural-Person SubClassOf Physical-Object.
+Non-Physical-Object is Class.
+Organization is Class.
+Organization SubClassOf Legally-Constructed-Person.
+Physical-Object is Class.
+Process is Class.
+Social-Agent is Class.
+Socially-Constructed-Person is Class.
+Socially-Constructed-Person SubClassOf Social-Agent.
+State is Class.
+administrative_division is Class.
+administrative_division SubClassOf location.
+city is Class.
+city SubClassOf administrative_division.
+country is Class.
+country SubClassOf administrative_division.
+district is Class.
+district SubClassOf administrative_division.
+location is Class.
+organizationRole is Class.
+organizationRole SubClassOf role.
+personRole is Class.
+personRole SubClassOf role.
+socialCareProcess is Class.
+socialCareProcess SubClassOf Process.
+socialNeed is Class.
+socialcareReport is Class.
+role is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.
+Rome is Individual.
+Rome Types city.
+patient1 is Individual.
+patient1 Types subject_of_care.

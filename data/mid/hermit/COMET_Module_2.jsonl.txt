@@ -1,0 +1,348 @@
+www.w3.org/2000/01/-schema# is Datatype
+anyURI is Datatype
+date is Datatype
+decimal is Datatype
+float is Datatype
+account_holder is ObjectProperty
+bank is ObjectProperty
+capacity is ObjectProperty
+capex is ObjectProperty
+care_site is ObjectProperty
+classification is ObjectProperty
+dam is ObjectProperty
+follows_procedure is ObjectProperty
+fuel is ObjectProperty
+ingredients is ObjectProperty
+location is ObjectProperty
+models is ObjectProperty
+operator is ObjectProperty
+opex is ObjectProperty
+part_of is ObjectProperty
+plant_type is ObjectProperty
+speciality is ObjectProperty
+steps is ObjectProperty
+unit is ObjectProperty
+altitude is DataProperty
+commissioning_date is DataProperty
+decommissioning_date is DataProperty
+east_bounding_coordinate is DataProperty
+latitude is DataProperty
+longitude is DataProperty
+north_bounding_coordinate is DataProperty
+protocols_io_url is DataProperty
+south_bounding_coordinate is DataProperty
+value is DataProperty
+west_bounding_coordinate is DataProperty
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+<https is Class
+<https SubClassOf PermissibleValue
+OBI_0002492 is Class
+OBI_0002492 SubClassOf PermissibleValue
+OBI_0002493 is Class
+OBI_0002493 SubClassOf PermissibleValue
+PATO_0001421 is Class
+PATO_0001421 SubClassOf PermissibleValue
+PATO_0001422 is Class
+PATO_0001422 SubClassOf PermissibleValue
+Agent is Class
+Mixin is ClassDefinition#
+BasicFoodType is Class
+BasicFoodType SubClassOf FoodTypeConcept
+Building is Class
+Climate is Class
+ClimateModel is Class
+ClimateModel SubClassOf Simulation,
+ClimateModel SubClassOf models only Climate,
+Thing, is models min 0 www.w3.org/2002/07/#
+Thing is models max 1 www.w3.org/2002/07/#
+CompositeFoodType is Class
+CompositeFoodType SubClassOf FoodTypeConcept
+ComputationalModel is Class
+ComputationalModel SubClassOf Intangible
+Concept is Class
+Concept SubClassOf Intangible
+CreationMetadata is Class
+Mixin is ClassDefinition#
+CurrencyConcept is Class
+DataGenerationFromSample is Class
+DataGenerationFromSample SubClassOf InvestigativeProcess
+DataStructure is Class
+DataStructure SubClassOf Intangible
+EngineeringMaterialProcessing is Class
+EngineeringMaterialProcessing SubClassOf MaterialProcessing
+EngineeringSpecification is Class
+EngineeringSpecification SubClassOf Procedure
+Entity is Class
+EntitySet is Class
+EntitySet SubClassOf Intangible
+FinancialAccount is Class
+FinancialAccount SubClassOf FinancialProduct,
+FinancialAccount SubClassOf account_holder only Person,
+FinancialAccount SubClassOf bank only Organization,
+Thing, is account_holder min 0 www.w3.org/2002/07/#
+Thing, is bank min 0 www.w3.org/2002/07/#
+Thing, is account_holder max 1 www.w3.org/2002/07/#
+Thing is bank max 1 www.w3.org/2002/07/#
+FinancialProduct is Class
+FoodIngredient is Class
+FoodProcessing is Class
+FoodProcessing SubClassOf MaterialProcessing
+FoodRecipe is Class
+FoodRecipe SubClassOf Procedure,
+FoodRecipe SubClassOf ingredients only FoodIngredient,
+FoodRecipe SubClassOf steps only FoodProcessing,
+Thing, is ingredients min 0 www.w3.org/2002/07/#
+Thing is steps min 0 www.w3.org/2002/07/#
+FoodTypeConcept is Class
+FossilFuelPlant is Class
+FossilFuelPlant SubClassOf PowerPlant,
+FossilFuelPlant SubClassOf fuel only FossilFuelType,
+Thing, is fuel min 0 www.w3.org/2002/07/#
+Thing is fuel max 1 www.w3.org/2002/07/#
+FossilFuelType is Class
+GeoBoxLocation is Class
+GeoBoxLocation SubClassOf Location,
+GeoBoxLocation SubClassOf east_bounding_coordinate only decimal,
+GeoBoxLocation SubClassOf north_bounding_coordinate only decimal,
+GeoBoxLocation SubClassOf south_bounding_coordinate only decimal,
+GeoBoxLocation SubClassOf west_bounding_coordinate only decimal,
+Literal, is east_bounding_coordinate min 0 www.w3.org/2000/01/-schema#
+Literal, is north_bounding_coordinate min 0 www.w3.org/2000/01/-schema#
+Literal, is south_bounding_coordinate min 0 www.w3.org/2000/01/-schema#
+Literal, is west_bounding_coordinate min 0 www.w3.org/2000/01/-schema#
+Literal, is east_bounding_coordinate max 1 www.w3.org/2000/01/-schema#
+Literal, is north_bounding_coordinate max 1 www.w3.org/2000/01/-schema#
+Literal, is south_bounding_coordinate max 1 www.w3.org/2000/01/-schema#
+Literal is west_bounding_coordinate max 1 www.w3.org/2000/01/-schema#
+GeoPointLocation is Class
+GeoPointLocation SubClassOf PointLocation,
+GeoPointLocation SubClassOf altitude only decimal,
+GeoPointLocation SubClassOf latitude only decimal,
+GeoPointLocation SubClassOf longitude only decimal,
+Literal, is altitude min 0 www.w3.org/2000/01/-schema#
+Literal, is latitude min 0 www.w3.org/2000/01/-schema#
+Literal, is longitude min 0 www.w3.org/2000/01/-schema#
+Literal, is altitude max 1 www.w3.org/2000/01/-schema#
+Literal, is latitude max 1 www.w3.org/2000/01/-schema#
+Literal is longitude max 1 www.w3.org/2000/01/-schema#
+HealthcareProvider is Class
+HealthcareProvider SubClassOf HealthcareRole,
+HealthcareProvider SubClassOf care_site only HealthcareSite,
+HealthcareProvider SubClassOf speciality only Concept,
+Thing, is care_site min 0 www.w3.org/2002/07/#
+Thing, is speciality min 0 www.w3.org/2002/07/#
+Thing, is care_site max 1 www.w3.org/2002/07/#
+Thing is speciality max 1 www.w3.org/2002/07/#
+HealthcareRole is Class
+HealthcareSite is Class
+HydroelectricPlant is Class
+HydroelectricPlant SubClassOf RenewablePlant,
+HydroelectricPlant SubClassOf dam only Landform,
+Thing, is dam min 0 www.w3.org/2002/07/#
+Thing is dam max 1 www.w3.org/2002/07/#
+Identified is Class
+Mixin is ClassDefinition#
+InformationEntity is Class
+InformationEntity SubClassOf Intangible
+Intangible is Class
+Intangible SubClassOf Entity
+Investigation is Class
+InvestigativeProcess is Class
+InvestigativeProcess SubClassOf PlannedProcess,
+InvestigativeProcess SubClassOf follows_procedure only InvestigativeProtocol,
+InvestigativeProcess SubClassOf part_of only Investigation,
+Thing, is follows_procedure min 0 www.w3.org/2002/07/#
+Thing, is part_of min 0 www.w3.org/2002/07/#
+Thing, is follows_procedure max 1 www.w3.org/2002/07/#
+Thing is part_of max 1 www.w3.org/2002/07/#
+InvestigativeProtocol is Class
+InvestigativeProtocol SubClassOf Procedure,
+Thing, is classification only www.w3.org/2002/07/#
+Thing, is classification min 0 www.w3.org/2002/07/#
+Thing, is classification max 1 www.w3.org/2002/07/#
+Thing, is protocols_io_url only anyURI,
+Literal, is protocols_io_url min 0 www.w3.org/2000/01/-schema#
+Literal is protocols_io_url max 1 www.w3.org/2000/01/-schema#
+Landform is Class
+Location is Class
+MaterialProcessing is Class
+MaterialProcessing SubClassOf PlannedProcess
+Model is Class
+Mixin is ClassDefinition#
+MoneyQuantity is Class
+MoneyQuantity SubClassOf SimpleQuantity,
+MoneyQuantity SubClassOf unit only CurrencyConcept,
+Thing, is unit min 0 www.w3.org/2002/07/#
+Thing, is unit max 1 www.w3.org/2002/07/#
+Thing, is value only float,
+Literal, is value min 0 www.w3.org/2000/01/-schema#
+Literal is value max 1 www.w3.org/2000/01/-schema#
+NuclearPlant is Class
+NuclearPlant SubClassOf PowerPlant
+Organization is Class
+OutcomeStatistics is Class
+Mixin is ClassDefinition#
+Patient is Class
+Patient SubClassOf HealthcareRole
+Person is Class
+Place is Class
+PlannedProcess is Class
+PlannedProcessConfiguration is Class
+PlannedProcessConfiguration SubClassOf Intangible
+PointLocation is Class
+PointLocation SubClassOf Location
+PowerPlant is Class
+PowerPlant SubClassOf Building,
+PowerPlant SubClassOf capacity only SimpleQuantity,
+PowerPlant SubClassOf capex only MoneyQuantity,
+PowerPlant SubClassOf location only Place,
+PowerPlant SubClassOf operator only Organization,
+PowerPlant SubClassOf opex only MoneyQuantity,
+PowerPlant SubClassOf plant_type only PowerPlantType,
+Thing, is capacity min 0 www.w3.org/2002/07/#
+Thing, is capex min 0 www.w3.org/2002/07/#
+Thing, is location min 0 www.w3.org/2002/07/#
+Thing, is operator min 0 www.w3.org/2002/07/#
+Thing, is opex min 0 www.w3.org/2002/07/#
+Thing, is plant_type min 0 www.w3.org/2002/07/#
+Thing, is capacity max 1 www.w3.org/2002/07/#
+Thing, is capex max 1 www.w3.org/2002/07/#
+Thing, is location max 1 www.w3.org/2002/07/#
+Thing, is operator max 1 www.w3.org/2002/07/#
+Thing, is opex max 1 www.w3.org/2002/07/#
+Thing, is plant_type max 1 www.w3.org/2002/07/#
+Thing, is commissioning_date only date,
+Thing, is decommissioning_date only date,
+Literal, is commissioning_date min 0 www.w3.org/2000/01/-schema#
+Literal, is decommissioning_date min 0 www.w3.org/2000/01/-schema#
+Literal, is commissioning_date max 1 www.w3.org/2000/01/-schema#
+Literal is decommissioning_date max 1 www.w3.org/2000/01/-schema#
+PowerPlantType is Class
+Prediction is Class
+Prediction SubClassOf Intangible
+PredictionSummaryStatistics is Class
+PredictionSummaryStatistics SubClassOf Intangible
+Procedure is Class
+Procedure SubClassOf Specification
+Quantity is Class
+Quantity SubClassOf Intangible
+QuantityRange is Class
+QuantityRange SubClassOf Intangible
+Relationship is Class
+Relationship SubClassOf Intangible
+RenewablePlant is Class
+RenewablePlant SubClassOf PowerPlant
+Role is Class
+Role SubClassOf Intangible
+SampleCollectionProcess is Class
+SampleCollectionProcess SubClassOf InvestigativeProcess
+SampleProcessing is Class
+SampleProcessing SubClassOf MaterialProcessing
+Service is Class
+Service SubClassOf Intangible
+SetOfObservations is Class
+SetOfObservations SubClassOf Intangible
+SimpleQuantity is Class
+Simulation is Class
+SolarPlant is Class
+SolarPlant SubClassOf RenewablePlant
+Specification is Class
+StructuredValue is Class
+StructuredValue SubClassOf Intangible
+StudyDesign is Class
+StudyDesign SubClassOf Procedure,
+Thing, is classification only www.w3.org/2002/07/#
+Thing, is classification min 0 www.w3.org/2002/07/#
+Thing is classification max 1 www.w3.org/2002/07/#
+TimePointOrTemporalInterval is Class
+TimePointOrTemporalInterval SubClassOf Intangible
+Typed is Class
+Mixin is ClassDefinition#
+Variable is Class
+Variable SubClassOf Intangible
+WindFarm is Class
+WindFarm SubClassOf RenewablePlant
+ExtractiveIndustryFacilityType# is Class
+ExtractiveIndustryFacilityType# SubClassOf PermissibleValue
+ExtractiveIndustryFacilityType# is Class
+ExtractiveIndustryFacilityType# SubClassOf PermissibleValue
+ExtractiveIndustryFacilityType# is Class
+ExtractiveIndustryFacilityType# SubClassOf PermissibleValue
+ExtractiveIndustryProductType# is Class
+ExtractiveIndustryProductType# SubClassOf PermissibleValue
+ExtractiveIndustryProductType# is Class
+ExtractiveIndustryProductType# SubClassOf PermissibleValue
+ExtractiveIndustryProductType# is Class
+ExtractiveIndustryProductType# SubClassOf PermissibleValue
+ExtractiveIndustryProductType# is Class
+ExtractiveIndustryProductType# SubClassOf PermissibleValue
+ExtractiveIndustryProductType# is Class
+ExtractiveIndustryProductType# SubClassOf PermissibleValue
+ExtractiveIndustryProductType# is Class
+ExtractiveIndustryProductType# SubClassOf PermissibleValue
+ExtractiveIndustryProductType# is Class
+ExtractiveIndustryProductType# SubClassOf PermissibleValue
+ExtractiveIndustryProductType# is Class
+ExtractiveIndustryProductType# SubClassOf PermissibleValue
+FossilFuelType# is Class
+FossilFuelType# SubClassOf PermissibleValue
+FossilFuelType# is Class
+FossilFuelType# SubClassOf PermissibleValue
+FossilFuelType# is Class
+FossilFuelType# SubClassOf PermissibleValue
+MiningMethod# is Class
+MiningMethod# SubClassOf PermissibleValue
+MiningMethod# is Class
+MiningMethod# SubClassOf PermissibleValue
+MiningMethod# is Class
+MiningMethod# SubClassOf PermissibleValue
+MiningMethod# is Class
+MiningMethod# SubClassOf PermissibleValue
+OutcomeType# is Class
+OutcomeType# SubClassOf PermissibleValue
+OutcomeType# is Class
+OutcomeType# SubClassOf PermissibleValue
+OutcomeType# is Class
+OutcomeType# SubClassOf PermissibleValue
+OutcomeType# is Class
+OutcomeType# SubClassOf PermissibleValue
+PersonStatus# is Class
+PersonStatus# SubClassOf PermissibleValue
+RelativeTimeEnum# is Class
+RelativeTimeEnum# SubClassOf PermissibleValue
+RelativeTimeEnum# is Class
+RelativeTimeEnum# SubClassOf PermissibleValue
+RelativeTimeEnum# is Class
+RelativeTimeEnum# SubClassOf PermissibleValue
+WellType# is Class
+WellType# SubClassOf PermissibleValue
+WellType# is Class
+WellType# SubClassOf PermissibleValue
+WellType# is Class
+WellType# SubClassOf PermissibleValue
+WellType# is Class
+WellType# SubClassOf PermissibleValue
+PermissibleValue is Class
+Thing is www.w3.org/2002/07/#
+ClassDefinition# is Class
+Thing is www.w3.org/2002/07/#
+www.w3.org/2002/07/# is Class

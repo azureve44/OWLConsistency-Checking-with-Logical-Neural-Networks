@@ -1,0 +1,334 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty
+string is Datatype
+access_to is ObjectProperty
+approaches is ObjectProperty
+belongs_to is ObjectProperty
+classify_as is ObjectProperty
+deployed_in is ObjectProperty
+extension_of is ObjectProperty
+has is ObjectProperty
+include is ObjectProperty
+kind_of is ObjectProperty
+offers is ObjectProperty
+perfoms is ObjectProperty
+provides is ObjectProperty
+secure is ObjectProperty
+types_of is ObjectProperty
+utilize is ObjectProperty
+version_of is ObjectProperty
+1000BASET is Class
+1000BASEX is Class
+802.11_ac is Class
+802.11_ac SubClassOf WLAN,
+802.11_ac SubClassOf belongs_to some WLAN
+802.11_ad is Class
+802.11_ad SubClassOf WLAN,
+802.11_ad SubClassOf belongs_to some WLAN
+802.11_g is Class
+802.11_g SubClassOf WLAN,
+802.11_g SubClassOf belongs_to some WLAN
+802.11_n is Class
+802.11_n SubClassOf WLAN,
+802.11_n SubClassOf belongs_to some WLAN
+802.3X is Class
+802.3X SubClassOf 1000BASEX
+802.3ab is Class
+802.3ab SubClassOf 1000BASET
+Type3/4 is Class
+FDM/ is Class
+FDM/ SubClassOf Circuit_Mode,
+FDM/ SubClassOf kind_of some Circuit_Mode
+AM is Class
+AM SubClassOf Analog_Modulation,
+AM SubClassOf perfoms some Analog_Modulation
+ASP is Class
+ASP SubClassOf World_Wide_Web
+Analog_Modulation is Class
+Application_Level_Gateway is Class
+Application_Level_Gateway SubClassOf Firewall,
+Application_Level_Gateway SubClassOf secure some Firewall
+Arbitrated_DS is Class
+Arbitrated_DS SubClassOf Digital_Signature,
+Arbitrated_DS SubClassOf kind_of some Digital_Signature
+Bastion_Host is Class
+Bastion_Host SubClassOf Firewall,
+Bastion_Host SubClassOf secure some Firewall
+Behaviour_control is Class
+Behaviour_control SubClassOf Firewall
+Bing is Class
+Bing SubClassOf World_Wide_Web,
+Bing SubClassOf deployed_in some World_Wide_Web
+CBR is Class
+CBR SubClassOf Type_1,
+CBR SubClassOf belongs_to some Type_1
+CISCO_IOS is Class
+CMAC is Class
+CMAC SubClassOf Hash_and_Mac_Algebra,
+CMAC SubClassOf perfoms some Hash_and_Mac_Algebra
+Cat4 is Class
+Cat4 SubClassOf Unshielded_Twisted_Pain,
+Cat4 SubClassOf kind_of some Unshielded_Twisted_Pain
+Circuit_Level_Gateway is Class
+Circuit_Level_Gateway SubClassOf Firewall,
+Circuit_Level_Gateway SubClassOf secure some Firewall
+Circuit_Mode is Class
+Circuit_Mode SubClassOf Multiplexing,
+Circuit_Mode SubClassOf types_of some Multiplexing
+Circuit_Mode DisjointWith Packet_Mode
+Circuit_Switching is Class
+Circuit_Switching SubClassOf Switched,
+Circuit_Switching SubClassOf approaches some Switched
+Cisco_Inc. is Class
+Cisco_Inc. SubClassOf CISCO_IOS
+Class_F is Class
+Class_F SubClassOf Shielded_Foiled_Twisted_Pair,
+Class_F SubClassOf types_of some Shielded_Foiled_Twisted_Pair
+Class_Fa is Class
+Class_Fa SubClassOf Shielded_Foiled_Twisted_Pair,
+Class_Fa SubClassOf types_of some Shielded_Foiled_Twisted_Pair
+Computer_Networks is Class
+DSSS is Class
+DSSS SubClassOf Statistical_Multiplexing
+Digital_Signature is Class
+Direct_DS is Class
+Direct_DS SubClassOf Digital_Signature,
+Direct_DS SubClassOf kind_of some Digital_Signature
+Direction_control is Class
+Direction_control SubClassOf Firewall
+Distribution_Switch is Class
+Dynamic_TDM is Class
+Dynamic_TDM SubClassOf Statistical_Multiplexing,
+Dynamic_TDM SubClassOf kind_of some Statistical_Multiplexing
+Extranet is Class
+Extranet SubClassOf Scope
+ExtremeXOS is Class
+Extreme_Network is Class
+Extreme_Network SubClassOf ExtremeXOS
+FHSS is Class
+FHSS SubClassOf Statistical_Multiplexing
+FM is Class
+FM SubClassOf Analog_Modulation,
+FM SubClassOf perfoms some Analog_Modulation
+FTTB is Class
+FTTB SubClassOf FTTX,
+FTTB SubClassOf types_of some FTTX
+FTTD is Class
+FTTD SubClassOf FTTX,
+FTTD SubClassOf types_of some FTTX
+FTTH is Class
+FTTH SubClassOf FTTX,
+FTTH SubClassOf types_of some FTTX
+FTTN is Class
+FTTN SubClassOf FTTX,
+FTTN SubClassOf types_of some FTTX
+FTTP is Class
+FTTP SubClassOf FTTX,
+FTTP SubClassOf types_of some FTTX
+FTTX is Class
+Facebook is Class
+Facebook SubClassOf World_Wide_Web,
+Facebook SubClassOf deployed_in some World_Wide_Web
+Firewall is Class
+Fram_Relay is Class
+Fram_Relay SubClassOf Packet_Switching,
+Fram_Relay SubClassOf utilize some Packet_Switching
+Gmail is Class
+Gmail SubClassOf eMail,
+Gmail SubClassOf provides some eMail
+Google is Class
+Google SubClassOf World_Wide_Web,
+Google SubClassOf deployed_in some World_Wide_Web
+Google_Chrome is Class
+Google_Chrome SubClassOf World_Wide_Web,
+Google_Chrome SubClassOf access_to some World_Wide_Web
+H.323 is Class
+H.323 SubClassOf VOIP
+HTML is Class
+HTML SubClassOf World_Wide_Web,
+HTML SubClassOf offers some World_Wide_Web
+Hash_and_Mac_Algebra is Class
+Hotmail is Class
+Hotmail SubClassOf eMail,
+Hotmail SubClassOf provides some eMail
+Huawei is Class
+Huawei SubClassOf VRP
+IAX is Class
+IAX SubClassOf VOIP
+IES is Class
+IES SubClassOf Public_Key_Encryption
+IPTV is Class
+Internet is Class
+Internet SubClassOf Scope
+Internet_Explorer is Class
+Internet_Explorer SubClassOf World_Wide_Web,
+Internet_Explorer SubClassOf access_to some World_Wide_Web
+Intranet is Class
+Intranet SubClassOf Scope
+JSP is Class
+JSP SubClassOf World_Wide_Web,
+JSP SubClassOf offers some World_Wide_Web
+LAN_Repeater is Class
+Live_TV is Class
+Live_TV SubClassOf IPTV
+MC-SS is Class
+MC-SS SubClassOf Statistical_Multiplexing,
+MC-SS SubClassOf kind_of some Statistical_Multiplexing
+MGCP is Class
+MGCP SubClassOf VOIP
+Mozilla_Firefox is Class
+Mozilla_Firefox SubClassOf World_Wide_Web,
+Mozilla_Firefox SubClassOf access_to some World_Wide_Web
+Multiplexing is Class
+Negative_Filter is Class
+Negative_Filter SubClassOf Packet_Fittering_Routers
+OFDMA is Class
+OFDMA SubClassOf Statistical_Multiplexing,
+OFDMA SubClassOf kind_of some Statistical_Multiplexing
+Opera is Class
+Opera SubClassOf World_Wide_Web,
+Opera SubClassOf access_to some World_Wide_Web
+Optical_Repeaters is Class
+Optical_Repeaters SubClassOf LAN_Repeater,
+Optical_Repeaters SubClassOf types_of some LAN_Repeater
+PHP is Class
+PHP SubClassOf World_Wide_Web,
+PHP SubClassOf offers some World_Wide_Web
+PM is Class
+PM SubClassOf Analog_Modulation,
+PM SubClassOf perfoms some Analog_Modulation
+Packet_Fittering_Routers is Class
+Packet_Fittering_Routers SubClassOf Firewall,
+Packet_Fittering_Routers SubClassOf has some Negative_Filter,
+Packet_Fittering_Routers SubClassOf has some Positive_Filter,
+Packet_Fittering_Routers SubClassOf secure some Firewall
+Packet_Mode is Class
+Packet_Mode SubClassOf Statistical_Multiplexing,
+Packet_Mode SubClassOf kind_of some Statistical_Multiplexing
+Packet_Mode DisjointWith 
+Packet_Mode DisjointWith Circuit_Mode
+www.w3.org/2000/01/-schema# is Annotations
+Thing is www.w3.org/2002/07/#
+Packet_Switching is Class
+Polarization_Multiplexing is Class
+Polarization_Multiplexing SubClassOf Circuit_Mode
+Positive_Filter is Class
+Positive_Filter SubClassOf Packet_Fittering_Routers
+Public_Key_Encryption is Class
+QAM is Class
+QAM SubClassOf Analog_Modulation,
+QAM SubClassOf perfoms some Analog_Modulation
+RSA is Class
+RSA SubClassOf Public_Key_Encryption
+RTP is Class
+RTP SubClassOf VOIP
+Radio_Repeaters is Class
+Radio_Repeaters SubClassOf LAN_Repeater,
+Radio_Repeaters SubClassOf types_of some LAN_Repeater
+SC-FDM is Class
+SC-FDM SubClassOf Statistical_Multiplexing,
+SC-FDM SubClassOf kind_of some Statistical_Multiplexing
+SDM is Class
+SDM SubClassOf Circuit_Mode,
+SDM SubClassOf kind_of some Circuit_Mode,
+SDM SubClassOf kind_of only Packet_Mode
+SDP is Class
+SDP SubClassOf VOIP
+SM is Class
+SM SubClassOf Analog_Modulation,
+SM SubClassOf perfoms some Analog_Modulation
+SSB is Class
+SSB SubClassOf Analog_Modulation,
+SSB SubClassOf perfoms some Analog_Modulation
+SVOIP is Class
+SVOIP SubClassOf VOIP,
+SVOIP SubClassOf extension_of some VOIP
+Safari is Class
+Safari SubClassOf World_Wide_Web,
+Safari SubClassOf access_to some World_Wide_Web
+Scope is Class
+Scope SubClassOf Computer_Networks,
+Scope SubClassOf classify_as some Extranet,
+Scope SubClassOf classify_as some Internet,
+Scope SubClassOf classify_as some Intranet
+Screened_Host_Firewall is Class
+Screened_Host_Firewall SubClassOf Firewall,
+Screened_Host_Firewall SubClassOf secure some Firewall
+Service_control is Class
+Service_control SubClassOf Firewall
+Shielded_Foiled_Twisted_Pair is Class
+Single_Homed_Bastion is Class
+Single_Homed_Bastion SubClassOf Firewall,
+Single_Homed_Bastion SubClassOf secure some Firewall
+Skype_Protocol is Class
+Skype_Protocol SubClassOf VOIP
+Spatial_OAM is Class
+Spatial_OAM SubClassOf Circuit_Mode,
+Spatial_OAM SubClassOf kind_of some Circuit_Mode
+Stateful_Inspection_Forward is Class
+Stateful_Inspection_Forward SubClassOf Firewall,
+Stateful_Inspection_Forward SubClassOf secure some Firewall
+Statistical_Multiplexing is Class
+Statistical_Multiplexing SubClassOf Multiplexing,
+Statistical_Multiplexing SubClassOf types_of some Multiplexing
+Switched is Class
+TDM is Class
+TDM SubClassOf Circuit_Mode,
+TDM SubClassOf kind_of some Circuit_Mode
+Time_Shifted_TV is Class
+Time_Shifted_TV SubClassOf IPTV
+Twitter is Class
+Twitter SubClassOf World_Wide_Web,
+Twitter SubClassOf deployed_in some World_Wide_Web
+Type_1 is Class
+Type_2 is Class
+URI is Class
+URI SubClassOf World_Wide_Web
+URL is Class
+URL SubClassOf World_Wide_Web
+Unshielded_Twisted_Pain is Class
+User_control is Class
+User_control SubClassOf Firewall
+VBR-RT is Class
+VBR-RT SubClassOf Type_2,
+VBR-RT SubClassOf belongs_to some Type_2
+VOIP is Class
+VRP is Class
+Variable_Bit_Rate is Class
+Variable_Bit_Rate SubClassOf Type3/4,
+Variable_Bit_Rate SubClassOf belongs_to some Type3/4
+Video_on_Demand is Class
+Video_on_Demand SubClassOf IPTV
+Virtual_Networking is Class
+Virtual_Networking SubClassOf Distribution_Switch,
+Virtual_Networking SubClassOf include some Distribution_Switch
+WLAN is Class
+Windows_2000 is Class
+Windows_2000 SubClassOf Windows_Server,
+Windows_2000 SubClassOf version_of some Windows_Server
+Windows_2003 is Class
+Windows_2003 SubClassOf Windows_Server,
+Windows_2003 SubClassOf version_of some Windows_Server
+Windows_2008 is Class
+Windows_2008 SubClassOf Windows_Server,
+Windows_2008 SubClassOf version_of some Windows_Server
+Windows_2012 is Class
+Windows_2012 SubClassOf Windows_Server,
+Windows_2012 SubClassOf version_of some Windows_Server
+Windows_Server is Class
+World_Wide_Web is Class
+Yahoo is Class
+Yahoo SubClassOf World_Wide_Web,
+Yahoo SubClassOf deployed_in some World_Wide_Web
+Yahoo_Mail is Class
+Yahoo_Mail SubClassOf eMail,
+Yahoo_Mail SubClassOf provides some eMail
+Youtube is Class
+Youtube SubClassOf World_Wide_Web
+ZyNOS is Class
+Zyxel is Class
+Zyxel SubClassOf ZyNOS
+eMail is Class
+www.w3.org/2002/07/# is Class
+www.w3.org/2000/01/-schema# is Annotations
+classify_as some Intranet is Class
+classify_as some Intranet SubClassOf Internet

@@ -1,0 +1,644 @@
+predicate(has_input,is,ObjectProperty).
+predicate(has_mediator,is,ObjectProperty).
+predicate(has_output,is,ObjectProperty).
+predicate(occurs_in,is,ObjectProperty).
+predicate(Abeta_RAGE_interaction,is,Class).
+predicate(Abeta_RAGE_interaction,EquivalentTo,re1321).
+predicate(Abeta_RAGE_interaction,SubClassOf,protein-protein_complexation).
+predicate(neurofibrillary_tangle_formation,is,Class).
+predicate(neurofibrillary_tangle_formation,SubClassOf,protein_oligomerisation).
+predicate(A2M,is,Class).
+predicate(A2MLRP,is,Class).
+predicate(AB-RAGE,is,Class).
+predicate(ADDLs,is,Class).
+predicate(AGE,is,Class).
+predicate(AGE-RAGE,is,Class).
+predicate(AGER,is,Class).
+predicate(AGER-AmyloidB,is,Class).
+predicate(AGER-AmyloidB-CAV1,is,Class).
+predicate(AGER-AmyloidBFibril,is,Class).
+predicate(ALB,is,Class).
+predicate(ATP,is,Class).
+predicate(AmyloidB,is,Class).
+predicate(AmyloidB-A2M,is,Class).
+predicate(AmyloidB-ALB,is,Class).
+predicate(AmyloidB-CLU,is,Class).
+predicate(AmyloidB-TTR,is,Class).
+predicate(AmyloidB1-40,is,Class).
+predicate(AmyloidB1-42,is,Class).
+predicate(AmyloidB1-42-C1Q,is,Class).
+predicate(AmyloidB1-42_pentamere,is,Class).
+predicate(AmyloidBDeposit,is,Class).
+predicate(AmyloidBFibril,is,Class).
+predicate(AmyloidB_pentamere,is,Class).
+predicate(C1Q,is,Class).
+predicate(C1Q-AmyloidB1-42-C3B,is,Class).
+predicate(C3B,is,Class).
+predicate(C5B,is,Class).
+predicate(C6,is,Class).
+predicate(C7,is,Class).
+predicate(C8,is,Class).
+predicate(CAV1,is,Class).
+predicate(CAV1-TJ,is,Class).
+predicate(CD93,is,Class).
+predicate(CD93-C1Q-AmyloidB1-42,is,Class).
+predicate(CLU,is,Class).
+predicate(DAMPFragment,is,Class).
+predicate(FPRL1,is,Class).
+predicate(FPRL1-AmyloidB1-42,is,Class).
+predicate(FPRL1-lipoxinA4,is,Class).
+predicate(GluR,is,Class).
+predicate(GluR-glutamate,is,Class).
+predicate(HSP60,is,Class).
+predicate(HSP60-TLR4,is,Class).
+predicate(LRP,is,Class).
+predicate(LRP1,is,Class).
+predicate(LRP1-AmyloidB,is,Class).
+predicate(MACMembraneAttackComplex,is,Class).
+predicate(NAC,is,Class).
+predicate(NALP,is,Class).
+predicate(NALP-AmyloidB,is,Class).
+predicate(OligomericAmyloidB_decamere,is,Class).
+predicate(P2X7,is,Class).
+predicate(P2X7-ATP,is,Class).
+predicate(PAMPs,is,Class).
+predicate(PPARA,is,Class).
+predicate(PPARALigands,is,Class).
+predicate(PPARAligands-PPARA,is,Class).
+predicate(RAGE,is,Class).
+predicate(RAGE-AGEs,is,Class).
+predicate(RAGE-AmyloidB,is,Class).
+predicate(RNA_binding,is,Class).
+predicate(RNA_binding,SubClassOf,non-covalent_binding).
+predicate(SCAR,is,Class).
+predicate(SCAR-AmyloidBFibril,is,Class).
+predicate(SRA1,is,Class).
+predicate(SRA1-AmyloidB,is,Class).
+predicate(SRA2,is,Class).
+predicate(SRA2-AmyloidB,is,Class).
+predicate(SenilePlaque,is,Class).
+predicate(TIMP1_a,is,Class).
+predicate(TJ,is,Class).
+predicate(TLR,is,Class).
+predicate(TLR-AmyloidB,is,Class).
+predicate(TLR2,is,Class).
+predicate(TLR2-AmyloidB,is,Class).
+predicate(TLR2-DAMPs,is,Class).
+predicate(TLR4,is,Class).
+predicate(TLR4-AmyloidB,is,Class).
+predicate(TLR4-DAMPs,is,Class).
+predicate(TLR9,is,Class).
+predicate(TLR9-AmyloidB,is,Class).
+predicate(TLRs-DAMPs,is,Class).
+predicate(TLRs-PAMPs,is,Class).
+predicate(TREM2,is,Class).
+predicate(TREM2-unknownProtein,is,Class).
+predicate(TTR,is,Class).
+predicate(activatedMicroglia,is,Class).
+predicate(c0,is,Class).
+predicate(c15,is,Class).
+predicate(c16,is,Class).
+predicate(c22,is,Class).
+predicate(c4,is,Class).
+predicate(fibrillaryAmyloidB,is,Class).
+predicate(glutamate,is,Class).
+predicate(insulin,is,Class).
+predicate(lipoxinA4,is,Class).
+predicate(protein-protein_complexation,is,Class).
+predicate(protein-protein_complexation,EquivalentTo,(has_output some heteromer) and (has_input min 2 gene_product)).
+predicate(protein-protein_complexation,SubClassOf,protein_complex_formation).
+predicate(re100,is,Class).
+predicate(re100,SubClassOf,protein-protein_complexation,).
+predicate(re100,SubClassOf,has_input some C5B,).
+predicate(re100,SubClassOf,has_input some C6,).
+predicate(re100,SubClassOf,has_input some C7,).
+predicate(re100,SubClassOf,has_input some C8,).
+predicate(re100,SubClassOf,has_mediator some activatedMicroglia,).
+predicate(re100,SubClassOf,has_output some MACMembraneAttackComplex,).
+predicate(re100,SubClassOf,occurs_in some c0).
+predicate(re1026,is,Class).
+predicate(re1026,SubClassOf,protein-protein_complexation,).
+predicate(re1026,SubClassOf,has_input some AmyloidB,).
+predicate(re1026,SubClassOf,has_input some CLU,).
+predicate(re1026,SubClassOf,has_output some AmyloidB-CLU).
+predicate(re1033,is,Class).
+predicate(re1033,SubClassOf,protein_oligomerisation).
+predicate(re1034,is,Class).
+predicate(re1034,SubClassOf,protein-protein_complexation).
+predicate(re1038,is,Class).
+predicate(re1038,SubClassOf,protein-protein_complexation).
+predicate(re1040,is,Class).
+predicate(re1040,SubClassOf,protein-protein_complexation).
+predicate(re1048,is,Class).
+predicate(re1048,SubClassOf,protein_oligomerisation,).
+predicate(re1048,SubClassOf,has_input some AmyloidB1-42,).
+predicate(re1048,SubClassOf,has_output some ADDLs,).
+predicate(re1048,SubClassOf,occurs_in some c0).
+predicate(re105,is,Class).
+predicate(re105,SubClassOf,protein_oligomerisation).
+predicate(re1060,is,Class).
+predicate(re1060,SubClassOf,protein_oligomerisation).
+predicate(re1064,is,Class).
+predicate(re1064,SubClassOf,protein-protein_complexation).
+predicate(re1066,is,Class).
+predicate(re1066,SubClassOf,protein-protein_complexation).
+predicate(re1068,is,Class).
+predicate(re1068,SubClassOf,protein-protein_complexation).
+predicate(re1069,is,Class).
+predicate(re1069,SubClassOf,protein-protein_complexation).
+predicate(re1071,is,Class).
+predicate(re1071,SubClassOf,protein-protein_complexation).
+predicate(re1075,is,Class).
+predicate(re1075,SubClassOf,protein-protein_complexation).
+predicate(re1080,is,Class).
+predicate(re1080,SubClassOf,protein-protein_complexation).
+predicate(re1082,is,Class).
+predicate(re1082,SubClassOf,protein-protein_complexation).
+predicate(re1083,is,Class).
+predicate(re1083,SubClassOf,protein-protein_complexation).
+predicate(re1084,is,Class).
+predicate(re1084,SubClassOf,protein-protein_complexation).
+predicate(re1085,is,Class).
+predicate(re1085,SubClassOf,halomer_formation,).
+predicate(re1085,SubClassOf,has_input some PPARA,).
+predicate(re1085,SubClassOf,has_input some PPARALigands,).
+predicate(re1085,SubClassOf,has_output some PPARAligands-PPARA,).
+predicate(re1085,SubClassOf,occurs_in some c4).
+predicate(re1091,is,Class).
+predicate(re1091,SubClassOf,halomer_formation,).
+predicate(re1091,SubClassOf,has_input some GluR,).
+predicate(re1091,SubClassOf,has_input some glutamate,).
+predicate(re1091,SubClassOf,has_output some GluR-glutamate,).
+predicate(re1091,SubClassOf,occurs_in some c22).
+predicate(re1095,is,Class).
+predicate(re1095,SubClassOf,protein-protein_complexation).
+predicate(re1098,is,Class).
+predicate(re1098,SubClassOf,protein-protein_complexation,).
+predicate(re1098,SubClassOf,has_input some A2M,).
+predicate(re1098,SubClassOf,has_input some AmyloidB,).
+predicate(re1098,SubClassOf,has_output some AmyloidB-A2M).
+predicate(re1110,is,Class).
+predicate(re1110,SubClassOf,protein-protein_complexation,).
+predicate(re1110,SubClassOf,has_input some AmyloidBFibril,).
+predicate(re1110,SubClassOf,has_input some SCAR,).
+predicate(re1110,SubClassOf,has_output some SCAR-AmyloidBFibril,).
+predicate(re1110,SubClassOf,occurs_in some c4).
+predicate(re1111,is,Class).
+predicate(re1111,SubClassOf,protein-protein_complexation,).
+predicate(re1111,SubClassOf,has_input some AGER,).
+predicate(re1111,SubClassOf,has_input some AmyloidBFibril,).
+predicate(re1111,SubClassOf,has_output some AGER-AmyloidBFibril,).
+predicate(re1111,SubClassOf,occurs_in some c4).
+predicate(re1118,is,Class).
+predicate(re1118,SubClassOf,protein-protein_complexation).
+predicate(re1158,is,Class).
+predicate(re1158,SubClassOf,halomer_formation,).
+predicate(re1158,SubClassOf,has_input some ATP,).
+predicate(re1158,SubClassOf,has_input some P2X7,).
+predicate(re1158,SubClassOf,has_output some P2X7-ATP,).
+predicate(re1158,SubClassOf,occurs_in some c4).
+predicate(re1159,is,Class).
+predicate(re1159,SubClassOf,halomer_formation,).
+predicate(re1159,SubClassOf,has_input some AGE,).
+predicate(re1159,SubClassOf,has_input some RAGE,).
+predicate(re1159,SubClassOf,has_output some RAGE-AGEs,).
+predicate(re1159,SubClassOf,occurs_in some c4).
+predicate(re1160,is,Class).
+predicate(re1160,SubClassOf,protein-protein_complexation,).
+predicate(re1160,SubClassOf,has_input some AmyloidB,).
+predicate(re1160,SubClassOf,has_input some TLR,).
+predicate(re1160,SubClassOf,has_output some TLR-AmyloidB,).
+predicate(re1160,SubClassOf,occurs_in some c4).
+predicate(re1161,is,Class).
+predicate(re1161,SubClassOf,protein-protein_complexation,).
+predicate(re1161,SubClassOf,has_input some AmyloidB,).
+predicate(re1161,SubClassOf,has_input some TLR2,).
+predicate(re1161,SubClassOf,has_output some TLR2-AmyloidB,).
+predicate(re1161,SubClassOf,occurs_in some c4).
+predicate(re1162,is,Class).
+predicate(re1162,SubClassOf,protein-protein_complexation,).
+predicate(re1162,SubClassOf,has_input some AmyloidB,).
+predicate(re1162,SubClassOf,has_input some TLR4,).
+predicate(re1162,SubClassOf,has_output some TLR4-AmyloidB,).
+predicate(re1162,SubClassOf,occurs_in some c4).
+predicate(re1163,is,Class).
+predicate(re1163,SubClassOf,protein-protein_complexation,).
+predicate(re1163,SubClassOf,has_input some AmyloidB,).
+predicate(re1163,SubClassOf,has_input some RAGE,).
+predicate(re1163,SubClassOf,has_output some RAGE-AmyloidB,).
+predicate(re1163,SubClassOf,occurs_in some c4).
+predicate(re1173,is,Class).
+predicate(re1173,SubClassOf,protein-protein_complexation,).
+predicate(re1173,SubClassOf,has_input some AmyloidB,).
+predicate(re1173,SubClassOf,has_input some NALP,).
+predicate(re1173,SubClassOf,has_output some NALP-AmyloidB,).
+predicate(re1173,SubClassOf,occurs_in some c4).
+predicate(re1195,is,Class).
+predicate(re1195,SubClassOf,protein_oligomerisation).
+predicate(re1207,is,Class).
+predicate(re1207,SubClassOf,protein-protein_complexation).
+predicate(re1211,is,Class).
+predicate(re1211,SubClassOf,halomer_formation,).
+predicate(re1211,SubClassOf,has_input some FPRL1,).
+predicate(re1211,SubClassOf,has_input some lipoxinA4,).
+predicate(re1211,SubClassOf,has_output some FPRL1-lipoxinA4,).
+predicate(re1211,SubClassOf,occurs_in some c4).
+predicate(re1212,is,Class).
+predicate(re1212,SubClassOf,protein-protein_complexation,).
+predicate(re1212,SubClassOf,has_input some AmyloidB1-42,).
+predicate(re1212,SubClassOf,has_input some FPRL1,).
+predicate(re1212,SubClassOf,has_output some FPRL1-AmyloidB1-42,).
+predicate(re1212,SubClassOf,occurs_in some c4).
+predicate(re1221,is,Class).
+predicate(re1221,SubClassOf,protein-protein_complexation,).
+predicate(re1221,SubClassOf,has_input some AmyloidB,).
+predicate(re1221,SubClassOf,has_input some SRA1,).
+predicate(re1221,SubClassOf,has_output some SRA1-AmyloidB,).
+predicate(re1221,SubClassOf,occurs_in some c4).
+predicate(re1222,is,Class).
+predicate(re1222,SubClassOf,protein-protein_complexation,).
+predicate(re1222,SubClassOf,has_input some AmyloidB,).
+predicate(re1222,SubClassOf,has_input some SRA2,).
+predicate(re1222,SubClassOf,has_output some SRA2-AmyloidB,).
+predicate(re1222,SubClassOf,occurs_in some c4).
+predicate(re1223,is,Class).
+predicate(re1223,SubClassOf,protein_oligomerisation,).
+predicate(re1223,SubClassOf,has_input some AmyloidB,).
+predicate(re1223,SubClassOf,has_output some AmyloidBDeposit,).
+predicate(re1223,SubClassOf,occurs_in some c4).
+predicate(re123,is,Class).
+predicate(re123,SubClassOf,protein_oligomerisation,).
+predicate(re123,SubClassOf,has_input some AmyloidBFibril,).
+predicate(re123,SubClassOf,has_output some SenilePlaque,).
+predicate(re123,SubClassOf,occurs_in some c0).
+predicate(re1238,is,Class).
+predicate(re1238,SubClassOf,protein-protein_complexation).
+predicate(re1241,is,Class).
+predicate(re1241,SubClassOf,protein-protein_complexation,).
+predicate(re1241,SubClassOf,has_input some DAMPFragment,).
+predicate(re1241,SubClassOf,has_input some TLR2,).
+predicate(re1241,SubClassOf,has_output some TLR2-DAMPs,).
+predicate(re1241,SubClassOf,occurs_in some c4).
+predicate(re1242,is,Class).
+predicate(re1242,SubClassOf,protein-protein_complexation,).
+predicate(re1242,SubClassOf,has_input some DAMPFragment,).
+predicate(re1242,SubClassOf,has_input some TLR4,).
+predicate(re1242,SubClassOf,has_output some TLR4-DAMPs,).
+predicate(re1242,SubClassOf,occurs_in some c4).
+predicate(re1243,is,Class).
+predicate(re1243,SubClassOf,protein-protein_complexation,).
+predicate(re1243,SubClassOf,has_input some AmyloidB,).
+predicate(re1243,SubClassOf,has_input some TLR2,).
+predicate(re1243,SubClassOf,has_output some TLR2-AmyloidB,).
+predicate(re1243,SubClassOf,occurs_in some c4).
+predicate(re1244,is,Class).
+predicate(re1244,SubClassOf,protein-protein_complexation,).
+predicate(re1244,SubClassOf,has_input some AmyloidB,).
+predicate(re1244,SubClassOf,has_input some TLR4,).
+predicate(re1244,SubClassOf,has_output some TLR4-AmyloidB,).
+predicate(re1244,SubClassOf,occurs_in some c4).
+predicate(re1245,is,Class).
+predicate(re1245,SubClassOf,protein-protein_complexation,).
+predicate(re1245,SubClassOf,has_input some DAMPFragment,).
+predicate(re1245,SubClassOf,has_input some TLR,).
+predicate(re1245,SubClassOf,has_output some TLRs-DAMPs,).
+predicate(re1245,SubClassOf,occurs_in some c4).
+predicate(re1246,is,Class).
+predicate(re1246,SubClassOf,protein-protein_complexation,).
+predicate(re1246,SubClassOf,has_input some PAMPs,).
+predicate(re1246,SubClassOf,has_input some TLR,).
+predicate(re1246,SubClassOf,has_output some TLRs-PAMPs,).
+predicate(re1246,SubClassOf,occurs_in some c4).
+predicate(re1250,is,Class).
+predicate(re1250,SubClassOf,protein-protein_complexation,).
+predicate(re1250,SubClassOf,has_input some HSP60,).
+predicate(re1250,SubClassOf,has_input some TLR4,).
+predicate(re1250,SubClassOf,has_output some HSP60-TLR4,).
+predicate(re1250,SubClassOf,occurs_in some c4).
+predicate(re1252,is,Class).
+predicate(re1252,SubClassOf,protein-protein_complexation,).
+predicate(re1252,SubClassOf,has_input some AmyloidB,).
+predicate(re1252,SubClassOf,has_input some TLR9,).
+predicate(re1252,SubClassOf,has_output some TLR9-AmyloidB,).
+predicate(re1252,SubClassOf,occurs_in some c4).
+predicate(re1253,is,Class).
+predicate(re1253,SubClassOf,protein-protein_complexation,).
+predicate(re1253,SubClassOf,has_input some TREM2,).
+predicate(re1253,SubClassOf,has_input some unknownProt,).
+predicate(re1253,SubClassOf,has_output some TREM2-unknownProtein,).
+predicate(re1253,SubClassOf,occurs_in some c4).
+predicate(re1256,is,Class).
+predicate(re1256,SubClassOf,protein-protein_complexation).
+predicate(re1257,is,Class).
+predicate(re1257,SubClassOf,protein-protein_complexation).
+predicate(re127,is,Class).
+predicate(re127,SubClassOf,protein-protein_complexation).
+predicate(re1272,is,Class).
+predicate(re1272,SubClassOf,protein-protein_complexation).
+predicate(re1282,is,Class).
+predicate(re1282,SubClassOf,protein-protein_complexation).
+predicate(re1283,is,Class).
+predicate(re1283,SubClassOf,protein-protein_complexation).
+predicate(re1284,is,Class).
+predicate(re1284,SubClassOf,protein-protein_complexation).
+predicate(re1288,is,Class).
+predicate(re1288,SubClassOf,protein-protein_complexation).
+predicate(re1289,is,Class).
+predicate(re1289,SubClassOf,protein-protein_complexation).
+predicate(re131,is,Class).
+predicate(re131,SubClassOf,protein-protein_complexation).
+predicate(re1317,is,Class).
+predicate(re1317,SubClassOf,protein-protein_complexation).
+predicate(re1318,is,Class).
+predicate(re1318,SubClassOf,protein-protein_complexation).
+predicate(re1319,is,Class).
+predicate(re1319,SubClassOf,protein-protein_complexation,).
+predicate(re1319,SubClassOf,has_input some A2M,).
+predicate(re1319,SubClassOf,has_input some LRP,).
+predicate(re1319,SubClassOf,has_mediator some insulin,).
+predicate(re1319,SubClassOf,has_output some A2MLRP,).
+predicate(re1319,SubClassOf,occurs_in some c22).
+predicate(re132,is,Class).
+predicate(re132,SubClassOf,protein-protein_complexation).
+predicate(re1321,is,Class).
+predicate(re1321,EquivalentTo,Abeta_RAGE_interaction).
+predicate(re1321,SubClassOf,protein-protein_complexation,).
+predicate(re1321,SubClassOf,has_input some OligomericAmyloidB_decamere,).
+predicate(re1321,SubClassOf,has_input some RAGE,).
+predicate(re1321,SubClassOf,has_output some AB-RAGE,).
+predicate(re1321,SubClassOf,occurs_in some c0).
+predicate(re1322,is,Class).
+predicate(re1322,SubClassOf,halomer_formation,).
+predicate(re1322,SubClassOf,has_input some AGE,).
+predicate(re1322,SubClassOf,has_input some RAGE,).
+predicate(re1322,SubClassOf,has_output some AGE-RAGE,).
+predicate(re1322,SubClassOf,occurs_in some c0).
+predicate(re136,is,Class).
+predicate(re136,SubClassOf,protein-protein_complexation).
+predicate(re138,is,Class).
+predicate(re138,SubClassOf,protein-protein_complexation).
+predicate(re163,is,Class).
+predicate(re163,SubClassOf,protein-protein_complexation).
+predicate(re172,is,Class).
+predicate(re172,SubClassOf,protein-protein_complexation).
+predicate(re20,is,Class).
+predicate(re20,SubClassOf,protein-protein_complexation).
+predicate(re21,is,Class).
+predicate(re21,SubClassOf,protein-protein_complexation).
+predicate(re22,is,Class).
+predicate(re22,SubClassOf,protein_oligomerisation).
+predicate(re23,is,Class).
+predicate(re23,SubClassOf,protein-protein_complexation).
+predicate(re24,is,Class).
+predicate(re24,SubClassOf,protein-protein_complexation).
+predicate(re258,is,Class).
+predicate(re258,SubClassOf,protein-protein_complexation).
+predicate(re260,is,Class).
+predicate(re260,SubClassOf,protein-protein_complexation).
+predicate(re261,is,Class).
+predicate(re261,SubClassOf,protein-protein_complexation).
+predicate(re263,is,Class).
+predicate(re263,SubClassOf,protein-protein_complexation).
+predicate(re264,is,Class).
+predicate(re264,SubClassOf,protein-protein_complexation).
+predicate(re267,is,Class).
+predicate(re267,SubClassOf,protein-protein_complexation).
+predicate(re271,is,Class).
+predicate(re271,SubClassOf,protein-protein_complexation).
+predicate(re289,is,Class).
+predicate(re289,SubClassOf,protein_oligomerisation).
+predicate(re301,is,Class).
+predicate(re301,SubClassOf,protein-protein_complexation).
+predicate(re310,is,Class).
+predicate(re310,SubClassOf,protein-protein_complexation).
+predicate(re317,is,Class).
+predicate(re317,SubClassOf,protein-protein_complexation).
+predicate(re375,is,Class).
+predicate(re375,SubClassOf,protein-protein_complexation,).
+predicate(re375,SubClassOf,has_input some ALB,).
+predicate(re375,SubClassOf,has_input some AmyloidB,).
+predicate(re375,SubClassOf,has_output some AmyloidB-ALB,).
+predicate(re375,SubClassOf,occurs_in some c16).
+predicate(re376,is,Class).
+predicate(re376,SubClassOf,protein-protein_complexation,).
+predicate(re376,SubClassOf,has_input some AmyloidB,).
+predicate(re376,SubClassOf,has_input some TTR,).
+predicate(re376,SubClassOf,has_output some AmyloidB-TTR,).
+predicate(re376,SubClassOf,occurs_in some c16).
+predicate(re379,is,Class).
+predicate(re379,SubClassOf,protein-protein_complexation).
+predicate(re383,is,Class).
+predicate(re383,SubClassOf,protein-protein_complexation).
+predicate(re404,is,Class).
+predicate(re404,SubClassOf,protein-protein_complexation).
+predicate(re422,is,Class).
+predicate(re422,SubClassOf,protein_oligomerisation).
+predicate(re427,is,Class).
+predicate(re427,SubClassOf,protein-protein_complexation,).
+predicate(re427,SubClassOf,has_input some AmyloidB1-42_pentamere,).
+predicate(re427,SubClassOf,has_input some C1Q,).
+predicate(re427,SubClassOf,has_input some C3B,).
+predicate(re427,SubClassOf,has_output some C1Q-AmyloidB1-42-C3B,).
+predicate(re427,SubClassOf,occurs_in some c0).
+predicate(re43,is,Class).
+predicate(re43,SubClassOf,protein_oligomerisation).
+predicate(re44,is,Class).
+predicate(re44,SubClassOf,protein_oligomerisation).
+predicate(re45,is,Class).
+predicate(re45,SubClassOf,protein_oligomerisation).
+predicate(re490,is,Class).
+predicate(re490,SubClassOf,protein-protein_complexation).
+predicate(re5,is,Class).
+predicate(re5,SubClassOf,protein_oligomerisation,).
+predicate(re5,SubClassOf,has_input some AmyloidB1-40,).
+predicate(re5,SubClassOf,has_output some OligomericAmyloidB_decamere,).
+predicate(re5,SubClassOf,occurs_in some c0).
+predicate(re509,is,Class).
+predicate(re509,SubClassOf,protein_oligomerisation).
+predicate(re540,is,Class).
+predicate(re540,SubClassOf,protein-protein_complexation,).
+predicate(re540,SubClassOf,has_input some AmyloidB,).
+predicate(re540,SubClassOf,has_input some LRP1,).
+predicate(re540,SubClassOf,has_output some LRP1-AmyloidB).
+predicate(re545,is,Class).
+predicate(re545,SubClassOf,protein-protein_complexation,).
+predicate(re545,SubClassOf,has_input some AmyloidB,).
+predicate(re545,SubClassOf,has_input some sLRP,).
+predicate(re545,SubClassOf,has_output some sLRP-AmyloidB,).
+predicate(re545,SubClassOf,occurs_in some c15).
+predicate(re546,is,Class).
+predicate(re546,SubClassOf,protein-protein_complexation,).
+predicate(re546,SubClassOf,has_input some AmyloidB,).
+predicate(re546,SubClassOf,has_input some CLU,).
+predicate(re546,SubClassOf,has_output some AmyloidB-CLU,).
+predicate(re546,SubClassOf,occurs_in some c15).
+predicate(re549,is,Class).
+predicate(re549,SubClassOf,protein-protein_complexation,).
+predicate(re549,SubClassOf,has_input some AGER,).
+predicate(re549,SubClassOf,has_input some AmyloidB,).
+predicate(re549,SubClassOf,has_output some AGER-AmyloidB,).
+predicate(re549,SubClassOf,occurs_in some c15).
+predicate(re559,is,Class).
+predicate(re559,SubClassOf,protein_oligomerisation,).
+predicate(re559,SubClassOf,has_input some AmyloidB,).
+predicate(re559,SubClassOf,has_output some AmyloidB_pentamere).
+predicate(re560,is,Class).
+predicate(re560,SubClassOf,protein-protein_complexation,).
+predicate(re560,SubClassOf,has_input some AGER-AmyloidB,).
+predicate(re560,SubClassOf,has_input some CAV1,).
+predicate(re560,SubClassOf,has_output some AGER-AmyloidB-CAV1,).
+predicate(re560,SubClassOf,occurs_in some c15).
+predicate(re562,is,Class).
+predicate(re562,SubClassOf,protein-protein_complexation,).
+predicate(re562,SubClassOf,has_input some CAV1,).
+predicate(re562,SubClassOf,has_input some TJ,).
+predicate(re562,SubClassOf,has_output some CAV1-TJ,).
+predicate(re562,SubClassOf,occurs_in some c22).
+predicate(re578,is,Class).
+predicate(re578,SubClassOf,protein-protein_complexation).
+predicate(re588,is,Class).
+predicate(re588,SubClassOf,protein-protein_complexation).
+predicate(re595,is,Class).
+predicate(re595,SubClassOf,protein_oligomerisation).
+predicate(re6,is,Class).
+predicate(re6,SubClassOf,protein_oligomerisation,).
+predicate(re6,SubClassOf,has_input some OligomericAmyloidB_decamere,).
+predicate(re6,SubClassOf,has_mediator some TIMP1_a,).
+predicate(re6,SubClassOf,has_output some AmyloidBFibril,).
+predicate(re6,SubClassOf,occurs_in some c0).
+predicate(re615,is,Class).
+predicate(re615,SubClassOf,protein-protein_complexation).
+predicate(re617,is,Class).
+predicate(re617,SubClassOf,protein-protein_complexation).
+predicate(re639,is,Class).
+predicate(re639,SubClassOf,protein_oligomerisation,).
+predicate(re639,SubClassOf,has_input some OligomericAmyloidB_decamere,).
+predicate(re639,SubClassOf,has_output some SenilePlaque,).
+predicate(re639,SubClassOf,occurs_in some c0).
+predicate(re643,is,Class).
+predicate(re643,SubClassOf,protein_oligomerisation,).
+predicate(re643,SubClassOf,has_input some AmyloidB1-42_pentamere,).
+predicate(re643,SubClassOf,has_output some fibrillaryAmyloidB,).
+predicate(re643,SubClassOf,occurs_in some c0).
+predicate(re650,is,Class).
+predicate(re650,SubClassOf,protein-protein_complexation).
+predicate(re66,is,Class).
+predicate(re66,SubClassOf,protein_oligomerisation).
+predicate(re690,is,Class).
+predicate(re690,SubClassOf,protein_oligomerisation).
+predicate(re692,is,Class).
+predicate(re692,SubClassOf,protein-protein_complexation).
+predicate(re698,is,Class).
+predicate(re698,SubClassOf,protein-protein_complexation).
+predicate(re699,is,Class).
+predicate(re699,SubClassOf,protein-protein_complexation).
+predicate(re723,is,Class).
+predicate(re723,SubClassOf,protein-protein_complexation).
+predicate(re724,is,Class).
+predicate(re724,SubClassOf,protein-protein_complexation).
+predicate(re725,is,Class).
+predicate(re725,SubClassOf,protein-protein_complexation).
+predicate(re726,is,Class).
+predicate(re726,SubClassOf,protein-protein_complexation).
+predicate(re743,is,Class).
+predicate(re743,SubClassOf,protein-protein_complexation).
+predicate(re746,is,Class).
+predicate(re746,SubClassOf,protein-protein_complexation).
+predicate(re750,is,Class).
+predicate(re750,SubClassOf,protein-protein_complexation).
+predicate(re756,is,Class).
+predicate(re756,SubClassOf,protein-protein_complexation).
+predicate(re759,is,Class).
+predicate(re759,SubClassOf,protein-protein_complexation).
+predicate(re760,is,Class).
+predicate(re760,SubClassOf,protein_oligomerisation).
+predicate(re764,is,Class).
+predicate(re764,SubClassOf,protein-protein_complexation).
+predicate(re77,is,Class).
+predicate(re77,SubClassOf,protein-protein_complexation).
+predicate(re78,is,Class).
+predicate(re78,SubClassOf,protein-protein_complexation).
+predicate(re781,is,Class).
+predicate(re781,SubClassOf,protein-protein_complexation).
+predicate(re782,is,Class).
+predicate(re782,SubClassOf,protein-protein_complexation).
+predicate(re793,is,Class).
+predicate(re793,SubClassOf,protein-protein_complexation).
+predicate(re794,is,Class).
+predicate(re794,SubClassOf,protein-protein_complexation).
+predicate(re795,is,Class).
+predicate(re795,SubClassOf,protein-protein_complexation).
+predicate(re796,is,Class).
+predicate(re796,SubClassOf,protein-protein_complexation).
+predicate(re798,is,Class).
+predicate(re798,SubClassOf,protein-protein_complexation).
+predicate(re799,is,Class).
+predicate(re799,SubClassOf,protein-protein_complexation).
+predicate(re8,is,Class).
+predicate(re8,SubClassOf,protein_oligomerisation,).
+predicate(re8,SubClassOf,has_input some NAC,).
+predicate(re8,SubClassOf,has_output some SenilePlaque,).
+predicate(re8,SubClassOf,occurs_in some c0).
+predicate(re800,is,Class).
+predicate(re800,SubClassOf,protein-protein_complexation).
+predicate(re851,is,Class).
+predicate(re851,SubClassOf,protein_oligomerisation).
+predicate(re870,is,Class).
+predicate(re870,SubClassOf,protein-protein_complexation).
+predicate(re879,is,Class).
+predicate(re879,SubClassOf,protein-protein_complexation).
+predicate(re881,is,Class).
+predicate(re881,SubClassOf,protein-protein_complexation).
+predicate(re915,is,Class).
+predicate(re915,SubClassOf,protein-protein_complexation).
+predicate(re920,is,Class).
+predicate(re920,SubClassOf,protein-protein_complexation).
+predicate(re928,is,Class).
+predicate(re928,SubClassOf,protein-protein_complexation).
+predicate(re951,is,Class).
+predicate(re951,SubClassOf,protein_oligomerisation).
+predicate(re96,is,Class).
+predicate(re96,SubClassOf,protein-protein_complexation,).
+predicate(re96,SubClassOf,has_input some AmyloidB1-42,).
+predicate(re96,SubClassOf,has_input some C1Q,).
+predicate(re96,SubClassOf,has_output some AmyloidB1-42-C1Q,).
+predicate(re96,SubClassOf,occurs_in some c0).
+predicate(re97,is,Class).
+predicate(re97,SubClassOf,protein-protein_complexation,).
+predicate(re97,SubClassOf,has_input some AmyloidB1-42-C1Q,).
+predicate(re97,SubClassOf,has_input some CD93,).
+predicate(re97,SubClassOf,has_output some CD93-C1Q-AmyloidB1-42,).
+predicate(re97,SubClassOf,occurs_in some c4).
+predicate(re974,is,Class).
+predicate(re974,SubClassOf,protein-protein_complexation).
+predicate(re975,is,Class).
+predicate(re975,SubClassOf,protein-protein_complexation).
+predicate(re976,is,Class).
+predicate(re976,SubClassOf,protein-protein_complexation).
+predicate(re977,is,Class).
+predicate(re977,SubClassOf,protein-protein_complexation).
+predicate(re978,is,Class).
+predicate(re978,SubClassOf,protein-protein_complexation).
+predicate(re979,is,Class).
+predicate(re979,SubClassOf,protein-protein_complexation).
+predicate(sLRP,is,Class).
+predicate(sLRP-AmyloidB,is,Class).
+predicate(unknownProt,is,Class).
+predicate(gene_product,is,Class).
+predicate(halomer_formation,is,Class).
+predicate(halomer_formation,SubClassOf,non-covalent_binding).
+predicate(heteromer,is,Class).
+predicate(homomere,is,Class).
+predicate(molecular_interaction,is,Class).
+predicate(non-covalent_binding,is,Class).
+predicate(non-covalent_binding,SubClassOf,molecular_interaction).
+predicate(oligodemerisation,is,Class).
+predicate(oligodemerisation,SubClassOf,non-covalent_binding).
+predicate(protein_complex_formation,is,Class).
+predicate(protein_complex_formation,SubClassOf,non-covalent_binding).
+predicate(protein_oligomerisation,is,Class).
+predicate(protein_oligomerisation,EquivalentTo,has_output some homomere).
+predicate(protein_oligomerisation,SubClassOf,protein_complex_formation).
+predicate(transfer,is,Class).
+predicate(transfer,SubClassOf,protein-protein_complexation).
+predicate(www.w3.org/2002/07/#,is,Class).

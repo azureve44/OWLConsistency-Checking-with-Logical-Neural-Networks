@@ -1,0 +1,119 @@
+is(www.w3.org/2000/01/-schema#,Datatype):1.0
+is(boolean,Datatype):1.0
+is(decimal,Datatype):1.0
+is(double,Datatype):1.0
+is(string,Datatype):1.0
+is(EX_BoundingPolygon.polygon,ObjectProperty):1.0
+Domain(EX_BoundingPolygon.polygon,EX_BoundingPolygon):1.0
+Range(EX_BoundingPolygon.polygon,GM_Object):1.0
+is(EX_Extent.geographicElement,ObjectProperty):1.0
+Domain(EX_Extent.geographicElement,EX_Extent):1.0
+Range(EX_Extent.geographicElement,EX_GeographicExtent):1.0
+is(EX_Extent.temporalElement,ObjectProperty):1.0
+Domain(EX_Extent.temporalElement,EX_Extent):1.0
+Range(EX_Extent.temporalElement,EX_TemporalExtent):1.0
+is(EX_Extent.verticalElement,ObjectProperty):1.0
+Domain(EX_Extent.verticalElement,EX_Extent):1.0
+Range(EX_Extent.verticalElement,EX_VerticalExtent):1.0
+is(EX_GeographicDescription.geographicIdentifier,ObjectProperty):1.0
+Domain(EX_GeographicDescription.geographicIdentifier,EX_GeographicDescription):1.0
+Range(EX_GeographicDescription.geographicIdentifier,MD_Identifier):1.0
+is(EX_SpatialTemporalExtent.spatialExtent,ObjectProperty):1.0
+Domain(EX_SpatialTemporalExtent.spatialExtent,EX_SpatialTemporalExtent):1.0
+Range(EX_SpatialTemporalExtent.spatialExtent,EX_GeographicExtent):1.0
+is(EX_SpatialTemporalExtent.verticalExtent,ObjectProperty):1.0
+Domain(EX_SpatialTemporalExtent.verticalExtent,EX_SpatialTemporalExtent):1.0
+Range(EX_SpatialTemporalExtent.verticalExtent,EX_VerticalExtent):1.0
+is(EX_TemporalExtent.extent,ObjectProperty):1.0
+Domain(EX_TemporalExtent.extent,EX_TemporalExtent):1.0
+Range(EX_TemporalExtent.extent,TM_Primitive):1.0
+is(EX_VerticalExtent.verticalCRS,ObjectProperty):1.0
+Domain(EX_VerticalExtent.verticalCRS,EX_VerticalExtent):1.0
+Range(EX_VerticalExtent.verticalCRS,SC_VerticalCRS):1.0
+is(EX_VerticalExtent.verticalCRSId,ObjectProperty):1.0
+Domain(EX_VerticalExtent.verticalCRSId,EX_VerticalExtent):1.0
+Range(EX_VerticalExtent.verticalCRSId,MD_ReferenceSystem):1.0
+is(EX_Extent.description,DataProperty):1.0
+Domain(EX_Extent.description,EX_Extent):1.0
+Range(EX_Extent.description,string):1.0
+is(EX_GeographicBoundingBox.eastBoundLongitude,DataProperty):1.0
+Domain(EX_GeographicBoundingBox.eastBoundLongitude,EX_GeographicBoundingBox):1.0
+Range(EX_GeographicBoundingBox.eastBoundLongitude,decimal):1.0
+is(EX_GeographicBoundingBox.northBoundLatitude,DataProperty):1.0
+Domain(EX_GeographicBoundingBox.northBoundLatitude,EX_GeographicBoundingBox):1.0
+Range(EX_GeographicBoundingBox.northBoundLatitude,decimal):1.0
+is(EX_GeographicBoundingBox.southBoundLatitude,DataProperty):1.0
+Domain(EX_GeographicBoundingBox.southBoundLatitude,EX_GeographicBoundingBox):1.0
+Range(EX_GeographicBoundingBox.southBoundLatitude,decimal):1.0
+is(EX_GeographicBoundingBox.westBoundLongitude,DataProperty):1.0
+Domain(EX_GeographicBoundingBox.westBoundLongitude,EX_GeographicBoundingBox):1.0
+Range(EX_GeographicBoundingBox.westBoundLongitude,decimal):1.0
+is(EX_GeographicExtent.extentTypeCode,DataProperty):1.0
+Domain(EX_GeographicExtent.extentTypeCode,EX_GeographicExtent):1.0
+Range(EX_GeographicExtent.extentTypeCode,boolean):1.0
+is(EX_VerticalExtent.maximumValue,DataProperty):1.0
+Domain(EX_VerticalExtent.maximumValue,EX_VerticalExtent):1.0
+Range(EX_VerticalExtent.maximumValue,double):1.0
+is(EX_VerticalExtent.minimumValue,DataProperty):1.0
+Domain(EX_VerticalExtent.minimumValue,EX_VerticalExtent):1.0
+Range(EX_VerticalExtent.minimumValue,double):1.0
+is(GM_Object,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(TM_Primitive,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(SC_VerticalCRS,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_Identifier,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(EX_BoundingPolygon,Class):1.0
+SubClassOf(EX_BoundingPolygon,EX_GeographicExtent,):1.0
+SubClassOf(EX_BoundingPolygon,EX_BoundingPolygon.polygon only GM_Object,):1.0
+is(Thing,EX_BoundingPolygon.polygon min 1 www.w3.org/2002/07/#):1.0
+is(EX_Extent,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,EX_Extent.geographicElement only EX_GeographicExtent,):1.0
+is(Thing,,EX_Extent.temporalElement only EX_TemporalExtent,):1.0
+is(Thing,,EX_Extent.verticalElement only EX_VerticalExtent,):1.0
+is(Thing,,EX_Extent.description only string,):1.0
+is(Literal,EX_Extent.description max 1 www.w3.org/2000/01/-schema#):1.0
+is(EX_GeographicBoundingBox,Class):1.0
+SubClassOf(EX_GeographicBoundingBox,EX_GeographicExtent,):1.0
+SubClassOf(EX_GeographicBoundingBox,EX_GeographicBoundingBox.eastBoundLongitude only decimal,):1.0
+SubClassOf(EX_GeographicBoundingBox,EX_GeographicBoundingBox.northBoundLatitude only decimal,):1.0
+SubClassOf(EX_GeographicBoundingBox,EX_GeographicBoundingBox.southBoundLatitude only decimal,):1.0
+SubClassOf(EX_GeographicBoundingBox,EX_GeographicBoundingBox.westBoundLongitude only decimal,):1.0
+is(Literal,,EX_GeographicBoundingBox.eastBoundLongitude exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,EX_GeographicBoundingBox.northBoundLatitude exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,EX_GeographicBoundingBox.southBoundLatitude exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,EX_GeographicBoundingBox.westBoundLongitude exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(EX_GeographicDescription,Class):1.0
+SubClassOf(EX_GeographicDescription,EX_GeographicExtent,):1.0
+SubClassOf(EX_GeographicDescription,EX_GeographicDescription.geographicIdentifier only MD_Identifier,):1.0
+is(Thing,EX_GeographicDescription.geographicIdentifier exactly 1 www.w3.org/2002/07/#):1.0
+is(EX_GeographicExtent,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,EX_GeographicExtent.extentTypeCode only boolean,):1.0
+is(Literal,EX_GeographicExtent.extentTypeCode max 1 www.w3.org/2000/01/-schema#):1.0
+is(EX_SpatialTemporalExtent,Class):1.0
+SubClassOf(EX_SpatialTemporalExtent,EX_TemporalExtent,):1.0
+SubClassOf(EX_SpatialTemporalExtent,EX_SpatialTemporalExtent.spatialExtent only EX_GeographicExtent,):1.0
+SubClassOf(EX_SpatialTemporalExtent,EX_SpatialTemporalExtent.verticalExtent only EX_VerticalExtent,):1.0
+is(Thing,,EX_SpatialTemporalExtent.spatialExtent min 1 www.w3.org/2002/07/#):1.0
+is(Thing,EX_SpatialTemporalExtent.verticalExtent max 1 www.w3.org/2002/07/#):1.0
+is(EX_TemporalExtent,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,EX_TemporalExtent.extent only TM_Primitive,):1.0
+is(Thing,EX_TemporalExtent.extent exactly 1 www.w3.org/2002/07/#):1.0
+is(EX_VerticalExtent,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,EX_VerticalExtent.verticalCRS only SC_VerticalCRS,):1.0
+is(Thing,,EX_VerticalExtent.verticalCRSId only MD_ReferenceSystem,):1.0
+is(Thing,,EX_VerticalExtent.verticalCRS max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,EX_VerticalExtent.verticalCRSId max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,EX_VerticalExtent.maximumValue only double,):1.0
+is(Thing,,EX_VerticalExtent.minimumValue only double,):1.0
+is(Literal,,EX_VerticalExtent.maximumValue exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,EX_VerticalExtent.minimumValue exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_ReferenceSystem,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(www.w3.org/2002/07/#,Class):1.0

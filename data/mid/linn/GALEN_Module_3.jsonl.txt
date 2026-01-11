@@ -1,0 +1,3329 @@
+predicate(IsDivisionOf,is,ObjectProperty).
+predicate(LocativeAttribute,is,ObjectProperty).
+predicate(actsOn,is,ObjectProperty).
+predicate(actsSpecificallyOn,is,ObjectProperty).
+predicate(hasAbnormalityStatus,is,ObjectProperty).
+predicate(hasAbsoluteState,is,ObjectProperty).
+predicate(hasAcquisitionMode,is,ObjectProperty).
+predicate(hasCellMorphology,is,ObjectProperty).
+predicate(hasCentralPeripheralSelector,is,ObjectProperty).
+predicate(hasChangeInState,is,ObjectProperty).
+predicate(hasChronicity,is,ObjectProperty).
+predicate(hasClinicalSpeciality,is,ObjectProperty).
+predicate(hasColour,is,ObjectProperty).
+predicate(hasCompleteness,is,ObjectProperty).
+predicate(hasConsequence,is,ObjectProperty).
+predicate(hasDiameter,is,ObjectProperty).
+predicate(hasDistribution,is,ObjectProperty).
+predicate(hasEffectiveness,is,ObjectProperty).
+predicate(hasFractureComplexity,is,ObjectProperty).
+predicate(hasFunction,is,ObjectProperty).
+predicate(hasFunctionalComponent,is,ObjectProperty).
+predicate(hasImmediateConsequence,is,ObjectProperty).
+predicate(hasIntrinsicPathologicalStatus,is,ObjectProperty).
+predicate(hasLeftRightSelector,is,ObjectProperty).
+predicate(hasLocation,is,ObjectProperty).
+predicate(hasMagnitude,is,ObjectProperty).
+predicate(hasMalignancy,is,ObjectProperty).
+predicate(hasMetastaticStatus,is,ObjectProperty).
+predicate(hasMultipleLocation,is,ObjectProperty).
+predicate(hasPatency,is,ObjectProperty).
+predicate(hasPathologicalStatus,is,ObjectProperty).
+predicate(hasPersonPerforming,is,ObjectProperty).
+predicate(hasPhysicalMeans,is,ObjectProperty).
+predicate(hasQuantity,is,ObjectProperty).
+predicate(hasShape,is,ObjectProperty).
+predicate(hasSize,is,ObjectProperty).
+predicate(hasSpecificConsequence,is,ObjectProperty).
+predicate(hasSpecificLinearDivision,is,ObjectProperty).
+predicate(hasSpecificLocation,is,ObjectProperty).
+predicate(hasStructuralComponent,is,ObjectProperty).
+predicate(hasStructuralExtent,is,ObjectProperty).
+predicate(hasSurgicalExtent,is,ObjectProperty).
+predicate(hasSurgicalOpenClosedness,is,ObjectProperty).
+predicate(hasTimeOfOccurrence,is,ObjectProperty).
+predicate(hasTimingAppropriateness,is,ObjectProperty).
+predicate(hasTreatmentStatus,is,ObjectProperty).
+predicate(hasTumourHistology,is,ObjectProperty).
+predicate(hasUniqueAssociatedDisplacement,is,ObjectProperty).
+predicate(hasUniqueAssociatedProcess,is,ObjectProperty).
+predicate(hasVerticalDepth,is,ObjectProperty).
+predicate(hasVolume,is,ObjectProperty).
+predicate(isActedOnSpecificallyBy,is,ObjectProperty).
+predicate(isAlphaConnectionOf,is,ObjectProperty).
+predicate(isAlphaPartitiveConnectionOf,is,ObjectProperty).
+predicate(isAnswerOf,is,ObjectProperty).
+predicate(isBetaConnectionOf,is,ObjectProperty).
+predicate(isBetaPartitiveConnectionOf,is,ObjectProperty).
+predicate(isCausallyLinkedTo,is,ObjectProperty).
+predicate(isConsequenceOf,is,ObjectProperty).
+predicate(isDiameterOf,is,ObjectProperty).
+predicate(isDisplacementFrom,is,ObjectProperty).
+predicate(isImmediateConsequenceOf,is,ObjectProperty).
+predicate(isNonCausallyLinkedTo,is,ObjectProperty).
+predicate(isSpaceDefinedBy,is,ObjectProperty).
+predicate(isSpecificConsequenceOf,is,ObjectProperty).
+predicate(isSpecificFunctionalComponentOf,is,ObjectProperty).
+predicate(isSpecificImmediateConsequenceOf,is,ObjectProperty).
+predicate(isSpecificLayerOf,is,ObjectProperty).
+predicate(isSpecificSolidDivisionOf,is,ObjectProperty).
+predicate(isSpecificallyMadeOf,is,ObjectProperty).
+predicate(isStructuralComponentOf,is,ObjectProperty).
+predicate(isSyndromeElementOf,is,ObjectProperty).
+predicate(playsConsultationRole,is,ObjectProperty).
+predicate(serves,is,ObjectProperty).
+predicate(specificallyMakesUp,is,ObjectProperty).
+predicate(AbdominalAorticAneurysm,is,Class).
+predicate(AbdominalAorticAneurysm,SubClassOf,VascularDilatationLesion).
+predicate(AbdominalIncisionalHernia,is,Class).
+predicate(AbdominalIncisionalHernia,EquivalentTo,HerniaLesion and (hasSpecificLocation some SurgicalAbdominalWallIncision)).
+predicate(AbdominalIncisionalHernia,SubClassOf,HerniaLesion).
+predicate(AbdominalMuscle,is,Class).
+predicate(AberrantConductingPathway,is,Class).
+predicate(AberrantConductingPathway,SubClassOf,ConductionFibres,).
+predicate(AberrantConductingPathway,SubClassOf,hasPathologicalStatus some pathological).
+predicate(AbnormalCellMassGrowth,is,Class).
+predicate(AbnormalCellMassGrowth,SubClassOf,PathologicalBodyStructure).
+predicate(AbnormalGrowth,is,Class).
+predicate(AbnormalGrowth,SubClassOf,PathologicalBodyStructure).
+predicate(AbstractStructure,is,Class).
+predicate(Acanthamoeba,is,Class).
+predicate(AcanthamoebaInfectionOfCornea,is,Class).
+predicate(AcanthamoebaInfectionOfCornea,EquivalentTo,InfectionLesion and (hasSpecificLocation some Cornea) and (isSpecificConsequenceOf some Acanthamoeba)).
+predicate(AcanthamoebaInfectionOfCornea,SubClassOf,InfectionLesion).
+predicate(AcanthamoebaKeratitis,is,Class).
+predicate(AcanthamoebaKeratitis,SubClassOf,Keratitis).
+predicate(AccessoryAtrioventricularPathway,is,Class).
+predicate(AccessoryAtrioventricularPathway,SubClassOf,AberrantConductingPathway).
+predicate(AccessorySpleen,is,Class).
+predicate(AcetabularFracture,is,Class).
+predicate(AcetabularFracture,EquivalentTo,Fracture and (hasSpecificLocation some Acetabulum)).
+predicate(AcetabularFracture,SubClassOf,Fracture).
+predicate(Acetabulum,is,Class).
+predicate(AcquiredPathologicalLesion,is,Class).
+predicate(AcquiredPathologicalLesion,SubClassOf,PathologicalBodyStructure).
+predicate(AcquiredStenosisOfAorta,is,Class).
+predicate(AcquiredStenosisOfAorta,EquivalentTo,Stricture and (hasAcquisitionMode some).
+predicate(AcquiredStenosisOfAorta,EquivalentTo,(AcquisitionMode and (hasAbsoluteState some acquired))) and (hasSpecificLocation some Aorta)).
+predicate(AcquiredStenosisOfAorta,SubClassOf,Stricture).
+predicate(AcquisitionMode,is,Class).
+predicate(AcuteApicalPeriodontitis,is,Class).
+predicate(AcuteApicalPeriodontitis,SubClassOf,ApicalPeriodontitis).
+predicate(AcuteDentalCaries,is,Class).
+predicate(AcuteDentalCaries,SubClassOf,DentalCaries).
+predicate(AcuteDermatitis,is,Class).
+predicate(AcuteDermatitis,SubClassOf,Dermatitis).
+predicate(AcuteEndocarditis,is,Class).
+predicate(AcuteEndocarditis,SubClassOf,Endocarditis).
+predicate(AcuteErosionOfStomach,is,Class).
+predicate(AcuteErosionOfStomach,SubClassOf,ErosionOfStomach).
+predicate(AcuteGastricUlcer,is,Class).
+predicate(AcuteGastricUlcer,SubClassOf,UlcerOfStomach).
+predicate(AcuteGastritis,is,Class).
+predicate(AcuteGastritis,SubClassOf,GastritisLesion).
+predicate(AcuteInfarctionOfPapillaryMuscle,is,Class).
+predicate(AcuteInfarctionOfPapillaryMuscle,EquivalentTo,DamageLesion and (hasChronicity some).
+predicate(AcuteInfarctionOfPapillaryMuscle,EquivalentTo,(Chronicity and (hasAbsoluteState some acute))) and (hasSpecificLocation some PapillaryMuscle)).
+predicate(AcuteInfarctionOfPapillaryMuscle,SubClassOf,DamageLesion).
+predicate(AcuteMyocardialInfarction,is,Class).
+predicate(AcuteMyocardialInfarction,SubClassOf,MyocardialInfarct).
+predicate(AcuteNecrotizingUlcerativeGingivitis,is,Class).
+predicate(AcuteNecrotizingUlcerativeGingivitis,SubClassOf,Gingivitis).
+predicate(AcuteOsteomyelitis,is,Class).
+predicate(AcuteOsteomyelitis,SubClassOf,Osteomyelitis).
+predicate(AcutePancreatitis,is,Class).
+predicate(AcutePancreatitis,SubClassOf,Pancreatitis).
+predicate(AcutePericarditis,is,Class).
+predicate(AcutePericarditis,SubClassOf,Pericarditis).
+predicate(AcutePulpitisOfTooth,is,Class).
+predicate(AcutePulpitisOfTooth,SubClassOf,PulpitisOfTooth).
+predicate(AcuteRhinitis,is,Class).
+predicate(AcuteRhinitis,EquivalentTo,InflammationLesion and (hasChronicity some).
+predicate(AcuteRhinitis,EquivalentTo,(Chronicity and (hasAbsoluteState some acute))) and (hasSpecificLocation some).
+predicate(AcuteRhinitis,EquivalentTo,(MucousMembrane and (isSpecificLayerOf some Nose)))).
+predicate(AcuteRhinitis,SubClassOf,InflammationLesion).
+predicate(Adenitis,is,Class).
+predicate(Adenitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Lymphnode)).
+predicate(Adenitis,SubClassOf,InflammationLesion).
+predicate(AdhesionLesion,is,Class).
+predicate(AdhesionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(AdhesivePericarditis,is,Class).
+predicate(AdhesivePericarditis,SubClassOf,Pericarditis).
+predicate(AdrenalAtrophy,is,Class).
+predicate(AdrenalAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some AdrenalGland)).
+predicate(AdrenalAtrophy,SubClassOf,AtrophicLesion).
+predicate(AdrenalGland,is,Class).
+predicate(AdrenalHyperplasia,is,Class).
+predicate(AdrenalHyperplasia,EquivalentTo,HyperplasticLesion and (hasSpecificLocation some AdrenalGland)).
+predicate(AdrenalHyperplasia,SubClassOf,HyperplasticLesion).
+predicate(Affect,is,Class).
+predicate(Affect,SubClassOf,PsychologicalConstruct).
+predicate(AgenesisLesion,is,Class).
+predicate(AgenesisLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Airway,is,Class).
+predicate(AirwayObstruction,is,Class).
+predicate(AirwayObstruction,EquivalentTo,ObstructingLesion and (hasSpecificLocation some Airway)).
+predicate(AirwayObstruction,SubClassOf,ObstructingLesion).
+predicate(AlcoholicGastritis,is,Class).
+predicate(AlcoholicGastritis,SubClassOf,GastritisLesion).
+predicate(AllergicAlveolitis,is,Class).
+predicate(AllergicAlveolitis,SubClassOf,Alveolitis).
+predicate(AllergicBlepharoconjunctivitis,is,Class).
+predicate(AllergicBlepharoconjunctivitis,SubClassOf,AllergicInflammation).
+predicate(AllergicConjunctivitis,is,Class).
+predicate(AllergicConjunctivitis,SubClassOf,ConjunctivalInflammation).
+predicate(AllergicDermatitis,is,Class).
+predicate(AllergicDermatitis,SubClassOf,Dermatitis).
+predicate(AllergicInflammation,is,Class).
+predicate(AllergicInflammation,EquivalentTo,InflammationLesion and (isConsequenceOf some AllergyProcess)).
+predicate(AllergicInflammation,SubClassOf,InflammationLesion).
+predicate(AllergicRhinitis,is,Class).
+predicate(AllergicRhinitis,SubClassOf,Rhinitis).
+predicate(AllergicVasculitis,is,Class).
+predicate(AllergicVasculitis,SubClassOf,Vasculitis).
+predicate(AllergyProcess,is,Class).
+predicate(AlphaherpesVirus,is,Class).
+predicate(AlveolarAdhesion,is,Class).
+predicate(AlveolarAdhesion,EquivalentTo,AdhesionLesion and (hasSpecificLocation some Alveolus)).
+predicate(AlveolarAdhesion,SubClassOf,AdhesionLesion).
+predicate(AlveolarFibrosis,is,Class).
+predicate(AlveolarFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some Alveolus)).
+predicate(AlveolarFibrosis,SubClassOf,FibrosisLesion).
+predicate(AlveolarOstitis,is,Class).
+predicate(AlveolarOstitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some ToothSocket) and (isSpecificConsequenceOf some).
+predicate(AlveolarOstitis,EquivalentTo,(Fibrinolysis and (actsSpecificallyOn some).
+predicate(AlveolarOstitis,EquivalentTo,(Fibrin and (specificallyMakesUp some).
+predicate(AlveolarOstitis,EquivalentTo,(BloodClot and (hasSpecificLocation some ToothSocket) and (isConsequenceOf some).
+predicate(AlveolarOstitis,EquivalentTo,(Extracting and (actsSpecificallyOn some Tooth)))))))))).
+predicate(AlveolarOstitis,SubClassOf,InflammationLesion).
+predicate(Alveolitis,is,Class).
+predicate(Alveolitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Alveolus)).
+predicate(Alveolitis,SubClassOf,InflammationLesion).
+predicate(Alveolus,is,Class).
+predicate(AnalAtresia,is,Class).
+predicate(AnalAtresia,EquivalentTo,AgenesisLesion and (hasSpecificLocation some Anus)).
+predicate(AnalAtresia,SubClassOf,AgenesisLesion).
+predicate(AnalDischarge,is,Class).
+predicate(AnalDischarge,EquivalentTo,DischargeLesion and (hasUniqueAssociatedProcess some).
+predicate(AnalDischarge,EquivalentTo,(Discharge and (hasUniqueAssociatedDisplacement some).
+predicate(AnalDischarge,EquivalentTo,(Displacement and (isDisplacementFrom some Anus)))))).
+predicate(AnalDischarge,SubClassOf,DischargeLesion).
+predicate(AnaplasticTumour,is,Class).
+predicate(AnaplasticTumour,EquivalentTo,NeoplasticLesion and (hasTumourHistology some AnaplasticTumourHistology)).
+predicate(AnaplasticTumour,SubClassOf,NeoplasticLesion).
+predicate(AnaplasticTumourHistology,is,Class).
+predicate(AnaplasticTumourHistology,EquivalentTo,TumourHistology and (isConsequenceOf some).
+predicate(AnaplasticTumourHistology,EquivalentTo,(CellDifferentiation and (hasCompleteness some).
+predicate(AnaplasticTumourHistology,EquivalentTo,(Completeness and (hasQuantity some).
+predicate(AnaplasticTumourHistology,EquivalentTo,(Level and (hasMagnitude some lowLevel)))))))).
+predicate(AnaplasticTumourHistology,SubClassOf,TumourHistology).
+predicate(AnastomosisStructure,is,Class).
+predicate(AnatomicalSystem,is,Class).
+predicate(AnatomyWithinFemalePelvicCavity,is,Class).
+predicate(AneurysmOfCircleOfWillis,is,Class).
+predicate(AneurysmOfCircleOfWillis,SubClassOf,VascularDilatationLesion).
+predicate(AneurysmOfCoronaryVessels,is,Class).
+predicate(AneurysmOfCoronaryVessels,SubClassOf,VascularDilatationLesion).
+predicate(AneurysmOfHeart,is,Class).
+predicate(AneurysmOfHeart,SubClassOf,VascularDilatationLesion).
+predicate(AneurysmOfMeningealArtery,is,Class).
+predicate(AneurysmOfMeningealArtery,SubClassOf,VascularDilatationLesion).
+predicate(Angioedema,is,Class).
+predicate(Angioedema,SubClassOf,SubcutaneousOedema).
+predicate(AnkleOedemaSymptom,is,Class).
+predicate(AnkleOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(Ankylosis,is,Class).
+predicate(Ankylosis,EquivalentTo,FusionLesion and (hasSpecificLocation some Joint)).
+predicate(Ankylosis,SubClassOf,FusionLesion).
+predicate(Anonymous-133,is,Class).
+predicate(Anonymous-133,EquivalentTo,InflammationLesion and (isSpecificConsequenceOf some).
+predicate(Anonymous-133,EquivalentTo,(AllergyProcess and (isSpecificConsequenceOf some TreponemaPallidumAntigen)))).
+predicate(Anonymous-133,SubClassOf,InflammationLesion).
+predicate(Anonymous-565,is,Class).
+predicate(Anonymous-565,EquivalentTo,ThrombusLesion and (hasSpecificLocation some ValveInHeart)).
+predicate(Anonymous-565,SubClassOf,ThrombusLesion).
+predicate(Anonymous-736,is,Class).
+predicate(Anonymous-736,SubClassOf,PathologicalBodyStructure).
+predicate(AnteriorUvea,is,Class).
+predicate(AnteriorUveitis,is,Class).
+predicate(AnteriorUveitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some AnteriorUvea)).
+predicate(AnteriorUveitis,SubClassOf,InflammationLesion).
+predicate(AnteriorVaginalWall,is,Class).
+predicate(AntibioticAssociatedColitis,is,Class).
+predicate(AntibioticAssociatedColitis,SubClassOf,ColitisLesion).
+predicate(Anus,is,Class).
+predicate(Aorta,is,Class).
+predicate(AorticAneurysm,is,Class).
+predicate(AorticAneurysm,SubClassOf,VascularDilatationLesion).
+predicate(AorticAtresia,is,Class).
+predicate(AorticAtresia,EquivalentTo,AgenesisLesion and (hasSpecificLocation some AorticOrifice)).
+predicate(AorticAtresia,SubClassOf,AgenesisLesion).
+predicate(AorticCoarctation,is,Class).
+predicate(AorticCoarctation,EquivalentTo,Stricture and (hasAcquisitionMode some).
+predicate(AorticCoarctation,EquivalentTo,(AcquisitionMode and (hasAbsoluteState some congenital))) and (hasSpecificLocation some Aorta)).
+predicate(AorticCoarctation,SubClassOf,Stricture).
+predicate(AorticOrifice,is,Class).
+predicate(AorticRoot,is,Class).
+predicate(AorticTunnel,is,Class).
+predicate(AorticTunnel,SubClassOf,NAMEDCardiovascularPathology).
+predicate(AorticValve,is,Class).
+predicate(AorticValveStenosisLesion,is,Class).
+predicate(AorticValveStenosisLesion,EquivalentTo,Stricture and (hasSpecificLocation some AorticValve)).
+predicate(AorticValveStenosisLesion,SubClassOf,Stricture).
+predicate(AorticValveStenosisLesionWithInsufficiency,is,Class).
+predicate(AorticValveStenosisLesionWithInsufficiency,SubClassOf,AorticValveStenosisLesion).
+predicate(AorticVascularRing,is,Class).
+predicate(AorticVascularRing,SubClassOf,NAMEDCardiovascularPathology).
+predicate(Aortitis,is,Class).
+predicate(Aortitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Aorta)).
+predicate(Aortitis,SubClassOf,InflammationLesion).
+predicate(AphthousUlcer,is,Class).
+predicate(AphthousUlcer,EquivalentTo,UlceratingLesion and (hasLocation some MucousMembrane) and (hasSize some smallSize)).
+predicate(AphthousUlcer,SubClassOf,UlceratingLesion).
+predicate(AphthousUlcerInMouth,is,Class).
+predicate(AphthousUlcerInMouth,EquivalentTo,UlceratingLesion and (hasSize some smallSize) and (hasSpecificLocation some SectionOfOralMucosa)).
+predicate(AphthousUlcerInMouth,SubClassOf,UlceratingLesion).
+predicate(ApicalPeriodontitis,is,Class).
+predicate(ApicalPeriodontitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some PeriapicalRegionOfTooth)).
+predicate(ApicalPeriodontitis,SubClassOf,InflammationLesion).
+predicate(AplasticLesion,is,Class).
+predicate(AplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(AppearanceState,is,Class).
+predicate(AppearanceState,SubClassOf,MorphologyState).
+predicate(Appendicitis,is,Class).
+predicate(Appendicitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some AppendixVermiformis)).
+predicate(Appendicitis,SubClassOf,InflammationLesion).
+predicate(AppendixVermiformis,is,Class).
+predicate(Appointment,is,Class).
+predicate(Appointment,SubClassOf,LogicalStructure).
+predicate(Arm,is,Class).
+predicate(ArmOedemaSymptom,is,Class).
+predicate(ArmOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(ArterialAneurysm,is,Class).
+predicate(ArterialAneurysm,SubClassOf,VascularDilatationLesion).
+predicate(ArterialThrombosis,is,Class).
+predicate(ArterialThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some Artery)).
+predicate(ArterialThrombosis,SubClassOf,ThrombusLesion).
+predicate(ArteriosclerosisLesion,is,Class).
+predicate(ArteriosclerosisLesion,EquivalentTo,SclerosisLesion and (hasSpecificLocation some IntimaOfArtery)).
+predicate(ArteriosclerosisLesion,SubClassOf,SclerosisLesion).
+predicate(Arteritis,is,Class).
+predicate(Arteritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Artery)).
+predicate(Arteritis,SubClassOf,InflammationLesion).
+predicate(Artery,is,Class).
+predicate(Arthritis,is,Class).
+predicate(Arthritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Joint)).
+predicate(Arthritis,SubClassOf,InflammationLesion).
+predicate(Atheroma,is,Class).
+predicate(Atheroma,SubClassOf,ArteriosclerosisLesion).
+predicate(Atlas,is,Class).
+predicate(AtresiaLesion,is,Class).
+predicate(AtresiaLesion,EquivalentTo,AgenesisLesion and (hasSpecificLocation some TubularBodyStructure)).
+predicate(AtresiaLesion,SubClassOf,AgenesisLesion).
+predicate(AtresiaOfIris,is,Class).
+predicate(AtresiaOfIris,EquivalentTo,AgenesisLesion and (hasSpecificLocation some PupilOfEye)).
+predicate(AtresiaOfIris,SubClassOf,AgenesisLesion).
+predicate(AtresicBreast,is,Class).
+predicate(AtresicBreast,EquivalentTo,AgenesisLesion and (hasSpecificLocation some LactiferousDuct)).
+predicate(AtresicBreast,SubClassOf,AgenesisLesion).
+predicate(AtrialAneurysm,is,Class).
+predicate(AtrialAneurysm,SubClassOf,VascularDilatationLesion).
+predicate(AtrialBeat,is,Class).
+predicate(AtrophicBreast,is,Class).
+predicate(AtrophicBreast,EquivalentTo,AtrophicLesion and (hasSpecificLocation some MammaryGland)).
+predicate(AtrophicBreast,SubClassOf,AtrophicLesion).
+predicate(AtrophicGastritis,is,Class).
+predicate(AtrophicGastritis,EquivalentTo,AtrophicLesion and (hasSpecificLocation some Stomach) and (isSpecificImmediateConsequenceOf some).
+predicate(AtrophicGastritis,EquivalentTo,(ChronicInflammation and (hasSpecificLocation some Stomach)))).
+predicate(AtrophicGastritis,SubClassOf,AtrophicLesion).
+predicate(AtrophicGlossitis,is,Class).
+predicate(AtrophicGlossitis,SubClassOf,Glossitis).
+predicate(AtrophicLesion,is,Class).
+predicate(AtrophicLesion,SubClassOf,PathologicalBodyStructure).
+predicate(AtrophicVaginitis,is,Class).
+predicate(AtrophicVaginitis,SubClassOf,VaginalInflammation).
+predicate(AtrophyOfPapillaryMuscle,is,Class).
+predicate(AtrophyOfPapillaryMuscle,EquivalentTo,AtrophicLesion and (hasSpecificLocation some PapillaryMuscle)).
+predicate(AtrophyOfPapillaryMuscle,SubClassOf,AtrophicLesion).
+predicate(AuralDischarge,is,Class).
+predicate(AuralDischarge,EquivalentTo,DischargeLesion and (hasUniqueAssociatedProcess some).
+predicate(AuralDischarge,EquivalentTo,(Discharge and (hasUniqueAssociatedDisplacement some).
+predicate(AuralDischarge,EquivalentTo,(Displacement and (isDisplacementFrom some ExternalAuditoryMeatus)))))).
+predicate(AuralDischarge,SubClassOf,DischargeLesion).
+predicate(AuralOedemaSymptom,is,Class).
+predicate(AuralOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(AuthorisationStructure,is,Class).
+predicate(AuthorisationStructure,SubClassOf,LogicalStructure).
+predicate(AutonomicNerveFibre,is,Class).
+predicate(BacterialColitis,is,Class).
+predicate(BacterialColitis,SubClassOf,ColitisLesion).
+predicate(BacterialEncephalitis,is,Class).
+predicate(BacterialEncephalitis,SubClassOf,Encephalitis).
+predicate(BacterialEndocarditis,is,Class).
+predicate(BacterialEndocarditis,SubClassOf,Endocarditis).
+predicate(BacterialInfectionLesion,is,Class).
+predicate(BacterialInfectionLesion,EquivalentTo,InfectionLesion and (isSpecificConsequenceOf some Bacterium)).
+predicate(BacterialInfectionLesion,SubClassOf,InfectionLesion).
+predicate(BacterialJointInfection,is,Class).
+predicate(BacterialJointInfection,SubClassOf,BacterialInfectionLesion).
+predicate(BacterialLaryngitis,is,Class).
+predicate(BacterialLaryngitis,SubClassOf,Laryngitis).
+predicate(BacterialLymphoidTonsillitis,is,Class).
+predicate(BacterialLymphoidTonsillitis,SubClassOf,LymphoidTonsillitis).
+predicate(BacterialNephritis,is,Class).
+predicate(BacterialNephritis,SubClassOf,Nephritis).
+predicate(BacterialPharyngitis,is,Class).
+predicate(BacterialPharyngitis,SubClassOf,Pharyngitis).
+predicate(BacterialRenalInfectionLesion,is,Class).
+predicate(BacterialRenalInfectionLesion,SubClassOf,RenalInfectionLesion).
+predicate(BacterialSkinLesion,is,Class).
+predicate(BacterialSkinLesion,SubClassOf,BacterialInfectionLesion).
+predicate(BacterialVaginosis,is,Class).
+predicate(BacterialVaginosis,EquivalentTo,InfectionLesion and (hasSpecificLocation some Vagina) and (isSpecificImmediateConsequenceOf some GardnerellaVaginalis)).
+predicate(BacterialVaginosis,SubClassOf,InfectionLesion).
+predicate(Bacterium,is,Class).
+predicate(Balanitis,is,Class).
+predicate(Balanitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some GlansPenis)).
+predicate(Balanitis,SubClassOf,InflammationLesion).
+predicate(Bartholinitis,is,Class).
+predicate(Bartholinitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some BartholinsGland)).
+predicate(Bartholinitis,SubClassOf,InflammationLesion).
+predicate(BartholinsGland,is,Class).
+predicate(BasalGangliaDegeneration,is,Class).
+predicate(BasalGangliaDegeneration,EquivalentTo,DegenerativeLesion and (hasSpecificLocation some BasalNucleus)).
+predicate(BasalGangliaDegeneration,SubClassOf,DegenerativeLesion).
+predicate(BasalNucleus,is,Class).
+predicate(BasalSkullFracture,is,Class).
+predicate(BasalSkullFracture,EquivalentTo,Fracture and (LocativeAttribute some BaseOfSkull)).
+predicate(BasalSkullFracture,SubClassOf,Fracture).
+predicate(BaseOfSkull,is,Class).
+predicate(BeeSting,is,Class).
+predicate(BeeSting,SubClassOf,StingLesion).
+predicate(BendLesion,is,Class).
+predicate(BendLesion,SubClassOf,PathologicalBodyStructure).
+predicate(BenignBreastNodule,is,Class).
+predicate(BenignBreastNodule,SubClassOf,BenignMammaryNeoplasia).
+predicate(BenignEndometrialNeoplasia,is,Class).
+predicate(BenignEndometrialNeoplasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some Endometrium)).
+predicate(BenignEndometrialNeoplasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignGenitalTractNeoplasia,is,Class).
+predicate(BenignGenitalTractNeoplasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some SexSpecificGenitoUrinarySystem)).
+predicate(BenignGenitalTractNeoplasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignHepaticNeoplasia,is,Class).
+predicate(BenignHepaticNeoplasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some Liver)).
+predicate(BenignHepaticNeoplasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignMammaryNeoplasia,is,Class).
+predicate(BenignMammaryNeoplasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some MammaryGland)).
+predicate(BenignMammaryNeoplasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignMyometrialNeoplasia,is,Class).
+predicate(BenignMyometrialNeoplasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some Myometrium)).
+predicate(BenignMyometrialNeoplasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignNeoplasiaOfUrinaryBladder,is,Class).
+predicate(BenignNeoplasiaOfUrinaryBladder,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some UrinaryBladder)).
+predicate(BenignNeoplasiaOfUrinaryBladder,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignNeoplasticLesion,is,Class).
+predicate(BenignNeoplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(BenignOvarianNeoplasia,is,Class).
+predicate(BenignOvarianNeoplasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some Ovary)).
+predicate(BenignOvarianNeoplasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignPenileNeoplasia,is,Class).
+predicate(BenignPenileNeoplasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some Penis)).
+predicate(BenignPenileNeoplasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignProstaticHypertrophy,is,Class).
+predicate(BenignProstaticHypertrophy,SubClassOf,ProstaticHypertrophy).
+predicate(BenignProstaticNeoplasia,is,Class).
+predicate(BenignProstaticNeoplasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some ProstateGland)).
+predicate(BenignProstaticNeoplasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignRenalNeoplpasia,is,Class).
+predicate(BenignRenalNeoplpasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some Kidney)).
+predicate(BenignRenalNeoplpasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignUrinaryPapilloma,is,Class).
+predicate(BenignUrinaryPapilloma,SubClassOf,BenignUrinaryTractTumour).
+predicate(BenignUrinaryTractTumour,is,Class).
+predicate(BenignUrinaryTractTumour,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some UrinaryTract)).
+predicate(BenignUrinaryTractTumour,SubClassOf,BenignNeoplasticLesion).
+predicate(BenignUterineNeoplasia,is,Class).
+predicate(BenignUterineNeoplasia,EquivalentTo,BenignNeoplasticLesion and (LocativeAttribute some Uterus)).
+predicate(BenignUterineNeoplasia,SubClassOf,BenignNeoplasticLesion).
+predicate(BerryAneurysm,is,Class).
+predicate(BerryAneurysm,SubClassOf,VascularDilatationLesion).
+predicate(BerryAneurysmOfCircleOfWillis,is,Class).
+predicate(BerryAneurysmOfCircleOfWillis,SubClassOf,VascularDilatationLesion).
+predicate(BilateralRenalArteryStenosis,is,Class).
+predicate(BilateralRenalArteryStenosis,SubClassOf,RenalArteryStenosis).
+predicate(BileDuct,is,Class).
+predicate(BileDuctLumen,is,Class).
+predicate(BiliaryAtresia,is,Class).
+predicate(BiliaryAtresia,EquivalentTo,AgenesisLesion and (hasSpecificLocation some BileDuctLumen)).
+predicate(BiliaryAtresia,SubClassOf,AgenesisLesion).
+predicate(BiliaryObstruction,is,Class).
+predicate(BiliaryObstruction,EquivalentTo,ObstructingLesion and (hasSpecificLocation some BileDuct)).
+predicate(BiliaryObstruction,SubClassOf,ObstructingLesion).
+predicate(BladderCancer,is,Class).
+predicate(BladderCancer,EquivalentTo,MalignantCancer and (LocativeAttribute some UrinaryBladder)).
+predicate(BladderCancer,SubClassOf,MalignantCancer).
+predicate(BladderTumour,is,Class).
+predicate(BladderTumour,EquivalentTo,NeoplasticLesion and (LocativeAttribute some UrinaryBladder)).
+predicate(BladderTumour,SubClassOf,NeoplasticLesion).
+predicate(Blepharitis,is,Class).
+predicate(Blepharitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Palpebrum)).
+predicate(Blepharitis,SubClassOf,InflammationLesion).
+predicate(Blepharoconjunctivitis,is,Class).
+predicate(Blepharoconjunctivitis,EquivalentTo,InflammationLesion and (hasMultipleLocation some Conjunctiva) and (hasMultipleLocation some Palpebrum)).
+predicate(Blepharoconjunctivitis,SubClassOf,InflammationLesion).
+predicate(BlisterSymptom,is,Class).
+predicate(BlisterSymptom,SubClassOf,SkinBulla).
+predicate(BloodCell,is,Class).
+predicate(BloodClot,is,Class).
+predicate(BloodVessel,is,Class).
+predicate(BodyCavity,is,Class).
+predicate(BodyStructure,is,Class).
+predicate(BodyWall,is,Class).
+predicate(Bone,is,Class).
+predicate(BoneMarrowAplasia,is,Class).
+predicate(BoneMarrowAplasia,EquivalentTo,AplasticLesion and (hasSpecificLocation some BoneMarrowStructure)).
+predicate(BoneMarrowAplasia,SubClassOf,AplasticLesion).
+predicate(BoneMarrowDysplasia,is,Class).
+predicate(BoneMarrowDysplasia,EquivalentTo,AbnormalGrowth and (hasLocation some BoneMarrowStructure)).
+predicate(BoneMarrowDysplasia,SubClassOf,AbnormalGrowth).
+predicate(BoneMarrowFibrosis,is,Class).
+predicate(BoneMarrowFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some BoneMarrowStructure)).
+predicate(BoneMarrowFibrosis,SubClassOf,FibrosisLesion).
+predicate(BoneMarrowHyperplasia,is,Class).
+predicate(BoneMarrowHyperplasia,EquivalentTo,HyperplasticLesion and (hasSpecificLocation some BoneMarrowStructure)).
+predicate(BoneMarrowHyperplasia,SubClassOf,HyperplasticLesion).
+predicate(BoneMarrowHypoplasia,is,Class).
+predicate(BoneMarrowHypoplasia,EquivalentTo,HypoplasticLesion and (hasSpecificLocation some BoneMarrowStructure)).
+predicate(BoneMarrowHypoplasia,SubClassOf,HypoplasticLesion).
+predicate(BoneMarrowStructure,is,Class).
+predicate(BoneSinus,is,Class).
+predicate(BonyFracture,is,Class).
+predicate(BonyFracture,EquivalentTo,Fracture and (LocativeAttribute some Bone)).
+predicate(BonyFracture,SubClassOf,Fracture).
+predicate(BonyMetastases,is,Class).
+predicate(BonyMetastases,EquivalentTo,MetastasesLesion and (hasSpecificLocation some Bone)).
+predicate(BonyMetastases,SubClassOf,MetastasesLesion).
+predicate(BonyTraumaStructure,is,Class).
+predicate(BonyTraumaStructure,SubClassOf,PathologicalBodyStructure).
+predicate(Brain,is,Class).
+predicate(BrainAtrophy,is,Class).
+predicate(BrainAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some Brain)).
+predicate(BrainAtrophy,SubClassOf,AtrophicLesion).
+predicate(BrainDamage,is,Class).
+predicate(BrainDamage,EquivalentTo,DamageLesion and (LocativeAttribute some Brain)).
+predicate(BrainDamage,SubClassOf,DamageLesion).
+predicate(BrainIschaemia,is,Class).
+predicate(BrainIschaemia,EquivalentTo,IschaemicLesion and (hasSpecificLocation some Brain)).
+predicate(BrainIschaemia,SubClassOf,IschaemicLesion,).
+predicate(BrainIschaemia,SubClassOf,isCausallyLinkedTo some CerebrovascularPathology).
+predicate(BrainTumour,is,Class).
+predicate(BrainTumour,EquivalentTo,NeoplasticLesion and (LocativeAttribute some Brain)).
+predicate(BrainTumour,SubClassOf,NeoplasticLesion).
+predicate(BreakingLesion,is,Class).
+predicate(BreakingLesion,SubClassOf,PathologicalBodyStructure).
+predicate(BronchialAtresia,is,Class).
+predicate(BronchialAtresia,EquivalentTo,AgenesisLesion and (hasSpecificLocation some BronchialLumen)).
+predicate(BronchialAtresia,SubClassOf,AgenesisLesion).
+predicate(BronchialLumen,is,Class).
+predicate(BronchialOedema,is,Class).
+predicate(BronchialOedema,EquivalentTo,Oedema and (hasSpecificLocation some Bronchus)).
+predicate(BronchialOedema,SubClassOf,Oedema).
+predicate(Bronchiole,is,Class).
+predicate(Bronchiolitis,is,Class).
+predicate(Bronchiolitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Bronchiole)).
+predicate(Bronchiolitis,SubClassOf,InflammationLesion).
+predicate(Bronchitis,is,Class).
+predicate(Bronchitis,EquivalentTo,InflammationLesion and (LocativeAttribute some Bronchus)).
+predicate(Bronchitis,SubClassOf,InflammationLesion).
+predicate(Bronchus,is,Class).
+predicate(BrownAtrophicLesion,is,Class).
+predicate(BrownAtrophicLesion,SubClassOf,PathologicalBodyStructure).
+predicate(BuccalLeukoplakia,is,Class).
+predicate(BuccalLeukoplakia,EquivalentTo,KeratosisLesion and (hasSpecificLocation some BuccalMucosa)).
+predicate(BuccalLeukoplakia,SubClassOf,KeratosisLesion).
+predicate(BuccalMucosa,is,Class).
+predicate(Bulla,is,Class).
+predicate(Bulla,SubClassOf,PathologicalBodyStructure).
+predicate(BunyaVirusEncephalitis,is,Class).
+predicate(BunyaVirusEncephalitis,SubClassOf,Encephalitis).
+predicate(Burn,is,Class).
+predicate(Burn,SubClassOf,PathologicalBodyStructure).
+predicate(BurnSymptom,is,Class).
+predicate(BurnSymptom,EquivalentTo,Burn and (playsConsultationRole some SymptomRole)).
+predicate(BurnSymptom,SubClassOf,Burn).
+predicate(Bursa,is,Class).
+predicate(Bursitis,is,Class).
+predicate(Bursitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Bursa)).
+predicate(Bursitis,SubClassOf,InflammationLesion).
+predicate(BurstFracture,is,Class).
+predicate(BurstFracture,SubClassOf,LongBoneFracture).
+predicate(ButterflyFracture,is,Class).
+predicate(ButterflyFracture,SubClassOf,LongBoneFracture).
+predicate(CalcificationLesion,is,Class).
+predicate(CalcificationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Calf,is,Class).
+predicate(CalfMuscleWastingLesion,is,Class).
+predicate(CalfMuscleWastingLesion,EquivalentTo,AtrophicLesion and (hasSpecificLocation some).
+predicate(CalfMuscleWastingLesion,EquivalentTo,(StriatedMuscle and (IsDivisionOf some Calf)))).
+predicate(CalfMuscleWastingLesion,SubClassOf,AtrophicLesion).
+predicate(Callus,is,Class).
+predicate(Callus,SubClassOf,HyperkeratoticSkinLesion).
+predicate(Candida,is,Class).
+predicate(Candidiasis,is,Class).
+predicate(Candidiasis,EquivalentTo,InfectionLesion and (isSpecificImmediateConsequenceOf some Candida)).
+predicate(Candidiasis,SubClassOf,InfectionLesion).
+predicate(CapillaryEctasia,is,Class).
+predicate(CapillaryEctasia,SubClassOf,PathologicalBodyStructure).
+predicate(CarcinoidTumour,is,Class).
+predicate(CarcinoidTumour,EquivalentTo,NeoplasticLesion and (hasFunction some).
+predicate(CarcinoidTumour,EquivalentTo,(Secretion and (actsOn some Serotonin)))).
+predicate(CarcinoidTumour,SubClassOf,NeoplasticLesion).
+predicate(CarcinomaInSituLesion,is,Class).
+predicate(CarcinomaInSituLesion,SubClassOf,PathologicalBodyStructure).
+predicate(CarcinomatousInvasionLesion,is,Class).
+predicate(CarcinomatousInvasionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(CardiacConduit,is,Class).
+predicate(CardiacConduit,SubClassOf,NAMEDCardiovascularPathology).
+predicate(CardiacHypertrophy,is,Class).
+predicate(CardiacHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some Heart)).
+predicate(CardiacHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(CardiacLesion,is,Class).
+predicate(CardiacLesion,SubClassOf,PathologicalBodyStructure).
+predicate(CardiacMuscle,is,Class).
+predicate(CardiacValvulitis,is,Class).
+predicate(CardiacValvulitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some ValveInHeart)).
+predicate(CardiacValvulitis,SubClassOf,InflammationLesion).
+predicate(CardiacVegetation,is,Class).
+predicate(CardiacVegetation,SubClassOf,ThrombusLesion,).
+predicate(CardiacVegetation,SubClassOf,hasSpecificLocation some ValveInHeart).
+predicate(CardiovascularLesion,is,Class).
+predicate(CardiovascularLesion,SubClassOf,PathologicalBodyStructure).
+predicate(CardiovascularSystem,is,Class).
+predicate(Carditis,is,Class).
+predicate(Carditis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Heart)).
+predicate(Carditis,SubClassOf,InflammationLesion).
+predicate(CarotidArtery,is,Class).
+predicate(CarotidArteryStenosis,is,Class).
+predicate(CarotidArteryStenosis,EquivalentTo,Stricture and (hasSpecificLocation some CarotidArtery)).
+predicate(CarotidArteryStenosis,SubClassOf,Stricture).
+predicate(CarotidArteryThrombus,is,Class).
+predicate(CarotidArteryThrombus,EquivalentTo,ThrombusLesion and (hasSpecificLocation some CarotidArtery)).
+predicate(CarotidArteryThrombus,SubClassOf,ThrombusLesion).
+predicate(CartilagenousBodyStructure,is,Class).
+predicate(CaseatingLesion,is,Class).
+predicate(CaseatingLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Catarrh,is,Class).
+predicate(Catarrh,EquivalentTo,InflammationLesion and (hasImmediateConsequence some Phlegm) and (hasLocation some MucousMembrane)).
+predicate(Catarrh,SubClassOf,InflammationLesion).
+predicate(CavernousFibrosis,is,Class).
+predicate(CavernousFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some CorpusCavernosum)).
+predicate(CavernousFibrosis,SubClassOf,FibrosisLesion).
+predicate(CavernousSinusThrombosis,is,Class).
+predicate(CavernousSinusThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some CavernousVenousSinus)).
+predicate(CavernousSinusThrombosis,SubClassOf,ThrombusLesion).
+predicate(CavernousVenousSinus,is,Class).
+predicate(Cell,is,Class).
+predicate(CellDifferentiation,is,Class).
+predicate(CellMorphology,is,Class).
+predicate(CellMorphologyState,is,Class).
+predicate(CellMorphologyState,SubClassOf,HistologicalAppearanceState).
+predicate(CellulitisLesion,is,Class).
+predicate(CellulitisLesion,EquivalentTo,InflammationLesion and (hasSpecificLocation some ConnectiveTissue)).
+predicate(CellulitisLesion,SubClassOf,InflammationLesion).
+predicate(CementalCaries,is,Class).
+predicate(CementalCaries,SubClassOf,DentalCaries).
+predicate(CerebellarAtrophy,is,Class).
+predicate(CerebellarAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some Cerebellum)).
+predicate(CerebellarAtrophy,SubClassOf,AtrophicLesion).
+predicate(CerebellarIschaemia,is,Class).
+predicate(CerebellarIschaemia,EquivalentTo,IschaemicLesion and (hasSpecificLocation some Cerebellum)).
+predicate(CerebellarIschaemia,SubClassOf,IschaemicLesion).
+predicate(Cerebellum,is,Class).
+predicate(CerebralArteriosclerosis,is,Class).
+predicate(CerebralArteriosclerosis,SubClassOf,ArteriosclerosisLesion).
+predicate(CerebralArteritis,is,Class).
+predicate(CerebralArteritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some).
+predicate(CerebralArteritis,EquivalentTo,(Artery and (serves some Brain)))).
+predicate(CerebralArteritis,SubClassOf,InflammationLesion).
+predicate(CerebralAtrophy,is,Class).
+predicate(CerebralAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some Telencephalon)).
+predicate(CerebralAtrophy,SubClassOf,AtrophicLesion).
+predicate(CerebralInfarct,is,Class).
+predicate(CerebralInfarct,EquivalentTo,DamageLesion and (hasSpecificLocation some Telencephalon)).
+predicate(CerebralInfarct,SubClassOf,DamageLesion).
+predicate(CerebralIschaemia,is,Class).
+predicate(CerebralIschaemia,EquivalentTo,IschaemicLesion and (hasSpecificLocation some Telencephalon)).
+predicate(CerebralIschaemia,SubClassOf,IschaemicLesion).
+predicate(CerebralIschaemicAttack,is,Class).
+predicate(CerebralIschaemicAttack,SubClassOf,CerebralIschaemia).
+predicate(CerebralOedema,is,Class).
+predicate(CerebralOedema,EquivalentTo,Oedema and (hasSpecificLocation some Brain)).
+predicate(CerebralOedema,SubClassOf,Oedema).
+predicate(CerebrovascularIschaemia,is,Class).
+predicate(CerebrovascularIschaemia,EquivalentTo,IschaemicLesion and (hasLocation some Brain) and (isConsequenceOf some CerebrovascularPathology)).
+predicate(CerebrovascularIschaemia,SubClassOf,IschaemicLesion).
+predicate(CerebrovascularPathology,is,Class).
+predicate(Cervicitis,is,Class).
+predicate(Cervicitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some CervixUteri)).
+predicate(Cervicitis,SubClassOf,InflammationLesion).
+predicate(CervixUteri,is,Class).
+predicate(Cheilitis,is,Class).
+predicate(Cheilitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Lip)).
+predicate(Cheilitis,SubClassOf,InflammationLesion).
+predicate(CheilitisGrandularis,is,Class).
+predicate(CheilitisGrandularis,EquivalentTo,InflammationLesion and (hasLocation some).
+predicate(CheilitisGrandularis,EquivalentTo,(MinorSalivaryGland and (isStructuralComponentOf some LowerLip)))).
+predicate(CheilitisGrandularis,SubClassOf,InflammationLesion).
+predicate(ChemicalBurn,is,Class).
+predicate(ChemicalBurn,EquivalentTo,Burn and (isSpecificImmediateConsequenceOf some ChemicalSubstance)).
+predicate(ChemicalBurn,SubClassOf,Burn).
+predicate(ChemicalSubstance,is,Class).
+predicate(ChoanalAtresia,is,Class).
+predicate(ChoanalAtresia,SubClassOf,AgenesisLesion).
+predicate(Choloepidae,is,Class).
+predicate(Choloepidae,SubClassOf,Edentata).
+predicate(Chondritis,is,Class).
+predicate(Chondritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some CartilagenousBodyStructure)).
+predicate(Chondritis,SubClassOf,InflammationLesion).
+predicate(ChordaeTendinae,is,Class).
+predicate(ChronicBronchiolitis,is,Class).
+predicate(ChronicBronchiolitis,SubClassOf,Bronchiolitis).
+predicate(ChronicBronchitis,is,Class).
+predicate(ChronicBronchitis,SubClassOf,Bronchitis).
+predicate(ChronicDentalCaries,is,Class).
+predicate(ChronicDentalCaries,SubClassOf,DentalCaries).
+predicate(ChronicFeature,is,Class).
+predicate(ChronicGastricUlcer,is,Class).
+predicate(ChronicGastricUlcer,SubClassOf,UlcerOfStomach).
+predicate(ChronicGastritis,is,Class).
+predicate(ChronicGastritis,SubClassOf,GastritisLesion).
+predicate(ChronicHyperplasticPulpitis,is,Class).
+predicate(ChronicHyperplasticPulpitis,SubClassOf,PulpitisOfTooth).
+predicate(ChronicInflammation,is,Class).
+predicate(ChronicInflammation,EquivalentTo,InflammationLesion and (hasChronicity some).
+predicate(ChronicInflammation,EquivalentTo,(Chronicity and (hasAbsoluteState some chronic)))).
+predicate(ChronicInflammation,SubClassOf,InflammationLesion).
+predicate(ChronicOsteomyelitis,is,Class).
+predicate(ChronicOsteomyelitis,SubClassOf,Osteomyelitis).
+predicate(ChronicPancreatitis,is,Class).
+predicate(ChronicPancreatitis,SubClassOf,Pancreatitis).
+predicate(ChronicPericarditis,is,Class).
+predicate(ChronicPericarditis,SubClassOf,Pericarditis).
+predicate(ChronicPulpitisOfTooth,is,Class).
+predicate(ChronicPulpitisOfTooth,SubClassOf,PulpitisOfTooth).
+predicate(ChronicRhinitis,is,Class).
+predicate(ChronicRhinitis,EquivalentTo,InflammationLesion and (hasChronicity some).
+predicate(ChronicRhinitis,EquivalentTo,(Chronicity and (hasAbsoluteState some chronic))) and (hasSpecificLocation some).
+predicate(ChronicRhinitis,EquivalentTo,(MucousMembrane and (isSpecificLayerOf some Nose)))).
+predicate(ChronicRhinitis,SubClassOf,InflammationLesion).
+predicate(ChronicValvulitis,is,Class).
+predicate(ChronicValvulitis,EquivalentTo,InflammationLesion and (hasChronicity some).
+predicate(ChronicValvulitis,EquivalentTo,(Chronicity and (hasAbsoluteState some chronic))) and (hasSpecificLocation some ValveInHeart)).
+predicate(ChronicValvulitis,SubClassOf,InflammationLesion).
+predicate(Chronicity,is,Class).
+predicate(CiliaryBody,is,Class).
+predicate(CisternaChylii,is,Class).
+predicate(CleanlinessState,is,Class).
+predicate(CleanlinessState,SubClassOf,MorphologyState).
+predicate(ClinicalSpeciality,is,Class).
+predicate(ClinicallyAnalogous,is,Class).
+predicate(ClinicallyAnalogous,EquivalentTo,DiseaseAnalogy and (hasAbsoluteState some analogousDiseaseAppearence)).
+predicate(ClinicallyAnalogous,SubClassOf,DiseaseAnalogy).
+predicate(ClosedFracture,is,Class).
+predicate(ClosedFracture,EquivalentTo,Fracture and (hasSurgicalOpenClosedness some).
+predicate(ClosedFracture,EquivalentTo,(SurgicalOpenClosedness and (hasAbsoluteState some surgicallyClosed)))).
+predicate(ClosedFracture,SubClassOf,Fracture).
+predicate(ColitisLesion,is,Class).
+predicate(ColitisLesion,EquivalentTo,InflammationLesion and (hasSpecificLocation some Colon)).
+predicate(ColitisLesion,SubClassOf,InflammationLesion).
+predicate(Colon,is,Class).
+predicate(ColonAndRectum,is,Class).
+predicate(ColorectalCancer,is,Class).
+predicate(ColorectalCancer,EquivalentTo,MalignantCancer and (LocativeAttribute some ColonAndRectum)).
+predicate(ColorectalCancer,SubClassOf,MalignantCancer).
+predicate(Colour,is,Class).
+predicate(ColourState,is,Class).
+predicate(ColourState,SubClassOf,MorphologyState).
+predicate(ComminutedFracture,is,Class).
+predicate(ComminutedFracture,EquivalentTo,Fracture and (hasFractureComplexity some).
+predicate(ComminutedFracture,EquivalentTo,(FractureComplexity and (hasAbsoluteState some comminutedFracture)))).
+predicate(ComminutedFracture,SubClassOf,Fracture).
+predicate(ComminutedLongboneFracture,is,Class).
+predicate(ComminutedLongboneFracture,SubClassOf,LongBoneFracture).
+predicate(ComminutedSkullFracture,is,Class).
+predicate(ComminutedSkullFracture,SubClassOf,SkullFracture).
+predicate(Completeness,is,Class).
+predicate(ComponentOfSkinAsOrgan,is,Class).
+predicate(CompoundFracture,is,Class).
+predicate(CompoundFracture,EquivalentTo,Fracture and (hasSurgicalOpenClosedness some).
+predicate(CompoundFracture,EquivalentTo,(SurgicalOpenClosedness and (hasAbsoluteState some surgicallyOpen)))).
+predicate(CompoundFracture,SubClassOf,Fracture).
+predicate(CompoundSkullFracture,is,Class).
+predicate(CompoundSkullFracture,SubClassOf,CompoundFracture).
+predicate(Compressing,is,Class).
+predicate(CompressionLesion,is,Class).
+predicate(CompressionLesion,EquivalentTo,ObstructingLesion and (isSpecificImmediateConsequenceOf some Compressing)).
+predicate(CompressionLesion,SubClassOf,ObstructingLesion).
+predicate(Concept,is,Class).
+predicate(Concept,SubClassOf,PsychologicalConstruct).
+predicate(ConductionFibres,is,Class).
+predicate(CongenitalAbdominalMuscleAgenesis,is,Class).
+predicate(CongenitalAbdominalMuscleAgenesis,EquivalentTo,AgenesisLesion and (hasSpecificLocation some AbdominalMuscle)).
+predicate(CongenitalAbdominalMuscleAgenesis,SubClassOf,AgenesisLesion).
+predicate(CongenitalFusionLesionOfDigit,is,Class).
+predicate(CongenitalFusionLesionOfDigit,EquivalentTo,FusionLesion and (hasAcquisitionMode some).
+predicate(CongenitalFusionLesionOfDigit,EquivalentTo,(AcquisitionMode and (hasAbsoluteState some congenital))) and (hasSpecificLocation some Digit)).
+predicate(CongenitalFusionLesionOfDigit,SubClassOf,FusionLesion,).
+predicate(CongenitalFusionLesionOfDigit,SubClassOf,hasAbnormalityStatus some variant).
+predicate(CongenitalVaginalAtresia,is,Class).
+predicate(CongenitalVaginalAtresia,EquivalentTo,AgenesisLesion and (hasSpecificLocation some VaginalLumen)).
+predicate(CongenitalVaginalAtresia,SubClassOf,AgenesisLesion).
+predicate(CongenitallyPathologicalAnatomy,is,Class).
+predicate(CongenitallyPathologicalAnatomy,SubClassOf,PathologicalBodyStructure).
+predicate(Conjunctiva,is,Class).
+predicate(ConjunctivalDamage,is,Class).
+predicate(ConjunctivalDamage,EquivalentTo,TraumaticallyAcquiredLesion and (hasLocation some Conjunctiva)).
+predicate(ConjunctivalDamage,SubClassOf,TraumaticallyAcquiredLesion).
+predicate(ConjunctivalFibrosis,is,Class).
+predicate(ConjunctivalFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some Conjunctiva)).
+predicate(ConjunctivalFibrosis,SubClassOf,FibrosisLesion).
+predicate(ConjunctivalInflammation,is,Class).
+predicate(ConjunctivalInflammation,EquivalentTo,InflammationLesion and (hasSpecificLocation some Conjunctiva)).
+predicate(ConjunctivalInflammation,SubClassOf,InflammationLesion).
+predicate(ConjunctivalIrritation,is,Class).
+predicate(ConjunctivalIrritation,SubClassOf,Irritation).
+predicate(ConjunctivalOedema,is,Class).
+predicate(ConjunctivalOedema,EquivalentTo,Oedema and (hasSpecificLocation some Conjunctiva)).
+predicate(ConjunctivalOedema,SubClassOf,Oedema).
+predicate(ConnectiveTissue,is,Class).
+predicate(ConsistencyState,is,Class).
+predicate(ConsistencyState,SubClassOf,MorphologyState).
+predicate(ConsolidationLesion,is,Class).
+predicate(ConsolidationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(ConstrictivePericarditis,is,Class).
+predicate(ConstrictivePericarditis,SubClassOf,Pericarditis).
+predicate(ContractureLesion,is,Class).
+predicate(ContractureLesion,SubClassOf,PathologicalBodyStructure).
+predicate(CorPulmonale,is,Class).
+predicate(CorPulmonale,SubClassOf,RightVentricularMyocardialHypertrophy).
+predicate(Cornea,is,Class).
+predicate(CornealDamage,is,Class).
+predicate(CornealDamage,EquivalentTo,TraumaticallyAcquiredLesion and (hasLocation some Cornea)).
+predicate(CornealDamage,SubClassOf,TraumaticallyAcquiredLesion).
+predicate(CornealEpithelialErosion,is,Class).
+predicate(CornealEpithelialErosion,EquivalentTo,ErosionLesion and (hasSpecificLocation some CornealEpithelium)).
+predicate(CornealEpithelialErosion,SubClassOf,ErosionLesion).
+predicate(CornealEpithelium,is,Class).
+predicate(CornealHypertrophy,is,Class).
+predicate(CornealHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some Cornea)).
+predicate(CornealHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(CoronalSuture,is,Class).
+predicate(CoronaryArteriosclerosis,is,Class).
+predicate(CoronaryArteriosclerosis,SubClassOf,ArteriosclerosisLesion).
+predicate(CoronaryArteritis,is,Class).
+predicate(CoronaryArteritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some CoronaryArtery)).
+predicate(CoronaryArteritis,SubClassOf,InflammationLesion).
+predicate(CoronaryArtery,is,Class).
+predicate(CoronaryArteryAneurysm,is,Class).
+predicate(CoronaryArteryAneurysm,SubClassOf,VascularDilatationLesion).
+predicate(CoronaryArteryEmbolism,is,Class).
+predicate(CoronaryArteryEmbolism,EquivalentTo,EmbolismLesion and (hasSpecificLocation some CoronaryArtery)).
+predicate(CoronaryArteryEmbolism,SubClassOf,EmbolismLesion).
+predicate(CoronaryArteryRupture,is,Class).
+predicate(CoronaryArteryRupture,EquivalentTo,RupturingLesion and (hasSpecificLocation some CoronaryArtery)).
+predicate(CoronaryArteryRupture,SubClassOf,RupturingLesion).
+predicate(CoronaryArteryThrombosis,is,Class).
+predicate(CoronaryArteryThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some CoronaryArtery)).
+predicate(CoronaryArteryThrombosis,SubClassOf,ThrombusLesion).
+predicate(CoronaryBloodVessel,is,Class).
+predicate(CoronaryStricture,is,Class).
+predicate(CoronaryStricture,EquivalentTo,Stricture and (hasSpecificLocation some CoronaryArtery)).
+predicate(CoronaryStricture,SubClassOf,Stricture).
+predicate(CoronaryVascularThrombosis,is,Class).
+predicate(CoronaryVascularThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some CoronaryBloodVessel)).
+predicate(CoronaryVascularThrombosis,SubClassOf,ThrombusLesion).
+predicate(CorpusCavernosum,is,Class).
+predicate(CoxsackieVirusEncephalitis,is,Class).
+predicate(CoxsackieVirusEncephalitis,SubClassOf,Encephalitis).
+predicate(CraniocervicalFusionLesion,is,Class).
+predicate(CraniocervicalFusionLesion,EquivalentTo,FusionLesion and (isAlphaPartitiveConnectionOf some Atlas) and (isBetaPartitiveConnectionOf some OccipitalBone)).
+predicate(CraniocervicalFusionLesion,SubClassOf,FusionLesion).
+predicate(CrushWound,is,Class).
+predicate(CrushWound,SubClassOf,PathologicalBodyStructure).
+predicate(CurveLesion,is,Class).
+predicate(CurveLesion,SubClassOf,PathologicalBodyStructure).
+predicate(CutSymptom,is,Class).
+predicate(CutSymptom,EquivalentTo,Laceration and (playsConsultationRole some SymptomRole)).
+predicate(CutSymptom,SubClassOf,Laceration).
+predicate(CutaneousEpithelioma,is,Class).
+predicate(CutaneousEpithelioma,EquivalentTo,NeoplasticLesion and (hasUniqueAssociatedProcess some).
+predicate(CutaneousEpithelioma,EquivalentTo,(NeoplasticProcess and (actsOn some).
+predicate(CutaneousEpithelioma,EquivalentTo,(Cell and (isStructuralComponentOf some).
+predicate(CutaneousEpithelioma,EquivalentTo,(Epithelium and (IsDivisionOf some SkinAsOrgan)))))))).
+predicate(CutaneousEpithelioma,SubClassOf,NeoplasticLesion).
+predicate(CutaneousVasculitis,is,Class).
+predicate(CutaneousVasculitis,SubClassOf,Vasculitis).
+predicate(Cyclitis,is,Class).
+predicate(Cyclitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some CiliaryBody)).
+predicate(Cyclitis,SubClassOf,InflammationLesion).
+predicate(Cystitis,is,Class).
+predicate(Cystitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some UrinaryBladder)).
+predicate(Cystitis,SubClassOf,InflammationLesion).
+predicate(CystitisDueToInfection,is,Class).
+predicate(CystitisDueToInfection,SubClassOf,Cystitis).
+predicate(Cystocoele,is,Class).
+predicate(Cystocoele,EquivalentTo,ProlapseLesion and (hasLocation some UrinaryBladder)).
+predicate(Cystocoele,SubClassOf,ProlapseLesion,).
+predicate(Cystocoele,SubClassOf,hasSpecificLocation some AnteriorVaginalWall).
+predicate(DamageLesion,is,Class).
+predicate(DamageLesion,SubClassOf,PathologicalBodyStructure).
+predicate(DeepVein,is,Class).
+predicate(DeepVeinThrombosis,is,Class).
+predicate(DeepVeinThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some DeepVein)).
+predicate(DeepVeinThrombosis,SubClassOf,ThrombusLesion).
+predicate(DeepWound,is,Class).
+predicate(DeepWound,EquivalentTo,Wound and (hasVerticalDepth some).
+predicate(DeepWound,EquivalentTo,(VerticalDepth and (hasQuantity some).
+predicate(DeepWound,EquivalentTo,(Level and (hasMagnitude some highLevel)))))).
+predicate(DeepWound,SubClassOf,Wound).
+predicate(DeformationLesion,is,Class).
+predicate(DeformationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(DegenerationOfPapillaryMuscle,is,Class).
+predicate(DegenerationOfPapillaryMuscle,EquivalentTo,DegenerativeLesion and (hasSpecificLocation some PapillaryMuscle)).
+predicate(DegenerationOfPapillaryMuscle,SubClassOf,DegenerativeLesion).
+predicate(DegenerativeAtrophicLesion,is,Class).
+predicate(DegenerativeAtrophicLesion,SubClassOf,PathologicalBodyStructure).
+predicate(DegenerativeLesion,is,Class).
+predicate(DegenerativeLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Demineralization,is,Class).
+predicate(DemineralizationLesion,is,Class).
+predicate(DemineralizationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(DentalCaries,is,Class).
+predicate(DentalCaries,EquivalentTo,DemineralizationLesion and (hasUniqueAssociatedProcess some).
+predicate(DentalCaries,EquivalentTo,(Demineralization and (actsSpecificallyOn some DentalHardTissue)))).
+predicate(DentalCaries,SubClassOf,DemineralizationLesion).
+predicate(DentalHardTissue,is,Class).
+predicate(DentinalCaries,is,Class).
+predicate(DentinalCaries,SubClassOf,DentalCaries).
+predicate(Dermacentor,is,Class).
+predicate(DermacentorAlbopictus,is,Class).
+predicate(DermacentorAlbopictus,SubClassOf,Dermacentor).
+predicate(Dermatitis,is,Class).
+predicate(Dermatitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some SkinCovering)).
+predicate(Dermatitis,SubClassOf,InflammationLesion).
+predicate(DesquamativeGingivitis,is,Class).
+predicate(DesquamativeGingivitis,SubClassOf,Gingivitis).
+predicate(DetachmentLesion,is,Class).
+predicate(DetachmentLesion,SubClassOf,PathologicalBodyStructure).
+predicate(DevelopmentalStatusState,is,Class).
+predicate(DevelopmentalStatusState,SubClassOf,MorphologyState).
+predicate(Deviation,is,Class).
+predicate(Deviation,SubClassOf,PathologicalBodyStructure).
+predicate(Diameter,is,Class).
+predicate(DiameterDecreasing,is,Class).
+predicate(Diaphragm,is,Class).
+predicate(DiaphragmaticHernia,is,Class).
+predicate(DiaphragmaticHernia,EquivalentTo,HerniaLesion and (hasSpecificLocation some Diaphragm)).
+predicate(DiaphragmaticHernia,SubClassOf,HerniaLesion).
+predicate(Digit,is,Class).
+predicate(DilatatingProcess,is,Class).
+predicate(DilatationLesion,is,Class).
+predicate(DilatationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Discharge,is,Class).
+predicate(DischargeLesion,is,Class).
+predicate(DischargeLesion,SubClassOf,PathologicalBodyStructure).
+predicate(DiseaseAnalogy,is,Class).
+predicate(DiseasedComponentOfFemaleGenitoUrinarySystem,is,Class).
+predicate(DiseasedComponentOfFemaleGenitoUrinarySystem,SubClassOf,PathologicalBodyStructure).
+predicate(DiseasedStructure,is,Class).
+predicate(DiseasedStructure,SubClassOf,PathologicalBodyStructure).
+predicate(DislocationLesion,is,Class).
+predicate(DislocationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Displacement,is,Class).
+predicate(Distribution,is,Class).
+predicate(DistributionState,is,Class).
+predicate(DistributionState,SubClassOf,MorphologyState).
+predicate(Diverticulum,is,Class).
+predicate(Diverticulum,SubClassOf,PathologicalBodyStructure).
+predicate(Dog,is,Class).
+predicate(DogBite,is,Class).
+predicate(DogBite,EquivalentTo,Laceration and (hasSpecificLocation some SkinCovering) and (hasUniqueAssociatedProcess some).
+predicate(DogBite,EquivalentTo,(LaceratingProcess and (isSpecificImmediateConsequenceOf some).
+predicate(DogBite,EquivalentTo,(Incising and (hasPersonPerforming some Dog) and (hasPhysicalMeans some Tooth)))))).
+predicate(DogBite,SubClassOf,Laceration).
+predicate(DogBiteSymptom,is,Class).
+predicate(DogBiteSymptom,SubClassOf,DogBite).
+predicate(Dream,is,Class).
+predicate(Dream,SubClassOf,PsychologicalConstruct).
+predicate(DrugInducedCystitis,is,Class).
+predicate(DrugInducedCystitis,SubClassOf,Cystitis).
+predicate(DrugInducedNephritis,is,Class).
+predicate(DrugInducedNephritis,SubClassOf,Nephritis).
+predicate(DrugRelatedGingivalHyperplasia,is,Class).
+predicate(DrugRelatedGingivalHyperplasia,SubClassOf,Gingivitis).
+predicate(DuctusArteriosus,is,Class).
+predicate(DuodenitisLesion,is,Class).
+predicate(DuodenitisLesion,EquivalentTo,InflammationLesion and (hasSpecificLocation some Duodenum)).
+predicate(DuodenitisLesion,SubClassOf,InflammationLesion).
+predicate(Duodenum,is,Class).
+predicate(DupuytrenContracture,is,Class).
+predicate(DupuytrenContracture,EquivalentTo,ContractureLesion and (hasSpecificLocation some PalmarFascia)).
+predicate(DupuytrenContracture,SubClassOf,ContractureLesion).
+predicate(DysgenesisLesion,is,Class).
+predicate(DysgenesisLesion,SubClassOf,PathologicalBodyStructure).
+predicate(DysplasticLesion,is,Class).
+predicate(DysplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(DystrophicLesion,is,Class).
+predicate(DystrophicLesion,SubClassOf,DysplasticLesion).
+predicate(EarDischargeSymptom,is,Class).
+predicate(EarDischargeSymptom,SubClassOf,AuralDischarge).
+predicate(Edentata,is,Class).
+predicate(Effectiveness,is,Class).
+predicate(ElastosisLesion,is,Class).
+predicate(ElastosisLesion,SubClassOf,PathologicalBodyStructure).
+predicate(EmbolismLesion,is,Class).
+predicate(EmbolismLesion,SubClassOf,PathologicalBodyStructure).
+predicate(EmbolismProcess,is,Class).
+predicate(EnamelCaries,is,Class).
+predicate(EnamelCaries,SubClassOf,DentalCaries).
+predicate(Encephalitis,is,Class).
+predicate(Encephalitis,EquivalentTo,InflammationLesion and (hasLocation some Brain)).
+predicate(Encephalitis,SubClassOf,InflammationLesion).
+predicate(EndocardialFibrosis,is,Class).
+predicate(EndocardialFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some Endocardium)).
+predicate(EndocardialFibrosis,SubClassOf,FibrosisLesion).
+predicate(EndocardialFibrosisOfLeftVentricularOutflowTract,is,Class).
+predicate(EndocardialFibrosisOfLeftVentricularOutflowTract,EquivalentTo,FibrosisLesion and (hasSpecificLocation some).
+predicate(EndocardialFibrosisOfLeftVentricularOutflowTract,EquivalentTo,(Endocardium and (isSpecificLayerOf some LeftVentricularOutflowTract)))).
+predicate(EndocardialFibrosisOfLeftVentricularOutflowTract,SubClassOf,FibrosisLesion).
+predicate(Endocarditis,is,Class).
+predicate(Endocarditis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Endocardium)).
+predicate(Endocarditis,SubClassOf,InflammationLesion).
+predicate(Endocardium,is,Class).
+predicate(EndocrineSystem,is,Class).
+predicate(EndocrineTumour,is,Class).
+predicate(EndocrineTumour,EquivalentTo,NeoplasticLesion and (LocativeAttribute some EndocrineSystem)).
+predicate(EndocrineTumour,SubClassOf,NeoplasticLesion).
+predicate(EndometrialAtrophy,is,Class).
+predicate(EndometrialAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some Endometrium)).
+predicate(EndometrialAtrophy,SubClassOf,AtrophicLesion).
+predicate(EndometrialHyperplasia,is,Class).
+predicate(EndometrialHyperplasia,EquivalentTo,HyperplasticLesion and (hasSpecificLocation some Endometrium)).
+predicate(EndometrialHyperplasia,SubClassOf,HyperplasticLesion).
+predicate(EndometrialHypoplasia,is,Class).
+predicate(EndometrialHypoplasia,EquivalentTo,HypoplasticLesion and (hasSpecificLocation some Endometrium)).
+predicate(EndometrialHypoplasia,SubClassOf,HypoplasticLesion).
+predicate(EndometrialNeoplasia,is,Class).
+predicate(EndometrialNeoplasia,EquivalentTo,NeoplasticLesion and (LocativeAttribute some Endometrium)).
+predicate(EndometrialNeoplasia,SubClassOf,NeoplasticLesion).
+predicate(Endometritis,is,Class).
+predicate(Endometritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Endometrium)).
+predicate(Endometritis,SubClassOf,InflammationLesion).
+predicate(Endometrium,is,Class).
+predicate(EnteralAnastomosis,is,Class).
+predicate(EnteralAnastomosis,SubClassOf,SurgicalAnastomosisStructure).
+predicate(Enterocoele,is,Class).
+predicate(Enterocoele,EquivalentTo,ProlapseLesion and (hasLocation some Intestine)).
+predicate(Enterocoele,SubClassOf,ProlapseLesion).
+predicate(EpidermalHyperplasticLesion,is,Class).
+predicate(EpidermalHyperplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Epididymis,is,Class).
+predicate(Epididymitis,is,Class).
+predicate(Epididymitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Epididymis)).
+predicate(Epididymitis,SubClassOf,InflammationLesion).
+predicate(EpididymoOrchitis,is,Class).
+predicate(EpididymoOrchitis,EquivalentTo,InflammationLesion and (hasLocation some Epididymis) and (hasLocation some Testis)).
+predicate(EpididymoOrchitis,SubClassOf,InflammationLesion).
+predicate(EpiglottalOedema,is,Class).
+predicate(EpiglottalOedema,EquivalentTo,Oedema and (hasSpecificLocation some Epiglottis)).
+predicate(EpiglottalOedema,SubClassOf,Oedema).
+predicate(Epiglottis,is,Class).
+predicate(Epiglottitis,is,Class).
+predicate(Epiglottitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Epiglottis)).
+predicate(Epiglottitis,SubClassOf,InflammationLesion).
+predicate(EpiphysealFracture,is,Class).
+predicate(EpiphysealFracture,EquivalentTo,Fracture and (hasSpecificLocation some Epiphysis)).
+predicate(EpiphysealFracture,SubClassOf,Fracture).
+predicate(Epiphysis,is,Class).
+predicate(EpithelialCiliationState,is,Class).
+predicate(EpithelialCiliationState,SubClassOf,EpithelialMorphologyState).
+predicate(EpithelialHyperplasticLesion,is,Class).
+predicate(EpithelialHyperplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(EpithelialLayeringState,is,Class).
+predicate(EpithelialLayeringState,SubClassOf,EpithelialMorphologyState).
+predicate(EpithelialMorphologyState,is,Class).
+predicate(EpithelialMorphologyState,SubClassOf,HistologicalAppearanceState).
+predicate(Epithelium,is,Class).
+predicate(ErosionLesion,is,Class).
+predicate(ErosionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(ErosionOfEsophagus,is,Class).
+predicate(ErosionOfEsophagus,EquivalentTo,ErosionLesion and (hasSpecificLocation some Esophagus)).
+predicate(ErosionOfEsophagus,SubClassOf,ErosionLesion).
+predicate(ErosionOfStomach,is,Class).
+predicate(ErosionOfStomach,EquivalentTo,ErosionLesion and (hasSpecificLocation some Stomach)).
+predicate(ErosionOfStomach,SubClassOf,ErosionLesion).
+predicate(ErosiveOesophagitis,is,Class).
+predicate(ErosiveOesophagitis,SubClassOf,EsophagitisLesion).
+predicate(ErythematousPanniculitis,is,Class).
+predicate(ErythematousPanniculitis,SubClassOf,Panniculitis).
+predicate(EsophagealPepticUlcer,is,Class).
+predicate(EsophagealPepticUlcer,SubClassOf,PepticUlcer).
+predicate(EsophagitisLesion,is,Class).
+predicate(EsophagitisLesion,EquivalentTo,InflammationLesion and (hasSpecificLocation some Esophagus)).
+predicate(EsophagitisLesion,SubClassOf,InflammationLesion).
+predicate(Esophagus,is,Class).
+predicate(EthmoidSinus,is,Class).
+predicate(EthmoidSinusitis,is,Class).
+predicate(EthmoidSinusitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some EthmoidSinus)).
+predicate(EthmoidSinusitis,SubClassOf,InflammationLesion).
+predicate(ExfoliationLesion,is,Class).
+predicate(ExfoliationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(ExfoliativeDermatitis,is,Class).
+predicate(ExfoliativeDermatitis,SubClassOf,Dermatitis).
+predicate(Experiment,is,Class).
+predicate(Experiment,SubClassOf,LogicalStructure).
+predicate(ExpiratoryObstruction,is,Class).
+predicate(ExpiratoryObstruction,SubClassOf,AirwayObstruction).
+predicate(ExternalAuditoryCanal,is,Class).
+predicate(ExternalAuditoryMeatus,is,Class).
+predicate(ExternalGenitalia,is,Class).
+predicate(ExternalHaemorrhoid,is,Class).
+predicate(ExternalHaemorrhoid,SubClassOf,VarixLesion).
+predicate(Extracting,is,Class).
+predicate(Extremity,is,Class).
+predicate(Eye,is,Class).
+predicate(EyeIrritation,is,Class).
+predicate(EyeIrritation,SubClassOf,Irritation).
+predicate(Eyelash,is,Class).
+predicate(FacialDermatitis,is,Class).
+predicate(FacialDermatitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some SkinOfFace)).
+predicate(FacialDermatitis,SubClassOf,InflammationLesion).
+predicate(FacialOedema,is,Class).
+predicate(FacialOedema,EquivalentTo,Oedema and (hasSpecificLocation some SkinOfFace)).
+predicate(FacialOedema,SubClassOf,Oedema).
+predicate(FalseAneurysmLesion,is,Class).
+predicate(FalseAneurysmLesion,SubClassOf,VascularDilatationLesion).
+predicate(FanconiCystinosis,is,Class).
+predicate(FattyDegenerationLesion,is,Class).
+predicate(FattyDegenerationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(FattyDegenerationOfHeart,is,Class).
+predicate(FattyDegenerationOfHeart,EquivalentTo,FattyDegenerationLesion and (hasSpecificLocation some CardiacMuscle)).
+predicate(FattyDegenerationOfHeart,SubClassOf,FattyDegenerationLesion).
+predicate(FattyLiver,is,Class).
+predicate(FattyLiver,EquivalentTo,FattyDegenerationLesion and (hasSpecificLocation some Liver)).
+predicate(FattyLiver,SubClassOf,FattyDegenerationLesion).
+predicate(FemaleExternalGenitalia,is,Class).
+predicate(FemaleGenitoUrinaryLesion,is,Class).
+predicate(FemaleGenitoUrinaryLesion,SubClassOf,PathologicalBodyStructure).
+predicate(FemaleUrethra,is,Class).
+predicate(FemoralFracture,is,Class).
+predicate(FemoralFracture,EquivalentTo,Fracture and (hasSpecificLocation some Femur)).
+predicate(FemoralFracture,SubClassOf,Fracture).
+predicate(FemoralHead,is,Class).
+predicate(FemoralShaft,is,Class).
+predicate(FemoralShaftFracture,is,Class).
+predicate(FemoralShaftFracture,EquivalentTo,Fracture and (hasSpecificLocation some FemoralShaft)).
+predicate(FemoralShaftFracture,SubClassOf,Fracture).
+predicate(Femur,is,Class).
+predicate(Fibrin,is,Class).
+predicate(Fibrinolysis,is,Class).
+predicate(FibroidDegeneration,is,Class).
+predicate(FibroidDegeneration,EquivalentTo,DegenerativeLesion and (hasSpecificLocation some UterineFibroid)).
+predicate(FibroidDegeneration,SubClassOf,DegenerativeLesion).
+predicate(FibromuscularHyperplasticLesion,is,Class).
+predicate(FibromuscularHyperplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(FibrosisLesion,is,Class).
+predicate(FibrosisLesion,SubClassOf,PathologicalBodyStructure).
+predicate(FibrousHyperplasticLesion,is,Class).
+predicate(FibrousHyperplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Finger,is,Class).
+predicate(FingerOedemaSymptom,is,Class).
+predicate(FingerOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(FocalReversiblePulpitis,is,Class).
+predicate(FocalReversiblePulpitis,SubClassOf,PulpitisOfTooth).
+predicate(Foot,is,Class).
+predicate(FootOedemaSymptom,is,Class).
+predicate(FootOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(Forearm,is,Class).
+predicate(ForearmOedemaSymptom,is,Class).
+predicate(ForearmOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(ForeignBody,is,Class).
+predicate(ForeignBody,SubClassOf,PathologicalBodyStructure).
+predicate(ForeignBodyInAirwaySymptom,is,Class).
+predicate(ForeignBodyInAirwaySymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodyInEarSymptom,is,Class).
+predicate(ForeignBodyInEarSymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodyInEyeSymptom,is,Class).
+predicate(ForeignBodyInEyeSymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodyInNoseSymptom,is,Class).
+predicate(ForeignBodyInNoseSymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodyInRectumSymptom,is,Class).
+predicate(ForeignBodyInRectumSymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodyInSkinSymptom,is,Class).
+predicate(ForeignBodyInSkinSymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodyInThroatSymptom,is,Class).
+predicate(ForeignBodyInThroatSymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodyInUrethraSymptom,is,Class).
+predicate(ForeignBodyInUrethraSymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodyInVaginaSymptom,is,Class).
+predicate(ForeignBodyInVaginaSymptom,SubClassOf,ForeignBodySymptom).
+predicate(ForeignBodySymptom,is,Class).
+predicate(ForeignBodySymptom,EquivalentTo,ForeignBody and (playsConsultationRole some SymptomRole)).
+predicate(ForeignBodySymptom,SubClassOf,ForeignBody).
+predicate(Formalism,is,Class).
+predicate(Formalism,SubClassOf,LogicalStructure).
+predicate(Fracture,is,Class).
+predicate(Fracture,SubClassOf,PathologicalBodyStructure).
+predicate(FractureComplexity,is,Class).
+predicate(FractureOfNeckOfFemur,is,Class).
+predicate(FractureOfNeckOfFemur,EquivalentTo,Fracture and (hasSpecificLocation some NeckOfFemur)).
+predicate(FractureOfNeckOfFemur,SubClassOf,Fracture).
+predicate(FrameOfReference,is,Class).
+predicate(FrameOfReference,SubClassOf,LogicalStructure).
+predicate(FrayedEdge,is,Class).
+predicate(FrayedEdge,SubClassOf,PathologicalBodyStructure).
+predicate(FrenulumOfTongue,is,Class).
+predicate(FrequencyUnit,is,Class).
+predicate(FrictionBurn,is,Class).
+predicate(FrictionBurn,EquivalentTo,Burn and (isConsequenceOf some FrictionalForceApplyingProcess)).
+predicate(FrictionBurn,SubClassOf,Burn).
+predicate(FrictionalForceApplyingProcess,is,Class).
+predicate(FrontalLobe,is,Class).
+predicate(FrontalLobeAtrophy,is,Class).
+predicate(FrontalLobeAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some FrontalLobe)).
+predicate(FrontalLobeAtrophy,SubClassOf,AtrophicLesion).
+predicate(FrontalSinus,is,Class).
+predicate(FrontalSinusitis,is,Class).
+predicate(FrontalSinusitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some FrontalSinus)).
+predicate(FrontalSinusitis,SubClassOf,InflammationLesion).
+predicate(FulminantHepaticNecrosis,is,Class).
+predicate(FulminantHepaticNecrosis,SubClassOf,HepaticNecrosis).
+predicate(FunctionalSystem,is,Class).
+predicate(FungalInfectionLesion,is,Class).
+predicate(FungalInfectionLesion,EquivalentTo,InfectionLesion and (isSpecificConsequenceOf some Fungus)).
+predicate(FungalInfectionLesion,SubClassOf,InfectionLesion).
+predicate(FungalSkinLesion,is,Class).
+predicate(FungalSkinLesion,SubClassOf,FungalInfectionLesion).
+predicate(Fungus,is,Class).
+predicate(FusionLesion,is,Class).
+predicate(FusionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(GIOcclusingStructure,is,Class).
+predicate(GIOcclusingStructure,SubClassOf,OcclusingLesion).
+predicate(GangrenousNecrosisPulpitisOfTooth,is,Class).
+predicate(GangrenousNecrosisPulpitisOfTooth,EquivalentTo,NecrosisLesion and (hasSpecificLocation some PulpTissueOfTooth) and (isConsequenceOf some PulpitisOfTooth)).
+predicate(GangrenousNecrosisPulpitisOfTooth,SubClassOf,NecrosisLesion).
+predicate(GanrenousLesion,is,Class).
+predicate(GanrenousLesion,EquivalentTo,NecrosingLesion and (isSpecificConsequenceOf some IschaemicLesion)).
+predicate(GanrenousLesion,SubClassOf,NecrosingLesion).
+predicate(GardnerellaVaginalis,is,Class).
+predicate(GastricMucosa,is,Class).
+predicate(GastricMucosalAtrophy,is,Class).
+predicate(GastricMucosalAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some GastricMucosa)).
+predicate(GastricMucosalAtrophy,SubClassOf,AtrophicLesion).
+predicate(GastricMucosalHypertrophy,is,Class).
+predicate(GastricMucosalHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some GastricMucosa)).
+predicate(GastricMucosalHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(GastricWall,is,Class).
+predicate(GastricWallAtrophy,is,Class).
+predicate(GastricWallAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some).
+predicate(GastricWallAtrophy,EquivalentTo,(BodyWall and (isSpecificLayerOf some Stomach)))).
+predicate(GastricWallAtrophy,SubClassOf,AtrophicLesion).
+predicate(GastricWallHypertrophy,is,Class).
+predicate(GastricWallHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some).
+predicate(GastricWallHypertrophy,EquivalentTo,(BodyWall and (isSpecificLayerOf some Stomach)))).
+predicate(GastricWallHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(GastricWallPerforatingLesion,is,Class).
+predicate(GastricWallPerforatingLesion,EquivalentTo,PerforatingLesion and (hasSpecificLocation some GastricWall)).
+predicate(GastricWallPerforatingLesion,SubClassOf,PerforatingLesion).
+predicate(GastritisLesion,is,Class).
+predicate(GastritisLesion,EquivalentTo,InflammationLesion and (hasSpecificLocation some Stomach)).
+predicate(GastritisLesion,SubClassOf,InflammationLesion).
+predicate(GastroIntestinalObstruction,is,Class).
+predicate(GastroIntestinalObstruction,EquivalentTo,ObstructingLesion and (hasSpecificLocation some Intestine)).
+predicate(GastroIntestinalObstruction,SubClassOf,ObstructingLesion).
+predicate(GastroIntestinalTractCancer,is,Class).
+predicate(GastroIntestinalTractCancer,EquivalentTo,MalignantCancer and (LocativeAttribute some GastrointestinalTract)).
+predicate(GastroIntestinalTractCancer,SubClassOf,MalignantCancer).
+predicate(GastroIntestinalTractNeoplasia,is,Class).
+predicate(GastroIntestinalTractNeoplasia,EquivalentTo,NeoplasticLesion and (LocativeAttribute some GastrointestinalTract)).
+predicate(GastroIntestinalTractNeoplasia,SubClassOf,NeoplasticLesion).
+predicate(GastroIntestinalUlceration,is,Class).
+predicate(GastroIntestinalUlceration,EquivalentTo,UlceratingLesion and (LocativeAttribute some GastrointestinalTract)).
+predicate(GastroIntestinalUlceration,SubClassOf,UlceratingLesion).
+predicate(GastrointestinalTract,is,Class).
+predicate(GenitalTractNeoplasia,is,Class).
+predicate(GenitalTractNeoplasia,EquivalentTo,NeoplasticLesion and (LocativeAttribute some SexSpecificGenitoUrinarySystem)).
+predicate(GenitalTractNeoplasia,SubClassOf,NeoplasticLesion).
+predicate(GenitalUlcer,is,Class).
+predicate(GenitalUlcer,EquivalentTo,UlceratingLesion and (hasLocation some ExternalGenitalia)).
+predicate(GenitalUlcer,SubClassOf,UlceratingLesion).
+predicate(GermCell,is,Class).
+predicate(GermCellTumour,is,Class).
+predicate(GermCellTumour,EquivalentTo,NeoplasticLesion and (hasUniqueAssociatedProcess some).
+predicate(GermCellTumour,EquivalentTo,(NeoplasticProcess and (actsSpecificallyOn some GermCell)))).
+predicate(GermCellTumour,SubClassOf,NeoplasticLesion).
+predicate(GingivalNecrosis,is,Class).
+predicate(GingivalNecrosis,EquivalentTo,NecrosisLesion and (hasSpecificLocation some Gum)).
+predicate(GingivalNecrosis,SubClassOf,NecrosisLesion).
+predicate(GingivalUlcer,is,Class).
+predicate(GingivalUlcer,EquivalentTo,UlceratingLesion and (hasSpecificLocation some Gum)).
+predicate(GingivalUlcer,SubClassOf,UlceratingLesion).
+predicate(Gingivitis,is,Class).
+predicate(Gingivitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Gum)).
+predicate(Gingivitis,SubClassOf,InflammationLesion).
+predicate(GingivitisLesion,is,Class).
+predicate(GingivitisLesion,EquivalentTo,InflammationLesion and (hasSpecificLocation some Gum)).
+predicate(GingivitisLesion,SubClassOf,InflammationLesion).
+predicate(GlansPenis,is,Class).
+predicate(Glomerulonephritis,is,Class).
+predicate(Glomerulonephritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Glomerulus)).
+predicate(Glomerulonephritis,SubClassOf,InflammationLesion).
+predicate(Glomerulus,is,Class).
+predicate(GlossalAtrophy,is,Class).
+predicate(GlossalAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some Tongue)).
+predicate(GlossalAtrophy,SubClassOf,AtrophicLesion).
+predicate(Glossitis,is,Class).
+predicate(Glossitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Tongue)).
+predicate(Glossitis,SubClassOf,InflammationLesion).
+predicate(GlossopharyngealBreathing,is,Class).
+predicate(GlossopharyngealBreathing,SubClassOf,NonNormalBreathing).
+predicate(Gout,is,Class).
+predicate(GoutyTophus,is,Class).
+predicate(GoutyTophus,EquivalentTo,PathologicalAccumulation and (isSpecificallyMadeOf some UricAcid)).
+predicate(GoutyTophus,SubClassOf,PathologicalAccumulation,).
+predicate(GoutyTophus,SubClassOf,isSyndromeElementOf some Gout).
+predicate(Gramstaining,is,Class).
+predicate(GranulomaLesion,is,Class).
+predicate(GranulomaLesion,SubClassOf,PathologicalBodyStructure).
+predicate(GranulomatousHepatitis,is,Class).
+predicate(GranulomatousHepatitis,EquivalentTo,GranulomaLesion and (hasSpecificLocation some Liver)).
+predicate(GranulomatousHepatitis,SubClassOf,GranulomaLesion).
+predicate(Gravitation,is,Class).
+predicate(GravitationalOedema,is,Class).
+predicate(GravitationalOedema,EquivalentTo,Oedema and (isSpecificConsequenceOf some Gravitation)).
+predicate(GravitationalOedema,SubClassOf,Oedema).
+predicate(GreenStickFracture,is,Class).
+predicate(GreenStickFracture,SubClassOf,LongBoneFracture).
+predicate(Gum,is,Class).
+predicate(GumHyperplasia,is,Class).
+predicate(GumHyperplasia,EquivalentTo,HyperplasticLesion and (hasSpecificLocation some Gum)).
+predicate(GumHyperplasia,SubClassOf,HyperplasticLesion).
+predicate(GumHypertrophy,is,Class).
+predicate(GumHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some Gum)).
+predicate(GumHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(HaemangiectasiaLesion,is,Class).
+predicate(HaemangiectasiaLesion,SubClassOf,PathologicalBodyStructure).
+predicate(HaematologicalSystem,is,Class).
+predicate(HaematologicalSystem,SubClassOf,AnatomicalSystem,).
+predicate(HaematologicalSystem,SubClassOf,hasFunctionalComponent some BloodCell,).
+predicate(HaematologicalSystem,SubClassOf,hasStructuralComponent some AccessorySpleen).
+predicate(HaematologicalSystemPathology,is,Class).
+predicate(HaematologicalSystemPathology,EquivalentTo,Phenomenon and (LocativeAttribute some HaematologicalSystem) and (hasPathologicalStatus some pathological)).
+predicate(HaematologicalSystemPathology,SubClassOf,Phenomenon).
+predicate(HaematologyTest,is,Class).
+predicate(HaematologyTestResult,is,Class).
+predicate(HaematologyTestResult,EquivalentTo,ModifierConcept and (isAnswerOf some HaematologyTest)).
+predicate(HaematologyTestResult,SubClassOf,ModifierConcept).
+predicate(HaemorrhagicCystitis,is,Class).
+predicate(HaemorrhagicCystitis,SubClassOf,Cystitis).
+predicate(HaemorrhagicSkinBulla,is,Class).
+predicate(HaemorrhagicSkinBulla,SubClassOf,SkinBulla).
+predicate(Haemorrhoid,is,Class).
+predicate(Haemorrhoid,SubClassOf,VarixLesion).
+predicate(HairlineSkullFracture,is,Class).
+predicate(HairlineSkullFracture,SubClassOf,SkullFracture).
+predicate(Hamartoma,is,Class).
+predicate(Hamartoma,EquivalentTo,HeteroplasticLesion and (hasDistribution some).
+predicate(Hamartoma,EquivalentTo,(Distribution and (hasAbsoluteState some localDistribution)))).
+predicate(Hamartoma,SubClassOf,HeteroplasticLesion).
+predicate(Hand,is,Class).
+predicate(HandMuscleWastingLesion,is,Class).
+predicate(HandMuscleWastingLesion,EquivalentTo,AtrophicLesion and (hasSpecificLocation some).
+predicate(HandMuscleWastingLesion,EquivalentTo,(StriatedMuscle and (IsDivisionOf some Hand)))).
+predicate(HandMuscleWastingLesion,SubClassOf,AtrophicLesion).
+predicate(HandOedemaSymptom,is,Class).
+predicate(HandOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(Heart,is,Class).
+predicate(HeartValveObstructionLesion,is,Class).
+predicate(HeartValveObstructionLesion,EquivalentTo,ObstructingLesion and (hasSpecificLocation some ValveInHeart)).
+predicate(HeartValveObstructionLesion,SubClassOf,ObstructingLesion).
+predicate(HeartValveStenosis,is,Class).
+predicate(HeartValveStenosis,EquivalentTo,Stricture and (hasSpecificLocation some ValveInHeart)).
+predicate(HeartValveStenosis,SubClassOf,Stricture).
+predicate(HeartWall,is,Class).
+predicate(Heating,is,Class).
+predicate(Hemiptera,is,Class).
+predicate(HepaticCellDamage,is,Class).
+predicate(HepaticCellDamage,EquivalentTo,DamageLesion and (hasSpecificLocation some LiverCell)).
+predicate(HepaticCellDamage,SubClassOf,DamageLesion).
+predicate(HepaticInjury,is,Class).
+predicate(HepaticInjury,EquivalentTo,DamageLesion and (hasSpecificLocation some Liver)).
+predicate(HepaticInjury,SubClassOf,DamageLesion).
+predicate(HepaticNecrosis,is,Class).
+predicate(HepaticNecrosis,EquivalentTo,NecrosisLesion and (hasSpecificLocation some Liver)).
+predicate(HepaticNecrosis,SubClassOf,NecrosisLesion).
+predicate(HepaticTumour,is,Class).
+predicate(HepaticTumour,EquivalentTo,NeoplasticLesion and (LocativeAttribute some Liver)).
+predicate(HepaticTumour,SubClassOf,NeoplasticLesion).
+predicate(Hepatitis,is,Class).
+predicate(Hepatitis,EquivalentTo,InflammationLesion and (hasPathologicalStatus some pathological) and (hasSpecificLocation some Liver)).
+predicate(Hepatitis,SubClassOf,InflammationLesion).
+predicate(HerniaLesion,is,Class).
+predicate(HerniaLesion,SubClassOf,PathologicalBodyStructure).
+predicate(HerpesEncephalitis,is,Class).
+predicate(HerpesEncephalitis,SubClassOf,Encephalitis).
+predicate(HerpesSimplexEncephalitis,is,Class).
+predicate(HerpesSimplexEncephalitis,SubClassOf,Encephalitis).
+predicate(HerpesSimplexInfection,is,Class).
+predicate(HerpesSimplexInfection,EquivalentTo,InfectionLesion and (isSpecificConsequenceOf some HerpesSimplexVirus)).
+predicate(HerpesSimplexInfection,SubClassOf,InfectionLesion).
+predicate(HerpesSimplexVirus,is,Class).
+predicate(HerpesVaricellaZosterVirus,is,Class).
+predicate(HerpesZosterInfection,is,Class).
+predicate(HerpesZosterInfection,EquivalentTo,InfectionLesion and (isSpecificConsequenceOf some HerpesVaricellaZosterVirus)).
+predicate(HerpesZosterInfection,SubClassOf,InfectionLesion).
+predicate(HerxheimersReaction,is,Class).
+predicate(HerxheimersReaction,SubClassOf,InflammationLesion,).
+predicate(HerxheimersReaction,SubClassOf,isSpecificConsequenceOf some).
+predicate(HerxheimersReaction,SubClassOf,(AllergyProcess and (isSpecificConsequenceOf some TreponemaPallidumAntigen))).
+predicate(HeteroplasticLesion,is,Class).
+predicate(HeteroplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(HiatusHernia,is,Class).
+predicate(HiatusHernia,SubClassOf,DiaphragmaticHernia).
+predicate(HistologicalAppearanceState,is,Class).
+predicate(Human,is,Class).
+predicate(HumanBite,is,Class).
+predicate(HumanBite,EquivalentTo,Laceration and (hasSpecificLocation some SkinCovering) and (hasUniqueAssociatedProcess some).
+predicate(HumanBite,EquivalentTo,(LaceratingProcess and (isSpecificImmediateConsequenceOf some).
+predicate(HumanBite,EquivalentTo,(Incising and (hasPersonPerforming some Human) and (hasPhysicalMeans some Tooth)))))).
+predicate(HumanBite,SubClassOf,Laceration).
+predicate(HumanBiteSymptom,is,Class).
+predicate(HumanBiteSymptom,SubClassOf,HumanBite).
+predicate(HumeralFracture,is,Class).
+predicate(HumeralFracture,EquivalentTo,Fracture and (hasSpecificLocation some Humerus)).
+predicate(HumeralFracture,SubClassOf,Fracture).
+predicate(Humerus,is,Class).
+predicate(HyalinisationLesion,is,Class).
+predicate(HyalinisationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(HyperkeratoticSkinLesion,is,Class).
+predicate(HyperkeratoticSkinLesion,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some StratumCorneumEpidermis)).
+predicate(HyperkeratoticSkinLesion,SubClassOf,HypertrophicLesion).
+predicate(Hyperostosis,is,Class).
+predicate(Hyperostosis,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some Bone)).
+predicate(Hyperostosis,SubClassOf,HypertrophicLesion).
+predicate(HyperplasticGastritis,is,Class).
+predicate(HyperplasticGastritis,EquivalentTo,HyperplasticLesion and (hasSpecificLocation some Stomach) and (isSpecificImmediateConsequenceOf some).
+predicate(HyperplasticGastritis,EquivalentTo,(ChronicInflammation and (hasSpecificLocation some Stomach)))).
+predicate(HyperplasticGastritis,SubClassOf,HyperplasticLesion).
+predicate(HyperplasticLesion,is,Class).
+predicate(HyperplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(HypertrophicLesion,is,Class).
+predicate(HypertrophicLesion,SubClassOf,PathologicalBodyStructure).
+predicate(HypoplasticLesion,is,Class).
+predicate(HypoplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(IatrogenicLesion,is,Class).
+predicate(IatrogenicLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Ideas,is,Class).
+predicate(Ideas,SubClassOf,LogicalStructure).
+predicate(IdiopathicLesion,is,Class).
+predicate(IdiopathicLesion,SubClassOf,PathologicalBodyStructure).
+predicate(IleitisLesion,is,Class).
+predicate(IleitisLesion,EquivalentTo,InflammationLesion and (hasSpecificLocation some Ileum)).
+predicate(IleitisLesion,SubClassOf,InflammationLesion).
+predicate(Ileum,is,Class).
+predicate(ImmuneMediatedInflammation,is,Class).
+predicate(ImmuneMediatedInflammation,EquivalentTo,InflammationLesion and (isSpecificConsequenceOf some AllergyProcess)).
+predicate(ImmuneMediatedInflammation,SubClassOf,InflammationLesion).
+predicate(Impetigo,is,Class).
+predicate(Impetigo,SubClassOf,Pyoderma).
+predicate(Incising,is,Class).
+predicate(Incision,is,Class).
+predicate(IncisionalHernia,is,Class).
+predicate(IncisionalHernia,EquivalentTo,HerniaLesion and (hasSpecificLocation some Incision)).
+predicate(IncisionalHernia,SubClassOf,HerniaLesion).
+predicate(IncreasedMyocardialIschaemia,is,Class).
+predicate(IncreasedMyocardialIschaemia,SubClassOf,MyocardialIschaemiaLesion).
+predicate(InfarctingProcess,is,Class).
+predicate(InfectionLesion,is,Class).
+predicate(InfectionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(InfectionOfLowerRespiratoryTract,is,Class).
+predicate(InfectionOfLowerRespiratoryTract,EquivalentTo,InfectionLesion and (LocativeAttribute some LowerRespiratoryTract)).
+predicate(InfectionOfLowerRespiratoryTract,SubClassOf,InfectionLesion).
+predicate(InfectionOfUpperRespiratoryTract,is,Class).
+predicate(InfectionOfUpperRespiratoryTract,EquivalentTo,InfectionLesion and (LocativeAttribute some UpperRespiratoryTract)).
+predicate(InfectionOfUpperRespiratoryTract,SubClassOf,InfectionLesion).
+predicate(InfectiveArthritis,is,Class).
+predicate(InfectiveArthritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Joint) and (isSpecificImmediateConsequenceOf some JointInfection)).
+predicate(InfectiveArthritis,SubClassOf,InflammationLesion).
+predicate(InfectiveEndocarditis,is,Class).
+predicate(InfectiveEndocarditis,SubClassOf,Endocarditis).
+predicate(InfectiveNephritis,is,Class).
+predicate(InfectiveNephritis,SubClassOf,Nephritis).
+predicate(Infestation,is,Class).
+predicate(Infestation,EquivalentTo,InfectionLesion and (LocativeAttribute some SkinCovering) and (isConsequenceOf some Metazoa)).
+predicate(Infestation,SubClassOf,InfectionLesion).
+predicate(InflammationLesion,is,Class).
+predicate(InflammationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(InflammationOfBodyStructure,is,Class).
+predicate(InflammationOfBodyStructure,EquivalentTo,InflammationLesion and (hasLocation some BodyStructure)).
+predicate(InflammationOfBodyStructure,SubClassOf,InflammationLesion).
+predicate(InflammationOfEye,is,Class).
+predicate(InflammationOfEye,EquivalentTo,InflammationLesion and (hasSpecificLocation some Eye)).
+predicate(InflammationOfEye,SubClassOf,InflammationLesion).
+predicate(InflammationOfRespiratoryMucosa,is,Class).
+predicate(InflammationOfRespiratoryMucosa,EquivalentTo,InflammationLesion and (hasSpecificLocation some RespiratoryMucousMembrane)).
+predicate(InflammationOfRespiratoryMucosa,SubClassOf,InflammationLesion).
+predicate(InflammationOfStomachToDuodenum,is,Class).
+predicate(InflammationOfStomachToDuodenum,EquivalentTo,InflammationLesion and (hasSpecificLocation some StomachToDuodenum)).
+predicate(InflammationOfStomachToDuodenum,SubClassOf,InflammationLesion).
+predicate(InflammatoryAtrophicLesion,is,Class).
+predicate(InflammatoryAtrophicLesion,EquivalentTo,AtrophicLesion and (isSpecificConsequenceOf some).
+predicate(InflammatoryAtrophicLesion,EquivalentTo,(InflammationLesion and (hasChronicity some).
+predicate(InflammatoryAtrophicLesion,EquivalentTo,(Chronicity and (hasAbsoluteState some chronic)))))).
+predicate(InflammatoryAtrophicLesion,SubClassOf,AtrophicLesion).
+predicate(InflammatoryConditionsOfNose,is,Class).
+predicate(InflammatoryConditionsOfNose,EquivalentTo,InflammationLesion and (LocativeAttribute some Nose)).
+predicate(InflammatoryConditionsOfNose,SubClassOf,InflammationLesion).
+predicate(InflammatoryHeartDisease,is,Class).
+predicate(InflammatoryHeartDisease,EquivalentTo,InflammationLesion and (LocativeAttribute some Heart)).
+predicate(InflammatoryHeartDisease,SubClassOf,InflammationLesion).
+predicate(InflammatoryHyperplasiaLesion,is,Class).
+predicate(InflammatoryHyperplasiaLesion,EquivalentTo,HyperplasticLesion and (isSpecificConsequenceOf some).
+predicate(InflammatoryHyperplasiaLesion,EquivalentTo,(InflammationLesion and (hasChronicity some).
+predicate(InflammatoryHyperplasiaLesion,EquivalentTo,(Chronicity and (hasAbsoluteState some chronic)))))).
+predicate(InflammatoryHyperplasiaLesion,SubClassOf,HyperplasticLesion).
+predicate(InflammatoryPathologyOfCardiovascularSystem,is,Class).
+predicate(InflammatoryPathologyOfCardiovascularSystem,EquivalentTo,InflammationLesion and (LocativeAttribute some CardiovascularSystem) and (hasPathologicalStatus some pathological)).
+predicate(InflammatoryPathologyOfCardiovascularSystem,SubClassOf,InflammationLesion).
+predicate(Information,is,Class).
+predicate(Information,SubClassOf,LogicalStructure).
+predicate(InfrarenalAorticAneurysm,is,Class).
+predicate(InfrarenalAorticAneurysm,SubClassOf,VascularDilatationLesion).
+predicate(InguinalCanal,is,Class).
+predicate(InguinalHernia,is,Class).
+predicate(InguinalHernia,EquivalentTo,HerniaLesion and (hasSpecificLocation some InguinalCanal)).
+predicate(InguinalHernia,SubClassOf,HerniaLesion).
+predicate(InjectionSiteIrritation,is,Class).
+predicate(InjectionSiteIrritation,SubClassOf,Irritation).
+predicate(InsectSting,is,Class).
+predicate(InsectSting,SubClassOf,StingLesion).
+predicate(InspiratoryObstruction,is,Class).
+predicate(InspiratoryObstruction,SubClassOf,AirwayObstruction).
+predicate(InterdentalGingiva,is,Class).
+predicate(IntermittentLeucorrhoea,is,Class).
+predicate(IntermittentLeucorrhoea,SubClassOf,VaginalDischarge).
+predicate(InternalHaemorrhoid,is,Class).
+predicate(InternalHaemorrhoid,SubClassOf,VarixLesion).
+predicate(InterstitialNephritis,is,Class).
+predicate(InterstitialNephritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some RenalInterstitialStructure)).
+predicate(InterstitialNephritis,SubClassOf,InflammationLesion).
+predicate(InterstitialPneumonitis,is,Class).
+predicate(InterstitialPneumonitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some PulmonaryInterstitialTissue)).
+predicate(InterstitialPneumonitis,SubClassOf,InflammationLesion).
+predicate(Intertrigo,is,Class).
+predicate(Intertrigo,SubClassOf,Dermatitis).
+predicate(IntestinalAtresia,is,Class).
+predicate(IntestinalAtresia,EquivalentTo,AgenesisLesion and (hasLocation some IntestinalLumen)).
+predicate(IntestinalAtresia,SubClassOf,AgenesisLesion).
+predicate(IntestinalInfection,is,Class).
+predicate(IntestinalInfection,EquivalentTo,InfectionLesion and (hasLocation some Intestine)).
+predicate(IntestinalInfection,SubClassOf,InfectionLesion).
+predicate(IntestinalLumen,is,Class).
+predicate(IntestinalPerforation,is,Class).
+predicate(IntestinalPerforation,EquivalentTo,PerforatingLesion and (hasSpecificLocation some Intestine)).
+predicate(IntestinalPerforation,SubClassOf,PerforatingLesion).
+predicate(Intestine,is,Class).
+predicate(IntimaOfArtery,is,Class).
+predicate(IntraepidermalEpitheliomaOfJadassohn,is,Class).
+predicate(IntraepidermalEpitheliomaOfJadassohn,SubClassOf,NAMEDNeoplasticLesion).
+predicate(IntrapartumCerebralHypoxia,is,Class).
+predicate(IntrapartumCerebralHypoxia,SubClassOf,CerebralIschaemia).
+predicate(Introitus,is,Class).
+predicate(IntussusceptionLesion,is,Class).
+predicate(IntussusceptionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(InversionLesion,is,Class).
+predicate(InversionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(InvertedNipple,is,Class).
+predicate(InvertedNipple,EquivalentTo,InversionLesion and (hasSpecificLocation some Nipple)).
+predicate(InvertedNipple,SubClassOf,InversionLesion).
+predicate(InvertedNippleSymptom,is,Class).
+predicate(InvertedNippleSymptom,SubClassOf,InvertedNipple).
+predicate(InvolutingLesion,is,Class).
+predicate(InvolutingLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Iris,is,Class).
+predicate(Iritis,is,Class).
+predicate(Iritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Iris)).
+predicate(Iritis,SubClassOf,InflammationLesion).
+predicate(IrradiationCystitis,is,Class).
+predicate(IrradiationCystitis,SubClassOf,Cystitis).
+predicate(IrradiationNephritis,is,Class).
+predicate(IrradiationNephritis,SubClassOf,Nephritis).
+predicate(IrreversiblePulpitisOfTooth,is,Class).
+predicate(IrreversiblePulpitisOfTooth,SubClassOf,PulpitisOfTooth).
+predicate(Irritation,is,Class).
+predicate(Irritation,EquivalentTo,InflammationLesion and (isConsequenceOf some TraumaticProcess)).
+predicate(Irritation,SubClassOf,InflammationLesion).
+predicate(IrritationOfNasalMucosa,is,Class).
+predicate(IrritationOfNasalMucosa,SubClassOf,Irritation).
+predicate(IrritationOfNoseAndThroat,is,Class).
+predicate(IrritationOfNoseAndThroat,SubClassOf,Irritation).
+predicate(IrritationSymptom,is,Class).
+predicate(IrritationSymptom,SubClassOf,Irritation).
+predicate(IschaemicAtrophicLesion,is,Class).
+predicate(IschaemicAtrophicLesion,SubClassOf,PathologicalBodyStructure).
+predicate(IschaemicLesion,is,Class).
+predicate(IschaemicLesion,SubClassOf,PathologicalBodyStructure).
+predicate(IschaemicVascularDisease,is,Class).
+predicate(IschaemicVascularDisease,EquivalentTo,IschaemicLesion and (isConsequenceOf some VascularPathology)).
+predicate(IschaemicVascularDisease,SubClassOf,IschaemicLesion).
+predicate(JejunitisLesion,is,Class).
+predicate(JejunitisLesion,EquivalentTo,InflammationLesion and (hasSpecificLocation some Jejunum)).
+predicate(JejunitisLesion,SubClassOf,InflammationLesion).
+predicate(Jejunum,is,Class).
+predicate(JoiningLesion,is,Class).
+predicate(JoiningLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Joint,is,Class).
+predicate(JointDislocation,is,Class).
+predicate(JointDislocation,EquivalentTo,DislocationLesion and (hasSpecificLocation some Joint)).
+predicate(JointDislocation,SubClassOf,DislocationLesion).
+predicate(JointInfection,is,Class).
+predicate(JointInfection,EquivalentTo,InfectionLesion and (hasSpecificLocation some Joint)).
+predicate(JointInfection,SubClassOf,InfectionLesion).
+predicate(JuvenilePeriodontitis,is,Class).
+predicate(JuvenilePeriodontitis,SubClassOf,Periodontitis).
+predicate(KeratinNail,is,Class).
+predicate(KeratinNailMargin,is,Class).
+predicate(Keratitis,is,Class).
+predicate(Keratitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Cornea)).
+predicate(Keratitis,SubClassOf,InflammationLesion).
+predicate(KeratosisLesion,is,Class).
+predicate(KeratosisLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Kidney,is,Class).
+predicate(Labia,is,Class).
+predicate(LabialHypertrophy,is,Class).
+predicate(LabialHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some Labia)).
+predicate(LabialHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(Labyrinth,is,Class).
+predicate(Labyrinthitis,is,Class).
+predicate(Labyrinthitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Labyrinth)).
+predicate(Labyrinthitis,SubClassOf,InflammationLesion).
+predicate(LaceratingProcess,is,Class).
+predicate(Laceration,is,Class).
+predicate(Laceration,SubClassOf,PathologicalBodyStructure).
+predicate(LactiferousDuct,is,Class).
+predicate(Language,is,Class).
+predicate(Language,SubClassOf,LogicalStructure).
+predicate(LargeCellTumour,is,Class).
+predicate(LargeCellTumour,SubClassOf,AnaplasticTumour).
+predicate(LaryngealAtresia,is,Class).
+predicate(LaryngealAtresia,EquivalentTo,AgenesisLesion and (hasSpecificLocation some LaryngealLumen)).
+predicate(LaryngealAtresia,SubClassOf,AgenesisLesion).
+predicate(LaryngealLeukoplakia,is,Class).
+predicate(LaryngealLeukoplakia,EquivalentTo,KeratosisLesion and (hasSpecificLocation some LaryngealMucousMembrane)).
+predicate(LaryngealLeukoplakia,SubClassOf,KeratosisLesion).
+predicate(LaryngealLumen,is,Class).
+predicate(LaryngealMucousMembrane,is,Class).
+predicate(LaryngealOedema,is,Class).
+predicate(LaryngealOedema,EquivalentTo,Oedema and (hasSpecificLocation some Larynx)).
+predicate(LaryngealOedema,SubClassOf,Oedema).
+predicate(Laryngitis,is,Class).
+predicate(Laryngitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Larynx)).
+predicate(Laryngitis,SubClassOf,InflammationLesion).
+predicate(Larynx,is,Class).
+predicate(LeftAnteriorDescendingCoronaryArtery,is,Class).
+predicate(LeftAnteriorDescendingCoronaryArteryThrombosis,is,Class).
+predicate(LeftAnteriorDescendingCoronaryArteryThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some LeftAnteriorDescendingCoronaryArtery)).
+predicate(LeftAnteriorDescendingCoronaryArteryThrombosis,SubClassOf,ThrombusLesion).
+predicate(LeftHeartVentricle,is,Class).
+predicate(LeftMainCoronaryArtery,is,Class).
+predicate(LeftMainCoronaryArteryThrombosis,is,Class).
+predicate(LeftMainCoronaryArteryThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some LeftMainCoronaryArtery)).
+predicate(LeftMainCoronaryArteryThrombosis,SubClassOf,ThrombusLesion).
+predicate(LeftParietalBone,is,Class).
+predicate(LeftParietalBone,EquivalentTo,ParietalBone and (hasLeftRightSelector some leftSelection)).
+predicate(LeftParietalBone,SubClassOf,ParietalBone,).
+predicate(LeftParietalBone,SubClassOf,isAlphaConnectionOf some SagittalSuture,).
+predicate(LeftParietalBone,SubClassOf,isBetaConnectionOf some CoronalSuture).
+predicate(LeftVentricularMyocardialHypertrophy,is,Class).
+predicate(LeftVentricularMyocardialHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some).
+predicate(LeftVentricularMyocardialHypertrophy,EquivalentTo,(CardiacMuscle and (isSpecificLayerOf some LeftHeartVentricle)))).
+predicate(LeftVentricularMyocardialHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(LeftVentricularOutflowObstruction,is,Class).
+predicate(LeftVentricularOutflowObstruction,EquivalentTo,ObstructingLesion and (hasSpecificLocation some).
+predicate(LeftVentricularOutflowObstruction,EquivalentTo,(TubularBodyStructure and (isAlphaConnectionOf some LeftHeartVentricle) and (isBetaPartitiveConnectionOf some Aorta)))).
+predicate(LeftVentricularOutflowObstruction,SubClassOf,ObstructingLesion).
+predicate(LeftVentricularOutflowTract,is,Class).
+predicate(Leg,is,Class).
+predicate(LegOedema,is,Class).
+predicate(LegOedema,EquivalentTo,Oedema and (hasSpecificLocation some Leg)).
+predicate(LegOedema,SubClassOf,Oedema).
+predicate(LegOedemaSymptom,is,Class).
+predicate(LegOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(LegUlcer,is,Class).
+predicate(LegUlcer,EquivalentTo,UlceratingLesion and (hasSpecificLocation some SkinOfLeg)).
+predicate(LegUlcer,SubClassOf,UlceratingLesion).
+predicate(LeukoplasticLesion,is,Class).
+predicate(LeukoplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Leukorrhea,is,Class).
+predicate(Leukorrhea,SubClassOf,VaginalDischarge).
+predicate(Level,is,Class).
+predicate(LichenificationLesion,is,Class).
+predicate(LichenificationLesion,SubClassOf,HyperkeratoticSkinLesion).
+predicate(Limiting,is,Class).
+predicate(LingualLeukoplakia,is,Class).
+predicate(LingualLeukoplakia,EquivalentTo,KeratosisLesion and (hasSpecificLocation some LingualMucosa)).
+predicate(LingualLeukoplakia,SubClassOf,KeratosisLesion).
+predicate(LingualMucosa,is,Class).
+predicate(LingualUlcer,is,Class).
+predicate(LingualUlcer,EquivalentTo,UlceratingLesion and (hasSpecificLocation some Tongue)).
+predicate(LingualUlcer,SubClassOf,UlceratingLesion).
+predicate(Lip,is,Class).
+predicate(LipOedemaSymptom,is,Class).
+predicate(LipOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(Liver,is,Class).
+predicate(LiverCell,is,Class).
+predicate(LobarConsolidation,is,Class).
+predicate(LobarConsolidation,EquivalentTo,ConsolidationLesion and (hasSpecificLocation some LobeOfLung)).
+predicate(LobarConsolidation,SubClassOf,ConsolidationLesion).
+predicate(LobarParenchymalStructure,is,Class).
+predicate(LobarPneumonia,is,Class).
+predicate(LobarPneumonia,EquivalentTo,InflammationLesion and (hasSpecificLocation some LobarParenchymalStructure)).
+predicate(LobarPneumonia,SubClassOf,InflammationLesion).
+predicate(LobeOfLung,is,Class).
+predicate(LobularConsolidation,is,Class).
+predicate(LobularConsolidation,EquivalentTo,ConsolidationLesion and (hasSpecificLocation some PulmonaryAcinus)).
+predicate(LobularConsolidation,SubClassOf,ConsolidationLesion).
+predicate(LobularParenchymalStructure,is,Class).
+predicate(LobularPneumonia,is,Class).
+predicate(LobularPneumonia,EquivalentTo,InflammationLesion and (hasSpecificLocation some LobularParenchymalStructure)).
+predicate(LobularPneumonia,SubClassOf,InflammationLesion).
+predicate(LocalDistribution,is,Class).
+predicate(LogicalReferenceStructure,is,Class).
+predicate(LogicalReferenceStructure,SubClassOf,FrameOfReference).
+predicate(LogicalStructure,is,Class).
+predicate(LogicalStructure,SubClassOf,AbstractStructure).
+predicate(LongBone,is,Class).
+predicate(LongBoneFracture,is,Class).
+predicate(LongBoneFracture,EquivalentTo,Fracture and (hasSpecificLocation some LongBone)).
+predicate(LongBoneFracture,SubClassOf,Fracture).
+predicate(LooseBody,is,Class).
+predicate(LooseBody,SubClassOf,PathologicalBodyStructure).
+predicate(LowImmuneResponse,is,Class).
+predicate(LowerExtremity,is,Class).
+predicate(LowerExtremityOedema,is,Class).
+predicate(LowerExtremityOedema,EquivalentTo,Oedema and (hasSpecificLocation some LowerExtremity)).
+predicate(LowerExtremityOedema,SubClassOf,Oedema).
+predicate(LowerExtremityOedemaSymptom,is,Class).
+predicate(LowerExtremityOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(LowerLip,is,Class).
+predicate(LowerRespiratoryInflammation,is,Class).
+predicate(LowerRespiratoryInflammation,EquivalentTo,InflammationLesion and (LocativeAttribute some LowerRespiratoryTract)).
+predicate(LowerRespiratoryInflammation,SubClassOf,InflammationLesion).
+predicate(LowerRespiratoryTract,is,Class).
+predicate(LowerRespiratoryTractInfection,is,Class).
+predicate(LowerRespiratoryTractInfection,EquivalentTo,InfectionLesion and (LocativeAttribute some LowerRespiratoryTract)).
+predicate(LowerRespiratoryTractInfection,SubClassOf,InfectionLesion).
+predicate(LumbarScoliosis,is,Class).
+predicate(LumbarScoliosis,EquivalentTo,BendLesion and (hasSpecificLocation some LumbarSpine)).
+predicate(LumbarScoliosis,SubClassOf,BendLesion).
+predicate(LumbarSpine,is,Class).
+predicate(Lumen,is,Class).
+predicate(Lung,is,Class).
+predicate(LungParenchymalStructure,is,Class).
+predicate(LymphaticSystem,is,Class).
+predicate(Lymphnode,is,Class).
+predicate(LymphoidTonsil,is,Class).
+predicate(LymphoidTonsillitis,is,Class).
+predicate(LymphoidTonsillitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some LymphoidTonsil)).
+predicate(LymphoidTonsillitis,SubClassOf,InflammationLesion).
+predicate(LysisLesion,is,Class).
+predicate(LysisLesion,SubClassOf,PathologicalBodyStructure).
+predicate(LysosomalAccumulation,is,Class).
+predicate(LysosomalAccumulation,EquivalentTo,PathologicalAccumulation and (hasSpecificLocation some Lysosome)).
+predicate(LysosomalAccumulation,SubClassOf,PathologicalAccumulation).
+predicate(Lysosome,is,Class).
+predicate(Macula,is,Class).
+predicate(MacularOedema,is,Class).
+predicate(MacularOedema,EquivalentTo,Oedema and (hasSpecificLocation some Macula)).
+predicate(MacularOedema,SubClassOf,Oedema).
+predicate(MaleBreast,is,Class).
+predicate(MaleBreastCancer,is,Class).
+predicate(MaleBreastCancer,EquivalentTo,MalignantCancer and (LocativeAttribute some MaleBreast)).
+predicate(MaleBreastCancer,SubClassOf,MalignantCancer).
+predicate(Malignancy,is,Class).
+predicate(MalignantCancer,is,Class).
+predicate(MalignantCancer,SubClassOf,PathologicalBodyStructure).
+predicate(MalignantEndometrialNeoplasia,is,Class).
+predicate(MalignantEndometrialNeoplasia,EquivalentTo,MalignantCancer and (LocativeAttribute some Endometrium)).
+predicate(MalignantEndometrialNeoplasia,SubClassOf,MalignantCancer).
+predicate(MalignantGenitalTractNeoplasia,is,Class).
+predicate(MalignantGenitalTractNeoplasia,EquivalentTo,MalignantCancer and (LocativeAttribute some SexSpecificGenitoUrinarySystem)).
+predicate(MalignantGenitalTractNeoplasia,SubClassOf,MalignantCancer).
+predicate(MalignantHepaticNeoplasia,is,Class).
+predicate(MalignantHepaticNeoplasia,EquivalentTo,MalignantCancer and (LocativeAttribute some Liver)).
+predicate(MalignantHepaticNeoplasia,SubClassOf,MalignantCancer).
+predicate(MalignantMammaryNeoplasia,is,Class).
+predicate(MalignantMammaryNeoplasia,EquivalentTo,MalignantCancer and (LocativeAttribute some MammaryGland)).
+predicate(MalignantMammaryNeoplasia,SubClassOf,MalignantCancer).
+predicate(MalignantMyometrialNeoplasia,is,Class).
+predicate(MalignantMyometrialNeoplasia,EquivalentTo,MalignantCancer and (LocativeAttribute some Myometrium)).
+predicate(MalignantMyometrialNeoplasia,SubClassOf,MalignantCancer).
+predicate(MalignantOvarianNeoplasia,is,Class).
+predicate(MalignantOvarianNeoplasia,EquivalentTo,MalignantCancer and (LocativeAttribute some Ovary)).
+predicate(MalignantOvarianNeoplasia,SubClassOf,MalignantCancer).
+predicate(MalignantPenileNeoplasia,is,Class).
+predicate(MalignantPenileNeoplasia,EquivalentTo,MalignantCancer and (LocativeAttribute some Penis)).
+predicate(MalignantPenileNeoplasia,SubClassOf,MalignantCancer).
+predicate(MalignantProstaticNeoplasia,is,Class).
+predicate(MalignantProstaticNeoplasia,EquivalentTo,MalignantCancer and (LocativeAttribute some ProstateGland)).
+predicate(MalignantProstaticNeoplasia,SubClassOf,MalignantCancer).
+predicate(MalignantRenalNeoplpasia,is,Class).
+predicate(MalignantRenalNeoplpasia,EquivalentTo,MalignantCancer and (LocativeAttribute some Kidney)).
+predicate(MalignantRenalNeoplpasia,SubClassOf,MalignantCancer).
+predicate(MalignantUterineNeoplasia,is,Class).
+predicate(MalignantUterineNeoplasia,EquivalentTo,MalignantCancer and (LocativeAttribute some Uterus)).
+predicate(MalignantUterineNeoplasia,SubClassOf,MalignantCancer).
+predicate(MammaryDysplasia,is,Class).
+predicate(MammaryDysplasia,EquivalentTo,DysplasticLesion and (hasLocation some MammaryGland)).
+predicate(MammaryDysplasia,SubClassOf,DysplasticLesion).
+predicate(MammaryGland,is,Class).
+predicate(MammaryNeoplasia,is,Class).
+predicate(MammaryNeoplasia,EquivalentTo,NeoplasticLesion and (LocativeAttribute some MammaryGland)).
+predicate(MammaryNeoplasia,SubClassOf,NeoplasticLesion).
+predicate(MarginalGingiva,is,Class).
+predicate(MarginalGingivitis,is,Class).
+predicate(MarginalGingivitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some MarginalGingiva)).
+predicate(MarginalGingivitis,SubClassOf,InflammationLesion).
+predicate(MarginalPeriodontitis,is,Class).
+predicate(MarginalPeriodontitis,SubClassOf,Periodontitis).
+predicate(Mathematics,is,Class).
+predicate(Mathematics,SubClassOf,LogicalStructure).
+predicate(MaxillarySinus,is,Class).
+predicate(MaxillarySinusitis,is,Class).
+predicate(MaxillarySinusitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some MaxillarySinus)).
+predicate(MaxillarySinusitis,SubClassOf,InflammationLesion).
+predicate(Mediastinopericarditis,is,Class).
+predicate(Mediastinopericarditis,EquivalentTo,InflammationLesion and (hasLocation some Mediastinum) and (hasLocation some Pericardium)).
+predicate(Mediastinopericarditis,SubClassOf,InflammationLesion).
+predicate(Mediastinum,is,Class).
+predicate(MegaUrethra,is,Class).
+predicate(MegaUrethra,EquivalentTo,Urethra and (hasDiameter some).
+predicate(MegaUrethra,EquivalentTo,(Diameter and (isActedOnSpecificallyBy some DilatatingProcess))) and (hasVolume some).
+predicate(MegaUrethra,EquivalentTo,(Volume and (hasQuantity some).
+predicate(MegaUrethra,EquivalentTo,(Level and (hasMagnitude some highLevel)))))).
+predicate(MegaUrethra,SubClassOf,Urethra).
+predicate(Meninges,is,Class).
+predicate(Meningitis,is,Class).
+predicate(Meningitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Meninges)).
+predicate(Meningitis,SubClassOf,InflammationLesion).
+predicate(Meningocoele,is,Class).
+predicate(Meningocoele,EquivalentTo,HerniaLesion and (hasSpecificLocation some Meninges)).
+predicate(Meningocoele,SubClassOf,HerniaLesion).
+predicate(MesentericVascularThrombosis,is,Class).
+predicate(MesentericVascularThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some).
+predicate(MesentericVascularThrombosis,EquivalentTo,(BloodVessel and (isStructuralComponentOf some Mesentery)))).
+predicate(MesentericVascularThrombosis,SubClassOf,ThrombusLesion).
+predicate(Mesentery,is,Class).
+predicate(MetaplasticLesion,is,Class).
+predicate(MetaplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(MetastasesLesion,is,Class).
+predicate(MetastasesLesion,SubClassOf,PathologicalBodyStructure).
+predicate(MetastaticNeoplasticLesion,is,Class).
+predicate(MetastaticNeoplasticLesion,EquivalentTo,NeoplasticLesion and (hasMetastaticStatus some metastatic)).
+predicate(MetastaticNeoplasticLesion,SubClassOf,NeoplasticLesion).
+predicate(Metazoa,is,Class).
+predicate(MetazoalInfectionLesion,is,Class).
+predicate(MetazoalInfectionLesion,EquivalentTo,InfectionLesion and (isSpecificConsequenceOf some Metazoa)).
+predicate(MetazoalInfectionLesion,SubClassOf,InfectionLesion).
+predicate(MiddleEar,is,Class).
+predicate(MinorSalivaryGland,is,Class).
+predicate(MitralStenosisLesion,is,Class).
+predicate(MitralStenosisLesion,EquivalentTo,Stricture and (hasSpecificLocation some MitralValve)).
+predicate(MitralStenosisLesion,SubClassOf,Stricture).
+predicate(MitralStenosisLesionWithInsufficiency,is,Class).
+predicate(MitralStenosisLesionWithInsufficiency,SubClassOf,MitralStenosisLesion).
+predicate(MitralValve,is,Class).
+predicate(MitralValveProlapse,is,Class).
+predicate(MitralValveProlapse,EquivalentTo,ProlapseLesion and (hasSpecificLocation some MitralValve)).
+predicate(MitralValveProlapse,SubClassOf,ProlapseLesion).
+predicate(ModifierConcept,is,Class).
+predicate(MorphologyState,is,Class).
+predicate(MorphologyState,SubClassOf,StructuralState).
+predicate(Mouth,is,Class).
+predicate(MucosalAtrophy,is,Class).
+predicate(MucosalAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some MucousMembrane)).
+predicate(MucosalAtrophy,SubClassOf,AtrophicLesion).
+predicate(MucosalHypertrophy,is,Class).
+predicate(MucosalHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some MucousMembrane)).
+predicate(MucosalHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(MucosalUlceration,is,Class).
+predicate(MucosalUlceration,EquivalentTo,UlceratingLesion and (hasLocation some MucousMembrane)).
+predicate(MucosalUlceration,SubClassOf,UlceratingLesion).
+predicate(MucousDuctObstruction,is,Class).
+predicate(MucousDuctObstruction,EquivalentTo,ObstructingLesion and (hasSpecificLocation some MucousGlandDuct)).
+predicate(MucousDuctObstruction,SubClassOf,ObstructingLesion).
+predicate(MucousGlandDuct,is,Class).
+predicate(MucousMembrane,is,Class).
+predicate(MultipleNerves,is,Class).
+predicate(MuralThrombus,is,Class).
+predicate(MuralThrombus,EquivalentTo,ThrombusLesion and (hasSpecificLocation some HeartWall)).
+predicate(MuralThrombus,SubClassOf,ThrombusLesion).
+predicate(MuscleContractureLesion,is,Class).
+predicate(MuscleContractureLesion,EquivalentTo,ContractureLesion and (hasUniqueAssociatedProcess some StriatedMuscleContractionProcess)).
+predicate(MuscleContractureLesion,SubClassOf,ContractureLesion).
+predicate(MuscularAtrophyLesion,is,Class).
+predicate(MuscularAtrophyLesion,EquivalentTo,AtrophicLesion and (hasLocation some StriatedMuscle)).
+predicate(MuscularAtrophyLesion,SubClassOf,AtrophicLesion).
+predicate(MuscularAtrophySymptom,is,Class).
+predicate(MuscularAtrophySymptom,SubClassOf,MuscularAtrophyLesion).
+predicate(MycobacteriumTuberculosisHominis,is,Class).
+predicate(MyocardialDegeneration,is,Class).
+predicate(MyocardialDegeneration,EquivalentTo,DegenerativeLesion and (hasSpecificLocation some CardiacMuscle)).
+predicate(MyocardialDegeneration,SubClassOf,DegenerativeLesion).
+predicate(MyocardialFibrosis,is,Class).
+predicate(MyocardialFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some CardiacMuscle)).
+predicate(MyocardialFibrosis,SubClassOf,FibrosisLesion).
+predicate(MyocardialHypertrophy,is,Class).
+predicate(MyocardialHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some CardiacMuscle)).
+predicate(MyocardialHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(MyocardialInfarct,is,Class).
+predicate(MyocardialInfarct,EquivalentTo,DamageLesion and (hasSpecificLocation some CardiacMuscle)).
+predicate(MyocardialInfarct,SubClassOf,DamageLesion).
+predicate(MyocardialIschaemiaLesion,is,Class).
+predicate(MyocardialIschaemiaLesion,EquivalentTo,IschaemicLesion and (hasSpecificLocation some CardiacMuscle)).
+predicate(MyocardialIschaemiaLesion,SubClassOf,IschaemicLesion).
+predicate(MyocardialRupture,is,Class).
+predicate(MyocardialRupture,EquivalentTo,RupturingLesion and (hasSpecificLocation some CardiacMuscle)).
+predicate(MyocardialRupture,SubClassOf,RupturingLesion).
+predicate(Myocarditis,is,Class).
+predicate(Myocarditis,EquivalentTo,InflammationLesion and (hasSpecificLocation some CardiacMuscle)).
+predicate(Myocarditis,SubClassOf,InflammationLesion).
+predicate(Myolysis,is,Class).
+predicate(Myolysis,EquivalentTo,LysisLesion and (hasSpecificLocation some StriatedMuscle)).
+predicate(Myolysis,SubClassOf,LysisLesion).
+predicate(MyometrialNeoplasia,is,Class).
+predicate(MyometrialNeoplasia,EquivalentTo,NeoplasticLesion and (LocativeAttribute some Myometrium)).
+predicate(MyometrialNeoplasia,SubClassOf,NeoplasticLesion).
+predicate(Myometrium,is,Class).
+predicate(Myopericarditis,is,Class).
+predicate(Myopericarditis,EquivalentTo,InflammationLesion and (hasLocation some CardiacMuscle) and (hasLocation some Pericardium)).
+predicate(Myopericarditis,SubClassOf,InflammationLesion).
+predicate(Myositis,is,Class).
+predicate(Myositis,EquivalentTo,InflammationLesion and (hasSpecificLocation some StriatedMuscle)).
+predicate(Myositis,SubClassOf,InflammationLesion).
+predicate(NAMEDCardiovascularPathology,is,Class).
+predicate(NAMEDCardiovascularPathology,SubClassOf,CardiovascularLesion).
+predicate(NAMEDDuct,is,Class).
+predicate(NAMEDNeoplasticLesion,is,Class).
+predicate(NAMEDNeoplasticLesion,SubClassOf,NeoplasticLesion).
+predicate(NasalDischarge,is,Class).
+predicate(NasalDischarge,EquivalentTo,DischargeLesion and (hasUniqueAssociatedProcess some).
+predicate(NasalDischarge,EquivalentTo,(Discharge and (hasUniqueAssociatedDisplacement some).
+predicate(NasalDischarge,EquivalentTo,(Displacement and (isDisplacementFrom some NasalMeatus)))))).
+predicate(NasalDischarge,SubClassOf,DischargeLesion).
+predicate(NasalMeatus,is,Class).
+predicate(NasalMucousMembrane,is,Class).
+predicate(NasalPassage,is,Class).
+predicate(NasalPolyp,is,Class).
+predicate(NasalPolyp,EquivalentTo,PolypLesion and (hasSpecificLocation some NasalPassage)).
+predicate(NasalPolyp,SubClassOf,PolypLesion).
+predicate(NasalSeptalPerforation,is,Class).
+predicate(NasalSeptalPerforation,EquivalentTo,PerforatingLesion and (hasSpecificLocation some NasalSeptum)).
+predicate(NasalSeptalPerforation,SubClassOf,PerforatingLesion).
+predicate(NasalSeptum,is,Class).
+predicate(NasoPharynx,is,Class).
+predicate(Nasopharyngitis,is,Class).
+predicate(Nasopharyngitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some NasoPharynx)).
+predicate(Nasopharyngitis,SubClassOf,InflammationLesion).
+predicate(NeckOfFemur,is,Class).
+predicate(Necrolysis,is,Class).
+predicate(Necrolysis,SubClassOf,TissueNecrosis).
+predicate(NecrosingLesion,is,Class).
+predicate(NecrosingLesion,SubClassOf,PathologicalBodyStructure).
+predicate(NecrosisLesion,is,Class).
+predicate(NecrosisLesion,SubClassOf,PathologicalBodyStructure).
+predicate(NecrotizingSialometaplasia,is,Class).
+predicate(NecrotizingSialometaplasia,EquivalentTo,InflammationLesion and (hasSpecificLocation some).
+predicate(NecrotizingSialometaplasia,EquivalentTo,(SalivaryGland and (hasUniqueAssociatedProcess some InfarctingProcess))) and (hasStructuralExtent some).
+predicate(NecrotizingSialometaplasia,EquivalentTo,(StructuralExtent and (hasAbsoluteState some lesionLocal)))).
+predicate(NecrotizingSialometaplasia,SubClassOf,InflammationLesion).
+predicate(NecrotizingUlcerativePeriodontitis,is,Class).
+predicate(NecrotizingUlcerativePeriodontitis,SubClassOf,Periodontitis).
+predicate(NeoplasticLesion,is,Class).
+predicate(NeoplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(NeoplasticProcess,is,Class).
+predicate(Nephritis,is,Class).
+predicate(Nephritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Kidney)).
+predicate(Nephritis,SubClassOf,InflammationLesion).
+predicate(Nephronophthisis,is,Class).
+predicate(Nephronophthisis,SubClassOf,Nephritis).
+predicate(NephropathicCystinosis,is,Class).
+predicate(NephropathicCystinosis,EquivalentTo,FanconiCystinosis and (hasSpecificConsequence some Nephropathy)).
+predicate(NephropathicCystinosis,SubClassOf,FanconiCystinosis).
+predicate(Nephropathy,is,Class).
+predicate(Nerve,is,Class).
+predicate(Neuritis,is,Class).
+predicate(Neuritis,EquivalentTo,InflammationLesion and (hasPathologicalStatus some pathological) and (hasSpecificLocation some Nerve)).
+predicate(Neuritis,SubClassOf,InflammationLesion).
+predicate(Nipple,is,Class).
+predicate(NippleDischarge,is,Class).
+predicate(NippleDischarge,EquivalentTo,DischargeLesion and (hasUniqueAssociatedProcess some).
+predicate(NippleDischarge,EquivalentTo,(Discharge and (hasUniqueAssociatedDisplacement some).
+predicate(NippleDischarge,EquivalentTo,(Displacement and (isDisplacementFrom some Nipple)))))).
+predicate(NippleDischarge,SubClassOf,DischargeLesion).
+predicate(NodularHyperplasticLesion,is,Class).
+predicate(NodularHyperplasticLesion,SubClassOf,PathologicalBodyStructure).
+predicate(NodularityState,is,Class).
+predicate(NodularityState,SubClassOf,MorphologyState).
+predicate(NonMetastaticNeoplasticLesion,is,Class).
+predicate(NonMetastaticNeoplasticLesion,EquivalentTo,NeoplasticLesion and (hasMetastaticStatus some nonMetastatic)).
+predicate(NonMetastaticNeoplasticLesion,SubClassOf,NeoplasticLesion).
+predicate(NonNormalBreathing,is,Class).
+predicate(Nose,is,Class).
+predicate(NucleusPulposus,is,Class).
+predicate(NucleusPulposusHernia,is,Class).
+predicate(NucleusPulposusHernia,EquivalentTo,HerniaLesion and (hasSpecificLocation some NucleusPulposus)).
+predicate(NucleusPulposusHernia,SubClassOf,HerniaLesion).
+predicate(ObliteratingBronchiolitis,is,Class).
+predicate(ObliteratingBronchiolitis,SubClassOf,Bronchiolitis).
+predicate(ObstructingLesion,is,Class).
+predicate(ObstructingLesion,SubClassOf,PathologicalBodyStructure).
+predicate(ObstructionDueToAorticValveStenosis,is,Class).
+predicate(ObstructionDueToAorticValveStenosis,SubClassOf,VentricularOutflowObstruction).
+predicate(ObstructiveBronchiolitis,is,Class).
+predicate(ObstructiveBronchiolitis,SubClassOf,Bronchiolitis).
+predicate(OccipitalBone,is,Class).
+predicate(OcclusalSurfaceCaries,is,Class).
+predicate(OcclusalSurfaceCaries,SubClassOf,DentalCaries).
+predicate(OcclusingLesion,is,Class).
+predicate(OcclusingLesion,SubClassOf,PathologicalBodyStructure).
+predicate(OcularRotatoryMuscleParalysis,is,Class).
+predicate(Oedema,is,Class).
+predicate(Oedema,SubClassOf,PathologicalBodyStructure).
+predicate(OedemaOfArm,is,Class).
+predicate(OedemaOfArm,EquivalentTo,Oedema and (hasSpecificLocation some Arm)).
+predicate(OedemaOfArm,SubClassOf,Oedema).
+predicate(OedemaOfExtremity,is,Class).
+predicate(OedemaOfExtremity,EquivalentTo,Oedema and (hasSpecificLocation some Extremity)).
+predicate(OedemaOfExtremity,SubClassOf,Oedema).
+predicate(OedemaOfFinger,is,Class).
+predicate(OedemaOfFinger,EquivalentTo,Oedema and (hasSpecificLocation some Finger)).
+predicate(OedemaOfFinger,SubClassOf,Oedema).
+predicate(OedemaOfFoot,is,Class).
+predicate(OedemaOfFoot,EquivalentTo,Oedema and (hasSpecificLocation some Foot)).
+predicate(OedemaOfFoot,SubClassOf,Oedema).
+predicate(OedemaOfForearm,is,Class).
+predicate(OedemaOfForearm,EquivalentTo,Oedema and (hasSpecificLocation some Forearm)).
+predicate(OedemaOfForearm,SubClassOf,Oedema).
+predicate(OedemaOfHand,is,Class).
+predicate(OedemaOfHand,EquivalentTo,Oedema and (hasSpecificLocation some Hand)).
+predicate(OedemaOfHand,SubClassOf,Oedema).
+predicate(OedemaOfToe,is,Class).
+predicate(OedemaOfToe,EquivalentTo,Oedema and (hasSpecificLocation some Toe)).
+predicate(OedemaOfToe,SubClassOf,Oedema).
+predicate(OedemaOfTrunk,is,Class).
+predicate(OedemaOfTrunk,EquivalentTo,Oedema and (hasLocation some Trunk)).
+predicate(OedemaOfTrunk,SubClassOf,Oedema).
+predicate(OedemaSymptom,is,Class).
+predicate(OedemaSymptom,EquivalentTo,Oedema and (playsConsultationRole some SymptomRole)).
+predicate(OedemaSymptom,SubClassOf,Oedema).
+predicate(OesophagealAtresia,is,Class).
+predicate(OesophagealAtresia,EquivalentTo,AgenesisLesion and (hasLocation some OesophagealLumen)).
+predicate(OesophagealAtresia,SubClassOf,AgenesisLesion).
+predicate(OesophagealAtrophy,is,Class).
+predicate(OesophagealAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some Esophagus)).
+predicate(OesophagealAtrophy,SubClassOf,AtrophicLesion).
+predicate(OesophagealFibrosis,is,Class).
+predicate(OesophagealFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some Esophagus)).
+predicate(OesophagealFibrosis,SubClassOf,FibrosisLesion).
+predicate(OesophagealLumen,is,Class).
+predicate(OesophagealVarix,is,Class).
+predicate(OesophagealVarix,SubClassOf,VarixLesion).
+predicate(OesophagealWeb,is,Class).
+predicate(OesophagealWeb,SubClassOf,OesophagealAtrophy).
+predicate(OldInfarct,is,Class).
+predicate(OldInfarct,EquivalentTo,DamageLesion and (hasUniqueAssociatedProcess some).
+predicate(OldInfarct,EquivalentTo,(InfarctingProcess and (hasTimeOfOccurrence some).
+predicate(OldInfarct,EquivalentTo,(TimeOfOccurrence and (hasAbsoluteState some past)))))).
+predicate(OldInfarct,SubClassOf,DamageLesion).
+predicate(OldMyocardialInfarct,is,Class).
+predicate(OldMyocardialInfarct,SubClassOf,OldInfarct).
+predicate(Onychatrophia,is,Class).
+predicate(Onychatrophia,EquivalentTo,AtrophicLesion and (hasSpecificLocation some KeratinNail)).
+predicate(Onychatrophia,SubClassOf,AtrophicLesion).
+predicate(Onychauxis,is,Class).
+predicate(Onychauxis,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some KeratinNail)).
+predicate(Onychauxis,SubClassOf,HypertrophicLesion).
+predicate(Onychia,is,Class).
+predicate(Onychia,EquivalentTo,InflammationLesion and (hasSpecificLocation some KeratinNail)).
+predicate(Onychia,SubClassOf,InflammationLesion).
+predicate(OnychiaLateralis,is,Class).
+predicate(OnychiaLateralis,EquivalentTo,InflammationLesion and (hasSpecificLocation some KeratinNailMargin)).
+predicate(OnychiaLateralis,SubClassOf,InflammationLesion).
+predicate(OnychiaMaligna,is,Class).
+predicate(OnychiaMaligna,SubClassOf,Onychia).
+predicate(Onychoclasis,is,Class).
+predicate(Onychoclasis,EquivalentTo,BreakingLesion and (hasSpecificLocation some KeratinNail)).
+predicate(Onychoclasis,SubClassOf,BreakingLesion).
+predicate(Onychodystrophy,is,Class).
+predicate(Onychodystrophy,SubClassOf,DystrophicLesion).
+predicate(Onychomycosis,is,Class).
+predicate(Onychomycosis,SubClassOf,FungalInfectionLesion).
+predicate(OpportunisticInfection,is,Class).
+predicate(OpportunisticInfection,EquivalentTo,InfectionLesion and (isSpecificConsequenceOf some LowImmuneResponse)).
+predicate(OpportunisticInfection,SubClassOf,InfectionLesion).
+predicate(OpticNerve,is,Class).
+predicate(OpticNeuritis,is,Class).
+predicate(OpticNeuritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some OpticNerve)).
+predicate(OpticNeuritis,SubClassOf,InflammationLesion).
+predicate(OpticPapilla,is,Class).
+predicate(OralAphthousUlcer,is,Class).
+predicate(OralAphthousUlcer,SubClassOf,AphthousUlcer).
+predicate(OralHerpes,is,Class).
+predicate(OralHerpes,EquivalentTo,InfectionLesion and (LocativeAttribute some OroPharynx) and (isSpecificConsequenceOf some AlphaherpesVirus)).
+predicate(OralHerpes,SubClassOf,InfectionLesion).
+predicate(OralInflammation,is,Class).
+predicate(OralInflammation,EquivalentTo,InflammationLesion and (LocativeAttribute some Mouth)).
+predicate(OralInflammation,SubClassOf,InflammationLesion).
+predicate(OralLesion,is,Class).
+predicate(OralLesion,SubClassOf,PathologicalStructure).
+predicate(OralLeukoplakia,is,Class).
+predicate(OralLeukoplakia,EquivalentTo,KeratosisLesion and (hasSpecificLocation some OralMucousMembrane)).
+predicate(OralLeukoplakia,SubClassOf,KeratosisLesion).
+predicate(OralMucousMembrane,is,Class).
+predicate(OralUlcer,is,Class).
+predicate(OralUlcer,EquivalentTo,UlceratingLesion and (hasSpecificLocation some Mouth)).
+predicate(OralUlcer,SubClassOf,UlceratingLesion).
+predicate(Orchitis,is,Class).
+predicate(Orchitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Testis)).
+predicate(Orchitis,SubClassOf,InflammationLesion).
+predicate(OrganismBiteSymptom,is,Class).
+predicate(OrganismBiteSymptom,SubClassOf,ToothBiteLesion).
+predicate(Ornithocoris,is,Class).
+predicate(Ornithocoris,SubClassOf,Hemiptera).
+predicate(Ornithodoros,is,Class).
+predicate(OrnithodorosTuricata,is,Class).
+predicate(OrnithodorosTuricata,SubClassOf,Ornithodoros).
+predicate(OroPharynx,is,Class).
+predicate(OropharyngealIrritation,is,Class).
+predicate(OropharyngealIrritation,SubClassOf,Irritation).
+predicate(Osteomyelitis,is,Class).
+predicate(Osteomyelitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Bone)).
+predicate(Osteomyelitis,SubClassOf,InflammationLesion).
+predicate(OtitisExterna,is,Class).
+predicate(OtitisExterna,EquivalentTo,InflammationLesion and (hasSpecificLocation some ExternalAuditoryCanal)).
+predicate(OtitisExterna,SubClassOf,InflammationLesion).
+predicate(OtitisMedia,is,Class).
+predicate(OtitisMedia,EquivalentTo,InflammationLesion and (hasSpecificLocation some MiddleEar)).
+predicate(OtitisMedia,SubClassOf,InflammationLesion).
+predicate(OvarianNeoplasia,is,Class).
+predicate(OvarianNeoplasia,EquivalentTo,NeoplasticLesion and (LocativeAttribute some Ovary)).
+predicate(OvarianNeoplasia,SubClassOf,NeoplasticLesion).
+predicate(OvarianVaricocoele,is,Class).
+predicate(OvarianVaricocoele,SubClassOf,VarixLesion).
+predicate(Ovary,is,Class).
+predicate(PalmarFascia,is,Class).
+predicate(PalpabilityState,is,Class).
+predicate(PalpabilityState,SubClassOf,MorphologyState).
+predicate(PalpebralOedema,is,Class).
+predicate(PalpebralOedema,EquivalentTo,Oedema and (hasSpecificLocation some Palpebrum)).
+predicate(PalpebralOedema,SubClassOf,Oedema).
+predicate(Palpebrum,is,Class).
+predicate(Pancarditis,is,Class).
+predicate(Pancarditis,SubClassOf,Carditis).
+predicate(Pancreas,is,Class).
+predicate(Pancreatitis,is,Class).
+predicate(Pancreatitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Pancreas)).
+predicate(Pancreatitis,SubClassOf,InflammationLesion).
+predicate(Panniculitis,is,Class).
+predicate(Panniculitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some SubcutaneousFatLayer)).
+predicate(Panniculitis,SubClassOf,InflammationLesion).
+predicate(PapillaryGingivitis,is,Class).
+predicate(PapillaryGingivitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some InterdentalGingiva)).
+predicate(PapillaryGingivitis,SubClassOf,InflammationLesion).
+predicate(PapillaryMuscle,is,Class).
+predicate(Papilloedema,is,Class).
+predicate(Papilloedema,EquivalentTo,Oedema and (hasSpecificLocation some OpticPapilla)).
+predicate(Papilloedema,SubClassOf,Oedema).
+predicate(Papilloma,is,Class).
+predicate(Papilloma,SubClassOf,EpithelialHyperplasticLesion).
+predicate(ParalyticIleus,is,Class).
+predicate(ParalyticIleus,SubClassOf,GastroIntestinalObstruction).
+predicate(ParalyticStrabismus,is,Class).
+predicate(ParalyticStrabismus,EquivalentTo,Squint and (isImmediateConsequenceOf some OcularRotatoryMuscleParalysis)).
+predicate(ParalyticStrabismus,SubClassOf,Squint).
+predicate(Paraphimosis,is,Class).
+predicate(Paraphimosis,SubClassOf,StrictureOfPrepuce).
+predicate(ParasympatheticComponentOfFacialNerve,is,Class).
+predicate(ParasympatheticComponentOfFacialNerve,SubClassOf,ParasympatheticNerveFibre).
+predicate(ParasympatheticComponentOfOculomotorNerve,is,Class).
+predicate(ParasympatheticComponentOfOculomotorNerve,SubClassOf,ParasympatheticNerveFibre).
+predicate(ParasympatheticNerveFibre,is,Class).
+predicate(ParasympatheticNerveFibre,SubClassOf,AutonomicNerveFibre).
+predicate(ParietalBone,is,Class).
+predicate(PartialBiliaryObstruction,is,Class).
+predicate(PartialBiliaryObstruction,EquivalentTo,PartialObstructionLesion and (hasSpecificLocation some BileDuct)).
+predicate(PartialBiliaryObstruction,SubClassOf,PartialObstructionLesion).
+predicate(PartialObstructionLesion,is,Class).
+predicate(PartialObstructionLesion,EquivalentTo,ObstructingLesion and (hasCompleteness some).
+predicate(PartialObstructionLesion,EquivalentTo,(Completeness and (hasAbsoluteState some partial)))).
+predicate(PartialObstructionLesion,SubClassOf,ObstructingLesion).
+predicate(Patency,is,Class).
+predicate(PatencyState,is,Class).
+predicate(PatencyState,SubClassOf,MorphologyState).
+predicate(PatentDuctusArteriosus,is,Class).
+predicate(PatentDuctusArteriosus,EquivalentTo,DuctusArteriosus and (hasPatency some).
+predicate(PatentDuctusArteriosus,EquivalentTo,(Patency and (hasAbsoluteState some patent)))).
+predicate(PatentDuctusArteriosus,SubClassOf,DuctusArteriosus,).
+predicate(PatentDuctusArteriosus,SubClassOf,hasAcquisitionMode some).
+predicate(PatentDuctusArteriosus,SubClassOf,(AcquisitionMode and (hasAbsoluteState some congenital)),).
+predicate(PatentDuctusArteriosus,SubClassOf,hasPathologicalStatus some pathological).
+predicate(PathologicalAccumulation,is,Class).
+predicate(PathologicalAccumulation,SubClassOf,PathologicalBodyStructure).
+predicate(PathologicalBodyStructure,is,Class).
+predicate(PathologicalBodyStructure,EquivalentTo,BodyStructure and (hasPathologicalStatus some pathological)).
+predicate(PathologicalBodyStructure,SubClassOf,BodyStructure).
+predicate(PathologicalCyst,is,Class).
+predicate(PathologicalCystCavity,is,Class).
+predicate(PathologicalCystCavity,EquivalentTo,BodyCavity and (isSpaceDefinedBy some PathologicalCyst)).
+predicate(PathologicalCystCavity,SubClassOf,BodyCavity).
+predicate(PathologicalCystOfThyroglossalTract,is,Class).
+predicate(PathologicalCystOfThyroglossalTract,SubClassOf,PathologicalBodyStructure).
+predicate(PathologicalFeatureOfStructure,is,Class).
+predicate(PathologicalFeatureOfStructure,EquivalentTo,StructuralFeature and (hasPathologicalStatus some pathological)).
+predicate(PathologicalFeatureOfStructure,SubClassOf,StructuralFeature).
+predicate(PathologicalLesionSymptom,is,Class).
+predicate(PathologicalLesionSymptom,SubClassOf,PathologicalBodyStructure).
+predicate(PathologicalOrPhysiologicalStatus,is,Class).
+predicate(PathologicalStandingPosture,is,Class).
+predicate(PathologicalStandingPosture,EquivalentTo,StandingPosture and (hasPathologicalStatus some pathological)).
+predicate(PathologicalStandingPosture,SubClassOf,StandingPosture).
+predicate(PathologicalStructure,is,Class).
+predicate(PathologicalStructure,EquivalentTo,SolidStructure and (hasPathologicalStatus some pathological)).
+predicate(PathologicalStructure,SubClassOf,SolidStructure).
+predicate(PelvicInflammatoryDisease,is,Class).
+predicate(PelvicInflammatoryDisease,EquivalentTo,InflammationLesion and (LocativeAttribute some AnatomyWithinFemalePelvicCavity) and (isConsequenceOf some InfectionLesion)).
+predicate(PelvicInflammatoryDisease,SubClassOf,InflammationLesion).
+predicate(PenileFibrosis,is,Class).
+predicate(PenileFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some Penis)).
+predicate(PenileFibrosis,SubClassOf,FibrosisLesion).
+predicate(PenileInfection,is,Class).
+predicate(PenileInfection,EquivalentTo,InfectionLesion and (hasSpecificLocation some Penis)).
+predicate(PenileInfection,SubClassOf,InfectionLesion).
+predicate(PenileNeoplasia,is,Class).
+predicate(PenileNeoplasia,EquivalentTo,NeoplasticLesion and (LocativeAttribute some Penis)).
+predicate(PenileNeoplasia,SubClassOf,NeoplasticLesion).
+predicate(PenileOedemaSymptom,is,Class).
+predicate(PenileOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(PenileUlcer,is,Class).
+predicate(PenileUlcer,EquivalentTo,UlceratingLesion and (hasLocation some Penis)).
+predicate(PenileUlcer,SubClassOf,UlceratingLesion).
+predicate(Penis,is,Class).
+predicate(Pepsin,is,Class).
+predicate(PepticUlcer,is,Class).
+predicate(PepticUlcer,EquivalentTo,UlceratingLesion and (hasLocation some GastrointestinalTract) and (hasUniqueAssociatedProcess some).
+predicate(PepticUlcer,EquivalentTo,(UlceratingProcess and (isSpecificConsequenceOf some Pepsin)))).
+predicate(PepticUlcer,SubClassOf,UlceratingLesion).
+predicate(PerforatingLesion,is,Class).
+predicate(PerforatingLesion,SubClassOf,PathologicalBodyStructure).
+predicate(PerforatingLesionOfPylorus,is,Class).
+predicate(PerforatingLesionOfPylorus,EquivalentTo,PerforatingLesion and (hasSpecificLocation some WallOfPylorus)).
+predicate(PerforatingLesionOfPylorus,SubClassOf,PerforatingLesion).
+predicate(PeriapicalGranuloma,is,Class).
+predicate(PeriapicalGranuloma,EquivalentTo,GranulomaLesion and (hasChronicity some ChronicFeature) and (hasSpecificLocation some PeriapicalRegionOfTooth) and (isConsequenceOf some PulpitisOfTooth)).
+predicate(PeriapicalGranuloma,SubClassOf,GranulomaLesion).
+predicate(PeriapicalRegionOfTooth,is,Class).
+predicate(PericardialAdhesion,is,Class).
+predicate(PericardialAdhesion,EquivalentTo,AdhesionLesion and (hasSpecificLocation some Pericardium)).
+predicate(PericardialAdhesion,SubClassOf,AdhesionLesion).
+predicate(PericardialScar,is,Class).
+predicate(PericardialScar,EquivalentTo,Scar and (hasSpecificLocation some Pericardium)).
+predicate(PericardialScar,SubClassOf,Scar).
+predicate(Pericarditis,is,Class).
+predicate(Pericarditis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Pericardium)).
+predicate(Pericarditis,SubClassOf,InflammationLesion).
+predicate(Pericardium,is,Class).
+predicate(Periodontitis,is,Class).
+predicate(Periodontitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Periodontum)).
+predicate(Periodontitis,SubClassOf,InflammationLesion).
+predicate(Periodontum,is,Class).
+predicate(PerioralDermatitis,is,Class).
+predicate(PerioralDermatitis,SubClassOf,FacialDermatitis).
+predicate(PerioralOedemaSymptom,is,Class).
+predicate(PerioralOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(PeriorbitalOedema,is,Class).
+predicate(PeriorbitalOedema,EquivalentTo,Oedema and (hasSpecificLocation some PeriorbitalSkin)).
+predicate(PeriorbitalOedema,SubClassOf,Oedema).
+predicate(PeriorbitalSkin,is,Class).
+predicate(PeripheralBloodVessel,is,Class).
+predicate(PeripheralNeuritis,is,Class).
+predicate(PeripheralNeuritis,EquivalentTo,InflammationLesion and (hasPathologicalStatus some pathological) and (hasSpecificLocation some).
+predicate(PeripheralNeuritis,EquivalentTo,(Nerve and (hasCentralPeripheralSelector some bodyPeripherySelection)))).
+predicate(PeripheralNeuritis,SubClassOf,InflammationLesion).
+predicate(PeripheralVascularThrombosis,is,Class).
+predicate(PeripheralVascularThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some PeripheralBloodVessel)).
+predicate(PeripheralVascularThrombosis,SubClassOf,ThrombusLesion).
+predicate(Peritoneum,is,Class).
+predicate(Peritonitis,is,Class).
+predicate(Peritonitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Peritoneum)).
+predicate(Peritonitis,SubClassOf,InflammationLesion).
+predicate(PersistentDescendingVein,is,Class).
+predicate(PersistentDescendingVein,SubClassOf,NAMEDCardiovascularPathology).
+predicate(PersistentVerticalVein,is,Class).
+predicate(PersistentVerticalVein,SubClassOf,NAMEDCardiovascularPathology).
+predicate(Personality,is,Class).
+predicate(Personality,SubClassOf,PsychologicalConstruct).
+predicate(PersonalityTrait,is,Class).
+predicate(PersonalityTrait,SubClassOf,PsychologicalConstruct).
+predicate(Pharyngitis,is,Class).
+predicate(Pharyngitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Pharynx)).
+predicate(Pharyngitis,SubClassOf,InflammationLesion).
+predicate(Pharynx,is,Class).
+predicate(Phenomenon,is,Class).
+predicate(PhenotypicAppearanceState,is,Class).
+predicate(PhenotypicAppearanceState,SubClassOf,MorphologyState).
+predicate(Phimosis,is,Class).
+predicate(Phimosis,SubClassOf,StrictureOfPrepuce).
+predicate(Phlebitis,is,Class).
+predicate(Phlebitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Vein)).
+predicate(Phlebitis,SubClassOf,InflammationLesion).
+predicate(Phlegm,is,Class).
+predicate(Phlehmon,is,Class).
+predicate(Phlehmon,EquivalentTo,InflammationLesion and (hasChronicity some).
+predicate(Phlehmon,EquivalentTo,(Chronicity and (hasAbsoluteState some acute))) and (hasSpecificConsequence some Pus) and (hasSpecificLocation some SubcutaneousConnectiveTissue)).
+predicate(Phlehmon,SubClassOf,InflammationLesion).
+predicate(PhysicalPresentationState,is,Class).
+predicate(PhysicalPresentationState,SubClassOf,MorphologyState).
+predicate(PitOrFissureCaries,is,Class).
+predicate(PitOrFissureCaries,SubClassOf,DentalCaries).
+predicate(Placenta,is,Class).
+predicate(PlacentalAbruption,is,Class).
+predicate(PlacentalAbruption,EquivalentTo,DetachmentLesion and (hasSpecificLocation some Placenta)).
+predicate(PlacentalAbruption,SubClassOf,DetachmentLesion).
+predicate(Plan,is,Class).
+predicate(Plan,SubClassOf,LogicalStructure).
+predicate(PlasmaCellEnlargement,is,Class).
+predicate(PlasmaCellGingivitis,is,Class).
+predicate(PlasmaCellGingivitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Gum) and (isConsequenceOf some PlasmaCellEnlargement)).
+predicate(PlasmaCellGingivitis,SubClassOf,InflammationLesion).
+predicate(PleuralFibrosis,is,Class).
+predicate(PleuralFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some PleuralMembrane)).
+predicate(PleuralFibrosis,SubClassOf,FibrosisLesion).
+predicate(PleuralMembrane,is,Class).
+predicate(Pleurisy,is,Class).
+predicate(Pleurisy,EquivalentTo,InflammationLesion and (hasSpecificLocation some PleuralMembrane)).
+predicate(Pleurisy,SubClassOf,InflammationLesion).
+predicate(Pneumonia,is,Class).
+predicate(Pneumonia,EquivalentTo,InflammationLesion and (hasSpecificLocation some LungParenchymalStructure)).
+predicate(Pneumonia,SubClassOf,InflammationLesion).
+predicate(Pneumonitis,is,Class).
+predicate(Pneumonitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Lung)).
+predicate(Pneumonitis,SubClassOf,InflammationLesion).
+predicate(Polymyositis,is,Class).
+predicate(Polymyositis,SubClassOf,Myositis).
+predicate(Polyneuritis,is,Class).
+predicate(Polyneuritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some MultipleNerves)).
+predicate(Polyneuritis,SubClassOf,InflammationLesion).
+predicate(PolypLesion,is,Class).
+predicate(PolypLesion,SubClassOf,PathologicalBodyStructure).
+predicate(PostTraumaFusionLesion,is,Class).
+predicate(PostTraumaFusionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(PosteriorVaginalWall,is,Class).
+predicate(PrematureAtrialBeat,is,Class).
+predicate(PrematureAtrialBeat,EquivalentTo,AtrialBeat and (hasTimingAppropriateness some).
+predicate(PrematureAtrialBeat,EquivalentTo,(TimingAppropriateness and (hasAbsoluteState some tooEarly)))).
+predicate(PrematureAtrialBeat,SubClassOf,AtrialBeat).
+predicate(Prepuce,is,Class).
+predicate(PrimaryLiverTumour,is,Class).
+predicate(PrimaryLiverTumour,SubClassOf,HepaticTumour).
+predicate(ProctitisLesion,is,Class).
+predicate(ProctitisLesion,EquivalentTo,InflammationLesion and (hasSpecificLocation some Rectum)).
+predicate(ProctitisLesion,SubClassOf,InflammationLesion).
+predicate(ProlapseLesion,is,Class).
+predicate(ProlapseLesion,SubClassOf,PathologicalBodyStructure).
+predicate(ProstateGland,is,Class).
+predicate(ProstaticHypertrophy,is,Class).
+predicate(ProstaticHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some ProstateGland)).
+predicate(ProstaticHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(ProstaticNeoplasia,is,Class).
+predicate(ProstaticNeoplasia,EquivalentTo,NeoplasticLesion and (LocativeAttribute some ProstateGland)).
+predicate(ProstaticNeoplasia,SubClassOf,NeoplasticLesion).
+predicate(Prostatitis,is,Class).
+predicate(Prostatitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some ProstateGland)).
+predicate(Prostatitis,SubClassOf,InflammationLesion).
+predicate(Protocol,is,Class).
+predicate(Protocol,SubClassOf,LogicalStructure).
+predicate(Protozoa,is,Class).
+predicate(ProtozoalInfectionLesion,is,Class).
+predicate(ProtozoalInfectionLesion,EquivalentTo,InfectionLesion and (isSpecificConsequenceOf some Protozoa)).
+predicate(ProtozoalInfectionLesion,SubClassOf,InfectionLesion).
+predicate(Pseudodiverticulosis,is,Class).
+predicate(Pseudodiverticulosis,SubClassOf,PathologicalBodyStructure).
+predicate(Pseudomonas,is,Class).
+predicate(Pseudomonas,SubClassOf,Bacterium,).
+predicate(Pseudomonas,SubClassOf,hasCellMorphology some).
+predicate(Pseudomonas,SubClassOf,(CellMorphology and (hasAbsoluteState some flagellated)),).
+predicate(Pseudomonas,SubClassOf,isActedOnSpecificallyBy some).
+predicate(Pseudomonas,SubClassOf,(Gramstaining and (hasEffectiveness some).
+predicate(Pseudomonas,SubClassOf,(Effectiveness and (hasAbsoluteState some ineffective))))).
+predicate(PseudomonasAcidovorans,is,Class).
+predicate(PseudomonasAcidovorans,SubClassOf,Pseudomonas).
+predicate(PseudomonasAeruginosa,is,Class).
+predicate(PseudomonasAeruginosa,SubClassOf,Pseudomonas).
+predicate(PseudomonasCepacia,is,Class).
+predicate(PseudomonasCepacia,SubClassOf,Pseudomonas).
+predicate(PseudomonasDiminuta,is,Class).
+predicate(PseudomonasDiminuta,SubClassOf,Pseudomonas).
+predicate(PseudomonasFuorescens,is,Class).
+predicate(PseudomonasFuorescens,SubClassOf,Pseudomonas).
+predicate(PseudomonasMallei,is,Class).
+predicate(PseudomonasMallei,SubClassOf,Pseudomonas).
+predicate(PseudomonasPseudoalcaligenes,is,Class).
+predicate(PseudomonasPseudoalcaligenes,SubClassOf,Pseudomonas).
+predicate(PseudomonasPseudomallei,is,Class).
+predicate(PseudomonasPseudomallei,SubClassOf,Pseudomonas).
+predicate(PseudomonasStutzeri,is,Class).
+predicate(PseudomonasStutzeri,SubClassOf,Pseudomonas).
+predicate(PsoriaticArthropathy,is,Class).
+predicate(PsoriaticArthropathy,SubClassOf,Arthritis).
+predicate(Psyche,is,Class).
+predicate(Psyche,SubClassOf,PsychologicalConstruct).
+predicate(PsychologicalConstruct,is,Class).
+predicate(PsychologicalConstruct,SubClassOf,PsychosocialConstruct,).
+predicate(PsychologicalConstruct,SubClassOf,isNonCausallyLinkedTo some PsychologicalSystem,).
+predicate(PsychologicalConstruct,SubClassOf,playsConsultationRole some SymptomRole).
+predicate(PsychologicalSystem,is,Class).
+predicate(PsychologicalSystem,SubClassOf,FunctionalSystem).
+predicate(PsychosocialConstruct,is,Class).
+predicate(PulmonaryAcinus,is,Class).
+predicate(PulmonaryAlveolitis,is,Class).
+predicate(PulmonaryAlveolitis,SubClassOf,Alveolitis).
+predicate(PulmonaryArteryAneurysm,is,Class).
+predicate(PulmonaryArteryAneurysm,SubClassOf,VascularDilatationLesion).
+predicate(PulmonaryAtresia,is,Class).
+predicate(PulmonaryAtresia,EquivalentTo,AgenesisLesion and (hasSpecificLocation some PulmonaryOrifice)).
+predicate(PulmonaryAtresia,SubClassOf,AgenesisLesion).
+predicate(PulmonaryConsolidation,is,Class).
+predicate(PulmonaryConsolidation,EquivalentTo,ConsolidationLesion and (hasSpecificLocation some Lung)).
+predicate(PulmonaryConsolidation,SubClassOf,ConsolidationLesion).
+predicate(PulmonaryEmbolism,is,Class).
+predicate(PulmonaryEmbolism,EquivalentTo,EmbolismLesion and (hasSpecificLocation some).
+predicate(PulmonaryEmbolism,EquivalentTo,(Artery and (serves some Lung)))).
+predicate(PulmonaryEmbolism,SubClassOf,EmbolismLesion,).
+predicate(PulmonaryEmbolism,SubClassOf,LocativeAttribute some Lung).
+predicate(PulmonaryFibrosis,is,Class).
+predicate(PulmonaryFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some Lung)).
+predicate(PulmonaryFibrosis,SubClassOf,FibrosisLesion).
+predicate(PulmonaryInfarction,is,Class).
+predicate(PulmonaryInfarction,EquivalentTo,DamageLesion and (hasLocation some Lung)).
+predicate(PulmonaryInfarction,SubClassOf,DamageLesion).
+predicate(PulmonaryInterstitialTissue,is,Class).
+predicate(PulmonaryOrifice,is,Class).
+predicate(PulmonaryTuberculosis,is,Class).
+predicate(PulmonaryTuberculosis,EquivalentTo,InfectionLesion and (hasSpecificLocation some Lung) and (isSpecificImmediateConsequenceOf some MycobacteriumTuberculosisHominis)).
+predicate(PulmonaryTuberculosis,SubClassOf,InfectionLesion).
+predicate(PulmonaryValve,is,Class).
+predicate(PulmonaryValveStenosisLesion,is,Class).
+predicate(PulmonaryValveStenosisLesion,EquivalentTo,Stricture and (hasSpecificLocation some PulmonaryValve)).
+predicate(PulmonaryValveStenosisLesion,SubClassOf,Stricture).
+predicate(PulmonaryValveStenosisLesionWithInsufficiency,is,Class).
+predicate(PulmonaryValveStenosisLesionWithInsufficiency,SubClassOf,PulmonaryValveStenosisLesion).
+predicate(PulpTissueOfTooth,is,Class).
+predicate(PulpitisOfTooth,is,Class).
+predicate(PulpitisOfTooth,EquivalentTo,InflammationLesion and (hasSpecificLocation some PulpTissueOfTooth)).
+predicate(PulpitisOfTooth,SubClassOf,InflammationLesion).
+predicate(PupilOfEye,is,Class).
+predicate(Pus,is,Class).
+predicate(Pyelitis,is,Class).
+predicate(Pyelitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some RenalPelvis)).
+predicate(Pyelitis,SubClassOf,InflammationLesion).
+predicate(Pyelonephritis,is,Class).
+predicate(Pyelonephritis,SubClassOf,Pyelitis).
+predicate(Pylorus,is,Class).
+predicate(Pyoderma,is,Class).
+predicate(Pyoderma,EquivalentTo,InfectionLesion and (hasSpecificConsequence some Pus) and (hasSpecificLocation some SkinCovering)).
+predicate(Pyoderma,SubClassOf,InfectionLesion).
+predicate(RadialFracture,is,Class).
+predicate(RadialFracture,EquivalentTo,Fracture and (hasSpecificLocation some Radius)).
+predicate(RadialFracture,SubClassOf,Fracture).
+predicate(Radiation,is,Class).
+predicate(RadiationBurn,is,Class).
+predicate(RadiationBurn,EquivalentTo,Burn and (isConsequenceOf some Radiation)).
+predicate(RadiationBurn,SubClassOf,Burn).
+predicate(Radius,is,Class).
+predicate(RecentMyocardialInfarct,is,Class).
+predicate(RecentMyocardialInfarct,SubClassOf,MyocardialInfarct).
+predicate(RectalIrritation,is,Class).
+predicate(RectalIrritation,SubClassOf,ProctitisLesion).
+predicate(Rectocoele,is,Class).
+predicate(Rectocoele,EquivalentTo,ProlapseLesion and (hasLocation some Rectum)).
+predicate(Rectocoele,SubClassOf,ProlapseLesion,).
+predicate(Rectocoele,SubClassOf,hasSpecificLocation some PosteriorVaginalWall).
+predicate(Rectum,is,Class).
+predicate(RecurrentCaries,is,Class).
+predicate(RecurrentCaries,SubClassOf,DentalCaries).
+predicate(RecurrentCornealEpithelialErosion,is,Class).
+predicate(RecurrentCornealEpithelialErosion,SubClassOf,CornealEpithelialErosion).
+predicate(RecurrentUrinaryTractInfection,is,Class).
+predicate(RecurrentUrinaryTractInfection,SubClassOf,UrinaryTractInfection).
+predicate(ReentrantPathway,is,Class).
+predicate(ReentrantPathway,SubClassOf,AberrantConductingPathway).
+predicate(RefluxEsophagitis,is,Class).
+predicate(RefluxEsophagitis,SubClassOf,EsophagitisLesion).
+predicate(RenalArtery,is,Class).
+predicate(RenalArteryStenosis,is,Class).
+predicate(RenalArteryStenosis,EquivalentTo,Stricture and (hasSpecificLocation some RenalArtery)).
+predicate(RenalArteryStenosis,SubClassOf,Stricture).
+predicate(RenalInfectionLesion,is,Class).
+predicate(RenalInfectionLesion,EquivalentTo,InfectionLesion and (hasSpecificLocation some Kidney)).
+predicate(RenalInfectionLesion,SubClassOf,InfectionLesion).
+predicate(RenalInterstitialStructure,is,Class).
+predicate(RenalPelvis,is,Class).
+predicate(RenalTuberculosis,is,Class).
+predicate(RenalTuberculosis,SubClassOf,RenalInfectionLesion).
+predicate(RenalTumour,is,Class).
+predicate(RenalTumour,EquivalentTo,NeoplasticLesion and (LocativeAttribute some Kidney)).
+predicate(RenalTumour,SubClassOf,NeoplasticLesion).
+predicate(RenalVessel,is,Class).
+predicate(RenovascularFibrosis,is,Class).
+predicate(RenovascularFibrosis,EquivalentTo,FibrosisLesion and (hasSpecificLocation some RenalVessel)).
+predicate(RenovascularFibrosis,SubClassOf,FibrosisLesion).
+predicate(Report,is,Class).
+predicate(Report,SubClassOf,LogicalStructure).
+predicate(RespiratoryCatarrhSymptom,is,Class).
+predicate(RespiratoryCatarrhSymptom,SubClassOf,InflammationOfRespiratoryMucosa).
+predicate(RespiratoryInfection,is,Class).
+predicate(RespiratoryInfection,EquivalentTo,InfectionLesion and (LocativeAttribute some RespiratoryTract)).
+predicate(RespiratoryInfection,SubClassOf,InfectionLesion).
+predicate(RespiratoryInflammation,is,Class).
+predicate(RespiratoryInflammation,EquivalentTo,InflammationLesion and (LocativeAttribute some RespiratoryTract)).
+predicate(RespiratoryInflammation,SubClassOf,InflammationLesion).
+predicate(RespiratoryMucousMembrane,is,Class).
+predicate(RespiratoryTract,is,Class).
+predicate(RespiratoryTractInfection,is,Class).
+predicate(RespiratoryTractInfection,EquivalentTo,InfectionLesion and (LocativeAttribute some RespiratoryTract)).
+predicate(RespiratoryTractInfection,SubClassOf,InfectionLesion).
+predicate(ReversiblePulpitisOfTooth,is,Class).
+predicate(ReversiblePulpitisOfTooth,SubClassOf,PulpitisOfTooth).
+predicate(RheumaticAorticValveStenosisLesion,is,Class).
+predicate(RheumaticAorticValveStenosisLesion,SubClassOf,AorticValveStenosisLesion).
+predicate(RheumaticArthritis,is,Class).
+predicate(RheumaticArthritis,SubClassOf,Arthritis).
+predicate(RheumaticEndocarditis,is,Class).
+predicate(RheumaticEndocarditis,SubClassOf,Endocarditis).
+predicate(RheumaticHeartValveStenosisLesion,is,Class).
+predicate(RheumaticHeartValveStenosisLesion,SubClassOf,HeartValveStenosis).
+predicate(RheumaticMediastinopericarditis,is,Class).
+predicate(RheumaticMediastinopericarditis,SubClassOf,Mediastinopericarditis).
+predicate(RheumaticMitralStenosisLesion,is,Class).
+predicate(RheumaticMitralStenosisLesion,SubClassOf,MitralStenosisLesion).
+predicate(RheumaticMyocarditis,is,Class).
+predicate(RheumaticMyocarditis,SubClassOf,Myocarditis).
+predicate(RheumaticMyopericarditis,is,Class).
+predicate(RheumaticMyopericarditis,SubClassOf,Myopericarditis).
+predicate(RheumaticPericarditis,is,Class).
+predicate(RheumaticPericarditis,SubClassOf,Pericarditis).
+predicate(RheumaticPulmonaryValveStenosisLesion,is,Class).
+predicate(RheumaticPulmonaryValveStenosisLesion,SubClassOf,PulmonaryValveStenosisLesion).
+predicate(RheumaticTricuspidStenosisLesion,is,Class).
+predicate(RheumaticTricuspidStenosisLesion,SubClassOf,TricuspidStenosisLesion).
+predicate(RheumaticValvulitis,is,Class).
+predicate(RheumaticValvulitis,SubClassOf,Valvulitis).
+predicate(Rhinitis,is,Class).
+predicate(Rhinitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some).
+predicate(Rhinitis,EquivalentTo,(MucousMembrane and (IsDivisionOf some Nose)))).
+predicate(Rhinitis,SubClassOf,InflammationLesion).
+predicate(Rhinorrhoea,is,Class).
+predicate(Rhinorrhoea,EquivalentTo,DischargeLesion and (hasUniqueAssociatedProcess some).
+predicate(Rhinorrhoea,EquivalentTo,(Discharge and (hasUniqueAssociatedDisplacement some).
+predicate(Rhinorrhoea,EquivalentTo,(Displacement and (isDisplacementFrom some NasalMucousMembrane)))))).
+predicate(Rhinorrhoea,SubClassOf,DischargeLesion).
+predicate(RightHeartVentricle,is,Class).
+predicate(RightMainCoronaryArtery,is,Class).
+predicate(RightMainCoronaryArteryThrombosis,is,Class).
+predicate(RightMainCoronaryArteryThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some RightMainCoronaryArtery)).
+predicate(RightMainCoronaryArteryThrombosis,SubClassOf,ThrombusLesion).
+predicate(RightVentricularMyocardialHypertrophy,is,Class).
+predicate(RightVentricularMyocardialHypertrophy,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some).
+predicate(RightVentricularMyocardialHypertrophy,EquivalentTo,(CardiacMuscle and (isSpecificLayerOf some RightHeartVentricle)))).
+predicate(RightVentricularMyocardialHypertrophy,SubClassOf,HypertrophicLesion).
+predicate(RigidityState,is,Class).
+predicate(RigidityState,SubClassOf,MorphologyState).
+predicate(Ringworm,is,Class).
+predicate(Ringworm,EquivalentTo,InfectionLesion and (hasSpecificLocation some ComponentOfSkinAsOrgan) and (isConsequenceOf some Fungus)).
+predicate(Ringworm,SubClassOf,InfectionLesion).
+predicate(RingwormWithInflammation,is,Class).
+predicate(RingwormWithInflammation,SubClassOf,Ringworm).
+predicate(RuptureOfChordaeTendinae,is,Class).
+predicate(RuptureOfChordaeTendinae,EquivalentTo,Tear and (hasSpecificLocation some ChordaeTendinae)).
+predicate(RuptureOfChordaeTendinae,SubClassOf,Tear).
+predicate(RuptureOfHeart,is,Class).
+predicate(RuptureOfHeart,EquivalentTo,RupturingLesion and (hasSpecificLocation some HeartWall)).
+predicate(RuptureOfHeart,SubClassOf,RupturingLesion).
+predicate(RuptureOfPapillaryMuscle,is,Class).
+predicate(RuptureOfPapillaryMuscle,EquivalentTo,Tear and (hasSpecificLocation some PapillaryMuscle)).
+predicate(RuptureOfPapillaryMuscle,SubClassOf,Tear).
+predicate(RupturingLesion,is,Class).
+predicate(RupturingLesion,SubClassOf,PathologicalBodyStructure).
+predicate(SagittalSuture,is,Class).
+predicate(SalivaryDuct,is,Class).
+predicate(SalivaryGland,is,Class).
+predicate(Scar,is,Class).
+predicate(Scar,SubClassOf,PathologicalBodyStructure).
+predicate(ScarSymptom,is,Class).
+predicate(ScarSymptom,EquivalentTo,Scar and (playsConsultationRole some SymptomRole)).
+predicate(ScarSymptom,SubClassOf,Scar).
+predicate(ScarringOfPapillaryMuscle,is,Class).
+predicate(ScarringOfPapillaryMuscle,EquivalentTo,Scar and (hasSpecificLocation some PapillaryMuscle)).
+predicate(ScarringOfPapillaryMuscle,SubClassOf,Scar).
+predicate(Schema,is,Class).
+predicate(Schema,SubClassOf,LogicalStructure).
+predicate(SclerosisLesion,is,Class).
+predicate(SclerosisLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Scoliosis,is,Class).
+predicate(Scoliosis,EquivalentTo,BendLesion and (hasSpecificLocation some SpinalColumn)).
+predicate(Scoliosis,SubClassOf,BendLesion).
+predicate(SebaceousGland,is,Class).
+predicate(SeborrheicDermatitis,is,Class).
+predicate(SeborrheicDermatitis,SubClassOf,Dermatitis).
+predicate(Secretion,is,Class).
+predicate(SectionOfOralMucosa,is,Class).
+predicate(Self,is,Class).
+predicate(Self,SubClassOf,PsychologicalConstruct).
+predicate(SepticArthritis,is,Class).
+predicate(SepticArthritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Joint) and (isSpecificImmediateConsequenceOf some BacterialJointInfection)).
+predicate(SepticArthritis,SubClassOf,InflammationLesion).
+predicate(Serositis,is,Class).
+predicate(Serositis,EquivalentTo,InflammationLesion and (LocativeAttribute some SerousMembrane)).
+predicate(Serositis,SubClassOf,InflammationLesion).
+predicate(Serotonin,is,Class).
+predicate(SerousMembrane,is,Class).
+predicate(SevereVasculitis,is,Class).
+predicate(SevereVasculitis,SubClassOf,Vasculitis).
+predicate(SexSpecificGenitoUrinarySystem,is,Class).
+predicate(ShallowWound,is,Class).
+predicate(ShallowWound,EquivalentTo,Wound and (hasVerticalDepth some).
+predicate(ShallowWound,EquivalentTo,(VerticalDepth and (hasQuantity some).
+predicate(ShallowWound,EquivalentTo,(Level and (hasMagnitude some lowLevel)))))).
+predicate(ShallowWound,SubClassOf,Wound).
+predicate(Shape,is,Class).
+predicate(ShapeState,is,Class).
+predicate(ShapeState,SubClassOf,MorphologyState).
+predicate(SharpnessState,is,Class).
+predicate(SharpnessState,SubClassOf,MorphologyState).
+predicate(ShuntThrombosis,is,Class).
+predicate(ShuntThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some VascularShuntStructure)).
+predicate(ShuntThrombosis,SubClassOf,ThrombusLesion).
+predicate(Sialadenitis,is,Class).
+predicate(Sialadenitis,EquivalentTo,InflammationLesion and (hasLocation some SalivaryGland)).
+predicate(Sialadenitis,SubClassOf,InflammationLesion).
+predicate(Sialolith,is,Class).
+predicate(Sialolithiasis,is,Class).
+predicate(Sialolithiasis,EquivalentTo,InfectionLesion and (hasLocation some SalivaryDuct) and (isSpecificImmediateConsequenceOf some Sialolith)).
+predicate(Sialolithiasis,SubClassOf,InfectionLesion).
+predicate(SigmoidVenousSinus,is,Class).
+predicate(SigmoidVenousSinusThrombosis,is,Class).
+predicate(SigmoidVenousSinusThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some SigmoidVenousSinus)).
+predicate(SigmoidVenousSinusThrombosis,SubClassOf,ThrombusLesion).
+predicate(SignalAttackPhaseState,is,Class).
+predicate(SignalAttackPhaseState,SubClassOf,SignalMorphologyState).
+predicate(SignalChannel,is,Class).
+predicate(SignalChannel,SubClassOf,LogicalStructure).
+predicate(SignalDecayPhaseState,is,Class).
+predicate(SignalDecayPhaseState,SubClassOf,SignalMorphologyState).
+predicate(SignalMorphologyState,is,Class).
+predicate(SignalMorphologyState,SubClassOf,MorphologyState).
+predicate(SignalPlateauPhaseState,is,Class).
+predicate(SignalPlateauPhaseState,SubClassOf,SignalMorphologyState).
+predicate(SimpleFracture,is,Class).
+predicate(SimpleFracture,EquivalentTo,Fracture and (hasFractureComplexity some).
+predicate(SimpleFracture,EquivalentTo,(FractureComplexity and (hasAbsoluteState some simpleFracture)))).
+predicate(SimpleFracture,SubClassOf,Fracture).
+predicate(Sinusitis,is,Class).
+predicate(Sinusitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some BoneSinus)).
+predicate(Sinusitis,SubClassOf,InflammationLesion).
+predicate(SkeletalDeformity,is,Class).
+predicate(SkeletalDeformity,EquivalentTo,DeformationLesion and (LocativeAttribute some Skeleton)).
+predicate(SkeletalDeformity,SubClassOf,DeformationLesion).
+predicate(SkeletalFracture,is,Class).
+predicate(SkeletalFracture,EquivalentTo,Fracture and (LocativeAttribute some Skeleton)).
+predicate(SkeletalFracture,SubClassOf,Fracture).
+predicate(SkeletalHyperostosis,is,Class).
+predicate(SkeletalHyperostosis,EquivalentTo,HypertrophicLesion and (hasSpecificLocation some).
+predicate(SkeletalHyperostosis,EquivalentTo,(Bone and (IsDivisionOf some Skeleton)))).
+predicate(SkeletalHyperostosis,SubClassOf,HypertrophicLesion).
+predicate(SkeletalMetastases,is,Class).
+predicate(SkeletalMetastases,EquivalentTo,MetastasesLesion and (hasLocation some Skeleton)).
+predicate(SkeletalMetastases,SubClassOf,MetastasesLesion).
+predicate(Skeleton,is,Class).
+predicate(SkinAbrasion,is,Class).
+predicate(SkinAbrasion,SubClassOf,PathologicalBodyStructure).
+predicate(SkinAbrasionSymptom,is,Class).
+predicate(SkinAbrasionSymptom,EquivalentTo,SkinAbrasion and (playsConsultationRole some SymptomRole)).
+predicate(SkinAbrasionSymptom,SubClassOf,SkinAbrasion).
+predicate(SkinAsOrgan,is,Class).
+predicate(SkinBulla,is,Class).
+predicate(SkinBulla,EquivalentTo,Bulla and (hasSpecificLocation some SkinCovering)).
+predicate(SkinBulla,SubClassOf,Bulla).
+predicate(SkinCovering,is,Class).
+predicate(SkinDiscoloration,is,Class).
+predicate(SkinDiscoloration,EquivalentTo,AcquiredPathologicalLesion and (hasColour some).
+predicate(SkinDiscoloration,EquivalentTo,(Colour and (hasAbnormalityStatus some nonNormal))) and (hasLocation some SkinCovering)).
+predicate(SkinDiscoloration,SubClassOf,AcquiredPathologicalLesion).
+predicate(SkinDiscolorationSymptom,is,Class).
+predicate(SkinDiscolorationSymptom,SubClassOf,SkinDiscoloration).
+predicate(SkinOfAnkle,is,Class).
+predicate(SkinOfCalf,is,Class).
+predicate(SkinOfFace,is,Class).
+predicate(SkinOfFoot,is,Class).
+predicate(SkinOfLeg,is,Class).
+predicate(SkinOfShin,is,Class).
+predicate(SkinRash,is,Class).
+predicate(SkinRash,SubClassOf,SkinDiscoloration).
+predicate(SkinUlcer,is,Class).
+predicate(SkinUlcer,EquivalentTo,UlceratingLesion and (hasLocation some SkinAsOrgan)).
+predicate(SkinUlcer,SubClassOf,UlceratingLesion).
+predicate(SkinVesicle,is,Class).
+predicate(SkinVesicle,EquivalentTo,Vesicle and (hasSpecificLocation some SkinCovering)).
+predicate(SkinVesicle,SubClassOf,Vesicle).
+predicate(Skull,is,Class).
+predicate(SkullFracture,is,Class).
+predicate(SkullFracture,EquivalentTo,Fracture and (hasSpecificLocation some Skull)).
+predicate(SkullFracture,SubClassOf,Fracture).
+predicate(SlippedEpiphysisOfTheHip,is,Class).
+predicate(SlippedEpiphysisOfTheHip,EquivalentTo,DislocationLesion and (hasSpecificLocation some).
+predicate(SlippedEpiphysisOfTheHip,EquivalentTo,(Epiphysis and (isSpecificSolidDivisionOf some FemoralHead)))).
+predicate(SlippedEpiphysisOfTheHip,SubClassOf,DislocationLesion).
+predicate(SmallCellTumour,is,Class).
+predicate(SmallCellTumour,SubClassOf,AnaplasticTumour).
+predicate(SmoothSurfaceCaries,is,Class).
+predicate(SmoothSurfaceCaries,SubClassOf,DentalCaries).
+predicate(Snake,is,Class).
+predicate(SnakeBite,is,Class).
+predicate(SnakeBite,EquivalentTo,Laceration and (hasSpecificLocation some SkinCovering) and (hasUniqueAssociatedProcess some).
+predicate(SnakeBite,EquivalentTo,(LaceratingProcess and (isSpecificImmediateConsequenceOf some).
+predicate(SnakeBite,EquivalentTo,(Incising and (hasPersonPerforming some Snake) and (hasPhysicalMeans some Tooth)))))).
+predicate(SnakeBite,SubClassOf,Laceration).
+predicate(SoftTissueSarcoma,is,Class).
+predicate(SoftTissueSarcoma,EquivalentTo,NeoplasticLesion and (hasUniqueAssociatedProcess some).
+predicate(SoftTissueSarcoma,EquivalentTo,(NeoplasticProcess and (LocativeAttribute some SoftTissueStructure) and (hasMalignancy some).
+predicate(SoftTissueSarcoma,EquivalentTo,(Malignancy and (hasAbsoluteState some malignant)))))).
+predicate(SoftTissueSarcoma,SubClassOf,NeoplasticLesion).
+predicate(SoftTissueStructure,is,Class).
+predicate(SolidStructure,is,Class).
+predicate(Soul,is,Class).
+predicate(Soul,SubClassOf,PsychologicalConstruct).
+predicate(SoundMorphologyState,is,Class).
+predicate(SoundMorphologyState,SubClassOf,MorphologyState).
+predicate(SoundTimbreState,is,Class).
+predicate(SoundTimbreState,SubClassOf,SoundMorphologyState).
+predicate(SpacingState,is,Class).
+predicate(SpacingState,SubClassOf,MorphologyState).
+predicate(SpermaticCord,is,Class).
+predicate(SphenoidSinus,is,Class).
+predicate(SphenoidalSinusitis,is,Class).
+predicate(SphenoidalSinusitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some SphenoidSinus)).
+predicate(SphenoidalSinusitis,SubClassOf,InflammationLesion).
+predicate(SpinalColumn,is,Class).
+predicate(SpiralFracture,is,Class).
+predicate(SpiralFracture,SubClassOf,LongBoneFracture).
+predicate(SplitLesion,is,Class).
+predicate(SplitLesion,SubClassOf,PathologicalBodyStructure).
+predicate(Squint,is,Class).
+predicate(SquintConcomitanceState,is,Class).
+predicate(SquintConcomitanceState,SubClassOf,MorphologyState).
+predicate(StandingPosture,is,Class).
+predicate(StenosisAsWord,is,Class).
+predicate(StenosisAsWord,SubClassOf,Stricture).
+predicate(StenosisOfAorta,is,Class).
+predicate(StenosisOfAorta,EquivalentTo,Stricture and (hasSpecificLocation some Aorta)).
+predicate(StenosisOfAorta,SubClassOf,Stricture).
+predicate(StenosisOfAorticRoot,is,Class).
+predicate(StenosisOfAorticRoot,EquivalentTo,Stricture and (hasSpecificLocation some AorticRoot)).
+predicate(StenosisOfAorticRoot,SubClassOf,Stricture).
+predicate(StingLesion,is,Class).
+predicate(StingLesion,SubClassOf,TraumaticallyAcquiredSoftTissueLesion).
+predicate(Stomach,is,Class).
+predicate(StomachToDuodenum,is,Class).
+predicate(Stomatitis,is,Class).
+predicate(Stomatitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some OralMucousMembrane)).
+predicate(Stomatitis,SubClassOf,InflammationLesion).
+predicate(StrangulationLesion,is,Class).
+predicate(StrangulationLesion,EquivalentTo,OcclusingLesion and (isImmediateConsequenceOf some).
+predicate(StrangulationLesion,EquivalentTo,(DiameterDecreasing and (actsSpecificallyOn some).
+predicate(StrangulationLesion,EquivalentTo,(Diameter and (isDiameterOf some Lumen)))))).
+predicate(StrangulationLesion,SubClassOf,OcclusingLesion).
+predicate(StratumCorneumEpidermis,is,Class).
+predicate(StressFracture,is,Class).
+predicate(StressFracture,EquivalentTo,Fracture and (hasFractureComplexity some).
+predicate(StressFracture,EquivalentTo,(FractureComplexity and (hasAbsoluteState some stressFracture)))).
+predicate(StressFracture,SubClassOf,Fracture).
+predicate(StriatedMuscle,is,Class).
+predicate(StriatedMuscleContractionProcess,is,Class).
+predicate(Stricture,is,Class).
+predicate(Stricture,SubClassOf,PathologicalBodyStructure).
+predicate(StrictureEndoscopicSense,is,Class).
+predicate(StrictureEndoscopicSense,SubClassOf,Stricture).
+predicate(StrictureOfPrepuce,is,Class).
+predicate(StrictureOfPrepuce,EquivalentTo,Stricture and (hasSpecificLocation some Prepuce)).
+predicate(StrictureOfPrepuce,SubClassOf,Stricture).
+predicate(StructuralExtent,is,Class).
+predicate(StructuralFeature,is,Class).
+predicate(StructuralState,is,Class).
+predicate(StructureProcessDual,is,Class).
+predicate(StructureProcessDual,SubClassOf,PathologicalBodyStructure).
+predicate(Stye,is,Class).
+predicate(Stye,EquivalentTo,InflammationLesion and (hasSpecificLocation some).
+predicate(Stye,EquivalentTo,(SebaceousGland and (isSpecificFunctionalComponentOf some Eyelash)))).
+predicate(Stye,SubClassOf,InflammationLesion).
+predicate(StyeSymptom,is,Class).
+predicate(StyeSymptom,SubClassOf,Stye).
+predicate(SubcutaneousConnectiveTissue,is,Class).
+predicate(SubcutaneousFatLayer,is,Class).
+predicate(SubcutaneousLayer,is,Class).
+predicate(SubcutaneousOedema,is,Class).
+predicate(SubcutaneousOedema,EquivalentTo,Oedema and (hasSpecificLocation some SubcutaneousLayer)).
+predicate(SubcutaneousOedema,SubClassOf,Oedema).
+predicate(SubendocardialIschaemia,is,Class).
+predicate(SubendocardialIschaemia,EquivalentTo,IschaemicLesion and (hasSpecificLocation some Subendocardium)).
+predicate(SubendocardialIschaemia,SubClassOf,IschaemicLesion).
+predicate(SubendocardialMyocardialInfarction,is,Class).
+predicate(SubendocardialMyocardialInfarction,EquivalentTo,DamageLesion and (hasSpecificLocation some Subendocardium)).
+predicate(SubendocardialMyocardialInfarction,SubClassOf,DamageLesion).
+predicate(Subendocardium,is,Class).
+predicate(SubluxationLesion,is,Class).
+predicate(SubluxationLesion,SubClassOf,PathologicalBodyStructure).
+predicate(SubvalvularAorticStenosisLesion,is,Class).
+predicate(SubvalvularAorticStenosisLesion,SubClassOf,AorticValveStenosisLesion).
+predicate(SuperficialPhlebitis,is,Class).
+predicate(SuperficialPhlebitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some SuperficialVein)).
+predicate(SuperficialPhlebitis,SubClassOf,InflammationLesion).
+predicate(SuperficialPunctateKeratitis,is,Class).
+predicate(SuperficialPunctateKeratitis,SubClassOf,Keratitis).
+predicate(SuperficialTemporalArtery,is,Class).
+predicate(SuperficialVein,is,Class).
+predicate(SuperficialVeinThrombosis,is,Class).
+predicate(SuperficialVeinThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some SuperficialVein)).
+predicate(SuperficialVeinThrombosis,SubClassOf,ThrombusLesion).
+predicate(SupravalvularAorticStenosisLesion,is,Class).
+predicate(SupravalvularAorticStenosisLesion,SubClassOf,AorticValveStenosisLesion).
+predicate(SurgicalAbdominalWallIncision,is,Class).
+predicate(SurgicalAnastomosisStructure,is,Class).
+predicate(SurgicalAnastomosisStructure,EquivalentTo,AnastomosisStructure and (isSpecificImmediateConsequenceOf some SurgicalConstructingProcess)).
+predicate(SurgicalAnastomosisStructure,SubClassOf,AnastomosisStructure).
+predicate(SurgicalConstructingProcess,is,Class).
+predicate(SurgicalExtent,is,Class).
+predicate(SurgicalExtirpating,is,Class).
+predicate(SurgicalExtirpating,EquivalentTo,SurgicalRemovingProcess and (hasSurgicalExtent some).
+predicate(SurgicalExtirpating,EquivalentTo,(SurgicalExtent and (hasAbsoluteState some organTotal)))).
+predicate(SurgicalExtirpating,SubClassOf,SurgicalRemovingProcess).
+predicate(SurgicalOpenClosedness,is,Class).
+predicate(SurgicalRemovingProcess,is,Class).
+predicate(SurgicalRole,is,Class).
+predicate(SymptomOfDeformationLesion,is,Class).
+predicate(SymptomOfDeformationLesion,EquivalentTo,DeformationLesion and (playsConsultationRole some SymptomRole)).
+predicate(SymptomOfDeformationLesion,SubClassOf,DeformationLesion).
+predicate(SymptomRole,is,Class).
+predicate(SyndactylyLesion,is,Class).
+predicate(SyndactylyLesion,SubClassOf,CongenitalFusionLesionOfDigit).
+predicate(SynovialGanglionLesion,is,Class).
+predicate(SynovialGanglionLesion,EquivalentTo,HerniaLesion and (hasSpecificLocation some SynovialMembrane)).
+predicate(SynovialGanglionLesion,SubClassOf,HerniaLesion).
+predicate(SynovialMembrane,is,Class).
+predicate(System,is,Class).
+predicate(System,SubClassOf,LogicalStructure).
+predicate(Tear,is,Class).
+predicate(Tear,SubClassOf,PathologicalBodyStructure).
+predicate(TelangiectasiaLesion,is,Class).
+predicate(TelangiectasiaLesion,SubClassOf,PathologicalBodyStructure).
+predicate(TelangiectasiaLymphatica,is,Class).
+predicate(TelangiectasiaLymphatica,SubClassOf,PathologicalBodyStructure).
+predicate(Telencephalon,is,Class).
+predicate(TemperatureChangingProcess,is,Class).
+predicate(TemporalArteritis,is,Class).
+predicate(TemporalArteritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some SuperficialTemporalArtery)).
+predicate(TemporalArteritis,SubClassOf,InflammationLesion).
+predicate(Tendon,is,Class).
+predicate(Tendonitis,is,Class).
+predicate(Tendonitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Tendon)).
+predicate(Tendonitis,SubClassOf,InflammationLesion).
+predicate(Teratoma,is,Class).
+predicate(Teratoma,SubClassOf,GermCellTumour).
+predicate(Testis,is,Class).
+predicate(TextureState,is,Class).
+predicate(TextureState,SubClassOf,MorphologyState).
+predicate(ThermalBurn,is,Class).
+predicate(ThermalBurn,EquivalentTo,Burn and (isConsequenceOf some TemperatureChangingProcess)).
+predicate(ThermalBurn,SubClassOf,Burn).
+predicate(ThermalFrictionBurn,is,Class).
+predicate(ThermalFrictionBurn,EquivalentTo,Burn and (isSpecificImmediateConsequenceOf some).
+predicate(ThermalFrictionBurn,EquivalentTo,(Heating and (isSpecificImmediateConsequenceOf some FrictionalForceApplyingProcess)))).
+predicate(ThermalFrictionBurn,SubClassOf,Burn).
+predicate(Thigh,is,Class).
+predicate(ThighMuscleWastingLesion,is,Class).
+predicate(ThighMuscleWastingLesion,EquivalentTo,AtrophicLesion and (hasSpecificLocation some).
+predicate(ThighMuscleWastingLesion,EquivalentTo,(StriatedMuscle and (IsDivisionOf some Thigh)))).
+predicate(ThighMuscleWastingLesion,SubClassOf,AtrophicLesion).
+predicate(ThighOedema,is,Class).
+predicate(ThighOedema,EquivalentTo,Oedema and (hasSpecificLocation some Thigh)).
+predicate(ThighOedema,SubClassOf,Oedema).
+predicate(ThoracicDuct,is,Class).
+predicate(ThoracicDuct,SubClassOf,NAMEDDuct,).
+predicate(ThoracicDuct,SubClassOf,hasSpecificLinearDivision some CisternaChylii,).
+predicate(ThoracicDuct,SubClassOf,isStructuralComponentOf some LymphaticSystem).
+predicate(ThoracicScoliosis,is,Class).
+predicate(ThoracicScoliosis,EquivalentTo,BendLesion and (hasSpecificLocation some ThoracicSpine)).
+predicate(ThoracicScoliosis,SubClassOf,BendLesion).
+predicate(ThoracicSpine,is,Class).
+predicate(ThroatIrritation,is,Class).
+predicate(ThroatIrritation,SubClassOf,Irritation).
+predicate(ThromboembolismLesion,is,Class).
+predicate(ThromboembolismLesion,EquivalentTo,ThrombusLesion and (isActedOnSpecificallyBy some EmbolismProcess)).
+predicate(ThromboembolismLesion,SubClassOf,ThrombusLesion).
+predicate(Thrombophlebitis,is,Class).
+predicate(Thrombophlebitis,SubClassOf,Phlebitis).
+predicate(ThrombusLesion,is,Class).
+predicate(ThrombusLesion,SubClassOf,PathologicalBodyStructure).
+predicate(ThyroglossalCyst,is,Class).
+predicate(ThyroglossalCyst,SubClassOf,PathologicalCystOfThyroglossalTract).
+predicate(ThyroidGland,is,Class).
+predicate(Thyroiditis,is,Class).
+predicate(Thyroiditis,EquivalentTo,InflammationLesion and (hasSpecificLocation some ThyroidGland)).
+predicate(Thyroiditis,SubClassOf,InflammationLesion).
+predicate(Tibia,is,Class).
+predicate(TibialFracture,is,Class).
+predicate(TibialFracture,EquivalentTo,Fracture and (hasSpecificLocation some Tibia)).
+predicate(TibialFracture,SubClassOf,Fracture).
+predicate(TimeOfOccurrence,is,Class).
+predicate(TimePeriod,is,Class).
+predicate(TimePeriod,SubClassOf,LogicalStructure).
+predicate(TimingAppropriateness,is,Class).
+predicate(TineaCapitis,is,Class).
+predicate(TineaCapitis,SubClassOf,Ringworm).
+predicate(TineaCruris,is,Class).
+predicate(TineaCruris,SubClassOf,Ringworm).
+predicate(TineaPedis,is,Class).
+predicate(TineaPedis,SubClassOf,Ringworm).
+predicate(Tissue,is,Class).
+predicate(TissueLysis,is,Class).
+predicate(TissueLysis,EquivalentTo,LysisLesion and (hasSpecificLocation some Tissue)).
+predicate(TissueLysis,SubClassOf,LysisLesion).
+predicate(TissueNecrosis,is,Class).
+predicate(TissueNecrosis,EquivalentTo,NecrosisLesion and (hasSpecificLocation some Tissue)).
+predicate(TissueNecrosis,SubClassOf,NecrosisLesion).
+predicate(Toe,is,Class).
+predicate(Tongue,is,Class).
+predicate(Tongue-Tie,is,Class).
+predicate(Tongue-Tie,EquivalentTo,Tongue and (hasAbnormalityStatus some nonNormal) and (hasConsequence some).
+predicate(Tongue-Tie,EquivalentTo,(Limiting and (actsSpecificallyOn some).
+predicate(Tongue-Tie,EquivalentTo,(VoluntaryMovement and (actsOn some Tongue))))) and (isConsequenceOf some).
+predicate(Tongue-Tie,EquivalentTo,(FrenulumOfTongue and (hasShape some).
+predicate(Tongue-Tie,EquivalentTo,(Shape and (hasChangeInState some contracted)))))).
+predicate(Tongue-Tie,SubClassOf,Tongue).
+predicate(Tonsillolithiasis,is,Class).
+predicate(Tonsillolithiasis,EquivalentTo,CalcificationLesion and (hasSpecificLocation some LymphoidTonsil)).
+predicate(Tonsillolithiasis,SubClassOf,CalcificationLesion).
+predicate(Tooth,is,Class).
+predicate(ToothBiteLesion,is,Class).
+predicate(ToothBiteLesion,EquivalentTo,Laceration and (hasSpecificLocation some SkinCovering) and (hasUniqueAssociatedProcess some).
+predicate(ToothBiteLesion,EquivalentTo,(LaceratingProcess and (isSpecificImmediateConsequenceOf some).
+predicate(ToothBiteLesion,EquivalentTo,(Incising and (hasPhysicalMeans some Tooth)))))).
+predicate(ToothBiteLesion,SubClassOf,Laceration).
+predicate(ToothSocket,is,Class).
+predicate(TopicalDistribution,is,Class).
+predicate(TopicalDistribution,SubClassOf,LocalDistribution).
+predicate(TopologyState,is,Class).
+predicate(TopologyState,SubClassOf,AppearanceState).
+predicate(TorsionLesion,is,Class).
+predicate(TorsionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(TorsionOfTestis,is,Class).
+predicate(TorsionOfTestis,EquivalentTo,TorsionLesion and (hasSpecificLocation some SpermaticCord)).
+predicate(TorsionOfTestis,SubClassOf,TorsionLesion).
+predicate(TortuousDilatation,is,Class).
+predicate(TortuousDilatation,SubClassOf,PathologicalBodyStructure).
+predicate(ToughnessState,is,Class).
+predicate(ToughnessState,SubClassOf,MorphologyState).
+predicate(ToxicColitis,is,Class).
+predicate(ToxicColitis,SubClassOf,ColitisLesion).
+predicate(ToxicIleus,is,Class).
+predicate(ToxicIleus,SubClassOf,GastroIntestinalObstruction).
+predicate(Trachea,is,Class).
+predicate(TrachealOedema,is,Class).
+predicate(TrachealOedema,EquivalentTo,Oedema and (hasSpecificLocation some Trachea)).
+predicate(TrachealOedema,SubClassOf,Oedema).
+predicate(Tracheitis,is,Class).
+predicate(Tracheitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Trachea)).
+predicate(Tracheitis,SubClassOf,InflammationLesion).
+predicate(TransverseVenousSinus,is,Class).
+predicate(TransverseVenousSinusPhlebitis,is,Class).
+predicate(TransverseVenousSinusPhlebitis,SubClassOf,Phlebitis).
+predicate(TransverseVenousSinusThrombosis,is,Class).
+predicate(TransverseVenousSinusThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some TransverseVenousSinus)).
+predicate(TransverseVenousSinusThrombosis,SubClassOf,ThrombusLesion).
+predicate(TraumaticDislocation,is,Class).
+predicate(TraumaticDislocation,EquivalentTo,DislocationLesion and (isSpecificImmediateConsequenceOf some TraumaticallyAcquiredLesion)).
+predicate(TraumaticDislocation,SubClassOf,DislocationLesion).
+predicate(TraumaticProcess,is,Class).
+predicate(TraumaticallyAcquiredLesion,is,Class).
+predicate(TraumaticallyAcquiredLesion,SubClassOf,PathologicalBodyStructure).
+predicate(TraumaticallyAcquiredLesionSymptom,is,Class).
+predicate(TraumaticallyAcquiredLesionSymptom,EquivalentTo,TraumaticallyAcquiredLesion and (playsConsultationRole some SymptomRole)).
+predicate(TraumaticallyAcquiredLesionSymptom,SubClassOf,TraumaticallyAcquiredLesion).
+predicate(TraumaticallyAcquiredSoftTissueLesion,is,Class).
+predicate(TraumaticallyAcquiredSoftTissueLesion,SubClassOf,PathologicalBodyStructure).
+predicate(TreponemaPallidumAntigen,is,Class).
+predicate(TricuspidAtresia,is,Class).
+predicate(TricuspidAtresia,EquivalentTo,AgenesisLesion and (hasSpecificLocation some TricuspidOrifice)).
+predicate(TricuspidAtresia,SubClassOf,AgenesisLesion).
+predicate(TricuspidOrifice,is,Class).
+predicate(TricuspidStenosisLesion,is,Class).
+predicate(TricuspidStenosisLesion,EquivalentTo,Stricture and (hasSpecificLocation some TricuspidValve)).
+predicate(TricuspidStenosisLesion,SubClassOf,Stricture).
+predicate(TricuspidStenosisLesionWithInsufficiency,is,Class).
+predicate(TricuspidStenosisLesionWithInsufficiency,SubClassOf,TricuspidStenosisLesion).
+predicate(TricuspidValve,is,Class).
+predicate(TricuspidValveProlapse,is,Class).
+predicate(TricuspidValveProlapse,EquivalentTo,ProlapseLesion and (hasSpecificLocation some TricuspidValve)).
+predicate(TricuspidValveProlapse,SubClassOf,ProlapseLesion).
+predicate(TrigoneOfUrinaryBladder,is,Class).
+predicate(Trigonitis,is,Class).
+predicate(Trigonitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some TrigoneOfUrinaryBladder)).
+predicate(Trigonitis,SubClassOf,InflammationLesion).
+predicate(Trunk,is,Class).
+predicate(TuberculosisTubercle,is,Class).
+predicate(TuberculosisTubercle,SubClassOf,TuberculousLesion).
+predicate(TuberculousLesion,is,Class).
+predicate(TuberculousLesion,EquivalentTo,InfectionLesion and (isSpecificImmediateConsequenceOf some MycobacteriumTuberculosisHominis)).
+predicate(TuberculousLesion,SubClassOf,InfectionLesion).
+predicate(TubularBodyStructure,is,Class).
+predicate(TubularCardiovascularComponent,is,Class).
+predicate(TumourHistology,is,Class).
+predicate(TumourMorphologyState,is,Class).
+predicate(TumourMorphologyState,SubClassOf,AppearanceState).
+predicate(TwoToedSloth,is,Class).
+predicate(TwoToedSloth,SubClassOf,Choloepidae).
+predicate(UlcerOfDuodenum,is,Class).
+predicate(UlcerOfDuodenum,EquivalentTo,UlceratingLesion and (hasSpecificLocation some Duodenum)).
+predicate(UlcerOfDuodenum,SubClassOf,UlceratingLesion).
+predicate(UlcerOfPylorus,is,Class).
+predicate(UlcerOfPylorus,EquivalentTo,UlceratingLesion and (hasSpecificLocation some Pylorus)).
+predicate(UlcerOfPylorus,SubClassOf,UlceratingLesion).
+predicate(UlcerOfStomach,is,Class).
+predicate(UlcerOfStomach,EquivalentTo,UlceratingLesion and (hasSpecificLocation some Stomach)).
+predicate(UlcerOfStomach,SubClassOf,UlceratingLesion).
+predicate(UlcerOnAnkle,is,Class).
+predicate(UlcerOnAnkle,EquivalentTo,UlceratingLesion and (hasSpecificLocation some SkinOfAnkle)).
+predicate(UlcerOnAnkle,SubClassOf,UlceratingLesion).
+predicate(UlcerOnCalf,is,Class).
+predicate(UlcerOnCalf,EquivalentTo,UlceratingLesion and (hasSpecificLocation some SkinOfCalf)).
+predicate(UlcerOnCalf,SubClassOf,UlceratingLesion).
+predicate(UlcerOnFoot,is,Class).
+predicate(UlcerOnFoot,EquivalentTo,UlceratingLesion and (hasSpecificLocation some SkinOfFoot)).
+predicate(UlcerOnFoot,SubClassOf,UlceratingLesion).
+predicate(UlcerOnShin,is,Class).
+predicate(UlcerOnShin,EquivalentTo,UlceratingLesion and (hasSpecificLocation some SkinOfShin)).
+predicate(UlcerOnShin,SubClassOf,UlceratingLesion).
+predicate(UlcerOrErosionLesion,is,Class).
+predicate(UlcerOrErosionLesion,SubClassOf,PathologicalBodyStructure).
+predicate(UlceratingLesion,is,Class).
+predicate(UlceratingLesion,SubClassOf,PathologicalBodyStructure).
+predicate(UlceratingProcess,is,Class).
+predicate(Ulna,is,Class).
+predicate(UlnarFracture,is,Class).
+predicate(UlnarFracture,EquivalentTo,Fracture and (hasSpecificLocation some Ulna)).
+predicate(UlnarFracture,SubClassOf,Fracture).
+predicate(UmbilicalHernia,is,Class).
+predicate(UmbilicalHernia,EquivalentTo,HerniaLesion and (hasSpecificLocation some Umbilicus)).
+predicate(UmbilicalHernia,SubClassOf,HerniaLesion).
+predicate(Umbilicus,is,Class).
+predicate(UntreatedInfection,is,Class).
+predicate(UntreatedInfection,EquivalentTo,InfectionLesion and (hasTreatmentStatus some untreated)).
+predicate(UntreatedInfection,SubClassOf,InfectionLesion).
+predicate(UntreatedNasalInfection,is,Class).
+predicate(UntreatedNasalInfection,SubClassOf,UntreatedInfection).
+predicate(UntreatedOralInfection,is,Class).
+predicate(UntreatedOralInfection,SubClassOf,UntreatedInfection).
+predicate(UntreatedPelvicInfection,is,Class).
+predicate(UntreatedPelvicInfection,SubClassOf,UntreatedInfection).
+predicate(UntreatedUrinaryTractInfection,is,Class).
+predicate(UntreatedUrinaryTractInfection,SubClassOf,UntreatedInfection).
+predicate(UpperExitremityOedemaSymptom,is,Class).
+predicate(UpperExitremityOedemaSymptom,SubClassOf,OedemaSymptom).
+predicate(UpperExtremity,is,Class).
+predicate(UpperExtremityOedema,is,Class).
+predicate(UpperExtremityOedema,EquivalentTo,Oedema and (hasSpecificLocation some UpperExtremity)).
+predicate(UpperExtremityOedema,SubClassOf,Oedema).
+predicate(UpperGastrointestinalCancer,is,Class).
+predicate(UpperGastrointestinalCancer,EquivalentTo,MalignantCancer and (LocativeAttribute some UpperGastrointestinalTract)).
+predicate(UpperGastrointestinalCancer,SubClassOf,MalignantCancer).
+predicate(UpperGastrointestinalTract,is,Class).
+predicate(UpperRespiratoryInflammation,is,Class).
+predicate(UpperRespiratoryInflammation,EquivalentTo,InflammationLesion and (LocativeAttribute some UpperRespiratoryTract)).
+predicate(UpperRespiratoryInflammation,SubClassOf,InflammationLesion).
+predicate(UpperRespiratoryTract,is,Class).
+predicate(UpperRespiratoryTractInfection,is,Class).
+predicate(UpperRespiratoryTractInfection,EquivalentTo,InfectionLesion and (LocativeAttribute some UpperRespiratoryTract)).
+predicate(UpperRespiratoryTractInfection,SubClassOf,InfectionLesion).
+predicate(Ureter,is,Class).
+predicate(UretericObstruction,is,Class).
+predicate(UretericObstruction,EquivalentTo,ObstructingLesion and (hasSpecificLocation some Ureter)).
+predicate(UretericObstruction,SubClassOf,ObstructingLesion).
+predicate(Ureterocoele,is,Class).
+predicate(Ureterocoele,EquivalentTo,DilatationLesion and (hasSpecificLocation some Ureter)).
+predicate(Ureterocoele,SubClassOf,DilatationLesion).
+predicate(Urethra,is,Class).
+predicate(UrethralDilatationLesion,is,Class).
+predicate(UrethralDilatationLesion,EquivalentTo,DilatationLesion and (hasSpecificLocation some Urethra)).
+predicate(UrethralDilatationLesion,SubClassOf,DilatationLesion).
+predicate(UrethralDischarge,is,Class).
+predicate(UrethralDischarge,EquivalentTo,DischargeLesion and (hasUniqueAssociatedProcess some).
+predicate(UrethralDischarge,EquivalentTo,(Discharge and (hasUniqueAssociatedDisplacement some).
+predicate(UrethralDischarge,EquivalentTo,(Displacement and (isDisplacementFrom some UrethralMeatus)))))).
+predicate(UrethralDischarge,SubClassOf,DischargeLesion).
+predicate(UrethralMeatus,is,Class).
+predicate(UrethralObstruction,is,Class).
+predicate(UrethralObstruction,EquivalentTo,ObstructingLesion and (hasSpecificLocation some Urethra)).
+predicate(UrethralObstruction,SubClassOf,ObstructingLesion).
+predicate(UrethralStricture,is,Class).
+predicate(UrethralStricture,EquivalentTo,Stricture and (hasSpecificLocation some Urethra)).
+predicate(UrethralStricture,SubClassOf,Stricture).
+predicate(Urethritis,is,Class).
+predicate(Urethritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Urethra)).
+predicate(Urethritis,SubClassOf,InflammationLesion).
+predicate(Urethrocoele,is,Class).
+predicate(Urethrocoele,EquivalentTo,ProlapseLesion and (hasSpecificLocation some FemaleUrethra)).
+predicate(Urethrocoele,SubClassOf,ProlapseLesion).
+predicate(UricAcid,is,Class).
+predicate(UrinaryBladder,is,Class).
+predicate(UrinaryObstruction,is,Class).
+predicate(UrinaryObstruction,EquivalentTo,ObstructingLesion and (LocativeAttribute some UrinaryTract)).
+predicate(UrinaryObstruction,SubClassOf,ObstructingLesion).
+predicate(UrinaryTract,is,Class).
+predicate(UrinaryTractInfection,is,Class).
+predicate(UrinaryTractInfection,EquivalentTo,InfectionLesion and (hasSpecificLocation some UrinaryTract)).
+predicate(UrinaryTractInfection,SubClassOf,InfectionLesion).
+predicate(Urology,is,Class).
+predicate(UrologySurgicalRole,is,Class).
+predicate(UrologySurgicalRole,EquivalentTo,SurgicalRole and (hasClinicalSpeciality some).
+predicate(UrologySurgicalRole,EquivalentTo,(ClinicalSpeciality and (hasAbsoluteState some Urology)))).
+predicate(UrologySurgicalRole,SubClassOf,SurgicalRole).
+predicate(UterineAdhesion,is,Class).
+predicate(UterineAdhesion,EquivalentTo,AdhesionLesion and (hasSpecificLocation some Uterus)).
+predicate(UterineAdhesion,SubClassOf,AdhesionLesion).
+predicate(UterineFibroid,is,Class).
+predicate(UterineInfection,is,Class).
+predicate(UterineInfection,EquivalentTo,InfectionLesion and (LocativeAttribute some Uterus)).
+predicate(UterineInfection,SubClassOf,InfectionLesion).
+predicate(UterineNeoplasia,is,Class).
+predicate(UterineNeoplasia,EquivalentTo,NeoplasticLesion and (LocativeAttribute some Uterus)).
+predicate(UterineNeoplasia,SubClassOf,NeoplasticLesion).
+predicate(UterineProlapse,is,Class).
+predicate(UterineProlapse,EquivalentTo,ProlapseLesion and (hasSpecificLocation some Uterus)).
+predicate(UterineProlapse,SubClassOf,ProlapseLesion).
+predicate(UterineRupture,is,Class).
+predicate(UterineRupture,EquivalentTo,RupturingLesion and (hasSpecificLocation some Uterus)).
+predicate(UterineRupture,SubClassOf,RupturingLesion).
+predicate(UterineScar,is,Class).
+predicate(UterineScar,EquivalentTo,Scar and (LocativeAttribute some Uterus)).
+predicate(UterineScar,SubClassOf,Scar).
+predicate(Uterus,is,Class).
+predicate(Uvea,is,Class).
+predicate(Uveitis,is,Class).
+predicate(Uveitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Uvea)).
+predicate(Uveitis,SubClassOf,InflammationLesion).
+predicate(Vagina,is,Class).
+predicate(VaginalAgenesis,is,Class).
+predicate(VaginalAgenesis,EquivalentTo,AgenesisLesion and (hasSpecificLocation some Vagina)).
+predicate(VaginalAgenesis,SubClassOf,AgenesisLesion).
+predicate(VaginalAtrophy,is,Class).
+predicate(VaginalAtrophy,EquivalentTo,AtrophicLesion and (hasSpecificLocation some Vagina)).
+predicate(VaginalAtrophy,SubClassOf,AtrophicLesion).
+predicate(VaginalDischarge,is,Class).
+predicate(VaginalDischarge,EquivalentTo,DischargeLesion and (hasSpecificLocation some Introitus)).
+predicate(VaginalDischarge,SubClassOf,DischargeLesion).
+predicate(VaginalInflammation,is,Class).
+predicate(VaginalInflammation,EquivalentTo,InflammationLesion and (hasSpecificLocation some Vagina)).
+predicate(VaginalInflammation,SubClassOf,InflammationLesion).
+predicate(VaginalIrritation,is,Class).
+predicate(VaginalIrritation,SubClassOf,Irritation).
+predicate(VaginalLumen,is,Class).
+predicate(ValveInHeart,is,Class).
+predicate(Valvulitis,is,Class).
+predicate(Valvulitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some ValveInHeart)).
+predicate(Valvulitis,SubClassOf,InflammationLesion).
+predicate(VarixLesion,is,Class).
+predicate(VarixLesion,EquivalentTo,TortuousDilatation and (hasLocation some TubularBodyStructure)).
+predicate(VarixLesion,SubClassOf,TortuousDilatation,).
+predicate(VarixLesion,SubClassOf,hasIntrinsicPathologicalStatus some pathological).
+predicate(VascularDilatationLesion,is,Class).
+predicate(VascularDilatationLesion,EquivalentTo,DilatationLesion and (hasSpecificLocation some TubularCardiovascularComponent)).
+predicate(VascularDilatationLesion,SubClassOf,DilatationLesion).
+predicate(VascularPathology,is,Class).
+predicate(VascularPulseVolumeState,is,Class).
+predicate(VascularPulseVolumeState,SubClassOf,MorphologyState).
+predicate(VascularShuntStructure,is,Class).
+predicate(VascularStenosis,is,Class).
+predicate(VascularStenosis,EquivalentTo,Stricture and (hasSpecificLocation some BloodVessel)).
+predicate(VascularStenosis,SubClassOf,Stricture).
+predicate(VascularThrombosis,is,Class).
+predicate(VascularThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some BloodVessel)).
+predicate(VascularThrombosis,SubClassOf,ThrombusLesion).
+predicate(Vasculitis,is,Class).
+predicate(Vasculitis,EquivalentTo,InflammationLesion and (LocativeAttribute some BloodVessel) and (hasPathologicalStatus some pathological)).
+predicate(Vasculitis,SubClassOf,InflammationLesion).
+predicate(VasomotorRhinitis,is,Class).
+predicate(VasomotorRhinitis,SubClassOf,Rhinitis).
+predicate(Vein,is,Class).
+predicate(VenousThromboembolismLesion,is,Class).
+predicate(VenousThromboembolismLesion,SubClassOf,ThromboembolismLesion).
+predicate(VenousThrombosis,is,Class).
+predicate(VenousThrombosis,EquivalentTo,ThrombusLesion and (hasSpecificLocation some Vein)).
+predicate(VenousThrombosis,SubClassOf,ThrombusLesion).
+predicate(VenousVaricosity,is,Class).
+predicate(VenousVaricosity,SubClassOf,VarixLesion).
+predicate(VentricularAneurysm,is,Class).
+predicate(VentricularAneurysm,SubClassOf,VascularDilatationLesion).
+predicate(VentricularOutflowObstruction,is,Class).
+predicate(VentricularOutflowObstruction,EquivalentTo,ObstructingLesion and (hasSpecificLocation some VentricularOutflowTract)).
+predicate(VentricularOutflowObstruction,SubClassOf,ObstructingLesion).
+predicate(VentricularOutflowTract,is,Class).
+predicate(VerbalStatement,is,Class).
+predicate(VerbalStatement,SubClassOf,PsychologicalConstruct).
+predicate(Verruca,is,Class).
+predicate(Verruca,SubClassOf,EpidermalHyperplasticLesion).
+predicate(Vertebra,is,Class).
+predicate(VertebralMetastases,is,Class).
+predicate(VertebralMetastases,EquivalentTo,MetastasesLesion and (hasSpecificLocation some Vertebra)).
+predicate(VertebralMetastases,SubClassOf,MetastasesLesion).
+predicate(VerticalDepth,is,Class).
+predicate(Vesicle,is,Class).
+predicate(Vesicle,SubClassOf,PathologicalBodyStructure).
+predicate(ViralArthritis,is,Class).
+predicate(ViralArthritis,EquivalentTo,InflammationLesion and (hasSpecificLocation some Joint) and (isSpecificImmediateConsequenceOf some ViralJointInfection)).
+predicate(ViralArthritis,SubClassOf,InflammationLesion).
+predicate(ViralEncephalitis,is,Class).
+predicate(ViralEncephalitis,SubClassOf,Encephalitis).
+predicate(ViralInfectionLesion,is,Class).
+predicate(ViralInfectionLesion,EquivalentTo,InfectionLesion and (isSpecificConsequenceOf some Virus)).
+predicate(ViralInfectionLesion,SubClassOf,InfectionLesion).
+predicate(ViralJointInfection,is,Class).
+predicate(ViralJointInfection,SubClassOf,ViralInfectionLesion).
+predicate(ViralLaryngitis,is,Class).
+predicate(ViralLaryngitis,SubClassOf,Laryngitis).
+predicate(ViralLymphoidTonsillitis,is,Class).
+predicate(ViralLymphoidTonsillitis,SubClassOf,LymphoidTonsillitis).
+predicate(ViralNephritis,is,Class).
+predicate(ViralNephritis,SubClassOf,Nephritis).
+predicate(ViralPharyngitis,is,Class).
+predicate(ViralPharyngitis,SubClassOf,Pharyngitis).
+predicate(ViralRenalInfectionLesion,is,Class).
+predicate(ViralRenalInfectionLesion,SubClassOf,RenalInfectionLesion).
+predicate(ViralSkinLesion,is,Class).
+predicate(ViralSkinLesion,SubClassOf,ViralInfectionLesion).
+predicate(VirginCaries,is,Class).
+predicate(VirginCaries,SubClassOf,DentalCaries).
+predicate(Virus,is,Class).
+predicate(VocalCord,is,Class).
+predicate(VocalCordOedema,is,Class).
+predicate(VocalCordOedema,EquivalentTo,Oedema and (hasSpecificLocation some VocalCord)).
+predicate(VocalCordOedema,SubClassOf,Oedema).
+predicate(Volume,is,Class).
+predicate(VoluntaryMovement,is,Class).
+predicate(VolvulusLesion,is,Class).
+predicate(VolvulusLesion,EquivalentTo,TorsionLesion and (hasSpecificLocation some Intestine)).
+predicate(VolvulusLesion,SubClassOf,TorsionLesion).
+predicate(Vomitus,is,Class).
+predicate(Vomitus,SubClassOf,PathologicalBodyStructure).
+predicate(VulvalLeukoplakia,is,Class).
+predicate(VulvalLeukoplakia,EquivalentTo,KeratosisLesion and (hasSpecificLocation some).
+predicate(VulvalLeukoplakia,EquivalentTo,(MucousMembrane and (isSpecificLayerOf some FemaleExternalGenitalia)))).
+predicate(VulvalLeukoplakia,SubClassOf,KeratosisLesion).
+predicate(VulvalUlcer,is,Class).
+predicate(VulvalUlcer,EquivalentTo,UlceratingLesion and (hasSpecificLocation some FemaleExternalGenitalia)).
+predicate(VulvalUlcer,SubClassOf,UlceratingLesion).
+predicate(Vulvitis,is,Class).
+predicate(Vulvitis,EquivalentTo,InflammationLesion and (hasSpecificLocation some FemaleExternalGenitalia)).
+predicate(Vulvitis,SubClassOf,InflammationLesion).
+predicate(WallOfPylorus,is,Class).
+predicate(WaspSting,is,Class).
+predicate(WaspSting,SubClassOf,StingLesion).
+predicate(Wound,is,Class).
+predicate(Wound,SubClassOf,PathologicalBodyStructure).
+predicate(WoundDehiscence,is,Class).
+predicate(WoundDehiscence,EquivalentTo,SplitLesion and (hasSpecificLocation some Wound)).
+predicate(WoundDehiscence,SubClassOf,SplitLesion).
+predicate(acquired,is,Class).
+predicate(actuallyHollow,is,Class).
+predicate(actuallyHollow,SubClassOf,trulyHollow).
+predicate(acute,is,Class).
+predicate(analogousDiseaseAppearence,is,Class).
+predicate(anisomorphic,is,Class).
+predicate(anisomorphic,SubClassOf,CellMorphologyState).
+predicate(bilayered,is,Class).
+predicate(bilayered,SubClassOf,trulyHollow).
+predicate(bodyPeripherySelection,is,Class).
+predicate(chronic,is,Class).
+predicate(comminutedFracture,is,Class).
+predicate(congenital,is,Class).
+predicate(contracted,is,Class).
+predicate(cysticCellMorphology,is,Class).
+predicate(cysticCellMorphology,SubClassOf,CellMorphologyState).
+predicate(flagellated,is,Class).
+predicate(flagellated,SubClassOf,CellMorphologyState).
+predicate(fungating,is,Class).
+predicate(fungating,SubClassOf,TumourMorphologyState).
+predicate(highLevel,is,Class).
+predicate(hollow,is,Class).
+predicate(hollow,SubClassOf,TopologyState).
+predicate(idiopathic,is,Class).
+predicate(idiopathic,SubClassOf,acquired).
+predicate(ineffective,is,Class).
+predicate(leftSelection,is,Class).
+predicate(lesionLocal,is,Class).
+predicate(localDistribution,is,Class).
+predicate(lowLevel,is,Class).
+predicate(malignant,is,Class).
+predicate(metastatic,is,Class).
+predicate(mitotic,is,Class).
+predicate(mitotic,SubClassOf,CellMorphologyState).
+predicate(mucinousCellMorphology,is,Class).
+predicate(mucinousCellMorphology,SubClassOf,CellMorphologyState).
+predicate(necrotic,is,Class).
+predicate(necrotic,SubClassOf,TumourMorphologyState).
+predicate(nonMetastatic,is,Class).
+predicate(nonNormal,is,Class).
+predicate(occluded,is,Class).
+predicate(occluded,SubClassOf,PatencyState).
+predicate(organTotal,is,Class).
+predicate(organised,is,Class).
+predicate(organised,SubClassOf,TumourMorphologyState).
+predicate(partial,is,Class).
+predicate(past,is,Class).
+predicate(patent,is,Class).
+predicate(patent,SubClassOf,PatencyState).
+predicate(pathological,is,Class).
+predicate(perHour,is,Class).
+predicate(perHour,SubClassOf,FrequencyUnit).
+predicate(physiological,is,Class).
+predicate(physiological,SubClassOf,PathologicalOrPhysiologicalStatus).
+predicate(pleomorphic,is,Class).
+predicate(pleomorphic,SubClassOf,CellMorphologyState).
+predicate(poikilocytotic,is,Class).
+predicate(poikilocytotic,SubClassOf,CellMorphologyState).
+predicate(serousCellMorphology,is,Class).
+predicate(serousCellMorphology,SubClassOf,CellMorphologyState).
+predicate(simpleFracture,is,Class).
+predicate(smallSize,is,Class).
+predicate(stressFracture,is,Class).
+predicate(subAcuteEndocarditis,is,Class).
+predicate(subAcuteEndocarditis,SubClassOf,Endocarditis).
+predicate(surgicallyClosed,is,Class).
+predicate(surgicallyOpen,is,Class).
+predicate(tooEarly,is,Class).
+predicate(topologicallySolid,is,Class).
+predicate(topologicallySolid,SubClassOf,TopologyState).
+predicate(trulyHollow,is,Class).
+predicate(trulyHollow,SubClassOf,hollow).
+predicate(untreated,is,Class).
+predicate(variant,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

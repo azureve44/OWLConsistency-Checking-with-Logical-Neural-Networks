@@ -1,0 +1,84 @@
+is(explores,ObjectProperty):1.0
+is(is-a-variable-of,ObjectProperty):1.0
+is(measures,ObjectProperty):1.0
+Domain(measures,instrument-variable):1.0
+Range(measures,quality):1.0
+is(expresses-at,ObjectProperty):1.0
+is(has-for-data-at,ObjectProperty):1.0
+is(has-for-model-acronym,ObjectProperty):1.0
+is(has-for-result-at,ObjectProperty):1.0
+is(is-a-proper-part-of,ObjectProperty):1.0
+is(quality,Class):1.0
+is(age-dependent-variable,Class):1.0
+SubClassOf(age-dependent-variable,instrument-variable):1.0
+is(assessment-instrument,Class):1.0
+is(coded-score,Class):1.0
+is(coded-variable,Class):1.0
+SubClassOf(coded-variable,instrument-variable):1.0
+is(coded-variable-assessment,Class):1.0
+SubClassOf(coded-variable-assessment,variable-assessment,):1.0
+SubClassOf(coded-variable-assessment,has-for-data-at exactly 1 coded-variable,):1.0
+SubClassOf(coded-variable-assessment,has-for-result-at exactly 1 coded-score):1.0
+is(cultural-skill-dependent-variable,Class):1.0
+SubClassOf(cultural-skill-dependent-variable,instrument-variable):1.0
+is(domain,Class):1.0
+is(instrument-based-assessment,Class):1.0
+is(instrument-definition-article,Class):1.0
+SubClassOf(instrument-definition-article,scientific-article,):1.0
+SubClassOf(instrument-definition-article,expresses-at some definition):1.0
+is(instrument-variable,Class):1.0
+SubClassOf(instrument-variable,subject-data-acquisition-artefact,):1.0
+SubClassOf(instrument-variable,proposition,):1.0
+SubClassOf(instrument-variable,has-for-model-acronym some model-acronym,):1.0
+SubClassOf(instrument-variable,explores exactly 1 domain,):1.0
+SubClassOf(instrument-variable,is-a-variable-of exactly 1 assessment-instrument,):1.0
+SubClassOf(instrument-variable,measures exactly 1 quality):1.0
+is(main-variable,Class):1.0
+SubClassOf(main-variable,instrument-variable):1.0
+is(numerical-variable,Class):1.0
+SubClassOf(numerical-variable,instrument-variable):1.0
+is(numerical-variable-assessment,Class):1.0
+SubClassOf(numerical-variable-assessment,variable-assessment):1.0
+is(score,Class):1.0
+is(secondary-variable,Class):1.0
+SubClassOf(secondary-variable,instrument-variable):1.0
+is(sex-dependent-variable,Class):1.0
+SubClassOf(sex-dependent-variable,instrument-variable):1.0
+is(subject-data-acquisition,Class):1.0
+is(subject-data-acquisition-artefact,Class):1.0
+is(variable-assessment,Class):1.0
+SubClassOf(variable-assessment,subject-data-acquisition,):1.0
+SubClassOf(variable-assessment,has-for-result-at min 1 score,):1.0
+SubClassOf(variable-assessment,has-for-data-at exactly 1 instrument-variable,):1.0
+SubClassOf(variable-assessment,is-a-proper-part-of exactly 1 instrument-based-assessment):1.0
+is(definition,Class):1.0
+is(model-acronym,Class):1.0
+is(proposition,Class):1.0
+is(scientific-article,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(instr-def-article-AITB-1944,Individual):1.0
+Types(instr-def-article-AITB-1944,instrument-definition-article):1.0
+is(instr-def-article-BECK-1996,Individual):1.0
+Types(instr-def-article-BECK-1996,instrument-definition-article):1.0
+is(instr-def-article-BENTON-1994,Individual):1.0
+Types(instr-def-article-BENTON-1994,instrument-definition-article):1.0
+is(instr-def-article-FOLSTEIN-1975,Individual):1.0
+Types(instr-def-article-FOLSTEIN-1975,instrument-definition-article):1.0
+is(instr-def-article-GOLDEN-1978,Individual):1.0
+Types(instr-def-article-GOLDEN-1978,instrument-definition-article):1.0
+is(instr-def-article-GOODGLASS-1972,Individual):1.0
+Types(instr-def-article-GOODGLASS-1972,instrument-definition-article):1.0
+is(instr-def-article-GROBER-1987,Individual):1.0
+Types(instr-def-article-GROBER-1987,instrument-definition-article):1.0
+is(instr-def-article-HUGHES-1982,Individual):1.0
+Types(instr-def-article-HUGHES-1982,instrument-definition-article):1.0
+is(instr-def-article-KURTZKE-1983,Individual):1.0
+Types(instr-def-article-KURTZKE-1983,instrument-definition-article):1.0
+is(instr-def-article-MORRIS-1993,Individual):1.0
+Types(instr-def-article-MORRIS-1993,instrument-definition-article):1.0
+is(instr-def-article-PILLON-1981,Individual):1.0
+Types(instr-def-article-PILLON-1981,instrument-definition-article):1.0
+is(instr-def-article-REY-1941,Individual):1.0
+Types(instr-def-article-REY-1941,instrument-definition-article):1.0
+is(instr-def-article-WECHSLER-1997,Individual):1.0
+Types(instr-def-article-WECHSLER-1997,instrument-definition-article):1.0

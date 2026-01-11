@@ -1,0 +1,446 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(dateTime,is,Datatype).
+predicate(string,is,Datatype).
+predicate(Observation.basedOn,is,ObjectProperty).
+predicate(Observation.encounter,is,ObjectProperty).
+predicate(Observation.performer,is,ObjectProperty).
+predicate(Observation.subject,is,ObjectProperty).
+predicate(acceptsOrDenies,is,ObjectProperty).
+predicate(address,is,ObjectProperty).
+predicate(aggregationOf,is,ObjectProperty).
+predicate(arranges,is,ObjectProperty).
+predicate(changesStatusOfHealthcareActivitiesIn,is,ObjectProperty).
+predicate(clarifies,is,ObjectProperty).
+predicate(componentOf,is,ObjectProperty).
+predicate(controlsQualityOf,is,ObjectProperty).
+predicate(delineates,is,ObjectProperty).
+predicate(direct_controlTheSupply_useOf,is,ObjectProperty).
+predicate(establishes,is,ObjectProperty).
+predicate(evaluates,is,ObjectProperty).
+predicate(evaluatesAspectsOf,is,ObjectProperty).
+predicate(evaluatesOutcomeOf,is,ObjectProperty).
+predicate(generates,is,ObjectProperty).
+predicate(has,is,ObjectProperty).
+predicate(hasBeenObservedDuring,is,ObjectProperty).
+predicate(hasCarePeriodMandateFor,is,ObjectProperty).
+predicate(hasDetermined,is,ObjectProperty).
+predicate(hasOutput,is,ObjectProperty).
+predicate(hasRatified,is,ObjectProperty).
+predicate(hasRuledOut,is,ObjectProperty).
+predicate(identifies,is,ObjectProperty).
+predicate(influences,is,ObjectProperty).
+predicate(initiatedDuring,is,ObjectProperty).
+predicate(isAbleTobeAssigned,is,ObjectProperty).
+predicate(isAppointmentFor,is,ObjectProperty).
+predicate(isBackgroundFor,is,ObjectProperty).
+predicate(isBasedOn,is,ObjectProperty).
+predicate(isCausedBy,is,ObjectProperty).
+predicate(isCentredOn,is,ObjectProperty).
+predicate(isConsideredDuring,is,ObjectProperty).
+predicate(isConsistentWith,is,ObjectProperty).
+predicate(isDeficitIn,is,ObjectProperty).
+predicate(isDocumentedIn,is,ObjectProperty).
+predicate(isFinancedBy,is,ObjectProperty).
+predicate(isIdentifiedBy,is,ObjectProperty).
+predicate(isInputTo,is,ObjectProperty).
+predicate(isListedIn,is,ObjectProperty).
+predicate(isObservedAs,is,ObjectProperty).
+predicate(isPerformedDuring,is,ObjectProperty).
+predicate(isPerformedFor,is,ObjectProperty).
+predicate(isPlannedIn,is,ObjectProperty).
+predicate(isPrescribedBy,is,ObjectProperty).
+predicate(isRecordedIn,is,ObjectProperty).
+predicate(isResponsibleFor,is,ObjectProperty).
+predicate(isScheduledIn,is,ObjectProperty).
+predicate(isTheResultOf,is,ObjectProperty).
+predicate(isTimeIntervalFor,is,ObjectProperty).
+predicate(issues,is,ObjectProperty).
+predicate(limits,is,ObjectProperty).
+predicate(links,is,ObjectProperty).
+predicate(maintains,is,ObjectProperty).
+predicate(manages,is,ObjectProperty).
+predicate(partOf,is,ObjectProperty).
+predicate(participatesIn,is,ObjectProperty).
+predicate(performs,is,ObjectProperty).
+predicate(provides,is,ObjectProperty).
+predicate(providesFeedbackTo,is,ObjectProperty).
+predicate(receives,is,ObjectProperty).
+predicate(relatesTo,is,ObjectProperty).
+predicate(relatesToTheProvisionOf,is,ObjectProperty).
+predicate(representsPotentialAspectsOf,is,ObjectProperty).
+predicate(requires,is,ObjectProperty).
+predicate(resultsIn,is,ObjectProperty).
+predicate(reveals,is,ObjectProperty).
+predicate(reviewedDuring,is,ObjectProperty).
+predicate(sendsOut,is,ObjectProperty).
+predicate(showsTheEvolutionOf,is,ObjectProperty).
+predicate(states,is,ObjectProperty).
+predicate(supports,is,ObjectProperty).
+predicate(takesPlaceDuring,is,ObjectProperty).
+predicate(targets,is,ObjectProperty).
+predicate(terminatedDuring,is,ObjectProperty).
+predicate(Observation.code,is,DataProperty).
+predicate(Observation.effectiveDateTime,is,DataProperty).
+predicate(Observation.identifier,is,DataProperty).
+predicate(Observation.status,is,DataProperty).
+predicate(adverse_event,is,Class).
+predicate(adverse_event,SubClassOf,Event,).
+predicate(adverse_event,SubClassOf,influences min 1 healthcare_process,).
+predicate(adverse_event,SubClassOf,requires exactly 1 adverse_event_management).
+predicate(adverse_event_management,is,Class).
+predicate(adverse_event_management,SubClassOf,care_activity).
+predicate(appointment,is,Class).
+predicate(appointment,SubClassOf,Event).
+predicate(automatedCare,is,Class).
+predicate(automatedCare,SubClassOf,Event,).
+predicate(automatedCare,SubClassOf,resultsIn some non-ratified_healthcare_information,).
+predicate(automatedCare,SubClassOf,reviewedDuring some care_activity,).
+predicate(automatedCare,SubClassOf,initiatedDuring exactly 1 care_activity,).
+predicate(automatedCare,SubClassOf,terminatedDuring max 1 care_activity).
+predicate(careProfessional,is,Class).
+predicate(careProfessional,SubClassOf,care_personnel,).
+predicate(careProfessional,SubClassOf,care_provider,).
+predicate(careProfessional,SubClassOf,hasDetermined some working_diagnosis,).
+predicate(careProfessional,SubClassOf,hasRatified some care_information_for_import,).
+predicate(careProfessional,SubClassOf,hasRuledOut some excluded_condition,).
+predicate(careProfessional,SubClassOf,identifies some prognostic_condition,).
+predicate(careProfessional,SubClassOf,issues some referral,).
+predicate(careProfessional,SubClassOf,issues some request,).
+predicate(careProfessional,SubClassOf,issues some).
+predicate(careProfessional,SubClassOf,(care_activity_mandate and request),).
+predicate(careProfessional,SubClassOf,maintains some socialRecord,).
+predicate(careProfessional,SubClassOf,maintains some professional_health_record,).
+predicate(careProfessional,SubClassOf,manages some care_activity_period,).
+predicate(careProfessional,SubClassOf,manages some demand_for_care,).
+predicate(careProfessional,SubClassOf,performs some social_care_needs_assessment,).
+predicate(careProfessional,SubClassOf,performs some healthcare_needs_assessment,).
+predicate(careProfessional,SubClassOf,issues only care_activity_mandate,).
+predicate(careProfessional,SubClassOf,has min 1 healthcare_professional_entitlement).
+predicate(care_activities_bundle,is,Class).
+predicate(care_activities_bundle,SubClassOf,care_activity,).
+predicate(care_activities_bundle,SubClassOf,partOf some care_activities_bundle,).
+predicate(care_activities_bundle,SubClassOf,relatesTo some care_activity).
+predicate(care_activity,is,Class).
+predicate(care_activity,SubClassOf,Event,).
+predicate(care_activity,SubClassOf,componentOf some adverse_event_management,).
+predicate(care_activity,SubClassOf,componentOf some care_activity,).
+predicate(care_activity,SubClassOf,componentOf some care_plan,).
+predicate(care_activity,SubClassOf,isRecordedIn some health_record,).
+predicate(care_activity,SubClassOf,requires some care_resource_management,).
+predicate(care_activity,SubClassOf,aggregationOf min 1 care_activity_element,).
+predicate(care_activity,SubClassOf,requires min 1 healthcare_resource,).
+predicate(care_activity,SubClassOf,targets min 1 healthcare_goal,).
+predicate(care_activity,SubClassOf,isPerformedDuring exactly 1 care_activity_period,).
+predicate(care_activity,SubClassOf,isPerformedFor exactly 1 subject_of_care,).
+predicate(care_activity,SubClassOf,componentOf max 1 care_activities_bundle,).
+predicate(care_activity,SubClassOf,componentOf max 1 healthcare_process).
+predicate(care_activity_delay,is,Class).
+predicate(care_activity_delay,SubClassOf,health_related_period,).
+predicate(care_activity_delay,SubClassOf,componentOf exactly 1 mandated_period_of_care).
+predicate(care_activity_directory,is,Class).
+predicate(care_activity_element,is,Class).
+predicate(care_activity_element,SubClassOf,Event).
+predicate(care_activity_management,is,Class).
+predicate(care_activity_management,SubClassOf,care_activity_element,).
+predicate(care_activity_management,SubClassOf,manages min 1 care_activity,).
+predicate(care_activity_management,SubClassOf,changesStatusOfHealthcareActivitiesIn exactly 1 care_plan).
+predicate(care_activity_mandate,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(Thing, request,is,www.w3.org/2002/07/#).
+predicate(care_activity_period,is,Class).
+predicate(care_activity_period,SubClassOf,health_related_period,).
+predicate(care_activity_period,SubClassOf,takesPlaceDuring max 1 care_appointment).
+predicate(care_activity_period_element,is,Class).
+predicate(care_activity_period_element,SubClassOf,episode_of_care,).
+predicate(care_activity_period_element,SubClassOf,componentOf exactly 1 episode_of_care,).
+predicate(care_activity_period_element,SubClassOf,partOf exactly 1 care_activity_period).
+predicate(care_actor,is,Class).
+predicate(care_administration,is,Class).
+predicate(care_administration,SubClassOf,Event,).
+predicate(care_administration,SubClassOf,supports min 1 healthcare_process).
+predicate(care_appointment,is,Class).
+predicate(care_appointment,SubClassOf,appointment,).
+predicate(care_appointment,SubClassOf,isAppointmentFor exactly 1 contact,).
+predicate(care_appointment,SubClassOf,isScheduledIn max 1 care_plan).
+predicate(care_assessment,is,Class).
+predicate(care_assessment,SubClassOf,care_activity_element).
+predicate(care_commitment,is,Class).
+predicate(care_commitment,SubClassOf,Event,).
+predicate(care_commitment,SubClassOf,relatesToTheProvisionOf min 1 care_activity).
+predicate(care_communication,is,Class).
+predicate(care_communication,SubClassOf,care_activity_element).
+predicate(care_documenting,is,Class).
+predicate(care_documenting,SubClassOf,care_activity_element,).
+predicate(care_documenting,SubClassOf,maintains min 1 health_record).
+predicate(care_evaluation,is,Class).
+predicate(care_evaluation,SubClassOf,care_activity_element,).
+predicate(care_evaluation,SubClassOf,evaluatesAspectsOf min 1 care_activity).
+predicate(care_information_for_import,is,Class).
+predicate(care_investigation,is,Class).
+predicate(care_investigation,SubClassOf,care_activity_element,).
+predicate(care_investigation,SubClassOf,reveals some observed_condition,).
+predicate(care_investigation,SubClassOf,clarifies exactly 1 health_state).
+predicate(care_matter,is,Class).
+predicate(care_matter,SubClassOf,State).
+predicate(care_organization,is,Class).
+predicate(care_organization,SubClassOf,care_provider).
+predicate(care_period_mandate,is,Class).
+predicate(care_personnel,is,Class).
+predicate(care_personnel,SubClassOf,personRole,).
+predicate(care_personnel,SubClassOf,role,).
+predicate(care_personnel,SubClassOf,care_actor,).
+predicate(care_personnel,SubClassOf,participatesIn some contact,).
+predicate(care_personnel,SubClassOf,sendsOut some clinical_report).
+predicate(care_plan,is,Class).
+predicate(care_process_evaluation,is,Class).
+predicate(care_process_evaluation,SubClassOf,care_evaluation,).
+predicate(care_process_evaluation,SubClassOf,evaluates min 1 healthcare_process).
+predicate(care_provider,is,Class).
+predicate(care_provider,SubClassOf,care_actor,).
+predicate(care_provider,SubClassOf,arranges some initial_contact,).
+predicate(care_provider,SubClassOf,isResponsibleFor some socialRecord,).
+predicate(care_provider,SubClassOf,isResponsibleFor some professional_health_record,).
+predicate(care_provider,SubClassOf,isResponsibleFor some resource_delay,).
+predicate(care_provider,SubClassOf,manages some episode_of_care,).
+predicate(care_provider,SubClassOf,performs some care_resource_management,).
+predicate(care_provider,SubClassOf,sendsOut some clinical_report,).
+predicate(care_provider,SubClassOf,acceptsOrDenies min 1 demand_for_care,).
+predicate(care_provider,SubClassOf,hasCarePeriodMandateFor min 1 mandated_period_of_care,).
+predicate(care_provider,SubClassOf,isAbleTobeAssigned min 1 care_period_mandate,).
+predicate(care_provider,SubClassOf,isResponsibleFor min 1 mandated_period_of_care,).
+predicate(care_provider,SubClassOf,performs min 1 socialCareProviderActivity,).
+predicate(care_provider,SubClassOf,performs min 1 care_provider_activity,).
+predicate(care_provider,SubClassOf,provides min 1 healthcare,).
+predicate(care_provider,SubClassOf,receives min 1 demand_for_care,).
+predicate(care_provider,SubClassOf,states min 1 care_commitment,).
+predicate(care_provider,SubClassOf,has exactly 1 care_activity_directory).
+predicate(care_provider_activity,is,Class).
+predicate(care_provider_activity,SubClassOf,care_activity,).
+predicate(care_provider_activity,SubClassOf,generates some care_information_for_import,).
+predicate(care_provider_activity,SubClassOf,address min 1 health_issue,).
+predicate(care_provider_activity,SubClassOf,requires min 1 care_activity_mandate).
+predicate(care_quality_management,is,Class).
+predicate(care_quality_management,SubClassOf,care_activity_element,).
+predicate(care_quality_management,SubClassOf,controlsQualityOf min 1 healthcare_process).
+predicate(care_resource_management,is,Class).
+predicate(care_resource_management,SubClassOf,care_activity_element,).
+predicate(care_resource_management,SubClassOf,direct_controlTheSupply_useOf min 1 healthcare_resource).
+predicate(care_third_party_activity,is,Class).
+predicate(care_third_party_activity,SubClassOf,care_activity,).
+predicate(care_third_party_activity,SubClassOf,generates some non-ratified_healthcare_information,).
+predicate(care_third_party_activity,SubClassOf,requires min 1 care_activity_mandate).
+predicate(care_treatment,is,Class).
+predicate(care_treatment,SubClassOf,care_activity_element,).
+predicate(care_treatment,SubClassOf,influences exactly 1 health_state).
+predicate(clinical_process,is,Class).
+predicate(clinical_process,SubClassOf,healthcare_process).
+predicate(clinical_process_episode,is,Class).
+predicate(clinical_process_episode,SubClassOf,health_related_period,).
+predicate(clinical_process_episode,SubClassOf,isTimeIntervalFor exactly 1 clinical_process).
+predicate(clinical_process_interest,is,Class).
+predicate(clinical_process_interest,SubClassOf,health_thread).
+predicate(clinical_process_outcome_evaluation,is,Class).
+predicate(clinical_process_outcome_evaluation,SubClassOf,care_evaluation,).
+predicate(clinical_process_outcome_evaluation,SubClassOf,evaluatesOutcomeOf exactly 1 clinical_process).
+predicate(clinical_report,is,Class).
+predicate(consent_competence,is,Class).
+predicate(considered_condition,is,Class).
+predicate(considered_condition,SubClassOf,potential_health_condition,).
+predicate(considered_condition,SubClassOf,isBasedOn min 1 observed_condition).
+predicate(contact,is,Class).
+predicate(contact,SubClassOf,Event,).
+predicate(contact,SubClassOf,takesPlaceDuring exactly 1 contact_period).
+predicate(contact_period,is,Class).
+predicate(contact_period,SubClassOf,care_activity_period).
+predicate(demand_for_care,is,Class).
+predicate(dissent,is,Class).
+predicate(dissent,SubClassOf,Event,).
+predicate(dissent,SubClassOf,limits min 1 care_matter,).
+predicate(dissent,SubClassOf,requires exactly 1 consent_competence).
+predicate(episode_of_care,is,Class).
+predicate(episode_of_care,SubClassOf,health_related_period,).
+predicate(episode_of_care,SubClassOf,isCentredOn exactly 1 health_issue).
+predicate(episodes_of_care_bundle,is,Class).
+predicate(episodes_of_care_bundle,SubClassOf,health_related_period,).
+predicate(episodes_of_care_bundle,SubClassOf,aggregationOf min 1 episode_of_care).
+predicate(excluded_condition,is,Class).
+predicate(excluded_condition,SubClassOf,considered_condition).
+predicate(healthApproach,is,Class).
+predicate(healthApproach,SubClassOf,episode_of_care,).
+predicate(healthApproach,SubClassOf,address exactly 1 healthcare_goal).
+predicate(health_concern,is,Class).
+predicate(health_condition,is,Class).
+predicate(health_condition_delay,is,Class).
+predicate(health_condition_delay,SubClassOf,care_activity_delay).
+predicate(health_condition_evolution,is,Class).
+predicate(health_condition_evolution,SubClassOf,health_thread,).
+predicate(health_condition_evolution,SubClassOf,showsTheEvolutionOf min 1 health_condition,).
+predicate(health_condition_evolution,SubClassOf,relatesTo exactly 1 input_health_state).
+predicate(health_condition_period,is,Class).
+predicate(health_condition_period,SubClassOf,health_related_period).
+predicate(health_issue,is,Class).
+predicate(health_need,is,Class).
+predicate(health_need,SubClassOf,State,).
+predicate(health_need,SubClassOf,isBackgroundFor some reason_for_demand_for_care,).
+predicate(health_need,SubClassOf,isConsideredDuring some healthcare_needs_assessment,).
+predicate(health_need,SubClassOf,isDeficitIn exactly 1 health_state).
+predicate(health_problem_list,is,Class).
+predicate(health_problem_list,SubClassOf,health_thread).
+predicate(health_record,is,Class).
+predicate(health_related_period,is,Class).
+predicate(health_related_period,SubClassOf,Event,).
+predicate(health_related_period,SubClassOf,aggregationOf some health_related_period,).
+predicate(health_related_period,SubClassOf,relatesToTheProvisionOf some health_related_period).
+predicate(health_state,is,Class).
+predicate(health_state,SubClassOf,State,).
+predicate(health_state,SubClassOf,isObservedAs some observed_condition).
+predicate(health_thread,is,Class).
+predicate(health_thread,SubClassOf,Event,).
+predicate(health_thread,SubClassOf,links some care_matter,).
+predicate(health_thread,SubClassOf,links some health_thread,).
+predicate(health_thread,SubClassOf,delineates max 1 episodes_of_care_bundle,).
+predicate(health_thread,SubClassOf,delineates max 1 health_concern).
+predicate(healthcare,is,Class).
+predicate(healthcare,SubClassOf,Event,).
+predicate(healthcare,SubClassOf,isFinancedBy some healthcare_funds).
+predicate(healthcare_funds,is,Class).
+predicate(healthcare_goal,is,Class).
+predicate(healthcare_needs_assessment,is,Class).
+predicate(healthcare_needs_assessment,SubClassOf,care_assessment,).
+predicate(healthcare_needs_assessment,SubClassOf,identifies some needed_care_activity).
+predicate(healthcare_process,is,Class).
+predicate(healthcare_process,SubClassOf,Process,).
+predicate(healthcare_process,SubClassOf,isDocumentedIn some health_record,).
+predicate(healthcare_process,SubClassOf,isPlannedIn some care_plan,).
+predicate(healthcare_process,SubClassOf,isPerformedFor exactly 1 subject_of_care,).
+predicate(healthcare_process,SubClassOf,hasOutput max 1 output_health_state,).
+predicate(healthcare_process,SubClassOf,providesFeedbackTo max 1 care_quality_management).
+predicate(healthcare_professional_entitlement,is,Class).
+predicate(healthcare_resource,is,Class).
+predicate(healthcare_service,is,Class).
+predicate(healthcare_service,SubClassOf,service,).
+predicate(healthcare_service,SubClassOf,isListedIn min 1 healthcare_service_directory,).
+predicate(healthcare_service,SubClassOf,isTheResultOf exactly 1 healthcare_process).
+predicate(healthcare_service_directory,is,Class).
+predicate(informed_consent,is,Class).
+predicate(initial_contact,is,Class).
+predicate(initial_contact,SubClassOf,contact,).
+predicate(initial_contact,SubClassOf,establishes exactly 1 clinical_process).
+predicate(input_health_state,is,Class).
+predicate(input_health_state,SubClassOf,health_state).
+predicate(mandated_period_of_care,is,Class).
+predicate(mandated_period_of_care,SubClassOf,health_related_period,).
+predicate(mandated_period_of_care,SubClassOf,isDocumentedIn min 1 professional_health_record).
+predicate(medicinal_product,is,Class).
+predicate(medicinal_product,SubClassOf,product).
+predicate(medium,is,Class).
+predicate(medium,SubClassOf,Physical-Object).
+predicate(needed_care_activity,is,Class).
+predicate(needed_care_activity,SubClassOf,care_activities_bundle,).
+predicate(needed_care_activity,SubClassOf,address min 1 health_need).
+predicate(next_of_kin,is,Class).
+predicate(next_of_kin,SubClassOf,personRole).
+predicate(non-ratified_healthcare_information,is,Class).
+predicate(observed_condition,is,Class).
+predicate(observed_condition,SubClassOf,health_condition,).
+predicate(observed_condition,SubClassOf,Observation.basedOn some informed_consent,).
+predicate(observed_condition,SubClassOf,Observation.encounter some care_activity,).
+predicate(observed_condition,SubClassOf,Observation.performer some careProfessional,).
+predicate(observed_condition,SubClassOf,Observation.subject some subject_of_care,).
+predicate(observed_condition,SubClassOf,hasBeenObservedDuring exactly 1 health_condition_period,).
+predicate(Literal,,is,Observation.code some www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,Observation.identifier some www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,Observation.status some www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,Observation.effectiveDateTime only dateTime).
+predicate(other_carer,is,Class).
+predicate(other_carer,SubClassOf,personRole).
+predicate(output_health_state,is,Class).
+predicate(output_health_state,SubClassOf,health_state).
+predicate(potential_health_condition,is,Class).
+predicate(potential_health_condition,SubClassOf,health_condition,).
+predicate(potential_health_condition,SubClassOf,representsPotentialAspectsOf exactly 1 health_state).
+predicate(prescribed_self-care,is,Class).
+predicate(prescribed_self-care,SubClassOf,self-care_activity,).
+predicate(prescribed_self-care,SubClassOf,isPrescribedBy exactly 1 careProfessional,).
+predicate(prescribed_self-care,SubClassOf,takesPlaceDuring exactly 1 self-care_period).
+predicate(prescribed_third_party_activity,is,Class).
+predicate(prescribed_third_party_activity,SubClassOf,care_third_party_activity,).
+predicate(prescribed_third_party_activity,SubClassOf,isPrescribedBy exactly 1 careProfessional).
+predicate(product,is,Class).
+predicate(product,SubClassOf,Physical-Object).
+predicate(professional_health_record,is,Class).
+predicate(professionally_assessed_condition,is,Class).
+predicate(professionally_assessed_condition,SubClassOf,observed_condition,).
+predicate(professionally_assessed_condition,SubClassOf,isIdentifiedBy exactly 1 careProfessional).
+predicate(prognostic_condition,is,Class).
+predicate(prognostic_condition,SubClassOf,potential_health_condition).
+predicate(reason_for_demand_for_care,is,Class).
+predicate(referral,is,Class).
+predicate(request,is,Class).
+predicate(request,DisjointWith,care_activity_mandate).
+predicate(resource_delay,is,Class).
+predicate(resource_delay,SubClassOf,care_activity_delay).
+predicate(resultant_condition,is,Class).
+predicate(resultant_condition,SubClassOf,observed_condition,).
+predicate(resultant_condition,SubClassOf,isInputTo some clinical_process_outcome_evaluation).
+predicate(risk_condition,is,Class).
+predicate(risk_condition,SubClassOf,potential_health_condition).
+predicate(self-care_activity,is,Class).
+predicate(self-care_activity,SubClassOf,care_activity,).
+predicate(self-care_activity,SubClassOf,generates some non-ratified_healthcare_information).
+predicate(self-care_period,is,Class).
+predicate(self-care_period,SubClassOf,care_activity_period).
+predicate(service,is,Class).
+predicate(service,SubClassOf,Event).
+predicate(subject_of_care,is,Class).
+predicate(subject_of_care,SubClassOf,personRole).
+predicate(subject_of_care_desire,is,Class).
+predicate(subject_of_care_desire,SubClassOf,State).
+predicate(subject_of_care_preference_delay,is,Class).
+predicate(subject_of_care_preference_delay,SubClassOf,care_activity_delay,).
+predicate(subject_of_care_preference_delay,SubClassOf,isCausedBy exactly 1 subject_of_care).
+predicate(subject_of_care_proxy,is,Class).
+predicate(subject_of_care_proxy,SubClassOf,personRole).
+predicate(target_condition,is,Class).
+predicate(target_condition,SubClassOf,potential_health_condition).
+predicate(working_diagnosis,is,Class).
+predicate(working_diagnosis,SubClassOf,considered_condition,).
+predicate(working_diagnosis,SubClassOf,professionally_assessed_condition,).
+predicate(working_diagnosis,SubClassOf,isConsistentWith min 1 observed_condition).
+predicate(Event,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Physical-Object,is,Class).
+predicate(Process,is,Class).
+predicate(Process,SubClassOf,Stative).
+predicate(State,is,Class).
+predicate(State,SubClassOf,Stative).
+predicate(Stative,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(administrative_division,is,Class).
+predicate(country,is,Class).
+predicate(country,SubClassOf,administrative_division).
+predicate(personRole,is,Class).
+predicate(personRole,SubClassOf,role).
+predicate(socialCareProcess,is,Class).
+predicate(socialCareProcess,SubClassOf,Process).
+predicate(socialCareProviderActivity,is,Class).
+predicate(socialCareProviderActivity,SubClassOf,social_care_activity).
+predicate(socialNeed,is,Class).
+predicate(socialNeed,SubClassOf,State,).
+predicate(socialNeed,SubClassOf,isConsideredDuring some social_care_needs_assessment).
+predicate(socialRecord,is,Class).
+predicate(social_care_activity,is,Class).
+predicate(social_care_activity,SubClassOf,Event,).
+predicate(social_care_activity,SubClassOf,isPerformedFor exactly 1 subject_of_care).
+predicate(social_care_needs_assessment,is,Class).
+predicate(social_care_needs_assessment,SubClassOf,care_assessment).
+predicate(socialcareActivityElement,is,Class).
+predicate(socialcareActivityElement,SubClassOf,Event).
+predicate(role,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(Italy,is,Individual).
+predicate(Italy,Types,country).
+predicate(componentOf some care_activity,is,Class).
+predicate(componentOf some care_activity,SubClassOf,care_provider_activity).

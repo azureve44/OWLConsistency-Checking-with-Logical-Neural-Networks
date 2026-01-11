@@ -1,0 +1,38 @@
+predicate(RO_0002162,is,ObjectProperty).
+predicate(RO_0004025,is,ObjectProperty).
+predicate(RO_0014001,is,ObjectProperty).
+predicate(GO_0003674,is,Class).
+predicate(GO_0003824,is,Class).
+predicate(GO_0003824,SubClassOf,GO_0003674).
+predicate(GO_0016740,is,Class).
+predicate(GO_0016740,SubClassOf,GO_0003824).
+predicate(NCBITaxon_33090,is,Class).
+predicate(NCBITaxon_4751,is,Class).
+predicate(NCBITaxon_4751,DisjointWith,RO_0002162 some NCBITaxon_33090).
+predicate(PATO_0000001,is,Class).
+predicate(PO_0009011,is,Class).
+predicate(PO_0020100,is,Class).
+predicate(PO_0020100,SubClassOf,PO_0020142).
+predicate(PO_0020142,is,Class).
+predicate(PSO_0000013,is,Class).
+predicate(PSO_0000069,is,Class).
+predicate(PSO_0000069,SubClassOf,PSO_0100002).
+predicate(PSO_0000145,is,Class).
+predicate(PSO_0000145,SubClassOf,PSO_0100002).
+predicate(PSO_0000179,is,Class).
+predicate(PSO_0000179,SubClassOf,PSO_0100002).
+predicate(PSO_0000189,is,Class).
+predicate(PSO_0000189,SubClassOf,PSO_0100002).
+predicate(PSO_0100002,is,Class).
+predicate(PSO_0100002,EquivalentTo,PSO_0000013 and (RO_0002162 some NCBITaxon_33090) and (RO_0004025 some PO_0009011) and (RO_0014001 some NCBITaxon_4751)).
+predicate(PSO_0100002,SubClassOf,PSO_0000013,).
+predicate(PSO_0100002,SubClassOf,RO_0014001 some NCBITaxon_4751,).
+predicate(PSO_0100002,SubClassOf,RO_0014001 some).
+predicate(PSO_0100002,SubClassOf,(NCBITaxon_4751 and (RO_0002162 some NCBITaxon_33090)),).
+predicate(PSO_0100002,SubClassOf,RO_0014001 only (RO_0002162 some NCBITaxon_33090)).
+predicate(PSO_0100002,DisjointWith,PSO_0000013 and (RO_0002162 some NCBITaxon_33090) and (RO_0004025 some PO_0009011) and (RO_0014001 some NCBITaxon_4751)).
+predicate(UPHENO_0001001,is,Class).
+predicate(UPHENO_0001001,SubClassOf,PATO_0000001).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(RO_0014001 some NCBITaxon_4751,is,Class).
+predicate(RO_0014001 some NCBITaxon_4751,SubClassOf,PSO_0000069).

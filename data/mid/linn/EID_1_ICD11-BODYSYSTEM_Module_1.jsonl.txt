@@ -1,0 +1,16 @@
+predicate(Continuant,is,Class).
+predicate(DependentContinuant,is,Class).
+predicate(DependentContinuant,EquivalentTo,GenericallyDependentContinuant or SpecificallyDependentContinuant).
+predicate(DependentContinuant,SubClassOf,Continuant).
+predicate(DependentContinuant,DisjointWith,GenericallyDependentContinuant or SpecificallyDependentContinuant).
+predicate(DependentContinuant,DisjointWith,SpatialRegion).
+predicate(DependentContinuant,DisjointWith,IndependentContinuant).
+predicate(GenericallyDependentContinuant,is,Class).
+predicate(GenericallyDependentContinuant,SubClassOf,DependentContinuant).
+predicate(IndependentContinuant,is,Class).
+predicate(IndependentContinuant,DisjointWith,DependentContinuant).
+predicate(SpatialRegion,is,Class).
+predicate(SpatialRegion,DisjointWith,DependentContinuant).
+predicate(SpecificallyDependentContinuant,is,Class).
+predicate(SpecificallyDependentContinuant,SubClassOf,DependentContinuant).
+predicate(www.w3.org/2002/07/#,is,Class).

@@ -1,0 +1,1680 @@
+IsDivisionOf is ObjectProperty.
+LocativeAttribute is ObjectProperty.
+actsOn is ObjectProperty.
+actsSpecificallyOn is ObjectProperty.
+follows is ObjectProperty.
+hasAbnormalityStatus is ObjectProperty.
+hasAbsoluteState is ObjectProperty.
+hasBranch is ObjectProperty.
+hasChronicity is ObjectProperty.
+hasConsequence is ObjectProperty.
+hasDominance is ObjectProperty.
+hasDuration is ObjectProperty.
+hasEffectiveness is ObjectProperty.
+hasIndicationStatus is ObjectProperty.
+hasIntrinsicAbnormalityStatus is ObjectProperty.
+hasIntrinsicPathologicalStatus is ObjectProperty.
+hasMedialLateralSelector is ObjectProperty.
+hasParadoxicalStatus is ObjectProperty.
+hasPathologicalStatus is ObjectProperty.
+hasPermanence is ObjectProperty.
+hasPhenotypicalSex is ObjectProperty.
+hasProcessActivity is ObjectProperty.
+hasReversibility is ObjectProperty.
+hasSeverity is ObjectProperty.
+hasSolidDivision is ObjectProperty.
+hasSpecificFunction is ObjectProperty.
+hasSpecificImmediateConsequence is ObjectProperty.
+hasSpecificLocation is ObjectProperty.
+hasSpecificPhysicalMeans is ObjectProperty.
+hasStructuralComponent is ObjectProperty.
+hasUniqueAssociatedDisplacement is ObjectProperty.
+isActedOnBy is ObjectProperty.
+isActedOnSpecificallyBy is ObjectProperty.
+isBranchOf is ObjectProperty.
+isConsequenceOf is ObjectProperty.
+isDisplacementFrom is ObjectProperty.
+isDisplacementTo is ObjectProperty.
+isExistenceOf is ObjectProperty.
+isFollowedBy is ObjectProperty.
+isFunctionOf is ObjectProperty.
+isHistoryOf is ObjectProperty.
+isSpecificConsequenceOf is ObjectProperty.
+isSpecificFunctionOf is ObjectProperty.
+isSpecificImmediateConsequenceOf is ObjectProperty.
+isSpecificStructuralComponentOf is ObjectProperty.
+isSpecificallyNonPartitivelyContainedIn is ObjectProperty.
+isSpecificallyServedBy is ObjectProperty.
+isStructuralComponentOf is ObjectProperty.
+locativelyContains is ObjectProperty.
+makesUp is ObjectProperty.
+occursDuring is ObjectProperty.
+playsClinicalRole is ObjectProperty.
+playsConsultationRole is ObjectProperty.
+playsPhysiologicalRole is ObjectProperty.
+serves is ObjectProperty.
+AbdominalDisorder is Class.
+AbdominalDisorder SubClassOf PathologicalPhenomenon.
+AbdominalWall is Class.
+AbnormalSkinMorphology is Class.
+AbnormalSkinMorphology SubClassOf Morphology.
+AccompanyingDisorder is Class.
+AccompanyingDisorder SubClassOf PathologicalPhenomenon.
+AcidificationOfUrine is Class.
+AcidificationOfUrine SubClassOf NAMEDRenalDisease.
+AcquiredPathology is Class.
+AcquiredPathology SubClassOf PathologicalPhenomenon.
+ActiveDrugAdditiveRole is Class.
+AcuteAdrenocorticalInsufficiency is Class.
+AcuteAdrenocorticalInsufficiency EquivalentTo BodyProcess and (hasChronicity some.
+AcuteAdrenocorticalInsufficiency EquivalentTo (Chronicity and (hasAbsoluteState some acute))) and (hasEffectiveness some.
+AcuteAdrenocorticalInsufficiency EquivalentTo (Effectiveness and (hasAbsoluteState some ineffective))) and (isSpecificFunctionOf some AdrenalCortex).
+AcuteAdrenocorticalInsufficiency SubClassOf BodyProcess.
+AcuteIschaemicCardiacPathology is Class.
+AcuteIschaemicCardiacPathology SubClassOf IschaemicCardiacPathology.
+AcutePulmonaryHeartDisease is Class.
+AcutePulmonaryHeartDisease SubClassOf PulmonaryHeartDisease.
+AcuteRheumaticHeartDisease is Class.
+AcuteRheumaticHeartDisease SubClassOf RheumaticHeartDisease.
+AdrenalAbnormality is Class.
+AdrenalAbnormality SubClassOf NonNormalPhenomenon.
+AdrenalCortex is Class.
+AdrenalPathology is Class.
+AdrenalPathology SubClassOf PathologicalPhenomenon.
+AdrenocorticalFunction is Class.
+AdrenocorticalFunction EquivalentTo BodyProcess and (isFunctionOf some AdrenalCortex).
+AdrenocorticalFunction SubClassOf BodyProcess.
+AdrenocorticalHyperfunction is Class.
+AdrenocorticalHyperfunction EquivalentTo BodyProcess and (hasPathologicalStatus some pathological) and (hasProcessActivity some highActivityLevel) and (isSpecificFunctionOf some AdrenalCortex).
+AdrenocorticalHyperfunction SubClassOf BodyProcess.
+AdrenocorticalHypofunction is Class.
+AdrenocorticalHypofunction EquivalentTo BodyProcess and (hasPathologicalStatus some pathological) and (hasProcessActivity some lowActivityLevel) and (isSpecificFunctionOf some AdrenalCortex).
+AdrenocorticalHypofunction SubClassOf BodyProcess.
+AdultRespiratoryDistressSyndrome is Class.
+AdultRespiratoryDistressSyndrome SubClassOf PathologicalPhenomenon.
+AdvancedNeuropathy is Class.
+AdvancedNeuropathy SubClassOf PathologicalPhenomenon.
+AffectiveDisorder is Class.
+AffectiveDisorder SubClassOf PathologicalPhenomenon.
+Akathisia is Class.
+AkathisiaSymptom is Class.
+AkathisiaSymptom EquivalentTo Akathisia and (playsConsultationRole some SymptomRole).
+AkathisiaSymptom SubClassOf Akathisia.
+AlcoholWithdrawal is Class.
+AlcoholWithdrawal EquivalentTo WithdrawalSyndrome and (isConsequenceOf some Alcoholism).
+AlcoholWithdrawal SubClassOf WithdrawalSyndrome.
+Alcoholism is Class.
+AlkalinisationOfUrine is Class.
+AlkalinisationOfUrine SubClassOf NAMEDRenalDisease.
+AllergicDisorder is Class.
+AllergicDisorder SubClassOf PathologicalPhenomenon.
+AllergicSkinDisorder is Class.
+AllergicSkinDisorder EquivalentTo SkinPathology and (isConsequenceOf some AllergyProcess).
+AllergicSkinDisorder SubClassOf SkinPathology.
+AllergyProcess is Class.
+AlphaAdrenergicReceptor is Class.
+AlphaBlockade is Class.
+AlphaBlockade EquivalentTo Inhibiting and (actsSpecificallyOn some AlphaAdrenergicReceptor).
+AlphaBlockade SubClassOf Inhibiting.
+AlphaIsletCell is Class.
+AlphaIsletCell SubClassOf IsletCell,.
+AlphaIsletCell SubClassOf hasSpecificFunction some.
+AlphaIsletCell SubClassOf (Secretion and (actsSpecificallyOn some Glucagon) and (hasUniqueAssociatedDisplacement some.
+AlphaIsletCell SubClassOf (Displacement and (isDisplacementFrom some AlphaIsletCell) and (isDisplacementTo some Blood)))).
+AlveolarPathology is Class.
+AlveolarPathology SubClassOf PathologicalPhenomenon.
+Amblyopia is Class.
+Amblyopia SubClassOf NAMEDEyeDiseaseProcess.
+AminolevulinateDehydratasePorphyria is Class.
+AnalPathology is Class.
+AnalPathology SubClassOf PathologicalPhenomenon.
+AndrogenicAlopecia is Class.
+AndrogenicAlopecia SubClassOf LocalisedScalpAlopecia.
+Angiotensin is Class.
+AnkleJoint is Class.
+Anonymous-113 is Class.
+Anonymous-113 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some FourthMetacarpoPhalangealJoint).
+Anonymous-113 SubClassOf AnteriorFlexion,.
+Anonymous-113 SubClassOf isFunctionOf some ThirdLumbricalOfHand.
+Anonymous-115 is Class.
+Anonymous-115 EquivalentTo Dermatome and (isSpecificallyServedBy some T3root).
+Anonymous-115 SubClassOf Dermatome.
+Anonymous-116 is Class.
+Anonymous-116 EquivalentTo DefectiveGene and (isActedOnSpecificallyBy some.
+Anonymous-116 EquivalentTo (GeneTranscription and (hasSpecificImmediateConsequence some HypoxanthineGuaninePhosphoRibosylTransferase))).
+Anonymous-116 SubClassOf DefectiveGene,.
+Anonymous-116 SubClassOf hasConsequence some LeschNyhanSyndrome.
+Anonymous-117 is Class.
+Anonymous-117 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some AnkleJoint).
+Anonymous-117 SubClassOf AnteriorFlexion,.
+Anonymous-117 SubClassOf isFunctionOf some TibialisPosterior.
+Anonymous-138 is Class.
+Anonymous-138 EquivalentTo Secretion and (isFunctionOf some PosteriorLobeOfPituitaryGland).
+Anonymous-138 SubClassOf Secretion,.
+Anonymous-138 SubClassOf actsOn some Angiotensin.
+Anonymous-169 is Class.
+Anonymous-169 EquivalentTo presence and (isExistenceOf some.
+Anonymous-169 EquivalentTo (Collection and (hasAbnormalityStatus some nonNormal))).
+Anonymous-169 SubClassOf presence,.
+Anonymous-169 SubClassOf hasAbnormalityStatus some nonNormal.
+Anonymous-17 is Class.
+Anonymous-17 EquivalentTo Dermatome and (isSpecificallyServedBy some L4root).
+Anonymous-17 SubClassOf Dermatome.
+Anonymous-192 is Class.
+Anonymous-192 EquivalentTo DefectiveGene and (isActedOnSpecificallyBy some.
+Anonymous-192 EquivalentTo (GeneTranscription and (hasSpecificImmediateConsequence some PorphobilinogenSynthase))).
+Anonymous-192 SubClassOf DefectiveGene,.
+Anonymous-192 SubClassOf hasConsequence some AminolevulinateDehydratasePorphyria.
+Anonymous-194 is Class.
+Anonymous-194 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfFourthToe).
+Anonymous-194 SubClassOf AnteriorFlexion,.
+Anonymous-194 SubClassOf isFunctionOf some FlexorDigitorumLongusOfLeg.
+Anonymous-196 is Class.
+Anonymous-196 EquivalentTo MovingRotating and (actsOn some Eyeball).
+Anonymous-196 SubClassOf MovingRotating,.
+Anonymous-196 SubClassOf isFunctionOf some OculomotorNerve.
+Anonymous-203 is Class.
+Anonymous-203 EquivalentTo PosteriorIntercostalArtery and (isSpecificallyNonPartitivelyContainedIn some FourthIntercostalSpace).
+Anonymous-203 SubClassOf PosteriorIntercostalArtery,.
+Anonymous-203 SubClassOf isBranchOf some DescendingAorta.
+Anonymous-22 is Class.
+Anonymous-22 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some KneeJoint).
+Anonymous-22 SubClassOf AnteriorFlexion,.
+Anonymous-22 SubClassOf isFunctionOf some SartoriusMuscle,.
+Anonymous-22 SubClassOf isFunctionOf only Sialorrhea.
+Anonymous-225 is Class.
+Anonymous-225 EquivalentTo Dermatome and (isSpecificallyServedBy some LumbarNerveRoot).
+Anonymous-225 SubClassOf Dermatome.
+Anonymous-235 is Class.
+Anonymous-235 EquivalentTo PosteriorIntercostalVein and (isSpecificallyNonPartitivelyContainedIn some EleventhIntercostalSpace).
+Anonymous-235 SubClassOf PosteriorIntercostalVein,.
+Anonymous-235 SubClassOf serves some AbdominalWall.
+Anonymous-240 is Class.
+Anonymous-240 EquivalentTo OutwardRotation and (actsSpecificallyOn some GlenoHumeralJoint).
+Anonymous-240 SubClassOf OutwardRotation,.
+Anonymous-240 SubClassOf isFunctionOf some DeltoidMuscle.
+Anonymous-247 is Class.
+Anonymous-247 EquivalentTo Secretion and (isFunctionOf some Hypothalamus).
+Anonymous-247 SubClassOf Secretion,.
+Anonymous-247 SubClassOf actsOn some Gonadoliberin.
+Anonymous-256 is Class.
+Anonymous-256 EquivalentTo presence and (isExistenceOf some.
+Anonymous-256 EquivalentTo (GeneralisedProcess and (hasAbnormalityStatus some normal) and (isConsequenceOf some BodyProcess))).
+Anonymous-256 SubClassOf presence,.
+Anonymous-256 SubClassOf hasPathologicalStatus some physiological.
+Anonymous-258 is Class.
+Anonymous-258 EquivalentTo Dermatome and (isSpecificallyServedBy some ThoracicNerveRoot).
+Anonymous-258 SubClassOf Dermatome.
+Anonymous-33 is Class.
+Anonymous-33 EquivalentTo DefectiveGene and (isActedOnSpecificallyBy some.
+Anonymous-33 EquivalentTo (GeneTranscription and (hasSpecificImmediateConsequence some Iduronidase))).
+Anonymous-33 SubClassOf DefectiveGene,.
+Anonymous-33 SubClassOf hasConsequence some ScheieSyndrome.
+Anonymous-348 is Class.
+Anonymous-348 EquivalentTo presence and (isExistenceOf some.
+Anonymous-348 EquivalentTo (GeneralisedStructure and (hasAbnormalityStatus some nonNormal) and (isConsequenceOf some BodyProcess))).
+Anonymous-348 SubClassOf presence,.
+Anonymous-348 SubClassOf hasAbnormalityStatus some nonNormal.
+Anonymous-349 is Class.
+Anonymous-349 EquivalentTo presence and (isExistenceOf some.
+Anonymous-349 EquivalentTo (GeneralisedProcess and (isConsequenceOf some.
+Anonymous-349 EquivalentTo (GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some normal))))).
+Anonymous-349 SubClassOf presence,.
+Anonymous-349 SubClassOf hasAbnormalityStatus some normal.
+Anonymous-359 is Class.
+Anonymous-359 SubClassOf PathologicalPhenomenon.
+Anonymous-371 is Class.
+Anonymous-371 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfThirdToe).
+Anonymous-371 SubClassOf AnteriorFlexion,.
+Anonymous-371 SubClassOf isFunctionOf some QuadratusPlantaeMuscle.
+Anonymous-388 is Class.
+Anonymous-388 SubClassOf PathologicalPhenomenon.
+Anonymous-420 is Class.
+Anonymous-420 EquivalentTo Gramstaining and (actsSpecificallyOn some GramNegativeCellWall).
+Anonymous-420 SubClassOf Gramstaining,.
+Anonymous-420 SubClassOf hasEffectiveness some.
+Anonymous-420 SubClassOf (Effectiveness and (hasAbsoluteState some ineffective)).
+Anonymous-421 is Class.
+Anonymous-421 EquivalentTo Spore and (isSpecificImmediateConsequenceOf some.
+Anonymous-421 EquivalentTo (ReproductiveProcess and (isFunctionOf some Bacillus))).
+Anonymous-421 SubClassOf Spore,.
+Anonymous-421 SubClassOf isActedOnSpecificallyBy some.
+Anonymous-421 SubClassOf (Ziehl-NeelsenStaining and (hasEffectiveness some.
+Anonymous-421 SubClassOf (Effectiveness and (hasAbsoluteState some effective)))).
+Anonymous-422 is Class.
+Anonymous-422 EquivalentTo PotentialCavity and (locativelyContains some Pus).
+Anonymous-422 SubClassOf PotentialCavity,.
+Anonymous-422 SubClassOf hasPathologicalStatus some pathological.
+Anonymous-423 is Class.
+Anonymous-423 EquivalentTo Secretion and (actsSpecificallyOn some HypothalamicHormone) and (hasUniqueAssociatedDisplacement some.
+Anonymous-423 EquivalentTo (Displacement and (isDisplacementFrom some Hypothalamus) and (isDisplacementTo some Blood))).
+Anonymous-423 SubClassOf Secretion,.
+Anonymous-423 SubClassOf isSpecificFunctionOf some Hypothalamus.
+Anonymous-462 is Class.
+Anonymous-462 EquivalentTo Secretion and (isFunctionOf some Hypothalamus).
+Anonymous-462 SubClassOf Secretion,.
+Anonymous-462 SubClassOf actsOn some Somatostatin.
+Anonymous-475 is Class.
+Anonymous-475 EquivalentTo presence and (isExistenceOf some.
+Anonymous-475 EquivalentTo (GeneralisedProcess and (hasAbnormalityStatus some nonNormal) and (isConsequenceOf some BodyProcess))).
+Anonymous-475 SubClassOf presence,.
+Anonymous-475 SubClassOf hasAbnormalityStatus some nonNormal.
+Anonymous-476 is Class.
+Anonymous-476 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some MetacarpoPhalangealJoint).
+Anonymous-476 SubClassOf AnteriorFlexion,.
+Anonymous-476 SubClassOf hasIntrinsicPathologicalStatus some physiological.
+Anonymous-478 is Class.
+Anonymous-478 EquivalentTo Dermatome and (isSpecificallyServedBy some L2root).
+Anonymous-478 SubClassOf Dermatome.
+Anonymous-486 is Class.
+Anonymous-486 EquivalentTo presence and (isExistenceOf some.
+Anonymous-486 EquivalentTo (GeneralisedProcess and (isConsequenceOf some.
+Anonymous-486 EquivalentTo (GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasPathologicalStatus some pathological))))).
+Anonymous-486 SubClassOf presence,.
+Anonymous-486 SubClassOf hasIntrinsicPathologicalStatus some pathological.
+Anonymous-538 is Class.
+Anonymous-538 EquivalentTo SkinOfPlantarRegionOfFoot and (hasMedialLateralSelector some medialSelection).
+Anonymous-538 SubClassOf SkinOfPlantarRegionOfFoot,.
+Anonymous-538 SubClassOf hasSolidDivision some L5Dermatome.
+Anonymous-553 is Class.
+Anonymous-553 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some GlenoHumeralJoint).
+Anonymous-553 SubClassOf AnteriorFlexion,.
+Anonymous-553 SubClassOf isFunctionOf some BicepsBrachii.
+Anonymous-560 is Class.
+Anonymous-560 EquivalentTo OutwardRotation and (actsSpecificallyOn some HipJoint).
+Anonymous-560 SubClassOf OutwardRotation,.
+Anonymous-560 SubClassOf isFunctionOf some GemellusSuperior.
+Anonymous-561 is Class.
+Anonymous-561 EquivalentTo presence and (isExistenceOf some.
+Anonymous-561 EquivalentTo (GeneralisedSubstance and (isConsequenceOf some.
+Anonymous-561 EquivalentTo (GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some normal))))).
+Anonymous-561 SubClassOf presence,.
+Anonymous-561 SubClassOf hasPathologicalStatus some physiological.
+Anonymous-562 is Class.
+Anonymous-562 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfFifthToe).
+Anonymous-562 SubClassOf AnteriorFlexion,.
+Anonymous-562 SubClassOf isFunctionOf some FlexorDigitorumBrevisOfFoot.
+Anonymous-563 is Class.
+Anonymous-563 EquivalentTo OutwardRotation and (actsSpecificallyOn some HipJoint).
+Anonymous-563 SubClassOf OutwardRotation,.
+Anonymous-563 SubClassOf isFunctionOf some GemellusInferior.
+Anonymous-576 is Class.
+Anonymous-576 EquivalentTo Gait and (hasAbsoluteState some staggering).
+Anonymous-576 SubClassOf Gait.
+Anonymous-587 is Class.
+Anonymous-587 EquivalentTo absence and (isExistenceOf some.
+Anonymous-587 EquivalentTo (GeneralisedSubstance and (isConsequenceOf some.
+Anonymous-587 EquivalentTo (GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some nonNormal))))).
+Anonymous-587 SubClassOf absence,.
+Anonymous-587 SubClassOf hasAbnormalityStatus some normal.
+Anonymous-610 is Class.
+Anonymous-610 EquivalentTo absence and (isExistenceOf some.
+Anonymous-610 EquivalentTo (GeneralisedProcess and (hasAbnormalityStatus some nonNormal) and (isConsequenceOf some BodyProcess))).
+Anonymous-610 SubClassOf absence,.
+Anonymous-610 SubClassOf hasPathologicalStatus some physiological.
+Anonymous-635 is Class.
+Anonymous-635 EquivalentTo ThelarcheProcess and (actsSpecificallyOn some FemaleBreast).
+Anonymous-635 SubClassOf ThelarcheProcess,.
+Anonymous-635 SubClassOf hasAbnormalityStatus some normal.
+Anonymous-664 is Class.
+Anonymous-664 EquivalentTo PotentialCavity and (locativelyContains some Blood).
+Anonymous-664 SubClassOf PotentialCavity,.
+Anonymous-664 SubClassOf hasPathologicalStatus some pathological.
+Anonymous-667 is Class.
+Anonymous-667 EquivalentTo presence and (isExistenceOf some.
+Anonymous-667 EquivalentTo (GeneralisedStructure and (hasPathologicalStatus some pathological) and (isActedOnBy some BodyProcess))).
+Anonymous-667 SubClassOf presence,.
+Anonymous-667 SubClassOf hasIntrinsicPathologicalStatus some pathological.
+Anonymous-668 is Class.
+Anonymous-668 EquivalentTo AnteriorIntercostalArtery and (isSpecificallyNonPartitivelyContainedIn some FourthIntercostalSpace).
+Anonymous-668 SubClassOf AnteriorIntercostalArtery,.
+Anonymous-668 SubClassOf isBranchOf some InternalThoracicArtery.
+Anonymous-71 is Class.
+Anonymous-71 EquivalentTo Secretion and (actsSpecificallyOn some NeurohypophysealHormone) and (hasUniqueAssociatedDisplacement some.
+Anonymous-71 EquivalentTo (Displacement and (isDisplacementFrom some PosteriorLobeOfPituitaryGland) and (isDisplacementTo some Blood))).
+Anonymous-71 SubClassOf Secretion,.
+Anonymous-71 SubClassOf isSpecificFunctionOf some PosteriorLobeOfPituitaryGland.
+Anonymous-711 is Class.
+Anonymous-711 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some KneeJoint).
+Anonymous-711 SubClassOf AnteriorFlexion,.
+Anonymous-711 SubClassOf isFunctionOf some Gracilis.
+Anonymous-715 is Class.
+Anonymous-715 EquivalentTo presence and (isExistenceOf some.
+Anonymous-715 EquivalentTo (Substance and (hasPathologicalStatus some physiological))).
+Anonymous-715 SubClassOf presence,.
+Anonymous-715 SubClassOf hasPathologicalStatus some physiological.
+Anonymous-719 is Class.
+Anonymous-719 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some AnkleJoint).
+Anonymous-719 SubClassOf AnteriorFlexion,.
+Anonymous-719 SubClassOf isFunctionOf some SoleusMuscle.
+Anonymous-76 is Class.
+Anonymous-76 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfSecondToe).
+Anonymous-76 SubClassOf AnteriorFlexion,.
+Anonymous-76 SubClassOf isFunctionOf some QuadratusPlantaeMuscle.
+Anonymous-769 is Class.
+Anonymous-769 EquivalentTo DamagingProcess and (LocativeAttribute some BodyStructure).
+Anonymous-769 SubClassOf DamagingProcess,.
+Anonymous-769 SubClassOf hasPathologicalStatus some pathological.
+Anonymous-779 is Class.
+Anonymous-779 EquivalentTo absence and (isExistenceOf some.
+Anonymous-779 EquivalentTo (GeneralisedStructure and (isConsequenceOf some.
+Anonymous-779 EquivalentTo (GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some nonNormal))))).
+Anonymous-779 SubClassOf absence,.
+Anonymous-779 SubClassOf hasAbnormalityStatus some normal.
+Anonymous-78 is Class.
+Anonymous-78 EquivalentTo Gramstaining and (actsSpecificallyOn some GramPositiveCellWall).
+Anonymous-78 SubClassOf Gramstaining,.
+Anonymous-78 SubClassOf hasEffectiveness some.
+Anonymous-78 SubClassOf (Effectiveness and (hasAbsoluteState some effective)).
+Anonymous-782 is Class.
+Anonymous-782 EquivalentTo absence and (isExistenceOf some.
+Anonymous-782 EquivalentTo (GeneralisedProcess and (isConsequenceOf some.
+Anonymous-782 EquivalentTo (GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some nonNormal))))).
+Anonymous-782 SubClassOf absence,.
+Anonymous-782 SubClassOf hasAbnormalityStatus some normal.
+Anonymous-791 is Class.
+Anonymous-791 EquivalentTo AnteriorIntercostalArtery and (isSpecificallyNonPartitivelyContainedIn some EleventhIntercostalSpace).
+Anonymous-791 SubClassOf AnteriorIntercostalArtery,.
+Anonymous-791 SubClassOf isBranchOf some MusculoPhrenicArtery.
+Anonymous-792 is Class.
+Anonymous-792 EquivalentTo presence and (isExistenceOf some.
+Anonymous-792 EquivalentTo (BodyStructure and (hasPathologicalStatus some physiological))).
+Anonymous-792 SubClassOf presence,.
+Anonymous-792 SubClassOf hasPathologicalStatus some physiological.
+Anonymous-8 is Class.
+Anonymous-8 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfSecondToe).
+Anonymous-8 SubClassOf AnteriorFlexion,.
+Anonymous-8 SubClassOf isFunctionOf some FlexorDigitorumLongusOfLeg.
+Anonymous-853 is Class.
+Anonymous-853 EquivalentTo AnteriorFlexion and (actsSpecificallyOn some CarpoMetacarpalJoint).
+Anonymous-853 SubClassOf AnteriorFlexion,.
+Anonymous-853 SubClassOf hasIntrinsicPathologicalStatus some physiological.
+Anonymous-87 is Class.
+Anonymous-87 EquivalentTo absence and (isExistenceOf some.
+Anonymous-87 EquivalentTo (Collection and (hasAbnormalityStatus some nonNormal))).
+Anonymous-87 SubClassOf absence,.
+Anonymous-87 SubClassOf hasAbnormalityStatus some normal.
+AnteriorFlexion is Class.
+AnteriorIntercostalArtery is Class.
+AorticValveDisorder is Class.
+AorticValveDisorder SubClassOf PathologicalPhenomenon.
+Apathy is Class.
+Apathy SubClassOf CooperativeOrUncooperative.
+ApicalHeartWall is Class.
+ApicalHeartWall SubClassOf HeartWall.
+Appearance is Class.
+Appearance SubClassOf Morphology.
+ArbitrarilyConjunctedPhenomenon is Class.
+ArbitrarilyConjunctedPhenomenon SubClassOf DomainCategory.
+ArterialPathology is Class.
+ArterialPathology SubClassOf PathologicalPhenomenon.
+Asphyxiating is Class.
+Asphyxiating SubClassOf NonNormalBreathing.
+AutoimmuneDisease is Class.
+AutoimmuneDisease SubClassOf PathologicalPhenomenon.
+AutosomallyDominantInheritedPathology is Class.
+AutosomallyDominantInheritedPathology SubClassOf PathologicalPhenomenon.
+Axilla is Class.
+AxillaryLymphadenopathy is Class.
+AxillaryLymphadenopathy EquivalentTo Phenomenon and (LocativeAttribute some AxillaryLymphnode) and (hasPathologicalStatus some pathological).
+AxillaryLymphadenopathy SubClassOf Phenomenon.
+AxillaryLymphnode is Class.
+Bacillus is Class.
+BackgroundRetinopathy is Class.
+BackgroundRetinopathy SubClassOf Retinopathy.
+BasalGangliaDisease is Class.
+BasalGangliaDisease SubClassOf PathologicalPhenomenon.
+BehaviouralDisorder is Class.
+BehaviouralDisorder SubClassOf PathologicalPhenomenon.
+BicepsBrachii is Class.
+BiliaryTractPathology is Class.
+BiliaryTractPathology SubClassOf PathologicalPhenomenon.
+BilrothOneMethod is Class.
+BilrothOneMethod SubClassOf NAMEDEponymousMethod.
+BilrothTwoMethod is Class.
+BilrothTwoMethod SubClassOf NAMEDEponymousMethod.
+BiochemicalAbnormality is Class.
+BiochemicalAbnormality SubClassOf NonNormalPhenomenon.
+BiochemicalDisorder is Class.
+BiochemicalDisorder SubClassOf PathologicalPhenomenon.
+Blood is Class.
+BloodVessel is Class.
+BlurredVision is Class.
+BlurredVision SubClassOf NAMEDEyeDiseaseProcess.
+BodyProcess is Class.
+BodyStructure is Class.
+BodySystemPathology is Class.
+BodySystemPathology SubClassOf PathologicalPhenomenon.
+BoneDisease is Class.
+BoneDisease SubClassOf PathologicalPhenomenon.
+BoneInjury is Class.
+BoneInjury SubClassOf PathologicalPhenomenon.
+BoneMarrowDisorder is Class.
+BoneMarrowDisorder SubClassOf PathologicalPhenomenon.
+BoneMarrowToxicity is Class.
+BoneMarrowToxicity SubClassOf PathologicalPhenomenon.
+BrachialPlexus is Class.
+BrachialPlexus SubClassOf NAMEDNervePlexus,.
+BrachialPlexus SubClassOf hasBranch some DorsalScapularNerve,.
+BrachialPlexus SubClassOf hasStructuralComponent some LateralCordOfBrachialPlexus,.
+BrachialPlexus SubClassOf hasStructuralComponent some MedialCordOfBrachialPlexus,.
+BrachialPlexus SubClassOf hasStructuralComponent some PosteriorCordOfBrachialPlexus,.
+BrachialPlexus SubClassOf isStructuralComponentOf some Axilla.
+Breathing is Class.
+BronchialPathology is Class.
+BronchialPathology SubClassOf PathologicalPhenomenon.
+BronchopulmonaryPathology is Class.
+BronchopulmonaryPathology SubClassOf PathologicalPhenomenon.
+CalcitoninAsDrug is Class.
+CalcitoninSalmon is Class.
+CalcitoninSalmon EquivalentTo CalcitoninAsDrug and (isSpecificConsequenceOf some.
+CalcitoninSalmon EquivalentTo (Removing and (actsSpecificallyOn some.
+CalcitoninSalmon EquivalentTo (Thyrocalcitonin and (makesUp some Salmon))))).
+CalcitoninSalmon SubClassOf CalcitoninAsDrug.
+CardiacMuscle is Class.
+CardiacPathology is Class.
+CardiacPathology SubClassOf PathologicalPhenomenon.
+CardiacPhenomenon is Class.
+CardiacPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some Heart).
+CardiacPhenomenon SubClassOf Phenomenon.
+CardiacValvotomy is Class.
+CardiovascularDisease is Class.
+CardiovascularDisease SubClassOf PathologicalPhenomenon.
+CardiovascularSystem is Class.
+CardiovascularSystemPhenomenon is Class.
+CardiovascularSystemPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some CardiovascularSystem).
+CardiovascularSystemPhenomenon SubClassOf Phenomenon.
+CarpoMetacarpalJoint is Class.
+CellMorphologyState is Class.
+CentralNeuropathy is Class.
+CentralNeuropathy SubClassOf PathologicalPhenomenon.
+CentralVascularDisorder is Class.
+CentralVascularDisorder SubClassOf PathologicalPhenomenon.
+CerebralHemisphere is Class.
+CerebrovascularAccident is Class.
+CerebrovascularAccident SubClassOf PermanentCentralNeuropathy.
+CervicalCordMeninges is Class.
+CervicalCordMeninges EquivalentTo Meninges and (isSpecificStructuralComponentOf some CervicalSpinalCord).
+CervicalCordMeninges SubClassOf Meninges.
+CervicalLymphadenopathy is Class.
+CervicalLymphadenopathy EquivalentTo Phenomenon and (LocativeAttribute some CervicalLymphnode) and (hasPathologicalStatus some pathological).
+CervicalLymphadenopathy SubClassOf Phenomenon.
+CervicalLymphnode is Class.
+CervicalSpinalCord is Class.
+ChangeProcess is Class.
+ChangingPhenomenon is Class.
+ChangingPhenomenon EquivalentTo ChangeProcess and (LocativeAttribute some Phenomenon).
+ChangingPhenomenon SubClassOf ChangeProcess.
+ChemoreceptorSystemPathology is Class.
+ChemoreceptorSystemPathology SubClassOf PathologicalPhenomenon.
+ChronicIschaemicCardiacPathology is Class.
+ChronicIschaemicCardiacPathology SubClassOf IschaemicCardiacPathology.
+ChronicPulmonaryHeartDisease is Class.
+ChronicPulmonaryHeartDisease SubClassOf PulmonaryHeartDisease.
+ChronicRheumaticHeartDisease is Class.
+ChronicRheumaticHeartDisease SubClassOf RheumaticHeartDisease.
+Chronicity is Class.
+Cirrhosis is Class.
+Cleanliness is Class.
+Cleanliness SubClassOf Morphology.
+CognitivePathology is Class.
+CognitivePathology SubClassOf PathologicalPhenomenon.
+CognitiveProcess is Class.
+Colistin is Class.
+ColistinSulphomethateSodium is Class.
+ColistinSulphomethateSodium SubClassOf Colistin.
+CollagenDisease is Class.
+CollagenDisease SubClassOf PathologicalPhenomenon.
+Collection is Class.
+ColonicPathology is Class.
+ColonicPathology SubClassOf PathologicalPhenomenon.
+ConcommitantDisease is Class.
+ConcommitantDisease SubClassOf PathologicalPhenomenon.
+CongenitalArterialPathology is Class.
+CongenitalArterialPathology SubClassOf PathologicalPhenomenon.
+CongenitalPathologicalLesion is Class.
+CongenitalPathologicalLesion SubClassOf PathologicalPhenomenon.
+CongenitalPathology is Class.
+CongenitalPathology SubClassOf PathologicalPhenomenon.
+CongenitalUterineMalformation is Class.
+CongenitalUterineMalformation EquivalentTo CongenitalPathologicalLesion and (hasSpecificLocation some Uterus).
+CongenitalUterineMalformation SubClassOf CongenitalPathologicalLesion.
+CongenitalVaginalMalformation is Class.
+CongenitalVaginalMalformation EquivalentTo CongenitalPathologicalLesion and (hasSpecificLocation some Vagina).
+CongenitalVaginalMalformation SubClassOf CongenitalPathologicalLesion.
+CongenitalVascularPathology is Class.
+CongenitalVascularPathology SubClassOf PathologicalPhenomenon.
+CongenitalVenousPathology is Class.
+CongenitalVenousPathology SubClassOf PathologicalPhenomenon.
+ConjunctivalDisorder is Class.
+ConjunctivalDisorder SubClassOf PathologicalPhenomenon.
+ConjunctivalHyperaemia is Class.
+ConjunctivalHyperaemia SubClassOf NAMEDEyeDiseaseProcess.
+ConjunctivalVascularCongestion is Class.
+ConjunctivalVascularCongestion SubClassOf NAMEDEyeDiseaseProcess.
+Consistency is Class.
+Consistency SubClassOf Morphology.
+ContactSensitisation is Class.
+ContactSensitisation SubClassOf NAMEDImmuneDiseaseProcess.
+CooperativeOrUncooperative is Class.
+CornealDisorder is Class.
+CornealDisorder SubClassOf PathologicalPhenomenon.
+CornealOpacityReversible is Class.
+CornealOpacityReversible SubClassOf NAMEDEyeDiseaseProcess.
+CoronaryArtery is Class.
+CoronaryArteryPathology is Class.
+CoronaryArteryPathology SubClassOf PathologicalPhenomenon.
+CoronaryHeartDisease is Class.
+CoronaryHeartDisease EquivalentTo CardiacPathology and (isConsequenceOf some CoronaryArteryPathology).
+CoronaryHeartDisease SubClassOf CardiacPathology.
+CoronaryPerfusion is Class.
+CoronaryPerfusion EquivalentTo VascularPerfusion and (isSpecificFunctionOf some CoronaryArtery).
+CoronaryPerfusion SubClassOf VascularPerfusion,.
+CoronaryPerfusion SubClassOf actsSpecificallyOn some CardiacMuscle.
+CoronarySinusDefect is Class.
+CoronarySinusDefect SubClassOf PathologicalPhenomenon.
+CountConcentration is Class.
+Ctenomyces is Class.
+Ctenomyces SubClassOf Dikaryomycota.
+DamagingProcess is Class.
+DarklyPigmentedIris is Class.
+DarklyPigmentedIris SubClassOf NAMEDEyeDiseaseProcess.
+DarklyPigmentedPupil is Class.
+DarklyPigmentedPupil SubClassOf NAMEDEyeDiseaseProcess.
+DecreasedNightVision is Class.
+DecreasedNightVision SubClassOf NAMEDEyeDiseaseProcess.
+DecreasedToleranceOfContactLenses is Class.
+DecreasedToleranceOfContactLenses SubClassOf NAMEDEyeDiseaseProcess.
+DefectiveGene is Class.
+DeltoidMuscle is Class.
+DermalPathology is Class.
+DermalPathology SubClassOf PathologicalPhenomenon.
+Dermatome is Class.
+DescendingAorta is Class.
+DeteriorationOfOtosclerosis is Class.
+DeteriorationOfOtosclerosis SubClassOf NAMEDEarDiseaseProcess.
+DeteriorationOfPreExistingRenalDisease is Class.
+DeteriorationOfPreExistingRenalDisease SubClassOf NAMEDRenalDisease.
+DevelopmentalStatus is Class.
+DevelopmentalStatus SubClassOf Morphology.
+Device is Class.
+DiabetesMellitus is Class.
+DiabeticNephropathy is Class.
+DiabeticNephropathy EquivalentTo Nephropathy and (isConsequenceOf some DiabetesMellitus).
+DiabeticNephropathy SubClassOf Nephropathy.
+DiabeticVagalNeuropathy is Class.
+DiabeticVagalNeuropathy SubClassOf PathologicalPhenomenon.
+DiaphragmaticPathology is Class.
+DiaphragmaticPathology SubClassOf PathologicalPhenomenon.
+DiarrhoealDisorder is Class.
+DiarrhoealDisorder SubClassOf PathologicalPhenomenon.
+DigestiveSystem is Class.
+DigestiveSystemPathology is Class.
+DigestiveSystemPathology SubClassOf PathologicalPhenomenon.
+DigestiveSystemPhenomenon is Class.
+DigestiveSystemPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some DigestiveSystem).
+DigestiveSystemPhenomenon SubClassOf Phenomenon.
+Dikaryomycota is Class.
+Diplopia is Class.
+Diplopia SubClassOf NAMEDEyeDiseaseProcess.
+Disability is Class.
+Disability SubClassOf PathologicalPhenomenon.
+Displacement is Class.
+Distribution is Class.
+Distribution SubClassOf Morphology.
+DisturbanceOfAccommodation is Class.
+DisturbanceOfAccommodation SubClassOf NAMEDEyeDiseaseProcess.
+DisturbanceOfMenstruation is Class.
+DisturbanceOfMenstruation SubClassOf PathologicalPhenomenon.
+DisturbanceOfPeripheralCirculation is Class.
+DisturbanceOfPeripheralCirculation SubClassOf PeripheralPerfusion.
+DisulfiramReaction is Class.
+DisulfiramReaction SubClassOf NAMEDImmuneDiseaseProcess.
+DomainCategory is Class.
+DomainCategory SubClassOf TopCategory.
+Dominance is Class.
+DorsalScapularNerve is Class.
+DrugAbsoluteContraindication is Class.
+DrugAbsoluteContraindication EquivalentTo DrugContraindication and (hasIndicationStatus some absoluteContraindication).
+DrugAbsoluteContraindication SubClassOf DrugContraindication.
+DrugContraindication is Class.
+DryEyeSyndrome is Class.
+DryEyeSyndrome SubClassOf NAMEDEyeDiseaseProcess.
+DryEyes is Class.
+DryEyes SubClassOf NAMEDEyeDiseaseProcess.
+DuodenalPathology is Class.
+DuodenalPathology SubClassOf PathologicalPhenomenon.
+Duration is Class.
+Dysarthria is Class.
+Dysarthria SubClassOf PathologicalPhenomenon.
+ECGSegmentPhenomenon is Class.
+ECGSegmentPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some ECGTraceSegment).
+ECGSegmentPhenomenon SubClassOf Phenomenon.
+ECGTrace is Class.
+ECGTracePhenomenon is Class.
+ECGTracePhenomenon EquivalentTo Phenomenon and (LocativeAttribute some ECGTrace).
+ECGTracePhenomenon SubClassOf Phenomenon.
+ECGTraceSegment is Class.
+EarPathology is Class.
+EarPathology SubClassOf PathologicalPhenomenon.
+EarlyOnsetIschaemicCoronaryHeartDisease is Class.
+EarlyOnsetIschaemicCoronaryHeartDisease SubClassOf IschaemicCardiacPathology.
+Effectiveness is Class.
+EleventhIntercostalSpace is Class.
+Encephalopathy is Class.
+Encephalopathy SubClassOf PathologicalPhenomenon.
+EndocrineSystem is Class.
+EndocrineSystemPathology is Class.
+EndocrineSystemPathology SubClassOf PathologicalPhenomenon.
+EndocrineSystemPhenomenon is Class.
+EndocrineSystemPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some EndocrineSystem).
+EndocrineSystemPhenomenon SubClassOf Phenomenon.
+EndometrialPathology is Class.
+EndometrialPathology SubClassOf PathologicalPhenomenon.
+Endoscope is Class.
+EosinophilicPneumonia is Class.
+EosinophilicPneumonia SubClassOf NAMEDImmuneDiseaseProcess.
+Ephedra is Class.
+Ephedra SubClassOf Gnetales.
+Epidemiology is Class.
+Epidemiology SubClassOf PublicHealth.
+EpidermalPathology is Class.
+EpidermalPathology SubClassOf PathologicalPhenomenon.
+ErythrocyteDisorder is Class.
+ErythrocyteDisorder SubClassOf PathologicalPhenomenon.
+EsophagealPathology is Class.
+EsophagealPathology SubClassOf PathologicalPhenomenon.
+EuropeanMole is Class.
+EuropeanMole SubClassOf Talpidae.
+ExaminingProcess is Class.
+ExternalStimulusSensation is Class.
+ExtraPyramidalPathology is Class.
+ExtraPyramidalPathology SubClassOf PathologicalPhenomenon.
+ExtrapyramidalAkathisia is Class.
+ExtrapyramidalAkathisia SubClassOf AkathisiaSymptom.
+Exudate is Class.
+ExudativeDermatosis is Class.
+ExudativeDermatosis EquivalentTo SkinPathology and (hasConsequence some Exudate).
+ExudativeDermatosis SubClassOf SkinPathology.
+EyePathology is Class.
+EyePathology SubClassOf PathologicalPhenomenon.
+Eyeball is Class.
+EyeballDisorder is Class.
+EyeballDisorder SubClassOf PathologicalPhenomenon.
+EyelashDisorder is Class.
+EyelashDisorder SubClassOf PathologicalPhenomenon.
+EyelidDisorder is Class.
+EyelidDisorder SubClassOf PathologicalPhenomenon.
+FemaleBreast is Class.
+FemaleGenitalTractComponent is Class.
+FemaleGenitoUrinaryDisorder is Class.
+FemaleGenitoUrinaryDisorder SubClassOf PathologicalPhenomenon.
+FemaleGenitoUrinaryPathology is Class.
+FemaleGenitoUrinaryPathology SubClassOf PathologicalPhenomenon.
+FemalePatternAndrogenicBaldness is Class.
+FemalePatternAndrogenicBaldness SubClassOf AndrogenicAlopecia.
+FibroticLungDisease is Class.
+FibroticLungDisease SubClassOf PathologicalPhenomenon.
+FlexorDigitorumBrevisOfFoot is Class.
+FlexorDigitorumLongusOfLeg is Class.
+FlightOfIdeas is Class.
+FlightOfIdeas SubClassOf PathologicalCognition.
+FourthIntercostalSpace is Class.
+FourthMetacarpoPhalangealJoint is Class.
+FunctionalRole is Class.
+Gait is Class.
+GallbladderDisease is Class.
+GallbladderDisease SubClassOf PathologicalPhenomenon.
+GastricPathology is Class.
+GastricPathology SubClassOf PathologicalPhenomenon.
+GastroIntestinalDisturbance is Class.
+GastroIntestinalDisturbance SubClassOf PathologicalPhenomenon.
+GastrointestinalTractPathology is Class.
+GastrointestinalTractPathology SubClassOf PathologicalPhenomenon.
+GemellusInferior is Class.
+GemellusSuperior is Class.
+GeneTranscription is Class.
+GeneralisedProcess is Class.
+GeneralisedStructure is Class.
+GeneralisedSubstance is Class.
+GenitoUrinaryPathology is Class.
+GenitoUrinaryPathology SubClassOf PathologicalPhenomenon.
+GestationalPhenomenon is Class.
+GestationalPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some Pregnancy).
+GestationalPhenomenon SubClassOf Phenomenon,.
+GestationalPhenomenon SubClassOf occursDuring some PeriodDuringPregnancy.
+GingivalDisease is Class.
+GingivalDisease SubClassOf PathologicalPhenomenon.
+GlenoHumeralJoint is Class.
+GlossopharyngealBreathing is Class.
+GlossopharyngealBreathing SubClassOf NonNormalBreathing.
+Glucagon is Class.
+Glycerophospholipid is Class.
+Glycogenosis is Class.
+Glycogenosis SubClassOf PathologicalPhenomenon.
+Gnetales is Class.
+Gonadoliberin is Class.
+Gracilis is Class.
+Grafting is Class.
+GramNegativeCellWall is Class.
+GramPositiveCellWall is Class.
+Gramstaining is Class.
+GreatVesselDisorder is Class.
+GreatVesselDisorder SubClassOf PathologicalPhenomenon.
+GreaterSaphenousVein is Class.
+GynaecologicalPain is Class.
+GynaecologicalPain EquivalentTo ExternalStimulusSensation and (actsOn some.
+GynaecologicalPain EquivalentTo (Signal and (isConsequenceOf some.
+GynaecologicalPain EquivalentTo (NerveConduction and (hasUniqueAssociatedDisplacement some.
+GynaecologicalPain EquivalentTo (Displacement and (isDisplacementFrom some FemaleGenitalTractComponent))))) and (isSpecificConsequenceOf some.
+GynaecologicalPain EquivalentTo (TransducingProcess and (isSpecificFunctionOf some PainReceptorCell))))).
+GynaecologicalPain SubClassOf ExternalStimulusSensation.
+HaematologicalDisorder is Class.
+HaematologicalDisorder SubClassOf PathologicalPhenomenon.
+HaemorrhagicStroke is Class.
+HaemorrhagicStroke SubClassOf PermanentCentralNeuropathy.
+HeadInjury is Class.
+HeadInjury SubClassOf PathologicalPhenomenon.
+HearingDeficiency is Class.
+HearingDeficiency SubClassOf NAMEDEarDiseaseProcess.
+HearingLoss is Class.
+HearingLoss SubClassOf NAMEDEarDiseaseProcess.
+HearingProblem is Class.
+HearingProblem SubClassOf PathologicalPhenomenon.
+Heart is Class.
+HeartAndLungPathology is Class.
+HeartAndLungPathology SubClassOf PathologicalPhenomenon.
+HeartSound is Class.
+HeartValveDisorder is Class.
+HeartValveDisorder SubClassOf PathologicalPhenomenon.
+HeartWall is Class.
+HeparinCrossReaction is Class.
+HeparinCrossReaction SubClassOf PathologicalPhenomenon.
+HepaticDisease is Class.
+HepaticDisease SubClassOf PathologicalPhenomenon.
+HepaticEncephalopathy is Class.
+HepaticEncephalopathy EquivalentTo Encephalopathy and (isConsequenceOf some Cirrhosis).
+HepaticEncephalopathy SubClassOf Encephalopathy.
+Hepatotoxicity is Class.
+Hepatotoxicity SubClassOf PathologicalPhenomenon.
+HereditaryDegenerativeRetinalDisorder is Class.
+HereditaryDegenerativeRetinalDisorder SubClassOf NAMEDEyeDiseaseProcess.
+HipJoint is Class.
+HistoryOfRaynaudsPhenomenon is Class.
+HistoryOfRaynaudsPhenomenon EquivalentTo PreviousPersonalHistory and (isHistoryOf some.
+HistoryOfRaynaudsPhenomenon EquivalentTo (presence and (isExistenceOf some RaynaudPhenomenon))).
+HistoryOfRaynaudsPhenomenon SubClassOf PreviousPersonalHistory.
+Human is Class.
+HypertensiveCardiacPathology is Class.
+HypertensiveCardiacPathology EquivalentTo CardiacPathology and (isConsequenceOf some SystemicHypertension).
+HypertensiveCardiacPathology SubClassOf CardiacPathology.
+HypertensiveDisease is Class.
+HypertensiveDisease SubClassOf PathologicalPhenomenon.
+HypertensiveHeartAndRenalPathology is Class.
+HypertensiveHeartAndRenalPathology SubClassOf PathologicalPhenomenon.
+HypertensiveRenalPathology is Class.
+HypertensiveRenalPathology EquivalentTo Nephropathy and (isConsequenceOf some SystemicHypertension).
+HypertensiveRenalPathology SubClassOf Nephropathy.
+HypochondrialPain is Class.
+HypochondrialPain EquivalentTo ExternalStimulusSensation and (actsOn some.
+HypochondrialPain EquivalentTo (PainSignal and (isConsequenceOf some.
+HypochondrialPain EquivalentTo (NerveConduction and (hasUniqueAssociatedDisplacement some.
+HypochondrialPain EquivalentTo (Displacement and (isDisplacementFrom some Hypochondrium))))))).
+HypochondrialPain SubClassOf ExternalStimulusSensation.
+HypochondrialPainSymptom is Class.
+HypochondrialPainSymptom SubClassOf HypochondrialPain.
+Hypochondrium is Class.
+HypotensiveDisease is Class.
+HypotensiveDisease SubClassOf PathologicalPhenomenon.
+HypothalamicHormone is Class.
+Hypothalamus is Class.
+HypoxanthineGuaninePhosphoRibosylTransferase is Class.
+IdiopathicRespiratoryDistressSyndrome is Class.
+IdiopathicRespiratoryDistressSyndrome SubClassOf PathologicalPhenomenon.
+Iduronidase is Class.
+ImmuneSystem is Class.
+ImmuneSystemPathology is Class.
+ImmuneSystemPathology SubClassOf PathologicalPhenomenon.
+ImmuneSystemPhenomenon is Class.
+ImmuneSystemPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some ImmuneSystem).
+ImmuneSystemPhenomenon SubClassOf Phenomenon.
+ImmunodeficiencySyndrome is Class.
+ImmunodeficiencySyndrome SubClassOf NAMEDImmuneDiseaseProcess.
+ImpairedPeripheralBloodCirculation is Class.
+ImpairedPeripheralBloodCirculation SubClassOf PeripheralPerfusion.
+IncreasedLacrimation is Class.
+IncreasedLacrimation SubClassOf NAMEDEyeDiseaseProcess.
+IncreasedThyroidSecretion is Class.
+IneffectiveCardiacFunction is Class.
+InfectiousPathology is Class.
+InfectiousPathology SubClassOf PathologicalPhenomenon.
+InfectiveArthropathy is Class.
+InfectiveArthropathy SubClassOf PathologicalPhenomenon.
+InflammationInOtitisExterna is Class.
+InflammationInOtitisExterna SubClassOf NAMEDEarDiseaseProcess.
+InflammatoryBowelDisease is Class.
+InflammatoryBowelDisease SubClassOf PathologicalPhenomenon.
+InflammatoryDiseaseOfTheAnteriorSegment is Class.
+InflammatoryDiseaseOfTheAnteriorSegment SubClassOf NAMEDEyeDiseaseProcess.
+Inhibiting is Class.
+Injury is Class.
+Injury SubClassOf PathologicalPhenomenon.
+Insectivora is Class.
+IntercurrentIllness is Class.
+IntercurrentIllness SubClassOf PathologicalPhenomenon.
+InternalThoracicArtery is Class.
+InterphalangealJointOfFifthToe is Class.
+InterphalangealJointOfFourthToe is Class.
+InterphalangealJointOfSecondToe is Class.
+InterphalangealJointOfThirdToe is Class.
+IntestinalPathology is Class.
+IntestinalPathology SubClassOf PathologicalPhenomenon.
+IntraOcularPressureInOcularHypertension is Class.
+IntraOcularPressureInOcularHypertension SubClassOf NAMEDEyeDiseaseProcess.
+IrreversiblePhenomenon is Class.
+IrreversiblePhenomenon EquivalentTo Phenomenon and (hasReversibility some.
+IrreversiblePhenomenon EquivalentTo (Reversibility and (hasAbsoluteState some irreversible))).
+IrreversiblePhenomenon SubClassOf Phenomenon,.
+IrreversiblePhenomenon SubClassOf hasPermanence some.
+IrreversiblePhenomenon SubClassOf (Permanence and (hasAbsoluteState some permanent)).
+IschaemicCardiacPathology is Class.
+IschaemicCardiacPathology EquivalentTo CardiacPathology and (isConsequenceOf some IschaemicProcess).
+IschaemicCardiacPathology SubClassOf CardiacPathology.
+IschaemicCoronaryHeartDisease is Class.
+IschaemicCoronaryHeartDisease SubClassOf IschaemicCardiacPathology.
+IschaemicProcess is Class.
+IschaemicStroke is Class.
+IschaemicStroke SubClassOf PermanentCentralNeuropathy.
+IsletCell is Class.
+JointInjury is Class.
+JointInjury SubClassOf PathologicalPhenomenon.
+JointPathology is Class.
+JointPathology SubClassOf PathologicalPhenomenon.
+KneeJoint is Class.
+Kyphoscoliosis is Class.
+Kyphoscoliosis SubClassOf SpinalPathology.
+L2root is Class.
+L4root is Class.
+L5Dermatome is Class.
+LabyrinthineDisorder is Class.
+LabyrinthineDisorder SubClassOf PathologicalPhenomenon.
+LaryngealPathology is Class.
+LaryngealPathology SubClassOf PathologicalPhenomenon.
+LateralCordOfBrachialPlexus is Class.
+LebersOpticAtrophy is Class.
+LebersOpticAtrophy SubClassOf NAMEDEyeDiseaseProcess.
+LengthUnit is Class.
+LeschNyhanSyndrome is Class.
+LeukocyteDisorder is Class.
+LeukocyteDisorder SubClassOf PathologicalPhenomenon.
+LigamentInjury is Class.
+LigamentInjury SubClassOf PathologicalPhenomenon.
+LocalisedScalpAlopecia is Class.
+LongSaphenousVeinGraft is Class.
+LongSaphenousVeinGraft EquivalentTo GreaterSaphenousVein and (isActedOnSpecificallyBy some Grafting).
+LongSaphenousVeinGraft SubClassOf GreaterSaphenousVein.
+LongTermComplication is Class.
+LongTermComplication SubClassOf PathologicalPhenomenon.
+LossOfPupilAccommodation is Class.
+LossOfPupilAccommodation SubClassOf NAMEDEyeDiseaseProcess.
+LowSerumAcidConcentration is Class.
+LowSerumBaseConcentration is Class.
+LowUrineKetoneConcentration is Class.
+LowerGastrointestinalTractPathology is Class.
+LowerGastrointestinalTractPathology SubClassOf PathologicalPhenomenon.
+LowerUrinaryTractPathology is Class.
+LowerUrinaryTractPathology SubClassOf PathologicalPhenomenon.
+LoweredSerumPotassiumConcentration is Class.
+LumbarNerveRoot is Class.
+Lung is Class.
+LungPathology is Class.
+LungPathology SubClassOf PathologicalPhenomenon.
+LungReaction is Class.
+LungReaction SubClassOf PathologicalPhenomenon.
+LupusErythematosusLikeSyndrome is Class.
+LupusErythematosusLikeSyndrome SubClassOf NAMEDImmuneDiseaseProcess.
+Lymphadenopathy is Class.
+Lymphadenopathy EquivalentTo Phenomenon and (LocativeAttribute some Lymphnode) and (hasPathologicalStatus some pathological).
+Lymphadenopathy SubClassOf Phenomenon.
+LymphadenopathySymptom is Class.
+LymphadenopathySymptom SubClassOf Lymphadenopathy.
+LymphaticSystemPathology is Class.
+LymphaticSystemPathology SubClassOf PathologicalPhenomenon.
+Lymphnode is Class.
+LymphoproliferativeDisorder is Class.
+LymphoproliferativeDisorder SubClassOf PathologicalPhenomenon.
+LymphoreticularDisorder is Class.
+LymphoreticularDisorder SubClassOf PathologicalPhenomenon.
+LymphoreticularSystem is Class.
+LymphoreticularSystemPhenomenon is Class.
+LymphoreticularSystemPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some LymphoreticularSystem).
+LymphoreticularSystemPhenomenon SubClassOf Phenomenon.
+LysosomalStorageDisease is Class.
+LysosomalStorageDisease SubClassOf PathologicalPhenomenon.
+MacrovascularDisease is Class.
+MacrovascularDisease SubClassOf PathologicalPhenomenon.
+Maculopathy is Class.
+Maculopathy SubClassOf PathologicalPhenomenon.
+MajorSalivaryGland is Class.
+MaleGenitoUrinaryPathology is Class.
+MaleGenitoUrinaryPathology SubClassOf PathologicalPhenomenon.
+MalePatternAndrogenicBaldness is Class.
+MalePatternAndrogenicBaldness SubClassOf AndrogenicAlopecia.
+MalePhenotypePerson is Class.
+MalePhenotypePerson EquivalentTo Human and (hasPhenotypicalSex some.
+MalePhenotypePerson EquivalentTo (PhenotypicalSex and (hasAbsoluteState some maleSex))).
+MalePhenotypePerson SubClassOf Human.
+MedialCordOfBrachialPlexus is Class.
+MemoryDisturbance is Class.
+MemoryDisturbance SubClassOf PathologicalPhenomenon.
+MeningealPlexus is Class.
+MeningealPlexus SubClassOf NAMEDNervePlexus.
+Meninges is Class.
+MenopauseProcess is Class.
+MenstrualSymptom is Class.
+MenstrualSymptom EquivalentTo DisturbanceOfMenstruation and (playsConsultationRole some SymptomRole).
+MenstrualSymptom SubClassOf DisturbanceOfMenstruation.
+MenstruallyLinkedPhenomenon is Class.
+MenstruallyLinkedPhenomenon EquivalentTo Phenomenon and (isConsequenceOf some MenstruationProcess).
+MenstruallyLinkedPhenomenon SubClassOf Phenomenon.
+MenstruationProcess is Class.
+MentalExcitation is Class.
+MetabolicBoneDisease is Class.
+MetabolicBoneDisease SubClassOf PathologicalPhenomenon.
+MetabolicDisease is Class.
+MetabolicDisease SubClassOf PathologicalPhenomenon.
+MetacarpoPhalangealJoint is Class.
+Midlife is Class.
+MinorVisualDisturbance is Class.
+MinorVisualDisturbance SubClassOf NAMEDEyeDiseaseProcess.
+Miosis is Class.
+Miosis SubClassOf NAMEDEyeDiseaseProcess.
+MitralValveDisorder is Class.
+MitralValveDisorder SubClassOf PathologicalPhenomenon.
+ModifierConcept is Class.
+ModifierConcept SubClassOf DomainCategory.
+MonitorRenalFunction is Class.
+MonitorRenalFunction SubClassOf NAMEDRenalDisease.
+Mononeuropathy is Class.
+Mononeuropathy SubClassOf PathologicalPhenomenon.
+Morphology is Class.
+Morphology SubClassOf StructuralFeature.
+MouthBreathing is Class.
+MouthBreathing SubClassOf NonNormalBreathing.
+MovingRotating is Class.
+Mucopolysaccharidosis is Class.
+Mucopolysaccharidosis SubClassOf PathologicalPhenomenon.
+MuscleInjury is Class.
+MuscleInjury SubClassOf PathologicalPhenomenon.
+MusculoPhrenicArtery is Class.
+MusculoSkeletalInjury is Class.
+MusculoSkeletalInjury SubClassOf PathologicalPhenomenon.
+MusculoSkeletalPathology is Class.
+MusculoSkeletalPathology SubClassOf PathologicalPhenomenon.
+Mydriasis is Class.
+Mydriasis SubClassOf NAMEDEyeDiseaseProcess.
+MyocardialPathology is Class.
+MyocardialPathology SubClassOf PathologicalPhenomenon.
+MyositisLikeSyndrome is Class.
+MyositisLikeSyndrome SubClassOf PathologicalPhenomenon.
+Myotoxicity is Class.
+Myotoxicity SubClassOf PathologicalPhenomenon.
+NAMEDCardiovascularSystemDiseaseProcess is Class.
+NAMEDEarDiseaseProcess is Class.
+NAMEDEarDiseaseProcess SubClassOf EarPathology.
+NAMEDEponymousMethod is Class.
+NAMEDEyeDiseaseProcess is Class.
+NAMEDEyeDiseaseProcess SubClassOf EyePathology.
+NAMEDImmuneDiseaseProcess is Class.
+NAMEDImmuneDiseaseProcess SubClassOf ImmuneSystemPathology.
+NAMEDNervePlexus is Class.
+NAMEDPainProcess is Class.
+NAMEDRenalDisease is Class.
+NAMEDRenalDisease SubClassOf RenalPathology.
+NAMEDValve is Class.
+NasalAllergy is Class.
+NasalAllergy SubClassOf PathologicalPhenomenon.
+NasalPathology is Class.
+NasalPathology SubClassOf PathologicalPhenomenon.
+NasopharyngealPathology is Class.
+NasopharyngealPathology SubClassOf PathologicalPhenomenon.
+NeoplasticDisease is Class.
+NeoplasticDisease SubClassOf PathologicalPhenomenon.
+Nephropathy is Class.
+Nephropathy SubClassOf PathologicalPhenomenon.
+Nephrotoxicity is Class.
+Nephrotoxicity SubClassOf PathologicalPhenomenon.
+NerveConduction is Class.
+NervousSystem is Class.
+NervousSystemPhenomenon is Class.
+NervousSystemPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some NervousSystem).
+NervousSystemPhenomenon SubClassOf Phenomenon.
+NeurohypophysealHormone is Class.
+NeurologicalDisorder is Class.
+NeurologicalDisorder SubClassOf PathologicalPhenomenon.
+NeuromuscularDisorder is Class.
+NeuromuscularDisorder SubClassOf PathologicalPhenomenon.
+Nodularity is Class.
+Nodularity SubClassOf Morphology.
+NonAllergicRhinitis is Class.
+NonAllergicRhinitis SubClassOf NAMEDImmuneDiseaseProcess.
+NonDirectInspecting is Class.
+NonDominantHemisphere is Class.
+NonDominantHemisphere EquivalentTo CerebralHemisphere and (hasDominance some.
+NonDominantHemisphere EquivalentTo (Dominance and (hasAbsoluteState some nonDominant))).
+NonDominantHemisphere SubClassOf CerebralHemisphere.
+NonNormalBreathing is Class.
+NonNormalBreathing EquivalentTo Breathing and (hasIntrinsicAbnormalityStatus some nonNormal).
+NonNormalBreathing SubClassOf Breathing.
+NonNormalPhenomenon is Class.
+NonNormalPhenomenon EquivalentTo Phenomenon and (hasAbnormalityStatus some nonNormal).
+NonNormalPhenomenon SubClassOf Phenomenon.
+NonNormallyLargeEar is Class.
+NonNormallyLargeEarSymptom is Class.
+NonNormallyLargeEarSymptom EquivalentTo NonNormallyLargeEar and (playsConsultationRole some SymptomRole).
+NonNormallyLargeEarSymptom SubClassOf NonNormallyLargeEar.
+NonNormallyLargeNose is Class.
+NonNormallyLargeNoseSymptom is Class.
+NonNormallyLargeNoseSymptom EquivalentTo NonNormallyLargeNose and (playsConsultationRole some SymptomRole).
+NonNormallyLargeNoseSymptom SubClassOf NonNormallyLargeNose.
+NonPartnerRole is Class.
+NonPartnerRole SubClassOf PatientNonGeneticRelativeRole.
+NormalPhenomenon is Class.
+NormalPhenomenon EquivalentTo Phenomenon and (hasAbnormalityStatus some normal).
+NormalPhenomenon SubClassOf Phenomenon.
+ObliterativeVascularDisease is Class.
+ObliterativeVascularDisease SubClassOf PathologicalPhenomenon.
+ObstructionProcess is Class.
+ObstructivePeripheralVascularDisease is Class.
+ObstructivePeripheralVascularDisease EquivalentTo PeripheralVascularDisorder and (LocativeAttribute some ObstructionProcess).
+ObstructivePeripheralVascularDisease SubClassOf PeripheralVascularDisorder.
+ObstructivePulmonaryDisease is Class.
+ObstructivePulmonaryDisease SubClassOf PathologicalPhenomenon.
+ObstructiveUropathy is Class.
+ObstructiveUropathy SubClassOf PathologicalPhenomenon.
+OccularHypertension is Class.
+OccularHypertension SubClassOf NAMEDEyeDiseaseProcess.
+OcularDrugRoute is Class.
+OcularDrugRoute SubClassOf NAMEDEyeDiseaseProcess.
+OcularErythema is Class.
+OcularErythema SubClassOf NAMEDEyeDiseaseProcess.
+OcularHypertension is Class.
+OcularHypertension SubClassOf NAMEDEyeDiseaseProcess.
+OcularImplant is Class.
+OcularImplant SubClassOf NAMEDEyeDiseaseProcess.
+OcularMuscleDisorder is Class.
+OcularMuscleDisorder SubClassOf PathologicalPhenomenon.
+OculomotorNerve is Class.
+OculomotorPalsy is Class.
+OculomotorPalsy SubClassOf PathologicalPhenomenon.
+OneAlphaHydroxycholecalciferol is Class.
+OneAlphaHydroxycholecalciferolVitamin is Class.
+OneAlphaHydroxycholecalciferolVitamin EquivalentTo OneAlphaHydroxycholecalciferol and (playsPhysiologicalRole some VitaminRole).
+OneAlphaHydroxycholecalciferolVitamin SubClassOf OneAlphaHydroxycholecalciferol.
+OneAlphaHydroxycholecalciferolVitaminAsDrug is Class.
+OneAlphaHydroxycholecalciferolVitaminAsDrug SubClassOf OneAlphaHydroxycholecalciferolVitamin.
+Onychogryphosis is Class.
+Onychogryphosis SubClassOf Onychopathy.
+Onychoma is Class.
+Onychoma SubClassOf Onychopathy.
+Onychomadesis is Class.
+Onychomadesis SubClassOf Onychopathy.
+Onychopathy is Class.
+Onychopathy SubClassOf PathologicalPhenomenon.
+Onychoptosis is Class.
+Onychoptosis SubClassOf Onychopathy.
+OralPathology is Class.
+OralPathology SubClassOf PathologicalPhenomenon.
+OrganicSolidStructure is Class.
+Ornithodoros is Class.
+OrnithodorosSavigni is Class.
+OrnithodorosSavigni SubClassOf Ornithodoros.
+OrodentalPathology is Class.
+OrodentalPathology SubClassOf PathologicalPhenomenon.
+Osteoporosis is Class.
+Otosclerosis is Class.
+Otosclerosis SubClassOf NAMEDEarDiseaseProcess.
+Ototoxicity is Class.
+Ototoxicity SubClassOf PathologicalPhenomenon.
+OutwardRotation is Class.
+OvarianPathology is Class.
+OvarianPathology SubClassOf PathologicalPhenomenon.
+Pain is Class.
+PainLocalisation is Class.
+PainLocalisation SubClassOf NAMEDPainProcess.
+PainReceptorCell is Class.
+PainSignal is Class.
+PainfulPathologicalPhenomenon is Class.
+PainfulPathologicalPhenomenon SubClassOf PathologicalPhenomenon.
+PainfulPhenomenon is Class.
+PainfulPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some Pain).
+PainfulPhenomenon SubClassOf Phenomenon.
+Palpability is Class.
+Palpability SubClassOf Morphology.
+Palpating is Class.
+Palpating SubClassOf ExaminingProcess.
+PancreaticPathology is Class.
+PancreaticPathology SubClassOf PathologicalPhenomenon.
+PapillaryMuscleDisorder is Class.
+PapillaryMuscleDisorder SubClassOf PathologicalPhenomenon.
+ParadoxicalExcitement is Class.
+ParadoxicalExcitement EquivalentTo MentalExcitation and (hasParadoxicalStatus some paradoxicalStatus).
+ParadoxicalExcitement SubClassOf MentalExcitation.
+ParadoxicalMentalExcitation is Class.
+ParadoxicalMentalExcitation SubClassOf MentalExcitation.
+Paraffin is Class.
+ParaffinAsDrug is Class.
+ParaffinAsDrug EquivalentTo Paraffin and (playsPhysiologicalRole some ActiveDrugAdditiveRole).
+ParaffinAsDrug SubClassOf Paraffin.
+ParathyroidDysfunction is Class.
+ParathyroidDysfunction EquivalentTo BodyProcess and (hasPathologicalStatus some pathological) and (isFunctionOf some ParathyroidGland).
+ParathyroidDysfunction SubClassOf BodyProcess.
+ParathyroidGland is Class.
+ParathyroidPathology is Class.
+ParathyroidPathology SubClassOf PathologicalPhenomenon.
+ParotidDuct is Class.
+ParotidFascia is Class.
+ParotidGland is Class.
+ParotidGland SubClassOf MajorSalivaryGland,.
+ParotidGland SubClassOf hasSpecificFunction some.
+ParotidGland SubClassOf (Salivation and (hasUniqueAssociatedDisplacement some.
+ParotidGland SubClassOf (Displacement and (isDisplacementFrom some ParotidGland) and (isDisplacementTo some ParotidDuct)))),.
+ParotidGland SubClassOf hasStructuralComponent some ParotidDuct,.
+ParotidGland SubClassOf isSpecificallyNonPartitivelyContainedIn some ParotidFascia.
+PartnerRole is Class.
+PartnerRole SubClassOf PatientNonGeneticRelativeRole.
+PatchRole is Class.
+PatchRole SubClassOf FunctionalRole.
+Patency is Class.
+Patency SubClassOf Morphology.
+PathologicalCognition is Class.
+PathologicalCognition EquivalentTo CognitiveProcess and (hasPathologicalStatus some pathological).
+PathologicalCognition SubClassOf CognitiveProcess.
+PathologicalCountConcentration is Class.
+PathologicalCountConcentration EquivalentTo CountConcentration and (hasPathologicalStatus some pathological).
+PathologicalCountConcentration SubClassOf CountConcentration.
+PathologicalHypoKalaemia is Class.
+PathologicalHypoKalaemia EquivalentTo LoweredSerumPotassiumConcentration and (hasPathologicalStatus some pathological).
+PathologicalHypoKalaemia SubClassOf LoweredSerumPotassiumConcentration.
+PathologicalIncreasedThyroidSecretion is Class.
+PathologicalIncreasedThyroidSecretion EquivalentTo IncreasedThyroidSecretion and (hasPathologicalStatus some pathological).
+PathologicalIncreasedThyroidSecretion SubClassOf IncreasedThyroidSecretion.
+PathologicalLowSerumAcidConcentration is Class.
+PathologicalLowSerumAcidConcentration EquivalentTo LowSerumAcidConcentration and (hasPathologicalStatus some pathological).
+PathologicalLowSerumAcidConcentration SubClassOf LowSerumAcidConcentration.
+PathologicalLowSerumBaseConcentration is Class.
+PathologicalLowSerumBaseConcentration EquivalentTo LowSerumBaseConcentration and (hasPathologicalStatus some pathological).
+PathologicalLowSerumBaseConcentration SubClassOf LowSerumBaseConcentration.
+PathologicalLowUrineKetoneConcentration is Class.
+PathologicalLowUrineKetoneConcentration EquivalentTo LowUrineKetoneConcentration and (hasPathologicalStatus some pathological).
+PathologicalLowUrineKetoneConcentration SubClassOf LowUrineKetoneConcentration.
+PathologicalPhenomenon is Class.
+PathologicalPhenomenon EquivalentTo Phenomenon and (hasPathologicalStatus some pathological).
+PathologicalPhenomenon SubClassOf Phenomenon,.
+PathologicalPhenomenon SubClassOf RheumaticDiseaseOfHeartValve,.
+PathologicalPhenomenon SubClassOf hasAbnormalityStatus some nonNormal.
+PathologicalRaisedSerumAcidConcentration is Class.
+PathologicalRaisedSerumAcidConcentration EquivalentTo RaisedSerumAcidConcentration and (hasPathologicalStatus some pathological).
+PathologicalRaisedSerumAcidConcentration SubClassOf RaisedSerumAcidConcentration.
+PathologicalRaisedSerumBaseConcentration is Class.
+PathologicalRaisedSerumBaseConcentration EquivalentTo RaisedSerumBaseConcentration and (hasPathologicalStatus some pathological).
+PathologicalRaisedSerumBaseConcentration SubClassOf RaisedSerumBaseConcentration.
+PathologicalRaisedSerumFructosamineConcentration is Class.
+PathologicalRaisedSerumFructosamineConcentration EquivalentTo RaisedSerumFructosamineConcentration and (hasPathologicalStatus some pathological).
+PathologicalRaisedSerumFructosamineConcentration SubClassOf RaisedSerumFructosamineConcentration.
+PathologicalRaisedSerumKetoneConcentration is Class.
+PathologicalRaisedSerumKetoneConcentration EquivalentTo RaisedSerumKetoneConcentration and (hasPathologicalStatus some pathological).
+PathologicalRaisedSerumKetoneConcentration SubClassOf RaisedSerumKetoneConcentration.
+PathologicalRaisedSerumLacticAcidConcentration is Class.
+PathologicalRaisedSerumLacticAcidConcentration EquivalentTo RaisedSerumLacticAcidConcentration and (hasPathologicalStatus some pathological).
+PathologicalRaisedSerumLacticAcidConcentration SubClassOf RaisedSerumLacticAcidConcentration.
+PathologicalRaisedSerumLipidConcentration is Class.
+PathologicalRaisedSerumLipidConcentration EquivalentTo RaisedSerumLipidConcentration and (hasPathologicalStatus some pathological).
+PathologicalRaisedSerumLipidConcentration SubClassOf RaisedSerumLipidConcentration.
+PathologicalRaisedUrineKetoneConcentration is Class.
+PathologicalRaisedUrineKetoneConcentration EquivalentTo RaisedUrineKetoneConcentration and (hasPathologicalStatus some pathological).
+PathologicalRaisedUrineKetoneConcentration SubClassOf RaisedUrineKetoneConcentration.
+PathologyInvolvingInfection is Class.
+PathologyInvolvingInfection SubClassOf PathologicalPhenomenon.
+PathologyOfArticularCartilage is Class.
+PathologyOfArticularCartilage SubClassOf PathologicalPhenomenon.
+PathologyOfBone is Class.
+PathologyOfBone SubClassOf PathologicalPhenomenon.
+PathologyOfExternalGenitalia is Class.
+PathologyOfExternalGenitalia SubClassOf PathologicalPhenomenon.
+PathologyOfFoot is Class.
+PathologyOfFoot SubClassOf PathologicalPhenomenon.
+PathologyOfInfectiveAetiology is Class.
+PathologyOfInfectiveAetiology SubClassOf PathologicalPhenomenon.
+PathologyOfJointMovement is Class.
+PathologyOfJointMovement SubClassOf PathologicalPhenomenon.
+PathologyOfMuscle is Class.
+PathologyOfMuscle SubClassOf PathologicalPhenomenon.
+PathologyOfPartOfHeart is Class.
+PathologyOfPartOfHeart SubClassOf PathologicalPhenomenon.
+PathologyOfPleura is Class.
+PathologyOfPleura SubClassOf PathologicalPhenomenon.
+PathologyOfSpine is Class.
+PathologyOfSpine SubClassOf PathologicalPhenomenon.
+PathologyOfSynovium is Class.
+PathologyOfSynovium SubClassOf PathologicalPhenomenon.
+PathologyOfTractFromEsophagusToDuodenum is Class.
+PathologyOfTractFromEsophagusToDuodenum SubClassOf PathologicalPhenomenon.
+PatientNonGeneticRelativeRole is Class.
+PatientNonGeneticRelativeRole SubClassOf PatientRelativeRole.
+PatientOrganisation is Class.
+PatientOrganisation SubClassOf SocialOrganisation.
+PatientRelativeRole is Class.
+PenilePathology is Class.
+PenilePathology SubClassOf PathologicalPhenomenon.
+PerceptualDisturbances is Class.
+PerceptualDisturbances SubClassOf NAMEDEyeDiseaseProcess.
+PercussiveResonance is Class.
+PercussiveResonance SubClassOf Morphology.
+PericardialDisease is Class.
+PericardialDisease SubClassOf PathologicalPhenomenon.
+PerimenopausalPeriod is Class.
+PerimenopausalPeriod EquivalentTo Midlife and (occursDuring some MenopauseProcess).
+PerimenopausalPeriod SubClassOf Midlife.
+PerinatalDisorder is Class.
+PerinatalDisorder SubClassOf PathologicalPhenomenon.
+PeriodDuringPregnancy is Class.
+PeripheralArterialDisease is Class.
+PeripheralArterialDisease SubClassOf PathologicalPhenomenon.
+PeripheralBloodVessel is Class.
+PeripheralNeuropathy is Class.
+PeripheralNeuropathy SubClassOf PathologicalPhenomenon.
+PeripheralPerfusion is Class.
+PeripheralPerfusion EquivalentTo VascularPerfusion and (isSpecificFunctionOf some PeripheralBloodVessel).
+PeripheralPerfusion SubClassOf VascularPerfusion.
+PeripheralRetinalAtrophy is Class.
+PeripheralRetinalAtrophy SubClassOf NAMEDEyeDiseaseProcess.
+PeripheralVascularDisorder is Class.
+PeripheralVascularDisorder SubClassOf PathologicalPhenomenon.
+Permanence is Class.
+PermanentCentralNeuropathy is Class.
+PermanentCentralNeuropathy EquivalentTo CentralNeuropathy and (hasPermanence some.
+PermanentCentralNeuropathy EquivalentTo (Permanence and (hasAbsoluteState some permanent))).
+PermanentCentralNeuropathy SubClassOf CentralNeuropathy.
+PharyngealPathology is Class.
+PharyngealPathology SubClassOf PathologicalPhenomenon.
+Phenomenon is Class.
+Phenomenon SubClassOf DomainCategory.
+PhenomenonInvolvingDevice is Class.
+PhenomenonInvolvingDevice EquivalentTo Phenomenon and (LocativeAttribute some Device).
+PhenomenonInvolvingDevice SubClassOf Phenomenon.
+PhenotypicalSex is Class.
+Phobia is Class.
+PhysicalPresentation is Class.
+PhysicalPresentation SubClassOf Morphology.
+PhysiologicalHeartSound is Class.
+PhysiologicalHeartSound EquivalentTo HeartSound and (hasPathologicalStatus some physiological).
+PhysiologicalHeartSound SubClassOf HeartSound.
+PhysiologicalTimePeriod is Class.
+PhysiologicalTimePeriod SubClassOf TimePeriod.
+PituitaryPathology is Class.
+PituitaryPathology SubClassOf PathologicalPhenomenon.
+Plasma is Class.
+Plasmalogen is Class.
+Plasmalogen SubClassOf Glycerophospholipid.
+PlateletDisorder is Class.
+PlateletDisorder SubClassOf PathologicalPhenomenon.
+PleuralMembrane is Class.
+PleuralPain is Class.
+PleuralPain EquivalentTo Soreness and (actsSpecificallyOn some.
+PleuralPain EquivalentTo (PainSignal and (isConsequenceOf some.
+PleuralPain EquivalentTo (NerveConduction and (hasUniqueAssociatedDisplacement some.
+PleuralPain EquivalentTo (Displacement and (isDisplacementFrom some PleuralMembrane))))))).
+PleuralPain SubClassOf Soreness.
+Pneumoconiosis is Class.
+Pneumoconiosis SubClassOf PathologicalPhenomenon.
+PoisoningProcess is Class.
+PolymyxinB is Class.
+PolymyxinBSulphate is Class.
+PolymyxinBSulphate SubClassOf PolymyxinB.
+PorphobilinogenSynthase is Class.
+PosteriorCordOfBrachialPlexus is Class.
+PosteriorIntercostalArtery is Class.
+PosteriorIntercostalVein is Class.
+PosteriorLobeOfPituitaryGland is Class.
+PosteriorSynechiae is Class.
+PosteriorSynechiae SubClassOf NAMEDEyeDiseaseProcess.
+PostmenopausalOsteoporosis is Class.
+PostmenopausalOsteoporosis EquivalentTo Osteoporosis and (follows some MenopauseProcess).
+PostmenopausalOsteoporosis SubClassOf Osteoporosis.
+PostmenopausalPeriod is Class.
+PostmenopausalPeriod EquivalentTo Midlife and (follows some MenopauseProcess).
+PostmenopausalPeriod SubClassOf Midlife.
+PostmyocardialInfarctionSyndrome is Class.
+PostmyocardialInfarctionSyndrome SubClassOf PathologicalPhenomenon.
+PostvalvulotomySyndrome is Class.
+PostvalvulotomySyndrome EquivalentTo IneffectiveCardiacFunction and (isSpecificConsequenceOf some.
+PostvalvulotomySyndrome EquivalentTo (CardiacValvotomy and (playsClinicalRole some SurgicalRole))).
+PostvalvulotomySyndrome SubClassOf IneffectiveCardiacFunction.
+Potato is Class.
+Potato SubClassOf Vegetable.
+PotentialCavity is Class.
+PrecordialPain is Class.
+PrecordialPain EquivalentTo ExternalStimulusSensation and (actsOn some.
+PrecordialPain EquivalentTo (PainSignal and (isConsequenceOf some.
+PrecordialPain EquivalentTo (NerveConduction and (hasUniqueAssociatedDisplacement some.
+PrecordialPain EquivalentTo (Displacement and (isDisplacementFrom some Precordium))))))).
+PrecordialPain SubClassOf ExternalStimulusSensation.
+Precordium is Class.
+Pregnancy is Class.
+PregnancyInducedCardiacDisease is Class.
+PregnancyInducedCardiacDisease EquivalentTo CardiacPathology and (isConsequenceOf some Pregnancy).
+PregnancyInducedCardiacDisease SubClassOf CardiacPathology.
+PremenopausalPeriod is Class.
+PremenopausalPeriod EquivalentTo Midlife and (isFollowedBy some MenopauseProcess).
+PremenopausalPeriod SubClassOf Midlife.
+PressureUnit is Class.
+PreviousPersonalHistory is Class.
+ProliferativeRetinopathy is Class.
+ProliferativeRetinopathy SubClassOf Retinopathy.
+ProstaticPathology is Class.
+ProstaticPathology SubClassOf PathologicalPhenomenon.
+PsychologicalDisorder is Class.
+PsychologicalDisorder SubClassOf PathologicalPhenomenon.
+PublicHealth is Class.
+PulmonaryHeartDisease is Class.
+PulmonaryHeartDisease EquivalentTo CardiacPathology and (isConsequenceOf some.
+PulmonaryHeartDisease EquivalentTo (PathologicalPhenomenon and (LocativeAttribute some Lung))).
+PulmonaryHeartDisease SubClassOf CardiacPathology.
+PulmonaryToxicity is Class.
+PulmonaryToxicity EquivalentTo LungPathology and (isConsequenceOf some PoisoningProcess).
+PulmonaryToxicity SubClassOf LungPathology.
+PulmonaryValveDisorder is Class.
+PulmonaryValveDisorder SubClassOf PathologicalPhenomenon.
+PupilDilatation is Class.
+PupilDilatation SubClassOf NAMEDEyeDiseaseProcess.
+PupillaryBlock is Class.
+PupillaryBlock SubClassOf NAMEDEyeDiseaseProcess.
+Pus is Class.
+QuadratusPlantaeMuscle is Class.
+RaisedSerumAcidConcentration is Class.
+RaisedSerumBaseConcentration is Class.
+RaisedSerumFructosamineConcentration is Class.
+RaisedSerumKetoneConcentration is Class.
+RaisedSerumLacticAcidConcentration is Class.
+RaisedSerumLipidConcentration is Class.
+RaisedUrineKetoneConcentration is Class.
+RaynaudPhenomenon is Class.
+RecentCerebrovascularAccident is Class.
+RecentCerebrovascularAccident SubClassOf PermanentCentralNeuropathy.
+RedGreenColourBlindness is Class.
+RedGreenColourBlindness SubClassOf NAMEDEyeDiseaseProcess.
+Removing is Class.
+RenalAnaemia is Class.
+RenalAnaemia SubClassOf NAMEDRenalDisease.
+RenalDamage is Class.
+RenalDamage SubClassOf NAMEDRenalDisease.
+RenalPathology is Class.
+RenalPathology SubClassOf PathologicalPhenomenon.
+RenalSurveillance is Class.
+RenalSurveillance SubClassOf NAMEDRenalDisease.
+RenalTubularAcidosis is Class.
+RenalTubularAcidosis SubClassOf NAMEDRenalDisease.
+RenovascularPathology is Class.
+RenovascularPathology SubClassOf PathologicalPhenomenon.
+ReproductiveDisorder is Class.
+ReproductiveDisorder SubClassOf PathologicalPhenomenon.
+ReproductivePathology is Class.
+ReproductivePathology SubClassOf PathologicalPhenomenon.
+ReproductiveProcess is Class.
+ReproductiveSystem is Class.
+ReproductiveSystemPhenomenon is Class.
+ReproductiveSystemPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some ReproductiveSystem).
+ReproductiveSystemPhenomenon SubClassOf Phenomenon.
+RespiratoryDisease is Class.
+RespiratoryDisease SubClassOf PathologicalPhenomenon.
+RespiratorySystem is Class.
+RespiratorySystemPhenomenon is Class.
+RespiratorySystemPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some RespiratorySystem).
+RespiratorySystemPhenomenon SubClassOf Phenomenon.
+RetinalDetachmentInAIDSPatientsWithRetinitis is Class.
+RetinalDetachmentInAIDSPatientsWithRetinitis SubClassOf NAMEDEyeDiseaseProcess.
+RetinalDisorder is Class.
+RetinalDisorder SubClassOf PathologicalPhenomenon.
+Retinopathy is Class.
+Retinopathy SubClassOf PathologicalPhenomenon.
+Reversibility is Class.
+RheumaticDiseaseOfAorticValve is Class.
+RheumaticDiseaseOfAorticValve SubClassOf PathologicalPhenomenon.
+RheumaticDiseaseOfHeartValve is Class.
+RheumaticDiseaseOfHeartValve EquivalentTo HeartValveDisorder and (isConsequenceOf some RheumaticFever).
+RheumaticDiseaseOfHeartValve SubClassOf HeartValveDisorder.
+RheumaticDiseaseOfMitralValve is Class.
+RheumaticDiseaseOfMitralValve SubClassOf PathologicalPhenomenon.
+RheumaticDiseaseOfPulmonaryValve is Class.
+RheumaticDiseaseOfPulmonaryValve SubClassOf PathologicalPhenomenon.
+RheumaticDiseaseOfTricuspidValve is Class.
+RheumaticDiseaseOfTricuspidValve SubClassOf PathologicalPhenomenon.
+RheumaticFever is Class.
+RheumaticHeartDisease is Class.
+RheumaticHeartDisease EquivalentTo CardiacPathology and (isConsequenceOf some RheumaticFever).
+RheumaticHeartDisease SubClassOf CardiacPathology.
+RheumaticMitralValveAndAorticValveDisease is Class.
+RheumaticMitralValveAndAorticValveDisease SubClassOf PathologicalPhenomenon.
+Rigidity is Class.
+Rigidity SubClassOf Morphology.
+RiskOfPhenomenon is Class.
+RiskOfPhenomenon EquivalentTo Risking and (hasConsequence some Phenomenon).
+RiskOfPhenomenon SubClassOf Risking.
+Risking is Class.
+Salivation is Class.
+Salmon is Class.
+SartoriusMuscle is Class.
+SartoriusMuscle DisjointWith Sialorrhea.
+ScheieSyndrome is Class.
+ScrotalPathology is Class.
+ScrotalPathology SubClassOf PathologicalPhenomenon.
+Secretion is Class.
+SensorySystemPathology is Class.
+SensorySystemPathology SubClassOf PathologicalPhenomenon.
+SepticCondition is Class.
+SepticCondition SubClassOf PathologicalPhenomenon.
+Sharpness is Class.
+Sharpness SubClassOf Morphology.
+Sialorrhea is Class.
+Sialorrhea EquivalentTo Salivation and (hasPathologicalStatus some pathological) and (hasProcessActivity some highActivityLevel).
+Sialorrhea SubClassOf Salivation.
+Sialorrhea DisjointWith SartoriusMuscle.
+Signal is Class.
+SignalMorphology is Class.
+SignalMorphology SubClassOf Morphology.
+SinusVenosusDefect is Class.
+SinusVenosusDefect SubClassOf PathologicalPhenomenon.
+SkeletalPathology is Class.
+SkeletalPathology SubClassOf PathologicalPhenomenon.
+SkinHypersensitivityReaction is Class.
+SkinHypersensitivityReaction SubClassOf PathologicalPhenomenon.
+SkinOfPlantarRegionOfFoot is Class.
+SkinPathology is Class.
+SkinPathology SubClassOf PathologicalPhenomenon.
+SleepDisorder is Class.
+SleepDisorder SubClassOf PathologicalPhenomenon.
+SleepDisturbance is Class.
+SleepDisturbance SubClassOf NonNormalPhenomenon.
+SocialOrganisation is Class.
+SocialPhobia is Class.
+SocialPhobia SubClassOf Phobia.
+SoftTissueInjury is Class.
+SoftTissueInjury SubClassOf PathologicalPhenomenon.
+SoleusMuscle is Class.
+Somatostatin is Class.
+Soreness is Class.
+Spacing is Class.
+Spacing SubClassOf Morphology.
+SpecificImmunoglobulin is Class.
+SpecificImmunoglobulin SubClassOf NAMEDImmuneDiseaseProcess.
+SpinalPathology is Class.
+SpinalPathology SubClassOf PathologicalPhenomenon.
+Spore is Class.
+SquintConcomitance is Class.
+SquintConcomitance SubClassOf Morphology.
+StructuralExtent is Class.
+StructuralExtent SubClassOf Morphology.
+StructuralFeature is Class.
+Substance is Class.
+SurgicalRole is Class.
+SymptomRole is Class.
+SystemicHypertension is Class.
+SystemicLupusErythematosusLikeSyndrome is Class.
+SystemicLupusErythematosusLikeSyndrome SubClassOf NAMEDImmuneDiseaseProcess.
+T3root is Class.
+Talpidae is Class.
+Talpidae SubClassOf Insectivora.
+TearDeficiency is Class.
+TearDeficiency SubClassOf NAMEDEyeDiseaseProcess.
+TendonInjury is Class.
+TendonInjury SubClassOf PathologicalPhenomenon.
+TendonPathology is Class.
+TendonPathology SubClassOf PathologicalPhenomenon.
+TesticularPathology is Class.
+TesticularPathology SubClassOf PathologicalPhenomenon.
+ThelarcheProcess is Class.
+ThirdLumbricalOfHand is Class.
+ThoracicCavity is Class.
+ThoracicDermatome is Class.
+ThoracicDermatome EquivalentTo Dermatome and (IsDivisionOf some Thorax).
+ThoracicDermatome SubClassOf Dermatome.
+ThoracicNerveRoot is Class.
+ThoracicPathology is Class.
+ThoracicPathology SubClassOf PathologicalPhenomenon.
+Thoracoscopy is Class.
+Thoracoscopy EquivalentTo NonDirectInspecting and (actsSpecificallyOn some ThoracicCavity) and (hasSpecificPhysicalMeans some Endoscope).
+Thoracoscopy SubClassOf NonDirectInspecting.
+Thoracoscopy DisjointWith NonDirectInspecting and (actsSpecificallyOn some ThoracicCavity) and (hasSpecificPhysicalMeans some Endoscope).
+Thorax is Class.
+ThromboembolicDisease is Class.
+ThromboembolicDisease SubClassOf PathologicalPhenomenon.
+ThromboticEvent is Class.
+ThromboticEvent SubClassOf PathologicalPhenomenon.
+ThyoglossalTractPathology is Class.
+ThyoglossalTractPathology SubClassOf PathologicalPhenomenon.
+Thyrocalcitonin is Class.
+ThyroidPathology is Class.
+ThyroidPathology SubClassOf PathologicalPhenomenon.
+TibialisPosterior is Class.
+TimePeriod is Class.
+TimePeriodDuringCardiacCycle is Class.
+TimePeriodDuringCardiacCycle SubClassOf PhysiologicalTimePeriod.
+TobaccoAmbylopia is Class.
+TobaccoAmbylopia SubClassOf NAMEDEyeDiseaseProcess.
+TonsillarPathology is Class.
+TonsillarPathology SubClassOf PathologicalPhenomenon.
+TopCategory is Class.
+Toughness is Class.
+Toughness SubClassOf Morphology.
+TrachealPathology is Class.
+TrachealPathology SubClassOf PathologicalPhenomenon.
+Trachoma is Class.
+Trachoma SubClassOf NAMEDEyeDiseaseProcess.
+TransducingProcess is Class.
+TransientCentralNeuropathy is Class.
+TransientCentralNeuropathy EquivalentTo CentralNeuropathy and (hasDuration some.
+TransientCentralNeuropathy EquivalentTo (Duration and (hasAbsoluteState some transient))).
+TransientCentralNeuropathy SubClassOf CentralNeuropathy.
+TransientIschaemicAttack is Class.
+TransientIschaemicAttack SubClassOf TransientCentralNeuropathy.
+TricuspidValveDisorder is Class.
+TricuspidValveDisorder SubClassOf PathologicalPhenomenon.
+UVB is Class.
+UVB SubClassOf UltraVioletRadiation.
+UltraVioletRadiation is Class.
+UndiagnosedRedEye is Class.
+UndiagnosedRedEye SubClassOf NAMEDEyeDiseaseProcess.
+UnstableHeartDisase is Class.
+UnstableHeartDisase EquivalentTo CardiacPathology and (hasSeverity some UnstableSeverity).
+UnstableHeartDisase SubClassOf CardiacPathology.
+UnstableSeverity is Class.
+UnstableTearFilm is Class.
+UnstableTearFilm SubClassOf NAMEDEyeDiseaseProcess.
+UpperGastrointestinalTractPathology is Class.
+UpperGastrointestinalTractPathology SubClassOf PathologicalPhenomenon.
+UpperRespiratoryTractPathology is Class.
+UpperRespiratoryTractPathology SubClassOf PathologicalPhenomenon.
+UpperUrinaryTractPathology is Class.
+UpperUrinaryTractPathology SubClassOf PathologicalPhenomenon.
+UretericPathology is Class.
+UretericPathology SubClassOf PathologicalPhenomenon.
+UrethralPathology is Class.
+UrethralPathology SubClassOf PathologicalPhenomenon.
+UrinaryBladderPathology is Class.
+UrinaryBladderPathology SubClassOf PathologicalPhenomenon.
+UrinaryTractPathology is Class.
+UrinaryTractPathology SubClassOf PathologicalPhenomenon.
+UterinePathology is Class.
+UterinePathology SubClassOf PathologicalPhenomenon.
+Uterus is Class.
+Vagina is Class.
+VaginalPathology is Class.
+VaginalPathology SubClassOf PathologicalPhenomenon.
+ValvulaVenosa is Class.
+ValvulaVenosa SubClassOf NAMEDValve,.
+ValvulaVenosa SubClassOf isSpecificStructuralComponentOf some Vein.
+VascularPathology is Class.
+VascularPathology SubClassOf PathologicalPhenomenon.
+VascularPerfusion is Class.
+VascularPhenomenon is Class.
+VascularPhenomenon EquivalentTo Phenomenon and (LocativeAttribute some BloodVessel).
+VascularPhenomenon SubClassOf Phenomenon.
+VascularPulseVolume is Class.
+VascularPulseVolume SubClassOf Morphology.
+Vegetable is Class.
+Vein is Class.
+VenousBlood is Class.
+VenousLeak is Class.
+VenousLeak SubClassOf NAMEDCardiovascularSystemDiseaseProcess.
+VenousPathology is Class.
+VenousPathology SubClassOf PathologicalPhenomenon.
+VenousPlasma is Class.
+VenousPlasma EquivalentTo Plasma and (makesUp some VenousBlood).
+VenousPlasma SubClassOf Plasma.
+VisualDisturbances is Class.
+VisualDisturbances SubClassOf NAMEDEyeDiseaseProcess.
+VisualFieldDefect is Class.
+VisualFieldDefect SubClassOf PathologicalPhenomenon.
+VisualProblem is Class.
+VisualProblem SubClassOf PathologicalPhenomenon.
+VitaminRole is Class.
+VulvalPathology is Class.
+VulvalPathology SubClassOf PathologicalPhenomenon.
+WithdrawalSyndrome is Class.
+XLinkedDominantInheritedPathology is Class.
+XLinkedDominantInheritedPathology SubClassOf PathologicalPhenomenon.
+Ziehl-NeelsenStaining is Class.
+absence is Class.
+absoluteContraindication is Class.
+acute is Class.
+cysticCellMorphology is Class.
+cysticCellMorphology SubClassOf CellMorphologyState.
+diffuseDistribution is Class.
+effective is Class.
+highActivityLevel is Class.
+ineffective is Class.
+irreversible is Class.
+lowActivityLevel is Class.
+maleSex is Class.
+medialSelection is Class.
+mmHg is Class.
+mmHg SubClassOf PressureUnit.
+moreThanOneThousand is Class.
+moreThanOneThousand SubClassOf moreThanTwoHundred.
+moreThanTwoHundred is Class.
+nanometres is Class.
+nanometres SubClassOf LengthUnit.
+nonDominant is Class.
+nonNormal is Class.
+normal is Class.
+paradoxicalStatus is Class.
+patchyDiffuseDistribution is Class.
+patchyDiffuseDistribution SubClassOf diffuseDistribution.
+pathological is Class.
+permanent is Class.
+physiological is Class.
+presence is Class.
+staggering is Class.
+transient is Class.
+www.w3.org/2002/07/# is Class.

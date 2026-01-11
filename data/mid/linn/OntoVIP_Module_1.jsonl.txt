@@ -1,0 +1,787 @@
+predicate(has-for-host,is,ObjectProperty).
+predicate(has-for-host,Domain,feature).
+predicate(has-for-host,Range,physical-object).
+predicate(has-for-host,InverseOf,is-the-host-of).
+predicate(has-for-part,is,ObjectProperty).
+predicate(has-for-part-during,is,ObjectProperty).
+predicate(has-for-quale-during,is,ObjectProperty).
+predicate(has-for-quality,is,ObjectProperty).
+predicate(has-for-quality-location,is,ObjectProperty).
+predicate(has-for-quality-location,Domain,temporal-quality).
+predicate(has-for-quality-location,Range,temporal-region).
+predicate(has-for-quality-location,InverseOf,is-the-quality-location-of).
+predicate(has-for-quality-location-during,is,ObjectProperty).
+predicate(is-a-quality-of,is,ObjectProperty).
+predicate(is-an-atomic-part-of,is,ObjectProperty).
+predicate(is-an-equivalent-quale-as,is,ObjectProperty).
+predicate(is-an-equivalent-quale-as,Domain,quale).
+predicate(is-an-equivalent-quale-as,Range,quale).
+predicate(is-present-at,is,ObjectProperty).
+predicate(is-the-host-of,is,ObjectProperty).
+predicate(is-the-host-of,Domain,physical-object).
+predicate(is-the-host-of,Range,feature).
+predicate(is-the-host-of,InverseOf,has-for-host).
+predicate(is-the-quality-location-of,is,ObjectProperty).
+predicate(is-the-quality-location-of,Domain,temporal-region).
+predicate(is-the-quality-location-of,Range,temporal-quality).
+predicate(is-the-quality-location-of,InverseOf,has-for-quality-location).
+predicate(is-the-quality-location-of-during,is,ObjectProperty).
+predicate(participates-in-during,is,ObjectProperty).
+predicate(participates-in-during,Domain,particular).
+predicate(participates-in-during,Range,perdurant).
+predicate(participates-totally-in-during,is,ObjectProperty).
+predicate(participates-totally-in-during,Domain,particular).
+predicate(participates-totally-in-during,Range,perdurant).
+predicate(has-for-first-name,is,ObjectProperty).
+predicate(has-for-first-name,SubPropertyOf,has-for-name).
+predicate(has-for-full-name,is,ObjectProperty).
+predicate(has-for-full-name,SubPropertyOf,has-for-name).
+predicate(has-for-last-name,is,ObjectProperty).
+predicate(has-for-last-name,SubPropertyOf,has-for-name).
+predicate(has-for-DICOM-identifier,is,ObjectProperty).
+predicate(has-for-DICOM-identifier,SubPropertyOf,has-for-name).
+predicate(affects-at,is,ObjectProperty).
+predicate(allows-to-carry-out,is,ObjectProperty).
+predicate(bears-at,is,ObjectProperty).
+predicate(controls-at,is,ObjectProperty).
+predicate(controls-at,SubPropertyOf,participates-in-during).
+predicate(expresses-at,is,ObjectProperty).
+predicate(expresses-at,Domain,expression).
+predicate(expresses-at,Range,conceptualization).
+predicate(expresses-at,InverseOf,is-expressed-by-at).
+predicate(formally-orders,is,ObjectProperty).
+predicate(formally-orders,SubPropertyOf,orders).
+predicate(has-for-agent-at,is,ObjectProperty).
+predicate(has-for-agent-at,SubPropertyOf,is-carried-out-by-at).
+predicate(has-for-author,is,ObjectProperty).
+predicate(has-for-author,Domain,producing-consequent).
+predicate(has-for-author,Range,author).
+predicate(has-for-author,InverseOf,is-author-of).
+predicate(has-for-manufacturer,is,ObjectProperty).
+predicate(has-for-manufacturer,Domain,manufactured-object).
+predicate(has-for-manufacturer,Range,manufacturer).
+predicate(has-for-model-acronym,is,ObjectProperty).
+predicate(has-for-model-acronym,SubPropertyOf,has-for-name).
+predicate(has-for-model-acronym,Domain,manufactured-object).
+predicate(has-for-model-acronym,Range,model-acronym).
+predicate(has-for-model-name,is,ObjectProperty).
+predicate(has-for-model-name,SubPropertyOf,has-for-name).
+predicate(has-for-model-name,Domain,manufactured-object).
+predicate(has-for-model-name,Range,model-name).
+predicate(has-for-name,is,ObjectProperty).
+predicate(has-for-name,Domain,particular).
+predicate(has-for-name,Range,name).
+predicate(has-for-name,InverseOf,is-the-name-of).
+predicate(has-for-proper-function,is,ObjectProperty).
+predicate(has-for-proper-function,Domain,functional-copied-entity).
+predicate(has-for-proper-function,Range,function).
+predicate(has-for-serial-number,is,ObjectProperty).
+predicate(has-for-serial-number,SubPropertyOf,has-for-name).
+predicate(has-for-serial-number,Domain,manufactured-object).
+predicate(has-for-serial-number,Range,serial-number).
+predicate(has-for-substrate-at,is,ObjectProperty).
+predicate(has-for-substrate-at,SubPropertyOf,is-carried-out-by-at).
+predicate(has-for-substrate-at,Domain,event).
+predicate(has-for-substrate-at,Range,endurant).
+predicate(has-for-substrate-at,InverseOf,is-substrate-of-at).
+predicate(intentionally-participates-at,is,ObjectProperty).
+predicate(intentionally-participates-at,SubPropertyOf,participates-in-during).
+predicate(intentionally-participates-at,Domain,agentive).
+predicate(intentionally-participates-at,Range,perdurant).
+predicate(is-a-beneficiary-of-at,is,ObjectProperty).
+predicate(is-a-beneficiary-of-at,SubPropertyOf,is-affected-by-at).
+predicate(is-a-beneficiary-of-at,Domain,agentive).
+predicate(is-a-beneficiary-of-at,Range,action).
+predicate(is-a-consequence-of-at,is,ObjectProperty).
+predicate(is-a-consequence-of-at,SubPropertyOf,is-affected-by-at).
+predicate(is-a-consequence-of-at,Domain,particular).
+predicate(is-a-consequence-of-at,Range,perdurant).
+predicate(is-a-data-of-at,is,ObjectProperty).
+predicate(is-a-data-of-at,SubPropertyOf,is-affected-by-at).
+predicate(is-a-data-of-at,Domain,particular).
+predicate(is-a-data-of-at,Range,action).
+predicate(is-a-result-of-at,is,ObjectProperty).
+predicate(is-a-result-of-at,SubPropertyOf,is-a-consequence-of-at).
+predicate(is-a-result-of-at,Domain,particular).
+predicate(is-a-result-of-at,Range,action).
+predicate(is-a-theme-of-at,is,ObjectProperty).
+predicate(is-a-theme-of-at,SubPropertyOf,is-affected-by-at).
+predicate(is-a-well-formed-formula-of,is,ObjectProperty).
+predicate(is-a-well-formed-formula-of,SubPropertyOf,is-ordered-by).
+predicate(is-a-well-formed-formula-of,Domain,expression).
+predicate(is-a-well-formed-formula-of,Range,formal-language).
+predicate(is-affected-by-at,is,ObjectProperty).
+predicate(is-affected-by-at,SubPropertyOf,participates-in-during).
+predicate(is-affected-by-at,Domain,particular).
+predicate(is-affected-by-at,Range,perdurant).
+predicate(is-agent-of-at,is,ObjectProperty).
+predicate(is-agent-of-at,Domain,agentive).
+predicate(is-agent-of-at,Range,action).
+predicate(is-an-addressee-of-at,is,ObjectProperty).
+predicate(is-an-addressee-of-at,SubPropertyOf,is-affected-by-at).
+predicate(is-an-addressee-of-at,Domain,agentive).
+predicate(is-an-addressee-of-at,Range,action).
+predicate(is-an-instrument-of-at,is,ObjectProperty).
+predicate(is-an-instrument-of-at,SubPropertyOf,participates-in-during).
+predicate(is-an-instrument-of-at,Domain,particular).
+predicate(is-an-instrument-of-at,Range,perdurant).
+predicate(is-author-of,is,ObjectProperty).
+predicate(is-author-of,Domain,author).
+predicate(is-author-of,Range,producing-consequent).
+predicate(is-author-of,InverseOf,has-for-author).
+predicate(is-borne-by-at,is,ObjectProperty).
+predicate(is-borne-by-at,Domain,state).
+predicate(is-borne-by-at,Range,endurant).
+predicate(is-capable-to-perform,is,ObjectProperty).
+predicate(is-capable-to-perform,Domain,agentive).
+predicate(is-capable-to-perform,Range,action).
+predicate(is-carried-out-by-at,is,ObjectProperty).
+predicate(is-carried-out-by-at,Domain,event).
+predicate(is-carried-out-by-at,Range,endurant).
+predicate(is-defined-by,is,ObjectProperty).
+predicate(is-defined-by,SubPropertyOf,is-referred-to-by).
+predicate(is-described-by,is,ObjectProperty).
+predicate(is-described-by,SubPropertyOf,is-referred-to-by).
+predicate(is-empowered-to-perform,is,ObjectProperty).
+predicate(is-empowered-to-perform,Domain,agentive).
+predicate(is-empowered-to-perform,Range,action).
+predicate(is-expressed-by-at,is,ObjectProperty).
+predicate(is-expressed-by-at,InverseOf,expresses-at).
+predicate(is-inscribed-on-at,is,ObjectProperty).
+predicate(is-inscribed-on-at,Domain,inscription).
+predicate(is-inscribed-on-at,Range,physical-endurant).
+predicate(is-inscribed-on-at,InverseOf,supports-at).
+predicate(is-interested-in,is,ObjectProperty).
+predicate(is-interested-in,Domain,agentive).
+predicate(is-interested-in,Range,concept).
+predicate(is-member-of-during,is,ObjectProperty).
+predicate(is-ordered-by,is,ObjectProperty).
+predicate(is-ordered-by,Domain,expression).
+predicate(is-ordered-by,Range,language).
+predicate(is-ordered-by,InverseOf,orders).
+predicate(is-realized-by-at,is,ObjectProperty).
+predicate(is-realized-by-at,Domain,expression).
+predicate(is-realized-by-at,Range,inscription).
+predicate(is-realized-by-at,InverseOf,realizes-at).
+predicate(is-referenced-by-at,is,ObjectProperty).
+predicate(is-referenced-by-at,Domain,particular).
+predicate(is-referenced-by-at,Range,representational-object).
+predicate(is-referenced-by-at,InverseOf,references-at).
+predicate(is-referred-to-by,is,ObjectProperty).
+predicate(is-referred-to-by,Domain,particular).
+predicate(is-referred-to-by,Range,representational-object).
+predicate(is-referred-to-by,InverseOf,refers-to).
+predicate(is-rendered-account-by,is,ObjectProperty).
+predicate(is-rendered-account-by,SubPropertyOf,is-referred-to-by).
+predicate(is-substrate-of-at,is,ObjectProperty).
+predicate(is-substrate-of-at,InverseOf,has-for-substrate-at).
+predicate(is-the-cardinal-of,is,ObjectProperty).
+predicate(is-the-cardinal-of,Domain,cardinal).
+predicate(is-the-cardinal-of,Range,collection).
+predicate(is-the-name-of,is,ObjectProperty).
+predicate(is-the-name-of,InverseOf,has-for-name).
+predicate(orders,is,ObjectProperty).
+predicate(orders,Domain,language).
+predicate(orders,Range,expression).
+predicate(orders,InverseOf,is-ordered-by).
+predicate(physically-realizes-at,is,ObjectProperty).
+predicate(physically-realizes-at,Domain,inscription).
+predicate(physically-realizes-at,Range,conceptualization).
+predicate(realizes-at,is,ObjectProperty).
+predicate(realizes-at,Domain,inscription).
+predicate(realizes-at,Range,expression).
+predicate(realizes-at,InverseOf,is-realized-by-at).
+predicate(references-at,is,ObjectProperty).
+predicate(references-at,InverseOf,is-referenced-by-at).
+predicate(refers-to,is,ObjectProperty).
+predicate(refers-to,InverseOf,is-referred-to-by).
+predicate(supervises-at,is,ObjectProperty).
+predicate(supervises-at,SubPropertyOf,is-agent-of-at).
+predicate(supervises-at,Domain,agentive).
+predicate(supervises-at,Range,action).
+predicate(supports-at,is,ObjectProperty).
+predicate(supports-at,InverseOf,is-inscribed-on-at).
+predicate(has-for-local-name,is,ObjectProperty).
+predicate(has-for-local-name,SubPropertyOf,has-for-name).
+predicate(has-for-role-name,is,ObjectProperty).
+predicate(has-for-role-name,SubPropertyOf,has-for-name).
+predicate(has-for-type-name,is,ObjectProperty).
+predicate(has-for-type-name,SubPropertyOf,has-for-name).
+predicate(supervises-as-coordinator-at,is,ObjectProperty).
+predicate(supervises-as-coordinator-at,SubPropertyOf,supervises-at).
+predicate(supervises-as-examination-executive-at,is,ObjectProperty).
+predicate(supervises-as-examination-executive-at,SubPropertyOf,supervises-at).
+predicate(supervises-as-main-investigator-at,is,ObjectProperty).
+predicate(supervises-as-main-investigator-at,SubPropertyOf,supervises-at).
+predicate(collection-of-computer-language-expressions,is,Class).
+predicate(collection-of-computers,is,Class).
+predicate(compiler,is,Class).
+predicate(compiler,SubClassOf,software).
+predicate(compiling-a-program,is,Class).
+predicate(compiling-a-program,SubClassOf,data-processing).
+predicate(computer-language-expression,is,Class).
+predicate(data-processing,is,Class).
+predicate(data-processing,SubClassOf,action,).
+predicate(data-processing,SubClassOf,has-for-agent-at some execution-platform).
+predicate(data-storing,is,Class).
+predicate(data-storing,SubClassOf,data-processing).
+predicate(developing-software,is,Class).
+predicate(developing-software,SubClassOf,producing).
+predicate(distributed-platform,is,Class).
+predicate(distributed-platform,SubClassOf,network,).
+predicate(distributed-platform,SubClassOf,platform).
+predicate(execution-platform,is,Class).
+predicate(execution-platform,SubClassOf,platform).
+predicate(file,is,Class).
+predicate(file,SubClassOf,inscription).
+predicate(internet,is,Class).
+predicate(internet,SubClassOf,network).
+predicate(interpreter,is,Class).
+predicate(interpreter,SubClassOf,software).
+predicate(intranet,is,Class).
+predicate(intranet,SubClassOf,network).
+predicate(lexeme,is,Class).
+predicate(lexeme,SubClassOf,computer-language-expression,).
+predicate(lexeme,SubClassOf,atom).
+predicate(library,is,Class).
+predicate(library,SubClassOf,collection-of-computer-language-expressions,).
+predicate(library,SubClassOf,artefact,).
+predicate(library,SubClassOf,allows-to-carry-out some developing-software).
+predicate(middleware,is,Class).
+predicate(middleware,SubClassOf,software).
+predicate(network,is,Class).
+predicate(network,SubClassOf,collection-of-computers,).
+predicate(network,SubClassOf,artefact).
+predicate(operating-system,is,Class).
+predicate(operating-system,SubClassOf,software).
+predicate(physical-platform,is,Class).
+predicate(physical-platform,SubClassOf,platform,).
+predicate(physical-platform,SubClassOf,physical-object).
+predicate(platform,is,Class).
+predicate(platform,SubClassOf,agentive,).
+predicate(platform,SubClassOf,artefact,).
+predicate(platform,SubClassOf,allows-to-carry-out some data-processing,).
+predicate(platform,SubClassOf,is-capable-to-perform some data-processing).
+predicate(running-a-program,is,Class).
+predicate(running-a-program,SubClassOf,running-an-artefact).
+predicate(running-a-software,is,Class).
+predicate(running-a-software,SubClassOf,data-processing,).
+predicate(running-a-software,SubClassOf,running-an-artefact).
+predicate(software,is,Class).
+predicate(software,SubClassOf,collection-of-computer-language-expressions,).
+predicate(software,SubClassOf,artefact,).
+predicate(software,SubClassOf,allows-to-carry-out some data-processing).
+predicate(storage-platform,is,Class).
+predicate(storage-platform,SubClassOf,platform).
+predicate(virtual-machine,is,Class).
+predicate(virtual-machine,SubClassOf,software).
+predicate(MR-dataset,is,Class).
+predicate(dataset,is,Class).
+predicate(abstract,is,Class).
+predicate(abstract,SubClassOf,particular,).
+predicate(abstract,SubClassOf,has-for-part only abstract).
+predicate(abstract-quality,is,Class).
+predicate(abstract-quality,SubClassOf,quality,).
+predicate(abstract-quality,SubClassOf,has-for-quality only abstract-quality,).
+predicate(abstract-quality,SubClassOf,has-for-quality-location-during only abstract-region,).
+predicate(abstract-quality,SubClassOf,is-a-quality-of exactly 1 non-physical-endurant).
+predicate(abstract-region,is,Class).
+predicate(abstract-region,SubClassOf,region,).
+predicate(abstract-region,SubClassOf,has-for-part only abstract-region,).
+predicate(abstract-region,SubClassOf,is-the-quality-location-of-during only abstract-quality).
+predicate(accomplishment,is,Class).
+predicate(accomplishment,SubClassOf,event).
+predicate(accomplishment,DisjointWith,achievement).
+predicate(achievement,is,Class).
+predicate(achievement,SubClassOf,atom,).
+predicate(achievement,SubClassOf,event).
+predicate(achievement,DisjointWith,accomplishment).
+predicate(amount-of-matter,is,Class).
+predicate(amount-of-matter,SubClassOf,physical-endurant).
+predicate(arbitrary-sum,is,Class).
+predicate(arbitrary-sum,SubClassOf,endurant,).
+predicate(arbitrary-sum,SubClassOf,has-for-part-during min 1 endurant).
+predicate(atom,is,Class).
+predicate(atom,SubClassOf,particular).
+predicate(dependent-place,is,Class).
+predicate(dependent-place,SubClassOf,feature).
+predicate(endurant,is,Class).
+predicate(endurant,SubClassOf,particular).
+predicate(eternal-region,is,Class).
+predicate(eternal-region,SubClassOf,region).
+predicate(eternal-region,DisjointWith,temporary-region).
+predicate(event,is,Class).
+predicate(event,SubClassOf,perdurant).
+predicate(event,DisjointWith,stative).
+predicate(feature,is,Class).
+predicate(feature,SubClassOf,physical-endurant,).
+predicate(feature,SubClassOf,has-for-host min 1 physical-endurant).
+predicate(non-physical-endurant,is,Class).
+predicate(non-physical-object,is,Class).
+predicate(particular,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(perdurant,is,Class).
+predicate(perdurant,SubClassOf,particular).
+predicate(physical-endurant,is,Class).
+predicate(physical-object,is,Class).
+predicate(physical-object,SubClassOf,physical-endurant).
+predicate(physical-quality,is,Class).
+predicate(physical-quality,SubClassOf,quality,).
+predicate(physical-quality,SubClassOf,is-present-at some time-interval,).
+predicate(physical-quality,SubClassOf,has-for-quality only physical-quality,).
+predicate(physical-quality,SubClassOf,has-for-quality-location-during only physical-region,).
+predicate(physical-quality,SubClassOf,has-for-quality-location-during min 1 physical-region,).
+predicate(physical-quality,SubClassOf,is-a-quality-of exactly 1 physical-endurant).
+predicate(physical-region,is,Class).
+predicate(physical-region,SubClassOf,region,).
+predicate(physical-region,SubClassOf,has-for-part only physical-region,).
+predicate(physical-region,SubClassOf,is-the-quality-location-of-during only physical-quality).
+predicate(process,is,Class).
+predicate(process,SubClassOf,stative).
+predicate(process,DisjointWith,state).
+predicate(quale,is,Class).
+predicate(quale,SubClassOf,region,).
+predicate(quale,SubClassOf,is-an-atomic-part-of some region).
+predicate(quality,is,Class).
+predicate(quality,SubClassOf,particular).
+predicate(region,is,Class).
+predicate(region,SubClassOf,abstract,).
+predicate(region,SubClassOf,has-for-part only region).
+predicate(relevant-part,is,Class).
+predicate(relevant-part,SubClassOf,feature).
+predicate(social-object,is,Class).
+predicate(space-region,is,Class).
+predicate(space-region,SubClassOf,physical-region).
+predicate(spatial-location,is,Class).
+predicate(spatial-location,SubClassOf,physical-quality,).
+predicate(spatial-location,SubClassOf,has-for-quality-location-during only space-region).
+predicate(state,is,Class).
+predicate(state,SubClassOf,stative).
+predicate(state,DisjointWith,process).
+predicate(stative,is,Class).
+predicate(stative,SubClassOf,perdurant).
+predicate(stative,DisjointWith,event).
+predicate(temporal-location,is,Class).
+predicate(temporal-location,SubClassOf,temporal-quality,).
+predicate(temporal-location,SubClassOf,has-for-quality-location only time-interval).
+predicate(temporal-quality,is,Class).
+predicate(temporal-quality,SubClassOf,quality,).
+predicate(temporal-quality,SubClassOf,has-for-quality only temporal-quality,).
+predicate(temporal-quality,SubClassOf,has-for-quality-location only temporal-region,).
+predicate(temporal-quality,SubClassOf,has-for-quality-location min 1 temporal-region,).
+predicate(temporal-quality,SubClassOf,is-a-quality-of exactly 1 perdurant).
+predicate(temporal-region,is,Class).
+predicate(temporal-region,SubClassOf,region,).
+predicate(temporal-region,SubClassOf,has-for-part only temporal-region,).
+predicate(temporal-region,SubClassOf,is-the-quality-location-of-during only temporal-quality).
+predicate(temporary-region,is,Class).
+predicate(temporary-region,SubClassOf,region).
+predicate(temporary-region,DisjointWith,eternal-region).
+predicate(time-interval,is,Class).
+predicate(time-interval,SubClassOf,temporal-region).
+predicate(animal,is,Class).
+predicate(animal,SubClassOf,agentive-physical-object).
+predicate(birth-date,is,Class).
+predicate(birth-date,SubClassOf,date).
+predicate(language-hemispheric-dominance,is,Class).
+predicate(language-hemispheric-dominance,SubClassOf,physical-quality).
+predicate(manual-hemispheric-dominance,is,Class).
+predicate(manual-hemispheric-dominance,SubClassOf,physical-quality).
+predicate(sex,is,Class).
+predicate(sex,SubClassOf,physical-quality).
+predicate(action,is,Class).
+predicate(action,DisjointWith,happening).
+predicate(addressee,is,Class).
+predicate(addressee,SubClassOf,affected,).
+predicate(addressee,SubClassOf,agentive,).
+predicate(addressee,SubClassOf,is-an-addressee-of-at some perdurant).
+predicate(affected,is,Class).
+predicate(affected,SubClassOf,particular,).
+predicate(affected,SubClassOf,is-affected-by-at some perdurant).
+predicate(agent,is,Class).
+predicate(agent,SubClassOf,agentive,).
+predicate(agent,SubClassOf,determinant,).
+predicate(agent,SubClassOf,is-agent-of-at some event).
+predicate(agentive,is,Class).
+predicate(agentive,SubClassOf,endurant,).
+predicate(agentive,SubClassOf,is-capable-to-perform some action).
+predicate(agentive-physical-object,is,Class).
+predicate(agentive-physical-object,SubClassOf,physical-object,).
+predicate(agentive-physical-object,SubClassOf,agentive).
+predicate(agentive-social-object,is,Class).
+predicate(agentive-social-object,SubClassOf,social-object,).
+predicate(agentive-social-object,SubClassOf,agentive).
+predicate(animal-construction,is,Class).
+predicate(animal-construction,SubClassOf,endurant,).
+predicate(animal-construction,SubClassOf,is-a-consequence-of-at some producing).
+predicate(artefact,is,Class).
+predicate(artificial-object,is,Class).
+predicate(artificial-object,SubClassOf,endurant,).
+predicate(artificial-object,SubClassOf,is-a-consequence-of-at some producing).
+predicate(artificial-object,DisjointWith,natural-object).
+predicate(author,is,Class).
+predicate(author,SubClassOf,agentive,).
+predicate(author,SubClassOf,is-author-of some producing-consequent).
+predicate(beneficiary,is,Class).
+predicate(beneficiary,SubClassOf,affected,).
+predicate(beneficiary,SubClassOf,agentive,).
+predicate(beneficiary,SubClassOf,is-a-beneficiary-of-at some action).
+predicate(birth-date,is,Class).
+predicate(birth-date,SubClassOf,date).
+predicate(capacity,is,Class).
+predicate(capacity,SubClassOf,state).
+predicate(cardinal,is,Class).
+predicate(cardinal,SubClassOf,abstract-quality,).
+predicate(cardinal,SubClassOf,has-for-quale-during exactly 1 number,).
+predicate(cardinal,SubClassOf,is-the-cardinal-of exactly 1 collection).
+predicate(cognitive-agentive,is,Class).
+predicate(cognitive-agentive,SubClassOf,agentive).
+predicate(collection,is,Class).
+predicate(communicating,is,Class).
+predicate(communicating,SubClassOf,action).
+predicate(communicational-object,is,Class).
+predicate(communicational-object,SubClassOf,functional-entity,).
+predicate(communicational-object,SubClassOf,allows-to-carry-out some communicating).
+predicate(concentration,is,Class).
+predicate(concentration,SubClassOf,physical-quality).
+predicate(concept,is,Class).
+predicate(conceptualization,is,Class).
+predicate(consequent,is,Class).
+predicate(consequent,SubClassOf,affected,).
+predicate(consequent,SubClassOf,is-a-consequence-of-at some perdurant).
+predicate(contributor,is,Class).
+predicate(contributor,SubClassOf,agent).
+predicate(data,is,Class).
+predicate(data,SubClassOf,affected,).
+predicate(data,SubClassOf,is-a-data-of-at some action).
+predicate(date,is,Class).
+predicate(date,SubClassOf,temporal-quality).
+predicate(deliberate-action,is,Class).
+predicate(deliberate-action,SubClassOf,action,).
+predicate(deliberate-action,SubClassOf,has-for-part some distal-intention,).
+predicate(deliberate-action,SubClassOf,has-for-part some intentional-action).
+predicate(deliberate-producing,is,Class).
+predicate(deliberate-producing,SubClassOf,deliberate-action,).
+predicate(deliberate-producing,SubClassOf,producing).
+predicate(designational-object,is,Class).
+predicate(designational-object,SubClassOf,communicational-object).
+predicate(determinant,is,Class).
+predicate(determinant,SubClassOf,endurant,).
+predicate(determinant,SubClassOf,controls-at some perdurant).
+predicate(discourse,is,Class).
+predicate(discourse,SubClassOf,expression).
+predicate(discourse-act,is,Class).
+predicate(discourse-act,SubClassOf,deliberate-action).
+predicate(distal-intention,is,Class).
+predicate(distal-intention,SubClassOf,intention).
+predicate(enunciatee,is,Class).
+predicate(enunciatee,SubClassOf,addressee,).
+predicate(enunciatee,SubClassOf,is-an-addressee-of-at some discourse-act).
+predicate(enunciator,is,Class).
+predicate(enunciator,SubClassOf,agent).
+predicate(experiencer,is,Class).
+predicate(experiencer,SubClassOf,agentive,).
+predicate(experiencer,SubClassOf,determinant,).
+predicate(experiencer,SubClassOf,bears-at some state).
+predicate(experimental-artefact,is,Class).
+predicate(experimental-artefact,SubClassOf,happening-consequent).
+predicate(expression,is,Class).
+predicate(expression,SubClassOf,non-physical-object,).
+predicate(expression,SubClassOf,artefact,).
+predicate(expression,SubClassOf,representational-object,).
+predicate(expression,SubClassOf,is-ordered-by some language,).
+predicate(expression,SubClassOf,expresses-at min 1 conceptualization).
+predicate(formal-expression,is,Class).
+predicate(formal-expression,SubClassOf,expression).
+predicate(formal-language,is,Class).
+predicate(formal-language,SubClassOf,language).
+predicate(function,is,Class).
+predicate(functional-copied-entity,is,Class).
+predicate(functional-copied-entity,SubClassOf,functional-entity,).
+predicate(functional-copied-entity,SubClassOf,has-for-proper-function some function).
+predicate(functional-entity,is,Class).
+predicate(functional-entity,SubClassOf,particular).
+predicate(happening,is,Class).
+predicate(happening,SubClassOf,perdurant).
+predicate(happening,DisjointWith,action).
+predicate(happening-consequent,is,Class).
+predicate(happening-consequent,SubClassOf,consequent,).
+predicate(happening-consequent,SubClassOf,is-a-consequence-of-at some happening).
+predicate(happening-consequent,DisjointWith,producing-consequent).
+predicate(inscription,is,Class).
+predicate(inscription,SubClassOf,physical-object,).
+predicate(inscription,SubClassOf,artefact,).
+predicate(inscription,SubClassOf,representational-object,).
+predicate(inscription,SubClassOf,is-inscribed-on-at some support,).
+predicate(inscription,SubClassOf,physically-realizes-at min 1 conceptualization,).
+predicate(inscription,SubClassOf,realizes-at min 1 expression).
+predicate(instrument,is,Class).
+predicate(instrument,SubClassOf,particular,).
+predicate(instrument,SubClassOf,is-an-instrument-of-at some perdurant).
+predicate(intention,is,Class).
+predicate(intention,SubClassOf,perdurant).
+predicate(intentional-action,is,Class).
+predicate(intentional-action,SubClassOf,action,).
+predicate(intentional-action,SubClassOf,has-for-part some proximal-intention).
+predicate(intentional-movement,is,Class).
+predicate(intentional-movement,SubClassOf,action,).
+predicate(intentional-movement,SubClassOf,has-for-part some motor-intention).
+predicate(language,is,Class).
+predicate(language,SubClassOf,collection,).
+predicate(language,SubClassOf,communicational-object).
+predicate(linguistic-expression,is,Class).
+predicate(linguistic-expression,SubClassOf,expression).
+predicate(logical-expression,is,Class).
+predicate(logical-expression,SubClassOf,expression).
+predicate(manufactured-object,is,Class).
+predicate(manufactured-object,SubClassOf,artefact,).
+predicate(manufactured-object,SubClassOf,is-a-result-of-at some successfully-manufacturing,).
+predicate(manufactured-object,SubClassOf,has-for-manufacturer exactly 1 manufacturer).
+predicate(manufacturer,is,Class).
+predicate(manufacturer,SubClassOf,agent,).
+predicate(manufacturer,SubClassOf,agentive,).
+predicate(manufacturer,SubClassOf,author,).
+predicate(manufacturer,SubClassOf,is-agent-of-at some manufacturing).
+predicate(manufacturing,is,Class).
+predicate(member,is,Class).
+predicate(member,SubClassOf,endurant,).
+predicate(member,SubClassOf,is-member-of-during some collection).
+predicate(model-acronym,is,Class).
+predicate(model-name,is,Class).
+predicate(motor-intention,is,Class).
+predicate(motor-intention,SubClassOf,intention).
+predicate(name,is,Class).
+predicate(natural-language,is,Class).
+predicate(natural-language,SubClassOf,language).
+predicate(natural-object,is,Class).
+predicate(natural-object,SubClassOf,endurant).
+predicate(natural-object,DisjointWith,artificial-object).
+predicate(non-agentive-physical-object,is,Class).
+predicate(non-agentive-physical-object,SubClassOf,physical-object).
+predicate(non-physical-artefact,is,Class).
+predicate(non-physical-artefact,SubClassOf,non-physical-object,).
+predicate(non-physical-artefact,SubClassOf,artefact).
+predicate(non-physical-artefact,DisjointWith,tool).
+predicate(non-targeted-object,is,Class).
+predicate(non-targeted-object,SubClassOf,producing-consequent).
+predicate(noun,is,Class).
+predicate(noun,SubClassOf,designational-object).
+predicate(number,is,Class).
+predicate(number,SubClassOf,quale).
+predicate(owner,is,Class).
+predicate(owner,SubClassOf,experiencer).
+predicate(owning,is,Class).
+predicate(owning,SubClassOf,state).
+predicate(physical-action,is,Class).
+predicate(physical-action,SubClassOf,action,).
+predicate(physical-action,SubClassOf,has-for-part some intentional-movement).
+predicate(producing,is,Class).
+predicate(producing,SubClassOf,action).
+predicate(producing-consequent,is,Class).
+predicate(producing-consequent,SubClassOf,consequent,).
+predicate(producing-consequent,SubClassOf,has-for-author some author,).
+predicate(producing-consequent,SubClassOf,is-a-consequence-of-at some producing).
+predicate(producing-consequent,DisjointWith,happening-consequent).
+predicate(proximal-intention,is,Class).
+predicate(proximal-intention,SubClassOf,intention).
+predicate(publisher,is,Class).
+predicate(publisher,SubClassOf,agent).
+predicate(representational-object,is,Class).
+predicate(result,is,Class).
+predicate(result,SubClassOf,consequent,).
+predicate(result,SubClassOf,has-for-author some author,).
+predicate(result,SubClassOf,is-a-result-of-at some action).
+predicate(running-an-artefact,is,Class).
+predicate(running-an-artefact,SubClassOf,action,).
+predicate(running-an-artefact,SubClassOf,affects-at exactly 1 artefact).
+predicate(scalar-quale,is,Class).
+predicate(scalar-quale,SubClassOf,quale).
+predicate(serial-number,is,Class).
+predicate(social-agent,is,Class).
+predicate(social-agent,SubClassOf,agentive-social-object).
+predicate(social-artefact,is,Class).
+predicate(social-artefact,SubClassOf,functional-copied-entity,).
+predicate(social-artefact,SubClassOf,technical-artefact).
+predicate(society,is,Class).
+predicate(society,SubClassOf,agentive-social-object).
+predicate(substrate,is,Class).
+predicate(substrate,SubClassOf,determinant,).
+predicate(substrate,SubClassOf,is-substrate-of-at some event).
+predicate(successful-action,is,Class).
+predicate(successful-action,SubClassOf,deliberate-action).
+predicate(successfully-manufacturing,is,Class).
+predicate(supervisor,is,Class).
+predicate(supervisor,SubClassOf,agent).
+predicate(support,is,Class).
+predicate(support,SubClassOf,physical-endurant,).
+predicate(support,SubClassOf,supports-at some inscription).
+predicate(technical-artefact,is,Class).
+predicate(technical-artefact,SubClassOf,artefact,).
+predicate(technical-artefact,SubClassOf,functional-entity).
+predicate(theme,is,Class).
+predicate(theme,SubClassOf,affected,).
+predicate(theme,SubClassOf,conceptualization,).
+predicate(theme,SubClassOf,is-a-theme-of-at some action).
+predicate(tool,is,Class).
+predicate(tool,SubClassOf,physical-object,).
+predicate(tool,SubClassOf,artefact).
+predicate(tool,DisjointWith,non-physical-artefact).
+predicate(unit-of-measure,is,Class).
+predicate(unit-of-measure,SubClassOf,abstract).
+predicate(volume,is,Class).
+predicate(volume,SubClassOf,physical-quality).
+predicate(AC-PC-line-orientation-at-acquisition,is,Class).
+predicate(AC-PC-line-orientation-at-acquisition,SubClassOf,axis-orientation-at-acquisition).
+predicate(MR-contrast-agent,is,Class).
+predicate(MR-contrast-agent,SubClassOf,contrast-agent).
+predicate(MR-image-contrast,is,Class).
+predicate(MR-image-contrast,SubClassOf,abstract-quality,).
+predicate(MR-image-contrast,SubClassOf,is-a-quality-of exactly 1 MR-dataset,).
+predicate(MR-image-contrast,SubClassOf,has-for-name exactly 1 name).
+predicate(T1-contrast,is,Class).
+predicate(T1-contrast,SubClassOf,MR-image-contrast).
+predicate(T2-contrast,is,Class).
+predicate(T2-contrast,SubClassOf,MR-image-contrast).
+predicate(T2-star-contrast,is,Class).
+predicate(T2-star-contrast,SubClassOf,MR-image-contrast).
+predicate(acquisition-resolution-in-x,is,Class).
+predicate(acquisition-resolution-in-x,SubClassOf,abstract-quality,).
+predicate(acquisition-resolution-in-x,SubClassOf,is-a-quality-of exactly 1 dataset).
+predicate(acquisition-resolution-in-y,is,Class).
+predicate(acquisition-resolution-in-y,SubClassOf,abstract-quality,).
+predicate(acquisition-resolution-in-y,SubClassOf,is-a-quality-of exactly 1 dataset).
+predicate(amount-of-gadolinium,is,Class).
+predicate(amount-of-gadolinium,SubClassOf,amount-of-matter).
+predicate(amount-of-uspio,is,Class).
+predicate(amount-of-uspio,SubClassOf,amount-of-matter).
+predicate(axis-orientation-at-acquisition,is,Class).
+predicate(axis-orientation-at-acquisition,SubClassOf,abstract-quality,).
+predicate(axis-orientation-at-acquisition,SubClassOf,is-a-quality-of exactly 1 dataset,).
+predicate(axis-orientation-at-acquisition,SubClassOf,has-for-name exactly 1 name).
+predicate(bi-callosal-line-orientation-at-acquisition,is,Class).
+predicate(bi-callosal-line-orientation-at-acquisition,SubClassOf,axis-orientation-at-acquisition).
+predicate(central-sulcus-line-orientation-at-acquisition,is,Class).
+predicate(central-sulcus-line-orientation-at-acquisition,SubClassOf,axis-orientation-at-acquisition).
+predicate(coil,is,Class).
+predicate(coil,SubClassOf,physical-object,).
+predicate(coil,SubClassOf,manufactured-object).
+predicate(contrast-agent,is,Class).
+predicate(contrast-agent,SubClassOf,amount-of-matter,).
+predicate(contrast-agent,SubClassOf,manufactured-object,).
+predicate(contrast-agent,SubClassOf,technical-artefact,).
+predicate(contrast-agent,SubClassOf,allows-to-carry-out some dataset-acquisition,).
+predicate(contrast-agent,SubClassOf,has-for-model-name exactly 1 model-name,).
+predicate(contrast-agent,SubClassOf,has-for-name exactly 1 name).
+predicate(contrast-agent-concentration,is,Class).
+predicate(contrast-agent-concentration,SubClassOf,concentration).
+predicate(contrast-agent-volume,is,Class).
+predicate(contrast-agent-volume,SubClassOf,volume).
+predicate(coronal-slice-orientation-at-acquisition,is,Class).
+predicate(coronal-slice-orientation-at-acquisition,SubClassOf,slice-orientation-at-acquisition).
+predicate(dataset-acquisition,is,Class).
+predicate(dataset-acquisition-equipment,is,Class).
+predicate(dataset-acquisition-equipment,SubClassOf,manufactured-object).
+predicate(diffusion-b-value,is,Class).
+predicate(diffusion-b-value,SubClassOf,physical-quality,).
+predicate(diffusion-b-value,SubClassOf,is-a-quality-of exactly 1 diffusion-gradient).
+predicate(diffusion-gradient,is,Class).
+predicate(diffusion-gradient,SubClassOf,physical-object).
+predicate(diffusion-gradient-orientation,is,Class).
+predicate(diffusion-gradient-orientation,SubClassOf,physical-quality,).
+predicate(diffusion-gradient-orientation,SubClassOf,is-a-quality-of exactly 1 diffusion-gradient).
+predicate(echo-time,is,Class).
+predicate(echo-time,SubClassOf,temporal-quality).
+predicate(field-of-view-in-x,is,Class).
+predicate(field-of-view-in-x,SubClassOf,physical-quality).
+predicate(field-of-view-in-y,is,Class).
+predicate(field-of-view-in-y,SubClassOf,physical-quality).
+predicate(flip-angle,is,Class).
+predicate(flip-angle,SubClassOf,physical-quality).
+predicate(imaging-frequency,is,Class).
+predicate(imaging-frequency,SubClassOf,temporal-quality).
+predicate(interlaced-even-acquired-first-slice-order,is,Class).
+predicate(interlaced-even-acquired-first-slice-order,SubClassOf,slice-order).
+predicate(interlaced-odd-acquired-first-slice-order,is,Class).
+predicate(interlaced-odd-acquired-first-slice-order,SubClassOf,slice-order).
+predicate(inversion-time,is,Class).
+predicate(inversion-time,SubClassOf,temporal-quality).
+predicate(lateral-sulcus-line-orientation-at-acquisition,is,Class).
+predicate(lateral-sulcus-line-orientation-at-acquisition,SubClassOf,axis-orientation-at-acquisition).
+predicate(non-interlaced-slice-order,is,Class).
+predicate(non-interlaced-slice-order,SubClassOf,slice-order).
+predicate(nucleus,is,Class).
+predicate(nucleus,SubClassOf,physical-object).
+predicate(number-of-averages,is,Class).
+predicate(number-of-averages,SubClassOf,cardinal).
+predicate(number-of-phase-encoding-steps,is,Class).
+predicate(number-of-phase-encoding-steps,SubClassOf,cardinal).
+predicate(number-of-temporal-positions,is,Class).
+predicate(number-of-temporal-positions,SubClassOf,cardinal).
+predicate(oblique-slice-orientation-at-acquisition,is,Class).
+predicate(oblique-slice-orientation-at-acquisition,SubClassOf,slice-orientation-at-acquisition).
+predicate(parallel-acquisition-technique,is,Class).
+predicate(patient-position,is,Class).
+predicate(patient-position,SubClassOf,state).
+predicate(percent-phase-field-of-view,is,Class).
+predicate(percent-phase-field-of-view,SubClassOf,abstract-quality).
+predicate(percent-sampling,is,Class).
+predicate(percent-sampling,SubClassOf,abstract-quality).
+predicate(pixel-bandwidth,is,Class).
+predicate(pixel-bandwidth,SubClassOf,temporal-quality).
+predicate(pixel-spacing-in-x,is,Class).
+predicate(pixel-spacing-in-x,SubClassOf,abstract-quality,).
+predicate(pixel-spacing-in-x,SubClassOf,is-a-quality-of exactly 1 dataset).
+predicate(pixel-spacing-in-y,is,Class).
+predicate(pixel-spacing-in-y,SubClassOf,abstract-quality,).
+predicate(pixel-spacing-in-y,SubClassOf,is-a-quality-of exactly 1 dataset).
+predicate(repetition-time,is,Class).
+predicate(repetition-time,SubClassOf,temporal-quality).
+predicate(sagittal-slice-orientation-at-acquisition,is,Class).
+predicate(sagittal-slice-orientation-at-acquisition,SubClassOf,slice-orientation-at-acquisition).
+predicate(slice-order,is,Class).
+predicate(slice-order,SubClassOf,abstract-quality,).
+predicate(slice-order,SubClassOf,is-a-quality-of exactly 1 dataset,).
+predicate(slice-order,SubClassOf,has-for-name exactly 1 name).
+predicate(slice-orientation-at-acquisition,is,Class).
+predicate(slice-orientation-at-acquisition,SubClassOf,abstract-quality,).
+predicate(slice-orientation-at-acquisition,SubClassOf,is-a-quality-of exactly 1 dataset,).
+predicate(slice-orientation-at-acquisition,SubClassOf,has-for-name exactly 1 name).
+predicate(slice-spacing,is,Class).
+predicate(slice-spacing,SubClassOf,abstract-quality,).
+predicate(slice-spacing,SubClassOf,is-a-quality-of exactly 1 dataset).
+predicate(slice-thickness,is,Class).
+predicate(slice-thickness,SubClassOf,abstract-quality,).
+predicate(slice-thickness,SubClassOf,is-a-quality-of exactly 1 dataset).
+predicate(spin-density-contrast,is,Class).
+predicate(spin-density-contrast,SubClassOf,MR-image-contrast).
+predicate(temporal-resolution,is,Class).
+predicate(temporal-resolution,SubClassOf,temporal-quality).
+predicate(time-reduction-factor,is,Class).
+predicate(time-reduction-factor,SubClassOf,abstract-quality,).
+predicate(time-reduction-factor,SubClassOf,is-a-quality-of exactly 1 parallel-acquisition-technique).
+predicate(time-reduction-factor-for-the-in-plane-direction,is,Class).
+predicate(time-reduction-factor-for-the-in-plane-direction,SubClassOf,time-reduction-factor).
+predicate(time-reduction-factor-for-the-out-of-plane-direction,is,Class).
+predicate(time-reduction-factor-for-the-out-of-plane-direction,SubClassOf,time-reduction-factor).
+predicate(transverse-slice-orientation-at-acquisition,is,Class).
+predicate(transverse-slice-orientation-at-acquisition,SubClassOf,slice-orientation-at-acquisition).
+predicate(centre,is,Class).
+predicate(centre,SubClassOf,agentive-social-object).
+predicate(ethics-committee,is,Class).
+predicate(ethics-committee,SubClassOf,agentive-social-object).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(female,is,Individual).
+predicate(female,Types,sex).
+predicate(left-handed-language-hemispheric-dominance,is,Individual).
+predicate(left-handed-language-hemispheric-dominance,Types,language-hemispheric-dominance).
+predicate(left-handed-manual-hemispheric-dominance,is,Individual).
+predicate(left-handed-manual-hemispheric-dominance,Types,manual-hemispheric-dominance).
+predicate(male,is,Individual).
+predicate(male,Types,sex).
+predicate(right-handed-language-hemispheric-dominance,is,Individual).
+predicate(right-handed-language-hemispheric-dominance,Types,language-hemispheric-dominance).
+predicate(right-handed-manual-hemispheric-dominance,is,Individual).
+predicate(right-handed-manual-hemispheric-dominance,Types,manual-hemispheric-dominance).
+predicate(right-handed-manual-hemispheric-dominance,DisjointClasses,abstract,endurant,perdurant,quality).
+predicate(right-handed-manual-hemispheric-dominance,DisjointClasses,abstract-quality,physical-quality,temporal-quality).
+predicate(right-handed-manual-hemispheric-dominance,DisjointClasses,arbitrary-sum,non-physical-endurant,physical-endurant).

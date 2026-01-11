@@ -1,0 +1,902 @@
+decimal is Datatype.
+int is Datatype.
+integer is Datatype.
+hasSourceUnit is ObjectProperty.
+hasTargetUnit is ObjectProperty.
+hasUnit is ObjectProperty.
+measurementFor is ObjectProperty.
+ofCharacteristic is ObjectProperty.
+ofEntity is ObjectProperty.
+standardFor is ObjectProperty.
+standardFor Characteristics InverseFunctional.
+standardFor Domain Standard.
+standardFor Range Measurement.
+standardFor InverseOf usesStandard.
+usesStandard is ObjectProperty.
+usesStandard InverseOf standardFor.
+hasMultiplier is DataProperty.
+hasOffset is DataProperty.
+hasPower is DataProperty.
+hasPower Characteristics Functional.
+hasPower Domain DerivedUnit.
+hasPower Range int.
+Fish is Class.
+Flow is Class.
+OpenWaterBody is Class.
+SBC_StreamWaterDiscreteSample is Class.
+SBC_StreamWaterDiscreteSample SubClassOf Stream.
+SBC_StreamWaterSensorSample is Class.
+SBC_StreamWaterSensorSample SubClassOf Stream.
+Salmonid is Class.
+Salmonid SubClassOf Fish.
+SockeyeSalmon is Class.
+SockeyeSalmon SubClassOf Salmonid.
+Stream is Class.
+Stream SubClassOf OpenWaterBody.
+StreamDischargeRate is Class.
+StreamDischargeRate SubClassOf Flow.
+CavitatedCompoundOrgan is Class.
+OrgansimSubdivision is Class.
+PortionOfCellSubstance is Class.
+PortionOfCellSubstance SubClassOf PortionOfOrganismSubstance.
+PortionOfOrganismSubstance is Class.
+Stomach is Class.
+Stomach SubClassOf CavitatedCompoundOrgan.
+SurfaceStructure is Class.
+SurfaceStructure SubClassOf OrgansimSubdivision.
+Amount is Class.
+AmountOfSubstanceConcentration is Class.
+Angle is Class.
+Area is Class.
+ArealDensity is Class.
+ArealMassDensity is Class.
+ArealMassDensityRate is Class.
+Conductance is Class.
+Conductivity is Class.
+Count is Class.
+Current is Class.
+Force is Class.
+Frequency is Class.
+Irradiance is Class.
+Length is Class.
+Luminosity is Class.
+Mass is Class.
+MassDensity is Class.
+MassPerMass is Class.
+Molality is Class.
+PhotonFluxDensity is Class.
+Pressure is Class.
+Proportion is Class.
+Radiance is Class.
+RadionucleotideActivity is Class.
+Speed is Class.
+Temperature is Class.
+Time is Class.
+Volume is Class.
+VolumetricMassDensityRate is Class.
+VolumetricRate is Class.
+WaveNumber is Class.
+AmmoniumMoleToGram is Class.
+AmmoniumMoleToGram SubClassOf SubstanceConversion.
+GroundWater is Class.
+GroundWater SubClassOf Porewater.
+Porewater is Class.
+Substance is Class.
+SubstanceConversion is Class.
+SubstanceConversion SubClassOf UnitConversion,.
+SubstanceConversion SubClassOf hasSourceUnit only (standardFor only (measurementFor only (ofEntity only Substance))),.
+SubstanceConversion SubClassOf hasTargetUnit only (standardFor only (measurementFor only (ofEntity only Substance))).
+BaseUnit is Class.
+BaseUnit SubClassOf Unit.
+Characteristic is Class.
+Characteristic DisjointWith Standard.
+CharacteristicQualifier is Class.
+CharacteristicQualifier DisjointWith Standard.
+CompositeUnit is Class.
+CompositeUnit SubClassOf Unit,.
+CompositeUnit SubClassOf hasUnit min 2 (BaseUnit or DerivedUnit).
+DerivedUnit is Class.
+DerivedUnit SubClassOf Unit,.
+DerivedUnit SubClassOf not (hasPower value 0),.
+DerivedUnit SubClassOf not (hasPower value 1),.
+DerivedUnit SubClassOf hasUnit exactly 1 (BaseUnit or DerivedUnit),.
+DerivedUnit SubClassOf hasPower some int.
+Entity is Class.
+Entity DisjointWith Standard.
+Measurement is Class.
+Measurement DisjointWith Standard.
+Observation is Class.
+Observation DisjointWith Standard.
+ObservationCollection is Class.
+ObservationCollection DisjointWith Standard.
+Protocol is Class.
+Protocol DisjointWith Standard.
+Standard is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is standardFor some Measurement.
+Thing, DisjointWith Protocol.
+Thing, DisjointWith ObservationCollection.
+Thing, DisjointWith Observation.
+Thing, DisjointWith Measurement.
+Thing, DisjointWith Entity.
+Thing, DisjointWith CharacteristicQualifier.
+Thing, DisjointWith Characteristic.
+Unit is Class.
+Unit SubClassOf Standard.
+UnitConversion is Class.
+CompositeSolid is Class.
+CompositeSolid SubClassOf SpatialSolid.
+Grid is Class.
+Grid SubClassOf SpatialImplicitGeometry.
+RectifiedGrid is Class.
+RectifiedGrid SubClassOf Grid.
+Solid is Class.
+Solid SubClassOf SpatialSolid.
+SpatialImplicitGeometry is Class.
+SpatialSolid is Class.
+SpatialSolid SubClassOf SpatialSurface.
+SpatialSurface is Class.
+Acre is Class.
+Acre SubClassOf DerivedUnit,.
+Acre SubClassOf hasUnit only.
+Acre SubClassOf (BaseUnit and (standardFor only.
+Acre SubClassOf (Measurement and (ofCharacteristic only Length)))),.
+Acre SubClassOf standardFor only.
+Acre SubClassOf (Measurement and (ofCharacteristic only Area)),.
+Acre SubClassOf hasPower value 2.
+Ampere is Class.
+Ampere SubClassOf BaseUnit,.
+Ampere SubClassOf standardFor only.
+Ampere SubClassOf (Measurement and (ofCharacteristic only Current)).
+Angstrom is Class.
+Angstrom SubClassOf BaseUnit,.
+Angstrom SubClassOf standardFor only.
+Angstrom SubClassOf (Measurement and (ofCharacteristic only Length)).
+Are is Class.
+Are SubClassOf DerivedUnit,.
+Are SubClassOf hasUnit only Dekameter,.
+Are SubClassOf standardFor only.
+Are SubClassOf (Measurement and (ofCharacteristic only Area)),.
+Are SubClassOf hasPower value 2.
+Bar is Class.
+Bar SubClassOf BaseUnit,.
+Bar SubClassOf standardFor only.
+Bar SubClassOf (Measurement and (ofCharacteristic only Pressure)).
+Becquerel is Class.
+Becquerel SubClassOf DerivedUnit,.
+Becquerel SubClassOf hasUnit only Second,.
+Becquerel SubClassOf standardFor only.
+Becquerel SubClassOf (Measurement and (ofCharacteristic only RadionucleotideActivity)),.
+Becquerel SubClassOf hasPower value -1.
+Bushel is Class.
+Bushel SubClassOf DerivedUnit,.
+Bushel SubClassOf hasUnit only.
+Bushel SubClassOf (BaseUnit and (standardFor only.
+Bushel SubClassOf (Measurement and (ofCharacteristic only Length)))),.
+Bushel SubClassOf standardFor only.
+Bushel SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+Bushel SubClassOf hasPower value 3.
+Candela is Class.
+Candela SubClassOf BaseUnit,.
+Candela SubClassOf standardFor only.
+Candela SubClassOf (Measurement and (ofCharacteristic only Luminosity)).
+Celsius is Class.
+Celsius SubClassOf BaseUnit,.
+Celsius SubClassOf standardFor only.
+Celsius SubClassOf (Measurement and (ofCharacteristic only Temperature)).
+Centigram is Class.
+Centigram SubClassOf BaseUnit,.
+Centigram SubClassOf standardFor only.
+Centigram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+Centimeter is Class.
+Centimeter SubClassOf BaseUnit,.
+Centimeter SubClassOf standardFor only.
+Centimeter SubClassOf (Measurement and (ofCharacteristic only Length)).
+CentimeterCubed is Class.
+CentimeterCubed EquivalentTo Milliliter.
+CentimeterCubed SubClassOf DerivedUnit,.
+CentimeterCubed SubClassOf hasUnit only Centimeter,.
+CentimeterCubed SubClassOf standardFor only.
+CentimeterCubed SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+CentimeterCubed SubClassOf hasPower value 3.
+CentimeterPerSecond is Class.
+CentimeterPerSecond SubClassOf CompositeUnit,.
+CentimeterPerSecond SubClassOf hasUnit some Centimeter,.
+CentimeterPerSecond SubClassOf hasUnit some.
+CentimeterPerSecond SubClassOf (DerivedUnit and (hasUnit only Second) and (hasPower value -1)),.
+CentimeterPerSecond SubClassOf standardFor only.
+CentimeterPerSecond SubClassOf (Measurement and (ofCharacteristic only Speed)).
+CentimeterSquared is Class.
+CentimeterSquared SubClassOf DerivedUnit,.
+CentimeterSquared SubClassOf hasUnit only Centimeter,.
+CentimeterSquared SubClassOf standardFor only.
+CentimeterSquared SubClassOf (Measurement and (ofCharacteristic only Area)),.
+CentimeterSquared SubClassOf hasPower value 2.
+Centisecond is Class.
+Centisecond SubClassOf BaseUnit,.
+Centisecond SubClassOf standardFor only.
+Centisecond SubClassOf (Measurement and (ofCharacteristic only Time)).
+Day is Class.
+Day SubClassOf BaseUnit,.
+Day SubClassOf standardFor only.
+Day SubClassOf (Measurement and (ofCharacteristic only Time)).
+Decibar is Class.
+Decibar SubClassOf BaseUnit,.
+Decibar SubClassOf standardFor only.
+Decibar SubClassOf (Measurement and (ofCharacteristic only Pressure)).
+Decigram is Class.
+Decigram SubClassOf BaseUnit,.
+Decigram SubClassOf standardFor only.
+Decigram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+Decimeter is Class.
+Decimeter SubClassOf BaseUnit,.
+Decimeter SubClassOf standardFor only.
+Decimeter SubClassOf (Measurement and (ofCharacteristic only Length)).
+Decisecond is Class.
+Decisecond SubClassOf BaseUnit,.
+Decisecond SubClassOf standardFor only.
+Decisecond SubClassOf (Measurement and (ofCharacteristic only Time)).
+DegreToRadian is Class.
+DegreToRadian SubClassOf UnitConversion,.
+DegreToRadian SubClassOf hasSourceUnit only Degree,.
+DegreToRadian SubClassOf hasTargetUnit only Radian,.
+DegreToRadian SubClassOf hasMultiplier value 0.0174533,.
+DegreToRadian SubClassOf hasOffset value 0.
+Degree is Class.
+Degree SubClassOf BaseUnit,.
+Degree SubClassOf standardFor only.
+Degree SubClassOf (Measurement and (ofCharacteristic only Angle)).
+Dekagram is Class.
+Dekagram SubClassOf BaseUnit,.
+Dekagram SubClassOf standardFor only.
+Dekagram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+Dekameter is Class.
+Dekameter SubClassOf BaseUnit,.
+Dekameter SubClassOf standardFor only.
+Dekameter SubClassOf (Measurement and (ofCharacteristic only Length)).
+Dekasecond is Class.
+Dekasecond SubClassOf BaseUnit,.
+Dekasecond SubClassOf standardFor only.
+Dekasecond SubClassOf (Measurement and (ofCharacteristic only Time)).
+FahrenheitDegree is Class.
+FahrenheitDegree SubClassOf BaseUnit,.
+FahrenheitDegree SubClassOf standardFor only.
+FahrenheitDegree SubClassOf (Measurement and (ofCharacteristic only Temperature)).
+Fathom is Class.
+Fathom SubClassOf BaseUnit,.
+Fathom SubClassOf standardFor only.
+Fathom SubClassOf (Measurement and (ofCharacteristic only Length)).
+Foot is Class.
+Foot SubClassOf BaseUnit,.
+Foot SubClassOf standardFor only.
+Foot SubClassOf (Measurement and (ofCharacteristic only Length)).
+FootGoldCoast is Class.
+FootGoldCoast SubClassOf BaseUnit,.
+FootGoldCoast SubClassOf standardFor only.
+FootGoldCoast SubClassOf (Measurement and (ofCharacteristic only Length)).
+FootSquared is Class.
+FootSquared SubClassOf DerivedUnit,.
+FootSquared SubClassOf hasUnit only Foot,.
+FootSquared SubClassOf standardFor only.
+FootSquared SubClassOf (Measurement and (ofCharacteristic only Area)),.
+FootSquared SubClassOf hasPower value 2.
+Gallon is Class.
+Gallon SubClassOf DerivedUnit,.
+Gallon SubClassOf hasUnit only.
+Gallon SubClassOf (BaseUnit and (standardFor only.
+Gallon SubClassOf (Measurement and (ofCharacteristic only Length)))),.
+Gallon SubClassOf standardFor only.
+Gallon SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+Gallon SubClassOf hasPower value 3.
+Grad is Class.
+Grad SubClassOf BaseUnit,.
+Grad SubClassOf standardFor only.
+Grad SubClassOf (Measurement and (ofCharacteristic only Angle)).
+Gram is Class.
+Gram SubClassOf BaseUnit,.
+Gram SubClassOf standardFor only.
+Gram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+GramPerGram is Class.
+GramPerGram SubClassOf CompositeUnit,.
+GramPerGram SubClassOf hasUnit some Gram,.
+GramPerGram SubClassOf hasUnit some.
+GramPerGram SubClassOf (DerivedUnit and (hasUnit only Gram) and (hasPower value -1)),.
+GramPerGram SubClassOf standardFor only.
+GramPerGram SubClassOf (Measurement and (ofCharacteristic only MassPerMass)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+GramPerLiter is Class.
+GramPerLiter SubClassOf CompositeUnit,.
+GramPerLiter SubClassOf hasUnit some Gram,.
+GramPerLiter SubClassOf hasUnit some.
+GramPerLiter SubClassOf (DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),.
+GramPerLiter SubClassOf standardFor only.
+GramPerLiter SubClassOf (Measurement and (ofCharacteristic only MassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+GramPerMeterCubed is Class.
+GramPerMeterCubed SubClassOf CompositeUnit,.
+GramPerMeterCubed SubClassOf hasUnit some Gram,.
+GramPerMeterCubed SubClassOf hasUnit some.
+GramPerMeterCubed SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),.
+GramPerMeterCubed SubClassOf standardFor only.
+GramPerMeterCubed SubClassOf (Measurement and (ofCharacteristic only MassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+Hectare is Class.
+Hectare SubClassOf DerivedUnit,.
+Hectare SubClassOf hasUnit only Hectometer,.
+Hectare SubClassOf standardFor only.
+Hectare SubClassOf (Measurement and (ofCharacteristic only Area)),.
+Hectare SubClassOf hasPower value 2.
+Hectogram is Class.
+Hectogram SubClassOf BaseUnit,.
+Hectogram SubClassOf standardFor only.
+Hectogram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+Hectometer is Class.
+Hectometer SubClassOf BaseUnit,.
+Hectometer SubClassOf standardFor only.
+Hectometer SubClassOf (Measurement and (ofCharacteristic only Length)).
+Hectopascal is Class.
+Hectopascal EquivalentTo Millibar.
+Hectopascal SubClassOf BaseUnit,.
+Hectopascal SubClassOf standardFor only.
+Hectopascal SubClassOf (Measurement and (ofCharacteristic only Pressure)).
+Hectosecond is Class.
+Hectosecond SubClassOf BaseUnit,.
+Hectosecond SubClassOf standardFor only.
+Hectosecond SubClassOf (Measurement and (ofCharacteristic only Time)).
+Hertz is Class.
+Hertz SubClassOf DerivedUnit,.
+Hertz SubClassOf hasUnit only Second,.
+Hertz SubClassOf standardFor only.
+Hertz SubClassOf (Measurement and (ofCharacteristic only Frequency)),.
+Hertz SubClassOf hasPower value -1.
+Hour is Class.
+Hour SubClassOf BaseUnit,.
+Hour SubClassOf standardFor only.
+Hour SubClassOf (Measurement and (ofCharacteristic only Time)).
+Inch is Class.
+Inch SubClassOf BaseUnit,.
+Inch SubClassOf standardFor only.
+Inch SubClassOf (Measurement and (ofCharacteristic only Length)).
+InchCubed is Class.
+InchCubed SubClassOf DerivedUnit,.
+InchCubed SubClassOf hasUnit only Inch,.
+InchCubed SubClassOf standardFor only.
+InchCubed SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+InchCubed SubClassOf hasPower value 3.
+Index is Class.
+Index SubClassOf Standard.
+Kelvin is Class.
+Kelvin SubClassOf BaseUnit,.
+Kelvin SubClassOf standardFor only.
+Kelvin SubClassOf (Measurement and (ofCharacteristic only Temperature)).
+Kilogram is Class.
+Kilogram SubClassOf BaseUnit,.
+Kilogram SubClassOf standardFor only.
+Kilogram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+KilogramPerLiter is Class.
+KilogramPerLiter SubClassOf CompositeUnit,.
+KilogramPerLiter SubClassOf hasUnit some Kilogram,.
+KilogramPerLiter SubClassOf hasUnit some.
+KilogramPerLiter SubClassOf (DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),.
+KilogramPerLiter SubClassOf standardFor only.
+KilogramPerLiter SubClassOf (Measurement and (ofCharacteristic only MassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+KilogramPerMeterCubed is Class.
+KilogramPerMeterCubed SubClassOf CompositeUnit,.
+KilogramPerMeterCubed SubClassOf hasUnit some Kilogram,.
+KilogramPerMeterCubed SubClassOf hasUnit some.
+KilogramPerMeterCubed SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),.
+KilogramPerMeterCubed SubClassOf standardFor only.
+KilogramPerMeterCubed SubClassOf (Measurement and (ofCharacteristic only MassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+KilogramPerMeterSquared is Class.
+KilogramPerMeterSquared SubClassOf CompositeUnit,.
+KilogramPerMeterSquared SubClassOf hasUnit some Kilogram,.
+KilogramPerMeterSquared SubClassOf hasUnit some.
+KilogramPerMeterSquared SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),.
+KilogramPerMeterSquared SubClassOf standardFor only.
+KilogramPerMeterSquared SubClassOf (Measurement and (ofCharacteristic only ArealMassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+KilogramPerMeterSquaredPerDay is Class.
+KilogramPerMeterSquaredPerDay SubClassOf CompositeUnit,.
+KilogramPerMeterSquaredPerDay SubClassOf hasUnit some Kilogram,.
+KilogramPerMeterSquaredPerDay SubClassOf hasUnit some.
+KilogramPerMeterSquaredPerDay SubClassOf (DerivedUnit and (hasUnit only Day) and (hasPower value -1)),.
+KilogramPerMeterSquaredPerDay SubClassOf hasUnit some.
+KilogramPerMeterSquaredPerDay SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),.
+KilogramPerMeterSquaredPerDay SubClassOf standardFor only.
+KilogramPerMeterSquaredPerDay SubClassOf (Measurement and (ofCharacteristic only ArealMassDensityRate)),.
+Thing is hasUnit exactly 3 www.w3.org/2002/07/#.
+Kilohertz is Class.
+Kilohertz SubClassOf DerivedUnit,.
+Kilohertz SubClassOf hasUnit only Kilosecond,.
+Kilohertz SubClassOf standardFor only.
+Kilohertz SubClassOf (Measurement and (ofCharacteristic only Frequency)),.
+Kilohertz SubClassOf hasPower value -1.
+Kiloliter is Class.
+Kiloliter EquivalentTo MeterCubed.
+Kiloliter SubClassOf DerivedUnit,.
+Kiloliter SubClassOf hasUnit only Meter,.
+Kiloliter SubClassOf standardFor only.
+Kiloliter SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+Kiloliter SubClassOf hasPower value 3.
+Kilometer is Class.
+Kilometer SubClassOf BaseUnit,.
+Kilometer SubClassOf standardFor only.
+Kilometer SubClassOf (Measurement and (ofCharacteristic only Length)).
+KilometerSquared is Class.
+KilometerSquared SubClassOf DerivedUnit,.
+KilometerSquared SubClassOf hasUnit only Kilometer,.
+KilometerSquared SubClassOf standardFor only.
+KilometerSquared SubClassOf (Measurement and (ofCharacteristic only Area)),.
+KilometerSquared SubClassOf hasPower value 2.
+Kilopascal is Class.
+Kilopascal SubClassOf CompositeUnit,.
+Kilopascal SubClassOf standardFor only.
+Kilopascal SubClassOf (Measurement and (ofCharacteristic only Pressure)).
+Kilosecond is Class.
+Kilosecond SubClassOf BaseUnit,.
+Kilosecond SubClassOf standardFor only.
+Kilosecond SubClassOf (Measurement and (ofCharacteristic only Time)).
+Knot is Class.
+Knot SubClassOf CompositeUnit,.
+Knot SubClassOf hasUnit some NauticalMile,.
+Knot SubClassOf hasUnit some.
+Knot SubClassOf (DerivedUnit and (hasUnit only Hour) and (hasPower value -1)),.
+Knot SubClassOf standardFor only.
+Knot SubClassOf (Measurement and (ofCharacteristic only Speed)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+LinkClarke is Class.
+LinkClarke SubClassOf BaseUnit,.
+LinkClarke SubClassOf standardFor only.
+LinkClarke SubClassOf (Measurement and (ofCharacteristic only Length)).
+Liter is Class.
+Liter SubClassOf DerivedUnit,.
+Liter SubClassOf hasUnit only Decimeter,.
+Liter SubClassOf standardFor only.
+Liter SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+Liter SubClassOf hasPower value 3.
+LiterPerSecond is Class.
+LiterPerSecond SubClassOf CompositeUnit,.
+LiterPerSecond SubClassOf hasUnit some Liter,.
+LiterPerSecond SubClassOf hasUnit some.
+LiterPerSecond SubClassOf (DerivedUnit and (hasUnit only Second) and (hasPower value -1)),.
+LiterPerSecond SubClassOf standardFor only.
+LiterPerSecond SubClassOf (Measurement and (ofCharacteristic only VolumetricRate)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+Lumen is Class.
+Lumen SubClassOf BaseUnit,.
+Lumen SubClassOf standardFor only.
+Lumen SubClassOf (Measurement and (ofCharacteristic only Luminosity)).
+Megagram is Class.
+Megagram SubClassOf BaseUnit,.
+Megagram SubClassOf standardFor only.
+Megagram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+Megahertz is Class.
+Megahertz SubClassOf DerivedUnit,.
+Megahertz SubClassOf hasUnit only Megasecond,.
+Megahertz SubClassOf standardFor only.
+Megahertz SubClassOf (Measurement and (ofCharacteristic only Frequency)),.
+Megahertz SubClassOf hasPower value -1.
+Megameter is Class.
+Megameter SubClassOf BaseUnit,.
+Megameter SubClassOf standardFor only.
+Megameter SubClassOf (Measurement and (ofCharacteristic only Length)).
+Megasecond is Class.
+Megasecond SubClassOf BaseUnit,.
+Megasecond SubClassOf standardFor only.
+Megasecond SubClassOf (Measurement and (ofCharacteristic only Time)).
+Meter is Class.
+Meter SubClassOf BaseUnit,.
+Meter SubClassOf standardFor only.
+Meter SubClassOf (Measurement and (ofCharacteristic only Length)).
+MeterCubed is Class.
+MeterCubed EquivalentTo Kiloliter.
+MeterCubed SubClassOf DerivedUnit,.
+MeterCubed SubClassOf hasUnit only Meter,.
+MeterCubed SubClassOf standardFor only.
+MeterCubed SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+MeterCubed SubClassOf hasPower value 3.
+MeterPerSecond is Class.
+MeterPerSecond SubClassOf CompositeUnit,.
+MeterPerSecond SubClassOf hasUnit some Meter,.
+MeterPerSecond SubClassOf hasUnit some.
+MeterPerSecond SubClassOf (DerivedUnit and (hasUnit only Second) and (hasPower value -1)),.
+MeterPerSecond SubClassOf standardFor only.
+MeterPerSecond SubClassOf (Measurement and (ofCharacteristic only Speed)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+MeterSquared is Class.
+MeterSquared SubClassOf DerivedUnit,.
+MeterSquared SubClassOf hasUnit only Meter,.
+MeterSquared SubClassOf standardFor only.
+MeterSquared SubClassOf (Measurement and (ofCharacteristic only Area)),.
+MeterSquared SubClassOf hasPower value 2.
+MicroeinsteinsPerMeterSquaredPerSecond is Class.
+MicroeinsteinsPerMeterSquaredPerSecond SubClassOf CompositeUnit,.
+MicroeinsteinsPerMeterSquaredPerSecond SubClassOf standardFor only.
+MicroeinsteinsPerMeterSquaredPerSecond SubClassOf (Measurement and (ofCharacteristic only PhotonFluxDensity)).
+Microgram is Class.
+Microgram SubClassOf BaseUnit,.
+Microgram SubClassOf standardFor only.
+Microgram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+MicrogramPerGram is Class.
+MicrogramPerGram SubClassOf CompositeUnit,.
+MicrogramPerGram SubClassOf hasUnit some Microgram,.
+MicrogramPerGram SubClassOf hasUnit some.
+MicrogramPerGram SubClassOf (DerivedUnit and (hasUnit only Gram) and (hasPower value -1)),.
+MicrogramPerGram SubClassOf standardFor only.
+MicrogramPerGram SubClassOf (Measurement and (ofCharacteristic only MassPerMass)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+MicrogramPerLiter is Class.
+MicrogramPerLiter SubClassOf CompositeUnit,.
+MicrogramPerLiter SubClassOf hasUnit some Microgram,.
+MicrogramPerLiter SubClassOf hasUnit some.
+MicrogramPerLiter SubClassOf (DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),.
+MicrogramPerLiter SubClassOf standardFor only.
+MicrogramPerLiter SubClassOf (Measurement and (ofCharacteristic only MassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+MicrogramPerMeterCubed is Class.
+MicrogramPerMeterCubed SubClassOf CompositeUnit,.
+MicrogramPerMeterCubed SubClassOf hasUnit some Microgram,.
+MicrogramPerMeterCubed SubClassOf hasUnit some.
+MicrogramPerMeterCubed SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),.
+MicrogramPerMeterCubed SubClassOf standardFor only.
+MicrogramPerMeterCubed SubClassOf (Measurement and (ofCharacteristic only MassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+Microliter is Class.
+Microliter SubClassOf DerivedUnit,.
+Microliter SubClassOf hasUnit only Millimeter,.
+Microliter SubClassOf standardFor only.
+Microliter SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+Microliter SubClassOf hasPower value 3.
+Micrometer is Class.
+Micrometer SubClassOf BaseUnit,.
+Micrometer SubClassOf standardFor only.
+Micrometer SubClassOf (Measurement and (ofCharacteristic only Length)).
+MicrometerSquared is Class.
+MicrometerSquared SubClassOf DerivedUnit,.
+MicrometerSquared SubClassOf hasUnit only Micrometer,.
+MicrometerSquared SubClassOf standardFor only.
+MicrometerSquared SubClassOf (Measurement and (ofCharacteristic only Area)),.
+MicrometerSquared SubClassOf hasPower value 2.
+MicromolePerKilogram is Class.
+MicromolePerKilogram SubClassOf CompositeUnit,.
+MicromolePerKilogram SubClassOf standardFor only.
+MicromolePerKilogram SubClassOf (Measurement and (ofCharacteristic only Molality)).
+MicromolePerLiter is Class.
+MicromolePerLiter SubClassOf CompositeUnit,.
+MicromolePerLiter SubClassOf standardFor only.
+MicromolePerLiter SubClassOf (Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)).
+MicromolePerMeterCubed is Class.
+MicromolePerMeterCubed SubClassOf CompositeUnit,.
+MicromolePerMeterCubed SubClassOf standardFor only.
+MicromolePerMeterCubed SubClassOf (Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)).
+Micron is Class.
+Micron SubClassOf BaseUnit,.
+Micron SubClassOf standardFor only.
+Micron SubClassOf (Measurement and (ofCharacteristic only Length)).
+Microsecond is Class.
+Microsecond SubClassOf BaseUnit,.
+Microsecond SubClassOf standardFor only.
+Microsecond SubClassOf (Measurement and (ofCharacteristic only Time)).
+MicrosiemensPerMeter is Class.
+MicrosiemensPerMeter SubClassOf CompositeUnit,.
+MicrosiemensPerMeter SubClassOf standardFor only.
+MicrosiemensPerMeter SubClassOf (Measurement and (ofCharacteristic only Conductivity)).
+Mile is Class.
+Mile SubClassOf BaseUnit,.
+Mile SubClassOf standardFor only.
+Mile SubClassOf (Measurement and (ofCharacteristic only Length)).
+MileSquared is Class.
+MileSquared SubClassOf DerivedUnit,.
+MileSquared SubClassOf hasUnit only Mile,.
+MileSquared SubClassOf standardFor only.
+MileSquared SubClassOf (Measurement and (ofCharacteristic only Area)),.
+MileSquared SubClassOf hasPower value 2.
+Millibar is Class.
+Millibar EquivalentTo Hectopascal.
+Millibar SubClassOf BaseUnit,.
+Millibar SubClassOf standardFor only.
+Millibar SubClassOf (Measurement and (ofCharacteristic only Pressure)).
+Milligram is Class.
+Milligram SubClassOf BaseUnit,.
+Milligram SubClassOf standardFor only.
+Milligram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+MilligramPerLiter is Class.
+MilligramPerLiter SubClassOf CompositeUnit,.
+MilligramPerLiter SubClassOf hasUnit some Milligram,.
+MilligramPerLiter SubClassOf hasUnit some.
+MilligramPerLiter SubClassOf (DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),.
+MilligramPerLiter SubClassOf standardFor only.
+MilligramPerLiter SubClassOf (Measurement and (ofCharacteristic only MassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+MilligramPerMeterCubed is Class.
+MilligramPerMeterCubed SubClassOf CompositeUnit,.
+MilligramPerMeterCubed SubClassOf hasUnit some Milligram,.
+MilligramPerMeterCubed SubClassOf hasUnit some.
+MilligramPerMeterCubed SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),.
+MilligramPerMeterCubed SubClassOf standardFor only.
+MilligramPerMeterCubed SubClassOf (Measurement and (ofCharacteristic only MassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+MilligramPerMeterCubedPerDay is Class.
+MilligramPerMeterCubedPerDay SubClassOf CompositeUnit,.
+MilligramPerMeterCubedPerDay SubClassOf hasUnit some Milligram,.
+MilligramPerMeterCubedPerDay SubClassOf hasUnit some.
+MilligramPerMeterCubedPerDay SubClassOf (DerivedUnit and (hasUnit only Day) and (hasPower value -1)),.
+MilligramPerMeterCubedPerDay SubClassOf hasUnit some.
+MilligramPerMeterCubedPerDay SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),.
+MilligramPerMeterCubedPerDay SubClassOf standardFor only.
+MilligramPerMeterCubedPerDay SubClassOf (Measurement and (ofCharacteristic only VolumetricMassDensityRate)),.
+Thing is hasUnit exactly 3 www.w3.org/2002/07/#.
+MilligramPerMeterSquaredPerDay is Class.
+MilligramPerMeterSquaredPerDay SubClassOf CompositeUnit,.
+MilligramPerMeterSquaredPerDay SubClassOf hasUnit some Milligram,.
+MilligramPerMeterSquaredPerDay SubClassOf hasUnit some.
+MilligramPerMeterSquaredPerDay SubClassOf (DerivedUnit and (hasUnit only Day) and (hasPower value -1)),.
+MilligramPerMeterSquaredPerDay SubClassOf hasUnit some.
+MilligramPerMeterSquaredPerDay SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),.
+MilligramPerMeterSquaredPerDay SubClassOf standardFor only.
+MilligramPerMeterSquaredPerDay SubClassOf (Measurement and (ofCharacteristic only ArealMassDensityRate)),.
+Thing is hasUnit exactly 3 www.w3.org/2002/07/#.
+Millihertz is Class.
+Millihertz SubClassOf DerivedUnit,.
+Millihertz SubClassOf hasUnit only Millisecond,.
+Millihertz SubClassOf standardFor only.
+Millihertz SubClassOf (Measurement and (ofCharacteristic only Frequency)),.
+Millihertz SubClassOf hasPower value -1.
+Milliliter is Class.
+Milliliter EquivalentTo CentimeterCubed.
+Milliliter SubClassOf DerivedUnit,.
+Milliliter SubClassOf hasUnit only Centimeter,.
+Milliliter SubClassOf standardFor only.
+Milliliter SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+Milliliter SubClassOf hasPower value 3.
+MilliliterPerLIter is Class.
+MilliliterPerLIter SubClassOf CompositeUnit,.
+MilliliterPerLIter SubClassOf hasUnit some Milliliter,.
+MilliliterPerLIter SubClassOf hasUnit some.
+MilliliterPerLIter SubClassOf (DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),.
+MilliliterPerLIter SubClassOf standardFor only.
+MilliliterPerLIter SubClassOf (Measurement and (ofCharacteristic only Proportion)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+Millimeter is Class.
+Millimeter SubClassOf BaseUnit,.
+Millimeter SubClassOf standardFor only.
+Millimeter SubClassOf (Measurement and (ofCharacteristic only Length)).
+MillimeterSquared is Class.
+MillimeterSquared SubClassOf DerivedUnit,.
+MillimeterSquared SubClassOf hasUnit only Millimeter,.
+MillimeterSquared SubClassOf standardFor only.
+MillimeterSquared SubClassOf (Measurement and (ofCharacteristic only Area)),.
+MillimeterSquared SubClassOf hasPower value 2.
+MillimolePerLiter is Class.
+MillimolePerLiter SubClassOf CompositeUnit,.
+MillimolePerLiter SubClassOf standardFor only.
+MillimolePerLiter SubClassOf (Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)).
+MillimolePerMeterCubed is Class.
+MillimolePerMeterCubed SubClassOf CompositeUnit,.
+MillimolePerMeterCubed SubClassOf standardFor only.
+MillimolePerMeterCubed SubClassOf (Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)).
+Millisecond is Class.
+Millisecond SubClassOf BaseUnit,.
+Millisecond SubClassOf standardFor only.
+Millisecond SubClassOf (Measurement and (ofCharacteristic only Time)).
+MillisiemensPerMeter is Class.
+MillisiemensPerMeter SubClassOf CompositeUnit,.
+MillisiemensPerMeter SubClassOf standardFor only.
+MillisiemensPerMeter SubClassOf (Measurement and (ofCharacteristic only Conductivity)).
+Minute is Class.
+Minute SubClassOf BaseUnit,.
+Minute SubClassOf standardFor only.
+Minute SubClassOf (Measurement and (ofCharacteristic only Time)).
+Mole is Class.
+Mole SubClassOf BaseUnit,.
+Mole SubClassOf standardFor only.
+Mole SubClassOf (Measurement and (ofCharacteristic only Amount)).
+MolePerLiter is Class.
+MolePerLiter SubClassOf CompositeUnit,.
+MolePerLiter SubClassOf hasUnit some Mole,.
+MolePerLiter SubClassOf hasUnit some.
+MolePerLiter SubClassOf (DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),.
+MolePerLiter SubClassOf standardFor only.
+MolePerLiter SubClassOf (Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+MolePerMeterCubed is Class.
+MolePerMeterCubed SubClassOf CompositeUnit,.
+MolePerMeterCubed SubClassOf hasUnit some Mole,.
+MolePerMeterCubed SubClassOf hasUnit some.
+MolePerMeterCubed SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -3)),.
+MolePerMeterCubed SubClassOf standardFor only.
+MolePerMeterCubed SubClassOf (Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+Nanogram is Class.
+Nanogram SubClassOf BaseUnit,.
+Nanogram SubClassOf standardFor only.
+Nanogram SubClassOf (Measurement and (ofCharacteristic only Mass)).
+NanogramPerLiter is Class.
+NanogramPerLiter SubClassOf CompositeUnit,.
+NanogramPerLiter SubClassOf hasUnit some Nanogram,.
+NanogramPerLiter SubClassOf hasUnit some.
+NanogramPerLiter SubClassOf (DerivedUnit and (hasUnit only Liter) and (hasPower value -1)),.
+NanogramPerLiter SubClassOf standardFor only.
+NanogramPerLiter SubClassOf (Measurement and (ofCharacteristic only MassDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+Nanometer is Class.
+Nanometer SubClassOf BaseUnit,.
+Nanometer SubClassOf standardFor only.
+Nanometer SubClassOf (Measurement and (ofCharacteristic only Length)).
+NanomolePerLiter is Class.
+NanomolePerLiter SubClassOf CompositeUnit,.
+NanomolePerLiter SubClassOf standardFor only.
+NanomolePerLiter SubClassOf (Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)).
+Nanosecond is Class.
+Nanosecond SubClassOf BaseUnit,.
+Nanosecond SubClassOf standardFor only.
+Nanosecond SubClassOf (Measurement and (ofCharacteristic only Time)).
+NauticalMile is Class.
+NauticalMile SubClassOf BaseUnit,.
+NauticalMile SubClassOf standardFor only.
+NauticalMile SubClassOf (Measurement and (ofCharacteristic only Length)).
+Newton is Class.
+Newton SubClassOf CompositeUnit,.
+Newton SubClassOf hasUnit some Kilogram,.
+Newton SubClassOf hasUnit some.
+Newton SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -1)),.
+Newton SubClassOf hasUnit some.
+Newton SubClassOf (DerivedUnit and (hasUnit only Second) and (hasPower value -2)),.
+Newton SubClassOf standardFor only.
+Newton SubClassOf (Measurement and (ofCharacteristic only Force)),.
+Thing is hasUnit exactly 3 www.w3.org/2002/07/#.
+NominalDay is Class.
+NominalDay SubClassOf BaseUnit,.
+NominalDay SubClassOf standardFor only.
+NominalDay SubClassOf (Measurement and (ofCharacteristic only Time)).
+NominalHour is Class.
+NominalHour SubClassOf BaseUnit,.
+NominalHour SubClassOf standardFor only.
+NominalHour SubClassOf (Measurement and (ofCharacteristic only Time)).
+NominalLeapYear is Class.
+NominalLeapYear SubClassOf BaseUnit,.
+NominalLeapYear SubClassOf standardFor only.
+NominalLeapYear SubClassOf (Measurement and (ofCharacteristic only Time)).
+NominalMinute is Class.
+NominalMinute SubClassOf BaseUnit,.
+NominalMinute SubClassOf standardFor only.
+NominalMinute SubClassOf (Measurement and (ofCharacteristic only Time)).
+NominalWeek is Class.
+NominalWeek SubClassOf BaseUnit,.
+NominalWeek SubClassOf standardFor only.
+NominalWeek SubClassOf (Measurement and (ofCharacteristic only Time)).
+NominalYear is Class.
+NominalYear SubClassOf BaseUnit,.
+NominalYear SubClassOf standardFor only.
+NominalYear SubClassOf (Measurement and (ofCharacteristic only Time)).
+Number is Class.
+Number SubClassOf BaseUnit,.
+Number SubClassOf standardFor only.
+Number SubClassOf (Measurement and (ofCharacteristic only Count)).
+NumberPerMeterSquared is Class.
+NumberPerMeterSquared SubClassOf CompositeUnit,.
+NumberPerMeterSquared SubClassOf hasUnit some Number,.
+NumberPerMeterSquared SubClassOf hasUnit some.
+NumberPerMeterSquared SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -2)),.
+NumberPerMeterSquared SubClassOf standardFor only.
+NumberPerMeterSquared SubClassOf (Measurement and (ofCharacteristic only ArealDensity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+PartPerThousand is Class.
+PartPerThousand SubClassOf BaseUnit,.
+PartPerThousand SubClassOf standardFor only.
+PartPerThousand SubClassOf (Measurement and (ofCharacteristic only Proportion)).
+Pascal is Class.
+Pascal SubClassOf CompositeUnit,.
+Pascal SubClassOf hasUnit some Kilogram,.
+Pascal SubClassOf hasUnit some.
+Pascal SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -1)),.
+Pascal SubClassOf hasUnit some.
+Pascal SubClassOf (DerivedUnit and (hasUnit only Second) and (hasPower value -2)),.
+Pascal SubClassOf standardFor only.
+Pascal SubClassOf (Measurement and (ofCharacteristic only Pressure)),.
+Thing is hasUnit exactly 3 www.w3.org/2002/07/#.
+Percent is Class.
+Percent SubClassOf BaseUnit,.
+Percent SubClassOf standardFor only.
+Percent SubClassOf (Measurement and (ofCharacteristic only Proportion)).
+Pint is Class.
+Pint SubClassOf DerivedUnit,.
+Pint SubClassOf hasUnit only.
+Pint SubClassOf (BaseUnit and (standardFor only.
+Pint SubClassOf (Measurement and (ofCharacteristic only Length)))),.
+Pint SubClassOf standardFor only.
+Pint SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+Pint SubClassOf hasPower value 3.
+Pound is Class.
+Pound SubClassOf BaseUnit,.
+Pound SubClassOf standardFor only.
+Pound SubClassOf (Measurement and (ofCharacteristic only Mass)).
+PracticalSalinityUnit is Class.
+PracticalSalinityUnit SubClassOf Index.
+Quart is Class.
+Quart SubClassOf DerivedUnit,.
+Quart SubClassOf hasUnit only.
+Quart SubClassOf (BaseUnit and (standardFor only.
+Quart SubClassOf (Measurement and (ofCharacteristic only Length)))),.
+Quart SubClassOf standardFor only.
+Quart SubClassOf (Measurement and (ofCharacteristic only Volume)),.
+Quart SubClassOf hasPower value 3.
+Radian is Class.
+Radian SubClassOf BaseUnit,.
+Radian SubClassOf standardFor only.
+Radian SubClassOf (Measurement and (ofCharacteristic only Angle)).
+ReciprocalMeter is Class.
+ReciprocalMeter SubClassOf DerivedUnit,.
+ReciprocalMeter SubClassOf hasUnit only Meter,.
+ReciprocalMeter SubClassOf standardFor only.
+ReciprocalMeter SubClassOf (Measurement and (ofCharacteristic only WaveNumber)),.
+ReciprocalMeter SubClassOf hasPower value -1.
+Second is Class.
+Second SubClassOf BaseUnit,.
+Second SubClassOf standardFor only.
+Second SubClassOf (Measurement and (ofCharacteristic only Time)).
+Siemens is Class.
+Siemens SubClassOf DerivedUnit,.
+Siemens SubClassOf standardFor only.
+Siemens SubClassOf (Measurement and (ofCharacteristic only Conductance)).
+SiemensPerMeter is Class.
+SiemensPerMeter SubClassOf CompositeUnit,.
+SiemensPerMeter SubClassOf hasUnit some Siemens,.
+SiemensPerMeter SubClassOf hasUnit some.
+SiemensPerMeter SubClassOf (DerivedUnit and (hasUnit only Meter) and (hasPower value -1)),.
+SiemensPerMeter SubClassOf standardFor only.
+SiemensPerMeter SubClassOf (Measurement and (ofCharacteristic only Conductivity)),.
+Thing is hasUnit exactly 2 www.w3.org/2002/07/#.
+Ton is Class.
+Ton SubClassOf BaseUnit,.
+Ton SubClassOf standardFor only.
+Ton SubClassOf (Measurement and (ofCharacteristic only Mass)).
+Tonne is Class.
+Tonne SubClassOf BaseUnit,.
+Tonne SubClassOf standardFor only.
+Tonne SubClassOf (Measurement and (ofCharacteristic only Mass)).
+Volt is Class.
+Volt SubClassOf CompositeUnit,.
+Volt SubClassOf standardFor only.
+Volt SubClassOf (Measurement and (ofCharacteristic only Force)).
+WattPerMeterSquared is Class.
+WattPerMeterSquared SubClassOf CompositeUnit,.
+WattPerMeterSquared SubClassOf standardFor only.
+WattPerMeterSquared SubClassOf (Measurement and (ofCharacteristic only Irradiance)).
+WattPerMeterSquaredPerSteradian is Class.
+WattPerMeterSquaredPerSteradian SubClassOf CompositeUnit,.
+WattPerMeterSquaredPerSteradian SubClassOf standardFor only.
+WattPerMeterSquaredPerSteradian SubClassOf (Measurement and (ofCharacteristic only Radiance)).
+Yard is Class.
+Yard SubClassOf BaseUnit,.
+Yard SubClassOf standardFor only.
+Yard SubClassOf (Measurement and (ofCharacteristic only Length)).
+YardIndian is Class.
+YardIndian SubClassOf BaseUnit,.
+YardIndian SubClassOf standardFor only.
+YardIndian SubClassOf (Measurement and (ofCharacteristic only Length)).
+YardIndianToMeter is Class.
+YardIndianToMeter SubClassOf UnitConversion,.
+YardIndianToMeter SubClassOf hasSourceUnit only YardIndian,.
+YardIndianToMeter SubClassOf hasTargetUnit only Meter,.
+YardIndianToMeter SubClassOf hasMultiplier value 0.914399,.
+YardIndianToMeter SubClassOf hasOffset value 0.
+YardSquared is Class.
+YardSquared SubClassOf DerivedUnit,.
+YardSquared SubClassOf hasUnit only Yard,.
+YardSquared SubClassOf standardFor only.
+YardSquared SubClassOf (Measurement and (ofCharacteristic only Area)),.
+YardSquared SubClassOf hasPower value 2.
+YardToMeter is Class.
+YardToMeter SubClassOf UnitConversion,.
+YardToMeter SubClassOf hasSourceUnit only Yard,.
+YardToMeter SubClassOf hasTargetUnit only Meter,.
+YardToMeter SubClassOf hasMultiplier value 0.914398,.
+YardToMeter SubClassOf hasOffset value 0.
+TimeGeometricPrimitive is Class.
+TimeInstant is Class.
+TimeInstant SubClassOf TimeGeometricPrimitive.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2002/07/# DisjointClasses BaseUnit,CompositeUnit,DerivedUnit.

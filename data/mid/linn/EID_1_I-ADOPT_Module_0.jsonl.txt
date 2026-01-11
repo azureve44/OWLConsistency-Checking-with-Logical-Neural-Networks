@@ -1,0 +1,46 @@
+predicate(constrains,is,ObjectProperty).
+predicate(constrains,Domain,Constraint).
+predicate(constrains,Range,Entity).
+predicate(hasApplicableContextObject,is,ObjectProperty).
+predicate(hasApplicableContextObject,Domain,VariableSet).
+predicate(hasApplicableContextObject,Range,Entity).
+predicate(hasApplicableMatrix,is,ObjectProperty).
+predicate(hasApplicableMatrix,SubPropertyOf,hasApplicableContextObject).
+predicate(hasApplicableMatrix,Domain,VariableSet).
+predicate(hasApplicableMatrix,Range,Entity).
+predicate(hasApplicableObjectOfInterest,is,ObjectProperty).
+predicate(hasApplicableObjectOfInterest,Domain,VariableSet).
+predicate(hasApplicableObjectOfInterest,Range,Entity).
+predicate(hasApplicableProperty,is,ObjectProperty).
+predicate(hasApplicableProperty,Domain,VariableSet).
+predicate(hasApplicableProperty,Range,Property).
+predicate(hasConstraint,is,ObjectProperty).
+predicate(hasConstraint,Domain,Variable).
+predicate(hasConstraint,Range,Constraint).
+predicate(hasContextObject,is,ObjectProperty).
+predicate(hasContextObject,Domain,Variable).
+predicate(hasContextObject,Range,Entity).
+predicate(hasMatrix,is,ObjectProperty).
+predicate(hasMatrix,SubPropertyOf,hasContextObject).
+predicate(hasMatrix,Domain,Variable).
+predicate(hasMatrix,Range,Entity).
+predicate(hasObjectOfInterest,is,ObjectProperty).
+predicate(hasObjectOfInterest,Domain,Variable).
+predicate(hasObjectOfInterest,Range,Entity).
+predicate(hasProperty,is,ObjectProperty).
+predicate(hasProperty,Domain,Variable).
+predicate(hasProperty,Range,Property).
+predicate(Constraint,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Entity,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Property,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Variable,is,Class).
+predicate(Variable,EquivalentTo,hasObjectOfInterest exactly 1 Entity,).
+predicate(Variable,EquivalentTo,hasProperty exactly 1 Property).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,hasObjectOfInterest exactly 1 Entity).
+predicate(VariableSet,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(www.w3.org/2002/07/#,is,Class).

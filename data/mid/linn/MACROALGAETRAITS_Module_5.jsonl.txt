@@ -1,0 +1,35 @@
+predicate(isAffectedBy,is,ObjectProperty).
+predicate(isAffectedBy,Domain,NonpharmacologicalIntervention).
+predicate(isAffectedBy,Range,FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation).
+predicate(isFacilitatedBy,is,ObjectProperty).
+predicate(isFacilitatedBy,SubPropertyOf,isAffectedBy).
+predicate(isFacilitatedBy,Domain,NonpharmacologicalIntervention).
+predicate(isFacilitatedBy,Range,FacilitatorToImplementNonpharmacologicalIntervention).
+predicate(isHinderedBy,is,ObjectProperty).
+predicate(isHinderedBy,SubPropertyOf,isAffectedBy).
+predicate(isHinderedBy,Domain,NonpharmacologicalIntervention).
+predicate(isHinderedBy,Range,BarrierToImplementNonpharmacologicalIntervention).
+predicate(reducesAgitationCausedBy,is,ObjectProperty).
+predicate(reducesAgitationCausedBy,Domain,NonpharmacologicalIntervention).
+predicate(reducesAgitationCausedBy,Range,AgitationCausativeFactor).
+predicate(AgitationCausativeFactor,is,Class).
+predicate(BarrierToImplementNonpharmacologicalIntervention,is,Class).
+predicate(FacilitatorToImplementNonpharmacologicalIntervention,is,Class).
+predicate(FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,is,Class).
+predicate(FamilyMemberFocusedIntervention,is,Class).
+predicate(FamilyMemberFocusedIntervention,SubClassOf,NonpharmacologicalIntervention).
+predicate(HealthCareProfessionalFocusedIntervention,is,Class).
+predicate(HealthCareProfessionalFocusedIntervention,SubClassOf,NonpharmacologicalIntervention).
+predicate(Intervention,is,Class).
+predicate(NonpharmacologicalIntervention,is,Class).
+predicate(NonpharmacologicalIntervention,SubClassOf,Intervention,).
+predicate(NonpharmacologicalIntervention,SubClassOf,isAffectedBy some FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,).
+predicate(NonpharmacologicalIntervention,SubClassOf,isFacilitatedBy some FacilitatorToImplementNonpharmacologicalIntervention,).
+predicate(NonpharmacologicalIntervention,SubClassOf,isHinderedBy some BarrierToImplementNonpharmacologicalIntervention,).
+predicate(NonpharmacologicalIntervention,SubClassOf,reducesAgitationCausedBy some AgitationCausativeFactor).
+predicate(NonpharmacologicalIntervention,DisjointWith,PharmacologicalIntervention).
+predicate(PersonWithDementiaFocusedIntervention,is,Class).
+predicate(PersonWithDementiaFocusedIntervention,SubClassOf,NonpharmacologicalIntervention).
+predicate(PharmacologicalIntervention,is,Class).
+predicate(PharmacologicalIntervention,DisjointWith,NonpharmacologicalIntervention).
+predicate(www.w3.org/2002/07/#,is,Class).

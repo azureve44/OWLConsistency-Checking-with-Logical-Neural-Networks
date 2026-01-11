@@ -1,0 +1,41 @@
+OBI_0000294 is ObjectProperty.
+IAO_0000015 is Class.
+IAO_0000015 EquivalentTo Quality and (OBI_0000294 some IAO_0000030).
+IAO_0000015 SubClassOf Quality.
+IAO_0000015 DisjointWith Quality and (OBI_0000294 some IAO_0000030).
+IAO_0000030 is Class.
+IAO_0000442 is Class.
+IAO_0000442 SubClassOf Role.
+Continuant is Class.
+DependentContinuant is Class.
+DependentContinuant EquivalentTo GenericallyDependentContinuant or SpecificallyDependentContinuant.
+DependentContinuant SubClassOf Continuant.
+DependentContinuant DisjointWith SpatialRegion.
+DependentContinuant DisjointWith IndependentContinuant.
+Disposition is Class.
+Disposition SubClassOf RealizableEntity.
+Disposition DisjointWith Role.
+Disposition DisjointWith Function.
+Function is Class.
+Function SubClassOf RealizableEntity.
+Function DisjointWith Role.
+Function DisjointWith Disposition.
+GenericallyDependentContinuant is Class.
+GenericallyDependentContinuant SubClassOf DependentContinuant.
+IndependentContinuant is Class.
+IndependentContinuant DisjointWith DependentContinuant.
+Quality is Class.
+Quality SubClassOf SpecificallyDependentContinuant.
+Quality DisjointWith RealizableEntity.
+RealizableEntity is Class.
+RealizableEntity SubClassOf SpecificallyDependentContinuant.
+RealizableEntity DisjointWith Quality.
+Role is Class.
+Role SubClassOf RealizableEntity.
+Role DisjointWith Function.
+Role DisjointWith Disposition.
+SpatialRegion is Class.
+SpatialRegion DisjointWith DependentContinuant.
+SpecificallyDependentContinuant is Class.
+SpecificallyDependentContinuant SubClassOf DependentContinuant.
+www.w3.org/2002/07/# is Class.

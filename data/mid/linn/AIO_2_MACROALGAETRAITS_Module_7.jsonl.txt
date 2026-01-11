@@ -1,0 +1,24 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(string,is,Datatype).
+predicate(reducesAgitationCausedBy,is,ObjectProperty).
+predicate(EnvironmentalCausativeFactor,is,Class).
+predicate(EnvironmentalCausativeFactor,DisjointWith,PersonWithDementiaFocusedIntervention).
+predicate(EnvironmentalIntervention,is,Class).
+predicate(EnvironmentalIntervention,SubClassOf,PersonWithDementiaFocusedIntervention,).
+predicate(EnvironmentalIntervention,SubClassOf,reducesAgitationCausedBy some EnvironmentalCausativeFactor,).
+predicate(EnvironmentalIntervention,SubClassOf,reducesAgitationCausedBy some).
+predicate(EnvironmentalIntervention,SubClassOf,(EnvironmentalCausativeFactor and PersonWithDementiaFocusedIntervention),).
+predicate(EnvironmentalIntervention,SubClassOf,reducesAgitationCausedBy only PersonWithDementiaFocusedIntervention).
+predicate(PersonWithDementiaFocusedIntervention,is,Class).
+predicate(PersonWithDementiaFocusedIntervention,DisjointWith,).
+predicate(PersonWithDementiaFocusedIntervention,DisjointWith,EnvironmentalCausativeFactor).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(PhysicalEnvironmentalIntervention,is,Class).
+predicate(PhysicalEnvironmentalIntervention,SubClassOf,EnvironmentalIntervention).
+predicate(SocialEnvironmentalIntervention,is,Class).
+predicate(SocialEnvironmentalIntervention,SubClassOf,EnvironmentalIntervention).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(reducesAgitationCausedBy some EnvironmentalCausativeFactor,is,Class).
+predicate(reducesAgitationCausedBy some EnvironmentalCausativeFactor,SubClassOf,SocialEnvironmentalIntervention).

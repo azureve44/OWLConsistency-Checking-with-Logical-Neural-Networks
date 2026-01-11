@@ -1,0 +1,3235 @@
+is(float,Datatype):1.0
+is(constitutes-during,ObjectProperty):1.0
+is(has-for-constituent-during,ObjectProperty):1.0
+is(has-for-part-during,ObjectProperty):1.0
+is(has-for-quality,ObjectProperty):1.0
+is(is-a-part-of-during,ObjectProperty):1.0
+is(applies-to-subjects-older-than,ObjectProperty):1.0
+Domain(applies-to-subjects-older-than,age-dependent-variable):1.0
+is(applies-to-subjects-younger-than,ObjectProperty):1.0
+Domain(applies-to-subjects-younger-than,age-dependent-variable):1.0
+is(explores,ObjectProperty):1.0
+is(has-for-scale,ObjectProperty):1.0
+Domain(has-for-scale,coded-variable):1.0
+Range(has-for-scale,scale):1.0
+InverseOf(has-for-scale,is-the-scale-of):1.0
+is(has-for-sub-instrument,ObjectProperty):1.0
+is(has-for-variable,ObjectProperty):1.0
+is(is-a-sub-instrument-of,ObjectProperty):1.0
+is(is-a-variable-of,ObjectProperty):1.0
+is(is-the-scale-of,ObjectProperty):1.0
+InverseOf(is-the-scale-of,has-for-scale):1.0
+is(measures,ObjectProperty):1.0
+is(allows-to-carry-out,ObjectProperty):1.0
+Domain(allows-to-carry-out,functional-entity):1.0
+Range(allows-to-carry-out,action):1.0
+is(defines,ObjectProperty):1.0
+Domain(defines,definition):1.0
+InverseOf(defines,is-defined-by):1.0
+is(describes,ObjectProperty):1.0
+Domain(describes,description):1.0
+InverseOf(describes,is-described-by):1.0
+is(has-for-author,ObjectProperty):1.0
+is(has-for-function,ObjectProperty):1.0
+Domain(has-for-function,functional-entity):1.0
+Range(has-for-function,function):1.0
+is(has-for-model-acronym,ObjectProperty):1.0
+is(has-for-model-name,ObjectProperty):1.0
+is(has-for-proper-function,ObjectProperty):1.0
+SubPropertyOf(has-for-proper-function,has-for-function):1.0
+is(has-for-subject-at,ObjectProperty):1.0
+SubPropertyOf(has-for-subject-at,uses-at):1.0
+Domain(has-for-subject-at,proposition):1.0
+Range(has-for-subject-at,concept):1.0
+InverseOf(has-for-subject-at,is-subject-of-at):1.0
+is(is-defined-by,ObjectProperty):1.0
+InverseOf(is-defined-by,defines):1.0
+is(is-described-by,ObjectProperty):1.0
+InverseOf(is-described-by,describes):1.0
+is(is-expressed-by-at,ObjectProperty):1.0
+is(is-subject-of-at,ObjectProperty):1.0
+InverseOf(is-subject-of-at,has-for-subject-at):1.0
+is(models-at,ObjectProperty):1.0
+Domain(models-at,model):1.0
+Range(models-at,particular):1.0
+is(refers-to,ObjectProperty):1.0
+is(renders-account-of,ObjectProperty):1.0
+Domain(renders-account-of,report):1.0
+is(uses-at,ObjectProperty):1.0
+Domain(uses-at,proposition):1.0
+Range(uses-at,concept):1.0
+is(refers-to-number,DataProperty):1.0
+Domain(refers-to-number,proposition):1.0
+Range(refers-to-number,float):1.0
+is(abstract-quality,Class):1.0
+is(arbitrary-sum,Class):1.0
+is(endurant,Class):1.0
+is(non-physical-endurant,Class):1.0
+SubClassOf(non-physical-endurant,endurant,):1.0
+SubClassOf(non-physical-endurant,constitutes-during only non-physical-endurant,):1.0
+SubClassOf(non-physical-endurant,has-for-constituent-during only non-physical-endurant,):1.0
+SubClassOf(non-physical-endurant,has-for-part-during only non-physical-endurant,):1.0
+SubClassOf(non-physical-endurant,has-for-quality only abstract-quality,):1.0
+SubClassOf(non-physical-endurant,is-a-part-of-during only non-physical-endurant):1.0
+is(non-physical-object,Class):1.0
+SubClassOf(non-physical-object,non-physical-endurant):1.0
+is(particular,Class):1.0
+is(physical-endurant,Class):1.0
+is(age-dependent-variable,Class):1.0
+SubClassOf(age-dependent-variable,instrument-variable):1.0
+is(assessment-instrument,Class):1.0
+SubClassOf(assessment-instrument,proposition):1.0
+is(behavioural-instrument,Class):1.0
+SubClassOf(behavioural-instrument,assessment-instrument):1.0
+DisjointWith(behavioural-instrument,psychological-instrument):1.0
+DisjointWith(behavioural-instrument,neuroclinical-instrument):1.0
+is(coded-variable,Class):1.0
+SubClassOf(coded-variable,instrument-variable,):1.0
+SubClassOf(coded-variable,has-for-scale exactly 1 scale):1.0
+DisjointWith(coded-variable,numerical-variable):1.0
+is(composite-instrument,Class):1.0
+EquivalentTo(composite-instrument,has-for-sub-instrument min 1 assessment-instrument):1.0
+SubClassOf(composite-instrument,assessment-instrument):1.0
+is(cultural-skill-dependent-variable,Class):1.0
+SubClassOf(cultural-skill-dependent-variable,instrument-variable):1.0
+is(domain,Class):1.0
+is(experimental-psychology-instrument,Class):1.0
+SubClassOf(experimental-psychology-instrument,psychological-instrument):1.0
+is(instrument-variable,Class):1.0
+SubClassOf(instrument-variable,proposition):1.0
+is(main-variable,Class):1.0
+DisjointWith(main-variable,secondary-variable):1.0
+is(mono-domain-instrument,Class):1.0
+SubClassOf(mono-domain-instrument,assessment-instrument,):1.0
+SubClassOf(mono-domain-instrument,explores exactly 1 domain):1.0
+DisjointWith(mono-domain-instrument,multi-domains-instrument):1.0
+is(multi-domains-instrument,Class):1.0
+SubClassOf(multi-domains-instrument,assessment-instrument):1.0
+DisjointWith(multi-domains-instrument,mono-domain-instrument):1.0
+is(neuroclinical-instrument,Class):1.0
+SubClassOf(neuroclinical-instrument,assessment-instrument):1.0
+DisjointWith(neuroclinical-instrument,psychological-instrument):1.0
+DisjointWith(neuroclinical-instrument,behavioural-instrument):1.0
+is(neuropsychological-instrument,Class):1.0
+SubClassOf(neuropsychological-instrument,psychological-instrument):1.0
+is(numerical-variable,Class):1.0
+DisjointWith(numerical-variable,coded-variable):1.0
+is(psychological-instrument,Class):1.0
+SubClassOf(psychological-instrument,assessment-instrument):1.0
+DisjointWith(psychological-instrument,neuroclinical-instrument):1.0
+DisjointWith(psychological-instrument,behavioural-instrument):1.0
+is(psychophysical-instrument,Class):1.0
+SubClassOf(psychophysical-instrument,experimental-psychology-instrument):1.0
+is(questionnaire,Class):1.0
+SubClassOf(questionnaire,assessment-instrument):1.0
+DisjointWith(questionnaire,test-instrument):1.0
+is(scale,Class):1.0
+is(secondary-variable,Class):1.0
+SubClassOf(secondary-variable,instrument-variable):1.0
+DisjointWith(secondary-variable,main-variable):1.0
+is(sex-dependent-variable,Class):1.0
+SubClassOf(sex-dependent-variable,instrument-variable):1.0
+is(sub-instrument,Class):1.0
+is(test-instrument,Class):1.0
+SubClassOf(test-instrument,assessment-instrument):1.0
+DisjointWith(test-instrument,questionnaire):1.0
+is(action,Class):1.0
+is(announcement,Class):1.0
+SubClassOf(announcement,information,):1.0
+SubClassOf(announcement,allows-to-carry-out some announcing):1.0
+is(announcing,Class):1.0
+is(asking,Class):1.0
+is(authorization,Class):1.0
+SubClassOf(authorization,message,):1.0
+SubClassOf(authorization,allows-to-carry-out some authorizing):1.0
+is(authorizing,Class):1.0
+is(communicational-object,Class):1.0
+SubClassOf(communicational-object,functional-entity):1.0
+is(complaining,Class):1.0
+is(complaint,Class):1.0
+SubClassOf(complaint,information,):1.0
+SubClassOf(complaint,allows-to-carry-out some complaining):1.0
+is(concept,Class):1.0
+DisjointWith(concept,proposition):1.0
+is(conceptualization,Class):1.0
+is(defining,Class):1.0
+is(definition,Class):1.0
+SubClassOf(definition,message,):1.0
+SubClassOf(definition,allows-to-carry-out some defining,):1.0
+SubClassOf(definition,defines some particular):1.0
+is(demand,Class):1.0
+SubClassOf(demand,message,):1.0
+SubClassOf(demand,allows-to-carry-out some asking):1.0
+is(describing,Class):1.0
+is(description,Class):1.0
+SubClassOf(description,message,):1.0
+SubClassOf(description,allows-to-carry-out some describing):1.0
+is(discourse,Class):1.0
+is(discourse-act,Class):1.0
+is(exacting,Class):1.0
+is(exactingness,Class):1.0
+SubClassOf(exactingness,demand,):1.0
+SubClassOf(exactingness,allows-to-carry-out some exacting):1.0
+is(function,Class):1.0
+is(functional-copied-entity,Class):1.0
+SubClassOf(functional-copied-entity,functional-entity):1.0
+is(functional-entity,Class):1.0
+SubClassOf(functional-entity,particular,):1.0
+SubClassOf(functional-entity,has-for-function some function):1.0
+is(information,Class):1.0
+SubClassOf(information,message,):1.0
+SubClassOf(information,allows-to-carry-out some informing):1.0
+is(informing,Class):1.0
+is(message,Class):1.0
+SubClassOf(message,proposition,):1.0
+SubClassOf(message,allows-to-carry-out some discourse-act,):1.0
+SubClassOf(message,is-expressed-by-at some discourse):1.0
+is(model,Class):1.0
+SubClassOf(model,proposition,):1.0
+SubClassOf(model,models-at some particular):1.0
+is(order,Class):1.0
+SubClassOf(order,demand,):1.0
+SubClassOf(order,allows-to-carry-out some ordering):1.0
+is(ordering,Class):1.0
+is(proposition,Class):1.0
+SubClassOf(proposition,conceptualization):1.0
+DisjointWith(proposition,concept):1.0
+is(protocol,Class):1.0
+SubClassOf(protocol,model):1.0
+is(rendering-account-of,Class):1.0
+is(report,Class):1.0
+SubClassOf(report,information,):1.0
+SubClassOf(report,allows-to-carry-out some rendering-account-of):1.0
+is(representational-object,Class):1.0
+SubClassOf(representational-object,functional-entity):1.0
+is(request,Class):1.0
+SubClassOf(request,demand,):1.0
+SubClassOf(request,allows-to-carry-out some requesting):1.0
+is(requesting,Class):1.0
+is(technical-artefact,Class):1.0
+SubClassOf(technical-artefact,functional-entity):1.0
+is(technical-report,Class):1.0
+SubClassOf(technical-report,report):1.0
+is(BDI-II,Class):1.0
+SubClassOf(BDI-II,behavioural-instrument,):1.0
+SubClassOf(BDI-II,mono-domain-instrument,):1.0
+SubClassOf(BDI-II,questionnaire,):1.0
+SubClassOf(BDI-II,explores some depression,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-1,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-10,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-11,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-12,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-13,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-14,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-15,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-16,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-17,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-18,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-19,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-2,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-20,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-21,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-3,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-4,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-5,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-6,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-7,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-8,):1.0
+SubClassOf(BDI-II,has-for-sub-instrument some BDI-II-9,):1.0
+SubClassOf(BDI-II,has-for-model-acronym value instr-acronym-BDI-II,):1.0
+SubClassOf(BDI-II,has-for-model-name value instr-name-BDI-II,):1.0
+SubClassOf(BDI-II,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II,has-for-variable exactly 1 BDI-IIv1,):1.0
+SubClassOf(BDI-II,has-for-variable exactly 1 BDI-IIv2,):1.0
+SubClassOf(BDI-II,has-for-variable exactly 1 BDI-IIv3):1.0
+is(BDI-II-1,Class):1.0
+SubClassOf(BDI-II-1,behavioural-instrument,):1.0
+SubClassOf(BDI-II-1,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-1,questionnaire,):1.0
+SubClassOf(BDI-II-1,sub-instrument,):1.0
+SubClassOf(BDI-II-1,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-1,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-1,has-for-model-acronym value instr-acronym-BDI-II-1,):1.0
+SubClassOf(BDI-II-1,has-for-model-name value instr-name-BDI-II-1,):1.0
+SubClassOf(BDI-II-1,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-1,has-for-variable exactly 1 BDI-II-1v1):1.0
+is(BDI-II-10,Class):1.0
+SubClassOf(BDI-II-10,behavioural-instrument,):1.0
+SubClassOf(BDI-II-10,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-10,questionnaire,):1.0
+SubClassOf(BDI-II-10,sub-instrument,):1.0
+SubClassOf(BDI-II-10,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-10,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-10,has-for-model-acronym value instr-acronym-BDI-II-10,):1.0
+SubClassOf(BDI-II-10,has-for-model-name value instr-name-BDI-II-10,):1.0
+SubClassOf(BDI-II-10,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-10,has-for-variable exactly 1 BDI-II-10v1):1.0
+is(BDI-II-10v1,Class):1.0
+SubClassOf(BDI-II-10v1,coded-variable,):1.0
+SubClassOf(BDI-II-10v1,main-variable,):1.0
+SubClassOf(BDI-II-10v1,is-a-variable-of some BDI-II-10,):1.0
+SubClassOf(BDI-II-10v1,is-a-variable-of only BDI-II-10,):1.0
+SubClassOf(BDI-II-10v1,has-for-model-acronym value var-acronym-BDI-II-10v1,):1.0
+SubClassOf(BDI-II-10v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-10v1,measures exactly 1 intensity-of-crying):1.0
+is(BDI-II-11,Class):1.0
+SubClassOf(BDI-II-11,behavioural-instrument,):1.0
+SubClassOf(BDI-II-11,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-11,questionnaire,):1.0
+SubClassOf(BDI-II-11,sub-instrument,):1.0
+SubClassOf(BDI-II-11,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-11,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-11,has-for-model-acronym value instr-acronym-BDI-II-11,):1.0
+SubClassOf(BDI-II-11,has-for-model-name value instr-name-BDI-II-11,):1.0
+SubClassOf(BDI-II-11,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-11,has-for-variable exactly 1 BDI-II-11v1):1.0
+is(BDI-II-11v1,Class):1.0
+SubClassOf(BDI-II-11v1,coded-variable,):1.0
+SubClassOf(BDI-II-11v1,main-variable,):1.0
+SubClassOf(BDI-II-11v1,is-a-variable-of some BDI-II-11,):1.0
+SubClassOf(BDI-II-11v1,is-a-variable-of only BDI-II-11,):1.0
+SubClassOf(BDI-II-11v1,has-for-model-acronym value var-acronym-BDI-II-11v1,):1.0
+SubClassOf(BDI-II-11v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-11v1,measures exactly 1 intensity-of-agitation):1.0
+is(BDI-II-12,Class):1.0
+SubClassOf(BDI-II-12,behavioural-instrument,):1.0
+SubClassOf(BDI-II-12,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-12,questionnaire,):1.0
+SubClassOf(BDI-II-12,sub-instrument,):1.0
+SubClassOf(BDI-II-12,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-12,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-12,has-for-model-acronym value instr-acronym-BDI-II-12,):1.0
+SubClassOf(BDI-II-12,has-for-model-name value instr-name-BDI-II-12,):1.0
+SubClassOf(BDI-II-12,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-12,has-for-variable exactly 1 BDI-II-12v1):1.0
+is(BDI-II-12v1,Class):1.0
+SubClassOf(BDI-II-12v1,coded-variable,):1.0
+SubClassOf(BDI-II-12v1,main-variable,):1.0
+SubClassOf(BDI-II-12v1,is-a-variable-of some BDI-II-12,):1.0
+SubClassOf(BDI-II-12v1,is-a-variable-of only BDI-II-12,):1.0
+SubClassOf(BDI-II-12v1,has-for-model-acronym value var-acronym-BDI-II-12v1,):1.0
+SubClassOf(BDI-II-12v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-12v1,measures exactly 1 intensity-of-loss-of-interest):1.0
+is(BDI-II-13,Class):1.0
+SubClassOf(BDI-II-13,behavioural-instrument,):1.0
+SubClassOf(BDI-II-13,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-13,questionnaire,):1.0
+SubClassOf(BDI-II-13,sub-instrument,):1.0
+SubClassOf(BDI-II-13,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-13,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-13,has-for-model-acronym value instr-acronym-BDI-II-13,):1.0
+SubClassOf(BDI-II-13,has-for-model-name value instr-name-BDI-II-13,):1.0
+SubClassOf(BDI-II-13,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-13,has-for-variable exactly 1 BDI-II-13v1):1.0
+is(BDI-II-13v1,Class):1.0
+SubClassOf(BDI-II-13v1,coded-variable,):1.0
+SubClassOf(BDI-II-13v1,main-variable,):1.0
+SubClassOf(BDI-II-13v1,is-a-variable-of some BDI-II-13,):1.0
+SubClassOf(BDI-II-13v1,is-a-variable-of only BDI-II-13,):1.0
+SubClassOf(BDI-II-13v1,has-for-model-acronym value var-acronym-BDI-II-13v1,):1.0
+SubClassOf(BDI-II-13v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-13v1,measures exactly 1 intensity-of-indecisiveness):1.0
+is(BDI-II-14,Class):1.0
+SubClassOf(BDI-II-14,behavioural-instrument,):1.0
+SubClassOf(BDI-II-14,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-14,questionnaire,):1.0
+SubClassOf(BDI-II-14,sub-instrument,):1.0
+SubClassOf(BDI-II-14,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-14,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-14,has-for-model-acronym value instr-acronym-BDI-II-14,):1.0
+SubClassOf(BDI-II-14,has-for-model-name value instr-name-BDI-II-14,):1.0
+SubClassOf(BDI-II-14,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-14,has-for-variable exactly 1 BDI-II-14v1):1.0
+is(BDI-II-14v1,Class):1.0
+SubClassOf(BDI-II-14v1,coded-variable,):1.0
+SubClassOf(BDI-II-14v1,main-variable,):1.0
+SubClassOf(BDI-II-14v1,is-a-variable-of some BDI-II-14,):1.0
+SubClassOf(BDI-II-14v1,is-a-variable-of only BDI-II-14,):1.0
+SubClassOf(BDI-II-14v1,has-for-model-acronym value var-acronym-BDI-II-14v1,):1.0
+SubClassOf(BDI-II-14v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-14v1,measures exactly 1 intensity-of-worthlessness):1.0
+is(BDI-II-15,Class):1.0
+SubClassOf(BDI-II-15,behavioural-instrument,):1.0
+SubClassOf(BDI-II-15,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-15,questionnaire,):1.0
+SubClassOf(BDI-II-15,sub-instrument,):1.0
+SubClassOf(BDI-II-15,explores some somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-15,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-15,has-for-model-acronym value instr-acronym-BDI-II-15,):1.0
+SubClassOf(BDI-II-15,has-for-model-name value instr-name-BDI-II-15,):1.0
+SubClassOf(BDI-II-15,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-15,has-for-variable exactly 1 BDI-II-15v1):1.0
+is(BDI-II-15v1,Class):1.0
+SubClassOf(BDI-II-15v1,coded-variable,):1.0
+SubClassOf(BDI-II-15v1,main-variable,):1.0
+SubClassOf(BDI-II-15v1,is-a-variable-of some BDI-II-15,):1.0
+SubClassOf(BDI-II-15v1,is-a-variable-of only BDI-II-15,):1.0
+SubClassOf(BDI-II-15v1,has-for-model-acronym value var-acronym-BDI-II-15v1,):1.0
+SubClassOf(BDI-II-15v1,explores exactly 1 somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-15v1,measures exactly 1 intensity-of-loss-of-energy):1.0
+is(BDI-II-16,Class):1.0
+SubClassOf(BDI-II-16,behavioural-instrument,):1.0
+SubClassOf(BDI-II-16,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-16,questionnaire,):1.0
+SubClassOf(BDI-II-16,sub-instrument,):1.0
+SubClassOf(BDI-II-16,explores some somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-16,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-16,has-for-model-acronym value instr-acronym-BDI-II-16,):1.0
+SubClassOf(BDI-II-16,has-for-model-name value instr-name-BDI-II-16,):1.0
+SubClassOf(BDI-II-16,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-16,has-for-variable exactly 1 BDI-II-16v1):1.0
+is(BDI-II-16v1,Class):1.0
+SubClassOf(BDI-II-16v1,coded-variable,):1.0
+SubClassOf(BDI-II-16v1,main-variable,):1.0
+SubClassOf(BDI-II-16v1,is-a-variable-of some BDI-II-16,):1.0
+SubClassOf(BDI-II-16v1,is-a-variable-of only BDI-II-16,):1.0
+SubClassOf(BDI-II-16v1,has-for-model-acronym value var-acronym-BDI-II-16v1,):1.0
+SubClassOf(BDI-II-16v1,explores exactly 1 somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-16v1,measures exactly 1 intensity-of-change-in-sleeping-pattern):1.0
+is(BDI-II-17,Class):1.0
+SubClassOf(BDI-II-17,behavioural-instrument,):1.0
+SubClassOf(BDI-II-17,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-17,questionnaire,):1.0
+SubClassOf(BDI-II-17,sub-instrument,):1.0
+SubClassOf(BDI-II-17,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-17,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-17,has-for-model-acronym value instr-acronym-BDI-II-17,):1.0
+SubClassOf(BDI-II-17,has-for-model-name value instr-name-BDI-II-17,):1.0
+SubClassOf(BDI-II-17,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-17,has-for-variable exactly 1 BDI-II-17v1):1.0
+is(BDI-II-17v1,Class):1.0
+SubClassOf(BDI-II-17v1,coded-variable,):1.0
+SubClassOf(BDI-II-17v1,main-variable,):1.0
+SubClassOf(BDI-II-17v1,is-a-variable-of some BDI-II-17,):1.0
+SubClassOf(BDI-II-17v1,is-a-variable-of only BDI-II-17,):1.0
+SubClassOf(BDI-II-17v1,has-for-model-acronym value var-acronym-BDI-II-17v1,):1.0
+SubClassOf(BDI-II-17v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-17v1,measures exactly 1 intensity-of-irritability):1.0
+is(BDI-II-18,Class):1.0
+SubClassOf(BDI-II-18,behavioural-instrument,):1.0
+SubClassOf(BDI-II-18,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-18,questionnaire,):1.0
+SubClassOf(BDI-II-18,sub-instrument,):1.0
+SubClassOf(BDI-II-18,explores some somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-18,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-18,has-for-model-acronym value instr-acronym-BDI-II-18,):1.0
+SubClassOf(BDI-II-18,has-for-model-name value instr-name-BDI-II-18,):1.0
+SubClassOf(BDI-II-18,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-18,has-for-variable exactly 1 BDI-II-18v1):1.0
+is(BDI-II-18v1,Class):1.0
+SubClassOf(BDI-II-18v1,coded-variable,):1.0
+SubClassOf(BDI-II-18v1,main-variable,):1.0
+SubClassOf(BDI-II-18v1,is-a-variable-of some BDI-II-18,):1.0
+SubClassOf(BDI-II-18v1,is-a-variable-of only BDI-II-18,):1.0
+SubClassOf(BDI-II-18v1,has-for-model-acronym value var-acronym-BDI-II-18v1,):1.0
+SubClassOf(BDI-II-18v1,explores exactly 1 somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-18v1,measures exactly 1 intensity-of-change-in-appetite):1.0
+is(BDI-II-19,Class):1.0
+SubClassOf(BDI-II-19,behavioural-instrument,):1.0
+SubClassOf(BDI-II-19,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-19,questionnaire,):1.0
+SubClassOf(BDI-II-19,sub-instrument,):1.0
+SubClassOf(BDI-II-19,explores some somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-19,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-19,has-for-model-acronym value instr-acronym-BDI-II-19,):1.0
+SubClassOf(BDI-II-19,has-for-model-name value instr-name-BDI-II-19,):1.0
+SubClassOf(BDI-II-19,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-19,has-for-variable exactly 1 BDI-II-19v1):1.0
+is(BDI-II-19v1,Class):1.0
+SubClassOf(BDI-II-19v1,coded-variable,):1.0
+SubClassOf(BDI-II-19v1,main-variable,):1.0
+SubClassOf(BDI-II-19v1,is-a-variable-of some BDI-II-19,):1.0
+SubClassOf(BDI-II-19v1,is-a-variable-of only BDI-II-19,):1.0
+SubClassOf(BDI-II-19v1,has-for-model-acronym value var-acronym-BDI-II-19v1,):1.0
+SubClassOf(BDI-II-19v1,explores exactly 1 somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-19v1,measures exactly 1 intensity-of-concentration-difficulty):1.0
+is(BDI-II-1v1,Class):1.0
+SubClassOf(BDI-II-1v1,coded-variable,):1.0
+SubClassOf(BDI-II-1v1,main-variable,):1.0
+SubClassOf(BDI-II-1v1,is-a-variable-of some BDI-II-1,):1.0
+SubClassOf(BDI-II-1v1,is-a-variable-of only BDI-II-1,):1.0
+SubClassOf(BDI-II-1v1,has-for-model-acronym value var-acronym-BDI-II-1v1,):1.0
+SubClassOf(BDI-II-1v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-1v1,measures exactly 1 intensity-of-sadness):1.0
+is(BDI-II-2,Class):1.0
+SubClassOf(BDI-II-2,behavioural-instrument,):1.0
+SubClassOf(BDI-II-2,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-2,questionnaire,):1.0
+SubClassOf(BDI-II-2,sub-instrument,):1.0
+SubClassOf(BDI-II-2,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-2,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-2,has-for-model-acronym value instr-acronym-BDI-II-2,):1.0
+SubClassOf(BDI-II-2,has-for-model-name value instr-name-BDI-II-2,):1.0
+SubClassOf(BDI-II-2,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-2,has-for-variable exactly 1 BDI-II-2v1):1.0
+is(BDI-II-20,Class):1.0
+SubClassOf(BDI-II-20,behavioural-instrument,):1.0
+SubClassOf(BDI-II-20,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-20,questionnaire,):1.0
+SubClassOf(BDI-II-20,sub-instrument,):1.0
+SubClassOf(BDI-II-20,explores some somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-20,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-20,has-for-model-acronym value instr-acronym-BDI-II-20,):1.0
+SubClassOf(BDI-II-20,has-for-model-name value instr-name-BDI-II-20,):1.0
+SubClassOf(BDI-II-20,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-20,has-for-variable exactly 1 BDI-II-20v1):1.0
+is(BDI-II-20v1,Class):1.0
+SubClassOf(BDI-II-20v1,coded-variable,):1.0
+SubClassOf(BDI-II-20v1,main-variable,):1.0
+SubClassOf(BDI-II-20v1,is-a-variable-of some BDI-II-20,):1.0
+SubClassOf(BDI-II-20v1,is-a-variable-of only BDI-II-20,):1.0
+SubClassOf(BDI-II-20v1,has-for-model-acronym value var-acronym-BDI-II-20v1,):1.0
+SubClassOf(BDI-II-20v1,explores exactly 1 somatic-factor-of-depression,):1.0
+SubClassOf(BDI-II-20v1,measures exactly 1 intensity-of-tiredness-or-fatigue):1.0
+is(BDI-II-21,Class):1.0
+SubClassOf(BDI-II-21,behavioural-instrument,):1.0
+SubClassOf(BDI-II-21,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-21,questionnaire,):1.0
+SubClassOf(BDI-II-21,sub-instrument,):1.0
+SubClassOf(BDI-II-21,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-21,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-21,has-for-model-acronym value instr-acronym-BDI-II-21,):1.0
+SubClassOf(BDI-II-21,has-for-model-name value instr-name-BDI-II-21,):1.0
+SubClassOf(BDI-II-21,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-21,has-for-variable exactly 1 BDI-II-21v1):1.0
+is(BDI-II-21v1,Class):1.0
+SubClassOf(BDI-II-21v1,coded-variable,):1.0
+SubClassOf(BDI-II-21v1,main-variable,):1.0
+SubClassOf(BDI-II-21v1,is-a-variable-of some BDI-II-21,):1.0
+SubClassOf(BDI-II-21v1,is-a-variable-of only BDI-II-21,):1.0
+SubClassOf(BDI-II-21v1,has-for-model-acronym value var-acronym-BDI-II-21v1,):1.0
+SubClassOf(BDI-II-21v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-21v1,measures exactly 1 intensity-of-loss-of-interest-in-sex):1.0
+is(BDI-II-2v1,Class):1.0
+SubClassOf(BDI-II-2v1,coded-variable,):1.0
+SubClassOf(BDI-II-2v1,main-variable,):1.0
+SubClassOf(BDI-II-2v1,is-a-variable-of some BDI-II-2,):1.0
+SubClassOf(BDI-II-2v1,is-a-variable-of only BDI-II-2,):1.0
+SubClassOf(BDI-II-2v1,has-for-model-acronym value var-acronym-BDI-II-2v1,):1.0
+SubClassOf(BDI-II-2v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-2v1,measures exactly 1 intensity-of-pessimism):1.0
+is(BDI-II-3,Class):1.0
+SubClassOf(BDI-II-3,behavioural-instrument,):1.0
+SubClassOf(BDI-II-3,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-3,questionnaire,):1.0
+SubClassOf(BDI-II-3,sub-instrument,):1.0
+SubClassOf(BDI-II-3,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-3,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-3,has-for-model-acronym value instr-acronym-BDI-II-3,):1.0
+SubClassOf(BDI-II-3,has-for-model-name value instr-name-BDI-II-3,):1.0
+SubClassOf(BDI-II-3,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-3,has-for-variable exactly 1 BDI-II-3v1):1.0
+is(BDI-II-3v1,Class):1.0
+SubClassOf(BDI-II-3v1,coded-variable,):1.0
+SubClassOf(BDI-II-3v1,main-variable,):1.0
+SubClassOf(BDI-II-3v1,is-a-variable-of some BDI-II-3,):1.0
+SubClassOf(BDI-II-3v1,is-a-variable-of only BDI-II-3,):1.0
+SubClassOf(BDI-II-3v1,has-for-model-acronym value var-acronym-BDI-II-3v1,):1.0
+SubClassOf(BDI-II-3v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-3v1,measures exactly 1 intensity-of-past-failure):1.0
+is(BDI-II-4,Class):1.0
+SubClassOf(BDI-II-4,behavioural-instrument,):1.0
+SubClassOf(BDI-II-4,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-4,questionnaire,):1.0
+SubClassOf(BDI-II-4,sub-instrument,):1.0
+SubClassOf(BDI-II-4,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-4,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-4,has-for-model-acronym value instr-acronym-BDI-II-4,):1.0
+SubClassOf(BDI-II-4,has-for-model-name value instr-name-BDI-II-4,):1.0
+SubClassOf(BDI-II-4,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-4,has-for-variable exactly 1 BDI-II-4v1):1.0
+is(BDI-II-4v1,Class):1.0
+SubClassOf(BDI-II-4v1,coded-variable,):1.0
+SubClassOf(BDI-II-4v1,main-variable,):1.0
+SubClassOf(BDI-II-4v1,is-a-variable-of some BDI-II-4,):1.0
+SubClassOf(BDI-II-4v1,is-a-variable-of only BDI-II-4,):1.0
+SubClassOf(BDI-II-4v1,has-for-model-acronym value var-acronym-BDI-II-4v1,):1.0
+SubClassOf(BDI-II-4v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-4v1,measures exactly 1 intensity-of-loss-of-pleasure):1.0
+is(BDI-II-5,Class):1.0
+SubClassOf(BDI-II-5,behavioural-instrument,):1.0
+SubClassOf(BDI-II-5,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-5,questionnaire,):1.0
+SubClassOf(BDI-II-5,sub-instrument,):1.0
+SubClassOf(BDI-II-5,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-5,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-5,has-for-model-acronym value instr-acronym-BDI-II-5,):1.0
+SubClassOf(BDI-II-5,has-for-model-name value instr-name-BDI-II-5,):1.0
+SubClassOf(BDI-II-5,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-5,has-for-variable exactly 1 BDI-II-5v1):1.0
+is(BDI-II-5v1,Class):1.0
+SubClassOf(BDI-II-5v1,coded-variable,):1.0
+SubClassOf(BDI-II-5v1,main-variable,):1.0
+SubClassOf(BDI-II-5v1,is-a-variable-of some BDI-II-5,):1.0
+SubClassOf(BDI-II-5v1,is-a-variable-of only BDI-II-5,):1.0
+SubClassOf(BDI-II-5v1,has-for-model-acronym value var-acronym-BDI-II-5v1,):1.0
+SubClassOf(BDI-II-5v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-5v1,measures exactly 1 intensity-of-guilty-feelings):1.0
+is(BDI-II-6,Class):1.0
+SubClassOf(BDI-II-6,behavioural-instrument,):1.0
+SubClassOf(BDI-II-6,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-6,questionnaire,):1.0
+SubClassOf(BDI-II-6,sub-instrument,):1.0
+SubClassOf(BDI-II-6,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-6,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-6,has-for-model-acronym value instr-acronym-BDI-II-6,):1.0
+SubClassOf(BDI-II-6,has-for-model-name value instr-name-BDI-II-6,):1.0
+SubClassOf(BDI-II-6,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-6,has-for-variable exactly 1 BDI-II-6v1):1.0
+is(BDI-II-6v1,Class):1.0
+SubClassOf(BDI-II-6v1,coded-variable,):1.0
+SubClassOf(BDI-II-6v1,main-variable,):1.0
+SubClassOf(BDI-II-6v1,is-a-variable-of some BDI-II-6,):1.0
+SubClassOf(BDI-II-6v1,is-a-variable-of only BDI-II-6,):1.0
+SubClassOf(BDI-II-6v1,has-for-model-acronym value var-acronym-BDI-II-6v1,):1.0
+SubClassOf(BDI-II-6v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-6v1,measures exactly 1 intensity-of-punishment-feelings):1.0
+is(BDI-II-7,Class):1.0
+SubClassOf(BDI-II-7,behavioural-instrument,):1.0
+SubClassOf(BDI-II-7,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-7,questionnaire,):1.0
+SubClassOf(BDI-II-7,sub-instrument,):1.0
+SubClassOf(BDI-II-7,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-7,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-7,has-for-model-acronym value instr-acronym-BDI-II-7,):1.0
+SubClassOf(BDI-II-7,has-for-model-name value instr-name-BDI-II-7,):1.0
+SubClassOf(BDI-II-7,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-7,has-for-variable exactly 1 BDI-II-7v1):1.0
+is(BDI-II-7v1,Class):1.0
+SubClassOf(BDI-II-7v1,coded-variable,):1.0
+SubClassOf(BDI-II-7v1,main-variable,):1.0
+SubClassOf(BDI-II-7v1,is-a-variable-of some BDI-II-7,):1.0
+SubClassOf(BDI-II-7v1,is-a-variable-of only BDI-II-7,):1.0
+SubClassOf(BDI-II-7v1,has-for-model-acronym value var-acronym-BDI-II-7v1,):1.0
+SubClassOf(BDI-II-7v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-7v1,measures exactly 1 intensity-of-self-dislike):1.0
+is(BDI-II-8,Class):1.0
+SubClassOf(BDI-II-8,behavioural-instrument,):1.0
+SubClassOf(BDI-II-8,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-8,questionnaire,):1.0
+SubClassOf(BDI-II-8,sub-instrument,):1.0
+SubClassOf(BDI-II-8,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-8,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-8,has-for-model-acronym value instr-acronym-BDI-II-8,):1.0
+SubClassOf(BDI-II-8,has-for-model-name value instr-name-BDI-II-8,):1.0
+SubClassOf(BDI-II-8,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-8,has-for-variable exactly 1 BDI-II-8v1):1.0
+is(BDI-II-8v1,Class):1.0
+SubClassOf(BDI-II-8v1,coded-variable,):1.0
+SubClassOf(BDI-II-8v1,main-variable,):1.0
+SubClassOf(BDI-II-8v1,is-a-variable-of some BDI-II-8,):1.0
+SubClassOf(BDI-II-8v1,is-a-variable-of only BDI-II-8,):1.0
+SubClassOf(BDI-II-8v1,has-for-model-acronym value var-acronym-BDI-II-8v1,):1.0
+SubClassOf(BDI-II-8v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-8v1,measures exactly 1 intensity-of-self-criticalness):1.0
+is(BDI-II-9,Class):1.0
+SubClassOf(BDI-II-9,behavioural-instrument,):1.0
+SubClassOf(BDI-II-9,mono-domain-instrument,):1.0
+SubClassOf(BDI-II-9,questionnaire,):1.0
+SubClassOf(BDI-II-9,sub-instrument,):1.0
+SubClassOf(BDI-II-9,explores some cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-9,is-a-sub-instrument-of some BDI-II,):1.0
+SubClassOf(BDI-II-9,has-for-model-acronym value instr-acronym-BDI-II-9,):1.0
+SubClassOf(BDI-II-9,has-for-model-name value instr-name-BDI-II-9,):1.0
+SubClassOf(BDI-II-9,refers-to value instr-def-article-BECK-1996,):1.0
+SubClassOf(BDI-II-9,has-for-variable exactly 1 BDI-II-9v1):1.0
+is(BDI-II-9v1,Class):1.0
+SubClassOf(BDI-II-9v1,coded-variable,):1.0
+SubClassOf(BDI-II-9v1,main-variable,):1.0
+SubClassOf(BDI-II-9v1,is-a-variable-of some BDI-II-9,):1.0
+SubClassOf(BDI-II-9v1,is-a-variable-of only BDI-II-9,):1.0
+SubClassOf(BDI-II-9v1,has-for-model-acronym value var-acronym-BDI-II-9v1,):1.0
+SubClassOf(BDI-II-9v1,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-II-9v1,measures exactly 1 intensity-of-suicidal-thoughts-or-wishes):1.0
+is(BDI-IIv1,Class):1.0
+SubClassOf(BDI-IIv1,coded-variable,):1.0
+SubClassOf(BDI-IIv1,main-variable,):1.0
+SubClassOf(BDI-IIv1,is-a-variable-of some BDI-II,):1.0
+SubClassOf(BDI-IIv1,is-a-variable-of only BDI-II,):1.0
+SubClassOf(BDI-IIv1,has-for-model-acronym value var-acronym-BDI-IIv1,):1.0
+SubClassOf(BDI-IIv1,explores exactly 1 depression,):1.0
+SubClassOf(BDI-IIv1,measures exactly 1 intensity-of-depression):1.0
+is(BDI-IIv2,Class):1.0
+SubClassOf(BDI-IIv2,main-variable,):1.0
+SubClassOf(BDI-IIv2,numerical-variable,):1.0
+SubClassOf(BDI-IIv2,is-a-variable-of some BDI-II,):1.0
+SubClassOf(BDI-IIv2,is-a-variable-of only BDI-II,):1.0
+SubClassOf(BDI-IIv2,has-for-model-acronym value var-acronym-BDI-IIv2,):1.0
+SubClassOf(BDI-IIv2,explores exactly 1 cognitive-affective-factor-of-depression,):1.0
+SubClassOf(BDI-IIv2,measures exactly 1 intensity-of-affective-and-cognitive-components-of-depression):1.0
+is(BDI-IIv3,Class):1.0
+SubClassOf(BDI-IIv3,main-variable,):1.0
+SubClassOf(BDI-IIv3,numerical-variable,):1.0
+SubClassOf(BDI-IIv3,is-a-variable-of some BDI-II,):1.0
+SubClassOf(BDI-IIv3,is-a-variable-of only BDI-II,):1.0
+SubClassOf(BDI-IIv3,has-for-model-acronym value var-acronym-BDI-IIv3,):1.0
+SubClassOf(BDI-IIv3,explores exactly 1 somatic-factor-of-depression,):1.0
+SubClassOf(BDI-IIv3,measures exactly 1 intensity-of-somatic-component-of-depression):1.0
+is(CATVF,Class):1.0
+SubClassOf(CATVF,multi-domains-instrument,):1.0
+SubClassOf(CATVF,neuropsychological-instrument,):1.0
+SubClassOf(CATVF,test-instrument,):1.0
+SubClassOf(CATVF,explores some cognitive-flexibility,):1.0
+SubClassOf(CATVF,explores some concept-generation,):1.0
+SubClassOf(CATVF,explores some semantic-memory,):1.0
+SubClassOf(CATVF,explores some verbal-category-fluency,):1.0
+SubClassOf(CATVF,explores some verbal-memory,):1.0
+SubClassOf(CATVF,has-for-sub-instrument some CATVF-A,):1.0
+SubClassOf(CATVF,has-for-sub-instrument some CATVF-C,):1.0
+SubClassOf(CATVF,has-for-sub-instrument some CATVF-S,):1.0
+SubClassOf(CATVF,has-for-model-acronym value instr-acronym-CATVF,):1.0
+SubClassOf(CATVF,has-for-model-name value instr-name-CATVF,):1.0
+SubClassOf(CATVF,refers-to value instr-def-article-GOODGLASS-1972,):1.0
+SubClassOf(CATVF,has-for-variable exactly 1 CATVFv1):1.0
+is(CATVF-A,Class):1.0
+SubClassOf(CATVF-A,multi-domains-instrument,):1.0
+SubClassOf(CATVF-A,neuropsychological-instrument,):1.0
+SubClassOf(CATVF-A,sub-instrument,):1.0
+SubClassOf(CATVF-A,test-instrument,):1.0
+SubClassOf(CATVF-A,explores some cognitive-flexibility,):1.0
+SubClassOf(CATVF-A,explores some concept-generation,):1.0
+SubClassOf(CATVF-A,explores some semantic-memory,):1.0
+SubClassOf(CATVF-A,explores some verbal-category-fluency,):1.0
+SubClassOf(CATVF-A,explores some verbal-memory,):1.0
+SubClassOf(CATVF-A,is-a-sub-instrument-of some CATVF,):1.0
+SubClassOf(CATVF-A,has-for-model-acronym value instr-acronym-CATVF-A,):1.0
+SubClassOf(CATVF-A,has-for-model-name value instr-name-CATVF-A,):1.0
+SubClassOf(CATVF-A,refers-to value instr-def-article-GOODGLASS-1972,):1.0
+SubClassOf(CATVF-A,has-for-variable exactly 1 CATVF-Av1):1.0
+is(CATVF-Av1,Class):1.0
+SubClassOf(CATVF-Av1,age-dependent-variable,):1.0
+SubClassOf(CATVF-Av1,cultural-skill-dependent-variable,):1.0
+SubClassOf(CATVF-Av1,main-variable,):1.0
+SubClassOf(CATVF-Av1,numerical-variable,):1.0
+SubClassOf(CATVF-Av1,sex-dependent-variable,):1.0
+SubClassOf(CATVF-Av1,is-a-variable-of some CATVF-A,):1.0
+SubClassOf(CATVF-Av1,is-a-variable-of only CATVF-A,):1.0
+SubClassOf(CATVF-Av1,has-for-model-acronym value var-acronym-CATVF-Av1,):1.0
+SubClassOf(CATVF-Av1,explores exactly 1 verbal-category-fluency,):1.0
+SubClassOf(CATVF-Av1,measures exactly 1 number-of-words-in-a-60s-trial):1.0
+is(CATVF-C,Class):1.0
+SubClassOf(CATVF-C,multi-domains-instrument,):1.0
+SubClassOf(CATVF-C,neuropsychological-instrument,):1.0
+SubClassOf(CATVF-C,sub-instrument,):1.0
+SubClassOf(CATVF-C,test-instrument,):1.0
+SubClassOf(CATVF-C,explores some category-fluency,):1.0
+SubClassOf(CATVF-C,explores some cognitive-flexibility,):1.0
+SubClassOf(CATVF-C,explores some concept-generation,):1.0
+SubClassOf(CATVF-C,explores some semantic-memory,):1.0
+SubClassOf(CATVF-C,explores some verbal-memory,):1.0
+SubClassOf(CATVF-C,is-a-sub-instrument-of some CATVF,):1.0
+SubClassOf(CATVF-C,has-for-model-acronym value instr-acronym-CATVF-C,):1.0
+SubClassOf(CATVF-C,has-for-model-name value instr-name-CATVF-C,):1.0
+SubClassOf(CATVF-C,refers-to value instr-def-article-GOODGLASS-1972,):1.0
+SubClassOf(CATVF-C,has-for-variable exactly 1 CATVF-Cv1):1.0
+is(CATVF-Cv1,Class):1.0
+SubClassOf(CATVF-Cv1,age-dependent-variable,):1.0
+SubClassOf(CATVF-Cv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(CATVF-Cv1,main-variable,):1.0
+SubClassOf(CATVF-Cv1,numerical-variable,):1.0
+SubClassOf(CATVF-Cv1,sex-dependent-variable,):1.0
+SubClassOf(CATVF-Cv1,is-a-variable-of some CATVF-C,):1.0
+SubClassOf(CATVF-Cv1,is-a-variable-of only CATVF-C,):1.0
+SubClassOf(CATVF-Cv1,has-for-model-acronym value var-acronym-CATVF-Cv1,):1.0
+SubClassOf(CATVF-Cv1,explores exactly 1 verbal-category-fluency,):1.0
+SubClassOf(CATVF-Cv1,measures exactly 1 number-of-words-in-a-60s-trial):1.0
+is(CATVF-S,Class):1.0
+SubClassOf(CATVF-S,multi-domains-instrument,):1.0
+SubClassOf(CATVF-S,neuropsychological-instrument,):1.0
+SubClassOf(CATVF-S,sub-instrument,):1.0
+SubClassOf(CATVF-S,test-instrument,):1.0
+SubClassOf(CATVF-S,explores some category-fluency,):1.0
+SubClassOf(CATVF-S,explores some cognitive-flexibility,):1.0
+SubClassOf(CATVF-S,explores some concept-generation,):1.0
+SubClassOf(CATVF-S,explores some semantic-memory,):1.0
+SubClassOf(CATVF-S,explores some verbal-memory,):1.0
+SubClassOf(CATVF-S,is-a-sub-instrument-of some CATVF,):1.0
+SubClassOf(CATVF-S,has-for-model-acronym value instr-acronym-CATVF-S,):1.0
+SubClassOf(CATVF-S,has-for-model-name value instr-name-CATVF-S,):1.0
+SubClassOf(CATVF-S,refers-to value instr-def-article-GOODGLASS-1972,):1.0
+SubClassOf(CATVF-S,has-for-variable exactly 1 CATVF-Sv1):1.0
+is(CATVF-Sv1,Class):1.0
+SubClassOf(CATVF-Sv1,age-dependent-variable,):1.0
+SubClassOf(CATVF-Sv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(CATVF-Sv1,main-variable,):1.0
+SubClassOf(CATVF-Sv1,numerical-variable,):1.0
+SubClassOf(CATVF-Sv1,sex-dependent-variable,):1.0
+SubClassOf(CATVF-Sv1,is-a-variable-of some CATVF-S,):1.0
+SubClassOf(CATVF-Sv1,is-a-variable-of only CATVF-S,):1.0
+SubClassOf(CATVF-Sv1,has-for-model-acronym value var-acronym-CATVF-Sv1,):1.0
+SubClassOf(CATVF-Sv1,explores exactly 1 verbal-category-fluency,):1.0
+SubClassOf(CATVF-Sv1,measures exactly 1 number-of-words-in-a-60s-trial):1.0
+is(CATVFv1,Class):1.0
+SubClassOf(CATVFv1,age-dependent-variable,):1.0
+SubClassOf(CATVFv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(CATVFv1,main-variable,):1.0
+SubClassOf(CATVFv1,numerical-variable,):1.0
+SubClassOf(CATVFv1,sex-dependent-variable,):1.0
+SubClassOf(CATVFv1,is-a-variable-of some CATVF,):1.0
+SubClassOf(CATVFv1,is-a-variable-of only CATVF,):1.0
+SubClassOf(CATVFv1,has-for-model-acronym value var-acronym-CATVFv1,):1.0
+SubClassOf(CATVFv1,explores exactly 1 verbal-category-fluency,):1.0
+SubClassOf(CATVFv1,measures exactly 1 number-of-words-in-a-60s-trial):1.0
+is(CDR,Class):1.0
+SubClassOf(CDR,mono-domain-instrument,):1.0
+SubClassOf(CDR,neuropsychological-instrument,):1.0
+SubClassOf(CDR,questionnaire,):1.0
+SubClassOf(CDR,explores some dementia,):1.0
+SubClassOf(CDR,has-for-sub-instrument some CDR-CA,):1.0
+SubClassOf(CDR,has-for-sub-instrument some CDR-HH,):1.0
+SubClassOf(CDR,has-for-sub-instrument some CDR-J,):1.0
+SubClassOf(CDR,has-for-sub-instrument some CDR-M,):1.0
+SubClassOf(CDR,has-for-sub-instrument some CDR-O,):1.0
+SubClassOf(CDR,has-for-sub-instrument some CDR-PC,):1.0
+SubClassOf(CDR,has-for-model-acronym value instr-acronym-CDR,):1.0
+SubClassOf(CDR,has-for-model-name value instr-name-CDR,):1.0
+SubClassOf(CDR,has-for-variable exactly 1 CDR-GBv1,):1.0
+SubClassOf(CDR,has-for-variable exactly 1 CDR-SoBv1):1.0
+is(CDR-CA,Class):1.0
+SubClassOf(CDR-CA,mono-domain-instrument,):1.0
+SubClassOf(CDR-CA,neuropsychological-instrument,):1.0
+SubClassOf(CDR-CA,questionnaire,):1.0
+SubClassOf(CDR-CA,sub-instrument,):1.0
+SubClassOf(CDR-CA,explores some community-activities,):1.0
+SubClassOf(CDR-CA,is-a-sub-instrument-of some CDR,):1.0
+SubClassOf(CDR-CA,has-for-model-acronym value instr-acronym-CDR-CA,):1.0
+SubClassOf(CDR-CA,has-for-model-name value instr-name-CDR-CA,):1.0
+SubClassOf(CDR-CA,has-for-variable exactly 1 CDR-CA-v1):1.0
+is(CDR-CA-v1,Class):1.0
+SubClassOf(CDR-CA-v1,coded-variable,):1.0
+SubClassOf(CDR-CA-v1,main-variable,):1.0
+SubClassOf(CDR-CA-v1,is-a-variable-of some CDR-CA,):1.0
+SubClassOf(CDR-CA-v1,is-a-variable-of only CDR-CA,):1.0
+SubClassOf(CDR-CA-v1,has-for-model-acronym value var-acronym-CDR-CA-v1,):1.0
+SubClassOf(CDR-CA-v1,explores exactly 1 community-activities,):1.0
+SubClassOf(CDR-CA-v1,measures exactly 1 severity-of-impairment-in-community-activities):1.0
+is(CDR-GBv1,Class):1.0
+SubClassOf(CDR-GBv1,main-variable,):1.0
+SubClassOf(CDR-GBv1,numerical-variable,):1.0
+SubClassOf(CDR-GBv1,is-a-variable-of some CDR,):1.0
+SubClassOf(CDR-GBv1,is-a-variable-of only CDR,):1.0
+SubClassOf(CDR-GBv1,has-for-model-acronym value var-acronym-CDR-GBv1,):1.0
+SubClassOf(CDR-GBv1,explores exactly 1 dementia,):1.0
+SubClassOf(CDR-GBv1,measures exactly 1 severity-of-dementia):1.0
+is(CDR-HH,Class):1.0
+SubClassOf(CDR-HH,mono-domain-instrument,):1.0
+SubClassOf(CDR-HH,neuropsychological-instrument,):1.0
+SubClassOf(CDR-HH,questionnaire,):1.0
+SubClassOf(CDR-HH,sub-instrument,):1.0
+SubClassOf(CDR-HH,explores some home-activities,):1.0
+SubClassOf(CDR-HH,is-a-sub-instrument-of some CDR,):1.0
+SubClassOf(CDR-HH,has-for-model-acronym value instr-acronym-CDR-HH,):1.0
+SubClassOf(CDR-HH,has-for-model-name value instr-name-CDR-HH,):1.0
+SubClassOf(CDR-HH,has-for-variable exactly 1 CDR-HH-v1):1.0
+is(CDR-HH-v1,Class):1.0
+SubClassOf(CDR-HH-v1,coded-variable,):1.0
+SubClassOf(CDR-HH-v1,main-variable,):1.0
+SubClassOf(CDR-HH-v1,is-a-variable-of some CDR-HH,):1.0
+SubClassOf(CDR-HH-v1,is-a-variable-of only CDR-HH,):1.0
+SubClassOf(CDR-HH-v1,has-for-model-acronym value var-acronym-CDR-HH-v1,):1.0
+SubClassOf(CDR-HH-v1,explores exactly 1 home-activities,):1.0
+SubClassOf(CDR-HH-v1,measures exactly 1 severity-of-impairment-in-home-activities):1.0
+is(CDR-J,Class):1.0
+SubClassOf(CDR-J,mono-domain-instrument,):1.0
+SubClassOf(CDR-J,neuropsychological-instrument,):1.0
+SubClassOf(CDR-J,questionnaire,):1.0
+SubClassOf(CDR-J,sub-instrument,):1.0
+SubClassOf(CDR-J,explores some problem-solving-judgment,):1.0
+SubClassOf(CDR-J,is-a-sub-instrument-of some CDR,):1.0
+SubClassOf(CDR-J,has-for-model-acronym value instr-acronym-CDR-J,):1.0
+SubClassOf(CDR-J,has-for-model-name value instr-name-CDR-J,):1.0
+SubClassOf(CDR-J,has-for-variable exactly 1 CDR-J-v1):1.0
+is(CDR-J-v1,Class):1.0
+SubClassOf(CDR-J-v1,coded-variable,):1.0
+SubClassOf(CDR-J-v1,main-variable,):1.0
+SubClassOf(CDR-J-v1,is-a-variable-of some CDR-J,):1.0
+SubClassOf(CDR-J-v1,is-a-variable-of only CDR-J,):1.0
+SubClassOf(CDR-J-v1,has-for-model-acronym value var-acronym-CDR-J-v1,):1.0
+SubClassOf(CDR-J-v1,explores exactly 1 problem-solving-judgment,):1.0
+SubClassOf(CDR-J-v1,measures exactly 1 severity-of-impairment-in-solving-problems):1.0
+is(CDR-M,Class):1.0
+SubClassOf(CDR-M,mono-domain-instrument,):1.0
+SubClassOf(CDR-M,neuropsychological-instrument,):1.0
+SubClassOf(CDR-M,questionnaire,):1.0
+SubClassOf(CDR-M,sub-instrument,):1.0
+SubClassOf(CDR-M,explores some memory,):1.0
+SubClassOf(CDR-M,is-a-sub-instrument-of some CDR,):1.0
+SubClassOf(CDR-M,has-for-model-acronym value instr-acronym-CDR-M,):1.0
+SubClassOf(CDR-M,has-for-model-name value instr-name-CDR-M,):1.0
+SubClassOf(CDR-M,has-for-variable exactly 1 CDR-M-v1):1.0
+is(CDR-M-v1,Class):1.0
+SubClassOf(CDR-M-v1,coded-variable,):1.0
+SubClassOf(CDR-M-v1,main-variable,):1.0
+SubClassOf(CDR-M-v1,is-a-variable-of some CDR-M,):1.0
+SubClassOf(CDR-M-v1,is-a-variable-of only CDR-M,):1.0
+SubClassOf(CDR-M-v1,has-for-model-acronym value var-acronym-CDR-M-v1,):1.0
+SubClassOf(CDR-M-v1,explores exactly 1 memory,):1.0
+SubClassOf(CDR-M-v1,measures exactly 1 severity-of-memory-loss):1.0
+is(CDR-O,Class):1.0
+SubClassOf(CDR-O,mono-domain-instrument,):1.0
+SubClassOf(CDR-O,neuropsychological-instrument,):1.0
+SubClassOf(CDR-O,questionnaire,):1.0
+SubClassOf(CDR-O,sub-instrument,):1.0
+SubClassOf(CDR-O,explores some orientation,):1.0
+SubClassOf(CDR-O,is-a-sub-instrument-of some CDR,):1.0
+SubClassOf(CDR-O,has-for-model-acronym value instr-acronym-CDR-O,):1.0
+SubClassOf(CDR-O,has-for-model-name value instr-name-CDR-O,):1.0
+SubClassOf(CDR-O,has-for-variable exactly 1 CDR-O-v1):1.0
+is(CDR-O-v1,Class):1.0
+SubClassOf(CDR-O-v1,coded-variable,):1.0
+SubClassOf(CDR-O-v1,main-variable,):1.0
+SubClassOf(CDR-O-v1,is-a-variable-of some CDR-O,):1.0
+SubClassOf(CDR-O-v1,is-a-variable-of only CDR-O,):1.0
+SubClassOf(CDR-O-v1,has-for-model-acronym value var-acronym-CDR-O-v1,):1.0
+SubClassOf(CDR-O-v1,explores exactly 1 orientation,):1.0
+SubClassOf(CDR-O-v1,measures exactly 1 severity-of-orientation-difficulty):1.0
+is(CDR-PC,Class):1.0
+SubClassOf(CDR-PC,mono-domain-instrument,):1.0
+SubClassOf(CDR-PC,neuropsychological-instrument,):1.0
+SubClassOf(CDR-PC,questionnaire,):1.0
+SubClassOf(CDR-PC,sub-instrument,):1.0
+SubClassOf(CDR-PC,explores some personal-care,):1.0
+SubClassOf(CDR-PC,is-a-sub-instrument-of some CDR,):1.0
+SubClassOf(CDR-PC,has-for-model-acronym value instr-acronym-CDR-PC,):1.0
+SubClassOf(CDR-PC,has-for-model-name value instr-name-CDR-PC,):1.0
+SubClassOf(CDR-PC,has-for-variable exactly 1 CDR-PC-v1):1.0
+is(CDR-PC-v1,Class):1.0
+SubClassOf(CDR-PC-v1,coded-variable,):1.0
+SubClassOf(CDR-PC-v1,main-variable,):1.0
+SubClassOf(CDR-PC-v1,is-a-variable-of some CDR-PC,):1.0
+SubClassOf(CDR-PC-v1,is-a-variable-of only CDR-PC,):1.0
+SubClassOf(CDR-PC-v1,has-for-model-acronym value var-acronym-CDR-PC-v1,):1.0
+SubClassOf(CDR-PC-v1,explores exactly 1 personal-care,):1.0
+SubClassOf(CDR-PC-v1,measures exactly 1 level-of-dependency):1.0
+is(CDR-SoBv1,Class):1.0
+SubClassOf(CDR-SoBv1,coded-variable,):1.0
+SubClassOf(CDR-SoBv1,main-variable,):1.0
+SubClassOf(CDR-SoBv1,is-a-variable-of some CDR,):1.0
+SubClassOf(CDR-SoBv1,is-a-variable-of only CDR,):1.0
+SubClassOf(CDR-SoBv1,has-for-model-acronym value var-acronym-CDR-SoBv1,):1.0
+SubClassOf(CDR-SoBv1,explores exactly 1 dementia,):1.0
+SubClassOf(CDR-SoBv1,measures exactly 1 severity-of-dementia):1.0
+is(CFT-C,Class):1.0
+SubClassOf(CFT-C,mono-domain-instrument,):1.0
+SubClassOf(CFT-C,neuropsychological-instrument,):1.0
+SubClassOf(CFT-C,test-instrument,):1.0
+SubClassOf(CFT-C,explores some constructional-functions,):1.0
+SubClassOf(CFT-C,has-for-sub-instrument some CFT-C-1,):1.0
+SubClassOf(CFT-C,has-for-sub-instrument some CFT-C-2,):1.0
+SubClassOf(CFT-C,has-for-model-acronym value instr-acronym-CFT-C,):1.0
+SubClassOf(CFT-C,has-for-model-name value instr-name-CFT-C,):1.0
+SubClassOf(CFT-C,refers-to value instr-def-article-REY-1941,):1.0
+SubClassOf(CFT-C,has-for-variable exactly 1 CFT-Cv1,):1.0
+SubClassOf(CFT-C,has-for-variable exactly 1 CFT-Cv2,):1.0
+SubClassOf(CFT-C,has-for-variable exactly 1 CFT-Cv3):1.0
+is(CFT-C-1,Class):1.0
+SubClassOf(CFT-C-1,mono-domain-instrument,):1.0
+SubClassOf(CFT-C-1,neuropsychological-instrument,):1.0
+SubClassOf(CFT-C-1,sub-instrument,):1.0
+SubClassOf(CFT-C-1,test-instrument,):1.0
+SubClassOf(CFT-C-1,explores some constructional-functions,):1.0
+SubClassOf(CFT-C-1,is-a-sub-instrument-of some CFT-C,):1.0
+SubClassOf(CFT-C-1,has-for-model-acronym value instr-acronym-CFT-C-1,):1.0
+SubClassOf(CFT-C-1,has-for-model-name value instr-name-CFT-C-1,):1.0
+SubClassOf(CFT-C-1,refers-to value instr-def-article-PILLON-1981,):1.0
+SubClassOf(CFT-C-1,has-for-variable exactly 1 CFT-C-1v1):1.0
+is(CFT-C-1v1,Class):1.0
+SubClassOf(CFT-C-1v1,main-variable,):1.0
+SubClassOf(CFT-C-1v1,numerical-variable,):1.0
+SubClassOf(CFT-C-1v1,is-a-variable-of some CFT-C-1,):1.0
+SubClassOf(CFT-C-1v1,is-a-variable-of only CFT-C-1,):1.0
+SubClassOf(CFT-C-1v1,has-for-model-acronym value var-acronym-CFT-C-1v1,):1.0
+SubClassOf(CFT-C-1v1,explores exactly 1 motor-component-of-constructional-functions,):1.0
+SubClassOf(CFT-C-1v1,measures exactly 1 copy-accuracy):1.0
+is(CFT-C-2,Class):1.0
+SubClassOf(CFT-C-2,mono-domain-instrument,):1.0
+SubClassOf(CFT-C-2,neuropsychological-instrument,):1.0
+SubClassOf(CFT-C-2,sub-instrument,):1.0
+SubClassOf(CFT-C-2,test-instrument,):1.0
+SubClassOf(CFT-C-2,explores some constructional-functions,):1.0
+SubClassOf(CFT-C-2,is-a-sub-instrument-of some CFT-C,):1.0
+SubClassOf(CFT-C-2,has-for-model-acronym value instr-acronym-CFT-C-2,):1.0
+SubClassOf(CFT-C-2,has-for-model-name value instr-name-CFT-C-2,):1.0
+SubClassOf(CFT-C-2,refers-to value instr-def-article-PILLON-1981,):1.0
+SubClassOf(CFT-C-2,has-for-variable exactly 1 CFT-C-2v1):1.0
+is(CFT-C-2v1,Class):1.0
+SubClassOf(CFT-C-2v1,main-variable,):1.0
+SubClassOf(CFT-C-2v1,numerical-variable,):1.0
+SubClassOf(CFT-C-2v1,is-a-variable-of some CFT-C-2,):1.0
+SubClassOf(CFT-C-2v1,is-a-variable-of only CFT-C-2,):1.0
+SubClassOf(CFT-C-2v1,has-for-model-acronym value var-acronym-CFT-C-2v1,):1.0
+SubClassOf(CFT-C-2v1,explores exactly 1 motor-component-of-constructional-functions,):1.0
+SubClassOf(CFT-C-2v1,measures exactly 1 copy-accuracy):1.0
+is(CFT-Cv1,Class):1.0
+SubClassOf(CFT-Cv1,age-dependent-variable,):1.0
+SubClassOf(CFT-Cv1,main-variable,):1.0
+SubClassOf(CFT-Cv1,numerical-variable,):1.0
+SubClassOf(CFT-Cv1,sex-dependent-variable,):1.0
+SubClassOf(CFT-Cv1,is-a-variable-of some CFT-C,):1.0
+SubClassOf(CFT-Cv1,is-a-variable-of only CFT-C,):1.0
+SubClassOf(CFT-Cv1,has-for-model-acronym value var-acronym-CFT-Cv1,):1.0
+SubClassOf(CFT-Cv1,explores exactly 1 motor-component-of-constructional-functions,):1.0
+SubClassOf(CFT-Cv1,measures exactly 1 copy-accuracy):1.0
+is(CFT-Cv2,Class):1.0
+SubClassOf(CFT-Cv2,coded-variable,):1.0
+SubClassOf(CFT-Cv2,secondary-variable,):1.0
+SubClassOf(CFT-Cv2,is-a-variable-of some CFT-C,):1.0
+SubClassOf(CFT-Cv2,is-a-variable-of only CFT-C,):1.0
+SubClassOf(CFT-Cv2,has-for-model-acronym value var-acronym-CFT-Cv2,):1.0
+SubClassOf(CFT-Cv2,explores exactly 1 planning,):1.0
+SubClassOf(CFT-Cv2,measures exactly 1 organizational-quality):1.0
+is(CFT-Cv3,Class):1.0
+SubClassOf(CFT-Cv3,numerical-variable,):1.0
+SubClassOf(CFT-Cv3,secondary-variable,):1.0
+SubClassOf(CFT-Cv3,is-a-variable-of some CFT-C,):1.0
+SubClassOf(CFT-Cv3,is-a-variable-of only CFT-C,):1.0
+SubClassOf(CFT-Cv3,has-for-model-acronym value var-acronym-CFT-Cv3,):1.0
+SubClassOf(CFT-Cv3,explores exactly 1 attention,):1.0
+SubClassOf(CFT-Cv3,measures exactly 1 copy-time):1.0
+is(CFT-M,Class):1.0
+SubClassOf(CFT-M,mono-domain-instrument,):1.0
+SubClassOf(CFT-M,neuropsychological-instrument,):1.0
+SubClassOf(CFT-M,test-instrument,):1.0
+SubClassOf(CFT-M,explores some visual-memory,):1.0
+SubClassOf(CFT-M,has-for-model-acronym value instr-acronym-CFT-M,):1.0
+SubClassOf(CFT-M,has-for-model-name value instr-name-CFT-M,):1.0
+SubClassOf(CFT-M,refers-to value instr-def-article-REY-1941,):1.0
+SubClassOf(CFT-M,has-for-variable exactly 1 CFT-Mv1,):1.0
+SubClassOf(CFT-M,has-for-variable exactly 1 CFT-Mv2,):1.0
+SubClassOf(CFT-M,has-for-variable exactly 1 CFT-Mv3):1.0
+is(CFT-Mv1,Class):1.0
+SubClassOf(CFT-Mv1,age-dependent-variable,):1.0
+SubClassOf(CFT-Mv1,main-variable,):1.0
+SubClassOf(CFT-Mv1,numerical-variable,):1.0
+SubClassOf(CFT-Mv1,sex-dependent-variable,):1.0
+SubClassOf(CFT-Mv1,is-a-variable-of some CFT-M,):1.0
+SubClassOf(CFT-Mv1,is-a-variable-of only CFT-M,):1.0
+SubClassOf(CFT-Mv1,has-for-model-acronym value var-acronym-CFT-Mv1,):1.0
+SubClassOf(CFT-Mv1,explores exactly 1 motor-component-of-constructional-functions,):1.0
+SubClassOf(CFT-Mv1,measures exactly 1 copy-accuracy):1.0
+is(CFT-Mv2,Class):1.0
+SubClassOf(CFT-Mv2,coded-variable,):1.0
+SubClassOf(CFT-Mv2,secondary-variable,):1.0
+SubClassOf(CFT-Mv2,is-a-variable-of some CFT-M,):1.0
+SubClassOf(CFT-Mv2,is-a-variable-of only CFT-M,):1.0
+SubClassOf(CFT-Mv2,has-for-model-acronym value var-acronym-CFT-Mv2,):1.0
+SubClassOf(CFT-Mv2,explores exactly 1 planning,):1.0
+SubClassOf(CFT-Mv2,measures exactly 1 organizational-quality):1.0
+is(CFT-Mv3,Class):1.0
+SubClassOf(CFT-Mv3,numerical-variable,):1.0
+SubClassOf(CFT-Mv3,secondary-variable,):1.0
+SubClassOf(CFT-Mv3,is-a-variable-of some CFT-M,):1.0
+SubClassOf(CFT-Mv3,is-a-variable-of only CFT-M,):1.0
+SubClassOf(CFT-Mv3,has-for-model-acronym value var-acronym-CFT-Mv3,):1.0
+SubClassOf(CFT-Mv3,explores exactly 1 attention,):1.0
+SubClassOf(CFT-Mv3,measures exactly 1 copy-time):1.0
+is(COWAT,Class):1.0
+SubClassOf(COWAT,multi-domains-instrument,):1.0
+SubClassOf(COWAT,neuropsychological-instrument,):1.0
+SubClassOf(COWAT,test-instrument,):1.0
+SubClassOf(COWAT,explores some cognitive-flexibility,):1.0
+SubClassOf(COWAT,explores some semantic-memory,):1.0
+SubClassOf(COWAT,explores some verbal-letter-fluency,):1.0
+SubClassOf(COWAT,explores some verbal-memory,):1.0
+SubClassOf(COWAT,has-for-sub-instrument some COWAT-M,):1.0
+SubClassOf(COWAT,has-for-sub-instrument some COWAT-P,):1.0
+SubClassOf(COWAT,has-for-sub-instrument some COWAT-S,):1.0
+SubClassOf(COWAT,has-for-model-acronym value instr-acronym-COWAT,):1.0
+SubClassOf(COWAT,has-for-model-name value instr-name-COWAT,):1.0
+SubClassOf(COWAT,refers-to value instr-def-article-BENTON-1994,):1.0
+SubClassOf(COWAT,has-for-variable exactly 1 COWATv1):1.0
+is(COWAT-M,Class):1.0
+SubClassOf(COWAT-M,multi-domains-instrument,):1.0
+SubClassOf(COWAT-M,neuropsychological-instrument,):1.0
+SubClassOf(COWAT-M,sub-instrument,):1.0
+SubClassOf(COWAT-M,test-instrument,):1.0
+SubClassOf(COWAT-M,explores some cognitive-flexibility,):1.0
+SubClassOf(COWAT-M,explores some semantic-memory,):1.0
+SubClassOf(COWAT-M,explores some verbal-letter-fluency,):1.0
+SubClassOf(COWAT-M,explores some verbal-memory,):1.0
+SubClassOf(COWAT-M,is-a-sub-instrument-of some COWAT,):1.0
+SubClassOf(COWAT-M,has-for-model-acronym value instr-acronym-COWAT-M,):1.0
+SubClassOf(COWAT-M,has-for-model-name value instr-name-COWAT-M,):1.0
+SubClassOf(COWAT-M,refers-to value instr-def-article-BENTON-1994,):1.0
+SubClassOf(COWAT-M,has-for-variable exactly 1 COWAT-Mv1):1.0
+is(COWAT-Mv1,Class):1.0
+SubClassOf(COWAT-Mv1,age-dependent-variable,):1.0
+SubClassOf(COWAT-Mv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(COWAT-Mv1,main-variable,):1.0
+SubClassOf(COWAT-Mv1,numerical-variable,):1.0
+SubClassOf(COWAT-Mv1,sex-dependent-variable,):1.0
+SubClassOf(COWAT-Mv1,is-a-variable-of some COWAT-M,):1.0
+SubClassOf(COWAT-Mv1,is-a-variable-of only COWAT-M,):1.0
+SubClassOf(COWAT-Mv1,has-for-model-acronym value var-acronym-COWAT-Mv1,):1.0
+SubClassOf(COWAT-Mv1,explores exactly 1 verbal-letter-fluency,):1.0
+SubClassOf(COWAT-Mv1,measures exactly 1 number-of-words-in-a-60s-trial):1.0
+is(COWAT-P,Class):1.0
+SubClassOf(COWAT-P,multi-domains-instrument,):1.0
+SubClassOf(COWAT-P,neuropsychological-instrument,):1.0
+SubClassOf(COWAT-P,sub-instrument,):1.0
+SubClassOf(COWAT-P,test-instrument,):1.0
+SubClassOf(COWAT-P,explores some cognitive-flexibility,):1.0
+SubClassOf(COWAT-P,explores some semantic-memory,):1.0
+SubClassOf(COWAT-P,explores some verbal-letter-fluency,):1.0
+SubClassOf(COWAT-P,explores some verbal-memory,):1.0
+SubClassOf(COWAT-P,is-a-sub-instrument-of some COWAT,):1.0
+SubClassOf(COWAT-P,has-for-model-acronym value instr-acronym-COWAT-P,):1.0
+SubClassOf(COWAT-P,has-for-model-name value instr-name-COWAT-P,):1.0
+SubClassOf(COWAT-P,refers-to value instr-def-article-BENTON-1994,):1.0
+SubClassOf(COWAT-P,has-for-variable exactly 1 COWAT-Pv1):1.0
+is(COWAT-Pv1,Class):1.0
+SubClassOf(COWAT-Pv1,age-dependent-variable,):1.0
+SubClassOf(COWAT-Pv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(COWAT-Pv1,main-variable,):1.0
+SubClassOf(COWAT-Pv1,numerical-variable,):1.0
+SubClassOf(COWAT-Pv1,sex-dependent-variable,):1.0
+SubClassOf(COWAT-Pv1,is-a-variable-of some COWAT-P,):1.0
+SubClassOf(COWAT-Pv1,is-a-variable-of only COWAT-P,):1.0
+SubClassOf(COWAT-Pv1,has-for-model-acronym value var-acronym-COWAT-Pv1,):1.0
+SubClassOf(COWAT-Pv1,explores exactly 1 verbal-letter-fluency,):1.0
+SubClassOf(COWAT-Pv1,measures exactly 1 number-of-words-in-a-60s-trial):1.0
+is(COWAT-S,Class):1.0
+SubClassOf(COWAT-S,multi-domains-instrument,):1.0
+SubClassOf(COWAT-S,neuropsychological-instrument,):1.0
+SubClassOf(COWAT-S,sub-instrument,):1.0
+SubClassOf(COWAT-S,test-instrument,):1.0
+SubClassOf(COWAT-S,explores some cognitive-flexibility,):1.0
+SubClassOf(COWAT-S,explores some semantic-memory,):1.0
+SubClassOf(COWAT-S,explores some verbal-letter-fluency,):1.0
+SubClassOf(COWAT-S,explores some verbal-memory,):1.0
+SubClassOf(COWAT-S,is-a-sub-instrument-of some COWAT,):1.0
+SubClassOf(COWAT-S,has-for-model-acronym value instr-acronym-COWAT-S,):1.0
+SubClassOf(COWAT-S,has-for-model-name value instr-name-COWAT-S,):1.0
+SubClassOf(COWAT-S,refers-to value instr-def-article-BENTON-1994,):1.0
+SubClassOf(COWAT-S,has-for-variable exactly 1 COWAT-Sv1):1.0
+is(COWAT-Sv1,Class):1.0
+SubClassOf(COWAT-Sv1,age-dependent-variable,):1.0
+SubClassOf(COWAT-Sv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(COWAT-Sv1,main-variable,):1.0
+SubClassOf(COWAT-Sv1,numerical-variable,):1.0
+SubClassOf(COWAT-Sv1,sex-dependent-variable,):1.0
+SubClassOf(COWAT-Sv1,is-a-variable-of some COWAT-S,):1.0
+SubClassOf(COWAT-Sv1,is-a-variable-of only COWAT-S,):1.0
+SubClassOf(COWAT-Sv1,has-for-model-acronym value var-acronym-COWAT-Sv1,):1.0
+SubClassOf(COWAT-Sv1,explores exactly 1 verbal-letter-fluency,):1.0
+SubClassOf(COWAT-Sv1,measures exactly 1 number-of-words-in-a-60s-trial):1.0
+is(COWATv1,Class):1.0
+SubClassOf(COWATv1,age-dependent-variable,):1.0
+SubClassOf(COWATv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(COWATv1,main-variable,):1.0
+SubClassOf(COWATv1,numerical-variable,):1.0
+SubClassOf(COWATv1,sex-dependent-variable,):1.0
+SubClassOf(COWATv1,is-a-variable-of some COWAT,):1.0
+SubClassOf(COWATv1,is-a-variable-of only COWAT,):1.0
+SubClassOf(COWATv1,has-for-model-acronym value var-acronym-COWATv1,):1.0
+SubClassOf(COWATv1,explores exactly 1 verbal-letter-fluency,):1.0
+SubClassOf(COWATv1,measures exactly 1 number-of-words-in-a-60s-trial):1.0
+is(EDSS,Class):1.0
+SubClassOf(EDSS,mono-domain-instrument,):1.0
+SubClassOf(EDSS,neuroclinical-instrument,):1.0
+SubClassOf(EDSS,test-instrument,):1.0
+SubClassOf(EDSS,explores some neurological-functions,):1.0
+SubClassOf(EDSS,has-for-sub-instrument some EDSS-1,):1.0
+SubClassOf(EDSS,has-for-sub-instrument some EDSS-2,):1.0
+SubClassOf(EDSS,has-for-sub-instrument some EDSS-3,):1.0
+SubClassOf(EDSS,has-for-sub-instrument some EDSS-4,):1.0
+SubClassOf(EDSS,has-for-sub-instrument some EDSS-5,):1.0
+SubClassOf(EDSS,has-for-sub-instrument some EDSS-6,):1.0
+SubClassOf(EDSS,has-for-sub-instrument some EDSS-7,):1.0
+SubClassOf(EDSS,has-for-sub-instrument some EDSS-8,):1.0
+SubClassOf(EDSS,has-for-model-acronym value instr-acronym-EDSS,):1.0
+SubClassOf(EDSS,has-for-model-name value instr-name-EDSS,):1.0
+SubClassOf(EDSS,refers-to value instr-def-article-KURTZKE-1983,):1.0
+SubClassOf(EDSS,has-for-variable exactly 1 EDSSv1):1.0
+is(EDSS-1,Class):1.0
+SubClassOf(EDSS-1,mono-domain-instrument,):1.0
+SubClassOf(EDSS-1,neuroclinical-instrument,):1.0
+SubClassOf(EDSS-1,sub-instrument,):1.0
+SubClassOf(EDSS-1,test-instrument,):1.0
+SubClassOf(EDSS-1,explores some visual-function,):1.0
+SubClassOf(EDSS-1,is-a-sub-instrument-of some EDSS,):1.0
+SubClassOf(EDSS-1,has-for-model-acronym value instr-acronym-EDSS-1,):1.0
+SubClassOf(EDSS-1,has-for-model-name value instr-name-EDSS-1,):1.0
+SubClassOf(EDSS-1,refers-to value instr-def-article-KURTZKE-1983,):1.0
+SubClassOf(EDSS-1,has-for-variable exactly 1 EDSS-1v1):1.0
+is(EDSS-1v1,Class):1.0
+SubClassOf(EDSS-1v1,coded-variable,):1.0
+SubClassOf(EDSS-1v1,main-variable,):1.0
+SubClassOf(EDSS-1v1,is-a-variable-of some EDSS-1,):1.0
+SubClassOf(EDSS-1v1,is-a-variable-of only EDSS-1,):1.0
+SubClassOf(EDSS-1v1,has-for-model-acronym value var-acronym-EDSS-1v1,):1.0
+SubClassOf(EDSS-1v1,explores exactly 1 visual-function,):1.0
+SubClassOf(EDSS-1v1,measures exactly 1 optic-functions-performance):1.0
+is(EDSS-2,Class):1.0
+SubClassOf(EDSS-2,mono-domain-instrument,):1.0
+SubClassOf(EDSS-2,neuroclinical-instrument,):1.0
+SubClassOf(EDSS-2,sub-instrument,):1.0
+SubClassOf(EDSS-2,test-instrument,):1.0
+SubClassOf(EDSS-2,explores some cranial-nerves-functions,):1.0
+SubClassOf(EDSS-2,is-a-sub-instrument-of some EDSS,):1.0
+SubClassOf(EDSS-2,has-for-model-acronym value instr-acronym-EDSS-2,):1.0
+SubClassOf(EDSS-2,has-for-model-name value instr-name-EDSS-2,):1.0
+SubClassOf(EDSS-2,refers-to value instr-def-article-KURTZKE-1983,):1.0
+SubClassOf(EDSS-2,has-for-variable exactly 1 EDSS-2v1):1.0
+is(EDSS-2v1,Class):1.0
+SubClassOf(EDSS-2v1,coded-variable,):1.0
+SubClassOf(EDSS-2v1,main-variable,):1.0
+SubClassOf(EDSS-2v1,is-a-variable-of some EDSS-2,):1.0
+SubClassOf(EDSS-2v1,is-a-variable-of only EDSS-2,):1.0
+SubClassOf(EDSS-2v1,has-for-model-acronym value var-acronym-EDSS-2v1,):1.0
+SubClassOf(EDSS-2v1,explores exactly 1 cranial-nerves-functions,):1.0
+SubClassOf(EDSS-2v1,measures exactly 1 brainstem-functions-performance):1.0
+is(EDSS-3,Class):1.0
+SubClassOf(EDSS-3,mono-domain-instrument,):1.0
+SubClassOf(EDSS-3,neuroclinical-instrument,):1.0
+SubClassOf(EDSS-3,sub-instrument,):1.0
+SubClassOf(EDSS-3,test-instrument,):1.0
+SubClassOf(EDSS-3,explores some motor-function,):1.0
+SubClassOf(EDSS-3,is-a-sub-instrument-of some EDSS,):1.0
+SubClassOf(EDSS-3,has-for-model-acronym value instr-acronym-EDSS-3,):1.0
+SubClassOf(EDSS-3,has-for-model-name value instr-name-EDSS-3,):1.0
+SubClassOf(EDSS-3,refers-to value instr-def-article-KURTZKE-1983,):1.0
+SubClassOf(EDSS-3,has-for-variable exactly 1 EDSS-3v1):1.0
+is(EDSS-3v1,Class):1.0
+SubClassOf(EDSS-3v1,coded-variable,):1.0
+SubClassOf(EDSS-3v1,main-variable,):1.0
+SubClassOf(EDSS-3v1,is-a-variable-of some EDSS-3,):1.0
+SubClassOf(EDSS-3v1,is-a-variable-of only EDSS-3,):1.0
+SubClassOf(EDSS-3v1,has-for-model-acronym value var-acronym-EDSS-3v1,):1.0
+SubClassOf(EDSS-3v1,explores exactly 1 motor-function,):1.0
+SubClassOf(EDSS-3v1,measures exactly 1 pyramidal-functions-performance):1.0
+is(EDSS-4,Class):1.0
+SubClassOf(EDSS-4,mono-domain-instrument,):1.0
+SubClassOf(EDSS-4,neuroclinical-instrument,):1.0
+SubClassOf(EDSS-4,sub-instrument,):1.0
+SubClassOf(EDSS-4,test-instrument,):1.0
+SubClassOf(EDSS-4,explores some cerebellar-functions,):1.0
+SubClassOf(EDSS-4,is-a-sub-instrument-of some EDSS,):1.0
+SubClassOf(EDSS-4,has-for-model-acronym value instr-acronym-EDSS-4,):1.0
+SubClassOf(EDSS-4,has-for-model-name value instr-name-EDSS-4,):1.0
+SubClassOf(EDSS-4,refers-to value instr-def-article-KURTZKE-1983,):1.0
+SubClassOf(EDSS-4,has-for-variable exactly 1 EDSS-4v1):1.0
+is(EDSS-4v1,Class):1.0
+SubClassOf(EDSS-4v1,coded-variable,):1.0
+SubClassOf(EDSS-4v1,main-variable,):1.0
+SubClassOf(EDSS-4v1,is-a-variable-of some EDSS-4,):1.0
+SubClassOf(EDSS-4v1,is-a-variable-of only EDSS-4,):1.0
+SubClassOf(EDSS-4v1,has-for-model-acronym value var-acronym-EDSS-4v1,):1.0
+SubClassOf(EDSS-4v1,explores exactly 1 cerebellar-functions,):1.0
+SubClassOf(EDSS-4v1,measures exactly 1 cerebellar-functions-performance):1.0
+is(EDSS-5,Class):1.0
+SubClassOf(EDSS-5,mono-domain-instrument,):1.0
+SubClassOf(EDSS-5,neuroclinical-instrument,):1.0
+SubClassOf(EDSS-5,sub-instrument,):1.0
+SubClassOf(EDSS-5,test-instrument,):1.0
+SubClassOf(EDSS-5,explores some sensory-function,):1.0
+SubClassOf(EDSS-5,is-a-sub-instrument-of some EDSS,):1.0
+SubClassOf(EDSS-5,has-for-model-acronym value instr-acronym-EDSS-5,):1.0
+SubClassOf(EDSS-5,has-for-model-name value instr-name-EDSS-5,):1.0
+SubClassOf(EDSS-5,refers-to value instr-def-article-KURTZKE-1983,):1.0
+SubClassOf(EDSS-5,has-for-variable exactly 1 EDSS-5v1):1.0
+is(EDSS-5v1,Class):1.0
+SubClassOf(EDSS-5v1,coded-variable,):1.0
+SubClassOf(EDSS-5v1,main-variable,):1.0
+SubClassOf(EDSS-5v1,is-a-variable-of some EDSS-5,):1.0
+SubClassOf(EDSS-5v1,is-a-variable-of only EDSS-5,):1.0
+SubClassOf(EDSS-5v1,has-for-model-acronym value var-acronym-EDSS-5v1,):1.0
+SubClassOf(EDSS-5v1,explores exactly 1 sensory-function,):1.0
+SubClassOf(EDSS-5v1,measures exactly 1 sensory-functions-performance):1.0
+is(EDSS-6,Class):1.0
+SubClassOf(EDSS-6,mono-domain-instrument,):1.0
+SubClassOf(EDSS-6,neuroclinical-instrument,):1.0
+SubClassOf(EDSS-6,questionnaire,):1.0
+SubClassOf(EDSS-6,sub-instrument,):1.0
+SubClassOf(EDSS-6,explores some bowel-and-bladder-function,):1.0
+SubClassOf(EDSS-6,is-a-sub-instrument-of some EDSS,):1.0
+SubClassOf(EDSS-6,has-for-model-acronym value instr-acronym-EDSS-6,):1.0
+SubClassOf(EDSS-6,has-for-model-name value instr-name-EDSS-6,):1.0
+SubClassOf(EDSS-6,refers-to value instr-def-article-KURTZKE-1983,):1.0
+SubClassOf(EDSS-6,has-for-variable exactly 1 EDSS-6v1):1.0
+is(EDSS-6v1,Class):1.0
+SubClassOf(EDSS-6v1,coded-variable,):1.0
+SubClassOf(EDSS-6v1,main-variable,):1.0
+SubClassOf(EDSS-6v1,is-a-variable-of some EDSS-6,):1.0
+SubClassOf(EDSS-6v1,is-a-variable-of only EDSS-6,):1.0
+SubClassOf(EDSS-6v1,has-for-model-acronym value var-acronym-EDSS-6v1,):1.0
+SubClassOf(EDSS-6v1,explores exactly 1 bowel-and-bladder-function,):1.0
+SubClassOf(EDSS-6v1,measures exactly 1 bowel-bladder-functions-performance):1.0
+is(EDSS-7,Class):1.0
+SubClassOf(EDSS-7,mono-domain-instrument,):1.0
+SubClassOf(EDSS-7,neuroclinical-instrument,):1.0
+SubClassOf(EDSS-7,questionnaire,):1.0
+SubClassOf(EDSS-7,sub-instrument,):1.0
+SubClassOf(EDSS-7,explores some cerebral-function,):1.0
+SubClassOf(EDSS-7,is-a-sub-instrument-of some EDSS,):1.0
+SubClassOf(EDSS-7,has-for-model-acronym value instr-acronym-EDSS-7,):1.0
+SubClassOf(EDSS-7,has-for-model-name value instr-name-EDSS-7,):1.0
+SubClassOf(EDSS-7,refers-to value instr-def-article-KURTZKE-1983,):1.0
+SubClassOf(EDSS-7,has-for-variable exactly 1 EDSS-7v1):1.0
+is(EDSS-7v1,Class):1.0
+SubClassOf(EDSS-7v1,coded-variable,):1.0
+SubClassOf(EDSS-7v1,main-variable,):1.0
+SubClassOf(EDSS-7v1,is-a-variable-of some EDSS-7,):1.0
+SubClassOf(EDSS-7v1,is-a-variable-of only EDSS-7,):1.0
+SubClassOf(EDSS-7v1,has-for-model-acronym value var-acronym-EDSS-7v1,):1.0
+SubClassOf(EDSS-7v1,explores exactly 1 cerebral-function,):1.0
+SubClassOf(EDSS-7v1,measures exactly 1 cerebral-functions-performance):1.0
+is(EDSS-8,Class):1.0
+SubClassOf(EDSS-8,mono-domain-instrument,):1.0
+SubClassOf(EDSS-8,neuroclinical-instrument,):1.0
+SubClassOf(EDSS-8,sub-instrument,):1.0
+SubClassOf(EDSS-8,test-instrument,):1.0
+SubClassOf(EDSS-8,explores some ambulation,):1.0
+SubClassOf(EDSS-8,is-a-sub-instrument-of some EDSS,):1.0
+SubClassOf(EDSS-8,has-for-model-acronym value instr-acronym-EDSS-8,):1.0
+SubClassOf(EDSS-8,has-for-model-name value instr-name-EDSS-8,):1.0
+SubClassOf(EDSS-8,refers-to value instr-def-article-KURTZKE-1983,):1.0
+SubClassOf(EDSS-8,has-for-variable exactly 1 EDSS-8v1,):1.0
+SubClassOf(EDSS-8,has-for-variable exactly 1 EDSS-8v2,):1.0
+SubClassOf(EDSS-8,has-for-variable exactly 1 EDSS-8v3):1.0
+is(EDSS-8v1,Class):1.0
+SubClassOf(EDSS-8v1,main-variable,):1.0
+SubClassOf(EDSS-8v1,numerical-variable,):1.0
+SubClassOf(EDSS-8v1,is-a-variable-of some EDSS-8,):1.0
+SubClassOf(EDSS-8v1,is-a-variable-of only EDSS-8,):1.0
+SubClassOf(EDSS-8v1,has-for-model-acronym value var-acronym-EDSS-8v1,):1.0
+SubClassOf(EDSS-8v1,explores exactly 1 ambulation,):1.0
+SubClassOf(EDSS-8v1,measures exactly 1 ambulation-performance-without-assistance):1.0
+is(EDSS-8v2,Class):1.0
+SubClassOf(EDSS-8v2,main-variable,):1.0
+SubClassOf(EDSS-8v2,numerical-variable,):1.0
+SubClassOf(EDSS-8v2,is-a-variable-of some EDSS-8,):1.0
+SubClassOf(EDSS-8v2,is-a-variable-of only EDSS-8,):1.0
+SubClassOf(EDSS-8v2,has-for-model-acronym value var-acronym-EDSS-8v2,):1.0
+SubClassOf(EDSS-8v2,explores exactly 1 ambulation,):1.0
+SubClassOf(EDSS-8v2,measures exactly 1 ambulation-performance-with-unilateral-assistance):1.0
+is(EDSS-8v3,Class):1.0
+SubClassOf(EDSS-8v3,main-variable,):1.0
+SubClassOf(EDSS-8v3,numerical-variable,):1.0
+SubClassOf(EDSS-8v3,is-a-variable-of some EDSS-8,):1.0
+SubClassOf(EDSS-8v3,is-a-variable-of only EDSS-8,):1.0
+SubClassOf(EDSS-8v3,has-for-model-acronym value var-acronym-EDSS-8v3,):1.0
+SubClassOf(EDSS-8v3,explores exactly 1 ambulation,):1.0
+SubClassOf(EDSS-8v3,measures exactly 1 ambulation-performance-with-bilateral-assistance):1.0
+is(EDSSv1,Class):1.0
+SubClassOf(EDSSv1,coded-variable,):1.0
+SubClassOf(EDSSv1,main-variable,):1.0
+SubClassOf(EDSSv1,is-a-variable-of some EDSS,):1.0
+SubClassOf(EDSSv1,is-a-variable-of only EDSS,):1.0
+SubClassOf(EDSSv1,has-for-model-acronym value var-acronym-EDSSv1,):1.0
+SubClassOf(EDSSv1,explores exactly 1 neurological-functions,):1.0
+SubClassOf(EDSSv1,measures exactly 1 disability-status):1.0
+is(FCSRT-IR,Class):1.0
+SubClassOf(FCSRT-IR,mono-domain-instrument,):1.0
+SubClassOf(FCSRT-IR,neuropsychological-instrument,):1.0
+SubClassOf(FCSRT-IR,test-instrument,):1.0
+SubClassOf(FCSRT-IR,explores some episodic-memory,):1.0
+SubClassOf(FCSRT-IR,has-for-sub-instrument some FCSRT-IR-1,):1.0
+SubClassOf(FCSRT-IR,has-for-sub-instrument some FCSRT-IR-2,):1.0
+SubClassOf(FCSRT-IR,has-for-sub-instrument some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR,has-for-sub-instrument some FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR,has-for-sub-instrument some FCSRT-IR-5,):1.0
+SubClassOf(FCSRT-IR,has-for-model-acronym value instr-acronym-FCSRT-IR,):1.0
+SubClassOf(FCSRT-IR,has-for-model-name value instr-name-FCSRT-IR):1.0
+is(FCSRT-IR-1,Class):1.0
+SubClassOf(FCSRT-IR-1,mono-domain-instrument,):1.0
+SubClassOf(FCSRT-IR-1,neuropsychological-instrument,):1.0
+SubClassOf(FCSRT-IR-1,sub-instrument,):1.0
+SubClassOf(FCSRT-IR-1,test-instrument,):1.0
+SubClassOf(FCSRT-IR-1,explores some verbal-memory-encoding,):1.0
+SubClassOf(FCSRT-IR-1,is-a-sub-instrument-of some FCSRT-IR,):1.0
+SubClassOf(FCSRT-IR-1,has-for-model-acronym value instr-acronym-FCSRT-IR-1,):1.0
+SubClassOf(FCSRT-IR-1,has-for-model-name value instr-name-FCSRT-IR-1,):1.0
+SubClassOf(FCSRT-IR-1,has-for-variable exactly 1 FCSRT-IR-1v1):1.0
+is(FCSRT-IR-1v1,Class):1.0
+SubClassOf(FCSRT-IR-1v1,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-1v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-1v1,main-variable,):1.0
+SubClassOf(FCSRT-IR-1v1,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-1v1,is-a-variable-of some FCSRT-IR-1,):1.0
+SubClassOf(FCSRT-IR-1v1,is-a-variable-of only FCSRT-IR-1,):1.0
+SubClassOf(FCSRT-IR-1v1,has-for-model-acronym value var-acronym-FCSRT-IR-1v1,):1.0
+SubClassOf(FCSRT-IR-1v1,explores exactly 1 verbal-memory-encoding,):1.0
+SubClassOf(FCSRT-IR-1v1,measures exactly 1 number-of-words-correctly-identified):1.0
+is(FCSRT-IR-2,Class):1.0
+SubClassOf(FCSRT-IR-2,mono-domain-instrument,):1.0
+SubClassOf(FCSRT-IR-2,neuropsychological-instrument,):1.0
+SubClassOf(FCSRT-IR-2,sub-instrument,):1.0
+SubClassOf(FCSRT-IR-2,test-instrument,):1.0
+SubClassOf(FCSRT-IR-2,explores some verbal-memory-encoding,):1.0
+SubClassOf(FCSRT-IR-2,is-a-sub-instrument-of some FCSRT-IR,):1.0
+SubClassOf(FCSRT-IR-2,has-for-model-acronym value instr-acronym-FCSRT-IR-2,):1.0
+SubClassOf(FCSRT-IR-2,has-for-model-name value instr-name-FCSRT-IR-2,):1.0
+SubClassOf(FCSRT-IR-2,has-for-variable exactly 1 FCSRT-IR-2v1):1.0
+is(FCSRT-IR-2v1,Class):1.0
+SubClassOf(FCSRT-IR-2v1,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-2v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-2v1,main-variable,):1.0
+SubClassOf(FCSRT-IR-2v1,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-2v1,is-a-variable-of some FCSRT-IR-2,):1.0
+SubClassOf(FCSRT-IR-2v1,is-a-variable-of only FCSRT-IR-2,):1.0
+SubClassOf(FCSRT-IR-2v1,has-for-model-acronym value var-acronym-FCSRT-IR-2v1,):1.0
+SubClassOf(FCSRT-IR-2v1,explores exactly 1 verbal-memory-encoding,):1.0
+SubClassOf(FCSRT-IR-2v1,measures exactly 1 number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3,Class):1.0
+SubClassOf(FCSRT-IR-3,mono-domain-instrument,):1.0
+SubClassOf(FCSRT-IR-3,neuropsychological-instrument,):1.0
+SubClassOf(FCSRT-IR-3,sub-instrument,):1.0
+SubClassOf(FCSRT-IR-3,test-instrument,):1.0
+SubClassOf(FCSRT-IR-3,explores some verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3,has-for-sub-instrument some FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3,has-for-sub-instrument some FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3,has-for-sub-instrument some FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3,is-a-sub-instrument-of some FCSRT-IR,):1.0
+SubClassOf(FCSRT-IR-3,has-for-model-acronym value instr-acronym-FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3,has-for-model-name value instr-name-FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3,has-for-variable exactly 1 FCSRT-IR-3v1,):1.0
+SubClassOf(FCSRT-IR-3,has-for-variable exactly 1 FCSRT-IR-3v2,):1.0
+SubClassOf(FCSRT-IR-3,has-for-variable exactly 1 FCSRT-IR-3v3,):1.0
+SubClassOf(FCSRT-IR-3,has-for-variable exactly 1 FCSRT-IR-3v4,):1.0
+SubClassOf(FCSRT-IR-3,has-for-variable exactly 1 FCSRT-IR-3v5,):1.0
+SubClassOf(FCSRT-IR-3,has-for-variable exactly 1 FCSRT-IR-3v6):1.0
+is(FCSRT-IR-3-1,Class):1.0
+SubClassOf(FCSRT-IR-3-1,mono-domain-instrument,):1.0
+SubClassOf(FCSRT-IR-3-1,neuropsychological-instrument,):1.0
+SubClassOf(FCSRT-IR-3-1,sub-instrument,):1.0
+SubClassOf(FCSRT-IR-3-1,test-instrument,):1.0
+SubClassOf(FCSRT-IR-3-1,explores some verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-1,is-a-sub-instrument-of some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3-1,has-for-model-acronym value instr-acronym-FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1,has-for-model-name value instr-name-FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1,has-for-variable exactly 1 FCSRT-IR-3-1v1,):1.0
+SubClassOf(FCSRT-IR-3-1,has-for-variable exactly 1 FCSRT-IR-3-1v2,):1.0
+SubClassOf(FCSRT-IR-3-1,has-for-variable exactly 1 FCSRT-IR-3-1v3,):1.0
+SubClassOf(FCSRT-IR-3-1,has-for-variable exactly 1 FCSRT-IR-3-1v4,):1.0
+SubClassOf(FCSRT-IR-3-1,has-for-variable exactly 1 FCSRT-IR-3-1v5,):1.0
+SubClassOf(FCSRT-IR-3-1,has-for-variable exactly 1 FCSRT-IR-3-1v6):1.0
+is(FCSRT-IR-3-1v1,Class):1.0
+SubClassOf(FCSRT-IR-3-1v1,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v1,main-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v1,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v1,is-a-variable-of some FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v1,is-a-variable-of only FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v1,has-for-model-acronym value var-acronym-FCSRT-IR-3-1v1,):1.0
+SubClassOf(FCSRT-IR-3-1v1,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-1v1,measures exactly 1 number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3-1v2,Class):1.0
+SubClassOf(FCSRT-IR-3-1v2,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v2,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v2,main-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v2,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v2,is-a-variable-of some FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v2,is-a-variable-of only FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v2,has-for-model-acronym value var-acronym-FCSRT-IR-3-1v2,):1.0
+SubClassOf(FCSRT-IR-3-1v2,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-1v2,measures exactly 1 number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3-1v3,Class):1.0
+SubClassOf(FCSRT-IR-3-1v3,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v3,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v3,main-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v3,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v3,is-a-variable-of some FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v3,is-a-variable-of only FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v3,has-for-model-acronym value var-acronym-FCSRT-IR-3-1v3,):1.0
+SubClassOf(FCSRT-IR-3-1v3,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-1v3,measures exactly 1 total-number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3-1v4,Class):1.0
+SubClassOf(FCSRT-IR-3-1v4,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v4,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v4,is-a-variable-of some FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v4,is-a-variable-of only FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v4,has-for-model-acronym value var-acronym-FCSRT-IR-3-1v4,):1.0
+SubClassOf(FCSRT-IR-3-1v4,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-1v4,measures exactly 1 number-of-intrusions):1.0
+is(FCSRT-IR-3-1v5,Class):1.0
+SubClassOf(FCSRT-IR-3-1v5,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v5,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v5,is-a-variable-of some FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v5,is-a-variable-of only FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v5,has-for-model-acronym value var-acronym-FCSRT-IR-3-1v5,):1.0
+SubClassOf(FCSRT-IR-3-1v5,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-3-1v5,measures exactly 1 number-of-interferences):1.0
+is(FCSRT-IR-3-1v6,Class):1.0
+SubClassOf(FCSRT-IR-3-1v6,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v6,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3-1v6,is-a-variable-of some FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v6,is-a-variable-of only FCSRT-IR-3-1,):1.0
+SubClassOf(FCSRT-IR-3-1v6,has-for-model-acronym value var-acronym-FCSRT-IR-3-1v6,):1.0
+SubClassOf(FCSRT-IR-3-1v6,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-3-1v6,measures exactly 1 number-of-perseverations):1.0
+is(FCSRT-IR-3-2,Class):1.0
+SubClassOf(FCSRT-IR-3-2,mono-domain-instrument,):1.0
+SubClassOf(FCSRT-IR-3-2,neuropsychological-instrument,):1.0
+SubClassOf(FCSRT-IR-3-2,sub-instrument,):1.0
+SubClassOf(FCSRT-IR-3-2,test-instrument,):1.0
+SubClassOf(FCSRT-IR-3-2,explores some verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-2,is-a-sub-instrument-of some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3-2,has-for-model-acronym value instr-acronym-FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2,has-for-model-name value instr-name-FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2,has-for-variable exactly 1 FCSRT-IR-3-2v1,):1.0
+SubClassOf(FCSRT-IR-3-2,has-for-variable exactly 1 FCSRT-IR-3-2v2,):1.0
+SubClassOf(FCSRT-IR-3-2,has-for-variable exactly 1 FCSRT-IR-3-2v3,):1.0
+SubClassOf(FCSRT-IR-3-2,has-for-variable exactly 1 FCSRT-IR-3-2v4,):1.0
+SubClassOf(FCSRT-IR-3-2,has-for-variable exactly 1 FCSRT-IR-3-2v5,):1.0
+SubClassOf(FCSRT-IR-3-2,has-for-variable exactly 1 FCSRT-IR-3-2v6):1.0
+is(FCSRT-IR-3-2v1,Class):1.0
+SubClassOf(FCSRT-IR-3-2v1,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v1,main-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v1,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v1,is-a-variable-of some FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v1,is-a-variable-of only FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v1,has-for-model-acronym value var-acronym-FCSRT-IR-3-2v1,):1.0
+SubClassOf(FCSRT-IR-3-2v1,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-2v1,measures exactly 1 number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3-2v2,Class):1.0
+SubClassOf(FCSRT-IR-3-2v2,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v2,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v2,main-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v2,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v2,is-a-variable-of some FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v2,is-a-variable-of only FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v2,has-for-model-acronym value var-acronym-FCSRT-IR-3-2v2,):1.0
+SubClassOf(FCSRT-IR-3-2v2,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-2v2,measures exactly 1 number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3-2v3,Class):1.0
+SubClassOf(FCSRT-IR-3-2v3,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v3,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v3,main-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v3,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v3,is-a-variable-of some FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v3,is-a-variable-of only FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v3,has-for-model-acronym value var-acronym-FCSRT-IR-3-2v3,):1.0
+SubClassOf(FCSRT-IR-3-2v3,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-2v3,measures exactly 1 total-number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3-2v4,Class):1.0
+SubClassOf(FCSRT-IR-3-2v4,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v4,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v4,is-a-variable-of some FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v4,is-a-variable-of only FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v4,has-for-model-acronym value var-acronym-FCSRT-IR-3-2v4,):1.0
+SubClassOf(FCSRT-IR-3-2v4,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-2v4,measures exactly 1 number-of-intrusions):1.0
+is(FCSRT-IR-3-2v5,Class):1.0
+SubClassOf(FCSRT-IR-3-2v5,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v5,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v5,is-a-variable-of some FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v5,is-a-variable-of only FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v5,has-for-model-acronym value var-acronym-FCSRT-IR-3-2v5,):1.0
+SubClassOf(FCSRT-IR-3-2v5,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-3-2v5,measures exactly 1 number-of-interferences):1.0
+is(FCSRT-IR-3-2v6,Class):1.0
+SubClassOf(FCSRT-IR-3-2v6,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v6,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3-2v6,is-a-variable-of some FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v6,is-a-variable-of only FCSRT-IR-3-2,):1.0
+SubClassOf(FCSRT-IR-3-2v6,has-for-model-acronym value var-acronym-FCSRT-IR-3-2v6,):1.0
+SubClassOf(FCSRT-IR-3-2v6,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-3-2v6,measures exactly 1 number-of-perseverations):1.0
+is(FCSRT-IR-3-3,Class):1.0
+SubClassOf(FCSRT-IR-3-3,mono-domain-instrument,):1.0
+SubClassOf(FCSRT-IR-3-3,neuropsychological-instrument,):1.0
+SubClassOf(FCSRT-IR-3-3,sub-instrument,):1.0
+SubClassOf(FCSRT-IR-3-3,test-instrument,):1.0
+SubClassOf(FCSRT-IR-3-3,explores some verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-3,is-a-sub-instrument-of some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3-3,has-for-model-acronym value instr-acronym-FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3,has-for-model-name value instr-name-FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3,has-for-variable exactly 1 FCSRT-IR-3-3v1,):1.0
+SubClassOf(FCSRT-IR-3-3,has-for-variable exactly 1 FCSRT-IR-3-3v2,):1.0
+SubClassOf(FCSRT-IR-3-3,has-for-variable exactly 1 FCSRT-IR-3-3v3,):1.0
+SubClassOf(FCSRT-IR-3-3,has-for-variable exactly 1 FCSRT-IR-3-3v4,):1.0
+SubClassOf(FCSRT-IR-3-3,has-for-variable exactly 1 FCSRT-IR-3-3v5,):1.0
+SubClassOf(FCSRT-IR-3-3,has-for-variable exactly 1 FCSRT-IR-3-3v6):1.0
+is(FCSRT-IR-3-3v1,Class):1.0
+SubClassOf(FCSRT-IR-3-3v1,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v1,main-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v1,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v1,is-a-variable-of some FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v1,is-a-variable-of only FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v1,has-for-model-acronym value var-acronym-FCSRT-IR-3-3v1,):1.0
+SubClassOf(FCSRT-IR-3-3v1,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-3v1,measures exactly 1 number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3-3v2,Class):1.0
+SubClassOf(FCSRT-IR-3-3v2,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v2,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v2,main-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v2,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v2,is-a-variable-of some FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v2,is-a-variable-of only FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v2,has-for-model-acronym value var-acronym-FCSRT-IR-3-3v2,):1.0
+SubClassOf(FCSRT-IR-3-3v2,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-3v2,measures exactly 1 number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3-3v3,Class):1.0
+SubClassOf(FCSRT-IR-3-3v3,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v3,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v3,main-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v3,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v3,is-a-variable-of some FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v3,is-a-variable-of only FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v3,has-for-model-acronym value var-acronym-FCSRT-IR-3-3v3,):1.0
+SubClassOf(FCSRT-IR-3-3v3,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-3v3,measures exactly 1 total-number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-3-3v4,Class):1.0
+SubClassOf(FCSRT-IR-3-3v4,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v4,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v4,is-a-variable-of some FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v4,is-a-variable-of only FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v4,has-for-model-acronym value var-acronym-FCSRT-IR-3-3v4,):1.0
+SubClassOf(FCSRT-IR-3-3v4,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3-3v4,measures exactly 1 number-of-intrusions):1.0
+is(FCSRT-IR-3-3v5,Class):1.0
+SubClassOf(FCSRT-IR-3-3v5,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v5,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v5,is-a-variable-of some FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v5,is-a-variable-of only FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v5,has-for-model-acronym value var-acronym-FCSRT-IR-3-3v5,):1.0
+SubClassOf(FCSRT-IR-3-3v5,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-3-3v5,measures exactly 1 number-of-interferences):1.0
+is(FCSRT-IR-3-3v6,Class):1.0
+SubClassOf(FCSRT-IR-3-3v6,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v6,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3-3v6,is-a-variable-of some FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v6,is-a-variable-of only FCSRT-IR-3-3,):1.0
+SubClassOf(FCSRT-IR-3-3v6,has-for-model-acronym value var-acronym-FCSRT-IR-3-3v6,):1.0
+SubClassOf(FCSRT-IR-3-3v6,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-3-3v6,measures exactly 1 number-of-perseverations):1.0
+is(FCSRT-IR-3v1,Class):1.0
+SubClassOf(FCSRT-IR-3v1,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3v1,main-variable,):1.0
+SubClassOf(FCSRT-IR-3v1,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3v1,is-a-variable-of some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v1,is-a-variable-of only FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v1,has-for-model-acronym value var-acronym-FCSRT-IR-3v1,):1.0
+SubClassOf(FCSRT-IR-3v1,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3v1,measures exactly 1 total-number-of-words-correctly-retrieved-on-the-three-successive-trials):1.0
+is(FCSRT-IR-3v2,Class):1.0
+SubClassOf(FCSRT-IR-3v2,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3v2,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3v2,main-variable,):1.0
+SubClassOf(FCSRT-IR-3v2,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3v2,is-a-variable-of some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v2,is-a-variable-of only FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v2,has-for-model-acronym value var-acronym-FCSRT-IR-3v2,):1.0
+SubClassOf(FCSRT-IR-3v2,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3v2,measures exactly 1 total-number-of-words-correctly-retrieved-on-the-three-successive-trials):1.0
+is(FCSRT-IR-3v3,Class):1.0
+SubClassOf(FCSRT-IR-3v3,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3v3,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-3v3,main-variable,):1.0
+SubClassOf(FCSRT-IR-3v3,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3v3,is-a-variable-of some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v3,is-a-variable-of only FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v3,has-for-model-acronym value var-acronym-FCSRT-IR-3v3,):1.0
+SubClassOf(FCSRT-IR-3v3,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3v3,measures exactly 1 total-number-of-words-correctly-retrieved-on-the-three-successive-trials):1.0
+is(FCSRT-IR-3v4,Class):1.0
+SubClassOf(FCSRT-IR-3v4,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3v4,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3v4,is-a-variable-of some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v4,is-a-variable-of only FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v4,has-for-model-acronym value var-acronym-FCSRT-IR-3v4,):1.0
+SubClassOf(FCSRT-IR-3v4,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-3v4,measures exactly 1 number-of-intrusions):1.0
+is(FCSRT-IR-3v5,Class):1.0
+SubClassOf(FCSRT-IR-3v5,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3v5,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3v5,is-a-variable-of some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v5,is-a-variable-of only FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v5,has-for-model-acronym value var-acronym-FCSRT-IR-3v5,):1.0
+SubClassOf(FCSRT-IR-3v5,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-3v5,measures exactly 1 number-of-interferences):1.0
+is(FCSRT-IR-3v6,Class):1.0
+SubClassOf(FCSRT-IR-3v6,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-3v6,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-3v6,is-a-variable-of some FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v6,is-a-variable-of only FCSRT-IR-3,):1.0
+SubClassOf(FCSRT-IR-3v6,has-for-model-acronym value var-acronym-FCSRT-IR-3v6,):1.0
+SubClassOf(FCSRT-IR-3v6,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-3v6,measures exactly 1 number-of-perseverations):1.0
+is(FCSRT-IR-4,Class):1.0
+SubClassOf(FCSRT-IR-4,mono-domain-instrument,):1.0
+SubClassOf(FCSRT-IR-4,neuropsychological-instrument,):1.0
+SubClassOf(FCSRT-IR-4,sub-instrument,):1.0
+SubClassOf(FCSRT-IR-4,test-instrument,):1.0
+SubClassOf(FCSRT-IR-4,explores some verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-4,is-a-sub-instrument-of some FCSRT-IR,):1.0
+SubClassOf(FCSRT-IR-4,has-for-model-acronym value instr-acronym-FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4,has-for-model-name value instr-name-FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4,has-for-variable exactly 1 FCSRT-IR-4v1,):1.0
+SubClassOf(FCSRT-IR-4,has-for-variable exactly 1 FCSRT-IR-4v2,):1.0
+SubClassOf(FCSRT-IR-4,has-for-variable exactly 1 FCSRT-IR-4v3,):1.0
+SubClassOf(FCSRT-IR-4,has-for-variable exactly 1 FCSRT-IR-4v4,):1.0
+SubClassOf(FCSRT-IR-4,has-for-variable exactly 1 FCSRT-IR-4v5,):1.0
+SubClassOf(FCSRT-IR-4,has-for-variable exactly 1 FCSRT-IR-4v6):1.0
+is(FCSRT-IR-4v1,Class):1.0
+SubClassOf(FCSRT-IR-4v1,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-4v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-4v1,main-variable,):1.0
+SubClassOf(FCSRT-IR-4v1,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-4v1,is-a-variable-of some FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v1,is-a-variable-of only FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v1,has-for-model-acronym value var-acronym-FCSRT-IR-4v1,):1.0
+SubClassOf(FCSRT-IR-4v1,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-4v1,measures exactly 1 number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-4v2,Class):1.0
+SubClassOf(FCSRT-IR-4v2,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-4v2,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-4v2,main-variable,):1.0
+SubClassOf(FCSRT-IR-4v2,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-4v2,is-a-variable-of some FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v2,is-a-variable-of only FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v2,has-for-model-acronym value var-acronym-FCSRT-IR-4v2,):1.0
+SubClassOf(FCSRT-IR-4v2,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-4v2,measures exactly 1 number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-4v3,Class):1.0
+SubClassOf(FCSRT-IR-4v3,age-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-4v3,cultural-skill-dependent-variable,):1.0
+SubClassOf(FCSRT-IR-4v3,main-variable,):1.0
+SubClassOf(FCSRT-IR-4v3,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-4v3,is-a-variable-of some FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v3,is-a-variable-of only FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v3,has-for-model-acronym value var-acronym-FCSRT-IR-4v3,):1.0
+SubClassOf(FCSRT-IR-4v3,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-4v3,measures exactly 1 total-number-of-words-correctly-retrieved):1.0
+is(FCSRT-IR-4v4,Class):1.0
+SubClassOf(FCSRT-IR-4v4,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-4v4,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-4v4,is-a-variable-of some FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v4,is-a-variable-of only FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v4,has-for-model-acronym value var-acronym-FCSRT-IR-4v4,):1.0
+SubClassOf(FCSRT-IR-4v4,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-4v4,measures exactly 1 number-of-intrusions):1.0
+is(FCSRT-IR-4v5,Class):1.0
+SubClassOf(FCSRT-IR-4v5,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-4v5,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-4v5,is-a-variable-of some FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v5,is-a-variable-of only FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v5,has-for-model-acronym value var-acronym-FCSRT-IR-4v5,):1.0
+SubClassOf(FCSRT-IR-4v5,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-4v5,measures exactly 1 number-of-interferences):1.0
+is(FCSRT-IR-4v6,Class):1.0
+SubClassOf(FCSRT-IR-4v6,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-4v6,secondary-variable,):1.0
+SubClassOf(FCSRT-IR-4v6,is-a-variable-of some FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v6,is-a-variable-of only FCSRT-IR-4,):1.0
+SubClassOf(FCSRT-IR-4v6,has-for-model-acronym value var-acronym-FCSRT-IR-4v6,):1.0
+SubClassOf(FCSRT-IR-4v6,explores exactly 1 executive-functions,):1.0
+SubClassOf(FCSRT-IR-4v6,measures exactly 1 number-of-perseverations):1.0
+is(FCSRT-IR-5,Class):1.0
+SubClassOf(FCSRT-IR-5,mono-domain-instrument,):1.0
+SubClassOf(FCSRT-IR-5,neuropsychological-instrument,):1.0
+SubClassOf(FCSRT-IR-5,sub-instrument,):1.0
+SubClassOf(FCSRT-IR-5,test-instrument,):1.0
+SubClassOf(FCSRT-IR-5,explores some verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-5,is-a-sub-instrument-of some FCSRT-IR,):1.0
+SubClassOf(FCSRT-IR-5,has-for-model-acronym value instr-acronym-FCSRT-IR-5,):1.0
+SubClassOf(FCSRT-IR-5,has-for-model-name value instr-name-FCSRT-IR-5,):1.0
+SubClassOf(FCSRT-IR-5,has-for-variable exactly 1 FCSRT-IR-5v1,):1.0
+SubClassOf(FCSRT-IR-5,has-for-variable exactly 1 FCSRT-IR-5v2):1.0
+is(FCSRT-IR-5v1,Class):1.0
+SubClassOf(FCSRT-IR-5v1,main-variable,):1.0
+SubClassOf(FCSRT-IR-5v1,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-5v1,is-a-variable-of some FCSRT-IR-5,):1.0
+SubClassOf(FCSRT-IR-5v1,is-a-variable-of only FCSRT-IR-5,):1.0
+SubClassOf(FCSRT-IR-5v1,has-for-model-acronym value var-acronym-FCSRT-IR-5v1,):1.0
+SubClassOf(FCSRT-IR-5v1,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-5v1,measures exactly 1 number-of-correct-recognitions-hits):1.0
+is(FCSRT-IR-5v2,Class):1.0
+SubClassOf(FCSRT-IR-5v2,main-variable,):1.0
+SubClassOf(FCSRT-IR-5v2,numerical-variable,):1.0
+SubClassOf(FCSRT-IR-5v2,is-a-variable-of some FCSRT-IR-5,):1.0
+SubClassOf(FCSRT-IR-5v2,is-a-variable-of only FCSRT-IR-5,):1.0
+SubClassOf(FCSRT-IR-5v2,has-for-model-acronym value var-acronym-FCSRT-IR-5v2,):1.0
+SubClassOf(FCSRT-IR-5v2,explores exactly 1 verbal-long-term-memory,):1.0
+SubClassOf(FCSRT-IR-5v2,measures exactly 1 number-of-false-recognitions):1.0
+is(MMS,Class):1.0
+SubClassOf(MMS,mono-domain-instrument,):1.0
+SubClassOf(MMS,neuropsychological-instrument,):1.0
+SubClassOf(MMS,test-instrument,):1.0
+SubClassOf(MMS,explores some global-cognitive-efficiency,):1.0
+SubClassOf(MMS,has-for-sub-instrument some MMS-1,):1.0
+SubClassOf(MMS,has-for-sub-instrument some MMS-2,):1.0
+SubClassOf(MMS,has-for-sub-instrument some MMS-3,):1.0
+SubClassOf(MMS,has-for-sub-instrument some MMS-4,):1.0
+SubClassOf(MMS,has-for-sub-instrument some MMS-5,):1.0
+SubClassOf(MMS,has-for-sub-instrument some MMS-6,):1.0
+SubClassOf(MMS,has-for-model-acronym value instr-acronym-MMS,):1.0
+SubClassOf(MMS,has-for-model-name value instr-name-MMS,):1.0
+SubClassOf(MMS,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS,has-for-variable exactly 1 MMSv1):1.0
+is(MMS-1,Class):1.0
+SubClassOf(MMS-1,mono-domain-instrument,):1.0
+SubClassOf(MMS-1,neuropsychological-instrument,):1.0
+SubClassOf(MMS-1,sub-instrument,):1.0
+SubClassOf(MMS-1,test-instrument,):1.0
+SubClassOf(MMS-1,explores some orientation,):1.0
+SubClassOf(MMS-1,has-for-sub-instrument some MMS-1-1,):1.0
+SubClassOf(MMS-1,has-for-sub-instrument some MMS-1-2,):1.0
+SubClassOf(MMS-1,is-a-sub-instrument-of some MMS,):1.0
+SubClassOf(MMS-1,has-for-model-acronym value instr-acronym-MMS-1,):1.0
+SubClassOf(MMS-1,has-for-model-name value instr-name-MMS-1,):1.0
+SubClassOf(MMS-1,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-1,has-for-variable exactly 1 MMS-1v1):1.0
+is(MMS-1-1,Class):1.0
+SubClassOf(MMS-1-1,mono-domain-instrument,):1.0
+SubClassOf(MMS-1-1,neuropsychological-instrument,):1.0
+SubClassOf(MMS-1-1,sub-instrument,):1.0
+SubClassOf(MMS-1-1,test-instrument,):1.0
+SubClassOf(MMS-1-1,explores some orientation-to-time,):1.0
+SubClassOf(MMS-1-1,is-a-sub-instrument-of some MMS-1,):1.0
+SubClassOf(MMS-1-1,has-for-model-acronym value instr-acronym-MMS-1-1,):1.0
+SubClassOf(MMS-1-1,has-for-model-name value instr-name-MMS-1-1,):1.0
+SubClassOf(MMS-1-1,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-1-1,has-for-variable exactly 1 MMS-1-1v1):1.0
+is(MMS-1-1v1,Class):1.0
+SubClassOf(MMS-1-1v1,age-dependent-variable,):1.0
+SubClassOf(MMS-1-1v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-1-1v1,main-variable,):1.0
+SubClassOf(MMS-1-1v1,numerical-variable,):1.0
+SubClassOf(MMS-1-1v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-1-1v1,is-a-variable-of some MMS-1-1,):1.0
+SubClassOf(MMS-1-1v1,is-a-variable-of only MMS-1-1,):1.0
+SubClassOf(MMS-1-1v1,has-for-model-acronym value var-acronym-MMS-1-1v1,):1.0
+SubClassOf(MMS-1-1v1,explores exactly 1 orientation-to-time,):1.0
+SubClassOf(MMS-1-1v1,measures exactly 1 performance-on-orientation-to-time):1.0
+is(MMS-1-2,Class):1.0
+SubClassOf(MMS-1-2,mono-domain-instrument,):1.0
+SubClassOf(MMS-1-2,neuropsychological-instrument,):1.0
+SubClassOf(MMS-1-2,sub-instrument,):1.0
+SubClassOf(MMS-1-2,test-instrument,):1.0
+SubClassOf(MMS-1-2,explores some orientation-to-place,):1.0
+SubClassOf(MMS-1-2,is-a-sub-instrument-of some MMS-1,):1.0
+SubClassOf(MMS-1-2,has-for-model-acronym value instr-acronym-MMS-1-2,):1.0
+SubClassOf(MMS-1-2,has-for-model-name value instr-name-MMS-1-2,):1.0
+SubClassOf(MMS-1-2,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-1-2,has-for-variable exactly 1 MMS-1-2v1):1.0
+is(MMS-1-2v1,Class):1.0
+SubClassOf(MMS-1-2v1,age-dependent-variable,):1.0
+SubClassOf(MMS-1-2v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-1-2v1,main-variable,):1.0
+SubClassOf(MMS-1-2v1,numerical-variable,):1.0
+SubClassOf(MMS-1-2v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-1-2v1,is-a-variable-of some MMS-1-2,):1.0
+SubClassOf(MMS-1-2v1,is-a-variable-of only MMS-1-2,):1.0
+SubClassOf(MMS-1-2v1,has-for-model-acronym value var-acronym-MMS-1-2v1,):1.0
+SubClassOf(MMS-1-2v1,explores exactly 1 orientation-to-place,):1.0
+SubClassOf(MMS-1-2v1,measures exactly 1 performance-on-orientation-to-place):1.0
+is(MMS-1v1,Class):1.0
+SubClassOf(MMS-1v1,age-dependent-variable,):1.0
+SubClassOf(MMS-1v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-1v1,main-variable,):1.0
+SubClassOf(MMS-1v1,numerical-variable,):1.0
+SubClassOf(MMS-1v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-1v1,is-a-variable-of some MMS-1,):1.0
+SubClassOf(MMS-1v1,is-a-variable-of only MMS-1,):1.0
+SubClassOf(MMS-1v1,has-for-model-acronym value var-acronym-MMS-1v1,):1.0
+SubClassOf(MMS-1v1,explores exactly 1 orientation,):1.0
+SubClassOf(MMS-1v1,measures exactly 1 performance-on-orientation):1.0
+is(MMS-2,Class):1.0
+SubClassOf(MMS-2,mono-domain-instrument,):1.0
+SubClassOf(MMS-2,neuropsychological-instrument,):1.0
+SubClassOf(MMS-2,sub-instrument,):1.0
+SubClassOf(MMS-2,test-instrument,):1.0
+SubClassOf(MMS-2,explores some short-term-verbal-memory,):1.0
+SubClassOf(MMS-2,is-a-sub-instrument-of some MMS,):1.0
+SubClassOf(MMS-2,has-for-model-acronym value instr-acronym-MMS-2,):1.0
+SubClassOf(MMS-2,has-for-model-name value instr-name-MMS-2,):1.0
+SubClassOf(MMS-2,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-2,has-for-variable exactly 1 MMS-2v1):1.0
+is(MMS-2v1,Class):1.0
+SubClassOf(MMS-2v1,age-dependent-variable,):1.0
+SubClassOf(MMS-2v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-2v1,main-variable,):1.0
+SubClassOf(MMS-2v1,numerical-variable,):1.0
+SubClassOf(MMS-2v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-2v1,is-a-variable-of some MMS-2,):1.0
+SubClassOf(MMS-2v1,is-a-variable-of only MMS-2,):1.0
+SubClassOf(MMS-2v1,has-for-model-acronym value var-acronym-MMS-2v1,):1.0
+SubClassOf(MMS-2v1,explores exactly 1 short-term-verbal-memory,):1.0
+SubClassOf(MMS-2v1,measures exactly 1 performance-on-registration-of-three-objects):1.0
+is(MMS-3,Class):1.0
+SubClassOf(MMS-3,mono-domain-instrument,):1.0
+SubClassOf(MMS-3,neuropsychological-instrument,):1.0
+SubClassOf(MMS-3,sub-instrument,):1.0
+SubClassOf(MMS-3,test-instrument,):1.0
+SubClassOf(MMS-3,explores some attention,):1.0
+SubClassOf(MMS-3,explores some calculation,):1.0
+SubClassOf(MMS-3,explores some working-memory,):1.0
+SubClassOf(MMS-3,is-a-sub-instrument-of some MMS,):1.0
+SubClassOf(MMS-3,has-for-model-acronym value instr-acronym-MMS-3,):1.0
+SubClassOf(MMS-3,has-for-model-name value instr-name-MMS-3,):1.0
+SubClassOf(MMS-3,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-3,has-for-variable exactly 1 MMS-3v1):1.0
+is(MMS-3v1,Class):1.0
+SubClassOf(MMS-3v1,age-dependent-variable,):1.0
+SubClassOf(MMS-3v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-3v1,main-variable,):1.0
+SubClassOf(MMS-3v1,numerical-variable,):1.0
+SubClassOf(MMS-3v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-3v1,is-a-variable-of some MMS-3,):1.0
+SubClassOf(MMS-3v1,is-a-variable-of only MMS-3,):1.0
+SubClassOf(MMS-3v1,has-for-model-acronym value var-acronym-MMS-3v1,):1.0
+SubClassOf(MMS-3v1,explores exactly 1 attention,):1.0
+SubClassOf(MMS-3v1,measures exactly 1 performance-on-counting-backwards-by-7):1.0
+is(MMS-4,Class):1.0
+SubClassOf(MMS-4,mono-domain-instrument,):1.0
+SubClassOf(MMS-4,neuropsychological-instrument,):1.0
+SubClassOf(MMS-4,sub-instrument,):1.0
+SubClassOf(MMS-4,test-instrument,):1.0
+SubClassOf(MMS-4,explores some long-term-verbal-memory,):1.0
+SubClassOf(MMS-4,is-a-sub-instrument-of some MMS,):1.0
+SubClassOf(MMS-4,has-for-model-acronym value instr-acronym-MMS-4,):1.0
+SubClassOf(MMS-4,has-for-model-name value instr-name-MMS-4,):1.0
+SubClassOf(MMS-4,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-4,has-for-variable exactly 1 MMS-4v1):1.0
+is(MMS-4v1,Class):1.0
+SubClassOf(MMS-4v1,age-dependent-variable,):1.0
+SubClassOf(MMS-4v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-4v1,main-variable,):1.0
+SubClassOf(MMS-4v1,numerical-variable,):1.0
+SubClassOf(MMS-4v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-4v1,is-a-variable-of some MMS-4,):1.0
+SubClassOf(MMS-4v1,is-a-variable-of only MMS-4,):1.0
+SubClassOf(MMS-4v1,has-for-model-acronym value var-acronym-MMS-4v1,):1.0
+SubClassOf(MMS-4v1,explores exactly 1 long-term-verbal-memory,):1.0
+SubClassOf(MMS-4v1,measures exactly 1 performance-on-recall-of-three-objects):1.0
+is(MMS-5,Class):1.0
+SubClassOf(MMS-5,mono-domain-instrument,):1.0
+SubClassOf(MMS-5,neuropsychological-instrument,):1.0
+SubClassOf(MMS-5,sub-instrument,):1.0
+SubClassOf(MMS-5,test-instrument,):1.0
+SubClassOf(MMS-5,explores some language,):1.0
+SubClassOf(MMS-5,has-for-sub-instrument some MMS-5-1,):1.0
+SubClassOf(MMS-5,has-for-sub-instrument some MMS-5-2,):1.0
+SubClassOf(MMS-5,has-for-sub-instrument some MMS-5-3,):1.0
+SubClassOf(MMS-5,has-for-sub-instrument some MMS-5-4,):1.0
+SubClassOf(MMS-5,has-for-sub-instrument some MMS-5-5,):1.0
+SubClassOf(MMS-5,is-a-sub-instrument-of some MMS,):1.0
+SubClassOf(MMS-5,has-for-model-acronym value instr-acronym-MMS-5,):1.0
+SubClassOf(MMS-5,has-for-model-name value instr-name-MMS-5,):1.0
+SubClassOf(MMS-5,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-5,has-for-variable exactly 1 MMS-5v1):1.0
+is(MMS-5-1,Class):1.0
+SubClassOf(MMS-5-1,mono-domain-instrument,):1.0
+SubClassOf(MMS-5-1,neuropsychological-instrument,):1.0
+SubClassOf(MMS-5-1,sub-instrument,):1.0
+SubClassOf(MMS-5-1,test-instrument,):1.0
+SubClassOf(MMS-5-1,explores some oral-language-production,):1.0
+SubClassOf(MMS-5-1,is-a-sub-instrument-of some MMS-5,):1.0
+SubClassOf(MMS-5-1,has-for-model-acronym value instr-acronym-MMS-5-1,):1.0
+SubClassOf(MMS-5-1,has-for-model-name value instr-name-MMS-5-1,):1.0
+SubClassOf(MMS-5-1,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-5-1,has-for-variable exactly 1 MMS-5-1v1):1.0
+is(MMS-5-1v1,Class):1.0
+SubClassOf(MMS-5-1v1,age-dependent-variable,):1.0
+SubClassOf(MMS-5-1v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-5-1v1,main-variable,):1.0
+SubClassOf(MMS-5-1v1,numerical-variable,):1.0
+SubClassOf(MMS-5-1v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-5-1v1,is-a-variable-of some MMS-5-1,):1.0
+SubClassOf(MMS-5-1v1,is-a-variable-of only MMS-5-1,):1.0
+SubClassOf(MMS-5-1v1,has-for-model-acronym value var-acronym-MMS-5-1v1,):1.0
+SubClassOf(MMS-5-1v1,explores exactly 1 oral-language-production,):1.0
+SubClassOf(MMS-5-1v1,measures exactly 1 performance-on-naming-of-two-objects):1.0
+is(MMS-5-2,Class):1.0
+SubClassOf(MMS-5-2,mono-domain-instrument,):1.0
+SubClassOf(MMS-5-2,neuropsychological-instrument,):1.0
+SubClassOf(MMS-5-2,sub-instrument,):1.0
+SubClassOf(MMS-5-2,test-instrument,):1.0
+SubClassOf(MMS-5-2,explores some oral-language-production,):1.0
+SubClassOf(MMS-5-2,is-a-sub-instrument-of some MMS-5,):1.0
+SubClassOf(MMS-5-2,has-for-model-acronym value instr-acronym-MMS-5-2,):1.0
+SubClassOf(MMS-5-2,has-for-model-name value instr-name-MMS-5-2,):1.0
+SubClassOf(MMS-5-2,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-5-2,has-for-variable exactly 1 MMS-5-2v1):1.0
+is(MMS-5-2v1,Class):1.0
+SubClassOf(MMS-5-2v1,age-dependent-variable,):1.0
+SubClassOf(MMS-5-2v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-5-2v1,main-variable,):1.0
+SubClassOf(MMS-5-2v1,numerical-variable,):1.0
+SubClassOf(MMS-5-2v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-5-2v1,is-a-variable-of some MMS-5-2,):1.0
+SubClassOf(MMS-5-2v1,is-a-variable-of only MMS-5-2,):1.0
+SubClassOf(MMS-5-2v1,has-for-model-acronym value var-acronym-MMS-5-2v1,):1.0
+SubClassOf(MMS-5-2v1,explores exactly 1 oral-language-production,):1.0
+SubClassOf(MMS-5-2v1,measures exactly 1 performance-on-repetition-of-a-sentence):1.0
+is(MMS-5-3,Class):1.0
+SubClassOf(MMS-5-3,mono-domain-instrument,):1.0
+SubClassOf(MMS-5-3,neuropsychological-instrument,):1.0
+SubClassOf(MMS-5-3,sub-instrument,):1.0
+SubClassOf(MMS-5-3,test-instrument,):1.0
+SubClassOf(MMS-5-3,explores some oral-language-comprehesion,):1.0
+SubClassOf(MMS-5-3,is-a-sub-instrument-of some MMS-5,):1.0
+SubClassOf(MMS-5-3,has-for-model-acronym value instr-acronym-MMS-5-3,):1.0
+SubClassOf(MMS-5-3,has-for-model-name value instr-name-MMS-5-3,):1.0
+SubClassOf(MMS-5-3,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-5-3,has-for-variable exactly 1 MMS-5-3v1):1.0
+is(MMS-5-3v1,Class):1.0
+SubClassOf(MMS-5-3v1,age-dependent-variable,):1.0
+SubClassOf(MMS-5-3v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-5-3v1,main-variable,):1.0
+SubClassOf(MMS-5-3v1,numerical-variable,):1.0
+SubClassOf(MMS-5-3v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-5-3v1,is-a-variable-of some MMS-5-3,):1.0
+SubClassOf(MMS-5-3v1,is-a-variable-of only MMS-5-3,):1.0
+SubClassOf(MMS-5-3v1,has-for-model-acronym value var-acronym-MMS-5-3v1,):1.0
+SubClassOf(MMS-5-3v1,explores exactly 1 oral-language-comprehesion,):1.0
+SubClassOf(MMS-5-3v1,measures exactly 1 performance-on-execution-of-a-3-stage-command):1.0
+is(MMS-5-4,Class):1.0
+SubClassOf(MMS-5-4,mono-domain-instrument,):1.0
+SubClassOf(MMS-5-4,neuropsychological-instrument,):1.0
+SubClassOf(MMS-5-4,sub-instrument,):1.0
+SubClassOf(MMS-5-4,test-instrument,):1.0
+SubClassOf(MMS-5-4,explores some written-language-comprehension,):1.0
+SubClassOf(MMS-5-4,is-a-sub-instrument-of some MMS-5,):1.0
+SubClassOf(MMS-5-4,has-for-model-acronym value instr-acronym-MMS-5-4,):1.0
+SubClassOf(MMS-5-4,has-for-model-name value instr-name-MMS-5-4,):1.0
+SubClassOf(MMS-5-4,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-5-4,has-for-variable exactly 1 MMS-5-4v1):1.0
+is(MMS-5-4v1,Class):1.0
+SubClassOf(MMS-5-4v1,age-dependent-variable,):1.0
+SubClassOf(MMS-5-4v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-5-4v1,main-variable,):1.0
+SubClassOf(MMS-5-4v1,numerical-variable,):1.0
+SubClassOf(MMS-5-4v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-5-4v1,is-a-variable-of some MMS-5-4,):1.0
+SubClassOf(MMS-5-4v1,is-a-variable-of only MMS-5-4,):1.0
+SubClassOf(MMS-5-4v1,has-for-model-acronym value var-acronym-MMS-5-4v1,):1.0
+SubClassOf(MMS-5-4v1,explores exactly 1 written-language-comprehension,):1.0
+SubClassOf(MMS-5-4v1,measures exactly 1 performance-on-reading-a-sentence):1.0
+is(MMS-5-5,Class):1.0
+SubClassOf(MMS-5-5,mono-domain-instrument,):1.0
+SubClassOf(MMS-5-5,neuropsychological-instrument,):1.0
+SubClassOf(MMS-5-5,sub-instrument,):1.0
+SubClassOf(MMS-5-5,test-instrument,):1.0
+SubClassOf(MMS-5-5,explores some written-language-production,):1.0
+SubClassOf(MMS-5-5,is-a-sub-instrument-of some MMS-5,):1.0
+SubClassOf(MMS-5-5,has-for-model-acronym value instr-acronym-MMS-5-5,):1.0
+SubClassOf(MMS-5-5,has-for-model-name value instr-name-MMS-5-5,):1.0
+SubClassOf(MMS-5-5,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-5-5,has-for-variable exactly 1 MMS-5-5v1):1.0
+is(MMS-5-5v1,Class):1.0
+SubClassOf(MMS-5-5v1,age-dependent-variable,):1.0
+SubClassOf(MMS-5-5v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-5-5v1,main-variable,):1.0
+SubClassOf(MMS-5-5v1,numerical-variable,):1.0
+SubClassOf(MMS-5-5v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-5-5v1,is-a-variable-of some MMS-5-5,):1.0
+SubClassOf(MMS-5-5v1,is-a-variable-of only MMS-5-5,):1.0
+SubClassOf(MMS-5-5v1,has-for-model-acronym value var-acronym-MMS-5-5v1,):1.0
+SubClassOf(MMS-5-5v1,explores exactly 1 written-language-production,):1.0
+SubClassOf(MMS-5-5v1,measures exactly 1 performance-on-writing-a-sentence):1.0
+is(MMS-5v1,Class):1.0
+SubClassOf(MMS-5v1,age-dependent-variable,):1.0
+SubClassOf(MMS-5v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-5v1,main-variable,):1.0
+SubClassOf(MMS-5v1,numerical-variable,):1.0
+SubClassOf(MMS-5v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-5v1,is-a-variable-of some MMS-5,):1.0
+SubClassOf(MMS-5v1,is-a-variable-of only MMS-5,):1.0
+SubClassOf(MMS-5v1,has-for-model-acronym value var-acronym-MMS-5v1,):1.0
+SubClassOf(MMS-5v1,explores exactly 1 language,):1.0
+SubClassOf(MMS-5v1,measures exactly 1 language-performance):1.0
+is(MMS-6,Class):1.0
+SubClassOf(MMS-6,mono-domain-instrument,):1.0
+SubClassOf(MMS-6,neuropsychological-instrument,):1.0
+SubClassOf(MMS-6,sub-instrument,):1.0
+SubClassOf(MMS-6,test-instrument,):1.0
+SubClassOf(MMS-6,explores some motor-component-of-constructional-functions,):1.0
+SubClassOf(MMS-6,is-a-sub-instrument-of some MMS,):1.0
+SubClassOf(MMS-6,has-for-model-acronym value instr-acronym-MMS-6,):1.0
+SubClassOf(MMS-6,has-for-model-name value instr-name-MMS-6,):1.0
+SubClassOf(MMS-6,refers-to value instr-def-article-FOLSTEIN-1975,):1.0
+SubClassOf(MMS-6,has-for-variable exactly 1 MMS-6v1):1.0
+is(MMS-6v1,Class):1.0
+SubClassOf(MMS-6v1,age-dependent-variable,):1.0
+SubClassOf(MMS-6v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMS-6v1,main-variable,):1.0
+SubClassOf(MMS-6v1,numerical-variable,):1.0
+SubClassOf(MMS-6v1,sex-dependent-variable,):1.0
+SubClassOf(MMS-6v1,is-a-variable-of some MMS-6,):1.0
+SubClassOf(MMS-6v1,is-a-variable-of only MMS-6,):1.0
+SubClassOf(MMS-6v1,has-for-model-acronym value var-acronym-MMS-6v1,):1.0
+SubClassOf(MMS-6v1,explores exactly 1 motor-component-of-constructional-functions,):1.0
+SubClassOf(MMS-6v1,measures exactly 1 copy-accuracy):1.0
+is(MMSv1,Class):1.0
+SubClassOf(MMSv1,age-dependent-variable,):1.0
+SubClassOf(MMSv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(MMSv1,main-variable,):1.0
+SubClassOf(MMSv1,numerical-variable,):1.0
+SubClassOf(MMSv1,sex-dependent-variable,):1.0
+SubClassOf(MMSv1,is-a-variable-of some MMS,):1.0
+SubClassOf(MMSv1,is-a-variable-of only MMS,):1.0
+SubClassOf(MMSv1,has-for-model-acronym value var-acronym-MMSv1,):1.0
+SubClassOf(MMSv1,explores exactly 1 global-cognitive-efficiency,):1.0
+SubClassOf(MMSv1,measures exactly 1 cognitive-mental-status):1.0
+is(STROOP,Class):1.0
+SubClassOf(STROOP,mono-domain-instrument,):1.0
+SubClassOf(STROOP,neuropsychological-instrument,):1.0
+SubClassOf(STROOP,test-instrument,):1.0
+SubClassOf(STROOP,explores some response-inhibition,):1.0
+SubClassOf(STROOP,has-for-sub-instrument some STROOP-1,):1.0
+SubClassOf(STROOP,has-for-sub-instrument some STROOP-2,):1.0
+SubClassOf(STROOP,has-for-sub-instrument some STROOP-3,):1.0
+SubClassOf(STROOP,has-for-model-acronym value instr-acronym-STROOP,):1.0
+SubClassOf(STROOP,has-for-model-name value instr-name-STROOP,):1.0
+SubClassOf(STROOP,refers-to value instr-def-article-GOLDEN-1978,):1.0
+SubClassOf(STROOP,has-for-variable exactly 1 STROOPv1):1.0
+is(STROOP-1,Class):1.0
+SubClassOf(STROOP-1,mono-domain-instrument,):1.0
+SubClassOf(STROOP-1,neuropsychological-instrument,):1.0
+SubClassOf(STROOP-1,sub-instrument,):1.0
+SubClassOf(STROOP-1,test-instrument,):1.0
+SubClassOf(STROOP-1,explores some response-inhibition,):1.0
+SubClassOf(STROOP-1,is-a-sub-instrument-of some STROOP,):1.0
+SubClassOf(STROOP-1,has-for-model-acronym value instr-acronym-STROOP-1,):1.0
+SubClassOf(STROOP-1,has-for-model-name value instr-name-STROOP-1,):1.0
+SubClassOf(STROOP-1,refers-to value instr-def-article-GOLDEN-1978,):1.0
+SubClassOf(STROOP-1,has-for-variable exactly 1 STROOP-1v1):1.0
+is(STROOP-1v1,Class):1.0
+SubClassOf(STROOP-1v1,age-dependent-variable,):1.0
+SubClassOf(STROOP-1v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(STROOP-1v1,main-variable,):1.0
+SubClassOf(STROOP-1v1,numerical-variable,):1.0
+SubClassOf(STROOP-1v1,sex-dependent-variable,):1.0
+SubClassOf(STROOP-1v1,is-a-variable-of some STROOP-1,):1.0
+SubClassOf(STROOP-1v1,is-a-variable-of only STROOP-1,):1.0
+SubClassOf(STROOP-1v1,has-for-model-acronym value var-acronym-STROOP-1v1,):1.0
+SubClassOf(STROOP-1v1,explores exactly 1 response-inhibition,):1.0
+SubClassOf(STROOP-1v1,measures exactly 1 number-of-words-read-in-45-seconds):1.0
+is(STROOP-2,Class):1.0
+SubClassOf(STROOP-2,mono-domain-instrument,):1.0
+SubClassOf(STROOP-2,neuropsychological-instrument,):1.0
+SubClassOf(STROOP-2,sub-instrument,):1.0
+SubClassOf(STROOP-2,test-instrument,):1.0
+SubClassOf(STROOP-2,explores some response-inhibition,):1.0
+SubClassOf(STROOP-2,is-a-sub-instrument-of some STROOP,):1.0
+SubClassOf(STROOP-2,has-for-model-acronym value instr-acronym-STROOP-2,):1.0
+SubClassOf(STROOP-2,has-for-model-name value instr-name-STROOP-2,):1.0
+SubClassOf(STROOP-2,refers-to value instr-def-article-GOLDEN-1978,):1.0
+SubClassOf(STROOP-2,has-for-variable exactly 1 STROOP-2v1):1.0
+is(STROOP-2v1,Class):1.0
+SubClassOf(STROOP-2v1,age-dependent-variable,):1.0
+SubClassOf(STROOP-2v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(STROOP-2v1,main-variable,):1.0
+SubClassOf(STROOP-2v1,numerical-variable,):1.0
+SubClassOf(STROOP-2v1,sex-dependent-variable,):1.0
+SubClassOf(STROOP-2v1,is-a-variable-of some STROOP-2,):1.0
+SubClassOf(STROOP-2v1,is-a-variable-of only STROOP-2,):1.0
+SubClassOf(STROOP-2v1,has-for-model-acronym value var-acronym-STROOP-2v1,):1.0
+SubClassOf(STROOP-2v1,explores exactly 1 response-inhibition,):1.0
+SubClassOf(STROOP-2v1,measures exactly 1 number-of-colors-named-in-45-seconds):1.0
+is(STROOP-3,Class):1.0
+SubClassOf(STROOP-3,mono-domain-instrument,):1.0
+SubClassOf(STROOP-3,neuropsychological-instrument,):1.0
+SubClassOf(STROOP-3,sub-instrument,):1.0
+SubClassOf(STROOP-3,test-instrument,):1.0
+SubClassOf(STROOP-3,explores some response-inhibition,):1.0
+SubClassOf(STROOP-3,is-a-sub-instrument-of some STROOP,):1.0
+SubClassOf(STROOP-3,has-for-model-acronym value instr-acronym-STROOP-3,):1.0
+SubClassOf(STROOP-3,has-for-model-name value instr-name-STROOP-3,):1.0
+SubClassOf(STROOP-3,refers-to value instr-def-article-GOLDEN-1978,):1.0
+SubClassOf(STROOP-3,has-for-variable exactly 1 STROOP-3v1):1.0
+is(STROOP-3v1,Class):1.0
+SubClassOf(STROOP-3v1,age-dependent-variable,):1.0
+SubClassOf(STROOP-3v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(STROOP-3v1,main-variable,):1.0
+SubClassOf(STROOP-3v1,numerical-variable,):1.0
+SubClassOf(STROOP-3v1,sex-dependent-variable,):1.0
+SubClassOf(STROOP-3v1,is-a-variable-of some STROOP-3,):1.0
+SubClassOf(STROOP-3v1,is-a-variable-of only STROOP-3,):1.0
+SubClassOf(STROOP-3v1,has-for-model-acronym value var-acronym-STROOP-3v1,):1.0
+SubClassOf(STROOP-3v1,explores exactly 1 response-inhibition,):1.0
+SubClassOf(STROOP-3v1,measures exactly 1 number-of-ink-colors-named-in-45-seconds):1.0
+is(STROOPv1,Class):1.0
+SubClassOf(STROOPv1,age-dependent-variable,):1.0
+SubClassOf(STROOPv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(STROOPv1,main-variable,):1.0
+SubClassOf(STROOPv1,numerical-variable,):1.0
+SubClassOf(STROOPv1,sex-dependent-variable,):1.0
+SubClassOf(STROOPv1,is-a-variable-of some STROOP,):1.0
+SubClassOf(STROOPv1,is-a-variable-of only STROOP,):1.0
+SubClassOf(STROOPv1,has-for-model-acronym value var-acronym-STROOPv1,):1.0
+SubClassOf(STROOPv1,explores exactly 1 response-inhibition,):1.0
+SubClassOf(STROOPv1,measures exactly 1 interference-effect):1.0
+is(TMT,Class):1.0
+SubClassOf(TMT,multi-domains-instrument,):1.0
+SubClassOf(TMT,neuropsychological-instrument,):1.0
+SubClassOf(TMT,test-instrument,):1.0
+SubClassOf(TMT,explores some divided-attention,):1.0
+SubClassOf(TMT,explores some set-shifting,):1.0
+SubClassOf(TMT,explores some visual-scanning,):1.0
+SubClassOf(TMT,has-for-sub-instrument some TMT-A,):1.0
+SubClassOf(TMT,has-for-sub-instrument some TMT-B,):1.0
+SubClassOf(TMT,has-for-model-acronym value instr-acronym-TMT,):1.0
+SubClassOf(TMT,has-for-model-name value instr-name-TMT,):1.0
+SubClassOf(TMT,refers-to value instr-def-article-AITB-1944,):1.0
+SubClassOf(TMT,has-for-variable exactly 1 TMTv1):1.0
+is(TMT-A,Class):1.0
+SubClassOf(TMT-A,multi-domains-instrument,):1.0
+SubClassOf(TMT-A,neuropsychological-instrument,):1.0
+SubClassOf(TMT-A,sub-instrument,):1.0
+SubClassOf(TMT-A,test-instrument,):1.0
+SubClassOf(TMT-A,explores some divided-attention,):1.0
+SubClassOf(TMT-A,explores some set-shifting,):1.0
+SubClassOf(TMT-A,explores some visual-scanning,):1.0
+SubClassOf(TMT-A,is-a-sub-instrument-of some TMT,):1.0
+SubClassOf(TMT-A,has-for-model-acronym value instr-acronym-TMT-A,):1.0
+SubClassOf(TMT-A,has-for-model-name value instr-name-TMT-A,):1.0
+SubClassOf(TMT-A,refers-to value instr-def-article-AITB-1944,):1.0
+SubClassOf(TMT-A,has-for-variable exactly 1 TMT-Av1,):1.0
+SubClassOf(TMT-A,has-for-variable exactly 1 TMT-Av2):1.0
+is(TMT-Av1,Class):1.0
+SubClassOf(TMT-Av1,age-dependent-variable,):1.0
+SubClassOf(TMT-Av1,cultural-skill-dependent-variable,):1.0
+SubClassOf(TMT-Av1,main-variable,):1.0
+SubClassOf(TMT-Av1,numerical-variable,):1.0
+SubClassOf(TMT-Av1,sex-dependent-variable,):1.0
+SubClassOf(TMT-Av1,is-a-variable-of some TMT-A,):1.0
+SubClassOf(TMT-Av1,is-a-variable-of only TMT-A,):1.0
+SubClassOf(TMT-Av1,has-for-model-acronym value var-acronym-TMT-Av1,):1.0
+SubClassOf(TMT-Av1,explores exactly 1 set-shifting,):1.0
+SubClassOf(TMT-Av1,measures exactly 1 response-time):1.0
+is(TMT-Av2,Class):1.0
+SubClassOf(TMT-Av2,age-dependent-variable,):1.0
+SubClassOf(TMT-Av2,cultural-skill-dependent-variable,):1.0
+SubClassOf(TMT-Av2,numerical-variable,):1.0
+SubClassOf(TMT-Av2,secondary-variable,):1.0
+SubClassOf(TMT-Av2,sex-dependent-variable,):1.0
+SubClassOf(TMT-Av2,is-a-variable-of some TMT-A,):1.0
+SubClassOf(TMT-Av2,is-a-variable-of only TMT-A,):1.0
+SubClassOf(TMT-Av2,has-for-model-acronym value var-acronym-TMT-Av2,):1.0
+SubClassOf(TMT-Av2,explores exactly 1 set-shifting,):1.0
+SubClassOf(TMT-Av2,measures exactly 1 number-of-errors):1.0
+is(TMT-B,Class):1.0
+SubClassOf(TMT-B,multi-domains-instrument,):1.0
+SubClassOf(TMT-B,neuropsychological-instrument,):1.0
+SubClassOf(TMT-B,sub-instrument,):1.0
+SubClassOf(TMT-B,test-instrument,):1.0
+SubClassOf(TMT-B,explores some divided-attention,):1.0
+SubClassOf(TMT-B,explores some set-shifting,):1.0
+SubClassOf(TMT-B,explores some visual-scanning,):1.0
+SubClassOf(TMT-B,is-a-sub-instrument-of some TMT,):1.0
+SubClassOf(TMT-B,has-for-model-acronym value instr-acronym-TMT-B,):1.0
+SubClassOf(TMT-B,has-for-model-name value instr-name-TMT-B,):1.0
+SubClassOf(TMT-B,refers-to value instr-def-article-AITB-1944,):1.0
+SubClassOf(TMT-B,has-for-variable exactly 1 TMT-Bv1,):1.0
+SubClassOf(TMT-B,has-for-variable exactly 1 TMT-Bv2):1.0
+is(TMT-Bv1,Class):1.0
+SubClassOf(TMT-Bv1,age-dependent-variable,):1.0
+SubClassOf(TMT-Bv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(TMT-Bv1,main-variable,):1.0
+SubClassOf(TMT-Bv1,numerical-variable,):1.0
+SubClassOf(TMT-Bv1,sex-dependent-variable,):1.0
+SubClassOf(TMT-Bv1,is-a-variable-of some TMT-B,):1.0
+SubClassOf(TMT-Bv1,is-a-variable-of only TMT-B,):1.0
+SubClassOf(TMT-Bv1,has-for-model-acronym value var-acronym-TMT-Bv1,):1.0
+SubClassOf(TMT-Bv1,explores exactly 1 set-shifting,):1.0
+SubClassOf(TMT-Bv1,measures exactly 1 response-time):1.0
+is(TMT-Bv2,Class):1.0
+SubClassOf(TMT-Bv2,age-dependent-variable,):1.0
+SubClassOf(TMT-Bv2,cultural-skill-dependent-variable,):1.0
+SubClassOf(TMT-Bv2,numerical-variable,):1.0
+SubClassOf(TMT-Bv2,secondary-variable,):1.0
+SubClassOf(TMT-Bv2,sex-dependent-variable,):1.0
+SubClassOf(TMT-Bv2,is-a-variable-of some TMT-B,):1.0
+SubClassOf(TMT-Bv2,is-a-variable-of only TMT-B,):1.0
+SubClassOf(TMT-Bv2,has-for-model-acronym value var-acronym-TMT-Bv2,):1.0
+SubClassOf(TMT-Bv2,explores exactly 1 set-shifting,):1.0
+SubClassOf(TMT-Bv2,measures exactly 1 number-of-errors):1.0
+is(TMTv1,Class):1.0
+SubClassOf(TMTv1,age-dependent-variable,):1.0
+SubClassOf(TMTv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(TMTv1,main-variable,):1.0
+SubClassOf(TMTv1,numerical-variable,):1.0
+SubClassOf(TMTv1,sex-dependent-variable,):1.0
+SubClassOf(TMTv1,is-a-variable-of some TMT,):1.0
+SubClassOf(TMTv1,is-a-variable-of only TMT,):1.0
+SubClassOf(TMTv1,has-for-model-acronym value var-acronym-TMTv1,):1.0
+SubClassOf(TMTv1,explores exactly 1 set-shifting,):1.0
+SubClassOf(TMTv1,measures exactly 1 response-time):1.0
+is(WAIS-III,Class):1.0
+SubClassOf(WAIS-III,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III,test-instrument,):1.0
+SubClassOf(WAIS-III,explores some intellectual-ability,):1.0
+SubClassOf(WAIS-III,has-for-sub-instrument some WAIS-III-P,):1.0
+SubClassOf(WAIS-III,has-for-sub-instrument some WAIS-III-V,):1.0
+SubClassOf(WAIS-III,has-for-model-acronym value instr-acronym-WAIS-III,):1.0
+SubClassOf(WAIS-III,has-for-model-name value instr-name-WAIS-III,):1.0
+SubClassOf(WAIS-III,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III,has-for-variable exactly 1 WAIS-IIIv1,):1.0
+SubClassOf(WAIS-III,has-for-variable exactly 1 WAIS-IIIv2):1.0
+is(WAIS-III-P,Class):1.0
+SubClassOf(WAIS-III-P,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-P,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-P,sub-instrument,):1.0
+SubClassOf(WAIS-III-P,test-instrument,):1.0
+SubClassOf(WAIS-III-P,explores some performance-intellectual-ability,):1.0
+SubClassOf(WAIS-III-P,has-for-sub-instrument some WAIS-III-P-1,):1.0
+SubClassOf(WAIS-III-P,has-for-sub-instrument some WAIS-III-P-2,):1.0
+SubClassOf(WAIS-III-P,has-for-sub-instrument some WAIS-III-P-3,):1.0
+SubClassOf(WAIS-III-P,has-for-sub-instrument some WAIS-III-P-4,):1.0
+SubClassOf(WAIS-III-P,has-for-sub-instrument some WAIS-III-P-5,):1.0
+SubClassOf(WAIS-III-P,has-for-sub-instrument some WAIS-III-P-6,):1.0
+SubClassOf(WAIS-III-P,has-for-sub-instrument some WAIS-III-P-7,):1.0
+SubClassOf(WAIS-III-P,is-a-sub-instrument-of some WAIS-III,):1.0
+SubClassOf(WAIS-III-P,has-for-model-acronym value instr-acronym-WAIS-III-P,):1.0
+SubClassOf(WAIS-III-P,has-for-model-name value instr-name-WAIS-III-P,):1.0
+SubClassOf(WAIS-III-P,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-P,has-for-variable exactly 1 WAIS-III-Pv1,):1.0
+SubClassOf(WAIS-III-P,has-for-variable exactly 1 WAIS-III-Pv2,):1.0
+SubClassOf(WAIS-III-P,has-for-variable exactly 1 WAIS-III-Pv3,):1.0
+SubClassOf(WAIS-III-P,has-for-variable exactly 1 WAIS-III-Pv4):1.0
+is(WAIS-III-P-1,Class):1.0
+SubClassOf(WAIS-III-P-1,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-P-1,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-P-1,sub-instrument,):1.0
+SubClassOf(WAIS-III-P-1,test-instrument,):1.0
+SubClassOf(WAIS-III-P-1,explores some deductive-reasoning,):1.0
+SubClassOf(WAIS-III-P-1,explores some perceptual-component-of-constructional-functions,):1.0
+SubClassOf(WAIS-III-P-1,is-a-sub-instrument-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-P-1,has-for-model-acronym value instr-acronym-WAIS-III-P-1,):1.0
+SubClassOf(WAIS-III-P-1,has-for-model-name value instr-name-WAIS-III-P-1,):1.0
+SubClassOf(WAIS-III-P-1,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-P-1,has-for-variable exactly 1 WAIS-III-P-1v1):1.0
+is(WAIS-III-P-1v1,Class):1.0
+SubClassOf(WAIS-III-P-1v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-1v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-1v1,main-variable,):1.0
+SubClassOf(WAIS-III-P-1v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-P-1v1,is-a-variable-of some WAIS-III-P-1,):1.0
+SubClassOf(WAIS-III-P-1v1,is-a-variable-of only WAIS-III-P-1,):1.0
+SubClassOf(WAIS-III-P-1v1,has-for-model-acronym value var-acronym-WAIS-III-P-1v1,):1.0
+SubClassOf(WAIS-III-P-1v1,explores exactly 1 perceptual-component-of-constructional-functions,):1.0
+SubClassOf(WAIS-III-P-1v1,measures exactly 1 number-of-pictures-completed-in-a-limited-time):1.0
+is(WAIS-III-P-2,Class):1.0
+SubClassOf(WAIS-III-P-2,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-P-2,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-P-2,sub-instrument,):1.0
+SubClassOf(WAIS-III-P-2,test-instrument,):1.0
+SubClassOf(WAIS-III-P-2,explores some executive-functions,):1.0
+SubClassOf(WAIS-III-P-2,explores some processing-speed-domain,):1.0
+SubClassOf(WAIS-III-P-2,is-a-sub-instrument-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-P-2,has-for-model-acronym value instr-acronym-WAIS-III-P-2,):1.0
+SubClassOf(WAIS-III-P-2,has-for-model-name value instr-name-WAIS-III-P-2,):1.0
+SubClassOf(WAIS-III-P-2,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-P-2,has-for-variable exactly 1 WAIS-III-P-2v1):1.0
+is(WAIS-III-P-2v1,Class):1.0
+SubClassOf(WAIS-III-P-2v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-2v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-2v1,main-variable,):1.0
+SubClassOf(WAIS-III-P-2v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-P-2v1,is-a-variable-of some WAIS-III-P-2,):1.0
+SubClassOf(WAIS-III-P-2v1,is-a-variable-of only WAIS-III-P-2,):1.0
+SubClassOf(WAIS-III-P-2v1,has-for-model-acronym value var-acronym-WAIS-III-P-2v1,):1.0
+SubClassOf(WAIS-III-P-2v1,explores exactly 1 processing-speed-domain,):1.0
+SubClassOf(WAIS-III-P-2v1,measures exactly 1 number-of-specific-designs-built-in-a-limited-time):1.0
+is(WAIS-III-P-3,Class):1.0
+SubClassOf(WAIS-III-P-3,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-P-3,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-P-3,sub-instrument,):1.0
+SubClassOf(WAIS-III-P-3,test-instrument,):1.0
+SubClassOf(WAIS-III-P-3,explores some constructional-functions,):1.0
+SubClassOf(WAIS-III-P-3,explores some inductive-reasoning,):1.0
+SubClassOf(WAIS-III-P-3,explores some planning,):1.0
+SubClassOf(WAIS-III-P-3,is-a-sub-instrument-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-P-3,has-for-model-acronym value instr-acronym-WAIS-III-P-3,):1.0
+SubClassOf(WAIS-III-P-3,has-for-model-name value instr-name-WAIS-III-P-3,):1.0
+SubClassOf(WAIS-III-P-3,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-P-3,has-for-variable exactly 1 WAIS-III-P-3v1):1.0
+is(WAIS-III-P-3v1,Class):1.0
+SubClassOf(WAIS-III-P-3v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-3v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-3v1,main-variable,):1.0
+SubClassOf(WAIS-III-P-3v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-P-3v1,is-a-variable-of some WAIS-III-P-3,):1.0
+SubClassOf(WAIS-III-P-3v1,is-a-variable-of only WAIS-III-P-3,):1.0
+SubClassOf(WAIS-III-P-3v1,has-for-model-acronym value var-acronym-WAIS-III-P-3v1,):1.0
+SubClassOf(WAIS-III-P-3v1,explores exactly 1 constructional-functions,):1.0
+SubClassOf(WAIS-III-P-3v1,measures exactly 1 number-of-specific-designs-built-in-a-limited-time):1.0
+is(WAIS-III-P-4,Class):1.0
+SubClassOf(WAIS-III-P-4,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-P-4,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-P-4,sub-instrument,):1.0
+SubClassOf(WAIS-III-P-4,test-instrument,):1.0
+SubClassOf(WAIS-III-P-4,explores some deductive-reasoning,):1.0
+SubClassOf(WAIS-III-P-4,explores some perceptual-component-of-constructional-functions,):1.0
+SubClassOf(WAIS-III-P-4,is-a-sub-instrument-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-P-4,has-for-model-acronym value instr-acronym-WAIS-III-P-4,):1.0
+SubClassOf(WAIS-III-P-4,has-for-model-name value instr-name-WAIS-III-P-4,):1.0
+SubClassOf(WAIS-III-P-4,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-P-4,has-for-variable exactly 1 WAIS-III-P-4v1):1.0
+is(WAIS-III-P-4v1,Class):1.0
+SubClassOf(WAIS-III-P-4v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-4v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-4v1,main-variable,):1.0
+SubClassOf(WAIS-III-P-4v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-P-4v1,is-a-variable-of some WAIS-III-P-4,):1.0
+SubClassOf(WAIS-III-P-4v1,is-a-variable-of only WAIS-III-P-4,):1.0
+SubClassOf(WAIS-III-P-4v1,has-for-model-acronym value var-acronym-WAIS-III-P-4v1,):1.0
+SubClassOf(WAIS-III-P-4v1,explores exactly 1 perceptual-component-of-constructional-functions,):1.0
+SubClassOf(WAIS-III-P-4v1,measures exactly 1 number-of-geometric-shapes-identified-in-a-limited-time):1.0
+is(WAIS-III-P-5,Class):1.0
+SubClassOf(WAIS-III-P-5,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-P-5,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-P-5,sub-instrument,):1.0
+SubClassOf(WAIS-III-P-5,test-instrument,):1.0
+SubClassOf(WAIS-III-P-5,explores some constructional-functions,):1.0
+SubClassOf(WAIS-III-P-5,explores some deductive-reasoning,):1.0
+SubClassOf(WAIS-III-P-5,explores some planning,):1.0
+SubClassOf(WAIS-III-P-5,is-a-sub-instrument-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-P-5,has-for-model-acronym value instr-acronym-WAIS-III-P-5,):1.0
+SubClassOf(WAIS-III-P-5,has-for-model-name value instr-name-WAIS-III-P-5,):1.0
+SubClassOf(WAIS-III-P-5,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-P-5,has-for-variable exactly 1 WAIS-III-P-5v1):1.0
+is(WAIS-III-P-5v1,Class):1.0
+SubClassOf(WAIS-III-P-5v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-5v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-5v1,main-variable,):1.0
+SubClassOf(WAIS-III-P-5v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-P-5v1,is-a-variable-of some WAIS-III-P-5,):1.0
+SubClassOf(WAIS-III-P-5v1,is-a-variable-of only WAIS-III-P-5,):1.0
+SubClassOf(WAIS-III-P-5v1,has-for-model-acronym value var-acronym-WAIS-III-P-5v1,):1.0
+SubClassOf(WAIS-III-P-5v1,explores exactly 1 deductive-reasoning,):1.0
+SubClassOf(WAIS-III-P-5v1,measures exactly 1 capacity-to-arrange-pictures-in-order-to-tell-a-story-in-a-limited-time):1.0
+is(WAIS-III-P-6,Class):1.0
+SubClassOf(WAIS-III-P-6,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-P-6,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-P-6,sub-instrument,):1.0
+SubClassOf(WAIS-III-P-6,test-instrument,):1.0
+SubClassOf(WAIS-III-P-6,explores some executive-functions,):1.0
+SubClassOf(WAIS-III-P-6,explores some processing-speed-domain,):1.0
+SubClassOf(WAIS-III-P-6,is-a-sub-instrument-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-P-6,has-for-model-acronym value instr-acronym-WAIS-III-P-6,):1.0
+SubClassOf(WAIS-III-P-6,has-for-model-name value instr-name-WAIS-III-P-6,):1.0
+SubClassOf(WAIS-III-P-6,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-P-6,has-for-variable exactly 1 WAIS-III-P-6v1):1.0
+is(WAIS-III-P-6v1,Class):1.0
+SubClassOf(WAIS-III-P-6v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-6v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-6v1,main-variable,):1.0
+SubClassOf(WAIS-III-P-6v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-P-6v1,is-a-variable-of some WAIS-III-P-6,):1.0
+SubClassOf(WAIS-III-P-6v1,is-a-variable-of only WAIS-III-P-6,):1.0
+SubClassOf(WAIS-III-P-6v1,has-for-model-acronym value var-acronym-WAIS-III-P-6v1,):1.0
+SubClassOf(WAIS-III-P-6v1,explores exactly 1 processing-speed-domain,):1.0
+SubClassOf(WAIS-III-P-6v1,measures exactly 1 number-of-symbols-correctly-matched-in-a-limited-time):1.0
+is(WAIS-III-P-7,Class):1.0
+SubClassOf(WAIS-III-P-7,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-P-7,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-P-7,sub-instrument,):1.0
+SubClassOf(WAIS-III-P-7,test-instrument,):1.0
+SubClassOf(WAIS-III-P-7,explores some retrograde-semantic-memory-on-visual-entry,):1.0
+SubClassOf(WAIS-III-P-7,explores some semantic-processing-of-visuoperception,):1.0
+SubClassOf(WAIS-III-P-7,is-a-sub-instrument-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-P-7,has-for-model-acronym value instr-acronym-WAIS-III-P-7,):1.0
+SubClassOf(WAIS-III-P-7,has-for-model-name value instr-name-WAIS-III-P-7,):1.0
+SubClassOf(WAIS-III-P-7,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-P-7,has-for-variable exactly 1 WAIS-III-P-7v1):1.0
+is(WAIS-III-P-7v1,Class):1.0
+SubClassOf(WAIS-III-P-7v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-7v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-P-7v1,main-variable,):1.0
+SubClassOf(WAIS-III-P-7v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-P-7v1,is-a-variable-of some WAIS-III-P-7,):1.0
+SubClassOf(WAIS-III-P-7v1,is-a-variable-of only WAIS-III-P-7,):1.0
+SubClassOf(WAIS-III-P-7v1,has-for-model-acronym value var-acronym-WAIS-III-P-7v1,):1.0
+SubClassOf(WAIS-III-P-7v1,explores exactly 1 semantic-processing-of-visuoperception,):1.0
+SubClassOf(WAIS-III-P-7v1,measures exactly 1 number-of-objects-built-in-a-limited-time):1.0
+is(WAIS-III-Pv1,Class):1.0
+SubClassOf(WAIS-III-Pv1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-Pv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-Pv1,main-variable,):1.0
+SubClassOf(WAIS-III-Pv1,numerical-variable,):1.0
+SubClassOf(WAIS-III-Pv1,is-a-variable-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-Pv1,is-a-variable-of only WAIS-III-P,):1.0
+SubClassOf(WAIS-III-Pv1,has-for-model-acronym value var-acronym-WAIS-III-Pv1,):1.0
+SubClassOf(WAIS-III-Pv1,explores exactly 1 performance-intellectual-ability,):1.0
+SubClassOf(WAIS-III-Pv1,measures exactly 1 performance-component-of-the-intellectual-efficiency):1.0
+is(WAIS-III-Pv2,Class):1.0
+SubClassOf(WAIS-III-Pv2,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-Pv2,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-Pv2,main-variable,):1.0
+SubClassOf(WAIS-III-Pv2,numerical-variable,):1.0
+SubClassOf(WAIS-III-Pv2,is-a-variable-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-Pv2,is-a-variable-of only WAIS-III-P,):1.0
+SubClassOf(WAIS-III-Pv2,has-for-model-acronym value var-acronym-WAIS-III-Pv2,):1.0
+SubClassOf(WAIS-III-Pv2,explores exactly 1 performance-intellectual-ability,):1.0
+SubClassOf(WAIS-III-Pv2,measures exactly 1 performance-intelligence-quotient):1.0
+is(WAIS-III-Pv3,Class):1.0
+SubClassOf(WAIS-III-Pv3,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-Pv3,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-Pv3,main-variable,):1.0
+SubClassOf(WAIS-III-Pv3,numerical-variable,):1.0
+SubClassOf(WAIS-III-Pv3,is-a-variable-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-Pv3,is-a-variable-of only WAIS-III-P,):1.0
+SubClassOf(WAIS-III-Pv3,has-for-model-acronym value var-acronym-WAIS-III-Pv3,):1.0
+SubClassOf(WAIS-III-Pv3,explores exactly 1 percepual-organization,):1.0
+SubClassOf(WAIS-III-Pv3,measures exactly 1 perceptual-organization):1.0
+is(WAIS-III-Pv4,Class):1.0
+SubClassOf(WAIS-III-Pv4,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-Pv4,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-Pv4,main-variable,):1.0
+SubClassOf(WAIS-III-Pv4,numerical-variable,):1.0
+SubClassOf(WAIS-III-Pv4,is-a-variable-of some WAIS-III-P,):1.0
+SubClassOf(WAIS-III-Pv4,is-a-variable-of only WAIS-III-P,):1.0
+SubClassOf(WAIS-III-Pv4,has-for-model-acronym value var-acronym-WAIS-III-Pv4,):1.0
+SubClassOf(WAIS-III-Pv4,explores exactly 1 processing-speed-domain,):1.0
+SubClassOf(WAIS-III-Pv4,measures exactly 1 processing-speed):1.0
+is(WAIS-III-V,Class):1.0
+SubClassOf(WAIS-III-V,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-V,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-V,sub-instrument,):1.0
+SubClassOf(WAIS-III-V,test-instrument,):1.0
+SubClassOf(WAIS-III-V,explores some verbal-intellectual-ability,):1.0
+SubClassOf(WAIS-III-V,has-for-sub-instrument some WAIS-III-V-1,):1.0
+SubClassOf(WAIS-III-V,has-for-sub-instrument some WAIS-III-V-2,):1.0
+SubClassOf(WAIS-III-V,has-for-sub-instrument some WAIS-III-V-3,):1.0
+SubClassOf(WAIS-III-V,has-for-sub-instrument some WAIS-III-V-4,):1.0
+SubClassOf(WAIS-III-V,has-for-sub-instrument some WAIS-III-V-5,):1.0
+SubClassOf(WAIS-III-V,has-for-sub-instrument some WAIS-III-V-6,):1.0
+SubClassOf(WAIS-III-V,has-for-sub-instrument some WAIS-III-V-7,):1.0
+SubClassOf(WAIS-III-V,is-a-sub-instrument-of some WAIS-III,):1.0
+SubClassOf(WAIS-III-V,has-for-model-acronym value instr-acronym-WAIS-III-V,):1.0
+SubClassOf(WAIS-III-V,has-for-model-name value instr-name-WAIS-III-V,):1.0
+SubClassOf(WAIS-III-V,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-V,has-for-variable exactly 1 WAIS-III-Vv1,):1.0
+SubClassOf(WAIS-III-V,has-for-variable exactly 1 WAIS-III-Vv2,):1.0
+SubClassOf(WAIS-III-V,has-for-variable exactly 1 WAIS-III-Vv3,):1.0
+SubClassOf(WAIS-III-V,has-for-variable exactly 1 WAIS-III-Vv4):1.0
+is(WAIS-III-V-1,Class):1.0
+SubClassOf(WAIS-III-V-1,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-V-1,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-V-1,sub-instrument,):1.0
+SubClassOf(WAIS-III-V-1,test-instrument,):1.0
+SubClassOf(WAIS-III-V-1,explores some retrograde-semantic-memory-on-verbal-entry,):1.0
+SubClassOf(WAIS-III-V-1,explores some vocabulary,):1.0
+SubClassOf(WAIS-III-V-1,is-a-sub-instrument-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-V-1,has-for-model-acronym value instr-acronym-WAIS-III-V-1,):1.0
+SubClassOf(WAIS-III-V-1,has-for-model-name value instr-name-WAIS-III-V-1,):1.0
+SubClassOf(WAIS-III-V-1,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-V-1,has-for-variable exactly 1 WAIS-III-V-1v1):1.0
+is(WAIS-III-V-1v1,Class):1.0
+SubClassOf(WAIS-III-V-1v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-1v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-1v1,main-variable,):1.0
+SubClassOf(WAIS-III-V-1v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-V-1v1,is-a-variable-of some WAIS-III-V-1,):1.0
+SubClassOf(WAIS-III-V-1v1,is-a-variable-of only WAIS-III-V-1,):1.0
+SubClassOf(WAIS-III-V-1v1,has-for-model-acronym value var-acronym-WAIS-III-V-1v1,):1.0
+SubClassOf(WAIS-III-V-1v1,explores exactly 1 vocabulary,):1.0
+SubClassOf(WAIS-III-V-1v1,measures exactly 1 receptive-and-expressive-vocabulary):1.0
+is(WAIS-III-V-2,Class):1.0
+SubClassOf(WAIS-III-V-2,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-V-2,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-V-2,sub-instrument,):1.0
+SubClassOf(WAIS-III-V-2,test-instrument,):1.0
+SubClassOf(WAIS-III-V-2,explores some conceptual-elaboration,):1.0
+SubClassOf(WAIS-III-V-2,explores some inductive-reasoning,):1.0
+SubClassOf(WAIS-III-V-2,is-a-sub-instrument-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-V-2,has-for-model-acronym value instr-acronym-WAIS-III-V-2,):1.0
+SubClassOf(WAIS-III-V-2,has-for-model-name value instr-name-WAIS-III-V-2,):1.0
+SubClassOf(WAIS-III-V-2,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-V-2,has-for-variable exactly 1 WAIS-III-V-2v1):1.0
+is(WAIS-III-V-2v1,Class):1.0
+SubClassOf(WAIS-III-V-2v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-2v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-2v1,main-variable,):1.0
+SubClassOf(WAIS-III-V-2v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-V-2v1,is-a-variable-of some WAIS-III-V-2,):1.0
+SubClassOf(WAIS-III-V-2v1,is-a-variable-of only WAIS-III-V-2,):1.0
+SubClassOf(WAIS-III-V-2v1,has-for-model-acronym value var-acronym-WAIS-III-V-2v1,):1.0
+SubClassOf(WAIS-III-V-2v1,explores exactly 1 conceptual-elaboration,):1.0
+SubClassOf(WAIS-III-V-2v1,measures exactly 1 verbal-abstract-reasoning-and-conceptualization-abilities):1.0
+is(WAIS-III-V-3,Class):1.0
+SubClassOf(WAIS-III-V-3,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-V-3,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-V-3,sub-instrument,):1.0
+SubClassOf(WAIS-III-V-3,test-instrument,):1.0
+SubClassOf(WAIS-III-V-3,explores some attention,):1.0
+SubClassOf(WAIS-III-V-3,explores some calculation,):1.0
+SubClassOf(WAIS-III-V-3,explores some inductive-reasoning,):1.0
+SubClassOf(WAIS-III-V-3,explores some working-memory,):1.0
+SubClassOf(WAIS-III-V-3,is-a-sub-instrument-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-V-3,has-for-model-acronym value instr-acronym-WAIS-III-V-3,):1.0
+SubClassOf(WAIS-III-V-3,has-for-model-name value instr-name-WAIS-III-V-3,):1.0
+SubClassOf(WAIS-III-V-3,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-V-3,has-for-variable exactly 1 WAIS-III-V-3v1):1.0
+is(WAIS-III-V-3v1,Class):1.0
+SubClassOf(WAIS-III-V-3v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-3v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-3v1,main-variable,):1.0
+SubClassOf(WAIS-III-V-3v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-V-3v1,is-a-variable-of some WAIS-III-V-3,):1.0
+SubClassOf(WAIS-III-V-3v1,is-a-variable-of only WAIS-III-V-3,):1.0
+SubClassOf(WAIS-III-V-3v1,has-for-model-acronym value var-acronym-WAIS-III-V-3v1,):1.0
+SubClassOf(WAIS-III-V-3v1,explores exactly 1 calculation,):1.0
+SubClassOf(WAIS-III-V-3v1,measures exactly 1 mathematical-word-problems-correctly-performed-mentally):1.0
+is(WAIS-III-V-4,Class):1.0
+SubClassOf(WAIS-III-V-4,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-V-4,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-V-4,sub-instrument,):1.0
+SubClassOf(WAIS-III-V-4,test-instrument,):1.0
+SubClassOf(WAIS-III-V-4,explores some attention,):1.0
+SubClassOf(WAIS-III-V-4,explores some executive-functions,):1.0
+SubClassOf(WAIS-III-V-4,is-a-sub-instrument-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-V-4,has-for-model-acronym value instr-acronym-WAIS-III-V-4,):1.0
+SubClassOf(WAIS-III-V-4,has-for-model-name value instr-name-WAIS-III-V-4,):1.0
+SubClassOf(WAIS-III-V-4,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-V-4,has-for-variable exactly 1 WAIS-III-V-4v1):1.0
+is(WAIS-III-V-4v1,Class):1.0
+SubClassOf(WAIS-III-V-4v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-4v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-4v1,main-variable,):1.0
+SubClassOf(WAIS-III-V-4v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-V-4v1,is-a-variable-of some WAIS-III-V-4,):1.0
+SubClassOf(WAIS-III-V-4v1,is-a-variable-of only WAIS-III-V-4,):1.0
+SubClassOf(WAIS-III-V-4v1,has-for-model-acronym value var-acronym-WAIS-III-V-4v1,):1.0
+SubClassOf(WAIS-III-V-4v1,explores exactly 1 attention,):1.0
+SubClassOf(WAIS-III-V-4v1,measures exactly 1 the-correct-repetition-of-number-strings-forward-and-backwards):1.0
+is(WAIS-III-V-5,Class):1.0
+SubClassOf(WAIS-III-V-5,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-V-5,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-V-5,sub-instrument,):1.0
+SubClassOf(WAIS-III-V-5,test-instrument,):1.0
+SubClassOf(WAIS-III-V-5,explores some retrograde-semantic-memory-on-verbal-entry,):1.0
+SubClassOf(WAIS-III-V-5,is-a-sub-instrument-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-V-5,has-for-model-acronym value instr-acronym-WAIS-III-V-5,):1.0
+SubClassOf(WAIS-III-V-5,has-for-model-name value instr-name-WAIS-III-V-5,):1.0
+SubClassOf(WAIS-III-V-5,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-V-5,has-for-variable exactly 1 WAIS-III-V-5v1):1.0
+is(WAIS-III-V-5v1,Class):1.0
+SubClassOf(WAIS-III-V-5v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-5v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-5v1,main-variable,):1.0
+SubClassOf(WAIS-III-V-5v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-V-5v1,is-a-variable-of some WAIS-III-V-5,):1.0
+SubClassOf(WAIS-III-V-5v1,is-a-variable-of only WAIS-III-V-5,):1.0
+SubClassOf(WAIS-III-V-5v1,has-for-model-acronym value var-acronym-WAIS-III-V-5v1,):1.0
+SubClassOf(WAIS-III-V-5v1,explores exactly 1 retrograde-semantic-memory-on-verbal-entry,):1.0
+SubClassOf(WAIS-III-V-5v1,measures exactly 1 fund-of-factual-information):1.0
+is(WAIS-III-V-6,Class):1.0
+SubClassOf(WAIS-III-V-6,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-V-6,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-V-6,sub-instrument,):1.0
+SubClassOf(WAIS-III-V-6,test-instrument,):1.0
+SubClassOf(WAIS-III-V-6,explores some reasoning,):1.0
+SubClassOf(WAIS-III-V-6,explores some retrograde-semantic-memory,):1.0
+SubClassOf(WAIS-III-V-6,is-a-sub-instrument-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-V-6,has-for-model-acronym value instr-acronym-WAIS-III-V-6,):1.0
+SubClassOf(WAIS-III-V-6,has-for-model-name value instr-name-WAIS-III-V-6,):1.0
+SubClassOf(WAIS-III-V-6,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-V-6,has-for-variable exactly 1 WAIS-III-V-6v1):1.0
+is(WAIS-III-V-6v1,Class):1.0
+SubClassOf(WAIS-III-V-6v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-6v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-6v1,main-variable,):1.0
+SubClassOf(WAIS-III-V-6v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-V-6v1,is-a-variable-of some WAIS-III-V-6,):1.0
+SubClassOf(WAIS-III-V-6v1,is-a-variable-of only WAIS-III-V-6,):1.0
+SubClassOf(WAIS-III-V-6v1,has-for-model-acronym value var-acronym-WAIS-III-V-6v1,):1.0
+SubClassOf(WAIS-III-V-6v1,explores exactly 1 retrograde-semantic-memory,):1.0
+SubClassOf(WAIS-III-V-6v1,measures exactly 1 understanding-of-social-conventions-and-common-sense):1.0
+is(WAIS-III-V-7,Class):1.0
+SubClassOf(WAIS-III-V-7,multi-domains-instrument,):1.0
+SubClassOf(WAIS-III-V-7,neuropsychological-instrument,):1.0
+SubClassOf(WAIS-III-V-7,sub-instrument,):1.0
+SubClassOf(WAIS-III-V-7,test-instrument,):1.0
+SubClassOf(WAIS-III-V-7,explores some attention,):1.0
+SubClassOf(WAIS-III-V-7,explores some working-memory,):1.0
+SubClassOf(WAIS-III-V-7,is-a-sub-instrument-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-V-7,has-for-model-acronym value instr-acronym-WAIS-III-V-7,):1.0
+SubClassOf(WAIS-III-V-7,has-for-model-name value instr-name-WAIS-III-V-7,):1.0
+SubClassOf(WAIS-III-V-7,refers-to value instr-def-article-WECHSLER-1997,):1.0
+SubClassOf(WAIS-III-V-7,has-for-variable exactly 1 WAIS-III-V-7v1):1.0
+is(WAIS-III-V-7v1,Class):1.0
+SubClassOf(WAIS-III-V-7v1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-7v1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-V-7v1,main-variable,):1.0
+SubClassOf(WAIS-III-V-7v1,numerical-variable,):1.0
+SubClassOf(WAIS-III-V-7v1,is-a-variable-of some WAIS-III-V-7,):1.0
+SubClassOf(WAIS-III-V-7v1,is-a-variable-of only WAIS-III-V-7,):1.0
+SubClassOf(WAIS-III-V-7v1,has-for-model-acronym value var-acronym-WAIS-III-V-7v1,):1.0
+SubClassOf(WAIS-III-V-7v1,explores exactly 1 working-memory,):1.0
+SubClassOf(WAIS-III-V-7v1,measures exactly 1 number-of-series-of-numbers-and-letters-sequences-correctly-ordered):1.0
+is(WAIS-III-Vv1,Class):1.0
+SubClassOf(WAIS-III-Vv1,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-Vv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-Vv1,main-variable,):1.0
+SubClassOf(WAIS-III-Vv1,numerical-variable,):1.0
+SubClassOf(WAIS-III-Vv1,is-a-variable-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-Vv1,is-a-variable-of only WAIS-III-V,):1.0
+SubClassOf(WAIS-III-Vv1,has-for-model-acronym value var-acronym-WAIS-III-Vv1,):1.0
+SubClassOf(WAIS-III-Vv1,explores exactly 1 verbal-intellectual-ability,):1.0
+SubClassOf(WAIS-III-Vv1,measures exactly 1 verbal-component-of-the-intellectual-efficiency):1.0
+is(WAIS-III-Vv2,Class):1.0
+SubClassOf(WAIS-III-Vv2,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-Vv2,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-Vv2,main-variable,):1.0
+SubClassOf(WAIS-III-Vv2,numerical-variable,):1.0
+SubClassOf(WAIS-III-Vv2,is-a-variable-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-Vv2,is-a-variable-of only WAIS-III-V,):1.0
+SubClassOf(WAIS-III-Vv2,has-for-model-acronym value var-acronym-WAIS-III-Vv2,):1.0
+SubClassOf(WAIS-III-Vv2,explores exactly 1 verbal-intellectual-ability,):1.0
+SubClassOf(WAIS-III-Vv2,measures exactly 1 verbal-intelligence-quotient):1.0
+is(WAIS-III-Vv3,Class):1.0
+SubClassOf(WAIS-III-Vv3,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-Vv3,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-Vv3,main-variable,):1.0
+SubClassOf(WAIS-III-Vv3,numerical-variable,):1.0
+SubClassOf(WAIS-III-Vv3,is-a-variable-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-Vv3,is-a-variable-of only WAIS-III-V,):1.0
+SubClassOf(WAIS-III-Vv3,has-for-model-acronym value var-acronym-WAIS-III-Vv3,):1.0
+SubClassOf(WAIS-III-Vv3,explores exactly 1 language-comprehension,):1.0
+SubClassOf(WAIS-III-Vv3,measures exactly 1 verbal-knedge-and-understanding):1.0
+is(WAIS-III-Vv4,Class):1.0
+SubClassOf(WAIS-III-Vv4,age-dependent-variable,):1.0
+SubClassOf(WAIS-III-Vv4,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-III-Vv4,main-variable,):1.0
+SubClassOf(WAIS-III-Vv4,numerical-variable,):1.0
+SubClassOf(WAIS-III-Vv4,is-a-variable-of some WAIS-III-V,):1.0
+SubClassOf(WAIS-III-Vv4,is-a-variable-of only WAIS-III-V,):1.0
+SubClassOf(WAIS-III-Vv4,has-for-model-acronym value var-acronym-WAIS-III-Vv4,):1.0
+SubClassOf(WAIS-III-Vv4,explores exactly 1 working-memory,):1.0
+SubClassOf(WAIS-III-Vv4,measures exactly 1 ability-to-attend-to-verbally-presented-information-to-process-information-in-memory-and-then-to-formulate-a-response):1.0
+is(WAIS-IIIv1,Class):1.0
+SubClassOf(WAIS-IIIv1,age-dependent-variable,):1.0
+SubClassOf(WAIS-IIIv1,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-IIIv1,main-variable,):1.0
+SubClassOf(WAIS-IIIv1,numerical-variable,):1.0
+SubClassOf(WAIS-IIIv1,is-a-variable-of some WAIS-III,):1.0
+SubClassOf(WAIS-IIIv1,is-a-variable-of only WAIS-III,):1.0
+SubClassOf(WAIS-IIIv1,has-for-model-acronym value var-acronym-WAIS-IIIv1,):1.0
+SubClassOf(WAIS-IIIv1,explores exactly 1 intellectual-ability,):1.0
+SubClassOf(WAIS-IIIv1,measures exactly 1 general-thinking-and-reasoning-skills-of-individuals):1.0
+is(WAIS-IIIv2,Class):1.0
+SubClassOf(WAIS-IIIv2,age-dependent-variable,):1.0
+SubClassOf(WAIS-IIIv2,cultural-skill-dependent-variable,):1.0
+SubClassOf(WAIS-IIIv2,main-variable,):1.0
+SubClassOf(WAIS-IIIv2,numerical-variable,):1.0
+SubClassOf(WAIS-IIIv2,is-a-variable-of some WAIS-III,):1.0
+SubClassOf(WAIS-IIIv2,is-a-variable-of only WAIS-III,):1.0
+SubClassOf(WAIS-IIIv2,has-for-model-acronym value var-acronym-WAIS-IIIv2,):1.0
+SubClassOf(WAIS-IIIv2,explores exactly 1 intellectual-ability,):1.0
+SubClassOf(WAIS-IIIv2,measures exactly 1 intelligence-quotient):1.0
+is(ability-to-attend-to-verbally-presented-information-to-process-information-in-memory-and-then-to-formulate-a-response,Class):1.0
+is(ambulation,Class):1.0
+is(ambulation-performance-with-bilateral-assistance,Class):1.0
+is(ambulation-performance-with-unilateral-assistance,Class):1.0
+is(ambulation-performance-without-assistance,Class):1.0
+is(attention,Class):1.0
+is(bowel-and-bladder-function,Class):1.0
+is(bowel-bladder-functions-performance,Class):1.0
+is(brainstem-functions-performance,Class):1.0
+is(calculation,Class):1.0
+is(capacity-to-arrange-pictures-in-order-to-tell-a-story-in-a-limited-time,Class):1.0
+is(category-fluency,Class):1.0
+is(cerebellar-functions,Class):1.0
+is(cerebellar-functions-performance,Class):1.0
+is(cerebral-function,Class):1.0
+is(cerebral-functions-performance,Class):1.0
+is(cognitive-affective-factor-of-depression,Class):1.0
+is(cognitive-flexibility,Class):1.0
+is(cognitive-mental-status,Class):1.0
+is(community-activities,Class):1.0
+is(concept-generation,Class):1.0
+is(conceptual-elaboration,Class):1.0
+is(constructional-functions,Class):1.0
+is(copy-accuracy,Class):1.0
+is(copy-time,Class):1.0
+is(cranial-nerves-functions,Class):1.0
+is(deductive-reasoning,Class):1.0
+is(dementia,Class):1.0
+is(depression,Class):1.0
+is(disability-status,Class):1.0
+is(divided-attention,Class):1.0
+is(episodic-memory,Class):1.0
+is(executive-functions,Class):1.0
+is(fund-of-factual-information,Class):1.0
+is(general-thinking-and-reasoning-skills-of-individuals,Class):1.0
+is(global-cognitive-efficiency,Class):1.0
+is(home-activities,Class):1.0
+is(inductive-reasoning,Class):1.0
+is(intellectual-ability,Class):1.0
+is(intelligence-quotient,Class):1.0
+is(intensity-of-affective-and-cognitive-components-of-depression,Class):1.0
+is(intensity-of-agitation,Class):1.0
+is(intensity-of-change-in-appetite,Class):1.0
+is(intensity-of-change-in-sleeping-pattern,Class):1.0
+is(intensity-of-concentration-difficulty,Class):1.0
+is(intensity-of-crying,Class):1.0
+is(intensity-of-depression,Class):1.0
+is(intensity-of-guilty-feelings,Class):1.0
+is(intensity-of-indecisiveness,Class):1.0
+is(intensity-of-irritability,Class):1.0
+is(intensity-of-loss-of-energy,Class):1.0
+is(intensity-of-loss-of-interest,Class):1.0
+is(intensity-of-loss-of-interest-in-sex,Class):1.0
+is(intensity-of-loss-of-pleasure,Class):1.0
+is(intensity-of-past-failure,Class):1.0
+is(intensity-of-pessimism,Class):1.0
+is(intensity-of-punishment-feelings,Class):1.0
+is(intensity-of-sadness,Class):1.0
+is(intensity-of-self-criticalness,Class):1.0
+is(intensity-of-self-dislike,Class):1.0
+is(intensity-of-somatic-component-of-depression,Class):1.0
+is(intensity-of-suicidal-thoughts-or-wishes,Class):1.0
+is(intensity-of-tiredness-or-fatigue,Class):1.0
+is(intensity-of-worthlessness,Class):1.0
+is(interference-effect,Class):1.0
+is(language,Class):1.0
+is(language-comprehension,Class):1.0
+is(language-performance,Class):1.0
+is(level-of-dependency,Class):1.0
+is(long-term-verbal-memory,Class):1.0
+is(mathematical-word-problems-correctly-performed-mentally,Class):1.0
+is(memory,Class):1.0
+is(motor-component-of-constructional-functions,Class):1.0
+is(motor-function,Class):1.0
+is(neurological-functions,Class):1.0
+is(number-of-colors-named-in-45-seconds,Class):1.0
+is(number-of-correct-recognitions-hits,Class):1.0
+is(number-of-errors,Class):1.0
+is(number-of-false-recognitions,Class):1.0
+is(number-of-geometric-shapes-identified-in-a-limited-time,Class):1.0
+is(number-of-ink-colors-named-in-45-seconds,Class):1.0
+is(number-of-interferences,Class):1.0
+is(number-of-intrusions,Class):1.0
+is(number-of-objects-built-in-a-limited-time,Class):1.0
+is(number-of-perseverations,Class):1.0
+is(number-of-pictures-completed-in-a-limited-time,Class):1.0
+is(number-of-series-of-numbers-and-letters-sequences-correctly-ordered,Class):1.0
+is(number-of-specific-designs-built-in-a-limited-time,Class):1.0
+is(number-of-symbols-correctly-matched-in-a-limited-time,Class):1.0
+is(number-of-words-correctly-identified,Class):1.0
+is(number-of-words-correctly-retrieved,Class):1.0
+is(number-of-words-in-a-60s-trial,Class):1.0
+is(number-of-words-read-in-45-seconds,Class):1.0
+is(optic-functions-performance,Class):1.0
+is(oral-language-comprehesion,Class):1.0
+is(oral-language-production,Class):1.0
+is(organizational-quality,Class):1.0
+is(orientation,Class):1.0
+is(orientation-to-place,Class):1.0
+is(orientation-to-time,Class):1.0
+is(perceptual-component-of-constructional-functions,Class):1.0
+is(perceptual-organization,Class):1.0
+is(percepual-organization,Class):1.0
+is(performance-component-of-the-intellectual-efficiency,Class):1.0
+is(performance-intellectual-ability,Class):1.0
+is(performance-intelligence-quotient,Class):1.0
+is(performance-on-counting-backwards-by-7,Class):1.0
+is(performance-on-execution-of-a-3-stage-command,Class):1.0
+is(performance-on-naming-of-two-objects,Class):1.0
+is(performance-on-orientation,Class):1.0
+is(performance-on-orientation-to-place,Class):1.0
+is(performance-on-orientation-to-time,Class):1.0
+is(performance-on-reading-a-sentence,Class):1.0
+is(performance-on-recall-of-three-objects,Class):1.0
+is(performance-on-registration-of-three-objects,Class):1.0
+is(performance-on-repetition-of-a-sentence,Class):1.0
+is(performance-on-writing-a-sentence,Class):1.0
+is(personal-care,Class):1.0
+is(planning,Class):1.0
+is(problem-solving-judgment,Class):1.0
+is(processing-speed,Class):1.0
+is(processing-speed-domain,Class):1.0
+is(pyramidal-functions-performance,Class):1.0
+is(reasoning,Class):1.0
+is(receptive-and-expressive-vocabulary,Class):1.0
+is(response-inhibition,Class):1.0
+is(response-time,Class):1.0
+is(retrograde-semantic-memory,Class):1.0
+is(retrograde-semantic-memory-on-verbal-entry,Class):1.0
+is(retrograde-semantic-memory-on-visual-entry,Class):1.0
+is(semantic-memory,Class):1.0
+is(semantic-processing-of-visuoperception,Class):1.0
+is(sensory-function,Class):1.0
+is(sensory-functions-performance,Class):1.0
+is(set-shifting,Class):1.0
+is(severity-of-dementia,Class):1.0
+is(severity-of-impairment-in-community-activities,Class):1.0
+is(severity-of-impairment-in-home-activities,Class):1.0
+is(severity-of-impairment-in-solving-problems,Class):1.0
+is(severity-of-memory-loss,Class):1.0
+is(severity-of-orientation-difficulty,Class):1.0
+is(short-term-verbal-memory,Class):1.0
+is(somatic-factor-of-depression,Class):1.0
+is(the-correct-repetition-of-number-strings-forward-and-backwards,Class):1.0
+is(total-number-of-words-correctly-retrieved,Class):1.0
+is(total-number-of-words-correctly-retrieved-on-the-three-successive-trials,Class):1.0
+is(understanding-of-social-conventions-and-common-sense,Class):1.0
+is(verbal-abstract-reasoning-and-conceptualization-abilities,Class):1.0
+is(verbal-category-fluency,Class):1.0
+is(verbal-component-of-the-intellectual-efficiency,Class):1.0
+is(verbal-intellectual-ability,Class):1.0
+is(verbal-intelligence-quotient,Class):1.0
+is(verbal-knedge-and-understanding,Class):1.0
+is(verbal-letter-fluency,Class):1.0
+is(verbal-long-term-memory,Class):1.0
+is(verbal-memory,Class):1.0
+is(verbal-memory-encoding,Class):1.0
+is(visual-function,Class):1.0
+is(visual-memory,Class):1.0
+is(visual-scanning,Class):1.0
+is(vocabulary,Class):1.0
+is(working-memory,Class):1.0
+is(written-language-comprehension,Class):1.0
+is(written-language-production,Class):1.0
+is(MR-examination-protocol,Class):1.0
+SubClassOf(MR-examination-protocol,protocol):1.0
+is(ethics-committee,Class):1.0
+is(ethics-committee-authorization,Class):1.0
+SubClassOf(ethics-committee-authorization,authorization,):1.0
+SubClassOf(ethics-committee-authorization,has-for-author some ethics-committee):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(instr-acronym-BDI-II,Individual):1.0
+is(instr-acronym-BDI-II-1,Individual):1.0
+is(instr-acronym-BDI-II-10,Individual):1.0
+is(instr-acronym-BDI-II-11,Individual):1.0
+is(instr-acronym-BDI-II-12,Individual):1.0
+is(instr-acronym-BDI-II-13,Individual):1.0
+is(instr-acronym-BDI-II-14,Individual):1.0
+is(instr-acronym-BDI-II-15,Individual):1.0
+is(instr-acronym-BDI-II-16,Individual):1.0
+is(instr-acronym-BDI-II-17,Individual):1.0
+is(instr-acronym-BDI-II-18,Individual):1.0
+is(instr-acronym-BDI-II-19,Individual):1.0
+is(instr-acronym-BDI-II-2,Individual):1.0
+is(instr-acronym-BDI-II-20,Individual):1.0
+is(instr-acronym-BDI-II-21,Individual):1.0
+is(instr-acronym-BDI-II-3,Individual):1.0
+is(instr-acronym-BDI-II-4,Individual):1.0
+is(instr-acronym-BDI-II-5,Individual):1.0
+is(instr-acronym-BDI-II-6,Individual):1.0
+is(instr-acronym-BDI-II-7,Individual):1.0
+is(instr-acronym-BDI-II-8,Individual):1.0
+is(instr-acronym-BDI-II-9,Individual):1.0
+is(instr-acronym-CATVF,Individual):1.0
+is(instr-acronym-CATVF-A,Individual):1.0
+is(instr-acronym-CATVF-C,Individual):1.0
+is(instr-acronym-CATVF-S,Individual):1.0
+is(instr-acronym-CDR,Individual):1.0
+is(instr-acronym-CDR-CA,Individual):1.0
+is(instr-acronym-CDR-HH,Individual):1.0
+is(instr-acronym-CDR-J,Individual):1.0
+is(instr-acronym-CDR-M,Individual):1.0
+is(instr-acronym-CDR-O,Individual):1.0
+is(instr-acronym-CDR-PC,Individual):1.0
+is(instr-acronym-CFT-C,Individual):1.0
+is(instr-acronym-CFT-C-1,Individual):1.0
+is(instr-acronym-CFT-C-2,Individual):1.0
+is(instr-acronym-CFT-M,Individual):1.0
+is(instr-acronym-COWAT,Individual):1.0
+is(instr-acronym-COWAT-M,Individual):1.0
+is(instr-acronym-COWAT-P,Individual):1.0
+is(instr-acronym-COWAT-S,Individual):1.0
+is(instr-acronym-EDSS,Individual):1.0
+is(instr-acronym-EDSS-1,Individual):1.0
+is(instr-acronym-EDSS-2,Individual):1.0
+is(instr-acronym-EDSS-3,Individual):1.0
+is(instr-acronym-EDSS-4,Individual):1.0
+is(instr-acronym-EDSS-5,Individual):1.0
+is(instr-acronym-EDSS-6,Individual):1.0
+is(instr-acronym-EDSS-7,Individual):1.0
+is(instr-acronym-EDSS-8,Individual):1.0
+is(instr-acronym-FCSRT-IR,Individual):1.0
+is(instr-acronym-FCSRT-IR-1,Individual):1.0
+is(instr-acronym-FCSRT-IR-2,Individual):1.0
+is(instr-acronym-FCSRT-IR-3,Individual):1.0
+is(instr-acronym-FCSRT-IR-3-1,Individual):1.0
+is(instr-acronym-FCSRT-IR-3-2,Individual):1.0
+is(instr-acronym-FCSRT-IR-3-3,Individual):1.0
+is(instr-acronym-FCSRT-IR-4,Individual):1.0
+is(instr-acronym-FCSRT-IR-5,Individual):1.0
+is(instr-acronym-MMS,Individual):1.0
+is(instr-acronym-MMS-1,Individual):1.0
+is(instr-acronym-MMS-1-1,Individual):1.0
+is(instr-acronym-MMS-1-2,Individual):1.0
+is(instr-acronym-MMS-2,Individual):1.0
+is(instr-acronym-MMS-3,Individual):1.0
+is(instr-acronym-MMS-4,Individual):1.0
+is(instr-acronym-MMS-5,Individual):1.0
+is(instr-acronym-MMS-5-1,Individual):1.0
+is(instr-acronym-MMS-5-2,Individual):1.0
+is(instr-acronym-MMS-5-3,Individual):1.0
+is(instr-acronym-MMS-5-4,Individual):1.0
+is(instr-acronym-MMS-5-5,Individual):1.0
+is(instr-acronym-MMS-6,Individual):1.0
+is(instr-acronym-STROOP,Individual):1.0
+is(instr-acronym-STROOP-1,Individual):1.0
+is(instr-acronym-STROOP-2,Individual):1.0
+is(instr-acronym-STROOP-3,Individual):1.0
+is(instr-acronym-TMT,Individual):1.0
+is(instr-acronym-TMT-A,Individual):1.0
+is(instr-acronym-TMT-B,Individual):1.0
+is(instr-acronym-WAIS-III,Individual):1.0
+is(instr-acronym-WAIS-III-P,Individual):1.0
+is(instr-acronym-WAIS-III-P-1,Individual):1.0
+is(instr-acronym-WAIS-III-P-2,Individual):1.0
+is(instr-acronym-WAIS-III-P-3,Individual):1.0
+is(instr-acronym-WAIS-III-P-4,Individual):1.0
+is(instr-acronym-WAIS-III-P-5,Individual):1.0
+is(instr-acronym-WAIS-III-P-6,Individual):1.0
+is(instr-acronym-WAIS-III-P-7,Individual):1.0
+is(instr-acronym-WAIS-III-V,Individual):1.0
+is(instr-acronym-WAIS-III-V-1,Individual):1.0
+is(instr-acronym-WAIS-III-V-2,Individual):1.0
+is(instr-acronym-WAIS-III-V-3,Individual):1.0
+is(instr-acronym-WAIS-III-V-4,Individual):1.0
+is(instr-acronym-WAIS-III-V-5,Individual):1.0
+is(instr-acronym-WAIS-III-V-6,Individual):1.0
+is(instr-acronym-WAIS-III-V-7,Individual):1.0
+is(instr-def-article-AITB-1944,Individual):1.0
+is(instr-def-article-BECK-1996,Individual):1.0
+is(instr-def-article-BENTON-1994,Individual):1.0
+is(instr-def-article-FOLSTEIN-1975,Individual):1.0
+is(instr-def-article-GOLDEN-1978,Individual):1.0
+is(instr-def-article-GOODGLASS-1972,Individual):1.0
+is(instr-def-article-KURTZKE-1983,Individual):1.0
+is(instr-def-article-PILLON-1981,Individual):1.0
+is(instr-def-article-REY-1941,Individual):1.0
+is(instr-def-article-WECHSLER-1997,Individual):1.0
+is(instr-name-BDI-II,Individual):1.0
+is(instr-name-BDI-II-1,Individual):1.0
+is(instr-name-BDI-II-10,Individual):1.0
+is(instr-name-BDI-II-11,Individual):1.0
+is(instr-name-BDI-II-12,Individual):1.0
+is(instr-name-BDI-II-13,Individual):1.0
+is(instr-name-BDI-II-14,Individual):1.0
+is(instr-name-BDI-II-15,Individual):1.0
+is(instr-name-BDI-II-16,Individual):1.0
+is(instr-name-BDI-II-17,Individual):1.0
+is(instr-name-BDI-II-18,Individual):1.0
+is(instr-name-BDI-II-19,Individual):1.0
+is(instr-name-BDI-II-2,Individual):1.0
+is(instr-name-BDI-II-20,Individual):1.0
+is(instr-name-BDI-II-21,Individual):1.0
+is(instr-name-BDI-II-3,Individual):1.0
+is(instr-name-BDI-II-4,Individual):1.0
+is(instr-name-BDI-II-5,Individual):1.0
+is(instr-name-BDI-II-6,Individual):1.0
+is(instr-name-BDI-II-7,Individual):1.0
+is(instr-name-BDI-II-8,Individual):1.0
+is(instr-name-BDI-II-9,Individual):1.0
+is(instr-name-CATVF,Individual):1.0
+is(instr-name-CATVF-A,Individual):1.0
+is(instr-name-CATVF-C,Individual):1.0
+is(instr-name-CATVF-S,Individual):1.0
+is(instr-name-CDR,Individual):1.0
+is(instr-name-CDR-CA,Individual):1.0
+is(instr-name-CDR-HH,Individual):1.0
+is(instr-name-CDR-J,Individual):1.0
+is(instr-name-CDR-M,Individual):1.0
+is(instr-name-CDR-O,Individual):1.0
+is(instr-name-CDR-PC,Individual):1.0
+is(instr-name-CFT-C,Individual):1.0
+is(instr-name-CFT-C-1,Individual):1.0
+is(instr-name-CFT-C-2,Individual):1.0
+is(instr-name-CFT-M,Individual):1.0
+is(instr-name-COWAT,Individual):1.0
+is(instr-name-COWAT-M,Individual):1.0
+is(instr-name-COWAT-P,Individual):1.0
+is(instr-name-COWAT-S,Individual):1.0
+is(instr-name-EDSS,Individual):1.0
+is(instr-name-EDSS-1,Individual):1.0
+is(instr-name-EDSS-2,Individual):1.0
+is(instr-name-EDSS-3,Individual):1.0
+is(instr-name-EDSS-4,Individual):1.0
+is(instr-name-EDSS-5,Individual):1.0
+is(instr-name-EDSS-6,Individual):1.0
+is(instr-name-EDSS-7,Individual):1.0
+is(instr-name-EDSS-8,Individual):1.0
+is(instr-name-FCSRT-IR,Individual):1.0
+is(instr-name-FCSRT-IR-1,Individual):1.0
+is(instr-name-FCSRT-IR-2,Individual):1.0
+is(instr-name-FCSRT-IR-3,Individual):1.0
+is(instr-name-FCSRT-IR-3-1,Individual):1.0
+is(instr-name-FCSRT-IR-3-2,Individual):1.0
+is(instr-name-FCSRT-IR-3-3,Individual):1.0
+is(instr-name-FCSRT-IR-4,Individual):1.0
+is(instr-name-FCSRT-IR-5,Individual):1.0
+is(instr-name-MMS,Individual):1.0
+is(instr-name-MMS-1,Individual):1.0
+is(instr-name-MMS-1-1,Individual):1.0
+is(instr-name-MMS-1-2,Individual):1.0
+is(instr-name-MMS-2,Individual):1.0
+is(instr-name-MMS-3,Individual):1.0
+is(instr-name-MMS-4,Individual):1.0
+is(instr-name-MMS-5,Individual):1.0
+is(instr-name-MMS-5-1,Individual):1.0
+is(instr-name-MMS-5-2,Individual):1.0
+is(instr-name-MMS-5-3,Individual):1.0
+is(instr-name-MMS-5-4,Individual):1.0
+is(instr-name-MMS-5-5,Individual):1.0
+is(instr-name-MMS-6,Individual):1.0
+is(instr-name-STROOP,Individual):1.0
+is(instr-name-STROOP-1,Individual):1.0
+is(instr-name-STROOP-2,Individual):1.0
+is(instr-name-STROOP-3,Individual):1.0
+is(instr-name-TMT,Individual):1.0
+is(instr-name-TMT-A,Individual):1.0
+is(instr-name-TMT-B,Individual):1.0
+is(instr-name-WAIS-III,Individual):1.0
+is(instr-name-WAIS-III-P,Individual):1.0
+is(instr-name-WAIS-III-P-1,Individual):1.0
+is(instr-name-WAIS-III-P-2,Individual):1.0
+is(instr-name-WAIS-III-P-3,Individual):1.0
+is(instr-name-WAIS-III-P-4,Individual):1.0
+is(instr-name-WAIS-III-P-5,Individual):1.0
+is(instr-name-WAIS-III-P-6,Individual):1.0
+is(instr-name-WAIS-III-P-7,Individual):1.0
+is(instr-name-WAIS-III-V,Individual):1.0
+is(instr-name-WAIS-III-V-1,Individual):1.0
+is(instr-name-WAIS-III-V-2,Individual):1.0
+is(instr-name-WAIS-III-V-3,Individual):1.0
+is(instr-name-WAIS-III-V-4,Individual):1.0
+is(instr-name-WAIS-III-V-5,Individual):1.0
+is(instr-name-WAIS-III-V-6,Individual):1.0
+is(instr-name-WAIS-III-V-7,Individual):1.0
+is(var-acronym-BDI-II-10v1,Individual):1.0
+is(var-acronym-BDI-II-11v1,Individual):1.0
+is(var-acronym-BDI-II-12v1,Individual):1.0
+is(var-acronym-BDI-II-13v1,Individual):1.0
+is(var-acronym-BDI-II-14v1,Individual):1.0
+is(var-acronym-BDI-II-15v1,Individual):1.0
+is(var-acronym-BDI-II-16v1,Individual):1.0
+is(var-acronym-BDI-II-17v1,Individual):1.0
+is(var-acronym-BDI-II-18v1,Individual):1.0
+is(var-acronym-BDI-II-19v1,Individual):1.0
+is(var-acronym-BDI-II-1v1,Individual):1.0
+is(var-acronym-BDI-II-20v1,Individual):1.0
+is(var-acronym-BDI-II-21v1,Individual):1.0
+is(var-acronym-BDI-II-2v1,Individual):1.0
+is(var-acronym-BDI-II-3v1,Individual):1.0
+is(var-acronym-BDI-II-4v1,Individual):1.0
+is(var-acronym-BDI-II-5v1,Individual):1.0
+is(var-acronym-BDI-II-6v1,Individual):1.0
+is(var-acronym-BDI-II-7v1,Individual):1.0
+is(var-acronym-BDI-II-8v1,Individual):1.0
+is(var-acronym-BDI-II-9v1,Individual):1.0
+is(var-acronym-BDI-IIv1,Individual):1.0
+is(var-acronym-BDI-IIv2,Individual):1.0
+is(var-acronym-BDI-IIv3,Individual):1.0
+is(var-acronym-CATVF-Av1,Individual):1.0
+is(var-acronym-CATVF-Cv1,Individual):1.0
+is(var-acronym-CATVF-Sv1,Individual):1.0
+is(var-acronym-CATVFv1,Individual):1.0
+is(var-acronym-CDR-CA-v1,Individual):1.0
+is(var-acronym-CDR-GBv1,Individual):1.0
+is(var-acronym-CDR-HH-v1,Individual):1.0
+is(var-acronym-CDR-J-v1,Individual):1.0
+is(var-acronym-CDR-M-v1,Individual):1.0
+is(var-acronym-CDR-O-v1,Individual):1.0
+is(var-acronym-CDR-PC-v1,Individual):1.0
+is(var-acronym-CDR-SoBv1,Individual):1.0
+is(var-acronym-CFT-C-1v1,Individual):1.0
+is(var-acronym-CFT-C-2v1,Individual):1.0
+is(var-acronym-CFT-Cv1,Individual):1.0
+is(var-acronym-CFT-Cv2,Individual):1.0
+is(var-acronym-CFT-Cv3,Individual):1.0
+is(var-acronym-CFT-Mv1,Individual):1.0
+is(var-acronym-CFT-Mv2,Individual):1.0
+is(var-acronym-CFT-Mv3,Individual):1.0
+is(var-acronym-COWAT-Mv1,Individual):1.0
+is(var-acronym-COWAT-Pv1,Individual):1.0
+is(var-acronym-COWAT-Sv1,Individual):1.0
+is(var-acronym-COWATv1,Individual):1.0
+is(var-acronym-EDSS-1v1,Individual):1.0
+is(var-acronym-EDSS-2v1,Individual):1.0
+is(var-acronym-EDSS-3v1,Individual):1.0
+is(var-acronym-EDSS-4v1,Individual):1.0
+is(var-acronym-EDSS-5v1,Individual):1.0
+is(var-acronym-EDSS-6v1,Individual):1.0
+is(var-acronym-EDSS-7v1,Individual):1.0
+is(var-acronym-EDSS-8v1,Individual):1.0
+is(var-acronym-EDSS-8v2,Individual):1.0
+is(var-acronym-EDSS-8v3,Individual):1.0
+is(var-acronym-EDSSv1,Individual):1.0
+is(var-acronym-FCSRT-IR-1v1,Individual):1.0
+is(var-acronym-FCSRT-IR-2v1,Individual):1.0
+is(var-acronym-FCSRT-IR-3-1v1,Individual):1.0
+is(var-acronym-FCSRT-IR-3-1v2,Individual):1.0
+is(var-acronym-FCSRT-IR-3-1v3,Individual):1.0
+is(var-acronym-FCSRT-IR-3-1v4,Individual):1.0
+is(var-acronym-FCSRT-IR-3-1v5,Individual):1.0
+is(var-acronym-FCSRT-IR-3-1v6,Individual):1.0
+is(var-acronym-FCSRT-IR-3-2v1,Individual):1.0
+is(var-acronym-FCSRT-IR-3-2v2,Individual):1.0
+is(var-acronym-FCSRT-IR-3-2v3,Individual):1.0
+is(var-acronym-FCSRT-IR-3-2v4,Individual):1.0
+is(var-acronym-FCSRT-IR-3-2v5,Individual):1.0
+is(var-acronym-FCSRT-IR-3-2v6,Individual):1.0
+is(var-acronym-FCSRT-IR-3-3v1,Individual):1.0
+is(var-acronym-FCSRT-IR-3-3v2,Individual):1.0
+is(var-acronym-FCSRT-IR-3-3v3,Individual):1.0
+is(var-acronym-FCSRT-IR-3-3v4,Individual):1.0
+is(var-acronym-FCSRT-IR-3-3v5,Individual):1.0
+is(var-acronym-FCSRT-IR-3-3v6,Individual):1.0
+is(var-acronym-FCSRT-IR-3v1,Individual):1.0
+is(var-acronym-FCSRT-IR-3v2,Individual):1.0
+is(var-acronym-FCSRT-IR-3v3,Individual):1.0
+is(var-acronym-FCSRT-IR-3v4,Individual):1.0
+is(var-acronym-FCSRT-IR-3v5,Individual):1.0
+is(var-acronym-FCSRT-IR-3v6,Individual):1.0
+is(var-acronym-FCSRT-IR-4v1,Individual):1.0
+is(var-acronym-FCSRT-IR-4v2,Individual):1.0
+is(var-acronym-FCSRT-IR-4v3,Individual):1.0
+is(var-acronym-FCSRT-IR-4v4,Individual):1.0
+is(var-acronym-FCSRT-IR-4v5,Individual):1.0
+is(var-acronym-FCSRT-IR-4v6,Individual):1.0
+is(var-acronym-FCSRT-IR-5v1,Individual):1.0
+is(var-acronym-FCSRT-IR-5v2,Individual):1.0
+is(var-acronym-MMS-1-1v1,Individual):1.0
+is(var-acronym-MMS-1-2v1,Individual):1.0
+is(var-acronym-MMS-1v1,Individual):1.0
+is(var-acronym-MMS-2v1,Individual):1.0
+is(var-acronym-MMS-3v1,Individual):1.0
+is(var-acronym-MMS-4v1,Individual):1.0
+is(var-acronym-MMS-5-1v1,Individual):1.0
+is(var-acronym-MMS-5-2v1,Individual):1.0
+is(var-acronym-MMS-5-3v1,Individual):1.0
+is(var-acronym-MMS-5-4v1,Individual):1.0
+is(var-acronym-MMS-5-5v1,Individual):1.0
+is(var-acronym-MMS-5v1,Individual):1.0
+is(var-acronym-MMS-6v1,Individual):1.0
+is(var-acronym-MMSv1,Individual):1.0
+is(var-acronym-STROOP-1v1,Individual):1.0
+is(var-acronym-STROOP-2v1,Individual):1.0
+is(var-acronym-STROOP-3v1,Individual):1.0
+is(var-acronym-STROOPv1,Individual):1.0
+is(var-acronym-TMT-Av1,Individual):1.0
+is(var-acronym-TMT-Av2,Individual):1.0
+is(var-acronym-TMT-Bv1,Individual):1.0
+is(var-acronym-TMT-Bv2,Individual):1.0
+is(var-acronym-TMTv1,Individual):1.0
+is(var-acronym-WAIS-III-P-1v1,Individual):1.0
+is(var-acronym-WAIS-III-P-2v1,Individual):1.0
+is(var-acronym-WAIS-III-P-3v1,Individual):1.0
+is(var-acronym-WAIS-III-P-4v1,Individual):1.0
+is(var-acronym-WAIS-III-P-5v1,Individual):1.0
+is(var-acronym-WAIS-III-P-6v1,Individual):1.0
+is(var-acronym-WAIS-III-P-7v1,Individual):1.0
+is(var-acronym-WAIS-III-Pv1,Individual):1.0
+is(var-acronym-WAIS-III-Pv2,Individual):1.0
+is(var-acronym-WAIS-III-Pv3,Individual):1.0
+is(var-acronym-WAIS-III-Pv4,Individual):1.0
+is(var-acronym-WAIS-III-V-1v1,Individual):1.0
+is(var-acronym-WAIS-III-V-2v1,Individual):1.0
+is(var-acronym-WAIS-III-V-3v1,Individual):1.0
+is(var-acronym-WAIS-III-V-4v1,Individual):1.0
+is(var-acronym-WAIS-III-V-5v1,Individual):1.0
+is(var-acronym-WAIS-III-V-6v1,Individual):1.0
+is(var-acronym-WAIS-III-V-7v1,Individual):1.0
+is(var-acronym-WAIS-III-Vv1,Individual):1.0
+is(var-acronym-WAIS-III-Vv2,Individual):1.0
+is(var-acronym-WAIS-III-Vv3,Individual):1.0
+is(var-acronym-WAIS-III-Vv4,Individual):1.0
+is(var-acronym-WAIS-IIIv1,Individual):1.0
+is(var-acronym-WAIS-IIIv2,Individual):1.0
+DisjointClasses(var-acronym-WAIS-IIIv2,arbitrary-sum,non-physical-endurant,physical-endurant):1.0

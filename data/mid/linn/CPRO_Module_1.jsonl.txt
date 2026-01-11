@@ -1,0 +1,268 @@
+predicate(actsOn,is,ObjectProperty).
+predicate(approachSite,is,ObjectProperty).
+predicate(approachSite,Domain,procedure).
+predicate(approachSite,Range,immaterial-anatomical-continuant).
+predicate(composedBy,is,ObjectProperty).
+predicate(findingSite,is,ObjectProperty).
+predicate(findingSite,Domain,clinical-finding).
+predicate(findingSite,Range,physical-anatomical-entity).
+predicate(hasContraindication,is,ObjectProperty).
+predicate(hasContraindication,Domain,therapeutic-act).
+predicate(hasContraindication,InverseOf,isContraindicationFor).
+predicate(hasIndication,is,ObjectProperty).
+predicate(hasIndication,Domain,therapeutic-act).
+predicate(hasIndication,InverseOf,isIndicationFor).
+predicate(hasOutput,is,ObjectProperty).
+predicate(hasRole,is,ObjectProperty).
+predicate(hypothesizedProblem,is,ObjectProperty).
+predicate(hypothesizedProblem,Domain,clinical-diagnosis).
+predicate(hypothesizedProblem,Range,pathological-disposition).
+predicate(includes,is,ObjectProperty).
+predicate(includes,Domain,recorded-clinical-situation).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(investigates,is,ObjectProperty).
+predicate(isConsequenceOf,is,ObjectProperty).
+predicate(isContraindicationFor,is,ObjectProperty).
+predicate(isContraindicationFor,InverseOf,hasContraindication).
+predicate(isIndicationFor,is,ObjectProperty).
+predicate(isIndicationFor,InverseOf,hasIndication).
+predicate(measurementOf,is,ObjectProperty).
+predicate(outputOf,is,ObjectProperty).
+predicate(representationOf,is,ObjectProperty).
+predicate(www.obofoundry.org/ro/ro.#,is,ObjectProperty).
+predicate(www.obofoundry.org/ro/ro.#,is,ObjectProperty).
+predicate(www.obofoundry.org/ro/ro.#,is,ObjectProperty).
+predicate(www.obofoundry.org/ro/ro.#,is,ObjectProperty).
+predicate(www.obofoundry.org/ro/ro.#,is,ObjectProperty).
+predicate(Prefix,is,Class).
+predicate(Prefix,SubClassOf,metadata-entity).
+predicate(QualityValue,is,Class).
+predicate(QualityValue,SubClassOf,data-entity).
+predicate(UnitOfMeasurement,is,Class).
+predicate(UnitOfMeasurement,SubClassOf,data-entity).
+predicate(anamnesis,is,Class).
+predicate(anamnesis,EquivalentTo,clinical-finding and (outputOf some medical-history-screening-act)).
+predicate(anamnesis,SubClassOf,clinical-finding).
+predicate(anamnesis,DisjointWith,sign-recording).
+predicate(anamnesis,DisjointWith,laboratory-test-finding).
+predicate(anamnesis,DisjointWith,clinical-diagnosis).
+predicate(anatomical-structure,is,Class).
+predicate(anatomical-structure,SubClassOf,Object).
+predicate(anatomical-structure,DisjointWith,pharmacological-substance).
+predicate(anatomical-structure,DisjointWith,organism).
+predicate(anatomical-structure,DisjointWith,medical-device).
+predicate(anatomical-structure,DisjointWith,deoxyribonucleic-acid-structure).
+predicate(anatomical-structure,DisjointWith,computer-system).
+predicate(biological-process,is,Class).
+predicate(bodily-feature,is,Class).
+predicate(clinical-act,is,Class).
+predicate(clinical-administration-act,is,Class).
+predicate(clinical-administration-act,SubClassOf,clinical-act).
+predicate(clinical-analysis-act,is,Class).
+predicate(clinical-analysis-act,SubClassOf,clinical-investigation-act).
+predicate(clinical-artifact,is,Class).
+predicate(clinical-diagnosis,is,Class).
+predicate(clinical-diagnosis,SubClassOf,clinical-finding,).
+predicate(clinical-diagnosis,SubClassOf,hypothesizedProblem some pathological-disposition,).
+predicate(clinical-diagnosis,SubClassOf,outputOf some clinical-analysis-act).
+predicate(clinical-diagnosis,DisjointWith,sign-recording).
+predicate(clinical-diagnosis,DisjointWith,laboratory-test-finding).
+predicate(clinical-diagnosis,DisjointWith,anamnesis).
+predicate(clinical-examination,is,Class).
+predicate(clinical-examination,SubClassOf,screening-act).
+predicate(clinical-finding,is,Class).
+predicate(clinical-finding,SubClassOf,clinical-artifact,).
+predicate(clinical-finding,SubClassOf,composedBy some (hasRole some clinician-role),).
+predicate(clinical-finding,SubClassOf,outputOf some clinical-act,).
+predicate(clinical-finding,SubClassOf,representationOf some bodily-feature).
+predicate(clinical-finding,DisjointWith,symptom-recording).
+predicate(clinical-finding,DisjointWith,recorded-clinical-situation).
+predicate(clinical-finding,DisjointWith,patient-record).
+predicate(clinical-investigation-act,is,Class).
+predicate(clinical-investigation-act,SubClassOf,clinical-act,).
+predicate(clinical-investigation-act,SubClassOf,hasOutput some clinical-artifact,).
+predicate(clinical-investigation-act,SubClassOf,investigates some).
+predicate(clinical-investigation-act,SubClassOf,(etiologic-agent or (hasIndication some therapeutic-act))).
+predicate(clinician-role,is,Class).
+predicate(computer-system,is,Class).
+predicate(computer-system,SubClassOf,Object).
+predicate(computer-system,DisjointWith,pharmacological-substance).
+predicate(computer-system,DisjointWith,organism).
+predicate(computer-system,DisjointWith,medical-device).
+predicate(computer-system,DisjointWith,deoxyribonucleic-acid-structure).
+predicate(computer-system,DisjointWith,anatomical-structure).
+predicate(cpr-entities,is,Class).
+predicate(cpr-entities,EquivalentTo,patient-record or recorded-clinical-situation or sign-recording or symptom-recording or (representationOf only vital-sign)).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(data-entity,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(deoxyribonucleic-acid-structure,is,Class).
+predicate(deoxyribonucleic-acid-structure,SubClassOf,Object).
+predicate(deoxyribonucleic-acid-structure,DisjointWith,pharmacological-substance).
+predicate(deoxyribonucleic-acid-structure,DisjointWith,organism).
+predicate(deoxyribonucleic-acid-structure,DisjointWith,medical-device).
+predicate(deoxyribonucleic-acid-structure,DisjointWith,computer-system).
+predicate(deoxyribonucleic-acid-structure,DisjointWith,anatomical-structure).
+predicate(diagnostic-image,is,Class).
+predicate(diagnostic-image,SubClassOf,image,).
+predicate(diagnostic-image,SubClassOf,outputOf some clinical-investigation-act).
+predicate(diagnostic-procedure,is,Class).
+predicate(diagnostic-procedure,SubClassOf,clinical-investigation-act).
+predicate(etiologic-agent,is,Class).
+predicate(idiopathic-disease,is,Class).
+predicate(idiopathic-disease,SubClassOf,pathological-disposition).
+predicate(idiopathic-disease,DisjointWith,infectious-disease).
+predicate(image,is,Class).
+predicate(image,SubClassOf,representational-artifact).
+predicate(immaterial-anatomical-continuant,is,Class).
+predicate(infectious-disease,is,Class).
+predicate(infectious-disease,SubClassOf,pathological-disposition,).
+predicate(infectious-disease,SubClassOf,isConsequenceOf some pathogen).
+predicate(infectious-disease,DisjointWith,idiopathic-disease).
+predicate(laboratory-test,is,Class).
+predicate(laboratory-test,SubClassOf,clinical-investigation-act,).
+predicate(laboratory-test,SubClassOf,hasOutput only laboratory-test-finding).
+predicate(laboratory-test-finding,is,Class).
+predicate(laboratory-test-finding,EquivalentTo,clinical-finding and (measurementOf only QualityValue) and (outputOf only laboratory-test) and (representationOf only Quality)).
+predicate(laboratory-test-finding,SubClassOf,clinical-finding).
+predicate(laboratory-test-finding,DisjointWith,sign-recording).
+predicate(laboratory-test-finding,DisjointWith,clinical-diagnosis).
+predicate(laboratory-test-finding,DisjointWith,anamnesis).
+predicate(linguistic-construct,is,Class).
+predicate(longitudinal-patient-medical-history,is,Class).
+predicate(longitudinal-patient-medical-history,SubClassOf,ProcessAggregate).
+predicate(medical-device,is,Class).
+predicate(medical-device,DisjointWith,deoxyribonucleic-acid-structure).
+predicate(medical-device,DisjointWith,computer-system).
+predicate(medical-device,DisjointWith,anatomical-structure).
+predicate(medical-history-screening-act,is,Class).
+predicate(medical-history-screening-act,SubClassOf,screening-act).
+predicate(medical-therapy,is,Class).
+predicate(medical-therapy,SubClassOf,therapeutic-act).
+predicate(medication,is,Class).
+predicate(medication,SubClassOf,pharmacological-substance).
+predicate(metadata-entity,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(morphologic-alteration,is,Class).
+predicate(morphologic-alteration,SubClassOf,biological-process,).
+predicate(has_agent only pathological-disposition,,is,www.obofoundry.org/ro/ro.#).
+predicate(has_participant only physical-anatomical-entity,,is,www.obofoundry.org/ro/ro.#).
+predicate(part_of only pathological-process,is,www.obofoundry.org/ro/ro.#).
+predicate(organism,is,Class).
+predicate(organism,DisjointWith,deoxyribonucleic-acid-structure).
+predicate(organism,DisjointWith,computer-system).
+predicate(organism,DisjointWith,anatomical-structure).
+predicate(organismal-continuant,is,Class).
+predicate(organismal-process-aggregate,is,Class).
+predicate(organismal-process-aggregate,SubClassOf,ProcessAggregate).
+predicate(pathogen,is,Class).
+predicate(pathological-disposition,is,Class).
+predicate(pathological-disposition,DisjointWith,physiological-disposition).
+predicate(pathological-process,is,Class).
+predicate(pathological-process,SubClassOf,biological-process,).
+predicate(has_agent some pathological-disposition,is,www.obofoundry.org/ro/ro.#).
+predicate(patient,is,Class).
+predicate(participates_in some clinical-act),is,person and (hasRole some patient-role) and (www.obofoundry.org/ro/ro.#).
+predicate(participates_in some clinical-act),SubClassOf,person).
+predicate(patient-record,is,Class).
+predicate(patient-record,SubClassOf,clinical-artifact,).
+predicate(patient-record,SubClassOf,representationOf some longitudinal-patient-medical-history,).
+predicate(has_proper_part some representational-artifact,is,www.obofoundry.org/ro/ro.#).
+predicate(has_proper_part some representational-artifact,DisjointWith,symptom-recording).
+predicate(has_proper_part some representational-artifact,DisjointWith,recorded-clinical-situation).
+predicate(has_proper_part some representational-artifact,DisjointWith,clinical-finding).
+predicate(patient-role,is,Class).
+predicate(person,is,Class).
+predicate(pharmacological-substance,is,Class).
+predicate(pharmacological-substance,DisjointWith,deoxyribonucleic-acid-structure).
+predicate(pharmacological-substance,DisjointWith,computer-system).
+predicate(pharmacological-substance,DisjointWith,anatomical-structure).
+predicate(physical-anatomical-entity,is,Class).
+predicate(physical-therapy,is,Class).
+predicate(physical-therapy,SubClassOf,therapeutic-act).
+predicate(physician,is,Class).
+predicate(participates_in some,is,person and (hasRole some physician-role) and (www.obofoundry.org/ro/ro.#).
+predicate(participates_in some,is,(clinical-investigation-act or therapeutic-act))).
+predicate(participates_in some,SubClassOf,person).
+predicate(physician-role,is,Class).
+predicate(physician-role,SubClassOf,clinician-role).
+predicate(physiological-disposition,is,Class).
+predicate(physiological-disposition,SubClassOf,Disposition).
+predicate(physiological-disposition,DisjointWith,pathological-disposition).
+predicate(physiological-process,is,Class).
+predicate(physiological-process,SubClassOf,biological-process).
+predicate(physiological-role,is,Class).
+predicate(physiological-role,SubClassOf,Role).
+predicate(procedure,is,Class).
+predicate(procedure,EquivalentTo,diagnostic-procedure or therapeutic-procedure).
+predicate(procedure,SubClassOf,clinical-act,).
+predicate(procedure,SubClassOf,actsOn some organismal-continuant,).
+predicate(procedure,SubClassOf,approachSite some immaterial-anatomical-continuant).
+predicate(psychological-therapy,is,Class).
+predicate(psychological-therapy,SubClassOf,therapeutic-act).
+predicate(recorded-clinical-situation,is,Class).
+predicate(recorded-clinical-situation,SubClassOf,clinical-artifact).
+predicate(recorded-clinical-situation,DisjointWith,symptom-recording).
+predicate(recorded-clinical-situation,DisjointWith,patient-record).
+predicate(recorded-clinical-situation,DisjointWith,clinical-finding).
+predicate(representational-artifact,is,Class).
+predicate(screening-act,is,Class).
+predicate(screening-act,SubClassOf,clinical-investigation-act).
+predicate(sign-recording,is,Class).
+predicate(sign-recording,EquivalentTo,clinical-finding and (outputOf some clinical-examination)).
+predicate(sign-recording,SubClassOf,clinical-finding).
+predicate(sign-recording,DisjointWith,laboratory-test-finding).
+predicate(sign-recording,DisjointWith,clinical-diagnosis).
+predicate(sign-recording,DisjointWith,anamnesis).
+predicate(symptom-recording,is,Class).
+predicate(symptom-recording,DisjointWith,recorded-clinical-situation).
+predicate(symptom-recording,DisjointWith,patient-record).
+predicate(symptom-recording,DisjointWith,clinical-finding).
+predicate(syndrome,is,Class).
+predicate(syndrome,SubClassOf,idiopathic-disease).
+predicate(therapeutic-act,is,Class).
+predicate(therapeutic-act,SubClassOf,clinical-act).
+predicate(therapeutic-procedure,is,Class).
+predicate(therapeutic-procedure,SubClassOf,therapeutic-act).
+predicate(vital-sign,is,Class).
+predicate(ObsoleteClass,is,Class).
+predicate(ObsoleteClass,SubClassOf,metadata-entity).
+predicate(Subset,is,Class).
+predicate(Subset,SubClassOf,metadata-entity).
+predicate(Synonym,is,Class).
+predicate(Synonym,SubClassOf,linguistic-construct).
+predicate(SynonymType,is,Class).
+predicate(SynonymType,SubClassOf,linguistic-construct).
+predicate(Entity,is,Class).
+predicate(Continuant,is,Class).
+predicate(Continuant,DisjointWith,Occurrent).
+predicate(Disposition,is,Class).
+predicate(Object,is,Class).
+predicate(Quality,is,Class).
+predicate(Role,is,Class).
+predicate(ConnectedSpatiotemporalRegion,is,Class).
+predicate(ConnectedTemporalRegion,is,Class).
+predicate(Occurrent,is,Class).
+predicate(Occurrent,EquivalentTo,ProcessualEntity or SpatiotemporalRegion or TemporalRegion).
+predicate(Occurrent,SubClassOf,Entity).
+predicate(Occurrent,DisjointWith,Continuant).
+predicate(ProcessAggregate,is,Class).
+predicate(ProcessualEntity,is,Class).
+predicate(ProcessualEntity,SubClassOf,Occurrent).
+predicate(SpatiotemporalInstant,is,Class).
+predicate(SpatiotemporalInstant,SubClassOf,ConnectedSpatiotemporalRegion).
+predicate(SpatiotemporalInstant,DisjointWith,SpatiotemporalInterval).
+predicate(SpatiotemporalInterval,is,Class).
+predicate(SpatiotemporalInterval,SubClassOf,ConnectedSpatiotemporalRegion).
+predicate(SpatiotemporalInterval,DisjointWith,SpatiotemporalInstant).
+predicate(SpatiotemporalRegion,is,Class).
+predicate(SpatiotemporalRegion,SubClassOf,Occurrent).
+predicate(TemporalInstant,is,Class).
+predicate(TemporalInstant,SubClassOf,ConnectedTemporalRegion).
+predicate(TemporalInstant,DisjointWith,TemporalInterval).
+predicate(TemporalInterval,is,Class).
+predicate(TemporalInterval,SubClassOf,ConnectedTemporalRegion).
+predicate(TemporalInterval,DisjointWith,TemporalInstant).
+predicate(TemporalRegion,is,Class).
+predicate(TemporalRegion,SubClassOf,Occurrent).
+predicate(www.w3.org/2002/07/#,is,Class).

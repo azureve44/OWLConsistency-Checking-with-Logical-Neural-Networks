@@ -1,0 +1,14 @@
+predicate(Cellular_and_sub_cellular_compartment,is,Class).
+predicate(gene_product,is,Class).
+predicate(mRNA,is,Class).
+predicate(mRNA,SubClassOf,ribonucleic_acid).
+predicate(nucleus,is,Class).
+predicate(nucleus,SubClassOf,Cellular_and_sub_cellular_compartment).
+predicate(polypeptidic_chain,is,Class).
+predicate(polypeptidic_chain,EquivalentTo,ribonucleic_acid).
+predicate(polypeptidic_chain,DisjointWith,ribonucleic_acid).
+predicate(ribonucleic_acid,is,Class).
+predicate(ribonucleic_acid,EquivalentTo,polypeptidic_chain).
+predicate(ribonucleic_acid,SubClassOf,gene_product).
+predicate(ribonucleic_acid,DisjointWith,polypeptidic_chain).
+predicate(www.w3.org/2002/07/#,is,Class).

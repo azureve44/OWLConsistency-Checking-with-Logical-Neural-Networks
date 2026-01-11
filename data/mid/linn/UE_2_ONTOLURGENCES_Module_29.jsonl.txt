@@ -1,0 +1,212 @@
+predicate(motifACommeOrigineDiagnostic,is,ObjectProperty).
+predicate(motifACommeSigneMedical,is,ObjectProperty).
+predicate(AbsenceAcquiseDeDents,is,Class).
+predicate(AnomalieDeLaCloisonNasale,is,Class).
+predicate(AutresMotifs,is,Class).
+predicate(AutresMotifs,SubClassOf,SigneFonctionnelMotif).
+predicate(AvulsionDUneDent,is,Class).
+predicate(AvulsionDUneDent,SubClassOf,AbsenceAcquiseDeDents).
+predicate(CardioVasculaireMotif,is,Class).
+predicate(CardioVasculaireMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(CertificatMotif,is,Class).
+predicate(CertificatMotif,SubClassOf,ExamenAdministratifMotif).
+predicate(ChirurgieDuCristallin,is,Class).
+predicate(ChirurgieDuPlexusBrachial,is,Class).
+predicate(ComplicationDeLAnesthesieSedation,is,Class).
+predicate(ConseilMotif,is,Class).
+predicate(ConstipationMaladie,is,Class).
+predicate(ConstipationMotif,is,Class).
+predicate(ConstipationMotif,SubClassOf,ProblemeDefecationMotif,).
+predicate(ConstipationMotif,SubClassOf,motifACommeSigneMedical some ConstipationMaladie).
+predicate(ContusionPulmonaire,is,Class).
+predicate(ContusionPulmonaire,SubClassOf,LesionPulmonaireEtPleurale).
+predicate(CorpsEtrangerDansLeLarynx,is,Class).
+predicate(CorpsEtrangerMotif,is,Class).
+predicate(CorpsEtrangerRectumAnomalieMorphologique,is,Class).
+predicate(CorpsEtrangerRectumMotif,is,Class).
+predicate(CorpsEtrangerRectumMotif,SubClassOf,CorpsEtrangerMotif,).
+predicate(CorpsEtrangerRectumMotif,SubClassOf,motifACommeSigneMedical some CorpsEtrangerRectumAnomalieMorphologique).
+predicate(CorpsEtrangerVoieDigestive,is,Class).
+predicate(CorpsEtrangerVoieDigestiveMotif,is,Class).
+predicate(CorpsEtrangerVoieDigestiveMotif,SubClassOf,CorpsEtrangerMotif,).
+predicate(CorpsEtrangerVoieDigestiveMotif,SubClassOf,motifACommeSigneMedical some CorpsEtrangerVoieDigestive).
+predicate(CorrectionDeMalformationsCongenitalesDesVaisseaux,is,Class).
+predicate(DesirSexuelHypoactifSituationnel,is,Class).
+predicate(DesirSexuelHypoactifSituationnel,SubClassOf,TroubleDuDesirSexuel).
+predicate(DeviationCloisonNasale,is,Class).
+predicate(DeviationCloisonNasale,SubClassOf,AnomalieDeLaCloisonNasale).
+predicate(DiarheeMotif,is,Class).
+predicate(DiarheeMotif,SubClassOf,ProblemeDefecationMotif,).
+predicate(DiarheeMotif,SubClassOf,motifACommeSigneMedical some Diarrhee).
+predicate(Diarrhee,is,Class).
+predicate(DouleurProctoMotif,is,Class).
+predicate(DouleurProctoMotif,SubClassOf,ProctologieMotif,).
+predicate(DouleurProctoMotif,SubClassOf,motifACommeOrigineDiagnostic some DouleurRectale).
+predicate(DouleurRectale,is,Class).
+predicate(EnvironnementMotif,is,Class).
+predicate(EnvironnementMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(ExamenAdministratifMotif,is,Class).
+predicate(ExpositionAuSangMotif,is,Class).
+predicate(ExpositionAuSangMotif,SubClassOf,ExpositionAuxLiquidesBiologiquesMotif).
+predicate(ExpositionAuxLiquidesBiologiquesMotif,is,Class).
+predicate(FermetureDUneFenetreFistuleAortopulmonaire,is,Class).
+predicate(FermetureDUneFenetreFistuleAortopulmonaire,SubClassOf,CorrectionDeMalformationsCongenitalesDesVaisseaux).
+predicate(FissureAnale,is,Class).
+predicate(FissureAnaleMotif,is,Class).
+predicate(FissureAnaleMotif,SubClassOf,ProctologieMotif,).
+predicate(FissureAnaleMotif,SubClassOf,motifACommeOrigineDiagnostic some FissureAnale).
+predicate(GastroEnterologieMotif,is,Class).
+predicate(GastroEnterologieMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(GenitoUrinaireMotif,is,Class).
+predicate(GenitoUrinaireMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(GlycemieMotif,is,Class).
+predicate(GynecologieMotif,is,Class).
+predicate(GynecologieMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(HyperglycemieMotif,is,Class).
+predicate(HyperglycemieMotif,SubClassOf,GlycemieMotif,).
+predicate(HyperglycemieMotif,SubClassOf,motifACommeSigneMedical some HyperglycemieSigne).
+predicate(HyperglycemieSigne,is,Class).
+predicate(HypertensionArterielle,is,Class).
+predicate(HypertensionArterielle,DisjointWith,SuffocationDueADeLaNourritureDansLeLarynx).
+predicate(HypertensionMotif,is,Class).
+predicate(HypertensionMotif,SubClassOf,TensionMotif,).
+predicate(HypertensionMotif,SubClassOf,motifACommeOrigineDiagnostic some HypertensionArterielle,).
+predicate(HypertensionMotif,SubClassOf,motifACommeOrigineDiagnostic only SuffocationDueADeLaNourritureDansLeLarynx).
+predicate(Hypervolemie,is,Class).
+predicate(HypoglycemieMotif,is,Class).
+predicate(HypoglycemieMotif,SubClassOf,GlycemieMotif,).
+predicate(HypoglycemieMotif,SubClassOf,motifACommeSigneMedical some HypoglycemieSigne).
+predicate(HypoglycemieSigne,is,Class).
+predicate(HypotensionIatrogene,is,Class).
+predicate(HypotensionIatrogene,SubClassOf,HypotensionMotif).
+predicate(HypotensionMotif,is,Class).
+predicate(HypotensionMotif,SubClassOf,TensionMotif,).
+predicate(HypotensionMotif,SubClassOf,motifACommeSigneMedical some HypotensionSigne).
+predicate(HypotensionSigne,is,Class).
+predicate(HypothermieDueAUneAnesthesie,is,Class).
+predicate(HypothermieDueAUneAnesthesie,SubClassOf,ComplicationDeLAnesthesieSedation,).
+predicate(HypothermieDueAUneAnesthesie,SubClassOf,HypothermieMotif).
+predicate(HypothermieMotif,is,Class).
+predicate(IRMCerebrale,is,Class).
+predicate(ImplantationDeCristallinArtificiel,is,Class).
+predicate(ImplantationDeCristallinArtificiel,SubClassOf,ChirurgieDuCristallin).
+predicate(LesionPulmonaireEtPleurale,is,Class).
+predicate(MalaiseAvecPCMotif,is,Class).
+predicate(MalaiseAvecPCMotif,SubClassOf,MalaiseMotif,).
+predicate(MalaiseAvecPCMotif,SubClassOf,motifACommeSigneMedical some MalaiseAvecPCSigne).
+predicate(MalaiseAvecPCMotif,DisjointWith,MalaiseSansPCMotif).
+predicate(MalaiseAvecPCSigne,is,Class).
+predicate(MalaiseMotif,is,Class).
+predicate(MalaiseSansPCMotif,is,Class).
+predicate(MalaiseSansPCMotif,SubClassOf,MalaiseMotif,).
+predicate(MalaiseSansPCMotif,SubClassOf,motifACommeSigneMedical some MalaiseSansPCSigne).
+predicate(MalaiseSansPCMotif,DisjointWith,MalaiseAvecPCMotif).
+predicate(MalaiseSansPCSigne,is,Class).
+predicate(MembreInferieurChaudRougeMotif,is,Class).
+predicate(MembreInferieurChaudRougeMotif,SubClassOf,MembreInferieurMotif,).
+predicate(MembreInferieurChaudRougeMotif,SubClassOf,motifACommeSigneMedical some ThromboPhlebiteDesVeinesProfondesDesMembresInferieurs).
+predicate(MembreInferieurChaudRougeMotif,DisjointWith,MembreInferieurFroidSansPoulsMotif).
+predicate(MembreInferieurFroidSansPoulsMotif,is,Class).
+predicate(MembreInferieurFroidSansPoulsMotif,SubClassOf,MembreInferieurMotif,).
+predicate(MembreInferieurFroidSansPoulsMotif,SubClassOf,motifACommeSigneMedical some ThromboseDesArteresDuMembreInferieur).
+predicate(MembreInferieurFroidSansPoulsMotif,DisjointWith,MembreInferieurChaudRougeMotif).
+predicate(MembreInferieurMotif,is,Class).
+predicate(ModaliteThetique,is,Class).
+predicate(ModaliteThetique,SubClassOf,ObjetFonctionnelIntentionnel).
+predicate(MotifDeRecours,is,Class).
+predicate(NeurologieMotif,is,Class).
+predicate(NeurologieMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(Neuromyelite,is,Class).
+predicate(NeurotisationDUnNerfSpinalProfondAvecLiberationNerveuseParAbordDirect,is,Class).
+predicate(NeurotisationDUnNerfSpinalProfondAvecLiberationNerveuseParAbordDirect,SubClassOf,ReparationDeNerfSpinal).
+predicate(NeurotisationDUnNerfSpinalProfondSansLiberationNerveuseParAbordDirect,is,Class).
+predicate(NeurotisationDUnNerfSpinalProfondSansLiberationNerveuseParAbordDirect,SubClassOf,ReparationDeNerfSpinal).
+predicate(ORLMotif,is,Class).
+predicate(ORLMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(ObjetFonctionnel,is,Class).
+predicate(ObjetFonctionnelIntentionnel,is,Class).
+predicate(ObjetFonctionnelIntentionnel,SubClassOf,ObjetFonctionnel).
+predicate(ObstetriqueMotif,is,Class).
+predicate(ObstetriqueMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(OedemeDesMembresInferieursMaladie,is,Class).
+predicate(OedemeDesMembresInferieursMotif,is,Class).
+predicate(OedemeDesMembresInferieursMotif,SubClassOf,MembreInferieurMotif,).
+predicate(OedemeDesMembresInferieursMotif,SubClassOf,motifACommeSigneMedical some OedemeDesMembresInferieursMaladie).
+predicate(OphtalmologieMotif,is,Class).
+predicate(OphtalmologieMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(OtiteMoyenneAigueSanglante,is,Class).
+predicate(OtiteMoyenneAigueSanglante,SubClassOf,OtiteMoyenneSP).
+predicate(OtiteMoyenneSP,is,Class).
+predicate(PeauMotif,is,Class).
+predicate(PeauMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(PediatriqueMotif,is,Class).
+predicate(PediatriqueMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(PlastieDuPenis,is,Class).
+predicate(ProblemeDefecationMotif,is,Class).
+predicate(ProblemePansementMotif,is,Class).
+predicate(ProblemePansementMotif,SubClassOf,ProblemeSuiteChirurgicauxMotif).
+predicate(ProblemeSuiteChirurgicauxMotif,is,Class).
+predicate(ProctologieMotif,is,Class).
+predicate(PsychiatrieMotif,is,Class).
+predicate(PsychiatrieMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(ReconstructionDuPrepuceDuPenis,is,Class).
+predicate(ReconstructionDuPrepuceDuPenis,SubClassOf,PlastieDuPenis).
+predicate(RemnographieIRMFonctionnelleDuCerveauPourEtudeDesFonctionsMotrices,is,Class).
+predicate(RemnographieIRMFonctionnelleDuCerveauPourEtudeDesFonctionsMotrices,SubClassOf,IRMCerebrale).
+predicate(RenouvellementOrdonnanceMotif,is,Class).
+predicate(RenouvellementOrdonnanceMotif,SubClassOf,ConseilMotif).
+predicate(ReparationDeNerfSpinal,is,Class).
+predicate(RequisitionMotif,is,Class).
+predicate(RequisitionMotif,SubClassOf,ExamenAdministratifMotif).
+predicate(RespiratoireMotif,is,Class).
+predicate(RespiratoireMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(RetentionHydrique,is,Class).
+predicate(RetentionHydrique,SubClassOf,Hypervolemie).
+predicate(RhumatologieMotif,is,Class).
+predicate(RhumatologieMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(SigneFonctionnelMotif,is,Class).
+predicate(SigneFonctionnelMotif,SubClassOf,MotifDeRecours).
+predicate(StenoseCarotidienne,is,Class).
+predicate(StenoseCarotidienne,SubClassOf,StenoseDUneArtere).
+predicate(StenoseDUneArtere,is,Class).
+predicate(SuffocationDueADeLaNourritureDansLeLarynx,is,Class).
+predicate(SuffocationDueADeLaNourritureDansLeLarynx,SubClassOf,CorpsEtrangerDansLeLarynx).
+predicate(SuffocationDueADeLaNourritureDansLeLarynx,DisjointWith,HypertensionArterielle).
+predicate(SutureAutogreffeEtNeurotisationDuPlexusBrachial,is,Class).
+predicate(SutureAutogreffeEtNeurotisationDuPlexusBrachial,SubClassOf,ChirurgieDuPlexusBrachial).
+predicate(SyndromeDeBrownSequard,is,Class).
+predicate(SyndromeDeBrownSequard,SubClassOf,Neuromyelite).
+predicate(TensionMotif,is,Class).
+predicate(ThromboPhlebiteDesVeinesProfondesDesMembresInferieurs,is,Class).
+predicate(ThromboseDesArteresDuMembreInferieur,is,Class).
+predicate(ThromboseHemorroidaire,is,Class).
+predicate(ThromboseHemorroidaireMotif,is,Class).
+predicate(ThromboseHemorroidaireMotif,SubClassOf,ProctologieMotif,).
+predicate(ThromboseHemorroidaireMotif,SubClassOf,motifACommeOrigineDiagnostic some ThromboseHemorroidaire).
+predicate(TraumastismeCranienMotif,is,Class).
+predicate(TraumatismeCranienAvecPCSigne,is,Class).
+predicate(TraumatismeCranienAvecPerteDeConnaissanceMotif,is,Class).
+predicate(TraumatismeCranienAvecPerteDeConnaissanceMotif,SubClassOf,TraumastismeCranienMotif,).
+predicate(TraumatismeCranienAvecPerteDeConnaissanceMotif,SubClassOf,motifACommeOrigineDiagnostic some TraumatismeCranienAvecPCSigne).
+predicate(TraumatismeCranienAvecPerteDeConnaissanceMotif,DisjointWith,TraumatismeCranienSansPerteDeConnaissanceMotif).
+predicate(TraumatismeCranienSansPCMaladie,is,Class).
+predicate(TraumatismeCranienSansPerteDeConnaissanceMotif,is,Class).
+predicate(TraumatismeCranienSansPerteDeConnaissanceMotif,SubClassOf,TraumastismeCranienMotif,).
+predicate(TraumatismeCranienSansPerteDeConnaissanceMotif,SubClassOf,motifACommeOrigineDiagnostic some TraumatismeCranienSansPCMaladie).
+predicate(TraumatismeCranienSansPerteDeConnaissanceMotif,DisjointWith,TraumatismeCranienAvecPerteDeConnaissanceMotif).
+predicate(TraumatismeDesMembresInferieurs,is,Class).
+predicate(TraumatismeDesMembresInferieursMotif,is,Class).
+predicate(TraumatismeDesMembresInferieursMotif,SubClassOf,TraumatismeDesMembresMotif,).
+predicate(TraumatismeDesMembresInferieursMotif,SubClassOf,motifACommeOrigineDiagnostic some TraumatismeDesMembresInferieurs).
+predicate(TraumatismeDesMembresMotif,is,Class).
+predicate(TraumatismeDesMembresSuperieurs,is,Class).
+predicate(TraumatismeDesMembresSuperieursMotif,is,Class).
+predicate(TraumatismeDesMembresSuperieursMotif,SubClassOf,TraumatismeDesMembresMotif,).
+predicate(TraumatismeDesMembresSuperieursMotif,SubClassOf,motifACommeOrigineDiagnostic some TraumatismeDesMembresSuperieurs).
+predicate(TraumatologieMotif,is,Class).
+predicate(TraumatologieMotif,SubClassOf,SigneFonctionnelMotif).
+predicate(TroubleDuDesirSexuel,is,Class).
+predicate(VomissementsDeSangMotif,is,Class).
+predicate(VomissementsDeSangMotif,SubClassOf,VomissementsMotif).
+predicate(VomissementsMotif,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

@@ -1,0 +1,42 @@
+predicate(constitutes-during,is,ObjectProperty).
+predicate(has-for-constituent-during,is,ObjectProperty).
+predicate(has-for-part-during,is,ObjectProperty).
+predicate(has-for-quality,is,ObjectProperty).
+predicate(is-a-part-of-during,is,ObjectProperty).
+predicate(is-present-at,is,ObjectProperty).
+predicate(is-present-in-at,is,ObjectProperty).
+predicate(is-the-maximal-physical-participant-of,is,ObjectProperty).
+predicate(is-the-maximal-physical-participant-of,Domain,physical-endurant).
+predicate(is-the-maximal-physical-participant-of,Range,perdurant).
+predicate(supports-at,is,ObjectProperty).
+predicate(supports-at,Domain,physical-endurant).
+predicate(supports-at,Range,inscription).
+predicate(amount-of-matter,is,Class).
+predicate(amount-of-matter,SubClassOf,physical-endurant).
+predicate(arbitrary-sum,is,Class).
+predicate(endurant,is,Class).
+predicate(feature,is,Class).
+predicate(feature,SubClassOf,physical-endurant).
+predicate(non-physical-endurant,is,Class).
+predicate(perdurant,is,Class).
+predicate(physical-endurant,is,Class).
+predicate(physical-endurant,SubClassOf,endurant,).
+predicate(physical-endurant,SubClassOf,is-present-at some time-interval,).
+predicate(physical-endurant,SubClassOf,constitutes-during only physical-endurant,).
+predicate(physical-endurant,SubClassOf,has-for-constituent-during only physical-endurant,).
+predicate(physical-endurant,SubClassOf,has-for-part-during only physical-endurant,).
+predicate(physical-endurant,SubClassOf,has-for-quality only physical-quality,).
+predicate(physical-endurant,SubClassOf,is-a-part-of-during only physical-endurant,).
+predicate(physical-endurant,SubClassOf,has-for-quality min 1 spatial-location,).
+predicate(physical-endurant,SubClassOf,is-present-in-at min 1 space-region).
+predicate(physical-object,is,Class).
+predicate(physical-object,SubClassOf,physical-endurant).
+predicate(physical-quality,is,Class).
+predicate(space-region,is,Class).
+predicate(spatial-location,is,Class).
+predicate(time-interval,is,Class).
+predicate(inscription,is,Class).
+predicate(support,is,Class).
+predicate(support,SubClassOf,physical-endurant).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,arbitrary-sum,non-physical-endurant,physical-endurant).

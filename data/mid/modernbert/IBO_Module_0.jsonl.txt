@@ -1,0 +1,249 @@
+BFO_0000055 is ObjectProperty.
+BFO_0000133 is ObjectProperty.
+IAO_0000039 is ObjectProperty.
+IAO_0000136 is ObjectProperty.
+IAO_0000221 is ObjectProperty.
+OBI_0000293 is ObjectProperty.
+OBI_0000312 is ObjectProperty.
+OBI_0001938 is ObjectProperty.
+RO_0000059 is ObjectProperty.
+RO_0000087 is ObjectProperty.
+is_process_profile_measurement_of is ObjectProperty.
+is_process_profile_measurement_of Domain IAO_0000109.
+is_process_profile_measurement_of Range BFO_0000144.
+'imaging_biomarker_volumetric_flow_measurement_datum' is Class.
+'imaging_biomarker_volumetric_flow_measurement_datum' EquivalentTo volumetric_flow_rate_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+'imaging_biomarker_volumetric_flow_measurement_datum' SubClassOf volumetric_flow_rate_measurement_datum,.
+'imaging_biomarker_volumetric_flow_measurement_datum' SubClassOf IAO_0000039 some UO_0000270.
+parameter-quantification-dataset is Class.
+Thing is www.w3.org/2002/07/#.
+fractional-anisotropy-calculation is Class.
+mean-diffusivity-calculation is Class.
+BFO_0000144 is Class.
+IAO_0000027 is Class.
+IAO_0000032 is Class.
+IAO_0000032 EquivalentTo continuous_measurement_datum and (OBI_0001938 some OBI_0001931).
+IAO_0000032 SubClassOf continuous_measurement_datum.
+IAO_0000109 is Class.
+IAO_0000109 SubClassOf IAO_0000027.
+IAO_0000408 is Class.
+IAO_0000408 EquivalentTo IAO_0000032 and (IAO_0000039 some UO_0000001) and (IAO_0000221 some PATO_0000122).
+IAO_0000408 SubClassOf IAO_0000032.
+OBI_0000011 is Class.
+OBI_0001931 is Class.
+OBI_0302867 is Class.
+OBI_0302867 SubClassOf IAO_0000027.
+PATO_0000122 is Class.
+PATO_0000918 is Class.
+PATO_0001019 is Class.
+PATO_0001323 is Class.
+PATO_0001739 is Class.
+PATO_0001740 is Class.
+PATO_0002129 is Class.
+PATO_0002242 is Class.
+UO_0000001 is Class.
+UO_0000047 is Class.
+UO_0000052 is Class.
+UO_0000060 is Class.
+UO_0000095 is Class.
+UO_0000128 is Class.
+UO_0000270 is Class.
+UO_0000319 is Class.
+www.-ontologies.com/QIBO.# is Class.
+www.-ontologies.com/QIBO.# SubClassOf OBI_0000011.
+Hounsfield_unit_calculation is Class.
+K_trans is Class.
+K_trans SubClassOf imaging_biomarker_volume_measurement_datum.
+QIB_application_model is Class.
+QIB_based_treatment_assessment is Class.
+Treatment_assessment and (BFO_0000055 some (RO_0000059 some QIB_application_model)) and (OBI_0000293 some is www.-ontologies.com/QIBO.#.
+Treatment_assessment and (BFO_0000055 some (RO_0000059 some QIB_application_model)) and (OBI_0000293 some is (QIB_value and (RO_0000087 some biomarker_application_role))).
+Treatment_assessment is www.-ontologies.com/QIBO.#.
+QIB_measurement_process is Class.
+QIB_value is Class.
+QIB_value SubClassOf IAO_0000109.
+Rate_constant_between_EES_and_blood_plasma is Class.
+Rate_constant_between_EES_and_blood_plasma SubClassOf imaging_biomarker_ratio_measurement_datum.
+Standard_uptake_value is Class.
+Standard_uptake_value SubClassOf imaging_biomarker_activity_measurement_datum.
+Standardized_Uptake_Value_body_weight is Class.
+Standardized_Uptake_Value_body_weight SubClassOf mass_imaging_biomarker_measurement_datum.
+Standardized_Uptake_Value_ideal_body_weight is Class.
+Standardized_Uptake_Value_ideal_body_weight SubClassOf mass_imaging_biomarker_measurement_datum.
+Standardized_Uptake_Value_lean_body_mass is Class.
+Standardized_Uptake_Value_lean_body_mass SubClassOf mass_imaging_biomarker_measurement_datum.
+X-ray_attenuation_coefficient is Class.
+X-ray_attenuation_coefficient SubClassOf attenuation_coefficient.
+activity_measurement_datum is Class.
+activity_measurement_datum EquivalentTo IAO_0000032 and (IAO_0000039 some UO_0000128) and (IAO_0000221 some PATO_0001740).
+activity_measurement_datum SubClassOf IAO_0000032.
+apparent_diffusion_coefficient_dataset is Class.
+apparent_diffusion_coefficient_dataset SubClassOf parameter-quantification-dataset.
+apparent_diffusion_coefficient_measurement_datum is Class.
+apparent_diffusion_coefficient_measurement_datum SubClassOf diffusion_imaging_biomarker_measurement_datum,.
+apparent_diffusion_coefficient_measurement_datum SubClassOf IAO_0000136 some cellular_proliferation,.
+apparent_diffusion_coefficient_measurement_datum SubClassOf OBI_0000312 some mean-diffusivity-calculation,.
+apparent_diffusion_coefficient_measurement_datum SubClassOf RO_0000087 some diagnostic_biomarker_role,.
+apparent_diffusion_coefficient_measurement_datum SubClassOf is_process_profile_measurement_of some movement_of_water_molecules.
+area_measurement_datum is Class.
+area_measurement_datum EquivalentTo IAO_0000032 and (IAO_0000039 some UO_0000047) and (IAO_0000221 some PATO_0001323).
+area_measurement_datum SubClassOf IAO_0000032.
+attenuation_coefficient is Class.
+attenuation_coefficient SubClassOf IAO_0000032,.
+attenuation_coefficient SubClassOf IAO_0000039 some Hounsfield_unit_calculation.
+biomarker_application_role is Class.
+body_surface_area is Class.
+body_surface_area SubClassOf area_measurement_datum.
+categorical_measurement_datum is Class.
+categorical_measurement_datum SubClassOf IAO_0000109.
+cellular_proliferation is Class.
+cerebral_blood_flow_measurement_datum is Class.
+cerebral_blood_flow_measurement_datum SubClassOf 'imaging_biomarker_volumetric_flow_measurement_datum'.
+cerebral_blood_volume is Class.
+cerebral_blood_volume SubClassOf imaging_biomarker_volume_measurement_datum.
+continuous_imaging_biomarker_measurement_datum is Class.
+continuous_imaging_biomarker_measurement_datum SubClassOf continuous_measurement_datum,.
+continuous_imaging_biomarker_measurement_datum SubClassOf numeric_imaging_biomarker_measurement_datum.
+continuous_measurement_datum is Class.
+continuous_measurement_datum SubClassOf numerical_measurement_datum.
+count_measurement_datum is Class.
+descriptive_statistic_parameter is Class.
+descriptive_statistic_parameter SubClassOf IAO_0000027.
+diagnostic_biomarker_role is Class.
+diffusion_imaging_biomarker_measurement_datum is Class.
+diffusion_imaging_biomarker_measurement_datum SubClassOf diffusion_measurement_datum.
+diffusion_measurement_datum is Class.
+diffusion_measurement_datum SubClassOf IAO_0000032.
+diffusion_of_water_molecules is Class.
+extravascular_extracellular_space is Class.
+extravascular_extracellular_space SubClassOf imaging_biomarker_volume_measurement_datum.
+fraction_measurement_datum is Class.
+fraction_measurement_datum SubClassOf ratio_measurement_datum.
+fractional_anisotropy_measurement_datum is Class.
+fractional_anisotropy_measurement_datum SubClassOf numeric_imaging_biomarker_measurement_datum,.
+fractional_anisotropy_measurement_datum SubClassOf IAO_0000039 some UO_0000060,.
+fractional_anisotropy_measurement_datum SubClassOf IAO_0000221 some.
+fractional_anisotropy_measurement_datum SubClassOf (PATO_0002129 and PATO_0002242),.
+fractional_anisotropy_measurement_datum SubClassOf OBI_0000312 some fractional-anisotropy-calculation,.
+fractional_anisotropy_measurement_datum SubClassOf is_process_profile_measurement_of some fractional_anisotropy_value_variability.
+fractional_anisotropy_value_variability is Class.
+glycolysis is Class.
+glycolysis SubClassOf imaging_biomarker_activity_measurement_datum.
+imaging_biomarker_activity_measurement_datum is Class.
+imaging_biomarker_activity_measurement_datum EquivalentTo activity_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_activity_measurement_datum SubClassOf activity_measurement_datum.
+imaging_biomarker_area_measurement_datum is Class.
+imaging_biomarker_area_measurement_datum EquivalentTo area_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_area_measurement_datum SubClassOf area_measurement_datum.
+imaging_biomarker_attenuation_coefficient_measurement_datum is Class.
+imaging_biomarker_attenuation_coefficient_measurement_datum EquivalentTo attenuation_coefficient and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_attenuation_coefficient_measurement_datum SubClassOf attenuation_coefficient.
+imaging_biomarker_count_measurement_datum is Class.
+imaging_biomarker_count_measurement_datum EquivalentTo count_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_count_measurement_datum SubClassOf count_measurement_datum,.
+imaging_biomarker_count_measurement_datum SubClassOf numeric_imaging_biomarker_measurement_datum.
+imaging_biomarker_fraction_measurement_datum is Class.
+imaging_biomarker_fraction_measurement_datum EquivalentTo fraction_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_fraction_measurement_datum SubClassOf fraction_measurement_datum,.
+imaging_biomarker_fraction_measurement_datum SubClassOf imaging_biomarker_ratio_measurement_datum.
+imaging_biomarker_length_measurement_datum is Class.
+imaging_biomarker_length_measurement_datum EquivalentTo IAO_0000408 and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_length_measurement_datum SubClassOf IAO_0000408.
+imaging_biomarker_mass_density_measurement_datum is Class.
+imaging_biomarker_mass_density_measurement_datum EquivalentTo mass_density_measurement_datum and (IAO_0000221 some PATO_0001019) and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_mass_density_measurement_datum SubClassOf mass_density_measurement_datum.
+imaging_biomarker_numercial_score_measurement_datum is Class.
+imaging_biomarker_numercial_score_measurement_datum EquivalentTo numerical_score_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_numercial_score_measurement_datum SubClassOf continuous_imaging_biomarker_measurement_datum,.
+imaging_biomarker_numercial_score_measurement_datum SubClassOf numerical_score_measurement_datum.
+imaging_biomarker_percent_measurement_datum is Class.
+imaging_biomarker_percent_measurement_datum EquivalentTo percent_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_percent_measurement_datum SubClassOf imaging_biomarker_ratio_measurement_datum,.
+imaging_biomarker_percent_measurement_datum SubClassOf percent_measurement_datum.
+imaging_biomarker_ratio_measurement_datum is Class.
+imaging_biomarker_ratio_measurement_datum EquivalentTo ratio_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_ratio_measurement_datum SubClassOf continuous_imaging_biomarker_measurement_datum,.
+imaging_biomarker_ratio_measurement_datum SubClassOf ratio_measurement_datum.
+imaging_biomarker_volume_measurement_datum is Class.
+imaging_biomarker_volume_measurement_datum EquivalentTo volume_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+imaging_biomarker_volume_measurement_datum SubClassOf volume_measurement_datum,.
+imaging_biomarker_volume_measurement_datum SubClassOf IAO_0000221 some metabolic_tumor_volume.
+intervention_effect_asssment_role is Class.
+intervention_effect_asssment_role SubClassOf biomarker_application_role.
+long_axis is Class.
+long_axis_measurement_datum is Class.
+long_axis_measurement_datum SubClassOf imaging_biomarker_length_measurement_datum,.
+long_axis_measurement_datum SubClassOf IAO_0000221 some long_axis.
+mass_density_measurement_datum is Class.
+mass_density_measurement_datum EquivalentTo IAO_0000032 and (IAO_0000039 some UO_0000052) and (IAO_0000221 some PATO_0001019).
+mass_density_measurement_datum SubClassOf IAO_0000032.
+mass_imaging_biomarker_measurement_datum is Class.
+mass_imaging_biomarker_measurement_datum EquivalentTo mass_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+mass_imaging_biomarker_measurement_datum SubClassOf mass_measurement_datum.
+mass_measurement_datum is Class.
+mass_measurement_datum SubClassOf IAO_0000032.
+metabolic_tumor_volume is Class.
+metabolic_volume is Class.
+metabolic_volume SubClassOf imaging_biomarker_volume_measurement_datum.
+movement_of_water_molecules is Class.
+movement_of_water_molecules SubClassOf quality_process_profile,.
+movement_of_water_molecules SubClassOf BFO_0000133 some diffusion_of_water_molecules.
+numeric_imaging_biomarker_measurement_datum is Class.
+numeric_imaging_biomarker_measurement_datum EquivalentTo numerical_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+numeric_imaging_biomarker_measurement_datum SubClassOf continuous_measurement_datum,.
+numeric_imaging_biomarker_measurement_datum SubClassOf numerical_measurement_datum.
+numerical_measurement_datum is Class.
+numerical_measurement_datum SubClassOf IAO_0000109.
+numerical_score_measurement_datum is Class.
+numerical_score_measurement_datum SubClassOf continuous_measurement_datum.
+percent_measurement_datum is Class.
+percent_measurement_datum EquivalentTo ratio_measurement_datum and (OBI_0001938 some percent_value_specification).
+percent_measurement_datum SubClassOf ratio_measurement_datum.
+percent_value_specification is Class.
+quality_process_profile is Class.
+quantitative_image_analysis is Class.
+radioactivity_imaging_biomarker_measurement_datum is Class.
+radioactivity_imaging_biomarker_measurement_datum EquivalentTo radioactivity_measurement_datum and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+radioactivity_imaging_biomarker_measurement_datum SubClassOf radioactivity_measurement_datum.
+radioactivity_measurement_datum is Class.
+radioactivity_measurement_datum EquivalentTo IAO_0000032 and (IAO_0000039 some UO_0000319) and (IAO_0000221 some PATO_0001739).
+radioactivity_measurement_datum SubClassOf IAO_0000032.
+ratio_measurement_datum is Class.
+ratio_measurement_datum SubClassOf continuous_measurement_datum.
+regional_cerebral_blood_flow_measurement_datum is Class.
+regional_cerebral_blood_flow_measurement_datum SubClassOf imaging_biomarker_volume_measurement_datum.
+regional_cerebral_blood_volume_dataset is Class.
+regional_cerebral_blood_volume_dataset SubClassOf parameter-quantification-dataset.
+scalar_imaging_biomarker_measurement_datum is Class.
+scalar_imaging_biomarker_measurement_datum EquivalentTo IAO_0000032 and (OBI_0000312 some QIB_measurement_process) and (OBI_0000312 some quantitative_image_analysis).
+scalar_imaging_biomarker_measurement_datum SubClassOf IAO_0000032,.
+scalar_imaging_biomarker_measurement_datum SubClassOf continuous_imaging_biomarker_measurement_datum.
+short_axis is Class.
+short_axis_measurement_datum is Class.
+short_axis_measurement_datum SubClassOf imaging_biomarker_length_measurement_datum,.
+short_axis_measurement_datum SubClassOf IAO_0000221 some short_axis.
+sum_of_the_longest_diameters is Class.
+sum_of_the_longest_diameters SubClassOf imaging_biomarker_length_measurement_datum.
+sum_of_the_product_of_the_short_and_long_Diameters is Class.
+sum_of_the_product_of_the_short_and_long_Diameters SubClassOf imaging_biomarker_length_measurement_datum.
+textural_features is Class.
+textural_features SubClassOf IAO_0000027.
+total_lesion_glycolysis is Class.
+total_lesion_glycolysis SubClassOf imaging_biomarker_activity_measurement_datum.
+velocity_measurement_datum is Class.
+velocity_measurement_datum SubClassOf IAO_0000032.
+volume_measurement_datum is Class.
+volume_measurement_datum EquivalentTo IAO_0000032 and (IAO_0000039 some UO_0000095) and (IAO_0000221 some PATO_0000918).
+volume_measurement_datum SubClassOf IAO_0000032.
+volumetric_flow_rate_measurement_datum is Class.
+volumetric_flow_rate_measurement_datum SubClassOf IAO_0000032,.
+volumetric_flow_rate_measurement_datum SubClassOf IAO_0000039 some UO_0000270.
+Choline/ is Class.
+Choline/ SubClassOf imaging_biomarker_ratio_measurement_datum.
+N-acetylaspartate/ is Class.
+N-acetylaspartate/ SubClassOf imaging_biomarker_ratio_measurement_datum.
+creatine+choline_/ is Class.
+creatine+choline_/ SubClassOf imaging_biomarker_ratio_measurement_datum.
+n-acetylasparate/ is Class.
+n-acetylasparate/ SubClassOf imaging_biomarker_ratio_measurement_datum.
+www.w3.org/2002/07/# is Class.

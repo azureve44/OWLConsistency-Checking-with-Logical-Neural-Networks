@@ -1,0 +1,693 @@
+is(integer,Datatype):1.0
+is(string,Datatype):1.0
+is(Acting_In_A_Movie,ObjectProperty):1.0
+Domain(Acting_In_A_Movie,Actor):1.0
+Range(Acting_In_A_Movie,Movie):1.0
+is(Directing_A_Movie,ObjectProperty):1.0
+Domain(Directing_A_Movie,Director):1.0
+Range(Directing_A_Movie,Movie):1.0
+is(Married_To,ObjectProperty):1.0
+Domain(Married_To,Actor):1.0
+Range(Married_To,Actor):1.0
+is(Payment_For_Movie,ObjectProperty):1.0
+Domain(Payment_For_Movie,Payment):1.0
+Range(Payment_For_Movie,Movie):1.0
+is(Payment_Paid_By,ObjectProperty):1.0
+Domain(Payment_Paid_By,Payment):1.0
+Range(Payment_Paid_By,Producer):1.0
+is(Payment_Paid_To,ObjectProperty):1.0
+Domain(Payment_Paid_To,Payment):1.0
+Range(Payment_Paid_To,Actor,):1.0
+Range(Payment_Paid_To,Director):1.0
+is(Product_A_Movie,ObjectProperty):1.0
+is(FullName,DataProperty):1.0
+Domain(FullName,Person):1.0
+Range(FullName,string):1.0
+is(Gender,DataProperty):1.0
+Domain(Gender,Actor):1.0
+Range(Gender,string):1.0
+is(MovieIncome,DataProperty):1.0
+Domain(MovieIncome,Movie):1.0
+Range(MovieIncome,integer):1.0
+is(MovieName,DataProperty):1.0
+Domain(MovieName,Movie):1.0
+Range(MovieName,string):1.0
+is(MovieProductionYear,DataProperty):1.0
+Domain(MovieProductionYear,Movie):1.0
+Range(MovieProductionYear,integer):1.0
+is(MovieType,DataProperty):1.0
+Domain(MovieType,Movie):1.0
+Range(MovieType,{" Romantic" , "Action" , "Comedy" , "Drama"}):1.0
+is(MovieViews,DataProperty):1.0
+Domain(MovieViews,Movie):1.0
+Range(MovieViews,integer):1.0
+is(Nationality,DataProperty):1.0
+Domain(Nationality,Actor):1.0
+Range(Nationality,string):1.0
+is(PaymentAmount,DataProperty):1.0
+Range(PaymentAmount,string):1.0
+is(sana,DataProperty):1.0
+Domain(sana,Movie):1.0
+Range(sana,string):1.0
+is(year,DataProperty):1.0
+Domain(year,Movie):1.0
+Range(year,integer):1.0
+is(Actor,Class):1.0
+SubClassOf(Actor,Person):1.0
+is(Cinema,Class):1.0
+EquivalentTo(Cinema,Payment):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Payment):1.0
+is(Director,Class):1.0
+SubClassOf(Director,Person):1.0
+is(Movie,Class):1.0
+SubClassOf(Movie,Cinema,):1.0
+SubClassOf(Movie,Payment):1.0
+is(Payment,Class):1.0
+EquivalentTo(Payment,Cinema):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Cinema):1.0
+is(Person,Class):1.0
+SubClassOf(Person,Cinema,):1.0
+SubClassOf(Person,Payment):1.0
+is(Producer,Class):1.0
+SubClassOf(Producer,Person):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(M,Individual):1.0
+Types(M,Movie):1.0
+MovieIncome(M,8000,):1.0
+MovieName(M,"Bee's_Way",):1.0
+MovieProductionYear(M,"1970",):1.0
+MovieType(M,"Drama",):1.0
+MovieViews(M,550000,):1.0
+sana(M,"1990",):1.0
+year(M,"1990"):1.0
+is(A1,Individual):1.0
+Types(A1,Actor):1.0
+is(Alo_ana_al-ghetta,,Acting_In_A_Movie  M):1.0
+is(Alo_ana_al-ghetta,,FullName  "Abdulrahman_Al-Qasem",):1.0
+is(Alo_ana_al-ghetta,,Gender  "Male",):1.0
+is(Alo_ana_al-ghetta,,Nationality  "Egyptian"):1.0
+is(A10,Individual):1.0
+Types(A10,Actor):1.0
+Acting_In_A_Movie(A10,M5,):1.0
+is(A_Woman_and_a_Man,,Acting_In_A_Movie  M):1.0
+is(Damascus_Time,,Acting_In_A_Movie  M):1.0
+is(Damascus_Time,,Married_To  A19,):1.0
+is(Damascus_Time,,FullName  "Caresse_Bashar",):1.0
+is(Damascus_Time,,Gender  "Female",):1.0
+is(Damascus_Time,,Nationality  "Syrian"):1.0
+is(A11,Individual):1.0
+Types(A11,Actor):1.0
+Acting_In_A_Movie(A11,M14,):1.0
+Acting_In_A_Movie(A11,M15,):1.0
+is(A_Woman_and_a_Man,,Acting_In_A_Movie  M):1.0
+is(A_Woman_and_a_Man,,Married_To  A27,):1.0
+is(A_Woman_and_a_Man,,FullName  "Duraid_Lahham",):1.0
+is(A_Woman_and_a_Man,,Gender  "Male",):1.0
+is(A_Woman_and_a_Man,,Nationality  "Syrian"):1.0
+is(A12,Individual):1.0
+Types(A12,Actor):1.0
+FullName(A12,"Faten_Hamama",):1.0
+Gender(A12,"Female",):1.0
+Nationality(A12,"Egyptian"):1.0
+is(A13,Individual):1.0
+Types(A13,Actor):1.0
+FullName(A13,"Ghassan_Massoud",):1.0
+Gender(A13,"Male",):1.0
+Nationality(A13,"Syrian"):1.0
+is(A14,Individual):1.0
+Types(A14,Actor):1.0
+FullName(A14,"Hadi_Hejazifar",):1.0
+Gender(A14,"Male",):1.0
+Nationality(A14,"Lebanese"):1.0
+is(A15,Individual):1.0
+Types(A15,Actor):1.0
+FullName(A15,"Hassan_Doba",):1.0
+Gender(A15,"Male",):1.0
+Nationality(A15,"Lebanese"):1.0
+is(A16,Individual):1.0
+Types(A16,Actor):1.0
+is(A_Woman_and_a_Man,,Acting_In_A_Movie  M):1.0
+is(Alo_ana_al-ghetta,,Acting_In_A_Movie  M):1.0
+is(Damascus_Time,,Acting_In_A_Movie  M):1.0
+is(Damascus_Time,,FullName  "Husain_Abbas",):1.0
+is(Damascus_Time,,Gender  "Male",):1.0
+is(Damascus_Time,,Nationality  "Egyptian"):1.0
+is(A17,Individual):1.0
+Types(A17,Actor):1.0
+is(Bee's_Way,,Acting_In_A_Movie  M):1.0
+is(Bee's_Way,,FullName  "Juliette_Awwad",):1.0
+is(Bee's_Way,,Gender  "Female",):1.0
+is(Bee's_Way,,Nationality  "Lebanese"):1.0
+is(A18,Individual):1.0
+Types(A18,Actor):1.0
+Acting_In_A_Movie(A18,M14,):1.0
+Acting_In_A_Movie(A18,M21,):1.0
+FullName(A18,"Lujain_Ismael",):1.0
+Gender(A18,"Male",):1.0
+Nationality(A18,"Syrian"):1.0
+is(A19,Individual):1.0
+Types(A19,Actor):1.0
+Acting_In_A_Movie(A19,M20,):1.0
+is(A_Woman_and_a_Man,,Acting_In_A_Movie  M):1.0
+is(Damascus_Time,,Acting_In_A_Movie  M):1.0
+is(Damascus_Time,,Married_To  A10,):1.0
+is(Damascus_Time,,FullName  "Mahmoud_Nasr",):1.0
+is(Damascus_Time,,Gender  "Male",):1.0
+is(Damascus_Time,,Nationality  "Syrian"):1.0
+is(A2,Individual):1.0
+Types(A2,Actor):1.0
+FullName(A2,"Adel_Emam",):1.0
+Gender(A2,"Male",):1.0
+Nationality(A2,"Egyptian"):1.0
+is(A20,Individual):1.0
+Types(A20,Actor):1.0
+FullName(A20,"Mahmoud_Reda",):1.0
+Gender(A20,"Male",):1.0
+Nationality(A20,"Egyptian"):1.0
+is(A21,Individual):1.0
+Types(A21,Actor):1.0
+FullName(A21,"Mahmoud_Yassin",):1.0
+Gender(A21,"Male",):1.0
+Nationality(A21,"Egyptian"):1.0
+is(A22,Individual):1.0
+Types(A22,Actor):1.0
+FullName(A22,"Maisoun_Abu_Asaad",):1.0
+Gender(A22,"Male",):1.0
+Nationality(A22,"Syrian"):1.0
+is(A23,Individual):1.0
+Types(A23,Actor):1.0
+FullName(A23,"Majd_Fidha",):1.0
+Gender(A23,"Male",):1.0
+Nationality(A23,"Egyptian"):1.0
+is(A24,Individual):1.0
+Types(A24,Actor):1.0
+FullName(A24,"Majdi_Al-Maqbal",):1.0
+Gender(A24,"Male",):1.0
+Nationality(A24,"Egyptian"):1.0
+is(A25,Individual):1.0
+Types(A25,Actor):1.0
+FullName(A25,"Mervat_Amin",):1.0
+Gender(A25,"Female",):1.0
+Nationality(A25,"Egyptian"):1.0
+is(A26,Individual):1.0
+Types(A26,Actor):1.0
+FullName(A26,"Mohammed_Al-Ahmad",):1.0
+Gender(A26,"Male",):1.0
+Nationality(A26,"Syrian"):1.0
+is(A27,Individual):1.0
+Types(A27,Actor):1.0
+is(A_Woman_and_a_Man,,Acting_In_A_Movie  M):1.0
+is(Damascus_Time,,Acting_In_A_Movie  M):1.0
+is(Damascus_Time,,Married_To  A11,):1.0
+is(Damascus_Time,,FullName  "Nadin_Khoury",):1.0
+is(Damascus_Time,,Gender  "Female",):1.0
+is(Damascus_Time,,Nationality  "Syrian"):1.0
+is(A28,Individual):1.0
+Types(A28,Actor):1.0
+FullName(A28,"Naglaa_Fathi",):1.0
+Gender(A28,"Female",):1.0
+Nationality(A28,"Egyptian"):1.0
+is(A29,Individual):1.0
+Types(A29,Actor):1.0
+FullName(A29,"Nelly",):1.0
+Gender(A29,"Femela",):1.0
+Nationality(A29,"Egyptian"):1.0
+is(A3,Individual):1.0
+Types(A3,Actor):1.0
+FullName(A3,"Adnan_Abdol-Jaleel",):1.0
+FullName(A3,"Male",):1.0
+Nationality(A3,"Syrian"):1.0
+is(A30,Individual):1.0
+Types(A30,Actor):1.0
+is(A_Woman_and_a_Man,,Acting_In_A_Movie  M):1.0
+is(A_Woman_and_a_Man,,Gender  "Female",):1.0
+is(A_Woman_and_a_Man,,Gender  "Nahed_Sherif",):1.0
+is(A_Woman_and_a_Man,,Nationality  "Egyptian"):1.0
+is(A31,Individual):1.0
+Types(A31,Actor):1.0
+FullName(A31,"Female",):1.0
+FullName(A31,"Nisreen_Tafesh"):1.0
+is(A32,Individual):1.0
+Types(A32,Actor):1.0
+FullName(A32,"Noor_Ali",):1.0
+Gender(A32,"Male",):1.0
+Nationality(A32,"Egyptian"):1.0
+is(A33,Individual):1.0
+Types(A33,Actor):1.0
+FullName(A33,"Suzan_Najm_Aldeen",):1.0
+Gender(A33,"Female",):1.0
+Nationality(A33,"Syrian"):1.0
+is(A34,Individual):1.0
+Types(A34,Actor):1.0
+FullName(A34,"Nour_El-Sherif",):1.0
+Gender(A34,"Male",):1.0
+Nationality(A34,"Egyptian"):1.0
+is(A35,Individual):1.0
+Types(A35,Actor):1.0
+FullName(A35,"Omaia_Malas",):1.0
+Gender(A35,"Female",):1.0
+Nationality(A35,"Syrian"):1.0
+is(A36,Individual):1.0
+Types(A36,Actor):1.0
+FullName(A36,"Male",):1.0
+FullName(A36,"Pierre_Dagher",):1.0
+Nationality(A36,"Lebanese"):1.0
+is(A37,Individual):1.0
+Types(A37,Actor):1.0
+FullName(A37,"Female",):1.0
+FullName(A37,"Poussi",):1.0
+Nationality(A37,"Egyptian"):1.0
+is(A38,Individual):1.0
+Types(A38,Actor):1.0
+FullName(A38,"Ramez_Atallah",):1.0
+Gender(A38,"Male",):1.0
+Nationality(A38,"Egyptian"):1.0
+is(A39,Individual):1.0
+Types(A39,Actor):1.0
+FullName(A39,"Rushdy_Abaza",):1.0
+Gender(A39,"Male",):1.0
+Nationality(A39,"Egyptian"):1.0
+is(A4,Individual):1.0
+Types(A4,Actor):1.0
+FullName(A4,"Ahmad_Kavari",):1.0
+Gender(A4,"Male",):1.0
+Nationality(A4,"Egyptian"):1.0
+is(A40,Individual):1.0
+Types(A40,Actor):1.0
+FullName(A40,"Sabah",):1.0
+Gender(A40,"Female",):1.0
+Nationality(A40,"Lebanese"):1.0
+is(A41,Individual):1.0
+Types(A41,Actor):1.0
+FullName(A41,"Sabah_Al_Jazaery",):1.0
+Gender(A41,"Female",):1.0
+Nationality(A41,"Syrian"):1.0
+is(A42,Individual):1.0
+Types(A42,Actor):1.0
+FullName(A42,"Salah_Zulfikar",):1.0
+Gender(A42,"Male",):1.0
+Nationality(A42,"Egyptian"):1.0
+is(A43,Individual):1.0
+Types(A43,Actor):1.0
+FullName(A43,"Salma_Al-Masri",):1.0
+Gender(A43,"Female",):1.0
+Nationality(A43,"Syrian"):1.0
+is(A44,Individual):1.0
+Types(A44,Actor):1.0
+FullName(A44,"Soad_Hosny",):1.0
+Gender(A44,"Female",):1.0
+Nationality(A44,"Egyptian"):1.0
+is(A45,Individual):1.0
+Types(A45,Actor):1.0
+FullName(A45,"Shadia",):1.0
+Gender(A45,"Female",):1.0
+Nationality(A45,"Egyptian"):1.0
+is(A5,Individual):1.0
+Types(A5,Actor):1.0
+FullName(A5,"Ahmad_Zaki",):1.0
+Gender(A5,"Male",):1.0
+Nationality(A5,"Egyptian"):1.0
+is(A6,Individual):1.0
+Types(A6,Actor):1.0
+FullName(A6,"Ali_Al-Ibrahim",):1.0
+Gender(A6,"Male",):1.0
+Nationality(A6,"Syrian"):1.0
+is(A7,Individual):1.0
+Types(A7,Actor):1.0
+FullName(A7,"Amer_Al-Ali",):1.0
+Gender(A7,"Male",):1.0
+Nationality(A7,"Syrian"):1.0
+is(A8,Individual):1.0
+Types(A8,Actor):1.0
+FullName(A8,"Ayman_Zeidan",):1.0
+Gender(A8,"Male",):1.0
+Nationality(A8,"Syrian"):1.0
+is(A9,Individual):1.0
+Types(A9,Actor):1.0
+is(Alo_ana_al-ghetta,,Acting_In_A_Movie  M):1.0
+is(Alo_ana_al-ghetta,,FullName  "Babak_Hamidian",):1.0
+is(Alo_ana_al-ghetta,,Gender  "Male",):1.0
+is(Alo_ana_al-ghetta,,Nationality  "Lebanese"):1.0
+is(D1,Individual):1.0
+Types(D1,Director):1.0
+is(A_Woman_and_a_Man,,Directing_A_Movie  M):1.0
+is(A_Woman_and_a_Man,,FullName  "Basil Al Khatib",):1.0
+is(A_Woman_and_a_Man,,Gender  "Male"):1.0
+is(D10,Individual):1.0
+Types(D10,Director):1.0
+is(Bee's_Way,,Directing_A_Movie  M):1.0
+is(Bee's_Way,,FullName  "Mahmoud Zulfikar ",):1.0
+is(Bee's_Way,,Gender  "Male"):1.0
+is(D11,Individual):1.0
+Types(D11,Director):1.0
+FullName(D11,"Ali Reda",):1.0
+Gender(D11,"Male"):1.0
+is(D12,Individual):1.0
+Types(D12,Director):1.0
+FullName(D12,"Kamal El Sheikh",):1.0
+Gender(D12,"Male"):1.0
+is(D13,Individual):1.0
+Types(D13,Director):1.0
+FullName(D13,"Ibrahim El Shaqanqeery",):1.0
+Gender(D13,"Male"):1.0
+is(D14,Individual):1.0
+Types(D14,Director):1.0
+FullName(D14,"Ashraf Fahmy",):1.0
+Gender(D14,"Male"):1.0
+is(D15,Individual):1.0
+Types(D15,Director):1.0
+FullName(D15,"Hussein Kamal",):1.0
+Gender(D15,"Male"):1.0
+is(D16,Individual):1.0
+Types(D16,Director):1.0
+FullName(D16,"Houssam Eddine Mostafa",):1.0
+Gender(D16,"Male"):1.0
+is(D17,Individual):1.0
+Types(D17,Director):1.0
+FullName(D17,"Kamal El Sheikh",):1.0
+Gender(D17,"Male"):1.0
+is(D18,Individual):1.0
+Types(D18,Director):1.0
+is(Alo_ana_al-ghetta,,Directing_A_Movie  M):1.0
+is(Alo_ana_al-ghetta,,FullName  "Ahmad Fouad ",):1.0
+is(Alo_ana_al-ghetta,,Gender  "Male"):1.0
+is(D2,Individual):1.0
+Types(D2,Director):1.0
+FullName(D2,"Najdat Esmail Anzur",):1.0
+Gender(D2,"Male"):1.0
+is(D3,Individual):1.0
+Types(D3,Director):1.0
+FullName(D3,"Joud Saeed",):1.0
+Gender(D3,"Male"):1.0
+is(D4,Individual):1.0
+Types(D4,Director):1.0
+FullName(D4,"Ebrahim Hatamikia",):1.0
+Gender(D4,"Male"):1.0
+is(D5,Individual):1.0
+Types(D5,Director):1.0
+FullName(D5,"Joud Saeed",):1.0
+Gender(D5,"Male"):1.0
+is(D6,Individual):1.0
+Types(D6,Director):1.0
+FullName(D6,"Abbas Lajevardi",):1.0
+Gender(D6,"Male"):1.0
+is(D7,Individual):1.0
+Types(D7,Director):1.0
+FullName(D7,"Ahmad Ibrahim Ahmad",):1.0
+Gender(D7,"Male"):1.0
+is(D8,Individual):1.0
+Types(D8,Director):1.0
+FullName(D8,"Ghassan Shamit",):1.0
+Gender(D8,"Male"):1.0
+is(D9,Individual):1.0
+Types(D9,Director):1.0
+FullName(D9,"Abdellatif Abdelhamid",):1.0
+Gender(D9,"Male"):1.0
+is(M12,Individual):1.0
+Types(M12,Movie):1.0
+MovieIncome(M12,15000,):1.0
+MovieName(M12,"Borj_El-Athraa",):1.0
+MovieProductionYear(M12,"1970",):1.0
+MovieType(M12,"Drama",):1.0
+MovieViews(M12,1500000,):1.0
+sana(M12,"1970"):1.0
+is(M13,Individual):1.0
+Types(M13,Movie):1.0
+MovieIncome(M13,"12000E",):1.0
+MovieName(M13,"Dam_al-Nakhl",):1.0
+MovieProductionYear(M13,"2019",):1.0
+MovieType(M13,"Drama",):1.0
+MovieViews(M13,2300000):1.0
+is(M14,Individual):1.0
+Types(M14,Movie):1.0
+MovieIncome(M14,6000000,):1.0
+MovieName(M14,"Darb_el-Sama",):1.0
+MovieProductionYear(M14,"2019",):1.0
+MovieType(M14,"Drama",):1.0
+MovieViews(M14,"400K",):1.0
+sana(M14,"2019"):1.0
+is(M15,Individual):1.0
+Types(M15,Movie):1.0
+MovieIncome(M15,"14000E",):1.0
+MovieName(M15,"Demashq_Halab",):1.0
+MovieProductionYear(M15,"2018",):1.0
+MovieType(M15,"Drama",):1.0
+MovieViews(M15,3300000,):1.0
+sana(M15,"2018"):1.0
+is(M16,Individual):1.0
+Types(M16,Movie):1.0
+MovieIncome(M16,"12000E",):1.0
+MovieName(M16,"Ein_Al_Hayah",):1.0
+MovieProductionYear(M16,"1970",):1.0
+MovieType(M16,"Action",):1.0
+MovieViews(M16,2500000):1.0
+is(M17,Individual):1.0
+Types(M17,Movie):1.0
+MovieIncome(M17,"7500E",):1.0
+MovieName(M17,"El-Kol_Awez_Yeheb",):1.0
+MovieProductionYear(M17,"1975",):1.0
+MovieType(M17,"Comedy",):1.0
+MovieViews(M17,670000):1.0
+is(M18,Individual):1.0
+Types(M18,Movie):1.0
+MovieIncome(M18,"9000E",):1.0
+MovieName(M18,"El_Khait_El_Rafeeh",):1.0
+MovieProductionYear(M18,"1971",):1.0
+MovieType(M18,"Drama",):1.0
+MovieViews(M18,900000):1.0
+is(M19,Individual):1.0
+Types(M19,Movie):1.0
+MovieIncome(M19,"15000E",):1.0
+MovieName(M19,"El_Qatala",):1.0
+MovieProductionYear(M19,"1971",):1.0
+MovieType(M19,"Action",):1.0
+MovieViews(M19,"4000000"):1.0
+is(M2,Individual):1.0
+Types(M2,Movie):1.0
+MovieIncome(M2,"8000E",):1.0
+MovieName(M2,"Al-Bahth_An_Al-Mataeb",):1.0
+MovieProductionYear(M2,"1975",):1.0
+MovieType(M2,"Comedy",):1.0
+MovieViews(M2,"700000"):1.0
+is(M20,Individual):1.0
+Types(M20,Movie):1.0
+MovieIncome(M20,"9500E",):1.0
+MovieName(M20,"Ghoroub_We_Shorouq",):1.0
+MovieProductionYear(M20,"1970",):1.0
+MovieType(M20,"Action",):1.0
+MovieViews(M20,"800000",):1.0
+sana(M20,"1970"):1.0
+is(M21,Individual):1.0
+Types(M21,Movie):1.0
+MovieIncome(M21,"12000E",):1.0
+MovieName(M21,"Harami_El_Waraka",):1.0
+MovieProductionYear(M21,"1970",):1.0
+MovieType(M21,"Drama",):1.0
+MovieViews(M21,"1800000",):1.0
+sana(M21,"1970"):1.0
+is(M22,Individual):1.0
+Types(M22,Movie):1.0
+MovieIncome(M22,"8500E",):1.0
+MovieName(M22,"Imra’at_Zawgy",):1.0
+MovieProductionYear(M22,"1970",):1.0
+MovieType(M22,"Romantic",):1.0
+MovieViews(M22,"950000"):1.0
+is(M23,Individual):1.0
+Types(M23,Movie):1.0
+MovieIncome(M23,"10000E",):1.0
+MovieName(M23,"The Birthday Party",):1.0
+MovieProductionYear(M23,"2016",):1.0
+MovieType(M23,"Drama",):1.0
+MovieViews(M23,"1100000"):1.0
+is(M24,Individual):1.0
+Types(M24,Movie):1.0
+MovieIncome(M24,"12000E",):1.0
+MovieName(M24,"King_of_the_Sands",):1.0
+MovieProductionYear(M24,"2013",):1.0
+MovieType(M24,"Drama",):1.0
+MovieViews(M24,"3000000"):1.0
+is(M25,Individual):1.0
+Types(M25,Movie):1.0
+MovieIncome(M25,"15000E",):1.0
+MovieName(M25,"Lamset_Hanan",):1.0
+MovieProductionYear(M25,"1971",):1.0
+MovieType(M25,"Romantic",):1.0
+MovieViews(M25,"3700000"):1.0
+is(M26,Individual):1.0
+Types(M26,Movie):1.0
+MovieIncome(M26,"14500E",):1.0
+MovieName(M26,"Lilit_al-Souriya",):1.0
+MovieProductionYear(M26,"2018",):1.0
+MovieType(M26,"Drama",):1.0
+MovieViews(M26,"2800000"):1.0
+is(M27,Individual):1.0
+Types(M27,Movie):1.0
+MovieIncome(M27,"10000E",):1.0
+MovieName(M27,"Maward",):1.0
+MovieProductionYear(M27,"2017",):1.0
+MovieType(M27,"Drama",):1.0
+MovieViews(M27,"1100000"):1.0
+is(M28,Individual):1.0
+Types(M28,Movie):1.0
+MovieIncome(M28,"10000E",):1.0
+MovieName(M28,"Me_You_Mother_and_Father",):1.0
+MovieProductionYear(M28,"2016",):1.0
+MovieType(M28,"Drama",):1.0
+MovieViews(M28,"980000"):1.0
+is(M29,Individual):1.0
+Types(M29,Movie):1.0
+MovieIncome(M29,"5000E",):1.0
+MovieName(M29,"My_Wife_and_the_Dog",):1.0
+MovieProductionYear(M29,"1971",):1.0
+MovieType(M29,"Drama",):1.0
+MovieViews(M29,"350000"):1.0
+is(M3,Individual):1.0
+Types(M3,Movie):1.0
+MovieIncome(M3,"8500E",):1.0
+MovieName(M3,"Al-Eteraf",):1.0
+MovieProductionYear(M3,"2019",):1.0
+MovieType(M3,"Drama",):1.0
+MovieViews(M3,"400000"):1.0
+is(M31,Individual):1.0
+Types(M31,Movie):1.0
+MovieIncome(M31,"7000E",):1.0
+MovieName(M31,"Nar_el_Shouq",):1.0
+MovieProductionYear(M31,"1970",):1.0
+MovieType(M31,"Drama",):1.0
+MovieViews(M31,"800000"):1.0
+is(M32,Individual):1.0
+Types(M32,Movie):1.0
+MovieIncome(M32,"6500E",):1.0
+MovieName(M32,"Ragab_Fawq",):1.0
+MovieProductionYear(M32,"1979",):1.0
+MovieType(M32,"Comedy",):1.0
+MovieViews(M32,"530000"):1.0
+is(M33,Individual):1.0
+Types(M33,Movie):1.0
+MovieIncome(M33,"8000E",):1.0
+MovieName(M33,"Shafika_we_Metwally",):1.0
+MovieProductionYear(M33,"1979",):1.0
+MovieType(M33,"Comedy",):1.0
+MovieViews(M33,"900000"):1.0
+is(M34,Individual):1.0
+Types(M34,Movie):1.0
+MovieIncome(M34,"12000E",):1.0
+MovieName(M34,"Thartharah_Fawqa_al-Nīl",):1.0
+MovieProductionYear(M34,"1971",):1.0
+MovieType(M34,"Drama",):1.0
+MovieViews(M34,"3100000"):1.0
+is(M35,Individual):1.0
+Types(M35,Movie):1.0
+MovieIncome(M35,"7000E",):1.0
+MovieName(M35,"Zindan_Halab",):1.0
+MovieProductionYear(M35,"2018",):1.0
+MovieType(M35,"Drama",):1.0
+MovieViews(M35,"630000"):1.0
+is(M4,Individual):1.0
+Types(M4,Movie):1.0
+MovieIncome(M4,"10000E",):1.0
+MovieName(M4,"Al-Khedaa_Al-Khafiya",):1.0
+MovieProductionYear(M4,"1975",):1.0
+MovieType(M4,"Comedy",):1.0
+MovieViews(M4,"1200000"):1.0
+is(M5,Individual):1.0
+Types(M5,Movie):1.0
+MovieIncome(M5,"12000E",):1.0
+MovieName(M5,"Al-Souriyoun",):1.0
+MovieProductionYear(M5,"2016",):1.0
+MovieType(M5,"Drama",):1.0
+MovieViews(M5,"2200000",):1.0
+sana(M5,"2016"):1.0
+is(M6,Individual):1.0
+Types(M6,Movie):1.0
+MovieIncome(M6,"8000E",):1.0
+MovieName(M6,"Al_Omm",):1.0
+MovieProductionYear(M6,"2015",):1.0
+MovieType(M6,"Drama",):1.0
+MovieViews(M6,"890000"):1.0
+is(M8,Individual):1.0
+Types(M8,Movie):1.0
+MovieIncome(M8,"10000E",):1.0
+MovieName(M8,"Ala_Mn_Notlik_Al-Rosas",):1.0
+MovieProductionYear(M8,"1975",):1.0
+MovieType(M8,"Comedy",):1.0
+MovieViews(M8,"1400000"):1.0
+is(M,Individual):1.0
+Types(M,Movie):1.0
+MovieIncome(M,23000,):1.0
+MovieName(M,"A_Woman_and_a_Man",):1.0
+MovieProductionYear(M,"1971",):1.0
+MovieType(M,"Drama",):1.0
+MovieViews(M,800000,):1.0
+sana(M,"1971",):1.0
+year(M,"2000"):1.0
+is(M,Individual):1.0
+Types(M,Movie):1.0
+MovieIncome(M,"9500E",):1.0
+MovieName(M,"Alo_ana_al-ghetta",):1.0
+MovieProductionYear(M,"1975",):1.0
+MovieType(M,"Comedy",):1.0
+MovieViews(M,"870000"):1.0
+is(M,Individual):1.0
+Types(M,Movie):1.0
+MovieIncome(M,2000,):1.0
+MovieIncome(M,20000,):1.0
+MovieName(M,"Damascus Time",):1.0
+MovieProductionYear(M,"2018",):1.0
+MovieType(M,"Drama",):1.0
+MovieViews(M,950000,):1.0
+sana(M,"1970",):1.0
+year(M,"1970"):1.0
+is(P1,Individual):1.0
+Types(P1,Payment):1.0
+is(Damascus_Time,,Payment_For_Movie  M):1.0
+is(SL_Production,,Payment_Paid_By  P):1.0
+is(SL_Production,,Payment_Paid_To  A10,):1.0
+is(SL_Production,,PaymentAmount  5000):1.0
+is(P2,Individual):1.0
+is(Damascus_Time,,Payment_For_Movie  M):1.0
+is(SL_Production,,Payment_Paid_By  P):1.0
+is(SL_Production,,Payment_Paid_To  A19,):1.0
+is(SL_Production,,PaymentAmount  3500):1.0
+is(P3,Individual):1.0
+is(Damascus_Time,,Payment_For_Movie  M):1.0
+is(SL_Production,,Payment_Paid_By  P):1.0
+is(SL_Production,,Payment_Paid_To  D17,):1.0
+is(SL_Production,,PaymentAmount  6000):1.0
+is(P4,Individual):1.0
+is(A_Woman_and_a_Man,,Payment_For_Movie  M):1.0
+is(Egyptian_Film_Production,,Payment_Paid_By  P):1.0
+is(Egyptian_Film_Production,,Payment_Paid_To  D16,):1.0
+is(Egyptian_Film_Production,,PaymentAmount  7000):1.0
+is(P5,Individual):1.0
+is(A_Woman_and_a_Man,,Payment_For_Movie  M):1.0
+is(Egyptian_Film_Production,,Payment_Paid_By  P):1.0
+is(Egyptian_Film_Production,,Payment_Paid_To  A30,):1.0
+is(Egyptian_Film_Production,,PaymentAmount  4000):1.0
+is(P6,Individual):1.0
+is(A_Woman_and_a_Man,,Payment_For_Movie  M):1.0
+is(Egyptian_Film_Production,,Payment_Paid_By  P):1.0
+is(Egyptian_Film_Production,,Payment_Paid_To  A39,):1.0
+is(Egyptian_Film_Production,,PaymentAmount  5500):1.0
+is(P,Individual):1.0
+Types(P,Producer):1.0
+FullName(P,"Egyptian Film Production"):1.0
+is(P,Individual):1.0
+Types(P,Producer):1.0
+FullName(P,"Egyptian Film Production plus"):1.0
+is(P,Individual):1.0
+Types(P,Producer):1.0
+FullName(P,"Egyptian Golden Film"):1.0
+is(P,Individual):1.0
+Types(P,Producer):1.0
+FullName(P,"SL Production"):1.0
+is(P,Individual):1.0
+Types(P,Producer):1.0
+FullName(P,"Sham Production"):1.0
+is(P,Individual):1.0
+FullName(P,"Syrian Production"):1.0
+is(P,Individual):1.0
+Types(P,Producer):1.0
+FullName(P,"Top One Production"):1.0

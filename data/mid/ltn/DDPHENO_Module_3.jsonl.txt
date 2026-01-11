@@ -1,0 +1,36 @@
+is(www.w3.org/2000/01/-schema#,Datatype):1.0
+is(normalizedString,Datatype):1.0
+is(hasRecordCopyCreated,ObjectProperty):1.0
+Domain(hasRecordCopyCreated,Thing):1.0
+is(hasRecordCreated,ObjectProperty):1.0
+Domain(hasRecordCreated,Thing):1.0
+is(hasRecordCreator,ObjectProperty):1.0
+Domain(hasRecordCreator,Thing):1.0
+is(hasRecordLogicallyDeleted,ObjectProperty):1.0
+Domain(hasRecordLogicallyDeleted,Thing):1.0
+is(hasWhyDeleted,ObjectProperty):1.0
+Domain(hasWhyDeleted,Thing):1.0
+is(hasId,DataProperty):1.0
+Domain(hasId,Thing):1.0
+is(AbstractObject,Class):1.0
+SubClassOf(AbstractObject,Thing):1.0
+is(ClassOfInformationRepresentation,Class):1.0
+is(PossibleIndividual,Class):1.0
+SubClassOf(PossibleIndividual,Thing):1.0
+is(RepresentationOfGregorianDateAndUtcTime,Class):1.0
+is(Thing,Class):1.0
+EquivalentTo(Thing,AbstractObject or PossibleIndividual):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasRecordCopyCreated only RepresentationOfGregorianDateAndUtcTime,):1.0
+is(Thing,,hasRecordCreated only RepresentationOfGregorianDateAndUtcTime,):1.0
+is(Thing,,hasRecordCreator only PossibleIndividual,):1.0
+is(Thing,,hasRecordLogicallyDeleted only RepresentationOfGregorianDateAndUtcTime,):1.0
+is(Thing,,hasWhyDeleted only ClassOfInformationRepresentation,):1.0
+is(Thing,,hasRecordCopyCreated max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasRecordCreated max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasRecordCreator max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasRecordLogicallyDeleted max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasWhyDeleted max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasId only normalizedString,):1.0
+is(Literal,hasId exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(www.w3.org/2002/07/#,Class):1.0

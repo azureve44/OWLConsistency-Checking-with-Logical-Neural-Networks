@@ -1,0 +1,244 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+access_to is ObjectProperty.
+classify_as is ObjectProperty.
+extension_of is ObjectProperty.
+is_a is ObjectProperty.
+kind_of is ObjectProperty.
+offers is ObjectProperty.
+transmits is ObjectProperty.
+uses is ObjectProperty.
+version_of is ObjectProperty.
+Advance_Direct_Connect is Class.
+Advance_Direct_Connect SubClassOf Transmission_Control_Protocol,.
+Advance_Direct_Connect SubClassOf User_Datagram_Protocol,.
+Advance_Direct_Connect SubClassOf uses some Transmission_Control_Protocol,.
+Advance_Direct_Connect SubClassOf uses some User_Datagram_Protocol.
+Apple_Filing_Protocol is Class.
+Apple_Filing_Protocol SubClassOf Transmission_Control_Protocol,.
+Apple_Filing_Protocol SubClassOf offers some Transmission_Control_Protocol.
+BACnet is Class.
+BACnet SubClassOf Transmission_Control_Protocol,.
+BACnet SubClassOf User_Datagram_Protocol,.
+BACnet SubClassOf uses some Transmission_Control_Protocol,.
+BACnet SubClassOf uses some User_Datagram_Protocol.
+BOOTP is Class.
+BOOTP SubClassOf Transmission_Control_Protocol,.
+BOOTP SubClassOf User_Datagram_Protocol,.
+BOOTP SubClassOf uses some Transmission_Control_Protocol,.
+BOOTP SubClassOf uses some User_Datagram_Protocol.
+Bit_Torrent is Class.
+Bit_Torrent SubClassOf Transmission_Control_Protocol,.
+Bit_Torrent SubClassOf offers some Transmission_Control_Protocol.
+Class_A is Class.
+Class_A SubClassOf Internet_Protocol_Version_4.
+Class_B is Class.
+Class_B SubClassOf Internet_Protocol_Version_4.
+Class_C is Class.
+Class_C SubClassOf Internet_Protocol_Version_4.
+Class_D is Class.
+Class_D SubClassOf Internet_Protocol_Version_4.
+Class_E is Class.
+Class_E SubClassOf Internet_Protocol_Version_4.
+Connection_Oriented_Service is Class.
+Connection_Oriented_Service SubClassOf Transmission_Control_Protocol.
+Connectionless_Service is Class.
+Connectionless_Service SubClassOf Internet_Protocol.
+Core_Switch is Class.
+DHCP is Class.
+DHCP SubClassOf Transmission_Control_Protocol,.
+DHCP SubClassOf User_Datagram_Protocol,.
+DHCP SubClassOf uses some Transmission_Control_Protocol,.
+DHCP SubClassOf uses some User_Datagram_Protocol.
+DICT is Class.
+DICT SubClassOf Transmission_Control_Protocol,.
+DICT SubClassOf offers some Transmission_Control_Protocol.
+DNS is Class.
+DNS SubClassOf Transmission_Control_Protocol,.
+DNS SubClassOf offers some Transmission_Control_Protocol.
+Data_Center_Switches is Class.
+Data_Center_Switches SubClassOf Core_Switch,.
+Data_Center_Switches SubClassOf is_a some Core_Switch.
+FTP is Class.
+FTP SubClassOf Transmission_Control_Protocol,.
+FTP SubClassOf offers some Transmission_Control_Protocol.
+Finger_protocol is Class.
+Finger_protocol SubClassOf Transmission_Control_Protocol,.
+Finger_protocol SubClassOf offers some Transmission_Control_Protocol.
+Gnutella is Class.
+Gnutella SubClassOf User_Datagram_Protocol,.
+Gnutella SubClassOf uses some User_Datagram_Protocol.
+Gopher_Protocol is Class.
+Gopher_Protocol SubClassOf Transmission_Control_Protocol,.
+Gopher_Protocol SubClassOf offers some Transmission_Control_Protocol.
+HTTP is Class.
+HTTP SubClassOf Transmission_Control_Protocol,.
+HTTP SubClassOf World_Wide_Web,.
+HTTP SubClassOf access_to some World_Wide_Web,.
+HTTP SubClassOf offers some Transmission_Control_Protocol.
+HTTPS is Class.
+HTTPS SubClassOf Transmission_Control_Protocol,.
+HTTPS SubClassOf offers some Transmission_Control_Protocol.
+IANA is Class.
+IANA SubClassOf Internet_Protocol.
+IMAP is Class.
+IMAP SubClassOf Transmission_Control_Protocol,.
+IMAP SubClassOf classify_as some IMAP2,.
+IMAP SubClassOf classify_as some IMAP2bis,.
+IMAP SubClassOf classify_as some IMAP3,.
+IMAP SubClassOf classify_as some IMAP4,.
+IMAP SubClassOf classify_as some Orginal_IMAP,.
+IMAP SubClassOf offers some Transmission_Control_Protocol.
+IMAP2 is Class.
+IMAP2 SubClassOf IMAP,.
+IMAP2 SubClassOf version_of some IMAP.
+IMAP2bis is Class.
+IMAP2bis SubClassOf IMAP,.
+IMAP2bis SubClassOf version_of some IMAP.
+IMAP3 is Class.
+IMAP3 SubClassOf IMAP,.
+IMAP3 SubClassOf version_of some IMAP.
+IMAP4 is Class.
+IMAP4 SubClassOf IMAP,.
+IMAP4 SubClassOf version_of some IMAP.
+Internet_Protocol is Class.
+Internet_Protocol SubClassOf Protocol,.
+Internet_Protocol SubClassOf is_a some Protocol,.
+Internet_Protocol SubClassOf offers some Connectionless_Service,.
+Internet_Protocol SubClassOf transmits some Packet.
+Internet_Protocol_Version_4 is Class.
+Internet_Protocol_Version_4 SubClassOf Internet_Protocol.
+Internet_Protocol_Version_6 is Class.
+Internet_Protocol_Version_6 SubClassOf Internet_Protocol.
+Internet_Relay_Chat is Class.
+Internet_Relay_Chat SubClassOf Transmission_Control_Protocol,.
+Internet_Relay_Chat SubClassOf offers some Transmission_Control_Protocol.
+JUNOS is Class.
+Jupiter_Networks is Class.
+Jupiter_Networks SubClassOf JUNOS.
+LDAP is Class.
+LDAP SubClassOf Transmission_Control_Protocol,.
+LDAP SubClassOf offers some Transmission_Control_Protocol.
+MIME is Class.
+MIME SubClassOf SMTP,.
+MIME SubClassOf extension_of some SMTP.
+NAT is Class.
+NAT SubClassOf Transmission_Control_Protocol,.
+NAT SubClassOf offers some Transmission_Control_Protocol.
+NNTP is Class.
+NNTP SubClassOf Transmission_Control_Protocol,.
+NNTP SubClassOf offers some Transmission_Control_Protocol.
+NTP is Class.
+NTP SubClassOf User_Datagram_Protocol,.
+NTP SubClassOf uses some User_Datagram_Protocol.
+NetBIOS is Class.
+NetBIOS SubClassOf Transmission_Control_Protocol,.
+NetBIOS SubClassOf User_Datagram_Protocol,.
+NetBIOS SubClassOf uses some Transmission_Control_Protocol,.
+NetBIOS SubClassOf uses some User_Datagram_Protocol.
+Orginal_IMAP is Class.
+Orginal_IMAP SubClassOf IMAP,.
+Orginal_IMAP SubClassOf version_of some IMAP.
+POP is Class.
+POP SubClassOf Transmission_Control_Protocol,.
+POP SubClassOf offers some Transmission_Control_Protocol.
+POP1 is Class.
+POP1 SubClassOf POP,.
+POP1 SubClassOf version_of some POP.
+POP2 is Class.
+POP2 SubClassOf POP,.
+POP2 SubClassOf version_of some POP.
+POP3 is Class.
+POP3 SubClassOf POP,.
+POP3 SubClassOf version_of some POP.
+PPP is Class.
+PPP SubClassOf Transmission_Control_Protocol,.
+PPP SubClassOf Virtual_Private_Network,.
+PPP SubClassOf offers some Transmission_Control_Protocol.
+Packet is Class.
+Packet SubClassOf Internet_Protocol.
+Protocol is Class.
+RADIUS is Class.
+RADIUS SubClassOf User_Datagram_Protocol,.
+RADIUS SubClassOf uses some User_Datagram_Protocol.
+RDP is Class.
+RDP SubClassOf Transmission_Control_Protocol,.
+RDP SubClassOf offers some Transmission_Control_Protocol.
+RIP is Class.
+RIP SubClassOf Transmission_Control_Protocol,.
+RIP SubClassOf offers some Transmission_Control_Protocol.
+RTSP is Class.
+RTSP SubClassOf Transmission_Control_Protocol,.
+RTSP SubClassOf User_Datagram_Protocol,.
+RTSP SubClassOf uses some Transmission_Control_Protocol,.
+RTSP SubClassOf uses some User_Datagram_Protocol.
+SCP is Class.
+SCP SubClassOf SSH,.
+SCP SubClassOf kind_of some SSH.
+SFTP is Class.
+SFTP SubClassOf SSH,.
+SFTP SubClassOf kind_of some SSH.
+SIP is Class.
+SIP SubClassOf Transmission_Control_Protocol,.
+SIP SubClassOf User_Datagram_Protocol,.
+SIP SubClassOf VOIP,.
+SIP SubClassOf uses some Transmission_Control_Protocol,.
+SIP SubClassOf uses some User_Datagram_Protocol.
+SMTP is Class.
+SMTP SubClassOf Transmission_Control_Protocol,.
+SMTP SubClassOf offers some Transmission_Control_Protocol.
+SNMP is Class.
+SNMP SubClassOf Transmission_Control_Protocol,.
+SNMP SubClassOf User_Datagram_Protocol,.
+SNMP SubClassOf uses some Transmission_Control_Protocol,.
+SNMP SubClassOf uses some User_Datagram_Protocol,.
+SNMP SubClassOf uses only (offers some Transmission_Control_Protocol).
+SNMPv1 is Class.
+SNMPv1 SubClassOf SNMP,.
+SNMPv1 SubClassOf version_of some SNMP.
+SNMPv2 is Class.
+SNMPv2 SubClassOf SNMP,.
+SNMPv2 SubClassOf version_of some SNMP.
+SNMPv3 is Class.
+SNMPv3 SubClassOf SNMP,.
+SNMPv3 SubClassOf version_of some SNMP.
+SNTP is Class.
+SNTP SubClassOf NTP,.
+SNTP SubClassOf version_of some NTP.
+SOAP is Class.
+SOAP SubClassOf Transmission_Control_Protocol,.
+SOAP SubClassOf offers some Transmission_Control_Protocol.
+SSH is Class.
+SSH SubClassOf Transmission_Control_Protocol,.
+SSH SubClassOf Virtual_Private_Network,.
+SSH SubClassOf offers some Transmission_Control_Protocol.
+SSH.2 is Class.
+SSH.2 SubClassOf SSH,.
+SSH.2 SubClassOf version_of some SSH.
+STUN is Class.
+STUN SubClassOf User_Datagram_Protocol,.
+STUN SubClassOf uses some User_Datagram_Protocol.
+TFTP is Class.
+TFTP SubClassOf Transmission_Control_Protocol,.
+TFTP SubClassOf offers some Transmission_Control_Protocol.
+Telnet is Class.
+Telnet SubClassOf Transmission_Control_Protocol,.
+Telnet SubClassOf offers some Transmission_Control_Protocol.
+Transmission_Control_Protocol is Class.
+Transmission_Control_Protocol SubClassOf Internet_Protocol.
+Transmission_Control_Protocol DisjointWith offers some Transmission_Control_Protocol.
+User_Datagram_Protocol is Class.
+User_Datagram_Protocol SubClassOf Internet_Protocol.
+VOIP is Class.
+Virtual_Private_Network is Class.
+World_Wide_Web is Class.
+r_login is Class.
+r_login SubClassOf Transmission_Control_Protocol,.
+r_login SubClassOf offers some Transmission_Control_Protocol.
+r_sync is Class.
+r_sync SubClassOf Transmission_Control_Protocol,.
+r_sync SubClassOf offers some Transmission_Control_Protocol.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.
+classify_as some IMAP2 is Class.
+classify_as some IMAP2 SubClassOf Orginal_IMAP.

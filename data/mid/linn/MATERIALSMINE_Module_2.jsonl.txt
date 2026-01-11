@@ -1,0 +1,985 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(hasPart,is,ObjectProperty).
+predicate(isPartOf,is,ObjectProperty).
+predicate(affirmedBy,is,ObjectProperty).
+predicate(affirmedBy,SubPropertyOf,subsequentLegalDecision).
+predicate(affirmedBy,Domain,LegalDecision).
+predicate(affirmedBy,Range,LegalDecision).
+predicate(annotates,is,ObjectProperty).
+predicate(annotates,Domain,Note).
+predicate(court,is,ObjectProperty).
+predicate(court,Domain,LegalDocument).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(degree,is,ObjectProperty).
+predicate(degree,Domain,Thesis).
+predicate(degree,Range,ThesisDegree).
+predicate(organizer,is,ObjectProperty).
+predicate(Event,is,purl.org/NET/c4dm/event.#).
+predicate(Agent,is,ns.com/foaf/0.1/).
+predicate(performer,is,ObjectProperty).
+predicate(performer,Domain,Performance).
+predicate(Agent,is,ns.com/foaf/0.1/).
+predicate(recipient,is,ObjectProperty).
+predicate(recipient,Domain,PersonalCommunicationDocument).
+predicate(Agent,is,ns.com/foaf/0.1/).
+predicate(reversedBy,is,ObjectProperty).
+predicate(reversedBy,SubPropertyOf,subsequentLegalDecision).
+predicate(reversedBy,Domain,LegalDecision).
+predicate(reversedBy,Range,LegalDecision).
+predicate(subsequentLegalDecision,is,ObjectProperty).
+predicate(subsequentLegalDecision,Domain,LegalDecision).
+predicate(subsequentLegalDecision,Range,LegalDecision).
+predicate(SIO_000008,is,ObjectProperty).
+predicate(SIO_000221,is,ObjectProperty).
+predicate(SIO_000230,is,ObjectProperty).
+predicate(generated,is,ObjectProperty).
+predicate(used,is,ObjectProperty).
+predicate(issue,is,DataProperty).
+predicate(issue,SubPropertyOf,issue).
+predicate(argued,is,DataProperty).
+predicate(argued,Domain,LegalDocument).
+predicate(Literal,is,www.w3.org/2000/01/-schema#).
+predicate(chapter,is,DataProperty).
+predicate(chapter,Domain,BookSection).
+predicate(Literal,is,www.w3.org/2000/01/-schema#).
+predicate(issue,is,DataProperty).
+predicate(issue,Domain,Issue).
+predicate(Literal,is,www.w3.org/2000/01/-schema#).
+predicate(1DGeometry,is,Class).
+predicate(1DGeometry,SubClassOf,UnitCellGeometry).
+predicate(1DSolidMechanicsModel,is,Class).
+predicate(3DGeometry,is,Class).
+predicate(<obo,is,Class).
+predicate(<obo,is,Class).
+predicate(<obo,is,Class).
+predicate(<obo,is,Class).
+predicate(Abaqus,is,Class).
+predicate(Abaqus,SubClassOf,SoftwareExecution).
+predicate(Abbreviation,is,Class).
+predicate(Abbreviation,SubClassOf,SIO_000116).
+predicate(AcceleratingVoltage,is,Class).
+predicate(Additive,is,Class).
+predicate(Additive,SubClassOf,SIO_010004,).
+predicate(Additive,SubClassOf,SIO_011126,).
+predicate(Additive,SubClassOf,SIO_000008 some SIO_000052).
+predicate(Air,is,Class).
+predicate(Air,SubClassOf,AmbientCondition).
+predicate(AmbientCondition,is,Class).
+predicate(Amperage,is,Class).
+predicate(Anisotropic,is,Class).
+predicate(Anisotropic,SubClassOf,Orientation).
+predicate(AspectRatio,is,Class).
+predicate(AspectRatio,SubClassOf,SIO_001018).
+predicate(Atactic,is,Class).
+predicate(Atactic,SubClassOf,Tacticity).
+predicate(BallMilling,is,Class).
+predicate(BallMilling,SubClassOf,Mixing,).
+predicate(BallMilling,SubClassOf,SIO_000230 some Additive).
+predicate(BandGapIndex,is,Class).
+predicate(BandGapIndex,SubClassOf,Index).
+predicate(BandGapLocation,is,Class).
+predicate(BandGapLocation,SubClassOf,SIO_000056).
+predicate(Beam,is,Class).
+predicate(Beam,SubClassOf,1DSolidMechanicsModel).
+predicate(Binary2DGeometry,is,Class).
+predicate(Binary2DGeometry,SubClassOf,Geometry).
+predicate(BinaryMaterialPropertyField,is,Class).
+predicate(BinaryMaterialPropertyField,SubClassOf,DiscreteMaterialPropertyField).
+predicate(BovineSerumAlbumen,is,Class).
+predicate(BovineSerumAlbumen,SubClassOf,SIO_010043).
+predicate(C11,is,Class).
+predicate(C11,SubClassOf,CMatrixElement).
+predicate(C12,is,Class).
+predicate(C12,SubClassOf,CMatrixElement).
+predicate(C16,is,Class).
+predicate(C16,SubClassOf,CMatrixElement).
+predicate(C22,is,Class).
+predicate(C22,SubClassOf,CMatrixElement).
+predicate(C26,is,Class).
+predicate(C26,SubClassOf,CMatrixElement).
+predicate(C66,is,Class).
+predicate(C66,SubClassOf,CMatrixElement).
+predicate(CMatrixElement,is,Class).
+predicate(CMatrixElement,SubClassOf,SIO_000015).
+predicate(CMatrixIndexI,is,Class).
+predicate(CMatrixIndexI,SubClassOf,Index).
+predicate(CMatrixIndexJ,is,Class).
+predicate(CMatrixIndexJ,SubClassOf,Index).
+predicate(CMatrixIndicesIJ,is,Class).
+predicate(CMatrixIndicesIJ,SubClassOf,SIO_000015).
+predicate(CTensor,is,Class).
+predicate(CTensor,SubClassOf,SIO_001429).
+predicate(CTensorElement,is,Class).
+predicate(CTensorElement,SubClassOf,SIO_000015).
+predicate(CTensorIndexI,is,Class).
+predicate(CTensorIndexI,SubClassOf,Index).
+predicate(CTensorIndexJ,is,Class).
+predicate(CTensorIndexJ,SubClassOf,Index).
+predicate(CTensorIndexK,is,Class).
+predicate(CTensorIndexK,SubClassOf,Index).
+predicate(CTensorIndexL,is,Class).
+predicate(CTensorIndexL,SubClassOf,Index).
+predicate(CTensorIndicesIJKL,is,Class).
+predicate(CTensorIndicesIJKL,SubClassOf,SIO_000015).
+predicate(CU_Formula,is,Class).
+predicate(CU_Formula,SubClassOf,SIO_000116).
+predicate(CapillarySize,is,Class).
+predicate(CapillarySize,SubClassOf,SIO_000144).
+predicate(Casting,is,Class).
+predicate(Casting,SubClassOf,Molding).
+predicate(CelluloseNanofibers,is,Class).
+predicate(CelluloseNanofibers,SubClassOf,SIO_010046).
+predicate(Centrifugation,is,Class).
+predicate(Centrifugation,SubClassOf,SIO_000999).
+predicate(ChannelDepth,is,Class).
+predicate(ChannelsPerScrew,is,Class).
+predicate(ChemicalName,is,Class).
+predicate(ChemicalName,SubClassOf,SIO_000116).
+predicate(CoRotation,is,Class).
+predicate(CoRotation,SubClassOf,RotationMode).
+predicate(Component,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Composition,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CompressiveCreep,is,Class).
+predicate(CompressiveCreepRuptureStrength,is,Class).
+predicate(CompressiveCreepRuptureStrength,SubClassOf,CompressiveCreep,).
+predicate(pa,is,SIO_000221 value unit/).
+predicate(CompressiveCreepRuptureTime,is,Class).
+predicate(CompressiveCreepRuptureTime,SubClassOf,CompressiveCreep,).
+predicate(s,is,SIO_000221 value unit/).
+predicate(CondensedBinary2DGeometry,is,Class).
+predicate(CondensedBinary2DGeometry,SubClassOf,Binary2DGeometry).
+predicate(CondensedMaterialPropertyField,is,Class).
+predicate(CondensedMaterialPropertyField,SubClassOf,MaterialPropertyField).
+predicate(CondensedMaterialPropertyFieldVector,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Condition,is,Class).
+predicate(ConePlateRheometery,is,Class).
+predicate(ConePlateRheometery,SubClassOf,Rheometery,).
+predicate(ConePlateRheometery,SubClassOf,generated some ViscoelasticProperty).
+predicate(Constituent,is,Class).
+predicate(Constituent,SubClassOf,SIO_000004).
+predicate(Continuous,is,Class).
+predicate(ContinuousMaterialPropertyField,is,Class).
+predicate(ContinuousMaterialPropertyField,SubClassOf,MaterialPropertyField).
+predicate(Cooling,is,Class).
+predicate(Cooling,SubClassOf,SIO_000999,).
+predicate(Cooling,SubClassOf,SIO_000008 some AmbientCondition,).
+predicate(Cooling,SubClassOf,SIO_000008 some SIO_000417,).
+predicate(PATO_0000146,,is,SIO_000008 some <obo).
+predicate(PATO_0001025,is,SIO_000008 some <obo).
+predicate(CoolingRate,is,Class).
+predicate(Copolymer,is,Class).
+predicate(Copolymer,SubClassOf,SIO_000314).
+predicate(CrosslinkDensityFraction,is,Class).
+predicate(CrosslinkDensityFraction,SubClassOf,Thermoset).
+predicate(CubeGeometry,is,Class).
+predicate(CubeGeometry,SubClassOf,CuboidalGeometry).
+predicate(CuboidalGeometry,is,Class).
+predicate(CuboidalGeometry,SubClassOf,3DGeometry).
+predicate(Curing,is,Class).
+predicate(Curing,SubClassOf,SIO_000999).
+predicate(CycleInformation,is,Class).
+predicate(CycleInformation,SubClassOf,SIO_000015).
+predicate(DLRatio,is,Class).
+predicate(DLRatio,SubClassOf,SIO_001018).
+predicate(DMA_Mode,is,Class).
+predicate(DMA_Mode,SubClassOf,DynamicProperties,).
+predicate(ID_0000061,is,<obo).
+predicate(DOI,is,Class).
+predicate(DOI,SubClassOf,SIO_000731).
+predicate(DateOfCitation,is,Class).
+predicate(DateOfCitation,SubClassOf,SIO_000418).
+predicate(DateOfMeasurement,is,Class).
+predicate(DateOfMeasurement,SubClassOf,SIO_000418).
+predicate(DateOfSampleMade,is,Class).
+predicate(DateOfSampleMade,SubClassOf,SIO_000418).
+predicate(Density,is,Class).
+predicate(Density,SubClassOf,VolumetricProperty,).
+predicate(Density,SubClassOf,SIO_001406,).
+predicate(kg-m-3,is,SIO_000221 value unit/).
+predicate(DieDiameter,is,Class).
+predicate(PATO_0001334,is,<obo).
+predicate(DielectricandImpedanceSpectroscopyAnalysis,is,Class).
+predicate(DielectricandImpedanceSpectroscopyAnalysis,SubClassOf,SIO_001054,).
+predicate(DielectricandImpedanceSpectroscopyAnalysis,SubClassOf,generated some ElectricalProperty).
+predicate(DifferentialScanningCalorimetry,is,Class).
+predicate(DifferentialScanningCalorimetry,SubClassOf,SIO_001054,).
+predicate(DifferentialScanningCalorimetry,SubClassOf,generated some ThermalProperty,).
+predicate(DifferentialScanningCalorimetry,SubClassOf,used some CoolingRate,).
+predicate(DifferentialScanningCalorimetry,SubClassOf,used some HeatingRate).
+predicate(Dimension,is,Class).
+predicate(DiscreteMaterialPropertyField,is,Class).
+predicate(DiscreteMaterialPropertyField,SubClassOf,MaterialPropertyField).
+predicate(DispersionBandValue,is,Class).
+predicate(DispersionBandValue,SubClassOf,SIO_001367).
+predicate(DispersionRelation,is,Class).
+predicate(DispersionRelation,SubClassOf,SIO_000017).
+predicate(DispersionRelation1D,is,Class).
+predicate(DispersionRelation1D,SubClassOf,DispersionRelation).
+predicate(DispersionRelation2D,is,Class).
+predicate(DispersionRelation2D,SubClassOf,DispersionRelation).
+predicate(DispersionRelation3D,is,Class).
+predicate(DispersionRelation3D,SubClassOf,DispersionRelation).
+predicate(Dissolving,is,Class).
+predicate(Dissolving,SubClassOf,SIO_000999,).
+predicate(Dissolving,SubClassOf,SIO_000230 some Solvent).
+predicate(Drying-Evaporation,is,Class).
+predicate(Drying-Evaporation,SubClassOf,SIO_000999,).
+predicate(Drying-Evaporation,SubClassOf,SIO_000008 some AmbientCondition,).
+predicate(Drying-Evaporation,SubClassOf,SIO_000008 some SIO_000417,).
+predicate(PATO_0000146,,is,SIO_000008 some <obo).
+predicate(PATO_0001025,is,SIO_000008 some <obo).
+predicate(DynamicProperties,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Editor,is,Class).
+predicate(Editor,SubClassOf,Agent).
+predicate(ElasticityTensor,is,Class).
+predicate(ElasticityTensor,SubClassOf,SIO_001429).
+predicate(Elastomer,is,Class).
+predicate(Elastomer,SubClassOf,Plastic).
+predicate(ElectricalProperty,is,Class).
+predicate(Electrometry,is,Class).
+predicate(Electrometry,SubClassOf,SIO_001054,).
+predicate(Electrometry,SubClassOf,generated some ElectricalProperty).
+predicate(EmissionCurrent,is,Class).
+predicate(EmissionCurrent,SubClassOf,SIO_000144).
+predicate(Equipment,is,Class).
+predicate(Equipment,SubClassOf,SIO_000956).
+predicate(ExperimentalProcedure,is,Class).
+predicate(ExperimentalProcedure,SubClassOf,SIO_000999).
+predicate(Experimenter,is,Class).
+predicate(Experimenter,SubClassOf,Agent).
+predicate(ExposureTime,is,Class).
+predicate(ExposureTime,SubClassOf,SIO_000144).
+predicate(Extruder,is,Class).
+predicate(Extruder,SubClassOf,SIO_000956,).
+predicate(Extruder,SubClassOf,SIO_000008 some Amperage,).
+predicate(Extruder,SubClassOf,SIO_000008 some ChannelDepth,).
+predicate(Extruder,SubClassOf,SIO_000008 some ChannelsPerScrew,).
+predicate(Extruder,SubClassOf,SIO_000008 some DLRatio,).
+predicate(Extruder,SubClassOf,SIO_000008 some Dimension,).
+predicate(Extruder,SubClassOf,SIO_000008 some ExtrusionTemperature,).
+predicate(Extruder,SubClassOf,SIO_000008 some FlightClearance,).
+predicate(Extruder,SubClassOf,SIO_000008 some FlightWidth,).
+predicate(Extruder,SubClassOf,SIO_000008 some InnerBarrelDiameter,).
+predicate(Extruder,SubClassOf,SIO_000008 some MeltTemperature,).
+predicate(Extruder,SubClassOf,SIO_000008 some PressureAtDie,).
+predicate(Extruder,SubClassOf,SIO_000008 some ResidenceTime,).
+predicate(Extruder,SubClassOf,SIO_000008 some ScrewChannelWidth,).
+predicate(Extruder,SubClassOf,SIO_000008 some ScrewDiameter,).
+predicate(Extruder,SubClassOf,SIO_000008 some ScrewLead,).
+predicate(Extruder,SubClassOf,SIO_000008 some ScrewLength,).
+predicate(Extruder,SubClassOf,SIO_000008 some Throughput,).
+predicate(Extruder,SubClassOf,SIO_000008 some Torque,).
+predicate(Extruder,SubClassOf,SIO_000008 some Voltage).
+predicate(Extrusion,is,Class).
+predicate(Extrusion,SubClassOf,SIO_000999,).
+predicate(Extrusion,SubClassOf,SIO_000230 some Extruder).
+predicate(ExtrusionTemperature,is,Class).
+predicate(Filler,is,Class).
+predicate(Filler,SubClassOf,SIO_000016).
+predicate(FillerComponent,is,Class).
+predicate(FillerComponent,SubClassOf,Component).
+predicate(FillerComponentComposition,is,Class).
+predicate(FillerComponentComposition,SubClassOf,Composition).
+predicate(FillerComponentInComposite,is,Class).
+predicate(FillerComponentInComposite,SubClassOf,FillerComponent).
+predicate(FillerComposition,is,Class).
+predicate(FillerComposition,SubClassOf,Composition).
+predicate(FiniteElementAnalysis,is,Class).
+predicate(FiniteElementAnalysis,SubClassOf,Simulation).
+predicate(FiniteMetamaterial,is,Class).
+predicate(FiniteMetamaterial,SubClassOf,Metamaterial).
+predicate(FirstBrillouinZone,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(FlexuralCreep,is,Class).
+predicate(FlexuralCreepRuptureStrength,is,Class).
+predicate(FlexuralCreepRuptureStrength,SubClassOf,FlexuralCreep,).
+predicate(pa,is,SIO_000221 value unit/).
+predicate(FlexuralCreepRuptureTime,is,Class).
+predicate(FlexuralCreepRuptureTime,SubClassOf,FlexuralCreep,).
+predicate(s,is,SIO_000221 value unit/).
+predicate(FlexuralCreepStrain,is,Class).
+predicate(FlexuralCreepStrain,SubClassOf,FlexuralCreep).
+predicate(FlightClearance,is,Class).
+predicate(FlightWidth,is,Class).
+predicate(FlightWidth,SubClassOf,SIO_000042).
+predicate(FrequencySweep,is,Class).
+predicate(FrequencySweep,SubClassOf,MeasurementMethod).
+predicate(FullMaterialPropertyField,is,Class).
+predicate(FullMaterialPropertyField,SubClassOf,MaterialPropertyField).
+predicate(Geometry,is,Class).
+predicate(Geometry,SubClassOf,SIO_000506).
+predicate(GeometryEncoding,is,Class).
+predicate(GeometryEncoding,SubClassOf,SIO_000015).
+predicate(GraftDensity,is,Class).
+predicate(GraftDensity,SubClassOf,SIO_001406).
+predicate(Hardener,is,Class).
+predicate(Hardener,SubClassOf,Additive).
+predicate(Heating,is,Class).
+predicate(Heating,SubClassOf,SIO_000999,).
+predicate(Heating,SubClassOf,SIO_000008 some AmbientCondition,).
+predicate(Heating,SubClassOf,SIO_000008 some SIO_000417,).
+predicate(PATO_0000146,,is,SIO_000008 some <obo).
+predicate(PATO_0001025,is,SIO_000008 some <obo).
+predicate(HeatingRate,is,Class).
+predicate(HeatingZone,is,Class).
+predicate(HeatingZone,SubClassOf,SIO_000370).
+predicate(HeatingZoneNumber,is,Class).
+predicate(HeatingZoneNumber,SubClassOf,SIO_000366).
+predicate(HighPressureCapillaryRheometery,is,Class).
+predicate(HighPressureCapillaryRheometery,SubClassOf,Rheometery).
+predicate(HighShearMixing,is,Class).
+predicate(HighShearMixing,SubClassOf,Mixing,).
+predicate(HighShearMixing,SubClassOf,SIO_000230 some Additive).
+predicate(HotPressing,is,Class).
+predicate(HotPressing,SubClassOf,Molding).
+predicate(ISBN,is,Class).
+predicate(ISBN,SubClassOf,SIO_000731).
+predicate(ISSN,is,Class).
+predicate(ISSN,SubClassOf,SIO_000731).
+predicate(Impact,is,Class).
+predicate(ImpactToughness,is,Class).
+predicate(ImpactToughness,SubClassOf,Impact).
+predicate(In-SituPolymerization,is,Class).
+predicate(In-SituPolymerization,SubClassOf,SIO_000999).
+predicate(Index,is,Class).
+predicate(Index,SubClassOf,SIO_000015).
+predicate(Inert,is,Class).
+predicate(Inert,SubClassOf,AmbientCondition).
+predicate(InfiniteMetamaterial,is,Class).
+predicate(InfiniteMetamaterial,SubClassOf,Metamaterial).
+predicate(InjectionMolding,is,Class).
+predicate(InjectionMolding,SubClassOf,Molding).
+predicate(InnerBarrelDiameter,is,Class).
+predicate(PATO_0001334,is,<obo).
+predicate(Institution,is,Class).
+predicate(Institution,SubClassOf,SIO_000688).
+predicate(InterphaseThickness,is,Class).
+predicate(InterphaseThickness,SubClassOf,VolumetricProperty,).
+predicate(nm,is,SIO_000221 value unit/).
+predicate(IrreducibleBrillouinZone,is,Class).
+predicate(IrreducibleBrillouinZone,SubClassOf,ReciprocalSpaceGeometry).
+predicate(IrreducibleBrillouinZoneContour,is,Class).
+predicate(IrreducibleBrillouinZoneContour,SubClassOf,ReciprocalSpaceGeometry).
+predicate(Isotactic,is,Class).
+predicate(Isotactic,SubClassOf,Tacticity).
+predicate(Isotropic,is,Class).
+predicate(Isotropic,SubClassOf,Orientation).
+predicate(JIntegral,is,Class).
+predicate(JIntegral,SubClassOf,SIO_000368).
+predicate(KFactor,is,Class).
+predicate(KFactor,SubClassOf,SIO_001018).
+predicate(KinematicModel,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(KirchhoffLovePlate,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(LameConstantMu,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(LatticeBasis,is,Class).
+predicate(LatticeBasis,SubClassOf,SIO_001433).
+predicate(LatticeVectors,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(LinearExpansionCoefficient,is,Class).
+predicate(LinearExpansionCoefficient,SubClassOf,VolumetricProperty,).
+predicate(m-k,is,SIO_000221 value unit/).
+predicate(LinearPhysicsModel,is,Class).
+predicate(LinearPhysicsModel,SubClassOf,PhysicsModel).
+predicate(LinoleicAcid,is,Class).
+predicate(LinoleicAcid,SubClassOf,SIO_010011).
+predicate(Location,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Magnification,is,Class).
+predicate(Magnification,SubClassOf,SIO_000144).
+predicate(MassFraction,is,Class).
+predicate(MassFraction,SubClassOf,SIO_001088).
+predicate(MassSpringPhysicsModel,is,Class).
+predicate(MassSpringPhysicsModel,SubClassOf,PhysicsModel).
+predicate(MasterCurve,is,Class).
+predicate(MasterCurve,SubClassOf,SIO_000608).
+predicate(MaterialPropertyField,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Matrix,is,Class).
+predicate(Matrix,SubClassOf,SIO_000016).
+predicate(MatrixComponent,is,Class).
+predicate(MatrixComponent,SubClassOf,Component).
+predicate(MatrixComponentComposition,is,Class).
+predicate(MatrixComponentComposition,SubClassOf,Composition).
+predicate(MeasurementMethod,is,Class).
+predicate(MeasurementMethod,SubClassOf,SIO_001054).
+predicate(MechanicalMixing,is,Class).
+predicate(MechanicalMixing,SubClassOf,Mixing,).
+predicate(MechanicalMixing,SubClassOf,SIO_000230 some Additive).
+predicate(MechanicalProperty,is,Class).
+predicate(MeltMixing,is,Class).
+predicate(MeltMixing,SubClassOf,Mixing,).
+predicate(MeltMixing,SubClassOf,SIO_000230 some Additive).
+predicate(MeltProcessing,is,Class).
+predicate(MeltProcessing,SubClassOf,SIO_000999).
+predicate(MeltTemperature,is,Class).
+predicate(Metamaterial,is,Class).
+predicate(Metamaterial,SubClassOf,SIO_000004).
+predicate(MindlinReissnerPlate,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Mixer,is,Class).
+predicate(Mixer,SubClassOf,SIO_000956).
+predicate(Mixing,is,Class).
+predicate(Mixing,SubClassOf,SIO_000999,).
+predicate(Mixing,SubClassOf,SIO_000008 some RotationalFrequency,).
+predicate(Mixing,SubClassOf,SIO_000008 some SIO_000417,).
+predicate(PATO_0000146,is,SIO_000008 some <obo).
+predicate(MixingMethod,is,Class).
+predicate(MixingMethod,SubClassOf,SIO_000999).
+predicate(Molding,is,Class).
+predicate(Molding,SubClassOf,SIO_000999,).
+predicate(Molding,SubClassOf,SIO_000008 some AmbientCondition,).
+predicate(Molding,SubClassOf,SIO_000008 some SIO_000417,).
+predicate(PATO_0000146,,is,SIO_000008 some <obo).
+predicate(PATO_0001025,is,SIO_000008 some <obo).
+predicate(MolecularDynamicsPhysicsModel,is,Class).
+predicate(MolecularDynamicsPhysicsModel,SubClassOf,PhysicsModel).
+predicate(MolecularWeight,is,Class).
+predicate(MolecularWeight,SubClassOf,SIO_000279).
+predicate(MolecularWeight_Mn,is,Class).
+predicate(MolecularWeight_Mn,SubClassOf,MolecularWeight).
+predicate(MolecularWeight_Mw,is,Class).
+predicate(MolecularWeight_Mw,SubClassOf,MolecularWeight).
+predicate(MolecularWeight_zAverage,is,Class).
+predicate(MolecularWeight_zAverage,SubClassOf,MolecularWeight).
+predicate(Nanocomposite,is,Class).
+predicate(Nanomaterial,is,Class).
+predicate(Nanomaterial,SubClassOf,SIO_000004).
+predicate(NanomaterialChart,is,Class).
+predicate(NanomaterialChart,SubClassOf,SIO_000904).
+predicate(NonAgglomerateFraction,is,Class).
+predicate(NonAgglomerateFraction,SubClassOf,SIO_001088).
+predicate(NormalizedFrequency,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(OleicAcid,is,Class).
+predicate(OleicAcid,SubClassOf,SIO_010011).
+predicate(OpticalMicroscopy,is,Class).
+predicate(OpticalMicroscopy,SubClassOf,SIO_001054,).
+predicate(OpticalMicroscopy,SubClassOf,generated some MechanicalProperty,).
+predicate(OpticalMicroscopy,SubClassOf,generated some ViscoelasticProperty).
+predicate(Orientation,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Other,is,Class).
+predicate(Other,SubClassOf,SIO_000999).
+predicate(OtherProcessing,is,Class).
+predicate(OtherProcessing,SubClassOf,SIO_000999).
+predicate(Other_Processing,is,Class).
+predicate(Other_Processing,SubClassOf,SIO_000999).
+predicate(Output,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(ParallelepipedGeometry,is,Class).
+predicate(ParallelepipedGeometry,SubClassOf,3DGeometry).
+predicate(ParametricGeometry,is,Class).
+predicate(ParametricGeometry,SubClassOf,Geometry).
+predicate(ParametricMaterialPropertyField,is,Class).
+predicate(ParametricMaterialPropertyField,SubClassOf,MaterialPropertyField).
+predicate(Particle,is,Class).
+predicate(Particle,SubClassOf,Nanomaterial).
+predicate(ParticleSurfaceTreatmentComposition,is,Class).
+predicate(ParticleSurfaceTreatmentComposition,SubClassOf,Composition).
+predicate(PhaseVelocity,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(PhononicDispersionRelation,is,Class).
+predicate(PhononicDispersionRelation,SubClassOf,DispersionRelation).
+predicate(PhotonicDispersionRelation,is,Class).
+predicate(PhotonicDispersionRelation,SubClassOf,DispersionRelation).
+predicate(PhysicsModel,is,Class).
+predicate(PhysicsModel,SubClassOf,Continuous).
+predicate(Pixel,is,Class).
+predicate(Pixel,SubClassOf,SIO_000015).
+predicate(PixelMaterialPropertyField,is,Class).
+predicate(PixelMaterialPropertyField,SubClassOf,MaterialPropertyField).
+predicate(Plastic,is,Class).
+predicate(Plastic,SubClassOf,SIO_000314).
+predicate(PlateRheometery,is,Class).
+predicate(PlateRheometery,SubClassOf,Rheometery).
+predicate(PoissonRatio,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Polydispersity,is,Class).
+predicate(Polydispersity,SubClassOf,SIO_000037).
+predicate(PolymerMixture,is,Class).
+predicate(PolymerMixture,SubClassOf,SIO_000314).
+predicate(PolymerNanocomposite,is,Class).
+predicate(PolymerNanocomposite,SubClassOf,Nanocomposite).
+predicate(Porosity,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(PreCrackingProcess,is,Class).
+predicate(PreCrackingProcess,SubClassOf,SIO_000999).
+predicate(PressureAtDie,is,Class).
+predicate(PATO_0001025,is,<obo).
+predicate(Profile,is,Class).
+predicate(Profile,SubClassOf,SIO_000464).
+predicate(Property,is,Class).
+predicate(Property,SubClassOf,SIO_000614).
+predicate(PubChemReference,is,Class).
+predicate(PubChemReference,SubClassOf,SIO_000176).
+predicate(PublicationYear,is,Class).
+predicate(PublicationYear,SubClassOf,SIO_000428).
+predicate(PulsedElectroAcoustic,is,Class).
+predicate(PulsedElectroAcoustic,SubClassOf,SIO_001054,).
+predicate(PulsedElectroAcoustic,SubClassOf,generated some ElectricalProperty).
+predicate(RamanSpectroscopy,is,Class).
+predicate(RamanSpectroscopy,SubClassOf,SIO_001054,).
+predicate(RamanSpectroscopy,SubClassOf,generated some Spectroscopy).
+predicate(ReciprocalSpaceGeometry,is,Class).
+predicate(ReciprocalSpaceGeometry,SubClassOf,FirstBrillouinZone).
+predicate(RectangularGeometry,is,Class).
+predicate(RepresentativeVolumeElementGeometry,is,Class).
+predicate(RepresentativeVolumeElementGeometry,SubClassOf,Geometry).
+predicate(ResidenceTime,is,Class).
+predicate(ResidenceTime,SubClassOf,SIO_000417).
+predicate(ReviewArticle,is,Class).
+predicate(ReviewArticle,SubClassOf,AcademicArticle).
+predicate(Rheometery,is,Class).
+predicate(Rheometery,SubClassOf,SIO_001054,).
+predicate(Rheometery,SubClassOf,generated some ViscoelasticProperty,).
+predicate(Rheometery,SubClassOf,used some CapillarySize).
+predicate(RollMilling,is,Class).
+predicate(RollMilling,SubClassOf,Mixing,).
+predicate(RollMilling,SubClassOf,SIO_000230 some Additive).
+predicate(RotationMode,is,Class).
+predicate(RotationSpeed,is,Class).
+predicate(RotationSpeed,SubClassOf,SIO_001368).
+predicate(RotationalFrequency,is,Class).
+predicate(RotationalFrequency,SubClassOf,SIO_001367,).
+predicate(materialsmine-revolutions-per-minute,is,SIO_000221 value unit/).
+predicate(RotationalMolding,is,Class).
+predicate(RotationalMolding,SubClassOf,Molding).
+predicate(SampleShape,is,Class).
+predicate(SampleShape,SubClassOf,SIO_000055).
+predicate(ScanningElectronMicroscopy,is,Class).
+predicate(ScanningElectronMicroscopy,SubClassOf,SIO_001054,).
+predicate(ScanningElectronMicroscopy,SubClassOf,generated some ElectricalProperty,).
+predicate(ScanningElectronMicroscopy,SubClassOf,used some AcceleratingVoltage,).
+predicate(ScanningElectronMicroscopy,SubClassOf,used some EmissionCurrent,).
+predicate(ScanningElectronMicroscopy,SubClassOf,used some ExposureTime,).
+predicate(ScanningElectronMicroscopy,SubClassOf,used some Magnification,).
+predicate(ScanningElectronMicroscopy,SubClassOf,used some WorkingDistance).
+predicate(ScrewChannelWidth,is,Class).
+predicate(ScrewDiameter,is,Class).
+predicate(PATO_0001334,is,<obo).
+predicate(ScrewLead,is,Class).
+predicate(ScrewLength,is,Class).
+predicate(Shell,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Simulation,is,Class).
+predicate(SingleScrew,is,Class).
+predicate(SingleScrew,SubClassOf,Extruder).
+predicate(SoftwareExecution,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SolidContinuumPhysicsModel,is,Class).
+predicate(SolidContinuumPhysicsModel,SubClassOf,PhysicsModel).
+predicate(SolutionProcessing,is,Class).
+predicate(SolutionProcessing,SubClassOf,SIO_000999).
+predicate(Solvent,is,Class).
+predicate(SolventName,is,Class).
+predicate(SolventName,SubClassOf,SIO_000116).
+predicate(Sorbitol,is,Class).
+predicate(Sorbitol,SubClassOf,SIO_010072).
+predicate(SpecificSurfaceArea,is,Class).
+predicate(SpecificSurfaceArea,SubClassOf,SIO_001407).
+predicate(Spectroscopy,is,Class).
+predicate(SquareGeometry,is,Class).
+predicate(SquareGeometry,SubClassOf,RectangularGeometry).
+predicate(StearicAcid,is,Class).
+predicate(StearicAcid,SubClassOf,SIO_010011).
+predicate(Stirring,is,Class).
+predicate(Stirring,SubClassOf,Mixing,).
+predicate(Stirring,SubClassOf,SIO_000230 some Solvent).
+predicate(StrainRate,is,Class).
+predicate(StrainRate,SubClassOf,Condition,).
+predicate(StrainRate,SubClassOf,SIO_000221 value unit/1-s).
+predicate(StrainSweep,is,Class).
+predicate(StrainSweep,SubClassOf,MeasurementMethod).
+predicate(StressRelaxation,is,Class).
+predicate(StressRelaxation,SubClassOf,SIO_001365).
+predicate(StressTensor,is,Class).
+predicate(StressTensor,SubClassOf,SIO_001429).
+predicate(SurfaceTreatment,is,Class).
+predicate(SurfaceTreatment,SubClassOf,SIO_000016).
+predicate(Symmetry,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Tacticity,is,Class).
+predicate(Tacticity,SubClassOf,SIO_001011).
+predicate(TangoBlack,is,Class).
+predicate(TangoBlack,SubClassOf,SIO_000004).
+predicate(TechnicalComment,is,Class).
+predicate(TechnicalComment,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(TemperatureSweep,is,Class).
+predicate(TemperatureSweep,SubClassOf,DMA_Mode).
+predicate(TensileCreep,is,Class).
+predicate(TensileCreepCompliance,is,Class).
+predicate(TensileCreepCompliance,SubClassOf,TensileCreep,).
+predicate(TensileCreepCompliance,SubClassOf,SIO_000221 value unit/1-pa).
+predicate(TensileCreepRecovery,is,Class).
+predicate(TensileCreepRecovery,SubClassOf,TensileCreep).
+predicate(TensileCreepRuptureStrength,is,Class).
+predicate(TensileCreepRuptureStrength,SubClassOf,TensileCreep,).
+predicate(n,is,SIO_000221 value unit/).
+predicate(TensileCreepRuptureTime,is,Class).
+predicate(TensileCreepRuptureTime,SubClassOf,TensileCreep).
+predicate(TensileCreepStrain,is,Class).
+predicate(TensileCreepStrain,SubClassOf,TensileCreep).
+predicate(ThermalProperty,is,Class).
+predicate(ThermogravimetricAnalysis,is,Class).
+predicate(ThermogravimetricAnalysis,SubClassOf,SIO_001054,).
+predicate(ThermogravimetricAnalysis,SubClassOf,generated some ThermalProperty).
+predicate(Thermoplastic,is,Class).
+predicate(Thermoplastic,SubClassOf,Plastic).
+predicate(Thermoset,is,Class).
+predicate(Thermoset,SubClassOf,Plastic).
+predicate(Throughput,is,Class).
+predicate(TimoshenkoBeam,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Torque,is,Class).
+predicate(TradeName,is,Class).
+predicate(TradeName,SubClassOf,SIO_000116).
+predicate(TransmissionElectronMicroscopy,is,Class).
+predicate(TransmissionElectronMicroscopy,SubClassOf,SIO_001054,).
+predicate(TransmissionElectronMicroscopy,SubClassOf,generated some ElectricalProperty,).
+predicate(TransmissionElectronMicroscopy,SubClassOf,used some AcceleratingVoltage,).
+predicate(TransmissionElectronMicroscopy,SubClassOf,used some EmissionCurrent,).
+predicate(TransmissionElectronMicroscopy,SubClassOf,used some ExposureTime,).
+predicate(TransmissionElectronMicroscopy,SubClassOf,used some Magnification,).
+predicate(TransmissionElectronMicroscopy,SubClassOf,used some WorkingDistance).
+predicate(TwinScrew,is,Class).
+predicate(TwinScrew,SubClassOf,Extruder).
+predicate(Ultra-sonication,is,Class).
+predicate(Ultra-sonication,SubClassOf,Mixing,).
+predicate(Ultra-sonication,SubClassOf,SIO_000230 some Additive).
+predicate(UnitCell,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(UnitCellGeometry,is,Class).
+predicate(UnitCellGeometry,SubClassOf,Geometry).
+predicate(UserDefinedMaterialPropertyField,is,Class).
+predicate(UserDefinedMaterialPropertyField,SubClassOf,MaterialPropertyField).
+predicate(Vacuum,is,Class).
+predicate(Vacuum,SubClassOf,AmbientCondition).
+predicate(VacuumMolding,is,Class).
+predicate(VacuumMolding,SubClassOf,Molding).
+predicate(VeroWhite,is,Class).
+predicate(VeroWhite,SubClassOf,SIO_000004).
+predicate(ViscoelasticMaterialPhysicsModel,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(ViscoelasticProperty,is,Class).
+predicate(Viscosity,is,Class).
+predicate(Viscosity,SubClassOf,SIO_000048).
+predicate(VoidFraction,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Voltage,is,Class).
+predicate(VolumeExpansionCoefficient,is,Class).
+predicate(VolumeExpansionCoefficient,SubClassOf,VolumetricProperty,).
+predicate(m-3-k,is,SIO_000221 value unit/).
+predicate(VolumeFraction,is,Class).
+predicate(VolumeFraction,SubClassOf,SIO_001088).
+predicate(VolumetricProperty,is,Class).
+predicate(VolumetricProperty,SubClassOf,SIO_000048).
+predicate(Voxel,is,Class).
+predicate(Voxel,SubClassOf,SIO_000015).
+predicate(WaterAbsorption,is,Class).
+predicate(WaterAbsorption,SubClassOf,VolumetricProperty).
+predicate(WeibullParameter,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(WeightLoss,is,Class).
+predicate(WeightLoss,SubClassOf,VolumetricProperty).
+predicate(WorkingDistance,is,Class).
+predicate(WorkingDistance,SubClassOf,SIO_000144).
+predicate(XRayDiffractionAndScattering,is,Class).
+predicate(XRayDiffractionAndScattering,SubClassOf,SIO_001054,).
+predicate(XRayDiffractionAndScattering,SubClassOf,generated some Spectroscopy).
+predicate(XRayPhotoelectronSpectroscopy,is,Class).
+predicate(XRayPhotoelectronSpectroscopy,SubClassOf,SIO_001054,).
+predicate(XRayPhotoelectronSpectroscopy,SubClassOf,generated some Spectroscopy).
+predicate(YoungModulus,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(purl.org/NET/c4dm/event.#,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(AcademicArticle,is,Class).
+predicate(AcademicArticle,SubClassOf,Article).
+predicate(Article,is,Class).
+predicate(Article,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(AudioVisualDocument,is,Class).
+predicate(Bill,is,Class).
+predicate(Bill,SubClassOf,Legislation).
+predicate(Book,is,Class).
+predicate(Book,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(BookSection,is,Class).
+predicate(BookSection,SubClassOf,DocumentPart).
+predicate(Brief,is,Class).
+predicate(Brief,SubClassOf,LegalCaseDocument).
+predicate(Chapter,is,Class).
+predicate(Chapter,SubClassOf,BookSection).
+predicate(Code,is,Class).
+predicate(Code,SubClassOf,Periodical,).
+predicate(Code,SubClassOf,hasPart only Legislation,).
+predicate(Thing,is,hasPart min 1 www.w3.org/2002/07/#).
+predicate(CollectedDocument,is,Class).
+predicate(Collection,is,Class).
+predicate(Conference,is,Class).
+predicate(Event,is,purl.org/NET/c4dm/event.#).
+predicate(CourtReporter,is,Class).
+predicate(CourtReporter,SubClassOf,Periodical).
+predicate(Document,is,Class).
+predicate(DocumentPart,is,Class).
+predicate(DocumentPart,SubClassOf,Document,).
+predicate(Document,,is,ns.com/foaf/0.1/).
+predicate(Thing,is,isPartOf max 1 www.w3.org/2002/07/#).
+predicate(EditedBook,is,Class).
+predicate(EditedBook,SubClassOf,CollectedDocument).
+predicate(Email,is,Class).
+predicate(Email,SubClassOf,PersonalCommunicationDocument).
+predicate(Excerpt,is,Class).
+predicate(Excerpt,SubClassOf,DocumentPart).
+predicate(Film,is,Class).
+predicate(Film,SubClassOf,AudioVisualDocument).
+predicate(Hearing,is,Class).
+predicate(Event,is,purl.org/NET/c4dm/event.#).
+predicate(Image,is,Class).
+predicate(Interview,is,Class).
+predicate(Event,is,purl.org/NET/c4dm/event.#).
+predicate(Issue,is,Class).
+predicate(Issue,SubClassOf,CollectedDocument,).
+predicate(Issue,SubClassOf,hasPart only Article,).
+predicate(Thing,is,hasPart min 1 www.w3.org/2002/07/#).
+predicate(Journal,is,Class).
+predicate(Journal,SubClassOf,Periodical,).
+predicate(Journal,SubClassOf,hasPart only Issue,).
+predicate(Thing,is,hasPart min 1 www.w3.org/2002/07/#).
+predicate(LegalCaseDocument,is,Class).
+predicate(LegalCaseDocument,SubClassOf,LegalDocument).
+predicate(LegalDecision,is,Class).
+predicate(LegalDecision,SubClassOf,LegalCaseDocument).
+predicate(LegalDocument,is,Class).
+predicate(LegalDocument,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(Legislation,is,Class).
+predicate(Legislation,SubClassOf,LegalDocument).
+predicate(Letter,is,Class).
+predicate(Letter,SubClassOf,PersonalCommunicationDocument).
+predicate(Magazine,is,Class).
+predicate(Magazine,SubClassOf,Periodical,).
+predicate(Magazine,SubClassOf,hasPart only Issue,).
+predicate(Thing,is,hasPart min 1 www.w3.org/2002/07/#).
+predicate(Manual,is,Class).
+predicate(Manual,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(Map,is,Class).
+predicate(Map,SubClassOf,Image,).
+predicate(Image,is,ns.com/foaf/0.1/).
+predicate(MultiVolumeBook,is,Class).
+predicate(MultiVolumeBook,SubClassOf,Collection,).
+predicate(MultiVolumeBook,SubClassOf,hasPart only Book).
+predicate(Newspaper,is,Class).
+predicate(Newspaper,SubClassOf,Periodical,).
+predicate(Newspaper,SubClassOf,hasPart only Issue,).
+predicate(Thing,is,hasPart min 1 www.w3.org/2002/07/#).
+predicate(Note,is,Class).
+predicate(Note,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(Patent,is,Class).
+predicate(Patent,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(Performance,is,Class).
+predicate(Event,is,purl.org/NET/c4dm/event.#).
+predicate(Periodical,is,Class).
+predicate(Periodical,SubClassOf,Collection,).
+predicate(Periodical,SubClassOf,hasPart only Issue,).
+predicate(Thing,is,hasPart min 1 www.w3.org/2002/07/#).
+predicate(PersonalCommunication,is,Class).
+predicate(Event,is,purl.org/NET/c4dm/event.#).
+predicate(PersonalCommunicationDocument,is,Class).
+predicate(PersonalCommunicationDocument,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(Proceedings,is,Class).
+predicate(Proceedings,SubClassOf,Book).
+predicate(Quote,is,Class).
+predicate(Quote,SubClassOf,Excerpt).
+predicate(Slide,is,Class).
+predicate(Slide,SubClassOf,DocumentPart).
+predicate(Slideshow,is,Class).
+predicate(Slideshow,SubClassOf,Document,).
+predicate(Document,,is,ns.com/foaf/0.1/).
+predicate(Document,,is,hasPart only Slide).
+predicate(Specification,is,Class).
+predicate(Specification,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(Standard,is,Class).
+predicate(Standard,SubClassOf,Specification).
+predicate(Statute,is,Class).
+predicate(Statute,SubClassOf,Legislation).
+predicate(Thesis,is,Class).
+predicate(Thesis,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(ThesisDegree,is,Class).
+predicate(Webpage,is,Class).
+predicate(Webpage,SubClassOf,Document,).
+predicate(Document,is,ns.com/foaf/0.1/).
+predicate(Website,is,Class).
+predicate(Website,SubClassOf,Collection,).
+predicate(Website,SubClassOf,hasPart only Webpage,).
+predicate(Thing,is,hasPart min 1 www.w3.org/2002/07/#).
+predicate(Workshop,is,Class).
+predicate(Event,is,purl.org/NET/c4dm/event.#).
+predicate(SIO_000004,is,Class).
+predicate(SIO_000004,SubClassOf,SIO_000776).
+predicate(SIO_000006,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000015,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000016,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000017,is,Class).
+predicate(SIO_000037,is,Class).
+predicate(SIO_000042,is,Class).
+predicate(SIO_000048,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000052,is,Class).
+predicate(SIO_000055,is,Class).
+predicate(SIO_000056,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000078,is,Class).
+predicate(SIO_000087,is,Class).
+predicate(SIO_000087,SubClassOf,SIO_000148).
+predicate(SIO_000104,is,Class).
+predicate(SIO_000104,SubClassOf,SIO_000078).
+predicate(SIO_000107,is,Class).
+predicate(SIO_000107,SubClassOf,SIO_000111).
+predicate(SIO_000111,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000116,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000133,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000136,is,Class).
+predicate(SIO_000136,SubClassOf,SIO_000078).
+predicate(SIO_000144,is,Class).
+predicate(SIO_000147,is,Class).
+predicate(SIO_000147,SubClassOf,SIO_000133).
+predicate(SIO_000148,is,Class).
+predicate(SIO_000159,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000171,is,Class).
+predicate(SIO_000174,is,Class).
+predicate(SIO_000174,SubClassOf,SIO_000171).
+predicate(SIO_000176,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000179,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000185,is,Class).
+predicate(SIO_000185,SubClassOf,SIO_000179).
+predicate(SIO_000257,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000279,is,Class).
+predicate(SIO_000308,is,Class).
+predicate(SIO_000308,SubClassOf,SIO_000794).
+predicate(SIO_000309,is,Class).
+predicate(SIO_000309,SubClassOf,SIO_000794).
+predicate(SIO_000314,is,Class).
+predicate(SIO_000314,SubClassOf,SIO_011125).
+predicate(SIO_000366,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000368,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000370,is,Class).
+predicate(SIO_000391,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000417,is,Class).
+predicate(SIO_000417,SubClassOf,SIO_000391).
+predicate(SIO_000418,is,Class).
+predicate(SIO_000428,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000464,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000506,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000608,is,Class).
+predicate(SIO_000613,is,Class).
+predicate(SIO_000613,SubClassOf,SIO_000788).
+predicate(SIO_000614,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000688,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000731,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000776,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000788,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000794,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000811,is,Class).
+predicate(SIO_000811,SubClassOf,SIO_000731).
+predicate(SIO_000884,is,Class).
+predicate(SIO_000885,is,Class).
+predicate(SIO_000885,SubClassOf,SIO_000884).
+predicate(SIO_000886,is,Class).
+predicate(SIO_000886,SubClassOf,SIO_000884).
+predicate(SIO_000904,is,Class).
+predicate(SIO_000956,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_000999,is,Class).
+predicate(SIO_000999,SubClassOf,SIO_000006).
+predicate(SIO_001011,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_001018,is,Class).
+predicate(SIO_001018,SubClassOf,SIO_000257).
+predicate(SIO_001054,is,Class).
+predicate(SIO_001088,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_001169,is,Class).
+predicate(SIO_001169,SubClassOf,SIO_000159).
+predicate(SIO_001365,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_001367,is,Class).
+predicate(SIO_001367,SubClassOf,SIO_001365).
+predicate(SIO_001368,is,Class).
+predicate(SIO_001406,is,Class).
+predicate(SIO_001406,SubClassOf,SIO_000048).
+predicate(SIO_001407,is,Class).
+predicate(SIO_001408,is,Class).
+predicate(SIO_001408,SubClassOf,SIO_001018).
+predicate(SIO_001429,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_001433,is,Class).
+predicate(SIO_010004,is,Class).
+predicate(SIO_010011,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_010043,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_010046,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_010072,is,Class).
+predicate(SIO_011125,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(SIO_011126,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Nanopublication,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(Agent,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(unit/1-pa,is,Individual).
+predicate(unit/1-s,is,Individual).
+predicate(unit/,is,Individual).
+predicate(unit/,is,Individual).
+predicate(unit/,is,Individual).
+predicate(unit/,is,Individual).
+predicate(unit/,is,Individual).
+predicate(unit/,is,Individual).
+predicate(unit/,is,Individual).
+predicate(unit/,is,Individual).
+predicate(nanopublication,is,Individual).
+predicate(nanopublication,Types,Nanopublication).

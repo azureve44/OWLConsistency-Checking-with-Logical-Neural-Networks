@@ -1,0 +1,171 @@
+is(www.w3.org/2000/01/-schema#,Datatype):1.0
+is(boolean,Datatype):1.0
+is(double,Datatype):1.0
+is(hexBinary,Datatype):1.0
+is(long,Datatype):1.0
+is(normalizedString,Datatype):1.0
+is(string,Datatype):1.0
+is(hasCodomain,ObjectProperty):1.0
+is(hasDomain,ObjectProperty):1.0
+is(hasRecordCopyCreated,ObjectProperty):1.0
+Domain(hasRecordCopyCreated,Thing):1.0
+InverseOf(hasRecordCopyCreated,isRecordCopyCreatedIn):1.0
+is(hasRecordCreated,ObjectProperty):1.0
+Domain(hasRecordCreated,Thing):1.0
+InverseOf(hasRecordCreated,isRecordCreatedIn):1.0
+is(hasRecordCreator,ObjectProperty):1.0
+Domain(hasRecordCreator,Thing):1.0
+InverseOf(hasRecordCreator,isRecordCreatorIn):1.0
+is(hasRecordLogicallyDeleted,ObjectProperty):1.0
+Domain(hasRecordLogicallyDeleted,Thing):1.0
+InverseOf(hasRecordLogicallyDeleted,isRecordLogicallyDeletedIn):1.0
+is(hasWhyDeleted,ObjectProperty):1.0
+Domain(hasWhyDeleted,Thing):1.0
+InverseOf(hasWhyDeleted,isWhyDeletedIn):1.0
+is(isRecordCopyCreatedIn,ObjectProperty):1.0
+InverseOf(isRecordCopyCreatedIn,hasRecordCopyCreated):1.0
+is(isRecordCreatedIn,ObjectProperty):1.0
+InverseOf(isRecordCreatedIn,hasRecordCreated):1.0
+is(isRecordCreatorIn,ObjectProperty):1.0
+InverseOf(isRecordCreatorIn,hasRecordCreator):1.0
+is(isRecordLogicallyDeletedIn,ObjectProperty):1.0
+InverseOf(isRecordLogicallyDeletedIn,hasRecordLogicallyDeleted):1.0
+is(isWhyDeletedIn,ObjectProperty):1.0
+InverseOf(isWhyDeletedIn,hasWhyDeleted):1.0
+is(hasContent,DataProperty):1.0
+is(hasId,DataProperty):1.0
+Domain(hasId,Thing):1.0
+is(AbstractObject,Class):1.0
+SubClassOf(AbstractObject,Thing):1.0
+DisjointWith(AbstractObject,PossibleIndividual):1.0
+is(Activity,Class):1.0
+SubClassOf(Activity,PossibleIndividual):1.0
+is(ActualIndividual,Class):1.0
+SubClassOf(ActualIndividual,PossibleIndividual):1.0
+is(ArrangedIndividual,Class):1.0
+SubClassOf(ArrangedIndividual,PossibleIndividual):1.0
+is(Beginning,Class):1.0
+SubClassOf(Beginning,TemporalBounding):1.0
+DisjointWith(Beginning,Ending):1.0
+is(ClassOfExpressInformationRepresentation,Class):1.0
+is(ClassOfInformationRepresentation,Class):1.0
+is(ClassOfIsomorphicFunctionalMapping,Class):1.0
+is(ClassOfScaleConversion,Class):1.0
+DisjointWith(ClassOfScaleConversion,Scale):1.0
+is(Ending,Class):1.0
+SubClassOf(Ending,TemporalBounding):1.0
+DisjointWith(Ending,Beginning):1.0
+is(Event,Class):1.0
+SubClassOf(Event,PossibleIndividual):1.0
+is(ExpressBinary,Class):1.0
+SubClassOf(ExpressBinary,ClassOfExpressInformationRepresentation,):1.0
+SubClassOf(ExpressBinary,hasContent only hexBinary,):1.0
+is(Literal,hasContent exactly 1 www.w3.org/2000/01/-schema#):1.0
+DisjointWith(Literal,ExpressString):1.0
+DisjointWith(Literal,ExpressReal):1.0
+DisjointWith(Literal,ExpressLogical):1.0
+DisjointWith(Literal,ExpressInteger):1.0
+DisjointWith(Literal,ExpressBoolean):1.0
+is(ExpressBoolean,Class):1.0
+SubClassOf(ExpressBoolean,ClassOfExpressInformationRepresentation,):1.0
+SubClassOf(ExpressBoolean,hasContent only boolean,):1.0
+is(Literal,hasContent exactly 1 www.w3.org/2000/01/-schema#):1.0
+DisjointWith(Literal,ExpressString):1.0
+DisjointWith(Literal,ExpressReal):1.0
+DisjointWith(Literal,ExpressLogical):1.0
+DisjointWith(Literal,ExpressInteger):1.0
+DisjointWith(Literal,ExpressBinary):1.0
+is(ExpressInteger,Class):1.0
+SubClassOf(ExpressInteger,ClassOfExpressInformationRepresentation,):1.0
+SubClassOf(ExpressInteger,hasContent only long,):1.0
+is(Literal,hasContent exactly 1 www.w3.org/2000/01/-schema#):1.0
+DisjointWith(Literal,ExpressString):1.0
+DisjointWith(Literal,ExpressReal):1.0
+DisjointWith(Literal,ExpressLogical):1.0
+DisjointWith(Literal,ExpressBoolean):1.0
+DisjointWith(Literal,ExpressBinary):1.0
+is(ExpressLogical,Class):1.0
+SubClassOf(ExpressLogical,ClassOfExpressInformationRepresentation,):1.0
+SubClassOf(ExpressLogical,hasContent only {"false" , "true" , "unknown"},):1.0
+is(Literal,hasContent exactly 1 www.w3.org/2000/01/-schema#):1.0
+DisjointWith(Literal,ExpressString):1.0
+DisjointWith(Literal,ExpressReal):1.0
+DisjointWith(Literal,ExpressInteger):1.0
+DisjointWith(Literal,ExpressBoolean):1.0
+DisjointWith(Literal,ExpressBinary):1.0
+is(ExpressReal,Class):1.0
+SubClassOf(ExpressReal,ClassOfExpressInformationRepresentation,):1.0
+SubClassOf(ExpressReal,hasContent only double,):1.0
+is(Literal,hasContent exactly 1 www.w3.org/2000/01/-schema#):1.0
+DisjointWith(Literal,ExpressString):1.0
+DisjointWith(Literal,ExpressLogical):1.0
+DisjointWith(Literal,ExpressInteger):1.0
+DisjointWith(Literal,ExpressBoolean):1.0
+DisjointWith(Literal,ExpressBinary):1.0
+is(ExpressString,Class):1.0
+SubClassOf(ExpressString,ClassOfExpressInformationRepresentation,):1.0
+SubClassOf(ExpressString,hasContent only normalizedString,):1.0
+is(Literal,hasContent exactly 1 www.w3.org/2000/01/-schema#):1.0
+DisjointWith(Literal,ExpressReal):1.0
+DisjointWith(Literal,ExpressLogical):1.0
+DisjointWith(Literal,ExpressInteger):1.0
+DisjointWith(Literal,ExpressBoolean):1.0
+DisjointWith(Literal,ExpressBinary):1.0
+is(FunctionalPhysicalObject,Class):1.0
+SubClassOf(FunctionalPhysicalObject,PhysicalObject):1.0
+is(LeftNamespace,Class):1.0
+DisjointWith(LeftNamespace,RightNamespace):1.0
+is(MaterializedPhysicalObject,Class):1.0
+SubClassOf(MaterializedPhysicalObject,PhysicalObject):1.0
+is(MultidimensionalScale,Class):1.0
+SubClassOf(MultidimensionalScale,Scale):1.0
+is(Namespace,Class):1.0
+is(NumberSpace,Class):1.0
+is(PeriodInTime,Class):1.0
+SubClassOf(PeriodInTime,PossibleIndividual):1.0
+is(PhysicalObject,Class):1.0
+SubClassOf(PhysicalObject,PossibleIndividual):1.0
+is(PointInTime,Class):1.0
+SubClassOf(PointInTime,Event):1.0
+is(PossibleIndividual,Class):1.0
+SubClassOf(PossibleIndividual,Thing):1.0
+DisjointWith(PossibleIndividual,AbstractObject):1.0
+is(PropertyRange,Class):1.0
+SubClassOf(PropertyRange,PropertySpace):1.0
+is(PropertySpace,Class):1.0
+is(RepresentationOfGregorianDateAndUtcTime,Class):1.0
+is(RightNamespace,Class):1.0
+SubClassOf(RightNamespace,Namespace):1.0
+DisjointWith(RightNamespace,LeftNamespace):1.0
+is(Scale,Class):1.0
+SubClassOf(Scale,ClassOfIsomorphicFunctionalMapping,):1.0
+SubClassOf(Scale,hasCodomain only NumberSpace,):1.0
+SubClassOf(Scale,hasDomain only PropertySpace):1.0
+DisjointWith(Scale,ClassOfScaleConversion):1.0
+is(SinglePropertyDimension,Class):1.0
+SubClassOf(SinglePropertyDimension,PropertySpace):1.0
+is(SpatialLocation,Class):1.0
+SubClassOf(SpatialLocation,PhysicalObject):1.0
+is(Stream,Class):1.0
+SubClassOf(Stream,PhysicalObject):1.0
+is(TemporalBounding,Class):1.0
+is(Thing,Class):1.0
+EquivalentTo(Thing,AbstractObject or PossibleIndividual):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasRecordCopyCreated only RepresentationOfGregorianDateAndUtcTime,):1.0
+is(Thing,,hasRecordCreated only RepresentationOfGregorianDateAndUtcTime,):1.0
+is(Thing,,hasRecordCreator only PossibleIndividual,):1.0
+is(Thing,,hasRecordLogicallyDeleted only RepresentationOfGregorianDateAndUtcTime,):1.0
+is(Thing,,hasWhyDeleted only ClassOfInformationRepresentation,):1.0
+is(Thing,,hasRecordCopyCreated max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasRecordCreated max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasRecordCreator max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasRecordLogicallyDeleted max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasWhyDeleted max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasId only normalizedString,):1.0
+is(Literal,hasId exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(WholeLifeIndividual,Class):1.0
+SubClassOf(WholeLifeIndividual,PossibleIndividual):1.0
+is(www.co-ode.org/ontologies/list.#,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(www.w3.org/2002/07/#,Class):1.0

@@ -1,0 +1,182 @@
+is(www.w3.org/2000/01/-schema#,Datatype):1.0
+is(string,Datatype):1.0
+is(MD_BrowseGraphic.imageConstraints,ObjectProperty):1.0
+Domain(MD_BrowseGraphic.imageConstraints,MD_BrowseGraphic):1.0
+Range(MD_BrowseGraphic.imageConstraints,MD_Constraints):1.0
+is(MD_BrowseGraphic.linkage,ObjectProperty):1.0
+Domain(MD_BrowseGraphic.linkage,MD_BrowseGraphic):1.0
+Range(MD_BrowseGraphic.linkage,CI_OnlineResource):1.0
+is(MD_Identifier.authority,ObjectProperty):1.0
+Domain(MD_Identifier.authority,MD_Identifier):1.0
+Range(MD_Identifier.authority,CI_Citation):1.0
+is(MD_Scope.extent,ObjectProperty):1.0
+Domain(MD_Scope.extent,MD_Scope):1.0
+Range(MD_Scope.extent,EX_Extent):1.0
+is(MD_Scope.level,ObjectProperty):1.0
+Domain(MD_Scope.level,MD_Scope):1.0
+Range(MD_Scope.level,MD_ScopeCode):1.0
+is(MD_Scope.levelDescription,ObjectProperty):1.0
+Domain(MD_Scope.levelDescription,MD_Scope):1.0
+Range(MD_Scope.levelDescription,MD_ScopeDescription):1.0
+is(uAttributeInstances.attributeInstances,ObjectProperty):1.0
+Domain(uAttributeInstances.attributeInstances,uAttributeInstances):1.0
+Range(uAttributeInstances.attributeInstances,Set.lt.CharacterString.gt.):1.0
+is(uAttributes.attributes,ObjectProperty):1.0
+Domain(uAttributes.attributes,uAttributes):1.0
+Range(uAttributes.attributes,Set.lt.CharacterString.gt.):1.0
+is(uFeatureInstances.featureInstances,ObjectProperty):1.0
+Domain(uFeatureInstances.featureInstances,uFeatureInstances):1.0
+Range(uFeatureInstances.featureInstances,Set.lt.CharacterString.gt.):1.0
+is(uFeatures.features,ObjectProperty):1.0
+Domain(uFeatures.features,uFeatures):1.0
+Range(uFeatures.features,Set.lt.CharacterString.gt.):1.0
+is(MD_BrowseGraphic.fileDescription,DataProperty):1.0
+Domain(MD_BrowseGraphic.fileDescription,MD_BrowseGraphic):1.0
+Range(MD_BrowseGraphic.fileDescription,string):1.0
+is(MD_BrowseGraphic.fileName,DataProperty):1.0
+Domain(MD_BrowseGraphic.fileName,MD_BrowseGraphic):1.0
+Range(MD_BrowseGraphic.fileName,string):1.0
+is(MD_BrowseGraphic.fileType,DataProperty):1.0
+Domain(MD_BrowseGraphic.fileType,MD_BrowseGraphic):1.0
+Range(MD_BrowseGraphic.fileType,string):1.0
+is(MD_Identifier.code,DataProperty):1.0
+Domain(MD_Identifier.code,MD_Identifier):1.0
+Range(MD_Identifier.code,string):1.0
+is(MD_Identifier.codeSpace,DataProperty):1.0
+Domain(MD_Identifier.codeSpace,MD_Identifier):1.0
+Range(MD_Identifier.codeSpace,string):1.0
+is(MD_Identifier.description,DataProperty):1.0
+Domain(MD_Identifier.description,MD_Identifier):1.0
+Range(MD_Identifier.description,string):1.0
+is(MD_Identifier.version,DataProperty):1.0
+Domain(MD_Identifier.version,MD_Identifier):1.0
+Range(MD_Identifier.version,string):1.0
+is(uDataset.dataset,DataProperty):1.0
+Domain(uDataset.dataset,uDataset):1.0
+Range(uDataset.dataset,string):1.0
+is(uOther.other,DataProperty):1.0
+Domain(uOther.other,uOther):1.0
+Range(uOther.other,string):1.0
+is(CI_Citation,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(CI_OnlineResource,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_BrowseGraphic,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,MD_BrowseGraphic.imageConstraints only MD_Constraints,):1.0
+is(Thing,,MD_BrowseGraphic.linkage only CI_OnlineResource,):1.0
+is(Thing,,MD_BrowseGraphic.fileDescription only string,):1.0
+is(Thing,,MD_BrowseGraphic.fileName only string,):1.0
+is(Thing,,MD_BrowseGraphic.fileType only string,):1.0
+is(Literal,,MD_BrowseGraphic.fileName exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,MD_BrowseGraphic.fileDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,MD_BrowseGraphic.fileType max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Identifier,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,MD_Identifier.authority only CI_Citation,):1.0
+is(Thing,,MD_Identifier.authority max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,MD_Identifier.code only string,):1.0
+is(Thing,,MD_Identifier.codeSpace only string,):1.0
+is(Thing,,MD_Identifier.description only string,):1.0
+is(Thing,,MD_Identifier.version only string,):1.0
+is(Literal,,MD_Identifier.code exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,MD_Identifier.codeSpace max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,MD_Identifier.description max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,MD_Identifier.version max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Scope,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,MD_Scope.extent only EX_Extent,):1.0
+is(Thing,,MD_Scope.level only MD_ScopeCode,):1.0
+is(Thing,,MD_Scope.levelDescription only MD_ScopeDescription,):1.0
+is(Thing,MD_Scope.level exactly 1 www.w3.org/2002/07/#):1.0
+is(MD_ScopeCode,Class):1.0
+is(MD_ScopeDescription,Class):1.0
+EquivalentTo(MD_ScopeDescription,uAttributeInstances or uAttributes or uDataset or uFeatureInstances or uFeatures or uOther):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(URI,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(uAttributeInstances,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,uAttributeInstances.attributeInstances only Set.lt.CharacterString.gt.,):1.0
+is(Thing,uAttributeInstances.attributeInstances exactly 1 www.w3.org/2002/07/#):1.0
+is(uAttributes,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,uAttributes.attributes only Set.lt.CharacterString.gt.,):1.0
+is(Thing,uAttributes.attributes exactly 1 www.w3.org/2002/07/#):1.0
+is(uDataset,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,uDataset.dataset only string,):1.0
+is(Literal,uDataset.dataset exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(uFeatureInstances,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,uFeatureInstances.featureInstances only Set.lt.CharacterString.gt.,):1.0
+is(Thing,uFeatureInstances.featureInstances exactly 1 www.w3.org/2002/07/#):1.0
+is(uFeatures,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,uFeatures.features only Set.lt.CharacterString.gt.,):1.0
+is(Thing,uFeatures.features exactly 1 www.w3.org/2002/07/#):1.0
+is(uOther,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,uOther.other only string,):1.0
+is(Literal,uOther.other exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Constraints,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(EX_Extent,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Set.lt.CharacterString.gt.,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(MD_ScopeCode,Individual):1.0
+is(MD_ScopeCodeCollection,Individual):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0
+is(MD_ScopeCode/,Individual):1.0
+Types(MD_ScopeCode/,MD_ScopeCode):1.0

@@ -1,0 +1,1039 @@
+predicate(InverseContainmentAttribute,is,ObjectProperty).
+predicate(IsDivisionOf,is,ObjectProperty).
+predicate(actsOn,is,ObjectProperty).
+predicate(actsSpecificallyOn,is,ObjectProperty).
+predicate(hasAbnormalityStatus,is,ObjectProperty).
+predicate(hasAbsoluteState,is,ObjectProperty).
+predicate(hasColour,is,ObjectProperty).
+predicate(hasConsequence,is,ObjectProperty).
+predicate(hasFunction,is,ObjectProperty).
+predicate(hasInternalExternalSelector,is,ObjectProperty).
+predicate(hasIntrinsicAbnormalityStatus,is,ObjectProperty).
+predicate(hasIntrinsicPathologicalStatus,is,ObjectProperty).
+predicate(hasInvestigationResultStatus,is,ObjectProperty).
+predicate(hasPathologicalStatus,is,ObjectProperty).
+predicate(hasPhysicalPresentation,is,ObjectProperty).
+predicate(hasPhysicalState,is,ObjectProperty).
+predicate(hasSensitivity,is,ObjectProperty).
+predicate(hasShape,is,ObjectProperty).
+predicate(hasSpecificFunction,is,ObjectProperty).
+predicate(hasSpecificImmediateConsequence,is,ObjectProperty).
+predicate(hasSpecificLocation,is,ObjectProperty).
+predicate(hasSubprocess,is,ObjectProperty).
+predicate(isActedOnBy,is,ObjectProperty).
+predicate(isAlphaPartitiveConnectionOf,is,ObjectProperty).
+predicate(isConsequenceOf,is,ObjectProperty).
+predicate(isDeterminedBy,is,ObjectProperty).
+predicate(isFunctionOf,is,ObjectProperty).
+predicate(isMadeOf,is,ObjectProperty).
+predicate(isNonCausallyLinkedTo,is,ObjectProperty).
+predicate(isNonPartitivelyContainedIn,is,ObjectProperty).
+predicate(isPairedOrUnpaired,is,ObjectProperty).
+predicate(isPresenceAbsenceOf,is,ObjectProperty).
+predicate(isSpecificConsequenceOf,is,ObjectProperty).
+predicate(isSpecificFunctionOf,is,ObjectProperty).
+predicate(isSpecificImmediateConsequenceOf,is,ObjectProperty).
+predicate(isSpecificSubprocessOf,is,ObjectProperty).
+predicate(isStructuralComponentOf,is,ObjectProperty).
+predicate(isWithReferenceTo,is,ObjectProperty).
+predicate(playsConsultationRole,is,ObjectProperty).
+predicate(playsPhysiologicalRole,is,ObjectProperty).
+predicate(specificallyMakesUp,is,ObjectProperty).
+predicate(specificallyNonPartitivelyContains,is,ObjectProperty).
+predicate(Abortifacient,is,Class).
+predicate(Abortifacient,EquivalentTo,Substance and (hasSpecificImmediateConsequence some).
+predicate(Abortifacient,EquivalentTo,(StartingProcess and (isSpecificSubprocessOf some Abortion)))).
+predicate(Abortifacient,SubClassOf,Substance).
+predicate(Abortion,is,Class).
+predicate(Absorbance,is,Class).
+predicate(Absorbance,SubClassOf,PhysicalFeature).
+predicate(Acid,is,Class).
+predicate(Acid,EquivalentTo,Substance and (playsPhysiologicalRole some AcidRole)).
+predicate(Acid,SubClassOf,Substance).
+predicate(AcidRole,is,Class).
+predicate(ActiveDrugAdditiveRole,is,Class).
+predicate(ActiveDrugIngredient,is,Class).
+predicate(ActiveDrugIngredient,EquivalentTo,Substance and (playsPhysiologicalRole some ActiveDrugAdditiveRole)).
+predicate(ActiveDrugIngredient,SubClassOf,Substance).
+predicate(AddictiveRole,is,Class).
+predicate(AddictiveSubstance,is,Class).
+predicate(AddictiveSubstance,EquivalentTo,Substance and (playsPhysiologicalRole some AddictiveRole)).
+predicate(AddictiveSubstance,SubClassOf,Substance).
+predicate(AdrenergicReceptor,is,Class).
+predicate(Adsorbing,is,Class).
+predicate(AerosolBasicDrugForm,is,Class).
+predicate(AerosolBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(AerosolBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some aerosolDrugForm)))).
+predicate(AerosolBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(AerosolPowderBasicDrugForm,is,Class).
+predicate(AerosolPowderBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(AerosolPowderBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some aerosolPowderDrugForm)))).
+predicate(AerosolPowderBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(AirbornSubstance,is,Class).
+predicate(AirbornSubstance,SubClassOf,NAMEDNonBodySubstance).
+predicate(AlcoholicLotionBasicDrugForm,is,Class).
+predicate(AlcoholicLotionBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(AlcoholicLotionBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some alcoholicLotionDrugForm)))).
+predicate(AlcoholicLotionBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Alkali,is,Class).
+predicate(Alkali,EquivalentTo,Substance and (playsPhysiologicalRole some AlkaliRole)).
+predicate(Alkali,SubClassOf,Substance).
+predicate(AlkaliRole,is,Class).
+predicate(Allergen,is,Class).
+predicate(Allergen,EquivalentTo,Substance and (hasConsequence some AllergyProcess)).
+predicate(Allergen,SubClassOf,Substance).
+predicate(AllergyProcess,is,Class).
+predicate(AmnioticFluid,is,Class).
+predicate(AmnioticFluid,SubClassOf,NAMEDBodySubstance).
+predicate(AmyloidSubstance,is,Class).
+predicate(AmyloidSubstance,SubClassOf,NAMEDBodySubstance).
+predicate(AnabolicProcess,is,Class).
+predicate(Anonymous-112,is,Class).
+predicate(Anonymous-112,EquivalentTo,Substance and (hasIntrinsicAbnormalityStatus some nonNormal)).
+predicate(Anonymous-112,SubClassOf,Substance,).
+predicate(Anonymous-112,SubClassOf,hasAbnormalityStatus some nonNormal).
+predicate(Anonymous-140,is,Class).
+predicate(Anonymous-140,SubClassOf,NAMEDNonBodySubstance).
+predicate(Anonymous-438,is,Class).
+predicate(Anonymous-438,EquivalentTo,Substance and (hasSpecificLocation some PotentialCavity)).
+predicate(Anonymous-438,SubClassOf,Substance,).
+predicate(Anonymous-438,SubClassOf,hasAbnormalityStatus some nonNormal).
+predicate(Anonymous-447,is,Class).
+predicate(Anonymous-447,EquivalentTo,Substance and (isConsequenceOf some).
+predicate(Anonymous-447,EquivalentTo,(BodyProcess and (hasIntrinsicAbnormalityStatus some nonNormal)))).
+predicate(Anonymous-447,SubClassOf,Substance,).
+predicate(Anonymous-447,SubClassOf,hasAbnormalityStatus some nonNormal).
+predicate(Anonymous-654,is,Class).
+predicate(Anonymous-654,EquivalentTo,Substance and (isConsequenceOf some).
+predicate(Anonymous-654,EquivalentTo,(BodyProcess and (hasIntrinsicPathologicalStatus some pathological)))).
+predicate(Anonymous-654,SubClassOf,Substance,).
+predicate(Anonymous-654,SubClassOf,hasPathologicalStatus some pathological).
+predicate(Anonymous-685,is,Class).
+predicate(Anonymous-685,SubClassOf,BodySubstance).
+predicate(Anonymous-716,is,Class).
+predicate(Anonymous-716,EquivalentTo,PhysicalStructure and (IsDivisionOf some).
+predicate(Anonymous-716,EquivalentTo,(PhysicalStructure and (hasIntrinsicAbnormalityStatus some normal) and (isPairedOrUnpaired some mirrorImaged))) and (hasIntrinsicAbnormalityStatus some normal)).
+predicate(Anonymous-716,SubClassOf,PhysicalStructure,).
+predicate(Anonymous-716,SubClassOf,isPairedOrUnpaired some mirrorImaged).
+predicate(Anonymous-720,is,Class).
+predicate(Anonymous-720,SubClassOf,NAMEDNonBodySubstance).
+predicate(Anonymous-824,is,Class).
+predicate(Anonymous-824,SubClassOf,Tissue).
+predicate(Antidote,is,Class).
+predicate(Antidote,EquivalentTo,Substance and (hasFunction some ReducingToxicity)).
+predicate(Antidote,SubClassOf,Substance).
+predicate(Antigen,is,Class).
+predicate(Antigen,EquivalentTo,Substance and (hasConsequence some ImmuneResponse)).
+predicate(Antigen,SubClassOf,Substance).
+predicate(AqueousBasicDrugForm,is,Class).
+predicate(AqueousBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(AqueousBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some aqueousDrugForm)))).
+predicate(AqueousBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(BalmBasicDrugForm,is,Class).
+predicate(BalmBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(BalmBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some balmDrugForm)))).
+predicate(BalmBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(BarBasicDrugForm,is,Class).
+predicate(BarBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(BarBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some barDrugForm)))).
+predicate(BarBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(BasicDrugForm,is,Class).
+predicate(BasicDrugForm,SubClassOf,SubstanceOrPhysicalStructure).
+predicate(BeadBasicDrugForm,is,Class).
+predicate(BeadBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(BeadBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some beadDrugForm)))).
+predicate(BeadBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Bile,is,Class).
+predicate(Bile,SubClassOf,NAMEDBodySubstance).
+predicate(BileAcid,is,Class).
+predicate(BileAcid,SubClassOf,NAMEDBodySubstance).
+predicate(BlockBasicDrugForm,is,Class).
+predicate(BlockBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(BlockBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some blockDrugForm)))).
+predicate(BlockBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(BloodComponent,is,Class).
+predicate(BloodComponent,SubClassOf,SubstanceOrPhysicalStructure).
+predicate(BloodGroupAntigen,is,Class).
+predicate(BloodGroupAntigen,SubClassOf,Antigen).
+predicate(BloodProduct,is,Class).
+predicate(BloodProduct,SubClassOf,ActiveDrugIngredient).
+predicate(BodyFluid,is,Class).
+predicate(BodyFluid,SubClassOf,BodySubstance).
+predicate(BodyPlane,is,Class).
+predicate(BodyPlane,SubClassOf,PlanarStructure).
+predicate(BodyProcess,is,Class).
+predicate(BodySubstance,is,Class).
+predicate(BodySubstance,EquivalentTo,Substance and (hasInternalExternalSelector some internalSelection)).
+predicate(BodySubstance,SubClassOf,Substance,).
+predicate(BodySubstance,SubClassOf,playsPhysiologicalRole some OrganicRole).
+predicate(BoneTissue,is,Class).
+predicate(BoneTissue,SubClassOf,Tissue).
+predicate(CakeBasicDrugForm,is,Class).
+predicate(CakeBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CakeBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some cakeDrugForm)))).
+predicate(CakeBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CalorieFoodRole,is,Class).
+predicate(CapletBasicDrugForm,is,Class).
+predicate(CapletBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CapletBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some capletDrugForm)))).
+predicate(CapletBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CapsuleBasicDrugForm,is,Class).
+predicate(CapsuleBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CapsuleBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some capsuleDrugForm)))).
+predicate(CapsuleBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CementBasicDrugForm,is,Class).
+predicate(CementBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CementBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some cementDrugForm)))).
+predicate(CementBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CerebroSpinalFluid,is,Class).
+predicate(CerebroSpinalFluid,SubClassOf,NAMEDBodySubstance).
+predicate(ChemicalGroup,is,Class).
+predicate(ChemicalGroup,SubClassOf,ChemicalStructure).
+predicate(ChemicalMolecule,is,Class).
+predicate(ChemicalMolecule,SubClassOf,ChemicalStructure).
+predicate(ChemicalStructure,is,Class).
+predicate(ChemicalStructure,SubClassOf,PhysicalStructure).
+predicate(ChemicalSubstance,is,Class).
+predicate(Chyle,is,Class).
+predicate(Chyle,SubClassOf,NAMEDBodySubstance).
+predicate(CigaretteBasicDrugForm,is,Class).
+predicate(CigaretteBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CigaretteBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some cigaretteDrugForm)))).
+predicate(CigaretteBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(ClinicalAct,is,Class).
+predicate(Collagen,is,Class).
+predicate(Collagen,SubClassOf,NAMEDBodySubstance).
+predicate(Colour,is,Class).
+predicate(ColouredSubstance,is,Class).
+predicate(ColouredSubstance,EquivalentTo,Substance and (hasColour some Colour)).
+predicate(ColouredSubstance,SubClassOf,Substance).
+predicate(ComponentOfPituitaryGland,is,Class).
+predicate(CondomBasicDrugForm,is,Class).
+predicate(CondomBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CondomBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some condomDrugForm)))).
+predicate(CondomBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Conductivity,is,Class).
+predicate(Conductivity,SubClassOf,PhysicalFeature).
+predicate(ConeBasicDrugForm,is,Class).
+predicate(ConeBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(ConeBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some coneDrugForm)))).
+predicate(ConeBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CordBasicDrugForm,is,Class).
+predicate(CordBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CordBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some cordDrugForm)))).
+predicate(CordBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CoreBasicDrugForm,is,Class).
+predicate(CoreBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CoreBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some coreDrugForm)))).
+predicate(CoreBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CreamBasicDrugForm,is,Class).
+predicate(CreamBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CreamBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some creamDrugForm)))).
+predicate(CreamBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CrystalBasicDrugForm,is,Class).
+predicate(CrystalBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CrystalBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some crystalDrugForm)))).
+predicate(CrystalBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CultureBasicDrugForm,is,Class).
+predicate(CultureBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(CultureBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some cultureDrugForm)))).
+predicate(CultureBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(CutaneousUrostomyStructure,is,Class).
+predicate(CutaneousUrostomyStructure,SubClassOf,SurgicalFistulaStructure).
+predicate(Cyanide,is,Class).
+predicate(CyanideAntidote,is,Class).
+predicate(CyanideAntidote,EquivalentTo,Substance and (hasSpecificFunction some).
+predicate(CyanideAntidote,EquivalentTo,(Inhibiting and (actsSpecificallyOn some).
+predicate(CyanideAntidote,EquivalentTo,(PoisoningProcess and (isSpecificConsequenceOf some Cyanide)))))).
+predicate(CyanideAntidote,SubClassOf,Substance).
+predicate(Cyst,is,Class).
+predicate(CysticContents,is,Class).
+predicate(CysticContents,EquivalentTo,Substance and (InverseContainmentAttribute some Cyst)).
+predicate(CysticContents,SubClassOf,Substance).
+predicate(Defecation,is,Class).
+predicate(DentalHardTissue,is,Class).
+predicate(DentalHardTissue,SubClassOf,Tissue).
+predicate(DentalTissue,is,Class).
+predicate(DentalTissue,SubClassOf,Tissue).
+predicate(DiabetogenicSubstance,is,Class).
+predicate(DiabetogenicSubstance,EquivalentTo,Substance and (hasConsequence some).
+predicate(DiabetogenicSubstance,EquivalentTo,(TissueCell and (hasSensitivity some).
+predicate(DiabetogenicSubstance,EquivalentTo,(Sensitivity and (hasAbsoluteState some resistant) and (isWithReferenceTo some).
+predicate(DiabetogenicSubstance,EquivalentTo,(presence and (isPresenceAbsenceOf some Insulin)))))))).
+predicate(DiabetogenicSubstance,SubClassOf,Substance).
+predicate(DiaphragmBasicDrugForm,is,Class).
+predicate(DiaphragmBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(DiaphragmBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some diaphragmDrugForm)))).
+predicate(DiaphragmBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(DietaryCalorie,is,Class).
+predicate(DietaryCalorie,EquivalentTo,Substance and (playsPhysiologicalRole some CalorieFoodRole)).
+predicate(DietaryCalorie,SubClassOf,Substance).
+predicate(DihydropyridineDrugIngredient,is,Class).
+predicate(DihydropyridineDrugIngredient,SubClassOf,ActiveDrugIngredient).
+predicate(DiskBasicDrugForm,is,Class).
+predicate(DiskBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(DiskBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some diskDrugForm)))).
+predicate(DiskBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(DressingBasicDrugForm,is,Class).
+predicate(DressingBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(DressingBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some dressingDrugForm)))).
+predicate(DressingBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(DrugFormComplex,is,Class).
+predicate(DrugFormComplex,SubClassOf,Substance).
+predicate(DuodenalContent,is,Class).
+predicate(DuodenalContent,EquivalentTo,Substance and (isNonPartitivelyContainedIn some Duodenum)).
+predicate(DuodenalContent,SubClassOf,Substance).
+predicate(Duodenum,is,Class).
+predicate(DuruleBasicDrugForm,is,Class).
+predicate(DuruleBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(DuruleBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some duruleDrugForm)))).
+predicate(DuruleBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Dye,is,Class).
+predicate(Dye,SubClassOf,ManufacturedPigmentedSubstance).
+predicate(EarWax,is,Class).
+predicate(EarWax,SubClassOf,NAMEDBodySubstance).
+predicate(EctopicAdrenalGlandTissue,is,Class).
+predicate(EctopicAdrenalGlandTissue,SubClassOf,Tissue).
+predicate(EctopicBodyTissue,is,Class).
+predicate(EctopicBodyTissue,SubClassOf,Tissue).
+predicate(EctopicMammaryGlandTissue,is,Class).
+predicate(EctopicMammaryGlandTissue,SubClassOf,Tissue).
+predicate(EctopicParathyroidGlandTissue,is,Class).
+predicate(EctopicParathyroidGlandTissue,SubClassOf,Tissue).
+predicate(EctopicThyroidGlandTissue,is,Class).
+predicate(EctopicThyroidGlandTissue,SubClassOf,Tissue).
+predicate(Effusion,is,Class).
+predicate(Effusion,SubClassOf,NAMEDBodySubstance).
+predicate(ElixirBasicDrugForm,is,Class).
+predicate(ElixirBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(ElixirBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some elixirDrugForm)))).
+predicate(ElixirBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(EmbryonicTissue,is,Class).
+predicate(EmbryonicTissue,SubClassOf,Tissue).
+predicate(Emulsion,is,Class).
+predicate(Emulsion,SubClassOf,Liquid).
+predicate(ExaminingProcess,is,Class).
+predicate(ExcipientDrugIngredient,is,Class).
+predicate(ExcipientDrugIngredient,EquivalentTo,Substance and (playsPhysiologicalRole some PassiveDrugAdditiveRole)).
+predicate(ExcipientDrugIngredient,SubClassOf,Substance).
+predicate(Fabric,is,Class).
+predicate(Fabric,SubClassOf,NAMEDNonBodySubstance).
+predicate(FalsePositiveDirectCoombsTestResult,is,Class).
+predicate(FalsePositiveDirectCoombsTestResult,EquivalentTo,PositiveDirectCoombsTestResult and (hasInvestigationResultStatus some falsePositiveInvestigationResultStatus)).
+predicate(FalsePositiveDirectCoombsTestResult,SubClassOf,PositiveDirectCoombsTestResult).
+predicate(Feces,is,Class).
+predicate(Feces,SubClassOf,NAMEDBodySubstance).
+predicate(FibrousTissue,is,Class).
+predicate(FibrousTissue,DisjointWith,FoamAerosolBasicDrugForm).
+predicate(FilmBasicDrugForm,is,Class).
+predicate(FilmBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(FilmBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some filmDrugForm)))).
+predicate(FilmBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Fistula,is,Class).
+predicate(FlakeBasicDrugForm,is,Class).
+predicate(FlakeBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(FlakeBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some flakeDrugForm)))).
+predicate(FlakeBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Flammability,is,Class).
+predicate(Flammability,SubClassOf,PhysicalFeature).
+predicate(FoamAerosolBasicDrugForm,is,Class).
+predicate(FoamAerosolBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(FoamAerosolBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some foamAerosolDrugForm)))).
+predicate(FoamAerosolBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(FoamAerosolBasicDrugForm,DisjointWith,FibrousTissue).
+predicate(FoodRole,is,Class).
+predicate(Gas,is,Class).
+predicate(Gas,EquivalentTo,Substance and (hasPhysicalState some gaseousState)).
+predicate(Gas,SubClassOf,Substance).
+predicate(GasPropellant,is,Class).
+predicate(GasPropellant,SubClassOf,Gas).
+predicate(GaseousBasicDrugForm,is,Class).
+predicate(GaseousBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(GaseousBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some gaseousDrugPresentationState)))).
+predicate(GaseousBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(GastricAcid,is,Class).
+predicate(GastricAcid,SubClassOf,NAMEDBodySubstance).
+predicate(GastricContent,is,Class).
+predicate(GastricContent,EquivalentTo,Substance and (isNonPartitivelyContainedIn some Stomach)).
+predicate(GastricContent,SubClassOf,Substance).
+predicate(GastricJuice,is,Class).
+predicate(GastricJuice,SubClassOf,NAMEDBodySubstance).
+predicate(GastrointestinalContent,is,Class).
+predicate(GastrointestinalContent,EquivalentTo,Substance and (InverseContainmentAttribute some GastrointestinalTract)).
+predicate(GastrointestinalContent,SubClassOf,Substance,).
+predicate(GastrointestinalContent,SubClassOf,isNonCausallyLinkedTo some GastrointestinalTract).
+predicate(GastrointestinalTract,is,Class).
+predicate(GelBasicDrugForm,is,Class).
+predicate(GelBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(GelBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some gelDrugForm)))).
+predicate(GelBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(GeometricShape,is,Class).
+predicate(GeometricShape,SubClassOf,PlanarStructure).
+predicate(GraftBasicDrugForm,is,Class).
+predicate(GraftBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(GraftBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some graftDrugForm)))).
+predicate(GraftBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(GranuleBasicDrugForm,is,Class).
+predicate(GranuleBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(GranuleBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some granuleDrugForm)))).
+predicate(GranuleBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(GumBasicDrugForm,is,Class).
+predicate(GumBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(GumBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some gumDrugForm)))).
+predicate(GumBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(GustatoryCell,is,Class).
+predicate(GustatorySignal,is,Class).
+predicate(GustatorySignal,EquivalentTo,Signal and (isSpecificConsequenceOf some).
+predicate(GustatorySignal,EquivalentTo,(TransducingProcess and (actsOn some ChemicalSubstance) and (isSpecificFunctionOf some GustatoryCell)))).
+predicate(GustatorySignal,SubClassOf,Signal).
+predicate(Haemaphysalis,is,Class).
+predicate(HaemaphysalisLeporisPalustris,is,Class).
+predicate(HaemaphysalisLeporisPalustris,SubClassOf,Haemaphysalis).
+predicate(HaemopoieticTissue,is,Class).
+predicate(HaemopoieticTissue,SubClassOf,Tissue).
+predicate(HerbBasicDrugForm,is,Class).
+predicate(HerbBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(HerbBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some herbDrugForm)))).
+predicate(HerbBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(HotDrink,is,Class).
+predicate(HotDrink,SubClassOf,LiquidFood).
+predicate(ImagingSlice,is,Class).
+predicate(ImagingSlice,SubClassOf,PlanarStructure).
+predicate(ImmuneResponse,is,Class).
+predicate(Immunity,is,Class).
+predicate(Impedance,is,Class).
+predicate(Impedance,SubClassOf,PhysicalFeature).
+predicate(Infiltrate,is,Class).
+predicate(Infiltrate,SubClassOf,NAMEDBodySubstance).
+predicate(InflammatoryTissue,is,Class).
+predicate(InflammatoryTissue,SubClassOf,Tissue).
+predicate(Inhibiting,is,Class).
+predicate(InorganicRole,is,Class).
+predicate(InorganicSubstance,is,Class).
+predicate(InorganicSubstance,EquivalentTo,Substance and (playsPhysiologicalRole some InorganicRole)).
+predicate(InorganicSubstance,SubClassOf,Substance).
+predicate(Insulin,is,Class).
+predicate(IntestinalContent,is,Class).
+predicate(IntestinalContent,EquivalentTo,Substance and (isNonPartitivelyContainedIn some GastrointestinalTract)).
+predicate(IntestinalContent,SubClassOf,Substance).
+predicate(IntestinalGas,is,Class).
+predicate(IntestinalGas,SubClassOf,Gas).
+predicate(IntrinsicallyPathologicalSubstance,is,Class).
+predicate(IntrinsicallyPathologicalSubstance,EquivalentTo,Substance and (hasIntrinsicPathologicalStatus some pathological)).
+predicate(IntrinsicallyPathologicalSubstance,SubClassOf,Substance).
+predicate(JellyBasicDrugForm,is,Class).
+predicate(JellyBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(JellyBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some jellyDrugForm)))).
+predicate(JellyBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(KilledVirusVaccine,is,Class).
+predicate(KilledVirusVaccine,SubClassOf,Vaccine).
+predicate(LacquerBasicDrugForm,is,Class).
+predicate(LacquerBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LacquerBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some lacquerDrugForm)))).
+predicate(LacquerBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(LaminarPhysicalStructure,is,Class).
+predicate(LaminarPhysicalStructure,EquivalentTo,PhysicalStructure and (hasShape some).
+predicate(LaminarPhysicalStructure,EquivalentTo,(Shape and (hasAbsoluteState some laminar)))).
+predicate(LaminarPhysicalStructure,SubClassOf,PhysicalStructure).
+predicate(Laxative,is,Class).
+predicate(Laxative,EquivalentTo,Substance and (hasConsequence some Defecation)).
+predicate(Laxative,SubClassOf,Substance,).
+predicate(Laxative,SubClassOf,playsPhysiologicalRole some AddictiveRole).
+predicate(LevelOfHealthState,is,Class).
+predicate(LinctusBasicDrugForm,is,Class).
+predicate(LinctusBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LinctusBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some linctusDrugForm)))).
+predicate(LinctusBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Line,is,Class).
+predicate(Line,SubClassOf,LinearPhysicalStructure).
+predicate(LinearPhysicalStructure,is,Class).
+predicate(LinearPhysicalStructure,EquivalentTo,PhysicalStructure and (hasShape some).
+predicate(LinearPhysicalStructure,EquivalentTo,(Shape and (hasAbsoluteState some linear)))).
+predicate(LinearPhysicalStructure,SubClassOf,PhysicalStructure).
+predicate(LinerBasicDrugForm,is,Class).
+predicate(LinerBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LinerBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some linerDrugForm)))).
+predicate(LinerBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(LinimentBasicDrugForm,is,Class).
+predicate(LinimentBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LinimentBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some linimentDrugForm)))).
+predicate(LinimentBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(LipstickBasicDrugForm,is,Class).
+predicate(LipstickBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LipstickBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some lipstickDrugForm)))).
+predicate(LipstickBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Liquid,is,Class).
+predicate(Liquid,EquivalentTo,Substance and (hasPhysicalState some liquidState)).
+predicate(Liquid,SubClassOf,Substance).
+predicate(LiquidBasicDrugForm,is,Class).
+predicate(LiquidBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LiquidBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some liquidDrugPresentationState)))).
+predicate(LiquidBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(LiquidEmulsionBasicDrugForm,is,Class).
+predicate(LiquidEmulsionBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LiquidEmulsionBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some liquidEmulsionDrugForm)))).
+predicate(LiquidEmulsionBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(LiquidFood,is,Class).
+predicate(LiquidFood,EquivalentTo,Substance and (hasPhysicalState some liquidState) and (playsPhysiologicalRole some FoodRole)).
+predicate(LiquidFood,SubClassOf,Substance).
+predicate(LiquidGasBasicDrugForm,is,Class).
+predicate(LiquidGasBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LiquidGasBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some liquidGasPresentationState)))).
+predicate(LiquidGasBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(LiquidSolidBasicDrugForm,is,Class).
+predicate(LiquidSolidBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LiquidSolidBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some liquidSolidDrugPresentationState)))).
+predicate(LiquidSolidBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(LiveVirusVaccine,is,Class).
+predicate(LiveVirusVaccine,SubClassOf,Vaccine).
+predicate(LollipopBasicDrugForm,is,Class).
+predicate(LollipopBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LollipopBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some lollipopDrugForm)))).
+predicate(LollipopBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(LotionBasicDrugForm,is,Class).
+predicate(LotionBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LotionBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some lotionDrugForm)))).
+predicate(LotionBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(LozengeBasicDrugForm,is,Class).
+predicate(LozengeBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(LozengeBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some lozengeDrugForm)))).
+predicate(LozengeBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Lymph,is,Class).
+predicate(Lymph,SubClassOf,NAMEDBodySubstance).
+predicate(ManufacturedPigmentedSubstance,is,Class).
+predicate(ManufacturedPigmentedSubstance,EquivalentTo,Substance and (hasColour some Colour) and (isConsequenceOf some ManufacturingProcess)).
+predicate(ManufacturedPigmentedSubstance,SubClassOf,Substance).
+predicate(ManufacturingProcess,is,Class).
+predicate(Meconium,is,Class).
+predicate(Meconium,SubClassOf,NAMEDBodySubstance).
+predicate(Metabolite,is,Class).
+predicate(Metabolite,EquivalentTo,Substance and (playsPhysiologicalRole some MetaboliteRole)).
+predicate(Metabolite,SubClassOf,Substance).
+predicate(MetaboliteRole,is,Class).
+predicate(MicroemulsionBasicDrugForm,is,Class).
+predicate(MicroemulsionBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(MicroemulsionBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some microemulsionDrugForm)))).
+predicate(MicroemulsionBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Milk,is,Class).
+predicate(Milk,SubClassOf,NAMEDBodySubstance).
+predicate(ModifierConcept,is,Class).
+predicate(Mucus,is,Class).
+predicate(Mucus,SubClassOf,NAMEDBodySubstance).
+predicate(NAMEDBodySubstance,is,Class).
+predicate(NAMEDBodySubstance,SubClassOf,Substance,).
+predicate(NAMEDBodySubstance,SubClassOf,hasInternalExternalSelector some internalSelection).
+predicate(NAMEDDrink,is,Class).
+predicate(NAMEDDrink,SubClassOf,LiquidFood).
+predicate(NAMEDExcipientDrugIngredient,is,Class).
+predicate(NAMEDExcipientDrugIngredient,SubClassOf,ExcipientDrugIngredient).
+predicate(NAMEDFossa,is,Class).
+predicate(NAMEDInorganicSubstance,is,Class).
+predicate(NAMEDInorganicSubstance,SubClassOf,NAMEDNonBodySubstance).
+predicate(NAMEDJoint,is,Class).
+predicate(NAMEDNonBodySubstance,is,Class).
+predicate(NAMEDNonBodySubstance,SubClassOf,Substance,).
+predicate(NAMEDNonBodySubstance,SubClassOf,hasInternalExternalSelector some externalSelection).
+predicate(NAMEDOrganicSubstance,is,Class).
+predicate(NAMEDOrganicSubstance,SubClassOf,NAMEDNonBodySubstance).
+predicate(NAMEDPhysicalProcess,is,Class).
+predicate(NAMEDSymphysis,is,Class).
+predicate(Neurotransmitter,is,Class).
+predicate(Neurotransmitter,EquivalentTo,Substance and (playsPhysiologicalRole some NeurotransmitterRole)).
+predicate(Neurotransmitter,SubClassOf,Substance).
+predicate(NeurotransmitterRole,is,Class).
+predicate(NonBodySubstance,is,Class).
+predicate(NonBodySubstance,EquivalentTo,Substance and (hasInternalExternalSelector some externalSelection)).
+predicate(NonBodySubstance,SubClassOf,Substance).
+predicate(NonNormalSubstance,is,Class).
+predicate(NonNormalSubstance,EquivalentTo,Substance and (hasAbnormalityStatus some nonNormal)).
+predicate(NonNormalSubstance,SubClassOf,Substance).
+predicate(NormallyBilateralPhysicalStructure,is,Class).
+predicate(NormallyBilateralPhysicalStructure,EquivalentTo,PhysicalStructure and (hasIntrinsicAbnormalityStatus some normal) and (isPairedOrUnpaired some mirrorImaged)).
+predicate(NormallyBilateralPhysicalStructure,SubClassOf,PhysicalStructure).
+predicate(OccupationRole,is,Class).
+predicate(OilBasicDrugForm,is,Class).
+predicate(OilBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(OilBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some oilDrugForm)))).
+predicate(OilBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(OintmentBasicDrugForm,is,Class).
+predicate(OintmentBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(OintmentBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some ointmentDrugForm)))).
+predicate(OintmentBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(OrganicRole,is,Class).
+predicate(OrganicSubstance,is,Class).
+predicate(OrganicSubstance,EquivalentTo,Substance and (playsPhysiologicalRole some OrganicRole)).
+predicate(OrganicSubstance,SubClassOf,Substance).
+predicate(PadBasicDrugForm,is,Class).
+predicate(PadBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PadBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some padDrugForm)))).
+predicate(PadBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Paint,is,Class).
+predicate(Paint,SubClassOf,ManufacturedPigmentedSubstance).
+predicate(ParticulateBasicDrugForm,is,Class).
+predicate(ParticulateBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(ParticulateBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some particulateDrugForm)))).
+predicate(ParticulateBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(PassiveDrugAdditiveRole,is,Class).
+predicate(PasteBasicDrugForm,is,Class).
+predicate(PasteBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PasteBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some pasteDrugForm)))).
+predicate(PasteBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(PastilleBasicDrugForm,is,Class).
+predicate(PastilleBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PastilleBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some pastilleDrugForm)))).
+predicate(PastilleBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(PatchBasicDrugForm,is,Class).
+predicate(PatchBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PatchBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some patchDrugForm)))).
+predicate(PatchBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(PathologicalSubstance,is,Class).
+predicate(PathologicalSubstance,EquivalentTo,Substance and (hasPathologicalStatus some pathological)).
+predicate(PathologicalSubstance,SubClassOf,Substance).
+predicate(PelletBasicDrugForm,is,Class).
+predicate(PelletBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PelletBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some pelletDrugForm)))).
+predicate(PelletBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(PeripheralTissue,is,Class).
+predicate(PeripheralTissue,SubClassOf,Tissue).
+predicate(Permeability,is,Class).
+predicate(Permeability,SubClassOf,PhysicalFeature).
+predicate(PessaryBasicDrugForm,is,Class).
+predicate(PessaryBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PessaryBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some pessaryDrugFrom)))).
+predicate(PessaryBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Petroleum,is,Class).
+predicate(PetroleumProduct,is,Class).
+predicate(PetroleumProduct,EquivalentTo,Substance and (isConsequenceOf some).
+predicate(PetroleumProduct,EquivalentTo,(ManufacturingProcess and (actsSpecificallyOn some Petroleum)))).
+predicate(PetroleumProduct,SubClassOf,Substance).
+predicate(Phenomenon,is,Class).
+predicate(PhysicalBarrierRole,is,Class).
+predicate(PhysicalBarrierRole,SubClassOf,StructuralRole).
+predicate(PhysicalFeature,is,Class).
+predicate(PhysicalFeature,SubClassOf,SubstanceFeature).
+predicate(PhysicalPresentation,is,Class).
+predicate(PhysicalSign,is,Class).
+predicate(PhysicalSign,EquivalentTo,ModifierConcept and (hasAbnormalityStatus some nonNormal) and (isDeterminedBy some).
+predicate(PhysicalSign,EquivalentTo,(ClinicalAct and (hasSubprocess some ExaminingProcess)))).
+predicate(PhysicalSign,SubClassOf,ModifierConcept,).
+predicate(PhysicalSign,SubClassOf,playsConsultationRole some SignRole).
+predicate(PhysicalStateState,is,Class).
+predicate(PhysicalStateState,SubClassOf,SubstanceState).
+predicate(PhysicalStructure,is,Class).
+predicate(PhysicalStructure,SubClassOf,SubstanceOrPhysicalStructure).
+predicate(PhysicalSupportRole,is,Class).
+predicate(PhysicalSupportRole,SubClassOf,StructuralRole).
+predicate(PhysicallyStrengthening,is,Class).
+predicate(PhysicallyStrengthening,SubClassOf,StrengthChangingProcess).
+predicate(PhysicallyWeakening,is,Class).
+predicate(PhysicallyWeakening,SubClassOf,StrengthChangingProcess).
+predicate(PhysiotherapistRole,is,Class).
+predicate(PhysiotherapistRole,SubClassOf,OccupationRole).
+predicate(Physisorbing,is,Class).
+predicate(Physisorbing,SubClassOf,Adsorbing).
+predicate(Pigment,is,Class).
+predicate(Pigment,SubClassOf,ColouredSubstance).
+predicate(PillBasicDrugForm,is,Class).
+predicate(PillBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PillBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some pillShapedDrugForm)))).
+predicate(PillBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(PituitaryGland,is,Class).
+predicate(PituitarySecretion,is,Class).
+predicate(PituitarySecretion,EquivalentTo,Substance and (isActedOnBy some).
+predicate(PituitarySecretion,EquivalentTo,(Secretion and (isFunctionOf some ComponentOfPituitaryGland)))).
+predicate(PituitarySecretion,SubClassOf,Substance).
+predicate(PlanarStructure,is,Class).
+predicate(PlanarStructure,SubClassOf,PhysicalStructure,).
+predicate(PlanarStructure,SubClassOf,hasShape some).
+predicate(PlanarStructure,SubClassOf,(Shape and (hasAbsoluteState some laminar))).
+predicate(Plasma,is,Class).
+predicate(Plasma,SubClassOf,NAMEDBodySubstance).
+predicate(PlasterBasicDrugForm,is,Class).
+predicate(PlasterBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PlasterBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some plasterDrugForm)))).
+predicate(PlasterBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(PoisoningProcess,is,Class).
+predicate(PortionOfVisualField,is,Class).
+predicate(PortionOfVisualField,SubClassOf,PlanarStructure).
+predicate(PositiveDirectCoombsTestResult,is,Class).
+predicate(PotentialCavity,is,Class).
+predicate(PoulticeBasicDrugForm,is,Class).
+predicate(PoulticeBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PoulticeBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some poulticeDrugForm)))).
+predicate(PoulticeBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(PowderBasicDrugForm,is,Class).
+predicate(PowderBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(PowderBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some powderDrugForm)))).
+predicate(PowderBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Pressure,is,Class).
+predicate(Pressure,SubClassOf,PhysicalFeature).
+predicate(ProstaticSecretion,is,Class).
+predicate(ProstaticSecretion,SubClassOf,NAMEDBodySubstance).
+predicate(ProstheticVeinGraft,is,Class).
+predicate(Pus,is,Class).
+predicate(Pus,SubClassOf,NAMEDBodySubstance).
+predicate(RadioactiveDecay,is,Class).
+predicate(RadioactiveSubstance,is,Class).
+predicate(RadioactiveSubstance,EquivalentTo,Substance and (isActedOnBy some RadioactiveDecay)).
+predicate(RadioactiveSubstance,SubClassOf,Substance).
+predicate(Radioluscence,is,Class).
+predicate(Radioluscence,SubClassOf,PhysicalFeature).
+predicate(ReducingToxicity,is,Class).
+predicate(Reflectivity,is,Class).
+predicate(Reflectivity,SubClassOf,PhysicalFeature).
+predicate(Refractance,is,Class).
+predicate(Refractance,SubClassOf,PhysicalFeature).
+predicate(SalicylateDrugChemical,is,Class).
+predicate(SalicylateDrugChemical,SubClassOf,ActiveDrugIngredient).
+predicate(Saliva,is,Class).
+predicate(Saliva,SubClassOf,NAMEDBodySubstance).
+predicate(SalveBasicDrugForm,is,Class).
+predicate(SalveBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SalveBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some salveDrugForm)))).
+predicate(SalveBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Sebum,is,Class).
+predicate(Sebum,SubClassOf,NAMEDBodySubstance).
+predicate(SecretedSubstance,is,Class).
+predicate(SecretedSubstance,EquivalentTo,Substance and (isActedOnBy some Secretion)).
+predicate(SecretedSubstance,SubClassOf,Substance).
+predicate(Secretion,is,Class).
+predicate(SellaTurcica,is,Class).
+predicate(SellaTurcica,SubClassOf,NAMEDFossa,).
+predicate(SellaTurcica,SubClassOf,specificallyNonPartitivelyContains some PituitaryGland).
+predicate(Semen,is,Class).
+predicate(Semen,SubClassOf,NAMEDBodySubstance).
+predicate(SemiSolidBasicDrugForm,is,Class).
+predicate(SemiSolidBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SemiSolidBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some semiSolidEmulsionDrugForm)))).
+predicate(SemiSolidBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Sensitivity,is,Class).
+predicate(Serum,is,Class).
+predicate(Serum,SubClassOf,NAMEDBodySubstance).
+predicate(Shape,is,Class).
+predicate(ShuntStructure,is,Class).
+predicate(SignRole,is,Class).
+predicate(Signal,is,Class).
+predicate(SkinCovering,is,Class).
+predicate(Skull,is,Class).
+predicate(SlushBasicDrugForm,is,Class).
+predicate(SlushBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SlushBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some slushDrugForm)))).
+predicate(SlushBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SoftTissue,is,Class).
+predicate(SoftTissue,SubClassOf,Tissue).
+predicate(Solid,is,Class).
+predicate(Solid,EquivalentTo,Substance and (hasPhysicalState some solidState)).
+predicate(Solid,SubClassOf,Substance).
+predicate(SolidBasicDrugForm,is,Class).
+predicate(SolidBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SolidBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some solidDrugPresentationState)))).
+predicate(SolidBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SolidImplantBasicDrugForm,is,Class).
+predicate(SolidImplantBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SolidImplantBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some solidImplantPresentationState)))).
+predicate(SolidImplantBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SolidRodBasicDrugForm,is,Class).
+predicate(SolidRodBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SolidRodBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some solidRodDrugForm)))).
+predicate(SolidRodBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Solubility,is,Class).
+predicate(Solubility,SubClassOf,PhysicalFeature).
+predicate(Solution,is,Class).
+predicate(Solution,SubClassOf,Liquid).
+predicate(SolutionBasicDrugForm,is,Class).
+predicate(SolutionBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SolutionBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some solutionDrugForm)))).
+predicate(SolutionBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SpandetBasicDrugForm,is,Class).
+predicate(SpandetBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SpandetBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some spandetDrugForm)))).
+predicate(SpandetBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SpansuleBasicDrugForm,is,Class).
+predicate(SpansuleBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SpansuleBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some spansuleDrugForm)))).
+predicate(SpansuleBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SpecificGravity,is,Class).
+predicate(SpecificGravity,SubClassOf,PhysicalFeature).
+predicate(SphenoFrontalSuture,is,Class).
+predicate(SphenoFrontalSuture,SubClassOf,NAMEDJoint,).
+predicate(SphenoFrontalSuture,SubClassOf,isMadeOf some FibrousTissue,).
+predicate(SphenoFrontalSuture,SubClassOf,isPairedOrUnpaired some leftRightPaired,).
+predicate(SphenoFrontalSuture,SubClassOf,isStructuralComponentOf some Skull,).
+predicate(SphenoFrontalSuture,SubClassOf,isMadeOf only FoamAerosolBasicDrugForm).
+predicate(SpongeBasicDrugForm,is,Class).
+predicate(SpongeBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SpongeBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some spongeDrugForm)))).
+predicate(SpongeBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(StartingProcess,is,Class).
+predicate(StickBasicDrugForm,is,Class).
+predicate(StickBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(StickBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some stickDrugForm)))).
+predicate(StickBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Stimulating,is,Class).
+predicate(Stomach,is,Class).
+predicate(StrainCapacity,is,Class).
+predicate(StrainCapacity,SubClassOf,PhysicalFeature).
+predicate(StrengthChangingProcess,is,Class).
+predicate(StressCapacity,is,Class).
+predicate(StressCapacity,SubClassOf,PhysicalFeature).
+predicate(StripBasicDrugForm,is,Class).
+predicate(StripBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(StripBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some stripDrugForm)))).
+predicate(StripBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(StructuralRole,is,Class).
+predicate(Substance,is,Class).
+predicate(Substance,SubClassOf,SubstanceOrPhysicalStructure).
+predicate(SubstanceFeature,is,Class).
+predicate(SubstanceOrPhysicalStructure,is,Class).
+predicate(SubstanceOrPhysicalStructure,SubClassOf,Phenomenon).
+predicate(SubstanceState,is,Class).
+predicate(SuctionCreating,is,Class).
+predicate(SuctionCreating,SubClassOf,NAMEDPhysicalProcess).
+predicate(SuppositoryBasicDrugForm,is,Class).
+predicate(SuppositoryBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SuppositoryBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some suppositoryDrugForm)))).
+predicate(SuppositoryBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SuppositoryDrugForm,is,Class).
+predicate(SuppositoryDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SuppositoryDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some suppositoryDrugForm)))).
+predicate(SuppositoryDrugForm,SubClassOf,BasicDrugForm).
+predicate(Surfactant,is,Class).
+predicate(Surfactant,SubClassOf,NAMEDBodySubstance).
+predicate(SurgicalConstructingProcess,is,Class).
+predicate(SurgicalFistulaStructure,is,Class).
+predicate(SurgicalFistulaStructure,EquivalentTo,Fistula and (isSpecificImmediateConsequenceOf some SurgicalConstructingProcess)).
+predicate(SurgicalFistulaStructure,SubClassOf,Fistula).
+predicate(SurgicalShuntStructure,is,Class).
+predicate(SurgicalShuntStructure,EquivalentTo,ShuntStructure and (isSpecificImmediateConsequenceOf some SurgicalConstructingProcess)).
+predicate(SurgicalShuntStructure,SubClassOf,ShuntStructure).
+predicate(SurgicalStomaStructure,is,Class).
+predicate(SurgicalStomaStructure,EquivalentTo,Fistula and (isAlphaPartitiveConnectionOf some SkinCovering) and (isSpecificImmediateConsequenceOf some SurgicalConstructingProcess)).
+predicate(SurgicalStomaStructure,SubClassOf,Fistula).
+predicate(Suspension,is,Class).
+predicate(Suspension,SubClassOf,Liquid).
+predicate(SuspensionBasicDrugForm,is,Class).
+predicate(SuspensionBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SuspensionBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some suspensionDrugForm)))).
+predicate(SuspensionBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SutureBasicDrugForm,is,Class).
+predicate(SutureBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SutureBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some sutureDrugForm)))).
+predicate(SutureBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SwabBasicDrugForm,is,Class).
+predicate(SwabBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SwabBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some swabDrugForm)))).
+predicate(SwabBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Sweat,is,Class).
+predicate(Sweat,SubClassOf,NAMEDBodySubstance).
+predicate(Sympathomimetic,is,Class).
+predicate(Sympathomimetic,EquivalentTo,Substance and (hasConsequence some).
+predicate(Sympathomimetic,EquivalentTo,(Stimulating and (actsSpecificallyOn some AdrenergicReceptor)))).
+predicate(Sympathomimetic,SubClassOf,Substance).
+predicate(SymphysisPubis,is,Class).
+predicate(SymphysisPubis,SubClassOf,NAMEDSymphysis).
+predicate(SynovialFluid,is,Class).
+predicate(SynovialFluid,SubClassOf,NAMEDBodySubstance).
+predicate(SyntheticMaterial,is,Class).
+predicate(SyntheticMaterial,SubClassOf,NAMEDNonBodySubstance).
+predicate(SyrupSolutionBasicDrugForm,is,Class).
+predicate(SyrupSolutionBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SyrupSolutionBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some syrupSolutionDrugForm)))).
+predicate(SyrupSolutionBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(SyrupSuspensionBasicDrugForm,is,Class).
+predicate(SyrupSuspensionBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(SyrupSuspensionBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some syrupSuspensionDrugForm)))).
+predicate(SyrupSuspensionBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(TabletBasicDrugForm,is,Class).
+predicate(TabletBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(TabletBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some tabletDrugForm)))).
+predicate(TabletBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(TamponBasicDrugForm,is,Class).
+predicate(TamponBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(TamponBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some tamponDrugForm)))).
+predicate(TamponBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(TapeBasicDrugForm,is,Class).
+predicate(TapeBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(TapeBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some tapeDrugForm)))).
+predicate(TapeBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Tears,is,Class).
+predicate(Tears,SubClassOf,NAMEDBodySubstance).
+predicate(Temperature,is,Class).
+predicate(Temperature,SubClassOf,PhysicalFeature).
+predicate(ThermalCapacity,is,Class).
+predicate(ThermalCapacity,SubClassOf,PhysicalFeature).
+predicate(Thrombolysis,is,Class).
+predicate(ThrombolyticAgent,is,Class).
+predicate(ThrombolyticAgent,EquivalentTo,Substance and (hasConsequence some Thrombolysis)).
+predicate(ThrombolyticAgent,SubClassOf,Substance).
+predicate(TinctureBasicDrugForm,is,Class).
+predicate(TinctureBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(TinctureBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some tinctureDrugForm)))).
+predicate(TinctureBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(Tissue,is,Class).
+predicate(Tissue,SubClassOf,Substance,).
+predicate(Tissue,SubClassOf,hasInternalExternalSelector some internalSelection).
+predicate(TissueCell,is,Class).
+predicate(TissueGraft,is,Class).
+predicate(TissueGraft,SubClassOf,Tissue).
+predicate(TransducingProcess,is,Class).
+predicate(Transparency,is,Class).
+predicate(Transparency,SubClassOf,PhysicalFeature).
+predicate(TreponemaPallidum,is,Class).
+predicate(TreponemaPallidumAntigen,is,Class).
+predicate(TreponemaPallidumAntigen,EquivalentTo,Substance and (hasConsequence some ImmuneResponse) and (specificallyMakesUp some TreponemaPallidum)).
+predicate(TreponemaPallidumAntigen,SubClassOf,Substance).
+predicate(TrocheBasicDrugForm,is,Class).
+predicate(TrocheBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(TrocheBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some trocheDrugForm)))).
+predicate(TrocheBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(UpperGIContent,is,Class).
+predicate(UpperGIContent,EquivalentTo,Substance and (isNonPartitivelyContainedIn some UpperGastrointestinalTract)).
+predicate(UpperGIContent,SubClassOf,Substance,).
+predicate(UpperGIContent,SubClassOf,hasPhysicalState some liquidState).
+predicate(UpperGastrointestinalTract,is,Class).
+predicate(Urine,is,Class).
+predicate(Urine,SubClassOf,NAMEDBodySubstance).
+predicate(Uroporphyrin,is,Class).
+predicate(UroporphyrinSynthesis,is,Class).
+predicate(UroporphyrinSynthesis,EquivalentTo,AnabolicProcess and (actsSpecificallyOn some Uroporphyrin)).
+predicate(UroporphyrinSynthesis,SubClassOf,AnabolicProcess).
+predicate(Vaccine,is,Class).
+predicate(Vaccine,EquivalentTo,Substance and (hasConsequence some Immunity)).
+predicate(Vaccine,SubClassOf,Substance).
+predicate(VeinGraftMaterial,is,Class).
+predicate(VeinGraftMaterial,EquivalentTo,Substance and (specificallyMakesUp some ProstheticVeinGraft)).
+predicate(VeinGraftMaterial,SubClassOf,Substance).
+predicate(Viscosity,is,Class).
+predicate(Viscosity,SubClassOf,PhysicalFeature).
+predicate(VisualField,is,Class).
+predicate(VisualField,SubClassOf,PlanarStructure).
+predicate(Volatility,is,Class).
+predicate(Volatility,SubClassOf,PhysicalFeature).
+predicate(WaferBasicDrugForm,is,Class).
+predicate(WaferBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(WaferBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some waferDrugForm)))).
+predicate(WaferBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(WaxBasicDrugForm,is,Class).
+predicate(WaxBasicDrugForm,EquivalentTo,BasicDrugForm and (hasPhysicalPresentation some).
+predicate(WaxBasicDrugForm,EquivalentTo,(PhysicalPresentation and (hasAbsoluteState some waxDrugForm)))).
+predicate(WaxBasicDrugForm,SubClassOf,BasicDrugForm).
+predicate(aerosolDrugForm,is,Class).
+predicate(aerosolPowderDrugForm,is,Class).
+predicate(alcoholicLotionDrugForm,is,Class).
+predicate(aqueousDrugForm,is,Class).
+predicate(balmDrugForm,is,Class).
+predicate(barDrugForm,is,Class).
+predicate(beadDrugForm,is,Class).
+predicate(blockDrugForm,is,Class).
+predicate(cakeDrugForm,is,Class).
+predicate(capletDrugForm,is,Class).
+predicate(capsuleDrugForm,is,Class).
+predicate(cementDrugForm,is,Class).
+predicate(cigaretteDrugForm,is,Class).
+predicate(condomDrugForm,is,Class).
+predicate(coneDrugForm,is,Class).
+predicate(cordDrugForm,is,Class).
+predicate(coreDrugForm,is,Class).
+predicate(creamDrugForm,is,Class).
+predicate(crystalDrugForm,is,Class).
+predicate(cultureDrugForm,is,Class).
+predicate(diaphragmDrugForm,is,Class).
+predicate(diskDrugForm,is,Class).
+predicate(dressingDrugForm,is,Class).
+predicate(duruleDrugForm,is,Class).
+predicate(elixirDrugForm,is,Class).
+predicate(externalSelection,is,Class).
+predicate(falsePositiveInvestigationResultStatus,is,Class).
+predicate(filmDrugForm,is,Class).
+predicate(flakeDrugForm,is,Class).
+predicate(foamAerosolDrugForm,is,Class).
+predicate(gasSolid,is,Class).
+predicate(gasSolid,SubClassOf,PhysicalStateState).
+predicate(gaseous,is,Class).
+predicate(gaseous,SubClassOf,PhysicalStateState).
+predicate(gaseousDrugPresentationState,is,Class).
+predicate(gaseousState,is,Class).
+predicate(gelDrugForm,is,Class).
+predicate(graftDrugForm,is,Class).
+predicate(granuleDrugForm,is,Class).
+predicate(gumDrugForm,is,Class).
+predicate(herbDrugForm,is,Class).
+predicate(internalSelection,is,Class).
+predicate(jellyDrugForm,is,Class).
+predicate(lacquerDrugForm,is,Class).
+predicate(laminar,is,Class).
+predicate(leftRightPaired,is,Class).
+predicate(linctusDrugForm,is,Class).
+predicate(linear,is,Class).
+predicate(linerDrugForm,is,Class).
+predicate(linimentDrugForm,is,Class).
+predicate(lipstickDrugForm,is,Class).
+predicate(liquid,is,Class).
+predicate(liquid,SubClassOf,PhysicalStateState).
+predicate(liquidCrystal,is,Class).
+predicate(liquidCrystal,SubClassOf,PhysicalStateState).
+predicate(liquidDrugPresentationState,is,Class).
+predicate(liquidEmulsionDrugForm,is,Class).
+predicate(liquidGas,is,Class).
+predicate(liquidGas,SubClassOf,PhysicalStateState).
+predicate(liquidGasPresentationState,is,Class).
+predicate(liquidSolid,is,Class).
+predicate(liquidSolid,SubClassOf,PhysicalStateState).
+predicate(liquidSolidDrugPresentationState,is,Class).
+predicate(liquidState,is,Class).
+predicate(lollipopDrugForm,is,Class).
+predicate(lotionDrugForm,is,Class).
+predicate(lozengeDrugForm,is,Class).
+predicate(microemulsionDrugForm,is,Class).
+predicate(mirrorImaged,is,Class).
+predicate(nonNormal,is,Class).
+predicate(normal,is,Class).
+predicate(oilDrugForm,is,Class).
+predicate(ointmentDrugForm,is,Class).
+predicate(padDrugForm,is,Class).
+predicate(particulateDrugForm,is,Class).
+predicate(pasteDrugForm,is,Class).
+predicate(pastilleDrugForm,is,Class).
+predicate(patchDrugForm,is,Class).
+predicate(pathological,is,Class).
+predicate(pelletDrugForm,is,Class).
+predicate(pessaryDrugFrom,is,Class).
+predicate(pillShapedDrugForm,is,Class).
+predicate(plasterDrugForm,is,Class).
+predicate(plastic,is,Class).
+predicate(plastic,SubClassOf,PhysicalStateState).
+predicate(poulticeDrugForm,is,Class).
+predicate(powderDrugForm,is,Class).
+predicate(presence,is,Class).
+predicate(resistant,is,Class).
+predicate(salveDrugForm,is,Class).
+predicate(semiSolidEmulsionDrugForm,is,Class).
+predicate(slushDrugForm,is,Class).
+predicate(solid,is,Class).
+predicate(solid,SubClassOf,PhysicalStateState).
+predicate(solidDrugPresentationState,is,Class).
+predicate(solidImplantPresentationState,is,Class).
+predicate(solidRodDrugForm,is,Class).
+predicate(solidState,is,Class).
+predicate(solutionDrugForm,is,Class).
+predicate(spandetDrugForm,is,Class).
+predicate(spansuleDrugForm,is,Class).
+predicate(spongeDrugForm,is,Class).
+predicate(stickDrugForm,is,Class).
+predicate(stressedPhysicalHealthState,is,Class).
+predicate(stressedPhysicalHealthState,SubClassOf,LevelOfHealthState).
+predicate(stripDrugForm,is,Class).
+predicate(suppositoryDrugForm,is,Class).
+predicate(suspensionDrugForm,is,Class).
+predicate(sutureDrugForm,is,Class).
+predicate(swabDrugForm,is,Class).
+predicate(syrupSolutionDrugForm,is,Class).
+predicate(syrupSuspensionDrugForm,is,Class).
+predicate(tabletDrugForm,is,Class).
+predicate(tamponDrugForm,is,Class).
+predicate(tapeDrugForm,is,Class).
+predicate(tinctureDrugForm,is,Class).
+predicate(trocheDrugForm,is,Class).
+predicate(waferDrugForm,is,Class).
+predicate(waxDrugForm,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

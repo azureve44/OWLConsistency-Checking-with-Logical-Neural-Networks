@@ -1,0 +1,701 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(string,is,Datatype).
+predicate(dependsOn1,is,ObjectProperty).
+predicate(dependsOn2,is,ObjectProperty).
+predicate(dependsOn3,is,ObjectProperty).
+predicate(dependsOn4,is,ObjectProperty).
+predicate(ATM_polymorphism,is,Class).
+predicate(Abdomen_comp,is,Class).
+predicate(Abdomen_comp,SubClassOf,Complication_by_site).
+predicate(Age,is,Class).
+predicate(Age,SubClassOf,Demographic_Factor,).
+predicate(Age,SubClassOf,Meyer_et_al_2004_model).
+predicate(Ataxia_Telangiectasia,is,Class).
+predicate(Bayesian_Model,is,Class).
+predicate(Biological_Effective_Dose,is,Class).
+predicate(Bladder_comp_general,is,Class).
+predicate(Bladder_comp_general,SubClassOf,Bladder_complication).
+predicate(Bladder_complication,is,Class).
+predicate(Bladder_complication,SubClassOf,Genitourinary_disorder,).
+predicate(Bladder_complication,SubClassOf,Pelvis_comp,).
+predicate(Bladder_complication,SubClassOf,dependsOn4 some Dose_Pelvic_Nodes).
+predicate(Brachial_Plexopathy,is,Class).
+predicate(Brachial_Plexopathy,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(Brachial_Plexopathy,SubClassOf,Neck_and_Throat_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Dose_Per_Fraction).
+predicate(Brain_comp,is,Class).
+predicate(Brain_comp,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(Brain_comp,SubClassOf,Complication_by_site).
+predicate(Breast_cosmesis,is,Class).
+predicate(Breast_cosmesis,SubClassOf,Thorax_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some chest_wall_separation).
+predicate(CNS_PNS_or_Sensory_disorder,is,Class).
+predicate(CNS_PNS_or_Sensory_disorder,SubClassOf,Complication_by_system).
+predicate(Cardiomyopathy,is,Class).
+predicate(Cardiomyopathy,SubClassOf,Thorax_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Concurrent_Chemotherapy).
+predicate(Carotid_Atherosclerosis,is,Class).
+predicate(Carotid_Atherosclerosis,SubClassOf,Neck_and_Throat_comp).
+predicate(Carotid_Blowout,is,Class).
+predicate(Carotid_Blowout,SubClassOf,Neck_and_Throat_comp).
+predicate(Carotid_Stenosis,is,Class).
+predicate(Carotid_Stenosis,SubClassOf,Neck_and_Throat_comp).
+predicate(Clinical_Outcome,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Clinician_time_cost,is,Class).
+predicate(Clinician_time_cost,SubClassOf,Time_cost).
+predicate(Cognitive_impairment,is,Class).
+predicate(Cognitive_impairment,SubClassOf,Brain_comp,).
+predicate(Cognitive_impairment,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Age).
+predicate(Comorbidity,is,Class).
+predicate(Complication_by_site,is,Class).
+predicate(Complication_by_site,SubClassOf,Clinical_Outcome).
+predicate(Complication_by_system,is,Class).
+predicate(Complication_by_system,SubClassOf,Clinical_Outcome).
+predicate(Concurrent_Chemotherapy,is,Class).
+predicate(Concurrent_Chemotherapy,SubClassOf,Systemic_Therapy).
+predicate(Control_outcome,is,Class).
+predicate(Control_outcome,SubClassOf,Clinical_Outcome).
+predicate(Demographic_Factor,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Dental_Caries,is,Class).
+predicate(Dental_Caries,SubClassOf,Osteoradionecroses).
+predicate(Dental_Extraction,is,Class).
+predicate(Dental_Extraction,SubClassOf,Osteoradionecroses).
+predicate(Disease_Free_Survival,is,Class).
+predicate(Disease_Free_Survival,SubClassOf,Meyer_et_al_2004_model,).
+predicate(Disease_Free_Survival,SubClassOf,Survival,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Distant_metastasis,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Local_Control_general,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some M_Stage,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Prostate_Local_Control,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some GTV,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some N_Stage,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn4 some M_Stage).
+predicate(Distant_metastasis,is,Class).
+predicate(Distant_metastasis,SubClassOf,Control_outcome,).
+predicate(Distant_metastasis,SubClassOf,Smith_et_al_2009_model,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Resection_margin,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some PSA_control,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some PSA_doubling_time,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Pelvic_Nodal_Control,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn4 some Mean_Dose_Joint).
+predicate(Dose_Pelvic_Nodes,is,Class).
+predicate(Dose_Per_Fraction,is,Class).
+predicate(Dosing_Parameter,is,Class).
+predicate(Dry_Eye_Syndrome,is,Class).
+predicate(Dry_Eye_Syndrome,SubClassOf,Eyes_Ears_Nose_comp).
+predicate(Dysgeusia,is,Class).
+predicate(Dysgeusia,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(Dysgeusia,SubClassOf,Gastrointestinal_disorder,).
+predicate(Dysgeusia,SubClassOf,Neck_and_Throat_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some PTV_dose_general,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some Total_Dose_Anterior_Tounge).
+predicate(Dysosmia,is,Class).
+predicate(Dysosmia,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(Dysosmia,SubClassOf,Eyes_Ears_Nose_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_Olfactory_Epithelium).
+predicate(Dysphagea,is,Class).
+predicate(Dysphagea,SubClassOf,Gastrointestinal_disorder,).
+predicate(Dysphagea,SubClassOf,Neck_and_Throat_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Concurrent_Chemotherapy,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Esohpagus,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,International Journal of Radiation Oncology*Biology*Physics, Volume 72, Issue 4, 15 November 2008, Pages 1110-1118 Hale B. Caglar, Roy B. Tishler, Megan Othus, Elaine Burke, Yi Li, Laura Goguen, Lori J. Wirth, Robert I. Haddad, Carl M. Norris, Laurence E. Court, Donald J. Aninno, Marshall R. Posner, Aaron M. Allen\" year 2008).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V60_Constrictors,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some Mean_Dose_Laryngeal_Wall,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some V50_Larynx).
+predicate(Dysuria,is,Class).
+predicate(Dysuria,SubClassOf,Bladder_complication).
+predicate(Endocrine_disorder,is,Class).
+predicate(Endocrine_disorder,SubClassOf,Complication_by_system).
+predicate(Enteritis,is,Class).
+predicate(Enteritis,SubClassOf,Abdomen_comp,).
+predicate(Enteritis,SubClassOf,Gastrointestinal_disorder,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V5_small_bowel,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some V15_small_bowel).
+predicate(Equivalent_Uniform_Dose,is,Class).
+predicate(Equivalent_Uniform_Dose,SubClassOf,Smith_et_al_2009_model,).
+predicate(Equivalent_Uniform_Dose,SubClassOf,non_NTCP_factor).
+predicate(Esohpageal_Stricture,is,Class).
+predicate(Esohpageal_Stricture,SubClassOf,Gastrointestinal_disorder,).
+predicate(Esohpageal_Stricture,SubClassOf,Neck_and_Throat_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Fractionation_Scheme,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Gender,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V50_Larynx,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V50_inf_constrictors).
+predicate(Esophageal_Fistula,is,Class).
+predicate(Esophageal_Fistula,SubClassOf,Gastrointestinal_disorder,).
+predicate(Esophageal_Fistula,SubClassOf,Neck_and_Throat_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Concurrent_Chemotherapy,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Esohpagus).
+predicate(Esophagitis,is,Class).
+predicate(Esophagitis,SubClassOf,Gastrointestinal_disorder,).
+predicate(Esophagitis,SubClassOf,Neck_and_Throat_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Mean_Dose_Esophagus,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Concurrent_Chemotherapy,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V30_Esophagus).
+predicate(Extracapsular_extension,is,Class).
+predicate(Extremity_comp,is,Class).
+predicate(Extremity_comp,SubClassOf,Complication_by_site).
+predicate(Eyes_Ears_Nose_comp,is,Class).
+predicate(Eyes_Ears_Nose_comp,SubClassOf,Head_and_Neck_comp).
+predicate(Financial_cost,is,Class).
+predicate(Financial_cost,SubClassOf,RT_cost).
+predicate(Five_year_survival,is,Class).
+predicate(Five_year_survival,SubClassOf,Survival,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Concurrent_Chemotherapy,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Extracapsular_extension,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Histologic_Type,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Hypoxia,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Resection_margin).
+predicate(Fractionation_Scheme,is,Class).
+predicate(GTV,is,Class).
+predicate(Gastric_ulceration,is,Class).
+predicate(Gastric_ulceration,SubClassOf,Abdomen_comp,).
+predicate(Gastric_ulceration,SubClassOf,Gastrointestinal_disorder,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V50_small_bowel).
+predicate(Gastrointestinal_disorder,is,Class).
+predicate(Gastrointestinal_disorder,SubClassOf,Complication_by_system).
+predicate(Gender,is,Class).
+predicate(Gender,SubClassOf,Demographic_Factor).
+predicate(Generalized_Survival,is,Class).
+predicate(Generalized_Survival,SubClassOf,Survival,).
+predicate(Generalized_Survival,SubClassOf,dependsOn4 some Disease_Free_Survival,).
+predicate(Generalized_Survival,SubClassOf,dependsOn4 some Five_year_survival,).
+predicate(Generalized_Survival,SubClassOf,dependsOn4 some Overall_survival).
+predicate(Genitourinary_disorder,is,Class).
+predicate(Genitourinary_disorder,SubClassOf,Complication_by_system).
+predicate(Gleason,is,Class).
+predicate(HPV_status,is,Class).
+predicate(Head_and_Neck_comp,is,Class).
+predicate(Head_and_Neck_comp,SubClassOf,Complication_by_site).
+predicate(Hearing_Loss,is,Class).
+predicate(Hearing_Loss,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(Hearing_Loss,SubClassOf,Eyes_Ears_Nose_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_Cochlea).
+predicate(Heart_Valvular_Dysfunction,is,Class).
+predicate(Heart_Valvular_Dysfunction,SubClassOf,Thorax_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some V30_Heart_Valve).
+predicate(Hematuria,is,Class).
+predicate(Hematuria,SubClassOf,Bladder_complication).
+predicate(Histologic_Type,is,Class).
+predicate(Hyperprolactinemia,is,Class).
+predicate(Hyperprolactinemia,SubClassOf,Endocrine_disorder,).
+predicate(Hyperprolactinemia,SubClassOf,Thalamic_region_comp,).
+predicate(Hyperprolactinemia,SubClassOf,dependsOn2 some Max_Dose_Hypothalamus,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Pituitary_Gland,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Min_Dose_Pituitary_Gland).
+predicate(Hypoadrenalism,is,Class).
+predicate(Hypoadrenalism,SubClassOf,Endocrine_disorder,).
+predicate(Hypoadrenalism,SubClassOf,Thalamic_region_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Age,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Local_Control_general,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Hypothalamus,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Pituitary_Gland,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Min_Dose_Pituitary_Gland).
+predicate(Hypogonadism,is,Class).
+predicate(Hypogonadism,SubClassOf,Endocrine_disorder,).
+predicate(Hypogonadism,SubClassOf,Genitourinary_disorder,).
+predicate(Hypogonadism,SubClassOf,Thalamic_region_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Local_Control_general,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Hypothalamus,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Pituitary_Gland,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Min_Dose_Pituitary_Gland).
+predicate(Hypothyroidism,is,Class).
+predicate(Hypothyroidism,SubClassOf,Endocrine_disorder,).
+predicate(Hypothyroidism,SubClassOf,Thalamic_region_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Age,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Histologic_Type,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Hypothalamus,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Pituitary_Gland,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Min_Dose_Pituitary_Gland,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,International Journal of Radiation Oncology*Biology*Physics, Volume 68, Issue 4, 15 July 2007, Pages 1131-1139 Niranjan Bhandare, Laurence Kennedy, Robert S. Malyapa, Christopher G. Morris, William M. Mendenhall\" year2007).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Total_Dose_Thyroid,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some peri_RT_neck_surgery).
+predicate(Hypoxia,is,Class).
+predicate(Ischemic_Heart_Disease,is,Class).
+predicate(Ischemic_Heart_Disease,SubClassOf,Thorax_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Laterality).
+predicate(Isodose_line,is,Class).
+predicate(Isodose_line,SubClassOf,Prescription_Point).
+predicate(Karnofsky,is,Class).
+predicate(Laryngeal_Edema,is,Class).
+predicate(Laryngeal_Edema,SubClassOf,Neck_and_Throat_comp).
+predicate(Laterality,is,Class).
+predicate(Local_Control,is,Class).
+predicate(Local_Control,SubClassOf,Control_outcome).
+predicate(Local_Control_general,is,Class).
+predicate(Local_Control_general,SubClassOf,Local_Control,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Ataxia_Telangiectasia,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some PTV_dose_general).
+predicate(M_Stage,is,Class).
+predicate(Max_Dose_Anterior_Mandible,is,Class).
+predicate(Max_Dose_Esohpagus,is,Class).
+predicate(Max_Dose_Hypothalamus,is,Class).
+predicate(Max_Dose_Optic_Chiasm,is,Class).
+predicate(Max_Dose_Optic_Nerve,is,Class).
+predicate(Max_Dose_Pituitary_Gland,is,Class).
+predicate(Max_Dose_Spinal_Cord,is,Class).
+predicate(Mean_Dose_Cochlea,is,Class).
+predicate(Mean_Dose_Constrictors,is,Class).
+predicate(Mean_Dose_Esophagus,is,Class).
+predicate(Mean_Dose_Eye,is,Class).
+predicate(Mean_Dose_Heart,is,Class).
+predicate(Mean_Dose_Joint,is,Class).
+predicate(Mean_Dose_Laryngeal_Wall,is,Class).
+predicate(Mean_Dose_Liver,is,Class).
+predicate(Mean_Dose_Lung,is,Class).
+predicate(Mean_Dose_Olfactory_Epithelium,is,Class).
+predicate(Mean_Dose_Oral_cavity,is,Class).
+predicate(Mean_Dose_Parotid_Gland,is,Class).
+predicate(Mean_Dose_SMG,is,Class).
+predicate(Mean_Dose_SMG,DisjointWith,).
+predicate(Mean_Dose_SMG,DisjointWith,PTV_dose_Lung).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Mean_Dose_Sublingual_Gland,is,Class).
+predicate(Mean_Dose_cLat_Parotid_Gland,is,Class).
+predicate(Mean_Dose_cLat_SMG,is,Class).
+predicate(Medical_Imaging,is,Class).
+predicate(Medical_Imaging,SubClassOf,Radiology_Concept).
+predicate(Meyer_et_al_2004_model,is,Class).
+predicate(Min_Dose_Pituitary_Gland,is,Class).
+predicate(Mucositis,is,Class).
+predicate(Mucositis,SubClassOf,Gastrointestinal_disorder,).
+predicate(Mucositis,SubClassOf,Neck_and_Throat_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Fractionation_Scheme,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Dose_Per_Fraction,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Anterior_Mandible,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_Oral_cavity).
+predicate(Myelopathy,is,Class).
+predicate(Myelopathy,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(Myelopathy,SubClassOf,Neck_and_Throat_comp,).
+predicate(Myelopathy,SubClassOf,Spine,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Max_Dose_Spinal_Cord,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some V50_cord_cross_section,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Dose_Per_Fraction,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Max_Dose_Spinal_Cord).
+predicate(NSCLC_cost_utility_node,is,Class).
+predicate(NSCLC_cost_utility_node,SubClassOf,Utility_node).
+predicate(NTCP_Lung,is,Class).
+predicate(NTCP_Parotid_gland,is,Class).
+predicate(N_Stage,is,Class).
+predicate(Neck_and_Throat_comp,is,Class).
+predicate(Neck_and_Throat_comp,SubClassOf,Head_and_Neck_comp).
+predicate(Neck_comp_general,is,Class).
+predicate(Neck_comp_general,SubClassOf,Neck_and_Throat_comp).
+predicate(Nodal_Control,is,Class).
+predicate(Nodal_Control,SubClassOf,Control_outcome).
+predicate(Optic_Neuropathy,is,Class).
+predicate(Optic_Neuropathy,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(Optic_Neuropathy,SubClassOf,Eyes_Ears_Nose_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Max_Dose_Optic_Chiasm,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Max_Dose_Optic_Nerve,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Dose_Per_Fraction).
+predicate(Oropharynx_utility_node,is,Class).
+predicate(Oropharynx_utility_node,SubClassOf,Utility_node,).
+predicate(Oropharynx_utility_node,SubClassOf,dependsOn1 some Dysphagea,).
+predicate(Oropharynx_utility_node,SubClassOf,dependsOn1 some Overall_survival,).
+predicate(Oropharynx_utility_node,SubClassOf,dependsOn1 some Xerostomia).
+predicate(Osteoradionecroses,is,Class).
+predicate(Osteoradionecroses,SubClassOf,Head_and_Neck_comp).
+predicate(Overall_survival,is,Class).
+predicate(Overall_survival,SubClassOf,Survival,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Concurrent_Chemotherapy,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Resection_margin,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some GTV,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some HPV_status,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some PTV_dose_Lung,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some PTV_dose_general,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some num_positive_nodes,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some N_Stage,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some T_Stage,).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 only Mean_Dose_SMG).
+predicate(PSA,is,Class).
+predicate(PSA_control,is,Class).
+predicate(PSA_control,SubClassOf,Control_outcome,).
+predicate(PSA_control,SubClassOf,Smith_et_al_2009_model,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some bNED,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn4 some Equivalent_Uniform_Dose,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn4 some Prostate_PTV_coldVol).
+predicate(PSA_doubling_time,is,Class).
+predicate(PSA_doubling_time,SubClassOf,Smith_et_al_2009_model,).
+predicate(PSA_doubling_time,SubClassOf,non_NTCP_factor,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Gleason,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some PSA,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some T_Stage).
+predicate(PTV_dose_Lung,is,Class).
+predicate(PTV_dose_Lung,DisjointWith,Mean_Dose_SMG).
+predicate(PTV_dose_Rx,is,Class).
+predicate(PTV_dose_Rx,SubClassOf,Prescribed_dose).
+predicate(PTV_dose_general,is,Class).
+predicate(PTV_dose_general,SubClassOf,Prescribed_dose).
+predicate(PTV_to_Lung_volume_ratio,is,Class).
+predicate(Patient_time_cost,is,Class).
+predicate(Patient_time_cost,SubClassOf,Time_cost).
+predicate(Pelvic_Nodal_Control,is,Class).
+predicate(Pelvic_Nodal_Control,SubClassOf,Nodal_Control,).
+predicate(Pelvic_Nodal_Control,SubClassOf,Smith_et_al_2009_model,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Dose_Pelvic_Nodes,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Pelvic_nodal_inv).
+predicate(Pelvic_nodal_inv,is,Class).
+predicate(Pelvis_comp,is,Class).
+predicate(Pelvis_comp,SubClassOf,Complication_by_site).
+predicate(Pericarditis,is,Class).
+predicate(Pericarditis,SubClassOf,Thorax_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_Heart).
+predicate(Pharyngoesophageal_Dysfunction,is,Class).
+predicate(Pharyngoesophageal_Dysfunction,SubClassOf,Neck_and_Throat_comp).
+predicate(Plan_Technique,is,Class).
+predicate(Pneumonitis,is,Class).
+predicate(Pneumonitis,SubClassOf,Respiratory_disorder,).
+predicate(Pneumonitis,SubClassOf,Thorax_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some ATM_polymorphism,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Age,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_Lung,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some PTV_to_Lung_volume_ratio,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V20_Lung,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V30_Lung,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some peri_stemcell_transplant,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some NTCP_Lung).
+predicate(Point_dose,is,Class).
+predicate(Point_dose,SubClassOf,Prescription_Point).
+predicate(Prescribed_dose,is,Class).
+predicate(Prescribed_dose,SubClassOf,Dosing_Parameter).
+predicate(Prescription_Point,is,Class).
+predicate(Proctitis,is,Class).
+predicate(Proctitis,SubClassOf,Rectal_complication).
+predicate(Prostate_D95,is,Class).
+predicate(Prostate_Local_Control,is,Class).
+predicate(Prostate_Local_Control,SubClassOf,Local_Control,).
+predicate(Prostate_Local_Control,SubClassOf,Meyer_et_al_2004_model,).
+predicate(Prostate_Local_Control,SubClassOf,dependsOn4 some PSA_control,).
+predicate(Prostate_Local_Control,SubClassOf,dependsOn4 some Prostate_PTV_coldVol,).
+predicate(Prostate_Local_Control,SubClassOf,dependsOn4 some Prostate_PTV_hotVol).
+predicate(Prostate_PTV_coldVol,is,Class).
+predicate(Prostate_PTV_hotVol,is,Class).
+predicate(Prostate_utility_node,is,Class).
+predicate(Prostate_utility_node,SubClassOf,Utility_node).
+predicate(Pulmonary_Fibrosis,is,Class).
+predicate(Pulmonary_Fibrosis,SubClassOf,Respiratory_disorder,).
+predicate(Pulmonary_Fibrosis,SubClassOf,Thorax_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Karnofsky,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_Lung,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,Mazeron R1, Etienne-Mastroianni B, Pérol D, Arpin D, Vincent M, Falchero L, Martel-Lafay I, Carrie C, Claude L.\" year2010).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V10_Lung,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some V20_Lung).
+predicate(QALY,is,Class).
+predicate(QALY,SubClassOf,Quality_Of_Life).
+predicate(QOL,is,Class).
+predicate(QOL,SubClassOf,Meyer_et_al_2004_model,).
+predicate(QOL,SubClassOf,Quality_Of_Life,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Comorbidity,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn4 some Age).
+predicate(Quality_Of_Life,is,Class).
+predicate(Quality_Of_Life,SubClassOf,Clinical_Outcome).
+predicate(RBE,is,Class).
+predicate(RBE,SubClassOf,non_NTCP_factor).
+predicate(RILD,is,Class).
+predicate(RILD,SubClassOf,Abdomen_comp,).
+predicate(RILD,SubClassOf,Gastrointestinal_disorder,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some V30_Liver,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_Liver).
+predicate(RT_cost,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(RT_delivery_time,is,Class).
+predicate(RT_delivery_time,SubClassOf,Clinician_time_cost,).
+predicate(RT_delivery_time,SubClassOf,Patient_time_cost,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Plan_Technique).
+predicate(Radiation_necrosis,is,Class).
+predicate(Radiation_necrosis,SubClassOf,Brain_comp,).
+predicate(Radiation_necrosis,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Biological_Effective_Dose,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some Dose_Per_Fraction,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some GTV,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some PTV_dose_Rx,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn1 some V12_Brain).
+predicate(Radiology_Concept,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Rectal_Hemorrhage,is,Class).
+predicate(Rectal_Hemorrhage,SubClassOf,Rectal_complication).
+predicate(Rectal_complication,is,Class).
+predicate(Rectal_complication,SubClassOf,Gastrointestinal_disorder,).
+predicate(Rectal_complication,SubClassOf,Pelvis_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some V50_Rectum,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some V60_Rectum,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(//www.sciencedirect.com/science/article/pii/S0360301603006655),is,(http).
+predicate(Prostate cancer; Conformal radiotherapy; Rectal bleeding; Dose–volume histograms. year2003",is,Keywords).
+predicate(Prostate cancer; Conformal radiotherapy; Rectal bleeding; Dose–volume histograms. year2003",is,dependsOn3 some V70_Rectum,).
+predicate(Prostate cancer; Conformal radiotherapy; Rectal bleeding; Dose–volume histograms. year2003",is,dependsOn4 some Dose_Pelvic_Nodes).
+predicate(Rectal_fistula,is,Class).
+predicate(Rectal_fistula,SubClassOf,Rectal_complication).
+predicate(Reference_point_dose,is,Class).
+predicate(Reference_point_dose,SubClassOf,Prescribed_dose).
+predicate(Regional_Control,is,Class).
+predicate(Regional_Control,SubClassOf,Control_outcome).
+predicate(Resection_margin,is,Class).
+predicate(Respiratory_disorder,is,Class).
+predicate(Respiratory_disorder,SubClassOf,Complication_by_system).
+predicate(Retinopathy,is,Class).
+predicate(Retinopathy,SubClassOf,CNS_PNS_or_Sensory_disorder,).
+predicate(Retinopathy,SubClassOf,Eyes_Ears_Nose_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some Mean_Dose_Eye).
+predicate(Smith_et_al_2009_model,is,Class).
+predicate(Spine,is,Class).
+predicate(Spine,SubClassOf,Complication_by_site).
+predicate(Sticky_Saliva,is,Class).
+predicate(Sticky_Saliva,SubClassOf,Gastrointestinal_disorder,).
+predicate(Sticky_Saliva,SubClassOf,Neck_and_Throat_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_SMG,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_Sublingual_Gland,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_cLat_SMG).
+predicate(Survival,is,Class).
+predicate(Survival,SubClassOf,Clinical_Outcome).
+predicate(Systemic_Therapy,is,Class).
+predicate(T_Stage,is,Class).
+predicate(Thalamic_region_comp,is,Class).
+predicate(Thalamic_region_comp,SubClassOf,Head_and_Neck_comp).
+predicate(Thorax_comp,is,Class).
+predicate(Thorax_comp,SubClassOf,Complication_by_site).
+predicate(Time_cost,is,Class).
+predicate(Time_cost,SubClassOf,RT_cost).
+predicate(Total_Dose_Anterior_Tounge,is,Class).
+predicate(Total_Dose_Thyroid,is,Class).
+predicate(Trismus,is,Class).
+predicate(Trismus,SubClassOf,Neck_and_Throat_comp).
+predicate(Utility_node,is,Class).
+predicate(Utility_node,SubClassOf,Bayesian_Model).
+predicate(V10_Lung,is,Class).
+predicate(V12_Brain,is,Class).
+predicate(V15_small_bowel,is,Class).
+predicate(V20_Lung,is,Class).
+predicate(V30_Esophagus,is,Class).
+predicate(V30_Heart_Valve,is,Class).
+predicate(V30_Liver,is,Class).
+predicate(V30_Lung,is,Class).
+predicate(V50_Larynx,is,Class).
+predicate(V50_Rectum,is,Class).
+predicate(V50_cord_cross_section,is,Class).
+predicate(V50_inf_constrictors,is,Class).
+predicate(V50_small_bowel,is,Class).
+predicate(V5_small_bowel,is,Class).
+predicate(V60_Constrictors,is,Class).
+predicate(V60_Rectum,is,Class).
+predicate(V70_Rectum,is,Class).
+predicate(Vocal_Dysfunction,is,Class).
+predicate(Vocal_Dysfunction,SubClassOf,Neck_and_Throat_comp).
+predicate(Xerostomia,is,Class).
+predicate(Xerostomia,SubClassOf,Gastrointestinal_disorder,).
+predicate(Xerostomia,SubClassOf,Neck_and_Throat_comp,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_Parotid_Gland,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_SMG,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,").
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Mean_Dose_cLat_Parotid_Gland,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn3 some NTCP_Parotid_gland).
+predicate(bNED,is,Class).
+predicate(bNED,SubClassOf,Control_outcome,).
+predicate(bNED,SubClassOf,Meyer_et_al_2004_model,).
+predicate(bNED,SubClassOf,Smith_et_al_2009_model,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Gleason,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some PSA,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some Prostate_D95,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,dependsOn2 some T_Stage).
+predicate(chest_wall_separation,is,Class).
+predicate(non_NTCP_factor,is,Class).
+predicate(num_positive_nodes,is,Class).
+predicate(peri_RT_neck_surgery,is,Class).
+predicate(peri_stemcell_transplant,is,Class).
+predicate(rectal_comp_general,is,Class).
+predicate(rectal_comp_general,SubClassOf,Rectal_complication).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).

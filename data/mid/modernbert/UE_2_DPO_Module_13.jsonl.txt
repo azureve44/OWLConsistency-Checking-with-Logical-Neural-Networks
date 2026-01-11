@@ -1,0 +1,721 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+short is Datatype.
+string is Datatype.
+BFO_0000050 is ObjectProperty.
+BFO_0000051 is ObjectProperty.
+BFO_0000063 is ObjectProperty.
+FBcv_0008000 is ObjectProperty.
+FBdv_00018001 is ObjectProperty.
+RO_0000052 is ObjectProperty.
+RO_0002219 is ObjectProperty.
+RO_0002233 is ObjectProperty.
+RO_0002351 is ObjectProperty.
+RO_0002353 is ObjectProperty.
+RO_0002354 is ObjectProperty.
+RO_0002473 is ObjectProperty.
+RO_0002573 is ObjectProperty.
+RO_0002029 is DataProperty.
+CARO_0000012 is Class.
+CHEBI_15377 is Class.
+CHEBI_24835 is Class.
+CHEBI_25212 is Class.
+CHEBI_25212 SubClassOf CHEBI_52206.
+CHEBI_25555 is Class.
+CHEBI_25555 SubClassOf CHEBI_33300.
+CHEBI_33232 is Class.
+CHEBI_33259 is Class.
+CHEBI_33266 is Class.
+CHEBI_33266 SubClassOf CHEBI_33267.
+CHEBI_33267 is Class.
+CHEBI_33267 SubClassOf CHEBI_33465,.
+CHEBI_33267 SubClassOf CHEBI_51143.
+CHEBI_33300 is Class.
+CHEBI_33300 SubClassOf CHEBI_33560.
+CHEBI_33302 is Class.
+CHEBI_33465 is Class.
+CHEBI_33465 SubClassOf CHEBI_24835,.
+CHEBI_33465 SubClassOf CHEBI_33259,.
+CHEBI_33465 SubClassOf CHEBI_33302.
+CHEBI_33560 is Class.
+CHEBI_36338 is Class.
+CHEBI_36338 SubClassOf CHEBI_36340.
+CHEBI_36339 is Class.
+CHEBI_36339 SubClassOf CHEBI_36340,.
+CHEBI_36339 SubClassOf CHEBI_36344.
+CHEBI_36340 is Class.
+CHEBI_36340 SubClassOf CHEBI_36342.
+CHEBI_36342 is Class.
+CHEBI_36343 is Class.
+CHEBI_36344 is Class.
+CHEBI_36344 SubClassOf CHEBI_36343.
+CHEBI_37527 is Class.
+CHEBI_37527 SubClassOf CHEBI_51086.
+CHEBI_39141 is Class.
+CHEBI_39141 SubClassOf CHEBI_37527.
+CHEBI_46787 is Class.
+CHEBI_46787 SubClassOf CHEBI_33232,.
+CHEBI_46787 SubClassOf CHEBI_51086.
+CHEBI_48354 is Class.
+CHEBI_48354 SubClassOf CHEBI_46787.
+CHEBI_51086 is Class.
+CHEBI_51143 is Class.
+CHEBI_52206 is Class.
+CHEBI_75763 is Class.
+CHEBI_75763 SubClassOf CHEBI_25212.
+CHEBI_75787 is Class.
+CHEBI_75787 SubClassOf CHEBI_25212.
+CHEBI_78433 is Class.
+CHEBI_78433 SubClassOf CHEBI_33232.
+ENVO_00000340 is Class.
+ENVO_00000340 SubClassOf ENVO_01003002.
+ENVO_00000343 is Class.
+ENVO_00000343 SubClassOf ENVO_01003002.
+ENVO_00010483 is Class.
+ENVO_01000060 is Class.
+ENVO_01000277 is Class.
+ENVO_01000277 EquivalentTo ENVO_01001125 and (RO_0002473 some CHEBI_15377).
+ENVO_01000277 SubClassOf ENVO_01001125,.
+ENVO_01000277 SubClassOf RO_0002354 some.
+ENVO_01000277 SubClassOf (ENVO_01001549 or ENVO_03000008 or ENVO_03000055),.
+ENVO_01000277 SubClassOf RO_0002473 some CHEBI_15377.
+ENVO_01000624 is Class.
+ENVO_01000703 is Class.
+ENVO_01000703 SubClassOf ENVO_01000875,.
+ENVO_01000703 SubClassOf RO_0002233 some.
+ENVO_01000703 SubClassOf ((ENVO_00010483 and (RO_0002473 some CHEBI_15377)) and (RO_0002353 some ENVO_01000624)).
+ENVO_01000797 is Class.
+ENVO_01000815 is Class.
+ENVO_01000875 is Class.
+ENVO_01000895 is Class.
+ENVO_01000895 SubClassOf ENVO_01000703.
+ENVO_01001125 is Class.
+ENVO_01001549 is Class.
+ENVO_01001687 is Class.
+ENVO_01003002 is Class.
+ENVO_01003002 SubClassOf ENVO_01001687,.
+ENVO_01003002 SubClassOf BFO_0000050 some ENVO_01000060,.
+ENVO_01003002 SubClassOf RO_0002219 some.
+ENVO_01003002 SubClassOf (ENVO_01000797 or ENVO_01000815).
+ENVO_01003003 is Class.
+ENVO_01003003 SubClassOf ENVO_01003002.
+ENVO_03000008 is Class.
+ENVO_03000055 is Class.
+FBcv_0000351 is Class.
+FBcv_0000352 is Class.
+FBcv_0000352 EquivalentTo BFO_0000051 some.
+FBcv_0000352 EquivalentTo ((RO_0000052 some.
+FBcv_0000352 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0000352 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00007026)))) and (RO_0002351 only.
+FBcv_0000352 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00007026)))))) and (RO_0002029 some short[= "50"^^short , < "98"^^short])).
+FBcv_0000352 SubClassOf FBcv_0002015,.
+FBcv_0000352 SubClassOf BFO_0000051 some.
+FBcv_0000352 SubClassOf ((RO_0000052 some.
+FBcv_0000352 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0000352 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00007026)))) and (RO_0002351 only.
+FBcv_0000352 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00007026)))))) and (RO_0002029 some short[= "50"^^short , < "98"^^short])).
+FBcv_0000387 is Class.
+FBcv_0000387 EquivalentTo BFO_0000051 some.
+FBcv_0000387 EquivalentTo (PATO_0001236 and (RO_0000052 some GO_0007610) and (RO_0002573 some PATO_0000460)).
+FBcv_0000387 SubClassOf FBcv_0001347,.
+FBcv_0000387 SubClassOf BFO_0000051 some.
+FBcv_0000387 SubClassOf (PATO_0001236 and (RO_0000052 some GO_0007610) and (RO_0002573 some PATO_0000460)).
+FBcv_0000397 is Class.
+FBcv_0000397 SubClassOf FBcv_0000387.
+FBcv_0000398 is Class.
+FBcv_0000398 SubClassOf FBcv_0000387.
+FBcv_0000399 is Class.
+FBcv_0000402 is Class.
+FBcv_0000402 EquivalentTo BFO_0000051 some.
+FBcv_0000402 EquivalentTo (PATO_0001236 and (RO_0000052 some GO_0045433) and (RO_0002573 some PATO_0000460)).
+FBcv_0000402 SubClassOf FBcv_0000399,.
+FBcv_0000402 SubClassOf BFO_0000051 some.
+FBcv_0000402 SubClassOf (PATO_0001236 and (RO_0000052 some GO_0045433) and (RO_0002573 some PATO_0000460)).
+FBcv_0000403 is Class.
+FBcv_0000403 SubClassOf FBcv_0000387.
+FBcv_0000406 is Class.
+FBcv_0000406 SubClassOf FBcv_0000680.
+FBcv_0000411 is Class.
+FBcv_0000411 SubClassOf FBcv_0000387.
+FBcv_0000414 is Class.
+FBcv_0000414 SubClassOf FBcv_0000387.
+FBcv_0000415 is Class.
+FBcv_0000415 SubClassOf FBcv_0000387.
+FBcv_0000419 is Class.
+FBcv_0000419 SubClassOf FBcv_0000387.
+FBcv_0000420 is Class.
+FBcv_0000420 SubClassOf FBcv_0000387.
+FBcv_0000421 is Class.
+FBcv_0000421 SubClassOf FBcv_0000387.
+FBcv_0000422 is Class.
+FBcv_0000422 SubClassOf FBcv_0000387.
+FBcv_0000437 is Class.
+FBcv_0000445 is Class.
+FBcv_0000669 is Class.
+FBcv_0000669 SubClassOf FBcv_0000387.
+FBcv_0000679 is Class.
+FBcv_0000679 SubClassOf FBcv_0000387.
+FBcv_0000680 is Class.
+FBcv_0000720 is Class.
+FBcv_0000721 is Class.
+FBcv_0000721 SubClassOf FBcv_0000387.
+FBcv_0001324 is Class.
+FBcv_0001347 is Class.
+FBcv_0002000 is Class.
+FBcv_0002000 EquivalentTo BFO_0000051 some.
+FBcv_0002000 EquivalentTo ((RO_0000052 some.
+FBcv_0002000 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002000 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005370)))) and (RO_0002351 only.
+FBcv_0002000 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005370)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002000 SubClassOf FBcv_0000351,.
+FBcv_0002000 SubClassOf BFO_0000051 some.
+FBcv_0002000 SubClassOf ((RO_0000052 some.
+FBcv_0002000 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002000 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005370)))) and (RO_0002351 only.
+FBcv_0002000 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005370)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002001 is Class.
+FBcv_0002001 EquivalentTo BFO_0000051 some.
+FBcv_0002001 EquivalentTo ((RO_0000052 some.
+FBcv_0002001 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002001 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005338)))) and (RO_0002351 only.
+FBcv_0002001 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005338)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002001 SubClassOf FBcv_0002003,.
+FBcv_0002001 SubClassOf BFO_0000051 some.
+FBcv_0002001 SubClassOf ((RO_0000052 some.
+FBcv_0002001 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002001 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005338)))) and (RO_0002351 only.
+FBcv_0002001 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005338)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002002 is Class.
+FBcv_0002002 EquivalentTo BFO_0000051 some.
+FBcv_0002002 EquivalentTo ((RO_0000052 some.
+FBcv_0002002 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002002 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005342)))) and (RO_0002351 only.
+FBcv_0002002 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005342)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002002 SubClassOf FBcv_0002026,.
+FBcv_0002002 SubClassOf BFO_0000051 some.
+FBcv_0002002 SubClassOf ((RO_0000052 some.
+FBcv_0002002 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002002 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005342)))) and (RO_0002351 only.
+FBcv_0002002 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005342)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002003 is Class.
+FBcv_0002003 EquivalentTo BFO_0000051 some.
+FBcv_0002003 EquivalentTo ((RO_0000052 some.
+FBcv_0002003 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002003 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005339)))) and (RO_0002351 only.
+FBcv_0002003 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005339)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002003 SubClassOf FBcv_0002002,.
+FBcv_0002003 SubClassOf BFO_0000051 some.
+FBcv_0002003 SubClassOf ((RO_0000052 some.
+FBcv_0002003 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002003 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005339)))) and (RO_0002351 only.
+FBcv_0002003 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00005339)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002005 is Class.
+FBcv_0002005 EquivalentTo BFO_0000051 some.
+FBcv_0002005 EquivalentTo ((RO_0000052 some.
+FBcv_0002005 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002005 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007001)))) and (RO_0002351 only.
+FBcv_0002005 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007001)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002005 SubClassOf FBcv_0002000,.
+FBcv_0002005 SubClassOf FBcv_0002010,.
+FBcv_0002005 SubClassOf BFO_0000051 some.
+FBcv_0002005 SubClassOf ((RO_0000052 some.
+FBcv_0002005 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002005 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007001)))) and (RO_0002351 only.
+FBcv_0002005 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007001)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002006 is Class.
+FBcv_0002006 EquivalentTo BFO_0000051 some.
+FBcv_0002006 EquivalentTo ((RO_0000052 some.
+FBcv_0002006 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002006 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005337)))) and (RO_0002351 only.
+FBcv_0002006 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005337)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002006 SubClassOf FBcv_0002001,.
+FBcv_0002006 SubClassOf FBcv_0002007,.
+FBcv_0002006 SubClassOf FBcv_0002011,.
+FBcv_0002006 SubClassOf BFO_0000051 some.
+FBcv_0002006 SubClassOf ((RO_0000052 some.
+FBcv_0002006 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002006 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005337)))) and (RO_0002351 only.
+FBcv_0002006 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005337)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002007 is Class.
+FBcv_0002007 EquivalentTo BFO_0000051 some.
+FBcv_0002007 EquivalentTo ((RO_0000052 some.
+FBcv_0002007 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002007 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005336)))) and (RO_0002351 only.
+FBcv_0002007 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005336)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002007 SubClassOf FBcv_0002002,.
+FBcv_0002007 SubClassOf FBcv_0002012,.
+FBcv_0002007 SubClassOf BFO_0000051 some.
+FBcv_0002007 SubClassOf ((RO_0000052 some.
+FBcv_0002007 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002007 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005336)))) and (RO_0002351 only.
+FBcv_0002007 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005336)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002008 is Class.
+FBcv_0002008 SubClassOf FBcv_0002003,.
+FBcv_0002008 SubClassOf FBcv_0002007,.
+FBcv_0002008 SubClassOf FBcv_0002013.
+FBcv_0002009 is Class.
+FBcv_0002009 EquivalentTo BFO_0000051 some.
+FBcv_0002009 EquivalentTo ((RO_0000052 some.
+FBcv_0002009 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002009 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005339)))) and (RO_0002351 only.
+FBcv_0002009 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005339)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002009 SubClassOf FBcv_0002007,.
+FBcv_0002009 SubClassOf FBcv_0002014,.
+FBcv_0002009 SubClassOf BFO_0000051 some.
+FBcv_0002009 SubClassOf ((RO_0000052 some.
+FBcv_0002009 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002009 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005339)))) and (RO_0002351 only.
+FBcv_0002009 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005339)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002010 is Class.
+FBcv_0002011 is Class.
+FBcv_0002011 EquivalentTo BFO_0000051 some.
+FBcv_0002011 EquivalentTo ((RO_0000052 some.
+FBcv_0002011 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002011 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005337)))) and (RO_0002351 only.
+FBcv_0002011 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005337)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002011 SubClassOf FBcv_0002012,.
+FBcv_0002011 SubClassOf FBcv_0002021,.
+FBcv_0002011 SubClassOf BFO_0000051 some.
+FBcv_0002011 SubClassOf ((RO_0000052 some.
+FBcv_0002011 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002011 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005337)))) and (RO_0002351 only.
+FBcv_0002011 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005337)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002012 is Class.
+FBcv_0002013 is Class.
+FBcv_0002013 EquivalentTo BFO_0000051 some.
+FBcv_0002013 EquivalentTo ((RO_0000052 some.
+FBcv_0002013 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002013 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005338)))) and (RO_0002351 only.
+FBcv_0002013 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005338)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002013 SubClassOf FBcv_0002012,.
+FBcv_0002013 SubClassOf FBcv_0002022,.
+FBcv_0002013 SubClassOf BFO_0000051 some.
+FBcv_0002013 SubClassOf ((RO_0000052 some.
+FBcv_0002013 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002013 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005338)))) and (RO_0002351 only.
+FBcv_0002013 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005338)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002014 is Class.
+FBcv_0002014 EquivalentTo BFO_0000051 some.
+FBcv_0002014 EquivalentTo ((RO_0000052 some.
+FBcv_0002014 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002014 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005339)))) and (RO_0002351 only.
+FBcv_0002014 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005339)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002014 SubClassOf FBcv_0002012,.
+FBcv_0002014 SubClassOf FBcv_0002024,.
+FBcv_0002014 SubClassOf BFO_0000051 some.
+FBcv_0002014 SubClassOf ((RO_0000052 some.
+FBcv_0002014 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002014 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005339)))) and (RO_0002351 only.
+FBcv_0002014 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005339)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002015 is Class.
+FBcv_0002020 is Class.
+FBcv_0002021 is Class.
+FBcv_0002021 EquivalentTo BFO_0000051 some.
+FBcv_0002021 EquivalentTo ((RO_0000052 some.
+FBcv_0002021 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002021 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005337)))) and (RO_0002351 only.
+FBcv_0002021 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005337)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002021 SubClassOf FBcv_0002023,.
+FBcv_0002021 SubClassOf BFO_0000051 some.
+FBcv_0002021 SubClassOf ((RO_0000052 some.
+FBcv_0002021 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002021 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005337)))) and (RO_0002351 only.
+FBcv_0002021 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005337)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002022 is Class.
+FBcv_0002023 is Class.
+FBcv_0002024 is Class.
+FBcv_0002024 EquivalentTo BFO_0000051 some.
+FBcv_0002024 EquivalentTo ((RO_0000052 some.
+FBcv_0002024 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002024 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005339)))) and (RO_0002351 only.
+FBcv_0002024 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005339)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002024 SubClassOf FBcv_0002023,.
+FBcv_0002024 SubClassOf BFO_0000051 some.
+FBcv_0002024 SubClassOf ((RO_0000052 some.
+FBcv_0002024 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002024 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005339)))) and (RO_0002351 only.
+FBcv_0002024 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005339)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002025 is Class.
+FBcv_0002025 EquivalentTo BFO_0000051 some.
+FBcv_0002025 EquivalentTo ((RO_0000052 some.
+FBcv_0002025 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002025 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006011)))) and (RO_0002351 only.
+FBcv_0002025 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006011)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002025 SubClassOf FBcv_0002005,.
+FBcv_0002025 SubClassOf FBcv_0002036,.
+FBcv_0002025 SubClassOf BFO_0000051 some.
+FBcv_0002025 SubClassOf ((RO_0000052 some.
+FBcv_0002025 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002025 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006011)))) and (RO_0002351 only.
+FBcv_0002025 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006011)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002026 is Class.
+FBcv_0002026 SubClassOf FBcv_0002027.
+FBcv_0002027 is Class.
+FBcv_0002027 EquivalentTo BFO_0000051 some.
+FBcv_0002027 EquivalentTo ((RO_0000052 some.
+FBcv_0002027 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002027 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00006011)))) and (RO_0002351 only.
+FBcv_0002027 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00006011)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002027 SubClassOf FBcv_0002000,.
+FBcv_0002027 SubClassOf BFO_0000051 some.
+FBcv_0002027 SubClassOf ((RO_0000052 some.
+FBcv_0002027 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002027 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00006011)))) and (RO_0002351 only.
+FBcv_0002027 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000063 some FBdv_00006011)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002030 is Class.
+FBcv_0002030 SubClassOf FBcv_0002005,.
+FBcv_0002030 SubClassOf FBcv_0002027.
+FBcv_0002031 is Class.
+FBcv_0002031 EquivalentTo BFO_0000051 some.
+FBcv_0002031 EquivalentTo ((RO_0000052 some.
+FBcv_0002031 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002031 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005342)))) and (RO_0002351 only.
+FBcv_0002031 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005342)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002031 SubClassOf FBcv_0002005,.
+FBcv_0002031 SubClassOf FBcv_0002026,.
+FBcv_0002031 SubClassOf FBcv_0002035,.
+FBcv_0002031 SubClassOf BFO_0000051 some.
+FBcv_0002031 SubClassOf ((RO_0000052 some.
+FBcv_0002031 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002031 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005342)))) and (RO_0002351 only.
+FBcv_0002031 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005342)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002032 is Class.
+FBcv_0002033 is Class.
+www.w3.org/2000/01/-schema# is Annotations.
+www.w3.org/2000/01/-schema# is BFO_0000051 some.
+www.w3.org/2000/01/-schema# is ((RO_0000052 some.
+www.w3.org/2000/01/-schema# is (FBcv_0006003 and (RO_0002351 some.
+www.w3.org/2000/01/-schema# is (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005289)))) and (RO_0002351 only.
+www.w3.org/2000/01/-schema# is (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005289)))))) and (RO_0002029 some short[= "98"^^short])).
+www.w3.org/2000/01/-schema# SubClassOf FBcv_0002001,.
+www.w3.org/2000/01/-schema# SubClassOf FBcv_0002037,.
+www.w3.org/2000/01/-schema# SubClassOf BFO_0000051 some.
+www.w3.org/2000/01/-schema# SubClassOf ((RO_0000052 some.
+www.w3.org/2000/01/-schema# SubClassOf (FBcv_0006003 and (RO_0002351 some.
+www.w3.org/2000/01/-schema# SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005289)))) and (RO_0002351 only.
+www.w3.org/2000/01/-schema# SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005289)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002034 is Class.
+FBcv_0002034 SubClassOf FBcv_0002039.
+FBcv_0002035 is Class.
+FBcv_0002035 EquivalentTo BFO_0000051 some.
+FBcv_0002035 EquivalentTo ((RO_0000052 some.
+FBcv_0002035 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002035 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005342)))) and (RO_0002351 only.
+FBcv_0002035 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005342)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002035 SubClassOf FBcv_0002010,.
+FBcv_0002035 SubClassOf FBcv_0002040,.
+FBcv_0002035 SubClassOf BFO_0000051 some.
+FBcv_0002035 SubClassOf ((RO_0000052 some.
+FBcv_0002035 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002035 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005342)))) and (RO_0002351 only.
+FBcv_0002035 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005342)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002036 is Class.
+FBcv_0002036 SubClassOf FBcv_0002038.
+FBcv_0002037 is Class.
+FBcv_0002037 EquivalentTo BFO_0000051 some.
+FBcv_0002037 EquivalentTo ((RO_0000052 some.
+FBcv_0002037 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002037 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005289)))) and (RO_0002351 only.
+FBcv_0002037 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005289)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002037 SubClassOf FBcv_0002041,.
+FBcv_0002037 SubClassOf BFO_0000051 some.
+FBcv_0002037 SubClassOf ((RO_0000052 some.
+FBcv_0002037 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002037 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005289)))) and (RO_0002351 only.
+FBcv_0002037 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00005289)))))) and (RO_0002029 some short[= "50"^^short])),.
+FBcv_0002037 SubClassOf BFO_0000051 only (BFO_0000051 some.
+FBcv_0002037 SubClassOf ((RO_0000052 some.
+FBcv_0002037 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002037 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00006011)))) and (RO_0002351 only.
+FBcv_0002037 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00006011)))))) and (RO_0002029 some short[= "5"^^short]))).
+FBcv_0002038 is Class.
+FBcv_0002038 EquivalentTo BFO_0000051 some.
+FBcv_0002038 EquivalentTo ((RO_0000052 some.
+FBcv_0002038 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002038 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00006011)))) and (RO_0002351 only.
+FBcv_0002038 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00006011)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002038 SubClassOf FBcv_0002020,.
+FBcv_0002038 SubClassOf BFO_0000051 some.
+FBcv_0002038 SubClassOf ((RO_0000052 some.
+FBcv_0002038 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002038 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00006011)))) and (RO_0002351 only.
+FBcv_0002038 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00006011)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002039 is Class.
+FBcv_0002039 EquivalentTo BFO_0000051 some.
+FBcv_0002039 EquivalentTo ((RO_0000052 some.
+FBcv_0002039 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002039 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005349)))) and (RO_0002351 only.
+FBcv_0002039 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005349)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002039 SubClassOf FBcv_0002020,.
+FBcv_0002039 SubClassOf BFO_0000051 some.
+FBcv_0002039 SubClassOf ((RO_0000052 some.
+FBcv_0002039 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002039 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005349)))) and (RO_0002351 only.
+FBcv_0002039 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005349)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002040 is Class.
+FBcv_0002040 EquivalentTo BFO_0000051 some.
+FBcv_0002040 EquivalentTo ((RO_0000052 some.
+FBcv_0002040 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002040 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005342)))) and (RO_0002351 only.
+FBcv_0002040 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005342)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002040 SubClassOf FBcv_0002020,.
+FBcv_0002040 SubClassOf BFO_0000051 some.
+FBcv_0002040 SubClassOf ((RO_0000052 some.
+FBcv_0002040 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002040 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005342)))) and (RO_0002351 only.
+FBcv_0002040 SubClassOf (CARO_0000012 and (FBcv_0008000 some (BFO_0000050 some FBdv_00005342)))))) and (RO_0002029 some short[= "5"^^short])).
+FBcv_0002041 is Class.
+FBcv_0002042 is Class.
+FBcv_0002042 EquivalentTo BFO_0000051 some.
+FBcv_0002042 EquivalentTo ((RO_0000052 some.
+FBcv_0002042 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002042 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006012)))) and (RO_0002351 only.
+FBcv_0002042 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006012)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002042 SubClassOf FBcv_0000351,.
+FBcv_0002042 SubClassOf FBcv_0002050,.
+FBcv_0002042 SubClassOf BFO_0000051 some.
+FBcv_0002042 SubClassOf ((RO_0000052 some.
+FBcv_0002042 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002042 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006012)))) and (RO_0002351 only.
+FBcv_0002042 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00006012)))))) and (RO_0002029 some short[= "98"^^short])).
+FBcv_0002050 is Class.
+FBcv_0002050 EquivalentTo BFO_0000051 some.
+FBcv_0002050 EquivalentTo ((RO_0000052 some.
+FBcv_0002050 EquivalentTo (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002050 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007025)))) and (RO_0002351 only.
+FBcv_0002050 EquivalentTo (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007025)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002050 SubClassOf FBcv_0002051,.
+FBcv_0002050 SubClassOf BFO_0000051 some.
+FBcv_0002050 SubClassOf ((RO_0000052 some.
+FBcv_0002050 SubClassOf (FBcv_0006003 and (RO_0002351 some.
+FBcv_0002050 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007025)))) and (RO_0002351 only.
+FBcv_0002050 SubClassOf (CARO_0000012 and (FBcv_0008000 some (FBdv_00018001 some FBdv_00007025)))))) and (RO_0002029 some short[= "50"^^short])).
+FBcv_0002051 is Class.
+FBcv_0006000 is Class.
+FBcv_0006003 is Class.
+FBcv_0006003 EquivalentTo PCO_0000001 and (RO_0002351 some CARO_0000012) and (RO_0002351 only CARO_0000012).
+FBcv_0006003 SubClassOf PCO_0000001,.
+FBcv_0006003 SubClassOf RO_0002351 some CARO_0000012.
+FBcv_0006004 is Class.
+FBcv_0006004 SubClassOf FBcv_0000387.
+FBcv_0007500 is Class.
+FBcv_0007501 is Class.
+FBcv_0007502 is Class.
+FBcv_0007503 is Class.
+FBcv_0007517 is Class.
+FBcv_0007518 is Class.
+FBcv_0007519 is Class.
+FBcv_0007519 EquivalentTo BFO_0000051 some.
+FBcv_0007519 EquivalentTo (PATO_0015004 and (RO_0000052 some GO_0007614) and (RO_0002573 some PATO_0000460)).
+FBcv_0007519 SubClassOf FBcv_0007501,.
+FBcv_0007519 SubClassOf FBcv_0007517,.
+FBcv_0007519 SubClassOf BFO_0000051 some.
+FBcv_0007519 SubClassOf (PATO_0015004 and (RO_0000052 some GO_0007614) and (RO_0002573 some PATO_0000460)).
+FBcv_0007520 is Class.
+FBcv_0007520 EquivalentTo BFO_0000051 some.
+FBcv_0007520 EquivalentTo (PATO_0015003 and (RO_0000052 some GO_0007614) and (RO_0002573 some PATO_0000460)).
+FBcv_0007520 SubClassOf FBcv_0007501,.
+FBcv_0007520 SubClassOf FBcv_0007518,.
+FBcv_0007520 SubClassOf BFO_0000051 some.
+FBcv_0007520 SubClassOf (PATO_0015003 and (RO_0000052 some GO_0007614) and (RO_0002573 some PATO_0000460)).
+FBcv_0007521 is Class.
+FBcv_0007521 EquivalentTo BFO_0000051 some.
+FBcv_0007521 EquivalentTo (PATO_0015004 and (RO_0000052 some GO_0007616) and (RO_0002573 some PATO_0000460)).
+FBcv_0007521 SubClassOf FBcv_0007503,.
+FBcv_0007521 SubClassOf FBcv_0007517,.
+FBcv_0007521 SubClassOf BFO_0000051 some.
+FBcv_0007521 SubClassOf (PATO_0015004 and (RO_0000052 some GO_0007616) and (RO_0002573 some PATO_0000460)).
+FBcv_0007522 is Class.
+FBcv_0007522 EquivalentTo BFO_0000051 some.
+FBcv_0007522 EquivalentTo (PATO_0015003 and (RO_0000052 some GO_0007616) and (RO_0002573 some PATO_0000460)).
+FBcv_0007522 SubClassOf FBcv_0007503,.
+FBcv_0007522 SubClassOf FBcv_0007518,.
+FBcv_0007522 SubClassOf BFO_0000051 some.
+FBcv_0007522 SubClassOf (PATO_0015003 and (RO_0000052 some GO_0007616) and (RO_0002573 some PATO_0000460)).
+FBcv_0007523 is Class.
+FBcv_0007523 EquivalentTo BFO_0000051 some.
+FBcv_0007523 EquivalentTo (PATO_0015004 and (RO_0000052 some GO_0007615) and (RO_0002573 some PATO_0000460)).
+FBcv_0007523 SubClassOf FBcv_0007500,.
+FBcv_0007523 SubClassOf FBcv_0007517,.
+FBcv_0007523 SubClassOf BFO_0000051 some.
+FBcv_0007523 SubClassOf (PATO_0015004 and (RO_0000052 some GO_0007615) and (RO_0002573 some PATO_0000460)).
+FBcv_0007524 is Class.
+FBcv_0007524 EquivalentTo BFO_0000051 some.
+FBcv_0007524 EquivalentTo (PATO_0015003 and (RO_0000052 some GO_0007615) and (RO_0002573 some PATO_0000460)).
+FBcv_0007524 SubClassOf FBcv_0007500,.
+FBcv_0007524 SubClassOf FBcv_0007518,.
+FBcv_0007524 SubClassOf BFO_0000051 some.
+FBcv_0007524 SubClassOf (PATO_0015003 and (RO_0000052 some GO_0007615) and (RO_0002573 some PATO_0000460)).
+FBcv_0007525 is Class.
+FBcv_0007525 EquivalentTo BFO_0000051 some.
+FBcv_0007525 EquivalentTo (PATO_0015004 and (RO_0000052 some GO_0072375) and (RO_0002573 some PATO_0000460)).
+FBcv_0007525 SubClassOf FBcv_0007502,.
+FBcv_0007525 SubClassOf FBcv_0007517,.
+FBcv_0007525 SubClassOf BFO_0000051 some.
+FBcv_0007525 SubClassOf (PATO_0015004 and (RO_0000052 some GO_0072375) and (RO_0002573 some PATO_0000460)).
+FBcv_0007526 is Class.
+FBcv_0007526 EquivalentTo BFO_0000051 some.
+FBcv_0007526 EquivalentTo (PATO_0015003 and (RO_0000052 some GO_0072375) and (RO_0002573 some PATO_0000460)).
+FBcv_0007526 SubClassOf FBcv_0007502,.
+FBcv_0007526 SubClassOf FBcv_0007518,.
+FBcv_0007526 SubClassOf BFO_0000051 some.
+FBcv_0007526 SubClassOf (PATO_0015003 and (RO_0000052 some GO_0072375) and (RO_0002573 some PATO_0000460)).
+FBcv_0007527 is Class.
+FBcv_0007527 EquivalentTo BFO_0000051 some.
+FBcv_0007527 EquivalentTo (PATO_0001236 and (RO_0000052 some GO_0007628) and (RO_0002573 some PATO_0000460)).
+FBcv_0007527 SubClassOf FBcv_0007529,.
+FBcv_0007527 SubClassOf BFO_0000051 some.
+FBcv_0007527 SubClassOf (PATO_0001236 and (RO_0000052 some GO_0007628) and (RO_0002573 some PATO_0000460)).
+FBcv_0007528 is Class.
+FBcv_0007529 is Class.
+FBcv_0007532 is Class.
+FBcv_0007533 is Class.
+FBcv_0007533 EquivalentTo BFO_0000051 some.
+FBcv_0007533 EquivalentTo (PATO_0000912 and (RO_0000052 some GO_0007637) and (RO_0002573 some PATO_0000460)).
+FBcv_0007533 SubClassOf FBcv_0000680,.
+FBcv_0007533 SubClassOf FBcv_0007532,.
+FBcv_0007533 SubClassOf BFO_0000051 some.
+FBcv_0007533 SubClassOf (PATO_0000912 and (RO_0000052 some GO_0007637) and (RO_0002573 some PATO_0000460)).
+FBcv_0007535 is Class.
+FBcv_0007536 is Class.
+FBcv_0007536 SubClassOf FBcv_0007527,.
+FBcv_0007536 SubClassOf FBcv_0007538.
+FBcv_0007537 is Class.
+FBcv_0007537 EquivalentTo BFO_0000051 some.
+FBcv_0007537 EquivalentTo (PATO_0000912 and (RO_0000052 some GO_0008345) and (RO_0002573 some PATO_0000460)).
+FBcv_0007537 SubClassOf FBcv_0007528,.
+FBcv_0007537 SubClassOf FBcv_0007535,.
+FBcv_0007537 SubClassOf BFO_0000051 some.
+FBcv_0007537 SubClassOf (PATO_0000912 and (RO_0000052 some GO_0008345) and (RO_0002573 some PATO_0000460)).
+FBcv_0007538 is Class.
+FBcv_0007538 EquivalentTo BFO_0000051 some.
+FBcv_0007538 EquivalentTo (PATO_0000912 and (RO_0000052 some GO_0008344) and (RO_0002573 some PATO_0000460)).
+FBcv_0007538 SubClassOf FBcv_0007529,.
+FBcv_0007538 SubClassOf FBcv_0007535,.
+FBcv_0007538 SubClassOf BFO_0000051 some.
+FBcv_0007538 SubClassOf (PATO_0000912 and (RO_0000052 some GO_0008344) and (RO_0002573 some PATO_0000460)).
+FBcv_0007539 is Class.
+FBcv_0007540 is Class.
+FBcv_0007540 EquivalentTo BFO_0000051 some.
+FBcv_0007540 EquivalentTo (PATO_0000912 and (RO_0000052 some GO_0007619) and (RO_0002573 some PATO_0000460)).
+FBcv_0007540 SubClassOf FBcv_0000399,.
+FBcv_0007540 SubClassOf FBcv_0007539,.
+FBcv_0007540 SubClassOf BFO_0000051 some.
+FBcv_0007540 SubClassOf (PATO_0000912 and (RO_0000052 some GO_0007619) and (RO_0002573 some PATO_0000460)).
+FBcv_0007541 is Class.
+FBcv_0007541 EquivalentTo BFO_0000051 some.
+FBcv_0007541 EquivalentTo (PATO_0000912 and (RO_0000052 some GO_0007629) and (RO_0002573 some PATO_0000460)).
+FBcv_0007541 SubClassOf FBcv_0007538,.
+FBcv_0007541 SubClassOf BFO_0000051 some.
+FBcv_0007541 SubClassOf (PATO_0000912 and (RO_0000052 some GO_0007629) and (RO_0002573 some PATO_0000460)).
+FBcv_0007542 is Class.
+FBcv_0007542 EquivalentTo BFO_0000051 some.
+FBcv_0007542 EquivalentTo (PATO_0000912 and (RO_0000052 some GO_0007630) and (RO_0002573 some PATO_0000460)).
+FBcv_0007542 SubClassOf FBcv_0000720,.
+FBcv_0007542 SubClassOf FBcv_0007538,.
+FBcv_0007542 SubClassOf BFO_0000051 some.
+FBcv_0007542 SubClassOf (PATO_0000912 and (RO_0000052 some GO_0007630) and (RO_0002573 some PATO_0000460)).
+FBcv_0007543 is Class.
+FBcv_0007543 EquivalentTo BFO_0000051 some.
+FBcv_0007543 EquivalentTo (PATO_0000912 and (RO_0000052 some GO_0007620) and (RO_0002573 some PATO_0000460)).
+FBcv_0007543 SubClassOf FBcv_0006000,.
+FBcv_0007543 SubClassOf FBcv_0007539,.
+FBcv_0007543 SubClassOf BFO_0000051 some.
+FBcv_0007543 SubClassOf (PATO_0000912 and (RO_0000052 some GO_0007620) and (RO_0002573 some PATO_0000460)).
+FBcv_0007544 is Class.
+FBcv_0007545 is Class.
+FBcv_0007545 EquivalentTo BFO_0000051 some.
+FBcv_0007545 EquivalentTo (PATO_0000911 and (RO_0000052 some GO_0007637) and (RO_0002573 some PATO_0000460)).
+FBcv_0007545 SubClassOf FBcv_0000680,.
+FBcv_0007545 SubClassOf FBcv_0007544,.
+FBcv_0007545 SubClassOf BFO_0000051 some.
+FBcv_0007545 SubClassOf (PATO_0000911 and (RO_0000052 some GO_0007637) and (RO_0002573 some PATO_0000460)).
+FBcv_0007547 is Class.
+FBcv_0007548 is Class.
+FBcv_0007548 SubClassOf FBcv_0007527,.
+FBcv_0007548 SubClassOf FBcv_0007550.
+FBcv_0007549 is Class.
+FBcv_0007549 EquivalentTo BFO_0000051 some.
+FBcv_0007549 EquivalentTo (PATO_0000911 and (RO_0000052 some GO_0008345) and (RO_0002573 some PATO_0000460)).
+FBcv_0007549 SubClassOf FBcv_0007528,.
+FBcv_0007549 SubClassOf FBcv_0007547,.
+FBcv_0007549 SubClassOf BFO_0000051 some.
+FBcv_0007549 SubClassOf (PATO_0000911 and (RO_0000052 some GO_0008345) and (RO_0002573 some PATO_0000460)).
+FBcv_0007550 is Class.
+FBcv_0007550 EquivalentTo BFO_0000051 some.
+FBcv_0007550 EquivalentTo (PATO_0000911 and (RO_0000052 some GO_0008344) and (RO_0002573 some PATO_0000460)).
+FBcv_0007550 SubClassOf FBcv_0007529,.
+FBcv_0007550 SubClassOf FBcv_0007547,.
+FBcv_0007550 SubClassOf BFO_0000051 some.
+FBcv_0007550 SubClassOf (PATO_0000911 and (RO_0000052 some GO_0008344) and (RO_0002573 some PATO_0000460)).
+FBcv_0007551 is Class.
+FBcv_0007552 is Class.
+FBcv_0007552 EquivalentTo BFO_0000051 some.
+FBcv_0007552 EquivalentTo (PATO_0000911 and (RO_0000052 some GO_0007619) and (RO_0002573 some PATO_0000460)).
+FBcv_0007552 SubClassOf FBcv_0000399,.
+FBcv_0007552 SubClassOf FBcv_0007551,.
+FBcv_0007552 SubClassOf BFO_0000051 some.
+FBcv_0007552 SubClassOf (PATO_0000911 and (RO_0000052 some GO_0007619) and (RO_0002573 some PATO_0000460)).
+FBcv_0007553 is Class.
+FBcv_0007553 EquivalentTo BFO_0000051 some.
+FBcv_0007553 EquivalentTo (PATO_0000911 and (RO_0000052 some GO_0007629) and (RO_0002573 some PATO_0000460)).
+FBcv_0007553 SubClassOf FBcv_0007550,.
+FBcv_0007553 SubClassOf BFO_0000051 some.
+FBcv_0007553 SubClassOf (PATO_0000911 and (RO_0000052 some GO_0007629) and (RO_0002573 some PATO_0000460)).
+FBcv_0007554 is Class.
+FBcv_0007554 EquivalentTo BFO_0000051 some.
+FBcv_0007554 EquivalentTo (PATO_0000911 and (RO_0000052 some GO_0007630) and (RO_0002573 some PATO_0000460)).
+FBcv_0007554 SubClassOf FBcv_0000720,.
+FBcv_0007554 SubClassOf FBcv_0007550,.
+FBcv_0007554 SubClassOf BFO_0000051 some.
+FBcv_0007554 SubClassOf (PATO_0000911 and (RO_0000052 some GO_0007630) and (RO_0002573 some PATO_0000460)).
+FBcv_0007555 is Class.
+FBcv_0007555 EquivalentTo BFO_0000051 some.
+FBcv_0007555 EquivalentTo (PATO_0000911 and (RO_0000052 some GO_0007620) and (RO_0002573 some PATO_0000460)).
+FBcv_0007555 SubClassOf FBcv_0006000,.
+FBcv_0007555 SubClassOf FBcv_0007551,.
+FBcv_0007555 SubClassOf BFO_0000051 some.
+FBcv_0007555 SubClassOf (PATO_0000911 and (RO_0000052 some GO_0007620) and (RO_0002573 some PATO_0000460)).
+FBdv_00005289 is Class.
+FBdv_00005336 is Class.
+FBdv_00005337 is Class.
+FBdv_00005338 is Class.
+FBdv_00005339 is Class.
+FBdv_00005342 is Class.
+FBdv_00005349 is Class.
+FBdv_00005370 is Class.
+FBdv_00006011 is Class.
+FBdv_00006012 is Class.
+FBdv_00007001 is Class.
+FBdv_00007025 is Class.
+FBdv_00007026 is Class.
+GO_0007610 is Class.
+GO_0007614 is Class.
+GO_0007615 is Class.
+GO_0007616 is Class.
+GO_0007619 is Class.
+GO_0007620 is Class.
+GO_0007628 is Class.
+GO_0007629 is Class.
+GO_0007630 is Class.
+GO_0007637 is Class.
+GO_0008344 is Class.
+GO_0008345 is Class.
+GO_0045433 is Class.
+GO_0072375 is Class.
+NBO_0000317 is Class.
+NBO_0000317 SubClassOf NBO_0000327.
+NBO_0000327 is Class.
+NBO_0000327 SubClassOf NBO_0000751.
+NBO_0000330 is Class.
+NBO_0000330 SubClassOf NBO_0000327.
+NBO_0000339 is Class.
+NBO_0000339 SubClassOf NBO_0000317.
+NBO_0000751 is Class.
+PATO_0000460 is Class.
+PATO_0000911 is Class.
+PATO_0000912 is Class.
+PATO_0001236 is Class.
+PATO_0015003 is Class.
+PATO_0015004 is Class.
+PCO_0000001 is Class.
+www.w3.org/2002/07/# is Class.

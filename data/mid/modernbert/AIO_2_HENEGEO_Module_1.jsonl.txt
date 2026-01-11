@@ -1,0 +1,31 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+explores is ObjectProperty.
+explores Domain subject-data-acquisition-artefact.
+explores Range domain.
+explores InverseOf is-explored-by.
+is-explored-by is ObjectProperty.
+is-explored-by InverseOf explores.
+allows-to-carry-out is ObjectProperty.
+assessment-instrument is Class.
+assessment-instrument SubClassOf subject-data-acquisition-artefact.
+assessment-instrument DisjointWith .
+assessment-instrument DisjointWith subject-data-acquisition.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing is www.w3.org/2002/07/#.
+domain is Class.
+instrument-variable is Class.
+instrument-variable SubClassOf subject-data-acquisition-artefact.
+subject-data-acquisition is Class.
+subject-data-acquisition DisjointWith assessment-instrument.
+subject-data-acquisition-artefact is Class.
+subject-data-acquisition-artefact SubClassOf technical-artefact,.
+subject-data-acquisition-artefact SubClassOf allows-to-carry-out some subject-data-acquisition,.
+subject-data-acquisition-artefact SubClassOf allows-to-carry-out some.
+subject-data-acquisition-artefact SubClassOf (assessment-instrument and subject-data-acquisition),.
+subject-data-acquisition-artefact SubClassOf allows-to-carry-out only assessment-instrument.
+technical-artefact is Class.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.
+allows-to-carry-out some subject-data-acquisition is Class.
+allows-to-carry-out some subject-data-acquisition SubClassOf assessment-instrument.

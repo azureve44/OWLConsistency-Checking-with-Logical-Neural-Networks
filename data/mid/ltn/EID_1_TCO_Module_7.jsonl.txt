@@ -1,0 +1,56 @@
+is(describes,ObjectProperty):1.0
+is(is_a,ObjectProperty):1.0
+is(part_of,ObjectProperty):1.0
+is(Atrial_fibrillation,Class):1.0
+EquivalentTo(Atrial_fibrillation,is_a some Heart_Disorder):1.0
+SubClassOf(Atrial_fibrillation,Heart_Disorder):1.0
+is(Biopsy_of_Thyroid_Gland,Class):1.0
+SubClassOf(Biopsy_of_Thyroid_Gland,Investigation):1.0
+is(Clinical_Aspects,Class):1.0
+is(Cytologic_Test,Class):1.0
+is(Diagnostic_Imaging,Class):1.0
+SubClassOf(Diagnostic_Imaging,Investigation):1.0
+is(FNA-Tg,Class):1.0
+EquivalentTo(FNA-Tg,is_a some Fine-Needle_Aspiration):1.0
+SubClassOf(FNA-Tg,Fine-Needle_Aspiration):1.0
+is(FNA-calcitonin,Class):1.0
+EquivalentTo(FNA-calcitonin,is_a some Fine-Needle_Aspiration):1.0
+SubClassOf(FNA-calcitonin,Fine-Needle_Aspiration):1.0
+is(Fine-Needle_Aspiration,Class):1.0
+is(Heart_Disorder,Class):1.0
+is(Indeterminate,Class):1.0
+EquivalentTo(Indeterminate,describes some Cytologic_Test):1.0
+SubClassOf(Indeterminate,Cytologic_Test):1.0
+is(Investigation,Class):1.0
+EquivalentTo(Investigation,part_of some Clinical_Aspects):1.0
+SubClassOf(Investigation,Clinical_Aspects):1.0
+is(Iodine_I_123_Iodobenzamide,Class):1.0
+EquivalentTo(Iodine_I_123_Iodobenzamide,is_a some Radionuclide_Imaging):1.0
+SubClassOf(Iodine_I_123_Iodobenzamide,Radionuclide_Imaging):1.0
+is(Malignant,Class):1.0
+EquivalentTo(Malignant,describes some Cytologic_Test):1.0
+SubClassOf(Malignant,Cytologic_Test):1.0
+is(Nondiagnosis,Class):1.0
+EquivalentTo(Nondiagnosis,describes some Cytologic_Test):1.0
+SubClassOf(Nondiagnosis,Cytologic_Test):1.0
+is(Parathyroid_Function_Tests,Class):1.0
+SubClassOf(Parathyroid_Function_Tests,Investigation):1.0
+is(Positron_Emission_Tomography_and_Computed_Tomography_Scan,Class):1.0
+is(Radionuclide_Imaging,Class):1.0
+is(Suspicious_for_Malignancy,Class):1.0
+EquivalentTo(Suspicious_for_Malignancy,describes some Cytologic_Test):1.0
+SubClassOf(Suspicious_for_Malignancy,Cytologic_Test):1.0
+is(Technetium_TC-99m,Class):1.0
+EquivalentTo(Technetium_TC-99m,is_a some Radionuclide_Imaging):1.0
+SubClassOf(Technetium_TC-99m,Radionuclide_Imaging):1.0
+DisjointWith(Technetium_TC-99m,is_a some Radionuclide_Imaging):1.0
+is(Thyroid_Function_Tests,Class):1.0
+SubClassOf(Thyroid_Function_Tests,Investigation):1.0
+is(Tumor_Marker,Class):1.0
+SubClassOf(Tumor_Marker,Investigation):1.0
+is(Voice_Assessment,Class):1.0
+SubClassOf(Voice_Assessment,Investigation):1.0
+is(Sodium_Fluoride_Positron_Emission_Tomography/,Class):1.0
+EquivalentTo(Sodium_Fluoride_Positron_Emission_Tomography/,is_a some Positron_Emission_Tomography_and_Computed_Tomography_Scan):1.0
+SubClassOf(Sodium_Fluoride_Positron_Emission_Tomography/,Positron_Emission_Tomography_and_Computed_Tomography_Scan):1.0
+is(www.w3.org/2002/07/#,Class):1.0

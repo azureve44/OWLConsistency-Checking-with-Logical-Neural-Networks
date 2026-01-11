@@ -1,0 +1,232 @@
+predicate(boolean,is,Datatype).
+predicate(date,is,Datatype).
+predicate(integer,is,Datatype).
+predicate(string,is,Datatype).
+predicate(CDAO_0000148,is,ObjectProperty).
+predicate(CDAO_0000148,SubPropertyOf,CDAO_0000178).
+predicate(CDAO_0000148,Domain,CDAO_0000012).
+predicate(CDAO_0000148,Range,CDAO_0000140).
+predicate(CDAO_0000178,is,ObjectProperty).
+predicate(CDAO_0000178,InverseOf,CDAO_0000194).
+predicate(CDAO_0000194,is,ObjectProperty).
+predicate(CDAO_0000194,InverseOf,CDAO_0000178).
+predicate(RO_0001018,is,ObjectProperty).
+predicate(RO_0002162,is,ObjectProperty).
+predicate(RO_0002350,is,ObjectProperty).
+predicate(hasAncestralEvolutionaryEvent,is,ObjectProperty).
+predicate(hasAncestralEvolutionaryEvent,SubPropertyOf,hasEvolutionaryEvent).
+predicate(hasCoOrthologousMember,is,ObjectProperty).
+predicate(hasCoOrthologousMember,SubPropertyOf,SIO_000028).
+predicate(hasCoOrthologousMember,Domain,CoOrthologyRelation).
+predicate(hasCoOrthologousMember,Range,SequenceUnit).
+predicate(hasDescendantEvolutionaryEvent,is,ObjectProperty).
+predicate(hasDescendantEvolutionaryEvent,SubPropertyOf,hasEvolutionaryEvent).
+predicate(hasEvolutionaryEvent,is,ObjectProperty).
+predicate(hasEvolutionaryEvent,Domain,HomologsCluster or OrthologyRelation or ParalogyRelation).
+predicate(hasEvolutionaryEvent,Range,CDAO_0000064).
+predicate(hasHomolog,is,ObjectProperty).
+predicate(hasHomolog,SubPropertyOf,CDAO_0000178).
+predicate(hasHomolog,Characteristics,Symmetric).
+predicate(hasHomolog,Domain,SequenceUnit).
+predicate(hasHomolog,Range,SequenceUnit).
+predicate(hasHomologousMember,is,ObjectProperty).
+predicate(hasHomologousMember,SubPropertyOf,SIO_000028).
+predicate(hasHomologousMember,Domain,HomologsCluster or HomologyRelation).
+predicate(hasHomologousMember,Range,HomologsCluster or SequenceUnit).
+predicate(hasHomologousMember,InverseOf,isHomologousMember).
+predicate(hasHomologyData,is,ObjectProperty).
+predicate(hasHomologyData,SubPropertyOf,CDAO_0000178).
+predicate(hasHomologyData,Domain,OrthologyDataset).
+predicate(hasHomologyData,Range,HomologsCluster or HomologyRelation).
+predicate(hasHomologyData,InverseOf,inDataset).
+predicate(hasInparalogousMember,is,ObjectProperty).
+predicate(hasInparalogousMember,SubPropertyOf,SIO_000028).
+predicate(hasInparalogousMember,Domain,CoOrthologyRelation).
+predicate(hasInparalogousMember,Range,InparalogyRelation).
+predicate(hasLeastDivergedOrtholog,is,ObjectProperty).
+predicate(hasLeastDivergedOrtholog,SubPropertyOf,hasOrtholog).
+predicate(hasLeastDivergedOrtholog,Characteristics,Symmetric).
+predicate(hasLeastDivergedOrtholog,Domain,SequenceUnit).
+predicate(hasLeastDivergedOrtholog,Range,SequenceUnit).
+predicate(hasOrtholog,is,ObjectProperty).
+predicate(hasOrtholog,SubPropertyOf,hasHomolog).
+predicate(hasOrtholog,Characteristics,Symmetric).
+predicate(hasParalog,is,ObjectProperty).
+predicate(hasParalog,SubPropertyOf,hasHomolog).
+predicate(hasParalog,Characteristics,Symmetric).
+predicate(hasTaxonomicRange,is,ObjectProperty).
+predicate(hasTaxonomicRange,SubPropertyOf,CDAO_0000178).
+predicate(hasTaxonomicRange,Domain,HomologsCluster or OrthologyRelation or ParalogyRelation).
+predicate(hasTaxonomicRange,Range,TaxonomicRange).
+predicate(hasXenolog,is,ObjectProperty).
+predicate(hasXenolog,SubPropertyOf,hasHomolog).
+predicate(hasXenolog,Characteristics,Symmetric).
+predicate(inDataset,is,ObjectProperty).
+predicate(inDataset,Domain,HomologsCluster or HomologyRelation).
+predicate(inDataset,Range,OrthologyDataset).
+predicate(inDataset,InverseOf,hasHomologyData).
+predicate(isHomologousMember,is,ObjectProperty).
+predicate(isHomologousMember,SubPropertyOf,RO_0002350).
+predicate(isHomologousMember,InverseOf,hasHomologousMember).
+predicate(organism,is,ObjectProperty).
+predicate(organism,Domain,SequenceUnit).
+predicate(organism,Range,Organism).
+predicate(replaces,is,ObjectProperty).
+predicate(replaces,Domain,Taxon).
+predicate(replaces,Range,Taxon).
+predicate(SIO_000028,is,ObjectProperty).
+predicate(SIO_000028,Characteristics,Transitive,).
+predicate(SIO_000028,Characteristics,Reflexive).
+predicate(SIO_010078,is,ObjectProperty).
+predicate(SIO_010078,InverseOf,SIO_010079).
+predicate(SIO_010079,is,ObjectProperty).
+predicate(SIO_010079,InverseOf,SIO_010078).
+predicate(identifier,is,DataProperty).
+predicate(identifier,Range,string).
+predicate(isLeastDivergedOrtholog,is,DataProperty).
+predicate(isLeastDivergedOrtholog,Domain,OrthologyRelation).
+predicate(isLeastDivergedOrtholog,Range,boolean).
+predicate(taxRange,is,DataProperty).
+predicate(taxRange,Domain,TaxonomicRange).
+predicate(taxRange,Range,string).
+predicate(taxRangeId,is,DataProperty).
+predicate(taxRangeId,Range,integer).
+predicate(version,is,DataProperty).
+predicate(version,Range,string).
+predicate(mnemonic,is,DataProperty).
+predicate(mnemonic,Range,string).
+predicate(CDAO_0000012,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,CDAO_0000148 exactly 1 CDAO_0000140).
+predicate(CDAO_0000064,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CDAO_0000077,is,Class).
+predicate(CDAO_0000077,SubClassOf,CDAO_0000064).
+predicate(CDAO_0000121,is,Class).
+predicate(CDAO_0000121,SubClassOf,CDAO_0000064).
+predicate(CDAO_0000140,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(NCIT_C14250,is,Class).
+predicate(NCIT_C14250,EquivalentTo,Organism).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Taxon).
+predicate(SO_0000104,is,Class).
+predicate(SO_0000104,EquivalentTo,Protein).
+predicate(SO_0000104,SubClassOf,SequenceUnit).
+predicate(SO_0000704,is,Class).
+predicate(SO_0000704,EquivalentTo,Gene).
+predicate(SO_0000704,SubClassOf,SequenceUnit).
+predicate(SO_0000831,is,Class).
+predicate(SO_0000831,EquivalentTo,Subgene).
+predicate(SO_0000831,SubClassOf,SequenceUnit).
+predicate(SO_0005855,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CoOrthologyRelation,is,Class).
+predicate(CoOrthologyRelation,SubClassOf,HomologyRelation,).
+predicate(CoOrthologyRelation,SubClassOf,(hasCoOrthologousMember exactly 1 SequenceUnit) and (hasInparalogousMember exactly 1 InparalogyRelation)).
+predicate(Gene,is,Class).
+predicate(Gene,EquivalentTo,SO_0000704).
+predicate(Gene,SubClassOf,SequenceUnit,).
+predicate(Gene,SubClassOf,organism some Organism,).
+predicate(Gene,SubClassOf,RO_0001018 only SIO_000750).
+predicate(Gene,DisjointWith,Protein).
+predicate(GeneTreeNode,is,Class).
+predicate(GeneTreeNode,SubClassOf,CDAO_0000140).
+predicate(HierarchicalClusteringTree,is,Class).
+predicate(HierarchicalClusteringTree,SubClassOf,CDAO_0000012).
+predicate(HierarchicalGeneTree,is,Class).
+predicate(HierarchicalGeneTree,SubClassOf,HierarchicalClusteringTree,).
+predicate(HierarchicalGeneTree,SubClassOf,CDAO_0000178 some GeneTreeNode,).
+predicate(HierarchicalGeneTree,SubClassOf,CDAO_0000178 only GeneTreeNode).
+predicate(HomologsCluster,is,Class).
+predicate(HomologsCluster,SubClassOf,SO_0005855,).
+predicate(HomologsCluster,SubClassOf,GeneTreeNode,).
+predicate(HomologsCluster,SubClassOf,inDataset some OrthologyDataset,).
+predicate(HomologsCluster,SubClassOf,hasEvolutionaryEvent only CDAO_0000064,).
+predicate(HomologsCluster,SubClassOf,hasHomologousMember only GeneTreeNode,).
+predicate(HomologsCluster,SubClassOf,hasTaxonomicRange only TaxonomicRange).
+predicate(HomologyRelation,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasHomologousMember only SequenceUnit,).
+predicate(Thing,,is,inDataset only OrthologyDataset).
+predicate(InparalogyRelation,is,Class).
+predicate(InparalogyRelation,SubClassOf,ParalogyRelation,).
+predicate(InparalogyRelation,SubClassOf,hasAncestralEvolutionaryEvent only CDAO_0000121).
+predicate(LeastDivergedOrthologyRelation,is,Class).
+predicate(LeastDivergedOrthologyRelation,EquivalentTo,isLeastDivergedOrtholog value true).
+predicate(LeastDivergedOrthologyRelation,SubClassOf,OrthologyRelation).
+predicate(Organism,is,Class).
+predicate(Organism,EquivalentTo,NCIT_C14250).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,RO_0002162 some Taxon).
+predicate(OrthologsCluster,is,Class).
+predicate(OrthologsCluster,SubClassOf,HomologsCluster,).
+predicate(OrthologsCluster,SubClassOf,hasEvolutionaryEvent only CDAO_0000121).
+predicate(OrthologsCluster,DisjointWith,ParalogsCluster).
+predicate(OrthologyDataset,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,version some string).
+predicate(OrthologyRelation,is,Class).
+predicate(OrthologyRelation,SubClassOf,HomologyRelation,).
+predicate(OrthologyRelation,SubClassOf,(hasTaxonomicRange only TaxonomicRange) and (hasHomologousMember exactly 2 SequenceUnit),).
+predicate(OrthologyRelation,SubClassOf,hasEvolutionaryEvent only CDAO_0000121).
+predicate(OrthologyRelation,DisjointWith,ParalogyRelation).
+predicate(OutparalogyRelation,is,Class).
+predicate(OutparalogyRelation,SubClassOf,ParalogyRelation,).
+predicate(OutparalogyRelation,SubClassOf,hasDescendantEvolutionaryEvent only CDAO_0000121).
+predicate(ParalogsCluster,is,Class).
+predicate(ParalogsCluster,SubClassOf,HomologsCluster,).
+predicate(ParalogsCluster,SubClassOf,hasEvolutionaryEvent only CDAO_0000077).
+predicate(ParalogsCluster,DisjointWith,OrthologsCluster).
+predicate(ParalogyRelation,is,Class).
+predicate(ParalogyRelation,SubClassOf,HomologyRelation,).
+predicate(ParalogyRelation,SubClassOf,(hasTaxonomicRange only TaxonomicRange) and (hasHomologousMember exactly 2 SequenceUnit),).
+predicate(ParalogyRelation,SubClassOf,hasEvolutionaryEvent only CDAO_0000077).
+predicate(ParalogyRelation,DisjointWith,OrthologyRelation).
+predicate(Protein,is,Class).
+predicate(Protein,EquivalentTo,SO_0000104).
+predicate(Protein,SubClassOf,SequenceUnit,).
+predicate(Protein,SubClassOf,organism some Organism,).
+predicate(Protein,SubClassOf,RO_0001018 only SIO_000750).
+predicate(Protein,DisjointWith,Gene).
+predicate(SequenceUnit,is,Class).
+predicate(SequenceUnit,SubClassOf,GeneTreeNode).
+predicate(Subgene,is,Class).
+predicate(Subgene,EquivalentTo,SO_0000831).
+predicate(Subgene,SubClassOf,SequenceUnit,).
+predicate(Subgene,SubClassOf,CDAO_0000194 some Gene).
+predicate(TaxonomicRange,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(XenologyRelation,is,Class).
+predicate(XenologyRelation,SubClassOf,HomologyRelation).
+predicate(Taxon,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,replaces only Taxon,).
+predicate(Thing,,is,mnemonic max 1 string).
+predicate(Thing,,DisjointWith,NCIT_C14250).
+predicate(SIO_000750,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(<https,is,Individual).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(<https,is,Individual).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(<https,is,Individual).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(<https,is,Individual).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(<https,is,Individual).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(Gene,is,Individual).
+predicate(GeneTreeNode,is,Individual).
+predicate(HierarchicalGeneTree,is,Individual).
+predicate(HierarchicalGeneTree,CDAO_0000178,GeneTreeNode).
+predicate(Organism,is,Individual).
+predicate(Organism,RO_0002162,Taxon).
+predicate(Subgene,is,Individual).
+predicate(Subgene,CDAO_0000194,Gene).
+predicate(Taxon,is,Individual).
+predicate(www.unicc.org,is,Individual).
+predicate(Organization,is,ns.com/foaf/0.1/).

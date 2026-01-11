@@ -1,0 +1,92 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(string,is,Datatype).
+predicate(explores,is,ObjectProperty).
+predicate(has-for-sub-instrument,is,ObjectProperty).
+predicate(has-for-sub-instrument,Domain,assessment-instrument).
+predicate(has-for-sub-instrument,Range,sub-instrument).
+predicate(has-for-sub-instrument,InverseOf,is-a-sub-instrument-of).
+predicate(has-for-variable,is,ObjectProperty).
+predicate(has-for-variable,Domain,assessment-instrument).
+predicate(has-for-variable,Range,instrument-variable).
+predicate(has-for-variable,InverseOf,is-a-variable-of).
+predicate(is-a-sub-instrument-of,is,ObjectProperty).
+predicate(is-a-sub-instrument-of,InverseOf,has-for-sub-instrument).
+predicate(is-a-variable-of,is,ObjectProperty).
+predicate(is-a-variable-of,InverseOf,has-for-variable).
+predicate(has-for-instrument-at,is,ObjectProperty).
+predicate(has-for-model-acronym,is,ObjectProperty).
+predicate(has-for-model-name,is,ObjectProperty).
+predicate(has-for-proper-part,is,ObjectProperty).
+predicate(is-a-proper-part-of,is,ObjectProperty).
+predicate(is-referred-to-by,is,ObjectProperty).
+predicate(proper-part,is,ObjectProperty).
+predicate(assessment-instrument,is,Class).
+predicate(assessment-instrument,SubClassOf,subject-data-acquisition-artefact,).
+predicate(assessment-instrument,SubClassOf,proposition,).
+predicate(assessment-instrument,SubClassOf,is-referred-to-by some instrument-definition-article,).
+predicate(assessment-instrument,SubClassOf,is-referred-to-by some).
+predicate(assessment-instrument,SubClassOf,(instrument-definition-article and (is-referred-to-by some instrument-definition-article)),).
+predicate(assessment-instrument,SubClassOf,proper-part some instrument-variable,).
+predicate(assessment-instrument,SubClassOf,is-referred-to-by only (is-referred-to-by some instrument-definition-article),).
+predicate(assessment-instrument,SubClassOf,explores min 1 domain,).
+predicate(assessment-instrument,SubClassOf,has-for-model-acronym exactly 1 model-acronym,).
+predicate(assessment-instrument,SubClassOf,has-for-model-name exactly 1 model-name).
+predicate(behavioural-instrument,is,Class).
+predicate(behavioural-instrument,SubClassOf,assessment-instrument).
+predicate(behavioural-interview,is,Class).
+predicate(behavioural-interview,SubClassOf,questionnaire-based-assessment).
+predicate(behavioural-test,is,Class).
+predicate(behavioural-test,SubClassOf,test-based-assessment).
+predicate(composite-instrument,is,Class).
+predicate(composite-instrument,SubClassOf,assessment-instrument).
+predicate(domain,is,Class).
+predicate(experimental-psychology-instrument,is,Class).
+predicate(instrument-based-assessment,is,Class).
+predicate(instrument-based-assessment,SubClassOf,subject-data-acquisition,).
+predicate(instrument-based-assessment,SubClassOf,has-for-proper-part min 1 variable-assessment,).
+predicate(instrument-based-assessment,SubClassOf,has-for-instrument-at exactly 1 assessment-instrument,).
+predicate(instrument-based-assessment,SubClassOf,is-a-proper-part-of exactly 1 examination).
+predicate(instrument-definition-article,is,Class).
+predicate(instrument-definition-article,DisjointWith,is-referred-to-by some instrument-definition-article).
+predicate(instrument-variable,is,Class).
+predicate(mono-domain-instrument,is,Class).
+predicate(mono-domain-instrument,SubClassOf,assessment-instrument).
+predicate(multi-domains-instrument,is,Class).
+predicate(multi-domains-instrument,SubClassOf,assessment-instrument).
+predicate(neuroclinical-instrument,is,Class).
+predicate(neuroclinical-instrument,SubClassOf,assessment-instrument).
+predicate(neuroclinical-interview,is,Class).
+predicate(neuroclinical-interview,SubClassOf,questionnaire-based-assessment).
+predicate(neuroclinical-test,is,Class).
+predicate(neuroclinical-test,SubClassOf,test-based-assessment).
+predicate(psychological-instrument,is,Class).
+predicate(psychological-instrument,SubClassOf,assessment-instrument).
+predicate(psychological-interview,is,Class).
+predicate(psychological-interview,SubClassOf,questionnaire-based-assessment).
+predicate(psychological-test,is,Class).
+predicate(psychological-test,SubClassOf,test-based-assessment).
+predicate(psychophysical-instrument,is,Class).
+predicate(psychophysical-instrument,SubClassOf,experimental-psychology-instrument).
+predicate(questionnaire,is,Class).
+predicate(questionnaire,SubClassOf,assessment-instrument).
+predicate(questionnaire-based-assessment,is,Class).
+predicate(questionnaire-based-assessment,SubClassOf,instrument-based-assessment,).
+predicate(questionnaire-based-assessment,SubClassOf,has-for-instrument-at exactly 1 questionnaire).
+predicate(sub-instrument,is,Class).
+predicate(sub-instrument,SubClassOf,assessment-instrument).
+predicate(subject-data-acquisition,is,Class).
+predicate(subject-data-acquisition-artefact,is,Class).
+predicate(test-based-assessment,is,Class).
+predicate(test-based-assessment,SubClassOf,instrument-based-assessment,).
+predicate(test-based-assessment,SubClassOf,has-for-instrument-at exactly 1 test-instrument).
+predicate(test-instrument,is,Class).
+predicate(test-instrument,SubClassOf,assessment-instrument).
+predicate(variable-assessment,is,Class).
+predicate(model-acronym,is,Class).
+predicate(model-name,is,Class).
+predicate(proposition,is,Class).
+predicate(examination,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(has-for-model-name exactly 1 model-name,is,Class).
+predicate(has-for-model-name exactly 1 model-name,SubClassOf,neuroclinical-instrument).

@@ -1,0 +1,219 @@
+predicate(area,is,ObjectProperty).
+predicate(collected_from,is,ObjectProperty).
+predicate(depth,is,ObjectProperty).
+predicate(follows_procedure,is,ObjectProperty).
+predicate(material_collected,is,ObjectProperty).
+predicate(mining_method,is,ObjectProperty).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification,).
+predicate(<https,SubClassOf,PermissibleValue).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(<https,is,Class).
+predicate(<https,SubClassOf,HealthcareEncounterClassification).
+predicate(OBI_0002492,is,Class).
+predicate(OBI_0002492,SubClassOf,CaseOrControlEnum,).
+predicate(OBI_0002492,SubClassOf,PermissibleValue).
+predicate(OBI_0002493,is,Class).
+predicate(OBI_0002493,SubClassOf,CaseOrControlEnum,).
+predicate(OBI_0002493,SubClassOf,PermissibleValue).
+predicate(PATO_0001421,is,Class).
+predicate(PATO_0001421,SubClassOf,PersonStatus,).
+predicate(PATO_0001421,SubClassOf,PermissibleValue).
+predicate(PATO_0001422,is,Class).
+predicate(PATO_0001422,SubClassOf,PersonStatus,).
+predicate(PATO_0001422,SubClassOf,PermissibleValue).
+predicate(CaseOrControlEnum,is,Class).
+predicate(CaseOrControlEnum,EquivalentTo,OBI_0002492 or OBI_0002493).
+predicate(CaseOrControlEnum,SubClassOf,EnumDefinition).
+predicate(CreationMetadata,is,Class).
+predicate(Mixin,is,ClassDefinition#).
+predicate(DataGenerationFromSample,is,Class).
+predicate(DataGenerationFromSample,SubClassOf,InvestigativeProcess).
+predicate(EngineeringSpecification,is,Class).
+predicate(EngineeringSpecification,SubClassOf,Procedure).
+predicate(ExtractiveIndustryFacility,is,Class).
+predicate(ExtractiveIndustryFacilityType,is,Class).
+predicate(MINING_FACILITY or ExtractiveIndustryFacilityType#,is,ExtractiveIndustryFacilityType#).
+predicate(MINING_FACILITY or ExtractiveIndustryFacilityType#,SubClassOf,EnumDefinition).
+predicate(ExtractiveIndustryProductType,is,Class).
+predicate(COAL or ExtractiveIndustryProductType#,is,ExtractiveIndustryProductType#).
+predicate(COAL or ExtractiveIndustryProductType#,SubClassOf,EnumDefinition).
+predicate(FinanicialOrganizationEnum,is,Class).
+predicate(FinanicialOrganizationEnum,SubClassOf,EnumDefinition).
+predicate(FoodPreparation,is,Class).
+predicate(FoodPreparation,SubClassOf,PlannedProcess,).
+predicate(FoodPreparation,SubClassOf,follows_procedure only FoodRecipe,).
+predicate(Thing,,is,follows_procedure min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,follows_procedure max 1 www.w3.org/2002/07/#).
+predicate(FoodRecipe,is,Class).
+predicate(FossilFuelType,is,Class).
+predicate(COAL or FossilFuelType#,is,FossilFuelType#).
+predicate(COAL or FossilFuelType#,SubClassOf,EnumDefinition).
+predicate(HealthcareEncounterClassification,is,Class).
+predicate(//HealthcareEncounterClassification#Ambulance+Visit or <https,is,<https).
+predicate(//HealthcareEncounterClassification#Ambulance+Visit or <https,SubClassOf,EnumDefinition).
+predicate(HumanLanguageCodeEnum,is,Class).
+predicate(HumanLanguageCodeEnum,SubClassOf,EnumDefinition).
+predicate(InvestigativeProcess,is,Class).
+predicate(InvestigativeProtocolEnum,is,Class).
+predicate(InvestigativeProtocolEnum,SubClassOf,EnumDefinition).
+predicate(LandformEnum,is,Class).
+predicate(LandformEnum,SubClassOf,EnumDefinition).
+predicate(MaterialCollection,is,Class).
+predicate(MaterialCollection,SubClassOf,PlannedProcess).
+predicate(MiningFacility,is,Class).
+predicate(MiningFacility,SubClassOf,ExtractiveIndustryFacility,).
+predicate(MiningFacility,SubClassOf,area only SimpleQuantity,).
+predicate(MiningFacility,SubClassOf,depth only SimpleQuantity,).
+predicate(MiningFacility,SubClassOf,mining_method only MiningMethod,).
+predicate(Thing,,is,area min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,depth min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,mining_method min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,area max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,depth max 1 www.w3.org/2002/07/#).
+predicate(Thing,is,mining_method max 1 www.w3.org/2002/07/#).
+predicate(MiningMethod,is,Class).
+predicate(IN_SITU or MiningMethod#,is,MiningMethod#).
+predicate(IN_SITU or MiningMethod#,SubClassOf,EnumDefinition).
+predicate(OrganismTaxonEnum,is,Class).
+predicate(OrganismTaxonEnum,SubClassOf,EnumDefinition).
+predicate(OrganizationPersonnelRelationshipEnum,is,Class).
+predicate(OrganizationPersonnelRelationshipEnum,SubClassOf,EnumDefinition).
+predicate(OutcomeType,is,Class).
+predicate(FN or OutcomeType#,is,OutcomeType#).
+predicate(FN or OutcomeType#,SubClassOf,EnumDefinition).
+predicate(PersonStatus,is,Class).
+predicate(UNKNOWN,is,PATO_0001421 or PATO_0001422 or PersonStatus#).
+predicate(UNKNOWN,SubClassOf,EnumDefinition).
+predicate(PhysicalEntity,is,Class).
+predicate(PlannedProcess,is,Class).
+predicate(Procedure,is,Class).
+predicate(RelativeTimeEnum,is,Class).
+predicate(AFTER or RelativeTimeEnum#,is,RelativeTimeEnum#).
+predicate(AFTER or RelativeTimeEnum#,SubClassOf,EnumDefinition).
+predicate(SampleCollectionProcess,is,Class).
+predicate(SampleCollectionProcess,SubClassOf,InvestigativeProcess,).
+predicate(SampleCollectionProcess,SubClassOf,collected_from only PhysicalEntity,).
+predicate(SampleCollectionProcess,SubClassOf,material_collected only SampleMaterial,).
+predicate(Thing,,is,collected_from min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,material_collected min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,collected_from max 1 www.w3.org/2002/07/#).
+predicate(Thing,is,material_collected max 1 www.w3.org/2002/07/#).
+predicate(SampleMaterial,is,Class).
+predicate(SampleProcessingEnum,is,Class).
+predicate(SampleProcessingEnum,SubClassOf,EnumDefinition).
+predicate(SimpleQuantity,is,Class).
+predicate(StudyDesignEnum,is,Class).
+predicate(StudyDesignEnum,SubClassOf,EnumDefinition).
+predicate(WellType,is,Class).
+predicate(GAS or WellType#,is,WellType#).
+predicate(GAS or WellType#,SubClassOf,EnumDefinition).
+predicate(ExtractiveIndustryFacilityType#,is,Class).
+predicate(ExtractiveIndustryFacilityType#,SubClassOf,ExtractiveIndustryFacilityType,).
+predicate(ExtractiveIndustryFacilityType#,SubClassOf,PermissibleValue).
+predicate(ExtractiveIndustryFacilityType#,is,Class).
+predicate(ExtractiveIndustryFacilityType#,SubClassOf,ExtractiveIndustryFacilityType,).
+predicate(ExtractiveIndustryFacilityType#,SubClassOf,PermissibleValue).
+predicate(ExtractiveIndustryFacilityType#,is,Class).
+predicate(ExtractiveIndustryFacilityType#,SubClassOf,ExtractiveIndustryFacilityType,).
+predicate(ExtractiveIndustryFacilityType#,SubClassOf,PermissibleValue).
+predicate(ExtractiveIndustryProductType#,is,Class).
+predicate(ExtractiveIndustryProductType#,SubClassOf,ExtractiveIndustryProductType).
+predicate(ExtractiveIndustryProductType#,is,Class).
+predicate(ExtractiveIndustryProductType#,SubClassOf,ExtractiveIndustryProductType).
+predicate(ExtractiveIndustryProductType#,is,Class).
+predicate(ExtractiveIndustryProductType#,SubClassOf,ExtractiveIndustryProductType,).
+predicate(ExtractiveIndustryProductType#,SubClassOf,PermissibleValue).
+predicate(ExtractiveIndustryProductType#,is,Class).
+predicate(ExtractiveIndustryProductType#,SubClassOf,ExtractiveIndustryProductType,).
+predicate(ExtractiveIndustryProductType#,SubClassOf,PermissibleValue).
+predicate(ExtractiveIndustryProductType#,is,Class).
+predicate(ExtractiveIndustryProductType#,SubClassOf,ExtractiveIndustryProductType,).
+predicate(ExtractiveIndustryProductType#,SubClassOf,PermissibleValue).
+predicate(ExtractiveIndustryProductType#,is,Class).
+predicate(ExtractiveIndustryProductType#,SubClassOf,ExtractiveIndustryProductType).
+predicate(ExtractiveIndustryProductType#,is,Class).
+predicate(ExtractiveIndustryProductType#,SubClassOf,ExtractiveIndustryProductType,).
+predicate(ExtractiveIndustryProductType#,SubClassOf,PermissibleValue).
+predicate(ExtractiveIndustryProductType#,is,Class).
+predicate(ExtractiveIndustryProductType#,SubClassOf,ExtractiveIndustryProductType,).
+predicate(ExtractiveIndustryProductType#,SubClassOf,PermissibleValue).
+predicate(FossilFuelType#,is,Class).
+predicate(FossilFuelType#,SubClassOf,FossilFuelType,).
+predicate(FossilFuelType#,SubClassOf,PermissibleValue).
+predicate(FossilFuelType#,is,Class).
+predicate(FossilFuelType#,SubClassOf,FossilFuelType,).
+predicate(FossilFuelType#,SubClassOf,PermissibleValue).
+predicate(FossilFuelType#,is,Class).
+predicate(FossilFuelType#,SubClassOf,FossilFuelType,).
+predicate(FossilFuelType#,SubClassOf,PermissibleValue).
+predicate(MiningMethod#,is,Class).
+predicate(MiningMethod#,SubClassOf,MiningMethod,).
+predicate(MiningMethod#,SubClassOf,PermissibleValue).
+predicate(MiningMethod#,is,Class).
+predicate(MiningMethod#,SubClassOf,MiningMethod,).
+predicate(MiningMethod#,SubClassOf,PermissibleValue).
+predicate(MiningMethod#,is,Class).
+predicate(MiningMethod#,SubClassOf,MiningMethod,).
+predicate(MiningMethod#,SubClassOf,PermissibleValue).
+predicate(MiningMethod#,is,Class).
+predicate(MiningMethod#,SubClassOf,MiningMethod,).
+predicate(MiningMethod#,SubClassOf,PermissibleValue).
+predicate(OutcomeType#,is,Class).
+predicate(OutcomeType#,SubClassOf,OutcomeType,).
+predicate(OutcomeType#,SubClassOf,PermissibleValue).
+predicate(OutcomeType#,is,Class).
+predicate(OutcomeType#,SubClassOf,OutcomeType,).
+predicate(OutcomeType#,SubClassOf,PermissibleValue).
+predicate(OutcomeType#,is,Class).
+predicate(OutcomeType#,SubClassOf,OutcomeType,).
+predicate(OutcomeType#,SubClassOf,PermissibleValue).
+predicate(OutcomeType#,is,Class).
+predicate(OutcomeType#,SubClassOf,OutcomeType,).
+predicate(OutcomeType#,SubClassOf,PermissibleValue).
+predicate(PersonStatus#,is,Class).
+predicate(PersonStatus#,SubClassOf,PersonStatus,).
+predicate(PersonStatus#,SubClassOf,PermissibleValue).
+predicate(RelativeTimeEnum#,is,Class).
+predicate(RelativeTimeEnum#,SubClassOf,RelativeTimeEnum,).
+predicate(RelativeTimeEnum#,SubClassOf,PermissibleValue).
+predicate(RelativeTimeEnum#,is,Class).
+predicate(RelativeTimeEnum#,SubClassOf,RelativeTimeEnum,).
+predicate(RelativeTimeEnum#,SubClassOf,PermissibleValue).
+predicate(RelativeTimeEnum#,is,Class).
+predicate(RelativeTimeEnum#,SubClassOf,RelativeTimeEnum,).
+predicate(RelativeTimeEnum#,SubClassOf,PermissibleValue).
+predicate(WellType#,is,Class).
+predicate(WellType#,SubClassOf,WellType,).
+predicate(WellType#,SubClassOf,PermissibleValue).
+predicate(WellType#,is,Class).
+predicate(WellType#,SubClassOf,WellType,).
+predicate(WellType#,SubClassOf,PermissibleValue).
+predicate(WellType#,is,Class).
+predicate(WellType#,SubClassOf,WellType,).
+predicate(WellType#,SubClassOf,PermissibleValue).
+predicate(WellType#,is,Class).
+predicate(WellType#,SubClassOf,WellType,).
+predicate(WellType#,SubClassOf,PermissibleValue).
+predicate(EnumDefinition,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(PermissibleValue,is,Class).
+predicate(ClassDefinition#,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

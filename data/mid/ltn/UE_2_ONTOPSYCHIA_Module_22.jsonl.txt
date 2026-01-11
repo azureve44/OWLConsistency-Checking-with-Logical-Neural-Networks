@@ -1,0 +1,144 @@
+is(a_pour_etat_civil,ObjectProperty):1.0
+is(est_correlatif_a,ObjectProperty):1.0
+is(est_correlatif_a_un_etat_emotionnel_negatif,ObjectProperty):1.0
+is(complement,Class):1.0
+SubClassOf(complement,intentional_change_about_change):1.0
+is(intentional_change_about_change,Class):1.0
+is(Absenteisme,Class):1.0
+DisjointWith(Absenteisme,Universite):1.0
+is(Absenteisme_Scolaire,Class):1.0
+SubClassOf(Absenteisme_Scolaire,Absenteisme,):1.0
+SubClassOf(Absenteisme_Scolaire,est_correlatif_a some Scolarite):1.0
+is(Absenteisme_Travail,Class):1.0
+SubClassOf(Absenteisme_Travail,Absenteisme,):1.0
+SubClassOf(Absenteisme_Travail,est_correlatif_a some Travail):1.0
+is(Amelioration,Class):1.0
+is(Amelioration_Scolaire,Class):1.0
+SubClassOf(Amelioration_Scolaire,Amelioration,):1.0
+SubClassOf(Amelioration_Scolaire,est_correlatif_a some Scolarite):1.0
+is(Ami_Avec_Qualificatif,Class):1.0
+is(Ami_Celibataire,Class):1.0
+SubClassOf(Ami_Celibataire,Ami_Avec_Qualificatif,):1.0
+SubClassOf(Ami_Celibataire,a_pour_etat_civil some Etat_Civil_Celibataire):1.0
+is(Auxiliare_De_Justice,Class):1.0
+is(Changement_Condition_Vie,Class):1.0
+is(Classe_Cinquieme,Class):1.0
+SubClassOf(Classe_Cinquieme,Enseignement_Secondaire_College):1.0
+is(Classe_Premiere,Class):1.0
+SubClassOf(Classe_Premiere,Enseignement_Secondaire_Lycee):1.0
+is(Classe_Quatrieme,Class):1.0
+SubClassOf(Classe_Quatrieme,Enseignement_Secondaire_College):1.0
+is(Classe_Seconde,Class):1.0
+SubClassOf(Classe_Seconde,Enseignement_Secondaire_Lycee):1.0
+is(Classe_Sixieme,Class):1.0
+SubClassOf(Classe_Sixieme,Enseignement_Secondaire_College):1.0
+is(Classe_Terminale,Class):1.0
+SubClassOf(Classe_Terminale,Enseignement_Secondaire_Lycee):1.0
+is(Classe_Troisieme,Class):1.0
+SubClassOf(Classe_Troisieme,Enseignement_Secondaire_College):1.0
+is(Collegien,Class):1.0
+SubClassOf(Collegien,Eleve_College):1.0
+is(Collegienne,Class):1.0
+SubClassOf(Collegienne,Eleve_College):1.0
+is(Compagne,Class):1.0
+is(Concept_Education,Class):1.0
+is(Conseil_Superieur_De_La_Magistrature,Class):1.0
+SubClassOf(Conseil_Superieur_De_La_Magistrature,Juridiction_Penale_Premier_Degre):1.0
+is(Deces_Compagne,Class):1.0
+SubClassOf(Deces_Compagne,Deces_Membre_Couple,):1.0
+SubClassOf(Deces_Compagne,est_correlatif_a some Compagne):1.0
+is(Deces_Membre_Couple,Class):1.0
+is(Difficulte_Scolaire,Class):1.0
+is(Eleve,Class):1.0
+is(Eleve_College,Class):1.0
+SubClassOf(Eleve_College,Eleve):1.0
+is(Enseignement_Maternel,Class):1.0
+SubClassOf(Enseignement_Maternel,Enseignement_Scolaire):1.0
+is(Enseignement_Primaire,Class):1.0
+SubClassOf(Enseignement_Primaire,Enseignement_Scolaire):1.0
+is(Enseignement_Scolaire,Class):1.0
+SubClassOf(Enseignement_Scolaire,Concept_Education):1.0
+is(Enseignement_Secondaire,Class):1.0
+SubClassOf(Enseignement_Secondaire,Enseignement_Scolaire):1.0
+is(Enseignement_Secondaire_College,Class):1.0
+is(Enseignement_Secondaire_Lycee,Class):1.0
+is(Etat_Civil_Celibataire,Class):1.0
+is(Etat_Emotionnel_Negatif,Class):1.0
+is(Etude_Biologie,Class):1.0
+is(Etude_Biologie_Moleculaire,Class):1.0
+SubClassOf(Etude_Biologie_Moleculaire,Etude_Biologie):1.0
+is(Etude_Commerce,Class):1.0
+is(Etude_Commerce_International,Class):1.0
+SubClassOf(Etude_Commerce_International,Etude_Commerce):1.0
+is(Etude_Medecine,Class):1.0
+SubClassOf(Etude_Medecine,Etude_Medicale):1.0
+is(Etude_Medicale,Class):1.0
+is(Etude_Musique,Class):1.0
+is(Etude_Pharmacie,Class):1.0
+SubClassOf(Etude_Pharmacie,Etude_Medicale):1.0
+is(Etude_Piano,Class):1.0
+SubClassOf(Etude_Piano,Etude_Musique):1.0
+is(Etude_Superieur,Class):1.0
+SubClassOf(Etude_Superieur,Enseignement_Scolaire):1.0
+is(Harcelement,Class):1.0
+is(Harcelement_Scolaire,Class):1.0
+SubClassOf(Harcelement_Scolaire,Harcelement,):1.0
+SubClassOf(Harcelement_Scolaire,est_correlatif_a some Difficulte_Scolaire,):1.0
+SubClassOf(Harcelement_Scolaire,est_correlatif_a some Scolarite):1.0
+is(Harcelement_Sexuel,Class):1.0
+SubClassOf(Harcelement_Sexuel,Harcelement):1.0
+is(Harcelement_Telephonique,Class):1.0
+SubClassOf(Harcelement_Telephonique,Harcelement):1.0
+is(Inflechissement,Class):1.0
+is(Inflechissement_Scolaire,Class):1.0
+SubClassOf(Inflechissement_Scolaire,Inflechissement,):1.0
+SubClassOf(Inflechissement_Scolaire,est_correlatif_a some Scolarite):1.0
+is(Juridiction_Penale_Premier_Degre,Class):1.0
+is(Logement,Class):1.0
+is(Menace_Auto_Agressive,Class):1.0
+is(Menace_Suicidaire,Class):1.0
+SubClassOf(Menace_Suicidaire,Menace_Auto_Agressive):1.0
+is(Mere,Class):1.0
+is(Notaire,Class):1.0
+SubClassOf(Notaire,Auxiliare_De_Justice):1.0
+is(Personne_Morale,Class):1.0
+is(Personne_Morale_Droit_Prive,Class):1.0
+SubClassOf(Personne_Morale_Droit_Prive,Personne_Morale):1.0
+is(Perte_Logement,Class):1.0
+SubClassOf(Perte_Logement,Changement_Condition_Vie,):1.0
+SubClassOf(Perte_Logement,est_correlatif_a some Logement,):1.0
+SubClassOf(Perte_Logement,est_correlatif_a_un_etat_emotionnel_negatif some Etat_Emotionnel_Negatif):1.0
+is(Residence_Privee,Class):1.0
+is(Residence_Universitaire_Privee,Class):1.0
+SubClassOf(Residence_Universitaire_Privee,Residence_Privee,):1.0
+SubClassOf(Residence_Universitaire_Privee,est_correlatif_a some Universite,):1.0
+SubClassOf(Residence_Universitaire_Privee,est_correlatif_a only Absenteisme):1.0
+is(Rupture_Avec_Type,Class):1.0
+is(Rupture_Cursus_Universitaire,Class):1.0
+SubClassOf(Rupture_Cursus_Universitaire,Rupture_Scolaire,):1.0
+SubClassOf(Rupture_Cursus_Universitaire,est_correlatif_a some Universite):1.0
+is(Rupture_Scolaire,Class):1.0
+SubClassOf(Rupture_Scolaire,Rupture_Avec_Type,):1.0
+SubClassOf(Rupture_Scolaire,est_correlatif_a some Scolarite):1.0
+is(Scolarite,Class):1.0
+is(Service_Hospitalo_Universitaire,Class):1.0
+SubClassOf(Service_Hospitalo_Universitaire,Service_Interne_Hopital):1.0
+is(Service_Interne_Hopital,Class):1.0
+is(Travail,Class):1.0
+is(Travail_Alimentaire,Class):1.0
+SubClassOf(Travail_Alimentaire,Travail_Avec_Type):1.0
+is(Travail_Avec_Type,Class):1.0
+is(Unite_Mere,Class):1.0
+SubClassOf(Unite_Mere,Unite_Sante,):1.0
+SubClassOf(Unite_Mere,est_correlatif_a some Mere):1.0
+is(Unite_Mere_Bebe,Class):1.0
+SubClassOf(Unite_Mere_Bebe,Unite_Mere):1.0
+is(Unite_Mere_Enfant,Class):1.0
+SubClassOf(Unite_Mere_Enfant,Unite_Mere):1.0
+is(Unite_Sante,Class):1.0
+is(Unite_Universitaire,Class):1.0
+SubClassOf(Unite_Universitaire,Unite_Sante,):1.0
+SubClassOf(Unite_Universitaire,est_correlatif_a some Universite):1.0
+is(Universite,Class):1.0
+DisjointWith(Universite,Absenteisme):1.0
+is(www.w3.org/2002/07/#,Class):1.0

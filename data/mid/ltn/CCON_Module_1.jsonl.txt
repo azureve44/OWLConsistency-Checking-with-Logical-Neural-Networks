@@ -1,0 +1,148 @@
+is(affects,ObjectProperty):1.0
+is(EcologicalPhenomena,www.fao.org/aims/aos/cwr.#):1.0
+Range(EcologicalPhenomena,Environment):1.0
+InverseOf(EcologicalPhenomena,isAffectedBy):1.0
+is(decreases,ObjectProperty):1.0
+SubPropertyOf(decreases,affects):1.0
+is(hasComponent,ObjectProperty):1.0
+is(increases,ObjectProperty):1.0
+SubPropertyOf(increases,affects):1.0
+is(isAffectedBy,ObjectProperty):1.0
+Domain(isAffectedBy,Environment):1.0
+is(EcologicalPhenomena,www.fao.org/aims/aos/cwr.#):1.0
+InverseOf(EcologicalPhenomena,affects):1.0
+is(isCharacteristicOf,ObjectProperty):1.0
+is(EcologicalPhenomena,www.fao.org/aims/aos/cwr.#):1.0
+is(Community,www.fao.org/aims/aos/cwr.#):1.0
+InverseOf(Community,isCharacterizedBy):1.0
+is(isCharacterizedBy,ObjectProperty):1.0
+InverseOf(isCharacterizedBy,isCharacteristicOf):1.0
+is(isPartOf,ObjectProperty):1.0
+is(BasalArea,Class):1.0
+is(CommunityStructure,www.fao.org/aims/aos/cwr.#):1.0
+is(Biodiversity,Class):1.0
+is(Diversity,www.fao.org/aims/aos/cwr.#):1.0
+is(BiologicalOrganizationLevel,Class):1.0
+is(Cerrado,Class):1.0
+SubClassOf(Cerrado,Ecoregion):1.0
+is(CerradoDeterminingFactors,Class):1.0
+SubClassOf(CerradoDeterminingFactors,Environment):1.0
+is(Climate,Class):1.0
+SubClassOf(Climate,CerradoDeterminingFactors,):1.0
+SubClassOf(Climate,hasComponent some Precipitation,):1.0
+SubClassOf(Climate,hasComponent some RelativeHumidity):1.0
+is(ComunityDynamics,Class):1.0
+is(EcologicalPhenomena,www.fao.org/aims/aos/cwr.#):1.0
+is(DiversityIndex,Class):1.0
+is(DrySeason,Class):1.0
+DisjointWith(DrySeason,WetSeason):1.0
+is(Ecoregion,Class):1.0
+SubClassOf(Ecoregion,BiologicalOrganizationLevel,):1.0
+is(Biosphere,isPartOf some www.fao.org/aims/aos/cwr.#):1.0
+is(Environment,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,affects some BiologicalOrganizationLevel,):1.0
+is(Thing,,affects some Species,):1.0
+is(EcologicalPhenomena,affects some www.fao.org/aims/aos/cwr.#):1.0
+is(FireIncidence,Class):1.0
+SubClassOf(FireIncidence,ENVO_01000203,):1.0
+SubClassOf(FireIncidence,decreases only WoodLayer,):1.0
+SubClassOf(FireIncidence,increases only GroundLayer):1.0
+is(FireRegime,Class):1.0
+SubClassOf(FireRegime,CerradoDeterminingFactors):1.0
+is(Grass,Class):1.0
+is(Angiosperm,,www.fao.org/aims/aos/cwr.#):1.0
+is(Angiosperm,,isPartOf only GroundLayer):1.0
+DisjointWith(Angiosperm,,Tree):1.0
+DisjointWith(Angiosperm,,Shrub):1.0
+DisjointWith(Angiosperm,,HerbaceousPlant):1.0
+is(GroundLayer,Class):1.0
+is(VegetationCover,www.fao.org/aims/aos/cwr.#):1.0
+is(HerbaceousPlant,Class):1.0
+is(Angiosperm,,www.fao.org/aims/aos/cwr.#):1.0
+is(Angiosperm,,isPartOf only GroundLayer):1.0
+DisjointWith(Angiosperm,,Tree):1.0
+DisjointWith(Angiosperm,,Shrub):1.0
+DisjointWith(Angiosperm,,Grass):1.0
+is(Metapopulation,Class):1.0
+SubClassOf(Metapopulation,BiologicalOrganizationLevel,):1.0
+SubClassOf(Metapopulation,isPartOf some Species,):1.0
+is(Community,isPartOf some www.fao.org/aims/aos/cwr.#):1.0
+is(NumberOfIndividuos,Class):1.0
+is(PopulationSize,www.fao.org/aims/aos/cwr.#):1.0
+SubClassOf(PopulationSize,PopulationDynamics,):1.0
+is(CommunityStructure,www.fao.org/aims/aos/cwr.#):1.0
+is(PielousEvenness,Class):1.0
+SubClassOf(PielousEvenness,SpeciesEvenness):1.0
+is(PopulationDynamics,Class):1.0
+is(EcologicalPhenomena,www.fao.org/aims/aos/cwr.#):1.0
+is(Precipitation,Class):1.0
+SubClassOf(Precipitation,ENVO_01000203):1.0
+is(RelativeHumidity,Class):1.0
+SubClassOf(RelativeHumidity,ENVO_01000203):1.0
+is(Season,Class):1.0
+SubClassOf(Season,Environment):1.0
+is(Shrub,Class):1.0
+is(Angiosperm,,www.fao.org/aims/aos/cwr.#):1.0
+is(Angiosperm,,isPartOf only WoodLayer):1.0
+DisjointWith(Angiosperm,,Tree):1.0
+DisjointWith(Angiosperm,,HerbaceousPlant):1.0
+DisjointWith(Angiosperm,,Grass):1.0
+is(SimpsonsIndex,Class):1.0
+SubClassOf(SimpsonsIndex,SpeciesDiversity):1.0
+is(Soil,Class):1.0
+SubClassOf(Soil,CerradoDeterminingFactors):1.0
+is(Species,Class):1.0
+is(SpeciesDiversity,Class):1.0
+is(SpeciesEvenness,Class):1.0
+SubClassOf(SpeciesEvenness,DiversityIndex):1.0
+is(Temperature,Class):1.0
+SubClassOf(Temperature,ENVO_01000203):1.0
+is(Tree,Class):1.0
+DisjointWith(Tree,Shrub):1.0
+DisjointWith(Tree,HerbaceousPlant):1.0
+DisjointWith(Tree,Grass):1.0
+is(TropicalSeason,Class):1.0
+is(WetSeason,Class):1.0
+SubClassOf(WetSeason,TropicalSeason):1.0
+DisjointWith(WetSeason,DrySeason):1.0
+is(WoodLayer,Class):1.0
+is(VegetationCover,www.fao.org/aims/aos/cwr.#):1.0
+is(ENVO_00000428,Class):1.0
+SubClassOf(ENVO_00000428,BiologicalOrganizationLevel,):1.0
+is(Biosphere,isPartOf some www.fao.org/aims/aos/cwr.#):1.0
+is(ENVO_00000446,Class):1.0
+SubClassOf(ENVO_00000446,ENVO_00000428):1.0
+is(ENVO_01000203,Class):1.0
+SubClassOf(ENVO_01000203,Environment):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(VascularPlant,www.fao.org/aims/aos/cwr.#):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(EcologicalPhenomena,www.fao.org/aims/aos/cwr.#):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(EcologicalPhenomena,www.fao.org/aims/aos/cwr.#):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+SubClassOf(www.fao.org/aims/aos/cwr.#,Environment):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(Community,www.fao.org/aims/aos/cwr.#):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+EquivalentTo(www.fao.org/aims/aos/cwr.#,NumberOfIndividuos):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+SubClassOf(www.fao.org/aims/aos/cwr.#,Environment):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(Sample,www.fao.org/aims/aos/cwr.#):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+SubClassOf(www.fao.org/aims/aos/cwr.#,ENVO_00000428):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(Plant,www.fao.org/aims/aos/cwr.#):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(PlantCommunity,www.fao.org/aims/aos/cwr.#):1.0
+is(www.fao.org/aims/aos/cwr.#,Class):1.0
+is(Vegetation,www.fao.org/aims/aos/cwr.#):1.0
+is(www.w3.org/2002/07/#,Class):1.0

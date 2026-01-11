@@ -1,0 +1,249 @@
+is(anyURI,Datatype):1.0
+is(dateTime,Datatype):1.0
+is(hexBinary,Datatype):1.0
+is(string,Datatype):1.0
+is(has_deviation_reason,ObjectProperty):1.0
+Characteristics(has_deviation_reason,Asymmetric):1.0
+Domain(has_deviation_reason,formal_care_plan):1.0
+Range(has_deviation_reason,deviation_reason):1.0
+is(has_genre,ObjectProperty):1.0
+Characteristics(has_genre,Asymmetric):1.0
+Domain(has_genre,formal_care_plan):1.0
+Range(has_genre,classification_genre):1.0
+is(has_outcome,ObjectProperty):1.0
+Characteristics(has_outcome,Asymmetric):1.0
+Domain(has_outcome,formal_care_plan):1.0
+Range(has_outcome,formal_care_plan,):1.0
+Range(has_outcome,health_issue,):1.0
+Range(has_outcome,instruction):1.0
+is(has_quality_of_evidence,ObjectProperty):1.0
+Characteristics(has_quality_of_evidence,Asymmetric):1.0
+Domain(has_quality_of_evidence,formal_care_plan):1.0
+Range(has_quality_of_evidence,quality_of_evidence):1.0
+is(has_related_health_issue,ObjectProperty):1.0
+Characteristics(has_related_health_issue,Asymmetric):1.0
+Domain(has_related_health_issue,formal_care_plan):1.0
+Range(has_related_health_issue,related_health_issue):1.0
+is(has_source_file,ObjectProperty):1.0
+Characteristics(has_source_file,Asymmetric):1.0
+Domain(has_source_file,formal_care_plan):1.0
+Range(has_source_file,source_file):1.0
+is(has_strength_of_recommendation,ObjectProperty):1.0
+Characteristics(has_strength_of_recommendation,Asymmetric):1.0
+Domain(has_strength_of_recommendation,formal_care_plan):1.0
+Range(has_strength_of_recommendation,strength_of_recommendation):1.0
+is(has_type,ObjectProperty):1.0
+Characteristics(has_type,Asymmetric):1.0
+Domain(has_type,formal_care_plan):1.0
+Range(has_type,classification_type):1.0
+is(is_a_deviation_of,ObjectProperty):1.0
+Characteristics(is_a_deviation_of,Asymmetric):1.0
+Domain(is_a_deviation_of,formal_care_plan):1.0
+Range(is_a_deviation_of,formal_care_plan):1.0
+is(is_endorsed_by,ObjectProperty):1.0
+Characteristics(is_endorsed_by,Asymmetric):1.0
+Domain(is_endorsed_by,formal_care_plan):1.0
+Range(is_endorsed_by,evidence_source):1.0
+is(is_initiated_by,ObjectProperty):1.0
+Characteristics(is_initiated_by,Asymmetric):1.0
+Domain(is_initiated_by,formal_care_plan):1.0
+Range(is_initiated_by,observable_condition):1.0
+is(is_issued_by,ObjectProperty):1.0
+Characteristics(is_issued_by,Asymmetric):1.0
+Domain(is_issued_by,formal_care_plan):1.0
+Range(is_issued_by,issuing_body):1.0
+is(is_part_of,ObjectProperty):1.0
+Domain(is_part_of,observable):1.0
+Range(is_part_of,observable_condition):1.0
+is(requires_resource,ObjectProperty):1.0
+Characteristics(requires_resource,Asymmetric):1.0
+Domain(requires_resource,formal_care_plan):1.0
+Range(requires_resource,drug,):1.0
+Range(requires_resource,human,):1.0
+Range(requires_resource,infrastructure):1.0
+is(description,ObjectProperty):1.0
+Characteristics(description,Asymmetric):1.0
+Domain(description,formal_care_plan):1.0
+Range(description,general_description):1.0
+is(license,ObjectProperty):1.0
+Characteristics(license,Asymmetric):1.0
+Domain(license,source_file):1.0
+Range(license,LicenseDocument):1.0
+is(title,ObjectProperty):1.0
+Characteristics(title,Asymmetric):1.0
+Domain(title,formal_care_plan):1.0
+Range(title,general_title):1.0
+is(copyright,DataProperty):1.0
+Domain(copyright,source_file):1.0
+Range(copyright,string):1.0
+is(file,DataProperty):1.0
+Domain(file,source_file):1.0
+Range(file,hexBinary):1.0
+is(format,DataProperty):1.0
+Domain(format,source_file):1.0
+Range(format,string):1.0
+is(location,DataProperty):1.0
+Domain(location,source_file):1.0
+Range(location,string):1.0
+is(reason,DataProperty):1.0
+Domain(reason,deviation_reason):1.0
+Range(reason,string):1.0
+is(url,DataProperty):1.0
+Domain(url,source_file):1.0
+Range(url,anyURI):1.0
+is(value,DataProperty):1.0
+Domain(value,general_description,):1.0
+Domain(value,general_title,):1.0
+Domain(value,instruction):1.0
+Range(value,string):1.0
+is(created,DataProperty):1.0
+Domain(created,deviation_reason):1.0
+Range(created,dateTime):1.0
+SubPropertyOf(created,date):1.0
+is(date,DataProperty):1.0
+Domain(date,source_file):1.0
+Range(date,dateTime):1.0
+is(issued,DataProperty):1.0
+Domain(issued,issuing_body):1.0
+Range(issued,dateTime):1.0
+SubPropertyOf(issued,date):1.0
+is(observable,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,is_part_of min 1 observable_condition):1.0
+is(observable_expression,Class):1.0
+EquivalentTo(observable_expression,observable_condition):1.0
+SubClassOf(observable_expression,formal_care_plan):1.0
+is(classification,Class):1.0
+SubClassOf(classification,formal_care_plan):1.0
+is(classification_genre,Class):1.0
+SubClassOf(classification_genre,classification):1.0
+is(classification_type,Class):1.0
+SubClassOf(classification_type,classification):1.0
+is(deviation_reason,Class):1.0
+SubClassOf(deviation_reason,formal_care_plan,):1.0
+SubClassOf(deviation_reason,created exactly 1 dateTime):1.0
+is(drug,Class):1.0
+EquivalentTo(drug,T200):1.0
+SubClassOf(drug,resource):1.0
+is(evidence_source,Class):1.0
+EquivalentTo(evidence_source,Document):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(formal_care_plan,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,has_outcome some formal_care_plan,):1.0
+is(Thing,,has_outcome some health_issue,):1.0
+is(Thing,,has_outcome some instruction,):1.0
+is(Thing,,has_type some classification_type,):1.0
+is(Thing,,is_a_deviation_of some formal_care_plan,):1.0
+is(Thing,,requires_resource some drug,):1.0
+is(Thing,,requires_resource some human,):1.0
+is(Thing,,requires_resource some infrastructure,):1.0
+is(Thing,,has_related_health_issue min 1 related_health_issue,):1.0
+is(Thing,,has_source_file min 1 source_file,):1.0
+is(Thing,,is_endorsed_by min 1 evidence_source,):1.0
+is(Thing,,is_initiated_by min 1 observable_condition,):1.0
+is(Thing,,has_genre exactly 1 classification_genre,):1.0
+is(Thing,,is_issued_by exactly 1 issuing_body,):1.0
+is(Thing,,title exactly 1 general_title,):1.0
+is(Thing,,has_deviation_reason max 1 deviation_reason,):1.0
+is(Thing,,has_quality_of_evidence max 1 quality_of_evidence,):1.0
+is(Thing,,has_strength_of_recommendation max 1 strength_of_recommendation,):1.0
+is(Thing,,description max 1 general_description):1.0
+is(general_description,Class):1.0
+SubClassOf(general_description,general_information,):1.0
+SubClassOf(general_description,value exactly 1 string):1.0
+is(general_information,Class):1.0
+SubClassOf(general_information,formal_care_plan):1.0
+is(general_title,Class):1.0
+SubClassOf(general_title,general_information,):1.0
+SubClassOf(general_title,value exactly 1 string):1.0
+is(health_issue,Class):1.0
+EquivalentTo(health_issue,C1137110):1.0
+SubClassOf(health_issue,classification,):1.0
+SubClassOf(health_issue,outcome):1.0
+is(human,Class):1.0
+EquivalentTo(human,T090):1.0
+SubClassOf(human,resource):1.0
+is(infrastructure,Class):1.0
+EquivalentTo(infrastructure,T074):1.0
+SubClassOf(infrastructure,resource):1.0
+is(instruction,Class):1.0
+SubClassOf(instruction,outcome,):1.0
+SubClassOf(instruction,value exactly 1 string):1.0
+is(issuing_body,Class):1.0
+EquivalentTo(issuing_body,Organization):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,issued exactly 1 dateTime):1.0
+is(observable_condition,Class):1.0
+EquivalentTo(observable_condition,observable_expression):1.0
+SubClassOf(observable_condition,formal_care_plan):1.0
+is(outcome,Class):1.0
+SubClassOf(outcome,formal_care_plan):1.0
+is(quality_and_level_of_recommendation,Class):1.0
+SubClassOf(quality_and_level_of_recommendation,formal_care_plan):1.0
+is(quality_of_evidence,Class):1.0
+SubClassOf(quality_of_evidence,quality_and_level_of_recommendation):1.0
+is(related_health_issue,Class):1.0
+EquivalentTo(related_health_issue,C1137110):1.0
+SubClassOf(related_health_issue,classification,):1.0
+SubClassOf(related_health_issue,outcome):1.0
+is(resource,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(source_file,Class):1.0
+SubClassOf(source_file,formal_care_plan,):1.0
+SubClassOf(source_file,(file exactly 1 hexBinary) or (url exactly 1 anyURI),):1.0
+SubClassOf(source_file,license max 1 LicenseDocument,):1.0
+SubClassOf(source_file,format exactly 1 string,):1.0
+SubClassOf(source_file,location exactly 1 string,):1.0
+SubClassOf(source_file,copyright max 1 string):1.0
+is(strength_of_recommendation,Class):1.0
+SubClassOf(strength_of_recommendation,quality_and_level_of_recommendation):1.0
+is(C1137110,Class):1.0
+EquivalentTo(C1137110,health_issue,):1.0
+EquivalentTo(C1137110,related_health_issue):1.0
+SubClassOf(C1137110,classification,):1.0
+SubClassOf(C1137110,outcome):1.0
+is(T074,Class):1.0
+EquivalentTo(T074,infrastructure):1.0
+SubClassOf(T074,resource):1.0
+is(T090,Class):1.0
+EquivalentTo(T090,human):1.0
+SubClassOf(T090,resource):1.0
+is(T200,Class):1.0
+EquivalentTo(T200,drug):1.0
+SubClassOf(T200,resource):1.0
+is(LicenseDocument,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Document,Class):1.0
+EquivalentTo(Document,evidence_source):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Organization,Class):1.0
+EquivalentTo(Organization,issuing_body):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(clinical_guideline,Individual):1.0
+Types(clinical_guideline,classification_genre):1.0
+is(clinical_pathway,Individual):1.0
+Types(clinical_pathway,classification_genre):1.0
+is(clinical_protocol,Individual):1.0
+Types(clinical_protocol,classification_genre):1.0
+is(high_quality_of_evidence,Individual):1.0
+Types(high_quality_of_evidence,quality_of_evidence):1.0
+is(low_quality_of_evidence,Individual):1.0
+Types(low_quality_of_evidence,quality_of_evidence):1.0
+is(moderate_quality_of_evidence,Individual):1.0
+Types(moderate_quality_of_evidence,quality_of_evidence):1.0
+is(strong_strength_of_recommendation,Individual):1.0
+Types(strong_strength_of_recommendation,strength_of_recommendation):1.0
+is(type_diagnostic,Individual):1.0
+Types(type_diagnostic,classification_type):1.0
+is(type_management,Individual):1.0
+Types(type_management,classification_type):1.0
+is(type_preventive,Individual):1.0
+Types(type_preventive,classification_type):1.0
+is(type_treatment,Individual):1.0
+Types(type_treatment,classification_type):1.0
+is(very_low_quality_of_evidence,Individual):1.0
+Types(very_low_quality_of_evidence,quality_of_evidence):1.0
+is(weak_strength_of_recommendation,Individual):1.0
+Types(weak_strength_of_recommendation,strength_of_recommendation):1.0

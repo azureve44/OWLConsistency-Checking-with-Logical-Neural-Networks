@@ -1,0 +1,81 @@
+predicate(constitutes-during,is,ObjectProperty).
+predicate(has-for-constituent-during,is,ObjectProperty).
+predicate(has-for-part-during,is,ObjectProperty).
+predicate(has-for-quality,is,ObjectProperty).
+predicate(is-a-part-of-during,is,ObjectProperty).
+predicate(is-present-at,is,ObjectProperty).
+predicate(is-present-in-at,is,ObjectProperty).
+predicate(is-the-maximal-physical-participant-of,is,ObjectProperty).
+predicate(is-the-maximal-physical-participant-of,Domain,physical-endurant).
+predicate(is-the-maximal-physical-participant-of,Range,perdurant).
+predicate(has-for-name,is,ObjectProperty).
+predicate(supports-at,is,ObjectProperty).
+predicate(supports-at,Domain,physical-endurant).
+predicate(supports-at,Range,inscription).
+predicate(amount-of-matter,is,Class).
+predicate(amount-of-matter,SubClassOf,physical-endurant).
+predicate(arbitrary-sum,is,Class).
+predicate(dependent-place,is,Class).
+predicate(endurant,is,Class).
+predicate(feature,is,Class).
+predicate(feature,SubClassOf,physical-endurant).
+predicate(non-physical-endurant,is,Class).
+predicate(perdurant,is,Class).
+predicate(physical-endurant,is,Class).
+predicate(physical-endurant,SubClassOf,endurant,).
+predicate(physical-endurant,SubClassOf,is-present-at some time-interval,).
+predicate(physical-endurant,SubClassOf,constitutes-during only physical-endurant,).
+predicate(physical-endurant,SubClassOf,has-for-constituent-during only physical-endurant,).
+predicate(physical-endurant,SubClassOf,has-for-part-during only physical-endurant,).
+predicate(physical-endurant,SubClassOf,has-for-quality only physical-quality,).
+predicate(physical-endurant,SubClassOf,is-a-part-of-during only physical-endurant,).
+predicate(physical-endurant,SubClassOf,has-for-quality min 1 spatial-location,).
+predicate(physical-endurant,SubClassOf,is-present-in-at min 1 space-region).
+predicate(physical-object,is,Class).
+predicate(physical-object,SubClassOf,physical-endurant).
+predicate(physical-quality,is,Class).
+predicate(space-region,is,Class).
+predicate(spatial-location,is,Class).
+predicate(time-interval,is,Class).
+predicate(inscription,is,Class).
+predicate(support,is,Class).
+predicate(support,SubClassOf,physical-endurant).
+predicate(H-imaged-nucleus,is,Class).
+predicate(H-imaged-nucleus,SubClassOf,H-nucleus,).
+predicate(H-imaged-nucleus,SubClassOf,imaged-nucleus).
+predicate(H-nucleus,is,Class).
+predicate(H-nucleus,SubClassOf,nucleus,).
+predicate(H-nucleus,SubClassOf,has-for-name value H).
+predicate(MR-contrast-agent,is,Class).
+predicate(P-images-nucleus,is,Class).
+predicate(P-images-nucleus,SubClassOf,P-nucleus,).
+predicate(P-images-nucleus,SubClassOf,imaged-nucleus).
+predicate(P-nucleus,is,Class).
+predicate(P-nucleus,SubClassOf,nucleus,).
+predicate(P-nucleus,SubClassOf,has-for-name value P).
+predicate(amount-of-gadolinium,is,Class).
+predicate(amount-of-uspio,is,Class).
+predicate(field-of-view,is,Class).
+predicate(field-of-view,SubClassOf,dependent-place).
+predicate(gadolinium-as-contrast-agent,is,Class).
+predicate(gadolinium-as-contrast-agent,SubClassOf,MR-contrast-agent,).
+predicate(gadolinium-as-contrast-agent,SubClassOf,amount-of-gadolinium,).
+predicate(gadolinium-as-contrast-agent,SubClassOf,has-for-name value gadolinium).
+predicate(imaged-nucleus,is,Class).
+predicate(imaged-nucleus,SubClassOf,nucleus).
+predicate(nucleus,is,Class).
+predicate(uspio-as-contrast-agent,is,Class).
+predicate(uspio-as-contrast-agent,SubClassOf,MR-contrast-agent,).
+predicate(uspio-as-contrast-agent,SubClassOf,amount-of-uspio,).
+predicate(uspio-as-contrast-agent,SubClassOf,has-for-name value USPIO).
+predicate(health-professional,is,Class).
+predicate(physical-therapist,is,Class).
+predicate(physical-therapist,SubClassOf,health-professional).
+predicate(psychomotor-therapist,is,Class).
+predicate(psychomotor-therapist,SubClassOf,physical-therapist).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(H,is,Individual).
+predicate(P,is,Individual).
+predicate(USPIO,is,Individual).
+predicate(gadolinium,is,Individual).
+predicate(gadolinium,DisjointClasses,arbitrary-sum,non-physical-endurant,physical-endurant).

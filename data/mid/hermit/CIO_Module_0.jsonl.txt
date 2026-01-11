@@ -1,0 +1,243 @@
+has_confidence_element is ObjectProperty
+has_confidence_element Domain CIO_0000000
+has_confidence_element Range CIO_0000040
+has_confidence_level is ObjectProperty
+has_confidence_level SubPropertyOf has_confidence_element
+has_evidence_concordance is ObjectProperty
+has_evidence_concordance SubPropertyOf has_confidence_element
+has_evidence_concordance Domain CIO_0000000
+has_evidence_concordance Range CIO_0000032
+has_evidence_type_concordance is ObjectProperty
+has_evidence_type_concordance SubPropertyOf has_confidence_element
+provides_greater_confidence_than is ObjectProperty
+provides_greater_confidence_than Characteristics Transitive
+provides_greater_confidence_than Domain CIO_0000028
+provides_greater_confidence_than Range CIO_0000028
+CIO_0000000 is Class
+CIO_0000000 EquivalentTo (has_confidence_element min 1 CIO_0000040) and (has_confidence_level min 0 CIO_0000028) and (has_evidence_type_concordance min 0 CIO_0000041) and (has_evidence_concordance exactly 1 CIO_0000032) and (has_confidence_element max 3 CIO_0000040) and (has_confidence_level max 1 CIO_0000028) and (has_evidence_type_concordance max 1 CIO_0000041),
+CIO_0000000 EquivalentTo ((has_evidence_concordance only CIO_0000042) and (has_confidence_element min 1 CIO_0000040) and (has_confidence_level min 0 CIO_0000028) and (has_evidence_type_concordance exactly 0 CIO_0000041) and (has_confidence_element max 2 CIO_0000040) and (has_confidence_level max 1 CIO_0000028)) or ((has_evidence_concordance only CIO_0000043) and (has_confidence_element min 2 CIO_0000040) and (has_confidence_level min 0 CIO_0000028) and (has_evidence_type_concordance exactly 1 CIO_0000041) and (has_confidence_element max 3 CIO_0000040) and (has_confidence_level max 1 CIO_0000028))
+Thing, is www.w3.org/2002/07/#
+Thing, is has_confidence_element min 1 CIO_0000040,
+Thing, is has_confidence_level min 0 CIO_0000028,
+Thing, is has_evidence_type_concordance min 0 CIO_0000041,
+Thing, is has_evidence_concordance exactly 1 CIO_0000032,
+Thing, is has_confidence_element max 3 CIO_0000040,
+Thing, is has_confidence_level max 1 CIO_0000028,
+Thing, is has_evidence_type_concordance max 1 CIO_0000041
+Thing, DisjointWith CIO_0000040
+CIO_0000001 is Class
+CIO_0000001 EquivalentTo CIO_0000000 and (has_evidence_concordance only CIO_0000042) and (has_evidence_type_concordance exactly 0 CIO_0000041)
+CIO_0000001 SubClassOf CIO_0000000,
+CIO_0000001 SubClassOf has_evidence_concordance only CIO_0000042,
+CIO_0000001 SubClassOf has_evidence_type_concordance exactly 0 CIO_0000041
+CIO_0000001 DisjointWith CIO_0000002
+CIO_0000002 is Class
+CIO_0000002 EquivalentTo CIO_0000000 and (has_evidence_concordance only CIO_0000043) and (has_evidence_type_concordance exactly 1 CIO_0000041)
+CIO_0000002 SubClassOf CIO_0000000,
+CIO_0000002 SubClassOf has_evidence_concordance only CIO_0000043,
+CIO_0000002 SubClassOf has_evidence_type_concordance exactly 1 CIO_0000041
+CIO_0000002 DisjointWith CIO_0000001
+CIO_0000003 is Class
+CIO_0000003 EquivalentTo CIO_0000001 and (has_confidence_level only CIO_0000029)
+CIO_0000003 SubClassOf CIO_0000001,
+CIO_0000003 SubClassOf has_confidence_level only CIO_0000029
+CIO_0000003 DisjointWith CIO_0000039
+CIO_0000003 DisjointWith CIO_0000005
+CIO_0000003 DisjointWith CIO_0000004
+CIO_0000004 is Class
+CIO_0000004 EquivalentTo CIO_0000001 and (has_confidence_level only CIO_0000030)
+CIO_0000004 SubClassOf CIO_0000001,
+CIO_0000004 SubClassOf has_confidence_level only CIO_0000030
+CIO_0000004 DisjointWith CIO_0000039
+CIO_0000004 DisjointWith CIO_0000005
+CIO_0000004 DisjointWith CIO_0000003
+CIO_0000005 is Class
+CIO_0000005 EquivalentTo CIO_0000001 and (has_confidence_level only CIO_0000031)
+CIO_0000005 SubClassOf CIO_0000001,
+CIO_0000005 SubClassOf has_confidence_level only CIO_0000031
+CIO_0000005 DisjointWith CIO_0000039
+CIO_0000005 DisjointWith CIO_0000004
+CIO_0000005 DisjointWith CIO_0000003
+CIO_0000006 is Class
+CIO_0000006 EquivalentTo CIO_0000002 and (has_evidence_type_concordance only CIO_0000037)
+CIO_0000006 SubClassOf CIO_0000002,
+CIO_0000006 SubClassOf has_evidence_type_concordance only CIO_0000037
+CIO_0000006 DisjointWith CIO_0000007
+CIO_0000007 is Class
+CIO_0000007 EquivalentTo CIO_0000002 and (has_evidence_type_concordance only CIO_0000038)
+CIO_0000007 SubClassOf CIO_0000002,
+CIO_0000007 SubClassOf has_evidence_type_concordance only CIO_0000038
+CIO_0000007 DisjointWith CIO_0000006
+CIO_0000008 is Class
+CIO_0000008 EquivalentTo CIO_0000007 and (has_evidence_concordance only CIO_0000033)
+CIO_0000008 SubClassOf CIO_0000007,
+CIO_0000008 SubClassOf has_evidence_concordance only CIO_0000033
+CIO_0000008 DisjointWith CIO_0000009
+CIO_0000009 is Class
+CIO_0000009 EquivalentTo CIO_0000007 and (has_evidence_concordance only CIO_0000034)
+CIO_0000009 SubClassOf CIO_0000007,
+CIO_0000009 SubClassOf has_evidence_concordance only CIO_0000034
+CIO_0000009 DisjointWith CIO_0000008
+CIO_0000010 is Class
+CIO_0000010 EquivalentTo CIO_0000009 and (has_evidence_concordance only CIO_0000035) and (has_confidence_level exactly 0 CIO_0000028)
+CIO_0000010 SubClassOf CIO_0000009,
+CIO_0000010 SubClassOf has_evidence_concordance only CIO_0000035,
+CIO_0000010 SubClassOf has_confidence_level exactly 0 CIO_0000028
+CIO_0000010 DisjointWith CIO_0000011
+CIO_0000011 is Class
+CIO_0000011 EquivalentTo CIO_0000009 and (has_evidence_concordance only CIO_0000036)
+CIO_0000011 SubClassOf CIO_0000009,
+CIO_0000011 SubClassOf has_evidence_concordance only CIO_0000036
+CIO_0000011 DisjointWith CIO_0000010
+CIO_0000012 is Class
+CIO_0000012 EquivalentTo CIO_0000008 and (has_confidence_level only CIO_0000029)
+CIO_0000012 SubClassOf CIO_0000008,
+CIO_0000012 SubClassOf has_confidence_level only CIO_0000029
+CIO_0000012 DisjointWith CIO_0000014
+CIO_0000012 DisjointWith CIO_0000013
+CIO_0000013 is Class
+CIO_0000013 EquivalentTo CIO_0000008 and (has_confidence_level only CIO_0000030)
+CIO_0000013 SubClassOf CIO_0000008,
+CIO_0000013 SubClassOf has_confidence_level only CIO_0000030
+CIO_0000013 DisjointWith CIO_0000014
+CIO_0000013 DisjointWith CIO_0000012
+CIO_0000014 is Class
+CIO_0000014 EquivalentTo CIO_0000008 and (has_confidence_level only CIO_0000031)
+CIO_0000014 SubClassOf CIO_0000008,
+CIO_0000014 SubClassOf has_confidence_level only CIO_0000031
+CIO_0000014 DisjointWith CIO_0000013
+CIO_0000014 DisjointWith CIO_0000012
+CIO_0000015 is Class
+CIO_0000015 EquivalentTo CIO_0000006 and (has_evidence_concordance only CIO_0000034)
+CIO_0000015 SubClassOf CIO_0000006,
+CIO_0000015 SubClassOf has_evidence_concordance only CIO_0000034
+CIO_0000015 DisjointWith CIO_0000016
+CIO_0000016 is Class
+CIO_0000016 EquivalentTo CIO_0000006 and (has_evidence_concordance only CIO_0000033)
+CIO_0000016 SubClassOf CIO_0000006,
+CIO_0000016 SubClassOf has_evidence_concordance only CIO_0000033
+CIO_0000016 DisjointWith CIO_0000015
+CIO_0000017 is Class
+CIO_0000017 EquivalentTo CIO_0000016 and (has_confidence_level only CIO_0000029)
+CIO_0000017 SubClassOf CIO_0000016,
+CIO_0000017 SubClassOf has_confidence_level only CIO_0000029
+CIO_0000017 DisjointWith CIO_0000019
+CIO_0000017 DisjointWith CIO_0000018
+CIO_0000018 is Class
+CIO_0000018 EquivalentTo CIO_0000016 and (has_confidence_level only CIO_0000031)
+CIO_0000018 SubClassOf CIO_0000016,
+CIO_0000018 SubClassOf has_confidence_level only CIO_0000031
+CIO_0000018 DisjointWith CIO_0000019
+CIO_0000018 DisjointWith CIO_0000017
+CIO_0000019 is Class
+CIO_0000019 EquivalentTo CIO_0000016 and (has_confidence_level only CIO_0000030)
+CIO_0000019 SubClassOf CIO_0000016,
+CIO_0000019 SubClassOf has_confidence_level only CIO_0000030
+CIO_0000019 DisjointWith CIO_0000018
+CIO_0000019 DisjointWith CIO_0000017
+CIO_0000020 is Class
+CIO_0000020 EquivalentTo CIO_0000015 and (has_evidence_concordance only CIO_0000035) and (has_confidence_level exactly 0 CIO_0000028)
+CIO_0000020 SubClassOf CIO_0000015,
+CIO_0000020 SubClassOf has_evidence_concordance only CIO_0000035,
+CIO_0000020 SubClassOf has_confidence_level exactly 0 CIO_0000028
+CIO_0000020 DisjointWith CIO_0000021
+CIO_0000021 is Class
+CIO_0000021 EquivalentTo CIO_0000015 and (has_evidence_concordance only CIO_0000036)
+CIO_0000021 SubClassOf CIO_0000015,
+CIO_0000021 SubClassOf has_evidence_concordance only CIO_0000036
+CIO_0000021 DisjointWith CIO_0000020
+CIO_0000022 is Class
+CIO_0000022 EquivalentTo CIO_0000021 and (has_confidence_level only CIO_0000029)
+CIO_0000022 SubClassOf CIO_0000021,
+CIO_0000022 SubClassOf has_confidence_level only CIO_0000029
+CIO_0000022 DisjointWith CIO_0000024
+CIO_0000022 DisjointWith CIO_0000023
+CIO_0000023 is Class
+CIO_0000023 EquivalentTo CIO_0000021 and (has_confidence_level only CIO_0000031)
+CIO_0000023 SubClassOf CIO_0000021,
+CIO_0000023 SubClassOf has_confidence_level only CIO_0000031
+CIO_0000023 DisjointWith CIO_0000024
+CIO_0000023 DisjointWith CIO_0000022
+CIO_0000024 is Class
+CIO_0000024 EquivalentTo CIO_0000021 and (has_confidence_level only CIO_0000030)
+CIO_0000024 SubClassOf CIO_0000021,
+CIO_0000024 SubClassOf has_confidence_level only CIO_0000030
+CIO_0000024 DisjointWith CIO_0000023
+CIO_0000024 DisjointWith CIO_0000022
+CIO_0000025 is Class
+CIO_0000025 EquivalentTo CIO_0000011 and (has_confidence_level only CIO_0000029)
+CIO_0000025 SubClassOf CIO_0000011,
+CIO_0000025 SubClassOf has_confidence_level only CIO_0000029
+CIO_0000025 DisjointWith CIO_0000027
+CIO_0000025 DisjointWith CIO_0000026
+CIO_0000026 is Class
+CIO_0000026 EquivalentTo CIO_0000011 and (has_confidence_level only CIO_0000031)
+CIO_0000026 SubClassOf CIO_0000011,
+CIO_0000026 SubClassOf has_confidence_level only CIO_0000031
+CIO_0000026 DisjointWith CIO_0000027
+CIO_0000026 DisjointWith CIO_0000025
+CIO_0000027 is Class
+CIO_0000027 EquivalentTo CIO_0000011 and (has_confidence_level only CIO_0000030)
+CIO_0000027 SubClassOf CIO_0000011,
+CIO_0000027 SubClassOf has_confidence_level only CIO_0000030
+CIO_0000027 DisjointWith CIO_0000026
+CIO_0000027 DisjointWith CIO_0000025
+CIO_0000028 is Class
+CIO_0000028 SubClassOf CIO_0000040
+CIO_0000028 DisjointWith CIO_0000041
+CIO_0000028 DisjointWith CIO_0000032
+CIO_0000029 is Class
+CIO_0000029 SubClassOf CIO_0000028,
+CIO_0000029 SubClassOf provides_greater_confidence_than some CIO_0000030
+CIO_0000029 DisjointWith CIO_0000031
+CIO_0000029 DisjointWith CIO_0000030
+CIO_0000030 is Class
+CIO_0000030 SubClassOf CIO_0000028,
+CIO_0000030 SubClassOf provides_greater_confidence_than some CIO_0000031
+CIO_0000030 DisjointWith CIO_0000031
+CIO_0000030 DisjointWith CIO_0000029
+CIO_0000031 is Class
+CIO_0000031 SubClassOf CIO_0000028
+CIO_0000031 DisjointWith CIO_0000030
+CIO_0000031 DisjointWith CIO_0000029
+CIO_0000032 is Class
+CIO_0000032 SubClassOf CIO_0000040
+CIO_0000032 DisjointWith CIO_0000041
+CIO_0000032 DisjointWith CIO_0000028
+CIO_0000033 is Class
+CIO_0000033 SubClassOf CIO_0000043
+CIO_0000033 DisjointWith CIO_0000034
+CIO_0000034 is Class
+CIO_0000034 SubClassOf CIO_0000043
+CIO_0000034 DisjointWith CIO_0000033
+CIO_0000035 is Class
+CIO_0000035 SubClassOf CIO_0000034
+CIO_0000035 DisjointWith CIO_0000036
+CIO_0000036 is Class
+CIO_0000036 SubClassOf CIO_0000034
+CIO_0000036 DisjointWith CIO_0000035
+CIO_0000037 is Class
+CIO_0000037 SubClassOf CIO_0000041
+CIO_0000037 DisjointWith CIO_0000038
+CIO_0000038 is Class
+CIO_0000038 SubClassOf CIO_0000041
+CIO_0000038 DisjointWith CIO_0000037
+CIO_0000039 is Class
+CIO_0000039 SubClassOf CIO_0000001
+CIO_0000039 DisjointWith CIO_0000005
+CIO_0000039 DisjointWith CIO_0000004
+CIO_0000039 DisjointWith CIO_0000003
+CIO_0000040 is Class
+Thing is www.w3.org/2002/07/#
+Thing DisjointWith CIO_0000000
+CIO_0000041 is Class
+CIO_0000041 SubClassOf CIO_0000040
+CIO_0000041 DisjointWith CIO_0000032
+CIO_0000041 DisjointWith CIO_0000028
+CIO_0000042 is Class
+CIO_0000042 SubClassOf CIO_0000032
+CIO_0000042 DisjointWith CIO_0000043
+CIO_0000043 is Class
+CIO_0000043 SubClassOf CIO_0000032
+CIO_0000043 DisjointWith CIO_0000042
+www.w3.org/2002/07/# is Class

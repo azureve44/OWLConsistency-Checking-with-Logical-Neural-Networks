@@ -1,0 +1,153 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(string,is,Datatype).
+predicate(a_pour_etat_civil,is,ObjectProperty).
+predicate(est_correlatif_a,is,ObjectProperty).
+predicate(est_correlatif_a_un_etat_emotionnel_negatif,is,ObjectProperty).
+predicate(complement,is,Class).
+predicate(complement,SubClassOf,intentional_change_about_change).
+predicate(intentional_change_about_change,is,Class).
+predicate(Absenteisme,is,Class).
+predicate(Absenteisme,DisjointWith,).
+predicate(Absenteisme,DisjointWith,Universite).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Absenteisme_Scolaire,is,Class).
+predicate(Absenteisme_Scolaire,SubClassOf,Absenteisme,).
+predicate(Absenteisme_Scolaire,SubClassOf,est_correlatif_a some Scolarite).
+predicate(Absenteisme_Travail,is,Class).
+predicate(Absenteisme_Travail,SubClassOf,Absenteisme,).
+predicate(Absenteisme_Travail,SubClassOf,est_correlatif_a some Travail).
+predicate(Amelioration,is,Class).
+predicate(Amelioration_Scolaire,is,Class).
+predicate(Amelioration_Scolaire,SubClassOf,Amelioration,).
+predicate(Amelioration_Scolaire,SubClassOf,est_correlatif_a some Scolarite).
+predicate(Ami_Avec_Qualificatif,is,Class).
+predicate(Ami_Celibataire,is,Class).
+predicate(Ami_Celibataire,SubClassOf,Ami_Avec_Qualificatif,).
+predicate(Ami_Celibataire,SubClassOf,a_pour_etat_civil some Etat_Civil_Celibataire).
+predicate(Auxiliare_De_Justice,is,Class).
+predicate(Changement_Condition_Vie,is,Class).
+predicate(Classe_Cinquieme,is,Class).
+predicate(Classe_Cinquieme,SubClassOf,Enseignement_Secondaire_College).
+predicate(Classe_Premiere,is,Class).
+predicate(Classe_Premiere,SubClassOf,Enseignement_Secondaire_Lycee).
+predicate(Classe_Quatrieme,is,Class).
+predicate(Classe_Quatrieme,SubClassOf,Enseignement_Secondaire_College).
+predicate(Classe_Seconde,is,Class).
+predicate(Classe_Seconde,SubClassOf,Enseignement_Secondaire_Lycee).
+predicate(Classe_Sixieme,is,Class).
+predicate(Classe_Sixieme,SubClassOf,Enseignement_Secondaire_College).
+predicate(Classe_Terminale,is,Class).
+predicate(Classe_Terminale,SubClassOf,Enseignement_Secondaire_Lycee).
+predicate(Classe_Troisieme,is,Class).
+predicate(Classe_Troisieme,SubClassOf,Enseignement_Secondaire_College).
+predicate(Collegien,is,Class).
+predicate(Collegien,SubClassOf,Eleve_College).
+predicate(Collegienne,is,Class).
+predicate(Collegienne,SubClassOf,Eleve_College).
+predicate(Compagne,is,Class).
+predicate(Concept_Education,is,Class).
+predicate(Conseil_Superieur_De_La_Magistrature,is,Class).
+predicate(Conseil_Superieur_De_La_Magistrature,SubClassOf,Juridiction_Penale_Premier_Degre).
+predicate(Deces_Compagne,is,Class).
+predicate(Deces_Compagne,SubClassOf,Deces_Membre_Couple,).
+predicate(Deces_Compagne,SubClassOf,est_correlatif_a some Compagne).
+predicate(Deces_Membre_Couple,is,Class).
+predicate(Difficulte_Scolaire,is,Class).
+predicate(Eleve,is,Class).
+predicate(Eleve_College,is,Class).
+predicate(Eleve_College,SubClassOf,Eleve).
+predicate(Enseignement_Maternel,is,Class).
+predicate(Enseignement_Maternel,SubClassOf,Enseignement_Scolaire).
+predicate(Enseignement_Primaire,is,Class).
+predicate(Enseignement_Primaire,SubClassOf,Enseignement_Scolaire).
+predicate(Enseignement_Scolaire,is,Class).
+predicate(Enseignement_Scolaire,SubClassOf,Concept_Education).
+predicate(Enseignement_Secondaire,is,Class).
+predicate(Enseignement_Secondaire,SubClassOf,Enseignement_Scolaire).
+predicate(Enseignement_Secondaire_College,is,Class).
+predicate(Enseignement_Secondaire_Lycee,is,Class).
+predicate(Etat_Civil_Celibataire,is,Class).
+predicate(Etat_Emotionnel_Negatif,is,Class).
+predicate(Etude_Biologie,is,Class).
+predicate(Etude_Biologie_Moleculaire,is,Class).
+predicate(Etude_Biologie_Moleculaire,SubClassOf,Etude_Biologie).
+predicate(Etude_Commerce,is,Class).
+predicate(Etude_Commerce_International,is,Class).
+predicate(Etude_Commerce_International,SubClassOf,Etude_Commerce).
+predicate(Etude_Medecine,is,Class).
+predicate(Etude_Medecine,SubClassOf,Etude_Medicale).
+predicate(Etude_Medicale,is,Class).
+predicate(Etude_Musique,is,Class).
+predicate(Etude_Pharmacie,is,Class).
+predicate(Etude_Pharmacie,SubClassOf,Etude_Medicale).
+predicate(Etude_Piano,is,Class).
+predicate(Etude_Piano,SubClassOf,Etude_Musique).
+predicate(Etude_Superieur,is,Class).
+predicate(Etude_Superieur,SubClassOf,Enseignement_Scolaire).
+predicate(Harcelement,is,Class).
+predicate(Harcelement_Scolaire,is,Class).
+predicate(Harcelement_Scolaire,SubClassOf,Harcelement,).
+predicate(Harcelement_Scolaire,SubClassOf,est_correlatif_a some Difficulte_Scolaire,).
+predicate(Harcelement_Scolaire,SubClassOf,est_correlatif_a some Scolarite).
+predicate(Harcelement_Sexuel,is,Class).
+predicate(Harcelement_Sexuel,SubClassOf,Harcelement).
+predicate(Harcelement_Telephonique,is,Class).
+predicate(Harcelement_Telephonique,SubClassOf,Harcelement).
+predicate(Inflechissement,is,Class).
+predicate(Inflechissement_Scolaire,is,Class).
+predicate(Inflechissement_Scolaire,SubClassOf,Inflechissement,).
+predicate(Inflechissement_Scolaire,SubClassOf,est_correlatif_a some Scolarite).
+predicate(Juridiction_Penale_Premier_Degre,is,Class).
+predicate(Logement,is,Class).
+predicate(Menace_Auto_Agressive,is,Class).
+predicate(Menace_Suicidaire,is,Class).
+predicate(Menace_Suicidaire,SubClassOf,Menace_Auto_Agressive).
+predicate(Mere,is,Class).
+predicate(Notaire,is,Class).
+predicate(Notaire,SubClassOf,Auxiliare_De_Justice).
+predicate(Personne_Morale,is,Class).
+predicate(Personne_Morale_Droit_Prive,is,Class).
+predicate(Personne_Morale_Droit_Prive,SubClassOf,Personne_Morale).
+predicate(Perte_Logement,is,Class).
+predicate(Perte_Logement,SubClassOf,Changement_Condition_Vie,).
+predicate(Perte_Logement,SubClassOf,est_correlatif_a some Logement,).
+predicate(Perte_Logement,SubClassOf,est_correlatif_a_un_etat_emotionnel_negatif some Etat_Emotionnel_Negatif).
+predicate(Residence_Privee,is,Class).
+predicate(Residence_Universitaire_Privee,is,Class).
+predicate(Residence_Universitaire_Privee,SubClassOf,Residence_Privee,).
+predicate(Residence_Universitaire_Privee,SubClassOf,est_correlatif_a some Universite,).
+predicate(Residence_Universitaire_Privee,SubClassOf,est_correlatif_a some).
+predicate(Residence_Universitaire_Privee,SubClassOf,(Absenteisme and Universite),).
+predicate(Residence_Universitaire_Privee,SubClassOf,est_correlatif_a only Absenteisme).
+predicate(Rupture_Avec_Type,is,Class).
+predicate(Rupture_Avec_Type,SubClassOf,Rupture_Cursus_Universitaire).
+predicate(Rupture_Cursus_Universitaire,is,Class).
+predicate(Rupture_Cursus_Universitaire,SubClassOf,Rupture_Scolaire,).
+predicate(Rupture_Cursus_Universitaire,SubClassOf,est_correlatif_a some Universite).
+predicate(Rupture_Scolaire,is,Class).
+predicate(Rupture_Scolaire,SubClassOf,Rupture_Avec_Type,).
+predicate(Rupture_Scolaire,SubClassOf,est_correlatif_a some Scolarite).
+predicate(Scolarite,is,Class).
+predicate(Service_Hospitalo_Universitaire,is,Class).
+predicate(Service_Hospitalo_Universitaire,SubClassOf,Service_Interne_Hopital).
+predicate(Service_Interne_Hopital,is,Class).
+predicate(Travail,is,Class).
+predicate(Travail_Alimentaire,is,Class).
+predicate(Travail_Alimentaire,SubClassOf,Travail_Avec_Type).
+predicate(Travail_Avec_Type,is,Class).
+predicate(Unite_Mere,is,Class).
+predicate(Unite_Mere,SubClassOf,Unite_Sante,).
+predicate(Unite_Mere,SubClassOf,est_correlatif_a some Mere).
+predicate(Unite_Mere_Bebe,is,Class).
+predicate(Unite_Mere_Bebe,SubClassOf,Unite_Mere).
+predicate(Unite_Mere_Enfant,is,Class).
+predicate(Unite_Mere_Enfant,SubClassOf,Unite_Mere).
+predicate(Unite_Sante,is,Class).
+predicate(Unite_Universitaire,is,Class).
+predicate(Unite_Universitaire,SubClassOf,Unite_Sante,).
+predicate(Unite_Universitaire,SubClassOf,est_correlatif_a some Universite).
+predicate(Universite,is,Class).
+predicate(Universite,DisjointWith,Absenteisme).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).

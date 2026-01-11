@@ -1,0 +1,123 @@
+predicate(has_PPD_risk_factor_status,is,ObjectProperty).
+predicate(has_PPD_risk_type,is,ObjectProperty).
+predicate(is_during,is,ObjectProperty).
+predicate(is_symptom_of,is,ObjectProperty).
+predicate(0_Up_to_13_Months_After_Birth,is,Class).
+predicate(0_Up_to_13_Months_After_Birth,SubClassOf,Postpregnancy).
+predicate(0_Up_to_3_Months_After_Birth,is,Class).
+predicate(0_Up_to_3_Months_After_Birth,SubClassOf,0_Up_to_13_Months_After_Birth).
+predicate(3_Up_to_6_Months_After_Birth,is,Class).
+predicate(3_Up_to_6_Months_After_Birth,SubClassOf,0_Up_to_13_Months_After_Birth).
+predicate(6_Up_to_13_Months_After_Birth,is,Class).
+predicate(6_Up_to_13_Months_After_Birth,SubClassOf,0_Up_to_13_Months_After_Birth).
+predicate(Breastfeeding_Expectations_Unmet,is,Class).
+predicate(Childcare_Stress,is,Class).
+predicate(Childcare_Stress,SubClassOf,Stress,).
+predicate(Childcare_Stress,SubClassOf,has_PPD_risk_factor_status only Potential_PPD_Risk_Factor,).
+predicate(Childcare_Stress,SubClassOf,has_PPD_risk_type only Pregnancy_or_Birth_Related_PPD_Risk_Type).
+predicate(Concern,is,Class).
+predicate(Concern_for_Infant_Health,is,Class).
+predicate(Concern_for_Infant_Health,SubClassOf,Concern,).
+predicate(Concern_for_Infant_Health,SubClassOf,is_symptom_of some Postpartum_Depression).
+predicate(Difficulty_Completing_Tasks,is,Class).
+predicate(Difficulty_Getting_Out_of_Bed,is,Class).
+predicate(Difficulty_Getting_Out_of_Bed,SubClassOf,Difficulty_Completing_Tasks,).
+predicate(Difficulty_Getting_Out_of_Bed,SubClassOf,is_symptom_of some Postpartum_Depression).
+predicate(Disease_or_Disorder,is,Class).
+predicate(Fatigue,is,Class).
+predicate(Fatigue_During_Pregnancy,is,Class).
+predicate(Fatigue_During_Pregnancy,SubClassOf,Fatigue,).
+predicate(Fatigue_During_Pregnancy,SubClassOf,has_PPD_risk_type some Other_Body_Condition_Related_PPD_Risk_Type,).
+predicate(Fatigue_During_Pregnancy,SubClassOf,has_PPD_risk_type some Pregnancy_or_Birth_Related_PPD_Risk_Type,).
+predicate(Fatigue_During_Pregnancy,SubClassOf,has_PPD_risk_factor_status only Potential_PPD_Risk_Factor,).
+predicate(Fatigue_During_Pregnancy,SubClassOf,has_PPD_risk_type only).
+predicate(Fatigue_During_Pregnancy,SubClassOf,(Other_Body_Condition_Related_PPD_Risk_Type or Pregnancy_or_Birth_Related_PPD_Risk_Type),).
+predicate(Fatigue_During_Pregnancy,SubClassOf,is_during only Time_During_Pregnancy).
+predicate(Fear,is,Class).
+predicate(Fear_of_Child_Being_Taken_Away,is,Class).
+predicate(Fear_of_Child_Being_Taken_Away,SubClassOf,Fear,).
+predicate(Fear_of_Child_Being_Taken_Away,SubClassOf,is_symptom_of some Postpartum_Depression).
+predicate(Fear_of_Perception_as_Bad_Parent,is,Class).
+predicate(Fear_of_Perception_as_Bad_Parent,SubClassOf,Fear,).
+predicate(Fear_of_Perception_as_Bad_Parent,SubClassOf,is_symptom_of some Postpartum_Depression).
+predicate(Headache,is,Class).
+predicate(Hyperemesis,is,Class).
+predicate(Hyperemesis,SubClassOf,Pregnancy_Related_Nausea_Vomiting).
+predicate(Instability_Mediated_by_Outside_Factor_Related_PPD_Risk_Type,is,Class).
+predicate(Intrusive_Thoughts,is,Class).
+predicate(Intrusive_Thoughts,SubClassOf,Negative_Thoughts,).
+predicate(Intrusive_Thoughts,SubClassOf,is_symptom_of some Postpartum_Depression).
+predicate(Mental_Condition_Related_PPD_Risk_Type,is,Class).
+predicate(Multiple_Gestation,is,Class).
+predicate(Nausea_or_Vomiting,is,Class).
+predicate(Negative_Thoughts,is,Class).
+predicate(No_Intent_to_Breastfeed_and_Did_Breastfeed,is,Class).
+predicate(No_Intent_to_Breastfeed_and_Did_Breastfeed,SubClassOf,Breastfeeding_Expectations_Unmet,).
+predicate(No_Intent_to_Breastfeed_and_Did_Breastfeed,SubClassOf,has_PPD_risk_type some Mental_Condition_Related_PPD_Risk_Type,).
+predicate(No_Intent_to_Breastfeed_and_Did_Breastfeed,SubClassOf,has_PPD_risk_type some Pregnancy_or_Birth_Related_PPD_Risk_Type,).
+predicate(No_Intent_to_Breastfeed_and_Did_Breastfeed,SubClassOf,has_PPD_risk_factor_status only Potential_PPD_Risk_Factor,).
+predicate(No_Intent_to_Breastfeed_and_Did_Breastfeed,SubClassOf,has_PPD_risk_type only).
+predicate(No_Intent_to_Breastfeed_and_Did_Breastfeed,SubClassOf,(Mental_Condition_Related_PPD_Risk_Type or Pregnancy_or_Birth_Related_PPD_Risk_Type)).
+predicate(Nonpregnancy_Related_Nausea_Vomiting,is,Class).
+predicate(Nonpregnancy_Related_Nausea_Vomiting,SubClassOf,Nausea_or_Vomiting).
+predicate(Nonpregnancy_Related_Nausea_Vomiting,DisjointWith,Pregnancy_Related_Nausea_Vomiting).
+predicate(Nontrauma_Induced_Headache,is,Class).
+predicate(Nontrauma_Induced_Headache,SubClassOf,Headache).
+predicate(Nontrauma_Induced_Headache,DisjointWith,Trauma_Induced_Headache).
+predicate(Other_Body_Condition_Related_PPD_Risk_Type,is,Class).
+predicate(Postnatal_Period,is,Class).
+predicate(Postnatal_Period,SubClassOf,0_Up_to_3_Months_After_Birth).
+predicate(Postpartum_Depression,is,Class).
+predicate(Postpartum_Fatigue,is,Class).
+predicate(Postpartum_Fatigue,SubClassOf,Fatigue,).
+predicate(Postpartum_Fatigue,SubClassOf,has_PPD_risk_type some Other_Body_Condition_Related_PPD_Risk_Type,).
+predicate(Postpartum_Fatigue,SubClassOf,has_PPD_risk_type some Pregnancy_or_Birth_Related_PPD_Risk_Type,).
+predicate(Postpartum_Fatigue,SubClassOf,is_symptom_of some Postpartum_Depression,).
+predicate(Postpartum_Fatigue,SubClassOf,has_PPD_risk_factor_status only Potential_PPD_Risk_Factor,).
+predicate(Postpartum_Fatigue,SubClassOf,has_PPD_risk_type only).
+predicate(Postpartum_Fatigue,SubClassOf,(Other_Body_Condition_Related_PPD_Risk_Type or Pregnancy_or_Birth_Related_PPD_Risk_Type),).
+predicate(Postpartum_Fatigue,SubClassOf,is_during only 0_Up_to_13_Months_After_Birth).
+predicate(Postpregnancy,is,Class).
+predicate(Potential_PPD_Risk_Factor,is,Class).
+predicate(Pregnancy_Complications_and_Conditions,is,Class).
+predicate(Pregnancy_Related_Nausea_Vomiting,is,Class).
+predicate(Pregnancy_Related_Nausea_Vomiting,EquivalentTo,Nausea_or_Vomiting and (is_during only Time_During_Pregnancy)).
+predicate(Pregnancy_Related_Nausea_Vomiting,SubClassOf,Nausea_or_Vomiting,).
+predicate(Pregnancy_Related_Nausea_Vomiting,SubClassOf,Pregnancy_Complications_and_Conditions).
+predicate(Pregnancy_Related_Nausea_Vomiting,DisjointWith,Nonpregnancy_Related_Nausea_Vomiting).
+predicate(Pregnancy_or_Birth_Related_PPD_Risk_Type,is,Class).
+predicate(Prolonged_Nausea_and_Vomiting_in_Pregnancy,is,Class).
+predicate(Prolonged_Nausea_and_Vomiting_in_Pregnancy,SubClassOf,Pregnancy_Related_Nausea_Vomiting).
+predicate(SARS_CoV_2_Pandemic,is,Class).
+predicate(SARS_CoV_2_Pandemic,SubClassOf,Stressful_Event_Type,).
+predicate(SARS_CoV_2_Pandemic,SubClassOf,has_PPD_risk_factor_status only Potential_PPD_Risk_Factor,).
+predicate(SARS_CoV_2_Pandemic,SubClassOf,has_PPD_risk_type only Instability_Mediated_by_Outside_Factor_Related_PPD_Risk_Type).
+predicate(Sextuplets,is,Class).
+predicate(Sextuplets,SubClassOf,Multiple_Gestation).
+predicate(Signs,is,Class).
+predicate(Signs,SubClassOf,Symptoms_and_Signs).
+predicate(Stress,is,Class).
+predicate(Stressful_Event_Type,is,Class).
+predicate(Symptoms,is,Class).
+predicate(Symptoms,SubClassOf,Symptoms_and_Signs).
+predicate(Symptoms_and_Signs,is,Class).
+predicate(Symptoms_and_Signs,SubClassOf,Disease_or_Disorder).
+predicate(Time_During_Pregnancy,is,Class).
+predicate(Trauma_Induced_Headache,is,Class).
+predicate(Trauma_Induced_Headache,SubClassOf,Headache).
+predicate(Trauma_Induced_Headache,DisjointWith,Nontrauma_Induced_Headache).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(O26.81,is,Individual).
+predicate(O26.81,Types,Fatigue_During_Pregnancy).
+predicate(O26.811,is,Individual).
+predicate(O26.811,Types,Fatigue_During_Pregnancy).
+predicate(O26.812,is,Individual).
+predicate(O26.812,Types,Fatigue_During_Pregnancy).
+predicate(O26.813,is,Individual).
+predicate(O26.813,Types,Fatigue_During_Pregnancy).
+predicate(O26.819,is,Individual).
+predicate(O26.819,Types,Fatigue_During_Pregnancy).
+predicate(Z37.54,is,Individual).
+predicate(Z37.54,Types,Sextuplets).
+predicate(Z37.64,is,Individual).
+predicate(Z37.64,Types,Sextuplets).

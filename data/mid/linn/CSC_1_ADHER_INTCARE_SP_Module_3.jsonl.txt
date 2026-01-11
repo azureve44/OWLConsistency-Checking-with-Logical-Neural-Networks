@@ -1,0 +1,16 @@
+predicate(Adherencia,is,Class).
+predicate(Adherencia,EquivalentTo,Plan_Accion_Personalizado).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Plan_Accion_Personalizado).
+predicate(Adherencia_dieta,is,Class).
+predicate(Adherencia_dieta,SubClassOf,Adherencia).
+predicate(Adherencia_estilo_de_vida,is,Class).
+predicate(Adherencia_estilo_de_vida,SubClassOf,Adherencia).
+predicate(Adherencia_medicacion,is,Class).
+predicate(Adherencia_medicacion,SubClassOf,Adherencia).
+predicate(Plan_Accion_Personalizado,is,Class).
+predicate(Plan_Accion_Personalizado,EquivalentTo,Adherencia).
+predicate(Plan_Accion_Personalizado,DisjointWith,Adherencia).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,SubClassOf,Adherencia_medicacion).
+predicate(www.w3.org/2002/07/#,DisjointClasses,Adherencia_dieta,Adherencia_estilo_de_vida,Adherencia_medicacion).

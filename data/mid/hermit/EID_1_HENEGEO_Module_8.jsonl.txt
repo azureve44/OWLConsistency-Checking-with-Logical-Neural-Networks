@@ -1,0 +1,27 @@
+is-a-quality-of is ObjectProperty
+is-present-at is ObjectProperty
+is-measured-by is ObjectProperty
+is-measured-by Domain quality
+is-measured-by Range instrument-variable
+is-measured-by InverseOf measures
+measures is ObjectProperty
+measures InverseOf is-measured-by
+abstract is Class
+abstract-quality is Class
+abstract-quality SubClassOf quality
+endurant is Class
+particular is Class
+perdurant is Class
+physical-quality is Class
+physical-quality SubClassOf quality
+quality is Class
+quality SubClassOf particular,
+quality SubClassOf is-present-at min 1 time-interval,
+quality SubClassOf is-a-quality-of exactly 1 particular
+temporal-quality is Class
+temporal-quality SubClassOf quality
+time-interval is Class
+instrument-variable is Class
+www.w3.org/2002/07/# is Class
+www.w3.org/2002/07/# DisjointClasses abstract,endurant,perdurant,quality
+www.w3.org/2002/07/# EquivalentClasses abstract,endurant,perdurant,quality

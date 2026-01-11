@@ -1,0 +1,52 @@
+predicate(describes,is,ObjectProperty).
+predicate(is_a,is,ObjectProperty).
+predicate(part_of,is,ObjectProperty).
+predicate(Adjacent_Structure,is,Class).
+predicate(Adjacent_Structure,SubClassOf,Anatomy_and_Histoembryology).
+predicate(Anatomy_and_Histoembryology,is,Class).
+predicate(Anatomy_and_Histoembryology,EquivalentTo,describes some Thyroid_Cancer).
+predicate(Anatomy_and_Histoembryology,SubClassOf,Thyroid_Cancer).
+predicate(Anterior_Branches,is,Class).
+predicate(Anterior_Branches,EquivalentTo,part_of some Recurrent_Laryngeal_Nerve).
+predicate(Anterior_Branches,SubClassOf,Recurrent_Laryngeal_Nerve).
+predicate(Artery,is,Class).
+predicate(External_Branches,is,Class).
+predicate(External_Branches,EquivalentTo,part_of some Recurrent_Laryngeal_Nerve).
+predicate(External_Branches,SubClassOf,Superior_Laryngeal_Nerve).
+predicate(Histology,is,Class).
+predicate(Histology,SubClassOf,Anatomy_and_Histoembryology).
+predicate(Inferior_Thyroid_Artery,is,Class).
+predicate(Inferior_Thyroid_Artery,EquivalentTo,is_a some Artery).
+predicate(Inferior_Thyroid_Artery,SubClassOf,Artery).
+predicate(Inferior_Thyroid_Vein,is,Class).
+predicate(Inferior_Thyroid_Vein,EquivalentTo,is_a some Venous).
+predicate(Inferior_Thyroid_Vein,SubClassOf,Venous).
+predicate(Internal_Branches,is,Class).
+predicate(Internal_Branches,EquivalentTo,part_of some Recurrent_Laryngeal_Nerve).
+predicate(Internal_Branches,SubClassOf,Superior_Laryngeal_Nerve).
+predicate(Lowest_Thyroid_Artery,is,Class).
+predicate(Lowest_Thyroid_Artery,EquivalentTo,is_a some Artery).
+predicate(Lowest_Thyroid_Artery,SubClassOf,Artery).
+predicate(Middle_Thyroid_Vein,is,Class).
+predicate(Middle_Thyroid_Vein,EquivalentTo,is_a some Venous).
+predicate(Middle_Thyroid_Vein,SubClassOf,Venous).
+predicate(Posterior_Branches,is,Class).
+predicate(Posterior_Branches,EquivalentTo,part_of some Recurrent_Laryngeal_Nerve).
+predicate(Posterior_Branches,SubClassOf,Recurrent_Laryngeal_Nerve).
+predicate(Recurrent_Laryngeal_Nerve,is,Class).
+predicate(Superior_Laryngeal_Nerve,is,Class).
+predicate(Superior_Thyroid_Artery,is,Class).
+predicate(Superior_Thyroid_Artery,EquivalentTo,is_a some Artery).
+predicate(Superior_Thyroid_Artery,SubClassOf,Artery).
+predicate(Superior_Thyroid_Vein,is,Class).
+predicate(Superior_Thyroid_Vein,EquivalentTo,is_a some Venous).
+predicate(Superior_Thyroid_Vein,SubClassOf,Venous).
+predicate(Thyroid_Blood_Supply,is,Class).
+predicate(Thyroid_Blood_Supply,SubClassOf,Anatomy_and_Histoembryology).
+predicate(Thyroid_Cancer,is,Class).
+predicate(Thyroid_Dominant_Nerve,is,Class).
+predicate(Thyroid_Dominant_Nerve,SubClassOf,Anatomy_and_Histoembryology).
+predicate(Thyroid_Structure,is,Class).
+predicate(Thyroid_Structure,SubClassOf,Anatomy_and_Histoembryology).
+predicate(Venous,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

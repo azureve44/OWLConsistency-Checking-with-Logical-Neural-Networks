@@ -1,0 +1,22 @@
+predicate(hasClassified,is,ObjectProperty).
+predicate(isClassifierIn,is,ObjectProperty).
+predicate(ArithmeticNumber,is,Class).
+predicate(ArithmeticNumber,SubClassOf,ClassOfClass).
+predicate(Class,is,Class).
+predicate(ClassOfAbstractObject,is,Class).
+predicate(ClassOfClass,is,Class).
+predicate(ClassOfClass,SubClassOf,ClassOfAbstractObject,).
+predicate(ClassOfClass,SubClassOf,isClassifierIn only (hasClassified only Class)).
+predicate(ClassOfClassOfIndividual,is,Class).
+predicate(ClassOfClassOfIndividual,SubClassOf,ClassOfClass).
+predicate(ClassOfClassOfRelationship,is,Class).
+predicate(ClassOfClassOfRelationship,SubClassOf,ClassOfClass).
+predicate(ClassOfNumber,is,Class).
+predicate(ClassOfNumber,SubClassOf,ClassOfClass).
+predicate(ClassOfPropertySpace,is,Class).
+predicate(ClassOfPropertySpace,SubClassOf,ClassOfClass).
+predicate(ClassOfShapeDimension,is,Class).
+predicate(ClassOfShapeDimension,SubClassOf,ClassOfClass).
+predicate(EnumeratedSetOfClass,is,Class).
+predicate(EnumeratedSetOfClass,SubClassOf,ClassOfClass).
+predicate(www.w3.org/2002/07/#,is,Class).

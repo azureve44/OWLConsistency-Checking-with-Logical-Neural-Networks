@@ -1,0 +1,22 @@
+predicate(matches,is,ObjectProperty).
+predicate(matches,Domain,PersonWithDementiaFocusedIntervention).
+predicate(matches,Range,BackgroundOfPersonWithDementia).
+predicate(BackgroundOfPersonWithDementia,is,Class).
+predicate(EnvironmentalIntervention,is,Class).
+predicate(EnvironmentalIntervention,SubClassOf,PersonWithDementiaFocusedIntervention).
+predicate(FamilyMemberFocusedIntervention,is,Class).
+predicate(GeneralNursingCareIntervention,is,Class).
+predicate(GeneralNursingCareIntervention,SubClassOf,PersonWithDementiaFocusedIntervention).
+predicate(HealthCareProfessionalFocusedIntervention,is,Class).
+predicate(IndividualTherapyForAgitation,is,Class).
+predicate(IndividualTherapyForAgitation,SubClassOf,PersonWithDementiaFocusedIntervention).
+predicate(MulticomponentInterventionForAgitation,is,Class).
+predicate(MulticomponentInterventionForAgitation,SubClassOf,PersonWithDementiaFocusedIntervention).
+predicate(NonpharmacologicalIntervention,is,Class).
+predicate(PersonWithDementiaFocusedIntervention,is,Class).
+predicate(PersonWithDementiaFocusedIntervention,SubClassOf,NonpharmacologicalIntervention,).
+predicate(PersonWithDementiaFocusedIntervention,SubClassOf,matches some BackgroundOfPersonWithDementia).
+predicate(TechnologyAssistedIntervention,is,Class).
+predicate(TechnologyAssistedIntervention,SubClassOf,PersonWithDementiaFocusedIntervention).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,FamilyMemberFocusedIntervention,HealthCareProfessionalFocusedIntervention,PersonWithDementiaFocusedIntervention).

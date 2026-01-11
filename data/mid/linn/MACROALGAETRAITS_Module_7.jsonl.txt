@@ -1,0 +1,11 @@
+predicate(reducesAgitationCausedBy,is,ObjectProperty).
+predicate(EnvironmentalCausativeFactor,is,Class).
+predicate(EnvironmentalIntervention,is,Class).
+predicate(EnvironmentalIntervention,SubClassOf,PersonWithDementiaFocusedIntervention,).
+predicate(EnvironmentalIntervention,SubClassOf,reducesAgitationCausedBy some EnvironmentalCausativeFactor).
+predicate(PersonWithDementiaFocusedIntervention,is,Class).
+predicate(PhysicalEnvironmentalIntervention,is,Class).
+predicate(PhysicalEnvironmentalIntervention,SubClassOf,EnvironmentalIntervention).
+predicate(SocialEnvironmentalIntervention,is,Class).
+predicate(SocialEnvironmentalIntervention,SubClassOf,EnvironmentalIntervention).
+predicate(www.w3.org/2002/07/#,is,Class).

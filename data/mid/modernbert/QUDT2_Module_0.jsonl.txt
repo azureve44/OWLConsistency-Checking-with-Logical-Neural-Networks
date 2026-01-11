@@ -1,0 +1,346 @@
+UCUMci-term is Datatype.
+UCUMcs-term is Datatype.
+www.w3.org/2000/01/-schema# is Datatype.
+double is Datatype.
+string is Datatype.
+applicableCGSUnit is ObjectProperty.
+applicableISOUnit is ObjectProperty.
+applicableImperialUnit is ObjectProperty.
+applicableSIUnit is ObjectProperty.
+applicableUSCustomaryUnit is ObjectProperty.
+applicableUnit is ObjectProperty.
+baseDimensionEnumeration is ObjectProperty.
+belongsToSystemOfQuantities is ObjectProperty.
+belongsToSystemOfQuantities Domain QuantityKind.
+belongsToSystemOfQuantities Range SystemOfQuantities.
+default is ObjectProperty.
+element is ObjectProperty.
+figure is ObjectProperty.
+generalization is ObjectProperty.
+hasBaseQuantityKind is ObjectProperty.
+hasBaseUnit is ObjectProperty.
+hasCoherentUnit is ObjectProperty.
+hasDefinedUnit is ObjectProperty.
+hasDenominatorPart is ObjectProperty.
+hasDerivedCoherentUnit is ObjectProperty.
+hasDerivedNonCoherentUnit is ObjectProperty.
+hasDerivedUnit is ObjectProperty.
+hasDimensionVector is ObjectProperty.
+hasMultiplier is ObjectProperty.
+hasNumeratorPart is ObjectProperty.
+hasQuantity is ObjectProperty.
+hasQuantityKind is ObjectProperty.
+hasReferenceQuantityKind is ObjectProperty.
+hasRule is ObjectProperty.
+hasUnit is ObjectProperty.
+hasUnitSystem is ObjectProperty.
+isAllowedUnitOfSystem is ObjectProperty.
+isAllowedUnitOfSystem SubPropertyOf isUnitOfSystem.
+isBaseUnitOfSystem is ObjectProperty.
+isDefinedUnitOfSystem is ObjectProperty.
+isDefinedUnitOfSystem SubPropertyOf isUnitOfSystem.
+isDerivedCoherentUnitOfSystem is ObjectProperty.
+isDerivedNonCoherentUnitOfSystem is ObjectProperty.
+isDerivedUnitOfSystem is ObjectProperty.
+isDerivedUnitOfSystem SubPropertyOf isUnitOfSystem.
+isDimensionInSystem is ObjectProperty.
+isQuantityKindOf is ObjectProperty.
+isScalingOf is ObjectProperty.
+isUnitOfSystem is ObjectProperty.
+isUnitOfSystem Domain Unit.
+isUnitOfSystem Range SystemOfUnits.
+permissibleMaths is ObjectProperty.
+permissibleTransformation is ObjectProperty.
+quantityValue is ObjectProperty.
+scaleType is ObjectProperty.
+unit is ObjectProperty.
+supersededBy is ObjectProperty.
+code is DataProperty.
+code Domain Concept.
+example is DataProperty.
+id is DataProperty.
+id Domain Concept.
+id Range string.
+rationale is DataProperty.
+relativeStandardUncertainty is DataProperty.
+standardUncertainty is DataProperty.
+ucumCode is DataProperty.
+url is DataProperty.
+vaem# is DataProperty.
+Category is Class.
+Category is Class.
+Conversion_of_units is Class.
+Dimensional_analysis is Class.
+Error2 is Class.
+Thing is www.w3.org/2002/07/#.
+Error3 is Class.
+Error5 is Class.
+Thing is www.w3.org/2002/07/#.
+Error6 is Class.
+Acronym is Class.
+Acronym SubClassOf Term.
+BaseUnit is Class.
+BaseUnit SubClassOf Unit.
+BaseUnit DisjointWith DerivedUnit.
+BinaryPrefixUnit is Class.
+BinaryPrefixUnit SubClassOf PrefixUnit.
+BinaryScaledUnit is Class.
+BinaryScaledUnit SubClassOf ScaledUnit,.
+BinaryScaledUnit SubClassOf hasMultiplier only BinaryPrefixUnit.
+CGS-DimensionVector is Class.
+CGS-DimensionVector SubClassOf QuantityDimensionVector.
+CGS-Unit is Class.
+CGS-Unit SubClassOf StandardsUnit.
+Citation is Class.
+Citation SubClassOf Error2,.
+Citation SubClassOf Concept.
+Concept is Class.
+Concept SubClassOf Error5,.
+Concept SubClassOf Error6,.
+Concept SubClassOf hasRule only Rule,.
+Concept SubClassOf supersededBy only Concept,.
+Thing, is figure min 0 www.w3.org/2002/07/#.
+Literal is url min 0 www.w3.org/2000/01/-schema#.
+ConstantValue is Class.
+ConstantValue SubClassOf Concept.
+CountingUnit is Class.
+CountingUnit SubClassOf DimensionlessUnit,.
+CountingUnit SubClassOf ResourceUnit.
+DecimalPrefixUnit is Class.
+DecimalPrefixUnit SubClassOf PrefixUnit.
+DecimalScaledUnit is Class.
+DecimalScaledUnit SubClassOf ScaledUnit.
+DerivedCoherentUnit is Class.
+DerivedCoherentUnit SubClassOf DerivedUnit.
+DerivedCoherentUnit DisjointWith DerivedNonCoherentUnit.
+DerivedNonCoherentUnit is Class.
+DerivedNonCoherentUnit SubClassOf DerivedUnit.
+DerivedNonCoherentUnit DisjointWith DerivedCoherentUnit.
+DerivedUnit is Class.
+DerivedUnit SubClassOf Unit.
+DerivedUnit DisjointWith BaseUnit.
+Dimension is Class.
+Dimension SubClassOf QuantityDimensionVector,.
+Dimension SubClassOf hasDimensionVector only DimensionVector,.
+Dimension SubClassOf hasReferenceQuantityKind only QuantityKind,.
+Dimension SubClassOf isDimensionInSystem only SystemOfQuantities,.
+Thing, is hasDimensionVector min 1 www.w3.org/2002/07/#.
+Thing, is hasReferenceQuantityKind min 1 www.w3.org/2002/07/#.
+Thing is isDimensionInSystem min 1 www.w3.org/2002/07/#.
+DimensionVector is Class.
+DimensionVector SubClassOf Concept,.
+DimensionVector SubClassOf hasBaseQuantityKind only QuantityKind.
+DimensionlessUnit is Class.
+DimensionlessUnit SubClassOf Unit.
+DomainSpecificUnit is Class.
+DomainSpecificUnit SubClassOf Unit.
+EnumeratedValue is Class.
+Enumeration is Class.
+Enumeration SubClassOf Concept,.
+Enumeration, is dtype#.
+Enumeration, is default only EnumeratedValue,.
+Enumeration, is element only EnumeratedValue,.
+Thing is element min 1 www.w3.org/2002/07/#.
+EnumerationScale is Class.
+EnumerationScale SubClassOf Scale,.
+Enumeration is dtype#.
+Figure is Class.
+Figure SubClassOf Concept.
+GlossaryTerm is Class.
+GlossaryTerm SubClassOf Term.
+GreekCharacter is Class.
+GreekCharacter SubClassOf Symbol.
+IMPERIAL-DimensionVector is Class.
+IMPERIAL-DimensionVector SubClassOf QuantityDimensionVector.
+ISO-DimensionVector is Class.
+ISO-DimensionVector SubClassOf QuantityDimensionVector.
+ImperialUnit is Class.
+ImperialUnit SubClassOf StandardsUnit.
+International-CustomaryUnit is Class.
+International-CustomaryUnit SubClassOf StandardsUnit.
+IntervalScale is Class.
+IntervalScale SubClassOf Scale.
+LogarithmicUnit is Class.
+LogarithmicUnit SubClassOf Unit.
+MKS-Unit is Class.
+MKS-Unit SubClassOf StandardsUnit.
+MathFunctionType is Class.
+MathFunctionType SubClassOf Concept.
+MathsFunctionType is Class.
+NominalScale is Class.
+NominalScale SubClassOf Scale.
+OrdinalScale is Class.
+OrdinalScale SubClassOf Scale.
+Organization is Class.
+Organization SubClassOf Concept,.
+Literal is url min 0 www.w3.org/2000/01/-schema#.
+PhysicalConstant is Class.
+PhysicalConstant SubClassOf Quantity.
+PrefixUnit is Class.
+PrefixUnit SubClassOf Unit.
+Quantifiable is Class.
+Quantifiable SubClassOf Concept,.
+Thing is hasQuantity min 1 www.w3.org/2002/07/#.
+Quantity is Class.
+Quantity SubClassOf Error3,.
+Quantity SubClassOf Concept,.
+Quantity SubClassOf hasQuantityKind only QuantityKind,.
+Quantity SubClassOf quantityValue only QuantityValue,.
+Thing, is belongsToSystemOfQuantities min 0 www.w3.org/2002/07/#.
+Thing is quantityValue min 1 www.w3.org/2002/07/#.
+QuantityDimensionVector is Class.
+QuantityDimensionVector SubClassOf Concept,.
+QuantityDimensionVector SubClassOf hasReferenceQuantityKind only QuantityKind,.
+QuantityDimensionVector SubClassOf isDimensionInSystem only SystemOfQuantities,.
+Thing, is hasReferenceQuantityKind min 1 www.w3.org/2002/07/#.
+Thing is isDimensionInSystem min 1 www.w3.org/2002/07/#.
+QuantityKind is Class.
+QuantityKind SubClassOf Concept,.
+QuantityKind SubClassOf generalization only QuantityKind,.
+QuantityKind SubClassOf hasDimensionVector only QuantityDimensionVector,.
+QuantityKind SubClassOf isQuantityKindOf only SystemOfQuantities,.
+Thing, is applicableCGSUnit min 0 www.w3.org/2002/07/#.
+Thing, is applicableISOUnit min 0 www.w3.org/2002/07/#.
+Thing, is applicableImperialUnit min 0 www.w3.org/2002/07/#.
+Thing, is applicableSIUnit min 0 www.w3.org/2002/07/#.
+Thing, is applicableUSCustomaryUnit min 0 www.w3.org/2002/07/#.
+Thing is applicableUnit min 1 www.w3.org/2002/07/#.
+QuantityValue is Class.
+QuantityValue SubClassOf Concept,.
+QuantityValue SubClassOf hasQuantityKind only QuantityKind,.
+QuantityValue SubClassOf unit only Unit,.
+QuantityValue SubClassOf relativeStandardUncertainty only double,.
+QuantityValue SubClassOf standardUncertainty only double.
+RatioScale is Class.
+RatioScale SubClassOf Scale.
+ReifiableProperty is Class.
+ResourceUnit is Class.
+Thing is www.w3.org/2002/07/#.
+Rule is Class.
+Rule SubClassOf Concept,.
+Rule SubClassOf example only string,.
+Literal is rationale min 1 www.w3.org/2000/01/-schema#.
+SI-DimensionVector is Class.
+SI-DimensionVector SubClassOf QuantityDimensionVector.
+SI-Unit is Class.
+SI-Unit SubClassOf StandardsUnit.
+SOU_USCUSTOMARY is Class.
+Scale is Class.
+Scale SubClassOf Concept,.
+Scale SubClassOf permissibleMaths only MathsFunctionType,.
+Scale SubClassOf permissibleTransformation only TransformType,.
+Scale SubClassOf scaleType only ScaleType.
+ScaleType is Class.
+ScaleType SubClassOf EnumeratedValue,.
+ScaleType SubClassOf permissibleMaths only MathsFunctionType,.
+ScaleType SubClassOf permissibleTransformation only TransformType.
+ScaledUnit is Class.
+ScaledUnit SubClassOf Unit,.
+ScaledUnit SubClassOf isScalingOf only Unit.
+StandardsUnit is Class.
+StandardsUnit SubClassOf Unit.
+Symbol is Class.
+Symbol SubClassOf Concept.
+SystemOfNaturalUnits is Class.
+SystemOfNaturalUnits SubClassOf SystemOfUnits.
+SystemOfQuantities is Class.
+SystemOfQuantities SubClassOf Concept,.
+SystemOfQuantities SubClassOf baseDimensionEnumeration only Enumeration,.
+SystemOfQuantities SubClassOf hasQuantityKind only QuantityKind,.
+SystemOfQuantities SubClassOf hasUnitSystem only SystemOfUnits,.
+Thing is hasQuantityKind min 1 www.w3.org/2002/07/#.
+SystemOfUnits is Class.
+SystemOfUnits SubClassOf Concept,.
+SystemOfUnits SubClassOf hasBaseUnit only BaseUnit,.
+SystemOfUnits SubClassOf hasCoherentUnit only Unit,.
+SystemOfUnits SubClassOf hasDefinedUnit only Unit,.
+SystemOfUnits SubClassOf hasDerivedCoherentUnit only DerivedUnit,.
+SystemOfUnits SubClassOf hasDerivedUnit only DerivedUnit,.
+SystemOfUnits SubClassOf hasUnit only Unit,.
+Thing, is hasCoherentUnit min 0 www.w3.org/2002/07/#.
+Thing, is hasDerivedCoherentUnit min 0 www.w3.org/2002/07/#.
+Thing, is hasDerivedNonCoherentUnit min 0 www.w3.org/2002/07/#.
+Thing is hasUnit min 1 www.w3.org/2002/07/#.
+Term is Class.
+Thing is www.w3.org/2002/07/#.
+TransformType is Class.
+Thing is www.w3.org/2002/07/#.
+UCUMci-term is Class.
+US-CustomaryUnit is Class.
+US-CustomaryUnit SubClassOf StandardsUnit.
+US-SurveyUnit is Class.
+US-SurveyUnit SubClassOf StandardsUnit.
+Unit is Class.
+Unit SubClassOf Concept,.
+Unit SubClassOf hasDenominatorPart only Unit,.
+Unit SubClassOf hasNumeratorPart only Unit,.
+Unit SubClassOf hasQuantityKind only QuantityKind,.
+Unit SubClassOf isBaseUnitOfSystem only SystemOfUnits,.
+Unit SubClassOf isDefinedUnitOfSystem only SystemOfUnits,.
+Unit SubClassOf isDerivedCoherentUnitOfSystem only SystemOfUnits,.
+Unit SubClassOf isDerivedNonCoherentUnitOfSystem only SystemOfUnits,.
+Unit SubClassOf isDerivedUnitOfSystem only SystemOfUnits,.
+Unit SubClassOf isUnitOfSystem only SystemOfUnits,.
+Thing, is isUnitOfSystem min 0 www.w3.org/2002/07/#.
+Thing, is ucumCode max 1 UCUMci-term,.
+Thing, is ucumCode max 1 UCUMcs-term.
+floatPercentage is Class.
+latexMathString is Class.
+Dimensionless is Class.
+CC-SHAREALIKE_3PT0-US is Class.
+DA_unified.pdf is Class.
+JCGM_200_2008.pdf is Class.
+dtype is Class.
+dtype# is Class.
+vaem# is Class.
+vaem# SubClassOf Attribution,.
+url min 0 www.w3.org/2000/01/-schema# is vaem#.
+vaem# is Class.
+vaem# is Class.
+vaem# is Class.
+vaem# is Class.
+vaem# is Class.
+vaem# is Class.
+vaem# is Class.
+vaem# is Class.
+vaem# is Class.
+Dimension is vaem#.
+vaem# is Class.
+www.w3.org/2002/07/# is Class.
+Attribution is Class.
+SOU_CGS is Individual.
+SOU_CGS Types SystemOfUnits.
+SOU_IMPERIAL is Individual.
+SOU_IMPERIAL Types SystemOfUnits.
+SOU_SI is Individual.
+SOU_SI Types SystemOfUnits.
+SOU_USCUSTOMARY is Individual.
+SOU_USCUSTOMARY Types SystemOfUnits.
+baseCGSUnitDimensions is Individual.
+baseCGSUnitDimensions Types latexMathString.
+baseISOUnitDimensions is Individual.
+baseISOUnitDimensions Types latexMathString.
+baseImperialUnitDimensions is Individual.
+baseImperialUnitDimensions Types latexMathString.
+baseSIUnitDimensions is Individual.
+baseSIUnitDimensions Types latexMathString.
+baseUSCustomaryUnitDimensions is Individual.
+baseUSCustomaryUnitDimensions Types latexMathString.
+baseUnitDimensions is Individual.
+baseUnitDimensions Types latexMathString.
+latexDefinition is Individual.
+latexDefinition Types ReifiableProperty.
+latexSymbol is Individual.
+latexSymbol Types latexMathString.
+mathMLdefinition is Individual.
+mathMLdefinition Types ReifiableProperty.
+symbol is Individual.
+symbol Types latexMathString.
+Dimensionless is Individual.
+Dimensionless Types QuantityKind.
+PhysicsForumsAttribution is Individual.
+Attribution is vaem#.
+QUDT-Attribution is Individual.
+Attribution is vaem#.
+WikipediaAttribution is Individual.
+Attribution is vaem#.

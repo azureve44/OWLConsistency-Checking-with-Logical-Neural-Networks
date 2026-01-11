@@ -1,0 +1,1681 @@
+predicate(IsDivisionOf,is,ObjectProperty).
+predicate(LocativeAttribute,is,ObjectProperty).
+predicate(actsOn,is,ObjectProperty).
+predicate(actsSpecificallyOn,is,ObjectProperty).
+predicate(follows,is,ObjectProperty).
+predicate(hasAbnormalityStatus,is,ObjectProperty).
+predicate(hasAbsoluteState,is,ObjectProperty).
+predicate(hasBranch,is,ObjectProperty).
+predicate(hasChronicity,is,ObjectProperty).
+predicate(hasConsequence,is,ObjectProperty).
+predicate(hasDominance,is,ObjectProperty).
+predicate(hasDuration,is,ObjectProperty).
+predicate(hasEffectiveness,is,ObjectProperty).
+predicate(hasIndicationStatus,is,ObjectProperty).
+predicate(hasIntrinsicAbnormalityStatus,is,ObjectProperty).
+predicate(hasIntrinsicPathologicalStatus,is,ObjectProperty).
+predicate(hasMedialLateralSelector,is,ObjectProperty).
+predicate(hasParadoxicalStatus,is,ObjectProperty).
+predicate(hasPathologicalStatus,is,ObjectProperty).
+predicate(hasPermanence,is,ObjectProperty).
+predicate(hasPhenotypicalSex,is,ObjectProperty).
+predicate(hasProcessActivity,is,ObjectProperty).
+predicate(hasReversibility,is,ObjectProperty).
+predicate(hasSeverity,is,ObjectProperty).
+predicate(hasSolidDivision,is,ObjectProperty).
+predicate(hasSpecificFunction,is,ObjectProperty).
+predicate(hasSpecificImmediateConsequence,is,ObjectProperty).
+predicate(hasSpecificLocation,is,ObjectProperty).
+predicate(hasSpecificPhysicalMeans,is,ObjectProperty).
+predicate(hasStructuralComponent,is,ObjectProperty).
+predicate(hasUniqueAssociatedDisplacement,is,ObjectProperty).
+predicate(isActedOnBy,is,ObjectProperty).
+predicate(isActedOnSpecificallyBy,is,ObjectProperty).
+predicate(isBranchOf,is,ObjectProperty).
+predicate(isConsequenceOf,is,ObjectProperty).
+predicate(isDisplacementFrom,is,ObjectProperty).
+predicate(isDisplacementTo,is,ObjectProperty).
+predicate(isExistenceOf,is,ObjectProperty).
+predicate(isFollowedBy,is,ObjectProperty).
+predicate(isFunctionOf,is,ObjectProperty).
+predicate(isHistoryOf,is,ObjectProperty).
+predicate(isSpecificConsequenceOf,is,ObjectProperty).
+predicate(isSpecificFunctionOf,is,ObjectProperty).
+predicate(isSpecificImmediateConsequenceOf,is,ObjectProperty).
+predicate(isSpecificStructuralComponentOf,is,ObjectProperty).
+predicate(isSpecificallyNonPartitivelyContainedIn,is,ObjectProperty).
+predicate(isSpecificallyServedBy,is,ObjectProperty).
+predicate(isStructuralComponentOf,is,ObjectProperty).
+predicate(locativelyContains,is,ObjectProperty).
+predicate(makesUp,is,ObjectProperty).
+predicate(occursDuring,is,ObjectProperty).
+predicate(playsClinicalRole,is,ObjectProperty).
+predicate(playsConsultationRole,is,ObjectProperty).
+predicate(playsPhysiologicalRole,is,ObjectProperty).
+predicate(serves,is,ObjectProperty).
+predicate(AbdominalDisorder,is,Class).
+predicate(AbdominalDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(AbdominalWall,is,Class).
+predicate(AbnormalSkinMorphology,is,Class).
+predicate(AbnormalSkinMorphology,SubClassOf,Morphology).
+predicate(AccompanyingDisorder,is,Class).
+predicate(AccompanyingDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(AcidificationOfUrine,is,Class).
+predicate(AcidificationOfUrine,SubClassOf,NAMEDRenalDisease).
+predicate(AcquiredPathology,is,Class).
+predicate(AcquiredPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ActiveDrugAdditiveRole,is,Class).
+predicate(AcuteAdrenocorticalInsufficiency,is,Class).
+predicate(AcuteAdrenocorticalInsufficiency,EquivalentTo,BodyProcess and (hasChronicity some).
+predicate(AcuteAdrenocorticalInsufficiency,EquivalentTo,(Chronicity and (hasAbsoluteState some acute))) and (hasEffectiveness some).
+predicate(AcuteAdrenocorticalInsufficiency,EquivalentTo,(Effectiveness and (hasAbsoluteState some ineffective))) and (isSpecificFunctionOf some AdrenalCortex)).
+predicate(AcuteAdrenocorticalInsufficiency,SubClassOf,BodyProcess).
+predicate(AcuteIschaemicCardiacPathology,is,Class).
+predicate(AcuteIschaemicCardiacPathology,SubClassOf,IschaemicCardiacPathology).
+predicate(AcutePulmonaryHeartDisease,is,Class).
+predicate(AcutePulmonaryHeartDisease,SubClassOf,PulmonaryHeartDisease).
+predicate(AcuteRheumaticHeartDisease,is,Class).
+predicate(AcuteRheumaticHeartDisease,SubClassOf,RheumaticHeartDisease).
+predicate(AdrenalAbnormality,is,Class).
+predicate(AdrenalAbnormality,SubClassOf,NonNormalPhenomenon).
+predicate(AdrenalCortex,is,Class).
+predicate(AdrenalPathology,is,Class).
+predicate(AdrenalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(AdrenocorticalFunction,is,Class).
+predicate(AdrenocorticalFunction,EquivalentTo,BodyProcess and (isFunctionOf some AdrenalCortex)).
+predicate(AdrenocorticalFunction,SubClassOf,BodyProcess).
+predicate(AdrenocorticalHyperfunction,is,Class).
+predicate(AdrenocorticalHyperfunction,EquivalentTo,BodyProcess and (hasPathologicalStatus some pathological) and (hasProcessActivity some highActivityLevel) and (isSpecificFunctionOf some AdrenalCortex)).
+predicate(AdrenocorticalHyperfunction,SubClassOf,BodyProcess).
+predicate(AdrenocorticalHypofunction,is,Class).
+predicate(AdrenocorticalHypofunction,EquivalentTo,BodyProcess and (hasPathologicalStatus some pathological) and (hasProcessActivity some lowActivityLevel) and (isSpecificFunctionOf some AdrenalCortex)).
+predicate(AdrenocorticalHypofunction,SubClassOf,BodyProcess).
+predicate(AdultRespiratoryDistressSyndrome,is,Class).
+predicate(AdultRespiratoryDistressSyndrome,SubClassOf,PathologicalPhenomenon).
+predicate(AdvancedNeuropathy,is,Class).
+predicate(AdvancedNeuropathy,SubClassOf,PathologicalPhenomenon).
+predicate(AffectiveDisorder,is,Class).
+predicate(AffectiveDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(Akathisia,is,Class).
+predicate(AkathisiaSymptom,is,Class).
+predicate(AkathisiaSymptom,EquivalentTo,Akathisia and (playsConsultationRole some SymptomRole)).
+predicate(AkathisiaSymptom,SubClassOf,Akathisia).
+predicate(AlcoholWithdrawal,is,Class).
+predicate(AlcoholWithdrawal,EquivalentTo,WithdrawalSyndrome and (isConsequenceOf some Alcoholism)).
+predicate(AlcoholWithdrawal,SubClassOf,WithdrawalSyndrome).
+predicate(Alcoholism,is,Class).
+predicate(AlkalinisationOfUrine,is,Class).
+predicate(AlkalinisationOfUrine,SubClassOf,NAMEDRenalDisease).
+predicate(AllergicDisorder,is,Class).
+predicate(AllergicDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(AllergicSkinDisorder,is,Class).
+predicate(AllergicSkinDisorder,EquivalentTo,SkinPathology and (isConsequenceOf some AllergyProcess)).
+predicate(AllergicSkinDisorder,SubClassOf,SkinPathology).
+predicate(AllergyProcess,is,Class).
+predicate(AlphaAdrenergicReceptor,is,Class).
+predicate(AlphaBlockade,is,Class).
+predicate(AlphaBlockade,EquivalentTo,Inhibiting and (actsSpecificallyOn some AlphaAdrenergicReceptor)).
+predicate(AlphaBlockade,SubClassOf,Inhibiting).
+predicate(AlphaIsletCell,is,Class).
+predicate(AlphaIsletCell,SubClassOf,IsletCell,).
+predicate(AlphaIsletCell,SubClassOf,hasSpecificFunction some).
+predicate(AlphaIsletCell,SubClassOf,(Secretion and (actsSpecificallyOn some Glucagon) and (hasUniqueAssociatedDisplacement some).
+predicate(AlphaIsletCell,SubClassOf,(Displacement and (isDisplacementFrom some AlphaIsletCell) and (isDisplacementTo some Blood))))).
+predicate(AlveolarPathology,is,Class).
+predicate(AlveolarPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Amblyopia,is,Class).
+predicate(Amblyopia,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(AminolevulinateDehydratasePorphyria,is,Class).
+predicate(AnalPathology,is,Class).
+predicate(AnalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(AndrogenicAlopecia,is,Class).
+predicate(AndrogenicAlopecia,SubClassOf,LocalisedScalpAlopecia).
+predicate(Angiotensin,is,Class).
+predicate(AnkleJoint,is,Class).
+predicate(Anonymous-113,is,Class).
+predicate(Anonymous-113,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some FourthMetacarpoPhalangealJoint)).
+predicate(Anonymous-113,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-113,SubClassOf,isFunctionOf some ThirdLumbricalOfHand).
+predicate(Anonymous-115,is,Class).
+predicate(Anonymous-115,EquivalentTo,Dermatome and (isSpecificallyServedBy some T3root)).
+predicate(Anonymous-115,SubClassOf,Dermatome).
+predicate(Anonymous-116,is,Class).
+predicate(Anonymous-116,EquivalentTo,DefectiveGene and (isActedOnSpecificallyBy some).
+predicate(Anonymous-116,EquivalentTo,(GeneTranscription and (hasSpecificImmediateConsequence some HypoxanthineGuaninePhosphoRibosylTransferase)))).
+predicate(Anonymous-116,SubClassOf,DefectiveGene,).
+predicate(Anonymous-116,SubClassOf,hasConsequence some LeschNyhanSyndrome).
+predicate(Anonymous-117,is,Class).
+predicate(Anonymous-117,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some AnkleJoint)).
+predicate(Anonymous-117,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-117,SubClassOf,isFunctionOf some TibialisPosterior).
+predicate(Anonymous-138,is,Class).
+predicate(Anonymous-138,EquivalentTo,Secretion and (isFunctionOf some PosteriorLobeOfPituitaryGland)).
+predicate(Anonymous-138,SubClassOf,Secretion,).
+predicate(Anonymous-138,SubClassOf,actsOn some Angiotensin).
+predicate(Anonymous-169,is,Class).
+predicate(Anonymous-169,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-169,EquivalentTo,(Collection and (hasAbnormalityStatus some nonNormal)))).
+predicate(Anonymous-169,SubClassOf,presence,).
+predicate(Anonymous-169,SubClassOf,hasAbnormalityStatus some nonNormal).
+predicate(Anonymous-17,is,Class).
+predicate(Anonymous-17,EquivalentTo,Dermatome and (isSpecificallyServedBy some L4root)).
+predicate(Anonymous-17,SubClassOf,Dermatome).
+predicate(Anonymous-192,is,Class).
+predicate(Anonymous-192,EquivalentTo,DefectiveGene and (isActedOnSpecificallyBy some).
+predicate(Anonymous-192,EquivalentTo,(GeneTranscription and (hasSpecificImmediateConsequence some PorphobilinogenSynthase)))).
+predicate(Anonymous-192,SubClassOf,DefectiveGene,).
+predicate(Anonymous-192,SubClassOf,hasConsequence some AminolevulinateDehydratasePorphyria).
+predicate(Anonymous-194,is,Class).
+predicate(Anonymous-194,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfFourthToe)).
+predicate(Anonymous-194,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-194,SubClassOf,isFunctionOf some FlexorDigitorumLongusOfLeg).
+predicate(Anonymous-196,is,Class).
+predicate(Anonymous-196,EquivalentTo,MovingRotating and (actsOn some Eyeball)).
+predicate(Anonymous-196,SubClassOf,MovingRotating,).
+predicate(Anonymous-196,SubClassOf,isFunctionOf some OculomotorNerve).
+predicate(Anonymous-203,is,Class).
+predicate(Anonymous-203,EquivalentTo,PosteriorIntercostalArtery and (isSpecificallyNonPartitivelyContainedIn some FourthIntercostalSpace)).
+predicate(Anonymous-203,SubClassOf,PosteriorIntercostalArtery,).
+predicate(Anonymous-203,SubClassOf,isBranchOf some DescendingAorta).
+predicate(Anonymous-22,is,Class).
+predicate(Anonymous-22,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some KneeJoint)).
+predicate(Anonymous-22,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-22,SubClassOf,isFunctionOf some SartoriusMuscle,).
+predicate(Anonymous-22,SubClassOf,isFunctionOf only Sialorrhea).
+predicate(Anonymous-225,is,Class).
+predicate(Anonymous-225,EquivalentTo,Dermatome and (isSpecificallyServedBy some LumbarNerveRoot)).
+predicate(Anonymous-225,SubClassOf,Dermatome).
+predicate(Anonymous-235,is,Class).
+predicate(Anonymous-235,EquivalentTo,PosteriorIntercostalVein and (isSpecificallyNonPartitivelyContainedIn some EleventhIntercostalSpace)).
+predicate(Anonymous-235,SubClassOf,PosteriorIntercostalVein,).
+predicate(Anonymous-235,SubClassOf,serves some AbdominalWall).
+predicate(Anonymous-240,is,Class).
+predicate(Anonymous-240,EquivalentTo,OutwardRotation and (actsSpecificallyOn some GlenoHumeralJoint)).
+predicate(Anonymous-240,SubClassOf,OutwardRotation,).
+predicate(Anonymous-240,SubClassOf,isFunctionOf some DeltoidMuscle).
+predicate(Anonymous-247,is,Class).
+predicate(Anonymous-247,EquivalentTo,Secretion and (isFunctionOf some Hypothalamus)).
+predicate(Anonymous-247,SubClassOf,Secretion,).
+predicate(Anonymous-247,SubClassOf,actsOn some Gonadoliberin).
+predicate(Anonymous-256,is,Class).
+predicate(Anonymous-256,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-256,EquivalentTo,(GeneralisedProcess and (hasAbnormalityStatus some normal) and (isConsequenceOf some BodyProcess)))).
+predicate(Anonymous-256,SubClassOf,presence,).
+predicate(Anonymous-256,SubClassOf,hasPathologicalStatus some physiological).
+predicate(Anonymous-258,is,Class).
+predicate(Anonymous-258,EquivalentTo,Dermatome and (isSpecificallyServedBy some ThoracicNerveRoot)).
+predicate(Anonymous-258,SubClassOf,Dermatome).
+predicate(Anonymous-33,is,Class).
+predicate(Anonymous-33,EquivalentTo,DefectiveGene and (isActedOnSpecificallyBy some).
+predicate(Anonymous-33,EquivalentTo,(GeneTranscription and (hasSpecificImmediateConsequence some Iduronidase)))).
+predicate(Anonymous-33,SubClassOf,DefectiveGene,).
+predicate(Anonymous-33,SubClassOf,hasConsequence some ScheieSyndrome).
+predicate(Anonymous-348,is,Class).
+predicate(Anonymous-348,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-348,EquivalentTo,(GeneralisedStructure and (hasAbnormalityStatus some nonNormal) and (isConsequenceOf some BodyProcess)))).
+predicate(Anonymous-348,SubClassOf,presence,).
+predicate(Anonymous-348,SubClassOf,hasAbnormalityStatus some nonNormal).
+predicate(Anonymous-349,is,Class).
+predicate(Anonymous-349,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-349,EquivalentTo,(GeneralisedProcess and (isConsequenceOf some).
+predicate(Anonymous-349,EquivalentTo,(GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some normal)))))).
+predicate(Anonymous-349,SubClassOf,presence,).
+predicate(Anonymous-349,SubClassOf,hasAbnormalityStatus some normal).
+predicate(Anonymous-359,is,Class).
+predicate(Anonymous-359,SubClassOf,PathologicalPhenomenon).
+predicate(Anonymous-371,is,Class).
+predicate(Anonymous-371,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfThirdToe)).
+predicate(Anonymous-371,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-371,SubClassOf,isFunctionOf some QuadratusPlantaeMuscle).
+predicate(Anonymous-388,is,Class).
+predicate(Anonymous-388,SubClassOf,PathologicalPhenomenon).
+predicate(Anonymous-420,is,Class).
+predicate(Anonymous-420,EquivalentTo,Gramstaining and (actsSpecificallyOn some GramNegativeCellWall)).
+predicate(Anonymous-420,SubClassOf,Gramstaining,).
+predicate(Anonymous-420,SubClassOf,hasEffectiveness some).
+predicate(Anonymous-420,SubClassOf,(Effectiveness and (hasAbsoluteState some ineffective))).
+predicate(Anonymous-421,is,Class).
+predicate(Anonymous-421,EquivalentTo,Spore and (isSpecificImmediateConsequenceOf some).
+predicate(Anonymous-421,EquivalentTo,(ReproductiveProcess and (isFunctionOf some Bacillus)))).
+predicate(Anonymous-421,SubClassOf,Spore,).
+predicate(Anonymous-421,SubClassOf,isActedOnSpecificallyBy some).
+predicate(Anonymous-421,SubClassOf,(Ziehl-NeelsenStaining and (hasEffectiveness some).
+predicate(Anonymous-421,SubClassOf,(Effectiveness and (hasAbsoluteState some effective))))).
+predicate(Anonymous-422,is,Class).
+predicate(Anonymous-422,EquivalentTo,PotentialCavity and (locativelyContains some Pus)).
+predicate(Anonymous-422,SubClassOf,PotentialCavity,).
+predicate(Anonymous-422,SubClassOf,hasPathologicalStatus some pathological).
+predicate(Anonymous-423,is,Class).
+predicate(Anonymous-423,EquivalentTo,Secretion and (actsSpecificallyOn some HypothalamicHormone) and (hasUniqueAssociatedDisplacement some).
+predicate(Anonymous-423,EquivalentTo,(Displacement and (isDisplacementFrom some Hypothalamus) and (isDisplacementTo some Blood)))).
+predicate(Anonymous-423,SubClassOf,Secretion,).
+predicate(Anonymous-423,SubClassOf,isSpecificFunctionOf some Hypothalamus).
+predicate(Anonymous-462,is,Class).
+predicate(Anonymous-462,EquivalentTo,Secretion and (isFunctionOf some Hypothalamus)).
+predicate(Anonymous-462,SubClassOf,Secretion,).
+predicate(Anonymous-462,SubClassOf,actsOn some Somatostatin).
+predicate(Anonymous-475,is,Class).
+predicate(Anonymous-475,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-475,EquivalentTo,(GeneralisedProcess and (hasAbnormalityStatus some nonNormal) and (isConsequenceOf some BodyProcess)))).
+predicate(Anonymous-475,SubClassOf,presence,).
+predicate(Anonymous-475,SubClassOf,hasAbnormalityStatus some nonNormal).
+predicate(Anonymous-476,is,Class).
+predicate(Anonymous-476,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some MetacarpoPhalangealJoint)).
+predicate(Anonymous-476,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-476,SubClassOf,hasIntrinsicPathologicalStatus some physiological).
+predicate(Anonymous-478,is,Class).
+predicate(Anonymous-478,EquivalentTo,Dermatome and (isSpecificallyServedBy some L2root)).
+predicate(Anonymous-478,SubClassOf,Dermatome).
+predicate(Anonymous-486,is,Class).
+predicate(Anonymous-486,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-486,EquivalentTo,(GeneralisedProcess and (isConsequenceOf some).
+predicate(Anonymous-486,EquivalentTo,(GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasPathologicalStatus some pathological)))))).
+predicate(Anonymous-486,SubClassOf,presence,).
+predicate(Anonymous-486,SubClassOf,hasIntrinsicPathologicalStatus some pathological).
+predicate(Anonymous-538,is,Class).
+predicate(Anonymous-538,EquivalentTo,SkinOfPlantarRegionOfFoot and (hasMedialLateralSelector some medialSelection)).
+predicate(Anonymous-538,SubClassOf,SkinOfPlantarRegionOfFoot,).
+predicate(Anonymous-538,SubClassOf,hasSolidDivision some L5Dermatome).
+predicate(Anonymous-553,is,Class).
+predicate(Anonymous-553,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some GlenoHumeralJoint)).
+predicate(Anonymous-553,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-553,SubClassOf,isFunctionOf some BicepsBrachii).
+predicate(Anonymous-560,is,Class).
+predicate(Anonymous-560,EquivalentTo,OutwardRotation and (actsSpecificallyOn some HipJoint)).
+predicate(Anonymous-560,SubClassOf,OutwardRotation,).
+predicate(Anonymous-560,SubClassOf,isFunctionOf some GemellusSuperior).
+predicate(Anonymous-561,is,Class).
+predicate(Anonymous-561,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-561,EquivalentTo,(GeneralisedSubstance and (isConsequenceOf some).
+predicate(Anonymous-561,EquivalentTo,(GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some normal)))))).
+predicate(Anonymous-561,SubClassOf,presence,).
+predicate(Anonymous-561,SubClassOf,hasPathologicalStatus some physiological).
+predicate(Anonymous-562,is,Class).
+predicate(Anonymous-562,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfFifthToe)).
+predicate(Anonymous-562,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-562,SubClassOf,isFunctionOf some FlexorDigitorumBrevisOfFoot).
+predicate(Anonymous-563,is,Class).
+predicate(Anonymous-563,EquivalentTo,OutwardRotation and (actsSpecificallyOn some HipJoint)).
+predicate(Anonymous-563,SubClassOf,OutwardRotation,).
+predicate(Anonymous-563,SubClassOf,isFunctionOf some GemellusInferior).
+predicate(Anonymous-576,is,Class).
+predicate(Anonymous-576,EquivalentTo,Gait and (hasAbsoluteState some staggering)).
+predicate(Anonymous-576,SubClassOf,Gait).
+predicate(Anonymous-587,is,Class).
+predicate(Anonymous-587,EquivalentTo,absence and (isExistenceOf some).
+predicate(Anonymous-587,EquivalentTo,(GeneralisedSubstance and (isConsequenceOf some).
+predicate(Anonymous-587,EquivalentTo,(GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some nonNormal)))))).
+predicate(Anonymous-587,SubClassOf,absence,).
+predicate(Anonymous-587,SubClassOf,hasAbnormalityStatus some normal).
+predicate(Anonymous-610,is,Class).
+predicate(Anonymous-610,EquivalentTo,absence and (isExistenceOf some).
+predicate(Anonymous-610,EquivalentTo,(GeneralisedProcess and (hasAbnormalityStatus some nonNormal) and (isConsequenceOf some BodyProcess)))).
+predicate(Anonymous-610,SubClassOf,absence,).
+predicate(Anonymous-610,SubClassOf,hasPathologicalStatus some physiological).
+predicate(Anonymous-635,is,Class).
+predicate(Anonymous-635,EquivalentTo,ThelarcheProcess and (actsSpecificallyOn some FemaleBreast)).
+predicate(Anonymous-635,SubClassOf,ThelarcheProcess,).
+predicate(Anonymous-635,SubClassOf,hasAbnormalityStatus some normal).
+predicate(Anonymous-664,is,Class).
+predicate(Anonymous-664,EquivalentTo,PotentialCavity and (locativelyContains some Blood)).
+predicate(Anonymous-664,SubClassOf,PotentialCavity,).
+predicate(Anonymous-664,SubClassOf,hasPathologicalStatus some pathological).
+predicate(Anonymous-667,is,Class).
+predicate(Anonymous-667,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-667,EquivalentTo,(GeneralisedStructure and (hasPathologicalStatus some pathological) and (isActedOnBy some BodyProcess)))).
+predicate(Anonymous-667,SubClassOf,presence,).
+predicate(Anonymous-667,SubClassOf,hasIntrinsicPathologicalStatus some pathological).
+predicate(Anonymous-668,is,Class).
+predicate(Anonymous-668,EquivalentTo,AnteriorIntercostalArtery and (isSpecificallyNonPartitivelyContainedIn some FourthIntercostalSpace)).
+predicate(Anonymous-668,SubClassOf,AnteriorIntercostalArtery,).
+predicate(Anonymous-668,SubClassOf,isBranchOf some InternalThoracicArtery).
+predicate(Anonymous-71,is,Class).
+predicate(Anonymous-71,EquivalentTo,Secretion and (actsSpecificallyOn some NeurohypophysealHormone) and (hasUniqueAssociatedDisplacement some).
+predicate(Anonymous-71,EquivalentTo,(Displacement and (isDisplacementFrom some PosteriorLobeOfPituitaryGland) and (isDisplacementTo some Blood)))).
+predicate(Anonymous-71,SubClassOf,Secretion,).
+predicate(Anonymous-71,SubClassOf,isSpecificFunctionOf some PosteriorLobeOfPituitaryGland).
+predicate(Anonymous-711,is,Class).
+predicate(Anonymous-711,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some KneeJoint)).
+predicate(Anonymous-711,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-711,SubClassOf,isFunctionOf some Gracilis).
+predicate(Anonymous-715,is,Class).
+predicate(Anonymous-715,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-715,EquivalentTo,(Substance and (hasPathologicalStatus some physiological)))).
+predicate(Anonymous-715,SubClassOf,presence,).
+predicate(Anonymous-715,SubClassOf,hasPathologicalStatus some physiological).
+predicate(Anonymous-719,is,Class).
+predicate(Anonymous-719,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some AnkleJoint)).
+predicate(Anonymous-719,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-719,SubClassOf,isFunctionOf some SoleusMuscle).
+predicate(Anonymous-76,is,Class).
+predicate(Anonymous-76,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfSecondToe)).
+predicate(Anonymous-76,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-76,SubClassOf,isFunctionOf some QuadratusPlantaeMuscle).
+predicate(Anonymous-769,is,Class).
+predicate(Anonymous-769,EquivalentTo,DamagingProcess and (LocativeAttribute some BodyStructure)).
+predicate(Anonymous-769,SubClassOf,DamagingProcess,).
+predicate(Anonymous-769,SubClassOf,hasPathologicalStatus some pathological).
+predicate(Anonymous-779,is,Class).
+predicate(Anonymous-779,EquivalentTo,absence and (isExistenceOf some).
+predicate(Anonymous-779,EquivalentTo,(GeneralisedStructure and (isConsequenceOf some).
+predicate(Anonymous-779,EquivalentTo,(GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some nonNormal)))))).
+predicate(Anonymous-779,SubClassOf,absence,).
+predicate(Anonymous-779,SubClassOf,hasAbnormalityStatus some normal).
+predicate(Anonymous-78,is,Class).
+predicate(Anonymous-78,EquivalentTo,Gramstaining and (actsSpecificallyOn some GramPositiveCellWall)).
+predicate(Anonymous-78,SubClassOf,Gramstaining,).
+predicate(Anonymous-78,SubClassOf,hasEffectiveness some).
+predicate(Anonymous-78,SubClassOf,(Effectiveness and (hasAbsoluteState some effective))).
+predicate(Anonymous-782,is,Class).
+predicate(Anonymous-782,EquivalentTo,absence and (isExistenceOf some).
+predicate(Anonymous-782,EquivalentTo,(GeneralisedProcess and (isConsequenceOf some).
+predicate(Anonymous-782,EquivalentTo,(GeneralisedProcess and (LocativeAttribute some OrganicSolidStructure) and (hasAbnormalityStatus some nonNormal)))))).
+predicate(Anonymous-782,SubClassOf,absence,).
+predicate(Anonymous-782,SubClassOf,hasAbnormalityStatus some normal).
+predicate(Anonymous-791,is,Class).
+predicate(Anonymous-791,EquivalentTo,AnteriorIntercostalArtery and (isSpecificallyNonPartitivelyContainedIn some EleventhIntercostalSpace)).
+predicate(Anonymous-791,SubClassOf,AnteriorIntercostalArtery,).
+predicate(Anonymous-791,SubClassOf,isBranchOf some MusculoPhrenicArtery).
+predicate(Anonymous-792,is,Class).
+predicate(Anonymous-792,EquivalentTo,presence and (isExistenceOf some).
+predicate(Anonymous-792,EquivalentTo,(BodyStructure and (hasPathologicalStatus some physiological)))).
+predicate(Anonymous-792,SubClassOf,presence,).
+predicate(Anonymous-792,SubClassOf,hasPathologicalStatus some physiological).
+predicate(Anonymous-8,is,Class).
+predicate(Anonymous-8,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some InterphalangealJointOfSecondToe)).
+predicate(Anonymous-8,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-8,SubClassOf,isFunctionOf some FlexorDigitorumLongusOfLeg).
+predicate(Anonymous-853,is,Class).
+predicate(Anonymous-853,EquivalentTo,AnteriorFlexion and (actsSpecificallyOn some CarpoMetacarpalJoint)).
+predicate(Anonymous-853,SubClassOf,AnteriorFlexion,).
+predicate(Anonymous-853,SubClassOf,hasIntrinsicPathologicalStatus some physiological).
+predicate(Anonymous-87,is,Class).
+predicate(Anonymous-87,EquivalentTo,absence and (isExistenceOf some).
+predicate(Anonymous-87,EquivalentTo,(Collection and (hasAbnormalityStatus some nonNormal)))).
+predicate(Anonymous-87,SubClassOf,absence,).
+predicate(Anonymous-87,SubClassOf,hasAbnormalityStatus some normal).
+predicate(AnteriorFlexion,is,Class).
+predicate(AnteriorIntercostalArtery,is,Class).
+predicate(AorticValveDisorder,is,Class).
+predicate(AorticValveDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(Apathy,is,Class).
+predicate(Apathy,SubClassOf,CooperativeOrUncooperative).
+predicate(ApicalHeartWall,is,Class).
+predicate(ApicalHeartWall,SubClassOf,HeartWall).
+predicate(Appearance,is,Class).
+predicate(Appearance,SubClassOf,Morphology).
+predicate(ArbitrarilyConjunctedPhenomenon,is,Class).
+predicate(ArbitrarilyConjunctedPhenomenon,SubClassOf,DomainCategory).
+predicate(ArterialPathology,is,Class).
+predicate(ArterialPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Asphyxiating,is,Class).
+predicate(Asphyxiating,SubClassOf,NonNormalBreathing).
+predicate(AutoimmuneDisease,is,Class).
+predicate(AutoimmuneDisease,SubClassOf,PathologicalPhenomenon).
+predicate(AutosomallyDominantInheritedPathology,is,Class).
+predicate(AutosomallyDominantInheritedPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Axilla,is,Class).
+predicate(AxillaryLymphadenopathy,is,Class).
+predicate(AxillaryLymphadenopathy,EquivalentTo,Phenomenon and (LocativeAttribute some AxillaryLymphnode) and (hasPathologicalStatus some pathological)).
+predicate(AxillaryLymphadenopathy,SubClassOf,Phenomenon).
+predicate(AxillaryLymphnode,is,Class).
+predicate(Bacillus,is,Class).
+predicate(BackgroundRetinopathy,is,Class).
+predicate(BackgroundRetinopathy,SubClassOf,Retinopathy).
+predicate(BasalGangliaDisease,is,Class).
+predicate(BasalGangliaDisease,SubClassOf,PathologicalPhenomenon).
+predicate(BehaviouralDisorder,is,Class).
+predicate(BehaviouralDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(BicepsBrachii,is,Class).
+predicate(BiliaryTractPathology,is,Class).
+predicate(BiliaryTractPathology,SubClassOf,PathologicalPhenomenon).
+predicate(BilrothOneMethod,is,Class).
+predicate(BilrothOneMethod,SubClassOf,NAMEDEponymousMethod).
+predicate(BilrothTwoMethod,is,Class).
+predicate(BilrothTwoMethod,SubClassOf,NAMEDEponymousMethod).
+predicate(BiochemicalAbnormality,is,Class).
+predicate(BiochemicalAbnormality,SubClassOf,NonNormalPhenomenon).
+predicate(BiochemicalDisorder,is,Class).
+predicate(BiochemicalDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(Blood,is,Class).
+predicate(BloodVessel,is,Class).
+predicate(BlurredVision,is,Class).
+predicate(BlurredVision,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(BodyProcess,is,Class).
+predicate(BodyStructure,is,Class).
+predicate(BodySystemPathology,is,Class).
+predicate(BodySystemPathology,SubClassOf,PathologicalPhenomenon).
+predicate(BoneDisease,is,Class).
+predicate(BoneDisease,SubClassOf,PathologicalPhenomenon).
+predicate(BoneInjury,is,Class).
+predicate(BoneInjury,SubClassOf,PathologicalPhenomenon).
+predicate(BoneMarrowDisorder,is,Class).
+predicate(BoneMarrowDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(BoneMarrowToxicity,is,Class).
+predicate(BoneMarrowToxicity,SubClassOf,PathologicalPhenomenon).
+predicate(BrachialPlexus,is,Class).
+predicate(BrachialPlexus,SubClassOf,NAMEDNervePlexus,).
+predicate(BrachialPlexus,SubClassOf,hasBranch some DorsalScapularNerve,).
+predicate(BrachialPlexus,SubClassOf,hasStructuralComponent some LateralCordOfBrachialPlexus,).
+predicate(BrachialPlexus,SubClassOf,hasStructuralComponent some MedialCordOfBrachialPlexus,).
+predicate(BrachialPlexus,SubClassOf,hasStructuralComponent some PosteriorCordOfBrachialPlexus,).
+predicate(BrachialPlexus,SubClassOf,isStructuralComponentOf some Axilla).
+predicate(Breathing,is,Class).
+predicate(BronchialPathology,is,Class).
+predicate(BronchialPathology,SubClassOf,PathologicalPhenomenon).
+predicate(BronchopulmonaryPathology,is,Class).
+predicate(BronchopulmonaryPathology,SubClassOf,PathologicalPhenomenon).
+predicate(CalcitoninAsDrug,is,Class).
+predicate(CalcitoninSalmon,is,Class).
+predicate(CalcitoninSalmon,EquivalentTo,CalcitoninAsDrug and (isSpecificConsequenceOf some).
+predicate(CalcitoninSalmon,EquivalentTo,(Removing and (actsSpecificallyOn some).
+predicate(CalcitoninSalmon,EquivalentTo,(Thyrocalcitonin and (makesUp some Salmon)))))).
+predicate(CalcitoninSalmon,SubClassOf,CalcitoninAsDrug).
+predicate(CardiacMuscle,is,Class).
+predicate(CardiacPathology,is,Class).
+predicate(CardiacPathology,SubClassOf,PathologicalPhenomenon).
+predicate(CardiacPhenomenon,is,Class).
+predicate(CardiacPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some Heart)).
+predicate(CardiacPhenomenon,SubClassOf,Phenomenon).
+predicate(CardiacValvotomy,is,Class).
+predicate(CardiovascularDisease,is,Class).
+predicate(CardiovascularDisease,SubClassOf,PathologicalPhenomenon).
+predicate(CardiovascularSystem,is,Class).
+predicate(CardiovascularSystemPhenomenon,is,Class).
+predicate(CardiovascularSystemPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some CardiovascularSystem)).
+predicate(CardiovascularSystemPhenomenon,SubClassOf,Phenomenon).
+predicate(CarpoMetacarpalJoint,is,Class).
+predicate(CellMorphologyState,is,Class).
+predicate(CentralNeuropathy,is,Class).
+predicate(CentralNeuropathy,SubClassOf,PathologicalPhenomenon).
+predicate(CentralVascularDisorder,is,Class).
+predicate(CentralVascularDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(CerebralHemisphere,is,Class).
+predicate(CerebrovascularAccident,is,Class).
+predicate(CerebrovascularAccident,SubClassOf,PermanentCentralNeuropathy).
+predicate(CervicalCordMeninges,is,Class).
+predicate(CervicalCordMeninges,EquivalentTo,Meninges and (isSpecificStructuralComponentOf some CervicalSpinalCord)).
+predicate(CervicalCordMeninges,SubClassOf,Meninges).
+predicate(CervicalLymphadenopathy,is,Class).
+predicate(CervicalLymphadenopathy,EquivalentTo,Phenomenon and (LocativeAttribute some CervicalLymphnode) and (hasPathologicalStatus some pathological)).
+predicate(CervicalLymphadenopathy,SubClassOf,Phenomenon).
+predicate(CervicalLymphnode,is,Class).
+predicate(CervicalSpinalCord,is,Class).
+predicate(ChangeProcess,is,Class).
+predicate(ChangingPhenomenon,is,Class).
+predicate(ChangingPhenomenon,EquivalentTo,ChangeProcess and (LocativeAttribute some Phenomenon)).
+predicate(ChangingPhenomenon,SubClassOf,ChangeProcess).
+predicate(ChemoreceptorSystemPathology,is,Class).
+predicate(ChemoreceptorSystemPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ChronicIschaemicCardiacPathology,is,Class).
+predicate(ChronicIschaemicCardiacPathology,SubClassOf,IschaemicCardiacPathology).
+predicate(ChronicPulmonaryHeartDisease,is,Class).
+predicate(ChronicPulmonaryHeartDisease,SubClassOf,PulmonaryHeartDisease).
+predicate(ChronicRheumaticHeartDisease,is,Class).
+predicate(ChronicRheumaticHeartDisease,SubClassOf,RheumaticHeartDisease).
+predicate(Chronicity,is,Class).
+predicate(Cirrhosis,is,Class).
+predicate(Cleanliness,is,Class).
+predicate(Cleanliness,SubClassOf,Morphology).
+predicate(CognitivePathology,is,Class).
+predicate(CognitivePathology,SubClassOf,PathologicalPhenomenon).
+predicate(CognitiveProcess,is,Class).
+predicate(Colistin,is,Class).
+predicate(ColistinSulphomethateSodium,is,Class).
+predicate(ColistinSulphomethateSodium,SubClassOf,Colistin).
+predicate(CollagenDisease,is,Class).
+predicate(CollagenDisease,SubClassOf,PathologicalPhenomenon).
+predicate(Collection,is,Class).
+predicate(ColonicPathology,is,Class).
+predicate(ColonicPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ConcommitantDisease,is,Class).
+predicate(ConcommitantDisease,SubClassOf,PathologicalPhenomenon).
+predicate(CongenitalArterialPathology,is,Class).
+predicate(CongenitalArterialPathology,SubClassOf,PathologicalPhenomenon).
+predicate(CongenitalPathologicalLesion,is,Class).
+predicate(CongenitalPathologicalLesion,SubClassOf,PathologicalPhenomenon).
+predicate(CongenitalPathology,is,Class).
+predicate(CongenitalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(CongenitalUterineMalformation,is,Class).
+predicate(CongenitalUterineMalformation,EquivalentTo,CongenitalPathologicalLesion and (hasSpecificLocation some Uterus)).
+predicate(CongenitalUterineMalformation,SubClassOf,CongenitalPathologicalLesion).
+predicate(CongenitalVaginalMalformation,is,Class).
+predicate(CongenitalVaginalMalformation,EquivalentTo,CongenitalPathologicalLesion and (hasSpecificLocation some Vagina)).
+predicate(CongenitalVaginalMalformation,SubClassOf,CongenitalPathologicalLesion).
+predicate(CongenitalVascularPathology,is,Class).
+predicate(CongenitalVascularPathology,SubClassOf,PathologicalPhenomenon).
+predicate(CongenitalVenousPathology,is,Class).
+predicate(CongenitalVenousPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ConjunctivalDisorder,is,Class).
+predicate(ConjunctivalDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(ConjunctivalHyperaemia,is,Class).
+predicate(ConjunctivalHyperaemia,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(ConjunctivalVascularCongestion,is,Class).
+predicate(ConjunctivalVascularCongestion,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(Consistency,is,Class).
+predicate(Consistency,SubClassOf,Morphology).
+predicate(ContactSensitisation,is,Class).
+predicate(ContactSensitisation,SubClassOf,NAMEDImmuneDiseaseProcess).
+predicate(CooperativeOrUncooperative,is,Class).
+predicate(CornealDisorder,is,Class).
+predicate(CornealDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(CornealOpacityReversible,is,Class).
+predicate(CornealOpacityReversible,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(CoronaryArtery,is,Class).
+predicate(CoronaryArteryPathology,is,Class).
+predicate(CoronaryArteryPathology,SubClassOf,PathologicalPhenomenon).
+predicate(CoronaryHeartDisease,is,Class).
+predicate(CoronaryHeartDisease,EquivalentTo,CardiacPathology and (isConsequenceOf some CoronaryArteryPathology)).
+predicate(CoronaryHeartDisease,SubClassOf,CardiacPathology).
+predicate(CoronaryPerfusion,is,Class).
+predicate(CoronaryPerfusion,EquivalentTo,VascularPerfusion and (isSpecificFunctionOf some CoronaryArtery)).
+predicate(CoronaryPerfusion,SubClassOf,VascularPerfusion,).
+predicate(CoronaryPerfusion,SubClassOf,actsSpecificallyOn some CardiacMuscle).
+predicate(CoronarySinusDefect,is,Class).
+predicate(CoronarySinusDefect,SubClassOf,PathologicalPhenomenon).
+predicate(CountConcentration,is,Class).
+predicate(Ctenomyces,is,Class).
+predicate(Ctenomyces,SubClassOf,Dikaryomycota).
+predicate(DamagingProcess,is,Class).
+predicate(DarklyPigmentedIris,is,Class).
+predicate(DarklyPigmentedIris,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(DarklyPigmentedPupil,is,Class).
+predicate(DarklyPigmentedPupil,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(DecreasedNightVision,is,Class).
+predicate(DecreasedNightVision,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(DecreasedToleranceOfContactLenses,is,Class).
+predicate(DecreasedToleranceOfContactLenses,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(DefectiveGene,is,Class).
+predicate(DeltoidMuscle,is,Class).
+predicate(DermalPathology,is,Class).
+predicate(DermalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Dermatome,is,Class).
+predicate(DescendingAorta,is,Class).
+predicate(DeteriorationOfOtosclerosis,is,Class).
+predicate(DeteriorationOfOtosclerosis,SubClassOf,NAMEDEarDiseaseProcess).
+predicate(DeteriorationOfPreExistingRenalDisease,is,Class).
+predicate(DeteriorationOfPreExistingRenalDisease,SubClassOf,NAMEDRenalDisease).
+predicate(DevelopmentalStatus,is,Class).
+predicate(DevelopmentalStatus,SubClassOf,Morphology).
+predicate(Device,is,Class).
+predicate(DiabetesMellitus,is,Class).
+predicate(DiabeticNephropathy,is,Class).
+predicate(DiabeticNephropathy,EquivalentTo,Nephropathy and (isConsequenceOf some DiabetesMellitus)).
+predicate(DiabeticNephropathy,SubClassOf,Nephropathy).
+predicate(DiabeticVagalNeuropathy,is,Class).
+predicate(DiabeticVagalNeuropathy,SubClassOf,PathologicalPhenomenon).
+predicate(DiaphragmaticPathology,is,Class).
+predicate(DiaphragmaticPathology,SubClassOf,PathologicalPhenomenon).
+predicate(DiarrhoealDisorder,is,Class).
+predicate(DiarrhoealDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(DigestiveSystem,is,Class).
+predicate(DigestiveSystemPathology,is,Class).
+predicate(DigestiveSystemPathology,SubClassOf,PathologicalPhenomenon).
+predicate(DigestiveSystemPhenomenon,is,Class).
+predicate(DigestiveSystemPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some DigestiveSystem)).
+predicate(DigestiveSystemPhenomenon,SubClassOf,Phenomenon).
+predicate(Dikaryomycota,is,Class).
+predicate(Diplopia,is,Class).
+predicate(Diplopia,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(Disability,is,Class).
+predicate(Disability,SubClassOf,PathologicalPhenomenon).
+predicate(Displacement,is,Class).
+predicate(Distribution,is,Class).
+predicate(Distribution,SubClassOf,Morphology).
+predicate(DisturbanceOfAccommodation,is,Class).
+predicate(DisturbanceOfAccommodation,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(DisturbanceOfMenstruation,is,Class).
+predicate(DisturbanceOfMenstruation,SubClassOf,PathologicalPhenomenon).
+predicate(DisturbanceOfPeripheralCirculation,is,Class).
+predicate(DisturbanceOfPeripheralCirculation,SubClassOf,PeripheralPerfusion).
+predicate(DisulfiramReaction,is,Class).
+predicate(DisulfiramReaction,SubClassOf,NAMEDImmuneDiseaseProcess).
+predicate(DomainCategory,is,Class).
+predicate(DomainCategory,SubClassOf,TopCategory).
+predicate(Dominance,is,Class).
+predicate(DorsalScapularNerve,is,Class).
+predicate(DrugAbsoluteContraindication,is,Class).
+predicate(DrugAbsoluteContraindication,EquivalentTo,DrugContraindication and (hasIndicationStatus some absoluteContraindication)).
+predicate(DrugAbsoluteContraindication,SubClassOf,DrugContraindication).
+predicate(DrugContraindication,is,Class).
+predicate(DryEyeSyndrome,is,Class).
+predicate(DryEyeSyndrome,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(DryEyes,is,Class).
+predicate(DryEyes,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(DuodenalPathology,is,Class).
+predicate(DuodenalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Duration,is,Class).
+predicate(Dysarthria,is,Class).
+predicate(Dysarthria,SubClassOf,PathologicalPhenomenon).
+predicate(ECGSegmentPhenomenon,is,Class).
+predicate(ECGSegmentPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some ECGTraceSegment)).
+predicate(ECGSegmentPhenomenon,SubClassOf,Phenomenon).
+predicate(ECGTrace,is,Class).
+predicate(ECGTracePhenomenon,is,Class).
+predicate(ECGTracePhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some ECGTrace)).
+predicate(ECGTracePhenomenon,SubClassOf,Phenomenon).
+predicate(ECGTraceSegment,is,Class).
+predicate(EarPathology,is,Class).
+predicate(EarPathology,SubClassOf,PathologicalPhenomenon).
+predicate(EarlyOnsetIschaemicCoronaryHeartDisease,is,Class).
+predicate(EarlyOnsetIschaemicCoronaryHeartDisease,SubClassOf,IschaemicCardiacPathology).
+predicate(Effectiveness,is,Class).
+predicate(EleventhIntercostalSpace,is,Class).
+predicate(Encephalopathy,is,Class).
+predicate(Encephalopathy,SubClassOf,PathologicalPhenomenon).
+predicate(EndocrineSystem,is,Class).
+predicate(EndocrineSystemPathology,is,Class).
+predicate(EndocrineSystemPathology,SubClassOf,PathologicalPhenomenon).
+predicate(EndocrineSystemPhenomenon,is,Class).
+predicate(EndocrineSystemPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some EndocrineSystem)).
+predicate(EndocrineSystemPhenomenon,SubClassOf,Phenomenon).
+predicate(EndometrialPathology,is,Class).
+predicate(EndometrialPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Endoscope,is,Class).
+predicate(EosinophilicPneumonia,is,Class).
+predicate(EosinophilicPneumonia,SubClassOf,NAMEDImmuneDiseaseProcess).
+predicate(Ephedra,is,Class).
+predicate(Ephedra,SubClassOf,Gnetales).
+predicate(Epidemiology,is,Class).
+predicate(Epidemiology,SubClassOf,PublicHealth).
+predicate(EpidermalPathology,is,Class).
+predicate(EpidermalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ErythrocyteDisorder,is,Class).
+predicate(ErythrocyteDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(EsophagealPathology,is,Class).
+predicate(EsophagealPathology,SubClassOf,PathologicalPhenomenon).
+predicate(EuropeanMole,is,Class).
+predicate(EuropeanMole,SubClassOf,Talpidae).
+predicate(ExaminingProcess,is,Class).
+predicate(ExternalStimulusSensation,is,Class).
+predicate(ExtraPyramidalPathology,is,Class).
+predicate(ExtraPyramidalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ExtrapyramidalAkathisia,is,Class).
+predicate(ExtrapyramidalAkathisia,SubClassOf,AkathisiaSymptom).
+predicate(Exudate,is,Class).
+predicate(ExudativeDermatosis,is,Class).
+predicate(ExudativeDermatosis,EquivalentTo,SkinPathology and (hasConsequence some Exudate)).
+predicate(ExudativeDermatosis,SubClassOf,SkinPathology).
+predicate(EyePathology,is,Class).
+predicate(EyePathology,SubClassOf,PathologicalPhenomenon).
+predicate(Eyeball,is,Class).
+predicate(EyeballDisorder,is,Class).
+predicate(EyeballDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(EyelashDisorder,is,Class).
+predicate(EyelashDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(EyelidDisorder,is,Class).
+predicate(EyelidDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(FemaleBreast,is,Class).
+predicate(FemaleGenitalTractComponent,is,Class).
+predicate(FemaleGenitoUrinaryDisorder,is,Class).
+predicate(FemaleGenitoUrinaryDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(FemaleGenitoUrinaryPathology,is,Class).
+predicate(FemaleGenitoUrinaryPathology,SubClassOf,PathologicalPhenomenon).
+predicate(FemalePatternAndrogenicBaldness,is,Class).
+predicate(FemalePatternAndrogenicBaldness,SubClassOf,AndrogenicAlopecia).
+predicate(FibroticLungDisease,is,Class).
+predicate(FibroticLungDisease,SubClassOf,PathologicalPhenomenon).
+predicate(FlexorDigitorumBrevisOfFoot,is,Class).
+predicate(FlexorDigitorumLongusOfLeg,is,Class).
+predicate(FlightOfIdeas,is,Class).
+predicate(FlightOfIdeas,SubClassOf,PathologicalCognition).
+predicate(FourthIntercostalSpace,is,Class).
+predicate(FourthMetacarpoPhalangealJoint,is,Class).
+predicate(FunctionalRole,is,Class).
+predicate(Gait,is,Class).
+predicate(GallbladderDisease,is,Class).
+predicate(GallbladderDisease,SubClassOf,PathologicalPhenomenon).
+predicate(GastricPathology,is,Class).
+predicate(GastricPathology,SubClassOf,PathologicalPhenomenon).
+predicate(GastroIntestinalDisturbance,is,Class).
+predicate(GastroIntestinalDisturbance,SubClassOf,PathologicalPhenomenon).
+predicate(GastrointestinalTractPathology,is,Class).
+predicate(GastrointestinalTractPathology,SubClassOf,PathologicalPhenomenon).
+predicate(GemellusInferior,is,Class).
+predicate(GemellusSuperior,is,Class).
+predicate(GeneTranscription,is,Class).
+predicate(GeneralisedProcess,is,Class).
+predicate(GeneralisedStructure,is,Class).
+predicate(GeneralisedSubstance,is,Class).
+predicate(GenitoUrinaryPathology,is,Class).
+predicate(GenitoUrinaryPathology,SubClassOf,PathologicalPhenomenon).
+predicate(GestationalPhenomenon,is,Class).
+predicate(GestationalPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some Pregnancy)).
+predicate(GestationalPhenomenon,SubClassOf,Phenomenon,).
+predicate(GestationalPhenomenon,SubClassOf,occursDuring some PeriodDuringPregnancy).
+predicate(GingivalDisease,is,Class).
+predicate(GingivalDisease,SubClassOf,PathologicalPhenomenon).
+predicate(GlenoHumeralJoint,is,Class).
+predicate(GlossopharyngealBreathing,is,Class).
+predicate(GlossopharyngealBreathing,SubClassOf,NonNormalBreathing).
+predicate(Glucagon,is,Class).
+predicate(Glycerophospholipid,is,Class).
+predicate(Glycogenosis,is,Class).
+predicate(Glycogenosis,SubClassOf,PathologicalPhenomenon).
+predicate(Gnetales,is,Class).
+predicate(Gonadoliberin,is,Class).
+predicate(Gracilis,is,Class).
+predicate(Grafting,is,Class).
+predicate(GramNegativeCellWall,is,Class).
+predicate(GramPositiveCellWall,is,Class).
+predicate(Gramstaining,is,Class).
+predicate(GreatVesselDisorder,is,Class).
+predicate(GreatVesselDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(GreaterSaphenousVein,is,Class).
+predicate(GynaecologicalPain,is,Class).
+predicate(GynaecologicalPain,EquivalentTo,ExternalStimulusSensation and (actsOn some).
+predicate(GynaecologicalPain,EquivalentTo,(Signal and (isConsequenceOf some).
+predicate(GynaecologicalPain,EquivalentTo,(NerveConduction and (hasUniqueAssociatedDisplacement some).
+predicate(GynaecologicalPain,EquivalentTo,(Displacement and (isDisplacementFrom some FemaleGenitalTractComponent))))) and (isSpecificConsequenceOf some).
+predicate(GynaecologicalPain,EquivalentTo,(TransducingProcess and (isSpecificFunctionOf some PainReceptorCell)))))).
+predicate(GynaecologicalPain,SubClassOf,ExternalStimulusSensation).
+predicate(HaematologicalDisorder,is,Class).
+predicate(HaematologicalDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(HaemorrhagicStroke,is,Class).
+predicate(HaemorrhagicStroke,SubClassOf,PermanentCentralNeuropathy).
+predicate(HeadInjury,is,Class).
+predicate(HeadInjury,SubClassOf,PathologicalPhenomenon).
+predicate(HearingDeficiency,is,Class).
+predicate(HearingDeficiency,SubClassOf,NAMEDEarDiseaseProcess).
+predicate(HearingLoss,is,Class).
+predicate(HearingLoss,SubClassOf,NAMEDEarDiseaseProcess).
+predicate(HearingProblem,is,Class).
+predicate(HearingProblem,SubClassOf,PathologicalPhenomenon).
+predicate(Heart,is,Class).
+predicate(HeartAndLungPathology,is,Class).
+predicate(HeartAndLungPathology,SubClassOf,PathologicalPhenomenon).
+predicate(HeartSound,is,Class).
+predicate(HeartValveDisorder,is,Class).
+predicate(HeartValveDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(HeartWall,is,Class).
+predicate(HeparinCrossReaction,is,Class).
+predicate(HeparinCrossReaction,SubClassOf,PathologicalPhenomenon).
+predicate(HepaticDisease,is,Class).
+predicate(HepaticDisease,SubClassOf,PathologicalPhenomenon).
+predicate(HepaticEncephalopathy,is,Class).
+predicate(HepaticEncephalopathy,EquivalentTo,Encephalopathy and (isConsequenceOf some Cirrhosis)).
+predicate(HepaticEncephalopathy,SubClassOf,Encephalopathy).
+predicate(Hepatotoxicity,is,Class).
+predicate(Hepatotoxicity,SubClassOf,PathologicalPhenomenon).
+predicate(HereditaryDegenerativeRetinalDisorder,is,Class).
+predicate(HereditaryDegenerativeRetinalDisorder,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(HipJoint,is,Class).
+predicate(HistoryOfRaynaudsPhenomenon,is,Class).
+predicate(HistoryOfRaynaudsPhenomenon,EquivalentTo,PreviousPersonalHistory and (isHistoryOf some).
+predicate(HistoryOfRaynaudsPhenomenon,EquivalentTo,(presence and (isExistenceOf some RaynaudPhenomenon)))).
+predicate(HistoryOfRaynaudsPhenomenon,SubClassOf,PreviousPersonalHistory).
+predicate(Human,is,Class).
+predicate(HypertensiveCardiacPathology,is,Class).
+predicate(HypertensiveCardiacPathology,EquivalentTo,CardiacPathology and (isConsequenceOf some SystemicHypertension)).
+predicate(HypertensiveCardiacPathology,SubClassOf,CardiacPathology).
+predicate(HypertensiveDisease,is,Class).
+predicate(HypertensiveDisease,SubClassOf,PathologicalPhenomenon).
+predicate(HypertensiveHeartAndRenalPathology,is,Class).
+predicate(HypertensiveHeartAndRenalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(HypertensiveRenalPathology,is,Class).
+predicate(HypertensiveRenalPathology,EquivalentTo,Nephropathy and (isConsequenceOf some SystemicHypertension)).
+predicate(HypertensiveRenalPathology,SubClassOf,Nephropathy).
+predicate(HypochondrialPain,is,Class).
+predicate(HypochondrialPain,EquivalentTo,ExternalStimulusSensation and (actsOn some).
+predicate(HypochondrialPain,EquivalentTo,(PainSignal and (isConsequenceOf some).
+predicate(HypochondrialPain,EquivalentTo,(NerveConduction and (hasUniqueAssociatedDisplacement some).
+predicate(HypochondrialPain,EquivalentTo,(Displacement and (isDisplacementFrom some Hypochondrium)))))))).
+predicate(HypochondrialPain,SubClassOf,ExternalStimulusSensation).
+predicate(HypochondrialPainSymptom,is,Class).
+predicate(HypochondrialPainSymptom,SubClassOf,HypochondrialPain).
+predicate(Hypochondrium,is,Class).
+predicate(HypotensiveDisease,is,Class).
+predicate(HypotensiveDisease,SubClassOf,PathologicalPhenomenon).
+predicate(HypothalamicHormone,is,Class).
+predicate(Hypothalamus,is,Class).
+predicate(HypoxanthineGuaninePhosphoRibosylTransferase,is,Class).
+predicate(IdiopathicRespiratoryDistressSyndrome,is,Class).
+predicate(IdiopathicRespiratoryDistressSyndrome,SubClassOf,PathologicalPhenomenon).
+predicate(Iduronidase,is,Class).
+predicate(ImmuneSystem,is,Class).
+predicate(ImmuneSystemPathology,is,Class).
+predicate(ImmuneSystemPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ImmuneSystemPhenomenon,is,Class).
+predicate(ImmuneSystemPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some ImmuneSystem)).
+predicate(ImmuneSystemPhenomenon,SubClassOf,Phenomenon).
+predicate(ImmunodeficiencySyndrome,is,Class).
+predicate(ImmunodeficiencySyndrome,SubClassOf,NAMEDImmuneDiseaseProcess).
+predicate(ImpairedPeripheralBloodCirculation,is,Class).
+predicate(ImpairedPeripheralBloodCirculation,SubClassOf,PeripheralPerfusion).
+predicate(IncreasedLacrimation,is,Class).
+predicate(IncreasedLacrimation,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(IncreasedThyroidSecretion,is,Class).
+predicate(IneffectiveCardiacFunction,is,Class).
+predicate(InfectiousPathology,is,Class).
+predicate(InfectiousPathology,SubClassOf,PathologicalPhenomenon).
+predicate(InfectiveArthropathy,is,Class).
+predicate(InfectiveArthropathy,SubClassOf,PathologicalPhenomenon).
+predicate(InflammationInOtitisExterna,is,Class).
+predicate(InflammationInOtitisExterna,SubClassOf,NAMEDEarDiseaseProcess).
+predicate(InflammatoryBowelDisease,is,Class).
+predicate(InflammatoryBowelDisease,SubClassOf,PathologicalPhenomenon).
+predicate(InflammatoryDiseaseOfTheAnteriorSegment,is,Class).
+predicate(InflammatoryDiseaseOfTheAnteriorSegment,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(Inhibiting,is,Class).
+predicate(Injury,is,Class).
+predicate(Injury,SubClassOf,PathologicalPhenomenon).
+predicate(Insectivora,is,Class).
+predicate(IntercurrentIllness,is,Class).
+predicate(IntercurrentIllness,SubClassOf,PathologicalPhenomenon).
+predicate(InternalThoracicArtery,is,Class).
+predicate(InterphalangealJointOfFifthToe,is,Class).
+predicate(InterphalangealJointOfFourthToe,is,Class).
+predicate(InterphalangealJointOfSecondToe,is,Class).
+predicate(InterphalangealJointOfThirdToe,is,Class).
+predicate(IntestinalPathology,is,Class).
+predicate(IntestinalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(IntraOcularPressureInOcularHypertension,is,Class).
+predicate(IntraOcularPressureInOcularHypertension,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(IrreversiblePhenomenon,is,Class).
+predicate(IrreversiblePhenomenon,EquivalentTo,Phenomenon and (hasReversibility some).
+predicate(IrreversiblePhenomenon,EquivalentTo,(Reversibility and (hasAbsoluteState some irreversible)))).
+predicate(IrreversiblePhenomenon,SubClassOf,Phenomenon,).
+predicate(IrreversiblePhenomenon,SubClassOf,hasPermanence some).
+predicate(IrreversiblePhenomenon,SubClassOf,(Permanence and (hasAbsoluteState some permanent))).
+predicate(IschaemicCardiacPathology,is,Class).
+predicate(IschaemicCardiacPathology,EquivalentTo,CardiacPathology and (isConsequenceOf some IschaemicProcess)).
+predicate(IschaemicCardiacPathology,SubClassOf,CardiacPathology).
+predicate(IschaemicCoronaryHeartDisease,is,Class).
+predicate(IschaemicCoronaryHeartDisease,SubClassOf,IschaemicCardiacPathology).
+predicate(IschaemicProcess,is,Class).
+predicate(IschaemicStroke,is,Class).
+predicate(IschaemicStroke,SubClassOf,PermanentCentralNeuropathy).
+predicate(IsletCell,is,Class).
+predicate(JointInjury,is,Class).
+predicate(JointInjury,SubClassOf,PathologicalPhenomenon).
+predicate(JointPathology,is,Class).
+predicate(JointPathology,SubClassOf,PathologicalPhenomenon).
+predicate(KneeJoint,is,Class).
+predicate(Kyphoscoliosis,is,Class).
+predicate(Kyphoscoliosis,SubClassOf,SpinalPathology).
+predicate(L2root,is,Class).
+predicate(L4root,is,Class).
+predicate(L5Dermatome,is,Class).
+predicate(LabyrinthineDisorder,is,Class).
+predicate(LabyrinthineDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(LaryngealPathology,is,Class).
+predicate(LaryngealPathology,SubClassOf,PathologicalPhenomenon).
+predicate(LateralCordOfBrachialPlexus,is,Class).
+predicate(LebersOpticAtrophy,is,Class).
+predicate(LebersOpticAtrophy,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(LengthUnit,is,Class).
+predicate(LeschNyhanSyndrome,is,Class).
+predicate(LeukocyteDisorder,is,Class).
+predicate(LeukocyteDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(LigamentInjury,is,Class).
+predicate(LigamentInjury,SubClassOf,PathologicalPhenomenon).
+predicate(LocalisedScalpAlopecia,is,Class).
+predicate(LongSaphenousVeinGraft,is,Class).
+predicate(LongSaphenousVeinGraft,EquivalentTo,GreaterSaphenousVein and (isActedOnSpecificallyBy some Grafting)).
+predicate(LongSaphenousVeinGraft,SubClassOf,GreaterSaphenousVein).
+predicate(LongTermComplication,is,Class).
+predicate(LongTermComplication,SubClassOf,PathologicalPhenomenon).
+predicate(LossOfPupilAccommodation,is,Class).
+predicate(LossOfPupilAccommodation,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(LowSerumAcidConcentration,is,Class).
+predicate(LowSerumBaseConcentration,is,Class).
+predicate(LowUrineKetoneConcentration,is,Class).
+predicate(LowerGastrointestinalTractPathology,is,Class).
+predicate(LowerGastrointestinalTractPathology,SubClassOf,PathologicalPhenomenon).
+predicate(LowerUrinaryTractPathology,is,Class).
+predicate(LowerUrinaryTractPathology,SubClassOf,PathologicalPhenomenon).
+predicate(LoweredSerumPotassiumConcentration,is,Class).
+predicate(LumbarNerveRoot,is,Class).
+predicate(Lung,is,Class).
+predicate(LungPathology,is,Class).
+predicate(LungPathology,SubClassOf,PathologicalPhenomenon).
+predicate(LungReaction,is,Class).
+predicate(LungReaction,SubClassOf,PathologicalPhenomenon).
+predicate(LupusErythematosusLikeSyndrome,is,Class).
+predicate(LupusErythematosusLikeSyndrome,SubClassOf,NAMEDImmuneDiseaseProcess).
+predicate(Lymphadenopathy,is,Class).
+predicate(Lymphadenopathy,EquivalentTo,Phenomenon and (LocativeAttribute some Lymphnode) and (hasPathologicalStatus some pathological)).
+predicate(Lymphadenopathy,SubClassOf,Phenomenon).
+predicate(LymphadenopathySymptom,is,Class).
+predicate(LymphadenopathySymptom,SubClassOf,Lymphadenopathy).
+predicate(LymphaticSystemPathology,is,Class).
+predicate(LymphaticSystemPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Lymphnode,is,Class).
+predicate(LymphoproliferativeDisorder,is,Class).
+predicate(LymphoproliferativeDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(LymphoreticularDisorder,is,Class).
+predicate(LymphoreticularDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(LymphoreticularSystem,is,Class).
+predicate(LymphoreticularSystemPhenomenon,is,Class).
+predicate(LymphoreticularSystemPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some LymphoreticularSystem)).
+predicate(LymphoreticularSystemPhenomenon,SubClassOf,Phenomenon).
+predicate(LysosomalStorageDisease,is,Class).
+predicate(LysosomalStorageDisease,SubClassOf,PathologicalPhenomenon).
+predicate(MacrovascularDisease,is,Class).
+predicate(MacrovascularDisease,SubClassOf,PathologicalPhenomenon).
+predicate(Maculopathy,is,Class).
+predicate(Maculopathy,SubClassOf,PathologicalPhenomenon).
+predicate(MajorSalivaryGland,is,Class).
+predicate(MaleGenitoUrinaryPathology,is,Class).
+predicate(MaleGenitoUrinaryPathology,SubClassOf,PathologicalPhenomenon).
+predicate(MalePatternAndrogenicBaldness,is,Class).
+predicate(MalePatternAndrogenicBaldness,SubClassOf,AndrogenicAlopecia).
+predicate(MalePhenotypePerson,is,Class).
+predicate(MalePhenotypePerson,EquivalentTo,Human and (hasPhenotypicalSex some).
+predicate(MalePhenotypePerson,EquivalentTo,(PhenotypicalSex and (hasAbsoluteState some maleSex)))).
+predicate(MalePhenotypePerson,SubClassOf,Human).
+predicate(MedialCordOfBrachialPlexus,is,Class).
+predicate(MemoryDisturbance,is,Class).
+predicate(MemoryDisturbance,SubClassOf,PathologicalPhenomenon).
+predicate(MeningealPlexus,is,Class).
+predicate(MeningealPlexus,SubClassOf,NAMEDNervePlexus).
+predicate(Meninges,is,Class).
+predicate(MenopauseProcess,is,Class).
+predicate(MenstrualSymptom,is,Class).
+predicate(MenstrualSymptom,EquivalentTo,DisturbanceOfMenstruation and (playsConsultationRole some SymptomRole)).
+predicate(MenstrualSymptom,SubClassOf,DisturbanceOfMenstruation).
+predicate(MenstruallyLinkedPhenomenon,is,Class).
+predicate(MenstruallyLinkedPhenomenon,EquivalentTo,Phenomenon and (isConsequenceOf some MenstruationProcess)).
+predicate(MenstruallyLinkedPhenomenon,SubClassOf,Phenomenon).
+predicate(MenstruationProcess,is,Class).
+predicate(MentalExcitation,is,Class).
+predicate(MetabolicBoneDisease,is,Class).
+predicate(MetabolicBoneDisease,SubClassOf,PathologicalPhenomenon).
+predicate(MetabolicDisease,is,Class).
+predicate(MetabolicDisease,SubClassOf,PathologicalPhenomenon).
+predicate(MetacarpoPhalangealJoint,is,Class).
+predicate(Midlife,is,Class).
+predicate(MinorVisualDisturbance,is,Class).
+predicate(MinorVisualDisturbance,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(Miosis,is,Class).
+predicate(Miosis,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(MitralValveDisorder,is,Class).
+predicate(MitralValveDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(ModifierConcept,is,Class).
+predicate(ModifierConcept,SubClassOf,DomainCategory).
+predicate(MonitorRenalFunction,is,Class).
+predicate(MonitorRenalFunction,SubClassOf,NAMEDRenalDisease).
+predicate(Mononeuropathy,is,Class).
+predicate(Mononeuropathy,SubClassOf,PathologicalPhenomenon).
+predicate(Morphology,is,Class).
+predicate(Morphology,SubClassOf,StructuralFeature).
+predicate(MouthBreathing,is,Class).
+predicate(MouthBreathing,SubClassOf,NonNormalBreathing).
+predicate(MovingRotating,is,Class).
+predicate(Mucopolysaccharidosis,is,Class).
+predicate(Mucopolysaccharidosis,SubClassOf,PathologicalPhenomenon).
+predicate(MuscleInjury,is,Class).
+predicate(MuscleInjury,SubClassOf,PathologicalPhenomenon).
+predicate(MusculoPhrenicArtery,is,Class).
+predicate(MusculoSkeletalInjury,is,Class).
+predicate(MusculoSkeletalInjury,SubClassOf,PathologicalPhenomenon).
+predicate(MusculoSkeletalPathology,is,Class).
+predicate(MusculoSkeletalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Mydriasis,is,Class).
+predicate(Mydriasis,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(MyocardialPathology,is,Class).
+predicate(MyocardialPathology,SubClassOf,PathologicalPhenomenon).
+predicate(MyositisLikeSyndrome,is,Class).
+predicate(MyositisLikeSyndrome,SubClassOf,PathologicalPhenomenon).
+predicate(Myotoxicity,is,Class).
+predicate(Myotoxicity,SubClassOf,PathologicalPhenomenon).
+predicate(NAMEDCardiovascularSystemDiseaseProcess,is,Class).
+predicate(NAMEDEarDiseaseProcess,is,Class).
+predicate(NAMEDEarDiseaseProcess,SubClassOf,EarPathology).
+predicate(NAMEDEponymousMethod,is,Class).
+predicate(NAMEDEyeDiseaseProcess,is,Class).
+predicate(NAMEDEyeDiseaseProcess,SubClassOf,EyePathology).
+predicate(NAMEDImmuneDiseaseProcess,is,Class).
+predicate(NAMEDImmuneDiseaseProcess,SubClassOf,ImmuneSystemPathology).
+predicate(NAMEDNervePlexus,is,Class).
+predicate(NAMEDPainProcess,is,Class).
+predicate(NAMEDRenalDisease,is,Class).
+predicate(NAMEDRenalDisease,SubClassOf,RenalPathology).
+predicate(NAMEDValve,is,Class).
+predicate(NasalAllergy,is,Class).
+predicate(NasalAllergy,SubClassOf,PathologicalPhenomenon).
+predicate(NasalPathology,is,Class).
+predicate(NasalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(NasopharyngealPathology,is,Class).
+predicate(NasopharyngealPathology,SubClassOf,PathologicalPhenomenon).
+predicate(NeoplasticDisease,is,Class).
+predicate(NeoplasticDisease,SubClassOf,PathologicalPhenomenon).
+predicate(Nephropathy,is,Class).
+predicate(Nephropathy,SubClassOf,PathologicalPhenomenon).
+predicate(Nephrotoxicity,is,Class).
+predicate(Nephrotoxicity,SubClassOf,PathologicalPhenomenon).
+predicate(NerveConduction,is,Class).
+predicate(NervousSystem,is,Class).
+predicate(NervousSystemPhenomenon,is,Class).
+predicate(NervousSystemPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some NervousSystem)).
+predicate(NervousSystemPhenomenon,SubClassOf,Phenomenon).
+predicate(NeurohypophysealHormone,is,Class).
+predicate(NeurologicalDisorder,is,Class).
+predicate(NeurologicalDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(NeuromuscularDisorder,is,Class).
+predicate(NeuromuscularDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(Nodularity,is,Class).
+predicate(Nodularity,SubClassOf,Morphology).
+predicate(NonAllergicRhinitis,is,Class).
+predicate(NonAllergicRhinitis,SubClassOf,NAMEDImmuneDiseaseProcess).
+predicate(NonDirectInspecting,is,Class).
+predicate(NonDominantHemisphere,is,Class).
+predicate(NonDominantHemisphere,EquivalentTo,CerebralHemisphere and (hasDominance some).
+predicate(NonDominantHemisphere,EquivalentTo,(Dominance and (hasAbsoluteState some nonDominant)))).
+predicate(NonDominantHemisphere,SubClassOf,CerebralHemisphere).
+predicate(NonNormalBreathing,is,Class).
+predicate(NonNormalBreathing,EquivalentTo,Breathing and (hasIntrinsicAbnormalityStatus some nonNormal)).
+predicate(NonNormalBreathing,SubClassOf,Breathing).
+predicate(NonNormalPhenomenon,is,Class).
+predicate(NonNormalPhenomenon,EquivalentTo,Phenomenon and (hasAbnormalityStatus some nonNormal)).
+predicate(NonNormalPhenomenon,SubClassOf,Phenomenon).
+predicate(NonNormallyLargeEar,is,Class).
+predicate(NonNormallyLargeEarSymptom,is,Class).
+predicate(NonNormallyLargeEarSymptom,EquivalentTo,NonNormallyLargeEar and (playsConsultationRole some SymptomRole)).
+predicate(NonNormallyLargeEarSymptom,SubClassOf,NonNormallyLargeEar).
+predicate(NonNormallyLargeNose,is,Class).
+predicate(NonNormallyLargeNoseSymptom,is,Class).
+predicate(NonNormallyLargeNoseSymptom,EquivalentTo,NonNormallyLargeNose and (playsConsultationRole some SymptomRole)).
+predicate(NonNormallyLargeNoseSymptom,SubClassOf,NonNormallyLargeNose).
+predicate(NonPartnerRole,is,Class).
+predicate(NonPartnerRole,SubClassOf,PatientNonGeneticRelativeRole).
+predicate(NormalPhenomenon,is,Class).
+predicate(NormalPhenomenon,EquivalentTo,Phenomenon and (hasAbnormalityStatus some normal)).
+predicate(NormalPhenomenon,SubClassOf,Phenomenon).
+predicate(ObliterativeVascularDisease,is,Class).
+predicate(ObliterativeVascularDisease,SubClassOf,PathologicalPhenomenon).
+predicate(ObstructionProcess,is,Class).
+predicate(ObstructivePeripheralVascularDisease,is,Class).
+predicate(ObstructivePeripheralVascularDisease,EquivalentTo,PeripheralVascularDisorder and (LocativeAttribute some ObstructionProcess)).
+predicate(ObstructivePeripheralVascularDisease,SubClassOf,PeripheralVascularDisorder).
+predicate(ObstructivePulmonaryDisease,is,Class).
+predicate(ObstructivePulmonaryDisease,SubClassOf,PathologicalPhenomenon).
+predicate(ObstructiveUropathy,is,Class).
+predicate(ObstructiveUropathy,SubClassOf,PathologicalPhenomenon).
+predicate(OccularHypertension,is,Class).
+predicate(OccularHypertension,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(OcularDrugRoute,is,Class).
+predicate(OcularDrugRoute,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(OcularErythema,is,Class).
+predicate(OcularErythema,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(OcularHypertension,is,Class).
+predicate(OcularHypertension,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(OcularImplant,is,Class).
+predicate(OcularImplant,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(OcularMuscleDisorder,is,Class).
+predicate(OcularMuscleDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(OculomotorNerve,is,Class).
+predicate(OculomotorPalsy,is,Class).
+predicate(OculomotorPalsy,SubClassOf,PathologicalPhenomenon).
+predicate(OneAlphaHydroxycholecalciferol,is,Class).
+predicate(OneAlphaHydroxycholecalciferolVitamin,is,Class).
+predicate(OneAlphaHydroxycholecalciferolVitamin,EquivalentTo,OneAlphaHydroxycholecalciferol and (playsPhysiologicalRole some VitaminRole)).
+predicate(OneAlphaHydroxycholecalciferolVitamin,SubClassOf,OneAlphaHydroxycholecalciferol).
+predicate(OneAlphaHydroxycholecalciferolVitaminAsDrug,is,Class).
+predicate(OneAlphaHydroxycholecalciferolVitaminAsDrug,SubClassOf,OneAlphaHydroxycholecalciferolVitamin).
+predicate(Onychogryphosis,is,Class).
+predicate(Onychogryphosis,SubClassOf,Onychopathy).
+predicate(Onychoma,is,Class).
+predicate(Onychoma,SubClassOf,Onychopathy).
+predicate(Onychomadesis,is,Class).
+predicate(Onychomadesis,SubClassOf,Onychopathy).
+predicate(Onychopathy,is,Class).
+predicate(Onychopathy,SubClassOf,PathologicalPhenomenon).
+predicate(Onychoptosis,is,Class).
+predicate(Onychoptosis,SubClassOf,Onychopathy).
+predicate(OralPathology,is,Class).
+predicate(OralPathology,SubClassOf,PathologicalPhenomenon).
+predicate(OrganicSolidStructure,is,Class).
+predicate(Ornithodoros,is,Class).
+predicate(OrnithodorosSavigni,is,Class).
+predicate(OrnithodorosSavigni,SubClassOf,Ornithodoros).
+predicate(OrodentalPathology,is,Class).
+predicate(OrodentalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Osteoporosis,is,Class).
+predicate(Otosclerosis,is,Class).
+predicate(Otosclerosis,SubClassOf,NAMEDEarDiseaseProcess).
+predicate(Ototoxicity,is,Class).
+predicate(Ototoxicity,SubClassOf,PathologicalPhenomenon).
+predicate(OutwardRotation,is,Class).
+predicate(OvarianPathology,is,Class).
+predicate(OvarianPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Pain,is,Class).
+predicate(PainLocalisation,is,Class).
+predicate(PainLocalisation,SubClassOf,NAMEDPainProcess).
+predicate(PainReceptorCell,is,Class).
+predicate(PainSignal,is,Class).
+predicate(PainfulPathologicalPhenomenon,is,Class).
+predicate(PainfulPathologicalPhenomenon,SubClassOf,PathologicalPhenomenon).
+predicate(PainfulPhenomenon,is,Class).
+predicate(PainfulPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some Pain)).
+predicate(PainfulPhenomenon,SubClassOf,Phenomenon).
+predicate(Palpability,is,Class).
+predicate(Palpability,SubClassOf,Morphology).
+predicate(Palpating,is,Class).
+predicate(Palpating,SubClassOf,ExaminingProcess).
+predicate(PancreaticPathology,is,Class).
+predicate(PancreaticPathology,SubClassOf,PathologicalPhenomenon).
+predicate(PapillaryMuscleDisorder,is,Class).
+predicate(PapillaryMuscleDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(ParadoxicalExcitement,is,Class).
+predicate(ParadoxicalExcitement,EquivalentTo,MentalExcitation and (hasParadoxicalStatus some paradoxicalStatus)).
+predicate(ParadoxicalExcitement,SubClassOf,MentalExcitation).
+predicate(ParadoxicalMentalExcitation,is,Class).
+predicate(ParadoxicalMentalExcitation,SubClassOf,MentalExcitation).
+predicate(Paraffin,is,Class).
+predicate(ParaffinAsDrug,is,Class).
+predicate(ParaffinAsDrug,EquivalentTo,Paraffin and (playsPhysiologicalRole some ActiveDrugAdditiveRole)).
+predicate(ParaffinAsDrug,SubClassOf,Paraffin).
+predicate(ParathyroidDysfunction,is,Class).
+predicate(ParathyroidDysfunction,EquivalentTo,BodyProcess and (hasPathologicalStatus some pathological) and (isFunctionOf some ParathyroidGland)).
+predicate(ParathyroidDysfunction,SubClassOf,BodyProcess).
+predicate(ParathyroidGland,is,Class).
+predicate(ParathyroidPathology,is,Class).
+predicate(ParathyroidPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ParotidDuct,is,Class).
+predicate(ParotidFascia,is,Class).
+predicate(ParotidGland,is,Class).
+predicate(ParotidGland,SubClassOf,MajorSalivaryGland,).
+predicate(ParotidGland,SubClassOf,hasSpecificFunction some).
+predicate(ParotidGland,SubClassOf,(Salivation and (hasUniqueAssociatedDisplacement some).
+predicate(ParotidGland,SubClassOf,(Displacement and (isDisplacementFrom some ParotidGland) and (isDisplacementTo some ParotidDuct)))),).
+predicate(ParotidGland,SubClassOf,hasStructuralComponent some ParotidDuct,).
+predicate(ParotidGland,SubClassOf,isSpecificallyNonPartitivelyContainedIn some ParotidFascia).
+predicate(PartnerRole,is,Class).
+predicate(PartnerRole,SubClassOf,PatientNonGeneticRelativeRole).
+predicate(PatchRole,is,Class).
+predicate(PatchRole,SubClassOf,FunctionalRole).
+predicate(Patency,is,Class).
+predicate(Patency,SubClassOf,Morphology).
+predicate(PathologicalCognition,is,Class).
+predicate(PathologicalCognition,EquivalentTo,CognitiveProcess and (hasPathologicalStatus some pathological)).
+predicate(PathologicalCognition,SubClassOf,CognitiveProcess).
+predicate(PathologicalCountConcentration,is,Class).
+predicate(PathologicalCountConcentration,EquivalentTo,CountConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalCountConcentration,SubClassOf,CountConcentration).
+predicate(PathologicalHypoKalaemia,is,Class).
+predicate(PathologicalHypoKalaemia,EquivalentTo,LoweredSerumPotassiumConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalHypoKalaemia,SubClassOf,LoweredSerumPotassiumConcentration).
+predicate(PathologicalIncreasedThyroidSecretion,is,Class).
+predicate(PathologicalIncreasedThyroidSecretion,EquivalentTo,IncreasedThyroidSecretion and (hasPathologicalStatus some pathological)).
+predicate(PathologicalIncreasedThyroidSecretion,SubClassOf,IncreasedThyroidSecretion).
+predicate(PathologicalLowSerumAcidConcentration,is,Class).
+predicate(PathologicalLowSerumAcidConcentration,EquivalentTo,LowSerumAcidConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalLowSerumAcidConcentration,SubClassOf,LowSerumAcidConcentration).
+predicate(PathologicalLowSerumBaseConcentration,is,Class).
+predicate(PathologicalLowSerumBaseConcentration,EquivalentTo,LowSerumBaseConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalLowSerumBaseConcentration,SubClassOf,LowSerumBaseConcentration).
+predicate(PathologicalLowUrineKetoneConcentration,is,Class).
+predicate(PathologicalLowUrineKetoneConcentration,EquivalentTo,LowUrineKetoneConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalLowUrineKetoneConcentration,SubClassOf,LowUrineKetoneConcentration).
+predicate(PathologicalPhenomenon,is,Class).
+predicate(PathologicalPhenomenon,EquivalentTo,Phenomenon and (hasPathologicalStatus some pathological)).
+predicate(PathologicalPhenomenon,SubClassOf,Phenomenon,).
+predicate(PathologicalPhenomenon,SubClassOf,RheumaticDiseaseOfHeartValve,).
+predicate(PathologicalPhenomenon,SubClassOf,hasAbnormalityStatus some nonNormal).
+predicate(PathologicalRaisedSerumAcidConcentration,is,Class).
+predicate(PathologicalRaisedSerumAcidConcentration,EquivalentTo,RaisedSerumAcidConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalRaisedSerumAcidConcentration,SubClassOf,RaisedSerumAcidConcentration).
+predicate(PathologicalRaisedSerumBaseConcentration,is,Class).
+predicate(PathologicalRaisedSerumBaseConcentration,EquivalentTo,RaisedSerumBaseConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalRaisedSerumBaseConcentration,SubClassOf,RaisedSerumBaseConcentration).
+predicate(PathologicalRaisedSerumFructosamineConcentration,is,Class).
+predicate(PathologicalRaisedSerumFructosamineConcentration,EquivalentTo,RaisedSerumFructosamineConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalRaisedSerumFructosamineConcentration,SubClassOf,RaisedSerumFructosamineConcentration).
+predicate(PathologicalRaisedSerumKetoneConcentration,is,Class).
+predicate(PathologicalRaisedSerumKetoneConcentration,EquivalentTo,RaisedSerumKetoneConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalRaisedSerumKetoneConcentration,SubClassOf,RaisedSerumKetoneConcentration).
+predicate(PathologicalRaisedSerumLacticAcidConcentration,is,Class).
+predicate(PathologicalRaisedSerumLacticAcidConcentration,EquivalentTo,RaisedSerumLacticAcidConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalRaisedSerumLacticAcidConcentration,SubClassOf,RaisedSerumLacticAcidConcentration).
+predicate(PathologicalRaisedSerumLipidConcentration,is,Class).
+predicate(PathologicalRaisedSerumLipidConcentration,EquivalentTo,RaisedSerumLipidConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalRaisedSerumLipidConcentration,SubClassOf,RaisedSerumLipidConcentration).
+predicate(PathologicalRaisedUrineKetoneConcentration,is,Class).
+predicate(PathologicalRaisedUrineKetoneConcentration,EquivalentTo,RaisedUrineKetoneConcentration and (hasPathologicalStatus some pathological)).
+predicate(PathologicalRaisedUrineKetoneConcentration,SubClassOf,RaisedUrineKetoneConcentration).
+predicate(PathologyInvolvingInfection,is,Class).
+predicate(PathologyInvolvingInfection,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfArticularCartilage,is,Class).
+predicate(PathologyOfArticularCartilage,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfBone,is,Class).
+predicate(PathologyOfBone,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfExternalGenitalia,is,Class).
+predicate(PathologyOfExternalGenitalia,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfFoot,is,Class).
+predicate(PathologyOfFoot,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfInfectiveAetiology,is,Class).
+predicate(PathologyOfInfectiveAetiology,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfJointMovement,is,Class).
+predicate(PathologyOfJointMovement,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfMuscle,is,Class).
+predicate(PathologyOfMuscle,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfPartOfHeart,is,Class).
+predicate(PathologyOfPartOfHeart,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfPleura,is,Class).
+predicate(PathologyOfPleura,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfSpine,is,Class).
+predicate(PathologyOfSpine,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfSynovium,is,Class).
+predicate(PathologyOfSynovium,SubClassOf,PathologicalPhenomenon).
+predicate(PathologyOfTractFromEsophagusToDuodenum,is,Class).
+predicate(PathologyOfTractFromEsophagusToDuodenum,SubClassOf,PathologicalPhenomenon).
+predicate(PatientNonGeneticRelativeRole,is,Class).
+predicate(PatientNonGeneticRelativeRole,SubClassOf,PatientRelativeRole).
+predicate(PatientOrganisation,is,Class).
+predicate(PatientOrganisation,SubClassOf,SocialOrganisation).
+predicate(PatientRelativeRole,is,Class).
+predicate(PenilePathology,is,Class).
+predicate(PenilePathology,SubClassOf,PathologicalPhenomenon).
+predicate(PerceptualDisturbances,is,Class).
+predicate(PerceptualDisturbances,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(PercussiveResonance,is,Class).
+predicate(PercussiveResonance,SubClassOf,Morphology).
+predicate(PericardialDisease,is,Class).
+predicate(PericardialDisease,SubClassOf,PathologicalPhenomenon).
+predicate(PerimenopausalPeriod,is,Class).
+predicate(PerimenopausalPeriod,EquivalentTo,Midlife and (occursDuring some MenopauseProcess)).
+predicate(PerimenopausalPeriod,SubClassOf,Midlife).
+predicate(PerinatalDisorder,is,Class).
+predicate(PerinatalDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(PeriodDuringPregnancy,is,Class).
+predicate(PeripheralArterialDisease,is,Class).
+predicate(PeripheralArterialDisease,SubClassOf,PathologicalPhenomenon).
+predicate(PeripheralBloodVessel,is,Class).
+predicate(PeripheralNeuropathy,is,Class).
+predicate(PeripheralNeuropathy,SubClassOf,PathologicalPhenomenon).
+predicate(PeripheralPerfusion,is,Class).
+predicate(PeripheralPerfusion,EquivalentTo,VascularPerfusion and (isSpecificFunctionOf some PeripheralBloodVessel)).
+predicate(PeripheralPerfusion,SubClassOf,VascularPerfusion).
+predicate(PeripheralRetinalAtrophy,is,Class).
+predicate(PeripheralRetinalAtrophy,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(PeripheralVascularDisorder,is,Class).
+predicate(PeripheralVascularDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(Permanence,is,Class).
+predicate(Permanence,DisjointWith,hasAbsoluteState some permanent).
+predicate(PermanentCentralNeuropathy,is,Class).
+predicate(PermanentCentralNeuropathy,EquivalentTo,CentralNeuropathy and (hasPermanence some).
+predicate(PermanentCentralNeuropathy,EquivalentTo,(Permanence and (hasAbsoluteState some permanent)))).
+predicate(PermanentCentralNeuropathy,SubClassOf,CentralNeuropathy).
+predicate(PharyngealPathology,is,Class).
+predicate(PharyngealPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Phenomenon,is,Class).
+predicate(Phenomenon,SubClassOf,DomainCategory).
+predicate(PhenomenonInvolvingDevice,is,Class).
+predicate(PhenomenonInvolvingDevice,EquivalentTo,Phenomenon and (LocativeAttribute some Device)).
+predicate(PhenomenonInvolvingDevice,SubClassOf,Phenomenon).
+predicate(PhenotypicalSex,is,Class).
+predicate(Phobia,is,Class).
+predicate(PhysicalPresentation,is,Class).
+predicate(PhysicalPresentation,SubClassOf,Morphology).
+predicate(PhysiologicalHeartSound,is,Class).
+predicate(PhysiologicalHeartSound,EquivalentTo,HeartSound and (hasPathologicalStatus some physiological)).
+predicate(PhysiologicalHeartSound,SubClassOf,HeartSound).
+predicate(PhysiologicalTimePeriod,is,Class).
+predicate(PhysiologicalTimePeriod,SubClassOf,TimePeriod).
+predicate(PituitaryPathology,is,Class).
+predicate(PituitaryPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Plasma,is,Class).
+predicate(Plasmalogen,is,Class).
+predicate(Plasmalogen,SubClassOf,Glycerophospholipid).
+predicate(PlateletDisorder,is,Class).
+predicate(PlateletDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(PleuralMembrane,is,Class).
+predicate(PleuralPain,is,Class).
+predicate(PleuralPain,EquivalentTo,Soreness and (actsSpecificallyOn some).
+predicate(PleuralPain,EquivalentTo,(PainSignal and (isConsequenceOf some).
+predicate(PleuralPain,EquivalentTo,(NerveConduction and (hasUniqueAssociatedDisplacement some).
+predicate(PleuralPain,EquivalentTo,(Displacement and (isDisplacementFrom some PleuralMembrane)))))))).
+predicate(PleuralPain,SubClassOf,Soreness).
+predicate(Pneumoconiosis,is,Class).
+predicate(Pneumoconiosis,SubClassOf,PathologicalPhenomenon).
+predicate(PoisoningProcess,is,Class).
+predicate(PolymyxinB,is,Class).
+predicate(PolymyxinBSulphate,is,Class).
+predicate(PolymyxinBSulphate,SubClassOf,PolymyxinB).
+predicate(PorphobilinogenSynthase,is,Class).
+predicate(PosteriorCordOfBrachialPlexus,is,Class).
+predicate(PosteriorIntercostalArtery,is,Class).
+predicate(PosteriorIntercostalVein,is,Class).
+predicate(PosteriorLobeOfPituitaryGland,is,Class).
+predicate(PosteriorSynechiae,is,Class).
+predicate(PosteriorSynechiae,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(PostmenopausalOsteoporosis,is,Class).
+predicate(PostmenopausalOsteoporosis,EquivalentTo,Osteoporosis and (follows some MenopauseProcess)).
+predicate(PostmenopausalOsteoporosis,SubClassOf,Osteoporosis).
+predicate(PostmenopausalPeriod,is,Class).
+predicate(PostmenopausalPeriod,EquivalentTo,Midlife and (follows some MenopauseProcess)).
+predicate(PostmenopausalPeriod,SubClassOf,Midlife).
+predicate(PostmyocardialInfarctionSyndrome,is,Class).
+predicate(PostmyocardialInfarctionSyndrome,SubClassOf,PathologicalPhenomenon).
+predicate(PostvalvulotomySyndrome,is,Class).
+predicate(PostvalvulotomySyndrome,EquivalentTo,IneffectiveCardiacFunction and (isSpecificConsequenceOf some).
+predicate(PostvalvulotomySyndrome,EquivalentTo,(CardiacValvotomy and (playsClinicalRole some SurgicalRole)))).
+predicate(PostvalvulotomySyndrome,SubClassOf,IneffectiveCardiacFunction).
+predicate(Potato,is,Class).
+predicate(Potato,SubClassOf,Vegetable).
+predicate(PotentialCavity,is,Class).
+predicate(PrecordialPain,is,Class).
+predicate(PrecordialPain,EquivalentTo,ExternalStimulusSensation and (actsOn some).
+predicate(PrecordialPain,EquivalentTo,(PainSignal and (isConsequenceOf some).
+predicate(PrecordialPain,EquivalentTo,(NerveConduction and (hasUniqueAssociatedDisplacement some).
+predicate(PrecordialPain,EquivalentTo,(Displacement and (isDisplacementFrom some Precordium)))))))).
+predicate(PrecordialPain,SubClassOf,ExternalStimulusSensation).
+predicate(Precordium,is,Class).
+predicate(Pregnancy,is,Class).
+predicate(PregnancyInducedCardiacDisease,is,Class).
+predicate(PregnancyInducedCardiacDisease,EquivalentTo,CardiacPathology and (isConsequenceOf some Pregnancy)).
+predicate(PregnancyInducedCardiacDisease,SubClassOf,CardiacPathology).
+predicate(PremenopausalPeriod,is,Class).
+predicate(PremenopausalPeriod,EquivalentTo,Midlife and (isFollowedBy some MenopauseProcess)).
+predicate(PremenopausalPeriod,SubClassOf,Midlife).
+predicate(PressureUnit,is,Class).
+predicate(PreviousPersonalHistory,is,Class).
+predicate(ProliferativeRetinopathy,is,Class).
+predicate(ProliferativeRetinopathy,SubClassOf,Retinopathy).
+predicate(ProstaticPathology,is,Class).
+predicate(ProstaticPathology,SubClassOf,PathologicalPhenomenon).
+predicate(PsychologicalDisorder,is,Class).
+predicate(PsychologicalDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(PublicHealth,is,Class).
+predicate(PulmonaryHeartDisease,is,Class).
+predicate(PulmonaryHeartDisease,EquivalentTo,CardiacPathology and (isConsequenceOf some).
+predicate(PulmonaryHeartDisease,EquivalentTo,(PathologicalPhenomenon and (LocativeAttribute some Lung)))).
+predicate(PulmonaryHeartDisease,SubClassOf,CardiacPathology).
+predicate(PulmonaryToxicity,is,Class).
+predicate(PulmonaryToxicity,EquivalentTo,LungPathology and (isConsequenceOf some PoisoningProcess)).
+predicate(PulmonaryToxicity,SubClassOf,LungPathology).
+predicate(PulmonaryValveDisorder,is,Class).
+predicate(PulmonaryValveDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(PupilDilatation,is,Class).
+predicate(PupilDilatation,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(PupillaryBlock,is,Class).
+predicate(PupillaryBlock,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(Pus,is,Class).
+predicate(QuadratusPlantaeMuscle,is,Class).
+predicate(RaisedSerumAcidConcentration,is,Class).
+predicate(RaisedSerumBaseConcentration,is,Class).
+predicate(RaisedSerumFructosamineConcentration,is,Class).
+predicate(RaisedSerumKetoneConcentration,is,Class).
+predicate(RaisedSerumLacticAcidConcentration,is,Class).
+predicate(RaisedSerumLipidConcentration,is,Class).
+predicate(RaisedUrineKetoneConcentration,is,Class).
+predicate(RaynaudPhenomenon,is,Class).
+predicate(RecentCerebrovascularAccident,is,Class).
+predicate(RecentCerebrovascularAccident,SubClassOf,PermanentCentralNeuropathy).
+predicate(RedGreenColourBlindness,is,Class).
+predicate(RedGreenColourBlindness,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(Removing,is,Class).
+predicate(RenalAnaemia,is,Class).
+predicate(RenalAnaemia,SubClassOf,NAMEDRenalDisease).
+predicate(RenalDamage,is,Class).
+predicate(RenalDamage,SubClassOf,NAMEDRenalDisease).
+predicate(RenalPathology,is,Class).
+predicate(RenalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(RenalSurveillance,is,Class).
+predicate(RenalSurveillance,SubClassOf,NAMEDRenalDisease).
+predicate(RenalTubularAcidosis,is,Class).
+predicate(RenalTubularAcidosis,SubClassOf,NAMEDRenalDisease).
+predicate(RenovascularPathology,is,Class).
+predicate(RenovascularPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ReproductiveDisorder,is,Class).
+predicate(ReproductiveDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(ReproductivePathology,is,Class).
+predicate(ReproductivePathology,SubClassOf,PathologicalPhenomenon).
+predicate(ReproductiveProcess,is,Class).
+predicate(ReproductiveSystem,is,Class).
+predicate(ReproductiveSystemPhenomenon,is,Class).
+predicate(ReproductiveSystemPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some ReproductiveSystem)).
+predicate(ReproductiveSystemPhenomenon,SubClassOf,Phenomenon).
+predicate(RespiratoryDisease,is,Class).
+predicate(RespiratoryDisease,SubClassOf,PathologicalPhenomenon).
+predicate(RespiratorySystem,is,Class).
+predicate(RespiratorySystemPhenomenon,is,Class).
+predicate(RespiratorySystemPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some RespiratorySystem)).
+predicate(RespiratorySystemPhenomenon,SubClassOf,Phenomenon).
+predicate(RetinalDetachmentInAIDSPatientsWithRetinitis,is,Class).
+predicate(RetinalDetachmentInAIDSPatientsWithRetinitis,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(RetinalDisorder,is,Class).
+predicate(RetinalDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(Retinopathy,is,Class).
+predicate(Retinopathy,SubClassOf,PathologicalPhenomenon).
+predicate(Reversibility,is,Class).
+predicate(RheumaticDiseaseOfAorticValve,is,Class).
+predicate(RheumaticDiseaseOfAorticValve,SubClassOf,PathologicalPhenomenon).
+predicate(RheumaticDiseaseOfHeartValve,is,Class).
+predicate(RheumaticDiseaseOfHeartValve,EquivalentTo,HeartValveDisorder and (isConsequenceOf some RheumaticFever)).
+predicate(RheumaticDiseaseOfHeartValve,SubClassOf,HeartValveDisorder).
+predicate(RheumaticDiseaseOfMitralValve,is,Class).
+predicate(RheumaticDiseaseOfMitralValve,SubClassOf,PathologicalPhenomenon).
+predicate(RheumaticDiseaseOfPulmonaryValve,is,Class).
+predicate(RheumaticDiseaseOfPulmonaryValve,SubClassOf,PathologicalPhenomenon).
+predicate(RheumaticDiseaseOfTricuspidValve,is,Class).
+predicate(RheumaticDiseaseOfTricuspidValve,SubClassOf,PathologicalPhenomenon).
+predicate(RheumaticFever,is,Class).
+predicate(RheumaticHeartDisease,is,Class).
+predicate(RheumaticHeartDisease,EquivalentTo,CardiacPathology and (isConsequenceOf some RheumaticFever)).
+predicate(RheumaticHeartDisease,SubClassOf,CardiacPathology).
+predicate(RheumaticMitralValveAndAorticValveDisease,is,Class).
+predicate(RheumaticMitralValveAndAorticValveDisease,SubClassOf,PathologicalPhenomenon).
+predicate(Rigidity,is,Class).
+predicate(Rigidity,SubClassOf,Morphology).
+predicate(RiskOfPhenomenon,is,Class).
+predicate(RiskOfPhenomenon,EquivalentTo,Risking and (hasConsequence some Phenomenon)).
+predicate(RiskOfPhenomenon,SubClassOf,Risking).
+predicate(Risking,is,Class).
+predicate(Salivation,is,Class).
+predicate(Salmon,is,Class).
+predicate(SartoriusMuscle,is,Class).
+predicate(SartoriusMuscle,DisjointWith,Sialorrhea).
+predicate(ScheieSyndrome,is,Class).
+predicate(ScrotalPathology,is,Class).
+predicate(ScrotalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Secretion,is,Class).
+predicate(SensorySystemPathology,is,Class).
+predicate(SensorySystemPathology,SubClassOf,PathologicalPhenomenon).
+predicate(SepticCondition,is,Class).
+predicate(SepticCondition,SubClassOf,PathologicalPhenomenon).
+predicate(Sharpness,is,Class).
+predicate(Sharpness,SubClassOf,Morphology).
+predicate(Sialorrhea,is,Class).
+predicate(Sialorrhea,EquivalentTo,Salivation and (hasPathologicalStatus some pathological) and (hasProcessActivity some highActivityLevel)).
+predicate(Sialorrhea,SubClassOf,Salivation).
+predicate(Sialorrhea,DisjointWith,SartoriusMuscle).
+predicate(Signal,is,Class).
+predicate(SignalMorphology,is,Class).
+predicate(SignalMorphology,SubClassOf,Morphology).
+predicate(SinusVenosusDefect,is,Class).
+predicate(SinusVenosusDefect,SubClassOf,PathologicalPhenomenon).
+predicate(SkeletalPathology,is,Class).
+predicate(SkeletalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(SkinHypersensitivityReaction,is,Class).
+predicate(SkinHypersensitivityReaction,SubClassOf,PathologicalPhenomenon).
+predicate(SkinOfPlantarRegionOfFoot,is,Class).
+predicate(SkinPathology,is,Class).
+predicate(SkinPathology,SubClassOf,PathologicalPhenomenon).
+predicate(SleepDisorder,is,Class).
+predicate(SleepDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(SleepDisturbance,is,Class).
+predicate(SleepDisturbance,SubClassOf,NonNormalPhenomenon).
+predicate(SocialOrganisation,is,Class).
+predicate(SocialPhobia,is,Class).
+predicate(SocialPhobia,SubClassOf,Phobia).
+predicate(SoftTissueInjury,is,Class).
+predicate(SoftTissueInjury,SubClassOf,PathologicalPhenomenon).
+predicate(SoleusMuscle,is,Class).
+predicate(Somatostatin,is,Class).
+predicate(Soreness,is,Class).
+predicate(Spacing,is,Class).
+predicate(Spacing,SubClassOf,Morphology).
+predicate(SpecificImmunoglobulin,is,Class).
+predicate(SpecificImmunoglobulin,SubClassOf,NAMEDImmuneDiseaseProcess).
+predicate(SpinalPathology,is,Class).
+predicate(SpinalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Spore,is,Class).
+predicate(SquintConcomitance,is,Class).
+predicate(SquintConcomitance,SubClassOf,Morphology).
+predicate(StructuralExtent,is,Class).
+predicate(StructuralExtent,SubClassOf,Morphology).
+predicate(StructuralFeature,is,Class).
+predicate(Substance,is,Class).
+predicate(SurgicalRole,is,Class).
+predicate(SymptomRole,is,Class).
+predicate(SystemicHypertension,is,Class).
+predicate(SystemicLupusErythematosusLikeSyndrome,is,Class).
+predicate(SystemicLupusErythematosusLikeSyndrome,SubClassOf,NAMEDImmuneDiseaseProcess).
+predicate(T3root,is,Class).
+predicate(Talpidae,is,Class).
+predicate(Talpidae,SubClassOf,Insectivora).
+predicate(TearDeficiency,is,Class).
+predicate(TearDeficiency,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(TendonInjury,is,Class).
+predicate(TendonInjury,SubClassOf,PathologicalPhenomenon).
+predicate(TendonPathology,is,Class).
+predicate(TendonPathology,SubClassOf,PathologicalPhenomenon).
+predicate(TesticularPathology,is,Class).
+predicate(TesticularPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ThelarcheProcess,is,Class).
+predicate(ThirdLumbricalOfHand,is,Class).
+predicate(ThoracicCavity,is,Class).
+predicate(ThoracicDermatome,is,Class).
+predicate(ThoracicDermatome,EquivalentTo,Dermatome and (IsDivisionOf some Thorax)).
+predicate(ThoracicDermatome,SubClassOf,Dermatome).
+predicate(ThoracicNerveRoot,is,Class).
+predicate(ThoracicPathology,is,Class).
+predicate(ThoracicPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Thoracoscopy,is,Class).
+predicate(Thoracoscopy,EquivalentTo,NonDirectInspecting and (actsSpecificallyOn some ThoracicCavity) and (hasSpecificPhysicalMeans some Endoscope)).
+predicate(Thoracoscopy,SubClassOf,NonDirectInspecting).
+predicate(Thoracoscopy,DisjointWith,NonDirectInspecting and (actsSpecificallyOn some ThoracicCavity) and (hasSpecificPhysicalMeans some Endoscope)).
+predicate(Thorax,is,Class).
+predicate(ThromboembolicDisease,is,Class).
+predicate(ThromboembolicDisease,SubClassOf,PathologicalPhenomenon).
+predicate(ThromboticEvent,is,Class).
+predicate(ThromboticEvent,SubClassOf,PathologicalPhenomenon).
+predicate(ThyoglossalTractPathology,is,Class).
+predicate(ThyoglossalTractPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Thyrocalcitonin,is,Class).
+predicate(ThyroidPathology,is,Class).
+predicate(ThyroidPathology,SubClassOf,PathologicalPhenomenon).
+predicate(TibialisPosterior,is,Class).
+predicate(TimePeriod,is,Class).
+predicate(TimePeriodDuringCardiacCycle,is,Class).
+predicate(TimePeriodDuringCardiacCycle,SubClassOf,PhysiologicalTimePeriod).
+predicate(TobaccoAmbylopia,is,Class).
+predicate(TobaccoAmbylopia,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(TonsillarPathology,is,Class).
+predicate(TonsillarPathology,SubClassOf,PathologicalPhenomenon).
+predicate(TopCategory,is,Class).
+predicate(Toughness,is,Class).
+predicate(Toughness,SubClassOf,Morphology).
+predicate(TrachealPathology,is,Class).
+predicate(TrachealPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Trachoma,is,Class).
+predicate(Trachoma,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(TransducingProcess,is,Class).
+predicate(TransientCentralNeuropathy,is,Class).
+predicate(TransientCentralNeuropathy,EquivalentTo,CentralNeuropathy and (hasDuration some).
+predicate(TransientCentralNeuropathy,EquivalentTo,(Duration and (hasAbsoluteState some transient)))).
+predicate(TransientCentralNeuropathy,SubClassOf,CentralNeuropathy).
+predicate(TransientIschaemicAttack,is,Class).
+predicate(TransientIschaemicAttack,SubClassOf,TransientCentralNeuropathy).
+predicate(TricuspidValveDisorder,is,Class).
+predicate(TricuspidValveDisorder,SubClassOf,PathologicalPhenomenon).
+predicate(UVB,is,Class).
+predicate(UVB,SubClassOf,UltraVioletRadiation).
+predicate(UltraVioletRadiation,is,Class).
+predicate(UndiagnosedRedEye,is,Class).
+predicate(UndiagnosedRedEye,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(UnstableHeartDisase,is,Class).
+predicate(UnstableHeartDisase,EquivalentTo,CardiacPathology and (hasSeverity some UnstableSeverity)).
+predicate(UnstableHeartDisase,SubClassOf,CardiacPathology).
+predicate(UnstableSeverity,is,Class).
+predicate(UnstableTearFilm,is,Class).
+predicate(UnstableTearFilm,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(UpperGastrointestinalTractPathology,is,Class).
+predicate(UpperGastrointestinalTractPathology,SubClassOf,PathologicalPhenomenon).
+predicate(UpperRespiratoryTractPathology,is,Class).
+predicate(UpperRespiratoryTractPathology,SubClassOf,PathologicalPhenomenon).
+predicate(UpperUrinaryTractPathology,is,Class).
+predicate(UpperUrinaryTractPathology,SubClassOf,PathologicalPhenomenon).
+predicate(UretericPathology,is,Class).
+predicate(UretericPathology,SubClassOf,PathologicalPhenomenon).
+predicate(UrethralPathology,is,Class).
+predicate(UrethralPathology,SubClassOf,PathologicalPhenomenon).
+predicate(UrinaryBladderPathology,is,Class).
+predicate(UrinaryBladderPathology,SubClassOf,PathologicalPhenomenon).
+predicate(UrinaryTractPathology,is,Class).
+predicate(UrinaryTractPathology,SubClassOf,PathologicalPhenomenon).
+predicate(UterinePathology,is,Class).
+predicate(UterinePathology,SubClassOf,PathologicalPhenomenon).
+predicate(Uterus,is,Class).
+predicate(Vagina,is,Class).
+predicate(VaginalPathology,is,Class).
+predicate(VaginalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(ValvulaVenosa,is,Class).
+predicate(ValvulaVenosa,SubClassOf,NAMEDValve,).
+predicate(ValvulaVenosa,SubClassOf,isSpecificStructuralComponentOf some Vein).
+predicate(VascularPathology,is,Class).
+predicate(VascularPathology,SubClassOf,PathologicalPhenomenon).
+predicate(VascularPerfusion,is,Class).
+predicate(VascularPhenomenon,is,Class).
+predicate(VascularPhenomenon,EquivalentTo,Phenomenon and (LocativeAttribute some BloodVessel)).
+predicate(VascularPhenomenon,SubClassOf,Phenomenon).
+predicate(VascularPulseVolume,is,Class).
+predicate(VascularPulseVolume,SubClassOf,Morphology).
+predicate(Vegetable,is,Class).
+predicate(Vein,is,Class).
+predicate(VenousBlood,is,Class).
+predicate(VenousLeak,is,Class).
+predicate(VenousLeak,SubClassOf,NAMEDCardiovascularSystemDiseaseProcess).
+predicate(VenousPathology,is,Class).
+predicate(VenousPathology,SubClassOf,PathologicalPhenomenon).
+predicate(VenousPlasma,is,Class).
+predicate(VenousPlasma,EquivalentTo,Plasma and (makesUp some VenousBlood)).
+predicate(VenousPlasma,SubClassOf,Plasma).
+predicate(VisualDisturbances,is,Class).
+predicate(VisualDisturbances,SubClassOf,NAMEDEyeDiseaseProcess).
+predicate(VisualFieldDefect,is,Class).
+predicate(VisualFieldDefect,SubClassOf,PathologicalPhenomenon).
+predicate(VisualProblem,is,Class).
+predicate(VisualProblem,SubClassOf,PathologicalPhenomenon).
+predicate(VitaminRole,is,Class).
+predicate(VulvalPathology,is,Class).
+predicate(VulvalPathology,SubClassOf,PathologicalPhenomenon).
+predicate(WithdrawalSyndrome,is,Class).
+predicate(XLinkedDominantInheritedPathology,is,Class).
+predicate(XLinkedDominantInheritedPathology,SubClassOf,PathologicalPhenomenon).
+predicate(Ziehl-NeelsenStaining,is,Class).
+predicate(absence,is,Class).
+predicate(absoluteContraindication,is,Class).
+predicate(acute,is,Class).
+predicate(cysticCellMorphology,is,Class).
+predicate(cysticCellMorphology,SubClassOf,CellMorphologyState).
+predicate(diffuseDistribution,is,Class).
+predicate(effective,is,Class).
+predicate(highActivityLevel,is,Class).
+predicate(ineffective,is,Class).
+predicate(irreversible,is,Class).
+predicate(lowActivityLevel,is,Class).
+predicate(maleSex,is,Class).
+predicate(medialSelection,is,Class).
+predicate(mmHg,is,Class).
+predicate(mmHg,SubClassOf,PressureUnit).
+predicate(moreThanOneThousand,is,Class).
+predicate(moreThanOneThousand,SubClassOf,moreThanTwoHundred).
+predicate(moreThanTwoHundred,is,Class).
+predicate(nanometres,is,Class).
+predicate(nanometres,SubClassOf,LengthUnit).
+predicate(nonDominant,is,Class).
+predicate(nonNormal,is,Class).
+predicate(normal,is,Class).
+predicate(paradoxicalStatus,is,Class).
+predicate(patchyDiffuseDistribution,is,Class).
+predicate(patchyDiffuseDistribution,SubClassOf,diffuseDistribution).
+predicate(pathological,is,Class).
+predicate(permanent,is,Class).
+predicate(physiological,is,Class).
+predicate(presence,is,Class).
+predicate(staggering,is,Class).
+predicate(transient,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

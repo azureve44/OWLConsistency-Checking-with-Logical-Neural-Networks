@@ -1,0 +1,194 @@
+is(anyURI,Datatype):1.0
+is(decimal,Datatype):1.0
+is(float,Datatype):1.0
+is(string,Datatype):1.0
+is(TemporalUnit,Datatype):1.0
+is(hasMaxDuration,ObjectProperty):1.0
+Domain(hasMaxDuration,Progress):1.0
+Range(hasMaxDuration,Duration):1.0
+is(hasMinDuration,ObjectProperty):1.0
+Domain(hasMinDuration,Progress):1.0
+Range(hasMinDuration,Duration):1.0
+is(hasPace,ObjectProperty):1.0
+Characteristics(hasPace,Functional):1.0
+Domain(hasPace,Progress):1.0
+Range(hasPace,Pace):1.0
+is(hasProvider,ObjectProperty):1.0
+Domain(hasProvider,Source):1.0
+Range(hasProvider,Provider):1.0
+is(hasSctConcept,ObjectProperty):1.0
+Characteristics(hasSctConcept,Functional):1.0
+Domain(hasSctConcept,HealthEvolutionStatement):1.0
+is(hasSctSourceConcept,ObjectProperty):1.0
+Characteristics(hasSctSourceConcept,Functional):1.0
+Domain(hasSctSourceConcept,RuleExecution):1.0
+is(hasSctTargetConcept,ObjectProperty):1.0
+Characteristics(hasSctTargetConcept,Functional):1.0
+Domain(hasSctTargetConcept,RuleExecution):1.0
+is(Used,ObjectProperty):1.0
+is(wasDerivedFrom,ObjectProperty):1.0
+is(wasGeneratedBy,ObjectProperty):1.0
+is(agreementValue,DataProperty):1.0
+Domain(agreementValue,UserStudy):1.0
+Range(agreementValue,float):1.0
+is(confidenceValue,DataProperty):1.0
+Domain(confidenceValue,KnedgeExtraction):1.0
+Range(confidenceValue,float):1.0
+is(provider,DataProperty):1.0
+Domain(provider,Provider):1.0
+Range(provider,string):1.0
+is(ruleSyntax,DataProperty):1.0
+Range(ruleSyntax,string):1.0
+is(sentence,DataProperty):1.0
+Domain(sentence,Source):1.0
+Range(sentence,string):1.0
+is(supportValue,DataProperty):1.0
+Domain(supportValue,KnedgeExtraction):1.0
+Range(supportValue,float):1.0
+is(url,DataProperty):1.0
+Domain(url,Source):1.0
+Range(url,string):1.0
+Range(url,anyURI):1.0
+is(numericDuration,DataProperty):1.0
+Domain(numericDuration,Duration):1.0
+Range(numericDuration,decimal):1.0
+is(unitType,DataProperty):1.0
+Domain(unitType,Duration):1.0
+Range(unitType,TemporalUnit):1.0
+is(Decline,Class):1.0
+SubClassOf(Decline,Progress):1.0
+is(HealthEvolutionStatement,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,wasDerivedFrom min 1 Source,):1.0
+is(Thing,,wasGeneratedBy min 1 Activity,):1.0
+is(Thing,,hasSctConcept exactly 1):1.0
+DisjointUnionOf(Thing,,Decline, Improvement, Permanent, Unaffected):1.0
+is(Improvement,Class):1.0
+SubClassOf(Improvement,Progress):1.0
+is(KnedgeExtraction,Class):1.0
+SubClassOf(KnedgeExtraction,Activity):1.0
+is(Pace,Class):1.0
+EquivalentTo(Pace,{FAST , MODERATE , SLOW}):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,SLOW}):1.0
+DisjointWith(Thing,MODERATE):1.0
+DisjointWith(Thing,{FAST):1.0
+is(Permanent,Class):1.0
+SubClassOf(Permanent,HealthEvolutionStatement):1.0
+is(Progress,Class):1.0
+SubClassOf(Progress,HealthEvolutionStatement,):1.0
+SubClassOf(Progress,hasMaxDuration exactly 1 Duration,):1.0
+SubClassOf(Progress,hasMinDuration exactly 1 Duration,):1.0
+SubClassOf(Progress,hasPace exactly 1 Pace):1.0
+DisjointUnionOf(Progress,Decline, Improvement):1.0
+is(Provider,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(RuleExecution,Class):1.0
+SubClassOf(RuleExecution,Activity,):1.0
+SubClassOf(RuleExecution,hasSctSourceConcept exactly 1 ,):1.0
+SubClassOf(RuleExecution,hasSctTargetConcept exactly 1):1.0
+is(Source,Class):1.0
+SubClassOf(Source,Entity,):1.0
+SubClassOf(Source,hasProvider min 0 Provider):1.0
+is(Unaffected,Class):1.0
+SubClassOf(Unaffected,HealthEvolutionStatement):1.0
+is(UserStudy,Class):1.0
+SubClassOf(UserStudy,Activity):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+SubClassOf(www.w3.org/2002/07/#,Source):1.0
+is(Duration,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Activity,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Entity,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(499920d4bf9dbf0e94bb98bc45f6c23c,Individual):1.0
+Types(499920d4bf9dbf0e94bb98bc45f6c23c,HealthEvolutionStatement,):1.0
+Types(499920d4bf9dbf0e94bb98bc45f6c23c,Improvement):1.0
+hasMaxDuration(499920d4bf9dbf0e94bb98bc45f6c23c,MONTH,):1.0
+hasMinDuration(499920d4bf9dbf0e94bb98bc45f6c23c,DAY,):1.0
+hasPace(499920d4bf9dbf0e94bb98bc45f6c23c,MODERATE,):1.0
+hasSctConcept(499920d4bf9dbf0e94bb98bc45f6c23c,703470001,):1.0
+wasDerivedFrom(499920d4bf9dbf0e94bb98bc45f6c23c,NHS/8daaf6ba6cb08ec7075bd38702e31a59,):1.0
+wasGeneratedBy(499920d4bf9dbf0e94bb98bc45f6c23c,activity/rule/499920d4bf9dbf0e94bb98bc45f6c23c):1.0
+is(6dd2e0e441573dbc4c49017298bea29a,Individual):1.0
+Types(6dd2e0e441573dbc4c49017298bea29a,HealthEvolutionStatement,):1.0
+Types(6dd2e0e441573dbc4c49017298bea29a,Improvement):1.0
+hasMaxDuration(6dd2e0e441573dbc4c49017298bea29a,MONTH,):1.0
+hasMinDuration(6dd2e0e441573dbc4c49017298bea29a,DAY,):1.0
+hasPace(6dd2e0e441573dbc4c49017298bea29a,MODERATE,):1.0
+hasSctConcept(6dd2e0e441573dbc4c49017298bea29a,36971009,):1.0
+wasDerivedFrom(6dd2e0e441573dbc4c49017298bea29a,NHS/7c205d8cb4e8941a83a164c9dacf4a88,):1.0
+wasGeneratedBy(6dd2e0e441573dbc4c49017298bea29a,6dd2e0e441573dbc4c49017298bea29a):1.0
+is(NHS/537fe28c55ff54ad6af0ed5d035d7cb3,Individual):1.0
+Types(NHS/537fe28c55ff54ad6af0ed5d035d7cb3,Source):1.0
+hasProvider(NHS/537fe28c55ff54ad6af0ed5d035d7cb3,NHS,):1.0
+is(//www.nhs.uk/conditions/sinusitis-sinus-infection/",url  "https):1.0
+is(NHS/7c205d8cb4e8941a83a164c9dacf4a88,Individual):1.0
+Types(NHS/7c205d8cb4e8941a83a164c9dacf4a88,Source):1.0
+hasProvider(NHS/7c205d8cb4e8941a83a164c9dacf4a88,NHS,):1.0
+is(//www.nhs.uk/conditions/broken-ankle/",url  "https):1.0
+is(NHS/8daaf6ba6cb08ec7075bd38702e31a59,Individual):1.0
+Types(NHS/8daaf6ba6cb08ec7075bd38702e31a59,Source):1.0
+hasProvider(NHS/8daaf6ba6cb08ec7075bd38702e31a59,NHS):1.0
+is(activity/extraction/6dd2e0e441573dbc4c49017298bea29a,Individual):1.0
+Types(activity/extraction/6dd2e0e441573dbc4c49017298bea29a,KnedgeExtraction,):1.0
+Types(activity/extraction/6dd2e0e441573dbc4c49017298bea29a,Activity):1.0
+Used(activity/extraction/6dd2e0e441573dbc4c49017298bea29a,NHS/537fe28c55ff54ad6af0ed5d035d7cb3,):1.0
+confidenceValue(activity/extraction/6dd2e0e441573dbc4c49017298bea29a,0.0016f,):1.0
+supportValue(activity/extraction/6dd2e0e441573dbc4c49017298bea29a,1.9E-4f):1.0
+is(activity/rule/499920d4bf9dbf0e94bb98bc45f6c23c,Individual):1.0
+Types(activity/rule/499920d4bf9dbf0e94bb98bc45f6c23c,RuleExecution,):1.0
+Types(activity/rule/499920d4bf9dbf0e94bb98bc45f6c23c,Activity):1.0
+hasSctSourceConcept(activity/rule/499920d4bf9dbf0e94bb98bc45f6c23c,36971009,):1.0
+hasSctTargetConcept(activity/rule/499920d4bf9dbf0e94bb98bc45f6c23c,703470001,):1.0
+Used(activity/rule/499920d4bf9dbf0e94bb98bc45f6c23c,NHS/8daaf6ba6cb08ec7075bd38702e31a59,):1.0
+is(([1..1]{363698007|Finding site (attribute)| = <<2095001|Nasal sinus structure (body structure)|,116676008|Associated morphology (attribute)| = 409774005|Inflammatory morphology (morphologic abnormality)|})&limit=7000\" , \"(*),ruleSyntax  "(*)):1.0
+is(16114001,Individual):1.0
+is(36971009,Individual):1.0
+is(64572001,Individual):1.0
+Types(64572001,Unaffected):1.0
+is(65275009,Individual):1.0
+Types(65275009,Improvement):1.0
+hasPace(65275009,FAST):1.0
+is(703470001,Individual):1.0
+is(MONTH,Individual):1.0
+Types(MONTH,Duration):1.0
+numericDuration(MONTH,2.0,):1.0
+is(unitMonth",unitType  "time):1.0
+is(DAY,Individual):1.0
+Types(DAY,Duration):1.0
+numericDuration(DAY,8.0,):1.0
+is(unitDay",unitType  "time):1.0
+is(FAST,Individual):1.0
+Types(FAST,Pace):1.0
+DifferentFrom(FAST,MODERATE,):1.0
+DifferentFrom(FAST,SLOW):1.0
+is(MAYO,Individual):1.0
+Types(MAYO,Provider):1.0
+DifferentFrom(MAYO,NHS):1.0
+is(MODERATE,Individual):1.0
+Types(MODERATE,Pace):1.0
+DifferentFrom(MODERATE,FAST):1.0
+is(NHS,Individual):1.0
+Types(NHS,Provider):1.0
+DifferentFrom(NHS,MAYO):1.0
+is(SLOW,Individual):1.0
+Types(SLOW,Pace):1.0
+DifferentFrom(SLOW,FAST):1.0
+is(ab270431d30ca755300021fdb7af5f5e,Individual):1.0
+Types(ab270431d30ca755300021fdb7af5f5e,HealthEvolutionStatement,):1.0
+Types(ab270431d30ca755300021fdb7af5f5e,Improvement):1.0
+hasMaxDuration(ab270431d30ca755300021fdb7af5f5e,MONTH,):1.0
+hasMinDuration(ab270431d30ca755300021fdb7af5f5e,DAY,):1.0
+hasPace(ab270431d30ca755300021fdb7af5f5e,MODERATE,):1.0
+hasSctConcept(ab270431d30ca755300021fdb7af5f5e,16114001,):1.0
+wasDerivedFrom(ab270431d30ca755300021fdb7af5f5e,NHS/7c205d8cb4e8941a83a164c9dacf4a88,):1.0
+is(ab270431d30ca755300021fdb7af5f5e,wasGeneratedBy  activity/extraction/):1.0
+is(activity/extraction/,Individual):1.0
+Types(activity/extraction/,KnedgeExtraction,):1.0
+Types(activity/extraction/,Activity):1.0
+Used(activity/extraction/,NHS/7c205d8cb4e8941a83a164c9dacf4a88,):1.0
+confidenceValue(activity/extraction/,0.0016f,):1.0
+supportValue(activity/extraction/,1.9E-4f):1.0

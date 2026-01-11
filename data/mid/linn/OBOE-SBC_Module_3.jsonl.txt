@@ -1,0 +1,631 @@
+predicate(decimal,is,Datatype).
+predicate(integer,is,Datatype).
+predicate(hasContextObservation,is,ObjectProperty).
+predicate(hasContextObservation,Characteristics,Functional).
+predicate(hasContextObservation,Domain,Context).
+predicate(hasContextObservation,Range,Observation).
+predicate(hasSourceUnit,is,ObjectProperty).
+predicate(hasSourceUnit,Characteristics,Functional).
+predicate(hasSourceUnit,Domain,UnitConversion).
+predicate(hasSourceUnit,Range,Unit).
+predicate(hasTargetUnit,is,ObjectProperty).
+predicate(hasTargetUnit,Characteristics,Functional).
+predicate(hasTargetUnit,Domain,UnitConversion).
+predicate(hasTargetUnit,Range,Unit).
+predicate(hasValue,is,ObjectProperty).
+predicate(measurementFor,is,ObjectProperty).
+predicate(observationContextFor,is,ObjectProperty).
+predicate(observationContextFor,Characteristics,Functional).
+predicate(observationContextFor,Domain,Context).
+predicate(observationContextFor,Range,Observation).
+predicate(ofCharacteristic,is,ObjectProperty).
+predicate(ofEntity,is,ObjectProperty).
+predicate(standardFor,is,ObjectProperty).
+predicate(usesProtocol,is,ObjectProperty).
+predicate(usesStandard,is,ObjectProperty).
+predicate(hasMultiplier,is,DataProperty).
+predicate(hasMultiplier,Characteristics,Functional).
+predicate(hasMultiplier,Domain,UnitConversion).
+predicate(hasMultiplier,Range,decimal).
+predicate(hasOffset,is,DataProperty).
+predicate(hasOffset,Characteristics,Functional).
+predicate(hasOffset,Domain,UnitConversion).
+predicate(hasOffset,Range,decimal).
+predicate(CarbonNitrogenRatioByAmount,is,Class).
+predicate(CarbonNitrogenRatioByAmount,SubClassOf,Proportion).
+predicate(CarbonNitrogenRatioByMass,is,Class).
+predicate(CarbonNitrogenRatioByMass,SubClassOf,Proportion).
+predicate(DryMass,is,Class).
+predicate(DryMass,SubClassOf,Mass).
+predicate(DryMassPerWetMass,is,Class).
+predicate(DryMassPerWetMass,SubClassOf,MassPerMass).
+predicate(ElectrolyticConductivity_SeaWater,is,Class).
+predicate(ElectrolyticConductivity_SeaWater,EquivalentTo,Measurement and (measurementFor only).
+predicate(ElectrolyticConductivity_SeaWater,EquivalentTo,(Observation and (ofEntity only OceanWaterSensorSample))) and (ofCharacteristic only Conductivity) and (usesProtocol only SeabirdElectronicsCTDProtocols) and (usesStandard only SiemensPerMeter)).
+predicate(ElectrolyticConductivity_SeaWater,SubClassOf,Measurement).
+predicate(FreshWater,is,Class).
+predicate(FreshWater,SubClassOf,Water).
+predicate(FreshWaterDiscreteSample,is,Class).
+predicate(FreshWaterDiscreteSample,SubClassOf,FreshWater).
+predicate(FreshWaterSensorSample,is,Class).
+predicate(FreshWaterSensorSample,SubClassOf,FreshWater).
+predicate(Kelp,is,Class).
+predicate(KelpPercentNitrogen,is,Class).
+predicate(KelpPercentNitrogen,SubClassOf,Measurement).
+predicate(Lake,is,Class).
+predicate(Lake,SubClassOf,OpenWaterBody).
+predicate(LakeWaterDiscreteSample,is,Class).
+predicate(LakeWaterDiscreteSample,SubClassOf,Lake).
+predicate(LakeWaterSensorSample,is,Class).
+predicate(LakeWaterSensorSample,SubClassOf,Lake).
+predicate(Macrocystis,is,Class).
+predicate(Macrocystis,SubClassOf,Kelp).
+predicate(Nereocystis,is,Class).
+predicate(Nereocystis,SubClassOf,Kelp).
+predicate(Ocean,is,Class).
+predicate(Ocean,SubClassOf,OpenWaterBody).
+predicate(OceanWaterDiscreteSample,is,Class).
+predicate(OceanWaterDiscreteSample,SubClassOf,Ocean,).
+predicate(OceanWaterDiscreteSample,SubClassOf,SalineWater).
+predicate(OceanWaterSensorSample,is,Class).
+predicate(OceanWaterSensorSample,SubClassOf,Ocean,).
+predicate(OceanWaterSensorSample,SubClassOf,SalineWater).
+predicate(OpenWaterBody,is,Class).
+predicate(PercentNitrogen,is,Class).
+predicate(PercentNitrogen,SubClassOf,MassPerMass).
+predicate(PrecipitationWaterSample,is,Class).
+predicate(PrecipitationWaterSample,SubClassOf,FreshWaterDiscreteSample).
+predicate(SBCSiteName,is,Class).
+predicate(SBCSiteName,SubClassOf,Name).
+predicate(SBC_StreamWaterDiscreteSample,is,Class).
+predicate(SBC_StreamWaterDiscreteSample,SubClassOf,FreshWaterDiscreteSample).
+predicate(SBC_StreamWaterSensorSample,is,Class).
+predicate(SBC_StreamWaterSensorSample,SubClassOf,FreshWaterSensorSample).
+predicate(SalineWater,is,Class).
+predicate(SalineWater,SubClassOf,Water).
+predicate(Salmonid,is,Class).
+predicate(SeabirdElectronicsCTDProtocols,is,Class).
+predicate(SockeyeSalmon,is,Class).
+predicate(SockeyeSalmon,SubClassOf,Salmonid).
+predicate(TaggedFish,is,Class).
+predicate(TaggedFish,SubClassOf,Name).
+predicate(TaggedKelpFrond,is,Class).
+predicate(TaggedKelpFrond,SubClassOf,Name).
+predicate(Water,is,Class).
+predicate(WetMass,is,Class).
+predicate(WetMass,SubClassOf,Mass).
+predicate(AcellularAnatomicalStructure,is,Class).
+predicate(AcellularAnatomicalStructure,SubClassOf,AnatomicalStructure).
+predicate(AnatomicalCluster,is,Class).
+predicate(AnatomicalCluster,SubClassOf,AnatomicalGroup).
+predicate(AnatomicalGroup,is,Class).
+predicate(AnatomicalGroup,SubClassOf,AnatomicalStructure).
+predicate(AnatomicalStructure,is,Class).
+predicate(AnatomicalSystem,is,Class).
+predicate(AnatomicalSystem,SubClassOf,AnatomicalGroup).
+predicate(CavitatedCompoundOrgan,is,Class).
+predicate(CavitatedCompoundOrgan,SubClassOf,CompoundOrgan).
+predicate(Cell,is,Class).
+predicate(Cell,SubClassOf,AnatomicalStructure).
+predicate(CellComponent,is,Class).
+predicate(CellComponent,SubClassOf,AnatomicalStructure).
+predicate(CompoundOrgan,is,Class).
+predicate(CompoundOrgan,SubClassOf,AnatomicalStructure).
+predicate(ExtraembryonicStructure,is,Class).
+predicate(ExtraembryonicStructure,SubClassOf,AnatomicalStructure).
+predicate(MultiCellularOrganism,is,Class).
+predicate(MultiCellularOrganism,SubClassOf,AnatomicalStructure).
+predicate(OrgansimSubdivision,is,Class).
+predicate(OrgansimSubdivision,SubClassOf,AnatomicalStructure).
+predicate(Otolith,is,Class).
+predicate(Otolith,SubClassOf,AcellularAnatomicalStructure).
+predicate(Stomach,is,Class).
+predicate(Stomach,SubClassOf,CavitatedCompoundOrgan).
+predicate(SurfaceStructure,is,Class).
+predicate(SurfaceStructure,SubClassOf,OrgansimSubdivision).
+predicate(Ammonium,is,Class).
+predicate(AmmoniumMoleToGram,is,Class).
+predicate(AmmoniumMoleToGram,SubClassOf,SubstanceConversion,).
+predicate(AmmoniumMoleToGram,SubClassOf,hasSourceUnit only (standardFor only (measurementFor only (ofEntity only Ammonium))),).
+predicate(AmmoniumMoleToGram,SubClassOf,hasTargetUnit only (standardFor only (measurementFor only (ofEntity only Ammonium))),).
+predicate(AmmoniumMoleToGram,SubClassOf,hasMultiplier value 18.03846,).
+predicate(AmmoniumMoleToGram,SubClassOf,hasOffset value 0).
+predicate(Carbon,is,Class).
+predicate(Carbon12,is,Class).
+predicate(Carbon12,SubClassOf,Carbon).
+predicate(Carbon13,is,Class).
+predicate(Carbon13,SubClassOf,Carbon).
+predicate(Carbon14,is,Class).
+predicate(Carbon14,SubClassOf,Carbon).
+predicate(ChlorophyllTotal,is,Class).
+predicate(ChlorophyllTotal,SubClassOf,Pigment).
+predicate(GroundWater,is,Class).
+predicate(GroundWater,SubClassOf,Porewater).
+predicate(Nitrogen,is,Class).
+predicate(Nitrogen14,is,Class).
+predicate(Nitrogen14,SubClassOf,Nitrogen).
+predicate(Nitrogen15,is,Class).
+predicate(Nitrogen15,SubClassOf,Nitrogen).
+predicate(Pigment,is,Class).
+predicate(Porewater,is,Class).
+predicate(Porewater,SubClassOf,Water).
+predicate(SubstanceConversion,is,Class).
+predicate(SubstanceConversion,SubClassOf,UnitConversion).
+predicate(Water,is,Class).
+predicate(BaseUnit,is,Class).
+predicate(BaseUnit,SubClassOf,Unit).
+predicate(CharacteristicQualifier,is,Class).
+predicate(CharacteristicQualifier,DisjointWith,UnitConversion).
+predicate(CompositeUnit,is,Class).
+predicate(CompositeUnit,SubClassOf,Unit).
+predicate(Context,is,Class).
+predicate(Context,SubClassOf,Measurement,).
+predicate(Context,SubClassOf,hasContextObservation some Observation,).
+predicate(Context,SubClassOf,ofCharacteristic only Relationship).
+predicate(Decimal,is,Class).
+predicate(DerivedUnit,is,Class).
+predicate(DerivedUnit,SubClassOf,Unit).
+predicate(Measurement,is,Class).
+predicate(Observation,is,Class).
+predicate(PhysicalCharacteristic,is,Class).
+predicate(Relationship,is,Class).
+predicate(Standard,is,Class).
+predicate(Unit,is,Class).
+predicate(Unit,EquivalentTo,BaseUnit or CompositeUnit or DerivedUnit).
+predicate(Unit,SubClassOf,Standard,).
+predicate(Unit,SubClassOf,standardFor only).
+predicate(Unit,SubClassOf,(Measurement and (hasValue only Decimal)),).
+predicate(Unit,SubClassOf,standardFor only).
+predicate(Unit,SubClassOf,(Measurement and (ofCharacteristic only PhysicalCharacteristic))).
+predicate(UnitConversion,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasSourceUnit some Unit,).
+predicate(Thing,,is,hasTargetUnit some Unit).
+predicate(Thing,,DisjointWith,CharacteristicQualifier).
+predicate(DrainageBasin,is,Class).
+predicate(SubBasin,is,Class).
+predicate(SubBasin,SubClassOf,DrainageBasin).
+predicate(CompositeCurve,is,Class).
+predicate(CompositeCurve,SubClassOf,SpatialCurve).
+predicate(CompositeSolid,is,Class).
+predicate(CompositeSolid,SubClassOf,SpatialSolid).
+predicate(CompositeSurface,is,Class).
+predicate(CompositeSurface,SubClassOf,SpatialSurface).
+predicate(Curve,is,Class).
+predicate(Curve,SubClassOf,SpatialCurve).
+predicate(GeographicCoordinateReferenceSystem,is,Class).
+predicate(GeographicCoordinateReferenceSystem,SubClassOf,SingleCoordinateReferenceSystem).
+predicate(Grid,is,Class).
+predicate(GridCoverage,is,Class).
+predicate(GridCoverage,SubClassOf,SpatialDiscreetCoverage).
+predicate(ImageCoordinateReferenceSystem,is,Class).
+predicate(ImageCoordinateReferenceSystem,SubClassOf,SingleCoordinateReferenceSystem).
+predicate(LineString,is,Class).
+predicate(LineString,SubClassOf,SpatialCurve).
+predicate(MultiCurveCoverage,is,Class).
+predicate(MultiCurveCoverage,SubClassOf,SpatialDiscreetCoverage).
+predicate(MultiPoint,is,Class).
+predicate(MultiPoint,SubClassOf,SpatialGeometricAggregate).
+predicate(MultiPointCoverage,is,Class).
+predicate(MultiPointCoverage,SubClassOf,SpatialDiscreetCoverage).
+predicate(MultiPointCurve,is,Class).
+predicate(MultiPointCurve,SubClassOf,SpatialGeometricAggregate).
+predicate(MultiPointGeometry,is,Class).
+predicate(MultiPointGeometry,SubClassOf,SpatialGeometricAggregate).
+predicate(MultiSolid,is,Class).
+predicate(MultiSolid,SubClassOf,SpatialGeometricAggregate).
+predicate(MultiSolidCoverage,is,Class).
+predicate(MultiSolidCoverage,SubClassOf,SpatialDiscreetCoverage).
+predicate(MultiSurface,is,Class).
+predicate(MultiSurface,SubClassOf,SpatialGeometricAggregate).
+predicate(MultiSurfaceCoverage,is,Class).
+predicate(MultiSurfaceCoverage,SubClassOf,SpatialDiscreetCoverage).
+predicate(OrientableCurve,is,Class).
+predicate(OrientableCurve,SubClassOf,SpatialCurve).
+predicate(OrientableSurface,is,Class).
+predicate(OrientableSurface,SubClassOf,SpatialSurface).
+predicate(Plot,is,Class).
+predicate(Plot,SubClassOf,Polygon).
+predicate(Point,is,Class).
+predicate(Point,SubClassOf,SpatialGeometricPrimitive).
+predicate(Polygon,is,Class).
+predicate(Polygon,SubClassOf,SpatialSurface).
+predicate(PolyhedralSurface,is,Class).
+predicate(PolyhedralSurface,SubClassOf,Surface).
+predicate(RectifiedGrid,is,Class).
+predicate(RectifiedGrid,SubClassOf,Grid).
+predicate(RectifiedGridCoverage,is,Class).
+predicate(RectifiedGridCoverage,SubClassOf,SpatialDiscreetCoverage).
+predicate(SingleCoordinateReferenceSystem,is,Class).
+predicate(SpatialCoverage,is,Class).
+predicate(SpatialCurve,is,Class).
+predicate(SpatialCurve,SubClassOf,SpatialGeometricPrimitive).
+predicate(SpatialDiscreetCoverage,is,Class).
+predicate(SpatialDiscreetCoverage,SubClassOf,SpatialCoverage).
+predicate(SpatialGeometricAggregate,is,Class).
+predicate(SpatialGeometricPrimitive,is,Class).
+predicate(SpatialSolid,is,Class).
+predicate(SpatialSolid,SubClassOf,SpatialSurface).
+predicate(SpatialSurface,is,Class).
+predicate(SpatialSurface,SubClassOf,SpatialGeometricPrimitive).
+predicate(Surface,is,Class).
+predicate(Surface,SubClassOf,SpatialSurface).
+predicate(Transect,is,Class).
+predicate(Transect,SubClassOf,LineString).
+predicate(Waypoint,is,Class).
+predicate(Waypoint,SubClassOf,Point).
+predicate(Acre,is,Class).
+predicate(AcreToMeterSquared,is,Class).
+predicate(AcreToMeterSquared,SubClassOf,UnitConversion,).
+predicate(AcreToMeterSquared,SubClassOf,hasSourceUnit only Acre,).
+predicate(AcreToMeterSquared,SubClassOf,hasTargetUnit only MeterSquared,).
+predicate(AcreToMeterSquared,SubClassOf,hasMultiplier value 4046.85642,).
+predicate(AcreToMeterSquared,SubClassOf,hasOffset value 0).
+predicate(AcreToSquareMeter,is,Class).
+predicate(AcreToSquareMeter,SubClassOf,UnitConversion,).
+predicate(AcreToSquareMeter,SubClassOf,hasSourceUnit only Acre,).
+predicate(AcreToSquareMeter,SubClassOf,hasTargetUnit only MeterSquared,).
+predicate(AcreToSquareMeter,SubClassOf,hasMultiplier value 4046.8564,).
+predicate(AcreToSquareMeter,SubClassOf,hasOffset value 0).
+predicate(AngstromToMeter,is,Class).
+predicate(AngstromToMeter,SubClassOf,UnitConversion).
+predicate(Bar,is,Class).
+predicate(BarToKilopascal,is,Class).
+predicate(BarToKilopascal,SubClassOf,UnitConversion).
+predicate(Bushel,is,Class).
+predicate(BushelToLiter,is,Class).
+predicate(BushelToLiter,SubClassOf,UnitConversion,).
+predicate(BushelToLiter,SubClassOf,hasSourceUnit only Bushel,).
+predicate(BushelToLiter,SubClassOf,hasTargetUnit only Liter,).
+predicate(BushelToLiter,SubClassOf,hasMultiplier value 35.239072,).
+predicate(BushelToLiter,SubClassOf,hasOffset value 0).
+predicate(Celsius,is,Class).
+predicate(CelsiusToKelvin,is,Class).
+predicate(CelsiusToKelvin,SubClassOf,UnitConversion,).
+predicate(CelsiusToKelvin,SubClassOf,hasSourceUnit only Celsius,).
+predicate(CelsiusToKelvin,SubClassOf,hasTargetUnit only Kelvin,).
+predicate(CelsiusToKelvin,SubClassOf,hasMultiplier value 1,).
+predicate(CelsiusToKelvin,SubClassOf,hasOffset value 273.18).
+predicate(CentigramToKilogram,is,Class).
+predicate(CentigramToKilogram,SubClassOf,UnitConversion).
+predicate(CentimeterToMeter,is,Class).
+predicate(CentimeterToMeter,SubClassOf,UnitConversion).
+predicate(CentisecondToSecond,is,Class).
+predicate(CentisecondToSecond,SubClassOf,UnitConversion).
+predicate(Decibar,is,Class).
+predicate(DecibarToBar,is,Class).
+predicate(DecibarToBar,SubClassOf,UnitConversion,).
+predicate(DecibarToBar,SubClassOf,hasSourceUnit only Decibar,).
+predicate(DecibarToBar,SubClassOf,hasTargetUnit only Bar,).
+predicate(DecibarToBar,SubClassOf,hasMultiplier value 0.1,).
+predicate(DecibarToBar,SubClassOf,hasOffset value 0.0).
+predicate(Decigram,is,Class).
+predicate(DecigramToKilogram,is,Class).
+predicate(DecigramToKilogram,SubClassOf,UnitConversion,).
+predicate(DecigramToKilogram,SubClassOf,hasSourceUnit only Decigram,).
+predicate(DecigramToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(DecigramToKilogram,SubClassOf,hasMultiplier value 0.0001,).
+predicate(DecigramToKilogram,SubClassOf,hasOffset value 0).
+predicate(Decimeter,is,Class).
+predicate(DecimeterToMeter,is,Class).
+predicate(DecimeterToMeter,SubClassOf,UnitConversion,).
+predicate(DecimeterToMeter,SubClassOf,hasSourceUnit only Decimeter,).
+predicate(DecimeterToMeter,SubClassOf,hasTargetUnit only Meter,).
+predicate(DecimeterToMeter,SubClassOf,hasMultiplier value 0.1,).
+predicate(DecimeterToMeter,SubClassOf,hasOffset value 0).
+predicate(Decisecond,is,Class).
+predicate(DecisecondToSecond,is,Class).
+predicate(DecisecondToSecond,SubClassOf,UnitConversion,).
+predicate(DecisecondToSecond,SubClassOf,hasSourceUnit only Decisecond,).
+predicate(DecisecondToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(DecisecondToSecond,SubClassOf,hasMultiplier value 0.1,).
+predicate(DecisecondToSecond,SubClassOf,hasOffset value 0).
+predicate(DegreToRadian,is,Class).
+predicate(DegreToRadian,SubClassOf,UnitConversion).
+predicate(Dekagram,is,Class).
+predicate(DekagramToKilogram,is,Class).
+predicate(DekagramToKilogram,SubClassOf,UnitConversion,).
+predicate(DekagramToKilogram,SubClassOf,hasSourceUnit only Dekagram,).
+predicate(DekagramToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(DekagramToKilogram,SubClassOf,hasMultiplier value 0.01,).
+predicate(DekagramToKilogram,SubClassOf,hasOffset value 0).
+predicate(DekameterToMeter,is,Class).
+predicate(DekameterToMeter,SubClassOf,UnitConversion).
+predicate(Dekasecond,is,Class).
+predicate(DekasecondToSecond,is,Class).
+predicate(DekasecondToSecond,SubClassOf,UnitConversion,).
+predicate(DekasecondToSecond,SubClassOf,hasSourceUnit only Dekasecond,).
+predicate(DekasecondToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(DekasecondToSecond,SubClassOf,hasMultiplier value 10,).
+predicate(DekasecondToSecond,SubClassOf,hasOffset value 0).
+predicate(FahrenheitDegree,is,Class).
+predicate(FahrenheitDegreeToKelvin,is,Class).
+predicate(FahrenheitDegreeToKelvin,SubClassOf,UnitConversion,).
+predicate(FahrenheitDegreeToKelvin,SubClassOf,hasSourceUnit only FahrenheitDegree,).
+predicate(FahrenheitDegreeToKelvin,SubClassOf,hasTargetUnit only Kelvin,).
+predicate(FahrenheitDegreeToKelvin,SubClassOf,hasMultiplier value 0.556,).
+predicate(FahrenheitDegreeToKelvin,SubClassOf,hasOffset value 255.402).
+predicate(Fathom,is,Class).
+predicate(FathomToMeter,is,Class).
+predicate(FathomToMeter,SubClassOf,UnitConversion,).
+predicate(FathomToMeter,SubClassOf,hasSourceUnit only Fathom,).
+predicate(FathomToMeter,SubClassOf,hasTargetUnit only Meter,).
+predicate(FathomToMeter,SubClassOf,hasMultiplier value 1.8288,).
+predicate(FathomToMeter,SubClassOf,hasOffset value 0).
+predicate(Foot,is,Class).
+predicate(FootGoldCoastToMeter,is,Class).
+predicate(FootGoldCoastToMeter,SubClassOf,UnitConversion).
+predicate(FootToMeter,is,Class).
+predicate(FootToMeter,SubClassOf,UnitConversion,).
+predicate(FootToMeter,SubClassOf,hasSourceUnit only Foot,).
+predicate(FootToMeter,SubClassOf,hasTargetUnit only Meter,).
+predicate(FootToMeter,SubClassOf,hasMultiplier value 0.3048,).
+predicate(FootToMeter,SubClassOf,hasOffset value 0).
+predicate(Gallon,is,Class).
+predicate(GallonToLiter,is,Class).
+predicate(GallonToLiter,SubClassOf,UnitConversion,).
+predicate(GallonToLiter,SubClassOf,hasSourceUnit only Gallon,).
+predicate(GallonToLiter,SubClassOf,hasTargetUnit only Liter,).
+predicate(GallonToLiter,SubClassOf,hasMultiplier value 3.78541178,).
+predicate(GallonToLiter,SubClassOf,hasOffset value 0).
+predicate(Grad,is,Class).
+predicate(GradToRadian,is,Class).
+predicate(GradToRadian,SubClassOf,UnitConversion,).
+predicate(GradToRadian,SubClassOf,hasSourceUnit only Grad,).
+predicate(GradToRadian,SubClassOf,hasTargetUnit only Radian,).
+predicate(GradToRadian,SubClassOf,hasMultiplier value 0.015707,).
+predicate(GradToRadian,SubClassOf,hasOffset value 0).
+predicate(Gram,is,Class).
+predicate(GramToKilogram,is,Class).
+predicate(GramToKilogram,SubClassOf,UnitConversion,).
+predicate(GramToKilogram,SubClassOf,hasSourceUnit only Gram,).
+predicate(GramToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(GramToKilogram,SubClassOf,hasMultiplier value 0.001,).
+predicate(GramToKilogram,SubClassOf,hasOffset value 0).
+predicate(Hectogram,is,Class).
+predicate(HectogramToKilogram,is,Class).
+predicate(HectogramToKilogram,SubClassOf,UnitConversion,).
+predicate(HectogramToKilogram,SubClassOf,hasSourceUnit only Hectogram,).
+predicate(HectogramToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(HectogramToKilogram,SubClassOf,hasMultiplier value 0.1,).
+predicate(HectogramToKilogram,SubClassOf,hasOffset value 0).
+predicate(HectometerToMeter,is,Class).
+predicate(HectometerToMeter,SubClassOf,UnitConversion).
+predicate(HectopascalToPascal,is,Class).
+predicate(HectopascalToPascal,SubClassOf,UnitConversion).
+predicate(Hectosecond,is,Class).
+predicate(HectosecondToSecond,is,Class).
+predicate(HectosecondToSecond,SubClassOf,UnitConversion,).
+predicate(HectosecondToSecond,SubClassOf,hasSourceUnit only Hectosecond,).
+predicate(HectosecondToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(HectosecondToSecond,SubClassOf,hasMultiplier value 100,).
+predicate(HectosecondToSecond,SubClassOf,hasOffset value 0).
+predicate(Hour,is,Class).
+predicate(HourToSecond,is,Class).
+predicate(HourToSecond,SubClassOf,UnitConversion,).
+predicate(HourToSecond,SubClassOf,hasSourceUnit only Hour,).
+predicate(HourToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(HourToSecond,SubClassOf,hasMultiplier value 3600,).
+predicate(HourToSecond,SubClassOf,hasOffset value 0).
+predicate(InchToMeter,is,Class).
+predicate(InchToMeter,SubClassOf,UnitConversion).
+predicate(Kelvin,is,Class).
+predicate(Kilogram,is,Class).
+predicate(Kilometer,is,Class).
+predicate(KilometerToMeter,is,Class).
+predicate(KilometerToMeter,SubClassOf,UnitConversion,).
+predicate(KilometerToMeter,SubClassOf,hasSourceUnit only Kilometer,).
+predicate(KilometerToMeter,SubClassOf,hasTargetUnit only Meter,).
+predicate(KilometerToMeter,SubClassOf,hasMultiplier value 1000,).
+predicate(KilometerToMeter,SubClassOf,hasOffset value 0).
+predicate(Kilosecond,is,Class).
+predicate(KilosecondToSecond,is,Class).
+predicate(KilosecondToSecond,SubClassOf,UnitConversion,).
+predicate(KilosecondToSecond,SubClassOf,hasSourceUnit only Kilosecond,).
+predicate(KilosecondToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(KilosecondToSecond,SubClassOf,hasMultiplier value 1000,).
+predicate(KilosecondToSecond,SubClassOf,hasOffset value 0).
+predicate(LinkClarke,is,Class).
+predicate(LinkClarkeToMeter,is,Class).
+predicate(LinkClarkeToMeter,SubClassOf,UnitConversion,).
+predicate(LinkClarkeToMeter,SubClassOf,hasSourceUnit only LinkClarke,).
+predicate(LinkClarkeToMeter,SubClassOf,hasTargetUnit only Meter,).
+predicate(LinkClarkeToMeter,SubClassOf,hasMultiplier value 0.201166,).
+predicate(LinkClarkeToMeter,SubClassOf,hasOffset value 0).
+predicate(Liter,is,Class).
+predicate(LiterToMeterCubed,is,Class).
+predicate(LiterToMeterCubed,SubClassOf,UnitConversion,).
+predicate(LiterToMeterCubed,SubClassOf,hasSourceUnit only Liter,).
+predicate(LiterToMeterCubed,SubClassOf,hasTargetUnit only MeterCubed,).
+predicate(LiterToMeterCubed,SubClassOf,hasMultiplier value 0.001,).
+predicate(LiterToMeterCubed,SubClassOf,hasOffset value 0).
+predicate(Megagram,is,Class).
+predicate(MegagramToKilogram,is,Class).
+predicate(MegagramToKilogram,SubClassOf,UnitConversion,).
+predicate(MegagramToKilogram,SubClassOf,hasSourceUnit only Megagram,).
+predicate(MegagramToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(MegagramToKilogram,SubClassOf,hasMultiplier value 1000,).
+predicate(MegagramToKilogram,SubClassOf,hasOffset value 0).
+predicate(Megameter,is,Class).
+predicate(MegameterToMeter,is,Class).
+predicate(MegameterToMeter,SubClassOf,UnitConversion,).
+predicate(MegameterToMeter,SubClassOf,hasSourceUnit only Megameter,).
+predicate(MegameterToMeter,SubClassOf,hasTargetUnit only Meter,).
+predicate(MegameterToMeter,SubClassOf,hasMultiplier value 1000000,).
+predicate(MegameterToMeter,SubClassOf,hasOffset value 0).
+predicate(Megasecond,is,Class).
+predicate(MegasecondToSecond,is,Class).
+predicate(MegasecondToSecond,SubClassOf,UnitConversion,).
+predicate(MegasecondToSecond,SubClassOf,hasSourceUnit only Megasecond,).
+predicate(MegasecondToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(MegasecondToSecond,SubClassOf,hasMultiplier value 1000000,).
+predicate(MegasecondToSecond,SubClassOf,hasOffset value 0).
+predicate(Meter,is,Class).
+predicate(MeterCubed,is,Class).
+predicate(MeterSquared,is,Class).
+predicate(Microgram,is,Class).
+predicate(MicrogramToKilogram,is,Class).
+predicate(MicrogramToKilogram,SubClassOf,UnitConversion,).
+predicate(MicrogramToKilogram,SubClassOf,hasSourceUnit only Microgram,).
+predicate(MicrogramToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(MicrogramToKilogram,SubClassOf,hasMultiplier value 1000000000,).
+predicate(MicrogramToKilogram,SubClassOf,hasOffset value 0).
+predicate(MicrometerToMeter,is,Class).
+predicate(MicrometerToMeter,SubClassOf,UnitConversion).
+predicate(Micron,is,Class).
+predicate(MicronToMeter,is,Class).
+predicate(MicronToMeter,SubClassOf,UnitConversion,).
+predicate(MicronToMeter,SubClassOf,hasSourceUnit only Micron,).
+predicate(MicronToMeter,SubClassOf,hasTargetUnit only Meter,).
+predicate(MicronToMeter,SubClassOf,hasMultiplier value 1000000,).
+predicate(MicronToMeter,SubClassOf,hasOffset value 0).
+predicate(Microsecond,is,Class).
+predicate(MicrosecondToSecond,is,Class).
+predicate(MicrosecondToSecond,SubClassOf,UnitConversion,).
+predicate(MicrosecondToSecond,SubClassOf,hasSourceUnit only Microsecond,).
+predicate(MicrosecondToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(MicrosecondToSecond,SubClassOf,hasMultiplier value 1000000,).
+predicate(MicrosecondToSecond,SubClassOf,hasOffset value 0).
+predicate(Mile,is,Class).
+predicate(MileToMeter,is,Class).
+predicate(MileToMeter,SubClassOf,UnitConversion,).
+predicate(MileToMeter,SubClassOf,hasSourceUnit only Mile,).
+predicate(MileToMeter,SubClassOf,hasTargetUnit only Meter,).
+predicate(MileToMeter,SubClassOf,hasMultiplier value 1609.344,).
+predicate(MileToMeter,SubClassOf,hasOffset value 0).
+predicate(Millibar,is,Class).
+predicate(MillibarToBar,is,Class).
+predicate(MillibarToBar,SubClassOf,UnitConversion,).
+predicate(MillibarToBar,SubClassOf,hasSourceUnit only Millibar,).
+predicate(MillibarToBar,SubClassOf,hasTargetUnit only Bar,).
+predicate(MillibarToBar,SubClassOf,hasMultiplier value 0.0010,).
+predicate(MillibarToBar,SubClassOf,hasOffset value 0.0).
+predicate(MilligramToKilogram,is,Class).
+predicate(MilligramToKilogram,SubClassOf,UnitConversion).
+predicate(MillimeterToMeter,is,Class).
+predicate(MillimeterToMeter,SubClassOf,UnitConversion).
+predicate(Millisecond,is,Class).
+predicate(MillisecondToSecond,is,Class).
+predicate(MillisecondToSecond,SubClassOf,UnitConversion,).
+predicate(MillisecondToSecond,SubClassOf,hasSourceUnit only Millisecond,).
+predicate(MillisecondToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(MillisecondToSecond,SubClassOf,hasMultiplier value 0.001,).
+predicate(MillisecondToSecond,SubClassOf,hasOffset value 0).
+predicate(Minute,is,Class).
+predicate(MinuteToSecond,is,Class).
+predicate(MinuteToSecond,SubClassOf,UnitConversion,).
+predicate(MinuteToSecond,SubClassOf,hasSourceUnit only Minute,).
+predicate(MinuteToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(MinuteToSecond,SubClassOf,hasMultiplier value 60,).
+predicate(MinuteToSecond,SubClassOf,hasOffset value 0).
+predicate(Nanogram,is,Class).
+predicate(NanogramToKilogram,is,Class).
+predicate(NanogramToKilogram,SubClassOf,UnitConversion,).
+predicate(NanogramToKilogram,SubClassOf,hasSourceUnit only Nanogram,).
+predicate(NanogramToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(NanogramToKilogram,SubClassOf,hasMultiplier value 1000000000000,).
+predicate(NanogramToKilogram,SubClassOf,hasOffset value 0).
+predicate(NanometerToMeter,is,Class).
+predicate(NanometerToMeter,SubClassOf,UnitConversion).
+predicate(Nanosecond,is,Class).
+predicate(NanosecondToSecond,is,Class).
+predicate(NanosecondToSecond,SubClassOf,UnitConversion,).
+predicate(NanosecondToSecond,SubClassOf,hasSourceUnit only Nanosecond,).
+predicate(NanosecondToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(NanosecondToSecond,SubClassOf,hasMultiplier value 1000000000,).
+predicate(NanosecondToSecond,SubClassOf,hasOffset value 0).
+predicate(NauticalMileToMeter,is,Class).
+predicate(NauticalMileToMeter,SubClassOf,UnitConversion).
+predicate(NominalDay,is,Class).
+predicate(NominalDayToSecond,is,Class).
+predicate(NominalDayToSecond,SubClassOf,UnitConversion,).
+predicate(NominalDayToSecond,SubClassOf,hasSourceUnit only NominalDay,).
+predicate(NominalDayToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(NominalDayToSecond,SubClassOf,hasMultiplier value 86400,).
+predicate(NominalDayToSecond,SubClassOf,hasOffset value 0).
+predicate(NominalHour,is,Class).
+predicate(NominalHourToSecond,is,Class).
+predicate(NominalHourToSecond,SubClassOf,UnitConversion,).
+predicate(NominalHourToSecond,SubClassOf,hasSourceUnit only NominalHour,).
+predicate(NominalHourToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(NominalHourToSecond,SubClassOf,hasMultiplier value 3600,).
+predicate(NominalHourToSecond,SubClassOf,hasOffset value 0).
+predicate(NominalLeapYear,is,Class).
+predicate(NominalLeapYearToSecond,is,Class).
+predicate(NominalLeapYearToSecond,SubClassOf,UnitConversion,).
+predicate(NominalLeapYearToSecond,SubClassOf,hasSourceUnit only NominalLeapYear,).
+predicate(NominalLeapYearToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(NominalLeapYearToSecond,SubClassOf,hasMultiplier value 31643326,).
+predicate(NominalLeapYearToSecond,SubClassOf,hasOffset value 0).
+predicate(NominalMinute,is,Class).
+predicate(NominalMinuteToSecond,is,Class).
+predicate(NominalMinuteToSecond,SubClassOf,UnitConversion,).
+predicate(NominalMinuteToSecond,SubClassOf,hasSourceUnit only NominalMinute,).
+predicate(NominalMinuteToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(NominalMinuteToSecond,SubClassOf,hasMultiplier value 60,).
+predicate(NominalMinuteToSecond,SubClassOf,hasOffset value 0).
+predicate(NominalWeek,is,Class).
+predicate(NominalWeekToSecond,is,Class).
+predicate(NominalWeekToSecond,SubClassOf,UnitConversion,).
+predicate(NominalWeekToSecond,SubClassOf,hasSourceUnit only NominalWeek,).
+predicate(NominalWeekToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(NominalWeekToSecond,SubClassOf,hasMultiplier value 604800,).
+predicate(NominalWeekToSecond,SubClassOf,hasOffset value 0).
+predicate(NominalYear,is,Class).
+predicate(NominalYearToSecond,is,Class).
+predicate(NominalYearToSecond,SubClassOf,UnitConversion,).
+predicate(NominalYearToSecond,SubClassOf,hasSourceUnit only NominalYear,).
+predicate(NominalYearToSecond,SubClassOf,hasTargetUnit only Second,).
+predicate(NominalYearToSecond,SubClassOf,hasMultiplier value 31556926,).
+predicate(NominalYearToSecond,SubClassOf,hasOffset value 0).
+predicate(Pint,is,Class).
+predicate(PintToLiter,is,Class).
+predicate(PintToLiter,SubClassOf,UnitConversion,).
+predicate(PintToLiter,SubClassOf,hasSourceUnit only Pint,).
+predicate(PintToLiter,SubClassOf,hasTargetUnit only Liter,).
+predicate(PintToLiter,SubClassOf,hasMultiplier value 0.473176473,).
+predicate(PintToLiter,SubClassOf,hasOffset value 0).
+predicate(Pound,is,Class).
+predicate(PoundToKilogram,is,Class).
+predicate(PoundToKilogram,SubClassOf,UnitConversion,).
+predicate(PoundToKilogram,SubClassOf,hasSourceUnit only Pound,).
+predicate(PoundToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(PoundToKilogram,SubClassOf,hasMultiplier value 0.4536,).
+predicate(PoundToKilogram,SubClassOf,hasOffset value 0).
+predicate(Quart,is,Class).
+predicate(QuartToLiter,is,Class).
+predicate(QuartToLiter,SubClassOf,UnitConversion,).
+predicate(QuartToLiter,SubClassOf,hasSourceUnit only Quart,).
+predicate(QuartToLiter,SubClassOf,hasTargetUnit only Liter,).
+predicate(QuartToLiter,SubClassOf,hasMultiplier value 0.946352946,).
+predicate(QuartToLiter,SubClassOf,hasOffset value 0).
+predicate(Radian,is,Class).
+predicate(Second,is,Class).
+predicate(Ton,is,Class).
+predicate(TonToKilogram,is,Class).
+predicate(TonToKilogram,SubClassOf,UnitConversion,).
+predicate(TonToKilogram,SubClassOf,hasSourceUnit only Ton,).
+predicate(TonToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(TonToKilogram,SubClassOf,hasMultiplier value 907.2,).
+predicate(TonToKilogram,SubClassOf,hasOffset value 0).
+predicate(Tonne,is,Class).
+predicate(TonneToKilogram,is,Class).
+predicate(TonneToKilogram,SubClassOf,UnitConversion,).
+predicate(TonneToKilogram,SubClassOf,hasSourceUnit only Tonne,).
+predicate(TonneToKilogram,SubClassOf,hasTargetUnit only Kilogram,).
+predicate(TonneToKilogram,SubClassOf,hasMultiplier value 1000,).
+predicate(TonneToKilogram,SubClassOf,hasOffset value 0).
+predicate(YardIndianToMeter,is,Class).
+predicate(YardIndianToMeter,SubClassOf,UnitConversion).
+predicate(YardToMeter,is,Class).
+predicate(YardToMeter,SubClassOf,UnitConversion).
+predicate(TimeGeometricPrimitive,is,Class).
+predicate(TimePeriod,is,Class).
+predicate(TimePeriod,SubClassOf,TimeGeometricPrimitive).
+predicate(Conductivity,is,Class).
+predicate(Mass,is,Class).
+predicate(MassPerMass,is,Class).
+predicate(Proportion,is,Class).
+predicate(SiemensPerMeter,is,Class).
+predicate(Name,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

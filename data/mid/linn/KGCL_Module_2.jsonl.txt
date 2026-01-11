@@ -1,0 +1,68 @@
+predicate(lang,is,Datatype).
+predicate(about,is,ObjectProperty).
+predicate(has_undo,is,ObjectProperty).
+predicate(in_subset,is,ObjectProperty).
+predicate(new_value,is,DataProperty).
+predicate(old_value,is,DataProperty).
+predicate(AddNodeToSubset,is,Class).
+predicate(AddNodeToSubset,SubClassOf,AddToSubset).
+predicate(AddToSubset,is,Class).
+predicate(AddToSubset,SubClassOf,SubsetMembershipChange,).
+predicate(Thing,is,in_subset only www.w3.org/2002/07/#).
+predicate(AllowsAutomaticReplacementOfEdges,is,Class).
+predicate(AllowsAutomaticReplacementOfEdges,SubClassOf,Obsoletion).
+predicate(ChangeMixin,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Creation,is,Class).
+predicate(Creation,SubClassOf,ChangeMixin,).
+predicate(Creation,SubClassOf,has_undo only Deletion).
+predicate(DatatypeChange,is,Class).
+predicate(DatatypeChange,SubClassOf,DatatypeOrLanguageTagChange).
+predicate(DatatypeOrLanguageTagChange,is,Class).
+predicate(DatatypeOrLanguageTagChange,SubClassOf,ChangeMixin).
+predicate(Deletion,is,Class).
+predicate(Deletion,SubClassOf,ChangeMixin).
+predicate(EdgeCreation,is,Class).
+predicate(EdgeCreation,SubClassOf,Creation).
+predicate(EdgeDeletion,is,Class).
+predicate(EdgeDeletion,SubClassOf,Deletion).
+predicate(EdgeObsoletion,is,Class).
+predicate(EdgeObsoletion,SubClassOf,Obsoletion).
+predicate(LanguageTagChange,is,Class).
+predicate(LanguageTagChange,SubClassOf,DatatypeOrLanguageTagChange,).
+predicate(LanguageTagChange,SubClassOf,new_value only lang,).
+predicate(LanguageTagChange,SubClassOf,old_value only lang).
+predicate(MappingCreation,is,Class).
+predicate(MappingCreation,SubClassOf,Creation).
+predicate(NodeCreation,is,Class).
+predicate(NodeCreation,SubClassOf,Creation).
+predicate(NodeDeletion,is,Class).
+predicate(NodeDeletion,SubClassOf,Deletion).
+predicate(NodeDirectMerge,is,Class).
+predicate(NodeDirectMerge,SubClassOf,AllowsAutomaticReplacementOfEdges).
+predicate(NodeObsoletion,is,Class).
+predicate(NodeObsoletion,SubClassOf,Obsoletion).
+predicate(NodeObsoletionWithDirectReplacement,is,Class).
+predicate(NodeObsoletionWithDirectReplacement,SubClassOf,AllowsAutomaticReplacementOfEdges).
+predicate(NodeUnobsoletion,is,Class).
+predicate(NodeUnobsoletion,SubClassOf,Unobsoletion).
+predicate(Obsoletion,is,Class).
+predicate(Obsoletion,SubClassOf,ChangeMixin,).
+predicate(Thing,,is,about only www.w3.org/2002/07/#).
+predicate(Thing,,is,has_undo only Obsoletion).
+predicate(RemoveFromSubset,is,Class).
+predicate(RemoveFromSubset,SubClassOf,SubsetMembershipChange,).
+predicate(RemoveFromSubset,SubClassOf,has_undo only AddToSubset,).
+predicate(Thing,is,in_subset only www.w3.org/2002/07/#).
+predicate(RemoveNodeFromSubset,is,Class).
+predicate(RemoveNodeFromSubset,SubClassOf,RemoveFromSubset).
+predicate(SetLanguageForName,is,Class).
+predicate(SetLanguageForName,SubClassOf,LanguageTagChange).
+predicate(SubsetMembershipChange,is,Class).
+predicate(SubsetMembershipChange,SubClassOf,ChangeMixin,).
+predicate(OntologySubset,is,in_subset only om/).
+predicate(Unobsoletion,is,Class).
+predicate(Unobsoletion,SubClassOf,ChangeMixin,).
+predicate(Unobsoletion,SubClassOf,has_undo only Obsoletion).
+predicate(om/,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

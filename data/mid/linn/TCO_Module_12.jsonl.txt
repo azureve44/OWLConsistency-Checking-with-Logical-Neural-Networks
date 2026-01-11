@@ -1,0 +1,66 @@
+predicate(describes,is,ObjectProperty).
+predicate(is_a,is,ObjectProperty).
+predicate(part_of,is,ObjectProperty).
+predicate(Alcohol,is,Class).
+predicate(Alcohol,EquivalentTo,is_a some Habits_and_Behavious).
+predicate(Alcohol,SubClassOf,Habits_and_Behavious).
+predicate(Body_Mass_Index,is,Class).
+predicate(Body_Mass_Index,EquivalentTo,describes some Physiological_Characteristics).
+predicate(Body_Mass_Index,SubClassOf,Physiological_Characteristics).
+predicate(Coast,is,Class).
+predicate(Coast,EquivalentTo,is_a some Region).
+predicate(Coast,SubClassOf,Region).
+predicate(Dietary_Intake,is,Class).
+predicate(Dietary_Intake,SubClassOf,Etiology).
+predicate(Dietary_iodine,is,Class).
+predicate(Drug_abuse,is,Class).
+predicate(Drug_abuse,EquivalentTo,is_a some Habits_and_Behavious).
+predicate(Drug_abuse,SubClassOf,Habits_and_Behavious).
+predicate(Environment,is,Class).
+predicate(Environment,SubClassOf,Etiology).
+predicate(Etiology,is,Class).
+predicate(Etiology,EquivalentTo,describes some Thyroid_Cancer).
+predicate(Etiology,SubClassOf,Thyroid_Cancer).
+predicate(Family_Medical_History,is,Class).
+predicate(Family_Medical_History,SubClassOf,Etiology).
+predicate(Habits_and_Behavious,is,Class).
+predicate(Iodine_Deficiency,is,Class).
+predicate(Iodine_Deficiency,EquivalentTo,describes some Dietary_iodine).
+predicate(Iodine_Deficiency,SubClassOf,Dietary_iodine).
+predicate(Iodine_excess,is,Class).
+predicate(Iodine_excess,EquivalentTo,describes some Dietary_iodine).
+predicate(Iodine_excess,SubClassOf,Dietary_iodine).
+predicate(Lifestyle,is,Class).
+predicate(Lifestyle,SubClassOf,Etiology).
+predicate(Menstrual_disorder,is,Class).
+predicate(Menstrual_disorder,SubClassOf,Etiology).
+predicate(Multiple_Endocrine_Neoplasia_Type_2,is,Class).
+predicate(Multiple_Endocrine_Neoplasia_Type_2B,is,Class).
+predicate(Multiple_Endocrine_Neoplasia_Type_2B,SubClassOf,Multiple_Endocrine_Neoplasia_Type_2).
+predicate(Personal_Medical_History,is,Class).
+predicate(Personal_Medical_History,SubClassOf,Etiology).
+predicate(Physiological_Characteristics,is,Class).
+predicate(Plateau,is,Class).
+predicate(Plateau,EquivalentTo,is_a some Region).
+predicate(Plateau,SubClassOf,Region).
+predicate(Potassium_Iodate,is,Class).
+predicate(Potassium_Iodate,EquivalentTo,describes some Dietary_iodine).
+predicate(Potassium_Iodate,SubClassOf,Dietary_iodine).
+predicate(Region,is,Class).
+predicate(Reproductive_history,is,Class).
+predicate(Reproductive_history,SubClassOf,Etiology).
+predicate(Smoking,is,Class).
+predicate(Smoking,EquivalentTo,is_a some Habits_and_Behavious).
+predicate(Smoking,SubClassOf,Habits_and_Behavious).
+predicate(Thyroid_Cancer,is,Class).
+predicate(VI_Level_Lymph_Node_Dissection,is,Class).
+predicate(VIa_Level_Lymph_Node_Dissection,is,Class).
+predicate(VIa_Level_Lymph_Node_Dissection,EquivalentTo,part_of some VI_Level_Lymph_Node_Dissection).
+predicate(VIa_Level_Lymph_Node_Dissection,SubClassOf,VI_Level_Lymph_Node_Dissection).
+predicate(VIb_Level_Lymph_Node_Dissection,is,Class).
+predicate(VIb_Level_Lymph_Node_Dissection,EquivalentTo,part_of some VI_Level_Lymph_Node_Dissection).
+predicate(VIb_Level_Lymph_Node_Dissection,SubClassOf,VI_Level_Lymph_Node_Dissection).
+predicate(VId_Level_Lymph_Node_Dissection,is,Class).
+predicate(VId_Level_Lymph_Node_Dissection,EquivalentTo,part_of some VI_Level_Lymph_Node_Dissection).
+predicate(VId_Level_Lymph_Node_Dissection,SubClassOf,VI_Level_Lymph_Node_Dissection).
+predicate(www.w3.org/2002/07/#,is,Class).

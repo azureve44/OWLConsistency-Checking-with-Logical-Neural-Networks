@@ -1,0 +1,203 @@
+predicate(has,is,ObjectProperty).
+predicate(hasMeasurementOf,is,ObjectProperty).
+predicate(hasSource,is,ObjectProperty).
+predicate(isInvolvedIn,is,ObjectProperty).
+predicate(isPartOf,is,ObjectProperty).
+predicate(isStoredInto,is,ObjectProperty).
+predicate(isUsing,is,ObjectProperty).
+predicate(AdaptationSoftware,is,Class).
+predicate(AdaptationSoftware,SubClassOf,Software).
+predicate(AssistedLiving,is,Class).
+predicate(AssistedLiving,SubClassOf,ClinicalProcess).
+predicate(Bluetooth,is,Class).
+predicate(Bluetooth,SubClassOf,CommunicationsTechnology).
+predicate(BrainActivity,is,Class).
+predicate(BrainActivity,SubClassOf,Metrics).
+predicate(BrainActivitySensors,is,Class).
+predicate(BrainActivitySensors,SubClassOf,Sensors,).
+predicate(BrainActivitySensors,SubClassOf,hasMeasurementOf some BrainActivity).
+predicate(ClinicalProcess,is,Class).
+predicate(ClinicalProcess,EquivalentTo,Impairment).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,has some Interaction).
+predicate(Thing,,DisjointWith,Software).
+predicate(Thing,,DisjointWith,Setting).
+predicate(Thing,,DisjointWith,Metrics).
+predicate(Thing,,DisjointWith,MachineLearning).
+predicate(Thing,,DisjointWith,Interaction).
+predicate(Thing,,DisjointWith,Impairment).
+predicate(Thing,,DisjointWith,Human).
+predicate(Cognitive,is,Class).
+predicate(Cognitive,SubClassOf,Impairment).
+predicate(CommunicationsTechnology,is,Class).
+predicate(CommunicationsTechnology,SubClassOf,Hardware).
+predicate(Computer,is,Class).
+predicate(Computer,SubClassOf,Hardware).
+predicate(ComputerToPatientInteraction,is,Class).
+predicate(ComputerToPatientInteraction,SubClassOf,Interaction).
+predicate(ControlStick,is,Class).
+predicate(ControlStick,SubClassOf,Hardware).
+predicate(DataAnalysisSoftware,is,Class).
+predicate(DataAnalysisSoftware,SubClassOf,Software).
+predicate(DataClassification,is,Class).
+predicate(DataClassification,SubClassOf,MachineLearning,).
+predicate(DataClassification,SubClassOf,isUsing only ClinicalProcess).
+predicate(DataFusion,is,Class).
+predicate(DataFusion,SubClassOf,MachineLearning).
+predicate(DataModelling,is,Class).
+predicate(DataModelling,SubClassOf,MachineLearning).
+predicate(DatabaseManagementSystem,is,Class).
+predicate(DatabaseManagementSystem,SubClassOf,Software).
+predicate(FeatureSelection,is,Class).
+predicate(FeatureSelection,SubClassOf,MachineLearning).
+predicate(GameScore,is,Class).
+predicate(GameScore,SubClassOf,Metrics).
+predicate(HardDiskDrive,is,Class).
+predicate(HardDiskDrive,SubClassOf,Computer).
+predicate(Hardware,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Setting).
+predicate(Thing,DisjointWith,Impairment).
+predicate(Thing,DisjointWith,Human).
+predicate(HeartBeat,is,Class).
+predicate(HeartBeat,SubClassOf,VitalSigns).
+predicate(HomeBased,is,Class).
+predicate(HomeBased,SubClassOf,Setting).
+predicate(Human,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Software).
+predicate(Thing,DisjointWith,Setting).
+predicate(Thing,DisjointWith,Metrics).
+predicate(Thing,DisjointWith,MachineLearning).
+predicate(Thing,DisjointWith,Interaction).
+predicate(Thing,DisjointWith,Impairment).
+predicate(Thing,DisjointWith,Hardware).
+predicate(Thing,DisjointWith,ClinicalProcess).
+predicate(ICD,is,Class).
+predicate(ICD,SubClassOf,TerminologiesAndClassifications).
+predicate(Impairment,is,Class).
+predicate(Impairment,EquivalentTo,ClinicalProcess).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Software).
+predicate(Thing,DisjointWith,Setting).
+predicate(Thing,DisjointWith,Metrics).
+predicate(Thing,DisjointWith,MachineLearning).
+predicate(Thing,DisjointWith,Interaction).
+predicate(Thing,DisjointWith,Human).
+predicate(Thing,DisjointWith,Hardware).
+predicate(Thing,DisjointWith,ClinicalProcess).
+predicate(InPatient,is,Class).
+predicate(InPatient,SubClassOf,Setting).
+predicate(Interaction,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Impairment).
+predicate(Thing,DisjointWith,Human).
+predicate(Thing,DisjointWith,ClinicalProcess).
+predicate(InteractiveGames,is,Class).
+predicate(InteractiveGames,SubClassOf,Software,).
+predicate(InteractiveGames,SubClassOf,isUsing some TouchScreen).
+predicate(InteractiveGaming,is,Class).
+predicate(InteractiveGaming,SubClassOf,RehabilitationActivity,).
+predicate(InteractiveGaming,SubClassOf,isPartOf some ClinicalProcess,).
+predicate(InteractiveGaming,SubClassOf,isUsing some InteractiveGames).
+predicate(LowerExtremety,is,Class).
+predicate(LowerExtremety,SubClassOf,Motor).
+predicate(MachineLearning,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isInvolvedIn some AdaptationSoftware,).
+predicate(Thing,,is,isPartOf some DataAnalysisSoftware,).
+predicate(Thing,,is,isPartOf some Robot,).
+predicate(Thing,,is,isUsing some Metrics).
+predicate(Thing,,DisjointWith,Impairment).
+predicate(Thing,,DisjointWith,Human).
+predicate(Thing,,DisjointWith,ClinicalProcess).
+predicate(Metrics,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasSource some Patient,).
+predicate(Thing,,is,isInvolvedIn some MachineLearning,).
+predicate(Thing,,is,isStoredInto some DatabaseManagementSystem).
+predicate(Thing,,DisjointWith,Impairment).
+predicate(Thing,,DisjointWith,Human).
+predicate(Thing,,DisjointWith,ClinicalProcess).
+predicate(MotionSensor,is,Class).
+predicate(MotionSensor,SubClassOf,Sensors).
+predicate(Motor,is,Class).
+predicate(Motor,SubClassOf,Impairment).
+predicate(OutPatient,is,Class).
+predicate(OutPatient,SubClassOf,Setting).
+predicate(Patient,is,Class).
+predicate(Patient,SubClassOf,Human,).
+predicate(Patient,SubClassOf,has some Therapist,).
+predicate(Patient,SubClassOf,isInvolvedIn some ClinicalProcess,).
+predicate(Patient,SubClassOf,isInvolvedIn some Interaction,).
+predicate(Patient,SubClassOf,isInvolvedIn some RehabilitationActivity,).
+predicate(Patient,SubClassOf,isPartOf some Setting,).
+predicate(Patient,SubClassOf,isUsing some ControlStick,).
+predicate(Patient,SubClassOf,isUsing some TouchScreen,).
+predicate(Patient,SubClassOf,isInvolvedIn only ClinicalProcess,).
+predicate(Patient,SubClassOf,has min 1 Impairment).
+predicate(PatientAssessment,is,Class).
+predicate(PatientAssessment,SubClassOf,ClinicalProcess).
+predicate(PatientMonitoring,is,Class).
+predicate(PatientMonitoring,SubClassOf,ClinicalProcess).
+predicate(PatientToComputerInteraction,is,Class).
+predicate(PatientToComputerInteraction,SubClassOf,MachineLearning,).
+predicate(PatientToComputerInteraction,SubClassOf,isUsing some Hardware).
+predicate(PhysicalExercise,is,Class).
+predicate(PhysicalExercise,SubClassOf,RehabilitationActivity).
+predicate(PhysicalPower,is,Class).
+predicate(PhysicalPower,SubClassOf,Metrics).
+predicate(RehabilitationActivity,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Robot,is,Class).
+predicate(Robot,SubClassOf,Hardware).
+predicate(RobotArm,is,Class).
+predicate(RobotArm,SubClassOf,Robot).
+predicate(Sensors,is,Class).
+predicate(Sensors,SubClassOf,Hardware).
+predicate(Setting,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Impairment).
+predicate(Thing,DisjointWith,Human).
+predicate(Thing,DisjointWith,Hardware).
+predicate(Thing,DisjointWith,ClinicalProcess).
+predicate(Software,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isUsing some Metrics).
+predicate(Thing,,DisjointWith,Impairment).
+predicate(Thing,,DisjointWith,Human).
+predicate(Thing,,DisjointWith,ClinicalProcess).
+predicate(SpeechImpairment,is,Class).
+predicate(SpeechImpairment,SubClassOf,Impairment).
+predicate(SpeechTherapy,is,Class).
+predicate(SpeechTherapy,SubClassOf,RehabilitationActivity).
+predicate(TerminologiesAndClassifications,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Therapist,is,Class).
+predicate(Therapist,SubClassOf,Human).
+predicate(TimeSeriesGraph,is,Class).
+predicate(TimeSeriesGraph,SubClassOf,Visualization).
+predicate(TouchScreen,is,Class).
+predicate(TouchScreen,SubClassOf,Hardware).
+predicate(Treatment,is,Class).
+predicate(Treatment,SubClassOf,ClinicalProcess).
+predicate(UpperExtremety,is,Class).
+predicate(UpperExtremety,SubClassOf,Motor).
+predicate(VisualImpairment,is,Class).
+predicate(VisualImpairment,SubClassOf,Impairment).
+predicate(Visualization,is,Class).
+predicate(Visualization,SubClassOf,DataAnalysisSoftware).
+predicate(VitalSigns,is,Class).
+predicate(VitalSigns,SubClassOf,Metrics).
+predicate(fNIRs,is,Class).
+predicate(fNIRs,SubClassOf,BrainActivitySensors,).
+predicate(fNIRs,SubClassOf,hasMeasurementOf some BrainActivity).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(DimitriosZikos,is,Individual).
+predicate(DimitriosZikos,Types,Patient).
+predicate(MySQL,is,Individual).
+predicate(MySQL,Types,DatabaseManagementSystem).
+predicate(OracleDB,is,Individual).
+predicate(OracleDB,Types,DatabaseManagementSystem).
+predicate(VassilisAthitsos,is,Individual).
+predicate(VassilisAthitsos,Types,Therapist).

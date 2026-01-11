@@ -1,0 +1,97 @@
+predicate(es_grado_objetividad_de,is,ObjectProperty).
+predicate(es_tipo_continuidad_de,is,ObjectProperty).
+predicate(es_tipo_estilo_de,is,ObjectProperty).
+predicate(tiene_continuidad_tipo,is,ObjectProperty).
+predicate(tiene_estilo_tipo,is,ObjectProperty).
+predicate(tiene_estilo_tipo,Domain,Indicadores).
+predicate(indirecto,is,Directo/).
+predicate(tiene_grado_objetividad_tipo,is,ObjectProperty).
+predicate(tiene_grado_objetividad_tipo,Domain,Indicadores).
+predicate(tiene_grado_objetividad_tipo,Range,Grado_objetividad).
+predicate(tiene_presencialidad_tipo,is,ObjectProperty).
+predicate(tiene_presencialidad_tipo,Domain,Indicadores).
+predicate(tiene_presencialidad_tipo,Range,No_presencial,).
+predicate(tiene_presencialidad_tipo,Range,Presencial).
+predicate(Adherencia_medicacion,is,Class).
+predicate(Autoevaluaciones,is,Class).
+predicate(Autoevaluaciones,SubClassOf,Indicadores).
+predicate(Base_datos_farmacias,is,Class).
+predicate(Biologicos,is,Class).
+predicate(Biologicos,SubClassOf,Indicadores).
+predicate(CMA,is,Class).
+predicate(CMA,SubClassOf,Medidas_cumplimiento_abastecimiento,).
+predicate(CMA,SubClassOf,tiene_continuidad_tipo only Continuo).
+predicate(CMG,is,Class).
+predicate(CMG,SubClassOf,Medidas_cumplimiento_abastecimiento,).
+predicate(CMG,SubClassOf,tiene_continuidad_tipo only Continuo).
+predicate(CSA,is,Class).
+predicate(CSA,SubClassOf,Medidas_cumplimiento_abastecimiento,).
+predicate(CSA,SubClassOf,tiene_continuidad_tipo only Continuo).
+predicate(CSG,is,Class).
+predicate(CSG,SubClassOf,Medidas_cumplimiento_abastecimiento,).
+predicate(CSG,SubClassOf,tiene_continuidad_tipo only Continuo).
+predicate(Conteo,is,Class).
+predicate(Conteo,SubClassOf,Indicadores).
+predicate(Continuidad,is,Class).
+predicate(Continuo,is,Class).
+predicate(Continuo,SubClassOf,Continuidad,).
+predicate(Continuo,SubClassOf,es_tipo_continuidad_de exactly 1 (CMA or CMG or CSA or CSG or MPR)).
+predicate(Continuo,DisjointWith,Discontinuo).
+predicate(Criterios_STOPPFrail,is,Class).
+predicate(Criterios_STOPPFrail,SubClassOf,Indicadores).
+predicate(Criterios_STOPP_START,is,Class).
+predicate(Criterios_STOPP_START,SubClassOf,Indicadores).
+predicate(Directo,is,Class).
+predicate(indirecto,,is,Directo/).
+predicate(indirecto,,is,es_tipo_estilo_de exactly 1 (Biologicos or Marcadores_biologicos or Observacion_directa or Orina or Piel or Saliva or Sangre)).
+predicate(indirecto,,DisjointWith,Indirecto).
+predicate(Discontinuo,is,Class).
+predicate(Discontinuo,SubClassOf,Continuidad,).
+predicate(Discontinuo,SubClassOf,es_tipo_continuidad_de exactly 1 Variable_dicotomica).
+predicate(Discontinuo,DisjointWith,Continuo).
+predicate(Dispositivos_electronicos,is,Class).
+predicate(Dispositivos_electronicos,SubClassOf,Indicadores).
+predicate(Efectos_adversos_medicamentos,is,Class).
+predicate(Efectos_adversos_medicamentos,SubClassOf,Indicadores).
+predicate(G_Revision,is,Class).
+predicate(G_Revision,DisjointWith,Indicadores).
+predicate(Grado_objetividad,is,Class).
+predicate(Indicadores,is,Class).
+predicate(Indicadores,SubClassOf,Adherencia_medicacion).
+predicate(Indicadores,DisjointWith,G_Revision).
+predicate(Indirecto,is,Class).
+predicate(indirecto,is,Directo/).
+predicate(indirecto,DisjointWith,Directo).
+predicate(Juicio_farmaceutico,is,Class).
+predicate(Juicio_farmaceutico,SubClassOf,Indicadores).
+predicate(MPR,is,Class).
+predicate(MPR,SubClassOf,Medidas_cumplimiento_abastecimiento,).
+predicate(MPR,SubClassOf,tiene_continuidad_tipo only Continuo).
+predicate(Marcadores_biologicos,is,Class).
+predicate(Medidas_cumplimiento_abastecimiento,is,Class).
+predicate(No_presencial,is,Class).
+predicate(Objetivo,is,Class).
+predicate(Objetivo,SubClassOf,Grado_objetividad,).
+predicate(Objetivo,SubClassOf,es_grado_objetividad_de exactly 1 (Base_datos_farmacias or Conteo or Dispositivos_electronicos)).
+predicate(Objetivo,DisjointWith,Subjetivo).
+predicate(Observacion_directa,is,Class).
+predicate(Observacion_directa,SubClassOf,Indicadores).
+predicate(Orina,is,Class).
+predicate(Patrones_derivados_analisis_datos,is,Class).
+predicate(Patrones_derivados_analisis_datos,SubClassOf,Indicadores).
+predicate(Piel,is,Class).
+predicate(Presencial,is,Class).
+predicate(Saliva,is,Class).
+predicate(Sangre,is,Class).
+predicate(Subjetivo,is,Class).
+predicate(Subjetivo,SubClassOf,Grado_objetividad).
+predicate(Subjetivo,DisjointWith,Objetivo).
+predicate(Terapeutica_alcanzada,is,Class).
+predicate(Terapeutica_alcanzada,SubClassOf,Indicadores).
+predicate(Tipos_indicadores,is,Class).
+predicate(Tipos_indicadores,SubClassOf,Indicadores).
+predicate(Variable_dicotomica,is,Class).
+predicate(Variable_dicotomica,SubClassOf,Medidas_cumplimiento_abastecimiento,).
+predicate(Variable_dicotomica,SubClassOf,tiene_continuidad_tipo only Discontinuo).
+predicate(Directo/,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

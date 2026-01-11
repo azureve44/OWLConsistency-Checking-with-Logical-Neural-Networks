@@ -1,0 +1,840 @@
+predicate(BFO_0000050,is,ObjectProperty).
+predicate(RO_0000056,is,ObjectProperty).
+predicate(RO_0000056,Domain,BFO_0000002).
+predicate(RO_0000056,Range,BFO_0000003).
+predicate(RO_0000056,InverseOf,RO_0000057).
+predicate(RO_0000057,is,ObjectProperty).
+predicate(RO_0000057,InverseOf,RO_0000056).
+predicate(RO_0000085,is,ObjectProperty).
+predicate(RO_0000085,Domain,BFO_0000004).
+predicate(RO_0000085,Range,BFO_0000034).
+predicate(RO_0000087,is,ObjectProperty).
+predicate(RO_0000087,Domain,BFO_0000004).
+predicate(RO_0000087,Range,BFO_0000023).
+predicate(RO_0000091,is,ObjectProperty).
+predicate(RO_0000091,Domain,BFO_0000004).
+predicate(RO_0000091,Range,BFO_0000016).
+predicate(RO_0000091,InverseOf,RO_0000092).
+predicate(RO_0000092,is,ObjectProperty).
+predicate(RO_0000092,InverseOf,RO_0000091).
+predicate(RO_0001025,is,ObjectProperty).
+predicate(RO_0001025,Characteristics,Transitive).
+predicate(RO_0001025,Domain,BFO_0000004).
+predicate(RO_0001025,Range,BFO_0000004,).
+predicate(RO_0001025,Range,BFO_0000004 and (not (BFO_0000006))).
+predicate(RO_0002162,is,ObjectProperty).
+predicate(RO_0002454,is,ObjectProperty).
+predicate(RO_0002460,is,ObjectProperty).
+predicate(BFO_0000001,is,Class).
+predicate(BFO_0000002,is,Class).
+predicate(BFO_0000002,SubClassOf,BFO_0000001).
+predicate(BFO_0000002,DisjointWith,BFO_0000050 some BFO_0000003).
+predicate(BFO_0000002,DisjointWith,BFO_0000003).
+predicate(BFO_0000003,is,Class).
+predicate(BFO_0000003,DisjointWith,BFO_0000002).
+predicate(BFO_0000004,is,Class).
+predicate(BFO_0000004,SubClassOf,BFO_0000002).
+predicate(BFO_0000004,DisjointWith,BFO_0000031).
+predicate(BFO_0000004,DisjointWith,BFO_0000020).
+predicate(BFO_0000006,is,Class).
+predicate(BFO_0000016,is,Class).
+predicate(BFO_0000020,is,Class).
+predicate(BFO_0000020,SubClassOf,BFO_0000002).
+predicate(BFO_0000020,DisjointWith,BFO_0000004).
+predicate(BFO_0000023,is,Class).
+predicate(BFO_0000031,is,Class).
+predicate(BFO_0000031,SubClassOf,BFO_0000002).
+predicate(BFO_0000031,DisjointWith,BFO_0000004).
+predicate(BFO_0000034,is,Class).
+predicate(BFO_0000040,is,Class).
+predicate(BFO_0000040,SubClassOf,BFO_0000004).
+predicate(BFO_0000141,is,Class).
+predicate(BFO_0000141,SubClassOf,BFO_0000004).
+predicate(CL_0000182,is,Class).
+predicate(IAO_0000002,is,Class).
+predicate(IAO_8000000,is,Class).
+predicate(IAO_8000014,is,Class).
+predicate(IAO_8000014,SubClassOf,IAO_8000000).
+predicate(IAO_8000015,is,Class).
+predicate(IAO_8000015,SubClassOf,IAO_8000014).
+predicate(IDO_0000403,is,Class).
+predicate(IDO_0000418,is,Class).
+predicate(IDO_0000420,is,Class).
+predicate(IDO_0000420,SubClassOf,IDO_0000418).
+predicate(NCBITaxon_157969,is,Class).
+predicate(NCBITaxon_29176,is,Class).
+predicate(NCBITaxon_29176,SubClassOf,OPL_0000232,).
+predicate(NCBITaxon_29176,SubClassOf,RO_0002454 some NCBITaxon_9611,).
+predicate(NCBITaxon_29176,SubClassOf,RO_0002454 some NCBITaxon_9913).
+predicate(NCBITaxon_40674,is,Class).
+predicate(NCBITaxon_42890,is,Class).
+predicate(NCBITaxon_42890,SubClassOf,OPL_0000232,).
+predicate(NCBITaxon_42890,SubClassOf,RO_0002454 some NCBITaxon_9615).
+predicate(NCBITaxon_56140,is,Class).
+predicate(NCBITaxon_5654,is,Class).
+predicate(NCBITaxon_5654,SubClassOf,OPL_0000232).
+predicate(NCBITaxon_5658,is,Class).
+predicate(NCBITaxon_5658,SubClassOf,NCBITaxon_5654).
+predicate(NCBITaxon_5659,is,Class).
+predicate(NCBITaxon_5659,SubClassOf,NCBITaxon_5658,).
+predicate(NCBITaxon_5659,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5659,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_5659,SubClassOf,RO_0002460 some NCBITaxon_7198).
+predicate(NCBITaxon_5661,is,Class).
+predicate(NCBITaxon_5661,SubClassOf,NCBITaxon_5658,).
+predicate(NCBITaxon_5661,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5661,SubClassOf,RO_0002454 some NCBITaxon_9606,).
+predicate(NCBITaxon_5661,SubClassOf,RO_0002460 some NCBITaxon_7198).
+predicate(NCBITaxon_5664,is,Class).
+predicate(NCBITaxon_5664,SubClassOf,NCBITaxon_5658,).
+predicate(NCBITaxon_5664,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5664,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_5664,SubClassOf,RO_0002460 some NCBITaxon_7198).
+predicate(NCBITaxon_5671,is,Class).
+predicate(NCBITaxon_5671,SubClassOf,NCBITaxon_5658,).
+predicate(NCBITaxon_5671,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5671,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_5671,SubClassOf,RO_0002460 some NCBITaxon_7198).
+predicate(NCBITaxon_5690,is,Class).
+predicate(NCBITaxon_5690,SubClassOf,NCBITaxon_5654).
+predicate(NCBITaxon_5691,is,Class).
+predicate(NCBITaxon_5691,SubClassOf,NCBITaxon_5690,).
+predicate(NCBITaxon_5691,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5691,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_5691,SubClassOf,RO_0002460 some NCBITaxon_7393).
+predicate(NCBITaxon_5693,is,Class).
+predicate(NCBITaxon_5693,SubClassOf,NCBITaxon_5690,).
+predicate(NCBITaxon_5693,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5693,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_5693,SubClassOf,RO_0002460 some NCBITaxon_70999).
+predicate(NCBITaxon_5800,is,Class).
+predicate(NCBITaxon_5800,SubClassOf,OPL_0000232,).
+predicate(NCBITaxon_5800,SubClassOf,RO_0002454 some NCBITaxon_7742).
+predicate(NCBITaxon_5801,is,Class).
+predicate(NCBITaxon_5801,SubClassOf,NCBITaxon_5800,).
+predicate(NCBITaxon_5801,SubClassOf,RO_0002454 some NCBITaxon_9031).
+predicate(NCBITaxon_5802,is,Class).
+predicate(NCBITaxon_5802,SubClassOf,NCBITaxon_5800,).
+predicate(NCBITaxon_5802,SubClassOf,RO_0002454 some NCBITaxon_9031).
+predicate(NCBITaxon_5804,is,Class).
+predicate(NCBITaxon_5804,SubClassOf,NCBITaxon_5800,).
+predicate(NCBITaxon_5804,SubClassOf,RO_0002454 some NCBITaxon_9031).
+predicate(NCBITaxon_5806,is,Class).
+predicate(NCBITaxon_5806,SubClassOf,OPL_0000232).
+predicate(NCBITaxon_5807,is,Class).
+predicate(NCBITaxon_5807,SubClassOf,NCBITaxon_5806,).
+predicate(NCBITaxon_5807,SubClassOf,RO_0002454 some NCBITaxon_40674).
+predicate(NCBITaxon_5811,is,Class).
+predicate(NCBITaxon_5811,SubClassOf,OPL_0000232,).
+predicate(NCBITaxon_5811,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5811,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_5811,SubClassOf,RO_0002460 some NCBITaxon_70999).
+predicate(NCBITaxon_5820,is,Class).
+predicate(NCBITaxon_5820,SubClassOf,OPL_0000232,).
+predicate(NCBITaxon_5820,SubClassOf,RO_0002454 some NCBITaxon_7742,).
+predicate(NCBITaxon_5820,SubClassOf,RO_0002460 some NCBITaxon_7164).
+predicate(NCBITaxon_5821,is,Class).
+predicate(NCBITaxon_5821,SubClassOf,NCBITaxon_5820,).
+predicate(NCBITaxon_5821,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5821,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_5821,SubClassOf,RO_0002460 some NCBITaxon_7164).
+predicate(NCBITaxon_5821,DisjointWith,OPL_0000096).
+predicate(NCBITaxon_5825,is,Class).
+predicate(NCBITaxon_5825,SubClassOf,NCBITaxon_5820,).
+predicate(NCBITaxon_5825,SubClassOf,RO_0002454 some NCBITaxon_9443,).
+predicate(NCBITaxon_5825,SubClassOf,RO_0002460 some NCBITaxon_7164).
+predicate(NCBITaxon_5833,is,Class).
+predicate(NCBITaxon_5833,SubClassOf,NCBITaxon_5820,).
+predicate(NCBITaxon_5833,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5833,SubClassOf,RO_0002454 some NCBITaxon_9606,).
+predicate(NCBITaxon_5833,SubClassOf,RO_0002460 some NCBITaxon_7164).
+predicate(NCBITaxon_5850,is,Class).
+predicate(NCBITaxon_5850,SubClassOf,NCBITaxon_5820,).
+predicate(NCBITaxon_5850,SubClassOf,RO_0002454 some NCBITaxon_9443,).
+predicate(NCBITaxon_5850,SubClassOf,RO_0002460 some NCBITaxon_7164).
+predicate(NCBITaxon_5855,is,Class).
+predicate(NCBITaxon_5855,SubClassOf,NCBITaxon_5820,).
+predicate(NCBITaxon_5855,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_5855,SubClassOf,RO_0002454 some NCBITaxon_7742,).
+predicate(NCBITaxon_5855,SubClassOf,RO_0002460 some NCBITaxon_7164).
+predicate(NCBITaxon_5861,is,Class).
+predicate(NCBITaxon_5861,SubClassOf,NCBITaxon_5820,).
+predicate(NCBITaxon_5861,SubClassOf,RO_0002454 some NCBITaxon_9443,).
+predicate(NCBITaxon_5861,SubClassOf,RO_0002460 some NCBITaxon_7164).
+predicate(NCBITaxon_6181,is,Class).
+predicate(NCBITaxon_6181,SubClassOf,OPL_0000232,).
+predicate(NCBITaxon_6181,SubClassOf,RO_0002454 some NCBITaxon_40674).
+predicate(NCBITaxon_6182,is,Class).
+predicate(NCBITaxon_6182,SubClassOf,NCBITaxon_6181,).
+predicate(NCBITaxon_6182,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_6182,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_6182,SubClassOf,RO_0002460 some NCBITaxon_56140).
+predicate(NCBITaxon_6183,is,Class).
+predicate(NCBITaxon_6183,SubClassOf,NCBITaxon_6181,).
+predicate(NCBITaxon_6183,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_6183,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_6183,SubClassOf,RO_0002460 some NCBITaxon_6525).
+predicate(NCBITaxon_6185,is,Class).
+predicate(NCBITaxon_6185,SubClassOf,NCBITaxon_6181,).
+predicate(NCBITaxon_6185,SubClassOf,RO_0000087 some OPL_0000171,).
+predicate(NCBITaxon_6185,SubClassOf,RO_0002454 some NCBITaxon_40674,).
+predicate(NCBITaxon_6185,SubClassOf,RO_0002460 some NCBITaxon_157969).
+predicate(NCBITaxon_6525,is,Class).
+predicate(NCBITaxon_70999,is,Class).
+predicate(NCBITaxon_7164,is,Class).
+predicate(NCBITaxon_7198,is,Class).
+predicate(NCBITaxon_7393,is,Class).
+predicate(NCBITaxon_7742,is,Class).
+predicate(NCBITaxon_9031,is,Class).
+predicate(NCBITaxon_9443,is,Class).
+predicate(NCBITaxon_9606,is,Class).
+predicate(NCBITaxon_9611,is,Class).
+predicate(NCBITaxon_9615,is,Class).
+predicate(NCBITaxon_9913,is,Class).
+predicate(OBI_0100026,is,Class).
+predicate(OPL_0000002,is,Class).
+predicate(OPL_0000002,SubClassOf,OPL_0000016,).
+predicate(OPL_0000002,SubClassOf,RO_0000056 some OPL_0000102,).
+predicate(OPL_0000002,SubClassOf,RO_0001025 some OPL_0000015,).
+predicate(OPL_0000002,SubClassOf,RO_0001025 some OPL_0000321).
+predicate(OPL_0000008,is,Class).
+predicate(OPL_0000009,is,Class).
+predicate(OPL_0000010,is,Class).
+predicate(OPL_0000011,is,Class).
+predicate(OPL_0000011,SubClassOf,OPL_0000178).
+predicate(OPL_0000012,is,Class).
+predicate(OPL_0000012,SubClassOf,NCBITaxon_6185,).
+predicate(OPL_0000012,SubClassOf,RO_0000056 some OPL_0000069).
+predicate(OPL_0000015,is,Class).
+predicate(OPL_0000016,is,Class).
+predicate(OPL_0000016,SubClassOf,NCBITaxon_5664).
+predicate(OPL_0000020,is,Class).
+predicate(OPL_0000020,SubClassOf,OPL_0000077).
+predicate(OPL_0000021,is,Class).
+predicate(OPL_0000021,SubClassOf,OPL_0000077).
+predicate(OPL_0000023,is,Class).
+predicate(OPL_0000025,is,Class).
+predicate(OPL_0000025,SubClassOf,OPL_0000038).
+predicate(OPL_0000026,is,Class).
+predicate(OPL_0000028,is,Class).
+predicate(OPL_0000029,is,Class).
+predicate(OPL_0000029,SubClassOf,OPL_0000178).
+predicate(OPL_0000030,is,Class).
+predicate(OPL_0000030,SubClassOf,OPL_0000094).
+predicate(OPL_0000032,is,Class).
+predicate(OPL_0000035,is,Class).
+predicate(OPL_0000036,is,Class).
+predicate(OPL_0000037,is,Class).
+predicate(OPL_0000037,SubClassOf,NCBITaxon_6185,).
+predicate(OPL_0000037,SubClassOf,RO_0000056 some OPL_0000091).
+predicate(OPL_0000038,is,Class).
+predicate(OPL_0000038,SubClassOf,NCBITaxon_6183,).
+predicate(OPL_0000038,SubClassOf,RO_0000056 some OPL_0000100).
+predicate(OPL_0000039,is,Class).
+predicate(OPL_0000039,SubClassOf,OPL_0000077).
+predicate(OPL_0000040,is,Class).
+predicate(OPL_0000040,SubClassOf,OPL_0000312).
+predicate(OPL_0000041,is,Class).
+predicate(OPL_0000042,is,Class).
+predicate(OPL_0000043,is,Class).
+predicate(OPL_0000043,SubClassOf,NCBITaxon_6182,).
+predicate(OPL_0000043,SubClassOf,RO_0000056 some OPL_0000009).
+predicate(OPL_0000049,is,Class).
+predicate(OPL_0000049,SubClassOf,NCBITaxon_5693,).
+predicate(OPL_0000049,SubClassOf,RO_0000056 some OPL_0000223,).
+predicate(OPL_0000049,SubClassOf,RO_0001025 some OPL_0000088).
+predicate(OPL_0000050,is,Class).
+predicate(OPL_0000050,SubClassOf,OPL_0000249,).
+predicate(OPL_0000050,SubClassOf,OPL_0000269,).
+predicate(OPL_0000050,SubClassOf,RO_0000056 some OPL_0000010,).
+predicate(OPL_0000050,SubClassOf,RO_0001025 some OPL_0000032,).
+predicate(OPL_0000050,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000051,is,Class).
+predicate(OPL_0000051,SubClassOf,OPL_0000126).
+predicate(OPL_0000052,is,Class).
+predicate(OPL_0000052,SubClassOf,NCBITaxon_6182,).
+predicate(OPL_0000052,SubClassOf,RO_0000056 some OPL_0000072).
+predicate(OPL_0000053,is,Class).
+predicate(OPL_0000053,SubClassOf,OPL_0000126).
+predicate(OPL_0000057,is,Class).
+predicate(OPL_0000059,is,Class).
+predicate(OPL_0000060,is,Class).
+predicate(OPL_0000060,SubClassOf,NCBITaxon_5833,).
+predicate(OPL_0000060,SubClassOf,OPL_0000275,).
+predicate(OPL_0000060,SubClassOf,RO_0000056 some OPL_0000158,).
+predicate(OPL_0000060,SubClassOf,RO_0001025 some OPL_0000040,).
+predicate(OPL_0000060,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000061,is,Class).
+predicate(OPL_0000061,SubClassOf,NCBITaxon_5693).
+predicate(OPL_0000067,is,Class).
+predicate(OPL_0000067,SubClassOf,OPL_0000038).
+predicate(OPL_0000068,is,Class).
+predicate(OPL_0000069,is,Class).
+predicate(OPL_0000071,is,Class).
+predicate(OPL_0000072,is,Class).
+predicate(OPL_0000073,is,Class).
+predicate(OPL_0000075,is,Class).
+predicate(OPL_0000077,is,Class).
+predicate(OPL_0000077,SubClassOf,NCBITaxon_6182,).
+predicate(OPL_0000077,SubClassOf,RO_0000056 some OPL_0000118).
+predicate(OPL_0000078,is,Class).
+predicate(OPL_0000079,is,Class).
+predicate(OPL_0000079,SubClassOf,NCBITaxon_6185,).
+predicate(OPL_0000079,SubClassOf,RO_0000056 some OPL_0000101).
+predicate(OPL_0000084,is,Class).
+predicate(OPL_0000085,is,Class).
+predicate(OPL_0000087,is,Class).
+predicate(OPL_0000087,SubClassOf,OPL_0000037).
+predicate(OPL_0000088,is,Class).
+predicate(OPL_0000089,is,Class).
+predicate(OPL_0000089,SubClassOf,NCBITaxon_5833,).
+predicate(OPL_0000089,SubClassOf,OPL_0000274,).
+predicate(OPL_0000089,SubClassOf,RO_0000056 some OPL_0000187,).
+predicate(OPL_0000089,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000090,is,Class).
+predicate(OPL_0000090,SubClassOf,OPL_0000128,).
+predicate(OPL_0000090,SubClassOf,RO_0000056 some OPL_0000107,).
+predicate(OPL_0000090,SubClassOf,RO_0001025 some OPL_0000317).
+predicate(OPL_0000091,is,Class).
+predicate(OPL_0000092,is,Class).
+predicate(OPL_0000092,SubClassOf,NCBITaxon_5691).
+predicate(OPL_0000093,is,Class).
+predicate(OPL_0000094,is,Class).
+predicate(OPL_0000094,SubClassOf,NCBITaxon_6182,).
+predicate(OPL_0000094,SubClassOf,RO_0000056 some OPL_0000186).
+predicate(OPL_0000096,is,Class).
+predicate(OPL_0000096,DisjointWith,NCBITaxon_5821).
+predicate(OPL_0000099,is,Class).
+predicate(OPL_0000099,SubClassOf,OPL_0000037).
+predicate(OPL_0000100,is,Class).
+predicate(OPL_0000101,is,Class).
+predicate(OPL_0000102,is,Class).
+predicate(OPL_0000103,is,Class).
+predicate(OPL_0000105,is,Class).
+predicate(OPL_0000105,SubClassOf,NCBITaxon_6183,).
+predicate(OPL_0000105,SubClassOf,RO_0000056 some OPL_0000135).
+predicate(OPL_0000107,is,Class).
+predicate(OPL_0000109,is,Class).
+predicate(OPL_0000109,SubClassOf,OPL_0000166).
+predicate(OPL_0000110,is,Class).
+predicate(OPL_0000110,SubClassOf,OPL_0000060,).
+predicate(OPL_0000110,SubClassOf,OPL_0000276,).
+predicate(OPL_0000110,SubClassOf,RO_0000056 some OPL_0000035,).
+predicate(OPL_0000110,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000112,is,Class).
+predicate(OPL_0000113,is,Class).
+predicate(OPL_0000115,is,Class).
+predicate(OPL_0000117,is,Class).
+predicate(OPL_0000118,is,Class).
+predicate(OPL_0000121,is,Class).
+predicate(OPL_0000123,is,Class).
+predicate(OPL_0000123,SubClassOf,OPL_0000038).
+predicate(OPL_0000125,is,Class).
+predicate(OPL_0000126,is,Class).
+predicate(OPL_0000126,SubClassOf,NCBITaxon_6182,).
+predicate(OPL_0000126,SubClassOf,RO_0000056 some OPL_0000071).
+predicate(OPL_0000127,is,Class).
+predicate(OPL_0000128,is,Class).
+predicate(OPL_0000128,SubClassOf,NCBITaxon_6183,).
+predicate(OPL_0000128,SubClassOf,RO_0000056 some OPL_0000211).
+predicate(OPL_0000130,is,Class).
+predicate(OPL_0000130,SubClassOf,NCBITaxon_5833,).
+predicate(OPL_0000130,SubClassOf,OPL_0000270,).
+predicate(OPL_0000130,SubClassOf,RO_0000056 some OPL_0000103,).
+predicate(OPL_0000130,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000132,is,Class).
+predicate(OPL_0000132,SubClassOf,OPL_0000077,).
+predicate(OPL_0000132,SubClassOf,RO_0000056 some OPL_0000195,).
+predicate(OPL_0000132,SubClassOf,RO_0001025 some OPL_0000314).
+predicate(OPL_0000135,is,Class).
+predicate(OPL_0000136,is,Class).
+predicate(OPL_0000136,SubClassOf,OPL_0000128).
+predicate(OPL_0000137,is,Class).
+predicate(OPL_0000137,SubClassOf,NCBITaxon_5833,).
+predicate(OPL_0000137,SubClassOf,OPL_0000278,).
+predicate(OPL_0000137,SubClassOf,RO_0000056 some OPL_0000115,).
+predicate(OPL_0000137,SubClassOf,RO_0001025 some OPL_0000040,).
+predicate(OPL_0000137,SubClassOf,RO_0001025 some OPL_0000117,).
+predicate(OPL_0000137,SubClassOf,RO_0001025 some OPL_0000121).
+predicate(OPL_0000138,is,Class).
+predicate(OPL_0000138,SubClassOf,NCBITaxon_5833,).
+predicate(OPL_0000138,SubClassOf,OPL_0000273,).
+predicate(OPL_0000138,SubClassOf,RO_0000056 some OPL_0000113,).
+predicate(OPL_0000138,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000140,is,Class).
+predicate(OPL_0000143,is,Class).
+predicate(OPL_0000144,is,Class).
+predicate(OPL_0000144,SubClassOf,OPL_0000166).
+predicate(OPL_0000145,is,Class).
+predicate(OPL_0000145,SubClassOf,OPL_0000094).
+predicate(OPL_0000146,is,Class).
+predicate(OPL_0000146,SubClassOf,NCBITaxon_5833,).
+predicate(OPL_0000146,SubClassOf,OPL_0000281,).
+predicate(OPL_0000146,SubClassOf,RO_0000056 some OPL_0000251,).
+predicate(OPL_0000146,SubClassOf,RO_0001025 some OPL_0000040,).
+predicate(OPL_0000146,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000147,is,Class).
+predicate(OPL_0000147,SubClassOf,NCBITaxon_6183,).
+predicate(OPL_0000147,SubClassOf,RO_0000056 some OPL_0000041).
+predicate(OPL_0000150,is,Class).
+predicate(OPL_0000152,is,Class).
+predicate(OPL_0000153,is,Class).
+predicate(OPL_0000157,is,Class).
+predicate(OPL_0000158,is,Class).
+predicate(OPL_0000161,is,Class).
+predicate(OPL_0000161,SubClassOf,NCBITaxon_5833,).
+predicate(OPL_0000161,SubClassOf,OPL_0000285,).
+predicate(OPL_0000161,SubClassOf,RO_0000056 some OPL_0000199,).
+predicate(OPL_0000161,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000162,is,Class).
+predicate(OPL_0000162,SubClassOf,OPL_0000050).
+predicate(OPL_0000164,is,Class).
+predicate(OPL_0000164,SubClassOf,NCBITaxon_5693).
+predicate(OPL_0000166,is,Class).
+predicate(OPL_0000166,SubClassOf,NCBITaxon_6185,).
+predicate(OPL_0000166,SubClassOf,RO_0000056 some OPL_0000008).
+predicate(OPL_0000167,is,Class).
+predicate(OPL_0000167,SubClassOf,OPL_0000258,).
+predicate(OPL_0000167,SubClassOf,OPL_0000265,).
+predicate(OPL_0000167,SubClassOf,RO_0000056 some OPL_0000075,).
+predicate(OPL_0000167,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000168,is,Class).
+predicate(OPL_0000168,SubClassOf,NCBITaxon_6183,).
+predicate(OPL_0000168,SubClassOf,RO_0000056 some OPL_0000210).
+predicate(OPL_0000170,is,Class).
+predicate(OPL_0000171,is,Class).
+predicate(OPL_0000174,is,Class).
+predicate(OPL_0000174,SubClassOf,OPL_0000258,).
+predicate(OPL_0000174,SubClassOf,OPL_0000266,).
+predicate(OPL_0000174,SubClassOf,RO_0000056 some OPL_0000170,).
+predicate(OPL_0000174,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000178,is,Class).
+predicate(OPL_0000178,SubClassOf,NCBITaxon_6185,).
+predicate(OPL_0000178,SubClassOf,RO_0000056 some OPL_0000197).
+predicate(OPL_0000179,is,Class).
+predicate(OPL_0000179,SubClassOf,NCBITaxon_6182,).
+predicate(OPL_0000179,SubClassOf,RO_0000056 some OPL_0000023).
+predicate(OPL_0000182,is,Class).
+predicate(OPL_0000182,SubClassOf,NCBITaxon_5691).
+predicate(OPL_0000186,is,Class).
+predicate(OPL_0000187,is,Class).
+predicate(OPL_0000190,is,Class).
+predicate(OPL_0000190,SubClassOf,OPL_0000060,).
+predicate(OPL_0000190,SubClassOf,OPL_0000277,).
+predicate(OPL_0000190,SubClassOf,RO_0000056 some OPL_0000093,).
+predicate(OPL_0000190,SubClassOf,RO_0001025 some OPL_0000040).
+predicate(OPL_0000191,is,Class).
+predicate(OPL_0000191,SubClassOf,OPL_0000147).
+predicate(OPL_0000192,is,Class).
+predicate(OPL_0000195,is,Class).
+predicate(OPL_0000196,is,Class).
+predicate(OPL_0000196,SubClassOf,OPL_0000147).
+predicate(OPL_0000197,is,Class).
+predicate(OPL_0000199,is,Class).
+predicate(OPL_0000200,is,Class).
+predicate(OPL_0000200,SubClassOf,NCBITaxon_6185,).
+predicate(OPL_0000200,SubClassOf,RO_0000056 some OPL_0000125).
+predicate(OPL_0000201,is,Class).
+predicate(OPL_0000201,SubClassOf,OPL_0000178).
+predicate(OPL_0000204,is,Class).
+predicate(OPL_0000204,SubClassOf,NCBITaxon_5664,).
+predicate(OPL_0000204,SubClassOf,RO_0000056 some OPL_0000157,).
+predicate(OPL_0000204,SubClassOf,RO_0001025 some OPL_0000321).
+predicate(OPL_0000205,is,Class).
+predicate(OPL_0000205,SubClassOf,OPL_0000178).
+predicate(OPL_0000206,is,Class).
+predicate(OPL_0000206,SubClassOf,OPL_0000249,).
+predicate(OPL_0000206,SubClassOf,OPL_0000268,).
+predicate(OPL_0000206,SubClassOf,RO_0000056 some OPL_0000068,).
+predicate(OPL_0000206,SubClassOf,RO_0001025 some OPL_0000032,).
+predicate(OPL_0000206,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000207,is,Class).
+predicate(OPL_0000208,is,Class).
+predicate(OPL_0000208,SubClassOf,NCBITaxon_6183,).
+predicate(OPL_0000208,SubClassOf,RO_0000056 some OPL_0000112).
+predicate(OPL_0000210,is,Class).
+predicate(OPL_0000211,is,Class).
+predicate(OPL_0000218,is,Class).
+predicate(OPL_0000218,SubClassOf,OPL_0000038).
+predicate(OPL_0000222,is,Class).
+predicate(OPL_0000222,SubClassOf,OPL_0000244,).
+predicate(OPL_0000222,SubClassOf,OPL_0000283,).
+predicate(OPL_0000222,SubClassOf,RO_0000056 some OPL_0000042).
+predicate(OPL_0000223,is,Class).
+predicate(OPL_0000225,is,Class).
+predicate(OPL_0000225,EquivalentTo,OPL_0000239 and (RO_0002162 some NCBITaxon_6182)).
+predicate(OPL_0000225,SubClassOf,OPL_0000239,).
+predicate(OPL_0000225,SubClassOf,OPL_0000309).
+predicate(OPL_0000226,is,Class).
+predicate(OPL_0000226,SubClassOf,OPL_0000126).
+predicate(OPL_0000227,is,Class).
+predicate(OPL_0000227,SubClassOf,OPL_0000128).
+predicate(OPL_0000232,is,Class).
+predicate(OPL_0000232,EquivalentTo,OBI_0100026 and (RO_0000087 some IDO_0000403)).
+predicate(OPL_0000232,SubClassOf,OBI_0100026).
+predicate(OPL_0000233,is,Class).
+predicate(OPL_0000233,SubClassOf,OPL_0000037).
+predicate(OPL_0000234,is,Class).
+predicate(OPL_0000234,EquivalentTo,OPL_0000127 and (RO_0002162 some NCBITaxon_6185)).
+predicate(OPL_0000234,SubClassOf,OPL_0000127,).
+predicate(OPL_0000234,SubClassOf,OPL_0000308).
+predicate(OPL_0000236,is,Class).
+predicate(OPL_0000236,EquivalentTo,OPL_0000127 and (RO_0002162 some NCBITaxon_6183)).
+predicate(OPL_0000236,SubClassOf,OPL_0000127,).
+predicate(OPL_0000236,SubClassOf,OPL_0000319).
+predicate(OPL_0000236,DisjointWith,OPL_0000127 and (RO_0002162 some NCBITaxon_6183)).
+predicate(OPL_0000239,is,Class).
+predicate(OPL_0000241,is,Class).
+predicate(OPL_0000241,SubClassOf,OPL_0000130,).
+predicate(OPL_0000241,SubClassOf,OPL_0000272,).
+predicate(OPL_0000241,SubClassOf,RO_0000056 some OPL_0000246).
+predicate(OPL_0000242,is,Class).
+predicate(OPL_0000242,SubClassOf,OPL_0000130,).
+predicate(OPL_0000242,SubClassOf,OPL_0000271,).
+predicate(OPL_0000242,SubClassOf,RO_0000056 some OPL_0000245).
+predicate(OPL_0000243,is,Class).
+predicate(OPL_0000244,is,Class).
+predicate(OPL_0000244,SubClassOf,OPL_0000146,).
+predicate(OPL_0000244,SubClassOf,OPL_0000282,).
+predicate(OPL_0000244,SubClassOf,RO_0000056 some OPL_0000207,).
+predicate(OPL_0000244,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000245,is,Class).
+predicate(OPL_0000246,is,Class).
+predicate(OPL_0000247,is,Class).
+predicate(OPL_0000248,is,Class).
+predicate(OPL_0000249,is,Class).
+predicate(OPL_0000249,SubClassOf,NCBITaxon_5833,).
+predicate(OPL_0000249,SubClassOf,OPL_0000267,).
+predicate(OPL_0000249,SubClassOf,RO_0000056 some OPL_0000192,).
+predicate(OPL_0000249,SubClassOf,RO_0001025 some OPL_0000032,).
+predicate(OPL_0000249,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000250,is,Class).
+predicate(OPL_0000251,is,Class).
+predicate(OPL_0000252,is,Class).
+predicate(OPL_0000253,is,Class).
+predicate(OPL_0000254,is,Class).
+predicate(OPL_0000255,is,Class).
+predicate(OPL_0000255,SubClassOf,OPL_0000137,).
+predicate(OPL_0000255,SubClassOf,OPL_0000280,).
+predicate(OPL_0000255,SubClassOf,RO_0000056 some OPL_0000254).
+predicate(OPL_0000256,is,Class).
+predicate(OPL_0000257,is,Class).
+predicate(OPL_0000257,SubClassOf,OPL_0000146,).
+predicate(OPL_0000257,SubClassOf,OPL_0000284,).
+predicate(OPL_0000257,SubClassOf,RO_0000056 some OPL_0000250,).
+predicate(OPL_0000257,SubClassOf,RO_0001025 some OPL_0000040).
+predicate(OPL_0000258,is,Class).
+predicate(OPL_0000258,SubClassOf,NCBITaxon_5833,).
+predicate(OPL_0000258,SubClassOf,OPL_0000264,).
+predicate(OPL_0000258,SubClassOf,RO_0000056 some OPL_0000262,).
+predicate(OPL_0000258,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000259,is,Class).
+predicate(OPL_0000259,SubClassOf,OPL_0000137,).
+predicate(OPL_0000259,SubClassOf,OPL_0000279,).
+predicate(OPL_0000259,SubClassOf,RO_0000056 some OPL_0000252).
+predicate(OPL_0000260,is,Class).
+predicate(OPL_0000261,is,Class).
+predicate(OPL_0000262,is,Class).
+predicate(OPL_0000264,is,Class).
+predicate(OPL_0000264,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000260)).
+predicate(OPL_0000264,SubClassOf,NCBITaxon_5820).
+predicate(OPL_0000265,is,Class).
+predicate(OPL_0000265,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000085)).
+predicate(OPL_0000265,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000265,SubClassOf,OPL_0000264,).
+predicate(OPL_0000265,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000266,is,Class).
+predicate(OPL_0000266,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000026)).
+predicate(OPL_0000266,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000266,SubClassOf,OPL_0000264,).
+predicate(OPL_0000266,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000267,is,Class).
+predicate(OPL_0000267,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000150)).
+predicate(OPL_0000267,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000267,SubClassOf,OPL_0000050).
+predicate(OPL_0000268,is,Class).
+predicate(OPL_0000268,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000028)).
+predicate(OPL_0000268,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000268,SubClassOf,OPL_0000267,).
+predicate(OPL_0000268,SubClassOf,RO_0001025 some OPL_0000032,).
+predicate(OPL_0000268,SubClassOf,RO_0001025 some OPL_0000311).
+predicate(OPL_0000269,is,Class).
+predicate(OPL_0000269,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000143)).
+predicate(OPL_0000269,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000269,SubClassOf,OPL_0000267,).
+predicate(OPL_0000269,SubClassOf,RO_0001025 some OPL_0000032,).
+predicate(OPL_0000269,SubClassOf,RO_0001025 some OPL_0000311).
+predicate(OPL_0000270,is,Class).
+predicate(OPL_0000270,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000036)).
+predicate(OPL_0000270,SubClassOf,NCBITaxon_5820).
+predicate(OPL_0000271,is,Class).
+predicate(OPL_0000271,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000248)).
+predicate(OPL_0000271,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000271,SubClassOf,OPL_0000270).
+predicate(OPL_0000272,is,Class).
+predicate(OPL_0000272,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000247)).
+predicate(OPL_0000272,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000272,SubClassOf,OPL_0000270).
+predicate(OPL_0000273,is,Class).
+predicate(OPL_0000273,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000073)).
+predicate(OPL_0000273,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000273,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000274,is,Class).
+predicate(OPL_0000274,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000153)).
+predicate(OPL_0000274,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000274,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000275,is,Class).
+predicate(OPL_0000275,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000084)).
+predicate(OPL_0000275,SubClassOf,NCBITaxon_5820).
+predicate(OPL_0000276,is,Class).
+predicate(OPL_0000276,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000078)).
+predicate(OPL_0000276,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000276,SubClassOf,OPL_0000275,).
+predicate(OPL_0000276,SubClassOf,RO_0001025 some OPL_0000311).
+predicate(OPL_0000277,is,Class).
+predicate(OPL_0000277,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000059)).
+predicate(OPL_0000277,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000277,SubClassOf,OPL_0000275,).
+predicate(OPL_0000277,SubClassOf,RO_0001025 some OPL_0000312).
+predicate(OPL_0000278,is,Class).
+predicate(OPL_0000278,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000152)).
+predicate(OPL_0000278,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000278,SubClassOf,RO_0001025 some OPL_0000121,).
+predicate(OPL_0000278,SubClassOf,RO_0001025 some OPL_0000310,).
+predicate(OPL_0000278,SubClassOf,RO_0001025 some OPL_0000312).
+predicate(OPL_0000279,is,Class).
+predicate(OPL_0000279,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000256)).
+predicate(OPL_0000279,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000279,SubClassOf,OPL_0000278).
+predicate(OPL_0000280,is,Class).
+predicate(OPL_0000280,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000253)).
+predicate(OPL_0000280,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000280,SubClassOf,OPL_0000278).
+predicate(OPL_0000281,is,Class).
+predicate(OPL_0000281,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000057)).
+predicate(OPL_0000281,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000281,SubClassOf,RO_0001025 some OPL_0000311,).
+predicate(OPL_0000281,SubClassOf,RO_0001025 some OPL_0000312).
+predicate(OPL_0000282,is,Class).
+predicate(OPL_0000282,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000243)).
+predicate(OPL_0000282,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000282,SubClassOf,OPL_0000281,).
+predicate(OPL_0000282,SubClassOf,RO_0001025 some OPL_0000311).
+predicate(OPL_0000283,is,Class).
+predicate(OPL_0000283,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000140)).
+predicate(OPL_0000283,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000283,SubClassOf,OPL_0000282).
+predicate(OPL_0000284,is,Class).
+predicate(OPL_0000284,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some OPL_0000261)).
+predicate(OPL_0000284,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000284,SubClassOf,OPL_0000281,).
+predicate(OPL_0000284,SubClassOf,RO_0001025 some OPL_0000312).
+predicate(OPL_0000285,is,Class).
+predicate(OPL_0000285,EquivalentTo,NCBITaxon_5820 and (RO_0000056 some UBERON_0000106)).
+predicate(OPL_0000285,SubClassOf,NCBITaxon_5820,).
+predicate(OPL_0000285,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000308,is,Class).
+predicate(OPL_0000309,is,Class).
+predicate(OPL_0000310,is,Class).
+predicate(OPL_0000311,is,Class).
+predicate(OPL_0000312,is,Class).
+predicate(OPL_0000312,EquivalentTo,CL_0000182 and (BFO_0000050 some NCBITaxon_7742)).
+predicate(OPL_0000312,SubClassOf,CL_0000182).
+predicate(OPL_0000314,is,Class).
+predicate(OPL_0000317,is,Class).
+predicate(OPL_0000319,is,Class).
+predicate(OPL_0000321,is,Class).
+predicate(OPL_0000326,is,Class).
+predicate(OPL_0000326,SubClassOf,NCBITaxon_5855,).
+predicate(OPL_0000326,SubClassOf,OPL_0000274,).
+predicate(OPL_0000326,SubClassOf,RO_0000056 some OPL_0000347,).
+predicate(OPL_0000326,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000327,is,Class).
+predicate(OPL_0000327,SubClassOf,NCBITaxon_5855,).
+predicate(OPL_0000327,SubClassOf,OPL_0000278,).
+predicate(OPL_0000327,SubClassOf,RO_0000056 some OPL_0000348,).
+predicate(OPL_0000327,SubClassOf,RO_0001025 some OPL_0000040,).
+predicate(OPL_0000327,SubClassOf,RO_0001025 some OPL_0000117,).
+predicate(OPL_0000327,SubClassOf,RO_0001025 some OPL_0000121).
+predicate(OPL_0000328,is,Class).
+predicate(OPL_0000328,SubClassOf,NCBITaxon_5855,).
+predicate(OPL_0000328,SubClassOf,OPL_0000270,).
+predicate(OPL_0000328,SubClassOf,RO_0000056 some OPL_0000349,).
+predicate(OPL_0000328,SubClassOf,RO_0001025 some OPL_0000096,).
+predicate(OPL_0000328,SubClassOf,RO_0001025 only NCBITaxon_5821).
+predicate(OPL_0000329,is,Class).
+predicate(OPL_0000329,SubClassOf,NCBITaxon_5855,).
+predicate(OPL_0000329,SubClassOf,OPL_0000267,).
+predicate(OPL_0000329,SubClassOf,RO_0000056 some OPL_0000350,).
+predicate(OPL_0000329,SubClassOf,RO_0001025 some OPL_0000032,).
+predicate(OPL_0000329,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000330,is,Class).
+predicate(OPL_0000330,SubClassOf,NCBITaxon_5821,).
+predicate(OPL_0000330,SubClassOf,OPL_0000278,).
+predicate(OPL_0000330,SubClassOf,RO_0000056 some OPL_0000351,).
+predicate(OPL_0000330,SubClassOf,RO_0001025 some OPL_0000040,).
+predicate(OPL_0000330,SubClassOf,RO_0001025 some OPL_0000117,).
+predicate(OPL_0000330,SubClassOf,RO_0001025 some OPL_0000121).
+predicate(OPL_0000331,is,Class).
+predicate(OPL_0000331,SubClassOf,NCBITaxon_5821,).
+predicate(OPL_0000331,SubClassOf,OPL_0000270,).
+predicate(OPL_0000331,SubClassOf,RO_0000056 some OPL_0000352,).
+predicate(OPL_0000331,SubClassOf,RO_0001025 some OPL_0000096).
+predicate(OPL_0000332,is,Class).
+predicate(OPL_0000332,SubClassOf,NCBITaxon_29176,).
+predicate(OPL_0000332,SubClassOf,RO_0000056 some OPL_0000353,).
+predicate(OPL_0000332,SubClassOf,RO_0001025 some NCBITaxon_9611).
+predicate(OPL_0000333,is,Class).
+predicate(OPL_0000333,SubClassOf,NCBITaxon_5804,).
+predicate(OPL_0000333,SubClassOf,RO_0000056 some OPL_0000354,).
+predicate(OPL_0000333,SubClassOf,RO_0001025 some OPL_0000368).
+predicate(OPL_0000334,is,Class).
+predicate(OPL_0000334,SubClassOf,NCBITaxon_5802,).
+predicate(OPL_0000334,SubClassOf,RO_0000056 some OPL_0000355,).
+predicate(OPL_0000334,SubClassOf,RO_0001025 some OPL_0000371).
+predicate(OPL_0000335,is,Class).
+predicate(OPL_0000335,SubClassOf,NCBITaxon_5802,).
+predicate(OPL_0000335,SubClassOf,RO_0000056 some OPL_0000356,).
+predicate(OPL_0000335,SubClassOf,RO_0001025 some OPL_0000370).
+predicate(OPL_0000336,is,Class).
+predicate(OPL_0000336,SubClassOf,NCBITaxon_42890,).
+predicate(OPL_0000336,SubClassOf,RO_0000056 some OPL_0000357,).
+predicate(OPL_0000336,SubClassOf,RO_0001025 some OPL_0000369).
+predicate(OPL_0000337,is,Class).
+predicate(OPL_0000337,SubClassOf,NCBITaxon_42890,).
+predicate(OPL_0000337,SubClassOf,RO_0000056 some OPL_0000358,).
+predicate(OPL_0000337,SubClassOf,RO_0001025 some OPL_0000372).
+predicate(OPL_0000338,is,Class).
+predicate(OPL_0000338,SubClassOf,NCBITaxon_5811,).
+predicate(OPL_0000338,SubClassOf,RO_0000056 some OPL_0000359,).
+predicate(OPL_0000338,SubClassOf,RO_0001025 some NCBITaxon_40674).
+predicate(OPL_0000339,is,Class).
+predicate(OPL_0000339,SubClassOf,NCBITaxon_5811,).
+predicate(OPL_0000339,SubClassOf,RO_0000056 some OPL_0000360,).
+predicate(OPL_0000339,SubClassOf,RO_0001025 some NCBITaxon_70999).
+predicate(OPL_0000340,is,Class).
+predicate(OPL_0000340,SubClassOf,NCBITaxon_5811,).
+predicate(OPL_0000340,SubClassOf,RO_0000056 some OPL_0000361,).
+predicate(OPL_0000340,SubClassOf,RO_0001025 some OPL_0000088).
+predicate(OPL_0000341,is,Class).
+predicate(OPL_0000341,SubClassOf,NCBITaxon_5659).
+predicate(OPL_0000342,is,Class).
+predicate(OPL_0000342,SubClassOf,NCBITaxon_5659).
+predicate(OPL_0000343,is,Class).
+predicate(OPL_0000343,SubClassOf,NCBITaxon_5661).
+predicate(OPL_0000344,is,Class).
+predicate(OPL_0000344,SubClassOf,NCBITaxon_5661).
+predicate(OPL_0000345,is,Class).
+predicate(OPL_0000345,SubClassOf,NCBITaxon_5671).
+predicate(OPL_0000346,is,Class).
+predicate(OPL_0000346,SubClassOf,NCBITaxon_5671).
+predicate(OPL_0000347,is,Class).
+predicate(OPL_0000348,is,Class).
+predicate(OPL_0000349,is,Class).
+predicate(OPL_0000350,is,Class).
+predicate(OPL_0000351,is,Class).
+predicate(OPL_0000352,is,Class).
+predicate(OPL_0000353,is,Class).
+predicate(OPL_0000354,is,Class).
+predicate(OPL_0000355,is,Class).
+predicate(OPL_0000356,is,Class).
+predicate(OPL_0000357,is,Class).
+predicate(OPL_0000358,is,Class).
+predicate(OPL_0000359,is,Class).
+predicate(OPL_0000360,is,Class).
+predicate(OPL_0000361,is,Class).
+predicate(OPL_0000368,is,Class).
+predicate(OPL_0000369,is,Class).
+predicate(OPL_0000370,is,Class).
+predicate(OPL_0000371,is,Class).
+predicate(OPL_0000372,is,Class).
+predicate(OPL_0000384,is,Class).
+predicate(OPL_0000384,SubClassOf,NCBITaxon_5861,).
+predicate(OPL_0000384,SubClassOf,OPL_0000274,).
+predicate(OPL_0000384,SubClassOf,RO_0000056 some OPL_0000399,).
+predicate(OPL_0000384,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000385,is,Class).
+predicate(OPL_0000385,SubClassOf,NCBITaxon_5861,).
+predicate(OPL_0000385,SubClassOf,OPL_0000278,).
+predicate(OPL_0000385,SubClassOf,RO_0000056 some OPL_0000400).
+predicate(OPL_0000386,is,Class).
+predicate(OPL_0000386,SubClassOf,NCBITaxon_5861,).
+predicate(OPL_0000386,SubClassOf,OPL_0000270,).
+predicate(OPL_0000386,SubClassOf,RO_0000056 some OPL_0000401,).
+predicate(OPL_0000386,SubClassOf,RO_0001025 some OPL_0000414).
+predicate(OPL_0000387,is,Class).
+predicate(OPL_0000387,SubClassOf,NCBITaxon_5861,).
+predicate(OPL_0000387,SubClassOf,OPL_0000267,).
+predicate(OPL_0000387,SubClassOf,RO_0000056 some OPL_0000402,).
+predicate(OPL_0000387,SubClassOf,RO_0001025 some OPL_0000414).
+predicate(OPL_0000388,is,Class).
+predicate(OPL_0000388,SubClassOf,NCBITaxon_5825,).
+predicate(OPL_0000388,SubClassOf,OPL_0000274,).
+predicate(OPL_0000388,SubClassOf,RO_0000056 some OPL_0000403,).
+predicate(OPL_0000388,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000389,is,Class).
+predicate(OPL_0000389,SubClassOf,NCBITaxon_5825,).
+predicate(OPL_0000389,SubClassOf,OPL_0000278,).
+predicate(OPL_0000389,SubClassOf,RO_0000056 some OPL_0000404).
+predicate(OPL_0000390,is,Class).
+predicate(OPL_0000390,SubClassOf,NCBITaxon_5825,).
+predicate(OPL_0000390,SubClassOf,OPL_0000270,).
+predicate(OPL_0000390,SubClassOf,RO_0000056 some OPL_0000405,).
+predicate(OPL_0000390,SubClassOf,RO_0001025 some OPL_0000414).
+predicate(OPL_0000391,is,Class).
+predicate(OPL_0000391,SubClassOf,NCBITaxon_5825,).
+predicate(OPL_0000391,SubClassOf,OPL_0000267,).
+predicate(OPL_0000391,SubClassOf,RO_0000056 some OPL_0000406,).
+predicate(OPL_0000391,SubClassOf,RO_0001025 some OPL_0000414).
+predicate(OPL_0000392,is,Class).
+predicate(OPL_0000392,SubClassOf,NCBITaxon_5850,).
+predicate(OPL_0000392,SubClassOf,OPL_0000274,).
+predicate(OPL_0000392,SubClassOf,RO_0000056 some OPL_0000407,).
+predicate(OPL_0000392,SubClassOf,RO_0001025 some OPL_0000032).
+predicate(OPL_0000393,is,Class).
+predicate(OPL_0000393,SubClassOf,NCBITaxon_5850,).
+predicate(OPL_0000393,SubClassOf,OPL_0000278,).
+predicate(OPL_0000393,SubClassOf,RO_0000056 some OPL_0000408).
+predicate(OPL_0000394,is,Class).
+predicate(OPL_0000394,SubClassOf,NCBITaxon_5850,).
+predicate(OPL_0000394,SubClassOf,OPL_0000270,).
+predicate(OPL_0000394,SubClassOf,RO_0000056 some OPL_0000409,).
+predicate(OPL_0000394,SubClassOf,RO_0001025 some OPL_0000414).
+predicate(OPL_0000395,is,Class).
+predicate(OPL_0000395,SubClassOf,NCBITaxon_5850,).
+predicate(OPL_0000395,SubClassOf,OPL_0000267,).
+predicate(OPL_0000395,SubClassOf,RO_0000056 some OPL_0000410,).
+predicate(OPL_0000395,SubClassOf,RO_0001025 some OPL_0000414).
+predicate(OPL_0000396,is,Class).
+predicate(OPL_0000396,SubClassOf,NCBITaxon_5801,).
+predicate(OPL_0000396,SubClassOf,RO_0000056 some OPL_0000411,).
+predicate(OPL_0000396,SubClassOf,RO_0001025 some OPL_0000368).
+predicate(OPL_0000397,is,Class).
+predicate(OPL_0000397,SubClassOf,NCBITaxon_5807,).
+predicate(OPL_0000397,SubClassOf,RO_0000056 some OPL_0000412).
+predicate(OPL_0000398,is,Class).
+predicate(OPL_0000398,SubClassOf,NCBITaxon_5807,).
+predicate(OPL_0000398,SubClassOf,RO_0000056 some OPL_0000413).
+predicate(OPL_0000399,is,Class).
+predicate(OPL_0000400,is,Class).
+predicate(OPL_0000401,is,Class).
+predicate(OPL_0000402,is,Class).
+predicate(OPL_0000403,is,Class).
+predicate(OPL_0000404,is,Class).
+predicate(OPL_0000405,is,Class).
+predicate(OPL_0000406,is,Class).
+predicate(OPL_0000407,is,Class).
+predicate(OPL_0000408,is,Class).
+predicate(OPL_0000409,is,Class).
+predicate(OPL_0000410,is,Class).
+predicate(OPL_0000411,is,Class).
+predicate(OPL_0000412,is,Class).
+predicate(OPL_0000413,is,Class).
+predicate(OPL_0000414,is,Class).
+predicate(OPL_0000420,is,Class).
+predicate(OPL_0000420,SubClassOf,NCBITaxon_29176,).
+predicate(OPL_0000420,SubClassOf,RO_0000056 some OPL_0000421,).
+predicate(OPL_0000420,SubClassOf,RO_0001025 some NCBITaxon_9913).
+predicate(OPL_0000421,is,Class).
+predicate(UBERON_0000106,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

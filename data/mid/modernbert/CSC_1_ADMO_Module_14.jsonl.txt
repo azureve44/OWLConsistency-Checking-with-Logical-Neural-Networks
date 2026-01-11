@@ -1,0 +1,15 @@
+Cellular_and_sub_cellular_compartment is Class.
+gene_product is Class.
+gene_product SubClassOf mRNA.
+mRNA is Class.
+mRNA SubClassOf ribonucleic_acid.
+nucleus is Class.
+nucleus SubClassOf Cellular_and_sub_cellular_compartment.
+polypeptidic_chain is Class.
+polypeptidic_chain EquivalentTo ribonucleic_acid.
+polypeptidic_chain DisjointWith ribonucleic_acid.
+ribonucleic_acid is Class.
+ribonucleic_acid EquivalentTo polypeptidic_chain.
+ribonucleic_acid SubClassOf gene_product.
+ribonucleic_acid DisjointWith polypeptidic_chain.
+www.w3.org/2002/07/# is Class.

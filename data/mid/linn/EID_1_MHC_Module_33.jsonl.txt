@@ -1,0 +1,14 @@
+predicate(HLA_Null_Allele,is,Class).
+predicate(HLA_Null_Allele,SubClassOf,MHC_Null_Allele).
+predicate(DLA_Null_Allele,is,Class).
+predicate(DLA_Null_Allele,SubClassOf,MHC_Null_Allele).
+predicate(H2_Null_Allele,is,Class).
+predicate(H2_Null_Allele,SubClassOf,MHC_Null_Allele).
+predicate(MHC_Allele,is,Class).
+predicate(MHC_Null_Allele,is,Class).
+predicate(MHC_Null_Allele,EquivalentTo,MHC_Allele and Null_Allele).
+predicate(MHC_Null_Allele,SubClassOf,MHC_Allele,).
+predicate(MHC_Null_Allele,SubClassOf,Null_Allele).
+predicate(MHC_Null_Allele,DisjointWith,MHC_Allele and Null_Allele).
+predicate(Null_Allele,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

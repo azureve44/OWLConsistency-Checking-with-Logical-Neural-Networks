@@ -1,0 +1,56 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(string,is,Datatype).
+predicate(causes,is,ObjectProperty).
+predicate(causes,InverseOf,isCausedBy).
+predicate(isCausedBy,is,ObjectProperty).
+predicate(isCausedBy,InverseOf,causes).
+predicate(qualifiedProxy,is,ObjectProperty).
+predicate(qualifiedVariation,is,ObjectProperty).
+predicate(BFO_0000050,is,ObjectProperty).
+predicate(BFO_0000050,InverseOf,BFO_0000051).
+predicate(BFO_0000051,is,ObjectProperty).
+predicate(BFO_0000051,InverseOf,BFO_0000050).
+predicate(RO_0002502,is,ObjectProperty).
+predicate(www.ontologydesignpatterns.org/ont/dul/DUL.#,is,ObjectProperty).
+predicate(Entity,is,www.ontologydesignpatterns.org/ont/dul/DUL.#).
+predicate(Quality,is,www.ontologydesignpatterns.org/ont/dul/DUL.#).
+predicate(www.ontologydesignpatterns.org/ont/dul/DUL.#,is,DataProperty).
+predicate(Entity,is,www.ontologydesignpatterns.org/ont/dul/DUL.#).
+predicate(Disease,is,Class).
+predicate(Disease,SubClassOf,Phenotype).
+predicate(Drug,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Gene,is,Class).
+predicate(Gene,SubClassOf,GeneticFactor).
+predicate(GeneticFactor,is,Class).
+predicate(GeneticFactor,SubClassOf,Variant,).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(GenomicVariation,is,Class).
+predicate(GenomicVariation,SubClassOf,GeneticFactor).
+predicate(Haplotype,is,Class).
+predicate(Haplotype,SubClassOf,GenomicVariation).
+predicate(PharmacodynamicPhenotype,is,Class).
+predicate(PharmacodynamicPhenotype,SubClassOf,Phenotype).
+predicate(PharmacogenomicRelationship,is,Class).
+predicate(PharmacogenomicRelationship,SubClassOf,Entity,).
+predicate(PharmacogenomicRelationship,SubClassOf,((causes some Phenotype) and (isCausedBy some).
+predicate(PharmacogenomicRelationship,SubClassOf,(Drug or (RO_0002502 some Drug)))) or ((causes some Phenotype) and (isCausedBy some).
+predicate(PharmacogenomicRelationship,SubClassOf,(GeneticFactor or (RO_0002502 some GeneticFactor)))) or ((isCausedBy some).
+predicate(PharmacogenomicRelationship,SubClassOf,(Drug or (RO_0002502 some Drug))) and (isCausedBy some).
+predicate(PharmacogenomicRelationship,SubClassOf,(GeneticFactor or (RO_0002502 some GeneticFactor))))).
+predicate(PharmacokineticPhenotype,is,Class).
+predicate(PharmacokineticPhenotype,SubClassOf,Phenotype).
+predicate(Phenotype,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Variant,is,Class).
+predicate(Variant,SubClassOf,GenomicVariation).
+predicate(www.ontologydesignpatterns.org/ont/dul/DUL.#,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(www.ontologydesignpatterns.org/ont/dul/DUL.#,is,Class).
+predicate(Entity,is,www.ontologydesignpatterns.org/ont/dul/DUL.#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(Entity,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Generation,is,Class).
+predicate(Entity,is,www.ontologydesignpatterns.org/ont/dul/DUL.#).

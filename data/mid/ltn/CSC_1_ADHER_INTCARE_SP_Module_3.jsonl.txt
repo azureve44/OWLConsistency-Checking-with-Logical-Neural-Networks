@@ -1,0 +1,16 @@
+is(Adherencia,Class):1.0
+EquivalentTo(Adherencia,Plan_Accion_Personalizado):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,Plan_Accion_Personalizado):1.0
+is(Adherencia_dieta,Class):1.0
+SubClassOf(Adherencia_dieta,Adherencia):1.0
+is(Adherencia_estilo_de_vida,Class):1.0
+SubClassOf(Adherencia_estilo_de_vida,Adherencia):1.0
+is(Adherencia_medicacion,Class):1.0
+SubClassOf(Adherencia_medicacion,Adherencia):1.0
+is(Plan_Accion_Personalizado,Class):1.0
+EquivalentTo(Plan_Accion_Personalizado,Adherencia):1.0
+DisjointWith(Plan_Accion_Personalizado,Adherencia):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+SubClassOf(www.w3.org/2002/07/#,Adherencia_medicacion):1.0
+DisjointClasses(www.w3.org/2002/07/#,Adherencia_dieta,Adherencia_estilo_de_vida,Adherencia_medicacion):1.0

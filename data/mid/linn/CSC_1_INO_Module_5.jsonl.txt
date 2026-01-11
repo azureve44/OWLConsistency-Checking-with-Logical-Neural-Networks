@@ -1,0 +1,104 @@
+predicate(BFO_0000051,is,ObjectProperty).
+predicate(RO_0000087,is,ObjectProperty).
+predicate(BFO_0000001,is,Class).
+predicate(BFO_0000002,is,Class).
+predicate(BFO_0000002,SubClassOf,BFO_0000001).
+predicate(BFO_0000004,is,Class).
+predicate(BFO_0000004,SubClassOf,BFO_0000002).
+predicate(BFO_0000016,is,Class).
+predicate(BFO_0000019,is,Class).
+predicate(BFO_0000019,SubClassOf,BFO_0000020).
+predicate(BFO_0000020,is,Class).
+predicate(BFO_0000020,SubClassOf,BFO_0000002).
+predicate(BFO_0000029,is,Class).
+predicate(BFO_0000029,SubClassOf,BFO_0000141).
+predicate(BFO_0000030,is,Class).
+predicate(BFO_0000030,SubClassOf,BFO_0000040).
+predicate(BFO_0000031,is,Class).
+predicate(BFO_0000031,SubClassOf,BFO_0000002).
+predicate(BFO_0000034,is,Class).
+predicate(BFO_0000034,SubClassOf,BFO_0000016).
+predicate(BFO_0000040,is,Class).
+predicate(BFO_0000040,SubClassOf,BFO_0000004,).
+predicate(BFO_0000040,SubClassOf,NCBITaxon_2).
+predicate(BFO_0000141,is,Class).
+predicate(BFO_0000141,SubClassOf,BFO_0000004).
+predicate(CHEBI_16991,is,Class).
+predicate(CHEBI_16991,SubClassOf,CHEBI_33696).
+predicate(CHEBI_23367,is,Class).
+predicate(CHEBI_23367,SubClassOf,BFO_0000040).
+predicate(CHEBI_33696,is,Class).
+predicate(CHEBI_33696,SubClassOf,CHEBI_23367).
+predicate(CHEBI_33697,is,Class).
+predicate(CHEBI_33697,SubClassOf,CHEBI_33696).
+predicate(CL_0000000,is,Class).
+predicate(CL_0000000,SubClassOf,BFO_0000040).
+predicate(CL_0000066,is,Class).
+predicate(CL_0000066,SubClassOf,CL_0000000).
+predicate(CL_0000235,is,Class).
+predicate(CL_0000235,SubClassOf,BFO_0000040,).
+predicate(CL_0000235,SubClassOf,CL_0000000).
+predicate(IAO_0000030,is,Class).
+predicate(IAO_0000030,SubClassOf,BFO_0000031).
+predicate(IDO_0000528,is,Class).
+predicate(IDO_0000528,SubClassOf,BFO_0000040).
+predicate(IDO_0000629,is,Class).
+predicate(IDO_0000629,DisjointWith,RO_0000087 some INO_0000069).
+predicate(INO_0000005,is,Class).
+predicate(INO_0000008,is,Class).
+predicate(INO_0000008,EquivalentTo,RO_0000087 some INO_0000005).
+predicate(INO_0000008,SubClassOf,INO_0000016).
+predicate(INO_0000008,DisjointWith,RO_0000087 some INO_0000005).
+predicate(INO_0000009,is,Class).
+predicate(INO_0000010,is,Class).
+predicate(INO_0000013,is,Class).
+predicate(INO_0000013,SubClassOf,BFO_0000030).
+predicate(INO_0000014,is,Class).
+predicate(INO_0000014,SubClassOf,BFO_0000030).
+predicate(INO_0000015,is,Class).
+predicate(INO_0000016,is,Class).
+predicate(INO_0000016,EquivalentTo,RO_0000087 some INO_0000015).
+predicate(INO_0000016,SubClassOf,BFO_0000040).
+predicate(INO_0000047,is,Class).
+predicate(INO_0000047,EquivalentTo,RO_0000087 some INO_0000069).
+predicate(INO_0000047,SubClassOf,INO_0000016).
+predicate(INO_0000069,is,Class).
+predicate(INO_0000090,is,Class).
+predicate(INO_0000090,SubClassOf,CHEBI_23367).
+predicate(INO_0000125,is,Class).
+predicate(INO_0000125,EquivalentTo,RO_0000087 some INO_0000009).
+predicate(INO_0000125,SubClassOf,INO_0000016).
+predicate(INO_0000132,is,Class).
+predicate(INO_0000132,SubClassOf,CHEBI_23367).
+predicate(INO_0000133,is,Class).
+predicate(INO_0000133,EquivalentTo,BFO_0000040 and (RO_0000087 some IDO_0000629)).
+predicate(INO_0000133,SubClassOf,BFO_0000040,).
+predicate(INO_0000133,SubClassOf,RO_0000087 some IDO_0000629,).
+predicate(INO_0000133,SubClassOf,RO_0000087 only (RO_0000087 some INO_0000069)).
+predicate(INO_0000141,is,Class).
+predicate(INO_0000141,SubClassOf,INO_0000008).
+predicate(INO_0000144,is,Class).
+predicate(INO_0000144,SubClassOf,INO_0000008).
+predicate(INO_0000151,is,Class).
+predicate(INO_0000151,EquivalentTo,RO_0000087 some INO_0000010).
+predicate(INO_0000151,SubClassOf,INO_0000016).
+predicate(LifO_0000005,is,Class).
+predicate(LifO_0000005,SubClassOf,BFO_0000040,).
+predicate(LifO_0000005,SubClassOf,BFO_0000051 some CL_0000000).
+predicate(NCBITaxon_1773,is,Class).
+predicate(NCBITaxon_1773,SubClassOf,NCBITaxon_2).
+predicate(NCBITaxon_2,is,Class).
+predicate(NCBITaxon_2,SubClassOf,LifO_0000005).
+predicate(NCBITaxon_2157,is,Class).
+predicate(NCBITaxon_2157,SubClassOf,LifO_0000005).
+predicate(NCBITaxon_2759,is,Class).
+predicate(NCBITaxon_2759,SubClassOf,LifO_0000005).
+predicate(NCBITaxon_562,is,Class).
+predicate(NCBITaxon_562,SubClassOf,NCBITaxon_2).
+predicate(NCBITaxon_9606,is,Class).
+predicate(NCBITaxon_9606,SubClassOf,NCBITaxon_2759).
+predicate(OGG_0000000002,is,Class).
+predicate(OGG_0000000002,SubClassOf,BFO_0000040).
+predicate(PR_000000001,is,Class).
+predicate(PR_000000001,SubClassOf,CHEBI_23367).
+predicate(www.w3.org/2002/07/#,is,Class).

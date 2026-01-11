@@ -1,0 +1,363 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(boolean,is,Datatype).
+predicate(int,is,Datatype).
+predicate(string,is,Datatype).
+predicate(www.obofoundry.org/ro/ro.#,is,ObjectProperty).
+predicate(actionType,is,DataProperty).
+predicate(actionType,Domain,DrugDrugInteraction).
+predicate(actionType,Range,string).
+predicate(biologicalInterest,is,DataProperty).
+predicate(biologicalInterest,Domain,ChemicalProteinInteraction).
+predicate(biologicalInterest,Range,boolean).
+predicate(drugTarget,is,DataProperty).
+predicate(drugTarget,Domain,ChemicalProteinInteraction).
+predicate(drugTarget,Range,boolean).
+predicate(experimentType,is,DataProperty).
+predicate(experimentType,Domain,ProteinProteinInteraction).
+predicate(pharmacalClassification,is,DataProperty).
+predicate(pharmacalClassification,Domain,DrugDrugInteraction).
+predicate(pharmacalClassification,Range,string).
+predicate(www.biopax.org/release/biopax-level3.#,is,DataProperty).
+predicate(PublicationXref,is,www.biopax.org/release/biopax-level3.#).
+predicate(PublicationXref,Range,string).
+predicate(www.biopax.org/release/biopax-level3.#,is,DataProperty).
+predicate(www.biopax.org/release/biopax-level3.#,is,DataProperty).
+predicate(www.biopax.org/release/biopax-level3.#,is,DataProperty).
+predicate(PublicationXref,is,www.biopax.org/release/biopax-level3.#).
+predicate(PublicationXref,Range,string).
+predicate(www.biopax.org/release/biopax-level3.#,is,DataProperty).
+predicate(www.biopax.org/release/biopax-level3.#,Characteristics,Functional).
+predicate(ChemicalStructure,is,www.biopax.org/release/biopax-level3.#).
+predicate(ChemicalStructure,Range,string).
+predicate(www.biopax.org/release/biopax-level3.#,is,DataProperty).
+predicate(www.biopax.org/release/biopax-level3.#,Characteristics,Functional).
+predicate(ChemicalStructure,is,www.biopax.org/release/biopax-level3.#).
+predicate(ChemicalStructure,Range,{"CML" , "InChI" , "SMILES"},).
+predicate(ChemicalStructure,Range,{"InChi" , "openeyeCanonicalSMILES" , "openeyeISOSMILES" , "openeye_can_smiles" , "openeye_iso_smiles"}).
+predicate(www.biopax.org/release/biopax-level3.#,is,DataProperty).
+predicate(www.biopax.org/release/biopax-level3.#,Characteristics,Functional).
+predicate(PublicationXref,is,www.biopax.org/release/biopax-level3.#).
+predicate(PublicationXref,Range,string).
+predicate(www.biopax.org/release/biopax-level3.#,is,DataProperty).
+predicate(PublicationXref,is,www.biopax.org/release/biopax-level3.#).
+predicate(PublicationXref,Range,string).
+predicate(www.biopax.org/release/biopax-level3.#,is,DataProperty).
+predicate(www.biopax.org/release/biopax-level3.#,Characteristics,Functional).
+predicate(PublicationXref,is,www.biopax.org/release/biopax-level3.#).
+predicate(PublicationXref,Range,int).
+predicate(ADP-ribosylation,is,Class).
+predicate(ADP-ribosylation,SubClassOf,Ribosylation).
+predicate(Abundance,is,Class).
+predicate(Abundance,SubClassOf,ProteinRegulatesChemical).
+predicate(Abundance,DisjointWith,Transport).
+predicate(Abundance,DisjointWith,SmallMoleculeMetabolicProcess).
+predicate(Acetylation,is,Class).
+predicate(Acetylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Activation,is,Class).
+predicate(Activation,SubClassOf,Binding).
+predicate(Activation,DisjointWith,Inhibition).
+predicate(Activity,is,Class).
+predicate(Activity,SubClassOf,ChemicalRegulatesProtein).
+predicate(Activity,DisjointWith,Stability).
+predicate(Activity,DisjointWith,Splicing).
+predicate(Activity,DisjointWith,Mutagenesis).
+predicate(Activity,DisjointWith,MacromoleculeMetabolicProcess).
+predicate(Activity,DisjointWith,Localization).
+predicate(Activity,DisjointWith,Folding).
+predicate(Activity,DisjointWith,Expression).
+predicate(Acylation,is,Class).
+predicate(Acylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Alkylation,is,Class).
+predicate(Alkylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Amination,is,Class).
+predicate(Amination,SubClassOf,SmallMoleculeMetabolicProcess).
+predicate(Binding,is,Class).
+predicate(Binding,SubClassOf,DirectActivityRegulation).
+predicate(BioAssay,is,Class).
+predicate(Interaction,is,www.biopax.org/release/biopax-level3.#).
+predicate(Carbamoylation,is,Class).
+predicate(Carbamoylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Carboxylation,is,Class).
+predicate(Carboxylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(ChemicalProteinInteraction,is,Class).
+predicate(Interaction,,is,www.biopax.org/release/biopax-level3.#).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,is,www.obofoundry.org/ro/ro.#).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,is,www.obofoundry.org/ro/ro.#).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,ProteinProteinInteraction).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,DrugTreament).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,DrugInducedSideEffect).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,DrugDrugInteraction).
+predicate(ChemicalRegulatesProtein,is,Class).
+predicate(ChemicalRegulatesProtein,SubClassOf,ChemicalProteinInteraction).
+predicate(ChemicalSynthesis,is,Class).
+predicate(ChemicalSynthesis,SubClassOf,SmallMoleculeMetabolicProcess).
+predicate(Cleavage,is,Class).
+predicate(Cleavage,SubClassOf,Degradation).
+predicate(Degradation,is,Class).
+predicate(Degradation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(DirectActivityRegulation,is,Class).
+predicate(DirectActivityRegulation,SubClassOf,Activity).
+predicate(DirectActivityRegulation,DisjointWith,IndirectActivityRegulation).
+predicate(Disease,is,Class).
+predicate(Disease,SubClassOf,Entity).
+predicate(Interaction,is,www.biopax.org/release/biopax-level3.#).
+predicate(DrugDrugInteraction,is,Class).
+predicate(Interaction,,is,www.biopax.org/release/biopax-level3.#).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,is,www.obofoundry.org/ro/ro.#).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,ProteinProteinInteraction).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,DrugTreament).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,DrugInducedSideEffect).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,ChemicalProteinInteraction).
+predicate(DrugInducedSideEffect,is,Class).
+predicate(Interaction,is,www.biopax.org/release/biopax-level3.#).
+predicate(Interaction,DisjointWith,ProteinProteinInteraction).
+predicate(Interaction,DisjointWith,DrugDrugInteraction).
+predicate(Interaction,DisjointWith,ChemicalProteinInteraction).
+predicate(DrugTreament,is,Class).
+predicate(Interaction,is,www.biopax.org/release/biopax-level3.#).
+predicate(Interaction,DisjointWith,ProteinProteinInteraction).
+predicate(Interaction,DisjointWith,DrugDrugInteraction).
+predicate(Interaction,DisjointWith,ChemicalProteinInteraction).
+predicate(Entity,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Ethylation,is,Class).
+predicate(Ethylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Export,is,Class).
+predicate(Export,SubClassOf,Secretion).
+predicate(Expression,is,Class).
+predicate(Expression,SubClassOf,ChemicalRegulatesProtein).
+predicate(Expression,DisjointWith,Stability).
+predicate(Expression,DisjointWith,Splicing).
+predicate(Expression,DisjointWith,Mutagenesis).
+predicate(Expression,DisjointWith,MacromoleculeMetabolicProcess).
+predicate(Expression,DisjointWith,Localization).
+predicate(Expression,DisjointWith,Folding).
+predicate(Expression,DisjointWith,Activity).
+predicate(Farnesylation,is,Class).
+predicate(Farnesylation,SubClassOf,Lipidation).
+predicate(Folding,is,Class).
+predicate(Folding,SubClassOf,ChemicalRegulatesProtein).
+predicate(Folding,DisjointWith,Stability).
+predicate(Folding,DisjointWith,Splicing).
+predicate(Folding,DisjointWith,Mutagenesis).
+predicate(Folding,DisjointWith,MacromoleculeMetabolicProcess).
+predicate(Folding,DisjointWith,Localization).
+predicate(Folding,DisjointWith,Expression).
+predicate(Folding,DisjointWith,Activity).
+predicate(Geranoylation,is,Class).
+predicate(Geranoylation,SubClassOf,Lipidation).
+predicate(Glucuronidation,is,Class).
+predicate(Glucuronidation,SubClassOf,Glycosylation).
+predicate(Glutathionylation,is,Class).
+predicate(Glutathionylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Glycation,is,Class).
+predicate(Glycation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Glycosylation,is,Class).
+predicate(Glycosylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Hydroxylation,is,Class).
+predicate(Hydroxylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Import,is,Class).
+predicate(Import,SubClassOf,Uptake).
+predicate(IndirectActivityRegulation,is,Class).
+predicate(IndirectActivityRegulation,SubClassOf,Activity).
+predicate(IndirectActivityRegulation,DisjointWith,DirectActivityRegulation).
+predicate(Inhibition,is,Class).
+predicate(Inhibition,SubClassOf,Binding).
+predicate(Inhibition,DisjointWith,Activation).
+predicate(Lipidation,is,Class).
+predicate(Lipidation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Localization,is,Class).
+predicate(Localization,SubClassOf,ChemicalRegulatesProtein).
+predicate(Localization,DisjointWith,Stability).
+predicate(Localization,DisjointWith,Splicing).
+predicate(Localization,DisjointWith,Mutagenesis).
+predicate(Localization,DisjointWith,MacromoleculeMetabolicProcess).
+predicate(Localization,DisjointWith,Folding).
+predicate(Localization,DisjointWith,Expression).
+predicate(Localization,DisjointWith,Activity).
+predicate(MacromoleculeMetabolicProcess,is,Class).
+predicate(MacromoleculeMetabolicProcess,SubClassOf,ChemicalRegulatesProtein).
+predicate(MacromoleculeMetabolicProcess,DisjointWith,Stability).
+predicate(MacromoleculeMetabolicProcess,DisjointWith,Splicing).
+predicate(MacromoleculeMetabolicProcess,DisjointWith,Mutagenesis).
+predicate(MacromoleculeMetabolicProcess,DisjointWith,Localization).
+predicate(MacromoleculeMetabolicProcess,DisjointWith,Folding).
+predicate(MacromoleculeMetabolicProcess,DisjointWith,Expression).
+predicate(MacromoleculeMetabolicProcess,DisjointWith,Activity).
+predicate(Methylation,is,Class).
+predicate(Methylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Mutagenesis,is,Class).
+predicate(Mutagenesis,SubClassOf,ChemicalRegulatesProtein).
+predicate(Mutagenesis,DisjointWith,Stability).
+predicate(Mutagenesis,DisjointWith,Splicing).
+predicate(Mutagenesis,DisjointWith,MacromoleculeMetabolicProcess).
+predicate(Mutagenesis,DisjointWith,Localization).
+predicate(Mutagenesis,DisjointWith,Folding).
+predicate(Mutagenesis,DisjointWith,Expression).
+predicate(Mutagenesis,DisjointWith,Activity).
+predicate(Myristoylation,is,Class).
+predicate(Myristoylation,SubClassOf,Lipidation).
+predicate(N-linkedGlycosylation,is,Class).
+predicate(N-linkedGlycosylation,SubClassOf,Glycosylation).
+predicate(NegativeRegulationOfExpression,is,Class).
+predicate(NegativeRegulationOfExpression,SubClassOf,Expression).
+predicate(NegativeRegulationOfExpression,DisjointWith,PositiveRegulationOfExpression).
+predicate(Nitrosation,is,Class).
+predicate(Nitrosation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Nucleotidylation,is,Class).
+predicate(Nucleotidylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(O-linkedGlycosylation,is,Class).
+predicate(O-linkedGlycosylation,SubClassOf,Glycosylation).
+predicate(Outcome,is,Class).
+predicate(ChemicalStructure,is,www.biopax.org/release/biopax-level3.#).
+predicate(Oxidation,is,Class).
+predicate(Oxidation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Palmitoylation,is,Class).
+predicate(Palmitoylation,SubClassOf,Lipidation).
+predicate(Phosphorylation,is,Class).
+predicate(Phosphorylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(PhysicalProperty,is,Class).
+predicate(ChemicalStructure,is,www.biopax.org/release/biopax-level3.#).
+predicate(PositiveRegulationOfExpression,is,Class).
+predicate(PositiveRegulationOfExpression,SubClassOf,Expression).
+predicate(PositiveRegulationOfExpression,DisjointWith,NegativeRegulationOfExpression).
+predicate(Prenylation,is,Class).
+predicate(Prenylation,SubClassOf,Lipidation).
+predicate(ProteinProteinInteraction,is,Class).
+predicate(Interaction,,is,www.biopax.org/release/biopax-level3.#).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,is,www.obofoundry.org/ro/ro.#).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,DrugTreament).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,DrugInducedSideEffect).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,DrugDrugInteraction).
+predicate(has_participant some www.biopax.org/release/biopax-level3.#,DisjointWith,ChemicalProteinInteraction).
+predicate(ProteinRegulatesChemical,is,Class).
+predicate(ProteinRegulatesChemical,SubClassOf,ChemicalProteinInteraction).
+predicate(ReceptorAgonistActivity,is,Class).
+predicate(ReceptorAgonistActivity,SubClassOf,Activation).
+predicate(ReceptorAntagonistActivity,is,Class).
+predicate(ReceptorAntagonistActivity,SubClassOf,Inhibition).
+predicate(Reduction,is,Class).
+predicate(Reduction,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Ribosylation,is,Class).
+predicate(Ribosylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Secretion,is,Class).
+predicate(Secretion,SubClassOf,Transport).
+predicate(Secretion,DisjointWith,Uptake).
+predicate(SideEffect,is,Class).
+predicate(SideEffect,SubClassOf,Entity).
+predicate(Interaction,is,www.biopax.org/release/biopax-level3.#).
+predicate(SmallMoleculeMetabolicProcess,is,Class).
+predicate(SmallMoleculeMetabolicProcess,SubClassOf,ProteinRegulatesChemical).
+predicate(SmallMoleculeMetabolicProcess,DisjointWith,Transport).
+predicate(SmallMoleculeMetabolicProcess,DisjointWith,Abundance).
+predicate(Splicing,is,Class).
+predicate(Splicing,SubClassOf,ChemicalRegulatesProtein).
+predicate(Splicing,DisjointWith,Stability).
+predicate(Splicing,DisjointWith,Mutagenesis).
+predicate(Splicing,DisjointWith,MacromoleculeMetabolicProcess).
+predicate(Splicing,DisjointWith,Localization).
+predicate(Splicing,DisjointWith,Folding).
+predicate(Splicing,DisjointWith,Expression).
+predicate(Splicing,DisjointWith,Activity).
+predicate(Stability,is,Class).
+predicate(Stability,SubClassOf,ChemicalRegulatesProtein).
+predicate(Stability,DisjointWith,Splicing).
+predicate(Stability,DisjointWith,Mutagenesis).
+predicate(Stability,DisjointWith,MacromoleculeMetabolicProcess).
+predicate(Stability,DisjointWith,Localization).
+predicate(Stability,DisjointWith,Folding).
+predicate(Stability,DisjointWith,Expression).
+predicate(Stability,DisjointWith,Activity).
+predicate(Sulfation,is,Class).
+predicate(Sulfation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Sumoylation,is,Class).
+predicate(Sumoylation,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Transport,is,Class).
+predicate(Transport,SubClassOf,ProteinRegulatesChemical).
+predicate(Transport,DisjointWith,SmallMoleculeMetabolicProcess).
+predicate(Transport,DisjointWith,Abundance).
+predicate(Ubiquitination,is,Class).
+predicate(Ubiquitination,SubClassOf,MacromoleculeMetabolicProcess).
+predicate(Uptake,is,Class).
+predicate(Uptake,SubClassOf,Transport).
+predicate(Uptake,DisjointWith,Secretion).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(CellularLocationVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(ControlledVocabulary,is,www.biopax.org/release/biopax-level3.#).
+predicate(CellVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(UtilityClass,,is,www.biopax.org/release/biopax-level3.#).
+predicate(structureData exactly 1 www.w3.org/2000/01/-schema#,is,www.biopax.org/release/biopax-level3.#).
+predicate(structureFormat exactly 1 www.w3.org/2000/01/-schema#,is,www.biopax.org/release/biopax-level3.#).
+predicate(ControlledVocabulary, www.biopax.org/release/biopax-level3.#,is,Outcome, PhysicalProperty, www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(Dna,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(ChemicalStructure,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(PhysicalEntity,is,www.biopax.org/release/biopax-level3.#).
+predicate(Complex, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(Dna,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(CellularLocationVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(ChemicalStructure,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(CellularLocationVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(CellularLocationVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(www.biopax.org/release/biopax-level3.#,SubClassOf,Entity).
+predicate(Interaction,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(www.biopax.org/release/biopax-level3.#,SubClassOf,Entity).
+predicate(Gene, www.biopax.org/release/biopax-level3.#,is,BioAssay, Disease, SideEffect, www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(ControlledVocabulary,is,www.biopax.org/release/biopax-level3.#).
+predicate(CellVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(www.biopax.org/release/biopax-level3.#,SubClassOf,Entity).
+predicate(Interaction,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(CellularLocationVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(www.biopax.org/release/biopax-level3.#,SubClassOf,Entity).
+predicate(Interaction,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(Dna,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(ChemicalStructure,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(Xref,is,www.biopax.org/release/biopax-level3.#).
+predicate(UnificationXref,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(ControlledVocabulary,is,www.biopax.org/release/biopax-level3.#).
+predicate(CellVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(Xref,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(Dna,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(Dna,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(ChemicalStructure,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(ControlledVocabulary,is,www.biopax.org/release/biopax-level3.#).
+predicate(CellVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(CellularLocationVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(Dna,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(CellularLocationVocabulary, www.biopax.org/release/biopax-level3.#,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(Xref,,is,www.biopax.org/release/biopax-level3.#).
+predicate(db exactly 1 www.w3.org/2000/01/-schema#,is,www.biopax.org/release/biopax-level3.#).
+predicate(id exactly 1 www.w3.org/2000/01/-schema#,is,www.biopax.org/release/biopax-level3.#).
+predicate(PublicationXref,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(www.biopax.org/release/biopax-level3.#,is,Class).
+predicate(ChemicalStructure,is,www.biopax.org/release/biopax-level3.#).
+predicate(www.w3.org/2002/07/#,is,Class).

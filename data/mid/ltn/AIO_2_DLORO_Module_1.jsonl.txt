@@ -1,0 +1,704 @@
+is(www.w3.org/2000/01/-schema#,AnnotationProperty):1.0
+is(string,Datatype):1.0
+is(dependsOn1,ObjectProperty):1.0
+is(dependsOn2,ObjectProperty):1.0
+is(dependsOn3,ObjectProperty):1.0
+is(dependsOn4,ObjectProperty):1.0
+is(ATM_polymorphism,Class):1.0
+is(Abdomen_comp,Class):1.0
+SubClassOf(Abdomen_comp,Complication_by_site):1.0
+is(Age,Class):1.0
+SubClassOf(Age,Demographic_Factor,):1.0
+SubClassOf(Age,Meyer_et_al_2004_model):1.0
+is(Ataxia_Telangiectasia,Class):1.0
+is(Bayesian_Model,Class):1.0
+is(Biological_Effective_Dose,Class):1.0
+is(Bladder_comp_general,Class):1.0
+SubClassOf(Bladder_comp_general,Bladder_complication):1.0
+is(Bladder_complication,Class):1.0
+SubClassOf(Bladder_complication,Genitourinary_disorder,):1.0
+SubClassOf(Bladder_complication,Pelvis_comp,):1.0
+SubClassOf(Bladder_complication,dependsOn4 some Dose_Pelvic_Nodes):1.0
+is(Brachial_Plexopathy,Class):1.0
+SubClassOf(Brachial_Plexopathy,CNS_PNS_or_Sensory_disorder,):1.0
+SubClassOf(Brachial_Plexopathy,Neck_and_Throat_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Dose_Per_Fraction):1.0
+is(Brain_comp,Class):1.0
+SubClassOf(Brain_comp,CNS_PNS_or_Sensory_disorder,):1.0
+SubClassOf(Brain_comp,Complication_by_site):1.0
+is(Breast_cosmesis,Class):1.0
+SubClassOf(Breast_cosmesis,Thorax_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some chest_wall_separation):1.0
+is(CNS_PNS_or_Sensory_disorder,Class):1.0
+SubClassOf(CNS_PNS_or_Sensory_disorder,Complication_by_system):1.0
+is(Cardiomyopathy,Class):1.0
+SubClassOf(Cardiomyopathy,Thorax_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Concurrent_Chemotherapy):1.0
+is(Carotid_Atherosclerosis,Class):1.0
+SubClassOf(Carotid_Atherosclerosis,Neck_and_Throat_comp):1.0
+is(Carotid_Blowout,Class):1.0
+SubClassOf(Carotid_Blowout,Neck_and_Throat_comp):1.0
+is(Carotid_Stenosis,Class):1.0
+SubClassOf(Carotid_Stenosis,Neck_and_Throat_comp):1.0
+is(Clinical_Outcome,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Clinician_time_cost,Class):1.0
+SubClassOf(Clinician_time_cost,Time_cost):1.0
+is(Cognitive_impairment,Class):1.0
+SubClassOf(Cognitive_impairment,Brain_comp,):1.0
+SubClassOf(Cognitive_impairment,CNS_PNS_or_Sensory_disorder,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Age):1.0
+is(Comorbidity,Class):1.0
+is(Complication_by_site,Class):1.0
+SubClassOf(Complication_by_site,Clinical_Outcome):1.0
+is(Complication_by_system,Class):1.0
+SubClassOf(Complication_by_system,Clinical_Outcome):1.0
+is(Concurrent_Chemotherapy,Class):1.0
+SubClassOf(Concurrent_Chemotherapy,Systemic_Therapy):1.0
+is(Control_outcome,Class):1.0
+SubClassOf(Control_outcome,Clinical_Outcome):1.0
+is(Demographic_Factor,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Dental_Caries,Class):1.0
+SubClassOf(Dental_Caries,Osteoradionecroses):1.0
+is(Dental_Extraction,Class):1.0
+SubClassOf(Dental_Extraction,Osteoradionecroses):1.0
+is(Disease_Free_Survival,Class):1.0
+SubClassOf(Disease_Free_Survival,Meyer_et_al_2004_model,):1.0
+SubClassOf(Disease_Free_Survival,Survival,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Distant_metastasis,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Local_Control_general,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some M_Stage,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Prostate_Local_Control,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some GTV,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some N_Stage,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn4 some M_Stage):1.0
+is(Distant_metastasis,Class):1.0
+SubClassOf(Distant_metastasis,Control_outcome,):1.0
+SubClassOf(Distant_metastasis,Smith_et_al_2009_model,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Resection_margin,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some PSA_control,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some PSA_doubling_time,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Pelvic_Nodal_Control,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn4 some Mean_Dose_Joint):1.0
+is(Dose_Pelvic_Nodes,Class):1.0
+is(Dose_Per_Fraction,Class):1.0
+is(Dosing_Parameter,Class):1.0
+is(Dry_Eye_Syndrome,Class):1.0
+SubClassOf(Dry_Eye_Syndrome,Eyes_Ears_Nose_comp):1.0
+is(Dysgeusia,Class):1.0
+SubClassOf(Dysgeusia,CNS_PNS_or_Sensory_disorder,):1.0
+SubClassOf(Dysgeusia,Gastrointestinal_disorder,):1.0
+SubClassOf(Dysgeusia,Neck_and_Throat_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some PTV_dose_general,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some Total_Dose_Anterior_Tounge):1.0
+is(Dysosmia,Class):1.0
+SubClassOf(Dysosmia,CNS_PNS_or_Sensory_disorder,):1.0
+SubClassOf(Dysosmia,Eyes_Ears_Nose_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_Olfactory_Epithelium):1.0
+is(Dysphagea,Class):1.0
+SubClassOf(Dysphagea,Gastrointestinal_disorder,):1.0
+SubClassOf(Dysphagea,Neck_and_Throat_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Concurrent_Chemotherapy,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Esohpagus,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,International Journal of Radiation Oncology*Biology*Physics, Volume 72, Issue 4, 15 November 2008, Pages 1110-1118 Hale B. Caglar, Roy B. Tishler, Megan Othus, Elaine Burke, Yi Li, Laura Goguen, Lori J. Wirth, Robert I. Haddad, Carl M. Norris, Laurence E. Court, Donald J. Aninno, Marshall R. Posner, Aaron M. Allen\" year 2008):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V60_Constrictors,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some Mean_Dose_Laryngeal_Wall,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some V50_Larynx):1.0
+is(Dysuria,Class):1.0
+SubClassOf(Dysuria,Bladder_complication):1.0
+is(Endocrine_disorder,Class):1.0
+SubClassOf(Endocrine_disorder,Complication_by_system):1.0
+is(Enteritis,Class):1.0
+SubClassOf(Enteritis,Abdomen_comp,):1.0
+SubClassOf(Enteritis,Gastrointestinal_disorder,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V5_small_bowel,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some V15_small_bowel):1.0
+is(Equivalent_Uniform_Dose,Class):1.0
+SubClassOf(Equivalent_Uniform_Dose,Smith_et_al_2009_model,):1.0
+SubClassOf(Equivalent_Uniform_Dose,non_NTCP_factor):1.0
+is(Esohpageal_Stricture,Class):1.0
+SubClassOf(Esohpageal_Stricture,Gastrointestinal_disorder,):1.0
+SubClassOf(Esohpageal_Stricture,Neck_and_Throat_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Fractionation_Scheme,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Gender,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V50_Larynx,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V50_inf_constrictors):1.0
+is(Esophageal_Fistula,Class):1.0
+SubClassOf(Esophageal_Fistula,Gastrointestinal_disorder,):1.0
+SubClassOf(Esophageal_Fistula,Neck_and_Throat_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Concurrent_Chemotherapy,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Esohpagus):1.0
+is(Esophagitis,Class):1.0
+SubClassOf(Esophagitis,Gastrointestinal_disorder,):1.0
+SubClassOf(Esophagitis,Neck_and_Throat_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Mean_Dose_Esophagus,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Concurrent_Chemotherapy,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V30_Esophagus):1.0
+is(Extracapsular_extension,Class):1.0
+is(Extremity_comp,Class):1.0
+SubClassOf(Extremity_comp,Complication_by_site):1.0
+is(Eyes_Ears_Nose_comp,Class):1.0
+SubClassOf(Eyes_Ears_Nose_comp,Head_and_Neck_comp):1.0
+is(Financial_cost,Class):1.0
+SubClassOf(Financial_cost,RT_cost):1.0
+is(Five_year_survival,Class):1.0
+SubClassOf(Five_year_survival,Survival,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Concurrent_Chemotherapy,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Extracapsular_extension,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Histologic_Type,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Hypoxia,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Resection_margin):1.0
+is(Fractionation_Scheme,Class):1.0
+is(GTV,Class):1.0
+is(Gastric_ulceration,Class):1.0
+SubClassOf(Gastric_ulceration,Abdomen_comp,):1.0
+SubClassOf(Gastric_ulceration,Gastrointestinal_disorder,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V50_small_bowel):1.0
+is(Gastrointestinal_disorder,Class):1.0
+SubClassOf(Gastrointestinal_disorder,Complication_by_system):1.0
+is(Gender,Class):1.0
+SubClassOf(Gender,Demographic_Factor):1.0
+is(Generalized_Survival,Class):1.0
+SubClassOf(Generalized_Survival,Survival,):1.0
+SubClassOf(Generalized_Survival,dependsOn4 some Disease_Free_Survival,):1.0
+SubClassOf(Generalized_Survival,dependsOn4 some Five_year_survival,):1.0
+SubClassOf(Generalized_Survival,dependsOn4 some Overall_survival):1.0
+is(Genitourinary_disorder,Class):1.0
+SubClassOf(Genitourinary_disorder,Complication_by_system):1.0
+is(Gleason,Class):1.0
+is(HPV_status,Class):1.0
+is(Head_and_Neck_comp,Class):1.0
+SubClassOf(Head_and_Neck_comp,Complication_by_site,):1.0
+SubClassOf(Head_and_Neck_comp,Dental_Extraction):1.0
+is(Hearing_Loss,Class):1.0
+SubClassOf(Hearing_Loss,CNS_PNS_or_Sensory_disorder,):1.0
+SubClassOf(Hearing_Loss,Eyes_Ears_Nose_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_Cochlea):1.0
+is(Heart_Valvular_Dysfunction,Class):1.0
+SubClassOf(Heart_Valvular_Dysfunction,Thorax_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some V30_Heart_Valve):1.0
+is(Hematuria,Class):1.0
+SubClassOf(Hematuria,Bladder_complication):1.0
+is(Histologic_Type,Class):1.0
+is(Hyperprolactinemia,Class):1.0
+SubClassOf(Hyperprolactinemia,Endocrine_disorder,):1.0
+SubClassOf(Hyperprolactinemia,Thalamic_region_comp,):1.0
+SubClassOf(Hyperprolactinemia,dependsOn2 some Max_Dose_Hypothalamus,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Pituitary_Gland,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Min_Dose_Pituitary_Gland):1.0
+is(Hypoadrenalism,Class):1.0
+SubClassOf(Hypoadrenalism,Endocrine_disorder,):1.0
+SubClassOf(Hypoadrenalism,Thalamic_region_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Age,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Local_Control_general,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Hypothalamus,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Pituitary_Gland,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Min_Dose_Pituitary_Gland):1.0
+is(Hypogonadism,Class):1.0
+SubClassOf(Hypogonadism,Endocrine_disorder,):1.0
+SubClassOf(Hypogonadism,Genitourinary_disorder,):1.0
+SubClassOf(Hypogonadism,Thalamic_region_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Local_Control_general,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Hypothalamus,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Pituitary_Gland,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Min_Dose_Pituitary_Gland):1.0
+is(Hypothyroidism,Class):1.0
+SubClassOf(Hypothyroidism,Endocrine_disorder,):1.0
+SubClassOf(Hypothyroidism,Thalamic_region_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Age,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Histologic_Type,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Hypothalamus,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Pituitary_Gland,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Min_Dose_Pituitary_Gland,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,International Journal of Radiation Oncology*Biology*Physics, Volume 68, Issue 4, 15 July 2007, Pages 1131-1139 Niranjan Bhandare, Laurence Kennedy, Robert S. Malyapa, Christopher G. Morris, William M. Mendenhall\" year2007):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Total_Dose_Thyroid,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some peri_RT_neck_surgery):1.0
+is(Hypoxia,Class):1.0
+is(Ischemic_Heart_Disease,Class):1.0
+SubClassOf(Ischemic_Heart_Disease,Thorax_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Laterality):1.0
+is(Isodose_line,Class):1.0
+SubClassOf(Isodose_line,Prescription_Point):1.0
+is(Karnofsky,Class):1.0
+is(Laryngeal_Edema,Class):1.0
+SubClassOf(Laryngeal_Edema,Neck_and_Throat_comp):1.0
+is(Laterality,Class):1.0
+is(Local_Control,Class):1.0
+SubClassOf(Local_Control,Control_outcome):1.0
+is(Local_Control_general,Class):1.0
+SubClassOf(Local_Control_general,Local_Control,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Ataxia_Telangiectasia,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some PTV_dose_general):1.0
+is(M_Stage,Class):1.0
+is(Max_Dose_Anterior_Mandible,Class):1.0
+is(Max_Dose_Esohpagus,Class):1.0
+is(Max_Dose_Hypothalamus,Class):1.0
+is(Max_Dose_Optic_Chiasm,Class):1.0
+is(Max_Dose_Optic_Nerve,Class):1.0
+is(Max_Dose_Pituitary_Gland,Class):1.0
+is(Max_Dose_Spinal_Cord,Class):1.0
+is(Mean_Dose_Cochlea,Class):1.0
+is(Mean_Dose_Constrictors,Class):1.0
+is(Mean_Dose_Esophagus,Class):1.0
+is(Mean_Dose_Eye,Class):1.0
+is(Mean_Dose_Heart,Class):1.0
+is(Mean_Dose_Joint,Class):1.0
+is(Mean_Dose_Laryngeal_Wall,Class):1.0
+is(Mean_Dose_Liver,Class):1.0
+is(Mean_Dose_Lung,Class):1.0
+is(Mean_Dose_Olfactory_Epithelium,Class):1.0
+is(Mean_Dose_Oral_cavity,Class):1.0
+is(Mean_Dose_Parotid_Gland,Class):1.0
+is(Mean_Dose_SMG,Class):1.0
+DisjointWith(Mean_Dose_SMG,):1.0
+DisjointWith(Mean_Dose_SMG,PTV_dose_Lung):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Mean_Dose_Sublingual_Gland,Class):1.0
+is(Mean_Dose_cLat_Parotid_Gland,Class):1.0
+is(Mean_Dose_cLat_SMG,Class):1.0
+is(Medical_Imaging,Class):1.0
+SubClassOf(Medical_Imaging,Radiology_Concept):1.0
+is(Meyer_et_al_2004_model,Class):1.0
+is(Min_Dose_Pituitary_Gland,Class):1.0
+is(Mucositis,Class):1.0
+SubClassOf(Mucositis,Gastrointestinal_disorder,):1.0
+SubClassOf(Mucositis,Neck_and_Throat_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Fractionation_Scheme,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Dose_Per_Fraction,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Anterior_Mandible,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_Oral_cavity):1.0
+is(Myelopathy,Class):1.0
+SubClassOf(Myelopathy,CNS_PNS_or_Sensory_disorder,):1.0
+SubClassOf(Myelopathy,Neck_and_Throat_comp,):1.0
+SubClassOf(Myelopathy,Spine,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Max_Dose_Spinal_Cord,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some V50_cord_cross_section,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Dose_Per_Fraction,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Max_Dose_Spinal_Cord):1.0
+is(NSCLC_cost_utility_node,Class):1.0
+SubClassOf(NSCLC_cost_utility_node,Utility_node):1.0
+is(NTCP_Lung,Class):1.0
+is(NTCP_Parotid_gland,Class):1.0
+is(N_Stage,Class):1.0
+is(Neck_and_Throat_comp,Class):1.0
+SubClassOf(Neck_and_Throat_comp,Head_and_Neck_comp):1.0
+is(Neck_comp_general,Class):1.0
+SubClassOf(Neck_comp_general,Neck_and_Throat_comp):1.0
+is(Nodal_Control,Class):1.0
+SubClassOf(Nodal_Control,Control_outcome):1.0
+is(Optic_Neuropathy,Class):1.0
+SubClassOf(Optic_Neuropathy,CNS_PNS_or_Sensory_disorder,):1.0
+SubClassOf(Optic_Neuropathy,Eyes_Ears_Nose_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Max_Dose_Optic_Chiasm,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Max_Dose_Optic_Nerve,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Dose_Per_Fraction):1.0
+is(Oropharynx_utility_node,Class):1.0
+SubClassOf(Oropharynx_utility_node,Utility_node,):1.0
+SubClassOf(Oropharynx_utility_node,dependsOn1 some Dysphagea,):1.0
+SubClassOf(Oropharynx_utility_node,dependsOn1 some Overall_survival,):1.0
+SubClassOf(Oropharynx_utility_node,dependsOn1 some Xerostomia):1.0
+is(Osteoradionecroses,Class):1.0
+SubClassOf(Osteoradionecroses,Head_and_Neck_comp):1.0
+is(Overall_survival,Class):1.0
+SubClassOf(Overall_survival,Survival,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Concurrent_Chemotherapy,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Resection_margin,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some GTV,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some HPV_status,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some PTV_dose_Lung,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some PTV_dose_general,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some num_positive_nodes,):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some):1.0
+is(www.w3.org/2000/01/-schema#,(Mean_Dose_SMG and PTV_dose_Lung),):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some N_Stage,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some T_Stage,):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 only Mean_Dose_SMG):1.0
+is(PSA,Class):1.0
+is(PSA_control,Class):1.0
+SubClassOf(PSA_control,Control_outcome,):1.0
+SubClassOf(PSA_control,Smith_et_al_2009_model,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some bNED,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn4 some Equivalent_Uniform_Dose,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn4 some Prostate_PTV_coldVol):1.0
+is(PSA_doubling_time,Class):1.0
+SubClassOf(PSA_doubling_time,Smith_et_al_2009_model,):1.0
+SubClassOf(PSA_doubling_time,non_NTCP_factor,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Gleason,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some PSA,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some T_Stage):1.0
+is(PTV_dose_Lung,Class):1.0
+DisjointWith(PTV_dose_Lung,Mean_Dose_SMG):1.0
+is(PTV_dose_Rx,Class):1.0
+SubClassOf(PTV_dose_Rx,Prescribed_dose):1.0
+is(PTV_dose_general,Class):1.0
+SubClassOf(PTV_dose_general,Prescribed_dose):1.0
+is(PTV_to_Lung_volume_ratio,Class):1.0
+is(Patient_time_cost,Class):1.0
+SubClassOf(Patient_time_cost,Time_cost):1.0
+is(Pelvic_Nodal_Control,Class):1.0
+SubClassOf(Pelvic_Nodal_Control,Nodal_Control,):1.0
+SubClassOf(Pelvic_Nodal_Control,Smith_et_al_2009_model,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Dose_Pelvic_Nodes,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Pelvic_nodal_inv):1.0
+is(Pelvic_nodal_inv,Class):1.0
+is(Pelvis_comp,Class):1.0
+SubClassOf(Pelvis_comp,Complication_by_site):1.0
+is(Pericarditis,Class):1.0
+SubClassOf(Pericarditis,Thorax_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_Heart):1.0
+is(Pharyngoesophageal_Dysfunction,Class):1.0
+SubClassOf(Pharyngoesophageal_Dysfunction,Neck_and_Throat_comp):1.0
+is(Plan_Technique,Class):1.0
+is(Pneumonitis,Class):1.0
+SubClassOf(Pneumonitis,Respiratory_disorder,):1.0
+SubClassOf(Pneumonitis,Thorax_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some ATM_polymorphism,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Age,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_Lung,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some PTV_to_Lung_volume_ratio,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V20_Lung,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V30_Lung,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some peri_stemcell_transplant,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some NTCP_Lung):1.0
+is(Point_dose,Class):1.0
+SubClassOf(Point_dose,Prescription_Point):1.0
+is(Prescribed_dose,Class):1.0
+SubClassOf(Prescribed_dose,Dosing_Parameter):1.0
+is(Prescription_Point,Class):1.0
+is(Proctitis,Class):1.0
+SubClassOf(Proctitis,Rectal_complication):1.0
+is(Prostate_D95,Class):1.0
+is(Prostate_Local_Control,Class):1.0
+SubClassOf(Prostate_Local_Control,Local_Control,):1.0
+SubClassOf(Prostate_Local_Control,Meyer_et_al_2004_model,):1.0
+SubClassOf(Prostate_Local_Control,dependsOn4 some PSA_control,):1.0
+SubClassOf(Prostate_Local_Control,dependsOn4 some Prostate_PTV_coldVol,):1.0
+SubClassOf(Prostate_Local_Control,dependsOn4 some Prostate_PTV_hotVol):1.0
+is(Prostate_PTV_coldVol,Class):1.0
+is(Prostate_PTV_hotVol,Class):1.0
+is(Prostate_utility_node,Class):1.0
+SubClassOf(Prostate_utility_node,Utility_node):1.0
+is(Pulmonary_Fibrosis,Class):1.0
+SubClassOf(Pulmonary_Fibrosis,Respiratory_disorder,):1.0
+SubClassOf(Pulmonary_Fibrosis,Thorax_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Karnofsky,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_Lung,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,Mazeron R1, Etienne-Mastroianni B, Pérol D, Arpin D, Vincent M, Falchero L, Martel-Lafay I, Carrie C, Claude L.\" year2010):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V10_Lung,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some V20_Lung):1.0
+is(QALY,Class):1.0
+SubClassOf(QALY,Quality_Of_Life):1.0
+is(QOL,Class):1.0
+SubClassOf(QOL,Meyer_et_al_2004_model,):1.0
+SubClassOf(QOL,Quality_Of_Life,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Comorbidity,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn4 some Age):1.0
+is(Quality_Of_Life,Class):1.0
+SubClassOf(Quality_Of_Life,Clinical_Outcome):1.0
+is(RBE,Class):1.0
+SubClassOf(RBE,non_NTCP_factor):1.0
+is(RILD,Class):1.0
+SubClassOf(RILD,Abdomen_comp,):1.0
+SubClassOf(RILD,Gastrointestinal_disorder,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some V30_Liver,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_Liver):1.0
+is(RT_cost,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(RT_delivery_time,Class):1.0
+SubClassOf(RT_delivery_time,Clinician_time_cost,):1.0
+SubClassOf(RT_delivery_time,Patient_time_cost,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Plan_Technique):1.0
+is(Radiation_necrosis,Class):1.0
+SubClassOf(Radiation_necrosis,Brain_comp,):1.0
+SubClassOf(Radiation_necrosis,CNS_PNS_or_Sensory_disorder,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Biological_Effective_Dose,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some Dose_Per_Fraction,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some GTV,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some PTV_dose_Rx,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn1 some V12_Brain):1.0
+is(Radiology_Concept,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Rectal_Hemorrhage,Class):1.0
+SubClassOf(Rectal_Hemorrhage,Rectal_complication):1.0
+is(Rectal_complication,Class):1.0
+SubClassOf(Rectal_complication,Gastrointestinal_disorder,):1.0
+SubClassOf(Rectal_complication,Pelvis_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some V50_Rectum,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some V60_Rectum,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(//www.sciencedirect.com/science/article/pii/S0360301603006655),(http):1.0
+is(Prostate cancer; Conformal radiotherapy; Rectal bleeding; Dose–volume histograms. year2003",Keywords):1.0
+is(Prostate cancer; Conformal radiotherapy; Rectal bleeding; Dose–volume histograms. year2003",dependsOn3 some V70_Rectum,):1.0
+is(Prostate cancer; Conformal radiotherapy; Rectal bleeding; Dose–volume histograms. year2003",dependsOn4 some Dose_Pelvic_Nodes):1.0
+is(Rectal_fistula,Class):1.0
+SubClassOf(Rectal_fistula,Rectal_complication):1.0
+is(Reference_point_dose,Class):1.0
+SubClassOf(Reference_point_dose,Prescribed_dose):1.0
+is(Regional_Control,Class):1.0
+SubClassOf(Regional_Control,Control_outcome):1.0
+is(Resection_margin,Class):1.0
+is(Respiratory_disorder,Class):1.0
+SubClassOf(Respiratory_disorder,Complication_by_system):1.0
+is(Retinopathy,Class):1.0
+SubClassOf(Retinopathy,CNS_PNS_or_Sensory_disorder,):1.0
+SubClassOf(Retinopathy,Eyes_Ears_Nose_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some Mean_Dose_Eye):1.0
+is(Smith_et_al_2009_model,Class):1.0
+is(Spine,Class):1.0
+SubClassOf(Spine,Complication_by_site):1.0
+is(Sticky_Saliva,Class):1.0
+SubClassOf(Sticky_Saliva,Gastrointestinal_disorder,):1.0
+SubClassOf(Sticky_Saliva,Neck_and_Throat_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_SMG,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_Sublingual_Gland,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_cLat_SMG):1.0
+is(Survival,Class):1.0
+SubClassOf(Survival,Clinical_Outcome):1.0
+is(Systemic_Therapy,Class):1.0
+is(T_Stage,Class):1.0
+is(Thalamic_region_comp,Class):1.0
+SubClassOf(Thalamic_region_comp,Head_and_Neck_comp):1.0
+is(Thorax_comp,Class):1.0
+SubClassOf(Thorax_comp,Complication_by_site):1.0
+is(Time_cost,Class):1.0
+SubClassOf(Time_cost,RT_cost):1.0
+is(Total_Dose_Anterior_Tounge,Class):1.0
+is(Total_Dose_Thyroid,Class):1.0
+is(Trismus,Class):1.0
+SubClassOf(Trismus,Neck_and_Throat_comp):1.0
+is(Utility_node,Class):1.0
+SubClassOf(Utility_node,Bayesian_Model):1.0
+is(V10_Lung,Class):1.0
+is(V12_Brain,Class):1.0
+is(V15_small_bowel,Class):1.0
+is(V20_Lung,Class):1.0
+is(V30_Esophagus,Class):1.0
+is(V30_Heart_Valve,Class):1.0
+is(V30_Liver,Class):1.0
+is(V30_Lung,Class):1.0
+is(V50_Larynx,Class):1.0
+is(V50_Rectum,Class):1.0
+is(V50_cord_cross_section,Class):1.0
+is(V50_inf_constrictors,Class):1.0
+is(V50_small_bowel,Class):1.0
+is(V5_small_bowel,Class):1.0
+is(V60_Constrictors,Class):1.0
+is(V60_Rectum,Class):1.0
+is(V70_Rectum,Class):1.0
+is(Vocal_Dysfunction,Class):1.0
+SubClassOf(Vocal_Dysfunction,Neck_and_Throat_comp):1.0
+is(Xerostomia,Class):1.0
+SubClassOf(Xerostomia,Gastrointestinal_disorder,):1.0
+SubClassOf(Xerostomia,Neck_and_Throat_comp,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_Parotid_Gland,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_SMG,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,"):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Mean_Dose_cLat_Parotid_Gland,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn3 some NTCP_Parotid_gland):1.0
+is(bNED,Class):1.0
+SubClassOf(bNED,Control_outcome,):1.0
+SubClassOf(bNED,Meyer_et_al_2004_model,):1.0
+SubClassOf(bNED,Smith_et_al_2009_model,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Gleason,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some PSA,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some Prostate_D95,):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(www.w3.org/2000/01/-schema#,dependsOn2 some T_Stage):1.0
+is(chest_wall_separation,Class):1.0
+is(non_NTCP_factor,Class):1.0
+is(num_positive_nodes,Class):1.0
+is(peri_RT_neck_surgery,Class):1.0
+is(peri_stemcell_transplant,Class):1.0
+is(rectal_comp_general,Class):1.0
+SubClassOf(rectal_comp_general,Rectal_complication):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0

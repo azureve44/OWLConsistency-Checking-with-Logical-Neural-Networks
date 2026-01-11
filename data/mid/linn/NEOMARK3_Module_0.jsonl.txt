@@ -1,0 +1,1389 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(www.w3.org/1999/02/22--syntax-ns#,is,Datatype).
+predicate(boolean,is,Datatype).
+predicate(date,is,Datatype).
+predicate(dateTime,is,Datatype).
+predicate(double,is,Datatype).
+predicate(int,is,Datatype).
+predicate(string,is,Datatype).
+predicate(unsignedInt,is,Datatype).
+predicate(hasClinicalData,is,ObjectProperty).
+predicate(hasClinicalData,Domain,Patient).
+predicate(hasClinicalData,Range,ClinicalData).
+predicate(hasClinicalReoccurrence,is,ObjectProperty).
+predicate(hasReoccurrence,is,neomark.#).
+predicate(hasReoccurrence,Domain,Patient).
+predicate(hasReoccurrence,Range,ClinicalReoccurrence).
+predicate(hasDiseaseInstance,is,ObjectProperty).
+predicate(hasDistantPedicledFlap,is,ObjectProperty).
+predicate(hasDistantPedicledFlap,Domain,SurgicalReconstruction).
+predicate(hasDistantPedicledFlap,Range,DistantPedicledFlap).
+predicate(hasFollowUpVisits,is,ObjectProperty).
+predicate(hasFreeFlap,is,ObjectProperty).
+predicate(hasFreeFlap,Domain,SurgicalReconstruction).
+predicate(hasFreeFlap,Range,FreeFlap).
+predicate(hasGeneralImagingData,is,ObjectProperty).
+predicate(hasGeneralImagingData,Domain,Evaluations).
+predicate(hasGeneralImagingData,Range,GeneralImagingData).
+predicate(hasGenomicReoccurrence,is,ObjectProperty).
+predicate(hasReoccurrence,is,neomark.#).
+predicate(hasReoccurrence,Domain,Patient).
+predicate(hasReoccurrence,Range,GenomicReoccurrence).
+predicate(hasImage,is,ObjectProperty).
+predicate(hasImage,Domain,Evaluations).
+predicate(hasImage,Range,Image).
+predicate(hasImagePreview,is,ObjectProperty).
+predicate(hasImagePreview,Domain,Evaluations).
+predicate(hasImagePreview,Range,ImagePreview).
+predicate(hasImagingReoccurrence,is,ObjectProperty).
+predicate(hasReoccurrence,is,neomark.#).
+predicate(hasReoccurrence,Domain,Patient).
+predicate(hasReoccurrence,Range,ImagingReoccurrence).
+predicate(hasLocalFlaps,is,ObjectProperty).
+predicate(hasLocalFlaps,Domain,SurgicalReconstruction).
+predicate(hasLocalFlaps,Range,LocalFlaps).
+predicate(hasLocoRegional,is,ObjectProperty).
+predicate(hasLocoRegional,Domain,SurgicalReconstruction).
+predicate(hasLocoRegional,Range,LocoRegional).
+predicate(hasLymphNode,is,ObjectProperty).
+predicate(hasMicroArrayData,is,ObjectProperty).
+predicate(hasMicroArrayData,Domain,MicroArrayList).
+predicate(hasMicroArrayData,Range,MicroArrayData).
+predicate(hasMicroArrayGroupData,is,ObjectProperty).
+predicate(hasMicroArrayGroupData,Domain,MicroArrayGroupList).
+predicate(hasMicroArrayGroupData,Range,MicroArrayGroupData).
+predicate(hasMicroArrayGroupList,is,ObjectProperty).
+predicate(hasMicroArrayGroupList,Domain,MicroArrayInfo).
+predicate(hasMicroArrayGroupList,Range,MicroArrayGroupList).
+predicate(hasMicroArrayInfo,is,ObjectProperty).
+predicate(hasMicroArrayInfo,Domain,Evaluations).
+predicate(hasMicroArrayInfo,Range,MicroArrayInfo).
+predicate(hasMicroArrayList,is,ObjectProperty).
+predicate(hasMicroArrayList,Domain,MicroArrayInfo).
+predicate(hasMicroArrayList,Range,MicroArrayList).
+predicate(hasNSurgicalProcedure,is,ObjectProperty).
+predicate(hasNSurgicalProcedure,Domain,Treatment).
+predicate(hasNSurgicalProcedure,Range,NSurgicalProcedure).
+predicate(hasOtherTreatments,is,ObjectProperty).
+predicate(hasOtherTreatments,Domain,Treatment).
+predicate(hasOtherTreatments,Range,OtherTreatments).
+predicate(hasPatient,is,ObjectProperty).
+predicate(hasPatient,Domain,Countries).
+predicate(hasPatient,Range,Patient).
+predicate(hasPcrData,is,ObjectProperty).
+predicate(hasPcrData,Domain,Evaluations).
+predicate(hasPcrData,Range,PcrData).
+predicate(hasPostTreatment,is,ObjectProperty).
+predicate(hasPostTreatment,Domain,Treatment).
+predicate(hasPostTreatment,Range,PostTreatment).
+predicate(hasQualityOfLife,is,ObjectProperty).
+predicate(hasQualityOfLife,Domain,FollowUpVisits).
+predicate(hasQualityOfLife,Range,QualityOfLife).
+predicate(hasRiskFactors,is,ObjectProperty).
+predicate(hasRiskFactors,Domain,Patient).
+predicate(hasRiskFactors,Range,RiskFactors).
+predicate(hasSurgicalReconstruction,is,ObjectProperty).
+predicate(hasSurgicalReconstruction,Domain,Treatment).
+predicate(hasSurgicalReconstruction,Range,SurgicalReconstruction).
+predicate(hasTSurgicalProcedure,is,ObjectProperty).
+predicate(hasTSurgicalProcedure,Domain,Treatment).
+predicate(hasTSurgicalProcedure,Range,TSurgicalProcedure).
+predicate(hasTumor,is,ObjectProperty).
+predicate(isClinicalDataOf,is,ObjectProperty).
+predicate(isClinicalDataOf,Characteristics,Functional).
+predicate(isClinicalDataOf,Domain,ClinicalData).
+predicate(isClinicalDataOf,Range,Patient).
+predicate(isClinicalReoccurrenceOf,is,ObjectProperty).
+predicate(isReoccurrenceOf,is,neomark.#).
+predicate(isReoccurrenceOf,Characteristics,Functional).
+predicate(isReoccurrenceOf,Domain,ClinicalReoccurrence).
+predicate(isReoccurrenceOf,Range,Patient).
+predicate(isDiseaseInstanceOf,is,ObjectProperty).
+predicate(isDiseaseInstanceOf,Characteristics,Functional).
+predicate(isDiseaseInstanceOf,Domain,DiseaseInstance).
+predicate(isDiseaseInstanceOf,Range,Evaluations or Patient).
+predicate(isDistantPedicledFlapOf,is,ObjectProperty).
+predicate(isDistantPedicledFlapOf,Characteristics,Functional).
+predicate(isDistantPedicledFlapOf,Domain,DistantPedicledFlap).
+predicate(isDistantPedicledFlapOf,Range,SurgicalReconstruction).
+predicate(isFollowUpVisitsOf,is,ObjectProperty).
+predicate(isFollowUpVisitsOf,Characteristics,Functional).
+predicate(isFollowUpVisitsOf,Domain,FollowUpVisits).
+predicate(isFollowUpVisitsOf,Range,DiseaseInstance or (DiseaseInstance or Evaluations)).
+predicate(isFreeFlapOf,is,ObjectProperty).
+predicate(isFreeFlapOf,Characteristics,Functional).
+predicate(isFreeFlapOf,Domain,FreeFlap).
+predicate(isFreeFlapOf,Range,SurgicalReconstruction).
+predicate(isGeneralImagingDataOf,is,ObjectProperty).
+predicate(isGeneralImagingDataOf,Characteristics,Functional).
+predicate(isGeneralImagingDataOf,Domain,GeneralImagingData).
+predicate(isGeneralImagingDataOf,Range,Evaluations).
+predicate(isGenomicReoccurrenceOf,is,ObjectProperty).
+predicate(isReoccurrenceOf,is,neomark.#).
+predicate(isReoccurrenceOf,Characteristics,Functional).
+predicate(isReoccurrenceOf,Domain,GenomicReoccurrence).
+predicate(isReoccurrenceOf,Range,Patient).
+predicate(isImageOf,is,ObjectProperty).
+predicate(isImageOf,Characteristics,Functional).
+predicate(isImageOf,Domain,Image).
+predicate(isImageOf,Range,Evaluations).
+predicate(isImagePreviewOf,is,ObjectProperty).
+predicate(isImagePreviewOf,Characteristics,Functional).
+predicate(isImagePreviewOf,Domain,ImagePreview).
+predicate(isImagePreviewOf,Range,Evaluations).
+predicate(isImagingReoccurrenceOf,is,ObjectProperty).
+predicate(isReoccurrenceOf,is,neomark.#).
+predicate(isReoccurrenceOf,Characteristics,Functional).
+predicate(isReoccurrenceOf,Domain,ImagingReoccurrence).
+predicate(isReoccurrenceOf,Range,Patient).
+predicate(isLocalFlapsOf,is,ObjectProperty).
+predicate(isLocalFlapsOf,Characteristics,Functional).
+predicate(isLocalFlapsOf,Domain,LocalFlaps).
+predicate(isLocalFlapsOf,Range,SurgicalReconstruction).
+predicate(isLocoRegionalOf,is,ObjectProperty).
+predicate(isLocoRegionalOf,Characteristics,Functional).
+predicate(isLocoRegionalOf,Domain,LocoRegional).
+predicate(isLocoRegionalOf,Range,SurgicalReconstruction).
+predicate(isLymphNodeOf,is,ObjectProperty).
+predicate(isLymphNodeOf,Characteristics,Functional).
+predicate(isLymphNodeOf,Domain,LymphNode).
+predicate(isLymphNodeOf,Range,Evaluations or (NClinicalAspects or (GeometricData or LymphNodeImagingData))).
+predicate(isMicroArrayDataOf,is,ObjectProperty).
+predicate(isMicroArrayDataOf,Characteristics,Functional).
+predicate(isMicroArrayDataOf,Domain,MicroArrayData).
+predicate(isMicroArrayDataOf,Range,MicroArrayList).
+predicate(isMicroArrayGroupDataOf,is,ObjectProperty).
+predicate(isMicroArrayGroupDataOf,Characteristics,Functional).
+predicate(isMicroArrayGroupDataOf,Domain,MicroArrayGroupData).
+predicate(isMicroArrayGroupDataOf,Range,MicroArrayGroupList).
+predicate(isMicroArrayGroupListOf,is,ObjectProperty).
+predicate(isMicroArrayGroupListOf,Characteristics,Functional).
+predicate(isMicroArrayGroupListOf,Domain,MicroArrayGroupList).
+predicate(isMicroArrayGroupListOf,Range,MicroArrayInfo).
+predicate(isMicroArrayInfoOf,is,ObjectProperty).
+predicate(isMicroArrayInfoOf,Characteristics,Functional).
+predicate(isMicroArrayInfoOf,Domain,MicroArrayInfo).
+predicate(isMicroArrayInfoOf,Range,Evaluations).
+predicate(isMicroArrayListOf,is,ObjectProperty).
+predicate(isMicroArrayListOf,Characteristics,Functional).
+predicate(isMicroArrayListOf,Domain,MicroArrayList).
+predicate(isMicroArrayListOf,Range,MicroArrayInfo).
+predicate(isNSurgicalProcedureOf,is,ObjectProperty).
+predicate(isNSurgicalProcedureOf,Characteristics,Functional).
+predicate(isNSurgicalProcedureOf,Domain,NSurgicalProcedure).
+predicate(isNSurgicalProcedureOf,Range,Treatment).
+predicate(isOtherTreatmentsOf,is,ObjectProperty).
+predicate(isOtherTreatmentsOf,Characteristics,Functional).
+predicate(isOtherTreatmentsOf,Domain,OtherTreatments).
+predicate(isOtherTreatmentsOf,Range,Treatment).
+predicate(isPatientOf,is,ObjectProperty).
+predicate(isPatientOf,Characteristics,Functional).
+predicate(isPatientOf,Domain,Patient).
+predicate(isPatientOf,Range,Countries).
+predicate(isPcrDataOf,is,ObjectProperty).
+predicate(isPcrDataOf,Characteristics,Functional).
+predicate(isPcrDataOf,Domain,PcrData).
+predicate(isPcrDataOf,Range,Evaluations).
+predicate(isPostTreatmentOf,is,ObjectProperty).
+predicate(isPostTreatmentOf,Characteristics,Functional).
+predicate(isPostTreatmentOf,Domain,PostTreatment).
+predicate(isPostTreatmentOf,Range,Treatment).
+predicate(isQualityOfLifeOf,is,ObjectProperty).
+predicate(isQualityOfLifeOf,Characteristics,Functional).
+predicate(isQualityOfLifeOf,Domain,QualityOfLife).
+predicate(isQualityOfLifeOf,Range,FollowUpVisits).
+predicate(isRiskFactorsOf,is,ObjectProperty).
+predicate(isRiskFactorsOf,Characteristics,Functional).
+predicate(isRiskFactorsOf,Domain,RiskFactors).
+predicate(isRiskFactorsOf,Range,Patient).
+predicate(isSurgicalReconstructionOf,is,ObjectProperty).
+predicate(isSurgicalReconstructionOf,Characteristics,Functional).
+predicate(isSurgicalReconstructionOf,Domain,SurgicalReconstruction).
+predicate(isSurgicalReconstructionOf,Range,Treatment).
+predicate(isTSurgicalProcedureOf,is,ObjectProperty).
+predicate(isTSurgicalProcedureOf,Characteristics,Functional).
+predicate(isTSurgicalProcedureOf,Domain,TSurgicalProcedure).
+predicate(isTSurgicalProcedureOf,Range,Treatment).
+predicate(isTumorOf,is,ObjectProperty).
+predicate(isTumorOf,Characteristics,Functional).
+predicate(isTumorOf,Domain,Tumor).
+predicate(isTumorOf,Range,GeometricData or (PathologicalData or (TLocalization or (DiseaseInstance or (Treatment or (TumorImagingData or (DiseaseInstance or TClinicalAspects))))))).
+predicate(neomark.#,is,ObjectProperty).
+predicate(neomark.#,Domain,Patient).
+predicate(Reoccurrence,is,neomark.#).
+predicate(neomark.#,is,ObjectProperty).
+predicate(neomark.#,Characteristics,Functional).
+predicate(Reoccurrence,is,neomark.#).
+predicate(Reoccurrence,Range,Patient).
+predicate(clinicalDataDatatypeProperty,is,DataProperty).
+predicate(clinicalDataDatatypeProperty,Domain,ClinicalData).
+predicate(countriesDatatypeProperty,is,DataProperty).
+predicate(countriesDatatypeProperty,Domain,Countries).
+predicate(diseaseInstanceDatatypeProperty,is,DataProperty).
+predicate(diseaseInstanceDatatypeProperty,Domain,DiseaseInstance).
+predicate(distantPedicledFlapDatatypeProperty,is,DataProperty).
+predicate(distantPedicledFlapDatatypeProperty,Domain,DistantPedicledFlap).
+predicate(evaluationsDatatypeProperty,is,DataProperty).
+predicate(evaluationsDatatypeProperty,Domain,Evaluations).
+predicate(followUpVisitsDatatypeProperty,is,DataProperty).
+predicate(followUpVisitsDatatypeProperty,Domain,FollowUpVisits).
+predicate(freeFlapDatatypeProperty,is,DataProperty).
+predicate(freeFlapDatatypeProperty,Domain,FreeFlap).
+predicate(geometricDataDatatypeProperty,is,DataProperty).
+predicate(geometricDataDatatypeProperty,Domain,GeometricData).
+predicate(hasA_VitaminsHaematicConcentration,is,DataProperty).
+predicate(hasA_VitaminsHaematicConcentration,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasAlchool,is,DataProperty).
+predicate(hasAlchool,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasAllergies,is,DataProperty).
+predicate(hasAllergies,SubPropertyOf,clinicalDataDatatypeProperty).
+predicate(hasAllergiesDescription,is,DataProperty).
+predicate(hasAllergiesDescription,SubPropertyOf,clinicalDataDatatypeProperty).
+predicate(hasAlveolarProcessResection,is,DataProperty).
+predicate(hasAlveolarProcessResection,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasAnnerothsModScore,is,DataProperty).
+predicate(hasAnnerothsModScore,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasAnterolateralTigh,is,DataProperty).
+predicate(hasAnterolateralTigh,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasAreaForN,is,DataProperty).
+predicate(hasAreaForN,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasAreaForT,is,DataProperty).
+predicate(hasAreaForT,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasAreaOfIrradiation,is,DataProperty).
+predicate(hasAreaOfIrradiation,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasArterialAnastomosisType,is,DataProperty).
+predicate(hasArterialAnastomosisType,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasAuricleResectionSite,is,DataProperty).
+predicate(hasAuricleResectionSite,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasAxis1,is,DataProperty).
+predicate(hasAxis1,SubPropertyOf,geometricDataDatatypeProperty).
+predicate(hasAxis2,is,DataProperty).
+predicate(hasAxis2,SubPropertyOf,geometricDataDatatypeProperty).
+predicate(hasAxis3,is,DataProperty).
+predicate(hasAxis3,SubPropertyOf,geometricDataDatatypeProperty).
+predicate(hasB12_VitaminsHaematicConcentration,is,DataProperty).
+predicate(hasB12_VitaminsHaematicConcentration,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasBMDentalMobility,is,DataProperty).
+predicate(hasBMDentalMobility,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasBMDentition,is,DataProperty).
+predicate(hasBMDentition,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasBMExtensionAnterior,is,DataProperty).
+predicate(hasBMExtensionAnterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasBMExtensionInferior,is,DataProperty).
+predicate(hasBMExtensionInferior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasBMExtensionPosterior,is,DataProperty).
+predicate(hasBMExtensionPosterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasBMExtensionSuperoMedianAlveolarRidge,is,DataProperty).
+predicate(hasBMExtensionSuperoMedianAlveolarRidge,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasBMI,is,DataProperty).
+predicate(hasBMI,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasBMLocalizationImage,is,DataProperty).
+predicate(hasBMLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasBMSite,is,DataProperty).
+predicate(hasBMSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasBasaloidFeatures,is,DataProperty).
+predicate(hasBasaloidFeatures,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasBilateralNodeStations,is,DataProperty).
+predicate(hasBilateralNodeStations,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasBurst,is,DataProperty).
+predicate(hasBurst,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasCaseNumber,is,DataProperty).
+predicate(hasCaseNumber,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasCenterX,is,DataProperty).
+predicate(hasCenterX,SubPropertyOf,geometricDataDatatypeProperty).
+predicate(hasCenterY,is,DataProperty).
+predicate(hasCenterY,SubPropertyOf,geometricDataDatatypeProperty).
+predicate(hasCenterZ,is,DataProperty).
+predicate(hasCenterZ,SubPropertyOf,geometricDataDatatypeProperty).
+predicate(hasCertvicopectoral,is,DataProperty).
+predicate(hasCertvicopectoral,SubPropertyOf,locoRegionalDatatypeProperty).
+predicate(hasCervicofacial,is,DataProperty).
+predicate(hasCervicofacial,SubPropertyOf,locoRegionalDatatypeProperty).
+predicate(hasCheekResectionOtherInformation,is,DataProperty).
+predicate(hasCheekResectionOtherInformation,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasCheekResectionSite,is,DataProperty).
+predicate(hasCheekResectionSite,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasChemiotherapyDosage,is,DataProperty).
+predicate(hasChemiotherapyDosage,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasChemiotherapyEndDate,is,DataProperty).
+predicate(hasChemiotherapyEndDate,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasChemiotherapyKindOfDrugs,is,DataProperty).
+predicate(hasChemiotherapyKindOfDrugs,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasChemiotherapyStartDate,is,DataProperty).
+predicate(hasChemiotherapyStartDate,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasChipId,is,DataProperty).
+predicate(hasChipId,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasCholesterol,is,DataProperty).
+predicate(hasCholesterol,SubPropertyOf,clinicalDataDatatypeProperty).
+predicate(hasContralateralNodeStations,is,DataProperty).
+predicate(hasContralateralNodeStations,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasCordectomy,is,DataProperty).
+predicate(hasCordectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasCorticotomyExternalVestibular,is,DataProperty).
+predicate(hasCorticotomyExternalVestibular,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasCorticotomyInternalLingual,is,DataProperty).
+predicate(hasCorticotomyInternalLingual,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasCountryDescription,is,DataProperty).
+predicate(hasCountryDescription,SubPropertyOf,countriesDatatypeProperty).
+predicate(hasCycleOk,is,DataProperty).
+predicate(hasCycleOk,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasCyclinD1Stain,is,DataProperty).
+predicate(hasCyclinD1Stain,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasD2_40Stain,is,DataProperty).
+predicate(hasD2_40Stain,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasDateOfAnalysis,is,DataProperty).
+predicate(hasDateOfAnalysis,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasDeglutition,is,DataProperty).
+predicate(hasDeglutition,SubPropertyOf,qualityOfLifeDatatypeProperty).
+predicate(hasDegreeOfCellsKeratinisation,is,DataProperty).
+predicate(hasDegreeOfCellsKeratinisation,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasDentalCusps,is,DataProperty).
+predicate(hasDentalCusps,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasDepthOfInvasion,is,DataProperty).
+predicate(hasDepthOfInvasion,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasDescription,is,DataProperty).
+predicate(hasDescription,SubPropertyOf,microArrayDataDatatypeProperty).
+predicate(hasDiabetes,is,DataProperty).
+predicate(hasDiabetes,SubPropertyOf,clinicalDataDatatypeProperty).
+predicate(hasDietDeficit,is,DataProperty).
+predicate(hasDietDeficit,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasDischargedWithTracheostomy,is,DataProperty).
+predicate(hasDischargedWithTracheostomy,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasDosageOfIrradiation,is,DataProperty).
+predicate(hasDosageOfIrradiation,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasDoseForN,is,DataProperty).
+predicate(hasDoseForN,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasDoseForT,is,DataProperty).
+predicate(hasDoseForT,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasDrinkingHabits,is,DataProperty).
+predicate(hasDrinkingHabits,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasDuration,is,DataProperty).
+predicate(hasDuration,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasEGFRStain,is,DataProperty).
+predicate(hasEGFRStain,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasE_VitaminsHaematicConcentration,is,DataProperty).
+predicate(hasE_VitaminsHaematicConcentration,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasEatingHabits,is,DataProperty).
+predicate(hasEatingHabits,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasEcogStatus,is,DataProperty).
+predicate(hasEcogStatus,SubPropertyOf,clinicalDataDatatypeProperty).
+predicate(hasEmiglossectomy,is,DataProperty).
+predicate(hasEmiglossectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasEmimaxillectomy,is,DataProperty).
+predicate(hasEmimaxillectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasEx-Smoker,is,DataProperty).
+predicate(hasEx-Smoker,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasExenterationOrbitaeSite,is,DataProperty).
+predicate(hasExenterationOrbitaeSite,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasExternalCarotidartery,is,DataProperty).
+predicate(hasExternalCarotidartery,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasExternalIugularVein,is,DataProperty).
+predicate(hasExternalIugularVein,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasExtraCapsularSpreading,is,DataProperty).
+predicate(hasExtraCapsularSpreading,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasFacialArtery,is,DataProperty).
+predicate(hasFacialArtery,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasFacialNerve,is,DataProperty).
+predicate(hasFacialNerve,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasFacialNerveResection,is,DataProperty).
+predicate(hasFacialNerveResection,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasFamiliarHistoryOfMalignance,is,DataProperty).
+predicate(hasFamiliarHistoryOfMalignance,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasFe_HaematicConcentration,is,DataProperty).
+predicate(hasFe_HaematicConcentration,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasFibula,is,DataProperty).
+predicate(hasFibula,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasFilename,is,DataProperty).
+predicate(hasFoMDeficit,is,DataProperty).
+predicate(hasFoMDeficit,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMDentalMobility,is,DataProperty).
+predicate(hasFoMDentalMobility,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMDentition,is,DataProperty).
+predicate(hasFoMDentition,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMExtensionInferior,is,DataProperty).
+predicate(hasFoMExtensionInferior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMExtensionLateral,is,DataProperty).
+predicate(hasFoMExtensionLateral,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMExtensionMedian,is,DataProperty).
+predicate(hasFoMExtensionMedian,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMExtensionPosteriorInferior,is,DataProperty).
+predicate(hasFoMExtensionPosteriorInferior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMExtensionSuperior,is,DataProperty).
+predicate(hasFoMExtensionSuperior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMLocalizationImage,is,DataProperty).
+predicate(hasFoMLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMSite,is,DataProperty).
+predicate(hasFoMSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFoMSymptomathology,is,DataProperty).
+predicate(hasFoMSymptomathology,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasFolati,is,DataProperty).
+predicate(hasFolati,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasForearm,is,DataProperty).
+predicate(hasForearm,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasFreeFlapsLatissimusDorsii,is,DataProperty).
+predicate(hasFreeFlapsLatissimusDorsii,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasFullThicknessResection,is,DataProperty).
+predicate(hasFullThicknessResection,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasGalvanicCurrent,is,DataProperty).
+predicate(hasGalvanicCurrent,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasGeneName,is,DataProperty).
+predicate(hasGeneName,SubPropertyOf,microArrayDataDatatypeProperty).
+predicate(hasGeneralComplicationsSet,is,DataProperty).
+predicate(hasGeneralComplicationsSet,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasGlossectomyPartial,is,DataProperty).
+predicate(hasGlossectomyPartial,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasGlossectomySubTotal,is,DataProperty).
+predicate(hasGlossectomySubTotal,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasGlossectomyTotal,is,DataProperty).
+predicate(hasGlossectomyTotal,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasGradeOfDifferentation,is,DataProperty).
+predicate(hasGradeOfDifferentation,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasGraft,is,DataProperty).
+predicate(hasGraft,SubPropertyOf,surgicalReconstructionDatatypeProperty).
+predicate(hasHPDentalMobility,is,DataProperty).
+predicate(hasHPDentalMobility,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasHPDentition,is,DataProperty).
+predicate(hasHPDentition,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasHPExtensionAnteriorAndLateral,is,DataProperty).
+predicate(hasHPExtensionAnteriorAndLateral,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasHPExtensionMedian,is,DataProperty).
+predicate(hasHPExtensionMedian,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasHPExtensionPosterior,is,DataProperty).
+predicate(hasHPExtensionPosterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasHPExtensionSuperior,is,DataProperty).
+predicate(hasHPExtensionSuperior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasHPLocalizationImage,is,DataProperty).
+predicate(hasHPLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasHPSite,is,DataProperty).
+predicate(hasHPSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasHPV_DNA,is,DataProperty).
+predicate(hasHPV_DNA,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasHPV_Type,is,DataProperty).
+predicate(hasHPV_Type,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasHardPalateResection,is,DataProperty).
+predicate(hasHardPalateResection,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasHb_HaematicConcentration,is,DataProperty).
+predicate(hasHb_HaematicConcentration,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasHeight,is,DataProperty).
+predicate(hasHeight,SubPropertyOf,clinicalDataDatatypeProperty).
+predicate(hasHemimandibulectomy,is,DataProperty).
+predicate(hasHemimandibulectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasHorizontalSovracricoidLaryngectomy,is,DataProperty).
+predicate(hasHorizontalSovracricoidLaryngectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasHorizontalSovraglotticLaryngectomy,is,DataProperty).
+predicate(hasHorizontalSovraglotticLaryngectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasHospitalizationEndDate,is,DataProperty).
+predicate(hasHospitalizationEndDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasHospitalizationStartDate,is,DataProperty).
+predicate(hasHospitalizationStartDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasHypertension,is,DataProperty).
+predicate(hasHypertension,SubPropertyOf,clinicalDataDatatypeProperty).
+predicate(hasHypogloss,is,DataProperty).
+predicate(hasHypogloss,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasIARDentalMobility,is,DataProperty).
+predicate(hasIARDentalMobility,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasIARDentition,is,DataProperty).
+predicate(hasIARDentition,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasIARExtensionAnterior,is,DataProperty).
+predicate(hasIARExtensionAnterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasIARExtensionInferior,is,DataProperty).
+predicate(hasIARExtensionInferior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasIARExtensionLateral,is,DataProperty).
+predicate(hasIARExtensionLateral,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasIARExtensionMedian,is,DataProperty).
+predicate(hasIARExtensionMedian,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasIARExtensionPosterior,is,DataProperty).
+predicate(hasIARExtensionPosterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasIARLocalizationImage,is,DataProperty).
+predicate(hasIARLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasIARSite,is,DataProperty).
+predicate(hasIARSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasIliacCrest,is,DataProperty).
+predicate(hasIliacCrest,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasImageType,is,DataProperty).
+predicate(hasImmunoDuration,is,DataProperty).
+predicate(hasImmunoDuration,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasImmunoType,is,DataProperty).
+predicate(hasImmunoType,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasImmunosuppressorTreatments_Presence,is,DataProperty).
+predicate(hasImmunosuppressorTreatments_Presence,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasImmunotherapyDosages,is,DataProperty).
+predicate(hasImmunotherapyDosages,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasImmunotherapyEndDate,is,DataProperty).
+predicate(hasImmunotherapyEndDate,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasImmunotherapyKindOfDrugs,is,DataProperty).
+predicate(hasImmunotherapyKindOfDrugs,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasImmunotherapyStartDate,is,DataProperty).
+predicate(hasImmunotherapyStartDate,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasInfection,is,DataProperty).
+predicate(hasInfection,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasInternalIugularVein,is,DataProperty).
+predicate(hasInternalIugularVein,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasKi67Stain,is,DataProperty).
+predicate(hasKi67Stain,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasLaryngealNerveResection,is,DataProperty).
+predicate(hasLaryngealNerveResection,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasLaryngectomyOtherInformation,is,DataProperty).
+predicate(hasLaryngectomyOtherInformation,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasLatissimusDorsii,is,DataProperty).
+predicate(hasLatissimusDorsii,SubPropertyOf,distantPedicledFlapDatatypeProperty).
+predicate(hasLevelOfInvasion,is,DataProperty).
+predicate(hasLevelOfInvasion,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasLingualArtery,is,DataProperty).
+predicate(hasLingualArtery,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasLingualNerve,is,DataProperty).
+predicate(hasLingualNerve,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasLipResectionSite,is,DataProperty).
+predicate(hasLipResectionSite,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasLocalComplicationsSet,is,DataProperty).
+predicate(hasLocalComplicationsSet,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasLocalFlap,is,DataProperty).
+predicate(hasLocalFlap,SubPropertyOf,localFlapsDatatypeProperty).
+predicate(hasLogRatio,is,DataProperty).
+predicate(hasLogRatio,SubPropertyOf,microArrayDataDatatypeProperty).
+predicate(hasLotNumber,is,DataProperty).
+predicate(hasLotNumber,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasLymphoPlasmacyticRection,is,DataProperty).
+predicate(hasLymphoPlasmacyticRection,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasLymphoVascularInvasion,is,DataProperty).
+predicate(hasLymphoVascularInvasion,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasMStaging,is,DataProperty).
+predicate(hasMandibulectomyOtherInformation,is,DataProperty).
+predicate(hasMandibulectomyOtherInformation,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasMandibulectomyTotal,is,DataProperty).
+predicate(hasMandibulectomyTotal,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasMarginalMandibulectomy,is,DataProperty).
+predicate(hasMarginalMandibulectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasMartinezGimenoScore,is,DataProperty).
+predicate(hasMartinezGimenoScore,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasMasseter,is,DataProperty).
+predicate(hasMasseter,SubPropertyOf,locoRegionalDatatypeProperty).
+predicate(hasMaxillectomyOtherInformation,is,DataProperty).
+predicate(hasMaxillectomyOtherInformation,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasMaxillectomySite,is,DataProperty).
+predicate(hasMaxillectomySite,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasMechanicalTrauma,is,DataProperty).
+predicate(hasMechanicalTrauma,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasMedicalDevice,is,DataProperty).
+predicate(hasMedicalDevice,SubPropertyOf,treatmentDatatypeProperty).
+predicate(hasMedicalDeviceNote,is,DataProperty).
+predicate(hasMedicalDeviceNote,SubPropertyOf,treatmentDatatypeProperty).
+predicate(hasMobileProsthesis,is,DataProperty).
+predicate(hasMobileProsthesis,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasMobilityNodalSkin,is,DataProperty).
+predicate(hasMobilityNodalSkin,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasMucosaResection,is,DataProperty).
+predicate(hasMucosaResection,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasNSide,is,DataProperty).
+predicate(hasNSide,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasNStaging,is,DataProperty).
+predicate(hasNSurgicalOtherInformation,is,DataProperty).
+predicate(hasNSurgicalOtherInformation,SubPropertyOf,nSurgicalProcedureDatatypeProperty).
+predicate(hasNSurgicalProcedureSite,is,DataProperty).
+predicate(hasNSurgicalProcedureSite,SubPropertyOf,nSurgicalProcedureDatatypeProperty).
+predicate(hasNasogarsticTubeFromDate,is,DataProperty).
+predicate(hasNasogarsticTubeFromDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasNasogarsticTubeToDate,is,DataProperty).
+predicate(hasNasogarsticTubeToDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasNasogastrictubeDischargedWithTracheostomy,is,DataProperty).
+predicate(hasNasogastrictubeDischargedWithTracheostomy,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasNeckDissection,is,DataProperty).
+predicate(hasNeckDissection,SubPropertyOf,nSurgicalProcedureDatatypeProperty).
+predicate(hasNerveResectionOtherInformation,is,DataProperty).
+predicate(hasNerveResectionOtherInformation,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasNerveResectionSet,is,DataProperty).
+predicate(hasNerveResectionSet,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasNerveResectionSite,is,DataProperty).
+predicate(hasNerveResectionSite,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasNo1,is,DataProperty).
+predicate(hasNo1,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo10,is,DataProperty).
+predicate(hasNo10,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo11,is,DataProperty).
+predicate(hasNo11,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo12,is,DataProperty).
+predicate(hasNo12,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo13,is,DataProperty).
+predicate(hasNo13,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo14,is,DataProperty).
+predicate(hasNo14,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo15,is,DataProperty).
+predicate(hasNo15,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo16,is,DataProperty).
+predicate(hasNo16,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo17,is,DataProperty).
+predicate(hasNo17,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo18,is,DataProperty).
+predicate(hasNo18,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo19,is,DataProperty).
+predicate(hasNo19,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo2,is,DataProperty).
+predicate(hasNo2,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo20,is,DataProperty).
+predicate(hasNo20,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo3,is,DataProperty).
+predicate(hasNo3,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo4,is,DataProperty).
+predicate(hasNo4,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo5,is,DataProperty).
+predicate(hasNo5,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo6,is,DataProperty).
+predicate(hasNo6,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo7,is,DataProperty).
+predicate(hasNo7,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo8,is,DataProperty).
+predicate(hasNo8,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNo9,is,DataProperty).
+predicate(hasNo9,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasNoNeckDissection,is,DataProperty).
+predicate(hasNoNeckDissection,SubPropertyOf,nSurgicalProcedureDatatypeProperty).
+predicate(hasNoTreatmentOtherReason,is,DataProperty).
+predicate(hasNoTreatmentOtherReason,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasNoTreatmentReason,is,DataProperty).
+predicate(hasNoTreatmentReason,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasNodalConsistence,is,DataProperty).
+predicate(hasNodalConsistence,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasNodalDepth,is,DataProperty).
+predicate(hasNodalDepth,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasNodalDimension,is,DataProperty).
+predicate(hasNodalDimension,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasNodalForm,is,DataProperty).
+predicate(hasNodalForm,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasNodalPain,is,DataProperty).
+predicate(hasNodalPain,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasNodalQuantity,is,DataProperty).
+predicate(hasNodalQuantity,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasNormalizedLogRatio,is,DataProperty).
+predicate(hasNormalizedLogRatio,SubPropertyOf,microArrayDataDatatypeProperty).
+predicate(hasNoseResection,is,DataProperty).
+predicate(hasNoseResection,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasNotes,is,DataProperty).
+predicate(hasNotes,SubPropertyOf,clinicalDataDatatypeProperty).
+predicate(hasNuclearPleomorphism,is,DataProperty).
+predicate(hasNuclearPleomorphism,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasNumbeOfMitosesPer10HPF,is,DataProperty).
+predicate(hasNumbeOfMitosesPer10HPF,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasNumberLymphNodesBigger3,is,DataProperty).
+predicate(hasNumberOfLymphNodes,is,DataProperty).
+predicate(hasNumberOfMetastaticLymphnodesPerLevel,is,DataProperty).
+predicate(hasNumberOfMetastaticLymphnodesPerLevel,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasOTDentalMobility,is,DataProperty).
+predicate(hasOTDentalMobility,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasOTDentition,is,DataProperty).
+predicate(hasOTDentition,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasOTExtensionInferior,is,DataProperty).
+predicate(hasOTExtensionInferior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasOTExtensionLateral,is,DataProperty).
+predicate(hasOTExtensionLateral,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasOTExtensionMedian,is,DataProperty).
+predicate(hasOTExtensionMedian,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasOTExtensionPosterior,is,DataProperty).
+predicate(hasOTExtensionPosterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasOTExtensionSuperior,is,DataProperty).
+predicate(hasOTExtensionSuperior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasOTLocalizationImage,is,DataProperty).
+predicate(hasOTLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasOTSite,is,DataProperty).
+predicate(hasOTSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasOmolateralNodeStations,is,DataProperty).
+predicate(hasOmolateralNodeStations,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasOptionalDeglutition,is,DataProperty).
+predicate(hasOptionalDeglutition,SubPropertyOf,qualityOfLifeDatatypeProperty).
+predicate(hasOptionalRespiration,is,DataProperty).
+predicate(hasOptionalRespiration,SubPropertyOf,qualityOfLifeDatatypeProperty).
+predicate(hasOptionalSocialRehabilitation,is,DataProperty).
+predicate(hasOptionalSocialRehabilitation,SubPropertyOf,qualityOfLifeDatatypeProperty).
+predicate(hasOptionalSpeech,is,DataProperty).
+predicate(hasOptionalSpeech,SubPropertyOf,qualityOfLifeDatatypeProperty).
+predicate(hasOralHygiene,is,DataProperty).
+predicate(hasOralHygiene,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasOrbitalFloor,is,DataProperty).
+predicate(hasOrbitalFloor,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasOriginalLymphoNode,is,DataProperty).
+predicate(hasOriginalLymphoNode,SubPropertyOf,lymphNodeDatatypeProperty).
+predicate(hasOriginalVisitId,is,DataProperty).
+predicate(hasOriginalVisitId,SubPropertyOf,diseaseInstanceDatatypeProperty).
+predicate(hasOtherArterialAnastomosis,is,DataProperty).
+predicate(hasOtherArterialAnastomosis,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasOtherDistantPedicledFlap,is,DataProperty).
+predicate(hasOtherDistantPedicledFlap,SubPropertyOf,distantPedicledFlapDatatypeProperty).
+predicate(hasOtherFacialBoneResectionNotes,is,DataProperty).
+predicate(hasOtherFacialBoneResectionNotes,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasOtherFreeFlap,is,DataProperty).
+predicate(hasOtherFreeFlap,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasOtherGeneralComplications,is,DataProperty).
+predicate(hasOtherGeneralComplications,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasOtherGlossectomyNotes,is,DataProperty).
+predicate(hasOtherGlossectomyNotes,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasOtherLocalComplications,is,DataProperty).
+predicate(hasOtherLocalComplications,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasOtherLocalFlaps,is,DataProperty).
+predicate(hasOtherLocalFlaps,SubPropertyOf,localFlapsDatatypeProperty).
+predicate(hasOtherLocoRegional,is,DataProperty).
+predicate(hasOtherLocoRegional,SubPropertyOf,locoRegionalDatatypeProperty).
+predicate(hasOtherNerveAnastomosis,is,DataProperty).
+predicate(hasOtherNerveAnastomosis,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasOtherNotes,is,DataProperty).
+predicate(hasOtherNotes,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasOtherRT,is,DataProperty).
+predicate(hasOtherRT,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasOtherSurgeryNotes,is,DataProperty).
+predicate(hasOtherSurgeryNotes,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasOtherVenousAnastomosis,is,DataProperty).
+predicate(hasOtherVenousAnastomosis,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasP16Ink4aStain,is,DataProperty).
+predicate(hasP16Ink4aStain,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasP53_STAIN,is,DataProperty).
+predicate(hasP53_STAIN,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasPEGDischargedWithTracheostomy,is,DataProperty).
+predicate(hasPEGDischargedWithTracheostomy,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasPEGFromDate,is,DataProperty).
+predicate(hasPEGFromDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasPEGToDate,is,DataProperty).
+predicate(hasPEGToDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasPORTDischargedWithTracheostomy,is,DataProperty).
+predicate(hasPORTDischargedWithTracheostomy,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasPORTFromDate,is,DataProperty).
+predicate(hasPORTFromDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasPORTToDate,is,DataProperty).
+predicate(hasPORTToDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasPalliativeTreatmentNotes,is,DataProperty).
+predicate(hasPalliativeTreatmentNotes,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasPalpebralResectionSite,is,DataProperty).
+predicate(hasPalpebralResectionSite,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasPanelId,is,DataProperty).
+predicate(hasPanelId,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasParaThyroidectomyNotes,is,DataProperty).
+predicate(hasParaThyroidectomyNotes,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasPartialPharyngectomy,is,DataProperty).
+predicate(hasPartialPharyngectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasPatternOfInvasion,is,DataProperty).
+predicate(hasPatternOfInvasion,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasPectoralisMajor,is,DataProperty).
+predicate(hasPectoralisMajor,SubPropertyOf,distantPedicledFlapDatatypeProperty).
+predicate(hasPelvectomyLocation,is,DataProperty).
+predicate(hasPelvectomyLocation,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasPerineuralInvasion,is,DataProperty).
+predicate(hasPerineuralInvasion,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasPeriodSmokingFrom,is,DataProperty).
+predicate(hasPeriodSmokingFrom,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasPeriodSmokingTo,is,DataProperty).
+predicate(hasPeriodSmokingTo,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasPhysicalAgents,is,DataProperty).
+predicate(hasPhysicalAgents,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasPlummerVinson,is,DataProperty).
+predicate(hasPlummerVinson,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasPostTreatmentType,is,DataProperty).
+predicate(hasPostTreatmentType,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasPrecancerousLesions,is,DataProperty).
+predicate(hasPrecancerousLesions,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasPreviousRelevantPathologicalSamples,is,DataProperty).
+predicate(hasPreviousRelevantPathologicalSamples,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasPrimaryClosure,is,DataProperty).
+predicate(hasPrimaryClosure,SubPropertyOf,surgicalReconstructionDatatypeProperty).
+predicate(hasProbeName,is,DataProperty).
+predicate(hasProbeName,SubPropertyOf,microArrayDataDatatypeProperty).
+predicate(hasProtocolOk,is,DataProperty).
+predicate(hasProtocolOk,SubPropertyOf,pcrDataDatatypeProperty).
+predicate(hasQuantityPerDay,is,DataProperty).
+predicate(hasQuantityPerDay,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasQuittedSmoking,is,DataProperty).
+predicate(hasQuittedSmoking,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasRMDentalMobility,is,DataProperty).
+predicate(hasRMDentalMobility,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasRMDentition,is,DataProperty).
+predicate(hasRMDentition,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasRMExtensionAnterior,is,DataProperty).
+predicate(hasRMExtensionAnterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasRMExtensionInferoMedian,is,DataProperty).
+predicate(hasRMExtensionInferoMedian,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasRMExtensionPosterior,is,DataProperty).
+predicate(hasRMExtensionPosterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasRMExtensionPosteroMedian,is,DataProperty).
+predicate(hasRMExtensionPosteroMedian,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasRMExtensionSuperior,is,DataProperty).
+predicate(hasRMExtensionSuperior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasRMLocalizationImage,is,DataProperty).
+predicate(hasRMLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasRMSite,is,DataProperty).
+predicate(hasRMSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasRT,is,DataProperty).
+predicate(hasRT,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasRTEndDate,is,DataProperty).
+predicate(hasRTEndDate,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasRTStartDate,is,DataProperty).
+predicate(hasRTStartDate,SubPropertyOf,otherTreatmentsDatatypeProperty).
+predicate(hasRadicalModified,is,DataProperty).
+predicate(hasRadicalModified,SubPropertyOf,nSurgicalProcedureDatatypeProperty).
+predicate(hasRectusAbdominis,is,DataProperty).
+predicate(hasRectusAbdominis,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasReferral,is,DataProperty).
+predicate(hasReferral,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasReferralImage,is,DataProperty).
+predicate(hasReferralImage,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasRemarks,is,DataProperty).
+predicate(hasRespiration,is,DataProperty).
+predicate(hasRespiration,SubPropertyOf,qualityOfLifeDatatypeProperty).
+predicate(hasSARDentalMobility,is,DataProperty).
+predicate(hasSARDentalMobility,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSARDentition,is,DataProperty).
+predicate(hasSARDentition,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSARExtensionAnterior,is,DataProperty).
+predicate(hasSARExtensionAnterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSARExtensionLateral,is,DataProperty).
+predicate(hasSARExtensionLateral,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSARExtensionMedian,is,DataProperty).
+predicate(hasSARExtensionMedian,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSARExtensionPosterior,is,DataProperty).
+predicate(hasSARExtensionPosterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSARExtensionSuperior,is,DataProperty).
+predicate(hasSARExtensionSuperior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSARLocalizationImage,is,DataProperty).
+predicate(hasSARLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSARSite,is,DataProperty).
+predicate(hasSARSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSPExtensionAnterior,is,DataProperty).
+predicate(hasSPExtensionAnterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSPExtensionInferior,is,DataProperty).
+predicate(hasSPExtensionInferior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSPExtensionMedian,is,DataProperty).
+predicate(hasSPExtensionMedian,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSPExtensionSuperior,is,DataProperty).
+predicate(hasSPExtensionSuperior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSPLocalizationImage,is,DataProperty).
+predicate(hasSPLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSPSite,is,DataProperty).
+predicate(hasSPSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasSegmentalLeft,is,DataProperty).
+predicate(hasSegmentalLeft,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSegmentalLeftTextChoice,is,DataProperty).
+predicate(hasSegmentalLeftTextChoice,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSegmentalMandibulectomy,is,DataProperty).
+predicate(hasSegmentalMandibulectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSegmentalMaxillectomy,is,DataProperty).
+predicate(hasSegmentalMaxillectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSegmentalRight,is,DataProperty).
+predicate(hasSegmentalRight,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSegmentalRightTextChoice,is,DataProperty).
+predicate(hasSegmentalRightTextChoice,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSegmentation,is,DataProperty).
+predicate(hasSegmentation,SubPropertyOf,geometricDataDatatypeProperty).
+predicate(hasSialoadenectomyProdedure,is,DataProperty).
+predicate(hasSialoadenectomyProdedure,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSialoadenectomySite,is,DataProperty).
+predicate(hasSialoadenectomySite,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSite,is,DataProperty).
+predicate(hasSite,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasSize,is,DataProperty).
+predicate(hasSkinResection,is,DataProperty).
+predicate(hasSkinResection,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSmoker,is,DataProperty).
+predicate(hasSmoker,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasSmookingHabits,is,DataProperty).
+predicate(hasSmookingHabits,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasSocialRehabilitation,is,DataProperty).
+predicate(hasSocialRehabilitation,SubPropertyOf,qualityOfLifeDatatypeProperty).
+predicate(hasSoftPalate,is,DataProperty).
+predicate(hasSoftPalate,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSpeech,is,DataProperty).
+predicate(hasSpeech,SubPropertyOf,qualityOfLifeDatatypeProperty).
+predicate(hasSubmental,is,DataProperty).
+predicate(hasSubmental,SubPropertyOf,locoRegionalDatatypeProperty).
+predicate(hasSubstanceExposition,is,DataProperty).
+predicate(hasSubstanceExposition,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasSurface,is,DataProperty).
+predicate(hasSurface,SubPropertyOf,geometricDataDatatypeProperty).
+predicate(hasSurgicalAccess,is,DataProperty).
+predicate(hasSurgicalAccess,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSurgicalAccessNotes,is,DataProperty).
+predicate(hasSurgicalAccessNotes,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasSurgicalMargins,is,DataProperty).
+predicate(hasSurgicalMargins,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasSystematicName,is,DataProperty).
+predicate(hasSystematicName,SubPropertyOf,microArrayDataDatatypeProperty).
+predicate(hasTBExtensionAnterior,is,DataProperty).
+predicate(hasTBExtensionAnterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTBExtensionInferiorAndLateral,is,DataProperty).
+predicate(hasTBExtensionInferiorAndLateral,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTBExtensionPosteriorInferior,is,DataProperty).
+predicate(hasTBExtensionPosteriorInferior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTBExtensionSuperior,is,DataProperty).
+predicate(hasTBExtensionSuperior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTBExtensionSuperoLateral,is,DataProperty).
+predicate(hasTBExtensionSuperoLateral,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTBLocalizationImage,is,DataProperty).
+predicate(hasTBLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTBSite,is,DataProperty).
+predicate(hasTBSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTConsistence,is,DataProperty).
+predicate(hasTFExtensionInferior,is,DataProperty).
+predicate(hasTFExtensionInferior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTFExtensionPosterior,is,DataProperty).
+predicate(hasTFExtensionPosterior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTFExtensionSuperior,is,DataProperty).
+predicate(hasTFExtensionSuperior,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTFLocalizationImage,is,DataProperty).
+predicate(hasTFLocalizationImage,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTFSite,is,DataProperty).
+predicate(hasTFSite,SubPropertyOf,tLocalizationDatatypeProperty).
+predicate(hasTFormMacroscopicView,is,DataProperty).
+predicate(hasTNM_pM,is,DataProperty).
+predicate(hasTNM_pM,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasTNM_pN,is,DataProperty).
+predicate(hasTNM_pN,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasTNM_pT,is,DataProperty).
+predicate(hasTNM_pT,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasTStaging,is,DataProperty).
+predicate(hasTemporalis,is,DataProperty).
+predicate(hasTemporalis,SubPropertyOf,locoRegionalDatatypeProperty).
+predicate(hasThyroidectomyProcedure,is,DataProperty).
+predicate(hasThyroidectomyProcedure,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasTiroidArtery,is,DataProperty).
+predicate(hasTiroidArtery,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasTongueBase,is,DataProperty).
+predicate(hasTongueBase,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasTonsillaResection,is,DataProperty).
+predicate(hasTonsillaResection,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasTotalExtendedToPharynx,is,DataProperty).
+predicate(hasTotalExtendedToPharynx,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasTotalLaryngectomy,is,DataProperty).
+predicate(hasTotalLaryngectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasTotalMaxillectomy,is,DataProperty).
+predicate(hasTotalMaxillectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasTotalNumberOfLymphnodesForLevel,is,DataProperty).
+predicate(hasTotalNumberOfLymphnodesForLevel,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasTotalPharyngectomy,is,DataProperty).
+predicate(hasTotalPharyngectomy,SubPropertyOf,tSurgicalProcedureDatatypeProperty).
+predicate(hasTracheostomyFromDate,is,DataProperty).
+predicate(hasTracheostomyFromDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasTracheostomyToDate,is,DataProperty).
+predicate(hasTracheostomyToDate,SubPropertyOf,postTreatmentDatatypeProperty).
+predicate(hasTransversCervicalArtery,is,DataProperty).
+predicate(hasTransversCervicalArtery,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasTrapezius,is,DataProperty).
+predicate(hasTrapezius,SubPropertyOf,distantPedicledFlapDatatypeProperty).
+predicate(hasTreatmentDate,is,DataProperty).
+predicate(hasTreatmentDate,SubPropertyOf,treatmentDatatypeProperty).
+predicate(hasTumorMaximumdiameter,is,DataProperty).
+predicate(hasTumorMaximumdiameter,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasTumorThickness,is,DataProperty).
+predicate(hasTumorThickness,SubPropertyOf,pathologicalDataDatatypeProperty).
+predicate(hasTypeExtraCapsularSpreading,is,DataProperty).
+predicate(hasTypeExtraCapsularSpreading,SubPropertyOf,nClinicalAspectsDatatypeProperty).
+predicate(hasTypeOfDrug,is,DataProperty).
+predicate(hasTypeOfDrug,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasTypeOfInfection,is,DataProperty).
+predicate(hasTypeOfInfection,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasTypeOfMalignancy,is,DataProperty).
+predicate(hasTypeOfMalignancy,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasTypeOfPhysicalAgent,is,DataProperty).
+predicate(hasTypeOfPhysicalAgent,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasTypeOfRelative,is,DataProperty).
+predicate(hasTypeOfRelative,SubPropertyOf,riskFactorsDatatypeProperty).
+predicate(hasTyreoLingualTrunk,is,DataProperty).
+predicate(hasTyreoLingualTrunk,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasValue,is,DataProperty).
+predicate(hasValue,SubPropertyOf,microArrayGroupDataDatatypeProperty).
+predicate(hasVenousAnastomosisType,is,DataProperty).
+predicate(hasVenousAnastomosisType,SubPropertyOf,freeFlapDatatypeProperty).
+predicate(hasVisitDate,is,DataProperty).
+predicate(hasVisitDate,SubPropertyOf,followUpVisitsDatatypeProperty).
+predicate(hasVolume,is,DataProperty).
+predicate(hasVolume,SubPropertyOf,geometricDataDatatypeProperty).
+predicate(hasWeight,is,DataProperty).
+predicate(hasWeight,SubPropertyOf,clinicalDataDatatypeProperty).
+predicate(localFlapsDatatypeProperty,is,DataProperty).
+predicate(localFlapsDatatypeProperty,Domain,LocalFlaps).
+predicate(locoRegionalDatatypeProperty,is,DataProperty).
+predicate(locoRegionalDatatypeProperty,Domain,LocoRegional).
+predicate(lymphNodeDatatypeProperty,is,DataProperty).
+predicate(lymphNodeDatatypeProperty,Domain,LymphNode).
+predicate(microArrayDataDatatypeProperty,is,DataProperty).
+predicate(microArrayDataDatatypeProperty,Domain,MicroArrayData).
+predicate(microArrayGroupDataDatatypeProperty,is,DataProperty).
+predicate(microArrayGroupDataDatatypeProperty,Domain,MicroArrayGroupData).
+predicate(microArrayGroupListDatatypeProperty,is,DataProperty).
+predicate(microArrayGroupListDatatypeProperty,Domain,MicroArrayGroupList).
+predicate(microArrayInfoDatatypeProperty,is,DataProperty).
+predicate(microArrayInfoDatatypeProperty,Domain,MicroArrayInfo).
+predicate(microArrayListDatatypeProperty,is,DataProperty).
+predicate(microArrayListDatatypeProperty,Domain,MicroArrayList).
+predicate(nClinicalAspectsDatatypeProperty,is,DataProperty).
+predicate(nClinicalAspectsDatatypeProperty,Domain,NClinicalAspects).
+predicate(nSurgicalProcedureDatatypeProperty,is,DataProperty).
+predicate(nSurgicalProcedureDatatypeProperty,Domain,NSurgicalProcedure).
+predicate(otherTreatmentsDatatypeProperty,is,DataProperty).
+predicate(otherTreatmentsDatatypeProperty,Domain,OtherTreatments).
+predicate(pathologicalDataDatatypeProperty,is,DataProperty).
+predicate(pathologicalDataDatatypeProperty,Domain,PathologicalData).
+predicate(patientDatatypeProperty,is,DataProperty).
+predicate(patientDatatypeProperty,Domain,Patient).
+predicate(pcrDataDatatypeProperty,is,DataProperty).
+predicate(pcrDataDatatypeProperty,Domain,PcrData).
+predicate(postTreatmentDatatypeProperty,is,DataProperty).
+predicate(postTreatmentDatatypeProperty,Domain,PostTreatment).
+predicate(qualityOfLifeDatatypeProperty,is,DataProperty).
+predicate(qualityOfLifeDatatypeProperty,Domain,QualityOfLife).
+predicate(riskFactorsDatatypeProperty,is,DataProperty).
+predicate(riskFactorsDatatypeProperty,Domain,RiskFactors).
+predicate(surgicalReconstructionDatatypeProperty,is,DataProperty).
+predicate(surgicalReconstructionDatatypeProperty,Domain,SurgicalReconstruction).
+predicate(tLocalizationDatatypeProperty,is,DataProperty).
+predicate(tLocalizationDatatypeProperty,Domain,TLocalization).
+predicate(tSurgicalProcedureDatatypeProperty,is,DataProperty).
+predicate(tSurgicalProcedureDatatypeProperty,Domain,TSurgicalProcedure).
+predicate(treatmentDatatypeProperty,is,DataProperty).
+predicate(treatmentDatatypeProperty,Domain,Treatment).
+predicate(tumorDatatypeProperty,is,DataProperty).
+predicate(tumorDatatypeProperty,Domain,Tumor).
+predicate(neomark.#,is,DataProperty).
+predicate(neomark.#,Characteristics,Functional).
+predicate(GeneOntologyReference,is,neomark.#).
+predicate(GeneOntologyReference,Range,string).
+predicate(neomark.#,is,DataProperty).
+predicate(neomark.#,is,DataProperty).
+predicate(neomark.#,is,DataProperty).
+predicate(ExternalReference,is,neomark.#).
+predicate(ExternalReference,Range,string).
+predicate(neomark.#,is,DataProperty).
+predicate(neomark.#,SubPropertyOf,diseaseInstanceDatatypeProperty).
+predicate(neomark.#,is,DataProperty).
+predicate(neomark.#,SubPropertyOf,followUpVisitsDatatypeProperty).
+predicate(ClinicalData,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isClinicalDataOf only Patient,).
+predicate(Thing,,is,isClinicalDataOf exactly 1 Patient,).
+predicate(Thing,,is,hasAllergies some boolean,).
+predicate(Thing,,is,hasCholesterol some boolean,).
+predicate(Thing,,is,hasDiabetes some boolean,).
+predicate(Thing,,is,hasEcogStatus some int,).
+predicate(Thing,,is,hasHypertension some boolean).
+predicate(ClinicalReoccurrence,is,Class).
+predicate(Reoccurrence,is,neomark.#).
+predicate(Countries,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasPatient only Patient,).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(www.w3.org/2000/01/-schema#,is,hasPatient max 1 Patient,).
+predicate(www.w3.org/2000/01/-schema#,is,hasCountryDescription some string).
+predicate(DiseaseInstance,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasFollowUpVisits only FollowUpVisits,).
+predicate(Thing,,is,hasTumor only Tumor,).
+predicate(Thing,,is,isDiseaseInstanceOf only).
+predicate(Thing,,is,(Evaluations or Patient),).
+predicate(Thing,,is,hasFollowUpVisits min 1 FollowUpVisits,).
+predicate(Thing,,is,hasTumor min 1 Tumor,).
+predicate(Thing,,is,isDiseaseInstanceOf exactly 1 Patient,).
+predicate(Thing,,is,isDiseaseInstanceOf max 1 Evaluations).
+predicate(DistantPedicledFlap,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isDistantPedicledFlapOf exactly 1 SurgicalReconstruction).
+predicate(Evaluations,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasDiseaseInstance only DiseaseInstance,).
+predicate(Thing,,is,hasFollowUpVisits only FollowUpVisits,).
+predicate(Thing,,is,hasGeneralImagingData only GeneralImagingData,).
+predicate(Thing,,is,hasImage only Image,).
+predicate(Thing,,is,hasImagePreview only ImagePreview,).
+predicate(Thing,,is,hasLymphNode only LymphNode,).
+predicate(Thing,,is,hasMicroArrayInfo only MicroArrayInfo,).
+predicate(Thing,,is,hasPcrData only PcrData,).
+predicate(Thing,,is,hasImage min 1 Image,).
+predicate(Thing,,is,hasImagePreview min 1 ImagePreview,).
+predicate(Thing,,is,hasLymphNode min 1 LymphNode,).
+predicate(Thing,,is,hasPcrData min 1 PcrData,).
+predicate(Thing,,is,hasGeneralImagingData exactly 1 GeneralImagingData,).
+predicate(Thing,,is,hasMicroArrayInfo exactly 1 MicroArrayInfo,).
+predicate(Thing,,is,hasDiseaseInstance max 1 DiseaseInstance,).
+predicate(Thing,,is,hasFollowUpVisits max 1 FollowUpVisits).
+predicate(FollowUpVisits,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasQualityOfLife only QualityOfLife,).
+predicate(Thing,,is,isFollowUpVisitsOf only).
+predicate(Thing,,is,(DiseaseInstance or Evaluations),).
+predicate(Thing,,is,hasQualityOfLife exactly 1 QualityOfLife,).
+predicate(Thing,,is,isFollowUpVisitsOf exactly 1 DiseaseInstance,).
+predicate(Thing,,is,isFollowUpVisitsOf max 1 Evaluations,).
+predicate(Thing,,is,hasVisitDate some dateTime,).
+predicate(hasTimeSlice some string,is,neomark.#).
+predicate(FreeFlap,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isFreeFlapOf exactly 1 SurgicalReconstruction).
+predicate(GeneralImagingData,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isGeneralImagingDataOf only Evaluations,).
+predicate(Thing,,is,isGeneralImagingDataOf exactly 1 Evaluations,).
+predicate(Thing,,is,hasNumberLymphNodesBigger3 some boolean,).
+predicate(Thing,,is,hasNumberOfLymphNodes some unsignedInt).
+predicate(GenomicReoccurrence,is,Class).
+predicate(Reoccurrence,,is,neomark.#).
+predicate(hasInput some int,,is,neomark.#).
+predicate(hasOutput some int,is,neomark.#).
+predicate(GeometricData,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasLymphNode only LymphNode,).
+predicate(Thing,,is,hasTumor only Tumor,).
+predicate(Thing,,is,hasLymphNode max 1 LymphNode,).
+predicate(Thing,,is,hasTumor max 1 Tumor).
+predicate(Image,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isImageOf only Evaluations,).
+predicate(Thing,,is,isImageOf exactly 1 Evaluations,).
+predicate(Thing,,is,hasFilename some string,).
+predicate(Thing,,is,hasImageType some string,).
+predicate(Thing,,is,hasRemarks some string).
+predicate(ImagePreview,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isImagePreviewOf only Evaluations,).
+predicate(Thing,,is,isImagePreviewOf exactly 1 Evaluations,).
+predicate(Thing,,is,hasFilename some string,).
+predicate(Thing,,is,hasImageType some string,).
+predicate(Thing,,is,hasRemarks some string).
+predicate(ImagingReoccurrence,is,Class).
+predicate(Reoccurrence,,is,neomark.#).
+predicate(hasInput some int,,is,neomark.#).
+predicate(hasOutput some int,is,neomark.#).
+predicate(LocalFlaps,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isLocalFlapsOf exactly 1 SurgicalReconstruction).
+predicate(LocoRegional,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isLocoRegionalOf exactly 1 SurgicalReconstruction).
+predicate(LymphNode,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isLymphNodeOf only).
+predicate(Thing,,is,(Evaluations or GeometricData or LymphNodeImagingData or NClinicalAspects),).
+predicate(Thing,,is,isLymphNodeOf exactly 1 Evaluations,).
+predicate(Thing,,is,isLymphNodeOf max 1 GeometricData,).
+predicate(Thing,,is,isLymphNodeOf max 1 LymphNodeImagingData,).
+predicate(Thing,,is,isLymphNodeOf max 1 NClinicalAspects).
+predicate(LymphNodeImagingData,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasLymphNode only LymphNode,).
+predicate(Thing,,is,hasLymphNode max 1 LymphNode).
+predicate(MicroArrayData,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isMicroArrayDataOf only MicroArrayList,).
+predicate(Thing,,is,isMicroArrayDataOf exactly 1 MicroArrayList,).
+predicate(Thing,,is,hasDescription some string,).
+predicate(Thing,,is,hasGeneName some string,).
+predicate(Thing,,is,hasLogRatio some double,).
+predicate(Thing,,is,hasNormalizedLogRatio some double,).
+predicate(Thing,,is,hasProbeName some string,).
+predicate(Thing,,is,hasSystematicName some string).
+predicate(MicroArrayGroupData,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isMicroArrayGroupDataOf only MicroArrayGroupList,).
+predicate(Thing,,is,isMicroArrayGroupDataOf exactly 1 MicroArrayGroupList).
+predicate(MicroArrayGroupList,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasMicroArrayGroupData only MicroArrayGroupData,).
+predicate(Thing,,is,isMicroArrayGroupListOf only MicroArrayInfo,).
+predicate(Thing,,is,hasMicroArrayGroupData min 1 MicroArrayGroupData,).
+predicate(Thing,,is,isMicroArrayGroupListOf exactly 1 MicroArrayInfo).
+predicate(MicroArrayInfo,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasMicroArrayGroupList only MicroArrayGroupList,).
+predicate(Thing,,is,hasMicroArrayList only MicroArrayList,).
+predicate(Thing,,is,isMicroArrayInfoOf only Evaluations,).
+predicate(Thing,,is,hasMicroArrayGroupList exactly 1 MicroArrayGroupList,).
+predicate(Thing,,is,hasMicroArrayList exactly 1 MicroArrayList,).
+predicate(Thing,,is,isMicroArrayInfoOf exactly 1 Evaluations).
+predicate(MicroArrayList,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasMicroArrayData only MicroArrayData,).
+predicate(Thing,,is,isMicroArrayListOf only MicroArrayInfo,).
+predicate(Thing,,is,hasMicroArrayData min 1 MicroArrayData,).
+predicate(Thing,,is,isMicroArrayListOf exactly 1 MicroArrayInfo).
+predicate(NClinicalAspects,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasLymphNode only LymphNode,).
+predicate(Thing,,is,hasLymphNode max 1 LymphNode).
+predicate(NSurgicalProcedure,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isNSurgicalProcedureOf exactly 1 Treatment).
+predicate(OtherTreatments,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isOtherTreatmentsOf exactly 1 Treatment).
+predicate(PathologicalData,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasTumor only Tumor,).
+predicate(Thing,,is,hasTumor max 1 Tumor,).
+predicate(Thing,,is,hasBasaloidFeatures some boolean,).
+predicate(Thing,,is,hasCaseNumber some string,).
+predicate(Thing,,is,hasDateOfAnalysis some date,).
+predicate(Thing,,is,hasDepthOfInvasion some double,).
+predicate(Thing,,is,hasLevelOfInvasion some string,).
+predicate(Thing,,is,hasLymphoPlasmacyticRection some string,).
+predicate(Thing,,is,hasLymphoVascularInvasion some boolean,).
+predicate(Thing,,is,hasNuclearPleomorphism some string,).
+predicate(Thing,,is,hasPerineuralInvasion some boolean,).
+predicate(Thing,,is,hasSite some string,).
+predicate(Thing,,is,hasTNM_pM some string,).
+predicate(Thing,,is,hasTNM_pN some string,).
+predicate(Thing,,is,hasTNM_pT some string,).
+predicate(Thing,,is,hasTumorMaximumdiameter some double,).
+predicate(Thing,,is,hasTumorThickness some double).
+predicate(Patient,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasClinicalData only ClinicalData,).
+predicate(Thing,,is,hasClinicalReoccurrence only ClinicalReoccurrence,).
+predicate(Thing,,is,hasDiseaseInstance only DiseaseInstance,).
+predicate(Thing,,is,hasGenomicReoccurrence only GenomicReoccurrence,).
+predicate(Thing,,is,hasImagingReoccurrence only ImagingReoccurrence,).
+predicate(Thing,,is,hasRiskFactors only RiskFactors,).
+predicate(Thing,,is,isPatientOf only Countries,).
+predicate(Thing,,is,hasClinicalReoccurrence min 1 ClinicalReoccurrence,).
+predicate(Thing,,is,hasDiseaseInstance min 1 DiseaseInstance,).
+predicate(Thing,,is,hasGenomicReoccurrence min 1 GenomicReoccurrence,).
+predicate(Thing,,is,hasImagingReoccurrence min 1 ImagingReoccurrence,).
+predicate(Thing,,is,isPatientOf max 1 Countries).
+predicate(PcrData,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isPcrDataOf only Evaluations,).
+predicate(Thing,,is,isPcrDataOf exactly 1 Evaluations,).
+predicate(Thing,,is,hasChipId some int,).
+predicate(Thing,,is,hasCycleOk some string,).
+predicate(Thing,,is,hasLotNumber some int,).
+predicate(Thing,,is,hasNo1 some double,).
+predicate(Thing,,is,hasNo10 some double,).
+predicate(Thing,,is,hasNo11 some double,).
+predicate(Thing,,is,hasNo12 some double,).
+predicate(Thing,,is,hasNo13 some double,).
+predicate(Thing,,is,hasNo14 some double,).
+predicate(Thing,,is,hasNo15 some double,).
+predicate(Thing,,is,hasNo16 some double,).
+predicate(Thing,,is,hasNo17 some double,).
+predicate(Thing,,is,hasNo18 some double,).
+predicate(Thing,,is,hasNo19 some double,).
+predicate(Thing,,is,hasNo2 some double,).
+predicate(Thing,,is,hasNo20 some double,).
+predicate(Thing,,is,hasNo3 some double,).
+predicate(Thing,,is,hasNo4 some double,).
+predicate(Thing,,is,hasNo5 some double,).
+predicate(Thing,,is,hasNo6 some double,).
+predicate(Thing,,is,hasNo7 some double,).
+predicate(Thing,,is,hasNo8 some double,).
+predicate(Thing,,is,hasNo9 some double,).
+predicate(Thing,,is,hasPanelId some int,).
+predicate(Thing,,is,hasProtocolOk some string).
+predicate(PostTreatment,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isPostTreatmentOf exactly 1 Treatment,).
+predicate(Thing,,is,hasHospitalizationStartDate some date,).
+predicate(Thing,,is,hasPostTreatmentType some string).
+predicate(QualityOfLife,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isQualityOfLifeOf only FollowUpVisits,).
+predicate(Thing,,is,isQualityOfLifeOf exactly 1 FollowUpVisits).
+predicate(RiskFactors,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isRiskFactorsOf only Patient,).
+predicate(Thing,,is,isRiskFactorsOf exactly 1 Patient,).
+predicate(Thing,,is,hasAlchool some boolean,).
+predicate(Thing,,is,hasDietDeficit some boolean,).
+predicate(Thing,,is,hasEatingHabits some string,).
+predicate(Thing,,is,hasEx-Smoker some boolean,).
+predicate(Thing,,is,hasFamiliarHistoryOfMalignance some boolean,).
+predicate(Thing,,is,hasImmunosuppressorTreatments_Presence some boolean,).
+predicate(Thing,,is,hasInfection some boolean,).
+predicate(Thing,,is,hasMechanicalTrauma some boolean,).
+predicate(Thing,,is,hasOralHygiene some string,).
+predicate(Thing,,is,hasPhysicalAgents some boolean,).
+predicate(Thing,,is,hasPrecancerousLesions some string,).
+predicate(Thing,,is,hasSmoker some boolean,).
+predicate(Thing,,is,hasSubstanceExposition some string).
+predicate(SurgicalReconstruction,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasDistantPedicledFlap only DistantPedicledFlap,).
+predicate(Thing,,is,hasFreeFlap only FreeFlap,).
+predicate(Thing,,is,hasLocalFlaps only LocalFlaps,).
+predicate(Thing,,is,hasLocoRegional only LocoRegional,).
+predicate(Thing,,is,isSurgicalReconstructionOf exactly 1 Treatment).
+predicate(TClinicalAspects,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasTumor only Tumor,).
+predicate(Thing,,is,hasTumor max 1 Tumor,).
+predicate(Thing,,is,hasMStaging some string,).
+predicate(Thing,,is,hasNStaging some string,).
+predicate(Thing,,is,hasSize some string,).
+predicate(Thing,,is,hasTConsistence some string,).
+predicate(Thing,,is,hasTFormMacroscopicView some string,).
+predicate(Thing,,is,hasTStaging some string).
+predicate(TLocalization,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasTumor only Tumor,).
+predicate(Thing,,is,hasTumor max 1 Tumor).
+predicate(TSurgicalProcedure,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isTSurgicalProcedureOf exactly 1 Treatment,).
+predicate(Thing,,is,hasSurgicalAccess some string).
+predicate(Treatment,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasNSurgicalProcedure only NSurgicalProcedure,).
+predicate(Thing,,is,hasOtherTreatments only OtherTreatments,).
+predicate(Thing,,is,hasPostTreatment only PostTreatment,).
+predicate(Thing,,is,hasSurgicalReconstruction only SurgicalReconstruction,).
+predicate(Thing,,is,hasTSurgicalProcedure only TSurgicalProcedure,).
+predicate(Thing,,is,hasTumor only Tumor,).
+predicate(Thing,,is,hasTSurgicalProcedure exactly 1 TSurgicalProcedure,).
+predicate(Thing,,is,hasTumor max 1 Tumor,).
+predicate(Thing,,is,hasMedicalDevice some dateTime,).
+predicate(Thing,,is,hasTreatmentDate some date).
+predicate(Tumor,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,isTumorOf only).
+predicate(Thing,,is,(DiseaseInstance or GeometricData or PathologicalData or TClinicalAspects or TLocalization or Treatment or TumorImagingData),).
+predicate(Thing,,is,isTumorOf exactly 1 DiseaseInstance,).
+predicate(Thing,,is,isTumorOf max 1 GeometricData,).
+predicate(Thing,,is,isTumorOf max 1 PathologicalData,).
+predicate(Thing,,is,isTumorOf max 1 TClinicalAspects,).
+predicate(Thing,,is,isTumorOf max 1 TLocalization,).
+predicate(Thing,,is,isTumorOf max 1 Treatment,).
+predicate(Thing,,is,isTumorOf max 1 TumorImagingData).
+predicate(TumorImagingData,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasTumor only Tumor,).
+predicate(Thing,,is,hasTumor max 1 Tumor).
+predicate(neomark.#,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(neomark.#,is,Class).
+predicate(GeneOntologyReference,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(CellKilling,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(BiologicalProcess,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(neomark.#,is,Class).
+predicate(BiologicalProcess,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(hasReferencedClassName some string,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(CellularComponent,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(CellularComponent,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(neomark.#,is,Class).
+predicate(ExternalReference,,is,neomark.#).
+predicate(hasGOId some string,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(BiologicalProcess,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(CellularComponent,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(isReoccurrenceOf only Patient,,is,neomark.#).
+predicate(isReoccurrenceOf exactly 1 Patient,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(BiologicalProcess,is,neomark.#).
+predicate(neomark.#,is,Class).
+predicate(BiologicalProcess,is,neomark.#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(BiologicalProcess,neomark.#,is,ClinicalData,Countries,DiseaseInstance,DistantPedicledFlap,Evaluations,FollowUpVisits,FreeFlap,GeneralImagingData,GeometricData,Image,ImagePreview,LocalFlaps,LocoRegional,LymphNode,LymphNodeImagingData,MicroArrayData,MicroArrayGroupData,MicroArrayGroupList,MicroArrayInfo,MicroArrayList,NClinicalAspects,NSurgicalProcedure,OtherTreatments,PathologicalData,Patient,PcrData,PostTreatment,QualityOfLife,RiskFactors,SurgicalReconstruction,TClinicalAspects,TLocalization,TSurgicalProcedure,Treatment,Tumor,TumorImagingData,neomark.#).
+predicate(BiologicalProcess,neomark.#,DisjointClasses,ClinicalReoccurrence,GenomicReoccurrence,ImagingReoccurrence).
+predicate(BiologicalRegulation,neomark.#,is,neomark.#).
+predicate(ExtracellularRegion,neomark.#,is,neomark.#).

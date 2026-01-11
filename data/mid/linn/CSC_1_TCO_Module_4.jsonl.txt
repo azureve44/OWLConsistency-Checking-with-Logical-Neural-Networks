@@ -1,0 +1,84 @@
+predicate(describes,is,ObjectProperty).
+predicate(is_a,is,ObjectProperty).
+predicate(part_of,is,ObjectProperty).
+predicate(Brachial_Plexus_Injury,is,Class).
+predicate(Brachial_Plexus_Injury,EquivalentTo,is_a some Nerve_Damage).
+predicate(Brachial_Plexus_Injury,SubClassOf,Nerve_Damage).
+predicate(Central_Lymph_Node_Dissection,is,Class).
+predicate(Highly_Invasive_Papillary_Thyroid_Cancer,is,Class).
+predicate(Hypoglossal_Nerve_Injury,is,Class).
+predicate(Hypoglossal_Nerve_Injury,EquivalentTo,is_a some Nerve_Damage).
+predicate(Hypoglossal_Nerve_Injury,SubClassOf,Nerve_Damage).
+predicate(Hypoparathyroidism,is,Class).
+predicate(III_Level_Lymph_Node_Dissection,is,Class).
+predicate(III_Level_Lymph_Node_Dissection,EquivalentTo,part_of some Lateral_Level_Lymph_Node_Dissection).
+predicate(III_Level_Lymph_Node_Dissection,SubClassOf,Lateral_Level_Lymph_Node_Dissection).
+predicate(III_Level_Lymph_Node_Dissection,DisjointWith,part_of some Lateral_Level_Lymph_Node_Dissection).
+predicate(II_Level_Lymph_Node_Dissection,is,Class).
+predicate(II_Level_Lymph_Node_Dissection,EquivalentTo,part_of some Lateral_Level_Lymph_Node_Dissection).
+predicate(II_Level_Lymph_Node_Dissection,SubClassOf,Lateral_Level_Lymph_Node_Dissection).
+predicate(IV_Level_Lymph_Node_Dissection,is,Class).
+predicate(IV_Level_Lymph_Node_Dissection,EquivalentTo,part_of some Lateral_Level_Lymph_Node_Dissection).
+predicate(IV_Level_Lymph_Node_Dissection,SubClassOf,Lateral_Level_Lymph_Node_Dissection).
+predicate(Island-like,is,Class).
+predicate(Island-like,EquivalentTo,describes some Macrocalcifications).
+predicate(Island-like,SubClassOf,Macrocalcifications).
+predicate(Lateral_Level_Lymph_Node_Dissection,is,Class).
+predicate(Lymphadenectomy,is,Class).
+predicate(Lymphadenectomy,SubClassOf,Surgery).
+predicate(Macrocalcifications,is,Class).
+predicate(Nerve_Damage,is,Class).
+predicate(Nerve_Damage,SubClassOf,Temporary_Recurrent_Laryngeal_Nerve_Injury).
+predicate(Palliative_Surgery,is,Class).
+predicate(Palliative_Surgery,SubClassOf,Surgery).
+predicate(Parathyroid_Autotransplantation,is,Class).
+predicate(Parathyroid_Autotransplantation,SubClassOf,Surgery).
+predicate(Permanent_Hypoparathyroidism,is,Class).
+predicate(Permanent_Hypoparathyroidism,EquivalentTo,describes some Hypoparathyroidism).
+predicate(Permanent_Hypoparathyroidism,SubClassOf,Hypoparathyroidism).
+predicate(Permanent_Recurrent_Laryngeal_Nerve_Injury,is,Class).
+predicate(Permanent_Recurrent_Laryngeal_Nerve_Injury,SubClassOf,Recurrent_Laryngeal_Nerve_Injury).
+predicate(Phrenic_Nerve_Injury,is,Class).
+predicate(Phrenic_Nerve_Injury,EquivalentTo,is_a some Nerve_Damage).
+predicate(Phrenic_Nerve_Injury,SubClassOf,Nerve_Damage).
+predicate(Recurrent_Laryngeal_Nerve_Injury,is,Class).
+predicate(Recurrent_Laryngeal_Nerve_Injury,EquivalentTo,is_a some Nerve_Damage).
+predicate(Recurrent_Laryngeal_Nerve_Injury,SubClassOf,Nerve_Damage).
+predicate(Surgery,is,Class).
+predicate(Surgery,EquivalentTo,is_a some Therapeutic_Procedure).
+predicate(Surgery,SubClassOf,Therapeutic_Procedure).
+predicate(Surgical_Complications,is,Class).
+predicate(Surgical_Complications,SubClassOf,Surgery).
+predicate(Tall-cell_Papillary_Thyroid_Carcinoma,is,Class).
+predicate(Tall-cell_Papillary_Thyroid_Carcinoma,EquivalentTo,is_a some Highly_Invasive_Papillary_Thyroid_Cancer).
+predicate(Tall-cell_Papillary_Thyroid_Carcinoma,SubClassOf,Highly_Invasive_Papillary_Thyroid_Cancer).
+predicate(Temporary_Recurrent_Laryngeal_Nerve_Injury,is,Class).
+predicate(Temporary_Recurrent_Laryngeal_Nerve_Injury,SubClassOf,Recurrent_Laryngeal_Nerve_Injury).
+predicate(Therapeutic_Procedure,is,Class).
+predicate(Thyroidectomy,is,Class).
+predicate(Thyroidectomy,SubClassOf,Surgery).
+predicate(Tracheotomy,is,Class).
+predicate(Tracheotomy,SubClassOf,Surgery).
+predicate(Transient_Neonatal_Hypoparathyroidism,is,Class).
+predicate(Transient_Neonatal_Hypoparathyroidism,EquivalentTo,describes some Hypoparathyroidism).
+predicate(Transient_Neonatal_Hypoparathyroidism,SubClassOf,Hypoparathyroidism).
+predicate(VII_Level_Lymph_Node_Dissection,is,Class).
+predicate(VII_Level_Lymph_Node_Dissection,EquivalentTo,part_of some Central_Lymph_Node_Dissection).
+predicate(VII_Level_Lymph_Node_Dissection,SubClassOf,Central_Lymph_Node_Dissection).
+predicate(VI_Level_Lymph_Node_Dissection,is,Class).
+predicate(VI_Level_Lymph_Node_Dissection,EquivalentTo,part_of some Central_Lymph_Node_Dissection).
+predicate(VI_Level_Lymph_Node_Dissection,SubClassOf,Central_Lymph_Node_Dissection).
+predicate(VIa_Level_Lymph_Node_Dissection,is,Class).
+predicate(VIa_Level_Lymph_Node_Dissection,SubClassOf,VI_Level_Lymph_Node_Dissection).
+predicate(VIb_Level_Lymph_Node_Dissection,is,Class).
+predicate(VIb_Level_Lymph_Node_Dissection,SubClassOf,VI_Level_Lymph_Node_Dissection).
+predicate(VIc_Level_Lymph_Node_Dissection,is,Class).
+predicate(VIc_Level_Lymph_Node_Dissection,SubClassOf,VI_Level_Lymph_Node_Dissection).
+predicate(VId_Level_Lymph_Node_Dissection,is,Class).
+predicate(VId_Level_Lymph_Node_Dissection,SubClassOf,VI_Level_Lymph_Node_Dissection).
+predicate(VIe_Level_Lymph_Node_Dissection,is,Class).
+predicate(VIe_Level_Lymph_Node_Dissection,SubClassOf,VI_Level_Lymph_Node_Dissection).
+predicate(V_Level_Lymph_Node_Dissection,is,Class).
+predicate(V_Level_Lymph_Node_Dissection,EquivalentTo,part_of some Lateral_Level_Lymph_Node_Dissection).
+predicate(V_Level_Lymph_Node_Dissection,SubClassOf,Lateral_Level_Lymph_Node_Dissection).
+predicate(www.w3.org/2002/07/#,is,Class).

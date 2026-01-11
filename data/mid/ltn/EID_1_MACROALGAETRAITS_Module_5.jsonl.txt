@@ -1,0 +1,40 @@
+is(isAffectedBy,ObjectProperty):1.0
+Domain(isAffectedBy,NonpharmacologicalIntervention):1.0
+Range(isAffectedBy,FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation):1.0
+is(isFacilitatedBy,ObjectProperty):1.0
+SubPropertyOf(isFacilitatedBy,isAffectedBy):1.0
+Domain(isFacilitatedBy,NonpharmacologicalIntervention):1.0
+Range(isFacilitatedBy,FacilitatorToImplementNonpharmacologicalIntervention):1.0
+is(isHinderedBy,ObjectProperty):1.0
+SubPropertyOf(isHinderedBy,isAffectedBy):1.0
+Domain(isHinderedBy,NonpharmacologicalIntervention):1.0
+Range(isHinderedBy,BarrierToImplementNonpharmacologicalIntervention):1.0
+is(reducesAgitationCausedBy,ObjectProperty):1.0
+Domain(reducesAgitationCausedBy,NonpharmacologicalIntervention):1.0
+Range(reducesAgitationCausedBy,AgitationCausativeFactor):1.0
+is(AgitationCausativeFactor,Class):1.0
+is(BarrierToImplementNonpharmacologicalIntervention,Class):1.0
+DisjointWith(BarrierToImplementNonpharmacologicalIntervention,FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation):1.0
+is(FacilitatorToImplementNonpharmacologicalIntervention,Class):1.0
+is(FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,Class):1.0
+DisjointWith(FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,BarrierToImplementNonpharmacologicalIntervention):1.0
+is(FamilyMemberFocusedIntervention,Class):1.0
+SubClassOf(FamilyMemberFocusedIntervention,NonpharmacologicalIntervention):1.0
+is(HealthCareProfessionalFocusedIntervention,Class):1.0
+SubClassOf(HealthCareProfessionalFocusedIntervention,NonpharmacologicalIntervention):1.0
+is(Intervention,Class):1.0
+is(NonpharmacologicalIntervention,Class):1.0
+EquivalentTo(NonpharmacologicalIntervention,PharmacologicalIntervention):1.0
+SubClassOf(NonpharmacologicalIntervention,Intervention,):1.0
+SubClassOf(NonpharmacologicalIntervention,isAffectedBy some FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,):1.0
+SubClassOf(NonpharmacologicalIntervention,isFacilitatedBy some FacilitatorToImplementNonpharmacologicalIntervention,):1.0
+SubClassOf(NonpharmacologicalIntervention,isHinderedBy some BarrierToImplementNonpharmacologicalIntervention,):1.0
+SubClassOf(NonpharmacologicalIntervention,reducesAgitationCausedBy some AgitationCausativeFactor,):1.0
+SubClassOf(NonpharmacologicalIntervention,isAffectedBy only BarrierToImplementNonpharmacologicalIntervention):1.0
+DisjointWith(NonpharmacologicalIntervention,PharmacologicalIntervention):1.0
+is(PersonWithDementiaFocusedIntervention,Class):1.0
+SubClassOf(PersonWithDementiaFocusedIntervention,NonpharmacologicalIntervention):1.0
+is(PharmacologicalIntervention,Class):1.0
+EquivalentTo(PharmacologicalIntervention,NonpharmacologicalIntervention):1.0
+DisjointWith(PharmacologicalIntervention,NonpharmacologicalIntervention):1.0
+is(www.w3.org/2002/07/#,Class):1.0

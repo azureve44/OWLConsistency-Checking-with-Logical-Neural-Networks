@@ -1,0 +1,696 @@
+predicate(integer,is,Datatype).
+predicate(string,is,Datatype).
+predicate(Acting_In_A_Movie,is,ObjectProperty).
+predicate(Acting_In_A_Movie,Domain,Actor).
+predicate(Acting_In_A_Movie,Range,Movie).
+predicate(Directing_A_Movie,is,ObjectProperty).
+predicate(Directing_A_Movie,Domain,Director).
+predicate(Directing_A_Movie,Range,Movie).
+predicate(Married_To,is,ObjectProperty).
+predicate(Married_To,Domain,Actor).
+predicate(Married_To,Range,Actor).
+predicate(Payment_For_Movie,is,ObjectProperty).
+predicate(Payment_For_Movie,Domain,Payment).
+predicate(Payment_For_Movie,Range,Movie).
+predicate(Payment_Paid_By,is,ObjectProperty).
+predicate(Payment_Paid_By,Domain,Payment).
+predicate(Payment_Paid_By,Range,Producer).
+predicate(Payment_Paid_To,is,ObjectProperty).
+predicate(Payment_Paid_To,Domain,Payment).
+predicate(Payment_Paid_To,Range,Actor,).
+predicate(Payment_Paid_To,Range,Director).
+predicate(Product_A_Movie,is,ObjectProperty).
+predicate(FullName,is,DataProperty).
+predicate(FullName,Domain,Person).
+predicate(FullName,Range,string).
+predicate(Gender,is,DataProperty).
+predicate(Gender,Domain,Actor).
+predicate(Gender,Range,string).
+predicate(MovieIncome,is,DataProperty).
+predicate(MovieIncome,Domain,Movie).
+predicate(MovieIncome,Range,integer).
+predicate(MovieName,is,DataProperty).
+predicate(MovieName,Domain,Movie).
+predicate(MovieName,Range,string).
+predicate(MovieProductionYear,is,DataProperty).
+predicate(MovieProductionYear,Domain,Movie).
+predicate(MovieProductionYear,Range,integer).
+predicate(MovieType,is,DataProperty).
+predicate(MovieType,Domain,Movie).
+predicate(MovieType,Range,{" Romantic" , "Action" , "Comedy" , "Drama"}).
+predicate(MovieViews,is,DataProperty).
+predicate(MovieViews,Domain,Movie).
+predicate(MovieViews,Range,integer).
+predicate(Nationality,is,DataProperty).
+predicate(Nationality,Domain,Actor).
+predicate(Nationality,Range,string).
+predicate(PaymentAmount,is,DataProperty).
+predicate(PaymentAmount,Range,string).
+predicate(sana,is,DataProperty).
+predicate(sana,Domain,Movie).
+predicate(sana,Range,string).
+predicate(year,is,DataProperty).
+predicate(year,Domain,Movie).
+predicate(year,Range,integer).
+predicate(Actor,is,Class).
+predicate(Actor,SubClassOf,Person).
+predicate(Actor,DisjointWith,Payment).
+predicate(Cinema,is,Class).
+predicate(Cinema,EquivalentTo,Payment).
+predicate(Cinema,SubClassOf,Actor,).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Payment).
+predicate(Director,is,Class).
+predicate(Director,SubClassOf,Person).
+predicate(Movie,is,Class).
+predicate(Movie,SubClassOf,Cinema,).
+predicate(Movie,SubClassOf,Payment).
+predicate(Payment,is,Class).
+predicate(Payment,EquivalentTo,Cinema).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Thing,DisjointWith,Cinema).
+predicate(Thing,DisjointWith,Actor).
+predicate(Person,is,Class).
+predicate(Person,SubClassOf,Cinema,).
+predicate(Person,SubClassOf,Payment).
+predicate(Producer,is,Class).
+predicate(Producer,SubClassOf,Person).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(M,is,Individual).
+predicate(M,Types,Movie).
+predicate(M,MovieIncome,8000,).
+predicate(M,MovieName,"Bee's_Way",).
+predicate(M,MovieProductionYear,"1970",).
+predicate(M,MovieType,"Drama",).
+predicate(M,MovieViews,550000,).
+predicate(M,sana,"1990",).
+predicate(M,year,"1990").
+predicate(A1,is,Individual).
+predicate(A1,Types,Actor).
+predicate(Alo_ana_al-ghetta,,is,Acting_In_A_Movie  M).
+predicate(Alo_ana_al-ghetta,,is,FullName  "Abdulrahman_Al-Qasem",).
+predicate(Alo_ana_al-ghetta,,is,Gender  "Male",).
+predicate(Alo_ana_al-ghetta,,is,Nationality  "Egyptian").
+predicate(A10,is,Individual).
+predicate(A10,Types,Actor).
+predicate(A10,Acting_In_A_Movie,M5,).
+predicate(A_Woman_and_a_Man,,is,Acting_In_A_Movie  M).
+predicate(Damascus_Time,,is,Acting_In_A_Movie  M).
+predicate(Damascus_Time,,is,Married_To  A19,).
+predicate(Damascus_Time,,is,FullName  "Caresse_Bashar",).
+predicate(Damascus_Time,,is,Gender  "Female",).
+predicate(Damascus_Time,,is,Nationality  "Syrian").
+predicate(A11,is,Individual).
+predicate(A11,Types,Actor).
+predicate(A11,Acting_In_A_Movie,M14,).
+predicate(A11,Acting_In_A_Movie,M15,).
+predicate(A_Woman_and_a_Man,,is,Acting_In_A_Movie  M).
+predicate(A_Woman_and_a_Man,,is,Married_To  A27,).
+predicate(A_Woman_and_a_Man,,is,FullName  "Duraid_Lahham",).
+predicate(A_Woman_and_a_Man,,is,Gender  "Male",).
+predicate(A_Woman_and_a_Man,,is,Nationality  "Syrian").
+predicate(A12,is,Individual).
+predicate(A12,Types,Actor).
+predicate(A12,FullName,"Faten_Hamama",).
+predicate(A12,Gender,"Female",).
+predicate(A12,Nationality,"Egyptian").
+predicate(A13,is,Individual).
+predicate(A13,Types,Actor).
+predicate(A13,FullName,"Ghassan_Massoud",).
+predicate(A13,Gender,"Male",).
+predicate(A13,Nationality,"Syrian").
+predicate(A14,is,Individual).
+predicate(A14,Types,Actor).
+predicate(A14,FullName,"Hadi_Hejazifar",).
+predicate(A14,Gender,"Male",).
+predicate(A14,Nationality,"Lebanese").
+predicate(A15,is,Individual).
+predicate(A15,Types,Actor).
+predicate(A15,FullName,"Hassan_Doba",).
+predicate(A15,Gender,"Male",).
+predicate(A15,Nationality,"Lebanese").
+predicate(A16,is,Individual).
+predicate(A16,Types,Actor).
+predicate(A_Woman_and_a_Man,,is,Acting_In_A_Movie  M).
+predicate(Alo_ana_al-ghetta,,is,Acting_In_A_Movie  M).
+predicate(Damascus_Time,,is,Acting_In_A_Movie  M).
+predicate(Damascus_Time,,is,FullName  "Husain_Abbas",).
+predicate(Damascus_Time,,is,Gender  "Male",).
+predicate(Damascus_Time,,is,Nationality  "Egyptian").
+predicate(A17,is,Individual).
+predicate(A17,Types,Actor).
+predicate(Bee's_Way,,is,Acting_In_A_Movie  M).
+predicate(Bee's_Way,,is,FullName  "Juliette_Awwad",).
+predicate(Bee's_Way,,is,Gender  "Female",).
+predicate(Bee's_Way,,is,Nationality  "Lebanese").
+predicate(A18,is,Individual).
+predicate(A18,Types,Actor).
+predicate(A18,Acting_In_A_Movie,M14,).
+predicate(A18,Acting_In_A_Movie,M21,).
+predicate(A18,FullName,"Lujain_Ismael",).
+predicate(A18,Gender,"Male",).
+predicate(A18,Nationality,"Syrian").
+predicate(A19,is,Individual).
+predicate(A19,Types,Actor).
+predicate(A19,Acting_In_A_Movie,M20,).
+predicate(A_Woman_and_a_Man,,is,Acting_In_A_Movie  M).
+predicate(Damascus_Time,,is,Acting_In_A_Movie  M).
+predicate(Damascus_Time,,is,Married_To  A10,).
+predicate(Damascus_Time,,is,FullName  "Mahmoud_Nasr",).
+predicate(Damascus_Time,,is,Gender  "Male",).
+predicate(Damascus_Time,,is,Nationality  "Syrian").
+predicate(A2,is,Individual).
+predicate(A2,Types,Actor).
+predicate(A2,FullName,"Adel_Emam",).
+predicate(A2,Gender,"Male",).
+predicate(A2,Nationality,"Egyptian").
+predicate(A20,is,Individual).
+predicate(A20,Types,Actor).
+predicate(A20,FullName,"Mahmoud_Reda",).
+predicate(A20,Gender,"Male",).
+predicate(A20,Nationality,"Egyptian").
+predicate(A21,is,Individual).
+predicate(A21,Types,Actor).
+predicate(A21,FullName,"Mahmoud_Yassin",).
+predicate(A21,Gender,"Male",).
+predicate(A21,Nationality,"Egyptian").
+predicate(A22,is,Individual).
+predicate(A22,Types,Actor).
+predicate(A22,FullName,"Maisoun_Abu_Asaad",).
+predicate(A22,Gender,"Male",).
+predicate(A22,Nationality,"Syrian").
+predicate(A23,is,Individual).
+predicate(A23,Types,Actor).
+predicate(A23,FullName,"Majd_Fidha",).
+predicate(A23,Gender,"Male",).
+predicate(A23,Nationality,"Egyptian").
+predicate(A24,is,Individual).
+predicate(A24,Types,Actor).
+predicate(A24,FullName,"Majdi_Al-Maqbal",).
+predicate(A24,Gender,"Male",).
+predicate(A24,Nationality,"Egyptian").
+predicate(A25,is,Individual).
+predicate(A25,Types,Actor).
+predicate(A25,FullName,"Mervat_Amin",).
+predicate(A25,Gender,"Female",).
+predicate(A25,Nationality,"Egyptian").
+predicate(A26,is,Individual).
+predicate(A26,Types,Actor).
+predicate(A26,FullName,"Mohammed_Al-Ahmad",).
+predicate(A26,Gender,"Male",).
+predicate(A26,Nationality,"Syrian").
+predicate(A27,is,Individual).
+predicate(A27,Types,Actor).
+predicate(A_Woman_and_a_Man,,is,Acting_In_A_Movie  M).
+predicate(Damascus_Time,,is,Acting_In_A_Movie  M).
+predicate(Damascus_Time,,is,Married_To  A11,).
+predicate(Damascus_Time,,is,FullName  "Nadin_Khoury",).
+predicate(Damascus_Time,,is,Gender  "Female",).
+predicate(Damascus_Time,,is,Nationality  "Syrian").
+predicate(A28,is,Individual).
+predicate(A28,Types,Actor).
+predicate(A28,FullName,"Naglaa_Fathi",).
+predicate(A28,Gender,"Female",).
+predicate(A28,Nationality,"Egyptian").
+predicate(A29,is,Individual).
+predicate(A29,Types,Actor).
+predicate(A29,FullName,"Nelly",).
+predicate(A29,Gender,"Femela",).
+predicate(A29,Nationality,"Egyptian").
+predicate(A3,is,Individual).
+predicate(A3,Types,Actor).
+predicate(A3,FullName,"Adnan_Abdol-Jaleel",).
+predicate(A3,FullName,"Male",).
+predicate(A3,Nationality,"Syrian").
+predicate(A30,is,Individual).
+predicate(A30,Types,Actor).
+predicate(A_Woman_and_a_Man,,is,Acting_In_A_Movie  M).
+predicate(A_Woman_and_a_Man,,is,Gender  "Female",).
+predicate(A_Woman_and_a_Man,,is,Gender  "Nahed_Sherif",).
+predicate(A_Woman_and_a_Man,,is,Nationality  "Egyptian").
+predicate(A31,is,Individual).
+predicate(A31,Types,Actor).
+predicate(A31,FullName,"Female",).
+predicate(A31,FullName,"Nisreen_Tafesh").
+predicate(A32,is,Individual).
+predicate(A32,Types,Actor).
+predicate(A32,FullName,"Noor_Ali",).
+predicate(A32,Gender,"Male",).
+predicate(A32,Nationality,"Egyptian").
+predicate(A33,is,Individual).
+predicate(A33,Types,Actor).
+predicate(A33,FullName,"Suzan_Najm_Aldeen",).
+predicate(A33,Gender,"Female",).
+predicate(A33,Nationality,"Syrian").
+predicate(A34,is,Individual).
+predicate(A34,Types,Actor).
+predicate(A34,FullName,"Nour_El-Sherif",).
+predicate(A34,Gender,"Male",).
+predicate(A34,Nationality,"Egyptian").
+predicate(A35,is,Individual).
+predicate(A35,Types,Actor).
+predicate(A35,FullName,"Omaia_Malas",).
+predicate(A35,Gender,"Female",).
+predicate(A35,Nationality,"Syrian").
+predicate(A36,is,Individual).
+predicate(A36,Types,Actor).
+predicate(A36,FullName,"Male",).
+predicate(A36,FullName,"Pierre_Dagher",).
+predicate(A36,Nationality,"Lebanese").
+predicate(A37,is,Individual).
+predicate(A37,Types,Actor).
+predicate(A37,FullName,"Female",).
+predicate(A37,FullName,"Poussi",).
+predicate(A37,Nationality,"Egyptian").
+predicate(A38,is,Individual).
+predicate(A38,Types,Actor).
+predicate(A38,FullName,"Ramez_Atallah",).
+predicate(A38,Gender,"Male",).
+predicate(A38,Nationality,"Egyptian").
+predicate(A39,is,Individual).
+predicate(A39,Types,Actor).
+predicate(A39,FullName,"Rushdy_Abaza",).
+predicate(A39,Gender,"Male",).
+predicate(A39,Nationality,"Egyptian").
+predicate(A4,is,Individual).
+predicate(A4,Types,Actor).
+predicate(A4,FullName,"Ahmad_Kavari",).
+predicate(A4,Gender,"Male",).
+predicate(A4,Nationality,"Egyptian").
+predicate(A40,is,Individual).
+predicate(A40,Types,Actor).
+predicate(A40,FullName,"Sabah",).
+predicate(A40,Gender,"Female",).
+predicate(A40,Nationality,"Lebanese").
+predicate(A41,is,Individual).
+predicate(A41,Types,Actor).
+predicate(A41,FullName,"Sabah_Al_Jazaery",).
+predicate(A41,Gender,"Female",).
+predicate(A41,Nationality,"Syrian").
+predicate(A42,is,Individual).
+predicate(A42,Types,Actor).
+predicate(A42,FullName,"Salah_Zulfikar",).
+predicate(A42,Gender,"Male",).
+predicate(A42,Nationality,"Egyptian").
+predicate(A43,is,Individual).
+predicate(A43,Types,Actor).
+predicate(A43,FullName,"Salma_Al-Masri",).
+predicate(A43,Gender,"Female",).
+predicate(A43,Nationality,"Syrian").
+predicate(A44,is,Individual).
+predicate(A44,Types,Actor).
+predicate(A44,FullName,"Soad_Hosny",).
+predicate(A44,Gender,"Female",).
+predicate(A44,Nationality,"Egyptian").
+predicate(A45,is,Individual).
+predicate(A45,Types,Actor).
+predicate(A45,FullName,"Shadia",).
+predicate(A45,Gender,"Female",).
+predicate(A45,Nationality,"Egyptian").
+predicate(A5,is,Individual).
+predicate(A5,Types,Actor).
+predicate(A5,FullName,"Ahmad_Zaki",).
+predicate(A5,Gender,"Male",).
+predicate(A5,Nationality,"Egyptian").
+predicate(A6,is,Individual).
+predicate(A6,Types,Actor).
+predicate(A6,FullName,"Ali_Al-Ibrahim",).
+predicate(A6,Gender,"Male",).
+predicate(A6,Nationality,"Syrian").
+predicate(A7,is,Individual).
+predicate(A7,Types,Actor).
+predicate(A7,FullName,"Amer_Al-Ali",).
+predicate(A7,Gender,"Male",).
+predicate(A7,Nationality,"Syrian").
+predicate(A8,is,Individual).
+predicate(A8,Types,Actor).
+predicate(A8,FullName,"Ayman_Zeidan",).
+predicate(A8,Gender,"Male",).
+predicate(A8,Nationality,"Syrian").
+predicate(A9,is,Individual).
+predicate(A9,Types,Actor).
+predicate(Alo_ana_al-ghetta,,is,Acting_In_A_Movie  M).
+predicate(Alo_ana_al-ghetta,,is,FullName  "Babak_Hamidian",).
+predicate(Alo_ana_al-ghetta,,is,Gender  "Male",).
+predicate(Alo_ana_al-ghetta,,is,Nationality  "Lebanese").
+predicate(D1,is,Individual).
+predicate(D1,Types,Director).
+predicate(A_Woman_and_a_Man,,is,Directing_A_Movie  M).
+predicate(A_Woman_and_a_Man,,is,FullName  "Basil Al Khatib",).
+predicate(A_Woman_and_a_Man,,is,Gender  "Male").
+predicate(D10,is,Individual).
+predicate(D10,Types,Director).
+predicate(Bee's_Way,,is,Directing_A_Movie  M).
+predicate(Bee's_Way,,is,FullName  "Mahmoud Zulfikar ",).
+predicate(Bee's_Way,,is,Gender  "Male").
+predicate(D11,is,Individual).
+predicate(D11,Types,Director).
+predicate(D11,FullName,"Ali Reda",).
+predicate(D11,Gender,"Male").
+predicate(D12,is,Individual).
+predicate(D12,Types,Director).
+predicate(D12,FullName,"Kamal El Sheikh",).
+predicate(D12,Gender,"Male").
+predicate(D13,is,Individual).
+predicate(D13,Types,Director).
+predicate(D13,FullName,"Ibrahim El Shaqanqeery",).
+predicate(D13,Gender,"Male").
+predicate(D14,is,Individual).
+predicate(D14,Types,Director).
+predicate(D14,FullName,"Ashraf Fahmy",).
+predicate(D14,Gender,"Male").
+predicate(D15,is,Individual).
+predicate(D15,Types,Director).
+predicate(D15,FullName,"Hussein Kamal",).
+predicate(D15,Gender,"Male").
+predicate(D16,is,Individual).
+predicate(D16,Types,Director).
+predicate(D16,FullName,"Houssam Eddine Mostafa",).
+predicate(D16,Gender,"Male").
+predicate(D17,is,Individual).
+predicate(D17,Types,Director).
+predicate(D17,FullName,"Kamal El Sheikh",).
+predicate(D17,Gender,"Male").
+predicate(D18,is,Individual).
+predicate(D18,Types,Director).
+predicate(Alo_ana_al-ghetta,,is,Directing_A_Movie  M).
+predicate(Alo_ana_al-ghetta,,is,FullName  "Ahmad Fouad ",).
+predicate(Alo_ana_al-ghetta,,is,Gender  "Male").
+predicate(D2,is,Individual).
+predicate(D2,Types,Director).
+predicate(D2,FullName,"Najdat Esmail Anzur",).
+predicate(D2,Gender,"Male").
+predicate(D3,is,Individual).
+predicate(D3,Types,Director).
+predicate(D3,FullName,"Joud Saeed",).
+predicate(D3,Gender,"Male").
+predicate(D4,is,Individual).
+predicate(D4,Types,Director).
+predicate(D4,FullName,"Ebrahim Hatamikia",).
+predicate(D4,Gender,"Male").
+predicate(D5,is,Individual).
+predicate(D5,Types,Director).
+predicate(D5,FullName,"Joud Saeed",).
+predicate(D5,Gender,"Male").
+predicate(D6,is,Individual).
+predicate(D6,Types,Director).
+predicate(D6,FullName,"Abbas Lajevardi",).
+predicate(D6,Gender,"Male").
+predicate(D7,is,Individual).
+predicate(D7,Types,Director).
+predicate(D7,FullName,"Ahmad Ibrahim Ahmad",).
+predicate(D7,Gender,"Male").
+predicate(D8,is,Individual).
+predicate(D8,Types,Director).
+predicate(D8,FullName,"Ghassan Shamit",).
+predicate(D8,Gender,"Male").
+predicate(D9,is,Individual).
+predicate(D9,Types,Director).
+predicate(D9,FullName,"Abdellatif Abdelhamid",).
+predicate(D9,Gender,"Male").
+predicate(M12,is,Individual).
+predicate(M12,Types,Movie).
+predicate(M12,MovieIncome,15000,).
+predicate(M12,MovieName,"Borj_El-Athraa",).
+predicate(M12,MovieProductionYear,"1970",).
+predicate(M12,MovieType,"Drama",).
+predicate(M12,MovieViews,1500000,).
+predicate(M12,sana,"1970").
+predicate(M13,is,Individual).
+predicate(M13,Types,Movie).
+predicate(M13,MovieIncome,"12000E",).
+predicate(M13,MovieName,"Dam_al-Nakhl",).
+predicate(M13,MovieProductionYear,"2019",).
+predicate(M13,MovieType,"Drama",).
+predicate(M13,MovieViews,2300000).
+predicate(M14,is,Individual).
+predicate(M14,Types,Movie).
+predicate(M14,MovieIncome,6000000,).
+predicate(M14,MovieName,"Darb_el-Sama",).
+predicate(M14,MovieProductionYear,"2019",).
+predicate(M14,MovieType,"Drama",).
+predicate(M14,MovieViews,"400K",).
+predicate(M14,sana,"2019").
+predicate(M15,is,Individual).
+predicate(M15,Types,Movie).
+predicate(M15,MovieIncome,"14000E",).
+predicate(M15,MovieName,"Demashq_Halab",).
+predicate(M15,MovieProductionYear,"2018",).
+predicate(M15,MovieType,"Drama",).
+predicate(M15,MovieViews,3300000,).
+predicate(M15,sana,"2018").
+predicate(M16,is,Individual).
+predicate(M16,Types,Movie).
+predicate(M16,MovieIncome,"12000E",).
+predicate(M16,MovieName,"Ein_Al_Hayah",).
+predicate(M16,MovieProductionYear,"1970",).
+predicate(M16,MovieType,"Action",).
+predicate(M16,MovieViews,2500000).
+predicate(M17,is,Individual).
+predicate(M17,Types,Movie).
+predicate(M17,MovieIncome,"7500E",).
+predicate(M17,MovieName,"El-Kol_Awez_Yeheb",).
+predicate(M17,MovieProductionYear,"1975",).
+predicate(M17,MovieType,"Comedy",).
+predicate(M17,MovieViews,670000).
+predicate(M18,is,Individual).
+predicate(M18,Types,Movie).
+predicate(M18,MovieIncome,"9000E",).
+predicate(M18,MovieName,"El_Khait_El_Rafeeh",).
+predicate(M18,MovieProductionYear,"1971",).
+predicate(M18,MovieType,"Drama",).
+predicate(M18,MovieViews,900000).
+predicate(M19,is,Individual).
+predicate(M19,Types,Movie).
+predicate(M19,MovieIncome,"15000E",).
+predicate(M19,MovieName,"El_Qatala",).
+predicate(M19,MovieProductionYear,"1971",).
+predicate(M19,MovieType,"Action",).
+predicate(M19,MovieViews,"4000000").
+predicate(M2,is,Individual).
+predicate(M2,Types,Movie).
+predicate(M2,MovieIncome,"8000E",).
+predicate(M2,MovieName,"Al-Bahth_An_Al-Mataeb",).
+predicate(M2,MovieProductionYear,"1975",).
+predicate(M2,MovieType,"Comedy",).
+predicate(M2,MovieViews,"700000").
+predicate(M20,is,Individual).
+predicate(M20,Types,Movie).
+predicate(M20,MovieIncome,"9500E",).
+predicate(M20,MovieName,"Ghoroub_We_Shorouq",).
+predicate(M20,MovieProductionYear,"1970",).
+predicate(M20,MovieType,"Action",).
+predicate(M20,MovieViews,"800000",).
+predicate(M20,sana,"1970").
+predicate(M21,is,Individual).
+predicate(M21,Types,Movie).
+predicate(M21,MovieIncome,"12000E",).
+predicate(M21,MovieName,"Harami_El_Waraka",).
+predicate(M21,MovieProductionYear,"1970",).
+predicate(M21,MovieType,"Drama",).
+predicate(M21,MovieViews,"1800000",).
+predicate(M21,sana,"1970").
+predicate(M22,is,Individual).
+predicate(M22,Types,Movie).
+predicate(M22,MovieIncome,"8500E",).
+predicate(M22,MovieName,"Imra’at_Zawgy",).
+predicate(M22,MovieProductionYear,"1970",).
+predicate(M22,MovieType,"Romantic",).
+predicate(M22,MovieViews,"950000").
+predicate(M23,is,Individual).
+predicate(M23,Types,Movie).
+predicate(M23,MovieIncome,"10000E",).
+predicate(M23,MovieName,"The Birthday Party",).
+predicate(M23,MovieProductionYear,"2016",).
+predicate(M23,MovieType,"Drama",).
+predicate(M23,MovieViews,"1100000").
+predicate(M24,is,Individual).
+predicate(M24,Types,Movie).
+predicate(M24,MovieIncome,"12000E",).
+predicate(M24,MovieName,"King_of_the_Sands",).
+predicate(M24,MovieProductionYear,"2013",).
+predicate(M24,MovieType,"Drama",).
+predicate(M24,MovieViews,"3000000").
+predicate(M25,is,Individual).
+predicate(M25,Types,Movie).
+predicate(M25,MovieIncome,"15000E",).
+predicate(M25,MovieName,"Lamset_Hanan",).
+predicate(M25,MovieProductionYear,"1971",).
+predicate(M25,MovieType,"Romantic",).
+predicate(M25,MovieViews,"3700000").
+predicate(M26,is,Individual).
+predicate(M26,Types,Movie).
+predicate(M26,MovieIncome,"14500E",).
+predicate(M26,MovieName,"Lilit_al-Souriya",).
+predicate(M26,MovieProductionYear,"2018",).
+predicate(M26,MovieType,"Drama",).
+predicate(M26,MovieViews,"2800000").
+predicate(M27,is,Individual).
+predicate(M27,Types,Movie).
+predicate(M27,MovieIncome,"10000E",).
+predicate(M27,MovieName,"Maward",).
+predicate(M27,MovieProductionYear,"2017",).
+predicate(M27,MovieType,"Drama",).
+predicate(M27,MovieViews,"1100000").
+predicate(M28,is,Individual).
+predicate(M28,Types,Movie).
+predicate(M28,MovieIncome,"10000E",).
+predicate(M28,MovieName,"Me_You_Mother_and_Father",).
+predicate(M28,MovieProductionYear,"2016",).
+predicate(M28,MovieType,"Drama",).
+predicate(M28,MovieViews,"980000").
+predicate(M29,is,Individual).
+predicate(M29,Types,Movie).
+predicate(M29,MovieIncome,"5000E",).
+predicate(M29,MovieName,"My_Wife_and_the_Dog",).
+predicate(M29,MovieProductionYear,"1971",).
+predicate(M29,MovieType,"Drama",).
+predicate(M29,MovieViews,"350000").
+predicate(M3,is,Individual).
+predicate(M3,Types,Movie).
+predicate(M3,MovieIncome,"8500E",).
+predicate(M3,MovieName,"Al-Eteraf",).
+predicate(M3,MovieProductionYear,"2019",).
+predicate(M3,MovieType,"Drama",).
+predicate(M3,MovieViews,"400000").
+predicate(M31,is,Individual).
+predicate(M31,Types,Movie).
+predicate(M31,MovieIncome,"7000E",).
+predicate(M31,MovieName,"Nar_el_Shouq",).
+predicate(M31,MovieProductionYear,"1970",).
+predicate(M31,MovieType,"Drama",).
+predicate(M31,MovieViews,"800000").
+predicate(M32,is,Individual).
+predicate(M32,Types,Movie).
+predicate(M32,MovieIncome,"6500E",).
+predicate(M32,MovieName,"Ragab_Fawq",).
+predicate(M32,MovieProductionYear,"1979",).
+predicate(M32,MovieType,"Comedy",).
+predicate(M32,MovieViews,"530000").
+predicate(M33,is,Individual).
+predicate(M33,Types,Movie).
+predicate(M33,MovieIncome,"8000E",).
+predicate(M33,MovieName,"Shafika_we_Metwally",).
+predicate(M33,MovieProductionYear,"1979",).
+predicate(M33,MovieType,"Comedy",).
+predicate(M33,MovieViews,"900000").
+predicate(M34,is,Individual).
+predicate(M34,Types,Movie).
+predicate(M34,MovieIncome,"12000E",).
+predicate(M34,MovieName,"Thartharah_Fawqa_al-Nīl",).
+predicate(M34,MovieProductionYear,"1971",).
+predicate(M34,MovieType,"Drama",).
+predicate(M34,MovieViews,"3100000").
+predicate(M35,is,Individual).
+predicate(M35,Types,Movie).
+predicate(M35,MovieIncome,"7000E",).
+predicate(M35,MovieName,"Zindan_Halab",).
+predicate(M35,MovieProductionYear,"2018",).
+predicate(M35,MovieType,"Drama",).
+predicate(M35,MovieViews,"630000").
+predicate(M4,is,Individual).
+predicate(M4,Types,Movie).
+predicate(M4,MovieIncome,"10000E",).
+predicate(M4,MovieName,"Al-Khedaa_Al-Khafiya",).
+predicate(M4,MovieProductionYear,"1975",).
+predicate(M4,MovieType,"Comedy",).
+predicate(M4,MovieViews,"1200000").
+predicate(M5,is,Individual).
+predicate(M5,Types,Movie).
+predicate(M5,MovieIncome,"12000E",).
+predicate(M5,MovieName,"Al-Souriyoun",).
+predicate(M5,MovieProductionYear,"2016",).
+predicate(M5,MovieType,"Drama",).
+predicate(M5,MovieViews,"2200000",).
+predicate(M5,sana,"2016").
+predicate(M6,is,Individual).
+predicate(M6,Types,Movie).
+predicate(M6,MovieIncome,"8000E",).
+predicate(M6,MovieName,"Al_Omm",).
+predicate(M6,MovieProductionYear,"2015",).
+predicate(M6,MovieType,"Drama",).
+predicate(M6,MovieViews,"890000").
+predicate(M8,is,Individual).
+predicate(M8,Types,Movie).
+predicate(M8,MovieIncome,"10000E",).
+predicate(M8,MovieName,"Ala_Mn_Notlik_Al-Rosas",).
+predicate(M8,MovieProductionYear,"1975",).
+predicate(M8,MovieType,"Comedy",).
+predicate(M8,MovieViews,"1400000").
+predicate(M,is,Individual).
+predicate(M,Types,Movie).
+predicate(M,MovieIncome,23000,).
+predicate(M,MovieName,"A_Woman_and_a_Man",).
+predicate(M,MovieProductionYear,"1971",).
+predicate(M,MovieType,"Drama",).
+predicate(M,MovieViews,800000,).
+predicate(M,sana,"1971",).
+predicate(M,year,"2000").
+predicate(M,is,Individual).
+predicate(M,Types,Movie).
+predicate(M,MovieIncome,"9500E",).
+predicate(M,MovieName,"Alo_ana_al-ghetta",).
+predicate(M,MovieProductionYear,"1975",).
+predicate(M,MovieType,"Comedy",).
+predicate(M,MovieViews,"870000").
+predicate(M,is,Individual).
+predicate(M,Types,Movie).
+predicate(M,MovieIncome,2000,).
+predicate(M,MovieIncome,20000,).
+predicate(M,MovieName,"Damascus Time",).
+predicate(M,MovieProductionYear,"2018",).
+predicate(M,MovieType,"Drama",).
+predicate(M,MovieViews,950000,).
+predicate(M,sana,"1970",).
+predicate(M,year,"1970").
+predicate(P1,is,Individual).
+predicate(P1,Types,Payment).
+predicate(Damascus_Time,,is,Payment_For_Movie  M).
+predicate(SL_Production,,is,Payment_Paid_By  P).
+predicate(SL_Production,,is,Payment_Paid_To  A10,).
+predicate(SL_Production,,is,PaymentAmount  5000).
+predicate(P2,is,Individual).
+predicate(Damascus_Time,,is,Payment_For_Movie  M).
+predicate(SL_Production,,is,Payment_Paid_By  P).
+predicate(SL_Production,,is,Payment_Paid_To  A19,).
+predicate(SL_Production,,is,PaymentAmount  3500).
+predicate(P3,is,Individual).
+predicate(Damascus_Time,,is,Payment_For_Movie  M).
+predicate(SL_Production,,is,Payment_Paid_By  P).
+predicate(SL_Production,,is,Payment_Paid_To  D17,).
+predicate(SL_Production,,is,PaymentAmount  6000).
+predicate(P4,is,Individual).
+predicate(A_Woman_and_a_Man,,is,Payment_For_Movie  M).
+predicate(Egyptian_Film_Production,,is,Payment_Paid_By  P).
+predicate(Egyptian_Film_Production,,is,Payment_Paid_To  D16,).
+predicate(Egyptian_Film_Production,,is,PaymentAmount  7000).
+predicate(P5,is,Individual).
+predicate(A_Woman_and_a_Man,,is,Payment_For_Movie  M).
+predicate(Egyptian_Film_Production,,is,Payment_Paid_By  P).
+predicate(Egyptian_Film_Production,,is,Payment_Paid_To  A30,).
+predicate(Egyptian_Film_Production,,is,PaymentAmount  4000).
+predicate(P6,is,Individual).
+predicate(A_Woman_and_a_Man,,is,Payment_For_Movie  M).
+predicate(Egyptian_Film_Production,,is,Payment_Paid_By  P).
+predicate(Egyptian_Film_Production,,is,Payment_Paid_To  A39,).
+predicate(Egyptian_Film_Production,,is,PaymentAmount  5500).
+predicate(P,is,Individual).
+predicate(P,Types,Producer).
+predicate(P,FullName,"Egyptian Film Production").
+predicate(P,is,Individual).
+predicate(P,Types,Producer).
+predicate(P,FullName,"Egyptian Film Production plus").
+predicate(P,is,Individual).
+predicate(P,Types,Producer).
+predicate(P,FullName,"Egyptian Golden Film").
+predicate(P,is,Individual).
+predicate(P,Types,Producer).
+predicate(P,FullName,"SL Production").
+predicate(P,is,Individual).
+predicate(P,Types,Producer).
+predicate(P,FullName,"Sham Production").
+predicate(P,is,Individual).
+predicate(P,FullName,"Syrian Production").
+predicate(P,is,Individual).
+predicate(P,Types,Producer).
+predicate(P,FullName,"Top One Production").

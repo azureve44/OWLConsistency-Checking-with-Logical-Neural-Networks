@@ -1,0 +1,52 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(double,is,Datatype).
+predicate(integer,is,Datatype).
+predicate(string,is,Datatype).
+predicate(IAO_0000136,is,ObjectProperty).
+predicate(OBI_0000294,is,ObjectProperty).
+predicate(OBI_0000300,is,ObjectProperty).
+predicate(SCAIVPH_00000787,is,ObjectProperty).
+predicate(calculated_on_sample_size,is,DataProperty).
+predicate(has_value,is,DataProperty).
+predicate(OBI_0000260,is,Class).
+predicate(IAO_0000027,is,Class).
+predicate(SCAIVPH_00000220,is,Class).
+predicate(ELA_feature,is,Class).
+predicate(ELA_feature,SubClassOf,IAO_0000027,).
+predicate(ELA_feature,SubClassOf,IAO_0000136 some benchmark_problem,).
+predicate(ELA_feature,SubClassOf,SCAIVPH_00000787 some SCAIVPH_00000220,).
+predicate(ELA_feature,SubClassOf,calculated_on_sample_size some integer,).
+predicate(ELA_feature,SubClassOf,has_value some double).
+predicate(LHS_sampling_technique,is,Class).
+predicate(Sobol_sampling_technique,is,Class).
+predicate(benchmark_algorithm,is,Class).
+predicate(benchmark_algorithm,DisjointWith,IAO_0000136 some benchmark_problem).
+predicate(benchmark_algorithm_execution,is,Class).
+predicate(benchmark_algorithm_implementation,is,Class).
+predicate(benchmark_algorithm_implementation,SubClassOf,OBI_0000260,).
+predicate(benchmark_algorithm_implementation,SubClassOf,OBI_0000294 some benchmark_algorithm,).
+predicate(benchmark_algorithm_implementation,SubClassOf,OBI_0000300 some benchmark_algorithm_execution,).
+predicate(benchmark_algorithm_implementation,SubClassOf,OBI_0000294 only (IAO_0000136 some benchmark_problem)).
+predicate(benchmark_optimization_algorithm_implementation,is,Class).
+predicate(benchmark_optimization_algorithm_implementation,SubClassOf,benchmark_algorithm_implementation).
+predicate(benchmark_problem,is,Class).
+predicate(benchmark_problem_transformation,is,Class).
+predicate(disp,is,Class).
+predicate(disp,SubClassOf,ELA_feature).
+predicate(ela-distr,is,Class).
+predicate(ela-distr,SubClassOf,ELA_feature).
+predicate(ela-meta,is,Class).
+predicate(ela-meta,SubClassOf,ELA_feature).
+predicate(iLHS_sampling_technique,is,Class).
+predicate(ic,is,Class).
+predicate(ic,SubClassOf,ELA_feature).
+predicate(nbc,is,Class).
+predicate(nbc,SubClassOf,ELA_feature).
+predicate(pca,is,Class).
+predicate(pca,SubClassOf,ELA_feature).
+predicate(transform_obj_scale,is,Class).
+predicate(transform_obj_scale,SubClassOf,benchmark_problem_transformation).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(OBI_0000294 some benchmark_algorithm,is,Class).
+predicate(OBI_0000294 some benchmark_algorithm,SubClassOf,benchmark_optimization_algorithm_implementation).

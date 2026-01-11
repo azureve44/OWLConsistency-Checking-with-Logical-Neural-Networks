@@ -1,0 +1,1032 @@
+is(aPourThematique,ObjectProperty):1.0
+is(estRealisePar,ObjectProperty):1.0
+Domain(estRealisePar,Action):1.0
+Range(estRealisePar,Agent):1.0
+InverseOf(estRealisePar,realise):1.0
+is(porteSur,ObjectProperty):1.0
+is(realise,ObjectProperty):1.0
+InverseOf(realise,estRealisePar):1.0
+is(Processus,Class):1.0
+is(Examen,Class):1.0
+SubClassOf(Examen,ActionD_Evaluer,):1.0
+SubClassOf(Examen,porteSur some Patient):1.0
+is(ExamenBiologique,Class):1.0
+SubClassOf(ExamenBiologique,ExamenParaclinique):1.0
+is(ExamenClinique,Class):1.0
+SubClassOf(ExamenClinique,Examen,):1.0
+SubClassOf(ExamenClinique,aPourThematique some ThematiqueEvaluationMedicale,):1.0
+SubClassOf(ExamenClinique,estRealisePar some Medecin):1.0
+is(ExamenDImagerie,Class):1.0
+SubClassOf(ExamenDImagerie,ExamenParaclinique):1.0
+is(ExamenElectrophysiologique,Class):1.0
+SubClassOf(ExamenElectrophysiologique,ExamenParaclinique):1.0
+is(ExamenParaclinique,Class):1.0
+SubClassOf(ExamenParaclinique,Examen):1.0
+is(ExplorationFonctionnelle,Class):1.0
+SubClassOf(ExplorationFonctionnelle,ExamenParaclinique):1.0
+is(AccompagnementPsychologique,Class):1.0
+SubClassOf(AccompagnementPsychologique,SuiviDeCoordination):1.0
+is(AccompagnementSocial,Class):1.0
+SubClassOf(AccompagnementSocial,SuiviDeCoordination,):1.0
+SubClassOf(AccompagnementSocial,aPourThematique some ThematiqueBesoinEtDemandePecSociale):1.0
+is(ActionCommunicationCoordination,Class):1.0
+EquivalentTo(ActionCommunicationCoordination,ActionDeCommuniquer and (aPourThematique some ThematiqueDeCoordination)):1.0
+SubClassOf(ActionCommunicationCoordination,ActionDeCommuniquer):1.0
+is(ActionCommunicationEntranteCoordination,Class):1.0
+EquivalentTo(ActionCommunicationEntranteCoordination,ActionCommunicationCoordination and (aPourThematique some ThematicCommunicationEntrance) and (aPourThematique some ThematiqueDeCoordination)):1.0
+SubClassOf(ActionCommunicationEntranteCoordination,ActionCommunicationCoordination):1.0
+is(ActionCommunicationSortanteCoordination,Class):1.0
+EquivalentTo(ActionCommunicationSortanteCoordination,ActionCommunicationCoordination and (aPourThematique some ThematicOutgoingCommunication) and (aPourThematique some ThematiqueDeCoordination)):1.0
+SubClassOf(ActionCommunicationSortanteCoordination,ActionCommunicationCoordination):1.0
+is(ActionDeCoordination,Class):1.0
+EquivalentTo(ActionDeCoordination,Action and (aPourThematique some ThematiqueDeCoordination)):1.0
+SubClassOf(ActionDeCoordination,Action,):1.0
+SubClassOf(ActionDeCoordination,estRealisePar some CoordinateurReseauSla):1.0
+is(AlerteEnCoordination,Class):1.0
+SubClassOf(AlerteEnCoordination,Alerter,):1.0
+SubClassOf(AlerteEnCoordination,aPourThematique some ThematiqueDeCoordination):1.0
+is(AlignerRessourceBesoins,Class):1.0
+EquivalentTo(AlignerRessourceBesoins,ActiviteDeGuidage and (aPourThematique some ThematiqueDeCoordination)):1.0
+SubClassOf(AlignerRessourceBesoins,ActiviteDeGuidage,):1.0
+SubClassOf(AlignerRessourceBesoins,estRealisePar some CoordinateurReseauSla):1.0
+DisjointWith(AlignerRessourceBesoins,ActiviteDeGuidage and (aPourThematique some ThematiqueDeCoordination)):1.0
+is(AppelDeSoutien,Class):1.0
+SubClassOf(AppelDeSoutien,SuiviDeCoordination):1.0
+is(AppelDeSuivi,Class):1.0
+SubClassOf(AppelDeSuivi,SuiviDeCoordination):1.0
+is(AppelEmis,Class):1.0
+SubClassOf(AppelEmis,ActionCommunicationSortanteCoordination):1.0
+is(AppelRecu,Class):1.0
+SubClassOf(AppelRecu,ActionCommunicationEntranteCoordination):1.0
+is(AppuiDemande,Class):1.0
+SubClassOf(AppuiDemande,ArgumentationDeCoordination):1.0
+is(Appui_MDPH,Class):1.0
+SubClassOf(Appui_MDPH,ArgumentationDeCoordination):1.0
+is(ArgumentationDeCoordination,Class):1.0
+SubClassOf(ArgumentationDeCoordination,Argumenter,):1.0
+SubClassOf(ArgumentationDeCoordination,aPourThematique some ThematiqueDeCoordination):1.0
+is(BesoinConseil,Class):1.0
+SubClassOf(BesoinConseil,DemanderInformation,):1.0
+SubClassOf(BesoinConseil,aPourThematique some ThematiqueDeCoordination):1.0
+is(ConseilCoordination,Class):1.0
+SubClassOf(ConseilCoordination,Conseiller):1.0
+is(CoordinateurReseauSla,Class):1.0
+is(DemandeAdmission,Class):1.0
+SubClassOf(DemandeAdmission,DemandeDePriseEnCharge,):1.0
+SubClassOf(DemandeAdmission,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(DemandeAdmission_MAS,Class):1.0
+SubClassOf(DemandeAdmission_MAS,DemandeDePriseEnCharge,):1.0
+SubClassOf(DemandeAdmission_MAS,aPourThematique some ThematiqueBesoinEtDemandePecSociale):1.0
+is(DemandeDeCoordinateurSla,Class):1.0
+SubClassOf(DemandeDeCoordinateurSla,DemandeParProfessionnel):1.0
+is(DemandeDeEntourage,Class):1.0
+SubClassOf(DemandeDeEntourage,DemandeEmiseParAgent,):1.0
+SubClassOf(DemandeDeEntourage,aPourThematique some ThematiqueBesoinEtDemandePecSociale):1.0
+is(DemandeDePriseEnCharge,Class):1.0
+SubClassOf(DemandeDePriseEnCharge,ActionDeDemander,):1.0
+SubClassOf(DemandeDePriseEnCharge,aPourThematique some ThematiqueDeCoordination):1.0
+is(DemandeDeRechercheProfessionnel,Class):1.0
+SubClassOf(DemandeDeRechercheProfessionnel,DemandeDePriseEnCharge,):1.0
+SubClassOf(DemandeDeRechercheProfessionnel,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(DemandeDeRendezVous,Class):1.0
+SubClassOf(DemandeDeRendezVous,DemandeDePriseEnCharge):1.0
+is(DemandeDeSejourDeRepit,Class):1.0
+SubClassOf(DemandeDeSejourDeRepit,DemandeDePriseEnCharge,):1.0
+SubClassOf(DemandeDeSejourDeRepit,aPourThematique some ThematiqueEpuisement):1.0
+is(DemandeDeSoutienPsychologique,Class):1.0
+SubClassOf(DemandeDeSoutienPsychologique,DemandeDeRechercheProfessionnel):1.0
+is(DemandeDe_SAMSAH,Class):1.0
+SubClassOf(DemandeDe_SAMSAH,DemandeDePriseEnCharge,):1.0
+SubClassOf(DemandeDe_SAMSAH,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(DemandeDe_SSIAD,Class):1.0
+SubClassOf(DemandeDe_SSIAD,DemandeDePriseEnCharge,):1.0
+SubClassOf(DemandeDe_SSIAD,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(DemandeDesEnfants,Class):1.0
+SubClassOf(DemandeDesEnfants,DemandeDeEntourage):1.0
+is(DemandeDuConjoint,Class):1.0
+SubClassOf(DemandeDuConjoint,DemandeDeEntourage):1.0
+is(DemandeDuMedecin,Class):1.0
+SubClassOf(DemandeDuMedecin,DemandeParProfessionnel):1.0
+is(DemandeDuNeurologue,Class):1.0
+SubClassOf(DemandeDuNeurologue,DemandeParProfessionnel):1.0
+is(DemandeDuPatient,Class):1.0
+SubClassOf(DemandeDuPatient,DemandeEmiseParAgent,):1.0
+SubClassOf(DemandeDuPatient,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(DemandeEmiseParAgent,Class):1.0
+SubClassOf(DemandeEmiseParAgent,ActionDeDemander,):1.0
+SubClassOf(DemandeEmiseParAgent,aPourThematique some ThematiqueDeCoordination,):1.0
+SubClassOf(DemandeEmiseParAgent,estRealisePar some Agent):1.0
+is(DemandeFaite,Class):1.0
+SubClassOf(DemandeFaite,ActionDeCoordination):1.0
+is(DemandeMAisonDeRetraite,Class):1.0
+SubClassOf(DemandeMAisonDeRetraite,DemandeDePriseEnCharge,):1.0
+SubClassOf(DemandeMAisonDeRetraite,aPourThematique some ThematiqueBesoinEtDemandePecSociale):1.0
+is(DemandeParKine,Class):1.0
+SubClassOf(DemandeParKine,DemandeParProfessionnel):1.0
+is(DemandeParPrestataire,Class):1.0
+SubClassOf(DemandeParPrestataire,DemandeParProfessionnel):1.0
+is(DemandeParProfessionnel,Class):1.0
+SubClassOf(DemandeParProfessionnel,DemandeEmiseParAgent,):1.0
+SubClassOf(DemandeParProfessionnel,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(DemandeParProfessionnelCentreExpert,Class):1.0
+SubClassOf(DemandeParProfessionnelCentreExpert,DemandeParProfessionnel):1.0
+is(DemandeRechercheKinesitherapeute,Class):1.0
+SubClassOf(DemandeRechercheKinesitherapeute,DemandeDeRechercheProfessionnel):1.0
+is(DemandeRechercheOrthophoniste,Class):1.0
+SubClassOf(DemandeRechercheOrthophoniste,DemandeDeRechercheProfessionnel):1.0
+is(DemandeRecuEnCoordination,Class):1.0
+EquivalentTo(DemandeRecuEnCoordination,ActionDeDemander and (aPourThematique some ThematiqueDeCoordination)):1.0
+SubClassOf(DemandeRecuEnCoordination,ActionDeDemander):1.0
+is(DemanderCoordonnees,Class):1.0
+SubClassOf(DemanderCoordonnees,DemanderInformation,):1.0
+SubClassOf(DemanderCoordonnees,aPourThematique some ThematiqueDeCoordination):1.0
+is(DemanderFormation,Class):1.0
+SubClassOf(DemanderFormation,ActionDeDemander,):1.0
+SubClassOf(DemanderFormation,aPourThematique some ThematiqueDeCoordination):1.0
+is(DemanderInclusion,Class):1.0
+SubClassOf(DemanderInclusion,DemandeDePriseEnCharge):1.0
+is(DemanderInformation,Class):1.0
+SubClassOf(DemanderInformation,ActionDeDemander,):1.0
+SubClassOf(DemanderInformation,aPourThematique some ThematiqueDeCoordination):1.0
+is(DiscussionAideTechnique,Class):1.0
+SubClassOf(DiscussionAideTechnique,EchangerSurPEC):1.0
+is(DiscussionAmenagement,Class):1.0
+SubClassOf(DiscussionAmenagement,EchangerSurPEC):1.0
+is(DiscussionDifficile,Class):1.0
+SubClassOf(DiscussionDifficile,EchangerSurPEC):1.0
+is(DiscussionEssaiTherapeutique,Class):1.0
+SubClassOf(DiscussionEssaiTherapeutique,EchangerSurPEC):1.0
+is(DiscussionFinDeVie,Class):1.0
+SubClassOf(DiscussionFinDeVie,EchangerSurPEC):1.0
+is(DiscussionMaisonRetraite,Class):1.0
+SubClassOf(DiscussionMaisonRetraite,EchangerSurPEC):1.0
+is(DiscussionOrientation,Class):1.0
+SubClassOf(DiscussionOrientation,EchangerSurPEC):1.0
+is(DiscussionPECKine,Class):1.0
+SubClassOf(DiscussionPECKine,EchangerSurPEC):1.0
+is(DiscussionSejour,Class):1.0
+SubClassOf(DiscussionSejour,EchangerSurPEC):1.0
+is(DiscussionSuppleance,Class):1.0
+SubClassOf(DiscussionSuppleance,EchangerSurPEC):1.0
+is(DiscussionSurAideHumaine,Class):1.0
+SubClassOf(DiscussionSurAideHumaine,EchangerSurPEC):1.0
+is(DiscussionSurBesoin,Class):1.0
+SubClassOf(DiscussionSurBesoin,FairePoint):1.0
+is(DonnerInformation,Class):1.0
+SubClassOf(DonnerInformation,Expliquer):1.0
+is(EchangeInformationSurSituation,Class):1.0
+SubClassOf(EchangeInformationSurSituation,FairePoint):1.0
+is(EchangeSurDifficulte,Class):1.0
+SubClassOf(EchangeSurDifficulte,FairePoint):1.0
+is(EchangeSurEpuisement,Class):1.0
+SubClassOf(EchangeSurEpuisement,EchangerSurPEC):1.0
+is(EchangeSurPathologie,Class):1.0
+SubClassOf(EchangeSurPathologie,EchangerSurPEC):1.0
+is(EchangerAvecAgent,Class):1.0
+SubClassOf(EchangerAvecAgent,FairePoint):1.0
+is(EchangerSurPEC,Class):1.0
+SubClassOf(EchangerSurPEC,EvaluationCoordination):1.0
+is(EcouteActive,Class):1.0
+SubClassOf(EcouteActive,Accompagner,):1.0
+SubClassOf(EcouteActive,aPourThematique some ThematiqueDeCoordination):1.0
+is(EducationDeEquipe,Class):1.0
+SubClassOf(EducationDeEquipe,Eduquer,):1.0
+SubClassOf(EducationDeEquipe,aPourThematique some ThematiqueDeCoordination,):1.0
+SubClassOf(EducationDeEquipe,estRealisePar some CoordinateurReseauSla):1.0
+is(EducationDesProfessionnelsLiberaux,Class):1.0
+SubClassOf(EducationDesProfessionnelsLiberaux,Eduquer,):1.0
+SubClassOf(EducationDesProfessionnelsLiberaux,aPourThematique some ThematiqueDeCoordination,):1.0
+SubClassOf(EducationDesProfessionnelsLiberaux,estRealisePar some CoordinateurReseauSla):1.0
+is(EntretienDeCoordination,Class):1.0
+SubClassOf(EntretienDeCoordination,Rencontrer,):1.0
+SubClassOf(EntretienDeCoordination,aPourThematique some ThematiqueDeCoordination):1.0
+is(EntretienDeSoutien,Class):1.0
+SubClassOf(EntretienDeSoutien,EntretienDeCoordination):1.0
+is(EntretienPsychologique,Class):1.0
+SubClassOf(EntretienPsychologique,EntretienDeCoordination):1.0
+is(EvaluationCoordination,Class):1.0
+EquivalentTo(EvaluationCoordination,ActionD_Evaluer and (aPourThematique some ThematiqueDeCoordination)):1.0
+SubClassOf(EvaluationCoordination,ActionD_Evaluer):1.0
+is(FaireAlerteCoordination,Class):1.0
+SubClassOf(FaireAlerteCoordination,AlerteEnCoordination):1.0
+is(FairePoint,Class):1.0
+SubClassOf(FairePoint,EvaluationCoordination):1.0
+is(Formation_Coordination,Class):1.0
+EquivalentTo(Formation_Coordination,ActionDeFormer and (aPourThematique some ThematiqueDeCoordination)):1.0
+SubClassOf(Formation_Coordination,ActionDeFormer,):1.0
+SubClassOf(Formation_Coordination,estRealisePar some CoordinateurReseauSla):1.0
+is(InclusionReseauSLA,Class):1.0
+SubClassOf(InclusionReseauSLA,Rencontrer):1.0
+is(LaisserMessage,Class):1.0
+SubClassOf(LaisserMessage,ActionCommunicationSortanteCoordination):1.0
+is(MiseEnPlacePrestationSociale,Class):1.0
+SubClassOf(MiseEnPlacePrestationSociale,MiseEnPlaceRessourceCoordination):1.0
+is(MiseEnPlaceRessourceCoordination,Class):1.0
+SubClassOf(MiseEnPlaceRessourceCoordination,MettreEnPlace,):1.0
+SubClassOf(MiseEnPlaceRessourceCoordination,aPourThematique some ThematiqueDeCoordination,):1.0
+SubClassOf(MiseEnPlaceRessourceCoordination,estRealisePar some CoordinateurReseauSla):1.0
+is(MiseEnPlaceRessourceHumaine,Class):1.0
+SubClassOf(MiseEnPlaceRessourceHumaine,MiseEnPlaceRessourceCoordination):1.0
+is(MiseEnPlaceRessourceMateriel,Class):1.0
+SubClassOf(MiseEnPlaceRessourceMateriel,MiseEnPlaceRessourceCoordination):1.0
+is(MiseEnPlaceSejourRepit,Class):1.0
+SubClassOf(MiseEnPlaceSejourRepit,MiseEnPlaceRessourceCoordination):1.0
+is(MiseEnPlaceStructure,Class):1.0
+SubClassOf(MiseEnPlaceStructure,MiseEnPlaceRessourceCoordination):1.0
+is(OrganiserRetourDomicile,Class):1.0
+SubClassOf(OrganiserRetourDomicile,MiseEnPlaceRessourceCoordination):1.0
+is(PreconisationCoordination,Class):1.0
+EquivalentTo(PreconisationCoordination,Preconiser and (aPourThematique some ThematiqueDeCoordination)):1.0
+SubClassOf(PreconisationCoordination,Preconiser,):1.0
+SubClassOf(PreconisationCoordination,estRealisePar some CoordinateurReseauSla):1.0
+is(PresenterReseauSLA,Class):1.0
+SubClassOf(PresenterReseauSLA,Action,):1.0
+SubClassOf(PresenterReseauSLA,aPourThematique some ThematiqueDeCoordination):1.0
+is(RecevoirAlerte,Class):1.0
+SubClassOf(RecevoirAlerte,AlerteEnCoordination):1.0
+is(RechercheDeProfessionnel,Class):1.0
+SubClassOf(RechercheDeProfessionnel,RechercheDeRessourceCoordination):1.0
+is(RechercheDeRessourceCoordination,Class):1.0
+SubClassOf(RechercheDeRessourceCoordination,Chercher,):1.0
+SubClassOf(RechercheDeRessourceCoordination,aPourThematique some ThematiqueDeCoordination,):1.0
+SubClassOf(RechercheDeRessourceCoordination,estRealisePar some CoordinateurReseauSla):1.0
+is(RechercherStructure,Class):1.0
+SubClassOf(RechercherStructure,RechercheDeRessourceCoordination):1.0
+is(RendezVousTelephonique,Class):1.0
+SubClassOf(RendezVousTelephonique,SuiviDeCoordination):1.0
+is(ReunionDeSynthese,Class):1.0
+SubClassOf(ReunionDeSynthese,ActionD_Evaluer,):1.0
+SubClassOf(ReunionDeSynthese,aPourThematique some ThematiqueDeCoordination):1.0
+is(SuiviDeCoordination,Class):1.0
+SubClassOf(SuiviDeCoordination,ActionD_Evaluer,):1.0
+SubClassOf(SuiviDeCoordination,aPourThematique some ThematiqueDeCoordination):1.0
+is(SuiviDouleur,Class):1.0
+SubClassOf(SuiviDouleur,SuiviDeCoordination,):1.0
+SubClassOf(SuiviDouleur,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(SuiviNeurologique,Class):1.0
+SubClassOf(SuiviNeurologique,SuiviDeCoordination,):1.0
+SubClassOf(SuiviNeurologique,aPourThematique some ThematiqueBesoinEtDemandeMedicale,):1.0
+SubClassOf(SuiviNeurologique,aPourThematique only ConsultationMultidisciplinaire):1.0
+is(SuiviNutritionnel,Class):1.0
+SubClassOf(SuiviNutritionnel,SuiviDeCoordination,):1.0
+SubClassOf(SuiviNutritionnel,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(SuiviRespiratoire,Class):1.0
+SubClassOf(SuiviRespiratoire,SuiviDeCoordination,):1.0
+SubClassOf(SuiviRespiratoire,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(TransmissionFaite,Class):1.0
+SubClassOf(TransmissionFaite,ActionCommunicationSortanteCoordination):1.0
+is(TransmissionRecue,Class):1.0
+SubClassOf(TransmissionRecue,ActionCommunicationEntranteCoordination):1.0
+is(ActionLierAuSoins,Class):1.0
+SubClassOf(ActionLierAuSoins,Action,):1.0
+SubClassOf(ActionLierAuSoins,aPourThematique some ThematiqueMedicale,):1.0
+SubClassOf(ActionLierAuSoins,estRealisePar some AgentMedical):1.0
+is(ActionMedicale,Class):1.0
+EquivalentTo(ActionMedicale,Action and (aPourThematique some ThematiqueMedicale)):1.0
+SubClassOf(ActionMedicale,Action):1.0
+is(Aerosols,Class):1.0
+SubClassOf(Aerosols,SoinsSpecifie,):1.0
+SubClassOf(Aerosols,aPourThematique some ThematiqueRespiratoire):1.0
+is(AgentMedical,Class):1.0
+is(AidePsychologique,Class):1.0
+SubClassOf(AidePsychologique,PriseEnChargePsychologique):1.0
+is(Anesthesie,Class):1.0
+SubClassOf(Anesthesie,SoinsSpecifie):1.0
+is(AnnonceDiagnostique,Class):1.0
+SubClassOf(AnnonceDiagnostique,ConsultationDeRetourDAnnonce):1.0
+is(AspirationAppareilRespiratoire,Class):1.0
+SubClassOf(AspirationAppareilRespiratoire,SoinsSpecifie,):1.0
+SubClassOf(AspirationAppareilRespiratoire,aPourThematique some ThematiqueRespiratoire):1.0
+is(AspirationBronchique,Class):1.0
+SubClassOf(AspirationBronchique,AspirationAppareilRespiratoire):1.0
+is(AspirationBuccale,Class):1.0
+SubClassOf(AspirationBuccale,AspirationAppareilRespiratoire):1.0
+is(AspirationTracheale,Class):1.0
+SubClassOf(AspirationTracheale,AspirationAppareilRespiratoire):1.0
+is(AugmentationDuTraitement,Class):1.0
+SubClassOf(AugmentationDuTraitement,ModificationDuTraitementMedicamenteux):1.0
+is(Balneotherapie,Class):1.0
+SubClassOf(Balneotherapie,PriseEnChargeKinesitherapique):1.0
+is(BilanDouleur,Class):1.0
+SubClassOf(BilanDouleur,ExamenClinique):1.0
+is(BilanErgotherapique,Class):1.0
+SubClassOf(BilanErgotherapique,ExamenParaclinique):1.0
+is(BilanInfectieux,Class):1.0
+SubClassOf(BilanInfectieux,ExamenClinique):1.0
+is(BilanKinesitherapique,Class):1.0
+SubClassOf(BilanKinesitherapique,ExamenParaclinique):1.0
+is(BilanMoteur,Class):1.0
+SubClassOf(BilanMoteur,ExamenClinique):1.0
+is(BilanNeurologique,Class):1.0
+SubClassOf(BilanNeurologique,ExamenClinique):1.0
+is(BilanOphtalmique,Class):1.0
+SubClassOf(BilanOphtalmique,ExamenClinique):1.0
+is(BilanOrthophonique,Class):1.0
+SubClassOf(BilanOrthophonique,ExamenParaclinique):1.0
+is(BilanUrodynamique,Class):1.0
+SubClassOf(BilanUrodynamique,ExamenClinique):1.0
+is(Bilan_IDE,Class):1.0
+SubClassOf(Bilan_IDE,ExamenParaclinique):1.0
+is(CelluleSouche,Class):1.0
+SubClassOf(CelluleSouche,RechercheClinique):1.0
+is(ChangerSonde,Class):1.0
+SubClassOf(ChangerSonde,SoinsSpecifie):1.0
+is(ConsultationAnesthesie,Class):1.0
+SubClassOf(ConsultationAnesthesie,ConsultationMedicale):1.0
+is(ConsultationCardiologie,Class):1.0
+SubClassOf(ConsultationCardiologie,ConsultationMedicale):1.0
+is(ConsultationDeRetourDAnnonce,Class):1.0
+SubClassOf(ConsultationDeRetourDAnnonce,ConsultationMedicale):1.0
+is(ConsultationHandicap,Class):1.0
+SubClassOf(ConsultationHandicap,ConsultationMedicale):1.0
+is(ConsultationHopitalDeJourPneumologie,Class):1.0
+SubClassOf(ConsultationHopitalDeJourPneumologie,ConsultationHôpitalDeJour):1.0
+is(ConsultationHôpitalDeJour,Class):1.0
+SubClassOf(ConsultationHôpitalDeJour,ConsultationMedicale):1.0
+is(ConsultationMedecinTraitant,Class):1.0
+SubClassOf(ConsultationMedecinTraitant,ConsultationMedicale):1.0
+is(ConsultationMedicale,Class):1.0
+SubClassOf(ConsultationMedicale,ActionD_Evaluer,):1.0
+SubClassOf(ConsultationMedicale,aPourThematique some ThematiqueEvaluationMedicale,):1.0
+SubClassOf(ConsultationMedicale,aPourThematique some ThematiqueMedicale,):1.0
+SubClassOf(ConsultationMedicale,estRealisePar some Medecin,):1.0
+SubClassOf(ConsultationMedicale,porteSur some Personne):1.0
+is(ConsultationMultidisciplinaire,Class):1.0
+SubClassOf(ConsultationMultidisciplinaire,ConsultationMedicale):1.0
+DisjointWith(ConsultationMultidisciplinaire,ThematiqueBesoinEtDemandeMedicale):1.0
+is(ConsultationNeurologie,Class):1.0
+SubClassOf(ConsultationNeurologie,ConsultationMedicale):1.0
+is(ConsultationORL,Class):1.0
+SubClassOf(ConsultationORL,ConsultationMedicale):1.0
+is(ConsultationOphtalmologie,Class):1.0
+SubClassOf(ConsultationOphtalmologie,ConsultationMedicale):1.0
+is(ConsultationPneumologie,Class):1.0
+SubClassOf(ConsultationPneumologie,ConsultationMedicale):1.0
+is(ConsultationStomatologie,Class):1.0
+SubClassOf(ConsultationStomatologie,ConsultationMedicale):1.0
+is(ConsultationUrgences,Class):1.0
+SubClassOf(ConsultationUrgences,ConsultationMedicale):1.0
+is(ConsultationUrologie,Class):1.0
+SubClassOf(ConsultationUrologie,ConsultationMedicale):1.0
+is(DemandeAdmissionLongSejour,Class):1.0
+SubClassOf(DemandeAdmissionLongSejour,DemanderUneAdmissionMedicale):1.0
+is(DemandeAdmission_HAD,Class):1.0
+SubClassOf(DemandeAdmission_HAD,DemanderUneAdmissionMedicale):1.0
+is(DemandeAdmission_USP,Class):1.0
+SubClassOf(DemandeAdmission_USP,DemanderUneAdmissionMedicale):1.0
+is(DemandeDeCertificatMedical,Class):1.0
+SubClassOf(DemandeDeCertificatMedical,DemandeDeDocumentMedical):1.0
+is(DemandeDeConsultation,Class):1.0
+SubClassOf(DemandeDeConsultation,DemanderDePriseEnChargeMedicale,):1.0
+SubClassOf(DemandeDeConsultation,aPourThematique some ThematiqueMedicale):1.0
+is(DemandeDeDocumentMedical,Class):1.0
+SubClassOf(DemandeDeDocumentMedical,DemanderDePriseEnChargeMedicale):1.0
+is(DemandeDeKinesitherapie,Class):1.0
+SubClassOf(DemandeDeKinesitherapie,DemandeDeSoins):1.0
+is(DemandeDeSoins,Class):1.0
+SubClassOf(DemandeDeSoins,DemanderDePriseEnChargeMedicale):1.0
+is(DemandeDeTraitement,Class):1.0
+SubClassOf(DemandeDeTraitement,DemandeDeSoins):1.0
+is(DemandeEuthanasie,Class):1.0
+SubClassOf(DemandeEuthanasie,DemandeDeSoins):1.0
+is(DemandeExamen,Class):1.0
+SubClassOf(DemandeExamen,DemandeEvaluationMedicale):1.0
+is(DemandeOrdonnance,Class):1.0
+SubClassOf(DemandeOrdonnance,DemandeDeDocumentMedical):1.0
+is(DemandeOrtho,Class):1.0
+SubClassOf(DemandeOrtho,DemandeDeSoins):1.0
+is(Demande_CMD,Class):1.0
+SubClassOf(Demande_CMD,DemandeDeConsultation):1.0
+is(Demande_HDJ,Class):1.0
+SubClassOf(Demande_HDJ,DemanderUneAdmissionMedicale):1.0
+is(Demande_SSR,Class):1.0
+SubClassOf(Demande_SSR,DemanderUneAdmissionMedicale):1.0
+is(DemanderUneAdmissionMedicale,Class):1.0
+SubClassOf(DemanderUneAdmissionMedicale,DemanderDePriseEnChargeMedicale,):1.0
+SubClassOf(DemanderUneAdmissionMedicale,aPourThematique some ThematiqueMedicale):1.0
+is(Diagnostiquer,Class):1.0
+SubClassOf(Diagnostiquer,ActionD_Evaluer,):1.0
+SubClassOf(Diagnostiquer,aPourThematique some ThematiqueMedicale,):1.0
+SubClassOf(Diagnostiquer,porteSur some Personne):1.0
+is(DiscuterDirectiveAnticipee,Class):1.0
+SubClassOf(DiscuterDirectiveAnticipee,ActionD_Evaluer,):1.0
+SubClassOf(DiscuterDirectiveAnticipee,aPourThematique some ThematiqueMedicale):1.0
+is(EducationDeLaFamille,Class):1.0
+SubClassOf(EducationDeLaFamille,EducationTherapeutique):1.0
+is(EducationDuPatient,Class):1.0
+SubClassOf(EducationDuPatient,EducationTherapeutique):1.0
+is(Ergotherapeute,Class):1.0
+is(Ergotherapie,Class):1.0
+SubClassOf(Ergotherapie,PriseEnChargeErgotherapique):1.0
+is(EssaiTherapeutique,Class):1.0
+SubClassOf(EssaiTherapeutique,RechercheClinique):1.0
+is(Euthanasie,Class):1.0
+SubClassOf(Euthanasie,ActionLierAuSoins,):1.0
+SubClassOf(Euthanasie,aPourThematique some ThematiqueBesoinEtDemandeMedicale,):1.0
+SubClassOf(Euthanasie,porteSur some FinDeVie,):1.0
+SubClassOf(Euthanasie,porteSur some Patient):1.0
+is(EvaluationDesConstantesBiologiques,Class):1.0
+SubClassOf(EvaluationDesConstantesBiologiques,ExamenClinique):1.0
+is(EvaluationMedicale,Class):1.0
+EquivalentTo(EvaluationMedicale,ActionD_Evaluer and (aPourThematique some ThematiqueEvaluationMedicale)):1.0
+SubClassOf(EvaluationMedicale,ActionD_Evaluer):1.0
+is(EvaluationNutritionnelle,Class):1.0
+SubClassOf(EvaluationNutritionnelle,ExamenParaclinique):1.0
+is(EvaluationParamedicale,Class):1.0
+EquivalentTo(EvaluationParamedicale,ActionD_Evaluer and (aPourThematique some ThematiqueEvaluationParamedicale)):1.0
+SubClassOf(EvaluationParamedicale,ActionD_Evaluer):1.0
+is(EvaluationPneumologique,Class):1.0
+SubClassOf(EvaluationPneumologique,ExamenClinique):1.0
+is(EvaluationPsychologique,Class):1.0
+SubClassOf(EvaluationPsychologique,ExamenParaclinique):1.0
+is(ExamenCardiologique,Class):1.0
+SubClassOf(ExamenCardiologique,ExamenClinique):1.0
+is(FinDeVie,Class):1.0
+is(Infiltration,Class):1.0
+SubClassOf(Infiltration,SoinsSpecifie):1.0
+is(Infirmier,Class):1.0
+is(Injection,Class):1.0
+SubClassOf(Injection,SoinsSpecifie):1.0
+is(InjectionDeToxineBotulique,Class):1.0
+SubClassOf(InjectionDeToxineBotulique,Injection):1.0
+is(Intubation,Class):1.0
+SubClassOf(Intubation,SoinsSpecifie):1.0
+is(Kinesitherapeute,Class):1.0
+is(Kinesitherapie,Class):1.0
+SubClassOf(Kinesitherapie,PriseEnChargeKinesitherapique):1.0
+is(Lavement,Class):1.0
+SubClassOf(Lavement,SoinsSpecifie):1.0
+is(Medecin,Class):1.0
+is(Medicament,Class):1.0
+is(MiseEnPlacePerfusion,Class):1.0
+SubClassOf(MiseEnPlacePerfusion,Perfuser):1.0
+is(ModificationDuTraitementMedicamenteux,Class):1.0
+SubClassOf(ModificationDuTraitementMedicamenteux,ActionD_Evaluer,):1.0
+SubClassOf(ModificationDuTraitementMedicamenteux,aPourThematique some ThematiqueMedicale,):1.0
+SubClassOf(ModificationDuTraitementMedicamenteux,aPourThematique some ThematiqueTraitement,):1.0
+SubClassOf(ModificationDuTraitementMedicamenteux,porteSur some Medicament):1.0
+is(OrdonnanceSortie,Class):1.0
+SubClassOf(OrdonnanceSortie,Prescription):1.0
+is(Orthophonie,Class):1.0
+SubClassOf(Orthophonie,PriseEnChargeOrthophonique):1.0
+is(Orthophoniste,Class):1.0
+is(PasserTraitement,Class):1.0
+SubClassOf(PasserTraitement,SoinsSpecifie):1.0
+is(Perfuser,Class):1.0
+SubClassOf(Perfuser,SoinsSpecifie):1.0
+is(PonctionLombaire,Class):1.0
+SubClassOf(PonctionLombaire,ExamenClinique):1.0
+is(Prescription,Class):1.0
+SubClassOf(Prescription,Prescrire):1.0
+is(PrescriptionDePriseEnCharge,Class):1.0
+SubClassOf(PrescriptionDePriseEnCharge,Prescription):1.0
+is(PrescriptionKinesitherapie,Class):1.0
+SubClassOf(PrescriptionKinesitherapie,Prescription):1.0
+is(Prescrire,Class):1.0
+SubClassOf(Prescrire,ActiviteDeGuidage,):1.0
+SubClassOf(Prescrire,aPourThematique some ThematiqueMedicale):1.0
+is(PriseEnChargeErgotherapique,Class):1.0
+SubClassOf(PriseEnChargeErgotherapique,PriseEnChargeParamedicale,):1.0
+SubClassOf(PriseEnChargeErgotherapique,estRealisePar some Ergotherapeute):1.0
+is(PriseEnChargeHopsitalisationADomicile,Class):1.0
+SubClassOf(PriseEnChargeHopsitalisationADomicile,PriseEnChargeMedicale):1.0
+is(PriseEnChargeKinesitherapique,Class):1.0
+SubClassOf(PriseEnChargeKinesitherapique,PriseEnChargeParamedicale,):1.0
+SubClassOf(PriseEnChargeKinesitherapique,estRealisePar some Kinesitherapeute):1.0
+is(PriseEnChargeMedicale,Class):1.0
+SubClassOf(PriseEnChargeMedicale,SoinsSpecifie):1.0
+is(PriseEnChargeNutritionnelle,Class):1.0
+SubClassOf(PriseEnChargeNutritionnelle,PriseEnChargeMedicale):1.0
+is(PriseEnChargeOrthophonique,Class):1.0
+SubClassOf(PriseEnChargeOrthophonique,PriseEnChargeParamedicale,):1.0
+SubClassOf(PriseEnChargeOrthophonique,estRealisePar some Orthophoniste):1.0
+is(PriseEnChargePalliative,Class):1.0
+SubClassOf(PriseEnChargePalliative,PriseEnChargeMedicale):1.0
+is(PriseEnChargeParamedicale,Class):1.0
+SubClassOf(PriseEnChargeParamedicale,ActionLierAuSoins):1.0
+is(PriseEnChargePsychologique,Class):1.0
+SubClassOf(PriseEnChargePsychologique,PriseEnChargeParamedicale,):1.0
+SubClassOf(PriseEnChargePsychologique,estRealisePar some Psychologue):1.0
+is(PriseEnChargePsychomotricite,Class):1.0
+SubClassOf(PriseEnChargePsychomotricite,PriseEnChargeParamedicale,):1.0
+SubClassOf(PriseEnChargePsychomotricite,estRealisePar some Psychomotricien):1.0
+is(PriseEnChargeRespiratoire,Class):1.0
+SubClassOf(PriseEnChargeRespiratoire,PriseEnChargeMedicale):1.0
+is(PriseEnCharge_IDE,Class):1.0
+SubClassOf(PriseEnCharge_IDE,PriseEnChargeParamedicale,):1.0
+SubClassOf(PriseEnCharge_IDE,estRealisePar some Infirmier):1.0
+is(PriseEnCharge_IDEL,Class):1.0
+SubClassOf(PriseEnCharge_IDEL,PriseEnCharge_IDE):1.0
+is(PriseEnchargeDouleur,Class):1.0
+SubClassOf(PriseEnchargeDouleur,PriseEnChargeMedicale):1.0
+is(ProtocoleThérapeutique,Class):1.0
+SubClassOf(ProtocoleThérapeutique,RechercheClinique):1.0
+is(Psychologue,Class):1.0
+is(Psychomotricien,Class):1.0
+is(Psychomotricite,Class):1.0
+SubClassOf(Psychomotricite,PriseEnChargePsychomotricite):1.0
+is(Pulse,Class):1.0
+SubClassOf(Pulse,ProtocoleThérapeutique):1.0
+is(Radiotherapie,Class):1.0
+SubClassOf(Radiotherapie,SoinsSpecifie):1.0
+is(RadiotherapieDesGlandes,Class):1.0
+SubClassOf(RadiotherapieDesGlandes,Radiotherapie):1.0
+is(Readaptation,Class):1.0
+SubClassOf(Readaptation,PriseEnChargeParamedicale):1.0
+is(ReajustementDuTraitement,Class):1.0
+SubClassOf(ReajustementDuTraitement,ModificationDuTraitementMedicamenteux):1.0
+is(Reanimer,Class):1.0
+SubClassOf(Reanimer,SoinsSpecifie):1.0
+is(RechercheClinique,Class):1.0
+SubClassOf(RechercheClinique,Action):1.0
+is(Reeducation,Class):1.0
+SubClassOf(Reeducation,PriseEnChargeParamedicale):1.0
+is(ReeducationFonctionnelle,Class):1.0
+SubClassOf(ReeducationFonctionnelle,Reeducation):1.0
+is(ReeducationRespiratoire,Class):1.0
+SubClassOf(ReeducationRespiratoire,Reeducation):1.0
+is(RendezVous_UARD,Class):1.0
+SubClassOf(RendezVous_UARD,ConsultationPneumologie):1.0
+is(Respistim,Class):1.0
+SubClassOf(Respistim,ProtocoleThérapeutique):1.0
+is(ReunionConcertationPluridisciplinaire,Class):1.0
+SubClassOf(ReunionConcertationPluridisciplinaire,ReunionMedical):1.0
+is(ReunionMedical,Class):1.0
+SubClassOf(ReunionMedical,Action,):1.0
+SubClassOf(ReunionMedical,estRealisePar some AgentMedical):1.0
+is(Sedation,Class):1.0
+SubClassOf(Sedation,SoinsSpecifie,):1.0
+SubClassOf(Sedation,aPourThematique some ThematiqueAggravationMedicale):1.0
+is(SedationProfondeEtContinue,Class):1.0
+SubClassOf(SedationProfondeEtContinue,Sedation):1.0
+is(SoinInfirmier,Class):1.0
+SubClassOf(SoinInfirmier,PriseEnCharge_IDE):1.0
+is(SoinsDentaire,Class):1.0
+SubClassOf(SoinsDentaire,SoinsSpecifie):1.0
+is(SoinsSpecifie,Class):1.0
+SubClassOf(SoinsSpecifie,ActionLierAuSoins):1.0
+is(SondeADemeure,Class):1.0
+SubClassOf(SondeADemeure,SoinsSpecifie):1.0
+is(Sonder,Class):1.0
+SubClassOf(Sonder,SoinsSpecifie):1.0
+is(SuicideAssite,Class):1.0
+SubClassOf(SuicideAssite,Euthanasie):1.0
+is(SuiviKinesitherapique,Class):1.0
+SubClassOf(SuiviKinesitherapique,PriseEnChargeKinesitherapique):1.0
+is(Suivi_Medicalise,Class):1.0
+SubClassOf(Suivi_Medicalise,PriseEnChargeMedicale):1.0
+is(TraitementMedical,Class):1.0
+SubClassOf(TraitementMedical,PriseEnChargeMedicale):1.0
+is(VisiteDeSuivi,Class):1.0
+SubClassOf(VisiteDeSuivi,ActionLierAuSoins):1.0
+is(Accompagner,Class):1.0
+SubClassOf(Accompagner,ActiviteDeGuidage):1.0
+is(Action,Class):1.0
+SubClassOf(Action,Processus,):1.0
+SubClassOf(Action,Action):1.0
+is(ActionD_Evaluer,Class):1.0
+SubClassOf(ActionD_Evaluer,Action):1.0
+is(ActionDeCommuniquer,Class):1.0
+SubClassOf(ActionDeCommuniquer,Action):1.0
+is(ActionDeDemander,Class):1.0
+SubClassOf(ActionDeDemander,Action):1.0
+is(ActionDeFormer,Class):1.0
+SubClassOf(ActionDeFormer,Action):1.0
+is(ActionDeModifier,Class):1.0
+SubClassOf(ActionDeModifier,Action):1.0
+is(ActiviteDeGuidage,Class):1.0
+SubClassOf(ActiviteDeGuidage,Action):1.0
+is(Adapter,Class):1.0
+SubClassOf(Adapter,ActionDeModifier):1.0
+is(Agent,Class):1.0
+is(Aider,Class):1.0
+SubClassOf(Aider,ActiviteDeGuidage):1.0
+is(Ajustement,Class):1.0
+SubClassOf(Ajustement,Ajuster):1.0
+is(Ajuster,Class):1.0
+SubClassOf(Ajuster,ActionDeModifier):1.0
+is(Alerter,Class):1.0
+SubClassOf(Alerter,Action):1.0
+is(Alteration,Class):1.0
+SubClassOf(Alteration,Alterer):1.0
+is(Alterer,Class):1.0
+SubClassOf(Alterer,ActionDeModifier):1.0
+is(Amelioration,Class):1.0
+SubClassOf(Amelioration,Ameliorer):1.0
+is(Ameliorer,Class):1.0
+SubClassOf(Ameliorer,ActionDeModifier):1.0
+is(Amenager,Class):1.0
+SubClassOf(Amenager,ActionDeModifier):1.0
+is(Annuler,Class):1.0
+SubClassOf(Annuler,ActionDeModifier):1.0
+is(Argumenter,Class):1.0
+SubClassOf(Argumenter,ActiviteDeGuidage):1.0
+is(Arret,Class):1.0
+SubClassOf(Arret,Arreter):1.0
+is(ArretDispositif,Class):1.0
+SubClassOf(ArretDispositif,Arreter):1.0
+is(Arreter,Class):1.0
+SubClassOf(Arreter,ActionDeModifier):1.0
+is(Augmenter,Class):1.0
+SubClassOf(Augmenter,ActionDeModifier):1.0
+is(Avertir,Class):1.0
+SubClassOf(Avertir,Alerter):1.0
+is(Changer,Class):1.0
+SubClassOf(Changer,ActionDeModifier):1.0
+is(Chercher,Class):1.0
+SubClassOf(Chercher,ActiviteDeGuidage):1.0
+is(ConduiteATenir,Class):1.0
+SubClassOf(ConduiteATenir,Preconiser):1.0
+is(Conseiller,Class):1.0
+SubClassOf(Conseiller,Preconiser):1.0
+is(Contacter,Class):1.0
+SubClassOf(Contacter,ActionDeCommuniquer):1.0
+is(Degrader,Class):1.0
+SubClassOf(Degrader,Alterer):1.0
+is(DemandeConseil,Class):1.0
+SubClassOf(DemandeConseil,DemanderAvis):1.0
+is(DemandeEvaluationMedicale,Class):1.0
+SubClassOf(DemandeEvaluationMedicale,DemanderEvaluation,):1.0
+SubClassOf(DemandeEvaluationMedicale,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(DemanderAvis,Class):1.0
+SubClassOf(DemanderAvis,ActionDeDemander):1.0
+is(DemanderDePriseEnChargeMedicale,Class):1.0
+SubClassOf(DemanderDePriseEnChargeMedicale,DemandeAdmission_HAD,):1.0
+SubClassOf(DemanderDePriseEnChargeMedicale,ActionDeDemander,):1.0
+SubClassOf(DemanderDePriseEnChargeMedicale,aPourThematique some ThematiqueBesoinEtDemandeMedicale):1.0
+is(DemanderEvaluation,Class):1.0
+SubClassOf(DemanderEvaluation,ActionDeDemander):1.0
+is(DemanderPriseEnCharge,Class):1.0
+SubClassOf(DemanderPriseEnCharge,ActionDeDemander,):1.0
+SubClassOf(DemanderPriseEnCharge,aPourThematique some ThematiqueBesoinEtDemandePecSociale,):1.0
+SubClassOf(DemanderPriseEnCharge,aPourThematique some ThematiqueSociale):1.0
+is(DemanderTransfert,Class):1.0
+SubClassOf(DemanderTransfert,ActionDeDemander):1.0
+is(Diminuer,Class):1.0
+SubClassOf(Diminuer,ActionDeModifier):1.0
+is(Donner,Class):1.0
+SubClassOf(Donner,ActiviteDeGuidage):1.0
+is(Echanger,Class):1.0
+SubClassOf(Echanger,ActionDeCommuniquer):1.0
+is(Ecouter,Class):1.0
+SubClassOf(Ecouter,ActionDeCommuniquer):1.0
+is(EducationTherapeutique,Class):1.0
+SubClassOf(EducationTherapeutique,Eduquer):1.0
+is(Eduquer,Class):1.0
+SubClassOf(Eduquer,ActionDeFormer):1.0
+is(Entretien,Class):1.0
+SubClassOf(Entretien,Rencontrer):1.0
+is(Envoyer,Class):1.0
+SubClassOf(Envoyer,ActionDeCommuniquer):1.0
+is(Evoluer,Class):1.0
+SubClassOf(Evoluer,ActionDeModifier):1.0
+is(Expliquer,Class):1.0
+SubClassOf(Expliquer,Preconiser):1.0
+is(Exprimer,Class):1.0
+SubClassOf(Exprimer,ActionDeCommuniquer):1.0
+is(Faxer,Class):1.0
+SubClassOf(Faxer,Envoyer):1.0
+is(Informer,Class):1.0
+SubClassOf(Informer,ActionDeCommuniquer):1.0
+is(Intervenir,Class):1.0
+SubClassOf(Intervenir,ActiviteDeGuidage):1.0
+is(MettreEnPlace,Class):1.0
+SubClassOf(MettreEnPlace,ActiviteDeGuidage):1.0
+is(MettreEnRelation,Class):1.0
+SubClassOf(MettreEnRelation,ActionDeCommuniquer):1.0
+is(Orienter,Class):1.0
+SubClassOf(Orienter,Preconiser):1.0
+is(Parler,Class):1.0
+SubClassOf(Parler,Echanger):1.0
+is(Patient,Class):1.0
+is(Perdre,Class):1.0
+SubClassOf(Perdre,ActionDeModifier):1.0
+is(Personne,Class):1.0
+is(Positionner,Class):1.0
+SubClassOf(Positionner,ActionDeModifier):1.0
+is(Preconiser,Class):1.0
+SubClassOf(Preconiser,ActiviteDeGuidage):1.0
+is(Preparer,Class):1.0
+SubClassOf(Preparer,ActiviteDeGuidage):1.0
+is(Questionner,Class):1.0
+SubClassOf(Questionner,ActionD_Evaluer):1.0
+is(Relancer,Class):1.0
+SubClassOf(Relancer,Contacter):1.0
+is(Rencontrer,Class):1.0
+SubClassOf(Rencontrer,Action):1.0
+is(RendezVous,Class):1.0
+SubClassOf(RendezVous,Rencontrer):1.0
+is(Renouveller,Class):1.0
+SubClassOf(Renouveller,ActiviteDeGuidage):1.0
+is(Repondre,Class):1.0
+SubClassOf(Repondre,ActionDeCommuniquer):1.0
+is(Retirer,Class):1.0
+SubClassOf(Retirer,ActionDeModifier):1.0
+is(Réunion,Class):1.0
+SubClassOf(Réunion,Rencontrer):1.0
+is(ThematicCommunicationEntrance,Class):1.0
+is(ThematicOutgoingCommunication,Class):1.0
+is(ThematiqueAggravationMedicale,Class):1.0
+is(ThematiqueAideHumaine,Class):1.0
+is(ThematiqueAideTechnique,Class):1.0
+is(ThematiqueBesoinEtDemandeMedicale,Class):1.0
+DisjointWith(ThematiqueBesoinEtDemandeMedicale,ConsultationMultidisciplinaire):1.0
+is(ThematiqueBesoinEtDemandePecSociale,Class):1.0
+is(ThematiqueDeCoordination,Class):1.0
+is(ThematiqueEpuisement,Class):1.0
+is(ThematiqueEvaluationMedicale,Class):1.0
+is(ThematiqueEvaluationParamedicale,Class):1.0
+is(ThematiqueMedicale,Class):1.0
+is(ThematiqueProblemeAccessibilite,Class):1.0
+is(ThematiqueProblemeSocial,Class):1.0
+is(ThematiqueRespiratoire,Class):1.0
+is(ThematiqueSociale,Class):1.0
+is(ThematiqueTraitement,Class):1.0
+is(Transferer,Class):1.0
+SubClassOf(Transferer,ActionDeModifier):1.0
+is(Transmettre,Class):1.0
+SubClassOf(Transmettre,Envoyer):1.0
+is(Acheter,Class):1.0
+SubClassOf(Acheter,AcquerirDuMaterielMedical):1.0
+is(AcquerirDuMaterielMedical,Class):1.0
+SubClassOf(AcquerirDuMaterielMedical,Action,):1.0
+SubClassOf(AcquerirDuMaterielMedical,aPourThematique some ThematiqueAideTechnique):1.0
+is(ActionDEffectuerSaToilette,Class):1.0
+SubClassOf(ActionDEffectuerSaToilette,SeLaver):1.0
+is(ActionDEmployerSonTemps,Class):1.0
+SubClassOf(ActionDEmployerSonTemps,VieCommunautaire_Sociale_Civique):1.0
+is(ActionDeDeglutir,Class):1.0
+SubClassOf(ActionDeDeglutir,Manger):1.0
+is(ActionDeDemanderAideHumaine,Class):1.0
+SubClassOf(ActionDeDemanderAideHumaine,ActionDeDemanderUneAide):1.0
+is(ActionDeDemanderDocumentSocial,Class):1.0
+SubClassOf(ActionDeDemanderDocumentSocial,ActionDeDemander,):1.0
+SubClassOf(ActionDeDemanderDocumentSocial,aPourThematique some ThematiqueBesoinEtDemandePecSociale,):1.0
+SubClassOf(ActionDeDemanderDocumentSocial,aPourThematique some ThematiqueSociale):1.0
+is(ActionDeDemanderEvaluationSociale,Class):1.0
+SubClassOf(ActionDeDemanderEvaluationSociale,DemanderEvaluation,):1.0
+SubClassOf(ActionDeDemanderEvaluationSociale,aPourThematique some ThematiqueBesoinEtDemandePecSociale,):1.0
+SubClassOf(ActionDeDemanderEvaluationSociale,aPourThematique some ThematiqueSociale):1.0
+is(ActionDeDemanderUnEssaiAideTechnique,Class):1.0
+SubClassOf(ActionDeDemanderUnEssaiAideTechnique,ActionDeDemander,):1.0
+SubClassOf(ActionDeDemanderUnEssaiAideTechnique,aPourThematique some ThematiqueAideTechnique):1.0
+is(ActionDeDemanderUneAide,Class):1.0
+SubClassOf(ActionDeDemanderUneAide,DemanderPriseEnCharge,):1.0
+SubClassOf(ActionDeDemanderUneAide,aPourThematique some ThematiqueSociale):1.0
+is(ActionDeDemanderUneAideTechnique,Class):1.0
+SubClassOf(ActionDeDemanderUneAideTechnique,ActionDeDemander,):1.0
+SubClassOf(ActionDeDemanderUneAideTechnique,aPourThematique some ThematiqueAideTechnique):1.0
+is(ActionDeSeDeplacerEnUtilisantDesEquipementsSpeciaux,Class):1.0
+SubClassOf(ActionDeSeDeplacerEnUtilisantDesEquipementsSpeciaux,MarcherEtSeDeplacer):1.0
+is(ActionSociale,Class):1.0
+EquivalentTo(ActionSociale,Action and (aPourThematique some ThematiqueSociale)):1.0
+SubClassOf(ActionSociale,Action):1.0
+is(ActiviteDeMotriciteFine,Class):1.0
+SubClassOf(ActiviteDeMotriciteFine,PorterDeplacerEtManipulerDeObjets):1.0
+is(ActivitePhysique,Class):1.0
+SubClassOf(ActivitePhysique,VieCommunautaire_Sociale_Civique):1.0
+is(AdapterLesTexturesAlimentaires,Class):1.0
+SubClassOf(AdapterLesTexturesAlimentaires,Adapter):1.0
+is(Adherer,Class):1.0
+SubClassOf(Adherer,Action,):1.0
+SubClassOf(Adherer,estRealisePar some Agent):1.0
+is(AdhesionReseau,Class):1.0
+SubClassOf(AdhesionReseau,Adherer,):1.0
+SubClassOf(AdhesionReseau,aPourThematique some ThematiqueDeCoordination):1.0
+is(AggravationDifficultes,Class):1.0
+SubClassOf(AggravationDifficultes,AggravationSociale):1.0
+is(AggravationDomicile,Class):1.0
+SubClassOf(AggravationDomicile,AggravationSociale):1.0
+is(AggravationSituation,Class):1.0
+SubClassOf(AggravationSituation,AggravationSociale):1.0
+is(AggravationSociale,Class):1.0
+SubClassOf(AggravationSociale,Alterer,):1.0
+SubClassOf(AggravationSociale,aPourThematique some ThematiqueProblemeSocial,):1.0
+SubClassOf(AggravationSociale,aPourThematique some ThematiqueSociale):1.0
+is(AideADomicile,Class):1.0
+SubClassOf(AideADomicile,AideMedicoSociale):1.0
+is(AideAuRepas,Class):1.0
+SubClassOf(AideAuRepas,AideGesteVieQuotidienne):1.0
+is(AideAuxTransferts,Class):1.0
+SubClassOf(AideAuxTransferts,AideGesteVieQuotidienne):1.0
+is(AideFamiliale,Class):1.0
+SubClassOf(AideFamiliale,AideHumaine):1.0
+is(AideGesteVieQuotidienne,Class):1.0
+SubClassOf(AideGesteVieQuotidienne,AideADomicile):1.0
+is(AideHumaine,Class):1.0
+SubClassOf(AideHumaine,AideMedicoSociale):1.0
+is(AideMedicoSociale,Class):1.0
+SubClassOf(AideMedicoSociale,Action,):1.0
+SubClassOf(AideMedicoSociale,aPourThematique some ThematiqueAideHumaine,):1.0
+SubClassOf(AideMedicoSociale,aPourThematique some ThematiqueSociale):1.0
+is(AideProfessionnelle,Class):1.0
+SubClassOf(AideProfessionnelle,AideHumaine):1.0
+is(AllerAuxToilettes,Class):1.0
+SubClassOf(AllerAuxToilettes,EntretienPersonnel):1.0
+is(AmenagerEnvironnement,Class):1.0
+SubClassOf(AmenagerEnvironnement,Amenager,):1.0
+SubClassOf(AmenagerEnvironnement,aPourThematique some ThematiqueProblemeAccessibilite,):1.0
+SubClassOf(AmenagerEnvironnement,aPourThematique some ThematiqueSociale):1.0
+is(AmenagerLogement,Class):1.0
+SubClassOf(AmenagerLogement,AmenagerEnvironnement):1.0
+is(AmenagerPosteTravail,Class):1.0
+SubClassOf(AmenagerPosteTravail,AmenagerEnvironnement):1.0
+is(AmenagerVehicule,Class):1.0
+SubClassOf(AmenagerVehicule,AmenagerEnvironnement):1.0
+is(AssistanceAHygiene,Class):1.0
+SubClassOf(AssistanceAHygiene,AideGesteVieQuotidienne):1.0
+is(Boire,Class):1.0
+SubClassOf(Boire,EntretienPersonnel):1.0
+is(ChangerEtMaintenirLaPositionDuCorps,Class):1.0
+SubClassOf(ChangerEtMaintenirLaPositionDuCorps,Mobilite):1.0
+is(CommunicationEcrite,Class):1.0
+SubClassOf(CommunicationEcrite,Communiquer_RecevoirDesMessages):1.0
+is(CommunicationOrale,Class):1.0
+SubClassOf(CommunicationOrale,Communiquer_ProduireDesMessages):1.0
+is(Communiquer_ProduireDesMessages,Class):1.0
+SubClassOf(Communiquer_ProduireDesMessages,HabilitéA_Communiquer):1.0
+is(Communiquer_RecevoirDesMessages,Class):1.0
+SubClassOf(Communiquer_RecevoirDesMessages,HabilitéA_Communiquer):1.0
+is(ConduireUnVehicule,Class):1.0
+SubClassOf(ConduireUnVehicule,SeDeplacerEnUtilisantLesTransports):1.0
+is(Conversation,Class):1.0
+SubClassOf(Conversation,ConversationEtUtilisationAppareilsDeCommunication):1.0
+is(ConversationEtUtilisationAppareilsDeCommunication,Class):1.0
+SubClassOf(ConversationEtUtilisationAppareilsDeCommunication,HabilitéA_Communiquer):1.0
+is(DemandeAffectionDeLongueDuree,Class):1.0
+SubClassOf(DemandeAffectionDeLongueDuree,DemanderPriseEnCharge):1.0
+is(DemandeAllocation,Class):1.0
+SubClassOf(DemandeAllocation,DemandeFinancement):1.0
+is(DemandeCarteInvalidité,Class):1.0
+SubClassOf(DemandeCarteInvalidité,DemandeDeCarteSociale):1.0
+is(DemandeCarteStationnement,Class):1.0
+SubClassOf(DemandeCarteStationnement,DemandeDeCarteSociale):1.0
+is(DemandeCoussin,Class):1.0
+SubClassOf(DemandeCoussin,ActionDeDemanderUneAideTechnique):1.0
+is(DemandeDeCarteSociale,Class):1.0
+SubClassOf(DemandeDeCarteSociale,ActionDeDemanderDocumentSocial):1.0
+is(DemandeDeDevis,Class):1.0
+SubClassOf(DemandeDeDevis,ActionDeDemanderDocumentSocial):1.0
+is(DemandeDeFauteuil,Class):1.0
+SubClassOf(DemandeDeFauteuil,ActionDeDemanderUneAideTechnique):1.0
+is(DemandeDeLit,Class):1.0
+SubClassOf(DemandeDeLit,ActionDeDemanderUneAideTechnique):1.0
+is(DemandeDeLogement,Class):1.0
+SubClassOf(DemandeDeLogement,ActionDeDemander,):1.0
+SubClassOf(DemandeDeLogement,aPourThematique some ThematiqueBesoinEtDemandePecSociale,):1.0
+SubClassOf(DemandeDeLogement,aPourThematique some ThematiqueSociale):1.0
+is(DemandeDeMatelas,Class):1.0
+SubClassOf(DemandeDeMatelas,ActionDeDemanderUneAideTechnique):1.0
+is(DemandeDeSonnette,Class):1.0
+SubClassOf(DemandeDeSonnette,ActionDeDemanderUneAideTechnique):1.0
+is(DemandeDeSyntheseVocale,Class):1.0
+SubClassOf(DemandeDeSyntheseVocale,DemandeOutilCommunication):1.0
+is(DemandeEntentePrealable,Class):1.0
+SubClassOf(DemandeEntentePrealable,ActionDeDemanderDocumentSocial):1.0
+is(DemandeFauteuilRoulantElectrique,Class):1.0
+SubClassOf(DemandeFauteuilRoulantElectrique,DemandeDeFauteuil):1.0
+is(DemandeFauteuilRoulantManuel,Class):1.0
+SubClassOf(DemandeFauteuilRoulantManuel,DemandeDeFauteuil):1.0
+is(DemandeFinancement,Class):1.0
+SubClassOf(DemandeFinancement,DemanderPriseEnCharge,):1.0
+SubClassOf(DemandeFinancement,aPourThematique some ThematiqueSociale):1.0
+is(DemandeOrientationStructure,Class):1.0
+SubClassOf(DemandeOrientationStructure,DemanderPriseEnCharge,):1.0
+SubClassOf(DemandeOrientationStructure,aPourThematique some ThematiqueSociale):1.0
+is(DemandeOutilCommunication,Class):1.0
+SubClassOf(DemandeOutilCommunication,ActionDeDemanderUneAideTechnique):1.0
+is(DemandeProtectionSociale,Class):1.0
+SubClassOf(DemandeProtectionSociale,DemanderPriseEnCharge,):1.0
+SubClassOf(DemandeProtectionSociale,aPourThematique some ThematiqueProblemeSocial,):1.0
+SubClassOf(DemandeProtectionSociale,aPourThematique some ThematiqueSociale):1.0
+is(DemandeSauvegardeJustice,Class):1.0
+SubClassOf(DemandeSauvegardeJustice,DemandeProtectionSociale):1.0
+is(DemandeVisa,Class):1.0
+SubClassOf(DemandeVisa,ActionDeDemanderDocumentSocial):1.0
+is(DemandeVisiteADomicile,Class):1.0
+SubClassOf(DemandeVisiteADomicile,ActionDeDemanderEvaluationSociale):1.0
+is(Demande_HLM,Class):1.0
+SubClassOf(Demande_HLM,DemandeDeLogement):1.0
+is(Demande_RQTH,Class):1.0
+SubClassOf(Demande_RQTH,ActionDeDemander,):1.0
+SubClassOf(Demande_RQTH,aPourThematique some ThematiqueBesoinEtDemandePecSociale,):1.0
+SubClassOf(Demande_RQTH,aPourThematique some ThematiqueSociale):1.0
+is(DemarcheAdministrative,Class):1.0
+SubClassOf(DemarcheAdministrative,DemarcheSociale):1.0
+is(DemarcheSociale,Class):1.0
+SubClassOf(DemarcheSociale,Action,):1.0
+SubClassOf(DemarcheSociale,aPourThematique some ThematiqueSociale):1.0
+is(Deshabiller,Class):1.0
+SubClassOf(Deshabiller,SHabiller):1.0
+is(Discussion,Class):1.0
+SubClassOf(Discussion,ConversationEtUtilisationAppareilsDeCommunication):1.0
+is(Dormir,Class):1.0
+SubClassOf(Dormir,HabitudesDeVie):1.0
+is(DossierDemandeCarte,Class):1.0
+SubClassOf(DossierDemandeCarte,DemandeDeCarteSociale):1.0
+is(DossierDemandeLogement,Class):1.0
+SubClassOf(DossierDemandeLogement,DemandeDeLogement):1.0
+is(EnrichirAlimentation,Class):1.0
+SubClassOf(EnrichirAlimentation,Ameliorer):1.0
+is(EntretienPersonnel,Class):1.0
+SubClassOf(EntretienPersonnel,HabitudesDeVie):1.0
+is(Essayer,Class):1.0
+SubClassOf(Essayer,AcquerirDuMaterielMedical):1.0
+is(EvaluationSociale,Class):1.0
+SubClassOf(EvaluationSociale,ActionD_Evaluer,):1.0
+SubClassOf(EvaluationSociale,aPourThematique some ThematiqueBesoinEtDemandePecSociale,):1.0
+SubClassOf(EvaluationSociale,aPourThematique some ThematiqueSociale,):1.0
+SubClassOf(EvaluationSociale,estRealisePar some ProfessionnelSocial):1.0
+is(Evaluation_APA,Class):1.0
+SubClassOf(Evaluation_APA,EvaluationSociale):1.0
+is(Evaluation_MDPH,Class):1.0
+SubClassOf(Evaluation_MDPH,EvaluationSociale):1.0
+is(FaireLeMenage,Class):1.0
+SubClassOf(FaireLeMenage,TacheMenagere):1.0
+is(GrandsDomainesDeLaVie,Class):1.0
+SubClassOf(GrandsDomainesDeLaVie,HabitudesDeVie):1.0
+is(HabilitéA_Communiquer,Class):1.0
+SubClassOf(HabilitéA_Communiquer,HabitudesDeVie):1.0
+is(HabitudesDeVie,Class):1.0
+SubClassOf(HabitudesDeVie,Action):1.0
+is(Livraison,Class):1.0
+SubClassOf(Livraison,AcquerirDuMaterielMedical):1.0
+is(Louer,Class):1.0
+SubClassOf(Louer,AcquerirDuMaterielMedical):1.0
+is(Manger,Class):1.0
+SubClassOf(Manger,EntretienPersonnel):1.0
+is(Marcher,Class):1.0
+SubClassOf(Marcher,MarcherEtSeDeplacer):1.0
+is(MarcherEtSeDeplacer,Class):1.0
+SubClassOf(MarcherEtSeDeplacer,Mobilite):1.0
+is(Mobilite,Class):1.0
+SubClassOf(Mobilite,HabitudesDeVie):1.0
+is(PlacementInstitutionnel,Class):1.0
+SubClassOf(PlacementInstitutionnel,Action,):1.0
+SubClassOf(PlacementInstitutionnel,aPourThematique some ThematiqueSociale):1.0
+is(PlacementLongSejour,Class):1.0
+SubClassOf(PlacementLongSejour,PlacementInstitutionnel):1.0
+is(PlacementMaisonRetraite,Class):1.0
+SubClassOf(PlacementMaisonRetraite,PlacementInstitutionnel):1.0
+is(Placement_EHPAD,Class):1.0
+SubClassOf(Placement_EHPAD,PlacementInstitutionnel):1.0
+is(Placement_MAS,Class):1.0
+SubClassOf(Placement_MAS,PlacementInstitutionnel):1.0
+is(Placement_USP,Class):1.0
+SubClassOf(Placement_USP,PlacementInstitutionnel):1.0
+is(PortageDesRepas,Class):1.0
+SubClassOf(PortageDesRepas,AideGesteVieQuotidienne):1.0
+is(PorterDeplacerEtManipulerDeObjets,Class):1.0
+SubClassOf(PorterDeplacerEtManipulerDeObjets,Mobilite):1.0
+is(PositionAllongee,Class):1.0
+SubClassOf(PositionAllongee,ChangerEtMaintenirLaPositionDuCorps):1.0
+is(PositionAssise,Class):1.0
+SubClassOf(PositionAssise,ChangerEtMaintenirLaPositionDuCorps):1.0
+is(PreparerLesRepas,Class):1.0
+SubClassOf(PreparerLesRepas,TacheMenagere):1.0
+is(Preter,Class):1.0
+SubClassOf(Preter,AcquerirDuMaterielMedical):1.0
+is(ProfessionnelSocial,Class):1.0
+is(SHabiller,Class):1.0
+SubClassOf(SHabiller,EntretienPersonnel):1.0
+is(S_Asseoir,Class):1.0
+SubClassOf(S_Asseoir,ChangerEtMaintenirLaPositionDuCorps):1.0
+is(SeCoucher,Class):1.0
+SubClassOf(SeCoucher,ChangerEtMaintenirLaPositionDuCorps):1.0
+is(SeDeplacerEnUtilisantLesTransports,Class):1.0
+SubClassOf(SeDeplacerEnUtilisantLesTransports,Mobilite):1.0
+is(SeLaver,Class):1.0
+SubClassOf(SeLaver,EntretienPersonnel):1.0
+is(SeLever,Class):1.0
+SubClassOf(SeLever,ChangerEtMaintenirLaPositionDuCorps):1.0
+is(SoinsCorporels,Class):1.0
+SubClassOf(SoinsCorporels,SeLaver):1.0
+is(Sommeil,Class):1.0
+SubClassOf(Sommeil,Dormir):1.0
+is(Sport,Class):1.0
+SubClassOf(Sport,ActivitePhysique):1.0
+is(TacheMenagere,Class):1.0
+SubClassOf(TacheMenagere,VieDomestique):1.0
+is(Teletravail,Class):1.0
+SubClassOf(Teletravail,TravailEtEmploi):1.0
+is(Transfert,Class):1.0
+SubClassOf(Transfert,ChangerEtMaintenirLaPositionDuCorps):1.0
+is(Transport,Class):1.0
+SubClassOf(Transport,Transporter):1.0
+is(Transporter,Class):1.0
+SubClassOf(Transporter,ActionDeModifier):1.0
+is(TravailEtEmploi,Class):1.0
+SubClassOf(TravailEtEmploi,GrandsDomainesDeLaVie):1.0
+is(Travailler,Class):1.0
+SubClassOf(Travailler,TravailEtEmploi):1.0
+is(UtiliserDesAppareilsEtDesTechniquesDeCommunication,Class):1.0
+SubClassOf(UtiliserDesAppareilsEtDesTechniquesDeCommunication,ConversationEtUtilisationAppareilsDeCommunication):1.0
+is(VieCommunautaire_Sociale_Civique,Class):1.0
+SubClassOf(VieCommunautaire_Sociale_Civique,HabitudesDeVie):1.0
+is(VieDomestique,Class):1.0
+SubClassOf(VieDomestique,HabitudesDeVie):1.0
+is(VisiteADomicile,Class):1.0
+SubClassOf(VisiteADomicile,EvaluationSociale):1.0
+is(Voyager,Class):1.0
+SubClassOf(Voyager,ActionDEmployerSonTemps):1.0
+is(www.w3.org/2002/07/#,Class):1.0

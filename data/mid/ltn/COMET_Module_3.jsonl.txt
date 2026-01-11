@@ -1,0 +1,219 @@
+is(area,ObjectProperty):1.0
+is(collected_from,ObjectProperty):1.0
+is(depth,ObjectProperty):1.0
+is(follows_procedure,ObjectProperty):1.0
+is(material_collected,ObjectProperty):1.0
+is(mining_method,ObjectProperty):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification,):1.0
+SubClassOf(<https,PermissibleValue):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(<https,Class):1.0
+SubClassOf(<https,HealthcareEncounterClassification):1.0
+is(OBI_0002492,Class):1.0
+SubClassOf(OBI_0002492,CaseOrControlEnum,):1.0
+SubClassOf(OBI_0002492,PermissibleValue):1.0
+is(OBI_0002493,Class):1.0
+SubClassOf(OBI_0002493,CaseOrControlEnum,):1.0
+SubClassOf(OBI_0002493,PermissibleValue):1.0
+is(PATO_0001421,Class):1.0
+SubClassOf(PATO_0001421,PersonStatus,):1.0
+SubClassOf(PATO_0001421,PermissibleValue):1.0
+is(PATO_0001422,Class):1.0
+SubClassOf(PATO_0001422,PersonStatus,):1.0
+SubClassOf(PATO_0001422,PermissibleValue):1.0
+is(CaseOrControlEnum,Class):1.0
+EquivalentTo(CaseOrControlEnum,OBI_0002492 or OBI_0002493):1.0
+SubClassOf(CaseOrControlEnum,EnumDefinition):1.0
+is(CreationMetadata,Class):1.0
+is(Mixin,ClassDefinition#):1.0
+is(DataGenerationFromSample,Class):1.0
+SubClassOf(DataGenerationFromSample,InvestigativeProcess):1.0
+is(EngineeringSpecification,Class):1.0
+SubClassOf(EngineeringSpecification,Procedure):1.0
+is(ExtractiveIndustryFacility,Class):1.0
+is(ExtractiveIndustryFacilityType,Class):1.0
+is(MINING_FACILITY or ExtractiveIndustryFacilityType#,ExtractiveIndustryFacilityType#):1.0
+SubClassOf(MINING_FACILITY or ExtractiveIndustryFacilityType#,EnumDefinition):1.0
+is(ExtractiveIndustryProductType,Class):1.0
+is(COAL or ExtractiveIndustryProductType#,ExtractiveIndustryProductType#):1.0
+SubClassOf(COAL or ExtractiveIndustryProductType#,EnumDefinition):1.0
+is(FinanicialOrganizationEnum,Class):1.0
+SubClassOf(FinanicialOrganizationEnum,EnumDefinition):1.0
+is(FoodPreparation,Class):1.0
+SubClassOf(FoodPreparation,PlannedProcess,):1.0
+SubClassOf(FoodPreparation,follows_procedure only FoodRecipe,):1.0
+is(Thing,,follows_procedure min 0 www.w3.org/2002/07/#):1.0
+is(Thing,follows_procedure max 1 www.w3.org/2002/07/#):1.0
+is(FoodRecipe,Class):1.0
+is(FossilFuelType,Class):1.0
+is(COAL or FossilFuelType#,FossilFuelType#):1.0
+SubClassOf(COAL or FossilFuelType#,EnumDefinition):1.0
+is(HealthcareEncounterClassification,Class):1.0
+is(//HealthcareEncounterClassification#Ambulance+Visit or <https,<https):1.0
+SubClassOf(//HealthcareEncounterClassification#Ambulance+Visit or <https,EnumDefinition):1.0
+is(HumanLanguageCodeEnum,Class):1.0
+SubClassOf(HumanLanguageCodeEnum,EnumDefinition):1.0
+is(InvestigativeProcess,Class):1.0
+is(InvestigativeProtocolEnum,Class):1.0
+SubClassOf(InvestigativeProtocolEnum,EnumDefinition):1.0
+is(LandformEnum,Class):1.0
+SubClassOf(LandformEnum,EnumDefinition):1.0
+is(MaterialCollection,Class):1.0
+SubClassOf(MaterialCollection,PlannedProcess):1.0
+is(MiningFacility,Class):1.0
+SubClassOf(MiningFacility,ExtractiveIndustryFacility,):1.0
+SubClassOf(MiningFacility,area only SimpleQuantity,):1.0
+SubClassOf(MiningFacility,depth only SimpleQuantity,):1.0
+SubClassOf(MiningFacility,mining_method only MiningMethod,):1.0
+is(Thing,,area min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,depth min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,mining_method min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,area max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,depth max 1 www.w3.org/2002/07/#):1.0
+is(Thing,mining_method max 1 www.w3.org/2002/07/#):1.0
+is(MiningMethod,Class):1.0
+is(IN_SITU or MiningMethod#,MiningMethod#):1.0
+SubClassOf(IN_SITU or MiningMethod#,EnumDefinition):1.0
+is(OrganismTaxonEnum,Class):1.0
+SubClassOf(OrganismTaxonEnum,EnumDefinition):1.0
+is(OrganizationPersonnelRelationshipEnum,Class):1.0
+SubClassOf(OrganizationPersonnelRelationshipEnum,EnumDefinition):1.0
+is(OutcomeType,Class):1.0
+is(FN or OutcomeType#,OutcomeType#):1.0
+SubClassOf(FN or OutcomeType#,EnumDefinition):1.0
+is(PersonStatus,Class):1.0
+is(UNKNOWN,PATO_0001421 or PATO_0001422 or PersonStatus#):1.0
+SubClassOf(UNKNOWN,EnumDefinition):1.0
+is(PhysicalEntity,Class):1.0
+is(PlannedProcess,Class):1.0
+is(Procedure,Class):1.0
+is(RelativeTimeEnum,Class):1.0
+is(AFTER or RelativeTimeEnum#,RelativeTimeEnum#):1.0
+SubClassOf(AFTER or RelativeTimeEnum#,EnumDefinition):1.0
+is(SampleCollectionProcess,Class):1.0
+SubClassOf(SampleCollectionProcess,InvestigativeProcess,):1.0
+SubClassOf(SampleCollectionProcess,collected_from only PhysicalEntity,):1.0
+SubClassOf(SampleCollectionProcess,material_collected only SampleMaterial,):1.0
+is(Thing,,collected_from min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,material_collected min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,collected_from max 1 www.w3.org/2002/07/#):1.0
+is(Thing,material_collected max 1 www.w3.org/2002/07/#):1.0
+is(SampleMaterial,Class):1.0
+is(SampleProcessingEnum,Class):1.0
+SubClassOf(SampleProcessingEnum,EnumDefinition):1.0
+is(SimpleQuantity,Class):1.0
+is(StudyDesignEnum,Class):1.0
+SubClassOf(StudyDesignEnum,EnumDefinition):1.0
+is(WellType,Class):1.0
+is(GAS or WellType#,WellType#):1.0
+SubClassOf(GAS or WellType#,EnumDefinition):1.0
+is(ExtractiveIndustryFacilityType#,Class):1.0
+SubClassOf(ExtractiveIndustryFacilityType#,ExtractiveIndustryFacilityType,):1.0
+SubClassOf(ExtractiveIndustryFacilityType#,PermissibleValue):1.0
+is(ExtractiveIndustryFacilityType#,Class):1.0
+SubClassOf(ExtractiveIndustryFacilityType#,ExtractiveIndustryFacilityType,):1.0
+SubClassOf(ExtractiveIndustryFacilityType#,PermissibleValue):1.0
+is(ExtractiveIndustryFacilityType#,Class):1.0
+SubClassOf(ExtractiveIndustryFacilityType#,ExtractiveIndustryFacilityType,):1.0
+SubClassOf(ExtractiveIndustryFacilityType#,PermissibleValue):1.0
+is(ExtractiveIndustryProductType#,Class):1.0
+SubClassOf(ExtractiveIndustryProductType#,ExtractiveIndustryProductType):1.0
+is(ExtractiveIndustryProductType#,Class):1.0
+SubClassOf(ExtractiveIndustryProductType#,ExtractiveIndustryProductType):1.0
+is(ExtractiveIndustryProductType#,Class):1.0
+SubClassOf(ExtractiveIndustryProductType#,ExtractiveIndustryProductType,):1.0
+SubClassOf(ExtractiveIndustryProductType#,PermissibleValue):1.0
+is(ExtractiveIndustryProductType#,Class):1.0
+SubClassOf(ExtractiveIndustryProductType#,ExtractiveIndustryProductType,):1.0
+SubClassOf(ExtractiveIndustryProductType#,PermissibleValue):1.0
+is(ExtractiveIndustryProductType#,Class):1.0
+SubClassOf(ExtractiveIndustryProductType#,ExtractiveIndustryProductType,):1.0
+SubClassOf(ExtractiveIndustryProductType#,PermissibleValue):1.0
+is(ExtractiveIndustryProductType#,Class):1.0
+SubClassOf(ExtractiveIndustryProductType#,ExtractiveIndustryProductType):1.0
+is(ExtractiveIndustryProductType#,Class):1.0
+SubClassOf(ExtractiveIndustryProductType#,ExtractiveIndustryProductType,):1.0
+SubClassOf(ExtractiveIndustryProductType#,PermissibleValue):1.0
+is(ExtractiveIndustryProductType#,Class):1.0
+SubClassOf(ExtractiveIndustryProductType#,ExtractiveIndustryProductType,):1.0
+SubClassOf(ExtractiveIndustryProductType#,PermissibleValue):1.0
+is(FossilFuelType#,Class):1.0
+SubClassOf(FossilFuelType#,FossilFuelType,):1.0
+SubClassOf(FossilFuelType#,PermissibleValue):1.0
+is(FossilFuelType#,Class):1.0
+SubClassOf(FossilFuelType#,FossilFuelType,):1.0
+SubClassOf(FossilFuelType#,PermissibleValue):1.0
+is(FossilFuelType#,Class):1.0
+SubClassOf(FossilFuelType#,FossilFuelType,):1.0
+SubClassOf(FossilFuelType#,PermissibleValue):1.0
+is(MiningMethod#,Class):1.0
+SubClassOf(MiningMethod#,MiningMethod,):1.0
+SubClassOf(MiningMethod#,PermissibleValue):1.0
+is(MiningMethod#,Class):1.0
+SubClassOf(MiningMethod#,MiningMethod,):1.0
+SubClassOf(MiningMethod#,PermissibleValue):1.0
+is(MiningMethod#,Class):1.0
+SubClassOf(MiningMethod#,MiningMethod,):1.0
+SubClassOf(MiningMethod#,PermissibleValue):1.0
+is(MiningMethod#,Class):1.0
+SubClassOf(MiningMethod#,MiningMethod,):1.0
+SubClassOf(MiningMethod#,PermissibleValue):1.0
+is(OutcomeType#,Class):1.0
+SubClassOf(OutcomeType#,OutcomeType,):1.0
+SubClassOf(OutcomeType#,PermissibleValue):1.0
+is(OutcomeType#,Class):1.0
+SubClassOf(OutcomeType#,OutcomeType,):1.0
+SubClassOf(OutcomeType#,PermissibleValue):1.0
+is(OutcomeType#,Class):1.0
+SubClassOf(OutcomeType#,OutcomeType,):1.0
+SubClassOf(OutcomeType#,PermissibleValue):1.0
+is(OutcomeType#,Class):1.0
+SubClassOf(OutcomeType#,OutcomeType,):1.0
+SubClassOf(OutcomeType#,PermissibleValue):1.0
+is(PersonStatus#,Class):1.0
+SubClassOf(PersonStatus#,PersonStatus,):1.0
+SubClassOf(PersonStatus#,PermissibleValue):1.0
+is(RelativeTimeEnum#,Class):1.0
+SubClassOf(RelativeTimeEnum#,RelativeTimeEnum,):1.0
+SubClassOf(RelativeTimeEnum#,PermissibleValue):1.0
+is(RelativeTimeEnum#,Class):1.0
+SubClassOf(RelativeTimeEnum#,RelativeTimeEnum,):1.0
+SubClassOf(RelativeTimeEnum#,PermissibleValue):1.0
+is(RelativeTimeEnum#,Class):1.0
+SubClassOf(RelativeTimeEnum#,RelativeTimeEnum,):1.0
+SubClassOf(RelativeTimeEnum#,PermissibleValue):1.0
+is(WellType#,Class):1.0
+SubClassOf(WellType#,WellType,):1.0
+SubClassOf(WellType#,PermissibleValue):1.0
+is(WellType#,Class):1.0
+SubClassOf(WellType#,WellType,):1.0
+SubClassOf(WellType#,PermissibleValue):1.0
+is(WellType#,Class):1.0
+SubClassOf(WellType#,WellType,):1.0
+SubClassOf(WellType#,PermissibleValue):1.0
+is(WellType#,Class):1.0
+SubClassOf(WellType#,WellType,):1.0
+SubClassOf(WellType#,PermissibleValue):1.0
+is(EnumDefinition,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(PermissibleValue,Class):1.0
+is(ClassDefinition#,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0

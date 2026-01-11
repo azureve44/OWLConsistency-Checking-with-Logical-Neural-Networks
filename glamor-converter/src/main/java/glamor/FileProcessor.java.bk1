@@ -1,0 +1,98 @@
+package glamor;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import glamor.model.*;
+import java.io.*;
+import java.nio.file.*;
+
+public class FileProcessor implements Runnable {
+
+    private final Path inputFile;
+    private final Path outputDir;
+    private final ObjectMapper mapper = new ObjectMapper();
+
+    private final ModelConverter[] converters = new ModelConverter[] {
+            new LINNConverter(),
+            new NLMConverter(),
+            new LTNConverter(),
+            new ModernBERTConverter(),
+            new HermitConverter()
+    };
+
+    private final String[] converterNames = {
+            "linn",
+            "nlm",
+            "ltn",
+            "modernbert",
+            "hermit"
+    };
+
+    public FileProcessor(Path inputFile, Path outputDir) {
+        this.inputFile = inputFile;
+        this.outputDir = outputDir;
+    }
+
+    @Override
+    public void run() {
+        try {
+            // find total lines 
+            long totalLines;
+            try (var s = Files.lines(inputFile)) {
+                totalLines = s.count();
+            }
+
+            ProgressBar bar = new ProgressBar(totalLines);
+
+  	    // alle writer
+            BufferedWriter[] writers = new BufferedWriter[converters.length];
+            for (int i = 0; i < converters.length; i++) {
+                Path out = outputDir.resolve(
+                        converterNames[i] + "/" + inputFile.getFileName().toString() + ".txt"
+                );
+                Files.createDirectories(out.getParent());
+                writers[i] = Files.newBufferedWriter(out);
+            }
+
+            // JSONL lesen
+            try (BufferedReader reader = Files.newBufferedReader(inputFile)) {
+                String line;
+                long count = 0;
+
+                while ((line = reader.readLine()) != null) {
+
+                    // JSON ARRAY PARSING 
+                    String[] arr = mapper.readValue(line, String[].class);
+
+                    if (arr.length != 3) {
+                        throw new RuntimeException("Invalid triple format: " + line);
+                    }
+
+                    TripleObj triple = new TripleObj(
+                            arr[0].trim(),
+                            arr[1].trim(),
+                            arr[2].trim()
+                    );
+
+                    // convert for all models
+                    for (int i = 0; i < converters.length; i++) {
+                        String out = converters[i].convert(triple);
+                        writers[i].write(out);
+                        writers[i].write("\n");
+                    }
+
+                    bar.update(++count);
+                }
+            }
+
+            for (BufferedWriter w : writers) {
+                w.close();
+            }
+
+            System.out.println("\n✔ Finished: " + inputFile.getFileName());
+
+        } catch (Exception e) {
+            System.err.println("Error in file " + inputFile + ": " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}

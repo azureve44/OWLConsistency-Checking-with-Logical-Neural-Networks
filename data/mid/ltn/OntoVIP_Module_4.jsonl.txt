@@ -1,0 +1,209 @@
+is(is-a-quality-of,ObjectProperty):1.0
+is(is-present-at,ObjectProperty):1.0
+is(has-for-birth-date,ObjectProperty):1.0
+Domain(has-for-birth-date,human):1.0
+Range(has-for-birth-date,birth-date):1.0
+is(has-for-first-name,ObjectProperty):1.0
+Domain(has-for-first-name,human):1.0
+Range(has-for-first-name,first-name):1.0
+is(has-for-full-name,ObjectProperty):1.0
+Domain(has-for-full-name,human):1.0
+Range(has-for-full-name,full-name):1.0
+is(has-for-language-hemispheric-dominance,ObjectProperty):1.0
+Domain(has-for-language-hemispheric-dominance,human):1.0
+Range(has-for-language-hemispheric-dominance,language-hemispheric-dominance):1.0
+is(has-for-last-name,ObjectProperty):1.0
+Domain(has-for-last-name,human):1.0
+Range(has-for-last-name,last-name):1.0
+is(has-for-manual-hemispheric-dominance,ObjectProperty):1.0
+Domain(has-for-manual-hemispheric-dominance,human):1.0
+Range(has-for-manual-hemispheric-dominance,manual-hemispheric-dominance):1.0
+is(has-for-sex,ObjectProperty):1.0
+Domain(has-for-sex,human):1.0
+Range(has-for-sex,sex):1.0
+is(has-for-magnitude,ObjectProperty):1.0
+Domain(has-for-magnitude,scalar-quale):1.0
+Range(has-for-magnitude,number):1.0
+is(has-for-name,ObjectProperty):1.0
+is(has-for-unit,ObjectProperty):1.0
+Domain(has-for-unit,scalar-quale):1.0
+Range(has-for-unit,unit-of-measure):1.0
+is(EGEE-grid,Class):1.0
+SubClassOf(EGEE-grid,glite-grid):1.0
+is(computing-grid,Class):1.0
+is(computing-grid-middleware,Class):1.0
+is(directory,Class):1.0
+SubClassOf(directory,special-file):1.0
+is(glite,Class):1.0
+SubClassOf(glite,computing-grid-middleware,):1.0
+SubClassOf(glite,storage-grid-middleware):1.0
+is(glite-grid,Class):1.0
+SubClassOf(glite-grid,computing-grid,):1.0
+SubClassOf(glite-grid,storage-grid):1.0
+is(special-file,Class):1.0
+is(storage-grid,Class):1.0
+is(storage-grid-middleware,Class):1.0
+is(abstract,Class):1.0
+is(abstract-quality,Class):1.0
+SubClassOf(abstract-quality,quality):1.0
+is(endurant,Class):1.0
+is(particular,Class):1.0
+is(perdurant,Class):1.0
+is(physical-quality,Class):1.0
+SubClassOf(physical-quality,quality):1.0
+is(quale,Class):1.0
+is(quality,Class):1.0
+SubClassOf(quality,particular,):1.0
+SubClassOf(quality,is-present-at min 1 time-interval,):1.0
+SubClassOf(quality,is-a-quality-of exactly 1 particular):1.0
+is(temporal-quality,Class):1.0
+SubClassOf(temporal-quality,quality):1.0
+is(time-interval,Class):1.0
+is(animal,Class):1.0
+is(birth-date,Class):1.0
+SubClassOf(birth-date,date):1.0
+is(first-name,Class):1.0
+is(full-name,Class):1.0
+is(human,Class):1.0
+SubClassOf(human,animal,):1.0
+SubClassOf(human,has-for-first-name some first-name,):1.0
+SubClassOf(human,has-for-language-hemispheric-dominance some language-hemispheric-dominance,):1.0
+SubClassOf(human,has-for-manual-hemispheric-dominance some manual-hemispheric-dominance,):1.0
+SubClassOf(human,has-for-sex some sex,):1.0
+SubClassOf(human,has-for-birth-date exactly 1 birth-date,):1.0
+SubClassOf(human,has-for-full-name exactly 1 full-name,):1.0
+SubClassOf(human,has-for-last-name exactly 1 last-name):1.0
+is(language-hemispheric-dominance,Class):1.0
+is(last-name,Class):1.0
+is(manual-hemispheric-dominance,Class):1.0
+is(sex,Class):1.0
+is(birth-date,Class):1.0
+is(cardinal,Class):1.0
+is(concentration,Class):1.0
+is(date,Class):1.0
+is(number,Class):1.0
+is(publisher,Class):1.0
+is(scalar-quale,Class):1.0
+SubClassOf(scalar-quale,quale,):1.0
+SubClassOf(scalar-quale,has-for-magnitude some number,):1.0
+SubClassOf(scalar-quale,has-for-unit some unit-of-measure):1.0
+is(scientific-publisher,Class):1.0
+SubClassOf(scientific-publisher,publisher):1.0
+is(unit-of-measure,Class):1.0
+is(volume,Class):1.0
+is(AC-PC-line-orientation-at-acquisition,Class):1.0
+SubClassOf(AC-PC-line-orientation-at-acquisition,axis-orientation-at-acquisition,):1.0
+SubClassOf(AC-PC-line-orientation-at-acquisition,has-for-name value AC-PC-line):1.0
+DisjointWith(AC-PC-line-orientation-at-acquisition,lateral-sulcus-line-orientation-at-acquisition):1.0
+DisjointWith(AC-PC-line-orientation-at-acquisition,central-sulcus-line-orientation-at-acquisition):1.0
+DisjointWith(AC-PC-line-orientation-at-acquisition,bi-callosal-line-orientation-at-acquisition):1.0
+is(MR-image-contrast,Class):1.0
+is(T1-contrast,Class):1.0
+SubClassOf(T1-contrast,MR-image-contrast,):1.0
+SubClassOf(T1-contrast,has-for-name value T1):1.0
+DisjointWith(T1-contrast,spin-density-contrast):1.0
+DisjointWith(T1-contrast,T2-contrast):1.0
+is(T2-contrast,Class):1.0
+SubClassOf(T2-contrast,MR-image-contrast,):1.0
+SubClassOf(T2-contrast,has-for-name value T2):1.0
+DisjointWith(T2-contrast,spin-density-contrast):1.0
+DisjointWith(T2-contrast,T1-contrast):1.0
+is(T2-star-contrast,Class):1.0
+SubClassOf(T2-star-contrast,MR-image-contrast,):1.0
+SubClassOf(T2-star-contrast,has-for-name value T2-star):1.0
+is(axis-orientation-at-acquisition,Class):1.0
+is(bi-callosal-line-orientation-at-acquisition,Class):1.0
+SubClassOf(bi-callosal-line-orientation-at-acquisition,axis-orientation-at-acquisition,):1.0
+SubClassOf(bi-callosal-line-orientation-at-acquisition,has-for-name value bi-callosal-line):1.0
+DisjointWith(bi-callosal-line-orientation-at-acquisition,lateral-sulcus-line-orientation-at-acquisition):1.0
+DisjointWith(bi-callosal-line-orientation-at-acquisition,central-sulcus-line-orientation-at-acquisition):1.0
+DisjointWith(bi-callosal-line-orientation-at-acquisition,AC-PC-line-orientation-at-acquisition):1.0
+is(central-sulcus-line-orientation-at-acquisition,Class):1.0
+SubClassOf(central-sulcus-line-orientation-at-acquisition,axis-orientation-at-acquisition,):1.0
+SubClassOf(central-sulcus-line-orientation-at-acquisition,has-for-name value central-sulcus-line):1.0
+DisjointWith(central-sulcus-line-orientation-at-acquisition,lateral-sulcus-line-orientation-at-acquisition):1.0
+DisjointWith(central-sulcus-line-orientation-at-acquisition,bi-callosal-line-orientation-at-acquisition):1.0
+DisjointWith(central-sulcus-line-orientation-at-acquisition,AC-PC-line-orientation-at-acquisition):1.0
+is(contrast-agent,Class):1.0
+is(contrast-agent-concentration,Class):1.0
+SubClassOf(contrast-agent-concentration,concentration,):1.0
+SubClassOf(contrast-agent-concentration,is-a-quality-of exactly 1 contrast-agent):1.0
+is(contrast-agent-volume,Class):1.0
+SubClassOf(contrast-agent-volume,volume,):1.0
+SubClassOf(contrast-agent-volume,is-a-quality-of exactly 1 contrast-agent):1.0
+is(coronal-slice-orientation-at-acquisition,Class):1.0
+SubClassOf(coronal-slice-orientation-at-acquisition,slice-orientation-at-acquisition,):1.0
+SubClassOf(coronal-slice-orientation-at-acquisition,has-for-name value coronal):1.0
+is(interlaced-even-acquired-first-slice-order,Class):1.0
+SubClassOf(interlaced-even-acquired-first-slice-order,slice-order,):1.0
+SubClassOf(interlaced-even-acquired-first-slice-order,has-for-name value interlaced-even-acquired-first):1.0
+is(interlaced-odd-acquired-first-slice-order,Class):1.0
+SubClassOf(interlaced-odd-acquired-first-slice-order,slice-order,):1.0
+SubClassOf(interlaced-odd-acquired-first-slice-order,has-for-name value interlaced-odd-acquired-first):1.0
+is(lateral-sulcus-line-orientation-at-acquisition,Class):1.0
+SubClassOf(lateral-sulcus-line-orientation-at-acquisition,axis-orientation-at-acquisition,):1.0
+SubClassOf(lateral-sulcus-line-orientation-at-acquisition,has-for-name value lateral-sulcus-line):1.0
+DisjointWith(lateral-sulcus-line-orientation-at-acquisition,central-sulcus-line-orientation-at-acquisition):1.0
+DisjointWith(lateral-sulcus-line-orientation-at-acquisition,bi-callosal-line-orientation-at-acquisition):1.0
+DisjointWith(lateral-sulcus-line-orientation-at-acquisition,AC-PC-line-orientation-at-acquisition):1.0
+is(non-interlaced-slice-order,Class):1.0
+SubClassOf(non-interlaced-slice-order,slice-order,):1.0
+SubClassOf(non-interlaced-slice-order,has-for-name value non-interlaced):1.0
+is(number-of-averages,Class):1.0
+SubClassOf(number-of-averages,cardinal):1.0
+is(number-of-phase-encoding-steps,Class):1.0
+SubClassOf(number-of-phase-encoding-steps,cardinal):1.0
+is(number-of-temporal-positions,Class):1.0
+SubClassOf(number-of-temporal-positions,cardinal):1.0
+is(oblique-slice-orientation-at-acquisition,Class):1.0
+SubClassOf(oblique-slice-orientation-at-acquisition,slice-orientation-at-acquisition,):1.0
+SubClassOf(oblique-slice-orientation-at-acquisition,has-for-name value oblique):1.0
+is(sagittal-slice-orientation-at-acquisition,Class):1.0
+SubClassOf(sagittal-slice-orientation-at-acquisition,slice-orientation-at-acquisition,):1.0
+SubClassOf(sagittal-slice-orientation-at-acquisition,has-for-name value sagittal):1.0
+is(slice-order,Class):1.0
+is(slice-orientation-at-acquisition,Class):1.0
+is(spin-density-contrast,Class):1.0
+SubClassOf(spin-density-contrast,MR-image-contrast,):1.0
+SubClassOf(spin-density-contrast,has-for-name value spin-density):1.0
+DisjointWith(spin-density-contrast,T2-contrast):1.0
+DisjointWith(spin-density-contrast,T1-contrast):1.0
+is(time-reduction-factor,Class):1.0
+is(time-reduction-factor-for-the-in-plane-direction,Class):1.0
+SubClassOf(time-reduction-factor-for-the-in-plane-direction,time-reduction-factor):1.0
+is(time-reduction-factor-for-the-out-of-plane-direction,Class):1.0
+SubClassOf(time-reduction-factor-for-the-out-of-plane-direction,time-reduction-factor):1.0
+is(transverse-slice-orientation-at-acquisition,Class):1.0
+SubClassOf(transverse-slice-orientation-at-acquisition,slice-orientation-at-acquisition,):1.0
+SubClassOf(transverse-slice-orientation-at-acquisition,has-for-name value transverse):1.0
+is(clinical-psychologist,Class):1.0
+is(engineer,Class):1.0
+SubClassOf(engineer,human):1.0
+is(health-professional,Class):1.0
+SubClassOf(health-professional,human):1.0
+is(human-subject,Class):1.0
+SubClassOf(human-subject,human):1.0
+is(investigator,Class):1.0
+SubClassOf(investigator,human):1.0
+is(neuropsychologist,Class):1.0
+SubClassOf(neuropsychologist,clinical-psychologist):1.0
+is(researcher,Class):1.0
+SubClassOf(researcher,human):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(AC-PC-line,Individual):1.0
+is(T1,Individual):1.0
+is(T2,Individual):1.0
+is(T2-star,Individual):1.0
+is(bi-callosal-line,Individual):1.0
+is(central-sulcus-line,Individual):1.0
+is(coronal,Individual):1.0
+is(interlaced-even-acquired-first,Individual):1.0
+is(interlaced-odd-acquired-first,Individual):1.0
+is(lateral-sulcus-line,Individual):1.0
+is(non-interlaced,Individual):1.0
+is(oblique,Individual):1.0
+is(sagittal,Individual):1.0
+is(spin-density,Individual):1.0
+is(transverse,Individual):1.0
+DisjointClasses(transverse,abstract,endurant,perdurant,quality):1.0
+DisjointClasses(transverse,interlaced-even-acquired-first-slice-order,interlaced-odd-acquired-first-slice-order,non-interlaced-slice-order):1.0

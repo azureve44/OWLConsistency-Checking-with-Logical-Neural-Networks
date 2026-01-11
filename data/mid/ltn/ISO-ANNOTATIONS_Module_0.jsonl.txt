@@ -1,0 +1,1161 @@
+is(www.w3.org/2000/01/-schema#,Datatype):1.0
+is(long,Datatype):1.0
+is(hasApproved,ObjectProperty):1.0
+Domain(hasApproved,Approval):1.0
+is(hasApprover,ObjectProperty):1.0
+Domain(hasApprover,Approval):1.0
+is(hasCardinalities,ObjectProperty):1.0
+Domain(hasCardinalities,ClassOfMultidimensionalObject):1.0
+is(hasCaused,ObjectProperty):1.0
+Domain(hasCaused,CauseOfEvent):1.0
+is(hasCauser,ObjectProperty):1.0
+Domain(hasCauser,CauseOfEvent):1.0
+is(hasClassOfEnd1,ObjectProperty):1.0
+Domain(hasClassOfEnd1,ClassOfRelationshipWithSignature):1.0
+is(hasClassOfEnd2,ObjectProperty):1.0
+Domain(hasClassOfEnd2,ClassOfRelationshipWithSignature):1.0
+is(hasClassified,ObjectProperty):1.0
+Domain(hasClassified,Classification):1.0
+is(hasClassifier,ObjectProperty):1.0
+Domain(hasClassifier,Classification):1.0
+is(hasConnection,ObjectProperty):1.0
+Domain(hasConnection,IndividualUsedInConnection):1.0
+is(hasControlled,ObjectProperty):1.0
+Domain(hasControlled,ResponsibilityForRepresentation):1.0
+is(hasController,ObjectProperty):1.0
+is(hasElements,ObjectProperty):1.0
+Domain(hasElements,MultidimensionalObject):1.0
+is(hasEnd1,ObjectProperty):1.0
+Domain(hasEnd1,OtherRelationship):1.0
+is(hasEnd1Cardinality,ObjectProperty):1.0
+Domain(hasEnd1Cardinality,ClassOfRelationship):1.0
+is(hasEnd2,ObjectProperty):1.0
+Domain(hasEnd2,OtherRelationship):1.0
+is(hasEnd2Cardinality,ObjectProperty):1.0
+Domain(hasEnd2Cardinality,ClassOfRelationship):1.0
+is(hasGreaterElement,ObjectProperty):1.0
+Domain(hasGreaterElement,ComparisonOfProperty):1.0
+is(hasInput,ObjectProperty):1.0
+Domain(hasInput,FunctionalMapping):1.0
+is(hasInterest,ObjectProperty):1.0
+Domain(hasInterest,LifecycleStage):1.0
+is(hasInterested,ObjectProperty):1.0
+Domain(hasInterested,LifecycleStage):1.0
+is(hasInvolved,ObjectProperty):1.0
+Domain(hasInvolved,InvolvementByReference):1.0
+is(hasInvolver,ObjectProperty):1.0
+Domain(hasInvolver,InvolvementByReference):1.0
+is(hasLesserElement,ObjectProperty):1.0
+Domain(hasLesserElement,ComparisonOfProperty):1.0
+is(hasLocated,ObjectProperty):1.0
+Domain(hasLocated,RelativeLocation):1.0
+is(hasLocator,ObjectProperty):1.0
+Domain(hasLocator,RelativeLocation):1.0
+is(hasOptionalElement,ObjectProperty):1.0
+Domain(hasOptionalElement,ClassOfMultidimensionalObject):1.0
+is(hasParameterPosition,ObjectProperty):1.0
+Domain(hasParameterPosition,ClassOfMultidimensionalObject):1.0
+is(hasParameters,ObjectProperty):1.0
+Domain(hasParameters,ClassOfMultidimensionalObject):1.0
+is(hasPart,ObjectProperty):1.0
+Domain(hasPart,CompositionOfIndividual):1.0
+is(hasPlayed,ObjectProperty):1.0
+is(hasPlayer,ObjectProperty):1.0
+is(hasPosition,ObjectProperty):1.0
+Domain(hasPosition,MultidimensionalObject):1.0
+is(hasPossessor,ObjectProperty):1.0
+Domain(hasPossessor,IndirectProperty):1.0
+is(hasPredecessor,ObjectProperty):1.0
+Domain(hasPredecessor,TemporalSequence):1.0
+is(hasProperty,ObjectProperty):1.0
+is(hasRecognized,ObjectProperty):1.0
+Domain(hasRecognized,Recognition):1.0
+is(hasRecognizing,ObjectProperty):1.0
+Domain(hasRecognizing,Recognition):1.0
+is(hasRepresented,ObjectProperty):1.0
+is(hasResult,ObjectProperty):1.0
+Domain(hasResult,FunctionalMapping):1.0
+is(hasRoles,ObjectProperty):1.0
+Domain(hasRoles,ClassOfMultidimensionalObject):1.0
+is(hasSide1,ObjectProperty):1.0
+Domain(hasSide1,ConnectionOfIndividual):1.0
+is(hasSide2,ObjectProperty):1.0
+Domain(hasSide2,ConnectionOfIndividual):1.0
+is(hasSign,ObjectProperty):1.0
+Domain(hasSign,RepresentationOfThing):1.0
+is(hasSubclass,ObjectProperty):1.0
+Domain(hasSubclass,Specialization):1.0
+is(hasSuccessor,ObjectProperty):1.0
+Domain(hasSuccessor,TemporalSequence):1.0
+is(hasSuperclass,ObjectProperty):1.0
+Domain(hasSuperclass,Specialization):1.0
+is(hasUsage,ObjectProperty):1.0
+Domain(hasUsage,IndividualUsedInConnection):1.0
+is(hasUsed,ObjectProperty):1.0
+Domain(hasUsed,UsageOfRepresentation):1.0
+is(hasUser,ObjectProperty):1.0
+is(hasWhole,ObjectProperty):1.0
+Domain(hasWhole,CompositionOfIndividual):1.0
+is(www.co-ode.org/ontologies/list.#,ObjectProperty):1.0
+is(www.co-ode.org/ontologies/list.#,ObjectProperty):1.0
+is(hasMaximumCardinality,DataProperty):1.0
+Domain(hasMaximumCardinality,Cardinality):1.0
+is(hasMinimumCardinality,DataProperty):1.0
+Domain(hasMinimumCardinality,Cardinality):1.0
+is(AbstractObject,Class):1.0
+EquivalentTo(AbstractObject,Class or MultidimensionalObject or Relationship):1.0
+SubClassOf(AbstractObject,Thing):1.0
+DisjointWith(AbstractObject,PossibleIndividual):1.0
+is(Activity,Class):1.0
+is(Approval,Class):1.0
+SubClassOf(Approval,Relationship,):1.0
+SubClassOf(Approval,hasApproved only Relationship,):1.0
+SubClassOf(Approval,hasApprover only PossibleIndividual,):1.0
+is(Thing,,hasApproved exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasApprover exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+is(ArithmeticNumber,Class):1.0
+is(ArrangedIndividual,Class):1.0
+is(ArrangementOfIndividual,Class):1.0
+SubClassOf(ArrangementOfIndividual,CompositionOfIndividual,):1.0
+SubClassOf(ArrangementOfIndividual,hasWhole only ArrangedIndividual):1.0
+DisjointWith(ArrangementOfIndividual,TemporalWholePart):1.0
+DisjointWith(ArrangementOfIndividual,TemporalBounding):1.0
+DisjointWith(ArrangementOfIndividual,Participation):1.0
+is(AssemblyOfIndividual,Class):1.0
+SubClassOf(AssemblyOfIndividual,ArrangementOfIndividual):1.0
+is(Beginning,Class):1.0
+SubClassOf(Beginning,TemporalBounding):1.0
+is(BoundaryOfNumberSpace,Class):1.0
+SubClassOf(BoundaryOfNumberSpace,Specialization,):1.0
+SubClassOf(BoundaryOfNumberSpace,hasSubclass only NumberSpace,):1.0
+SubClassOf(BoundaryOfNumberSpace,hasSuperclass only NumberSpace):1.0
+DisjointWith(BoundaryOfNumberSpace,SpecializationOfIndividualDimensionFromProperty):1.0
+DisjointWith(BoundaryOfNumberSpace,SpecializationByRole):1.0
+DisjointWith(BoundaryOfNumberSpace,SpecializationByDomain):1.0
+DisjointWith(BoundaryOfNumberSpace,BoundaryOfPropertySpace):1.0
+is(BoundaryOfPropertySpace,Class):1.0
+SubClassOf(BoundaryOfPropertySpace,Specialization,):1.0
+SubClassOf(BoundaryOfPropertySpace,hasSubclass only PropertySpace,):1.0
+SubClassOf(BoundaryOfPropertySpace,hasSuperclass only PropertySpace):1.0
+DisjointWith(BoundaryOfPropertySpace,SpecializationOfIndividualDimensionFromProperty):1.0
+DisjointWith(BoundaryOfPropertySpace,SpecializationByRole):1.0
+DisjointWith(BoundaryOfPropertySpace,SpecializationByDomain):1.0
+DisjointWith(BoundaryOfPropertySpace,BoundaryOfNumberSpace):1.0
+is(Cardinality,Class):1.0
+SubClassOf(Cardinality,Class,):1.0
+SubClassOf(Cardinality,hasMaximumCardinality only long,):1.0
+SubClassOf(Cardinality,hasMinimumCardinality only long,):1.0
+is(Literal,,hasMaximumCardinality max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,hasMinimumCardinality max 1 www.w3.org/2000/01/-schema#):1.0
+is(CauseOfEvent,Class):1.0
+SubClassOf(CauseOfEvent,Relationship,):1.0
+SubClassOf(CauseOfEvent,hasCaused only Event,):1.0
+SubClassOf(CauseOfEvent,hasCauser only Activity,):1.0
+is(Thing,,hasCaused exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasCauser exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,Approval):1.0
+is(Class,Class):1.0
+SubClassOf(Class,AbstractObject):1.0
+is(ClassOfAbstractObject,Class):1.0
+is(ClassOfActivity,Class):1.0
+SubClassOf(ClassOfActivity,ClassOfArrangedIndividual):1.0
+is(ClassOfApproval,Class):1.0
+SubClassOf(ClassOfApproval,ClassOfRelationship):1.0
+DisjointWith(ClassOfApproval,ClassOfRelationshipWithSignature):1.0
+is(ClassOfApprovalByStatus,Class):1.0
+SubClassOf(ClassOfApprovalByStatus,ClassOfRelationship):1.0
+DisjointWith(ClassOfApprovalByStatus,ClassOfRelationshipWithSignature):1.0
+is(ClassOfArrangedIndividual,Class):1.0
+SubClassOf(ClassOfArrangedIndividual,ClassOfIndividual):1.0
+DisjointWith(ClassOfArrangedIndividual,Status):1.0
+DisjointWith(ClassOfArrangedIndividual,Property):1.0
+DisjointWith(ClassOfArrangedIndividual,IndividualDimension):1.0
+DisjointWith(ClassOfArrangedIndividual,ClassOfPeriodInTime):1.0
+DisjointWith(ClassOfArrangedIndividual,ClassOfEvent):1.0
+is(ClassOfAssertion,Class):1.0
+SubClassOf(ClassOfAssertion,ClassOfRelationship):1.0
+DisjointWith(ClassOfAssertion,ClassOfRelationshipWithSignature):1.0
+is(ClassOfAtom,Class):1.0
+SubClassOf(ClassOfAtom,ClassOfArrangedIndividual):1.0
+is(ClassOfBiologicalMatter,Class):1.0
+SubClassOf(ClassOfBiologicalMatter,ClassOfArrangedIndividual):1.0
+is(ClassOfCauseOfBeginningOfClassOfIndividual,Class):1.0
+SubClassOf(ClassOfCauseOfBeginningOfClassOfIndividual,ClassOfRelationship):1.0
+DisjointWith(ClassOfCauseOfBeginningOfClassOfIndividual,ClassOfRelationshipWithSignature):1.0
+is(ClassOfCauseOfEndingOfClassOfIndividual,Class):1.0
+SubClassOf(ClassOfCauseOfEndingOfClassOfIndividual,ClassOfRelationship):1.0
+DisjointWith(ClassOfCauseOfEndingOfClassOfIndividual,ClassOfRelationshipWithSignature):1.0
+is(ClassOfClassOfComposition,Class):1.0
+DisjointWith(ClassOfClassOfComposition,ClassOfClassOfRelationshipWithSignature):1.0
+is(ClassOfClassOfRelationship,Class):1.0
+is(ClassOfClassOfRelationshipWithSignature,Class):1.0
+SubClassOf(ClassOfClassOfRelationshipWithSignature,ClassOfClassOfRelationship,):1.0
+SubClassOf(ClassOfClassOfRelationshipWithSignature,ClassOfRelationshipWithSignature):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,PropertySpaceForClassOfShapeDimension):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,DimensionOfShape):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,ClassOfScale):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,ClassOfNamespace):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,ClassOfDimensionForShape):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,ClassOfClassOfUsageOfRepresentation):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,ClassOfClassOfResponsibilityForRepresentation):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,ClassOfClassOfRepresentationTranslation):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,ClassOfClassOfRepresentation):1.0
+DisjointWith(ClassOfClassOfRelationshipWithSignature,ClassOfClassOfComposition):1.0
+is(ClassOfClassOfRepresentation,Class):1.0
+DisjointWith(ClassOfClassOfRepresentation,ClassOfClassOfRelationshipWithSignature):1.0
+is(ClassOfClassOfRepresentationTranslation,Class):1.0
+DisjointWith(ClassOfClassOfRepresentationTranslation,ClassOfClassOfRelationshipWithSignature):1.0
+is(ClassOfClassOfResponsibilityForRepresentation,Class):1.0
+DisjointWith(ClassOfClassOfResponsibilityForRepresentation,ClassOfClassOfRelationshipWithSignature):1.0
+is(ClassOfClassOfUsageOfRepresentation,Class):1.0
+DisjointWith(ClassOfClassOfUsageOfRepresentation,ClassOfClassOfRelationshipWithSignature):1.0
+is(ClassOfClassification,Class):1.0
+SubClassOf(ClassOfClassification,ClassOfRelationship):1.0
+DisjointWith(ClassOfClassification,ClassOfRelationshipWithSignature):1.0
+is(ClassOfCompositeMaterial,Class):1.0
+SubClassOf(ClassOfCompositeMaterial,ClassOfArrangedIndividual):1.0
+is(ClassOfCompositionOfIndividual,Class):1.0
+SubClassOf(ClassOfCompositionOfIndividual,ClassOfRelationship):1.0
+DisjointWith(ClassOfCompositionOfIndividual,ClassOfRelationshipWithSignature):1.0
+is(ClassOfCompound,Class):1.0
+SubClassOf(ClassOfCompound,ClassOfArrangedIndividual):1.0
+is(ClassOfConnectionOfIndividual,Class):1.0
+SubClassOf(ClassOfConnectionOfIndividual,ClassOfRelationship):1.0
+DisjointWith(ClassOfConnectionOfIndividual,ClassOfRelationshipWithSignature):1.0
+is(ClassOfDimensionForShape,Class):1.0
+DisjointWith(ClassOfDimensionForShape,ClassOfClassOfRelationshipWithSignature):1.0
+is(ClassOfEvent,Class):1.0
+SubClassOf(ClassOfEvent,ClassOfIndividual):1.0
+DisjointWith(ClassOfEvent,Status):1.0
+DisjointWith(ClassOfEvent,Property):1.0
+DisjointWith(ClassOfEvent,IndividualDimension):1.0
+DisjointWith(ClassOfEvent,ClassOfPeriodInTime):1.0
+DisjointWith(ClassOfEvent,ClassOfArrangedIndividual):1.0
+is(ClassOfFeature,Class):1.0
+SubClassOf(ClassOfFeature,ClassOfArrangedIndividual):1.0
+is(ClassOfFunctionalMapping,Class):1.0
+SubClassOf(ClassOfFunctionalMapping,ClassOfRelationship):1.0
+DisjointWith(ClassOfFunctionalMapping,ClassOfRelationshipWithSignature):1.0
+is(ClassOfFunctionalObject,Class):1.0
+SubClassOf(ClassOfFunctionalObject,ClassOfArrangedIndividual):1.0
+is(ClassOfInanimatePhysicalObject,Class):1.0
+SubClassOf(ClassOfInanimatePhysicalObject,ClassOfArrangedIndividual):1.0
+is(ClassOfIndirectProperty,Class):1.0
+SubClassOf(ClassOfIndirectProperty,ClassOfRelationship):1.0
+DisjointWith(ClassOfIndirectProperty,ClassOfRelationshipWithSignature):1.0
+is(ClassOfIndividual,Class):1.0
+is(ClassOfIndividualUsedInConnection,Class):1.0
+SubClassOf(ClassOfIndividualUsedInConnection,ClassOfRelationship):1.0
+DisjointWith(ClassOfIndividualUsedInConnection,ClassOfRelationshipWithSignature):1.0
+is(ClassOfInformationObject,Class):1.0
+SubClassOf(ClassOfInformationObject,ClassOfArrangedIndividual):1.0
+is(ClassOfInformationPresentation,Class):1.0
+SubClassOf(ClassOfInformationPresentation,ClassOfArrangedIndividual):1.0
+is(ClassOfInformationRepresentation,Class):1.0
+SubClassOf(ClassOfInformationRepresentation,ClassOfArrangedIndividual):1.0
+is(ClassOfIntendedRoleAndDomain,Class):1.0
+SubClassOf(ClassOfIntendedRoleAndDomain,ClassOfRelationship):1.0
+DisjointWith(ClassOfIntendedRoleAndDomain,ClassOfRelationshipWithSignature):1.0
+is(ClassOfInvolvementByReference,Class):1.0
+SubClassOf(ClassOfInvolvementByReference,ClassOfRelationship):1.0
+DisjointWith(ClassOfInvolvementByReference,ClassOfRelationshipWithSignature):1.0
+is(ClassOfLifecycleStage,Class):1.0
+SubClassOf(ClassOfLifecycleStage,ClassOfRelationship):1.0
+DisjointWith(ClassOfLifecycleStage,ClassOfRelationshipWithSignature):1.0
+is(ClassOfMolecule,Class):1.0
+SubClassOf(ClassOfMolecule,ClassOfArrangedIndividual):1.0
+is(ClassOfMultidimensionalObject,Class):1.0
+SubClassOf(ClassOfMultidimensionalObject,ClassOfAbstractObject,):1.0
+SubClassOf(ClassOfMultidimensionalObject,hasCardinalities only):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,hasOptionalElement only):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,hasParameterPosition only):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,hasParameters only):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,hasRoles only):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(Thing,,hasOptionalElement exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasRoles exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasCardinalities max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,hasParameterPosition max 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasParameters max 1 www.w3.org/2002/07/#):1.0
+is(ClassOfNamespace,Class):1.0
+DisjointWith(ClassOfNamespace,ClassOfClassOfRelationshipWithSignature):1.0
+is(ClassOfOrganism,Class):1.0
+SubClassOf(ClassOfOrganism,ClassOfArrangedIndividual):1.0
+is(ClassOfOrganization,Class):1.0
+SubClassOf(ClassOfOrganization,ClassOfArrangedIndividual):1.0
+is(ClassOfParticulateMaterial,Class):1.0
+SubClassOf(ClassOfParticulateMaterial,ClassOfArrangedIndividual):1.0
+is(ClassOfPeriodInTime,Class):1.0
+SubClassOf(ClassOfPeriodInTime,ClassOfIndividual):1.0
+DisjointWith(ClassOfPeriodInTime,Status):1.0
+DisjointWith(ClassOfPeriodInTime,Property):1.0
+DisjointWith(ClassOfPeriodInTime,IndividualDimension):1.0
+DisjointWith(ClassOfPeriodInTime,ClassOfEvent):1.0
+DisjointWith(ClassOfPeriodInTime,ClassOfArrangedIndividual):1.0
+is(ClassOfPointInTime,Class):1.0
+SubClassOf(ClassOfPointInTime,ClassOfEvent):1.0
+is(ClassOfPossibleRoleAndDomain,Class):1.0
+SubClassOf(ClassOfPossibleRoleAndDomain,ClassOfRelationship):1.0
+DisjointWith(ClassOfPossibleRoleAndDomain,ClassOfRelationshipWithSignature):1.0
+is(ClassOfRecognition,Class):1.0
+SubClassOf(ClassOfRecognition,ClassOfRelationship):1.0
+DisjointWith(ClassOfRecognition,ClassOfRelationshipWithSignature):1.0
+is(ClassOfRelationship,Class):1.0
+SubClassOf(ClassOfRelationship,ClassOfAbstractObject,):1.0
+SubClassOf(ClassOfRelationship,hasEnd1Cardinality only Cardinality,):1.0
+SubClassOf(ClassOfRelationship,hasEnd2Cardinality only Cardinality,):1.0
+is(Thing,,hasEnd1Cardinality max 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasEnd2Cardinality max 1 www.w3.org/2002/07/#):1.0
+is(ClassOfRelationshipWithRelatedEnd1,Class):1.0
+SubClassOf(ClassOfRelationshipWithRelatedEnd1,ClassOfRelationship):1.0
+is(ClassOfRelationshipWithRelatedEnd2,Class):1.0
+SubClassOf(ClassOfRelationshipWithRelatedEnd2,ClassOfRelationship):1.0
+is(ClassOfRelationshipWithSignature,Class):1.0
+SubClassOf(ClassOfRelationshipWithSignature,ClassOfRelationship,):1.0
+SubClassOf(ClassOfRelationshipWithSignature,Relationship,):1.0
+SubClassOf(ClassOfRelationshipWithSignature,hasClassOfEnd1 only RoleAndDomain,):1.0
+SubClassOf(ClassOfRelationshipWithSignature,hasClassOfEnd2 only RoleAndDomain,):1.0
+is(Thing,,hasClassOfEnd1 max 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasClassOfEnd2 max 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PropertyForShapeDimension):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,DimensionOfIndividual):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfUsageOfRepresentation):1.0
+DisjointWith(Thing,ClassOfTemporalSequence):1.0
+DisjointWith(Thing,ClassOfSpecialization):1.0
+DisjointWith(Thing,ClassOfResponsibilityForRepresentation):1.0
+DisjointWith(Thing,ClassOfRepresentationTranslation):1.0
+DisjointWith(Thing,ClassOfRepresentationOfThing):1.0
+DisjointWith(Thing,ClassOfRelativeLocation):1.0
+DisjointWith(Thing,ClassOfRecognition):1.0
+DisjointWith(Thing,ClassOfPossibleRoleAndDomain):1.0
+DisjointWith(Thing,ClassOfLifecycleStage):1.0
+DisjointWith(Thing,ClassOfInvolvementByReference):1.0
+DisjointWith(Thing,ClassOfIntendedRoleAndDomain):1.0
+DisjointWith(Thing,ClassOfIndividualUsedInConnection):1.0
+DisjointWith(Thing,ClassOfIndirectProperty):1.0
+DisjointWith(Thing,ClassOfFunctionalMapping):1.0
+DisjointWith(Thing,ClassOfConnectionOfIndividual):1.0
+DisjointWith(Thing,ClassOfCompositionOfIndividual):1.0
+DisjointWith(Thing,ClassOfClassification):1.0
+DisjointWith(Thing,ClassOfCauseOfEndingOfClassOfIndividual):1.0
+DisjointWith(Thing,ClassOfCauseOfBeginningOfClassOfIndividual):1.0
+DisjointWith(Thing,ClassOfAssertion):1.0
+DisjointWith(Thing,ClassOfApprovalByStatus):1.0
+DisjointWith(Thing,ClassOfApproval):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(ClassOfRelativeLocation,Class):1.0
+SubClassOf(ClassOfRelativeLocation,ClassOfRelationship):1.0
+DisjointWith(ClassOfRelativeLocation,ClassOfRelationshipWithSignature):1.0
+is(ClassOfRepresentationOfThing,Class):1.0
+SubClassOf(ClassOfRepresentationOfThing,ClassOfRelationship):1.0
+DisjointWith(ClassOfRepresentationOfThing,ClassOfRelationshipWithSignature):1.0
+is(ClassOfRepresentationTranslation,Class):1.0
+SubClassOf(ClassOfRepresentationTranslation,ClassOfRelationship):1.0
+DisjointWith(ClassOfRepresentationTranslation,ClassOfRelationshipWithSignature):1.0
+is(ClassOfResponsibilityForRepresentation,Class):1.0
+SubClassOf(ClassOfResponsibilityForRepresentation,ClassOfRelationship):1.0
+DisjointWith(ClassOfResponsibilityForRepresentation,ClassOfRelationshipWithSignature):1.0
+is(ClassOfScale,Class):1.0
+DisjointWith(ClassOfScale,ClassOfClassOfRelationshipWithSignature):1.0
+is(ClassOfSpecialization,Class):1.0
+SubClassOf(ClassOfSpecialization,ClassOfRelationship):1.0
+DisjointWith(ClassOfSpecialization,ClassOfRelationshipWithSignature):1.0
+is(ClassOfSubAtomicParticle,Class):1.0
+SubClassOf(ClassOfSubAtomicParticle,ClassOfArrangedIndividual):1.0
+is(ClassOfTemporalSequence,Class):1.0
+SubClassOf(ClassOfTemporalSequence,ClassOfRelationship):1.0
+DisjointWith(ClassOfTemporalSequence,ClassOfRelationshipWithSignature):1.0
+is(ClassOfUsageOfRepresentation,Class):1.0
+SubClassOf(ClassOfUsageOfRepresentation,ClassOfRelationship):1.0
+DisjointWith(ClassOfUsageOfRepresentation,ClassOfRelationshipWithSignature):1.0
+is(Classification,Class):1.0
+SubClassOf(Classification,Relationship,):1.0
+SubClassOf(Classification,hasClassified only Thing,):1.0
+SubClassOf(Classification,hasClassifier only Class,):1.0
+is(Thing,,hasClassified exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasClassifier exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(ComparisonOfProperty,Class):1.0
+SubClassOf(ComparisonOfProperty,Relationship,):1.0
+SubClassOf(ComparisonOfProperty,hasGreaterElement only Property,):1.0
+SubClassOf(ComparisonOfProperty,hasLesserElement only Property,):1.0
+is(Thing,,hasGreaterElement exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasLesserElement exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(CompositionOfIndividual,Class):1.0
+SubClassOf(CompositionOfIndividual,Relationship,):1.0
+SubClassOf(CompositionOfIndividual,hasPart only PossibleIndividual,):1.0
+SubClassOf(CompositionOfIndividual,hasWhole only PossibleIndividual,):1.0
+is(Thing,,hasPart exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasWhole exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(ConnectionOfIndividual,Class):1.0
+SubClassOf(ConnectionOfIndividual,Relationship,):1.0
+SubClassOf(ConnectionOfIndividual,hasSide1 only PossibleIndividual,):1.0
+SubClassOf(ConnectionOfIndividual,hasSide2 only PossibleIndividual,):1.0
+is(Thing,,hasSide1 exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasSide2 exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(ContainmentOfIndividual,Class):1.0
+SubClassOf(ContainmentOfIndividual,RelativeLocation):1.0
+is(CoordinateSystem,Class):1.0
+SubClassOf(CoordinateSystem,MultidimensionalScale):1.0
+is(CrystallineStructure,Class):1.0
+SubClassOf(CrystallineStructure,ClassOfArrangedIndividual):1.0
+is(Definition,Class):1.0
+SubClassOf(Definition,RepresentationOfThing,):1.0
+SubClassOf(Definition,hasRepresented only Class):1.0
+is(Description,Class):1.0
+SubClassOf(Description,RepresentationOfThing):1.0
+is(DifferenceOfSetOfClass,Class):1.0
+SubClassOf(DifferenceOfSetOfClass,FunctionalMapping,):1.0
+SubClassOf(DifferenceOfSetOfClass,hasInput only EnumeratedSetOfClass,):1.0
+SubClassOf(DifferenceOfSetOfClass,hasResult only Class):1.0
+is(DimensionOfIndividual,Class):1.0
+SubClassOf(DimensionOfIndividual,ClassOfRelationship):1.0
+DisjointWith(DimensionOfIndividual,ClassOfRelationshipWithSignature):1.0
+is(DimensionOfShape,Class):1.0
+DisjointWith(DimensionOfShape,ClassOfClassOfRelationshipWithSignature):1.0
+is(DirectConnection,Class):1.0
+SubClassOf(DirectConnection,ConnectionOfIndividual):1.0
+DisjointWith(DirectConnection,IndirectConnection):1.0
+is(Ending,Class):1.0
+SubClassOf(Ending,TemporalBounding):1.0
+is(EnumeratedSetOfClass,Class):1.0
+is(Event,Class):1.0
+is(ExpressBoolean,Class):1.0
+is(ExpressInteger,Class):1.0
+is(FeatureWholePart,Class):1.0
+SubClassOf(FeatureWholePart,ArrangementOfIndividual):1.0
+is(FunctionalMapping,Class):1.0
+SubClassOf(FunctionalMapping,Relationship,):1.0
+SubClassOf(FunctionalMapping,hasInput only Thing,):1.0
+SubClassOf(FunctionalMapping,hasResult only Thing,):1.0
+is(Thing,,hasInput exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasResult exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(Identification,Class):1.0
+SubClassOf(Identification,RepresentationOfThing):1.0
+is(IndirectConnection,Class):1.0
+SubClassOf(IndirectConnection,ConnectionOfIndividual):1.0
+DisjointWith(IndirectConnection,DirectConnection):1.0
+is(IndirectProperty,Class):1.0
+SubClassOf(IndirectProperty,Relationship,):1.0
+SubClassOf(IndirectProperty,hasPossessor only PossibleIndividual,):1.0
+SubClassOf(IndirectProperty,hasProperty only Property,):1.0
+is(Thing,,hasPossessor exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasProperty exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(IndividualDimension,Class):1.0
+SubClassOf(IndividualDimension,ClassOfIndividual):1.0
+DisjointWith(IndividualDimension,Status):1.0
+DisjointWith(IndividualDimension,Property):1.0
+DisjointWith(IndividualDimension,ClassOfPeriodInTime):1.0
+DisjointWith(IndividualDimension,ClassOfEvent):1.0
+DisjointWith(IndividualDimension,ClassOfArrangedIndividual):1.0
+is(IndividualUsedInConnection,Class):1.0
+SubClassOf(IndividualUsedInConnection,Relationship,):1.0
+SubClassOf(IndividualUsedInConnection,hasConnection only ConnectionOfIndividual,):1.0
+SubClassOf(IndividualUsedInConnection,hasUsage only PossibleIndividual,):1.0
+is(Thing,,hasConnection exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasUsage exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(IntegerNumber,Class):1.0
+DisjointWith(IntegerNumber,MultidimensionalNumber):1.0
+is(IntendedRoleAndDomain,Class):1.0
+SubClassOf(IntendedRoleAndDomain,Relationship,):1.0
+SubClassOf(IntendedRoleAndDomain,hasPlayed only RoleAndDomain,):1.0
+SubClassOf(IntendedRoleAndDomain,hasPlayer only PossibleIndividual,):1.0
+is(Thing,,hasPlayed exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasPlayer exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(IntersectionOfSetOfClass,Class):1.0
+SubClassOf(IntersectionOfSetOfClass,FunctionalMapping,):1.0
+SubClassOf(IntersectionOfSetOfClass,hasInput only EnumeratedSetOfClass,):1.0
+SubClassOf(IntersectionOfSetOfClass,hasResult only Class):1.0
+is(InvolvementByReference,Class):1.0
+SubClassOf(InvolvementByReference,Relationship,):1.0
+SubClassOf(InvolvementByReference,hasInvolved only Thing,):1.0
+SubClassOf(InvolvementByReference,hasInvolver only Activity,):1.0
+is(Thing,,hasInvolved exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasInvolver exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(LifecycleStage,Class):1.0
+SubClassOf(LifecycleStage,Relationship,):1.0
+SubClassOf(LifecycleStage,hasInterest only PossibleIndividual,):1.0
+SubClassOf(LifecycleStage,hasInterested only PossibleIndividual,):1.0
+is(Thing,,hasInterest exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasInterested exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(LowerBoundOfNumberRange,Class):1.0
+SubClassOf(LowerBoundOfNumberRange,Classification,):1.0
+SubClassOf(LowerBoundOfNumberRange,hasClassified only ArithmeticNumber,):1.0
+SubClassOf(LowerBoundOfNumberRange,hasClassifier only NumberRange):1.0
+is(LowerBoundOfPropertyRange,Class):1.0
+SubClassOf(LowerBoundOfPropertyRange,Classification,):1.0
+SubClassOf(LowerBoundOfPropertyRange,hasClassified only Property,):1.0
+SubClassOf(LowerBoundOfPropertyRange,hasClassifier only PropertyRange):1.0
+is(MultidimensionalNumber,Class):1.0
+SubClassOf(MultidimensionalNumber,ArithmeticNumber,):1.0
+SubClassOf(MultidimensionalNumber,MultidimensionalObject):1.0
+DisjointWith(MultidimensionalNumber,RealNumber):1.0
+DisjointWith(MultidimensionalNumber,MultidimensionalScale):1.0
+DisjointWith(MultidimensionalNumber,MultidimensionalPropertySpace):1.0
+DisjointWith(MultidimensionalNumber,MultidimensionalProperty):1.0
+DisjointWith(MultidimensionalNumber,MultidimensionalNumberSpace):1.0
+DisjointWith(MultidimensionalNumber,IntegerNumber):1.0
+is(MultidimensionalNumberSpace,Class):1.0
+SubClassOf(MultidimensionalNumberSpace,MultidimensionalObject,):1.0
+SubClassOf(MultidimensionalNumberSpace,NumberSpace):1.0
+DisjointWith(MultidimensionalNumberSpace,NumberRange):1.0
+DisjointWith(MultidimensionalNumberSpace,MultidimensionalScale):1.0
+DisjointWith(MultidimensionalNumberSpace,MultidimensionalPropertySpace):1.0
+DisjointWith(MultidimensionalNumberSpace,MultidimensionalProperty):1.0
+DisjointWith(MultidimensionalNumberSpace,MultidimensionalNumber):1.0
+is(MultidimensionalObject,Class):1.0
+SubClassOf(MultidimensionalObject,AbstractObject,):1.0
+SubClassOf(MultidimensionalObject,hasElements only):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,hasPosition only):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(OWLList and (www.co-ode.org/ontologies/list.#,(www.co-ode.org/ontologies/list.#):1.0
+is(Thing,,hasElements exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasPosition max 1 www.w3.org/2002/07/#):1.0
+is(MultidimensionalProperty,Class):1.0
+SubClassOf(MultidimensionalProperty,MultidimensionalObject,):1.0
+SubClassOf(MultidimensionalProperty,Property):1.0
+DisjointWith(MultidimensionalProperty,MultidimensionalScale):1.0
+DisjointWith(MultidimensionalProperty,MultidimensionalPropertySpace):1.0
+DisjointWith(MultidimensionalProperty,MultidimensionalNumberSpace):1.0
+DisjointWith(MultidimensionalProperty,MultidimensionalNumber):1.0
+is(MultidimensionalPropertySpace,Class):1.0
+SubClassOf(MultidimensionalPropertySpace,MultidimensionalObject,):1.0
+SubClassOf(MultidimensionalPropertySpace,PropertySpace):1.0
+DisjointWith(MultidimensionalPropertySpace,MultidimensionalScale):1.0
+DisjointWith(MultidimensionalPropertySpace,MultidimensionalProperty):1.0
+DisjointWith(MultidimensionalPropertySpace,MultidimensionalNumberSpace):1.0
+DisjointWith(MultidimensionalPropertySpace,MultidimensionalNumber):1.0
+is(MultidimensionalScale,Class):1.0
+SubClassOf(MultidimensionalScale,MultidimensionalObject,):1.0
+SubClassOf(MultidimensionalScale,Scale):1.0
+DisjointWith(MultidimensionalScale,MultidimensionalPropertySpace):1.0
+DisjointWith(MultidimensionalScale,MultidimensionalProperty):1.0
+DisjointWith(MultidimensionalScale,MultidimensionalNumberSpace):1.0
+DisjointWith(MultidimensionalScale,MultidimensionalNumber):1.0
+is(NumberRange,Class):1.0
+DisjointWith(NumberRange,MultidimensionalNumberSpace):1.0
+is(NumberSpace,Class):1.0
+is(OtherRelationship,Class):1.0
+SubClassOf(OtherRelationship,Relationship,):1.0
+SubClassOf(OtherRelationship,hasEnd1 only Thing,):1.0
+SubClassOf(OtherRelationship,hasEnd2 only Thing,):1.0
+is(Thing,,hasEnd1 exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasEnd2 exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(ParticipatingRoleAndDomain,Class):1.0
+SubClassOf(ParticipatingRoleAndDomain,ClassOfIndividual,):1.0
+SubClassOf(ParticipatingRoleAndDomain,RoleAndDomain):1.0
+is(Participation,Class):1.0
+SubClassOf(Participation,CompositionOfIndividual,):1.0
+SubClassOf(Participation,hasWhole only Activity):1.0
+DisjointWith(Participation,TemporalWholePart):1.0
+DisjointWith(Participation,TemporalBounding):1.0
+DisjointWith(Participation,ArrangementOfIndividual):1.0
+is(Phase,Class):1.0
+SubClassOf(Phase,ClassOfArrangedIndividual):1.0
+is(PossibleIndividual,Class):1.0
+DisjointWith(PossibleIndividual,AbstractObject):1.0
+is(PossibleRoleAndDomain,Class):1.0
+SubClassOf(PossibleRoleAndDomain,Relationship,):1.0
+SubClassOf(PossibleRoleAndDomain,hasPlayed only RoleAndDomain,):1.0
+SubClassOf(PossibleRoleAndDomain,hasPlayer only PossibleIndividual,):1.0
+is(Thing,,hasPlayed exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasPlayer exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(Property,Class):1.0
+SubClassOf(Property,ClassOfIndividual):1.0
+DisjointWith(Property,Status):1.0
+DisjointWith(Property,IndividualDimension):1.0
+DisjointWith(Property,ClassOfPeriodInTime):1.0
+DisjointWith(Property,ClassOfEvent):1.0
+DisjointWith(Property,ClassOfArrangedIndividual):1.0
+is(PropertyForShapeDimension,Class):1.0
+SubClassOf(PropertyForShapeDimension,ClassOfRelationship):1.0
+DisjointWith(PropertyForShapeDimension,ClassOfRelationshipWithSignature):1.0
+is(PropertyQuantification,Class):1.0
+SubClassOf(PropertyQuantification,FunctionalMapping,):1.0
+SubClassOf(PropertyQuantification,hasInput only Property,):1.0
+SubClassOf(PropertyQuantification,hasResult only ArithmeticNumber):1.0
+is(PropertyRange,Class):1.0
+is(PropertySpace,Class):1.0
+is(PropertySpaceForClassOfShapeDimension,Class):1.0
+DisjointWith(PropertySpaceForClassOfShapeDimension,ClassOfClassOfRelationshipWithSignature):1.0
+is(RealNumber,Class):1.0
+DisjointWith(RealNumber,MultidimensionalNumber):1.0
+is(Recognition,Class):1.0
+SubClassOf(Recognition,Relationship,):1.0
+SubClassOf(Recognition,hasRecognized only Thing,):1.0
+SubClassOf(Recognition,hasRecognizing only Activity,):1.0
+is(Thing,,hasRecognized exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasRecognizing exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(Relationship,Class):1.0
+EquivalentTo(Relationship,Approval or CauseOfEvent or ClassOfRelationshipWithSignature or Classification or ComparisonOfProperty or CompositionOfIndividual or ConnectionOfIndividual or FunctionalMapping or IndirectProperty or IndividualUsedInConnection or IntendedRoleAndDomain or InvolvementByReference or LifecycleStage or OtherRelationship or PossibleRoleAndDomain or Recognition or RelativeLocation or RepresentationOfThing or ResponsibilityForRepresentation or Specialization or TemporalSequence or UsageOfRepresentation):1.0
+SubClassOf(Relationship,AbstractObject):1.0
+is(RelativeLocation,Class):1.0
+SubClassOf(RelativeLocation,Relationship,):1.0
+SubClassOf(RelativeLocation,hasLocated only PossibleIndividual,):1.0
+SubClassOf(RelativeLocation,hasLocator only PossibleIndividual,):1.0
+is(Thing,,hasLocated exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasLocator exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(RepresentationOfThing,Class):1.0
+SubClassOf(RepresentationOfThing,Relationship,):1.0
+SubClassOf(RepresentationOfThing,hasRepresented only Thing,):1.0
+SubClassOf(RepresentationOfThing,hasSign only PossibleIndividual,):1.0
+is(Thing,,hasRepresented exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasSign exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(ResponsibilityForRepresentation,Class):1.0
+SubClassOf(ResponsibilityForRepresentation,Relationship,):1.0
+SubClassOf(ResponsibilityForRepresentation,hasControlled only RepresentationOfThing,):1.0
+SubClassOf(ResponsibilityForRepresentation,hasController only PossibleIndividual,):1.0
+is(Thing,,hasControlled exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasController exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(Role,Class):1.0
+SubClassOf(Role,RoleAndDomain):1.0
+is(RoleAndDomain,Class):1.0
+SubClassOf(RoleAndDomain,Class):1.0
+is(Scale,Class):1.0
+is(Shape,Class):1.0
+SubClassOf(Shape,Property):1.0
+is(Specialization,Class):1.0
+SubClassOf(Specialization,Relationship,):1.0
+SubClassOf(Specialization,hasSubclass only Class,):1.0
+SubClassOf(Specialization,hasSuperclass only Class,):1.0
+is(Thing,,hasSubclass exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasSuperclass exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(SpecializationByDomain,Class):1.0
+SubClassOf(SpecializationByDomain,Specialization,):1.0
+SubClassOf(SpecializationByDomain,hasSubclass only RoleAndDomain):1.0
+DisjointWith(SpecializationByDomain,SpecializationOfIndividualDimensionFromProperty):1.0
+DisjointWith(SpecializationByDomain,SpecializationByRole):1.0
+DisjointWith(SpecializationByDomain,BoundaryOfPropertySpace):1.0
+DisjointWith(SpecializationByDomain,BoundaryOfNumberSpace):1.0
+is(SpecializationByRole,Class):1.0
+SubClassOf(SpecializationByRole,Specialization,):1.0
+SubClassOf(SpecializationByRole,hasSubclass only RoleAndDomain,):1.0
+SubClassOf(SpecializationByRole,hasSuperclass only Role):1.0
+DisjointWith(SpecializationByRole,SpecializationOfIndividualDimensionFromProperty):1.0
+DisjointWith(SpecializationByRole,SpecializationByDomain):1.0
+DisjointWith(SpecializationByRole,BoundaryOfPropertySpace):1.0
+DisjointWith(SpecializationByRole,BoundaryOfNumberSpace):1.0
+is(SpecializationOfIndividualDimensionFromProperty,Class):1.0
+SubClassOf(SpecializationOfIndividualDimensionFromProperty,Specialization,):1.0
+SubClassOf(SpecializationOfIndividualDimensionFromProperty,hasSubclass only IndividualDimension,):1.0
+SubClassOf(SpecializationOfIndividualDimensionFromProperty,hasSuperclass only Property):1.0
+DisjointWith(SpecializationOfIndividualDimensionFromProperty,SpecializationByRole):1.0
+DisjointWith(SpecializationOfIndividualDimensionFromProperty,SpecializationByDomain):1.0
+DisjointWith(SpecializationOfIndividualDimensionFromProperty,BoundaryOfPropertySpace):1.0
+DisjointWith(SpecializationOfIndividualDimensionFromProperty,BoundaryOfNumberSpace):1.0
+is(Status,Class):1.0
+SubClassOf(Status,ClassOfIndividual):1.0
+DisjointWith(Status,Property):1.0
+DisjointWith(Status,IndividualDimension):1.0
+DisjointWith(Status,ClassOfPeriodInTime):1.0
+DisjointWith(Status,ClassOfEvent):1.0
+DisjointWith(Status,ClassOfArrangedIndividual):1.0
+is(TemporalBounding,Class):1.0
+EquivalentTo(TemporalBounding,Beginning or Ending):1.0
+SubClassOf(TemporalBounding,CompositionOfIndividual,):1.0
+SubClassOf(TemporalBounding,hasPart only Event):1.0
+DisjointWith(TemporalBounding,TemporalWholePart):1.0
+DisjointWith(TemporalBounding,Participation):1.0
+DisjointWith(TemporalBounding,ArrangementOfIndividual):1.0
+is(TemporalSequence,Class):1.0
+SubClassOf(TemporalSequence,Relationship,):1.0
+SubClassOf(TemporalSequence,hasPredecessor only PossibleIndividual,):1.0
+SubClassOf(TemporalSequence,hasSuccessor only PossibleIndividual,):1.0
+is(Thing,,hasPredecessor exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasSuccessor exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,UsageOfRepresentation):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(TemporalWholePart,Class):1.0
+SubClassOf(TemporalWholePart,CompositionOfIndividual):1.0
+DisjointWith(TemporalWholePart,TemporalBounding):1.0
+DisjointWith(TemporalWholePart,Participation):1.0
+DisjointWith(TemporalWholePart,ArrangementOfIndividual):1.0
+is(Thing,Class):1.0
+is(UnionOfSetOfClass,Class):1.0
+SubClassOf(UnionOfSetOfClass,FunctionalMapping,):1.0
+SubClassOf(UnionOfSetOfClass,hasInput only EnumeratedSetOfClass,):1.0
+SubClassOf(UnionOfSetOfClass,hasResult only Class):1.0
+is(UpperBoundOfNumberRange,Class):1.0
+SubClassOf(UpperBoundOfNumberRange,Classification,):1.0
+SubClassOf(UpperBoundOfNumberRange,hasClassified only ArithmeticNumber,):1.0
+SubClassOf(UpperBoundOfNumberRange,hasClassifier only NumberRange):1.0
+is(UpperBoundOfPropertyRange,Class):1.0
+SubClassOf(UpperBoundOfPropertyRange,Classification,):1.0
+SubClassOf(UpperBoundOfPropertyRange,hasClassified only Property,):1.0
+SubClassOf(UpperBoundOfPropertyRange,hasClassifier only PropertyRange):1.0
+is(UsageOfRepresentation,Class):1.0
+SubClassOf(UsageOfRepresentation,Relationship,):1.0
+SubClassOf(UsageOfRepresentation,hasUsed only RepresentationOfThing,):1.0
+SubClassOf(UsageOfRepresentation,hasUser only PossibleIndividual,):1.0
+is(Thing,,hasUsed exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,hasUser exactly 1 www.w3.org/2002/07/#):1.0
+DisjointWith(Thing,TemporalSequence):1.0
+DisjointWith(Thing,Specialization):1.0
+DisjointWith(Thing,ResponsibilityForRepresentation):1.0
+DisjointWith(Thing,RepresentationOfThing):1.0
+DisjointWith(Thing,RelativeLocation):1.0
+DisjointWith(Thing,Recognition):1.0
+DisjointWith(Thing,PossibleRoleAndDomain):1.0
+DisjointWith(Thing,OtherRelationship):1.0
+DisjointWith(Thing,LifecycleStage):1.0
+DisjointWith(Thing,InvolvementByReference):1.0
+DisjointWith(Thing,IntendedRoleAndDomain):1.0
+DisjointWith(Thing,IndividualUsedInConnection):1.0
+DisjointWith(Thing,IndirectProperty):1.0
+DisjointWith(Thing,FunctionalMapping):1.0
+DisjointWith(Thing,ConnectionOfIndividual):1.0
+DisjointWith(Thing,CompositionOfIndividual):1.0
+DisjointWith(Thing,ComparisonOfProperty):1.0
+DisjointWith(Thing,Classification):1.0
+DisjointWith(Thing,ClassOfRelationshipWithSignature):1.0
+DisjointWith(Thing,CauseOfEvent):1.0
+DisjointWith(Thing,Approval):1.0
+is(www.co-ode.org/ontologies/list.#,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0

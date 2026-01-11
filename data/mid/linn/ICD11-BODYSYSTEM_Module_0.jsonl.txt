@@ -1,0 +1,14 @@
+predicate(Entity,is,Class).
+predicate(Continuant,is,Class).
+predicate(Continuant,DisjointWith,Occurrent).
+predicate(Occurrent,is,Class).
+predicate(Occurrent,EquivalentTo,ProcessualEntity or SpatiotemporalRegion or TemporalRegion).
+predicate(Occurrent,SubClassOf,Entity).
+predicate(Occurrent,DisjointWith,Continuant).
+predicate(ProcessualEntity,is,Class).
+predicate(ProcessualEntity,SubClassOf,Occurrent).
+predicate(SpatiotemporalRegion,is,Class).
+predicate(SpatiotemporalRegion,SubClassOf,Occurrent).
+predicate(TemporalRegion,is,Class).
+predicate(TemporalRegion,SubClassOf,Occurrent).
+predicate(www.w3.org/2002/07/#,is,Class).

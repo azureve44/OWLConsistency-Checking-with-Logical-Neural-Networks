@@ -1,0 +1,199 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(dateTime,is,Datatype).
+predicate(double,is,Datatype).
+predicate(integer,is,Datatype).
+predicate(string,is,Datatype).
+predicate(MD_DigitalTransferOptions.distributionFormat,is,ObjectProperty).
+predicate(MD_DigitalTransferOptions.distributionFormat,Domain,MD_DigitalTransferOptions).
+predicate(MD_DigitalTransferOptions.distributionFormat,Range,MD_Format).
+predicate(MD_DigitalTransferOptions.offLine,is,ObjectProperty).
+predicate(MD_DigitalTransferOptions.offLine,Domain,MD_DigitalTransferOptions).
+predicate(MD_DigitalTransferOptions.offLine,Range,MD_Medium).
+predicate(MD_DigitalTransferOptions.onLine,is,ObjectProperty).
+predicate(MD_DigitalTransferOptions.onLine,Domain,MD_DigitalTransferOptions).
+predicate(MD_DigitalTransferOptions.onLine,Range,CI_OnlineResource).
+predicate(MD_DigitalTransferOptions.transferFrequency,is,ObjectProperty).
+predicate(MD_DigitalTransferOptions.transferFrequency,Domain,MD_DigitalTransferOptions).
+predicate(MD_DigitalTransferOptions.transferFrequency,Range,TM_PeriodDuration).
+predicate(MD_Distribution.distributionFormat,is,ObjectProperty).
+predicate(MD_Distribution.distributionFormat,Domain,MD_Distribution).
+predicate(MD_Distribution.distributionFormat,Range,MD_Format).
+predicate(MD_Distribution.distributor,is,ObjectProperty).
+predicate(MD_Distribution.distributor,Domain,MD_Distribution).
+predicate(MD_Distribution.distributor,Range,MD_Distributor).
+predicate(MD_Distribution.transferOptions,is,ObjectProperty).
+predicate(MD_Distribution.transferOptions,Domain,MD_Distribution).
+predicate(MD_Distribution.transferOptions,Range,MD_DigitalTransferOptions).
+predicate(MD_Distributor.distributionOrderProcess,is,ObjectProperty).
+predicate(MD_Distributor.distributionOrderProcess,Domain,MD_Distributor).
+predicate(MD_Distributor.distributionOrderProcess,Range,MD_StandardOrderProcess).
+predicate(MD_Distributor.distributorContact,is,ObjectProperty).
+predicate(MD_Distributor.distributorContact,Domain,MD_Distributor).
+predicate(MD_Distributor.distributorContact,Range,CI_Responsibility).
+predicate(MD_Distributor.distributorFormat,is,ObjectProperty).
+predicate(MD_Distributor.distributorFormat,Domain,MD_Distributor).
+predicate(MD_Distributor.distributorFormat,Range,MD_Format).
+predicate(MD_Distributor.distributorFormat,InverseOf,MD_Format.formatDistributor).
+predicate(MD_Distributor.distributorTransferOptions,is,ObjectProperty).
+predicate(MD_Distributor.distributorTransferOptions,Domain,MD_Distributor).
+predicate(MD_Distributor.distributorTransferOptions,Range,MD_DigitalTransferOptions).
+predicate(MD_Format.formatDistributor,is,ObjectProperty).
+predicate(MD_Format.formatDistributor,Domain,MD_Format).
+predicate(MD_Format.formatDistributor,Range,MD_Distributor).
+predicate(MD_Format.formatDistributor,InverseOf,MD_Distributor.distributorFormat).
+predicate(MD_Format.formatSpecificationCitation,is,ObjectProperty).
+predicate(MD_Format.formatSpecificationCitation,Domain,MD_Format).
+predicate(MD_Format.formatSpecificationCitation,Range,CI_Citation).
+predicate(MD_Format.medium,is,ObjectProperty).
+predicate(MD_Format.medium,Domain,MD_Format).
+predicate(MD_Format.medium,Range,MD_Medium).
+predicate(MD_Medium.identifier,is,ObjectProperty).
+predicate(MD_Medium.identifier,Domain,MD_Medium).
+predicate(MD_Medium.identifier,Range,MD_Identifier).
+predicate(MD_Medium.mediumFormat,is,ObjectProperty).
+predicate(MD_Medium.mediumFormat,Domain,MD_Medium).
+predicate(MD_Medium.mediumFormat,Range,MD_MediumFormatCode).
+predicate(MD_Medium.name,is,ObjectProperty).
+predicate(MD_Medium.name,Domain,MD_Medium).
+predicate(MD_Medium.name,Range,CI_Citation).
+predicate(MD_StandardOrderProcess.orderOptions,is,ObjectProperty).
+predicate(MD_StandardOrderProcess.orderOptions,Domain,MD_StandardOrderProcess).
+predicate(MD_StandardOrderProcess.orderOptions,Range,Record).
+predicate(MD_StandardOrderProcess.orderOptionsType,is,ObjectProperty).
+predicate(MD_StandardOrderProcess.orderOptionsType,Domain,MD_StandardOrderProcess).
+predicate(MD_StandardOrderProcess.orderOptionsType,Range,RecordType).
+predicate(MD_DigitalTransferOptions.transferSize,is,DataProperty).
+predicate(MD_DigitalTransferOptions.transferSize,Domain,MD_DigitalTransferOptions).
+predicate(MD_DigitalTransferOptions.transferSize,Range,double).
+predicate(MD_DigitalTransferOptions.unitsOfDistribution,is,DataProperty).
+predicate(MD_DigitalTransferOptions.unitsOfDistribution,Domain,MD_DigitalTransferOptions).
+predicate(MD_DigitalTransferOptions.unitsOfDistribution,Range,string).
+predicate(MD_Distribution.description,is,DataProperty).
+predicate(MD_Distribution.description,Domain,MD_Distribution).
+predicate(MD_Distribution.description,Range,string).
+predicate(MD_Format.amendmentNumber,is,DataProperty).
+predicate(MD_Format.amendmentNumber,Domain,MD_Format).
+predicate(MD_Format.amendmentNumber,Range,string).
+predicate(MD_Format.fileDecompressionTechnique,is,DataProperty).
+predicate(MD_Format.fileDecompressionTechnique,Domain,MD_Format).
+predicate(MD_Format.fileDecompressionTechnique,Range,string).
+predicate(MD_Medium.density,is,DataProperty).
+predicate(MD_Medium.density,Domain,MD_Medium).
+predicate(MD_Medium.density,Range,integer).
+predicate(MD_Medium.densityUnits,is,DataProperty).
+predicate(MD_Medium.densityUnits,Domain,MD_Medium).
+predicate(MD_Medium.densityUnits,Range,string).
+predicate(MD_Medium.mediumNote,is,DataProperty).
+predicate(MD_Medium.mediumNote,Domain,MD_Medium).
+predicate(MD_Medium.mediumNote,Range,string).
+predicate(MD_Medium.volumes,is,DataProperty).
+predicate(MD_Medium.volumes,Domain,MD_Medium).
+predicate(MD_Medium.volumes,Range,integer).
+predicate(MD_StandardOrderProcess.fees,is,DataProperty).
+predicate(MD_StandardOrderProcess.fees,Domain,MD_StandardOrderProcess).
+predicate(MD_StandardOrderProcess.fees,Range,string).
+predicate(MD_StandardOrderProcess.orderingInstructions,is,DataProperty).
+predicate(MD_StandardOrderProcess.orderingInstructions,Domain,MD_StandardOrderProcess).
+predicate(MD_StandardOrderProcess.orderingInstructions,Range,string).
+predicate(MD_StandardOrderProcess.plannedAvailableDateTime,is,DataProperty).
+predicate(MD_StandardOrderProcess.plannedAvailableDateTime,Domain,MD_StandardOrderProcess).
+predicate(MD_StandardOrderProcess.plannedAvailableDateTime,Range,dateTime).
+predicate(MD_StandardOrderProcess.turnaround,is,DataProperty).
+predicate(MD_StandardOrderProcess.turnaround,Domain,MD_StandardOrderProcess).
+predicate(MD_StandardOrderProcess.turnaround,Range,string).
+predicate(Record,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(RecordType,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(TM_PeriodDuration,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_Citation,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_OnlineResource,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CI_Responsibility,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_Identifier,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(MD_DigitalTransferOptions,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_DigitalTransferOptions.distributionFormat only MD_Format,).
+predicate(Thing,,is,MD_DigitalTransferOptions.offLine only MD_Medium,).
+predicate(Thing,,is,MD_DigitalTransferOptions.onLine only CI_OnlineResource,).
+predicate(Thing,,is,MD_DigitalTransferOptions.transferFrequency only TM_PeriodDuration,).
+predicate(Thing,,is,MD_DigitalTransferOptions.transferFrequency max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_DigitalTransferOptions.transferSize only double,).
+predicate(Thing,,is,MD_DigitalTransferOptions.unitsOfDistribution only string,).
+predicate(Literal,,is,MD_DigitalTransferOptions.transferSize max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,MD_DigitalTransferOptions.unitsOfDistribution max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Distribution,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Distribution.distributionFormat only MD_Format,).
+predicate(Thing,,is,MD_Distribution.distributor only MD_Distributor,).
+predicate(Thing,,is,MD_Distribution.transferOptions only MD_DigitalTransferOptions,).
+predicate(Thing,,is,MD_Distribution.description only string,).
+predicate(Literal,is,MD_Distribution.description max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Distributor,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Distributor.distributionOrderProcess only MD_StandardOrderProcess,).
+predicate(Thing,,is,MD_Distributor.distributorContact only CI_Responsibility,).
+predicate(Thing,,is,MD_Distributor.distributorFormat only MD_Format,).
+predicate(Thing,,is,MD_Distributor.distributorTransferOptions only MD_DigitalTransferOptions,).
+predicate(Thing,is,MD_Distributor.distributorContact exactly 1 www.w3.org/2002/07/#).
+predicate(MD_Format,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Format.formatDistributor only MD_Distributor,).
+predicate(Thing,,is,MD_Format.formatSpecificationCitation only CI_Citation,).
+predicate(Thing,,is,MD_Format.medium only MD_Medium,).
+predicate(Thing,,is,MD_Format.formatSpecificationCitation exactly 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Format.amendmentNumber only string,).
+predicate(Thing,,is,MD_Format.fileDecompressionTechnique only string,).
+predicate(Literal,,is,MD_Format.amendmentNumber max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,MD_Format.fileDecompressionTechnique max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_Medium,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Medium.identifier only MD_Identifier,).
+predicate(Thing,,is,MD_Medium.mediumFormat only MD_MediumFormatCode,).
+predicate(Thing,,is,MD_Medium.name only CI_Citation,).
+predicate(Thing,,is,MD_Medium.identifier max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Medium.name max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_Medium.density only integer,).
+predicate(Thing,,is,MD_Medium.densityUnits only string,).
+predicate(Thing,,is,MD_Medium.mediumNote only string,).
+predicate(Thing,,is,MD_Medium.volumes only integer,).
+predicate(Literal,,is,MD_Medium.density max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,MD_Medium.densityUnits max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,MD_Medium.mediumNote max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,MD_Medium.volumes max 1 www.w3.org/2000/01/-schema#).
+predicate(MD_MediumFormatCode,is,Class).
+predicate(MD_StandardOrderProcess,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_StandardOrderProcess.orderOptions only Record,).
+predicate(Thing,,is,MD_StandardOrderProcess.orderOptionsType only RecordType,).
+predicate(Thing,,is,MD_StandardOrderProcess.orderOptions max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_StandardOrderProcess.orderOptionsType max 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,MD_StandardOrderProcess.fees only string,).
+predicate(Thing,,is,MD_StandardOrderProcess.orderingInstructions only string,).
+predicate(Thing,,is,MD_StandardOrderProcess.plannedAvailableDateTime only dateTime,).
+predicate(Thing,,is,MD_StandardOrderProcess.turnaround only string,).
+predicate(Literal,,is,MD_StandardOrderProcess.fees max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,MD_StandardOrderProcess.orderingInstructions max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,MD_StandardOrderProcess.plannedAvailableDateTime max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,MD_StandardOrderProcess.turnaround max 1 www.w3.org/2000/01/-schema#).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(MD_MediumFormatCode,is,Individual).
+predicate(MD_MediumFormatCodeCollection,is,Individual).
+predicate(MD_MediumFormatCode/,is,Individual).
+predicate(MD_MediumFormatCode/,Types,MD_MediumFormatCode).
+predicate(MD_MediumFormatCode/,is,Individual).
+predicate(MD_MediumFormatCode/,Types,MD_MediumFormatCode).
+predicate(MD_MediumFormatCode/,is,Individual).
+predicate(MD_MediumFormatCode/,Types,MD_MediumFormatCode).
+predicate(MD_MediumFormatCode/,is,Individual).
+predicate(MD_MediumFormatCode/,Types,MD_MediumFormatCode).
+predicate(MD_MediumFormatCode/,is,Individual).
+predicate(MD_MediumFormatCode/,Types,MD_MediumFormatCode).
+predicate(MD_MediumFormatCode/,is,Individual).
+predicate(MD_MediumFormatCode/,Types,MD_MediumFormatCode).
+predicate(MD_MediumFormatCode/,is,Individual).
+predicate(MD_MediumFormatCode/,Types,MD_MediumFormatCode).

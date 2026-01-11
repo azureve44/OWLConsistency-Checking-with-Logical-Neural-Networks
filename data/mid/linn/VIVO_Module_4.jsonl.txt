@@ -1,0 +1,256 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(anyURI,is,Datatype).
+predicate(boolean,is,Datatype).
+predicate(int,is,Datatype).
+predicate(string,is,Datatype).
+predicate(RO_0000052,is,ObjectProperty).
+predicate(RO_0000052,Characteristics,Functional).
+predicate(RO_0000052,Domain,BFO_0000020).
+predicate(RO_0000052,Range,BFO_0000004).
+predicate(RO_0000052,InverseOf,RO_0000053).
+predicate(RO_0000053,is,ObjectProperty).
+predicate(RO_0000053,InverseOf,RO_0000052).
+predicate(assignedBy,is,ObjectProperty).
+predicate(dateIssued,is,ObjectProperty).
+predicate(dateTimeInterval,is,ObjectProperty).
+predicate(dateTimeValue,is,ObjectProperty).
+predicate(degreeCandidacy,is,ObjectProperty).
+predicate(degreeCandidacy,Domain,AdvisingRelationship).
+predicate(degreeCandidacy,Range,AcademicDegree).
+predicate(expirationDate,is,ObjectProperty).
+predicate(fundingVehicleFor,is,ObjectProperty).
+predicate(fundingVehicleFor,Domain,Grant).
+predicate(fundingVehicleFor,InverseOf,hasFundingVehicle).
+predicate(grantSubcontractedThrough,is,ObjectProperty).
+predicate(grantSubcontractedThrough,Domain,Grant).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(Organization,InverseOf,subcontractsGrant).
+predicate(hasFundingVehicle,is,ObjectProperty).
+predicate(hasFundingVehicle,InverseOf,fundingVehicleFor).
+predicate(hasSubjectArea,is,ObjectProperty).
+predicate(relates,is,ObjectProperty).
+predicate(sponsoredBy,is,ObjectProperty).
+predicate(sponsoredBy,Domain,Award).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(Organization,InverseOf,sponsors).
+predicate(sponsors,is,ObjectProperty).
+predicate(sponsors,InverseOf,sponsoredBy).
+predicate(subcontractsGrant,is,ObjectProperty).
+predicate(subcontractsGrant,InverseOf,grantSubcontractedThrough).
+predicate(supportedInformationResource,is,ObjectProperty).
+predicate(validIn,is,ObjectProperty).
+predicate(abstract,is,DataProperty).
+predicate(description,is,DataProperty).
+predicate(hideFromDisplay,is,DataProperty).
+predicate(hrJobTitle,is,DataProperty).
+predicate(hrJobTitle,Domain,Position).
+predicate(isCorrespondingAuthor,is,DataProperty).
+predicate(isCorrespondingAuthor,Characteristics,Functional).
+predicate(isCorrespondingAuthor,Domain,Authorship).
+predicate(isCorrespondingAuthor,Range,boolean).
+predicate(licenseNumber,is,DataProperty).
+predicate(licenseNumber,Domain,Licensure).
+predicate(rank,is,DataProperty).
+predicate(geo,is,DataProperty).
+predicate(geo,Domain,Geo).
+predicate(geo,Range,anyURI).
+predicate(language,is,DataProperty).
+predicate(organizationName,is,DataProperty).
+predicate(organizationName,Domain,OrganizationName).
+predicate(organizationName,Range,string).
+predicate(sortAs,is,DataProperty).
+predicate(timeZone,is,DataProperty).
+predicate(ARG_2000021,is,Class).
+predicate(ARG_2000021,SubClassOf,BFO_0000019).
+predicate(ARG_2000022,is,Class).
+predicate(ARG_2000022,SubClassOf,BFO_0000019).
+predicate(BFO_0000002,is,Class).
+predicate(BFO_0000004,is,Class).
+predicate(BFO_0000017,is,Class).
+predicate(BFO_0000017,SubClassOf,BFO_0000020).
+predicate(BFO_0000017,DisjointWith,BFO_0000019).
+predicate(BFO_0000019,is,Class).
+predicate(BFO_0000019,SubClassOf,BFO_0000020).
+predicate(BFO_0000019,DisjointWith,BFO_0000017).
+predicate(BFO_0000020,is,Class).
+predicate(BFO_0000020,SubClassOf,BFO_0000002).
+predicate(BFO_0000023,is,Class).
+predicate(ERO_0000778,is,Class).
+predicate(ERO_0000780,is,Class).
+predicate(ERO_0000780,SubClassOf,ERO_0000778).
+predicate(IAO_0000030,is,Class).
+predicate(OBI_0000571,is,Class).
+predicate(OBI_0000835,is,Class).
+predicate(Organization or ns.com/foaf/0.1/,is,(ns.com/foaf/0.1/).
+predicate(Agent,is,ns.com/foaf/0.1/).
+predicate(AcademicDegree,is,Class).
+predicate(AcademicTerm,is,Class).
+predicate(AcademicTerm,SubClassOf,DateTimeInterval).
+predicate(AdviseeRole,is,Class).
+predicate(AdvisingRelationship,is,Class).
+predicate(AdvisingRelationship,SubClassOf,Relationship,).
+predicate(AdvisingRelationship,SubClassOf,relates some AdviseeRole,).
+predicate(AdvisingRelationship,SubClassOf,relates some AdvisorRole,).
+predicate(Person,,is,relates some ns.com/foaf/0.1/).
+predicate(Person,,is,dateTimeInterval only DateTimeInterval,).
+predicate(Thing,is,hasSubjectArea only www.w3.org/2002/07/#).
+predicate(AdvisorRole,is,Class).
+predicate(Authorship,is,Class).
+predicate(Authorship,SubClassOf,Relationship,).
+predicate(Authorship,SubClassOf,relates some IAO_0000030,).
+predicate(Agent,,is,relates some ns.com/foaf/0.1/).
+predicate(Agent,,is,hideFromDisplay only boolean).
+predicate(Award,is,Class).
+predicate(AwardReceipt,is,Class).
+predicate(AwardReceipt,SubClassOf,Relationship,).
+predicate(AwardReceipt,SubClassOf,relates some Award,).
+predicate(Agent,,is,relates some ns.com/foaf/0.1/).
+predicate(Organization,,is,assignedBy only ns.com/foaf/0.1/).
+predicate(Organization,,is,dateTimeInterval only DateTimeInterval,).
+predicate(Organization,,is,dateTimeValue only DateTimeValue,).
+predicate(Literal,is,description only www.w3.org/2000/01/-schema#).
+predicate(AwardedDegree,is,Class).
+predicate(AwardedDegree,SubClassOf,Relationship,).
+predicate(AwardedDegree,SubClassOf,relates some AcademicDegree,).
+predicate(Person,is,relates some ns.com/foaf/0.1/).
+predicate(Certification,is,Class).
+predicate(Certification,SubClassOf,IssuedCredential).
+predicate(CoPrincipalInvestigatorRole,is,Class).
+predicate(CoPrincipalInvestigatorRole,SubClassOf,InvestigatorRole).
+predicate(Contract,is,Class).
+predicate(Contract,SubClassOf,Relationship,).
+predicate(Contract,SubClassOf,relates some BFO_0000023,).
+predicate(Agent,,is,relates some ns.com/foaf/0.1/).
+predicate(Organization,,is,assignedBy only ns.com/foaf/0.1/).
+predicate(Organization,,is,dateTimeInterval only DateTimeInterval,).
+predicate(Organization,,is,supportedInformationResource only IAO_0000030,).
+predicate(Literal,is,abstract only www.w3.org/2000/01/-schema#).
+predicate(CoreLaboratory,is,Class).
+predicate(CoreLaboratory,SubClassOf,ServiceProvidingLaboratory).
+predicate(Credential,is,Class).
+predicate(DateTimeInterval,is,Class).
+predicate(DateTimeValue,is,Class).
+predicate(Editorship,is,Class).
+predicate(Editorship,SubClassOf,Relationship,).
+predicate(Editorship,SubClassOf,relates some IAO_0000030,).
+predicate(Agent,is,relates some ns.com/foaf/0.1/).
+predicate(FacultyAdministrativePosition,is,Class).
+predicate(FacultyAdministrativePosition,SubClassOf,Position).
+predicate(FacultyMentoringRelationship,is,Class).
+predicate(FacultyMentoringRelationship,SubClassOf,AdvisingRelationship).
+predicate(FacultyPosition,is,Class).
+predicate(FacultyPosition,SubClassOf,Position).
+predicate(GeographicLocation,is,Class).
+predicate(GraduateAdvisingRelationship,is,Class).
+predicate(GraduateAdvisingRelationship,SubClassOf,AdvisingRelationship).
+predicate(Grant,is,Class).
+predicate(Grant,SubClassOf,Relationship,).
+predicate(Grant,SubClassOf,relates some BFO_0000023,).
+predicate(Agent,,is,relates some ns.com/foaf/0.1/).
+predicate(Organization,,is,assignedBy only ns.com/foaf/0.1/).
+predicate(Organization,,is,dateTimeInterval only DateTimeInterval,).
+predicate(Organization,,is,supportedInformationResource only IAO_0000030,).
+predicate(Literal,is,abstract only www.w3.org/2000/01/-schema#).
+predicate(InvestigatorRole,is,Class).
+predicate(IssuedCredential,is,Class).
+predicate(IssuedCredential,SubClassOf,Relationship,).
+predicate(IssuedCredential,SubClassOf,relates some Credential,).
+predicate(Agent,,is,relates some ns.com/foaf/0.1/).
+predicate(Agent,,is,dateIssued only DateTimeValue,).
+predicate(Agent,,is,expirationDate only DateTimeValue,).
+predicate(Thing,,is,hasSubjectArea only www.w3.org/2002/07/#).
+predicate(Thing,,is,validIn only GeographicLocation,).
+predicate(Literal,is,description only www.w3.org/2000/01/-schema#).
+predicate(LibrarianPosition,is,Class).
+predicate(LibrarianPosition,SubClassOf,Position).
+predicate(License,is,Class).
+predicate(License,SubClassOf,Credential).
+predicate(Licensure,is,Class).
+predicate(Licensure,SubClassOf,IssuedCredential).
+predicate(NonAcademic,is,Class).
+predicate(Person,is,ns.com/foaf/0.1/).
+predicate(NonAcademicPosition,is,Class).
+predicate(NonAcademicPosition,SubClassOf,Position).
+predicate(NonFacultyAcademicPosition,is,Class).
+predicate(NonFacultyAcademicPosition,SubClassOf,Position).
+predicate(Position,is,Class).
+predicate(Position,SubClassOf,Relationship,).
+predicate(Organization,,is,relates some ns.com/foaf/0.1/).
+predicate(Person,,is,relates some ns.com/foaf/0.1/).
+predicate(Person,,is,dateTimeInterval only DateTimeInterval,).
+predicate(Person,,is,rank only int).
+predicate(PostdocOrFellowAdvisingRelationship,is,Class).
+predicate(PostdocOrFellowAdvisingRelationship,SubClassOf,AdvisingRelationship).
+predicate(PostdocPosition,is,Class).
+predicate(PostdocPosition,SubClassOf,NonFacultyAcademicPosition).
+predicate(PrimaryPosition,is,Class).
+predicate(PrimaryPosition,SubClassOf,Position).
+predicate(Relationship,is,Class).
+predicate(Relationship,SubClassOf,BFO_0000020).
+predicate(ServiceProvidingLaboratory,is,Class).
+predicate(UndergraduateAdvisingRelationship,is,Class).
+predicate(UndergraduateAdvisingRelationship,SubClassOf,AdvisingRelationship).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(Cell,is,Class).
+predicate(Cell,SubClassOf,TelephoneType).
+predicate(Code,is,Class).
+predicate(Coworker,is,Class).
+predicate(Coworker,SubClassOf,RelatedType).
+predicate(Fax,is,Class).
+predicate(Fax,SubClassOf,TelephoneType).
+predicate(Female,is,Class).
+predicate(Female,SubClassOf,Gender).
+predicate(Gender,is,Class).
+predicate(Gender,SubClassOf,Code).
+predicate(Geo,is,Class).
+predicate(Geo,EquivalentTo,(geo some anyURI)).
+predicate(Geo,SubClassOf,Geographical).
+predicate(Geographical,is,Class).
+predicate(Home,is,Class).
+predicate(Home,SubClassOf,Type).
+predicate(Logo,is,Class).
+predicate(Logo,SubClassOf,Organizational).
+predicate(Male,is,Class).
+predicate(Male,SubClassOf,Gender).
+predicate(Muse,is,Class).
+predicate(Muse,SubClassOf,RelatedType).
+predicate(None,is,Class).
+predicate(None,SubClassOf,Gender).
+predicate(OrganizationName,is,Class).
+predicate(OrganizationName,EquivalentTo,(organizationName some string)).
+predicate(OrganizationName,SubClassOf,Organizational).
+predicate(OrganizationUnitName,is,Class).
+predicate(OrganizationUnitName,SubClassOf,OrganizationName).
+predicate(Organizational,is,Class).
+predicate(Literal)) and ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema#,is,((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Other,is,Class).
+predicate(Other,SubClassOf,Gender).
+predicate(Pager,is,Class).
+predicate(Pager,SubClassOf,TelephoneType).
+predicate(Related,is,Class).
+predicate(Related,SubClassOf,Organizational).
+predicate(RelatedType,is,Class).
+predicate(Sibling,is,Class).
+predicate(Sibling,SubClassOf,RelatedType).
+predicate(TelephoneType,is,Class).
+predicate(TelephoneType,SubClassOf,Code).
+predicate(Text,is,Class).
+predicate(Text,SubClassOf,TelephoneType).
+predicate(TextPhone,is,Class).
+predicate(TextPhone,SubClassOf,TelephoneType).
+predicate(Title,is,Class).
+predicate(Title,SubClassOf,Organizational).
+predicate(Type,is,Class).
+predicate(Type,SubClassOf,Code).
+predicate(Unknown,is,Class).
+predicate(Unknown,SubClassOf,Gender).
+predicate(Video,is,Class).
+predicate(Video,SubClassOf,TelephoneType).
+predicate(Voice,is,Class).
+predicate(Voice,SubClassOf,TelephoneType).
+predicate(Work,is,Class).
+predicate(Work,SubClassOf,Type).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(ns.com/foaf/0.1/,is,Class).

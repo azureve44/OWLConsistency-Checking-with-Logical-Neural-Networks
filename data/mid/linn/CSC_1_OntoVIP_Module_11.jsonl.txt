@@ -1,0 +1,187 @@
+predicate(has-for-proper-part,is,ObjectProperty).
+predicate(is-a-part-of,is,ObjectProperty).
+predicate(affects-at,is,ObjectProperty).
+predicate(has-for-agent-at,is,ObjectProperty).
+predicate(has-for-date,is,ObjectProperty).
+predicate(has-for-instrument-at,is,ObjectProperty).
+predicate(has-for-name,is,ObjectProperty).
+predicate(has-for-result-at,is,ObjectProperty).
+predicate(is-referred-to-by,is,ObjectProperty).
+predicate(is-supervised-by-at,is,ObjectProperty).
+predicate(involves,is,ObjectProperty).
+predicate(involves,Domain,study).
+predicate(involves,Range,subject).
+predicate(involves,InverseOf,is-involved-in).
+predicate(involves-as-healthy-volunteer,is,ObjectProperty).
+predicate(involves-as-healthy-volunteer,SubPropertyOf,involves).
+predicate(involves-as-healthy-volunteer,Domain,study).
+predicate(involves-as-healthy-volunteer,Range,healthy-volunteer).
+predicate(involves-as-patient,is,ObjectProperty).
+predicate(involves-as-patient,SubPropertyOf,involves).
+predicate(involves-as-patient,Domain,study).
+predicate(involves-as-patient,Range,patient).
+predicate(is-involved-in,is,ObjectProperty).
+predicate(is-involved-in,InverseOf,involves).
+predicate(non-physically-involves,is,ObjectProperty).
+predicate(non-physically-involves,SubPropertyOf,involves).
+predicate(physically-involves,is,ObjectProperty).
+predicate(physically-involves,SubPropertyOf,involves).
+predicate(CT-dataset,is,Class).
+predicate(EEG-dataset,is,Class).
+predicate(EEG-dataset,DisjointWith,has-for-name value without-magnetization-transfer).
+predicate(MEG-dataset,is,Class).
+predicate(MR-dataset,is,Class).
+predicate(PET-dataset,is,Class).
+predicate(SPECT-dataset,is,Class).
+predicate(dataset,is,Class).
+predicate(action,is,Class).
+predicate(conceptual-action,is,Class).
+predicate(conceptual-action,SubClassOf,non-physical-action).
+predicate(date,is,Class).
+predicate(name,is,Class).
+predicate(non-physical-action,is,Class).
+predicate(non-physical-action,SubClassOf,action,).
+predicate(non-physical-action,SubClassOf,radio-frequency-signal-acquisition).
+predicate(publishing,is,Class).
+predicate(publishing,SubClassOf,symbolic-action).
+predicate(symbolic-action,is,Class).
+predicate(symbolic-action,SubClassOf,non-physical-action).
+predicate(CT-dataset-acquisition,is,Class).
+predicate(CT-dataset-acquisition,SubClassOf,dataset-acquisition,).
+predicate(CT-dataset-acquisition,SubClassOf,has-for-instrument-at some CT-equipment,).
+predicate(CT-dataset-acquisition,SubClassOf,has-for-result-at some CT-dataset).
+predicate(CT-equipment,is,Class).
+predicate(EEG-dataset-acquisition,is,Class).
+predicate(EEG-dataset-acquisition,SubClassOf,dataset-acquisition,).
+predicate(EEG-dataset-acquisition,SubClassOf,has-for-instrument-at some EEG-equipment,).
+predicate(EEG-dataset-acquisition,SubClassOf,has-for-result-at some EEG-dataset,).
+predicate(EEG-dataset-acquisition,SubClassOf,has-for-result-at only (has-for-name value without-magnetization-transfer)).
+predicate(EEG-equipment,is,Class).
+predicate(MEG-dataset-acquisition,is,Class).
+predicate(MEG-dataset-acquisition,SubClassOf,dataset-acquisition,).
+predicate(MEG-dataset-acquisition,SubClassOf,has-for-instrument-at some MEG-equipment,).
+predicate(MEG-dataset-acquisition,SubClassOf,has-for-result-at some MEG-dataset).
+predicate(MEG-equipment,is,Class).
+predicate(MR-dataset-acquisition,is,Class).
+predicate(MR-dataset-acquisition,SubClassOf,dataset-acquisition,).
+predicate(MR-dataset-acquisition,SubClassOf,has-for-instrument-at some MR-equipment,).
+predicate(MR-dataset-acquisition,SubClassOf,has-for-result-at some MR-dataset,).
+predicate(MR-dataset-acquisition,SubClassOf,has-for-instrument-at exactly 1 MR-sequence,).
+predicate(MR-dataset-acquisition,SubClassOf,has-for-instrument-at exactly 1 planned-acquisition-MR-protocol).
+predicate(MR-equipment,is,Class).
+predicate(MR-sequence,is,Class).
+predicate(PET-dataset-acquisition,is,Class).
+predicate(PET-dataset-acquisition,SubClassOf,dataset-acquisition,).
+predicate(PET-dataset-acquisition,SubClassOf,has-for-instrument-at some PET-equipment,).
+predicate(PET-dataset-acquisition,SubClassOf,has-for-result-at some PET-dataset).
+predicate(PET-equipment,is,Class).
+predicate(SPECT-dataset-acquisition,is,Class).
+predicate(SPECT-dataset-acquisition,SubClassOf,dataset-acquisition,).
+predicate(SPECT-dataset-acquisition,SubClassOf,has-for-instrument-at some SPECT-equipment,).
+predicate(SPECT-dataset-acquisition,SubClassOf,has-for-result-at some SPECT-dataset).
+predicate(SPECT-equipment,is,Class).
+predicate(acquisition-with-magnetization-transfer,is,Class).
+predicate(acquisition-with-magnetization-transfer,SubClassOf,radio-frequency-signal-acquisition,).
+predicate(acquisition-with-magnetization-transfer,SubClassOf,has-for-name value with-magnetization-transfer).
+predicate(acquisition-without-magnetization-transfer,is,Class).
+predicate(acquisition-without-magnetization-transfer,SubClassOf,radio-frequency-signal-acquisition,).
+predicate(acquisition-without-magnetization-transfer,SubClassOf,has-for-name value without-magnetization-transfer).
+predicate(dataset-acquisition,is,Class).
+predicate(dataset-acquisition,SubClassOf,conceptual-action,).
+predicate(dataset-acquisition,SubClassOf,has-for-instrument-at some dataset-acquisition-equipment,).
+predicate(dataset-acquisition,SubClassOf,has-for-result-at some dataset).
+predicate(dataset-acquisition-equipment,is,Class).
+predicate(multi-channel-coil,is,Class).
+predicate(non-parallel-RF-signal-acquisition,is,Class).
+predicate(non-parallel-RF-signal-acquisition,SubClassOf,radio-frequency-signal-acquisition,).
+predicate(non-parallel-RF-signal-acquisition,SubClassOf,has-for-instrument-at some one-channel-coil,).
+predicate(non-parallel-RF-signal-acquisition,SubClassOf,has-for-name value non-parallel).
+predicate(one-channel-coil,is,Class).
+predicate(parallel-RF-signal-acquisition,is,Class).
+predicate(parallel-RF-signal-acquisition,SubClassOf,radio-frequency-signal-acquisition,).
+predicate(parallel-RF-signal-acquisition,SubClassOf,has-for-instrument-at some multi-channel-coil,).
+predicate(parallel-RF-signal-acquisition,SubClassOf,has-for-name value parallel).
+predicate(planned-acquisition-MR-protocol,is,Class).
+predicate(radio-frequency-signal-acquisition,is,Class).
+predicate(radio-frequency-signal-acquisition,SubClassOf,conceptual-action,).
+predicate(radio-frequency-signal-acquisition,SubClassOf,has-for-instrument-at some receiving-coil,).
+predicate(radio-frequency-signal-acquisition,SubClassOf,has-for-instrument-at some transmitting-coil,).
+predicate(radio-frequency-signal-acquisition,SubClassOf,is-a-part-of exactly 1 MR-dataset-acquisition,).
+predicate(radio-frequency-signal-acquisition,SubClassOf,has-for-name exactly 1 name).
+predicate(receiving-coil,is,Class).
+predicate(transmitting-coil,is,Class).
+predicate(MR-examination,is,Class).
+predicate(MR-examination,SubClassOf,examination).
+predicate(behavioural-examination,is,Class).
+predicate(behavioural-examination,SubClassOf,examination).
+predicate(centre,is,Class).
+predicate(cerebral-evoked-potential-examination,is,Class).
+predicate(cerebral-evoked-potential-examination,SubClassOf,examination).
+predicate(clinical-study,is,Class).
+predicate(clinical-study,SubClassOf,study).
+predicate(coordinator,is,Class).
+predicate(diagnosis-examination,is,Class).
+predicate(diagnosis-examination,SubClassOf,examination).
+predicate(ethics-committee-authorization,is,Class).
+predicate(evaluation-examination,is,Class).
+predicate(evaluation-examination,SubClassOf,examination).
+predicate(examination,is,Class).
+predicate(examination,SubClassOf,conceptual-action,).
+predicate(examination,SubClassOf,is-supervised-by-at some examination-executive,).
+predicate(examination,SubClassOf,affects-at exactly 1 subject,).
+predicate(examination,SubClassOf,has-for-agent-at exactly 1 centre,).
+predicate(examination,SubClassOf,has-for-date exactly 1 date).
+predicate(examination-executive,is,Class).
+predicate(experimental-psychology-examination,is,Class).
+predicate(experimental-psychology-examination,EquivalentTo,neuro-psychological-examination).
+predicate(experimental-psychology-examination,SubClassOf,psychological-examination).
+predicate(experimental-psychology-examination,DisjointWith,neuro-psychological-examination).
+predicate(finished-study,is,Class).
+predicate(finished-study,SubClassOf,study).
+predicate(follow-up-examination,is,Class).
+predicate(follow-up-examination,SubClassOf,examination).
+predicate(healthy-volunteer,is,Class).
+predicate(laboratory-examination,is,Class).
+predicate(laboratory-examination,SubClassOf,examination).
+predicate(main-investigator,is,Class).
+predicate(medical-doctor,is,Class).
+predicate(mono-centre-study,is,Class).
+predicate(mono-centre-study,SubClassOf,study,).
+predicate(mono-centre-study,SubClassOf,has-for-agent-at exactly 1 centre,).
+predicate(mono-centre-study,SubClassOf,is-supervised-by-at exactly 1 main-investigator).
+predicate(multi-centre-study,is,Class).
+predicate(multi-centre-study,SubClassOf,study,).
+predicate(multi-centre-study,SubClassOf,has-for-agent-at some centre,).
+predicate(multi-centre-study,SubClassOf,is-supervised-by-at exactly 1 coordinator).
+predicate(neuro-clinical-examination,is,Class).
+predicate(neuro-clinical-examination,SubClassOf,examination).
+predicate(neuro-psychological-examination,is,Class).
+predicate(neuro-psychological-examination,EquivalentTo,experimental-psychology-examination).
+predicate(neuro-psychological-examination,SubClassOf,psychological-examination).
+predicate(neuro-psychological-examination,DisjointWith,experimental-psychology-examination).
+predicate(patient,is,Class).
+predicate(psychological-examination,is,Class).
+predicate(psychological-examination,SubClassOf,examination).
+predicate(psychophysical-examination,is,Class).
+predicate(psychophysical-examination,SubClassOf,experimental-psychology-examination).
+predicate(study,is,Class).
+predicate(study,SubClassOf,conceptual-action,).
+predicate(study,SubClassOf,has-for-name some name,).
+predicate(study,SubClassOf,involves some subject).
+predicate(study-in-progress,is,Class).
+predicate(study-in-progress,SubClassOf,study).
+predicate(study-with-examination,is,Class).
+predicate(study-with-examination,SubClassOf,study,).
+predicate(study-with-examination,SubClassOf,has-for-proper-part some examination,).
+predicate(study-with-examination,SubClassOf,is-referred-to-by some ethics-committee-authorization,).
+predicate(study-with-examination,SubClassOf,is-supervised-by-at some medical-doctor).
+predicate(study-without-examination,is,Class).
+predicate(study-without-examination,SubClassOf,study).
+predicate(subject,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(non-parallel,is,Individual).
+predicate(parallel,is,Individual).
+predicate(with-magnetization-transfer,is,Individual).
+predicate(without-magnetization-transfer,is,Individual).
+predicate(without-magnetization-transfer,DisjointClasses,CT-dataset-acquisition,EEG-dataset-acquisition,MEG-dataset-acquisition,MR-dataset-acquisition,PET-dataset-acquisition,SPECT-dataset-acquisition).
+predicate(without-magnetization-transfer,DisjointClasses,MR-examination,behavioural-examination,cerebral-evoked-potential-examination,laboratory-examination,neuro-clinical-examination,psychological-examination).

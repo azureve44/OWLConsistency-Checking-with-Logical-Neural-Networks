@@ -1,0 +1,88 @@
+predicate(BFO_0000075,is,ObjectProperty).
+predicate(IAO_0000136,is,ObjectProperty).
+predicate(OBI_0000293,is,ObjectProperty).
+predicate(OBI_0000299,is,ObjectProperty).
+predicate(OBI_0000312,is,ObjectProperty).
+predicate(OBI_0000846,is,ObjectProperty).
+predicate(OMRSE_00000020,is,ObjectProperty).
+predicate(OOSTT_00000278,is,ObjectProperty).
+predicate(RO_0000052,is,ObjectProperty).
+predicate(RO_0000053,is,ObjectProperty).
+predicate(BFO_0000040,is,Class).
+predicate(IAO_0000033,is,Class).
+predicate(IAO_0021001,is,Class).
+predicate(IAO_0021016,is,Class).
+predicate(MAXO_0000502,is,Class).
+predicate(MONDO_0001208,is,Class).
+predicate(MONDO_0001208,SubClassOf,MONDO_0021113).
+predicate(MONDO_0005275,is,Class).
+predicate(MONDO_0021113,is,Class).
+predicate(MONDO_0021113,SubClassOf,MONDO_0005275).
+predicate(NCBITaxon_9606,is,Class).
+predicate(OBI_0100026,is,Class).
+predicate(OMRSE_00000022,is,Class).
+predicate(OMRSE_00000022,EquivalentTo,OMRSE_00000020 some OBI_0100026).
+predicate(OMRSE_00000022,SubClassOf,BFO_0000040).
+predicate(OMRSE_00000022,DisjointWith,OMRSE_00000020 some OBI_0100026).
+predicate(OMRSE_00000023,is,Class).
+predicate(OMRSE_00000023,SubClassOf,OMRSE_00000022).
+predicate(OMRSE_00000077,is,Class).
+predicate(OMRSE_00000077,SubClassOf,OMRSE_00000086).
+predicate(OMRSE_00000085,is,Class).
+predicate(OMRSE_00000086,is,Class).
+predicate(OMRSE_00000086,SubClassOf,OMRSE_00000085).
+predicate(OOSTT_00000015,is,Class).
+predicate(OOSTT_00000020,is,Class).
+predicate(OOSTT_00000020,SubClassOf,IAO_0021001).
+predicate(OOSTT_00000027,is,Class).
+predicate(OOSTT_00000027,SubClassOf,OOSTT_00000029).
+predicate(OOSTT_00000029,is,Class).
+predicate(OOSTT_00000052,is,Class).
+predicate(OOSTT_00000052,SubClassOf,ObsoleteClass).
+predicate(OOSTT_00000165,is,Class).
+predicate(OOSTT_00000165,SubClassOf,OOSTT_00000170).
+predicate(OOSTT_00000165,DisjointWith,NCBITaxon_9606 and (not (RO_0000053 some OOSTT_00000171)) and (RO_0000053 some OOSTT_00000173)).
+predicate(OOSTT_00000168,is,Class).
+predicate(OOSTT_00000168,SubClassOf,OOSTT_00000165).
+predicate(OOSTT_00000169,is,Class).
+predicate(OOSTT_00000170,is,Class).
+predicate(OOSTT_00000170,SubClassOf,OOSTT_00000168).
+predicate(OOSTT_00000171,is,Class).
+predicate(OOSTT_00000172,is,Class).
+predicate(OOSTT_00000173,is,Class).
+predicate(OOSTT_00000174,is,Class).
+predicate(OOSTT_00000174,SubClassOf,OOSTT_00000165,).
+predicate(OOSTT_00000174,SubClassOf,BFO_0000075 some).
+predicate(OOSTT_00000174,SubClassOf,(NCBITaxon_9606 and (RO_0000053 some OOSTT_00000171))).
+predicate(OOSTT_00000175,is,Class).
+predicate(OOSTT_00000175,SubClassOf,OOSTT_00000165,).
+predicate(OOSTT_00000175,SubClassOf,BFO_0000075 some).
+predicate(OOSTT_00000175,SubClassOf,(NCBITaxon_9606 and (not (RO_0000053 some OOSTT_00000171)) and (RO_0000053 some OOSTT_00000173)),).
+predicate(OOSTT_00000175,SubClassOf,BFO_0000075 only OOSTT_00000165).
+predicate(OOSTT_00000176,is,Class).
+predicate(OOSTT_00000176,SubClassOf,OOSTT_00000165,).
+predicate(OOSTT_00000176,SubClassOf,BFO_0000075 some).
+predicate(OOSTT_00000176,SubClassOf,(NCBITaxon_9606 and (RO_0000053 some OOSTT_00000171) and ( inverse (IAO_0000136) some OOSTT_00000169))).
+predicate(OOSTT_00000194,is,Class).
+predicate(OOSTT_00000195,is,Class).
+predicate(OOSTT_00000196,is,Class).
+predicate(OOSTT_00000196,SubClassOf,OOSTT_00000194,).
+predicate(OOSTT_00000196,SubClassOf,BFO_0000075 some).
+predicate(OOSTT_00000196,SubClassOf,(NCBITaxon_9606 and (RO_0000053 some OOSTT_00000195) and ( inverse (IAO_0000136) some OOSTT_00000169))).
+predicate(OOSTT_00000279,is,Class).
+predicate(OOSTT_00000279,EquivalentTo,IAO_0021001 and (OBI_0000299 some).
+predicate(OOSTT_00000279,EquivalentTo,(IAO_0000033 and (OOSTT_00000278 some OOSTT_00000015))) and (OBI_0000299 some).
+predicate(OOSTT_00000279,EquivalentTo,(IAO_0021016 and (RO_0000052 some).
+predicate(OOSTT_00000279,EquivalentTo,(OOSTT_00000015 or (OBI_0000846 some OOSTT_00000015)))))).
+predicate(OOSTT_00000279,SubClassOf,IAO_0021001).
+predicate(OOSTT_00000332,is,Class).
+predicate(OOSTT_00000332,EquivalentTo,OBI_0000312 some).
+predicate(OOSTT_00000332,EquivalentTo,(OOSTT_00000172 and (OBI_0000293 some).
+predicate(OOSTT_00000332,EquivalentTo,(NCBITaxon_9606 and (RO_0000053 some OOSTT_00000333))))).
+predicate(OOSTT_00000332,SubClassOf,OOSTT_00000195).
+predicate(OOSTT_00000333,is,Class).
+predicate(OOSTT_00000352,is,Class).
+predicate(OOSTT_00000352,SubClassOf,MAXO_0000502).
+predicate(ObsoleteClass,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,NCBITaxon_9606,RO_0000053 some OOSTT_00000195, inverse (IAO_0000136) some OOSTT_00000169).

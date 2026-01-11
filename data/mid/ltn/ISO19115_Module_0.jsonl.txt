@@ -1,0 +1,2334 @@
+is(www.w3.org/2000/01/-schema#,Datatype):1.0
+is(anyURI,Datatype):1.0
+is(boolean,Datatype):1.0
+is(date,Datatype):1.0
+is(dateTime,Datatype):1.0
+is(duration,Datatype):1.0
+is(float,Datatype):1.0
+is(int,Datatype):1.0
+is(string,Datatype):1.0
+is(accessConstraints,ObjectProperty):1.0
+Domain(accessConstraints,MD_LegalConstraints):1.0
+Range(accessConstraints,MD_RestrictionCode):1.0
+is(address,ObjectProperty):1.0
+Characteristics(address,Functional):1.0
+Domain(address,CI_Contact):1.0
+Range(address,CI_Address):1.0
+is(applicationSchemaInfo,ObjectProperty):1.0
+Domain(applicationSchemaInfo,MD_Metadata):1.0
+Range(applicationSchemaInfo,MD_ApplicationSchemaInformation):1.0
+is(applicationSchemaName,ObjectProperty):1.0
+Domain(applicationSchemaName,MD_ApplicationSchemaInformation):1.0
+Range(applicationSchemaName,CI_Citation):1.0
+is(attributeDescription,ObjectProperty):1.0
+Characteristics(attributeDescription,Functional):1.0
+Domain(attributeDescription,MD_CoverageDescription):1.0
+Range(attributeDescription,RecordType):1.0
+is(attributeInstances,ObjectProperty):1.0
+Characteristics(attributeInstances,Functional):1.0
+Domain(attributeInstances,MD_ScopeDescription):1.0
+Range(attributeInstances,GF_AttributeType):1.0
+is(attributes,ObjectProperty):1.0
+Characteristics(attributes,Functional):1.0
+Domain(attributes,MD_ScopeDescription):1.0
+Range(attributes,GF_AttributeType):1.0
+is(authority,ObjectProperty):1.0
+Characteristics(authority,Functional):1.0
+Domain(authority,MD_Identifier):1.0
+Range(authority,CI_Citation):1.0
+is(axisDimensionProperties,ObjectProperty):1.0
+Domain(axisDimensionProperties,MD_GridSpatialRepresentation):1.0
+Range(axisDimensionProperties,MD_Dimension):1.0
+is(axisUnits,ObjectProperty):1.0
+Characteristics(axisUnits,Functional):1.0
+Domain(axisUnits,MD_EllipsoidParameters):1.0
+Range(axisUnits,UomLength):1.0
+is(cellGeometry,ObjectProperty):1.0
+Characteristics(cellGeometry,Functional):1.0
+Domain(cellGeometry,MD_GridSpatialRepresentation):1.0
+Range(cellGeometry,MD_CellGeometryCode):1.0
+is(centerPoint,ObjectProperty):1.0
+Characteristics(centerPoint,Functional):1.0
+Domain(centerPoint,MD_Georectified):1.0
+Range(centerPoint,GM_Point):1.0
+is(citation,ObjectProperty):1.0
+Characteristics(citation,Functional):1.0
+Domain(citation,MD_Identification):1.0
+Range(citation,CI_Citation):1.0
+is(citedResponsibleParty,ObjectProperty):1.0
+Domain(citedResponsibleParty,CI_Citation):1.0
+Range(citedResponsibleParty,CI_ResponsibleParty):1.0
+is(classification,ObjectProperty):1.0
+Characteristics(classification,Functional):1.0
+Domain(classification,MD_SecurityConstraints):1.0
+Range(classification,MD_ClassificationCode):1.0
+is(conformanceSpecification,ObjectProperty):1.0
+Characteristics(conformanceSpecification,Functional):1.0
+Domain(conformanceSpecification,DQ_ConformanceResult):1.0
+Range(conformanceSpecification,CI_Citation):1.0
+is(contact,ObjectProperty):1.0
+Characteristics(contact,Functional):1.0
+Domain(contact,MD_Metadata):1.0
+Range(contact,CI_ResponsibleParty):1.0
+is(contactInfo,ObjectProperty):1.0
+Characteristics(contactInfo,Functional):1.0
+Domain(contactInfo,CI_ResponsibleParty):1.0
+Range(contactInfo,CI_Contact):1.0
+is(contentInfo,ObjectProperty):1.0
+Domain(contentInfo,MD_Metadata):1.0
+Range(contentInfo,MD_ContentInformation):1.0
+is(contentType,ObjectProperty):1.0
+Characteristics(contentType,Functional):1.0
+Domain(contentType,MD_CoverageDescription):1.0
+Range(contentType,MD_CoverageContentTypeCode):1.0
+is(cornerPoints,ObjectProperty):1.0
+Characteristics(cornerPoints,Functional):1.0
+Domain(cornerPoints,MD_Georectified):1.0
+Range(cornerPoints,GM_Point):1.0
+is(dataExtent,ObjectProperty):1.0
+Domain(dataExtent,MD_DataIdentification):1.0
+Range(dataExtent,EX_Extent):1.0
+is(dataQualityInfo,ObjectProperty):1.0
+Domain(dataQualityInfo,MD_Metadata):1.0
+Range(dataQualityInfo,DQ_DataQuality):1.0
+is(dataType,ObjectProperty):1.0
+Characteristics(dataType,Functional):1.0
+Domain(dataType,MD_ExtendedElementInformation):1.0
+Range(dataType,MD_DataTypeCode):1.0
+is(datasetCharacterSet,ObjectProperty):1.0
+Domain(datasetCharacterSet,MD_DataIdentification):1.0
+Range(datasetCharacterSet,MD_CharacterSetCode):1.0
+is(dateOfNextUpdate,ObjectProperty):1.0
+Characteristics(dateOfNextUpdate,Functional):1.0
+Domain(dateOfNextUpdate,MD_MaintenanceInformation):1.0
+is(dateType,ObjectProperty):1.0
+Characteristics(dateType,Functional):1.0
+Domain(dateType,CI_Date):1.0
+Range(dateType,CI_DateTypeCode):1.0
+is(datum,ObjectProperty):1.0
+Characteristics(datum,Functional):1.0
+Domain(datum,MD_CRS):1.0
+Range(datum,RS_Identifier):1.0
+is(descriptiveKeywords,ObjectProperty):1.0
+Domain(descriptiveKeywords,MD_Identification):1.0
+Range(descriptiveKeywords,MD_Keywords):1.0
+is(dimension,ObjectProperty):1.0
+Domain(dimension,MD_CoverageDescription):1.0
+Range(dimension,MD_RangeDimension):1.0
+is(dimensionName,ObjectProperty):1.0
+Characteristics(dimensionName,Functional):1.0
+Domain(dimensionName,MD_Dimension):1.0
+Range(dimensionName,MD_DimensionNameTypeCode):1.0
+is(distance,ObjectProperty):1.0
+Characteristics(distance,Functional):1.0
+Domain(distance,MD_Resolution):1.0
+Range(distance,Distance):1.0
+is(distributionFormat,ObjectProperty):1.0
+Domain(distributionFormat,MD_Distribution):1.0
+Range(distributionFormat,MD_Format):1.0
+is(distributionInfo,ObjectProperty):1.0
+Characteristics(distributionInfo,Functional):1.0
+Domain(distributionInfo,MD_Metadata):1.0
+Range(distributionInfo,MD_Distribution):1.0
+is(distributionOrderProcess,ObjectProperty):1.0
+Domain(distributionOrderProcess,MD_Distributor):1.0
+Range(distributionOrderProcess,MD_StandardOrderProcess):1.0
+is(distributionTransferOptions,ObjectProperty):1.0
+Domain(distributionTransferOptions,MD_Distributor):1.0
+Range(distributionTransferOptions,MD_DigitalTransferOptions):1.0
+is(distributor,ObjectProperty):1.0
+Domain(distributor,MD_Distribution):1.0
+Range(distributor,MD_Distributor):1.0
+is(distributorContact,ObjectProperty):1.0
+Characteristics(distributorContact,Functional):1.0
+Domain(distributorContact,MD_Distributor):1.0
+Range(distributorContact,CI_ResponsibleParty):1.0
+is(distributorFormat,ObjectProperty):1.0
+Domain(distributorFormat,MD_Distributor):1.0
+Range(distributorFormat,MD_Format):1.0
+is(eastBoundLongitude,ObjectProperty):1.0
+Characteristics(eastBoundLongitude,Functional):1.0
+Domain(eastBoundLongitude,EX_GeographicBoundingBox):1.0
+Range(eastBoundLongitude,Angle):1.0
+is(ellipsoid,ObjectProperty):1.0
+Characteristics(ellipsoid,Functional):1.0
+Domain(ellipsoid,MD_CRS):1.0
+Range(ellipsoid,RS_Identifier):1.0
+is(ellipsoidParameters,ObjectProperty):1.0
+Characteristics(ellipsoidParameters,Functional):1.0
+Domain(ellipsoidParameters,MD_CRS):1.0
+Range(ellipsoidParameters,MD_EllipsoidParameters):1.0
+is(equivalentScale,ObjectProperty):1.0
+Characteristics(equivalentScale,Functional):1.0
+Domain(equivalentScale,MD_Resolution):1.0
+Range(equivalentScale,MD_RepresentativeFraction):1.0
+is(evaluationMethodType,ObjectProperty):1.0
+Characteristics(evaluationMethodType,Functional):1.0
+Domain(evaluationMethodType,DQ_Element):1.0
+Range(evaluationMethodType,DQ_EvaluationMethodTypeCode):1.0
+is(evaluationProcedure,ObjectProperty):1.0
+Characteristics(evaluationProcedure,Functional):1.0
+Domain(evaluationProcedure,DQ_Element):1.0
+Range(evaluationProcedure,CI_Citation):1.0
+is(exTemp,ObjectProperty):1.0
+Characteristics(exTemp,Functional):1.0
+Domain(exTemp,EX_TemporalExtent):1.0
+Range(exTemp,TM_Primitive):1.0
+is(extEleSrc,ObjectProperty):1.0
+Domain(extEleSrc,MD_ExtendedElementInformation):1.0
+Range(extEleSrc,CI_ResponsibleParty):1.0
+is(extendedElementInformation,ObjectProperty):1.0
+Domain(extendedElementInformation,MD_MetadataExtentInformation):1.0
+Range(extendedElementInformation,MD_ExtendedElementInformation):1.0
+is(extensionOnLineResource,ObjectProperty):1.0
+Characteristics(extensionOnLineResource,Functional):1.0
+Domain(extensionOnLineResource,MD_MetadataExtentInformation):1.0
+Range(extensionOnLineResource,CI_OnlineResource):1.0
+is(falseEastingNorthingUnits,ObjectProperty):1.0
+Characteristics(falseEastingNorthingUnits,Functional):1.0
+Domain(falseEastingNorthingUnits,MD_ProjectionParameters):1.0
+Range(falseEastingNorthingUnits,UomLength):1.0
+is(featureCatalogueCitation,ObjectProperty):1.0
+Domain(featureCatalogueCitation,MD_FeatureCatalogueDescription):1.0
+Range(featureCatalogueCitation,CI_Citation):1.0
+is(featureCatalogueSupplement,ObjectProperty):1.0
+Characteristics(featureCatalogueSupplement,Functional):1.0
+Domain(featureCatalogueSupplement,MD_ApplicationSchemaInformation):1.0
+Range(featureCatalogueSupplement,MD_SpatialAttributeSupplement):1.0
+is(featureInstances,ObjectProperty):1.0
+Characteristics(featureInstances,Functional):1.0
+Domain(featureInstances,MD_ScopeDescription):1.0
+Range(featureInstances,GF_FeatureType):1.0
+is(featureTypes,ObjectProperty):1.0
+Domain(featureTypes,MD_FeatureCatalogueDescription):1.0
+Range(featureTypes,GenericName):1.0
+is(features,ObjectProperty):1.0
+Characteristics(features,Functional):1.0
+Domain(features,MD_ScopeDescription):1.0
+Range(features,GF_FeatureType):1.0
+is(formatDistributor,ObjectProperty):1.0
+Domain(formatDistributor,MD_Format):1.0
+Range(formatDistributor,MD_Distributor):1.0
+is(function,ObjectProperty):1.0
+Characteristics(function,Functional):1.0
+Domain(function,CI_OnlineResource):1.0
+Range(function,CI_OnLineFunctionCode):1.0
+is(geographicElement,ObjectProperty):1.0
+Domain(geographicElement,EX_Extent):1.0
+Range(geographicElement,EX_GeographicExtent):1.0
+is(geographicIdentifier,ObjectProperty):1.0
+Characteristics(geographicIdentifier,Functional):1.0
+Domain(geographicIdentifier,EX_GeographicDescription):1.0
+Range(geographicIdentifier,MD_Identifier):1.0
+is(geometricObjectType,ObjectProperty):1.0
+Characteristics(geometricObjectType,Functional):1.0
+Domain(geometricObjectType,MD_GeometricObjects):1.0
+Range(geometricObjectType,MD_GeometricObjectTypeCode):1.0
+is(geometricObjects,ObjectProperty):1.0
+Characteristics(geometricObjects,Symmetric):1.0
+Domain(geometricObjects,MD_VectorSpatialRepresentation):1.0
+Range(geometricObjects,MD_GeometricObjects):1.0
+is(graphicOverview,ObjectProperty):1.0
+Domain(graphicOverview,MD_Identification):1.0
+Range(graphicOverview,MD_BrowseGraphics):1.0
+is(hierarchyLevel,ObjectProperty):1.0
+Domain(hierarchyLevel,MD_Metadata):1.0
+Range(hierarchyLevel,MD_ScopeCode):1.0
+is(identificationInfo,ObjectProperty):1.0
+Domain(identificationInfo,MD_Metadata):1.0
+Range(identificationInfo,MD_Identification):1.0
+is(imageQualityCode,ObjectProperty):1.0
+Characteristics(imageQualityCode,Functional):1.0
+Domain(imageQualityCode,MD_ImageDescription):1.0
+Range(imageQualityCode,MD_Identifier):1.0
+is(imagingCondition,ObjectProperty):1.0
+Characteristics(imagingCondition,Functional):1.0
+Domain(imagingCondition,MD_ImageDescription):1.0
+Range(imagingCondition,MD_ImagingConditionCode):1.0
+is(level,ObjectProperty):1.0
+Domain(level,DQ_Scope):1.0
+Range(level,MD_ScopeCode):1.0
+is(levelDescription,ObjectProperty):1.0
+Domain(levelDescription,DQ_Scope):1.0
+Range(levelDescription,MD_ScopeDescription):1.0
+is(lineage,ObjectProperty):1.0
+Characteristics(lineage,Functional):1.0
+Domain(lineage,DQ_DataQuality):1.0
+Range(lineage,LI_Lineage):1.0
+is(maintenanceAndUpdateFrequency,ObjectProperty):1.0
+Characteristics(maintenanceAndUpdateFrequency,Functional):1.0
+Domain(maintenanceAndUpdateFrequency,MD_MaintenanceInformation):1.0
+Range(maintenanceAndUpdateFrequency,MD_MaintenanceFrequenceCode):1.0
+is(measureIdentification,ObjectProperty):1.0
+Characteristics(measureIdentification,Functional):1.0
+Domain(measureIdentification,DQ_Element):1.0
+Range(measureIdentification,MD_Identifier):1.0
+is(mediumFormat,ObjectProperty):1.0
+Domain(mediumFormat,MD_Medium):1.0
+Range(mediumFormat,MD_MediumFormatCode):1.0
+is(mediumName,ObjectProperty):1.0
+Characteristics(mediumName,Functional):1.0
+Domain(mediumName,MD_Medium):1.0
+Range(mediumName,MD_MediumNameCode):1.0
+is(metadataCharacterSet,ObjectProperty):1.0
+Characteristics(metadataCharacterSet,Functional):1.0
+Domain(metadataCharacterSet,MD_Metadata):1.0
+Range(metadataCharacterSet,MD_CharacterSetCode):1.0
+is(metadataConstraints,ObjectProperty):1.0
+Domain(metadataConstraints,MD_Metadata):1.0
+Range(metadataConstraints,MD_Constraints):1.0
+is(metadataExtentInfo,ObjectProperty):1.0
+Domain(metadataExtentInfo,MD_Metadata):1.0
+Range(metadataExtentInfo,MD_MetadataExtentInformation):1.0
+is(metadataMaintenance,ObjectProperty):1.0
+Characteristics(metadataMaintenance,Functional):1.0
+Domain(metadataMaintenance,MD_Metadata):1.0
+Range(metadataMaintenance,MD_MaintenanceInformation):1.0
+is(northBoundLatitude,ObjectProperty):1.0
+Characteristics(northBoundLatitude,Functional):1.0
+Domain(northBoundLatitude,EX_GeographicBoundingBox):1.0
+Range(northBoundLatitude,Angle):1.0
+is(obligation,ObjectProperty):1.0
+Characteristics(obligation,Functional):1.0
+Domain(obligation,MD_ExtendedElementInformation):1.0
+Range(obligation,MD_ObligationCode):1.0
+is(obliqueLineAzimuthParameter,ObjectProperty):1.0
+Characteristics(obliqueLineAzimuthParameter,Functional):1.0
+Domain(obliqueLineAzimuthParameter,MD_ProjectionParameters):1.0
+Range(obliqueLineAzimuthParameter,MD_ObliqueLineAzimuth):1.0
+is(obliqueLinePointParameter,ObjectProperty):1.0
+Domain(obliqueLinePointParameter,MD_ProjectionParameters):1.0
+Range(obliqueLinePointParameter,MD_ObliqueLinePoint):1.0
+is(offLine,ObjectProperty):1.0
+Characteristics(offLine,Functional):1.0
+Domain(offLine,MD_DigitalTransferOptions):1.0
+Range(offLine,MD_Medium):1.0
+is(onLine,ObjectProperty):1.0
+Domain(onLine,MD_DigitalTransferOptions):1.0
+Range(onLine,CI_OnlineResource):1.0
+is(onlineResource,ObjectProperty):1.0
+Characteristics(onlineResource,Functional):1.0
+Domain(onlineResource,CI_Contact):1.0
+Range(onlineResource,CI_OnlineResource):1.0
+is(parameterCitation,ObjectProperty):1.0
+Domain(parameterCitation,MD_Georeferenceable):1.0
+Range(parameterCitation,CI_Citation):1.0
+is(parameters,ObjectProperty):1.0
+Characteristics(parameters,Functional):1.0
+Domain(parameters,MD_Georeferenceable):1.0
+Range(parameters,Record):1.0
+is(phone,ObjectProperty):1.0
+Characteristics(phone,Functional):1.0
+Domain(phone,CI_Contact):1.0
+Range(phone,CI_Telephone):1.0
+is(pointInPixel,ObjectProperty):1.0
+Characteristics(pointInPixel,Functional):1.0
+Domain(pointInPixel,MD_Georectified):1.0
+Range(pointInPixel,MD_PixelOrientationCode):1.0
+is(pointOfContact,ObjectProperty):1.0
+Domain(pointOfContact,MD_Identification):1.0
+Range(pointOfContact,CI_ResponsibleParty):1.0
+is(polygon,ObjectProperty):1.0
+Domain(polygon,EX_BoundingPolygon):1.0
+Range(polygon,GM_Object):1.0
+is(portrayalCatalogueCitation,ObjectProperty):1.0
+Domain(portrayalCatalogueCitation,MD_PortrayalCatalogueReference):1.0
+Range(portrayalCatalogueCitation,CI_Citation):1.0
+is(portrayalCatalogueInfo,ObjectProperty):1.0
+Domain(portrayalCatalogueInfo,MD_Metadata):1.0
+Range(portrayalCatalogueInfo,MD_PortrayalCatalogueReference):1.0
+is(presentationForm,ObjectProperty):1.0
+Domain(presentationForm,CI_Citation):1.0
+Range(presentationForm,CI_PresentationFormCode):1.0
+is(processStep,ObjectProperty):1.0
+Domain(processStep,LI_Lineage):1.0
+Range(processStep,LI_ProcessStep):1.0
+is(processingLevelCode,ObjectProperty):1.0
+Characteristics(processingLevelCode,Functional):1.0
+Domain(processingLevelCode,MD_ImageDescription):1.0
+Range(processingLevelCode,MD_Identifier):1.0
+is(processor,ObjectProperty):1.0
+Domain(processor,LI_ProcessStep):1.0
+Range(processor,CI_ResponsibleParty):1.0
+is(projection,ObjectProperty):1.0
+Characteristics(projection,Functional):1.0
+Domain(projection,MD_CRS):1.0
+Range(projection,RS_Identifier):1.0
+is(projectionParameter,ObjectProperty):1.0
+Characteristics(projectionParameter,Functional):1.0
+Domain(projectionParameter,MD_CRS):1.0
+Range(projectionParameter,MD_ProjectionParameters):1.0
+is(referenceDate,ObjectProperty):1.0
+Domain(referenceDate,CI_Citation):1.0
+Range(referenceDate,CI_Date):1.0
+is(referenceSystemIdentifier,ObjectProperty):1.0
+Characteristics(referenceSystemIdentifier,Functional):1.0
+Domain(referenceSystemIdentifier,MD_ReferenceSystem):1.0
+Range(referenceSystemIdentifier,RS_Identifier):1.0
+is(referenceSystemInfo,ObjectProperty):1.0
+Domain(referenceSystemInfo,MD_Metadata):1.0
+Range(referenceSystemInfo,MD_ReferenceSystem):1.0
+is(report,ObjectProperty):1.0
+Domain(report,DQ_DataQuality):1.0
+Range(report,DQ_Element):1.0
+is(resolution,ObjectProperty):1.0
+Characteristics(resolution,Functional):1.0
+Domain(resolution,MD_Dimension):1.0
+Range(resolution,Measure):1.0
+is(resourceConstraints,ObjectProperty):1.0
+Domain(resourceConstraints,MD_Identification):1.0
+Range(resourceConstraints,MD_Constraints):1.0
+is(resourceFormat,ObjectProperty):1.0
+Domain(resourceFormat,MD_Identification):1.0
+Range(resourceFormat,MD_Format):1.0
+is(resourceMaintenance,ObjectProperty):1.0
+Domain(resourceMaintenance,MD_Identification):1.0
+Range(resourceMaintenance,MD_MaintenanceInformation):1.0
+is(resourceSpecificUsage,ObjectProperty):1.0
+Domain(resourceSpecificUsage,MD_Identification):1.0
+Range(resourceSpecificUsage,MD_Usage):1.0
+is(result,ObjectProperty):1.0
+Domain(result,DQ_Element):1.0
+Range(result,DQ_Result):1.0
+is(role,ObjectProperty):1.0
+Characteristics(role,Functional):1.0
+Domain(role,CI_ResponsibleParty):1.0
+Range(role,CI_RoleCode):1.0
+is(scaleDenominator,ObjectProperty):1.0
+Characteristics(scaleDenominator,Functional):1.0
+Domain(scaleDenominator,LI_Source):1.0
+Range(scaleDenominator,MD_RepresentativeFraction):1.0
+is(scope,ObjectProperty):1.0
+Characteristics(scope,Functional):1.0
+Domain(scope,DQ_DataQuality):1.0
+Range(scope,DQ_Scope):1.0
+is(scopeExtent,ObjectProperty):1.0
+Domain(scopeExtent,DQ_Scope):1.0
+Range(scopeExtent,EX_Extent):1.0
+is(sequenceIdentifier,ObjectProperty):1.0
+Characteristics(sequenceIdentifier,Functional):1.0
+Domain(sequenceIdentifier,MD_RangeDimension):1.0
+Range(sequenceIdentifier,MemberName):1.0
+is(series,ObjectProperty):1.0
+Characteristics(series,Functional):1.0
+Domain(series,CI_Citation):1.0
+Range(series,CI_Series):1.0
+is(softwareDevelopmentFile,ObjectProperty):1.0
+Characteristics(softwareDevelopmentFile,Functional):1.0
+Domain(softwareDevelopmentFile,MD_ApplicationSchemaInformation):1.0
+Range(softwareDevelopmentFile,Binary):1.0
+is(source,ObjectProperty):1.0
+is(sourceCitation,ObjectProperty):1.0
+Characteristics(sourceCitation,Functional):1.0
+Domain(sourceCitation,LI_Source):1.0
+Range(sourceCitation,CI_Citation):1.0
+is(sourceExtent,ObjectProperty):1.0
+Domain(sourceExtent,LI_Source):1.0
+Range(sourceExtent,EX_Extent):1.0
+is(sourceReferenceSystem,ObjectProperty):1.0
+Characteristics(sourceReferenceSystem,Functional):1.0
+Domain(sourceReferenceSystem,LI_Source):1.0
+Range(sourceReferenceSystem,MD_ReferenceSystem):1.0
+is(southBoundLatitude,ObjectProperty):1.0
+Characteristics(southBoundLatitude,Functional):1.0
+Domain(southBoundLatitude,EX_GeographicBoundingBox):1.0
+Range(southBoundLatitude,Angle):1.0
+is(spatialExtent,ObjectProperty):1.0
+Domain(spatialExtent,EX_SpatialTemporalExtent):1.0
+Range(spatialExtent,EX_GeographicExtent):1.0
+is(spatialRepresentationInfo,ObjectProperty):1.0
+Domain(spatialRepresentationInfo,MD_Metadata):1.0
+Range(spatialRepresentationInfo,MD_SpatialRepresentation):1.0
+is(spatialRepresentationType,ObjectProperty):1.0
+Domain(spatialRepresentationType,MD_DataIdentification):1.0
+Range(spatialRepresentationType,MD_SpatialRepresentationTypeCode):1.0
+is(spatialResolution,ObjectProperty):1.0
+Domain(spatialResolution,MD_DataIdentification):1.0
+Range(spatialResolution,MD_Resolution):1.0
+is(status,ObjectProperty):1.0
+Domain(status,MD_Identification):1.0
+Range(status,MD_ProgressCode):1.0
+is(temporalElement,ObjectProperty):1.0
+Domain(temporalElement,EX_Extent):1.0
+Range(temporalElement,EX_TemporalExtent):1.0
+is(temporalExtent,ObjectProperty):1.0
+Characteristics(temporalExtent,Functional):1.0
+Domain(temporalExtent,EX_TemporalExtent):1.0
+Range(temporalExtent,EX_Extent):1.0
+is(theFeatureTypeList,ObjectProperty):1.0
+Domain(theFeatureTypeList,MD_SpatialAttributeSupplement):1.0
+Range(theFeatureTypeList,MD_FeatureTypeList):1.0
+is(thesaurusName,ObjectProperty):1.0
+Characteristics(thesaurusName,Functional):1.0
+Domain(thesaurusName,MD_Keywords):1.0
+Range(thesaurusName,CI_Citation):1.0
+is(topicCategory,ObjectProperty):1.0
+Domain(topicCategory,MD_DataIdentification):1.0
+Range(topicCategory,MD_TopicCategoryCode):1.0
+is(topologyLevel,ObjectProperty):1.0
+Characteristics(topologyLevel,Functional):1.0
+Domain(topologyLevel,MD_VectorSpatialRepresentation):1.0
+Range(topologyLevel,MD_TopologyLevelCode):1.0
+is(transferOptions,ObjectProperty):1.0
+Domain(transferOptions,MD_Distribution):1.0
+Range(transferOptions,MD_DigitalTransferOptions):1.0
+is(type,ObjectProperty):1.0
+Characteristics(type,Functional):1.0
+Domain(type,MD_Keywords):1.0
+Range(type,MD_KeywordTypeCode):1.0
+is(unitOfMeasure,ObjectProperty):1.0
+Characteristics(unitOfMeasure,Functional):1.0
+Domain(unitOfMeasure,EX_VerticalExtent):1.0
+Range(unitOfMeasure,UomLength):1.0
+is(units,ObjectProperty):1.0
+Characteristics(units,Functional):1.0
+Domain(units,MD_Band):1.0
+Range(units,UomLength):1.0
+is(updateScope,ObjectProperty):1.0
+Domain(updateScope,MD_MaintenanceInformation):1.0
+Range(updateScope,MD_ScopeCode):1.0
+is(updateScopeDescription,ObjectProperty):1.0
+Domain(updateScopeDescription,MD_MaintenanceInformation):1.0
+Range(updateScopeDescription,MD_ScopeDescription):1.0
+is(usageDateTime,ObjectProperty):1.0
+Characteristics(usageDateTime,Functional):1.0
+Domain(usageDateTime,MD_Usage):1.0
+is(useConstraints,ObjectProperty):1.0
+Domain(useConstraints,MD_LegalConstraints):1.0
+Range(useConstraints,MD_RestrictionCode):1.0
+is(userContactInfo,ObjectProperty):1.0
+Domain(userContactInfo,MD_Usage):1.0
+Range(userContactInfo,CI_ResponsibleParty):1.0
+is(value,ObjectProperty):1.0
+Domain(value,DQ_QuantitativeResult):1.0
+Range(value,Record):1.0
+is(valueType,ObjectProperty):1.0
+Characteristics(valueType,Functional):1.0
+Domain(valueType,DQ_QuantitativeResult):1.0
+Range(valueType,RecordType):1.0
+is(valueUnit,ObjectProperty):1.0
+Characteristics(valueUnit,Functional):1.0
+Domain(valueUnit,DQ_QuantitativeResult):1.0
+Range(valueUnit,Measure):1.0
+is(verticalDatum,ObjectProperty):1.0
+Characteristics(verticalDatum,Functional):1.0
+Domain(verticalDatum,EX_VerticalExtent):1.0
+Range(verticalDatum,SC_VerticalDatum):1.0
+is(verticalElement,ObjectProperty):1.0
+Domain(verticalElement,EX_Extent):1.0
+Range(verticalElement,EX_VerticalExtent):1.0
+is(westBoundLongitude,ObjectProperty):1.0
+Characteristics(westBoundLongitude,Functional):1.0
+Domain(westBoundLongitude,EX_GeographicBoundingBox):1.0
+Range(westBoundLongitude,Angle):1.0
+is(ISBN,DataProperty):1.0
+Characteristics(ISBN,Functional):1.0
+Domain(ISBN,CI_Citation):1.0
+Range(ISBN,string):1.0
+is(ISSN,DataProperty):1.0
+Characteristics(ISSN,Functional):1.0
+Domain(ISSN,CI_Citation):1.0
+Range(ISSN,string):1.0
+is(abstract,DataProperty):1.0
+Characteristics(abstract,Functional):1.0
+Domain(abstract,MD_Identification):1.0
+Range(abstract,string):1.0
+is(administrativeArea,DataProperty):1.0
+Characteristics(administrativeArea,Functional):1.0
+Domain(administrativeArea,CI_Address):1.0
+Range(administrativeArea,string):1.0
+is(alternateTitle,DataProperty):1.0
+Domain(alternateTitle,CI_Citation):1.0
+Range(alternateTitle,string):1.0
+is(amendmentNumber,DataProperty):1.0
+Characteristics(amendmentNumber,Functional):1.0
+Domain(amendmentNumber,MD_Format):1.0
+Range(amendmentNumber,string):1.0
+is(applicationProfile,DataProperty):1.0
+Characteristics(applicationProfile,Functional):1.0
+Domain(applicationProfile,CI_OnlineResource):1.0
+Range(applicationProfile,string):1.0
+is(azimuthAngle,DataProperty):1.0
+Characteristics(azimuthAngle,Functional):1.0
+Domain(azimuthAngle,MD_ObliqueLineAzimuth):1.0
+Range(azimuthAngle,float):1.0
+is(azimuthMeasurePointLongitude,DataProperty):1.0
+Characteristics(azimuthMeasurePointLongitude,Functional):1.0
+Domain(azimuthMeasurePointLongitude,MD_ObliqueLineAzimuth):1.0
+Range(azimuthMeasurePointLongitude,float):1.0
+is(bitsPerValue,DataProperty):1.0
+Characteristics(bitsPerValue,Functional):1.0
+Domain(bitsPerValue,MD_Band):1.0
+Range(bitsPerValue,float):1.0
+is(cameraCalibrationInformationAvailability,DataProperty):1.0
+Characteristics(cameraCalibrationInformationAvailability,Functional):1.0
+Domain(cameraCalibrationInformationAvailability,MD_ImageDescription):1.0
+Range(cameraCalibrationInformationAvailability,boolean):1.0
+is(catalogueLanguage,DataProperty):1.0
+Domain(catalogueLanguage,MD_FeatureCatalogueDescription):1.0
+Range(catalogueLanguage,string):1.0
+is(checkPointAvailability,DataProperty):1.0
+Characteristics(checkPointAvailability,Functional):1.0
+Domain(checkPointAvailability,MD_Georectified):1.0
+Range(checkPointAvailability,boolean):1.0
+is(checkPointDescription,DataProperty):1.0
+Characteristics(checkPointDescription,Functional):1.0
+Domain(checkPointDescription,MD_Georectified):1.0
+Range(checkPointDescription,string):1.0
+is(city,DataProperty):1.0
+Characteristics(city,Functional):1.0
+Domain(city,CI_Address):1.0
+Range(city,string):1.0
+is(classificationSystem,DataProperty):1.0
+Characteristics(classificationSystem,Functional):1.0
+Domain(classificationSystem,MD_SecurityConstraints):1.0
+Range(classificationSystem,string):1.0
+is(cloudCoverPercentage,DataProperty):1.0
+Characteristics(cloudCoverPercentage,Functional):1.0
+Domain(cloudCoverPercentage,MD_ImageDescription):1.0
+Range(cloudCoverPercentage,float):1.0
+is(code,DataProperty):1.0
+Characteristics(code,Functional):1.0
+Domain(code,MD_Identifier):1.0
+Range(code,string):1.0
+is(collectiveTitle,DataProperty):1.0
+Characteristics(collectiveTitle,Functional):1.0
+Domain(collectiveTitle,CI_Citation):1.0
+Range(collectiveTitle,string):1.0
+is(complianceCode,DataProperty):1.0
+Characteristics(complianceCode,Functional):1.0
+Domain(complianceCode,MD_FeatureCatalogueDescription):1.0
+Range(complianceCode,boolean):1.0
+is(compressionGenerationQuantity,DataProperty):1.0
+Characteristics(compressionGenerationQuantity,Functional):1.0
+Domain(compressionGenerationQuantity,MD_ImageDescription):1.0
+Range(compressionGenerationQuantity,int):1.0
+is(condition,DataProperty):1.0
+Characteristics(condition,Functional):1.0
+Domain(condition,MD_ExtendedElementInformation):1.0
+Range(condition,string):1.0
+is(constraintLanguage,DataProperty):1.0
+Characteristics(constraintLanguage,Functional):1.0
+Domain(constraintLanguage,MD_ApplicationSchemaInformation):1.0
+Range(constraintLanguage,string):1.0
+is(contactInstructions,DataProperty):1.0
+Characteristics(contactInstructions,Functional):1.0
+Domain(contactInstructions,CI_Contact):1.0
+Range(contactInstructions,string):1.0
+is(controlPointAvailability,DataProperty):1.0
+Characteristics(controlPointAvailability,Functional):1.0
+Domain(controlPointAvailability,MD_Georeferenceable):1.0
+Range(controlPointAvailability,boolean):1.0
+is(country,DataProperty):1.0
+Characteristics(country,Functional):1.0
+Domain(country,CI_Address):1.0
+Range(country,string):1.0
+is(credit,DataProperty):1.0
+Domain(credit,MD_Identification):1.0
+Range(credit,string):1.0
+is(dataLanguage,DataProperty):1.0
+Domain(dataLanguage,MD_DataIdentification):1.0
+Range(dataLanguage,string):1.0
+is(dataSetURI,DataProperty):1.0
+Characteristics(dataSetURI,Functional):1.0
+Domain(dataSetURI,MD_Metadata):1.0
+Range(dataSetURI,string):1.0
+is(dataset,DataProperty):1.0
+Characteristics(dataset,Functional):1.0
+Domain(dataset,MD_ScopeDescription):1.0
+Range(dataset,string):1.0
+is(dateStamp,DataProperty):1.0
+Domain(dateStamp,MD_Metadata):1.0
+Range(dateStamp,date):1.0
+is(definition,DataProperty):1.0
+is(deliveryPoint,DataProperty):1.0
+Domain(deliveryPoint,CI_Address):1.0
+Range(deliveryPoint,string):1.0
+is(denominationOfFlatteningRatio,DataProperty):1.0
+Characteristics(denominationOfFlatteningRatio,Functional):1.0
+Domain(denominationOfFlatteningRatio,MD_EllipsoidParameters):1.0
+Range(denominationOfFlatteningRatio,float):1.0
+is(denominator,DataProperty):1.0
+Characteristics(denominator,Functional):1.0
+Domain(denominator,MD_RepresentativeFraction):1.0
+Range(denominator,int):1.0
+is(density,DataProperty):1.0
+Domain(density,MD_Medium):1.0
+Range(density,float):1.0
+is(densityUnits,DataProperty):1.0
+Characteristics(densityUnits,Functional):1.0
+Domain(densityUnits,MD_Medium):1.0
+Range(densityUnits,string):1.0
+is(descriptor,DataProperty):1.0
+Characteristics(descriptor,Functional):1.0
+Domain(descriptor,MD_RangeDimension):1.0
+Range(descriptor,string):1.0
+is(dimensionSize,DataProperty):1.0
+Characteristics(dimensionSize,Functional):1.0
+Domain(dimensionSize,MD_Dimension):1.0
+Range(dimensionSize,int):1.0
+is(domainCode,DataProperty):1.0
+Characteristics(domainCode,Functional):1.0
+Domain(domainCode,MD_ExtendedElementInformation):1.0
+Range(domainCode,int):1.0
+is(domainValue,DataProperty):1.0
+Characteristics(domainValue,Functional):1.0
+Domain(domainValue,MD_ExtendedElementInformation):1.0
+Range(domainValue,string):1.0
+is(edition,DataProperty):1.0
+Characteristics(edition,Functional):1.0
+Domain(edition,CI_Citation):1.0
+Range(edition,string):1.0
+is(editionDate,DataProperty):1.0
+Domain(editionDate,CI_Citation):1.0
+Range(editionDate,date):1.0
+is(electronicMailAddress,DataProperty):1.0
+Domain(electronicMailAddress,CI_Address):1.0
+Range(electronicMailAddress,string):1.0
+is(environmentDescription,DataProperty):1.0
+Domain(environmentDescription,MD_DataIdentification):1.0
+Range(environmentDescription,string):1.0
+is(errorStatistic,DataProperty):1.0
+Characteristics(errorStatistic,Functional):1.0
+Domain(errorStatistic,DQ_QuantitativeResult):1.0
+Range(errorStatistic,string):1.0
+is(evaluationMethodDescription,DataProperty):1.0
+Characteristics(evaluationMethodDescription,Functional):1.0
+Domain(evaluationMethodDescription,DQ_Element):1.0
+Range(evaluationMethodDescription,string):1.0
+is(explanation,DataProperty):1.0
+Characteristics(explanation,Functional):1.0
+Domain(explanation,DQ_ConformanceResult):1.0
+Range(explanation,string):1.0
+is(extendedElementRationale,DataProperty):1.0
+Domain(extendedElementRationale,MD_ExtendedElementInformation):1.0
+Range(extendedElementRationale,string):1.0
+is(extensionElementName,DataProperty):1.0
+Characteristics(extensionElementName,Functional):1.0
+Domain(extensionElementName,MD_ExtendedElementInformation):1.0
+Range(extensionElementName,string):1.0
+is(extentDescription,DataProperty):1.0
+Characteristics(extentDescription,Functional):1.0
+Domain(extentDescription,EX_Extent):1.0
+Range(extentDescription,string):1.0
+is(extentTypeCode,DataProperty):1.0
+Characteristics(extentTypeCode,Functional):1.0
+Domain(extentTypeCode,EX_GeographicExtent):1.0
+Range(extentTypeCode,boolean):1.0
+is(falseEasting,DataProperty):1.0
+Characteristics(falseEasting,Functional):1.0
+Domain(falseEasting,MD_ProjectionParameters):1.0
+Range(falseEasting,float):1.0
+is(falseNorthing,DataProperty):1.0
+Characteristics(falseNorthing,Functional):1.0
+Domain(falseNorthing,MD_ProjectionParameters):1.0
+Range(falseNorthing,float):1.0
+is(fascimile,DataProperty):1.0
+Domain(fascimile,CI_Telephone):1.0
+Range(fascimile,string):1.0
+is(fees,DataProperty):1.0
+Characteristics(fees,Functional):1.0
+Domain(fees,MD_StandardOrderProcess):1.0
+Range(fees,string):1.0
+is(fileDecompressionTechnique,DataProperty):1.0
+Characteristics(fileDecompressionTechnique,Functional):1.0
+Domain(fileDecompressionTechnique,MD_Format):1.0
+Range(fileDecompressionTechnique,string):1.0
+is(fileDescription,DataProperty):1.0
+Characteristics(fileDescription,Functional):1.0
+Domain(fileDescription,MD_BrowseGraphics):1.0
+Range(fileDescription,string):1.0
+is(fileIdentifier,DataProperty):1.0
+Characteristics(fileIdentifier,Functional):1.0
+Domain(fileIdentifier,MD_Metadata):1.0
+Range(fileIdentifier,string):1.0
+is(fileName,DataProperty):1.0
+Characteristics(fileName,Functional):1.0
+Domain(fileName,MD_BrowseGraphics):1.0
+Range(fileName,string):1.0
+is(fileType,DataProperty):1.0
+Characteristics(fileType,Functional):1.0
+Domain(fileType,MD_BrowseGraphics):1.0
+Range(fileType,string):1.0
+is(filmDistortionInformationAvailibility,DataProperty):1.0
+Characteristics(filmDistortionInformationAvailibility,Functional):1.0
+Domain(filmDistortionInformationAvailibility,MD_ImageDescription):1.0
+Range(filmDistortionInformationAvailibility,boolean):1.0
+is(formatSpecification,DataProperty):1.0
+Characteristics(formatSpecification,Functional):1.0
+Domain(formatSpecification,MD_Format):1.0
+Range(formatSpecification,string):1.0
+is(geometricObjectCount,DataProperty):1.0
+Characteristics(geometricObjectCount,Functional):1.0
+Domain(geometricObjectCount,MD_GeometricObjects):1.0
+Range(geometricObjectCount,int):1.0
+is(graphicsFile,DataProperty):1.0
+Characteristics(graphicsFile,Functional):1.0
+Domain(graphicsFile,MD_ApplicationSchemaInformation):1.0
+Range(graphicsFile,string):1.0
+is(handlingDescription,DataProperty):1.0
+Characteristics(handlingDescription,Functional):1.0
+Domain(handlingDescription,MD_SecurityConstraints):1.0
+Range(handlingDescription,string):1.0
+is(heightOfProspectivePointAboveSurface,DataProperty):1.0
+Characteristics(heightOfProspectivePointAboveSurface,Functional):1.0
+Domain(heightOfProspectivePointAboveSurface,MD_ProjectionParameters):1.0
+Range(heightOfProspectivePointAboveSurface,float):1.0
+is(hierarchyLevelName,DataProperty):1.0
+Domain(hierarchyLevelName,MD_Metadata):1.0
+Range(hierarchyLevelName,string):1.0
+is(hoursOfService,DataProperty):1.0
+Characteristics(hoursOfService,Functional):1.0
+Domain(hoursOfService,CI_Contact):1.0
+Range(hoursOfService,string):1.0
+is(identifier,DataProperty):1.0
+Domain(identifier,CI_Citation):1.0
+Range(identifier,string):1.0
+is(identifierType,DataProperty):1.0
+Domain(identifierType,CI_Citation):1.0
+Range(identifierType,string):1.0
+is(illuminationAzimuthAngle,DataProperty):1.0
+Characteristics(illuminationAzimuthAngle,Functional):1.0
+Domain(illuminationAzimuthAngle,MD_ImageDescription):1.0
+Range(illuminationAzimuthAngle,float):1.0
+is(illuminationElevationAngle,DataProperty):1.0
+Characteristics(illuminationElevationAngle,Functional):1.0
+Domain(illuminationElevationAngle,MD_ImageDescription):1.0
+Range(illuminationElevationAngle,float):1.0
+is(includeWithDataset,DataProperty):1.0
+Characteristics(includeWithDataset,Functional):1.0
+Domain(includeWithDataset,MD_FeatureCatalogueDescription):1.0
+Range(includeWithDataset,boolean):1.0
+is(individualName,DataProperty):1.0
+Characteristics(individualName,Functional):1.0
+Domain(individualName,CI_ResponsibleParty):1.0
+Range(individualName,string):1.0
+is(issuedIdentification,DataProperty):1.0
+Characteristics(issuedIdentification,Functional):1.0
+Domain(issuedIdentification,CI_Series):1.0
+Range(issuedIdentification,string):1.0
+is(keyword,DataProperty):1.0
+Domain(keyword,MD_Keywords):1.0
+Range(keyword,string):1.0
+is(latitudeOfProjectionCenter,DataProperty):1.0
+Characteristics(latitudeOfProjectionCenter,Functional):1.0
+Domain(latitudeOfProjectionCenter,MD_ProjectionParameters):1.0
+Range(latitudeOfProjectionCenter,float):1.0
+is(latitudeOfProjectionOrigin,DataProperty):1.0
+Characteristics(latitudeOfProjectionOrigin,Functional):1.0
+Domain(latitudeOfProjectionOrigin,MD_ProjectionParameters):1.0
+Range(latitudeOfProjectionOrigin,float):1.0
+is(lenseDistortionInformationAvailibility,DataProperty):1.0
+Characteristics(lenseDistortionInformationAvailibility,Functional):1.0
+Domain(lenseDistortionInformationAvailibility,MD_ImageDescription):1.0
+Range(lenseDistortionInformationAvailibility,boolean):1.0
+is(linkage,DataProperty):1.0
+Characteristics(linkage,Functional):1.0
+Domain(linkage,CI_OnlineResource):1.0
+Range(linkage,anyURI):1.0
+is(longitudeOfCentralMeridian,DataProperty):1.0
+Characteristics(longitudeOfCentralMeridian,Functional):1.0
+Domain(longitudeOfCentralMeridian,MD_ProjectionParameters):1.0
+Range(longitudeOfCentralMeridian,float):1.0
+is(longitudeOfProjectionCenter,DataProperty):1.0
+Characteristics(longitudeOfProjectionCenter,Functional):1.0
+Domain(longitudeOfProjectionCenter,MD_ProjectionParameters):1.0
+Range(longitudeOfProjectionCenter,float):1.0
+is(maintenanceNote,DataProperty):1.0
+Domain(maintenanceNote,MD_MaintenanceInformation):1.0
+Range(maintenanceNote,string):1.0
+is(maxValue,DataProperty):1.0
+Characteristics(maxValue,Functional):1.0
+Domain(maxValue,MD_Band):1.0
+Range(maxValue,float):1.0
+is(maximumOccurance,DataProperty):1.0
+Characteristics(maximumOccurance,Functional):1.0
+Domain(maximumOccurance,MD_ExtendedElementInformation):1.0
+Range(maximumOccurance,string):1.0
+is(maximumValue,DataProperty):1.0
+Characteristics(maximumValue,Functional):1.0
+Domain(maximumValue,EX_VerticalExtent):1.0
+Range(maximumValue,float):1.0
+is(measureDateTime,DataProperty):1.0
+Domain(measureDateTime,DQ_Element):1.0
+Range(measureDateTime,dateTime):1.0
+is(measureDescription,DataProperty):1.0
+Characteristics(measureDescription,Functional):1.0
+Domain(measureDescription,DQ_Element):1.0
+Range(measureDescription,string):1.0
+is(mediumNote,DataProperty):1.0
+Characteristics(mediumNote,Functional):1.0
+Domain(mediumNote,MD_Medium):1.0
+Range(mediumNote,string):1.0
+is(metadataLanguage,DataProperty):1.0
+Characteristics(metadataLanguage,Functional):1.0
+Domain(metadataLanguage,MD_Metadata):1.0
+Range(metadataLanguage,string):1.0
+is(metadataStandardName,DataProperty):1.0
+Characteristics(metadataStandardName,Functional):1.0
+Domain(metadataStandardName,MD_Metadata):1.0
+Range(metadataStandardName,string):1.0
+is(metadataStandardVersion,DataProperty):1.0
+Characteristics(metadataStandardVersion,Functional):1.0
+Domain(metadataStandardVersion,MD_Metadata):1.0
+Range(metadataStandardVersion,string):1.0
+is(minValue,DataProperty):1.0
+Characteristics(minValue,Functional):1.0
+Domain(minValue,MD_Band):1.0
+Range(minValue,float):1.0
+is(minimumValue,DataProperty):1.0
+Characteristics(minimumValue,Functional):1.0
+Domain(minimumValue,EX_VerticalExtent):1.0
+Range(minimumValue,float):1.0
+is(nameOfMeasure,DataProperty):1.0
+Domain(nameOfMeasure,DQ_Element):1.0
+Range(nameOfMeasure,string):1.0
+is(name_MD_Format,DataProperty):1.0
+Characteristics(name_MD_Format,Functional):1.0
+Domain(name_MD_Format,MD_Format):1.0
+Range(name_MD_Format,string):1.0
+is(numberOfDimensions,DataProperty):1.0
+Characteristics(numberOfDimensions,Functional):1.0
+Domain(numberOfDimensions,MD_GridSpatialRepresentation):1.0
+Range(numberOfDimensions,int):1.0
+is(obliqueLineLatitude,DataProperty):1.0
+Characteristics(obliqueLineLatitude,Functional):1.0
+Domain(obliqueLineLatitude,MD_ObliqueLinePoint):1.0
+Range(obliqueLineLatitude,float):1.0
+is(obliqueLineLongitude,DataProperty):1.0
+Characteristics(obliqueLineLongitude,Functional):1.0
+Domain(obliqueLineLongitude,MD_ObliqueLinePoint):1.0
+Range(obliqueLineLongitude,float):1.0
+is(offset,DataProperty):1.0
+Characteristics(offset,Functional):1.0
+Domain(offset,MD_Band):1.0
+Range(offset,float):1.0
+is(onlineResourceDescription,DataProperty):1.0
+Characteristics(onlineResourceDescription,Functional):1.0
+Domain(onlineResourceDescription,CI_OnlineResource):1.0
+Range(onlineResourceDescription,string):1.0
+is(onlineResourceName,DataProperty):1.0
+Characteristics(onlineResourceName,Functional):1.0
+Domain(onlineResourceName,CI_OnlineResource):1.0
+Range(onlineResourceName,string):1.0
+is(orderingInstructions,DataProperty):1.0
+Characteristics(orderingInstructions,Functional):1.0
+Domain(orderingInstructions,MD_StandardOrderProcess):1.0
+Range(orderingInstructions,string):1.0
+is(organisationName,DataProperty):1.0
+Characteristics(organisationName,Functional):1.0
+Domain(organisationName,CI_ResponsibleParty):1.0
+Range(organisationName,string):1.0
+is(orientationParameterAvailibility,DataProperty):1.0
+Characteristics(orientationParameterAvailibility,Functional):1.0
+Domain(orientationParameterAvailibility,MD_Georeferenceable):1.0
+Range(orientationParameterAvailibility,boolean):1.0
+is(orientationParameterDescription,DataProperty):1.0
+Characteristics(orientationParameterDescription,Functional):1.0
+Domain(orientationParameterDescription,MD_Georeferenceable):1.0
+Range(orientationParameterDescription,string):1.0
+is(other,DataProperty):1.0
+Characteristics(other,Functional):1.0
+Domain(other,MD_ScopeDescription):1.0
+Range(other,string):1.0
+is(otherCitationDetails,DataProperty):1.0
+Characteristics(otherCitationDetails,Functional):1.0
+Domain(otherCitationDetails,CI_Citation):1.0
+Range(otherCitationDetails,string):1.0
+is(otherConstraints,DataProperty):1.0
+Domain(otherConstraints,MD_LegalConstraints):1.0
+Range(otherConstraints,string):1.0
+is(page,DataProperty):1.0
+Characteristics(page,Functional):1.0
+Domain(page,CI_Series):1.0
+Range(page,string):1.0
+is(parentEntity,DataProperty):1.0
+Domain(parentEntity,MD_ExtendedElementInformation):1.0
+Range(parentEntity,string):1.0
+is(parentIdentifier,DataProperty):1.0
+Characteristics(parentIdentifier,Functional):1.0
+Domain(parentIdentifier,MD_Metadata):1.0
+Range(parentIdentifier,string):1.0
+is(pass,DataProperty):1.0
+Characteristics(pass,Functional):1.0
+Domain(pass,DQ_ConformanceResult):1.0
+Range(pass,boolean):1.0
+is(peakResponse,DataProperty):1.0
+Characteristics(peakResponse,Functional):1.0
+Domain(peakResponse,MD_Band):1.0
+Range(peakResponse,float):1.0
+is(plannedAvailableDateTime,DataProperty):1.0
+Characteristics(plannedAvailableDateTime,Functional):1.0
+Domain(plannedAvailableDateTime,MD_StandardOrderProcess):1.0
+Range(plannedAvailableDateTime,dateTime):1.0
+is(positionName,DataProperty):1.0
+Characteristics(positionName,Functional):1.0
+Domain(positionName,CI_ResponsibleParty):1.0
+Range(positionName,string):1.0
+is(postalCode,DataProperty):1.0
+Characteristics(postalCode,Functional):1.0
+Domain(postalCode,CI_Address):1.0
+Range(postalCode,string):1.0
+is(protocol,DataProperty):1.0
+Characteristics(protocol,Functional):1.0
+Domain(protocol,CI_OnlineResource):1.0
+Range(protocol,string):1.0
+is(purpose,DataProperty):1.0
+Characteristics(purpose,Functional):1.0
+Domain(purpose,MD_Identification):1.0
+Range(purpose,string):1.0
+is(radiometricCalibrationDataAvailability,DataProperty):1.0
+Characteristics(radiometricCalibrationDataAvailability,Functional):1.0
+Domain(radiometricCalibrationDataAvailability,MD_ImageDescription):1.0
+Range(radiometricCalibrationDataAvailability,boolean):1.0
+is(resourceReferenecDate,DataProperty):1.0
+Domain(resourceReferenecDate,CI_Date):1.0
+Range(resourceReferenecDate,date):1.0
+is(rule,DataProperty):1.0
+Characteristics(rule,Functional):1.0
+Domain(rule,MD_ExtendedElementInformation):1.0
+Range(rule,string):1.0
+is(scaleFactor,DataProperty):1.0
+Characteristics(scaleFactor,Functional):1.0
+Domain(scaleFactor,MD_Band):1.0
+Range(scaleFactor,float):1.0
+is(scaleFactorAtCenterLine,DataProperty):1.0
+Characteristics(scaleFactorAtCenterLine,Functional):1.0
+Domain(scaleFactorAtCenterLine,MD_ProjectionParameters):1.0
+Range(scaleFactorAtCenterLine,float):1.0
+is(scaleFactorAtEquator,DataProperty):1.0
+Characteristics(scaleFactorAtEquator,Functional):1.0
+Domain(scaleFactorAtEquator,MD_ProjectionParameters):1.0
+Range(scaleFactorAtEquator,float):1.0
+is(scaleFactorAtProjectionOrigin,DataProperty):1.0
+Characteristics(scaleFactorAtProjectionOrigin,Functional):1.0
+Domain(scaleFactorAtProjectionOrigin,MD_ProjectionParameters):1.0
+Range(scaleFactorAtProjectionOrigin,float):1.0
+is(schemaAscii,DataProperty):1.0
+Characteristics(schemaAscii,Functional):1.0
+Domain(schemaAscii,MD_ApplicationSchemaInformation):1.0
+Range(schemaAscii,string):1.0
+is(schemaLanguage,DataProperty):1.0
+Characteristics(schemaLanguage,Functional):1.0
+Domain(schemaLanguage,MD_ApplicationSchemaInformation):1.0
+Range(schemaLanguage,string):1.0
+is(semiMajorAxis,DataProperty):1.0
+Characteristics(semiMajorAxis,Functional):1.0
+Domain(semiMajorAxis,MD_EllipsoidParameters):1.0
+Range(semiMajorAxis,float):1.0
+is(seriesName,DataProperty):1.0
+Characteristics(seriesName,Functional):1.0
+Domain(seriesName,CI_Series):1.0
+Range(seriesName,string):1.0
+is(shortName,DataProperty):1.0
+Characteristics(shortName,Functional):1.0
+Domain(shortName,MD_ExtendedElementInformation):1.0
+Range(shortName,string):1.0
+is(softwareDevelopmentFileFormat,DataProperty):1.0
+Characteristics(softwareDevelopmentFileFormat,Functional):1.0
+Domain(softwareDevelopmentFileFormat,MD_ApplicationSchemaInformation):1.0
+Range(softwareDevelopmentFileFormat,string):1.0
+is(sourceDescription,DataProperty):1.0
+Characteristics(sourceDescription,Functional):1.0
+Domain(sourceDescription,LI_Source):1.0
+Range(sourceDescription,string):1.0
+is(sourceStep,DataProperty):1.0
+Domain(sourceStep,LI_Source):1.0
+Range(sourceStep,string):1.0
+is(spatialObject,DataProperty):1.0
+Characteristics(spatialObject,Functional):1.0
+Domain(spatialObject,MD_FeatureTypeList):1.0
+Range(spatialObject,string):1.0
+is(spatialSchemaName,DataProperty):1.0
+Characteristics(spatialSchemaName,Functional):1.0
+Domain(spatialSchemaName,MD_FeatureTypeList):1.0
+Range(spatialSchemaName,string):1.0
+is(specificUsage,DataProperty):1.0
+Characteristics(specificUsage,Functional):1.0
+Domain(specificUsage,MD_Usage):1.0
+Range(specificUsage,string):1.0
+is(standardParallel,DataProperty):1.0
+Domain(standardParallel,MD_ProjectionParameters):1.0
+Range(standardParallel,float):1.0
+is(statement,DataProperty):1.0
+Characteristics(statement,Functional):1.0
+Domain(statement,LI_Lineage):1.0
+Range(statement,string):1.0
+is(stepDateTime,DataProperty):1.0
+Domain(stepDateTime,LI_ProcessStep):1.0
+Range(stepDateTime,dateTime):1.0
+is(stepDescription,DataProperty):1.0
+Characteristics(stepDescription,Functional):1.0
+Domain(stepDescription,LI_ProcessStep):1.0
+Range(stepDescription,string):1.0
+is(stepRationale,DataProperty):1.0
+Characteristics(stepRationale,Functional):1.0
+Domain(stepRationale,LI_ProcessStep):1.0
+Range(stepRationale,string):1.0
+is(straightVerticalLongitudeFromPole,DataProperty):1.0
+Characteristics(straightVerticalLongitudeFromPole,Functional):1.0
+Domain(straightVerticalLongitudeFromPole,MD_ProjectionParameters):1.0
+Range(straightVerticalLongitudeFromPole,float):1.0
+is(supplementalInformation,DataProperty):1.0
+Characteristics(supplementalInformation,Functional):1.0
+Domain(supplementalInformation,MD_DataIdentification):1.0
+Range(supplementalInformation,string):1.0
+is(title,DataProperty):1.0
+Characteristics(title,Functional):1.0
+Domain(title,CI_Citation):1.0
+Range(title,string):1.0
+is(toneGradation,DataProperty):1.0
+Characteristics(toneGradation,Functional):1.0
+Domain(toneGradation,MD_Band):1.0
+Range(toneGradation,int):1.0
+is(transferSize,DataProperty):1.0
+Characteristics(transferSize,Functional):1.0
+Domain(transferSize,MD_DigitalTransferOptions):1.0
+Range(transferSize,float):1.0
+is(transformationDimensionDescription,DataProperty):1.0
+Characteristics(transformationDimensionDescription,Functional):1.0
+Domain(transformationDimensionDescription,MD_Georectified):1.0
+Range(transformationDimensionDescription,string):1.0
+is(transformationDimensionMapping,DataProperty):1.0
+Domain(transformationDimensionMapping,MD_Georectified):1.0
+Range(transformationDimensionMapping,string):1.0
+is(transformationParameterAvailabiliy,DataProperty):1.0
+Characteristics(transformationParameterAvailabiliy,Functional):1.0
+Domain(transformationParameterAvailabiliy,MD_GridSpatialRepresentation):1.0
+Range(transformationParameterAvailabiliy,boolean):1.0
+is(triangulationIndicator,DataProperty):1.0
+Characteristics(triangulationIndicator,Functional):1.0
+Domain(triangulationIndicator,MD_ImageDescription):1.0
+Range(triangulationIndicator,boolean):1.0
+is(turnaround,DataProperty):1.0
+Characteristics(turnaround,Functional):1.0
+Domain(turnaround,MD_StandardOrderProcess):1.0
+Range(turnaround,string):1.0
+is(unitsOfDistribution,DataProperty):1.0
+Characteristics(unitsOfDistribution,Functional):1.0
+Domain(unitsOfDistribution,MD_DigitalTransferOptions):1.0
+Range(unitsOfDistribution,string):1.0
+is(useLimitation,DataProperty):1.0
+Domain(useLimitation,MD_Constraints):1.0
+Range(useLimitation,string):1.0
+is(userDefinedMaintenanceFrequency,DataProperty):1.0
+Domain(userDefinedMaintenanceFrequency,MD_MaintenanceInformation):1.0
+Range(userDefinedMaintenanceFrequency,duration):1.0
+is(userDeterminedLimitations,DataProperty):1.0
+Characteristics(userDeterminedLimitations,Functional):1.0
+Domain(userDeterminedLimitations,MD_Usage):1.0
+Range(userDeterminedLimitations,string):1.0
+is(userNote,DataProperty):1.0
+Characteristics(userNote,Functional):1.0
+Domain(userNote,MD_SecurityConstraints):1.0
+Range(userNote,string):1.0
+is(version,DataProperty):1.0
+Characteristics(version,Functional):1.0
+Domain(version,MD_Format):1.0
+Range(version,string):1.0
+is(voice,DataProperty):1.0
+Domain(voice,CI_Telephone):1.0
+Range(voice,string):1.0
+is(volumes,DataProperty):1.0
+Characteristics(volumes,Functional):1.0
+Domain(volumes,MD_Medium):1.0
+Range(volumes,int):1.0
+is(zone,DataProperty):1.0
+Characteristics(zone,Functional):1.0
+Domain(zone,MD_ProjectionParameters):1.0
+Range(zone,int):1.0
+is(Angle,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Distance,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(GenericName,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Measure,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Record,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(RecordType,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(UomLength,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(GM_Object,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(GM_Point,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(TM_Primitive,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(GF_AttributeType,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(GF_FeatureType,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(SC_VerticalDatum,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(RS_Identifier,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Binary,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(CI_Address,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,,administrativeArea min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,city min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,country min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,deliveryPoint min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,electronicMailAddress min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,postalCode min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,administrativeArea max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,city max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,country max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,postalCode max 1 www.w3.org/2000/01/-schema#):1.0
+is(CI_Citation,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,citedResponsibleParty min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,presentationForm min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,referenceDate min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,series min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,series max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,ISBN min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,ISSN min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,alternateTitle min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,collectiveTitle min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,edition min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,editionDate min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,identifier min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,identifierType min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,otherCitationDetails min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,title exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,ISBN max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,ISSN max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,collectiveTitle max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,edition max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,editionDate max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,otherCitationDetails max 1 www.w3.org/2000/01/-schema#):1.0
+is(CI_Contact,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,address min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,onlineResource min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,phone min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,address max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,onlineResource max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,phone max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,contactInstructions min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,hoursOfService min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,contactInstructions max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,hoursOfService max 1 www.w3.org/2000/01/-schema#):1.0
+is(CI_Date,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,dateType exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,resourceReferenecDate exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(CI_DateTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(CI_OnLineFunctionCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(CI_OnlineResource,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,function min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,function max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,applicationProfile min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,protocol min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,linkage exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,applicationProfile max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,onlineResourceDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,onlineResourceName max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,protocol max 1 www.w3.org/2000/01/-schema#):1.0
+is(CI_PresentationFormCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(CI_ResponsibleParty,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,contactInfo min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,role exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,contactInfo max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,individualName min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,organisationName min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,positionName min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,individualName max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,organisationName max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,positionName max 1 www.w3.org/2000/01/-schema#):1.0
+is(CI_RoleCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(CI_Series,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,,issuedIdentification min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,page min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,issuedIdentification max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,page max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,seriesName max 1 www.w3.org/2000/01/-schema#):1.0
+is(CI_Telephone,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,,fascimile min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,voice min 0 www.w3.org/2000/01/-schema#):1.0
+is(DQ_AbsoluteExtenalPositionalAccuracy,Class):1.0
+SubClassOf(DQ_AbsoluteExtenalPositionalAccuracy,DQ_PositionAccuracy):1.0
+is(DQ_AccuracyOfATimeMeasurement,Class):1.0
+SubClassOf(DQ_AccuracyOfATimeMeasurement,DQ_TemporalAccuracy):1.0
+is(DQ_Completeness,Class):1.0
+SubClassOf(DQ_Completeness,DQ_Element):1.0
+is(DQ_CompletenessCommission,Class):1.0
+SubClassOf(DQ_CompletenessCommission,DQ_Completeness):1.0
+is(DQ_CompletenessOmission,Class):1.0
+SubClassOf(DQ_CompletenessOmission,DQ_Completeness):1.0
+is(DQ_ConceptualConsistency,Class):1.0
+SubClassOf(DQ_ConceptualConsistency,DQ_LogicalConsistency):1.0
+is(DQ_ConformanceResult,Class):1.0
+SubClassOf(DQ_ConformanceResult,DQ_Result,):1.0
+is(Thing,,conformanceSpecification exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,,explanation exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,pass exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(DQ_DataQuality,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,lineage min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,report min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,scope exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,lineage max 1 www.w3.org/2002/07/#):1.0
+is(DQ_DomainConsistency,Class):1.0
+SubClassOf(DQ_DomainConsistency,DQ_LogicalConsistency):1.0
+is(DQ_Element,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,evaluationMethodType min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,evaluationProcedure min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,measureIdentification min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,result min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,evaluationMethodType max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,evaluationProcedure max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,measureIdentification max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,result max 2 www.w3.org/2002/07/#):1.0
+is(Literal,,evaluationMethodDescription min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,measureDescription min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,nameOfMeasure min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,evaluationMethodDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,measureDateTime max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,measureDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(DQ_EvaluationMethodTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(DQ_FormatConsistency,Class):1.0
+SubClassOf(DQ_FormatConsistency,DQ_LogicalConsistency):1.0
+is(DQ_GriddedDataPositionalAccuracy,Class):1.0
+SubClassOf(DQ_GriddedDataPositionalAccuracy,DQ_PositionAccuracy):1.0
+is(DQ_LogicalConsistency,Class):1.0
+SubClassOf(DQ_LogicalConsistency,DQ_Element):1.0
+is(DQ_NonQuantitativeAttributeAccuracy,Class):1.0
+SubClassOf(DQ_NonQuantitativeAttributeAccuracy,DQ_ThematicAccuracy):1.0
+is(DQ_PositionAccuracy,Class):1.0
+SubClassOf(DQ_PositionAccuracy,DQ_Element):1.0
+is(DQ_QuantitativeAttributeAccuracy,Class):1.0
+SubClassOf(DQ_QuantitativeAttributeAccuracy,DQ_ThematicAccuracy):1.0
+is(DQ_QuantitativeResult,Class):1.0
+SubClassOf(DQ_QuantitativeResult,DQ_Result,):1.0
+is(Thing,,value min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,valueType min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,valueUnit min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,valueUnit max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,errorStatistic min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,errorStatistic max 1 www.w3.org/2000/01/-schema#):1.0
+is(DQ_RelativeInternalPositionalAccuracy,Class):1.0
+SubClassOf(DQ_RelativeInternalPositionalAccuracy,DQ_PositionAccuracy):1.0
+is(DQ_Result,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(DQ_Scope,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,level min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,levelDescription min 0 www.w3.org/2002/07/#):1.0
+is(Thing,scopeExtent max 1 www.w3.org/2002/07/#):1.0
+is(DQ_TemporalAccuracy,Class):1.0
+SubClassOf(DQ_TemporalAccuracy,DQ_Element):1.0
+is(DQ_TemporalConsistency,Class):1.0
+SubClassOf(DQ_TemporalConsistency,DQ_TemporalAccuracy):1.0
+is(DQ_TemporalValidity,Class):1.0
+SubClassOf(DQ_TemporalValidity,DQ_TemporalAccuracy):1.0
+is(DQ_ThematicAccuracy,Class):1.0
+SubClassOf(DQ_ThematicAccuracy,DQ_Element):1.0
+is(DQ_ThematicClassificationCorrectness,Class):1.0
+SubClassOf(DQ_ThematicClassificationCorrectness,DQ_ThematicAccuracy):1.0
+is(DQ_TopologicalConsistency,Class):1.0
+SubClassOf(DQ_TopologicalConsistency,DQ_LogicalConsistency):1.0
+is(DS_AssociationTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(DS_InitiativeTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(EX_BoundingPolygon,Class):1.0
+SubClassOf(EX_BoundingPolygon,EX_GeographicExtent,):1.0
+is(Thing,polygon min 1 www.w3.org/2002/07/#):1.0
+is(EX_Extent,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,geographicElement min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,temporalElement min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,verticalElement min 0 www.w3.org/2002/07/#):1.0
+is(Literal,extentDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(EX_GeographicBoundingBox,Class):1.0
+SubClassOf(EX_GeographicBoundingBox,EX_GeographicExtent,):1.0
+is(Thing,,eastBoundLongitude exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,northBoundLatitude exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,southBoundLatitude exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,westBoundLongitude exactly 1 www.w3.org/2002/07/#):1.0
+is(EX_GeographicDescription,Class):1.0
+SubClassOf(EX_GeographicDescription,EX_GeographicExtent,):1.0
+is(Thing,geographicIdentifier exactly 1 www.w3.org/2002/07/#):1.0
+is(EX_GeographicExtent,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,,extentTypeCode min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,extentTypeCode max 1 www.w3.org/2000/01/-schema#):1.0
+is(EX_SpatialTemporalExtent,Class):1.0
+SubClassOf(EX_SpatialTemporalExtent,EX_TemporalExtent,):1.0
+is(Thing,spatialExtent min 1 www.w3.org/2002/07/#):1.0
+is(EX_TemporalExtent,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,exTemp exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,temporalExtent exactly 1 www.w3.org/2002/07/#):1.0
+is(EX_VerticalExtent,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,unitOfMeasure exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,verticalDatum exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,,maximumValue exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,minimumValue exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(LI_Lineage,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,processStep min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,source min 0 www.w3.org/2002/07/#):1.0
+is(Literal,,statement min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,statement max 1 www.w3.org/2000/01/-schema#):1.0
+is(LI_ProcessStep,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,processor min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,source min 0 www.w3.org/2002/07/#):1.0
+is(Literal,,stepDescription exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,stepDateTime max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,stepRationale max 1 www.w3.org/2000/01/-schema#):1.0
+is(LI_Source,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,scaleDenominator min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,sourceCitation min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,sourceExtent min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,sourceReferenceSystem min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,scaleDenominator max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,sourceCitation max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,sourceReferenceSystem max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,sourceStep min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,sourceDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_ApplicationSchemaInformation,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,softwareDevelopmentFile min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,applicationSchemaName exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,featureCatalogueSupplement exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,softwareDevelopmentFile max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,graphicsFile min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,schemaAscii min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,softwareDevelopmentFileFormat min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,constraintLanguage exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,schemaLanguage exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,graphicsFile max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,schemaAscii max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,softwareDevelopmentFileFormat max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Band,Class):1.0
+SubClassOf(MD_Band,MD_RangeDimension,):1.0
+is(Thing,,units min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,units max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,bitsPerValue min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,maxValue min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,minValue min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,offset min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,peakResponse min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,scaleFactor min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,toneGradation min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,bitsPerValue max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,maxValue max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,minValue max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,offset max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,peakResponse max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,scaleFactor max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,toneGradation max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_BrowseGraphics,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,,fileDescription min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,fileType min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,fileName exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,fileDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,fileType max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_CRS,Class):1.0
+SubClassOf(MD_CRS,MD_ReferenceSystem,):1.0
+is(Thing,,datum min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,ellipsoid min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,ellipsoidParameters min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,projection min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,projectionParameter min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,datum max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,ellipsoid max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,ellipsoidParameters max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,projection max 1 www.w3.org/2002/07/#):1.0
+is(Thing,projectionParameter max 1 www.w3.org/2002/07/#):1.0
+is(MD_CellGeometryCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_CharacterSetCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_ClassificationCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_Constraints,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,useLimitation min 0 www.w3.org/2000/01/-schema#):1.0
+is(MD_ContentInformation,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_CoverageContentTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_CoverageDescription,Class):1.0
+SubClassOf(MD_CoverageDescription,MD_ContentInformation,):1.0
+is(Thing,,dimension min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,attributeDescription exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,contentType exactly 1 www.w3.org/2002/07/#):1.0
+is(MD_DataIdentification,Class):1.0
+SubClassOf(MD_DataIdentification,MD_Identification,):1.0
+is(Thing,,spatialRepresentationType min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,spatialResolution min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,topicCategory min 1 www.w3.org/2002/07/#):1.0
+is(Literal,,dataLanguage min 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,environmentDescription min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,supplementalInformation min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,environmentDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,supplementalInformation max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_DataTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_DigitalTransferOptions,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,offLine min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,onLine min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,offLine max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,transferSize min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,unitsOfDistribution min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,transferSize max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,unitsOfDistribution max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Dimension,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,resolution min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,dimensionName exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,resolution max 1 www.w3.org/2002/07/#):1.0
+is(Literal,dimensionSize exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_DimensionNameTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_Distribution,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,distributionFormat min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,distributor min 0 www.w3.org/2002/07/#):1.0
+is(Thing,transferOptions min 0 www.w3.org/2002/07/#):1.0
+is(MD_Distributor,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,distributionOrderProcess min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,distributionTransferOptions min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,distributorFormat min 0 www.w3.org/2002/07/#):1.0
+is(Thing,distributorContact exactly 1 www.w3.org/2002/07/#):1.0
+is(MD_EllipsoidParameters,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,axisUnits exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,,denominationOfFlatteningRatio min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,semiMajorAxis exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,denominationOfFlatteningRatio max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_ExtendedElementInformation,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,extEleSrc min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,obligation min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,dataType exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,obligation max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,condition min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,domainCode min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,domainValue min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,maximumOccurance min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,parentEntity min 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,shortName min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,definition exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,extensionElementName exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,rule exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,condition max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,domainCode max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,domainValue max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,maximumOccurance max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,shortName max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_FeatureCatalogueDescription,Class):1.0
+SubClassOf(MD_FeatureCatalogueDescription,MD_ContentInformation,):1.0
+is(Thing,,featureCatalogueCitation min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,featureTypes min 0 www.w3.org/2002/07/#):1.0
+is(Literal,,complianceCode min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,includeWithDataset exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,complianceCode max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_FeatureTypeList,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,,spatialObject exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,spatialSchemaName exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Format,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,formatDistributor min 0 www.w3.org/2002/07/#):1.0
+is(Literal,,amendmentNumber min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,fileDecompressionTechnique min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,formatSpecification min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,name_MD_Format exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,version exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,amendmentNumber max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,fileDecompressionTechnique max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,formatSpecification max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_GeometricObjectTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_GeometricObjects,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,geometricObjectType exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,,geometricObjectCount min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,geometricObjectCount max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Georectified,Class):1.0
+SubClassOf(MD_Georectified,MD_GridSpatialRepresentation,):1.0
+is(Thing,,centerPoint min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,cornerPoints exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,pointInPixel exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,centerPoint max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,checkPointDescription min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,transformationDimensionDescription min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,transformationDimensionMapping min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,checkPointAvailability exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,checkPointDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,transformationDimensionDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,transformationDimensionMapping max 2 www.w3.org/2000/01/-schema#):1.0
+is(MD_Georeferenceable,Class):1.0
+SubClassOf(MD_Georeferenceable,MD_GridSpatialRepresentation,):1.0
+is(Thing,,parameterCitation min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,parameters exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,,orientationParameterAvailibility min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,controlPointAvailability exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,orientationParameterAvailibility exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,orientationParameterAvailibility max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_GridSpatialRepresentation,Class):1.0
+SubClassOf(MD_GridSpatialRepresentation,MD_SpatialRepresentation,):1.0
+is(Thing,,axisDimensionProperties exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,cellGeometry exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,,numberOfDimensions exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,transformationParameterAvailabiliy exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Identification,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,descriptiveKeywords min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,graphicOverview min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,pointOfContact min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,resourceConstraints min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,resourceFormat min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,resourceMaintenance min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,resourceSpecificUsage min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,status min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,citation exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,,credit min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,purpose min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,abstract exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,purpose max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Identifier,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,authority min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,authority max 1 www.w3.org/2002/07/#):1.0
+is(Literal,code exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_ImageDescription,Class):1.0
+SubClassOf(MD_ImageDescription,MD_CoverageDescription,):1.0
+is(Thing,,imageQualityCode min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,imagingCondition min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,processingLevelCode min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,imageQualityCode max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,imagingCondition max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,processingLevelCode max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,cameraCalibrationInformationAvailability min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,cloudCoverPercentage min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,compressionGenerationQuantity min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,filmDistortionInformationAvailibility min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,illuminationAzimuthAngle min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,illuminationElevationAngle min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,lenseDistortionInformationAvailibility min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,radiometricCalibrationDataAvailability min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,triangulationIndicator min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,cameraCalibrationInformationAvailability max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,cloudCoverPercentage max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,compressionGenerationQuantity max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,filmDistortionInformationAvailibility max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,illuminationAzimuthAngle max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,illuminationElevationAngle max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,lenseDistortionInformationAvailibility max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,radiometricCalibrationDataAvailability max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,triangulationIndicator max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_ImagingConditionCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_KeywordTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_Keywords,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,thesaurusName min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,type min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,thesaurusName max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,type max 1 www.w3.org/2002/07/#):1.0
+is(Literal,keyword min 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_LegalConstraints,Class):1.0
+SubClassOf(MD_LegalConstraints,MD_Constraints,):1.0
+is(Thing,,accessConstraints min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,useConstraints min 0 www.w3.org/2002/07/#):1.0
+is(Literal,otherConstraints min 0 www.w3.org/2000/01/-schema#):1.0
+is(MD_MaintenanceFrequenceCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_MaintenanceInformation,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,dateOfNextUpdate min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,updateScope min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,updateScopeDescription min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,maintenanceAndUpdateFrequency exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,dateOfNextUpdate max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,maintenanceNote min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,userDefinedMaintenanceFrequency min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,userDefinedMaintenanceFrequency max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Medium,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,mediumFormat min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,mediumName min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,mediumName max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,density min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,densityUnits min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,mediumNote min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,volumes min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,densityUnits max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,mediumNote max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,volumes max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_MediumFormatCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_MediumNameCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_Metadata,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,applicationSchemaInfo min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,contentInfo min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,dataQualityInfo min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,distributionInfo min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,hierarchyLevel min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,identificationInfo min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,metadataConstraints min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,metadataExtentInfo min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,metadataMaintenance min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,portrayalCatalogueInfo min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,referenceSystemInfo min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,spatialRepresentationInfo min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,contact exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,distributionInfo max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,metadataCharacterSet max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,metadataMaintenance max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,dataSetURI min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,fileIdentifier min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,hierarchyLevelName min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,metadataStandardName min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,metadataStandardVersion min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,parentIdentifier min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,dateStamp exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,dataSetURI max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,fileIdentifier max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,metadataLanguage max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,metadataStandardName max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,metadataStandardVersion max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,parentIdentifier max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_MetadataExtentInformation,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,extendedElementInformation min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,extensionOnLineResource min 0 www.w3.org/2002/07/#):1.0
+is(Thing,extensionOnLineResource max 1 www.w3.org/2002/07/#):1.0
+is(MD_ObligationCode,Class):1.0
+EquivalentTo(MD_ObligationCode,{conditional , mandatory , optional}):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_ObliqueLineAzimuth,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,,azimuthAngle exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,azimuthMeasurePointLongitude exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_ObliqueLinePoint,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,,obliqueLineLatitude exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,obliqueLineLongitude exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_PixelOrientationCode,Class):1.0
+EquivalentTo(MD_PixelOrientationCode,{center , lowerLeft , lowerRight , upperLeft , upperRight}):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_PortrayalCatalogueReference,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,portrayalCatalogueCitation min 1 www.w3.org/2002/07/#):1.0
+is(MD_ProgressCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_ProjectionParameters,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,falseEastingNorthingUnits min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,obliqueLineAzimuthParameter min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,obliqueLinePointParameter min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,falseEastingNorthingUnits max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,obliqueLineAzimuthParameter max 1 www.w3.org/2002/07/#):1.0
+is(Thing,,obliqueLinePointParameter max 2 www.w3.org/2002/07/#):1.0
+is(Literal,,falseEasting min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,falseNorthing min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,heightOfProspectivePointAboveSurface min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,latitudeOfProjectionCenter min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,latitudeOfProjectionOrigin min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,longitudeOfCentralMeridian min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,longitudeOfProjectionCenter min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,scaleFactorAtCenterLine min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,scaleFactorAtEquator min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,scaleFactorAtProjectionOrigin min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,standardParallel min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,straightVerticalLongitudeFromPole min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,zone min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,falseEasting max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,falseNorthing max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,heightOfProspectivePointAboveSurface max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,latitudeOfProjectionOrigin max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,longitudeOfCentralMeridian max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,longitudeOfProjectionCenter max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,scaleFactorAtCenterLine max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,scaleFactorAtEquator max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,scaleFactorAtProjectionOrigin max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,standardParallel max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,straightVerticalLongitudeFromPole max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,zone max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_RangeDimension,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,sequenceIdentifier min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,sequenceIdentifier max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,descriptor min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,descriptor max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_ReferenceSystem,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,referenceSystemIdentifier min 0 www.w3.org/2002/07/#):1.0
+is(Thing,referenceSystemIdentifier max 1 www.w3.org/2002/07/#):1.0
+is(MD_RepresentativeFraction,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,denominator exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_Resolution,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,distance min 0 www.w3.org/2002/07/#):1.0
+is(Thing,equivalentScale min 0 www.w3.org/2002/07/#):1.0
+is(MD_RestrictionCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_ScopeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_ScopeDescription,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,attributeInstances exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,attributes exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,featureInstances exactly 1 www.w3.org/2002/07/#):1.0
+is(Thing,,features exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,,dataset exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,other exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_SecurityConstraints,Class):1.0
+SubClassOf(MD_SecurityConstraints,MD_Constraints,):1.0
+is(Thing,,classification exactly 1 www.w3.org/2002/07/#):1.0
+is(Literal,,classificationSystem min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,handlingDescription min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,userNote min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,classificationSystem max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,handlingDescription max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,userNote max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_ServiceIdentification,Class):1.0
+SubClassOf(MD_ServiceIdentification,MD_Identification):1.0
+is(MD_SpatialAttributeSupplement,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,theFeatureTypeList min 1 www.w3.org/2002/07/#):1.0
+is(MD_SpatialRepresentation,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_SpatialRepresentationTypeCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_StandardOrderProcess,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Literal,,fees min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,orderingInstructions min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,plannedAvailableDateTime min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,turnaround min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,fees max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,orderingInstructions max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,plannedAvailableDateTime max 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,turnaround max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_TopicCategoryCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_TopologyLevelCode,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(MD_Usage,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,usageDateTime min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,userContactInfo min 1 www.w3.org/2002/07/#):1.0
+is(Thing,,usageDateTime max 1 www.w3.org/2002/07/#):1.0
+is(Literal,,userDeterminedLimitations min 0 www.w3.org/2000/01/-schema#):1.0
+is(Literal,,specificUsage exactly 1 www.w3.org/2000/01/-schema#):1.0
+is(Literal,userDeterminedLimitations max 1 www.w3.org/2000/01/-schema#):1.0
+is(MD_VectorSpatialRepresentation,Class):1.0
+SubClassOf(MD_VectorSpatialRepresentation,MD_SpatialRepresentation,):1.0
+is(Thing,,geometricObjects min 0 www.w3.org/2002/07/#):1.0
+is(Thing,,topologyLevel min 0 www.w3.org/2002/07/#):1.0
+is(Thing,topologyLevel max 1 www.w3.org/2002/07/#):1.0
+is(MemberName,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(_1quarterInchCartidgeTape,Individual):1.0
+Types(_1quarterInchCartidgeTape,MD_MediumNameCode):1.0
+is(_3480Cartidge,Individual):1.0
+Types(_3480Cartidge,MD_MediumNameCode):1.0
+is(_3490Cartidge,Individual):1.0
+Types(_3490Cartidge,MD_MediumNameCode):1.0
+is(_3580Cartidge,Individual):1.0
+Types(_3580Cartidge,MD_MediumNameCode):1.0
+is(_3halfIncFloppy,Individual):1.0
+Types(_3halfIncFloppy,MD_MediumNameCode):1.0
+is(_4mmCartidge,Individual):1.0
+Types(_4mmCartidge,MD_MediumNameCode):1.0
+is(_5quarterInchFloppy,Individual):1.0
+Types(_5quarterInchFloppy,MD_MediumNameCode):1.0
+is(_7trackTape,Individual):1.0
+Types(_7trackTape,MD_MediumNameCode):1.0
+is(_8859part1,Individual):1.0
+Types(_8859part1,MD_CharacterSetCode):1.0
+is(_8859part11,Individual):1.0
+Types(_8859part11,MD_CharacterSetCode):1.0
+is(_8859part14,Individual):1.0
+Types(_8859part14,MD_CharacterSetCode):1.0
+is(_8859part15,Individual):1.0
+Types(_8859part15,MD_CharacterSetCode):1.0
+is(_8859part2,Individual):1.0
+Types(_8859part2,MD_CharacterSetCode):1.0
+is(_8859part3,Individual):1.0
+Types(_8859part3,MD_CharacterSetCode):1.0
+is(_8859part4,Individual):1.0
+Types(_8859part4,MD_CharacterSetCode):1.0
+is(_8859part5,Individual):1.0
+Types(_8859part5,MD_CharacterSetCode):1.0
+is(_8859part6,Individual):1.0
+Types(_8859part6,MD_CharacterSetCode):1.0
+is(_8859part7,Individual):1.0
+Types(_8859part7,MD_CharacterSetCode):1.0
+is(_8859part8,Individual):1.0
+Types(_8859part8,MD_CharacterSetCode):1.0
+is(_8859part9,Individual):1.0
+Types(_8859part9,MD_CharacterSetCode):1.0
+is(_8mmCartidge,Individual):1.0
+Types(_8mmCartidge,MD_MediumNameCode):1.0
+is(_9trackTape,Individual):1.0
+Types(_9trackTape,MD_MediumNameCode):1.0
+is(_dataset,Individual):1.0
+Types(_dataset,MD_ScopeCode):1.0
+is(_point,Individual):1.0
+Types(_point,MD_GeometricObjectTypeCode):1.0
+is(_pointOfContact,Individual):1.0
+Types(_pointOfContact,CI_RoleCode):1.0
+is(_processor,Individual):1.0
+Types(_processor,CI_RoleCode):1.0
+is(_restricted,Individual):1.0
+Types(_restricted,MD_ClassificationCode):1.0
+is(_series,Individual):1.0
+Types(_series,MD_ScopeCode):1.0
+is(_source,Individual):1.0
+Types(_source,DS_AssociationTypeCode):1.0
+is(abstractClass,Individual):1.0
+Types(abstractClass,MD_DataTypeCode):1.0
+is(abstract_TopoLevCd,Individual):1.0
+Types(abstract_TopoLevCd,MD_TopologyLevelCode):1.0
+is(aggregatedClass,Individual):1.0
+Types(aggregatedClass,MD_DataTypeCode):1.0
+is(annually,Individual):1.0
+Types(annually,MD_MaintenanceFrequenceCode):1.0
+is(area,Individual):1.0
+Types(area,MD_CellGeometryCode):1.0
+is(asNeeded,Individual):1.0
+Types(asNeeded,MD_MaintenanceFrequenceCode):1.0
+is(association,Individual):1.0
+Types(association,MD_DataTypeCode):1.0
+is(attribute,Individual):1.0
+Types(attribute,MD_ScopeCode):1.0
+is(attributeType,Individual):1.0
+Types(attributeType,MD_ScopeCode):1.0
+is(biannually,Individual):1.0
+Types(biannually,MD_MaintenanceFrequenceCode):1.0
+is(big5,Individual):1.0
+Types(big5,MD_CharacterSetCode):1.0
+is(biota,Individual):1.0
+Types(biota,MD_TopicCategoryCode):1.0
+is(blurredImage,Individual):1.0
+Types(blurredImage,MD_ImagingConditionCode):1.0
+is(boundaries,Individual):1.0
+Types(boundaries,MD_TopicCategoryCode):1.0
+is(campaign,Individual):1.0
+Types(campaign,DS_InitiativeTypeCode):1.0
+is(cdRom,Individual):1.0
+Types(cdRom,MD_MediumNameCode):1.0
+is(center,Individual):1.0
+Types(center,MD_PixelOrientationCode):1.0
+is(characterString,Individual):1.0
+Types(characterString,MD_DataTypeCode):1.0
+is(class,Individual):1.0
+Types(class,MD_DataTypeCode):1.0
+is(cliomatologyMetereologyAtmosphere,Individual):1.0
+Types(cliomatologyMetereologyAtmosphere,MD_TopicCategoryCode):1.0
+is(cloud,Individual):1.0
+Types(cloud,MD_ImagingConditionCode):1.0
+is(codelist,Individual):1.0
+Types(codelist,MD_DataTypeCode):1.0
+is(codelistElement,Individual):1.0
+Types(codelistElement,MD_DataTypeCode):1.0
+is(collection,Individual):1.0
+Types(collection,DS_InitiativeTypeCode):1.0
+is(collectionHardware,Individual):1.0
+Types(collectionHardware,MD_ScopeCode):1.0
+is(collectionSession,Individual):1.0
+Types(collectionSession,MD_ScopeCode):1.0
+is(column,Individual):1.0
+Types(column,MD_DimensionNameTypeCode):1.0
+is(completed,Individual):1.0
+Types(completed,MD_ProgressCode):1.0
+is(complexes,Individual):1.0
+Types(complexes,MD_GeometricObjectTypeCode):1.0
+is(composites,Individual):1.0
+Types(composites,MD_GeometricObjectTypeCode):1.0
+is(conditional,Individual):1.0
+Types(conditional,MD_ObligationCode):1.0
+is(confidential,Individual):1.0
+Types(confidential,MD_ClassificationCode):1.0
+is(continual,Individual):1.0
+Types(continual,MD_MaintenanceFrequenceCode):1.0
+is(copyright,Individual):1.0
+Types(copyright,MD_RestrictionCode):1.0
+is(cpio,Individual):1.0
+Types(cpio,MD_MediumFormatCode):1.0
+is(creation,Individual):1.0
+Types(creation,CI_DateTypeCode):1.0
+is(crossReference,Individual):1.0
+Types(crossReference,DS_AssociationTypeCode):1.0
+is(crossTrack,Individual):1.0
+Types(crossTrack,MD_DimensionNameTypeCode):1.0
+is(curve,Individual):1.0
+Types(curve,MD_GeometricObjectTypeCode):1.0
+is(custodian,Individual):1.0
+Types(custodian,CI_RoleCode):1.0
+is(daily,Individual):1.0
+Types(daily,MD_MaintenanceFrequenceCode):1.0
+is(dataTypeClass,Individual):1.0
+Types(dataTypeClass,MD_DataTypeCode):1.0
+is(degradingObliquity,Individual):1.0
+Types(degradingObliquity,MD_ImagingConditionCode):1.0
+is(digitalLinearTape,Individual):1.0
+Types(digitalLinearTape,MD_MediumNameCode):1.0
+is(dimensionGroup,Individual):1.0
+Types(dimensionGroup,MD_ScopeCode):1.0
+is(directExternal,Individual):1.0
+Types(directExternal,DQ_EvaluationMethodTypeCode):1.0
+is(directInternal,Individual):1.0
+Types(directInternal,DQ_EvaluationMethodTypeCode):1.0
+is(discipline,Individual):1.0
+Types(discipline,MD_KeywordTypeCode):1.0
+is(distributors,Individual):1.0
+Types(distributors,CI_RoleCode):1.0
+is(documentDigital,Individual):1.0
+Types(documentDigital,CI_PresentationFormCode):1.0
+is(documentHardcopy,Individual):1.0
+Types(documentHardcopy,CI_PresentationFormCode):1.0
+is(download,Individual):1.0
+Types(download,CI_OnLineFunctionCode):1.0
+is(dvd,Individual):1.0
+Types(dvd,MD_MediumNameCode):1.0
+is(dvdRom,Individual):1.0
+Types(dvdRom,MD_MediumNameCode):1.0
+is(ebcdic,Individual):1.0
+Types(ebcdic,MD_CharacterSetCode):1.0
+is(economy,Individual):1.0
+Types(economy,MD_TopicCategoryCode):1.0
+is(elevation,Individual):1.0
+Types(elevation,MD_TopicCategoryCode):1.0
+is(enumeration,Individual):1.0
+Types(enumeration,MD_DataTypeCode):1.0
+is(environment,Individual):1.0
+Types(environment,MD_TopicCategoryCode):1.0
+is(eucJP,Individual):1.0
+Types(eucJP,MD_CharacterSetCode):1.0
+is(eucKR,Individual):1.0
+Types(eucKR,MD_CharacterSetCode):1.0
+is(exercise,Individual):1.0
+Types(exercise,DS_InitiativeTypeCode):1.0
+is(experiment,Individual):1.0
+Types(experiment,DS_InitiativeTypeCode):1.0
+is(farming,Individual):1.0
+Types(farming,MD_TopicCategoryCode):1.0
+is(feature,Individual):1.0
+Types(feature,MD_ScopeCode):1.0
+is(featureType,Individual):1.0
+Types(featureType,MD_ScopeCode):1.0
+is(fieldSesson,Individual):1.0
+Types(fieldSesson,MD_ScopeCode):1.0
+is(fog,Individual):1.0
+Types(fog,MD_ImagingConditionCode):1.0
+is(fortnightly,Individual):1.0
+Types(fortnightly,MD_MaintenanceFrequenceCode):1.0
+is(fullPlanarGraph,Individual):1.0
+Types(fullPlanarGraph,MD_TopologyLevelCode):1.0
+is(fullSurfaceGraph,Individual):1.0
+Types(fullSurfaceGraph,MD_TopologyLevelCode):1.0
+is(fullTopology3D,Individual):1.0
+Types(fullTopology3D,MD_TopologyLevelCode):1.0
+is(geometryOnly,Individual):1.0
+Types(geometryOnly,MD_TopologyLevelCode):1.0
+is(geoscientificInformation,Individual):1.0
+Types(geoscientificInformation,MD_TopicCategoryCode):1.0
+is(grid,Individual):1.0
+Types(grid,MD_SpatialRepresentationTypeCode):1.0
+is(hardcopy,Individual):1.0
+Types(hardcopy,MD_MediumNameCode):1.0
+is(health,Individual):1.0
+Types(health,MD_TopicCategoryCode):1.0
+is(heavySmokeOrDust,Individual):1.0
+Types(heavySmokeOrDust,MD_ImagingConditionCode):1.0
+is(highSierra,Individual):1.0
+Types(highSierra,MD_MediumFormatCode):1.0
+is(historicalArchive,Individual):1.0
+Types(historicalArchive,MD_ProgressCode):1.0
+is(iiregular,Individual):1.0
+Types(iiregular,MD_MaintenanceFrequenceCode):1.0
+is(image,Individual):1.0
+Types(image,MD_CoverageContentTypeCode):1.0
+is(imageDigital,Individual):1.0
+Types(imageDigital,CI_PresentationFormCode):1.0
+is(imageHardCopy,Individual):1.0
+Types(imageHardCopy,CI_PresentationFormCode):1.0
+is(imageryBaseMapsEarthCover,Individual):1.0
+Types(imageryBaseMapsEarthCover,MD_TopicCategoryCode):1.0
+is(indirect,Individual):1.0
+Types(indirect,DQ_EvaluationMethodTypeCode):1.0
+is(information,Individual):1.0
+Types(information,CI_OnLineFunctionCode):1.0
+is(inlandWaters,Individual):1.0
+Types(inlandWaters,MD_TopicCategoryCode):1.0
+is(integer,Individual):1.0
+Types(integer,MD_DataTypeCode):1.0
+is(intellectualPropertyrights,Individual):1.0
+Types(intellectualPropertyrights,MD_RestrictionCode):1.0
+is(intelligenceMilitary,Individual):1.0
+Types(intelligenceMilitary,MD_TopicCategoryCode):1.0
+is(interfaceClass,Individual):1.0
+Types(interfaceClass,MD_DataTypeCode):1.0
+is(iso9660,Individual):1.0
+Types(iso9660,MD_MediumFormatCode):1.0
+is(iso9660AppleHFS,Individual):1.0
+Types(iso9660AppleHFS,MD_MediumFormatCode):1.0
+is(iso9660RockRidge,Individual):1.0
+Types(iso9660RockRidge,MD_MediumFormatCode):1.0
+is(jis,Individual):1.0
+Types(jis,MD_CharacterSetCode):1.0
+is(largerWorkCitation,Individual):1.0
+Types(largerWorkCitation,DS_AssociationTypeCode):1.0
+is(license,Individual):1.0
+Types(license,MD_RestrictionCode):1.0
+is(line,Individual):1.0
+Types(line,MD_DimensionNameTypeCode):1.0
+is(location,Individual):1.0
+Types(location,MD_TopicCategoryCode):1.0
+is(lowerLeft,Individual):1.0
+Types(lowerLeft,MD_PixelOrientationCode):1.0
+is(lowerRight,Individual):1.0
+Types(lowerRight,MD_PixelOrientationCode):1.0
+is(mandatory,Individual):1.0
+Types(mandatory,MD_ObligationCode):1.0
+is(mapDigital,Individual):1.0
+Types(mapDigital,CI_PresentationFormCode):1.0
+is(mapHardCopy,Individual):1.0
+Types(mapHardCopy,CI_PresentationFormCode):1.0
+is(metaClass,Individual):1.0
+Types(metaClass,MD_DataTypeCode):1.0
+is(mission,Individual):1.0
+Types(mission,DS_InitiativeTypeCode):1.0
+is(model,Individual):1.0
+Types(model,MD_ScopeCode):1.0
+is(modelDigital,Individual):1.0
+Types(modelDigital,CI_PresentationFormCode):1.0
+is(modelHardcopy,Individual):1.0
+Types(modelHardcopy,CI_PresentationFormCode):1.0
+is(monthly,Individual):1.0
+Types(monthly,MD_MaintenanceFrequenceCode):1.0
+is(night,Individual):1.0
+Types(night,MD_ImagingConditionCode):1.0
+is(nonGeographicDataset,Individual):1.0
+Types(nonGeographicDataset,MD_ScopeCode):1.0
+is(nonImageSensor,Individual):1.0
+Types(nonImageSensor,DS_InitiativeTypeCode):1.0
+is(notPlanned,Individual):1.0
+Types(notPlanned,MD_MaintenanceFrequenceCode):1.0
+is(obsolete,Individual):1.0
+Types(obsolete,MD_ProgressCode):1.0
+is(oceans,Individual):1.0
+Types(oceans,MD_TopicCategoryCode):1.0
+is(offLineAccess,Individual):1.0
+Types(offLineAccess,CI_OnLineFunctionCode):1.0
+is(onGoing,Individual):1.0
+Types(onGoing,MD_ProgressCode):1.0
+is(onLineMedia,Individual):1.0
+Types(onLineMedia,MD_MediumNameCode):1.0
+is(operation,Individual):1.0
+Types(operation,DS_InitiativeTypeCode):1.0
+is(optional,Individual):1.0
+Types(optional,MD_ObligationCode):1.0
+is(order,Individual):1.0
+Types(order,CI_OnLineFunctionCode):1.0
+is(originator,Individual):1.0
+Types(originator,CI_RoleCode):1.0
+is(otherRestrictions,Individual):1.0
+Types(otherRestrictions,MD_RestrictionCode):1.0
+is(owner,Individual):1.0
+Types(owner,CI_RoleCode):1.0
+is(partOfSeamlessDatabase,Individual):1.0
+Types(partOfSeamlessDatabase,DS_AssociationTypeCode):1.0
+is(patent,Individual):1.0
+Types(patent,MD_RestrictionCode):1.0
+is(patentPending,Individual):1.0
+Types(patentPending,MD_RestrictionCode):1.0
+is(physicalMeasurement,Individual):1.0
+Types(physicalMeasurement,MD_CoverageContentTypeCode):1.0
+is(place,Individual):1.0
+Types(place,MD_KeywordTypeCode):1.0
+is(planarGraph,Individual):1.0
+Types(planarGraph,MD_TopologyLevelCode):1.0
+is(planned,Individual):1.0
+Types(planned,MD_ProgressCode):1.0
+is(planningCadastre,Individual):1.0
+Types(planningCadastre,MD_TopicCategoryCode):1.0
+is(platform,Individual):1.0
+Types(platform,DS_InitiativeTypeCode):1.0
+is(point,Individual):1.0
+Types(point,MD_CellGeometryCode):1.0
+is(principalInvestigator,Individual):1.0
+Types(principalInvestigator,CI_RoleCode):1.0
+is(process,Individual):1.0
+Types(process,DS_InitiativeTypeCode):1.0
+is(profileDigital,Individual):1.0
+Types(profileDigital,CI_PresentationFormCode):1.0
+is(profileHardcopy,Individual):1.0
+Types(profileHardcopy,CI_PresentationFormCode):1.0
+is(program,Individual):1.0
+Types(program,DS_InitiativeTypeCode):1.0
+is(project,Individual):1.0
+Types(project,DS_InitiativeTypeCode):1.0
+is(propertyType,Individual):1.0
+Types(propertyType,MD_ScopeCode):1.0
+is(publication,Individual):1.0
+Types(publication,CI_DateTypeCode):1.0
+is(publisher,Individual):1.0
+Types(publisher,CI_RoleCode):1.0
+is(quarterly,Individual):1.0
+Types(quarterly,MD_MaintenanceFrequenceCode):1.0
+is(rain,Individual):1.0
+Types(rain,MD_ImagingConditionCode):1.0
+is(required,Individual):1.0
+Types(required,MD_ProgressCode):1.0
+is(resourceProvider,Individual):1.0
+Types(resourceProvider,CI_RoleCode):1.0
+is(restricted,Individual):1.0
+Types(restricted,MD_RestrictionCode):1.0
+is(revision,Individual):1.0
+Types(revision,CI_DateTypeCode):1.0
+is(row,Individual):1.0
+Types(row,MD_DimensionNameTypeCode):1.0
+is(sample,Individual):1.0
+Types(sample,MD_DimensionNameTypeCode):1.0
+is(satellite,Individual):1.0
+Types(satellite,MD_MediumNameCode):1.0
+is(search,Individual):1.0
+Types(search,CI_OnLineFunctionCode):1.0
+is(secret,Individual):1.0
+Types(secret,MD_ClassificationCode):1.0
+is(semiDarkness,Individual):1.0
+Types(semiDarkness,MD_ImagingConditionCode):1.0
+is(service,Individual):1.0
+Types(service,MD_ScopeCode):1.0
+is(shadow,Individual):1.0
+Types(shadow,MD_ImagingConditionCode):1.0
+is(shiftJIS,Individual):1.0
+Types(shiftJIS,MD_CharacterSetCode):1.0
+is(society,Individual):1.0
+Types(society,MD_TopicCategoryCode):1.0
+is(software,Individual):1.0
+Types(software,MD_ScopeCode):1.0
+is(solid,Individual):1.0
+Types(solid,MD_GeometricObjectTypeCode):1.0
+is(specifiedClass,Individual):1.0
+Types(specifiedClass,MD_DataTypeCode):1.0
+is(stereoModel,Individual):1.0
+Types(stereoModel,MD_SpatialRepresentationTypeCode):1.0
+is(stereomate,Individual):1.0
+Types(stereomate,DS_AssociationTypeCode):1.0
+is(stratum,Individual):1.0
+Types(stratum,MD_KeywordTypeCode):1.0
+is(structure,Individual):1.0
+Types(structure,MD_TopicCategoryCode):1.0
+is(study,Individual):1.0
+Types(study,DS_InitiativeTypeCode):1.0
+is(surface,Individual):1.0
+Types(surface,MD_GeometricObjectTypeCode):1.0
+is(surfaceGraph,Individual):1.0
+Types(surfaceGraph,MD_TopologyLevelCode):1.0
+is(tableDigital,Individual):1.0
+Types(tableDigital,CI_PresentationFormCode):1.0
+is(tableHardcopy,Individual):1.0
+Types(tableHardcopy,CI_PresentationFormCode):1.0
+is(tar,Individual):1.0
+Types(tar,MD_MediumFormatCode):1.0
+is(task,Individual):1.0
+Types(task,DS_InitiativeTypeCode):1.0
+is(telephoneLink,Individual):1.0
+Types(telephoneLink,MD_MediumNameCode):1.0
+is(temporal,Individual):1.0
+Types(temporal,MD_KeywordTypeCode):1.0
+is(terrainMasking,Individual):1.0
+Types(terrainMasking,MD_ImagingConditionCode):1.0
+is(textTable,Individual):1.0
+Types(textTable,MD_SpatialRepresentationTypeCode):1.0
+is(thematicClassification,Individual):1.0
+Types(thematicClassification,MD_CoverageContentTypeCode):1.0
+is(theme,Individual):1.0
+Types(theme,MD_KeywordTypeCode):1.0
+is(time,Individual):1.0
+Types(time,MD_DimensionNameTypeCode):1.0
+is(tin,Individual):1.0
+Types(tin,MD_SpatialRepresentationTypeCode):1.0
+is(topology1D,Individual):1.0
+Types(topology1D,MD_TopologyLevelCode):1.0
+is(topology3D,Individual):1.0
+Types(topology3D,MD_TopologyLevelCode):1.0
+is(topsecret,Individual):1.0
+Types(topsecret,MD_ClassificationCode):1.0
+is(track,Individual):1.0
+Types(track,MD_DimensionNameTypeCode):1.0
+is(trademark,Individual):1.0
+Types(trademark,MD_RestrictionCode):1.0
+is(transportation,Individual):1.0
+Types(transportation,MD_TopicCategoryCode):1.0
+is(trial,Individual):1.0
+Types(trial,DS_InitiativeTypeCode):1.0
+is(typeClass,Individual):1.0
+Types(typeClass,MD_DataTypeCode):1.0
+is(ucs2,Individual):1.0
+Types(ucs2,MD_CharacterSetCode):1.0
+is(ucs4,Individual):1.0
+Types(ucs4,MD_CharacterSetCode):1.0
+is(unclassified,Individual):1.0
+Types(unclassified,MD_ClassificationCode):1.0
+is(underdevelopment,Individual):1.0
+Types(underdevelopment,MD_ProgressCode):1.0
+is(unionClass,Individual):1.0
+Types(unionClass,MD_DataTypeCode):1.0
+is(unknow,Individual):1.0
+Types(unknow,MD_MaintenanceFrequenceCode):1.0
+is(upperLeft,Individual):1.0
+Types(upperLeft,MD_PixelOrientationCode):1.0
+is(upperRight,Individual):1.0
+Types(upperRight,MD_PixelOrientationCode):1.0
+is(usAscii,Individual):1.0
+Types(usAscii,MD_CharacterSetCode):1.0
+is(user,Individual):1.0
+Types(user,CI_RoleCode):1.0
+is(utf16,Individual):1.0
+Types(utf16,MD_CharacterSetCode):1.0
+is(utf7,Individual):1.0
+Types(utf7,MD_CharacterSetCode):1.0
+is(utf8,Individual):1.0
+Types(utf8,MD_CharacterSetCode):1.0
+is(utilitiesCommunication,Individual):1.0
+Types(utilitiesCommunication,MD_TopicCategoryCode):1.0
+is(vector,Individual):1.0
+Types(vector,MD_SpatialRepresentationTypeCode):1.0
+is(vertical,Individual):1.0
+Types(vertical,MD_DimensionNameTypeCode):1.0
+is(video,Individual):1.0
+Types(video,MD_SpatialRepresentationTypeCode):1.0
+is(videoDigital,Individual):1.0
+Types(videoDigital,CI_PresentationFormCode):1.0
+is(videoHardcopy,Individual):1.0
+Types(videoHardcopy,CI_PresentationFormCode):1.0
+is(weekly,Individual):1.0
+Types(weekly,MD_MaintenanceFrequenceCode):1.0

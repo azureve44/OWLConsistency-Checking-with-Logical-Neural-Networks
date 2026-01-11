@@ -1,0 +1,202 @@
+predicate(belongs_to,is,ObjectProperty).
+predicate(distribution,is,ObjectProperty).
+predicate(kind_of,is,ObjectProperty).
+predicate(part_of,is,ObjectProperty).
+predicate(revolers_in,is,ObjectProperty).
+predicate(transmits,is,ObjectProperty).
+predicate(types_of,is,ObjectProperty).
+predicate(uses,is,ObjectProperty).
+predicate(802.11-1997,is,Class).
+predicate(802.11-1997,SubClassOf,WLAN).
+predicate(802.11-2007,is,Class).
+predicate(802.11-2007,SubClassOf,WLAN).
+predicate(802.11-2012,is,Class).
+predicate(802.11-2012,SubClassOf,WLAN).
+predicate(802.11_a_OFDM_Waveform,is,Class).
+predicate(802.11_a_OFDM_Waveform,SubClassOf,WLAN).
+predicate(802.11_ac,is,Class).
+predicate(802.11_ac,SubClassOf,WLAN).
+predicate(802.11_ad,is,Class).
+predicate(802.11_ad,SubClassOf,WLAN).
+predicate(802.11_b,is,Class).
+predicate(802.11_b,SubClassOf,WLAN).
+predicate(802.11_g,is,Class).
+predicate(802.11_g,SubClassOf,WLAN).
+predicate(802.11_n,is,Class).
+predicate(802.11_n,SubClassOf,WLAN).
+predicate(Glass/,is,Class).
+predicate(Glass/,SubClassOf,Optical_Fibre).
+predicate(Wired/,is,Class).
+predicate(Wired/,SubClassOf,Communication_Media).
+predicate(AM,is,Class).
+predicate(AM,SubClassOf,Analog_Modulation).
+predicate(Active_Optical_Network,is,Class).
+predicate(Active_Optical_Network,SubClassOf,Optical_Fibre,).
+predicate(Active_Optical_Network,SubClassOf,distribution some Optical_Fibre).
+predicate(Analog_Modulation,is,Class).
+predicate(Analog_Modulation,SubClassOf,Radio_and_Spread_Spectrum,).
+predicate(Analog_Modulation,SubClassOf,transmits some Radio_and_Spread_Spectrum).
+predicate(Biaxial,is,Class).
+predicate(Biaxial,SubClassOf,Coaxial_Cable,).
+predicate(Biaxial,SubClassOf,types_of some Coaxial_Cable).
+predicate(Bonded_TP,is,Class).
+predicate(Bonded_TP,SubClassOf,Twisted_Pair,).
+predicate(Bonded_TP,SubClassOf,kind_of some Twisted_Pair).
+predicate(CSS,is,Class).
+predicate(CSS,SubClassOf,Radio_and_Spread_Spectrum,).
+predicate(CSS,SubClassOf,types_of some Radio_and_Spread_Spectrum).
+predicate(Cat3,is,Class).
+predicate(Cat3,SubClassOf,Unshielded_Twisted_Pain).
+predicate(Cat4,is,Class).
+predicate(Cat4,SubClassOf,Unshielded_Twisted_Pain).
+predicate(Cat5,is,Class).
+predicate(Cat5,SubClassOf,Unshielded_Twisted_Pain,).
+predicate(Cat5,SubClassOf,kind_of some Unshielded_Twisted_Pain).
+predicate(Cat6,is,Class).
+predicate(Cat6,SubClassOf,Unshielded_Twisted_Pain).
+predicate(Circuit_Mode,is,Class).
+predicate(Circuit_Mode,SubClassOf,Multiplexing).
+predicate(Class_F,is,Class).
+predicate(Class_F,SubClassOf,Shielded_Foiled_Twisted_Pair).
+predicate(Class_Fa,is,Class).
+predicate(Class_Fa,SubClassOf,Shielded_Foiled_Twisted_Pair).
+predicate(Coaxial_Cable,is,Class).
+predicate(Communication_Media,is,Class).
+predicate(Communication_Media,SubClassOf,Computer_Networks).
+predicate(Computer_Networks,is,Class).
+predicate(DSSS,is,Class).
+predicate(DSSS,SubClassOf,Radio_and_Spread_Spectrum,).
+predicate(DSSS,SubClassOf,Statistical_Multiplexing,).
+predicate(DSSS,SubClassOf,kind_of some Statistical_Multiplexing,).
+predicate(DSSS,SubClassOf,types_of some Radio_and_Spread_Spectrum).
+predicate(Direct_Fiber,is,Class).
+predicate(Direct_Fiber,SubClassOf,Optical_Fibre,).
+predicate(Direct_Fiber,SubClassOf,distribution some Optical_Fibre).
+predicate(Elliptical,is,Class).
+predicate(Elliptical,SubClassOf,Satellites,).
+predicate(Elliptical,SubClassOf,revolers_in some Elliptical).
+predicate(FHSS,is,Class).
+predicate(FHSS,SubClassOf,Radio_and_Spread_Spectrum,).
+predicate(FHSS,SubClassOf,Statistical_Multiplexing,).
+predicate(FHSS,SubClassOf,kind_of some Statistical_Multiplexing,).
+predicate(FHSS,SubClassOf,types_of some Radio_and_Spread_Spectrum).
+predicate(FM,is,Class).
+predicate(FM,SubClassOf,Analog_Modulation).
+predicate(FTTB,is,Class).
+predicate(FTTB,SubClassOf,FTTX).
+predicate(FTTC,is,Class).
+predicate(FTTC,SubClassOf,FTTX).
+predicate(FTTD,is,Class).
+predicate(FTTD,SubClassOf,FTTX).
+predicate(FTTH,is,Class).
+predicate(FTTH,SubClassOf,FTTX).
+predicate(FTTN,is,Class).
+predicate(FTTN,SubClassOf,FTTX).
+predicate(FTTP,is,Class).
+predicate(FTTP,SubClassOf,FTTX).
+predicate(FTTX,is,Class).
+predicate(FTTX,SubClassOf,Optical_Fibre,).
+predicate(FTTX,SubClassOf,types_of some Optical_Fibre,).
+predicate(FTTX,SubClassOf,types_of only Screened_Shielded_Twisted_Pair).
+predicate(Geostationary,is,Class).
+predicate(Geostationary,SubClassOf,Satellites,).
+predicate(Geostationary,SubClassOf,revolers_in some Geostationary).
+predicate(Hardline,is,Class).
+predicate(Hardline,SubClassOf,Coaxial_Cable,).
+predicate(Hardline,SubClassOf,types_of some Coaxial_Cable).
+predicate(IEEE_802.11,is,Class).
+predicate(Infrared,is,Class).
+predicate(Loaded_TP,is,Class).
+predicate(Loaded_TP,SubClassOf,Twisted_Pair,).
+predicate(Loaded_TP,SubClassOf,kind_of some Twisted_Pair).
+predicate(Low_Earth_Orbit,is,Class).
+predicate(Low_Earth_Orbit,SubClassOf,Satellites,).
+predicate(Low_Earth_Orbit,SubClassOf,revolers_in some Low_Earth_Orbit).
+predicate(Molniya,is,Class).
+predicate(Molniya,SubClassOf,Satellites,).
+predicate(Molniya,SubClassOf,revolers_in some Molniya).
+predicate(Multimode_Fiber,is,Class).
+predicate(Multimode_Fiber,SubClassOf,Optical_Fibre,).
+predicate(Multimode_Fiber,SubClassOf,part_of some Optical_Fibre).
+predicate(Multiplexing,is,Class).
+predicate(Multiplexing,SubClassOf,Radio_and_Spread_Spectrum).
+predicate(Oliver_Heaviside,is,Class).
+predicate(Oliver_Heaviside,SubClassOf,Coaxial_Cable).
+predicate(Optical_Fibre,is,Class).
+predicate(Optical_Fibre,DisjointWith,Screened_Shielded_Twisted_Pair).
+predicate(PM,is,Class).
+predicate(PM,SubClassOf,Analog_Modulation).
+predicate(Passive_Optical_Network,is,Class).
+predicate(Passive_Optical_Network,SubClassOf,Optical_Fibre,).
+predicate(Passive_Optical_Network,SubClassOf,distribution some Optical_Fibre).
+predicate(Polarization_Multiplexing,is,Class).
+predicate(Polarization_Multiplexing,SubClassOf,Circuit_Mode,).
+predicate(Polarization_Multiplexing,SubClassOf,kind_of some Circuit_Mode).
+predicate(QAM,is,Class).
+predicate(QAM,SubClassOf,Analog_Modulation).
+predicate(RG6,is,Class).
+predicate(RG6,SubClassOf,Coaxial_Cable,).
+predicate(RG6,SubClassOf,types_of some Coaxial_Cable).
+predicate(Radiating,is,Class).
+predicate(Radiating,SubClassOf,Coaxial_Cable,).
+predicate(Radiating,SubClassOf,types_of some Coaxial_Cable).
+predicate(Radio_Frequency_Signals,is,Class).
+predicate(Radio_Frequency_Signals,SubClassOf,Coaxial_Cable).
+predicate(Radio_and_Spread_Spectrum,is,Class).
+predicate(Rigid_Line,is,Class).
+predicate(Rigid_Line,SubClassOf,Coaxial_Cable,).
+predicate(Rigid_Line,SubClassOf,types_of some Coaxial_Cable).
+predicate(SM,is,Class).
+predicate(SM,SubClassOf,Analog_Modulation).
+predicate(SSB,is,Class).
+predicate(SSB,SubClassOf,Analog_Modulation).
+predicate(Satellites,is,Class).
+predicate(Screened_Shielded_Twisted_Pair,is,Class).
+predicate(Screened_Shielded_Twisted_Pair,SubClassOf,Twisted_Pair,).
+predicate(Screened_Shielded_Twisted_Pair,SubClassOf,types_of some Twisted_Pair).
+predicate(Screened_Shielded_Twisted_Pair,DisjointWith,Optical_Fibre).
+predicate(Screened_Twisted_Pair,is,Class).
+predicate(Screened_Twisted_Pair,SubClassOf,Twisted_Pair,).
+predicate(Screened_Twisted_Pair,SubClassOf,types_of some Twisted_Pair).
+predicate(Semirigid,is,Class).
+predicate(Semirigid,SubClassOf,Coaxial_Cable,).
+predicate(Semirigid,SubClassOf,types_of some Coaxial_Cable).
+predicate(Shared_Fiber,is,Class).
+predicate(Shared_Fiber,SubClassOf,Optical_Fibre,).
+predicate(Shared_Fiber,SubClassOf,distribution some Optical_Fibre).
+predicate(Shielded_Foiled_Twisted_Pair,is,Class).
+predicate(Shielded_Foiled_Twisted_Pair,SubClassOf,Twisted_Pair,).
+predicate(Shielded_Foiled_Twisted_Pair,SubClassOf,types_of some Twisted_Pair).
+predicate(Shielded_Twisted_Pair,is,Class).
+predicate(Shielded_Twisted_Pair,SubClassOf,Twisted_Pair,).
+predicate(Shielded_Twisted_Pair,SubClassOf,types_of some Twisted_Pair).
+predicate(Silicon_Photo_Diode,is,Class).
+predicate(Silicon_Photo_Diode,SubClassOf,Infrared,).
+predicate(Silicon_Photo_Diode,SubClassOf,uses some Silicon_Photo_Diode).
+predicate(Single_Mode_Fiber,is,Class).
+predicate(Single_Mode_Fiber,SubClassOf,Optical_Fibre,).
+predicate(Single_Mode_Fiber,SubClassOf,part_of some Optical_Fibre).
+predicate(Statistical_Multiplexing,is,Class).
+predicate(Statistical_Multiplexing,SubClassOf,Multiplexing).
+predicate(THSS,is,Class).
+predicate(THSS,SubClassOf,Radio_and_Spread_Spectrum,).
+predicate(THSS,SubClassOf,types_of some Radio_and_Spread_Spectrum).
+predicate(Triaxial,is,Class).
+predicate(Triaxial,SubClassOf,Coaxial_Cable,).
+predicate(Triaxial,SubClassOf,types_of some Coaxial_Cable).
+predicate(Twinaxial,is,Class).
+predicate(Twinaxial,SubClassOf,Coaxial_Cable,).
+predicate(Twinaxial,SubClassOf,types_of some Coaxial_Cable).
+predicate(Twisted_Pair,is,Class).
+predicate(Twisted_Ribbon_Cable,is,Class).
+predicate(Twisted_Ribbon_Cable,SubClassOf,Twisted_Pair,).
+predicate(Twisted_Ribbon_Cable,SubClassOf,kind_of some Twisted_Pair).
+predicate(Unshielded_Twisted_Pain,is,Class).
+predicate(Unshielded_Twisted_Pain,SubClassOf,Twisted_Pair,).
+predicate(Unshielded_Twisted_Pain,SubClassOf,types_of some Twisted_Pair).
+predicate(WLAN,is,Class).
+predicate(WLAN,SubClassOf,IEEE_802.11,).
+predicate(WLAN,SubClassOf,belongs_to some WLAN).
+predicate(Wireless,is,Class).
+predicate(Wireless,SubClassOf,Communication_Media).
+predicate(www.w3.org/2002/07/#,is,Class).

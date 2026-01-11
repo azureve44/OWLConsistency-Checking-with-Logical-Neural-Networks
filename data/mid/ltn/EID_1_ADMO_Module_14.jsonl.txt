@@ -1,0 +1,14 @@
+is(Cellular_and_sub_cellular_compartment,Class):1.0
+is(gene_product,Class):1.0
+is(mRNA,Class):1.0
+SubClassOf(mRNA,ribonucleic_acid):1.0
+is(nucleus,Class):1.0
+SubClassOf(nucleus,Cellular_and_sub_cellular_compartment):1.0
+is(polypeptidic_chain,Class):1.0
+EquivalentTo(polypeptidic_chain,ribonucleic_acid):1.0
+DisjointWith(polypeptidic_chain,ribonucleic_acid):1.0
+is(ribonucleic_acid,Class):1.0
+EquivalentTo(ribonucleic_acid,polypeptidic_chain):1.0
+SubClassOf(ribonucleic_acid,gene_product):1.0
+DisjointWith(ribonucleic_acid,polypeptidic_chain):1.0
+is(www.w3.org/2002/07/#,Class):1.0

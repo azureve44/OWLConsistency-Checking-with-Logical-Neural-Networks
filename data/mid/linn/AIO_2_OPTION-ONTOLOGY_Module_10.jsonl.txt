@@ -1,0 +1,100 @@
+predicate(OBI_0000294,is,ObjectProperty).
+predicate(OBI_0000300,is,ObjectProperty).
+predicate(OBI_0000308,is,ObjectProperty).
+predicate(RO_0000079,is,ObjectProperty).
+predicate(RO_0000079,Domain,BFO_0000034).
+predicate(RO_0000079,InverseOf,RO_0000085).
+predicate(RO_0000085,is,ObjectProperty).
+predicate(RO_0000085,Domain,BFO_0000004).
+predicate(RO_0000085,Range,BFO_0000034).
+predicate(RO_0000085,InverseOf,RO_0000079).
+predicate(RO_0000087,is,ObjectProperty).
+predicate(RO_0000087,Domain,BFO_0000004).
+predicate(RO_0000087,Range,BFO_0000023).
+predicate(RO_0000091,is,ObjectProperty).
+predicate(RO_0000091,Domain,BFO_0000004).
+predicate(RO_0000091,Range,BFO_0000016).
+predicate(RO_0000091,InverseOf,RO_0000092).
+predicate(RO_0000092,is,ObjectProperty).
+predicate(RO_0000092,InverseOf,RO_0000091).
+predicate(RO_0001025,is,ObjectProperty).
+predicate(RO_0001025,Characteristics,Transitive).
+predicate(RO_0001025,Domain,BFO_0000004).
+predicate(RO_0001025,Range,BFO_0000004,).
+predicate(RO_0001025,Range,BFO_0000004 and (not (BFO_0000006))).
+predicate(BFO_0000002,is,Class).
+predicate(BFO_0000002,SubClassOf,BFO_0000141).
+predicate(BFO_0000004,is,Class).
+predicate(BFO_0000004,SubClassOf,BFO_0000002).
+predicate(BFO_0000004,DisjointWith,BFO_0000031).
+predicate(BFO_0000004,DisjointWith,BFO_0000020).
+predicate(BFO_0000006,is,Class).
+predicate(BFO_0000009,is,Class).
+predicate(BFO_0000009,EquivalentTo,BFO_0000028).
+predicate(BFO_0000009,SubClassOf,BFO_0000006).
+predicate(BFO_0000009,DisjointWith,BFO_0000028).
+predicate(BFO_0000016,is,Class).
+predicate(BFO_0000018,is,Class).
+predicate(BFO_0000018,SubClassOf,BFO_0000006).
+predicate(BFO_0000018,DisjointWith,BFO_0000028).
+predicate(BFO_0000020,is,Class).
+predicate(BFO_0000020,DisjointWith,BFO_0000004).
+predicate(BFO_0000023,is,Class).
+predicate(BFO_0000026,is,Class).
+predicate(BFO_0000026,SubClassOf,BFO_0000006).
+predicate(BFO_0000026,DisjointWith,BFO_0000028).
+predicate(BFO_0000028,is,Class).
+predicate(BFO_0000028,EquivalentTo,BFO_0000009).
+predicate(BFO_0000028,SubClassOf,BFO_0000006).
+predicate(BFO_0000028,DisjointWith,BFO_0000026).
+predicate(BFO_0000028,DisjointWith,BFO_0000018).
+predicate(BFO_0000028,DisjointWith,BFO_0000009).
+predicate(BFO_0000029,is,Class).
+predicate(BFO_0000031,is,Class).
+predicate(BFO_0000031,DisjointWith,BFO_0000004).
+predicate(BFO_0000034,is,Class).
+predicate(BFO_0000034,SubClassOf,BFO_0000016).
+predicate(BFO_0000040,is,Class).
+predicate(BFO_0000040,SubClassOf,BFO_0000004).
+predicate(BFO_0000140,is,Class).
+predicate(BFO_0000141,is,Class).
+predicate(BFO_0000141,SubClassOf,BFO_0000004).
+predicate(BFO_0000142,is,Class).
+predicate(BFO_0000142,SubClassOf,BFO_0000140).
+predicate(BFO_0000142,DisjointWith,BFO_0000147).
+predicate(BFO_0000142,DisjointWith,BFO_0000146).
+predicate(BFO_0000146,is,Class).
+predicate(BFO_0000146,SubClassOf,BFO_0000140).
+predicate(BFO_0000146,DisjointWith,BFO_0000142).
+predicate(BFO_0000147,is,Class).
+predicate(BFO_0000147,SubClassOf,BFO_0000140).
+predicate(BFO_0000147,DisjointWith,BFO_0000142).
+predicate(GAZ_00000448,is,Class).
+predicate(GAZ_00000448,SubClassOf,BFO_0000029).
+predicate(COCO_test_suite,is,Class).
+predicate(algorithm_execution,is,Class).
+predicate(benchmark_algorithm_implementation,is,Class).
+predicate(benchmark_optimization_algorithm,is,Class).
+predicate(benchmark_optimization_algorithm_implementation,is,Class).
+predicate(benchmark_optimization_algorithm_implementation,SubClassOf,benchmark_algorithm_implementation,).
+predicate(benchmark_optimization_algorithm_implementation,SubClassOf,OBI_0000294 some benchmark_optimization_algorithm,).
+predicate(benchmark_optimization_algorithm_implementation,SubClassOf,OBI_0000300 some optimization_algorithm_benchmark_execution).
+predicate(benchmark_problem_transformation,is,Class).
+predicate(optimization_algorithm,is,Class).
+predicate(optimization_algorithm_benchmark_execution,is,Class).
+predicate(optimization_algorithm_execution,is,Class).
+predicate(optimization_algorithm_execution,SubClassOf,algorithm_execution,).
+predicate(optimization_algorithm_execution,SubClassOf,OBI_0000308 some optimization_algorithm_implementation).
+predicate(optimization_algorithm_execution,DisjointWith,BFO_0000004 and (not (BFO_0000006))).
+predicate(optimization_algorithm_implementation,is,Class).
+predicate(optimization_algorithm_implementation,SubClassOf,OntoDM_112569,).
+predicate(optimization_algorithm_implementation,SubClassOf,OBI_0000294 some optimization_algorithm,).
+predicate(optimization_algorithm_implementation,SubClassOf,OBI_0000300 some optimization_algorithm_execution,).
+predicate(optimization_algorithm_implementation,SubClassOf,OBI_0000300 some).
+predicate(optimization_algorithm_implementation,SubClassOf,(optimization_algorithm_execution and (BFO_0000004 and (not (BFO_0000006)))),).
+predicate(optimization_algorithm_implementation,SubClassOf,OBI_0000300 only).
+predicate(optimization_algorithm_implementation,SubClassOf,(BFO_0000004 and (not (BFO_0000006)))).
+predicate(transform_obj_shift,is,Class).
+predicate(transform_obj_shift,SubClassOf,benchmark_problem_transformation).
+predicate(OntoDM_112569,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

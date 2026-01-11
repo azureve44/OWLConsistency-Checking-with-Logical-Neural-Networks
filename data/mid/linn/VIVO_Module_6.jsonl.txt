@@ -1,0 +1,566 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(anyURI,is,Datatype).
+predicate(boolean,is,Datatype).
+predicate(date,is,Datatype).
+predicate(int,is,Datatype).
+predicate(nonNegativeInteger,is,Datatype).
+predicate(string,is,Datatype).
+predicate(isPredecessorOf,is,ObjectProperty).
+predicate(isPredecessorOf,Domain,area).
+predicate(isPredecessorOf,Range,area).
+predicate(isPredecessorOf,InverseOf,isSuccessorOf).
+predicate(isSuccessorOf,is,ObjectProperty).
+predicate(isSuccessorOf,Domain,area).
+predicate(isSuccessorOf,Range,area).
+predicate(isSuccessorOf,InverseOf,isPredecessorOf).
+predicate(BFO_0000050,is,ObjectProperty).
+predicate(BFO_0000051,is,ObjectProperty).
+predicate(citedBy,is,ObjectProperty).
+predicate(citedBy,Domain,Document).
+predicate(citedBy,Range,Document).
+predicate(citedBy,InverseOf,cites).
+predicate(cites,is,ObjectProperty).
+predicate(cites,Domain,Document).
+predicate(cites,Range,Document).
+predicate(cites,InverseOf,citedBy).
+predicate(presentedAt,is,ObjectProperty).
+predicate(presentedAt,Domain,Document).
+predicate(Event,is,purl.org/NET/c4dm/event.#).
+predicate(Event,InverseOf,presents).
+predicate(presents,is,ObjectProperty).
+predicate(presents,InverseOf,presentedAt).
+predicate(reproducedIn,is,ObjectProperty).
+predicate(reproducedIn,Domain,Document).
+predicate(reproducedIn,Range,Document).
+predicate(reproducedIn,InverseOf,reproduces).
+predicate(status,is,ObjectProperty).
+predicate(status,Domain,Document).
+predicate(status,Range,DocumentStatus).
+predicate(translationOf,is,ObjectProperty).
+predicate(translationOf,Domain,Document).
+predicate(translationOf,Range,Document).
+predicate(translationOf,InverseOf,hasTranslation).
+predicate(hasGlobalCitationFrequency,is,ObjectProperty).
+predicate(hasGlobalCountSource,is,ObjectProperty).
+predicate(hasGlobalCountSource,Domain,GlobalCitationCount).
+predicate(hasGlobalCountSource,Range,BibliographicInformationSource).
+predicate(citesAsDataSource,is,ObjectProperty).
+predicate(facilityFor,is,ObjectProperty).
+predicate(facilityFor,Domain,Facility).
+predicate(facilityFor,InverseOf,hasFacility).
+predicate(features,is,ObjectProperty).
+predicate(geographicFocusOf,is,ObjectProperty).
+predicate(geographicFocusOf,Domain,GeographicRegion).
+predicate(hasFacility,is,ObjectProperty).
+predicate(hasFacility,InverseOf,facilityFor).
+predicate(hasGoverningAuthority,is,ObjectProperty).
+predicate(hasSubjectArea,is,ObjectProperty).
+predicate(hasTranslation,is,ObjectProperty).
+predicate(hasTranslation,Domain,Document).
+predicate(hasTranslation,Range,Document).
+predicate(hasTranslation,InverseOf,translationOf).
+predicate(reproduces,is,ObjectProperty).
+predicate(reproduces,Domain,Document).
+predicate(reproduces,Range,Document).
+predicate(reproduces,InverseOf,reproducedIn).
+predicate(validIn,is,ObjectProperty).
+predicate(documentationFor,is,ObjectProperty).
+predicate(documentationFor,Domain,Document).
+predicate(documentationFor,Range,ERO_0000004 or ERO_0000005 or ERO_0000006 or ERO_0000014 or ERO_0000020 or ERO_0000071 or ERO_0001716).
+predicate(codeAGROVOC,is,DataProperty).
+predicate(codeDBPediaID,is,DataProperty).
+predicate(codeFAOSTAT,is,DataProperty).
+predicate(codeFAOTERM,is,DataProperty).
+predicate(codeGAUL,is,DataProperty).
+predicate(codeISO2,is,DataProperty).
+predicate(codeISO3,is,DataProperty).
+predicate(codeUN,is,DataProperty).
+predicate(codeUNDP,is,DataProperty).
+predicate(nameListAR,is,DataProperty).
+predicate(nameListEN,is,DataProperty).
+predicate(nameListES,is,DataProperty).
+predicate(nameListFR,is,DataProperty).
+predicate(nameListIT,is,DataProperty).
+predicate(nameListRU,is,DataProperty).
+predicate(nameListZH,is,DataProperty).
+predicate(nameOfficialAR,is,DataProperty).
+predicate(nameOfficialEN,is,DataProperty).
+predicate(nameOfficialES,is,DataProperty).
+predicate(nameOfficialFR,is,DataProperty).
+predicate(nameOfficialIT,is,DataProperty).
+predicate(nameOfficialRU,is,DataProperty).
+predicate(nameOfficialZH,is,DataProperty).
+predicate(nameShortAR,is,DataProperty).
+predicate(nameShortEN,is,DataProperty).
+predicate(nameShortES,is,DataProperty).
+predicate(nameShortFR,is,DataProperty).
+predicate(nameShortIT,is,DataProperty).
+predicate(nameShortRU,is,DataProperty).
+predicate(nameShortZH,is,DataProperty).
+predicate(validSince,is,DataProperty).
+predicate(validUntil,is,DataProperty).
+predicate(ARG_0000001,is,DataProperty).
+predicate(ARG_0000001,Domain,Document).
+predicate(ARG_0000001,Range,boolean).
+predicate(abstract,is,DataProperty).
+predicate(numPages,is,DataProperty).
+predicate(oclcnum,is,DataProperty).
+predicate(pmid,is,DataProperty).
+predicate(pmid,Domain,Document).
+predicate(volume,is,DataProperty).
+predicate(volume,Domain,Document).
+predicate(hasGlobalCountDate,is,DataProperty).
+predicate(hasGlobalCountDate,Domain,GlobalCitationCount).
+predicate(hasGlobalCountDate,Range,date).
+predicate(hasGlobalCountValue,is,DataProperty).
+predicate(hasGlobalCountValue,Domain,GlobalCitationCount).
+predicate(hasGlobalCountValue,Range,int).
+predicate(abbreviation,is,DataProperty).
+predicate(additionalName,is,DataProperty).
+predicate(additionalName,Domain,Name).
+predicate(additionalName,Range,string).
+predicate(calendarBusy,is,DataProperty).
+predicate(calendarBusy,Domain,CalendarBusy).
+predicate(calendarBusy,Range,anyURI).
+predicate(calendarRequest,is,DataProperty).
+predicate(calendarRequest,Domain,CalendarRequest).
+predicate(calendarRequest,Range,anyURI).
+predicate(category,is,DataProperty).
+predicate(category,Domain,Category).
+predicate(category,Range,string).
+predicate(country,is,DataProperty).
+predicate(country,Domain,Address).
+predicate(country,Range,string).
+predicate(familyName,is,DataProperty).
+predicate(familyName,Domain,Name).
+predicate(familyName,Range,string).
+predicate(geo,is,DataProperty).
+predicate(givenName,is,DataProperty).
+predicate(givenName,Domain,Name).
+predicate(givenName,Range,string).
+predicate(honorificPrefix,is,DataProperty).
+predicate(honorificPrefix,Domain,Name).
+predicate(honorificPrefix,Range,string).
+predicate(honorificSuffix,is,DataProperty).
+predicate(honorificSuffix,Domain,Name).
+predicate(honorificSuffix,Range,string).
+predicate(instantMessage,is,DataProperty).
+predicate(instantMessage,Domain,InstantMessage).
+predicate(instantMessage,Range,anyURI).
+predicate(language,is,DataProperty).
+predicate(locality,is,DataProperty).
+predicate(locality,Domain,Address).
+predicate(locality,Range,string).
+predicate(logo,is,DataProperty).
+predicate(logo,Domain,Logo).
+predicate(logo,Range,anyURI).
+predicate(nickName,is,DataProperty).
+predicate(nickName,Domain,Nickname).
+predicate(nickName,Range,string).
+predicate(photo,is,DataProperty).
+predicate(photo,Domain,Photo).
+predicate(photo,Range,anyURI).
+predicate(postalCode,is,DataProperty).
+predicate(postalCode,Domain,Address).
+predicate(postalCode,Range,string).
+predicate(region,is,DataProperty).
+predicate(region,Domain,Address).
+predicate(region,Range,string).
+predicate(related,is,DataProperty).
+predicate(related,Domain,Related).
+predicate(related,Range,anyURI).
+predicate(sortAs,is,DataProperty).
+predicate(streetAddress,is,DataProperty).
+predicate(streetAddress,Domain,Address).
+predicate(streetAddress,Range,string).
+predicate(telephone,is,DataProperty).
+predicate(timeZone,is,DataProperty).
+predicate(timeZone,Domain,TimeZone).
+predicate(timeZone,Range,string).
+predicate(title,is,DataProperty).
+predicate(title,Domain,Title).
+predicate(title,Range,string).
+predicate(url,is,DataProperty).
+predicate(area,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Literal,,is,codeAGROVOC max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,codeDBPediaID max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,codeFAOSTAT max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,codeFAOTERM max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,codeGAUL max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,codeISO2 max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,codeISO3 max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,codeUN max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,codeUNDP max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameListAR max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameListEN max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameListES max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameListFR max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameListIT max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameListRU max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameListZH max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameOfficialAR max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameOfficialEN max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameOfficialES max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameOfficialFR max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameOfficialIT max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameOfficialRU max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameOfficialZH max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameShortAR max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameShortEN max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameShortES max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameShortFR max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameShortIT max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameShortRU max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,nameShortZH max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,validSince max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal,is,validUntil max 1 www.w3.org/2000/01/-schema#).
+predicate(economic_region,is,Class).
+predicate(economic_region,SubClassOf,group).
+predicate(geographical_region,is,Class).
+predicate(geographical_region,SubClassOf,group,).
+predicate(geographical_region,SubClassOf,GeographicRegion).
+predicate(group,is,Class).
+predicate(group,SubClassOf,area).
+predicate(self_governing,is,Class).
+predicate(self_governing,EquivalentTo,Country).
+predicate(self_governing,SubClassOf,territory,).
+predicate(self_governing,SubClassOf,GeopoliticalEntity).
+predicate(territory,is,Class).
+predicate(territory,SubClassOf,area,).
+predicate(territory,SubClassOf,GeopoliticalEntity).
+predicate(BFO_0000029,is,Class).
+predicate(ERO_0000004,is,Class).
+predicate(ERO_0000005,is,Class).
+predicate(ERO_0000006,is,Class).
+predicate(ERO_0000014,is,Class).
+predicate(ERO_0000016,is,Class).
+predicate(Interventional_study,is,purl.org/net/OCRe/research.#).
+predicate(ERO_0000020,is,Class).
+predicate(ERO_0000071,is,Class).
+predicate(ERO_0001716,is,Class).
+predicate(IAO_0000013,is,Class).
+predicate(IAO_0000013,SubClassOf,AcademicArticle).
+predicate(IAO_0000030,is,Class).
+predicate(IAO_0000032,is,Class).
+predicate(OBI_0000272,is,Class).
+predicate(OBI_0000272,SubClassOf,Document).
+predicate(purl.org/NET/c4dm/event.#,is,Class).
+predicate(purl.org/net/OCRe/research.#,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(purl.org/net/OCRe/study_design.#,is,Class).
+predicate(Interventional_study,is,purl.org/net/OCRe/research.#).
+predicate(AcademicArticle,is,Class).
+predicate(Article,is,Class).
+predicate(Article,SubClassOf,Document).
+predicate(AudioDocument,is,Class).
+predicate(AudioDocument,SubClassOf,Document).
+predicate(AudioVisualDocument,is,Class).
+predicate(AudioVisualDocument,SubClassOf,Document).
+predicate(Bill,is,Class).
+predicate(Bill,SubClassOf,Legislation).
+predicate(Book,is,Class).
+predicate(Book,SubClassOf,Document).
+predicate(BookSection,is,Class).
+predicate(Brief,is,Class).
+predicate(Brief,SubClassOf,LegalCaseDocument).
+predicate(Chapter,is,Class).
+predicate(Chapter,SubClassOf,BookSection).
+predicate(CollectedDocument,is,Class).
+predicate(CollectedDocument,SubClassOf,Document).
+predicate(Document,is,Class).
+predicate(Document,SubClassOf,IAO_0000030,).
+predicate(Document,SubClassOf,hasGlobalCitationFrequency only GlobalCitationCount,).
+predicate(Document,SubClassOf,citesAsDataSource only Dataset,).
+predicate(Agent,,is,features only ns.com/foaf/0.1/).
+predicate(Literal,,is,abstract only www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,numPages only www.w3.org/2000/01/-schema#).
+predicate(Literal,is,oclcnum only www.w3.org/2000/01/-schema#).
+predicate(DocumentPart,is,Class).
+predicate(DocumentPart,SubClassOf,Document).
+predicate(DocumentStatus,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Excerpt,is,Class).
+predicate(Image,is,Class).
+predicate(Image,SubClassOf,Document).
+predicate(LegalCaseDocument,is,Class).
+predicate(LegalDecision,is,Class).
+predicate(LegalDecision,SubClassOf,LegalCaseDocument).
+predicate(LegalDocument,is,Class).
+predicate(LegalDocument,SubClassOf,Document).
+predicate(Legislation,is,Class).
+predicate(Manual,is,Class).
+predicate(Manual,SubClassOf,Document).
+predicate(Manuscript,is,Class).
+predicate(Manuscript,SubClassOf,Document).
+predicate(Note,is,Class).
+predicate(Note,SubClassOf,Document).
+predicate(Patent,is,Class).
+predicate(Patent,SubClassOf,Document).
+predicate(PersonalCommunicationDocument,is,Class).
+predicate(PersonalCommunicationDocument,SubClassOf,Document).
+predicate(Quote,is,Class).
+predicate(Quote,SubClassOf,Excerpt).
+predicate(ReferenceSource,is,Class).
+predicate(ReferenceSource,SubClassOf,Document).
+predicate(Report,is,Class).
+predicate(Report,SubClassOf,Document).
+predicate(Slideshow,is,Class).
+predicate(Slideshow,SubClassOf,Document).
+predicate(Standard,is,Class).
+predicate(Standard,SubClassOf,Document).
+predicate(Statute,is,Class).
+predicate(Statute,SubClassOf,Legislation).
+predicate(Thesis,is,Class).
+predicate(Thesis,SubClassOf,Document).
+predicate(ThesisDegree,is,Class).
+predicate(ThesisDegree,SubClassOf,AcademicDegree).
+predicate(Webpage,is,Class).
+predicate(Webpage,SubClassOf,Document).
+predicate(BibliographicInformationSource,is,Class).
+predicate(GlobalCitationCount,is,Class).
+predicate(GlobalCitationCount,SubClassOf,IAO_0000032).
+predicate(ClinicalGuideline,is,Class).
+predicate(ClinicalGuideline,SubClassOf,Document).
+predicate(Comment,is,Class).
+predicate(Comment,SubClassOf,Document).
+predicate(Erratum,is,Class).
+predicate(Erratum,SubClassOf,Document).
+predicate(Abstract,is,Class).
+predicate(Abstract,SubClassOf,Document).
+predicate(AcademicDegree,is,Class).
+predicate(Literal,,is,abbreviation only www.w3.org/2000/01/-schema#).
+predicate(Literal,,is,abbreviation min 1 nonNegativeInteger).
+predicate(AcademicDepartment,is,Class).
+predicate(AcademicDepartment,SubClassOf,Department).
+predicate(Association,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(Building,is,Class).
+predicate(Building,SubClassOf,Facility).
+predicate(Campus,is,Class).
+predicate(Campus,SubClassOf,GeographicLocation).
+predicate(CaseStudy,is,Class).
+predicate(CaseStudy,SubClassOf,Document).
+predicate(Catalog,is,Class).
+predicate(Catalog,SubClassOf,Document).
+predicate(Center,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(Certificate,is,Class).
+predicate(Certificate,SubClassOf,Credential).
+predicate(ClinicalOrganization,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(Committee,is,Class).
+predicate(Group,is,ns.com/foaf/0.1/).
+predicate(ConferencePoster,is,Class).
+predicate(ConferencePoster,SubClassOf,Document).
+predicate(Consortium,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(Continent,is,Class).
+predicate(Continent,SubClassOf,GeographicRegion).
+predicate(Country,is,Class).
+predicate(Country,EquivalentTo,self_governing).
+predicate(Country,SubClassOf,territory,).
+predicate(Country,SubClassOf,GeopoliticalEntity).
+predicate(County,is,Class).
+predicate(County,SubClassOf,GeopoliticalEntity).
+predicate(Credential,is,Class).
+predicate(Organization,,is,hasGoverningAuthority only ns.com/foaf/0.1/).
+predicate(Thing,,is,hasSubjectArea only www.w3.org/2002/07/#).
+predicate(Thing,,is,validIn only GeographicLocation).
+predicate(Dataset,is,Class).
+predicate(Dataset,SubClassOf,Document).
+predicate(DateTimeValuePrecision,is,Class).
+predicate(Department,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(EmeritusFaculty,is,Class).
+predicate(Person,is,ns.com/foaf/0.1/).
+predicate(EmeritusLibrarian,is,Class).
+predicate(Person,is,ns.com/foaf/0.1/).
+predicate(EmeritusProfessor,is,Class).
+predicate(EmeritusProfessor,SubClassOf,EmeritusFaculty,).
+predicate(Person,is,ns.com/foaf/0.1/).
+predicate(ExtensionUnit,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(F1000Link,is,Class).
+predicate(F1000Link,SubClassOf,URL).
+predicate(Facility,is,Class).
+predicate(Facility,SubClassOf,BFO_0000029,).
+predicate(Facility,SubClassOf,BFO_0000050 only BFO_0000029,).
+predicate(Facility,SubClassOf,BFO_0000051 only Facility).
+predicate(GeographicLocation,is,Class).
+predicate(GeographicLocation,SubClassOf,Location,).
+predicate(GeographicLocation,SubClassOf,BFO_0000050 only GeographicLocation,).
+predicate(GeographicLocation,SubClassOf,BFO_0000051 only GeographicLocation).
+predicate(GeographicRegion,is,Class).
+predicate(GeographicRegion,SubClassOf,GeographicLocation).
+predicate(GeopoliticalEntity,is,Class).
+predicate(GeopoliticalEntity,SubClassOf,GeographicRegion).
+predicate(GraduateStudent,is,Class).
+predicate(GraduateStudent,SubClassOf,Student).
+predicate(Institute,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(InvestigatorRole,is,Class).
+predicate(InvitedTalk,is,Class).
+predicate(InvitedTalk,SubClassOf,Presentation).
+predicate(Laboratory,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(Librarian,is,Class).
+predicate(Person,is,ns.com/foaf/0.1/).
+predicate(License,is,Class).
+predicate(License,SubClassOf,Credential).
+predicate(Location,is,Class).
+predicate(NewsRelease,is,Class).
+predicate(NewsRelease,SubClassOf,Document).
+predicate(NonFacultyAcademic,is,Class).
+predicate(PopulatedPlace,is,Class).
+predicate(PopulatedPlace,SubClassOf,GeopoliticalEntity).
+predicate(Postdoc,is,Class).
+predicate(Postdoc,SubClassOf,NonFacultyAcademic).
+predicate(Presentation,is,Class).
+predicate(PrincipalInvestigatorRole,is,Class).
+predicate(PrincipalInvestigatorRole,SubClassOf,InvestigatorRole).
+predicate(Publisher,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(ResearchOrganization,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(ResearchProposal,is,Class).
+predicate(ResearchProposal,SubClassOf,Document).
+predicate(Room,is,Class).
+predicate(Room,SubClassOf,Facility).
+predicate(Score,is,Class).
+predicate(Score,SubClassOf,Document).
+predicate(Screenplay,is,Class).
+predicate(Screenplay,SubClassOf,Document).
+predicate(ServiceProvidingLaboratory,is,Class).
+predicate(ServiceProvidingLaboratory,SubClassOf,Laboratory).
+predicate(Speech,is,Class).
+predicate(Speech,SubClassOf,Document).
+predicate(StateOrProvince,is,Class).
+predicate(StateOrProvince,SubClassOf,GeopoliticalEntity).
+predicate(Student,is,Class).
+predicate(Person,is,ns.com/foaf/0.1/).
+predicate(StudentOrganization,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(SubnationalRegion,is,Class).
+predicate(SubnationalRegion,SubClassOf,GeographicRegion).
+predicate(Translation,is,Class).
+predicate(Translation,SubClassOf,Document).
+predicate(UndergraduateStudent,is,Class).
+predicate(UndergraduateStudent,SubClassOf,Student).
+predicate(WorkingPaper,is,Class).
+predicate(WorkingPaper,SubClassOf,Document).
+predicate(Phase0ClinicalTrial,is,Class).
+predicate(Phase0ClinicalTrial,SubClassOf,ERO_0000016).
+predicate(Phase1ClinicalTrial,is,Class).
+predicate(Phase1ClinicalTrial,SubClassOf,ERO_0000016).
+predicate(Phase4ClinicalTrial,is,Class).
+predicate(Phase4ClinicalTrial,SubClassOf,ERO_0000016).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(Address,is,Class).
+predicate(Literal)) and ((locality some string) and (locality max 1 www.w3.org/2000/01/-schema#,is,((country some string) and (country max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal)) and ((locality some string) and (locality max 1 www.w3.org/2000/01/-schema#,SubClassOf,Addressing).
+predicate(Addressing,is,Class).
+predicate(Agent,is,Class).
+predicate(Agent,SubClassOf,RelatedType).
+predicate(Calendar,is,Class).
+predicate(Literal)) and ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema#,is,((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(CalendarBusy,is,Class).
+predicate(CalendarBusy,EquivalentTo,(calendarBusy some anyURI)).
+predicate(CalendarBusy,SubClassOf,Calendar).
+predicate(CalendarLink,is,Class).
+predicate(CalendarLink,SubClassOf,Calendar).
+predicate(CalendarRequest,is,Class).
+predicate(CalendarRequest,EquivalentTo,(calendarRequest some anyURI)).
+predicate(CalendarRequest,SubClassOf,Calendar).
+predicate(Category,is,Class).
+predicate(Category,EquivalentTo,(category only string)).
+predicate(Category,SubClassOf,Explanatory).
+predicate(Communication,is,Class).
+predicate(Literal)) or ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema#,is,((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Contact,is,Class).
+predicate(Contact,SubClassOf,RelatedType).
+predicate(Coresident,is,Class).
+predicate(Coresident,SubClassOf,RelatedType).
+predicate(Crush,is,Class).
+predicate(Crush,SubClassOf,RelatedType).
+predicate(Email,is,Class).
+predicate(Email,SubClassOf,Communication).
+predicate(Explanatory,is,Class).
+predicate(Literal)) or ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema#,is,((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Fax,is,Class).
+predicate(Fax,SubClassOf,TelephoneType).
+predicate(Female,is,Class).
+predicate(Female,SubClassOf,Gender).
+predicate(FormattedName,is,Class).
+predicate(FormattedName,SubClassOf,Identification).
+predicate(Gender,is,Class).
+predicate(Geo,is,Class).
+predicate(Geo,SubClassOf,Geographical).
+predicate(Geographical,is,Class).
+predicate(Literal),is,(sortAs only string) and (sortAs max 1 www.w3.org/2000/01/-schema#).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Identification,is,Class).
+predicate(Literal)) or ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema#,is,((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(InstantMessage,is,Class).
+predicate(InstantMessage,EquivalentTo,(instantMessage only anyURI)).
+predicate(InstantMessage,SubClassOf,Communication).
+predicate(Key,is,Class).
+predicate(Key,SubClassOf,Security).
+predicate(Language,is,Class).
+predicate(Literal),is,(language only string) and (language exactly 1 www.w3.org/2000/01/-schema#).
+predicate(Literal),SubClassOf,Communication).
+predicate(Logo,is,Class).
+predicate(Logo,EquivalentTo,(logo some anyURI)).
+predicate(Logo,SubClassOf,Organizational).
+predicate(Met,is,Class).
+predicate(Met,SubClassOf,RelatedType).
+predicate(Name,is,Class).
+predicate(Literal)) and ((givenName some string) and (givenName max 1 www.w3.org/2000/01/-schema#,is,((additionalName some string)) and ((familyName some string) and (familyName max 1 www.w3.org/2000/01/-schema#).
+predicate(Literal)) and ((givenName some string) and (givenName max 1 www.w3.org/2000/01/-schema#,SubClassOf,Identification).
+predicate(Neighbor,is,Class).
+predicate(Neighbor,SubClassOf,RelatedType).
+predicate(Nickname,is,Class).
+predicate(Nickname,EquivalentTo,(nickName some string)).
+predicate(Nickname,SubClassOf,Identification).
+predicate(Note,is,Class).
+predicate(Note,SubClassOf,Explanatory).
+predicate(Organizational,is,Class).
+predicate(Parent,is,Class).
+predicate(Parent,SubClassOf,RelatedType).
+predicate(Photo,is,Class).
+predicate(Photo,EquivalentTo,(photo some anyURI)).
+predicate(Photo,SubClassOf,Identification).
+predicate(Related,is,Class).
+predicate(Related,EquivalentTo,(related some anyURI)).
+predicate(Related,SubClassOf,Organizational).
+predicate(RelatedType,is,Class).
+predicate(Security,is,Class).
+predicate(Literal)) and ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema#,is,((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Sound,is,Class).
+predicate(Sound,SubClassOf,Explanatory).
+predicate(Sweetheart,is,Class).
+predicate(Sweetheart,SubClassOf,RelatedType).
+predicate(Telephone,is,Class).
+predicate(Telephone,EquivalentTo,(telephone only anyURI)).
+predicate(Telephone,SubClassOf,Communication).
+predicate(TelephoneType,is,Class).
+predicate(Text,is,Class).
+predicate(Text,SubClassOf,TelephoneType).
+predicate(TimeZone,is,Class).
+predicate(TimeZone,EquivalentTo,(timeZone some string)).
+predicate(TimeZone,SubClassOf,Geographical).
+predicate(Title,is,Class).
+predicate(Title,EquivalentTo,(title some string)).
+predicate(Title,SubClassOf,Organizational).
+predicate(URL,is,Class).
+predicate(URL,EquivalentTo,(url only anyURI)).
+predicate(URL,SubClassOf,Explanatory).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(ns.com/foaf/0.1/,is,Class).
+predicate(ns.com/foaf/0.1/,is,Class).

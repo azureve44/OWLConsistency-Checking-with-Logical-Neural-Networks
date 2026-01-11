@@ -1,0 +1,973 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty
+string is Datatype
+afecta_a is ObjectProperty
+afecta_a Characteristics InverseFunctional
+afecta_a Domain Cultivos
+afecta_a Range Enfermedades,
+afecta_a Range Malezas,
+afecta_a Range Plagas
+es_dosis_de is ObjectProperty
+es_dosis_de Characteristics InverseFunctional
+es_dosis_de Domain Dosis
+es_dosis_de Range Fungicidas,
+es_dosis_de Range Herbicidas,
+es_dosis_de Range Pesticidas
+es_dosis_de InverseOf su_dosis_es
+es_sintoma_de is ObjectProperty
+es_sintoma_de Characteristics InverseFunctional
+es_sintoma_de Domain Sintomas
+es_sintoma_de Range Cultivos
+es_sintoma_de InverseOf presenta_sintomas
+es_tratamiento_de is ObjectProperty
+es_tratamiento_de Characteristics InverseFunctional
+es_tratamiento_de Domain Fungicidas,
+es_tratamiento_de Domain Herbicidas,
+es_tratamiento_de Domain Pesticidas
+es_tratamiento_de Range Enfermedades,
+es_tratamiento_de Range Malezas,
+es_tratamiento_de Range Plagas
+es_tratamiento_de InverseOf su_tratamiento_es
+presenta_sintomas is ObjectProperty
+presenta_sintomas Characteristics InverseFunctional
+presenta_sintomas Domain Cultivos
+presenta_sintomas Range Sintomas
+presenta_sintomas InverseOf es_sintoma_de
+se_debe_aplicar is ObjectProperty
+se_debe_aplicar Characteristics InverseFunctional
+se_debe_aplicar Domain Dosis
+se_debe_aplicar Range Aplicación
+su_dosis_es is ObjectProperty
+su_dosis_es Characteristics InverseFunctional
+su_dosis_es Domain Fungicidas,
+su_dosis_es Domain Herbicidas,
+su_dosis_es Domain Pesticidas
+su_dosis_es Range Dosis
+su_dosis_es InverseOf es_dosis_de
+su_tratamiento_es is ObjectProperty
+su_tratamiento_es Characteristics InverseFunctional
+su_tratamiento_es Domain Enfermedades,
+su_tratamiento_es Domain Malezas,
+su_tratamiento_es Domain Plagas
+su_tratamiento_es Range Fungicidas,
+su_tratamiento_es Range Herbicidas,
+su_tratamiento_es Range Pesticidas
+su_tratamiento_es InverseOf es_tratamiento_de
+sus_sintomas_son is ObjectProperty
+clima is DataProperty
+clima Domain Cultivos
+clima Range string
+descipción is DataProperty
+descipción Domain Aplicación,
+descipción Domain Dosis,
+descipción Domain Enfermedades,
+descipción Domain Malezas,
+descipción Domain Plagas,
+descipción Domain Sintomas
+descipción Range string
+nombre_científico is DataProperty
+nombre_científico Domain Cultivos,
+nombre_científico Domain Enfermedades,
+nombre_científico Domain Malezas,
+nombre_científico Domain Plagas
+nombre_científico Range string
+Afecciones is Class
+Thing is www.w3.org/2002/07/#
+Aplicación is Class
+Aplicación SubClassOf Recomendaciones
+Cultivos is Class
+Thing is www.w3.org/2002/07/#
+Dosis is Class
+Dosis SubClassOf Recomendaciones
+Enfermedades is Class
+Enfermedades SubClassOf Afecciones
+Enfermedades DisjointWith Malezas
+Fungicidas is Class
+Fungicidas SubClassOf Plaguicidas
+Herbicidas is Class
+Herbicidas SubClassOf Plaguicidas
+Malezas is Class
+Malezas SubClassOf Afecciones
+Malezas DisjointWith Enfermedades
+Pesticidas is Class
+Pesticidas SubClassOf Plaguicidas
+www.w3.org/2000/01/-schema# is Annotations
+Thing is www.w3.org/2002/07/#
+Plagas is Class
+Plagas SubClassOf Afecciones
+Plaguicidas is Class
+Thing is www.w3.org/2002/07/#
+Recomendaciones is Class
+Thing is www.w3.org/2002/07/#
+Sintomas is Class
+Thing is www.w3.org/2002/07/#
+www.w3.org/2002/07/# is Class
+www.w3.org/2002/07/# SubClassOf Dosis
+www.w3.org/2000/01/-schema# is Annotations
+Aplicación1 is Individual
+Aplicación1 Types Aplicación
+Aplicación1 se_debe_aplicar Banzai,
+Aplicación1 se_debe_aplicar Borey,
+Aplicación1 descipción "Aplicar en cuanto aparezcan un 20% daño"
+Aplicación10 is Individual
+Aplicación10 Types Aplicación
+Aplicación10 se_debe_aplicar Solvendazim,
+Aplicación10 descipción "Aplicar en cuanto aparezcan los primeros síntomas, generalmente a los 35 días."
+Aplicación11 is Individual
+Aplicación11 Types Aplicación
+Aplicación11 se_debe_aplicar Prelude,
+Aplicación11 descipción "Aplicar entre los 55 y 65 días."
+Aplicación12 is Individual
+Aplicación12 Types Aplicación
+Aplicación12 se_debe_aplicar Fungis_Khan,
+Aplicación12 se_debe_aplicar Nomad,
+Aplicación12 descipción "Aplicar a los 35 y 65 días"
+Aplicación14 is Individual
+Aplicación14 Types Aplicación
+Aplicación14 se_debe_aplicar Bolido,
+Aplicación14 se_debe_aplicar Sensei,
+Aplicación14 descipción "La aplicación será dirigida al lugar donde se encuentra el insecto, al mismo tiempo se fumigará el suelo cubriendo el ancho de la corona alrededor de la planta que es el lugar que donde se encuentran las hormigas."
+Aplicación15 is Individual
+Aplicación15 Types Aplicación
+Aplicación15 se_debe_aplicar Courage,
+Aplicación15 descipción "El momento de control es en estadio L1 y L2 pasado esta etapa se dificulta su control debido a que forma una especie de cuerno que lo protege."
+Aplicación16 is Individual
+Aplicación16 Types Aplicación
+Aplicación16 se_debe_aplicar Borey,
+Aplicación16 se_debe_aplicar Dimethoato,
+Aplicación16 se_debe_aplicar Lorsban,
+Aplicación16 descipción "El control debe ser dirigido a destruir el hormiguero donde se encuentran la reina."
+Aplicación17 is Individual
+Aplicación17 Types Aplicación
+Aplicación17 se_debe_aplicar Ausato,
+Aplicación17 se_debe_aplicar Borrator,
+Aplicación17 descipción "La aplicación de herbicidas se debe iniciar en la entrada del invierno, en época seca es conveniente regar la plantación uno o dos días antes. Se aplican en malezas en activo crecimiento de preferencia cuando están entre 10 a 20 cm de altura."
+Aplicación18 is Individual
+Aplicación18 Types Aplicación
+Aplicación18 se_debe_aplicar Dacapo,
+Aplicación18 se_debe_aplicar Prelude,
+Aplicación18 descipción "Regular la humedad y el sombrío dentro de la plantación. Corte y quemado de plantas y ramas enfermas efectuar cirugía en areas afectadas oportunamente."
+Aplicación19 is Individual
+Aplicación19 Types Aplicación
+Aplicación19 se_debe_aplicar Corbat,
+Aplicación19 descipción "Aplicación de fungicidas de forma dirigida cada 15 a 21 días en los meses de mayor precipitacion (Enero-Abril)."
+Aplicación2 is Individual
+Aplicación2 Types Aplicación
+Aplicación2 se_debe_aplicar Courage,
+Aplicación2 se_debe_aplicar Sensei,
+Aplicación2 descipción "Aplicar en cuanto aparezcan los primeros síntomas de daño."
+Aplicación20 is Individual
+Aplicación20 Types Aplicación
+Aplicación20 se_debe_aplicar Benlate,
+Aplicación20 se_debe_aplicar Caldo_Bordés,
+Aplicación20 se_debe_aplicar Daconilc,
+Aplicación20 se_debe_aplicar Difolatán,
+Aplicación20 se_debe_aplicar Hidroxido_de_cobre,
+Aplicación20 se_debe_aplicar Oxicloruro_de_cobre,
+de 3 a 5 aplicaciones a partir de la entrada de las lluvias con intervalos de 30 días" is descipción  "Manejo Integrado
+Aplicación3 is Individual
+Aplicación3 Types Aplicación
+Aplicación3 se_debe_aplicar Basudin,
+Aplicación3 se_debe_aplicar Dimecroa,
+Aplicación3 se_debe_aplicar Lebaycid,
+Aplicación3 descipción "Aplicar directamente en el hormiguero"
+Aplicación4 is Individual
+Aplicación4 Types Aplicación
+Aplicación4 se_debe_aplicar Diabolo,
+Aplicación4 descipción "Aplicar cuando exista una población de 2 chinches/m2"
+Aplicación5 is Individual
+Aplicación5 Types Aplicación
+Aplicación5 se_debe_aplicar Butasol,
+Aplicación5 se_debe_aplicar Paroli,
+Aplicación5 descipción "Pre-emergencia"
+Aplicación6 is Individual
+Aplicación6 Types Aplicación
+Aplicación6 se_debe_aplicar Bacanok,
+Aplicación6 descipción "Aplicar en post emergencia temprana y tardia hasta los 45 días del cultivo"
+Aplicación7 is Individual
+Aplicación7 Types Aplicación
+Aplicación7 se_debe_aplicar Chekan,
+Aplicación7 descipción "Aplicar en post emergencia temprana entre 12 y 25 días de cultivo."
+Aplicación8 is Individual
+Aplicación8 Types Aplicación
+Aplicación8 se_debe_aplicar Rock,
+Aplicación8 descipción "Pre y post emergencia temprana."
+Aplicación9 is Individual
+Aplicación9 Types Aplicación
+Aplicación9 se_debe_aplicar Limpast,
+Aplicación9 se_debe_aplicar Metsufozell,
+Aplicación9 descipción "Aplicar en post emergencia temprana."
+Arroz is Individual
+Arroz Types Cultivos
+Arroz clima "Se trata de un cultivo tropical y subtropical, también se puede cultivar en las regiones húmedas de los subtropicos y en climas templados.",
+Arroz nombre_científico "Oryza sativa"
+Ausato is Individual
+Ausato Types Herbicidas
+Ausato es_tratamiento_de Caminadora,
+Ausato es_tratamiento_de Gramalote,
+Ausato es_tratamiento_de Guarda_rocio,
+Ausato es_tratamiento_de Paja_Brava,
+Ausato es_tratamiento_de Pata_de_gallina,
+Ausato se_debe_aplicar Aplicación17,
+Ausato su_dosis_es Dosis24
+Bacanok is Individual
+Bacanok Types Herbicidas
+Bacanok es_tratamiento_de Chekan,
+Bacanok es_tratamiento_de Gramineas,
+Bacanok se_debe_aplicar Aplicación6,
+Bacanok su_dosis_es Dosis7
+Banzai is Individual
+Banzai Types Pesticidas
+Banzai es_tratamiento_de Mosca_minadora,
+Banzai se_debe_aplicar Aplicación1,
+Banzai su_dosis_es Dosis1
+Barrenadores is Individual
+Barrenadores Types Plagas
+Barrenadores afecta_a Arroz,
+Barrenadores su_tratamiento_es Courage,
+Barrenadores sus_sintomas_son Sintoma1,
+Barrenadores sus_sintomas_son Sintoma6,
+Barrenadores descipción "",
+Barrenadores nombre_científico "Rupela Albinella"
+Basudin is Individual
+Basudin Types Pesticidas
+Basudin es_tratamiento_de Escamas,
+Basudin se_debe_aplicar Aplicación3,
+Basudin su_dosis_es Dosis16
+Batatilla is Individual
+Batatilla Types Malezas
+Batatilla afecta_a Cacao,
+Batatilla afecta_a Café,
+Batatilla su_tratamiento_es Borrator,
+Batatilla sus_sintomas_son Sintoma12,
+Batatilla descipción "Bejuco perenne, herbáceo, trepador o rastrero, de 10 m de largo o más. Raíz tuberosa, similar a un tubérculo y algunas fibrosas. ",
+Batatilla nombre_científico "Ipomea congesta"
+Benlate is Individual
+Benlate Types Fungicidas
+Benlate es_tratamiento_de Mancha_de_Hierro,
+Benlate se_debe_aplicar Aplicación20,
+Benlate su_dosis_es Dosis20
+Bledo is Individual
+Bledo Types Malezas
+Bledo afecta_a Cacao,
+Bledo afecta_a Café,
+Bledo su_tratamiento_es Borrator,
+Bledo sus_sintomas_son Sintoma12,
+Bledo descipción "Estas malezas ocasionan otro problema de mayor gravedad, el gran antagonismo que ofrecen al desarrollo del cultivo, no solo desde el punto de vista de la competencia por agua, luz o nutrientes, sino porque muchas de ellas segregan substancias toxicas",
+Bledo nombre_científico "Amarenthus dubius"
+Bolido is Individual
+Bolido Types Pesticidas
+Bolido es_tratamiento_de Cochinilla_harinosa,
+Bolido se_debe_aplicar Aplicación14,
+Bolido su_dosis_es Dosis25
+Borey is Individual
+Borey Types Pesticidas
+Borey es_tratamiento_de Hormiga_Azteca,
+Borey es_tratamiento_de Mosca_minadora,
+Borey se_debe_aplicar Aplicación1,
+Borey su_dosis_es Dosis1
+Borrator is Individual
+Borrator Types Herbicidas
+Borrator es_tratamiento_de Batatilla,
+Borrator es_tratamiento_de Bledo,
+Borrator es_tratamiento_de Lechosa,
+Borrator es_tratamiento_de Pega_Pega,
+Borrator es_tratamiento_de Siempreviva,
+Borrator se_debe_aplicar Aplicación17,
+Borrator su_dosis_es Dosis23
+Broca_del_cafe is Individual
+Broca_del_cafe Types Enfermedades
+Broca_del_cafe afecta_a Café,
+Broca_del_cafe su_tratamiento_es Oxicloruro_de_cobre,
+Broca_del_cafe sus_sintomas_son Sintoma16,
+Broca_del_cafe descipción "Es la plaga más importante en plantaciones comerciales de café en prácticamente todos los países productores del mundo. Todas las variedades y especies comerciales de café son atacadas por este insecto.",
+Broca_del_cafe nombre_científico "Hypothenemus hampei Ferrari "
+Butasol is Individual
+Butasol Types Herbicidas
+Butasol es_tratamiento_de Hoja_angosta,
+Butasol se_debe_aplicar Aplicación5,
+Butasol su_dosis_es Dosis6
+Cacao is Individual
+Cacao Types Cultivos
+Cacao clima "El cacao se desarrolla en temperatura entre los 22 grados y los 30 grados Centígrados. Este rango de temperatura permite al cacao tener un buen desarrollo vegetativo y dar cosechas abundantes.",
+Cacao nombre_científico "Theobroma cacao"
+Café is Individual
+Café Types Cultivos
+Café clima "Los cambios bruscos en la temperatura o temperaturas mayores a 25°C pueden tener efectos negativos sobre la plantación.",
+Café nombre_científico "Coffea"
+Caldo_Bordés is Individual
+Caldo_Bordés Types Fungicidas
+Caldo_Bordés es_tratamiento_de La_roya,
+Caldo_Bordés se_debe_aplicar Aplicación20,
+Caldo_Bordés su_dosis_es Dosis19
+Caminadora is Individual
+Caminadora Types Malezas
+Caminadora afecta_a Cacao,
+Caminadora afecta_a Café,
+Caminadora su_tratamiento_es Ausato,
+Caminadora sus_sintomas_son Sintoma12,
+Caminadora descipción "Las malezas o arvenses son especies vegetales que crecen junto con el cultivo y compiten por el espacio, nutrientes y luz",
+Caminadora nombre_científico "Rottboella exaltata"
+Chekan is Individual
+Chekan Types Herbicidas
+Chekan es_tratamiento_de Gramineas,
+Chekan se_debe_aplicar Aplicación7,
+Chekan su_dosis_es Dosis8
+Chinche_de_la_espiga is Individual
+Chinche_de_la_espiga Types Plagas
+Chinche_de_la_espiga afecta_a Arroz,
+Chinche_de_la_espiga su_tratamiento_es Diabolo,
+Chinche_de_la_espiga sus_sintomas_son Sintoma5,
+Chinche_de_la_espiga descipción "Este insecto afecta al arroz en su etapa de producción y llenado del grano mediante su estilete. Basta decir que el grano se encuentra aún en estado lechoso.",
+Chinche_de_la_espiga nombre_científico "Oebalus ornatus"
+Chinche_del_cacao is Individual
+Chinche_del_cacao Types Plagas
+Chinche_del_cacao afecta_a Cacao,
+Chinche_del_cacao su_tratamiento_es Diabolo,
+Chinche_del_cacao sus_sintomas_son Sintoma20,
+Chinche_del_cacao sus_sintomas_son Sintoma21,
+Chinche_del_cacao sus_sintomas_son Sintoma5,
+Chinche_del_cacao descipción "El daño es causado por el chinche llamado Monalonion dissimulatum. Los daños se localizan a nivel de brotes y frutos y en casos severos la picadura puede comprometer los granos de la mazorca. ",
+Chinche_del_cacao nombre_científico "Monalonium dissimulatum"
+Cochinilla_harinosa is Individual
+Cochinilla_harinosa Types Plagas
+Cochinilla_harinosa afecta_a Cacao,
+Cochinilla_harinosa su_tratamiento_es Bolido,
+Cochinilla_harinosa su_tratamiento_es Sensei,
+Cochinilla_harinosa sus_sintomas_son Sintoma1,
+Cochinilla_harinosa sus_sintomas_son Sintoma14,
+Cochinilla_harinosa sus_sintomas_son Sintoma22,
+Cochinilla_harinosa descipción "Se denomina al insecto como un picador chupador ya que se alimenta de la savia de los brotes y ramas succionando estos jugos con su estilete.",
+Cochinilla_harinosa nombre_científico "Pseudococcus citri"
+Complejo_manchado_del_grano is Individual
+Complejo_manchado_del_grano Types Enfermedades
+Complejo_manchado_del_grano afecta_a Arroz,
+Complejo_manchado_del_grano su_tratamiento_es Fungis_Khan,
+Complejo_manchado_del_grano su_tratamiento_es Nomad,
+Complejo_manchado_del_grano sus_sintomas_son Sintoma8,
+Complejo_manchado_del_grano descipción "El grano manchado es causado por un complejo fungoso y bacteriano. El daño causado es irreversible, alcanzando pérdidas en la producción cuando la incidencia es alta",
+Complejo_manchado_del_grano nombre_científico "Helminthosporium Oryzae"
+Corbat is Individual
+Corbat Types Fungicidas
+Corbat es_tratamiento_de Mazorca_Negra,
+Corbat se_debe_aplicar Aplicación19,
+Corbat su_dosis_es Dosis27
+Courage is Individual
+Courage Types Pesticidas
+Courage es_tratamiento_de Barrenadores,
+Courage se_debe_aplicar Aplicación2,
+Courage se_debe_aplicar Dosis3
+Cyperaceas is Individual
+Cyperaceas Types Malezas
+Cyperaceas afecta_a Arroz,
+Cyperaceas su_tratamiento_es Rock,
+Cyperaceas sus_sintomas_son Gramalote,
+Cyperaceas sus_sintomas_son Sintoma11,
+Cyperaceas sus_sintomas_son Sintoma12,
+Cyperaceas descipción "Planta con tallos delgados, glabros, macizos, de sección triangular, de 15-45 cm de altura. ",
+Cyperaceas nombre_científico "Cyperaceae"
+Dacapo is Individual
+Dacapo Types Fungicidas
+Dacapo es_tratamiento_de Moniliasis_del_cacao,
+Dacapo se_debe_aplicar Aplicación18,
+Dacapo su_dosis_es Dosis3
+Daconilc is Individual
+Daconilc Types Fungicidas
+Daconilc es_tratamiento_de Mancha_de_Hierro,
+Daconilc se_debe_aplicar Aplicación20,
+Daconilc su_dosis_es Dosis22
+Diabolo is Individual
+Diabolo Types Pesticidas
+Diabolo es_tratamiento_de Chinche_de_la_espiga,
+Diabolo es_tratamiento_de Chinche_del_cacao,
+Diabolo se_debe_aplicar Aplicación4,
+Diabolo su_dosis_es Dosis5
+Difolatán is Individual
+Difolatán Types Fungicidas
+Difolatán es_tratamiento_de Mancha_de_Hierro,
+Difolatán se_debe_aplicar Aplicación20,
+Difolatán su_dosis_es Dosis21
+Dimecroa is Individual
+Dimecroa Types Pesticidas
+Dimecroa es_sintoma_de Escamas,
+Dimecroa se_debe_aplicar Aplicación3,
+Dimecroa su_dosis_es Dosis16
+Dimethoato is Individual
+Dimethoato Types Pesticidas
+Dimethoato es_tratamiento_de Minador_de_la_hoja,
+Dimethoato se_debe_aplicar Aplicación16
+Dosis1 is Individual
+Dosis1 Types Dosis
+Dosis1 es_dosis_de Banzai,
+Dosis1 es_dosis_de Borey,
+Dosis1 es_dosis_de Limpast,
+Dosis1 descipción "0,25 l/ha"
+Dosis10 is Individual
+Dosis10 Types Dosis
+Dosis10 es_dosis_de Metsufozell,
+Dosis10 descipción "5 a 15 g/ha"
+Dosis11 is Individual
+Dosis11 Types Dosis
+Dosis11 es_dosis_de Dimethoato,
+Dosis11 descipción "0,8 - 1,2 ltrs/ha "
+Dosis12 is Individual
+Dosis12 Types Dosis
+Dosis12 es_dosis_de Prelude,
+Dosis12 descipción "100 g/ha"
+Dosis13 is Individual
+Dosis13 Types Dosis
+Dosis13 es_dosis_de Fungis_Khan,
+Dosis13 es_dosis_de Lorsban,
+Dosis13 descipción "1,5 kg/ha"
+Dosis14 is Individual
+Dosis14 Types Dosis
+Dosis14 es_dosis_de Nomad,
+Dosis14 descipción "0,3 l/ha"
+Dosis15 is Individual
+Dosis15 Types Dosis
+Dosis15 es_dosis_de Lebaycid,
+Dosis15 descipción "Aplicar 2"
+Dosis16 is Individual
+Dosis16 Types Dosis
+Dosis16 es_dosis_de Basudin,
+Dosis16 es_dosis_de Dimecroa,
+Dosis16 descipción "Aplicar 1"
+Dosis17 is Individual
+Dosis17 Types Dosis
+Dosis17 es_dosis_de Furadán,
+Dosis17 es_dosis_de Temick,
+Dosis17 descipción "5 - 15 gr/hoyo"
+Dosis18 is Individual
+Dosis18 Types Dosis
+Dosis18 es_dosis_de Oxicloruro_de_cobre,
+Dosis18 descipción "5g/L"
+Dosis19 is Individual
+Dosis19 Types Dosis
+Dosis19 es_dosis_de Caldo_Bordés,
+Dosis19 es_dosis_de Hidroxido_de_cobre,
+Dosis19 descipción "4 - 5 libras / manzana"
+Dosis2 is Individual
+Dosis2 Types Dosis
+Dosis2 es_dosis_de Sensei,
+Dosis2 descipción "0,3 l/ha"
+Dosis20 is Individual
+Dosis20 Types Dosis
+Dosis20 es_dosis_de Benlate,
+Dosis20 descipción "0,6g/L"
+Dosis21 is Individual
+Dosis21 Types Dosis
+Dosis21 es_dosis_de Difolatán,
+Dosis21 descipción " 5g/L"
+Dosis22 is Individual
+Dosis22 Types Dosis
+Dosis22 es_dosis_de Daconilc,
+Dosis22 descipción "0,1%"
+Dosis23 is Individual
+Dosis23 Types Dosis
+Dosis23 es_dosis_de Borrator,
+Dosis23 descipción "2 litros/ha"
+Dosis24 is Individual
+Dosis24 Types Dosis
+Dosis24 es_dosis_de Ausato,
+Dosis24 descipción "3
+Dosis25 is Individual
+Dosis25 Types Dosis
+Dosis25 es_dosis_de Bolido,
+Dosis25 es_dosis_de Sensei,
+Dosis25 descipción "750 cc /ha"
+Dosis26 is Individual
+Dosis26 Types Dosis
+Dosis26 es_dosis_de Borey,
+Dosis26 descipción "250 cc /ha"
+Dosis27 is Individual
+Dosis27 Types Dosis
+Dosis27 es_dosis_de Corbat,
+Dosis27 descipción "750 g /200 l"
+Dosis3 is Individual
+Dosis3 Types Dosis
+Dosis3 es_dosis_de Courage,
+Dosis3 es_dosis_de Dacapo,
+Dosis3 descipción "500 cc/ha"
+Dosis4 is Individual
+Dosis4 Types Dosis
+Dosis4 es_dosis_de Courage,
+Dosis4 descipción "0,5 l/ha"
+Dosis5 is Individual
+Dosis5 Types Dosis
+Dosis5 es_dosis_de Diabolo,
+Dosis5 descipción "600 cc/ha"
+Dosis6 is Individual
+Dosis6 Types Dosis
+Dosis6 es_dosis_de Butasol,
+Dosis6 es_dosis_de Paroli,
+Dosis6 descipción "3 a 4 l/ha"
+Dosis7 is Individual
+Dosis7 Types Dosis
+Dosis7 es_dosis_de Bacanok,
+Dosis7 descipción "1 a 1,5 l/ha"
+Dosis8 is Individual
+Dosis8 Types Dosis
+Dosis8 es_dosis_de Chekan,
+Dosis8 descipción "100 a 200 cc/ha"
+Dosis9 is Individual
+Dosis9 Types Dosis
+Dosis9 es_dosis_de Rock,
+Dosis9 descipción "350 g/ha"
+Escamas is Individual
+Escamas Types Plagas
+Escamas afecta_a Café,
+Escamas su_tratamiento_es Basudin,
+Escamas su_tratamiento_es Dimecroa,
+Escamas su_tratamiento_es Lebaycid,
+Escamas sus_sintomas_son Sintoma5,
+Escamas descipción "Estas escamas se localizan en la base del tallo y en la raíz principal del árbol, succiona savia y causa clorosis, defoliación y, en algunas ocasiones, la muerte de la planta. ",
+Escamas nombre_científico "Coccus viridis Green"
+Escoba_de_bruja is Individual
+Escoba_de_bruja Types Enfermedades
+Escoba_de_bruja afecta_a Cacao,
+Escoba_de_bruja su_tratamiento_es Prelude,
+Escoba_de_bruja sus_sintomas_son Sintoma26,
+Escoba_de_bruja descipción "El ataque de esta enfermedad es más severo en frutos de tres meses, el ataque en frutos más desarrollados presenta manchas negras dañando totalmente sus almendras.",
+Escoba_de_bruja nombre_científico "Crinipellis perniciosa "
+Fungis_Khan is Individual
+Fungis_Khan Types Fungicidas
+Fungis_Khan es_tratamiento_de Complejo_manchado_del_grano,
+Fungis_Khan se_debe_aplicar Aplicación12,
+Fungis_Khan su_dosis_es Dosis13
+Furadán is Individual
+Furadán Types Pesticidas
+Furadán es_tratamiento_de Nematodo,
+Furadán su_dosis_es Dosis17
+Gramalote is Individual
+Gramalote Types Malezas
+Gramalote afecta_a Cacao,
+Gramalote afecta_a Café,
+Gramalote su_tratamiento_es Ausato,
+Gramalote descipción "Es un arbusto muy ramificado, que se presenta de variadas formas desde macollas compactas de 1-2 m de altura hasta enredaderas trepadoras de hasta 8 m de altura",
+Gramalote nombre_científico "Paspalum faciculatum"
+Gramineas is Individual
+Gramineas Types Malezas
+Gramineas afecta_a Arroz,
+Gramineas afecta_a Café,
+Gramineas su_tratamiento_es Bacanok,
+Gramineas su_tratamiento_es Chekan,
+Gramineas sus_sintomas_son Sintoma11,
+Gramineas sus_sintomas_son Sintoma12,
+Gramineas descipción "Planta herbácea, baja, de hábito rastrero. ",
+Gramineas nombre_científico "Poaceae"
+Guarda_rocio is Individual
+Guarda_rocio Types Malezas
+Guarda_rocio afecta_a Cacao,
+Guarda_rocio afecta_a Café,
+Guarda_rocio su_tratamiento_es Ausato,
+Guarda_rocio sus_sintomas_son Sintoma12,
+Guarda_rocio descipción "Es un arbusto leguminoso, de hasta 6 m de altura, que se encuentra en lugares húmedos y abiertos en los trópicos. ",
+Guarda_rocio nombre_científico "Digitaria sanguinaris"
+Gusano_defoliador is Individual
+Gusano_defoliador Types Plagas
+Gusano_defoliador afecta_a Cacao,
+Gusano_defoliador su_tratamiento_es Courage,
+Gusano_defoliador sus_sintomas_son Sintoma23,
+Gusano_defoliador descipción "Es una plaga que ataca hojas y frutos. El daño más importante se genera en el follaje pues raspan las hojas las cuales se amarillean y caen, si el ataque es intenso se puede producir una defoliación constante y progresiva de la planta.",
+Gusano_defoliador nombre_científico "Stenoma cecropia"
+Hidroxido_de_cobre is Individual
+Hidroxido_de_cobre Types Fungicidas
+Hidroxido_de_cobre es_tratamiento_de La_roya,
+Hidroxido_de_cobre se_debe_aplicar Aplicación20,
+Hidroxido_de_cobre su_dosis_es Dosis19
+Hoja_ancha is Individual
+Hoja_ancha Types Malezas
+Hoja_ancha afecta_a Arroz,
+Hoja_ancha su_tratamiento_es Limpast,
+Hoja_ancha su_tratamiento_es Metsufozell,
+Hoja_ancha descipción "Es una maleza perenne persistente, que se propaga radialmente, produciendo hasta 25 o más tallos en una temporada, muchos de los cuales pueden alcanzar hasta 3 m de longitud, formando un manto denso sobre el suelo. ",
+Hoja_ancha nombre_científico "Hoja ancha"
+Hoja_angosta is Individual
+Hoja_angosta Types Malezas
+Hoja_angosta afecta_a Arroz,
+Hoja_angosta su_tratamiento_es Butasol,
+Hoja_angosta su_tratamiento_es Paroli,
+Hoja_angosta sus_sintomas_son Sintoma11,
+Hoja_angosta descipción "Es un arbusto perenne abierto que crece hasta una altura de 5 m cuando cuenta con un soporte.
+Hoja_angosta Crece en muchos tipos de suelos, pero prefiere los bien drenados. No tolera la sombra y prospera bien en áreas abiertas. ", "Hoja angosta"
+Hoja_angosta nombre_científico "Hoja angosta"
+Hormiga_Azteca is Individual
+Hormiga_Azteca Types Plagas
+Hormiga_Azteca afecta_a Cacao,
+Hormiga_Azteca su_tratamiento_es Borey,
+Hormiga_Azteca sus_sintomas_son Sintoma24,
+Hormiga_Azteca sus_sintomas_son Sintoma25,
+Hormiga_Azteca descipción "Son una de las plagas más comunes
+Hormiga_Azteca nombre_científico "Azteca paraensis bondari
+La_roya is Individual
+La_roya Types Enfermedades
+La_roya afecta_a Café,
+La_roya su_tratamiento_es Caldo_Bordés,
+La_roya su_tratamiento_es Oxicloruro_de_cobre,
+La_roya sus_sintomas_son Sintoma1,
+La_roya sus_sintomas_son Sintoma17,
+La_roya descipción "La roya del cafeto es la enfermedad más destructiva del cafeto y la de mayor importancia económica a nivel mundial, debido a que esta enfermedad provoca la caída prematura de las hojas, propiciando la reducción de la capacidad fotosintética",
+La_roya nombre_científico "La Roya"
+Langosta is Individual
+Langosta Types Plagas
+Langosta afecta_a Arroz,
+Langosta su_tratamiento_es Courage,
+Langosta sus_sintomas_son Gramalote,
+Langosta sus_sintomas_son Sintoma3,
+Langosta descipción "Esta plaga provoca daños durante todo el proceso de crecimiento, ataca el cultivo representando grandes peligros como el impedimento de rebrote.",
+Langosta nombre_científico "Spodoptera frugiperda"
+Lebaycid is Individual
+Lebaycid Types Pesticidas
+Lebaycid es_tratamiento_de Escamas,
+Lebaycid se_debe_aplicar Aplicación3,
+Lebaycid su_dosis_es Dosis15
+Lechosa is Individual
+Lechosa Types Malezas
+Lechosa afecta_a Cacao,
+Lechosa afecta_a Café,
+Lechosa su_tratamiento_es Borrator,
+Lechosa sus_sintomas_son Sintoma12,
+Lechosa descipción "Es una planta anual con un látex lechoso en todas sus partes. Crece de 30 a 100 cm de altura y presenta tallos huecos, sencillos o ramificados, con nervaduras angulares",
+Lechosa nombre_científico "Euphorbia hypericildia"
+Limpast is Individual
+Limpast Types Herbicidas
+Limpast es_tratamiento_de Hoja_ancha,
+Limpast se_debe_aplicar Aplicación9,
+Limpast su_dosis_es Dosis1
+Lorsban is Individual
+Lorsban Types Pesticidas
+Lorsban es_tratamiento_de Minador_de_la_hoja,
+Lorsban se_debe_aplicar Aplicación16,
+Lorsban su_dosis_es Dosis13
+Mancha_de_Hierro is Individual
+Mancha_de_Hierro Types Enfermedades
+Mancha_de_Hierro afecta_a Café,
+Mancha_de_Hierro su_tratamiento_es Benlate,
+Mancha_de_Hierro su_tratamiento_es Daconilc,
+Mancha_de_Hierro su_tratamiento_es Difolatán,
+Mancha_de_Hierro su_tratamiento_es Oxicloruro_de_cobre,
+Mancha_de_Hierro sus_sintomas_son Sintoma18,
+Mancha_de_Hierro sus_sintomas_son Sintoma19,
+desde las hojas cotiledonares hasta los frutos", is descipción  "Quizás la enfermedad más prevalente del cafeto. Afecta a la planta en todos sus estados de desarrollo
+desde las hojas cotiledonares hasta los frutos", is nombre_científico  "Cercospora coffeicola"
+Mazorca_Negra is Individual
+Mazorca_Negra Types Enfermedades
+Mazorca_Negra afecta_a Cacao,
+Mazorca_Negra su_tratamiento_es Corbat,
+Mazorca_Negra sus_sintomas_son Sintoma14,
+Mazorca_Negra sus_sintomas_son Sintoma29,
+Mazorca_Negra sus_sintomas_son Sintoma30,
+Mazorca_Negra descipción "Esta enfermedad se presenta en la mazorca a través de una
+Mazorca_Negra nombre_científico "Phytopthora megasperma"
+Metsufozell is Individual
+Metsufozell Types Herbicidas
+Metsufozell es_tratamiento_de Hoja_ancha,
+Metsufozell se_debe_aplicar Aplicación9,
+Metsufozell su_dosis_es Dosis10
+Minador_de_la_hoja is Individual
+Minador_de_la_hoja Types Plagas
+Minador_de_la_hoja afecta_a Café,
+Minador_de_la_hoja su_tratamiento_es Dimethoato,
+Minador_de_la_hoja su_tratamiento_es Lorsban,
+Minador_de_la_hoja sus_sintomas_son Sintoma14,
+Minador_de_la_hoja sus_sintomas_son Sintoma15,
+Minador_de_la_hoja descipción "Es una plaga muy dañina que afecta principalmente el área fotosintética y causa la defoliación de los árboles",
+Minador_de_la_hoja nombre_científico "Leucoptera coffella Green"
+Moniliasis_del_cacao is Individual
+Moniliasis_del_cacao Types Enfermedades
+Moniliasis_del_cacao afecta_a Cacao,
+Moniliasis_del_cacao su_tratamiento_es Dacapo,
+Moniliasis_del_cacao su_tratamiento_es Prelude,
+Moniliasis_del_cacao sus_sintomas_son Sintoma27,
+Moniliasis_del_cacao descipción "Se define a este hongo como prejudicial ya que afecta directamente a frutos en todo su desarrollo, desde la maduración, deformación de frutos y presencia de manchas aceitosas. ",
+Moniliasis_del_cacao nombre_científico "Moniliophthora perniciosa"
+Mosca_minadora is Individual
+Mosca_minadora Types Plagas
+Mosca_minadora afecta_a Arroz,
+Mosca_minadora su_tratamiento_es Banzai,
+Mosca_minadora su_tratamiento_es Borey,
+Mosca_minadora sus_sintomas_son Sintoma1,
+Mosca_minadora sus_sintomas_son Sintoma2,
+Mosca_minadora descipción "Es una de las principales plagas que atacan al cultivo de arroz, es denominada también como una plaga de primera oleada",
+Mosca_minadora nombre_científico "Hydrellia SP"
+Nematodo is Individual
+Nematodo Types Plagas
+Nematodo afecta_a Café,
+Nematodo su_tratamiento_es Furadán,
+Nematodo su_tratamiento_es Temick,
+Nematodo sus_sintomas_son Sintoma13,
+Nematodo descipción "Los nematodos son los organismos multicelulares más numerosos presentes en los agrosistema, se han detectado ocupando cualquier nicho que puedan formar la vegetación, el suelo u otras biotas. ",
+Nematodo nombre_científico "Pratylenchus - Meloidogyne
+Nematodo " Aplicación12,
+Nomad is Individual
+Nomad Types Fungicidas
+Nomad se_debe_aplicar Aplicación12,
+Nomad se_debe_aplicar Complejo_manchado_del_grano,
+Nomad su_dosis_es Dosis14
+Oxicloruro_de_cobre is Individual
+Oxicloruro_de_cobre Types Fungicidas
+Oxicloruro_de_cobre es_tratamiento_de Broca_del_cafe,
+Oxicloruro_de_cobre es_tratamiento_de Mancha_de_Hierro,
+Oxicloruro_de_cobre se_debe_aplicar Aplicación20,
+Oxicloruro_de_cobre su_dosis_es Dosis18
+Paja_Brava is Individual
+Paja_Brava Types Malezas
+Paja_Brava afecta_a Cacao,
+Paja_Brava afecta_a Café,
+Paja_Brava su_tratamiento_es Ausato,
+Paja_Brava sus_sintomas_son Sintoma12,
+Paja_Brava descipción "Estas malezas afectan fotosíntesis y se nutren de sabia plantas. Muerte de ramas y plantas. Baja el rendimiento.",
+Paja_Brava nombre_científico "Paspalum panicultum L."
+Paroli is Individual
+Paroli Types Herbicidas
+Paroli es_tratamiento_de Hoja_angosta,
+Paroli se_debe_aplicar Aplicación5,
+Paroli su_dosis_es Dosis6
+Pata_de_gallina is Individual
+Pata_de_gallina Types Malezas
+Pata_de_gallina afecta_a Cacao,
+Pata_de_gallina afecta_a Café,
+Pata_de_gallina su_tratamiento_es Ausato,
+Pata_de_gallina sus_sintomas_son Sintoma12,
+Pata_de_gallina descipción "Estas malas hierbas
+Pata_de_gallina nombre_científico "Eleusine indica"
+Pega_Pega is Individual
+Pega_Pega Types Malezas
+Pega_Pega afecta_a Cacao,
+Pega_Pega afecta_a Café,
+Pega_Pega su_tratamiento_es Borrator,
+Pega_Pega sus_sintomas_son Sintoma12,
+Pega_Pega descipción "Es una planta erecta anual con hojas alternas, profundamente disecadas, que crece hasta 2 m de altura con inflorescencias ramificadas que portan cabezuelas florales blancas y aquenios negros, obovoides y suaves.",
+Pega_Pega nombre_científico "Memordica charantia"
+Prelude is Individual
+Prelude Types Fungicidas
+Prelude es_tratamiento_de Pudrición_de_la_vaina,
+Prelude se_debe_aplicar Aplicación11,
+Prelude su_dosis_es Dosis12
+Pudrición_de_la_vaina is Individual
+Pudrición_de_la_vaina Types Enfermedades
+Pudrición_de_la_vaina afecta_a Arroz,
+Pudrición_de_la_vaina su_tratamiento_es Prelude,
+Pudrición_de_la_vaina sus_sintomas_son Sintoma10,
+Pudrición_de_la_vaina sus_sintomas_son Sintoma7,
+Pudrición_de_la_vaina sus_sintomas_son Sintoma9,
+Pudrición_de_la_vaina descipción "Esta enfermedad es considerada importante ya que reduce en gran medida el potencial de rendimientos, debido a pequeñas lesiones negras en la parte exterior de las vainas de las hojas, cerca del nivel del agua el tallo se acama y la planta cae.",
+Pudrición_de_la_vaina nombre_científico "Sarocladium oryzae"
+Quemazón is Individual
+Quemazón Types Enfermedades
+Quemazón afecta_a Arroz,
+Quemazón su_tratamiento_es Solvendazim,
+Quemazón sus_sintomas_son Sintoma3,
+Quemazón sus_sintomas_son Sintoma7,
+Quemazón descipción "Es la enfermedad más importante en el cultivo de arroz y es causada por el hongo Pyricularia grizae. Ataca a toda la planta especialmente las hojas y los cuellos",
+Quemazón nombre_científico "Pyricularia oryzae"
+Rock is Individual
+Rock Types Herbicidas
+Rock es_tratamiento_de Cyperaceas,
+Rock se_debe_aplicar Aplicación8,
+Rock su_dosis_es Dosis9
+Sensei is Individual
+Sensei Types Pesticidas
+Sensei es_tratamiento_de Cochinilla_harinosa,
+Sensei es_tratamiento_de Sogata,
+Sensei se_debe_aplicar Aplicación2,
+Sensei su_dosis_es Dosis2
+Siempreviva is Individual
+Siempreviva Types Malezas
+Siempreviva afecta_a Cacao,
+Siempreviva afecta_a Café,
+Siempreviva su_tratamiento_es Borrator,
+Siempreviva sus_sintomas_son Sintoma12,
+Siempreviva descipción "Estas malezas en plantaciones jóvenes dificultan las labores de cultivo y pueden ser hospederas de plagas y enfermedades.",
+Siempreviva nombre_científico "Commelina difusa"
+Sintoma1 is Individual
+Sintoma1 Types Sintomas
+Sintoma1 es_sintoma_de Barrenadores,
+Sintoma1 es_sintoma_de Cochinilla_harinosa,
+Sintoma1 es_sintoma_de La_roya,
+Sintoma1 es_sintoma_de Mosca_minadora,
+Sintoma1 es_sintoma_de Sogata,
+Sintoma1 presenta_sintomas Arroz,
+Sintoma1 presenta_sintomas Cacao,
+Sintoma1 presenta_sintomas Café,
+Sintoma1 descipción "Presencia pequeñas manchas de color amarillo."
+Sintoma10 is Individual
+Sintoma10 Types Sintomas
+Sintoma10 es_sintoma_de Pudrición_de_la_vaina,
+Sintoma10 presenta_sintomas Arroz,
+Sintoma10 descipción "Presencia de lesiones en su mayoría en las vainas de las hojas."
+Sintoma11 is Individual
+Sintoma11 Types Sintomas
+Sintoma11 es_sintoma_de Cyperaceas,
+Sintoma11 es_sintoma_de Gramineas,
+Sintoma11 es_sintoma_de Hoja_angosta,
+Sintoma11 presenta_sintomas Arroz,
+Sintoma11 descipción "Presencia de maleza en los cultivos de arroz mayormente en zonas tropicales."
+Sintoma12 is Individual
+Sintoma12 Types Sintomas
+Sintoma12 es_sintoma_de Batatilla,
+Sintoma12 es_sintoma_de Bledo,
+Sintoma12 es_sintoma_de Caminadora,
+Sintoma12 es_sintoma_de Cyperaceas,
+Sintoma12 es_sintoma_de Gramalote,
+Sintoma12 es_sintoma_de Gramineas,
+Sintoma12 es_sintoma_de Guarda_rocio,
+Sintoma12 es_sintoma_de Hoja_angosta,
+Sintoma12 es_sintoma_de Lechosa,
+Sintoma12 es_sintoma_de Paja_Brava,
+Sintoma12 es_sintoma_de Pata_de_gallina,
+Sintoma12 es_sintoma_de Pega_Pega,
+Sintoma12 es_sintoma_de Siempreviva,
+Sintoma12 presenta_sintomas Arroz,
+Sintoma12 presenta_sintomas Cacao,
+Sintoma12 presenta_sintomas Café,
+Sintoma12 descipción "Disminución de nutrientes en los cultivos"
+Sintoma13 is Individual
+Sintoma13 Types Sintomas
+Sintoma13 es_sintoma_de Nematodo,
+Sintoma13 presenta_sintomas Café,
+Sintoma13 descipción "Raíces delgadas, la marchites del follaje
+Sintoma14 is Individual
+Sintoma14 Types Sintomas
+Sintoma14 es_sintoma_de Cochinilla_harinosa,
+Sintoma14 es_sintoma_de Mazorca_Negra,
+Sintoma14 es_sintoma_de Minador_de_la_hoja,
+Sintoma14 presenta_sintomas Cacao,
+Sintoma14 presenta_sintomas Café,
+Sintoma14 descipción "Marchitamiento o la caída prematura de las hojas.
+Sintoma14 " Minador_de_la_hoja,
+Sintoma15 is Individual
+Sintoma15 Types Sintomas
+Sintoma15 es_sintoma_de Minador_de_la_hoja,
+Sintoma15 presenta_sintomas Café,
+Sintoma15 descipción "Reducción en la fotosíntesis"
+Sintoma16 is Individual
+Sintoma16 Types Sintomas
+Sintoma16 es_sintoma_de Broca_del_cafe,
+Sintoma16 presenta_sintomas Café,
+Sintoma16 descipción "Presentan generalmente un agujero en el centro o anillo del ostiolo del fruto."
+Sintoma17 is Individual
+Sintoma17 Types Sintomas
+Sintoma17 es_sintoma_de La_roya,
+Sintoma17 presenta_sintomas Café,
+Sintoma17 descipción "Debajo de las hojas se observa un polvillo de color naranja, que es el síntoma característico de la enfermedad."
+Sintoma18 is Individual
+Sintoma18 Types Sintomas
+Sintoma18 es_sintoma_de Mancha_de_Hierro,
+Sintoma18 presenta_sintomas Café,
+Sintoma18 descipción "Presencia de pequeñas manchas circulares de color marrón rojizo"
+Sintoma19 is Individual
+Sintoma19 Types Sintomas
+Sintoma19 es_sintoma_de Mancha_de_Hierro,
+Sintoma19 presenta_sintomas Café,
+Sintoma19 descipción "Caída de hojas y frutos"
+Sintoma2 is Individual
+Sintoma2 Types Sintomas
+Sintoma2 es_sintoma_de Mosca_minadora,
+Sintoma2 presenta_sintomas Arroz,
+Sintoma2 descipción "Presencia de galerías que son producidas por la alimentación de la larva de este insecto durante su desarrollo."
+Sintoma20 is Individual
+Sintoma20 Types Sintomas
+Sintoma20 es_sintoma_de Chinche_del_cacao,
+Sintoma20 presenta_sintomas Cacao,
+Sintoma20 descipción "Presencia de lesiones que provocan malformaciones.
+Sintoma20 Estas lesiones debilitan la resistencia de las mazorcas haciéndolas más vulnerables al ataque de otros insectos y hongos." Chinche_del_cacao,
+Sintoma21 is Individual
+Sintoma21 Types Sintomas
+Sintoma21 es_sintoma_de Chinche_del_cacao,
+Sintoma21 presenta_sintomas Cacao,
+Sintoma21 descipción "Reducción del tamaño y detención del crecimiento de los frutos jóvenes que se marchitan y caen rápidamente."
+Sintoma22 is Individual
+Sintoma22 Types Sintomas
+Sintoma22 es_sintoma_de Cochinilla_harinosa,
+Sintoma22 presenta_sintomas Cacao,
+Sintoma22 descipción "Raices débiles y propensas a enfermedades."
+Sintoma23 is Individual
+Sintoma23 Types Sintomas
+Sintoma23 es_sintoma_de Gusano_defoliador,
+Sintoma23 presenta_sintomas Cacao,
+Sintoma23 descipción "Reducción de la masa foliar ocasionando una pérdida de crecimiento. "
+Sintoma24 is Individual
+Sintoma24 Types Sintomas
+Sintoma24 es_sintoma_de Hormiga_Azteca,
+Sintoma24 presenta_sintomas Cacao,
+Sintoma24 descipción "Presencia de masa en los tallos más tiernos, en los que las hojas se arrugan y retuercen."
+Sintoma25 is Individual
+Sintoma25 Types Sintomas
+Sintoma25 es_sintoma_de Hormiga_Azteca,
+Sintoma25 presenta_sintomas Cacao,
+Sintoma25 descipción "Aparición de negrilla en las hojas cubre de negro tallos y hojas."
+Sintoma26 is Individual
+Sintoma26 Types Sintomas
+Sintoma26 es_sintoma_de Escoba_de_bruja,
+Sintoma26 presenta_sintomas Cacao,
+en las hojas siendo muy delgadas y de consistencia apergaminada " is descipción  "Clorosis
+Sintoma27 is Individual
+Sintoma27 Types Sintomas
+Sintoma27 es_sintoma_de Moniliasis_del_cacao,
+Sintoma27 presenta_sintomas Cacao,
+Sintoma27 descipción "Presencia de mancha color marrón o chocolate recubierto con una sustancia blancuzca. "
+Sintoma29 is Individual
+Sintoma29 Types Sintomas
+Sintoma29 es_sintoma_de Mazorca_Negra,
+Sintoma29 presenta_sintomas Cacao,
+Sintoma29 descipción "Presencia de manchas localizadas en los extremos o en el centro de la mazorca."
+Sintoma3 is Individual
+Sintoma3 Types Sintomas
+Sintoma3 es_sintoma_de Langosta,
+Sintoma3 es_sintoma_de Quemazón,
+Sintoma3 presenta_sintomas Arroz,
+Sintoma3 descipción "Granos vanos"
+Sintoma30 is Individual
+Sintoma30 Types Sintomas
+Sintoma30 es_sintoma_de Mazorca_Negra,
+Sintoma30 presenta_sintomas Cacao,
+Sintoma30 descipción "En la raíz se presenta la muerte de tejido, que da la apariencia de una mancha de color marrón afectando los vasos comunicantes y deja de absorber los nutrientes y el agua, causando la muerte del árbol."
+Sintoma4 is Individual
+Sintoma4 es_sintoma_de Sogata,
+Sintoma4 presenta_sintomas Arroz,
+Sintoma4 descipción "Formación de fumagina en las hojas, es decir se observan en forma de manchas en las hojas y tallos disminuyendo así el crecimiento del cultivo."
+Sintoma5 is Individual
+Sintoma5 Types Sintomas
+Sintoma5 es_sintoma_de Chinche_de_la_espiga,
+Sintoma5 es_sintoma_de Chinche_del_cacao,
+Sintoma5 es_sintoma_de Escamas,
+Sintoma5 presenta_sintomas Arroz,
+Sintoma5 presenta_sintomas Cacao,
+Sintoma5 presenta_sintomas Café,
+Sintoma5 descipción "Absorbe la savia de la hoja, tallo y grano y transmite virus a las plantas "
+Sintoma6 is Individual
+Sintoma6 Types Sintomas
+Sintoma6 es_sintoma_de Barrenadores,
+Sintoma6 presenta_sintomas Arroz,
+Sintoma6 descipción "Aparición de la hoja central completamente seca, enrollada en vertical sobre sí misma"
+Sintoma7 is Individual
+Sintoma7 Types Sintomas
+Sintoma7 es_sintoma_de Pudrición_de_la_vaina,
+Sintoma7 es_sintoma_de Quemazón,
+Sintoma7 presenta_sintomas Arroz,
+Sintoma7 descipción "Produce manchas o lesiones en las hojas de forma alargada, de color marrón uniforme y más tarde con centros grisáceos y bordes de color marrón. "
+Sintoma8 is Individual
+Sintoma8 Types Sintomas
+Sintoma8 es_sintoma_de Complejo_manchado_del_grano,
+Sintoma8 presenta_sintomas Arroz,
+Sintoma8 descipción "Manchas de color oscuro de forma elíptica que se tornan de color verde con centro blanco grisáceo"
+Sintoma9 is Individual
+Sintoma9 Types Sintomas
+Sintoma9 es_sintoma_de Pudrición_de_la_vaina,
+Sintoma9 presenta_sintomas Arroz,
+Sintoma9 descipción "Formación de micelios de color blanco."
+Sogata is Individual
+Sogata Types Plagas
+Sogata afecta_a Arroz,
+Sogata su_tratamiento_es Sensei,
+Sogata sus_sintomas_son Sintoma1,
+Sogata sus_sintomas_son Sintoma4,
+Sogata descipción "Siendo un insecto que se alimenta de los nutrientes de las plantas, su ciclo de vida se determina por las condiciones del ambiente. ",
+Sogata nombre_científico "Tagosodes orizicolus"
+Solvendazim is Individual
+Solvendazim Types Fungicidas
+Solvendazim es_tratamiento_de Quemazón,
+Solvendazim se_debe_aplicar Aplicación10,
+Solvendazim su_dosis_es Dosis4
+Temick is Individual
+Temick Types Pesticidas

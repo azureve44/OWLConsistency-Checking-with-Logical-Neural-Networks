@@ -1,0 +1,845 @@
+is(has-for-atomic-part,ObjectProperty):1.0
+is(has-for-part,ObjectProperty):1.0
+is(is-a-part-of-during,ObjectProperty):1.0
+is(is-the-quality-location-of-during,ObjectProperty):1.0
+is(has-for-maximum-scale-item,ObjectProperty):1.0
+is(has-for-minimum-scale-item,ObjectProperty):1.0
+is(is-the-scale-of,ObjectProperty):1.0
+is(affects-at,ObjectProperty):1.0
+is(has-for-agent-at,ObjectProperty):1.0
+is(has-for-date,ObjectProperty):1.0
+is(has-for-magnitude,ObjectProperty):1.0
+Domain(has-for-magnitude,scalar-quale):1.0
+Range(has-for-magnitude,number):1.0
+is(has-for-unit,ObjectProperty):1.0
+Domain(has-for-unit,scalar-quale):1.0
+Range(has-for-unit,unit-of-measure):1.0
+is(is-a-version-number-of,ObjectProperty):1.0
+Domain(is-a-version-number-of,version-number):1.0
+Range(is-a-version-number-of,artefact):1.0
+is(is-an-atomic-part-of,ObjectProperty):1.0
+is(is-equal-to,ObjectProperty):1.0
+Domain(is-equal-to,number):1.0
+Range(is-equal-to,number):1.0
+is(is-greater-than,ObjectProperty):1.0
+Domain(is-greater-than,number):1.0
+Range(is-greater-than,number):1.0
+InverseOf(is-greater-than,is-less-than):1.0
+is(is-greater-than-or-equal-to,ObjectProperty):1.0
+Domain(is-greater-than-or-equal-to,number):1.0
+Range(is-greater-than-or-equal-to,number):1.0
+InverseOf(is-greater-than-or-equal-to,is-less-than-or-equal-to):1.0
+is(is-less-than,ObjectProperty):1.0
+Domain(is-less-than,number):1.0
+Range(is-less-than,number):1.0
+InverseOf(is-less-than,is-greater-than):1.0
+is(is-less-than-or-equal-to,ObjectProperty):1.0
+Domain(is-less-than-or-equal-to,number):1.0
+Range(is-less-than-or-equal-to,number):1.0
+InverseOf(is-less-than-or-equal-to,is-greater-than-or-equal-to):1.0
+is(is-supervised-by-at,ObjectProperty):1.0
+is(abstract,Class):1.0
+SubClassOf(abstract,particular,):1.0
+SubClassOf(abstract,has-for-part only abstract):1.0
+is(endurant,Class):1.0
+is(particular,Class):1.0
+is(perdurant,Class):1.0
+is(physical-region,Class):1.0
+is(quale,Class):1.0
+is(quality,Class):1.0
+is(region,Class):1.0
+SubClassOf(region,abstract):1.0
+is(space-region,Class):1.0
+SubClassOf(space-region,physical-region,):1.0
+SubClassOf(space-region,has-for-part only space-region,):1.0
+SubClassOf(space-region,is-the-quality-location-of-during only spatial-location):1.0
+is(spatial-location,Class):1.0
+is(temporal-region,Class):1.0
+is(time-interval,Class):1.0
+SubClassOf(time-interval,temporal-region):1.0
+is(human,Class):1.0
+is(coded-score,Class):1.0
+SubClassOf(coded-score,scale-item):1.0
+is(numerical-score,Class):1.0
+is(qualitative-scale-item,Class):1.0
+SubClassOf(qualitative-scale-item,scale-item):1.0
+is(quantitative-scale-item,Class):1.0
+SubClassOf(quantitative-scale-item,scale-item):1.0
+is(scale,Class):1.0
+is(scale-item,Class):1.0
+SubClassOf(scale-item,quale,):1.0
+SubClassOf(scale-item,is-an-atomic-part-of exactly 1 scale):1.0
+is(score-with-unit-of-measure,Class):1.0
+SubClassOf(score-with-unit-of-measure,numerical-score,):1.0
+SubClassOf(score-with-unit-of-measure,scalar-quale):1.0
+is(score-without-unit-of-measure,Class):1.0
+SubClassOf(score-without-unit-of-measure,number):1.0
+is(acronym,Class):1.0
+SubClassOf(acronym,name):1.0
+is(artefact,Class):1.0
+is(article,Class):1.0
+SubClassOf(article,textual-discourse,):1.0
+SubClassOf(article,is-a-part-of-during some publication):1.0
+is(asking,Class):1.0
+is(complex-number,Class):1.0
+SubClassOf(complex-number,number):1.0
+is(conceptual-action,Class):1.0
+is(date,Class):1.0
+is(deliberate-producing,Class):1.0
+is(exacting,Class):1.0
+SubClassOf(exacting,asking):1.0
+is(imaginary-number,Class):1.0
+SubClassOf(imaginary-number,number):1.0
+is(manufacturing,Class):1.0
+SubClassOf(manufacturing,deliberate-producing):1.0
+is(name,Class):1.0
+is(noun,Class):1.0
+is(number,Class):1.0
+SubClassOf(number,quale):1.0
+is(publication,Class):1.0
+is(real-number,Class):1.0
+SubClassOf(real-number,number):1.0
+is(requesting,Class):1.0
+SubClassOf(requesting,asking):1.0
+is(scalar-quale,Class):1.0
+SubClassOf(scalar-quale,quale,):1.0
+SubClassOf(scalar-quale,has-for-magnitude some number,):1.0
+SubClassOf(scalar-quale,has-for-unit some unit-of-measure):1.0
+is(scientific-article,Class):1.0
+SubClassOf(scientific-article,article):1.0
+is(successful-action,Class):1.0
+is(successfully-manufacturing,Class):1.0
+SubClassOf(successfully-manufacturing,manufacturing,):1.0
+SubClassOf(successfully-manufacturing,successful-action,):1.0
+SubClassOf(successfully-manufacturing,successfully-producing):1.0
+is(successfully-producing,Class):1.0
+is(supervisor,Class):1.0
+is(textual-discourse,Class):1.0
+is(unit-of-measure,Class):1.0
+SubClassOf(unit-of-measure,abstract):1.0
+is(version-number,Class):1.0
+SubClassOf(version-number,noun,):1.0
+SubClassOf(version-number,is-a-version-number-of some artefact):1.0
+is(BDI-II-10v1,Class):1.0
+is(BDI-II-11v1,Class):1.0
+is(BDI-II-12v1,Class):1.0
+is(BDI-II-13v1,Class):1.0
+is(BDI-II-14v1,Class):1.0
+is(BDI-II-15v1,Class):1.0
+is(BDI-II-16v1,Class):1.0
+is(BDI-II-17v1,Class):1.0
+is(BDI-II-18v1,Class):1.0
+is(BDI-II-19v1,Class):1.0
+is(BDI-II-1v1,Class):1.0
+is(BDI-II-20v1,Class):1.0
+is(BDI-II-21v1,Class):1.0
+is(BDI-II-2v1,Class):1.0
+is(BDI-II-3v1,Class):1.0
+is(BDI-II-4v1,Class):1.0
+is(BDI-II-5v1,Class):1.0
+is(BDI-II-6v1,Class):1.0
+is(BDI-II-7v1,Class):1.0
+is(BDI-II-8v1,Class):1.0
+is(BDI-II-9v1,Class):1.0
+is(BDI-IIv1,Class):1.0
+is(CDR-CA-v1,Class):1.0
+is(CDR-HH-v1,Class):1.0
+is(CDR-J-v1,Class):1.0
+is(CDR-M-v1,Class):1.0
+is(CDR-O-v1,Class):1.0
+is(CDR-PC-v1,Class):1.0
+is(CDR-SoBv1,Class):1.0
+is(CFT-Cv2,Class):1.0
+is(CFT-Mv2,Class):1.0
+is(EDSS-1v1,Class):1.0
+is(EDSS-2v1,Class):1.0
+is(EDSS-3v1,Class):1.0
+is(EDSS-4v1,Class):1.0
+is(EDSS-5v1,Class):1.0
+is(EDSS-6v1,Class):1.0
+is(EDSS-7v1,Class):1.0
+is(EDSSv1,Class):1.0
+is(scale-BDI-II-10v1,Class):1.0
+SubClassOf(scale-BDI-II-10v1,scale,):1.0
+SubClassOf(scale-BDI-II-10v1,has-for-atomic-part value scale-item-BDI-II-10v1-0,):1.0
+SubClassOf(scale-BDI-II-10v1,has-for-atomic-part value scale-item-BDI-II-10v1-1,):1.0
+SubClassOf(scale-BDI-II-10v1,has-for-atomic-part value scale-item-BDI-II-10v1-2,):1.0
+SubClassOf(scale-BDI-II-10v1,has-for-atomic-part value scale-item-BDI-II-10v1-3,):1.0
+SubClassOf(scale-BDI-II-10v1,has-for-maximum-scale-item value scale-item-BDI-II-10v1-3,):1.0
+SubClassOf(scale-BDI-II-10v1,has-for-minimum-scale-item value scale-item-BDI-II-10v1-0,):1.0
+SubClassOf(scale-BDI-II-10v1,is-the-scale-of exactly 1 BDI-II-10v1):1.0
+is(scale-BDI-II-11v1,Class):1.0
+SubClassOf(scale-BDI-II-11v1,scale,):1.0
+SubClassOf(scale-BDI-II-11v1,has-for-atomic-part value scale-item-BDI-II-11v1-0,):1.0
+SubClassOf(scale-BDI-II-11v1,has-for-atomic-part value scale-item-BDI-II-11v1-1,):1.0
+SubClassOf(scale-BDI-II-11v1,has-for-atomic-part value scale-item-BDI-II-11v1-2,):1.0
+SubClassOf(scale-BDI-II-11v1,has-for-atomic-part value scale-item-BDI-II-11v1-3,):1.0
+SubClassOf(scale-BDI-II-11v1,has-for-maximum-scale-item value scale-item-BDI-II-11v1-3,):1.0
+SubClassOf(scale-BDI-II-11v1,has-for-minimum-scale-item value scale-item-BDI-II-11v1-0,):1.0
+SubClassOf(scale-BDI-II-11v1,is-the-scale-of exactly 1 BDI-II-11v1):1.0
+is(scale-BDI-II-12v1,Class):1.0
+SubClassOf(scale-BDI-II-12v1,scale,):1.0
+SubClassOf(scale-BDI-II-12v1,has-for-atomic-part value scale-item-BDI-II-12v1-0,):1.0
+SubClassOf(scale-BDI-II-12v1,has-for-atomic-part value scale-item-BDI-II-12v1-1,):1.0
+SubClassOf(scale-BDI-II-12v1,has-for-atomic-part value scale-item-BDI-II-12v1-2,):1.0
+SubClassOf(scale-BDI-II-12v1,has-for-atomic-part value scale-item-BDI-II-12v1-3,):1.0
+SubClassOf(scale-BDI-II-12v1,has-for-maximum-scale-item value scale-item-BDI-II-12v1-3,):1.0
+SubClassOf(scale-BDI-II-12v1,has-for-minimum-scale-item value scale-item-BDI-II-12v1-0,):1.0
+SubClassOf(scale-BDI-II-12v1,is-the-scale-of exactly 1 BDI-II-12v1):1.0
+is(scale-BDI-II-13v1,Class):1.0
+SubClassOf(scale-BDI-II-13v1,scale,):1.0
+SubClassOf(scale-BDI-II-13v1,has-for-atomic-part value scale-item-BDI-II-13v1-0,):1.0
+SubClassOf(scale-BDI-II-13v1,has-for-atomic-part value scale-item-BDI-II-13v1-1,):1.0
+SubClassOf(scale-BDI-II-13v1,has-for-atomic-part value scale-item-BDI-II-13v1-2,):1.0
+SubClassOf(scale-BDI-II-13v1,has-for-atomic-part value scale-item-BDI-II-13v1-3,):1.0
+SubClassOf(scale-BDI-II-13v1,has-for-maximum-scale-item value scale-item-BDI-II-13v1-3,):1.0
+SubClassOf(scale-BDI-II-13v1,has-for-minimum-scale-item value scale-item-BDI-II-13v1-0,):1.0
+SubClassOf(scale-BDI-II-13v1,is-the-scale-of exactly 1 BDI-II-13v1):1.0
+is(scale-BDI-II-14v1,Class):1.0
+SubClassOf(scale-BDI-II-14v1,scale,):1.0
+SubClassOf(scale-BDI-II-14v1,has-for-atomic-part value scale-item-BDI-II-14v1-0,):1.0
+SubClassOf(scale-BDI-II-14v1,has-for-atomic-part value scale-item-BDI-II-14v1-1,):1.0
+SubClassOf(scale-BDI-II-14v1,has-for-atomic-part value scale-item-BDI-II-14v1-2,):1.0
+SubClassOf(scale-BDI-II-14v1,has-for-atomic-part value scale-item-BDI-II-14v1-3,):1.0
+SubClassOf(scale-BDI-II-14v1,has-for-maximum-scale-item value scale-item-BDI-II-14v1-3,):1.0
+SubClassOf(scale-BDI-II-14v1,has-for-minimum-scale-item value scale-item-BDI-II-14v1-0,):1.0
+SubClassOf(scale-BDI-II-14v1,is-the-scale-of exactly 1 BDI-II-14v1):1.0
+is(scale-BDI-II-15v1,Class):1.0
+SubClassOf(scale-BDI-II-15v1,scale,):1.0
+SubClassOf(scale-BDI-II-15v1,has-for-atomic-part value scale-item-BDI-II-15v1-0,):1.0
+SubClassOf(scale-BDI-II-15v1,has-for-atomic-part value scale-item-BDI-II-15v1-1,):1.0
+SubClassOf(scale-BDI-II-15v1,has-for-atomic-part value scale-item-BDI-II-15v1-2,):1.0
+SubClassOf(scale-BDI-II-15v1,has-for-atomic-part value scale-item-BDI-II-15v1-3,):1.0
+SubClassOf(scale-BDI-II-15v1,has-for-maximum-scale-item value scale-item-BDI-II-15v1-3,):1.0
+SubClassOf(scale-BDI-II-15v1,has-for-minimum-scale-item value scale-item-BDI-II-15v1-0,):1.0
+SubClassOf(scale-BDI-II-15v1,is-the-scale-of exactly 1 BDI-II-15v1):1.0
+is(scale-BDI-II-16v1,Class):1.0
+SubClassOf(scale-BDI-II-16v1,scale,):1.0
+SubClassOf(scale-BDI-II-16v1,has-for-atomic-part value scale-item-BDI-II-16v1-0,):1.0
+SubClassOf(scale-BDI-II-16v1,has-for-atomic-part value scale-item-BDI-II-16v1-1a,):1.0
+SubClassOf(scale-BDI-II-16v1,has-for-atomic-part value scale-item-BDI-II-16v1-1b,):1.0
+SubClassOf(scale-BDI-II-16v1,has-for-atomic-part value scale-item-BDI-II-16v1-2a,):1.0
+SubClassOf(scale-BDI-II-16v1,has-for-atomic-part value scale-item-BDI-II-16v1-2b,):1.0
+SubClassOf(scale-BDI-II-16v1,has-for-atomic-part value scale-item-BDI-II-16v1-3a,):1.0
+SubClassOf(scale-BDI-II-16v1,has-for-atomic-part value scale-item-BDI-II-16v1-3b,):1.0
+SubClassOf(scale-BDI-II-16v1,has-for-maximum-scale-item value scale-item-BDI-II-16v1-3b,):1.0
+SubClassOf(scale-BDI-II-16v1,has-for-minimum-scale-item value scale-item-BDI-II-16v1-0,):1.0
+SubClassOf(scale-BDI-II-16v1,is-the-scale-of exactly 1 BDI-II-16v1):1.0
+is(scale-BDI-II-17v1,Class):1.0
+SubClassOf(scale-BDI-II-17v1,scale,):1.0
+SubClassOf(scale-BDI-II-17v1,has-for-atomic-part value scale-item-BDI-II-17v1-0,):1.0
+SubClassOf(scale-BDI-II-17v1,has-for-atomic-part value scale-item-BDI-II-17v1-1,):1.0
+SubClassOf(scale-BDI-II-17v1,has-for-atomic-part value scale-item-BDI-II-17v1-2,):1.0
+SubClassOf(scale-BDI-II-17v1,has-for-atomic-part value scale-item-BDI-II-17v1-3,):1.0
+SubClassOf(scale-BDI-II-17v1,has-for-maximum-scale-item value scale-item-BDI-II-17v1-3,):1.0
+SubClassOf(scale-BDI-II-17v1,has-for-minimum-scale-item value scale-item-BDI-II-17v1-0,):1.0
+SubClassOf(scale-BDI-II-17v1,is-the-scale-of exactly 1 BDI-II-17v1):1.0
+is(scale-BDI-II-18v1,Class):1.0
+SubClassOf(scale-BDI-II-18v1,scale,):1.0
+SubClassOf(scale-BDI-II-18v1,has-for-atomic-part value scale-item-BDI-II-18v1-0,):1.0
+SubClassOf(scale-BDI-II-18v1,has-for-atomic-part value scale-item-BDI-II-18v1-1a,):1.0
+SubClassOf(scale-BDI-II-18v1,has-for-atomic-part value scale-item-BDI-II-18v1-1b,):1.0
+SubClassOf(scale-BDI-II-18v1,has-for-atomic-part value scale-item-BDI-II-18v1-2a,):1.0
+SubClassOf(scale-BDI-II-18v1,has-for-atomic-part value scale-item-BDI-II-18v1-2b,):1.0
+SubClassOf(scale-BDI-II-18v1,has-for-atomic-part value scale-item-BDI-II-18v1-3a,):1.0
+SubClassOf(scale-BDI-II-18v1,has-for-atomic-part value scale-item-BDI-II-18v1-3b,):1.0
+SubClassOf(scale-BDI-II-18v1,has-for-maximum-scale-item value scale-item-BDI-II-18v1-3b,):1.0
+SubClassOf(scale-BDI-II-18v1,has-for-minimum-scale-item value scale-item-BDI-II-18v1-0,):1.0
+SubClassOf(scale-BDI-II-18v1,is-the-scale-of exactly 1 BDI-II-18v1):1.0
+is(scale-BDI-II-19v1,Class):1.0
+SubClassOf(scale-BDI-II-19v1,scale,):1.0
+SubClassOf(scale-BDI-II-19v1,has-for-atomic-part value scale-item-BDI-II-19v1-0,):1.0
+SubClassOf(scale-BDI-II-19v1,has-for-atomic-part value scale-item-BDI-II-19v1-1,):1.0
+SubClassOf(scale-BDI-II-19v1,has-for-atomic-part value scale-item-BDI-II-19v1-2,):1.0
+SubClassOf(scale-BDI-II-19v1,has-for-atomic-part value scale-item-BDI-II-19v1-3,):1.0
+SubClassOf(scale-BDI-II-19v1,has-for-maximum-scale-item value scale-item-BDI-II-19v1-3,):1.0
+SubClassOf(scale-BDI-II-19v1,has-for-minimum-scale-item value scale-item-BDI-II-19v1-0,):1.0
+SubClassOf(scale-BDI-II-19v1,is-the-scale-of exactly 1 BDI-II-19v1):1.0
+is(scale-BDI-II-1v1,Class):1.0
+SubClassOf(scale-BDI-II-1v1,scale,):1.0
+SubClassOf(scale-BDI-II-1v1,has-for-atomic-part value scale-item-BDI-II-1v1-0,):1.0
+SubClassOf(scale-BDI-II-1v1,has-for-atomic-part value scale-item-BDI-II-1v1-1,):1.0
+SubClassOf(scale-BDI-II-1v1,has-for-atomic-part value scale-item-BDI-II-1v1-2,):1.0
+SubClassOf(scale-BDI-II-1v1,has-for-atomic-part value scale-item-BDI-II-1v1-3,):1.0
+SubClassOf(scale-BDI-II-1v1,has-for-maximum-scale-item value scale-item-BDI-II-1v1-3,):1.0
+SubClassOf(scale-BDI-II-1v1,has-for-minimum-scale-item value scale-item-BDI-II-1v1-0,):1.0
+SubClassOf(scale-BDI-II-1v1,is-the-scale-of exactly 1 BDI-II-1v1):1.0
+is(scale-BDI-II-20v1,Class):1.0
+SubClassOf(scale-BDI-II-20v1,scale,):1.0
+SubClassOf(scale-BDI-II-20v1,has-for-atomic-part value scale-item-BDI-II-20v1-0,):1.0
+SubClassOf(scale-BDI-II-20v1,has-for-atomic-part value scale-item-BDI-II-20v1-1,):1.0
+SubClassOf(scale-BDI-II-20v1,has-for-atomic-part value scale-item-BDI-II-20v1-2,):1.0
+SubClassOf(scale-BDI-II-20v1,has-for-atomic-part value scale-item-BDI-II-20v1-3,):1.0
+SubClassOf(scale-BDI-II-20v1,has-for-maximum-scale-item value scale-item-BDI-II-20v1-3,):1.0
+SubClassOf(scale-BDI-II-20v1,has-for-minimum-scale-item value scale-item-BDI-II-20v1-0,):1.0
+SubClassOf(scale-BDI-II-20v1,is-the-scale-of exactly 1 BDI-II-20v1):1.0
+is(scale-BDI-II-21v1,Class):1.0
+SubClassOf(scale-BDI-II-21v1,scale,):1.0
+SubClassOf(scale-BDI-II-21v1,has-for-atomic-part value scale-item-BDI-II-21v1-0,):1.0
+SubClassOf(scale-BDI-II-21v1,has-for-atomic-part value scale-item-BDI-II-21v1-1,):1.0
+SubClassOf(scale-BDI-II-21v1,has-for-atomic-part value scale-item-BDI-II-21v1-2,):1.0
+SubClassOf(scale-BDI-II-21v1,has-for-atomic-part value scale-item-BDI-II-21v1-3,):1.0
+SubClassOf(scale-BDI-II-21v1,has-for-maximum-scale-item value scale-item-BDI-II-21v1-3,):1.0
+SubClassOf(scale-BDI-II-21v1,has-for-minimum-scale-item value scale-item-BDI-II-21v1-0,):1.0
+SubClassOf(scale-BDI-II-21v1,is-the-scale-of exactly 1 BDI-II-21v1):1.0
+is(scale-BDI-II-2v1,Class):1.0
+SubClassOf(scale-BDI-II-2v1,scale,):1.0
+SubClassOf(scale-BDI-II-2v1,has-for-atomic-part value scale-item-BDI-II-2v1-0,):1.0
+SubClassOf(scale-BDI-II-2v1,has-for-atomic-part value scale-item-BDI-II-2v1-1,):1.0
+SubClassOf(scale-BDI-II-2v1,has-for-atomic-part value scale-item-BDI-II-2v1-2,):1.0
+SubClassOf(scale-BDI-II-2v1,has-for-atomic-part value scale-item-BDI-II-2v1-3,):1.0
+SubClassOf(scale-BDI-II-2v1,has-for-maximum-scale-item value scale-item-BDI-II-2v1-3,):1.0
+SubClassOf(scale-BDI-II-2v1,has-for-minimum-scale-item value scale-item-BDI-II-2v1-0,):1.0
+SubClassOf(scale-BDI-II-2v1,is-the-scale-of exactly 1 BDI-II-2v1):1.0
+is(scale-BDI-II-3v1,Class):1.0
+SubClassOf(scale-BDI-II-3v1,scale,):1.0
+SubClassOf(scale-BDI-II-3v1,has-for-atomic-part value scale-item-BDI-II-3v1-0,):1.0
+SubClassOf(scale-BDI-II-3v1,has-for-atomic-part value scale-item-BDI-II-3v1-1,):1.0
+SubClassOf(scale-BDI-II-3v1,has-for-atomic-part value scale-item-BDI-II-3v1-2,):1.0
+SubClassOf(scale-BDI-II-3v1,has-for-atomic-part value scale-item-BDI-II-3v1-3,):1.0
+SubClassOf(scale-BDI-II-3v1,has-for-maximum-scale-item value scale-item-BDI-II-3v1-3,):1.0
+SubClassOf(scale-BDI-II-3v1,has-for-minimum-scale-item value scale-item-BDI-II-3v1-0,):1.0
+SubClassOf(scale-BDI-II-3v1,is-the-scale-of exactly 1 BDI-II-3v1):1.0
+is(scale-BDI-II-4v1,Class):1.0
+SubClassOf(scale-BDI-II-4v1,scale,):1.0
+SubClassOf(scale-BDI-II-4v1,has-for-atomic-part value scale-item-BDI-II-4v1-0,):1.0
+SubClassOf(scale-BDI-II-4v1,has-for-atomic-part value scale-item-BDI-II-4v1-1,):1.0
+SubClassOf(scale-BDI-II-4v1,has-for-atomic-part value scale-item-BDI-II-4v1-2,):1.0
+SubClassOf(scale-BDI-II-4v1,has-for-atomic-part value scale-item-BDI-II-4v1-3,):1.0
+SubClassOf(scale-BDI-II-4v1,has-for-maximum-scale-item value scale-item-BDI-II-4v1-3,):1.0
+SubClassOf(scale-BDI-II-4v1,has-for-minimum-scale-item value scale-item-BDI-II-4v1-0,):1.0
+SubClassOf(scale-BDI-II-4v1,is-the-scale-of exactly 1 BDI-II-4v1):1.0
+is(scale-BDI-II-5v1,Class):1.0
+SubClassOf(scale-BDI-II-5v1,scale,):1.0
+SubClassOf(scale-BDI-II-5v1,has-for-atomic-part value scale-item-BDI-II-5v1-0,):1.0
+SubClassOf(scale-BDI-II-5v1,has-for-atomic-part value scale-item-BDI-II-5v1-1,):1.0
+SubClassOf(scale-BDI-II-5v1,has-for-atomic-part value scale-item-BDI-II-5v1-2,):1.0
+SubClassOf(scale-BDI-II-5v1,has-for-atomic-part value scale-item-BDI-II-5v1-3,):1.0
+SubClassOf(scale-BDI-II-5v1,has-for-maximum-scale-item value scale-item-BDI-II-5v1-3,):1.0
+SubClassOf(scale-BDI-II-5v1,has-for-minimum-scale-item value scale-item-BDI-II-5v1-0,):1.0
+SubClassOf(scale-BDI-II-5v1,is-the-scale-of exactly 1 BDI-II-5v1):1.0
+is(scale-BDI-II-6v1,Class):1.0
+SubClassOf(scale-BDI-II-6v1,scale,):1.0
+SubClassOf(scale-BDI-II-6v1,has-for-atomic-part value scale-item-BDI-II-6v1-0,):1.0
+SubClassOf(scale-BDI-II-6v1,has-for-atomic-part value scale-item-BDI-II-6v1-1,):1.0
+SubClassOf(scale-BDI-II-6v1,has-for-atomic-part value scale-item-BDI-II-6v1-2,):1.0
+SubClassOf(scale-BDI-II-6v1,has-for-atomic-part value scale-item-BDI-II-6v1-3,):1.0
+SubClassOf(scale-BDI-II-6v1,has-for-maximum-scale-item value scale-item-BDI-II-6v1-3,):1.0
+SubClassOf(scale-BDI-II-6v1,has-for-minimum-scale-item value scale-item-BDI-II-6v1-0,):1.0
+SubClassOf(scale-BDI-II-6v1,is-the-scale-of exactly 1 BDI-II-6v1):1.0
+is(scale-BDI-II-7v1,Class):1.0
+SubClassOf(scale-BDI-II-7v1,scale,):1.0
+SubClassOf(scale-BDI-II-7v1,has-for-atomic-part value scale-item-BDI-II-7v1-0,):1.0
+SubClassOf(scale-BDI-II-7v1,has-for-atomic-part value scale-item-BDI-II-7v1-1,):1.0
+SubClassOf(scale-BDI-II-7v1,has-for-atomic-part value scale-item-BDI-II-7v1-2,):1.0
+SubClassOf(scale-BDI-II-7v1,has-for-atomic-part value scale-item-BDI-II-7v1-3,):1.0
+SubClassOf(scale-BDI-II-7v1,has-for-maximum-scale-item value scale-item-BDI-II-7v1-3,):1.0
+SubClassOf(scale-BDI-II-7v1,has-for-minimum-scale-item value scale-item-BDI-II-7v1-0,):1.0
+SubClassOf(scale-BDI-II-7v1,is-the-scale-of exactly 1 BDI-II-7v1):1.0
+is(scale-BDI-II-8v1,Class):1.0
+SubClassOf(scale-BDI-II-8v1,scale,):1.0
+SubClassOf(scale-BDI-II-8v1,has-for-atomic-part value scale-item-BDI-II-8v1-0,):1.0
+SubClassOf(scale-BDI-II-8v1,has-for-atomic-part value scale-item-BDI-II-8v1-1,):1.0
+SubClassOf(scale-BDI-II-8v1,has-for-atomic-part value scale-item-BDI-II-8v1-2,):1.0
+SubClassOf(scale-BDI-II-8v1,has-for-atomic-part value scale-item-BDI-II-8v1-3,):1.0
+SubClassOf(scale-BDI-II-8v1,has-for-maximum-scale-item value scale-item-BDI-II-8v1-3,):1.0
+SubClassOf(scale-BDI-II-8v1,has-for-minimum-scale-item value scale-item-BDI-II-8v1-0,):1.0
+SubClassOf(scale-BDI-II-8v1,is-the-scale-of exactly 1 BDI-II-8v1):1.0
+is(scale-BDI-II-9v1,Class):1.0
+SubClassOf(scale-BDI-II-9v1,scale,):1.0
+SubClassOf(scale-BDI-II-9v1,has-for-atomic-part value scale-item-BDI-II-9v1-0,):1.0
+SubClassOf(scale-BDI-II-9v1,has-for-atomic-part value scale-item-BDI-II-9v1-1,):1.0
+SubClassOf(scale-BDI-II-9v1,has-for-atomic-part value scale-item-BDI-II-9v1-2,):1.0
+SubClassOf(scale-BDI-II-9v1,has-for-atomic-part value scale-item-BDI-II-9v1-3,):1.0
+SubClassOf(scale-BDI-II-9v1,has-for-maximum-scale-item value scale-item-BDI-II-9v1-3,):1.0
+SubClassOf(scale-BDI-II-9v1,has-for-minimum-scale-item value scale-item-BDI-II-9v1-0,):1.0
+SubClassOf(scale-BDI-II-9v1,is-the-scale-of exactly 1 BDI-II-9v1):1.0
+is(scale-BDI-IIv1,Class):1.0
+SubClassOf(scale-BDI-IIv1,scale,):1.0
+SubClassOf(scale-BDI-IIv1,is-the-scale-of exactly 1 BDI-IIv1):1.0
+is(scale-CDR-CA-v1,Class):1.0
+SubClassOf(scale-CDR-CA-v1,scale,):1.0
+SubClassOf(scale-CDR-CA-v1,has-for-atomic-part value scale-item-CDR-CA-v1-Mild-1,):1.0
+SubClassOf(scale-CDR-CA-v1,has-for-atomic-part value scale-item-CDR-CA-v1-Moderate-2,):1.0
+SubClassOf(scale-CDR-CA-v1,has-for-atomic-part value scale-item-CDR-CA-v1-None-0,):1.0
+SubClassOf(scale-CDR-CA-v1,has-for-atomic-part value scale-item-CDR-CA-v1-Questionable-0.5,):1.0
+SubClassOf(scale-CDR-CA-v1,has-for-atomic-part value scale-item-CDR-CA-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-CA-v1,has-for-maximum-scale-item value scale-item-CDR-CA-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-CA-v1,has-for-minimum-scale-item value scale-item-CDR-CA-v1-None-0,):1.0
+SubClassOf(scale-CDR-CA-v1,is-the-scale-of exactly 1 CDR-CA-v1):1.0
+is(scale-CDR-HH-v1,Class):1.0
+SubClassOf(scale-CDR-HH-v1,scale,):1.0
+SubClassOf(scale-CDR-HH-v1,has-for-atomic-part value scale-item-CDR-HH-v1-Mild-1,):1.0
+SubClassOf(scale-CDR-HH-v1,has-for-atomic-part value scale-item-CDR-HH-v1-Moderate-2,):1.0
+SubClassOf(scale-CDR-HH-v1,has-for-atomic-part value scale-item-CDR-HH-v1-None-0,):1.0
+SubClassOf(scale-CDR-HH-v1,has-for-atomic-part value scale-item-CDR-HH-v1-Questionable-0.5,):1.0
+SubClassOf(scale-CDR-HH-v1,has-for-atomic-part value scale-item-CDR-HH-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-HH-v1,has-for-maximum-scale-item value scale-item-CDR-HH-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-HH-v1,has-for-minimum-scale-item value scale-item-CDR-HH-v1-None-0,):1.0
+SubClassOf(scale-CDR-HH-v1,is-the-scale-of exactly 1 CDR-HH-v1):1.0
+is(scale-CDR-J-v1,Class):1.0
+SubClassOf(scale-CDR-J-v1,scale,):1.0
+SubClassOf(scale-CDR-J-v1,has-for-atomic-part value scale-item-CDR-J-v1-Mild-1,):1.0
+SubClassOf(scale-CDR-J-v1,has-for-atomic-part value scale-item-CDR-J-v1-Moderate-2,):1.0
+SubClassOf(scale-CDR-J-v1,has-for-atomic-part value scale-item-CDR-J-v1-None-0,):1.0
+SubClassOf(scale-CDR-J-v1,has-for-atomic-part value scale-item-CDR-J-v1-Questionable-0.5,):1.0
+SubClassOf(scale-CDR-J-v1,has-for-atomic-part value scale-item-CDR-J-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-J-v1,has-for-maximum-scale-item value scale-item-CDR-J-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-J-v1,has-for-minimum-scale-item value scale-item-CDR-J-v1-None-0,):1.0
+SubClassOf(scale-CDR-J-v1,is-the-scale-of exactly 1 CDR-J-v1):1.0
+is(scale-CDR-M-v1,Class):1.0
+SubClassOf(scale-CDR-M-v1,scale,):1.0
+SubClassOf(scale-CDR-M-v1,has-for-atomic-part value scale-item-CDR-M-v1-Mild-1,):1.0
+SubClassOf(scale-CDR-M-v1,has-for-atomic-part value scale-item-CDR-M-v1-Moderate-2,):1.0
+SubClassOf(scale-CDR-M-v1,has-for-atomic-part value scale-item-CDR-M-v1-None-0,):1.0
+SubClassOf(scale-CDR-M-v1,has-for-atomic-part value scale-item-CDR-M-v1-Questionable-0.5,):1.0
+SubClassOf(scale-CDR-M-v1,has-for-atomic-part value scale-item-CDR-M-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-M-v1,has-for-maximum-scale-item value scale-item-CDR-M-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-M-v1,has-for-minimum-scale-item value scale-item-CDR-M-v1-None-0,):1.0
+SubClassOf(scale-CDR-M-v1,is-the-scale-of exactly 1 CDR-M-v1):1.0
+is(scale-CDR-O-v1,Class):1.0
+SubClassOf(scale-CDR-O-v1,scale,):1.0
+SubClassOf(scale-CDR-O-v1,has-for-atomic-part value scale-item-CDR-O-v1-Mild-1,):1.0
+SubClassOf(scale-CDR-O-v1,has-for-atomic-part value scale-item-CDR-O-v1-Moderate-2,):1.0
+SubClassOf(scale-CDR-O-v1,has-for-atomic-part value scale-item-CDR-O-v1-None-0,):1.0
+SubClassOf(scale-CDR-O-v1,has-for-atomic-part value scale-item-CDR-O-v1-Questionable-0.5,):1.0
+SubClassOf(scale-CDR-O-v1,has-for-atomic-part value scale-item-CDR-O-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-O-v1,has-for-maximum-scale-item value scale-item-CDR-O-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-O-v1,has-for-minimum-scale-item value scale-item-CDR-O-v1-None-0,):1.0
+SubClassOf(scale-CDR-O-v1,is-the-scale-of exactly 1 CDR-O-v1):1.0
+is(scale-CDR-PC-v1,Class):1.0
+SubClassOf(scale-CDR-PC-v1,scale,):1.0
+SubClassOf(scale-CDR-PC-v1,has-for-atomic-part value scale-item-CDR-PC-v1-Mild-1,):1.0
+SubClassOf(scale-CDR-PC-v1,has-for-atomic-part value scale-item-CDR-PC-v1-Moderate-2,):1.0
+SubClassOf(scale-CDR-PC-v1,has-for-atomic-part value scale-item-CDR-PC-v1-None-0,):1.0
+SubClassOf(scale-CDR-PC-v1,has-for-atomic-part value scale-item-CDR-PC-v1-Questionable-0.5,):1.0
+SubClassOf(scale-CDR-PC-v1,has-for-atomic-part value scale-item-CDR-PC-v1-Severe-3,):1.0
+SubClassOf(scale-CDR-PC-v1,has-for-minimum-scale-item value scale-item-CDR-PC-v1-None-0,):1.0
+SubClassOf(scale-CDR-PC-v1,is-the-scale-of exactly 1 CDR-PC-v1):1.0
+is(scale-CDR-SoBv1,Class):1.0
+SubClassOf(scale-CDR-SoBv1,scale,):1.0
+SubClassOf(scale-CDR-SoBv1,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-0,):1.0
+SubClassOf(scale-CDR-SoBv1,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-0.5,):1.0
+SubClassOf(scale-CDR-SoBv1,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-1,):1.0
+SubClassOf(scale-CDR-SoBv1,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-2,):1.0
+SubClassOf(scale-CDR-SoBv1,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-3,):1.0
+SubClassOf(scale-CDR-SoBv1,has-for-maximum-scale-item value scale-item-CDR-SoBv1-CDR-3,):1.0
+SubClassOf(scale-CDR-SoBv1,has-for-minimum-scale-item value scale-item-CDR-SoBv1-CDR-0,):1.0
+SubClassOf(scale-CDR-SoBv1,is-the-scale-of exactly 1 CDR-SoBv1):1.0
+is(scale-CFT-Cv2,Class):1.0
+SubClassOf(scale-CFT-Cv2,scale,):1.0
+SubClassOf(scale-CFT-Cv2,has-for-atomic-part value scale-item-CFT-Cv2-I,):1.0
+SubClassOf(scale-CFT-Cv2,has-for-atomic-part value scale-item-CFT-Cv2-II,):1.0
+SubClassOf(scale-CFT-Cv2,has-for-atomic-part value scale-item-CFT-Cv2-III,):1.0
+SubClassOf(scale-CFT-Cv2,has-for-atomic-part value scale-item-CFT-Cv2-IV,):1.0
+SubClassOf(scale-CFT-Cv2,has-for-atomic-part value scale-item-CFT-Cv2-V,):1.0
+SubClassOf(scale-CFT-Cv2,has-for-atomic-part value scale-item-CFT-Cv2-VI,):1.0
+SubClassOf(scale-CFT-Cv2,has-for-atomic-part value scale-item-CFT-Cv2-VII,):1.0
+SubClassOf(scale-CFT-Cv2,is-the-scale-of exactly 1 CFT-Cv2):1.0
+is(scale-CFT-Mv2,Class):1.0
+SubClassOf(scale-CFT-Mv2,scale,):1.0
+SubClassOf(scale-CFT-Mv2,has-for-atomic-part value scale-item-CFT-Mv2-I,):1.0
+SubClassOf(scale-CFT-Mv2,has-for-atomic-part value scale-item-CFT-Mv2-II,):1.0
+SubClassOf(scale-CFT-Mv2,has-for-atomic-part value scale-item-CFT-Mv2-III,):1.0
+SubClassOf(scale-CFT-Mv2,has-for-atomic-part value scale-item-CFT-Mv2-IV,):1.0
+SubClassOf(scale-CFT-Mv2,has-for-atomic-part value scale-item-CFT-Mv2-V,):1.0
+SubClassOf(scale-CFT-Mv2,has-for-atomic-part value scale-item-CFT-Mv2-VI,):1.0
+SubClassOf(scale-CFT-Mv2,has-for-atomic-part value scale-item-CFT-Mv2-VII,):1.0
+SubClassOf(scale-CFT-Mv2,is-the-scale-of exactly 1 CFT-Mv2):1.0
+is(scale-EDSS-1v1,Class):1.0
+SubClassOf(scale-EDSS-1v1,scale,):1.0
+SubClassOf(scale-EDSS-1v1,has-for-atomic-part value scale-item-EDSS-1v1-0,):1.0
+SubClassOf(scale-EDSS-1v1,has-for-atomic-part value scale-item-EDSS-1v1-1,):1.0
+SubClassOf(scale-EDSS-1v1,has-for-atomic-part value scale-item-EDSS-1v1-2,):1.0
+SubClassOf(scale-EDSS-1v1,has-for-atomic-part value scale-item-EDSS-1v1-3,):1.0
+SubClassOf(scale-EDSS-1v1,has-for-atomic-part value scale-item-EDSS-1v1-4,):1.0
+SubClassOf(scale-EDSS-1v1,has-for-atomic-part value scale-item-EDSS-1v1-5,):1.0
+SubClassOf(scale-EDSS-1v1,has-for-atomic-part value scale-item-EDSS-1v1-6,):1.0
+SubClassOf(scale-EDSS-1v1,has-for-maximum-scale-item value scale-item-EDSS-1v1-6,):1.0
+SubClassOf(scale-EDSS-1v1,has-for-minimum-scale-item value scale-item-EDSS-1v1-0,):1.0
+SubClassOf(scale-EDSS-1v1,is-the-scale-of exactly 1 EDSS-1v1):1.0
+is(scale-EDSS-2v1,Class):1.0
+SubClassOf(scale-EDSS-2v1,scale,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-0,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-1,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-2a,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-2b,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-3a,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-3b,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-3c,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-4a,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-4b,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-atomic-part value scale-item-EDSS-2v1-5,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-maximum-scale-item value scale-item-EDSS-2v1-5,):1.0
+SubClassOf(scale-EDSS-2v1,has-for-minimum-scale-item value scale-item-EDSS-2v1-0,):1.0
+SubClassOf(scale-EDSS-2v1,is-the-scale-of exactly 1 EDSS-2v1):1.0
+is(scale-EDSS-3v1,Class):1.0
+SubClassOf(scale-EDSS-3v1,scale,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-0,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-1,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-2,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-3a,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-3b,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-4a,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-4b,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-4c,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-5a,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-5b,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-5c,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-atomic-part value scale-item-EDSS-3v1-6,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-maximum-scale-item value scale-item-EDSS-3v1-6,):1.0
+SubClassOf(scale-EDSS-3v1,has-for-minimum-scale-item value scale-item-EDSS-3v1-0,):1.0
+SubClassOf(scale-EDSS-3v1,is-the-scale-of exactly 1 EDSS-3v1):1.0
+is(scale-EDSS-4v1,Class):1.0
+SubClassOf(scale-EDSS-4v1,scale,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-atomic-part value scale-item-EDSS-4v1-0,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-atomic-part value scale-item-EDSS-4v1-1,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-atomic-part value scale-item-EDSS-4v1-2,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-atomic-part value scale-item-EDSS-4v1-3a,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-atomic-part value scale-item-EDSS-4v1-3b,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-atomic-part value scale-item-EDSS-4v1-3c,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-atomic-part value scale-item-EDSS-4v1-4,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-atomic-part value scale-item-EDSS-4v1-5,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-atomic-part value scale-item-EDSS-4v1-5b4a7b7208f5c486b4fa8a526466221baecb0931,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-maximum-scale-item value scale-item-EDSS-4v1-5,):1.0
+SubClassOf(scale-EDSS-4v1,has-for-minimum-scale-item value scale-item-EDSS-4v1-0,):1.0
+SubClassOf(scale-EDSS-4v1,is-the-scale-of exactly 1 EDSS-4v1):1.0
+is(scale-EDSS-5v1,Class):1.0
+SubClassOf(scale-EDSS-5v1,scale,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-0,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-1,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-2a,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-2b,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-3a,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-3b,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-4a,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-4b,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-5a,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-5b,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-atomic-part value scale-item-EDSS-5v1-6,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-maximum-scale-item value scale-item-EDSS-5v1-6,):1.0
+SubClassOf(scale-EDSS-5v1,has-for-minimum-scale-item value scale-item-EDSS-5v1-0,):1.0
+SubClassOf(scale-EDSS-5v1,is-the-scale-of exactly 1 EDSS-5v1):1.0
+is(scale-EDSS-6v1,Class):1.0
+SubClassOf(scale-EDSS-6v1,scale,):1.0
+SubClassOf(scale-EDSS-6v1,has-for-atomic-part value scale-item-EDSS-6v1-0,):1.0
+SubClassOf(scale-EDSS-6v1,has-for-atomic-part value scale-item-EDSS-6v1-1,):1.0
+SubClassOf(scale-EDSS-6v1,has-for-atomic-part value scale-item-EDSS-6v1-2,):1.0
+SubClassOf(scale-EDSS-6v1,has-for-atomic-part value scale-item-EDSS-6v1-3,):1.0
+SubClassOf(scale-EDSS-6v1,has-for-atomic-part value scale-item-EDSS-6v1-4,):1.0
+SubClassOf(scale-EDSS-6v1,has-for-atomic-part value scale-item-EDSS-6v1-5,):1.0
+SubClassOf(scale-EDSS-6v1,has-for-atomic-part value scale-item-EDSS-6v1-6,):1.0
+SubClassOf(scale-EDSS-6v1,has-for-maximum-scale-item value scale-item-EDSS-6v1-6,):1.0
+SubClassOf(scale-EDSS-6v1,has-for-minimum-scale-item value scale-item-EDSS-6v1-0,):1.0
+SubClassOf(scale-EDSS-6v1,is-the-scale-of exactly 1 EDSS-6v1):1.0
+is(scale-EDSS-7v1,Class):1.0
+SubClassOf(scale-EDSS-7v1,scale,):1.0
+SubClassOf(scale-EDSS-7v1,has-for-atomic-part value scale-item-EDSS-7v1-0,):1.0
+SubClassOf(scale-EDSS-7v1,has-for-atomic-part value scale-item-EDSS-7v1-1a,):1.0
+SubClassOf(scale-EDSS-7v1,has-for-atomic-part value scale-item-EDSS-7v1-1b,):1.0
+SubClassOf(scale-EDSS-7v1,has-for-atomic-part value scale-item-EDSS-7v1-2,):1.0
+SubClassOf(scale-EDSS-7v1,has-for-atomic-part value scale-item-EDSS-7v1-3,):1.0
+SubClassOf(scale-EDSS-7v1,has-for-atomic-part value scale-item-EDSS-7v1-4,):1.0
+SubClassOf(scale-EDSS-7v1,has-for-atomic-part value scale-item-EDSS-7v1-5,):1.0
+SubClassOf(scale-EDSS-7v1,has-for-maximum-scale-item value scale-item-EDSS-7v1-5,):1.0
+SubClassOf(scale-EDSS-7v1,has-for-minimum-scale-item value scale-item-EDSS-7v1-0,):1.0
+SubClassOf(scale-EDSS-7v1,is-the-scale-of exactly 1 EDSS-7v1):1.0
+is(scale-EDSSv1,Class):1.0
+SubClassOf(scale-EDSSv1,scale,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-0.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-1.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-1.5,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-10.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-2.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-2.5,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-3.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-3.5,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-4.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-4.5,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-5.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-5.5,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-6.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-6.5,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-7.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-7.5,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-8.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-8.5,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-9.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-atomic-part value scale-item-EDSSv1-9.5,):1.0
+SubClassOf(scale-EDSSv1,has-for-maximum-scale-item value scale-item-EDSSv1-10.0,):1.0
+SubClassOf(scale-EDSSv1,has-for-minimum-scale-item value scale-item-EDSSv1-0.0,):1.0
+SubClassOf(scale-EDSSv1,is-the-scale-of exactly 1 EDSSv1):1.0
+is(MR-examination,Class):1.0
+SubClassOf(MR-examination,examination):1.0
+is(behavioural-examination,Class):1.0
+SubClassOf(behavioural-examination,examination):1.0
+is(centre,Class):1.0
+is(cerebral-evoked-potential-examination,Class):1.0
+SubClassOf(cerebral-evoked-potential-examination,examination):1.0
+is(coordinator,Class):1.0
+SubClassOf(coordinator,investigator):1.0
+is(diagnosis-examination,Class):1.0
+SubClassOf(diagnosis-examination,examination):1.0
+is(evaluation-examination,Class):1.0
+SubClassOf(evaluation-examination,examination):1.0
+is(examination,Class):1.0
+SubClassOf(examination,conceptual-action,):1.0
+SubClassOf(examination,is-supervised-by-at some examination-executive,):1.0
+SubClassOf(examination,affects-at exactly 1 subject,):1.0
+SubClassOf(examination,has-for-agent-at exactly 1 centre,):1.0
+SubClassOf(examination,has-for-date exactly 1 date):1.0
+is(examination-executive,Class):1.0
+SubClassOf(examination-executive,investigator):1.0
+is(follow-up-examination,Class):1.0
+SubClassOf(follow-up-examination,examination):1.0
+is(group-name,Class):1.0
+SubClassOf(group-name,name):1.0
+is(healthy-volunteer,Class):1.0
+SubClassOf(healthy-volunteer,human-subject):1.0
+is(human-subject,Class):1.0
+SubClassOf(human-subject,human,):1.0
+SubClassOf(human-subject,subject):1.0
+is(investigator,Class):1.0
+SubClassOf(investigator,human,):1.0
+SubClassOf(investigator,supervisor):1.0
+is(laboratory-examination,Class):1.0
+SubClassOf(laboratory-examination,examination):1.0
+is(main-investigator,Class):1.0
+SubClassOf(main-investigator,investigator):1.0
+is(neuro-clinical-examination,Class):1.0
+SubClassOf(neuro-clinical-examination,examination):1.0
+is(patient,Class):1.0
+SubClassOf(patient,human-subject):1.0
+is(psychological-examination,Class):1.0
+SubClassOf(psychological-examination,examination):1.0
+is(researcher,Class):1.0
+SubClassOf(researcher,human):1.0
+is(study,Class):1.0
+is(study-without-examination,Class):1.0
+SubClassOf(study-without-examination,study):1.0
+is(subject,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(scale-item-BDI-II-10v1-0,Individual):1.0
+is(scale-item-BDI-II-10v1-1,Individual):1.0
+is(scale-item-BDI-II-10v1-2,Individual):1.0
+is(scale-item-BDI-II-10v1-3,Individual):1.0
+is(scale-item-BDI-II-11v1-0,Individual):1.0
+is(scale-item-BDI-II-11v1-1,Individual):1.0
+is(scale-item-BDI-II-11v1-2,Individual):1.0
+is(scale-item-BDI-II-11v1-3,Individual):1.0
+is(scale-item-BDI-II-12v1-0,Individual):1.0
+is(scale-item-BDI-II-12v1-1,Individual):1.0
+is(scale-item-BDI-II-12v1-2,Individual):1.0
+is(scale-item-BDI-II-12v1-3,Individual):1.0
+is(scale-item-BDI-II-13v1-0,Individual):1.0
+is(scale-item-BDI-II-13v1-1,Individual):1.0
+is(scale-item-BDI-II-13v1-2,Individual):1.0
+is(scale-item-BDI-II-13v1-3,Individual):1.0
+is(scale-item-BDI-II-14v1-0,Individual):1.0
+is(scale-item-BDI-II-14v1-1,Individual):1.0
+is(scale-item-BDI-II-14v1-2,Individual):1.0
+is(scale-item-BDI-II-14v1-3,Individual):1.0
+is(scale-item-BDI-II-15v1-0,Individual):1.0
+is(scale-item-BDI-II-15v1-1,Individual):1.0
+is(scale-item-BDI-II-15v1-2,Individual):1.0
+is(scale-item-BDI-II-15v1-3,Individual):1.0
+is(scale-item-BDI-II-16v1-0,Individual):1.0
+is(scale-item-BDI-II-16v1-1a,Individual):1.0
+is(scale-item-BDI-II-16v1-1b,Individual):1.0
+is(scale-item-BDI-II-16v1-2a,Individual):1.0
+is(scale-item-BDI-II-16v1-2b,Individual):1.0
+is(scale-item-BDI-II-16v1-3a,Individual):1.0
+is(scale-item-BDI-II-16v1-3b,Individual):1.0
+is(scale-item-BDI-II-17v1-0,Individual):1.0
+is(scale-item-BDI-II-17v1-1,Individual):1.0
+is(scale-item-BDI-II-17v1-2,Individual):1.0
+is(scale-item-BDI-II-17v1-3,Individual):1.0
+is(scale-item-BDI-II-18v1-0,Individual):1.0
+is(scale-item-BDI-II-18v1-1a,Individual):1.0
+is(scale-item-BDI-II-18v1-1b,Individual):1.0
+is(scale-item-BDI-II-18v1-2a,Individual):1.0
+is(scale-item-BDI-II-18v1-2b,Individual):1.0
+is(scale-item-BDI-II-18v1-3a,Individual):1.0
+is(scale-item-BDI-II-18v1-3b,Individual):1.0
+is(scale-item-BDI-II-19v1-0,Individual):1.0
+is(scale-item-BDI-II-19v1-1,Individual):1.0
+is(scale-item-BDI-II-19v1-2,Individual):1.0
+is(scale-item-BDI-II-19v1-3,Individual):1.0
+is(scale-item-BDI-II-1v1-0,Individual):1.0
+is(scale-item-BDI-II-1v1-1,Individual):1.0
+is(scale-item-BDI-II-1v1-2,Individual):1.0
+is(scale-item-BDI-II-1v1-3,Individual):1.0
+is(scale-item-BDI-II-20v1-0,Individual):1.0
+is(scale-item-BDI-II-20v1-1,Individual):1.0
+is(scale-item-BDI-II-20v1-2,Individual):1.0
+is(scale-item-BDI-II-20v1-3,Individual):1.0
+is(scale-item-BDI-II-21v1-0,Individual):1.0
+is(scale-item-BDI-II-21v1-1,Individual):1.0
+is(scale-item-BDI-II-21v1-2,Individual):1.0
+is(scale-item-BDI-II-21v1-3,Individual):1.0
+is(scale-item-BDI-II-2v1-0,Individual):1.0
+is(scale-item-BDI-II-2v1-1,Individual):1.0
+is(scale-item-BDI-II-2v1-2,Individual):1.0
+is(scale-item-BDI-II-2v1-3,Individual):1.0
+is(scale-item-BDI-II-3v1-0,Individual):1.0
+is(scale-item-BDI-II-3v1-1,Individual):1.0
+is(scale-item-BDI-II-3v1-2,Individual):1.0
+is(scale-item-BDI-II-3v1-3,Individual):1.0
+is(scale-item-BDI-II-4v1-0,Individual):1.0
+is(scale-item-BDI-II-4v1-1,Individual):1.0
+is(scale-item-BDI-II-4v1-2,Individual):1.0
+is(scale-item-BDI-II-4v1-3,Individual):1.0
+is(scale-item-BDI-II-5v1-0,Individual):1.0
+is(scale-item-BDI-II-5v1-1,Individual):1.0
+is(scale-item-BDI-II-5v1-2,Individual):1.0
+is(scale-item-BDI-II-5v1-3,Individual):1.0
+is(scale-item-BDI-II-6v1-0,Individual):1.0
+is(scale-item-BDI-II-6v1-1,Individual):1.0
+is(scale-item-BDI-II-6v1-2,Individual):1.0
+is(scale-item-BDI-II-6v1-3,Individual):1.0
+is(scale-item-BDI-II-7v1-0,Individual):1.0
+is(scale-item-BDI-II-7v1-1,Individual):1.0
+is(scale-item-BDI-II-7v1-2,Individual):1.0
+is(scale-item-BDI-II-7v1-3,Individual):1.0
+is(scale-item-BDI-II-8v1-0,Individual):1.0
+is(scale-item-BDI-II-8v1-1,Individual):1.0
+is(scale-item-BDI-II-8v1-2,Individual):1.0
+is(scale-item-BDI-II-8v1-3,Individual):1.0
+is(scale-item-BDI-II-9v1-0,Individual):1.0
+is(scale-item-BDI-II-9v1-1,Individual):1.0
+is(scale-item-BDI-II-9v1-2,Individual):1.0
+is(scale-item-BDI-II-9v1-3,Individual):1.0
+is(scale-item-CDR-CA-v1-Mild-1,Individual):1.0
+is(scale-item-CDR-CA-v1-Moderate-2,Individual):1.0
+is(scale-item-CDR-CA-v1-None-0,Individual):1.0
+is(scale-item-CDR-CA-v1-Questionable-0.5,Individual):1.0
+is(scale-item-CDR-CA-v1-Severe-3,Individual):1.0
+is(scale-item-CDR-HH-v1-Mild-1,Individual):1.0
+is(scale-item-CDR-HH-v1-Moderate-2,Individual):1.0
+is(scale-item-CDR-HH-v1-None-0,Individual):1.0
+is(scale-item-CDR-HH-v1-Questionable-0.5,Individual):1.0
+is(scale-item-CDR-HH-v1-Severe-3,Individual):1.0
+is(scale-item-CDR-J-v1-Mild-1,Individual):1.0
+is(scale-item-CDR-J-v1-Moderate-2,Individual):1.0
+is(scale-item-CDR-J-v1-None-0,Individual):1.0
+is(scale-item-CDR-J-v1-Questionable-0.5,Individual):1.0
+is(scale-item-CDR-J-v1-Severe-3,Individual):1.0
+is(scale-item-CDR-M-v1-Mild-1,Individual):1.0
+is(scale-item-CDR-M-v1-Moderate-2,Individual):1.0
+is(scale-item-CDR-M-v1-None-0,Individual):1.0
+is(scale-item-CDR-M-v1-Questionable-0.5,Individual):1.0
+is(scale-item-CDR-M-v1-Severe-3,Individual):1.0
+is(scale-item-CDR-O-v1-Mild-1,Individual):1.0
+is(scale-item-CDR-O-v1-Moderate-2,Individual):1.0
+is(scale-item-CDR-O-v1-None-0,Individual):1.0
+is(scale-item-CDR-O-v1-Questionable-0.5,Individual):1.0
+is(scale-item-CDR-O-v1-Severe-3,Individual):1.0
+is(scale-item-CDR-PC-v1-Mild-1,Individual):1.0
+is(scale-item-CDR-PC-v1-Moderate-2,Individual):1.0
+is(scale-item-CDR-PC-v1-None-0,Individual):1.0
+is(scale-item-CDR-PC-v1-Questionable-0.5,Individual):1.0
+is(scale-item-CDR-PC-v1-Severe-3,Individual):1.0
+is(scale-item-CDR-SoBv1-CDR-0,Individual):1.0
+is(scale-item-CDR-SoBv1-CDR-0.5,Individual):1.0
+is(scale-item-CDR-SoBv1-CDR-1,Individual):1.0
+is(scale-item-CDR-SoBv1-CDR-2,Individual):1.0
+is(scale-item-CDR-SoBv1-CDR-3,Individual):1.0
+is(scale-item-CFT-Cv2-I,Individual):1.0
+is(scale-item-CFT-Cv2-II,Individual):1.0
+is(scale-item-CFT-Cv2-III,Individual):1.0
+is(scale-item-CFT-Cv2-IV,Individual):1.0
+is(scale-item-CFT-Cv2-V,Individual):1.0
+is(scale-item-CFT-Cv2-VI,Individual):1.0
+is(scale-item-CFT-Cv2-VII,Individual):1.0
+is(scale-item-CFT-Mv2-I,Individual):1.0
+is(scale-item-CFT-Mv2-II,Individual):1.0
+is(scale-item-CFT-Mv2-III,Individual):1.0
+is(scale-item-CFT-Mv2-IV,Individual):1.0
+is(scale-item-CFT-Mv2-V,Individual):1.0
+is(scale-item-CFT-Mv2-VI,Individual):1.0
+is(scale-item-CFT-Mv2-VII,Individual):1.0
+is(scale-item-EDSS-1v1-0,Individual):1.0
+is(scale-item-EDSS-1v1-1,Individual):1.0
+is(scale-item-EDSS-1v1-2,Individual):1.0
+is(scale-item-EDSS-1v1-3,Individual):1.0
+is(scale-item-EDSS-1v1-4,Individual):1.0
+is(scale-item-EDSS-1v1-5,Individual):1.0
+is(scale-item-EDSS-1v1-6,Individual):1.0
+is(scale-item-EDSS-2v1-0,Individual):1.0
+is(scale-item-EDSS-2v1-1,Individual):1.0
+is(scale-item-EDSS-2v1-2a,Individual):1.0
+is(scale-item-EDSS-2v1-2b,Individual):1.0
+is(scale-item-EDSS-2v1-3a,Individual):1.0
+is(scale-item-EDSS-2v1-3b,Individual):1.0
+is(scale-item-EDSS-2v1-3c,Individual):1.0
+is(scale-item-EDSS-2v1-4a,Individual):1.0
+is(scale-item-EDSS-2v1-4b,Individual):1.0
+is(scale-item-EDSS-2v1-5,Individual):1.0
+is(scale-item-EDSS-3v1-0,Individual):1.0
+is(scale-item-EDSS-3v1-1,Individual):1.0
+is(scale-item-EDSS-3v1-2,Individual):1.0
+is(scale-item-EDSS-3v1-3a,Individual):1.0
+is(scale-item-EDSS-3v1-3b,Individual):1.0
+is(scale-item-EDSS-3v1-4a,Individual):1.0
+is(scale-item-EDSS-3v1-4b,Individual):1.0
+is(scale-item-EDSS-3v1-4c,Individual):1.0
+is(scale-item-EDSS-3v1-5a,Individual):1.0
+is(scale-item-EDSS-3v1-5b,Individual):1.0
+is(scale-item-EDSS-3v1-5c,Individual):1.0
+is(scale-item-EDSS-3v1-6,Individual):1.0
+is(scale-item-EDSS-4v1-0,Individual):1.0
+is(scale-item-EDSS-4v1-1,Individual):1.0
+is(scale-item-EDSS-4v1-2,Individual):1.0
+is(scale-item-EDSS-4v1-3a,Individual):1.0
+is(scale-item-EDSS-4v1-3b,Individual):1.0
+is(scale-item-EDSS-4v1-3c,Individual):1.0
+is(scale-item-EDSS-4v1-4,Individual):1.0
+is(scale-item-EDSS-4v1-5,Individual):1.0
+is(scale-item-EDSS-4v1-5b4a7b7208f5c486b4fa8a526466221baecb0931,Individual):1.0
+is(scale-item-EDSS-5v1-0,Individual):1.0
+is(scale-item-EDSS-5v1-1,Individual):1.0
+is(scale-item-EDSS-5v1-2a,Individual):1.0
+is(scale-item-EDSS-5v1-2b,Individual):1.0
+is(scale-item-EDSS-5v1-3a,Individual):1.0
+is(scale-item-EDSS-5v1-3b,Individual):1.0
+is(scale-item-EDSS-5v1-4a,Individual):1.0
+is(scale-item-EDSS-5v1-4b,Individual):1.0
+is(scale-item-EDSS-5v1-5a,Individual):1.0
+is(scale-item-EDSS-5v1-5b,Individual):1.0
+is(scale-item-EDSS-5v1-6,Individual):1.0
+is(scale-item-EDSS-6v1-0,Individual):1.0
+is(scale-item-EDSS-6v1-1,Individual):1.0
+is(scale-item-EDSS-6v1-2,Individual):1.0
+is(scale-item-EDSS-6v1-3,Individual):1.0
+is(scale-item-EDSS-6v1-4,Individual):1.0
+is(scale-item-EDSS-6v1-5,Individual):1.0
+is(scale-item-EDSS-6v1-6,Individual):1.0
+is(scale-item-EDSS-7v1-0,Individual):1.0
+is(scale-item-EDSS-7v1-1a,Individual):1.0
+is(scale-item-EDSS-7v1-1b,Individual):1.0
+is(scale-item-EDSS-7v1-2,Individual):1.0
+is(scale-item-EDSS-7v1-3,Individual):1.0
+is(scale-item-EDSS-7v1-4,Individual):1.0
+is(scale-item-EDSS-7v1-5,Individual):1.0
+is(scale-item-EDSSv1-0.0,Individual):1.0
+is(scale-item-EDSSv1-1.0,Individual):1.0
+is(scale-item-EDSSv1-1.5,Individual):1.0
+is(scale-item-EDSSv1-10.0,Individual):1.0
+is(scale-item-EDSSv1-2.0,Individual):1.0
+is(scale-item-EDSSv1-2.5,Individual):1.0
+is(scale-item-EDSSv1-3.0,Individual):1.0
+is(scale-item-EDSSv1-3.5,Individual):1.0
+is(scale-item-EDSSv1-4.0,Individual):1.0
+is(scale-item-EDSSv1-4.5,Individual):1.0
+is(scale-item-EDSSv1-5.0,Individual):1.0
+is(scale-item-EDSSv1-5.5,Individual):1.0
+is(scale-item-EDSSv1-6.0,Individual):1.0
+is(scale-item-EDSSv1-6.5,Individual):1.0
+is(scale-item-EDSSv1-7.0,Individual):1.0
+is(scale-item-EDSSv1-7.5,Individual):1.0
+is(scale-item-EDSSv1-8.0,Individual):1.0
+is(scale-item-EDSSv1-8.5,Individual):1.0
+is(scale-item-EDSSv1-9.0,Individual):1.0
+is(scale-item-EDSSv1-9.5,Individual):1.0
+DisjointClasses(scale-item-EDSSv1-9.5,abstract,endurant,perdurant,quality):1.0
+DisjointClasses(scale-item-EDSSv1-9.5,MR-examination,behavioural-examination,cerebral-evoked-potential-examination,laboratory-examination,neuro-clinical-examination,psychological-examination):1.0

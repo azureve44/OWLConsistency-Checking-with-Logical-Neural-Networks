@@ -1,0 +1,198 @@
+predicate(date,is,Datatype).
+predicate(int,is,Datatype).
+predicate(hasBirth,is,ObjectProperty).
+predicate(hasBirth,Domain,Organism).
+predicate(hasBirth,Range,Birth).
+predicate(hasDeath,is,ObjectProperty).
+predicate(hasDeath,Domain,Organism).
+predicate(hasDeath,Range,Death).
+predicate(hasDisease,is,ObjectProperty).
+predicate(hasDisease,Domain,Organism).
+predicate(hasDisease,Range,Disease).
+predicate(hasHistory,is,ObjectProperty).
+predicate(hasLegalGuardian,is,ObjectProperty).
+predicate(hasLegalGuardian,Domain,Organism).
+predicate(hasMagnitude,is,ObjectProperty).
+predicate(hasName,is,ObjectProperty).
+predicate(hasParent,is,ObjectProperty).
+predicate(hasParent,SubPropertyOf,hasRelative).
+predicate(hasPartNeoplasm,is,ObjectProperty).
+predicate(hasPartNeoplasm,Domain,Organism).
+predicate(hasPartNeoplasm,Range,Neoplasm).
+predicate(hasPartNeoplasm,InverseOf,neoplasticPartOf).
+predicate(hasRelative,is,ObjectProperty).
+predicate(hasRelative,Domain,Organism).
+predicate(hasRelative,InverseOf,relativeOf).
+predicate(hasRole,is,ObjectProperty).
+predicate(hasSibling,is,ObjectProperty).
+predicate(hasSibling,SubPropertyOf,hasRelative).
+predicate(neoplasticPartOf,is,ObjectProperty).
+predicate(neoplasticPartOf,InverseOf,hasPartNeoplasm).
+predicate(patientAt,is,ObjectProperty).
+predicate(patientAt,Domain,Organism).
+predicate(patientAt,Range,Hospital).
+predicate(providesSample,is,ObjectProperty).
+predicate(receives,is,ObjectProperty).
+predicate(receives,Domain,Organism).
+predicate(receives,Range,Drug or IndependentContinuant).
+predicate(receivesPreTherapy,is,ObjectProperty).
+predicate(receivesPreTherapy,Domain,Organism).
+predicate(receivesPreTherapy,Range,PreTherapy).
+predicate(relativeOf,is,ObjectProperty).
+predicate(relativeOf,InverseOf,hasRelative).
+predicate(undergoes,is,ObjectProperty).
+predicate(undergoesMedicalProcess,is,ObjectProperty).
+predicate(undergoesMedicalProcess,Domain,Organism).
+predicate(undergoesMedicalProcess,Range,MedicalProcess).
+predicate(undertakes,is,ObjectProperty).
+predicate(uses,is,ObjectProperty).
+predicate(uses,Domain,Organism).
+predicate(uses,Range,FiatObjectPart or Object or ObjectAggregate).
+predicate(hasPart,is,ObjectProperty).
+predicate(hasBirthDate,is,DataProperty).
+predicate(hasBirthDate,Characteristics,Functional).
+predicate(hasBirthDate,Domain,Organism).
+predicate(hasBirthDate,Range,date).
+predicate(hasNumberOfSiblings,is,DataProperty).
+predicate(hasNumberOfSiblings,Domain,Organism).
+predicate(hasNumberOfSiblings,Range,int).
+predicate(AnteriorCranialFossa,is,Class).
+predicate(AnteriorCranialFossa,SubClassOf,SubdivisionOfCavityOfOrganSystemSubdivision).
+predicate(Atlas,is,Class).
+predicate(Atlas,SubClassOf,CervicalVertebra).
+predicate(Axis,is,Class).
+predicate(Axis,SubClassOf,CervicalVertebra).
+predicate(BiologicalIndependentContinuant,is,Class).
+predicate(Birth,is,Class).
+predicate(Brain,is,Class).
+predicate(Brain,SubClassOf,SegmentOfNeuraxis).
+predicate(CN_IX,is,Class).
+predicate(CervicalVertebra,is,Class).
+predicate(ColonyStimulatingFactor,is,Class).
+predicate(ConeBiopsy,is,Class).
+predicate(CoreNeedleBiopsy,is,Class).
+predicate(Coughing,is,Class).
+predicate(DN,is,Class).
+predicate(Death,is,Class).
+predicate(Diarrhea,is,Class).
+predicate(Disease,is,Class).
+predicate(DoseModulation,is,Class).
+predicate(Drug,is,Class).
+predicate(EndoscopicBiopsy,is,Class).
+predicate(ExtraOrganismalIndependenContinuant,is,Class).
+predicate(ExtraOrganismalIndependenContinuant,EquivalentTo,Organism).
+predicate(ExtraOrganismalIndependenContinuant,DisjointWith,Organism).
+predicate(FineNeedleBiopsy,is,Class).
+predicate(Hospital,is,Class).
+predicate(HumanBeing,is,Class).
+predicate(HumanBeing,SubClassOf,Organism,).
+predicate(HumanBeing,SubClassOf,hasPart only Organism).
+predicate(Immunoreaction,is,Class).
+predicate(InducedAbortion,is,Class).
+predicate(Infection,is,Class).
+predicate(Labor,is,Class).
+predicate(Lactation,is,Class).
+predicate(Life,is,Class).
+predicate(Lobectomy,is,Class).
+predicate(MedicalProcess,is,Class).
+predicate(Menopause,is,Class).
+predicate(Menstruation,is,Class).
+predicate(Metabolism,is,Class).
+predicate(MiddleCranialFossa,is,Class).
+predicate(MiddleCranialFossa,SubClassOf,SubdivisionOfCavityOfOrganSystemSubdivision).
+predicate(Misscarriage,is,Class).
+predicate(Name,is,Class).
+predicate(Neoplasm,is,Class).
+predicate(NerveTrunk,is,Class).
+predicate(NumberOfTumors,is,Class).
+predicate(OM,is,Class).
+predicate(OX,is,Class).
+predicate(OpticChiasm,is,Class).
+predicate(OpticChiasm,SubClassOf,NerveTrunk).
+predicate(Organism,is,Class).
+predicate(Organism,EquivalentTo,ExtraOrganismalIndependenContinuant).
+predicate(Organism,SubClassOf,BiologicalIndependentContinuant,).
+predicate(Organism,SubClassOf,undergoes some Life,).
+predicate(Organism,SubClassOf,undergoes some Metabolism,).
+predicate(Organism,SubClassOf,hasPart some OrganismalIndependentContinuant,).
+predicate(Organism,SubClassOf,hasPart some).
+predicate(Organism,SubClassOf,(OrganismalIndependentContinuant and SurgicalSuture),).
+predicate(Organism,SubClassOf,hasPart only SurgicalSuture,).
+predicate(Organism,SubClassOf,hasHistory min 0 Disease,).
+predicate(Organism,SubClassOf,hasMagnitude min 0 NumberOfTumors,).
+predicate(Organism,SubClassOf,hasName min 0 Name,).
+predicate(Organism,SubClassOf,hasPartNeoplasm min 0 Neoplasm,).
+predicate(Organism,SubClassOf,hasRole min 0 Patient,).
+predicate(Organism,SubClassOf,hasRole min 0 RelativeRole,).
+predicate(Organism,SubClassOf,providesSample min 0 SubstanceSample,).
+predicate(Organism,SubClassOf,receives min 0 ColonyStimulatingFactor,).
+predicate(Organism,SubClassOf,undergoes min 0 ConeBiopsy,).
+predicate(Organism,SubClassOf,undergoes min 0 CoreNeedleBiopsy,).
+predicate(Organism,SubClassOf,undergoes min 0 Coughing,).
+predicate(Organism,SubClassOf,undergoes min 0 Diarrhea,).
+predicate(Organism,SubClassOf,undergoes min 0 DoseModulation,).
+predicate(Organism,SubClassOf,undergoes min 0 EndoscopicBiopsy,).
+predicate(Organism,SubClassOf,undergoes min 0 FineNeedleBiopsy,).
+predicate(Organism,SubClassOf,undergoes min 0 Immunoreaction,).
+predicate(Organism,SubClassOf,undergoes min 0 InducedAbortion,).
+predicate(Organism,SubClassOf,undergoes min 0 Infection,).
+predicate(Organism,SubClassOf,undergoes min 0 Labor,).
+predicate(Organism,SubClassOf,undergoes min 0 Lactation,).
+predicate(Organism,SubClassOf,undergoes min 0 Lobectomy,).
+predicate(Organism,SubClassOf,undergoes min 0 MedicalProcess,).
+predicate(Organism,SubClassOf,undergoes min 0 Menopause,).
+predicate(Organism,SubClassOf,undergoes min 0 Menstruation,).
+predicate(Organism,SubClassOf,undergoes min 0 Misscarriage,).
+predicate(Organism,SubClassOf,undergoes min 0 Pharmacotherapy,).
+predicate(Organism,SubClassOf,undergoes min 0 Pregnancy,).
+predicate(Organism,SubClassOf,undergoes min 0 PunchBiopsy,).
+predicate(Organism,SubClassOf,undergoes min 0 Radiotherapy,).
+predicate(Organism,SubClassOf,undergoes min 0 SuctionAssistedCoreBiopsy,).
+predicate(Organism,SubClassOf,undergoes min 0 SurfaceBiopsy,).
+predicate(Organism,SubClassOf,undergoes min 0 SurgicalOperation,).
+predicate(Organism,SubClassOf,undergoes min 0 SurgicalProcedure,).
+predicate(Organism,SubClassOf,undergoes min 0 SurgicalSuture,).
+predicate(Organism,SubClassOf,undergoes min 0 TrucutBiopsy,).
+predicate(Organism,SubClassOf,undergoes min 0 Vomiting,).
+predicate(Organism,SubClassOf,undertakes min 0 Process,).
+predicate(Organism,SubClassOf,hasBirth exactly 1 Birth,).
+predicate(Organism,SubClassOf,hasDeath exactly 1 Death,).
+predicate(Organism,SubClassOf,hasBirthDate some date,).
+predicate(Organism,SubClassOf,hasNumberOfSiblings some int).
+predicate(Organism,DisjointWith,OrganismalIndependentContinuant).
+predicate(Organism,DisjointWith,ExtraOrganismalIndependenContinuant).
+predicate(OrganismalIndependentContinuant,is,Class).
+predicate(OrganismalIndependentContinuant,DisjointWith,SurgicalSuture).
+predicate(OrganismalIndependentContinuant,DisjointWith,Organism).
+predicate(Patient,is,Class).
+predicate(Pharmacotherapy,is,Class).
+predicate(PreTherapy,is,Class).
+predicate(Pregnancy,is,Class).
+predicate(PunchBiopsy,is,Class).
+predicate(Radiotherapy,is,Class).
+predicate(RelativeRole,is,Class).
+predicate(SegmentOfNeuraxis,is,Class).
+predicate(SetOfBasalGanglia,is,Class).
+predicate(SetOfBasalGanglia,SubClassOf,SetOfNucleiOfNeuraxis).
+predicate(SetOfNucleiOfNeuraxis,is,Class).
+predicate(SixthThroracicVertebra,is,Class).
+predicate(SixthThroracicVertebra,SubClassOf,ThoracicVertebra).
+predicate(SubdivisionOfCavityOfOrganSystemSubdivision,is,Class).
+predicate(SubstanceSample,is,Class).
+predicate(SuctionAssistedCoreBiopsy,is,Class).
+predicate(SurfaceBiopsy,is,Class).
+predicate(SurgicalOperation,is,Class).
+predicate(SurgicalProcedure,is,Class).
+predicate(SurgicalSuture,is,Class).
+predicate(SurgicalSuture,DisjointWith,OrganismalIndependentContinuant).
+predicate(ThoracicVertebra,is,Class).
+predicate(TrucutBiopsy,is,Class).
+predicate(Vomiting,is,Class).
+predicate(FiatObjectPart,is,Class).
+predicate(IndependentContinuant,is,Class).
+predicate(Object,is,Class).
+predicate(ObjectAggregate,is,Class).
+predicate(Process,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(undergoes min 0 Coughing,is,Class).
+predicate(undergoes min 0 Coughing,SubClassOf,HumanBeing).

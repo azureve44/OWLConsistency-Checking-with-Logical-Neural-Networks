@@ -1,0 +1,410 @@
+www.w3.org/2000/01/-schema# is Datatype.
+date is Datatype.
+dateTime is Datatype.
+dateTimeStamp is Datatype.
+decimal is Datatype.
+duration is Datatype.
+gDay is Datatype.
+gMonth is Datatype.
+gYear is Datatype.
+gYearMonth is Datatype.
+nonNegativeInteger is Datatype.
+string is Datatype.
+generalDay is Datatype.
+generalMonth is Datatype.
+www.co-ode.org/ontologies/ont.# is ObjectProperty.
+per_county is www.co-ode.org/ontologies/ont.#.
+health_food_scarce_in_poor_neighborhood is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is ObjectProperty.
+no_of_people is www.co-ode.org/ontologies/ont.#.
+Environmental_racism is www.co-ode.org/ontologies/ont.#.
+after is ObjectProperty.
+after Domain TemporalEntity.
+after Range TemporalEntity.
+after InverseOf before.
+before is ObjectProperty.
+before Characteristics Transitive.
+before Domain TemporalEntity.
+before Range TemporalEntity.
+before InverseOf after.
+dayOfWeek is ObjectProperty.
+dayOfWeek Domain GeneralDateTimeDescription.
+dayOfWeek Range DayOfWeek.
+hasBeginning is ObjectProperty.
+hasBeginning Domain TemporalEntity.
+hasBeginning Range Instant.
+hasDateTimeDescription is ObjectProperty.
+hasDateTimeDescription Domain DateTimeInterval.
+hasDateTimeDescription Range GeneralDateTimeDescription.
+hasDuration is ObjectProperty.
+hasDuration SubPropertyOf hasTemporalDuration.
+hasDurationDescription is ObjectProperty.
+hasDurationDescription SubPropertyOf hasTemporalDuration.
+hasEnd is ObjectProperty.
+hasEnd Domain TemporalEntity.
+hasEnd Range Instant.
+hasTRS is ObjectProperty.
+hasTemporalDuration is ObjectProperty.
+hasTemporalDuration Domain TemporalEntity.
+hasTemporalDuration Range TemporalDuration.
+inDateTime is ObjectProperty.
+inDateTime SubPropertyOf inTemporalPosition.
+inDateTime Domain Instant.
+inDateTime Range GeneralDateTimeDescription.
+inTemporalPosition is ObjectProperty.
+inTemporalPosition Domain Instant.
+inTemporalPosition Range TemporalPosition.
+inTimePosition is ObjectProperty.
+inTimePosition SubPropertyOf inTemporalPosition.
+inTimePosition Domain Instant.
+inTimePosition Range TimePosition.
+inside is ObjectProperty.
+inside Domain Interval.
+inside Range Instant.
+intervalAfter is ObjectProperty.
+intervalAfter SubPropertyOf after,.
+intervalAfter SubPropertyOf intervalDisjoint.
+intervalAfter Domain ProperInterval.
+intervalAfter Range ProperInterval.
+intervalAfter InverseOf intervalBefore.
+intervalBefore is ObjectProperty.
+intervalBefore SubPropertyOf before,.
+intervalBefore SubPropertyOf intervalDisjoint.
+intervalBefore Domain ProperInterval.
+intervalBefore Range ProperInterval.
+intervalBefore InverseOf intervalAfter.
+intervalContains is ObjectProperty.
+intervalContains Domain ProperInterval.
+intervalContains Range ProperInterval.
+intervalContains InverseOf intervalDuring.
+intervalDisjoint is ObjectProperty.
+intervalDisjoint Domain ProperInterval.
+intervalDisjoint Range ProperInterval.
+intervalDuring is ObjectProperty.
+intervalDuring SubPropertyOf intervalIn.
+intervalDuring Domain ProperInterval.
+intervalDuring Range ProperInterval.
+intervalDuring InverseOf intervalContains.
+intervalEquals is ObjectProperty.
+intervalEquals Domain ProperInterval.
+intervalEquals Range ProperInterval.
+intervalFinishedBy is ObjectProperty.
+intervalFinishedBy Domain ProperInterval.
+intervalFinishedBy Range ProperInterval.
+intervalFinishedBy InverseOf intervalFinishes.
+intervalFinishes is ObjectProperty.
+intervalFinishes SubPropertyOf intervalIn.
+intervalFinishes Domain ProperInterval.
+intervalFinishes Range ProperInterval.
+intervalFinishes InverseOf intervalFinishedBy.
+intervalIn is ObjectProperty.
+intervalIn Domain ProperInterval.
+intervalIn Range ProperInterval.
+intervalMeets is ObjectProperty.
+intervalMeets Domain ProperInterval.
+intervalMeets Range ProperInterval.
+intervalMeets InverseOf intervalMetBy.
+intervalMetBy is ObjectProperty.
+intervalMetBy Domain ProperInterval.
+intervalMetBy Range ProperInterval.
+intervalMetBy InverseOf intervalMeets.
+intervalOverlappedBy is ObjectProperty.
+intervalOverlappedBy Domain ProperInterval.
+intervalOverlappedBy Range ProperInterval.
+intervalOverlappedBy InverseOf intervalOverlaps.
+intervalOverlaps is ObjectProperty.
+intervalOverlaps Domain ProperInterval.
+intervalOverlaps Range ProperInterval.
+intervalOverlaps InverseOf intervalOverlappedBy.
+intervalStartedBy is ObjectProperty.
+intervalStartedBy Domain ProperInterval.
+intervalStartedBy Range ProperInterval.
+intervalStartedBy InverseOf intervalStarts.
+intervalStarts is ObjectProperty.
+intervalStarts SubPropertyOf intervalIn.
+intervalStarts Domain ProperInterval.
+intervalStarts Range ProperInterval.
+intervalStarts InverseOf intervalStartedBy.
+monthOfYear is ObjectProperty.
+monthOfYear Domain GeneralDateTimeDescription.
+monthOfYear Range MonthOfYear.
+timeZone is ObjectProperty.
+timeZone Domain GeneralDateTimeDescription.
+timeZone Range TimeZone.
+unitType is ObjectProperty.
+day is DataProperty.
+day Domain GeneralDateTimeDescription.
+dayOfYear is DataProperty.
+dayOfYear Domain GeneralDateTimeDescription.
+dayOfYear Range nonNegativeInteger.
+days is DataProperty.
+days Domain GeneralDurationDescription.
+days Range decimal.
+hasXSDDuration is DataProperty.
+hasXSDDuration Domain TemporalEntity.
+hasXSDDuration Range duration.
+hour is DataProperty.
+hour Domain GeneralDateTimeDescription.
+hour Range nonNegativeInteger.
+hours is DataProperty.
+hours Domain GeneralDurationDescription.
+hours Range decimal.
+inXSDDate is DataProperty.
+inXSDDate Domain Instant.
+inXSDDate Range date.
+inXSDDateTime is DataProperty.
+inXSDDateTime Domain Instant.
+inXSDDateTime Range dateTime.
+inXSDDateTimeStamp is DataProperty.
+inXSDDateTimeStamp Domain Instant.
+inXSDDateTimeStamp Range dateTimeStamp.
+inXSDgYear is DataProperty.
+inXSDgYear Domain Instant.
+inXSDgYear Range gYear.
+inXSDgYearMonth is DataProperty.
+inXSDgYearMonth Domain Instant.
+inXSDgYearMonth Range gYearMonth.
+minute is DataProperty.
+minute Domain GeneralDateTimeDescription.
+minute Range nonNegativeInteger.
+minutes is DataProperty.
+minutes Domain GeneralDurationDescription.
+minutes Range decimal.
+month is DataProperty.
+month Domain GeneralDateTimeDescription.
+months is DataProperty.
+months Domain GeneralDurationDescription.
+months Range decimal.
+nominalPosition is DataProperty.
+nominalPosition Domain TimePosition.
+nominalPosition Range string.
+numericDuration is DataProperty.
+numericDuration Domain Duration.
+numericDuration Range decimal.
+numericPosition is DataProperty.
+numericPosition Domain TimePosition.
+numericPosition Range decimal.
+second is DataProperty.
+second Domain GeneralDateTimeDescription.
+second Range decimal.
+seconds is DataProperty.
+seconds Domain GeneralDurationDescription.
+seconds Range decimal.
+week is DataProperty.
+week Domain GeneralDateTimeDescription.
+week Range nonNegativeInteger,.
+week Range generalDay.
+weeks is DataProperty.
+weeks Domain GeneralDurationDescription.
+weeks Range decimal,.
+weeks Range generalMonth.
+DateTime is DataProperty.
+DateTime Domain DateTimeInterval.
+DateTime Range dateTime.
+year is DataProperty.
+year Domain GeneralDateTimeDescription.
+years is DataProperty.
+years Domain GeneralDurationDescription.
+years Range decimal.
+<SOHO is Class.
+10000000 is Class.
+N-CDoH is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+N-CDoH is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+www.co-ode.org/ontologies/ont.# is Class.
+Thing is www.w3.org/2002/07/#.
+www.co-ode.org/ontologies/ont.# is Class.
+acceptability_of_food is www.co-ode.org/ontologies/ont.#.
+presence_of_food_contaminants is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+www.co-ode.org/ontologies/ont.# is Class.
+cost_relate_barrier is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+eating_related_psychopathology is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+N-CDoH is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+cost_relate_barrier is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+www.co-ode.org/ontologies/ont.# is Class.
+eating_related_psychopathology is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+eating_related_psychopathology is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+www.co-ode.org/ontologies/ont.# is Class.
+cost_relate_barrier is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+eating_related_psychopathology is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+www.co-ode.org/ontologies/ont.# is Class.
+cost_relate_barrier is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+eating_related_psychopathology is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+cost_relate_barrier is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+www.co-ode.org/ontologies/ont.# is Class.
+www.co-ode.org/ontologies/ont.# is Class.
+www.co-ode.org/ontologies/ont.# is Class.
+area_affected is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+imbalanced_consumption_of_nutrition is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+area_affected is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+area_affected is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+area_affected is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+area_affected is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+cost_relate_barrier is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+acceptability_of_food is www.co-ode.org/ontologies/ont.#.
+absence_of_food_contaminants is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+cost_relate_barrier is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+awareness_about_the_in_network_providers is www.co-ode.org/ontologies/ont.#.
+providers_in_vision_plan is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+awareness_about_the_in_network_providers is www.co-ode.org/ontologies/ont.#.
+providers_in_dental_plan is www.co-ode.org/ontologies/ont.#.
+www.co-ode.org/ontologies/ont.# is Class.
+imbalanced_consumption_of_nutrition is www.co-ode.org/ontologies/ont.#.
+Healthcare_H is Class.
+10000002 is <SOHO.
+www.w3.org/2002/07/# is Class.
+DateTimeDescription is Class.
+DateTimeDescription SubClassOf GeneralDateTimeDescription,.
+DateTimeDescription SubClassOf hasTRS value Gregorian,.
+DateTimeDescription SubClassOf day only gDay,.
+DateTimeDescription SubClassOf month only gMonth,.
+DateTimeDescription SubClassOf year only gYear.
+DateTimeInterval is Class.
+DateTimeInterval SubClassOf ProperInterval.
+DayOfWeek is Class.
+Thing is www.w3.org/2002/07/#.
+Duration is Class.
+Duration SubClassOf TemporalDuration,.
+Thing, is unitType exactly 1 www.w3.org/2002/07/#.
+Literal is numericDuration exactly 1 www.w3.org/2000/01/-schema#.
+DurationDescription is Class.
+DurationDescription SubClassOf GeneralDurationDescription,.
+DurationDescription SubClassOf hasTRS value Gregorian,.
+DurationDescription SubClassOf days only decimal,.
+DurationDescription SubClassOf hours only decimal,.
+DurationDescription SubClassOf minutes only decimal,.
+DurationDescription SubClassOf months only decimal,.
+DurationDescription SubClassOf seconds only decimal,.
+DurationDescription SubClassOf weeks only decimal,.
+DurationDescription SubClassOf years only decimal.
+GeneralDateTimeDescription is Class.
+GeneralDateTimeDescription SubClassOf TemporalPosition,.
+Thing, is unitType exactly 1 www.w3.org/2002/07/#.
+Thing, is dayOfWeek max 1 www.w3.org/2002/07/#.
+Thing, is monthOfYear max 1 www.w3.org/2002/07/#.
+Thing, is timeZone max 1 www.w3.org/2002/07/#.
+Literal, is day max 1 www.w3.org/2000/01/-schema#.
+Literal, is dayOfYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is hour max 1 www.w3.org/2000/01/-schema#.
+Literal, is minute max 1 www.w3.org/2000/01/-schema#.
+Literal, is month max 1 www.w3.org/2000/01/-schema#.
+Literal, is second max 1 www.w3.org/2000/01/-schema#.
+Literal, is week max 1 www.w3.org/2000/01/-schema#.
+Literal is year max 1 www.w3.org/2000/01/-schema#.
+GeneralDurationDescription is Class.
+GeneralDurationDescription SubClassOf TemporalDuration,.
+Thing, is hasTRS exactly 1 www.w3.org/2002/07/#.
+Literal, is days max 1 www.w3.org/2000/01/-schema#.
+Literal, is hours max 1 www.w3.org/2000/01/-schema#.
+Literal, is minutes max 1 www.w3.org/2000/01/-schema#.
+Literal, is months max 1 www.w3.org/2000/01/-schema#.
+Literal, is seconds max 1 www.w3.org/2000/01/-schema#.
+Literal, is weeks max 1 www.w3.org/2000/01/-schema#.
+Literal is years max 1 www.w3.org/2000/01/-schema#.
+Instant is Class.
+Instant SubClassOf TemporalEntity.
+Instant DisjointWith ProperInterval.
+Interval is Class.
+Interval SubClassOf TemporalEntity.
+January is Class.
+January SubClassOf DateTimeDescription,.
+January SubClassOf unitType value unitMonth,.
+January SubClassOf month value "--01".
+MonthOfYear is Class.
+MonthOfYear SubClassOf DateTimeDescription,.
+MonthOfYear SubClassOf unitType value unitMonth,.
+Literal, is day exactly 0 www.w3.org/2000/01/-schema#.
+Literal, is hour exactly 0 www.w3.org/2000/01/-schema#.
+Literal, is minute exactly 0 www.w3.org/2000/01/-schema#.
+Literal, is month exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is second exactly 0 www.w3.org/2000/01/-schema#.
+Literal, is week exactly 0 www.w3.org/2000/01/-schema#.
+Literal is year exactly 0 www.w3.org/2000/01/-schema#.
+ProperInterval is Class.
+ProperInterval SubClassOf Interval.
+ProperInterval DisjointWith Instant.
+TRS is Class.
+N-CDoH is www.co-ode.org/ontologies/ont.#.
+TemporalDuration is Class.
+N-CDoH is www.co-ode.org/ontologies/ont.#.
+TemporalEntity is Class.
+TemporalEntity EquivalentTo Instant or Interval.
+Thing is www.w3.org/2002/07/#.
+Thing DisjointWith Instant or Interval.
+TemporalPosition is Class.
+N-CDoH, is www.co-ode.org/ontologies/ont.#.
+Thing is hasTRS exactly 1 www.w3.org/2002/07/#.
+TemporalUnit is Class.
+TemporalUnit SubClassOf TemporalDuration.
+TimePosition is Class.
+TimePosition SubClassOf TemporalPosition,.
+Literal) or (numericPosition exactly 1 www.w3.org/2000/01/-schema# is (nominalPosition exactly 1 www.w3.org/2000/01/-schema#.
+TimeZone is Class.
+N-CDoH is www.co-ode.org/ontologies/ont.#.
+Year is Class.
+Year SubClassOf DurationDescription,.
+Literal, is days exactly 0 www.w3.org/2000/01/-schema#.
+Literal, is hours exactly 0 www.w3.org/2000/01/-schema#.
+Literal, is minutes exactly 0 www.w3.org/2000/01/-schema#.
+Literal, is months exactly 0 www.w3.org/2000/01/-schema#.
+Literal, is seconds exactly 0 www.w3.org/2000/01/-schema#.
+Literal, is weeks exactly 0 www.w3.org/2000/01/-schema#.
+Literal is years exactly 1 www.w3.org/2000/01/-schema#.
+generalDay is Class.
+generalMonth is Class.
+generalYear is Class.
+Gregorian is Individual.
+Friday is Individual.
+Friday Types DayOfWeek.
+Monday is Individual.
+Monday Types DayOfWeek.
+Saturday is Individual.
+Saturday Types DayOfWeek.
+Sunday is Individual.
+Sunday Types DayOfWeek.
+Thursday is Individual.
+Thursday Types DayOfWeek.
+Tuesday is Individual.
+Tuesday Types DayOfWeek.
+Wednesday is Individual.
+Wednesday Types DayOfWeek.
+unitDay is Individual.
+unitDay Types TemporalUnit.
+unitHour is Individual.
+unitHour Types TemporalUnit.
+unitMinute is Individual.
+unitMinute Types TemporalUnit.
+unitMonth is Individual.
+unitMonth Types TemporalUnit.
+unitSecond is Individual.
+unitSecond Types TemporalUnit.
+unitWeek is Individual.
+unitWeek Types TemporalUnit.
+unitYear is Individual.
+unitYear Types TemporalUnit.
+affordability_to_preventive_care,www.co-ode.org/ontologies/ont.# is www.co-ode.org/ontologies/ont.#.
+anorexia_nervosa,www.co-ode.org/ontologies/ont.# is www.co-ode.org/ontologies/ont.#.
+micronutrient_deficiencies,www.co-ode.org/ontologies/ont.# is www.co-ode.org/ontologies/ont.#.

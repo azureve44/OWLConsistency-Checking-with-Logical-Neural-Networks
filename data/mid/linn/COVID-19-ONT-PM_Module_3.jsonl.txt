@@ -1,0 +1,324 @@
+predicate(isLocatedAt,is,ObjectProperty).
+predicate(produce,is,ObjectProperty).
+predicate(produces,is,ObjectProperty).
+predicate(ActivatedCD4+T-Cell,is,Class).
+predicate(ActivatedCD4+T-Cell,SubClassOf,ActivatedT-Cell).
+predicate(ActivatedCD8+T-Cell,is,Class).
+predicate(ActivatedCD8+T-Cell,SubClassOf,ActivatedT-Cell).
+predicate(CD8+T-Cell,is,Class).
+predicate(CD8+T-Cell,SubClassOf,HelperT-Cell,).
+predicate(CD8+T-Cell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell,).
+predicate(CD8+T-Cell,SubClassOf,produces some IL-17A,).
+predicate(CD8+T-Cell,SubClassOf,produces some IL-17F,).
+predicate(CD8+T-Cell,SubClassOf,produces some IL-31).
+predicate(T-HelperCellOrTh-CellOrCD4+Cell,is,Class).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,is,Class).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,ReceptorForSARS-CoV-2,).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,isLocatedAt some EpithelialCellOfBloodVessel,).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,isLocatedAt some EpithelialCellOfGastrointestinalTract,).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,isLocatedAt some EpithelialCellOfHeart,).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,isLocatedAt some EpithelialCellOfKidney,).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,isLocatedAt some EpithelialCellOfLiver,).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,isLocatedAt some EpithelialCellOfLungs,).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,isLocatedAt some EpithelialCellOfMouth,).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,isLocatedAt some EpithelialCellOfNose,).
+predicate(ACE2-FullName-AngiotensinCovertingEnzyme2,SubClassOf,isLocatedAt some Type2Pneumocyte).
+predicate(ActivatedCD41-T-Cell,is,Class).
+predicate(ActivatedCD41-T-Cell,SubClassOf,ActivatedT-Cell).
+predicate(ActivatedDC,is,Class).
+predicate(ActivatedDC,SubClassOf,DendriticCellAbbrDC,).
+predicate(ActivatedDC,SubClassOf,produces some IL-23,).
+predicate(ActivatedDC,SubClassOf,produces some IL-27).
+predicate(ActivatedEosinophil,is,Class).
+predicate(ActivatedEosinophil,SubClassOf,Eosinophil,).
+predicate(ActivatedEosinophil,SubClassOf,produces some IL-5).
+predicate(ActivatedMastCell,is,Class).
+predicate(ActivatedMastCell,SubClassOf,MastCell,).
+predicate(ActivatedMastCell,SubClassOf,produces some IL-5).
+predicate(ActivatedT-Cell,is,Class).
+predicate(ActivatedT-Cell,SubClassOf,HelperT-Cell,).
+predicate(ActivatedT-Cell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell,).
+predicate(ActivatedT-Cell,SubClassOf,produces some IL-2).
+predicate(ActivatedTH17-Cell,is,Class).
+predicate(ActivatedTH17-Cell,SubClassOf,TH17-Cell).
+predicate(AirwayEpithelialCellOfRespiratoryTract,is,Class).
+predicate(AirwayEpithelialCellOfRespiratoryTract,SubClassOf,EpithelialCellOfLungs,).
+predicate(AirwayEpithelialCellOfRespiratoryTract,SubClassOf,produces some IL-19).
+predicate(Astrocyte,is,Class).
+predicate(Astrocyte,SubClassOf,Cell).
+predicate(B-LineageLymphomaCellLine,is,Class).
+predicate(B-LineageLymphomaCellLine,SubClassOf,Cell).
+predicate(BasicConcept,is,Class).
+predicate(Basophil,is,Class).
+predicate(Basophil,SubClassOf,ImmuneCellRelatingToInnateResponse,).
+predicate(Basophil,SubClassOf,produce some IL-13,).
+predicate(Basophil,SubClassOf,produces some IL-14,).
+predicate(Basophil,SubClassOf,produces some IL-4).
+predicate(BasophilFromAtopicIndividual,is,Class).
+predicate(BasophilFromAtopicIndividual,SubClassOf,Basophil,).
+predicate(Il-17E,is,produces some IL-25/).
+predicate(BreastCarcinomaCell,is,Class).
+predicate(BreastCarcinomaCell,SubClassOf,Cell).
+predicate(CD81-T-Cell,is,Class).
+predicate(CD81-T-Cell,SubClassOf,HelperT-Cell,).
+predicate(CD81-T-Cell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell,).
+predicate(CD81-T-Cell,SubClassOf,produces some IL-31).
+predicate(Cell,is,Class).
+predicate(Cell,SubClassOf,BasicConcept).
+predicate(Chondrocyte,is,Class).
+predicate(Chondrocyte,SubClassOf,Cell).
+predicate(ConceptRelatingToGeneralizedBiomedicalDynaminsAbbrGBMD,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(DendriticCellAbbrDC,is,Class).
+predicate(DendriticCellAbbrDC,SubClassOf,ImmuneCellRelatingToInnateResponse,).
+predicate(DendriticCellAbbrDC,SubClassOf,produces some IL-10,).
+predicate(DendriticCellAbbrDC,SubClassOf,produces some IL-12,).
+predicate(DendriticCellAbbrDC,SubClassOf,produces some IL-16,).
+predicate(DendriticCellAbbrDC,SubClassOf,produces some IL-18,).
+predicate(DendriticCellAbbrDC,SubClassOf,produces some IL-2,).
+predicate(DendriticCellAbbrDC,SubClassOf,produces some IL-7).
+predicate(DynamicsOfSARS-CoV-2OutsideHumanBpdy,is,Class).
+predicate(DynamicsOfSARS-CoV-2OutsideHumanBpdy,SubClassOf,DynamicsOrMechanismOfSARS-CoV-2).
+predicate(DynamicsOfSARS-Cov-2InsideHumanBody,is,Class).
+predicate(DynamicsOfSARS-Cov-2InsideHumanBody,SubClassOf,DynamicsOrMechanismOfSARS-CoV-2).
+predicate(DynamicsOrMechanism,is,Class).
+predicate(DynamicsOrMechanism,SubClassOf,ConceptRelatingToGeneralizedBiomedicalDynaminsAbbrGBMD).
+predicate(DynamicsOrMechanismOfSARS-CoV-2,is,Class).
+predicate(DynamicsOrMechanismOfSARS-CoV-2,SubClassOf,DynamicsOrMechanism).
+predicate(EndothelialCell,is,Class).
+predicate(EndothelialCell,SubClassOf,Cell).
+predicate(Eosinophil,is,Class).
+predicate(Eosinophil,SubClassOf,ImmuneCellRelatingToInnateResponse,).
+predicate(Eosinophil,SubClassOf,produce some IL-13,).
+predicate(Eosinophil,SubClassOf,produces some IL-16,).
+predicate(Eosinophil,SubClassOf,produces some IL-3,).
+predicate(Eosinophil,SubClassOf,produces some IL-4,).
+predicate(Eosinophil,SubClassOf,produces some IL-9).
+predicate(EosinophilFromAtopicIndividual,is,Class).
+predicate(EosinophilFromAtopicIndividual,SubClassOf,Eosinophil,).
+predicate(Il-17E,is,produces some IL-25/).
+predicate(EpithelialCell,is,Class).
+predicate(EpithelialCell,SubClassOf,Cell).
+predicate(EpithelialCellOfBloodVessel,is,Class).
+predicate(EpithelialCellOfGastrointestinalTract,is,Class).
+predicate(EpithelialCellOfHeart,is,Class).
+predicate(EpithelialCellOfKidney,is,Class).
+predicate(EpithelialCellOfLiver,is,Class).
+predicate(EpithelialCellOfLungs,is,Class).
+predicate(EpithelialCellOfMouth,is,Class).
+predicate(EpithelialCellOfNose,is,Class).
+predicate(FeatureOfConservatism,is,Class).
+predicate(FeatureOfConservatism,SubClassOf,DynamicsOrMechanismOfSARS-CoV-2).
+predicate(Fibroblast,is,Class).
+predicate(Fibroblast,SubClassOf,Cell).
+predicate(HelperT-Cell,is,Class).
+predicate(IL-10,is,Class).
+predicate(IL-12,is,Class).
+predicate(IL-13,is,Class).
+predicate(IL-14,is,Class).
+predicate(IL-16,is,Class).
+predicate(IL-17A,is,Class).
+predicate(IL-17F,is,Class).
+predicate(IL-18,is,Class).
+predicate(IL-19,is,Class).
+predicate(IL-2,is,Class).
+predicate(IL-23,is,Class).
+predicate(IL-26,is,Class).
+predicate(IL-27,is,Class).
+predicate(IL-2R,is,Class).
+predicate(IL-2R-Betta,is,Class).
+predicate(IL-2R-Betta,SubClassOf,IL-2R).
+predicate(IL-2R-Gamma,is,Class).
+predicate(IL-2R-Gamma,SubClassOf,IL-2R).
+predicate(IL-3,is,Class).
+predicate(IL-31,is,Class).
+predicate(IL-32,is,Class).
+predicate(IL-4,is,Class).
+predicate(IL-5,is,Class).
+predicate(IL-6,is,Class).
+predicate(IL-7,is,Class).
+predicate(IL-8-or-CXCL8,is,Class).
+predicate(IL-9,is,Class).
+predicate(ILC2-ques,is,Class).
+predicate(ILC2-ques,SubClassOf,Cell).
+predicate(ImmuneCell,is,Class).
+predicate(ImmuneCell,SubClassOf,Cell).
+predicate(ImmuneCellRelatingToInnateResponse,is,Class).
+predicate(Keratinocyte,is,Class).
+predicate(Keratinocyte,SubClassOf,Cell).
+predicate(KupfferCell,is,Class).
+predicate(KupfferCell,SubClassOf,Cell).
+predicate(LymphoidCell,is,Class).
+predicate(LymphoidCell,SubClassOf,ImmuneCellRelatingToInnateResponse).
+predicate(Macrophage,is,Class).
+predicate(Macrophage,SubClassOf,ImmuneCellRelatingToInnateResponse,).
+predicate(Macrophage,SubClassOf,produce some IL-13,).
+predicate(Macrophage,SubClassOf,produces some IL-10,).
+predicate(Macrophage,SubClassOf,produces some IL-12,).
+predicate(Macrophage,SubClassOf,produces some IL-23,).
+predicate(Macrophage,SubClassOf,produces some IL-27,).
+predicate(Macrophage,SubClassOf,produces some IL-3,).
+predicate(Macrophage,SubClassOf,produces some IL-32,).
+predicate(Macrophage,SubClassOf,produces some IL-6,).
+predicate(Macrophage,SubClassOf,produces some IL-7,).
+predicate(Macrophage,SubClassOf,produces some IL-8-or-CXCL8).
+predicate(ManyOtherCells,is,Class).
+predicate(ManyOtherCells,SubClassOf,Cell).
+predicate(MastCell,is,Class).
+predicate(MastCell,SubClassOf,ImmuneCellRelatingToInnateResponse,).
+predicate(MastCell,SubClassOf,produce some IL-13,).
+predicate(MastCell,SubClassOf,produces some IL-16,).
+predicate(MastCell,SubClassOf,produces some IL-3,).
+predicate(MastCell,SubClassOf,produces some IL-4,).
+predicate(MastCell,SubClassOf,produces some IL-9,).
+predicate(Il-17E,is,produces some IL-25/).
+predicate(MechanismForEnteringCell,is,Class).
+predicate(MechanismForEnteringCell,SubClassOf,DynamicsOfSARS-Cov-2InsideHumanBody).
+predicate(MechanismForPathogenesis,is,Class).
+predicate(MechanismForPathogenesis,SubClassOf,DynamicsOfSARS-Cov-2InsideHumanBody).
+predicate(MechanismForReplication,is,Class).
+predicate(MechanismForReplication,SubClassOf,DynamicsOfSARS-Cov-2InsideHumanBody).
+predicate(MechanismForSARS-CoV-2ToUseHostResource,is,Class).
+predicate(MechanismForSARS-CoV-2ToUseHostResource,SubClassOf,DynamicsOfSARS-Cov-2InsideHumanBody).
+predicate(Melanocyte,is,Class).
+predicate(Melanocyte,SubClassOf,Cell).
+predicate(Microglia,is,Class).
+predicate(Microglia,SubClassOf,Cell).
+predicate(MonocyteDerivedDC,is,Class).
+predicate(MonocyteDerivedDC,SubClassOf,DendriticCellAbbrDC).
+predicate(NKT-Cell,is,Class).
+predicate(NKT-Cell,SubClassOf,Cell).
+predicate(NaturalKillerCellAbrrNK-Cell,is,Class).
+predicate(NaturalKillerCellAbrrNK-Cell,SubClassOf,ImmuneCellRelatingToInnateResponse,).
+predicate(NaturalKillerCellAbrrNK-Cell,SubClassOf,produces some IL-17A,).
+predicate(NaturalKillerCellAbrrNK-Cell,SubClassOf,produces some IL-17F,).
+predicate(NaturalKillerCellAbrrNK-Cell,SubClassOf,produces some IL-2,).
+predicate(NaturalKillerCellAbrrNK-Cell,SubClassOf,produces some IL-3,).
+predicate(NaturalKillerCellAbrrNK-Cell,SubClassOf,produces some IL-32,).
+predicate(NaturalKillerCellAbrrNK-Cell,SubClassOf,produces some IL-5).
+predicate(NecroticCell,is,Class).
+predicate(NecroticCell,SubClassOf,Cell).
+predicate(NeuronCell,is,Class).
+predicate(NeuronCell,SubClassOf,Cell).
+predicate(Neutrophil,is,Class).
+predicate(Neutrophil,SubClassOf,ImmuneCellRelatingToInnateResponse,).
+predicate(Neutrophil,SubClassOf,produces some IL-12,).
+predicate(Neutrophil,SubClassOf,produces some IL-17A,).
+predicate(Neutrophil,SubClassOf,produces some IL-17F,).
+predicate(Neutrophil,SubClassOf,produces some IL-8-or-CXCL8).
+predicate(NewConfusion,is,Class).
+predicate(NewConfusion,SubClassOf,SymptomOfCOVID-19ForEmergencyMedCare).
+predicate(NonStructuralProteinOfSARS-Cov-2,is,Class).
+predicate(Nsp1,is,Class).
+predicate(Nsp1,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp10,is,Class).
+predicate(Nsp10,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp11,is,Class).
+predicate(Nsp11,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp12,is,Class).
+predicate(Nsp12,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp13,is,Class).
+predicate(Nsp13,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp14,is,Class).
+predicate(Nsp14,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp15,is,Class).
+predicate(Nsp15,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp16,is,Class).
+predicate(Nsp16,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp2,is,Class).
+predicate(Nsp2,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp3,is,Class).
+predicate(Nsp3,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp4,is,Class).
+predicate(Nsp4,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp5,is,Class).
+predicate(Nsp5,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp6,is,Class).
+predicate(Nsp6,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp7,is,Class).
+predicate(Nsp7,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp8,is,Class).
+predicate(Nsp8,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nsp9,is,Class).
+predicate(Nsp9,SubClassOf,NonStructuralProteinOfSARS-Cov-2).
+predicate(Nuocyte,is,Class).
+predicate(Nuocyte,SubClassOf,Cell).
+predicate(ObjectIdentification,is,Class).
+predicate(ObjectIdentification,SubClassOf,ConceptRelatingToGeneralizedBiomedicalDynaminsAbbrGBMD).
+predicate(Osteoblast,is,Class).
+predicate(Osteoblast,SubClassOf,Cell).
+predicate(ReceptorForSARS-CoV-2,is,Class).
+predicate(SharingReceptorOnCellSurfaceWithOtherHormone,is,Class).
+predicate(SharingReceptorOnCellSurfaceWithOtherHormone,SubClassOf,MechanismForSARS-CoV-2ToUseHostResource).
+predicate(SkeletalMuscleCell,is,Class).
+predicate(SkeletalMuscleCell,SubClassOf,Cell).
+predicate(SpaceOfHumanBodyInsideCell,is,Class).
+predicate(SpaceOfHumanBodyInsideCell,SubClassOf,ObjectIdentification).
+predicate(SpaceOfHumanBodyOutsideCell,is,Class).
+predicate(SpaceOfHumanBodyOutsideCell,SubClassOf,ObjectIdentification).
+predicate(StrengthOfExistenceOfObject,is,Class).
+predicate(StrengthOfExistenceOfObject,SubClassOf,ConceptRelatingToGeneralizedBiomedicalDynaminsAbbrGBMD).
+predicate(StromalCell,is,Class).
+predicate(StromalCell,SubClassOf,Cell).
+predicate(SymptomOfCOVID-19ForEmergencyMedCare,is,Class).
+predicate(Synoviocyte,is,Class).
+predicate(Synoviocyte,SubClassOf,Cell).
+predicate(T-CellClone,is,Class).
+predicate(T-CellClone,SubClassOf,Cell).
+predicate(T-CellOrT-Lymphocyte,is,Class).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,Cell).
+predicate(T-LineageLymphomaCellLine,is,Class).
+predicate(T-LineageLymphomaCellLine,SubClassOf,Cell).
+predicate(T-RegCell,is,Class).
+predicate(T-RegCell,SubClassOf,HelperT-Cell,).
+predicate(T-RegCell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell).
+predicate(TH1-Cell,is,Class).
+predicate(TH1-Cell,SubClassOf,HelperT-Cell,).
+predicate(TH1-Cell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell).
+predicate(TH17-Cell,is,Class).
+predicate(TH17-Cell,SubClassOf,HelperT-Cell,).
+predicate(TH17-Cell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell,).
+predicate(TH17-Cell,SubClassOf,produces some IL-17A,).
+predicate(TH17-Cell,SubClassOf,produces some IL-26).
+predicate(TH2-Cell,is,Class).
+predicate(TH2-Cell,SubClassOf,HelperT-Cell,).
+predicate(TH2-Cell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell,).
+predicate(TH2-Cell,SubClassOf,produce some IL-13,).
+predicate(TH2-Cell,SubClassOf,produces some IL-4,).
+predicate(TH2-Cell,SubClassOf,produces some IL-5,).
+predicate(TH2-Cell,SubClassOf,produces some IL-9,).
+predicate(Il-17E,is,produces some IL-25/).
+predicate(TH22-Cell,is,Class).
+predicate(TH22-Cell,SubClassOf,HelperT-Cell,).
+predicate(TH22-Cell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell).
+predicate(TH9-Cell,is,Class).
+predicate(TH9-Cell,SubClassOf,HelperT-Cell,).
+predicate(TH9-Cell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell,).
+predicate(TH9-Cell,SubClassOf,produces some IL-9).
+predicate(Tc2Cell,is,Class).
+predicate(Tc2Cell,SubClassOf,Cell).
+predicate(Tfh-Cell,is,Class).
+predicate(Tfh-Cell,SubClassOf,HelperT-Cell,).
+predicate(Tfh-Cell,SubClassOf,T-HelperCellOrTh-CellOrCD4+Cell).
+predicate(TonsilPlasmaCEll,is,Class).
+predicate(TonsilPlasmaCEll,SubClassOf,Cell).
+predicate(TransmissionBetweenHumanBodies,is,Class).
+predicate(TransmissionBetweenHumanBodies,SubClassOf,DynamicsOrMechanismOfSARS-CoV-2).
+predicate(TransmissionViaAir-RespiratoryTract,is,Class).
+predicate(TransmissionViaAir-RespiratoryTract,SubClassOf,TransmissionBetweenHumanBodies).
+predicate(TroubleBreathing,is,Class).
+predicate(TroubleBreathing,SubClassOf,SymptomOfCOVID-19ForEmergencyMedCare).
+predicate(Type2Pneumocyte,is,Class).
+predicate(Type2Pneumocyte,SubClassOf,Cell).
+predicate(UndetectableConcentrationOfVirusInHuamnBody,is,Class).
+predicate(UndetectableConcentrationOfVirusInHuamnBody,SubClassOf,UnknownDynamicalQuestion).
+predicate(UnknownDynamicalQuestion,is,Class).
+predicate(UnknownDynamicalQuestion,SubClassOf,ConceptRelatingToGeneralizedBiomedicalDynaminsAbbrGBMD).
+predicate(VascularSmoothMuscleCell,is,Class).
+predicate(VascularSmoothMuscleCell,SubClassOf,Cell).
+predicate(WhiteBloodCell,is,Class).
+predicate(WhiteBloodCell,SubClassOf,Cell).
+predicate(WholePictureOfDistributionOrExsitenceInHumanPopulation,is,Class).
+predicate(WholePictureOfDistributionOrExsitenceInHumanPopulation,SubClassOf,UnknownDynamicalQuestion).
+predicate(IL-25/,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

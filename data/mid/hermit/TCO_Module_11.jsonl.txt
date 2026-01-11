@@ -1,0 +1,38 @@
+describes is ObjectProperty
+is_a is ObjectProperty
+part_of is ObjectProperty
+Arc-like is Class
+Arc-like EquivalentTo describes some Macrocalcifications
+Arc-like SubClassOf Macrocalcifications
+Clinical_Aspects is Class
+Diagnosis is Class
+Diagnosis EquivalentTo part_of some Clinical_Aspects
+Diagnosis SubClassOf Clinical_Aspects
+Diffuse_Sclerosing_Variant_Thyroid_Gland_Papillary_Carcinoma is Class
+Diffuse_Sclerosing_Variant_Thyroid_Gland_Papillary_Carcinoma EquivalentTo is_a some Highly_Invasive_Papillary_Thyroid_Cancer
+Diffuse_Sclerosing_Variant_Thyroid_Gland_Papillary_Carcinoma SubClassOf Highly_Invasive_Papillary_Thyroid_Cancer
+High_Risk is Class
+High_Risk EquivalentTo describes some Initial_Risk_Stratification_System
+High_Risk SubClassOf Initial_Risk_Stratification_System
+Highly_Invasive_Papillary_Thyroid_Cancer is Class
+Initial_Risk_Stratification_System is Class
+Intermediate_Risk is Class
+Intermediate_Risk EquivalentTo describes some Initial_Risk_Stratification_System
+Intermediate_Risk SubClassOf Initial_Risk_Stratification_System
+Low_Risk is Class
+Low_Risk EquivalentTo describes some Initial_Risk_Stratification_System
+Low_Risk SubClassOf Initial_Risk_Stratification_System
+Macrocalcifications is Class
+Osteoporosis is Class
+Other_Diagnosis is Class
+Other_Diagnosis SubClassOf Diagnosis
+Recurrent_Risk_Stratification_System is Class
+Recurrent_Risk_Stratification_System SubClassOf Diagnosis
+Response_to_Therapy_Categories is Class
+Response_to_Therapy_Categories SubClassOf Diagnosis
+Staging_System is Class
+Staging_System SubClassOf Diagnosis
+Subclinical_Thyrotoxicosis is Class
+Subclinical_Thyrotoxicosis EquivalentTo is_a some Osteoporosis
+Subclinical_Thyrotoxicosis SubClassOf Osteoporosis
+www.w3.org/2002/07/# is Class

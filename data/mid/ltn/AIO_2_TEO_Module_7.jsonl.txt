@@ -1,0 +1,27 @@
+is(www.w3.org/2000/01/-schema#,AnnotationProperty):1.0
+is(string,Datatype):1.0
+is(is-a-well-formed-formula-of,ObjectProperty):1.0
+is(command-language,Class):1.0
+DisjointWith(command-language,data-manipulation-language-expression):1.0
+is(composite-expression,Class):1.0
+SubClassOf(composite-expression,computer-language-expression):1.0
+is(computer-language-expression,Class):1.0
+SubClassOf(computer-language-expression,formal-expression,):1.0
+SubClassOf(computer-language-expression,is-a-well-formed-formula-of some command-language,):1.0
+SubClassOf(computer-language-expression,is-a-well-formed-formula-of some):1.0
+SubClassOf(computer-language-expression,(command-language and data-manipulation-language-expression),):1.0
+SubClassOf(computer-language-expression,is-a-well-formed-formula-of only data-manipulation-language-expression):1.0
+is(data-description-language-expression,Class):1.0
+SubClassOf(data-description-language-expression,computer-language-expression):1.0
+is(data-manipulation-language-expression,Class):1.0
+SubClassOf(data-manipulation-language-expression,computer-language-expression):1.0
+DisjointWith(data-manipulation-language-expression,):1.0
+DisjointWith(data-manipulation-language-expression,command-language):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(lexeme,Class):1.0
+SubClassOf(lexeme,computer-language-expression):1.0
+is(formal-expression,Class):1.0
+SubClassOf(formal-expression,data-manipulation-language-expression):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0

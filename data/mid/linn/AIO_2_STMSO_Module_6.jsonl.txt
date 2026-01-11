@@ -1,0 +1,110 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(string,is,Datatype).
+predicate(Has_nonpharmacological_treatment,is,ObjectProperty).
+predicate(Has_pharmacological_treatment,is,ObjectProperty).
+predicate(Has_special_test,is,ObjectProperty).
+predicate(Acquired_pendular_nystagmus,is,Class).
+predicate(Acquired_pendular_nystagmus,SubClassOf,Nystagmus,).
+predicate(Acquired_pendular_nystagmus,SubClassOf,Has_pharmacological_treatment some Baclofen,).
+predicate(Acquired_pendular_nystagmus,SubClassOf,Has_pharmacological_treatment some Dalfampridine,).
+predicate(Acquired_pendular_nystagmus,SubClassOf,Has_pharmacological_treatment some Fampridine,).
+predicate(Acquired_pendular_nystagmus,SubClassOf,Has_pharmacological_treatment some).
+predicate(Acquired_pendular_nystagmus,SubClassOf,(Cystoscopy and Dalfampridine),).
+predicate(Acquired_pendular_nystagmus,SubClassOf,Has_pharmacological_treatment only Cystoscopy).
+predicate(Baclofen,is,Class).
+predicate(Bowel_disturbance,is,Class).
+predicate(Bowel_disturbance,SubClassOf,Symptom).
+predicate(Breathing_Problems,is,Class).
+predicate(Breathing_Problems,SubClassOf,Symptom).
+predicate(Burning,is,Class).
+predicate(Burning,SubClassOf,Sensory_Changes).
+predicate(Citalopram,is,Class).
+predicate(Cognitive_Problems,is,Class).
+predicate(Cognitive_Problems,SubClassOf,Symptom).
+predicate(Cystoscopy,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(Thing, Dalfampridine,is,www.w3.org/2002/07/#).
+predicate(Dalfampridine,is,Class).
+predicate(Dalfampridine,DisjointWith,Cystoscopy).
+predicate(Downbeating_Nystagmus,is,Class).
+predicate(Downbeating_Nystagmus,SubClassOf,Nystagmus,).
+predicate(Downbeating_Nystagmus,SubClassOf,Has_pharmacological_treatment some Baclofen,).
+predicate(Downbeating_Nystagmus,SubClassOf,Has_pharmacological_treatment some Dalfampridine,).
+predicate(Downbeating_Nystagmus,SubClassOf,Has_pharmacological_treatment some Fampridine).
+predicate(Dysarthria_problems,is,Class).
+predicate(Dysarthria_problems,SubClassOf,Symptom).
+predicate(Dysphagia,is,Class).
+predicate(Dysphagia,SubClassOf,Symptom).
+predicate(Emotional_Disorders,is,Class).
+predicate(Emotional_Disorders,SubClassOf,Symptom).
+predicate(Facial_myokymia,is,Class).
+predicate(Facial_myokymia,SubClassOf,Symptom).
+predicate(Fampridine,is,Class).
+predicate(Fatigue,is,Class).
+predicate(Fatigue,SubClassOf,Symptom).
+predicate(Fatigue_due_to_depression_and_anxiety,is,Class).
+predicate(Fatigue_due_to_underlying_disease,,is,www.co-ode.org/ontologies/ont.#).
+predicate(Fatigue_due_to_underlying_disease,,is,Has_nonpharmacological_treatment some Stress_management,).
+predicate(Fatigue_due_to_underlying_disease,,is,Has_pharmacological_treatment some Citalopram,).
+predicate(Fatigue_due_to_underlying_disease,,is,Has_pharmacological_treatment some Fluoxetine).
+predicate(Fluoxetine,is,Class).
+predicate(Hearing_loss,is,Class).
+predicate(Hearing_loss,SubClassOf,Symptom).
+predicate(Levothyroxine,is,Class).
+predicate(Lower_Urinary_Tract_Dysfunction,is,Class).
+predicate(Lower_Urinary_Tract_Dysfunction,SubClassOf,Urinary_tract_dysfunction,).
+predicate(Lower_Urinary_Tract_Dysfunction,SubClassOf,Has_special_test some Cystoscopy).
+predicate(Muscle_spasms,is,Class).
+predicate(Muscle_spasms,SubClassOf,Symptom).
+predicate(Nystagmus,is,Class).
+predicate(Pain,is,Class).
+predicate(Pain,SubClassOf,Symptom).
+predicate(Patient,is,Class).
+predicate(Seizures,is,Class).
+predicate(Seizures,SubClassOf,Symptom).
+predicate(Sensory_Changes,is,Class).
+predicate(Sex,is,Class).
+predicate(Sex,SubClassOf,Patient).
+predicate(Sexual_dysfunction,is,Class).
+predicate(Sexual_dysfunction,SubClassOf,Symptom).
+predicate(Sleep_Disorders,is,Class).
+predicate(Sleep_Disorders,SubClassOf,Symptom).
+predicate(Stress_management,is,Class).
+predicate(Symptom,is,Class).
+predicate(Symptom,SubClassOf,Entity).
+predicate(Tingling,is,Class).
+predicate(Tingling,SubClassOf,Sensory_Changes).
+predicate(Tremor,is,Class).
+predicate(Tremor,SubClassOf,Symptom).
+predicate(U8,is,Class).
+predicate(Uhthoff_phenomenon,is,Class).
+predicate(Uhthoff_phenomenon,SubClassOf,Symptom).
+predicate(Upper_Urinary_Tract,is,Class).
+predicate(Upper_Urinary_Tract,SubClassOf,Urinary_tract_dysfunction,).
+predicate(Upper_Urinary_Tract,SubClassOf,Has_special_test some Cystoscopy).
+predicate(Urinary_disordesr,is,Class).
+predicate(Urinary_disordesr,SubClassOf,Symptom).
+predicate(Urinary_tract_dysfunction,is,Class).
+predicate(Vertigo,is,Class).
+predicate(Vertigo,SubClassOf,Symptom).
+predicate(Vision_Problems,is,Class).
+predicate(Vision_Problems,SubClassOf,Symptom).
+predicate(Walking_difficulties,is,Class).
+predicate(Walking_difficulties,SubClassOf,Symptom).
+predicate(Weakness,is,Class).
+predicate(Weakness,SubClassOf,Symptom).
+predicate(high,is,Class).
+predicate(liver_disease,is,Class).
+predicate(s12,is,Class).
+predicate(s3,is,Class).
+predicate(s7,is,Class).
+predicate(Entity,is,Class).
+predicate(Entity,SubClassOf,Hearing_loss).
+predicate(www.co-ode.org/ontologies/ont.#,is,Class).
+predicate(Fatigue_due_to_underlying_disease,is,www.co-ode.org/ontologies/ont.#).
+predicate(www.co-ode.org/ontologies/ont.#,is,Class).
+predicate(Fatigue_due_to_underlying_disease,,is,www.co-ode.org/ontologies/ont.#).
+predicate(Fatigue_due_to_underlying_disease,,is,Has_pharmacological_treatment some Levothyroxine).
+predicate(www.co-ode.org/ontologies/ont.#,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).

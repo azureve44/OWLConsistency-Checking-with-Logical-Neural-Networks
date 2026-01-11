@@ -1,0 +1,197 @@
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: rabbitmq_user
+      RABBITMQ_DEFAULT_PASS: rabbitmq_password
+    ports:
+      - "15672:15672" # Management API port
+    volumes:
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+    networks:
+      - rabbitmq_network
+
+  postgres:
+    image: postgres:latest
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: postgress_password
+      POSTGRES_DB: data_processing
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - postgres_network
+
+  start:
+    build: ./initial_publish
+    container_name: initial_publish
+    environment:
+      - RABBITMQ_QUEUE_OUTPUT=Ontologies
+      - RABBITMQ_HOST=rabbitmq
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgress_password
+      - POSTGRES_DB=data_processing
+    volumes:
+      - ./data/:/input/
+#      - ./data/ont_modules:/input1000
+      - ./data/ont_modules:/output
+    depends_on:
+      - rabbitmq
+    networks:
+      - rabbitmq_network
+      - postgres_network
+
+
+  modularization:
+    image: ghcr.io/justinmuecke/glamor/modularization:v1.0.0  
+    build: ./OAPT
+    restart: unless-stopped
+    deploy:
+      replicas: 2
+    environment:
+      - RABBITMQ_QUEUE_INPUT=Ontologies
+      - RABBITMQ_QUEUE_OUTPUT=Modules_Preprocess
+      - RABBITMQ_HOST=rabbitmq
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgress_password
+      - POSTGRES_DB=data_processing
+    volumes:
+      - ./data/ontologies:/input
+      - ./data/ont_modules:/app/output
+    depends_on:
+      - rabbitmq
+      - postgres
+    networks:
+      - rabbitmq_network
+      - postgres_network
+
+  modification:
+    build: ./OWL_Ontology_Modification/Modification
+    image: ghcr.io/justinmuecke/glamor/modification:v1.0.0
+    restart: unless-stopped
+    deploy:
+      replicas: 5
+    environment:
+      - RABBITMQ_QUEUE_INPUT=Modules_Modify
+      - RABBITMQ_QUEUE_OUTPUT=Modules_Preprocess
+      - RABBITMQ_HOST=rabbitmq
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgress_password
+      - POSTGRES_DB=data_processing
+    volumes:
+      - ./data/ont_modules:/input
+      - ./data/ont_modules:/output
+    depends_on:
+      - rabbitmq
+      - postgres
+      - modularization
+    networks:
+      - rabbitmq_network
+      - postgres_network
+
+  preprocess:
+    build: ./Preprocessing
+    image: ghcr.io/justinmuecke/glamor/preprocessing:v1.0.0
+    restart: unless-stopped
+    deploy:
+      replicas: 2
+    environment:
+      - RABBITMQ_QUEUE_INPUT=Modules_Preprocess
+      - RABBITMQ_QUEUE_OUTPUT=Remove_Prefix
+
+      - RABBITMQ_HOST=rabbitmq
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgress_password
+      - POSTGRES_DB=data_processing
+    volumes:
+      - ./data/ont_modules:/input
+      - ./data/processed_modules:/output
+    depends_on:
+      - rabbitmq
+      - postgres
+    networks:
+      - rabbitmq_network
+      - postgres_network
+
+
+  prefix_removal:
+    build: ./prefix_removal
+    image: ghcr.io/justinmuecke/glamor/prefix_removal:v1.0.0
+    restart: unless-stopped
+    environment:
+      - RABBITMQ_QUEUE_INPUT=Remove_Prefix
+      - RABBITMQ_QUEUE_OUTPUT=Translation
+    volumes:
+      - ./data/processed_modules:/input
+      - ./data/prefixless_modules:/output
+    depends_on:
+      - rabbitmq
+      - postgres
+      - preprocess
+    networks:
+      - rabbitmq_network
+      - postgres_network
+
+  translation:
+    build: ./Translation
+    image: ghcr.io/justinmuecke/glamor/translation:v1.0.0
+    restart: unless-stopped
+    environment:
+      - RABBITMQ_QUEUE_INPUT=Translation
+      - RABBITMQ_QUEUE_OUTPUT=filtering
+    volumes:
+      - ./data/prefixless_modules:/input
+      - ./data/triples:/output
+    networks:
+      - rabbitmq_network
+      - postgres_network
+
+  filtering:
+    build: ./Tokenization
+    image: ghcr.io/justinmuecke/glamor/filtering:v1.0.0
+    restart: unless-stopped
+    deploy:
+      replicas: 6
+    environment:
+      - RABBITMQ_QUEUE_INPUT=filtering
+      - RABBITMQ_QUEUE_OUTPUT=Modules_Modify
+    volumes:
+      - ./data/triples:/input
+      - ./data/filtered_modules/consistent/500:/output500
+      - ./data/filtered_modules/consistent/1000:/output1000
+      - ./data/filtered_modules/consistent/4000:/output4000
+      - ./data/filtered_modules/inconsistent/500:/output500InC
+      - ./data/filtered_modules/inconsistent/1000:/output1000InC
+      - ./data/filtered_modules/inconsistent/4000:/output4000InC
+      - ./data/filtered_modules/overThreshold:/output10000
+      - ./data/filtered_modules/overThreshold:/output10000InC
+
+
+  embedding:
+      build: ./embed
+      image: ghcr.io/justinmuecke/glamor/embedding:v1.0.0
+      restart: unless-stopped
+      deploy:
+        replicas: 10
+      volumes: 
+        - ./data/ont_modules_inconsistent_rdf:/input_inconsistent/
+        - ./data/ont_modules:/input_consistent/
+        - ./data/embeddings_full:/output/
+      networks: 
+        - rabbitmq_network
+  
+volumes:
+  pg_data:
+networks:
+  rabbitmq_network:
+    driver: bridge
+  postgres_network:
+    driver: bridge
+

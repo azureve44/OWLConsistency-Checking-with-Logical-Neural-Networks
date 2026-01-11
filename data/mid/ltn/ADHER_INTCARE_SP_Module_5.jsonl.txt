@@ -1,0 +1,97 @@
+is(es_grado_objetividad_de,ObjectProperty):1.0
+is(es_tipo_continuidad_de,ObjectProperty):1.0
+is(es_tipo_estilo_de,ObjectProperty):1.0
+is(tiene_continuidad_tipo,ObjectProperty):1.0
+is(tiene_estilo_tipo,ObjectProperty):1.0
+Domain(tiene_estilo_tipo,Indicadores):1.0
+is(indirecto,Directo/):1.0
+is(tiene_grado_objetividad_tipo,ObjectProperty):1.0
+Domain(tiene_grado_objetividad_tipo,Indicadores):1.0
+Range(tiene_grado_objetividad_tipo,Grado_objetividad):1.0
+is(tiene_presencialidad_tipo,ObjectProperty):1.0
+Domain(tiene_presencialidad_tipo,Indicadores):1.0
+Range(tiene_presencialidad_tipo,No_presencial,):1.0
+Range(tiene_presencialidad_tipo,Presencial):1.0
+is(Adherencia_medicacion,Class):1.0
+is(Autoevaluaciones,Class):1.0
+SubClassOf(Autoevaluaciones,Indicadores):1.0
+is(Base_datos_farmacias,Class):1.0
+is(Biologicos,Class):1.0
+SubClassOf(Biologicos,Indicadores):1.0
+is(CMA,Class):1.0
+SubClassOf(CMA,Medidas_cumplimiento_abastecimiento,):1.0
+SubClassOf(CMA,tiene_continuidad_tipo only Continuo):1.0
+is(CMG,Class):1.0
+SubClassOf(CMG,Medidas_cumplimiento_abastecimiento,):1.0
+SubClassOf(CMG,tiene_continuidad_tipo only Continuo):1.0
+is(CSA,Class):1.0
+SubClassOf(CSA,Medidas_cumplimiento_abastecimiento,):1.0
+SubClassOf(CSA,tiene_continuidad_tipo only Continuo):1.0
+is(CSG,Class):1.0
+SubClassOf(CSG,Medidas_cumplimiento_abastecimiento,):1.0
+SubClassOf(CSG,tiene_continuidad_tipo only Continuo):1.0
+is(Conteo,Class):1.0
+SubClassOf(Conteo,Indicadores):1.0
+is(Continuidad,Class):1.0
+is(Continuo,Class):1.0
+SubClassOf(Continuo,Continuidad,):1.0
+SubClassOf(Continuo,es_tipo_continuidad_de exactly 1 (CMA or CMG or CSA or CSG or MPR)):1.0
+DisjointWith(Continuo,Discontinuo):1.0
+is(Criterios_STOPPFrail,Class):1.0
+SubClassOf(Criterios_STOPPFrail,Indicadores):1.0
+is(Criterios_STOPP_START,Class):1.0
+SubClassOf(Criterios_STOPP_START,Indicadores):1.0
+is(Directo,Class):1.0
+is(indirecto,,Directo/):1.0
+is(indirecto,,es_tipo_estilo_de exactly 1 (Biologicos or Marcadores_biologicos or Observacion_directa or Orina or Piel or Saliva or Sangre)):1.0
+DisjointWith(indirecto,,Indirecto):1.0
+is(Discontinuo,Class):1.0
+SubClassOf(Discontinuo,Continuidad,):1.0
+SubClassOf(Discontinuo,es_tipo_continuidad_de exactly 1 Variable_dicotomica):1.0
+DisjointWith(Discontinuo,Continuo):1.0
+is(Dispositivos_electronicos,Class):1.0
+SubClassOf(Dispositivos_electronicos,Indicadores):1.0
+is(Efectos_adversos_medicamentos,Class):1.0
+SubClassOf(Efectos_adversos_medicamentos,Indicadores):1.0
+is(G_Revision,Class):1.0
+DisjointWith(G_Revision,Indicadores):1.0
+is(Grado_objetividad,Class):1.0
+is(Indicadores,Class):1.0
+SubClassOf(Indicadores,Adherencia_medicacion):1.0
+DisjointWith(Indicadores,G_Revision):1.0
+is(Indirecto,Class):1.0
+is(indirecto,Directo/):1.0
+DisjointWith(indirecto,Directo):1.0
+is(Juicio_farmaceutico,Class):1.0
+SubClassOf(Juicio_farmaceutico,Indicadores):1.0
+is(MPR,Class):1.0
+SubClassOf(MPR,Medidas_cumplimiento_abastecimiento,):1.0
+SubClassOf(MPR,tiene_continuidad_tipo only Continuo):1.0
+is(Marcadores_biologicos,Class):1.0
+is(Medidas_cumplimiento_abastecimiento,Class):1.0
+is(No_presencial,Class):1.0
+is(Objetivo,Class):1.0
+SubClassOf(Objetivo,Grado_objetividad,):1.0
+SubClassOf(Objetivo,es_grado_objetividad_de exactly 1 (Base_datos_farmacias or Conteo or Dispositivos_electronicos)):1.0
+DisjointWith(Objetivo,Subjetivo):1.0
+is(Observacion_directa,Class):1.0
+SubClassOf(Observacion_directa,Indicadores):1.0
+is(Orina,Class):1.0
+is(Patrones_derivados_analisis_datos,Class):1.0
+SubClassOf(Patrones_derivados_analisis_datos,Indicadores):1.0
+is(Piel,Class):1.0
+is(Presencial,Class):1.0
+is(Saliva,Class):1.0
+is(Sangre,Class):1.0
+is(Subjetivo,Class):1.0
+SubClassOf(Subjetivo,Grado_objetividad):1.0
+DisjointWith(Subjetivo,Objetivo):1.0
+is(Terapeutica_alcanzada,Class):1.0
+SubClassOf(Terapeutica_alcanzada,Indicadores):1.0
+is(Tipos_indicadores,Class):1.0
+SubClassOf(Tipos_indicadores,Indicadores):1.0
+is(Variable_dicotomica,Class):1.0
+SubClassOf(Variable_dicotomica,Medidas_cumplimiento_abastecimiento,):1.0
+SubClassOf(Variable_dicotomica,tiene_continuidad_tipo only Discontinuo):1.0
+is(Directo/,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0

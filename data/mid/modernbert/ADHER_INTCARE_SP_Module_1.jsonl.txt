@@ -1,0 +1,219 @@
+integer is Datatype.
+string is Datatype.
+etapa_adherencia_identificada is ObjectProperty.
+tiene_estilo_tipo is ObjectProperty.
+tiene_grado_objetividad_tipo is ObjectProperty.
+tiene_presencialidad_tipo is ObjectProperty.
+validacion is DataProperty.
+valor_adh_ASRQ is DataProperty.
+valor_adh_BMQ is DataProperty.
+valor_adh_Batalla is DataProperty.
+valor_adh_Bogus-Pipeline is DataProperty.
+valor_adh_ESPA is DataProperty.
+valor_adh_HaynesSackett is DataProperty.
+valor_adh_Hermes is DataProperty.
+valor_adh_MAQ is DataProperty.
+valor_adh_MARS-10 is DataProperty.
+valor_adh_SMAQ_pregunta_1 is DataProperty.
+valor_adh_SMAQ_pregunta_2 is DataProperty.
+valor_adh_SMAQ_pregunta_3 is DataProperty.
+valor_adh_SMAQ_pregunta_4 is DataProperty.
+valor_adh_SMAQ_pregunta_5 is DataProperty.
+valor_adh_SMAQ_pregunta_6 is DataProperty.
+ARMS is Class.
+ARMS SubClassOf Cuestionarios_y_escalas,.
+ARMS SubClassOf etapa_adherencia_identificada some.
+ARMS SubClassOf (F2_Implementacion or F3_Discontinuacion),.
+ARMS SubClassOf validacion exactly 1 {"Si"}.
+ASRQ is Class.
+ASRQ EquivalentTo Insuficiente_adh_ASRQ_nivel3 or Insuficiente_adh_ASRQ_nivel4 or Insuficiente_adh_ASRQ_nivel5 or Insuficiente_adh_ASRQ_nivel6 or Suficiente_adh_ASRQ_nivel1 or Suficiente_adh_ASRQ_nivel2.
+ASRQ SubClassOf Cuestionarios_y_escalas,.
+ASRQ SubClassOf etapa_adherencia_identificada only F2_Implementacion,.
+ASRQ SubClassOf validacion exactly 1 {"Si"},.
+ASRQ SubClassOf valor_adh_ASRQ exactly 1 integer.
+Autoevaluaciones is Class.
+Autoevaluaciones SubClassOf Indicadores,.
+Autoevaluaciones SubClassOf tiene_estilo_tipo only Indirecto,.
+Autoevaluaciones SubClassOf tiene_grado_objetividad_tipo only Subjetivo.
+Autoevaluaciones DisjointWith F_Soporte.
+BBQ is Class.
+BBQ SubClassOf Cuestionarios_y_escalas,.
+BBQ SubClassOf validacion exactly 1 {"Si"}.
+BMQ is Class.
+BMQ EquivalentTo Insuficiente_adh_BMQ or Suficiente_adh_BMQ.
+BMQ SubClassOf Cuestionarios_y_escalas,.
+BMQ SubClassOf etapa_adherencia_identificada only F2_Implementacion,.
+BMQ SubClassOf tiene_estilo_tipo only Indirecto,.
+BMQ SubClassOf validacion exactly 1 {"Si"},.
+BMQ SubClassOf valor_adh_BMQ exactly 1 integer.
+Batalla is Class.
+Batalla EquivalentTo Insuficiente_adh_Batalla or Suficiente_adh_Batalla.
+Batalla SubClassOf Cuestionarios_y_escalas,.
+Batalla SubClassOf tiene_estilo_tipo only Indirecto,.
+Batalla SubClassOf validacion exactly 1 {"No"}.
+Bogus_pipeline is Class.
+Bogus_pipeline EquivalentTo Insuficiente_adh_bogus_pipeline or Suficiente_adh_bogus_pipeline.
+Bogus_pipeline SubClassOf Cuestionarios_y_escalas,.
+Bogus_pipeline SubClassOf validacion exactly 1 {"No"},.
+Bogus_pipeline SubClassOf valor_adh_Bogus-Pipeline exactly 1 string.
+Cuestionarios_y_escalas is Class.
+Cuestionarios_y_escalas SubClassOf Autoevaluaciones.
+Diario is Class.
+Diario SubClassOf Autoevaluaciones.
+ESPA is Class.
+ESPA EquivalentTo Insuficiente_adh_ESPA or Suficiente_adh_ESPA.
+ESPA SubClassOf Cuestionarios_y_escalas,.
+ESPA SubClassOf tiene_estilo_tipo only Indirecto,.
+ESPA SubClassOf validacion exactly 1 {"Sí"},.
+ESPA SubClassOf valor_adh_ESPA exactly 1 integer.
+F2_Implementacion is Class.
+F3_Discontinuacion is Class.
+F_Soporte is Class.
+F_Soporte DisjointWith Autoevaluaciones.
+Haynes-Sackett is Class.
+Haynes-Sackett EquivalentTo Insuficiente_adh_Haynes_Sackett or Suficiente_adh_Haynes-Sackett.
+Haynes-Sackett SubClassOf Cuestionarios_y_escalas,.
+Haynes-Sackett SubClassOf tiene_estilo_tipo only Indirecto,.
+Haynes-Sackett SubClassOf tiene_presencialidad_tipo exactly 1 (No_presencial or Presencial).
+Hermes is Class.
+Hermes EquivalentTo Insuficiente_adh_Hermes or Suficiente_adh_Hermes.
+Hermes SubClassOf Cuestionarios_y_escalas,.
+Hermes SubClassOf tiene_estilo_tipo only Indirecto,.
+Hermes SubClassOf valor_adh_Hermes exactly 1 integer.
+Hill-Bone is Class.
+Hill-Bone SubClassOf Cuestionarios_y_escalas,.
+Hill-Bone SubClassOf etapa_adherencia_identificada only F2_Implementacion,.
+Hill-Bone SubClassOf validacion exactly 1 {"Sí"}.
+Indicadores is Class.
+Indirecto is Class.
+Insuficiente_adh_ASRQ_nivel3 is Class.
+Insuficiente_adh_ASRQ_nivel3 EquivalentTo valor_adh_ASRQ value 3.
+Insuficiente_adh_ASRQ_nivel3 SubClassOf ASRQ.
+Insuficiente_adh_ASRQ_nivel4 is Class.
+Insuficiente_adh_ASRQ_nivel4 EquivalentTo valor_adh_ASRQ value 4.
+Insuficiente_adh_ASRQ_nivel4 SubClassOf ASRQ.
+Insuficiente_adh_ASRQ_nivel5 is Class.
+Insuficiente_adh_ASRQ_nivel5 EquivalentTo valor_adh_ASRQ value 5.
+Insuficiente_adh_ASRQ_nivel5 SubClassOf ASRQ.
+Insuficiente_adh_ASRQ_nivel6 is Class.
+Insuficiente_adh_ASRQ_nivel6 EquivalentTo valor_adh_ASRQ value 6.
+Insuficiente_adh_ASRQ_nivel6 SubClassOf ASRQ.
+Insuficiente_adh_BMQ is Class.
+valor_adh_BMQ exactly 1 ( not (integer[= 12]) and integer[= 1]) is EquivalentTo.
+valor_adh_BMQ exactly 1 ( not (integer[= 12]) and integer[= 1]) SubClassOf BMQ.
+Insuficiente_adh_Batalla is Class.
+Insuficiente_adh_Batalla EquivalentTo valor_adh_Batalla exactly 1 {"Falla"}.
+Insuficiente_adh_Batalla SubClassOf Batalla.
+Insuficiente_adh_ESPA is Class.
+Insuficiente_adh_ESPA EquivalentTo valor_adh_ESPA exactly 1 integer[< 5].
+Insuficiente_adh_ESPA SubClassOf ESPA.
+Insuficiente_adh_Haynes_Sackett is Class.
+Insuficiente_adh_Haynes_Sackett EquivalentTo valor_adh_HaynesSackett exactly 1 {"falla"}.
+Insuficiente_adh_Haynes_Sackett SubClassOf Haynes-Sackett.
+Insuficiente_adh_Hermes is Class.
+Insuficiente_adh_Hermes EquivalentTo valor_adh_Hermes exactly 1 integer[< 3].
+Insuficiente_adh_Hermes SubClassOf Hermes.
+Insuficiente_adh_MAQ is Class.
+valor_adh_MAQ exactly 1 ( not (integer[= 4]) and integer[= 3]) is EquivalentTo.
+valor_adh_MAQ exactly 1 ( not (integer[= 4]) and integer[= 3]) SubClassOf MAQ.
+Insuficiente_adh_MARS is Class.
+Insuficiente_adh_MARS EquivalentTo valor_adh_MARS-10 exactly 1  not (integer[= 6]).
+Insuficiente_adh_MARS SubClassOf MARS.
+Insuficiente_adh_SMAQ is Class.
+Insuficiente_adh_SMAQ EquivalentTo (valor_adh_SMAQ_pregunta_1 exactly 1 {"Sí"}) or (valor_adh_SMAQ_pregunta_2 exactly 1 {"No"}) or (valor_adh_SMAQ_pregunta_3 exactly 1 {"Sí"}) or (valor_adh_SMAQ_pregunta_4 exactly 1 {"Sí"}) or (valor_adh_SMAQ_pregunta_5 exactly 1 ({"C"} or {"D"} or {"E"})) or (valor_adh_SMAQ_pregunta_6 exactly 1 integer[ 2]).
+Insuficiente_adh_SMAQ SubClassOf SMAQ.
+Insuficiente_adh_bogus_pipeline is Class.
+Insuficiente_adh_bogus_pipeline EquivalentTo valor_adh_Bogus-Pipeline value "no acepta".
+Insuficiente_adh_bogus_pipeline SubClassOf Bogus_pipeline.
+Llamada_telefonica is Class.
+Llamada_telefonica SubClassOf Autoevaluaciones.
+MAQ is Class.
+MAQ EquivalentTo Insuficiente_adh_MAQ or Suficiente_adh_MAQ.
+MAQ SubClassOf Cuestionarios_y_escalas,.
+MAQ SubClassOf etapa_adherencia_identificada some.
+MAQ SubClassOf (F2_Implementacion or F3_Discontinuacion),.
+MAQ SubClassOf validacion exactly 1 {"sí"},.
+MAQ SubClassOf valor_adh_MAQ exactly 1 integer.
+MARS is Class.
+MARS EquivalentTo Insuficiente_adh_MARS or Suficiente_adh_MARS.
+MARS SubClassOf Cuestionarios_y_escalas,.
+MARS SubClassOf etapa_adherencia_identificada some.
+MARS SubClassOf (F2_Implementacion or F3_Discontinuacion),.
+MARS SubClassOf validacion exactly 1 {"Sí"},.
+MARS SubClassOf valor_adh_MARS-10 exactly 1 integer.
+MMAS-8 is Class.
+MMAS-8 SubClassOf Cuestionarios_y_escalas,.
+MMAS-8 SubClassOf etapa_adherencia_identificada some.
+MMAS-8 SubClassOf (F2_Implementacion or F3_Discontinuacion),.
+MMAS-8 SubClassOf validacion exactly 1 {"Sí"}.
+MUAH is Class.
+MUAH SubClassOf Cuestionarios_y_escalas,.
+MUAH SubClassOf etapa_adherencia_identificada only F2_Implementacion,.
+MUAH SubClassOf validacion exactly 1 {"Sí"}.
+No_presencial is Class.
+Porcentaje_adh_30-64 is Class.
+Porcentaje_adh_30-64 EquivalentTo valor_adh_SMAQ_pregunta_5 exactly 1 {"D"}.
+Porcentaje_adh_30-64 SubClassOf SMAQ.
+Porcentaje_adh_65-84 is Class.
+Porcentaje_adh_65-84 EquivalentTo valor_adh_SMAQ_pregunta_5 exactly 1 {"C"}.
+Porcentaje_adh_65-84 SubClassOf SMAQ.
+Porcentaje_adh_85-94 is Class.
+Porcentaje_adh_85-94 EquivalentTo valor_adh_SMAQ_pregunta_5 exactly 1 {"B"}.
+Porcentaje_adh_85-94 SubClassOf SMAQ.
+Porcentaje_adh_95-100 is Class.
+Porcentaje_adh_95-100 EquivalentTo valor_adh_SMAQ_pregunta_5 exactly 1 {"A"}.
+Porcentaje_adh_95-100 SubClassOf SMAQ.
+Porcentaje_adh_inferior_30 is Class.
+Porcentaje_adh_inferior_30 EquivalentTo valor_adh_SMAQ_pregunta_5 exactly 1 {"E"}.
+Porcentaje_adh_inferior_30 SubClassOf SMAQ.
+Presencial is Class.
+SDSCA is Class.
+SDSCA SubClassOf Cuestionarios_y_escalas,.
+SDSCA SubClassOf validacion exactly 1 {"Sí"}.
+SEAMS is Class.
+SEAMS SubClassOf Cuestionarios_y_escalas,.
+SEAMS SubClassOf validacion exactly 1 {"Sí"}.
+SMAQ is Class.
+SMAQ EquivalentTo Insuficiente_adh_SMAQ or Suficiente_adh_SMAQ.
+SMAQ SubClassOf Cuestionarios_y_escalas,.
+SMAQ SubClassOf etapa_adherencia_identificada some.
+SMAQ SubClassOf (F2_Implementacion or F3_Discontinuacion),.
+SMAQ SubClassOf tiene_estilo_tipo only Indirecto,.
+SMAQ SubClassOf validacion exactly 1 {"Sí"}.
+Sistema_respuesta_por_voz is Class.
+Sistema_respuesta_por_voz SubClassOf Autoevaluaciones.
+Subjetivo is Class.
+Suficiente_adh_ASRQ_nivel1 is Class.
+Suficiente_adh_ASRQ_nivel1 EquivalentTo valor_adh_ASRQ value 1.
+Suficiente_adh_ASRQ_nivel1 SubClassOf ASRQ.
+Suficiente_adh_ASRQ_nivel2 is Class.
+Suficiente_adh_ASRQ_nivel2 EquivalentTo valor_adh_ASRQ value 2.
+Suficiente_adh_ASRQ_nivel2 SubClassOf ASRQ.
+Suficiente_adh_BMQ is Class.
+Suficiente_adh_BMQ EquivalentTo valor_adh_BMQ value 0.
+Suficiente_adh_BMQ SubClassOf BMQ.
+Suficiente_adh_Batalla is Class.
+Suficiente_adh_Batalla EquivalentTo valor_adh_Batalla exactly 1 {"No falla"}.
+Suficiente_adh_Batalla SubClassOf Batalla.
+Suficiente_adh_ESPA is Class.
+valor_adh_ESPA exactly 1 ( not (integer[ 6]) and integer[= 5]) is EquivalentTo.
+valor_adh_ESPA exactly 1 ( not (integer[ 6]) and integer[= 5]) SubClassOf ESPA.
+Suficiente_adh_Haynes-Sackett is Class.
+Suficiente_adh_Haynes-Sackett EquivalentTo valor_adh_HaynesSackett exactly 1 {"no falla"}.
+Suficiente_adh_Haynes-Sackett SubClassOf Haynes-Sackett.
+Suficiente_adh_Hermes is Class.
+valor_adh_Hermes exactly 1 ( not (integer[ 4]) and integer[= 3]) is EquivalentTo.
+valor_adh_Hermes exactly 1 ( not (integer[ 4]) and integer[= 3]) SubClassOf Hermes.
+Suficiente_adh_MAQ is Class.
+Suficiente_adh_MAQ EquivalentTo valor_adh_MAQ exactly 1  not (integer[= 3]).
+Suficiente_adh_MAQ SubClassOf MAQ.
+Suficiente_adh_MARS is Class.
+valor_adh_MARS-10 exactly 1 ( not (integer[ 10]) and integer[= 6]) is EquivalentTo.
+valor_adh_MARS-10 exactly 1 ( not (integer[ 10]) and integer[= 6]) SubClassOf MARS.
+Suficiente_adh_SMAQ is Class.
+Suficiente_adh_SMAQ EquivalentTo (valor_adh_SMAQ_pregunta_1 exactly 1 {"No"}) or (valor_adh_SMAQ_pregunta_2 exactly 1 {"Sí"}) or (valor_adh_SMAQ_pregunta_3 exactly 1 {"No"}) or (valor_adh_SMAQ_pregunta_4 exactly 1 {"No"}) or (valor_adh_SMAQ_pregunta_5 exactly 1 ({"A"} or {"B"})) or (valor_adh_SMAQ_pregunta_6 exactly 1 integer[<= 2]).
+Suficiente_adh_SMAQ SubClassOf SMAQ.
+Suficiente_adh_bogus_pipeline is Class.
+Suficiente_adh_bogus_pipeline EquivalentTo valor_adh_Bogus-Pipeline value "acepta".
+Suficiente_adh_bogus_pipeline SubClassOf Bogus_pipeline.
+www.w3.org/2002/07/# is Class.

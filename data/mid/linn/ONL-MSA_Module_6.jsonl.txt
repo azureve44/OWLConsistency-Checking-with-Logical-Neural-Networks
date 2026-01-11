@@ -1,0 +1,845 @@
+predicate(has-for-atomic-part,is,ObjectProperty).
+predicate(has-for-part,is,ObjectProperty).
+predicate(is-a-part-of-during,is,ObjectProperty).
+predicate(is-the-quality-location-of-during,is,ObjectProperty).
+predicate(has-for-maximum-scale-item,is,ObjectProperty).
+predicate(has-for-minimum-scale-item,is,ObjectProperty).
+predicate(is-the-scale-of,is,ObjectProperty).
+predicate(affects-at,is,ObjectProperty).
+predicate(has-for-agent-at,is,ObjectProperty).
+predicate(has-for-date,is,ObjectProperty).
+predicate(has-for-magnitude,is,ObjectProperty).
+predicate(has-for-magnitude,Domain,scalar-quale).
+predicate(has-for-magnitude,Range,number).
+predicate(has-for-unit,is,ObjectProperty).
+predicate(has-for-unit,Domain,scalar-quale).
+predicate(has-for-unit,Range,unit-of-measure).
+predicate(is-a-version-number-of,is,ObjectProperty).
+predicate(is-a-version-number-of,Domain,version-number).
+predicate(is-a-version-number-of,Range,artefact).
+predicate(is-an-atomic-part-of,is,ObjectProperty).
+predicate(is-equal-to,is,ObjectProperty).
+predicate(is-equal-to,Domain,number).
+predicate(is-equal-to,Range,number).
+predicate(is-greater-than,is,ObjectProperty).
+predicate(is-greater-than,Domain,number).
+predicate(is-greater-than,Range,number).
+predicate(is-greater-than,InverseOf,is-less-than).
+predicate(is-greater-than-or-equal-to,is,ObjectProperty).
+predicate(is-greater-than-or-equal-to,Domain,number).
+predicate(is-greater-than-or-equal-to,Range,number).
+predicate(is-greater-than-or-equal-to,InverseOf,is-less-than-or-equal-to).
+predicate(is-less-than,is,ObjectProperty).
+predicate(is-less-than,Domain,number).
+predicate(is-less-than,Range,number).
+predicate(is-less-than,InverseOf,is-greater-than).
+predicate(is-less-than-or-equal-to,is,ObjectProperty).
+predicate(is-less-than-or-equal-to,Domain,number).
+predicate(is-less-than-or-equal-to,Range,number).
+predicate(is-less-than-or-equal-to,InverseOf,is-greater-than-or-equal-to).
+predicate(is-supervised-by-at,is,ObjectProperty).
+predicate(abstract,is,Class).
+predicate(abstract,SubClassOf,particular,).
+predicate(abstract,SubClassOf,has-for-part only abstract).
+predicate(endurant,is,Class).
+predicate(particular,is,Class).
+predicate(perdurant,is,Class).
+predicate(physical-region,is,Class).
+predicate(quale,is,Class).
+predicate(quality,is,Class).
+predicate(region,is,Class).
+predicate(region,SubClassOf,abstract).
+predicate(space-region,is,Class).
+predicate(space-region,SubClassOf,physical-region,).
+predicate(space-region,SubClassOf,has-for-part only space-region,).
+predicate(space-region,SubClassOf,is-the-quality-location-of-during only spatial-location).
+predicate(spatial-location,is,Class).
+predicate(temporal-region,is,Class).
+predicate(time-interval,is,Class).
+predicate(time-interval,SubClassOf,temporal-region).
+predicate(human,is,Class).
+predicate(coded-score,is,Class).
+predicate(coded-score,SubClassOf,scale-item).
+predicate(numerical-score,is,Class).
+predicate(qualitative-scale-item,is,Class).
+predicate(qualitative-scale-item,SubClassOf,scale-item).
+predicate(quantitative-scale-item,is,Class).
+predicate(quantitative-scale-item,SubClassOf,scale-item).
+predicate(scale,is,Class).
+predicate(scale-item,is,Class).
+predicate(scale-item,SubClassOf,quale,).
+predicate(scale-item,SubClassOf,is-an-atomic-part-of exactly 1 scale).
+predicate(score-with-unit-of-measure,is,Class).
+predicate(score-with-unit-of-measure,SubClassOf,numerical-score,).
+predicate(score-with-unit-of-measure,SubClassOf,scalar-quale).
+predicate(score-without-unit-of-measure,is,Class).
+predicate(score-without-unit-of-measure,SubClassOf,number).
+predicate(acronym,is,Class).
+predicate(acronym,SubClassOf,name).
+predicate(artefact,is,Class).
+predicate(article,is,Class).
+predicate(article,SubClassOf,textual-discourse,).
+predicate(article,SubClassOf,is-a-part-of-during some publication).
+predicate(asking,is,Class).
+predicate(complex-number,is,Class).
+predicate(complex-number,SubClassOf,number).
+predicate(conceptual-action,is,Class).
+predicate(date,is,Class).
+predicate(deliberate-producing,is,Class).
+predicate(exacting,is,Class).
+predicate(exacting,SubClassOf,asking).
+predicate(imaginary-number,is,Class).
+predicate(imaginary-number,SubClassOf,number).
+predicate(manufacturing,is,Class).
+predicate(manufacturing,SubClassOf,deliberate-producing).
+predicate(name,is,Class).
+predicate(noun,is,Class).
+predicate(number,is,Class).
+predicate(number,SubClassOf,quale).
+predicate(publication,is,Class).
+predicate(real-number,is,Class).
+predicate(real-number,SubClassOf,number).
+predicate(requesting,is,Class).
+predicate(requesting,SubClassOf,asking).
+predicate(scalar-quale,is,Class).
+predicate(scalar-quale,SubClassOf,quale,).
+predicate(scalar-quale,SubClassOf,has-for-magnitude some number,).
+predicate(scalar-quale,SubClassOf,has-for-unit some unit-of-measure).
+predicate(scientific-article,is,Class).
+predicate(scientific-article,SubClassOf,article).
+predicate(successful-action,is,Class).
+predicate(successfully-manufacturing,is,Class).
+predicate(successfully-manufacturing,SubClassOf,manufacturing,).
+predicate(successfully-manufacturing,SubClassOf,successful-action,).
+predicate(successfully-manufacturing,SubClassOf,successfully-producing).
+predicate(successfully-producing,is,Class).
+predicate(supervisor,is,Class).
+predicate(textual-discourse,is,Class).
+predicate(unit-of-measure,is,Class).
+predicate(unit-of-measure,SubClassOf,abstract).
+predicate(version-number,is,Class).
+predicate(version-number,SubClassOf,noun,).
+predicate(version-number,SubClassOf,is-a-version-number-of some artefact).
+predicate(BDI-II-10v1,is,Class).
+predicate(BDI-II-11v1,is,Class).
+predicate(BDI-II-12v1,is,Class).
+predicate(BDI-II-13v1,is,Class).
+predicate(BDI-II-14v1,is,Class).
+predicate(BDI-II-15v1,is,Class).
+predicate(BDI-II-16v1,is,Class).
+predicate(BDI-II-17v1,is,Class).
+predicate(BDI-II-18v1,is,Class).
+predicate(BDI-II-19v1,is,Class).
+predicate(BDI-II-1v1,is,Class).
+predicate(BDI-II-20v1,is,Class).
+predicate(BDI-II-21v1,is,Class).
+predicate(BDI-II-2v1,is,Class).
+predicate(BDI-II-3v1,is,Class).
+predicate(BDI-II-4v1,is,Class).
+predicate(BDI-II-5v1,is,Class).
+predicate(BDI-II-6v1,is,Class).
+predicate(BDI-II-7v1,is,Class).
+predicate(BDI-II-8v1,is,Class).
+predicate(BDI-II-9v1,is,Class).
+predicate(BDI-IIv1,is,Class).
+predicate(CDR-CA-v1,is,Class).
+predicate(CDR-HH-v1,is,Class).
+predicate(CDR-J-v1,is,Class).
+predicate(CDR-M-v1,is,Class).
+predicate(CDR-O-v1,is,Class).
+predicate(CDR-PC-v1,is,Class).
+predicate(CDR-SoBv1,is,Class).
+predicate(CFT-Cv2,is,Class).
+predicate(CFT-Mv2,is,Class).
+predicate(EDSS-1v1,is,Class).
+predicate(EDSS-2v1,is,Class).
+predicate(EDSS-3v1,is,Class).
+predicate(EDSS-4v1,is,Class).
+predicate(EDSS-5v1,is,Class).
+predicate(EDSS-6v1,is,Class).
+predicate(EDSS-7v1,is,Class).
+predicate(EDSSv1,is,Class).
+predicate(scale-BDI-II-10v1,is,Class).
+predicate(scale-BDI-II-10v1,SubClassOf,scale,).
+predicate(scale-BDI-II-10v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-10v1-0,).
+predicate(scale-BDI-II-10v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-10v1-1,).
+predicate(scale-BDI-II-10v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-10v1-2,).
+predicate(scale-BDI-II-10v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-10v1-3,).
+predicate(scale-BDI-II-10v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-10v1-3,).
+predicate(scale-BDI-II-10v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-10v1-0,).
+predicate(scale-BDI-II-10v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-10v1).
+predicate(scale-BDI-II-11v1,is,Class).
+predicate(scale-BDI-II-11v1,SubClassOf,scale,).
+predicate(scale-BDI-II-11v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-11v1-0,).
+predicate(scale-BDI-II-11v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-11v1-1,).
+predicate(scale-BDI-II-11v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-11v1-2,).
+predicate(scale-BDI-II-11v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-11v1-3,).
+predicate(scale-BDI-II-11v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-11v1-3,).
+predicate(scale-BDI-II-11v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-11v1-0,).
+predicate(scale-BDI-II-11v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-11v1).
+predicate(scale-BDI-II-12v1,is,Class).
+predicate(scale-BDI-II-12v1,SubClassOf,scale,).
+predicate(scale-BDI-II-12v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-12v1-0,).
+predicate(scale-BDI-II-12v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-12v1-1,).
+predicate(scale-BDI-II-12v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-12v1-2,).
+predicate(scale-BDI-II-12v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-12v1-3,).
+predicate(scale-BDI-II-12v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-12v1-3,).
+predicate(scale-BDI-II-12v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-12v1-0,).
+predicate(scale-BDI-II-12v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-12v1).
+predicate(scale-BDI-II-13v1,is,Class).
+predicate(scale-BDI-II-13v1,SubClassOf,scale,).
+predicate(scale-BDI-II-13v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-13v1-0,).
+predicate(scale-BDI-II-13v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-13v1-1,).
+predicate(scale-BDI-II-13v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-13v1-2,).
+predicate(scale-BDI-II-13v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-13v1-3,).
+predicate(scale-BDI-II-13v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-13v1-3,).
+predicate(scale-BDI-II-13v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-13v1-0,).
+predicate(scale-BDI-II-13v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-13v1).
+predicate(scale-BDI-II-14v1,is,Class).
+predicate(scale-BDI-II-14v1,SubClassOf,scale,).
+predicate(scale-BDI-II-14v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-14v1-0,).
+predicate(scale-BDI-II-14v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-14v1-1,).
+predicate(scale-BDI-II-14v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-14v1-2,).
+predicate(scale-BDI-II-14v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-14v1-3,).
+predicate(scale-BDI-II-14v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-14v1-3,).
+predicate(scale-BDI-II-14v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-14v1-0,).
+predicate(scale-BDI-II-14v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-14v1).
+predicate(scale-BDI-II-15v1,is,Class).
+predicate(scale-BDI-II-15v1,SubClassOf,scale,).
+predicate(scale-BDI-II-15v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-15v1-0,).
+predicate(scale-BDI-II-15v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-15v1-1,).
+predicate(scale-BDI-II-15v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-15v1-2,).
+predicate(scale-BDI-II-15v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-15v1-3,).
+predicate(scale-BDI-II-15v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-15v1-3,).
+predicate(scale-BDI-II-15v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-15v1-0,).
+predicate(scale-BDI-II-15v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-15v1).
+predicate(scale-BDI-II-16v1,is,Class).
+predicate(scale-BDI-II-16v1,SubClassOf,scale,).
+predicate(scale-BDI-II-16v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-16v1-0,).
+predicate(scale-BDI-II-16v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-16v1-1a,).
+predicate(scale-BDI-II-16v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-16v1-1b,).
+predicate(scale-BDI-II-16v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-16v1-2a,).
+predicate(scale-BDI-II-16v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-16v1-2b,).
+predicate(scale-BDI-II-16v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-16v1-3a,).
+predicate(scale-BDI-II-16v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-16v1-3b,).
+predicate(scale-BDI-II-16v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-16v1-3b,).
+predicate(scale-BDI-II-16v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-16v1-0,).
+predicate(scale-BDI-II-16v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-16v1).
+predicate(scale-BDI-II-17v1,is,Class).
+predicate(scale-BDI-II-17v1,SubClassOf,scale,).
+predicate(scale-BDI-II-17v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-17v1-0,).
+predicate(scale-BDI-II-17v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-17v1-1,).
+predicate(scale-BDI-II-17v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-17v1-2,).
+predicate(scale-BDI-II-17v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-17v1-3,).
+predicate(scale-BDI-II-17v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-17v1-3,).
+predicate(scale-BDI-II-17v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-17v1-0,).
+predicate(scale-BDI-II-17v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-17v1).
+predicate(scale-BDI-II-18v1,is,Class).
+predicate(scale-BDI-II-18v1,SubClassOf,scale,).
+predicate(scale-BDI-II-18v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-18v1-0,).
+predicate(scale-BDI-II-18v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-18v1-1a,).
+predicate(scale-BDI-II-18v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-18v1-1b,).
+predicate(scale-BDI-II-18v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-18v1-2a,).
+predicate(scale-BDI-II-18v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-18v1-2b,).
+predicate(scale-BDI-II-18v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-18v1-3a,).
+predicate(scale-BDI-II-18v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-18v1-3b,).
+predicate(scale-BDI-II-18v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-18v1-3b,).
+predicate(scale-BDI-II-18v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-18v1-0,).
+predicate(scale-BDI-II-18v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-18v1).
+predicate(scale-BDI-II-19v1,is,Class).
+predicate(scale-BDI-II-19v1,SubClassOf,scale,).
+predicate(scale-BDI-II-19v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-19v1-0,).
+predicate(scale-BDI-II-19v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-19v1-1,).
+predicate(scale-BDI-II-19v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-19v1-2,).
+predicate(scale-BDI-II-19v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-19v1-3,).
+predicate(scale-BDI-II-19v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-19v1-3,).
+predicate(scale-BDI-II-19v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-19v1-0,).
+predicate(scale-BDI-II-19v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-19v1).
+predicate(scale-BDI-II-1v1,is,Class).
+predicate(scale-BDI-II-1v1,SubClassOf,scale,).
+predicate(scale-BDI-II-1v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-1v1-0,).
+predicate(scale-BDI-II-1v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-1v1-1,).
+predicate(scale-BDI-II-1v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-1v1-2,).
+predicate(scale-BDI-II-1v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-1v1-3,).
+predicate(scale-BDI-II-1v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-1v1-3,).
+predicate(scale-BDI-II-1v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-1v1-0,).
+predicate(scale-BDI-II-1v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-1v1).
+predicate(scale-BDI-II-20v1,is,Class).
+predicate(scale-BDI-II-20v1,SubClassOf,scale,).
+predicate(scale-BDI-II-20v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-20v1-0,).
+predicate(scale-BDI-II-20v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-20v1-1,).
+predicate(scale-BDI-II-20v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-20v1-2,).
+predicate(scale-BDI-II-20v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-20v1-3,).
+predicate(scale-BDI-II-20v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-20v1-3,).
+predicate(scale-BDI-II-20v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-20v1-0,).
+predicate(scale-BDI-II-20v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-20v1).
+predicate(scale-BDI-II-21v1,is,Class).
+predicate(scale-BDI-II-21v1,SubClassOf,scale,).
+predicate(scale-BDI-II-21v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-21v1-0,).
+predicate(scale-BDI-II-21v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-21v1-1,).
+predicate(scale-BDI-II-21v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-21v1-2,).
+predicate(scale-BDI-II-21v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-21v1-3,).
+predicate(scale-BDI-II-21v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-21v1-3,).
+predicate(scale-BDI-II-21v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-21v1-0,).
+predicate(scale-BDI-II-21v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-21v1).
+predicate(scale-BDI-II-2v1,is,Class).
+predicate(scale-BDI-II-2v1,SubClassOf,scale,).
+predicate(scale-BDI-II-2v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-2v1-0,).
+predicate(scale-BDI-II-2v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-2v1-1,).
+predicate(scale-BDI-II-2v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-2v1-2,).
+predicate(scale-BDI-II-2v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-2v1-3,).
+predicate(scale-BDI-II-2v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-2v1-3,).
+predicate(scale-BDI-II-2v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-2v1-0,).
+predicate(scale-BDI-II-2v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-2v1).
+predicate(scale-BDI-II-3v1,is,Class).
+predicate(scale-BDI-II-3v1,SubClassOf,scale,).
+predicate(scale-BDI-II-3v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-3v1-0,).
+predicate(scale-BDI-II-3v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-3v1-1,).
+predicate(scale-BDI-II-3v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-3v1-2,).
+predicate(scale-BDI-II-3v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-3v1-3,).
+predicate(scale-BDI-II-3v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-3v1-3,).
+predicate(scale-BDI-II-3v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-3v1-0,).
+predicate(scale-BDI-II-3v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-3v1).
+predicate(scale-BDI-II-4v1,is,Class).
+predicate(scale-BDI-II-4v1,SubClassOf,scale,).
+predicate(scale-BDI-II-4v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-4v1-0,).
+predicate(scale-BDI-II-4v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-4v1-1,).
+predicate(scale-BDI-II-4v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-4v1-2,).
+predicate(scale-BDI-II-4v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-4v1-3,).
+predicate(scale-BDI-II-4v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-4v1-3,).
+predicate(scale-BDI-II-4v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-4v1-0,).
+predicate(scale-BDI-II-4v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-4v1).
+predicate(scale-BDI-II-5v1,is,Class).
+predicate(scale-BDI-II-5v1,SubClassOf,scale,).
+predicate(scale-BDI-II-5v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-5v1-0,).
+predicate(scale-BDI-II-5v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-5v1-1,).
+predicate(scale-BDI-II-5v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-5v1-2,).
+predicate(scale-BDI-II-5v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-5v1-3,).
+predicate(scale-BDI-II-5v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-5v1-3,).
+predicate(scale-BDI-II-5v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-5v1-0,).
+predicate(scale-BDI-II-5v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-5v1).
+predicate(scale-BDI-II-6v1,is,Class).
+predicate(scale-BDI-II-6v1,SubClassOf,scale,).
+predicate(scale-BDI-II-6v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-6v1-0,).
+predicate(scale-BDI-II-6v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-6v1-1,).
+predicate(scale-BDI-II-6v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-6v1-2,).
+predicate(scale-BDI-II-6v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-6v1-3,).
+predicate(scale-BDI-II-6v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-6v1-3,).
+predicate(scale-BDI-II-6v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-6v1-0,).
+predicate(scale-BDI-II-6v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-6v1).
+predicate(scale-BDI-II-7v1,is,Class).
+predicate(scale-BDI-II-7v1,SubClassOf,scale,).
+predicate(scale-BDI-II-7v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-7v1-0,).
+predicate(scale-BDI-II-7v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-7v1-1,).
+predicate(scale-BDI-II-7v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-7v1-2,).
+predicate(scale-BDI-II-7v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-7v1-3,).
+predicate(scale-BDI-II-7v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-7v1-3,).
+predicate(scale-BDI-II-7v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-7v1-0,).
+predicate(scale-BDI-II-7v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-7v1).
+predicate(scale-BDI-II-8v1,is,Class).
+predicate(scale-BDI-II-8v1,SubClassOf,scale,).
+predicate(scale-BDI-II-8v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-8v1-0,).
+predicate(scale-BDI-II-8v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-8v1-1,).
+predicate(scale-BDI-II-8v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-8v1-2,).
+predicate(scale-BDI-II-8v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-8v1-3,).
+predicate(scale-BDI-II-8v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-8v1-3,).
+predicate(scale-BDI-II-8v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-8v1-0,).
+predicate(scale-BDI-II-8v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-8v1).
+predicate(scale-BDI-II-9v1,is,Class).
+predicate(scale-BDI-II-9v1,SubClassOf,scale,).
+predicate(scale-BDI-II-9v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-9v1-0,).
+predicate(scale-BDI-II-9v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-9v1-1,).
+predicate(scale-BDI-II-9v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-9v1-2,).
+predicate(scale-BDI-II-9v1,SubClassOf,has-for-atomic-part value scale-item-BDI-II-9v1-3,).
+predicate(scale-BDI-II-9v1,SubClassOf,has-for-maximum-scale-item value scale-item-BDI-II-9v1-3,).
+predicate(scale-BDI-II-9v1,SubClassOf,has-for-minimum-scale-item value scale-item-BDI-II-9v1-0,).
+predicate(scale-BDI-II-9v1,SubClassOf,is-the-scale-of exactly 1 BDI-II-9v1).
+predicate(scale-BDI-IIv1,is,Class).
+predicate(scale-BDI-IIv1,SubClassOf,scale,).
+predicate(scale-BDI-IIv1,SubClassOf,is-the-scale-of exactly 1 BDI-IIv1).
+predicate(scale-CDR-CA-v1,is,Class).
+predicate(scale-CDR-CA-v1,SubClassOf,scale,).
+predicate(scale-CDR-CA-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-CA-v1-Mild-1,).
+predicate(scale-CDR-CA-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-CA-v1-Moderate-2,).
+predicate(scale-CDR-CA-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-CA-v1-None-0,).
+predicate(scale-CDR-CA-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-CA-v1-Questionable-0.5,).
+predicate(scale-CDR-CA-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-CA-v1-Severe-3,).
+predicate(scale-CDR-CA-v1,SubClassOf,has-for-maximum-scale-item value scale-item-CDR-CA-v1-Severe-3,).
+predicate(scale-CDR-CA-v1,SubClassOf,has-for-minimum-scale-item value scale-item-CDR-CA-v1-None-0,).
+predicate(scale-CDR-CA-v1,SubClassOf,is-the-scale-of exactly 1 CDR-CA-v1).
+predicate(scale-CDR-HH-v1,is,Class).
+predicate(scale-CDR-HH-v1,SubClassOf,scale,).
+predicate(scale-CDR-HH-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-HH-v1-Mild-1,).
+predicate(scale-CDR-HH-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-HH-v1-Moderate-2,).
+predicate(scale-CDR-HH-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-HH-v1-None-0,).
+predicate(scale-CDR-HH-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-HH-v1-Questionable-0.5,).
+predicate(scale-CDR-HH-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-HH-v1-Severe-3,).
+predicate(scale-CDR-HH-v1,SubClassOf,has-for-maximum-scale-item value scale-item-CDR-HH-v1-Severe-3,).
+predicate(scale-CDR-HH-v1,SubClassOf,has-for-minimum-scale-item value scale-item-CDR-HH-v1-None-0,).
+predicate(scale-CDR-HH-v1,SubClassOf,is-the-scale-of exactly 1 CDR-HH-v1).
+predicate(scale-CDR-J-v1,is,Class).
+predicate(scale-CDR-J-v1,SubClassOf,scale,).
+predicate(scale-CDR-J-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-J-v1-Mild-1,).
+predicate(scale-CDR-J-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-J-v1-Moderate-2,).
+predicate(scale-CDR-J-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-J-v1-None-0,).
+predicate(scale-CDR-J-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-J-v1-Questionable-0.5,).
+predicate(scale-CDR-J-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-J-v1-Severe-3,).
+predicate(scale-CDR-J-v1,SubClassOf,has-for-maximum-scale-item value scale-item-CDR-J-v1-Severe-3,).
+predicate(scale-CDR-J-v1,SubClassOf,has-for-minimum-scale-item value scale-item-CDR-J-v1-None-0,).
+predicate(scale-CDR-J-v1,SubClassOf,is-the-scale-of exactly 1 CDR-J-v1).
+predicate(scale-CDR-M-v1,is,Class).
+predicate(scale-CDR-M-v1,SubClassOf,scale,).
+predicate(scale-CDR-M-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-M-v1-Mild-1,).
+predicate(scale-CDR-M-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-M-v1-Moderate-2,).
+predicate(scale-CDR-M-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-M-v1-None-0,).
+predicate(scale-CDR-M-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-M-v1-Questionable-0.5,).
+predicate(scale-CDR-M-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-M-v1-Severe-3,).
+predicate(scale-CDR-M-v1,SubClassOf,has-for-maximum-scale-item value scale-item-CDR-M-v1-Severe-3,).
+predicate(scale-CDR-M-v1,SubClassOf,has-for-minimum-scale-item value scale-item-CDR-M-v1-None-0,).
+predicate(scale-CDR-M-v1,SubClassOf,is-the-scale-of exactly 1 CDR-M-v1).
+predicate(scale-CDR-O-v1,is,Class).
+predicate(scale-CDR-O-v1,SubClassOf,scale,).
+predicate(scale-CDR-O-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-O-v1-Mild-1,).
+predicate(scale-CDR-O-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-O-v1-Moderate-2,).
+predicate(scale-CDR-O-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-O-v1-None-0,).
+predicate(scale-CDR-O-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-O-v1-Questionable-0.5,).
+predicate(scale-CDR-O-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-O-v1-Severe-3,).
+predicate(scale-CDR-O-v1,SubClassOf,has-for-maximum-scale-item value scale-item-CDR-O-v1-Severe-3,).
+predicate(scale-CDR-O-v1,SubClassOf,has-for-minimum-scale-item value scale-item-CDR-O-v1-None-0,).
+predicate(scale-CDR-O-v1,SubClassOf,is-the-scale-of exactly 1 CDR-O-v1).
+predicate(scale-CDR-PC-v1,is,Class).
+predicate(scale-CDR-PC-v1,SubClassOf,scale,).
+predicate(scale-CDR-PC-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-PC-v1-Mild-1,).
+predicate(scale-CDR-PC-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-PC-v1-Moderate-2,).
+predicate(scale-CDR-PC-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-PC-v1-None-0,).
+predicate(scale-CDR-PC-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-PC-v1-Questionable-0.5,).
+predicate(scale-CDR-PC-v1,SubClassOf,has-for-atomic-part value scale-item-CDR-PC-v1-Severe-3,).
+predicate(scale-CDR-PC-v1,SubClassOf,has-for-minimum-scale-item value scale-item-CDR-PC-v1-None-0,).
+predicate(scale-CDR-PC-v1,SubClassOf,is-the-scale-of exactly 1 CDR-PC-v1).
+predicate(scale-CDR-SoBv1,is,Class).
+predicate(scale-CDR-SoBv1,SubClassOf,scale,).
+predicate(scale-CDR-SoBv1,SubClassOf,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-0,).
+predicate(scale-CDR-SoBv1,SubClassOf,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-0.5,).
+predicate(scale-CDR-SoBv1,SubClassOf,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-1,).
+predicate(scale-CDR-SoBv1,SubClassOf,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-2,).
+predicate(scale-CDR-SoBv1,SubClassOf,has-for-atomic-part value scale-item-CDR-SoBv1-CDR-3,).
+predicate(scale-CDR-SoBv1,SubClassOf,has-for-maximum-scale-item value scale-item-CDR-SoBv1-CDR-3,).
+predicate(scale-CDR-SoBv1,SubClassOf,has-for-minimum-scale-item value scale-item-CDR-SoBv1-CDR-0,).
+predicate(scale-CDR-SoBv1,SubClassOf,is-the-scale-of exactly 1 CDR-SoBv1).
+predicate(scale-CFT-Cv2,is,Class).
+predicate(scale-CFT-Cv2,SubClassOf,scale,).
+predicate(scale-CFT-Cv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Cv2-I,).
+predicate(scale-CFT-Cv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Cv2-II,).
+predicate(scale-CFT-Cv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Cv2-III,).
+predicate(scale-CFT-Cv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Cv2-IV,).
+predicate(scale-CFT-Cv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Cv2-V,).
+predicate(scale-CFT-Cv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Cv2-VI,).
+predicate(scale-CFT-Cv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Cv2-VII,).
+predicate(scale-CFT-Cv2,SubClassOf,is-the-scale-of exactly 1 CFT-Cv2).
+predicate(scale-CFT-Mv2,is,Class).
+predicate(scale-CFT-Mv2,SubClassOf,scale,).
+predicate(scale-CFT-Mv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Mv2-I,).
+predicate(scale-CFT-Mv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Mv2-II,).
+predicate(scale-CFT-Mv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Mv2-III,).
+predicate(scale-CFT-Mv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Mv2-IV,).
+predicate(scale-CFT-Mv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Mv2-V,).
+predicate(scale-CFT-Mv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Mv2-VI,).
+predicate(scale-CFT-Mv2,SubClassOf,has-for-atomic-part value scale-item-CFT-Mv2-VII,).
+predicate(scale-CFT-Mv2,SubClassOf,is-the-scale-of exactly 1 CFT-Mv2).
+predicate(scale-EDSS-1v1,is,Class).
+predicate(scale-EDSS-1v1,SubClassOf,scale,).
+predicate(scale-EDSS-1v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-1v1-0,).
+predicate(scale-EDSS-1v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-1v1-1,).
+predicate(scale-EDSS-1v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-1v1-2,).
+predicate(scale-EDSS-1v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-1v1-3,).
+predicate(scale-EDSS-1v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-1v1-4,).
+predicate(scale-EDSS-1v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-1v1-5,).
+predicate(scale-EDSS-1v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-1v1-6,).
+predicate(scale-EDSS-1v1,SubClassOf,has-for-maximum-scale-item value scale-item-EDSS-1v1-6,).
+predicate(scale-EDSS-1v1,SubClassOf,has-for-minimum-scale-item value scale-item-EDSS-1v1-0,).
+predicate(scale-EDSS-1v1,SubClassOf,is-the-scale-of exactly 1 EDSS-1v1).
+predicate(scale-EDSS-2v1,is,Class).
+predicate(scale-EDSS-2v1,SubClassOf,scale,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-0,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-1,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-2a,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-2b,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-3a,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-3b,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-3c,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-4a,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-4b,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-2v1-5,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-maximum-scale-item value scale-item-EDSS-2v1-5,).
+predicate(scale-EDSS-2v1,SubClassOf,has-for-minimum-scale-item value scale-item-EDSS-2v1-0,).
+predicate(scale-EDSS-2v1,SubClassOf,is-the-scale-of exactly 1 EDSS-2v1).
+predicate(scale-EDSS-3v1,is,Class).
+predicate(scale-EDSS-3v1,SubClassOf,scale,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-0,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-1,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-2,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-3a,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-3b,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-4a,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-4b,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-4c,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-5a,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-5b,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-5c,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-3v1-6,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-maximum-scale-item value scale-item-EDSS-3v1-6,).
+predicate(scale-EDSS-3v1,SubClassOf,has-for-minimum-scale-item value scale-item-EDSS-3v1-0,).
+predicate(scale-EDSS-3v1,SubClassOf,is-the-scale-of exactly 1 EDSS-3v1).
+predicate(scale-EDSS-4v1,is,Class).
+predicate(scale-EDSS-4v1,SubClassOf,scale,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-4v1-0,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-4v1-1,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-4v1-2,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-4v1-3a,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-4v1-3b,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-4v1-3c,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-4v1-4,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-4v1-5,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-4v1-5b4a7b7208f5c486b4fa8a526466221baecb0931,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-maximum-scale-item value scale-item-EDSS-4v1-5,).
+predicate(scale-EDSS-4v1,SubClassOf,has-for-minimum-scale-item value scale-item-EDSS-4v1-0,).
+predicate(scale-EDSS-4v1,SubClassOf,is-the-scale-of exactly 1 EDSS-4v1).
+predicate(scale-EDSS-5v1,is,Class).
+predicate(scale-EDSS-5v1,SubClassOf,scale,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-0,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-1,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-2a,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-2b,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-3a,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-3b,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-4a,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-4b,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-5a,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-5b,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-5v1-6,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-maximum-scale-item value scale-item-EDSS-5v1-6,).
+predicate(scale-EDSS-5v1,SubClassOf,has-for-minimum-scale-item value scale-item-EDSS-5v1-0,).
+predicate(scale-EDSS-5v1,SubClassOf,is-the-scale-of exactly 1 EDSS-5v1).
+predicate(scale-EDSS-6v1,is,Class).
+predicate(scale-EDSS-6v1,SubClassOf,scale,).
+predicate(scale-EDSS-6v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-6v1-0,).
+predicate(scale-EDSS-6v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-6v1-1,).
+predicate(scale-EDSS-6v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-6v1-2,).
+predicate(scale-EDSS-6v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-6v1-3,).
+predicate(scale-EDSS-6v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-6v1-4,).
+predicate(scale-EDSS-6v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-6v1-5,).
+predicate(scale-EDSS-6v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-6v1-6,).
+predicate(scale-EDSS-6v1,SubClassOf,has-for-maximum-scale-item value scale-item-EDSS-6v1-6,).
+predicate(scale-EDSS-6v1,SubClassOf,has-for-minimum-scale-item value scale-item-EDSS-6v1-0,).
+predicate(scale-EDSS-6v1,SubClassOf,is-the-scale-of exactly 1 EDSS-6v1).
+predicate(scale-EDSS-7v1,is,Class).
+predicate(scale-EDSS-7v1,SubClassOf,scale,).
+predicate(scale-EDSS-7v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-7v1-0,).
+predicate(scale-EDSS-7v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-7v1-1a,).
+predicate(scale-EDSS-7v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-7v1-1b,).
+predicate(scale-EDSS-7v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-7v1-2,).
+predicate(scale-EDSS-7v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-7v1-3,).
+predicate(scale-EDSS-7v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-7v1-4,).
+predicate(scale-EDSS-7v1,SubClassOf,has-for-atomic-part value scale-item-EDSS-7v1-5,).
+predicate(scale-EDSS-7v1,SubClassOf,has-for-maximum-scale-item value scale-item-EDSS-7v1-5,).
+predicate(scale-EDSS-7v1,SubClassOf,has-for-minimum-scale-item value scale-item-EDSS-7v1-0,).
+predicate(scale-EDSS-7v1,SubClassOf,is-the-scale-of exactly 1 EDSS-7v1).
+predicate(scale-EDSSv1,is,Class).
+predicate(scale-EDSSv1,SubClassOf,scale,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-0.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-1.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-1.5,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-10.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-2.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-2.5,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-3.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-3.5,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-4.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-4.5,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-5.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-5.5,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-6.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-6.5,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-7.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-7.5,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-8.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-8.5,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-9.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-atomic-part value scale-item-EDSSv1-9.5,).
+predicate(scale-EDSSv1,SubClassOf,has-for-maximum-scale-item value scale-item-EDSSv1-10.0,).
+predicate(scale-EDSSv1,SubClassOf,has-for-minimum-scale-item value scale-item-EDSSv1-0.0,).
+predicate(scale-EDSSv1,SubClassOf,is-the-scale-of exactly 1 EDSSv1).
+predicate(MR-examination,is,Class).
+predicate(MR-examination,SubClassOf,examination).
+predicate(behavioural-examination,is,Class).
+predicate(behavioural-examination,SubClassOf,examination).
+predicate(centre,is,Class).
+predicate(cerebral-evoked-potential-examination,is,Class).
+predicate(cerebral-evoked-potential-examination,SubClassOf,examination).
+predicate(coordinator,is,Class).
+predicate(coordinator,SubClassOf,investigator).
+predicate(diagnosis-examination,is,Class).
+predicate(diagnosis-examination,SubClassOf,examination).
+predicate(evaluation-examination,is,Class).
+predicate(evaluation-examination,SubClassOf,examination).
+predicate(examination,is,Class).
+predicate(examination,SubClassOf,conceptual-action,).
+predicate(examination,SubClassOf,is-supervised-by-at some examination-executive,).
+predicate(examination,SubClassOf,affects-at exactly 1 subject,).
+predicate(examination,SubClassOf,has-for-agent-at exactly 1 centre,).
+predicate(examination,SubClassOf,has-for-date exactly 1 date).
+predicate(examination-executive,is,Class).
+predicate(examination-executive,SubClassOf,investigator).
+predicate(follow-up-examination,is,Class).
+predicate(follow-up-examination,SubClassOf,examination).
+predicate(group-name,is,Class).
+predicate(group-name,SubClassOf,name).
+predicate(healthy-volunteer,is,Class).
+predicate(healthy-volunteer,SubClassOf,human-subject).
+predicate(human-subject,is,Class).
+predicate(human-subject,SubClassOf,human,).
+predicate(human-subject,SubClassOf,subject).
+predicate(investigator,is,Class).
+predicate(investigator,SubClassOf,human,).
+predicate(investigator,SubClassOf,supervisor).
+predicate(laboratory-examination,is,Class).
+predicate(laboratory-examination,SubClassOf,examination).
+predicate(main-investigator,is,Class).
+predicate(main-investigator,SubClassOf,investigator).
+predicate(neuro-clinical-examination,is,Class).
+predicate(neuro-clinical-examination,SubClassOf,examination).
+predicate(patient,is,Class).
+predicate(patient,SubClassOf,human-subject).
+predicate(psychological-examination,is,Class).
+predicate(psychological-examination,SubClassOf,examination).
+predicate(researcher,is,Class).
+predicate(researcher,SubClassOf,human).
+predicate(study,is,Class).
+predicate(study-without-examination,is,Class).
+predicate(study-without-examination,SubClassOf,study).
+predicate(subject,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(scale-item-BDI-II-10v1-0,is,Individual).
+predicate(scale-item-BDI-II-10v1-1,is,Individual).
+predicate(scale-item-BDI-II-10v1-2,is,Individual).
+predicate(scale-item-BDI-II-10v1-3,is,Individual).
+predicate(scale-item-BDI-II-11v1-0,is,Individual).
+predicate(scale-item-BDI-II-11v1-1,is,Individual).
+predicate(scale-item-BDI-II-11v1-2,is,Individual).
+predicate(scale-item-BDI-II-11v1-3,is,Individual).
+predicate(scale-item-BDI-II-12v1-0,is,Individual).
+predicate(scale-item-BDI-II-12v1-1,is,Individual).
+predicate(scale-item-BDI-II-12v1-2,is,Individual).
+predicate(scale-item-BDI-II-12v1-3,is,Individual).
+predicate(scale-item-BDI-II-13v1-0,is,Individual).
+predicate(scale-item-BDI-II-13v1-1,is,Individual).
+predicate(scale-item-BDI-II-13v1-2,is,Individual).
+predicate(scale-item-BDI-II-13v1-3,is,Individual).
+predicate(scale-item-BDI-II-14v1-0,is,Individual).
+predicate(scale-item-BDI-II-14v1-1,is,Individual).
+predicate(scale-item-BDI-II-14v1-2,is,Individual).
+predicate(scale-item-BDI-II-14v1-3,is,Individual).
+predicate(scale-item-BDI-II-15v1-0,is,Individual).
+predicate(scale-item-BDI-II-15v1-1,is,Individual).
+predicate(scale-item-BDI-II-15v1-2,is,Individual).
+predicate(scale-item-BDI-II-15v1-3,is,Individual).
+predicate(scale-item-BDI-II-16v1-0,is,Individual).
+predicate(scale-item-BDI-II-16v1-1a,is,Individual).
+predicate(scale-item-BDI-II-16v1-1b,is,Individual).
+predicate(scale-item-BDI-II-16v1-2a,is,Individual).
+predicate(scale-item-BDI-II-16v1-2b,is,Individual).
+predicate(scale-item-BDI-II-16v1-3a,is,Individual).
+predicate(scale-item-BDI-II-16v1-3b,is,Individual).
+predicate(scale-item-BDI-II-17v1-0,is,Individual).
+predicate(scale-item-BDI-II-17v1-1,is,Individual).
+predicate(scale-item-BDI-II-17v1-2,is,Individual).
+predicate(scale-item-BDI-II-17v1-3,is,Individual).
+predicate(scale-item-BDI-II-18v1-0,is,Individual).
+predicate(scale-item-BDI-II-18v1-1a,is,Individual).
+predicate(scale-item-BDI-II-18v1-1b,is,Individual).
+predicate(scale-item-BDI-II-18v1-2a,is,Individual).
+predicate(scale-item-BDI-II-18v1-2b,is,Individual).
+predicate(scale-item-BDI-II-18v1-3a,is,Individual).
+predicate(scale-item-BDI-II-18v1-3b,is,Individual).
+predicate(scale-item-BDI-II-19v1-0,is,Individual).
+predicate(scale-item-BDI-II-19v1-1,is,Individual).
+predicate(scale-item-BDI-II-19v1-2,is,Individual).
+predicate(scale-item-BDI-II-19v1-3,is,Individual).
+predicate(scale-item-BDI-II-1v1-0,is,Individual).
+predicate(scale-item-BDI-II-1v1-1,is,Individual).
+predicate(scale-item-BDI-II-1v1-2,is,Individual).
+predicate(scale-item-BDI-II-1v1-3,is,Individual).
+predicate(scale-item-BDI-II-20v1-0,is,Individual).
+predicate(scale-item-BDI-II-20v1-1,is,Individual).
+predicate(scale-item-BDI-II-20v1-2,is,Individual).
+predicate(scale-item-BDI-II-20v1-3,is,Individual).
+predicate(scale-item-BDI-II-21v1-0,is,Individual).
+predicate(scale-item-BDI-II-21v1-1,is,Individual).
+predicate(scale-item-BDI-II-21v1-2,is,Individual).
+predicate(scale-item-BDI-II-21v1-3,is,Individual).
+predicate(scale-item-BDI-II-2v1-0,is,Individual).
+predicate(scale-item-BDI-II-2v1-1,is,Individual).
+predicate(scale-item-BDI-II-2v1-2,is,Individual).
+predicate(scale-item-BDI-II-2v1-3,is,Individual).
+predicate(scale-item-BDI-II-3v1-0,is,Individual).
+predicate(scale-item-BDI-II-3v1-1,is,Individual).
+predicate(scale-item-BDI-II-3v1-2,is,Individual).
+predicate(scale-item-BDI-II-3v1-3,is,Individual).
+predicate(scale-item-BDI-II-4v1-0,is,Individual).
+predicate(scale-item-BDI-II-4v1-1,is,Individual).
+predicate(scale-item-BDI-II-4v1-2,is,Individual).
+predicate(scale-item-BDI-II-4v1-3,is,Individual).
+predicate(scale-item-BDI-II-5v1-0,is,Individual).
+predicate(scale-item-BDI-II-5v1-1,is,Individual).
+predicate(scale-item-BDI-II-5v1-2,is,Individual).
+predicate(scale-item-BDI-II-5v1-3,is,Individual).
+predicate(scale-item-BDI-II-6v1-0,is,Individual).
+predicate(scale-item-BDI-II-6v1-1,is,Individual).
+predicate(scale-item-BDI-II-6v1-2,is,Individual).
+predicate(scale-item-BDI-II-6v1-3,is,Individual).
+predicate(scale-item-BDI-II-7v1-0,is,Individual).
+predicate(scale-item-BDI-II-7v1-1,is,Individual).
+predicate(scale-item-BDI-II-7v1-2,is,Individual).
+predicate(scale-item-BDI-II-7v1-3,is,Individual).
+predicate(scale-item-BDI-II-8v1-0,is,Individual).
+predicate(scale-item-BDI-II-8v1-1,is,Individual).
+predicate(scale-item-BDI-II-8v1-2,is,Individual).
+predicate(scale-item-BDI-II-8v1-3,is,Individual).
+predicate(scale-item-BDI-II-9v1-0,is,Individual).
+predicate(scale-item-BDI-II-9v1-1,is,Individual).
+predicate(scale-item-BDI-II-9v1-2,is,Individual).
+predicate(scale-item-BDI-II-9v1-3,is,Individual).
+predicate(scale-item-CDR-CA-v1-Mild-1,is,Individual).
+predicate(scale-item-CDR-CA-v1-Moderate-2,is,Individual).
+predicate(scale-item-CDR-CA-v1-None-0,is,Individual).
+predicate(scale-item-CDR-CA-v1-Questionable-0.5,is,Individual).
+predicate(scale-item-CDR-CA-v1-Severe-3,is,Individual).
+predicate(scale-item-CDR-HH-v1-Mild-1,is,Individual).
+predicate(scale-item-CDR-HH-v1-Moderate-2,is,Individual).
+predicate(scale-item-CDR-HH-v1-None-0,is,Individual).
+predicate(scale-item-CDR-HH-v1-Questionable-0.5,is,Individual).
+predicate(scale-item-CDR-HH-v1-Severe-3,is,Individual).
+predicate(scale-item-CDR-J-v1-Mild-1,is,Individual).
+predicate(scale-item-CDR-J-v1-Moderate-2,is,Individual).
+predicate(scale-item-CDR-J-v1-None-0,is,Individual).
+predicate(scale-item-CDR-J-v1-Questionable-0.5,is,Individual).
+predicate(scale-item-CDR-J-v1-Severe-3,is,Individual).
+predicate(scale-item-CDR-M-v1-Mild-1,is,Individual).
+predicate(scale-item-CDR-M-v1-Moderate-2,is,Individual).
+predicate(scale-item-CDR-M-v1-None-0,is,Individual).
+predicate(scale-item-CDR-M-v1-Questionable-0.5,is,Individual).
+predicate(scale-item-CDR-M-v1-Severe-3,is,Individual).
+predicate(scale-item-CDR-O-v1-Mild-1,is,Individual).
+predicate(scale-item-CDR-O-v1-Moderate-2,is,Individual).
+predicate(scale-item-CDR-O-v1-None-0,is,Individual).
+predicate(scale-item-CDR-O-v1-Questionable-0.5,is,Individual).
+predicate(scale-item-CDR-O-v1-Severe-3,is,Individual).
+predicate(scale-item-CDR-PC-v1-Mild-1,is,Individual).
+predicate(scale-item-CDR-PC-v1-Moderate-2,is,Individual).
+predicate(scale-item-CDR-PC-v1-None-0,is,Individual).
+predicate(scale-item-CDR-PC-v1-Questionable-0.5,is,Individual).
+predicate(scale-item-CDR-PC-v1-Severe-3,is,Individual).
+predicate(scale-item-CDR-SoBv1-CDR-0,is,Individual).
+predicate(scale-item-CDR-SoBv1-CDR-0.5,is,Individual).
+predicate(scale-item-CDR-SoBv1-CDR-1,is,Individual).
+predicate(scale-item-CDR-SoBv1-CDR-2,is,Individual).
+predicate(scale-item-CDR-SoBv1-CDR-3,is,Individual).
+predicate(scale-item-CFT-Cv2-I,is,Individual).
+predicate(scale-item-CFT-Cv2-II,is,Individual).
+predicate(scale-item-CFT-Cv2-III,is,Individual).
+predicate(scale-item-CFT-Cv2-IV,is,Individual).
+predicate(scale-item-CFT-Cv2-V,is,Individual).
+predicate(scale-item-CFT-Cv2-VI,is,Individual).
+predicate(scale-item-CFT-Cv2-VII,is,Individual).
+predicate(scale-item-CFT-Mv2-I,is,Individual).
+predicate(scale-item-CFT-Mv2-II,is,Individual).
+predicate(scale-item-CFT-Mv2-III,is,Individual).
+predicate(scale-item-CFT-Mv2-IV,is,Individual).
+predicate(scale-item-CFT-Mv2-V,is,Individual).
+predicate(scale-item-CFT-Mv2-VI,is,Individual).
+predicate(scale-item-CFT-Mv2-VII,is,Individual).
+predicate(scale-item-EDSS-1v1-0,is,Individual).
+predicate(scale-item-EDSS-1v1-1,is,Individual).
+predicate(scale-item-EDSS-1v1-2,is,Individual).
+predicate(scale-item-EDSS-1v1-3,is,Individual).
+predicate(scale-item-EDSS-1v1-4,is,Individual).
+predicate(scale-item-EDSS-1v1-5,is,Individual).
+predicate(scale-item-EDSS-1v1-6,is,Individual).
+predicate(scale-item-EDSS-2v1-0,is,Individual).
+predicate(scale-item-EDSS-2v1-1,is,Individual).
+predicate(scale-item-EDSS-2v1-2a,is,Individual).
+predicate(scale-item-EDSS-2v1-2b,is,Individual).
+predicate(scale-item-EDSS-2v1-3a,is,Individual).
+predicate(scale-item-EDSS-2v1-3b,is,Individual).
+predicate(scale-item-EDSS-2v1-3c,is,Individual).
+predicate(scale-item-EDSS-2v1-4a,is,Individual).
+predicate(scale-item-EDSS-2v1-4b,is,Individual).
+predicate(scale-item-EDSS-2v1-5,is,Individual).
+predicate(scale-item-EDSS-3v1-0,is,Individual).
+predicate(scale-item-EDSS-3v1-1,is,Individual).
+predicate(scale-item-EDSS-3v1-2,is,Individual).
+predicate(scale-item-EDSS-3v1-3a,is,Individual).
+predicate(scale-item-EDSS-3v1-3b,is,Individual).
+predicate(scale-item-EDSS-3v1-4a,is,Individual).
+predicate(scale-item-EDSS-3v1-4b,is,Individual).
+predicate(scale-item-EDSS-3v1-4c,is,Individual).
+predicate(scale-item-EDSS-3v1-5a,is,Individual).
+predicate(scale-item-EDSS-3v1-5b,is,Individual).
+predicate(scale-item-EDSS-3v1-5c,is,Individual).
+predicate(scale-item-EDSS-3v1-6,is,Individual).
+predicate(scale-item-EDSS-4v1-0,is,Individual).
+predicate(scale-item-EDSS-4v1-1,is,Individual).
+predicate(scale-item-EDSS-4v1-2,is,Individual).
+predicate(scale-item-EDSS-4v1-3a,is,Individual).
+predicate(scale-item-EDSS-4v1-3b,is,Individual).
+predicate(scale-item-EDSS-4v1-3c,is,Individual).
+predicate(scale-item-EDSS-4v1-4,is,Individual).
+predicate(scale-item-EDSS-4v1-5,is,Individual).
+predicate(scale-item-EDSS-4v1-5b4a7b7208f5c486b4fa8a526466221baecb0931,is,Individual).
+predicate(scale-item-EDSS-5v1-0,is,Individual).
+predicate(scale-item-EDSS-5v1-1,is,Individual).
+predicate(scale-item-EDSS-5v1-2a,is,Individual).
+predicate(scale-item-EDSS-5v1-2b,is,Individual).
+predicate(scale-item-EDSS-5v1-3a,is,Individual).
+predicate(scale-item-EDSS-5v1-3b,is,Individual).
+predicate(scale-item-EDSS-5v1-4a,is,Individual).
+predicate(scale-item-EDSS-5v1-4b,is,Individual).
+predicate(scale-item-EDSS-5v1-5a,is,Individual).
+predicate(scale-item-EDSS-5v1-5b,is,Individual).
+predicate(scale-item-EDSS-5v1-6,is,Individual).
+predicate(scale-item-EDSS-6v1-0,is,Individual).
+predicate(scale-item-EDSS-6v1-1,is,Individual).
+predicate(scale-item-EDSS-6v1-2,is,Individual).
+predicate(scale-item-EDSS-6v1-3,is,Individual).
+predicate(scale-item-EDSS-6v1-4,is,Individual).
+predicate(scale-item-EDSS-6v1-5,is,Individual).
+predicate(scale-item-EDSS-6v1-6,is,Individual).
+predicate(scale-item-EDSS-7v1-0,is,Individual).
+predicate(scale-item-EDSS-7v1-1a,is,Individual).
+predicate(scale-item-EDSS-7v1-1b,is,Individual).
+predicate(scale-item-EDSS-7v1-2,is,Individual).
+predicate(scale-item-EDSS-7v1-3,is,Individual).
+predicate(scale-item-EDSS-7v1-4,is,Individual).
+predicate(scale-item-EDSS-7v1-5,is,Individual).
+predicate(scale-item-EDSSv1-0.0,is,Individual).
+predicate(scale-item-EDSSv1-1.0,is,Individual).
+predicate(scale-item-EDSSv1-1.5,is,Individual).
+predicate(scale-item-EDSSv1-10.0,is,Individual).
+predicate(scale-item-EDSSv1-2.0,is,Individual).
+predicate(scale-item-EDSSv1-2.5,is,Individual).
+predicate(scale-item-EDSSv1-3.0,is,Individual).
+predicate(scale-item-EDSSv1-3.5,is,Individual).
+predicate(scale-item-EDSSv1-4.0,is,Individual).
+predicate(scale-item-EDSSv1-4.5,is,Individual).
+predicate(scale-item-EDSSv1-5.0,is,Individual).
+predicate(scale-item-EDSSv1-5.5,is,Individual).
+predicate(scale-item-EDSSv1-6.0,is,Individual).
+predicate(scale-item-EDSSv1-6.5,is,Individual).
+predicate(scale-item-EDSSv1-7.0,is,Individual).
+predicate(scale-item-EDSSv1-7.5,is,Individual).
+predicate(scale-item-EDSSv1-8.0,is,Individual).
+predicate(scale-item-EDSSv1-8.5,is,Individual).
+predicate(scale-item-EDSSv1-9.0,is,Individual).
+predicate(scale-item-EDSSv1-9.5,is,Individual).
+predicate(scale-item-EDSSv1-9.5,DisjointClasses,abstract,endurant,perdurant,quality).
+predicate(scale-item-EDSSv1-9.5,DisjointClasses,MR-examination,behavioural-examination,cerebral-evoked-potential-examination,laboratory-examination,neuro-clinical-examination,psychological-examination).

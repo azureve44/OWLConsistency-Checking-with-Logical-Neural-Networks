@@ -1,0 +1,34 @@
+predicate(BFO_0000052,is,ObjectProperty).
+predicate(BFO_0000052,Domain,BFO_0000020).
+predicate(BFO_0000052,Range,BFO_0000004 and (not (BFO_0000006))).
+predicate(BFO_0000059,is,ObjectProperty).
+predicate(BFO_0000059,Domain,BFO_0000020).
+predicate(BFO_0000059,Range,BFO_0000031).
+predicate(BFO_0000079,is,ObjectProperty).
+predicate(BFO_0000079,SubPropertyOf,BFO_0000052).
+predicate(BFO_0000080,is,ObjectProperty).
+predicate(BFO_0000080,SubPropertyOf,BFO_0000052).
+predicate(BFO_0000081,is,ObjectProperty).
+predicate(BFO_0000081,SubPropertyOf,BFO_0000052).
+predicate(BFO_0000107,is,ObjectProperty).
+predicate(BFO_0000107,SubPropertyOf,BFO_0000052).
+predicate(BFO_0000164,is,ObjectProperty).
+predicate(BFO_0000164,SubPropertyOf,BFO_0000059).
+predicate(BFO_0000176,is,ObjectProperty).
+predicate(BFO_0000186,is,ObjectProperty).
+predicate(BFO_0000002,is,Class).
+predicate(BFO_0000004,is,Class).
+predicate(BFO_0000006,is,Class).
+predicate(BFO_0000017,is,Class).
+predicate(BFO_0000017,SubClassOf,BFO_0000020).
+predicate(BFO_0000019,is,Class).
+predicate(BFO_0000019,SubClassOf,BFO_0000020).
+predicate(BFO_0000020,is,Class).
+predicate(BFO_0000020,SubClassOf,BFO_0000002,).
+predicate(BFO_0000020,SubClassOf,BFO_0000052 some).
+predicate(BFO_0000020,SubClassOf,(BFO_0000004 and (not (BFO_0000006))),).
+predicate(BFO_0000020,SubClassOf,BFO_0000176 only (not (BFO_0000004 or BFO_0000031)),).
+predicate(BFO_0000020,SubClassOf,BFO_0000186 only (not (BFO_0000004 or BFO_0000031))).
+predicate(BFO_0000031,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,BFO_0000004,BFO_0000020,BFO_0000031).

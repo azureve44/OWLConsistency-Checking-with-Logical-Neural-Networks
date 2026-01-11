@@ -1,0 +1,98 @@
+predicate(hasContext,is,ObjectProperty).
+predicate(hasContext,SubPropertyOf,hasFeature).
+predicate(hasContext,Domain,AgitationInDementia).
+predicate(hasContext,Range,ContextOfAgitation).
+predicate(hasContext,InverseOf,isContextOf).
+predicate(hasDuration,is,ObjectProperty).
+predicate(hasDuration,SubPropertyOf,hasFeature).
+predicate(hasDuration,Domain,AgitationInDementia).
+predicate(hasDuration,Range,DurationOfAgitation).
+predicate(hasDuration,InverseOf,isDurationOf).
+predicate(hasEffect,is,ObjectProperty).
+predicate(hasEffect,Domain,AgitationInDementia).
+predicate(hasEffect,Range,EffectOfAgitation).
+predicate(hasEffect,InverseOf,isEffectOf).
+predicate(hasFeature,is,ObjectProperty).
+predicate(hasFeature,Domain,AgitationInDementia).
+predicate(hasFeature,Range,FeatureOfAgitation).
+predicate(hasFeature,InverseOf,isFeatureOf).
+predicate(hasFrequency,is,ObjectProperty).
+predicate(hasFrequency,SubPropertyOf,hasFeature).
+predicate(hasFrequency,Domain,AgitationInDementia).
+predicate(hasFrequency,Range,FrequencyOfAgitation).
+predicate(hasFrequency,InverseOf,isFrequencyOf).
+predicate(hasSeverity,is,ObjectProperty).
+predicate(hasSeverity,SubPropertyOf,hasFeature).
+predicate(hasSeverity,Domain,AgitationInDementia).
+predicate(hasSeverity,Range,SeverityOfAgitation).
+predicate(hasSeverity,InverseOf,isSeverityOf).
+predicate(isAgitationOf,is,ObjectProperty).
+predicate(isAgitationOf,Domain,AgitationInDementia).
+predicate(isAgitationOf,Range,PersonWithDementia).
+predicate(isAssessedBy,is,ObjectProperty).
+predicate(isAssessedBy,Domain,AgitationInDementia).
+predicate(isAssessedBy,Range,AgitationAssessmentTool).
+predicate(isCausedBy,is,ObjectProperty).
+predicate(isCausedBy,Domain,AgitationInDementia).
+predicate(isCausedBy,Range,AgitationCausativeFactor).
+predicate(isContextOf,is,ObjectProperty).
+predicate(isContextOf,InverseOf,hasContext).
+predicate(isDurationOf,is,ObjectProperty).
+predicate(isDurationOf,InverseOf,hasDuration).
+predicate(isEffectOf,is,ObjectProperty).
+predicate(isEffectOf,InverseOf,hasEffect).
+predicate(isFeatureOf,is,ObjectProperty).
+predicate(isFeatureOf,InverseOf,hasFeature).
+predicate(isFrequencyOf,is,ObjectProperty).
+predicate(isFrequencyOf,InverseOf,hasFrequency).
+predicate(isSeverityOf,is,ObjectProperty).
+predicate(isSeverityOf,InverseOf,hasSeverity).
+predicate(isTreatedBy,is,ObjectProperty).
+predicate(isTreatedBy,Domain,AgitationInDementia).
+predicate(isTreatedBy,Range,Intervention).
+predicate(isTreatedBy,InverseOf,treats).
+predicate(treats,is,ObjectProperty).
+predicate(treats,InverseOf,isTreatedBy).
+predicate(AgitationAssessmentTool,is,Class).
+predicate(AgitationCausativeFactor,is,Class).
+predicate(AgitationInDementia,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,hasContext some ContextOfAgitation,).
+predicate(Thing,,is,hasDuration some DurationOfAgitation,).
+predicate(Thing,,is,hasEffect some EffectOfAgitation,).
+predicate(Thing,,is,hasFeature some FeatureOfAgitation,).
+predicate(Thing,,is,hasFrequency some FrequencyOfAgitation,).
+predicate(Thing,,is,hasSeverity some SeverityOfAgitation,).
+predicate(Thing,,is,isAgitationOf some PersonWithDementia,).
+predicate(Thing,,is,isAssessedBy some AgitationAssessmentTool,).
+predicate(Thing,,is,isCausedBy some AgitationCausativeFactor,).
+predicate(Thing,,is,isTreatedBy some Intervention,).
+predicate(Thing,,is,hasFeature only (hasFeature some FeatureOfAgitation)).
+predicate(AgitationManagementActivity,is,Class).
+predicate(AgitationManagementApproach,is,Class).
+predicate(BackgroundOfPersonWithDementia,is,Class).
+predicate(CommunicationTechnique,is,Class).
+predicate(ContextOfAgitation,is,Class).
+predicate(DisruptiveVocalisation,is,Class).
+predicate(DisruptiveVocalisation,SubClassOf,AgitationInDementia).
+predicate(DurationOfAgitation,is,Class).
+predicate(EffectOfAgitation,is,Class).
+predicate(EmotionalDistress,is,Class).
+predicate(EmotionalDistress,SubClassOf,AgitationInDementia).
+predicate(FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,is,Class).
+predicate(FeatureOfAgitation,is,Class).
+predicate(FeatureOfAgitation,SubClassOf,isFeatureOf only AgitationAssessmentTool).
+predicate(FeatureOfAgitation,DisjointWith,hasFeature some FeatureOfAgitation).
+predicate(FrequencyOfAgitation,is,Class).
+predicate(Intervention,is,Class).
+predicate(Person,is,Class).
+predicate(PersonWithDementia,is,Class).
+predicate(PhysicallyAggressiveBehaviour,is,Class).
+predicate(PhysicallyAggressiveBehaviour,SubClassOf,AgitationInDementia).
+predicate(PhysicallyNonaggressiveBehaviour,is,Class).
+predicate(PhysicallyNonaggressiveBehaviour,SubClassOf,AgitationInDementia,).
+predicate(PhysicallyNonaggressiveBehaviour,SubClassOf,hasFeature only AgitationAssessmentTool).
+predicate(SeverityOfAgitation,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,AgitationAssessmentTool,AgitationCausativeFactor,AgitationInDementia,AgitationManagementActivity,AgitationManagementApproach,BackgroundOfPersonWithDementia,CommunicationTechnique,EffectOfAgitation,FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,FeatureOfAgitation,Person).
+predicate(www.w3.org/2002/07/#,EquivalentClasses,AgitationAssessmentTool,AgitationCausativeFactor,AgitationInDementia,AgitationManagementActivity,AgitationManagementApproach,BackgroundOfPersonWithDementia,CommunicationTechnique,EffectOfAgitation,FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,FeatureOfAgitation,Person).

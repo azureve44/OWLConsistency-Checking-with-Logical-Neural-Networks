@@ -1,0 +1,160 @@
+predicate(BFO_0000058,is,ObjectProperty).
+predicate(BFO_0000058,Domain,BFO_0000031).
+predicate(BFO_0000058,Range,BFO_0000020).
+predicate(BFO_0000058,InverseOf,BFO_0000059).
+predicate(BFO_0000059,is,ObjectProperty).
+predicate(BFO_0000059,InverseOf,BFO_0000058).
+predicate(BFO_0000080,is,ObjectProperty).
+predicate(BFO_0000080,Domain,BFO_0000019).
+predicate(BFO_0000082,is,ObjectProperty).
+predicate(BFO_0000084,is,ObjectProperty).
+predicate(BFO_0000084,Domain,BFO_0000031).
+predicate(BFO_0000084,Range,BFO_0000004 and (not (BFO_0000006))).
+predicate(BFO_0000084,InverseOf,BFO_0000101).
+predicate(BFO_0000101,is,ObjectProperty).
+predicate(BFO_0000101,InverseOf,BFO_0000084).
+predicate(BFO_0000108,is,ObjectProperty).
+predicate(BFO_0000108,Domain,BFO_0000001).
+predicate(BFO_0000108,Range,BFO_0000008).
+predicate(BFO_0000108,InverseOf,BFO_0000157).
+predicate(BFO_0000117,is,ObjectProperty).
+predicate(BFO_0000126,is,ObjectProperty).
+predicate(BFO_0000126,Domain,BFO_0000011).
+predicate(BFO_0000126,Range,BFO_0000003).
+predicate(BFO_0000126,InverseOf,BFO_0000130).
+predicate(BFO_0000130,is,ObjectProperty).
+predicate(BFO_0000130,InverseOf,BFO_0000126).
+predicate(BFO_0000132,is,ObjectProperty).
+predicate(BFO_0000139,is,ObjectProperty).
+predicate(BFO_0000151,is,ObjectProperty).
+predicate(BFO_0000151,Domain,BFO_0000011).
+predicate(BFO_0000151,Range,BFO_0000006).
+predicate(BFO_0000151,InverseOf,BFO_0000152).
+predicate(BFO_0000152,is,ObjectProperty).
+predicate(BFO_0000152,InverseOf,BFO_0000151).
+predicate(BFO_0000153,is,ObjectProperty).
+predicate(BFO_0000153,SubPropertyOf,BFO_0000108).
+predicate(BFO_0000153,Domain,BFO_0000011).
+predicate(BFO_0000153,Range,BFO_0000008).
+predicate(BFO_0000153,InverseOf,BFO_0000154).
+predicate(BFO_0000154,is,ObjectProperty).
+predicate(BFO_0000154,SubPropertyOf,BFO_0000157).
+predicate(BFO_0000154,Domain,BFO_0000008).
+predicate(BFO_0000154,Range,BFO_0000011).
+predicate(BFO_0000154,InverseOf,BFO_0000153).
+predicate(BFO_0000155,is,ObjectProperty).
+predicate(BFO_0000155,SubPropertyOf,BFO_0000108).
+predicate(BFO_0000156,is,ObjectProperty).
+predicate(BFO_0000156,SubPropertyOf,BFO_0000157).
+predicate(BFO_0000156,Domain,BFO_0000008).
+predicate(BFO_0000156,Range,BFO_0000003).
+predicate(BFO_0000157,is,ObjectProperty).
+predicate(BFO_0000157,Domain,BFO_0000008).
+predicate(BFO_0000157,Range,BFO_0000001).
+predicate(BFO_0000157,InverseOf,BFO_0000108).
+predicate(BFO_0000165,is,ObjectProperty).
+predicate(BFO_0000165,SubPropertyOf,BFO_0000058).
+predicate(BFO_0000176,is,ObjectProperty).
+predicate(BFO_0000186,is,ObjectProperty).
+predicate(BFO_0000001,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,BFO_0000108 some BFO_0000008).
+predicate(BFO_0000002,is,Class).
+predicate(BFO_0000002,SubClassOf,BFO_0000001).
+predicate(BFO_0000003,is,Class).
+predicate(BFO_0000003,SubClassOf,BFO_0000001).
+predicate(BFO_0000004,is,Class).
+predicate(BFO_0000006,is,Class).
+predicate(BFO_0000008,is,Class).
+predicate(BFO_0000008,SubClassOf,BFO_0000003,).
+predicate(BFO_0000008,SubClassOf,BFO_0000117 only BFO_0000008,).
+predicate(BFO_0000008,SubClassOf,BFO_0000132 only BFO_0000008,).
+predicate(BFO_0000008,SubClassOf,BFO_0000155 Self ,).
+predicate(BFO_0000008,SubClassOf,BFO_0000156 Self).
+predicate(BFO_0000011,is,Class).
+predicate(BFO_0000011,SubClassOf,BFO_0000003,).
+predicate(BFO_0000011,SubClassOf,BFO_0000151 some BFO_0000006,).
+predicate(BFO_0000011,SubClassOf,BFO_0000153 some BFO_0000008,).
+predicate(BFO_0000011,SubClassOf,BFO_0000117 only BFO_0000011,).
+predicate(BFO_0000011,SubClassOf,BFO_0000132 only BFO_0000011,).
+predicate(BFO_0000011,SubClassOf,BFO_0000126 Self ,).
+predicate(BFO_0000011,SubClassOf,BFO_0000130 Self).
+predicate(BFO_0000015,is,Class).
+predicate(BFO_0000017,is,Class).
+predicate(BFO_0000017,DisjointWith,BFO_0000019).
+predicate(BFO_0000019,is,Class).
+predicate(BFO_0000019,SubClassOf,BFO_0000020,).
+predicate(BFO_0000019,SubClassOf,BFO_0000176 only (not (BFO_0000017)),).
+predicate(BFO_0000019,SubClassOf,BFO_0000186 only (not (BFO_0000017))).
+predicate(BFO_0000019,DisjointWith,BFO_0000017).
+predicate(BFO_0000020,is,Class).
+predicate(BFO_0000031,is,Class).
+predicate(BFO_0000031,SubClassOf,BFO_0000002,).
+predicate(BFO_0000031,SubClassOf,BFO_0000058 some BFO_0000020,).
+predicate(BFO_0000031,SubClassOf,BFO_0000176 only (not (BFO_0000004 or BFO_0000020)),).
+predicate(BFO_0000031,SubClassOf,BFO_0000186 only (not (BFO_0000004 or BFO_0000020))).
+predicate(BFO_0000035,is,Class).
+predicate(BFO_0000035,SubClassOf,BFO_0000003,).
+predicate(BFO_0000035,SubClassOf,BFO_0000108 only BFO_0000148,).
+predicate(BFO_0000035,SubClassOf,BFO_0000117 only BFO_0000035,).
+predicate(BFO_0000035,SubClassOf,BFO_0000130 only).
+predicate(BFO_0000035,SubClassOf,(BFO_0000011 and (BFO_0000139 some BFO_0000011)),).
+predicate(BFO_0000035,SubClassOf,BFO_0000132 only).
+predicate(BFO_0000035,SubClassOf,(BFO_0000015 or BFO_0000035)).
+predicate(BFO_0000038,is,Class).
+predicate(BFO_0000038,SubClassOf,BFO_0000008).
+predicate(BFO_0000038,DisjointWith,BFO_0000148).
+predicate(BFO_0000145,is,Class).
+predicate(BFO_0000145,SubClassOf,BFO_0000019).
+predicate(BFO_0000148,is,Class).
+predicate(BFO_0000148,SubClassOf,BFO_0000008).
+predicate(BFO_0000148,DisjointWith,BFO_0000038).
+predicate(CVDO_0000193,is,Class).
+predicate(CVDO_0000193,SubClassOf,BFO_0000019).
+predicate(FMA_12151,is,Class).
+predicate(FMA_12151,SubClassOf,FMA_86044,).
+predicate(FMA_12151,SubClassOf,BFO_0000082 some FMA_7100).
+predicate(FMA_14065,is,Class).
+predicate(FMA_18883,is,Class).
+predicate(FMA_18883,SubClassOf,FMA_78049).
+predicate(FMA_30313,is,Class).
+predicate(FMA_30313,SubClassOf,FMA_86187).
+predicate(FMA_49918,is,Class).
+predicate(FMA_49918,SubClassOf,FMA_30313).
+predicate(FMA_50720,is,Class).
+predicate(FMA_50801,is,Class).
+predicate(FMA_50801,SubClassOf,FMA_83153).
+predicate(FMA_66326,is,Class).
+predicate(FMA_66326,SubClassOf,FMA_50720).
+predicate(FMA_67611,is,Class).
+predicate(FMA_67611,SubClassOf,FMA_14065).
+predicate(FMA_7088,is,Class).
+predicate(FMA_7100,is,Class).
+predicate(FMA_7101,is,Class).
+predicate(FMA_7101,SubClassOf,FMA_7100).
+predicate(FMA_7110,is,Class).
+predicate(FMA_7110,SubClassOf,FMA_67611,).
+predicate(FMA_7110,SubClassOf,BFO_0000082 some FMA_7088).
+predicate(FMA_7233,is,Class).
+predicate(FMA_7233,SubClassOf,FMA_7110).
+predicate(FMA_7236,is,Class).
+predicate(FMA_7236,SubClassOf,FMA_7110).
+predicate(FMA_7246,is,Class).
+predicate(FMA_7246,SubClassOf,FMA_7110).
+predicate(FMA_78049,is,Class).
+predicate(FMA_83153,is,Class).
+predicate(FMA_86044,is,Class).
+predicate(FMA_86044,SubClassOf,FMA_86103,).
+predicate(FMA_86044,SubClassOf,BFO_0000082 some FMA_9462).
+predicate(FMA_86103,is,Class).
+predicate(FMA_86187,is,Class).
+predicate(FMA_9462,is,Class).
+predicate(FMA_9535,is,Class).
+predicate(FMA_9535,SubClassOf,FMA_12151).
+predicate(FMA_9558,is,Class).
+predicate(FMA_9558,SubClassOf,FMA_12151).
+predicate(IAO_0000121,is,Class).
+predicate(IAO_0000423,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,BFO_0000004,BFO_0000020,BFO_0000031).
+predicate(www.w3.org/2002/07/#,DisjointClasses,BFO_0000008,BFO_0000011,BFO_0000015,BFO_0000035).

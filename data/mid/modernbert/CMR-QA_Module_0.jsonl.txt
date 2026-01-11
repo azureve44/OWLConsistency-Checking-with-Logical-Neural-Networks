@@ -1,0 +1,319 @@
+dateTime is Datatype.
+double is Datatype.
+string is Datatype.
+acquiredAtCardiacCyclePhase is ObjectProperty.
+acquiredAtChamberLocation is ObjectProperty.
+acquiredAtView is ObjectProperty.
+hasCardiacImage is ObjectProperty.
+hasImageIssue is ObjectProperty.
+hasImagingDataset is ObjectProperty.
+hasObserver is ObjectProperty.
+hasPart is ObjectProperty.
+hasQualityData is ObjectProperty.
+isPartOf is ObjectProperty.
+mayInfluence is ObjectProperty.
+mayInfluence Domain Image_Quality_Issue.
+mayInfluence Range Cardiac_Image_Analysis_Outcome_Measures.
+observedIn is ObjectProperty.
+observedIn Domain Image_Quality_Issue.
+observedInCardiacCyclePhase is ObjectProperty.
+observedInChamber is ObjectProperty.
+observedInChamberLocation is ObjectProperty.
+observedInOrganComponent is ObjectProperty.
+observedInOrganComponent SubPropertyOf observedIn.
+observedInTime is ObjectProperty.
+observedInTime SubPropertyOf observedIn.
+observedInView is ObjectProperty.
+observedInView SubPropertyOf observedIn.
+hasLAQualityScore is DataProperty.
+hasLVQualityScore is DataProperty.
+hasQualityComment is DataProperty.
+hasQualityLevel is DataProperty.
+hasQualityScore is DataProperty.
+hasRAQualityScore is DataProperty.
+hasRVQualityScore is DataProperty.
+observedInSliceCardinality is DataProperty.
+observerBackground is DataProperty.
+observerExperience is DataProperty.
+observerId is DataProperty.
+participantId is DataProperty.
+scanDate is DataProperty.
+Aliasing_Artefact is Class.
+Aliasing_Artefact SubClassOf Signal_Processing_Dependant_Artefact.
+Aortic_View is Class.
+Aortic_View SubClassOf Cardiac_MRI_Imaging_Plane.
+Arrhythmia is Class.
+Arrhythmia SubClassOf Pathology.
+Artefact is Class.
+Artefact SubClassOf Image_Quality_Issue.
+Atrial_Diastole is Class.
+Atrial_Diastole SubClassOf Cardiac_Cycle_Phase.
+Atrial_Fibrillation is Class.
+Atrial_Fibrillation SubClassOf Pathology.
+Atrial_Systole is Class.
+Atrial_Systole SubClassOf Cardiac_Cycle_Phase.
+B0_Field_Inhomogeneity_Artefact is Class.
+B0_Field_Inhomogeneity_Artefact SubClassOf Field_Inhomogeneity_Artefact.
+Blood_Flow_Motion_Artefact is Class.
+Blood_Flow_Motion_Artefact SubClassOf Motion_Artefact.
+Blurring_Artefact is Class.
+Blurring_Artefact SubClassOf Artefact.
+Breathing_Motion_Artifact is Class.
+Breathing_Motion_Artifact SubClassOf Inter-view_Motion_Artefact.
+Cardiac_Atrium is Class.
+Cardiac_Atrium SubClassOf Cardiac_Chamber.
+Cardiac_Chamber is Class.
+Cardiac_Chamber SubClassOf Organ_Component.
+Cardiac_Cycle is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasPart some Diastole,.
+Thing, is hasPart some Systole.
+Cardiac_Cycle_Phase is Class.
+Thing is www.w3.org/2002/07/#.
+Cardiac_Image is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is acquiredAtCardiacCyclePhase some Cardiac_Cycle_Phase,.
+Thing, is acquiredAtChamberLocation some Chamber_Location,.
+Thing, is acquiredAtView some Cardiac_MRI_Imaging_Plane.
+Cardiac_Image_Analysis_Outcome_Measures is Class.
+Thing is www.w3.org/2002/07/#.
+Cardiac_Imaging_Plane is Class.
+Thing is www.w3.org/2002/07/#.
+Cardiac_MRI_Imaging_Data is Class.
+Thing is www.w3.org/2002/07/#.
+Cardiac_MRI_Imaging_Plane is Class.
+Cardiac_MRI_Imaging_Plane SubClassOf Cardiac_Imaging_Plane.
+Cardiac_Motion_Artefact is Class.
+Cardiac_Motion_Artefact SubClassOf Inter-view_Motion_Artefact.
+Cardiac_Ventricle is Class.
+Cardiac_Ventricle SubClassOf Cardiac_Chamber.
+Chamber_Apex is Class.
+Chamber_Apex SubClassOf Chamber_Location.
+Chamber_Base is Class.
+Chamber_Base SubClassOf Chamber_Location.
+Chamber_Location is Class.
+Chamber_Location SubClassOf Organ_Component,.
+Chamber_Location SubClassOf isPartOf some Cardiac_Chamber.
+Chemical_Shift is Class.
+Chemical_Shift SubClassOf Signal_Processing_Dependant_Artefact.
+Chemical_Shift_Second_Kind is Class.
+Chemical_Shift_Second_Kind SubClassOf Chemical_Shift.
+Cine-MRI is Class.
+Cine-MRI SubClassOf Cardiac_MRI_Imaging_Data,.
+Cine-MRI SubClassOf hasCardiacImage some Cardiac_Image.
+Cine-MRI_Analysis_Measures is Class.
+Cine-MRI_Analysis_Measures SubClassOf Cardiac_Image_Analysis_Outcome_Measures.
+Cine-MRI_Quality_Data is Class.
+Cine-MRI_Quality_Data SubClassOf Image_Quality_Assessment,.
+Cine-MRI_Quality_Data SubClassOf hasLAQualityScore some double,.
+Cine-MRI_Quality_Data SubClassOf hasLVQualityScore some double,.
+Cine-MRI_Quality_Data SubClassOf hasRAQualityScore some double,.
+Cine-MRI_Quality_Data SubClassOf hasRVQualityScore some double.
+Dark_Bands_Artifact is Class.
+Dark_Bands_Artifact SubClassOf Signal_Intensity_Artefact.
+Dark_Ghosting_Artefact is Class.
+Dark_Ghosting_Artefact SubClassOf Ghosting_Artefact.
+Diastole is Class.
+Diastole SubClassOf Cardiac_Cycle_Phase,.
+Diastole SubClassOf hasPart some Atrial_Systole,.
+Diastole SubClassOf hasPart some End-Diastole.
+Ejection_Fraction is Class.
+Ejection_Fraction SubClassOf Cine-MRI_Analysis_Measures.
+End-Diastole is Class.
+End-Diastole SubClassOf Cardiac_Cycle_Phase.
+End-Systole is Class.
+End-Systole SubClassOf Cardiac_Cycle_Phase.
+End_Diastolic_Volume is Class.
+End_Diastolic_Volume SubClassOf Cine-MRI_Analysis_Measures.
+End_Systolic_Volume is Class.
+End_Systolic_Volume SubClassOf Cine-MRI_Analysis_Measures.
+Endocardium is Class.
+Endocardium SubClassOf Ventricular_Layer.
+Epicardium is Class.
+Epicardium SubClassOf Ventricular_Layer.
+Field_Inhomogeneity_Artefact is Class.
+Field_Inhomogeneity_Artefact SubClassOf Machine_Related_Artefact.
+Flow-related_Signal_Loss is Class.
+Flow-related_Signal_Loss SubClassOf Blood_Flow_Motion_Artefact,.
+Flow-related_Signal_Loss SubClassOf Signal_Loss_Artefact.
+Ghosting_Artefact is Class.
+Ghosting_Artefact SubClassOf Artefact.
+Gibbs_Artefact is Class.
+Gibbs_Artefact SubClassOf Ringing_Artefact,.
+Gibbs_Artefact SubClassOf Signal_Processing_Dependant_Artefact.
+HLA_View is Class.
+HLA_View SubClassOf Long_Axis_View.
+HLA_off_axis is Class.
+HLA_off_axis EquivalentTo Image_Planning_Issue and (observedInView some HLA_View).
+HLA_off_axis SubClassOf Image_Planning_Issue,.
+HLA_off_axis SubClassOf observedInView some HLA_View.
+Heart is Class.
+Heart SubClassOf Organ.
+Image_Distortion_Artefact is Class.
+Image_Distortion_Artefact SubClassOf Artefact.
+Image_Planning_Issue is Class.
+Image_Planning_Issue SubClassOf Image_Quality_Issue.
+Image_Quality_Assessment is Class.
+Image_Quality_Assessment SubClassOf Medical_Imaging_Study,.
+Image_Quality_Assessment SubClassOf hasImagingDataset some Cardiac_MRI_Imaging_Data,.
+Image_Quality_Assessment SubClassOf hasObserver some Observer,.
+Image_Quality_Assessment SubClassOf hasImageIssue only Image_Quality_Issue,.
+Image_Quality_Assessment SubClassOf hasQualityLevel some string,.
+Image_Quality_Assessment SubClassOf hasQualityScore some double,.
+Image_Quality_Assessment SubClassOf hasQualityComment only string.
+Image_Quality_Issue is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is mayInfluence some Cine-MRI_Analysis_Measures,.
+Thing, is observedInCardiacCyclePhase some Cardiac_Cycle_Phase,.
+Thing, is observedInChamber some Cardiac_Chamber,.
+Thing, is observedInView some Cardiac_Imaging_Plane,.
+Thing, is observedInChamberLocation only Chamber_Location,.
+Thing, is observedInSliceCardinality only {"All" , "Few" , "Multiple" , "Single"}.
+Imaging_Scan_Visit is Class.
+Imaging_Scan_Visit SubClassOf Medical_Imaging_Study,.
+Imaging_Scan_Visit SubClassOf hasQualityData some Image_Quality_Assessment,.
+Imaging_Scan_Visit SubClassOf participantId some string,.
+Imaging_Scan_Visit SubClassOf scanDate some dateTime.
+Inter-view_Motion_Artefact is Class.
+Inter-view_Motion_Artefact SubClassOf Motion_Artefact.
+Intra-view_Motion_Artefact is Class.
+Intra-view_Motion_Artefact SubClassOf Motion_Artefact.
+LA_off_axis is Class.
+LA_off_axis EquivalentTo Image_Planning_Issue and (observedInChamber some Left_Atrium).
+LA_off_axis SubClassOf Image_Planning_Issue,.
+LA_off_axis SubClassOf observedInChamber some Left_Atrium.
+LVOT_Coronal_View is Class.
+LVOT_Coronal_View SubClassOf LVOT_View.
+LVOT_Sagittal_View is Class.
+LVOT_Sagittal_View SubClassOf LVOT_View,.
+LVOT_Sagittal_View SubClassOf Long_Axis_View.
+LVOT_View is Class.
+LVOT_View SubClassOf Cardiac_MRI_Imaging_Plane.
+LV_off_axis is Class.
+LV_off_axis EquivalentTo Image_Planning_Issue and (observedInChamber some Left_Ventricle).
+LV_off_axis SubClassOf Image_Planning_Issue,.
+LV_off_axis SubClassOf observedInChamber some Left_Ventricle.
+Lack_Coverage is Class.
+Lack_Coverage SubClassOf Image_Quality_Issue.
+Left_Atrium is Class.
+Left_Atrium SubClassOf Cardiac_Atrium.
+Left_Ventricle is Class.
+Left_Ventricle SubClassOf Cardiac_Ventricle.
+Left_Ventricle_Apex is Class.
+Left_Ventricle_Apex SubClassOf Chamber_Apex,.
+Left_Ventricle_Apex SubClassOf isPartOf some Left_Ventricle.
+Left_Ventricle_Base is Class.
+Left_Ventricle_Base SubClassOf Chamber_Base,.
+Left_Ventricle_Base SubClassOf isPartOf some Left_Ventricle.
+Left_Ventricle_Midventricle is Class.
+Left_Ventricle_Midventricle SubClassOf Midventricular_Region,.
+Left_Ventricle_Midventricle SubClassOf isPartOf some Left_Ventricle.
+Left_Ventricular_Outflow_Tract is Class.
+Left_Ventricular_Outflow_Tract SubClassOf Ventricular_Region,.
+Left_Ventricular_Outflow_Tract SubClassOf isPartOf some Left_Ventricle.
+Long_Axis_View is Class.
+Long_Axis_View SubClassOf Cardiac_MRI_Imaging_Plane.
+Machine_Related_Artefact is Class.
+Machine_Related_Artefact SubClassOf Artefact,.
+Machine_Related_Artefact SubClassOf Technical_Issue.
+Medical_Imaging_Study is Class.
+Thing is www.w3.org/2002/07/#.
+Midventricular_Region is Class.
+Midventricular_Region SubClassOf Chamber_Location.
+Missing_data is Class.
+Missing_data SubClassOf Technical_Issue.
+Motion_Artefact is Class.
+Motion_Artefact SubClassOf Patient-related_Artifact.
+Motion_Ringing_Artefact is Class.
+Motion_Ringing_Artefact SubClassOf Motion_Artefact,.
+Motion_Ringing_Artefact SubClassOf Ringing_Artefact.
+Myocardial_Mass is Class.
+Myocardial_Mass SubClassOf Cine-MRI_Analysis_Measures.
+Myocardium is Class.
+Myocardium SubClassOf Ventricular_Layer.
+Observer is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is observerBackground some string,.
+Thing, is observerExperience some string,.
+Thing, is observerId some string.
+Off-resonance_Artefact is Class.
+Off-resonance_Artefact SubClassOf Signal_Intensity_Artefact.
+Organ is Class.
+Thing is www.w3.org/2002/07/#.
+Organ_Component is Class.
+Thing is www.w3.org/2002/07/#.
+Pathology is Class.
+Pathology SubClassOf Image_Quality_Issue.
+Patient-related_Artifact is Class.
+Patient-related_Artifact SubClassOf Artefact.
+Phase_Contrast is Class.
+Phase_Contrast SubClassOf Cardiac_MRI_Imaging_Data.
+Poor_Quality is Class.
+Poor_Quality SubClassOf Unspecified_Issue.
+RA_off_axis is Class.
+RA_off_axis EquivalentTo Image_Planning_Issue and (observedInChamber some Right_Atrium).
+RA_off_axis SubClassOf Image_Planning_Issue,.
+RA_off_axis SubClassOf observedInChamber some Right_Atrium.
+ROI_area is Class.
+ROI_area SubClassOf Cine-MRI_Analysis_Measures.
+RV_off_axis is Class.
+RV_off_axis EquivalentTo Image_Planning_Issue and (observedInChamber some Right_Ventricle).
+RV_off_axis SubClassOf Image_Planning_Issue,.
+RV_off_axis SubClassOf observedInChamber some Right_Ventricle.
+Right_Atrium is Class.
+Right_Atrium SubClassOf Cardiac_Atrium.
+Right_Ventricle is Class.
+Right_Ventricle SubClassOf Cardiac_Ventricle.
+Ringing_Artefact is Class.
+Ringing_Artefact SubClassOf Artefact.
+SAS_View is Class.
+SAS_View SubClassOf Cardiac_MRI_Imaging_Plane.
+SAX_off_axis is Class.
+SAX_off_axis EquivalentTo Image_Planning_Issue and (observedInView some SAS_View).
+SAX_off_axis SubClassOf Image_Planning_Issue,.
+SAX_off_axis SubClassOf observedInView some SAS_View.
+Scout_Image is Class.
+Scout_Image SubClassOf Cardiac_Image.
+Septum is Class.
+Septum SubClassOf Ventricular_Region,.
+Septum SubClassOf isPartOf some Left_Ventricle,.
+Septum SubClassOf isPartOf some Right_Ventricle.
+Signal_Intensity_Artefact is Class.
+Signal_Intensity_Artefact SubClassOf Artefact.
+Signal_Loss_Artefact is Class.
+Signal_Loss_Artefact SubClassOf Signal_Intensity_Artefact.
+Signal_Processing_Dependant_Artefact is Class.
+Signal_Processing_Dependant_Artefact SubClassOf Artefact.
+Spatial_Distortion_Artefact is Class.
+Spatial_Distortion_Artefact SubClassOf Image_Distortion_Artefact.
+Stroke_Volume is Class.
+Stroke_Volume SubClassOf Cine-MRI_Analysis_Measures.
+Systole is Class.
+Systole SubClassOf Cardiac_Cycle_Phase,.
+Systole SubClassOf hasPart some Atrial_Diastole,.
+Systole SubClassOf hasPart some End-Systole.
+T1-Mapping is Class.
+T1-Mapping SubClassOf Cardiac_MRI_Imaging_Data.
+T1-Mapping_Quality_Data is Class.
+T1-Mapping_Quality_Data SubClassOf Image_Quality_Assessment.
+Tagging_MRI is Class.
+Tagging_MRI SubClassOf Cardiac_MRI_Imaging_Data.
+Technical_Issue is Class.
+Technical_Issue SubClassOf Image_Quality_Issue.
+Triggering_Issue is Class.
+Triggering_Issue SubClassOf Technical_Issue.
+Unspecified_Issue is Class.
+Unspecified_Issue SubClassOf Image_Quality_Issue.
+VLA_View is Class.
+VLA_View SubClassOf Long_Axis_View.
+VLA_off_axis is Class.
+VLA_off_axis EquivalentTo Image_Planning_Issue and (observedInView some VLA_View).
+VLA_off_axis SubClassOf Image_Planning_Issue,.
+VLA_off_axis SubClassOf observedInView some VLA_View.
+Ventricular_Layer is Class.
+Ventricular_Layer SubClassOf Organ_Component.
+Ventricular_Region is Class.
+Ventricular_Region SubClassOf Organ_Component.
+Ventricular_Stroke_Volume is Class.
+Ventricular_Stroke_Volume SubClassOf Stroke_Volume.
+www.w3.org/2002/07/# is Class.

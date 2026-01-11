@@ -1,0 +1,3324 @@
+is(InverseContainmentAttribute,ObjectProperty):1.0
+is(LocativeAttribute,ObjectProperty):1.0
+is(actsOn,ObjectProperty):1.0
+is(actsSpecificallyOn,ObjectProperty):1.0
+is(hasAbnormalityStatus,ObjectProperty):1.0
+is(hasAbsoluteState,ObjectProperty):1.0
+is(hasAcquisitionMode,ObjectProperty):1.0
+is(hasAssertedDiseaseClass,ObjectProperty):1.0
+is(hasChangeInState,ObjectProperty):1.0
+is(hasChronicity,ObjectProperty):1.0
+is(hasConsequence,ObjectProperty):1.0
+is(hasDiseaseCourseStage,ObjectProperty):1.0
+is(hasDistribution,ObjectProperty):1.0
+is(hasEffectiveness,ObjectProperty):1.0
+is(hasIntrinsicPathologicalStatus,ObjectProperty):1.0
+is(hasLocation,ObjectProperty):1.0
+is(hasMagnitude,ObjectProperty):1.0
+is(hasMixedThroughout,ObjectProperty):1.0
+is(hasPathologicalStatus,ObjectProperty):1.0
+is(hasProcessActivity,ObjectProperty):1.0
+is(hasQuantity,ObjectProperty):1.0
+is(hasSeverity,ObjectProperty):1.0
+is(hasSpecificConsequence,ObjectProperty):1.0
+is(hasSpecificImmediateConsequence,ObjectProperty):1.0
+is(hasSpecificLocation,ObjectProperty):1.0
+is(hasSubprocess,ObjectProperty):1.0
+is(hasSyndromeElement,ObjectProperty):1.0
+is(hasTemporalPattern,ObjectProperty):1.0
+is(hasTreatmentTractability,ObjectProperty):1.0
+is(hasTrendInState,ObjectProperty):1.0
+is(hasUniqueAssociatedDisplacement,ObjectProperty):1.0
+is(hasUnit,ObjectProperty):1.0
+is(isActedOnSpecificallyBy,ObjectProperty):1.0
+is(isBranchOf,ObjectProperty):1.0
+is(isCausallyLinkedTo,ObjectProperty):1.0
+is(isConcentrationOf,ObjectProperty):1.0
+is(isConsequenceOf,ObjectProperty):1.0
+is(isConsistencyOf,ObjectProperty):1.0
+is(isDiameterOf,ObjectProperty):1.0
+is(isDisplacementTo,ObjectProperty):1.0
+is(isDissolvedWithin,ObjectProperty):1.0
+is(isFunctionOf,ObjectProperty):1.0
+is(isImmediateConsequenceOf,ObjectProperty):1.0
+is(isLocativelyContainedIn,ObjectProperty):1.0
+is(isPermeabilityOf,ObjectProperty):1.0
+is(isSizeOf,ObjectProperty):1.0
+is(isSpecificConsequenceOf,ObjectProperty):1.0
+is(isSpecificFunctionOf,ObjectProperty):1.0
+is(isSpecificImmediateConsequenceOf,ObjectProperty):1.0
+is(isSpecificLayerOf,ObjectProperty):1.0
+is(isSpecificallyMadeOf,ObjectProperty):1.0
+is(isStrengthOf,ObjectProperty):1.0
+is(isSyndromeElementOf,ObjectProperty):1.0
+is(makesUp,ObjectProperty):1.0
+is(playsConsultationRole,ObjectProperty):1.0
+is(serves,ObjectProperty):1.0
+is(AbdominalColic,Class):1.0
+is(AbdominalMigraine,Class):1.0
+SubClassOf(AbdominalMigraine,Migraine):1.0
+is(AbdominalPain,Class):1.0
+is(AbnormalCellMassGrowthProcess,Class):1.0
+SubClassOf(AbnormalCellMassGrowthProcess,AbnormalGrowthProcess):1.0
+is(AbnormalDaytimeSleeping,Class):1.0
+is(AbnormalDrynessOfMucousMembrane,Class):1.0
+is(AbnormalGrowthProcess,Class):1.0
+SubClassOf(AbnormalGrowthProcess,NAMEDPathologicalProcess):1.0
+is(AbruptWithdrawal,Class):1.0
+SubClassOf(AbruptWithdrawal,WithdrawalSyndrome):1.0
+is(AccommodationOfEye,Class):1.0
+SubClassOf(AccommodationOfEye,NAMEDNeurologicalProcess):1.0
+is(AcessoryAtrioventricularConductionWithPrematureVentricularExcitation,Class):1.0
+is(AcetylTransferase,Class):1.0
+is(Achondroplasia,Class):1.0
+SubClassOf(Achondroplasia,NAMEDSyndrome,):1.0
+SubClassOf(Achondroplasia,hasAcquisitionMode some):1.0
+SubClassOf(Achondroplasia,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(Acidosis,Class):1.0
+SubClassOf(Acidosis,NAMEDSystemicDisease,):1.0
+SubClassOf(Acidosis,isSpecificImmediateConsequenceOf some LowBloodpH):1.0
+is(Acne,Class):1.0
+SubClassOf(Acne,NAMEDDisorder,):1.0
+SubClassOf(Acne,hasSyndromeElement some):1.0
+SubClassOf(Acne,(InflammationLesion and (hasSpecificLocation some HairFollicle))):1.0
+is(AcneFulminans,Class):1.0
+SubClassOf(AcneFulminans,Acne):1.0
+is(AcneLikeEruption,Class):1.0
+SubClassOf(AcneLikeEruption,Acne):1.0
+is(AcneRosacea,Class):1.0
+SubClassOf(AcneRosacea,Acne):1.0
+is(AcneVulgaris,Class):1.0
+SubClassOf(AcneVulgaris,Acne):1.0
+is(AcquiredLongQTSyndrome,Class):1.0
+SubClassOf(AcquiredLongQTSyndrome,LongQTSyndrome):1.0
+is(AcquiredPathologicalProcess,Class):1.0
+SubClassOf(AcquiredPathologicalProcess,NAMEDPathologicalProcess):1.0
+is(AcquiringImmunityProcess,Class):1.0
+SubClassOf(AcquiringImmunityProcess,NAMEDImmunologicalProcess):1.0
+is(AcquisitionMode,Class):1.0
+is(Acromegaly,Class):1.0
+SubClassOf(Acromegaly,NAMEDSystemicDisease,):1.0
+SubClassOf(Acromegaly,hasSyndromeElement some Visceromegaly,):1.0
+SubClassOf(Acromegaly,isConsequenceOf some):1.0
+SubClassOf(Acromegaly,(Hypersecretion and (actsSpecificallyOn some GrowthHormone))):1.0
+is(ActiveRheumaticFever,Class):1.0
+SubClassOf(ActiveRheumaticFever,RheumaticFever):1.0
+is(AcuteAdrenocorticalInsufficiency,Class):1.0
+SubClassOf(AcuteAdrenocorticalInsufficiency,BodyProcess):1.0
+is(AcuteGlaucoma,Class):1.0
+SubClassOf(AcuteGlaucoma,Glaucoma):1.0
+is(AcuteIntermittentPorphyria,Class):1.0
+SubClassOf(AcuteIntermittentPorphyria,Porphyria):1.0
+is(AcuteRenalFailure,Class):1.0
+is(AcuteRheumaticFever,Class):1.0
+SubClassOf(AcuteRheumaticFever,RheumaticFever):1.0
+is(Addiction,Class):1.0
+is(AddisonsDisease,Class):1.0
+SubClassOf(AddisonsDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(AddisonsDisease,hasSyndromeElement some Anorexia,):1.0
+SubClassOf(AddisonsDisease,hasSyndromeElement some Fatigue,):1.0
+SubClassOf(AddisonsDisease,hasSyndromeElement some Hyperpigmentation,):1.0
+SubClassOf(AddisonsDisease,hasSyndromeElement some Hypotension,):1.0
+SubClassOf(AddisonsDisease,hasSyndromeElement some Nausea,):1.0
+SubClassOf(AddisonsDisease,hasSyndromeElement some WeightLoss,):1.0
+SubClassOf(AddisonsDisease,isConsequenceOf some):1.0
+SubClassOf(AddisonsDisease,(AdrenalHypofunction and (hasChronicity some ChronicFeature))):1.0
+is(AdhesionProcess,Class):1.0
+SubClassOf(AdhesionProcess,AcquiredPathologicalProcess):1.0
+is(AdrenalCortex,Class):1.0
+is(AdrenalDysfunction,Class):1.0
+SubClassOf(AdrenalDysfunction,BodyProcess):1.0
+is(AdrenalFunction,Class):1.0
+SubClassOf(AdrenalFunction,BodyProcess):1.0
+is(AdrenalHyperplasia,Class):1.0
+is(AdrenalHypofunction,Class):1.0
+SubClassOf(AdrenalHypofunction,BodyProcess):1.0
+is(AdrenalInsufficiency,Class):1.0
+SubClassOf(AdrenalInsufficiency,BodyProcess):1.0
+is(AdrenocorticalDysfunction,Class):1.0
+SubClassOf(AdrenocorticalDysfunction,BodyProcess):1.0
+is(AdrenocorticalFunction,Class):1.0
+SubClassOf(AdrenocorticalFunction,BodyProcess):1.0
+is(AdrenocorticalHormone,Class):1.0
+is(AdrenocorticalHyperfunction,Class):1.0
+SubClassOf(AdrenocorticalHyperfunction,BodyProcess):1.0
+is(AdrenocorticalHypofunction,Class):1.0
+SubClassOf(AdrenocorticalHypofunction,BodyProcess):1.0
+is(AdrenocorticalInsufficiency,Class):1.0
+SubClassOf(AdrenocorticalInsufficiency,BodyProcess):1.0
+is(AdultFanconiSyndrome,Class):1.0
+SubClassOf(AdultFanconiSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(AdultFanconiSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(AdultFanconiSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(AdultFanconiSyndrome,hasSyndromeElement some ChronicMetabolicAcidosis,):1.0
+SubClassOf(AdultFanconiSyndrome,hasSyndromeElement some Cystinuria,):1.0
+SubClassOf(AdultFanconiSyndrome,hasSyndromeElement some Glycosuria,):1.0
+SubClassOf(AdultFanconiSyndrome,hasSyndromeElement some LoweredSerumPhosphateConcentration,):1.0
+SubClassOf(AdultFanconiSyndrome,hasSyndromeElement some Osteomalacia,):1.0
+SubClassOf(AdultFanconiSyndrome,hasSyndromeElement some Polyuria,):1.0
+SubClassOf(AdultFanconiSyndrome,isConsequenceOf some):1.0
+SubClassOf(AdultFanconiSyndrome,(PathologicalPhenomenon and (LocativeAttribute some RenalTubule))):1.0
+is(AdultOnsetStillsDisease,Class):1.0
+SubClassOf(AdultOnsetStillsDisease,NAMEDUnmodelledPathology,):1.0
+SubClassOf(AdultOnsetStillsDisease,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass):1.0
+is(Affect,Class):1.0
+is(AfricanEndomyocardialFibrosis,Class):1.0
+SubClassOf(AfricanEndomyocardialFibrosis,NAMEDSystemicDisease,):1.0
+SubClassOf(AfricanEndomyocardialFibrosis,hasSyndromeElement some CardiacDilatation,):1.0
+SubClassOf(AfricanEndomyocardialFibrosis,hasSyndromeElement some Cardiomegaly,):1.0
+SubClassOf(AfricanEndomyocardialFibrosis,hasSyndromeElement some EndocardialFibrosisOfLeftVentricularOutflowTract,):1.0
+SubClassOf(AfricanEndomyocardialFibrosis,hasSyndromeElement some MuralThrombus):1.0
+is(AgenesisLesion,Class):1.0
+is(Aggression,Class):1.0
+is(Akathisia,Class):1.0
+is(Albinism,Class):1.0
+SubClassOf(Albinism,NAMEDSyndrome,):1.0
+SubClassOf(Albinism,hasAcquisitionMode some):1.0
+SubClassOf(Albinism,(AcquisitionMode and (hasAbsoluteState some XLinkedRecessiveGeneInherited))):1.0
+is(Albuminuria,Class):1.0
+is(AlcoholDependenceSyndrome,Class):1.0
+SubClassOf(AlcoholDependenceSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(AlcoholDependenceSyndrome,isConsequenceOf some Alcoholism):1.0
+is(AlcoholWithdrawal,Class):1.0
+SubClassOf(AlcoholWithdrawal,WithdrawalSyndrome):1.0
+is(Alcoholism,Class):1.0
+is(Aldosteronism,Class):1.0
+SubClassOf(Aldosteronism,NAMEDSystemicDisease,):1.0
+SubClassOf(Aldosteronism,hasSyndromeElement some Fatigue,):1.0
+SubClassOf(Aldosteronism,hasSyndromeElement some Headache,):1.0
+SubClassOf(Aldosteronism,hasSyndromeElement some Hypervolaemia,):1.0
+SubClassOf(Aldosteronism,hasSyndromeElement some LoweredSerumPotassiumConcentration,):1.0
+SubClassOf(Aldosteronism,hasSyndromeElement some Nocturia,):1.0
+SubClassOf(Aldosteronism,hasSyndromeElement some Polyuria,):1.0
+SubClassOf(Aldosteronism,hasSyndromeElement some SystemicHypertension,):1.0
+SubClassOf(Aldosteronism,isConsequenceOf some Hyperaldosteronaemia):1.0
+is(Alkalosis,Class):1.0
+SubClassOf(Alkalosis,NAMEDSystemicDisease,):1.0
+SubClassOf(Alkalosis,isSpecificImmediateConsequenceOf some RaisedBloodpH):1.0
+is(AllergyProcess,Class):1.0
+is(Alopecia,Class):1.0
+is(AlphaGluconidase,Class):1.0
+is(AltemeierMethod,Class):1.0
+SubClassOf(AltemeierMethod,NAMEDEponymousMethod):1.0
+is(AlterationInSerumCholesterol,Class):1.0
+SubClassOf(AlterationInSerumCholesterol,NAMEDMetabolicPathologicalProcess):1.0
+is(AlveolarFibrosis,Class):1.0
+is(Alveolus,Class):1.0
+is(AlzheimersDisease,Class):1.0
+SubClassOf(AlzheimersDisease,NAMEDDisorder,):1.0
+SubClassOf(AlzheimersDisease,hasSyndromeElement some Amnesia,):1.0
+SubClassOf(AlzheimersDisease,hasSyndromeElement some BrainAtrophy,):1.0
+SubClassOf(AlzheimersDisease,hasSyndromeElement some CognitiveImpairment,):1.0
+SubClassOf(AlzheimersDisease,hasSyndromeElement some Confusion,):1.0
+SubClassOf(AlzheimersDisease,hasSyndromeElement some EnvironmentalDisorientation):1.0
+is(AmbiguousGenitalia,Class):1.0
+is(Amenorrhoea,Class):1.0
+is(AminolevulinateDehydratasePorphyria,Class):1.0
+SubClassOf(AminolevulinateDehydratasePorphyria,Porphyria):1.0
+is(Amnesia,Class):1.0
+is(AmplitudeAmplification,Class):1.0
+SubClassOf(AmplitudeAmplification,NAMEDPhysicalProcess):1.0
+is(AmplitudeAttenuation,Class):1.0
+SubClassOf(AmplitudeAttenuation,NAMEDPhysicalProcess):1.0
+is(Amylo16Glucosidase,Class):1.0
+is(Amyloglucantransferase,Class):1.0
+is(AmyloidDeposition,Class):1.0
+is(Amyloidosis,Class):1.0
+SubClassOf(Amyloidosis,NAMEDSystemicDisease,):1.0
+SubClassOf(Amyloidosis,isConsequenceOf some):1.0
+SubClassOf(Amyloidosis,(AmyloidDeposition and (hasPathologicalStatus some pathological))):1.0
+is(AnabolicProcess,Class):1.0
+is(AnaplasticProcess,Class):1.0
+SubClassOf(AnaplasticProcess,DysplasticProcess):1.0
+is(AnatomyWithinAbdominalCavity,Class):1.0
+is(AndersenDisease,Class):1.0
+SubClassOf(AndersenDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(AndersenDisease,hasAcquisitionMode some):1.0
+SubClassOf(AndersenDisease,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(AndersenDisease,hasSyndromeElement some):1.0
+SubClassOf(AndersenDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(AndersenDisease,(CatabolicProcess and (actsSpecificallyOn some Glycogen))) and (isSpecificFunctionOf some Amyloglucantransferase)),):1.0
+SubClassOf(AndersenDisease,hasSyndromeElement some):1.0
+SubClassOf(AndersenDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Glycogen)),):1.0
+SubClassOf(AndersenDisease,isConsequenceOf some):1.0
+SubClassOf(AndersenDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(AndersenDisease,(GeneTranscription and (hasSpecificImmediateConsequence some Amyloglucantransferase))))):1.0
+is(Anencephaly,Class):1.0
+SubClassOf(Anencephaly,NAMEDSyndrome,):1.0
+SubClassOf(Anencephaly,hasAcquisitionMode some):1.0
+SubClassOf(Anencephaly,(AcquisitionMode and (hasAbsoluteState some congenital)),):1.0
+SubClassOf(Anencephaly,hasSeverity some SevereSeverity,):1.0
+SubClassOf(Anencephaly,hasSyndromeElement some):1.0
+SubClassOf(Anencephaly,(AgenesisLesion and (hasSpecificLocation some CerebellarHemisphere)),):1.0
+SubClassOf(Anencephaly,hasSyndromeElement some):1.0
+SubClassOf(Anencephaly,(AgenesisLesion and (hasSpecificLocation some CerebralHemisphere)),):1.0
+SubClassOf(Anencephaly,hasSyndromeElement some):1.0
+SubClassOf(Anencephaly,(PlanarDefect and (hasSpecificLocation some Skull))):1.0
+is(AnginaPectoris,Class):1.0
+is(AnkylosingSpondylitis,Class):1.0
+SubClassOf(AnkylosingSpondylitis,NAMEDDisorder,):1.0
+SubClassOf(AnkylosingSpondylitis,hasSyndromeElement some):1.0
+SubClassOf(AnkylosingSpondylitis,(Ankylosis and (hasSpecificLocation some SpinalJoint)),):1.0
+SubClassOf(AnkylosingSpondylitis,hasSyndromeElement some):1.0
+SubClassOf(AnkylosingSpondylitis,(InflammationLesion and (hasSpecificLocation some SpinalJoint))):1.0
+is(Ankylosis,Class):1.0
+is(Anonymous-352,Class):1.0
+SubClassOf(Anonymous-352,BodyProcess):1.0
+is(Anonymous-353,Class):1.0
+SubClassOf(Anonymous-353,DegenerativeProcess):1.0
+is(Anonymous-356,Class):1.0
+SubClassOf(Anonymous-356,BodyProcess):1.0
+is(Anonymous-363,Class):1.0
+SubClassOf(Anonymous-363,BodyProcess):1.0
+is(Anonymous-581,Class):1.0
+SubClassOf(Anonymous-581,BodyProcess):1.0
+is(Anonymous-740,Class):1.0
+SubClassOf(Anonymous-740,BodyProcess):1.0
+is(Anorexia,Class):1.0
+is(Anovulation,Class):1.0
+is(AntiphospholipidSyndrome,Class):1.0
+SubClassOf(AntiphospholipidSyndrome,NAMEDUnmodelledPathology,):1.0
+SubClassOf(AntiphospholipidSyndrome,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass):1.0
+is(Anxiety,Class):1.0
+is(AorticArch,Class):1.0
+is(ApertSyndrome,Class):1.0
+SubClassOf(ApertSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(ApertSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(ApertSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(ArterialStructure,Class):1.0
+is(Arteritis,Class):1.0
+is(Artery,Class):1.0
+is(Arthritis,Class):1.0
+is(ArticularCartilage,Class):1.0
+is(ArylSulphataseA,Class):1.0
+is(AscherSyndrome,Class):1.0
+SubClassOf(AscherSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(AscherSyndrome,hasSyndromeElement some DoubleLip,):1.0
+SubClassOf(AscherSyndrome,hasSyndromeElement some Goiter):1.0
+is(Ascites,Class):1.0
+is(AssistedBodyProcess,Class):1.0
+SubClassOf(AssistedBodyProcess,BodyProcess):1.0
+is(Asthenia,Class):1.0
+is(Asthma,Class):1.0
+SubClassOf(Asthma,NAMEDSystemicDisease,):1.0
+SubClassOf(Asthma,hasSyndromeElement some RespiratoryAirwaysObstruction):1.0
+is(AsthmaticEpisode,Class):1.0
+SubClassOf(AsthmaticEpisode,NAMEDSystemicDisease):1.0
+is(Asynergy,Class):1.0
+is(Ataxia,Class):1.0
+is(Athetosis,Class):1.0
+is(Atopy,Class):1.0
+SubClassOf(Atopy,NAMEDSystemicDisease,):1.0
+SubClassOf(Atopy,hasAcquisitionMode some):1.0
+SubClassOf(Atopy,(AcquisitionMode and (hasAbsoluteState some geneticallyInherited)),):1.0
+SubClassOf(Atopy,hasSyndromeElement some HypersensitivityProcess):1.0
+is(AtrioventricularBlock,Class):1.0
+is(AtrioventricularDissociation,Class):1.0
+SubClassOf(AtrioventricularDissociation,NAMEDSystemicDisease,):1.0
+SubClassOf(AtrioventricularDissociation,hasSyndromeElement some CompleteAtrioventricularBlock):1.0
+is(AtrophicGlossitis,Class):1.0
+is(AtrophicLesion,Class):1.0
+is(AtrophicProcess,Class):1.0
+SubClassOf(AtrophicProcess,AbnormalCellMassGrowthProcess):1.0
+is(AttentionDeficitDisorder,Class):1.0
+SubClassOf(AttentionDeficitDisorder,NAMEDSyndrome,):1.0
+SubClassOf(AttentionDeficitDisorder,LocativeAttribute some Psyche,):1.0
+SubClassOf(AttentionDeficitDisorder,hasSyndromeElement some MentalDistraction):1.0
+is(AutoimmuneProcess,Class):1.0
+is(Azotaemia,Class):1.0
+SubClassOf(Azotaemia,NAMEDSystemicDisease,):1.0
+SubClassOf(Azotaemia,hasSyndromeElement some RaisedBloodUreaConcentration,):1.0
+SubClassOf(Azotaemia,isConsequenceOf some RenalInsufficiency):1.0
+is(BallMethod,Class):1.0
+SubClassOf(BallMethod,NAMEDEponymousMethod):1.0
+is(Ballistics,Class):1.0
+SubClassOf(Ballistics,NAMEDPhysicalProcess):1.0
+is(BambergerDisease,Class):1.0
+SubClassOf(BambergerDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(BambergerDisease,hasSyndromeElement some ConstrictivePericarditis,):1.0
+SubClassOf(BambergerDisease,hasSyndromeElement some):1.0
+SubClassOf(BambergerDisease,(Effusion and (isLocativelyContainedIn some SerousCavity)),):1.0
+SubClassOf(BambergerDisease,hasSyndromeElement some):1.0
+SubClassOf(BambergerDisease,(InflammationLesion and (hasChronicity some):1.0
+SubClassOf(BambergerDisease,(Chronicity and (hasAbsoluteState some chronic))) and (hasSpecificLocation some SerousMembrane))):1.0
+is(BaseOfBrain,Class):1.0
+is(BasementMembrane,Class):1.0
+is(BasilarMigraine,Class):1.0
+SubClassOf(BasilarMigraine,Migraine):1.0
+is(BeatingHeartMethod,Class):1.0
+SubClassOf(BeatingHeartMethod,NAMEDSurgicalAccompanyingProcess):1.0
+is(BeckerMuscularDystrophy,Class):1.0
+SubClassOf(BeckerMuscularDystrophy,NAMEDSyndrome,):1.0
+SubClassOf(BeckerMuscularDystrophy,hasAcquisitionMode some):1.0
+SubClassOf(BeckerMuscularDystrophy,(AcquisitionMode and (hasAbsoluteState some XLinkedRecessiveGeneInherited))):1.0
+is(BendLesion,Class):1.0
+is(BenignEssentialTremor,Class):1.0
+SubClassOf(BenignEssentialTremor,NAMEDDisorder,):1.0
+SubClassOf(BenignEssentialTremor,hasAcquisitionMode some):1.0
+SubClassOf(BenignEssentialTremor,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited)),):1.0
+SubClassOf(BenignEssentialTremor,hasSyndromeElement some MuscleTremor):1.0
+is(BenignLymphoepithelialLesion,Class):1.0
+SubClassOf(BenignLymphoepithelialLesion,NAMEDSyndrome,):1.0
+SubClassOf(BenignLymphoepithelialLesion,hasSyndromeElement some):1.0
+SubClassOf(BenignLymphoepithelialLesion,(NonNormalSwelling and (hasSpecificLocation some LacrimalGland)),):1.0
+SubClassOf(BenignLymphoepithelialLesion,hasSyndromeElement some):1.0
+SubClassOf(BenignLymphoepithelialLesion,(NonNormalSwelling and (hasSpecificLocation some SalivaryGland))):1.0
+is(BenignNeoplasticProcess,Class):1.0
+SubClassOf(BenignNeoplasticProcess,NeoplasticProcess):1.0
+is(Beriberi,Class):1.0
+SubClassOf(Beriberi,NAMEDSystemicDisease,):1.0
+SubClassOf(Beriberi,hasSyndromeElement some Polyneuritis,):1.0
+SubClassOf(Beriberi,isConsequenceOf some):1.0
+SubClassOf(Beriberi,(VitaminB1DeficiencyState and (isConsequenceOf some ThiamineDeficientNutrition))):1.0
+is(BetaGlucorinidase,Class):1.0
+is(BetaHexosaminidase,Class):1.0
+is(BiliaryCirrhosis,Class):1.0
+SubClassOf(BiliaryCirrhosis,Cirrhosis):1.0
+is(BilirubinGlucuronideGlucuronosyltransferase,Class):1.0
+is(BinannualFrequency,Class):1.0
+EquivalentTo(BinannualFrequency,Frequency and (hasQuantity some):1.0
+EquivalentTo(BinannualFrequency,(FrequencyValue and (hasMagnitude some n2) and (hasUnit some perYear)))):1.0
+SubClassOf(BinannualFrequency,Frequency):1.0
+is(BingeEating,Class):1.0
+is(BiologicalProcess,Class):1.0
+is(BipolarDepression,Class):1.0
+SubClassOf(BipolarDepression,NAMEDDisorder,):1.0
+SubClassOf(BipolarDepression,hasSyndromeElement some Depression,):1.0
+SubClassOf(BipolarDepression,hasSyndromeElement some Elation):1.0
+is(BlalockHanlonMethod,Class):1.0
+SubClassOf(BlalockHanlonMethod,NAMEDEponymousMethod):1.0
+is(BlalockTaussigMethod,Class):1.0
+SubClassOf(BlalockTaussigMethod,NAMEDEponymousMethod):1.0
+is(Blood,Class):1.0
+is(BloodVessel,Class):1.0
+is(BodilyHydrationChangingProcess,Class):1.0
+SubClassOf(BodilyHydrationChangingProcess,NAMEDWholeBodyProcess):1.0
+is(BodyProcess,Class):1.0
+SubClassOf(BodyProcess,BiologicalProcess):1.0
+is(BodyProcessSymptom,Class):1.0
+SubClassOf(BodyProcessSymptom,BodyProcess):1.0
+is(BodyStructure,Class):1.0
+is(Bone,Class):1.0
+is(BoneDeposition,Class):1.0
+is(BoneMarrowFunction,Class):1.0
+SubClassOf(BoneMarrowFunction,BodyProcess):1.0
+is(BonePain,Class):1.0
+is(BoneResorption,Class):1.0
+is(BoneSoftening,Class):1.0
+is(BoneThickening,Class):1.0
+is(BonyTraumaProcess,Class):1.0
+SubClassOf(BonyTraumaProcess,TraumaticProcess):1.0
+is(BouveretHoffmanSyndrome,Class):1.0
+SubClassOf(BouveretHoffmanSyndrome,NAMEDSyndrome):1.0
+is(Brachydactyly,Class):1.0
+SubClassOf(Brachydactyly,NAMEDSyndrome,):1.0
+SubClassOf(Brachydactyly,hasAcquisitionMode some):1.0
+SubClassOf(Brachydactyly,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(Bradykinesia,Class):1.0
+is(Brain,Class):1.0
+is(BrainAtrophy,Class):1.0
+is(Breathing,Class):1.0
+SubClassOf(Breathing,NAMEDRespiratoryProcess):1.0
+is(Breathlessness,Class):1.0
+is(BrittleAsthma,Class):1.0
+SubClassOf(BrittleAsthma,Asthma):1.0
+is(Brucella,Class):1.0
+is(Brucellosis,Class):1.0
+SubClassOf(Brucellosis,NAMEDDisorder,):1.0
+SubClassOf(Brucellosis,hasSyndromeElement some Fatigue,):1.0
+SubClassOf(Brucellosis,hasSyndromeElement some JointPain,):1.0
+SubClassOf(Brucellosis,hasSyndromeElement some Myalgia,):1.0
+SubClassOf(Brucellosis,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(Brucellosis,isConsequenceOf some):1.0
+SubClassOf(Brucellosis,(InfectionLesion and (isSpecificConsequenceOf some Brucella))):1.0
+is(BuddChiariSyndrome,Class):1.0
+SubClassOf(BuddChiariSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(BuddChiariSyndrome,hasSyndromeElement some Hepatomegaly,):1.0
+SubClassOf(BuddChiariSyndrome,hasSyndromeElement some):1.0
+SubClassOf(BuddChiariSyndrome,(Ascites and (hasChronicity some):1.0
+SubClassOf(BuddChiariSyndrome,(Chronicity and (hasAbsoluteState some chronic))) and (hasTreatmentTractability some):1.0
+SubClassOf(BuddChiariSyndrome,(TreatmentTractability and (hasAbsoluteState some treatmentRefractory)))),):1.0
+SubClassOf(BuddChiariSyndrome,hasSyndromeElement some):1.0
+SubClassOf(BuddChiariSyndrome,(PortalHypertension and (hasSeverity some SevereSeverity)),):1.0
+SubClassOf(BuddChiariSyndrome,hasSyndromeElement some):1.0
+SubClassOf(BuddChiariSyndrome,(ThrombusLesion and (hasSpecificLocation some HepaticVein))):1.0
+is(BulimiaNervosa,Class):1.0
+SubClassOf(BulimiaNervosa,NAMEDSyndrome,):1.0
+SubClassOf(BulimiaNervosa,LocativeAttribute some Psyche,):1.0
+SubClassOf(BulimiaNervosa,hasChronicity some):1.0
+SubClassOf(BulimiaNervosa,(Chronicity and (hasAbsoluteState some chronic)),):1.0
+SubClassOf(BulimiaNervosa,hasSyndromeElement some BingeEating,):1.0
+SubClassOf(BulimiaNervosa,hasSyndromeElement some FastingProcess,):1.0
+SubClassOf(BulimiaNervosa,hasSyndromeElement some LaxativeAbuse,):1.0
+SubClassOf(BulimiaNervosa,hasSyndromeElement some Vomiting):1.0
+is(Bulla,Class):1.0
+is(BullaFormationProcess,Class):1.0
+SubClassOf(BullaFormationProcess,MechanicalLesionProcess):1.0
+is(BullousSkinRash,Class):1.0
+is(COAD,Class):1.0
+SubClassOf(COAD,NAMEDSystemicDisease):1.0
+is(CalciumPyrophosphate,Class):1.0
+is(Calocedrus,Class):1.0
+SubClassOf(Calocedrus,Cupressus):1.0
+is(CarcinoidSyndrome,Class):1.0
+SubClassOf(CarcinoidSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(CarcinoidSyndrome,isSpecificConsequenceOf some CarcinoidTumour):1.0
+is(CarcinoidTumour,Class):1.0
+is(CardiacDilatation,Class):1.0
+is(CardiacFunction,Class):1.0
+SubClassOf(CardiacFunction,BodyProcess):1.0
+is(CardiacHypertrophy,Class):1.0
+is(CardiogenicShock,Class):1.0
+SubClassOf(CardiogenicShock,Shock):1.0
+is(Cardiomegaly,Class):1.0
+is(CardiovascularSystem,Class):1.0
+is(Cardioverting,Class):1.0
+SubClassOf(Cardioverting,NAMEDCardiacProcess):1.0
+is(CatabolicProcess,Class):1.0
+is(Cauterizing,Class):1.0
+SubClassOf(Cauterizing,NAMEDPhysicalProcess):1.0
+is(CavernousFibrosis,Class):1.0
+is(CavitationProcess,Class):1.0
+SubClassOf(CavitationProcess,MechanicalLesionProcess):1.0
+is(CeliacTrunk,Class):1.0
+is(CellNeoplasia,Class):1.0
+SubClassOf(CellNeoplasia,NeoplasticProcess):1.0
+is(CellulitisLesion,Class):1.0
+is(Centrifuging,Class):1.0
+SubClassOf(Centrifuging,NAMEDPhysicalProcess):1.0
+is(Ceramidase,Class):1.0
+is(Ceramide,Class):1.0
+is(CerebellarHemisphere,Class):1.0
+is(CerebellarSyndrome,Class):1.0
+SubClassOf(CerebellarSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(CerebellarSyndrome,hasSyndromeElement some Asynergy,):1.0
+SubClassOf(CerebellarSyndrome,hasSyndromeElement some Ataxia,):1.0
+SubClassOf(CerebellarSyndrome,hasSyndromeElement some Dysarthria,):1.0
+SubClassOf(CerebellarSyndrome,hasSyndromeElement some Dysdiadochokinesia,):1.0
+SubClassOf(CerebellarSyndrome,hasSyndromeElement some Dysmetria,):1.0
+SubClassOf(CerebellarSyndrome,hasSyndromeElement some Nystagmus,):1.0
+SubClassOf(CerebellarSyndrome,hasSyndromeElement some StaggeringGait,):1.0
+SubClassOf(CerebellarSyndrome,isConsequenceOf some):1.0
+SubClassOf(CerebellarSyndrome,(PathologicalPhenomenon and (LocativeAttribute some Cerebellum))):1.0
+is(Cerebellum,Class):1.0
+is(CerebralFunction,Class):1.0
+SubClassOf(CerebralFunction,BodyProcess):1.0
+is(CerebralHemisphere,Class):1.0
+is(Cerebrosidase,Class):1.0
+is(Cerebroside,Class):1.0
+is(ChalasiaProcess,Class):1.0
+EquivalentTo(ChalasiaProcess,ControlOfFlow and (hasProcessActivity some):1.0
+EquivalentTo(ChalasiaProcess,(ProcessActivity and (hasAbsoluteState some inactive))) and (isSpecificFunctionOf some LowerEsophagealSphincter)):1.0
+SubClassOf(ChalasiaProcess,ControlOfFlow):1.0
+is(ChemicalDeposition,Class):1.0
+SubClassOf(ChemicalDeposition,NAMEDMetabolicProcess):1.0
+is(ChemicalReaction,Class):1.0
+SubClassOf(ChemicalReaction,NAMEDMetabolicProcess):1.0
+is(ChemicalResorption,Class):1.0
+SubClassOf(ChemicalResorption,NAMEDMetabolicProcess):1.0
+is(ChemicalSubstance,Class):1.0
+is(Chemotaxis,Class):1.0
+SubClassOf(Chemotaxis,NAMEDImmunologicalProcess):1.0
+is(ChestPain,Class):1.0
+is(Chickenpox,Class):1.0
+SubClassOf(Chickenpox,NAMEDDisorder,):1.0
+SubClassOf(Chickenpox,hasSyndromeElement some MacularSkinRash,):1.0
+SubClassOf(Chickenpox,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(Chickenpox,isConsequenceOf some):1.0
+SubClassOf(Chickenpox,(InfectionLesion and (isSpecificConsequenceOf some HerpesVaricellaZosterVirus))):1.0
+is(ChildhoodHyperkineticSyndrome,Class):1.0
+SubClassOf(ChildhoodHyperkineticSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(ChildhoodHyperkineticSyndrome,hasConsequence some LabileAffect,):1.0
+SubClassOf(ChildhoodHyperkineticSyndrome,hasConsequence some):1.0
+SubClassOf(ChildhoodHyperkineticSyndrome,(MentalAgitation and (hasPathologicalStatus some pathological)),):1.0
+SubClassOf(ChildhoodHyperkineticSyndrome,hasConsequence some):1.0
+SubClassOf(ChildhoodHyperkineticSyndrome,(MentalExcitation and (hasPathologicalStatus some pathological)),):1.0
+SubClassOf(ChildhoodHyperkineticSyndrome,hasConsequence some):1.0
+SubClassOf(ChildhoodHyperkineticSyndrome,(PhysicalArousal and (hasPathologicalStatus some pathological))):1.0
+is(Chill,Class):1.0
+is(Chloasma,Class):1.0
+SubClassOf(Chloasma,NAMEDUnmodelledPathology):1.0
+is(Cholelithiasis,Class):1.0
+SubClassOf(Cholelithiasis,NAMEDDisorder,):1.0
+SubClassOf(Cholelithiasis,isConsequenceOf some GallStoneInBiliaryTract):1.0
+is(CholinergicReceptor,Class):1.0
+is(Chondritis,Class):1.0
+is(ChondroitinSulphate,Class):1.0
+is(ChoreiformMovement,Class):1.0
+is(ChoreoathetoidMovement,Class):1.0
+is(ChronicAdrenocorticalInsufficiency,Class):1.0
+SubClassOf(ChronicAdrenocorticalInsufficiency,BodyProcess):1.0
+is(ChronicBronchitis,Class):1.0
+is(ChronicBronchitisSyndrome,Class):1.0
+SubClassOf(ChronicBronchitisSyndrome,NAMEDSystemicDisease,):1.0
+SubClassOf(ChronicBronchitisSyndrome,hasSyndromeElement some ChronicBronchitis):1.0
+is(ChronicFeature,Class):1.0
+is(ChronicGlaucoma,Class):1.0
+SubClassOf(ChronicGlaucoma,Glaucoma):1.0
+is(ChronicLymphoedema,Class):1.0
+SubClassOf(ChronicLymphoedema,LymphoedemaProcess):1.0
+is(ChronicMetabolicAcidosis,Class):1.0
+is(Chronicity,Class):1.0
+is(ChronsDisease,Class):1.0
+SubClassOf(ChronsDisease,NAMEDSystemicDisease):1.0
+is(ChurgStraussSyndrome,Class):1.0
+SubClassOf(ChurgStraussSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(ChurgStraussSyndrome,hasSyndromeElement some Asthma,):1.0
+SubClassOf(ChurgStraussSyndrome,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(ChurgStraussSyndrome,hasSyndromeElement some RaisedEosinophilCount):1.0
+is(CirculatingBloodExtracorporeally,Class):1.0
+SubClassOf(CirculatingBloodExtracorporeally,NAMEDSurgicalAccompanyingProcess):1.0
+is(Circulation,Class):1.0
+SubClassOf(Circulation,NAMEDCirculatoryProcess):1.0
+is(Cirrhosis,Class):1.0
+SubClassOf(Cirrhosis,NAMEDDisorder,):1.0
+SubClassOf(Cirrhosis,hasChronicity some ChronicFeature,):1.0
+SubClassOf(Cirrhosis,hasSyndromeElement some):1.0
+SubClassOf(Cirrhosis,(DamagingProcess and (actsSpecificallyOn some Hepatocyte))):1.0
+is(ClassicMigraine,Class):1.0
+SubClassOf(ClassicMigraine,Migraine):1.0
+is(ClassicalDiabetesInsipidus,Class):1.0
+SubClassOf(ClassicalDiabetesInsipidus,DiabetesInsipidus):1.0
+is(ClimactericSyndrome,Class):1.0
+SubClassOf(ClimactericSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(ClimactericSyndrome,hasSyndromeElement some Aggression,):1.0
+SubClassOf(ClimactericSyndrome,hasSyndromeElement some Chill,):1.0
+SubClassOf(ClimactericSyndrome,hasSyndromeElement some Depression,):1.0
+SubClassOf(ClimactericSyndrome,hasSyndromeElement some Headache,):1.0
+SubClassOf(ClimactericSyndrome,hasSyndromeElement some HotFlush):1.0
+is(ClusterHeadache,Class):1.0
+SubClassOf(ClusterHeadache,Migraine):1.0
+is(CoagulationDefect,Class):1.0
+is(CoeliacArteryCompressionSyndrome,Class):1.0
+SubClassOf(CoeliacArteryCompressionSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(CoeliacArteryCompressionSyndrome,hasSyndromeElement some):1.0
+SubClassOf(CoeliacArteryCompressionSyndrome,(IschaemicLesion and (hasChronicity some ChronicFeature) and (hasSpecificLocation some Intestine)),):1.0
+SubClassOf(CoeliacArteryCompressionSyndrome,hasSyndromeElement some):1.0
+SubClassOf(CoeliacArteryCompressionSyndrome,(ObstructingLesion and (hasChronicity some ChronicFeature) and (hasSpecificLocation some CeliacTrunk))):1.0
+is(CoeliacDisease,Class):1.0
+SubClassOf(CoeliacDisease,NAMEDDisorder,):1.0
+SubClassOf(CoeliacDisease,hasSyndromeElement some Malabsorption,):1.0
+SubClassOf(CoeliacDisease,hasSyndromeElement some):1.0
+SubClassOf(CoeliacDisease,(HypersensitivityProcess and (isSpecificConsequenceOf some Gliadin)),):1.0
+SubClassOf(CoeliacDisease,hasSyndromeElement some):1.0
+SubClassOf(CoeliacDisease,(InflammationLesion and (hasSpecificLocation some SmallIntestine))):1.0
+is(CognitiveImpairment,Class):1.0
+is(CognitivePathology,Class):1.0
+is(Coitus,Class):1.0
+SubClassOf(Coitus,NAMEDSexualProcess):1.0
+is(Colon,Class):1.0
+is(CombinedHyperlipidaemia,Class):1.0
+SubClassOf(CombinedHyperlipidaemia,HyperLipidaemia):1.0
+is(CommonMigraine,Class):1.0
+SubClassOf(CommonMigraine,Migraine):1.0
+is(CompleteAtrioventricularBlock,Class):1.0
+is(ComponentOfGastrointestinalTract,Class):1.0
+is(Compounding,Class):1.0
+SubClassOf(Compounding,NAMEDPhysicalProcess):1.0
+is(CompressionLesion,Class):1.0
+is(Computing,Class):1.0
+SubClassOf(Computing,NAMEDPhysicalProcess):1.0
+is(Conception,Class):1.0
+SubClassOf(Conception,NAMEDReproductiveProcess):1.0
+is(Confusion,Class):1.0
+is(CongenitalAbdominalMuscleAgenesis,Class):1.0
+is(CongenitalAdrenalHyperplasia,Class):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,NAMEDSystemicDisease,):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,hasAcquisitionMode some):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,hasSyndromeElement some AdrenalHyperplasia,):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,hasSyndromeElement some):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,(IneffectiveCatalysis and (actsOn some):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,(AnabolicProcess and (actsSpecificallyOn some AdrenocorticalHormone) and (isFunctionOf some AdrenalCortex))) and (isFunctionOf some Enzyme)),):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,isConsequenceOf some):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(CongenitalAdrenalHyperplasia,(GeneTranscription and (hasSpecificImmediateConsequence some Enzyme))))):1.0
+is(CongenitalErythropoieticPorphyria,Class):1.0
+SubClassOf(CongenitalErythropoieticPorphyria,Porphyria):1.0
+is(CongenitalLongQTSyndrome,Class):1.0
+SubClassOf(CongenitalLongQTSyndrome,LongQTSyndrome):1.0
+is(CongenitalSyphilis,Class):1.0
+SubClassOf(CongenitalSyphilis,Syphilis):1.0
+is(ConjunctivalInflammation,Class):1.0
+is(ConnectiveTissueDiseaseClass,Class):1.0
+is(ConnectiveTissueStructure,Class):1.0
+is(Consciousness,Class):1.0
+is(ConsolidationProcess,Class):1.0
+SubClassOf(ConsolidationProcess,AcquiredPathologicalProcess):1.0
+is(ConstrictivePericarditis,Class):1.0
+is(ControlOfFlow,Class):1.0
+is(Coproporphyria,Class):1.0
+is(CoriDisease,Class):1.0
+SubClassOf(CoriDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(CoriDisease,hasSyndromeElement some):1.0
+SubClassOf(CoriDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(CoriDisease,(CatabolicProcess and (actsSpecificallyOn some Glycogen))) and (isSpecificFunctionOf some Amylo16Glucosidase)),):1.0
+SubClassOf(CoriDisease,hasSyndromeElement some):1.0
+SubClassOf(CoriDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Glycogen)),):1.0
+SubClassOf(CoriDisease,isConsequenceOf some):1.0
+SubClassOf(CoriDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(CoriDisease,(GeneTranscription and (hasSpecificImmediateConsequence some Iduronidase))))):1.0
+is(CortisolOverload,Class):1.0
+is(CorynebacteriumDiphtheriae,Class):1.0
+is(CotDeathSyndrome,Class):1.0
+SubClassOf(CotDeathSyndrome,NAMEDSyndrome):1.0
+is(Craniorrhachischisis,Class):1.0
+SubClassOf(Craniorrhachischisis,NAMEDSyndrome,):1.0
+SubClassOf(Craniorrhachischisis,hasAcquisitionMode some):1.0
+SubClassOf(Craniorrhachischisis,(AcquisitionMode and (hasAbsoluteState some congenital)),):1.0
+SubClassOf(Craniorrhachischisis,hasSeverity some SevereSeverity,):1.0
+SubClassOf(Craniorrhachischisis,hasSyndromeElement some SpinaBifida,):1.0
+SubClassOf(Craniorrhachischisis,hasSyndromeElement some):1.0
+SubClassOf(Craniorrhachischisis,(PlanarDefect and (hasSpecificLocation some Skull))):1.0
+is(CriglerNajjarSyndrome,Class):1.0
+SubClassOf(CriglerNajjarSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(CriglerNajjarSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(CriglerNajjarSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(CriglerNajjarSyndrome,hasSyndromeElement some IntermittentJaundice,):1.0
+SubClassOf(CriglerNajjarSyndrome,hasSyndromeElement some):1.0
+SubClassOf(CriglerNajjarSyndrome,(IneffectiveCatalysis and (isSpecificFunctionOf some BilirubinGlucuronideGlucuronosyltransferase)),):1.0
+SubClassOf(CriglerNajjarSyndrome,isConsequenceOf some):1.0
+SubClassOf(CriglerNajjarSyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(CriglerNajjarSyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some BilirubinGlucuronideGlucuronosyltransferase))))):1.0
+is(CrohnsDisease,Class):1.0
+SubClassOf(CrohnsDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(CrohnsDisease,hasSyndromeElement some AbdominalColic,):1.0
+SubClassOf(CrohnsDisease,hasSyndromeElement some Diarrhoea,):1.0
+SubClassOf(CrohnsDisease,hasSyndromeElement some):1.0
+SubClassOf(CrohnsDisease,(InflammationLesion and (hasSpecificLocation some ComponentOfGastrointestinalTract))):1.0
+is(Cupressus,Class):1.0
+is(Curvature,Class):1.0
+SubClassOf(Curvature,NAMEDUnmodelledPathology):1.0
+is(CushingSyndrome,Class):1.0
+SubClassOf(CushingSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(CushingSyndrome,hasSyndromeElement some AcneVulgaris,):1.0
+SubClassOf(CushingSyndrome,hasSyndromeElement some Amenorrhoea,):1.0
+SubClassOf(CushingSyndrome,hasSyndromeElement some Hirsutism,):1.0
+SubClassOf(CushingSyndrome,hasSyndromeElement some Hypertension,):1.0
+SubClassOf(CushingSyndrome,hasSyndromeElement some Obesity,):1.0
+SubClassOf(CushingSyndrome,hasSyndromeElement some Osteoporosis,):1.0
+SubClassOf(CushingSyndrome,isConsequenceOf some CortisolOverload):1.0
+is(CutaneomucouvealSyndrome,Class):1.0
+SubClassOf(CutaneomucouvealSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(CutaneomucouvealSyndrome,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass,):1.0
+SubClassOf(CutaneomucouvealSyndrome,hasSyndromeElement some GenitalUlcer,):1.0
+SubClassOf(CutaneomucouvealSyndrome,hasSyndromeElement some Hypopyon,):1.0
+SubClassOf(CutaneomucouvealSyndrome,hasSyndromeElement some OralUlcer,):1.0
+SubClassOf(CutaneomucouvealSyndrome,hasSyndromeElement some Uveitis):1.0
+is(Cyclothymia,Class):1.0
+SubClassOf(Cyclothymia,NAMEDDisorder,):1.0
+SubClassOf(Cyclothymia,hasSyndromeElement some):1.0
+SubClassOf(Cyclothymia,(Affect and (hasTemporalPattern some):1.0
+SubClassOf(Cyclothymia,(TemporalPattern and (hasAbsoluteState some cyclical))))):1.0
+is(CysticFibrosis,Class):1.0
+SubClassOf(CysticFibrosis,NAMEDSystemicDisease,):1.0
+SubClassOf(CysticFibrosis,hasAcquisitionMode some):1.0
+SubClassOf(CysticFibrosis,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(CysticFibrosis,hasSubprocess some PathologicalMetabolicProcess,):1.0
+SubClassOf(CysticFibrosis,hasSyndromeElement some PulmonaryFibrosis,):1.0
+SubClassOf(CysticFibrosis,hasSyndromeElement some):1.0
+SubClassOf(CysticFibrosis,(FibrosisLesion and (hasSpecificLocation some Pancreas))):1.0
+is(Cystinosis,Class):1.0
+is(Cystinuria,Class):1.0
+is(DamagingProcess,Class):1.0
+is(Dandruff,Class):1.0
+SubClassOf(Dandruff,NAMEDDisorder,):1.0
+SubClassOf(Dandruff,isSpecificImmediateConsequenceOf some ExcessiveScalpExfoliation):1.0
+is(DarierDisease,Class):1.0
+SubClassOf(DarierDisease,NAMEDDisorder,):1.0
+SubClassOf(DarierDisease,hasAcquisitionMode some):1.0
+SubClassOf(DarierDisease,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited)),):1.0
+SubClassOf(DarierDisease,hasSyndromeElement some KeratosisLesion):1.0
+is(DaytimeDrowsiness,Class):1.0
+is(DeQuervainThyroiditis,Class):1.0
+SubClassOf(DeQuervainThyroiditis,NAMEDSystemicDisease,):1.0
+SubClassOf(DeQuervainThyroiditis,hasChronicity some):1.0
+SubClassOf(DeQuervainThyroiditis,(Chronicity and (hasAbsoluteState some subAcute)),):1.0
+SubClassOf(DeQuervainThyroiditis,hasSyndromeElement some Thyroiditis,):1.0
+SubClassOf(DeQuervainThyroiditis,isConsequenceOf some):1.0
+SubClassOf(DeQuervainThyroiditis,(ViralInfectionLesion and (hasSpecificLocation some ThyroidGland))):1.0
+is(Deafness,Class):1.0
+is(DebilitatedPatient,Class):1.0
+SubClassOf(DebilitatedPatient,NAMEDUnmodelledPathology):1.0
+is(DeepVeinOfLeg,Class):1.0
+is(DefectiveGene,Class):1.0
+is(Defibrillating,Class):1.0
+SubClassOf(Defibrillating,NAMEDCardiacProcess):1.0
+is(DegenerativeAtrophicProcess,Class):1.0
+SubClassOf(DegenerativeAtrophicProcess,DegenerativeProcess):1.0
+is(DegenerativeProcess,Class):1.0
+SubClassOf(DegenerativeProcess,AcquiredPathologicalProcess):1.0
+is(Dehydration,Class):1.0
+is(Delirium,Class):1.0
+SubClassOf(Delirium,NAMEDSyndrome,):1.0
+SubClassOf(Delirium,hasSyndromeElement some Confusion,):1.0
+SubClassOf(Delirium,hasSyndromeElement some DisorderedPerception,):1.0
+SubClassOf(Delirium,hasSyndromeElement some EnvironmentalDisorientation,):1.0
+SubClassOf(Delirium,hasSyndromeElement some MentalAgitation,):1.0
+SubClassOf(Delirium,hasSyndromeElement some MentalDistraction,):1.0
+SubClassOf(Delirium,hasSyndromeElement some PathologicalCognition,):1.0
+SubClassOf(Delirium,hasSyndromeElement some):1.0
+SubClassOf(Delirium,(Consciousness and (hasProcessActivity some depressedActivity))):1.0
+is(DeliveryProcess,Class):1.0
+SubClassOf(DeliveryProcess,NAMEDReproductiveProcess):1.0
+is(Dementia,Class):1.0
+SubClassOf(Dementia,NAMEDSyndrome,):1.0
+SubClassOf(Dementia,hasSyndromeElement some CognitiveImpairment,):1.0
+SubClassOf(Dementia,hasSyndromeElement some EnvironmentalDisorientation,):1.0
+SubClassOf(Dementia,hasSyndromeElement some LabileAffect,):1.0
+SubClassOf(Dementia,hasSyndromeElement some MemoryDisturbance,):1.0
+SubClassOf(Dementia,hasSyndromeElement some):1.0
+SubClassOf(Dementia,(Consciousness and (hasAbnormalityStatus some normal)),):1.0
+SubClassOf(Dementia,hasSyndromeElement some):1.0
+SubClassOf(Dementia,(Perception and (hasAbnormalityStatus some normal))):1.0
+is(Depigmentation,Class):1.0
+is(Depression,Class):1.0
+is(Depressurising,Class):1.0
+SubClassOf(Depressurising,NAMEDPhysicalProcess):1.0
+is(DermatanSulphate,Class):1.0
+is(Dermatitis,Class):1.0
+is(Dermatomyositis,Class):1.0
+SubClassOf(Dermatomyositis,NAMEDDisorder,):1.0
+SubClassOf(Dermatomyositis,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass,):1.0
+SubClassOf(Dermatomyositis,hasSyndromeElement some FacialErythema,):1.0
+SubClassOf(Dermatomyositis,hasSyndromeElement some PalpebralOedema,):1.0
+SubClassOf(Dermatomyositis,hasSyndromeElement some PathologicalMuscleWeakness,):1.0
+SubClassOf(Dermatomyositis,hasSyndromeElement some PeriorbitalOedema,):1.0
+SubClassOf(Dermatomyositis,hasSyndromeElement some RaisedSerumCreatinineKinaseConcentration,):1.0
+SubClassOf(Dermatomyositis,hasSyndromeElement some SkinRash,):1.0
+SubClassOf(Dermatomyositis,hasSyndromeElement some):1.0
+SubClassOf(Dermatomyositis,(Myositis and (hasChronicity some ChronicFeature))):1.0
+is(Desquamation,Class):1.0
+SubClassOf(Desquamation,NAMEDSkinProcess):1.0
+is(DetrusorHypotonia,Class):1.0
+is(Developing,Class):1.0
+SubClassOf(Developing,NAMEDDevelopmentalProcess):1.0
+is(DiabetesInsipidus,Class):1.0
+SubClassOf(DiabetesInsipidus,NAMEDSystemicDisease,):1.0
+SubClassOf(DiabetesInsipidus,hasSyndromeElement some Dehydration,):1.0
+SubClassOf(DiabetesInsipidus,hasSyndromeElement some IncreasedThirst,):1.0
+SubClassOf(DiabetesInsipidus,hasSyndromeElement some Polyuria):1.0
+is(DiabetesMellitus,Class):1.0
+SubClassOf(DiabetesMellitus,NAMEDSystemicDisease,):1.0
+SubClassOf(DiabetesMellitus,isConsequenceOf some FailureOfCellGlucoseUptake):1.0
+is(Diameter,Class):1.0
+is(Diarrhoea,Class):1.0
+is(DiffuseGoitre,Class):1.0
+is(Digestion,Class):1.0
+SubClassOf(Digestion,NAMEDDigestiveProcess):1.0
+is(DigitalElectonics,Class):1.0
+SubClassOf(DigitalElectonics,NAMEDPhysicalProcess):1.0
+is(DilatatingProcess,Class):1.0
+is(Diphtheria,Class):1.0
+SubClassOf(Diphtheria,NAMEDDisorder,):1.0
+SubClassOf(Diphtheria,isConsequenceOf some):1.0
+SubClassOf(Diphtheria,(InfectionLesion and (isSpecificConsequenceOf some CorynebacteriumDiphtheriae))):1.0
+is(DiscoidLupusErythematosus,Class):1.0
+SubClassOf(DiscoidLupusErythematosus,SystemicLupusErythematosus):1.0
+is(DiseaseCourseStage,Class):1.0
+is(DisorderedPerception,Class):1.0
+is(DisordersOfCalciumMetabolism,Class):1.0
+SubClassOf(DisordersOfCalciumMetabolism,NAMEDMetabolicPathologicalProcess):1.0
+is(Displacement,Class):1.0
+is(Displeasure,Class):1.0
+is(DisruptionProcess,Class):1.0
+SubClassOf(DisruptionProcess,TraumaticProcess):1.0
+is(Distribution,Class):1.0
+is(DiverticularDisease,Class):1.0
+SubClassOf(DiverticularDisease,NAMEDSyndrome,):1.0
+SubClassOf(DiverticularDisease,hasSyndromeElement some):1.0
+SubClassOf(DiverticularDisease,(Diverticulum and (hasLocation some GastrointestinalTract)),):1.0
+SubClassOf(DiverticularDisease,hasSyndromeElement some):1.0
+SubClassOf(DiverticularDisease,(PathologicalPhenomenon and (LocativeAttribute some Diverticulum))):1.0
+is(Diverticulum,Class):1.0
+is(DiverticulumProcess,Class):1.0
+SubClassOf(DiverticulumProcess,BodyProcess):1.0
+is(DopamineNeurotransmitterDeficiency,Class):1.0
+is(DorMethod,Class):1.0
+SubClassOf(DorMethod,NAMEDEponymousMethod):1.0
+is(DorsalGreyColumn,Class):1.0
+is(DoubleLip,Class):1.0
+is(DownSyndrome,Class):1.0
+SubClassOf(DownSyndrome,NAMEDSyndrome):1.0
+is(DreamingProcess,Class):1.0
+SubClassOf(DreamingProcess,NAMEDSleepProcess):1.0
+is(DrugAbsorbing,Class):1.0
+SubClassOf(DrugAbsorbing,NAMEDPharmacokineticProcess):1.0
+is(DrugEffect,Class):1.0
+SubClassOf(DrugEffect,PharmacodynamicProcess):1.0
+is(DrugExcreting,Class):1.0
+SubClassOf(DrugExcreting,NAMEDPharmacokineticProcess):1.0
+is(DrugInteracting,Class):1.0
+SubClassOf(DrugInteracting,NAMEDPharmacologicalProcess):1.0
+is(DrugMetabolising,Class):1.0
+SubClassOf(DrugMetabolising,NAMEDPharmacokineticProcess):1.0
+is(DrugProteinBinding,Class):1.0
+SubClassOf(DrugProteinBinding,NAMEDPharmacokineticProcess):1.0
+is(DrugToleranceProcess,Class):1.0
+SubClassOf(DrugToleranceProcess,NAMEDPharmacokineticProcess):1.0
+is(DryMouth,Class):1.0
+is(DubinJohnsonSyndrome,Class):1.0
+SubClassOf(DubinJohnsonSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(DubinJohnsonSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(DubinJohnsonSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(DubinJohnsonSyndrome,hasSyndromeElement some Coproporphyria,):1.0
+SubClassOf(DubinJohnsonSyndrome,hasSyndromeElement some IntermittentJaundice):1.0
+is(DuchenneMuscularDystrophy,Class):1.0
+SubClassOf(DuchenneMuscularDystrophy,NAMEDSyndrome,):1.0
+SubClassOf(DuchenneMuscularDystrophy,hasAcquisitionMode some):1.0
+SubClassOf(DuchenneMuscularDystrophy,(AcquisitionMode and (hasAbsoluteState some XLinkedRecessiveGeneInherited))):1.0
+is(DyingProcess,Class):1.0
+SubClassOf(DyingProcess,NAMEDOrganismProcess):1.0
+is(Dysarthria,Class):1.0
+is(Dysdiadochokinesia,Class):1.0
+is(Dysentery,Class):1.0
+SubClassOf(Dysentery,NAMEDDisorder,):1.0
+SubClassOf(Dysentery,hasSpecificConsequence some SevereDiarrhoea):1.0
+is(Dysmetria,Class):1.0
+is(Dysphagia,Class):1.0
+is(DysplasticProcess,Class):1.0
+SubClassOf(DysplasticProcess,AbnormalGrowthProcess):1.0
+is(EagleSyndrome,Class):1.0
+SubClassOf(EagleSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(EagleSyndrome,isConsequenceOf some):1.0
+SubClassOf(EagleSyndrome,(Mineralization and (actsOn some StyloHyoidLigament)),):1.0
+SubClassOf(EagleSyndrome,isConsequenceOf some):1.0
+SubClassOf(EagleSyndrome,(StyloidProcess and (hasChangeInState some lengthened))):1.0
+is(EctodermalDysplasia,Class):1.0
+SubClassOf(EctodermalDysplasia,NAMEDSyndrome,):1.0
+SubClassOf(EctodermalDysplasia,hasAcquisitionMode some):1.0
+SubClassOf(EctodermalDysplasia,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(EdwardSyndrome,Class):1.0
+SubClassOf(EdwardSyndrome,NAMEDSyndrome):1.0
+is(Effectiveness,Class):1.0
+is(Effusion,Class):1.0
+is(EhlersDanlosSyndrome,Class):1.0
+SubClassOf(EhlersDanlosSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(EhlersDanlosSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(EhlersDanlosSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(Ejaculation,Class):1.0
+SubClassOf(Ejaculation,NAMEDSexualProcess):1.0
+is(ElastosisProcess,Class):1.0
+SubClassOf(ElastosisProcess,DegenerativeProcess):1.0
+is(Elation,Class):1.0
+is(ElectricalDischarging,Class):1.0
+SubClassOf(ElectricalDischarging,NAMEDPhysicalProcess):1.0
+is(ElectrolyteDisturbancesOnLongTermTherapy,Class):1.0
+SubClassOf(ElectrolyteDisturbancesOnLongTermTherapy,NAMEDMetabolicPathologicalProcess):1.0
+is(ElectrophoresisProcess,Class):1.0
+SubClassOf(ElectrophoresisProcess,NAMEDPhysicalProcess):1.0
+is(EmbolismProcess,Class):1.0
+SubClassOf(EmbolismProcess,NAMEDPathologicalProcess):1.0
+is(EmbryoImplantation,Class):1.0
+SubClassOf(EmbryoImplantation,NAMEDReproductiveProcess):1.0
+is(Emphysema,Class):1.0
+SubClassOf(Emphysema,DegenerativeProcess):1.0
+is(EndocardialFibroelastosis,Class):1.0
+SubClassOf(EndocardialFibroelastosis,NAMEDSystemicDisease,):1.0
+SubClassOf(EndocardialFibroelastosis,hasAcquisitionMode some):1.0
+SubClassOf(EndocardialFibroelastosis,(AcquisitionMode and (hasAbsoluteState some congenital)),):1.0
+SubClassOf(EndocardialFibroelastosis,hasSyndromeElement some CardiacHypertrophy,):1.0
+SubClassOf(EndocardialFibroelastosis,hasSyndromeElement some):1.0
+SubClassOf(EndocardialFibroelastosis,(FibrosisLesion and (hasSpecificLocation some):1.0
+SubClassOf(EndocardialFibroelastosis,(Endocardium and (isSpecificLayerOf some LeftHeartVentricle)))),):1.0
+SubClassOf(EndocardialFibroelastosis,hasSyndromeElement some):1.0
+SubClassOf(EndocardialFibroelastosis,(FibrosisLesion and (hasSpecificLocation some):1.0
+SubClassOf(EndocardialFibroelastosis,(Endocardium and (isSpecificLayerOf some MajorHeartValve))))):1.0
+is(EndocardialFibrosisOfLeftVentricularOutflowTract,Class):1.0
+is(Endocardium,Class):1.0
+is(EndolymphaticDuct,Class):1.0
+is(EnvironmentalDisorientation,Class):1.0
+is(Enzyme,Class):1.0
+is(EosinophiliaMyalgiaSyndrome,Class):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass,):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,hasSyndromeElement some Fatigue,):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,hasSyndromeElement some MuscleCramp,):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,hasSyndromeElement some Myalgia,):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,hasSyndromeElement some Paraesthesia,):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,hasSyndromeElement some RaisedEosinophilCount,):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,hasSyndromeElement some):1.0
+SubClassOf(EosinophiliaMyalgiaSyndrome,(InflammationLesion and (hasSpecificLocation some ConnectiveTissueStructure))):1.0
+is(EpidermalNecrolysis,Class):1.0
+SubClassOf(EpidermalNecrolysis,NAMEDDisorder,):1.0
+SubClassOf(EpidermalNecrolysis,hasSyndromeElement some Erythema,):1.0
+SubClassOf(EpidermalNecrolysis,hasSyndromeElement some):1.0
+SubClassOf(EpidermalNecrolysis,(NecrosisLesion and (hasSpecificLocation some SkinCovering))):1.0
+is(Epilepsy,Class):1.0
+SubClassOf(Epilepsy,NAMEDSystemicDisease,):1.0
+SubClassOf(Epilepsy,hasChronicity some):1.0
+SubClassOf(Epilepsy,(Chronicity and (hasAbsoluteState some chronic)),):1.0
+SubClassOf(Epilepsy,hasSubprocess some Seizure,):1.0
+SubClassOf(Epilepsy,hasTemporalPattern some):1.0
+SubClassOf(Epilepsy,(TemporalPattern and (hasAbsoluteState some intermittent))):1.0
+is(EpsteinBarrVirus,Class):1.0
+is(ErectileDeformity,Class):1.0
+is(ErgotismWithGangreneAndConfusion,Class):1.0
+SubClassOf(ErgotismWithGangreneAndConfusion,NAMEDUnmodelledPathology):1.0
+is(ErosionLesion,Class):1.0
+is(ErosionOfMucousMembrane,Class):1.0
+SubClassOf(ErosionOfMucousMembrane,NAMEDUnmodelledPathology):1.0
+is(ErosionProcess,Class):1.0
+SubClassOf(ErosionProcess,UlceratingOrErosionProcess):1.0
+is(Erythema,Class):1.0
+is(ErythemaMultiforme,Class):1.0
+SubClassOf(ErythemaMultiforme,NAMEDDisorder,):1.0
+SubClassOf(ErythemaMultiforme,hasSyndromeElement some BullousSkinRash,):1.0
+SubClassOf(ErythemaMultiforme,hasSyndromeElement some MacularSkinRash,):1.0
+SubClassOf(ErythemaMultiforme,hasSyndromeElement some PapularSkinRash):1.0
+is(ErythroplasticProcess,Class):1.0
+SubClassOf(ErythroplasticProcess,DysplasticProcess):1.0
+is(Euthyroidism,Class):1.0
+is(ExcessiveScalpExfoliation,Class):1.0
+is(Exfoliation,Class):1.0
+SubClassOf(Exfoliation,NAMEDSkinProcess):1.0
+is(Expectoration,Class):1.0
+SubClassOf(Expectoration,NAMEDRespiratoryProcess):1.0
+is(Expiration,Class):1.0
+SubClassOf(Expiration,NAMEDRespiratoryProcess):1.0
+is(ExpiratoryObstruction,Class):1.0
+is(ExternalCarotidArtery,Class):1.0
+is(ExtremeAnxiety,Class):1.0
+is(FabryDisease,Class):1.0
+SubClassOf(FabryDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(FabryDisease,hasAcquisitionMode some):1.0
+SubClassOf(FabryDisease,(AcquisitionMode and (hasAbsoluteState some XLinkedRecessiveGeneInherited)),):1.0
+SubClassOf(FabryDisease,hasSyndromeElement some):1.0
+SubClassOf(FabryDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(FabryDisease,(CatabolicProcess and (actsSpecificallyOn some Cerebroside))) and (isSpecificFunctionOf some Cerebrosidase)),):1.0
+SubClassOf(FabryDisease,hasSyndromeElement some):1.0
+SubClassOf(FabryDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Cerebroside)),):1.0
+SubClassOf(FabryDisease,isConsequenceOf some):1.0
+SubClassOf(FabryDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(FabryDisease,(GeneTranscription and (hasSpecificImmediateConsequence some Cerebrosidase))))):1.0
+is(FacialErythema,Class):1.0
+is(FailingPhysiologicalProcess,Class):1.0
+SubClassOf(FailingPhysiologicalProcess,BodyProcess):1.0
+is(FailureOfCellGlucoseUptake,Class):1.0
+is(FailureOfOcularAccomodation,Class):1.0
+is(FallingAsleepProcess,Class):1.0
+SubClassOf(FallingAsleepProcess,NAMEDSleepProcess):1.0
+is(FamilialHyperlipidaemia,Class):1.0
+SubClassOf(FamilialHyperlipidaemia,HyperLipidaemia):1.0
+is(FanconiCystinosis,Class):1.0
+SubClassOf(FanconiCystinosis,NAMEDSyndrome,):1.0
+SubClassOf(FanconiCystinosis,hasAcquisitionMode some):1.0
+SubClassOf(FanconiCystinosis,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(FanconiCystinosis,hasSyndromeElement some ChronicMetabolicAcidosis,):1.0
+SubClassOf(FanconiCystinosis,hasSyndromeElement some Cystinosis,):1.0
+SubClassOf(FanconiCystinosis,hasSyndromeElement some Cystinuria,):1.0
+SubClassOf(FanconiCystinosis,hasSyndromeElement some Glycosuria,):1.0
+SubClassOf(FanconiCystinosis,hasSyndromeElement some LoweredSerumPhosphateConcentration,):1.0
+SubClassOf(FanconiCystinosis,hasSyndromeElement some Polyuria,):1.0
+SubClassOf(FanconiCystinosis,isConsequenceOf some):1.0
+SubClassOf(FanconiCystinosis,(PathologicalPhenomenon and (LocativeAttribute some RenalTubule))):1.0
+is(FarberLipogranulomatosis,Class):1.0
+SubClassOf(FarberLipogranulomatosis,NAMEDSystemicDisease,):1.0
+SubClassOf(FarberLipogranulomatosis,hasAcquisitionMode some):1.0
+SubClassOf(FarberLipogranulomatosis,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(FarberLipogranulomatosis,hasSyndromeElement some):1.0
+SubClassOf(FarberLipogranulomatosis,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(FarberLipogranulomatosis,(CatabolicProcess and (actsSpecificallyOn some Ceramide))) and (isSpecificFunctionOf some Ceramidase)),):1.0
+SubClassOf(FarberLipogranulomatosis,hasSyndromeElement some):1.0
+SubClassOf(FarberLipogranulomatosis,(LysosomalAccumulation and (isSpecificallyMadeOf some Ceramide)),):1.0
+SubClassOf(FarberLipogranulomatosis,isConsequenceOf some):1.0
+SubClassOf(FarberLipogranulomatosis,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(FarberLipogranulomatosis,(GeneTranscription and (hasSpecificImmediateConsequence some Ceramidase))))):1.0
+is(FastingProcess,Class):1.0
+SubClassOf(FastingProcess,NAMEDDigestiveProcess):1.0
+is(Fatigue,Class):1.0
+is(FattyDegenerationLesion,Class):1.0
+is(FattyDegenerationProcess,Class):1.0
+SubClassOf(FattyDegenerationProcess,DegenerativeProcess):1.0
+is(Fertilisation,Class):1.0
+SubClassOf(Fertilisation,NAMEDReproductiveProcess):1.0
+is(FibromatosisGingivae,Class):1.0
+SubClassOf(FibromatosisGingivae,NAMEDSyndrome,):1.0
+SubClassOf(FibromatosisGingivae,hasSyndromeElement some):1.0
+SubClassOf(FibromatosisGingivae,(FibrousHyperplasticLesion and (hasSpecificLocation some Gum))):1.0
+is(FibrosingAlveolitis,Class):1.0
+SubClassOf(FibrosingAlveolitis,NAMEDSystemicDisease,):1.0
+SubClassOf(FibrosingAlveolitis,hasSyndromeElement some AlveolarFibrosis):1.0
+is(FibrosisLesion,Class):1.0
+is(FibrosisProcess,Class):1.0
+SubClassOf(FibrosisProcess,DegenerativeProcess):1.0
+is(FibrousHyperplasticLesion,Class):1.0
+is(FluSyndrome,Class):1.0
+SubClassOf(FluSyndrome,NAMEDDisorder,):1.0
+SubClassOf(FluSyndrome,hasSyndromeElement some Headache,):1.0
+SubClassOf(FluSyndrome,hasSyndromeElement some JointPain,):1.0
+SubClassOf(FluSyndrome,hasSyndromeElement some Myalgia,):1.0
+SubClassOf(FluSyndrome,hasSyndromeElement some Pyrexia):1.0
+is(FluidBalanceDisturbance,Class):1.0
+SubClassOf(FluidBalanceDisturbance,NAMEDMetabolicPathologicalProcess):1.0
+is(FontanMethod,Class):1.0
+SubClassOf(FontanMethod,NAMEDEponymousMethod):1.0
+is(ForeignBodyAcquisitionProcess,Class):1.0
+SubClassOf(ForeignBodyAcquisitionProcess,TraumaticProcess):1.0
+is(FerMethod,Class):1.0
+SubClassOf(FerMethod,NAMEDEponymousMethod):1.0
+is(FragileXSyndrome,Class):1.0
+SubClassOf(FragileXSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(FragileXSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(FragileXSyndrome,(AcquisitionMode and (hasAbsoluteState some XLinkedRecessiveGeneInherited))):1.0
+is(Frequency,Class):1.0
+is(FrequencyValue,Class):1.0
+is(FrickmanMethod,Class):1.0
+SubClassOf(FrickmanMethod,NAMEDEponymousMethod):1.0
+is(FrontalBalding,Class):1.0
+is(FulguratingMigraine,Class):1.0
+SubClassOf(FulguratingMigraine,Migraine):1.0
+is(Galactosaemia,Class):1.0
+SubClassOf(Galactosaemia,NAMEDSystemicDisease,):1.0
+SubClassOf(Galactosaemia,hasAcquisitionMode some):1.0
+SubClassOf(Galactosaemia,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(Galactosaemia,hasSyndromeElement some):1.0
+SubClassOf(Galactosaemia,(HighConcentration and (isConcentrationOf some):1.0
+SubClassOf(Galactosaemia,(Galactose and (isDissolvedWithin some LiquidBlood)))),):1.0
+SubClassOf(Galactosaemia,hasSyndromeElement some):1.0
+SubClassOf(Galactosaemia,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(Galactosaemia,(CatabolicProcess and (actsSpecificallyOn some GalactoseOnePhosphate))) and (isSpecificFunctionOf some GalactoseOnePhosphateUridylTransferase)),):1.0
+SubClassOf(Galactosaemia,hasSyndromeElement some):1.0
+SubClassOf(Galactosaemia,(LowConcentration and (isConcentrationOf some):1.0
+SubClassOf(Galactosaemia,(GalactoseOnePhosphateUridylTransferase and (isDissolvedWithin some LiquidBlood)))),):1.0
+SubClassOf(Galactosaemia,isConsequenceOf some):1.0
+SubClassOf(Galactosaemia,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(Galactosaemia,(GeneTranscription and (hasSpecificImmediateConsequence some GalactoseOnePhosphateUridylTransferase))))):1.0
+is(Galactose,Class):1.0
+is(GalactoseOnePhosphate,Class):1.0
+is(GalactoseOnePhosphateUridylTransferase,Class):1.0
+is(GalactoseOneSulphatase,Class):1.0
+is(GallStoneInBiliaryTract,Class):1.0
+is(Gangliosidase,Class):1.0
+is(Ganglioside,Class):1.0
+is(Gargling,Class):1.0
+SubClassOf(Gargling,NAMEDDigestiveProcess):1.0
+is(GastricAcidSecretion,Class):1.0
+is(GastricFunction,Class):1.0
+SubClassOf(GastricFunction,BodyProcess):1.0
+is(GastrointestinalDysfunction,Class):1.0
+SubClassOf(GastrointestinalDysfunction,BodyProcess):1.0
+is(GastrointestinalMalabsorption,Class):1.0
+is(GastrointestinalPeristalsis,Class):1.0
+is(GastrointestinalTract,Class):1.0
+is(GaucherDisease,Class):1.0
+SubClassOf(GaucherDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(GaucherDisease,hasAcquisitionMode some):1.0
+SubClassOf(GaucherDisease,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(GaucherDisease,hasSyndromeElement some):1.0
+SubClassOf(GaucherDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(GaucherDisease,(CatabolicProcess and (actsSpecificallyOn some Glucosyleramide))) and (isSpecificFunctionOf some Glucocerebrosidase)),):1.0
+SubClassOf(GaucherDisease,hasSyndromeElement some):1.0
+SubClassOf(GaucherDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Glucosyleramide)),):1.0
+SubClassOf(GaucherDisease,isConsequenceOf some):1.0
+SubClassOf(GaucherDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(GaucherDisease,(GeneTranscription and (hasSpecificImmediateConsequence some Glucocerebrosidase))))):1.0
+is(GeneMutating,Class):1.0
+SubClassOf(GeneMutating,NAMEDGeneticProcess):1.0
+is(GeneTranscription,Class):1.0
+SubClassOf(GeneTranscription,NAMEDGeneticProcess):1.0
+is(GenericBodyProcess,Class):1.0
+SubClassOf(GenericBodyProcess,BodyProcess):1.0
+is(GenitalUlcer,Class):1.0
+is(GilbertSyndrome,Class):1.0
+SubClassOf(GilbertSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(GilbertSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(GilbertSyndrome,(AcquisitionMode and (hasAbsoluteState some geneticallyInherited)),):1.0
+SubClassOf(GilbertSyndrome,hasSyndromeElement some IntermittentJaundice):1.0
+is(GillesDeLaTouretteSyndrome,Class):1.0
+SubClassOf(GillesDeLaTouretteSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(GillesDeLaTouretteSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(GillesDeLaTouretteSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited)),):1.0
+SubClassOf(GillesDeLaTouretteSyndrome,hasConsequence some Tic):1.0
+is(GilliesMethod,Class):1.0
+SubClassOf(GilliesMethod,NAMEDEponymousMethod):1.0
+is(GlandularFever,Class):1.0
+SubClassOf(GlandularFever,NAMEDSyndrome,):1.0
+SubClassOf(GlandularFever,hasSyndromeElement some Asthenia,):1.0
+SubClassOf(GlandularFever,isConsequenceOf some):1.0
+SubClassOf(GlandularFever,(InfectionLesion and (isSpecificConsequenceOf some EpsteinBarrVirus))):1.0
+is(Glaucoma,Class):1.0
+SubClassOf(Glaucoma,NAMEDDisorder,):1.0
+SubClassOf(Glaucoma,hasSyndromeElement some IncreasedIntraOcularPressure,):1.0
+SubClassOf(Glaucoma,hasSyndromeElement some VisualFieldDefect,):1.0
+SubClassOf(Glaucoma,hasSyndromeElement some):1.0
+SubClassOf(Glaucoma,(AtrophicLesion and (hasSpecificLocation some OpticNerve))):1.0
+is(Gliadin,Class):1.0
+is(GlomerularBasementMembrane,Class):1.0
+is(GlomerularFiltration,Class):1.0
+is(Glomerulonephritis,Class):1.0
+is(Glomerulus,Class):1.0
+is(Glucocerebrosidase,Class):1.0
+is(Glucose6PhosphateDehydrogenaseDeficiency,Class):1.0
+SubClassOf(Glucose6PhosphateDehydrogenaseDeficiency,NAMEDSystemicDisease):1.0
+is(GlucoseSixPhosphatase,Class):1.0
+is(Glucosyleramide,Class):1.0
+is(Glycogen,Class):1.0
+is(Glycosuria,Class):1.0
+is(Goiter,Class):1.0
+is(Gonorrhoea,Class):1.0
+SubClassOf(Gonorrhoea,NAMEDDisorder,):1.0
+SubClassOf(Gonorrhoea,isConsequenceOf some):1.0
+SubClassOf(Gonorrhoea,(InfectionLesion and (isSpecificConsequenceOf some NeisseriaGonorrhoeae))):1.0
+is(GoodpastureSyndrome,Class):1.0
+SubClassOf(GoodpastureSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(GoodpastureSyndrome,hasSyndromeElement some Glomerulonephritis,):1.0
+SubClassOf(GoodpastureSyndrome,hasSyndromeElement some Haemoptysis,):1.0
+SubClassOf(GoodpastureSyndrome,hasSyndromeElement some):1.0
+SubClassOf(GoodpastureSyndrome,(AutoimmuneProcess and (actsSpecificallyOn some BasementMembrane))):1.0
+is(Gout,Class):1.0
+SubClassOf(Gout,NAMEDSystemicDisease,):1.0
+SubClassOf(Gout,hasAcquisitionMode some):1.0
+SubClassOf(Gout,(AcquisitionMode and (hasAbsoluteState some dominantGeneInherited)),):1.0
+SubClassOf(Gout,hasSyndromeElement some Arthritis,):1.0
+SubClassOf(Gout,hasSyndromeElement some RaisedSerumUricAcidConcentration):1.0
+is(GranulomaLesion,Class):1.0
+is(GranulomaProcess,Class):1.0
+SubClassOf(GranulomaProcess,InflammationProcess):1.0
+is(Gravitation,Class):1.0
+SubClassOf(Gravitation,NAMEDPhysicalProcess):1.0
+is(GreySyndrome,Class):1.0
+SubClassOf(GreySyndrome,NAMEDUnmodelledPathology):1.0
+is(GrowthHormone,Class):1.0
+is(Gum,Class):1.0
+is(HaemangiectasiaLesion,Class):1.0
+is(HaematemesisProcess,Class):1.0
+EquivalentTo(HaematemesisProcess,Vomiting and (hasSpecificImmediateConsequence some):1.0
+EquivalentTo(HaematemesisProcess,(Vomitus and (hasMixedThroughout some Blood)))):1.0
+SubClassOf(HaematemesisProcess,Vomiting):1.0
+is(HaematemesisSign,Class):1.0
+SubClassOf(HaematemesisSign,HaematemesisProcess):1.0
+is(HaematemesisSymptom,Class):1.0
+SubClassOf(HaematemesisSymptom,HaematemesisProcess):1.0
+is(Haematopoiesis,Class):1.0
+SubClassOf(Haematopoiesis,NAMEDHaematologicalProcess):1.0
+is(Haemolysis,Class):1.0
+is(HaemolyticAnaemia,Class):1.0
+is(HaemolyticUraemicSyndrome,Class):1.0
+SubClassOf(HaemolyticUraemicSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(HaemolyticUraemicSyndrome,hasSyndromeElement some AcuteRenalFailure,):1.0
+SubClassOf(HaemolyticUraemicSyndrome,hasSyndromeElement some HaemolyticAnaemia,):1.0
+SubClassOf(HaemolyticUraemicSyndrome,hasSyndromeElement some LowPlateletCount):1.0
+is(Haemophilia,Class):1.0
+SubClassOf(Haemophilia,NAMEDSystemicDisease,):1.0
+SubClassOf(Haemophilia,hasSyndromeElement some CoagulationDefect):1.0
+is(HaemophiliaA,Class):1.0
+SubClassOf(HaemophiliaA,Haemophilia):1.0
+is(HaemophiliaB,Class):1.0
+SubClassOf(HaemophiliaB,Haemophilia):1.0
+is(HaemophiliaC,Class):1.0
+SubClassOf(HaemophiliaC,Haemophilia):1.0
+is(Haemoptysis,Class):1.0
+is(HaemorrhageLesion,Class):1.0
+is(HaemosiderinDeposition,Class):1.0
+is(Haemostasis,Class):1.0
+SubClassOf(Haemostasis,NAMEDHaematologicalProcess):1.0
+is(HairFollicle,Class):1.0
+is(HairLosingProcess,Class):1.0
+SubClassOf(HairLosingProcess,NAMEDSkinProcess):1.0
+is(HamptonMethod,Class):1.0
+SubClassOf(HamptonMethod,NAMEDEponymousMethod):1.0
+is(Hangover,Class):1.0
+SubClassOf(Hangover,NAMEDSyndrome,):1.0
+SubClassOf(Hangover,hasSyndromeElement some CognitiveImpairment,):1.0
+SubClassOf(Hangover,hasSyndromeElement some DaytimeDrowsiness,):1.0
+SubClassOf(Hangover,hasSyndromeElement some Headache,):1.0
+SubClassOf(Hangover,hasSyndromeElement some MentalSedation):1.0
+is(HardyMethod,Class):1.0
+SubClassOf(HardyMethod,NAMEDEponymousMethod):1.0
+is(HashimotoThyroiditis,Class):1.0
+SubClassOf(HashimotoThyroiditis,NAMEDSystemicDisease,):1.0
+SubClassOf(HashimotoThyroiditis,hasChronicity some):1.0
+SubClassOf(HashimotoThyroiditis,(Chronicity and (hasAbsoluteState some chronic)),):1.0
+SubClassOf(HashimotoThyroiditis,hasSyndromeElement some DiffuseGoitre,):1.0
+SubClassOf(HashimotoThyroiditis,hasSyndromeElement some Hypothyroidism,):1.0
+SubClassOf(HashimotoThyroiditis,hasSyndromeElement some Thyroiditis,):1.0
+SubClassOf(HashimotoThyroiditis,isConsequenceOf some):1.0
+SubClassOf(HashimotoThyroiditis,(AutoimmuneProcess and (actsSpecificallyOn some ThyroidGland))):1.0
+is(HayFever,Class):1.0
+SubClassOf(HayFever,NAMEDSystemicDisease,):1.0
+SubClassOf(HayFever,hasSyndromeElement some Asthenia,):1.0
+SubClassOf(HayFever,hasSyndromeElement some ConjunctivalInflammation,):1.0
+SubClassOf(HayFever,hasSyndromeElement some Rhinitis,):1.0
+SubClassOf(HayFever,hasSyndromeElement some Sneezing,):1.0
+SubClassOf(HayFever,isConsequenceOf some):1.0
+SubClassOf(HayFever,(AllergyProcess and (isSpecificConsequenceOf some Pollen))):1.0
+is(Headache,Class):1.0
+is(Heart,Class):1.0
+is(HemiplegicMigraine,Class):1.0
+SubClassOf(HemiplegicMigraine,Migraine):1.0
+is(HemorrhagingProcess,Class):1.0
+SubClassOf(HemorrhagingProcess,NAMEDPathologicalProcess):1.0
+is(HeparanSulphatase,Class):1.0
+is(HeparanSulphate,Class):1.0
+is(HepaticFunction,Class):1.0
+SubClassOf(HepaticFunction,BodyProcess):1.0
+is(HepaticSarcoidosis,Class):1.0
+SubClassOf(HepaticSarcoidosis,Sarcoidosis):1.0
+is(HepaticVein,Class):1.0
+is(HepatocellularNecrosis,Class):1.0
+SubClassOf(HepatocellularNecrosis,NAMEDDisorder,):1.0
+SubClassOf(HepatocellularNecrosis,hasSpecificConsequence some):1.0
+SubClassOf(HepatocellularNecrosis,(NecrosisLesion and (hasSpecificLocation some LiverCell)),):1.0
+SubClassOf(HepatocellularNecrosis,hasSpecificLocation some Liver):1.0
+is(Hepatocyte,Class):1.0
+is(HepatoerythropoieticPorphyria,Class):1.0
+SubClassOf(HepatoerythropoieticPorphyria,Porphyria):1.0
+is(Hepatomegaly,Class):1.0
+is(Hepatophosphorylase,Class):1.0
+is(HereditaryHaemorrhagicTelangiectasia,Class):1.0
+SubClassOf(HereditaryHaemorrhagicTelangiectasia,NAMEDSystemicDisease,):1.0
+SubClassOf(HereditaryHaemorrhagicTelangiectasia,hasAcquisitionMode some):1.0
+SubClassOf(HereditaryHaemorrhagicTelangiectasia,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited)),):1.0
+SubClassOf(HereditaryHaemorrhagicTelangiectasia,hasSyndromeElement some HaemangiectasiaLesion,):1.0
+SubClassOf(HereditaryHaemorrhagicTelangiectasia,hasSyndromeElement some HaemorrhageLesion):1.0
+is(HereditarySpinalAtaxia,Class):1.0
+SubClassOf(HereditarySpinalAtaxia,NAMEDDisorder,):1.0
+SubClassOf(HereditarySpinalAtaxia,hasAcquisitionMode some):1.0
+SubClassOf(HereditarySpinalAtaxia,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(HereditarySpinalAtaxia,hasSyndromeElement some Ataxia,):1.0
+SubClassOf(HereditarySpinalAtaxia,hasSyndromeElement some MuscleContractureLesion,):1.0
+SubClassOf(HereditarySpinalAtaxia,hasSyndromeElement some Palsy,):1.0
+SubClassOf(HereditarySpinalAtaxia,hasSyndromeElement some):1.0
+SubClassOf(HereditarySpinalAtaxia,(SclerosisLesion and (hasSpecificLocation some DorsalGreyColumn)),):1.0
+SubClassOf(HereditarySpinalAtaxia,hasSyndromeElement some):1.0
+SubClassOf(HereditarySpinalAtaxia,(SclerosisLesion and (hasSpecificLocation some LateralGreyColumn))):1.0
+is(HerpesVaricellaZosterVirus,Class):1.0
+is(HersDisease,Class):1.0
+SubClassOf(HersDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(HersDisease,hasSyndromeElement some):1.0
+SubClassOf(HersDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(HersDisease,(CatabolicProcess and (actsSpecificallyOn some Glycogen))) and (isSpecificFunctionOf some Hepatophosphorylase)),):1.0
+SubClassOf(HersDisease,hasSyndromeElement some):1.0
+SubClassOf(HersDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Glycogen)),):1.0
+SubClassOf(HersDisease,isConsequenceOf some):1.0
+SubClassOf(HersDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(HersDisease,(GeneTranscription and (hasSpecificImmediateConsequence some Hepatophosphorylase))))):1.0
+is(HeteroplasticProcess,Class):1.0
+SubClassOf(HeteroplasticProcess,AbnormalCellMassGrowthProcess):1.0
+is(HeterozygousSickleCellDisease,Class):1.0
+SubClassOf(HeterozygousSickleCellDisease,SickleCellDisease):1.0
+is(HighConcentration,Class):1.0
+is(Hirsutism,Class):1.0
+is(HohmanMethod,Class):1.0
+SubClassOf(HohmanMethod,NAMEDEponymousMethod):1.0
+is(HoltOramSyndrome,Class):1.0
+SubClassOf(HoltOramSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(HoltOramSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(HoltOramSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(HomozygousSickleCellDisease,Class):1.0
+SubClassOf(HomozygousSickleCellDisease,SickleCellDisease):1.0
+is(HortonArteritis,Class):1.0
+SubClassOf(HortonArteritis,NAMEDSystemicDisease,):1.0
+SubClassOf(HortonArteritis,hasSyndromeElement some):1.0
+SubClassOf(HortonArteritis,(Arteritis and (hasChronicity some SubacuteFeature) and (hasSpecificLocation some):1.0
+SubClassOf(HortonArteritis,(Artery and (isBranchOf some ExternalCarotidArtery))))):1.0
+is(HotFlush,Class):1.0
+is(HunterSyndrome,Class):1.0
+SubClassOf(HunterSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(HunterSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(HunterSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(HunterSyndrome,hasSyndromeElement some):1.0
+SubClassOf(HunterSyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(HunterSyndrome,(CatabolicProcess and (actsSpecificallyOn some DermatanSulphate))) and (isSpecificFunctionOf some IduronateSulphatase)),):1.0
+SubClassOf(HunterSyndrome,hasSyndromeElement some):1.0
+SubClassOf(HunterSyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(HunterSyndrome,(CatabolicProcess and (actsSpecificallyOn some HeparanSulphate))) and (isSpecificFunctionOf some IduronateSulphatase)),):1.0
+SubClassOf(HunterSyndrome,hasSyndromeElement some):1.0
+SubClassOf(HunterSyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some DermatanSulphate)),):1.0
+SubClassOf(HunterSyndrome,hasSyndromeElement some):1.0
+SubClassOf(HunterSyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some HeparanSulphate)),):1.0
+SubClassOf(HunterSyndrome,isConsequenceOf some):1.0
+SubClassOf(HunterSyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(HunterSyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some IduronateSulphatase))))):1.0
+is(HuntingtonsChorea,Class):1.0
+SubClassOf(HuntingtonsChorea,NAMEDSystemicDisease):1.0
+is(HurlerSyndrome,Class):1.0
+SubClassOf(HurlerSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(HurlerSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(HurlerSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(HurlerSyndrome,hasSyndromeElement some):1.0
+SubClassOf(HurlerSyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(HurlerSyndrome,(CatabolicProcess and (actsSpecificallyOn some DermatanSulphate))) and (isSpecificFunctionOf some Iduronidase)),):1.0
+SubClassOf(HurlerSyndrome,hasSyndromeElement some):1.0
+SubClassOf(HurlerSyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some DermatanSulphate)),):1.0
+SubClassOf(HurlerSyndrome,isConsequenceOf some):1.0
+SubClassOf(HurlerSyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(HurlerSyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some Iduronidase))))):1.0
+is(HyalinisationLesion,Class):1.0
+is(HyalinisationProcess,Class):1.0
+SubClassOf(HyalinisationProcess,DegenerativeProcess):1.0
+is(Hydraulics,Class):1.0
+SubClassOf(Hydraulics,NAMEDPhysicalProcess):1.0
+is(Hydrodynamics,Class):1.0
+SubClassOf(Hydrodynamics,NAMEDPhysicalProcess):1.0
+is(HyperLipidaemia,Class):1.0
+SubClassOf(HyperLipidaemia,NAMEDSystemicDisease,):1.0
+SubClassOf(HyperLipidaemia,hasSyndromeElement some PathologicalRaisedSerumLipidConcentration):1.0
+is(Hyperaldosteronaemia,Class):1.0
+is(HypercalcaemicSarcoidosis,Class):1.0
+SubClassOf(HypercalcaemicSarcoidosis,Sarcoidosis):1.0
+is(HypercapnicAcidosis,Class):1.0
+SubClassOf(HypercapnicAcidosis,Acidosis):1.0
+is(HyperchloraemicAcidosis,Class):1.0
+SubClassOf(HyperchloraemicAcidosis,Acidosis):1.0
+is(HypereosinophilicSyndrome,Class):1.0
+SubClassOf(HypereosinophilicSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(HypereosinophilicSyndrome,hasSyndromeElement some RaisedEosinophilCount):1.0
+is(HyperkineticHeartSyndrome,Class):1.0
+SubClassOf(HyperkineticHeartSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(HyperkineticHeartSyndrome,hasSyndromeElement some RapidPulse):1.0
+is(HyperlipidaemiaTypeIII,Class):1.0
+SubClassOf(HyperlipidaemiaTypeIII,HyperLipidaemia):1.0
+is(HyperlipidaemiaTypeIIa,Class):1.0
+SubClassOf(HyperlipidaemiaTypeIIa,HyperLipidaemia):1.0
+is(HyperlipidaemiaTypeIIb,Class):1.0
+SubClassOf(HyperlipidaemiaTypeIIb,HyperLipidaemia):1.0
+is(HyperlipidaemiaTypeIV,Class):1.0
+SubClassOf(HyperlipidaemiaTypeIV,HyperLipidaemia):1.0
+is(HyperlipidaemiaTypeV,Class):1.0
+SubClassOf(HyperlipidaemiaTypeV,HyperLipidaemia):1.0
+is(Hypermetropia,Class):1.0
+SubClassOf(Hypermetropia,NAMEDDisorder,):1.0
+SubClassOf(Hypermetropia,isConsequenceOf some FailureOfOcularAccomodation):1.0
+is(Hyperparathyroidism,Class):1.0
+SubClassOf(Hyperparathyroidism,BodyProcess):1.0
+is(Hyperpermeability,Class):1.0
+is(Hyperpigmentation,Class):1.0
+is(Hyperpituitarism,Class):1.0
+SubClassOf(Hyperpituitarism,BodyProcess):1.0
+is(HyperplasticProcess,Class):1.0
+SubClassOf(HyperplasticProcess,AbnormalCellMassGrowthProcess):1.0
+is(Hypersecretion,Class):1.0
+is(HypersensitivityProcess,Class):1.0
+is(Hypertension,Class):1.0
+SubClassOf(Hypertension,NAMEDSystemicDisease,):1.0
+SubClassOf(Hypertension,LocativeAttribute some CardiovascularSystem):1.0
+is(HypertensiveCongenitalAdrenalHyperplasia,Class):1.0
+SubClassOf(HypertensiveCongenitalAdrenalHyperplasia,CongenitalAdrenalHyperplasia):1.0
+is(HypertensiveCrisis,Class):1.0
+SubClassOf(HypertensiveCrisis,Hypertension):1.0
+is(Hyperthermia,Class):1.0
+is(HypertoniaOfMuscle,Class):1.0
+is(HypertrophicLesion,Class):1.0
+is(HypertrophicProcess,Class):1.0
+SubClassOf(HypertrophicProcess,AbnormalCellMassGrowthProcess):1.0
+is(Hypervolaemia,Class):1.0
+is(Hypoaldosteronaemia,Class):1.0
+is(Hypoaldosteronism,Class):1.0
+SubClassOf(Hypoaldosteronism,NAMEDSystemicDisease,):1.0
+SubClassOf(Hypoaldosteronism,hasSyndromeElement some Dehydration,):1.0
+SubClassOf(Hypoaldosteronism,hasSyndromeElement some Hypotension,):1.0
+SubClassOf(Hypoaldosteronism,hasSyndromeElement some LoweredSerumSodiumConcentration,):1.0
+SubClassOf(Hypoaldosteronism,hasSyndromeElement some RaisedSerumPotassiumConcentration,):1.0
+SubClassOf(Hypoaldosteronism,isConsequenceOf some Hypoaldosteronaemia):1.0
+is(HypochloraemicAlkalosis,Class):1.0
+SubClassOf(HypochloraemicAlkalosis,Alkalosis):1.0
+is(Hypogonadism,Class):1.0
+is(HypokalaemicAlkalosis,Class):1.0
+SubClassOf(HypokalaemicAlkalosis,Alkalosis):1.0
+is(Hypomania,Class):1.0
+SubClassOf(Hypomania,Mania):1.0
+is(Hypoparathyroidism,Class):1.0
+SubClassOf(Hypoparathyroidism,BodyProcess):1.0
+is(Hypopituitarism,Class):1.0
+SubClassOf(Hypopituitarism,BodyProcess):1.0
+is(HypoplasticProcess,Class):1.0
+SubClassOf(HypoplasticProcess,AbnormalCellMassGrowthProcess):1.0
+is(Hypopyon,Class):1.0
+is(Hypotension,Class):1.0
+SubClassOf(Hypotension,NAMEDSystemicDisease,):1.0
+SubClassOf(Hypotension,LocativeAttribute some CardiovascularSystem):1.0
+is(Hypothyroidism,Class):1.0
+is(HypoxanthineGuaninePhosphoRibosylTransferase,Class):1.0
+is(IatrogenicLesionProcess,Class):1.0
+SubClassOf(IatrogenicLesionProcess,AcquiredPathologicalProcess):1.0
+is(IdiopathicLesionProcess,Class):1.0
+SubClassOf(IdiopathicLesionProcess,NAMEDPathologicalProcess):1.0
+is(IdiopathicPulmonaryHemosiderosis,Class):1.0
+SubClassOf(IdiopathicPulmonaryHemosiderosis,NAMEDSystemicDisease,):1.0
+SubClassOf(IdiopathicPulmonaryHemosiderosis,hasSyndromeElement some Breathlessness,):1.0
+SubClassOf(IdiopathicPulmonaryHemosiderosis,hasSyndromeElement some Haemoptysis,):1.0
+SubClassOf(IdiopathicPulmonaryHemosiderosis,hasSyndromeElement some):1.0
+SubClassOf(IdiopathicPulmonaryHemosiderosis,(HaemosiderinDeposition and (hasUniqueAssociatedDisplacement some):1.0
+SubClassOf(IdiopathicPulmonaryHemosiderosis,(Displacement and (isDisplacementTo some LungParenchymalStructure))))):1.0
+is(IdiopathicSystemicLupusErythematosus,Class):1.0
+SubClassOf(IdiopathicSystemicLupusErythematosus,SystemicLupusErythematosus):1.0
+is(IdiosyncraticMucosalIrritation,Class):1.0
+SubClassOf(IdiosyncraticMucosalIrritation,NAMEDUnmodelledPathology):1.0
+is(IduronateSulphatase,Class):1.0
+is(Iduronidase,Class):1.0
+is(IliopsoasFascia,Class):1.0
+SubClassOf(IliopsoasFascia,NAMEDFascia):1.0
+is(ImmuneResponse,Class):1.0
+SubClassOf(ImmuneResponse,NAMEDImmunologicalProcess):1.0
+is(ImmuneSystem,Class):1.0
+is(Immunity,Class):1.0
+SubClassOf(Immunity,NAMEDImmunologicalProcess):1.0
+is(ImmunologicalProcess,Class):1.0
+SubClassOf(ImmunologicalProcess,BodyProcess):1.0
+is(ImmunologicalReaction,Class):1.0
+SubClassOf(ImmunologicalReaction,NAMEDImmunologicalProcess):1.0
+is(ImmunologicalSensitisationProcess,Class):1.0
+SubClassOf(ImmunologicalSensitisationProcess,NAMEDImmunologicalProcess):1.0
+is(ImpairedHealing,Class):1.0
+SubClassOf(ImpairedHealing,NAMEDUnmodelledPathology):1.0
+is(ImpairedMucusProduction,Class):1.0
+SubClassOf(ImpairedMucusProduction,NAMEDUnmodelledPathology):1.0
+is(InVitroTechnique,Class):1.0
+SubClassOf(InVitroTechnique,NAMEDPhysicalProcess):1.0
+is(InappropriateImmuneResponse,Class):1.0
+is(Incising,Class):1.0
+is(IncreasedIntraOcularPressure,Class):1.0
+is(IncreasedMyocardialIschaemia,Class):1.0
+is(IncreasedThirst,Class):1.0
+is(Induration,Class):1.0
+is(IneffectiveCardiacFunction,Class):1.0
+is(IneffectiveCatalysis,Class):1.0
+is(IneffectivePepticFunction,Class):1.0
+SubClassOf(IneffectivePepticFunction,BodyProcess):1.0
+is(IneffectiveProcess,Class):1.0
+SubClassOf(IneffectiveProcess,BodyProcess):1.0
+is(InfectionLesion,Class):1.0
+is(InfectionProcess,Class):1.0
+SubClassOf(InfectionProcess,AcquiredPathologicalProcess):1.0
+is(InferiorVenaCava,Class):1.0
+is(InferiorVenaCavaSyndrome,Class):1.0
+SubClassOf(InferiorVenaCavaSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(InferiorVenaCavaSyndrome,isSpecificImmediateConsequenceOf some):1.0
+SubClassOf(InferiorVenaCavaSyndrome,(CompressionLesion and (hasSpecificLocation some InferiorVenaCava))):1.0
+is(InflammationLesion,Class):1.0
+is(InflammationProcess,Class):1.0
+SubClassOf(InflammationProcess,AcquiredPathologicalProcess):1.0
+is(InflammationWithUlceration,Class):1.0
+SubClassOf(InflammationWithUlceration,NAMEDUnmodelledPathology):1.0
+is(Influenza,Class):1.0
+SubClassOf(Influenza,NAMEDDisorder,):1.0
+SubClassOf(Influenza,hasSyndromeElement some JointPain,):1.0
+SubClassOf(Influenza,hasSyndromeElement some Myalgia,):1.0
+SubClassOf(Influenza,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(Influenza,isConsequenceOf some):1.0
+SubClassOf(Influenza,(InfectionLesion and (isSpecificConsequenceOf some InfluenzaVirus))):1.0
+is(InfluenzaVirus,Class):1.0
+is(Ingestion,Class):1.0
+SubClassOf(Ingestion,NAMEDDigestiveProcess):1.0
+is(Iniencephaly,Class):1.0
+SubClassOf(Iniencephaly,NAMEDSyndrome,):1.0
+SubClassOf(Iniencephaly,hasAcquisitionMode some):1.0
+SubClassOf(Iniencephaly,(AcquisitionMode and (hasAbsoluteState some congenital)),):1.0
+SubClassOf(Iniencephaly,hasSeverity some SevereSeverity,):1.0
+SubClassOf(Iniencephaly,hasSyndromeElement some):1.0
+SubClassOf(Iniencephaly,(PlanarDefect and (hasSpecificLocation some Occiput))):1.0
+is(Insomnia,Class):1.0
+is(Inspiration,Class):1.0
+SubClassOf(Inspiration,NAMEDRespiratoryProcess):1.0
+is(IntermittentJaundice,Class):1.0
+is(IntestinalHyperperistalsis,Class):1.0
+is(IntestinalSepsis,Class):1.0
+SubClassOf(IntestinalSepsis,Sepsis):1.0
+is(Intestine,Class):1.0
+is(IntrinsicallyPathologicalBodyProcess,Class):1.0
+SubClassOf(IntrinsicallyPathologicalBodyProcess,BodyProcess):1.0
+is(IntussusceptionProcess,Class):1.0
+SubClassOf(IntussusceptionProcess,MechanicalLesionProcess):1.0
+is(IontophoresisProcess,Class):1.0
+SubClassOf(IontophoresisProcess,NAMEDPhysicalProcess):1.0
+is(IronDeficientAnaemia,Class):1.0
+is(Irritability,Class):1.0
+is(IrritableBowelSyndrome,Class):1.0
+SubClassOf(IrritableBowelSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(IrritableBowelSyndrome,hasSyndromeElement some IntestinalHyperperistalsis):1.0
+is(IschaemicAtrophicProcess,Class):1.0
+SubClassOf(IschaemicAtrophicProcess,IschaemicProcess):1.0
+is(IschaemicLesion,Class):1.0
+is(IschaemicNeurologicalDeficit,Class):1.0
+SubClassOf(IschaemicNeurologicalDeficit,BodyProcess):1.0
+is(IschaemicProcess,Class):1.0
+SubClassOf(IschaemicProcess,AcquiredPathologicalProcess,):1.0
+SubClassOf(IschaemicProcess,isCausallyLinkedTo some CardiovascularSystem):1.0
+is(IsletCell,Class):1.0
+is(JervellLangeNielsenSyndrome,Class):1.0
+SubClassOf(JervellLangeNielsenSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(JervellLangeNielsenSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(JervellLangeNielsenSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(JervellLangeNielsenSyndrome,hasSyndromeElement some StokesAdamsSeizure,):1.0
+SubClassOf(JervellLangeNielsenSyndrome,hasSyndromeElement some VentricularFibrillation,):1.0
+SubClassOf(JervellLangeNielsenSyndrome,hasSyndromeElement some VentricularMyocardialConductionDelay,):1.0
+SubClassOf(JervellLangeNielsenSyndrome,hasSyndromeElement some):1.0
+SubClassOf(JervellLangeNielsenSyndrome,(Deafness and (hasAcquisitionMode some):1.0
+SubClassOf(JervellLangeNielsenSyndrome,(AcquisitionMode and (hasAbsoluteState some congenital))))):1.0
+is(JointPain,Class):1.0
+is(JuvenileArthritis,Class):1.0
+SubClassOf(JuvenileArthritis,RheumatoidArthritis):1.0
+is(JuvenileDermatomyositis,Class):1.0
+SubClassOf(JuvenileDermatomyositis,Dermatomyositis):1.0
+is(KawasakiDisease,Class):1.0
+SubClassOf(KawasakiDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(KawasakiDisease,hasSyndromeElement some ConjunctivalInflammation,):1.0
+SubClassOf(KawasakiDisease,hasSyndromeElement some Erythema,):1.0
+SubClassOf(KawasakiDisease,hasSyndromeElement some Pharyngitis,):1.0
+SubClassOf(KawasakiDisease,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(KawasakiDisease,hasSyndromeElement some):1.0
+SubClassOf(KawasakiDisease,(Desquamation and (actsSpecificallyOn some SkinOfFinger)),):1.0
+SubClassOf(KawasakiDisease,hasSyndromeElement some):1.0
+SubClassOf(KawasakiDisease,(Desquamation and (actsSpecificallyOn some SkinOfPerineum)),):1.0
+SubClassOf(KawasakiDisease,hasSyndromeElement some):1.0
+SubClassOf(KawasakiDisease,(Desquamation and (actsSpecificallyOn some SkinOfToe))):1.0
+is(KayMethod,Class):1.0
+SubClassOf(KayMethod,NAMEDEponymousMethod):1.0
+is(KeratanSulphate,Class):1.0
+is(Keratinisation,Class):1.0
+SubClassOf(Keratinisation,NAMEDSkinProcess):1.0
+is(KeratosisLesion,Class):1.0
+is(Ketoacidosis,Class):1.0
+SubClassOf(Ketoacidosis,Acidosis):1.0
+is(Ketosis,Class):1.0
+SubClassOf(Ketosis,NAMEDSystemicDisease,):1.0
+SubClassOf(Ketosis,isSpecificImmediateConsequenceOf some RaisedSerumKetoneConcentration):1.0
+is(KlinefelterSyndrome,Class):1.0
+SubClassOf(KlinefelterSyndrome,NAMEDSyndrome):1.0
+is(KorsakoffPsychosis,Class):1.0
+SubClassOf(KorsakoffPsychosis,Psychosis):1.0
+is(KorsakoffSyndrome,Class):1.0
+SubClassOf(KorsakoffSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(KorsakoffSyndrome,hasSyndromeElement some Confusion,):1.0
+SubClassOf(KorsakoffSyndrome,hasSyndromeElement some MemoryDisturbance):1.0
+is(KrabbeDisease,Class):1.0
+SubClassOf(KrabbeDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(KrabbeDisease,hasAcquisitionMode some):1.0
+SubClassOf(KrabbeDisease,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(KrabbeDisease,hasSyndromeElement some):1.0
+SubClassOf(KrabbeDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(KrabbeDisease,(CatabolicProcess and (actsSpecificallyOn some Cerebroside))) and (isSpecificFunctionOf some Cerebrosidase)),):1.0
+SubClassOf(KrabbeDisease,hasSyndromeElement some):1.0
+SubClassOf(KrabbeDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Cerebroside)),):1.0
+SubClassOf(KrabbeDisease,isConsequenceOf some):1.0
+SubClassOf(KrabbeDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(KrabbeDisease,(GeneTranscription and (hasSpecificImmediateConsequence some Cerebrosidase))))):1.0
+is(Kwashiorkor,Class):1.0
+SubClassOf(Kwashiorkor,NAMEDDisorder,):1.0
+SubClassOf(Kwashiorkor,hasSyndromeElement some Alopecia,):1.0
+SubClassOf(Kwashiorkor,hasSyndromeElement some Depigmentation,):1.0
+SubClassOf(Kwashiorkor,hasSyndromeElement some LowHaemoglobinConcentration,):1.0
+SubClassOf(Kwashiorkor,hasSyndromeElement some LoweredBloodAlbuminConcentration,):1.0
+SubClassOf(Kwashiorkor,hasSyndromeElement some Oedema,):1.0
+SubClassOf(Kwashiorkor,hasSyndromeElement some):1.0
+SubClassOf(Kwashiorkor,(AtrophicLesion and (hasSpecificLocation some Pancreas)),):1.0
+SubClassOf(Kwashiorkor,hasSyndromeElement some):1.0
+SubClassOf(Kwashiorkor,(FattyDegenerationLesion and (hasSpecificLocation some Liver)),):1.0
+SubClassOf(Kwashiorkor,hasSyndromeElement some):1.0
+SubClassOf(Kwashiorkor,(HyalinisationLesion and (hasSpecificLocation some Glomerulus)),):1.0
+SubClassOf(Kwashiorkor,isConsequenceOf some ProteinDeficientNutrition):1.0
+is(LabileAffect,Class):1.0
+is(Labour,Class):1.0
+SubClassOf(Labour,NAMEDReproductiveProcess):1.0
+is(LacrimalGland,Class):1.0
+is(Lactation,Class):1.0
+SubClassOf(Lactation,BodyProcess):1.0
+is(LacticAcidosis,Class):1.0
+SubClassOf(LacticAcidosis,Acidosis):1.0
+is(LactosylCeramidosis,Class):1.0
+SubClassOf(LactosylCeramidosis,NAMEDSystemicDisease,):1.0
+SubClassOf(LactosylCeramidosis,hasAcquisitionMode some):1.0
+SubClassOf(LactosylCeramidosis,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(LactosylCeramidosis,hasSyndromeElement some):1.0
+SubClassOf(LactosylCeramidosis,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(LactosylCeramidosis,(CatabolicProcess and (actsSpecificallyOn some Cerebroside))) and (isSpecificFunctionOf some Cerebrosidase)),):1.0
+SubClassOf(LactosylCeramidosis,hasSyndromeElement some):1.0
+SubClassOf(LactosylCeramidosis,(LysosomalAccumulation and (isSpecificallyMadeOf some Cerebroside)),):1.0
+SubClassOf(LactosylCeramidosis,isConsequenceOf some):1.0
+SubClassOf(LactosylCeramidosis,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(LactosylCeramidosis,(GeneTranscription and (hasSpecificImmediateConsequence some Cerebrosidase))))):1.0
+is(LargeWound,Class):1.0
+SubClassOf(LargeWound,NAMEDUnmodelledPathology):1.0
+is(Lasering,Class):1.0
+SubClassOf(Lasering,NAMEDPhysicalProcess):1.0
+is(LateralGreyColumn,Class):1.0
+is(LaxativeAbuse,Class):1.0
+is(LeftHeartVentricle,Class):1.0
+is(LeftVentricularDysfunction,Class):1.0
+SubClassOf(LeftVentricularDysfunction,BodyProcess):1.0
+is(LejeuneSyndrome,Class):1.0
+SubClassOf(LejeuneSyndrome,NAMEDSyndrome):1.0
+is(LennoxGastautSyndrome,Class):1.0
+SubClassOf(LennoxGastautSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(LennoxGastautSyndrome,hasSyndromeElement some MentalRetardation,):1.0
+SubClassOf(LennoxGastautSyndrome,hasSyndromeElement some MyoclonicEpilepsy):1.0
+is(LensOpacity,Class):1.0
+is(Leprosy,Class):1.0
+SubClassOf(Leprosy,NAMEDDisorder,):1.0
+SubClassOf(Leprosy,isConsequenceOf some):1.0
+SubClassOf(Leprosy,(InfectionLesion and (isSpecificConsequenceOf some MycobacteriumLeprae))):1.0
+is(LeschNyhanSyndrome,Class):1.0
+SubClassOf(LeschNyhanSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(LeschNyhanSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(LeschNyhanSyndrome,(AcquisitionMode and (hasAbsoluteState some XLinkedRecessiveGeneInherited)),):1.0
+SubClassOf(LeschNyhanSyndrome,hasSyndromeElement some Athetosis,):1.0
+SubClassOf(LeschNyhanSyndrome,hasSyndromeElement some ChoreiformMovement,):1.0
+SubClassOf(LeschNyhanSyndrome,hasSyndromeElement some Gout,):1.0
+SubClassOf(LeschNyhanSyndrome,hasSyndromeElement some MentalRetardation,):1.0
+SubClassOf(LeschNyhanSyndrome,hasSyndromeElement some):1.0
+SubClassOf(LeschNyhanSyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(LeschNyhanSyndrome,(CatabolicProcess and (actsSpecificallyOn some PhosphoribosylPyrophosphate))) and (isSpecificFunctionOf some HypoxanthineGuaninePhosphoRibosylTransferase)),):1.0
+SubClassOf(LeschNyhanSyndrome,isConsequenceOf some):1.0
+SubClassOf(LeschNyhanSyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(LeschNyhanSyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some HypoxanthineGuaninePhosphoRibosylTransferase))))):1.0
+is(LeukoplasticProcess,Class):1.0
+SubClassOf(LeukoplasticProcess,DysplasticProcess):1.0
+is(Level,Class):1.0
+is(LichenPlanus,Class):1.0
+SubClassOf(LichenPlanus,NAMEDDisorder,):1.0
+SubClassOf(LichenPlanus,hasSyndromeElement some PapularSkinRash):1.0
+is(LichenSimplex,Class):1.0
+SubClassOf(LichenSimplex,NAMEDDisorder,):1.0
+SubClassOf(LichenSimplex,hasSyndromeElement some Pruritus,):1.0
+SubClassOf(LichenSimplex,hasSyndromeElement some SkinThickening,):1.0
+SubClassOf(LichenSimplex,isConsequenceOf some):1.0
+SubClassOf(LichenSimplex,(Rubbing and (actsSpecificallyOn some SkinCovering)),):1.0
+SubClassOf(LichenSimplex,isConsequenceOf some):1.0
+SubClassOf(LichenSimplex,(Scratching and (actsSpecificallyOn some SkinCovering)),):1.0
+SubClassOf(LichenSimplex,isConsequenceOf only PseudoGout):1.0
+is(LifeDamagingProcess,Class):1.0
+SubClassOf(LifeDamagingProcess,NAMEDOrganismProcess):1.0
+is(LifeSupportingProcess,Class):1.0
+SubClassOf(LifeSupportingProcess,NAMEDOrganismProcess):1.0
+is(LipoproteinDeposition,Class):1.0
+is(LipoproteinDisorder,Class):1.0
+SubClassOf(LipoproteinDisorder,NAMEDMetabolicPathologicalProcess):1.0
+is(LiquidBlood,Class):1.0
+is(Liver,Class):1.0
+is(LiverCell,Class):1.0
+is(LiverFailure,Class):1.0
+SubClassOf(LiverFailure,BodyProcess):1.0
+is(LocalInflammation,Class):1.0
+SubClassOf(LocalInflammation,NAMEDUnmodelledPathology):1.0
+is(LocalIrritation,Class):1.0
+SubClassOf(LocalIrritation,NAMEDUnmodelledPathology):1.0
+is(LocalOedema,Class):1.0
+SubClassOf(LocalOedema,NAMEDUnmodelledPathology):1.0
+is(LocalReaction,Class):1.0
+SubClassOf(LocalReaction,NAMEDUnmodelledPathology):1.0
+is(LocalReactionFollowingSubcutaneousInjection,Class):1.0
+SubClassOf(LocalReactionFollowingSubcutaneousInjection,NAMEDUnmodelledPathology):1.0
+is(LocalReactionsAtInjectionSite,Class):1.0
+SubClassOf(LocalReactionsAtInjectionSite,NAMEDUnmodelledPathology):1.0
+is(LongQTSyndrome,Class):1.0
+SubClassOf(LongQTSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(LongQTSyndrome,hasSyndromeElement some QTProlongation):1.0
+is(LooseBodyAcquisitionProcess,Class):1.0
+SubClassOf(LooseBodyAcquisitionProcess,TraumaticProcess):1.0
+is(LordMethod,Class):1.0
+SubClassOf(LordMethod,NAMEDEponymousMethod):1.0
+is(LowBloodpH,Class):1.0
+is(LowConcentration,Class):1.0
+is(LowHaemoglobinConcentration,Class):1.0
+is(LowPlateletCount,Class):1.0
+is(LowSerumTriiodothyronineConcentration,Class):1.0
+is(LowerEsophagealSphincter,Class):1.0
+is(LowerExtremity,Class):1.0
+is(LoweredBloodAlbuminConcentration,Class):1.0
+is(LoweredSerumCalciumConcentration,Class):1.0
+is(LoweredSerumPhosphateConcentration,Class):1.0
+is(LoweredSerumPotassiumConcentration,Class):1.0
+is(LoweredSerumSodiumConcentration,Class):1.0
+is(LownGanongLevineSyndrome,Class):1.0
+SubClassOf(LownGanongLevineSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(LownGanongLevineSyndrome,hasSyndromeElement some AcessoryAtrioventricularConductionWithPrematureVentricularExcitation):1.0
+is(Lubricating,Class):1.0
+SubClassOf(Lubricating,NAMEDPhysicalProcess):1.0
+is(Lung,Class):1.0
+is(LungParenchymalStructure,Class):1.0
+is(Lymph,Class):1.0
+is(LymphoedemaPraecox,Class):1.0
+SubClassOf(LymphoedemaPraecox,NAMEDSystemicDisease,):1.0
+SubClassOf(LymphoedemaPraecox,hasSyndromeElement some):1.0
+SubClassOf(LymphoedemaPraecox,(Oedema and (hasSpecificLocation some LowerExtremity))):1.0
+is(LymphoedemaProcess,Class):1.0
+EquivalentTo(LymphoedemaProcess,OedemaProcess and (isConsequenceOf some):1.0
+EquivalentTo(LymphoedemaProcess,(Transport and (actsSpecificallyOn some Lymph) and (hasEffectiveness some):1.0
+EquivalentTo(LymphoedemaProcess,(Effectiveness and (hasAbsoluteState some ineffective)))))):1.0
+SubClassOf(LymphoedemaProcess,OedemaProcess):1.0
+is(LymphoedemaTarda,Class):1.0
+SubClassOf(LymphoedemaTarda,NAMEDSystemicDisease,):1.0
+SubClassOf(LymphoedemaTarda,hasSyndromeElement some):1.0
+SubClassOf(LymphoedemaTarda,(Oedema and (hasSpecificLocation some LowerExtremity))):1.0
+is(LysosomalAccumulation,Class):1.0
+is(MacLeodUnilateralEmphysema,Class):1.0
+SubClassOf(MacLeodUnilateralEmphysema,NAMEDSystemicDisease,):1.0
+SubClassOf(MacLeodUnilateralEmphysema,hasSyndromeElement some ExpiratoryObstruction,):1.0
+SubClassOf(MacLeodUnilateralEmphysema,hasSyndromeElement some ObliteratingBronchiolitis,):1.0
+SubClassOf(MacLeodUnilateralEmphysema,hasSyndromeElement some):1.0
+SubClassOf(MacLeodUnilateralEmphysema,(OligaemicPerfusion and (isSpecificFunctionOf some PulmonaryVessel))):1.0
+is(MacularSkinRash,Class):1.0
+is(MaculopapularRash,Class):1.0
+is(Magnetics,Class):1.0
+SubClassOf(Magnetics,NAMEDPhysicalProcess):1.0
+is(MajorDepression,Class):1.0
+SubClassOf(MajorDepression,NAMEDDisorder,):1.0
+SubClassOf(MajorDepression,hasSyndromeElement some Depression):1.0
+is(MajorHeartValve,Class):1.0
+is(Malabsorption,Class):1.0
+is(MalabsorptionSyndrome,Class):1.0
+SubClassOf(MalabsorptionSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(MalabsorptionSyndrome,hasSyndromeElement some Asthenia,):1.0
+SubClassOf(MalabsorptionSyndrome,hasSyndromeElement some Diarrhoea,):1.0
+SubClassOf(MalabsorptionSyndrome,hasSyndromeElement some MuscleCramp,):1.0
+SubClassOf(MalabsorptionSyndrome,hasSyndromeElement some Oedema,):1.0
+SubClassOf(MalabsorptionSyndrome,hasSyndromeElement some Paraesthesia,):1.0
+SubClassOf(MalabsorptionSyndrome,hasSyndromeElement some WeightLoss,):1.0
+SubClassOf(MalabsorptionSyndrome,isSpecificConsequenceOf some GastrointestinalMalabsorption):1.0
+is(Malaria,Class):1.0
+SubClassOf(Malaria,NAMEDDisorder,):1.0
+SubClassOf(Malaria,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(Malaria,isConsequenceOf some):1.0
+SubClassOf(Malaria,(InfectionLesion and (isSpecificConsequenceOf some Plasmodium))):1.0
+is(MalasseziaFurfur,Class):1.0
+is(MalignantEffusion,Class):1.0
+SubClassOf(MalignantEffusion,NAMEDUnmodelledPathology):1.0
+is(MalignantHyperthermia,Class):1.0
+SubClassOf(MalignantHyperthermia,NAMEDSyndrome,):1.0
+SubClassOf(MalignantHyperthermia,hasSyndromeElement some Hyperthermia,):1.0
+SubClassOf(MalignantHyperthermia,hasSyndromeElement some HypertoniaOfMuscle,):1.0
+SubClassOf(MalignantHyperthermia,isConsequenceOf some ChemicalSubstance):1.0
+is(MalignantNeoplasticProcess,Class):1.0
+SubClassOf(MalignantNeoplasticProcess,NeoplasticProcess):1.0
+is(Mania,Class):1.0
+SubClassOf(Mania,NAMEDDisorder,):1.0
+SubClassOf(Mania,hasSyndromeElement some Elation,):1.0
+SubClassOf(Mania,hasSyndromeElement some Insomnia,):1.0
+SubClassOf(Mania,hasSyndromeElement some MentalAgitation):1.0
+is(ManualMethod,Class):1.0
+SubClassOf(ManualMethod,NAMEDEponymousMethod):1.0
+is(MarfanSyndrome,Class):1.0
+SubClassOf(MarfanSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(MarfanSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(MarfanSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(MaroteauxLamySyndrome,Class):1.0
+SubClassOf(MaroteauxLamySyndrome,NAMEDSyndrome,):1.0
+SubClassOf(MaroteauxLamySyndrome,hasAcquisitionMode some):1.0
+SubClassOf(MaroteauxLamySyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(MaroteauxLamySyndrome,hasSyndromeElement some):1.0
+SubClassOf(MaroteauxLamySyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(MaroteauxLamySyndrome,(CatabolicProcess and (actsSpecificallyOn some DermatanSulphate))) and (isSpecificFunctionOf some Mucopolysaccharidase)),):1.0
+SubClassOf(MaroteauxLamySyndrome,hasSyndromeElement some):1.0
+SubClassOf(MaroteauxLamySyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some DermatanSulphate)),):1.0
+SubClassOf(MaroteauxLamySyndrome,isConsequenceOf some):1.0
+SubClassOf(MaroteauxLamySyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(MaroteauxLamySyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some Mucopolysaccharidase))))):1.0
+is(Masturbation,Class):1.0
+SubClassOf(Masturbation,NAMEDSexualProcess):1.0
+is(Maturation,Class):1.0
+SubClassOf(Maturation,NAMEDDevelopmentalProcess):1.0
+is(McArdleDisease,Class):1.0
+SubClassOf(McArdleDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(McArdleDisease,hasAcquisitionMode some):1.0
+SubClassOf(McArdleDisease,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(McArdleDisease,hasSyndromeElement some):1.0
+SubClassOf(McArdleDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(McArdleDisease,(CatabolicProcess and (actsSpecificallyOn some Glycogen))) and (isSpecificFunctionOf some Phosphorylase)),):1.0
+SubClassOf(McArdleDisease,hasSyndromeElement some):1.0
+SubClassOf(McArdleDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Glycogen)),):1.0
+SubClassOf(McArdleDisease,isConsequenceOf some):1.0
+SubClassOf(McArdleDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(McArdleDisease,(GeneTranscription and (hasSpecificImmediateConsequence some Phosphorylase))))):1.0
+is(Measles,Class):1.0
+SubClassOf(Measles,NAMEDDisorder,):1.0
+SubClassOf(Measles,hasSyndromeElement some MacularSkinRash,):1.0
+SubClassOf(Measles,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(Measles,isConsequenceOf some):1.0
+SubClassOf(Measles,(InfectionLesion and (isSpecificConsequenceOf some MeaslesVirus))):1.0
+is(MeaslesVirus,Class):1.0
+is(MechanicalLesionProcess,Class):1.0
+SubClassOf(MechanicalLesionProcess,AcquiredPathologicalProcess):1.0
+is(MediterraneanFever,Class):1.0
+SubClassOf(MediterraneanFever,NAMEDSystemicDisease,):1.0
+SubClassOf(MediterraneanFever,hasSyndromeElement some AbdominalPain,):1.0
+SubClassOf(MediterraneanFever,hasSyndromeElement some Arthritis,):1.0
+SubClassOf(MediterraneanFever,hasSyndromeElement some Pleurisy,):1.0
+SubClassOf(MediterraneanFever,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(MediterraneanFever,hasSyndromeElement some SkinRash):1.0
+is(Megacolon,Class):1.0
+SubClassOf(Megacolon,NAMEDDisorder,):1.0
+SubClassOf(Megacolon,hasSyndromeElement some):1.0
+SubClassOf(Megacolon,(DilatatingProcess and (actsSpecificallyOn some):1.0
+SubClassOf(Megacolon,(Diameter and (isDiameterOf some Colon)))),):1.0
+SubClassOf(Megacolon,hasSyndromeElement some):1.0
+SubClassOf(Megacolon,(HypertrophicLesion and (hasSpecificLocation some Colon))):1.0
+is(MegacystitisMicrocolonIntestinalHypoperistalsisSyndrome,Class):1.0
+SubClassOf(MegacystitisMicrocolonIntestinalHypoperistalsisSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(MegacystitisMicrocolonIntestinalHypoperistalsisSyndrome,hasSyndromeElement some):1.0
+SubClassOf(MegacystitisMicrocolonIntestinalHypoperistalsisSyndrome,(GastrointestinalPeristalsis and (hasProcessActivity some lowActivityLevel))):1.0
+is(MeigeDisease,Class):1.0
+SubClassOf(MeigeDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(MeigeDisease,hasAcquisitionMode some):1.0
+SubClassOf(MeigeDisease,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited)),):1.0
+SubClassOf(MeigeDisease,hasSyndromeElement some Oedema):1.0
+is(MemoryDisturbance,Class):1.0
+is(MenarcheProcess,Class):1.0
+SubClassOf(MenarcheProcess,NAMEDDevelopmentalProcess):1.0
+is(MeniereDisease,Class):1.0
+SubClassOf(MeniereDisease,NAMEDSyndrome,):1.0
+SubClassOf(MeniereDisease,hasSyndromeElement some Deafness,):1.0
+SubClassOf(MeniereDisease,hasSyndromeElement some Nausea,):1.0
+SubClassOf(MeniereDisease,hasSyndromeElement some Tinnitus,):1.0
+SubClassOf(MeniereDisease,hasSyndromeElement some Vertigo,):1.0
+SubClassOf(MeniereDisease,hasSyndromeElement some Vomiting,):1.0
+SubClassOf(MeniereDisease,isConsequenceOf some):1.0
+SubClassOf(MeniereDisease,(NonNormalSwelling and (hasSpecificLocation some EndolymphaticDuct))):1.0
+is(MeningesOfBrain,Class):1.0
+is(MenopauseProcess,Class):1.0
+SubClassOf(MenopauseProcess,NAMEDDevelopmentalProcess):1.0
+is(MenstruationProcess,Class):1.0
+SubClassOf(MenstruationProcess,NAMEDReproductiveProcess):1.0
+is(MentalAgitation,Class):1.0
+is(MentalDistraction,Class):1.0
+is(MentalExcitation,Class):1.0
+is(MentalRetardation,Class):1.0
+is(MentalSedation,Class):1.0
+is(Mesocolon,Class):1.0
+SubClassOf(Mesocolon,NAMEDMembrane):1.0
+is(MetabolicAcidosis,Class):1.0
+SubClassOf(MetabolicAcidosis,Acidosis):1.0
+is(MetabolicAlkalosis,Class):1.0
+SubClassOf(MetabolicAlkalosis,Alkalosis):1.0
+is(MetabolicProcess,Class):1.0
+is(MetachromaticLeukodystrophy,Class):1.0
+SubClassOf(MetachromaticLeukodystrophy,NAMEDSystemicDisease,):1.0
+SubClassOf(MetachromaticLeukodystrophy,hasAcquisitionMode some):1.0
+SubClassOf(MetachromaticLeukodystrophy,(AcquisitionMode and (hasAbsoluteState some geneticallyInherited)),):1.0
+SubClassOf(MetachromaticLeukodystrophy,hasSyndromeElement some):1.0
+SubClassOf(MetachromaticLeukodystrophy,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(MetachromaticLeukodystrophy,(CatabolicProcess and (actsSpecificallyOn some Sulphatide))) and (isSpecificFunctionOf some ArylSulphataseA)),):1.0
+SubClassOf(MetachromaticLeukodystrophy,hasSyndromeElement some):1.0
+SubClassOf(MetachromaticLeukodystrophy,(LysosomalAccumulation and (isSpecificallyMadeOf some Sulphatide)),):1.0
+SubClassOf(MetachromaticLeukodystrophy,isConsequenceOf some):1.0
+SubClassOf(MetachromaticLeukodystrophy,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(MetachromaticLeukodystrophy,(GeneTranscription and (hasSpecificImmediateConsequence some ArylSulphataseA))))):1.0
+is(MetaplasticProcess,Class):1.0
+SubClassOf(MetaplasticProcess,DysplasticProcess):1.0
+is(MetastaticCalcification,Class):1.0
+SubClassOf(MetastaticCalcification,NAMEDUnmodelledPathology):1.0
+is(Migraine,Class):1.0
+SubClassOf(Migraine,NAMEDDisorder,):1.0
+SubClassOf(Migraine,actsOn some MeningesOfBrain,):1.0
+SubClassOf(Migraine,hasSyndromeElement some Headache,):1.0
+SubClassOf(Migraine,hasSyndromeElement some Nausea,):1.0
+SubClassOf(Migraine,hasSyndromeElement some Photophobia,):1.0
+SubClassOf(Migraine,hasSyndromeElement some Vomiting):1.0
+is(MildHypertension,Class):1.0
+SubClassOf(MildHypertension,Hypertension):1.0
+is(MilesMethod,Class):1.0
+SubClassOf(MilesMethod,NAMEDEponymousMethod):1.0
+is(MilroyDisease,Class):1.0
+SubClassOf(MilroyDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(MilroyDisease,hasAcquisitionMode some):1.0
+SubClassOf(MilroyDisease,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited)),):1.0
+SubClassOf(MilroyDisease,hasSyndromeElement some Oedema):1.0
+is(Mineralization,Class):1.0
+is(ModifiedTaylorMethod,Class):1.0
+SubClassOf(ModifiedTaylorMethod,NAMEDEponymousMethod):1.0
+is(MonosymptomaticHypochondriacalPsychosis,Class):1.0
+SubClassOf(MonosymptomaticHypochondriacalPsychosis,Psychosis):1.0
+is(Morphea,Class):1.0
+SubClassOf(Morphea,Scleroderma):1.0
+is(MorquioSyndrome,Class):1.0
+SubClassOf(MorquioSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(MorquioSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(MorquioSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(MorquioSyndrome,hasSyndromeElement some):1.0
+SubClassOf(MorquioSyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(MorquioSyndrome,(CatabolicProcess and (actsSpecificallyOn some KeratanSulphate))) and (isSpecificFunctionOf some GalactoseOneSulphatase)),):1.0
+SubClassOf(MorquioSyndrome,hasSyndromeElement some):1.0
+SubClassOf(MorquioSyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some KeratanSulphate)),):1.0
+SubClassOf(MorquioSyndrome,isConsequenceOf some):1.0
+SubClassOf(MorquioSyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(MorquioSyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some GalactoseOneSulphatase))))):1.0
+is(MoschowitzMethod,Class):1.0
+SubClassOf(MoschowitzMethod,NAMEDEponymousMethod):1.0
+is(MoyamoyaDisease,Class):1.0
+SubClassOf(MoyamoyaDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(MoyamoyaDisease,hasSyndromeElement some):1.0
+SubClassOf(MoyamoyaDisease,(OcclusingLesion and (hasSpecificLocation some):1.0
+SubClassOf(MoyamoyaDisease,(BloodVessel and (serves some BaseOfBrain)))),):1.0
+SubClassOf(MoyamoyaDisease,hasSyndromeElement some):1.0
+SubClassOf(MoyamoyaDisease,(Revascularisation and (actsOn some BaseOfBrain))):1.0
+is(Mucopolysaccharidase,Class):1.0
+is(Mucositis,Class):1.0
+SubClassOf(Mucositis,NAMEDUnmodelledPathology):1.0
+is(MucousMembrane,Class):1.0
+is(MultipleSclerosis,Class):1.0
+SubClassOf(MultipleSclerosis,NAMEDDisorder,):1.0
+SubClassOf(MultipleSclerosis,hasSyndromeElement some):1.0
+SubClassOf(MultipleSclerosis,(SclerosisLesion and (hasSpecificLocation some Brain)),):1.0
+SubClassOf(MultipleSclerosis,hasSyndromeElement some):1.0
+SubClassOf(MultipleSclerosis,(SclerosisLesion and (hasSpecificLocation some SpinalCord))):1.0
+is(Mumps,Class):1.0
+SubClassOf(Mumps,NAMEDDisorder,):1.0
+SubClassOf(Mumps,hasSyndromeElement some MacularSkinRash,):1.0
+SubClassOf(Mumps,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(Mumps,isConsequenceOf some):1.0
+SubClassOf(Mumps,(InfectionLesion and (isSpecificConsequenceOf some MumpsVirus))):1.0
+is(MumpsVirus,Class):1.0
+is(MuralThrombus,Class):1.0
+is(MuscleContractionProcess,Class):1.0
+is(MuscleContractureLesion,Class):1.0
+is(MuscleCramp,Class):1.0
+is(MuscleOfLowerLimb,Class):1.0
+is(MuscleTremor,Class):1.0
+is(Myalgia,Class):1.0
+is(MyastheniaGravis,Class):1.0
+SubClassOf(MyastheniaGravis,NAMEDSystemicDisease,):1.0
+SubClassOf(MyastheniaGravis,actsOn some NeuromuscularJunction,):1.0
+SubClassOf(MyastheniaGravis,hasSubprocess some HypersensitivityProcess,):1.0
+SubClassOf(MyastheniaGravis,hasSyndromeElement some):1.0
+SubClassOf(MyastheniaGravis,(PathologicalMuscleWeakness and (hasQuantity some):1.0
+SubClassOf(MyastheniaGravis,(Level and (hasTrendInState some unstable)))),):1.0
+SubClassOf(MyastheniaGravis,isSpecificConsequenceOf some):1.0
+SubClassOf(MyastheniaGravis,(AutoimmuneProcess and (actsSpecificallyOn some):1.0
+SubClassOf(MyastheniaGravis,(CholinergicReceptor and (makesUp some NeuromuscularJunction))))):1.0
+is(MycobacteriumLeprae,Class):1.0
+is(MycobacteriumTuberculosisHominis,Class):1.0
+is(MyocardialFibrosis,Class):1.0
+is(MyocardialInfarct,Class):1.0
+is(MyocardialPathology,Class):1.0
+is(MyoclonicEpilepsy,Class):1.0
+SubClassOf(MyoclonicEpilepsy,Epilepsy):1.0
+is(Myolysis,Class):1.0
+is(Myopia,Class):1.0
+SubClassOf(Myopia,NAMEDDisorder,):1.0
+SubClassOf(Myopia,isConsequenceOf some FailureOfOcularAccomodation):1.0
+is(Myositis,Class):1.0
+is(Myotonia,Class):1.0
+is(MyotonicDystrophy,Class):1.0
+SubClassOf(MyotonicDystrophy,NAMEDSystemicDisease,):1.0
+SubClassOf(MyotonicDystrophy,hasAcquisitionMode some):1.0
+SubClassOf(MyotonicDystrophy,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited)),):1.0
+SubClassOf(MyotonicDystrophy,hasSyndromeElement some FrontalBalding,):1.0
+SubClassOf(MyotonicDystrophy,hasSyndromeElement some Hypogonadism,):1.0
+SubClassOf(MyotonicDystrophy,hasSyndromeElement some LensOpacity,):1.0
+SubClassOf(MyotonicDystrophy,hasSyndromeElement some MyocardialPathology,):1.0
+SubClassOf(MyotonicDystrophy,hasSyndromeElement some Myotonia,):1.0
+SubClassOf(MyotonicDystrophy,hasSyndromeElement some):1.0
+SubClassOf(MyotonicDystrophy,(PathologicalMuscleWeakness and (hasDiseaseCourseStage some):1.0
+SubClassOf(MyotonicDystrophy,(DiseaseCourseStage and (hasAbsoluteState some progressiveDiseaseCourseState))) and (isStrengthOf some):1.0
+SubClassOf(MyotonicDystrophy,(MuscleContractionProcess and (isSpecificFunctionOf some MuscleOfLowerLimb)))),):1.0
+SubClassOf(MyotonicDystrophy,hasSyndromeElement some):1.0
+SubClassOf(MyotonicDystrophy,(WeaknessOfCraniallyInnervatedMuscle and (hasDiseaseCourseStage some):1.0
+SubClassOf(MyotonicDystrophy,(DiseaseCourseStage and (hasAbsoluteState some progressiveDiseaseCourseState))))):1.0
+is(NAMEDBrainProcess,Class):1.0
+SubClassOf(NAMEDBrainProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDCardiacProcess,Class):1.0
+SubClassOf(NAMEDCardiacProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDCirculatoryProcess,Class):1.0
+SubClassOf(NAMEDCirculatoryProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDDevelopmentalProcess,Class):1.0
+SubClassOf(NAMEDDevelopmentalProcess,NAMEDPhysiologicalProcess,):1.0
+SubClassOf(NAMEDDevelopmentalProcess,hasAcquisitionMode some):1.0
+SubClassOf(NAMEDDevelopmentalProcess,(AcquisitionMode and (hasAbsoluteState some congenital))):1.0
+is(NAMEDDigestiveProcess,Class):1.0
+SubClassOf(NAMEDDigestiveProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDDisorder,Class):1.0
+SubClassOf(NAMEDDisorder,NAMEDPathologicalProcess):1.0
+is(NAMEDEponymousMethod,Class):1.0
+SubClassOf(NAMEDEponymousMethod,NAMEDSurgicalAccompanyingProcess):1.0
+is(NAMEDFascia,Class):1.0
+is(NAMEDGeneticProcess,Class):1.0
+SubClassOf(NAMEDGeneticProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDHaematologicalProcess,Class):1.0
+SubClassOf(NAMEDHaematologicalProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDImmunologicalProcess,Class):1.0
+SubClassOf(NAMEDImmunologicalProcess,NAMEDPhysiologicalProcess,):1.0
+SubClassOf(NAMEDImmunologicalProcess,isFunctionOf some ImmuneSystem):1.0
+is(NAMEDMembrane,Class):1.0
+is(NAMEDMetabolicPathologicalProcess,Class):1.0
+EquivalentTo(NAMEDMetabolicPathologicalProcess,NAMEDMetabolicProcess and (hasPathologicalStatus some pathological)):1.0
+SubClassOf(NAMEDMetabolicPathologicalProcess,NAMEDMetabolicProcess):1.0
+is(NAMEDMetabolicProcess,Class):1.0
+SubClassOf(NAMEDMetabolicProcess,MetabolicProcess):1.0
+is(NAMEDMuscleProcess,Class):1.0
+SubClassOf(NAMEDMuscleProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDNeurologicalProcess,Class):1.0
+SubClassOf(NAMEDNeurologicalProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDNonNormalProcess,Class):1.0
+SubClassOf(NAMEDNonNormalProcess,BodyProcess):1.0
+is(NAMEDOrganismProcess,Class):1.0
+SubClassOf(NAMEDOrganismProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDPainProcess,Class):1.0
+SubClassOf(NAMEDPainProcess,NAMEDPhysiologicalProcess,):1.0
+SubClassOf(NAMEDPainProcess,playsConsultationRole some SymptomRole):1.0
+is(NAMEDPathologicalProcess,Class):1.0
+SubClassOf(NAMEDPathologicalProcess,NAMEDNonNormalProcess,):1.0
+SubClassOf(NAMEDPathologicalProcess,hasIntrinsicPathologicalStatus some pathological):1.0
+is(NAMEDPharmacokineticProcess,Class):1.0
+SubClassOf(NAMEDPharmacokineticProcess,PharmacokineticProcess):1.0
+is(NAMEDPharmacologicalProcess,Class):1.0
+SubClassOf(NAMEDPharmacologicalProcess,BodyProcess):1.0
+is(NAMEDPhysicalProcess,Class):1.0
+SubClassOf(NAMEDPhysicalProcess,PhysicalProcess):1.0
+is(NAMEDPhysiologicalProcess,Class):1.0
+SubClassOf(NAMEDPhysiologicalProcess,BodyProcess,):1.0
+SubClassOf(NAMEDPhysiologicalProcess,hasIntrinsicPathologicalStatus some physiological):1.0
+is(NAMEDReproductiveProcess,Class):1.0
+SubClassOf(NAMEDReproductiveProcess,ReproductiveProcess):1.0
+is(NAMEDRespiratoryProcess,Class):1.0
+SubClassOf(NAMEDRespiratoryProcess,NAMEDPhysiologicalProcess,):1.0
+SubClassOf(NAMEDRespiratoryProcess,isFunctionOf some RespiratorySystem):1.0
+is(NAMEDSexualProcess,Class):1.0
+SubClassOf(NAMEDSexualProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDSkinProcess,Class):1.0
+SubClassOf(NAMEDSkinProcess,NAMEDPhysiologicalProcess):1.0
+is(NAMEDSleepProcess,Class):1.0
+SubClassOf(NAMEDSleepProcess,NAMEDBrainProcess):1.0
+is(NAMEDSurgicalAccompanyingProcess,Class):1.0
+SubClassOf(NAMEDSurgicalAccompanyingProcess,SurgicalAccompanyingProcess):1.0
+is(NAMEDSyndrome,Class):1.0
+SubClassOf(NAMEDSyndrome,NAMEDPathologicalProcess):1.0
+is(NAMEDSystemicDisease,Class):1.0
+SubClassOf(NAMEDSystemicDisease,NAMEDPathologicalProcess):1.0
+is(NAMEDUnmodelledPathology,Class):1.0
+SubClassOf(NAMEDUnmodelledPathology,NAMEDPathologicalProcess):1.0
+is(NAMEDWholeBodyProcess,Class):1.0
+SubClassOf(NAMEDWholeBodyProcess,NAMEDPhysiologicalProcess):1.0
+is(NAcetylGlucosameSulphatase,Class):1.0
+is(NAcetylGlucosaminidase,Class):1.0
+is(Narcolepsy,Class):1.0
+SubClassOf(Narcolepsy,NAMEDDisorder,):1.0
+SubClassOf(Narcolepsy,hasSyndromeElement some AbnormalDaytimeSleeping,):1.0
+SubClassOf(Narcolepsy,hasSyndromeElement some NocturnalWakefulness):1.0
+is(NasalObstruction,Class):1.0
+is(Nausea,Class):1.0
+is(NecrosingProcess,Class):1.0
+SubClassOf(NecrosingProcess,DegenerativeProcess):1.0
+is(NecrosisLesion,Class):1.0
+is(NegativeCalciumBalance,Class):1.0
+SubClassOf(NegativeCalciumBalance,NAMEDMetabolicPathologicalProcess):1.0
+is(NegativeNitrogenBalance,Class):1.0
+SubClassOf(NegativeNitrogenBalance,NAMEDMetabolicPathologicalProcess):1.0
+is(NeisseriaGonorrhoeae,Class):1.0
+is(NeonatalDeathAlsoReported,Class):1.0
+SubClassOf(NeonatalDeathAlsoReported,NAMEDUnmodelledPathology):1.0
+is(NeoplasiaOfBone,Class):1.0
+SubClassOf(NeoplasiaOfBone,NeoplasticProcess):1.0
+is(NeoplasiaOfMuscle,Class):1.0
+SubClassOf(NeoplasiaOfMuscle,NeoplasticProcess):1.0
+is(NeoplasticProcess,Class):1.0
+SubClassOf(NeoplasticProcess,AbnormalGrowthProcess):1.0
+is(Nephrolithiasis,Class):1.0
+SubClassOf(Nephrolithiasis,Urolithiasis):1.0
+is(NephropathicCystinosis,Class):1.0
+SubClassOf(NephropathicCystinosis,FanconiCystinosis):1.0
+is(NephroticSyndrome,Class):1.0
+SubClassOf(NephroticSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(NephroticSyndrome,hasSyndromeElement some Albuminuria,):1.0
+SubClassOf(NephroticSyndrome,hasSyndromeElement some LoweredBloodAlbuminConcentration,):1.0
+SubClassOf(NephroticSyndrome,hasSyndromeElement some Oedema,):1.0
+SubClassOf(NephroticSyndrome,hasSyndromeElement some):1.0
+SubClassOf(NephroticSyndrome,(GlomerularFiltration and (hasEffectiveness some):1.0
+SubClassOf(NephroticSyndrome,(Effectiveness and (hasAbsoluteState some ineffective)))),):1.0
+SubClassOf(NephroticSyndrome,isSpecificImmediateConsequenceOf some):1.0
+SubClassOf(NephroticSyndrome,(Hyperpermeability and (isPermeabilityOf some GlomerularBasementMembrane))):1.0
+is(Neuralgia,Class):1.0
+is(Neurofibromatosis,Class):1.0
+SubClassOf(Neurofibromatosis,NAMEDSyndrome,):1.0
+SubClassOf(Neurofibromatosis,hasAcquisitionMode some):1.0
+SubClassOf(Neurofibromatosis,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(NeurolepticMalignantSyndrome,Class):1.0
+SubClassOf(NeurolepticMalignantSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(NeurolepticMalignantSyndrome,hasSyndromeElement some Akathisia,):1.0
+SubClassOf(NeurolepticMalignantSyndrome,hasSyndromeElement some Bradykinesia,):1.0
+SubClassOf(NeurolepticMalignantSyndrome,hasSyndromeElement some Hyperthermia,):1.0
+SubClassOf(NeurolepticMalignantSyndrome,hasSyndromeElement some HypertoniaOfMuscle,):1.0
+SubClassOf(NeurolepticMalignantSyndrome,hasSyndromeElement some MuscleTremor):1.0
+is(NeurolepticMalignantSyndromeLikeEvent,Class):1.0
+SubClassOf(NeurolepticMalignantSyndromeLikeEvent,NAMEDUnmodelledPathology):1.0
+is(NeuromuscularJunction,Class):1.0
+is(Neuropathy,Class):1.0
+is(Nidation,Class):1.0
+SubClassOf(Nidation,NAMEDReproductiveProcess):1.0
+is(NiemannPickDisease,Class):1.0
+SubClassOf(NiemannPickDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(NiemannPickDisease,hasAcquisitionMode some):1.0
+SubClassOf(NiemannPickDisease,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(NiemannPickDisease,hasSyndromeElement some):1.0
+SubClassOf(NiemannPickDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(NiemannPickDisease,(CatabolicProcess and (actsSpecificallyOn some Sphingomyelin))) and (isSpecificFunctionOf some Sphingomyelinase)),):1.0
+SubClassOf(NiemannPickDisease,hasSyndromeElement some):1.0
+SubClassOf(NiemannPickDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Sphingomyelin)),):1.0
+SubClassOf(NiemannPickDisease,isConsequenceOf some):1.0
+SubClassOf(NiemannPickDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(NiemannPickDisease,(GeneTranscription and (hasSpecificImmediateConsequence some Sphingomyelinase))))):1.0
+is(NissenMethod,Class):1.0
+SubClassOf(NissenMethod,NAMEDEponymousMethod):1.0
+is(NobleMethod,Class):1.0
+SubClassOf(NobleMethod,NAMEDEponymousMethod):1.0
+is(Nocturia,Class):1.0
+is(NocturnalWakefulness,Class):1.0
+is(NodalTachycardia,Class):1.0
+is(NodularNonSuppurativeFebrilePanniculitis,Class):1.0
+SubClassOf(NodularNonSuppurativeFebrilePanniculitis,NAMEDUnmodelledPathology,):1.0
+SubClassOf(NodularNonSuppurativeFebrilePanniculitis,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass):1.0
+is(NonNormalBodyProcess,Class):1.0
+SubClassOf(NonNormalBodyProcess,BodyProcess):1.0
+is(NonNormalSwelling,Class):1.0
+is(NonSpecificSymptomRole,Class):1.0
+is(NoonanSyndrome,Class):1.0
+SubClassOf(NoonanSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(NoonanSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(NoonanSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(NorwoodMethod,Class):1.0
+SubClassOf(NorwoodMethod,NAMEDEponymousMethod):1.0
+is(Nystagmus,Class):1.0
+is(Obesity,Class):1.0
+is(ObliteratingBronchiolitis,Class):1.0
+is(ObstructingLesion,Class):1.0
+is(OccasionalFatality,Class):1.0
+SubClassOf(OccasionalFatality,NAMEDUnmodelledPathology):1.0
+is(Occiput,Class):1.0
+is(OcclusingLesion,Class):1.0
+is(OcclusionOfTeeth,Class):1.0
+SubClassOf(OcclusionOfTeeth,NAMEDPhysiologicalProcess):1.0
+is(OcularMigraine,Class):1.0
+SubClassOf(OcularMigraine,Migraine):1.0
+is(Oedema,Class):1.0
+is(OedemaProcess,Class):1.0
+SubClassOf(OedemaProcess,NAMEDPathologicalProcess):1.0
+is(OesophagealFibrosis,Class):1.0
+is(OesophagealWeb,Class):1.0
+is(OligaemicPerfusion,Class):1.0
+is(OphthalmoplegicMigraine,Class):1.0
+SubClassOf(OphthalmoplegicMigraine,Migraine):1.0
+is(OpiateWithdrawal,Class):1.0
+SubClassOf(OpiateWithdrawal,WithdrawalSyndrome):1.0
+is(OpticNerve,Class):1.0
+is(Optics,Class):1.0
+SubClassOf(Optics,NAMEDPhysicalProcess):1.0
+is(OralUlcer,Class):1.0
+is(OrganDevelopmentProcess,Class):1.0
+SubClassOf(OrganDevelopmentProcess,NAMEDDevelopmentalProcess):1.0
+is(OrganImpairment,Class):1.0
+SubClassOf(OrganImpairment,BodyProcess):1.0
+is(OrganRejectionProcess,Class):1.0
+SubClassOf(OrganRejectionProcess,NAMEDImmunologicalProcess):1.0
+is(OrganismReproduction,Class):1.0
+SubClassOf(OrganismReproduction,NAMEDReproductiveProcess):1.0
+is(Orgasm,Class):1.0
+SubClassOf(Orgasm,NAMEDSexualProcess):1.0
+is(Osteoarthritis,Class):1.0
+SubClassOf(Osteoarthritis,NAMEDDisorder,):1.0
+SubClassOf(Osteoarthritis,hasSyndromeElement some):1.0
+SubClassOf(Osteoarthritis,(Arthritis and (hasSpecificLocation some SynovialJoint)),):1.0
+SubClassOf(Osteoarthritis,hasSyndromeElement some):1.0
+SubClassOf(Osteoarthritis,(ErosionLesion and (hasSpecificLocation some ArticularCartilage))):1.0
+is(Osteomalacia,Class):1.0
+SubClassOf(Osteomalacia,NAMEDDisorder,):1.0
+SubClassOf(Osteomalacia,hasSyndromeElement some BonePain,):1.0
+SubClassOf(Osteomalacia,hasSyndromeElement some BoneSoftening,):1.0
+SubClassOf(Osteomalacia,hasSyndromeElement some):1.0
+SubClassOf(Osteomalacia,(BendLesion and (hasSpecificLocation some Bone))):1.0
+is(Osteoporosis,Class):1.0
+SubClassOf(Osteoporosis,NAMEDDisorder,):1.0
+SubClassOf(Osteoporosis,hasSyndromeElement some ReducedBoneMass):1.0
+is(OsteoporosisWithHypercalcaemia,Class):1.0
+SubClassOf(OsteoporosisWithHypercalcaemia,Osteoporosis):1.0
+is(OsteoporosisWithHypercalcuria,Class):1.0
+SubClassOf(OsteoporosisWithHypercalcuria,Osteoporosis):1.0
+is(OvarianSwelling,Class):1.0
+is(OverlapSyndrome,Class):1.0
+SubClassOf(OverlapSyndrome,NAMEDUnmodelledPathology,):1.0
+SubClassOf(OverlapSyndrome,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass):1.0
+is(Ovulation,Class):1.0
+SubClassOf(Ovulation,NAMEDReproductiveProcess):1.0
+is(PaediatricCancer,Class):1.0
+SubClassOf(PaediatricCancer,NAMEDUnmodelledPathology):1.0
+is(PagetDiseaseOfBone,Class):1.0
+SubClassOf(PagetDiseaseOfBone,NAMEDSystemicDisease,):1.0
+SubClassOf(PagetDiseaseOfBone,hasSyndromeElement some BoneSoftening,):1.0
+SubClassOf(PagetDiseaseOfBone,hasSyndromeElement some BoneThickening,):1.0
+SubClassOf(PagetDiseaseOfBone,hasSyndromeElement some):1.0
+SubClassOf(PagetDiseaseOfBone,(BoneDeposition and (hasProcessActivity some highActivityLevel)),):1.0
+SubClassOf(PagetDiseaseOfBone,hasSyndromeElement some):1.0
+SubClassOf(PagetDiseaseOfBone,(BoneResorption and (hasProcessActivity some highActivityLevel))):1.0
+is(PainLocalisation,Class):1.0
+SubClassOf(PainLocalisation,NAMEDPainProcess):1.0
+is(PainRadiation,Class):1.0
+SubClassOf(PainRadiation,NAMEDPainProcess):1.0
+is(PainReferral,Class):1.0
+SubClassOf(PainReferral,NAMEDPainProcess):1.0
+is(PainfulErection,Class):1.0
+is(PalpebralOedema,Class):1.0
+is(Palsy,Class):1.0
+is(Pancreas,Class):1.0
+is(PancreaticFunction,Class):1.0
+SubClassOf(PancreaticFunction,BodyProcess):1.0
+is(Panhypopituitarism,Class):1.0
+SubClassOf(Panhypopituitarism,BodyProcess):1.0
+is(PanicDisorder,Class):1.0
+SubClassOf(PanicDisorder,NAMEDDisorder,):1.0
+SubClassOf(PanicDisorder,hasSyndromeElement some):1.0
+SubClassOf(PanicDisorder,(ExtremeAnxiety and (hasTemporalPattern some):1.0
+SubClassOf(PanicDisorder,(TemporalPattern and (hasAbsoluteState some repeating))))):1.0
+is(PapularSkinRash,Class):1.0
+is(Paraesthesia,Class):1.0
+is(Paranoia,Class):1.0
+SubClassOf(Paranoia,Psychosis):1.0
+is(ParasitisingProcess,Class):1.0
+SubClassOf(ParasitisingProcess,AcquiredPathologicalProcess):1.0
+is(ParathyroidDysfunction,Class):1.0
+SubClassOf(ParathyroidDysfunction,BodyProcess):1.0
+is(ParathyroidInsufficiency,Class):1.0
+SubClassOf(ParathyroidInsufficiency,BodyProcess):1.0
+is(ParkMethod,Class):1.0
+SubClassOf(ParkMethod,NAMEDEponymousMethod):1.0
+is(ParkinsonsDisease,Class):1.0
+SubClassOf(ParkinsonsDisease,NAMEDDisorder,):1.0
+SubClassOf(ParkinsonsDisease,hasSyndromeElement some HypertoniaOfMuscle,):1.0
+SubClassOf(ParkinsonsDisease,hasSyndromeElement some MuscleTremor,):1.0
+SubClassOf(ParkinsonsDisease,hasSyndromeElement some WalkingWithFestinatingGait,):1.0
+SubClassOf(ParkinsonsDisease,isConsequenceOf some DopamineNeurotransmitterDeficiency):1.0
+is(ParotidGland,Class):1.0
+is(ParoxysmalTachycardia,Class):1.0
+is(PatauSyndrome,Class):1.0
+SubClassOf(PatauSyndrome,NAMEDSyndrome):1.0
+is(PathologicalBodyProcess,Class):1.0
+SubClassOf(PathologicalBodyProcess,BodyProcess):1.0
+is(PathologicalCognition,Class):1.0
+is(PathologicalMetabolicProcess,Class):1.0
+is(PathologicalMuscleWeakness,Class):1.0
+is(PathologicalOrPhysiologicalStatus,Class):1.0
+is(PathologicalPhenomenon,Class):1.0
+is(PathologicalRaisedSerumLipidConcentration,Class):1.0
+is(PeliosisHepatis,Class):1.0
+SubClassOf(PeliosisHepatis,NAMEDDisorder,):1.0
+SubClassOf(PeliosisHepatis,hasLocation some Liver):1.0
+is(Pellagra,Class):1.0
+SubClassOf(Pellagra,NAMEDSystemicDisease,):1.0
+SubClassOf(Pellagra,hasSyndromeElement some Erythema,):1.0
+SubClassOf(Pellagra,hasSyndromeElement some Neuropathy,):1.0
+SubClassOf(Pellagra,isConsequenceOf some VitaminB1DeficiencyState):1.0
+is(PembertonMethod,Class):1.0
+SubClassOf(PembertonMethod,NAMEDEponymousMethod):1.0
+is(Perception,Class):1.0
+is(PerforatingProcess,Class):1.0
+SubClassOf(PerforatingProcess,MechanicalLesionProcess):1.0
+is(Pericarditis,Class):1.0
+is(PeriorbitalOedema,Class):1.0
+is(PeripheralOedema,Class):1.0
+is(PeritonealFibrosis,Class):1.0
+SubClassOf(PeritonealFibrosis,NAMEDSyndrome,):1.0
+SubClassOf(PeritonealFibrosis,hasSyndromeElement some):1.0
+SubClassOf(PeritonealFibrosis,(FibrosisLesion and (hasLocation some AnatomyWithinAbdominalCavity))):1.0
+is(PeronealMuscularDystrophy,Class):1.0
+SubClassOf(PeronealMuscularDystrophy,NAMEDSyndrome,):1.0
+SubClassOf(PeronealMuscularDystrophy,hasAcquisitionMode some):1.0
+SubClassOf(PeronealMuscularDystrophy,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(PeyronieDisease,Class):1.0
+SubClassOf(PeyronieDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(PeyronieDisease,hasSyndromeElement some CavernousFibrosis,):1.0
+SubClassOf(PeyronieDisease,hasSyndromeElement some ErectileDeformity,):1.0
+SubClassOf(PeyronieDisease,hasSyndromeElement some PainfulErection):1.0
+is(PharmacodynamicProcess,Class):1.0
+SubClassOf(PharmacodynamicProcess,BodyProcess):1.0
+is(PharmacokineticProcess,Class):1.0
+SubClassOf(PharmacokineticProcess,BodyProcess):1.0
+is(PharmacologicallyActing,Class):1.0
+SubClassOf(PharmacologicallyActing,NAMEDPharmacologicalProcess):1.0
+is(Pharyngitis,Class):1.0
+is(Phenomenon,Class):1.0
+is(Phosphofructokinase,Class):1.0
+is(PhosphoribosylPyrophosphate,Class):1.0
+is(Phosphorylase,Class):1.0
+is(Photography,Class):1.0
+SubClassOf(Photography,NAMEDPhysicalProcess):1.0
+is(Photophobia,Class):1.0
+is(PhysicalArousal,Class):1.0
+is(PhysicalProcess,Class):1.0
+is(PigmentedSkinRash,Class):1.0
+is(PituitaryDysfunction,Class):1.0
+SubClassOf(PituitaryDysfunction,BodyProcess):1.0
+is(PituitaryFailure,Class):1.0
+SubClassOf(PituitaryFailure,BodyProcess):1.0
+is(PityriasisVersicolor,Class):1.0
+SubClassOf(PityriasisVersicolor,NAMEDDisorder,):1.0
+SubClassOf(PityriasisVersicolor,hasSyndromeElement some PigmentedSkinRash,):1.0
+SubClassOf(PityriasisVersicolor,isConsequenceOf some):1.0
+SubClassOf(PityriasisVersicolor,(InfectionLesion and (isSpecificConsequenceOf some MalasseziaFurfur))):1.0
+is(PlacentalFunction,Class):1.0
+SubClassOf(PlacentalFunction,NAMEDReproductiveProcess):1.0
+is(PlanarDefect,Class):1.0
+is(PlantDerivative,Class):1.0
+is(PlaqueFormation,Class):1.0
+SubClassOf(PlaqueFormation,NAMEDUnmodelledPathology):1.0
+is(PlaquePsoriasis,Class):1.0
+SubClassOf(PlaquePsoriasis,Psoriasis):1.0
+is(Plasmodium,Class):1.0
+is(Pleurisy,Class):1.0
+is(Pneumatics,Class):1.0
+SubClassOf(Pneumatics,NAMEDPhysicalProcess):1.0
+is(Pollen,Class):1.0
+is(PolyarteritisNodosa,Class):1.0
+SubClassOf(PolyarteritisNodosa,NAMEDSystemicDisease,):1.0
+SubClassOf(PolyarteritisNodosa,hasSyndromeElement some Arteritis,):1.0
+SubClassOf(PolyarteritisNodosa,hasSyndromeElement some):1.0
+SubClassOf(PolyarteritisNodosa,(NecrosisLesion and (hasSpecificLocation some Artery))):1.0
+is(PolycysticOvarySyndrome,Class):1.0
+SubClassOf(PolycysticOvarySyndrome,NAMEDSyndrome,):1.0
+SubClassOf(PolycysticOvarySyndrome,hasSyndromeElement some Anovulation,):1.0
+SubClassOf(PolycysticOvarySyndrome,hasSyndromeElement some Hirsutism,):1.0
+SubClassOf(PolycysticOvarySyndrome,hasSyndromeElement some OvarianSwelling):1.0
+is(Polymyalgia,Class):1.0
+is(PolymyalgiaRheumatica,Class):1.0
+SubClassOf(PolymyalgiaRheumatica,NAMEDDisorder,):1.0
+SubClassOf(PolymyalgiaRheumatica,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass,):1.0
+SubClassOf(PolymyalgiaRheumatica,hasSyndromeElement some Polymyalgia):1.0
+is(Polyneuritis,Class):1.0
+is(Polyuria,Class):1.0
+is(PompeDisease,Class):1.0
+SubClassOf(PompeDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(PompeDisease,hasAcquisitionMode some):1.0
+SubClassOf(PompeDisease,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(PompeDisease,hasSyndromeElement some):1.0
+SubClassOf(PompeDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(PompeDisease,(CatabolicProcess and (actsSpecificallyOn some Glycogen))) and (isSpecificFunctionOf some AlphaGluconidase)),):1.0
+SubClassOf(PompeDisease,hasSyndromeElement some):1.0
+SubClassOf(PompeDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Glycogen)),):1.0
+SubClassOf(PompeDisease,isConsequenceOf some):1.0
+SubClassOf(PompeDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(PompeDisease,(GeneTranscription and (hasSpecificImmediateConsequence some AlphaGluconidase))))):1.0
+is(Porphyria,Class):1.0
+SubClassOf(Porphyria,NAMEDSystemicDisease,):1.0
+SubClassOf(Porphyria,hasSyndromeElement some):1.0
+SubClassOf(Porphyria,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(Porphyria,(AnabolicProcess and (actsSpecificallyOn some Porphyrin))))):1.0
+is(PorphyriaCutaneaTarda,Class):1.0
+SubClassOf(PorphyriaCutaneaTarda,Porphyria):1.0
+is(Porphyrin,Class):1.0
+is(PortalHypertension,Class):1.0
+SubClassOf(PortalHypertension,Hypertension):1.0
+is(PostCardiotomySyndrome,Class):1.0
+SubClassOf(PostCardiotomySyndrome,NAMEDSyndrome,):1.0
+SubClassOf(PostCardiotomySyndrome,hasSyndromeElement some IneffectiveCardiacFunction,):1.0
+SubClassOf(PostCardiotomySyndrome,hasSyndromeElement some Pericarditis,):1.0
+SubClassOf(PostCardiotomySyndrome,isSpecificConsequenceOf some):1.0
+SubClassOf(PostCardiotomySyndrome,(Incising and (actsSpecificallyOn some Heart))):1.0
+is(PostMyocardialInfarctSyndrome,Class):1.0
+SubClassOf(PostMyocardialInfarctSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(PostMyocardialInfarctSyndrome,hasSyndromeElement some ChestPain,):1.0
+SubClassOf(PostMyocardialInfarctSyndrome,hasSyndromeElement some Pericarditis,):1.0
+SubClassOf(PostMyocardialInfarctSyndrome,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(PostMyocardialInfarctSyndrome,hasSyndromeElement some RaisedLeucocyteCount,):1.0
+SubClassOf(PostMyocardialInfarctSyndrome,isSpecificImmediateConsequenceOf some MyocardialInfarct):1.0
+is(PostmenopausalOsteoporosis,Class):1.0
+SubClassOf(PostmenopausalOsteoporosis,Osteoporosis):1.0
+is(PostphlebiticSyndrome,Class):1.0
+SubClassOf(PostphlebiticSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(PostphlebiticSyndrome,hasSyndromeElement some CellulitisLesion,):1.0
+SubClassOf(PostphlebiticSyndrome,hasSyndromeElement some Dermatitis,):1.0
+SubClassOf(PostphlebiticSyndrome,hasSyndromeElement some Oedema,):1.0
+SubClassOf(PostphlebiticSyndrome,hasSyndromeElement some VaricoseVein,):1.0
+SubClassOf(PostphlebiticSyndrome,hasSyndromeElement some):1.0
+SubClassOf(PostphlebiticSyndrome,(UlceratingLesion and (hasSpecificLocation some SkinOfLeg)),):1.0
+SubClassOf(PostphlebiticSyndrome,isSpecificImmediateConsequenceOf some):1.0
+SubClassOf(PostphlebiticSyndrome,(Thrombophlebitis and (hasSpecificLocation some DeepVeinOfLeg))):1.0
+is(PosturalHypotension,Class):1.0
+SubClassOf(PosturalHypotension,Hypotension):1.0
+is(Pregnancy,Class):1.0
+SubClassOf(Pregnancy,NAMEDReproductiveProcess):1.0
+is(PreinfarctionSyndrome,Class):1.0
+SubClassOf(PreinfarctionSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(PreinfarctionSyndrome,hasSyndromeElement some AnginaPectoris,):1.0
+SubClassOf(PreinfarctionSyndrome,isImmediateConsequenceOf some IncreasedMyocardialIschaemia):1.0
+is(PremenstrualSyndrome,Class):1.0
+SubClassOf(PremenstrualSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(PremenstrualSyndrome,hasSyndromeElement some Anxiety,):1.0
+SubClassOf(PremenstrualSyndrome,hasSyndromeElement some Depression,):1.0
+SubClassOf(PremenstrualSyndrome,hasSyndromeElement some WeightGain,):1.0
+SubClassOf(PremenstrualSyndrome,hasTemporalPattern some):1.0
+SubClassOf(PremenstrualSyndrome,(TemporalPattern and (hasAbsoluteState some regularlyRepeating)),):1.0
+SubClassOf(PremenstrualSyndrome,isConsequenceOf some MenstruationProcess):1.0
+is(Pressurising,Class):1.0
+SubClassOf(Pressurising,NAMEDPhysicalProcess):1.0
+is(PrimaryAldosteronism,Class):1.0
+SubClassOf(PrimaryAldosteronism,Aldosteronism):1.0
+is(PrimaryAmyloidosis,Class):1.0
+SubClassOf(PrimaryAmyloidosis,Amyloidosis):1.0
+is(PrimaryBiliaryCirrhosis,Class):1.0
+SubClassOf(PrimaryBiliaryCirrhosis,Cirrhosis):1.0
+is(PrimaryPorphyria,Class):1.0
+SubClassOf(PrimaryPorphyria,Porphyria):1.0
+is(ProcessActivity,Class):1.0
+is(ProfoundHypotension,Class):1.0
+SubClassOf(ProfoundHypotension,Hypotension):1.0
+is(ProlactinDependentTumour,Class):1.0
+SubClassOf(ProlactinDependentTumour,NAMEDUnmodelledPathology):1.0
+is(ProlapsingProcess,Class):1.0
+SubClassOf(ProlapsingProcess,MechanicalLesionProcess):1.0
+is(ProteinCalorieMalnutrition,Class):1.0
+SubClassOf(ProteinCalorieMalnutrition,NAMEDDisorder):1.0
+is(ProteinDeficientNutrition,Class):1.0
+is(PruneBellySyndrome,Class):1.0
+SubClassOf(PruneBellySyndrome,NAMEDSyndrome,):1.0
+SubClassOf(PruneBellySyndrome,hasAcquisitionMode some):1.0
+SubClassOf(PruneBellySyndrome,(AcquisitionMode and (hasAbsoluteState some congenital)),):1.0
+SubClassOf(PruneBellySyndrome,hasSyndromeElement some CongenitalAbdominalMuscleAgenesis,):1.0
+SubClassOf(PruneBellySyndrome,hasSyndromeElement some DetrusorHypotonia,):1.0
+SubClassOf(PruneBellySyndrome,hasSyndromeElement some UndescendedTestis,):1.0
+SubClassOf(PruneBellySyndrome,hasSyndromeElement some Ureterocoele):1.0
+is(Pruritus,Class):1.0
+is(PseudoDiverticulosisProcess,Class):1.0
+SubClassOf(PseudoDiverticulosisProcess,NAMEDPathologicalProcess):1.0
+is(PseudoGout,Class):1.0
+SubClassOf(PseudoGout,NAMEDSystemicDisease,):1.0
+SubClassOf(PseudoGout,hasSyndromeElement some Arthritis,):1.0
+SubClassOf(PseudoGout,isConsequenceOf some):1.0
+SubClassOf(PseudoGout,(ChemicalDeposition and (actsSpecificallyOn some CalciumPyrophosphate) and (hasUniqueAssociatedDisplacement some):1.0
+SubClassOf(PseudoGout,(Displacement and (isDisplacementTo some SynovialJoint))))):1.0
+DisjointWith(PseudoGout,Rubbing and (actsSpecificallyOn some SkinCovering)):1.0
+is(PseudoexfoliativeGlaucoma,Class):1.0
+SubClassOf(PseudoexfoliativeGlaucoma,Glaucoma):1.0
+is(PseudohermaphroditicCongenitalAdrenalHyperplasia,Class):1.0
+SubClassOf(PseudohermaphroditicCongenitalAdrenalHyperplasia,CongenitalAdrenalHyperplasia):1.0
+is(Pseudohermaphroditism,Class):1.0
+SubClassOf(Pseudohermaphroditism,NAMEDDisorder,):1.0
+SubClassOf(Pseudohermaphroditism,hasAcquisitionMode some):1.0
+SubClassOf(Pseudohermaphroditism,(AcquisitionMode and (hasAbsoluteState some congenital)),):1.0
+SubClassOf(Pseudohermaphroditism,hasSyndromeElement some AmbiguousGenitalia,):1.0
+SubClassOf(Pseudohermaphroditism,hasSyndromeElement some UnambiguousGonad):1.0
+is(Psoriasis,Class):1.0
+SubClassOf(Psoriasis,NAMEDSystemicDisease,):1.0
+SubClassOf(Psoriasis,hasSyndromeElement some MaculopapularRash):1.0
+is(PsoriasisArthopica,Class):1.0
+SubClassOf(PsoriasisArthopica,Psoriasis):1.0
+is(PsoriasisCircinata,Class):1.0
+SubClassOf(PsoriasisCircinata,Psoriasis):1.0
+is(PsoriasisDiffusa,Class):1.0
+SubClassOf(PsoriasisDiffusa,Psoriasis):1.0
+is(PsoriasisDiscoidea,Class):1.0
+SubClassOf(PsoriasisDiscoidea,Psoriasis):1.0
+is(PsoriasisGuttata,Class):1.0
+SubClassOf(PsoriasisGuttata,Psoriasis):1.0
+is(PsoriasisOstreacea,Class):1.0
+SubClassOf(PsoriasisOstreacea,Psoriasis):1.0
+is(PsoriasisPunctata,Class):1.0
+SubClassOf(PsoriasisPunctata,Psoriasis):1.0
+is(Psyche,Class):1.0
+is(PsychogenicDiabetesInsipidus,Class):1.0
+SubClassOf(PsychogenicDiabetesInsipidus,DiabetesInsipidus):1.0
+is(PsychomotorAgitation,Class):1.0
+SubClassOf(PsychomotorAgitation,NAMEDDisorder,):1.0
+SubClassOf(PsychomotorAgitation,hasSyndromeElement some MentalAgitation,):1.0
+SubClassOf(PsychomotorAgitation,hasSyndromeElement some MentalExcitation,):1.0
+SubClassOf(PsychomotorAgitation,hasSyndromeElement some PhysicalArousal,):1.0
+SubClassOf(PsychomotorAgitation,hasSyndromeElement some Wakefulness):1.0
+is(Psychosis,Class):1.0
+SubClassOf(Psychosis,NAMEDDisorder,):1.0
+SubClassOf(Psychosis,hasSyndromeElement some CognitivePathology):1.0
+is(PubertyProcess,Class):1.0
+SubClassOf(PubertyProcess,NAMEDDevelopmentalProcess):1.0
+is(PuerperalSepsis,Class):1.0
+SubClassOf(PuerperalSepsis,Sepsis):1.0
+is(PulitzerMethod,Class):1.0
+SubClassOf(PulitzerMethod,NAMEDEponymousMethod):1.0
+is(PulmonaryAlveolarProteinosis,Class):1.0
+SubClassOf(PulmonaryAlveolarProteinosis,NAMEDSystemicDisease,):1.0
+SubClassOf(PulmonaryAlveolarProteinosis,hasChronicity some):1.0
+SubClassOf(PulmonaryAlveolarProteinosis,(Chronicity and (hasAbsoluteState some chronic)),):1.0
+SubClassOf(PulmonaryAlveolarProteinosis,hasSyndromeElement some):1.0
+SubClassOf(PulmonaryAlveolarProteinosis,(LipoproteinDeposition and (hasUniqueAssociatedDisplacement some):1.0
+SubClassOf(PulmonaryAlveolarProteinosis,(Displacement and (isDisplacementTo some Alveolus)))),):1.0
+SubClassOf(PulmonaryAlveolarProteinosis,hasSyndromeElement some):1.0
+SubClassOf(PulmonaryAlveolarProteinosis,(LipoproteinDeposition and (hasUniqueAssociatedDisplacement some):1.0
+SubClassOf(PulmonaryAlveolarProteinosis,(Displacement and (isDisplacementTo some TerminalBronchiole))))):1.0
+is(PulmonaryFibrosis,Class):1.0
+is(PulmonaryHypertension,Class):1.0
+SubClassOf(PulmonaryHypertension,Hypertension):1.0
+is(PulmonaryVessel,Class):1.0
+is(Purpura,Class):1.0
+is(PustularPsoriasis,Class):1.0
+SubClassOf(PustularPsoriasis,Psoriasis):1.0
+is(Pyrexia,Class):1.0
+is(QTProlongation,Class):1.0
+is(RadioactiveDecay,Class):1.0
+SubClassOf(RadioactiveDecay,NAMEDPhysicalProcess):1.0
+is(RaisedBloodUreaConcentration,Class):1.0
+is(RaisedBloodpH,Class):1.0
+is(RaisedEosinophilCount,Class):1.0
+is(RaisedLeucocyteCount,Class):1.0
+is(RaisedSerumCreatinineKinaseConcentration,Class):1.0
+is(RaisedSerumKetoneConcentration,Class):1.0
+is(RaisedSerumPotassiumConcentration,Class):1.0
+is(RaisedSerumReverseT3Concentration,Class):1.0
+is(RaisedSerumUricAcidConcentration,Class):1.0
+is(RankinMethod,Class):1.0
+SubClassOf(RankinMethod,NAMEDEponymousMethod):1.0
+is(RapidPulse,Class):1.0
+is(RastelliMethod,Class):1.0
+SubClassOf(RastelliMethod,NAMEDEponymousMethod):1.0
+is(RectalPullThroughMethod,Class):1.0
+SubClassOf(RectalPullThroughMethod,NAMEDSurgicalAccompanyingProcess):1.0
+is(Rectum,Class):1.0
+is(RecurrentDepression,Class):1.0
+SubClassOf(RecurrentDepression,MajorDepression):1.0
+is(RecurrentMigraine,Class):1.0
+SubClassOf(RecurrentMigraine,Migraine):1.0
+is(ReddishDiscolorationOfBodyFluid,Class):1.0
+SubClassOf(ReddishDiscolorationOfBodyFluid,NAMEDUnmodelledPathology):1.0
+is(ReddishDiscolorationOfUrine,Class):1.0
+SubClassOf(ReddishDiscolorationOfUrine,NAMEDUnmodelledPathology):1.0
+is(ReducedBoneMass,Class):1.0
+is(Refracting,Class):1.0
+SubClassOf(Refracting,NAMEDPhysicalProcess):1.0
+is(Regurgitation,Class):1.0
+SubClassOf(Regurgitation,NAMEDDigestiveProcess):1.0
+is(RelapsingPolychondritis,Class):1.0
+SubClassOf(RelapsingPolychondritis,NAMEDDisorder,):1.0
+SubClassOf(RelapsingPolychondritis,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass,):1.0
+SubClassOf(RelapsingPolychondritis,hasSyndromeElement some Arthritis,):1.0
+SubClassOf(RelapsingPolychondritis,hasSyndromeElement some Chondritis):1.0
+is(RenalDysfunction,Class):1.0
+SubClassOf(RenalDysfunction,BodyProcess):1.0
+is(RenalFunction,Class):1.0
+SubClassOf(RenalFunction,BodyProcess):1.0
+is(RenalImpairment,Class):1.0
+SubClassOf(RenalImpairment,BodyProcess):1.0
+is(RenalInsufficiency,Class):1.0
+is(RenalTubularDysfunction,Class):1.0
+SubClassOf(RenalTubularDysfunction,BodyProcess):1.0
+is(RenalTubularFunction,Class):1.0
+SubClassOf(RenalTubularFunction,BodyProcess):1.0
+is(RenalTubule,Class):1.0
+is(RenovascularFibrosis,Class):1.0
+is(ReproductiveFunction,Class):1.0
+SubClassOf(ReproductiveFunction,BodyProcess):1.0
+is(ReproductiveProcess,Class):1.0
+SubClassOf(ReproductiveProcess,NAMEDPhysiologicalProcess):1.0
+is(Resonating,Class):1.0
+SubClassOf(Resonating,NAMEDPhysicalProcess):1.0
+is(RespiratoryAirwaysObstruction,Class):1.0
+is(RespiratoryFunction,Class):1.0
+SubClassOf(RespiratoryFunction,BodyProcess):1.0
+is(RespiratorySystem,Class):1.0
+is(Retinoblastoma,Class):1.0
+SubClassOf(Retinoblastoma,NAMEDSyndrome,):1.0
+SubClassOf(Retinoblastoma,hasAcquisitionMode some):1.0
+SubClassOf(Retinoblastoma,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(RetroperitonealFibrosis,Class):1.0
+SubClassOf(RetroperitonealFibrosis,NAMEDSyndrome,):1.0
+SubClassOf(RetroperitonealFibrosis,hasSyndromeElement some):1.0
+SubClassOf(RetroperitonealFibrosis,(FibrosisLesion and (hasLocation some):1.0
+SubClassOf(RetroperitonealFibrosis,(BodyStructure and (InverseContainmentAttribute some RetroperitonealSpace))))):1.0
+is(RetroperitonealSpace,Class):1.0
+is(Revascularisation,Class):1.0
+is(ReverseT3DominanceSyndrome,Class):1.0
+SubClassOf(ReverseT3DominanceSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(ReverseT3DominanceSyndrome,hasSyndromeElement some Euthyroidism,):1.0
+SubClassOf(ReverseT3DominanceSyndrome,hasSyndromeElement some LowSerumTriiodothyronineConcentration,):1.0
+SubClassOf(ReverseT3DominanceSyndrome,hasSyndromeElement some RaisedSerumReverseT3Concentration,):1.0
+SubClassOf(ReverseT3DominanceSyndrome,isConsequenceOf some):1.0
+SubClassOf(ReverseT3DominanceSyndrome,(PathologicalPhenomenon and (hasSeverity some SevereSeverity))):1.0
+is(ReversibleMaois,Class):1.0
+SubClassOf(ReversibleMaois,NAMEDUnmodelledPathology):1.0
+is(ReversibleMyopia,Class):1.0
+SubClassOf(ReversibleMyopia,Myopia):1.0
+is(Rhabdomyolysis,Class):1.0
+SubClassOf(Rhabdomyolysis,NAMEDSystemicDisease,):1.0
+SubClassOf(Rhabdomyolysis,hasSeverity some SevereSeverity,):1.0
+SubClassOf(Rhabdomyolysis,hasSyndromeElement some Myolysis):1.0
+is(RheumaticChoreaWithHeartInvolvement,Class):1.0
+SubClassOf(RheumaticChoreaWithHeartInvolvement,RheumaticFever):1.0
+is(RheumaticFever,Class):1.0
+SubClassOf(RheumaticFever,NAMEDSystemicDisease):1.0
+is(RheumaticFeverWithCardiacInvolvement,Class):1.0
+SubClassOf(RheumaticFeverWithCardiacInvolvement,RheumaticFever):1.0
+is(RheumatoidArthritis,Class):1.0
+SubClassOf(RheumatoidArthritis,NAMEDSystemicDisease,):1.0
+SubClassOf(RheumatoidArthritis,hasSyndromeElement some):1.0
+SubClassOf(RheumatoidArthritis,(Arthritis and (hasSpecificLocation some SynovialJoint)),):1.0
+SubClassOf(RheumatoidArthritis,hasSyndromeElement some):1.0
+SubClassOf(RheumatoidArthritis,(ErosionLesion and (hasSpecificLocation some ArticularCartilage))):1.0
+is(Rhinitis,Class):1.0
+is(Rhinorrhoea,Class):1.0
+is(Rickets,Class):1.0
+SubClassOf(Rickets,NAMEDSystemicDisease,):1.0
+SubClassOf(Rickets,hasSyndromeElement some LoweredSerumCalciumConcentration,):1.0
+SubClassOf(Rickets,hasSyndromeElement some SkeletalDeformity,):1.0
+SubClassOf(Rickets,isConsequenceOf some VitaminDDeficiencyState):1.0
+is(RiedelThyroiditis,Class):1.0
+SubClassOf(RiedelThyroiditis,NAMEDSystemicDisease,):1.0
+SubClassOf(RiedelThyroiditis,hasChronicity some):1.0
+SubClassOf(RiedelThyroiditis,(Chronicity and (hasAbsoluteState some chronic)),):1.0
+SubClassOf(RiedelThyroiditis,hasSyndromeElement some Goiter,):1.0
+SubClassOf(RiedelThyroiditis,hasSyndromeElement some Thyroiditis,):1.0
+SubClassOf(RiedelThyroiditis,hasSyndromeElement some):1.0
+SubClassOf(RiedelThyroiditis,(FibrosisLesion and (hasSpecificLocation some ThyroidGland))):1.0
+is(RipsteinMethod,Class):1.0
+SubClassOf(RipsteinMethod,NAMEDEponymousMethod):1.0
+is(RomanoWardSyndrome,Class):1.0
+SubClassOf(RomanoWardSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(RomanoWardSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(RomanoWardSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited)),):1.0
+SubClassOf(RomanoWardSyndrome,hasSyndromeElement some VentricularMyocardialConductionDelay):1.0
+is(RotorSyndrome,Class):1.0
+SubClassOf(RotorSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(RotorSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(RotorSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(RotorSyndrome,hasSyndromeElement some IntermittentJaundice):1.0
+is(Rubbing,Class):1.0
+is(Rubella,Class):1.0
+SubClassOf(Rubella,NAMEDDisorder,):1.0
+SubClassOf(Rubella,hasSyndromeElement some MacularSkinRash,):1.0
+SubClassOf(Rubella,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(Rubella,isConsequenceOf some):1.0
+SubClassOf(Rubella,(InfectionLesion and (isSpecificConsequenceOf some RubellaVirus))):1.0
+is(RubellaVirus,Class):1.0
+is(SalivaryGland,Class):1.0
+is(SandhoffDisease,Class):1.0
+SubClassOf(SandhoffDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(SandhoffDisease,hasAcquisitionMode some):1.0
+SubClassOf(SandhoffDisease,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(SandhoffDisease,hasSyndromeElement some):1.0
+SubClassOf(SandhoffDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(SandhoffDisease,(CatabolicProcess and (actsSpecificallyOn some Ganglioside))) and (isSpecificFunctionOf some Gangliosidase)),):1.0
+SubClassOf(SandhoffDisease,hasSyndromeElement some):1.0
+SubClassOf(SandhoffDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Ganglioside)),):1.0
+SubClassOf(SandhoffDisease,isConsequenceOf some):1.0
+SubClassOf(SandhoffDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(SandhoffDisease,(GeneTranscription and (hasSpecificImmediateConsequence some Gangliosidase))))):1.0
+is(SanfilipoASyndrome,Class):1.0
+SubClassOf(SanfilipoASyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SanfilipoASyndrome,hasAcquisitionMode some):1.0
+SubClassOf(SanfilipoASyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(SanfilipoASyndrome,hasSyndromeElement some):1.0
+SubClassOf(SanfilipoASyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(SanfilipoASyndrome,(CatabolicProcess and (actsSpecificallyOn some HeparanSulphate))) and (isSpecificFunctionOf some HeparanSulphatase)),):1.0
+SubClassOf(SanfilipoASyndrome,hasSyndromeElement some):1.0
+SubClassOf(SanfilipoASyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some HeparanSulphate)),):1.0
+SubClassOf(SanfilipoASyndrome,isConsequenceOf some):1.0
+SubClassOf(SanfilipoASyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(SanfilipoASyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some HeparanSulphatase))))):1.0
+is(SanfilipoBSyndrome,Class):1.0
+SubClassOf(SanfilipoBSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SanfilipoBSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(SanfilipoBSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(SanfilipoBSyndrome,hasSyndromeElement some):1.0
+SubClassOf(SanfilipoBSyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(SanfilipoBSyndrome,(CatabolicProcess and (actsSpecificallyOn some HeparanSulphate))) and (isSpecificFunctionOf some NAcetylGlucosaminidase)),):1.0
+SubClassOf(SanfilipoBSyndrome,hasSyndromeElement some):1.0
+SubClassOf(SanfilipoBSyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some HeparanSulphate)),):1.0
+SubClassOf(SanfilipoBSyndrome,isConsequenceOf some):1.0
+SubClassOf(SanfilipoBSyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(SanfilipoBSyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some NAcetylGlucosaminidase))))):1.0
+is(SanfilipoCSyndrome,Class):1.0
+SubClassOf(SanfilipoCSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SanfilipoCSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(SanfilipoCSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(SanfilipoCSyndrome,hasSyndromeElement some):1.0
+SubClassOf(SanfilipoCSyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(SanfilipoCSyndrome,(CatabolicProcess and (actsSpecificallyOn some HeparanSulphate))) and (isSpecificFunctionOf some AcetylTransferase)),):1.0
+SubClassOf(SanfilipoCSyndrome,hasSyndromeElement some):1.0
+SubClassOf(SanfilipoCSyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some HeparanSulphate)),):1.0
+SubClassOf(SanfilipoCSyndrome,isConsequenceOf some):1.0
+SubClassOf(SanfilipoCSyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(SanfilipoCSyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some AcetylTransferase))))):1.0
+is(SanfilipoDSyndrome,Class):1.0
+SubClassOf(SanfilipoDSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SanfilipoDSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(SanfilipoDSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(SanfilipoDSyndrome,hasSyndromeElement some):1.0
+SubClassOf(SanfilipoDSyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(SanfilipoDSyndrome,(CatabolicProcess and (actsSpecificallyOn some HeparanSulphate))) and (isSpecificFunctionOf some NAcetylGlucosameSulphatase)),):1.0
+SubClassOf(SanfilipoDSyndrome,hasSyndromeElement some):1.0
+SubClassOf(SanfilipoDSyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some HeparanSulphate)),):1.0
+SubClassOf(SanfilipoDSyndrome,isConsequenceOf some):1.0
+SubClassOf(SanfilipoDSyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(SanfilipoDSyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some NAcetylGlucosameSulphatase))))):1.0
+is(Sarcoidosis,Class):1.0
+SubClassOf(Sarcoidosis,NAMEDSyndrome,):1.0
+SubClassOf(Sarcoidosis,hasSyndromeElement some):1.0
+SubClassOf(Sarcoidosis,(GranulomaLesion and (hasSpecificLocation some Lung))):1.0
+is(Scarlatina,Class):1.0
+SubClassOf(Scarlatina,NAMEDDisorder,):1.0
+SubClassOf(Scarlatina,hasSyndromeElement some MacularSkinRash,):1.0
+SubClassOf(Scarlatina,hasSyndromeElement some Pyrexia,):1.0
+SubClassOf(Scarlatina,hasSyndromeElement some):1.0
+SubClassOf(Scarlatina,(Desquamation and (hasDistribution some):1.0
+SubClassOf(Scarlatina,(Distribution and (hasAbsoluteState some confluentDiffuseDistribution)))),):1.0
+SubClassOf(Scarlatina,isConsequenceOf some):1.0
+SubClassOf(Scarlatina,(InfectionLesion and (isSpecificConsequenceOf some Streptococcus))):1.0
+is(ScheieSyndrome,Class):1.0
+SubClassOf(ScheieSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(ScheieSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(ScheieSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(ScheieSyndrome,hasSyndromeElement some):1.0
+SubClassOf(ScheieSyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(ScheieSyndrome,(CatabolicProcess and (actsSpecificallyOn some DermatanSulphate))) and (isSpecificFunctionOf some Iduronidase)),):1.0
+SubClassOf(ScheieSyndrome,hasSyndromeElement some):1.0
+SubClassOf(ScheieSyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some DermatanSulphate)),):1.0
+SubClassOf(ScheieSyndrome,isConsequenceOf some):1.0
+SubClassOf(ScheieSyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(ScheieSyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some Iduronidase))))):1.0
+is(Schizophrenia,Class):1.0
+SubClassOf(Schizophrenia,Psychosis):1.0
+is(SchuchardtsMethod,Class):1.0
+SubClassOf(SchuchardtsMethod,NAMEDEponymousMethod):1.0
+is(Scleroderma,Class):1.0
+SubClassOf(Scleroderma,NAMEDDisorder,):1.0
+SubClassOf(Scleroderma,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass,):1.0
+SubClassOf(Scleroderma,hasSyndromeElement some SkinThickening,):1.0
+SubClassOf(Scleroderma,hasSyndromeElement some):1.0
+SubClassOf(Scleroderma,(Induration and (isConsistencyOf some SkinCovering)),):1.0
+SubClassOf(Scleroderma,isConsequenceOf some):1.0
+SubClassOf(Scleroderma,(AtrophicLesion and (hasSpecificLocation some SebaceousGland))):1.0
+is(SclerosisLesion,Class):1.0
+is(SclerosisProcess,Class):1.0
+SubClassOf(SclerosisProcess,DegenerativeProcess):1.0
+is(Scratching,Class):1.0
+is(Scurvy,Class):1.0
+SubClassOf(Scurvy,NAMEDSystemicDisease,):1.0
+SubClassOf(Scurvy,hasSyndromeElement some LowHaemoglobinConcentration,):1.0
+SubClassOf(Scurvy,hasSyndromeElement some PeripheralOedema,):1.0
+SubClassOf(Scurvy,isConsequenceOf some VitaminCDeficiencyState):1.0
+is(SebaceousGland,Class):1.0
+is(SecondaryAldosteronism,Class):1.0
+SubClassOf(SecondaryAldosteronism,Aldosteronism):1.0
+is(SecondaryAmyloidosis,Class):1.0
+SubClassOf(SecondaryAmyloidosis,Amyloidosis):1.0
+is(SecondaryDiabetes,Class):1.0
+SubClassOf(SecondaryDiabetes,DiabetesMellitus):1.0
+is(SecondaryGlaucoma,Class):1.0
+SubClassOf(SecondaryGlaucoma,Glaucoma):1.0
+is(SecondaryPorphyria,Class):1.0
+SubClassOf(SecondaryPorphyria,Porphyria):1.0
+is(Seizure,Class):1.0
+is(SenileChorea,Class):1.0
+SubClassOf(SenileChorea,NAMEDDisorder,):1.0
+SubClassOf(SenileChorea,hasSyndromeElement some ChoreoathetoidMovement,):1.0
+SubClassOf(SenileChorea,hasSyndromeElement some LabileAffect,):1.0
+SubClassOf(SenileChorea,hasSyndromeElement some SkeletalHypotonia):1.0
+is(Sepsis,Class):1.0
+SubClassOf(Sepsis,NAMEDDisorder,):1.0
+SubClassOf(Sepsis,hasSyndromeElement some InfectionLesion):1.0
+is(Septicaemia,Class):1.0
+SubClassOf(Septicaemia,Sepsis):1.0
+is(SepticaemicShock,Class):1.0
+SubClassOf(SepticaemicShock,Shock):1.0
+is(SerousCavity,Class):1.0
+is(SerousMembrane,Class):1.0
+is(SerumSickness,Class):1.0
+SubClassOf(SerumSickness,NAMEDUnmodelledPathology,):1.0
+SubClassOf(SerumSickness,hasSubprocess some HypersensitivityProcess):1.0
+is(SevereDiarrhoea,Class):1.0
+is(SevereHypertension,Class):1.0
+SubClassOf(SevereHypertension,Hypertension):1.0
+is(SevereSeverity,Class):1.0
+is(SexualArousal,Class):1.0
+SubClassOf(SexualArousal,NAMEDSexualProcess):1.0
+is(SexualPenetration,Class):1.0
+SubClassOf(SexualPenetration,NAMEDSexualProcess):1.0
+is(Shigellosis,Class):1.0
+SubClassOf(Shigellosis,Dysentery):1.0
+is(Shingles,Class):1.0
+SubClassOf(Shingles,NAMEDDisorder,):1.0
+SubClassOf(Shingles,hasSyndromeElement some Neuralgia,):1.0
+SubClassOf(Shingles,hasSyndromeElement some VesicularSkinRash,):1.0
+SubClassOf(Shingles,isConsequenceOf some):1.0
+SubClassOf(Shingles,(InfectionLesion and (isSpecificConsequenceOf some HerpesVaricellaZosterVirus))):1.0
+is(Shock,Class):1.0
+SubClassOf(Shock,NAMEDSystemicDisease,):1.0
+SubClassOf(Shock,LocativeAttribute some CardiovascularSystem):1.0
+is(SickSinusSyndrome,Class):1.0
+SubClassOf(SickSinusSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SickSinusSyndrome,hasSyndromeElement some AtrioventricularBlock,):1.0
+SubClassOf(SickSinusSyndrome,hasSyndromeElement some NodalTachycardia,):1.0
+SubClassOf(SickSinusSyndrome,hasSyndromeElement some SinusBradycardia):1.0
+is(SickleCellDisease,Class):1.0
+SubClassOf(SickleCellDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(SickleCellDisease,hasAcquisitionMode some):1.0
+SubClassOf(SickleCellDisease,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited)),):1.0
+SubClassOf(SickleCellDisease,hasSyndromeElement some Haemolysis,):1.0
+SubClassOf(SickleCellDisease,hasSyndromeElement some LowHaemoglobinConcentration):1.0
+is(SideropenicDysphagia,Class):1.0
+SubClassOf(SideropenicDysphagia,NAMEDSystemicDisease,):1.0
+SubClassOf(SideropenicDysphagia,hasSyndromeElement some AtrophicGlossitis,):1.0
+SubClassOf(SideropenicDysphagia,hasSyndromeElement some Dysphagia,):1.0
+SubClassOf(SideropenicDysphagia,hasSyndromeElement some IronDeficientAnaemia,):1.0
+SubClassOf(SideropenicDysphagia,hasSyndromeElement some OesophagealWeb):1.0
+is(SignRole,Class):1.0
+is(SimpleVirilisingCongenitalAdrenalHyperplasia,Class):1.0
+SubClassOf(SimpleVirilisingCongenitalAdrenalHyperplasia,CongenitalAdrenalHyperplasia):1.0
+is(SinusBradycardia,Class):1.0
+is(SjogrenSyndrome,Class):1.0
+SubClassOf(SjogrenSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SjogrenSyndrome,hasSyndromeElement some AbnormalDrynessOfMucousMembrane,):1.0
+SubClassOf(SjogrenSyndrome,hasSyndromeElement some Purpura,):1.0
+SubClassOf(SjogrenSyndrome,hasSyndromeElement some TelangiectasiaLesion,):1.0
+SubClassOf(SjogrenSyndrome,hasSyndromeElement some):1.0
+SubClassOf(SjogrenSyndrome,(Visceromegaly and (isSizeOf some ParotidGland))):1.0
+is(SjogrensSyndrome,Class):1.0
+SubClassOf(SjogrensSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SjogrensSyndrome,hasSyndromeElement some DryMouth,):1.0
+SubClassOf(SjogrensSyndrome,hasSyndromeElement some Xerophthalmia,):1.0
+SubClassOf(SjogrensSyndrome,isConsequenceOf some AutoimmuneProcess):1.0
+is(SkeletalDeformity,Class):1.0
+is(SkeletalHypotonia,Class):1.0
+is(SkinCovering,Class):1.0
+is(SkinOfFinger,Class):1.0
+is(SkinOfLeg,Class):1.0
+is(SkinOfPerineum,Class):1.0
+is(SkinOfToe,Class):1.0
+is(SkinRash,Class):1.0
+is(SkinThickening,Class):1.0
+is(Skull,Class):1.0
+is(SleepApnoea,Class):1.0
+is(SleepApnoeaSyndrome,Class):1.0
+SubClassOf(SleepApnoeaSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SleepApnoeaSyndrome,hasSyndromeElement some DaytimeDrowsiness,):1.0
+SubClassOf(SleepApnoeaSyndrome,hasSyndromeElement some SleepDisturbance,):1.0
+SubClassOf(SleepApnoeaSyndrome,isImmediateConsequenceOf some SleepApnoea):1.0
+is(SleepDisturbance,Class):1.0
+is(SleepSymptom,Class):1.0
+SubClassOf(SleepSymptom,NAMEDSleepProcess):1.0
+is(SleepingProcess,Class):1.0
+SubClassOf(SleepingProcess,NAMEDSleepProcess):1.0
+is(SlySyndrome,Class):1.0
+SubClassOf(SlySyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SlySyndrome,hasAcquisitionMode some):1.0
+SubClassOf(SlySyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(SlySyndrome,hasSyndromeElement some):1.0
+SubClassOf(SlySyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(SlySyndrome,(CatabolicProcess and (actsSpecificallyOn some ChondroitinSulphate))) and (isSpecificFunctionOf some IduronateSulphatase)),):1.0
+SubClassOf(SlySyndrome,hasSyndromeElement some):1.0
+SubClassOf(SlySyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(SlySyndrome,(CatabolicProcess and (actsSpecificallyOn some DermatanSulphate))) and (isSpecificFunctionOf some IduronateSulphatase)),):1.0
+SubClassOf(SlySyndrome,hasSyndromeElement some):1.0
+SubClassOf(SlySyndrome,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(SlySyndrome,(CatabolicProcess and (actsSpecificallyOn some HeparanSulphate))) and (isSpecificFunctionOf some IduronateSulphatase)),):1.0
+SubClassOf(SlySyndrome,hasSyndromeElement some):1.0
+SubClassOf(SlySyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some ChondroitinSulphate)),):1.0
+SubClassOf(SlySyndrome,hasSyndromeElement some):1.0
+SubClassOf(SlySyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some DermatanSulphate)),):1.0
+SubClassOf(SlySyndrome,hasSyndromeElement some):1.0
+SubClassOf(SlySyndrome,(LysosomalAccumulation and (isSpecificallyMadeOf some HeparanSulphate)),):1.0
+SubClassOf(SlySyndrome,isConsequenceOf some):1.0
+SubClassOf(SlySyndrome,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(SlySyndrome,(GeneTranscription and (hasSpecificImmediateConsequence some BetaGlucorinidase))))):1.0
+is(SmallBloodVessel,Class):1.0
+is(SmallIntestine,Class):1.0
+is(Sneezing,Class):1.0
+is(SoaveMethod,Class):1.0
+SubClassOf(SoaveMethod,NAMEDEponymousMethod):1.0
+is(SodiumImbalance,Class):1.0
+SubClassOf(SodiumImbalance,NAMEDMetabolicPathologicalProcess):1.0
+is(SodiumLosingCongenitalAdrenalHyperplasia,Class):1.0
+SubClassOf(SodiumLosingCongenitalAdrenalHyperplasia,CongenitalAdrenalHyperplasia):1.0
+is(SoftTissueTraumaProcess,Class):1.0
+SubClassOf(SoftTissueTraumaProcess,TraumaticProcess):1.0
+is(SolidTumour,Class):1.0
+SubClassOf(SolidTumour,NAMEDUnmodelledPathology):1.0
+is(Sonics,Class):1.0
+SubClassOf(Sonics,NAMEDPhysicalProcess):1.0
+is(Sphingomyelin,Class):1.0
+is(Sphingomyelinase,Class):1.0
+is(SpinaBifida,Class):1.0
+is(SpinalCord,Class):1.0
+is(SpinalJoint,Class):1.0
+is(StageOfLabour,Class):1.0
+SubClassOf(StageOfLabour,NAMEDReproductiveProcess):1.0
+is(StaggeringGait,Class):1.0
+is(StatusAsthmaticus,Class):1.0
+SubClassOf(StatusAsthmaticus,NAMEDSystemicDisease):1.0
+is(StevensJohnsonSyndrome,Class):1.0
+SubClassOf(StevensJohnsonSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(StevensJohnsonSyndrome,hasSyndromeElement some BullousSkinRash,):1.0
+SubClassOf(StevensJohnsonSyndrome,hasSyndromeElement some):1.0
+SubClassOf(StevensJohnsonSyndrome,(Bulla and (hasSpecificLocation some MucousMembrane))):1.0
+is(StokesAdamsSeizure,Class):1.0
+is(StokesAdamsSyndrome,Class):1.0
+SubClassOf(StokesAdamsSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(StokesAdamsSyndrome,hasSyndromeElement some StokesAdamsSeizure):1.0
+is(StoneMethod,Class):1.0
+SubClassOf(StoneMethod,NAMEDEponymousMethod):1.0
+is(Streptococcus,Class):1.0
+is(StriatedMuscleDystonia,Class):1.0
+is(StyloHyoidLigament,Class):1.0
+is(StyloidProcess,Class):1.0
+is(SubacuteFeature,Class):1.0
+is(SuctionCreating,Class):1.0
+SubClassOf(SuctionCreating,NAMEDPhysicalProcess):1.0
+is(Sulphatide,Class):1.0
+is(SuperiorVenaCava,Class):1.0
+is(SuperiorVenaCavaSyndrome,Class):1.0
+SubClassOf(SuperiorVenaCavaSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(SuperiorVenaCavaSyndrome,isSpecificImmediateConsequenceOf some):1.0
+SubClassOf(SuperiorVenaCavaSyndrome,(CompressionLesion and (hasSpecificLocation some SuperiorVenaCava))):1.0
+is(SurgicalAccompanyingProcess,Class):1.0
+is(Swallowing,Class):1.0
+SubClassOf(Swallowing,NAMEDPhysiologicalProcess):1.0
+is(Sweating,Class):1.0
+SubClassOf(Sweating,NAMEDPhysiologicalProcess):1.0
+is(SwensonMethod,Class):1.0
+SubClassOf(SwensonMethod,NAMEDEponymousMethod):1.0
+is(SydenhamChorea,Class):1.0
+SubClassOf(SydenhamChorea,NAMEDDisorder,):1.0
+SubClassOf(SydenhamChorea,hasSyndromeElement some ChoreoathetoidMovement,):1.0
+SubClassOf(SydenhamChorea,hasSyndromeElement some LabileAffect,):1.0
+SubClassOf(SydenhamChorea,hasSyndromeElement some SkeletalHypotonia,):1.0
+SubClassOf(SydenhamChorea,isSyndromeElementOf some RheumaticFever):1.0
+is(SymptomRole,Class):1.0
+is(SyndromeWithArterialInvolvement,Class):1.0
+EquivalentTo(SyndromeWithArterialInvolvement,NAMEDSyndrome and (LocativeAttribute some ArterialStructure)):1.0
+SubClassOf(SyndromeWithArterialInvolvement,NAMEDSyndrome):1.0
+is(SyndromeWithCardiacInvolvement,Class):1.0
+EquivalentTo(SyndromeWithCardiacInvolvement,NAMEDSyndrome and (LocativeAttribute some Heart)):1.0
+SubClassOf(SyndromeWithCardiacInvolvement,NAMEDSyndrome):1.0
+is(SyndromeWithVenousInvolvement,Class):1.0
+EquivalentTo(SyndromeWithVenousInvolvement,NAMEDSyndrome and (LocativeAttribute some VenousStructure)):1.0
+SubClassOf(SyndromeWithVenousInvolvement,NAMEDSyndrome):1.0
+is(SynovialJoint,Class):1.0
+is(Syphilis,Class):1.0
+SubClassOf(Syphilis,NAMEDDisorder,):1.0
+SubClassOf(Syphilis,isConsequenceOf some):1.0
+SubClassOf(Syphilis,(InfectionLesion and (isSpecificConsequenceOf some TreponemaPallidum))):1.0
+is(SystemicHypertension,Class):1.0
+SubClassOf(SystemicHypertension,Hypertension):1.0
+is(SystemicLupusErythematosus,Class):1.0
+SubClassOf(SystemicLupusErythematosus,NAMEDSystemicDisease,):1.0
+SubClassOf(SystemicLupusErythematosus,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass,):1.0
+SubClassOf(SystemicLupusErythematosus,hasSyndromeElement some):1.0
+SubClassOf(SystemicLupusErythematosus,(InflammationLesion and (hasSpecificLocation some ConnectiveTissueStructure) and (isConsequenceOf some InappropriateImmuneResponse))):1.0
+is(SystemicSclerosis,Class):1.0
+SubClassOf(SystemicSclerosis,NAMEDSystemicDisease,):1.0
+SubClassOf(SystemicSclerosis,hasSyndromeElement some MyocardialFibrosis,):1.0
+SubClassOf(SystemicSclerosis,hasSyndromeElement some OesophagealFibrosis,):1.0
+SubClassOf(SystemicSclerosis,hasSyndromeElement some PulmonaryFibrosis,):1.0
+SubClassOf(SystemicSclerosis,hasSyndromeElement some RenovascularFibrosis):1.0
+is(Tachyphylaxis,Class):1.0
+SubClassOf(Tachyphylaxis,NAMEDPharmacokineticProcess):1.0
+is(TakayasuSyndrome,Class):1.0
+SubClassOf(TakayasuSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(TakayasuSyndrome,hasSyndromeElement some):1.0
+SubClassOf(TakayasuSyndrome,(InflammationLesion and (hasChronicity some ChronicFeature) and (hasDiseaseCourseStage some):1.0
+SubClassOf(TakayasuSyndrome,(DiseaseCourseStage and (hasAbsoluteState some progressiveDiseaseCourseState))) and (hasSpecificLocation some AorticArch))):1.0
+is(TaySachsDisease,Class):1.0
+SubClassOf(TaySachsDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(TaySachsDisease,hasAcquisitionMode some):1.0
+SubClassOf(TaySachsDisease,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(TaySachsDisease,hasSyndromeElement some):1.0
+SubClassOf(TaySachsDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(TaySachsDisease,(CatabolicProcess and (actsSpecificallyOn some Ganglioside))) and (isSpecificFunctionOf some BetaHexosaminidase)),):1.0
+SubClassOf(TaySachsDisease,hasSyndromeElement some):1.0
+SubClassOf(TaySachsDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Ganglioside)),):1.0
+SubClassOf(TaySachsDisease,isConsequenceOf some):1.0
+SubClassOf(TaySachsDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(TaySachsDisease,(GeneTranscription and (hasSpecificImmediateConsequence some BetaHexosaminidase))))):1.0
+is(TaylorMethod,Class):1.0
+SubClassOf(TaylorMethod,NAMEDEponymousMethod):1.0
+is(TelangiectasiaLesion,Class):1.0
+is(TemporalPattern,Class):1.0
+is(TerminalBronchiole,Class):1.0
+is(TerminalIllness,Class):1.0
+SubClassOf(TerminalIllness,NAMEDUnmodelledPathology):1.0
+is(TerminallyIll,Class):1.0
+SubClassOf(TerminallyIll,NAMEDUnmodelledPathology):1.0
+is(ThelarcheProcess,Class):1.0
+SubClassOf(ThelarcheProcess,NAMEDDevelopmentalProcess):1.0
+is(Thermodynamics,Class):1.0
+SubClassOf(Thermodynamics,NAMEDPhysicalProcess):1.0
+is(ThiamineDeficientNutrition,Class):1.0
+is(ThierschMethod,Class):1.0
+SubClassOf(ThierschMethod,NAMEDEponymousMethod):1.0
+is(Thrombophlebitis,Class):1.0
+is(ThrombophlebitisMigrans,Class):1.0
+SubClassOf(ThrombophlebitisMigrans,NAMEDSystemicDisease):1.0
+is(ThrombosisProcess,Class):1.0
+SubClassOf(ThrombosisProcess,NAMEDPathologicalProcess):1.0
+is(ThrombusLesion,Class):1.0
+is(ThyroidGland,Class):1.0
+is(Thyroiditis,Class):1.0
+is(Tic,Class):1.0
+is(Tinnitus,Class):1.0
+is(TomkinsMethod,Class):1.0
+SubClassOf(TomkinsMethod,NAMEDEponymousMethod):1.0
+is(TorsionDystonia,Class):1.0
+SubClassOf(TorsionDystonia,NAMEDSystemicDisease,):1.0
+SubClassOf(TorsionDystonia,hasSyndromeElement some StriatedMuscleDystonia):1.0
+is(ToupetMethod,Class):1.0
+SubClassOf(ToupetMethod,NAMEDEponymousMethod):1.0
+is(ToxicEpidermalNecrolysis,Class):1.0
+SubClassOf(ToxicEpidermalNecrolysis,EpidermalNecrolysis):1.0
+is(ToxicMegacolon,Class):1.0
+SubClassOf(ToxicMegacolon,Megacolon):1.0
+is(ToxicPsychosis,Class):1.0
+SubClassOf(ToxicPsychosis,Psychosis):1.0
+is(TransientHypertension,Class):1.0
+SubClassOf(TransientHypertension,Hypertension):1.0
+is(TransientHypotension,Class):1.0
+SubClassOf(TransientHypotension,Hypotension):1.0
+is(TransientMyopia,Class):1.0
+SubClassOf(TransientMyopia,Myopia):1.0
+is(TransplantRejection,Class):1.0
+SubClassOf(TransplantRejection,NAMEDUnmodelledPathology):1.0
+is(Transport,Class):1.0
+is(TraumaticProcess,Class):1.0
+SubClassOf(TraumaticProcess,AcquiredPathologicalProcess):1.0
+is(TreacherCollinsSyndrome,Class):1.0
+SubClassOf(TreacherCollinsSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(TreacherCollinsSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(TreacherCollinsSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(TreatmentTractability,Class):1.0
+is(TreponemaPallidum,Class):1.0
+is(Trisomy10Syndrome,Class):1.0
+SubClassOf(Trisomy10Syndrome,NAMEDSyndrome):1.0
+is(Trisomy11Syndrome,Class):1.0
+SubClassOf(Trisomy11Syndrome,NAMEDSyndrome):1.0
+is(Trisomy12Syndrome,Class):1.0
+SubClassOf(Trisomy12Syndrome,NAMEDSyndrome):1.0
+is(Trisomy22Syndrome,Class):1.0
+SubClassOf(Trisomy22Syndrome,NAMEDSyndrome):1.0
+is(Trisomy6Syndrome,Class):1.0
+SubClassOf(Trisomy6Syndrome,NAMEDSyndrome):1.0
+is(Trisomy7Syndrome,Class):1.0
+SubClassOf(Trisomy7Syndrome,NAMEDSyndrome):1.0
+is(Trisomy8Syndrome,Class):1.0
+SubClassOf(Trisomy8Syndrome,NAMEDSyndrome):1.0
+is(Trisomy9Syndrome,Class):1.0
+SubClassOf(Trisomy9Syndrome,NAMEDSyndrome):1.0
+is(Tuberculosis,Class):1.0
+SubClassOf(Tuberculosis,NAMEDDisorder,):1.0
+SubClassOf(Tuberculosis,hasSyndromeElement some):1.0
+SubClassOf(Tuberculosis,(Phenomenon and (LocativeAttribute some MycobacteriumTuberculosisHominis)),):1.0
+SubClassOf(Tuberculosis,isConsequenceOf some):1.0
+SubClassOf(Tuberculosis,(InfectionLesion and (isSpecificConsequenceOf some MycobacteriumTuberculosisHominis))):1.0
+is(TuberousSclerosis,Class):1.0
+SubClassOf(TuberousSclerosis,NAMEDSyndrome,):1.0
+SubClassOf(TuberousSclerosis,hasAcquisitionMode some):1.0
+SubClassOf(TuberousSclerosis,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(TumourFlare,Class):1.0
+SubClassOf(TumourFlare,NAMEDUnmodelledPathology):1.0
+is(TurnerSyndrome,Class):1.0
+SubClassOf(TurnerSyndrome,NAMEDSyndrome):1.0
+is(Type7Glycogenosis,Class):1.0
+SubClassOf(Type7Glycogenosis,NAMEDSystemicDisease,):1.0
+SubClassOf(Type7Glycogenosis,hasSyndromeElement some):1.0
+SubClassOf(Type7Glycogenosis,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(Type7Glycogenosis,(CatabolicProcess and (actsSpecificallyOn some Glycogen))) and (isSpecificFunctionOf some Phosphofructokinase)),):1.0
+SubClassOf(Type7Glycogenosis,hasSyndromeElement some):1.0
+SubClassOf(Type7Glycogenosis,(LysosomalAccumulation and (isSpecificallyMadeOf some Glycogen)),):1.0
+SubClassOf(Type7Glycogenosis,isConsequenceOf some):1.0
+SubClassOf(Type7Glycogenosis,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(Type7Glycogenosis,(GeneTranscription and (hasSpecificImmediateConsequence some Phosphofructokinase))))):1.0
+is(TypeIDiabetesMellitus,Class):1.0
+SubClassOf(TypeIDiabetesMellitus,DiabetesMellitus):1.0
+is(TypeIIDiabetesMellitus,Class):1.0
+SubClassOf(TypeIIDiabetesMellitus,DiabetesMellitus):1.0
+is(TypeOneGaucherDisease,Class):1.0
+SubClassOf(TypeOneGaucherDisease,GaucherDisease):1.0
+is(TypeThreeGaucherDisease,Class):1.0
+SubClassOf(TypeThreeGaucherDisease,GaucherDisease):1.0
+is(TypeTwoGaucherDisease,Class):1.0
+SubClassOf(TypeTwoGaucherDisease,GaucherDisease):1.0
+is(UlceratingLesion,Class):1.0
+is(UlceratingOrErosionProcess,Class):1.0
+SubClassOf(UlceratingOrErosionProcess,AcquiredPathologicalProcess):1.0
+is(UlceratingProcess,Class):1.0
+SubClassOf(UlceratingProcess,UlceratingOrErosionProcess):1.0
+is(UlcerativeColitis,Class):1.0
+SubClassOf(UlcerativeColitis,NAMEDSystemicDisease,):1.0
+SubClassOf(UlcerativeColitis,hasSyndromeElement some Diarrhoea,):1.0
+SubClassOf(UlcerativeColitis,hasSyndromeElement some):1.0
+SubClassOf(UlcerativeColitis,(InflammationLesion and (hasSpecificLocation some Colon)),):1.0
+SubClassOf(UlcerativeColitis,hasSyndromeElement some):1.0
+SubClassOf(UlcerativeColitis,(InflammationLesion and (hasSpecificLocation some Rectum)),):1.0
+SubClassOf(UlcerativeColitis,hasSyndromeElement some):1.0
+SubClassOf(UlcerativeColitis,(UlceratingLesion and (hasSpecificLocation some Colon)),):1.0
+SubClassOf(UlcerativeColitis,hasSyndromeElement some):1.0
+SubClassOf(UlcerativeColitis,(UlceratingLesion and (hasSpecificLocation some Rectum))):1.0
+is(UllrichNoonanSyndrome,Class):1.0
+SubClassOf(UllrichNoonanSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(UllrichNoonanSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(UllrichNoonanSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(UnambiguousGonad,Class):1.0
+is(UncontrolledPsoriasis,Class):1.0
+SubClassOf(UncontrolledPsoriasis,Psoriasis):1.0
+is(UndescendedTestis,Class):1.0
+is(UndifferentiatedConnectiveTissueDisease,Class):1.0
+SubClassOf(UndifferentiatedConnectiveTissueDisease,NAMEDUnmodelledPathology,):1.0
+SubClassOf(UndifferentiatedConnectiveTissueDisease,hasAssertedDiseaseClass some ConnectiveTissueDiseaseClass):1.0
+is(UnstableHypertension,Class):1.0
+SubClassOf(UnstableHypertension,Hypertension):1.0
+is(UpperRespiratoryTract,Class):1.0
+is(UraemicAcidosis,Class):1.0
+SubClassOf(UraemicAcidosis,NAMEDMetabolicPathologicalProcess):1.0
+is(Ureterocoele,Class):1.0
+is(UrinaryStone,Class):1.0
+is(Urolithiasis,Class):1.0
+SubClassOf(Urolithiasis,NAMEDSystemicDisease,):1.0
+SubClassOf(Urolithiasis,isConsequenceOf some UrinaryStone):1.0
+is(Uveitis,Class):1.0
+is(Vagotonia,Class):1.0
+SubClassOf(Vagotonia,NAMEDUnmodelledPathology):1.0
+is(VanishingLungSyndrome,Class):1.0
+SubClassOf(VanishingLungSyndrome,NAMEDSyndrome):1.0
+is(VaricoseVein,Class):1.0
+is(VariegatePorphyria,Class):1.0
+SubClassOf(VariegatePorphyria,Porphyria):1.0
+is(VascularPerfusion,Class):1.0
+SubClassOf(VascularPerfusion,NAMEDCirculatoryProcess):1.0
+is(Vascularisation,Class):1.0
+SubClassOf(Vascularisation,NAMEDCirculatoryProcess):1.0
+is(VasomotorFunction,Class):1.0
+SubClassOf(VasomotorFunction,NAMEDCirculatoryProcess):1.0
+is(VasomotorProcess,Class):1.0
+SubClassOf(VasomotorProcess,BodyProcess):1.0
+is(VenousStructure,Class):1.0
+is(Ventilating,Class):1.0
+SubClassOf(Ventilating,NAMEDRespiratoryProcess):1.0
+is(VentricularFibrillation,Class):1.0
+is(VentricularMyocardialConductionDelay,Class):1.0
+is(Vertigo,Class):1.0
+is(VesicleFormationProcess,Class):1.0
+SubClassOf(VesicleFormationProcess,MechanicalLesionProcess):1.0
+is(VesicularSkinRash,Class):1.0
+is(ViralInfectionLesion,Class):1.0
+is(Visceromegaly,Class):1.0
+is(VisualFieldDefect,Class):1.0
+is(VitaminB1DeficiencyState,Class):1.0
+is(VitaminCDeficiencyState,Class):1.0
+is(VitaminDDeficiencyState,Class):1.0
+is(VitaminDResistantRickets,Class):1.0
+SubClassOf(VitaminDResistantRickets,NAMEDSyndrome,):1.0
+SubClassOf(VitaminDResistantRickets,hasAcquisitionMode some):1.0
+SubClassOf(VitaminDResistantRickets,(AcquisitionMode and (hasAbsoluteState some XLinkedDominantGeneInherited))):1.0
+is(Vomiting,Class):1.0
+SubClassOf(Vomiting,NAMEDPathologicalProcess):1.0
+is(VomitingSign,Class):1.0
+EquivalentTo(VomitingSign,Vomiting and (playsConsultationRole some SignRole)):1.0
+SubClassOf(VomitingSign,Vomiting):1.0
+is(VomitingSymptom,Class):1.0
+EquivalentTo(VomitingSymptom,Vomiting and (playsConsultationRole some NonSpecificSymptomRole)):1.0
+SubClassOf(VomitingSymptom,Vomiting):1.0
+DisjointWith(VomitingSymptom,Vomiting and (playsConsultationRole some NonSpecificSymptomRole)):1.0
+is(Vomitus,Class):1.0
+is(VonGierkesDisease,Class):1.0
+SubClassOf(VonGierkesDisease,NAMEDSystemicDisease,):1.0
+SubClassOf(VonGierkesDisease,hasAcquisitionMode some):1.0
+SubClassOf(VonGierkesDisease,(AcquisitionMode and (hasAbsoluteState some autosomalRecessiveGeneInherited)),):1.0
+SubClassOf(VonGierkesDisease,hasSyndromeElement some):1.0
+SubClassOf(VonGierkesDisease,(IneffectiveCatalysis and (actsSpecificallyOn some):1.0
+SubClassOf(VonGierkesDisease,(CatabolicProcess and (actsSpecificallyOn some Glycogen))) and (isSpecificFunctionOf some GlucoseSixPhosphatase)),):1.0
+SubClassOf(VonGierkesDisease,hasSyndromeElement some):1.0
+SubClassOf(VonGierkesDisease,(LysosomalAccumulation and (isSpecificallyMadeOf some Glycogen)),):1.0
+SubClassOf(VonGierkesDisease,isConsequenceOf some):1.0
+SubClassOf(VonGierkesDisease,(DefectiveGene and (isActedOnSpecificallyBy some):1.0
+SubClassOf(VonGierkesDisease,(GeneTranscription and (hasSpecificImmediateConsequence some GlucoseSixPhosphatase))))):1.0
+is(VonKraskeMethod,Class):1.0
+SubClassOf(VonKraskeMethod,NAMEDEponymousMethod):1.0
+is(VonWillebrandDisease,Class):1.0
+SubClassOf(VonWillebrandDisease,NAMEDSyndrome,):1.0
+SubClassOf(VonWillebrandDisease,hasAcquisitionMode some):1.0
+SubClassOf(VonWillebrandDisease,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(VosschulteMethod,Class):1.0
+SubClassOf(VosschulteMethod,NAMEDEponymousMethod):1.0
+is(WaardenburgSyndrome,Class):1.0
+SubClassOf(WaardenburgSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(WaardenburgSyndrome,hasAcquisitionMode some):1.0
+SubClassOf(WaardenburgSyndrome,(AcquisitionMode and (hasAbsoluteState some autosomalDominantGeneInherited))):1.0
+is(Wakefulness,Class):1.0
+is(WakingProcess,Class):1.0
+SubClassOf(WakingProcess,NAMEDSleepProcess):1.0
+is(WaldhausenMethod,Class):1.0
+SubClassOf(WaldhausenMethod,NAMEDEponymousMethod):1.0
+is(WalkingWithFestinatingGait,Class):1.0
+is(WastingDisease,Class):1.0
+SubClassOf(WastingDisease,NAMEDUnmodelledPathology):1.0
+is(WaterIntoxication,Class):1.0
+SubClassOf(WaterIntoxication,NAMEDMetabolicPathologicalProcess):1.0
+is(WeaknessOfCraniallyInnervatedMuscle,Class):1.0
+is(WegenerGranolomatosis,Class):1.0
+SubClassOf(WegenerGranolomatosis,NAMEDSystemicDisease,):1.0
+SubClassOf(WegenerGranolomatosis,hasSyndromeElement some NasalObstruction,):1.0
+SubClassOf(WegenerGranolomatosis,hasSyndromeElement some Rhinorrhoea,):1.0
+SubClassOf(WegenerGranolomatosis,hasSyndromeElement some):1.0
+SubClassOf(WegenerGranolomatosis,(GranulomaLesion and (hasSpecificLocation some UpperRespiratoryTract)),):1.0
+SubClassOf(WegenerGranolomatosis,hasSyndromeElement some):1.0
+SubClassOf(WegenerGranolomatosis,(InflammationLesion and (hasSpecificLocation some SmallBloodVessel)),):1.0
+SubClassOf(WegenerGranolomatosis,hasSyndromeElement some):1.0
+SubClassOf(WegenerGranolomatosis,(NecrosisLesion and (hasLocation some UpperRespiratoryTract)),):1.0
+SubClassOf(WegenerGranolomatosis,hasSyndromeElement some):1.0
+SubClassOf(WegenerGranolomatosis,(UlceratingLesion and (hasLocation some UpperRespiratoryTract))):1.0
+is(WeightGain,Class):1.0
+is(WeightLoss,Class):1.0
+is(WernickeSyndrome,Class):1.0
+SubClassOf(WernickeSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(WernickeSyndrome,hasSyndromeElement some Ataxia,):1.0
+SubClassOf(WernickeSyndrome,hasSyndromeElement some MuscleTremor,):1.0
+SubClassOf(WernickeSyndrome,hasSyndromeElement some Nystagmus,):1.0
+SubClassOf(WernickeSyndrome,isConsequenceOf some VitaminB1DeficiencyState):1.0
+is(WhereIncreasedMuscularActivityOfUrinaryOrGastroIntestinalTractHarmful,Class):1.0
+SubClassOf(WhereIncreasedMuscularActivityOfUrinaryOrGastroIntestinalTractHarmful,NAMEDUnmodelledPathology):1.0
+is(WhiteheadMethod,Class):1.0
+SubClassOf(WhiteheadMethod,NAMEDEponymousMethod):1.0
+is(WholemealProduct,Class):1.0
+SubClassOf(WholemealProduct,PlantDerivative):1.0
+is(WidespreadScleroderma,Class):1.0
+SubClassOf(WidespreadScleroderma,Scleroderma):1.0
+is(WilliamsMethod,Class):1.0
+SubClassOf(WilliamsMethod,NAMEDEponymousMethod):1.0
+is(WilsonsDisease,Class):1.0
+SubClassOf(WilsonsDisease,NAMEDSystemicDisease):1.0
+is(WithdrawalSyndrome,Class):1.0
+SubClassOf(WithdrawalSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(WithdrawalSyndrome,hasSyndromeElement some Anxiety,):1.0
+SubClassOf(WithdrawalSyndrome,hasSyndromeElement some Displeasure,):1.0
+SubClassOf(WithdrawalSyndrome,hasSyndromeElement some Irritability,):1.0
+SubClassOf(WithdrawalSyndrome,hasSyndromeElement some MentalAgitation,):1.0
+SubClassOf(WithdrawalSyndrome,hasSyndromeElement some MentalExcitation,):1.0
+SubClassOf(WithdrawalSyndrome,isConsequenceOf some Addiction):1.0
+is(WithdrawnState,Class):1.0
+SubClassOf(WithdrawnState,NAMEDUnmodelledPathology):1.0
+is(WolfParkinsonWhiteSyndrome,Class):1.0
+SubClassOf(WolfParkinsonWhiteSyndrome,NAMEDSyndrome,):1.0
+SubClassOf(WolfParkinsonWhiteSyndrome,hasSyndromeElement some AcessoryAtrioventricularConductionWithPrematureVentricularExcitation,):1.0
+SubClassOf(WolfParkinsonWhiteSyndrome,hasSyndromeElement some ParoxysmalTachycardia):1.0
+is(WorseningHypertension,Class):1.0
+SubClassOf(WorseningHypertension,Hypertension):1.0
+is(WorseningOfPsoriasis,Class):1.0
+SubClassOf(WorseningOfPsoriasis,Psoriasis):1.0
+is(XLinkedDominantGeneInherited,Class):1.0
+is(XLinkedRecessiveGeneInherited,Class):1.0
+is(Xerophthalmia,Class):1.0
+is(ZollingerEllisonSyndrome,Class):1.0
+SubClassOf(ZollingerEllisonSyndrome,NAMEDDisorder,):1.0
+SubClassOf(ZollingerEllisonSyndrome,hasSyndromeElement some):1.0
+SubClassOf(ZollingerEllisonSyndrome,(GastricAcidSecretion and (hasProcessActivity some increasedActivityLevel)),):1.0
+SubClassOf(ZollingerEllisonSyndrome,isConsequenceOf some):1.0
+SubClassOf(ZollingerEllisonSyndrome,(NeoplasticProcess and (actsSpecificallyOn some IsletCell))):1.0
+is(autosomalDominantGeneInherited,Class):1.0
+is(autosomalRecessiveGeneInherited,Class):1.0
+is(chronic,Class):1.0
+is(confluentDiffuseDistribution,Class):1.0
+is(congenital,Class):1.0
+is(cyclical,Class):1.0
+is(depressedActivity,Class):1.0
+is(dominantGeneInherited,Class):1.0
+is(geneticallyInherited,Class):1.0
+is(highActivityLevel,Class):1.0
+is(inactive,Class):1.0
+is(increasedActivityLevel,Class):1.0
+is(ineffective,Class):1.0
+is(intermittent,Class):1.0
+is(lengthened,Class):1.0
+is(lowActivityLevel,Class):1.0
+is(n2,Class):1.0
+is(normal,Class):1.0
+is(pathological,Class):1.0
+SubClassOf(pathological,PathologicalOrPhysiologicalStatus):1.0
+is(perYear,Class):1.0
+is(physiological,Class):1.0
+is(progressiveDiseaseCourseState,Class):1.0
+is(regularlyRepeating,Class):1.0
+is(repeating,Class):1.0
+is(subAcute,Class):1.0
+is(treatmentRefractory,Class):1.0
+is(unstable,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0

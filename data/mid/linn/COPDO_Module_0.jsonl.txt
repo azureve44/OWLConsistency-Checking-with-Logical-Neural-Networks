@@ -1,0 +1,14 @@
+predicate(Brain_Region,is,Class).
+predicate(Brainstem,is,Class).
+predicate(Cerebellum,is,Class).
+predicate(Cerebrospinal_Fluid,is,Class).
+predicate(Cerebrum,is,Class).
+predicate(Cerebrum,SubClassOf,Brain_Region).
+predicate(Left_Cerebrum,is,Class).
+predicate(Left_Cerebrum,SubClassOf,Cerebrum).
+predicate(Right_Cerebrum,is,Class).
+predicate(Right_Cerebrum,SubClassOf,Cerebrum).
+predicate(White_Matter,is,Class).
+predicate(White_Matter,SubClassOf,Cerebrum).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,Brainstem,Cerebellum,Cerebrospinal_Fluid,Cerebrum).

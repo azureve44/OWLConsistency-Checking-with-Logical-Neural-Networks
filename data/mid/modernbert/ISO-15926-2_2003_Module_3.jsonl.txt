@@ -1,0 +1,64 @@
+www.w3.org/2000/01/-schema# is Datatype.
+normalizedString is Datatype.
+hasRecordCopyCreated is ObjectProperty.
+hasRecordCopyCreated Domain Thing.
+hasRecordCreated is ObjectProperty.
+hasRecordCreated Domain Thing.
+hasRecordCreator is ObjectProperty.
+hasRecordCreator Domain Thing.
+hasRecordLogicallyDeleted is ObjectProperty.
+hasRecordLogicallyDeleted Domain Thing.
+hasWhyDeleted is ObjectProperty.
+hasWhyDeleted Domain Thing.
+hasId is DataProperty.
+hasId Domain Thing.
+AbstractObject is Class.
+AbstractObject SubClassOf Thing.
+AbstractObject DisjointWith PossibleIndividual.
+Activity is Class.
+Activity SubClassOf PossibleIndividual.
+ActualIndividual is Class.
+ActualIndividual SubClassOf PossibleIndividual.
+ArrangedIndividual is Class.
+ArrangedIndividual SubClassOf PossibleIndividual.
+ClassOfInformationRepresentation is Class.
+Event is Class.
+Event SubClassOf PossibleIndividual.
+FunctionalPhysicalObject is Class.
+FunctionalPhysicalObject SubClassOf PhysicalObject.
+MaterializedPhysicalObject is Class.
+MaterializedPhysicalObject SubClassOf PhysicalObject.
+PeriodInTime is Class.
+PeriodInTime SubClassOf PossibleIndividual.
+PhysicalObject is Class.
+PhysicalObject SubClassOf PossibleIndividual.
+PointInTime is Class.
+PointInTime SubClassOf Event.
+PossibleIndividual is Class.
+PossibleIndividual SubClassOf Thing.
+PossibleIndividual DisjointWith AbstractObject.
+RepresentationOfGregorianDateAndUtcTime is Class.
+SpatialLocation is Class.
+SpatialLocation SubClassOf PhysicalObject.
+Stream is Class.
+Stream SubClassOf PhysicalObject.
+Thing is Class.
+Thing EquivalentTo AbstractObject or PossibleIndividual.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasRecordCopyCreated only RepresentationOfGregorianDateAndUtcTime,.
+Thing, is hasRecordCreated only RepresentationOfGregorianDateAndUtcTime,.
+Thing, is hasRecordCreator only PossibleIndividual,.
+Thing, is hasRecordLogicallyDeleted only RepresentationOfGregorianDateAndUtcTime,.
+Thing, is hasWhyDeleted only ClassOfInformationRepresentation,.
+Thing, is hasRecordCopyCreated max 1 www.w3.org/2002/07/#.
+Thing, is hasRecordCreated max 1 www.w3.org/2002/07/#.
+Thing, is hasRecordCreator max 1 www.w3.org/2002/07/#.
+Thing, is hasRecordLogicallyDeleted max 1 www.w3.org/2002/07/#.
+Thing, is hasWhyDeleted max 1 www.w3.org/2002/07/#.
+Thing, is hasId only normalizedString,.
+Literal is hasId exactly 1 www.w3.org/2000/01/-schema#.
+WholeLifeIndividual is Class.
+WholeLifeIndividual SubClassOf PossibleIndividual.
+www.co-ode.org/ontologies/list.# is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.

@@ -1,0 +1,43 @@
+predicate(causes,is,ObjectProperty).
+predicate(causes,Domain,AgitationCausativeFactor).
+predicate(causes,Range,AgitationInDementia).
+predicate(causes,InverseOf,isCausedBy).
+predicate(isAddressedToReduceAgitationBy,is,ObjectProperty).
+predicate(isAddressedToReduceAgitationBy,Domain,AgitationCausativeFactor).
+predicate(isAddressedToReduceAgitationBy,Range,NonpharmacologicalIntervention).
+predicate(isAddressedToReduceAgitationBy,InverseOf,reducesAgitationCausedBy).
+predicate(isCausedBy,is,ObjectProperty).
+predicate(isCausedBy,InverseOf,causes).
+predicate(reducesAgitationCausedBy,is,ObjectProperty).
+predicate(reducesAgitationCausedBy,InverseOf,isAddressedToReduceAgitationBy).
+predicate(AgitationAssessmentTool,is,Class).
+predicate(AgitationCausativeFactor,is,Class).
+predicate(Thing,,is,www.w3.org/2002/07/#).
+predicate(Thing,,is,causes some AgitationInDementia,).
+predicate(Thing,,is,isAddressedToReduceAgitationBy some NonpharmacologicalIntervention,).
+predicate(Thing,,is,isAddressedToReduceAgitationBy only CommunicationTechnique).
+predicate(AgitationInDementia,is,Class).
+predicate(AgitationInDementia,SubClassOf,isCausedBy only AgitationAssessmentTool).
+predicate(AgitationManagementActivity,is,Class).
+predicate(AgitationManagementApproach,is,Class).
+predicate(BackgroundOfPersonWithDementia,is,Class).
+predicate(CommunicationTechnique,is,Class).
+predicate(CommunicationTechnique,DisjointWith,NonpharmacologicalIntervention).
+predicate(EffectOfAgitation,is,Class).
+predicate(EnvironmentalCausativeFactor,is,Class).
+predicate(EnvironmentalCausativeFactor,SubClassOf,AgitationCausativeFactor,).
+predicate(EnvironmentalCausativeFactor,SubClassOf,causes only AgitationAssessmentTool).
+predicate(FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,is,Class).
+predicate(FeatureOfAgitation,is,Class).
+predicate(InterpersonalCausativeFactor,is,Class).
+predicate(InterpersonalCausativeFactor,SubClassOf,AgitationCausativeFactor).
+predicate(IntrapersonalCausativeFactor,is,Class).
+predicate(IntrapersonalCausativeFactor,SubClassOf,AgitationCausativeFactor).
+predicate(NonpharmacologicalIntervention,is,Class).
+predicate(NonpharmacologicalIntervention,DisjointWith,CommunicationTechnique).
+predicate(Person,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,AgitationAssessmentTool,AgitationCausativeFactor,AgitationInDementia,AgitationManagementActivity,AgitationManagementApproach,BackgroundOfPersonWithDementia,CommunicationTechnique,EffectOfAgitation,FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,FeatureOfAgitation,Person).
+predicate(www.w3.org/2002/07/#,EquivalentClasses,AgitationAssessmentTool,AgitationCausativeFactor,AgitationInDementia,AgitationManagementActivity,AgitationManagementApproach,BackgroundOfPersonWithDementia,CommunicationTechnique,EffectOfAgitation,FactorAffectingImplementationOfNonpharmacologicalInterventionToAgitation,FeatureOfAgitation,Person).
+predicate(causes some AgitationInDementia,is,Class).
+predicate(causes some AgitationInDementia,SubClassOf,InterpersonalCausativeFactor).

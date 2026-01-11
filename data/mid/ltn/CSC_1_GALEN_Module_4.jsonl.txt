@@ -1,0 +1,3153 @@
+is(InverseContainmentAttribute,ObjectProperty):1.0
+is(IsDivisionOf,ObjectProperty):1.0
+is(LocativeAttribute,ObjectProperty):1.0
+is(StatusAttribute,ObjectProperty):1.0
+is(actsOn,ObjectProperty):1.0
+is(actsSpecificallyOn,ObjectProperty):1.0
+is(boundsSpace,ObjectProperty):1.0
+is(hasAbnormalityStatus,ObjectProperty):1.0
+is(hasAbsoluteState,ObjectProperty):1.0
+is(hasAcquisitionMode,ObjectProperty):1.0
+is(hasCausalLinkTo,ObjectProperty):1.0
+is(hasCentralPeripheralSelector,ObjectProperty):1.0
+is(hasChronicity,ObjectProperty):1.0
+is(hasCompleteness,ObjectProperty):1.0
+is(hasConsequence,ObjectProperty):1.0
+is(hasCountability,ObjectProperty):1.0
+is(hasDimension,ObjectProperty):1.0
+is(hasEctopicSupernumeraryStatus,ObjectProperty):1.0
+is(hasEffectiveness,ObjectProperty):1.0
+is(hasFeature,ObjectProperty):1.0
+is(hasFunction,ObjectProperty):1.0
+is(hasInnerOuterSelector,ObjectProperty):1.0
+is(hasIntrinsicAbnormalityStatus,ObjectProperty):1.0
+is(hasIntrinsicPathologicalStatus,ObjectProperty):1.0
+is(hasLayer,ObjectProperty):1.0
+is(hasLeftRightSelector,ObjectProperty):1.0
+is(hasLocation,ObjectProperty):1.0
+is(hasMagnitude,ObjectProperty):1.0
+is(hasMalignancy,ObjectProperty):1.0
+is(hasOverlappingStatus,ObjectProperty):1.0
+is(hasPathologicalStatus,ObjectProperty):1.0
+is(hasPhenotypicalSex,ObjectProperty):1.0
+is(hasPresenceAbsence,ObjectProperty):1.0
+is(hasProcessActivity,ObjectProperty):1.0
+is(hasProximity,ObjectProperty):1.0
+is(hasQuantity,ObjectProperty):1.0
+is(hasSensitivity,ObjectProperty):1.0
+is(hasShape,ObjectProperty):1.0
+is(hasShapeAnalagousTo,ObjectProperty):1.0
+is(hasSize,ObjectProperty):1.0
+is(hasSpecificConsequence,ObjectProperty):1.0
+is(hasSpecificFunction,ObjectProperty):1.0
+is(hasSpecificLayer,ObjectProperty):1.0
+is(hasSpecificLocation,ObjectProperty):1.0
+is(hasStructuralComponent,ObjectProperty):1.0
+is(hasSubprocess,ObjectProperty):1.0
+is(hasSuperiorInferiorSelector,ObjectProperty):1.0
+is(hasSurfaceDivision,ObjectProperty):1.0
+is(hasSurfaceVisibility,ObjectProperty):1.0
+is(hasSyndromeElement,ObjectProperty):1.0
+is(hasTopology,ObjectProperty):1.0
+is(hasTransparency,ObjectProperty):1.0
+is(hasUniqueAssociatedProcess,ObjectProperty):1.0
+is(isActedOnBy,ObjectProperty):1.0
+is(isBetaPartitiveConnectionOf,ObjectProperty):1.0
+is(isBranchOf,ObjectProperty):1.0
+is(isCausallyLinkedTo,ObjectProperty):1.0
+is(isConsequenceOf,ObjectProperty):1.0
+is(isDiameterOf,ObjectProperty):1.0
+is(isExistenceOf,ObjectProperty):1.0
+is(isFunctionOf,ObjectProperty):1.0
+is(isFunctionalComponentOf,ObjectProperty):1.0
+is(isLayerOf,ObjectProperty):1.0
+is(isLinearDivisionOf,ObjectProperty):1.0
+is(isLocationOf,ObjectProperty):1.0
+is(isMadeOf,ObjectProperty):1.0
+is(isPairedOrUnpaired,ObjectProperty):1.0
+is(isPresenceAbsenceOf,ObjectProperty):1.0
+is(isServedBy,ObjectProperty):1.0
+is(isSolidDivisionOf,ObjectProperty):1.0
+is(isSpecificLayerOf,ObjectProperty):1.0
+is(isSpecificSolidDivisionOf,ObjectProperty):1.0
+is(isSpecificStructuralComponentOf,ObjectProperty):1.0
+is(isSpecificallyMadeOf,ObjectProperty):1.0
+is(isSpecificallyNonPartitivelyContainedIn,ObjectProperty):1.0
+is(isStructuralComponentOf,ObjectProperty):1.0
+is(isSurfaceDivisionOf,ObjectProperty):1.0
+is(isWithReferenceTo,ObjectProperty):1.0
+is(nonPartitivelyContains,ObjectProperty):1.0
+is(playsConsultationRole,ObjectProperty):1.0
+is(playsPhysiologicalRole,ObjectProperty):1.0
+is(serves,ObjectProperty):1.0
+is(specificallyNonPartitivelyContains,ObjectProperty):1.0
+is(Abdomen,Class):1.0
+is(AbdominalCavity,Class):1.0
+is(AbdominalSmoothMuscleStructure,Class):1.0
+EquivalentTo(AbdominalSmoothMuscleStructure,BodyStructure and (IsDivisionOf some AnatomyWithinAbdominalCavity) and (isMadeOf some SmoothMuscleTissue)):1.0
+SubClassOf(AbdominalSmoothMuscleStructure,BodyStructure):1.0
+is(AbdominalSurfaceRegion,Class):1.0
+EquivalentTo(AbdominalSurfaceRegion,BodyStructure and (isSurfaceDivisionOf some Abdomen)):1.0
+SubClassOf(AbdominalSurfaceRegion,BodyStructure):1.0
+is(AbdominalWall,Class):1.0
+SubClassOf(AbdominalWall,BodyWall):1.0
+is(AbnormalArterialStructure,Class):1.0
+EquivalentTo(AbnormalArterialStructure,BodyStructure and (IsDivisionOf some VascularSystem) and (hasAbnormalityStatus some nonNormal) and (playsPhysiologicalRole some AfferentRole)):1.0
+SubClassOf(AbnormalArterialStructure,BodyStructure):1.0
+is(AbnormalBodyStructure,Class):1.0
+EquivalentTo(AbnormalBodyStructure,BodyStructure and (hasAbnormalityStatus some abnormal)):1.0
+SubClassOf(AbnormalBodyStructure,BodyStructure):1.0
+is(AbnormalCyst,Class):1.0
+SubClassOf(AbnormalCyst,Cyst):1.0
+is(AbnormalVascularStructure,Class):1.0
+EquivalentTo(AbnormalVascularStructure,BodyStructure and (IsDivisionOf some VascularSystem) and (hasAbnormalityStatus some nonNormal)):1.0
+SubClassOf(AbnormalVascularStructure,BodyStructure):1.0
+is(AbnormalVenousStructure,Class):1.0
+EquivalentTo(AbnormalVenousStructure,BodyStructure and (IsDivisionOf some VascularSystem) and (hasAbnormalityStatus some nonNormal) and (playsPhysiologicalRole some EfferentRole)):1.0
+SubClassOf(AbnormalVenousStructure,BodyStructure):1.0
+is(AbnormalVentricularArterialConnection,Class):1.0
+SubClassOf(AbnormalVentricularArterialConnection,BodyConnection):1.0
+is(AbsoluteShapeState,Class):1.0
+is(AbstractCavity,Class):1.0
+is(AbstractStatus,Class):1.0
+is(Accumulating,Class):1.0
+is(Accumulation,Class):1.0
+EquivalentTo(Accumulation,BodyStructure and (hasUniqueAssociatedProcess some Accumulating)):1.0
+SubClassOf(Accumulation,BodyStructure):1.0
+is(AcquisitionMode,Class):1.0
+is(ActiveDuodenalUlceration,Class):1.0
+EquivalentTo(ActiveDuodenalUlceration,BodyStructure and (hasPathologicalStatus some pathological) and (hasSpecificLocation some Duodenum) and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(ActiveDuodenalUlceration,(UlceratingProcess and (hasProcessActivity some activeActivityLevel)))):1.0
+SubClassOf(ActiveDuodenalUlceration,BodyStructure):1.0
+is(ActiveGastricUlceration,Class):1.0
+EquivalentTo(ActiveGastricUlceration,BodyStructure and (hasPathologicalStatus some pathological) and (hasSpecificLocation some Stomach) and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(ActiveGastricUlceration,(UlceratingProcess and (hasProcessActivity some activeActivityLevel)))):1.0
+SubClassOf(ActiveGastricUlceration,BodyStructure):1.0
+is(ActuallyHollowBodyStructure,Class):1.0
+EquivalentTo(ActuallyHollowBodyStructure,BodyStructure and (hasTopology some):1.0
+EquivalentTo(ActuallyHollowBodyStructure,(Topology and (hasAbsoluteState some actuallyHollow)))):1.0
+SubClassOf(ActuallyHollowBodyStructure,BodyStructure):1.0
+is(Adenocarcinoma,Class):1.0
+EquivalentTo(Adenocarcinoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Adenocarcinoma,(MalignantNeoplasticProcess and (actsSpecificallyOn some EpithelialOrSecretoryCell)))):1.0
+SubClassOf(Adenocarcinoma,BodyStructure):1.0
+is(AdenocarcinomaOfColon,Class):1.0
+EquivalentTo(AdenocarcinomaOfColon,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(AdenocarcinomaOfColon,(MalignantNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(AdenocarcinomaOfColon,(Adenocyte and (isSpecificStructuralComponentOf some Colon)))))):1.0
+SubClassOf(AdenocarcinomaOfColon,BodyStructure):1.0
+is(Adenocyte,Class):1.0
+is(Adenoma,Class):1.0
+EquivalentTo(Adenoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Adenoma,(BenignNeoplasticProcess and (actsSpecificallyOn some EpithelialOrSecretoryCell)))):1.0
+SubClassOf(Adenoma,BodyStructure):1.0
+is(AdenomaOfColon,Class):1.0
+EquivalentTo(AdenomaOfColon,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(AdenomaOfColon,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(AdenomaOfColon,(Adenocyte and (isSpecificStructuralComponentOf some Colon)))))):1.0
+SubClassOf(AdenomaOfColon,BodyStructure):1.0
+is(Adnexa,Class):1.0
+EquivalentTo(Adnexa,BodyStructure and (isSpecificallyMadeOf some AdnexalTissue)):1.0
+SubClassOf(Adnexa,BodyStructure,):1.0
+SubClassOf(Adnexa,hasSurfaceVisibility some internal):1.0
+is(AdnexalStructureOfOvary,Class):1.0
+EquivalentTo(AdnexalStructureOfOvary,BodyStructure and (isSpecificallyMadeOf some PeriovarianTissue)):1.0
+SubClassOf(AdnexalStructureOfOvary,BodyStructure,):1.0
+SubClassOf(AdnexalStructureOfOvary,isStructuralComponentOf some FemaleGenitoUrinarySystem):1.0
+is(AdnexalStructureOfTestis,Class):1.0
+EquivalentTo(AdnexalStructureOfTestis,BodyStructure and (isSpecificallyMadeOf some PeriTesticularTissue)):1.0
+SubClassOf(AdnexalStructureOfTestis,BodyStructure,):1.0
+SubClassOf(AdnexalStructureOfTestis,isStructuralComponentOf some MaleGenitoUrinarySystem):1.0
+is(AdnexalStructureOfUterus,Class):1.0
+EquivalentTo(AdnexalStructureOfUterus,BodyStructure and (isSpecificallyMadeOf some AdnexalTissueOfUterus)):1.0
+SubClassOf(AdnexalStructureOfUterus,BodyStructure,):1.0
+SubClassOf(AdnexalStructureOfUterus,isStructuralComponentOf some FemaleGenitoUrinarySystem):1.0
+is(AdnexalTissue,Class):1.0
+is(AdnexalTissueOfUterus,Class):1.0
+is(AdrenalAdenoma,Class):1.0
+EquivalentTo(AdrenalAdenoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(AdrenalAdenoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(AdrenalAdenoma,(Adenocyte and (isStructuralComponentOf some AdrenalGland)))))):1.0
+SubClassOf(AdrenalAdenoma,BodyStructure):1.0
+is(AdrenalCortex,Class):1.0
+is(AdrenalGland,Class):1.0
+is(AdrenalMedulla,Class):1.0
+is(AdrenalNeuroma,Class):1.0
+EquivalentTo(AdrenalNeuroma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(AdrenalNeuroma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(AdrenalNeuroma,(Neurone and (isStructuralComponentOf some AdrenalGland)))))):1.0
+SubClassOf(AdrenalNeuroma,BodyStructure):1.0
+is(AdrenalPhaeochromocytoma,Class):1.0
+EquivalentTo(AdrenalPhaeochromocytoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(AdrenalPhaeochromocytoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(AdrenalPhaeochromocytoma,(ChromaffinCell and (isSpecificStructuralComponentOf some AdrenalMedulla)))))):1.0
+SubClassOf(AdrenalPhaeochromocytoma,BodyStructure):1.0
+is(AdrenalTumour,Class):1.0
+EquivalentTo(AdrenalTumour,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(AdrenalTumour,(NeoplasticProcess and (LocativeAttribute some AdrenalGland)))):1.0
+SubClassOf(AdrenalTumour,BodyStructure):1.0
+is(AdrenocorticalAdenoma,Class):1.0
+EquivalentTo(AdrenocorticalAdenoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(AdrenocorticalAdenoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(AdrenocorticalAdenoma,(Adenocyte and (isStructuralComponentOf some AdrenalCortex)))))):1.0
+SubClassOf(AdrenocorticalAdenoma,BodyStructure):1.0
+is(AfferentRole,Class):1.0
+is(AgeState,Class):1.0
+SubClassOf(AgeState,OrganismState):1.0
+is(Agenesis,Class):1.0
+SubClassOf(Agenesis,Organogenesis):1.0
+is(Air,Class):1.0
+is(AirEmbolism,Class):1.0
+EquivalentTo(AirEmbolism,Air and (isActedOnBy some EmbolismProcess)):1.0
+SubClassOf(AirEmbolism,Air):1.0
+is(AliveOrDeadStatus,Class):1.0
+SubClassOf(AliveOrDeadStatus,OrganismStatus):1.0
+is(AlternativeRoute,Class):1.0
+SubClassOf(AlternativeRoute,BodyConnection):1.0
+is(AmbiguousGonad,Class):1.0
+SubClassOf(AmbiguousGonad,Gonad):1.0
+is(AmnioticMembrane,Class):1.0
+is(AnaesthesiaState,Class):1.0
+SubClassOf(AnaesthesiaState,OrganismState):1.0
+is(AnalFibroma,Class):1.0
+EquivalentTo(AnalFibroma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(AnalFibroma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(AnalFibroma,(Fibroblast and (isSpecificStructuralComponentOf some Anus)))))):1.0
+SubClassOf(AnalFibroma,BodyStructure):1.0
+is(AnalWall,Class):1.0
+SubClassOf(AnalWall,BodyWall):1.0
+is(AnastomosisStructure,Class):1.0
+SubClassOf(AnastomosisStructure,BodyConnection):1.0
+is(AnatomicalLayer,Class):1.0
+EquivalentTo(AnatomicalLayer,BodyStructure and (isLayerOf some BodyStructure)):1.0
+SubClassOf(AnatomicalLayer,BodyStructure):1.0
+is(AnatomicalShape,Class):1.0
+is(AnatomyInBodyCavity,Class):1.0
+EquivalentTo(AnatomyInBodyCavity,BodyStructure and (InverseContainmentAttribute some AbstractCavity)):1.0
+SubClassOf(AnatomyInBodyCavity,BodyStructure):1.0
+is(AnatomyOfBack,Class):1.0
+EquivalentTo(AnatomyOfBack,BodyStructure and (IsDivisionOf some Back)):1.0
+SubClassOf(AnatomyOfBack,BodyStructure):1.0
+is(AnatomyWithinAbdominalCavity,Class):1.0
+EquivalentTo(AnatomyWithinAbdominalCavity,BodyStructure and (InverseContainmentAttribute some AbdominalCavity)):1.0
+SubClassOf(AnatomyWithinAbdominalCavity,BodyStructure):1.0
+is(AnatomyWithinFemalePelvicCavity,Class):1.0
+EquivalentTo(AnatomyWithinFemalePelvicCavity,BodyStructure and (InverseContainmentAttribute some FemalePelvicCavity)):1.0
+SubClassOf(AnatomyWithinFemalePelvicCavity,BodyStructure):1.0
+is(AnatomyWithinMalePelvicCavity,Class):1.0
+EquivalentTo(AnatomyWithinMalePelvicCavity,BodyStructure and (InverseContainmentAttribute some MalePelvicCavity)):1.0
+SubClassOf(AnatomyWithinMalePelvicCavity,BodyStructure):1.0
+is(AnatomyWithinPelvicCavity,Class):1.0
+EquivalentTo(AnatomyWithinPelvicCavity,BodyStructure and (InverseContainmentAttribute some PelvicCavity)):1.0
+SubClassOf(AnatomyWithinPelvicCavity,BodyStructure):1.0
+is(AnatomyWithinThoracicCavity,Class):1.0
+EquivalentTo(AnatomyWithinThoracicCavity,BodyStructure and (InverseContainmentAttribute some ThoracicCavity)):1.0
+SubClassOf(AnatomyWithinThoracicCavity,BodyStructure):1.0
+is(Ankle,Class):1.0
+is(AnkleOedema,Class):1.0
+EquivalentTo(AnkleOedema,BodyStructure and (hasPathologicalStatus some pathological) and (hasSpecificLocation some Ankle) and (hasUniqueAssociatedProcess some OedemaProcess)):1.0
+SubClassOf(AnkleOedema,BodyStructure):1.0
+is(Anonymous-119,Class):1.0
+EquivalentTo(Anonymous-119,BodyStructure and (isConsequenceOf some):1.0
+EquivalentTo(Anonymous-119,(BodyProcess and (hasIntrinsicAbnormalityStatus some nonNormal)))):1.0
+SubClassOf(Anonymous-119,BodyStructure,):1.0
+SubClassOf(Anonymous-119,hasAbnormalityStatus some nonNormal):1.0
+is(Anonymous-12,Class):1.0
+EquivalentTo(Anonymous-12,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Anonymous-12,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(Anonymous-12,(TissueCell and (isStructuralComponentOf some ChemoreceptorSystem)))))):1.0
+SubClassOf(Anonymous-12,BodyStructure):1.0
+is(Anonymous-176,Class):1.0
+SubClassOf(Anonymous-176,BodyWall):1.0
+is(Anonymous-20,Class):1.0
+EquivalentTo(Anonymous-20,BodyStructure and (hasStructuralComponent some LymphoidTissue)):1.0
+SubClassOf(Anonymous-20,BodyStructure,):1.0
+SubClassOf(Anonymous-20,isStructuralComponentOf some LymphaticSystem):1.0
+is(Anonymous-21,Class):1.0
+EquivalentTo(Anonymous-21,BodyStructure and (isActedOnBy some OrganDisplacementProcess)):1.0
+SubClassOf(Anonymous-21,BodyStructure,):1.0
+SubClassOf(Anonymous-21,hasPathologicalStatus some pathological):1.0
+is(Anonymous-251,Class):1.0
+EquivalentTo(Anonymous-251,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Anonymous-251,(MalignantNeoplasticProcess and (actsSpecificallyOn some LymphoidCell)))):1.0
+SubClassOf(Anonymous-251,BodyStructure):1.0
+is(Anonymous-261,Class):1.0
+SubClassOf(Anonymous-261,BodyWall):1.0
+is(Anonymous-287,Class):1.0
+SubClassOf(Anonymous-287,BodyWall):1.0
+is(Anonymous-341,Class):1.0
+EquivalentTo(Anonymous-341,BodyStructure and (isActedOnBy some OrganDisplacementProcess)):1.0
+SubClassOf(Anonymous-341,BodyStructure,):1.0
+SubClassOf(Anonymous-341,hasAcquisitionMode some):1.0
+SubClassOf(Anonymous-341,(AcquisitionMode and (hasAbsoluteState some congenital))):1.0
+is(Anonymous-346,Class):1.0
+EquivalentTo(Anonymous-346,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Anonymous-346,(BenignNeoplasticProcess and (LocativeAttribute some Bone)))):1.0
+SubClassOf(Anonymous-346,BodyStructure):1.0
+is(Anonymous-361,Class):1.0
+EquivalentTo(Anonymous-361,BodyStructure and (isSpecificallyMadeOf some LungParenchyma)):1.0
+SubClassOf(Anonymous-361,BodyStructure):1.0
+is(Anonymous-413,Class):1.0
+SubClassOf(Anonymous-413,BodyWall):1.0
+is(Anonymous-421,Class):1.0
+SubClassOf(Anonymous-421,Spore):1.0
+is(Anonymous-471,Class):1.0
+EquivalentTo(Anonymous-471,BodyStructure and (isSpecificallyMadeOf some TesticularParenchyma)):1.0
+SubClassOf(Anonymous-471,BodyStructure):1.0
+is(Anonymous-473,Class):1.0
+SubClassOf(Anonymous-473,InternalBodyStructure):1.0
+is(Anonymous-48,Class):1.0
+EquivalentTo(Anonymous-48,PosteriorIntercostalArtery and (isSpecificallyNonPartitivelyContainedIn some EleventhIntercostalSpace)):1.0
+SubClassOf(Anonymous-48,PosteriorIntercostalArtery,):1.0
+SubClassOf(Anonymous-48,isBranchOf some DescendingAorta):1.0
+DisjointWith(Anonymous-48,AnatomicalShape and (hasAbsoluteState some linear)):1.0
+is(Anonymous-496,Class):1.0
+SubClassOf(Anonymous-496,BodyWall):1.0
+is(Anonymous-500,Class):1.0
+EquivalentTo(Anonymous-500,BodyStructure and (isSpecificallyMadeOf some LobarParenchyma)):1.0
+SubClassOf(Anonymous-500,BodyStructure):1.0
+is(Anonymous-524,Class):1.0
+SubClassOf(Anonymous-524,BodySpace):1.0
+is(Anonymous-529,Class):1.0
+SubClassOf(Anonymous-529,BodyPart):1.0
+is(Anonymous-537,Class):1.0
+EquivalentTo(Anonymous-537,BodyStructure and (isActedOnBy some OrganMalrotationProcess)):1.0
+SubClassOf(Anonymous-537,BodyStructure,):1.0
+SubClassOf(Anonymous-537,hasPathologicalStatus some pathological):1.0
+is(Anonymous-546,Class):1.0
+SubClassOf(Anonymous-546,BodyWall):1.0
+is(Anonymous-567,Class):1.0
+EquivalentTo(Anonymous-567,BodyStructure and (isSpecificallyMadeOf some LiverParenchyma)):1.0
+SubClassOf(Anonymous-567,BodyStructure):1.0
+is(Anonymous-57,Class):1.0
+SubClassOf(Anonymous-57,LinearBodyStructure):1.0
+is(Anonymous-631,Class):1.0
+EquivalentTo(Anonymous-631,BodyStructure and (isConsequenceOf some):1.0
+EquivalentTo(Anonymous-631,(BodyProcess and (hasIntrinsicPathologicalStatus some pathological)))):1.0
+SubClassOf(Anonymous-631,BodyStructure,):1.0
+SubClassOf(Anonymous-631,hasPathologicalStatus some pathological):1.0
+is(Anonymous-645,Class):1.0
+SubClassOf(Anonymous-645,BodySpace):1.0
+is(Anonymous-649,Class):1.0
+EquivalentTo(Anonymous-649,BodyStructure and (hasSurfaceVisibility some surfaceVisible) and (isSurfaceDivisionOf some):1.0
+EquivalentTo(Anonymous-649,(BodyStructure and (hasSurfaceVisibility some surfaceVisible) and (isPairedOrUnpaired some atLeastPaired)))):1.0
+SubClassOf(Anonymous-649,BodyStructure,):1.0
+SubClassOf(Anonymous-649,isPairedOrUnpaired some atLeastPaired):1.0
+is(Anonymous-661,Class):1.0
+EquivalentTo(Anonymous-661,BodyStructure and (hasIntrinsicAbnormalityStatus some nonNormal)):1.0
+SubClassOf(Anonymous-661,BodyStructure,):1.0
+SubClassOf(Anonymous-661,hasAbnormalityStatus some nonNormal):1.0
+is(Anonymous-666,Class):1.0
+EquivalentTo(Anonymous-666,BodyStructure and (isActedOnBy some OrganMalrotationProcess)):1.0
+SubClassOf(Anonymous-666,BodyStructure,):1.0
+SubClassOf(Anonymous-666,hasAcquisitionMode some):1.0
+SubClassOf(Anonymous-666,(AcquisitionMode and (hasAbsoluteState some congenital))):1.0
+is(Anonymous-696,Class):1.0
+SubClassOf(Anonymous-696,BodyWall):1.0
+is(Anonymous-716,Class):1.0
+SubClassOf(Anonymous-716,PhysicalStructure):1.0
+is(Anonymous-717,Class):1.0
+SubClassOf(Anonymous-717,BodySpace):1.0
+is(Anonymous-762,Class):1.0
+EquivalentTo(Anonymous-762,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Anonymous-762,(BenignNeoplasticProcess and (actsSpecificallyOn some Bone)))):1.0
+SubClassOf(Anonymous-762,BodyStructure):1.0
+is(Anonymous-767,Class):1.0
+SubClassOf(Anonymous-767,BodyPart):1.0
+is(Anonymous-823,Class):1.0
+EquivalentTo(Anonymous-823,BodyStructure and (isSpecificallyMadeOf some LobularParenchyma)):1.0
+SubClassOf(Anonymous-823,BodyStructure):1.0
+is(Anonymous-837,Class):1.0
+EquivalentTo(Anonymous-837,BodyStructure and (isLocationOf some PathologicalBodyStructure)):1.0
+SubClassOf(Anonymous-837,BodyStructure,):1.0
+SubClassOf(Anonymous-837,hasPathologicalStatus some pathological):1.0
+DisjointWith(Anonymous-837,BodyStructure and (isLocationOf some PathologicalBodyStructure)):1.0
+is(Anonymous-94,Class):1.0
+EquivalentTo(Anonymous-94,BodyStructure and (isSpecificallyMadeOf some RenalParenchyma)):1.0
+SubClassOf(Anonymous-94,BodyStructure):1.0
+is(AnorectalSegment,Class):1.0
+EquivalentTo(AnorectalSegment,BodyStructure and (isLinearDivisionOf some RectumToAnus)):1.0
+SubClassOf(AnorectalSegment,BodyStructure):1.0
+is(Anorgasmia,Class):1.0
+SubClassOf(Anorgasmia,Orgasm):1.0
+is(AnteriorChamberComponent,Class):1.0
+EquivalentTo(AnteriorChamberComponent,BodyStructure and (IsDivisionOf some AnteriorChamberOfEye)):1.0
+SubClassOf(AnteriorChamberComponent,BodyStructure):1.0
+is(AnteriorChamberOfEye,Class):1.0
+is(AnteriorCranialFossa,Class):1.0
+is(AnteriorGastricWall,Class):1.0
+SubClassOf(AnteriorGastricWall,BodyWall):1.0
+is(AnteriorLobeOfPituitaryGland,Class):1.0
+is(Anus,Class):1.0
+is(Aorta,Class):1.0
+is(AorticDivision,Class):1.0
+EquivalentTo(AorticDivision,BodyStructure and (isLinearDivisionOf some Aorta)):1.0
+SubClassOf(AorticDivision,BodyStructure,):1.0
+SubClassOf(AorticDivision,hasCentralPeripheralSelector some bodyCentralSelection,):1.0
+SubClassOf(AorticDivision,playsPhysiologicalRole some EndArteryRole):1.0
+is(AorticValve,Class):1.0
+is(AorticValveStructure,Class):1.0
+EquivalentTo(AorticValveStructure,BodyStructure and (IsDivisionOf some AorticValve)):1.0
+SubClassOf(AorticValveStructure,BodyStructure):1.0
+is(Apoptosis,Class):1.0
+SubClassOf(Apoptosis,CellularProcess):1.0
+is(Archaea,Class):1.0
+SubClassOf(Archaea,Prokaryota):1.0
+is(Argas,Class):1.0
+SubClassOf(Argas,Argasidae):1.0
+is(ArgasPersicus,Class):1.0
+SubClassOf(ArgasPersicus,Argas):1.0
+is(ArgasReflexus,Class):1.0
+SubClassOf(ArgasReflexus,Argas):1.0
+is(Argasidae,Class):1.0
+is(Arm,Class):1.0
+is(ArmOedemaSymptom,Class):1.0
+EquivalentTo(ArmOedemaSymptom,OedemaSymptom and (hasSpecificLocation some Arm)):1.0
+SubClassOf(ArmOedemaSymptom,OedemaSymptom):1.0
+is(ArterialDissectionLesion,Class):1.0
+EquivalentTo(ArterialDissectionLesion,BodyStructure and (actsOn some):1.0
+EquivalentTo(ArterialDissectionLesion,(Wall and (isSpecificLayerOf some Artery))) and (hasPathologicalStatus some pathological) and (hasUniqueAssociatedProcess some Dividing)):1.0
+SubClassOf(ArterialDissectionLesion,BodyStructure):1.0
+is(ArterialStructure,Class):1.0
+EquivalentTo(ArterialStructure,BodyStructure and (playsPhysiologicalRole some AfferentRole)):1.0
+SubClassOf(ArterialStructure,BodyStructure,):1.0
+SubClassOf(ArterialStructure,isStructuralComponentOf some CardiovascularSystem):1.0
+is(ArterialWall,Class):1.0
+SubClassOf(ArterialWall,BodyWall):1.0
+is(Artery,Class):1.0
+is(AtLeastPairedBodyWall,Class):1.0
+SubClassOf(AtLeastPairedBodyWall,BodyWall):1.0
+is(Atlas,Class):1.0
+is(AtonicSeizure,Class):1.0
+SubClassOf(AtonicSeizure,Seizure):1.0
+is(AtrialMyxoma,Class):1.0
+EquivalentTo(AtrialMyxoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(AtrialMyxoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(AtrialMyxoma,(ConnectiveTissueCell and (IsDivisionOf some HeartAtrium)))))):1.0
+SubClassOf(AtrialMyxoma,BodyStructure):1.0
+is(AtrialStructure,Class):1.0
+EquivalentTo(AtrialStructure,BodyStructure and (IsDivisionOf some HeartAtrium)):1.0
+SubClassOf(AtrialStructure,BodyStructure,):1.0
+SubClassOf(AtrialStructure,hasSpecificLayer some Endocardium):1.0
+is(AtrophicSkin,Class):1.0
+SubClassOf(AtrophicSkin,SkinAsOrgan):1.0
+is(AuditoryNerve,Class):1.0
+is(AuditorySystem,Class):1.0
+is(AuditorySystemComponent,Class):1.0
+EquivalentTo(AuditorySystemComponent,BodyStructure and (IsDivisionOf some AuditorySystem)):1.0
+SubClassOf(AuditorySystemComponent,BodyStructure):1.0
+is(AxialSkeleton,Class):1.0
+is(Axis,Class):1.0
+is(BCellLymphocyte,Class):1.0
+is(BCellLymphocyteNeoplasia,Class):1.0
+EquivalentTo(BCellLymphocyteNeoplasia,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(BCellLymphocyteNeoplasia,(MalignantNeoplasticProcess and (actsSpecificallyOn some BCellLymphocyte)))):1.0
+SubClassOf(BCellLymphocyteNeoplasia,BodyStructure):1.0
+is(BCellLymphoma,Class):1.0
+SubClassOf(BCellLymphoma,MalignantLymphoma):1.0
+is(Back,Class):1.0
+is(Bacterium,Class):1.0
+SubClassOf(Bacterium,MicroOrganism):1.0
+is(BasalNucleus,Class):1.0
+is(BaseOfSkull,Class):1.0
+is(BenignHepaticAdenoma,Class):1.0
+EquivalentTo(BenignHepaticAdenoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(BenignHepaticAdenoma,(NeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(BenignHepaticAdenoma,(Adenocyte and (isSpecificStructuralComponentOf some Liver))) and (hasMalignancy some):1.0
+EquivalentTo(BenignHepaticAdenoma,(Malignancy and (hasAbsoluteState some benign)))))):1.0
+SubClassOf(BenignHepaticAdenoma,BodyStructure):1.0
+is(BenignNeoplasticProcess,Class):1.0
+is(BileDuct,Class):1.0
+is(BiliaryTract,Class):1.0
+is(BiochemicalRole,Class):1.0
+is(Bleeding,Class):1.0
+EquivalentTo(Bleeding,BodyStructure and (hasUniqueAssociatedProcess some HemorrhagingProcess)):1.0
+SubClassOf(Bleeding,BodyStructure,):1.0
+SubClassOf(Bleeding,isSpecificallyMadeOf some Blood):1.0
+is(Blood,Class):1.0
+is(BloodCell,Class):1.0
+SubClassOf(BloodCell,TissueCell):1.0
+is(BloodClot,Class):1.0
+EquivalentTo(BloodClot,BodyStructure and (isMadeOf some CoagulatedBlood)):1.0
+SubClassOf(BloodClot,BodyStructure,):1.0
+SubClassOf(BloodClot,isSpecificallyMadeOf some CoagulatedBlood,):1.0
+SubClassOf(BloodClot,isSpecificallyMadeOf some Fibrin):1.0
+is(BloodVessel,Class):1.0
+is(BodyAsAWhole,Class):1.0
+SubClassOf(BodyAsAWhole,BodyStructure,):1.0
+SubClassOf(BodyAsAWhole,hasShapeAnalagousTo some elongatedSolid,):1.0
+SubClassOf(BodyAsAWhole,hasSurfaceDivision some Extremity,):1.0
+SubClassOf(BodyAsAWhole,hasSurfaceDivision some HeadAndNeck,):1.0
+SubClassOf(BodyAsAWhole,hasSurfaceDivision some Trunk,):1.0
+SubClassOf(BodyAsAWhole,isPairedOrUnpaired some unpaired):1.0
+is(BodyCavity,Class):1.0
+SubClassOf(BodyCavity,BodySpace):1.0
+is(BodyConnection,Class):1.0
+SubClassOf(BodyConnection,BodyStructure,):1.0
+SubClassOf(BodyConnection,hasTopology some):1.0
+SubClassOf(BodyConnection,(Topology and (hasAbsoluteState some tubular))):1.0
+is(BodyFloor,Class):1.0
+EquivalentTo(BodyFloor,BodyStructure and (boundsSpace some HollowStructure) and (hasSuperiorInferiorSelector some inferiorSelection) and (hasTopology some solidTopology)):1.0
+SubClassOf(BodyFloor,BodyStructure):1.0
+is(BodyHole,Class):1.0
+SubClassOf(BodyHole,BodySpace):1.0
+is(BodyPart,Class):1.0
+SubClassOf(BodyPart,BodyStructure,):1.0
+SubClassOf(BodyPart,hasIntrinsicAbnormalityStatus some normal):1.0
+is(BodyPositionState,Class):1.0
+SubClassOf(BodyPositionState,OrganismState):1.0
+is(BodyProcess,Class):1.0
+is(BodyRoof,Class):1.0
+EquivalentTo(BodyRoof,BodyStructure and (boundsSpace some HollowStructure) and (hasSuperiorInferiorSelector some superiorSelection) and (hasTopology some solidTopology)):1.0
+SubClassOf(BodyRoof,BodyStructure):1.0
+is(BodySpace,Class):1.0
+SubClassOf(BodySpace,BodyStructure,):1.0
+SubClassOf(BodySpace,Space):1.0
+is(BodyStructure,Class):1.0
+SubClassOf(BodyStructure,OrganicSolidStructure):1.0
+is(BodyStructureByAbstractStatus,Class):1.0
+EquivalentTo(BodyStructureByAbstractStatus,BodyStructure and (StatusAttribute some AbstractStatus)):1.0
+SubClassOf(BodyStructureByAbstractStatus,BodyStructure):1.0
+is(BodyStructureByFeature,Class):1.0
+EquivalentTo(BodyStructureByFeature,BodyStructure and (hasFeature some Feature)):1.0
+SubClassOf(BodyStructureByFeature,BodyStructure):1.0
+is(BodyStructureByShape,Class):1.0
+EquivalentTo(BodyStructureByShape,BodyStructure and (hasFeature some Shape)):1.0
+SubClassOf(BodyStructureByShape,BodyStructure):1.0
+is(BodyStructureByTissueType,Class):1.0
+EquivalentTo(BodyStructureByTissueType,BodyStructure and (isMadeOf some Tissue)):1.0
+SubClassOf(BodyStructureByTissueType,BodyStructure):1.0
+is(BodyStructureByTopology,Class):1.0
+EquivalentTo(BodyStructureByTopology,BodyStructure and (hasTopology some Topology)):1.0
+SubClassOf(BodyStructureByTopology,BodyStructure):1.0
+is(BodyStructureCausedByProcess,Class):1.0
+EquivalentTo(BodyStructureCausedByProcess,BodyStructure and (isCausallyLinkedTo some GeneralisedProcess)):1.0
+SubClassOf(BodyStructureCausedByProcess,BodyStructure):1.0
+is(BodyStructureCausingProcess,Class):1.0
+EquivalentTo(BodyStructureCausingProcess,BodyStructure and (hasCausalLinkTo some GeneralisedProcess)):1.0
+SubClassOf(BodyStructureCausingProcess,BodyStructure):1.0
+is(BodyStructureSegment,Class):1.0
+EquivalentTo(BodyStructureSegment,BodyStructure and (isLinearDivisionOf some BodyStructure)):1.0
+SubClassOf(BodyStructureSegment,BodyStructure):1.0
+is(BodySystem,Class):1.0
+is(BodySystemComponent,Class):1.0
+EquivalentTo(BodySystemComponent,BodyStructure and (IsDivisionOf some BodySystem)):1.0
+SubClassOf(BodySystemComponent,BodyStructure):1.0
+is(BodyWall,Class):1.0
+EquivalentTo(BodyWall,BodyStructure and (playsPhysiologicalRole some PhysicalBarrierRole)):1.0
+SubClassOf(BodyWall,BodyStructure):1.0
+is(Bone,Class):1.0
+is(BoneMarrowStructure,Class):1.0
+EquivalentTo(BoneMarrowStructure,BodyStructure and (isSpecificallyMadeOf some BoneMarrowTissue)):1.0
+SubClassOf(BoneMarrowStructure,BodyStructure,):1.0
+SubClassOf(BoneMarrowStructure,hasSpecificFunction some Erythrocytopoiesis):1.0
+is(BoneMarrowStructureInIliacCrest,Class):1.0
+SubClassOf(BoneMarrowStructureInIliacCrest,BoneMarrowStructure):1.0
+is(BoneMarrowStructureInSternum,Class):1.0
+SubClassOf(BoneMarrowStructureInSternum,BoneMarrowStructure):1.0
+is(BoneMarrowStructureInTibialTuberosity,Class):1.0
+SubClassOf(BoneMarrowStructureInTibialTuberosity,BoneMarrowStructure):1.0
+is(BoneMarrowTissue,Class):1.0
+is(BoneOfCranium,Class):1.0
+is(BoneOfLowerLimb,Class):1.0
+is(BoneOfSkull,Class):1.0
+is(BoneOfUpperLimb,Class):1.0
+is(BoneTissue,Class):1.0
+is(BoneTissueStructure,Class):1.0
+EquivalentTo(BoneTissueStructure,BodyStructure and (isMadeOf some BoneTissue)):1.0
+SubClassOf(BoneTissueStructure,BodyStructure):1.0
+is(Brain,Class):1.0
+is(Brainstem,Class):1.0
+is(BranchOfRadialNerve,Class):1.0
+is(BranchOfUlnarNerve,Class):1.0
+is(BreastAnatomy,Class):1.0
+EquivalentTo(BreastAnatomy,BodyStructure and (IsDivisionOf some MammaryGland)):1.0
+SubClassOf(BreastAnatomy,BodyStructure):1.0
+is(BronchialCartilageRing,Class):1.0
+EquivalentTo(BronchialCartilageRing,BodyStructure and (hasShape some):1.0
+EquivalentTo(BronchialCartilageRing,(Shape and (hasAbsoluteState some toroidal))) and (isSpecificStructuralComponentOf some Bronchus) and (isSpecificallyMadeOf some Cartilage)):1.0
+SubClassOf(BronchialCartilageRing,BodyStructure,):1.0
+SubClassOf(BronchialCartilageRing,isPairedOrUnpaired some moreThanPaired):1.0
+is(BronchiolarAdenocarcinoma,Class):1.0
+EquivalentTo(BronchiolarAdenocarcinoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(BronchiolarAdenocarcinoma,(MalignantNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(BronchiolarAdenocarcinoma,(GlandularEpithelium and (isLayerOf some TerminalBronchiole)))))):1.0
+SubClassOf(BronchiolarAdenocarcinoma,BodyStructure):1.0
+is(BronchiolarCarcinoma,Class):1.0
+EquivalentTo(BronchiolarCarcinoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(BronchiolarCarcinoma,(MalignantNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(BronchiolarCarcinoma,(Epithelium and (isLayerOf some TerminalBronchiole)))))):1.0
+SubClassOf(BronchiolarCarcinoma,BodyStructure):1.0
+is(BronchogenicCarcinoma,Class):1.0
+EquivalentTo(BronchogenicCarcinoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(BronchogenicCarcinoma,(MalignantNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(BronchogenicCarcinoma,(Epithelium and (isLayerOf some Bronchus)))))):1.0
+SubClassOf(BronchogenicCarcinoma,BodyStructure):1.0
+is(Bronchus,Class):1.0
+is(CVSComponentOfAbdomen,Class):1.0
+EquivalentTo(CVSComponentOfAbdomen,BodyStructure and (IsDivisionOf some Abdomen) and (IsDivisionOf some CardiovascularSystem)):1.0
+SubClassOf(CVSComponentOfAbdomen,BodyStructure):1.0
+is(CVSComponentOfLowerLimb,Class):1.0
+EquivalentTo(CVSComponentOfLowerLimb,BodyStructure and (IsDivisionOf some CardiovascularSystem) and (IsDivisionOf some LowerExtremity)):1.0
+SubClassOf(CVSComponentOfLowerLimb,BodyStructure):1.0
+is(CVSComponentOfThorax,Class):1.0
+EquivalentTo(CVSComponentOfThorax,BodyStructure and (IsDivisionOf some CardiovascularSystem) and (IsDivisionOf some Thorax)):1.0
+SubClassOf(CVSComponentOfThorax,BodyStructure):1.0
+is(CVSComponentOfUpperLimb,Class):1.0
+EquivalentTo(CVSComponentOfUpperLimb,BodyStructure and (IsDivisionOf some CardiovascularSystem) and (IsDivisionOf some UpperExtremity)):1.0
+SubClassOf(CVSComponentOfUpperLimb,BodyStructure):1.0
+is(Canal,Class):1.0
+SubClassOf(Canal,BodySpace):1.0
+is(CapabilityState,Class):1.0
+SubClassOf(CapabilityState,OrganismState):1.0
+is(Capillary,Class):1.0
+is(CapillaryConstriction,Class):1.0
+EquivalentTo(CapillaryConstriction,DimensionDecreasingProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(CapillaryConstriction,(Diameter and (isDiameterOf some Capillary)))):1.0
+SubClassOf(CapillaryConstriction,DimensionDecreasingProcess):1.0
+is(CapillaryHaemangioma,Class):1.0
+EquivalentTo(CapillaryHaemangioma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(CapillaryHaemangioma,(BenignNeoplasticProcess and (actsSpecificallyOn some Capillary)))):1.0
+SubClassOf(CapillaryHaemangioma,BodyStructure):1.0
+is(CardiacConductionSystemStructure,Class):1.0
+EquivalentTo(CardiacConductionSystemStructure,BodyStructure and (IsDivisionOf some Heart) and (hasFunction some ElectricalConduction)):1.0
+SubClassOf(CardiacConductionSystemStructure,BodyStructure,):1.0
+SubClassOf(CardiacConductionSystemStructure,isFunctionalComponentOf some Heart):1.0
+is(CardiacSurfaceFeature,Class):1.0
+EquivalentTo(CardiacSurfaceFeature,BodyStructure and (isSurfaceDivisionOf some Heart)):1.0
+SubClassOf(CardiacSurfaceFeature,BodyStructure):1.0
+is(CardiovascularSystem,Class):1.0
+is(CardiovascularSystemComponent,Class):1.0
+EquivalentTo(CardiovascularSystemComponent,BodyStructure and (IsDivisionOf some CardiovascularSystem)):1.0
+SubClassOf(CardiovascularSystemComponent,BodyStructure,):1.0
+SubClassOf(CardiovascularSystemComponent,hasSurfaceVisibility some internal):1.0
+is(CarotidBody,Class):1.0
+is(CarotidChemodectoma,Class):1.0
+EquivalentTo(CarotidChemodectoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(CarotidChemodectoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(CarotidChemodectoma,(TissueCell and (isStructuralComponentOf some CarotidBody)))))):1.0
+SubClassOf(CarotidChemodectoma,BodyStructure):1.0
+is(Cartilage,Class):1.0
+is(CartilageOfLarynx,Class):1.0
+EquivalentTo(CartilageOfLarynx,BodyStructure and (IsDivisionOf some Larynx) and (isSpecificallyMadeOf some Cartilage)):1.0
+SubClassOf(CartilageOfLarynx,BodyStructure):1.0
+is(CartilagenousBodyStructure,Class):1.0
+EquivalentTo(CartilagenousBodyStructure,BodyStructure and (isMadeOf some Cartilage)):1.0
+SubClassOf(CartilagenousBodyStructure,BodyStructure):1.0
+is(CartilaginousRing,Class):1.0
+EquivalentTo(CartilaginousRing,BodyStructure and (hasShape some):1.0
+EquivalentTo(CartilaginousRing,(Shape and (hasAbsoluteState some toroidal))) and (isSpecificallyMadeOf some Cartilage)):1.0
+SubClassOf(CartilaginousRing,BodyStructure):1.0
+is(CavityOfEyeball,Class):1.0
+is(Cell,Class):1.0
+SubClassOf(Cell,OrganicSolidStructure):1.0
+is(CellMorphologyState,Class):1.0
+is(CellularProcess,Class):1.0
+is(CementumOfTooth,Class):1.0
+SubClassOf(CementumOfTooth,StructuralComponentOfTooth):1.0
+is(CentralNervousSystem,Class):1.0
+is(CentralNervousSystemComponent,Class):1.0
+EquivalentTo(CentralNervousSystemComponent,BodyStructure and (IsDivisionOf some CentralNervousSystem)):1.0
+SubClassOf(CentralNervousSystemComponent,BodyStructure):1.0
+is(Cerebellum,Class):1.0
+is(CerebralPeduncle,Class):1.0
+is(CervicalVertebra,Class):1.0
+is(CervixUteri,Class):1.0
+is(ChangeOfAppearanceSymptom,Class):1.0
+EquivalentTo(ChangeOfAppearanceSymptom,BodyStructure and (hasAbnormalityStatus some nonNormal) and (hasUniqueAssociatedProcess some ChangeProcess) and (playsConsultationRole some SymptomRole)):1.0
+SubClassOf(ChangeOfAppearanceSymptom,BodyStructure):1.0
+is(ChangeProcess,Class):1.0
+is(ChemicalProcess,Class):1.0
+is(ChemicalStructure,Class):1.0
+SubClassOf(ChemicalStructure,PhysicalStructure):1.0
+is(Chemodectoma,Class):1.0
+SubClassOf(Chemodectoma,BodyStructure,):1.0
+SubClassOf(Chemodectoma,hasUniqueAssociatedProcess some):1.0
+SubClassOf(Chemodectoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+SubClassOf(Chemodectoma,(TissueCell and (isStructuralComponentOf some ChemoreceptorSystem))))):1.0
+is(ChemoreceptorSystem,Class):1.0
+is(ChemoreceptorSystemComponent,Class):1.0
+EquivalentTo(ChemoreceptorSystemComponent,BodyStructure and (IsDivisionOf some ChemoreceptorSystem)):1.0
+SubClassOf(ChemoreceptorSystemComponent,BodyStructure,):1.0
+SubClassOf(ChemoreceptorSystemComponent,hasSurfaceVisibility some internal):1.0
+is(ChestWall,Class):1.0
+SubClassOf(ChestWall,BodyWall):1.0
+is(ChorionicMembrane,Class):1.0
+is(ChromaffinCell,Class):1.0
+is(Chromaffinoma,Class):1.0
+EquivalentTo(Chromaffinoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Chromaffinoma,(BenignNeoplasticProcess and (actsSpecificallyOn some ChromaffinCell)))):1.0
+SubClassOf(Chromaffinoma,BodyStructure):1.0
+is(ChronicLymphocyticLeukaemia,Class):1.0
+is(ChronicMetabolicAcidosis,Class):1.0
+EquivalentTo(ChronicMetabolicAcidosis,MetabolicAcidosis and (hasChronicity some):1.0
+EquivalentTo(ChronicMetabolicAcidosis,(Chronicity and (hasAbsoluteState some chronic)))):1.0
+SubClassOf(ChronicMetabolicAcidosis,MetabolicAcidosis):1.0
+is(ChronicRenalFailure,Class):1.0
+EquivalentTo(ChronicRenalFailure,RenalInsufficiency and (hasChronicity some):1.0
+EquivalentTo(ChronicRenalFailure,(Chronicity and (hasAbsoluteState some chronic)))):1.0
+SubClassOf(ChronicRenalFailure,RenalInsufficiency):1.0
+is(Chronicity,Class):1.0
+is(ClaraCell,Class):1.0
+SubClassOf(ClaraCell,TissueCell):1.0
+is(Clavicle,Class):1.0
+is(ClinicalSpecialityState,Class):1.0
+SubClassOf(ClinicalSpecialityState,OrganismState):1.0
+is(CoagulatedBlood,Class):1.0
+is(ColdIntolerance,Class):1.0
+SubClassOf(ColdIntolerance,OrganismTolerance):1.0
+is(CollateralVenousCirculatoryPathway,Class):1.0
+SubClassOf(CollateralVenousCirculatoryPathway,AbnormalVenousStructure):1.0
+is(Colon,Class):1.0
+is(ColonicStructure,Class):1.0
+EquivalentTo(ColonicStructure,BodyStructure and (IsDivisionOf some Colon)):1.0
+SubClassOf(ColonicStructure,BodyStructure):1.0
+is(ColonicWall,Class):1.0
+SubClassOf(ColonicWall,BodyWall):1.0
+is(Completeness,Class):1.0
+is(ComponentOfAbdomen,Class):1.0
+EquivalentTo(ComponentOfAbdomen,BodyStructure and (IsDivisionOf some Abdomen)):1.0
+SubClassOf(ComponentOfAbdomen,BodyStructure):1.0
+is(ComponentOfAdenohypophysis,Class):1.0
+EquivalentTo(ComponentOfAdenohypophysis,BodyStructure and (IsDivisionOf some AnteriorLobeOfPituitaryGland)):1.0
+SubClassOf(ComponentOfAdenohypophysis,BodyStructure):1.0
+is(ComponentOfAdrenalGland,Class):1.0
+EquivalentTo(ComponentOfAdrenalGland,BodyStructure and (IsDivisionOf some AdrenalGland)):1.0
+SubClassOf(ComponentOfAdrenalGland,BodyStructure):1.0
+is(ComponentOfAnkle,Class):1.0
+EquivalentTo(ComponentOfAnkle,BodyStructure and (IsDivisionOf some Ankle)):1.0
+SubClassOf(ComponentOfAnkle,BodyStructure):1.0
+is(ComponentOfAnus,Class):1.0
+EquivalentTo(ComponentOfAnus,BodyStructure and (IsDivisionOf some Anus)):1.0
+SubClassOf(ComponentOfAnus,BodyStructure):1.0
+is(ComponentOfArm,Class):1.0
+EquivalentTo(ComponentOfArm,BodyStructure and (IsDivisionOf some Arm)):1.0
+SubClassOf(ComponentOfArm,BodyStructure):1.0
+is(ComponentOfArmOrLeg,Class):1.0
+EquivalentTo(ComponentOfArmOrLeg,BodyStructure and (IsDivisionOf some Extremity)):1.0
+SubClassOf(ComponentOfArmOrLeg,BodyStructure,):1.0
+SubClassOf(ComponentOfArmOrLeg,isPairedOrUnpaired some mirrorImaged):1.0
+is(ComponentOfAtlas,Class):1.0
+EquivalentTo(ComponentOfAtlas,BodyStructure and (IsDivisionOf some Atlas)):1.0
+SubClassOf(ComponentOfAtlas,BodyStructure):1.0
+is(ComponentOfAuricle,Class):1.0
+EquivalentTo(ComponentOfAuricle,BodyStructure and (IsDivisionOf some Pinna)):1.0
+SubClassOf(ComponentOfAuricle,BodyStructure):1.0
+is(ComponentOfAxialSkeleton,Class):1.0
+EquivalentTo(ComponentOfAxialSkeleton,BodyStructure and (IsDivisionOf some AxialSkeleton)):1.0
+SubClassOf(ComponentOfAxialSkeleton,BodyStructure):1.0
+is(ComponentOfAxis,Class):1.0
+EquivalentTo(ComponentOfAxis,BodyStructure and (IsDivisionOf some Axis)):1.0
+SubClassOf(ComponentOfAxis,BodyStructure):1.0
+is(ComponentOfBaseOfSkull,Class):1.0
+EquivalentTo(ComponentOfBaseOfSkull,BodyStructure and (IsDivisionOf some BaseOfSkull)):1.0
+SubClassOf(ComponentOfBaseOfSkull,BodyStructure):1.0
+is(ComponentOfBileDuct,Class):1.0
+EquivalentTo(ComponentOfBileDuct,BodyStructure and (IsDivisionOf some BileDuct)):1.0
+SubClassOf(ComponentOfBileDuct,BodyStructure):1.0
+is(ComponentOfBiliaryTract,Class):1.0
+EquivalentTo(ComponentOfBiliaryTract,BodyStructure and (IsDivisionOf some BiliaryTract)):1.0
+SubClassOf(ComponentOfBiliaryTract,BodyStructure,):1.0
+SubClassOf(ComponentOfBiliaryTract,hasSurfaceVisibility some internal):1.0
+is(ComponentOfBrain,Class):1.0
+EquivalentTo(ComponentOfBrain,BodyStructure and (IsDivisionOf some Brain)):1.0
+SubClassOf(ComponentOfBrain,BodyStructure):1.0
+is(ComponentOfBrainstem,Class):1.0
+EquivalentTo(ComponentOfBrainstem,BodyStructure and (IsDivisionOf some Brainstem)):1.0
+SubClassOf(ComponentOfBrainstem,BodyStructure):1.0
+is(ComponentOfCerebellum,Class):1.0
+EquivalentTo(ComponentOfCerebellum,BodyStructure and (IsDivisionOf some Cerebellum)):1.0
+SubClassOf(ComponentOfCerebellum,BodyStructure):1.0
+is(ComponentOfCerebrum,Class):1.0
+EquivalentTo(ComponentOfCerebrum,BodyStructure and (IsDivisionOf some Telencephalon)):1.0
+SubClassOf(ComponentOfCerebrum,BodyStructure):1.0
+is(ComponentOfCervicalVertebra,Class):1.0
+EquivalentTo(ComponentOfCervicalVertebra,BodyStructure and (IsDivisionOf some CervicalVertebra)):1.0
+SubClassOf(ComponentOfCervicalVertebra,BodyStructure):1.0
+is(ComponentOfChestWall,Class):1.0
+EquivalentTo(ComponentOfChestWall,BodyStructure and (IsDivisionOf some ChestWall)):1.0
+SubClassOf(ComponentOfChestWall,BodyStructure):1.0
+is(ComponentOfClavicle,Class):1.0
+EquivalentTo(ComponentOfClavicle,BodyStructure and (IsDivisionOf some Clavicle)):1.0
+SubClassOf(ComponentOfClavicle,BodyStructure):1.0
+is(ComponentOfConjunctiva,Class):1.0
+EquivalentTo(ComponentOfConjunctiva,BodyStructure and (IsDivisionOf some Conjunctiva)):1.0
+SubClassOf(ComponentOfConjunctiva,BodyStructure,):1.0
+SubClassOf(ComponentOfConjunctiva,hasSurfaceVisibility some surfaceVisible):1.0
+is(ComponentOfCornea,Class):1.0
+EquivalentTo(ComponentOfCornea,BodyStructure and (IsDivisionOf some Cornea)):1.0
+SubClassOf(ComponentOfCornea,BodyStructure,):1.0
+SubClassOf(ComponentOfCornea,hasSurfaceVisibility some surfaceVisible):1.0
+is(ComponentOfCranialBone,Class):1.0
+EquivalentTo(ComponentOfCranialBone,BodyStructure and (IsDivisionOf some BoneOfCranium)):1.0
+SubClassOf(ComponentOfCranialBone,BodyStructure):1.0
+is(ComponentOfCranialNerve,Class):1.0
+EquivalentTo(ComponentOfCranialNerve,BodyStructure and (IsDivisionOf some CranialNerve)):1.0
+SubClassOf(ComponentOfCranialNerve,BodyStructure):1.0
+is(ComponentOfCranium,Class):1.0
+EquivalentTo(ComponentOfCranium,BodyStructure and (IsDivisionOf some Cranium)):1.0
+SubClassOf(ComponentOfCranium,BodyStructure):1.0
+is(ComponentOfDiencephalon,Class):1.0
+EquivalentTo(ComponentOfDiencephalon,BodyStructure and (IsDivisionOf some Diencephalon)):1.0
+SubClassOf(ComponentOfDiencephalon,BodyStructure):1.0
+is(ComponentOfDuodenum,Class):1.0
+EquivalentTo(ComponentOfDuodenum,BodyStructure and (IsDivisionOf some Duodenum)):1.0
+SubClassOf(ComponentOfDuodenum,BodyStructure):1.0
+is(ComponentOfEar,Class):1.0
+EquivalentTo(ComponentOfEar,BodyStructure and (IsDivisionOf some Ear)):1.0
+SubClassOf(ComponentOfEar,BodyStructure):1.0
+is(ComponentOfElbow,Class):1.0
+EquivalentTo(ComponentOfElbow,BodyStructure and (IsDivisionOf some Elbow)):1.0
+SubClassOf(ComponentOfElbow,BodyStructure):1.0
+is(ComponentOfEndocrinePancreas,Class):1.0
+EquivalentTo(ComponentOfEndocrinePancreas,BodyStructure and (IsDivisionOf some EndocrinePancreas)):1.0
+SubClassOf(ComponentOfEndocrinePancreas,BodyStructure):1.0
+is(ComponentOfEthmoidBone,Class):1.0
+EquivalentTo(ComponentOfEthmoidBone,BodyStructure and (IsDivisionOf some EthmoidBone)):1.0
+SubClassOf(ComponentOfEthmoidBone,BodyStructure):1.0
+is(ComponentOfExternalGenitalia,Class):1.0
+EquivalentTo(ComponentOfExternalGenitalia,BodyStructure and (IsDivisionOf some ExternalGenitalia)):1.0
+SubClassOf(ComponentOfExternalGenitalia,BodyStructure):1.0
+is(ComponentOfEye,Class):1.0
+EquivalentTo(ComponentOfEye,BodyStructure and (IsDivisionOf some Eye)):1.0
+SubClassOf(ComponentOfEye,BodyStructure):1.0
+is(ComponentOfEyeLid,Class):1.0
+EquivalentTo(ComponentOfEyeLid,BodyStructure and (IsDivisionOf some Palpebrum)):1.0
+SubClassOf(ComponentOfEyeLid,BodyStructure):1.0
+is(ComponentOfEyeball,Class):1.0
+EquivalentTo(ComponentOfEyeball,BodyStructure and (IsDivisionOf some Eyeball)):1.0
+SubClassOf(ComponentOfEyeball,BodyStructure):1.0
+is(ComponentOfFemaleExternalGenitalia,Class):1.0
+EquivalentTo(ComponentOfFemaleExternalGenitalia,BodyStructure and (IsDivisionOf some FemaleExternalGenitalia)):1.0
+SubClassOf(ComponentOfFemaleExternalGenitalia,BodyStructure):1.0
+is(ComponentOfFemalePerineum,Class):1.0
+EquivalentTo(ComponentOfFemalePerineum,BodyStructure and (IsDivisionOf some FemalePerineum)):1.0
+SubClassOf(ComponentOfFemalePerineum,BodyStructure):1.0
+is(ComponentOfFemalePhenotypeBodyStructure,Class):1.0
+EquivalentTo(ComponentOfFemalePhenotypeBodyStructure,BodyStructure and (IsDivisionOf some):1.0
+EquivalentTo(ComponentOfFemalePhenotypeBodyStructure,(BodyStructure and (hasPhenotypicalSex some):1.0
+EquivalentTo(ComponentOfFemalePhenotypeBodyStructure,(PhenotypicalSex and (hasAbsoluteState some femaleSex)))))):1.0
+SubClassOf(ComponentOfFemalePhenotypeBodyStructure,BodyStructure,):1.0
+SubClassOf(ComponentOfFemalePhenotypeBodyStructure,hasPhenotypicalSex some):1.0
+SubClassOf(ComponentOfFemalePhenotypeBodyStructure,(PhenotypicalSex and (hasAbsoluteState some femaleSex))):1.0
+is(ComponentOfFemur,Class):1.0
+EquivalentTo(ComponentOfFemur,BodyStructure and (IsDivisionOf some Femur)):1.0
+SubClassOf(ComponentOfFemur,BodyStructure):1.0
+is(ComponentOfFibula,Class):1.0
+EquivalentTo(ComponentOfFibula,BodyStructure and (IsDivisionOf some Fibula)):1.0
+SubClassOf(ComponentOfFibula,BodyStructure):1.0
+is(ComponentOfFinger,Class):1.0
+EquivalentTo(ComponentOfFinger,BodyStructure and (IsDivisionOf some Finger)):1.0
+SubClassOf(ComponentOfFinger,BodyStructure):1.0
+is(ComponentOfFloorOfAnteriorCranialFossa,Class):1.0
+EquivalentTo(ComponentOfFloorOfAnteriorCranialFossa,BodyStructure and (IsDivisionOf some FloorOfAnteriorCranialFossa)):1.0
+SubClassOf(ComponentOfFloorOfAnteriorCranialFossa,BodyStructure):1.0
+is(ComponentOfFloorOfMiddleCranialFossa,Class):1.0
+EquivalentTo(ComponentOfFloorOfMiddleCranialFossa,BodyStructure and (IsDivisionOf some FloorOfMiddleCranialFossa)):1.0
+SubClassOf(ComponentOfFloorOfMiddleCranialFossa,BodyStructure):1.0
+is(ComponentOfFloorOfPosteriorCranialFossa,Class):1.0
+EquivalentTo(ComponentOfFloorOfPosteriorCranialFossa,BodyStructure and (IsDivisionOf some FloorOfPosteriorCranialFossa)):1.0
+SubClassOf(ComponentOfFloorOfPosteriorCranialFossa,BodyStructure):1.0
+is(ComponentOfFoot,Class):1.0
+EquivalentTo(ComponentOfFoot,BodyStructure and (IsDivisionOf some Foot)):1.0
+SubClassOf(ComponentOfFoot,BodyStructure):1.0
+is(ComponentOfForearm,Class):1.0
+EquivalentTo(ComponentOfForearm,BodyStructure and (IsDivisionOf some Forearm)):1.0
+SubClassOf(ComponentOfForearm,BodyStructure):1.0
+is(ComponentOfForebrain,Class):1.0
+EquivalentTo(ComponentOfForebrain,BodyStructure and (IsDivisionOf some Prosencephalon)):1.0
+SubClassOf(ComponentOfForebrain,BodyStructure):1.0
+is(ComponentOfFrontalBone,Class):1.0
+EquivalentTo(ComponentOfFrontalBone,BodyStructure and (IsDivisionOf some FrontalBone)):1.0
+SubClassOf(ComponentOfFrontalBone,BodyStructure):1.0
+is(ComponentOfGastrointestinalTract,Class):1.0
+EquivalentTo(ComponentOfGastrointestinalTract,BodyStructure and (IsDivisionOf some GastrointestinalTract)):1.0
+SubClassOf(ComponentOfGastrointestinalTract,BodyStructure):1.0
+is(ComponentOfHand,Class):1.0
+EquivalentTo(ComponentOfHand,BodyStructure and (IsDivisionOf some Hand)):1.0
+SubClassOf(ComponentOfHand,BodyStructure):1.0
+is(ComponentOfHead,Class):1.0
+EquivalentTo(ComponentOfHead,BodyStructure and (IsDivisionOf some Head)):1.0
+SubClassOf(ComponentOfHead,BodyStructure):1.0
+is(ComponentOfHeadOrNeck,Class):1.0
+EquivalentTo(ComponentOfHeadOrNeck,BodyStructure and (IsDivisionOf some HeadOrNeck)):1.0
+SubClassOf(ComponentOfHeadOrNeck,BodyStructure):1.0
+is(ComponentOfHindbrain,Class):1.0
+EquivalentTo(ComponentOfHindbrain,BodyStructure and (IsDivisionOf some Rhombencephalon)):1.0
+SubClassOf(ComponentOfHindbrain,BodyStructure):1.0
+is(ComponentOfHip,Class):1.0
+EquivalentTo(ComponentOfHip,BodyStructure and (IsDivisionOf some Hip)):1.0
+SubClassOf(ComponentOfHip,BodyStructure):1.0
+is(ComponentOfHipJoint,Class):1.0
+EquivalentTo(ComponentOfHipJoint,BodyStructure and (IsDivisionOf some HipJoint)):1.0
+SubClassOf(ComponentOfHipJoint,BodyStructure):1.0
+is(ComponentOfHumerus,Class):1.0
+EquivalentTo(ComponentOfHumerus,BodyStructure and (IsDivisionOf some Humerus)):1.0
+SubClassOf(ComponentOfHumerus,BodyStructure):1.0
+is(ComponentOfHypothalamus,Class):1.0
+EquivalentTo(ComponentOfHypothalamus,BodyStructure and (IsDivisionOf some Hypothalamus)):1.0
+SubClassOf(ComponentOfHypothalamus,BodyStructure):1.0
+is(ComponentOfIlium,Class):1.0
+EquivalentTo(ComponentOfIlium,BodyStructure and (IsDivisionOf some Ilium)):1.0
+SubClassOf(ComponentOfIlium,BodyStructure):1.0
+is(ComponentOfIndexFinger,Class):1.0
+EquivalentTo(ComponentOfIndexFinger,BodyStructure and (IsDivisionOf some IndexFinger)):1.0
+SubClassOf(ComponentOfIndexFinger,BodyStructure):1.0
+is(ComponentOfInnerEar,Class):1.0
+EquivalentTo(ComponentOfInnerEar,BodyStructure and (IsDivisionOf some InnerEar)):1.0
+SubClassOf(ComponentOfInnerEar,BodyStructure,):1.0
+SubClassOf(ComponentOfInnerEar,hasSurfaceVisibility some internal):1.0
+is(ComponentOfInternalAnatomicalStructure,Class):1.0
+EquivalentTo(ComponentOfInternalAnatomicalStructure,BodyStructure and (IsDivisionOf some InternalBodyStructure)):1.0
+SubClassOf(ComponentOfInternalAnatomicalStructure,BodyStructure):1.0
+is(ComponentOfInternalOrgan,Class):1.0
+EquivalentTo(ComponentOfInternalOrgan,BodyStructure and (IsDivisionOf some InternalOrgan)):1.0
+SubClassOf(ComponentOfInternalOrgan,BodyStructure):1.0
+is(ComponentOfIschium,Class):1.0
+EquivalentTo(ComponentOfIschium,BodyStructure and (IsDivisionOf some Ischium)):1.0
+SubClassOf(ComponentOfIschium,BodyStructure):1.0
+is(ComponentOfJoint,Class):1.0
+EquivalentTo(ComponentOfJoint,BodyStructure and (IsDivisionOf some Joint)):1.0
+SubClassOf(ComponentOfJoint,BodyStructure):1.0
+is(ComponentOfKnee,Class):1.0
+EquivalentTo(ComponentOfKnee,BodyStructure and (IsDivisionOf some Knee)):1.0
+SubClassOf(ComponentOfKnee,BodyStructure):1.0
+is(ComponentOfKneeJoint,Class):1.0
+EquivalentTo(ComponentOfKneeJoint,BodyStructure and (IsDivisionOf some KneeJoint)):1.0
+SubClassOf(ComponentOfKneeJoint,BodyStructure):1.0
+is(ComponentOfLaryngoPharynx,Class):1.0
+EquivalentTo(ComponentOfLaryngoPharynx,BodyStructure and (IsDivisionOf some LaryngoPharynx)):1.0
+SubClassOf(ComponentOfLaryngoPharynx,BodyStructure):1.0
+is(ComponentOfLarynx,Class):1.0
+EquivalentTo(ComponentOfLarynx,BodyStructure and (IsDivisionOf some Larynx)):1.0
+SubClassOf(ComponentOfLarynx,BodyStructure,):1.0
+SubClassOf(ComponentOfLarynx,hasSurfaceVisibility some internal):1.0
+is(ComponentOfLeg,Class):1.0
+EquivalentTo(ComponentOfLeg,BodyStructure and (IsDivisionOf some Leg)):1.0
+SubClassOf(ComponentOfLeg,BodyStructure):1.0
+is(ComponentOfLittleFinger,Class):1.0
+EquivalentTo(ComponentOfLittleFinger,BodyStructure and (IsDivisionOf some LittleFinger)):1.0
+SubClassOf(ComponentOfLittleFinger,BodyStructure):1.0
+is(ComponentOfLowerExtremity,Class):1.0
+EquivalentTo(ComponentOfLowerExtremity,BodyStructure and (IsDivisionOf some LowerExtremity)):1.0
+SubClassOf(ComponentOfLowerExtremity,BodyStructure):1.0
+is(ComponentOfLowerLimbBone,Class):1.0
+EquivalentTo(ComponentOfLowerLimbBone,BodyStructure and (IsDivisionOf some BoneOfLowerLimb)):1.0
+SubClassOf(ComponentOfLowerLimbBone,BodyStructure):1.0
+is(ComponentOfLowerLimbJoint,Class):1.0
+EquivalentTo(ComponentOfLowerLimbJoint,BodyStructure and (IsDivisionOf some JointOfLowerLimb)):1.0
+SubClassOf(ComponentOfLowerLimbJoint,BodyStructure):1.0
+is(ComponentOfLowerUrinaryTract,Class):1.0
+EquivalentTo(ComponentOfLowerUrinaryTract,BodyStructure and (IsDivisionOf some LowerUrinaryTract)):1.0
+SubClassOf(ComponentOfLowerUrinaryTract,BodyStructure):1.0
+is(ComponentOfLymphoidTonsil,Class):1.0
+EquivalentTo(ComponentOfLymphoidTonsil,BodyStructure and (IsDivisionOf some LymphoidTonsil)):1.0
+SubClassOf(ComponentOfLymphoidTonsil,BodyStructure):1.0
+is(ComponentOfMajorBodyDivision,Class):1.0
+EquivalentTo(ComponentOfMajorBodyDivision,BodyStructure and (IsDivisionOf some MajorBodyDivision)):1.0
+SubClassOf(ComponentOfMajorBodyDivision,BodyStructure):1.0
+is(ComponentOfMaleExternalGenitalia,Class):1.0
+EquivalentTo(ComponentOfMaleExternalGenitalia,BodyStructure and (IsDivisionOf some MaleExternalGenitalia)):1.0
+SubClassOf(ComponentOfMaleExternalGenitalia,BodyStructure):1.0
+is(ComponentOfMalePerineum,Class):1.0
+EquivalentTo(ComponentOfMalePerineum,BodyStructure and (IsDivisionOf some MalePerineum)):1.0
+SubClassOf(ComponentOfMalePerineum,BodyStructure):1.0
+is(ComponentOfMalePhenotypeBodyStructure,Class):1.0
+EquivalentTo(ComponentOfMalePhenotypeBodyStructure,BodyStructure and (IsDivisionOf some):1.0
+EquivalentTo(ComponentOfMalePhenotypeBodyStructure,(BodyStructure and (hasPhenotypicalSex some):1.0
+EquivalentTo(ComponentOfMalePhenotypeBodyStructure,(PhenotypicalSex and (hasAbsoluteState some maleSex)))))):1.0
+SubClassOf(ComponentOfMalePhenotypeBodyStructure,BodyStructure,):1.0
+SubClassOf(ComponentOfMalePhenotypeBodyStructure,hasPhenotypicalSex some):1.0
+SubClassOf(ComponentOfMalePhenotypeBodyStructure,(PhenotypicalSex and (hasAbsoluteState some maleSex))):1.0
+is(ComponentOfMandible,Class):1.0
+EquivalentTo(ComponentOfMandible,BodyStructure and (IsDivisionOf some Mandible)):1.0
+SubClassOf(ComponentOfMandible,BodyStructure):1.0
+is(ComponentOfMaxilla,Class):1.0
+EquivalentTo(ComponentOfMaxilla,BodyStructure and (IsDivisionOf some Maxilla)):1.0
+SubClassOf(ComponentOfMaxilla,BodyStructure):1.0
+is(ComponentOfMedullaOblongata,Class):1.0
+EquivalentTo(ComponentOfMedullaOblongata,BodyStructure and (IsDivisionOf some Myelencephalon)):1.0
+SubClassOf(ComponentOfMedullaOblongata,BodyStructure):1.0
+is(ComponentOfMidbrain,Class):1.0
+EquivalentTo(ComponentOfMidbrain,BodyStructure and (IsDivisionOf some Mesencephalon)):1.0
+SubClassOf(ComponentOfMidbrain,BodyStructure):1.0
+is(ComponentOfMiddleEar,Class):1.0
+EquivalentTo(ComponentOfMiddleEar,BodyStructure and (IsDivisionOf some MiddleEar)):1.0
+SubClassOf(ComponentOfMiddleEar,BodyStructure):1.0
+is(ComponentOfMiddleFinger,Class):1.0
+EquivalentTo(ComponentOfMiddleFinger,BodyStructure and (IsDivisionOf some MiddleFinger)):1.0
+SubClassOf(ComponentOfMiddleFinger,BodyStructure):1.0
+is(ComponentOfMuscleOfLowerLimb,Class):1.0
+EquivalentTo(ComponentOfMuscleOfLowerLimb,BodyStructure and (IsDivisionOf some MuscleOfLowerLimb)):1.0
+SubClassOf(ComponentOfMuscleOfLowerLimb,BodyStructure):1.0
+is(ComponentOfMuscleOfUpperLimb,Class):1.0
+EquivalentTo(ComponentOfMuscleOfUpperLimb,BodyStructure and (IsDivisionOf some MuscleOfUpperLimb)):1.0
+SubClassOf(ComponentOfMuscleOfUpperLimb,BodyStructure):1.0
+is(ComponentOfNasoPharynx,Class):1.0
+EquivalentTo(ComponentOfNasoPharynx,BodyStructure and (IsDivisionOf some NasoPharynx)):1.0
+SubClassOf(ComponentOfNasoPharynx,BodyStructure):1.0
+is(ComponentOfNeck,Class):1.0
+EquivalentTo(ComponentOfNeck,BodyStructure and (IsDivisionOf some Neck)):1.0
+SubClassOf(ComponentOfNeck,BodyStructure):1.0
+is(ComponentOfNeuralPathway,Class):1.0
+EquivalentTo(ComponentOfNeuralPathway,BodyStructure and (IsDivisionOf some NeuralPathway)):1.0
+SubClassOf(ComponentOfNeuralPathway,BodyStructure):1.0
+is(ComponentOfNeurohypophysis,Class):1.0
+EquivalentTo(ComponentOfNeurohypophysis,BodyStructure and (IsDivisionOf some PosteriorLobeOfPituitaryGland)):1.0
+SubClassOf(ComponentOfNeurohypophysis,BodyStructure):1.0
+is(ComponentOfNonAxialSkeleton,Class):1.0
+EquivalentTo(ComponentOfNonAxialSkeleton,BodyStructure and (IsDivisionOf some NonAxialSkeleton)):1.0
+SubClassOf(ComponentOfNonAxialSkeleton,BodyStructure):1.0
+is(ComponentOfNose,Class):1.0
+EquivalentTo(ComponentOfNose,BodyStructure and (IsDivisionOf some Nose)):1.0
+SubClassOf(ComponentOfNose,BodyStructure):1.0
+is(ComponentOfOccipitalBone,Class):1.0
+EquivalentTo(ComponentOfOccipitalBone,BodyStructure and (IsDivisionOf some OccipitalBone)):1.0
+SubClassOf(ComponentOfOccipitalBone,BodyStructure):1.0
+is(ComponentOfOcularLens,Class):1.0
+EquivalentTo(ComponentOfOcularLens,BodyStructure and (IsDivisionOf some Lens)):1.0
+SubClassOf(ComponentOfOcularLens,BodyStructure):1.0
+is(ComponentOfOesophagus,Class):1.0
+EquivalentTo(ComponentOfOesophagus,BodyStructure and (IsDivisionOf some Esophagus)):1.0
+SubClassOf(ComponentOfOesophagus,BodyStructure):1.0
+is(ComponentOfOrbit,Class):1.0
+EquivalentTo(ComponentOfOrbit,BodyStructure and (IsDivisionOf some Orbit)):1.0
+SubClassOf(ComponentOfOrbit,BodyStructure):1.0
+is(ComponentOfOroPharynx,Class):1.0
+EquivalentTo(ComponentOfOroPharynx,BodyStructure and (IsDivisionOf some OroPharynx)):1.0
+SubClassOf(ComponentOfOroPharynx,BodyStructure):1.0
+is(ComponentOfOvary,Class):1.0
+EquivalentTo(ComponentOfOvary,BodyStructure and (IsDivisionOf some Ovary)):1.0
+SubClassOf(ComponentOfOvary,BodyStructure,):1.0
+SubClassOf(ComponentOfOvary,hasSurfaceVisibility some internal):1.0
+is(ComponentOfPalatineBone,Class):1.0
+EquivalentTo(ComponentOfPalatineBone,BodyStructure and (IsDivisionOf some PalatineBone)):1.0
+SubClassOf(ComponentOfPalatineBone,BodyStructure):1.0
+is(ComponentOfPancreas,Class):1.0
+EquivalentTo(ComponentOfPancreas,BodyStructure and (IsDivisionOf some Pancreas)):1.0
+SubClassOf(ComponentOfPancreas,BodyStructure,):1.0
+SubClassOf(ComponentOfPancreas,hasSurfaceVisibility some internal):1.0
+is(ComponentOfParathyroidGland,Class):1.0
+EquivalentTo(ComponentOfParathyroidGland,BodyStructure and (IsDivisionOf some ParathyroidGland)):1.0
+SubClassOf(ComponentOfParathyroidGland,BodyStructure):1.0
+is(ComponentOfPelvicBone,Class):1.0
+EquivalentTo(ComponentOfPelvicBone,BodyStructure and (IsDivisionOf some PelvicBone)):1.0
+SubClassOf(ComponentOfPelvicBone,BodyStructure):1.0
+is(ComponentOfPelvicPartOfTrunk,Class):1.0
+EquivalentTo(ComponentOfPelvicPartOfTrunk,BodyStructure and (IsDivisionOf some PelvicPartOfTrunk)):1.0
+SubClassOf(ComponentOfPelvicPartOfTrunk,BodyStructure):1.0
+is(ComponentOfPelvis,Class):1.0
+EquivalentTo(ComponentOfPelvis,BodyStructure and (IsDivisionOf some Pelvis)):1.0
+SubClassOf(ComponentOfPelvis,BodyStructure):1.0
+is(ComponentOfPenis,Class):1.0
+EquivalentTo(ComponentOfPenis,BodyStructure and (IsDivisionOf some Penis)):1.0
+SubClassOf(ComponentOfPenis,BodyStructure):1.0
+is(ComponentOfPerineum,Class):1.0
+EquivalentTo(ComponentOfPerineum,BodyStructure and (IsDivisionOf some Perineum)):1.0
+SubClassOf(ComponentOfPerineum,BodyStructure):1.0
+is(ComponentOfPharynx,Class):1.0
+EquivalentTo(ComponentOfPharynx,BodyStructure and (IsDivisionOf some Pharynx)):1.0
+SubClassOf(ComponentOfPharynx,BodyStructure,):1.0
+SubClassOf(ComponentOfPharynx,hasSurfaceVisibility some internal):1.0
+is(ComponentOfPinealGland,Class):1.0
+EquivalentTo(ComponentOfPinealGland,BodyStructure and (IsDivisionOf some PinealGland)):1.0
+SubClassOf(ComponentOfPinealGland,BodyStructure):1.0
+is(ComponentOfPituitaryGland,Class):1.0
+EquivalentTo(ComponentOfPituitaryGland,BodyStructure and (IsDivisionOf some PituitaryGland)):1.0
+SubClassOf(ComponentOfPituitaryGland,BodyStructure):1.0
+is(ComponentOfPons,Class):1.0
+EquivalentTo(ComponentOfPons,BodyStructure and (IsDivisionOf some Pons)):1.0
+SubClassOf(ComponentOfPons,BodyStructure):1.0
+is(ComponentOfProstate,Class):1.0
+EquivalentTo(ComponentOfProstate,BodyStructure and (IsDivisionOf some ProstateGland)):1.0
+SubClassOf(ComponentOfProstate,BodyStructure,):1.0
+SubClassOf(ComponentOfProstate,hasSurfaceVisibility some internal):1.0
+is(ComponentOfPubis,Class):1.0
+EquivalentTo(ComponentOfPubis,BodyStructure and (IsDivisionOf some Pubis)):1.0
+SubClassOf(ComponentOfPubis,BodyStructure):1.0
+is(ComponentOfPylorus,Class):1.0
+EquivalentTo(ComponentOfPylorus,BodyStructure and (IsDivisionOf some Pylorus)):1.0
+SubClassOf(ComponentOfPylorus,BodyStructure):1.0
+is(ComponentOfRadius,Class):1.0
+EquivalentTo(ComponentOfRadius,BodyStructure and (IsDivisionOf some Radius)):1.0
+SubClassOf(ComponentOfRadius,BodyStructure):1.0
+is(ComponentOfRenalCortex,Class):1.0
+EquivalentTo(ComponentOfRenalCortex,BodyStructure and (IsDivisionOf some CortexOfKidney)):1.0
+SubClassOf(ComponentOfRenalCortex,BodyStructure):1.0
+is(ComponentOfRenalMedulla,Class):1.0
+EquivalentTo(ComponentOfRenalMedulla,BodyStructure and (IsDivisionOf some MedullaOfKidney)):1.0
+SubClassOf(ComponentOfRenalMedulla,BodyStructure):1.0
+is(ComponentOfRenalNonPelvis,Class):1.0
+EquivalentTo(ComponentOfRenalNonPelvis,BodyStructure and (IsDivisionOf some RenalNonPelvis)):1.0
+SubClassOf(ComponentOfRenalNonPelvis,BodyStructure):1.0
+is(ComponentOfRenalPelvis,Class):1.0
+EquivalentTo(ComponentOfRenalPelvis,BodyStructure and (IsDivisionOf some RenalPelvis)):1.0
+SubClassOf(ComponentOfRenalPelvis,BodyStructure):1.0
+is(ComponentOfRingFinger,Class):1.0
+EquivalentTo(ComponentOfRingFinger,BodyStructure and (IsDivisionOf some RingFinger)):1.0
+SubClassOf(ComponentOfRingFinger,BodyStructure):1.0
+is(ComponentOfSacralVertebra,Class):1.0
+EquivalentTo(ComponentOfSacralVertebra,BodyStructure and (IsDivisionOf some SacralVertebra)):1.0
+SubClassOf(ComponentOfSacralVertebra,BodyStructure):1.0
+is(ComponentOfSacrum,Class):1.0
+EquivalentTo(ComponentOfSacrum,BodyStructure and (IsDivisionOf some Sacrum)):1.0
+SubClassOf(ComponentOfSacrum,BodyStructure):1.0
+is(ComponentOfSalpinx,Class):1.0
+EquivalentTo(ComponentOfSalpinx,BodyStructure and (IsDivisionOf some FallopianTube)):1.0
+SubClassOf(ComponentOfSalpinx,BodyStructure,):1.0
+SubClassOf(ComponentOfSalpinx,hasSurfaceVisibility some internal):1.0
+is(ComponentOfScapula,Class):1.0
+EquivalentTo(ComponentOfScapula,BodyStructure and (IsDivisionOf some Scapula)):1.0
+SubClassOf(ComponentOfScapula,BodyStructure):1.0
+is(ComponentOfShoulder,Class):1.0
+EquivalentTo(ComponentOfShoulder,BodyStructure and (IsDivisionOf some Shoulder)):1.0
+SubClassOf(ComponentOfShoulder,BodyStructure):1.0
+is(ComponentOfSkeleton,Class):1.0
+EquivalentTo(ComponentOfSkeleton,BodyStructure and (IsDivisionOf some Skeleton)):1.0
+SubClassOf(ComponentOfSkeleton,BodyStructure):1.0
+is(ComponentOfSkinAsOrgan,Class):1.0
+EquivalentTo(ComponentOfSkinAsOrgan,BodyStructure and (IsDivisionOf some SkinAsOrgan)):1.0
+SubClassOf(ComponentOfSkinAsOrgan,BodyStructure):1.0
+is(ComponentOfSkull,Class):1.0
+EquivalentTo(ComponentOfSkull,BodyStructure and (IsDivisionOf some Skull)):1.0
+SubClassOf(ComponentOfSkull,BodyStructure):1.0
+is(ComponentOfSkullBone,Class):1.0
+EquivalentTo(ComponentOfSkullBone,BodyStructure and (IsDivisionOf some BoneOfSkull)):1.0
+SubClassOf(ComponentOfSkullBone,BodyStructure):1.0
+is(ComponentOfSphenoidBone,Class):1.0
+EquivalentTo(ComponentOfSphenoidBone,BodyStructure and (IsDivisionOf some SphenoidBone)):1.0
+SubClassOf(ComponentOfSphenoidBone,BodyStructure):1.0
+is(ComponentOfSpinalColumn,Class):1.0
+EquivalentTo(ComponentOfSpinalColumn,BodyStructure and (IsDivisionOf some SpinalColumn)):1.0
+SubClassOf(ComponentOfSpinalColumn,BodyStructure):1.0
+is(ComponentOfSpinalCord,Class):1.0
+EquivalentTo(ComponentOfSpinalCord,BodyStructure and (IsDivisionOf some SpinalCord)):1.0
+SubClassOf(ComponentOfSpinalCord,BodyStructure):1.0
+is(ComponentOfStomach,Class):1.0
+EquivalentTo(ComponentOfStomach,BodyStructure and (IsDivisionOf some Stomach)):1.0
+SubClassOf(ComponentOfStomach,BodyStructure):1.0
+is(ComponentOfSurfaceBodyStructure,Class):1.0
+EquivalentTo(ComponentOfSurfaceBodyStructure,BodyStructure and (IsDivisionOf some SurfaceBodyStructure)):1.0
+SubClassOf(ComponentOfSurfaceBodyStructure,BodyStructure):1.0
+is(ComponentOfSynovialJoint,Class):1.0
+EquivalentTo(ComponentOfSynovialJoint,BodyStructure and (IsDivisionOf some SynovialJoint)):1.0
+SubClassOf(ComponentOfSynovialJoint,BodyStructure):1.0
+is(ComponentOfTemporalBone,Class):1.0
+EquivalentTo(ComponentOfTemporalBone,BodyStructure and (IsDivisionOf some TemporalBone)):1.0
+SubClassOf(ComponentOfTemporalBone,BodyStructure):1.0
+is(ComponentOfTestis,Class):1.0
+EquivalentTo(ComponentOfTestis,BodyStructure and (IsDivisionOf some Testis)):1.0
+SubClassOf(ComponentOfTestis,BodyStructure,):1.0
+SubClassOf(ComponentOfTestis,hasSurfaceVisibility some internal):1.0
+is(ComponentOfThalamus,Class):1.0
+EquivalentTo(ComponentOfThalamus,BodyStructure and (IsDivisionOf some Thalamus)):1.0
+SubClassOf(ComponentOfThalamus,BodyStructure):1.0
+is(ComponentOfThigh,Class):1.0
+EquivalentTo(ComponentOfThigh,BodyStructure and (IsDivisionOf some Thigh)):1.0
+SubClassOf(ComponentOfThigh,BodyStructure):1.0
+is(ComponentOfThoracicVertebra,Class):1.0
+EquivalentTo(ComponentOfThoracicVertebra,BodyStructure and (IsDivisionOf some ThoracicVertebra)):1.0
+SubClassOf(ComponentOfThoracicVertebra,BodyStructure):1.0
+is(ComponentOfThumb,Class):1.0
+EquivalentTo(ComponentOfThumb,BodyStructure and (IsDivisionOf some Thumb)):1.0
+SubClassOf(ComponentOfThumb,BodyStructure):1.0
+is(ComponentOfThymusGland,Class):1.0
+EquivalentTo(ComponentOfThymusGland,BodyStructure and (IsDivisionOf some ThymusGland)):1.0
+SubClassOf(ComponentOfThymusGland,BodyStructure):1.0
+is(ComponentOfThyroidGland,Class):1.0
+EquivalentTo(ComponentOfThyroidGland,BodyStructure and (IsDivisionOf some ThyroidGland)):1.0
+SubClassOf(ComponentOfThyroidGland,BodyStructure):1.0
+is(ComponentOfTibia,Class):1.0
+EquivalentTo(ComponentOfTibia,BodyStructure and (IsDivisionOf some Tibia)):1.0
+SubClassOf(ComponentOfTibia,BodyStructure):1.0
+is(ComponentOfTongue,Class):1.0
+EquivalentTo(ComponentOfTongue,BodyStructure and (IsDivisionOf some Tongue)):1.0
+SubClassOf(ComponentOfTongue,BodyStructure):1.0
+is(ComponentOfTrunk,Class):1.0
+EquivalentTo(ComponentOfTrunk,BodyStructure and (IsDivisionOf some Trunk)):1.0
+SubClassOf(ComponentOfTrunk,BodyStructure):1.0
+is(ComponentOfUlna,Class):1.0
+EquivalentTo(ComponentOfUlna,BodyStructure and (IsDivisionOf some Ulna)):1.0
+SubClassOf(ComponentOfUlna,BodyStructure):1.0
+is(ComponentOfUpperExtremity,Class):1.0
+EquivalentTo(ComponentOfUpperExtremity,BodyStructure and (IsDivisionOf some UpperExtremity)):1.0
+SubClassOf(ComponentOfUpperExtremity,BodyStructure):1.0
+is(ComponentOfUpperLimbBone,Class):1.0
+EquivalentTo(ComponentOfUpperLimbBone,BodyStructure and (IsDivisionOf some BoneOfUpperLimb)):1.0
+SubClassOf(ComponentOfUpperLimbBone,BodyStructure):1.0
+is(ComponentOfUpperLimbJoint,Class):1.0
+EquivalentTo(ComponentOfUpperLimbJoint,BodyStructure and (IsDivisionOf some JointOfUpperLimb)):1.0
+SubClassOf(ComponentOfUpperLimbJoint,BodyStructure):1.0
+is(ComponentOfUpperUrinaryTract,Class):1.0
+EquivalentTo(ComponentOfUpperUrinaryTract,BodyStructure and (IsDivisionOf some UpperUrinaryTract)):1.0
+SubClassOf(ComponentOfUpperUrinaryTract,BodyStructure):1.0
+is(ComponentOfUrinaryTract,Class):1.0
+EquivalentTo(ComponentOfUrinaryTract,BodyStructure and (IsDivisionOf some UrinaryTract)):1.0
+SubClassOf(ComponentOfUrinaryTract,BodyStructure,):1.0
+SubClassOf(ComponentOfUrinaryTract,hasSurfaceVisibility some internal):1.0
+is(ComponentOfUterineCervix,Class):1.0
+EquivalentTo(ComponentOfUterineCervix,BodyStructure and (IsDivisionOf some CervixUteri)):1.0
+SubClassOf(ComponentOfUterineCervix,BodyStructure):1.0
+is(ComponentOfUterus,Class):1.0
+EquivalentTo(ComponentOfUterus,BodyStructure and (IsDivisionOf some Uterus)):1.0
+SubClassOf(ComponentOfUterus,BodyStructure,):1.0
+SubClassOf(ComponentOfUterus,hasSurfaceVisibility some internal):1.0
+is(ComponentOfVagina,Class):1.0
+EquivalentTo(ComponentOfVagina,BodyStructure and (IsDivisionOf some Vagina)):1.0
+SubClassOf(ComponentOfVagina,BodyStructure):1.0
+is(ComponentOfVertebra,Class):1.0
+EquivalentTo(ComponentOfVertebra,BodyStructure and (IsDivisionOf some Vertebra)):1.0
+SubClassOf(ComponentOfVertebra,BodyStructure):1.0
+is(ComponentOfWrist,Class):1.0
+EquivalentTo(ComponentOfWrist,BodyStructure and (IsDivisionOf some Wrist)):1.0
+SubClassOf(ComponentOfWrist,BodyStructure):1.0
+is(ComponentOfWristJoint,Class):1.0
+EquivalentTo(ComponentOfWristJoint,BodyStructure and (IsDivisionOf some WristJoint)):1.0
+SubClassOf(ComponentOfWristJoint,BodyStructure):1.0
+is(ComponentOfZygoma,Class):1.0
+EquivalentTo(ComponentOfZygoma,BodyStructure and (IsDivisionOf some Zygoma)):1.0
+SubClassOf(ComponentOfZygoma,BodyStructure):1.0
+is(ComponentPartOfBone,Class):1.0
+EquivalentTo(ComponentPartOfBone,BodyStructure and (isStructuralComponentOf some Bone)):1.0
+SubClassOf(ComponentPartOfBone,BodyStructure):1.0
+is(Conception,Class):1.0
+is(Conceptus,Class):1.0
+SubClassOf(Conceptus,ProductOfConception,):1.0
+SubClassOf(Conceptus,hasStructuralComponent some AmnioticMembrane,):1.0
+SubClassOf(Conceptus,hasStructuralComponent some ChorionicMembrane,):1.0
+SubClassOf(Conceptus,hasStructuralComponent some Embryo,):1.0
+SubClassOf(Conceptus,hasStructuralComponent some Foetus,):1.0
+SubClassOf(Conceptus,hasStructuralComponent some LobeOfPlacenta,):1.0
+SubClassOf(Conceptus,hasStructuralComponent some Placenta,):1.0
+SubClassOf(Conceptus,hasStructuralComponent some UmbilicalCord):1.0
+is(CondensingOstitis,Class):1.0
+EquivalentTo(CondensingOstitis,BodyStructure and (hasPathologicalStatus some pathological) and (hasSpecificLocation some Bone) and (hasUniqueAssociatedProcess some SclerosisProcess) and (isConsequenceOf some PulpitisOfTooth)):1.0
+SubClassOf(CondensingOstitis,BodyStructure):1.0
+is(CongenitalHaemangioma,Class):1.0
+SubClassOf(CongenitalHaemangioma,Haemangioma):1.0
+is(CongenitalHeartDefect,Class):1.0
+EquivalentTo(CongenitalHeartDefect,BodyStructure and (IsDivisionOf some Heart) and (hasAcquisitionMode some):1.0
+EquivalentTo(CongenitalHeartDefect,(AcquisitionMode and (hasAbsoluteState some congenital))) and (hasPathologicalStatus some pathological)):1.0
+SubClassOf(CongenitalHeartDefect,BodyStructure):1.0
+is(CongenitalVariantBodyStructure,Class):1.0
+SubClassOf(CongenitalVariantBodyStructure,VariantBodyStructure):1.0
+is(Conjunctiva,Class):1.0
+is(ConjunctivalLayer,Class):1.0
+EquivalentTo(ConjunctivalLayer,BodyStructure and (isLayerOf some Conjunctiva)):1.0
+SubClassOf(ConjunctivalLayer,BodyStructure):1.0
+is(ConnectiveTissue,Class):1.0
+is(ConnectiveTissueCell,Class):1.0
+SubClassOf(ConnectiveTissueCell,TissueCell):1.0
+is(ConnectiveTissueStructure,Class):1.0
+EquivalentTo(ConnectiveTissueStructure,BodyStructure and (isMadeOf some ConnectiveTissue)):1.0
+SubClassOf(ConnectiveTissueStructure,BodyStructure):1.0
+is(ContentOfOrbit,Class):1.0
+EquivalentTo(ContentOfOrbit,BodyStructure and (InverseContainmentAttribute some Orbit)):1.0
+SubClassOf(ContentOfOrbit,BodyStructure,):1.0
+SubClassOf(ContentOfOrbit,isPairedOrUnpaired some mirrorImaged):1.0
+is(Copper,Class):1.0
+is(CopperDeposit,Class):1.0
+EquivalentTo(CopperDeposit,BodyStructure and (hasPathologicalStatus some pathological) and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(CopperDeposit,(Sedimentation and (actsSpecificallyOn some Copper)))):1.0
+SubClassOf(CopperDeposit,BodyStructure):1.0
+is(CopperDepositionInBrain,Class):1.0
+SubClassOf(CopperDepositionInBrain,CopperDeposit):1.0
+is(CopperDepositionInKidney,Class):1.0
+SubClassOf(CopperDepositionInKidney,CopperDeposit):1.0
+is(CopperDepositionInLiver,Class):1.0
+SubClassOf(CopperDepositionInLiver,CopperDeposit):1.0
+is(CopperDepositionInNucleusLentiformis,Class):1.0
+SubClassOf(CopperDepositionInNucleusLentiformis,CopperDeposit):1.0
+is(Cornea,Class):1.0
+is(CornealDeposit,Class):1.0
+SubClassOf(CornealDeposit,Deposit):1.0
+is(CornealLayer,Class):1.0
+EquivalentTo(CornealLayer,BodyStructure and (isLayerOf some Cornea)):1.0
+SubClassOf(CornealLayer,BodyStructure,):1.0
+SubClassOf(CornealLayer,isStructuralComponentOf some Eye):1.0
+is(CornealOpacity,Class):1.0
+SubClassOf(CornealOpacity,OpaqueStructure):1.0
+is(CoronaryOcclusion,Class):1.0
+SubClassOf(CoronaryOcclusion,OccludingLesion):1.0
+is(CortexOfKidney,Class):1.0
+is(CranialCavity,Class):1.0
+is(CranialFossa,Class):1.0
+is(CranialNerve,Class):1.0
+is(Cranium,Class):1.0
+is(Cyst,Class):1.0
+EquivalentTo(Cyst,BodyStructure and (hasLayer some Epithelium) and (hasTopology some):1.0
+EquivalentTo(Cyst,(Topology and (hasAbsoluteState some closedHollow)))):1.0
+SubClassOf(Cyst,BodyStructure):1.0
+is(CysticLymphangioma,Class):1.0
+SubClassOf(CysticLymphangioma,Lymphangioma):1.0
+is(CysticSurfaceLayer,Class):1.0
+SubClassOf(CysticSurfaceLayer,BodyWall):1.0
+is(DentalPlaque,Class):1.0
+SubClassOf(DentalPlaque,OrganicSolidStructure):1.0
+is(DentalPlaqueOnToothSurface,Class):1.0
+EquivalentTo(DentalPlaqueOnToothSurface,DentalPlaque and (hasSpecificLocation some SurfaceOfTooth)):1.0
+SubClassOf(DentalPlaqueOnToothSurface,DentalPlaque):1.0
+is(DentinOfTooth,Class):1.0
+SubClassOf(DentinOfTooth,StructuralComponentOfTooth):1.0
+is(Deposit,Class):1.0
+EquivalentTo(Deposit,BodyStructure and (hasPathologicalStatus some pathological) and (hasUniqueAssociatedProcess some Sedimentation)):1.0
+SubClassOf(Deposit,BodyStructure):1.0
+is(DermatologicalComponentOfLowerLimb,Class):1.0
+EquivalentTo(DermatologicalComponentOfLowerLimb,BodyStructure and (IsDivisionOf some LowerExtremity) and (IsDivisionOf some SkinSystem)):1.0
+SubClassOf(DermatologicalComponentOfLowerLimb,BodyStructure):1.0
+is(DermatologicalComponentOfUpperLimb,Class):1.0
+EquivalentTo(DermatologicalComponentOfUpperLimb,BodyStructure and (IsDivisionOf some SkinSystem) and (IsDivisionOf some UpperExtremity)):1.0
+SubClassOf(DermatologicalComponentOfUpperLimb,BodyStructure):1.0
+is(DermatologicalSystemComponent,Class):1.0
+EquivalentTo(DermatologicalSystemComponent,BodyStructure and (IsDivisionOf some SkinSystem)):1.0
+SubClassOf(DermatologicalSystemComponent,BodyStructure):1.0
+is(DermatophyteFungalSpecies,Class):1.0
+SubClassOf(DermatophyteFungalSpecies,Fungus):1.0
+is(DermisAsWhole,Class):1.0
+is(DescendingAorta,Class):1.0
+is(Deuteromycota,Class):1.0
+SubClassOf(Deuteromycota,Fungus):1.0
+is(Diameter,Class):1.0
+is(Diencephalon,Class):1.0
+is(DigestiveSystem,Class):1.0
+is(DigestiveSystemComponent,Class):1.0
+EquivalentTo(DigestiveSystemComponent,BodyStructure and (IsDivisionOf some DigestiveSystem)):1.0
+SubClassOf(DigestiveSystemComponent,BodyStructure):1.0
+is(Dimension,Class):1.0
+is(DimensionDecreasingProcess,Class):1.0
+is(Dipylidium,Class):1.0
+is(DipylidiumCaninum,Class):1.0
+SubClassOf(DipylidiumCaninum,Dipylidium):1.0
+is(Dividing,Class):1.0
+is(Division,Class):1.0
+EquivalentTo(Division,BodyStructure and (hasUniqueAssociatedProcess some Dividing)):1.0
+SubClassOf(Division,BodyStructure,):1.0
+SubClassOf(Division,hasShapeAnalagousTo some):1.0
+SubClassOf(Division,(AnatomicalShape and (hasAbsoluteState some linear)),):1.0
+SubClassOf(Division,hasShapeAnalagousTo only Anonymous-48):1.0
+is(DivisionOfArtery,Class):1.0
+EquivalentTo(DivisionOfArtery,BodyStructure and (isLinearDivisionOf some Artery)):1.0
+SubClassOf(DivisionOfArtery,BodyStructure,):1.0
+SubClassOf(DivisionOfArtery,playsPhysiologicalRole some AfferentRole):1.0
+is(DivisionOfBloodVessel,Class):1.0
+EquivalentTo(DivisionOfBloodVessel,BodyStructure and (isLinearDivisionOf some BloodVessel)):1.0
+SubClassOf(DivisionOfBloodVessel,BodyStructure,):1.0
+SubClassOf(DivisionOfBloodVessel,isStructuralComponentOf some CardiovascularSystem):1.0
+is(DivisionOfBone,Class):1.0
+EquivalentTo(DivisionOfBone,BodyStructure and (IsDivisionOf some Bone)):1.0
+SubClassOf(DivisionOfBone,BodyStructure):1.0
+is(DivisionOfCerebralPeduncle,Class):1.0
+EquivalentTo(DivisionOfCerebralPeduncle,BodyStructure and (IsDivisionOf some CerebralPeduncle)):1.0
+SubClassOf(DivisionOfCerebralPeduncle,BodyStructure):1.0
+is(DivisionOfIntraThoracicAorta,Class):1.0
+EquivalentTo(DivisionOfIntraThoracicAorta,BodyStructure and (isLinearDivisionOf some IntraThoracicAorta)):1.0
+SubClassOf(DivisionOfIntraThoracicAorta,BodyStructure):1.0
+is(DivisionOfLobe,Class):1.0
+EquivalentTo(DivisionOfLobe,BodyStructure and (isSpecificSolidDivisionOf some Lobe)):1.0
+SubClassOf(DivisionOfLobe,BodyStructure):1.0
+is(DivisionOfMandible,Class):1.0
+EquivalentTo(DivisionOfMandible,BodyStructure and (isSolidDivisionOf some Mandible)):1.0
+SubClassOf(DivisionOfMandible,BodyStructure):1.0
+is(DivisionOfVein,Class):1.0
+EquivalentTo(DivisionOfVein,BodyStructure and (isLinearDivisionOf some Vein)):1.0
+SubClassOf(DivisionOfVein,BodyStructure,):1.0
+SubClassOf(DivisionOfVein,playsPhysiologicalRole some EfferentRole):1.0
+is(Drug,Class):1.0
+is(DuodenalCap,Class):1.0
+SubClassOf(DuodenalCap,ComponentOfDuodenum):1.0
+is(DuodenalWall,Class):1.0
+SubClassOf(DuodenalWall,BodyWall):1.0
+is(Duodenum,Class):1.0
+is(Dysgenesis,Class):1.0
+SubClassOf(Dysgenesis,Organogenesis):1.0
+is(Ear,Class):1.0
+is(EctopicBodyStructure,Class):1.0
+EquivalentTo(EctopicBodyStructure,BodyStructure and (hasEctopicSupernumeraryStatus some ectopic)):1.0
+SubClassOf(EctopicBodyStructure,BodyStructure,):1.0
+SubClassOf(EctopicBodyStructure,hasAbnormalityStatus some variant,):1.0
+SubClassOf(EctopicBodyStructure,hasPathologicalStatus some pathological):1.0
+is(EctopicConceptus,Class):1.0
+SubClassOf(EctopicConceptus,Conceptus):1.0
+is(Effectiveness,Class):1.0
+is(EfferentRole,Class):1.0
+is(Elbow,Class):1.0
+is(ElectricalConduction,Class):1.0
+is(EleventhIntercostalSpace,Class):1.0
+is(EmbolismProcess,Class):1.0
+is(Embryo,Class):1.0
+is(Embryoma,Class):1.0
+EquivalentTo(Embryoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Embryoma,(BenignNeoplasticProcess and (actsOn some EmbryonicCell)))):1.0
+SubClassOf(Embryoma,BodyStructure):1.0
+is(EmbryonicCell,Class):1.0
+SubClassOf(EmbryonicCell,Cell,):1.0
+SubClassOf(EmbryonicCell,isConsequenceOf some Conception):1.0
+is(EmphysematousBulla,Class):1.0
+SubClassOf(EmphysematousBulla,BodySpace):1.0
+is(EnamelOfTooth,Class):1.0
+SubClassOf(EnamelOfTooth,StructuralComponentOfTooth):1.0
+is(EndArteryRole,Class):1.0
+is(Endocardium,Class):1.0
+is(EndocrineOrgan,Class):1.0
+SubClassOf(EndocrineOrgan,InternalBodyStructure):1.0
+is(EndocrineOrganComponent,Class):1.0
+EquivalentTo(EndocrineOrganComponent,BodyStructure and (IsDivisionOf some EndocrineOrgan)):1.0
+SubClassOf(EndocrineOrganComponent,BodyStructure):1.0
+is(EndocrinePancreas,Class):1.0
+is(EndocrineSystem,Class):1.0
+is(EndocrineSystemComponent,Class):1.0
+EquivalentTo(EndocrineSystemComponent,BodyStructure and (IsDivisionOf some EndocrineSystem)):1.0
+SubClassOf(EndocrineSystemComponent,BodyStructure,):1.0
+SubClassOf(EndocrineSystemComponent,hasSurfaceVisibility some internal):1.0
+is(EndometrialTissue,Class):1.0
+is(EndometrioidStructure,Class):1.0
+EquivalentTo(EndometrioidStructure,BodyStructure and (isMadeOf some EndometrialTissue)):1.0
+SubClassOf(EndometrioidStructure,BodyStructure,):1.0
+SubClassOf(EndometrioidStructure,hasSurfaceVisibility some internal,):1.0
+SubClassOf(EndometrioidStructure,isStructuralComponentOf some FemaleGenitoUrinarySystem):1.0
+is(EndometriosisLesion,Class):1.0
+SubClassOf(EndometriosisLesion,EndometrioidStructure):1.0
+is(EnteralWall,Class):1.0
+SubClassOf(EnteralWall,BodyWall):1.0
+is(EpidermisAsWhole,Class):1.0
+is(EpididymalCyst,Class):1.0
+SubClassOf(EpididymalCyst,Cyst):1.0
+is(EpithelialOrSecretoryCell,Class):1.0
+SubClassOf(EpithelialOrSecretoryCell,TissueCell):1.0
+is(Epithelium,Class):1.0
+is(EpthelialStructure,Class):1.0
+EquivalentTo(EpthelialStructure,BodyStructure and (isMadeOf some Epithelium)):1.0
+SubClassOf(EpthelialStructure,BodyStructure):1.0
+is(ErectileComponentOfPenis,Class):1.0
+EquivalentTo(ErectileComponentOfPenis,BodyStructure and (IsDivisionOf some Penis) and (hasFunction some Tumescing)):1.0
+SubClassOf(ErectileComponentOfPenis,BodyStructure):1.0
+is(Erythrocytopoiesis,Class):1.0
+is(EsophagealSegment,Class):1.0
+EquivalentTo(EsophagealSegment,BodyStructure and (isLinearDivisionOf some Esophagus)):1.0
+SubClassOf(EsophagealSegment,BodyStructure):1.0
+is(Esophagus,Class):1.0
+is(EthmoidBone,Class):1.0
+is(EthmoidSinus,Class):1.0
+is(Eucestoda,Class):1.0
+is(Eukaryota,Class):1.0
+SubClassOf(Eukaryota,Organism):1.0
+is(ExactlyPairedBodyStructure,Class):1.0
+EquivalentTo(ExactlyPairedBodyStructure,BodyStructure and (isPairedOrUnpaired some exactlyPaired)):1.0
+SubClassOf(ExactlyPairedBodyStructure,BodyStructure):1.0
+is(ExerciseIntolerance,Class):1.0
+SubClassOf(ExerciseIntolerance,OrganismTolerance):1.0
+is(ExerciseTolerance,Class):1.0
+SubClassOf(ExerciseTolerance,OrganismTolerance):1.0
+is(ExtentState,Class):1.0
+is(ExternalAuditoryMeatalWall,Class):1.0
+SubClassOf(ExternalAuditoryMeatalWall,BodyWall):1.0
+is(ExternalGenitalia,Class):1.0
+is(ExternalOrgan,Class):1.0
+is(ExtraPyramidalStructure,Class):1.0
+EquivalentTo(ExtraPyramidalStructure,BodyStructure and (IsDivisionOf some NotPyramidalTract)):1.0
+SubClassOf(ExtraPyramidalStructure,BodyStructure,):1.0
+SubClassOf(ExtraPyramidalStructure,hasStructuralComponent some BasalNucleus,):1.0
+SubClassOf(ExtraPyramidalStructure,hasStructuralComponent some SubstantiaNigra,):1.0
+SubClassOf(ExtraPyramidalStructure,hasStructuralComponent some SubthalamicNucleus):1.0
+is(Extremity,Class):1.0
+is(ExtremityBodyPart,Class):1.0
+is(Eye,Class):1.0
+is(Eyeball,Class):1.0
+is(Face,Class):1.0
+is(FacialFeature,Class):1.0
+EquivalentTo(FacialFeature,BodyStructure and (isSurfaceDivisionOf some Face)):1.0
+SubClassOf(FacialFeature,BodyStructure):1.0
+is(FallopianTube,Class):1.0
+is(Feature,Class):1.0
+is(Feces,Class):1.0
+is(FemaleExternalGenitalia,Class):1.0
+is(FemaleGenitalTractComponent,Class):1.0
+EquivalentTo(FemaleGenitalTractComponent,BodyStructure and (IsDivisionOf some FemaleGenitoUrinarySystem)):1.0
+SubClassOf(FemaleGenitalTractComponent,BodyStructure,):1.0
+SubClassOf(FemaleGenitalTractComponent,hasPhenotypicalSex some):1.0
+SubClassOf(FemaleGenitalTractComponent,(PhenotypicalSex and (hasAbsoluteState some femaleSex))):1.0
+is(FemaleGenitoUrinarySystem,Class):1.0
+is(FemalePelvicCavity,Class):1.0
+is(FemalePerineum,Class):1.0
+is(FemalePhenotypePerson,Class):1.0
+is(FemalePhenotypedAnatomy,Class):1.0
+EquivalentTo(FemalePhenotypedAnatomy,BodyStructure and (hasPhenotypicalSex some):1.0
+EquivalentTo(FemalePhenotypedAnatomy,(PhenotypicalSex and (hasAbsoluteState some femaleSex)))):1.0
+SubClassOf(FemalePhenotypedAnatomy,BodyStructure,):1.0
+SubClassOf(FemalePhenotypedAnatomy,isStructuralComponentOf some FemalePhenotypePerson):1.0
+is(FemaleSexHormoneRole,Class):1.0
+is(FemaleSpecificAnatomy,Class):1.0
+EquivalentTo(FemaleSpecificAnatomy,BodyStructure and (IsDivisionOf some FemalePhenotypePerson)):1.0
+SubClassOf(FemaleSpecificAnatomy,BodyStructure):1.0
+is(Femur,Class):1.0
+is(Fibreoptics,Class):1.0
+SubClassOf(Fibreoptics,Optics):1.0
+is(Fibrin,Class):1.0
+is(Fibroblast,Class):1.0
+is(Fibroma,Class):1.0
+EquivalentTo(Fibroma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Fibroma,(BenignNeoplasticProcess and (actsSpecificallyOn some Fibroblast)))):1.0
+SubClassOf(Fibroma,BodyStructure):1.0
+is(FibrousBodyStructure,Class):1.0
+EquivalentTo(FibrousBodyStructure,BodyStructure and (isMadeOf some FibrousTissue)):1.0
+SubClassOf(FibrousBodyStructure,BodyStructure):1.0
+is(FibrousTissue,Class):1.0
+is(Fibula,Class):1.0
+is(Finger,Class):1.0
+is(Fistula,Class):1.0
+SubClassOf(Fistula,BodyConnection):1.0
+is(FlatShapedBodyStructure,Class):1.0
+EquivalentTo(FlatShapedBodyStructure,BodyStructure and (hasFeature some):1.0
+EquivalentTo(FlatShapedBodyStructure,(Shape and (hasAbsoluteState some laminar)))):1.0
+SubClassOf(FlatShapedBodyStructure,BodyStructure):1.0
+is(FloorOfAnteriorCranialFossa,Class):1.0
+is(FloorOfMiddleCranialFossa,Class):1.0
+is(FloorOfPosteriorCranialFossa,Class):1.0
+is(FoetalBodyPart,Class):1.0
+SubClassOf(FoetalBodyPart,BodyPart):1.0
+is(Foetus,Class):1.0
+is(FollicularLymphoma,Class):1.0
+SubClassOf(FollicularLymphoma,MalignantLymphoma):1.0
+is(Foot,Class):1.0
+is(Foramen,Class):1.0
+SubClassOf(Foramen,BodyConnection):1.0
+is(Forearm,Class):1.0
+is(Fossa,Class):1.0
+SubClassOf(Fossa,BodySpace):1.0
+is(Fragment,Class):1.0
+EquivalentTo(Fragment,BodyStructure and (hasUniqueAssociatedProcess some Fragmenting)):1.0
+SubClassOf(Fragment,BodyStructure):1.0
+is(Fragmenting,Class):1.0
+is(FrontalBone,Class):1.0
+is(FundusOfGallBladder,Class):1.0
+SubClassOf(FundusOfGallBladder,GallBladderStructure):1.0
+is(FungalSpore,Class):1.0
+SubClassOf(FungalSpore,Spore):1.0
+is(Fungus,Class):1.0
+SubClassOf(Fungus,Cell,):1.0
+SubClassOf(Fungus,MicroOrganism,):1.0
+SubClassOf(Fungus,Opisthokonts):1.0
+is(GallBladderStructure,Class):1.0
+EquivalentTo(GallBladderStructure,BodyStructure and (IsDivisionOf some Gallbladder)):1.0
+SubClassOf(GallBladderStructure,BodyStructure):1.0
+is(Gallbladder,Class):1.0
+is(Gamete,Class):1.0
+EquivalentTo(Gamete,Cell and (hasFunction some Conception)):1.0
+SubClassOf(Gamete,Cell):1.0
+is(Gametogenesis,Class):1.0
+is(Ganglioneuroma,Class):1.0
+SubClassOf(Ganglioneuroma,AdrenalNeuroma):1.0
+is(GastricAdenocarcinoma,Class):1.0
+EquivalentTo(GastricAdenocarcinoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(GastricAdenocarcinoma,(MalignantNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(GastricAdenocarcinoma,(Adenocyte and (isSpecificStructuralComponentOf some Stomach)))))):1.0
+SubClassOf(GastricAdenocarcinoma,BodyStructure):1.0
+is(GastricAdenoma,Class):1.0
+EquivalentTo(GastricAdenoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(GastricAdenoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(GastricAdenoma,(Adenocyte and (isSpecificStructuralComponentOf some Stomach)))))):1.0
+SubClassOf(GastricAdenoma,BodyStructure):1.0
+is(GastricEmptying,Class):1.0
+is(GastricMotility,Class):1.0
+is(GastricStasis,Class):1.0
+EquivalentTo(GastricStasis,GastricMotility and (hasProcessActivity some):1.0
+EquivalentTo(GastricStasis,(ProcessActivity and (hasAbsoluteState some inactive)))):1.0
+SubClassOf(GastricStasis,GastricMotility,):1.0
+SubClassOf(GastricStasis,hasConsequence some):1.0
+SubClassOf(GastricStasis,(GastricEmptying and (hasProcessActivity some):1.0
+SubClassOf(GastricStasis,(ProcessActivity and (hasAbsoluteState some inactive))))):1.0
+is(GastricWall,Class):1.0
+SubClassOf(GastricWall,BodyWall):1.0
+is(GastrointestinalTract,Class):1.0
+is(GeneralisedProcess,Class):1.0
+is(GeneralisedStructure,Class):1.0
+SubClassOf(GeneralisedStructure,LaminarPhysicalStructure):1.0
+is(GenitalBleeding,Class):1.0
+SubClassOf(GenitalBleeding,Bleeding):1.0
+is(GenitalTractComponent,Class):1.0
+EquivalentTo(GenitalTractComponent,BodyStructure and (IsDivisionOf some SexSpecificGenitoUrinarySystem)):1.0
+SubClassOf(GenitalTractComponent,BodyStructure):1.0
+is(GenitoUrinarySystem,Class):1.0
+is(GenitoUrinarySystemComponent,Class):1.0
+EquivalentTo(GenitoUrinarySystemComponent,BodyStructure and (IsDivisionOf some GenitoUrinarySystem)):1.0
+SubClassOf(GenitoUrinarySystemComponent,BodyStructure):1.0
+is(GermCell,Class):1.0
+SubClassOf(GermCell,Cell):1.0
+is(GlandularEpithelium,Class):1.0
+is(Glucagonoma,Class):1.0
+SubClassOf(Glucagonoma,Adenoma):1.0
+is(Gonad,Class):1.0
+EquivalentTo(Gonad,BodyStructure and (hasFunction some Gametogenesis)):1.0
+SubClassOf(Gonad,BodyStructure,):1.0
+SubClassOf(Gonad,nonPartitivelyContains some Gamete):1.0
+is(GradeOfExperienceState,Class):1.0
+SubClassOf(GradeOfExperienceState,OrganismState):1.0
+is(Gramstaining,Class):1.0
+SubClassOf(Gramstaining,OrganicMaterialStaining):1.0
+is(GravidityState,Class):1.0
+SubClassOf(GravidityState,OrganismState):1.0
+is(GreenPigment,Class):1.0
+is(GreenPigmentedDepositInOuterRegionOfCornea,Class):1.0
+EquivalentTo(GreenPigmentedDepositInOuterRegionOfCornea,BodyStructure and (hasPathologicalStatus some pathological) and (hasSpecificLocation some OuterRegionOfCornea) and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(GreenPigmentedDepositInOuterRegionOfCornea,(Sedimentation and (actsSpecificallyOn some GreenPigment)))):1.0
+SubClassOf(GreenPigmentedDepositInOuterRegionOfCornea,BodyStructure):1.0
+is(Gum,Class):1.0
+is(HE-Staining,Class):1.0
+SubClassOf(HE-Staining,OrganicMaterialStaining):1.0
+is(Haemangioma,Class):1.0
+EquivalentTo(Haemangioma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Haemangioma,(BenignNeoplasticProcess and (actsSpecificallyOn some BloodVessel)))):1.0
+SubClassOf(Haemangioma,BodyStructure):1.0
+is(HaematologicalSystem,Class):1.0
+is(Haematopoiesis,Class):1.0
+is(HaemopoieticOrgan,Class):1.0
+EquivalentTo(HaemopoieticOrgan,BodyStructure and (hasFunction some Haematopoiesis)):1.0
+SubClassOf(HaemopoieticOrgan,BodyStructure,):1.0
+SubClassOf(HaemopoieticOrgan,isStructuralComponentOf some HaematologicalSystem):1.0
+is(HaemorrhageLesion,Class):1.0
+SubClassOf(HaemorrhageLesion,Bleeding):1.0
+is(Halitosis,Class):1.0
+SubClassOf(Halitosis,Odour):1.0
+is(Hand,Class):1.0
+is(HartmannPouch,Class):1.0
+SubClassOf(HartmannPouch,GallBladderStructure):1.0
+is(Head,Class):1.0
+is(HeadAndNeck,Class):1.0
+is(HeadOrNeck,Class):1.0
+is(Heart,Class):1.0
+is(HeartAtrium,Class):1.0
+is(HeartSolidDivision,Class):1.0
+EquivalentTo(HeartSolidDivision,BodyStructure and (isSolidDivisionOf some Heart)):1.0
+SubClassOf(HeartSolidDivision,BodyStructure):1.0
+is(HeartSubcomponent,Class):1.0
+EquivalentTo(HeartSubcomponent,BodyStructure and (isStructuralComponentOf some Heart)):1.0
+SubClassOf(HeartSubcomponent,BodyStructure):1.0
+is(HeartVentricle,Class):1.0
+is(HeartWall,Class):1.0
+SubClassOf(HeartWall,BodyWall):1.0
+is(HeatIntolerance,Class):1.0
+SubClassOf(HeatIntolerance,OrganismTolerance):1.0
+is(HemorrhagingProcess,Class):1.0
+is(HepaticNodularHyperplasticLesion,Class):1.0
+EquivalentTo(HepaticNodularHyperplasticLesion,BodyStructure and (hasLocation some Liver) and (hasPathologicalStatus some pathological) and (hasUniqueAssociatedProcess some NodularHyperplasticProcess)):1.0
+SubClassOf(HepaticNodularHyperplasticLesion,BodyStructure):1.0
+is(Hepatocyte,Class):1.0
+is(Hepatoma,Class):1.0
+EquivalentTo(Hepatoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Hepatoma,(BenignNeoplasticProcess and (actsSpecificallyOn some Hepatocyte)))):1.0
+SubClassOf(Hepatoma,BodyStructure):1.0
+is(HighGradeLymphoma,Class):1.0
+SubClassOf(HighGradeLymphoma,MalignantLymphoma):1.0
+is(Hip,Class):1.0
+is(HipJoint,Class):1.0
+is(HodgkinsDisease,Class):1.0
+SubClassOf(HodgkinsDisease,MalignantLymphoma):1.0
+is(HollowBodyStructure,Class):1.0
+EquivalentTo(HollowBodyStructure,BodyStructure and (hasTopology some):1.0
+EquivalentTo(HollowBodyStructure,(Topology and (hasAbsoluteState some hollow)))):1.0
+SubClassOf(HollowBodyStructure,BodyStructure):1.0
+is(HollowPathologicalBodyPart,Class):1.0
+SubClassOf(HollowPathologicalBodyPart,BodyPart):1.0
+is(HollowStructure,Class):1.0
+is(Humerus,Class):1.0
+is(HydatidCystOfMorgagni,Class):1.0
+SubClassOf(HydatidCystOfMorgagni,Cyst):1.0
+is(HydatiformMole,Class):1.0
+SubClassOf(HydatiformMole,ProductOfConception):1.0
+is(HypertrophicLesion,Class):1.0
+is(HypertrophiedBodyStructure,Class):1.0
+EquivalentTo(HypertrophiedBodyStructure,BodyStructure and (isLocationOf some HypertrophicLesion)):1.0
+SubClassOf(HypertrophiedBodyStructure,BodyStructure,):1.0
+SubClassOf(HypertrophiedBodyStructure,hasSize some largeSize):1.0
+is(Hypothalamus,Class):1.0
+is(Ilium,Class):1.0
+is(Incising,Class):1.0
+is(Incision,Class):1.0
+EquivalentTo(Incision,BodyStructure and (hasUniqueAssociatedProcess some Incising)):1.0
+SubClassOf(Incision,BodyStructure,):1.0
+SubClassOf(Incision,hasShapeAnalagousTo some):1.0
+SubClassOf(Incision,(AnatomicalShape and (hasAbsoluteState some linear))):1.0
+is(IndermediateGradeLymphoma,Class):1.0
+SubClassOf(IndermediateGradeLymphoma,MalignantLymphoma):1.0
+is(IndexFinger,Class):1.0
+is(IndolentLymphoma,Class):1.0
+SubClassOf(IndolentLymphoma,MalignantLymphoma):1.0
+is(InfectiveAgent,Class):1.0
+SubClassOf(InfectiveAgent,MicroOrganism):1.0
+is(InfiltrateLesion,Class):1.0
+EquivalentTo(InfiltrateLesion,BodyStructure and (hasPathologicalStatus some pathological) and (hasUniqueAssociatedProcess some Infiltrating)):1.0
+SubClassOf(InfiltrateLesion,BodyStructure):1.0
+is(Infiltrating,Class):1.0
+is(Injecting,Class):1.0
+is(InjectionSite,Class):1.0
+EquivalentTo(InjectionSite,BodyStructure and (isActedOnBy some):1.0
+EquivalentTo(InjectionSite,(Injecting and (actsOn some Drug)))):1.0
+SubClassOf(InjectionSite,BodyStructure):1.0
+is(InnerEar,Class):1.0
+is(InorganicRole,Class):1.0
+SubClassOf(InorganicRole,OrganicOrInorganicRole):1.0
+is(InsectLifecycleStageState,Class):1.0
+SubClassOf(InsectLifecycleStageState,OrganismState):1.0
+is(Insulin,Class):1.0
+is(Integument,Class):1.0
+is(IntegumentaryStructure,Class):1.0
+EquivalentTo(IntegumentaryStructure,BodyStructure and (isMadeOf some Integument)):1.0
+SubClassOf(IntegumentaryStructure,BodyStructure):1.0
+is(InternalBodyStructure,Class):1.0
+EquivalentTo(InternalBodyStructure,BodyStructure and (hasSurfaceVisibility some internal)):1.0
+SubClassOf(InternalBodyStructure,BodyStructure):1.0
+is(InternalOrgan,Class):1.0
+is(InterstitialSpace,Class):1.0
+SubClassOf(InterstitialSpace,BodySpace):1.0
+is(IntestinalGas,Class):1.0
+is(Intestine,Class):1.0
+is(IntraAbdominalCardiovascularStructure,Class):1.0
+EquivalentTo(IntraAbdominalCardiovascularStructure,BodyStructure and (InverseContainmentAttribute some AbdominalCavity) and (IsDivisionOf some CardiovascularSystem)):1.0
+SubClassOf(IntraAbdominalCardiovascularStructure,BodyStructure):1.0
+is(IntraCranialBodyStructure,Class):1.0
+EquivalentTo(IntraCranialBodyStructure,BodyStructure and (InverseContainmentAttribute some CranialCavity)):1.0
+SubClassOf(IntraCranialBodyStructure,BodyStructure):1.0
+is(IntraMediastinalStructure,Class):1.0
+EquivalentTo(IntraMediastinalStructure,BodyStructure and (InverseContainmentAttribute some Mediastinum)):1.0
+SubClassOf(IntraMediastinalStructure,BodyStructure):1.0
+is(IntraScrotalStructure,Class):1.0
+EquivalentTo(IntraScrotalStructure,BodyStructure and (InverseContainmentAttribute some Scrotum)):1.0
+SubClassOf(IntraScrotalStructure,BodyStructure):1.0
+is(IntraThoracicAorta,Class):1.0
+is(IntraThoracicCardiovascularStructure,Class):1.0
+EquivalentTo(IntraThoracicCardiovascularStructure,BodyStructure and (InverseContainmentAttribute some Thorax) and (IsDivisionOf some CardiovascularSystem)):1.0
+SubClassOf(IntraThoracicCardiovascularStructure,BodyStructure):1.0
+is(IntraabdominalConceptus,Class):1.0
+SubClassOf(IntraabdominalConceptus,Conceptus):1.0
+is(IntracranialFornixComponent,Class):1.0
+SubClassOf(IntracranialFornixComponent,BodyPart):1.0
+is(IntraorbitalLachrymalSystemComponent,Class):1.0
+SubClassOf(IntraorbitalLachrymalSystemComponent,LacrimalSystemComponent):1.0
+is(IntrauterineBodyPositionState,Class):1.0
+SubClassOf(IntrauterineBodyPositionState,OrganismState):1.0
+is(IntrauterineConceptus,Class):1.0
+SubClassOf(IntrauterineConceptus,Conceptus):1.0
+is(IntrinsicallyAbnormalBodyStructure,Class):1.0
+EquivalentTo(IntrinsicallyAbnormalBodyStructure,BodyStructure and (hasIntrinsicAbnormalityStatus some abnormal)):1.0
+SubClassOf(IntrinsicallyAbnormalBodyStructure,BodyStructure):1.0
+is(IntrinsicallyNonNormalBodyStructure,Class):1.0
+EquivalentTo(IntrinsicallyNonNormalBodyStructure,BodyStructure and (hasIntrinsicAbnormalityStatus some nonNormal)):1.0
+SubClassOf(IntrinsicallyNonNormalBodyStructure,BodyStructure):1.0
+is(IntrinsicallyNormalBodyStructure,Class):1.0
+EquivalentTo(IntrinsicallyNormalBodyStructure,BodyStructure and (hasIntrinsicAbnormalityStatus some normal)):1.0
+SubClassOf(IntrinsicallyNormalBodyStructure,BodyStructure):1.0
+is(IntrinsicallyPathologicalBodyStructure,Class):1.0
+EquivalentTo(IntrinsicallyPathologicalBodyStructure,BodyStructure and (hasIntrinsicPathologicalStatus some pathological)):1.0
+SubClassOf(IntrinsicallyPathologicalBodyStructure,BodyStructure):1.0
+is(IntrinsicallyPhysiologicalBodyStructure,Class):1.0
+EquivalentTo(IntrinsicallyPhysiologicalBodyStructure,BodyStructure and (hasIntrinsicPathologicalStatus some physiological)):1.0
+SubClassOf(IntrinsicallyPhysiologicalBodyStructure,BodyStructure):1.0
+is(IntrinsicallyUnusualBodyStructure,Class):1.0
+EquivalentTo(IntrinsicallyUnusualBodyStructure,BodyStructure and (hasIntrinsicAbnormalityStatus some unusual)):1.0
+SubClassOf(IntrinsicallyUnusualBodyStructure,BodyStructure):1.0
+is(IntrinsicallyVariantBodyStructure,Class):1.0
+EquivalentTo(IntrinsicallyVariantBodyStructure,BodyStructure and (hasIntrinsicAbnormalityStatus some variant)):1.0
+SubClassOf(IntrinsicallyVariantBodyStructure,BodyStructure):1.0
+is(InvoluntaryMuscleContractionProcess,Class):1.0
+is(Irradiation,Class):1.0
+is(IrradiationLesion,Class):1.0
+EquivalentTo(IrradiationLesion,BodyStructure and (hasUniqueAssociatedProcess some Irradiation)):1.0
+SubClassOf(IrradiationLesion,BodyStructure):1.0
+is(Ischium,Class):1.0
+is(IsletCell,Class):1.0
+is(IsletCellAdenoma,Class):1.0
+EquivalentTo(IsletCellAdenoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(IsletCellAdenoma,(BenignNeoplasticProcess and (actsSpecificallyOn some IsletCell)))):1.0
+SubClassOf(IsletCellAdenoma,BodyStructure):1.0
+is(IsletCellGlucagonoma,Class):1.0
+SubClassOf(IsletCellGlucagonoma,IsletCellAdenoma):1.0
+is(Joint,Class):1.0
+is(JointOfLowerLimb,Class):1.0
+is(JointOfUpperLimb,Class):1.0
+is(Juice,Class):1.0
+is(Junction,Class):1.0
+SubClassOf(Junction,BodyConnection):1.0
+is(Kidney,Class):1.0
+is(Knee,Class):1.0
+is(KneeJoint,Class):1.0
+is(KultchitskyCell,Class):1.0
+SubClassOf(KultchitskyCell,TissueCell):1.0
+is(LabyrinthComponent,Class):1.0
+SubClassOf(LabyrinthComponent,ComponentOfInnerEar):1.0
+is(LacrimalSystem,Class):1.0
+is(LacrimalSystemComponent,Class):1.0
+EquivalentTo(LacrimalSystemComponent,BodyStructure and (IsDivisionOf some LacrimalSystem)):1.0
+SubClassOf(LacrimalSystemComponent,BodyStructure,):1.0
+SubClassOf(LacrimalSystemComponent,isStructuralComponentOf some Eye):1.0
+is(LaminarPhysicalStructure,Class):1.0
+SubClassOf(LaminarPhysicalStructure,PhysicalStructure):1.0
+is(LargeIntestinalStructure,Class):1.0
+EquivalentTo(LargeIntestinalStructure,BodyStructure and (IsDivisionOf some LargeIntestine)):1.0
+SubClassOf(LargeIntestinalStructure,BodyStructure,):1.0
+SubClassOf(LargeIntestinalStructure,hasSurfaceVisibility some internal):1.0
+is(LargeIntestine,Class):1.0
+is(LaryngoPharynx,Class):1.0
+is(Larynx,Class):1.0
+is(LayerOfAdrenalGland,Class):1.0
+EquivalentTo(LayerOfAdrenalGland,BodyStructure and (isLayerOf some AdrenalGland)):1.0
+SubClassOf(LayerOfAdrenalGland,BodyStructure):1.0
+is(LayerOfKidney,Class):1.0
+EquivalentTo(LayerOfKidney,BodyStructure and (isLayerOf some Kidney)):1.0
+SubClassOf(LayerOfKidney,BodyStructure):1.0
+is(LayerOfMeninges,Class):1.0
+EquivalentTo(LayerOfMeninges,BodyStructure and (isLayerOf some Meninges)):1.0
+SubClassOf(LayerOfMeninges,BodyStructure,):1.0
+SubClassOf(LayerOfMeninges,hasShape some):1.0
+SubClassOf(LayerOfMeninges,(Shape and (hasAbsoluteState some laminar)),):1.0
+SubClassOf(LayerOfMeninges,hasTopology some solidTopology):1.0
+is(LeftAtrialStructure,Class):1.0
+EquivalentTo(LeftAtrialStructure,BodyStructure and (IsDivisionOf some LeftHeartAtrium)):1.0
+SubClassOf(LeftAtrialStructure,BodyStructure):1.0
+is(LeftEthmoidSinus,Class):1.0
+EquivalentTo(LeftEthmoidSinus,EthmoidSinus and (hasLeftRightSelector some leftSelection)):1.0
+SubClassOf(LeftEthmoidSinus,EthmoidSinus):1.0
+is(LeftHeartAtrium,Class):1.0
+is(LeftHeartVentricle,Class):1.0
+is(LeftVentricularStructure,Class):1.0
+EquivalentTo(LeftVentricularStructure,BodyStructure and (IsDivisionOf some LeftHeartVentricle)):1.0
+SubClassOf(LeftVentricularStructure,BodyStructure):1.0
+is(Leg,Class):1.0
+is(Lens,Class):1.0
+is(LensOpacity,Class):1.0
+SubClassOf(LensOpacity,OpaqueStructure):1.0
+is(LesionCausedByPathologicalBodyProcess,Class):1.0
+EquivalentTo(LesionCausedByPathologicalBodyProcess,BodyStructure and (hasPathologicalStatus some pathological) and (isConsequenceOf some):1.0
+EquivalentTo(LesionCausedByPathologicalBodyProcess,(BodyProcess and (hasIntrinsicPathologicalStatus some pathological)))):1.0
+SubClassOf(LesionCausedByPathologicalBodyProcess,BodyStructure):1.0
+is(LesionOfIncompleteDevelopment,Class):1.0
+EquivalentTo(LesionOfIncompleteDevelopment,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(LesionOfIncompleteDevelopment,(NAMEDDevelopmentalProcess and (hasCompleteness some):1.0
+EquivalentTo(LesionOfIncompleteDevelopment,(Completeness and (hasAbsoluteState some partial)))))):1.0
+SubClassOf(LesionOfIncompleteDevelopment,BodyStructure,):1.0
+SubClassOf(LesionOfIncompleteDevelopment,hasIntrinsicPathologicalStatus some pathological):1.0
+is(LeucocyteStemCell,Class):1.0
+SubClassOf(LeucocyteStemCell,StemCell):1.0
+is(LeukocyteStemCell,Class):1.0
+SubClassOf(LeukocyteStemCell,StemCell):1.0
+is(Leukoedema,Class):1.0
+EquivalentTo(Leukoedema,BodyStructure and (hasAbnormalityStatus some abnormal) and (hasSpecificLocation some OralMucousMembrane) and (hasUniqueAssociatedProcess some OedemaProcess)):1.0
+SubClassOf(Leukoedema,BodyStructure):1.0
+is(Level,Class):1.0
+is(LevelOfHealthState,Class):1.0
+SubClassOf(LevelOfHealthState,OrganismState):1.0
+is(LifeOrDeathState,Class):1.0
+SubClassOf(LifeOrDeathState,OrganismState):1.0
+is(LinearBodyStructure,Class):1.0
+EquivalentTo(LinearBodyStructure,BodyStructure and (hasShapeAnalagousTo some):1.0
+EquivalentTo(LinearBodyStructure,(AnatomicalShape and (hasAbsoluteState some linear)))):1.0
+SubClassOf(LinearBodyStructure,BodyStructure):1.0
+is(LinearDivisionOfBone,Class):1.0
+EquivalentTo(LinearDivisionOfBone,BodyStructure and (isLinearDivisionOf some Bone)):1.0
+SubClassOf(LinearDivisionOfBone,BodyStructure):1.0
+is(LinearDivisionOfLongBone,Class):1.0
+EquivalentTo(LinearDivisionOfLongBone,BodyStructure and (isLinearDivisionOf some LongBone)):1.0
+SubClassOf(LinearDivisionOfLongBone,BodyStructure):1.0
+is(LinearPhysicalStructure,Class):1.0
+SubClassOf(LinearPhysicalStructure,PhysicalStructure):1.0
+is(LinearSegmentOfLowerGastrointestinalTract,Class):1.0
+EquivalentTo(LinearSegmentOfLowerGastrointestinalTract,BodyStructure and (isLinearDivisionOf some LargeIntestine)):1.0
+SubClassOf(LinearSegmentOfLowerGastrointestinalTract,BodyStructure,):1.0
+SubClassOf(LinearSegmentOfLowerGastrointestinalTract,specificallyNonPartitivelyContains some IntestinalGas):1.0
+is(LinearSegmentOfSpinalColumn,Class):1.0
+EquivalentTo(LinearSegmentOfSpinalColumn,BodyStructure and (isLinearDivisionOf some SpinalColumn)):1.0
+SubClassOf(LinearSegmentOfSpinalColumn,BodyStructure):1.0
+is(LinearSegmentOfUpperGastrointestinalTract,Class):1.0
+EquivalentTo(LinearSegmentOfUpperGastrointestinalTract,BodyStructure and (isLinearDivisionOf some UpperGastrointestinalTract)):1.0
+SubClassOf(LinearSegmentOfUpperGastrointestinalTract,BodyStructure,):1.0
+SubClassOf(LinearSegmentOfUpperGastrointestinalTract,specificallyNonPartitivelyContains some IntestinalGas):1.0
+is(LinearSegmentOfUrinaryTract,Class):1.0
+EquivalentTo(LinearSegmentOfUrinaryTract,BodyStructure and (isLinearDivisionOf some UrinaryTract)):1.0
+SubClassOf(LinearSegmentOfUrinaryTract,BodyStructure):1.0
+is(LinearStructure,Class):1.0
+SubClassOf(LinearStructure,PhysicalStructure):1.0
+is(Lip,Class):1.0
+is(Lipocyte,Class):1.0
+is(Lipoma,Class):1.0
+EquivalentTo(Lipoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Lipoma,(BenignNeoplasticProcess and (actsSpecificallyOn some Lipocyte)))):1.0
+SubClassOf(Lipoma,BodyStructure):1.0
+is(LittleFinger,Class):1.0
+is(Liver,Class):1.0
+is(LiverCell,Class):1.0
+EquivalentTo(LiverCell,Cell and (IsDivisionOf some Liver)):1.0
+SubClassOf(LiverCell,Cell):1.0
+is(LiverParenchyma,Class):1.0
+is(LiverParenchymalStructure,Class):1.0
+SubClassOf(LiverParenchymalStructure,BodyStructure,):1.0
+SubClassOf(LiverParenchymalStructure,hasStructuralComponent some Hepatocyte,):1.0
+SubClassOf(LiverParenchymalStructure,isSpecificallyMadeOf some LiverParenchyma,):1.0
+SubClassOf(LiverParenchymalStructure,isStructuralComponentOf some Liver):1.0
+is(LiverStructure,Class):1.0
+EquivalentTo(LiverStructure,BodyStructure and (IsDivisionOf some Liver)):1.0
+SubClassOf(LiverStructure,BodyStructure,):1.0
+SubClassOf(LiverStructure,hasSurfaceVisibility some internal):1.0
+is(LobarParenchyma,Class):1.0
+is(LobarParenchymalStructure,Class):1.0
+SubClassOf(LobarParenchymalStructure,BodyStructure,):1.0
+SubClassOf(LobarParenchymalStructure,isSpecificallyMadeOf some LobarParenchyma,):1.0
+SubClassOf(LobarParenchymalStructure,isStructuralComponentOf some LobeOfLung):1.0
+is(Lobe,Class):1.0
+is(LobeOfLung,Class):1.0
+is(LobeOfPlacenta,Class):1.0
+is(LobularDivisionOfLobe,Class):1.0
+SubClassOf(LobularDivisionOfLobe,DivisionOfLobe):1.0
+is(LobularParenchyma,Class):1.0
+is(LobularParenchymalStructure,Class):1.0
+SubClassOf(LobularParenchymalStructure,BodyStructure,):1.0
+SubClassOf(LobularParenchymalStructure,isSpecificallyMadeOf some LobularParenchyma,):1.0
+SubClassOf(LobularParenchymalStructure,isStructuralComponentOf some PulmonaryAcinus):1.0
+is(LongBone,Class):1.0
+is(LowerExtremity,Class):1.0
+is(LowerFemaleGenitalTractComponent,Class):1.0
+SubClassOf(LowerFemaleGenitalTractComponent,FemaleGenitalTractComponent):1.0
+is(LowerGITractComponent,Class):1.0
+EquivalentTo(LowerGITractComponent,BodyStructure and (IsDivisionOf some LargeIntestine)):1.0
+SubClassOf(LowerGITractComponent,BodyStructure):1.0
+is(LowerRespiratoryTract,Class):1.0
+is(LowerRespiratoryTractComponent,Class):1.0
+EquivalentTo(LowerRespiratoryTractComponent,BodyStructure and (IsDivisionOf some LowerRespiratoryTract)):1.0
+SubClassOf(LowerRespiratoryTractComponent,BodyStructure):1.0
+is(LowerUrinaryTract,Class):1.0
+is(Lung,Class):1.0
+is(LungComponent,Class):1.0
+EquivalentTo(LungComponent,BodyStructure and (IsDivisionOf some Lung)):1.0
+SubClassOf(LungComponent,BodyStructure,):1.0
+SubClassOf(LungComponent,hasSurfaceVisibility some internal):1.0
+is(LungParenchyma,Class):1.0
+is(LungParenchymalStructure,Class):1.0
+SubClassOf(LungParenchymalStructure,BodyStructure,):1.0
+SubClassOf(LungParenchymalStructure,isSpecificallyMadeOf some LungParenchyma,):1.0
+SubClassOf(LungParenchymalStructure,isStructuralComponentOf some Lung):1.0
+is(LymphVessel,Class):1.0
+is(Lymphangioma,Class):1.0
+EquivalentTo(Lymphangioma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Lymphangioma,(BenignNeoplasticProcess and (actsSpecificallyOn some LymphVessel)))):1.0
+SubClassOf(Lymphangioma,BodyStructure):1.0
+is(LymphaticSystem,Class):1.0
+is(LymphaticSystemComponent,Class):1.0
+EquivalentTo(LymphaticSystemComponent,BodyStructure and (IsDivisionOf some LymphaticSystem)):1.0
+SubClassOf(LymphaticSystemComponent,BodyStructure):1.0
+is(LymphoidCell,Class):1.0
+is(LymphoidTissue,Class):1.0
+is(LymphoidTonsil,Class):1.0
+is(LymphoreticularComponent,Class):1.0
+EquivalentTo(LymphoreticularComponent,BodyStructure and (IsDivisionOf some LymphoreticularSystem)):1.0
+SubClassOf(LymphoreticularComponent,BodyStructure,):1.0
+SubClassOf(LymphoreticularComponent,hasSurfaceVisibility some internal):1.0
+is(LymphoreticularSystem,Class):1.0
+is(MSComponentOfHead,Class):1.0
+EquivalentTo(MSComponentOfHead,BodyStructure and (IsDivisionOf some Head) and (IsDivisionOf some MusculoSkeletalSystem)):1.0
+SubClassOf(MSComponentOfHead,BodyStructure):1.0
+is(MSComponentOfHeadOrNeck,Class):1.0
+EquivalentTo(MSComponentOfHeadOrNeck,BodyStructure and (IsDivisionOf some HeadOrNeck) and (IsDivisionOf some MusculoSkeletalSystem)):1.0
+SubClassOf(MSComponentOfHeadOrNeck,BodyStructure):1.0
+is(MSComponentOfLowerLimb,Class):1.0
+EquivalentTo(MSComponentOfLowerLimb,BodyStructure and (IsDivisionOf some LowerExtremity) and (IsDivisionOf some MusculoSkeletalSystem)):1.0
+SubClassOf(MSComponentOfLowerLimb,BodyStructure):1.0
+is(MSComponentOfNeck,Class):1.0
+EquivalentTo(MSComponentOfNeck,BodyStructure and (IsDivisionOf some MusculoSkeletalSystem) and (IsDivisionOf some Neck)):1.0
+SubClassOf(MSComponentOfNeck,BodyStructure):1.0
+is(MSComponentOfPelvis,Class):1.0
+EquivalentTo(MSComponentOfPelvis,BodyStructure and (IsDivisionOf some MusculoSkeletalSystem) and (IsDivisionOf some Pelvis)):1.0
+SubClassOf(MSComponentOfPelvis,BodyStructure):1.0
+is(MSComponentOfRibCage,Class):1.0
+EquivalentTo(MSComponentOfRibCage,BodyStructure and (IsDivisionOf some MusculoSkeletalSystem) and (IsDivisionOf some RibCage)):1.0
+SubClassOf(MSComponentOfRibCage,BodyStructure):1.0
+is(MSComponentOfTrunk,Class):1.0
+EquivalentTo(MSComponentOfTrunk,BodyStructure and (IsDivisionOf some MusculoSkeletalSystem) and (IsDivisionOf some Trunk)):1.0
+SubClassOf(MSComponentOfTrunk,BodyStructure):1.0
+is(MSComponentOfUpperLimb,Class):1.0
+EquivalentTo(MSComponentOfUpperLimb,BodyStructure and (IsDivisionOf some MusculoSkeletalSystem) and (IsDivisionOf some UpperExtremity)):1.0
+SubClassOf(MSComponentOfUpperLimb,BodyStructure):1.0
+is(MajorBodyDivision,Class):1.0
+is(MajorCardiacValveComponent,Class):1.0
+EquivalentTo(MajorCardiacValveComponent,BodyStructure and (isStructuralComponentOf some MajorHeartValve)):1.0
+SubClassOf(MajorCardiacValveComponent,BodyStructure):1.0
+is(MajorCardiacValveStructure,Class):1.0
+EquivalentTo(MajorCardiacValveStructure,BodyStructure and (IsDivisionOf some MajorHeartValve)):1.0
+SubClassOf(MajorCardiacValveStructure,BodyStructure,):1.0
+SubClassOf(MajorCardiacValveStructure,hasSpecificLayer some Endocardium):1.0
+is(MajorHeartValve,Class):1.0
+is(MaleExternalGenitalia,Class):1.0
+is(MaleGenitalTractComponent,Class):1.0
+EquivalentTo(MaleGenitalTractComponent,BodyStructure and (IsDivisionOf some MaleGenitoUrinarySystem)):1.0
+SubClassOf(MaleGenitalTractComponent,BodyStructure,):1.0
+SubClassOf(MaleGenitalTractComponent,hasPhenotypicalSex some):1.0
+SubClassOf(MaleGenitalTractComponent,(PhenotypicalSex and (hasAbsoluteState some maleSex))):1.0
+is(MaleGenitoUrinarySystem,Class):1.0
+is(MaleOrFemalePhenotypePerson,Class):1.0
+is(MalePelvicCavity,Class):1.0
+is(MalePerineum,Class):1.0
+is(MalePhenotypePerson,Class):1.0
+is(MalePhenotypedAnatomy,Class):1.0
+EquivalentTo(MalePhenotypedAnatomy,BodyStructure and (hasPhenotypicalSex some):1.0
+EquivalentTo(MalePhenotypedAnatomy,(PhenotypicalSex and (hasAbsoluteState some maleSex)))):1.0
+SubClassOf(MalePhenotypedAnatomy,BodyStructure,):1.0
+SubClassOf(MalePhenotypedAnatomy,isStructuralComponentOf some MalePhenotypePerson):1.0
+is(MaleSpecificAnatomy,Class):1.0
+EquivalentTo(MaleSpecificAnatomy,BodyStructure and (IsDivisionOf some MalePhenotypePerson)):1.0
+SubClassOf(MaleSpecificAnatomy,BodyStructure):1.0
+is(Malignancy,Class):1.0
+is(MalignantLymphoma,Class):1.0
+SubClassOf(MalignantLymphoma,BodyStructure,):1.0
+SubClassOf(MalignantLymphoma,hasUniqueAssociatedProcess some):1.0
+SubClassOf(MalignantLymphoma,(MalignantNeoplasticProcess and (actsSpecificallyOn some LymphoidCell))):1.0
+is(MalignantNeoplasticProcess,Class):1.0
+is(MalrotationLesion,Class):1.0
+EquivalentTo(MalrotationLesion,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(MalrotationLesion,(OrganRotation and (hasCompleteness some):1.0
+EquivalentTo(MalrotationLesion,(Completeness and (hasAbsoluteState some partial)))))):1.0
+SubClassOf(MalrotationLesion,BodyStructure):1.0
+is(MammaryGland,Class):1.0
+is(Mandible,Class):1.0
+is(Maturation,Class):1.0
+is(MatureCell,Class):1.0
+EquivalentTo(MatureCell,Cell and (isActedOnBy some):1.0
+EquivalentTo(MatureCell,(Maturation and (hasCompleteness some):1.0
+EquivalentTo(MatureCell,(Completeness and (hasQuantity some):1.0
+EquivalentTo(MatureCell,(Level and (hasMagnitude some highLevel)))))))):1.0
+SubClassOf(MatureCell,Cell):1.0
+is(Maxilla,Class):1.0
+is(MaxillaryZygomaticSuture,Class):1.0
+SubClassOf(MaxillaryZygomaticSuture,NAMEDJoint,):1.0
+SubClassOf(MaxillaryZygomaticSuture,isMadeOf some FibrousTissue,):1.0
+SubClassOf(MaxillaryZygomaticSuture,isPairedOrUnpaired some leftRightPaired,):1.0
+SubClassOf(MaxillaryZygomaticSuture,isStructuralComponentOf some Skull):1.0
+is(MedianNerve,Class):1.0
+is(Mediastinum,Class):1.0
+is(MedullaOfKidney,Class):1.0
+is(Melanocyte,Class):1.0
+is(Melanoma,Class):1.0
+EquivalentTo(Melanoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Melanoma,(BenignNeoplasticProcess and (actsSpecificallyOn some Melanocyte)))):1.0
+SubClassOf(Melanoma,BodyStructure):1.0
+is(MeningealSpace,Class):1.0
+SubClassOf(MeningealSpace,BodySpace):1.0
+is(Meninges,Class):1.0
+is(Mesencephalon,Class):1.0
+is(MetabolicAcidosis,Class):1.0
+is(MicroOrganism,Class):1.0
+SubClassOf(MicroOrganism,MicroscopicStructure,):1.0
+SubClassOf(MicroOrganism,Organism):1.0
+is(MicroscopicStructure,Class):1.0
+is(MiddleCranialFossa,Class):1.0
+is(MiddleEar,Class):1.0
+is(MiddleFinger,Class):1.0
+is(MidlineIncision,Class):1.0
+SubClassOf(MidlineIncision,Incision):1.0
+is(MirrorImagedBodyStructure,Class):1.0
+EquivalentTo(MirrorImagedBodyStructure,BodyStructure and (isPairedOrUnpaired some mirrorImaged)):1.0
+SubClassOf(MirrorImagedBodyStructure,BodyStructure):1.0
+is(MitralValve,Class):1.0
+is(MitralValveStructure,Class):1.0
+EquivalentTo(MitralValveStructure,BodyStructure and (IsDivisionOf some MitralValve)):1.0
+SubClassOf(MitralValveStructure,BodyStructure):1.0
+is(Monera,Class):1.0
+SubClassOf(Monera,Prokaryota):1.0
+is(Morganella,Class):1.0
+is(MorganellaMorganiiSubspMorganii,Class):1.0
+SubClassOf(MorganellaMorganiiSubspMorganii,Morganella):1.0
+is(Mouth,Class):1.0
+is(Mucocele,Class):1.0
+SubClassOf(Mucocele,Cyst):1.0
+is(MucousMembrane,Class):1.0
+is(MultiCellularEukaryota,Class):1.0
+SubClassOf(MultiCellularEukaryota,Eukaryota):1.0
+is(MuscleOfLowerLimb,Class):1.0
+is(MuscleOfUpperLimb,Class):1.0
+is(MuscleTissue,Class):1.0
+is(MuscleTissueStructure,Class):1.0
+EquivalentTo(MuscleTissueStructure,BodyStructure and (isMadeOf some MuscleTissue)):1.0
+SubClassOf(MuscleTissueStructure,BodyStructure):1.0
+is(MusculoSkeletalSystem,Class):1.0
+is(MusculoSkeletalSystemComponent,Class):1.0
+EquivalentTo(MusculoSkeletalSystemComponent,BodyStructure and (IsDivisionOf some MusculoSkeletalSystem)):1.0
+SubClassOf(MusculoSkeletalSystemComponent,BodyStructure,):1.0
+SubClassOf(MusculoSkeletalSystemComponent,hasSurfaceVisibility some internal):1.0
+is(Mycete,Class):1.0
+SubClassOf(Mycete,Fungus):1.0
+is(Myelencephalon,Class):1.0
+is(Myeloma,Class):1.0
+SubClassOf(Myeloma,BCellLymphocyteNeoplasia):1.0
+is(MyoclonicSeizure,Class):1.0
+SubClassOf(MyoclonicSeizure,Seizure,):1.0
+SubClassOf(MyoclonicSeizure,hasSubprocess some InvoluntaryMuscleContractionProcess):1.0
+is(Myocyte,Class):1.0
+is(Myoma,Class):1.0
+EquivalentTo(Myoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Myoma,(BenignNeoplasticProcess and (actsSpecificallyOn some Myocyte)))):1.0
+SubClassOf(Myoma,BodyStructure):1.0
+is(Myxoma,Class):1.0
+EquivalentTo(Myxoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Myxoma,(BenignNeoplasticProcess and (actsSpecificallyOn some ConnectiveTissueCell)))):1.0
+SubClassOf(Myxoma,BodyStructure):1.0
+is(NAMEDBodyPart,Class):1.0
+SubClassOf(NAMEDBodyPart,BodyPart):1.0
+is(NAMEDBodySpace,Class):1.0
+SubClassOf(NAMEDBodySpace,BodySpace):1.0
+is(NAMEDDevelopmentalProcess,Class):1.0
+is(NAMEDInorganicSubstance,Class):1.0
+is(NAMEDInternalBodySubPart,Class):1.0
+SubClassOf(NAMEDInternalBodySubPart,BodyPart):1.0
+is(NAMEDJoint,Class):1.0
+is(NAMEDPathologicalStructure,Class):1.0
+SubClassOf(NAMEDPathologicalStructure,BodyStructure,):1.0
+SubClassOf(NAMEDPathologicalStructure,hasIntrinsicPathologicalStatus some pathological):1.0
+is(NAMEDPhysicalProcess,Class):1.0
+is(NAMEDReproductiveProcess,Class):1.0
+is(NAMEDSexualProcess,Class):1.0
+is(NAMEDTissueCell,Class):1.0
+SubClassOf(NAMEDTissueCell,TissueCell):1.0
+is(NAMEDsolidShape,Class):1.0
+SubClassOf(NAMEDsolidShape,solidShape):1.0
+is(NasoPharynx,Class):1.0
+is(Neck,Class):1.0
+is(NeckOfGallBladder,Class):1.0
+SubClassOf(NeckOfGallBladder,GallBladderStructure):1.0
+is(NeoplasticProcess,Class):1.0
+is(NervousSystem,Class):1.0
+is(NervousSystemComponent,Class):1.0
+EquivalentTo(NervousSystemComponent,BodyStructure and (IsDivisionOf some NervousSystem)):1.0
+SubClassOf(NervousSystemComponent,BodyStructure,):1.0
+SubClassOf(NervousSystemComponent,hasSurfaceVisibility some internal):1.0
+is(NeuralPathway,Class):1.0
+is(Neuroblastoma,Class):1.0
+SubClassOf(Neuroblastoma,AdrenalNeuroma):1.0
+is(NeurologicalComponentOfLowerLimb,Class):1.0
+EquivalentTo(NeurologicalComponentOfLowerLimb,BodyStructure and (IsDivisionOf some LowerExtremity) and (IsDivisionOf some NervousSystem)):1.0
+SubClassOf(NeurologicalComponentOfLowerLimb,BodyStructure):1.0
+is(NeurologicalComponentOfUpperLimb,Class):1.0
+EquivalentTo(NeurologicalComponentOfUpperLimb,BodyStructure and (IsDivisionOf some NervousSystem) and (IsDivisionOf some UpperExtremity)):1.0
+SubClassOf(NeurologicalComponentOfUpperLimb,BodyStructure):1.0
+is(Neuroma,Class):1.0
+EquivalentTo(Neuroma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Neuroma,(BenignNeoplasticProcess and (actsSpecificallyOn some Neurone)))):1.0
+SubClassOf(Neuroma,BodyStructure):1.0
+is(Neurone,Class):1.0
+SubClassOf(Neurone,TissueCell):1.0
+is(NodularHyperplasticProcess,Class):1.0
+is(NonAxialSkeleton,Class):1.0
+is(NonDermatophyteFungus,Class):1.0
+SubClassOf(NonDermatophyteFungus,Fungus):1.0
+is(NonHodgkinsLymphoma,Class):1.0
+SubClassOf(NonHodgkinsLymphoma,MalignantLymphoma):1.0
+is(NonNormalBodyStructure,Class):1.0
+EquivalentTo(NonNormalBodyStructure,BodyStructure and (hasAbnormalityStatus some nonNormal)):1.0
+SubClassOf(NonNormalBodyStructure,BodyStructure):1.0
+is(NonNormalChangeInSize,Class):1.0
+SubClassOf(NonNormalChangeInSize,NonNormalBodyStructure):1.0
+is(NonNormalReductionInSize,Class):1.0
+SubClassOf(NonNormalReductionInSize,NonNormalBodyStructure):1.0
+is(NonNormalSwelling,Class):1.0
+SubClassOf(NonNormalSwelling,NonNormalBodyStructure):1.0
+is(NonOverlappingBodyStructure,Class):1.0
+EquivalentTo(NonOverlappingBodyStructure,BodyStructure and (hasOverlappingStatus some nonOverlappingStatus)):1.0
+SubClassOf(NonOverlappingBodyStructure,BodyStructure):1.0
+is(NonnormalBodyConnection,Class):1.0
+SubClassOf(NonnormalBodyConnection,BodyConnection):1.0
+is(NormalBodyStructure,Class):1.0
+EquivalentTo(NormalBodyStructure,BodyStructure and (hasAbnormalityStatus some normal)):1.0
+SubClassOf(NormalBodyStructure,BodyStructure):1.0
+is(NormallyBilateralPhysicalStructure,Class):1.0
+SubClassOf(NormallyBilateralPhysicalStructure,PhysicalStructure):1.0
+is(Nose,Class):1.0
+is(NotPyramidalTract,Class):1.0
+is(OccipitalBone,Class):1.0
+is(Occluding,Class):1.0
+is(OccludingLesion,Class):1.0
+EquivalentTo(OccludingLesion,BodyStructure and (hasUniqueAssociatedProcess some Occluding)):1.0
+SubClassOf(OccludingLesion,BodyStructure):1.0
+is(Odour,Class):1.0
+SubClassOf(Odour,SubstanceFeature):1.0
+is(OedemaProcess,Class):1.0
+is(OedemaSymptom,Class):1.0
+is(Oesophagostomum,Class):1.0
+is(OesophagostomumGeorgianum,Class):1.0
+SubClassOf(OesophagostomumGeorgianum,Oesophagostomum):1.0
+is(OestrogenicRole,Class):1.0
+SubClassOf(OestrogenicRole,FemaleSexHormoneRole):1.0
+is(OlfactorySystem,Class):1.0
+is(OlfactorySystemComponent,Class):1.0
+EquivalentTo(OlfactorySystemComponent,BodyStructure and (IsDivisionOf some OlfactorySystem)):1.0
+SubClassOf(OlfactorySystemComponent,BodyStructure):1.0
+is(Oocyte,Class):1.0
+SubClassOf(Oocyte,GermCell):1.0
+is(OpaqueStructure,Class):1.0
+EquivalentTo(OpaqueStructure,BodyStructure and (hasTransparency some):1.0
+EquivalentTo(OpaqueStructure,(Transparency and (hasAbsoluteState some opaque)))):1.0
+SubClassOf(OpaqueStructure,BodyStructure):1.0
+is(Opisthokonts,Class):1.0
+is(OpticalMagnification,Class):1.0
+SubClassOf(OpticalMagnification,Optics):1.0
+is(Optics,Class):1.0
+SubClassOf(Optics,NAMEDPhysicalProcess):1.0
+is(OralAnatomicalComponent,Class):1.0
+EquivalentTo(OralAnatomicalComponent,BodyStructure and (IsDivisionOf some Mouth)):1.0
+SubClassOf(OralAnatomicalComponent,BodyStructure):1.0
+is(OralMucousMembrane,Class):1.0
+is(Orange,Class):1.0
+is(OrangeJuice,Class):1.0
+EquivalentTo(OrangeJuice,Juice and (isMadeOf some Orange)):1.0
+SubClassOf(OrangeJuice,Juice):1.0
+is(Orbit,Class):1.0
+is(OrganDevelopmentProcess,Class):1.0
+SubClassOf(OrganDevelopmentProcess,NAMEDDevelopmentalProcess):1.0
+is(OrganDisplacementProcess,Class):1.0
+SubClassOf(OrganDisplacementProcess,OrganMigration):1.0
+is(OrganExtentState,Class):1.0
+SubClassOf(OrganExtentState,ExtentState):1.0
+is(OrganImpairment,Class):1.0
+EquivalentTo(OrganImpairment,BodyProcess and (hasEffectiveness some):1.0
+EquivalentTo(OrganImpairment,(Effectiveness and (hasAbsoluteState some ineffective))) and (isFunctionOf some InternalOrgan)):1.0
+SubClassOf(OrganImpairment,BodyProcess):1.0
+is(OrganInAnteriorCranialFossa,Class):1.0
+EquivalentTo(OrganInAnteriorCranialFossa,BodyStructure and (InverseContainmentAttribute some AnteriorCranialFossa)):1.0
+SubClassOf(OrganInAnteriorCranialFossa,BodyStructure):1.0
+is(OrganInCranialFossa,Class):1.0
+EquivalentTo(OrganInCranialFossa,BodyStructure and (InverseContainmentAttribute some CranialFossa)):1.0
+SubClassOf(OrganInCranialFossa,BodyStructure,):1.0
+SubClassOf(OrganInCranialFossa,isStructuralComponentOf some CentralNervousSystem):1.0
+is(OrganInMiddleCranialFossa,Class):1.0
+EquivalentTo(OrganInMiddleCranialFossa,BodyStructure and (InverseContainmentAttribute some MiddleCranialFossa)):1.0
+SubClassOf(OrganInMiddleCranialFossa,BodyStructure):1.0
+is(OrganInPosteriorCranialFossa,Class):1.0
+EquivalentTo(OrganInPosteriorCranialFossa,BodyStructure and (InverseContainmentAttribute some PosteriorCranialFossa)):1.0
+SubClassOf(OrganInPosteriorCranialFossa,BodyStructure):1.0
+is(OrganMalrotationProcess,Class):1.0
+SubClassOf(OrganMalrotationProcess,OrganRotation):1.0
+is(OrganMigration,Class):1.0
+SubClassOf(OrganMigration,OrganDevelopmentProcess):1.0
+is(OrganRotation,Class):1.0
+SubClassOf(OrganRotation,OrganDevelopmentProcess):1.0
+is(OrganicMaterialStaining,Class):1.0
+SubClassOf(OrganicMaterialStaining,ChemicalProcess):1.0
+is(OrganicOrInorganicRole,Class):1.0
+SubClassOf(OrganicOrInorganicRole,BiochemicalRole):1.0
+is(OrganicRole,Class):1.0
+SubClassOf(OrganicRole,OrganicOrInorganicRole):1.0
+is(OrganicSolidStructure,Class):1.0
+SubClassOf(OrganicSolidStructure,SolidStructure):1.0
+is(Organism,Class):1.0
+SubClassOf(Organism,OrganicSolidStructure):1.0
+is(OrganismBiteSymptom,Class):1.0
+EquivalentTo(OrganismBiteSymptom,ToothBiteLesion and (playsConsultationRole some SymptomRole)):1.0
+SubClassOf(OrganismBiteSymptom,ToothBiteLesion):1.0
+is(OrganismFeature,Class):1.0
+is(OrganismIntolerance,Class):1.0
+EquivalentTo(OrganismIntolerance,OrganismTolerance and (hasAbsoluteState some intolerant)):1.0
+SubClassOf(OrganismIntolerance,OrganismTolerance):1.0
+is(OrganismReproduction,Class):1.0
+SubClassOf(OrganismReproduction,NAMEDReproductiveProcess):1.0
+is(OrganismSelector,Class):1.0
+SubClassOf(OrganismSelector,Selector):1.0
+is(OrganismState,Class):1.0
+SubClassOf(OrganismState,State):1.0
+is(OrganismStatus,Class):1.0
+SubClassOf(OrganismStatus,Status):1.0
+is(OrganismTolerance,Class):1.0
+SubClassOf(OrganismTolerance,OrganismFeature):1.0
+is(OrganismToleranceState,Class):1.0
+SubClassOf(OrganismToleranceState,OrganismState):1.0
+is(Organogenesis,Class):1.0
+SubClassOf(Organogenesis,OrganDevelopmentProcess):1.0
+is(OrganogenesisPhenomenon,Class):1.0
+EquivalentTo(OrganogenesisPhenomenon,Phenomenon and (isConsequenceOf some Organogenesis)):1.0
+SubClassOf(OrganogenesisPhenomenon,Phenomenon,):1.0
+SubClassOf(OrganogenesisPhenomenon,hasAcquisitionMode some):1.0
+SubClassOf(OrganogenesisPhenomenon,(AcquisitionMode and (hasAbsoluteState some congenital))):1.0
+is(Organophosphate,Class):1.0
+SubClassOf(Organophosphate,NAMEDInorganicSubstance):1.0
+is(Orgasm,Class):1.0
+SubClassOf(Orgasm,NAMEDSexualProcess):1.0
+is(Ornithodoros,Class):1.0
+is(OrnithodorosVerrucosus,Class):1.0
+SubClassOf(OrnithodorosVerrucosus,Ornithodoros):1.0
+is(Ornithonyssus,Class):1.0
+is(OrnithonyssusSylviarum,Class):1.0
+SubClassOf(OrnithonyssusSylviarum,Ornithonyssus):1.0
+is(OroPharynx,Class):1.0
+is(OrodentalSystem,Class):1.0
+is(OrodentalSystemComponent,Class):1.0
+EquivalentTo(OrodentalSystemComponent,BodyStructure and (IsDivisionOf some OrodentalSystem)):1.0
+SubClassOf(OrodentalSystemComponent,BodyStructure):1.0
+is(OropharyngealMucousMembrane,Class):1.0
+EquivalentTo(OropharyngealMucousMembrane,MucousMembrane and (isSpecificLayerOf some OroPharynx)):1.0
+SubClassOf(OropharyngealMucousMembrane,MucousMembrane):1.0
+is(Orthopaedics,Class):1.0
+SubClassOf(Orthopaedics,Surgery):1.0
+is(Osteoblast,Class):1.0
+is(OsteocartilaginousExostosis,Class):1.0
+SubClassOf(OsteocartilaginousExostosis,BodyStructure,):1.0
+SubClassOf(OsteocartilaginousExostosis,hasUniqueAssociatedProcess some):1.0
+SubClassOf(OsteocartilaginousExostosis,(BenignNeoplasticProcess and (actsSpecificallyOn some Bone))):1.0
+is(Osteoma,Class):1.0
+SubClassOf(Osteoma,BodyStructure,):1.0
+SubClassOf(Osteoma,hasUniqueAssociatedProcess some):1.0
+SubClassOf(Osteoma,(BenignNeoplasticProcess and (LocativeAttribute some Bone))):1.0
+is(Osteophyte,Class):1.0
+SubClassOf(Osteophyte,NAMEDPathologicalStructure):1.0
+is(Osteosarcoma,Class):1.0
+EquivalentTo(Osteosarcoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Osteosarcoma,(MalignantNeoplasticProcess and (actsSpecificallyOn some Osteoblast)))):1.0
+SubClassOf(Osteosarcoma,BodyStructure):1.0
+is(OuterRegionOfCornea,Class):1.0
+EquivalentTo(OuterRegionOfCornea,BodyStructure and (hasInnerOuterSelector some outerSelection) and (isSolidDivisionOf some Cornea)):1.0
+SubClassOf(OuterRegionOfCornea,BodyStructure):1.0
+is(Ovary,Class):1.0
+is(OverlappingBodyStructure,Class):1.0
+EquivalentTo(OverlappingBodyStructure,BodyStructure and (hasOverlappingStatus some overlappingStatus)):1.0
+SubClassOf(OverlappingBodyStructure,BodyStructure):1.0
+is(Ovum,Class):1.0
+SubClassOf(Ovum,Cell,):1.0
+SubClassOf(Ovum,hasFunction some Conception):1.0
+is(PalatineBone,Class):1.0
+is(PalpableAbnormality,Class):1.0
+SubClassOf(PalpableAbnormality,NonNormalBodyStructure):1.0
+is(Palpebrum,Class):1.0
+is(Pancreas,Class):1.0
+is(PancreaticCarcinoma,Class):1.0
+EquivalentTo(PancreaticCarcinoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(PancreaticCarcinoma,(MalignantNeoplasticProcess and (LocativeAttribute some Pancreas)))):1.0
+SubClassOf(PancreaticCarcinoma,BodyStructure):1.0
+is(PancreaticDuct,Class):1.0
+is(PancreaticDuctStructure,Class):1.0
+EquivalentTo(PancreaticDuctStructure,BodyStructure and (IsDivisionOf some PancreaticDuct)):1.0
+SubClassOf(PancreaticDuctStructure,BodyStructure):1.0
+is(PancreaticTumour,Class):1.0
+EquivalentTo(PancreaticTumour,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(PancreaticTumour,(BenignNeoplasticProcess and (LocativeAttribute some Pancreas)))):1.0
+SubClassOf(PancreaticTumour,BodyStructure):1.0
+is(ParamedianIncision,Class):1.0
+SubClassOf(ParamedianIncision,Incision):1.0
+is(Parametrium,Class):1.0
+SubClassOf(Parametrium,AdnexalStructureOfUterus):1.0
+is(Parasite,Class):1.0
+EquivalentTo(Parasite,Organism and (hasSpecificConsequence some ParasitisingProcess)):1.0
+SubClassOf(Parasite,Organism):1.0
+is(ParasitisingProcess,Class):1.0
+is(ParathyroidAdenoma,Class):1.0
+EquivalentTo(ParathyroidAdenoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(ParathyroidAdenoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(ParathyroidAdenoma,(Adenocyte and (isStructuralComponentOf some ParathyroidGland)))))):1.0
+SubClassOf(ParathyroidAdenoma,BodyStructure):1.0
+is(ParathyroidGland,Class):1.0
+is(ParathyroidTumour,Class):1.0
+EquivalentTo(ParathyroidTumour,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(ParathyroidTumour,(NeoplasticProcess and (LocativeAttribute some ParathyroidGland)))):1.0
+SubClassOf(ParathyroidTumour,BodyStructure):1.0
+is(Parenchyma,Class):1.0
+is(ParenchymalTissueStructure,Class):1.0
+EquivalentTo(ParenchymalTissueStructure,BodyStructure and (isMadeOf some Parenchyma)):1.0
+SubClassOf(ParenchymalTissueStructure,BodyStructure):1.0
+is(Parity,Class):1.0
+SubClassOf(Parity,OrganismStatus):1.0
+is(ParityState,Class):1.0
+SubClassOf(ParityState,OrganismState):1.0
+is(PartOfAbdominalCavity,Class):1.0
+EquivalentTo(PartOfAbdominalCavity,BodyStructure and (IsDivisionOf some AbdominalCavity)):1.0
+SubClassOf(PartOfAbdominalCavity,BodyStructure):1.0
+is(PartOfBodyStructure,Class):1.0
+EquivalentTo(PartOfBodyStructure,BodyStructure and (IsDivisionOf some BodyStructure)):1.0
+SubClassOf(PartOfBodyStructure,BodyStructure):1.0
+is(PartOfCavityOfEyeball,Class):1.0
+EquivalentTo(PartOfCavityOfEyeball,BodyStructure and (IsDivisionOf some CavityOfEyeball)):1.0
+SubClassOf(PartOfCavityOfEyeball,BodyStructure):1.0
+is(PartOfGingiva,Class):1.0
+EquivalentTo(PartOfGingiva,BodyStructure and (IsDivisionOf some Gum)):1.0
+SubClassOf(PartOfGingiva,BodyStructure):1.0
+is(PartOfHeart,Class):1.0
+EquivalentTo(PartOfHeart,BodyStructure and (IsDivisionOf some Heart)):1.0
+SubClassOf(PartOfHeart,BodyStructure):1.0
+is(PartOfLip,Class):1.0
+EquivalentTo(PartOfLip,BodyStructure and (IsDivisionOf some Lip)):1.0
+SubClassOf(PartOfLip,BodyStructure):1.0
+is(PartOfTongue,Class):1.0
+EquivalentTo(PartOfTongue,BodyStructure and (IsDivisionOf some Tongue)):1.0
+SubClassOf(PartOfTongue,BodyStructure):1.0
+is(PathologicalBodyStructure,Class):1.0
+is(PathologicalCyst,Class):1.0
+SubClassOf(PathologicalCyst,Cyst):1.0
+is(PathologicalFragment,Class):1.0
+SubClassOf(PathologicalFragment,Fragment):1.0
+is(PedunculateMyoma,Class):1.0
+SubClassOf(PedunculateMyoma,Myoma):1.0
+is(PelvicBone,Class):1.0
+is(PelvicCavity,Class):1.0
+is(PelvicPartOfTrunk,Class):1.0
+is(PelvicSmoothMuscleStructure,Class):1.0
+EquivalentTo(PelvicSmoothMuscleStructure,BodyStructure and (IsDivisionOf some AnatomyWithinPelvicCavity) and (isMadeOf some SmoothMuscleTissue)):1.0
+SubClassOf(PelvicSmoothMuscleStructure,BodyStructure):1.0
+is(Pelvis,Class):1.0
+is(Penis,Class):1.0
+is(PeriFallopianTubalTissue,Class):1.0
+is(PeriTesticularTissue,Class):1.0
+is(PerianalAdnexa,Class):1.0
+EquivalentTo(PerianalAdnexa,BodyStructure and (isSpecificallyMadeOf some PerianalTissue)):1.0
+SubClassOf(PerianalAdnexa,BodyStructure):1.0
+is(PerianalTissue,Class):1.0
+is(PerinealSpace,Class):1.0
+SubClassOf(PerinealSpace,BodySpace):1.0
+is(Perineum,Class):1.0
+is(PeriovarianTissue,Class):1.0
+is(PeripheralBloodVessel,Class):1.0
+is(PeripheralNervousSystem,Class):1.0
+is(PeripheralNervousSystemComponent,Class):1.0
+EquivalentTo(PeripheralNervousSystemComponent,BodyStructure and (IsDivisionOf some PeripheralNervousSystem)):1.0
+SubClassOf(PeripheralNervousSystemComponent,BodyStructure):1.0
+is(PeripheralOedema,Class):1.0
+EquivalentTo(PeripheralOedema,BodyStructure and (hasPathologicalStatus some pathological) and (hasSpecificLocation some ExtremityBodyPart) and (hasUniqueAssociatedProcess some OedemaProcess)):1.0
+SubClassOf(PeripheralOedema,BodyStructure):1.0
+is(PeripheralVasoconstriction,Class):1.0
+EquivalentTo(PeripheralVasoconstriction,DimensionDecreasingProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(PeripheralVasoconstriction,(Diameter and (isDiameterOf some PeripheralBloodVessel)))):1.0
+SubClassOf(PeripheralVasoconstriction,DimensionDecreasingProcess):1.0
+is(PerirectalAdnexa,Class):1.0
+EquivalentTo(PerirectalAdnexa,BodyStructure and (isSpecificallyMadeOf some PerirectalTissue)):1.0
+SubClassOf(PerirectalAdnexa,BodyStructure):1.0
+is(PerirectalTissue,Class):1.0
+is(PersonalityTypeState,Class):1.0
+SubClassOf(PersonalityTypeState,OrganismState):1.0
+is(Phaeochromocytoma,Class):1.0
+EquivalentTo(Phaeochromocytoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Phaeochromocytoma,(BenignNeoplasticProcess and (actsSpecificallyOn some ChromaffinCell)))):1.0
+SubClassOf(Phaeochromocytoma,BodyStructure):1.0
+is(PharyngealWall,Class):1.0
+SubClassOf(PharyngealWall,BodyWall):1.0
+is(Pharynx,Class):1.0
+is(Phenomenon,Class):1.0
+is(PhenotypicalSex,Class):1.0
+is(Photophobia,Class):1.0
+SubClassOf(Photophobia,OrganismTolerance):1.0
+is(PhysicalBarrierRole,Class):1.0
+is(PhysicalStateState,Class):1.0
+is(PhysicalStructure,Class):1.0
+SubClassOf(PhysicalStructure,GeneralisedStructure,):1.0
+SubClassOf(PhysicalStructure,SubstanceOrPhysicalStructure,):1.0
+SubClassOf(PhysicalStructure,hasCountability some discrete):1.0
+is(PhysiologicalAccumulation,Class):1.0
+SubClassOf(PhysiologicalAccumulation,Accumulation):1.0
+is(PhysiologicalBodyStructure,Class):1.0
+EquivalentTo(PhysiologicalBodyStructure,BodyStructure and (hasPathologicalStatus some physiological)):1.0
+SubClassOf(PhysiologicalBodyStructure,BodyStructure):1.0
+is(PinealGland,Class):1.0
+is(Pinna,Class):1.0
+is(PituitaryAdenoma,Class):1.0
+EquivalentTo(PituitaryAdenoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(PituitaryAdenoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(PituitaryAdenoma,(Adenocyte and (isStructuralComponentOf some PituitaryGland)))))):1.0
+SubClassOf(PituitaryAdenoma,BodyStructure):1.0
+is(PituitaryGland,Class):1.0
+is(PituitaryTumour,Class):1.0
+EquivalentTo(PituitaryTumour,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(PituitaryTumour,(NeoplasticProcess and (LocativeAttribute some PituitaryGland)))):1.0
+SubClassOf(PituitaryTumour,BodyStructure):1.0
+is(Placenta,Class):1.0
+is(PlanarStructure,Class):1.0
+SubClassOf(PlanarStructure,PhysicalStructure):1.0
+is(PlasticSurgery,Class):1.0
+SubClassOf(PlasticSurgery,Surgery):1.0
+is(Pneumocyte,Class):1.0
+SubClassOf(Pneumocyte,TissueCell):1.0
+is(Pons,Class):1.0
+is(PosteriorChamberComponent,Class):1.0
+EquivalentTo(PosteriorChamberComponent,BodyStructure and (IsDivisionOf some PosteriorChamberOfEye)):1.0
+SubClassOf(PosteriorChamberComponent,BodyStructure):1.0
+is(PosteriorChamberOfEye,Class):1.0
+is(PosteriorCranialFossa,Class):1.0
+is(PosteriorGastricWall,Class):1.0
+SubClassOf(PosteriorGastricWall,BodyWall):1.0
+is(PosteriorIntercostalArtery,Class):1.0
+is(PosteriorLobeOfPituitaryGland,Class):1.0
+is(PostsynapticCell,Class):1.0
+EquivalentTo(PostsynapticCell,Cell and (isBetaPartitiveConnectionOf some Synapse)):1.0
+SubClassOf(PostsynapticCell,Cell):1.0
+is(PresentingPartOfFoetus,Class):1.0
+SubClassOf(PresentingPartOfFoetus,BodyPart):1.0
+is(Prion,Class):1.0
+SubClassOf(Prion,MicroOrganism):1.0
+is(ProcessActivity,Class):1.0
+is(ProductOfConception,Class):1.0
+SubClassOf(ProductOfConception,OrganicSolidStructure):1.0
+is(Prokaryota,Class):1.0
+SubClassOf(Prokaryota,Organism):1.0
+is(Prolactinoma,Class):1.0
+SubClassOf(Prolactinoma,PituitaryAdenoma):1.0
+is(Prosencephalon,Class):1.0
+is(ProstateGland,Class):1.0
+is(ProstaticAdnexa,Class):1.0
+EquivalentTo(ProstaticAdnexa,BodyStructure and (isSpecificallyMadeOf some):1.0
+EquivalentTo(ProstaticAdnexa,(SoftTissue and (hasProximity some ProstateGland)))):1.0
+SubClassOf(ProstaticAdnexa,BodyStructure):1.0
+is(Protoctista,Class):1.0
+SubClassOf(Protoctista,Eukaryota):1.0
+is(Protozoa,Class):1.0
+SubClassOf(Protozoa,MicroOrganism):1.0
+is(PseudoCyst,Class):1.0
+EquivalentTo(PseudoCyst,BodyStructure and (hasPresenceAbsence some):1.0
+EquivalentTo(PseudoCyst,(absence and (isExistenceOf some Epithelium))) and (hasTopology some closedHollowTopology)):1.0
+SubClassOf(PseudoCyst,BodyStructure):1.0
+is(Pubis,Class):1.0
+is(PulmonaryAcinus,Class):1.0
+is(PulmonaryEpithelium,Class):1.0
+is(PulmonaryOedema,Class):1.0
+EquivalentTo(PulmonaryOedema,BodyStructure and (hasPathologicalStatus some pathological) and (hasSpecificLocation some Lung) and (hasUniqueAssociatedProcess some OedemaProcess)):1.0
+SubClassOf(PulmonaryOedema,BodyStructure):1.0
+is(PulmonaryValve,Class):1.0
+is(PulmonaryValveStructure,Class):1.0
+EquivalentTo(PulmonaryValveStructure,BodyStructure and (IsDivisionOf some PulmonaryValve)):1.0
+SubClassOf(PulmonaryValveStructure,BodyStructure):1.0
+is(PulpTissueOfTooth,Class):1.0
+SubClassOf(PulpTissueOfTooth,StructuralComponentOfTooth):1.0
+is(PulpitisOfTooth,Class):1.0
+is(Pylorus,Class):1.0
+is(RadialNerve,Class):1.0
+is(Radius,Class):1.0
+is(RectalWall,Class):1.0
+SubClassOf(RectalWall,BodyWall):1.0
+is(RectumToAnus,Class):1.0
+is(Refraction,Class):1.0
+SubClassOf(Refraction,Optics):1.0
+is(RegionOfStomach,Class):1.0
+EquivalentTo(RegionOfStomach,BodyStructure and (isSolidDivisionOf some Stomach)):1.0
+SubClassOf(RegionOfStomach,BodyStructure):1.0
+is(RenalInsufficiency,Class):1.0
+is(RenalNonPelvis,Class):1.0
+is(RenalParenchyma,Class):1.0
+is(RenalParenchymalStructure,Class):1.0
+SubClassOf(RenalParenchymalStructure,BodyStructure,):1.0
+SubClassOf(RenalParenchymalStructure,isSpecificallyMadeOf some RenalParenchyma,):1.0
+SubClassOf(RenalParenchymalStructure,isStructuralComponentOf some RenalNonPelvis):1.0
+is(RenalPelvis,Class):1.0
+is(RenalStructure,Class):1.0
+EquivalentTo(RenalStructure,BodyStructure and (IsDivisionOf some Kidney)):1.0
+SubClassOf(RenalStructure,BodyStructure):1.0
+is(Reservoir,Class):1.0
+SubClassOf(Reservoir,ActuallyHollowBodyStructure):1.0
+is(RespiratorySystem,Class):1.0
+is(RespiratorySystemComponent,Class):1.0
+EquivalentTo(RespiratorySystemComponent,BodyStructure and (IsDivisionOf some RespiratorySystem)):1.0
+SubClassOf(RespiratorySystemComponent,BodyStructure):1.0
+is(RespiratoryTract,Class):1.0
+is(RespiratoryTractComponent,Class):1.0
+EquivalentTo(RespiratoryTractComponent,BodyStructure and (IsDivisionOf some RespiratoryTract)):1.0
+SubClassOf(RespiratoryTractComponent,BodyStructure):1.0
+is(ReticularSystemComponent,Class):1.0
+EquivalentTo(ReticularSystemComponent,BodyStructure and (IsDivisionOf some HaematologicalSystem)):1.0
+SubClassOf(ReticularSystemComponent,BodyStructure):1.0
+is(ReticuloendothelialComponent,Class):1.0
+EquivalentTo(ReticuloendothelialComponent,BodyStructure and (IsDivisionOf some ReticuloendothelialSystem)):1.0
+SubClassOf(ReticuloendothelialComponent,BodyStructure):1.0
+is(ReticuloendothelialSystem,Class):1.0
+is(Retina,Class):1.0
+is(RetinalComponent,Class):1.0
+EquivalentTo(RetinalComponent,BodyStructure and (IsDivisionOf some Retina)):1.0
+SubClassOf(RetinalComponent,BodyStructure,):1.0
+SubClassOf(RetinalComponent,hasSurfaceVisibility some internal):1.0
+is(Rhombencephalon,Class):1.0
+is(RibCage,Class):1.0
+is(RightAtrialStructure,Class):1.0
+EquivalentTo(RightAtrialStructure,BodyStructure and (IsDivisionOf some RightHeartAtrium)):1.0
+SubClassOf(RightAtrialStructure,BodyStructure):1.0
+is(RightHeartAtrium,Class):1.0
+is(RightHeartVentricle,Class):1.0
+is(RightVentricularStructure,Class):1.0
+EquivalentTo(RightVentricularStructure,BodyStructure and (IsDivisionOf some RightHeartVentricle)):1.0
+SubClassOf(RightVentricularStructure,BodyStructure):1.0
+is(Rima,Class):1.0
+SubClassOf(Rima,BodySpace):1.0
+is(RingFinger,Class):1.0
+is(RingShapedBodyStructure,Class):1.0
+EquivalentTo(RingShapedBodyStructure,BodyStructure and (hasFeature some):1.0
+EquivalentTo(RingShapedBodyStructure,(Shape and (hasAbsoluteState some toroidal)))):1.0
+SubClassOf(RingShapedBodyStructure,BodyStructure):1.0
+is(RoofOfNasalCavity,Class):1.0
+SubClassOf(RoofOfNasalCavity,BodyRoof):1.0
+is(SacralVertebra,Class):1.0
+is(Sacrum,Class):1.0
+is(SalpingealAdnexa,Class):1.0
+EquivalentTo(SalpingealAdnexa,BodyStructure and (isSpecificallyMadeOf some PeriFallopianTubalTissue)):1.0
+SubClassOf(SalpingealAdnexa,BodyStructure,):1.0
+SubClassOf(SalpingealAdnexa,isStructuralComponentOf some FallopianTube):1.0
+is(Sarcoma,Class):1.0
+EquivalentTo(Sarcoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(Sarcoma,(MalignantNeoplasticProcess and (actsSpecificallyOn some ConnectiveTissueCell)))):1.0
+SubClassOf(Sarcoma,BodyStructure):1.0
+is(Scapula,Class):1.0
+is(SchwannCell,Class):1.0
+is(SclerosisProcess,Class):1.0
+is(ScrotalWall,Class):1.0
+SubClassOf(ScrotalWall,BodyWall):1.0
+is(Scrotum,Class):1.0
+is(Secretion,Class):1.0
+is(SecretoryCell,Class):1.0
+EquivalentTo(SecretoryCell,Cell and (hasFunction some Secretion)):1.0
+SubClassOf(SecretoryCell,Cell):1.0
+is(SectionOfIntestine,Class):1.0
+EquivalentTo(SectionOfIntestine,BodyStructure and (isLinearDivisionOf some Intestine)):1.0
+SubClassOf(SectionOfIntestine,BodyStructure,):1.0
+SubClassOf(SectionOfIntestine,hasSurfaceVisibility some internal):1.0
+is(Sedimentation,Class):1.0
+is(SegmentOfLargeBowel,Class):1.0
+EquivalentTo(SegmentOfLargeBowel,BodyStructure and (isLinearDivisionOf some LargeIntestine)):1.0
+SubClassOf(SegmentOfLargeBowel,BodyStructure,):1.0
+SubClassOf(SegmentOfLargeBowel,specificallyNonPartitivelyContains some Feces):1.0
+is(SegmentOfSmallBowel,Class):1.0
+EquivalentTo(SegmentOfSmallBowel,BodyStructure and (isLinearDivisionOf some SmallIntestine)):1.0
+SubClassOf(SegmentOfSmallBowel,BodyStructure):1.0
+is(Seizure,Class):1.0
+is(Selector,Class):1.0
+is(Sensitivity,Class):1.0
+is(SensoryCell,Class):1.0
+SubClassOf(SensoryCell,TissueCell):1.0
+is(SensoryOrgan,Class):1.0
+EquivalentTo(SensoryOrgan,BodyStructure and (IsDivisionOf some SensorySystem)):1.0
+SubClassOf(SensoryOrgan,BodyStructure):1.0
+is(SensorySystem,Class):1.0
+is(SensorySystemComponent,Class):1.0
+EquivalentTo(SensorySystemComponent,BodyStructure and (IsDivisionOf some SensorySystem)):1.0
+SubClassOf(SensorySystemComponent,BodyStructure):1.0
+is(SexSpecificAnatomy,Class):1.0
+EquivalentTo(SexSpecificAnatomy,BodyStructure and (IsDivisionOf some MaleOrFemalePhenotypePerson)):1.0
+SubClassOf(SexSpecificAnatomy,BodyStructure):1.0
+is(SexSpecificGenitoUrinarySystem,Class):1.0
+is(SexState,Class):1.0
+SubClassOf(SexState,OrganismState):1.0
+is(SexualDifferentiation,Class):1.0
+SubClassOf(SexualDifferentiation,OrganDevelopmentProcess):1.0
+is(SexualMaturationState,Class):1.0
+SubClassOf(SexualMaturationState,OrganismState):1.0
+is(SexuallyPhenotypedAnatomy,Class):1.0
+EquivalentTo(SexuallyPhenotypedAnatomy,BodyStructure and (hasPhenotypicalSex some):1.0
+EquivalentTo(SexuallyPhenotypedAnatomy,(PhenotypicalSex and (hasAbsoluteState some SexState)))):1.0
+SubClassOf(SexuallyPhenotypedAnatomy,BodyStructure):1.0
+is(Shape,Class):1.0
+is(Shoulder,Class):1.0
+is(ShuntStructure,Class):1.0
+SubClassOf(ShuntStructure,BodyConnection):1.0
+is(Skeleton,Class):1.0
+is(SkinAsOrgan,Class):1.0
+SubClassOf(SkinAsOrgan,ExternalOrgan,):1.0
+SubClassOf(SkinAsOrgan,hasSpecificLayer some DermisAsWhole,):1.0
+SubClassOf(SkinAsOrgan,hasSpecificLayer some EpidermisAsWhole,):1.0
+SubClassOf(SkinAsOrgan,hasSurfaceDivision some SkinCovering,):1.0
+SubClassOf(SkinAsOrgan,isSpecificallyMadeOf some SkinAsTissue,):1.0
+SubClassOf(SkinAsOrgan,isStructuralComponentOf some SkinSystem):1.0
+is(SkinAsTissue,Class):1.0
+is(SkinCovering,Class):1.0
+is(SkinSystem,Class):1.0
+is(Skull,Class):1.0
+is(SmallAnatomicalStructure,Class):1.0
+EquivalentTo(SmallAnatomicalStructure,BodyStructure and (hasDimension some):1.0
+EquivalentTo(SmallAnatomicalStructure,(Dimension and (hasQuantity some):1.0
+EquivalentTo(SmallAnatomicalStructure,(Level and (hasMagnitude some lowLevel)))))):1.0
+SubClassOf(SmallAnatomicalStructure,BodyStructure):1.0
+is(SmallIntestinalStructure,Class):1.0
+EquivalentTo(SmallIntestinalStructure,BodyStructure and (IsDivisionOf some SmallIntestine)):1.0
+SubClassOf(SmallIntestinalStructure,BodyStructure):1.0
+is(SmallIntestine,Class):1.0
+is(SmoothMuscleMyocyte,Class):1.0
+is(SmoothMuscleTissue,Class):1.0
+is(SoftTissue,Class):1.0
+is(SoftTissueStructure,Class):1.0
+EquivalentTo(SoftTissueStructure,BodyStructure and (isMadeOf some SoftTissue)):1.0
+SubClassOf(SoftTissueStructure,BodyStructure):1.0
+is(SoildDivisionOfTooth,Class):1.0
+EquivalentTo(SoildDivisionOfTooth,BodyStructure and (isSolidDivisionOf some Tooth)):1.0
+SubClassOf(SoildDivisionOfTooth,BodyStructure):1.0
+is(SolidBodyStructure,Class):1.0
+EquivalentTo(SolidBodyStructure,BodyStructure and (hasTopology some):1.0
+EquivalentTo(SolidBodyStructure,(Topology and (hasAbsoluteState some topologicallySolid)))):1.0
+SubClassOf(SolidBodyStructure,BodyStructure):1.0
+is(SolidNonNormalBodyStructure,Class):1.0
+SubClassOf(SolidNonNormalBodyStructure,NonNormalBodyStructure):1.0
+is(SolidPartOfBodyStructure,Class):1.0
+EquivalentTo(SolidPartOfBodyStructure,BodyStructure and (isSolidDivisionOf some BodyStructure)):1.0
+SubClassOf(SolidPartOfBodyStructure,BodyStructure):1.0
+is(SolidPartOfBone,Class):1.0
+EquivalentTo(SolidPartOfBone,BodyStructure and (isSolidDivisionOf some Bone)):1.0
+SubClassOf(SolidPartOfBone,BodyStructure):1.0
+is(SolidPartOfLongBone,Class):1.0
+EquivalentTo(SolidPartOfLongBone,BodyStructure and (isSolidDivisionOf some LongBone)):1.0
+SubClassOf(SolidPartOfLongBone,BodyStructure):1.0
+is(SolidStructure,Class):1.0
+SubClassOf(SolidStructure,PhysicalStructure):1.0
+is(Space,Class):1.0
+is(Spermatozoa,Class):1.0
+SubClassOf(Spermatozoa,GermCell):1.0
+is(SphenoZygomaticSuture,Class):1.0
+SubClassOf(SphenoZygomaticSuture,NAMEDJoint,):1.0
+SubClassOf(SphenoZygomaticSuture,isMadeOf some FibrousTissue,):1.0
+SubClassOf(SphenoZygomaticSuture,isPairedOrUnpaired some leftRightPaired,):1.0
+SubClassOf(SphenoZygomaticSuture,isStructuralComponentOf some Skull):1.0
+is(SphenoidBone,Class):1.0
+is(SpinalCanal,Class):1.0
+is(SpinalColumn,Class):1.0
+is(SpinalCord,Class):1.0
+is(Spore,Class):1.0
+SubClassOf(Spore,Cell):1.0
+is(SquamousCell,Class):1.0
+is(SquamousCellCarcinoma,Class):1.0
+EquivalentTo(SquamousCellCarcinoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(SquamousCellCarcinoma,(MalignantNeoplasticProcess and (actsSpecificallyOn some SquamousCell)))):1.0
+SubClassOf(SquamousCellCarcinoma,BodyStructure):1.0
+is(SquamousCellCarcinomaOfLung,Class):1.0
+EquivalentTo(SquamousCellCarcinomaOfLung,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(SquamousCellCarcinomaOfLung,(MalignantNeoplasticProcess and (actsSpecificallyOn some PulmonaryEpithelium)))):1.0
+SubClassOf(SquamousCellCarcinomaOfLung,BodyStructure):1.0
+is(State,Class):1.0
+is(Status,Class):1.0
+is(StemCell,Class):1.0
+SubClassOf(StemCell,Cell):1.0
+is(Stomach,Class):1.0
+is(StructuralComponentOfTooth,Class):1.0
+EquivalentTo(StructuralComponentOfTooth,BodyStructure and (isStructuralComponentOf some Tooth)):1.0
+SubClassOf(StructuralComponentOfTooth,BodyStructure):1.0
+is(StructureInnervatedByBranchOfRadialNerve,Class):1.0
+EquivalentTo(StructureInnervatedByBranchOfRadialNerve,BodyStructure and (isServedBy some BranchOfRadialNerve)):1.0
+SubClassOf(StructureInnervatedByBranchOfRadialNerve,BodyStructure):1.0
+is(StructureInnervatedByBranchOfUlnarNerve,Class):1.0
+EquivalentTo(StructureInnervatedByBranchOfUlnarNerve,BodyStructure and (isServedBy some BranchOfUlnarNerve)):1.0
+SubClassOf(StructureInnervatedByBranchOfUlnarNerve,BodyStructure):1.0
+is(StructureInnervatedByMedianNerve,Class):1.0
+EquivalentTo(StructureInnervatedByMedianNerve,BodyStructure and (isServedBy some MedianNerve)):1.0
+SubClassOf(StructureInnervatedByMedianNerve,BodyStructure):1.0
+is(StructureInnervatedByRadialNerve,Class):1.0
+EquivalentTo(StructureInnervatedByRadialNerve,BodyStructure and (isServedBy some RadialNerve)):1.0
+SubClassOf(StructureInnervatedByRadialNerve,BodyStructure):1.0
+is(StructureInnervatedByUlnarNerve,Class):1.0
+EquivalentTo(StructureInnervatedByUlnarNerve,BodyStructure and (isServedBy some UlnarNerve)):1.0
+SubClassOf(StructureInnervatedByUlnarNerve,BodyStructure):1.0
+is(StructureNearHeartValve,Class):1.0
+EquivalentTo(StructureNearHeartValve,BodyStructure and (hasProximity some ValveInHeart) and (isStructuralComponentOf some Heart)):1.0
+SubClassOf(StructureNearHeartValve,BodyStructure):1.0
+is(StructureWithinSpinalCanal,Class):1.0
+EquivalentTo(StructureWithinSpinalCanal,BodyStructure and (InverseContainmentAttribute some SpinalCanal)):1.0
+SubClassOf(StructureWithinSpinalCanal,BodyStructure,):1.0
+SubClassOf(StructureWithinSpinalCanal,isStructuralComponentOf some NervousSystem):1.0
+is(Stump,Class):1.0
+SubClassOf(Stump,LinearBodyStructure):1.0
+is(SubstanceFeature,Class):1.0
+is(SubstanceOrPhysicalStructure,Class):1.0
+is(SubstantiaNigra,Class):1.0
+is(SubthalamicNucleus,Class):1.0
+is(SupernumeraryAnatomy,Class):1.0
+EquivalentTo(SupernumeraryAnatomy,BodyStructure and (hasEctopicSupernumeraryStatus some supernumerary)):1.0
+SubClassOf(SupernumeraryAnatomy,BodyStructure,):1.0
+SubClassOf(SupernumeraryAnatomy,hasAbnormalityStatus some nonNormal,):1.0
+SubClassOf(SupernumeraryAnatomy,hasAcquisitionMode some):1.0
+SubClassOf(SupernumeraryAnatomy,(AcquisitionMode and (hasAbsoluteState some congenital))):1.0
+is(SurfaceAreaOfEar,Class):1.0
+EquivalentTo(SurfaceAreaOfEar,BodyStructure and (isSurfaceDivisionOf some Ear)):1.0
+SubClassOf(SurfaceAreaOfEar,BodyStructure,):1.0
+SubClassOf(SurfaceAreaOfEar,hasSurfaceVisibility some surfaceVisible):1.0
+is(SurfaceAreaOfEye,Class):1.0
+EquivalentTo(SurfaceAreaOfEye,BodyStructure and (isSurfaceDivisionOf some Eye)):1.0
+SubClassOf(SurfaceAreaOfEye,BodyStructure,):1.0
+SubClassOf(SurfaceAreaOfEye,hasSurfaceVisibility some surfaceVisible):1.0
+is(SurfaceAreaOfNose,Class):1.0
+EquivalentTo(SurfaceAreaOfNose,BodyStructure and (isSurfaceDivisionOf some Nose)):1.0
+SubClassOf(SurfaceAreaOfNose,BodyStructure,):1.0
+SubClassOf(SurfaceAreaOfNose,hasSurfaceVisibility some surfaceVisible):1.0
+is(SurfaceBodyStructure,Class):1.0
+EquivalentTo(SurfaceBodyStructure,BodyStructure and (hasSurfaceVisibility some surfaceVisible)):1.0
+SubClassOf(SurfaceBodyStructure,BodyStructure):1.0
+is(SurfaceHollowBodyStructure,Class):1.0
+EquivalentTo(SurfaceHollowBodyStructure,BodyStructure and (hasTopology some):1.0
+EquivalentTo(SurfaceHollowBodyStructure,(Topology and (hasAbsoluteState some surfaceHollow)))):1.0
+SubClassOf(SurfaceHollowBodyStructure,BodyStructure):1.0
+is(SurfaceLandmarksOfBone,Class):1.0
+EquivalentTo(SurfaceLandmarksOfBone,BodyStructure and (isSurfaceDivisionOf some Bone)):1.0
+SubClassOf(SurfaceLandmarksOfBone,BodyStructure):1.0
+is(SurfaceOfHeart,Class):1.0
+EquivalentTo(SurfaceOfHeart,BodyStructure and (isSurfaceDivisionOf some Heart)):1.0
+SubClassOf(SurfaceOfHeart,BodyStructure):1.0
+is(SurfaceOfTooth,Class):1.0
+EquivalentTo(SurfaceOfTooth,BodyStructure and (isSurfaceDivisionOf some Tooth)):1.0
+SubClassOf(SurfaceOfTooth,BodyStructure):1.0
+is(SurfaceStructureOfAbdomen,Class):1.0
+SubClassOf(SurfaceStructureOfAbdomen,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfBack,Class):1.0
+SubClassOf(SurfaceStructureOfBack,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfExtremity,Class):1.0
+SubClassOf(SurfaceStructureOfExtremity,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfHead,Class):1.0
+SubClassOf(SurfaceStructureOfHead,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfHeadOrNeck,Class):1.0
+SubClassOf(SurfaceStructureOfHeadOrNeck,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfLowerExtremity,Class):1.0
+SubClassOf(SurfaceStructureOfLowerExtremity,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfNeck,Class):1.0
+SubClassOf(SurfaceStructureOfNeck,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfPelvicPartOfTrunk,Class):1.0
+SubClassOf(SurfaceStructureOfPelvicPartOfTrunk,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfPerineum,Class):1.0
+SubClassOf(SurfaceStructureOfPerineum,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfThorax,Class):1.0
+SubClassOf(SurfaceStructureOfThorax,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfTrunk,Class):1.0
+SubClassOf(SurfaceStructureOfTrunk,SurfaceBodyStructure):1.0
+is(SurfaceStructureOfUpperExtremity,Class):1.0
+SubClassOf(SurfaceStructureOfUpperExtremity,SurfaceBodyStructure):1.0
+is(Surgery,Class):1.0
+is(SurgicalAbdominalWallIncision,Class):1.0
+EquivalentTo(SurgicalAbdominalWallIncision,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(SurgicalAbdominalWallIncision,(Incising and (actsSpecificallyOn some AbdominalWall)))):1.0
+SubClassOf(SurgicalAbdominalWallIncision,BodyStructure):1.0
+is(SurgicalConnectionStructure,Class):1.0
+SubClassOf(SurgicalConnectionStructure,BodyConnection):1.0
+is(SymptomRole,Class):1.0
+is(Synapse,Class):1.0
+is(SynovialJoint,Class):1.0
+is(TCellChronicLymphocyticLeukaemia,Class):1.0
+SubClassOf(TCellChronicLymphocyticLeukaemia,ChronicLymphocyticLeukaemia,):1.0
+SubClassOf(TCellChronicLymphocyticLeukaemia,hasSyndromeElement some TCellLymphocytosis):1.0
+is(TCellLymphocytosis,Class):1.0
+is(TCellLymphoma,Class):1.0
+SubClassOf(TCellLymphoma,MalignantLymphoma):1.0
+is(Telencephalon,Class):1.0
+is(TemporalBone,Class):1.0
+is(TemporoZygomaticSuture,Class):1.0
+SubClassOf(TemporoZygomaticSuture,NAMEDJoint,):1.0
+SubClassOf(TemporoZygomaticSuture,isMadeOf some FibrousTissue,):1.0
+SubClassOf(TemporoZygomaticSuture,isPairedOrUnpaired some leftRightPaired,):1.0
+SubClassOf(TemporoZygomaticSuture,isStructuralComponentOf some Skull):1.0
+is(TerminalBronchiole,Class):1.0
+is(TesticularAppendix,Class):1.0
+SubClassOf(TesticularAppendix,ComponentOfTestis):1.0
+is(TesticularParenchyma,Class):1.0
+is(TesticularParenchymalStructure,Class):1.0
+SubClassOf(TesticularParenchymalStructure,BodyStructure,):1.0
+SubClassOf(TesticularParenchymalStructure,isSpecificallyMadeOf some TesticularParenchyma,):1.0
+SubClassOf(TesticularParenchymalStructure,isStructuralComponentOf some Testis):1.0
+is(Testis,Class):1.0
+is(Tetraphyllidea,Class):1.0
+SubClassOf(Tetraphyllidea,Eucestoda):1.0
+is(Thalamus,Class):1.0
+is(Thigh,Class):1.0
+is(ThoracicAnatomy,Class):1.0
+EquivalentTo(ThoracicAnatomy,BodyStructure and (IsDivisionOf some Thorax)):1.0
+SubClassOf(ThoracicAnatomy,BodyStructure):1.0
+is(ThoracicCavity,Class):1.0
+is(ThoracicVertebra,Class):1.0
+is(Thorax,Class):1.0
+is(Thumb,Class):1.0
+is(ThymusGland,Class):1.0
+is(ThyroidAdenoma,Class):1.0
+EquivalentTo(ThyroidAdenoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(ThyroidAdenoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(ThyroidAdenoma,(Adenocyte and (isStructuralComponentOf some ThyroidGland)))))):1.0
+SubClassOf(ThyroidAdenoma,BodyStructure):1.0
+is(ThyroidGland,Class):1.0
+is(ThyroidTumour,Class):1.0
+EquivalentTo(ThyroidTumour,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(ThyroidTumour,(NeoplasticProcess and (LocativeAttribute some ThyroidGland)))):1.0
+SubClassOf(ThyroidTumour,BodyStructure):1.0
+is(Tibia,Class):1.0
+is(Tic,Class):1.0
+is(TicSymptom,Class):1.0
+EquivalentTo(TicSymptom,Tic and (playsConsultationRole some SymptomRole)):1.0
+SubClassOf(TicSymptom,Tic):1.0
+is(Tissue,Class):1.0
+is(TissueCell,Class):1.0
+SubClassOf(TissueCell,BodyStructure,):1.0
+SubClassOf(TissueCell,Cell,):1.0
+SubClassOf(TissueCell,hasSensitivity some):1.0
+SubClassOf(TissueCell,(Sensitivity and (isWithReferenceTo some):1.0
+SubClassOf(TissueCell,(presence and (isPresenceAbsenceOf some Insulin))))):1.0
+is(Tongue,Class):1.0
+is(TonicSeizure,Class):1.0
+SubClassOf(TonicSeizure,Seizure):1.0
+is(Tooth,Class):1.0
+is(ToothBiteLesion,Class):1.0
+is(ToothPart,Class):1.0
+EquivalentTo(ToothPart,BodyStructure and (IsDivisionOf some Tooth)):1.0
+SubClassOf(ToothPart,BodyStructure):1.0
+is(Topology,Class):1.0
+is(TorusMandibularis,Class):1.0
+SubClassOf(TorusMandibularis,OsteocartilaginousExostosis):1.0
+is(TorusPalatinus,Class):1.0
+SubClassOf(TorusPalatinus,OsteocartilaginousExostosis):1.0
+is(Trachea,Class):1.0
+is(TrachealCartilageRing,Class):1.0
+EquivalentTo(TrachealCartilageRing,BodyStructure and (hasShape some):1.0
+EquivalentTo(TrachealCartilageRing,(Shape and (hasAbsoluteState some toroidal))) and (isSpecificStructuralComponentOf some Trachea) and (isSpecificallyMadeOf some Cartilage)):1.0
+SubClassOf(TrachealCartilageRing,BodyStructure,):1.0
+SubClassOf(TrachealCartilageRing,isPairedOrUnpaired some moreThanPaired):1.0
+is(Transparency,Class):1.0
+is(TricuspidValve,Class):1.0
+is(TricuspidValveStructure,Class):1.0
+EquivalentTo(TricuspidValveStructure,BodyStructure and (IsDivisionOf some TricuspidValve)):1.0
+SubClassOf(TricuspidValveStructure,BodyStructure):1.0
+is(TruelyHollowBodyStructure,Class):1.0
+EquivalentTo(TruelyHollowBodyStructure,BodyStructure and (hasTopology some):1.0
+EquivalentTo(TruelyHollowBodyStructure,(Topology and (hasAbsoluteState some trulyHollow)))):1.0
+SubClassOf(TruelyHollowBodyStructure,BodyStructure):1.0
+is(Trunk,Class):1.0
+is(TubalConceptus,Class):1.0
+SubClassOf(TubalConceptus,Conceptus):1.0
+is(TubularBodyPart,Class):1.0
+SubClassOf(TubularBodyPart,BodyPart):1.0
+is(TubularBodyStructure,Class):1.0
+EquivalentTo(TubularBodyStructure,BodyStructure and (hasTopology some):1.0
+EquivalentTo(TubularBodyStructure,(Topology and (hasAbsoluteState some tubular)))):1.0
+SubClassOf(TubularBodyStructure,BodyStructure,):1.0
+SubClassOf(TubularBodyStructure,hasShapeAnalagousTo some):1.0
+SubClassOf(TubularBodyStructure,(AnatomicalShape and (hasAbsoluteState some linear))):1.0
+is(TubularCardiovascularComponent,Class):1.0
+SubClassOf(TubularCardiovascularComponent,TubularBodyStructure):1.0
+is(TubularRespiratoryTractComponent,Class):1.0
+EquivalentTo(TubularRespiratoryTractComponent,BodyStructure and (IsDivisionOf some RespiratoryTract) and (hasTopology some tubularTopology)):1.0
+SubClassOf(TubularRespiratoryTractComponent,BodyStructure):1.0
+is(Tumescing,Class):1.0
+is(TunicaAdventitia,Class):1.0
+is(TunicaAdventitiaVasorum,Class):1.0
+EquivalentTo(TunicaAdventitiaVasorum,TunicaAdventitia and (isLayerOf some BloodVessel)):1.0
+SubClassOf(TunicaAdventitiaVasorum,TunicaAdventitia):1.0
+is(TwoAndAHalfDimensionalBodyStructure,Class):1.0
+EquivalentTo(TwoAndAHalfDimensionalBodyStructure,BodyStructure and (hasShapeAnalagousTo some):1.0
+EquivalentTo(TwoAndAHalfDimensionalBodyStructure,(AnatomicalShape and (hasAbsoluteState some laminar)))):1.0
+SubClassOf(TwoAndAHalfDimensionalBodyStructure,BodyStructure):1.0
+is(UlceratingProcess,Class):1.0
+is(Ulna,Class):1.0
+is(UlnarNerve,Class):1.0
+is(UmbilicalCord,Class):1.0
+is(UnambiguousGonad,Class):1.0
+SubClassOf(UnambiguousGonad,Gonad):1.0
+is(UnpairedBodyStructure,Class):1.0
+EquivalentTo(UnpairedBodyStructure,BodyStructure and (isPairedOrUnpaired some unpaired)):1.0
+SubClassOf(UnpairedBodyStructure,BodyStructure):1.0
+is(UnusualBodyStructure,Class):1.0
+EquivalentTo(UnusualBodyStructure,BodyStructure and (hasAbnormalityStatus some unusual)):1.0
+SubClassOf(UnusualBodyStructure,BodyStructure):1.0
+is(UpperExtremity,Class):1.0
+is(UpperFemaleGenitalTractComponent,Class):1.0
+SubClassOf(UpperFemaleGenitalTractComponent,FemaleGenitalTractComponent):1.0
+is(UpperGITractComponent,Class):1.0
+EquivalentTo(UpperGITractComponent,BodyStructure and (IsDivisionOf some UpperGastrointestinalTract)):1.0
+SubClassOf(UpperGITractComponent,BodyStructure,):1.0
+SubClassOf(UpperGITractComponent,hasSurfaceVisibility some internal):1.0
+is(UpperGastrointestinalTract,Class):1.0
+is(UpperRespiratoryTract,Class):1.0
+is(UpperRespiratoryTractComponent,Class):1.0
+EquivalentTo(UpperRespiratoryTractComponent,BodyStructure and (IsDivisionOf some UpperRespiratoryTract)):1.0
+SubClassOf(UpperRespiratoryTractComponent,BodyStructure):1.0
+is(UpperUrinaryTract,Class):1.0
+is(Ureter,Class):1.0
+is(UretericStructure,Class):1.0
+EquivalentTo(UretericStructure,BodyStructure and (IsDivisionOf some Ureter)):1.0
+SubClassOf(UretericStructure,BodyStructure):1.0
+is(Urethra,Class):1.0
+is(UrethralAdnexa,Class):1.0
+EquivalentTo(UrethralAdnexa,BodyStructure and (isSpecificallyMadeOf some):1.0
+EquivalentTo(UrethralAdnexa,(SoftTissue and (hasProximity some Urethra)))):1.0
+SubClassOf(UrethralAdnexa,BodyStructure):1.0
+is(UrethralStructure,Class):1.0
+EquivalentTo(UrethralStructure,BodyStructure and (IsDivisionOf some Urethra)):1.0
+SubClassOf(UrethralStructure,BodyStructure):1.0
+is(UrinaryBladder,Class):1.0
+is(UrinaryBladderStructure,Class):1.0
+EquivalentTo(UrinaryBladderStructure,BodyStructure and (IsDivisionOf some UrinaryBladder)):1.0
+SubClassOf(UrinaryBladderStructure,BodyStructure):1.0
+is(UrinaryBladderWall,Class):1.0
+SubClassOf(UrinaryBladderWall,BodyWall):1.0
+is(UrinaryTract,Class):1.0
+is(UterineFibroid,Class):1.0
+EquivalentTo(UterineFibroid,BodyStructure and (hasPhenotypicalSex some):1.0
+EquivalentTo(UterineFibroid,(PhenotypicalSex and (hasAbsoluteState some femaleSex))) and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(UterineFibroid,(NeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(UterineFibroid,(SmoothMuscleMyocyte and (isSpecificStructuralComponentOf some Uterus))) and (hasMalignancy some):1.0
+EquivalentTo(UterineFibroid,(Malignancy and (hasAbsoluteState some benign)))))):1.0
+SubClassOf(UterineFibroid,BodyStructure,):1.0
+SubClassOf(UterineFibroid,hasSpecificLocation some Uterus,):1.0
+SubClassOf(UterineFibroid,isMadeOf some FibrousTissue):1.0
+is(Uterus,Class):1.0
+is(Vagina,Class):1.0
+is(VaginalBleeding,Class):1.0
+SubClassOf(VaginalBleeding,Bleeding):1.0
+is(VaginalWall,Class):1.0
+SubClassOf(VaginalWall,BodyWall):1.0
+is(ValveInHeart,Class):1.0
+is(VariantBodyStructure,Class):1.0
+EquivalentTo(VariantBodyStructure,BodyStructure and (hasAbnormalityStatus some variant)):1.0
+SubClassOf(VariantBodyStructure,BodyStructure):1.0
+is(VascularStructure,Class):1.0
+EquivalentTo(VascularStructure,BodyStructure and (IsDivisionOf some BloodVessel)):1.0
+SubClassOf(VascularStructure,BodyStructure):1.0
+is(VascularStructureServingOrgan,Class):1.0
+EquivalentTo(VascularStructureServingOrgan,BloodVessel and (serves some BodyStructure)):1.0
+SubClassOf(VascularStructureServingOrgan,BloodVessel):1.0
+is(VascularStructureWithinOrgan,Class):1.0
+EquivalentTo(VascularStructureWithinOrgan,BloodVessel and (IsDivisionOf some BodyStructure)):1.0
+SubClassOf(VascularStructureWithinOrgan,BloodVessel):1.0
+is(VascularSystem,Class):1.0
+is(Vein,Class):1.0
+is(VenousHaemangioma,Class):1.0
+EquivalentTo(VenousHaemangioma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(VenousHaemangioma,(BenignNeoplasticProcess and (actsSpecificallyOn some VenousStructure)))):1.0
+SubClassOf(VenousHaemangioma,BodyStructure):1.0
+is(VenousStructure,Class):1.0
+EquivalentTo(VenousStructure,BodyStructure and (playsPhysiologicalRole some EfferentRole)):1.0
+SubClassOf(VenousStructure,BodyStructure,):1.0
+SubClassOf(VenousStructure,isStructuralComponentOf some CardiovascularSystem):1.0
+is(VentricularStructure,Class):1.0
+EquivalentTo(VentricularStructure,BodyStructure and (IsDivisionOf some HeartVentricle)):1.0
+SubClassOf(VentricularStructure,BodyStructure,):1.0
+SubClassOf(VentricularStructure,hasSpecificLayer some Endocardium):1.0
+is(VenularHaemangioma,Class):1.0
+EquivalentTo(VenularHaemangioma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(VenularHaemangioma,(BenignNeoplasticProcess and (actsSpecificallyOn some Venule)))):1.0
+SubClassOf(VenularHaemangioma,BodyStructure):1.0
+is(Venule,Class):1.0
+is(Vertebra,Class):1.0
+is(VestibularSchwannoma,Class):1.0
+EquivalentTo(VestibularSchwannoma,BodyStructure and (hasUniqueAssociatedProcess some):1.0
+EquivalentTo(VestibularSchwannoma,(BenignNeoplasticProcess and (actsSpecificallyOn some):1.0
+EquivalentTo(VestibularSchwannoma,(SchwannCell and (isSpecificStructuralComponentOf some AuditoryNerve)))))):1.0
+SubClassOf(VestibularSchwannoma,BodyStructure):1.0
+is(ViabilityState,Class):1.0
+SubClassOf(ViabilityState,OrganismState):1.0
+is(VillousAdenoma,Class):1.0
+SubClassOf(VillousAdenoma,Adenoma):1.0
+is(Virus,Class):1.0
+SubClassOf(Virus,MicroOrganism):1.0
+is(VisualSystem,Class):1.0
+is(VisualSystemComponent,Class):1.0
+EquivalentTo(VisualSystemComponent,BodyStructure and (IsDivisionOf some VisualSystem)):1.0
+SubClassOf(VisualSystemComponent,BodyStructure):1.0
+is(Wall,Class):1.0
+is(WallOfHeartAtrium,Class):1.0
+SubClassOf(WallOfHeartAtrium,BodyWall):1.0
+is(WallOfHeartVenrticle,Class):1.0
+SubClassOf(WallOfHeartVenrticle,BodyWall):1.0
+is(WallOfHollowBodyPart,Class):1.0
+EquivalentTo(WallOfHollowBodyPart,BodyStructure and (isLayerOf some):1.0
+EquivalentTo(WallOfHollowBodyPart,(BodyPart and (hasTopology some hollowTopology))) and (playsPhysiologicalRole some PhysicalBarrierRole)):1.0
+SubClassOf(WallOfHollowBodyPart,BodyStructure):1.0
+is(WallOfHollowBodyStructure,Class):1.0
+EquivalentTo(WallOfHollowBodyStructure,BodyStructure and (isLayerOf some):1.0
+EquivalentTo(WallOfHollowBodyStructure,(BodyStructure and (hasTopology some hollowTopology))) and (playsPhysiologicalRole some PhysicalBarrierRole)):1.0
+SubClassOf(WallOfHollowBodyStructure,BodyStructure):1.0
+is(WallOfInguinalCanal,Class):1.0
+SubClassOf(WallOfInguinalCanal,BodyWall):1.0
+is(WallOfNasalPassage,Class):1.0
+SubClassOf(WallOfNasalPassage,BodyWall):1.0
+is(WallOfOrbit,Class):1.0
+SubClassOf(WallOfOrbit,BodyWall):1.0
+is(WallOfPylorus,Class):1.0
+SubClassOf(WallOfPylorus,BodyWall):1.0
+is(WallOfStomachToDuodenum,Class):1.0
+SubClassOf(WallOfStomachToDuodenum,BodyWall):1.0
+is(WillingnessState,Class):1.0
+SubClassOf(WillingnessState,OrganismState):1.0
+is(Wish,Class):1.0
+is(WishToBeAnOrganDonor,Class):1.0
+SubClassOf(WishToBeAnOrganDonor,Wish):1.0
+is(Wrist,Class):1.0
+is(WristJoint,Class):1.0
+is(Ziehl-NeelsenStaining,Class):1.0
+SubClassOf(Ziehl-NeelsenStaining,OrganicMaterialStaining):1.0
+is(Zygoma,Class):1.0
+is(Zygote,Class):1.0
+SubClassOf(Zygote,EmbryonicCell):1.0
+is(abnormal,Class):1.0
+is(absence,Class):1.0
+is(activeActivityLevel,Class):1.0
+is(actuallyHollow,Class):1.0
+is(alphabeticalShape,Class):1.0
+SubClassOf(alphabeticalShape,solidShape):1.0
+is(anisomorphic,Class):1.0
+SubClassOf(anisomorphic,CellMorphologyState):1.0
+is(atLeastPaired,Class):1.0
+is(bellShaped,Class):1.0
+SubClassOf(bellShaped,solidShape):1.0
+is(benign,Class):1.0
+is(bodyCentralSelection,Class):1.0
+is(chronic,Class):1.0
+is(closedHollow,Class):1.0
+is(closedHollowTopology,Class):1.0
+is(congenital,Class):1.0
+is(conical,Class):1.0
+SubClassOf(conical,solidShape):1.0
+is(cuboidal,Class):1.0
+SubClassOf(cuboidal,solidShape):1.0
+is(cylindrical,Class):1.0
+SubClassOf(cylindrical,solidShape):1.0
+is(discrete,Class):1.0
+is(ectopic,Class):1.0
+is(elongatedSolid,Class):1.0
+is(exactlyPaired,Class):1.0
+is(femaleSex,Class):1.0
+is(highLevel,Class):1.0
+is(hollow,Class):1.0
+is(hollowTopology,Class):1.0
+is(inactive,Class):1.0
+is(ineffective,Class):1.0
+is(inferiorSelection,Class):1.0
+is(insuloma,Class):1.0
+SubClassOf(insuloma,IsletCellAdenoma):1.0
+is(internal,Class):1.0
+is(intolerant,Class):1.0
+SubClassOf(intolerant,OrganismToleranceState):1.0
+is(laminar,Class):1.0
+is(largeSize,Class):1.0
+is(leftRightPaired,Class):1.0
+is(leftSelection,Class):1.0
+is(linear,Class):1.0
+is(liquidSolid,Class):1.0
+SubClassOf(liquidSolid,PhysicalStateState):1.0
+is(lobular,Class):1.0
+SubClassOf(lobular,solidShape):1.0
+is(lowLevel,Class):1.0
+is(maleSex,Class):1.0
+is(mirrorImaged,Class):1.0
+is(moreThanPaired,Class):1.0
+is(nonNormal,Class):1.0
+is(nonOverlappingStatus,Class):1.0
+is(normal,Class):1.0
+is(opaque,Class):1.0
+is(organExtended,Class):1.0
+SubClassOf(organExtended,organTotal):1.0
+is(organPartial,Class):1.0
+SubClassOf(organPartial,OrganExtentState):1.0
+is(organTotal,Class):1.0
+SubClassOf(organTotal,OrganExtentState):1.0
+is(outerSelection,Class):1.0
+is(overlappingStatus,Class):1.0
+is(ovoid,Class):1.0
+SubClassOf(ovoid,solidShape):1.0
+is(partial,Class):1.0
+is(pathological,Class):1.0
+is(physiological,Class):1.0
+is(presence,Class):1.0
+is(pyramidal,Class):1.0
+SubClassOf(pyramidal,solidShape):1.0
+is(saccular,Class):1.0
+SubClassOf(saccular,solidShape):1.0
+is(sectionOfSphere,Class):1.0
+SubClassOf(sectionOfSphere,solidShape):1.0
+is(solidShape,Class):1.0
+SubClassOf(solidShape,AbsoluteShapeState):1.0
+is(solidTopology,Class):1.0
+is(superiorSelection,Class):1.0
+is(supernumerary,Class):1.0
+is(surfaceHollow,Class):1.0
+is(surfaceVisible,Class):1.0
+is(tetrahedral,Class):1.0
+SubClassOf(tetrahedral,solidShape):1.0
+is(tolerant,Class):1.0
+SubClassOf(tolerant,OrganismToleranceState):1.0
+is(topologicallySolid,Class):1.0
+is(toroidal,Class):1.0
+SubClassOf(toroidal,solidShape):1.0
+is(trulyHollow,Class):1.0
+is(tubular,Class):1.0
+is(tubularTopology,Class):1.0
+is(unpaired,Class):1.0
+is(unusual,Class):1.0
+is(variant,Class):1.0
+is(www.w3.org/2002/07/#,Class):1.0

@@ -1,0 +1,25 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(string,is,Datatype).
+predicate(BFO_0000051,is,ObjectProperty).
+predicate(OGG_0000000014,is,ObjectProperty).
+predicate(NCBITaxon_10090,is,Class).
+predicate(NCBITaxon_2759,is,Class).
+predicate(OGG_0000000001,is,Class).
+predicate(OGG_1000002759,is,Class).
+predicate(OGG_1000002759,SubClassOf,OGG_0000000001,).
+predicate(OGG_1000002759,SubClassOf,BFO_0000051 some OGG_2000002759,).
+predicate(OGG_1000002759,SubClassOf,OGG_0000000014 some NCBITaxon_2759).
+predicate(OGG_1000010090,is,Class).
+predicate(OGG_1000010090,SubClassOf,OGG_1000002759,).
+predicate(OGG_1000010090,SubClassOf,BFO_0000051 some OGG_2000010090,).
+predicate(OGG_1000010090,SubClassOf,BFO_0000051 some).
+predicate(OGG_1000010090,SubClassOf,(OGG_2000010090 and (OGG_0000000014 some NCBITaxon_2759)),).
+predicate(OGG_1000010090,SubClassOf,OGG_0000000014 some NCBITaxon_10090,).
+predicate(OGG_1000010090,SubClassOf,BFO_0000051 only (OGG_0000000014 some NCBITaxon_2759)).
+predicate(OGG_2000002759,is,Class).
+predicate(OGG_2000010090,is,Class).
+predicate(OGG_2000010090,DisjointWith,OGG_0000000014 some NCBITaxon_2759).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(OGG_0000000014 some NCBITaxon_2759,is,Class).
+predicate(OGG_0000000014 some NCBITaxon_2759,SubClassOf,OGG_1000010090).

@@ -1,0 +1,390 @@
+predicate(creates,is,ObjectProperty).
+predicate(followUpOf,is,ObjectProperty).
+predicate(followUpOf,Domain,MedicalProcess).
+predicate(followUpOf,Range,MedicalProcess).
+predicate(followUpOf,InverseOf,hasFollowUp).
+predicate(hasFollowUp,is,ObjectProperty).
+predicate(hasFollowUp,Domain,MedicalProcess).
+predicate(hasFollowUp,Range,MedicalProcess).
+predicate(hasFollowUp,InverseOf,followUpOf).
+predicate(hasIdentifier,is,ObjectProperty).
+predicate(hasOutcome,is,ObjectProperty).
+predicate(hasPatient,is,ObjectProperty).
+predicate(hasPlace,is,ObjectProperty).
+predicate(hasQuality,is,ObjectProperty).
+predicate(implements,is,ObjectProperty).
+predicate(makesUseOfTechnicalObject,is,ObjectProperty).
+predicate(makesUseOfTechnicalObject,Domain,MedicalProcess).
+predicate(makesUseOfTechnicalObject,Range,IndependentContinuant).
+predicate(makesUseOfTechnicalObject,InverseOf,usedInMedicalProcess).
+predicate(pictures,is,ObjectProperty).
+predicate(pictures,Domain,Imaging).
+predicate(pictures,Range,OrganismalIndependentContinuant).
+predicate(promptedBy,is,ObjectProperty).
+predicate(reveals,is,ObjectProperty).
+predicate(undergoneBy,is,ObjectProperty).
+predicate(undertakenBy,is,ObjectProperty).
+predicate(usedInMedicalProcess,is,ObjectProperty).
+predicate(usedInMedicalProcess,InverseOf,makesUseOfTechnicalObject).
+predicate(hasAgent,is,ObjectProperty).
+predicate(hasPart,is,ObjectProperty).
+predicate(hasParticipant,is,ObjectProperty).
+predicate(ALPLevel,is,Class).
+predicate(ALTCount,is,Class).
+predicate(ANC,is,Class).
+predicate(ANC,SubClassOf,HematologicalBiochemicalTest,).
+predicate(ANC,SubClassOf,reveals some ANCount,).
+predicate(ANC,SubClassOf,reveals only ANCount).
+predicate(ANCount,is,Class).
+predicate(ASTCount,is,Class).
+predicate(AlkalinePhosphataseTest,is,Class).
+predicate(AlkalinePhosphataseTest,SubClassOf,HematologicalBiochemicalTest,).
+predicate(AlkalinePhosphataseTest,SubClassOf,reveals some ALPLevel,).
+predicate(AlkalinePhosphataseTest,SubClassOf,reveals only ALPLevel).
+predicate(Audiometry,is,Class).
+predicate(Audiometry,SubClassOf,DiagnosticProcess).
+predicate(Autopsy,is,Class).
+predicate(Autopsy,SubClassOf,DiagnosticProcess).
+predicate(Autopsy,DisjointWith,UrineExam).
+predicate(Autopsy,DisjointWith,Surveillance).
+predicate(Autopsy,DisjointWith,SputumExam).
+predicate(Autopsy,DisjointWith,PregnancyTest).
+predicate(Autopsy,DisjointWith,MacropathologicalExamination).
+predicate(Autopsy,DisjointWith,HistologicalExamination).
+predicate(Autopsy,DisjointWith,HematologicalBiochemicalTest).
+predicate(Autopsy,DisjointWith,CytologicalExamination).
+predicate(Biopsy,is,Class).
+predicate(Biopsy,EquivalentTo,BiopsyWithIncision or BiopsyWithoutIncision).
+predicate(Biopsy,SubClassOf,DiagnosticProcess,).
+predicate(Biopsy,SubClassOf,hasOutcome some HistologicalSample,).
+predicate(Biopsy,SubClassOf,undergoneBy some Organism).
+predicate(Biopsy,DisjointWith,ClinicalExamination).
+predicate(BiopsyNeedle,is,Class).
+predicate(BiopsyWithIncision,is,Class).
+predicate(BiopsyWithIncision,SubClassOf,Biopsy).
+predicate(BiopsyWithIncision,DisjointWith,BiopsyWithoutIncision).
+predicate(BiopsyWithoutIncision,is,Class).
+predicate(BiopsyWithoutIncision,SubClassOf,Biopsy,).
+predicate(BiopsyWithoutIncision,SubClassOf,hasParticipant min 0 BiopsyNeedle).
+predicate(BiopsyWithoutIncision,DisjointWith,BiopsyWithIncision).
+predicate(BloodPressureMeasuringProcess,is,Class).
+predicate(BloodPressureMeasuringProcess,SubClassOf,DiagnosticProcess).
+predicate(BoneScintigraphy,is,Class).
+predicate(BoneScintigraphy,SubClassOf,Scintigraphy).
+predicate(CellCounting,is,Class).
+predicate(CellCounting,SubClassOf,DiagnosticProcess).
+predicate(CerebrospinalLiquidPuncture,is,Class).
+predicate(CerebrospinalLiquidPuncture,SubClassOf,DiagnosticProcess,).
+predicate(CerebrospinalLiquidPuncture,SubClassOf,creates min 0 CerebrospinalLiquidSample).
+predicate(CerebrospinalLiquidSample,is,Class).
+predicate(ChemicalSubstance,is,Class).
+predicate(ClinicalExamination,is,Class).
+predicate(ClinicalExamination,SubClassOf,DiagnosticProcess,).
+predicate(ClinicalExamination,SubClassOf,undergoneBy some Organism).
+predicate(ClinicalExamination,DisjointWith,Biopsy).
+predicate(Computertomography,is,Class).
+predicate(Computertomography,SubClassOf,Imaging,).
+predicate(Computertomography,SubClassOf,hasParticipant min 0 ChemicalSubstance).
+predicate(Computertomography,DisjointWith,Ultrasound).
+predicate(Computertomography,DisjointWith,RoentgenologicalImaging).
+predicate(Computertomography,DisjointWith,MagneticResonanceImaging).
+predicate(ConeBiopsy,is,Class).
+predicate(ConeBiopsy,SubClassOf,BiopsyWithoutIncision).
+predicate(CoreNeedleBiopsy,is,Class).
+predicate(CoreNeedleBiopsy,SubClassOf,BiopsyWithoutIncision).
+predicate(CountingPlatelets,is,Class).
+predicate(CountingPlatelets,SubClassOf,HematologicalBiochemicalTest,).
+predicate(CountingPlatelets,SubClassOf,reveals some PlateletCount,).
+predicate(CountingPlatelets,SubClassOf,reveals only PlateletCount).
+predicate(CountingRedBloodCells,is,Class).
+predicate(CountingRedBloodCells,SubClassOf,HematologicalBiochemicalTest,).
+predicate(CountingRedBloodCells,SubClassOf,reveals some TotalRBC,).
+predicate(CountingRedBloodCells,SubClassOf,reveals only TotalRBC).
+predicate(CytogeneticExamination,is,Class).
+predicate(CytogeneticExamination,SubClassOf,DiagnosticProcess).
+predicate(CytologicalExamination,is,Class).
+predicate(CytologicalExamination,SubClassOf,DiagnosticProcess).
+predicate(CytologicalExamination,DisjointWith,UrineExam).
+predicate(CytologicalExamination,DisjointWith,Surveillance).
+predicate(CytologicalExamination,DisjointWith,SputumExam).
+predicate(CytologicalExamination,DisjointWith,PregnancyTest).
+predicate(CytologicalExamination,DisjointWith,MacropathologicalExamination).
+predicate(CytologicalExamination,DisjointWith,HistologicalExamination).
+predicate(CytologicalExamination,DisjointWith,HematologicalBiochemicalTest).
+predicate(CytologicalExamination,DisjointWith,Autopsy).
+predicate(DCISHistologicalAssessment,is,Class).
+predicate(DCISHistologicalAssessment,SubClassOf,HistologicalExamination).
+predicate(DiagnosticProcess,is,Class).
+predicate(DiagnosticProcess,SubClassOf,MedicalProcess).
+predicate(DifferentiationClass,is,Class).
+predicate(ECG,is,Class).
+predicate(ECG,SubClassOf,DiagnosticProcess,).
+predicate(ECG,SubClassOf,reveals some ESV,).
+predicate(ECG,SubClassOf,undergoneBy some Organism).
+predicate(EPOLevelTest,is,Class).
+predicate(EPOLevelTest,SubClassOf,HematologicalBiochemicalTest).
+predicate(ER,is,Class).
+predicate(ERHistologicalAssessment,is,Class).
+predicate(ERHistologicalAssessment,SubClassOf,HistologicalExamination,).
+predicate(ERHistologicalAssessment,SubClassOf,reveals some ERStatus,).
+predicate(ERHistologicalAssessment,SubClassOf,hasPart some IHC,).
+predicate(ERHistologicalAssessment,SubClassOf,hasParticipant some ER).
+predicate(ERStatus,is,Class).
+predicate(ESV,is,Class).
+predicate(Echocardiography,is,Class).
+predicate(Echocardiography,SubClassOf,Ultrasound).
+predicate(EndOfFrequencyRecordingProcess,is,Class).
+predicate(EndOfFrequencyRecordingProcess,SubClassOf,RecordingProcessEnd).
+predicate(EndOfFrequencyRecordingProcess,DisjointWith,EndOfWeightRecordingProcess).
+predicate(EndOfFrequencyRecordingProcess,DisjointWith,EndOfPressureRecordingProcess).
+predicate(EndOfPressureRecordingProcess,is,Class).
+predicate(EndOfPressureRecordingProcess,DisjointWith,EndOfFrequencyRecordingProcess).
+predicate(EndOfWeightRecordingProcess,is,Class).
+predicate(EndOfWeightRecordingProcess,DisjointWith,EndOfFrequencyRecordingProcess).
+predicate(EndoscopicBiopsy,is,Class).
+predicate(EndoscopicBiopsy,SubClassOf,BiopsyWithoutIncision).
+predicate(FineNeedleBiopsy,is,Class).
+predicate(FineNeedleBiopsy,SubClassOf,BiopsyWithoutIncision).
+predicate(HbTest,is,Class).
+predicate(HbTest,SubClassOf,HematologicalBiochemicalTest,).
+predicate(HbTest,SubClassOf,reveals some HemoglobinConcentration,).
+predicate(HbTest,SubClassOf,reveals only HemoglobinConcentration).
+predicate(HematologicalBiochemicalTest,is,Class).
+predicate(HematologicalBiochemicalTest,SubClassOf,DiagnosticProcess,).
+predicate(HematologicalBiochemicalTest,SubClassOf,undergoneBy some Organism).
+predicate(HematologicalBiochemicalTest,DisjointWith,UrineExam).
+predicate(HematologicalBiochemicalTest,DisjointWith,Surveillance).
+predicate(HematologicalBiochemicalTest,DisjointWith,SputumExam).
+predicate(HematologicalBiochemicalTest,DisjointWith,PregnancyTest).
+predicate(HematologicalBiochemicalTest,DisjointWith,MacropathologicalExamination).
+predicate(HematologicalBiochemicalTest,DisjointWith,HistologicalExamination).
+predicate(HematologicalBiochemicalTest,DisjointWith,CytologicalExamination).
+predicate(HematologicalBiochemicalTest,DisjointWith,Autopsy).
+predicate(HemoglobinConcentration,is,Class).
+predicate(HistologicalExamination,is,Class).
+predicate(HistologicalExamination,SubClassOf,DiagnosticProcess,).
+predicate(HistologicalExamination,SubClassOf,undergoneBy some MaterialOrganismalIndependentContinuant,).
+predicate(HistologicalExamination,SubClassOf,undergoneBy some Organism,).
+predicate(HistologicalExamination,SubClassOf,reveals only HistologicalType,).
+predicate(HistologicalExamination,SubClassOf,implements min 0 JournalNumber).
+predicate(HistologicalExamination,DisjointWith,UrineExam).
+predicate(HistologicalExamination,DisjointWith,Surveillance).
+predicate(HistologicalExamination,DisjointWith,SputumExam).
+predicate(HistologicalExamination,DisjointWith,PregnancyTest).
+predicate(HistologicalExamination,DisjointWith,MacropathologicalExamination).
+predicate(HistologicalExamination,DisjointWith,HematologicalBiochemicalTest).
+predicate(HistologicalExamination,DisjointWith,CytologicalExamination).
+predicate(HistologicalExamination,DisjointWith,Autopsy).
+predicate(HistologicalSample,is,Class).
+predicate(HistologicalType,is,Class).
+predicate(HistopathologicTypeAssessment,is,Class).
+predicate(HistopathologicTypeAssessment,SubClassOf,HistologicalExamination).
+predicate(HumanBeing,is,Class).
+predicate(IHC,is,Class).
+predicate(Identifier,is,Class).
+predicate(Imaging,is,Class).
+predicate(Imaging,SubClassOf,DiagnosticProcess,).
+predicate(Imaging,SubClassOf,hasOutcome some MedicalImage,).
+predicate(Imaging,SubClassOf,pictures min 1 OrganismalIndependentContinuant).
+predicate(ImmunohistochemicalExamination,is,Class).
+predicate(ImmunohistochemicalExamination,SubClassOf,DiagnosticProcess).
+predicate(Inking,is,Class).
+predicate(Inking,SubClassOf,DiagnosticProcess).
+predicate(Institution,is,Class).
+predicate(IntentionalProcess,is,Class).
+predicate(InvasiveDuctalCarcinomaAssessment,is,Class).
+predicate(InvasiveDuctalCarcinomaAssessment,SubClassOf,HistopathologicTypeAssessment).
+predicate(InvasiveLobularCarcinomaAssessment,is,Class).
+predicate(InvasiveLobularCarcinomaAssessment,SubClassOf,HistopathologicTypeAssessment).
+predicate(JournalNumber,is,Class).
+predicate(LCISHistologicalAssessment,is,Class).
+predicate(LCISHistologicalAssessment,SubClassOf,HistologicalExamination).
+predicate(LocalRadiologist,is,Class).
+predicate(LocalRadiologist,SubClassOf,Radiologist).
+predicate(LumbarCerebrospinalFluidPuncture,is,Class).
+predicate(LumbarCerebrospinalFluidPuncture,SubClassOf,CerebrospinalLiquidPuncture).
+predicate(MUGAScan,is,Class).
+predicate(MUGAScan,SubClassOf,NuclearImaging).
+predicate(MacropathologicalExamination,is,Class).
+predicate(MacropathologicalExamination,SubClassOf,DiagnosticProcess).
+predicate(MacropathologicalExamination,DisjointWith,UrineExam).
+predicate(MacropathologicalExamination,DisjointWith,Surveillance).
+predicate(MacropathologicalExamination,DisjointWith,SputumExam).
+predicate(MacropathologicalExamination,DisjointWith,PregnancyTest).
+predicate(MacropathologicalExamination,DisjointWith,HistologicalExamination).
+predicate(MacropathologicalExamination,DisjointWith,HematologicalBiochemicalTest).
+predicate(MacropathologicalExamination,DisjointWith,CytologicalExamination).
+predicate(MacropathologicalExamination,DisjointWith,Autopsy).
+predicate(MagneticResonanceImaging,is,Class).
+predicate(MagneticResonanceImaging,SubClassOf,Imaging,).
+predicate(MagneticResonanceImaging,SubClassOf,hasParticipant min 0 ChemicalSubstance).
+predicate(MagneticResonanceImaging,DisjointWith,Ultrasound).
+predicate(MagneticResonanceImaging,DisjointWith,RoentgenologicalImaging).
+predicate(MagneticResonanceImaging,DisjointWith,Computertomography).
+predicate(MaleHumanBeing,is,Class).
+predicate(MalignancyRelatedDiagnosticProcess,is,Class).
+predicate(MalignancyRelatedDiagnosticProcess,SubClassOf,DiagnosticProcess).
+predicate(MaterialOrganismalIndependentContinuant,is,Class).
+predicate(MedicalImage,is,Class).
+predicate(MedicalProcess,is,Class).
+predicate(MedicalProcess,EquivalentTo,DiagnosticProcess or TherapeuticProcess).
+predicate(MedicalProcess,SubClassOf,IntentionalProcess,).
+predicate(MedicalProcess,SubClassOf,hasAgent some HumanBeing,).
+predicate(MedicalProcess,SubClassOf,hasParticipant some Organism,).
+predicate(Thing,,is,followUpOf min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasFollowUp min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasIdentifier min 0 Identifier,).
+predicate(Thing,,is,hasPatient min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasPlace min 1 Institution,).
+predicate(Thing,,is,hasQuality min 0 Toxicity,).
+predicate(Thing,,is,promptedBy min 0 ProcessualEntity,).
+predicate(Thing,is,undertakenBy min 1 www.w3.org/2002/07/#).
+predicate(MicropathologicalExamination,is,Class).
+predicate(MicropathologicalExamination,SubClassOf,DiagnosticProcess).
+predicate(MoleculargeneticExamination,is,Class).
+predicate(MoleculargeneticExamination,SubClassOf,DiagnosticProcess).
+predicate(Neoplasm,is,Class).
+predicate(NeurologicalExamination,is,Class).
+predicate(NeurologicalExamination,SubClassOf,DiagnosticProcess).
+predicate(NodalStatus,is,Class).
+predicate(NodalStatusAssessment,is,Class).
+predicate(NodalStatusAssessment,SubClassOf,TumorClassAssessment,).
+predicate(NodalStatusAssessment,SubClassOf,reveals some NodalStatus,).
+predicate(NodalStatusAssessment,SubClassOf,undergoneBy some Organism,).
+predicate(NodalStatusAssessment,SubClassOf,reveals only NodalStatus).
+predicate(NuclearImaging,is,Class).
+predicate(NuclearImaging,SubClassOf,Imaging).
+predicate(OphtalmologicalDiagnosticProcess,is,Class).
+predicate(OphtalmologicalDiagnosticProcess,SubClassOf,DiagnosticProcess).
+predicate(Organism,is,Class).
+predicate(OrganismalIndependentContinuant,is,Class).
+predicate(PR,is,Class).
+predicate(PRHistologicalAssessment,is,Class).
+predicate(PRHistologicalAssessment,SubClassOf,HistologicalExamination,).
+predicate(PRHistologicalAssessment,SubClassOf,reveals some PRStatus,).
+predicate(PRHistologicalAssessment,SubClassOf,hasPart some IHC,).
+predicate(PRHistologicalAssessment,SubClassOf,hasParticipant some PR).
+predicate(PRStatus,is,Class).
+predicate(PlateletCount,is,Class).
+predicate(PregnancyStatus,is,Class).
+predicate(PregnancyTest,is,Class).
+predicate(PregnancyTest,SubClassOf,DiagnosticProcess,).
+predicate(PregnancyTest,SubClassOf,not (undergoneBy some MaleHumanBeing),).
+predicate(PregnancyTest,SubClassOf,reveals some PregnancyStatus,).
+predicate(PregnancyTest,SubClassOf,undergoneBy some Organism,).
+predicate(PregnancyTest,SubClassOf,reveals only PregnancyStatus).
+predicate(PregnancyTest,DisjointWith,UrineExam).
+predicate(PregnancyTest,DisjointWith,Surveillance).
+predicate(PregnancyTest,DisjointWith,SputumExam).
+predicate(PregnancyTest,DisjointWith,MacropathologicalExamination).
+predicate(PregnancyTest,DisjointWith,HistologicalExamination).
+predicate(PregnancyTest,DisjointWith,HematologicalBiochemicalTest).
+predicate(PregnancyTest,DisjointWith,CytologicalExamination).
+predicate(PregnancyTest,DisjointWith,Autopsy).
+predicate(PrenatalDiagnosticProcess,is,Class).
+predicate(PrenatalDiagnosticProcess,SubClassOf,DiagnosticProcess).
+predicate(ProphylacticCheckUp,is,Class).
+predicate(ProphylacticCheckUp,SubClassOf,DiagnosticProcess).
+predicate(PunchBiopsy,is,Class).
+predicate(PunchBiopsy,SubClassOf,BiopsyWithoutIncision).
+predicate(Radiologist,is,Class).
+predicate(RecordingProcessEnd,is,Class).
+predicate(ReferenceRoentgenologicalImaging,is,Class).
+predicate(ReferenceRoentgenologicalImaging,SubClassOf,RoentgenologicalImaging).
+predicate(RhabdoidTumorPredispositionSyndromProcess,is,Class).
+predicate(RhabdoidTumorPredispositionSyndromProcess,SubClassOf,SyndromeProcess).
+predicate(RoentgenologicalImaging,is,Class).
+predicate(RoentgenologicalImaging,SubClassOf,Imaging).
+predicate(RoentgenologicalImaging,DisjointWith,Ultrasound).
+predicate(RoentgenologicalImaging,DisjointWith,MagneticResonanceImaging).
+predicate(RoentgenologicalImaging,DisjointWith,Computertomography).
+predicate(Scintigraphy,is,Class).
+predicate(Scintigraphy,SubClassOf,Imaging).
+predicate(Screening,is,Class).
+predicate(Screening,SubClassOf,DiagnosticProcess).
+predicate(SerumCreatinineConcentration,is,Class).
+predicate(SerumCreatinineTest,is,Class).
+predicate(SerumCreatinineTest,SubClassOf,HematologicalBiochemicalTest,).
+predicate(SerumCreatinineTest,SubClassOf,reveals some SerumCreatinineConcentration).
+predicate(SputumExam,is,Class).
+predicate(SputumExam,SubClassOf,DiagnosticProcess,).
+predicate(SputumExam,SubClassOf,undergoneBy some Organism).
+predicate(SputumExam,DisjointWith,UrineExam).
+predicate(SputumExam,DisjointWith,Surveillance).
+predicate(SputumExam,DisjointWith,PregnancyTest).
+predicate(SputumExam,DisjointWith,MacropathologicalExamination).
+predicate(SputumExam,DisjointWith,HistologicalExamination).
+predicate(SputumExam,DisjointWith,HematologicalBiochemicalTest).
+predicate(SputumExam,DisjointWith,CytologicalExamination).
+predicate(SputumExam,DisjointWith,Autopsy).
+predicate(SurfaceBiopsy,is,Class).
+predicate(SurfaceBiopsy,SubClassOf,BiopsyWithoutIncision).
+predicate(Surveillance,is,Class).
+predicate(Surveillance,SubClassOf,DiagnosticProcess).
+predicate(Surveillance,DisjointWith,UrineExam).
+predicate(Surveillance,DisjointWith,SputumExam).
+predicate(Surveillance,DisjointWith,PregnancyTest).
+predicate(Surveillance,DisjointWith,MacropathologicalExamination).
+predicate(Surveillance,DisjointWith,HistologicalExamination).
+predicate(Surveillance,DisjointWith,HematologicalBiochemicalTest).
+predicate(Surveillance,DisjointWith,CytologicalExamination).
+predicate(Surveillance,DisjointWith,Autopsy).
+predicate(SyndromeProcess,is,Class).
+predicate(TherapeuticProcess,is,Class).
+predicate(TherapeuticProcess,SubClassOf,MedicalProcess).
+predicate(TotalBilirubin,is,Class).
+predicate(TotalBilirubinTest,is,Class).
+predicate(TotalBilirubinTest,SubClassOf,HematologicalBiochemicalTest,).
+predicate(TotalBilirubinTest,SubClassOf,reveals some TotalBilirubin,).
+predicate(TotalBilirubinTest,SubClassOf,reveals only TotalBilirubin).
+predicate(TotalRBC,is,Class).
+predicate(Toxicity,is,Class).
+predicate(TransaminaseBiochemistry,is,Class).
+predicate(TransaminaseBiochemistry,SubClassOf,HematologicalBiochemicalTest,).
+predicate(TransaminaseBiochemistry,SubClassOf,reveals some ALTCount,).
+predicate(TransaminaseBiochemistry,SubClassOf,reveals some ASTCount,).
+predicate(TransaminaseBiochemistry,SubClassOf,reveals only).
+predicate(TransaminaseBiochemistry,SubClassOf,(ALTCount or ASTCount)).
+predicate(TroponinTest,is,Class).
+predicate(TroponinTest,SubClassOf,HematologicalBiochemicalTest).
+predicate(TrucutBiopsy,is,Class).
+predicate(TrucutBiopsy,SubClassOf,BiopsyWithoutIncision).
+predicate(TumorCellCounting,is,Class).
+predicate(TumorCellCounting,SubClassOf,CellCounting).
+predicate(TumorClassAssessment,is,Class).
+predicate(TumorClassAssessment,SubClassOf,DiagnosticProcess).
+predicate(TumorGradeAssessment,is,Class).
+predicate(TumorGradeAssessment,SubClassOf,TumorClassAssessment,).
+predicate(TumorGradeAssessment,SubClassOf,reveals some DifferentiationClass,).
+predicate(TumorGradeAssessment,SubClassOf,undergoneBy some Neoplasm,).
+predicate(TumorGradeAssessment,SubClassOf,undergoneBy some Organism,).
+predicate(TumorGradeAssessment,SubClassOf,reveals only DifferentiationClass).
+predicate(Ultrasound,is,Class).
+predicate(Ultrasound,SubClassOf,Imaging).
+predicate(Ultrasound,DisjointWith,RoentgenologicalImaging).
+predicate(Ultrasound,DisjointWith,MagneticResonanceImaging).
+predicate(Ultrasound,DisjointWith,Computertomography).
+predicate(UrineExam,is,Class).
+predicate(UrineExam,SubClassOf,DiagnosticProcess,).
+predicate(UrineExam,SubClassOf,undergoneBy some Organism,).
+predicate(UrineExam,SubClassOf,hasParticipant some UrineSample).
+predicate(UrineExam,DisjointWith,Surveillance).
+predicate(UrineExam,DisjointWith,SputumExam).
+predicate(UrineExam,DisjointWith,PregnancyTest).
+predicate(UrineExam,DisjointWith,MacropathologicalExamination).
+predicate(UrineExam,DisjointWith,HistologicalExamination).
+predicate(UrineExam,DisjointWith,HematologicalBiochemicalTest).
+predicate(UrineExam,DisjointWith,CytologicalExamination).
+predicate(UrineExam,DisjointWith,Autopsy).
+predicate(UrineSample,is,Class).
+predicate(VentricularCerebrospinalFluidPuncture,is,Class).
+predicate(VentricularCerebrospinalFluidPuncture,SubClassOf,CerebrospinalLiquidPuncture).
+predicate(WBC,is,Class).
+predicate(WBC,SubClassOf,HematologicalBiochemicalTest,).
+predicate(WBC,SubClassOf,reveals some WBCCount,).
+predicate(WBC,SubClassOf,reveals only WBCCount).
+predicate(WBCCount,is,Class).
+predicate(SIOP2001/,is,Class).
+predicate(IndependentContinuant,is,Class).
+predicate(ProcessualEntity,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).

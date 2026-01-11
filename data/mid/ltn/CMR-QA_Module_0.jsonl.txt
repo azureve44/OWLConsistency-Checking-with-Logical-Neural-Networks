@@ -1,0 +1,319 @@
+is(dateTime,Datatype):1.0
+is(double,Datatype):1.0
+is(string,Datatype):1.0
+is(acquiredAtCardiacCyclePhase,ObjectProperty):1.0
+is(acquiredAtChamberLocation,ObjectProperty):1.0
+is(acquiredAtView,ObjectProperty):1.0
+is(hasCardiacImage,ObjectProperty):1.0
+is(hasImageIssue,ObjectProperty):1.0
+is(hasImagingDataset,ObjectProperty):1.0
+is(hasObserver,ObjectProperty):1.0
+is(hasPart,ObjectProperty):1.0
+is(hasQualityData,ObjectProperty):1.0
+is(isPartOf,ObjectProperty):1.0
+is(mayInfluence,ObjectProperty):1.0
+Domain(mayInfluence,Image_Quality_Issue):1.0
+Range(mayInfluence,Cardiac_Image_Analysis_Outcome_Measures):1.0
+is(observedIn,ObjectProperty):1.0
+Domain(observedIn,Image_Quality_Issue):1.0
+is(observedInCardiacCyclePhase,ObjectProperty):1.0
+is(observedInChamber,ObjectProperty):1.0
+is(observedInChamberLocation,ObjectProperty):1.0
+is(observedInOrganComponent,ObjectProperty):1.0
+SubPropertyOf(observedInOrganComponent,observedIn):1.0
+is(observedInTime,ObjectProperty):1.0
+SubPropertyOf(observedInTime,observedIn):1.0
+is(observedInView,ObjectProperty):1.0
+SubPropertyOf(observedInView,observedIn):1.0
+is(hasLAQualityScore,DataProperty):1.0
+is(hasLVQualityScore,DataProperty):1.0
+is(hasQualityComment,DataProperty):1.0
+is(hasQualityLevel,DataProperty):1.0
+is(hasQualityScore,DataProperty):1.0
+is(hasRAQualityScore,DataProperty):1.0
+is(hasRVQualityScore,DataProperty):1.0
+is(observedInSliceCardinality,DataProperty):1.0
+is(observerBackground,DataProperty):1.0
+is(observerExperience,DataProperty):1.0
+is(observerId,DataProperty):1.0
+is(participantId,DataProperty):1.0
+is(scanDate,DataProperty):1.0
+is(Aliasing_Artefact,Class):1.0
+SubClassOf(Aliasing_Artefact,Signal_Processing_Dependant_Artefact):1.0
+is(Aortic_View,Class):1.0
+SubClassOf(Aortic_View,Cardiac_MRI_Imaging_Plane):1.0
+is(Arrhythmia,Class):1.0
+SubClassOf(Arrhythmia,Pathology):1.0
+is(Artefact,Class):1.0
+SubClassOf(Artefact,Image_Quality_Issue):1.0
+is(Atrial_Diastole,Class):1.0
+SubClassOf(Atrial_Diastole,Cardiac_Cycle_Phase):1.0
+is(Atrial_Fibrillation,Class):1.0
+SubClassOf(Atrial_Fibrillation,Pathology):1.0
+is(Atrial_Systole,Class):1.0
+SubClassOf(Atrial_Systole,Cardiac_Cycle_Phase):1.0
+is(B0_Field_Inhomogeneity_Artefact,Class):1.0
+SubClassOf(B0_Field_Inhomogeneity_Artefact,Field_Inhomogeneity_Artefact):1.0
+is(Blood_Flow_Motion_Artefact,Class):1.0
+SubClassOf(Blood_Flow_Motion_Artefact,Motion_Artefact):1.0
+is(Blurring_Artefact,Class):1.0
+SubClassOf(Blurring_Artefact,Artefact):1.0
+is(Breathing_Motion_Artifact,Class):1.0
+SubClassOf(Breathing_Motion_Artifact,Inter-view_Motion_Artefact):1.0
+is(Cardiac_Atrium,Class):1.0
+SubClassOf(Cardiac_Atrium,Cardiac_Chamber):1.0
+is(Cardiac_Chamber,Class):1.0
+SubClassOf(Cardiac_Chamber,Organ_Component):1.0
+is(Cardiac_Cycle,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,hasPart some Diastole,):1.0
+is(Thing,,hasPart some Systole):1.0
+is(Cardiac_Cycle_Phase,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Cardiac_Image,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,acquiredAtCardiacCyclePhase some Cardiac_Cycle_Phase,):1.0
+is(Thing,,acquiredAtChamberLocation some Chamber_Location,):1.0
+is(Thing,,acquiredAtView some Cardiac_MRI_Imaging_Plane):1.0
+is(Cardiac_Image_Analysis_Outcome_Measures,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Cardiac_Imaging_Plane,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Cardiac_MRI_Imaging_Data,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Cardiac_MRI_Imaging_Plane,Class):1.0
+SubClassOf(Cardiac_MRI_Imaging_Plane,Cardiac_Imaging_Plane):1.0
+is(Cardiac_Motion_Artefact,Class):1.0
+SubClassOf(Cardiac_Motion_Artefact,Inter-view_Motion_Artefact):1.0
+is(Cardiac_Ventricle,Class):1.0
+SubClassOf(Cardiac_Ventricle,Cardiac_Chamber):1.0
+is(Chamber_Apex,Class):1.0
+SubClassOf(Chamber_Apex,Chamber_Location):1.0
+is(Chamber_Base,Class):1.0
+SubClassOf(Chamber_Base,Chamber_Location):1.0
+is(Chamber_Location,Class):1.0
+SubClassOf(Chamber_Location,Organ_Component,):1.0
+SubClassOf(Chamber_Location,isPartOf some Cardiac_Chamber):1.0
+is(Chemical_Shift,Class):1.0
+SubClassOf(Chemical_Shift,Signal_Processing_Dependant_Artefact):1.0
+is(Chemical_Shift_Second_Kind,Class):1.0
+SubClassOf(Chemical_Shift_Second_Kind,Chemical_Shift):1.0
+is(Cine-MRI,Class):1.0
+SubClassOf(Cine-MRI,Cardiac_MRI_Imaging_Data,):1.0
+SubClassOf(Cine-MRI,hasCardiacImage some Cardiac_Image):1.0
+is(Cine-MRI_Analysis_Measures,Class):1.0
+SubClassOf(Cine-MRI_Analysis_Measures,Cardiac_Image_Analysis_Outcome_Measures):1.0
+is(Cine-MRI_Quality_Data,Class):1.0
+SubClassOf(Cine-MRI_Quality_Data,Image_Quality_Assessment,):1.0
+SubClassOf(Cine-MRI_Quality_Data,hasLAQualityScore some double,):1.0
+SubClassOf(Cine-MRI_Quality_Data,hasLVQualityScore some double,):1.0
+SubClassOf(Cine-MRI_Quality_Data,hasRAQualityScore some double,):1.0
+SubClassOf(Cine-MRI_Quality_Data,hasRVQualityScore some double):1.0
+is(Dark_Bands_Artifact,Class):1.0
+SubClassOf(Dark_Bands_Artifact,Signal_Intensity_Artefact):1.0
+is(Dark_Ghosting_Artefact,Class):1.0
+SubClassOf(Dark_Ghosting_Artefact,Ghosting_Artefact):1.0
+is(Diastole,Class):1.0
+SubClassOf(Diastole,Cardiac_Cycle_Phase,):1.0
+SubClassOf(Diastole,hasPart some Atrial_Systole,):1.0
+SubClassOf(Diastole,hasPart some End-Diastole):1.0
+is(Ejection_Fraction,Class):1.0
+SubClassOf(Ejection_Fraction,Cine-MRI_Analysis_Measures):1.0
+is(End-Diastole,Class):1.0
+SubClassOf(End-Diastole,Cardiac_Cycle_Phase):1.0
+is(End-Systole,Class):1.0
+SubClassOf(End-Systole,Cardiac_Cycle_Phase):1.0
+is(End_Diastolic_Volume,Class):1.0
+SubClassOf(End_Diastolic_Volume,Cine-MRI_Analysis_Measures):1.0
+is(End_Systolic_Volume,Class):1.0
+SubClassOf(End_Systolic_Volume,Cine-MRI_Analysis_Measures):1.0
+is(Endocardium,Class):1.0
+SubClassOf(Endocardium,Ventricular_Layer):1.0
+is(Epicardium,Class):1.0
+SubClassOf(Epicardium,Ventricular_Layer):1.0
+is(Field_Inhomogeneity_Artefact,Class):1.0
+SubClassOf(Field_Inhomogeneity_Artefact,Machine_Related_Artefact):1.0
+is(Flow-related_Signal_Loss,Class):1.0
+SubClassOf(Flow-related_Signal_Loss,Blood_Flow_Motion_Artefact,):1.0
+SubClassOf(Flow-related_Signal_Loss,Signal_Loss_Artefact):1.0
+is(Ghosting_Artefact,Class):1.0
+SubClassOf(Ghosting_Artefact,Artefact):1.0
+is(Gibbs_Artefact,Class):1.0
+SubClassOf(Gibbs_Artefact,Ringing_Artefact,):1.0
+SubClassOf(Gibbs_Artefact,Signal_Processing_Dependant_Artefact):1.0
+is(HLA_View,Class):1.0
+SubClassOf(HLA_View,Long_Axis_View):1.0
+is(HLA_off_axis,Class):1.0
+EquivalentTo(HLA_off_axis,Image_Planning_Issue and (observedInView some HLA_View)):1.0
+SubClassOf(HLA_off_axis,Image_Planning_Issue,):1.0
+SubClassOf(HLA_off_axis,observedInView some HLA_View):1.0
+is(Heart,Class):1.0
+SubClassOf(Heart,Organ):1.0
+is(Image_Distortion_Artefact,Class):1.0
+SubClassOf(Image_Distortion_Artefact,Artefact):1.0
+is(Image_Planning_Issue,Class):1.0
+SubClassOf(Image_Planning_Issue,Image_Quality_Issue):1.0
+is(Image_Quality_Assessment,Class):1.0
+SubClassOf(Image_Quality_Assessment,Medical_Imaging_Study,):1.0
+SubClassOf(Image_Quality_Assessment,hasImagingDataset some Cardiac_MRI_Imaging_Data,):1.0
+SubClassOf(Image_Quality_Assessment,hasObserver some Observer,):1.0
+SubClassOf(Image_Quality_Assessment,hasImageIssue only Image_Quality_Issue,):1.0
+SubClassOf(Image_Quality_Assessment,hasQualityLevel some string,):1.0
+SubClassOf(Image_Quality_Assessment,hasQualityScore some double,):1.0
+SubClassOf(Image_Quality_Assessment,hasQualityComment only string):1.0
+is(Image_Quality_Issue,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,mayInfluence some Cine-MRI_Analysis_Measures,):1.0
+is(Thing,,observedInCardiacCyclePhase some Cardiac_Cycle_Phase,):1.0
+is(Thing,,observedInChamber some Cardiac_Chamber,):1.0
+is(Thing,,observedInView some Cardiac_Imaging_Plane,):1.0
+is(Thing,,observedInChamberLocation only Chamber_Location,):1.0
+is(Thing,,observedInSliceCardinality only {"All" , "Few" , "Multiple" , "Single"}):1.0
+is(Imaging_Scan_Visit,Class):1.0
+SubClassOf(Imaging_Scan_Visit,Medical_Imaging_Study,):1.0
+SubClassOf(Imaging_Scan_Visit,hasQualityData some Image_Quality_Assessment,):1.0
+SubClassOf(Imaging_Scan_Visit,participantId some string,):1.0
+SubClassOf(Imaging_Scan_Visit,scanDate some dateTime):1.0
+is(Inter-view_Motion_Artefact,Class):1.0
+SubClassOf(Inter-view_Motion_Artefact,Motion_Artefact):1.0
+is(Intra-view_Motion_Artefact,Class):1.0
+SubClassOf(Intra-view_Motion_Artefact,Motion_Artefact):1.0
+is(LA_off_axis,Class):1.0
+EquivalentTo(LA_off_axis,Image_Planning_Issue and (observedInChamber some Left_Atrium)):1.0
+SubClassOf(LA_off_axis,Image_Planning_Issue,):1.0
+SubClassOf(LA_off_axis,observedInChamber some Left_Atrium):1.0
+is(LVOT_Coronal_View,Class):1.0
+SubClassOf(LVOT_Coronal_View,LVOT_View):1.0
+is(LVOT_Sagittal_View,Class):1.0
+SubClassOf(LVOT_Sagittal_View,LVOT_View,):1.0
+SubClassOf(LVOT_Sagittal_View,Long_Axis_View):1.0
+is(LVOT_View,Class):1.0
+SubClassOf(LVOT_View,Cardiac_MRI_Imaging_Plane):1.0
+is(LV_off_axis,Class):1.0
+EquivalentTo(LV_off_axis,Image_Planning_Issue and (observedInChamber some Left_Ventricle)):1.0
+SubClassOf(LV_off_axis,Image_Planning_Issue,):1.0
+SubClassOf(LV_off_axis,observedInChamber some Left_Ventricle):1.0
+is(Lack_Coverage,Class):1.0
+SubClassOf(Lack_Coverage,Image_Quality_Issue):1.0
+is(Left_Atrium,Class):1.0
+SubClassOf(Left_Atrium,Cardiac_Atrium):1.0
+is(Left_Ventricle,Class):1.0
+SubClassOf(Left_Ventricle,Cardiac_Ventricle):1.0
+is(Left_Ventricle_Apex,Class):1.0
+SubClassOf(Left_Ventricle_Apex,Chamber_Apex,):1.0
+SubClassOf(Left_Ventricle_Apex,isPartOf some Left_Ventricle):1.0
+is(Left_Ventricle_Base,Class):1.0
+SubClassOf(Left_Ventricle_Base,Chamber_Base,):1.0
+SubClassOf(Left_Ventricle_Base,isPartOf some Left_Ventricle):1.0
+is(Left_Ventricle_Midventricle,Class):1.0
+SubClassOf(Left_Ventricle_Midventricle,Midventricular_Region,):1.0
+SubClassOf(Left_Ventricle_Midventricle,isPartOf some Left_Ventricle):1.0
+is(Left_Ventricular_Outflow_Tract,Class):1.0
+SubClassOf(Left_Ventricular_Outflow_Tract,Ventricular_Region,):1.0
+SubClassOf(Left_Ventricular_Outflow_Tract,isPartOf some Left_Ventricle):1.0
+is(Long_Axis_View,Class):1.0
+SubClassOf(Long_Axis_View,Cardiac_MRI_Imaging_Plane):1.0
+is(Machine_Related_Artefact,Class):1.0
+SubClassOf(Machine_Related_Artefact,Artefact,):1.0
+SubClassOf(Machine_Related_Artefact,Technical_Issue):1.0
+is(Medical_Imaging_Study,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Midventricular_Region,Class):1.0
+SubClassOf(Midventricular_Region,Chamber_Location):1.0
+is(Missing_data,Class):1.0
+SubClassOf(Missing_data,Technical_Issue):1.0
+is(Motion_Artefact,Class):1.0
+SubClassOf(Motion_Artefact,Patient-related_Artifact):1.0
+is(Motion_Ringing_Artefact,Class):1.0
+SubClassOf(Motion_Ringing_Artefact,Motion_Artefact,):1.0
+SubClassOf(Motion_Ringing_Artefact,Ringing_Artefact):1.0
+is(Myocardial_Mass,Class):1.0
+SubClassOf(Myocardial_Mass,Cine-MRI_Analysis_Measures):1.0
+is(Myocardium,Class):1.0
+SubClassOf(Myocardium,Ventricular_Layer):1.0
+is(Observer,Class):1.0
+is(Thing,,www.w3.org/2002/07/#):1.0
+is(Thing,,observerBackground some string,):1.0
+is(Thing,,observerExperience some string,):1.0
+is(Thing,,observerId some string):1.0
+is(Off-resonance_Artefact,Class):1.0
+SubClassOf(Off-resonance_Artefact,Signal_Intensity_Artefact):1.0
+is(Organ,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Organ_Component,Class):1.0
+is(Thing,www.w3.org/2002/07/#):1.0
+is(Pathology,Class):1.0
+SubClassOf(Pathology,Image_Quality_Issue):1.0
+is(Patient-related_Artifact,Class):1.0
+SubClassOf(Patient-related_Artifact,Artefact):1.0
+is(Phase_Contrast,Class):1.0
+SubClassOf(Phase_Contrast,Cardiac_MRI_Imaging_Data):1.0
+is(Poor_Quality,Class):1.0
+SubClassOf(Poor_Quality,Unspecified_Issue):1.0
+is(RA_off_axis,Class):1.0
+EquivalentTo(RA_off_axis,Image_Planning_Issue and (observedInChamber some Right_Atrium)):1.0
+SubClassOf(RA_off_axis,Image_Planning_Issue,):1.0
+SubClassOf(RA_off_axis,observedInChamber some Right_Atrium):1.0
+is(ROI_area,Class):1.0
+SubClassOf(ROI_area,Cine-MRI_Analysis_Measures):1.0
+is(RV_off_axis,Class):1.0
+EquivalentTo(RV_off_axis,Image_Planning_Issue and (observedInChamber some Right_Ventricle)):1.0
+SubClassOf(RV_off_axis,Image_Planning_Issue,):1.0
+SubClassOf(RV_off_axis,observedInChamber some Right_Ventricle):1.0
+is(Right_Atrium,Class):1.0
+SubClassOf(Right_Atrium,Cardiac_Atrium):1.0
+is(Right_Ventricle,Class):1.0
+SubClassOf(Right_Ventricle,Cardiac_Ventricle):1.0
+is(Ringing_Artefact,Class):1.0
+SubClassOf(Ringing_Artefact,Artefact):1.0
+is(SAS_View,Class):1.0
+SubClassOf(SAS_View,Cardiac_MRI_Imaging_Plane):1.0
+is(SAX_off_axis,Class):1.0
+EquivalentTo(SAX_off_axis,Image_Planning_Issue and (observedInView some SAS_View)):1.0
+SubClassOf(SAX_off_axis,Image_Planning_Issue,):1.0
+SubClassOf(SAX_off_axis,observedInView some SAS_View):1.0
+is(Scout_Image,Class):1.0
+SubClassOf(Scout_Image,Cardiac_Image):1.0
+is(Septum,Class):1.0
+SubClassOf(Septum,Ventricular_Region,):1.0
+SubClassOf(Septum,isPartOf some Left_Ventricle,):1.0
+SubClassOf(Septum,isPartOf some Right_Ventricle):1.0
+is(Signal_Intensity_Artefact,Class):1.0
+SubClassOf(Signal_Intensity_Artefact,Artefact):1.0
+is(Signal_Loss_Artefact,Class):1.0
+SubClassOf(Signal_Loss_Artefact,Signal_Intensity_Artefact):1.0
+is(Signal_Processing_Dependant_Artefact,Class):1.0
+SubClassOf(Signal_Processing_Dependant_Artefact,Artefact):1.0
+is(Spatial_Distortion_Artefact,Class):1.0
+SubClassOf(Spatial_Distortion_Artefact,Image_Distortion_Artefact):1.0
+is(Stroke_Volume,Class):1.0
+SubClassOf(Stroke_Volume,Cine-MRI_Analysis_Measures):1.0
+is(Systole,Class):1.0
+SubClassOf(Systole,Cardiac_Cycle_Phase,):1.0
+SubClassOf(Systole,hasPart some Atrial_Diastole,):1.0
+SubClassOf(Systole,hasPart some End-Systole):1.0
+is(T1-Mapping,Class):1.0
+SubClassOf(T1-Mapping,Cardiac_MRI_Imaging_Data):1.0
+is(T1-Mapping_Quality_Data,Class):1.0
+SubClassOf(T1-Mapping_Quality_Data,Image_Quality_Assessment):1.0
+is(Tagging_MRI,Class):1.0
+SubClassOf(Tagging_MRI,Cardiac_MRI_Imaging_Data):1.0
+is(Technical_Issue,Class):1.0
+SubClassOf(Technical_Issue,Image_Quality_Issue):1.0
+is(Triggering_Issue,Class):1.0
+SubClassOf(Triggering_Issue,Technical_Issue):1.0
+is(Unspecified_Issue,Class):1.0
+SubClassOf(Unspecified_Issue,Image_Quality_Issue):1.0
+is(VLA_View,Class):1.0
+SubClassOf(VLA_View,Long_Axis_View):1.0
+is(VLA_off_axis,Class):1.0
+EquivalentTo(VLA_off_axis,Image_Planning_Issue and (observedInView some VLA_View)):1.0
+SubClassOf(VLA_off_axis,Image_Planning_Issue,):1.0
+SubClassOf(VLA_off_axis,observedInView some VLA_View):1.0
+is(Ventricular_Layer,Class):1.0
+SubClassOf(Ventricular_Layer,Organ_Component):1.0
+is(Ventricular_Region,Class):1.0
+SubClassOf(Ventricular_Region,Organ_Component):1.0
+is(Ventricular_Stroke_Volume,Class):1.0
+SubClassOf(Ventricular_Stroke_Volume,Stroke_Volume):1.0
+is(www.w3.org/2002/07/#,Class):1.0

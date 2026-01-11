@@ -1,0 +1,59 @@
+predicate(www.w3.org/2000/01/-schema#,is,AnnotationProperty).
+predicate(string,is,Datatype).
+predicate(produces,is,ObjectProperty).
+predicate(T-HelperCellOrTh-CellOrCD4+Cell,is,Class).
+predicate(T-HelperCellOrTh-CellOrCD4+Cell,SubClassOf,T-CellOrT-Lymphocyte).
+predicate(ActivatedCD41-T-Cell,is,Class).
+predicate(ActivatedCD41-T-Cell,SubClassOf,ActivatedT-Cell,).
+predicate(ActivatedCD41-T-Cell,SubClassOf,produces some IL-31).
+predicate(ActivatedT-Cell,is,Class).
+predicate(ActivatedTH17-Cell,is,Class).
+predicate(ActivatedTH17-Cell,SubClassOf,TH17-Cell,).
+predicate(ActivatedTH17-Cell,SubClassOf,produces some IL-22,).
+predicate(ActivatedTH17-Cell,SubClassOf,produces some IL-26).
+predicate(Cell,is,Class).
+predicate(GammaDeltaT-Cell,is,Class).
+predicate(GammaDeltaT-Cell,SubClassOf,T-CellOrT-Lymphocyte).
+predicate(HelperT-Cell,is,Class).
+predicate(HelperT-Cell,SubClassOf,T-CellOrT-Lymphocyte).
+predicate(IL-10,is,Class).
+predicate(IL-16,is,Class).
+predicate(IL-22,is,Class).
+predicate(IL-24,is,Class).
+predicate(IL-24,DisjointWith,IL-36RA).
+predicate(IL-26,is,Class).
+predicate(IL-3,is,Class).
+predicate(IL-31,is,Class).
+predicate(IL-32,is,Class).
+predicate(IL-36A,is,Class).
+predicate(IL-36B,is,Class).
+predicate(IL-36G,is,Class).
+predicate(IL-36RA,is,Class).
+predicate(IL-36RA,DisjointWith,IL-24).
+predicate(KillerT-Cell,is,Class).
+predicate(KillerT-Cell,SubClassOf,T-CellOrT-Lymphocyte).
+predicate(Lymphocyte,is,Class).
+predicate(RegulatoryT-CellAbbrTreg-Cell,is,Class).
+predicate(RegulatoryT-CellAbbrTreg-Cell,SubClassOf,T-CellOrT-Lymphocyte).
+predicate(RestingT-Cell,is,Class).
+predicate(RestingT-Cell,SubClassOf,T-CellOrT-Lymphocyte).
+predicate(T-CellOrT-Lymphocyte,is,Class).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,Cell,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,Lymphocyte,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces some IL-10,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces some IL-16,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces some IL-24,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces some IL-3,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces some IL-32,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces some IL-36A,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces some IL-36B,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces some IL-36G,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces some IL-36RA,).
+predicate(T-CellOrT-Lymphocyte,SubClassOf,produces only IL-36RA).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(TH17-Cell,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2000/01/-schema#,is,Annotations).
+predicate(produces some IL-3,is,Class).
+predicate(produces some IL-3,SubClassOf,GammaDeltaT-Cell).

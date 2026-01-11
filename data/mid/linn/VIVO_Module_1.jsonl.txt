@@ -1,0 +1,60 @@
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(anyURI,is,Datatype).
+predicate(string,is,Datatype).
+predicate(isAdministeredBy,is,ObjectProperty).
+predicate(calendarLink,is,DataProperty).
+predicate(calendarLink,Domain,CalendarLink).
+predicate(calendarLink,Range,anyURI).
+predicate(geo,is,DataProperty).
+predicate(key,is,DataProperty).
+predicate(key,Domain,Key).
+predicate(key,Range,anyURI).
+predicate(language,is,DataProperty).
+predicate(sortAs,is,DataProperty).
+predicate(timeZone,is,DataProperty).
+predicate(non_self_governing,is,Class).
+predicate(non_self_governing,SubClassOf,territory,).
+predicate(non_self_governing,SubClassOf,isAdministeredBy only self_governing,).
+predicate(Thing,is,isAdministeredBy max 1 www.w3.org/2002/07/#).
+predicate(self_governing,is,Class).
+predicate(territory,is,Class).
+predicate(ARG_2000010,is,Class).
+predicate(ARG_2000011,is,Class).
+predicate(ARG_2000011,SubClassOf,ARG_2000010).
+predicate(BFO_0000002,is,Class).
+predicate(BFO_0000031,is,Class).
+predicate(BFO_0000031,SubClassOf,BFO_0000002).
+predicate(IAO_0000030,is,Class).
+predicate(IAO_0000030,SubClassOf,BFO_0000031).
+predicate(OBI_0000571,is,Class).
+predicate(Certificate,is,Class).
+predicate(Certificate,SubClassOf,Credential).
+predicate(Credential,is,Class).
+predicate(Foundation,is,Class).
+predicate(Organization,is,ns.com/foaf/0.1/).
+predicate(GraduateStudent,is,Class).
+predicate(GraduateStudent,SubClassOf,Student).
+predicate(NonFacultyAcademicPosition,is,Class).
+predicate(PostdocPosition,is,Class).
+predicate(PostdocPosition,SubClassOf,NonFacultyAcademicPosition).
+predicate(Student,is,Class).
+predicate(UndergraduateStudent,is,Class).
+predicate(UndergraduateStudent,SubClassOf,Student).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(Address,is,Class).
+predicate(Address,SubClassOf,Addressing).
+predicate(Addressing,is,Class).
+predicate(Literal)) or ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema#,is,((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Calendar,is,Class).
+predicate(CalendarLink,is,Class).
+predicate(CalendarLink,EquivalentTo,(calendarLink some anyURI)).
+predicate(CalendarLink,SubClassOf,Calendar).
+predicate(Gender,is,Class).
+predicate(Key,is,Class).
+predicate(Key,EquivalentTo,(key some anyURI)).
+predicate(Key,SubClassOf,Security).
+predicate(Security,is,Class).
+predicate(Unknown,is,Class).
+predicate(Unknown,SubClassOf,Gender).
+predicate(ns.com/foaf/0.1/,is,Class).

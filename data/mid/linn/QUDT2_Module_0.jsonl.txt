@@ -1,0 +1,346 @@
+predicate(UCUMci-term,is,Datatype).
+predicate(UCUMcs-term,is,Datatype).
+predicate(www.w3.org/2000/01/-schema#,is,Datatype).
+predicate(double,is,Datatype).
+predicate(string,is,Datatype).
+predicate(applicableCGSUnit,is,ObjectProperty).
+predicate(applicableISOUnit,is,ObjectProperty).
+predicate(applicableImperialUnit,is,ObjectProperty).
+predicate(applicableSIUnit,is,ObjectProperty).
+predicate(applicableUSCustomaryUnit,is,ObjectProperty).
+predicate(applicableUnit,is,ObjectProperty).
+predicate(baseDimensionEnumeration,is,ObjectProperty).
+predicate(belongsToSystemOfQuantities,is,ObjectProperty).
+predicate(belongsToSystemOfQuantities,Domain,QuantityKind).
+predicate(belongsToSystemOfQuantities,Range,SystemOfQuantities).
+predicate(default,is,ObjectProperty).
+predicate(element,is,ObjectProperty).
+predicate(figure,is,ObjectProperty).
+predicate(generalization,is,ObjectProperty).
+predicate(hasBaseQuantityKind,is,ObjectProperty).
+predicate(hasBaseUnit,is,ObjectProperty).
+predicate(hasCoherentUnit,is,ObjectProperty).
+predicate(hasDefinedUnit,is,ObjectProperty).
+predicate(hasDenominatorPart,is,ObjectProperty).
+predicate(hasDerivedCoherentUnit,is,ObjectProperty).
+predicate(hasDerivedNonCoherentUnit,is,ObjectProperty).
+predicate(hasDerivedUnit,is,ObjectProperty).
+predicate(hasDimensionVector,is,ObjectProperty).
+predicate(hasMultiplier,is,ObjectProperty).
+predicate(hasNumeratorPart,is,ObjectProperty).
+predicate(hasQuantity,is,ObjectProperty).
+predicate(hasQuantityKind,is,ObjectProperty).
+predicate(hasReferenceQuantityKind,is,ObjectProperty).
+predicate(hasRule,is,ObjectProperty).
+predicate(hasUnit,is,ObjectProperty).
+predicate(hasUnitSystem,is,ObjectProperty).
+predicate(isAllowedUnitOfSystem,is,ObjectProperty).
+predicate(isAllowedUnitOfSystem,SubPropertyOf,isUnitOfSystem).
+predicate(isBaseUnitOfSystem,is,ObjectProperty).
+predicate(isDefinedUnitOfSystem,is,ObjectProperty).
+predicate(isDefinedUnitOfSystem,SubPropertyOf,isUnitOfSystem).
+predicate(isDerivedCoherentUnitOfSystem,is,ObjectProperty).
+predicate(isDerivedNonCoherentUnitOfSystem,is,ObjectProperty).
+predicate(isDerivedUnitOfSystem,is,ObjectProperty).
+predicate(isDerivedUnitOfSystem,SubPropertyOf,isUnitOfSystem).
+predicate(isDimensionInSystem,is,ObjectProperty).
+predicate(isQuantityKindOf,is,ObjectProperty).
+predicate(isScalingOf,is,ObjectProperty).
+predicate(isUnitOfSystem,is,ObjectProperty).
+predicate(isUnitOfSystem,Domain,Unit).
+predicate(isUnitOfSystem,Range,SystemOfUnits).
+predicate(permissibleMaths,is,ObjectProperty).
+predicate(permissibleTransformation,is,ObjectProperty).
+predicate(quantityValue,is,ObjectProperty).
+predicate(scaleType,is,ObjectProperty).
+predicate(unit,is,ObjectProperty).
+predicate(supersededBy,is,ObjectProperty).
+predicate(code,is,DataProperty).
+predicate(code,Domain,Concept).
+predicate(example,is,DataProperty).
+predicate(id,is,DataProperty).
+predicate(id,Domain,Concept).
+predicate(id,Range,string).
+predicate(rationale,is,DataProperty).
+predicate(relativeStandardUncertainty,is,DataProperty).
+predicate(standardUncertainty,is,DataProperty).
+predicate(ucumCode,is,DataProperty).
+predicate(url,is,DataProperty).
+predicate(vaem#,is,DataProperty).
+predicate(Category,is,Class).
+predicate(Category,is,Class).
+predicate(Conversion_of_units,is,Class).
+predicate(Dimensional_analysis,is,Class).
+predicate(Error2,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Error3,is,Class).
+predicate(Error5,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Error6,is,Class).
+predicate(Acronym,is,Class).
+predicate(Acronym,SubClassOf,Term).
+predicate(BaseUnit,is,Class).
+predicate(BaseUnit,SubClassOf,Unit).
+predicate(BaseUnit,DisjointWith,DerivedUnit).
+predicate(BinaryPrefixUnit,is,Class).
+predicate(BinaryPrefixUnit,SubClassOf,PrefixUnit).
+predicate(BinaryScaledUnit,is,Class).
+predicate(BinaryScaledUnit,SubClassOf,ScaledUnit,).
+predicate(BinaryScaledUnit,SubClassOf,hasMultiplier only BinaryPrefixUnit).
+predicate(CGS-DimensionVector,is,Class).
+predicate(CGS-DimensionVector,SubClassOf,QuantityDimensionVector).
+predicate(CGS-Unit,is,Class).
+predicate(CGS-Unit,SubClassOf,StandardsUnit).
+predicate(Citation,is,Class).
+predicate(Citation,SubClassOf,Error2,).
+predicate(Citation,SubClassOf,Concept).
+predicate(Concept,is,Class).
+predicate(Concept,SubClassOf,Error5,).
+predicate(Concept,SubClassOf,Error6,).
+predicate(Concept,SubClassOf,hasRule only Rule,).
+predicate(Concept,SubClassOf,supersededBy only Concept,).
+predicate(Thing,,is,figure min 0 www.w3.org/2002/07/#).
+predicate(Literal,is,url min 0 www.w3.org/2000/01/-schema#).
+predicate(ConstantValue,is,Class).
+predicate(ConstantValue,SubClassOf,Concept).
+predicate(CountingUnit,is,Class).
+predicate(CountingUnit,SubClassOf,DimensionlessUnit,).
+predicate(CountingUnit,SubClassOf,ResourceUnit).
+predicate(DecimalPrefixUnit,is,Class).
+predicate(DecimalPrefixUnit,SubClassOf,PrefixUnit).
+predicate(DecimalScaledUnit,is,Class).
+predicate(DecimalScaledUnit,SubClassOf,ScaledUnit).
+predicate(DerivedCoherentUnit,is,Class).
+predicate(DerivedCoherentUnit,SubClassOf,DerivedUnit).
+predicate(DerivedCoherentUnit,DisjointWith,DerivedNonCoherentUnit).
+predicate(DerivedNonCoherentUnit,is,Class).
+predicate(DerivedNonCoherentUnit,SubClassOf,DerivedUnit).
+predicate(DerivedNonCoherentUnit,DisjointWith,DerivedCoherentUnit).
+predicate(DerivedUnit,is,Class).
+predicate(DerivedUnit,SubClassOf,Unit).
+predicate(DerivedUnit,DisjointWith,BaseUnit).
+predicate(Dimension,is,Class).
+predicate(Dimension,SubClassOf,QuantityDimensionVector,).
+predicate(Dimension,SubClassOf,hasDimensionVector only DimensionVector,).
+predicate(Dimension,SubClassOf,hasReferenceQuantityKind only QuantityKind,).
+predicate(Dimension,SubClassOf,isDimensionInSystem only SystemOfQuantities,).
+predicate(Thing,,is,hasDimensionVector min 1 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasReferenceQuantityKind min 1 www.w3.org/2002/07/#).
+predicate(Thing,is,isDimensionInSystem min 1 www.w3.org/2002/07/#).
+predicate(DimensionVector,is,Class).
+predicate(DimensionVector,SubClassOf,Concept,).
+predicate(DimensionVector,SubClassOf,hasBaseQuantityKind only QuantityKind).
+predicate(DimensionlessUnit,is,Class).
+predicate(DimensionlessUnit,SubClassOf,Unit).
+predicate(DomainSpecificUnit,is,Class).
+predicate(DomainSpecificUnit,SubClassOf,Unit).
+predicate(EnumeratedValue,is,Class).
+predicate(Enumeration,is,Class).
+predicate(Enumeration,SubClassOf,Concept,).
+predicate(Enumeration,,is,dtype#).
+predicate(Enumeration,,is,default only EnumeratedValue,).
+predicate(Enumeration,,is,element only EnumeratedValue,).
+predicate(Thing,is,element min 1 www.w3.org/2002/07/#).
+predicate(EnumerationScale,is,Class).
+predicate(EnumerationScale,SubClassOf,Scale,).
+predicate(Enumeration,is,dtype#).
+predicate(Figure,is,Class).
+predicate(Figure,SubClassOf,Concept).
+predicate(GlossaryTerm,is,Class).
+predicate(GlossaryTerm,SubClassOf,Term).
+predicate(GreekCharacter,is,Class).
+predicate(GreekCharacter,SubClassOf,Symbol).
+predicate(IMPERIAL-DimensionVector,is,Class).
+predicate(IMPERIAL-DimensionVector,SubClassOf,QuantityDimensionVector).
+predicate(ISO-DimensionVector,is,Class).
+predicate(ISO-DimensionVector,SubClassOf,QuantityDimensionVector).
+predicate(ImperialUnit,is,Class).
+predicate(ImperialUnit,SubClassOf,StandardsUnit).
+predicate(International-CustomaryUnit,is,Class).
+predicate(International-CustomaryUnit,SubClassOf,StandardsUnit).
+predicate(IntervalScale,is,Class).
+predicate(IntervalScale,SubClassOf,Scale).
+predicate(LogarithmicUnit,is,Class).
+predicate(LogarithmicUnit,SubClassOf,Unit).
+predicate(MKS-Unit,is,Class).
+predicate(MKS-Unit,SubClassOf,StandardsUnit).
+predicate(MathFunctionType,is,Class).
+predicate(MathFunctionType,SubClassOf,Concept).
+predicate(MathsFunctionType,is,Class).
+predicate(NominalScale,is,Class).
+predicate(NominalScale,SubClassOf,Scale).
+predicate(OrdinalScale,is,Class).
+predicate(OrdinalScale,SubClassOf,Scale).
+predicate(Organization,is,Class).
+predicate(Organization,SubClassOf,Concept,).
+predicate(Literal,is,url min 0 www.w3.org/2000/01/-schema#).
+predicate(PhysicalConstant,is,Class).
+predicate(PhysicalConstant,SubClassOf,Quantity).
+predicate(PrefixUnit,is,Class).
+predicate(PrefixUnit,SubClassOf,Unit).
+predicate(Quantifiable,is,Class).
+predicate(Quantifiable,SubClassOf,Concept,).
+predicate(Thing,is,hasQuantity min 1 www.w3.org/2002/07/#).
+predicate(Quantity,is,Class).
+predicate(Quantity,SubClassOf,Error3,).
+predicate(Quantity,SubClassOf,Concept,).
+predicate(Quantity,SubClassOf,hasQuantityKind only QuantityKind,).
+predicate(Quantity,SubClassOf,quantityValue only QuantityValue,).
+predicate(Thing,,is,belongsToSystemOfQuantities min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,quantityValue min 1 www.w3.org/2002/07/#).
+predicate(QuantityDimensionVector,is,Class).
+predicate(QuantityDimensionVector,SubClassOf,Concept,).
+predicate(QuantityDimensionVector,SubClassOf,hasReferenceQuantityKind only QuantityKind,).
+predicate(QuantityDimensionVector,SubClassOf,isDimensionInSystem only SystemOfQuantities,).
+predicate(Thing,,is,hasReferenceQuantityKind min 1 www.w3.org/2002/07/#).
+predicate(Thing,is,isDimensionInSystem min 1 www.w3.org/2002/07/#).
+predicate(QuantityKind,is,Class).
+predicate(QuantityKind,SubClassOf,Concept,).
+predicate(QuantityKind,SubClassOf,generalization only QuantityKind,).
+predicate(QuantityKind,SubClassOf,hasDimensionVector only QuantityDimensionVector,).
+predicate(QuantityKind,SubClassOf,isQuantityKindOf only SystemOfQuantities,).
+predicate(Thing,,is,applicableCGSUnit min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,applicableISOUnit min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,applicableImperialUnit min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,applicableSIUnit min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,applicableUSCustomaryUnit min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,applicableUnit min 1 www.w3.org/2002/07/#).
+predicate(QuantityValue,is,Class).
+predicate(QuantityValue,SubClassOf,Concept,).
+predicate(QuantityValue,SubClassOf,hasQuantityKind only QuantityKind,).
+predicate(QuantityValue,SubClassOf,unit only Unit,).
+predicate(QuantityValue,SubClassOf,relativeStandardUncertainty only double,).
+predicate(QuantityValue,SubClassOf,standardUncertainty only double).
+predicate(RatioScale,is,Class).
+predicate(RatioScale,SubClassOf,Scale).
+predicate(ReifiableProperty,is,Class).
+predicate(ResourceUnit,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(Rule,is,Class).
+predicate(Rule,SubClassOf,Concept,).
+predicate(Rule,SubClassOf,example only string,).
+predicate(Literal,is,rationale min 1 www.w3.org/2000/01/-schema#).
+predicate(SI-DimensionVector,is,Class).
+predicate(SI-DimensionVector,SubClassOf,QuantityDimensionVector).
+predicate(SI-Unit,is,Class).
+predicate(SI-Unit,SubClassOf,StandardsUnit).
+predicate(SOU_USCUSTOMARY,is,Class).
+predicate(Scale,is,Class).
+predicate(Scale,SubClassOf,Concept,).
+predicate(Scale,SubClassOf,permissibleMaths only MathsFunctionType,).
+predicate(Scale,SubClassOf,permissibleTransformation only TransformType,).
+predicate(Scale,SubClassOf,scaleType only ScaleType).
+predicate(ScaleType,is,Class).
+predicate(ScaleType,SubClassOf,EnumeratedValue,).
+predicate(ScaleType,SubClassOf,permissibleMaths only MathsFunctionType,).
+predicate(ScaleType,SubClassOf,permissibleTransformation only TransformType).
+predicate(ScaledUnit,is,Class).
+predicate(ScaledUnit,SubClassOf,Unit,).
+predicate(ScaledUnit,SubClassOf,isScalingOf only Unit).
+predicate(StandardsUnit,is,Class).
+predicate(StandardsUnit,SubClassOf,Unit).
+predicate(Symbol,is,Class).
+predicate(Symbol,SubClassOf,Concept).
+predicate(SystemOfNaturalUnits,is,Class).
+predicate(SystemOfNaturalUnits,SubClassOf,SystemOfUnits).
+predicate(SystemOfQuantities,is,Class).
+predicate(SystemOfQuantities,SubClassOf,Concept,).
+predicate(SystemOfQuantities,SubClassOf,baseDimensionEnumeration only Enumeration,).
+predicate(SystemOfQuantities,SubClassOf,hasQuantityKind only QuantityKind,).
+predicate(SystemOfQuantities,SubClassOf,hasUnitSystem only SystemOfUnits,).
+predicate(Thing,is,hasQuantityKind min 1 www.w3.org/2002/07/#).
+predicate(SystemOfUnits,is,Class).
+predicate(SystemOfUnits,SubClassOf,Concept,).
+predicate(SystemOfUnits,SubClassOf,hasBaseUnit only BaseUnit,).
+predicate(SystemOfUnits,SubClassOf,hasCoherentUnit only Unit,).
+predicate(SystemOfUnits,SubClassOf,hasDefinedUnit only Unit,).
+predicate(SystemOfUnits,SubClassOf,hasDerivedCoherentUnit only DerivedUnit,).
+predicate(SystemOfUnits,SubClassOf,hasDerivedUnit only DerivedUnit,).
+predicate(SystemOfUnits,SubClassOf,hasUnit only Unit,).
+predicate(Thing,,is,hasCoherentUnit min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasDerivedCoherentUnit min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,hasDerivedNonCoherentUnit min 0 www.w3.org/2002/07/#).
+predicate(Thing,is,hasUnit min 1 www.w3.org/2002/07/#).
+predicate(Term,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(TransformType,is,Class).
+predicate(Thing,is,www.w3.org/2002/07/#).
+predicate(UCUMci-term,is,Class).
+predicate(US-CustomaryUnit,is,Class).
+predicate(US-CustomaryUnit,SubClassOf,StandardsUnit).
+predicate(US-SurveyUnit,is,Class).
+predicate(US-SurveyUnit,SubClassOf,StandardsUnit).
+predicate(Unit,is,Class).
+predicate(Unit,SubClassOf,Concept,).
+predicate(Unit,SubClassOf,hasDenominatorPart only Unit,).
+predicate(Unit,SubClassOf,hasNumeratorPart only Unit,).
+predicate(Unit,SubClassOf,hasQuantityKind only QuantityKind,).
+predicate(Unit,SubClassOf,isBaseUnitOfSystem only SystemOfUnits,).
+predicate(Unit,SubClassOf,isDefinedUnitOfSystem only SystemOfUnits,).
+predicate(Unit,SubClassOf,isDerivedCoherentUnitOfSystem only SystemOfUnits,).
+predicate(Unit,SubClassOf,isDerivedNonCoherentUnitOfSystem only SystemOfUnits,).
+predicate(Unit,SubClassOf,isDerivedUnitOfSystem only SystemOfUnits,).
+predicate(Unit,SubClassOf,isUnitOfSystem only SystemOfUnits,).
+predicate(Thing,,is,isUnitOfSystem min 0 www.w3.org/2002/07/#).
+predicate(Thing,,is,ucumCode max 1 UCUMci-term,).
+predicate(Thing,,is,ucumCode max 1 UCUMcs-term).
+predicate(floatPercentage,is,Class).
+predicate(latexMathString,is,Class).
+predicate(Dimensionless,is,Class).
+predicate(CC-SHAREALIKE_3PT0-US,is,Class).
+predicate(DA_unified.pdf,is,Class).
+predicate(JCGM_200_2008.pdf,is,Class).
+predicate(dtype,is,Class).
+predicate(dtype#,is,Class).
+predicate(vaem#,is,Class).
+predicate(vaem#,SubClassOf,Attribution,).
+predicate(url min 0 www.w3.org/2000/01/-schema#,is,vaem#).
+predicate(vaem#,is,Class).
+predicate(vaem#,is,Class).
+predicate(vaem#,is,Class).
+predicate(vaem#,is,Class).
+predicate(vaem#,is,Class).
+predicate(vaem#,is,Class).
+predicate(vaem#,is,Class).
+predicate(vaem#,is,Class).
+predicate(vaem#,is,Class).
+predicate(Dimension,is,vaem#).
+predicate(vaem#,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(Attribution,is,Class).
+predicate(SOU_CGS,is,Individual).
+predicate(SOU_CGS,Types,SystemOfUnits).
+predicate(SOU_IMPERIAL,is,Individual).
+predicate(SOU_IMPERIAL,Types,SystemOfUnits).
+predicate(SOU_SI,is,Individual).
+predicate(SOU_SI,Types,SystemOfUnits).
+predicate(SOU_USCUSTOMARY,is,Individual).
+predicate(SOU_USCUSTOMARY,Types,SystemOfUnits).
+predicate(baseCGSUnitDimensions,is,Individual).
+predicate(baseCGSUnitDimensions,Types,latexMathString).
+predicate(baseISOUnitDimensions,is,Individual).
+predicate(baseISOUnitDimensions,Types,latexMathString).
+predicate(baseImperialUnitDimensions,is,Individual).
+predicate(baseImperialUnitDimensions,Types,latexMathString).
+predicate(baseSIUnitDimensions,is,Individual).
+predicate(baseSIUnitDimensions,Types,latexMathString).
+predicate(baseUSCustomaryUnitDimensions,is,Individual).
+predicate(baseUSCustomaryUnitDimensions,Types,latexMathString).
+predicate(baseUnitDimensions,is,Individual).
+predicate(baseUnitDimensions,Types,latexMathString).
+predicate(latexDefinition,is,Individual).
+predicate(latexDefinition,Types,ReifiableProperty).
+predicate(latexSymbol,is,Individual).
+predicate(latexSymbol,Types,latexMathString).
+predicate(mathMLdefinition,is,Individual).
+predicate(mathMLdefinition,Types,ReifiableProperty).
+predicate(symbol,is,Individual).
+predicate(symbol,Types,latexMathString).
+predicate(Dimensionless,is,Individual).
+predicate(Dimensionless,Types,QuantityKind).
+predicate(PhysicsForumsAttribution,is,Individual).
+predicate(Attribution,is,vaem#).
+predicate(QUDT-Attribution,is,Individual).
+predicate(Attribution,is,vaem#).
+predicate(WikipediaAttribution,is,Individual).
+predicate(Attribution,is,vaem#).

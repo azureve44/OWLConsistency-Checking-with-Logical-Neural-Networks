@@ -1,0 +1,244 @@
+is(www.w3.org/2000/01/-schema#,AnnotationProperty):1.0
+is(string,Datatype):1.0
+is(access_to,ObjectProperty):1.0
+is(classify_as,ObjectProperty):1.0
+is(extension_of,ObjectProperty):1.0
+is(is_a,ObjectProperty):1.0
+is(kind_of,ObjectProperty):1.0
+is(offers,ObjectProperty):1.0
+is(transmits,ObjectProperty):1.0
+is(uses,ObjectProperty):1.0
+is(version_of,ObjectProperty):1.0
+is(Advance_Direct_Connect,Class):1.0
+SubClassOf(Advance_Direct_Connect,Transmission_Control_Protocol,):1.0
+SubClassOf(Advance_Direct_Connect,User_Datagram_Protocol,):1.0
+SubClassOf(Advance_Direct_Connect,uses some Transmission_Control_Protocol,):1.0
+SubClassOf(Advance_Direct_Connect,uses some User_Datagram_Protocol):1.0
+is(Apple_Filing_Protocol,Class):1.0
+SubClassOf(Apple_Filing_Protocol,Transmission_Control_Protocol,):1.0
+SubClassOf(Apple_Filing_Protocol,offers some Transmission_Control_Protocol):1.0
+is(BACnet,Class):1.0
+SubClassOf(BACnet,Transmission_Control_Protocol,):1.0
+SubClassOf(BACnet,User_Datagram_Protocol,):1.0
+SubClassOf(BACnet,uses some Transmission_Control_Protocol,):1.0
+SubClassOf(BACnet,uses some User_Datagram_Protocol):1.0
+is(BOOTP,Class):1.0
+SubClassOf(BOOTP,Transmission_Control_Protocol,):1.0
+SubClassOf(BOOTP,User_Datagram_Protocol,):1.0
+SubClassOf(BOOTP,uses some Transmission_Control_Protocol,):1.0
+SubClassOf(BOOTP,uses some User_Datagram_Protocol):1.0
+is(Bit_Torrent,Class):1.0
+SubClassOf(Bit_Torrent,Transmission_Control_Protocol,):1.0
+SubClassOf(Bit_Torrent,offers some Transmission_Control_Protocol):1.0
+is(Class_A,Class):1.0
+SubClassOf(Class_A,Internet_Protocol_Version_4):1.0
+is(Class_B,Class):1.0
+SubClassOf(Class_B,Internet_Protocol_Version_4):1.0
+is(Class_C,Class):1.0
+SubClassOf(Class_C,Internet_Protocol_Version_4):1.0
+is(Class_D,Class):1.0
+SubClassOf(Class_D,Internet_Protocol_Version_4):1.0
+is(Class_E,Class):1.0
+SubClassOf(Class_E,Internet_Protocol_Version_4):1.0
+is(Connection_Oriented_Service,Class):1.0
+SubClassOf(Connection_Oriented_Service,Transmission_Control_Protocol):1.0
+is(Connectionless_Service,Class):1.0
+SubClassOf(Connectionless_Service,Internet_Protocol):1.0
+is(Core_Switch,Class):1.0
+is(DHCP,Class):1.0
+SubClassOf(DHCP,Transmission_Control_Protocol,):1.0
+SubClassOf(DHCP,User_Datagram_Protocol,):1.0
+SubClassOf(DHCP,uses some Transmission_Control_Protocol,):1.0
+SubClassOf(DHCP,uses some User_Datagram_Protocol):1.0
+is(DICT,Class):1.0
+SubClassOf(DICT,Transmission_Control_Protocol,):1.0
+SubClassOf(DICT,offers some Transmission_Control_Protocol):1.0
+is(DNS,Class):1.0
+SubClassOf(DNS,Transmission_Control_Protocol,):1.0
+SubClassOf(DNS,offers some Transmission_Control_Protocol):1.0
+is(Data_Center_Switches,Class):1.0
+SubClassOf(Data_Center_Switches,Core_Switch,):1.0
+SubClassOf(Data_Center_Switches,is_a some Core_Switch):1.0
+is(FTP,Class):1.0
+SubClassOf(FTP,Transmission_Control_Protocol,):1.0
+SubClassOf(FTP,offers some Transmission_Control_Protocol):1.0
+is(Finger_protocol,Class):1.0
+SubClassOf(Finger_protocol,Transmission_Control_Protocol,):1.0
+SubClassOf(Finger_protocol,offers some Transmission_Control_Protocol):1.0
+is(Gnutella,Class):1.0
+SubClassOf(Gnutella,User_Datagram_Protocol,):1.0
+SubClassOf(Gnutella,uses some User_Datagram_Protocol):1.0
+is(Gopher_Protocol,Class):1.0
+SubClassOf(Gopher_Protocol,Transmission_Control_Protocol,):1.0
+SubClassOf(Gopher_Protocol,offers some Transmission_Control_Protocol):1.0
+is(HTTP,Class):1.0
+SubClassOf(HTTP,Transmission_Control_Protocol,):1.0
+SubClassOf(HTTP,World_Wide_Web,):1.0
+SubClassOf(HTTP,access_to some World_Wide_Web,):1.0
+SubClassOf(HTTP,offers some Transmission_Control_Protocol):1.0
+is(HTTPS,Class):1.0
+SubClassOf(HTTPS,Transmission_Control_Protocol,):1.0
+SubClassOf(HTTPS,offers some Transmission_Control_Protocol):1.0
+is(IANA,Class):1.0
+SubClassOf(IANA,Internet_Protocol):1.0
+is(IMAP,Class):1.0
+SubClassOf(IMAP,Transmission_Control_Protocol,):1.0
+SubClassOf(IMAP,classify_as some IMAP2,):1.0
+SubClassOf(IMAP,classify_as some IMAP2bis,):1.0
+SubClassOf(IMAP,classify_as some IMAP3,):1.0
+SubClassOf(IMAP,classify_as some IMAP4,):1.0
+SubClassOf(IMAP,classify_as some Orginal_IMAP,):1.0
+SubClassOf(IMAP,offers some Transmission_Control_Protocol):1.0
+is(IMAP2,Class):1.0
+SubClassOf(IMAP2,IMAP,):1.0
+SubClassOf(IMAP2,version_of some IMAP):1.0
+is(IMAP2bis,Class):1.0
+SubClassOf(IMAP2bis,IMAP,):1.0
+SubClassOf(IMAP2bis,version_of some IMAP):1.0
+is(IMAP3,Class):1.0
+SubClassOf(IMAP3,IMAP,):1.0
+SubClassOf(IMAP3,version_of some IMAP):1.0
+is(IMAP4,Class):1.0
+SubClassOf(IMAP4,IMAP,):1.0
+SubClassOf(IMAP4,version_of some IMAP):1.0
+is(Internet_Protocol,Class):1.0
+SubClassOf(Internet_Protocol,Protocol,):1.0
+SubClassOf(Internet_Protocol,is_a some Protocol,):1.0
+SubClassOf(Internet_Protocol,offers some Connectionless_Service,):1.0
+SubClassOf(Internet_Protocol,transmits some Packet):1.0
+is(Internet_Protocol_Version_4,Class):1.0
+SubClassOf(Internet_Protocol_Version_4,Internet_Protocol):1.0
+is(Internet_Protocol_Version_6,Class):1.0
+SubClassOf(Internet_Protocol_Version_6,Internet_Protocol):1.0
+is(Internet_Relay_Chat,Class):1.0
+SubClassOf(Internet_Relay_Chat,Transmission_Control_Protocol,):1.0
+SubClassOf(Internet_Relay_Chat,offers some Transmission_Control_Protocol):1.0
+is(JUNOS,Class):1.0
+is(Jupiter_Networks,Class):1.0
+SubClassOf(Jupiter_Networks,JUNOS):1.0
+is(LDAP,Class):1.0
+SubClassOf(LDAP,Transmission_Control_Protocol,):1.0
+SubClassOf(LDAP,offers some Transmission_Control_Protocol):1.0
+is(MIME,Class):1.0
+SubClassOf(MIME,SMTP,):1.0
+SubClassOf(MIME,extension_of some SMTP):1.0
+is(NAT,Class):1.0
+SubClassOf(NAT,Transmission_Control_Protocol,):1.0
+SubClassOf(NAT,offers some Transmission_Control_Protocol):1.0
+is(NNTP,Class):1.0
+SubClassOf(NNTP,Transmission_Control_Protocol,):1.0
+SubClassOf(NNTP,offers some Transmission_Control_Protocol):1.0
+is(NTP,Class):1.0
+SubClassOf(NTP,User_Datagram_Protocol,):1.0
+SubClassOf(NTP,uses some User_Datagram_Protocol):1.0
+is(NetBIOS,Class):1.0
+SubClassOf(NetBIOS,Transmission_Control_Protocol,):1.0
+SubClassOf(NetBIOS,User_Datagram_Protocol,):1.0
+SubClassOf(NetBIOS,uses some Transmission_Control_Protocol,):1.0
+SubClassOf(NetBIOS,uses some User_Datagram_Protocol):1.0
+is(Orginal_IMAP,Class):1.0
+SubClassOf(Orginal_IMAP,IMAP,):1.0
+SubClassOf(Orginal_IMAP,version_of some IMAP):1.0
+is(POP,Class):1.0
+SubClassOf(POP,Transmission_Control_Protocol,):1.0
+SubClassOf(POP,offers some Transmission_Control_Protocol):1.0
+is(POP1,Class):1.0
+SubClassOf(POP1,POP,):1.0
+SubClassOf(POP1,version_of some POP):1.0
+is(POP2,Class):1.0
+SubClassOf(POP2,POP,):1.0
+SubClassOf(POP2,version_of some POP):1.0
+is(POP3,Class):1.0
+SubClassOf(POP3,POP,):1.0
+SubClassOf(POP3,version_of some POP):1.0
+is(PPP,Class):1.0
+SubClassOf(PPP,Transmission_Control_Protocol,):1.0
+SubClassOf(PPP,Virtual_Private_Network,):1.0
+SubClassOf(PPP,offers some Transmission_Control_Protocol):1.0
+is(Packet,Class):1.0
+SubClassOf(Packet,Internet_Protocol):1.0
+is(Protocol,Class):1.0
+is(RADIUS,Class):1.0
+SubClassOf(RADIUS,User_Datagram_Protocol,):1.0
+SubClassOf(RADIUS,uses some User_Datagram_Protocol):1.0
+is(RDP,Class):1.0
+SubClassOf(RDP,Transmission_Control_Protocol,):1.0
+SubClassOf(RDP,offers some Transmission_Control_Protocol):1.0
+is(RIP,Class):1.0
+SubClassOf(RIP,Transmission_Control_Protocol,):1.0
+SubClassOf(RIP,offers some Transmission_Control_Protocol):1.0
+is(RTSP,Class):1.0
+SubClassOf(RTSP,Transmission_Control_Protocol,):1.0
+SubClassOf(RTSP,User_Datagram_Protocol,):1.0
+SubClassOf(RTSP,uses some Transmission_Control_Protocol,):1.0
+SubClassOf(RTSP,uses some User_Datagram_Protocol):1.0
+is(SCP,Class):1.0
+SubClassOf(SCP,SSH,):1.0
+SubClassOf(SCP,kind_of some SSH):1.0
+is(SFTP,Class):1.0
+SubClassOf(SFTP,SSH,):1.0
+SubClassOf(SFTP,kind_of some SSH):1.0
+is(SIP,Class):1.0
+SubClassOf(SIP,Transmission_Control_Protocol,):1.0
+SubClassOf(SIP,User_Datagram_Protocol,):1.0
+SubClassOf(SIP,VOIP,):1.0
+SubClassOf(SIP,uses some Transmission_Control_Protocol,):1.0
+SubClassOf(SIP,uses some User_Datagram_Protocol):1.0
+is(SMTP,Class):1.0
+SubClassOf(SMTP,Transmission_Control_Protocol,):1.0
+SubClassOf(SMTP,offers some Transmission_Control_Protocol):1.0
+is(SNMP,Class):1.0
+SubClassOf(SNMP,Transmission_Control_Protocol,):1.0
+SubClassOf(SNMP,User_Datagram_Protocol,):1.0
+SubClassOf(SNMP,uses some Transmission_Control_Protocol,):1.0
+SubClassOf(SNMP,uses some User_Datagram_Protocol,):1.0
+SubClassOf(SNMP,uses only (offers some Transmission_Control_Protocol)):1.0
+is(SNMPv1,Class):1.0
+SubClassOf(SNMPv1,SNMP,):1.0
+SubClassOf(SNMPv1,version_of some SNMP):1.0
+is(SNMPv2,Class):1.0
+SubClassOf(SNMPv2,SNMP,):1.0
+SubClassOf(SNMPv2,version_of some SNMP):1.0
+is(SNMPv3,Class):1.0
+SubClassOf(SNMPv3,SNMP,):1.0
+SubClassOf(SNMPv3,version_of some SNMP):1.0
+is(SNTP,Class):1.0
+SubClassOf(SNTP,NTP,):1.0
+SubClassOf(SNTP,version_of some NTP):1.0
+is(SOAP,Class):1.0
+SubClassOf(SOAP,Transmission_Control_Protocol,):1.0
+SubClassOf(SOAP,offers some Transmission_Control_Protocol):1.0
+is(SSH,Class):1.0
+SubClassOf(SSH,Transmission_Control_Protocol,):1.0
+SubClassOf(SSH,Virtual_Private_Network,):1.0
+SubClassOf(SSH,offers some Transmission_Control_Protocol):1.0
+is(SSH.2,Class):1.0
+SubClassOf(SSH.2,SSH,):1.0
+SubClassOf(SSH.2,version_of some SSH):1.0
+is(STUN,Class):1.0
+SubClassOf(STUN,User_Datagram_Protocol,):1.0
+SubClassOf(STUN,uses some User_Datagram_Protocol):1.0
+is(TFTP,Class):1.0
+SubClassOf(TFTP,Transmission_Control_Protocol,):1.0
+SubClassOf(TFTP,offers some Transmission_Control_Protocol):1.0
+is(Telnet,Class):1.0
+SubClassOf(Telnet,Transmission_Control_Protocol,):1.0
+SubClassOf(Telnet,offers some Transmission_Control_Protocol):1.0
+is(Transmission_Control_Protocol,Class):1.0
+SubClassOf(Transmission_Control_Protocol,Internet_Protocol):1.0
+DisjointWith(Transmission_Control_Protocol,offers some Transmission_Control_Protocol):1.0
+is(User_Datagram_Protocol,Class):1.0
+SubClassOf(User_Datagram_Protocol,Internet_Protocol):1.0
+is(VOIP,Class):1.0
+is(Virtual_Private_Network,Class):1.0
+is(World_Wide_Web,Class):1.0
+is(r_login,Class):1.0
+SubClassOf(r_login,Transmission_Control_Protocol,):1.0
+SubClassOf(r_login,offers some Transmission_Control_Protocol):1.0
+is(r_sync,Class):1.0
+SubClassOf(r_sync,Transmission_Control_Protocol,):1.0
+SubClassOf(r_sync,offers some Transmission_Control_Protocol):1.0
+is(www.w3.org/2002/07/#,Class):1.0
+is(www.w3.org/2000/01/-schema#,Annotations):1.0
+is(classify_as some IMAP2,Class):1.0
+SubClassOf(classify_as some IMAP2,Orginal_IMAP):1.0

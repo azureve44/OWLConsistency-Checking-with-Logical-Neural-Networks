@@ -1,0 +1,19 @@
+predicate(is-a-quality-of,is,ObjectProperty).
+predicate(is-present-at,is,ObjectProperty).
+predicate(abstract,is,Class).
+predicate(abstract-quality,is,Class).
+predicate(abstract-quality,SubClassOf,quality).
+predicate(endurant,is,Class).
+predicate(particular,is,Class).
+predicate(perdurant,is,Class).
+predicate(physical-quality,is,Class).
+predicate(physical-quality,SubClassOf,quality).
+predicate(quality,is,Class).
+predicate(quality,SubClassOf,particular,).
+predicate(quality,SubClassOf,is-present-at min 1 time-interval,).
+predicate(quality,SubClassOf,is-a-quality-of exactly 1 particular).
+predicate(temporal-quality,is,Class).
+predicate(temporal-quality,SubClassOf,quality).
+predicate(time-interval,is,Class).
+predicate(www.w3.org/2002/07/#,is,Class).
+predicate(www.w3.org/2002/07/#,DisjointClasses,abstract,endurant,perdurant,quality).

@@ -1,0 +1,347 @@
+predicate(BFO_0000050,is,ObjectProperty).
+predicate(BFO_0000054,is,ObjectProperty).
+predicate(BFO_0000054,Domain,BFO_0000017).
+predicate(BFO_0000054,Range,BFO_0000015).
+predicate(BFO_0000054,InverseOf,BFO_0000055).
+predicate(BFO_0000055,is,ObjectProperty).
+predicate(BFO_0000055,InverseOf,BFO_0000054).
+predicate(OBI_0000293,is,ObjectProperty).
+predicate(OBI_0000312,is,ObjectProperty).
+predicate(OBI_0000643,is,ObjectProperty).
+predicate(RO_0000053,is,ObjectProperty).
+predicate(RO_0000059,is,ObjectProperty).
+predicate(RO_0000085,is,ObjectProperty).
+predicate(RO_0000086,is,ObjectProperty).
+predicate(RO_0000087,is,ObjectProperty).
+predicate(RO_0001000,is,ObjectProperty).
+predicate(RO_0002002,is,ObjectProperty).
+predicate(RO_0002002,Domain,BFO_0000040).
+predicate(RO_0002002,Range,BFO_0000141).
+predicate(BFO_0000004,is,Class).
+predicate(BFO_0000015,is,Class).
+predicate(BFO_0000016,is,Class).
+predicate(BFO_0000016,SubClassOf,BFO_0000017).
+predicate(BFO_0000017,is,Class).
+predicate(BFO_0000017,SubClassOf,BFO_0000020).
+predicate(BFO_0000017,DisjointWith,BFO_0000019).
+predicate(BFO_0000019,is,Class).
+predicate(BFO_0000019,DisjointWith,BFO_0000017).
+predicate(BFO_0000020,is,Class).
+predicate(BFO_0000023,is,Class).
+predicate(BFO_0000023,SubClassOf,BFO_0000017).
+predicate(BFO_0000024,is,Class).
+predicate(BFO_0000024,SubClassOf,BFO_0000040).
+predicate(BFO_0000027,is,Class).
+predicate(BFO_0000027,SubClassOf,BFO_0000040).
+predicate(BFO_0000030,is,Class).
+predicate(BFO_0000030,SubClassOf,BFO_0000040).
+predicate(BFO_0000034,is,Class).
+predicate(BFO_0000040,is,Class).
+predicate(BFO_0000040,SubClassOf,BFO_0000004).
+predicate(BFO_0000040,DisjointWith,BFO_0000141).
+predicate(BFO_0000141,is,Class).
+predicate(BFO_0000141,DisjointWith,BFO_0000040).
+predicate(CHEBI_16991,is,Class).
+predicate(CHEBI_16991,SubClassOf,CHEBI_33696).
+predicate(CHEBI_23367,is,Class).
+predicate(CHEBI_23367,SubClassOf,BFO_0000040).
+predicate(CHEBI_33696,is,Class).
+predicate(CHEBI_33696,SubClassOf,CHEBI_33839).
+predicate(CHEBI_33839,is,Class).
+predicate(CHEBI_33839,SubClassOf,CHEBI_23367).
+predicate(CL_0000000,is,Class).
+predicate(CL_0000000,SubClassOf,BFO_0000040).
+predicate(CL_0000010,is,Class).
+predicate(CL_0000010,SubClassOf,CL_0000578).
+predicate(CL_0000578,is,Class).
+predicate(CL_0000578,SubClassOf,CL_0001034).
+predicate(CL_0001034,is,Class).
+predicate(CL_0001034,SubClassOf,CL_0000000).
+predicate(IAO_0000030,is,Class).
+predicate(IAO_0000178,is,Class).
+predicate(IAO_0000178,EquivalentTo,BFO_0000040 and (RO_0000053 some (RO_0000059 some IAO_0000030))).
+predicate(IAO_0000178,SubClassOf,BFO_0000040).
+predicate(IAO_0000184,is,Class).
+predicate(NCBITaxon_10239,is,Class).
+predicate(NCBITaxon_10239,SubClassOf,OBI_0100026).
+predicate(NCBITaxon_2,is,Class).
+predicate(NCBITaxon_2,SubClassOf,OBI_0100026).
+predicate(NCBITaxon_2157,is,Class).
+predicate(NCBITaxon_2157,SubClassOf,OBI_0100026).
+predicate(NCBITaxon_2759,is,Class).
+predicate(NCBITaxon_2759,SubClassOf,OBI_0100026).
+predicate(OBCS_0000231,is,Class).
+predicate(OBCS_0000231,SubClassOf,PATO_0000161).
+predicate(OBCS_0000232,is,Class).
+predicate(OBCS_0000232,SubClassOf,PATO_0000161).
+predicate(OBCS_0000254,is,Class).
+predicate(OBCS_0000254,SubClassOf,BFO_0000030).
+predicate(OBI_0000047,is,Class).
+predicate(OBI_0000047,EquivalentTo,BFO_0000040 and (OBI_0000312 some OBI_0000094)).
+predicate(OBI_0000047,SubClassOf,BFO_0000040).
+predicate(OBI_0000079,is,Class).
+predicate(OBI_0000079,SubClassOf,OBI_0000047).
+predicate(OBI_0000094,is,Class).
+predicate(OBI_0000112,is,Class).
+predicate(OBI_0000392,is,Class).
+predicate(OBI_0000423,is,Class).
+predicate(OBI_0000423,SubClassOf,OBI_0000047,).
+predicate(OBI_0000423,SubClassOf,OBI_0000312 some OBI_0302884).
+predicate(OBI_0000453,is,Class).
+predicate(OBI_0000566,is,Class).
+predicate(OBI_0000566,SubClassOf,OBI_0000832).
+predicate(OBI_0000651,is,Class).
+predicate(OBI_0000651,SubClassOf,OBI_0001479,).
+predicate(OBI_0000651,SubClassOf,OBI_0000312 some OBI_0600005,).
+predicate(OBI_0000651,SubClassOf,RO_0000087 some OBI_0000112,).
+predicate(OBI_0000651,SubClassOf,RO_0001000 some UBERON_0001088).
+predicate(OBI_0000655,is,Class).
+predicate(OBI_0000655,SubClassOf,OBI_2000009,).
+predicate(OBI_0000655,SubClassOf,OBI_0000312 some OBI_0600005,).
+predicate(OBI_0000655,SubClassOf,RO_0000087 some OBI_0000112,).
+predicate(OBI_0000655,SubClassOf,RO_0001000 some UBERON_0000178).
+predicate(OBI_0000659,is,Class).
+predicate(OBI_0000671,is,Class).
+predicate(OBI_0000671,EquivalentTo,(OBI_0000312 some OBI_0600005) and (RO_0000087 some OBI_0000740)).
+predicate(OBI_0000671,SubClassOf,OBI_0000747,).
+predicate(OBI_0000671,SubClassOf,OBI_0001479,).
+predicate(OBI_0000671,SubClassOf,RO_0001000 some UBERON_0000465).
+predicate(OBI_0000740,is,Class).
+predicate(OBI_0000747,is,Class).
+predicate(OBI_0000747,EquivalentTo,BFO_0000040 and (RO_0000087 some OBI_0000740)).
+predicate(OBI_0000747,SubClassOf,BFO_0000040,).
+predicate(OBI_0000747,SubClassOf,OBI_0100051).
+predicate(OBI_0000832,is,Class).
+predicate(OBI_0000832,EquivalentTo,OBI_0000968 and (RO_0000085 some OBI_0000453)).
+predicate(OBI_0000832,SubClassOf,OBI_0000968).
+predicate(OBI_0000873,is,Class).
+predicate(OBI_0000873,EquivalentTo,OBI_0000312 some).
+predicate(OBI_0000873,EquivalentTo,(OBI_0000659 and (OBI_0000293 some).
+predicate(OBI_0000873,EquivalentTo,(OBI_0100026 and (RO_0000086 some PATO_0001421))))).
+predicate(OBI_0000873,SubClassOf,OBI_0001506).
+predicate(OBI_0000953,is,Class).
+predicate(OBI_0000953,EquivalentTo,OBI_0000047 and OBI_0100051).
+predicate(OBI_0000953,SubClassOf,OBI_0000047,).
+predicate(OBI_0000953,SubClassOf,OBI_0100051).
+predicate(OBI_0000968,is,Class).
+predicate(OBI_0000968,SubClassOf,OBI_0000047,).
+predicate(OBI_0000968,SubClassOf,OBI_0000312 some OBI_0000094,).
+predicate(OBI_0000968,SubClassOf,RO_0000085 some BFO_0000034).
+predicate(OBI_0000997,is,Class).
+predicate(OBI_0000997,SubClassOf,BFO_0000040).
+predicate(OBI_0001010,is,Class).
+predicate(OBI_0001010,SubClassOf,OBI_0000423,).
+predicate(OBI_0001010,SubClassOf,OBI_0000953,).
+predicate(OBI_0001010,SubClassOf,(OBI_0000312 some OBI_0666667) and (RO_0000087 some OBI_0000112),).
+predicate(OBI_0001010,SubClassOf,OBI_0000643 some CHEBI_33696).
+predicate(OBI_0001051,is,Class).
+predicate(OBI_0001051,SubClassOf,OBI_0001010).
+predicate(OBI_0001151,is,Class).
+predicate(OBI_0001151,EquivalentTo,OBI_0302859 or (CL_0000000 and (OBI_0000312 some OBI_0600043))).
+predicate(OBI_0001151,SubClassOf,OBI_0000047).
+predicate(OBI_0001479,is,Class).
+predicate(OBI_0001479,EquivalentTo,(RO_0000087 some OBI_0000112) and (RO_0001000 some).
+predicate(OBI_0001479,EquivalentTo,(UBERON_0000465 or UBERON_0000477))).
+predicate(OBI_0001479,SubClassOf,OBI_0100051).
+predicate(OBI_0001506,is,Class).
+predicate(OBI_0001506,EquivalentTo,OBI_0000312 some).
+predicate(OBI_0001506,EquivalentTo,(OBI_0000659 and (OBI_0000293 some).
+predicate(OBI_0001506,EquivalentTo,(OBI_0100026 and (RO_0000086 some).
+predicate(OBI_0001506,EquivalentTo,(PATO_0001421 or PATO_0001422)))))).
+predicate(OBI_0001506,SubClassOf,OBI_0100051).
+predicate(OBI_0001877,is,Class).
+predicate(OBI_0001877,SubClassOf,IAO_0000178).
+predicate(OBI_0001912,is,Class).
+predicate(OBI_0001912,SubClassOf,OBI_0000047).
+predicate(OBI_0002502,is,Class).
+predicate(OBI_0002502,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0001359)) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_0002502,SubClassOf,OBI_0100051,).
+predicate(OBI_0002502,SubClassOf,OBI_2000009).
+predicate(OBI_0002503,is,Class).
+predicate(OBI_0002503,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0001988)) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_0002503,SubClassOf,OBI_0001479,).
+predicate(OBI_0002503,SubClassOf,OBI_0100051).
+predicate(OBI_0002505,is,Class).
+predicate(OBI_0002505,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0001913)) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_0002505,SubClassOf,OBI_0100051,).
+predicate(OBI_0002505,SubClassOf,OBI_2000009).
+predicate(OBI_0002508,is,Class).
+predicate(OBI_0002508,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0007311)) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_0002508,SubClassOf,OBI_0001479,).
+predicate(OBI_0002508,SubClassOf,OBI_0100051).
+predicate(OBI_0002512,is,Class).
+predicate(OBI_0002512,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0002371)) and (OBI_0100051 and (OBI_0000312 some OBI_0002662))).
+predicate(OBI_0002512,SubClassOf,OBI_0001479,).
+predicate(OBI_0002512,SubClassOf,OBI_0100051).
+predicate(OBI_0002515,is,Class).
+predicate(OBI_0002515,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0001087)) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_0002515,SubClassOf,OBI_0100051,).
+predicate(OBI_0002515,SubClassOf,OBI_2000009).
+predicate(OBI_0002526,is,Class).
+predicate(OBI_0002526,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some).
+predicate(OBI_0002526,EquivalentTo,(UBERON_0000479 and (BFO_0000050 some UBERON_0002097)))) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_0002526,SubClassOf,OBI_0001479,).
+predicate(OBI_0002526,SubClassOf,OBI_0100051).
+predicate(OBI_0002534,is,Class).
+predicate(OBI_0002534,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some).
+predicate(OBI_0002534,EquivalentTo,(UBERON_0000479 and (BFO_0000050 some UBERON_0002048)))) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_0002534,SubClassOf,OBI_0001479,).
+predicate(OBI_0002534,SubClassOf,OBI_0100051).
+predicate(OBI_0002599,is,Class).
+predicate(OBI_0002599,EquivalentTo,OBI_0000312 some OBI_0002600).
+predicate(OBI_0002599,SubClassOf,OBI_0100051).
+predicate(OBI_0002600,is,Class).
+predicate(OBI_0002606,is,Class).
+predicate(OBI_0002606,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0002600)) and (OBI_0100051 and (OBI_0000312 some).
+predicate(OBI_0002606,EquivalentTo,(OBI_0000659 and (OBI_0000293 some UBERON_0001728))))).
+predicate(OBI_0002606,SubClassOf,OBI_0002599,).
+predicate(OBI_0002606,SubClassOf,OBI_0100051).
+predicate(OBI_0002608,is,Class).
+predicate(OBI_0002608,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0002600)) and (OBI_0100051 and (OBI_0000312 some).
+predicate(OBI_0002608,EquivalentTo,(OBI_0000659 and (OBI_0000293 some UBERON_0001729))))).
+predicate(OBI_0002608,SubClassOf,OBI_0002599,).
+predicate(OBI_0002608,SubClassOf,OBI_0100051).
+predicate(OBI_0002662,is,Class).
+predicate(OBI_0002746,is,Class).
+predicate(OBI_0002746,SubClassOf,OBI_0002508,).
+predicate(OBI_0002746,SubClassOf,OBI_0100051,).
+predicate(OBI_0002746,SubClassOf,OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0007311),).
+predicate(OBI_0002746,SubClassOf,OBI_0100051 and (OBI_0000312 some OBI_0600005)).
+predicate(OBI_0002780,is,Class).
+predicate(OBI_0002780,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0002785)) and (OBI_0100051 and (OBI_0000312 some).
+predicate(OBI_0002780,EquivalentTo,(OBI_0000659 and (OBI_0000293 some UBERON_0001826))))).
+predicate(OBI_0002780,SubClassOf,OBI_0100051).
+predicate(OBI_0002785,is,Class).
+predicate(OBI_0002972,is,Class).
+predicate(OBI_0002972,SubClassOf,OBI_0001479,).
+predicate(OBI_0002972,SubClassOf,OBI_0100051,).
+predicate(OBI_0002972,SubClassOf,OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0006538),).
+predicate(OBI_0002972,SubClassOf,OBI_0100051 and (OBI_0000312 some OBI_0600005)).
+predicate(OBI_0003329,is,Class).
+predicate(OBI_0003329,EquivalentTo,BFO_0000040 and (RO_0000053 some OBI_0003330)).
+predicate(OBI_0003329,SubClassOf,BFO_0000040).
+predicate(OBI_0003330,is,Class).
+predicate(OBI_0003380,is,Class).
+predicate(OBI_0003380,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_8470000)) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_0003380,SubClassOf,OBI_0100051,).
+predicate(OBI_0003380,SubClassOf,OBI_2000009).
+predicate(OBI_0100026,is,Class).
+predicate(OBI_0100026,EquivalentTo,NCBITaxon_10239 or NCBITaxon_2 or NCBITaxon_2157 or NCBITaxon_2759).
+predicate(OBI_0100026,SubClassOf,BFO_0000040).
+predicate(OBI_0100051,is,Class).
+predicate(OBI_0100051,SubClassOf,BFO_0000040).
+predicate(OBI_0100060,is,Class).
+predicate(OBI_0100060,SubClassOf,OBI_0000047,).
+predicate(OBI_0100060,SubClassOf,OBI_0000312 some OBI_0600024,).
+predicate(OBI_0100060,SubClassOf,OBI_0000643 some CL_0000010,).
+predicate(OBI_0100060,SubClassOf,OBI_0000643 only CL_0000010).
+predicate(OBI_0302859,is,Class).
+predicate(OBI_0302859,EquivalentTo,OBI_0100026 and (OBI_0000312 some OBI_0600043)).
+predicate(OBI_0302859,SubClassOf,OBI_0001151,).
+predicate(OBI_0302859,SubClassOf,OBI_0100026).
+predicate(OBI_0302884,is,Class).
+predicate(OBI_0400107,is,Class).
+predicate(OBI_0400107,SubClassOf,OBI_0000968,).
+predicate(OBI_0400107,SubClassOf,RO_0000085 some OBI_0000392).
+predicate(OBI_0600005,is,Class).
+predicate(OBI_0600024,is,Class).
+predicate(OBI_0600043,is,Class).
+predicate(OBI_0666667,is,Class).
+predicate(OBI_2000009,is,Class).
+predicate(OBI_2000009,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0006314)) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_2000009,SubClassOf,OBI_0001479,).
+predicate(OBI_2000009,SubClassOf,OBI_0100051).
+predicate(OBI_2000012,is,Class).
+predicate(OBI_2000012,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0012168)) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_2000012,SubClassOf,OBI_0100051,).
+predicate(OBI_2000012,SubClassOf,OBI_2000013).
+predicate(OBI_2000013,is,Class).
+predicate(OBI_2000013,EquivalentTo,(OBI_0100051 and (OBI_0000312 some OBI_0000659) and (RO_0001000 some UBERON_0013755)) and (OBI_0100051 and (OBI_0000312 some OBI_0600005))).
+predicate(OBI_2000013,SubClassOf,OBI_0100051,).
+predicate(OBI_2000013,SubClassOf,OBI_2000009).
+predicate(PATO_0000001,is,Class).
+predicate(PATO_0000161,is,Class).
+predicate(PATO_0000161,SubClassOf,PATO_0000001).
+predicate(PATO_0000169,is,Class).
+predicate(PATO_0000169,SubClassOf,PATO_0001995).
+predicate(PATO_0001241,is,Class).
+predicate(PATO_0001421,is,Class).
+predicate(PATO_0001422,is,Class).
+predicate(PATO_0001995,is,Class).
+predicate(PATO_0001995,SubClassOf,PATO_0001241).
+predicate(PATO_0002201,is,Class).
+predicate(PATO_0002201,SubClassOf,PATO_0001995).
+predicate(PR_000050567,is,Class).
+predicate(PR_000050567,SubClassOf,BFO_0000040).
+predicate(STATO_0000040,is,Class).
+predicate(STATO_0000040,SubClassOf,IAO_0000184).
+predicate(UBERON_0000061,is,Class).
+predicate(UBERON_0000061,SubClassOf,UBERON_0000465).
+predicate(UBERON_0000062,is,Class).
+predicate(UBERON_0000062,SubClassOf,UBERON_0010000).
+predicate(UBERON_0000064,is,Class).
+predicate(UBERON_0000064,SubClassOf,UBERON_0010000).
+predicate(UBERON_0000072,is,Class).
+predicate(UBERON_0000072,SubClassOf,UBERON_0004119).
+predicate(UBERON_0000174,is,Class).
+predicate(UBERON_0000174,SubClassOf,UBERON_0000463).
+predicate(UBERON_0000178,is,Class).
+predicate(UBERON_0000178,SubClassOf,PR_000050567,).
+predicate(UBERON_0000178,SubClassOf,UBERON_0006314).
+predicate(UBERON_0000344,is,Class).
+predicate(UBERON_0000344,SubClassOf,PR_000050567,).
+predicate(UBERON_0000344,SubClassOf,UBERON_0000064).
+predicate(UBERON_0000463,is,Class).
+predicate(UBERON_0000463,SubClassOf,UBERON_0000465).
+predicate(UBERON_0000465,is,Class).
+predicate(UBERON_0000465,SubClassOf,BFO_0000040).
+predicate(UBERON_0000477,is,Class).
+predicate(UBERON_0000477,SubClassOf,UBERON_0000465).
+predicate(UBERON_0000479,is,Class).
+predicate(UBERON_0000479,SubClassOf,UBERON_0010000).
+predicate(UBERON_0001087,is,Class).
+predicate(UBERON_0001088,is,Class).
+predicate(UBERON_0001088,SubClassOf,UBERON_0000174).
+predicate(UBERON_0001359,is,Class).
+predicate(UBERON_0001460,is,Class).
+predicate(UBERON_0001460,SubClassOf,UBERON_0010000).
+predicate(UBERON_0001728,is,Class).
+predicate(UBERON_0001729,is,Class).
+predicate(UBERON_0001729,SubClassOf,UBERON_0004119).
+predicate(UBERON_0001826,is,Class).
+predicate(UBERON_0001826,SubClassOf,UBERON_0000344,).
+predicate(UBERON_0001826,SubClassOf,UBERON_0004119,).
+predicate(UBERON_0001826,SubClassOf,UBERON_0004121).
+predicate(UBERON_0001913,is,Class).
+predicate(UBERON_0001913,SubClassOf,PR_000050567,).
+predicate(UBERON_0001913,SubClassOf,UBERON_0006314).
+predicate(UBERON_0001988,is,Class).
+predicate(UBERON_0001988,SubClassOf,UBERON_0000174).
+predicate(UBERON_0002048,is,Class).
+predicate(UBERON_0002048,SubClassOf,UBERON_0004119).
+predicate(UBERON_0002097,is,Class).
+predicate(UBERON_0002097,SubClassOf,PR_000050567,).
+predicate(UBERON_0002097,SubClassOf,UBERON_0000062,).
+predicate(UBERON_0002097,SubClassOf,UBERON_0004121).
+predicate(UBERON_0002371,is,Class).
+predicate(UBERON_0004119,is,Class).
+predicate(UBERON_0004119,SubClassOf,UBERON_0000061).
+predicate(UBERON_0004121,is,Class).
+predicate(UBERON_0004121,SubClassOf,UBERON_0000061).
+predicate(UBERON_0006314,is,Class).
+predicate(UBERON_0006314,SubClassOf,UBERON_0000463).
+predicate(UBERON_0006538,is,Class).
+predicate(UBERON_0006538,SubClassOf,UBERON_0000463).
+predicate(UBERON_0007311,is,Class).
+predicate(UBERON_0007311,SubClassOf,UBERON_0006538).
+predicate(UBERON_0007779,is,Class).
+predicate(UBERON_0007779,SubClassOf,UBERON_0006314).
+predicate(UBERON_0010000,is,Class).
+predicate(UBERON_0010000,SubClassOf,UBERON_0000061).
+predicate(UBERON_0012168,is,Class).
+predicate(UBERON_0012168,SubClassOf,UBERON_0013755).
+predicate(UBERON_0013755,is,Class).
+predicate(UBERON_0013755,SubClassOf,UBERON_0000178).
+predicate(UBERON_8470000,is,Class).
+predicate(UBERON_8470000,SubClassOf,UBERON_0000178).
+predicate(www.w3.org/2002/07/#,is,Class).
