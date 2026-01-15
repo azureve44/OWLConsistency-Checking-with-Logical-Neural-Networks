@@ -1,0 +1,370 @@
+www.w3.org/2000/01/-schema# is Datatype.
+boolean is Datatype.
+int is Datatype.
+string is Datatype.
+www.obofoundry.org/ro/ro.# is ObjectProperty.
+actionType is DataProperty.
+actionType Domain DrugDrugInteraction.
+actionType Range string.
+biologicalInterest is DataProperty.
+biologicalInterest Domain ChemicalProteinInteraction.
+biologicalInterest Range boolean.
+drugTarget is DataProperty.
+drugTarget Domain ChemicalProteinInteraction.
+drugTarget Range boolean.
+experimentType is DataProperty.
+experimentType Domain ProteinProteinInteraction.
+pharmacalClassification is DataProperty.
+pharmacalClassification Domain DrugDrugInteraction.
+pharmacalClassification Range string.
+www.biopax.org/release/biopax-level3.# is DataProperty.
+PublicationXref is www.biopax.org/release/biopax-level3.#.
+PublicationXref Range string.
+www.biopax.org/release/biopax-level3.# is DataProperty.
+www.biopax.org/release/biopax-level3.# is DataProperty.
+www.biopax.org/release/biopax-level3.# is DataProperty.
+PublicationXref is www.biopax.org/release/biopax-level3.#.
+PublicationXref Range string.
+www.biopax.org/release/biopax-level3.# is DataProperty.
+www.biopax.org/release/biopax-level3.# Characteristics Functional.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+ChemicalStructure Range string.
+www.biopax.org/release/biopax-level3.# is DataProperty.
+www.biopax.org/release/biopax-level3.# Characteristics Functional.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+ChemicalStructure Range {"CML" , "InChI" , "SMILES"},.
+ChemicalStructure Range {"InChi" , "openeyeCanonicalSMILES" , "openeyeISOSMILES" , "openeye can smiles" , "openeye iso smiles"}.
+www.biopax.org/release/biopax-level3.# is DataProperty.
+www.biopax.org/release/biopax-level3.# Characteristics Functional.
+PublicationXref is www.biopax.org/release/biopax-level3.#.
+PublicationXref Range string.
+www.biopax.org/release/biopax-level3.# is DataProperty.
+PublicationXref is www.biopax.org/release/biopax-level3.#.
+PublicationXref Range string.
+www.biopax.org/release/biopax-level3.# is DataProperty.
+www.biopax.org/release/biopax-level3.# Characteristics Functional.
+PublicationXref is www.biopax.org/release/biopax-level3.#.
+PublicationXref Range int.
+ADP-ribosylation is Class.
+ADP-ribosylation SubClassOf Ribosylation.
+Abundance is Class.
+Abundance SubClassOf ProteinRegulatesChemical.
+Abundance DisjointWith Transport.
+Abundance DisjointWith SmallMoleculeMetabolicProcess.
+Acetylation is Class.
+Acetylation SubClassOf MacromoleculeMetabolicProcess.
+Activation is Class.
+Activation SubClassOf Binding.
+Activation DisjointWith Inhibition.
+Activity is Class.
+Activity SubClassOf ChemicalRegulatesProtein.
+Activity DisjointWith Stability.
+Activity DisjointWith Splicing.
+Activity DisjointWith Mutagenesis.
+Activity DisjointWith MacromoleculeMetabolicProcess.
+Activity DisjointWith Localization.
+Activity DisjointWith Folding.
+Activity DisjointWith Expression.
+Acylation is Class.
+Acylation SubClassOf MacromoleculeMetabolicProcess.
+Alkylation is Class.
+Alkylation SubClassOf MacromoleculeMetabolicProcess.
+Amination is Class.
+Amination SubClassOf SmallMoleculeMetabolicProcess.
+Binding is Class.
+Binding SubClassOf DirectActivityRegulation.
+BioAssay is Class.
+Interaction is www.biopax.org/release/biopax-level3.#.
+Carbamoylation is Class.
+Carbamoylation SubClassOf MacromoleculeMetabolicProcess.
+Carboxylation is Class.
+Carboxylation SubClassOf MacromoleculeMetabolicProcess.
+ChemicalProteinInteraction is Class.
+Interaction, is www.biopax.org/release/biopax-level3.#.
+has participant some www.biopax.org/release/biopax-level3.# is www.obofoundry.org/ro/ro.#.
+has participant some www.biopax.org/release/biopax-level3.# is www.obofoundry.org/ro/ro.#.
+has participant some www.biopax.org/release/biopax-level3.# DisjointWith ProteinProteinInteraction.
+has participant some www.biopax.org/release/biopax-level3.# DisjointWith DrugTreament.
+has participant some www.biopax.org/release/biopax-level3.# DisjointWith DrugInducedSideEffect.
+has participant some www.biopax.org/release/biopax-level3.# DisjointWith DrugDrugInteraction.
+ChemicalRegulatesProtein is Class.
+ChemicalRegulatesProtein SubClassOf ChemicalProteinInteraction,.
+has participant only www.biopax.org/release/biopax-level3.# is www.obofoundry.org/ro/ro.#.
+ChemicalSynthesis is Class.
+ChemicalSynthesis SubClassOf SmallMoleculeMetabolicProcess.
+Cleavage is Class.
+Cleavage SubClassOf Degradation.
+Degradation is Class.
+Degradation SubClassOf MacromoleculeMetabolicProcess.
+DirectActivityRegulation is Class.
+DirectActivityRegulation SubClassOf Activity.
+DirectActivityRegulation DisjointWith IndirectActivityRegulation.
+Disease is Class.
+Disease SubClassOf Entity.
+Interaction is www.biopax.org/release/biopax-level3.#.
+DrugDrugInteraction is Class.
+Interaction, is www.biopax.org/release/biopax-level3.#.
+has participant some www.biopax.org/release/biopax-level3.# is www.obofoundry.org/ro/ro.#.
+has participant some www.biopax.org/release/biopax-level3.# DisjointWith ProteinProteinInteraction.
+has participant some www.biopax.org/release/biopax-level3.# DisjointWith DrugTreament.
+has participant some www.biopax.org/release/biopax-level3.# DisjointWith DrugInducedSideEffect.
+has participant some www.biopax.org/release/biopax-level3.# DisjointWith ChemicalProteinInteraction.
+DrugInducedSideEffect is Class.
+Interaction is www.biopax.org/release/biopax-level3.#.
+Interaction DisjointWith ProteinProteinInteraction.
+Interaction DisjointWith DrugDrugInteraction.
+Interaction DisjointWith ChemicalProteinInteraction.
+DrugTreament is Class.
+Interaction is www.biopax.org/release/biopax-level3.#.
+Interaction DisjointWith ProteinProteinInteraction.
+Interaction DisjointWith DrugDrugInteraction.
+Interaction DisjointWith ChemicalProteinInteraction.
+Entity is Class.
+Thing is www.w3.org/2002/07/#.
+Ethylation is Class.
+Ethylation SubClassOf MacromoleculeMetabolicProcess.
+Export is Class.
+Export SubClassOf Secretion.
+Expression is Class.
+Expression SubClassOf ChemicalRegulatesProtein.
+Expression DisjointWith Stability.
+Expression DisjointWith Splicing.
+Expression DisjointWith Mutagenesis.
+Expression DisjointWith MacromoleculeMetabolicProcess.
+Expression DisjointWith Localization.
+Expression DisjointWith Folding.
+Expression DisjointWith Activity.
+Farnesylation is Class.
+Farnesylation SubClassOf Lipidation.
+Folding is Class.
+Folding SubClassOf ChemicalRegulatesProtein.
+Folding DisjointWith Stability.
+Folding DisjointWith Splicing.
+Folding DisjointWith Mutagenesis.
+Folding DisjointWith MacromoleculeMetabolicProcess.
+Folding DisjointWith Localization.
+Folding DisjointWith Expression.
+Folding DisjointWith Activity.
+Geranoylation is Class.
+Geranoylation SubClassOf Lipidation.
+Glucuronidation is Class.
+Glucuronidation SubClassOf Glycosylation.
+Glutathionylation is Class.
+Glutathionylation SubClassOf MacromoleculeMetabolicProcess.
+Glycation is Class.
+Glycation SubClassOf MacromoleculeMetabolicProcess.
+Glycosylation is Class.
+Glycosylation SubClassOf MacromoleculeMetabolicProcess.
+Hydroxylation is Class.
+Hydroxylation SubClassOf MacromoleculeMetabolicProcess.
+Import is Class.
+Import SubClassOf Uptake.
+IndirectActivityRegulation is Class.
+IndirectActivityRegulation SubClassOf Activity.
+IndirectActivityRegulation DisjointWith DirectActivityRegulation.
+Inhibition is Class.
+Inhibition SubClassOf Binding.
+Inhibition DisjointWith Activation.
+Lipidation is Class.
+Lipidation SubClassOf MacromoleculeMetabolicProcess.
+Localization is Class.
+Localization SubClassOf ChemicalRegulatesProtein.
+Localization DisjointWith Stability.
+Localization DisjointWith Splicing.
+Localization DisjointWith Mutagenesis.
+Localization DisjointWith MacromoleculeMetabolicProcess.
+Localization DisjointWith Folding.
+Localization DisjointWith Expression.
+Localization DisjointWith Activity.
+MacromoleculeMetabolicProcess is Class.
+MacromoleculeMetabolicProcess SubClassOf ChemicalRegulatesProtein.
+MacromoleculeMetabolicProcess DisjointWith Stability.
+MacromoleculeMetabolicProcess DisjointWith Splicing.
+MacromoleculeMetabolicProcess DisjointWith Mutagenesis.
+MacromoleculeMetabolicProcess DisjointWith Localization.
+MacromoleculeMetabolicProcess DisjointWith Folding.
+MacromoleculeMetabolicProcess DisjointWith Expression.
+MacromoleculeMetabolicProcess DisjointWith Activity.
+Methylation is Class.
+Methylation SubClassOf MacromoleculeMetabolicProcess.
+Mutagenesis is Class.
+Mutagenesis SubClassOf ChemicalRegulatesProtein.
+Mutagenesis DisjointWith Stability.
+Mutagenesis DisjointWith Splicing.
+Mutagenesis DisjointWith MacromoleculeMetabolicProcess.
+Mutagenesis DisjointWith Localization.
+Mutagenesis DisjointWith Folding.
+Mutagenesis DisjointWith Expression.
+Mutagenesis DisjointWith Activity.
+Myristoylation is Class.
+Myristoylation SubClassOf Lipidation.
+N-linkedGlycosylation is Class.
+N-linkedGlycosylation SubClassOf Glycosylation.
+NegativeRegulationOfExpression is Class.
+NegativeRegulationOfExpression SubClassOf Expression.
+NegativeRegulationOfExpression DisjointWith PositiveRegulationOfExpression.
+Nitrosation is Class.
+Nitrosation SubClassOf MacromoleculeMetabolicProcess.
+Nucleotidylation is Class.
+Nucleotidylation SubClassOf MacromoleculeMetabolicProcess.
+O-linkedGlycosylation is Class.
+O-linkedGlycosylation SubClassOf Glycosylation.
+Outcome is Class.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+Oxidation is Class.
+Oxidation SubClassOf MacromoleculeMetabolicProcess.
+Palmitoylation is Class.
+Palmitoylation SubClassOf Lipidation.
+Phosphorylation is Class.
+Phosphorylation SubClassOf MacromoleculeMetabolicProcess.
+PhysicalProperty is Class.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+PositiveRegulationOfExpression is Class.
+PositiveRegulationOfExpression SubClassOf Expression.
+PositiveRegulationOfExpression DisjointWith NegativeRegulationOfExpression.
+Prenylation is Class.
+Prenylation SubClassOf Lipidation.
+ProteinProteinInteraction is Class.
+Interaction, is www.biopax.org/release/biopax-level3.#.
+has participant some www.biopax.org/release/biopax-level3.# is www.obofoundry.org/ro/ro.#.
+has participant some is www.obofoundry.org/ro/ro.#.
+Protein and (www.biopax.org/release/biopax-level3.# is (www.biopax.org/release/biopax-level3.#.
+has participant only (www.biopax.org/release/biopax-level3.# is www.obofoundry.org/ro/ro.#.
+has participant only (www.biopax.org/release/biopax-level3.# DisjointWith DrugTreament.
+has participant only (www.biopax.org/release/biopax-level3.# DisjointWith DrugInducedSideEffect.
+has participant only (www.biopax.org/release/biopax-level3.# DisjointWith DrugDrugInteraction.
+has participant only (www.biopax.org/release/biopax-level3.# DisjointWith ChemicalProteinInteraction.
+ProteinRegulatesChemical is Class.
+ProteinRegulatesChemical SubClassOf ChemicalProteinInteraction,.
+ProteinRegulatesChemical SubClassOf Uptake.
+ReceptorAgonistActivity is Class.
+ReceptorAgonistActivity SubClassOf Activation.
+ReceptorAntagonistActivity is Class.
+ReceptorAntagonistActivity SubClassOf Inhibition.
+Reduction is Class.
+Reduction SubClassOf MacromoleculeMetabolicProcess.
+Ribosylation is Class.
+Ribosylation SubClassOf MacromoleculeMetabolicProcess.
+Secretion is Class.
+Secretion SubClassOf Transport.
+Secretion DisjointWith Uptake.
+SideEffect is Class.
+SideEffect SubClassOf Entity.
+Interaction is www.biopax.org/release/biopax-level3.#.
+SmallMoleculeMetabolicProcess is Class.
+SmallMoleculeMetabolicProcess SubClassOf ProteinRegulatesChemical.
+SmallMoleculeMetabolicProcess DisjointWith Transport.
+SmallMoleculeMetabolicProcess DisjointWith Abundance.
+Splicing is Class.
+Splicing SubClassOf ChemicalRegulatesProtein.
+Splicing DisjointWith Stability.
+Splicing DisjointWith Mutagenesis.
+Splicing DisjointWith MacromoleculeMetabolicProcess.
+Splicing DisjointWith Localization.
+Splicing DisjointWith Folding.
+Splicing DisjointWith Expression.
+Splicing DisjointWith Activity.
+Stability is Class.
+Stability SubClassOf ChemicalRegulatesProtein.
+Stability DisjointWith Splicing.
+Stability DisjointWith Mutagenesis.
+Stability DisjointWith MacromoleculeMetabolicProcess.
+Stability DisjointWith Localization.
+Stability DisjointWith Folding.
+Stability DisjointWith Expression.
+Stability DisjointWith Activity.
+Sulfation is Class.
+Sulfation SubClassOf MacromoleculeMetabolicProcess.
+Sumoylation is Class.
+Sumoylation SubClassOf MacromoleculeMetabolicProcess.
+Transport is Class.
+Transport SubClassOf ProteinRegulatesChemical.
+Transport DisjointWith SmallMoleculeMetabolicProcess.
+Transport DisjointWith Abundance.
+Ubiquitination is Class.
+Ubiquitination SubClassOf MacromoleculeMetabolicProcess.
+Uptake is Class.
+Uptake SubClassOf Transport.
+Uptake DisjointWith Secretion.
+www.biopax.org/release/biopax-level3.# is Class.
+CellularLocationVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+ControlledVocabulary is www.biopax.org/release/biopax-level3.#.
+CellVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+www.biopax.org/release/biopax-level3.# is equivalent to Outcome.
+UtilityClass, is www.biopax.org/release/biopax-level3.#.
+structureData exactly 1 www.w3.org/2000/01/-schema# is www.biopax.org/release/biopax-level3.#.
+structureFormat exactly 1 www.w3.org/2000/01/-schema# is www.biopax.org/release/biopax-level3.#.
+ControlledVocabulary, www.biopax.org/release/biopax-level3.# is Outcome, PhysicalProperty, www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+Dna is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+PhysicalEntity is www.biopax.org/release/biopax-level3.#.
+Complex, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+Dna is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+CellularLocationVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+CellularLocationVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+CellularLocationVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+www.biopax.org/release/biopax-level3.# SubClassOf Entity.
+Interaction is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+www.biopax.org/release/biopax-level3.# SubClassOf Entity.
+Gene, www.biopax.org/release/biopax-level3.# is BioAssay, Disease, SideEffect, www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+ControlledVocabulary is www.biopax.org/release/biopax-level3.#.
+CellVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+www.biopax.org/release/biopax-level3.# SubClassOf Entity.
+Interaction is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+CellularLocationVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+www.biopax.org/release/biopax-level3.# SubClassOf Entity.
+Interaction is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+Dna, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+Xref is www.biopax.org/release/biopax-level3.#.
+UnificationXref is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+ControlledVocabulary is www.biopax.org/release/biopax-level3.#.
+CellVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+Xref is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+Dna is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+Dna is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+ControlledVocabulary is www.biopax.org/release/biopax-level3.#.
+CellVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+CellularLocationVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+Dna is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+CellularLocationVocabulary, www.biopax.org/release/biopax-level3.# is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+Xref, is www.biopax.org/release/biopax-level3.#.
+db exactly 1 www.w3.org/2000/01/-schema# is www.biopax.org/release/biopax-level3.#.
+id exactly 1 www.w3.org/2000/01/-schema# is www.biopax.org/release/biopax-level3.#.
+PublicationXref is www.biopax.org/release/biopax-level3.#.
+www.biopax.org/release/biopax-level3.# is Class.
+www.biopax.org/release/biopax-level3.# is Class.
+ChemicalStructure is www.biopax.org/release/biopax-level3.#.
+www.w3.org/2002/07/# is Class.

@@ -1,0 +1,2334 @@
+www.w3.org/2000/01/-schema# is Datatype.
+anyURI is Datatype.
+boolean is Datatype.
+date is Datatype.
+dateTime is Datatype.
+duration is Datatype.
+float is Datatype.
+int is Datatype.
+string is Datatype.
+accessConstraints is ObjectProperty.
+accessConstraints Domain MD LegalConstraints.
+accessConstraints Range MD RestrictionCode.
+address is ObjectProperty.
+address Characteristics Functional.
+address Domain CI Contact.
+address Range CI Address.
+applicationSchemaInfo is ObjectProperty.
+applicationSchemaInfo Domain MD Metadata.
+applicationSchemaInfo Range MD ApplicationSchemaInformation.
+applicationSchemaName is ObjectProperty.
+applicationSchemaName Domain MD ApplicationSchemaInformation.
+applicationSchemaName Range CI Citation.
+attributeDescription is ObjectProperty.
+attributeDescription Characteristics Functional.
+attributeDescription Domain MD CoverageDescription.
+attributeDescription Range RecordType.
+attributeInstances is ObjectProperty.
+attributeInstances Characteristics Functional.
+attributeInstances Domain MD ScopeDescription.
+attributeInstances Range GF AttributeType.
+attributes is ObjectProperty.
+attributes Characteristics Functional.
+attributes Domain MD ScopeDescription.
+attributes Range GF AttributeType.
+authority is ObjectProperty.
+authority Characteristics Functional.
+authority Domain MD Identifier.
+authority Range CI Citation.
+axisDimensionProperties is ObjectProperty.
+axisDimensionProperties Domain MD GridSpatialRepresentation.
+axisDimensionProperties Range MD Dimension.
+axisUnits is ObjectProperty.
+axisUnits Characteristics Functional.
+axisUnits Domain MD EllipsoidParameters.
+axisUnits Range UomLength.
+cellGeometry is ObjectProperty.
+cellGeometry Characteristics Functional.
+cellGeometry Domain MD GridSpatialRepresentation.
+cellGeometry Range MD CellGeometryCode.
+centerPoint is ObjectProperty.
+centerPoint Characteristics Functional.
+centerPoint Domain MD Georectified.
+centerPoint Range GM Point.
+citation is ObjectProperty.
+citation Characteristics Functional.
+citation Domain MD Identification.
+citation Range CI Citation.
+citedResponsibleParty is ObjectProperty.
+citedResponsibleParty Domain CI Citation.
+citedResponsibleParty Range CI ResponsibleParty.
+classification is ObjectProperty.
+classification Characteristics Functional.
+classification Domain MD SecurityConstraints.
+classification Range MD ClassificationCode.
+conformanceSpecification is ObjectProperty.
+conformanceSpecification Characteristics Functional.
+conformanceSpecification Domain DQ ConformanceResult.
+conformanceSpecification Range CI Citation.
+contact is ObjectProperty.
+contact Characteristics Functional.
+contact Domain MD Metadata.
+contact Range CI ResponsibleParty.
+contactInfo is ObjectProperty.
+contactInfo Characteristics Functional.
+contactInfo Domain CI ResponsibleParty.
+contactInfo Range CI Contact.
+contentInfo is ObjectProperty.
+contentInfo Domain MD Metadata.
+contentInfo Range MD ContentInformation.
+contentType is ObjectProperty.
+contentType Characteristics Functional.
+contentType Domain MD CoverageDescription.
+contentType Range MD CoverageContentTypeCode.
+cornerPoints is ObjectProperty.
+cornerPoints Characteristics Functional.
+cornerPoints Domain MD Georectified.
+cornerPoints Range GM Point.
+dataExtent is ObjectProperty.
+dataExtent Domain MD DataIdentification.
+dataExtent Range EX Extent.
+dataQualityInfo is ObjectProperty.
+dataQualityInfo Domain MD Metadata.
+dataQualityInfo Range DQ DataQuality.
+dataType is ObjectProperty.
+dataType Characteristics Functional.
+dataType Domain MD ExtendedElementInformation.
+dataType Range MD DataTypeCode.
+datasetCharacterSet is ObjectProperty.
+datasetCharacterSet Domain MD DataIdentification.
+datasetCharacterSet Range MD CharacterSetCode.
+dateOfNextUpdate is ObjectProperty.
+dateOfNextUpdate Characteristics Functional.
+dateOfNextUpdate Domain MD MaintenanceInformation.
+dateType is ObjectProperty.
+dateType Characteristics Functional.
+dateType Domain CI Date.
+dateType Range CI DateTypeCode.
+datum is ObjectProperty.
+datum Characteristics Functional.
+datum Domain MD CRS.
+datum Range RS Identifier.
+descriptiveKeywords is ObjectProperty.
+descriptiveKeywords Domain MD Identification.
+descriptiveKeywords Range MD Keywords.
+dimension is ObjectProperty.
+dimension Domain MD CoverageDescription.
+dimension Range MD RangeDimension.
+dimensionName is ObjectProperty.
+dimensionName Characteristics Functional.
+dimensionName Domain MD Dimension.
+dimensionName Range MD DimensionNameTypeCode.
+distance is ObjectProperty.
+distance Characteristics Functional.
+distance Domain MD Resolution.
+distance Range Distance.
+distributionFormat is ObjectProperty.
+distributionFormat Domain MD Distribution.
+distributionFormat Range MD Format.
+distributionInfo is ObjectProperty.
+distributionInfo Characteristics Functional.
+distributionInfo Domain MD Metadata.
+distributionInfo Range MD Distribution.
+distributionOrderProcess is ObjectProperty.
+distributionOrderProcess Domain MD Distributor.
+distributionOrderProcess Range MD StandardOrderProcess.
+distributionTransferOptions is ObjectProperty.
+distributionTransferOptions Domain MD Distributor.
+distributionTransferOptions Range MD DigitalTransferOptions.
+distributor is ObjectProperty.
+distributor Domain MD Distribution.
+distributor Range MD Distributor.
+distributorContact is ObjectProperty.
+distributorContact Characteristics Functional.
+distributorContact Domain MD Distributor.
+distributorContact Range CI ResponsibleParty.
+distributorFormat is ObjectProperty.
+distributorFormat Domain MD Distributor.
+distributorFormat Range MD Format.
+eastBoundLongitude is ObjectProperty.
+eastBoundLongitude Characteristics Functional.
+eastBoundLongitude Domain EX GeographicBoundingBox.
+eastBoundLongitude Range Angle.
+ellipsoid is ObjectProperty.
+ellipsoid Characteristics Functional.
+ellipsoid Domain MD CRS.
+ellipsoid Range RS Identifier.
+ellipsoidParameters is ObjectProperty.
+ellipsoidParameters Characteristics Functional.
+ellipsoidParameters Domain MD CRS.
+ellipsoidParameters Range MD EllipsoidParameters.
+equivalentScale is ObjectProperty.
+equivalentScale Characteristics Functional.
+equivalentScale Domain MD Resolution.
+equivalentScale Range MD RepresentativeFraction.
+evaluationMethodType is ObjectProperty.
+evaluationMethodType Characteristics Functional.
+evaluationMethodType Domain DQ Element.
+evaluationMethodType Range DQ EvaluationMethodTypeCode.
+evaluationProcedure is ObjectProperty.
+evaluationProcedure Characteristics Functional.
+evaluationProcedure Domain DQ Element.
+evaluationProcedure Range CI Citation.
+exTemp is ObjectProperty.
+exTemp Characteristics Functional.
+exTemp Domain EX TemporalExtent.
+exTemp Range TM Primitive.
+extEleSrc is ObjectProperty.
+extEleSrc Domain MD ExtendedElementInformation.
+extEleSrc Range CI ResponsibleParty.
+extendedElementInformation is ObjectProperty.
+extendedElementInformation Domain MD MetadataExtentInformation.
+extendedElementInformation Range MD ExtendedElementInformation.
+extensionOnLineResource is ObjectProperty.
+extensionOnLineResource Characteristics Functional.
+extensionOnLineResource Domain MD MetadataExtentInformation.
+extensionOnLineResource Range CI OnlineResource.
+falseEastingNorthingUnits is ObjectProperty.
+falseEastingNorthingUnits Characteristics Functional.
+falseEastingNorthingUnits Domain MD ProjectionParameters.
+falseEastingNorthingUnits Range UomLength.
+featureCatalogueCitation is ObjectProperty.
+featureCatalogueCitation Domain MD FeatureCatalogueDescription.
+featureCatalogueCitation Range CI Citation.
+featureCatalogueSupplement is ObjectProperty.
+featureCatalogueSupplement Characteristics Functional.
+featureCatalogueSupplement Domain MD ApplicationSchemaInformation.
+featureCatalogueSupplement Range MD SpatialAttributeSupplement.
+featureInstances is ObjectProperty.
+featureInstances Characteristics Functional.
+featureInstances Domain MD ScopeDescription.
+featureInstances Range GF FeatureType.
+featureTypes is ObjectProperty.
+featureTypes Domain MD FeatureCatalogueDescription.
+featureTypes Range GenericName.
+features is ObjectProperty.
+features Characteristics Functional.
+features Domain MD ScopeDescription.
+features Range GF FeatureType.
+formatDistributor is ObjectProperty.
+formatDistributor Domain MD Format.
+formatDistributor Range MD Distributor.
+function is ObjectProperty.
+function Characteristics Functional.
+function Domain CI OnlineResource.
+function Range CI OnLineFunctionCode.
+geographicElement is ObjectProperty.
+geographicElement Domain EX Extent.
+geographicElement Range EX GeographicExtent.
+geographicIdentifier is ObjectProperty.
+geographicIdentifier Characteristics Functional.
+geographicIdentifier Domain EX GeographicDescription.
+geographicIdentifier Range MD Identifier.
+geometricObjectType is ObjectProperty.
+geometricObjectType Characteristics Functional.
+geometricObjectType Domain MD GeometricObjects.
+geometricObjectType Range MD GeometricObjectTypeCode.
+geometricObjects is ObjectProperty.
+geometricObjects Characteristics Symmetric.
+geometricObjects Domain MD VectorSpatialRepresentation.
+geometricObjects Range MD GeometricObjects.
+graphicOverview is ObjectProperty.
+graphicOverview Domain MD Identification.
+graphicOverview Range MD BrowseGraphics.
+hierarchyLevel is ObjectProperty.
+hierarchyLevel Domain MD Metadata.
+hierarchyLevel Range MD ScopeCode.
+identificationInfo is ObjectProperty.
+identificationInfo Domain MD Metadata.
+identificationInfo Range MD Identification.
+imageQualityCode is ObjectProperty.
+imageQualityCode Characteristics Functional.
+imageQualityCode Domain MD ImageDescription.
+imageQualityCode Range MD Identifier.
+imagingCondition is ObjectProperty.
+imagingCondition Characteristics Functional.
+imagingCondition Domain MD ImageDescription.
+imagingCondition Range MD ImagingConditionCode.
+level is ObjectProperty.
+level Domain DQ Scope.
+level Range MD ScopeCode.
+levelDescription is ObjectProperty.
+levelDescription Domain DQ Scope.
+levelDescription Range MD ScopeDescription.
+lineage is ObjectProperty.
+lineage Characteristics Functional.
+lineage Domain DQ DataQuality.
+lineage Range LI Lineage.
+maintenanceAndUpdateFrequency is ObjectProperty.
+maintenanceAndUpdateFrequency Characteristics Functional.
+maintenanceAndUpdateFrequency Domain MD MaintenanceInformation.
+maintenanceAndUpdateFrequency Range MD MaintenanceFrequenceCode.
+measureIdentification is ObjectProperty.
+measureIdentification Characteristics Functional.
+measureIdentification Domain DQ Element.
+measureIdentification Range MD Identifier.
+mediumFormat is ObjectProperty.
+mediumFormat Domain MD Medium.
+mediumFormat Range MD MediumFormatCode.
+mediumName is ObjectProperty.
+mediumName Characteristics Functional.
+mediumName Domain MD Medium.
+mediumName Range MD MediumNameCode.
+metadataCharacterSet is ObjectProperty.
+metadataCharacterSet Characteristics Functional.
+metadataCharacterSet Domain MD Metadata.
+metadataCharacterSet Range MD CharacterSetCode.
+metadataConstraints is ObjectProperty.
+metadataConstraints Domain MD Metadata.
+metadataConstraints Range MD Constraints.
+metadataExtentInfo is ObjectProperty.
+metadataExtentInfo Domain MD Metadata.
+metadataExtentInfo Range MD MetadataExtentInformation.
+metadataMaintenance is ObjectProperty.
+metadataMaintenance Characteristics Functional.
+metadataMaintenance Domain MD Metadata.
+metadataMaintenance Range MD MaintenanceInformation.
+northBoundLatitude is ObjectProperty.
+northBoundLatitude Characteristics Functional.
+northBoundLatitude Domain EX GeographicBoundingBox.
+northBoundLatitude Range Angle.
+obligation is ObjectProperty.
+obligation Characteristics Functional.
+obligation Domain MD ExtendedElementInformation.
+obligation Range MD ObligationCode.
+obliqueLineAzimuthParameter is ObjectProperty.
+obliqueLineAzimuthParameter Characteristics Functional.
+obliqueLineAzimuthParameter Domain MD ProjectionParameters.
+obliqueLineAzimuthParameter Range MD ObliqueLineAzimuth.
+obliqueLinePointParameter is ObjectProperty.
+obliqueLinePointParameter Domain MD ProjectionParameters.
+obliqueLinePointParameter Range MD ObliqueLinePoint.
+offLine is ObjectProperty.
+offLine Characteristics Functional.
+offLine Domain MD DigitalTransferOptions.
+offLine Range MD Medium.
+onLine is ObjectProperty.
+onLine Domain MD DigitalTransferOptions.
+onLine Range CI OnlineResource.
+onlineResource is ObjectProperty.
+onlineResource Characteristics Functional.
+onlineResource Domain CI Contact.
+onlineResource Range CI OnlineResource.
+parameterCitation is ObjectProperty.
+parameterCitation Domain MD Georeferenceable.
+parameterCitation Range CI Citation.
+parameters is ObjectProperty.
+parameters Characteristics Functional.
+parameters Domain MD Georeferenceable.
+parameters Range Record.
+phone is ObjectProperty.
+phone Characteristics Functional.
+phone Domain CI Contact.
+phone Range CI Telephone.
+pointInPixel is ObjectProperty.
+pointInPixel Characteristics Functional.
+pointInPixel Domain MD Georectified.
+pointInPixel Range MD PixelOrientationCode.
+pointOfContact is ObjectProperty.
+pointOfContact Domain MD Identification.
+pointOfContact Range CI ResponsibleParty.
+polygon is ObjectProperty.
+polygon Domain EX BoundingPolygon.
+polygon Range GM Object.
+portrayalCatalogueCitation is ObjectProperty.
+portrayalCatalogueCitation Domain MD PortrayalCatalogueReference.
+portrayalCatalogueCitation Range CI Citation.
+portrayalCatalogueInfo is ObjectProperty.
+portrayalCatalogueInfo Domain MD Metadata.
+portrayalCatalogueInfo Range MD PortrayalCatalogueReference.
+presentationForm is ObjectProperty.
+presentationForm Domain CI Citation.
+presentationForm Range CI PresentationFormCode.
+processStep is ObjectProperty.
+processStep Domain LI Lineage.
+processStep Range LI ProcessStep.
+processingLevelCode is ObjectProperty.
+processingLevelCode Characteristics Functional.
+processingLevelCode Domain MD ImageDescription.
+processingLevelCode Range MD Identifier.
+processor is ObjectProperty.
+processor Domain LI ProcessStep.
+processor Range CI ResponsibleParty.
+projection is ObjectProperty.
+projection Characteristics Functional.
+projection Domain MD CRS.
+projection Range RS Identifier.
+projectionParameter is ObjectProperty.
+projectionParameter Characteristics Functional.
+projectionParameter Domain MD CRS.
+projectionParameter Range MD ProjectionParameters.
+referenceDate is ObjectProperty.
+referenceDate Domain CI Citation.
+referenceDate Range CI Date.
+referenceSystemIdentifier is ObjectProperty.
+referenceSystemIdentifier Characteristics Functional.
+referenceSystemIdentifier Domain MD ReferenceSystem.
+referenceSystemIdentifier Range RS Identifier.
+referenceSystemInfo is ObjectProperty.
+referenceSystemInfo Domain MD Metadata.
+referenceSystemInfo Range MD ReferenceSystem.
+report is ObjectProperty.
+report Domain DQ DataQuality.
+report Range DQ Element.
+resolution is ObjectProperty.
+resolution Characteristics Functional.
+resolution Domain MD Dimension.
+resolution Range Measure.
+resourceConstraints is ObjectProperty.
+resourceConstraints Domain MD Identification.
+resourceConstraints Range MD Constraints.
+resourceFormat is ObjectProperty.
+resourceFormat Domain MD Identification.
+resourceFormat Range MD Format.
+resourceMaintenance is ObjectProperty.
+resourceMaintenance Domain MD Identification.
+resourceMaintenance Range MD MaintenanceInformation.
+resourceSpecificUsage is ObjectProperty.
+resourceSpecificUsage Domain MD Identification.
+resourceSpecificUsage Range MD Usage.
+result is ObjectProperty.
+result Domain DQ Element.
+result Range DQ Result.
+role is ObjectProperty.
+role Characteristics Functional.
+role Domain CI ResponsibleParty.
+role Range CI RoleCode.
+scaleDenominator is ObjectProperty.
+scaleDenominator Characteristics Functional.
+scaleDenominator Domain LI Source.
+scaleDenominator Range MD RepresentativeFraction.
+scope is ObjectProperty.
+scope Characteristics Functional.
+scope Domain DQ DataQuality.
+scope Range DQ Scope.
+scopeExtent is ObjectProperty.
+scopeExtent Domain DQ Scope.
+scopeExtent Range EX Extent.
+sequenceIdentifier is ObjectProperty.
+sequenceIdentifier Characteristics Functional.
+sequenceIdentifier Domain MD RangeDimension.
+sequenceIdentifier Range MemberName.
+series is ObjectProperty.
+series Characteristics Functional.
+series Domain CI Citation.
+series Range CI Series.
+softwareDevelopmentFile is ObjectProperty.
+softwareDevelopmentFile Characteristics Functional.
+softwareDevelopmentFile Domain MD ApplicationSchemaInformation.
+softwareDevelopmentFile Range Binary.
+source is ObjectProperty.
+sourceCitation is ObjectProperty.
+sourceCitation Characteristics Functional.
+sourceCitation Domain LI Source.
+sourceCitation Range CI Citation.
+sourceExtent is ObjectProperty.
+sourceExtent Domain LI Source.
+sourceExtent Range EX Extent.
+sourceReferenceSystem is ObjectProperty.
+sourceReferenceSystem Characteristics Functional.
+sourceReferenceSystem Domain LI Source.
+sourceReferenceSystem Range MD ReferenceSystem.
+southBoundLatitude is ObjectProperty.
+southBoundLatitude Characteristics Functional.
+southBoundLatitude Domain EX GeographicBoundingBox.
+southBoundLatitude Range Angle.
+spatialExtent is ObjectProperty.
+spatialExtent Domain EX SpatialTemporalExtent.
+spatialExtent Range EX GeographicExtent.
+spatialRepresentationInfo is ObjectProperty.
+spatialRepresentationInfo Domain MD Metadata.
+spatialRepresentationInfo Range MD SpatialRepresentation.
+spatialRepresentationType is ObjectProperty.
+spatialRepresentationType Domain MD DataIdentification.
+spatialRepresentationType Range MD SpatialRepresentationTypeCode.
+spatialResolution is ObjectProperty.
+spatialResolution Domain MD DataIdentification.
+spatialResolution Range MD Resolution.
+status is ObjectProperty.
+status Domain MD Identification.
+status Range MD ProgressCode.
+temporalElement is ObjectProperty.
+temporalElement Domain EX Extent.
+temporalElement Range EX TemporalExtent.
+temporalExtent is ObjectProperty.
+temporalExtent Characteristics Functional.
+temporalExtent Domain EX TemporalExtent.
+temporalExtent Range EX Extent.
+theFeatureTypeList is ObjectProperty.
+theFeatureTypeList Domain MD SpatialAttributeSupplement.
+theFeatureTypeList Range MD FeatureTypeList.
+thesaurusName is ObjectProperty.
+thesaurusName Characteristics Functional.
+thesaurusName Domain MD Keywords.
+thesaurusName Range CI Citation.
+topicCategory is ObjectProperty.
+topicCategory Domain MD DataIdentification.
+topicCategory Range MD TopicCategoryCode.
+topologyLevel is ObjectProperty.
+topologyLevel Characteristics Functional.
+topologyLevel Domain MD VectorSpatialRepresentation.
+topologyLevel Range MD TopologyLevelCode.
+transferOptions is ObjectProperty.
+transferOptions Domain MD Distribution.
+transferOptions Range MD DigitalTransferOptions.
+type is ObjectProperty.
+type Characteristics Functional.
+type Domain MD Keywords.
+type Range MD KeywordTypeCode.
+unitOfMeasure is ObjectProperty.
+unitOfMeasure Characteristics Functional.
+unitOfMeasure Domain EX VerticalExtent.
+unitOfMeasure Range UomLength.
+units is ObjectProperty.
+units Characteristics Functional.
+units Domain MD Band.
+units Range UomLength.
+updateScope is ObjectProperty.
+updateScope Domain MD MaintenanceInformation.
+updateScope Range MD ScopeCode.
+updateScopeDescription is ObjectProperty.
+updateScopeDescription Domain MD MaintenanceInformation.
+updateScopeDescription Range MD ScopeDescription.
+usageDateTime is ObjectProperty.
+usageDateTime Characteristics Functional.
+usageDateTime Domain MD Usage.
+useConstraints is ObjectProperty.
+useConstraints Domain MD LegalConstraints.
+useConstraints Range MD RestrictionCode.
+userContactInfo is ObjectProperty.
+userContactInfo Domain MD Usage.
+userContactInfo Range CI ResponsibleParty.
+value is ObjectProperty.
+value Domain DQ QuantitativeResult.
+value Range Record.
+valueType is ObjectProperty.
+valueType Characteristics Functional.
+valueType Domain DQ QuantitativeResult.
+valueType Range RecordType.
+valueUnit is ObjectProperty.
+valueUnit Characteristics Functional.
+valueUnit Domain DQ QuantitativeResult.
+valueUnit Range Measure.
+verticalDatum is ObjectProperty.
+verticalDatum Characteristics Functional.
+verticalDatum Domain EX VerticalExtent.
+verticalDatum Range SC VerticalDatum.
+verticalElement is ObjectProperty.
+verticalElement Domain EX Extent.
+verticalElement Range EX VerticalExtent.
+westBoundLongitude is ObjectProperty.
+westBoundLongitude Characteristics Functional.
+westBoundLongitude Domain EX GeographicBoundingBox.
+westBoundLongitude Range Angle.
+ISBN is DataProperty.
+ISBN Characteristics Functional.
+ISBN Domain CI Citation.
+ISBN Range string.
+ISSN is DataProperty.
+ISSN Characteristics Functional.
+ISSN Domain CI Citation.
+ISSN Range string.
+abstract is DataProperty.
+abstract Characteristics Functional.
+abstract Domain MD Identification.
+abstract Range string.
+administrativeArea is DataProperty.
+administrativeArea Characteristics Functional.
+administrativeArea Domain CI Address.
+administrativeArea Range string.
+alternateTitle is DataProperty.
+alternateTitle Domain CI Citation.
+alternateTitle Range string.
+amendmentNumber is DataProperty.
+amendmentNumber Characteristics Functional.
+amendmentNumber Domain MD Format.
+amendmentNumber Range string.
+applicationProfile is DataProperty.
+applicationProfile Characteristics Functional.
+applicationProfile Domain CI OnlineResource.
+applicationProfile Range string.
+azimuthAngle is DataProperty.
+azimuthAngle Characteristics Functional.
+azimuthAngle Domain MD ObliqueLineAzimuth.
+azimuthAngle Range float.
+azimuthMeasurePointLongitude is DataProperty.
+azimuthMeasurePointLongitude Characteristics Functional.
+azimuthMeasurePointLongitude Domain MD ObliqueLineAzimuth.
+azimuthMeasurePointLongitude Range float.
+bitsPerValue is DataProperty.
+bitsPerValue Characteristics Functional.
+bitsPerValue Domain MD Band.
+bitsPerValue Range float.
+cameraCalibrationInformationAvailability is DataProperty.
+cameraCalibrationInformationAvailability Characteristics Functional.
+cameraCalibrationInformationAvailability Domain MD ImageDescription.
+cameraCalibrationInformationAvailability Range boolean.
+catalogueLanguage is DataProperty.
+catalogueLanguage Domain MD FeatureCatalogueDescription.
+catalogueLanguage Range string.
+checkPointAvailability is DataProperty.
+checkPointAvailability Characteristics Functional.
+checkPointAvailability Domain MD Georectified.
+checkPointAvailability Range boolean.
+checkPointDescription is DataProperty.
+checkPointDescription Characteristics Functional.
+checkPointDescription Domain MD Georectified.
+checkPointDescription Range string.
+city is DataProperty.
+city Characteristics Functional.
+city Domain CI Address.
+city Range string.
+classificationSystem is DataProperty.
+classificationSystem Characteristics Functional.
+classificationSystem Domain MD SecurityConstraints.
+classificationSystem Range string.
+cloudCoverPercentage is DataProperty.
+cloudCoverPercentage Characteristics Functional.
+cloudCoverPercentage Domain MD ImageDescription.
+cloudCoverPercentage Range float.
+code is DataProperty.
+code Characteristics Functional.
+code Domain MD Identifier.
+code Range string.
+collectiveTitle is DataProperty.
+collectiveTitle Characteristics Functional.
+collectiveTitle Domain CI Citation.
+collectiveTitle Range string.
+complianceCode is DataProperty.
+complianceCode Characteristics Functional.
+complianceCode Domain MD FeatureCatalogueDescription.
+complianceCode Range boolean.
+compressionGenerationQuantity is DataProperty.
+compressionGenerationQuantity Characteristics Functional.
+compressionGenerationQuantity Domain MD ImageDescription.
+compressionGenerationQuantity Range int.
+condition is DataProperty.
+condition Characteristics Functional.
+condition Domain MD ExtendedElementInformation.
+condition Range string.
+constraintLanguage is DataProperty.
+constraintLanguage Characteristics Functional.
+constraintLanguage Domain MD ApplicationSchemaInformation.
+constraintLanguage Range string.
+contactInstructions is DataProperty.
+contactInstructions Characteristics Functional.
+contactInstructions Domain CI Contact.
+contactInstructions Range string.
+controlPointAvailability is DataProperty.
+controlPointAvailability Characteristics Functional.
+controlPointAvailability Domain MD Georeferenceable.
+controlPointAvailability Range boolean.
+country is DataProperty.
+country Characteristics Functional.
+country Domain CI Address.
+country Range string.
+credit is DataProperty.
+credit Domain MD Identification.
+credit Range string.
+dataLanguage is DataProperty.
+dataLanguage Domain MD DataIdentification.
+dataLanguage Range string.
+dataSetURI is DataProperty.
+dataSetURI Characteristics Functional.
+dataSetURI Domain MD Metadata.
+dataSetURI Range string.
+dataset is DataProperty.
+dataset Characteristics Functional.
+dataset Domain MD ScopeDescription.
+dataset Range string.
+dateStamp is DataProperty.
+dateStamp Domain MD Metadata.
+dateStamp Range date.
+definition is DataProperty.
+deliveryPoint is DataProperty.
+deliveryPoint Domain CI Address.
+deliveryPoint Range string.
+denominationOfFlatteningRatio is DataProperty.
+denominationOfFlatteningRatio Characteristics Functional.
+denominationOfFlatteningRatio Domain MD EllipsoidParameters.
+denominationOfFlatteningRatio Range float.
+denominator is DataProperty.
+denominator Characteristics Functional.
+denominator Domain MD RepresentativeFraction.
+denominator Range int.
+density is DataProperty.
+density Domain MD Medium.
+density Range float.
+densityUnits is DataProperty.
+densityUnits Characteristics Functional.
+densityUnits Domain MD Medium.
+densityUnits Range string.
+descriptor is DataProperty.
+descriptor Characteristics Functional.
+descriptor Domain MD RangeDimension.
+descriptor Range string.
+dimensionSize is DataProperty.
+dimensionSize Characteristics Functional.
+dimensionSize Domain MD Dimension.
+dimensionSize Range int.
+domainCode is DataProperty.
+domainCode Characteristics Functional.
+domainCode Domain MD ExtendedElementInformation.
+domainCode Range int.
+domainValue is DataProperty.
+domainValue Characteristics Functional.
+domainValue Domain MD ExtendedElementInformation.
+domainValue Range string.
+edition is DataProperty.
+edition Characteristics Functional.
+edition Domain CI Citation.
+edition Range string.
+editionDate is DataProperty.
+editionDate Domain CI Citation.
+editionDate Range date.
+electronicMailAddress is DataProperty.
+electronicMailAddress Domain CI Address.
+electronicMailAddress Range string.
+environmentDescription is DataProperty.
+environmentDescription Domain MD DataIdentification.
+environmentDescription Range string.
+errorStatistic is DataProperty.
+errorStatistic Characteristics Functional.
+errorStatistic Domain DQ QuantitativeResult.
+errorStatistic Range string.
+evaluationMethodDescription is DataProperty.
+evaluationMethodDescription Characteristics Functional.
+evaluationMethodDescription Domain DQ Element.
+evaluationMethodDescription Range string.
+explanation is DataProperty.
+explanation Characteristics Functional.
+explanation Domain DQ ConformanceResult.
+explanation Range string.
+extendedElementRationale is DataProperty.
+extendedElementRationale Domain MD ExtendedElementInformation.
+extendedElementRationale Range string.
+extensionElementName is DataProperty.
+extensionElementName Characteristics Functional.
+extensionElementName Domain MD ExtendedElementInformation.
+extensionElementName Range string.
+extentDescription is DataProperty.
+extentDescription Characteristics Functional.
+extentDescription Domain EX Extent.
+extentDescription Range string.
+extentTypeCode is DataProperty.
+extentTypeCode Characteristics Functional.
+extentTypeCode Domain EX GeographicExtent.
+extentTypeCode Range boolean.
+falseEasting is DataProperty.
+falseEasting Characteristics Functional.
+falseEasting Domain MD ProjectionParameters.
+falseEasting Range float.
+falseNorthing is DataProperty.
+falseNorthing Characteristics Functional.
+falseNorthing Domain MD ProjectionParameters.
+falseNorthing Range float.
+fascimile is DataProperty.
+fascimile Domain CI Telephone.
+fascimile Range string.
+fees is DataProperty.
+fees Characteristics Functional.
+fees Domain MD StandardOrderProcess.
+fees Range string.
+fileDecompressionTechnique is DataProperty.
+fileDecompressionTechnique Characteristics Functional.
+fileDecompressionTechnique Domain MD Format.
+fileDecompressionTechnique Range string.
+fileDescription is DataProperty.
+fileDescription Characteristics Functional.
+fileDescription Domain MD BrowseGraphics.
+fileDescription Range string.
+fileIdentifier is DataProperty.
+fileIdentifier Characteristics Functional.
+fileIdentifier Domain MD Metadata.
+fileIdentifier Range string.
+fileName is DataProperty.
+fileName Characteristics Functional.
+fileName Domain MD BrowseGraphics.
+fileName Range string.
+fileType is DataProperty.
+fileType Characteristics Functional.
+fileType Domain MD BrowseGraphics.
+fileType Range string.
+filmDistortionInformationAvailibility is DataProperty.
+filmDistortionInformationAvailibility Characteristics Functional.
+filmDistortionInformationAvailibility Domain MD ImageDescription.
+filmDistortionInformationAvailibility Range boolean.
+formatSpecification is DataProperty.
+formatSpecification Characteristics Functional.
+formatSpecification Domain MD Format.
+formatSpecification Range string.
+geometricObjectCount is DataProperty.
+geometricObjectCount Characteristics Functional.
+geometricObjectCount Domain MD GeometricObjects.
+geometricObjectCount Range int.
+graphicsFile is DataProperty.
+graphicsFile Characteristics Functional.
+graphicsFile Domain MD ApplicationSchemaInformation.
+graphicsFile Range string.
+handlingDescription is DataProperty.
+handlingDescription Characteristics Functional.
+handlingDescription Domain MD SecurityConstraints.
+handlingDescription Range string.
+heightOfProspectivePointAboveSurface is DataProperty.
+heightOfProspectivePointAboveSurface Characteristics Functional.
+heightOfProspectivePointAboveSurface Domain MD ProjectionParameters.
+heightOfProspectivePointAboveSurface Range float.
+hierarchyLevelName is DataProperty.
+hierarchyLevelName Domain MD Metadata.
+hierarchyLevelName Range string.
+hoursOfService is DataProperty.
+hoursOfService Characteristics Functional.
+hoursOfService Domain CI Contact.
+hoursOfService Range string.
+identifier is DataProperty.
+identifier Domain CI Citation.
+identifier Range string.
+identifierType is DataProperty.
+identifierType Domain CI Citation.
+identifierType Range string.
+illuminationAzimuthAngle is DataProperty.
+illuminationAzimuthAngle Characteristics Functional.
+illuminationAzimuthAngle Domain MD ImageDescription.
+illuminationAzimuthAngle Range float.
+illuminationElevationAngle is DataProperty.
+illuminationElevationAngle Characteristics Functional.
+illuminationElevationAngle Domain MD ImageDescription.
+illuminationElevationAngle Range float.
+includeWithDataset is DataProperty.
+includeWithDataset Characteristics Functional.
+includeWithDataset Domain MD FeatureCatalogueDescription.
+includeWithDataset Range boolean.
+individualName is DataProperty.
+individualName Characteristics Functional.
+individualName Domain CI ResponsibleParty.
+individualName Range string.
+issuedIdentification is DataProperty.
+issuedIdentification Characteristics Functional.
+issuedIdentification Domain CI Series.
+issuedIdentification Range string.
+keyword is DataProperty.
+keyword Domain MD Keywords.
+keyword Range string.
+latitudeOfProjectionCenter is DataProperty.
+latitudeOfProjectionCenter Characteristics Functional.
+latitudeOfProjectionCenter Domain MD ProjectionParameters.
+latitudeOfProjectionCenter Range float.
+latitudeOfProjectionOrigin is DataProperty.
+latitudeOfProjectionOrigin Characteristics Functional.
+latitudeOfProjectionOrigin Domain MD ProjectionParameters.
+latitudeOfProjectionOrigin Range float.
+lenseDistortionInformationAvailibility is DataProperty.
+lenseDistortionInformationAvailibility Characteristics Functional.
+lenseDistortionInformationAvailibility Domain MD ImageDescription.
+lenseDistortionInformationAvailibility Range boolean.
+linkage is DataProperty.
+linkage Characteristics Functional.
+linkage Domain CI OnlineResource.
+linkage Range anyURI.
+longitudeOfCentralMeridian is DataProperty.
+longitudeOfCentralMeridian Characteristics Functional.
+longitudeOfCentralMeridian Domain MD ProjectionParameters.
+longitudeOfCentralMeridian Range float.
+longitudeOfProjectionCenter is DataProperty.
+longitudeOfProjectionCenter Characteristics Functional.
+longitudeOfProjectionCenter Domain MD ProjectionParameters.
+longitudeOfProjectionCenter Range float.
+maintenanceNote is DataProperty.
+maintenanceNote Domain MD MaintenanceInformation.
+maintenanceNote Range string.
+maxValue is DataProperty.
+maxValue Characteristics Functional.
+maxValue Domain MD Band.
+maxValue Range float.
+maximumOccurance is DataProperty.
+maximumOccurance Characteristics Functional.
+maximumOccurance Domain MD ExtendedElementInformation.
+maximumOccurance Range string.
+maximumValue is DataProperty.
+maximumValue Characteristics Functional.
+maximumValue Domain EX VerticalExtent.
+maximumValue Range float.
+measureDateTime is DataProperty.
+measureDateTime Domain DQ Element.
+measureDateTime Range dateTime.
+measureDescription is DataProperty.
+measureDescription Characteristics Functional.
+measureDescription Domain DQ Element.
+measureDescription Range string.
+mediumNote is DataProperty.
+mediumNote Characteristics Functional.
+mediumNote Domain MD Medium.
+mediumNote Range string.
+metadataLanguage is DataProperty.
+metadataLanguage Characteristics Functional.
+metadataLanguage Domain MD Metadata.
+metadataLanguage Range string.
+metadataStandardName is DataProperty.
+metadataStandardName Characteristics Functional.
+metadataStandardName Domain MD Metadata.
+metadataStandardName Range string.
+metadataStandardVersion is DataProperty.
+metadataStandardVersion Characteristics Functional.
+metadataStandardVersion Domain MD Metadata.
+metadataStandardVersion Range string.
+minValue is DataProperty.
+minValue Characteristics Functional.
+minValue Domain MD Band.
+minValue Range float.
+minimumValue is DataProperty.
+minimumValue Characteristics Functional.
+minimumValue Domain EX VerticalExtent.
+minimumValue Range float.
+nameOfMeasure is DataProperty.
+nameOfMeasure Domain DQ Element.
+nameOfMeasure Range string.
+name MD Format is DataProperty.
+name MD Format Characteristics Functional.
+name MD Format Domain MD Format.
+name MD Format Range string.
+numberOfDimensions is DataProperty.
+numberOfDimensions Characteristics Functional.
+numberOfDimensions Domain MD GridSpatialRepresentation.
+numberOfDimensions Range int.
+obliqueLineLatitude is DataProperty.
+obliqueLineLatitude Characteristics Functional.
+obliqueLineLatitude Domain MD ObliqueLinePoint.
+obliqueLineLatitude Range float.
+obliqueLineLongitude is DataProperty.
+obliqueLineLongitude Characteristics Functional.
+obliqueLineLongitude Domain MD ObliqueLinePoint.
+obliqueLineLongitude Range float.
+offset is DataProperty.
+offset Characteristics Functional.
+offset Domain MD Band.
+offset Range float.
+onlineResourceDescription is DataProperty.
+onlineResourceDescription Characteristics Functional.
+onlineResourceDescription Domain CI OnlineResource.
+onlineResourceDescription Range string.
+onlineResourceName is DataProperty.
+onlineResourceName Characteristics Functional.
+onlineResourceName Domain CI OnlineResource.
+onlineResourceName Range string.
+orderingInstructions is DataProperty.
+orderingInstructions Characteristics Functional.
+orderingInstructions Domain MD StandardOrderProcess.
+orderingInstructions Range string.
+organisationName is DataProperty.
+organisationName Characteristics Functional.
+organisationName Domain CI ResponsibleParty.
+organisationName Range string.
+orientationParameterAvailibility is DataProperty.
+orientationParameterAvailibility Characteristics Functional.
+orientationParameterAvailibility Domain MD Georeferenceable.
+orientationParameterAvailibility Range boolean.
+orientationParameterDescription is DataProperty.
+orientationParameterDescription Characteristics Functional.
+orientationParameterDescription Domain MD Georeferenceable.
+orientationParameterDescription Range string.
+other is DataProperty.
+other Characteristics Functional.
+other Domain MD ScopeDescription.
+other Range string.
+otherCitationDetails is DataProperty.
+otherCitationDetails Characteristics Functional.
+otherCitationDetails Domain CI Citation.
+otherCitationDetails Range string.
+otherConstraints is DataProperty.
+otherConstraints Domain MD LegalConstraints.
+otherConstraints Range string.
+page is DataProperty.
+page Characteristics Functional.
+page Domain CI Series.
+page Range string.
+parentEntity is DataProperty.
+parentEntity Domain MD ExtendedElementInformation.
+parentEntity Range string.
+parentIdentifier is DataProperty.
+parentIdentifier Characteristics Functional.
+parentIdentifier Domain MD Metadata.
+parentIdentifier Range string.
+pass is DataProperty.
+pass Characteristics Functional.
+pass Domain DQ ConformanceResult.
+pass Range boolean.
+peakResponse is DataProperty.
+peakResponse Characteristics Functional.
+peakResponse Domain MD Band.
+peakResponse Range float.
+plannedAvailableDateTime is DataProperty.
+plannedAvailableDateTime Characteristics Functional.
+plannedAvailableDateTime Domain MD StandardOrderProcess.
+plannedAvailableDateTime Range dateTime.
+positionName is DataProperty.
+positionName Characteristics Functional.
+positionName Domain CI ResponsibleParty.
+positionName Range string.
+postalCode is DataProperty.
+postalCode Characteristics Functional.
+postalCode Domain CI Address.
+postalCode Range string.
+protocol is DataProperty.
+protocol Characteristics Functional.
+protocol Domain CI OnlineResource.
+protocol Range string.
+purpose is DataProperty.
+purpose Characteristics Functional.
+purpose Domain MD Identification.
+purpose Range string.
+radiometricCalibrationDataAvailability is DataProperty.
+radiometricCalibrationDataAvailability Characteristics Functional.
+radiometricCalibrationDataAvailability Domain MD ImageDescription.
+radiometricCalibrationDataAvailability Range boolean.
+resourceReferenecDate is DataProperty.
+resourceReferenecDate Domain CI Date.
+resourceReferenecDate Range date.
+rule is DataProperty.
+rule Characteristics Functional.
+rule Domain MD ExtendedElementInformation.
+rule Range string.
+scaleFactor is DataProperty.
+scaleFactor Characteristics Functional.
+scaleFactor Domain MD Band.
+scaleFactor Range float.
+scaleFactorAtCenterLine is DataProperty.
+scaleFactorAtCenterLine Characteristics Functional.
+scaleFactorAtCenterLine Domain MD ProjectionParameters.
+scaleFactorAtCenterLine Range float.
+scaleFactorAtEquator is DataProperty.
+scaleFactorAtEquator Characteristics Functional.
+scaleFactorAtEquator Domain MD ProjectionParameters.
+scaleFactorAtEquator Range float.
+scaleFactorAtProjectionOrigin is DataProperty.
+scaleFactorAtProjectionOrigin Characteristics Functional.
+scaleFactorAtProjectionOrigin Domain MD ProjectionParameters.
+scaleFactorAtProjectionOrigin Range float.
+schemaAscii is DataProperty.
+schemaAscii Characteristics Functional.
+schemaAscii Domain MD ApplicationSchemaInformation.
+schemaAscii Range string.
+schemaLanguage is DataProperty.
+schemaLanguage Characteristics Functional.
+schemaLanguage Domain MD ApplicationSchemaInformation.
+schemaLanguage Range string.
+semiMajorAxis is DataProperty.
+semiMajorAxis Characteristics Functional.
+semiMajorAxis Domain MD EllipsoidParameters.
+semiMajorAxis Range float.
+seriesName is DataProperty.
+seriesName Characteristics Functional.
+seriesName Domain CI Series.
+seriesName Range string.
+shortName is DataProperty.
+shortName Characteristics Functional.
+shortName Domain MD ExtendedElementInformation.
+shortName Range string.
+softwareDevelopmentFileFormat is DataProperty.
+softwareDevelopmentFileFormat Characteristics Functional.
+softwareDevelopmentFileFormat Domain MD ApplicationSchemaInformation.
+softwareDevelopmentFileFormat Range string.
+sourceDescription is DataProperty.
+sourceDescription Characteristics Functional.
+sourceDescription Domain LI Source.
+sourceDescription Range string.
+sourceStep is DataProperty.
+sourceStep Domain LI Source.
+sourceStep Range string.
+spatialObject is DataProperty.
+spatialObject Characteristics Functional.
+spatialObject Domain MD FeatureTypeList.
+spatialObject Range string.
+spatialSchemaName is DataProperty.
+spatialSchemaName Characteristics Functional.
+spatialSchemaName Domain MD FeatureTypeList.
+spatialSchemaName Range string.
+specificUsage is DataProperty.
+specificUsage Characteristics Functional.
+specificUsage Domain MD Usage.
+specificUsage Range string.
+standardParallel is DataProperty.
+standardParallel Domain MD ProjectionParameters.
+standardParallel Range float.
+statement is DataProperty.
+statement Characteristics Functional.
+statement Domain LI Lineage.
+statement Range string.
+stepDateTime is DataProperty.
+stepDateTime Domain LI ProcessStep.
+stepDateTime Range dateTime.
+stepDescription is DataProperty.
+stepDescription Characteristics Functional.
+stepDescription Domain LI ProcessStep.
+stepDescription Range string.
+stepRationale is DataProperty.
+stepRationale Characteristics Functional.
+stepRationale Domain LI ProcessStep.
+stepRationale Range string.
+straightVerticalLongitudeFromPole is DataProperty.
+straightVerticalLongitudeFromPole Characteristics Functional.
+straightVerticalLongitudeFromPole Domain MD ProjectionParameters.
+straightVerticalLongitudeFromPole Range float.
+supplementalInformation is DataProperty.
+supplementalInformation Characteristics Functional.
+supplementalInformation Domain MD DataIdentification.
+supplementalInformation Range string.
+title is DataProperty.
+title Characteristics Functional.
+title Domain CI Citation.
+title Range string.
+toneGradation is DataProperty.
+toneGradation Characteristics Functional.
+toneGradation Domain MD Band.
+toneGradation Range int.
+transferSize is DataProperty.
+transferSize Characteristics Functional.
+transferSize Domain MD DigitalTransferOptions.
+transferSize Range float.
+transformationDimensionDescription is DataProperty.
+transformationDimensionDescription Characteristics Functional.
+transformationDimensionDescription Domain MD Georectified.
+transformationDimensionDescription Range string.
+transformationDimensionMapping is DataProperty.
+transformationDimensionMapping Domain MD Georectified.
+transformationDimensionMapping Range string.
+transformationParameterAvailabiliy is DataProperty.
+transformationParameterAvailabiliy Characteristics Functional.
+transformationParameterAvailabiliy Domain MD GridSpatialRepresentation.
+transformationParameterAvailabiliy Range boolean.
+triangulationIndicator is DataProperty.
+triangulationIndicator Characteristics Functional.
+triangulationIndicator Domain MD ImageDescription.
+triangulationIndicator Range boolean.
+turnaround is DataProperty.
+turnaround Characteristics Functional.
+turnaround Domain MD StandardOrderProcess.
+turnaround Range string.
+unitsOfDistribution is DataProperty.
+unitsOfDistribution Characteristics Functional.
+unitsOfDistribution Domain MD DigitalTransferOptions.
+unitsOfDistribution Range string.
+useLimitation is DataProperty.
+useLimitation Domain MD Constraints.
+useLimitation Range string.
+userDefinedMaintenanceFrequency is DataProperty.
+userDefinedMaintenanceFrequency Domain MD MaintenanceInformation.
+userDefinedMaintenanceFrequency Range duration.
+userDeterminedLimitations is DataProperty.
+userDeterminedLimitations Characteristics Functional.
+userDeterminedLimitations Domain MD Usage.
+userDeterminedLimitations Range string.
+userNote is DataProperty.
+userNote Characteristics Functional.
+userNote Domain MD SecurityConstraints.
+userNote Range string.
+version is DataProperty.
+version Characteristics Functional.
+version Domain MD Format.
+version Range string.
+voice is DataProperty.
+voice Domain CI Telephone.
+voice Range string.
+volumes is DataProperty.
+volumes Characteristics Functional.
+volumes Domain MD Medium.
+volumes Range int.
+zone is DataProperty.
+zone Characteristics Functional.
+zone Domain MD ProjectionParameters.
+zone Range int.
+Angle is Class.
+Thing is www.w3.org/2002/07/#.
+Distance is Class.
+Thing is www.w3.org/2002/07/#.
+GenericName is Class.
+Thing is www.w3.org/2002/07/#.
+Measure is Class.
+Thing is www.w3.org/2002/07/#.
+Record is Class.
+Thing is www.w3.org/2002/07/#.
+RecordType is Class.
+Thing is www.w3.org/2002/07/#.
+UomLength is Class.
+Thing is www.w3.org/2002/07/#.
+GM Object is Class.
+Thing is www.w3.org/2002/07/#.
+GM Point is Class.
+Thing is www.w3.org/2002/07/#.
+TM Primitive is Class.
+Thing is www.w3.org/2002/07/#.
+GF AttributeType is Class.
+Thing is www.w3.org/2002/07/#.
+GF FeatureType is Class.
+Thing is www.w3.org/2002/07/#.
+SC VerticalDatum is Class.
+Thing is www.w3.org/2002/07/#.
+RS Identifier is Class.
+Thing is www.w3.org/2002/07/#.
+Binary is Class.
+Thing is www.w3.org/2002/07/#.
+CI Address is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is administrativeArea min 0 www.w3.org/2000/01/-schema#.
+Literal, is city min 0 www.w3.org/2000/01/-schema#.
+Literal, is country min 0 www.w3.org/2000/01/-schema#.
+Literal, is deliveryPoint min 0 www.w3.org/2000/01/-schema#.
+Literal, is electronicMailAddress min 0 www.w3.org/2000/01/-schema#.
+Literal, is postalCode min 0 www.w3.org/2000/01/-schema#.
+Literal, is administrativeArea max 1 www.w3.org/2000/01/-schema#.
+Literal, is city max 1 www.w3.org/2000/01/-schema#.
+Literal, is country max 1 www.w3.org/2000/01/-schema#.
+Literal is postalCode max 1 www.w3.org/2000/01/-schema#.
+CI Citation is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is citedResponsibleParty min 0 www.w3.org/2002/07/#.
+Thing, is presentationForm min 0 www.w3.org/2002/07/#.
+Thing, is referenceDate min 1 www.w3.org/2002/07/#.
+Thing, is series min 0 www.w3.org/2002/07/#.
+Thing, is series max 1 www.w3.org/2002/07/#.
+Literal, is ISBN min 0 www.w3.org/2000/01/-schema#.
+Literal, is ISSN min 0 www.w3.org/2000/01/-schema#.
+Literal, is alternateTitle min 0 www.w3.org/2000/01/-schema#.
+Literal, is collectiveTitle min 0 www.w3.org/2000/01/-schema#.
+Literal, is edition min 0 www.w3.org/2000/01/-schema#.
+Literal, is editionDate min 0 www.w3.org/2000/01/-schema#.
+Literal, is identifier min 0 www.w3.org/2000/01/-schema#.
+Literal, is identifierType min 0 www.w3.org/2000/01/-schema#.
+Literal, is otherCitationDetails min 0 www.w3.org/2000/01/-schema#.
+Literal, is title exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is ISBN max 1 www.w3.org/2000/01/-schema#.
+Literal, is ISSN max 1 www.w3.org/2000/01/-schema#.
+Literal, is collectiveTitle max 1 www.w3.org/2000/01/-schema#.
+Literal, is edition max 1 www.w3.org/2000/01/-schema#.
+Literal, is editionDate max 1 www.w3.org/2000/01/-schema#.
+Literal is otherCitationDetails max 1 www.w3.org/2000/01/-schema#.
+CI Contact is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is address min 0 www.w3.org/2002/07/#.
+Thing, is onlineResource min 0 www.w3.org/2002/07/#.
+Thing, is phone min 0 www.w3.org/2002/07/#.
+Thing, is address max 1 www.w3.org/2002/07/#.
+Thing, is onlineResource max 1 www.w3.org/2002/07/#.
+Thing, is phone max 1 www.w3.org/2002/07/#.
+Literal, is contactInstructions min 0 www.w3.org/2000/01/-schema#.
+Literal, is hoursOfService min 0 www.w3.org/2000/01/-schema#.
+Literal, is contactInstructions max 1 www.w3.org/2000/01/-schema#.
+Literal is hoursOfService max 1 www.w3.org/2000/01/-schema#.
+CI Date is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is dateType exactly 1 www.w3.org/2002/07/#.
+Literal is resourceReferenecDate exactly 1 www.w3.org/2000/01/-schema#.
+CI DateTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+CI OnLineFunctionCode is Class.
+Thing is www.w3.org/2002/07/#.
+CI OnlineResource is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is function min 0 www.w3.org/2002/07/#.
+Thing, is function max 1 www.w3.org/2002/07/#.
+Literal, is applicationProfile min 0 www.w3.org/2000/01/-schema#.
+Literal, is protocol min 0 www.w3.org/2000/01/-schema#.
+Literal, is linkage exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is applicationProfile max 1 www.w3.org/2000/01/-schema#.
+Literal, is onlineResourceDescription max 1 www.w3.org/2000/01/-schema#.
+Literal, is onlineResourceName max 1 www.w3.org/2000/01/-schema#.
+Literal is protocol max 1 www.w3.org/2000/01/-schema#.
+CI PresentationFormCode is Class.
+Thing is www.w3.org/2002/07/#.
+CI ResponsibleParty is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is contactInfo min 0 www.w3.org/2002/07/#.
+Thing, is role exactly 1 www.w3.org/2002/07/#.
+Thing, is contactInfo max 1 www.w3.org/2002/07/#.
+Literal, is individualName min 0 www.w3.org/2000/01/-schema#.
+Literal, is organisationName min 0 www.w3.org/2000/01/-schema#.
+Literal, is positionName min 0 www.w3.org/2000/01/-schema#.
+Literal, is individualName max 1 www.w3.org/2000/01/-schema#.
+Literal, is organisationName max 1 www.w3.org/2000/01/-schema#.
+Literal is positionName max 1 www.w3.org/2000/01/-schema#.
+CI RoleCode is Class.
+Thing is www.w3.org/2002/07/#.
+CI Series is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is issuedIdentification min 0 www.w3.org/2000/01/-schema#.
+Literal, is page min 0 www.w3.org/2000/01/-schema#.
+Literal, is issuedIdentification max 1 www.w3.org/2000/01/-schema#.
+Literal, is page max 1 www.w3.org/2000/01/-schema#.
+Literal is seriesName max 1 www.w3.org/2000/01/-schema#.
+CI Telephone is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is fascimile min 0 www.w3.org/2000/01/-schema#.
+Literal is voice min 0 www.w3.org/2000/01/-schema#.
+DQ AbsoluteExtenalPositionalAccuracy is Class.
+DQ AbsoluteExtenalPositionalAccuracy SubClassOf DQ PositionAccuracy.
+DQ AccuracyOfATimeMeasurement is Class.
+DQ AccuracyOfATimeMeasurement SubClassOf DQ TemporalAccuracy.
+DQ Completeness is Class.
+DQ Completeness SubClassOf DQ Element.
+DQ CompletenessCommission is Class.
+DQ CompletenessCommission SubClassOf DQ Completeness.
+DQ CompletenessOmission is Class.
+DQ CompletenessOmission SubClassOf DQ Completeness.
+DQ ConceptualConsistency is Class.
+DQ ConceptualConsistency SubClassOf DQ LogicalConsistency.
+DQ ConformanceResult is Class.
+DQ ConformanceResult SubClassOf DQ Result,.
+Thing, is conformanceSpecification exactly 1 www.w3.org/2002/07/#.
+Literal, is explanation exactly 1 www.w3.org/2000/01/-schema#.
+Literal is pass exactly 1 www.w3.org/2000/01/-schema#.
+DQ DataQuality is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is lineage min 0 www.w3.org/2002/07/#.
+Thing, is report min 0 www.w3.org/2002/07/#.
+Thing, is scope exactly 1 www.w3.org/2002/07/#.
+Thing is lineage max 1 www.w3.org/2002/07/#.
+DQ DomainConsistency is Class.
+DQ DomainConsistency SubClassOf DQ LogicalConsistency.
+DQ Element is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is evaluationMethodType min 0 www.w3.org/2002/07/#.
+Thing, is evaluationProcedure min 0 www.w3.org/2002/07/#.
+Thing, is measureIdentification min 0 www.w3.org/2002/07/#.
+Thing, is result min 1 www.w3.org/2002/07/#.
+Thing, is evaluationMethodType max 1 www.w3.org/2002/07/#.
+Thing, is evaluationProcedure max 1 www.w3.org/2002/07/#.
+Thing, is measureIdentification max 1 www.w3.org/2002/07/#.
+Thing, is result max 2 www.w3.org/2002/07/#.
+Literal, is evaluationMethodDescription min 0 www.w3.org/2000/01/-schema#.
+Literal, is measureDescription min 0 www.w3.org/2000/01/-schema#.
+Literal, is nameOfMeasure min 0 www.w3.org/2000/01/-schema#.
+Literal, is evaluationMethodDescription max 1 www.w3.org/2000/01/-schema#.
+Literal, is measureDateTime max 1 www.w3.org/2000/01/-schema#.
+Literal is measureDescription max 1 www.w3.org/2000/01/-schema#.
+DQ EvaluationMethodTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+DQ FormatConsistency is Class.
+DQ FormatConsistency SubClassOf DQ LogicalConsistency.
+DQ GriddedDataPositionalAccuracy is Class.
+DQ GriddedDataPositionalAccuracy SubClassOf DQ PositionAccuracy.
+DQ LogicalConsistency is Class.
+DQ LogicalConsistency SubClassOf DQ Element.
+DQ NonQuantitativeAttributeAccuracy is Class.
+DQ NonQuantitativeAttributeAccuracy SubClassOf DQ ThematicAccuracy.
+DQ PositionAccuracy is Class.
+DQ PositionAccuracy SubClassOf DQ Element.
+DQ QuantitativeAttributeAccuracy is Class.
+DQ QuantitativeAttributeAccuracy SubClassOf DQ ThematicAccuracy.
+DQ QuantitativeResult is Class.
+DQ QuantitativeResult SubClassOf DQ Result,.
+Thing, is value min 1 www.w3.org/2002/07/#.
+Thing, is valueType min 0 www.w3.org/2002/07/#.
+Thing, is valueUnit min 0 www.w3.org/2002/07/#.
+Thing, is valueUnit max 1 www.w3.org/2002/07/#.
+Literal, is errorStatistic min 0 www.w3.org/2000/01/-schema#.
+Literal is errorStatistic max 1 www.w3.org/2000/01/-schema#.
+DQ RelativeInternalPositionalAccuracy is Class.
+DQ RelativeInternalPositionalAccuracy SubClassOf DQ PositionAccuracy.
+DQ Result is Class.
+Thing is www.w3.org/2002/07/#.
+DQ Scope is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is level min 1 www.w3.org/2002/07/#.
+Thing, is levelDescription min 0 www.w3.org/2002/07/#.
+Thing is scopeExtent max 1 www.w3.org/2002/07/#.
+DQ TemporalAccuracy is Class.
+DQ TemporalAccuracy SubClassOf DQ Element.
+DQ TemporalConsistency is Class.
+DQ TemporalConsistency SubClassOf DQ TemporalAccuracy.
+DQ TemporalValidity is Class.
+DQ TemporalValidity SubClassOf DQ TemporalAccuracy.
+DQ ThematicAccuracy is Class.
+DQ ThematicAccuracy SubClassOf DQ Element.
+DQ ThematicClassificationCorrectness is Class.
+DQ ThematicClassificationCorrectness SubClassOf DQ ThematicAccuracy.
+DQ TopologicalConsistency is Class.
+DQ TopologicalConsistency SubClassOf DQ LogicalConsistency.
+DS AssociationTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+DS InitiativeTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+EX BoundingPolygon is Class.
+EX BoundingPolygon SubClassOf EX GeographicExtent,.
+Thing is polygon min 1 www.w3.org/2002/07/#.
+EX Extent is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is geographicElement min 0 www.w3.org/2002/07/#.
+Thing, is temporalElement min 0 www.w3.org/2002/07/#.
+Thing, is verticalElement min 0 www.w3.org/2002/07/#.
+Literal is extentDescription max 1 www.w3.org/2000/01/-schema#.
+EX GeographicBoundingBox is Class.
+EX GeographicBoundingBox SubClassOf EX GeographicExtent,.
+Thing, is eastBoundLongitude exactly 1 www.w3.org/2002/07/#.
+Thing, is northBoundLatitude exactly 1 www.w3.org/2002/07/#.
+Thing, is southBoundLatitude exactly 1 www.w3.org/2002/07/#.
+Thing is westBoundLongitude exactly 1 www.w3.org/2002/07/#.
+EX GeographicDescription is Class.
+EX GeographicDescription SubClassOf EX GeographicExtent,.
+Thing is geographicIdentifier exactly 1 www.w3.org/2002/07/#.
+EX GeographicExtent is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is extentTypeCode min 0 www.w3.org/2000/01/-schema#.
+Literal is extentTypeCode max 1 www.w3.org/2000/01/-schema#.
+EX SpatialTemporalExtent is Class.
+EX SpatialTemporalExtent SubClassOf EX TemporalExtent,.
+Thing is spatialExtent min 1 www.w3.org/2002/07/#.
+EX TemporalExtent is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is exTemp exactly 1 www.w3.org/2002/07/#.
+Thing is temporalExtent exactly 1 www.w3.org/2002/07/#.
+EX VerticalExtent is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is unitOfMeasure exactly 1 www.w3.org/2002/07/#.
+Thing, is verticalDatum exactly 1 www.w3.org/2002/07/#.
+Literal, is maximumValue exactly 1 www.w3.org/2000/01/-schema#.
+Literal is minimumValue exactly 1 www.w3.org/2000/01/-schema#.
+LI Lineage is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is processStep min 0 www.w3.org/2002/07/#.
+Thing, is source min 0 www.w3.org/2002/07/#.
+Literal, is statement min 0 www.w3.org/2000/01/-schema#.
+Literal is statement max 1 www.w3.org/2000/01/-schema#.
+LI ProcessStep is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is processor min 0 www.w3.org/2002/07/#.
+Thing, is source min 0 www.w3.org/2002/07/#.
+Literal, is stepDescription exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is stepDateTime max 1 www.w3.org/2000/01/-schema#.
+Literal is stepRationale max 1 www.w3.org/2000/01/-schema#.
+LI Source is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is scaleDenominator min 0 www.w3.org/2002/07/#.
+Thing, is sourceCitation min 0 www.w3.org/2002/07/#.
+Thing, is sourceExtent min 0 www.w3.org/2002/07/#.
+Thing, is sourceReferenceSystem min 0 www.w3.org/2002/07/#.
+Thing, is scaleDenominator max 1 www.w3.org/2002/07/#.
+Thing, is sourceCitation max 1 www.w3.org/2002/07/#.
+Thing, is sourceReferenceSystem max 1 www.w3.org/2002/07/#.
+Literal, is sourceStep min 0 www.w3.org/2000/01/-schema#.
+Literal is sourceDescription max 1 www.w3.org/2000/01/-schema#.
+MD ApplicationSchemaInformation is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is softwareDevelopmentFile min 0 www.w3.org/2002/07/#.
+Thing, is applicationSchemaName exactly 1 www.w3.org/2002/07/#.
+Thing, is featureCatalogueSupplement exactly 1 www.w3.org/2002/07/#.
+Thing, is softwareDevelopmentFile max 1 www.w3.org/2002/07/#.
+Literal, is graphicsFile min 0 www.w3.org/2000/01/-schema#.
+Literal, is schemaAscii min 0 www.w3.org/2000/01/-schema#.
+Literal, is softwareDevelopmentFileFormat min 0 www.w3.org/2000/01/-schema#.
+Literal, is constraintLanguage exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is schemaLanguage exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is graphicsFile max 1 www.w3.org/2000/01/-schema#.
+Literal, is schemaAscii max 1 www.w3.org/2000/01/-schema#.
+Literal is softwareDevelopmentFileFormat max 1 www.w3.org/2000/01/-schema#.
+MD Band is Class.
+MD Band SubClassOf MD RangeDimension,.
+Thing, is units min 0 www.w3.org/2002/07/#.
+Thing, is units max 1 www.w3.org/2002/07/#.
+Literal, is bitsPerValue min 0 www.w3.org/2000/01/-schema#.
+Literal, is maxValue min 0 www.w3.org/2000/01/-schema#.
+Literal, is minValue min 0 www.w3.org/2000/01/-schema#.
+Literal, is offset min 0 www.w3.org/2000/01/-schema#.
+Literal, is peakResponse min 0 www.w3.org/2000/01/-schema#.
+Literal, is scaleFactor min 0 www.w3.org/2000/01/-schema#.
+Literal, is toneGradation min 0 www.w3.org/2000/01/-schema#.
+Literal, is bitsPerValue max 1 www.w3.org/2000/01/-schema#.
+Literal, is maxValue max 1 www.w3.org/2000/01/-schema#.
+Literal, is minValue max 1 www.w3.org/2000/01/-schema#.
+Literal, is offset max 1 www.w3.org/2000/01/-schema#.
+Literal, is peakResponse max 1 www.w3.org/2000/01/-schema#.
+Literal, is scaleFactor max 1 www.w3.org/2000/01/-schema#.
+Literal is toneGradation max 1 www.w3.org/2000/01/-schema#.
+MD BrowseGraphics is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is fileDescription min 0 www.w3.org/2000/01/-schema#.
+Literal, is fileType min 0 www.w3.org/2000/01/-schema#.
+Literal, is fileName exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is fileDescription max 1 www.w3.org/2000/01/-schema#.
+Literal is fileType max 1 www.w3.org/2000/01/-schema#.
+MD CRS is Class.
+MD CRS SubClassOf MD ReferenceSystem,.
+Thing, is datum min 0 www.w3.org/2002/07/#.
+Thing, is ellipsoid min 0 www.w3.org/2002/07/#.
+Thing, is ellipsoidParameters min 0 www.w3.org/2002/07/#.
+Thing, is projection min 0 www.w3.org/2002/07/#.
+Thing, is projectionParameter min 0 www.w3.org/2002/07/#.
+Thing, is datum max 1 www.w3.org/2002/07/#.
+Thing, is ellipsoid max 1 www.w3.org/2002/07/#.
+Thing, is ellipsoidParameters max 1 www.w3.org/2002/07/#.
+Thing, is projection max 1 www.w3.org/2002/07/#.
+Thing is projectionParameter max 1 www.w3.org/2002/07/#.
+MD CellGeometryCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD CharacterSetCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD ClassificationCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD Constraints is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal is useLimitation min 0 www.w3.org/2000/01/-schema#.
+MD ContentInformation is Class.
+Thing is www.w3.org/2002/07/#.
+MD CoverageContentTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD CoverageDescription is Class.
+MD CoverageDescription SubClassOf MD ContentInformation,.
+Thing, is dimension min 0 www.w3.org/2002/07/#.
+Thing, is attributeDescription exactly 1 www.w3.org/2002/07/#.
+Thing is contentType exactly 1 www.w3.org/2002/07/#.
+MD DataIdentification is Class.
+MD DataIdentification SubClassOf MD Identification,.
+Thing, is spatialRepresentationType min 0 www.w3.org/2002/07/#.
+Thing, is spatialResolution min 0 www.w3.org/2002/07/#.
+Thing, is topicCategory min 1 www.w3.org/2002/07/#.
+Literal, is dataLanguage min 1 www.w3.org/2000/01/-schema#.
+Literal, is environmentDescription min 0 www.w3.org/2000/01/-schema#.
+Literal, is supplementalInformation min 0 www.w3.org/2000/01/-schema#.
+Literal, is environmentDescription max 1 www.w3.org/2000/01/-schema#.
+Literal is supplementalInformation max 1 www.w3.org/2000/01/-schema#.
+MD DataTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD DigitalTransferOptions is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is offLine min 0 www.w3.org/2002/07/#.
+Thing, is onLine min 0 www.w3.org/2002/07/#.
+Thing, is offLine max 1 www.w3.org/2002/07/#.
+Literal, is transferSize min 0 www.w3.org/2000/01/-schema#.
+Literal, is unitsOfDistribution min 0 www.w3.org/2000/01/-schema#.
+Literal, is transferSize max 1 www.w3.org/2000/01/-schema#.
+Literal is unitsOfDistribution max 1 www.w3.org/2000/01/-schema#.
+MD Dimension is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is resolution min 1 www.w3.org/2002/07/#.
+Thing, is dimensionName exactly 1 www.w3.org/2002/07/#.
+Thing, is resolution max 1 www.w3.org/2002/07/#.
+Literal is dimensionSize exactly 1 www.w3.org/2000/01/-schema#.
+MD DimensionNameTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD Distribution is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is distributionFormat min 0 www.w3.org/2002/07/#.
+Thing, is distributor min 0 www.w3.org/2002/07/#.
+Thing is transferOptions min 0 www.w3.org/2002/07/#.
+MD Distributor is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is distributionOrderProcess min 0 www.w3.org/2002/07/#.
+Thing, is distributionTransferOptions min 0 www.w3.org/2002/07/#.
+Thing, is distributorFormat min 0 www.w3.org/2002/07/#.
+Thing is distributorContact exactly 1 www.w3.org/2002/07/#.
+MD EllipsoidParameters is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is axisUnits exactly 1 www.w3.org/2002/07/#.
+Literal, is denominationOfFlatteningRatio min 0 www.w3.org/2000/01/-schema#.
+Literal, is semiMajorAxis exactly 1 www.w3.org/2000/01/-schema#.
+Literal is denominationOfFlatteningRatio max 1 www.w3.org/2000/01/-schema#.
+MD ExtendedElementInformation is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is extEleSrc min 1 www.w3.org/2002/07/#.
+Thing, is obligation min 0 www.w3.org/2002/07/#.
+Thing, is dataType exactly 1 www.w3.org/2002/07/#.
+Thing, is obligation max 1 www.w3.org/2002/07/#.
+Literal, is condition min 0 www.w3.org/2000/01/-schema#.
+Literal, is domainCode min 0 www.w3.org/2000/01/-schema#.
+Literal, is domainValue min 0 www.w3.org/2000/01/-schema#.
+Literal, is maximumOccurance min 0 www.w3.org/2000/01/-schema#.
+Literal, is parentEntity min 1 www.w3.org/2000/01/-schema#.
+Literal, is shortName min 0 www.w3.org/2000/01/-schema#.
+Literal, is definition exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is extensionElementName exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is rule exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is condition max 1 www.w3.org/2000/01/-schema#.
+Literal, is domainCode max 1 www.w3.org/2000/01/-schema#.
+Literal, is domainValue max 1 www.w3.org/2000/01/-schema#.
+Literal, is maximumOccurance max 1 www.w3.org/2000/01/-schema#.
+Literal is shortName max 1 www.w3.org/2000/01/-schema#.
+MD FeatureCatalogueDescription is Class.
+MD FeatureCatalogueDescription SubClassOf MD ContentInformation,.
+Thing, is featureCatalogueCitation min 0 www.w3.org/2002/07/#.
+Thing, is featureTypes min 0 www.w3.org/2002/07/#.
+Literal, is complianceCode min 0 www.w3.org/2000/01/-schema#.
+Literal, is includeWithDataset exactly 1 www.w3.org/2000/01/-schema#.
+Literal is complianceCode max 1 www.w3.org/2000/01/-schema#.
+MD FeatureTypeList is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is spatialObject exactly 1 www.w3.org/2000/01/-schema#.
+Literal is spatialSchemaName exactly 1 www.w3.org/2000/01/-schema#.
+MD Format is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is formatDistributor min 0 www.w3.org/2002/07/#.
+Literal, is amendmentNumber min 0 www.w3.org/2000/01/-schema#.
+Literal, is fileDecompressionTechnique min 0 www.w3.org/2000/01/-schema#.
+Literal, is formatSpecification min 0 www.w3.org/2000/01/-schema#.
+Literal, is name MD Format exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is version exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is amendmentNumber max 1 www.w3.org/2000/01/-schema#.
+Literal, is fileDecompressionTechnique max 1 www.w3.org/2000/01/-schema#.
+Literal is formatSpecification max 1 www.w3.org/2000/01/-schema#.
+MD GeometricObjectTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD GeometricObjects is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is geometricObjectType exactly 1 www.w3.org/2002/07/#.
+Literal, is geometricObjectCount min 0 www.w3.org/2000/01/-schema#.
+Literal is geometricObjectCount max 1 www.w3.org/2000/01/-schema#.
+MD Georectified is Class.
+MD Georectified SubClassOf MD GridSpatialRepresentation,.
+Thing, is centerPoint min 0 www.w3.org/2002/07/#.
+Thing, is cornerPoints exactly 1 www.w3.org/2002/07/#.
+Thing, is pointInPixel exactly 1 www.w3.org/2002/07/#.
+Thing, is centerPoint max 1 www.w3.org/2002/07/#.
+Literal, is checkPointDescription min 0 www.w3.org/2000/01/-schema#.
+Literal, is transformationDimensionDescription min 0 www.w3.org/2000/01/-schema#.
+Literal, is transformationDimensionMapping min 0 www.w3.org/2000/01/-schema#.
+Literal, is checkPointAvailability exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is checkPointDescription max 1 www.w3.org/2000/01/-schema#.
+Literal, is transformationDimensionDescription max 1 www.w3.org/2000/01/-schema#.
+Literal is transformationDimensionMapping max 2 www.w3.org/2000/01/-schema#.
+MD Georeferenceable is Class.
+MD Georeferenceable SubClassOf MD GridSpatialRepresentation,.
+Thing, is parameterCitation min 0 www.w3.org/2002/07/#.
+Thing, is parameters exactly 1 www.w3.org/2002/07/#.
+Literal, is orientationParameterAvailibility min 0 www.w3.org/2000/01/-schema#.
+Literal, is controlPointAvailability exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is orientationParameterAvailibility exactly 1 www.w3.org/2000/01/-schema#.
+Literal is orientationParameterAvailibility max 1 www.w3.org/2000/01/-schema#.
+MD GridSpatialRepresentation is Class.
+MD GridSpatialRepresentation SubClassOf MD SpatialRepresentation,.
+Thing, is axisDimensionProperties exactly 1 www.w3.org/2002/07/#.
+Thing, is cellGeometry exactly 1 www.w3.org/2002/07/#.
+Literal, is numberOfDimensions exactly 1 www.w3.org/2000/01/-schema#.
+Literal is transformationParameterAvailabiliy exactly 1 www.w3.org/2000/01/-schema#.
+MD Identification is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is descriptiveKeywords min 0 www.w3.org/2002/07/#.
+Thing, is graphicOverview min 0 www.w3.org/2002/07/#.
+Thing, is pointOfContact min 0 www.w3.org/2002/07/#.
+Thing, is resourceConstraints min 0 www.w3.org/2002/07/#.
+Thing, is resourceFormat min 0 www.w3.org/2002/07/#.
+Thing, is resourceMaintenance min 0 www.w3.org/2002/07/#.
+Thing, is resourceSpecificUsage min 0 www.w3.org/2002/07/#.
+Thing, is status min 0 www.w3.org/2002/07/#.
+Thing, is citation exactly 1 www.w3.org/2002/07/#.
+Literal, is credit min 0 www.w3.org/2000/01/-schema#.
+Literal, is purpose min 0 www.w3.org/2000/01/-schema#.
+Literal, is abstract exactly 1 www.w3.org/2000/01/-schema#.
+Literal is purpose max 1 www.w3.org/2000/01/-schema#.
+MD Identifier is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is authority min 0 www.w3.org/2002/07/#.
+Thing, is authority max 1 www.w3.org/2002/07/#.
+Literal is code exactly 1 www.w3.org/2000/01/-schema#.
+MD ImageDescription is Class.
+MD ImageDescription SubClassOf MD CoverageDescription,.
+Thing, is imageQualityCode min 0 www.w3.org/2002/07/#.
+Thing, is imagingCondition min 0 www.w3.org/2002/07/#.
+Thing, is processingLevelCode min 0 www.w3.org/2002/07/#.
+Thing, is imageQualityCode max 1 www.w3.org/2002/07/#.
+Thing, is imagingCondition max 1 www.w3.org/2002/07/#.
+Thing, is processingLevelCode max 1 www.w3.org/2002/07/#.
+Literal, is cameraCalibrationInformationAvailability min 0 www.w3.org/2000/01/-schema#.
+Literal, is cloudCoverPercentage min 0 www.w3.org/2000/01/-schema#.
+Literal, is compressionGenerationQuantity min 0 www.w3.org/2000/01/-schema#.
+Literal, is filmDistortionInformationAvailibility min 0 www.w3.org/2000/01/-schema#.
+Literal, is illuminationAzimuthAngle min 0 www.w3.org/2000/01/-schema#.
+Literal, is illuminationElevationAngle min 0 www.w3.org/2000/01/-schema#.
+Literal, is lenseDistortionInformationAvailibility min 0 www.w3.org/2000/01/-schema#.
+Literal, is radiometricCalibrationDataAvailability min 0 www.w3.org/2000/01/-schema#.
+Literal, is triangulationIndicator min 0 www.w3.org/2000/01/-schema#.
+Literal, is cameraCalibrationInformationAvailability max 1 www.w3.org/2000/01/-schema#.
+Literal, is cloudCoverPercentage max 1 www.w3.org/2000/01/-schema#.
+Literal, is compressionGenerationQuantity max 1 www.w3.org/2000/01/-schema#.
+Literal, is filmDistortionInformationAvailibility max 1 www.w3.org/2000/01/-schema#.
+Literal, is illuminationAzimuthAngle max 1 www.w3.org/2000/01/-schema#.
+Literal, is illuminationElevationAngle max 1 www.w3.org/2000/01/-schema#.
+Literal, is lenseDistortionInformationAvailibility max 1 www.w3.org/2000/01/-schema#.
+Literal, is radiometricCalibrationDataAvailability max 1 www.w3.org/2000/01/-schema#.
+Literal is triangulationIndicator max 1 www.w3.org/2000/01/-schema#.
+MD ImagingConditionCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD KeywordTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD Keywords is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is thesaurusName min 0 www.w3.org/2002/07/#.
+Thing, is type min 0 www.w3.org/2002/07/#.
+Thing, is thesaurusName max 1 www.w3.org/2002/07/#.
+Thing, is type max 1 www.w3.org/2002/07/#.
+Literal is keyword min 1 www.w3.org/2000/01/-schema#.
+MD LegalConstraints is Class.
+MD LegalConstraints SubClassOf MD Constraints,.
+Thing, is accessConstraints min 0 www.w3.org/2002/07/#.
+Thing, is useConstraints min 0 www.w3.org/2002/07/#.
+Literal is otherConstraints min 0 www.w3.org/2000/01/-schema#.
+MD MaintenanceFrequenceCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD MaintenanceInformation is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is dateOfNextUpdate min 0 www.w3.org/2002/07/#.
+Thing, is updateScope min 0 www.w3.org/2002/07/#.
+Thing, is updateScopeDescription min 0 www.w3.org/2002/07/#.
+Thing, is maintenanceAndUpdateFrequency exactly 1 www.w3.org/2002/07/#.
+Thing, is dateOfNextUpdate max 1 www.w3.org/2002/07/#.
+Literal, is maintenanceNote min 0 www.w3.org/2000/01/-schema#.
+Literal, is userDefinedMaintenanceFrequency min 0 www.w3.org/2000/01/-schema#.
+Literal is userDefinedMaintenanceFrequency max 1 www.w3.org/2000/01/-schema#.
+MD Medium is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is mediumFormat min 0 www.w3.org/2002/07/#.
+Thing, is mediumName min 0 www.w3.org/2002/07/#.
+Thing, is mediumName max 1 www.w3.org/2002/07/#.
+Literal, is density min 0 www.w3.org/2000/01/-schema#.
+Literal, is densityUnits min 0 www.w3.org/2000/01/-schema#.
+Literal, is mediumNote min 0 www.w3.org/2000/01/-schema#.
+Literal, is volumes min 0 www.w3.org/2000/01/-schema#.
+Literal, is densityUnits max 1 www.w3.org/2000/01/-schema#.
+Literal, is mediumNote max 1 www.w3.org/2000/01/-schema#.
+Literal is volumes max 1 www.w3.org/2000/01/-schema#.
+MD MediumFormatCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD MediumNameCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD Metadata is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is applicationSchemaInfo min 0 www.w3.org/2002/07/#.
+Thing, is contentInfo min 0 www.w3.org/2002/07/#.
+Thing, is dataQualityInfo min 0 www.w3.org/2002/07/#.
+Thing, is distributionInfo min 0 www.w3.org/2002/07/#.
+Thing, is hierarchyLevel min 0 www.w3.org/2002/07/#.
+Thing, is identificationInfo min 1 www.w3.org/2002/07/#.
+Thing, is metadataConstraints min 0 www.w3.org/2002/07/#.
+Thing, is metadataExtentInfo min 0 www.w3.org/2002/07/#.
+Thing, is metadataMaintenance min 0 www.w3.org/2002/07/#.
+Thing, is portrayalCatalogueInfo min 0 www.w3.org/2002/07/#.
+Thing, is referenceSystemInfo min 0 www.w3.org/2002/07/#.
+Thing, is spatialRepresentationInfo min 0 www.w3.org/2002/07/#.
+Thing, is contact exactly 1 www.w3.org/2002/07/#.
+Thing, is distributionInfo max 1 www.w3.org/2002/07/#.
+Thing, is metadataCharacterSet max 1 www.w3.org/2002/07/#.
+Thing, is metadataMaintenance max 1 www.w3.org/2002/07/#.
+Literal, is dataSetURI min 0 www.w3.org/2000/01/-schema#.
+Literal, is fileIdentifier min 0 www.w3.org/2000/01/-schema#.
+Literal, is hierarchyLevelName min 0 www.w3.org/2000/01/-schema#.
+Literal, is metadataStandardName min 0 www.w3.org/2000/01/-schema#.
+Literal, is metadataStandardVersion min 0 www.w3.org/2000/01/-schema#.
+Literal, is parentIdentifier min 0 www.w3.org/2000/01/-schema#.
+Literal, is dateStamp exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is dataSetURI max 1 www.w3.org/2000/01/-schema#.
+Literal, is fileIdentifier max 1 www.w3.org/2000/01/-schema#.
+Literal, is metadataLanguage max 1 www.w3.org/2000/01/-schema#.
+Literal, is metadataStandardName max 1 www.w3.org/2000/01/-schema#.
+Literal, is metadataStandardVersion max 1 www.w3.org/2000/01/-schema#.
+Literal is parentIdentifier max 1 www.w3.org/2000/01/-schema#.
+MD MetadataExtentInformation is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is extendedElementInformation min 0 www.w3.org/2002/07/#.
+Thing, is extensionOnLineResource min 0 www.w3.org/2002/07/#.
+Thing is extensionOnLineResource max 1 www.w3.org/2002/07/#.
+MD ObligationCode is Class.
+MD ObligationCode is equivalent to {conditional , mandatory , optional}.
+Thing is www.w3.org/2002/07/#.
+MD ObliqueLineAzimuth is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is azimuthAngle exactly 1 www.w3.org/2000/01/-schema#.
+Literal is azimuthMeasurePointLongitude exactly 1 www.w3.org/2000/01/-schema#.
+MD ObliqueLinePoint is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is obliqueLineLatitude exactly 1 www.w3.org/2000/01/-schema#.
+Literal is obliqueLineLongitude exactly 1 www.w3.org/2000/01/-schema#.
+MD PixelOrientationCode is Class.
+MD PixelOrientationCode is equivalent to {center , lowerLeft , lowerRight , upperLeft , upperRight}.
+Thing is www.w3.org/2002/07/#.
+MD PortrayalCatalogueReference is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing is portrayalCatalogueCitation min 1 www.w3.org/2002/07/#.
+MD ProgressCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD ProjectionParameters is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is falseEastingNorthingUnits min 0 www.w3.org/2002/07/#.
+Thing, is obliqueLineAzimuthParameter min 0 www.w3.org/2002/07/#.
+Thing, is obliqueLinePointParameter min 0 www.w3.org/2002/07/#.
+Thing, is falseEastingNorthingUnits max 1 www.w3.org/2002/07/#.
+Thing, is obliqueLineAzimuthParameter max 1 www.w3.org/2002/07/#.
+Thing, is obliqueLinePointParameter max 2 www.w3.org/2002/07/#.
+Literal, is falseEasting min 0 www.w3.org/2000/01/-schema#.
+Literal, is falseNorthing min 0 www.w3.org/2000/01/-schema#.
+Literal, is heightOfProspectivePointAboveSurface min 0 www.w3.org/2000/01/-schema#.
+Literal, is latitudeOfProjectionCenter min 0 www.w3.org/2000/01/-schema#.
+Literal, is latitudeOfProjectionOrigin min 0 www.w3.org/2000/01/-schema#.
+Literal, is longitudeOfCentralMeridian min 0 www.w3.org/2000/01/-schema#.
+Literal, is longitudeOfProjectionCenter min 0 www.w3.org/2000/01/-schema#.
+Literal, is scaleFactorAtCenterLine min 0 www.w3.org/2000/01/-schema#.
+Literal, is scaleFactorAtEquator min 0 www.w3.org/2000/01/-schema#.
+Literal, is scaleFactorAtProjectionOrigin min 0 www.w3.org/2000/01/-schema#.
+Literal, is standardParallel min 0 www.w3.org/2000/01/-schema#.
+Literal, is straightVerticalLongitudeFromPole min 0 www.w3.org/2000/01/-schema#.
+Literal, is zone min 0 www.w3.org/2000/01/-schema#.
+Literal, is falseEasting max 1 www.w3.org/2000/01/-schema#.
+Literal, is falseNorthing max 1 www.w3.org/2000/01/-schema#.
+Literal, is heightOfProspectivePointAboveSurface max 1 www.w3.org/2000/01/-schema#.
+Literal, is latitudeOfProjectionOrigin max 1 www.w3.org/2000/01/-schema#.
+Literal, is longitudeOfCentralMeridian max 1 www.w3.org/2000/01/-schema#.
+Literal, is longitudeOfProjectionCenter max 1 www.w3.org/2000/01/-schema#.
+Literal, is scaleFactorAtCenterLine max 1 www.w3.org/2000/01/-schema#.
+Literal, is scaleFactorAtEquator max 1 www.w3.org/2000/01/-schema#.
+Literal, is scaleFactorAtProjectionOrigin max 1 www.w3.org/2000/01/-schema#.
+Literal, is standardParallel max 1 www.w3.org/2000/01/-schema#.
+Literal, is straightVerticalLongitudeFromPole max 1 www.w3.org/2000/01/-schema#.
+Literal is zone max 1 www.w3.org/2000/01/-schema#.
+MD RangeDimension is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is sequenceIdentifier min 0 www.w3.org/2002/07/#.
+Thing, is sequenceIdentifier max 1 www.w3.org/2002/07/#.
+Literal, is descriptor min 0 www.w3.org/2000/01/-schema#.
+Literal is descriptor max 1 www.w3.org/2000/01/-schema#.
+MD ReferenceSystem is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is referenceSystemIdentifier min 0 www.w3.org/2002/07/#.
+Thing is referenceSystemIdentifier max 1 www.w3.org/2002/07/#.
+MD RepresentativeFraction is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal is denominator exactly 1 www.w3.org/2000/01/-schema#.
+MD Resolution is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is distance min 0 www.w3.org/2002/07/#.
+Thing is equivalentScale min 0 www.w3.org/2002/07/#.
+MD RestrictionCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD ScopeCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD ScopeDescription is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is attributeInstances exactly 1 www.w3.org/2002/07/#.
+Thing, is attributes exactly 1 www.w3.org/2002/07/#.
+Thing, is featureInstances exactly 1 www.w3.org/2002/07/#.
+Thing, is features exactly 1 www.w3.org/2002/07/#.
+Literal, is dataset exactly 1 www.w3.org/2000/01/-schema#.
+Literal is other exactly 1 www.w3.org/2000/01/-schema#.
+MD SecurityConstraints is Class.
+MD SecurityConstraints SubClassOf MD Constraints,.
+Thing, is classification exactly 1 www.w3.org/2002/07/#.
+Literal, is classificationSystem min 0 www.w3.org/2000/01/-schema#.
+Literal, is handlingDescription min 0 www.w3.org/2000/01/-schema#.
+Literal, is userNote min 0 www.w3.org/2000/01/-schema#.
+Literal, is classificationSystem max 1 www.w3.org/2000/01/-schema#.
+Literal, is handlingDescription max 1 www.w3.org/2000/01/-schema#.
+Literal is userNote max 1 www.w3.org/2000/01/-schema#.
+MD ServiceIdentification is Class.
+MD ServiceIdentification SubClassOf MD Identification.
+MD SpatialAttributeSupplement is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing is theFeatureTypeList min 1 www.w3.org/2002/07/#.
+MD SpatialRepresentation is Class.
+Thing is www.w3.org/2002/07/#.
+MD SpatialRepresentationTypeCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD StandardOrderProcess is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is fees min 0 www.w3.org/2000/01/-schema#.
+Literal, is orderingInstructions min 0 www.w3.org/2000/01/-schema#.
+Literal, is plannedAvailableDateTime min 0 www.w3.org/2000/01/-schema#.
+Literal, is turnaround min 0 www.w3.org/2000/01/-schema#.
+Literal, is fees max 1 www.w3.org/2000/01/-schema#.
+Literal, is orderingInstructions max 1 www.w3.org/2000/01/-schema#.
+Literal, is plannedAvailableDateTime max 1 www.w3.org/2000/01/-schema#.
+Literal is turnaround max 1 www.w3.org/2000/01/-schema#.
+MD TopicCategoryCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD TopologyLevelCode is Class.
+Thing is www.w3.org/2002/07/#.
+MD Usage is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is usageDateTime min 0 www.w3.org/2002/07/#.
+Thing, is userContactInfo min 1 www.w3.org/2002/07/#.
+Thing, is usageDateTime max 1 www.w3.org/2002/07/#.
+Literal, is userDeterminedLimitations min 0 www.w3.org/2000/01/-schema#.
+Literal, is specificUsage exactly 1 www.w3.org/2000/01/-schema#.
+Literal is userDeterminedLimitations max 1 www.w3.org/2000/01/-schema#.
+MD VectorSpatialRepresentation is Class.
+MD VectorSpatialRepresentation SubClassOf MD SpatialRepresentation,.
+Thing, is geometricObjects min 0 www.w3.org/2002/07/#.
+Thing, is topologyLevel min 0 www.w3.org/2002/07/#.
+Thing is topologyLevel max 1 www.w3.org/2002/07/#.
+MemberName is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.
+ 1quarterInchCartidgeTape is Individual.
+ 1quarterInchCartidgeTape Types MD MediumNameCode.
+ 3480Cartidge is Individual.
+ 3480Cartidge Types MD MediumNameCode.
+ 3490Cartidge is Individual.
+ 3490Cartidge Types MD MediumNameCode.
+ 3580Cartidge is Individual.
+ 3580Cartidge Types MD MediumNameCode.
+ 3halfIncFloppy is Individual.
+ 3halfIncFloppy Types MD MediumNameCode.
+ 4mmCartidge is Individual.
+ 4mmCartidge Types MD MediumNameCode.
+ 5quarterInchFloppy is Individual.
+ 5quarterInchFloppy Types MD MediumNameCode.
+ 7trackTape is Individual.
+ 7trackTape Types MD MediumNameCode.
+ 8859part1 is Individual.
+ 8859part1 Types MD CharacterSetCode.
+ 8859part11 is Individual.
+ 8859part11 Types MD CharacterSetCode.
+ 8859part14 is Individual.
+ 8859part14 Types MD CharacterSetCode.
+ 8859part15 is Individual.
+ 8859part15 Types MD CharacterSetCode.
+ 8859part2 is Individual.
+ 8859part2 Types MD CharacterSetCode.
+ 8859part3 is Individual.
+ 8859part3 Types MD CharacterSetCode.
+ 8859part4 is Individual.
+ 8859part4 Types MD CharacterSetCode.
+ 8859part5 is Individual.
+ 8859part5 Types MD CharacterSetCode.
+ 8859part6 is Individual.
+ 8859part6 Types MD CharacterSetCode.
+ 8859part7 is Individual.
+ 8859part7 Types MD CharacterSetCode.
+ 8859part8 is Individual.
+ 8859part8 Types MD CharacterSetCode.
+ 8859part9 is Individual.
+ 8859part9 Types MD CharacterSetCode.
+ 8mmCartidge is Individual.
+ 8mmCartidge Types MD MediumNameCode.
+ 9trackTape is Individual.
+ 9trackTape Types MD MediumNameCode.
+ dataset is Individual.
+ dataset Types MD ScopeCode.
+ point is Individual.
+ point Types MD GeometricObjectTypeCode.
+ pointOfContact is Individual.
+ pointOfContact Types CI RoleCode.
+ processor is Individual.
+ processor Types CI RoleCode.
+ restricted is Individual.
+ restricted Types MD ClassificationCode.
+ series is Individual.
+ series Types MD ScopeCode.
+ source is Individual.
+ source Types DS AssociationTypeCode.
+abstractClass is Individual.
+abstractClass Types MD DataTypeCode.
+abstract TopoLevCd is Individual.
+abstract TopoLevCd Types MD TopologyLevelCode.
+aggregatedClass is Individual.
+aggregatedClass Types MD DataTypeCode.
+annually is Individual.
+annually Types MD MaintenanceFrequenceCode.
+area is Individual.
+area Types MD CellGeometryCode.
+asNeeded is Individual.
+asNeeded Types MD MaintenanceFrequenceCode.
+association is Individual.
+association Types MD DataTypeCode.
+attribute is Individual.
+attribute Types MD ScopeCode.
+attributeType is Individual.
+attributeType Types MD ScopeCode.
+biannually is Individual.
+biannually Types MD MaintenanceFrequenceCode.
+big5 is Individual.
+big5 Types MD CharacterSetCode.
+biota is Individual.
+biota Types MD TopicCategoryCode.
+blurredImage is Individual.
+blurredImage Types MD ImagingConditionCode.
+boundaries is Individual.
+boundaries Types MD TopicCategoryCode.
+campaign is Individual.
+campaign Types DS InitiativeTypeCode.
+cdRom is Individual.
+cdRom Types MD MediumNameCode.
+center is Individual.
+center Types MD PixelOrientationCode.
+characterString is Individual.
+characterString Types MD DataTypeCode.
+class is Individual.
+class Types MD DataTypeCode.
+cliomatologyMetereologyAtmosphere is Individual.
+cliomatologyMetereologyAtmosphere Types MD TopicCategoryCode.
+cloud is Individual.
+cloud Types MD ImagingConditionCode.
+codelist is Individual.
+codelist Types MD DataTypeCode.
+codelistElement is Individual.
+codelistElement Types MD DataTypeCode.
+collection is Individual.
+collection Types DS InitiativeTypeCode.
+collectionHardware is Individual.
+collectionHardware Types MD ScopeCode.
+collectionSession is Individual.
+collectionSession Types MD ScopeCode.
+column is Individual.
+column Types MD DimensionNameTypeCode.
+completed is Individual.
+completed Types MD ProgressCode.
+complexes is Individual.
+complexes Types MD GeometricObjectTypeCode.
+composites is Individual.
+composites Types MD GeometricObjectTypeCode.
+conditional is Individual.
+conditional Types MD ObligationCode.
+confidential is Individual.
+confidential Types MD ClassificationCode.
+continual is Individual.
+continual Types MD MaintenanceFrequenceCode.
+copyright is Individual.
+copyright Types MD RestrictionCode.
+cpio is Individual.
+cpio Types MD MediumFormatCode.
+creation is Individual.
+creation Types CI DateTypeCode.
+crossReference is Individual.
+crossReference Types DS AssociationTypeCode.
+crossTrack is Individual.
+crossTrack Types MD DimensionNameTypeCode.
+curve is Individual.
+curve Types MD GeometricObjectTypeCode.
+custodian is Individual.
+custodian Types CI RoleCode.
+daily is Individual.
+daily Types MD MaintenanceFrequenceCode.
+dataTypeClass is Individual.
+dataTypeClass Types MD DataTypeCode.
+degradingObliquity is Individual.
+degradingObliquity Types MD ImagingConditionCode.
+digitalLinearTape is Individual.
+digitalLinearTape Types MD MediumNameCode.
+dimensionGroup is Individual.
+dimensionGroup Types MD ScopeCode.
+directExternal is Individual.
+directExternal Types DQ EvaluationMethodTypeCode.
+directInternal is Individual.
+directInternal Types DQ EvaluationMethodTypeCode.
+discipline is Individual.
+discipline Types MD KeywordTypeCode.
+distributors is Individual.
+distributors Types CI RoleCode.
+documentDigital is Individual.
+documentDigital Types CI PresentationFormCode.
+documentHardcopy is Individual.
+documentHardcopy Types CI PresentationFormCode.
+download is Individual.
+download Types CI OnLineFunctionCode.
+dvd is Individual.
+dvd Types MD MediumNameCode.
+dvdRom is Individual.
+dvdRom Types MD MediumNameCode.
+ebcdic is Individual.
+ebcdic Types MD CharacterSetCode.
+economy is Individual.
+economy Types MD TopicCategoryCode.
+elevation is Individual.
+elevation Types MD TopicCategoryCode.
+enumeration is Individual.
+enumeration Types MD DataTypeCode.
+environment is Individual.
+environment Types MD TopicCategoryCode.
+eucJP is Individual.
+eucJP Types MD CharacterSetCode.
+eucKR is Individual.
+eucKR Types MD CharacterSetCode.
+exercise is Individual.
+exercise Types DS InitiativeTypeCode.
+experiment is Individual.
+experiment Types DS InitiativeTypeCode.
+farming is Individual.
+farming Types MD TopicCategoryCode.
+feature is Individual.
+feature Types MD ScopeCode.
+featureType is Individual.
+featureType Types MD ScopeCode.
+fieldSesson is Individual.
+fieldSesson Types MD ScopeCode.
+fog is Individual.
+fog Types MD ImagingConditionCode.
+fortnightly is Individual.
+fortnightly Types MD MaintenanceFrequenceCode.
+fullPlanarGraph is Individual.
+fullPlanarGraph Types MD TopologyLevelCode.
+fullSurfaceGraph is Individual.
+fullSurfaceGraph Types MD TopologyLevelCode.
+fullTopology3D is Individual.
+fullTopology3D Types MD TopologyLevelCode.
+geometryOnly is Individual.
+geometryOnly Types MD TopologyLevelCode.
+geoscientificInformation is Individual.
+geoscientificInformation Types MD TopicCategoryCode.
+grid is Individual.
+grid Types MD SpatialRepresentationTypeCode.
+hardcopy is Individual.
+hardcopy Types MD MediumNameCode.
+health is Individual.
+health Types MD TopicCategoryCode.
+heavySmokeOrDust is Individual.
+heavySmokeOrDust Types MD ImagingConditionCode.
+highSierra is Individual.
+highSierra Types MD MediumFormatCode.
+historicalArchive is Individual.
+historicalArchive Types MD ProgressCode.
+iiregular is Individual.
+iiregular Types MD MaintenanceFrequenceCode.
+image is Individual.
+image Types MD CoverageContentTypeCode.
+imageDigital is Individual.
+imageDigital Types CI PresentationFormCode.
+imageHardCopy is Individual.
+imageHardCopy Types CI PresentationFormCode.
+imageryBaseMapsEarthCover is Individual.
+imageryBaseMapsEarthCover Types MD TopicCategoryCode.
+indirect is Individual.
+indirect Types DQ EvaluationMethodTypeCode.
+information is Individual.
+information Types CI OnLineFunctionCode.
+inlandWaters is Individual.
+inlandWaters Types MD TopicCategoryCode.
+integer is Individual.
+integer Types MD DataTypeCode.
+intellectualPropertyrights is Individual.
+intellectualPropertyrights Types MD RestrictionCode.
+intelligenceMilitary is Individual.
+intelligenceMilitary Types MD TopicCategoryCode.
+interfaceClass is Individual.
+interfaceClass Types MD DataTypeCode.
+iso9660 is Individual.
+iso9660 Types MD MediumFormatCode.
+iso9660AppleHFS is Individual.
+iso9660AppleHFS Types MD MediumFormatCode.
+iso9660RockRidge is Individual.
+iso9660RockRidge Types MD MediumFormatCode.
+jis is Individual.
+jis Types MD CharacterSetCode.
+largerWorkCitation is Individual.
+largerWorkCitation Types DS AssociationTypeCode.
+license is Individual.
+license Types MD RestrictionCode.
+line is Individual.
+line Types MD DimensionNameTypeCode.
+location is Individual.
+location Types MD TopicCategoryCode.
+lowerLeft is Individual.
+lowerLeft Types MD PixelOrientationCode.
+lowerRight is Individual.
+lowerRight Types MD PixelOrientationCode.
+mandatory is Individual.
+mandatory Types MD ObligationCode.
+mapDigital is Individual.
+mapDigital Types CI PresentationFormCode.
+mapHardCopy is Individual.
+mapHardCopy Types CI PresentationFormCode.
+metaClass is Individual.
+metaClass Types MD DataTypeCode.
+mission is Individual.
+mission Types DS InitiativeTypeCode.
+model is Individual.
+model Types MD ScopeCode.
+modelDigital is Individual.
+modelDigital Types CI PresentationFormCode.
+modelHardcopy is Individual.
+modelHardcopy Types CI PresentationFormCode.
+monthly is Individual.
+monthly Types MD MaintenanceFrequenceCode.
+night is Individual.
+night Types MD ImagingConditionCode.
+nonGeographicDataset is Individual.
+nonGeographicDataset Types MD ScopeCode.
+nonImageSensor is Individual.
+nonImageSensor Types DS InitiativeTypeCode.
+notPlanned is Individual.
+notPlanned Types MD MaintenanceFrequenceCode.
+obsolete is Individual.
+obsolete Types MD ProgressCode.
+oceans is Individual.
+oceans Types MD TopicCategoryCode.
+offLineAccess is Individual.
+offLineAccess Types CI OnLineFunctionCode.
+onGoing is Individual.
+onGoing Types MD ProgressCode.
+onLineMedia is Individual.
+onLineMedia Types MD MediumNameCode.
+operation is Individual.
+operation Types DS InitiativeTypeCode.
+optional is Individual.
+optional Types MD ObligationCode.
+order is Individual.
+order Types CI OnLineFunctionCode.
+originator is Individual.
+originator Types CI RoleCode.
+otherRestrictions is Individual.
+otherRestrictions Types MD RestrictionCode.
+owner is Individual.
+owner Types CI RoleCode.
+partOfSeamlessDatabase is Individual.
+partOfSeamlessDatabase Types DS AssociationTypeCode.
+patent is Individual.
+patent Types MD RestrictionCode.
+patentPending is Individual.
+patentPending Types MD RestrictionCode.
+physicalMeasurement is Individual.
+physicalMeasurement Types MD CoverageContentTypeCode.
+place is Individual.
+place Types MD KeywordTypeCode.
+planarGraph is Individual.
+planarGraph Types MD TopologyLevelCode.
+planned is Individual.
+planned Types MD ProgressCode.
+planningCadastre is Individual.
+planningCadastre Types MD TopicCategoryCode.
+platform is Individual.
+platform Types DS InitiativeTypeCode.
+point is Individual.
+point Types MD CellGeometryCode.
+principalInvestigator is Individual.
+principalInvestigator Types CI RoleCode.
+process is Individual.
+process Types DS InitiativeTypeCode.
+profileDigital is Individual.
+profileDigital Types CI PresentationFormCode.
+profileHardcopy is Individual.
+profileHardcopy Types CI PresentationFormCode.
+program is Individual.
+program Types DS InitiativeTypeCode.
+project is Individual.
+project Types DS InitiativeTypeCode.
+propertyType is Individual.
+propertyType Types MD ScopeCode.
+publication is Individual.
+publication Types CI DateTypeCode.
+publisher is Individual.
+publisher Types CI RoleCode.
+quarterly is Individual.
+quarterly Types MD MaintenanceFrequenceCode.
+rain is Individual.
+rain Types MD ImagingConditionCode.
+required is Individual.
+required Types MD ProgressCode.
+resourceProvider is Individual.
+resourceProvider Types CI RoleCode.
+restricted is Individual.
+restricted Types MD RestrictionCode.
+revision is Individual.
+revision Types CI DateTypeCode.
+row is Individual.
+row Types MD DimensionNameTypeCode.
+sample is Individual.
+sample Types MD DimensionNameTypeCode.
+satellite is Individual.
+satellite Types MD MediumNameCode.
+search is Individual.
+search Types CI OnLineFunctionCode.
+secret is Individual.
+secret Types MD ClassificationCode.
+semiDarkness is Individual.
+semiDarkness Types MD ImagingConditionCode.
+service is Individual.
+service Types MD ScopeCode.
+shadow is Individual.
+shadow Types MD ImagingConditionCode.
+shiftJIS is Individual.
+shiftJIS Types MD CharacterSetCode.
+society is Individual.
+society Types MD TopicCategoryCode.
+software is Individual.
+software Types MD ScopeCode.
+solid is Individual.
+solid Types MD GeometricObjectTypeCode.
+specifiedClass is Individual.
+specifiedClass Types MD DataTypeCode.
+stereoModel is Individual.
+stereoModel Types MD SpatialRepresentationTypeCode.
+stereomate is Individual.
+stereomate Types DS AssociationTypeCode.
+stratum is Individual.
+stratum Types MD KeywordTypeCode.
+structure is Individual.
+structure Types MD TopicCategoryCode.
+study is Individual.
+study Types DS InitiativeTypeCode.
+surface is Individual.
+surface Types MD GeometricObjectTypeCode.
+surfaceGraph is Individual.
+surfaceGraph Types MD TopologyLevelCode.
+tableDigital is Individual.
+tableDigital Types CI PresentationFormCode.
+tableHardcopy is Individual.
+tableHardcopy Types CI PresentationFormCode.
+tar is Individual.
+tar Types MD MediumFormatCode.
+task is Individual.
+task Types DS InitiativeTypeCode.
+telephoneLink is Individual.
+telephoneLink Types MD MediumNameCode.
+temporal is Individual.
+temporal Types MD KeywordTypeCode.
+terrainMasking is Individual.
+terrainMasking Types MD ImagingConditionCode.
+textTable is Individual.
+textTable Types MD SpatialRepresentationTypeCode.
+thematicClassification is Individual.
+thematicClassification Types MD CoverageContentTypeCode.
+theme is Individual.
+theme Types MD KeywordTypeCode.
+time is Individual.
+time Types MD DimensionNameTypeCode.
+tin is Individual.
+tin Types MD SpatialRepresentationTypeCode.
+topology1D is Individual.
+topology1D Types MD TopologyLevelCode.
+topology3D is Individual.
+topology3D Types MD TopologyLevelCode.
+topsecret is Individual.
+topsecret Types MD ClassificationCode.
+track is Individual.
+track Types MD DimensionNameTypeCode.
+trademark is Individual.
+trademark Types MD RestrictionCode.
+transportation is Individual.
+transportation Types MD TopicCategoryCode.
+trial is Individual.
+trial Types DS InitiativeTypeCode.
+typeClass is Individual.
+typeClass Types MD DataTypeCode.
+ucs2 is Individual.
+ucs2 Types MD CharacterSetCode.
+ucs4 is Individual.
+ucs4 Types MD CharacterSetCode.
+unclassified is Individual.
+unclassified Types MD ClassificationCode.
+underdevelopment is Individual.
+underdevelopment Types MD ProgressCode.
+unionClass is Individual.
+unionClass Types MD DataTypeCode.
+unknow is Individual.
+unknow Types MD MaintenanceFrequenceCode.
+upperLeft is Individual.
+upperLeft Types MD PixelOrientationCode.
+upperRight is Individual.
+upperRight Types MD PixelOrientationCode.
+usAscii is Individual.
+usAscii Types MD CharacterSetCode.
+user is Individual.
+user Types CI RoleCode.
+utf16 is Individual.
+utf16 Types MD CharacterSetCode.
+utf7 is Individual.
+utf7 Types MD CharacterSetCode.
+utf8 is Individual.
+utf8 Types MD CharacterSetCode.
+utilitiesCommunication is Individual.
+utilitiesCommunication Types MD TopicCategoryCode.
+vector is Individual.
+vector Types MD SpatialRepresentationTypeCode.
+vertical is Individual.
+vertical Types MD DimensionNameTypeCode.
+video is Individual.
+video Types MD SpatialRepresentationTypeCode.
+videoDigital is Individual.
+videoDigital Types CI PresentationFormCode.
+videoHardcopy is Individual.
+videoHardcopy Types CI PresentationFormCode.
+weekly is Individual.
+weekly Types MD MaintenanceFrequenceCode.

@@ -1,0 +1,206 @@
+BFO_0000062 is ObjectProperty
+hasAlertMessage is ObjectProperty
+hasAlertMessage Domain LaboratorySubprocedure
+Class_121 is www.-ontologies.com/Ontology1184060740.#
+hasDescription is ObjectProperty
+hasDescription Domain LaboratorySubprocedure
+hasDescription Range SubprocedureDescription
+hasExperimentalInput is ObjectProperty
+hasOutput is ObjectProperty
+hasProtocol is ObjectProperty
+hasProtocol Domain LaboratoryProcedure
+hasProtocol Range ExperimentalProtocol
+hasSubprocedure is ObjectProperty
+hasSubprocedure Domain LaboratoryProcedure
+hasSubprocedure Range LaboratorySubprocedure
+4001-0092 is Class
+4001-0092 SubClassOf BTO_0004725
+107733003 is Class
+107733003 SubClassOf LaboratoryProcedure
+BFO_0000023 is Class
+BFO_0000023 SubClassOf SpecificallyDependentContinuant
+BTO_0000007 is Class
+BTO_0000007 SubClassOf BTO_0002733
+BTO_0000669 is Class
+BTO_0002733 is Class
+BTO_0002733 SubClassOf BTO_0000669
+BTO_0004725 is Class
+BTO_0004725 SubClassOf CL_0000057
+CHEBI_33697 is Class
+CLO_0000020 is Class
+CLO_0000020 SubClassOf CLO_0000128
+CLO_0000076 is Class
+CLO_0000081 is Class
+CLO_0000081 SubClassOf CLO_0000156
+CLO_0000084 is Class
+CLO_0000084 SubClassOf CLO_0000081
+CLO_0000128 is Class
+CLO_0000129 is Class
+CLO_0000129 SubClassOf CLO_0000128
+CLO_0000156 is Class
+CLO_0000156 SubClassOf CLO_0000128
+CLO_0000168 is Class
+CLO_0000168 SubClassOf CLO_0000636
+CLO_0000228 is Class
+CLO_0000228 SubClassOf CLO_0000128
+CLO_0000235 is Class
+CLO_0000236 is Class
+CLO_0000236 SubClassOf CLO_0000128
+CLO_0000277 is Class
+CLO_0000277 SubClassOf CLO_0000128
+CLO_0000283 is Class
+CLO_0000283 SubClassOf CLO_0000129
+CLO_0000513 is Class
+CLO_0000513 SubClassOf CLO_0000236
+CLO_0000523 is Class
+CLO_0000523 SubClassOf CLO_0000084
+CLO_0000565 is Class
+CLO_0000565 SubClassOf CLO_0000235
+CLO_0000623 is Class
+CLO_0000623 SubClassOf CLO_0000277
+CLO_0000636 is Class
+CLO_0000636 SubClassOf CLO_0000283
+CLO_0000748 is Class
+CLO_0000748 SubClassOf CLO_0000228
+CLO_0001591 is Class
+CLO_0001591 SubClassOf CLO_0000020
+CLO_0002140 is Class
+CLO_0002140 SubClassOf CLO_0000623
+CLO_0003665 is Class
+CLO_0003665 SubClassOf CLO_0000513
+CLO_0003684 is Class
+CLO_0003684 SubClassOf CLO_0000168
+CLO_0003704 is Class
+CLO_0003704 SubClassOf CLO_0000565
+CLO_0050025 is Class
+CLO_0050025 SubClassOf CLO_0000020
+CLO_0050871 is Class
+CLO_0050871 SubClassOf CLO_0000076
+CL_0000057 is Class
+IAO_0000100 is Class
+NCBITaxon_10090 is Class
+OBI_0302895 is Class
+OBI_0302895 SubClassOf AnimalEuthanizationProcedure
+OBI_0302895 DisjointWith HousingConditionProcedure
+OBI_0302896 is Class
+OBI_0302896 SubClassOf AnimalEuthanizationProcedure
+OBI_0302897 is Class
+OBI_0302897 SubClassOf AnimalEuthanizationProcedure
+OBI_0302898 is Class
+OBI_0302898 SubClassOf AnimalEuthanizationProcedure
+OBI_0302899 is Class
+OBI_0302899 SubClassOf AnimalEuthanizationProcedure
+AnimalEuthanizationProcedure is Class
+AnimalEuthanizationProcedure SubClassOf LaboratoryProcedure,
+AnimalEuthanizationProcedure SubClassOf BFO_0000062 some InfectionProcedure,
+AnimalEuthanizationProcedure SubClassOf hasProtocol some AnimalEuthanizationProtocol
+AnimalEuthanizationProtocol is Class
+DNAExtractionProcedure is Class
+DNAExtractionProcedure SubClassOf NucleicAcidExtractionProcedure,
+DNAExtractionProcedure SubClassOf hasProtocol some DNAExtractionProtocol
+DNAExtractionProtocol is Class
+DNAPellet is Class
+DNAPellet SubClassOf ProcessedDNA
+Drill is Class
+Drill SubClassOf SampleMill
+ElectrophoresisProcedure is Class
+ElectrophoresisProcedure SubClassOf LaboratoryProcedure,
+ElectrophoresisProcedure SubClassOf BFO_0000062 some NucleicAcidExtractionProcedure,
+ElectrophoresisProcedure SubClassOf BFO_0000062 some PolimeraseChainReactionProcedure,
+ElectrophoresisProcedure SubClassOf hasProtocol some ElectrophoresisProtocol
+ElectrophoresisProtocol is Class
+EnzymaticAmplificationProcedure is Class
+EnzymaticAmplificationProcedure SubClassOf LaboratoryProcedure
+ExperimentalProtocol is Class
+FreezerMilling is Class
+FreezerMilling SubClassOf SampleMill
+HousingConditionProcedure is Class
+HousingConditionProcedure SubClassOf LaboratoryProcedure,
+HousingConditionProcedure SubClassOf hasProtocol some HousingConditionProtocol
+HousingConditionProcedure DisjointWith OBI_0302895
+HousingConditionProtocol is Class
+InfectionProcedure is Class
+InfectionProcedure SubClassOf LaboratoryProcedure,
+InfectionProcedure SubClassOf BFO_0000062 some HousingConditionProcedure,
+InfectionProcedure SubClassOf hasProtocol some InfectionProtocol,
+InfectionProcedure SubClassOf BFO_0000062 only OBI_0302895
+InfectionProtocol is Class
+LaboratoryProcedure is Class
+LaboratoryProcedure SubClassOf SIO_000999,
+Class_121, is hasAlertMessage some www.-ontologies.com/Ontology1184060740.#
+Class_121, is hasDescription some ProcedureDescription,
+Class_121, is hasExperimentalInput some IAO_0000100,
+Class_121, is hasOutput some IAO_0000100,
+Class_121, is hasSubprocedure some LaboratorySubprocedure
+LaboratorySubprocedure is Class
+LaboratorySubprocedure SubClassOf SIO_000999,
+Class_121, is hasAlertMessage some www.-ontologies.com/Ontology1184060740.#
+Class_121, is hasDescription some SubprocedureDescription,
+Class_121, is hasExperimentalInput some IAO_0000100,
+Class_121, is hasOutput some IAO_0000100
+MortarAndPestle is Class
+MortarAndPestle SubClassOf SampleMill
+NucleicAcidExtractionProcedure is Class
+NucleicAcidExtractionProcedure SubClassOf LaboratoryProcedure
+PolimeraseChainReactionProcedure is Class
+PolimeraseChainReactionProcedure SubClassOf EnzymaticAmplificationProcedure,
+PolimeraseChainReactionProcedure SubClassOf BFO_0000062 some DNAExtractionProcedure,
+PolimeraseChainReactionProcedure SubClassOf hasProtocol some PolimeraseChainReactionProtocol
+PolimeraseChainReactionProtocol is Class
+Primer is Class
+ProcedureDescription is Class
+ProcessedDNA is Class
+ProteinExtractionProcedure is Class
+ProteinExtractionProcedure SubClassOf LaboratoryProcedure
+RNAExtractionProcedure is Class
+RNAExtractionProcedure SubClassOf NucleicAcidExtractionProcedure,
+RNAExtractionProcedure SubClassOf hasProtocol some RNAExtractionProtocol
+RNAExtractionProtocol is Class
+RandomPrimer is Class
+RandomPrimer SubClassOf Primer
+ReverseTranscriptionPCRProcedure is Class
+ReverseTranscriptionPCRProcedure SubClassOf EnzymaticAmplificationProcedure,
+ReverseTranscriptionPCRProcedure SubClassOf hasProtocol some ReverseTranscriptionPCRProtocol
+ReverseTranscriptionPCRProtocol is Class
+ReviewerRole is Class
+ReviewerRole SubClassOf BFO_0000023
+SampleMill is Class
+SpecimenPreparationProcedure is Class
+SpecimenPreparationProcedure SubClassOf LaboratoryProcedure,
+SpecimenPreparationProcedure SubClassOf BFO_0000062 some AnimalEuthanizationProcedure,
+SpecimenPreparationProcedure SubClassOf hasProtocol some SpecimenPreparationProtocol
+SpecimenPreparationProtocol is Class
+StuartDPepper is Class
+SubprocedureDescription is Class
+ValidatorRole is Class
+ValidatorRole SubClassOf BFO_0000023
+author2 is Class
+author7 is Class
+reagent2 is Class
+purl.org/obo//SO# is Class
+purl.org/obo//SO# SubClassOf Primer
+purl.org/obo//SO# is Class
+purl.org/obo//SO# SubClassOf Primer
+SIO_000999 is Class
+SIO_000999 SubClassOf Occurrent,
+Class_121, is hasAlertMessage some www.-ontologies.com/Ontology1184060740.#
+Class_121, is hasExperimentalInput some IAO_0000100,
+Class_121, is hasOutput some IAO_0000100
+EFO_0001327 is Class
+EFO_0001327 SubClassOf NCBITaxon_10090
+EFO_0004472 is Class
+EFO_0004472 SubClassOf EFO_0005181
+EFO_0004964 is Class
+EFO_0004964 SubClassOf CHEBI_33697
+EFO_0005181 is Class
+EFO_0005181 SubClassOf NCBITaxon_10090
+SpecificallyDependentContinuant is Class
+Occurrent is Class
+www.-ontologies.com/Ontology1184060740.# is Class
+www.-ontologies.com/Ontology1184060740.# is Class
+www.-ontologies.com/Ontology1184060740.# is Class
+Class_111 is www.-ontologies.com/Ontology1184060740.#
+www.-ontologies.com/Ontology1184060740.# is Class
+www.-ontologies.com/Ontology1184060740.# is Class
+Class_90 is www.-ontologies.com/Ontology1184060740.#
+www.w3.org/2002/07/# is Class

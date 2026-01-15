@@ -1,0 +1,42 @@
+constitutes-during is ObjectProperty
+has-for-constituent-during is ObjectProperty
+has-for-part-during is ObjectProperty
+has-for-quality is ObjectProperty
+is-a-part-of-during is ObjectProperty
+is-present-at is ObjectProperty
+is-present-in-at is ObjectProperty
+is-the-maximal-physical-participant-of is ObjectProperty
+is-the-maximal-physical-participant-of Domain physical-endurant
+is-the-maximal-physical-participant-of Range perdurant
+supports-at is ObjectProperty
+supports-at Domain physical-endurant
+supports-at Range inscription
+amount-of-matter is Class
+amount-of-matter SubClassOf physical-endurant
+arbitrary-sum is Class
+endurant is Class
+feature is Class
+feature SubClassOf physical-endurant
+non-physical-endurant is Class
+perdurant is Class
+physical-endurant is Class
+physical-endurant SubClassOf endurant,
+physical-endurant SubClassOf is-present-at some time-interval,
+physical-endurant SubClassOf constitutes-during only physical-endurant,
+physical-endurant SubClassOf has-for-constituent-during only physical-endurant,
+physical-endurant SubClassOf has-for-part-during only physical-endurant,
+physical-endurant SubClassOf has-for-quality only physical-quality,
+physical-endurant SubClassOf is-a-part-of-during only physical-endurant,
+physical-endurant SubClassOf has-for-quality min 1 spatial-location,
+physical-endurant SubClassOf is-present-in-at min 1 space-region
+physical-object is Class
+physical-object SubClassOf physical-endurant
+physical-quality is Class
+space-region is Class
+spatial-location is Class
+time-interval is Class
+inscription is Class
+support is Class
+support SubClassOf physical-endurant
+www.w3.org/2002/07/# is Class
+www.w3.org/2002/07/# DisjointClasses arbitrary-sum,non-physical-endurant,physical-endurant

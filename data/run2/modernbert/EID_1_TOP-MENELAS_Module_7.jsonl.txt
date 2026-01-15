@@ -1,0 +1,320 @@
+DEFxChangexAbstractObj is ObjectProperty.
+DEFxChangexAbstractObj Domain Change.
+DEFxChangexAbstractObj Range AbstractObject.
+DEFxChangexIdealObj is ObjectProperty.
+DEFxChangexIdealObj Domain Change.
+DEFxChangexIdealObj Range IdealObject.
+DEFxChangexSpatialObj is ObjectProperty.
+DEFxChangexSpatialObj Domain Change.
+DEFxICControllingxIO is ObjectProperty.
+DEFxICControllingxIO Domain intentional change controlling.
+DEFxICControllingxIO Range IntentionalObject.
+DEFxICxHB is ObjectProperty.
+DEFxICxHB SubPropertyOf DEFxICxPhyObj.
+DEFxICxHB Domain IntentionalChange.
+DEFxICxHB Range human being.
+DEFxICxIC is ObjectProperty.
+DEFxICxIC SubPropertyOf DEFxChangexAbstractObj.
+DEFxICxIC Domain IntentionalChange.
+DEFxICxIC Range IntentionalChange.
+DEFxICxMetaAbsObject is ObjectProperty.
+DEFxICxMetaAbsObject Domain IntentionalChange.
+DEFxICxMetaAbsObject Range MetaAbstractObject.
+DEFxICxPhyObj is ObjectProperty.
+DEFxICxPhyObj SubPropertyOf DEFxChangexAbstractObj.
+DEFxICxPhyObj Domain IntentionalChange.
+DEFxICxPhyObj Range PhysicalObject.
+DEFxICxState is ObjectProperty.
+DEFxICxState SubPropertyOf DEFxChangexAbstractObj.
+DEFxICxState Domain IntentionalChange.
+DEFxICxState Range State.
+DEFxICxStateMind is ObjectProperty.
+DEFxICxStateMind SubPropertyOf DEFxICxState.
+DEFxICxStateMind Domain IntentionalChange.
+DEFxICxStateMind Range StateOfMind.
+DEFxIOxIO is ObjectProperty.
+DEFxIOxIO Domain IntentionalObject.
+DEFxIOxIO Range IntentionalObject.
+DEFxIOxIntentionalCons is ObjectProperty.
+DEFxIOxIntentionalCons Domain IntentionalObject.
+DEFxIOxIntentionalCons Range intentional consequence.
+DEFxIOxTempObj is ObjectProperty.
+DEFxIOxTempObj Domain IntentionalObject.
+DEFxIOxTempObj Range temporal object.
+DEFxIOxTheticMod is ObjectProperty.
+DEFxIOxTheticMod Domain IntentionalObject.
+DEFxIOxTheticMod Range thetic modality.
+DEFxStateMindxTheticMod is ObjectProperty.
+DEFxStateMindxTheticMod SubPropertyOf DEFxIOxTheticMod.
+DEFxUnICxPhyObj is ObjectProperty.
+DEFxUnICxPhyObj SubPropertyOf DEFxChangexAbstractObj.
+DEFxUnICxStatePhyObj is ObjectProperty.
+DEFxUnICxStatePhyObj SubPropertyOf DEFxChangexAbstractObj.
+DEFxUnICxUnIC is ObjectProperty.
+DEFxUnICxUnIC SubPropertyOf DEFxChangexAbstractObj.
+agt is ObjectProperty.
+agt SubPropertyOf DEFxICxHB.
+agt Domain IntentionalChange.
+agt Range human being.
+altered by is ObjectProperty.
+altered by SubPropertyOf DEFxIOxIO.
+categorial dependency is ObjectProperty.
+categorial dependency SubPropertyOf DEFxIOxIO.
+categorial dependency Domain IntentionalObject.
+categorial dependency Range IntentionalObject.
+complicated by is ObjectProperty.
+complicated by SubPropertyOf DEFxICxState.
+complicated by Domain IntentionalChange.
+complicated by Range State.
+defines consequence is ObjectProperty.
+defines consequence SubPropertyOf DEFxIOxIntentionalCons.
+defines consequence Domain IntentionalObject.
+defines consequence Range intentional consequence.
+defines temporal function is ObjectProperty.
+defines temporal function SubPropertyOf DEFxIOxTempObj.
+defines temporal function Domain IntentionalObject.
+defines temporal function Range defined by IO temporal object.
+descriptive goal is ObjectProperty.
+descriptive goal SubPropertyOf DEFxICxState.
+descriptive goal Domain IntentionalChange.
+descriptive goal Range State.
+descriptive result is ObjectProperty.
+descriptive result SubPropertyOf DEFxICxState.
+descriptive result Domain IntentionalChange.
+descriptive result Range State.
+happens loc is ObjectProperty.
+happens loc SubPropertyOf DEFxChangexSpatialObj.
+happens loc Domain MaterialForm.
+has for conclusion is ObjectProperty.
+has for conclusion SubPropertyOf categorial dependency.
+has for conjunct is ObjectProperty.
+has for conjunct SubPropertyOf categorial dependency.
+has for disjunct is ObjectProperty.
+has for disjunct SubPropertyOf categorial dependency.
+has for necessary subaction is ObjectProperty.
+has for necessary subaction SubPropertyOf DEFxICxIC.
+has for necessary subaction Domain IntentionalChange.
+has for necessary subaction Range IntentionalChange.
+has for optional subaction is ObjectProperty.
+has for optional subaction SubPropertyOf DEFxICxIC.
+has for optional subaction Domain IntentionalChange.
+has for optional subaction Range IntentionalChange.
+has for premisse is ObjectProperty.
+has for premisse SubPropertyOf categorial dependency.
+inst meth is ObjectProperty.
+inst meth SubPropertyOf DEFxICxIC.
+inst meth Domain IntentionalChange.
+inst meth Range IntentionalChange.
+inst meth excl is ObjectProperty.
+inst meth excl SubPropertyOf DEFxICxIC.
+inst meth excl Domain IntentionalChange.
+inst meth excl Range IntentionalChange.
+inst tool is ObjectProperty.
+inst tool SubPropertyOf DEFxICxPhyObj.
+inst tool Domain IntentionalChange.
+inst tool Range PhysicalObject.
+inst tool excl is ObjectProperty.
+inst tool excl SubPropertyOf DEFxICxPhyObj.
+inst tool excl Domain IntentionalChange.
+inst tool excl Range PhysicalObject.
+motivated by is ObjectProperty.
+motivated by SubPropertyOf DEFxICxState.
+motivated by Domain IntentionalChange.
+motivated by Range State.
+motive is ObjectProperty.
+motive SubPropertyOf DEFxICxStateMind.
+motive Domain IntentionalChange.
+motive Range StateOfMind.
+necessary subaction of is ObjectProperty.
+necessary subaction of SubPropertyOf DEFxICxIC.
+necessary subaction of Domain IntentionalChange.
+necessary subaction of Range IntentionalChange.
+noematic modality is ObjectProperty.
+noematic modality SubPropertyOf DEFxIOxTheticMod.
+noematic modality Domain IntentionalObject.
+noematic modality Range thetic modality.
+not favoured by is ObjectProperty.
+not favoured by SubPropertyOf DEFxICxState.
+not favoured by Domain IntentionalChange.
+not favoured by Range State.
+optional subaction of is ObjectProperty.
+optional subaction of SubPropertyOf DEFxICxIC.
+optional subaction of Domain IntentionalChange.
+optional subaction of Range IntentionalChange.
+pat is ObjectProperty.
+pat SubPropertyOf DEFxICxHB.
+pat Domain IntentionalChange.
+pat Range human being.
+performative goal is ObjectProperty.
+performative goal SubPropertyOf DEFxICxIC.
+performative goal Domain IntentionalChange.
+performative goal Range IntentionalChange.
+purported abstract obj is ObjectProperty.
+purported abstract obj SubPropertyOf DEFxChangexAbstractObj.
+purported abstract obj Domain Change.
+purported abstract obj Range AbstractObject.
+purported aspect is ObjectProperty.
+purported aspect SubPropertyOf DEFxICxMetaAbsObject.
+purported aspect Domain IntentionalChange.
+purported aspect Range MetaAbstractObject.
+purported change is ObjectProperty.
+purported change SubPropertyOf DEFxICControllingxIO.
+purported change Domain intentional change about change.
+purported change Range Change.
+purported ideal obj is ObjectProperty.
+purported ideal obj SubPropertyOf DEFxChangexIdealObj.
+purported ideal obj Domain Change.
+purported ideal obj Range IdealObject.
+purported obj is ObjectProperty.
+purported obj SubPropertyOf purported abstract obj.
+purported obj Domain IntentionalChange.
+purported obj Range PhysicalObject.
+purported state is ObjectProperty.
+purported state SubPropertyOf DEFxICControllingxIO.
+purported state Domain intentional change about state.
+purported state Range State.
+rcpt is ObjectProperty.
+rcpt SubPropertyOf DEFxICxHB.
+rcpt Domain IntentionalChange.
+rcpt Range human being.
+reason is ObjectProperty.
+reason SubPropertyOf DEFxICxStateMind.
+reason Domain IntentionalChange.
+reason Range StateOfMind.
+source is ObjectProperty.
+source SubPropertyOf DEFxICxHB.
+source Domain IntentionalChange.
+source Range human being.
+timed begin at is ObjectProperty.
+timed begin at SubPropertyOf timed date.
+timed begin at Domain IntentionalObject.
+timed begin at Range date time stamp.
+timed date is ObjectProperty.
+timed date SubPropertyOf timed modality.
+timed date Domain IntentionalObject.
+timed date Range date time stamp.
+timed during is ObjectProperty.
+timed during SubPropertyOf timed modality.
+timed during Domain IntentionalObject.
+timed during Range temporal interval.
+timed end at is ObjectProperty.
+timed end at SubPropertyOf timed date.
+timed end at Domain IntentionalObject.
+timed end at Range date time stamp.
+timed modality is ObjectProperty.
+timed modality SubPropertyOf DEFxIOxTempObj.
+timed modality Domain IntentionalObject.
+timed modality Range temporal object.
+timed occurs is ObjectProperty.
+timed occurs SubPropertyOf timed date.
+timed occurs Domain IntentionalObject.
+timed occurs Range date time stamp.
+triggering factor is ObjectProperty.
+triggering factor SubPropertyOf DEFxIOxIO.
+triggering factor Domain IntentionalObject.
+triggering factor Range IntentionalObject.
+AbstractObject is Class.
+CategorialForm is Class.
+CategorialForm SubClassOf IntentionalObject.
+Change is Class.
+Change SubClassOf MaterialForm.
+IdealObject is Class.
+IntentionalChange is Class.
+IntentionalChange is equivalent to UnintentionalChange.
+IntentionalChange SubClassOf RealChange.
+IntentionalChange DisjointWith UnintentionalChange.
+IntentionalObject is Class.
+IntentionalObject SubClassOf AbstractObject.
+MaterialForm is Class.
+MaterialForm SubClassOf IntentionalObject.
+MetaAbstractObject is Class.
+PhysicalObject is Class.
+PseudoChange is Class.
+PseudoChange SubClassOf Change.
+RealChange is Class.
+RealChange SubClassOf Change.
+State is Class.
+State SubClassOf MaterialForm.
+StateOfMind is Class.
+UnintentionalChange is Class.
+UnintentionalChange is equivalent to IntentionalChange.
+UnintentionalChange SubClassOf RealChange.
+UnintentionalChange DisjointWith IntentionalChange.
+abandon is Class.
+abandon SubClassOf intentional change about state.
+adoption is Class.
+adoption SubClassOf intentional change about state.
+begin is Class.
+begin SubClassOf intentional change about change.
+cancel is Class.
+cancel SubClassOf intentional change about change.
+communicating is Class.
+communicating SubClassOf mental change dialogal action.
+complement is Class.
+complement SubClassOf intentional change about change.
+continue is Class.
+continue SubClassOf intentional change about change.
+cultural change action is Class.
+cultural change action SubClassOf physical intentional change.
+date time stamp is Class.
+defined by IO temporal object is Class.
+delegate is Class.
+delegate SubClassOf intentional change about change.
+discussing is Class.
+discussing SubClassOf mental change dialogal action.
+execute is Class.
+execute SubClassOf intentional change about change.
+fail is Class.
+fail SubClassOf intentional change about change.
+finish is Class.
+finish SubClassOf intentional change about change.
+human being is Class.
+intentional change about change is Class.
+intentional change about change SubClassOf intentional change controlling.
+intentional change about state is Class.
+intentional change about state SubClassOf intentional change controlling.
+intentional change controlling is Class.
+intentional change controlling SubClassOf IntentionalChange.
+intentional change state is Class.
+intentional change state SubClassOf IntentionalChange.
+intentional consequence is Class.
+mental change action is Class.
+mental change action SubClassOf intentional change state.
+mental change dialogal action is Class.
+mental change dialogal action SubClassOf mental change action.
+mental change external action is Class.
+mental change external action SubClassOf mental change action.
+mental change internal action is Class.
+mental change internal action SubClassOf mental change action.
+morpho change action is Class.
+morpho change action SubClassOf physical intentional change.
+persistence is Class.
+persistence SubClassOf intentional change about state.
+physical change action is Class.
+physical change action SubClassOf physical intentional change.
+physical intentional change is Class.
+physical intentional change SubClassOf intentional change state.
+plan is Class.
+plan SubClassOf intentional change about change.
+postpone is Class.
+postpone SubClassOf intentional change about change.
+repeat is Class.
+repeat SubClassOf intentional change about change.
+spatial change action is Class.
+spatial change action SubClassOf physical intentional change.
+stop is Class.
+stop SubClassOf intentional change about change.
+supervision is Class.
+supervision SubClassOf intentional change about change.
+teaching is Class.
+teaching SubClassOf mental change dialogal action.
+temporal interval is Class.
+temporal object is Class.
+thetic modality is Class.
+try is Class.
+try SubClassOf intentional change about change.
+tune is Class.
+tune SubClassOf intentional change about change.
+warning is Class.
+warning SubClassOf mental change dialogal action.
+www.w3.org/2002/07/# is Class.

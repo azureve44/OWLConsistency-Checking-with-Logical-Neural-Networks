@@ -1,0 +1,331 @@
+a pour attribut d evolution is ObjectProperty.
+a pour attribut d ordre de grandeur is ObjectProperty.
+a pour attribut de forme is ObjectProperty.
+a pour attribut de temps is ObjectProperty.
+a pour attribut objectif is ObjectProperty.
+a pour caracteristique is ObjectProperty.
+est correlatif a is ObjectProperty.
+est correlatif a un etat emotionnel negatif is ObjectProperty.
+est correlatif a un etat emotionnel positif is ObjectProperty.
+est correlatif a un etat emotionnel variable is ObjectProperty.
+CulturalState is Class.
+CulturalState SubClassOf StateOfPhysicalObject.
+MorphoState is Class.
+MorphoState SubClassOf StateOfPhysicalObject.
+PhysicalState is Class.
+PhysicalState SubClassOf StateOfPhysicalObject.
+RealState is Class.
+SpatialState is Class.
+SpatialState SubClassOf StateOfPhysicalObject.
+StateOfPhysicalObject is Class.
+StateOfPhysicalObject SubClassOf RealState.
+administrative state is Class.
+administrative state SubClassOf CulturalState.
+communication state is Class.
+communication state SubClassOf CulturalState.
+social state is Class.
+social state SubClassOf CulturalState.
+Actuel is Class.
+Bon is Class.
+Bon Entourage Amical is Class.
+Bon Entourage Amical SubClassOf Entourage Amical,.
+Bon Entourage Amical SubClassOf a pour caracteristique some Bon,.
+Bon Entourage Amical SubClassOf est correlatif a un etat emotionnel positif some Etat Emotionnel Positif.
+Bon Etayage Familial is Class.
+Bon Etayage Familial SubClassOf Etayage Familial.
+Bonne Entente Familiale is Class.
+Bonne Entente Familiale SubClassOf Entente Familiale.
+Bonne Relation Familiale is Class.
+Bonne Relation Familiale SubClassOf Relation Familiale Avec Qualificatif.
+Christianisme is Class.
+Christianisme SubClassOf Religion.
+Concept Relationnel is Class.
+Concept Relationnel SubClassOf social state.
+Concubinage is Class.
+Concubinage SubClassOf Union Civile.
+Conflit is Class.
+Conflit SubClassOf Mesentente.
+Conflit Professionnel is Class.
+Conflit Professionnel SubClassOf Conflit Relationnel.
+Conflit Relationnel is Class.
+Conflit Relationnel SubClassOf Conflit.
+Conflit Relationnel DisjointWith Important.
+Conflit Social is Class.
+Conflit Social SubClassOf Conflit.
+Contexte Conflit Conjugal is Class.
+Contexte Conflit Conjugal SubClassOf Conflit Relationnel.
+Contexte Conflit Intrafamilial is Class.
+Contexte Conflit Intrafamilial SubClassOf Conflit Relationnel.
+Contexte Conjugal Difficile is Class.
+Contexte Conjugal Difficile SubClassOf Relation Conjugale,.
+Contexte Conjugal Difficile SubClassOf est correlatif a un etat emotionnel negatif some Etat Emotionnel Negatif.
+Contexte Stress Familial is Class.
+Contexte Stress Familial SubClassOf Relation Familiale Avec Qualificatif.
+Dependance is Class.
+Dependance SubClassOf Relation De Subordination.
+Dependance Affective is Class.
+Dependance Affective SubClassOf Dependance.
+Dependance Financiere is Class.
+Dependance Financiere SubClassOf Dependance.
+Discorde Au Travail is Class.
+Discorde Au Travail SubClassOf Dispute,.
+Discorde Au Travail SubClassOf est correlatif a some Travail.
+Dispute is Class.
+Dispute SubClassOf Mesentente.
+Dispute Recurrente is Class.
+Dispute Recurrente SubClassOf Dispute.
+Durable is Class.
+Entente is Class.
+Entente SubClassOf Concept Relationnel.
+Entente Familiale is Class.
+Entente Familiale SubClassOf Entente.
+Entourage Amical is Class.
+Entourage Amical SubClassOf Relation Interpersonnelle.
+Entourage Familial is Class.
+Entourage Familial SubClassOf Relation Interpersonnelle.
+Episodique is Class.
+Etat Emotionnel Negatif is Class.
+Etat Emotionnel Positif is Class.
+Etat Emotionnel Variable is Class.
+Etayage is Class.
+Etayage SubClassOf Concept Relationnel.
+Etayage Amical is Class.
+Etayage Amical SubClassOf Etayage.
+Etayage Familial is Class.
+Etayage Familial SubClassOf Etayage,.
+Etayage Familial SubClassOf est correlatif a some Famille.
+Etayage Hospitalier is Class.
+Etayage Hospitalier SubClassOf Etayage,.
+Etayage Hospitalier SubClassOf est correlatif a some Hopital Personne Morale.
+Etayage Institutionnel is Class.
+Etayage Institutionnel SubClassOf Etayage,.
+Etayage Institutionnel SubClassOf est correlatif a some Personne Morale Droit Public.
+Famille is Class.
+Fiancaille is Class.
+Fiancaille SubClassOf Union Civile.
+Fiancaille Membre Famille is Class.
+Fiancaille Membre Famille SubClassOf Fiancaille.
+Grand Isolement Social is Class.
+Grand Isolement Social SubClassOf Isolement Social.
+Heterosexualite is Class.
+Homosexualite is Class.
+Hopital Personne Morale is Class.
+Important is Class.
+Important DisjointWith Conflit Relationnel.
+Islam is Class.
+Islam SubClassOf Religion.
+Isolement is Class.
+Isolement SubClassOf Concept Relationnel,.
+Isolement SubClassOf est correlatif a un etat emotionnel negatif some Etat Emotionnel Negatif.
+Isolement Amical is Class.
+Isolement Amical SubClassOf Isolement Avec Type.
+Isolement Avec Degre is Class.
+Isolement Avec Degre SubClassOf Isolement.
+Isolement Avec Lieu is Class.
+Isolement Avec Lieu SubClassOf Isolement.
+Isolement Avec Type is Class.
+Isolement Avec Type SubClassOf Isolement.
+Isolement Domicile is Class.
+Isolement Domicile SubClassOf Isolement Avec Lieu.
+Isolement Familial is Class.
+Isolement Familial SubClassOf Isolement Avec Type,.
+Isolement Familial SubClassOf est correlatif a some Famille.
+Isolement Hopital is Class.
+Isolement Hopital SubClassOf Isolement Avec Lieu.
+Isolement Important is Class.
+Isolement Important SubClassOf Isolement Avec Degre,.
+Isolement Important SubClassOf a pour attribut d ordre de grandeur some Important,.
+Isolement Important SubClassOf a pour attribut d ordre de grandeur some.
+Isolement Important SubClassOf (Conflit Relationnel and Important),.
+Isolement Important SubClassOf a pour attribut d ordre de grandeur only Conflit Relationnel.
+Isolement Sequentiel is Class.
+Isolement Sequentiel SubClassOf Isolement Avec Degre,.
+Isolement Sequentiel SubClassOf a pour attribut d evolution some Sequentiel.
+Isolement Social is Class.
+Isolement Social SubClassOf Isolement Avec Type.
+Judaisme is Class.
+Judaisme SubClassOf Religion.
+Mariage Avec Type is Class.
+Mariage Avec Type SubClassOf Mariage Civil.
+Mariage Civil is Class.
+Mariage Civil SubClassOf Union Civile.
+Mariage Membre Famille is Class.
+Mariage Membre Famille SubClassOf Mariage Civil.
+Mariage Religieux is Class.
+Mariage Religieux SubClassOf Union Religieuse.
+Mesentente is Class.
+Mesentente SubClassOf Concept Relationnel,.
+Mesentente SubClassOf est correlatif a un etat emotionnel negatif some Etat Emotionnel Negatif.
+Orientation Union Civile is Class.
+Orientation Union Civile SubClassOf Union Civile.
+Pacte Civil De Solidarite is Class.
+Pacte Civil De Solidarite SubClassOf Union Civile.
+Personne Morale Droit Public is Class.
+Prive is Class.
+Publique is Class.
+Regulier is Class.
+Relatif Isolement Social is Class.
+Relatif Isolement Social SubClassOf Isolement Social.
+Relation Actuelle is Class.
+Relation Actuelle SubClassOf Relation Impact Etayage Variable,.
+Relation Actuelle SubClassOf a pour attribut de temps some Actuel.
+Relation Affective is Class.
+Relation Affective SubClassOf Relation Impact Etayage Variable.
+Relation Amoureuse is Class.
+Relation Amoureuse SubClassOf Relation Affective.
+Relation Chaotique is Class.
+Relation Chaotique SubClassOf Relation Impact Etayage Negatif.
+Relation Complexe is Class.
+Relation Complexe SubClassOf Relation Impact Etayage Variable.
+Relation Compliquee is Class.
+Relation Compliquee SubClassOf Relation Impact Etayage Negatif.
+Relation Conflictuelle is Class.
+Relation Conflictuelle SubClassOf Relation Impact Etayage Negatif.
+Relation Conjugale is Class.
+Relation Conjugale SubClassOf Relation Interpersonnelle.
+Relation De Subordination is Class.
+Relation De Subordination SubClassOf Relation Personnelle.
+Relation Difficile is Class.
+Relation Difficile SubClassOf Relation Impact Etayage Negatif.
+Relation Distante is Class.
+Relation Distante SubClassOf Relation Impact Etayage Variable.
+Relation Durable is Class.
+Relation Durable SubClassOf Relation Impact Etayage Variable,.
+Relation Durable SubClassOf a pour attribut de temps some Durable.
+Relation Episodique is Class.
+Relation Episodique SubClassOf Relation Impact Etayage Variable,.
+Relation Episodique SubClassOf a pour attribut de temps some Episodique.
+Relation Extraconjugale is Class.
+Relation Extraconjugale SubClassOf Relation Interpersonnelle.
+Relation Familiale Avec Qualificatif is Class.
+Relation Familiale Avec Qualificatif SubClassOf Relation Interpersonnelle Famille.
+Relation Familiale Avec Type is Class.
+Relation Familiale Avec Type SubClassOf Relation Interpersonnelle Famille.
+Relation Familiale Conflictuelle is Class.
+Relation Familiale Conflictuelle SubClassOf Relation Familiale Avec Qualificatif.
+Relation Fratrie is Class.
+Relation Fratrie SubClassOf Relation Familiale Avec Type.
+Relation Fusionnelle is Class.
+Relation Fusionnelle SubClassOf Relation Impact Etayage Variable.
+Relation Heterosexuelle is Class.
+Relation Heterosexuelle SubClassOf Relation Interpersonnelle Sexualite,.
+Relation Heterosexuelle SubClassOf est correlatif a some Heterosexualite.
+Relation Homosexuelle is Class.
+Relation Homosexuelle SubClassOf Relation Interpersonnelle Sexualite,.
+Relation Homosexuelle SubClassOf est correlatif a some Homosexualite.
+Relation Impact Etayage Negatif is Class.
+Relation Impact Etayage Negatif SubClassOf Relation Selon Impact Etayage,.
+Relation Impact Etayage Negatif SubClassOf est correlatif a un etat emotionnel negatif some Etat Emotionnel Negatif.
+Relation Impact Etayage Positif is Class.
+Relation Impact Etayage Positif SubClassOf Relation Selon Impact Etayage,.
+Relation Impact Etayage Positif SubClassOf est correlatif a un etat emotionnel positif some Etat Emotionnel Positif.
+Relation Impact Etayage Variable is Class.
+Relation Impact Etayage Variable SubClassOf Relation Selon Impact Etayage,.
+Relation Impact Etayage Variable SubClassOf est correlatif a un etat emotionnel variable some Etat Emotionnel Variable.
+Relation Incestueuse is Class.
+Relation Incestueuse SubClassOf Relation Familiale Avec Type.
+Relation Instable is Class.
+Relation Instable is equivalent to Relation Stable.
+Relation Instable SubClassOf Relation Impact Etayage Negatif.
+Relation Instable DisjointWith Relation Stable.
+Relation Interpersonnelle is Class.
+Relation Interpersonnelle SubClassOf Concept Relationnel.
+Relation Interpersonnelle Famille is Class.
+Relation Interpersonnelle Famille SubClassOf Relation Interpersonnelle,.
+Relation Interpersonnelle Famille SubClassOf est correlatif a some Famille.
+Relation Interpersonnelle Sexualite is Class.
+Relation Interpersonnelle Sexualite SubClassOf Relation Interpersonnelle.
+Relation Interpersonnelle Travail is Class.
+Relation Interpersonnelle Travail SubClassOf Relation Interpersonnelle,.
+Relation Interpersonnelle Travail SubClassOf est correlatif a some Travail.
+Relation Intime is Class.
+Relation Intime SubClassOf Relation Impact Etayage Variable.
+Relation Juridique is Class.
+Relation Juridique SubClassOf Relation Interpersonnelle.
+Relation Maritale is Class.
+Relation Maritale SubClassOf Relation Interpersonnelle,.
+Relation Maritale SubClassOf est correlatif a some Mariage Civil.
+Relation Ordre Divin is Class.
+Relation Ordre Divin SubClassOf Relation Personnelle.
+Relation Parent Enfant is Class.
+Relation Parent Enfant SubClassOf Relation Familiale Avec Type.
+Relation Passionnelle is Class.
+Relation Passionnelle SubClassOf Relation Impact Etayage Variable.
+Relation Passionnelle Unilaterale is Class.
+Relation Passionnelle Unilaterale SubClassOf Relation Passionnelle.
+Relation Pathologique is Class.
+Relation Pathologique SubClassOf Relation Impact Etayage Negatif.
+Relation Personnelle is Class.
+Relation Personnelle SubClassOf Concept Relationnel.
+Relation Privee is Class.
+Relation Privee SubClassOf Relation Impact Etayage Variable,.
+Relation Privee SubClassOf a pour attribut objectif some Prive.
+Relation Privilegiee is Class.
+Relation Privilegiee SubClassOf Relation Impact Etayage Positif.
+Relation Proche is Class.
+Relation Proche SubClassOf Relation Impact Etayage Positif.
+Relation Publique is Class.
+Relation Publique SubClassOf Relation Impact Etayage Variable,.
+Relation Publique SubClassOf a pour attribut objectif some Publique.
+Relation Reguliere is Class.
+Relation Reguliere SubClassOf Relation Impact Etayage Positif,.
+Relation Reguliere SubClassOf a pour attribut de forme some Regulier.
+Relation Selon Impact Etayage is Class.
+Relation Selon Impact Etayage SubClassOf Concept Relationnel.
+Relation Sentimentale is Class.
+Relation Sentimentale SubClassOf Relation Interpersonnelle.
+Relation Sentimentale Actuelle is Class.
+Relation Sentimentale Actuelle SubClassOf Relation Sentimentale,.
+Relation Sentimentale Actuelle SubClassOf a pour attribut de temps some Actuel.
+Relation Sentimentale Complexe is Class.
+Relation Sentimentale Complexe SubClassOf Relation Sentimentale.
+Relation Sentimentale Stable is Class.
+Relation Sentimentale Stable SubClassOf Relation Sentimentale.
+Relation Sexuelle is Class.
+Relation Sexuelle SubClassOf Relation Interpersonnelle Sexualite,.
+Relation Sexuelle SubClassOf est correlatif a some Sexualite.
+Relation Sexuelle Deviante is Class.
+Relation Sexuelle Deviante SubClassOf Relation Sexuelle.
+Relation Stable is Class.
+Relation Stable is equivalent to Relation Instable.
+Relation Stable SubClassOf Relation Impact Etayage Positif.
+Relation Stable DisjointWith Relation Instable.
+Relation Travail is Class.
+Relation Travail SubClassOf Relation Interpersonnelle Travail.
+Relation Via Reseaux Sociaux is Class.
+Relation Via Reseaux Sociaux SubClassOf Relation Interpersonnelle.
+Religion is Class.
+Religion SubClassOf Relation Ordre Divin.
+Remariage is Class.
+Remariage SubClassOf Mariage Civil.
+Remariage Religieux is Class.
+Remariage Religieux SubClassOf Mariage Religieux.
+Rencontre is Class.
+Rencontre SubClassOf Concept Relationnel.
+Reseau is Class.
+Reseau SubClassOf Relation Interpersonnelle.
+Reseau Amical is Class.
+Reseau Amical SubClassOf Reseau Social.
+Reseau Relationnel is Class.
+Reseau Relationnel SubClassOf Reseau Social.
+Reseau Social is Class.
+Reseau Social SubClassOf Reseau.
+Reseau Social Pauvre is Class.
+Reseau Social Pauvre SubClassOf Reseau Social.
+Sequentiel is Class.
+Sexualite is Class.
+Travail is Class.
+Union is Class.
+Union SubClassOf Concept Relationnel.
+Union Civile is Class.
+Union Civile SubClassOf Fiancaille Membre Famille,.
+Union Civile SubClassOf Union.
+Union Heterosexuelle is Class.
+Union Heterosexuelle SubClassOf Orientation Union Civile.
+Union Homosexuelle is Class.
+Union Homosexuelle SubClassOf Orientation Union Civile.
+Union Religieuse is Class.
+Union Religieuse SubClassOf Union.
+Violente Dispute is Class.
+Violente Dispute SubClassOf Dispute.
+www.w3.org/2002/07/# is Class.

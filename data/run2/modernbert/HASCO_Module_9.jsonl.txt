@@ -1,0 +1,656 @@
+double is Datatype.
+float is Datatype.
+integer is Datatype.
+string is Datatype.
+hasFirstCoordinateCharacteristic is ObjectProperty.
+hasFirstCoordinateCharacteristic Domain Platform.
+hasFirstCoordinateUnit is ObjectProperty.
+hasFirstCoordinateUnit Domain Platform.
+hasMedia is ObjectProperty.
+hasMedia Domain Instrument.
+hasOperatingTemperatureUnit is ObjectProperty.
+hasOperatingTemperatureUnit Characteristics Functional.
+hasOperatingTemperatureUnit Domain Platform.
+hasPerspectiveCharacteristic is ObjectProperty.
+hasPerspectiveCharacteristic Domain SensingPerspective.
+hasResponseTimeUnit is ObjectProperty.
+hasResponseTimeUnit Domain SensingPerspective.
+hasSecondCoordinateCharacteristic is ObjectProperty.
+hasSecondCoordinateCharacteristic Domain Platform.
+hasSecondCoordinateUnit is ObjectProperty.
+hasSecondCoordinateUnit Domain Platform.
+hasThirdCoordinateCharacteristic is ObjectProperty.
+hasThirdCoordinateCharacteristic Domain Platform.
+hasThirdCoordinateUnit is ObjectProperty.
+hasThirdCoordinateUnit Domain Platform.
+hasTimedRoute is ObjectProperty.
+hasTimedRoute Domain Platform.
+hasTimedRoute Range TimedRoute.
+hasXUnit is ObjectProperty.
+hasXUnit Domain Platform.
+hasYUnit is ObjectProperty.
+hasYUnit Domain Platform.
+hasZUnit is ObjectProperty.
+hasZUnit Domain Platform.
+hasDeployment is ObjectProperty.
+hasDeployment Domain Platform.
+hasDeployment Range Deployment.
+hasInstrumentOperatingMode is ObjectProperty.
+hasInstrumentOperatingMode Domain Instrument.
+hasInstrumentOperatingMode Range InstrumentOperatingMode.
+hasMeasuredCharacteristic is ObjectProperty.
+hasMeasuredCharacteristic Domain Detector.
+isInstrumentAttachment is ObjectProperty.
+isInstrumentAttachment Characteristics Functional.
+isInstrumentAttachment Domain Detector.
+isInstrumentAttachment Range Instrument.
+perspectiveOf is ObjectProperty.
+perspectiveOf Domain SensingPerspective.
+perspectiveOf Range Detector.
+SIO 000008 is ObjectProperty.
+SIO 000011 is ObjectProperty.
+SIO 000028 is ObjectProperty.
+SIO 000053 is ObjectProperty.
+SIO 000093 is ObjectProperty.
+SIO 000096 is ObjectProperty.
+SIO 000132 is ObjectProperty.
+SIO 000210 is ObjectProperty.
+SIO 000218 is ObjectProperty.
+SIO 000228 is ObjectProperty.
+SIO 000245 is ObjectProperty.
+SIO 000245 Characteristics Transitive.
+SIO 000245 Domain SIO 000776.
+SIO 000245 Range SIO 000776.
+SIO 000246 is ObjectProperty.
+SIO 000246 SubPropertyOf SIO 000245.
+SIO 000273 is ObjectProperty.
+SIO 000310 is ObjectProperty.
+SIO 000332 is ObjectProperty.
+SIO 000338 is ObjectProperty.
+SIO 000563 is ObjectProperty.
+SIO 000586 is ObjectProperty.
+SIO 000644 is ObjectProperty.
+SIO 000668 is ObjectProperty.
+SIO 000697 is ObjectProperty.
+SIO 010078 is ObjectProperty.
+annotationProperty is ObjectProperty.
+annotationProperty Domain ResultAnnotation.
+hasAccuracyPercentage is DataProperty.
+hasAccuracyPercentage Domain SensingPerspective.
+hasAccuracyPercentage Range float.
+hasAccuracyR2 is DataProperty.
+hasAccuracyR2 Domain SensingPerspective.
+hasAccuracyR2 Range float.
+hasDimensions is DataProperty.
+hasDimensions Characteristics Functional.
+hasDimensions Domain Detector.
+hasDimensions Range string.
+hasFocalLength is DataProperty.
+hasFocalLength Domain OpticalInstrument.
+hasFocalLength Range string.
+hasHighRangeValue is DataProperty.
+hasHighRangeValue Domain SensingPerspective.
+hasHighRangeValue Range float.
+hasLowRangeValue is DataProperty.
+hasLowRangeValue Domain SensingPerspective.
+hasLowRangeValue Range float.
+hasMaxResponseTimeValue is DataProperty.
+hasMaxResponseTimeValue Domain Detector.
+hasMaxResponseTimeValue Range float.
+hasOutputResolution is DataProperty.
+hasOutputResolution Domain SensingPerspective.
+hasOutputResolution Range float.
+hasPixelScale is DataProperty.
+hasPixelScale Characteristics Functional.
+hasPixelScale Domain Detector.
+hasPixelScale Range string.
+hasQuantumEfficiency is DataProperty.
+hasQuantumEfficiency Characteristics Functional.
+hasQuantumEfficiency Domain Detector.
+hasQuantumEfficiency Range string.
+hasX is DataProperty.
+hasX Domain Platform.
+hasX Range float.
+hasY is DataProperty.
+hasY Domain Platform.
+hasY Range float.
+hasZ is DataProperty.
+hasZ Domain Platform.
+hasZ Range float.
+maxDetachableDetectors is DataProperty.
+maxDetachableDetectors Domain Instrument.
+maxDetachableDetectors Range integer.
+maxLoggedMeasurements is DataProperty.
+maxLoggedMeasurements Domain Instrument.
+maxLoggedMeasurements Range double.
+maxOperatingTemperature is DataProperty.
+maxOperatingTemperature Domain Instrument.
+maxOperatingTemperature Range float.
+minOperatingTemperature is DataProperty.
+minOperatingTemperature Domain Instrument.
+minOperatingTemperature Range float.
+numAttachedDetectors is DataProperty.
+numAttachedDetectors Domain Instrument.
+numAttachedDetectors Range integer.
+SIO 000300 is DataProperty.
+annotationVarName is DataProperty.
+annotationVarName Domain ResultAnnotation.
+annotationVarName Range string.
+Editor is Class.
+Editor SubClassOf Widget.
+LangStringViewer is Class.
+MultiEditor is Class.
+MultiEditor SubClassOf Editor.
+ShapeClass is Class.
+ShapeClass SubClassOf NodeShape.
+SingleEditor is Class.
+SingleEditor SubClassOf Editor.
+Widget is Class.
+isLanguageIn is Class.
+isSubClassOf-subclass is Class.
+NodeShapeShape is Class.
+Schema-publicClass is Class.
+Schema-publicNamespace is Class.
+privateShape is Class.
+InstrumentPerspective is Class.
+InstrumentPerspective SubClassOf Instrument.
+TimedRoute is Class.
+TimedRoute SubClassOf SIO 000414.
+BiStaticRadar is Class.
+BiStaticRadar SubClassOf Radar.
+BirefringentFilter is Class.
+BirefringentFilter SubClassOf FilterInstrument.
+CCD is Class.
+CCD SubClassOf ImagingDetector.
+CCD DisjointWith Thermometer.
+CCD DisjointWith Film.
+CoherentIonosphericRadar is Class.
+CoherentIonosphericRadar SubClassOf Radar.
+Dataset is Class.
+Dataset DisjointWith Observatory.
+Dataset DisjointWith Instrument.
+Dataset DisjointWith Detector.
+Deployment is Class.
+Detector is Class.
+Detector SubClassOf SIO 000776.
+Detector DisjointWith Observatory.
+Detector DisjointWith Instrument.
+Detector DisjointWith Dataset.
+DetectorStem is Class.
+DetectorStem SubClassOf SIO 000776.
+DopplerRadar is Class.
+DopplerRadar SubClassOf Radar.
+Film is Class.
+Film SubClassOf ImagingDetector.
+Film DisjointWith Thermometer.
+Film DisjointWith CCD.
+FilterInstrument is Class.
+FilterInstrument SubClassOf PhysicalInstrument.
+FilterInstrument DisjointWith Telescope.
+FilterInstrument DisjointWith OpticalInstrument.
+GroundBasedIndices is Class.
+GroundBasedIndices SubClassOf PhysicalInstrument.
+GroundBasedInstrument is Class.
+GroundBasedInstrument SubClassOf PhysicalInstrument.
+GroundBasedRadar is Class.
+GroundBasedRadar SubClassOf Radar.
+Heliograph is Class.
+Heliograph SubClassOf OpticalInstrument.
+Imager is Class.
+Imager SubClassOf OpticalInstrument.
+ImagingDetector is Class.
+ImagingDetector SubClassOf Detector.
+IncoherentScatterRadar is Class.
+IncoherentScatterRadar SubClassOf Radar.
+Instrument is Class.
+Instrument SubClassOf SIO 000776.
+Instrument DisjointWith Observatory.
+Instrument DisjointWith Detector.
+Instrument DisjointWith Dataset.
+InstrumentOperatingMode is Class.
+InterferenceFilter is Class.
+InterferenceFilter SubClassOf FilterInstrument.
+Interferometer is Class.
+Interferometer SubClassOf OpticalInstrument.
+IonSonde is Class.
+IonSonde SubClassOf Sounder.
+Laboratory is Class.
+Laboratory SubClassOf Platform.
+Lidar is Class.
+Lidar SubClassOf OpticalInstrument.
+LyotFilter is Class.
+LyotFilter SubClassOf FilterInstrument.
+Magnetometer is Class.
+Magnetometer SubClassOf PhysicalInstrument.
+MiddleAtmosphereRadar is Class.
+MiddleAtmosphereRadar SubClassOf Radar.
+Model is Class.
+Model SubClassOf Instrument.
+Observatory is Class.
+Observatory SubClassOf SIO 000019.
+Observatory DisjointWith Instrument.
+Observatory DisjointWith Detector.
+Observatory DisjointWith Dataset.
+OpticalInstrument is Class.
+OpticalInstrument SubClassOf PhysicalInstrument.
+OpticalInstrument DisjointWith Telescope.
+OpticalInstrument DisjointWith FilterInstrument.
+OzoneSonde is Class.
+OzoneSonde SubClassOf Sounder.
+PhasedArrayRadar is Class.
+PhasedArrayRadar SubClassOf Radar.
+Photometer is Class.
+Photometer SubClassOf OpticalInstrument.
+PhysicalInstrument is Class.
+PhysicalInstrument SubClassOf Instrument.
+Platform is Class.
+Platform SubClassOf SIO 000019.
+Polarimeter is Class.
+Polarimeter SubClassOf OpticalInstrument.
+Questionnaire is Class.
+Questionnaire SubClassOf Instrument.
+Radar is Class.
+Radar SubClassOf PhysicalInstrument.
+SensingPerspective is Class.
+SensingPerspective is equivalent to perspectiveOf some Detector.
+SensingPerspective SubClassOf Detector.
+Sounder is Class.
+Sounder SubClassOf PhysicalInstrument.
+SpaceCraft is Class.
+SpaceCraft SubClassOf PhysicalInstrument.
+Spectrograph is Class.
+Spectrograph SubClassOf PhysicalInstrument.
+Spectrometer is Class.
+Spectrometer SubClassOf OpticalInstrument.
+SyntheticApertureRadar is Class.
+SyntheticApertureRadar SubClassOf Radar.
+Telescope is Class.
+Telescope SubClassOf PhysicalInstrument.
+Telescope DisjointWith OpticalInstrument.
+Telescope DisjointWith FilterInstrument.
+Thermometer is Class.
+Thermometer SubClassOf Detector.
+Thermometer DisjointWith Film.
+Thermometer DisjointWith CCD.
+SIO 000000 is Class.
+SIO 000004 is Class.
+SIO 000004 SubClassOf SIO 000776.
+SIO 000006 is Class.
+SIO 000015 is Class.
+SIO 000015 SubClassOf SIO 000776.
+SIO 000019 is Class.
+SIO 000019 SubClassOf SIO 000370.
+SIO 000022 is Class.
+SIO 000022 SubClassOf SIO 000783,.
+SIO 000022 SubClassOf SIO 000096 some SIO 000004.
+SIO 000030 is Class.
+SIO 000030 SubClassOf SIO 010014,.
+SIO 000030 SubClassOf SIO 000210 some.
+SIO 000030 SubClassOf (SIO 000626 and (SIO 000011 some SIO 000092)),.
+SIO 000030 SubClassOf SIO 000563 some SIO 000092,.
+SIO 000030 SubClassOf SIO 000300 some string.
+SIO 000072 is Class.
+SIO 000077 is Class.
+SIO 000077 SubClassOf SIO 000116.
+SIO 000088 is Class.
+SIO 000092 is Class.
+SIO 000111 is Class.
+SIO 000115 is Class.
+SIO 000116 is Class.
+SIO 000144 is Class.
+SIO 000182 is Class.
+SIO 000182 SubClassOf SIO 000116.
+SIO 000196 is Class.
+SIO 000196 SubClassOf SIO 000111.
+SIO 000268 is Class.
+SIO 000284 is Class.
+SIO 000295 is Class.
+SIO 000296 is Class.
+SIO 000296 SubClassOf SIO 000295,.
+SIO 000296 SubClassOf SIO 000273 some SIO 000302.
+SIO 000302 is Class.
+SIO 000328 is Class.
+SIO 000333 is Class.
+SIO 000340 is Class.
+SIO 000343 is Class.
+SIO 000346 is Class.
+SIO 000346 SubClassOf SIO 000351.
+SIO 000349 is Class.
+SIO 000349 SubClassOf SIO 000343.
+SIO 000351 is Class.
+SIO 000353 is Class.
+SIO 000370 is Class.
+SIO 000370 SubClassOf SIO 000776,.
+SIO 000370 SubClassOf SIO 000028 only SIO 000370.
+SIO 000373 is Class.
+SIO 000373 SubClassOf SIO 000346.
+SIO 000376 is Class.
+SIO 000376 SubClassOf SIO 000343.
+SIO 000382 is Class.
+SIO 000382 SubClassOf SIO 000349.
+SIO 000389 is Class.
+SIO 000389 SubClassOf SIO 000349.
+SIO 000393 is Class.
+SIO 000393 SubClassOf SIO 000498,.
+SIO 000393 SubClassOf SIO 000228 some SIO 000715.
+SIO 000394 is Class.
+SIO 000394 SubClassOf SIO 000716.
+SIO 000395 is Class.
+SIO 000398 is Class.
+SIO 000398 SubClassOf SIO 000716.
+SIO 000399 is Class.
+SIO 000399 SubClassOf SIO 000498.
+SIO 000400 is Class.
+SIO 000400 SubClassOf SIO 000072.
+SIO 000401 is Class.
+SIO 000402 is Class.
+SIO 000404 is Class.
+SIO 000404 SubClassOf SIO 000406.
+SIO 000405 is Class.
+SIO 000405 SubClassOf SIO 000406.
+SIO 000406 is Class.
+SIO 000406 SubClassOf SIO 000498.
+SIO 000407 is Class.
+SIO 000407 SubClassOf SIO 000536.
+SIO 000413 is Class.
+SIO 000413 SubClassOf SIO 000414.
+SIO 000414 is Class.
+SIO 000414 SubClassOf SIO 000370.
+SIO 000415 is Class.
+SIO 000415 SubClassOf SIO 000413.
+SIO 000461 is Class.
+SIO 000462 is Class.
+SIO 000462 SubClassOf SIO 000461.
+SIO 000462 DisjointWith SIO 000463.
+SIO 000463 is Class.
+SIO 000463 DisjointWith SIO 000462.
+SIO 000489 is Class.
+SIO 000489 SubClassOf SIO 010376.
+SIO 000498 is Class.
+SIO 000498 SubClassOf SIO 001353.
+SIO 000499 is Class.
+SIO 000499 SubClassOf SIO 000536.
+SIO 000536 is Class.
+SIO 000536 SubClassOf SIO 000395.
+SIO 000547 is Class.
+SIO 000547 SubClassOf SIO 000376.
+SIO 000614 is Class.
+SIO 000626 is Class.
+SIO 000660 is Class.
+SIO 000660 SubClassOf SIO 000019.
+SIO 000694 is Class.
+SIO 000695 is Class.
+SIO 000695 SubClassOf SIO 000696.
+SIO 000696 is Class.
+SIO 000696 SubClassOf SIO 000694,.
+SIO 000696 SubClassOf SIO 000697 some SIO 000353.
+SIO 000698 is Class.
+SIO 000698 SubClassOf SIO 000376.
+SIO 000706 is Class.
+SIO 000711 is Class.
+SIO 000712 is Class.
+SIO 000712 SubClassOf SIO 000706.
+SIO 000713 is Class.
+SIO 000713 SubClassOf SIO 000712.
+SIO 000714 is Class.
+SIO 000714 SubClassOf SIO 000712.
+SIO 000715 is Class.
+SIO 000715 SubClassOf SIO 000712.
+SIO 000716 is Class.
+SIO 000716 SubClassOf SIO 000498.
+SIO 000717 is Class.
+SIO 000717 SubClassOf SIO 000712.
+SIO 000725 is Class.
+SIO 000725 SubClassOf SIO 000696.
+SIO 000726 is Class.
+SIO 000726 SubClassOf SIO 000706.
+SIO 000727 is Class.
+SIO 000727 SubClassOf SIO 000726.
+SIO 000729 is Class.
+SIO 000729 SubClassOf SIO 000731.
+SIO 000731 is Class.
+SIO 000731 SubClassOf SIO 000115.
+SIO 000766 is Class.
+SIO 000766 SubClassOf SIO 000328.
+SIO 000771 is Class.
+SIO 000771 SubClassOf SIO 000088.
+SIO 000776 is Class.
+SIO 000776 SubClassOf SIO 000000,.
+SIO 000776 SubClassOf SIO 000053 only SIO 000776.
+SIO 000779 is Class.
+SIO 000779 SubClassOf SIO 010008,.
+SIO 000779 SubClassOf SIO 010008 and (SIO 000586 some.
+SIO 000779 SubClassOf (SIO 000780 and (SIO 000586 some SIO 010094) and (SIO 000668 some.
+SIO 000779 SubClassOf (SIO 010008 and (SIO 000586 some SIO 010091))))).
+SIO 000780 is Class.
+SIO 000783 is Class.
+SIO 000783 SubClassOf SIO 000370.
+SIO 000789 is Class.
+SIO 000790 is Class.
+SIO 000791 is Class.
+SIO 000791 SubClassOf SIO 000789,.
+SIO 000791 SubClassOf SIO 000943.
+SIO 000796 is Class.
+SIO 000796 SubClassOf SIO 000880.
+SIO 000811 is Class.
+SIO 000811 SubClassOf SIO 000731.
+SIO 000876 is Class.
+SIO 000876 SubClassOf SIO 000711.
+SIO 000877 is Class.
+SIO 000877 SubClassOf SIO 000876.
+SIO 000878 is Class.
+SIO 000878 SubClassOf SIO 000876.
+SIO 000880 is Class.
+SIO 000943 is Class.
+SIO 000952 is Class.
+SIO 000952 SubClassOf SIO 000144.
+SIO 000953 is Class.
+SIO 000955 is Class.
+SIO 000955 SubClassOf SIO 000414.
+SIO 000956 is Class.
+SIO 000960 is Class.
+SIO 000966 is Class.
+SIO 000976 is Class.
+SIO 000976 SubClassOf SIO 000994,.
+SIO 000976 SubClassOf SIO 000132 some SIO 000284,.
+SIO 000976 SubClassOf SIO 000338 some.
+SIO 000976 SubClassOf (SIO 000268 and (SIO 000218 some SIO 000284)).
+SIO 000989 is Class.
+SIO 000989 SubClassOf SIO 000030.
+SIO 000991 is Class.
+SIO 000991 SubClassOf SIO 010035,.
+SIO 000991 SubClassOf SIO 000008 some SIO 000960.
+SIO 000994 is Class.
+SIO 001044 is Class.
+SIO 001044 SubClassOf SIO 010378.
+SIO 001058 is Class.
+SIO 001058 SubClassOf SIO 001072.
+SIO 001067 is Class.
+SIO 001067 SubClassOf SIO 000976.
+SIO 001072 is Class.
+SIO 001072 SubClassOf SIO 000953.
+SIO 001085 is Class.
+SIO 001085 SubClassOf SIO 010340.
+SIO 001103 is Class.
+SIO 001103 SubClassOf SIO 010366.
+SIO 001104 is Class.
+SIO 001104 SubClassOf SIO 010366.
+SIO 001132 is Class.
+SIO 001174 is Class.
+SIO 001176 is Class.
+SIO 001176 SubClassOf SIO 001174.
+SIO 001179 is Class.
+SIO 001179 SubClassOf SIO 000966.
+SIO 001185 is Class.
+SIO 001185 SubClassOf SIO 000731.
+SIO 001229 is Class.
+SIO 001229 SubClassOf SIO 000790,.
+SIO 001229 SubClassOf SIO 010078 some SIO 001234.
+SIO 001234 is Class.
+SIO 001236 is Class.
+SIO 001236 SubClassOf SIO 000956.
+SIO 001237 is Class.
+SIO 001237 SubClassOf SIO 001236.
+SIO 001238 is Class.
+SIO 001238 SubClassOf SIO 001236.
+SIO 001240 is Class.
+SIO 001240 SubClassOf SIO 001236.
+SIO 001262 is Class.
+SIO 001262 is equivalent to (SIO 000004 or SIO 000370) and (SIO 000310 some SIO 010046).
+SIO 001262 SubClassOf SIO 001353.
+SIO 001319 is Class.
+SIO 001319 SubClassOf SIO 000731.
+SIO 001322 is Class.
+SIO 001322 SubClassOf SIO 000731.
+SIO 001323 is Class.
+SIO 001323 SubClassOf SIO 000731.
+SIO 001336 is Class.
+SIO 001336 SubClassOf SIO 010775.
+SIO 001353 is Class.
+SIO 001353 is equivalent to SIO 000776 and (SIO 000644 some SIO 000340).
+SIO 001353 SubClassOf SIO 000776.
+SIO 001366 is Class.
+SIO 001366 SubClassOf SIO 001132.
+SIO 001388 is Class.
+SIO 001389 is Class.
+SIO 001389 SubClassOf SIO 001388.
+SIO 010000 is Class.
+SIO 010008 is Class.
+SIO 010009 is Class.
+SIO 010010 is Class.
+SIO 010014 is Class.
+SIO 010015 is Class.
+SIO 010015 SubClassOf SIO 000030.
+SIO 010016 is Class.
+SIO 010016 SubClassOf SIO 000030.
+SIO 010017 is Class.
+SIO 010017 SubClassOf SIO 010016,.
+SIO 010017 SubClassOf SIO 000332 some SIO 010009.
+SIO 010035 is Class.
+SIO 010040 is Class.
+SIO 010040 SubClassOf SIO 010049.
+SIO 010041 is Class.
+SIO 010041 SubClassOf SIO 010049.
+SIO 010046 is Class.
+SIO 010049 is Class.
+SIO 010049 SubClassOf SIO 000019.
+SIO 010075 is Class.
+SIO 010077 is Class.
+SIO 010077 SubClassOf SIO 010338.
+SIO 010091 is Class.
+SIO 010093 is Class.
+SIO 010093 SubClassOf SIO 000779.
+SIO 010094 is Class.
+SIO 010100 is Class.
+SIO 010100 SubClassOf SIO 010035,.
+SIO 010100 SubClassOf SIO 000093 some SIO 010010.
+SIO 010100 DisjointWith SIO 010101.
+SIO 010101 is Class.
+SIO 010101 DisjointWith SIO 010100.
+SIO 010336 is Class.
+SIO 010336 SubClassOf SIO 010075.
+SIO 010336 DisjointWith SIO 010337.
+SIO 010337 is Class.
+SIO 010337 DisjointWith SIO 010336.
+SIO 010338 is Class.
+SIO 010340 is Class.
+SIO 010340 SubClassOf SIO 000376.
+SIO 010351 is Class.
+SIO 010351 SubClassOf SIO 000376.
+SIO 010364 is Class.
+SIO 010366 is Class.
+SIO 010366 SubClassOf SIO 010364.
+SIO 010376 is Class.
+SIO 010377 is Class.
+SIO 010377 DisjointWith SIO 010378.
+SIO 010378 is Class.
+SIO 010378 SubClassOf SIO 010000.
+SIO 010378 DisjointWith SIO 010377.
+SIO 010379 is Class.
+SIO 010379 SubClassOf SIO 010378.
+SIO 010410 is Class.
+SIO 010410 SubClassOf SIO 001353.
+SIO 010452 is Class.
+SIO 010452 SubClassOf SIO 010049.
+SIO 010775 is Class.
+SIO 010776 is Class.
+SIO 010776 SubClassOf SIO 010775.
+SIO 010777 is Class.
+SIO 010777 SubClassOf SIO 010775.
+SIO 010778 is Class.
+SIO 010778 SubClassOf SIO 010775.
+www.w3.org/2002/07/# is Class.
+NodeShape is Class.
+ResultAnnotation is Class.
+Violation is Class.
+maxExclusive is Class.
+minExclusive is Class.
+Action is Individual.
+Action Types ShapeClass.
+ActionGroup is Individual.
+ActionGroup Types ShapeClass.
+ActionTestCase is Individual.
+ActionTestCase Types ShapeClass.
+ChangeScript is Individual.
+ChangeScript Types ShapeClass.
+CommitScript is Individual.
+CommitScript Types ShapeClass.
+Constructor is Individual.
+Constructor Types ShapeClass.
+Editor is Individual.
+Editor Types ShapeClass.
+ExploreAction is Individual.
+ExploreAction Types ShapeClass.
+FunctionTestCase is Individual.
+FunctionTestCase Types ShapeClass.
+GraphService is Individual.
+GraphService Types ShapeClass.
+GraphStoreTestCase is Individual.
+GraphStoreTestCase Types ShapeClass.
+GraphValidationTestCase is Individual.
+GraphValidationTestCase Types ShapeClass.
+IncludedScript is Individual.
+IncludedScript Types ShapeClass.
+InferencingTestCase is Individual.
+InferencingTestCase Types ShapeClass.
+ModifyAction is Individual.
+ModifyAction Types ShapeClass.
+MultiEditor is Individual.
+MultiEditor Types ShapeClass.
+MultiViewer is Individual.
+MultiViewer Types ShapeClass.
+QueryTestCase is Individual.
+QueryTestCase Types ShapeClass.
+ResourceAction is Individual.
+ResourceAction Types ShapeClass.
+ResourceService is Individual.
+ResourceService Types ShapeClass.
+Script is Individual.
+Script Types ShapeClass.
+ScriptConstraint is Individual.
+ScriptConstraint Types ShapeClass.
+ScriptSuggestionGenerator is Individual.
+ScriptSuggestionGenerator Types ShapeClass.
+ScriptTestCase is Individual.
+ScriptTestCase Types ShapeClass.
+ScriptValidator is Individual.
+ScriptValidator Types ShapeClass.
+Service is Individual.
+Service Types ShapeClass.
+ShapeClass is Individual.
+ShapeClass Types ShapeClass.
+SingleEditor is Individual.
+SingleEditor Types ShapeClass.
+SingleViewer is Individual.
+SingleViewer Types ShapeClass.
+TestCase is Individual.
+TestCase Types ShapeClass.
+ValidationTestCase is Individual.
+ValidationTestCase Types ShapeClass.
+Viewer is Individual.
+Viewer Types ShapeClass.
+Widget is Individual.
+Widget Types ShapeClass.
+Widget DisjointClasses SIO 000006,SIO 000614,SIO 000776.
+Widget DisjointClasses SIO 000333,SIO 000400,SIO 000401,SIO 000402.
+Widget DisjointClasses SIO 000400,SIO 000401,SIO 000402.

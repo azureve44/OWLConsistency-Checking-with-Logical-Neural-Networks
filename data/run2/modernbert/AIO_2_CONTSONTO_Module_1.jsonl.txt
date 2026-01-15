@@ -1,0 +1,446 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+www.w3.org/2000/01/-schema# is Datatype.
+dateTime is Datatype.
+string is Datatype.
+Observation.basedOn is ObjectProperty.
+Observation.encounter is ObjectProperty.
+Observation.performer is ObjectProperty.
+Observation.subject is ObjectProperty.
+acceptsOrDenies is ObjectProperty.
+address is ObjectProperty.
+aggregationOf is ObjectProperty.
+arranges is ObjectProperty.
+changesStatusOfHealthcareActivitiesIn is ObjectProperty.
+clarifies is ObjectProperty.
+componentOf is ObjectProperty.
+controlsQualityOf is ObjectProperty.
+delineates is ObjectProperty.
+direct controlTheSupply useOf is ObjectProperty.
+establishes is ObjectProperty.
+evaluates is ObjectProperty.
+evaluatesAspectsOf is ObjectProperty.
+evaluatesOutcomeOf is ObjectProperty.
+generates is ObjectProperty.
+has is ObjectProperty.
+hasBeenObservedDuring is ObjectProperty.
+hasCarePeriodMandateFor is ObjectProperty.
+hasDetermined is ObjectProperty.
+hasOutput is ObjectProperty.
+hasRatified is ObjectProperty.
+hasRuledOut is ObjectProperty.
+identifies is ObjectProperty.
+influences is ObjectProperty.
+initiatedDuring is ObjectProperty.
+isAbleTobeAssigned is ObjectProperty.
+isAppointmentFor is ObjectProperty.
+isBackgroundFor is ObjectProperty.
+isBasedOn is ObjectProperty.
+isCausedBy is ObjectProperty.
+isCentredOn is ObjectProperty.
+isConsideredDuring is ObjectProperty.
+isConsistentWith is ObjectProperty.
+isDeficitIn is ObjectProperty.
+isDocumentedIn is ObjectProperty.
+isFinancedBy is ObjectProperty.
+isIdentifiedBy is ObjectProperty.
+isInputTo is ObjectProperty.
+isListedIn is ObjectProperty.
+isObservedAs is ObjectProperty.
+isPerformedDuring is ObjectProperty.
+isPerformedFor is ObjectProperty.
+isPlannedIn is ObjectProperty.
+isPrescribedBy is ObjectProperty.
+isRecordedIn is ObjectProperty.
+isResponsibleFor is ObjectProperty.
+isScheduledIn is ObjectProperty.
+isTheResultOf is ObjectProperty.
+isTimeIntervalFor is ObjectProperty.
+issues is ObjectProperty.
+limits is ObjectProperty.
+links is ObjectProperty.
+maintains is ObjectProperty.
+manages is ObjectProperty.
+partOf is ObjectProperty.
+participatesIn is ObjectProperty.
+performs is ObjectProperty.
+provides is ObjectProperty.
+providesFeedbackTo is ObjectProperty.
+receives is ObjectProperty.
+relatesTo is ObjectProperty.
+relatesToTheProvisionOf is ObjectProperty.
+representsPotentialAspectsOf is ObjectProperty.
+requires is ObjectProperty.
+resultsIn is ObjectProperty.
+reveals is ObjectProperty.
+reviewedDuring is ObjectProperty.
+sendsOut is ObjectProperty.
+showsTheEvolutionOf is ObjectProperty.
+states is ObjectProperty.
+supports is ObjectProperty.
+takesPlaceDuring is ObjectProperty.
+targets is ObjectProperty.
+terminatedDuring is ObjectProperty.
+Observation.code is DataProperty.
+Observation.effectiveDateTime is DataProperty.
+Observation.identifier is DataProperty.
+Observation.status is DataProperty.
+adverse event is Class.
+adverse event SubClassOf Event,.
+adverse event SubClassOf influences min 1 healthcare process,.
+adverse event SubClassOf requires exactly 1 adverse event management.
+adverse event management is Class.
+adverse event management SubClassOf care activity.
+appointment is Class.
+appointment SubClassOf Event.
+automatedCare is Class.
+automatedCare SubClassOf Event,.
+automatedCare SubClassOf resultsIn some non-ratified healthcare information,.
+automatedCare SubClassOf reviewedDuring some care activity,.
+automatedCare SubClassOf initiatedDuring exactly 1 care activity,.
+automatedCare SubClassOf terminatedDuring max 1 care activity.
+careProfessional is Class.
+careProfessional SubClassOf care personnel,.
+careProfessional SubClassOf care provider,.
+careProfessional SubClassOf hasDetermined some working diagnosis,.
+careProfessional SubClassOf hasRatified some care information for import,.
+careProfessional SubClassOf hasRuledOut some excluded condition,.
+careProfessional SubClassOf identifies some prognostic condition,.
+careProfessional SubClassOf issues some referral,.
+careProfessional SubClassOf issues some request,.
+careProfessional SubClassOf issues some.
+careProfessional SubClassOf (care activity mandate and request),.
+careProfessional SubClassOf maintains some socialRecord,.
+careProfessional SubClassOf maintains some professional health record,.
+careProfessional SubClassOf manages some care activity period,.
+careProfessional SubClassOf manages some demand for care,.
+careProfessional SubClassOf performs some social care needs assessment,.
+careProfessional SubClassOf performs some healthcare needs assessment,.
+careProfessional SubClassOf issues only care activity mandate,.
+careProfessional SubClassOf has min 1 healthcare professional entitlement.
+care activities bundle is Class.
+care activities bundle SubClassOf care activity,.
+care activities bundle SubClassOf partOf some care activities bundle,.
+care activities bundle SubClassOf relatesTo some care activity.
+care activity is Class.
+care activity SubClassOf Event,.
+care activity SubClassOf componentOf some adverse event management,.
+care activity SubClassOf componentOf some care activity,.
+care activity SubClassOf componentOf some care plan,.
+care activity SubClassOf isRecordedIn some health record,.
+care activity SubClassOf requires some care resource management,.
+care activity SubClassOf aggregationOf min 1 care activity element,.
+care activity SubClassOf requires min 1 healthcare resource,.
+care activity SubClassOf targets min 1 healthcare goal,.
+care activity SubClassOf isPerformedDuring exactly 1 care activity period,.
+care activity SubClassOf isPerformedFor exactly 1 subject of care,.
+care activity SubClassOf componentOf max 1 care activities bundle,.
+care activity SubClassOf componentOf max 1 healthcare process.
+care activity delay is Class.
+care activity delay SubClassOf health related period,.
+care activity delay SubClassOf componentOf exactly 1 mandated period of care.
+care activity directory is Class.
+care activity element is Class.
+care activity element SubClassOf Event.
+care activity management is Class.
+care activity management SubClassOf care activity element,.
+care activity management SubClassOf manages min 1 care activity,.
+care activity management SubClassOf changesStatusOfHealthcareActivitiesIn exactly 1 care plan.
+care activity mandate is Class.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing, request is www.w3.org/2002/07/#.
+care activity period is Class.
+care activity period SubClassOf health related period,.
+care activity period SubClassOf takesPlaceDuring max 1 care appointment.
+care activity period element is Class.
+care activity period element SubClassOf episode of care,.
+care activity period element SubClassOf componentOf exactly 1 episode of care,.
+care activity period element SubClassOf partOf exactly 1 care activity period.
+care actor is Class.
+care administration is Class.
+care administration SubClassOf Event,.
+care administration SubClassOf supports min 1 healthcare process.
+care appointment is Class.
+care appointment SubClassOf appointment,.
+care appointment SubClassOf isAppointmentFor exactly 1 contact,.
+care appointment SubClassOf isScheduledIn max 1 care plan.
+care assessment is Class.
+care assessment SubClassOf care activity element.
+care commitment is Class.
+care commitment SubClassOf Event,.
+care commitment SubClassOf relatesToTheProvisionOf min 1 care activity.
+care communication is Class.
+care communication SubClassOf care activity element.
+care documenting is Class.
+care documenting SubClassOf care activity element,.
+care documenting SubClassOf maintains min 1 health record.
+care evaluation is Class.
+care evaluation SubClassOf care activity element,.
+care evaluation SubClassOf evaluatesAspectsOf min 1 care activity.
+care information for import is Class.
+care investigation is Class.
+care investigation SubClassOf care activity element,.
+care investigation SubClassOf reveals some observed condition,.
+care investigation SubClassOf clarifies exactly 1 health state.
+care matter is Class.
+care matter SubClassOf State.
+care organization is Class.
+care organization SubClassOf care provider.
+care period mandate is Class.
+care personnel is Class.
+care personnel SubClassOf personRole,.
+care personnel SubClassOf role,.
+care personnel SubClassOf care actor,.
+care personnel SubClassOf participatesIn some contact,.
+care personnel SubClassOf sendsOut some clinical report.
+care plan is Class.
+care process evaluation is Class.
+care process evaluation SubClassOf care evaluation,.
+care process evaluation SubClassOf evaluates min 1 healthcare process.
+care provider is Class.
+care provider SubClassOf care actor,.
+care provider SubClassOf arranges some initial contact,.
+care provider SubClassOf isResponsibleFor some socialRecord,.
+care provider SubClassOf isResponsibleFor some professional health record,.
+care provider SubClassOf isResponsibleFor some resource delay,.
+care provider SubClassOf manages some episode of care,.
+care provider SubClassOf performs some care resource management,.
+care provider SubClassOf sendsOut some clinical report,.
+care provider SubClassOf acceptsOrDenies min 1 demand for care,.
+care provider SubClassOf hasCarePeriodMandateFor min 1 mandated period of care,.
+care provider SubClassOf isAbleTobeAssigned min 1 care period mandate,.
+care provider SubClassOf isResponsibleFor min 1 mandated period of care,.
+care provider SubClassOf performs min 1 socialCareProviderActivity,.
+care provider SubClassOf performs min 1 care provider activity,.
+care provider SubClassOf provides min 1 healthcare,.
+care provider SubClassOf receives min 1 demand for care,.
+care provider SubClassOf states min 1 care commitment,.
+care provider SubClassOf has exactly 1 care activity directory.
+care provider activity is Class.
+care provider activity SubClassOf care activity,.
+care provider activity SubClassOf generates some care information for import,.
+care provider activity SubClassOf address min 1 health issue,.
+care provider activity SubClassOf requires min 1 care activity mandate.
+care quality management is Class.
+care quality management SubClassOf care activity element,.
+care quality management SubClassOf controlsQualityOf min 1 healthcare process.
+care resource management is Class.
+care resource management SubClassOf care activity element,.
+care resource management SubClassOf direct controlTheSupply useOf min 1 healthcare resource.
+care third party activity is Class.
+care third party activity SubClassOf care activity,.
+care third party activity SubClassOf generates some non-ratified healthcare information,.
+care third party activity SubClassOf requires min 1 care activity mandate.
+care treatment is Class.
+care treatment SubClassOf care activity element,.
+care treatment SubClassOf influences exactly 1 health state.
+clinical process is Class.
+clinical process SubClassOf healthcare process.
+clinical process episode is Class.
+clinical process episode SubClassOf health related period,.
+clinical process episode SubClassOf isTimeIntervalFor exactly 1 clinical process.
+clinical process interest is Class.
+clinical process interest SubClassOf health thread.
+clinical process outcome evaluation is Class.
+clinical process outcome evaluation SubClassOf care evaluation,.
+clinical process outcome evaluation SubClassOf evaluatesOutcomeOf exactly 1 clinical process.
+clinical report is Class.
+consent competence is Class.
+considered condition is Class.
+considered condition SubClassOf potential health condition,.
+considered condition SubClassOf isBasedOn min 1 observed condition.
+contact is Class.
+contact SubClassOf Event,.
+contact SubClassOf takesPlaceDuring exactly 1 contact period.
+contact period is Class.
+contact period SubClassOf care activity period.
+demand for care is Class.
+dissent is Class.
+dissent SubClassOf Event,.
+dissent SubClassOf limits min 1 care matter,.
+dissent SubClassOf requires exactly 1 consent competence.
+episode of care is Class.
+episode of care SubClassOf health related period,.
+episode of care SubClassOf isCentredOn exactly 1 health issue.
+episodes of care bundle is Class.
+episodes of care bundle SubClassOf health related period,.
+episodes of care bundle SubClassOf aggregationOf min 1 episode of care.
+excluded condition is Class.
+excluded condition SubClassOf considered condition.
+healthApproach is Class.
+healthApproach SubClassOf episode of care,.
+healthApproach SubClassOf address exactly 1 healthcare goal.
+health concern is Class.
+health condition is Class.
+health condition delay is Class.
+health condition delay SubClassOf care activity delay.
+health condition evolution is Class.
+health condition evolution SubClassOf health thread,.
+health condition evolution SubClassOf showsTheEvolutionOf min 1 health condition,.
+health condition evolution SubClassOf relatesTo exactly 1 input health state.
+health condition period is Class.
+health condition period SubClassOf health related period.
+health issue is Class.
+health need is Class.
+health need SubClassOf State,.
+health need SubClassOf isBackgroundFor some reason for demand for care,.
+health need SubClassOf isConsideredDuring some healthcare needs assessment,.
+health need SubClassOf isDeficitIn exactly 1 health state.
+health problem list is Class.
+health problem list SubClassOf health thread.
+health record is Class.
+health related period is Class.
+health related period SubClassOf Event,.
+health related period SubClassOf aggregationOf some health related period,.
+health related period SubClassOf relatesToTheProvisionOf some health related period.
+health state is Class.
+health state SubClassOf State,.
+health state SubClassOf isObservedAs some observed condition.
+health thread is Class.
+health thread SubClassOf Event,.
+health thread SubClassOf links some care matter,.
+health thread SubClassOf links some health thread,.
+health thread SubClassOf delineates max 1 episodes of care bundle,.
+health thread SubClassOf delineates max 1 health concern.
+healthcare is Class.
+healthcare SubClassOf Event,.
+healthcare SubClassOf isFinancedBy some healthcare funds.
+healthcare funds is Class.
+healthcare goal is Class.
+healthcare needs assessment is Class.
+healthcare needs assessment SubClassOf care assessment,.
+healthcare needs assessment SubClassOf identifies some needed care activity.
+healthcare process is Class.
+healthcare process SubClassOf Process,.
+healthcare process SubClassOf isDocumentedIn some health record,.
+healthcare process SubClassOf isPlannedIn some care plan,.
+healthcare process SubClassOf isPerformedFor exactly 1 subject of care,.
+healthcare process SubClassOf hasOutput max 1 output health state,.
+healthcare process SubClassOf providesFeedbackTo max 1 care quality management.
+healthcare professional entitlement is Class.
+healthcare resource is Class.
+healthcare service is Class.
+healthcare service SubClassOf service,.
+healthcare service SubClassOf isListedIn min 1 healthcare service directory,.
+healthcare service SubClassOf isTheResultOf exactly 1 healthcare process.
+healthcare service directory is Class.
+informed consent is Class.
+initial contact is Class.
+initial contact SubClassOf contact,.
+initial contact SubClassOf establishes exactly 1 clinical process.
+input health state is Class.
+input health state SubClassOf health state.
+mandated period of care is Class.
+mandated period of care SubClassOf health related period,.
+mandated period of care SubClassOf isDocumentedIn min 1 professional health record.
+medicinal product is Class.
+medicinal product SubClassOf product.
+medium is Class.
+medium SubClassOf Physical-Object.
+needed care activity is Class.
+needed care activity SubClassOf care activities bundle,.
+needed care activity SubClassOf address min 1 health need.
+next of kin is Class.
+next of kin SubClassOf personRole.
+non-ratified healthcare information is Class.
+observed condition is Class.
+observed condition SubClassOf health condition,.
+observed condition SubClassOf Observation.basedOn some informed consent,.
+observed condition SubClassOf Observation.encounter some care activity,.
+observed condition SubClassOf Observation.performer some careProfessional,.
+observed condition SubClassOf Observation.subject some subject of care,.
+observed condition SubClassOf hasBeenObservedDuring exactly 1 health condition period,.
+Literal, is Observation.code some www.w3.org/2000/01/-schema#.
+Literal, is Observation.identifier some www.w3.org/2000/01/-schema#.
+Literal, is Observation.status some www.w3.org/2000/01/-schema#.
+Literal, is Observation.effectiveDateTime only dateTime.
+other carer is Class.
+other carer SubClassOf personRole.
+output health state is Class.
+output health state SubClassOf health state.
+potential health condition is Class.
+potential health condition SubClassOf health condition,.
+potential health condition SubClassOf representsPotentialAspectsOf exactly 1 health state.
+prescribed self-care is Class.
+prescribed self-care SubClassOf self-care activity,.
+prescribed self-care SubClassOf isPrescribedBy exactly 1 careProfessional,.
+prescribed self-care SubClassOf takesPlaceDuring exactly 1 self-care period.
+prescribed third party activity is Class.
+prescribed third party activity SubClassOf care third party activity,.
+prescribed third party activity SubClassOf isPrescribedBy exactly 1 careProfessional.
+product is Class.
+product SubClassOf Physical-Object.
+professional health record is Class.
+professionally assessed condition is Class.
+professionally assessed condition SubClassOf observed condition,.
+professionally assessed condition SubClassOf isIdentifiedBy exactly 1 careProfessional.
+prognostic condition is Class.
+prognostic condition SubClassOf potential health condition.
+reason for demand for care is Class.
+referral is Class.
+request is Class.
+request DisjointWith care activity mandate.
+resource delay is Class.
+resource delay SubClassOf care activity delay.
+resultant condition is Class.
+resultant condition SubClassOf observed condition,.
+resultant condition SubClassOf isInputTo some clinical process outcome evaluation.
+risk condition is Class.
+risk condition SubClassOf potential health condition.
+self-care activity is Class.
+self-care activity SubClassOf care activity,.
+self-care activity SubClassOf generates some non-ratified healthcare information.
+self-care period is Class.
+self-care period SubClassOf care activity period.
+service is Class.
+service SubClassOf Event.
+subject of care is Class.
+subject of care SubClassOf personRole.
+subject of care desire is Class.
+subject of care desire SubClassOf State.
+subject of care preference delay is Class.
+subject of care preference delay SubClassOf care activity delay,.
+subject of care preference delay SubClassOf isCausedBy exactly 1 subject of care.
+subject of care proxy is Class.
+subject of care proxy SubClassOf personRole.
+target condition is Class.
+target condition SubClassOf potential health condition.
+working diagnosis is Class.
+working diagnosis SubClassOf considered condition,.
+working diagnosis SubClassOf professionally assessed condition,.
+working diagnosis SubClassOf isConsistentWith min 1 observed condition.
+Event is Class.
+Thing is www.w3.org/2002/07/#.
+Physical-Object is Class.
+Process is Class.
+Process SubClassOf Stative.
+State is Class.
+State SubClassOf Stative.
+Stative is Class.
+Thing is www.w3.org/2002/07/#.
+administrative division is Class.
+country is Class.
+country SubClassOf administrative division.
+personRole is Class.
+personRole SubClassOf role.
+socialCareProcess is Class.
+socialCareProcess SubClassOf Process.
+socialCareProviderActivity is Class.
+socialCareProviderActivity SubClassOf social care activity.
+socialNeed is Class.
+socialNeed SubClassOf State,.
+socialNeed SubClassOf isConsideredDuring some social care needs assessment.
+socialRecord is Class.
+social care activity is Class.
+social care activity SubClassOf Event,.
+social care activity SubClassOf isPerformedFor exactly 1 subject of care.
+social care needs assessment is Class.
+social care needs assessment SubClassOf care assessment.
+socialcareActivityElement is Class.
+socialcareActivityElement SubClassOf Event.
+role is Class.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.
+Italy is Individual.
+Italy Types country.
+componentOf some care activity is Class.
+componentOf some care activity SubClassOf care provider activity.

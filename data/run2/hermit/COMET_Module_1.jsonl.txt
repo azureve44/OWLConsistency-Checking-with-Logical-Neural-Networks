@@ -1,0 +1,22 @@
+immediate_preceding_steps is ObjectProperty
+inputs is ObjectProperty
+outputs is ObjectProperty
+parts is ObjectProperty
+Any is Class
+Any SubClassOf ClassDefinition
+ComputationalPlannedProcess is Class
+ComputationalPlannedProcess SubClassOf PlannedProcess,
+ComputationalPlannedProcess SubClassOf immediate_preceding_steps only ComputationalPlannedProcess,
+ComputationalPlannedProcess SubClassOf inputs only Any,
+ComputationalPlannedProcess SubClassOf outputs only Any,
+ComputationalPlannedProcess SubClassOf parts only ComputationalPlannedProcess,
+Thing, is immediate_preceding_steps min 0 www.w3.org/2002/07/#
+Thing, is inputs min 0 www.w3.org/2002/07/#
+Thing, is outputs min 0 www.w3.org/2002/07/#
+Thing is parts min 0 www.w3.org/2002/07/#
+Entity is Class
+Entity SubClassOf ClassDefinition
+PlannedProcess is Class
+ClassDefinition is Class
+Thing is www.w3.org/2002/07/#
+www.w3.org/2002/07/# is Class

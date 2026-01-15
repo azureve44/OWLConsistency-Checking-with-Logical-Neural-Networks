@@ -1,0 +1,219 @@
+integer is Datatype.
+string is Datatype.
+Has Degree of Objectivity Type is ObjectProperty.
+Has Type Style is ObjectProperty.
+Identified Adherence Stage is ObjectProperty.
+It is Type Presence of is ObjectProperty.
+Adh ASRQ Value is DataProperty.
+Adh BMQ  Value is DataProperty.
+Adh Batalla  Value is DataProperty.
+Adh Bogus-Pipeline  Value is DataProperty.
+Adh ESPA  Value is DataProperty.
+Adh HaynesSackett  Value is DataProperty.
+Adh Hermes  Value is DataProperty.
+Adh MAQ  Value is DataProperty.
+Adh MARS-10  Value is DataProperty.
+Adh SMAQ  Value Question 1 is DataProperty.
+Adh SMAQ  Value Question 2 is DataProperty.
+Adh SMAQ  Value Question 3 is DataProperty.
+Adh SMAQ  Value Question 4 is DataProperty.
+Adh SMAQ  Value Question 5 is DataProperty.
+Adh SMAQ  Value Question 6 is DataProperty.
+Validation is DataProperty.
+ARMS is Class.
+ARMS SubClassOf Questionnaries and scales,.
+ARMS SubClassOf Identified Adherence Stage some.
+ARMS SubClassOf (P2 Implementation or P3 Discontinuation),.
+ARMS SubClassOf Validation exactly 1 {"Yes"}.
+ASRQ is Class.
+ASRQ is equivalent to Satisfactory adh ASRQ level1 or Satisfactory adh ASRQ level2 or Unsatisfactory adh ASRQ level3 or Unsatisfactory adh ASRQ level4 or Unsatisfactory adh ASRQ level5 or Unsatisfactory adh ASRQ level6.
+ASRQ SubClassOf Questionnaries and scales,.
+ASRQ SubClassOf Identified Adherence Stage only P2 Implementation,.
+ASRQ SubClassOf Adh ASRQ Value exactly 1 integer,.
+ASRQ SubClassOf Validation exactly 1 {"Yes"}.
+Autoevaluations is Class.
+Autoevaluations SubClassOf Indicators,.
+Autoevaluations SubClassOf Has Degree of Objectivity Type only Subjective,.
+Autoevaluations SubClassOf Has Type Style only Indirect.
+Autoevaluations DisjointWith F Support.
+BBQ is Class.
+BBQ SubClassOf Questionnaries and scales,.
+BBQ SubClassOf Validation exactly 1 {"Yes"}.
+BMQ is Class.
+BMQ is equivalent to Satisfactory adh BMQ or Unsatisfactory adh BMQ.
+BMQ SubClassOf Questionnaries and scales,.
+BMQ SubClassOf Has Type Style only Indirect,.
+BMQ SubClassOf Identified Adherence Stage only P2 Implementation,.
+BMQ SubClassOf Adh BMQ  Value exactly 1 integer,.
+BMQ SubClassOf Validation exactly 1 {"Yes"}.
+Batalla is Class.
+Batalla is equivalent to Satisfactory adh batalla or Unsatisfactory adh batalla.
+Batalla SubClassOf Questionnaries and scales,.
+Batalla SubClassOf Has Type Style only Indirect,.
+Batalla SubClassOf Validation exactly 1 {"No"}.
+Bogus Pipeline is Class.
+Bogus Pipeline is equivalent to Satisfactory adh bogus pipeline or Unsatisfactory adh bogus pipeline.
+Bogus Pipeline SubClassOf Questionnaries and scales,.
+Bogus Pipeline SubClassOf Adh Bogus-Pipeline  Value exactly 1 string,.
+Bogus Pipeline SubClassOf Validation exactly 1 {"No"}.
+Daily is Class.
+Daily SubClassOf Autoevaluations.
+ESPA is Class.
+ESPA is equivalent to Satisfactory adh ESPA or Unsatisfactory adh ESPA.
+ESPA SubClassOf Questionnaries and scales,.
+ESPA SubClassOf Has Type Style only Indirect,.
+ESPA SubClassOf Adh ESPA  Value exactly 1 integer,.
+ESPA SubClassOf Validation exactly 1 {"Yes"}.
+F Support is Class.
+F Support DisjointWith Autoevaluations.
+Face-to-face is Class.
+Haynes-Sackett is Class.
+Haynes-Sackett is equivalent to Satisfactory adh Haynes Sackett or Unsatisfactory adh Haynes Sackett.
+Haynes-Sackett SubClassOf Questionnaries and scales,.
+Haynes-Sackett SubClassOf Has Type Style only Indirect,.
+Haynes-Sackett SubClassOf It is Type Presence of exactly 1 (Face-to-face or Non Face-to-face).
+Hermes is Class.
+Hermes is equivalent to Satisfactory adh Hermes or Unsatisfactory adh Hermes.
+Hermes SubClassOf Questionnaries and scales,.
+Hermes SubClassOf Has Type Style only Indirect,.
+Hermes SubClassOf Adh Hermes  Value exactly 1 integer.
+Hill-Bone is Class.
+Hill-Bone SubClassOf Questionnaries and scales,.
+Hill-Bone SubClassOf Identified Adherence Stage only P2 Implementation,.
+Hill-Bone SubClassOf Validation exactly 1 {"Yes"}.
+Indicators is Class.
+Indirect is Class.
+MAQ is Class.
+MAQ is equivalent to Satisfactory adh MAQ or Unsatisfactory adh MAQ.
+MAQ SubClassOf Questionnaries and scales,.
+MAQ SubClassOf Identified Adherence Stage some.
+MAQ SubClassOf (P2 Implementation or P3 Discontinuation),.
+MAQ SubClassOf Adh MAQ  Value exactly 1 integer,.
+MAQ SubClassOf Validation exactly 1 {"Yes"}.
+MARS is Class.
+MARS is equivalent to Satisfactory adh MARS or Unsatisfactory adh MARS.
+MARS SubClassOf Questionnaries and scales,.
+MARS SubClassOf Identified Adherence Stage some.
+MARS SubClassOf (P2 Implementation or P3 Discontinuation),.
+MARS SubClassOf Adh MARS-10  Value exactly 1 integer,.
+MARS SubClassOf Validation exactly 1 {"Yes"}.
+MMAS-8 is Class.
+MMAS-8 SubClassOf Questionnaries and scales,.
+MMAS-8 SubClassOf Identified Adherence Stage some.
+MMAS-8 SubClassOf (P2 Implementation or P3 Discontinuation),.
+MMAS-8 SubClassOf Validation exactly 1 {"Yes"}.
+MUAH is Class.
+MUAH SubClassOf Questionnaries and scales,.
+MUAH SubClassOf Identified Adherence Stage only P2 Implementation,.
+MUAH SubClassOf Validation exactly 1 {"Yes"}.
+Non Face-to-face is Class.
+P2 Implementation is Class.
+P3 Discontinuation is Class.
+Percentage adh 30-64 is Class.
+Percentage adh 30-64 is equivalent to Adh SMAQ  Value Question 5 exactly 1 {"D"}.
+Percentage adh 30-64 SubClassOf SMAQ.
+Percentage adh 65-84 is Class.
+Percentage adh 65-84 is equivalent to Adh SMAQ  Value Question 5 exactly 1 {"C"}.
+Percentage adh 65-84 SubClassOf SMAQ.
+Percentage adh 85-94 is Class.
+Percentage adh 85-94 is equivalent to Adh SMAQ  Value Question 5 exactly 1 {"B"}.
+Percentage adh 85-94 SubClassOf SMAQ.
+Percentage adh 95-100 is Class.
+Percentage adh 95-100 is equivalent to Adh SMAQ  Value Question 5 exactly 1 {"A"}.
+Percentage adh 95-100 SubClassOf SMAQ.
+Percentage adh lower 30 is Class.
+Percentage adh lower 30 is equivalent to Adh SMAQ  Value Question 5 exactly 1 {"E"}.
+Percentage adh lower 30 SubClassOf SMAQ.
+Questionnaries and scales is Class.
+Questionnaries and scales SubClassOf Autoevaluations.
+SDSCA is Class.
+SDSCA SubClassOf Questionnaries and scales,.
+SDSCA SubClassOf Validation exactly 1 {"Yes"}.
+SEAMS is Class.
+SEAMS SubClassOf Questionnaries and scales,.
+SEAMS SubClassOf Validation exactly 1 {"Yes"}.
+SMAQ is Class.
+SMAQ is equivalent to Satisfactory adh SMAQ or Unsatisfactory adh SMAQ.
+SMAQ SubClassOf Questionnaries and scales,.
+SMAQ SubClassOf Identified Adherence Stage some.
+SMAQ SubClassOf (P2 Implementation or P3 Discontinuation),.
+SMAQ SubClassOf Has Type Style only Indirect,.
+SMAQ SubClassOf Validation exactly 1 {"Yes"}.
+Satisfactory adh ASRQ level1 is Class.
+Satisfactory adh ASRQ level1 is equivalent to Adh ASRQ Value value 1.
+Satisfactory adh ASRQ level1 SubClassOf ASRQ.
+Satisfactory adh ASRQ level2 is Class.
+Satisfactory adh ASRQ level2 is equivalent to Adh ASRQ Value value 2.
+Satisfactory adh ASRQ level2 SubClassOf ASRQ.
+Satisfactory adh BMQ is Class.
+Satisfactory adh BMQ is equivalent to Adh BMQ  Value value 0.
+Satisfactory adh BMQ SubClassOf BMQ.
+Satisfactory adh ESPA is Class.
+Adh ESPA  Value exactly 1 ( not (integer[ 6]) and integer[= 5]) is EquivalentTo.
+Adh ESPA  Value exactly 1 ( not (integer[ 6]) and integer[= 5]) SubClassOf ESPA.
+Satisfactory adh Haynes Sackett is Class.
+Satisfactory adh Haynes Sackett is equivalent to Adh HaynesSackett  Value exactly 1 {"Non Fail"}.
+Satisfactory adh Haynes Sackett SubClassOf Haynes-Sackett.
+Satisfactory adh Hermes is Class.
+Adh Hermes  Value exactly 1 ( not (integer[ 4]) and integer[= 3]) is EquivalentTo.
+Adh Hermes  Value exactly 1 ( not (integer[ 4]) and integer[= 3]) SubClassOf Hermes.
+Satisfactory adh MAQ is Class.
+Satisfactory adh MAQ is equivalent to Adh MAQ  Value exactly 1  not (integer[= 3]).
+Satisfactory adh MAQ SubClassOf MAQ.
+Satisfactory adh MARS is Class.
+Adh MARS-10  Value exactly 1 ( not (integer[ 10]) and integer[= 6]) is EquivalentTo.
+Adh MARS-10  Value exactly 1 ( not (integer[ 10]) and integer[= 6]) SubClassOf MARS.
+Satisfactory adh SMAQ is Class.
+Satisfactory adh SMAQ is equivalent to (Adh SMAQ  Value Question 1 exactly 1 {"No"}) or (Adh SMAQ  Value Question 2 exactly 1 {"Yes"}) or (Adh SMAQ  Value Question 3 exactly 1 {"No"}) or (Adh SMAQ  Value Question 4 exactly 1 {"No"}) or (Adh SMAQ  Value Question 5 exactly 1 ({"A"} or {"B"})) or (Adh SMAQ  Value Question 6 exactly 1 integer[<= 2]).
+Satisfactory adh SMAQ SubClassOf SMAQ.
+Satisfactory adh batalla is Class.
+Satisfactory adh batalla is equivalent to Adh Batalla  Value exactly 1 {"Non-Fail"}.
+Satisfactory adh batalla SubClassOf Batalla.
+Satisfactory adh bogus pipeline is Class.
+Satisfactory adh bogus pipeline is equivalent to Adh Bogus-Pipeline  Value value "Accept".
+Satisfactory adh bogus pipeline SubClassOf Bogus Pipeline.
+Subjective is Class.
+Telephonic call is Class.
+Telephonic call SubClassOf Autoevaluations.
+Unsatisfactory adh ASRQ level3 is Class.
+Unsatisfactory adh ASRQ level3 is equivalent to Adh ASRQ Value value 3.
+Unsatisfactory adh ASRQ level3 SubClassOf ASRQ.
+Unsatisfactory adh ASRQ level4 is Class.
+Unsatisfactory adh ASRQ level4 is equivalent to Adh ASRQ Value value 4.
+Unsatisfactory adh ASRQ level4 SubClassOf ASRQ.
+Unsatisfactory adh ASRQ level5 is Class.
+Unsatisfactory adh ASRQ level5 is equivalent to Adh ASRQ Value value 5.
+Unsatisfactory adh ASRQ level5 SubClassOf ASRQ.
+Unsatisfactory adh ASRQ level6 is Class.
+Unsatisfactory adh ASRQ level6 is equivalent to Adh ASRQ Value value 6.
+Unsatisfactory adh ASRQ level6 SubClassOf ASRQ.
+Unsatisfactory adh BMQ is Class.
+Adh BMQ  Value exactly 1 ( not (integer[= 12]) and integer[= 1]) is EquivalentTo.
+Adh BMQ  Value exactly 1 ( not (integer[= 12]) and integer[= 1]) SubClassOf BMQ.
+Unsatisfactory adh ESPA is Class.
+Unsatisfactory adh ESPA is equivalent to Adh ESPA  Value exactly 1 integer[< 5].
+Unsatisfactory adh ESPA SubClassOf ESPA.
+Unsatisfactory adh Haynes Sackett is Class.
+Unsatisfactory adh Haynes Sackett is equivalent to Adh HaynesSackett  Value exactly 1 {"Fail"}.
+Unsatisfactory adh Haynes Sackett SubClassOf Haynes-Sackett.
+Unsatisfactory adh Hermes is Class.
+Unsatisfactory adh Hermes is equivalent to Adh Hermes  Value exactly 1 integer[< 3].
+Unsatisfactory adh Hermes SubClassOf Hermes.
+Unsatisfactory adh MAQ is Class.
+Adh MAQ  Value exactly 1 ( not (integer[= 4]) and integer[= 3]) is EquivalentTo.
+Adh MAQ  Value exactly 1 ( not (integer[= 4]) and integer[= 3]) SubClassOf MAQ.
+Unsatisfactory adh MARS is Class.
+Unsatisfactory adh MARS is equivalent to Adh MARS-10  Value exactly 1  not (integer[= 6]).
+Unsatisfactory adh MARS SubClassOf MARS.
+Unsatisfactory adh SMAQ is Class.
+Unsatisfactory adh SMAQ is equivalent to (Adh SMAQ  Value Question 1 exactly 1 {"Yes"}) or (Adh SMAQ  Value Question 2 exactly 1 {"No"}) or (Adh SMAQ  Value Question 3 exactly 1 {"Yes"}) or (Adh SMAQ  Value Question 4 exactly 1 {"Yes"}) or (Adh SMAQ  Value Question 5 exactly 1 ({"C"} or {"D"} or {"E"})) or (Adh SMAQ  Value Question 6 exactly 1 integer[ 2]).
+Unsatisfactory adh SMAQ SubClassOf SMAQ.
+Unsatisfactory adh batalla is Class.
+Unsatisfactory adh batalla is equivalent to Adh Batalla  Value exactly 1 {"Fail"}.
+Unsatisfactory adh batalla SubClassOf Batalla.
+Unsatisfactory adh bogus pipeline is Class.
+Unsatisfactory adh bogus pipeline is equivalent to Adh Bogus-Pipeline  Value value "Non Accept".
+Unsatisfactory adh bogus pipeline SubClassOf Bogus Pipeline.
+Voice answer system is Class.
+Voice answer system SubClassOf Autoevaluations.
+www.w3.org/2002/07/# is Class.

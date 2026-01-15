@@ -1,0 +1,312 @@
+decimal is Datatype.
+integer is Datatype.
+hasBaseQualifier is ObjectProperty.
+hasBaseQualifier Characteristics Functional.
+hasBaseQualifier Domain CompositeCharacteristicQualifier.
+hasBaseQualifier Range BaseCharacteristicQualifier.
+hasNextQualifier is ObjectProperty.
+hasNextQualifier Characteristics Functional.
+hasNextQualifier Domain CompositeCharacteristicQualifier.
+hasNextQualifier Range CharacteristicQualifier.
+hasQualifier is ObjectProperty.
+hasQualifier Characteristics Functional.
+hasQualifier Domain PhysicalCharacteristic.
+hasQualifier Range CharacteristicQualifier.
+hasSourceUnit is ObjectProperty.
+hasTargetUnit is ObjectProperty.
+measuredBy is ObjectProperty.
+measuredBy Characteristics InverseFunctional.
+measuredBy Domain Characteristic.
+measuredBy Range Measurement.
+measuredBy InverseOf ofCharacteristic.
+measurementFor is ObjectProperty.
+ofCharacteristic is ObjectProperty.
+ofCharacteristic InverseOf measuredBy.
+ofEntity is ObjectProperty.
+standardFor is ObjectProperty.
+usesProtocol is ObjectProperty.
+usesStandard is ObjectProperty.
+hasMultiplier is DataProperty.
+hasOffset is DataProperty.
+BrackishWater is Class.
+BrackishWaterDiscreteSample is Class.
+BrackishWaterDiscreteSample SubClassOf BrackishWater,.
+BrackishWaterDiscreteSample SubClassOf Estuary.
+BrackishWaterSensorSample is Class.
+BrackishWaterSensorSample SubClassOf BrackishWater,.
+BrackishWaterSensorSample SubClassOf Estuary.
+ChlorophyllTotalConcentrationFluometricExtraction is Class.
+ChlorophyllTotalConcentrationFluometricExtraction SubClassOf PigmentConcentrationFluorometric.
+Chlorophyll aConcentrationFluometricExtraction is Class.
+Chlorophyll aConcentrationFluometricExtraction SubClassOf PigmentConcentrationFluorometric.
+Chlorophyll aPhaeopigmentsConcentrationFluometricExtraction is Class.
+Chlorophyll aPhaeopigmentsConcentrationFluometricExtraction SubClassOf PigmentConcentrationFluorometric.
+ElectrolyticConductivity StreamWater is Class.
+ElectrolyticConductivity StreamWater is equivalent to Measurement and (measurementFor only.
+ElectrolyticConductivity StreamWater is equivalent to (Observation and (ofEntity only FreshWaterSensorSample))) and (ofCharacteristic only Conductivity) and (usesProtocol only MelackLabProtocols) and (usesStandard only MicrosiemensPerMeter).
+ElectrolyticConductivity StreamWater SubClassOf Measurement.
+Estuary is Class.
+FreshWaterSensorSample is Class.
+MelackLabProtocols is Class.
+MolesPerLiter is Class.
+MolesPerLiter SubClassOf CompositeUnit,.
+MolesPerLiter SubClassOf standardFor only.
+MolesPerLiter SubClassOf (Measurement and (ofCharacteristic only AmountOfSubstanceConcentration)).
+PigmentConcentrationFluorometric is Class.
+AlgaeLifeStage is Class.
+AlgaeLifeStage SubClassOf LifeStage.
+Amount is Class.
+Amount SubClassOf PhysicalCharacteristic.
+AmountOfSubstanceConcentration is Class.
+AmountOfSubstanceConcentration SubClassOf PhysicalCharacteristic.
+AmountOfSubstanceMass is Class.
+AmountOfSubstanceMass SubClassOf PhysicalCharacteristic.
+AmountOfSubstanceWeight is Class.
+AmountOfSubstanceWeight SubClassOf PhysicalCharacteristic.
+AmountOfSubstanceWeightFlux is Class.
+AmountOfSubstanceWeightFlux SubClassOf PhysicalCharacteristic.
+Angle is Class.
+Angle SubClassOf PhysicalCharacteristic.
+Area is Class.
+Area SubClassOf PhysicalCharacteristic.
+ArealDensity is Class.
+ArealDensity SubClassOf PhysicalCharacteristic.
+ArealMassDensity is Class.
+ArealMassDensity SubClassOf PhysicalCharacteristic.
+ArealMassDensityRate is Class.
+ArealMassDensityRate SubClassOf PhysicalCharacteristic.
+Capacitance is Class.
+Capacitance SubClassOf PhysicalCharacteristic.
+CatalyticActivity is Class.
+CatalyticActivity SubClassOf PhysicalCharacteristic.
+Charge is Class.
+Charge SubClassOf PhysicalCharacteristic.
+Conductance is Class.
+Conductance SubClassOf PhysicalCharacteristic.
+Conductivity is Class.
+Conductivity SubClassOf PhysicalCharacteristic.
+Count is Class.
+Count SubClassOf PhysicalCharacteristic.
+Current is Class.
+Current SubClassOf PhysicalCharacteristic.
+CurrentDensity is Class.
+CurrentDensity SubClassOf PhysicalCharacteristic.
+DoseEquivalent is Class.
+DoseEquivalent SubClassOf PhysicalCharacteristic.
+Energy is Class.
+Energy SubClassOf PhysicalCharacteristic.
+FishLifeStage is Class.
+FishLifeStage SubClassOf LifeStage.
+Force is Class.
+Force SubClassOf PhysicalCharacteristic.
+Frequency is Class.
+Frequency SubClassOf PhysicalCharacteristic.
+Illuminance is Class.
+Illuminance SubClassOf PhysicalCharacteristic.
+Inductance is Class.
+Inductance SubClassOf PhysicalCharacteristic.
+Irradiance is Class.
+Irradiance SubClassOf PhysicalCharacteristic.
+Length is Class.
+Length SubClassOf PhysicalCharacteristic.
+LifeStage is Class.
+LifeStage SubClassOf PhysicalCharacteristic.
+Luminance is Class.
+Luminance SubClassOf PhysicalCharacteristic.
+Luminosity is Class.
+Luminosity SubClassOf PhysicalCharacteristic.
+MagneticFieldStrength is Class.
+MagneticFieldStrength SubClassOf PhysicalCharacteristic.
+MagneticFlux is Class.
+MagneticFlux SubClassOf PhysicalCharacteristic.
+MagneticFluxDensity is Class.
+MagneticFluxDensity SubClassOf PhysicalCharacteristic.
+MammalLifeStage is Class.
+MammalLifeStage SubClassOf LifeStage.
+Mass is Class.
+Mass SubClassOf PhysicalCharacteristic.
+MassDensity is Class.
+MassDensity SubClassOf PhysicalCharacteristic.
+MassFlux is Class.
+MassFlux SubClassOf PhysicalCharacteristic.
+MassPerMass is Class.
+MassPerMass SubClassOf PhysicalCharacteristic.
+MassSpecificCount is Class.
+MassSpecificCount SubClassOf PhysicalCharacteristic.
+MassSpecificLength is Class.
+MassSpecificLength SubClassOf PhysicalCharacteristic.
+Molality is Class.
+Molality SubClassOf PhysicalCharacteristic.
+PhotonFluxDensity is Class.
+PhotonFluxDensity SubClassOf PhysicalCharacteristic.
+PlantLifeStage is Class.
+PlantLifeStage SubClassOf LifeStage.
+Power is Class.
+Power SubClassOf PhysicalCharacteristic.
+Pressure is Class.
+Pressure SubClassOf PhysicalCharacteristic.
+Proportion is Class.
+Proportion SubClassOf PhysicalCharacteristic.
+Radiance is Class.
+Radiance SubClassOf PhysicalCharacteristic.
+RadionucleotideActivity is Class.
+RadionucleotideActivity SubClassOf PhysicalCharacteristic.
+Resistance is Class.
+Resistance SubClassOf PhysicalCharacteristic.
+Resistivity is Class.
+Resistivity SubClassOf PhysicalCharacteristic.
+SpecificArea is Class.
+SpecificArea SubClassOf PhysicalCharacteristic.
+SpecificEnergy is Class.
+SpecificEnergy SubClassOf PhysicalCharacteristic.
+SpecificVolume is Class.
+SpecificVolume SubClassOf PhysicalCharacteristic.
+SpectralIrradiance is Class.
+SpectralIrradiance SubClassOf Irradiance.
+SpectralRadiance is Class.
+SpectralRadiance SubClassOf Radiance.
+Speed is Class.
+Speed SubClassOf PhysicalCharacteristic.
+Temperature is Class.
+Temperature SubClassOf PhysicalCharacteristic.
+Time is Class.
+Time SubClassOf PhysicalCharacteristic.
+Transmissivity is Class.
+Transmissivity SubClassOf PhysicalCharacteristic.
+Volume is Class.
+Volume SubClassOf PhysicalCharacteristic.
+VolumePerVolume is Class.
+VolumePerVolume SubClassOf PhysicalCharacteristic.
+VolumetricArea is Class.
+VolumetricArea SubClassOf PhysicalCharacteristic.
+VolumetricDensity is Class.
+VolumetricDensity SubClassOf PhysicalCharacteristic.
+VolumetricMassDensityRate is Class.
+VolumetricMassDensityRate SubClassOf PhysicalCharacteristic.
+VolumetricRate is Class.
+VolumetricRate SubClassOf PhysicalCharacteristic.
+WaveNumber is Class.
+WaveNumber SubClassOf PhysicalCharacteristic.
+BrackishWater is Class.
+BrackishWater SubClassOf Water.
+Water is Class.
+BaseCharacteristicQualifier is Class.
+BaseCharacteristicQualifier SubClassOf CharacteristicQualifier.
+Characteristic is Class.
+Characteristic is equivalent to Name or PhysicalCharacteristic or Relationship or Type.
+Thing is www.w3.org/2002/07/#.
+Thing DisjointWith Standard.
+Thing DisjointWith Protocol.
+Thing DisjointWith ObservationCollection.
+Thing DisjointWith Observation.
+Thing DisjointWith Measurement.
+Thing DisjointWith Entity.
+Thing DisjointWith CharacteristicQualifier.
+CharacteristicQualifier is Class.
+CharacteristicQualifier is equivalent to BaseCharacteristicQualifier or CompositeCharacteristicQualifier.
+Thing is www.w3.org/2002/07/#.
+Thing DisjointWith UnitConversion.
+Thing DisjointWith Standard.
+Thing DisjointWith Protocol.
+Thing DisjointWith ObservationCollection.
+Thing DisjointWith Observation.
+Thing DisjointWith Measurement.
+Thing DisjointWith Entity.
+Thing DisjointWith Characteristic.
+CompositeCharacteristicQualifier is Class.
+CompositeCharacteristicQualifier SubClassOf CharacteristicQualifier,.
+CompositeCharacteristicQualifier SubClassOf hasBaseQualifier exactly 1 BaseCharacteristicQualifier,.
+CompositeCharacteristicQualifier SubClassOf hasNextQualifier exactly 1 CharacteristicQualifier.
+Entity is Class.
+Entity DisjointWith CharacteristicQualifier.
+Entity DisjointWith Characteristic.
+Measurement is Class.
+Measurement DisjointWith CharacteristicQualifier.
+Measurement DisjointWith Characteristic.
+Name is Class.
+Name SubClassOf Characteristic.
+Name DisjointWith Type.
+Name DisjointWith Relationship.
+Name DisjointWith PhysicalCharacteristic.
+Observation is Class.
+Observation DisjointWith CharacteristicQualifier.
+Observation DisjointWith Characteristic.
+ObservationCollection is Class.
+ObservationCollection DisjointWith CharacteristicQualifier.
+ObservationCollection DisjointWith Characteristic.
+PhysicalCharacteristic is Class.
+PhysicalCharacteristic SubClassOf Characteristic.
+PhysicalCharacteristic DisjointWith Type.
+PhysicalCharacteristic DisjointWith Relationship.
+PhysicalCharacteristic DisjointWith Name.
+Protocol is Class.
+Protocol DisjointWith CharacteristicQualifier.
+Protocol DisjointWith Characteristic.
+Relationship is Class.
+Relationship SubClassOf Characteristic.
+Relationship DisjointWith Type.
+Relationship DisjointWith PhysicalCharacteristic.
+Relationship DisjointWith Name.
+Standard is Class.
+Standard DisjointWith CharacteristicQualifier.
+Standard DisjointWith Characteristic.
+Type is Class.
+Type SubClassOf Characteristic.
+Type DisjointWith Relationship.
+Type DisjointWith PhysicalCharacteristic.
+Type DisjointWith Name.
+UnitConversion is Class.
+UnitConversion DisjointWith CharacteristicQualifier.
+Adjacent is Class.
+Adjacent SubClassOf SpatialRelationship.
+Overlaps is Class.
+Overlaps SubClassOf SpatialRelationship.
+SingleCoordinateReferenceSystem is Class.
+SpatialRelationship is Class.
+SpatialRelationship SubClassOf Relationship.
+VerticalCoordinateReferenceSystem is Class.
+VerticalCoordinateReferenceSystem SubClassOf SingleCoordinateReferenceSystem.
+Within is Class.
+Within SubClassOf SpatialRelationship.
+Dekameter is Class.
+DekameterToMeter is Class.
+DekameterToMeter SubClassOf UnitConversion,.
+DekameterToMeter SubClassOf hasSourceUnit only Dekameter,.
+DekameterToMeter SubClassOf hasTargetUnit only Meter,.
+DekameterToMeter SubClassOf hasMultiplier value 10,.
+DekameterToMeter SubClassOf hasOffset value 0.
+Inch is Class.
+InchToMeter is Class.
+InchToMeter SubClassOf UnitConversion,.
+InchToMeter SubClassOf hasSourceUnit only Inch,.
+InchToMeter SubClassOf hasTargetUnit only Meter,.
+InchToMeter SubClassOf hasMultiplier value 0.0254,.
+InchToMeter SubClassOf hasOffset value 0.
+Meter is Class.
+Nanometer is Class.
+NanometerToMeter is Class.
+NanometerToMeter SubClassOf UnitConversion,.
+NanometerToMeter SubClassOf hasSourceUnit only Nanometer,.
+NanometerToMeter SubClassOf hasTargetUnit only Meter,.
+NanometerToMeter SubClassOf hasMultiplier value 1000000000,.
+NanometerToMeter SubClassOf hasOffset value 0.
+NauticalMile is Class.
+NauticalMileToMeter is Class.
+NauticalMileToMeter SubClassOf UnitConversion,.
+NauticalMileToMeter SubClassOf hasSourceUnit only NauticalMile,.
+NauticalMileToMeter SubClassOf hasTargetUnit only Meter,.
+NauticalMileToMeter SubClassOf hasMultiplier value 1852,.
+NauticalMileToMeter SubClassOf hasOffset value 0.
+After is Class.
+After SubClassOf TemporalRelationship.
+Before is Class.
+Before SubClassOf TemporalRelationship.
+During is Class.
+During SubClassOf TemporalRelationship.
+TemporalRelationship is Class.
+TemporalRelationship SubClassOf Relationship.
+AmountOfSubstanceConcentration is Class.
+Conductivity is Class.
+MicrosiemensPerMeter is Class.
+CompositeUnit is Class.
+www.w3.org/2002/07/# is Class.

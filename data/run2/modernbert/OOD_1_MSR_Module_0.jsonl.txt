@@ -1,0 +1,172 @@
+integer is Datatype.
+ageRangeRecommendationHasWoman is ObjectProperty.
+ageRangeRecommendationHasWoman Domain Age Range Recommendation.
+ageRangeRecommendationHasWoman Range With intermediate risk.
+ageRangeRecommendationHasWoman InverseOf hasAgeRecommendation.
+doesNotHaveHistory is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty DisjointWith hasHistory.
+topObjectProperty Characteristics Asymmetric.
+topObjectProperty Domain C14284.
+topObjectProperty Range C54625.
+topObjectProperty InverseOf notHistoryBelongsTo.
+hasAgeRecommendation is ObjectProperty.
+hasAgeRecommendation Domain With intermediate risk.
+hasAgeRecommendation Range Age Range Recommendation.
+hasAgeRecommendation InverseOf ageRangeRecommendationHasWoman.
+hasHistory is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty DisjointWith doesNotHaveHistory.
+topObjectProperty Domain without intermediate risk.
+topObjectProperty Range C54625.
+topObjectProperty InverseOf historyBelongsTo.
+hasIntermidiateRisk is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty Characteristics Functional,.
+topObjectProperty Characteristics Asymmetric.
+topObjectProperty Domain With intermediate risk.
+topObjectProperty Range C102402.
+topObjectProperty InverseOf intermidiateRiskHasWoman.
+hasRecommendation is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty Domain Age Range Recommendation.
+topObjectProperty Range C25197.
+topObjectProperty InverseOf recommendationHasAgeRangeRecommendation.
+historyBelongsTo is ObjectProperty.
+historyBelongsTo DisjointWith notHistoryBelongsTo.
+historyBelongsTo Domain C54625.
+historyBelongsTo Range without intermediate risk.
+historyBelongsTo InverseOf hasHistory.
+intermidiateRiskHasWoman is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty Domain C102402.
+topObjectProperty Range With intermediate risk.
+topObjectProperty InverseOf hasIntermidiateRisk.
+notHistoryBelongsTo is ObjectProperty.
+notHistoryBelongsTo DisjointWith historyBelongsTo.
+notHistoryBelongsTo Domain C54625.
+notHistoryBelongsTo Range C14284.
+notHistoryBelongsTo InverseOf doesNotHaveHistory.
+recommendationHasAgeRangeRecommendation is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty Domain C25197.
+topObjectProperty Range Age Range Recommendation.
+topObjectProperty InverseOf hasRecommendation.
+recommendationHasWoman is ObjectProperty.
+recommendationHasWoman Domain C25197.
+recommendationHasWoman Range C14284.
+recommendationHasWoman InverseOf womanHasRecommendation.
+womanHasRecommendation is ObjectProperty.
+womanHasRecommendation SubPropertyChain hasAgeRecommendation o hasRecommendation.
+womanHasRecommendation Domain C14284.
+womanHasRecommendation Range C25197.
+womanHasRecommendation InverseOf recommendationHasWoman.
+www.w3.org/2002/07/# is ObjectProperty.
+age is DataProperty.
+age Domain C14284.
+age Range integer.
+C102402 is Class.
+C102402 SubClassOf C17102.
+C14284 is Class.
+Thing is www.w3.org/2002/07/#.
+C16818 is Class.
+C16818 SubClassOf C25197.
+C17102 is Class.
+Thing is www.w3.org/2002/07/#.
+C18772 is Class.
+C18772 SubClassOf C54625.
+C25197 is Class.
+Thing is www.w3.org/2002/07/#.
+Thing DisjointWith Age Range Recommendation.
+C54625 is Class.
+Thing is www.w3.org/2002/07/#.
+C79417 is Class.
+C79417 SubClassOf C16818.
+Age Range Recommendation is Class.
+Thing is www.w3.org/2002/07/#.
+Thing DisjointWith Annual or Biannual.
+Thing DisjointWith C25197.
+Annual is Class.
+Annual SubClassOf C79417.
+Annual or Biannual is Class.
+Annual or Biannual SubClassOf C79417.
+Annual or Biannual DisjointWith Age Range Recommendation.
+With intermediate risk is Class.
+With intermediate risk is equivalent to C14284 and (doesNotHaveHistory value Confirmed or suspected genetic mutation) and (doesNotHaveHistory value Personal history of breast cancer) and (doesNotHaveHistory value Radiotherapy to chest).
+With intermediate risk SubClassOf C14284,.
+With intermediate risk SubClassOf C14284 and (hasIntermidiateRisk value Intermediate Risk).
+With intermediate risk DisjointWith without intermediate risk.
+between 40 to 44 is Class.
+between 40 to 44 is equivalent to With intermediate risk and (age some integer[= 40]) and (age some integer[<= 44]).
+between 40 to 44 SubClassOf With intermediate risk,.
+between 40 to 44 SubClassOf (hasAgeRecommendation value 40 to 44 Age range recommendation) and (age some integer[= 40 , <= 44]).
+between 45 to 54 is Class.
+between 45 to 54 is equivalent to With intermediate risk and (age some integer[= 45]) and (age some integer[<= 54]).
+between 45 to 54 SubClassOf With intermediate risk,.
+between 45 to 54 SubClassOf (hasAgeRecommendation value 44 to 54 Age range recommendation) and (age some integer[= 45 , <= 54]).
+between 45 to 54 DisjointWith With intermediate risk and (age some integer[= 45]) and (age some integer[<= 54]).
+greaterThan55 is Class.
+greaterThan55 is equivalent to With intermediate risk and (age some integer[= 55]).
+greaterThan55 SubClassOf With intermediate risk,.
+greaterThan55 SubClassOf (hasAgeRecommendation value greater than 55 Age range recommendation) and (age some integer[ 55]).
+without intermediate risk is Class.
+without intermediate risk SubClassOf C14284,.
+without intermediate risk SubClassOf C14284 and (not (hasIntermidiateRisk some C102402)),.
+without intermediate risk SubClassOf C14284 and (hasHistory some C54625).
+without intermediate risk DisjointWith With intermediate risk.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2002/07/# SubClassOf C18772.
+40 to 44 Age range recommendation is Individual.
+40 to 44 Age range recommendation Types Age Range Recommendation.
+40 to 44 Age range recommendation hasRecommendation Annual,.
+40 to 44 Age range recommendation hasRecommendation Qualified Recommendation.
+44 to 54 Age range recommendation is Individual.
+44 to 54 Age range recommendation hasRecommendation Annual,.
+44 to 54 Age range recommendation hasRecommendation Strong Recommendation.
+Annual is Individual.
+Annual Types Annual.
+Annual or Biannual is Individual.
+Annual or Biannual Types Annual or Biannual.
+Confirmed or suspected genetic mutation is Individual.
+Confirmed or suspected genetic mutation Types C18772.
+Intermediate Risk is Individual.
+Intermediate Risk Types C102402.
+Personal history of breast cancer is Individual.
+Personal history of breast cancer Types C18772.
+Qualified Recommendation is Individual.
+Qualified Recommendation Types C25197.
+Radiotherapy to chest is Individual.
+Radiotherapy to chest Types C18772.
+Strong Recommendation is Individual.
+Strong Recommendation Types C25197.
+Woman1 is Individual.
+Woman1 doesNotHaveHistory Confirmed or suspected genetic mutation,.
+Woman1 doesNotHaveHistory Personal history of breast cancer,.
+Woman1 doesNotHaveHistory Radiotherapy to chest,.
+Woman1 age 43.
+Woman2 is Individual.
+Woman2 doesNotHaveHistory Confirmed or suspected genetic mutation,.
+Woman2 doesNotHaveHistory Personal history of breast cancer,.
+Woman2 doesNotHaveHistory Radiotherapy to chest,.
+Woman2 age 56.
+Woman3 is Individual.
+Woman3 Types C14284.
+Woman3 doesNotHaveHistory Personal history of breast cancer,.
+Woman3 age 44.
+Woman4 is Individual.
+Woman4 hasHistory Personal history of breast cancer,.
+Woman4 age 56.
+Woman5 is Individual.
+Woman5 doesNotHaveHistory Confirmed or suspected genetic mutation,.
+Woman5 doesNotHaveHistory Personal history of breast cancer,.
+Woman5 doesNotHaveHistory Radiotherapy to chest,.
+Woman5 age 46.
+Woman6 is Individual.
+Woman6 doesNotHaveHistory Confirmed or suspected genetic mutation,.
+Woman6 doesNotHaveHistory Personal history of breast cancer,.
+Woman6 doesNotHaveHistory Radiotherapy to chest.
+greater than 55 Age range recommendation is Individual.
+greater than 55 Age range recommendation Types Age Range Recommendation.
+greater than 55 Age range recommendation hasRecommendation Annual or Biannual,.
+greater than 55 Age range recommendation hasRecommendation Qualified Recommendation.
+greater than 55 Age range recommendation DisjointClasses between 40 to 44,between 45 to 54,greaterThan55.

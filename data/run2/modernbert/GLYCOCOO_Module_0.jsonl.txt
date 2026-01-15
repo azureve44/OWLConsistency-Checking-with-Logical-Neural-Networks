@@ -1,0 +1,211 @@
+www.w3.org/2000/01/-schema# is Datatype.
+integer is Datatype.
+has amino acid is ObjectProperty.
+has amino acid Domain ExactPosition.
+has amino acid Range Glycosylated AA or SIO 001224.
+has attached referenced saccharide is ObjectProperty.
+has attached referenced saccharide Domain Referenced protein.
+has attached referenced saccharide Range Referenced saccharide.
+has protein is ObjectProperty.
+has protein Domain Referenced protein.
+has protein Range Glycoprotein.
+has protein part is ObjectProperty.
+has protein part Domain Referenced glycoconjugate.
+has protein part Range Referenced protein.
+has saccharide part is ObjectProperty.
+has saccharide part Domain Referenced glycoconjugate.
+has saccharide part Range Referenced saccharide.
+max relative abundance is ObjectProperty.
+max relative abundance Domain Relative abundance.
+max relative abundance Range Max relative abundance.
+min relative abundance is ObjectProperty.
+min relative abundance Domain Relative abundance.
+min relative abundance Range Min relative abundance.
+has association is ObjectProperty.
+has association Domain Referenced compound.
+has association Range SIO 000897.
+has glycan is ObjectProperty.
+has glycan Characteristics Functional.
+has glycan Domain Referenced compound.
+has glycan Range Saccharide.
+has lipid is ObjectProperty.
+has lipid Domain Referenced lipid.
+has lipid Range Glycolipid.
+has saccharide set is ObjectProperty.
+has saccharide set Domain Referenced protein.
+has saccharide set Range SIO 000289.
+has taxon is ObjectProperty.
+has taxon Characteristics Functional.
+has taxon Domain Source natural.
+has taxon Range Taxon.
+is from source is ObjectProperty.
+is from source Domain Referenced compound.
+is from source Range Source.
+annotation is ObjectProperty.
+annotation Domain Protein.
+annotation Range Annotation.
+commonName is ObjectProperty.
+commonName Characteristics Functional.
+commonName Domain Taxon.
+SIO 000313 is ObjectProperty.
+SIO 000313 Domain SIO 000289.
+SIO 000313 Range SIO 001258.
+SIO 000313 InverseOf SIO 000369.
+SIO 000369 is ObjectProperty.
+SIO 000369 InverseOf SIO 000313.
+SIO 000628 is ObjectProperty.
+position is DataProperty.
+position Domain ExactPosition.
+position Range integer[= 1].
+amino  acid length is DataProperty.
+amino  acid length Domain Glycoprotein.
+amino  acid length Range integer.
+ExactPosition is Class.
+ExactPosition SubClassOf Position,.
+Literal is position exactly 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith OneOfPosition.
+FuzzyPosition is Class.
+FuzzyPosition SubClassOf Position.
+OneOfPosition is Class.
+OneOfPosition SubClassOf FuzzyPosition.
+OneOfPosition DisjointWith ExactPosition.
+Position is Class.
+Thing is www.w3.org/2002/07/#.
+Compound disease association is Class.
+Compound disease association SubClassOf SIO 000897.
+Max relative abundance is Class.
+Thing is www.w3.org/2002/07/#.
+Min relative abundance is Class.
+Thing is www.w3.org/2002/07/#.
+Referenced glycoconjugate is Class.
+Referenced glycoconjugate SubClassOf Referenced compound,.
+Referenced glycoconjugate SubClassOf referenced compound.
+Referenced lipid is Class.
+Referenced lipid SubClassOf Referenced compound,.
+Referenced lipid SubClassOf referenced compound.
+Referenced protein is Class.
+Referenced protein SubClassOf Referenced compound,.
+Referenced protein SubClassOf referenced compound.
+Referenced saccharide is Class.
+Referenced saccharide SubClassOf Referenced compound,.
+Referenced saccharide SubClassOf referenced compound.
+Relative abundance is Class.
+Thing is www.w3.org/2002/07/#.
+Citation is Class.
+Citation is equivalent to citation.
+Thing is www.w3.org/2002/07/#.
+Compound is Class.
+Compound is equivalent to compound.
+Thing is www.w3.org/2002/07/#.
+Evidence is Class.
+Evidence is equivalent to evidence.
+Thing is www.w3.org/2002/07/#.
+Glycoconjugate is Class.
+Glycoconjugate is equivalent to glycoconjugate.
+Thing is www.w3.org/2002/07/#.
+Glycolipid is Class.
+Glycolipid is equivalent to glycolipid.
+Glycolipid SubClassOf Glycoconjugate,.
+Glycolipid SubClassOf glycoconjugate.
+Glycopeptide is Class.
+Glycopeptide is equivalent to glycopeptide.
+Thing is www.w3.org/2002/07/#.
+Glycoprotein is Class.
+Glycoprotein is equivalent to glycoprotein.
+Glycoprotein SubClassOf Glycoconjugate,.
+Glycoprotein SubClassOf glycoconjugate,.
+Glycoprotein SubClassOf Protein.
+Glycosylated AA is Class.
+Glycosylated AA is equivalent to glycosylated AA.
+Glycosylated AA SubClassOf Glycoconjugate,.
+Glycosylated AA SubClassOf glycoconjugate.
+Glycosylation site is Class.
+Glycosylation site SubClassOf Glycosylation Annotation.
+Referenced compound is Class.
+Referenced compound is equivalent to referenced compound.
+Thing is www.w3.org/2002/07/#.
+Saccharide is Class.
+Saccharide is equivalent to saccharide.
+Saccharide SubClassOf Compound,.
+Saccharide SubClassOf compound.
+Source is Class.
+Source is equivalent to source.
+Thing is www.w3.org/2002/07/#.
+Source natural is Class.
+Source natural is equivalent to source natural.
+Source natural SubClassOf Source,.
+Source natural SubClassOf source.
+citation is Class.
+citation is equivalent to Citation.
+Thing is www.w3.org/2002/07/#.
+compound is Class.
+compound is equivalent to Compound.
+Thing is www.w3.org/2002/07/#.
+evidence is Class.
+evidence is equivalent to Evidence.
+Thing is www.w3.org/2002/07/#.
+glycoconjugate is Class.
+glycoconjugate is equivalent to Glycoconjugate.
+Thing is www.w3.org/2002/07/#.
+glycopeptide is Class.
+glycopeptide is equivalent to Glycopeptide.
+Thing is www.w3.org/2002/07/#.
+glycoprotein is Class.
+glycoprotein is equivalent to Glycoprotein.
+glycoprotein SubClassOf Glycoconjugate,.
+glycoprotein SubClassOf glycoconjugate,.
+glycoprotein SubClassOf Protein.
+glycosylated AA is Class.
+glycosylated AA is equivalent to Glycosylated AA.
+glycosylated AA SubClassOf Glycoconjugate,.
+glycosylated AA SubClassOf glycoconjugate.
+referenced compound is Class.
+referenced compound is equivalent to Referenced compound.
+Thing is www.w3.org/2002/07/#.
+saccharide is Class.
+saccharide is equivalent to Saccharide.
+saccharide SubClassOf Compound,.
+saccharide SubClassOf compound.
+source is Class.
+source is equivalent to Source.
+Thing is www.w3.org/2002/07/#.
+source natural is Class.
+source natural is equivalent to Source natural.
+source natural SubClassOf Source,.
+source natural SubClassOf source.
+glycolipid is Class.
+glycolipid is equivalent to Glycolipid.
+glycolipid SubClassOf Glycoconjugate,.
+glycolipid SubClassOf glycoconjugate.
+UO 0000193 is Class.
+UO 0000193 is equivalent to {UO 0000193}.
+Thing is www.w3.org/2002/07/#.
+Annotation is Class.
+Thing is www.w3.org/2002/07/#.
+Glycosylation Annotation is Class.
+Thing is www.w3.org/2002/07/#.
+Protein is Class.
+Thing is www.w3.org/2002/07/#.
+Taxon is Class.
+Thing is www.w3.org/2002/07/#.
+SIO 000000 is Class.
+Thing is www.w3.org/2002/07/#.
+SIO 000074 is Class.
+Thing is www.w3.org/2002/07/#.
+SIO 000075 is Class.
+Thing is www.w3.org/2002/07/#.
+SIO 000289 is Class.
+SIO 000289 SubClassOf SIO 000075.
+SIO 000897 is Class.
+SIO 000897 SubClassOf SIO 000075,.
+SIO 000897 SubClassOf SIO 000628 min 2 SIO 000000.
+SIO 001018 is Class.
+Thing is www.w3.org/2002/07/#.
+SIO 001224 is Class.
+Thing is www.w3.org/2002/07/#.
+SIO 001258 is Class.
+SIO 001258 SubClassOf SIO 000075.
+SIO 010497 is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.
+UO 0000193 is Individual.

@@ -1,0 +1,194 @@
+int is Datatype.
+string is Datatype.
+hasMember is ObjectProperty.
+hasMember Domain group.
+hasMember Range territory.
+hasMember InverseOf isInGroup.
+isInGroup is ObjectProperty.
+isInGroup InverseOf hasMember.
+BFO 0000050 is ObjectProperty.
+BFO 0000051 is ObjectProperty.
+ERO 0000543 is ObjectProperty.
+ERO 0000918 is ObjectProperty.
+ERO 0000918 Domain ERO 0000020.
+ERO 0000918 Range ERO 0000014.
+ERO 0000918 InverseOf ERO 0000919.
+ERO 0000919 is ObjectProperty.
+ERO 0000919 InverseOf ERO 0000918.
+OBI 0000304 is ObjectProperty.
+OBI 0000304 Domain BFO 0000040.
+Organization is ns.com/foaf/0.1/.
+OBI 0000312 is ObjectProperty.
+RO 0000053 is ObjectProperty.
+RO 0000053 Domain BFO 0000004.
+RO 0000053 Range BFO 0000020.
+RO 0000056 is ObjectProperty.
+RO 0000056 Domain BFO 0000002.
+RO 0000056 Range BFO 0000003.
+RO 0000056 InverseOf RO 0000057.
+RO 0000057 is ObjectProperty.
+RO 0000057 InverseOf RO 0000056.
+RO 0001000 is ObjectProperty.
+RO 0002353 is ObjectProperty.
+RO 0002353 SubPropertyOf RO 0000056.
+RO 0003000 is ObjectProperty.
+RO 0003000 Domain BFO 0000040.
+RO 0003000 Range BFO 0000040.
+RO 0003000 InverseOf RO 0003001.
+RO 0003001 is ObjectProperty.
+RO 0003001 Domain BFO 0000040.
+RO 0003001 Range BFO 0000040.
+RO 0003001 InverseOf RO 0003000.
+equipmentFor is ObjectProperty.
+equipmentFor Domain Equipment.
+Organization is ns.com/foaf/0.1/.
+Organization InverseOf hasEquipment.
+hasEquipment is ObjectProperty.
+hasEquipment InverseOf equipmentFor.
+ARG 0000015 is DataProperty.
+ARG 0000015 Domain ARG 0000008.
+ERO 0000050 is DataProperty.
+ERO 0000050 Domain ERO 0000004.
+ERO 0000050 Range string.
+freetextKeyword is DataProperty.
+seatingCapacity is DataProperty.
+seatingCapacity Characteristics Functional.
+seatingCapacity Domain Room.
+seatingCapacity Range int.
+organizationalUnitName is DataProperty.
+organizationalUnitName Domain OrganizationUnitName.
+organizationalUnitName Range string.
+area is Class.
+disputed is Class.
+disputed SubClassOf territory.
+economic region is Class.
+economic region SubClassOf group.
+geographical region is Class.
+geographical region SubClassOf group.
+group is Class.
+group SubClassOf area.
+organization is Class.
+organization SubClassOf group.
+other is Class.
+other SubClassOf territory.
+special group is Class.
+special group SubClassOf group.
+territory is Class.
+ARG 0000008 is Class.
+ARG 2000008 is Class.
+ARG 2000009 is Class.
+ARG 2000009 SubClassOf ARG 2000008.
+ARG 2000376 is Class.
+BFO 0000001 is Class.
+BFO 0000002 is Class.
+BFO 0000002 SubClassOf BFO 0000001.
+BFO 0000003 is Class.
+BFO 0000004 is Class.
+BFO 0000004 SubClassOf BFO 0000002.
+BFO 0000006 is Class.
+BFO 0000006 SubClassOf BFO 0000141.
+BFO 0000020 is Class.
+BFO 0000020 SubClassOf BFO 0000002.
+BFO 0000029 is Class.
+BFO 0000029 SubClassOf BFO 0000141.
+BFO 0000031 is Class.
+BFO 0000031 SubClassOf BFO 0000002.
+BFO 0000040 is Class.
+BFO 0000040 SubClassOf BFO 0000004.
+BFO 0000141 is Class.
+BFO 0000141 SubClassOf BFO 0000004.
+ERO 0000004 is Class.
+ERO 0000004 SubClassOf BFO 0000040,.
+ERO 0000004 SubClassOf OBI 0000312 some OBI 0000094,.
+ERO 0000004 SubClassOf ERO 0000543 only ERO 0000007.
+ERO 0000006 is Class.
+ERO 0000006 is equivalent to BFO 0000040 and ((OBI 0000312 some OBI 0000094) and (RO 0000053 some OBI 0000086)).
+ERO 0000006 SubClassOf BFO 0000040.
+ERO 0000007 is Class.
+ERO 0000014 is Class.
+ERO 0000020 is Class.
+ERO 0000020 SubClassOf BFO 0000040,.
+ERO 0000020 SubClassOf RO 0001000 some OBI 0100026.
+ERO 0000071 is Class.
+ERO 0000071 SubClassOf BFO 0000040.
+IAO 0000032 is Class.
+OBI 0000086 is Class.
+OBI 0000094 is Class.
+OBI 0001554 is Class.
+OBI 0001554 SubClassOf IAO 0000032.
+OBI 0100026 is Class.
+OBI 0100026 SubClassOf BFO 0000040.
+AcademicDegree is Class.
+Award is Class.
+Building is Class.
+Building SubClassOf Facility,.
+Building SubClassOf BFO 0000050 only Facility,.
+Building SubClassOf BFO 0000051 only Room.
+College is Class.
+Organization is ns.com/foaf/0.1/.
+Company is Class.
+Organization is ns.com/foaf/0.1/.
+Continent is Class.
+Continent SubClassOf GeographicRegion.
+County is Class.
+County SubClassOf GeopoliticalEntity.
+Credential is Class.
+DateTimeValuePrecision is Class.
+Equipment is Class.
+Equipment SubClassOf BFO 0000040,.
+Equipment SubClassOf freetextKeyword only string.
+F1000Link is Class.
+F1000Link SubClassOf URL.
+Facility is Class.
+Facility SubClassOf BFO 0000029.
+FacultyMember is Class.
+Person is ns.com/foaf/0.1/.
+GeographicRegion is Class.
+GeopoliticalEntity is Class.
+GovernmentAgency is Class.
+Organization is ns.com/foaf/0.1/.
+Hospital is Class.
+Organization is ns.com/foaf/0.1/.
+Library is Class.
+Organization is ns.com/foaf/0.1/.
+Location is Class.
+Location SubClassOf BFO 0000006.
+PrivateCompany is Class.
+PrivateCompany SubClassOf Company.
+Program is Class.
+Organization is ns.com/foaf/0.1/.
+Room is Class.
+Room SubClassOf Facility,.
+Room SubClassOf BFO 0000050 only Facility.
+School is Class.
+Organization is ns.com/foaf/0.1/.
+StateOrProvince is Class.
+StateOrProvince SubClassOf GeopoliticalEntity.
+Team is Class.
+Group is ns.com/foaf/0.1/.
+University is Class.
+Organization is ns.com/foaf/0.1/.
+www.w3.org/2002/07/# is Class.
+Date is Class.
+Date SubClassOf RelatedType.
+Friend is Class.
+Friend SubClassOf RelatedType.
+Gender is Class.
+Me is Class.
+Me SubClassOf RelatedType.
+None is Class.
+None SubClassOf Gender.
+OrganizationName is Class.
+OrganizationUnitName is Class.
+OrganizationUnitName is equivalent to (organizationalUnitName some string).
+OrganizationUnitName SubClassOf OrganizationName.
+RelatedType is Class.
+Type is Class.
+URL is Class.
+Work is Class.
+Work SubClassOf Type.
+ns.com/foaf/0.1/ is Class.
+ns.com/foaf/0.1/ SubClassOf BFO 0000004.
+ns.com/foaf/0.1/ is Class.
+ns.com/foaf/0.1/ is Class.
+ns.com/foaf/0.1/ is Class.

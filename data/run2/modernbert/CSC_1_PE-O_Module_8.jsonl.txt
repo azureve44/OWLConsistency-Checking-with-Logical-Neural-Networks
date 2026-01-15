@@ -1,0 +1,63 @@
+has participant is ObjectProperty.
+has participant Domain ProcessualEntity.
+has participant Range Continuant.
+is entity used in is ObjectProperty.
+preceded by is ObjectProperty.
+preceded by Characteristics Transitive.
+preceded by Domain ProcessualEntity.
+preceded by Range ProcessualEntity.
+disease cause is Class.
+etiological context is Class.
+etiological context DisjointWith ProcessBoundary.
+Continuant is Class.
+FiatProcessPart is Class.
+FiatProcessPart SubClassOf ProcessualEntity.
+FiatProcessPart DisjointWith ProcessualContext.
+FiatProcessPart DisjointWith ProcessBoundary.
+FiatProcessPart DisjointWith ProcessAggregate.
+FiatProcessPart DisjointWith Process.
+Occurrent is Class.
+Occurrent SubClassOf ProcessAggregate.
+Process is Class.
+Process SubClassOf ProcessualEntity.
+Process DisjointWith ProcessualContext.
+Process DisjointWith ProcessBoundary.
+Process DisjointWith ProcessAggregate.
+Process DisjointWith FiatProcessPart.
+ProcessAggregate is Class.
+ProcessAggregate SubClassOf ProcessualEntity.
+ProcessAggregate DisjointWith ProcessualContext.
+ProcessAggregate DisjointWith ProcessBoundary.
+ProcessAggregate DisjointWith Process.
+ProcessAggregate DisjointWith FiatProcessPart.
+ProcessBoundary is Class.
+ProcessBoundary SubClassOf ProcessualEntity.
+ProcessBoundary DisjointWith ProcessualContext.
+ProcessBoundary DisjointWith ProcessAggregate.
+ProcessBoundary DisjointWith Process.
+ProcessBoundary DisjointWith FiatProcessPart.
+ProcessBoundary DisjointWith etiological context.
+ProcessualContext is Class.
+ProcessualContext SubClassOf ProcessualEntity.
+ProcessualContext DisjointWith ProcessBoundary.
+ProcessualContext DisjointWith ProcessAggregate.
+ProcessualContext DisjointWith Process.
+ProcessualContext DisjointWith FiatProcessPart.
+ProcessualEntity is Class.
+ProcessualEntity is equivalent to FiatProcessPart or Process or ProcessAggregate or ProcessBoundary or ProcessualContext.
+ProcessualEntity SubClassOf Occurrent.
+ProcessualEntity DisjointWith FiatProcessPart or Process or ProcessAggregate or ProcessBoundary or ProcessualContext.
+ProcessualEntity DisjointWith TemporalRegion.
+ProcessualEntity DisjointWith SpatiotemporalRegion.
+SpatiotemporalRegion is Class.
+SpatiotemporalRegion DisjointWith ProcessualEntity.
+TemporalRegion is Class.
+TemporalRegion DisjointWith ProcessualEntity.
+Eventual causes is Class.
+Eventual causes SubClassOf disease cause,.
+Eventual causes SubClassOf is entity used in some etiological context,.
+Eventual causes SubClassOf is entity used in only ProcessBoundary.
+Infectious causes is Class.
+Infectious causes SubClassOf ProcessualEntity,.
+Infectious causes SubClassOf is entity used in some etiological context.
+www.w3.org/2002/07/# is Class.

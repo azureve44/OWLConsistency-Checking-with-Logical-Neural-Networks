@@ -1,0 +1,97 @@
+OBI 0000294 is ObjectProperty.
+OBI 0000300 is ObjectProperty.
+OBI 0000308 is ObjectProperty.
+RO 0000079 is ObjectProperty.
+RO 0000079 Domain BFO 0000034.
+RO 0000079 InverseOf RO 0000085.
+RO 0000085 is ObjectProperty.
+RO 0000085 Domain BFO 0000004.
+RO 0000085 Range BFO 0000034.
+RO 0000085 InverseOf RO 0000079.
+RO 0000087 is ObjectProperty.
+RO 0000087 Domain BFO 0000004.
+RO 0000087 Range BFO 0000023.
+RO 0000091 is ObjectProperty.
+RO 0000091 Domain BFO 0000004.
+RO 0000091 Range BFO 0000016.
+RO 0000091 InverseOf RO 0000092.
+RO 0000092 is ObjectProperty.
+RO 0000092 InverseOf RO 0000091.
+RO 0001025 is ObjectProperty.
+RO 0001025 Characteristics Transitive.
+RO 0001025 Domain BFO 0000004.
+RO 0001025 Range BFO 0000004,.
+RO 0001025 Range BFO 0000004 and (not (BFO 0000006)).
+BFO 0000002 is Class.
+BFO 0000004 is Class.
+BFO 0000004 SubClassOf BFO 0000002.
+BFO 0000004 DisjointWith BFO 0000031.
+BFO 0000004 DisjointWith BFO 0000020.
+BFO 0000006 is Class.
+BFO 0000009 is Class.
+BFO 0000009 is equivalent to BFO 0000028.
+BFO 0000009 SubClassOf BFO 0000006.
+BFO 0000009 DisjointWith BFO 0000028.
+BFO 0000016 is Class.
+BFO 0000018 is Class.
+BFO 0000018 SubClassOf BFO 0000006.
+BFO 0000018 DisjointWith BFO 0000028.
+BFO 0000020 is Class.
+BFO 0000020 DisjointWith BFO 0000004.
+BFO 0000023 is Class.
+BFO 0000026 is Class.
+BFO 0000026 SubClassOf BFO 0000006.
+BFO 0000026 DisjointWith BFO 0000028.
+BFO 0000028 is Class.
+BFO 0000028 is equivalent to BFO 0000009.
+BFO 0000028 SubClassOf BFO 0000006.
+BFO 0000028 DisjointWith BFO 0000026.
+BFO 0000028 DisjointWith BFO 0000018.
+BFO 0000028 DisjointWith BFO 0000009.
+BFO 0000029 is Class.
+BFO 0000031 is Class.
+BFO 0000031 DisjointWith BFO 0000004.
+BFO 0000034 is Class.
+BFO 0000034 SubClassOf BFO 0000016.
+BFO 0000040 is Class.
+BFO 0000040 SubClassOf BFO 0000004.
+BFO 0000140 is Class.
+BFO 0000141 is Class.
+BFO 0000141 SubClassOf BFO 0000004.
+BFO 0000142 is Class.
+BFO 0000142 SubClassOf BFO 0000140.
+BFO 0000142 DisjointWith BFO 0000147.
+BFO 0000142 DisjointWith BFO 0000146.
+BFO 0000146 is Class.
+BFO 0000146 SubClassOf BFO 0000140.
+BFO 0000146 DisjointWith BFO 0000142.
+BFO 0000147 is Class.
+BFO 0000147 SubClassOf BFO 0000140.
+BFO 0000147 DisjointWith BFO 0000142.
+GAZ 00000448 is Class.
+GAZ 00000448 SubClassOf BFO 0000029.
+COCO test suite is Class.
+algorithm execution is Class.
+benchmark algorithm implementation is Class.
+benchmark optimization algorithm is Class.
+benchmark optimization algorithm implementation is Class.
+benchmark optimization algorithm implementation SubClassOf benchmark algorithm implementation,.
+benchmark optimization algorithm implementation SubClassOf OBI 0000294 some benchmark optimization algorithm,.
+benchmark optimization algorithm implementation SubClassOf OBI 0000300 some optimization algorithm benchmark execution.
+benchmark problem transformation is Class.
+optimization algorithm is Class.
+optimization algorithm benchmark execution is Class.
+optimization algorithm execution is Class.
+optimization algorithm execution SubClassOf algorithm execution,.
+optimization algorithm execution SubClassOf OBI 0000308 some optimization algorithm implementation.
+optimization algorithm execution DisjointWith BFO 0000004 and (not (BFO 0000006)).
+optimization algorithm implementation is Class.
+optimization algorithm implementation SubClassOf OntoDM 112569,.
+optimization algorithm implementation SubClassOf OBI 0000294 some optimization algorithm,.
+optimization algorithm implementation SubClassOf OBI 0000300 some optimization algorithm execution,.
+optimization algorithm implementation SubClassOf OBI 0000300 only.
+optimization algorithm implementation SubClassOf (BFO 0000004 and (not (BFO 0000006))).
+transform obj shift is Class.
+transform obj shift SubClassOf benchmark problem transformation.
+OntoDM 112569 is Class.
+www.w3.org/2002/07/# is Class.

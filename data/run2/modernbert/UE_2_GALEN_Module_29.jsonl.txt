@@ -1,0 +1,2279 @@
+IsDivisionOf is ObjectProperty.
+LocativeAttribute is ObjectProperty.
+actsOn is ObjectProperty.
+actsSpecificallyOn is ObjectProperty.
+hasAbnormalityStatus is ObjectProperty.
+hasAbsoluteState is ObjectProperty.
+hasAcquisitionMode is ObjectProperty.
+hasAge is ObjectProperty.
+hasAppropriateness is ObjectProperty.
+hasChronicity is ObjectProperty.
+hasClinicalAppearance is ObjectProperty.
+hasConsequence is ObjectProperty.
+hasEffectiveness is ObjectProperty.
+hasIntentionality is ObjectProperty.
+hasIntrinsicPathologicalStatus is ObjectProperty.
+hasMagnitude is ObjectProperty.
+hasMedialLateralSelector is ObjectProperty.
+hasPathologicalStatus is ObjectProperty.
+hasPersonPerforming is ObjectProperty.
+hasProcessActivity is ObjectProperty.
+hasQuality is ObjectProperty.
+hasQuantity is ObjectProperty.
+hasSpecificConsequence is ObjectProperty.
+hasSpecificImmediateConsequence is ObjectProperty.
+hasSpecificLocation is ObjectProperty.
+hasSpecificPhysicalMeans is ObjectProperty.
+hasSpecificSubprocess is ObjectProperty.
+hasStructuralComponent is ObjectProperty.
+hasStructuralExtent is ObjectProperty.
+hasSubprocess is ObjectProperty.
+hasTemporalPattern is ObjectProperty.
+hasTreatmentTractability is ObjectProperty.
+hasUniqueAssociatedDisplacement is ObjectProperty.
+isActedOnBy is ObjectProperty.
+isActedOnSpecificallyBy is ObjectProperty.
+isAcuityOf is ObjectProperty.
+isConsequenceOf is ObjectProperty.
+isDiameterOf is ObjectProperty.
+isDisplacementFrom is ObjectProperty.
+isDisplacementTo is ObjectProperty.
+isDissolvedWithin is ObjectProperty.
+isExistenceOf is ObjectProperty.
+isFeatureOf is ObjectProperty.
+isFollowedBy is ObjectProperty.
+isFrequencyOf is ObjectProperty.
+isFunctionOf is ObjectProperty.
+isHistoryOf is ObjectProperty.
+isMadeOf is ObjectProperty.
+isMassOf is ObjectProperty.
+isNonPartitivelyContainedIn is ObjectProperty.
+isPairedOrUnpaired is ObjectProperty.
+isQualityOf is ObjectProperty.
+isScopeOf is ObjectProperty.
+isSpecificConsequenceOf is ObjectProperty.
+isSpecificFunctionOf is ObjectProperty.
+isSpecificImmediateConsequenceOf is ObjectProperty.
+isSpecificLayerOf is ObjectProperty.
+isSpecificSolidDivisionOf is ObjectProperty.
+isSpecificStructuralComponentOf is ObjectProperty.
+isSpecificSubprocessOf is ObjectProperty.
+isSpecificallyServedBy is ObjectProperty.
+isStructuralComponentOf is ObjectProperty.
+isSynchronicityOf is ObjectProperty.
+isToDetermine is ObjectProperty.
+isToughnessOf is ObjectProperty.
+occursDuring is ObjectProperty.
+playsClinicalRole is ObjectProperty.
+playsConsultationRole is ObjectProperty.
+playsPhysiologicalRole is ObjectProperty.
+serves is ObjectProperty.
+ABOBloodGroupTest is Class.
+ABOBloodGroupTest SubClassOf InvestigationAct.
+ABloodGroupTest is Class.
+ABloodGroupTest SubClassOf InvestigationAct.
+Abdomen is Class.
+AbdominalColic is Class.
+AbdominalColicSymptom is Class.
+AbdominalColicSymptom is equivalent to AbdominalColic and (playsConsultationRole some SymptomRole).
+AbdominalColicSymptom SubClassOf AbdominalColic.
+AbdominalExamination is Class.
+AbdominalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+AbdominalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Abdomen))).
+AbdominalExamination SubClassOf ClinicalAct.
+AbdominalStraining is Class.
+AbducensNerve is Class.
+AbducensNerveExamination is Class.
+AbducensNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+AbducensNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some AbducensNerve))).
+AbducensNerveExamination SubClassOf ClinicalAct.
+AbnormalAtrioventricularExcitation is Class.
+AbnormalAtrioventricularExcitation is equivalent to ElectricalConduction and (hasPathologicalStatus some pathological) and (isSpecificFunctionOf some AtrioventricularConductionPathwayFibres).
+AbnormalAtrioventricularExcitation SubClassOf ElectricalConduction.
+AbnormalCyst is Class.
+AbnormallyDrySkin is Class.
+AbnormallyDrySkin is equivalent to DrySkin and (hasAbnormalityStatus some nonNormal).
+AbnormallyDrySkin SubClassOf DrySkin.
+Abortion is Class.
+Absorbing is Class.
+Absorbing SubClassOf NAMEDMolecularSorptionProcess.
+Absorption is Class.
+AccessoryNerve is Class.
+AccessoryNerveExamination is Class.
+AccessoryNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+AccessoryNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some AccessoryNerve))).
+AccessoryNerveExamination SubClassOf ClinicalAct.
+Accumulating is Class.
+AcetylatorStatus is Class.
+AcetylatorStatus SubClassOf InvestigationAct.
+Acidifcation is Class.
+Acidifcation SubClassOf pHAlteration.
+AcquisitionMode is Class.
+ActivationOfPsychosis is Class.
+ActivationOfPsychosis is equivalent to StartingProcess and (isSpecificSubprocessOf some Psychosis).
+ActivationOfPsychosis SubClassOf StartingProcess.
+ActiveAbsorption is Class.
+ActiveAbsorption SubClassOf Absorption,.
+ActiveAbsorption SubClassOf hasUniqueAssociatedDisplacement some.
+ActiveAbsorption SubClassOf (Displacement and (isDisplacementTo some TissueCell)).
+ActiveDrugAdditiveRole is Class.
+ActiveDrugIngredient is Class.
+Activity is Class.
+Activity SubClassOf NAMEDVolitionalAct.
+ActivityOfDailyLife is Class.
+ActivityOfDailyLife SubClassOf Activity.
+Acuity is Class.
+AcuteAnteroApicalMyocardialInfarction is Class.
+AcuteAnteroApicalMyocardialInfarction SubClassOf AcuteMyocardialInfarction.
+AcuteAnteroseptalMyocardialInfarction is Class.
+AcuteAnteroseptalMyocardialInfarction SubClassOf AcuteMyocardialInfarction.
+AcuteHighLateralWallMyocardialInfarction is Class.
+AcuteHighLateralWallMyocardialInfarction SubClassOf AcuteMyocardialInfarction.
+AcuteMyocardialInfarction is Class.
+AcuteMyocardialInfarction is equivalent to MyocardialInfarct and (hasChronicity some.
+AcuteMyocardialInfarction is equivalent to (Chronicity and (hasAbsoluteState some acute))).
+AcuteMyocardialInfarction SubClassOf MyocardialInfarct.
+Addiction is Class.
+AddictiveBehaviour is Class.
+AddictiveBehaviour SubClassOf NAMEDVolitionalAct.
+AdnexalStructureOfUterus is Class.
+Adsorbing is Class.
+Adsorbing SubClassOf NAMEDMolecularSorptionProcess.
+Adult is Class.
+Adult is equivalent to Human and (hasAge some.
+Adult is equivalent to (Age and (hasAbsoluteState some.
+Adult is equivalent to (AgeState and (occursDuring some PeriodDuringAdulthood))))).
+Adult SubClassOf Human.
+AdultOverFifty is Class.
+AdultOverFifty SubClassOf Adult.
+AdultOverThirtyFive is Class.
+AdultOverThirtyFive SubClassOf Adult.
+Affability is Class.
+Affability SubClassOf AggressionOrAffability.
+AfferentRole is Class.
+AfferentRole SubClassOf FunctionalRole.
+Age is Class.
+AgeState is Class.
+Agency is Class.
+Agency SubClassOf SocialOrganisation.
+AggressionOrAffability is Class.
+Alcoholism is Class.
+Alcoholism is equivalent to Addiction and (actsSpecificallyOn some Ethanol).
+Alcoholism SubClassOf Addiction.
+Aldohexose is Class.
+AnabolicProcess is Class.
+AnalExamination is Class.
+AnalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+AnalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Anus))).
+AnalExamination SubClassOf ClinicalAct.
+AngerOrPlacidity is Class.
+Ankle is Class.
+AnkleExamination is Class.
+AnkleExamination is equivalent to ClinicalAct and (hasSubprocess some.
+AnkleExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Ankle))).
+AnkleExamination SubClassOf ClinicalAct.
+AnkleJoint is Class.
+AnkleJointExamination is Class.
+AnkleJointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+AnkleJointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some AnkleJoint))).
+AnkleJointExamination SubClassOf ClinicalAct.
+Anonymous-103 is Class.
+Anonymous-103 SubClassOf AcuteMyocardialInfarction.
+Anonymous-104 is Class.
+Anonymous-104 SubClassOf Secretion.
+Anonymous-122 is Class.
+Anonymous-122 SubClassOf Secretion.
+Anonymous-127 is Class.
+Anonymous-127 is equivalent to ManufacturingProcess and (hasSubprocess some AnabolicProcess).
+Anonymous-127 SubClassOf ManufacturingProcess,.
+Anonymous-127 SubClassOf hasConsequence some Gelatin.
+Anonymous-136 is Class.
+Anonymous-136 SubClassOf Secretion.
+Anonymous-137 is Class.
+Anonymous-137 is equivalent to ManufacturingProcess and (hasSubprocess some AnabolicProcess).
+Anonymous-137 SubClassOf ManufacturingProcess,.
+Anonymous-137 SubClassOf hasConsequence some EtherifiedStarch,.
+Anonymous-137 SubClassOf hasConsequence only.
+Anonymous-137 SubClassOf (ClinicalAct and (hasSubprocess some.
+Anonymous-137 SubClassOf (ExaminingProcess and (LocativeAttribute some Iris)))).
+Anonymous-138 is Class.
+Anonymous-138 SubClassOf Secretion.
+Anonymous-16 is Class.
+Anonymous-16 SubClassOf Secretion.
+Anonymous-160 is Class.
+Anonymous-160 SubClassOf Secretion.
+Anonymous-162 is Class.
+Anonymous-162 SubClassOf Secretion.
+Anonymous-18 is Class.
+Anonymous-18 SubClassOf Secretion.
+Anonymous-191 is Class.
+Anonymous-191 SubClassOf Secretion.
+Anonymous-195 is Class.
+Anonymous-195 is equivalent to ManufacturingProcess and (hasSubprocess some AnabolicProcess).
+Anonymous-195 SubClassOf ManufacturingProcess,.
+Anonymous-195 SubClassOf hasConsequence some Dextran70.
+Anonymous-224 is Class.
+Anonymous-224 SubClassOf Secretion.
+Anonymous-228 is Class.
+Anonymous-228 SubClassOf Secretion.
+Anonymous-23 is Class.
+Anonymous-23 SubClassOf Secretion.
+Anonymous-237 is Class.
+Anonymous-237 SubClassOf Secretion.
+Anonymous-247 is Class.
+Anonymous-247 SubClassOf Secretion.
+Anonymous-268 is Class.
+Anonymous-268 SubClassOf Secretion.
+Anonymous-279 is Class.
+Anonymous-279 SubClassOf Secretion.
+Anonymous-292 is Class.
+Anonymous-292 SubClassOf Secretion.
+Anonymous-299 is Class.
+Anonymous-299 SubClassOf Secretion.
+Anonymous-3 is Class.
+Anonymous-3 is equivalent to ClinicalAct and (isToDetermine some.
+Anonymous-3 is equivalent to (Feature and (isFeatureOf some.
+Anonymous-3 is equivalent to (Substance and (isDissolvedWithin some Urine))))).
+Anonymous-3 SubClassOf ClinicalAct,.
+Anonymous-3 SubClassOf hasSpecificSubprocess some UrineSampling.
+Anonymous-310 is Class.
+Anonymous-310 SubClassOf Secretion.
+Anonymous-333 is Class.
+Anonymous-333 SubClassOf Secretion.
+Anonymous-34 is Class.
+Anonymous-34 is equivalent to presence and (isExistenceOf some.
+Anonymous-34 is equivalent to (GeneralisedSubstance and (hasPathologicalStatus some pathological) and (isActedOnBy some BodyProcess))).
+Anonymous-34 SubClassOf presence,.
+Anonymous-34 SubClassOf hasIntrinsicPathologicalStatus some pathological.
+Anonymous-370 is Class.
+Anonymous-370 SubClassOf Secretion.
+Anonymous-391 is Class.
+Anonymous-391 SubClassOf Secretion.
+Anonymous-409 is Class.
+Anonymous-409 SubClassOf Secretion.
+Anonymous-423 is Class.
+Anonymous-423 SubClassOf Secretion.
+Anonymous-443 is Class.
+Anonymous-443 is equivalent to Dermatome and (isSpecificallyServedBy some T9root).
+Anonymous-443 SubClassOf Dermatome.
+Anonymous-444 is Class.
+Anonymous-444 SubClassOf Secretion.
+Anonymous-45 is Class.
+Anonymous-45 is equivalent to Stabilizing and (actsSpecificallyOn some Clavicle).
+Anonymous-45 SubClassOf Stabilizing,.
+Anonymous-45 SubClassOf isFunctionOf some SubclaviusMuscle.
+Anonymous-461 is Class.
+Anonymous-461 SubClassOf Secretion.
+Anonymous-462 is Class.
+Anonymous-462 SubClassOf Secretion.
+Anonymous-485 is Class.
+Anonymous-485 SubClassOf Secretion.
+Anonymous-506 is Class.
+Anonymous-506 SubClassOf Secretion.
+Anonymous-507 is Class.
+Anonymous-507 SubClassOf Secretion.
+Anonymous-519 is Class.
+Anonymous-519 SubClassOf Secretion.
+Anonymous-522 is Class.
+Anonymous-522 SubClassOf Secretion.
+Anonymous-551 is Class.
+Anonymous-551 SubClassOf Secretion.
+Anonymous-554 is Class.
+Anonymous-554 SubClassOf Secretion.
+Anonymous-558 is Class.
+Anonymous-558 SubClassOf Secretion.
+Anonymous-589 is Class.
+Anonymous-589 SubClassOf Secretion.
+Anonymous-592 is Class.
+Anonymous-592 SubClassOf Secretion.
+Anonymous-599 is Class.
+Anonymous-599 SubClassOf Secretion.
+Anonymous-621 is Class.
+Anonymous-621 SubClassOf Secretion.
+Anonymous-626 is Class.
+Anonymous-626 SubClassOf Secretion.
+Anonymous-637 is Class.
+Anonymous-637 SubClassOf Secretion.
+Anonymous-640 is Class.
+Anonymous-640 is equivalent to ManufacturingProcess and (hasSubprocess some AnabolicProcess).
+Anonymous-640 SubClassOf ManufacturingProcess,.
+Anonymous-640 SubClassOf hasConsequence some Dextran40.
+Anonymous-657 is Class.
+Anonymous-657 SubClassOf Secretion.
+Anonymous-67 is Class.
+Anonymous-67 is equivalent to AnteriorFlexion and (actsSpecificallyOn some WristJoint).
+Anonymous-67 SubClassOf AnteriorFlexion,.
+Anonymous-67 SubClassOf isFunctionOf some FlexorDigitorumSuperficialis.
+Anonymous-680 is Class.
+Anonymous-680 SubClassOf Secretion.
+Anonymous-688 is Class.
+Anonymous-688 SubClassOf Secretion.
+Anonymous-689 is Class.
+Anonymous-689 SubClassOf Secretion.
+Anonymous-692 is Class.
+Anonymous-692 SubClassOf Secretion.
+Anonymous-700 is Class.
+Anonymous-700 is equivalent to ClinicalAct and (isToDetermine some.
+Anonymous-700 is equivalent to (Feature and (isFeatureOf some.
+Anonymous-700 is equivalent to (Substance and (isDissolvedWithin some Urine))))).
+Anonymous-700 SubClassOf ClinicalAct,.
+Anonymous-700 SubClassOf actsSpecificallyOn some UrineSample.
+Anonymous-71 is Class.
+Anonymous-71 SubClassOf Secretion.
+Anonymous-781 is Class.
+Anonymous-781 SubClassOf Secretion.
+Anonymous-805 is Class.
+Anonymous-805 SubClassOf Secretion.
+Anonymous-806 is Class.
+Anonymous-806 SubClassOf Secretion.
+Anonymous-807 is Class.
+Anonymous-807 SubClassOf InvestigationAct.
+Anonymous-814 is Class.
+Anonymous-814 SubClassOf Secretion.
+Anonymous-844 is Class.
+Anonymous-844 SubClassOf Secretion.
+Anonymous-850 is Class.
+Anonymous-850 SubClassOf Secretion.
+Anonymous-854 is Class.
+Anonymous-854 SubClassOf Secretion.
+AnoplocephalaPerfoliata is Class.
+AnoplocephalaPerfoliata SubClassOf Anoplocephalidae.
+Anoplocephalidae is Class.
+Anorexia is Class.
+Anorexia SubClassOf VoluntaryEating.
+AnteriorCerebralBifurcation is Class.
+AnteriorCerebralBifurcation SubClassOf NAMEDJunction.
+AnteriorFlexion is Class.
+AntiDiuresis is Class.
+Antibody is Class.
+AntiglobulinTest is Class.
+AntiglobulinTest SubClassOf InvestigationAct.
+Anus is Class.
+Aphonia is Class.
+Aphonia SubClassOf SignalAmplitude.
+Appropriateness is Class.
+Appropriateness SubClassOf VolitionalFeature.
+AppropriatenessState is Class.
+AppropriatenessState SubClassOf VolitionalState.
+Arm is Class.
+ArmExamination is Class.
+ArmExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ArmExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Arm))).
+ArmExamination SubClassOf ClinicalAct.
+ArterialExamination is Class.
+ArterialExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ArterialExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Artery))).
+ArterialExamination SubClassOf ClinicalAct.
+ArterialPulse is Class.
+ArterialPulseExamination is Class.
+ArterialPulseExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ArterialPulseExamination is equivalent to (Palpating and (actsOn some ArterialPulse))).
+ArterialPulseExamination SubClassOf ClinicalAct.
+Artery is Class.
+Artiodactyla is Class.
+Artiodactyla SubClassOf Eutheria,.
+Artiodactyla SubClassOf NonHuman.
+Aspiration is Class.
+Assay is Class.
+Assay SubClassOf InvestigationAct.
+Assessment is Class.
+Assessment SubClassOf InvestigationAct.
+AssessmentOfDrugResponse is Class.
+AssessmentOfDrugResponse SubClassOf InvestigationAct.
+AtrialBeat is Class.
+AtrialDepolarisation is Class.
+AtrialDepolarisation is equivalent to Depolarising and (isSpecificFunctionOf some AtrialMyocardialStructure).
+AtrialDepolarisation SubClassOf Depolarising.
+AtrialDilatation is Class.
+AtrialDilatation is equivalent to DilatatingProcess and (actsSpecificallyOn some.
+AtrialDilatation is equivalent to (Diameter and (isDiameterOf some Atrium))).
+AtrialDilatation SubClassOf DilatatingProcess.
+AtrialFibrillation is Class.
+AtrialFibrillation is equivalent to Synchronicity and (hasAbsoluteState some uncoordinated) and (isSynchronicityOf some.
+AtrialFibrillation is equivalent to (AtrialBeat and (isSpecificImmediateConsequenceOf some AtrialDepolarisation))).
+AtrialFibrillation SubClassOf Synchronicity,.
+AtrialFibrillation SubClassOf actsSpecificallyOn some Heart,.
+AtrialFibrillation SubClassOf hasPathologicalStatus some pathological.
+AtrialMyocardialStructure is Class.
+AtrioventricularConductionPathwayFibres is Class.
+AtrioventricularJunction is Class.
+AtrioventricularJunction SubClassOf NAMEDJunction.
+Atrium is Class.
+AuditoryNerve is Class.
+AuditorySignal is Class.
+AuditorySignal is equivalent to Signal and (isSpecificConsequenceOf some.
+AuditorySignal is equivalent to (TransducingProcess and (actsOn some SoundEnergy) and (isSpecificFunctionOf some CochlearCell))).
+AuditorySignal SubClassOf Signal.
+Auscultating is Class.
+AverageQualityDiet is Class.
+AverageQualityDiet SubClassOf VoluntaryEating.
+AviationMedicine is Class.
+AviationMedicine SubClassOf OccupationalHealth.
+AxillaryLymphnode is Class.
+AxillaryLymphnodeExamination is Class.
+AxillaryLymphnodeExamination is equivalent to ClinicalAct and (hasSubprocess some.
+AxillaryLymphnodeExamination is equivalent to (ExaminingProcess and (LocativeAttribute some AxillaryLymphnode))).
+AxillaryLymphnodeExamination SubClassOf ClinicalAct.
+BBloodGroupTest is Class.
+BBloodGroupTest SubClassOf InvestigationAct.
+Back is Class.
+BackExamination is Class.
+BackExamination is equivalent to ClinicalAct and (hasSubprocess some.
+BackExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Back))).
+BackExamination SubClassOf ClinicalAct.
+BacterialInfectionLesion is Class.
+BacterialJointInfection is Class.
+BacterialJointInfection is equivalent to BacterialInfectionLesion and (hasSpecificLocation some Joint).
+BacterialJointInfection SubClassOf BacterialInfectionLesion.
+BasophilGranulocytosis is Class.
+BasophilGranulocytosis SubClassOf RaisedGranulocyteCount.
+Behaviour is Class.
+Behaviour SubClassOf BiologicalProcess.
+BifurcationOfAbdominalAorta is Class.
+BifurcationOfAbdominalAorta SubClassOf NAMEDJunction.
+BifurcationOfIliacArtery is Class.
+BifurcationOfIliacArtery SubClassOf NAMEDJunction.
+BiochemicalPregnancyTest is Class.
+BiochemicalPregnancyTest SubClassOf InvestigationAct.
+BiochemicalTest is Class.
+BiochemicalTest SubClassOf InvestigationAct.
+BiologicalActivePropulsionProcess is Class.
+BiologicalProcess is Class.
+BiologicalProcess SubClassOf SpecificProcess.
+BlackFly is Class.
+BlackFly SubClassOf Diptera.
+Blackcurrant is Class.
+Blackcurrant SubClassOf Fruit.
+BloodAssay is Class.
+BloodAssay SubClassOf InvestigationAct.
+BloodCarbonDioxideMeasuring is Class.
+BloodCarbonDioxideMeasuring SubClassOf InvestigationAct.
+BloodCountInvestigation is Class.
+BloodCountInvestigation SubClassOf InvestigationAct.
+BloodOxygenMeasuring is Class.
+BloodOxygenMeasuring SubClassOf InvestigationAct.
+BloodSugarTest is Class.
+BloodSugarTest SubClassOf InvestigationAct.
+BloodTest is Class.
+BloodTest SubClassOf InvestigationAct.
+BloodThyroidReleasingHormoneMeasuring is Class.
+BloodThyroidReleasingHormoneMeasuring SubClassOf InvestigationAct.
+BloodThyroidStimulatingHormoneMeasuring is Class.
+BloodThyroidStimulatingHormoneMeasuring SubClassOf InvestigationAct.
+BloodThyroxineMeasuring is Class.
+BloodThyroxineMeasuring SubClassOf InvestigationAct.
+BloodTriiodothyronineMeasuring is Class.
+BloodTriiodothyronineMeasuring SubClassOf InvestigationAct.
+BloodVessel is Class.
+BodyProcess is Class.
+BodyProcess SubClassOf BiologicalProcess.
+BodySystem is Class.
+BodySystemExamination is Class.
+BodySystemExamination is equivalent to ClinicalAct and (hasSubprocess some.
+BodySystemExamination is equivalent to (ExaminingProcess and (LocativeAttribute some BodySystem))).
+BodySystemExamination SubClassOf ClinicalAct.
+BodyWeightMeasurement is Class.
+BodyWeightMeasurement SubClassOf InvestigationAct.
+BoneSinus is Class.
+BoneSinusExamination is Class.
+BoneSinusExamination is equivalent to ClinicalAct and (hasSubprocess some.
+BoneSinusExamination is equivalent to (ExaminingProcess and (LocativeAttribute some BoneSinus))).
+BoneSinusExamination SubClassOf ClinicalAct.
+BreastExamination is Class.
+BreastExamination is equivalent to ClinicalAct and (hasSubprocess some.
+BreastExamination is equivalent to (Inspecting and (actsSpecificallyOn some MammaryGland))).
+BreastExamination SubClassOf ClinicalAct.
+BreastScreening is Class.
+BreastScreening is equivalent to ClinicalAct and (isToDetermine some.
+BreastScreening is equivalent to (Existentiality and (isExistenceOf some.
+BreastScreening is equivalent to (PathologicalPhenomenon and (LocativeAttribute some MammaryGland))))).
+BreastScreening SubClassOf ClinicalAct.
+BreastScreeningExamination is Class.
+BreastScreeningExamination is equivalent to ClinicalAct and (hasSpecificSubprocess some.
+BreastScreeningExamination is equivalent to (Inspecting and (actsSpecificallyOn some MammaryGland))) and (isToDetermine some.
+BreastScreeningExamination is equivalent to (Existentiality and (isExistenceOf some.
+BreastScreeningExamination is equivalent to (PathologicalPhenomenon and (LocativeAttribute some MammaryGland))))).
+BreastScreeningExamination SubClassOf ClinicalAct.
+BreastSelfExamination is Class.
+BreastSelfExamination is equivalent to ClinicalAct and (hasPersonPerforming some Patient) and (hasSpecificSubprocess some.
+BreastSelfExamination is equivalent to (Inspecting and (actsSpecificallyOn some MammaryGland))) and (isToDetermine some.
+BreastSelfExamination is equivalent to (Existentiality and (isExistenceOf some.
+BreastSelfExamination is equivalent to (PathologicalPhenomenon and (LocativeAttribute some MammaryGland))))).
+BreastSelfExamination SubClassOf ClinicalAct.
+BreathSound is Class.
+BreathSoundExamination is Class.
+BreathSoundExamination is equivalent to ClinicalAct and (hasSubprocess some.
+BreathSoundExamination is equivalent to (ExaminingProcess and (LocativeAttribute some BreathSound))).
+BreathSoundExamination SubClassOf ClinicalAct.
+Bronchus is Class.
+Cabbage is Class.
+Cabbage SubClassOf Vegetable.
+Calcaneum is Class.
+CalciumLactateGluconate is Class.
+CalciumLactateGluconateAsDrug is Class.
+CalciumLactateGluconateAsDrug is equivalent to CalciumLactateGluconate and (playsPhysiologicalRole some ActiveDrugAdditiveRole).
+CalciumLactateGluconateAsDrug SubClassOf CalciumLactateGluconate.
+Calculus is Class.
+CalorieDeficientNutrition is Class.
+CalorieDeficientNutrition SubClassOf VoluntaryEating.
+CardiacHypoconductivity is Class.
+CardiacInvestigation is Class.
+CardiacInvestigation SubClassOf InvestigationAct.
+CardiacMuscle is Class.
+CardiacMuscleContractionProcess is Class.
+CardiacPalpationExamination is Class.
+CardiacPalpationExamination is equivalent to ClinicalAct and (hasSubprocess some.
+CardiacPalpationExamination is equivalent to (Palpating and (LocativeAttribute some Heart))).
+CardiacPalpationExamination SubClassOf ClinicalAct.
+CardiovascularExamination is Class.
+CardiovascularExamination is equivalent to ClinicalAct and (hasSubprocess some.
+CardiovascularExamination is equivalent to (ExaminingProcess and (LocativeAttribute some CardiovascularSystem))).
+CardiovascularExamination SubClassOf ClinicalAct.
+CardiovascularInvestigation is Class.
+CardiovascularInvestigation SubClassOf InvestigationAct.
+CardiovascularSystem is Class.
+CareAct is Class.
+CareAct SubClassOf ClinicalAct.
+CarotidBifurcation is Class.
+CarotidBifurcation SubClassOf NAMEDJunction.
+CatabolicProcess is Class.
+CellGlucoseUptake is Class.
+CellGlucoseUptake SubClassOf ActiveAbsorption.
+CellularProcess is Class.
+CellularProcess SubClassOf BiologicalProcess.
+CellularSecretion is Class.
+CellularSecretion SubClassOf Secretion.
+CentralNervousExamination is Class.
+CentralNervousExamination is equivalent to ClinicalAct and (hasSubprocess some.
+CentralNervousExamination is equivalent to (ExaminingProcess and (LocativeAttribute some CentralNervousSystem))).
+CentralNervousExamination SubClassOf ClinicalAct.
+CentralNervousSystem is Class.
+CervicalLymphnode is Class.
+CervicalLymphnodeExamination is Class.
+CervicalLymphnodeExamination is equivalent to ClinicalAct and (hasSubprocess some.
+CervicalLymphnodeExamination is equivalent to (ExaminingProcess and (LocativeAttribute some CervicalLymphnode))).
+CervicalLymphnodeExamination SubClassOf ClinicalAct.
+CervicalSpine is Class.
+CervicalSpineExamination is Class.
+CervicalSpineExamination is equivalent to ClinicalAct and (hasSubprocess some.
+CervicalSpineExamination is equivalent to (ExaminingProcess and (LocativeAttribute some CervicalSpine))).
+CervicalSpineExamination SubClassOf ClinicalAct.
+CervixUteri is Class.
+ChangeInPositionState is Class.
+CharacterisationOfMicroscopicStructure is Class.
+CharacterisationOfMicroscopicStructure SubClassOf InvestigationAct.
+CharacterisationOfSubstance is Class.
+CharacterisationOfSubstance SubClassOf InvestigationAct.
+Cheek is Class.
+CheekExamination is Class.
+CheekExamination is equivalent to ClinicalAct and (hasSubprocess some.
+CheekExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Cheek))).
+CheekExamination SubClassOf ClinicalAct.
+ChemicalDetectionAct is Class.
+ChemicalDetectionAct SubClassOf InvestigationAct.
+ChemicalProcess is Class.
+Chest is Class.
+ChestExamination is Class.
+ChestExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ChestExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Chest))).
+ChestExamination SubClassOf ClinicalAct.
+Childhood is Class.
+Chronicity is Class.
+Clavicle is Class.
+Clinic is Class.
+Clinic SubClassOf SocialOrganisation.
+ClinicalAct is Class.
+ClinicalAct SubClassOf NAMEDVolitionalAct.
+ClinicalAppearance is Class.
+Coccyx is Class.
+CoccyxExamination is Class.
+CoccyxExamination is equivalent to ClinicalAct and (hasSubprocess some.
+CoccyxExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Coccyx))).
+CoccyxExamination SubClassOf ClinicalAct.
+CochlearCell is Class.
+CommittingSuicide is Class.
+CommittingSuicide SubClassOf DeliberateSelfHarm.
+CompleteSyndactylyLesion is Class.
+CompleteSyndactylyLesion is equivalent to SyndactylyLesion and (hasStructuralExtent some.
+CompleteSyndactylyLesion is equivalent to (StructuralExtent and (hasAbsoluteState some lesionTotal))).
+CompleteSyndactylyLesion SubClassOf SyndactylyLesion.
+Compliance is Class.
+Compliance SubClassOf VolitionalFeature.
+CompositeUnit is Class.
+Conjunctiva is Class.
+Consistency is Class.
+ConsultationAct is Class.
+ConsultationAct SubClassOf CareAct.
+Contracting is Class.
+CorPulmonale is Class.
+CorPulmonale is equivalent to RightVentricularMyocardialHypertrophy and (isConsequenceOf some.
+CorPulmonale is equivalent to (PathologicalPhenomenon and (LocativeAttribute some Lung))).
+CorPulmonale SubClassOf RightVentricularMyocardialHypertrophy.
+CorneosceralJunction is Class.
+CorneosceralJunction SubClassOf NAMEDJunction.
+CoronaVirus is Class.
+CoronaVirus SubClassOf Virus.
+CoronaryArtery is Class.
+CoronaryVasodilatation is Class.
+CoronaryVasodilatation is equivalent to DimensionIncreasingProcess and (actsSpecificallyOn some.
+CoronaryVasodilatation is equivalent to (Diameter and (isDiameterOf some CoronaryArtery))).
+CoronaryVasodilatation SubClassOf DimensionIncreasingProcess.
+CountConcentrationUnit is Class.
+CountConcentrationUnit SubClassOf CompositeUnit.
+CranialNerve is Class.
+CranialNerveExamination is Class.
+CranialNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+CranialNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some CranialNerve))).
+CranialNerveExamination SubClassOf ClinicalAct.
+Crepitation is Class.
+Crepitation SubClassOf BreathSound.
+CrownOfLowerTooth is Class.
+CrownOfLowerTooth is equivalent to CrownOfTooth and (isSpecificSolidDivisionOf some LowerTooth).
+CrownOfLowerTooth SubClassOf CrownOfTooth.
+CrownOfTooth is Class.
+Cuboid is Class.
+CytologicalTest is Class.
+CytologicalTest SubClassOf InvestigationAct.
+DecreasedThyroidSecretion is Class.
+DecreasedThyroidSecretion SubClassOf Secretion.
+Defecation is Class.
+DeliberateSelfHarm is Class.
+DeliberateSelfHarm SubClassOf NAMEDVolitionalAct.
+DeliveryOfFoetusByCaesarianSection is Class.
+DeliveryOfFoetusByCaesarianSection SubClassOf Parturition.
+DeliveryProcess is Class.
+Dematiacea is Class.
+Department is Class.
+Department SubClassOf SocialOrganisation.
+Depolarising is Class.
+Dermatome is Class.
+Dermatomyositis is Class.
+DetectionAct is Class.
+DetectionAct SubClassOf InvestigationAct.
+Deteriorating is Class.
+Dextran40 is Class.
+Dextran70 is Class.
+Diagnosis is Class.
+DiagnosticAct is Class.
+DiagnosticAct is equivalent to ClinicalAct and (isToDetermine some Diagnosis).
+DiagnosticAct SubClassOf ClinicalAct.
+DiagnosticInvestigation is Class.
+DiagnosticInvestigation SubClassOf InvestigationAct.
+Diameter is Class.
+Diastole is Class.
+DiastolicMurmur is Class.
+DiastolicMurmur is equivalent to Murmur and (occursDuring some Diastole).
+DiastolicMurmur SubClassOf Murmur,.
+DiastolicMurmur SubClassOf hasPathologicalStatus some pathological.
+DietaryAct is Class.
+DietaryAct SubClassOf NAMEDVolitionalAct.
+DiffuseOpacitiesOfEnamelOfTooth is Class.
+DiffuseOpacitiesOfEnamelOfTooth SubClassOf EnvironmantalEnamelHypoplasia.
+DigestiveExamination is Class.
+DigestiveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+DigestiveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some DigestiveSystem))).
+DigestiveExamination SubClassOf ClinicalAct.
+DigestiveSystem is Class.
+DilatatingProcess is Class.
+DimensionIncreasingProcess is Class.
+Diptera is Class.
+DiscreteItemSeparating is Class.
+DiseaseFeature is Class.
+DiseaseProcessModifyingAct is Class.
+DiseaseProcessModifyingAct SubClassOf TreatmentAct.
+DisorderOfMyocardialConduction is Class.
+DisorderOfMyocardialConduction is equivalent to ElectricalConduction and (hasPathologicalStatus some pathological) and (isFunctionOf some Heart).
+DisorderOfMyocardialConduction SubClassOf ElectricalConduction.
+Displacement is Class.
+DistalPhalanx is Class.
+DistalPhalanxOfLittleFinger is Class.
+DistalPhalanxOfLittleFinger is equivalent to DistalPhalanx and (isSpecificStructuralComponentOf some LittleFinger).
+DistalPhalanxOfLittleFinger SubClassOf DistalPhalanx.
+DrJonathanFistein is Class.
+DrJonathanFistein SubClassOf ModelAuthors.
+Drinking is Class.
+Drinking SubClassOf DietaryAct.
+Drug is Class.
+DrugAdministration is Class.
+DrugFormulationFeature is Class.
+DrugFormulationRole is Class.
+DrugFormulationRole SubClassOf FunctionalRole.
+DrugIngredientManufacture is Class.
+DrugIngredientManufacture is equivalent to ManufacturingProcess and (hasSpecificConsequence some ActiveDrugIngredient).
+DrugIngredientManufacture SubClassOf ManufacturingProcess.
+DrugTherapy is Class.
+DrugTherapy SubClassOf TreatmentAct.
+DrySkin is Class.
+ECGTest is Class.
+ECGTest SubClassOf InvestigationAct.
+EEGChannel is Class.
+EEGChannel SubClassOf SignalChannel.
+EEGTest is Class.
+EEGTest SubClassOf InvestigationAct.
+Ear is Class.
+EarDrum is Class.
+EarExamination is Class.
+EarExamination is equivalent to ClinicalAct and (hasSubprocess some.
+EarExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Ear))).
+EarExamination SubClassOf ClinicalAct.
+EatingSymptom is Class.
+EatingSymptom SubClassOf VoluntaryEating.
+EbolaVirus is Class.
+EbolaVirus SubClassOf FiloVirus.
+EducatingAct is Class.
+EducatingAct SubClassOf CareAct.
+Effectiveness is Class.
+EfferentRole is Class.
+EfferentRole SubClassOf FunctionalRole.
+EjaculatoryDuct is Class.
+EjaculatoryDuct SubClassOf NAMEDDuct.
+Ejection is Class.
+EjectionSystolicMurmur is Class.
+EjectionSystolicMurmur SubClassOf Murmur,.
+EjectionSystolicMurmur SubClassOf occursDuring some Systole.
+Elbow is Class.
+ElbowExamination is Class.
+ElbowExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ElbowExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Elbow))).
+ElbowExamination SubClassOf ClinicalAct.
+ElbowJoint is Class.
+ElbowJointExamination is Class.
+ElbowJointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ElbowJointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some ElbowJoint))).
+ElbowJointExamination SubClassOf ClinicalAct.
+ElectricalConduction is Class.
+ElectromyographyAct is Class.
+ElectromyographyAct SubClassOf InvestigationAct.
+EnvironmantalEnamelHypoplasia is Class.
+EosinophilCountProcedure is Class.
+EosinophilCountProcedure SubClassOf InvestigationAct.
+EpidermalFragility is Class.
+EpidermalFragility is equivalent to Toughness and (isToughnessOf some EpidermalStructure).
+EpidermalFragility SubClassOf Toughness.
+EpidermalStructure is Class.
+EpithelialCiliation is Class.
+EpithelialCiliation SubClassOf EpithelialMorphology.
+EpithelialCiliationState is Class.
+EpithelialCiliationState SubClassOf EpithelialMorphologyState.
+EpithelialMorphology is Class.
+EpithelialMorphologyState is Class.
+Eructation is Class.
+Eructation is equivalent to Ejection and (actsSpecificallyOn some IntestinalGas) and (hasUniqueAssociatedDisplacement some.
+Eructation is equivalent to (Displacement and (isDisplacementFrom some OralMeatus))).
+Eructation SubClassOf Ejection.
+ErythrocyteCountProcedure is Class.
+ErythrocyteCountProcedure SubClassOf InvestigationAct.
+Ethanol is Class.
+EtherifiedStarch is Class.
+EtherifiedStarch DisjointWith ClinicalAct and (hasSubprocess some.
+EtherifiedStarch DisjointWith (ExaminingProcess and (LocativeAttribute some Iris))).
+Eutheria is Class.
+Euthyroidism is Class.
+Euthyroidism SubClassOf Secretion.
+ExaminationAct is Class.
+ExaminationAct is equivalent to ClinicalAct and (hasSubprocess some ExaminingProcess).
+ExaminationAct SubClassOf ClinicalAct.
+ExaminationOfConjunctiva is Class.
+ExaminationOfConjunctiva is equivalent to ClinicalAct and (hasSubprocess some.
+ExaminationOfConjunctiva is equivalent to (ExaminingProcess and (LocativeAttribute some Conjunctiva))).
+ExaminationOfConjunctiva SubClassOf ClinicalAct.
+ExaminationOfEyeLid is Class.
+ExaminationOfEyeLid is equivalent to ClinicalAct and (hasSubprocess some.
+ExaminationOfEyeLid is equivalent to (ExaminingProcess and (LocativeAttribute some Palpebrum))).
+ExaminationOfEyeLid SubClassOf ClinicalAct.
+ExaminationOfIris is Class.
+ExaminationOfIris is equivalent to ClinicalAct and (hasSubprocess some.
+ExaminationOfIris is equivalent to (ExaminingProcess and (LocativeAttribute some Iris))).
+ExaminationOfIris SubClassOf ClinicalAct.
+ExaminationOfPupil is Class.
+ExaminationOfPupil is equivalent to ClinicalAct and (hasSubprocess some.
+ExaminationOfPupil is equivalent to (ExaminingProcess and (LocativeAttribute some PupilOfEye))).
+ExaminationOfPupil SubClassOf ClinicalAct.
+ExaminationOfSclera is Class.
+ExaminationOfSclera is equivalent to ClinicalAct and (hasSubprocess some.
+ExaminationOfSclera is equivalent to (ExaminingProcess and (LocativeAttribute some Sclera))).
+ExaminationOfSclera SubClassOf ClinicalAct.
+ExaminingProcess is Class.
+Excretion is Class.
+Excretion SubClassOf Secretion.
+ExerciseRole is Class.
+ExerciseRole SubClassOf FunctionalRole.
+ExercisingProcess is Class.
+ExercisingProcess is equivalent to Activity and (playsPhysiologicalRole some ExerciseRole).
+ExercisingProcess SubClassOf Activity,.
+ExercisingProcess SubClassOf playsPhysiologicalRole some LifeStyleRole.
+Existentiality is Class.
+Exophiala is Class.
+Exophiala SubClassOf Dematiacea.
+Extension is Class.
+ExtentState is Class.
+ExtentState SubClassOf VolitionalState.
+ExternalAuditoryCanal is Class.
+ExternalAuditoryCanalExamination is Class.
+ExternalAuditoryCanalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ExternalAuditoryCanalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some ExternalAuditoryCanal))).
+ExternalAuditoryCanalExamination SubClassOf ClinicalAct.
+ExternalGenitalia is Class.
+ExternalGenitaliaExamination is Class.
+ExternalGenitaliaExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ExternalGenitaliaExamination is equivalent to (ExaminingProcess and (LocativeAttribute some ExternalGenitalia))).
+ExternalGenitaliaExamination SubClassOf ClinicalAct.
+ExternalStimulusSensation is Class.
+Eye is Class.
+EyeScreening is Class.
+EyeScreening is equivalent to ClinicalAct and (isToDetermine some.
+EyeScreening is equivalent to (Existentiality and (isExistenceOf some.
+EyeScreening is equivalent to (PathologicalPhenomenon and (LocativeAttribute some Eye))))).
+EyeScreening SubClassOf ClinicalAct.
+Face is Class.
+FaceExamination is Class.
+FaceExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FaceExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Face))).
+FaceExamination SubClassOf ClinicalAct.
+FacialNerve is Class.
+FacialNerveExamination is Class.
+FacialNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FacialNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FacialNerve))).
+FacialNerveExamination SubClassOf ClinicalAct.
+FailureOfLactation is Class.
+FailureOfLactation is equivalent to Lactation and (hasProcessActivity some.
+FailureOfLactation is equivalent to (ProcessActivity and (hasAbsoluteState some inactive))).
+FailureOfLactation SubClassOf Lactation,.
+FailureOfLactation SubClassOf hasPathologicalStatus some pathological.
+Family is Class.
+Family SubClassOf SocialOrganisation.
+FastAtrialFibrillation is Class.
+FastAtrialFibrillation is equivalent to AtrialFibrillation and (hasConsequence some VentricularTachycardia).
+FastAtrialFibrillation SubClassOf AtrialFibrillation.
+FastingBloodSugarTest is Class.
+FastingBloodSugarTest SubClassOf InvestigationAct.
+FastingSerumTriglycerideTest is Class.
+FastingSerumTriglycerideTest SubClassOf InvestigationAct.
+Feature is Class.
+FemaleBreast is Class.
+FemaleExternalGenitalia is Class.
+FemaleGenitoUrinaryExamination is Class.
+FemaleGenitoUrinaryExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FemaleGenitoUrinaryExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FemaleGenitoUrinarySystem))).
+FemaleGenitoUrinaryExamination SubClassOf ClinicalAct.
+FemaleGenitoUrinarySystem is Class.
+FemalePelvicCavity is Class.
+FemalePelvicCavityExamination is Class.
+FemalePelvicCavityExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FemalePelvicCavityExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FemalePelvicCavity))).
+FemalePelvicCavityExamination SubClassOf ClinicalAct.
+FemalePerinealExamination is Class.
+FemalePerinealExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FemalePerinealExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FemalePerineum))).
+FemalePerinealExamination SubClassOf ClinicalAct.
+FemalePerineum is Class.
+FemaleReproductiveExamination is Class.
+FemaleReproductiveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FemaleReproductiveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FemaleReproductiveSystem))).
+FemaleReproductiveExamination SubClassOf ClinicalAct.
+FemaleReproductiveSystem is Class.
+FemaleUrethra is Class.
+FemaleUrethralExamination is Class.
+FemaleUrethralExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FemaleUrethralExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FemaleUrethra))).
+FemaleUrethralExamination SubClassOf ClinicalAct.
+FemoralBifurcation is Class.
+FemoralBifurcation SubClassOf NAMEDJunction.
+FibrousTissue is Class.
+FiloVirus is Class.
+Finger is Class.
+FingerExamination is Class.
+FingerExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FingerExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Finger))).
+FingerExamination SubClassOf ClinicalAct.
+FingerJoint is Class.
+FingerJointExamination is Class.
+FingerJointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FingerJointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FingerJoint))).
+FingerJointExamination SubClassOf ClinicalAct.
+FingerNail is Class.
+FingerNailExamination is Class.
+FingerNailExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FingerNailExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FingerNail))).
+FingerNailExamination SubClassOf ClinicalAct.
+FlexorDigitorumSuperficialis is Class.
+Foetus is Class.
+FollicleStimulatingHormoneAsDrug is Class.
+FollitropinAlpha is Class.
+FollitropinAlpha SubClassOf FollicleStimulatingHormoneAsDrug.
+FollitropinBeta is Class.
+FollitropinBeta SubClassOf FollicleStimulatingHormoneAsDrug.
+Foot is Class.
+FootExamination is Class.
+FootExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FootExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Foot))).
+FootExamination SubClassOf ClinicalAct.
+Foramen is Class.
+ForamenLacerum is Class.
+ForamenLacerum SubClassOf NAMEDForamen.
+ForcedDefaecation is Class.
+ForcedDefaecation is equivalent to Defecation and (hasSubprocess some AbdominalStraining).
+ForcedDefaecation SubClassOf Defecation.
+Forearm is Class.
+ForearmExamination is Class.
+ForearmExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ForearmExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Forearm))).
+ForearmExamination SubClassOf ClinicalAct.
+Fractionating is Class.
+Fractionating SubClassOf DiscreteItemSeparating.
+Fragmenting is Class.
+Frequency is Class.
+FrontalSinus is Class.
+FrontalSinusExamination is Class.
+FrontalSinusExamination is equivalent to ClinicalAct and (hasSubprocess some.
+FrontalSinusExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FrontalSinus))).
+FrontalSinusExamination SubClassOf ClinicalAct.
+Fruit is Class.
+Fshape is Class.
+Fshape SubClassOf alphabeticalShape.
+FunctionalOvarianCyst is Class.
+FunctionalOvarianCyst SubClassOf OvarianCyst.
+FunctionalRole is Class.
+FunctionalRole SubClassOf PhysiologicalRole.
+Galactorrhoea is Class.
+Galactorrhoea is equivalent to Lactation and (hasAppropriateness some.
+Galactorrhoea is equivalent to (Appropriateness and (hasAbsoluteState some inappropriate))) and (hasProcessActivity some.
+Galactorrhoea is equivalent to (ProcessActivity and (hasQuantity some.
+Galactorrhoea is equivalent to (Level and (hasMagnitude some highLevel))))).
+Galactorrhoea SubClassOf Lactation,.
+Galactorrhoea SubClassOf hasPathologicalStatus some pathological.
+Galactose is Class.
+Galactose SubClassOf Aldohexose,.
+Galactose SubClassOf playsPhysiologicalRole some MetaboliteRole.
+GalactoseDegradation is Class.
+GalactoseDegradation is equivalent to CatabolicProcess and (actsSpecificallyOn some Galactose).
+GalactoseDegradation SubClassOf CatabolicProcess.
+GalactoseMetabolism is Class.
+GalactoseMetabolism is equivalent to MetabolicProcess and (actsOn some Galactose).
+GalactoseMetabolism SubClassOf MetabolicProcess.
+GalactoseSynthesis is Class.
+GalactoseSynthesis is equivalent to AnabolicProcess and (actsSpecificallyOn some Galactose).
+GalactoseSynthesis SubClassOf AnabolicProcess.
+GastricAcidSecretion is Class.
+GastricAcidSecretion SubClassOf Secretion.
+GastricPalpationExamination is Class.
+GastricPalpationExamination is equivalent to ClinicalAct and (hasSubprocess some.
+GastricPalpationExamination is equivalent to (Palpating and (LocativeAttribute some Stomach))).
+GastricPalpationExamination SubClassOf ClinicalAct.
+GastricSecretoryStudy is Class.
+GastricSecretoryStudy SubClassOf InvestigationAct.
+GastricTransitStudy is Class.
+GastricTransitStudy SubClassOf InvestigationAct.
+GastroIntestinalObstruction is Class.
+GastroduodenalJunction is Class.
+GastroduodenalJunction SubClassOf NAMEDJunction.
+GastroesophagealJunction is Class.
+GastroesophagealJunction SubClassOf NAMEDJunction.
+GastrointestinalAbsorption is Class.
+GastrointestinalInvestigation is Class.
+GastrointestinalInvestigation SubClassOf InvestigationAct.
+GastrointestinalManometry is Class.
+GastrointestinalManometry SubClassOf InvestigationAct.
+GastrointestinalMotorFunctionInvestigation is Class.
+GastrointestinalMotorFunctionInvestigation SubClassOf InvestigationAct.
+GastrointestinalSecretoryStudy is Class.
+GastrointestinalSecretoryStudy SubClassOf InvestigationAct.
+GastrointestinalTransitStudy is Class.
+GastrointestinalTransitStudy SubClassOf InvestigationAct.
+Gelatin is Class.
+GeneralisedSubstance is Class.
+GenitoUrinaryExamination is Class.
+GenitoUrinaryExamination is equivalent to ClinicalAct and (hasSubprocess some.
+GenitoUrinaryExamination is equivalent to (ExaminingProcess and (LocativeAttribute some GenitoUrinarySystem))).
+GenitoUrinaryExamination SubClassOf ClinicalAct.
+GenitoUrinarySystem is Class.
+GingivaExamination is Class.
+GingivaExamination is equivalent to ClinicalAct and (hasSubprocess some.
+GingivaExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Gum))).
+GingivaExamination SubClassOf ClinicalAct.
+GlandularSecretion is Class.
+GlandularSecretion SubClassOf Secretion.
+GlossopharyngealNerve is Class.
+GlossopharyngealNerveExamination is Class.
+GlossopharyngealNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+GlossopharyngealNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some GlossopharyngealNerve))).
+GlossopharyngealNerveExamination SubClassOf ClinicalAct.
+GlucoseUptake is Class.
+GlucoseUptake SubClassOf ActiveAbsorption.
+GoodQualityDiet is Class.
+GoodQualityDiet is equivalent to VoluntaryEating and (hasQuality some.
+GoodQualityDiet is equivalent to (Quality and (hasAbsoluteState some goodQuality))).
+GoodQualityDiet SubClassOf VoluntaryEating.
+GramStainingTest is Class.
+GramStainingTest SubClassOf InvestigationAct.
+GranulocyteConcentration is Class.
+Gravitation is Class.
+GravitationalPooling is Class.
+GravitationalPooling is equivalent to Accumulating and (actsSpecificallyOn some Liquid) and (isConsequenceOf some Gravitation).
+GravitationalPooling SubClassOf Accumulating.
+Groin is Class.
+GroinExamination is Class.
+GroinExamination is equivalent to ClinicalAct and (hasSubprocess some.
+GroinExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Groin))).
+GroinExamination SubClassOf ClinicalAct.
+Gum is Class.
+HaemoglobinConcentrationProcedure is Class.
+HaemoglobinConcentrationProcedure SubClassOf InvestigationAct.
+Hallucination is Class.
+HaloNaevus is Class.
+HaloNaevus SubClassOf HypopigmentedNaevus.
+Hand is Class.
+HandExamination is Class.
+HandExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HandExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Hand))).
+HandExamination SubClassOf ClinicalAct.
+HardPalate is Class.
+Head is Class.
+HeadExamination is Class.
+HeadExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HeadExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Head))).
+HeadExamination SubClassOf ClinicalAct.
+HeadOrNeck is Class.
+HeadOrNeckExamination is Class.
+HeadOrNeckExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HeadOrNeckExamination is equivalent to (ExaminingProcess and (LocativeAttribute some HeadOrNeck))).
+HeadOrNeckExamination SubClassOf ClinicalAct.
+HealthyEating is Class.
+HealthyEating SubClassOf VoluntaryEating.
+Hearing is Class.
+HearingExamination is Class.
+HearingExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HearingExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Hearing))).
+HearingExamination SubClassOf ClinicalAct.
+Heart is Class.
+HeartExamination is Class.
+HeartExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HeartExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Heart))).
+HeartExamination SubClassOf ClinicalAct.
+HeartRate is Class.
+HeartRateExamination is Class.
+HeartRateExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HeartRateExamination is equivalent to (ExaminingProcess and (LocativeAttribute some HeartRate))).
+HeartRateExamination SubClassOf ClinicalAct.
+HeartSoundExamination is Class.
+HeartSoundExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HeartSoundExamination is equivalent to (Auscultating and (LocativeAttribute some Heart))).
+HeartSoundExamination SubClassOf ClinicalAct.
+HerpesSimplexInfection is Class.
+Hip is Class.
+HipExamination is Class.
+HipExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HipExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Hip))).
+HipExamination SubClassOf ClinicalAct.
+HipJoint is Class.
+HipJointExamination is Class.
+HipJointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HipJointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some HipJoint))).
+HipJointExamination SubClassOf ClinicalAct.
+HistologicalTest is Class.
+HistologicalTest SubClassOf InvestigationAct.
+Hospital is Class.
+Hospital SubClassOf SocialOrganisation.
+HospitalSupervisedCare is Class.
+HospitalSupervisedCare SubClassOf CareAct.
+Human is Class.
+HutchonsIncisior is Class.
+HutchonsIncisior SubClassOf SyphiliticHypoplasia.
+Hyalomma is Class.
+HyalommaAnatolicumAnatolicum is Class.
+HyalommaAnatolicumAnatolicum SubClassOf Hyalomma.
+Hypersecretion is Class.
+Hypersecretion SubClassOf Secretion.
+HypoglossalNerve is Class.
+HypoglossalNerveExamination is Class.
+HypoglossalNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+HypoglossalNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some HypoglossalNerve))).
+HypoglossalNerveExamination SubClassOf ClinicalAct.
+HypopigmentedNaevus is Class.
+Hyposecretion is Class.
+Hyposecretion SubClassOf Secretion.
+ImagingInvestigationAct is Class.
+ImagingInvestigationAct SubClassOf InvestigationAct.
+ImagingProcess is Class.
+Implantability is Class.
+Implantability SubClassOf StructuralFunctionFeature.
+IncisiveCanal is Class.
+IncreasedThyroidSecretion is Class.
+IncreasedThyroidSecretion SubClassOf Secretion.
+Induration is Class.
+Induration is equivalent to Consistency and (hasAbnormalityStatus some abnormal) and (hasAbsoluteState some firm).
+Induration SubClassOf Consistency.
+IneffectivePepticFunction is Class.
+IneffectivePepticFunction is equivalent to BodyProcess and (hasEffectiveness some.
+IneffectivePepticFunction is equivalent to (Effectiveness and (hasAbsoluteState some ineffective))) and (isSpecificFunctionOf some Stomach).
+IneffectivePepticFunction SubClassOf BodyProcess.
+InguinalLymphnode is Class.
+InguinalLymphnodeExamination is Class.
+InguinalLymphnodeExamination is equivalent to ClinicalAct and (hasSubprocess some.
+InguinalLymphnodeExamination is equivalent to (ExaminingProcess and (LocativeAttribute some InguinalLymphnode))).
+InguinalLymphnodeExamination SubClassOf ClinicalAct.
+InitialDrugDose is Class.
+InitialDrugDose is equivalent to Mass and (isMassOf some.
+InitialDrugDose is equivalent to (Drug and (isActedOnSpecificallyBy some.
+InitialDrugDose is equivalent to (StartingProcess and (isSpecificSubprocessOf some DrugAdministration))))).
+InitialDrugDose SubClassOf Mass.
+Inspecting is Class.
+Intentionality is Class.
+Intentionality SubClassOf VolitionalFeature.
+IntentionalityState is Class.
+IntentionalityState SubClassOf VolitionalState.
+InternalCarotidBifurcation is Class.
+InternalCarotidBifurcation SubClassOf NAMEDJunction.
+IntertarsalJoint is Class.
+IntestinalGas is Class.
+IntestinalStasisProcess is Class.
+InvestigationAct is Class.
+InvestigationAct is equivalent to ClinicalAct and (isToDetermine some Phenomenon).
+InvestigationAct SubClassOf ClinicalAct.
+Iris is Class.
+Jaw is Class.
+JawExamination is Class.
+JawExamination is equivalent to ClinicalAct and (hasSubprocess some.
+JawExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Jaw))).
+JawExamination SubClassOf ClinicalAct.
+Joint is Class.
+JointExamination is Class.
+JointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+JointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Joint))).
+JointExamination SubClassOf ClinicalAct.
+Junction is Class.
+JuvenileDermatomyositis is Class.
+JuvenileDermatomyositis is equivalent to Dermatomyositis and (occursDuring some Childhood).
+JuvenileDermatomyositis SubClassOf Dermatomyositis.
+Kidney is Class.
+KidneyExamination is Class.
+KidneyExamination is equivalent to ClinicalAct and (hasSubprocess some.
+KidneyExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Kidney))).
+KidneyExamination SubClassOf ClinicalAct.
+KidneyPalpationExamination is Class.
+KidneyPalpationExamination is equivalent to ClinicalAct and (hasSubprocess some.
+KidneyPalpationExamination is equivalent to (Palpating and (LocativeAttribute some Kidney))).
+KidneyPalpationExamination SubClassOf ClinicalAct.
+Knee is Class.
+KneeExamination is Class.
+KneeExamination is equivalent to ClinicalAct and (hasSubprocess some.
+KneeExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Knee))).
+KneeExamination SubClassOf ClinicalAct.
+KneeJoint is Class.
+KneeJointExamination is Class.
+KneeJointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+KneeJointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some KneeJoint))).
+KneeJointExamination SubClassOf ClinicalAct.
+LaboratoryInvestigation is Class.
+LaboratoryInvestigation SubClassOf InvestigationAct.
+Lactation is Class.
+Lactation SubClassOf BodyProcess,.
+Lactation SubClassOf isFunctionOf some FemaleBreast.
+LargeVolume is Class.
+LargeVolume is equivalent to Volume and (hasQuantity some.
+LargeVolume is equivalent to (Level and (hasMagnitude some highLevel))).
+LargeVolume SubClassOf Volume.
+Leaching is Class.
+Leaching SubClassOf NAMEDMolecularSorptionProcess.
+Leg is Class.
+LegExamination is Class.
+LegExamination is equivalent to ClinicalAct and (hasSubprocess some.
+LegExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Leg))).
+LegExamination SubClassOf ClinicalAct.
+Lemon is Class.
+LemonAsDrug is Class.
+LemonAsDrug is equivalent to Lemon and (playsPhysiologicalRole some ActiveDrugAdditiveRole).
+LemonAsDrug SubClassOf Lemon.
+LesionExtentState is Class.
+Leucocyte is Class.
+Level is Class.
+LifeStyleRole is Class.
+LifeStyleRole SubClassOf FunctionalRole.
+Liquid is Class.
+LithiumAsDrug is Class.
+LithiumCarbonate is Class.
+LithiumCarbonate SubClassOf LithiumAsDrug.
+Lithotrypsy is Class.
+Lithotrypsy is equivalent to Fragmenting and (actsSpecificallyOn some Calculus).
+Lithotrypsy SubClassOf Fragmenting.
+LittleFinger is Class.
+Liver is Class.
+LiverFunctionTest is Class.
+LiverFunctionTest SubClassOf InvestigationAct.
+LiverPalpationExamination is Class.
+LiverPalpationExamination is equivalent to ClinicalAct and (hasSubprocess some.
+LiverPalpationExamination is equivalent to (Palpating and (LocativeAttribute some Liver))).
+LiverPalpationExamination SubClassOf ClinicalAct.
+Loin is Class.
+LoinExamination is Class.
+LoinExamination is equivalent to ClinicalAct and (hasSubprocess some.
+LoinExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Loin))).
+LoinExamination SubClassOf ClinicalAct.
+LossOfPupilAccommodation is Class.
+LossOfPupilAccommodation SubClassOf NAMEDEyeDiseaseProcess.
+LowerExtremity is Class.
+LowerExtremityExamination is Class.
+LowerExtremityExamination is equivalent to ClinicalAct and (hasSubprocess some.
+LowerExtremityExamination is equivalent to (ExaminingProcess and (LocativeAttribute some LowerExtremity))).
+LowerExtremityExamination SubClassOf ClinicalAct.
+LowerTooth is Class.
+LumbarSpine is Class.
+LumbarSpineExamination is Class.
+LumbarSpineExamination is equivalent to ClinicalAct and (hasSubprocess some.
+LumbarSpineExamination is equivalent to (ExaminingProcess and (LocativeAttribute some LumbarSpine))).
+LumbarSpineExamination SubClassOf ClinicalAct.
+Lung is Class.
+Lymphnode is Class.
+LymphnodeExamination is Class.
+LymphnodeExamination is equivalent to ClinicalAct and (hasSubprocess some.
+LymphnodeExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Lymphnode))).
+LymphnodeExamination SubClassOf ClinicalAct.
+Lymphoblast is Class.
+Lymphoblast SubClassOf LymphoidCell.
+Lymphocyte is Class.
+Lymphocyte SubClassOf LymphoidCell.
+LymphocyteCountProcedure is Class.
+LymphocyteCountProcedure SubClassOf InvestigationAct.
+LymphoidCell is Class.
+LymphoidCell SubClassOf Leucocyte.
+LymphoidTonsil is Class.
+LymphoidTonsilExamination is Class.
+LymphoidTonsilExamination is equivalent to ClinicalAct and (hasSubprocess some.
+LymphoidTonsilExamination is equivalent to (ExaminingProcess and (LocativeAttribute some LymphoidTonsil))).
+LymphoidTonsilExamination SubClassOf ClinicalAct.
+MRIImagingAct is Class.
+MRIImagingAct is equivalent to ImagingInvestigationAct and (hasSubprocess some.
+MRIImagingAct is equivalent to (ImagingProcess and (hasSpecificPhysicalMeans some MRIScanner))).
+MRIImagingAct SubClassOf ImagingInvestigationAct.
+MRIScanner is Class.
+Malabsorption is Class.
+Malabsorption is equivalent to GastrointestinalAbsorption and (hasEffectiveness some.
+Malabsorption is equivalent to (Effectiveness and (hasAbsoluteState some ineffective))).
+Malabsorption SubClassOf GastrointestinalAbsorption.
+MaleGenitoUrinaryExamination is Class.
+MaleGenitoUrinaryExamination is equivalent to ClinicalAct and (hasSubprocess some.
+MaleGenitoUrinaryExamination is equivalent to (ExaminingProcess and (LocativeAttribute some MaleGenitoUrinarySystem))).
+MaleGenitoUrinaryExamination SubClassOf ClinicalAct.
+MaleGenitoUrinarySystem is Class.
+MalePelvicCavity is Class.
+MalePelvicCavityExamination is Class.
+MalePelvicCavityExamination is equivalent to ClinicalAct and (hasSubprocess some.
+MalePelvicCavityExamination is equivalent to (ExaminingProcess and (LocativeAttribute some MalePelvicCavity))).
+MalePelvicCavityExamination SubClassOf ClinicalAct.
+MalePerinealExamination is Class.
+MalePerinealExamination is equivalent to ClinicalAct and (hasSubprocess some.
+MalePerinealExamination is equivalent to (ExaminingProcess and (LocativeAttribute some MalePerineum))).
+MalePerinealExamination SubClassOf ClinicalAct.
+MalePerineum is Class.
+MaleReproductiveExamination is Class.
+MaleReproductiveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+MaleReproductiveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some MaleReproductiveSystem))).
+MaleReproductiveExamination SubClassOf ClinicalAct.
+MaleReproductiveSystem is Class.
+MaleUrethra is Class.
+MaleUrethralExamination is Class.
+MaleUrethralExamination is equivalent to ClinicalAct and (hasSubprocess some.
+MaleUrethralExamination is equivalent to (ExaminingProcess and (LocativeAttribute some MaleUrethra))).
+MaleUrethralExamination SubClassOf ClinicalAct.
+Malnutrition is Class.
+Malnutrition SubClassOf VoluntaryEating.
+MaltreatmentAct is Class.
+MaltreatmentAct SubClassOf NAMEDVolitionalAct.
+MammaryGland is Class.
+Manufacturer is Class.
+Manufacturer SubClassOf SocialOrganisation.
+ManufacturingProcess is Class.
+ManufacturingProcess SubClassOf NAMEDVolitionalAct.
+MarginalPeriodontitis is Class.
+Mass is Class.
+MaxillarySinus is Class.
+MaxillarySinusExamination is Class.
+MaxillarySinusExamination is equivalent to ClinicalAct and (hasSubprocess some.
+MaxillarySinusExamination is equivalent to (ExaminingProcess and (LocativeAttribute some MaxillarySinus))).
+MaxillarySinusExamination SubClassOf ClinicalAct.
+McMurrayTranslationMethod is Class.
+McMurrayTranslationMethod SubClassOf NAMEDEponymousMethod.
+MeasurementOfPropertyOfSolid is Class.
+MeasurementOfPropertyOfSolid SubClassOf InvestigationAct.
+Meconium is Class.
+MeconiumAspiration is Class.
+MeconiumAspiration is equivalent to Aspiration and (actsSpecificallyOn some Meconium).
+MeconiumAspiration SubClassOf Aspiration.
+MedialLateralChangeInPositionState is Class.
+MedialLateralChangeInPositionState SubClassOf ChangeInPositionState.
+MedialLateralPositionSelector is Class.
+MedianPalatineCyst is Class.
+MedianPalatineCyst is equivalent to AbnormalCyst and (hasAcquisitionMode some.
+MedianPalatineCyst is equivalent to (AcquisitionMode and (hasAbsoluteState some developmental))) and (hasSpecificLocation some.
+MedianPalatineCyst is equivalent to (HardPalate and (hasMedialLateralSelector some lateralSelection))).
+MedianPalatineCyst SubClassOf AbnormalCyst.
+MedicatedPresentation is Class.
+MedicatedPresentation SubClassOf DrugFormulationFeature.
+Medicine is Class.
+MediumWaveRadioFrequencyRadiation is Class.
+MediumWaveRadioFrequencyRadiation SubClassOf RadioFrequencyRadiation.
+MentalExcitation is Class.
+Mephitis is Class.
+Mephitis SubClassOf Mustelidae.
+MetabolicProcess is Class.
+MetaboliteRole is Class.
+MicroscopyInvestigation is Class.
+MicroscopyInvestigation SubClassOf InvestigationAct.
+Micturition is Class.
+MiddleCerebralTrifurcation is Class.
+MiddleCerebralTrifurcation SubClassOf NAMEDJunction.
+MiddlePhalanx is Class.
+MiddlePhalanxOfLittleFinger is Class.
+MiddlePhalanxOfLittleFinger is equivalent to MiddlePhalanx and (isSpecificStructuralComponentOf some LittleFinger).
+MiddlePhalanxOfLittleFinger SubClassOf MiddlePhalanx.
+MildMentalExcitation is Class.
+MildMentalExcitation is equivalent to MentalExcitation and (hasProcessActivity some.
+MildMentalExcitation is equivalent to (ProcessActivity and (hasQuantity some.
+MildMentalExcitation is equivalent to (Level and (hasMagnitude some lowLevel))))).
+MildMentalExcitation SubClassOf MentalExcitation.
+Mobility is Class.
+Mobility SubClassOf OrganismFeature.
+ModelAuthors is Class.
+MonocyteCountProcedure is Class.
+MonocyteCountProcedure SubClassOf InvestigationAct.
+MucocutaneousJunction is Class.
+MucocutaneousJunction SubClassOf NAMEDJunction.
+MulberryMolar is Class.
+MulberryMolar SubClassOf SyphiliticHypoplasia.
+Murmur is Class.
+MusculoSkeletalExamination is Class.
+MusculoSkeletalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+MusculoSkeletalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some MusculoSkeletalSystem))).
+MusculoSkeletalExamination SubClassOf ClinicalAct.
+MusculoSkeletalSystem is Class.
+Mustelidae is Class.
+Myalgia is Class.
+Myalgia is equivalent to ExternalStimulusSensation and (actsOn some.
+Myalgia is equivalent to (PainSignal and (isConsequenceOf some.
+Myalgia is equivalent to (NerveConduction and (hasUniqueAssociatedDisplacement some.
+Myalgia is equivalent to (Displacement and (isDisplacementFrom some StriatedMuscle))))))).
+Myalgia SubClassOf ExternalStimulusSensation.
+MyalgiaSymptom is Class.
+MyalgiaSymptom SubClassOf Myalgia.
+MyocardialDepolarisation is Class.
+MyocardialDepolarisation is equivalent to Depolarising and (LocativeAttribute some CardiacMuscle).
+MyocardialDepolarisation SubClassOf Depolarising.
+MyocardialDepolarisationRate is Class.
+MyocardialDepolarisationRate is equivalent to Frequency and (isFrequencyOf some.
+MyocardialDepolarisationRate is equivalent to (Depolarising and (isSpecificFunctionOf some CardiacMuscle))).
+MyocardialDepolarisationRate SubClassOf Frequency.
+MyocardialInfarct is Class.
+MyometrialContraction is Class.
+MyometrialContraction is equivalent to Contracting and (isSpecificFunctionOf some Myometrium).
+MyometrialContraction SubClassOf Contracting.
+Myometrium is Class.
+NAMEDDrugClinicalFeature is Class.
+NAMEDDuct is Class.
+NAMEDEndocrineSubpart is Class.
+NAMEDEponymousMethod is Class.
+NAMEDEyeDiseaseProcess is Class.
+NAMEDForamen is Class.
+NAMEDImmuneDiseaseProcess is Class.
+NAMEDJoint is Class.
+NAMEDJunction is Class.
+NAMEDJunction SubClassOf Junction.
+NAMEDMolecularSorptionProcess is Class.
+NAMEDMolecularSorptionProcess SubClassOf ChemicalProcess.
+NAMEDSensoryPart is Class.
+NAMEDTreatmentAct is Class.
+NAMEDTreatmentAct SubClassOf TreatmentAct.
+NAMEDVolitionalAct is Class.
+NAMEDVolitionalAct SubClassOf Behaviour,.
+NAMEDVolitionalAct SubClassOf hasIntentionality some.
+NAMEDVolitionalAct SubClassOf (Intentionality and (hasAbsoluteState some voluntary)).
+NasopalatineCyst is Class.
+NasopalatineCyst is equivalent to AbnormalCyst and (hasAcquisitionMode some.
+NasopalatineCyst is equivalent to (AcquisitionMode and (hasAbsoluteState some developmental))) and (hasSpecificLocation some IncisiveCanal).
+NasopalatineCyst SubClassOf AbnormalCyst.
+Neck is Class.
+NeckExamination is Class.
+NeckExamination is equivalent to ClinicalAct and (hasSubprocess some.
+NeckExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Neck))).
+NeckExamination SubClassOf ClinicalAct.
+NegativeAetiologyState is Class.
+Neonatology is Class.
+Neonatology SubClassOf Paediatrics.
+NerveConduction is Class.
+NervousExamination is Class.
+NervousExamination is equivalent to ClinicalAct and (hasSubprocess some.
+NervousExamination is equivalent to (ExaminingProcess and (LocativeAttribute some NervousSystem))).
+NervousExamination SubClassOf ClinicalAct.
+NervousSystem is Class.
+NeutrophilCountProcedure is Class.
+NeutrophilCountProcedure SubClassOf InvestigationAct.
+NonAllergicRhinitis is Class.
+NonAllergicRhinitis SubClassOf NAMEDImmuneDiseaseProcess.
+NonHuman is Class.
+NonNormalReductionInSize is Class.
+NonNormalSizedPenis is Class.
+NonNormalSizedPenisSymptom is Class.
+NonNormalSizedPenisSymptom is equivalent to NonNormalSizedPenis and (playsConsultationRole some SymptomRole).
+NonNormalSizedPenisSymptom SubClassOf NonNormalSizedPenis.
+NormalCardiacContraction is Class.
+NormalCardiacContraction is equivalent to CardiacMuscleContractionProcess and (hasPathologicalStatus some physiological).
+NormalCardiacContraction SubClassOf CardiacMuscleContractionProcess.
+Nose is Class.
+NoseExamination is Class.
+NoseExamination is equivalent to ClinicalAct and (hasSubprocess some.
+NoseExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Nose))).
+NoseExamination SubClassOf ClinicalAct.
+OccipitalLymphnode is Class.
+OccipitalLymphnodeExamination is Class.
+OccipitalLymphnodeExamination is equivalent to ClinicalAct and (hasSubprocess some.
+OccipitalLymphnodeExamination is equivalent to (ExaminingProcess and (LocativeAttribute some OccipitalLymphnode))).
+OccipitalLymphnodeExamination SubClassOf ClinicalAct.
+OccupationalActivity is Class.
+OccupationalActivity SubClassOf Activity.
+OccupationalHealth is Class.
+OcularExamination is Class.
+OcularExamination is equivalent to ClinicalAct and (hasSubprocess some.
+OcularExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Eye))).
+OcularExamination SubClassOf ClinicalAct.
+OculomotorNerve is Class.
+OculomotorNerveExamination is Class.
+OculomotorNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+OculomotorNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some OculomotorNerve))).
+OculomotorNerveExamination SubClassOf ClinicalAct.
+OlfactoryNerve is Class.
+OlfactoryNerveExamination is Class.
+OlfactoryNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+OlfactoryNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some OlfactoryNerve))).
+OlfactoryNerveExamination SubClassOf ClinicalAct.
+OligaemicPerfusion is Class.
+OligaemicPerfusion is equivalent to VascularPerfusion and (hasProcessActivity some.
+OligaemicPerfusion is equivalent to (ProcessActivity and (hasQuantity some.
+OligaemicPerfusion is equivalent to (Level and (hasMagnitude some lowLevel))))).
+OligaemicPerfusion SubClassOf VascularPerfusion,.
+OligaemicPerfusion SubClassOf hasPathologicalStatus some pathological.
+Oliguria is Class.
+Oliguria is equivalent to Micturition and (hasProcessActivity some.
+Oliguria is equivalent to (ProcessActivity and (hasQuantity some.
+Oliguria is equivalent to (Level and (hasMagnitude some lowLevel))))).
+Oliguria SubClassOf Micturition,.
+Oliguria SubClassOf hasAbnormalityStatus some nonNormal,.
+Oliguria SubClassOf isSpecificConsequenceOf some AntiDiuresis.
+OliguriaSymptom is Class.
+OliguriaSymptom SubClassOf Oliguria.
+OliveOil is Class.
+OliveOil SubClassOf VegetableOil.
+OliveOilAsDrug is Class.
+OliveOilAsDrug SubClassOf OliveOil.
+OpticNerve is Class.
+OpticNerveExamination is Class.
+OpticNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+OpticNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some OpticNerve))).
+OpticNerveExamination SubClassOf ClinicalAct.
+OralMeatus is Class.
+OrderAct is Class.
+OrderAct SubClassOf ClinicalAct.
+OrganismFeature is Class.
+OroPharynx is Class.
+OroPharynxExamination is Class.
+OroPharynxExamination is equivalent to ClinicalAct and (hasSubprocess some.
+OroPharynxExamination is equivalent to (ExaminingProcess and (LocativeAttribute some OroPharynx))).
+OroPharynxExamination SubClassOf ClinicalAct.
+OrodentalExamination is Class.
+OrodentalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+OrodentalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some OrodentalSystem))).
+OrodentalExamination SubClassOf ClinicalAct.
+OrodentalSystem is Class.
+Otolith is Class.
+Otolith SubClassOf NAMEDSensoryPart.
+OvarianCyst is Class.
+Paediatrics is Class.
+PainSignal is Class.
+Palate is Class.
+PalateExamination is Class.
+PalateExamination is equivalent to ClinicalAct and (hasSubprocess some.
+PalateExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Palate))).
+PalateExamination SubClassOf ClinicalAct.
+PalatineBone is Class.
+PalatineForamen is Class.
+PalatineForamen is equivalent to Foramen and (IsDivisionOf some PalatineBone).
+PalatineForamen SubClassOf Foramen.
+PalatoEthmoidalSuture is Class.
+PalatoEthmoidalSuture SubClassOf NAMEDJoint,.
+PalatoEthmoidalSuture SubClassOf isMadeOf some FibrousTissue,.
+PalatoEthmoidalSuture SubClassOf isPairedOrUnpaired some leftRightPaired,.
+PalatoEthmoidalSuture SubClassOf isStructuralComponentOf some Skull.
+Palpating is Class.
+Palpebrum is Class.
+ParanasalSinus is Class.
+ParanasalSinusExamination is Class.
+ParanasalSinusExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ParanasalSinusExamination is equivalent to (ExaminingProcess and (LocativeAttribute some ParanasalSinus))).
+ParanasalSinusExamination SubClassOf ClinicalAct.
+ParoxysmalAtrialFibrillation is Class.
+ParoxysmalAtrialFibrillation is equivalent to AtrialFibrillation and (hasClinicalAppearance some.
+ParoxysmalAtrialFibrillation is equivalent to (ClinicalAppearance and (hasAbsoluteState some paroxysmal))).
+ParoxysmalAtrialFibrillation SubClassOf AtrialFibrillation.
+ParticulateConcentrationAssay is Class.
+ParticulateConcentrationAssay SubClassOf InvestigationAct.
+Partnership is Class.
+Partnership SubClassOf SocialOrganisation.
+Parturition is Class.
+Parturition is equivalent to DeliveryProcess and (actsSpecificallyOn some Foetus).
+Parturition SubClassOf DeliveryProcess.
+PatchRole is Class.
+PatchRole SubClassOf FunctionalRole.
+PathologicalGalactoseMetabolism is Class.
+PathologicalGalactoseMetabolism SubClassOf GalactoseMetabolism.
+PathologicalPhenomenon is Class.
+Patient is Class.
+PatientOrganisation is Class.
+PatientOrganisation SubClassOf SocialOrganisation.
+PelvicCavity is Class.
+PelvicCavityExamination is Class.
+PelvicCavityExamination is equivalent to ClinicalAct and (hasSubprocess some.
+PelvicCavityExamination is equivalent to (ExaminingProcess and (LocativeAttribute some PelvicCavity))).
+PelvicCavityExamination SubClassOf ClinicalAct.
+PelvicPartOfTrunk is Class.
+PelvicPartOfTrunkExamination is Class.
+PelvicPartOfTrunkExamination is equivalent to ClinicalAct and (hasSubprocess some.
+PelvicPartOfTrunkExamination is equivalent to (ExaminingProcess and (LocativeAttribute some PelvicPartOfTrunk))).
+PelvicPartOfTrunkExamination SubClassOf ClinicalAct.
+PelviuretericJunction is Class.
+PelviuretericJunction SubClassOf NAMEDJunction.
+Penis is Class.
+PenisExamination is Class.
+PenisExamination is equivalent to ClinicalAct and (hasSubprocess some.
+PenisExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Penis))).
+PenisExamination SubClassOf ClinicalAct.
+PercussionAct is Class.
+PercussionAct SubClassOf ExaminationAct.
+PerinealExamination is Class.
+PerinealExamination is equivalent to ClinicalAct and (hasSubprocess some.
+PerinealExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Perineum))).
+PerinealExamination SubClassOf ClinicalAct.
+PerineoScrotalJunction is Class.
+PerineoScrotalJunction SubClassOf NAMEDJunction.
+Perineum is Class.
+PeriodDuringAdulthood is Class.
+PeripheralNervousExamination is Class.
+PeripheralNervousExamination is equivalent to ClinicalAct and (hasSubprocess some.
+PeripheralNervousExamination is equivalent to (ExaminingProcess and (LocativeAttribute some PeripheralNervousSystem))).
+PeripheralNervousExamination SubClassOf ClinicalAct.
+PeripheralNervousSystem is Class.
+PharmacogicalAction is Class.
+PharmacogicalAction SubClassOf NAMEDDrugClinicalFeature.
+PharmacologicalInvestigationAct is Class.
+PharmacologicalInvestigationAct SubClassOf InvestigationAct.
+PharyngoesophagealJunction is Class.
+PharyngoesophagealJunction SubClassOf NAMEDJunction.
+Phenomenon is Class.
+PhysicalAbuse is Class.
+PhysicalAbuse SubClassOf MaltreatmentAct.
+PhysicalPresentationState is Class.
+PhysiologicalNAMEDVolitionalAct is Class.
+PhysiologicalNAMEDVolitionalAct SubClassOf NAMEDVolitionalAct.
+PhysiologicalRole is Class.
+Pinna is Class.
+PinnaExamination is Class.
+PinnaExamination is equivalent to ClinicalAct and (hasSubprocess some.
+PinnaExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Pinna))).
+PinnaExamination SubClassOf ClinicalAct.
+Placidity is Class.
+Placidity SubClassOf AngerOrPlacidity.
+PlateletCountProcedure is Class.
+PlateletCountProcedure SubClassOf InvestigationAct.
+PlayActivity is Class.
+PlayActivity SubClassOf Activity.
+Polydypsia is Class.
+Polydypsia SubClassOf Drinking.
+Polymyalgia is Class.
+Polymyalgia SubClassOf Myalgia.
+PoorQualityDiet is Class.
+PoorQualityDiet SubClassOf VoluntaryEating.
+PoorQualityOfLife is Class.
+PoorQualityOfLife is equivalent to Quality and (hasQuantity some.
+PoorQualityOfLife is equivalent to (Level and (hasMagnitude some lowLevel))) and (isQualityOf some SurvivingProcess).
+PoorQualityOfLife SubClassOf Quality.
+PositivePreviousPersonalHistory is Class.
+PositivePreviousPersonalHistory is equivalent to PreviousPersonalHistory and (isHistoryOf some presence).
+PositivePreviousPersonalHistory SubClassOf PreviousPersonalHistory.
+Possibility is Class.
+Possibility SubClassOf VolitionalFeature.
+PossibilityState is Class.
+PossibilityState SubClassOf VolitionalState.
+PosteriorRadicoMedullaryJunction is Class.
+PosteriorRadicoMedullaryJunction SubClassOf NAMEDJunction.
+PosteriorStabilityOfKneeJoint is Class.
+PosteriorStabilityOfKneeJoint is equivalent to Scope and (isScopeOf some.
+PosteriorStabilityOfKneeJoint is equivalent to (Extension and (actsSpecificallyOn some KneeJoint))).
+PosteriorStabilityOfKneeJoint SubClassOf Scope.
+PregnancyTest is Class.
+PregnancyTest SubClassOf InvestigationAct.
+PrematureLabour is Class.
+PrematureLabour SubClassOf Parturition.
+Premedication is Class.
+Premedication is equivalent to DrugAdministration and (isFollowedBy some SurgicalProcedure).
+Premedication SubClassOf DrugAdministration.
+PrescriptionProcess is Class.
+PrescriptionProcess SubClassOf ClinicalAct.
+PreviousPersonalHistory is Class.
+ProcessActivity is Class.
+ProcessFeature is Class.
+ProcessState is Class.
+ProstateExamination is Class.
+ProstateExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ProstateExamination is equivalent to (ExaminingProcess and (LocativeAttribute some ProstateGland))).
+ProstateExamination SubClassOf ClinicalAct.
+ProstateGland is Class.
+Protein is Class.
+ProteinDeficientNutrition is Class.
+ProteinDeficientNutrition SubClassOf VoluntaryEating.
+ProteinManufacture is Class.
+ProteinManufacture is equivalent to ManufacturingProcess and (hasSpecificConsequence some Protein).
+ProteinManufacture SubClassOf ManufacturingProcess.
+PseudostratifiedCiliatedEpithelium is Class.
+Psychosis is Class.
+PsychosocialConstruct is Class.
+PulmonaryEpithelium is Class.
+PulmonaryEpithelium is equivalent to PseudostratifiedCiliatedEpithelium and (isSpecificLayerOf some Bronchus).
+PulmonaryEpithelium SubClassOf PseudostratifiedCiliatedEpithelium.
+PulmonaryVessel is Class.
+PulmonaryVessel is equivalent to BloodVessel and (serves some Lung).
+PulmonaryVessel SubClassOf BloodVessel.
+PupilOfEye is Class.
+PyschologicalAbuse is Class.
+PyschologicalAbuse SubClassOf MaltreatmentAct.
+QTProlongation is Class.
+Quality is Class.
+QualityOfLife is Class.
+QualityOfLife is equivalent to Quality and (isQualityOf some SurvivingProcess).
+QualityOfLife SubClassOf Quality.
+QualityState is Class.
+RadioFrequencyRadiation is Class.
+RaisedGranulocyteCount is Class.
+RaisedGranulocyteCount is equivalent to GranulocyteConcentration and (hasQuantity some.
+RaisedGranulocyteCount is equivalent to (Level and (hasMagnitude some highLevel))).
+RaisedGranulocyteCount SubClassOf GranulocyteConcentration.
+ReactivationOfHerpesSimplex is Class.
+ReactivationOfHerpesSimplex is equivalent to Restarting and (actsSpecificallyOn some HerpesSimplexInfection).
+ReactivationOfHerpesSimplex SubClassOf Restarting.
+RecombinantProteinSynthesis is Class.
+RecombinantProteinSynthesis SubClassOf ProteinManufacture.
+RectalExamination is Class.
+RectalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+RectalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Rectum))).
+RectalExamination SubClassOf ClinicalAct.
+RectoSigmoidJunction is Class.
+RectoSigmoidJunction SubClassOf NAMEDJunction.
+Rectum is Class.
+RecurrentAbortion is Class.
+RecurrentAbortion is equivalent to Abortion and (hasTemporalPattern some.
+RecurrentAbortion is equivalent to (TemporalPattern and (hasAbsoluteState some repeating))).
+RecurrentAbortion SubClassOf Abortion.
+ReducedSebumProduction is Class.
+ReducedSebumProduction SubClassOf Secretion.
+ReductionInBreastSize is Class.
+ReductionInBreastSize is equivalent to NonNormalReductionInSize and (hasSpecificLocation some MammaryGland).
+ReductionInBreastSize SubClassOf NonNormalReductionInSize.
+ReductionOfVascularPerfusion is Class.
+ReductionOfVascularPerfusion is equivalent to Deteriorating and (actsSpecificallyOn some VascularPerfusion).
+ReductionOfVascularPerfusion SubClassOf Deteriorating,.
+ReductionOfVascularPerfusion SubClassOf hasPathologicalStatus some pathological.
+ReferralAct is Class.
+ReferralAct SubClassOf CareAct.
+Reflex is Class.
+ReflexExamination is Class.
+ReflexExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ReflexExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Reflex))).
+ReflexExamination SubClassOf ClinicalAct.
+ReflexRole is Class.
+ReflexRole SubClassOf FunctionalRole.
+RefractoryPeriodontitis is Class.
+RefractoryPeriodontitis is equivalent to MarginalPeriodontitis and (hasTreatmentTractability some.
+RefractoryPeriodontitis is equivalent to (TreatmentTractability and (hasAbsoluteState some treatmentRefractory))).
+RefractoryPeriodontitis SubClassOf MarginalPeriodontitis.
+RehabillitationMedicine is Class.
+RehabillitationMedicine SubClassOf Medicine.
+ReligousOrganisation is Class.
+ReligousOrganisation SubClassOf SocialOrganisation.
+ReproductiveExamination is Class.
+ReproductiveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ReproductiveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some ReproductiveSystem))).
+ReproductiveExamination SubClassOf ClinicalAct.
+ReproductiveSystem is Class.
+RespiratoryExamination is Class.
+RespiratoryExamination is equivalent to ClinicalAct and (hasSubprocess some.
+RespiratoryExamination is equivalent to (ExaminingProcess and (LocativeAttribute some RespiratorySystem))).
+RespiratoryExamination SubClassOf ClinicalAct.
+RespiratorySystem is Class.
+Restarting is Class.
+RestingProcess is Class.
+RestingProcess is equivalent to Activity and (playsPhysiologicalRole some RestingRole).
+RestingProcess SubClassOf Activity,.
+RestingProcess SubClassOf playsPhysiologicalRole some LifeStyleRole.
+RestingRole is Class.
+RestingRole SubClassOf FunctionalRole.
+RestingTwelveLeadECGTest is Class.
+RestingTwelveLeadECGTest SubClassOf InvestigationAct.
+Retina is Class.
+RetinalDetachmentInAIDSPatientsWithRetinitis is Class.
+RetinalDetachmentInAIDSPatientsWithRetinitis SubClassOf NAMEDEyeDiseaseProcess.
+RetinalExamination is Class.
+RetinalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+RetinalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Retina))).
+RetinalExamination SubClassOf ClinicalAct.
+RetinalScreening is Class.
+RetinalScreening is equivalent to ClinicalAct and (isToDetermine some.
+RetinalScreening is equivalent to (Existentiality and (isExistenceOf some.
+RetinalScreening is equivalent to (PathologicalPhenomenon and (LocativeAttribute some Retina))))).
+RetinalScreening SubClassOf ClinicalAct.
+RhesusDBloodGroupTest is Class.
+RhesusDBloodGroupTest SubClassOf InvestigationAct.
+RheumatoidFactor is Class.
+RheumatoidFactor SubClassOf Antibody.
+RightVentricularMyocardialHypertrophy is Class.
+RiskFactorForVenousThromboembolism is Class.
+RiskFactorForVenousThromboembolism is equivalent to Phenomenon and (hasConsequence some RiskOfVenousThromboembolism).
+RiskFactorForVenousThromboembolism SubClassOf Phenomenon.
+RiskOfVenousThromboembolism is Class.
+Room is Class.
+Ruminantia is Class.
+Ruminantia SubClassOf Artiodactyla.
+SacroIliacJoint is Class.
+SacroiliacJointExamination is Class.
+SacroiliacJointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+SacroiliacJointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some SacroIliacJoint))).
+SacroiliacJointExamination SubClassOf ClinicalAct.
+SalivaryDuct is Class.
+SalivaryGland is Class.
+SalivaryGlandExamination is Class.
+SalivaryGlandExamination is equivalent to ClinicalAct and (hasSubprocess some.
+SalivaryGlandExamination is equivalent to (ExaminingProcess and (LocativeAttribute some SalivaryGland))).
+SalivaryGlandExamination SubClassOf ClinicalAct.
+SaphenoFemoralJunction is Class.
+SaphenoFemoralJunction SubClassOf NAMEDJunction.
+SaphenoPoplitealJunction is Class.
+SaphenoPoplitealJunction SubClassOf NAMEDJunction.
+Scalp is Class.
+ScalpExamination is Class.
+ScalpExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ScalpExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Scalp))).
+ScalpExamination SubClassOf ClinicalAct.
+Sclera is Class.
+Scope is Class.
+Screaming is Class.
+Screaming SubClassOf Vocalisation.
+ScreeningAct is Class.
+ScreeningAct is equivalent to ClinicalAct and (isToDetermine some.
+ScreeningAct is equivalent to (Existentiality and (isExistenceOf some PathologicalPhenomenon))).
+ScreeningAct SubClassOf ClinicalAct.
+ScrotalExamination is Class.
+ScrotalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ScrotalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Scrotum))).
+ScrotalExamination SubClassOf ClinicalAct.
+Scrotum is Class.
+Seborrhoea is Class.
+Seborrhoea SubClassOf Secretion.
+Secretion is Class.
+Secretion SubClassOf BiologicalActivePropulsionProcess.
+Sedating is Class.
+Sedating SubClassOf TreatmentAct.
+SelfCareAct is Class.
+SelfCareAct SubClassOf NAMEDVolitionalAct.
+SelfExamination is Class.
+SelfExamination SubClassOf ExaminationAct.
+SelfNeglectAct is Class.
+SelfNeglectAct SubClassOf NAMEDVolitionalAct.
+SensoryExamination is Class.
+SensoryExamination is equivalent to ClinicalAct and (hasSubprocess some.
+SensoryExamination is equivalent to (ExaminingProcess and (LocativeAttribute some SensorySystem))).
+SensoryExamination SubClassOf ClinicalAct.
+SensorySystem is Class.
+SerumAntinuclearAntibodyTest is Class.
+SerumAntinuclearAntibodyTest SubClassOf InvestigationAct.
+SerumCalciumTest is Class.
+SerumCalciumTest SubClassOf InvestigationAct.
+SerumCatecholamineTest is Class.
+SerumCatecholamineTest SubClassOf InvestigationAct.
+SerumChlorineTest is Class.
+SerumChlorineTest SubClassOf InvestigationAct.
+SerumCholesterolTest is Class.
+SerumCholesterolTest SubClassOf InvestigationAct.
+SerumFructosamineTest is Class.
+SerumFructosamineTest SubClassOf InvestigationAct.
+SerumGlycosylatedHemoglobinTest is Class.
+SerumGlycosylatedHemoglobinTest SubClassOf InvestigationAct.
+SerumKetoneConcentrationTest is Class.
+SerumKetoneConcentrationTest SubClassOf InvestigationAct.
+SerumLacticAcidTest is Class.
+SerumLacticAcidTest SubClassOf InvestigationAct.
+SerumLipidTest is Class.
+SerumLipidTest SubClassOf InvestigationAct.
+SerumPotassiumTest is Class.
+SerumPotassiumTest SubClassOf InvestigationAct.
+SerumSodiumTest is Class.
+SerumSodiumTest SubClassOf InvestigationAct.
+SerumTriglycerideTest is Class.
+SerumTriglycerideTest SubClassOf InvestigationAct.
+SexualAbuse is Class.
+SexualAbuse SubClassOf MaltreatmentAct.
+Shoulder is Class.
+ShoulderExamination is Class.
+ShoulderExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ShoulderExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Shoulder))).
+ShoulderExamination SubClassOf ClinicalAct.
+ShoulderJoint is Class.
+ShoulderJointExamination is Class.
+ShoulderJointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ShoulderJointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some ShoulderJoint))).
+ShoulderJointExamination SubClassOf ClinicalAct.
+Shouting is Class.
+Shouting SubClassOf Vocalisation.
+Sialolith is Class.
+Sialolith is equivalent to Calculus and (isNonPartitivelyContainedIn some SalivaryDuct).
+Sialolith SubClassOf Calculus.
+Signal is Class.
+SignalAmplitude is Class.
+SignalAmplitude SubClassOf SignalMorphology.
+SignalChannel is Class.
+SignalMorphology is Class.
+Singing is Class.
+Singing SubClassOf Vocalisation.
+SinoAtrialNode is Class.
+SinoAtrialNodeDepolarisation is Class.
+SinoAtrialNodeDepolarisation is equivalent to Depolarising and (isSpecificFunctionOf some SinoAtrialNode).
+SinoAtrialNodeDepolarisation SubClassOf Depolarising.
+SkinExamination is Class.
+SkinExamination is equivalent to ClinicalAct and (hasSubprocess some.
+SkinExamination is equivalent to (ExaminingProcess and (LocativeAttribute some SkinSystem))).
+SkinExamination SubClassOf ClinicalAct.
+SkinGraft is Class.
+SkinSystem is Class.
+Skull is Class.
+SmallIntestinePermeabilityStudy is Class.
+SmallIntestinePermeabilityStudy SubClassOf InvestigationAct.
+SocialOrganisation is Class.
+SocialOrganisation SubClassOf PsychosocialConstruct.
+SocioPoliticalOrganisation is Class.
+SocioPoliticalOrganisation SubClassOf SocialOrganisation.
+SodiumLactate is Class.
+SodiumLactateAsDrug is Class.
+SodiumLactateAsDrug is equivalent to SodiumLactate and (playsPhysiologicalRole some ActiveDrugAdditiveRole).
+SodiumLactateAsDrug SubClassOf SodiumLactate.
+SoluteConcentrationAssay is Class.
+SoluteConcentrationAssay SubClassOf InvestigationAct.
+SoundEnergy is Class.
+Speaking is Class.
+Speaking SubClassOf Vocalisation.
+SpecificProcess is Class.
+SpecimenRole is Class.
+Speech is Class.
+SpeechExamination is Class.
+SpeechExamination is equivalent to ClinicalAct and (hasSubprocess some.
+SpeechExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Speech))).
+SpeechExamination SubClassOf ClinicalAct.
+SphenopalatineForamen is Class.
+SphenopalatineForamen SubClassOf NAMEDForamen.
+Spleen is Class.
+SplenicPalpationExamination is Class.
+SplenicPalpationExamination is equivalent to ClinicalAct and (hasSubprocess some.
+SplenicPalpationExamination is equivalent to (Palpating and (LocativeAttribute some Spleen))).
+SplenicPalpationExamination SubClassOf ClinicalAct.
+SplitSkinGraft is Class.
+SplitSkinGraft SubClassOf SkinGraft.
+SportingActivity is Class.
+SportingActivity SubClassOf Activity,.
+SportingActivity SubClassOf playsPhysiologicalRole some ExerciseRole.
+SquamoColumnarJunctionOfCervix is Class.
+SquamoColumnarJunctionOfCervix SubClassOf NAMEDJunction.
+Stabilizing is Class.
+StartingProcess is Class.
+Stomach is Class.
+StriatedMuscle is Class.
+StructuralExtent is Class.
+StructuralFunctionFeature is Class.
+SubclaviusMuscle is Class.
+Substance is Class.
+Suiformes is Class.
+Suiformes SubClassOf Artiodactyla.
+SurgicalExaminationProcedure is Class.
+SurgicalExaminationProcedure SubClassOf ExaminationAct.
+SurgicalExtent is Class.
+SurgicalExtent SubClassOf VolitionalFeature.
+SurgicalOpenClosedness is Class.
+SurgicalOpenClosedness SubClassOf VolitionalFeature.
+SurgicalOpenClosednessState is Class.
+SurgicalOpenClosednessState SubClassOf VolitionalState.
+SurgicalProcedure is Class.
+SurgicalProcess is Class.
+SurgicalProcess SubClassOf ClinicalAct,.
+SurgicalProcess SubClassOf playsClinicalRole some SurgicalRole.
+SurgicalRole is Class.
+SurvivingProcess is Class.
+SymptomRole is Class.
+Synapse is Class.
+Synapse SubClassOf NAMEDJunction.
+Synchronicity is Class.
+SyndactylyLesion is Class.
+SyntheticManufacturingProcess is Class.
+SyntheticManufacturingProcess is equivalent to ManufacturingProcess and (hasSubprocess some AnabolicProcess).
+SyntheticManufacturingProcess SubClassOf ManufacturingProcess.
+Syphilis is Class.
+SyphiliticHypoplasia is Class.
+SyphiliticHypoplasia is equivalent to EnvironmantalEnamelHypoplasia and (isSpecificConsequenceOf some Syphilis).
+SyphiliticHypoplasia SubClassOf EnvironmantalEnamelHypoplasia.
+Systole is Class.
+T9root is Class.
+TactileHallucination is Class.
+TactileHallucination is equivalent to Hallucination and (actsSpecificallyOn some TouchSensation).
+TactileHallucination SubClassOf Hallucination.
+TaloCalcaneoNavicularJoint is Class.
+TaloCalcaneoNavicularJoint SubClassOf IntertarsalJoint,.
+TaloCalcaneoNavicularJoint SubClassOf hasStructuralComponent some Calcaneum,.
+TaloCalcaneoNavicularJoint SubClassOf hasStructuralComponent some Cuboid,.
+TaloCalcaneoNavicularJoint SubClassOf hasStructuralComponent some Talus.
+Talus is Class.
+Team is Class.
+Team SubClassOf SocialOrganisation.
+TemporalPattern is Class.
+ThiamineDeficientNutrition is Class.
+ThiamineDeficientNutrition SubClassOf VoluntaryEating.
+Thigh is Class.
+ThighExamination is Class.
+ThighExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ThighExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Thigh))).
+ThighExamination SubClassOf ClinicalAct.
+ThreadedControlRod is Class.
+ThreadedControlRod SubClassOf ThreadedRod.
+ThreadedRod is Class.
+ThyroidFunctionTest is Class.
+ThyroidFunctionTest SubClassOf InvestigationAct.
+TissueCell is Class.
+Toe is Class.
+ToeExamination is Class.
+ToeExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ToeExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Toe))).
+ToeExamination SubClassOf ClinicalAct.
+ToeJoint is Class.
+ToeJointExamination is Class.
+ToeJointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ToeJointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some ToeJoint))).
+ToeJointExamination SubClassOf ClinicalAct.
+ToeNail is Class.
+ToeNailExamination is Class.
+ToeNailExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ToeNailExamination is equivalent to (ExaminingProcess and (LocativeAttribute some ToeNail))).
+ToeNailExamination SubClassOf ClinicalAct.
+Tongue is Class.
+TongueExamination is Class.
+TongueExamination is equivalent to ClinicalAct and (hasSubprocess some.
+TongueExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Tongue))).
+TongueExamination SubClassOf ClinicalAct.
+Tooth is Class.
+ToothExamination is Class.
+ToothExamination is equivalent to ClinicalAct and (hasSubprocess some.
+ToothExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Tooth))).
+ToothExamination SubClassOf ClinicalAct.
+TouchSensation is Class.
+Toughness is Class.
+ToxicIleus is Class.
+ToxicIleus is equivalent to GastroIntestinalObstruction and (isSpecificImmediateConsequenceOf some.
+ToxicIleus is equivalent to (IntestinalStasisProcess and (isSpecificImmediateConsequenceOf some ToxicIntestinalParalysis))).
+ToxicIleus SubClassOf GastroIntestinalObstruction.
+ToxicIntestinalParalysis is Class.
+TransducingProcess is Class.
+TreatmentAct is Class.
+TreatmentAct SubClassOf ClinicalAct.
+TreatmentTractability is Class.
+TreatmentTractability SubClassOf DiseaseFeature.
+TrendelenburgPosition is Class.
+TrendelenburgPosition SubClassOf supine.
+TrigeminalNerve is Class.
+TrigeminalNerveExamination is Class.
+TrigeminalNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+TrigeminalNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some TrigeminalNerve))).
+TrigeminalNerveExamination SubClassOf ClinicalAct.
+TrochlearNerve is Class.
+TrochlearNerveExamination is Class.
+TrochlearNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+TrochlearNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some TrochlearNerve))).
+TrochlearNerveExamination SubClassOf ClinicalAct.
+TwelveLeadECGTest is Class.
+TwelveLeadECGTest SubClassOf InvestigationAct.
+Tylopoda is Class.
+Tylopoda SubClassOf Artiodactyla.
+TympanicMembraneExamination is Class.
+TympanicMembraneExamination is equivalent to ClinicalAct and (hasSubprocess some.
+TympanicMembraneExamination is equivalent to (ExaminingProcess and (LocativeAttribute some EarDrum))).
+TympanicMembraneExamination SubClassOf ClinicalAct.
+USGallon is Class.
+USGallon SubClassOf VolumeUnit.
+USPint is Class.
+USPint SubClassOf VolumeUnit.
+UnhealthyEating is Class.
+UnhealthyEating SubClassOf VoluntaryEating.
+UpperExtremity is Class.
+UpperExtremityExamination is Class.
+UpperExtremityExamination is equivalent to ClinicalAct and (hasSubprocess some.
+UpperExtremityExamination is equivalent to (ExaminingProcess and (LocativeAttribute some UpperExtremity))).
+UpperExtremityExamination SubClassOf ClinicalAct.
+UreaAndElectrolyteTest is Class.
+UreaAndElectrolyteTest SubClassOf InvestigationAct.
+Urethra is Class.
+UrethralExamination is Class.
+UrethralExamination is equivalent to ClinicalAct and (hasSubprocess some.
+UrethralExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Urethra))).
+UrethralExamination SubClassOf ClinicalAct.
+Urgency is Class.
+Urgency SubClassOf VolitionalFeature.
+UrgencyState is Class.
+UrgencyState SubClassOf VolitionalState.
+Urine is Class.
+UrineAcetoneTest is Class.
+UrineAcetoneTest SubClassOf InvestigationAct.
+UrineAssay is Class.
+UrineAssay SubClassOf InvestigationAct.
+UrineDipstickTest is Class.
+UrineDipstickTest SubClassOf UrineTest.
+UrineExamination is Class.
+UrineExamination is equivalent to ClinicalAct and (hasSubprocess some.
+UrineExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Urine))).
+UrineExamination SubClassOf ClinicalAct.
+UrineKetoneConcentrationTest is Class.
+UrineKetoneConcentrationTest SubClassOf InvestigationAct.
+UrineSample is Class.
+UrineSampling is Class.
+UrineTest is Class.
+UrineTest is equivalent to ClinicalAct and (actsSpecificallyOn some.
+UrineTest is equivalent to (Urine and (playsClinicalRole some SpecimenRole))) and (isToDetermine some Phenomenon).
+UrineTest SubClassOf ClinicalAct.
+UterineAdnexaExamination is Class.
+UterineAdnexaExamination is equivalent to ClinicalAct and (hasSubprocess some.
+UterineAdnexaExamination is equivalent to (ExaminingProcess and (LocativeAttribute some AdnexalStructureOfUterus))).
+UterineAdnexaExamination SubClassOf ClinicalAct.
+UterineCervixExamination is Class.
+UterineCervixExamination is equivalent to ClinicalAct and (hasSubprocess some.
+UterineCervixExamination is equivalent to (ExaminingProcess and (LocativeAttribute some CervixUteri))).
+UterineCervixExamination SubClassOf ClinicalAct.
+Uterus is Class.
+UterusExamination is Class.
+UterusExamination is equivalent to ClinicalAct and (hasSubprocess some.
+UterusExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Uterus))).
+UterusExamination SubClassOf ClinicalAct.
+Vagina is Class.
+VaginalExamination is Class.
+VaginalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+VaginalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Vagina))).
+VaginalExamination SubClassOf ClinicalAct.
+VagusNerve is Class.
+VagusNerveExamination is Class.
+VagusNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+VagusNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some VagusNerve))).
+VagusNerveExamination SubClassOf ClinicalAct.
+ValveRole is Class.
+ValveRole SubClassOf FunctionalRole.
+VascularInvestigation is Class.
+VascularInvestigation SubClassOf InvestigationAct.
+VascularPerfusion is Class.
+VascularRole is Class.
+VascularRole SubClassOf FunctionalRole.
+VascularSystemExamination is Class.
+VascularSystemExamination is equivalent to ClinicalAct and (hasSubprocess some.
+VascularSystemExamination is equivalent to (ExaminingProcess and (LocativeAttribute some BloodVessel))).
+VascularSystemExamination SubClassOf ClinicalAct.
+Vegetable is Class.
+VegetableOil is Class.
+Vein is Class.
+VenousExamination is Class.
+VenousExamination is equivalent to ClinicalAct and (hasSubprocess some.
+VenousExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Vein))).
+VenousExamination SubClassOf ClinicalAct.
+VentricularMyocardialConductionDelay is Class.
+VentricularMyocardialConductionDelay is equivalent to CardiacHypoconductivity and (isSpecificFunctionOf some VentricularMyocardialStructure).
+VentricularMyocardialConductionDelay SubClassOf CardiacHypoconductivity,.
+VentricularMyocardialConductionDelay SubClassOf hasSpecificImmediateConsequence some QTProlongation.
+VentricularMyocardialStructure is Class.
+VentricularTachycardia is Class.
+VerbalComprehension is Class.
+VerbalComprehensionExamination is Class.
+VerbalComprehensionExamination is equivalent to ClinicalAct and (hasSubprocess some.
+VerbalComprehensionExamination is equivalent to (ExaminingProcess and (LocativeAttribute some VerbalComprehension))).
+VerbalComprehensionExamination SubClassOf ClinicalAct.
+VerbalExpression is Class.
+VerbalExpressionExamination is Class.
+VerbalExpressionExamination is equivalent to ClinicalAct and (hasSubprocess some.
+VerbalExpressionExamination is equivalent to (ExaminingProcess and (LocativeAttribute some VerbalExpression))).
+VerbalExpressionExamination SubClassOf ClinicalAct.
+VesicouretericJunction is Class.
+VesicouretericJunction SubClassOf NAMEDJunction.
+VestibulocochlearNerveExamination is Class.
+VestibulocochlearNerveExamination is equivalent to ClinicalAct and (hasSubprocess some.
+VestibulocochlearNerveExamination is equivalent to (ExaminingProcess and (LocativeAttribute some AuditoryNerve))).
+VestibulocochlearNerveExamination SubClassOf ClinicalAct.
+Viability is Class.
+Viability SubClassOf OrganismFeature.
+Virus is Class.
+Vision is Class.
+VisionExamination is Class.
+VisionExamination is equivalent to ClinicalAct and (hasSubprocess some.
+VisionExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Vision))).
+VisionExamination SubClassOf ClinicalAct.
+VisitingAct is Class.
+VisitingAct SubClassOf CareAct.
+VisualAcuity is Class.
+VisualAcuity is equivalent to Acuity and (isAcuityOf some Vision).
+VisualAcuity SubClassOf Acuity.
+VitaminDeficientNutrition is Class.
+VitaminDeficientNutrition SubClassOf VoluntaryEating.
+Vocalisation is Class.
+Vocalisation SubClassOf NAMEDVolitionalAct.
+Volatility is Class.
+VolitionalFeature is Class.
+VolitionalFeature SubClassOf ProcessFeature.
+VolitionalState is Class.
+VolitionalState SubClassOf ProcessState.
+Volume is Class.
+VolumeUnit is Class.
+VolumeUnit SubClassOf CompositeUnit.
+VoluntaryEating is Class.
+VoluntaryEating SubClassOf DietaryAct.
+VoluntaryFasting is Class.
+VoluntaryFasting SubClassOf DietaryAct.
+VulvalExamination is Class.
+VulvalExamination is equivalent to ClinicalAct and (hasSubprocess some.
+VulvalExamination is equivalent to (ExaminingProcess and (LocativeAttribute some FemaleExternalGenitalia))).
+VulvalExamination SubClassOf ClinicalAct.
+WaitingRoom is Class.
+WaitingRoom SubClassOf Room.
+WestergrenESRProcedure is Class.
+WestergrenESRProcedure SubClassOf InvestigationAct.
+Whispering is Class.
+Whispering SubClassOf Vocalisation.
+Wrist is Class.
+WristExamination is Class.
+WristExamination is equivalent to ClinicalAct and (hasSubprocess some.
+WristExamination is equivalent to (ExaminingProcess and (LocativeAttribute some Wrist))).
+WristExamination SubClassOf ClinicalAct.
+WristJoint is Class.
+WristJointExamination is Class.
+WristJointExamination is equivalent to ClinicalAct and (hasSubprocess some.
+WristJointExamination is equivalent to (ExaminingProcess and (LocativeAttribute some WristJoint))).
+WristJointExamination SubClassOf ClinicalAct.
+ZonaGlomerulosa is Class.
+ZonaGlomerulosa SubClassOf NAMEDEndocrineSubpart.
+abnormal is Class.
+acute is Class.
+alcoholicLotionDrugForm is Class.
+alcoholicLotionDrugForm SubClassOf lotionDrugForm.
+alphabeticalShape is Class.
+balmDrugForm is Class.
+balmDrugForm SubClassOf liquidSolidDrugPresentationState.
+cementDrugForm is Class.
+cementDrugForm SubClassOf liquidSolidDrugPresentationState.
+ciliated is Class.
+ciliated SubClassOf EpithelialCiliationState.
+cultureDrugForm is Class.
+cultureDrugForm SubClassOf liquidSolidDrugPresentationState.
+cup is Class.
+cup SubClassOf VolumeUnit.
+decilitre is Class.
+decilitre SubClassOf VolumeUnit.
+developmental is Class.
+dodecagonal is Class.
+dodecagonal SubClassOf polygonal.
+firm is Class.
+fluidOunce is Class.
+fluidOunce SubClassOf VolumeUnit.
+gelDrugForm is Class.
+gelDrugForm SubClassOf liquidSolidDrugPresentationState.
+goodQuality is Class.
+hexagonal is Class.
+hexagonal SubClassOf polygonal.
+highLevel is Class.
+immobility is Class.
+immobility SubClassOf Mobility.
+imperialGallon is Class.
+imperialGallon SubClassOf VolumeUnit.
+imperialPint is Class.
+imperialPint SubClassOf VolumeUnit.
+inactive is Class.
+inappropriate is Class.
+increasedMobility is Class.
+increasedMobility SubClassOf Mobility.
+ineffective is Class.
+lateralSelection is Class.
+laterally is Class.
+laterally SubClassOf MedialLateralChangeInPositionState.
+leftRightPaired is Class.
+lesionRadical is Class.
+lesionRadical SubClassOf lesionTotal.
+lesionTotal is Class.
+lesionTotal SubClassOf LesionExtentState.
+liquidSolidDrugPresentationState is Class.
+liquidSolidDrugPresentationState SubClassOf PhysicalPresentationState.
+litre is Class.
+litre SubClassOf VolumeUnit.
+lotionDrugForm is Class.
+lowLevel is Class.
+medialSelection is Class.
+medialSelection SubClassOf MedialLateralPositionSelector.
+medially is Class.
+medially SubClassOf MedialLateralChangeInPositionState.
+microLitres is Class.
+microLitres SubClassOf VolumeUnit.
+milliLitre is Class.
+milliLitre SubClassOf VolumeUnit.
+nonAllergic is Class.
+nonAllergic SubClassOf NegativeAetiologyState.
+nonNormal is Class.
+nonVolatile is Class.
+nonVolatile is equivalent to Volatility and (hasQuantity some.
+nonVolatile is equivalent to (Level and (hasMagnitude some lowLevel))).
+nonVolatile SubClassOf Volatility.
+normalMobility is Class.
+normalMobility SubClassOf Mobility.
+octagonal is Class.
+octagonal SubClassOf polygonal.
+ointmentDrugForm is Class.
+ointmentDrugForm SubClassOf liquidSolidDrugPresentationState.
+pHAlteration is Class.
+paroxysmal is Class.
+pasteDrugForm is Class.
+pasteDrugForm SubClassOf liquidSolidDrugPresentationState.
+pathological is Class.
+physiological is Class.
+plasterDrugForm is Class.
+plasterDrugForm SubClassOf liquidSolidDrugPresentationState.
+polygonal is Class.
+poorQuality is Class.
+poorQuality SubClassOf QualityState.
+poulticeDrugForm is Class.
+poulticeDrugForm SubClassOf liquidSolidDrugPresentationState.
+presence is Class.
+reducedMobility is Class.
+reducedMobility SubClassOf Mobility.
+relativeContraindication is Class.
+repeating is Class.
+rotationally30DegreeSymmetrical is Class.
+rotationally30DegreeSymmetrical SubClassOf rotationallySymmetrical.
+rotationallySymmetrical is Class.
+semiSolidEmulsionDrugForm is Class.
+semiSolidEmulsionDrugForm SubClassOf liquidSolidDrugPresentationState.
+slushDrugForm is Class.
+slushDrugForm SubClassOf liquidSolidDrugPresentationState.
+solidGasPresentationState is Class.
+solidGasPresentationState SubClassOf PhysicalPresentationState.
+supine is Class.
+tablespoon is Class.
+tablespoon SubClassOf VolumeUnit.
+teaspoon is Class.
+teaspoon SubClassOf VolumeUnit.
+treatmentRefractory is Class.
+unciliated is Class.
+unciliated SubClassOf EpithelialCiliationState.
+uncoordinated is Class.
+unsuitabilityAdvised is Class.
+unsuitabilityAdvised SubClassOf relativeContraindication.
+unusual is Class.
+unusual SubClassOf nonNormal.
+voluntary is Class.
+www.w3.org/2002/07/# is Class.

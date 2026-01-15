@@ -1,0 +1,516 @@
+www.w3.org/2000/01/-schema# is Datatype
+integer is Datatype
+string is Datatype
+conformsToKnedgeRepresentationParadigm is ObjectProperty
+conformsToKnedgeRepresentationParadigm Domain Ontology
+conformsToKnedgeRepresentationParadigm Range KnedgeRepresentationParadigm
+contributesToOntology is ObjectProperty
+contributesToOntology Domain Party
+contributesToOntology Range Ontology
+contributesToOntology InverseOf hasContributor
+createsOntology is ObjectProperty
+createsOntology Domain Party
+createsOntology Range Ontology
+createsOntology InverseOf hasCreator
+definedBy is ObjectProperty
+definedBy Domain OntologyType
+definedBy Range Party
+definedBy InverseOf defines
+defines is ObjectProperty
+defines Domain Party
+defines Range OntologyType
+defines InverseOf definedBy
+designedForOntologyTask is ObjectProperty
+designedForOntologyTask Domain Ontology
+designedForOntologyTask Range OntologyTask
+developedBy is ObjectProperty
+developedBy Domain OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax
+developedBy Range Party
+developedBy InverseOf develops
+develops is ObjectProperty
+develops Domain Party
+develops Range OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax
+develops InverseOf developedBy
+endorsedBy is ObjectProperty
+endorsedBy Domain Ontology
+endorsedBy Range Party
+endorsedBy InverseOf endorses
+endorses is ObjectProperty
+endorses Domain Party
+endorses Range Ontology
+endorses InverseOf endorsedBy
+hasAffiliatedParty is ObjectProperty
+hasAffiliatedParty Domain Party
+hasAffiliatedParty Range Party
+hasContactPerson is ObjectProperty
+hasContactPerson Domain Organisation
+hasContactPerson Range Person
+hasContactPerson InverseOf isContactPerson
+hasContributor is ObjectProperty
+hasContributor Domain Ontology
+hasContributor Range Party
+hasContributor InverseOf contributesToOntology
+hasCreator is ObjectProperty
+hasCreator Domain Ontology
+hasCreator Range Party
+hasCreator InverseOf createsOntology
+hasDomain is ObjectProperty
+hasDomain Domain Ontology
+hasDomain Range OntologyDomain
+hasFormalityLevel is ObjectProperty
+hasFormalityLevel Domain Ontology
+hasFormalityLevel Range FormalityLevel
+hasLicense is ObjectProperty
+hasLicense Domain Ontology
+hasLicense Range LicenseModel
+hasOntologyLanguage is ObjectProperty
+hasOntologyLanguage Domain Ontology
+hasOntologyLanguage Range OntologyLanguage
+hasOntologySyntax is ObjectProperty
+hasOntologySyntax Domain Ontology
+hasOntologySyntax Range OntologySyntax
+hasPriorVersion is ObjectProperty
+hasPriorVersion Domain Ontology
+hasPriorVersion Range Ontology
+hasSyntax is ObjectProperty
+hasSyntax Domain OntologyLanguage
+hasSyntax Range OntologySyntax
+isBackwardCompatibleWith is ObjectProperty
+isBackwardCompatibleWith Domain Ontology
+isBackwardCompatibleWith Range Ontology
+isContactPerson is ObjectProperty
+isContactPerson Domain Person
+isContactPerson Range Organisation
+isContactPerson InverseOf hasContactPerson
+isIncompatibleWith is ObjectProperty
+isIncompatibleWith Domain Ontology
+isIncompatibleWith Range Ontology
+isLocatedAt is ObjectProperty
+isLocatedAt Domain Party
+isLocatedAt Range Location
+isOfType is ObjectProperty
+isOfType Domain Ontology
+isOfType Range OntologyType
+isSubDomainOf is ObjectProperty
+isSubDomainOf Domain OntologyDomain
+isSubDomainOf Range OntologyDomain
+specifiedBy is ObjectProperty
+specifiedBy Domain KnedgeRepresentationParadigm or LicenseModel
+specifiedBy Range Party
+specifiedBy InverseOf specifies
+specifies is ObjectProperty
+specifies Domain Party
+specifies Range KnedgeRepresentationParadigm or LicenseModel
+specifies InverseOf specifiedBy
+supportsRepresentationParadigm is ObjectProperty
+supportsRepresentationParadigm Domain OntologyLanguage
+supportsRepresentationParadigm Range KnedgeRepresentationParadigm
+useImports is ObjectProperty
+useImports Domain Ontology
+useImports Range Ontology
+usedOntologyEngineeringMethodology is ObjectProperty
+usedOntologyEngineeringMethodology Domain Ontology
+usedOntologyEngineeringMethodology Range OntologyEngineeringMethodology
+usedOntologyEngineeringTool is ObjectProperty
+usedOntologyEngineeringTool Domain Ontology
+usedOntologyEngineeringTool Range OntologyEngineeringTool
+URI is DataProperty
+URI Domain Ontology or OntologyDomain
+URI Range string
+acronym is DataProperty
+acronym Domain KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType or Organisation
+acronym Range string
+city is DataProperty
+city Domain Location
+city Range string
+country is DataProperty
+country Domain Location
+country Range string
+creationDate is DataProperty
+creationDate Domain Ontology
+creationDate Range string
+description is DataProperty
+description Domain FormalityLevel or KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType
+description Range string
+documentation is DataProperty
+documentation Domain KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType
+documentation Range string
+eMail is DataProperty
+eMail Domain Person
+eMail Range string
+faxNumber is DataProperty
+faxNumber Domain Person
+faxNumber Range string
+firstName is DataProperty
+firstName Domain Person
+firstName Range string
+keyClasses is DataProperty
+keyClasses Domain Ontology
+keyClasses Range string
+keywords is DataProperty
+keywords Domain Ontology
+keywords Range string
+knownUsage is DataProperty
+knownUsage Domain Ontology
+knownUsage Range string
+lastName is DataProperty
+lastName Domain Person
+lastName Range string
+modificationDate is DataProperty
+modificationDate Domain Ontology
+modificationDate Range string
+name is DataProperty
+name Domain FormalityLevel or KnedgeRepresentationParadigm or LicenseModel or Ontology or OntologyDomain or OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax or OntologyTask or OntologyType or Organisation
+name Range string
+naturalLanguage is DataProperty
+naturalLanguage Domain Ontology
+naturalLanguage Range string
+notes is DataProperty
+notes Domain Ontology
+notes Range string
+numberOfAxioms is DataProperty
+numberOfAxioms Domain Ontology
+numberOfAxioms Range integer
+numberOfClasses is DataProperty
+numberOfClasses Domain Ontology
+numberOfClasses Range integer
+numberOfIndividuals is DataProperty
+numberOfIndividuals Domain Ontology
+numberOfIndividuals Range integer
+numberOfProperties is DataProperty
+numberOfProperties Domain Ontology
+numberOfProperties Range integer
+phoneNumber is DataProperty
+phoneNumber Domain Person
+phoneNumber Range string
+reference is DataProperty
+reference Domain Ontology
+reference Range string
+resourceLocator is DataProperty
+resourceLocator Domain Ontology
+resourceLocator Range string
+state is DataProperty
+state Domain Location
+state Range string
+status is DataProperty
+status Domain Ontology
+status Range string
+street is DataProperty
+street Domain Location
+street Range string
+version is DataProperty
+version Domain Ontology
+version Range string
+FormalityLevel is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is description only string,
+Thing, is name only string,
+Literal, is name exactly 1 www.w3.org/2000/01/-schema#
+Literal is description max 1 www.w3.org/2000/01/-schema#
+KnedgeRepresentationParadigm is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is specifiedBy only Party,
+Thing, is acronym only string,
+Thing, is description only string,
+Thing, is documentation only string,
+Thing, is name only string,
+Literal, is name exactly 1 www.w3.org/2000/01/-schema#
+Literal, is acronym max 1 www.w3.org/2000/01/-schema#
+Literal, is description max 1 www.w3.org/2000/01/-schema#
+Literal is documentation max 1 www.w3.org/2000/01/-schema#
+LicenseModel is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is specifiedBy only Party,
+Thing, is acronym only string,
+Thing, is description only string,
+Thing, is documentation only string,
+Thing, is name only string,
+Literal, is name exactly 1 www.w3.org/2000/01/-schema#
+Literal, is acronym max 1 www.w3.org/2000/01/-schema#
+Literal, is description max 1 www.w3.org/2000/01/-schema#
+Literal is documentation max 1 www.w3.org/2000/01/-schema#
+Location is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is city only string,
+Thing, is country only string,
+Thing, is state only string,
+Thing, is street only string,
+Literal, is city max 1 www.w3.org/2000/01/-schema#
+Literal, is country max 1 www.w3.org/2000/01/-schema#
+Literal, is state max 1 www.w3.org/2000/01/-schema#
+Literal is street max 1 www.w3.org/2000/01/-schema#
+Ontology is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is conformsToKnedgeRepresentationParadigm only KnedgeRepresentationParadigm,
+Thing, is designedForOntologyTask only OntologyTask,
+Thing, is endorsedBy only Party,
+Thing, is hasContributor only Party,
+Thing, is hasCreator only Party,
+Thing, is hasDomain only OntologyDomain,
+Thing, is hasFormalityLevel only FormalityLevel,
+Thing, is hasLicense only LicenseModel,
+Thing, is hasOntologyLanguage only OntologyLanguage,
+Thing, is hasOntologySyntax only OntologySyntax,
+Thing, is hasPriorVersion only Ontology,
+Thing, is isBackwardCompatibleWith only Ontology,
+Thing, is isIncompatibleWith only Ontology,
+Thing, is isOfType only OntologyType,
+Thing, is useImports only Ontology,
+Thing, is usedOntologyEngineeringMethodology only OntologyEngineeringMethodology,
+Thing, is usedOntologyEngineeringTool only OntologyEngineeringTool,
+Thing, is hasCreator min 1 www.w3.org/2002/07/#
+Thing, is hasFormalityLevel max 1 www.w3.org/2002/07/#
+Thing, is hasLicense max 1 www.w3.org/2002/07/#
+Thing, is hasOntologySyntax max 1 www.w3.org/2002/07/#
+Thing, is hasPriorVersion max 1 www.w3.org/2002/07/#
+Thing, is isOfType max 1 www.w3.org/2002/07/#
+Thing, is URI only string,
+Thing, is acronym only string,
+Thing, is creationDate only string,
+Thing, is description only string,
+Thing, is documentation only string,
+Thing, is keyClasses only string,
+Thing, is keywords only string,
+Thing, is knownUsage only string,
+Thing, is modificationDate only string,
+Thing, is name only string,
+Thing, is naturalLanguage only string,
+Thing, is notes only string,
+Thing, is numberOfAxioms only integer,
+Thing, is numberOfClasses only integer,
+Thing, is numberOfIndividuals only integer,
+Thing, is numberOfProperties only integer,
+Thing, is reference only string,
+Thing, is resourceLocator only string,
+Thing, is status only string,
+Thing, is version only string,
+Literal, is name min 1 www.w3.org/2000/01/-schema#
+Literal, is URI exactly 1 www.w3.org/2000/01/-schema#
+Literal, is acronym exactly 1 www.w3.org/2000/01/-schema#
+Literal, is creationDate exactly 1 www.w3.org/2000/01/-schema#
+Literal, is description exactly 1 www.w3.org/2000/01/-schema#
+Literal, is resourceLocator exactly 1 www.w3.org/2000/01/-schema#
+Literal, is version exactly 1 www.w3.org/2000/01/-schema#
+Literal, is documentation max 1 www.w3.org/2000/01/-schema#
+Literal, is modificationDate max 1 www.w3.org/2000/01/-schema#
+Literal, is notes max 1 www.w3.org/2000/01/-schema#
+Literal, is numberOfAxioms max 1 www.w3.org/2000/01/-schema#
+Literal, is numberOfClasses max 1 www.w3.org/2000/01/-schema#
+Literal, is numberOfIndividuals max 1 www.w3.org/2000/01/-schema#
+Literal, is numberOfProperties max 1 www.w3.org/2000/01/-schema#
+Literal is status max 1 www.w3.org/2000/01/-schema#
+OntologyDomain is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is isSubDomainOf only OntologyDomain,
+Thing, is URI only string,
+Thing, is name only string,
+Literal, is URI exactly 1 www.w3.org/2000/01/-schema#
+Literal is name exactly 1 www.w3.org/2000/01/-schema#
+OntologyEngineeringMethodology is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is developedBy only Party,
+Thing, is acronym only string,
+Thing, is description only string,
+Thing, is documentation only string,
+Thing, is name only string,
+Literal, is name exactly 1 www.w3.org/2000/01/-schema#
+Literal, is acronym max 1 www.w3.org/2000/01/-schema#
+Literal, is description max 1 www.w3.org/2000/01/-schema#
+Literal is documentation max 1 www.w3.org/2000/01/-schema#
+OntologyEngineeringTool is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is developedBy only Party,
+Thing, is acronym only string,
+Thing, is description only string,
+Thing, is documentation only string,
+Thing, is name only string,
+Literal, is name exactly 1 www.w3.org/2000/01/-schema#
+Literal, is acronym max 1 www.w3.org/2000/01/-schema#
+Literal, is description max 1 www.w3.org/2000/01/-schema#
+Literal is documentation max 1 www.w3.org/2000/01/-schema#
+OntologyLanguage is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is developedBy only Party,
+Thing, is hasSyntax only OntologySyntax,
+Thing, is supportsRepresentationParadigm only KnedgeRepresentationParadigm,
+Thing, is acronym only string,
+Thing, is description only string,
+Thing, is documentation only string,
+Thing, is name only string,
+Literal, is name exactly 1 www.w3.org/2000/01/-schema#
+Literal, is acronym max 1 www.w3.org/2000/01/-schema#
+Literal, is description max 1 www.w3.org/2000/01/-schema#
+Literal is documentation max 1 www.w3.org/2000/01/-schema#
+OntologySyntax is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is developedBy only Party,
+Thing, is acronym only string,
+Thing, is description only string,
+Thing, is documentation only string,
+Thing, is name only string,
+Literal, is name exactly 1 www.w3.org/2000/01/-schema#
+Literal, is acronym max 1 www.w3.org/2000/01/-schema#
+Literal, is description max 1 www.w3.org/2000/01/-schema#
+Literal is documentation max 1 www.w3.org/2000/01/-schema#
+OntologyTask is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is acronym only string,
+Thing, is description only string,
+Thing, is documentation only string,
+Thing, is name only string,
+Literal, is name exactly 1 www.w3.org/2000/01/-schema#
+Literal, is acronym max 1 www.w3.org/2000/01/-schema#
+Literal, is description max 1 www.w3.org/2000/01/-schema#
+Literal is documentation max 1 www.w3.org/2000/01/-schema#
+OntologyType is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is definedBy only Party,
+Thing, is acronym only string,
+Thing, is description only string,
+Thing, is documentation only string,
+Thing, is name only string,
+Literal, is name exactly 1 www.w3.org/2000/01/-schema#
+Literal, is acronym max 1 www.w3.org/2000/01/-schema#
+Literal, is description max 1 www.w3.org/2000/01/-schema#
+Literal is documentation max 1 www.w3.org/2000/01/-schema#
+Organisation is Class
+Organisation SubClassOf Party,
+Organisation SubClassOf hasContactPerson only Person,
+Organisation SubClassOf acronym only string,
+Organisation SubClassOf name only string,
+Literal, is acronym exactly 1 www.w3.org/2000/01/-schema#
+Literal is name exactly 1 www.w3.org/2000/01/-schema#
+Party is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is contributesToOntology only Ontology,
+Thing, is createsOntology only Ontology,
+Thing, is defines only OntologyType,
+Thing, is develops only
+Thing, is (OntologyEngineeringMethodology or OntologyEngineeringTool or OntologyLanguage or OntologySyntax),
+Thing, is endorses only Ontology,
+Thing, is hasAffiliatedParty only Party,
+Thing, is isLocatedAt only Location,
+Thing, is specifies only
+Thing, is (KnedgeRepresentationParadigm or LicenseModel)
+Person is Class
+Person SubClassOf Party,
+Person SubClassOf isContactPerson only Organisation,
+Person SubClassOf eMail only string,
+Person SubClassOf faxNumber only string,
+Person SubClassOf firstName only string,
+Person SubClassOf lastName only string,
+Person SubClassOf phoneNumber only string,
+Literal, is eMail min 1 www.w3.org/2000/01/-schema#
+Literal, is firstName exactly 1 www.w3.org/2000/01/-schema#
+Literal is lastName exactly 1 www.w3.org/2000/01/-schema#
+www.w3.org/2002/07/# is Class
+AcademicFreeLicense_AFL is Individual
+AcademicFreeLicense_AFL Types LicenseModel
+Altova_SemanticWorks is Individual
+Altova_SemanticWorks Types OntologyEngineeringTool
+Altova_SemanticWorks name "Altova SemanticWorks"
+AnnotationTask is Individual
+AnnotationTask Types OntologyTask
+ApplePublicSourceLicense_APSL is Individual
+ApplePublicSourceLicense_APSL Types LicenseModel
+ApplicationOntology is Individual
+ApplicationOntology Types OntologyType
+CommonPublicLicense_CPL is Individual
+CommonPublicLicense_CPL Types LicenseModel
+ConfigurationTask is Individual
+ConfigurationTask Types OntologyTask
+CoreOntology is Individual
+CoreOntology Types OntologyType
+DAML-OIL is Individual
+DAML-OIL Types OntologyLanguage
+DescriptionLogics is Individual
+DescriptionLogics Types KnedgeRepresentationParadigm
+DomainOntology is Individual
+DomainOntology Types OntologyType
+FilteringTask is Individual
+FilteringTask Types OntologyTask
+Frames is Individual
+Frames Types KnedgeRepresentationParadigm
+GeneralPublicLicense_GPL is Individual
+GeneralPublicLicense_GPL Types LicenseModel
+IBMPublicLicenseIBM_PL is Individual
+IBMPublicLicenseIBM_PL Types LicenseModel
+INTELOpenSourceLicenseINTEL_OSL is Individual
+INTELOpenSourceLicenseINTEL_OSL Types LicenseModel
+IndexingTask is Individual
+IndexingTask Types OntologyTask
+IntegrationTask is Individual
+IntegrationTask Types OntologyTask
+IsaViz is Individual
+IsaViz Types OntologyEngineeringTool
+IsaViz name "IsaViz"
+LesserGeneralPublicLicense_LGPL is Individual
+LesserGeneralPublicLicense_LGPL Types LicenseModel
+MatchingTask is Individual
+MatchingTask Types OntologyTask
+MediationTask is Individual
+MediationTask Types OntologyTask
+ModifiedBSDLicense_mBSD is Individual
+ModifiedBSDLicense_mBSD Types LicenseModel
+NeOn-Toolkit is Individual
+NeOn-Toolkit Types OntologyEngineeringTool
+NeOn-Toolkit name "NeOn-Toolkit"
+OWL is Individual
+OWL Types OntologyLanguage
+OWL-DL is Individual
+OWL-DL Types OntologyLanguage
+OWL-Full is Individual
+OWL-Full Types OntologyLanguage
+OWL-Lite is Individual
+OWL-Lite Types OntologyLanguage
+OWL-XML is Individual
+OWL-XML Types OntologySyntax
+OilEd is Individual
+OilEd Types OntologyEngineeringTool
+OilEd name "OilEd"
+OntoBuilder is Individual
+OntoBuilder Types OntologyEngineeringTool
+OntoBuilder name "OntoBuilder"
+OntoStudio is Individual
+OntoStudio Types OntologyEngineeringTool
+OntoStudio name "OntoStudio"
+OpenSoftwareLicense_OSL is Individual
+OpenSoftwareLicense_OSL Types LicenseModel
+PersonalizationTask is Individual
+PersonalizationTask Types OntologyTask
+Protégé is Individual
+Protégé Types OntologyEngineeringTool
+Protégé name "Protégé"
+QueryFormulationTask is Individual
+QueryFormulationTask Types OntologyTask
+QueryRewritingTask is Individual
+QueryRewritingTask Types OntologyTask
+RDF-S is Individual
+RDF-S Types OntologyLanguage
+RDF-XML is Individual
+RDF-XML Types OntologySyntax
+SWOOP is Individual
+SWOOP Types OntologyEngineeringTool
+SWOOP name "SWOOP"
+Schema is Individual
+Schema Types FormalityLevel
+SearchTask is Individual
+SearchTask Types OntologyTask
+TaskOntology is Individual
+TaskOntology Types OntologyType
+Taxonomy is Individual
+Taxonomy Types FormalityLevel
+Terminology is Individual
+Terminology Types FormalityLevel
+Thesaurus is Individual
+Thesaurus Types FormalityLevel
+UpperLevelOntology is Individual
+UpperLevelOntology Types OntologyType
+Vocabulary is Individual
+Vocabulary Types FormalityLevel
+WSMO_Studio is Individual
+WSMO_Studio Types OntologyEngineeringTool
+WSMO_Studio name "WSMO Studio"
+WebODE is Individual
+WebODE Types OntologyEngineeringTool
+WebODE name "WebODE"

@@ -1,0 +1,691 @@
+integer is Datatype.
+string is Datatype.
+Acting In A Movie is ObjectProperty.
+Acting In A Movie Domain Actor.
+Acting In A Movie Range Movie.
+Directing A Movie is ObjectProperty.
+Directing A Movie Domain Director.
+Directing A Movie Range Movie.
+Married To is ObjectProperty.
+Married To Domain Actor.
+Married To Range Actor.
+Payment For Movie is ObjectProperty.
+Payment For Movie Domain Payment.
+Payment For Movie Range Movie.
+Payment Paid By is ObjectProperty.
+Payment Paid By Domain Payment.
+Payment Paid By Range Producer.
+Payment Paid To is ObjectProperty.
+Payment Paid To Domain Payment.
+Payment Paid To Range Actor,.
+Payment Paid To Range Director.
+Product A Movie is ObjectProperty.
+FullName is DataProperty.
+FullName Domain Person.
+FullName Range string.
+Gender is DataProperty.
+Gender Domain Actor.
+Gender Range string.
+MovieIncome is DataProperty.
+MovieIncome Domain Movie.
+MovieIncome Range integer.
+MovieName is DataProperty.
+MovieName Domain Movie.
+MovieName Range string.
+MovieProductionYear is DataProperty.
+MovieProductionYear Domain Movie.
+MovieProductionYear Range integer.
+MovieType is DataProperty.
+MovieType Domain Movie.
+MovieType Range {" Romantic" , "Action" , "Comedy" , "Drama"}.
+MovieViews is DataProperty.
+MovieViews Domain Movie.
+MovieViews Range integer.
+Nationality is DataProperty.
+Nationality Domain Actor.
+Nationality Range string.
+PaymentAmount is DataProperty.
+PaymentAmount Range string.
+sana is DataProperty.
+sana Domain Movie.
+sana Range string.
+year is DataProperty.
+year Domain Movie.
+year Range integer.
+Actor is Class.
+Actor SubClassOf Person.
+Cinema is Class.
+Cinema is equivalent to Payment.
+Thing is www.w3.org/2002/07/#.
+Director is Class.
+Director SubClassOf Person.
+Movie is Class.
+Movie SubClassOf Cinema,.
+Movie SubClassOf Payment.
+Payment is Class.
+Payment is equivalent to Cinema.
+Thing is www.w3.org/2002/07/#.
+Person is Class.
+Person SubClassOf Cinema,.
+Person SubClassOf Payment.
+Producer is Class.
+Producer SubClassOf Person.
+www.w3.org/2002/07/# is Class.
+M is Individual.
+M Types Movie.
+M MovieIncome 8000,.
+M MovieName "Bee's Way",.
+M MovieProductionYear "1970",.
+M MovieType "Drama",.
+M MovieViews 550000,.
+M sana "1990",.
+M year "1990".
+A1 is Individual.
+A1 Types Actor.
+Alo ana al-ghetta, is Acting In A Movie  M.
+Alo ana al-ghetta, is FullName  "Abdulrahman Al-Qasem",.
+Alo ana al-ghetta, is Gender  "Male",.
+Alo ana al-ghetta, is Nationality  "Egyptian".
+A10 is Individual.
+A10 Types Actor.
+A10 Acting In A Movie M5,.
+A Woman and a Man, is Acting In A Movie  M.
+Damascus Time, is Acting In A Movie  M.
+Damascus Time, is Married To  A19,.
+Damascus Time, is FullName  "Caresse Bashar",.
+Damascus Time, is Gender  "Female",.
+Damascus Time, is Nationality  "Syrian".
+A11 is Individual.
+A11 Types Actor.
+A11 Acting In A Movie M14,.
+A11 Acting In A Movie M15,.
+A Woman and a Man, is Acting In A Movie  M.
+A Woman and a Man, is Married To  A27,.
+A Woman and a Man, is FullName  "Duraid Lahham",.
+A Woman and a Man, is Gender  "Male",.
+A Woman and a Man, is Nationality  "Syrian".
+A12 is Individual.
+A12 Types Actor.
+A12 FullName "Faten Hamama",.
+A12 Gender "Female",.
+A12 Nationality "Egyptian".
+A13 is Individual.
+A13 Types Actor.
+A13 FullName "Ghassan Massoud",.
+A13 Gender "Male",.
+A13 Nationality "Syrian".
+A14 is Individual.
+A14 Types Actor.
+A14 FullName "Hadi Hejazifar",.
+A14 Gender "Male",.
+A14 Nationality "Lebanese".
+A15 is Individual.
+A15 Types Actor.
+A15 FullName "Hassan Doba",.
+A15 Gender "Male",.
+A15 Nationality "Lebanese".
+A16 is Individual.
+A16 Types Actor.
+A Woman and a Man, is Acting In A Movie  M.
+Alo ana al-ghetta, is Acting In A Movie  M.
+Damascus Time, is Acting In A Movie  M.
+Damascus Time, is FullName  "Husain Abbas",.
+Damascus Time, is Gender  "Male",.
+Damascus Time, is Nationality  "Egyptian".
+A17 is Individual.
+A17 Types Actor.
+Bee's Way, is Acting In A Movie  M.
+Bee's Way, is FullName  "Juliette Awwad",.
+Bee's Way, is Gender  "Female",.
+Bee's Way, is Nationality  "Lebanese".
+A18 is Individual.
+A18 Types Actor.
+A18 Acting In A Movie M14,.
+A18 Acting In A Movie M21,.
+A18 FullName "Lujain Ismael",.
+A18 Gender "Male",.
+A18 Nationality "Syrian".
+A19 is Individual.
+A19 Types Actor.
+A19 Acting In A Movie M20,.
+A Woman and a Man, is Acting In A Movie  M.
+Damascus Time, is Acting In A Movie  M.
+Damascus Time, is Married To  A10,.
+Damascus Time, is FullName  "Mahmoud Nasr",.
+Damascus Time, is Gender  "Male",.
+Damascus Time, is Nationality  "Syrian".
+A2 is Individual.
+A2 Types Actor.
+A2 FullName "Adel Emam",.
+A2 Gender "Male",.
+A2 Nationality "Egyptian".
+A20 is Individual.
+A20 Types Actor.
+A20 FullName "Mahmoud Reda",.
+A20 Gender "Male",.
+A20 Nationality "Egyptian".
+A21 is Individual.
+A21 Types Actor.
+A21 FullName "Mahmoud Yassin",.
+A21 Gender "Male",.
+A21 Nationality "Egyptian".
+A22 is Individual.
+A22 Types Actor.
+A22 FullName "Maisoun Abu Asaad",.
+A22 Gender "Male",.
+A22 Nationality "Syrian".
+A23 is Individual.
+A23 Types Actor.
+A23 FullName "Majd Fidha",.
+A23 Gender "Male",.
+A23 Nationality "Egyptian".
+A24 is Individual.
+A24 Types Actor.
+A24 FullName "Majdi Al-Maqbal",.
+A24 Gender "Male",.
+A24 Nationality "Egyptian".
+A25 is Individual.
+A25 Types Actor.
+A25 FullName "Mervat Amin",.
+A25 Gender "Female",.
+A25 Nationality "Egyptian".
+A26 is Individual.
+A26 Types Actor.
+A26 FullName "Mohammed Al-Ahmad",.
+A26 Gender "Male",.
+A26 Nationality "Syrian".
+A27 is Individual.
+A27 Types Actor.
+A Woman and a Man, is Acting In A Movie  M.
+Damascus Time, is Acting In A Movie  M.
+Damascus Time, is Married To  A11,.
+Damascus Time, is FullName  "Nadin Khoury",.
+Damascus Time, is Gender  "Female",.
+Damascus Time, is Nationality  "Syrian".
+A28 is Individual.
+A28 Types Actor.
+A28 FullName "Naglaa Fathi",.
+A28 Gender "Female",.
+A28 Nationality "Egyptian".
+A29 is Individual.
+A29 Types Actor.
+A29 FullName "Nelly",.
+A29 Gender "Femela",.
+A29 Nationality "Egyptian".
+A3 is Individual.
+A3 Types Actor.
+A3 FullName "Adnan Abdol-Jaleel",.
+A3 FullName "Male",.
+A3 Nationality "Syrian".
+A30 is Individual.
+A30 Types Actor.
+A Woman and a Man, is Acting In A Movie  M.
+A Woman and a Man, is Gender  "Female",.
+A Woman and a Man, is Gender  "Nahed Sherif",.
+A Woman and a Man, is Nationality  "Egyptian".
+A31 is Individual.
+A31 Types Actor.
+A31 FullName "Female",.
+A31 FullName "Nisreen Tafesh".
+A32 is Individual.
+A32 Types Actor.
+A32 FullName "Noor Ali",.
+A32 Gender "Male",.
+A32 Nationality "Egyptian".
+A33 is Individual.
+A33 Types Actor.
+A33 FullName "Suzan Najm Aldeen",.
+A33 Gender "Female",.
+A33 Nationality "Syrian".
+A34 is Individual.
+A34 Types Actor.
+A34 FullName "Nour El-Sherif",.
+A34 Gender "Male",.
+A34 Nationality "Egyptian".
+A35 is Individual.
+A35 Types Actor.
+A35 FullName "Omaia Malas",.
+A35 Gender "Female",.
+A35 Nationality "Syrian".
+A36 is Individual.
+A36 Types Actor.
+A36 FullName "Male",.
+A36 FullName "Pierre Dagher",.
+A36 Nationality "Lebanese".
+A37 is Individual.
+A37 Types Actor.
+A37 FullName "Female",.
+A37 FullName "Poussi",.
+A37 Nationality "Egyptian".
+A38 is Individual.
+A38 Types Actor.
+A38 FullName "Ramez Atallah",.
+A38 Gender "Male",.
+A38 Nationality "Egyptian".
+A39 is Individual.
+A39 Types Actor.
+A39 FullName "Rushdy Abaza",.
+A39 Gender "Male",.
+A39 Nationality "Egyptian".
+A4 is Individual.
+A4 Types Actor.
+A4 FullName "Ahmad Kavari",.
+A4 Gender "Male",.
+A4 Nationality "Egyptian".
+A40 is Individual.
+A40 Types Actor.
+A40 FullName "Sabah",.
+A40 Gender "Female",.
+A40 Nationality "Lebanese".
+A41 is Individual.
+A41 Types Actor.
+A41 FullName "Sabah Al Jazaery",.
+A41 Gender "Female",.
+A41 Nationality "Syrian".
+A42 is Individual.
+A42 Types Actor.
+A42 FullName "Salah Zulfikar",.
+A42 Gender "Male",.
+A42 Nationality "Egyptian".
+A43 is Individual.
+A43 Types Actor.
+A43 FullName "Salma Al-Masri",.
+A43 Gender "Female",.
+A43 Nationality "Syrian".
+A44 is Individual.
+A44 Types Actor.
+A44 FullName "Soad Hosny",.
+A44 Gender "Female",.
+A44 Nationality "Egyptian".
+A45 is Individual.
+A45 Types Actor.
+A45 FullName "Shadia",.
+A45 Gender "Female",.
+A45 Nationality "Egyptian".
+A5 is Individual.
+A5 Types Actor.
+A5 FullName "Ahmad Zaki",.
+A5 Gender "Male",.
+A5 Nationality "Egyptian".
+A6 is Individual.
+A6 Types Actor.
+A6 FullName "Ali Al-Ibrahim",.
+A6 Gender "Male",.
+A6 Nationality "Syrian".
+A7 is Individual.
+A7 Types Actor.
+A7 FullName "Amer Al-Ali",.
+A7 Gender "Male",.
+A7 Nationality "Syrian".
+A8 is Individual.
+A8 Types Actor.
+A8 FullName "Ayman Zeidan",.
+A8 Gender "Male",.
+A8 Nationality "Syrian".
+A9 is Individual.
+A9 Types Actor.
+Alo ana al-ghetta, is Acting In A Movie  M.
+Alo ana al-ghetta, is FullName  "Babak Hamidian",.
+Alo ana al-ghetta, is Gender  "Male",.
+Alo ana al-ghetta, is Nationality  "Lebanese".
+D1 is Individual.
+D1 Types Director.
+A Woman and a Man, is Directing A Movie  M.
+A Woman and a Man, is FullName  "Basil Al Khatib",.
+A Woman and a Man, is Gender  "Male".
+D10 is Individual.
+D10 Types Director.
+Bee's Way, is Directing A Movie  M.
+Bee's Way, is FullName  "Mahmoud Zulfikar ",.
+Bee's Way, is Gender  "Male".
+D11 is Individual.
+D11 Types Director.
+D11 FullName "Ali Reda",.
+D11 Gender "Male".
+D12 is Individual.
+D12 Types Director.
+D12 FullName "Kamal El Sheikh",.
+D12 Gender "Male".
+D13 is Individual.
+D13 Types Director.
+D13 FullName "Ibrahim El Shaqanqeery",.
+D13 Gender "Male".
+D14 is Individual.
+D14 Types Director.
+D14 FullName "Ashraf Fahmy",.
+D14 Gender "Male".
+D15 is Individual.
+D15 Types Director.
+D15 FullName "Hussein Kamal",.
+D15 Gender "Male".
+D16 is Individual.
+D16 Types Director.
+D16 FullName "Houssam Eddine Mostafa",.
+D16 Gender "Male".
+D17 is Individual.
+D17 Types Director.
+D17 FullName "Kamal El Sheikh",.
+D17 Gender "Male".
+D18 is Individual.
+D18 Types Director.
+Alo ana al-ghetta, is Directing A Movie  M.
+Alo ana al-ghetta, is FullName  "Ahmad Fouad ",.
+Alo ana al-ghetta, is Gender  "Male".
+D2 is Individual.
+D2 Types Director.
+D2 FullName "Najdat Esmail Anzur",.
+D2 Gender "Male".
+D3 is Individual.
+D3 Types Director.
+D3 FullName "Joud Saeed",.
+D3 Gender "Male".
+D4 is Individual.
+D4 Types Director.
+D4 FullName "Ebrahim Hatamikia",.
+D4 Gender "Male".
+D5 is Individual.
+D5 Types Director.
+D5 FullName "Joud Saeed",.
+D5 Gender "Male".
+D6 is Individual.
+D6 Types Director.
+D6 FullName "Abbas Lajevardi",.
+D6 Gender "Male".
+D7 is Individual.
+D7 Types Director.
+D7 FullName "Ahmad Ibrahim Ahmad",.
+D7 Gender "Male".
+D8 is Individual.
+D8 Types Director.
+D8 FullName "Ghassan Shamit",.
+D8 Gender "Male".
+D9 is Individual.
+D9 Types Director.
+D9 FullName "Abdellatif Abdelhamid",.
+D9 Gender "Male".
+M12 is Individual.
+M12 Types Movie.
+M12 MovieIncome 15000,.
+M12 MovieName "Borj El-Athraa",.
+M12 MovieProductionYear "1970",.
+M12 MovieType "Drama",.
+M12 MovieViews 1500000,.
+M12 sana "1970".
+M13 is Individual.
+M13 Types Movie.
+M13 MovieIncome "12000E",.
+M13 MovieName "Dam al-Nakhl",.
+M13 MovieProductionYear "2019",.
+M13 MovieType "Drama",.
+M13 MovieViews 2300000.
+M14 is Individual.
+M14 Types Movie.
+M14 MovieIncome 6000000,.
+M14 MovieName "Darb el-Sama",.
+M14 MovieProductionYear "2019",.
+M14 MovieType "Drama",.
+M14 MovieViews "400K",.
+M14 sana "2019".
+M15 is Individual.
+M15 Types Movie.
+M15 MovieIncome "14000E",.
+M15 MovieName "Demashq Halab",.
+M15 MovieProductionYear "2018",.
+M15 MovieType "Drama",.
+M15 MovieViews 3300000,.
+M15 sana "2018".
+M16 is Individual.
+M16 Types Movie.
+M16 MovieIncome "12000E",.
+M16 MovieName "Ein Al Hayah",.
+M16 MovieProductionYear "1970",.
+M16 MovieType "Action",.
+M16 MovieViews 2500000.
+M17 is Individual.
+M17 Types Movie.
+M17 MovieIncome "7500E",.
+M17 MovieName "El-Kol Awez Yeheb",.
+M17 MovieProductionYear "1975",.
+M17 MovieType "Comedy",.
+M17 MovieViews 670000.
+M18 is Individual.
+M18 Types Movie.
+M18 MovieIncome "9000E",.
+M18 MovieName "El Khait El Rafeeh",.
+M18 MovieProductionYear "1971",.
+M18 MovieType "Drama",.
+M18 MovieViews 900000.
+M19 is Individual.
+M19 Types Movie.
+M19 MovieIncome "15000E",.
+M19 MovieName "El Qatala",.
+M19 MovieProductionYear "1971",.
+M19 MovieType "Action",.
+M19 MovieViews "4000000".
+M2 is Individual.
+M2 Types Movie.
+M2 MovieIncome "8000E",.
+M2 MovieName "Al-Bahth An Al-Mataeb",.
+M2 MovieProductionYear "1975",.
+M2 MovieType "Comedy",.
+M2 MovieViews "700000".
+M20 is Individual.
+M20 Types Movie.
+M20 MovieIncome "9500E",.
+M20 MovieName "Ghoroub We Shorouq",.
+M20 MovieProductionYear "1970",.
+M20 MovieType "Action",.
+M20 MovieViews "800000",.
+M20 sana "1970".
+M21 is Individual.
+M21 Types Movie.
+M21 MovieIncome "12000E",.
+M21 MovieName "Harami El Waraka",.
+M21 MovieProductionYear "1970",.
+M21 MovieType "Drama",.
+M21 MovieViews "1800000",.
+M21 sana "1970".
+M22 is Individual.
+M22 Types Movie.
+M22 MovieIncome "8500E",.
+M22 MovieName "Imra’at Zawgy",.
+M22 MovieProductionYear "1970",.
+M22 MovieType "Romantic",.
+M22 MovieViews "950000".
+M23 is Individual.
+M23 Types Movie.
+M23 MovieIncome "10000E",.
+M23 MovieName "The Birthday Party",.
+M23 MovieProductionYear "2016",.
+M23 MovieType "Drama",.
+M23 MovieViews "1100000".
+M24 is Individual.
+M24 Types Movie.
+M24 MovieIncome "12000E",.
+M24 MovieName "King of the Sands",.
+M24 MovieProductionYear "2013",.
+M24 MovieType "Drama",.
+M24 MovieViews "3000000".
+M25 is Individual.
+M25 Types Movie.
+M25 MovieIncome "15000E",.
+M25 MovieName "Lamset Hanan",.
+M25 MovieProductionYear "1971",.
+M25 MovieType "Romantic",.
+M25 MovieViews "3700000".
+M26 is Individual.
+M26 Types Movie.
+M26 MovieIncome "14500E",.
+M26 MovieName "Lilit al-Souriya",.
+M26 MovieProductionYear "2018",.
+M26 MovieType "Drama",.
+M26 MovieViews "2800000".
+M27 is Individual.
+M27 Types Movie.
+M27 MovieIncome "10000E",.
+M27 MovieName "Maward",.
+M27 MovieProductionYear "2017",.
+M27 MovieType "Drama",.
+M27 MovieViews "1100000".
+M28 is Individual.
+M28 Types Movie.
+M28 MovieIncome "10000E",.
+M28 MovieName "Me You Mother and Father",.
+M28 MovieProductionYear "2016",.
+M28 MovieType "Drama",.
+M28 MovieViews "980000".
+M29 is Individual.
+M29 Types Movie.
+M29 MovieIncome "5000E",.
+M29 MovieName "My Wife and the Dog",.
+M29 MovieProductionYear "1971",.
+M29 MovieType "Drama",.
+M29 MovieViews "350000".
+M3 is Individual.
+M3 Types Movie.
+M3 MovieIncome "8500E",.
+M3 MovieName "Al-Eteraf",.
+M3 MovieProductionYear "2019",.
+M3 MovieType "Drama",.
+M3 MovieViews "400000".
+M31 is Individual.
+M31 Types Movie.
+M31 MovieIncome "7000E",.
+M31 MovieName "Nar el Shouq",.
+M31 MovieProductionYear "1970",.
+M31 MovieType "Drama",.
+M31 MovieViews "800000".
+M32 is Individual.
+M32 Types Movie.
+M32 MovieIncome "6500E",.
+M32 MovieName "Ragab Fawq",.
+M32 MovieProductionYear "1979",.
+M32 MovieType "Comedy",.
+M32 MovieViews "530000".
+M33 is Individual.
+M33 Types Movie.
+M33 MovieIncome "8000E",.
+M33 MovieName "Shafika we Metwally",.
+M33 MovieProductionYear "1979",.
+M33 MovieType "Comedy",.
+M33 MovieViews "900000".
+M34 is Individual.
+M34 Types Movie.
+M34 MovieIncome "12000E",.
+M34 MovieName "Thartharah Fawqa al-Nīl",.
+M34 MovieProductionYear "1971",.
+M34 MovieType "Drama",.
+M34 MovieViews "3100000".
+M35 is Individual.
+M35 Types Movie.
+M35 MovieIncome "7000E",.
+M35 MovieName "Zindan Halab",.
+M35 MovieProductionYear "2018",.
+M35 MovieType "Drama",.
+M35 MovieViews "630000".
+M4 is Individual.
+M4 Types Movie.
+M4 MovieIncome "10000E",.
+M4 MovieName "Al-Khedaa Al-Khafiya",.
+M4 MovieProductionYear "1975",.
+M4 MovieType "Comedy",.
+M4 MovieViews "1200000".
+M5 is Individual.
+M5 Types Movie.
+M5 MovieIncome "12000E",.
+M5 MovieName "Al-Souriyoun",.
+M5 MovieProductionYear "2016",.
+M5 MovieType "Drama",.
+M5 MovieViews "2200000",.
+M5 sana "2016".
+M6 is Individual.
+M6 Types Movie.
+M6 MovieIncome "8000E",.
+M6 MovieName "Al Omm",.
+M6 MovieProductionYear "2015",.
+M6 MovieType "Drama",.
+M6 MovieViews "890000".
+M8 is Individual.
+M8 Types Movie.
+M8 MovieIncome "10000E",.
+M8 MovieName "Ala Mn Notlik Al-Rosas",.
+M8 MovieProductionYear "1975",.
+M8 MovieType "Comedy",.
+M8 MovieViews "1400000".
+M is Individual.
+M Types Movie.
+M MovieIncome 23000,.
+M MovieName "A Woman and a Man",.
+M MovieProductionYear "1971",.
+M MovieType "Drama",.
+M MovieViews 800000,.
+M sana "1971",.
+M year "2000".
+M is Individual.
+M Types Movie.
+M MovieIncome "9500E",.
+M MovieName "Alo ana al-ghetta",.
+M MovieProductionYear "1975",.
+M MovieType "Comedy",.
+M MovieViews "870000".
+M is Individual.
+M Types Movie.
+M MovieIncome 2000,.
+M MovieIncome 20000,.
+M MovieName "Damascus Time",.
+M MovieProductionYear "2018",.
+M MovieType "Drama",.
+M MovieViews 950000,.
+M sana "1970",.
+M year "1970".
+P1 is Individual.
+P1 Types Payment.
+Damascus Time, is Payment For Movie  M.
+SL Production, is Payment Paid By  P.
+SL Production, is Payment Paid To  A10,.
+SL Production, is PaymentAmount  5000.
+P2 is Individual.
+Damascus Time, is Payment For Movie  M.
+SL Production, is Payment Paid By  P.
+SL Production, is Payment Paid To  A19,.
+SL Production, is PaymentAmount  3500.
+P3 is Individual.
+Damascus Time, is Payment For Movie  M.
+SL Production, is Payment Paid By  P.
+SL Production, is Payment Paid To  D17,.
+SL Production, is PaymentAmount  6000.
+P4 is Individual.
+A Woman and a Man, is Payment For Movie  M.
+Egyptian Film Production, is Payment Paid By  P.
+Egyptian Film Production, is Payment Paid To  D16,.
+Egyptian Film Production, is PaymentAmount  7000.
+P5 is Individual.
+A Woman and a Man, is Payment For Movie  M.
+Egyptian Film Production, is Payment Paid By  P.
+Egyptian Film Production, is Payment Paid To  A30,.
+Egyptian Film Production, is PaymentAmount  4000.
+P6 is Individual.
+A Woman and a Man, is Payment For Movie  M.
+Egyptian Film Production, is Payment Paid By  P.
+Egyptian Film Production, is Payment Paid To  A39,.
+Egyptian Film Production, is PaymentAmount  5500.
+P is Individual.
+P Types Producer.
+P FullName "Egyptian Film Production".
+P is Individual.
+P Types Producer.
+P FullName "Egyptian Film Production plus".
+P is Individual.
+P Types Producer.
+P FullName "Egyptian Golden Film".
+P is Individual.
+P Types Producer.
+P FullName "SL Production".
+P is Individual.
+P Types Producer.
+P FullName "Sham Production".
+P is Individual.
+P FullName "Syrian Production".
+P is Individual.
+P Types Producer.
+P FullName "Top One Production".

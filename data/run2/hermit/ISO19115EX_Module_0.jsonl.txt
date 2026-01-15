@@ -1,0 +1,119 @@
+www.w3.org/2000/01/-schema# is Datatype
+boolean is Datatype
+decimal is Datatype
+double is Datatype
+string is Datatype
+EX_BoundingPolygon.polygon is ObjectProperty
+EX_BoundingPolygon.polygon Domain EX_BoundingPolygon
+EX_BoundingPolygon.polygon Range GM_Object
+EX_Extent.geographicElement is ObjectProperty
+EX_Extent.geographicElement Domain EX_Extent
+EX_Extent.geographicElement Range EX_GeographicExtent
+EX_Extent.temporalElement is ObjectProperty
+EX_Extent.temporalElement Domain EX_Extent
+EX_Extent.temporalElement Range EX_TemporalExtent
+EX_Extent.verticalElement is ObjectProperty
+EX_Extent.verticalElement Domain EX_Extent
+EX_Extent.verticalElement Range EX_VerticalExtent
+EX_GeographicDescription.geographicIdentifier is ObjectProperty
+EX_GeographicDescription.geographicIdentifier Domain EX_GeographicDescription
+EX_GeographicDescription.geographicIdentifier Range MD_Identifier
+EX_SpatialTemporalExtent.spatialExtent is ObjectProperty
+EX_SpatialTemporalExtent.spatialExtent Domain EX_SpatialTemporalExtent
+EX_SpatialTemporalExtent.spatialExtent Range EX_GeographicExtent
+EX_SpatialTemporalExtent.verticalExtent is ObjectProperty
+EX_SpatialTemporalExtent.verticalExtent Domain EX_SpatialTemporalExtent
+EX_SpatialTemporalExtent.verticalExtent Range EX_VerticalExtent
+EX_TemporalExtent.extent is ObjectProperty
+EX_TemporalExtent.extent Domain EX_TemporalExtent
+EX_TemporalExtent.extent Range TM_Primitive
+EX_VerticalExtent.verticalCRS is ObjectProperty
+EX_VerticalExtent.verticalCRS Domain EX_VerticalExtent
+EX_VerticalExtent.verticalCRS Range SC_VerticalCRS
+EX_VerticalExtent.verticalCRSId is ObjectProperty
+EX_VerticalExtent.verticalCRSId Domain EX_VerticalExtent
+EX_VerticalExtent.verticalCRSId Range MD_ReferenceSystem
+EX_Extent.description is DataProperty
+EX_Extent.description Domain EX_Extent
+EX_Extent.description Range string
+EX_GeographicBoundingBox.eastBoundLongitude is DataProperty
+EX_GeographicBoundingBox.eastBoundLongitude Domain EX_GeographicBoundingBox
+EX_GeographicBoundingBox.eastBoundLongitude Range decimal
+EX_GeographicBoundingBox.northBoundLatitude is DataProperty
+EX_GeographicBoundingBox.northBoundLatitude Domain EX_GeographicBoundingBox
+EX_GeographicBoundingBox.northBoundLatitude Range decimal
+EX_GeographicBoundingBox.southBoundLatitude is DataProperty
+EX_GeographicBoundingBox.southBoundLatitude Domain EX_GeographicBoundingBox
+EX_GeographicBoundingBox.southBoundLatitude Range decimal
+EX_GeographicBoundingBox.westBoundLongitude is DataProperty
+EX_GeographicBoundingBox.westBoundLongitude Domain EX_GeographicBoundingBox
+EX_GeographicBoundingBox.westBoundLongitude Range decimal
+EX_GeographicExtent.extentTypeCode is DataProperty
+EX_GeographicExtent.extentTypeCode Domain EX_GeographicExtent
+EX_GeographicExtent.extentTypeCode Range boolean
+EX_VerticalExtent.maximumValue is DataProperty
+EX_VerticalExtent.maximumValue Domain EX_VerticalExtent
+EX_VerticalExtent.maximumValue Range double
+EX_VerticalExtent.minimumValue is DataProperty
+EX_VerticalExtent.minimumValue Domain EX_VerticalExtent
+EX_VerticalExtent.minimumValue Range double
+GM_Object is Class
+Thing is www.w3.org/2002/07/#
+TM_Primitive is Class
+Thing is www.w3.org/2002/07/#
+SC_VerticalCRS is Class
+Thing is www.w3.org/2002/07/#
+MD_Identifier is Class
+Thing is www.w3.org/2002/07/#
+EX_BoundingPolygon is Class
+EX_BoundingPolygon SubClassOf EX_GeographicExtent,
+EX_BoundingPolygon SubClassOf EX_BoundingPolygon.polygon only GM_Object,
+Thing is EX_BoundingPolygon.polygon min 1 www.w3.org/2002/07/#
+EX_Extent is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is EX_Extent.geographicElement only EX_GeographicExtent,
+Thing, is EX_Extent.temporalElement only EX_TemporalExtent,
+Thing, is EX_Extent.verticalElement only EX_VerticalExtent,
+Thing, is EX_Extent.description only string,
+Literal is EX_Extent.description max 1 www.w3.org/2000/01/-schema#
+EX_GeographicBoundingBox is Class
+EX_GeographicBoundingBox SubClassOf EX_GeographicExtent,
+EX_GeographicBoundingBox SubClassOf EX_GeographicBoundingBox.eastBoundLongitude only decimal,
+EX_GeographicBoundingBox SubClassOf EX_GeographicBoundingBox.northBoundLatitude only decimal,
+EX_GeographicBoundingBox SubClassOf EX_GeographicBoundingBox.southBoundLatitude only decimal,
+EX_GeographicBoundingBox SubClassOf EX_GeographicBoundingBox.westBoundLongitude only decimal,
+Literal, is EX_GeographicBoundingBox.eastBoundLongitude exactly 1 www.w3.org/2000/01/-schema#
+Literal, is EX_GeographicBoundingBox.northBoundLatitude exactly 1 www.w3.org/2000/01/-schema#
+Literal, is EX_GeographicBoundingBox.southBoundLatitude exactly 1 www.w3.org/2000/01/-schema#
+Literal is EX_GeographicBoundingBox.westBoundLongitude exactly 1 www.w3.org/2000/01/-schema#
+EX_GeographicDescription is Class
+EX_GeographicDescription SubClassOf EX_GeographicExtent,
+EX_GeographicDescription SubClassOf EX_GeographicDescription.geographicIdentifier only MD_Identifier,
+Thing is EX_GeographicDescription.geographicIdentifier exactly 1 www.w3.org/2002/07/#
+EX_GeographicExtent is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is EX_GeographicExtent.extentTypeCode only boolean,
+Literal is EX_GeographicExtent.extentTypeCode max 1 www.w3.org/2000/01/-schema#
+EX_SpatialTemporalExtent is Class
+EX_SpatialTemporalExtent SubClassOf EX_TemporalExtent,
+EX_SpatialTemporalExtent SubClassOf EX_SpatialTemporalExtent.spatialExtent only EX_GeographicExtent,
+EX_SpatialTemporalExtent SubClassOf EX_SpatialTemporalExtent.verticalExtent only EX_VerticalExtent,
+Thing, is EX_SpatialTemporalExtent.spatialExtent min 1 www.w3.org/2002/07/#
+Thing is EX_SpatialTemporalExtent.verticalExtent max 1 www.w3.org/2002/07/#
+EX_TemporalExtent is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is EX_TemporalExtent.extent only TM_Primitive,
+Thing is EX_TemporalExtent.extent exactly 1 www.w3.org/2002/07/#
+EX_VerticalExtent is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is EX_VerticalExtent.verticalCRS only SC_VerticalCRS,
+Thing, is EX_VerticalExtent.verticalCRSId only MD_ReferenceSystem,
+Thing, is EX_VerticalExtent.verticalCRS max 1 www.w3.org/2002/07/#
+Thing, is EX_VerticalExtent.verticalCRSId max 1 www.w3.org/2002/07/#
+Thing, is EX_VerticalExtent.maximumValue only double,
+Thing, is EX_VerticalExtent.minimumValue only double,
+Literal, is EX_VerticalExtent.maximumValue exactly 1 www.w3.org/2000/01/-schema#
+Literal is EX_VerticalExtent.minimumValue exactly 1 www.w3.org/2000/01/-schema#
+MD_ReferenceSystem is Class
+Thing is www.w3.org/2002/07/#
+www.w3.org/2002/07/# is Class

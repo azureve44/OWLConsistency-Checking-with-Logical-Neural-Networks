@@ -1,0 +1,660 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+aPourThematique is ObjectProperty.
+estRealisePar is ObjectProperty.
+porteSur is ObjectProperty.
+Etablissement Sante is Class.
+Attribut is Class.
+Axiologie is Class.
+Desirer is Class.
+Desirer SubClassOf ModaliteDeVolonte.
+Devoir is Class.
+Devoir SubClassOf ModaliteDeontique.
+Eviter is Class.
+Eviter SubClassOf ModaliteDeVolonte.
+Insatisfaction is Class.
+Insatisfaction SubClassOf ModaliteDeSatisfaction.
+ModaliteDeDependance is Class.
+ModaliteDeGravite is Class.
+ModaliteDeSatisfaction is Class.
+ModaliteDeSatisfaction SubClassOf ModaliteThetique.
+ModaliteDeVolonte is Class.
+ModaliteDeVolonte SubClassOf ModaliteThetique.
+ModaliteDeontique is Class.
+ModaliteEpistemique is Class.
+ModaliteThetique is Class.
+Negligeance is Class.
+Negligeance SubClassOf Negliger.
+ObjetIdeal is Class.
+Ordonner is Class.
+Ordonner SubClassOf ModaliteDeVolonte.
+PointDeVue is Class.
+PointDeVue SubClassOf ObjetIdeal.
+Prévoir is Class.
+Prévoir SubClassOf ModaliteEpistemique.
+Satisfaction is Class.
+Satisfaction SubClassOf ModaliteDeSatisfaction.
+Vouloir is Class.
+Vouloir SubClassOf ModaliteDeVolonte.
+Examen is Class.
+Examen SubClassOf ActionD Evaluer.
+ExamenBiologique is Class.
+ExamenBiologique SubClassOf ExamenParaclinique,.
+ExamenBiologique SubClassOf aPourThematique some ThematiqueMedicale.
+ExamenClinique is Class.
+ExamenDImagerie is Class.
+ExamenDImagerie SubClassOf ExamenParaclinique,.
+ExamenDImagerie SubClassOf aPourThematique some ThematiqueMedicale.
+ExamenElectrophysiologique is Class.
+ExamenElectrophysiologique SubClassOf ExamenParaclinique,.
+ExamenElectrophysiologique SubClassOf aPourThematique some ThematiqueMedicale.
+ExamenParaclinique is Class.
+ExamenParaclinique DisjointWith .
+ExamenParaclinique DisjointWith ThematiqueSociale.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing is www.w3.org/2002/07/#.
+ExplorationFonctionnelle is Class.
+ExplorationFonctionnelle SubClassOf ExamenParaclinique,.
+ExplorationFonctionnelle SubClassOf aPourThematique some ThematiqueRespiratoire.
+AppelAAssociation is Class.
+AppelAAssociation SubClassOf AppelAStrutureSociale.
+AppelAStrutureSociale is Class.
+AppelDeLaSoeur is Class.
+AppelDeLaSoeur SubClassOf AppelRecuDeEntourageEtPatient.
+AppelDuSSIAD is Class.
+AppelDuSSIAD SubClassOf AppelRecuStructureMedical.
+AppelRecuAgentMedical is Class.
+AppelRecuAssociation is Class.
+AppelRecuAssociation SubClassOf AppelRecuStructureSociale.
+AppelRecuDeEntourageEtPatient is Class.
+AppelRecuErgo is Class.
+AppelRecuErgo SubClassOf AppelRecuAgentMedical.
+AppelRecuStructureMedical is Class.
+AppelRecuStructureSociale is Class.
+AvoirExplique is Class.
+AvoirExplique SubClassOf DonnerInformation.
+ConseilCoordination is Class.
+ConseilHydratation is Class.
+ConseilHydratation SubClassOf ConseilNutritionnel.
+ConseilNutritionnel is Class.
+DicussionAideTechniqueMarche is Class.
+DicussionAideTechniqueMarche SubClassOf DiscussionAideTechnique.
+DiscussionAccesOrdinateur is Class.
+DiscussionAccesOrdinateur SubClassOf DiscussionAideTechnique.
+DiscussionAideTechnique is Class.
+DiscussionAideTechnique SubClassOf EchangerSurPEC,.
+DiscussionAideTechnique SubClassOf aPourThematique some ThematiqueAideTechnique.
+DiscussionAmenagement is Class.
+DiscussionAmenagement SubClassOf EchangerSurPEC,.
+DiscussionAmenagement SubClassOf aPourThematique some ThematiqueProblemeAccessibilite.
+DiscussionControleEnvironnement is Class.
+DiscussionControleEnvironnement SubClassOf DiscussionAideTechnique.
+DiscussionDeambulateur is Class.
+DiscussionDeambulateur SubClassOf DicussionAideTechniqueMarche.
+DiscussionDifficile is Class.
+DiscussionDifficile SubClassOf EchangerSurPEC.
+DiscussionEssaiTherapeutique is Class.
+DiscussionEssaiTherapeutique SubClassOf EchangerSurPEC,.
+DiscussionEssaiTherapeutique SubClassOf aPourThematique some ThematiqueBesoinEtDemandeMedicale.
+DiscussionFauteuilRoulant is Class.
+DiscussionFauteuilRoulant SubClassOf DiscussionAideTechnique.
+DiscussionFinDeVie is Class.
+DiscussionFinDeVie SubClassOf EchangerSurPEC,.
+DiscussionFinDeVie SubClassOf aPourThematique some ThematiqueBesoinEtDemandeMedicale.
+DiscussionGastrostomie is Class.
+DiscussionGastrostomie SubClassOf DiscussionSuppleance.
+DiscussionIntubation is Class.
+DiscussionIntubation SubClassOf DiscussionSuppleanceRespiratoire.
+DiscussionLit is Class.
+DiscussionLit SubClassOf DiscussionAideTechnique.
+DiscussionMaisonRetraite is Class.
+DiscussionMaisonRetraite SubClassOf EchangerSurPEC,.
+DiscussionMaisonRetraite SubClassOf aPourThematique some ThematiqueBesoinEtDemandePecSociale.
+DiscussionOrientation is Class.
+DiscussionOrientation SubClassOf EchangerSurPEC,.
+DiscussionOrientation SubClassOf aPourThematique some ThematiqueBesoinEtDemandePecSociale.
+DiscussionOutilDeCommunication is Class.
+DiscussionOutilDeCommunication SubClassOf DiscussionAideTechnique.
+DiscussionPECKine is Class.
+DiscussionPECKine SubClassOf EchangerSurPEC,.
+DiscussionPECKine SubClassOf aPourThematique some ThematiqueBesoinEtDemandeMedicale.
+DiscussionSejour is Class.
+DiscussionSejour SubClassOf EchangerSurPEC,.
+DiscussionSejour SubClassOf aPourThematique some ThematiqueEpuisement.
+DiscussionSuppleance is Class.
+DiscussionSuppleance SubClassOf EchangerSurPEC,.
+DiscussionSuppleance SubClassOf aPourThematique some ThematiqueBesoinEtDemandeMedicale.
+DiscussionSuppleanceRespiratoire is Class.
+DiscussionSuppleanceRespiratoire SubClassOf DiscussionSuppleance.
+DiscussionSurAideHumaine is Class.
+DiscussionSurAideHumaine SubClassOf EchangerSurPEC,.
+DiscussionSurAideHumaine SubClassOf aPourThematique some ThematiqueAideHumaine.
+DiscussionSurBesoin is Class.
+DiscussionSurBesoin SubClassOf FairePoint.
+DiscussionTracheotomie is Class.
+DiscussionTracheotomie SubClassOf DiscussionSuppleanceRespiratoire.
+DiscussionVentilation is Class.
+DiscussionVentilation SubClassOf DiscussionSuppleanceRespiratoire.
+Discussion VNI is Class.
+Discussion VNI SubClassOf DiscussionVentilation.
+DonnerCoordonnee is Class.
+DonnerCoordonnee SubClassOf DonnerInformation.
+DonnerInformation is Class.
+DonnerInformation SubClassOf Expliquer,.
+DonnerInformation SubClassOf aPourThematique some ThematiqueDeCoordination.
+EchangeInformationSurSituation is Class.
+EchangeInformationSurSituation SubClassOf FairePoint.
+EchangeSurDifficulte is Class.
+EchangeSurDifficulte SubClassOf FairePoint.
+EchangeSurEpuisement is Class.
+EchangeSurEpuisement SubClassOf EchangerSurPEC,.
+EchangeSurEpuisement SubClassOf aPourThematique some ThematiqueEpuisement.
+EchangeSurPathologie is Class.
+EchangeSurPathologie SubClassOf EchangerSurPEC,.
+EchangeSurPathologie SubClassOf aPourThematique some ThematiqueBesoinEtDemandeMedicale.
+EchangerAvecAgent is Class.
+EchangerAvecAgent SubClassOf FairePoint,.
+EchangerAvecAgent SubClassOf aPourThematique some ThematiqueDeCoordination.
+EchangerSurPEC is Class.
+EvaluationCoordination is Class.
+EvaluationCoordination SubClassOf ActionD Evaluer.
+FairePoint is Class.
+FicheDeCoordination is Class.
+FicheRoute is Class.
+FicheRoute SubClassOf FicheDeCoordination.
+InformationDeErgo is Class.
+InformationDeErgo SubClassOf TransmissionRecue.
+InformationStaff is Class.
+InformationStaff SubClassOf TransmissionRecueCentreExpert.
+MailDeErgo is Class.
+MailDeErgo SubClassOf MailProfessionnel.
+MailProfessionnel is Class.
+MiseEnPlacePrestationSociale is Class.
+MiseEnPlacePrestationSociale SubClassOf MiseEnPlaceRessourceCoordination,.
+MiseEnPlacePrestationSociale SubClassOf aPourThematique some ThematiqueBesoinEtDemandePecSociale.
+MiseEnPlaceRessourceCoordination is Class.
+MiseEnPlace APA is Class.
+MiseEnPlace APA SubClassOf MiseEnPlacePrestationSociale.
+MiseEnPlace PCH is Class.
+MiseEnPlace PCH SubClassOf MiseEnPlacePrestationSociale.
+PropositionEvaluation is Class.
+PropositionEvaluation SubClassOf ConseilCoordination.
+PropositionHospitalisation is Class.
+PropositionPatient is Class.
+PropositionPatient SubClassOf PropositionVersAgent.
+PropositionSejourRepit is Class.
+PropositionSejourRepit SubClassOf PropositionHospitalisation,.
+PropositionSejourRepit SubClassOf aPourThematique some ThematiqueEpuisement.
+PropositionVersAgent is Class.
+ReunionDeSynthese is Class.
+ReunionDeSynthese SubClassOf ActionD Evaluer.
+SuiviDeCoordination is Class.
+SuiviDeCoordination SubClassOf ActionD Evaluer.
+TransmissionAssociationDePatient is Class.
+TransmissionAssociationDePatient SubClassOf TransmissionRecue.
+TransmissionDeCoordinateurSLA is Class.
+TransmissionDeCoordinateurSLA SubClassOf TransmissionRecue.
+TransmissionRecue is Class.
+TransmissionRecueCentreExpert is Class.
+AccordSuppleanceSpecifiee is Class.
+Accord VNI is Class.
+Accord VNI SubClassOf AccordSuppleanceSpecifiee.
+AggravationMarche is Class.
+AggravationMarche SubClassOf TroubleMarche.
+AggravationNiveauMembreInferieur is Class.
+AggravationNiveauMembreInferieur SubClassOf DeficitMoteurMembreInferieur.
+AggravationNiveauMembreSuperieur is Class.
+AggravationNiveauMembreSuperieur SubClassOf DeficitMoteurMembreSuperieur.
+Angioscanner is Class.
+Angioscanner SubClassOf ExamenRadiologique.
+AnnonceDiagnostique is Class.
+AnnonceDiagnostique SubClassOf ConsultationDeRetourDAnnonce.
+AspirationAppareilRespiratoire is Class.
+AspirationTracheale is Class.
+AspirationTracheale SubClassOf AspirationAppareilRespiratoire.
+AuscultationPulmonaire is Class.
+AuscultationPulmonaire SubClassOf EvaluationPneumologique.
+BilanDouleur is Class.
+BilanDouleur SubClassOf ExamenClinique,.
+BilanDouleur SubClassOf aPourThematique some ThematiqueDouleur,.
+BilanDouleur SubClassOf porteSur some Douleur.
+BilanErgotherapique is Class.
+BilanErgotherapique SubClassOf ExamenParaclinique,.
+BilanErgotherapique SubClassOf aPourThematique some ThematiqueEvaluationParamedicale,.
+BilanErgotherapique SubClassOf estRealisePar some Ergotherapeute.
+BilanInfectieux is Class.
+BilanInfectieux SubClassOf ExamenClinique.
+BilanKinesitherapique is Class.
+BilanKinesitherapique SubClassOf ExamenParaclinique,.
+BilanKinesitherapique SubClassOf aPourThematique some ThematiqueEvaluationParamedicale,.
+BilanKinesitherapique SubClassOf estRealisePar some Kinesitherapeute.
+BilanMoteur is Class.
+BilanMoteur SubClassOf ExamenClinique,.
+BilanMoteur SubClassOf aPourThematique some ThematiqueMoteurEtFonctionnelle,.
+BilanMoteur SubClassOf porteSur some SigneAppareilLocoMoteur.
+BilanNeurologique is Class.
+BilanNeurologique SubClassOf ExamenClinique,.
+BilanNeurologique SubClassOf aPourThematique some ThematiqueNeurologique,.
+BilanNeurologique SubClassOf porteSur some SigneCliniqueNeurologique.
+BilanOphtalmique is Class.
+BilanOphtalmique SubClassOf ExamenClinique,.
+BilanOphtalmique SubClassOf porteSur some SigneOphtalmique.
+BilanOrthophonique is Class.
+BilanOrthophonique SubClassOf ExamenParaclinique,.
+BilanOrthophonique SubClassOf aPourThematique some ThematiqueEvaluationParamedicale,.
+BilanOrthophonique SubClassOf estRealisePar some Orthophoniste.
+BilanSanguin is Class.
+BilanSanguin SubClassOf ExamenBiologique.
+BilanUrodynamique is Class.
+BilanUrodynamique SubClassOf ExamenClinique,.
+BilanUrodynamique SubClassOf estRealisePar some Medecin.
+Bilan IDE is Class.
+Bilan IDE SubClassOf ExamenParaclinique,.
+Bilan IDE SubClassOf aPourThematique some ThematiqueEvaluationParamedicale,.
+Bilan IDE SubClassOf estRealisePar some Infirmier.
+Coeur is Class.
+Coeur SubClassOf OrganeAvecPartiesDOrganeCreuses.
+ColFemur is Class.
+ColFemur SubClassOf PartieFemur.
+CompteRenduConsultation is Class.
+CompteRenduConsultation SubClassOf CompteRenduMedicaux.
+CompteRenduDeConsultationMultidisciplinaire is Class.
+CompteRenduDeConsultationMultidisciplinaire SubClassOf CompteRenduConsultation.
+CompteRenduHospitalisation is Class.
+CompteRenduHospitalisation SubClassOf CompteRenduMedicaux.
+CompteRenduMedicaux is Class.
+CompteRenduPneumologie is Class.
+CompteRenduPneumologie SubClassOf CompteRenduHospitalisation.
+CompteRendu HDJ is Class.
+CompteRendu HDJ SubClassOf CompteRenduHospitalisation.
+CompteRendu UARD is Class.
+CompteRendu UARD SubClassOf CompteRenduHospitalisation.
+CompteRendu USP is Class.
+CompteRendu USP SubClassOf CompteRenduHospitalisation.
+Constipation is Class.
+Constipation SubClassOf TroubleTransit.
+ConsultationDeRetourDAnnonce is Class.
+ConsultationHopitalDeJourPneumologie is Class.
+ConsultationHopitalDeJourPneumologie SubClassOf ConsultationHôpitalDeJour.
+ConsultationHôpitalDeJour is Class.
+ConsultationMedicale is Class.
+ConsultationMedicale SubClassOf ActionD Evaluer.
+ConsultationPlateformeNouvelleTechnologie is Class.
+ConsultationPlateformeNouvelleTechnologie SubClassOf BilanErgotherapique.
+ConsultationPneumologie is Class.
+DeficitMoteurMembreInferieur is Class.
+DeficitMoteurMembreSuperieur is Class.
+Diagnostiquer is Class.
+Diagnostiquer SubClassOf ActionD Evaluer.
+Dieteticien is Class.
+DiscuterDirectiveAnticipee is Class.
+DiscuterDirectiveAnticipee SubClassOf ActionD Evaluer.
+Douleur is Class.
+ECBU is Class.
+ECBU SubClassOf ExamenBiologique.
+EMG is Class.
+EMG SubClassOf ExamenElectrophysiologique.
+EchangeGazeux is Class.
+EchangeGazeux SubClassOf ExplorationFonctionnelle.
+Echographie is Class.
+Echographie SubClassOf ExamenDImagerie.
+EducationDeLaFamille is Class.
+EducationDeLaFamille SubClassOf EducationTherapeutique.
+EducationDuPatient is Class.
+EducationDuPatient SubClassOf EducationTherapeutique.
+Electrocardiogramme is Class.
+Electrocardiogramme SubClassOf ExamenElectrophysiologique.
+EndoscopieDigestive is Class.
+EndoscopieDigestive SubClassOf ExamenDImagerie.
+EpreuvesFonctionnellesDeLAppareilRespiratoire is Class.
+EpreuvesFonctionnellesDeLAppareilRespiratoire SubClassOf ExplorationFonctionnelle.
+Ergotherapeute is Class.
+Ergotherapie is Class.
+Ergotherapie SubClassOf PriseEnChargeErgotherapique.
+EvaluationDesConstantesBiologiques is Class.
+EvaluationDesConstantesBiologiques SubClassOf ExamenClinique.
+EvaluationMedicale is Class.
+EvaluationMedicale SubClassOf ActionD Evaluer.
+EvaluationNutritionnelle is Class.
+EvaluationNutritionnelle SubClassOf ExamenParaclinique,.
+EvaluationNutritionnelle SubClassOf aPourThematique some ThematiqueEvaluationParamedicale,.
+EvaluationNutritionnelle SubClassOf estRealisePar some Dieteticien.
+EvaluationParamedicale is Class.
+EvaluationParamedicale SubClassOf ActionD Evaluer.
+EvaluationPneumologique is Class.
+EvaluationPneumologique SubClassOf ExamenClinique,.
+EvaluationPneumologique SubClassOf aPourThematique some ThematiqueRespiratoire,.
+EvaluationPneumologique SubClassOf porteSur some SigneCliniqueRespiratoire.
+EvaluationPsychologique is Class.
+EvaluationPsychologique SubClassOf ExamenParaclinique,.
+EvaluationPsychologique SubClassOf aPourThematique some ThematiqueEvaluationParamedicale,.
+EvaluationPsychologique SubClassOf estRealisePar some Psychologue.
+ExamenCardiologique is Class.
+ExamenCardiologique SubClassOf ExamenClinique.
+ExamenRadiologique is Class.
+ExamenRadiologique SubClassOf ExamenDImagerie.
+Fecalome is Class.
+Fecalome SubClassOf Constipation.
+FibroscopieBronchique is Class.
+FibroscopieBronchique SubClassOf ExplorationFonctionnelle.
+Fracture is Class.
+FractureFemur is Class.
+FractureFemur SubClassOf Fracture.
+GazDuSang is Class.
+GazDuSang SubClassOf ExamenBiologique.
+GlandeSurrenale is Class.
+GlandeSurrenale SubClassOf OrganeCorticomedullaire.
+HospitalisationADomicileReadaptation is Class.
+HospitalisationADomicileReadaptation SubClassOf ServiceExterneDUnHopital.
+HospitalisationDeJour is Class.
+HospitalisationDeJourPneumologie is Class.
+HospitalisationDeJourPneumologie SubClassOf HospitalisationDeJour.
+Hypersalivation is Class.
+InfectionBronchique is Class.
+InfectionBronchique SubClassOf Pneumopathie.
+Infirmier is Class.
+Injection is Class.
+InjectionDeToxineBotulique is Class.
+InjectionDeToxineBotulique SubClassOf Injection.
+Kinesitherapeute is Class.
+KinesitherapieMotrice is Class.
+MaisonDeRepos is Class.
+MaisonDeRepos SubClassOf Etablissement Sante.
+Medecin is Class.
+MiseEnPlacePerfusion is Class.
+MiseEnPlacePerfusion SubClassOf Perfuser.
+MobilisationPassive is Class.
+MobilisationPassive SubClassOf KinesitherapieMotrice.
+ModificationDuTraitementMedicamenteux is Class.
+ModificationDuTraitementMedicamenteux SubClassOf ActionD Evaluer.
+Occlusion is Class.
+Occlusion SubClassOf TroubleTransit.
+OrganeAvecPartiesDOrganeCreuses is Class.
+OrganeCorticomedullaire is Class.
+Orthophoniste is Class.
+Oxymetrie is Class.
+Oxymetrie SubClassOf ExplorationFonctionnelle.
+PartieFemur is Class.
+Perfuser is Class.
+PerfusionSousCutanee is Class.
+PerfusionSousCutanee SubClassOf MiseEnPlacePerfusion.
+Pneumopathie is Class.
+Polysomnographie is Class.
+Polysomnographie SubClassOf ExamenElectrophysiologique.
+PonctionLombaire is Class.
+PonctionLombaire SubClassOf ExamenClinique.
+PotentielsEvoquesAuditifsEtVestibulaires is Class.
+PotentielsEvoquesAuditifsEtVestibulaires SubClassOf ExamenElectrophysiologique.
+Prescription is Class.
+PrescriptionDePriseEnCharge is Class.
+PrescriptionDePriseEnCharge SubClassOf Prescription.
+PrestataireADomicile is Class.
+PrestataireNutrition is Class.
+PrestataireNutrition SubClassOf PrestataireADomicile.
+PriseEnChargeErgotherapique is Class.
+ProblemeLieeASuplleance is Class.
+ProblemeSonde is Class.
+ProblemeSonde SubClassOf ProblemeLieeASuplleance.
+Psychologue is Class.
+RadiologieVasculaire is Class.
+RadiologieVasculaire SubClassOf ServiceDeRadiologie.
+Reeducation is Class.
+ReeducationRespiratoire is Class.
+ReeducationRespiratoire SubClassOf Reeducation,.
+ReeducationRespiratoire SubClassOf aPourThematique some ThematiqueRespiratoire.
+RefusDeTraitement is Class.
+RefusDeVNI is Class.
+RefusDeVNI SubClassOf RefusVentilation.
+RefusTracheotomie is Class.
+RefusTracheotomie SubClassOf RefusVentilation.
+RefusVentilation is Class.
+RefusVentilation SubClassOf RefusDeTraitement.
+RendezVous UARD is Class.
+RendezVous UARD SubClassOf ConsultationPneumologie.
+ServiceDeRadiologie is Class.
+ServiceExterneDUnHopital is Class.
+SigneAppareilLocoMoteur is Class.
+SigneCliniqueNeurologique is Class.
+SigneCliniqueRespiratoire is Class.
+SigneOphtalmique is Class.
+Sonde is Class.
+SondeRectale is Class.
+SondeRectale SubClassOf Sonde.
+SondeVesicale is Class.
+SondeVesicale SubClassOf Sonde.
+TestNeuropsychologique is Class.
+TestNeuropsychologique SubClassOf EvaluationPsychologique.
+TroubleMarche is Class.
+TroubleTransit is Class.
+AccordOral is Class.
+AccordOral SubClassOf ChoixSpecifie.
+AccordParMail is Class.
+AccordParMail SubClassOf ChoixSpecifie.
+AccordPrincipe is Class.
+AccordPrincipe SubClassOf ChoixSpecifie.
+Accorder is Class.
+Action is Class.
+ActionD Evaluer is Class.
+ActionD Evaluer SubClassOf Action.
+Ancien is Class.
+Ancien SubClassOf ValeurInstanciation.
+Augmentation is Class.
+Augmentation SubClassOf ModaliteDeVariation.
+Baisse is Class.
+Baisse SubClassOf ModaliteDeVariation.
+ChoixSpecifie is Class.
+Different is Class.
+Different SubClassOf ValeurInstanciation.
+Droite is Class.
+Droitier is Class.
+Droitier SubClassOf Droite.
+EducationTherapeutique is Class.
+Expliquer is Class.
+Fluctuant is Class.
+Fluctuant SubClassOf ModaliteDeVariation.
+Frequent is Class.
+Frequent SubClassOf ModaliteDeVariation.
+Gauche is Class.
+Gaucher is Class.
+Gaucher SubClassOf Gauche.
+Independance is Class.
+Independance SubClassOf ModaliteDeDependance.
+Inferieur is Class.
+Inferieur SubClassOf ModaliteDeVariation.
+Insatisfaisant is Class.
+Insatisfaisant SubClassOf Axiologie.
+Instable is Class.
+Instable SubClassOf ValeurDEtatDEvolution.
+Leger is Class.
+Leger SubClassOf ModaliteDeGravite.
+MetaObjetAbstrait is Class.
+MetaObjetAbstrait SubClassOf PointDeVue.
+ModaliteDeVariation is Class.
+ModaliteDeVariation SubClassOf Qualitatifs.
+Negatif is Class.
+Negatif SubClassOf Resultat.
+Negliger is Class.
+Negliger SubClassOf ModaliteEpistemique.
+Nouveau is Class.
+Nouveau SubClassOf ValeurInstanciation.
+Ordinateur is Class.
+Ordinateur SubClassOf OutilInformatique.
+OutilInformatique is Class.
+QualitatifObjetMetaFonctionnel is Class.
+QualitatifObjetMetaFonctionnel SubClassOf PointDeVue.
+Qualitatifs is Class.
+Questionner is Class.
+Questionner SubClassOf ActionD Evaluer.
+Recidive is Class.
+Recidive SubClassOf ValeurInstanciation.
+Resultat is Class.
+RoleAcquis is Class.
+Stable is Class.
+Stable SubClassOf ValeurDEtatDEvolution.
+Superieur is Class.
+Superieur SubClassOf ModaliteDeVariation.
+ThematiqueAideHumaine is Class.
+ThematiqueAideTechnique is Class.
+ThematiqueBesoinEtDemandeMedicale is Class.
+ThematiqueBesoinEtDemandePecSociale is Class.
+ThematiqueDeCoordination is Class.
+ThematiqueDouleur is Class.
+ThematiqueEpuisement is Class.
+ThematiqueEvaluationMedicale is Class.
+ThematiqueEvaluationMedicale SubClassOf ThematiqueMedicale.
+ThematiqueEvaluationParamedicale is Class.
+ThematiqueEvaluationParamedicale SubClassOf ThematiqueMedicale.
+ThematiqueMedicale is Class.
+ThematiqueMoteurEtFonctionnelle is Class.
+ThematiqueNeurologique is Class.
+ThematiqueProblemeAccessibilite is Class.
+ThematiqueRespiratoire is Class.
+ThematiqueSociale is Class.
+ThematiqueSociale DisjointWith ExamenParaclinique.
+Valeur is Class.
+Valeur SubClassOf Attribut.
+ValeurDEtatDEvolution is Class.
+ValeurDEtatDEvolution SubClassOf RoleAcquis.
+ValeurInstanciation is Class.
+ValeurInstanciation SubClassOf ValeurQualitative.
+ValeurIntentionnelle is Class.
+ValeurIntentionnelle SubClassOf ValeurQualitative.
+ValeurQualitative is Class.
+ValeurQualitative SubClassOf Valeur.
+Variable is Class.
+Variable SubClassOf ModaliteDeVariation.
+AccordPatient is Class.
+AccordPatient SubClassOf Accorder,.
+AccordPatient SubClassOf aPourThematique some ThematiqueSociale,.
+AccordPatient SubClassOf aPourThematique only ExamenParaclinique.
+ActionDEffectuerSaToilette is Class.
+ActionDEffectuerSaToilette SubClassOf SeLaver.
+ActionDEmployerSonTemps is Class.
+ActionDeSeDeplacerEnUtilisantDesEquipementsSpeciaux is Class.
+ActionDeSeDeplacerEnUtilisantDesEquipementsSpeciaux SubClassOf MarcherEtSeDeplacer.
+AggravationDifficultes is Class.
+AggravationDifficultes SubClassOf AggravationSociale.
+AggravationDomicile is Class.
+AggravationDomicile SubClassOf AggravationSociale.
+AggravationDysfonctionDiaphragmatique is Class.
+AggravationDysfonctionDiaphragmatique SubClassOf AggravationFonctionRespiratoire.
+AggravationFonctionRespiratoire is Class.
+AggravationHypersalivation is Class.
+AggravationHypersalivation SubClassOf Hypersalivation.
+AggravationSituation is Class.
+AggravationSituation SubClassOf AggravationSociale.
+AggravationSociale is Class.
+Allocation is Class.
+Ambulancier is Class.
+Ambulancier SubClassOf PrestataireDeService.
+Application is Class.
+Application SubClassOf Logiciel.
+Ascenceur is Class.
+Ascenceur SubClassOf ElementDeBatiment.
+Association is Class.
+AssociationAideADomicile is Class.
+AssociationAuxiliaireDeVie is Class.
+AssociationAuxiliaireDeVie SubClassOf AssociationAideADomicile.
+AssociationPatient is Class.
+AssociationPatient SubClassOf Association.
+AuxiliaireDeVie is Class.
+AuxiliaireDeVie SubClassOf PrestataireDeService.
+BesoinAideHumaine is Class.
+BesoinAideTechnique is Class.
+BesoinAuxiliaireDeVie is Class.
+BesoinAuxiliaireDeVie SubClassOf BesoinAideHumaine.
+BesoinDeambulateur is Class.
+BesoinDeambulateur SubClassOf BesoinAideTechnique.
+CarteInvalidite is Class.
+CarteInvalidite SubClassOf CarteSocialeMdph.
+CarteSocialeMdph is Class.
+ChangerEtMaintenirLaPositionDuCorps is Class.
+Clavier is Class.
+Clavier SubClassOf PeripheriqueOrdinateur.
+ClavierVirtuel is Class.
+ClavierVirtuel SubClassOf Clavier.
+ClavierVisuel is Class.
+ClavierVisuel SubClassOf Clavier.
+CollierCervicalDeSerie is Class.
+CommunicationEcrite is Class.
+CommunicationEcrite SubClassOf Communiquer RecevoirDesMessages.
+Communiquer RecevoirDesMessages is Class.
+ConduiteFauteuil is Class.
+ConduiteFauteuil SubClassOf ActionDeSeDeplacerEnUtilisantDesEquipementsSpeciaux.
+Contacteur is Class.
+ContacteurMusculaire is Class.
+ContacteurMusculaire SubClassOf Contacteur.
+Conversation is Class.
+Conversation SubClassOf ConversationEtUtilisationAppareilsDeCommunication.
+ConversationEtUtilisationAppareilsDeCommunication is Class.
+CoussinAAir is Class.
+CoussinAAir SubClassOf CoussinPreventionEscarre.
+CoussinDossier is Class.
+CoussinDossier SubClassOf CoussinPreventionEscarre.
+CoussinPreventionEscarre is Class.
+Deambulateur is Class.
+Dejeuner is Class.
+Dejeuner SubClassOf Repas.
+DemandeReevaluationPCH is Class.
+DemandeReevaluationPCH SubClassOf Demande PCH.
+DemandeReevaluation APA is Class.
+DemandeReevaluation APA SubClassOf Demande APA.
+Demande APA is Class.
+Demande PCH is Class.
+DifficulteAvecPatient is Class.
+DifficulteAvecPatient SubClassOf DifficulteAvecProfessionnel.
+DifficulteAvecProfessionnel is Class.
+Diner is Class.
+Diner SubClassOf Repas.
+Discussion is Class.
+Discussion SubClassOf ConversationEtUtilisationAppareilsDeCommunication.
+DossierAdmission EHPAD is Class.
+DossierAdmission EHPAD SubClassOf DossierDemandeAdmission.
+DossierDemandeAdmission is Class.
+ElementDeBatiment is Class.
+EtablissementDHebergementPourPersonneAgeesDependantes is Class.
+EtablissementEtServiceHebergementAdulte is Class.
+EtablissementFinanceur is Class.
+EvaluateurSocial is Class.
+EvaluateurSocial SubClassOf ProfessionnelSocial.
+EvaluationSociale is Class.
+EvaluationSociale SubClassOf ActionD Evaluer.
+GardeMalade is Class.
+GardeMalade SubClassOf AuxiliaireDeVie.
+HeadMaster is Class.
+HeadMaster SubClassOf CollierCervicalDeSerie.
+Logiciel is Class.
+MaisonDAccueilSpecialisee is Class.
+MaisonDAccueilSpecialisee SubClassOf EtablissementEtServiceHebergementAdulte.
+MaisonDeRetraite is Class.
+MaisonDeRetraite SubClassOf EtablissementDHebergementPourPersonneAgeesDependantes.
+MarcherEtSeDeplacer is Class.
+PensionDInvalidite is Class.
+PensionDInvalidite SubClassOf Allocation.
+PeripheriqueOrdinateur is Class.
+PositionAllongee is Class.
+PositionAllongee SubClassOf ChangerEtMaintenirLaPositionDuCorps.
+PositionAssise is Class.
+PositionAssise SubClassOf ChangerEtMaintenirLaPositionDuCorps.
+PrestataireDeService is Class.
+ProfessionnelSocial is Class.
+RegimeSocialIndependant is Class.
+RegimeSocialIndependant SubClassOf EtablissementFinanceur.
+Repas is Class.
+Rollator is Class.
+Rollator SubClassOf Deambulateur.
+RollatorADeuxRoues is Class.
+RollatorADeuxRoues SubClassOf Rollator.
+RollatorAQuatreRoues is Class.
+RollatorAQuatreRoues SubClassOf Rollator.
+RollatorATroisRoues is Class.
+RollatorATroisRoues SubClassOf Rollator.
+SeCoucher is Class.
+SeCoucher SubClassOf ChangerEtMaintenirLaPositionDuCorps.
+SeLaver is Class.
+SeLever is Class.
+SeLever SubClassOf ChangerEtMaintenirLaPositionDuCorps.
+Voyager is Class.
+Voyager SubClassOf ActionDEmployerSonTemps.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.

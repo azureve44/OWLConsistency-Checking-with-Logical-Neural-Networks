@@ -1,0 +1,116 @@
+IAO_0000136 is ObjectProperty
+OBI_0000293 is ObjectProperty
+OBI_0000299 is ObjectProperty
+OBI_0000308 is ObjectProperty
+OBI_0000308 Domain ProcessualEntity
+OBI_0000308 Range RealizableEntity
+realized_by is purl.org/obo//OBO_REL#
+purl.org/obo//OBO_REL# is ObjectProperty
+purl.org/obo//OBO_REL# InverseOf OBI_0000308
+FLU_0000753 is Class
+FLU_0000755 is Class
+FLU_0000755 SubClassOf ProcessualEntity
+FLU_0000757 is Class
+FLU_0000757 SubClassOf OBI_0200000
+FLU_0000770 is Class
+FLU_0000770 SubClassOf OBI_0200000
+FLU_0000779 is Class
+FLU_0000779 EquivalentTo OBI_0000070 and (OBI_0000299 some
+FLU_0000779 EquivalentTo (IAO_0000109 and (IAO_0000136 some FLU_0000753)))
+FLU_0000779 SubClassOf OBI_0000070
+FLU_0000779 DisjointWith OBI_0000070 and (OBI_0000299 some
+FLU_0000779 DisjointWith (IAO_0000109 and (IAO_0000136 some FLU_0000753)))
+FLU_0000812 is Class
+FLU_0000812 SubClassOf OBI_0000094,
+NCBITaxon_10239, is OBI_0000293 some purl.org/obo//NCBITaxon#
+NCBITaxon_10239, is OBI_0000299 some
+NCBITaxon_10239, is (IAO_0000109 and (IAO_0000136 some IDO_0000450)),
+NCBITaxon_10239, is OBI_0000299 only
+NCBITaxon_10239, is (IAO_0000109 and (IAO_0000136 some FLU_0001028))
+FLU_0000895 is Class
+FLU_0000895 SubClassOf FLU_0000757
+FLU_0000939 is Class
+FLU_0000939 EquivalentTo OBI_0000070 and (OBI_0000299 some
+FLU_0000939 EquivalentTo (IAO_0000109 and (IAO_0000136 some FLU_0001028)))
+FLU_0000939 SubClassOf OBI_0000070
+FLU_0000967 is Class
+FLU_0000967 SubClassOf OBI_0000652
+FLU_0000996 is Class
+FLU_0000996 SubClassOf OBI_0600047
+FLU_0001028 is Class
+FLU_0001030 is Class
+FLU_0001030 SubClassOf ProcessualEntity
+FLU_0001032 is Class
+FLU_0001032 SubClassOf OBI_0000094,
+FLU_0001032 SubClassOf OBI_0000293 some OBI_0100051,
+NCBITaxon_10239 is OBI_0000293 some purl.org/obo//NCBITaxon#
+FLU_0001036 is Class
+FLU_0001036 SubClassOf ProcessualEntity
+IAO_0000109 is Class
+IDO_0000450 is Class
+OBI_0000011 is Class
+OBI_0000011 SubClassOf ProcessualEntity
+OBI_0000070 is Class
+OBI_0000094 is Class
+OBI_0000626 is Class
+OBI_0000626 SubClassOf OBI_0600047
+OBI_0000652 is Class
+OBI_0000652 SubClassOf OBI_0000094
+OBI_0000875 is Class
+OBI_0000875 SubClassOf OBI_0000070,
+OBI_0000875 SubClassOf OBI_0000299 some
+OBI_0000875 SubClassOf (IAO_0000109 and (IAO_0000136 some FLU_0000753)),
+OBI_0000875 SubClassOf OBI_0000299 some
+OBI_0000875 SubClassOf (IAO_0000109 and (IAO_0000136 some FLU_0001028))
+OBI_0000906 is Class
+OBI_0000906 SubClassOf ProcessualEntity
+OBI_0100051 is Class
+OBI_0200000 is Class
+OBI_0302884 is Class
+OBI_0302884 SubClassOf OBI_0600014
+OBI_0600005 is Class
+OBI_0600005 SubClassOf ProcessualEntity
+OBI_0600006 is Class
+OBI_0600006 SubClassOf OBI_0000094
+OBI_0600007 is Class
+OBI_0600007 SubClassOf OBI_0000652
+OBI_0600012 is Class
+OBI_0600012 SubClassOf ProcessualEntity
+OBI_0600014 is Class
+OBI_0600014 SubClassOf OBI_0000094
+OBI_0600018 is Class
+OBI_0600018 SubClassOf OBI_0000094
+OBI_0600036 is Class
+OBI_0600036 SubClassOf OBI_0000094
+OBI_0600047 is Class
+OBI_0600047 SubClassOf OBI_0000070
+OGMS_0000090 is Class
+OGMS_0000090 SubClassOf ProcessualEntity
+OGMS_0000096 is Class
+OGMS_0000096 SubClassOf ProcessualEntity
+OGMS_0000097 is Class
+OGMS_0000098 is Class
+OGMS_0000098 SubClassOf OGMS_0000097
+purl.org/obo//NCBITaxon# is Class
+RealizableEntity is Class
+FiatProcessPart is Class
+FiatProcessPart SubClassOf ProcessualEntity
+Occurrent is Class
+Process is Class
+Process SubClassOf ProcessualEntity
+ProcessAggregate is Class
+ProcessAggregate SubClassOf ProcessualEntity
+ProcessBoundary is Class
+ProcessBoundary SubClassOf ProcessualEntity
+ProcessualContext is Class
+ProcessualContext SubClassOf ProcessualEntity
+ProcessualEntity is Class
+ProcessualEntity EquivalentTo FiatProcessPart or Process or ProcessAggregate or ProcessBoundary or ProcessualContext
+ProcessualEntity SubClassOf Occurrent
+ProcessualEntity DisjointWith TemporalRegion
+ProcessualEntity DisjointWith SpatiotemporalRegion
+SpatiotemporalRegion is Class
+SpatiotemporalRegion DisjointWith ProcessualEntity
+TemporalRegion is Class
+TemporalRegion DisjointWith ProcessualEntity
+www.w3.org/2002/07/# is Class

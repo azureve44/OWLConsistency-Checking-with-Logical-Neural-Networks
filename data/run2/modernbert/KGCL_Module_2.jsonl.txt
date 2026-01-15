@@ -1,0 +1,68 @@
+lang is Datatype.
+about is ObjectProperty.
+has undo is ObjectProperty.
+in subset is ObjectProperty.
+new value is DataProperty.
+old value is DataProperty.
+AddNodeToSubset is Class.
+AddNodeToSubset SubClassOf AddToSubset.
+AddToSubset is Class.
+AddToSubset SubClassOf SubsetMembershipChange,.
+Thing is in subset only www.w3.org/2002/07/#.
+AllowsAutomaticReplacementOfEdges is Class.
+AllowsAutomaticReplacementOfEdges SubClassOf Obsoletion.
+ChangeMixin is Class.
+Thing is www.w3.org/2002/07/#.
+Creation is Class.
+Creation SubClassOf ChangeMixin,.
+Creation SubClassOf has undo only Deletion.
+DatatypeChange is Class.
+DatatypeChange SubClassOf DatatypeOrLanguageTagChange.
+DatatypeOrLanguageTagChange is Class.
+DatatypeOrLanguageTagChange SubClassOf ChangeMixin.
+Deletion is Class.
+Deletion SubClassOf ChangeMixin.
+EdgeCreation is Class.
+EdgeCreation SubClassOf Creation.
+EdgeDeletion is Class.
+EdgeDeletion SubClassOf Deletion.
+EdgeObsoletion is Class.
+EdgeObsoletion SubClassOf Obsoletion.
+LanguageTagChange is Class.
+LanguageTagChange SubClassOf DatatypeOrLanguageTagChange,.
+LanguageTagChange SubClassOf new value only lang,.
+LanguageTagChange SubClassOf old value only lang.
+MappingCreation is Class.
+MappingCreation SubClassOf Creation.
+NodeCreation is Class.
+NodeCreation SubClassOf Creation.
+NodeDeletion is Class.
+NodeDeletion SubClassOf Deletion.
+NodeDirectMerge is Class.
+NodeDirectMerge SubClassOf AllowsAutomaticReplacementOfEdges.
+NodeObsoletion is Class.
+NodeObsoletion SubClassOf Obsoletion.
+NodeObsoletionWithDirectReplacement is Class.
+NodeObsoletionWithDirectReplacement SubClassOf AllowsAutomaticReplacementOfEdges.
+NodeUnobsoletion is Class.
+NodeUnobsoletion SubClassOf Unobsoletion.
+Obsoletion is Class.
+Obsoletion SubClassOf ChangeMixin,.
+Thing, is about only www.w3.org/2002/07/#.
+Thing, is has undo only Obsoletion.
+RemoveFromSubset is Class.
+RemoveFromSubset SubClassOf SubsetMembershipChange,.
+RemoveFromSubset SubClassOf has undo only AddToSubset,.
+Thing is in subset only www.w3.org/2002/07/#.
+RemoveNodeFromSubset is Class.
+RemoveNodeFromSubset SubClassOf RemoveFromSubset.
+SetLanguageForName is Class.
+SetLanguageForName SubClassOf LanguageTagChange.
+SubsetMembershipChange is Class.
+SubsetMembershipChange SubClassOf ChangeMixin,.
+OntologySubset is in subset only om/.
+Unobsoletion is Class.
+Unobsoletion SubClassOf ChangeMixin,.
+Unobsoletion SubClassOf has undo only Obsoletion.
+om/ is Class.
+www.w3.org/2002/07/# is Class.

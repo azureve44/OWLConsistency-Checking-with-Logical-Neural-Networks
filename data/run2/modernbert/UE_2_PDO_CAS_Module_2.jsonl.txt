@@ -1,0 +1,4666 @@
+develops from is ObjectProperty.
+participates in is ObjectProperty.
+purl.org/obo//ro# is ObjectProperty.
+purl.org/obo//ro# is ObjectProperty.
+belong to country is ObjectProperty.
+belong to country Domain StateProvince.
+belong to country Range Country.
+belong to country InverseOf has province.
+contains biome is ObjectProperty.
+contains species is ObjectProperty.
+flower species is ObjectProperty.
+has city is ObjectProperty.
+has city Domain StateProvince.
+has city Range City.
+has number is ObjectProperty.
+has participant is ObjectProperty.
+has plant is ObjectProperty.
+has province is ObjectProperty.
+has province InverseOf belong to country.
+Occurrent is Class.
+Process is Class.
+SpatialRegion is Class.
+TemporalRegion is Class.
+TemporalRegion SubClassOf Occurrent.
+Aerial is Class.
+Aerial SubClassOf Habitat,.
+Aerial SubClassOf contains species some Species.
+Alkaline is Class.
+Alkaline SubClassOf Habitat,.
+Alkaline SubClassOf contains species some Species.
+AnthropogenicTerrestrialBiome is Class.
+AnthropogenicTerrestrialBiome SubClassOf TerrestrialBiome.
+AquaticBiome is Class.
+Biome is Class.
+DesertBiome is Class.
+DesertBiome SubClassOf TerrestrialBiome.
+EnvironmentMaterial is Class.
+Extreme is Class.
+Extreme SubClassOf Habitat,.
+Extreme SubClassOf contains species some Species.
+ForestBiome is Class.
+ForestBiome SubClassOf TerrestrialBiome.
+FreshwaterBiome is Class.
+FreshwaterBiome SubClassOf AquaticBiome.
+GrasslandBiome is Class.
+GrasslandBiome SubClassOf TerrestrialBiome.
+Habitat is Class.
+HighPressure is Class.
+HighPressure SubClassOf Habitat,.
+HighPressure SubClassOf contains species some Species.
+HighTemperature is Class.
+HighTemperature SubClassOf Habitat,.
+HighTemperature SubClassOf contains species some Species.
+MangroveBiome is Class.
+MangroveBiome SubClassOf TerrestrialBiome.
+MarineBiome is Class.
+MarineBiome SubClassOf AquaticBiome.
+PhysiographicFeature is Class.
+PhysiographicFeature SubClassOf SpatialRegion.
+ShrublandBiome is Class.
+ShrublandBiome SubClassOf TerrestrialBiome.
+Soil is Class.
+Soil SubClassOf EnvironmentMaterial.
+Subterrestrial is Class.
+Subterrestrial SubClassOf Habitat,.
+Subterrestrial SubClassOf contains species some Species.
+Terrestrial is Class.
+Terrestrial SubClassOf Habitat,.
+Terrestrial SubClassOf contains species some Species.
+TerrestrialBiome is Class.
+TerrestrialBiome SubClassOf Biome.
+TundraBiome is Class.
+TundraBiome SubClassOf TerrestrialBiome.
+WoodlandBiome is Class.
+WoodlandBiome SubClassOf TerrestrialBiome.
+Androecium is Class.
+Androecium SubClassOf collectivePlantOrganStructure.
+Flower is Class.
+Flower SubClassOf collectivePlantOrganStructure.
+Fruit is Class.
+Fruit SubClassOf multi-tissuePlantStructure.
+Gynoecium is Class.
+Gynoecium SubClassOf collectivePlantOrganStructure,.
+Gynoecium SubClassOf develops from some GynoeciumPrimordium,.
+part of some Flower, is purl.org/obo//ro#.
+part of some Flower, is has number some GynoeciumCarpelNumber.
+GynoeciumPrimordium is Class.
+Inflorescence is Class.
+Inflorescence SubClassOf collectivePlantOrganStructure,.
+Inflorescence SubClassOf participates in some inflorescenceDevelopmentStage,.
+has part some Flower, is purl.org/obo//ro#.
+has part some Flower, is flower species some Species.
+MeristematicCell is Class.
+MeristematicCell DisjointWith develops from some GynoeciumPrimordium.
+Perianth is Class.
+Perianth SubClassOf collectivePlantOrganStructure.
+PhyllomeAnlagen is Class.
+PhyllomeAnlagen SubClassOf portionOfMeristemTissue.
+PlantOrgan is Class.
+PlantOrgan SubClassOf multi-tissuePlantStructure.
+PlantStructure is Class.
+Primordium is Class.
+Primordium SubClassOf portionOfMeristemTissue.
+Protoderm is Class.
+Protoderm SubClassOf portionOfMeristemTissue.
+RootMeristem is Class.
+RootMeristem SubClassOf portionOfMeristemTissue.
+Seed is Class.
+Seed SubClassOf multi-tissuePlantStructure.
+SepalAnlagen is Class.
+SepalAnlagen SubClassOf PhyllomeAnlagen.
+ShootSystem is Class.
+ShootSystem SubClassOf collectivePlantOrganStructure.
+StamenAnlagen is Class.
+StamenAnlagen SubClassOf PhyllomeAnlagen.
+androeciumDevelopmentStage is Class.
+androeciumDevelopmentStage SubClassOf collectivePlantOrganStructureDevelopmentStage,.
+androeciumDevelopmentStage SubClassOf has participant some collectivePlantOrganStructure.
+budDevelopmentStage is Class.
+budDevelopmentStage SubClassOf collectivePlantOrganStructureDevelopmentStage.
+collectivePlantOrganStructure is Class.
+collectivePlantOrganStructure SubClassOf PlantStructure.
+collectivePlantOrganStructureDevelopmentStage is Class.
+collectivePlantOrganStructureDevelopmentStage SubClassOf plantStructureDevelopmentStage.
+epicotylEmergenceStage is Class.
+epicotylEmergenceStage SubClassOf sporophyteDevelopmentStage.
+flowerDevelopmentStage is Class.
+flowerDevelopmentStage SubClassOf collectivePlantOrganStructureDevelopmentStage.
+fruitDevelopmentStage is Class.
+fruitDevelopmentStage SubClassOf plantStructureDevelopmentStage.
+inflorescenceDevelopmentStage is Class.
+inflorescenceDevelopmentStage SubClassOf collectivePlantOrganStructureDevelopmentStage,.
+inflorescenceDevelopmentStage SubClassOf has participant some collectivePlantOrganStructure.
+multi-tissuePlantStructure is Class.
+multi-tissuePlantStructure SubClassOf PlantStructure.
+plantOrganDevelopmentStage is Class.
+plantOrganDevelopmentStage SubClassOf plantStructureDevelopmentStage.
+plantStructureDevelopmentStage is Class.
+plantStructureDevelopmentStage SubClassOf Process.
+portionOfMeristemTissue is Class.
+portionOfMeristemTissue SubClassOf portionOfPlantTissue,.
+has part some MeristematicCell, is purl.org/obo//ro#.
+has part only (develops from some GynoeciumPrimordium) is purl.org/obo//ro#.
+portionOfPlantTissue is Class.
+seedDevelopmentStage is Class.
+seedDevelopmentStage SubClassOf plantStructureDevelopmentStage.
+shootMeristem is Class.
+shootMeristem SubClassOf portionOfMeristemTissue.
+sporophyteDevelopmentStage is Class.
+sporophyteDevelopmentStage SubClassOf wholePlantDevelopmentStage.
+wholePlantDevelopmentStage is Class.
+wholePlantDevelopmentStage SubClassOf plantStructureDevelopmentStage.
+purl.org/obo//PATO# is Class.
+purl.org/obo//PATO# is Class.
+Morphology is purl.org/obo//PATO#.
+Country is Class.
+StateProvince is Class.
+StateProvince SubClassOf PoliticalRegion,.
+StateProvince SubClassOf belong to country some Country,.
+StateProvince SubClassOf contains biome some Biome,.
+StateProvince SubClassOf has city some City,.
+StateProvince SubClassOf has plant some Species.
+Abarema is Class.
+Abildgaardia is Class.
+Abroma is Class.
+Absinthium is Class.
+Acalypha is Class.
+Acampe is Class.
+Acanos is Class.
+Acer is Class.
+Aceraceae is Class.
+Acetosa is Class.
+Achasma is Class.
+Achudemia is Class.
+Acilepis is Class.
+Acmena is Class.
+Acomastylis is Class.
+Acosta is Class.
+Acrachne is Class.
+Acrobolbaceae is Class.
+Acroceras is Class.
+Acrochaene is Class.
+Acrochaetiaceae is Class.
+Acroelytrum is Class.
+Acrolejeunea is Class.
+Acronychia is Class.
+Acroptilon is Class.
+Acrostichaceae is Class.
+Actaea is Class.
+Adelostemma is Class.
+Adenocaulon is Class.
+Adenosacme is Class.
+Adinandra is Class.
+Adonis is Class.
+Adoxaceae is Class.
+Aegilops is Class.
+Aegle is Class.
+Aerophytes is Class.
+Aershan is Class.
+Aesculus is Class.
+Aetheilema is Class.
+Afghanistan is Class.
+Agasta is Class.
+Agathotes is Class.
+Agathyrsus is Class.
+Agave is Class.
+Agrimonia eupatoria is Class.
+Agropogon is Class.
+Agrostis is Class.
+Aguimiaozhibei is Class.
+Ainsliaea is Class.
+Aizoaceae is Class.
+Ajania is Class.
+Akebia is Class.
+Alangiaceae is Class.
+Albizia is Class.
+Alcaea is Class.
+Alcimandra is Class.
+Aldrovanda is Class.
+Aleuritopteris is Class.
+Algarobia is Class.
+Algeria is Class.
+Alhagi is Class.
+Alleizettella is Class.
+Allocheilos is Class.
+Allospondias is Class.
+Alniphyllum is Class.
+Aloe is Class.
+Alopecurus is Class.
+Alpinia is Class.
+Alseodaphne is Class.
+Alsine is Class.
+Althaea is Class.
+Alukeerqinqihanshan is Class.
+Alysicarpus is Class.
+Alyxia is Class.
+Amaranthus tricolor is Class.
+Amaryllidaceae is Class.
+Ambrina is Class.
+Amischophacelus is Class.
+Amischotolype is Class.
+Amitostigma is Class.
+Ammothamnus is Class.
+Amomum is Class.
+Amphidonax is Class.
+Amphilophis is Class.
+Amphimeuron is Class.
+Amphiraphis is Class.
+Anadyomenaeeae is Class.
+Anadyomene is Class.
+Anarthrosyne is Class.
+Anasrepta is Class.
+Anastatica is Class.
+Anastrepta is Class.
+Anastrophyllum is Class.
+Anaxagorea is Class.
+Anbanghe is Class.
+Ancistrocladaceae is Class.
+Ancistrocladus is Class.
+Ancistrolobus is Class.
+Andersonia is Class.
+Andira is Class.
+Andrachne is Class.
+Andreaeaceae is Class.
+AndroeciumStructure is Class.
+Structure is purl.org/obo//PATO#.
+Andropogon is Class.
+Anemonastrum is Class.
+Anemone is Class.
+Anemonidium is Class.
+Anerincleistus is Class.
+Aneuraceae is Class.
+Angiopteridaceae is Class.
+Angiospermae is Class.
+Anictoclea is Class.
+Anisachne is Class.
+Anisadenia is Class.
+Aniselytron is Class.
+Anisochilus is Class.
+Anisodus is Class.
+Annona is Class.
+Annonaceae is Class.
+Anodendron is Class.
+Anogallidium is Class.
+Anona is Class.
+Anoplocaryum is Class.
+Anotis is Class.
+Anplectrum is Class.
+Antura is Class.
+Anxingshidi is Class.
+Anzihe is Class.
+Aongstroemia is Class.
+Aongstroemiopsis is Class.
+Apargia is Class.
+Apaturia is Class.
+Aphanamixis is Class.
+Aphanopleura is Class.
+Apios is Class.
+Aplectrum is Class.
+Aplotaxis is Class.
+Apocopis is Class.
+Apocynaceae is Class.
+Apometzgeria is Class.
+Aquifoliaceae is Class.
+Aquilicia is Class.
+Araceae is Class.
+Arachne is Class.
+Arachnis is Class.
+Aracium is Class.
+Araucariaceae is Class.
+Archiatriplex is Class.
+Archidiaceae is Class.
+Archileptopus is Class.
+Arctogeron is Class.
+Ardisia is Class.
+Arecaceae is Class.
+Arecastrum is Class.
+Arenga is Class.
+Arethusa is Class.
+Argemone is Class.
+Argusia is Class.
+Argyropsis is Class.
+Argyrothamnia is Class.
+Aristida is Class.
+Arnelliaceae is Class.
+Artabotrys is Class.
+Artemisia is Class.
+Arthraxon is Class.
+Arthrophytum is Class.
+Arthrostylis is Class.
+Artocarpus is Class.
+Arundo is Class.
+Ascalea is Class.
+Ascarina is Class.
+Asclepiadaceae is Class.
+Ascocentrum is Class.
+Aspidistra is Class.
+Aspleniaceae is Class.
+Asplenium normale is Class.
+Aster is Class.
+Asteraceae is Class.
+Asteromoea is Class.
+Astilbe is Class.
+Astomum is Class.
+Astragalus is Class.
+Astranthus is Class.
+Astrophyllum is Class.
+Ataccia is Class.
+Ataxipteris is Class.
+Athyriaceae is Class.
+Atractylis is Class.
+Atractylodes is Class.
+Atractylodes lancea is Class.
+Atragene is Class.
+Atraphaxis is Class.
+Atrichum is Class.
+Aubletia is Class.
+Aucklandia is Class.
+Aucubaceae is Class.
+Augia is Class.
+Aulacolepis is Class.
+Aulacomitrium is Class.
+Aulacomniaceae is Class.
+Australia is Class.
+Austria is Class.
+Avenastrum is Class.
+Avrainvillea is Class.
+Axyris is Class.
+Ayouqiningtiao is Class.
+Aytonia is Class.
+Aytoniaceae is Class.
+Azanza is Class.
+Azerbaijan is Class.
+Azollaceae is Class.
+Azuoqikonglonghuashi is Class.
+Baccaurea is Class.
+Badianifera is Class.
+Badongyanheduhejinsihou is Class.
+Badoushan is Class.
+Baeothryon is Class.
+Baica is Class.
+Baihe is Class.
+Baihuling is Class.
+Baijitan is Class.
+Bailixia is Class.
+Baimashania is Class.
+Baiqing is Class.
+Baishan is Class.
+Baishiyi is Class.
+Baishuihe is Class.
+Baissea is Class.
+Baiyang is Class.
+Baiyunhu is Class.
+Baiyunxiang is Class.
+Baiyunzhai is Class.
+Baizhangshan is Class.
+Bajie is Class.
+Bakahe is Class.
+Baldwiniella is Class.
+Balsaminaceae is Class.
+Bambos is Class.
+Bambusa is Class.
+Bamianshan is Class.
+Bangiaceae is Class.
+Bangmaxueshan is Class.
+Bangxipolu is Class.
+Banisteria is Class.
+Banli is Class.
+Baofengshidi is Class.
+Baohuashan is Class.
+Baokang yeshenglamei is Class.
+Baolia is Class.
+Baoshan is Class.
+Baoxinghe is Class.
+Barbula is Class.
+Barkhausia is Class.
+Barthea is Class.
+Bartramisula is Class.
+Bartsia is Class.
+Basella is Class.
+Basellaceae is Class.
+Bashania is Class.
+Bassia is Class.
+Batis is Class.
+Batrachium is Class.
+Batratherum is Class.
+Bawanghe is Class.
+Bawangling is Class.
+Baxianhu is Class.
+Baxianshan is Class.
+Bayinbuluketiane is Class.
+Bayinchagang is Class.
+Baying is Class.
+Bazinaojinqianbao is Class.
+Begoniaceae is Class.
+Beidaihehaibinniaolei is Class.
+Beidashan is Class.
+Beiningdaya is Class.
+Belamcanda is Class.
+Belize is Class.
+Beloere is Class.
+Beloperone is Class.
+Belvisia is Class.
+Benkara is Class.
+Benthamia is Class.
+Berberidaceae is Class.
+Berghausia is Class.
+Berrya is Class.
+Berula is Class.
+Beta is Class.
+Betonica is Class.
+Betulaceae is Class.
+Beurea is Class.
+Beurera is Class.
+Biarum is Class.
+Bidaria is Class.
+Bienertia is Class.
+Bignoniaceae is Class.
+Bijiashan is Class.
+Bischofia is Class.
+Bishuizhonghuaqiushaya is Class.
+Bistorta is Class.
+Bixaceae is Class.
+Blainvillea is Class.
+Bletilla is Class.
+Blidingia is Class.
+Blysmocarex is Class.
+Blysmus is Class.
+Boerhavia is Class.
+Boesenbergia is Class.
+Boissiera is Class.
+Bolbitidaceae is Class.
+Bolivia is Class.
+Boltonia is Class.
+Bombacaceae is Class.
+Bonia is Class.
+Boniodendron is Class.
+Bonnemaisonia is Class.
+Bonnemaisoniaceae is Class.
+Boodleaceae is Class.
+Boodleopsis is Class.
+Boottia is Class.
+Boraginaceae is Class.
+Borago is Class.
+Borassus is Class.
+Bostrychia is Class.
+Bothriochloa is Class.
+Bothrocaryum is Class.
+Botrychiaceae is Class.
+Botryolotus is Class.
+Botrypus is Class.
+Bougainvillea is Class.
+Bousigonia is Class.
+Boyuedong is Class.
+Brachiaria is Class.
+Brachyactis is Class.
+Brachybotrys is Class.
+Brachyelytrum is Class.
+Brachyspatha is Class.
+Brachystemma is Class.
+Brachytheciaceae is Class.
+Brachytome is Class.
+Bracteocarpus is Class.
+Bradleja is Class.
+Brahea is Class.
+Brainia is Class.
+Brassica oleracea is Class.
+Bredia is Class.
+Bretschneideraceae is Class.
+Breutelia is Class.
+Brevipodium is Class.
+Bromelia is Class.
+Bromeliaceae is Class.
+Bromus is Class.
+Brucea is Class.
+Bruchia is Class.
+Bruguiera is Class.
+Brunella is Class.
+Bryaceae is Class.
+Brylkinia is Class.
+Bryonoguchia is Class.
+Bryophthalmum is Class.
+Bryosedgwickia is Class.
+Bryowijkia is Class.
+Bryoxiphiaceae is Class.
+Bryun is Class.
+Buchloe is Class.
+Buegeria is Class.
+Buergenheli is Class.
+Bulbilis is Class.
+Buphthalmum is Class.
+Burmannia is Class.
+Burmanniaceae is Class.
+Butomaceae is Class.
+Butomopsis is Class.
+Butomus is Class.
+Buxaceae is Class.
+Buxbaumia is Class.
+Bystropogon is Class.
+Byttneria is Class.
+Cabombaceae is Class.
+Cactaceae is Class.
+Cactus is Class.
+Caiyanghe is Class.
+Callicostella is Class.
+Callisace is Class.
+Calohypnum is Class.
+Calonyction is Class.
+Calophanoides is Class.
+Calopogonium is Class.
+Calpigyne is Class.
+Calymmodon is Class.
+Camelliastrum is Class.
+Campanulaceae is Class.
+Campium is Class.
+Camptotheca is Class.
+Campylopus is Class.
+Cananga is Class.
+Canglu is Class.
+Cannabaceae is Class.
+Cannaceae is Class.
+Cansjera is Class.
+Cardamine is Class.
+Caryophyllaceae is Class.
+Caspareopsis is Class.
+Cassandra is Class.
+Cassine is Class.
+Castanea is Class.
+Castilleja is Class.
+Casuarinaceae is Class.
+Catharinella is Class.
+Caturus is Class.
+Caulokaempferia is Class.
+Cavanillea is Class.
+Cedrela is Class.
+Celastraceae is Class.
+Celastrales is Class.
+Celastrus is Class.
+Cenocentrum is Class.
+Centaurea is Class.
+Centrolepidaceae is Class.
+Centrospermae is Class.
+Cephalophilon is Class.
+Cephalorrhynchus is Class.
+Cephalotaxaceae is Class.
+Cephaloziaceae is Class.
+Ceramiaceae is Class.
+Ceratophyllaceae is Class.
+Ceratopteris is Class.
+Cercidiphyllaceae is Class.
+Cestrum is Class.
+Ceterachopsis is Class.
+Chaetochloa is Class.
+Chaihe is Class.
+Chaiturus is Class.
+Chamaegastrodia is Class.
+Chamaejasme is Class.
+Chamaesyce is Class.
+Champiaceae is Class.
+Changankasite is Class.
+Changmahe is Class.
+Changtian is Class.
+Cheilosoria is Class.
+Cheiropleuriaceae is Class.
+Chenopodiaceae is Class.
+Chienia is Class.
+Chingithamnus is Class.
+Chionachne is Class.
+Chirita is Class.
+Chishuihe is Class.
+Chisocheton is Class.
+Chlamydoboea is Class.
+Chlorophyceae is Class.
+Chondrus is Class.
+Chosenia is Class.
+Choulengshan is Class.
+Christenseniaceae is Class.
+Chrysopogon is Class.
+Chuonahe is Class.
+Cibihu is Class.
+Cicer is Class.
+Cinclidium is Class.
+Circaea is Class.
+Cissampelos is Class.
+Cistaceae is Class.
+Citrullus is Class.
+Citrus is Class.
+City is Class.
+Clarkella is Class.
+Claudea is Class.
+Cleistogenes is Class.
+Cleome is Class.
+Clethra is Class.
+Climaciaceae is Class.
+Clusiaceae is Class.
+Collinsiellaceae is Class.
+Coronilla is Class.
+Coscinodon is Class.
+Craniotome is Class.
+Crassulaceae is Class.
+Cratoneurella is Class.
+Cremastra is Class.
+Crepidiastrum is Class.
+Crossidium is Class.
+Crotalaria is Class.
+Crucianella is Class.
+Crucihimalaya is Class.
+Crupina is Class.
+Cryphaeaceae is Class.
+Cryptocoryne is Class.
+Cuba is Class.
+Cucurbitaceae is Class.
+Cudrania is Class.
+Cuibo is Class.
+Cuiyunshan is Class.
+Cuphea is Class.
+Cupressaceae is Class.
+Cyatheaceae is Class.
+Cyathocline is Class.
+Cyclamen is Class.
+Cymaria is Class.
+Cynanchum is Class.
+Cynocrambe is Class.
+Cynoctonum is Class.
+Cyperus is Class.
+Cypripedium is Class.
+Cyrtandra is Class.
+Cyrtomidictyum is Class.
+Czernaevia is Class.
+Dabashan is Class.
+Dabusulangyaba is Class.
+Dachouding is Class.
+Dactylis is Class.
+Dactylium is Class.
+Dactylorhiza is Class.
+Dadonghaihuoling is Class.
+Dadonghaishanhujiao is Class.
+Dadongshan is Class.
+Dagongling is Class.
+Dahlia is Class.
+Daichaoshan is Class.
+Daihai is Class.
+Daiyunshan is Class.
+Dajiang is Class.
+Dajinshan is Class.
+Dalaihu is Class.
+Dalechampia is Class.
+Dalianbanhaibao is Class.
+Dalongtan is Class.
+Damoshahu is Class.
+Damushan is Class.
+Danqinghe is Class.
+Danzhoudongchang is Class.
+Daozhendashahe is Class.
+Dapanshan is Class.
+Daphne is Class.
+Daphniphyllaceae is Class.
+Daqiao is Class.
+Daqingshan is Class.
+Darea is Class.
+Dartus is Class.
+Dashanbaoheijinghe is Class.
+Dasiji is Class.
+Dasillipe is Class.
+Dasyaceae is Class.
+Dasycladaceae is Class.
+Dasymaschalon is Class.
+Dasymitrium is Class.
+Datancishenglin is Class.
+Datiscaceae is Class.
+Datura is Class.
+Davalliaceae is Class.
+Davidia is Class.
+Dawuliangsu is Class.
+Daxiaolangou is Class.
+Daxikeng is Class.
+Daxiongshan is Class.
+Dayangchadizhiyiji is Class.
+Dayishan is Class.
+Dazhangshan is Class.
+Dazhongshan is Class.
+Decaisnea is Class.
+Decaschistia is Class.
+Delavayella is Class.
+Delphinium is Class.
+Deltocheilos is Class.
+Democritea is Class.
+Dendrobenthamia is Class.
+Dendrocnide is Class.
+Dendroglossa is Class.
+Dendropanax is Class.
+Dendrophthoe is Class.
+Dendrotrophe is Class.
+Denglonghe is Class.
+Dennstaedtiaceae is Class.
+Dentella is Class.
+Dermonemataceae is Class.
+Desmostachya is Class.
+Deverra is Class.
+Deyeuxia is Class.
+Diacalpe is Class.
+Diaphyllum is Class.
+Dicellostyles is Class.
+Dicercolados is Class.
+Dicerma is Class.
+Dichapetalaceae is Class.
+Dichapetalum is Class.
+Dichostylis is Class.
+Dicksoniaceae is Class.
+Dicotyledoneae is Class.
+Dictyocline is Class.
+Dictyogramme is Class.
+Dictyosphaeria is Class.
+Dictyurus is Class.
+Didissandra is Class.
+Digitaria is Class.
+Dimeria is Class.
+Dimerocarpus is Class.
+Dinetopsis is Class.
+Dinghushan is Class.
+Dingnanyuntaishan is Class.
+Dioscoreaceae is Class.
+Dipelta is Class.
+Diphasiastrum is Class.
+Diplachne is Class.
+Diplarche is Class.
+Diplazoptilon is Class.
+Diplectria is Class.
+Diplocomium is Class.
+Diploknema is Class.
+Diplophyllum is Class.
+Diplopterygium is Class.
+Diplostachyum is Class.
+Diplothorax is Class.
+Dipsacaceae is Class.
+Diptera is Class.
+Dipteridaceae is Class.
+Dipterocarpaceae is Class.
+Discocleidion is Class.
+Distichophyllum is Class.
+Distreptus is Class.
+Ditremexa is Class.
+Ditrichaceae is Class.
+Dodecadenia is Class.
+Doellingeria is Class.
+Dolichandrone is Class.
+Dolichomitriopsis is Class.
+Dominican Republic is Class.
+Dongalashan is Class.
+Dongbeiheifeng is Class.
+Dongdashan is Class.
+Dongfanghongshidi is Class.
+Donghushidi is Class.
+Dongpinghu is Class.
+Dongqinlingnipenxi is Class.
+Dongshan is Class.
+Dongshui is Class.
+Dongtaizhonghuaxun is Class.
+Dongwanlianhuashan is Class.
+Dongyanggou is Class.
+Dongzhai niaolei is Class.
+Dongzhaiganghongshulin is Class.
+Doronicum is Class.
+Doryopteris is Class.
+Dotyophycus is Class.
+Drabopsis is Class.
+Drepanostachyum is Class.
+Driessenia is Class.
+Drosera rotundifolia is Class.
+Droseraceae is Class.
+Drupatris is Class.
+Drupifera is Class.
+Drymaria is Class.
+Drymophloeus is Class.
+Drynaria is Class.
+Drynariaceae is Class.
+Dryopsis is Class.
+Dryostachyum is Class.
+Dubrueilia is Class.
+Duchanghouniao is Class.
+Dudresnaya is Class.
+Dugoula is Class.
+Duluheliuyueweichangshidi is Class.
+Dumasia is Class.
+Dumula is Class.
+Dunnia is Class.
+Duowenling is Class.
+Dutianhe is Class.
+Duyundoufengshan is Class.
+Duyunluosike is Class.
+Dypsis is Class.
+Dyschoriste is Class.
+Dysoxylum is Class.
+Ebenaceae is Class.
+Ebenales is Class.
+Eccoilopus is Class.
+Echinocarpus is Class.
+Echinochloa is Class.
+Echinocodon is Class.
+Echinopanax is Class.
+Echinopsilon is Class.
+Echinospermum is Class.
+Echioglossum is Class.
+Ectropotheciella is Class.
+Ecuador is Class.
+Edgaria is Class.
+Ejinahuyanglin is Class.
+Eleusine is Class.
+Ellisiophyllum is Class.
+Elymus is Class.
+Embelia is Class.
+Emerus is Class.
+Empetrum is Class.
+Encalyptaceae is Class.
+Endiandra is Class.
+Endocladiaceae is Class.
+Endopogon is Class.
+Endotrichella is Class.
+Enhalus is Class.
+Enneapogon is Class.
+Ensete is Class.
+Entada is Class.
+Entodon is Class.
+Eopleurozia is Class.
+Ephedraceae is Class.
+Ephemeraceae is Class.
+Epicharis is Class.
+Epidendrum is Class.
+Epilobium is Class.
+Epipactis helleborine is Class.
+Epiphytes is Class.
+Epipogium is Class.
+Equisetaceae is Class.
+Eragrostis is Class.
+Eremochloa is Class.
+Eremonotus is Class.
+Eremopyrum is Class.
+Eremostachys is Class.
+Eremurus is Class.
+Ererduosikonglongzuji is Class.
+Eriachne is Class.
+Ericaceae is Class.
+Ericala is Class.
+Erigeron is Class.
+Eriocapitella is Class.
+Eriocaulaceae is Class.
+Eriochloa is Class.
+Eriolaena is Class.
+Eriostrobilus is Class.
+Eritrea is Class.
+Erpodiaceae is Class.
+Eruca is Class.
+Erycibe is Class.
+Erythrocarpus is Class.
+Erythrochaete is Class.
+Erythrocladia is Class.
+Erythropsis is Class.
+Erythrostaphyle is Class.
+Erythroxylaceae is Class.
+Eschenbachia is Class.
+Esenbeckia is Class.
+Esquirolia is Class.
+Euaraliopsis is Class.
+Eucheuma is Class.
+Eucommia is Class.
+Eucommiaceae is Class.
+Eucommiales is Class.
+Eulaliopsis is Class.
+Euproboscis is Class.
+Eurotia is Class.
+Euryodendron is Class.
+Eurythalia is Class.
+Eusteralis is Class.
+Exallage is Class.
+Exbucklandia is Class.
+Excentrodendron is Class.
+Exostratum is Class.
+Fabaceae is Class.
+Fabroniaceae is Class.
+Fagaceae is Class.
+Fagara is Class.
+Fagerlindia is Class.
+Falkland Islands is Class.
+Fanghuhouniao is Class.
+Fanjingshan is Class.
+Fatsia is Class.
+Fedia is Class.
+Fedtschenkiella is Class.
+Felipponea is Class.
+Fengchengguotouyu is Class.
+Fengchengpushihe is Class.
+Fengchengyulonghu is Class.
+Fengtongzhai is Class.
+Fengyanglusi is Class.
+Fibraurea is Class.
+Ficus is Class.
+Filifolium is Class.
+Flacourtiaceae is Class.
+Flagellariaceae is Class.
+Floerkea is Class.
+FlowerStructure is Class.
+Structure is purl.org/obo//PATO#.
+Fluminia is Class.
+Fokienia is Class.
+Forasaccus is Class.
+Forsskaolea is Class.
+Forsstroemia is Class.
+Fortunearia is Class.
+Fossombroniaceae is Class.
+Foyegou is Class.
+Foziling is Class.
+Frankeniaceae is Class.
+French Guiana is Class.
+Friesia is Class.
+FruitStructure is Class.
+Structure is purl.org/obo//PATO#.
+Frullaniaceae is Class.
+Fugudusong is Class.
+Fujianlianhuashan is Class.
+Fujinlianshapao is Class.
+Fulong is Class.
+Funariaceae is Class.
+Funariales is Class.
+Funiushan is Class.
+Furongshan is Class.
+Fuyushuiqing is Class.
+Gaertnera is Class.
+Gagea is Class.
+Gagea lutea is Class.
+Gaillardia is Class.
+Galactia is Class.
+Galaxura is Class.
+Galega is Class.
+Galumpita is Class.
+Gaojie is Class.
+Gaoligongshania is Class.
+Gaolushan is Class.
+Gaoping is Class.
+Gaotianyan is Class.
+Gaoyanhe is Class.
+Gardneria is Class.
+Garnotia is Class.
+Garovaglia is Class.
+Garuga is Class.
+Gastonia is Class.
+Gastrochilus is Class.
+Gastroclonium is Class.
+Gastrocotyle is Class.
+Gastrodia is Class.
+Gastrorchis is Class.
+Gaurea is Class.
+Gayoides is Class.
+Geermuhuyanglin is Class.
+Gelidiales is Class.
+Gelidiopsi is Class.
+Gendarussa is Class.
+Gengeniaoshou is Class.
+Genhechaozha is Class.
+Genieshenshan is Class.
+Genista is Class.
+Geocalycaceae is Class.
+Geoffroea is Class.
+Georgina is Class.
+Geranium is Class.
+Gerardia is Class.
+Geshikao is Class.
+Gesneriaceae is Class.
+Getonia is Class.
+Giadotrum is Class.
+Gibsmithia is Class.
+Gilibertia is Class.
+Ginkgo biloba is Class.
+Girgensohnia is Class.
+Glaphyropteridopsis is Class.
+Gleadovia is Class.
+Gleicheniaceae is Class.
+Glochidocaryum is Class.
+Glossadelphus is Class.
+Glossaspis is Class.
+Glossostylis is Class.
+Glyceria is Class.
+Glycine is Class.
+Glyptocarpa is Class.
+Glyptostrobus is Class.
+Gnetopsida is Class.
+Gnetum is Class.
+Gomphia is Class.
+Gomphrena is Class.
+Gongliuyehetao is Class.
+Gongpingdahu is Class.
+Goniotrichaceae is Class.
+Goniotrichum is Class.
+Gonostegia is Class.
+Gonotheca is Class.
+Goodyera is Class.
+Gordonia is Class.
+Gossypium barbadense is Class.
+Gracilariales is Class.
+Gracilariophila is Class.
+Grammitidaceae is Class.
+Grammitis is Class.
+Greece is Class.
+Grimaldia is Class.
+Grimaldiaceae is Class.
+Grimmia is Class.
+Grushvitzkya is Class.
+Guarea is Class.
+Guatemala is Class.
+Guchengshan is Class.
+Guettarda is Class.
+Guidingdoupengshan is Class.
+Guihaia is Class.
+Guihaiothamnus is Class.
+Guilandina is Class.
+Gulinqing is Class.
+Gunba is Class.
+Guniujiang is Class.
+Gunziping is Class.
+Guodoushan is Class.
+Guoyanshan is Class.
+Gushan is Class.
+Gutangshidi is Class.
+Gutianrengonghu is Class.
+Guzhangxian is Class.
+Gymnogramme is Class.
+Gymnogrammitidaceae is Class.
+Gymnogrammitis is Class.
+Gymnomitriaceae is Class.
+Gymnospermae is Class.
+Gymnostachyum is Class.
+Gymnotheca is Class.
+Gymnotrix is Class.
+GynoeciumCarpelNumber is Class.
+GynoeciumStructure is Class.
+Structure is purl.org/obo//PATO#.
+Habaxueshan is Class.
+Habenaria is Class.
+Haberlia is Class.
+Hackelochloa is Class.
+Hageniella is Class.
+Haifeng is Class.
+Hainanecio is Class.
+Haitangshan is Class.
+Haiti is Class.
+Halerpestes is Class.
+Halimeda is Class.
+Halocnemum is Class.
+Halodule is Class.
+Halophytes is Class.
+Haloragis is Class.
+Halymeniaceae is Class.
+Hamamelidaceae is Class.
+Hamelia is Class.
+Hancea is Class.
+Hanma is Class.
+Hanshan is Class.
+Hanximotianling is Class.
+Haplomitrium is Class.
+Haplopteris is Class.
+Harina is Class.
+Harpachne is Class.
+Hasteola is Class.
+Hawaii is Class.
+Hearnia is Class.
+Hebeihongsongmushulin is Class.
+Heckeria is Class.
+Hedwigiaceae is Class.
+Hedychium is Class.
+Hedyotis is Class.
+Hedypnois is Class.
+Hegemone is Class.
+Heifenghe is Class.
+Heiheliuyu is Class.
+Heihushan is Class.
+Heijinhe is Class.
+Heilihe is Class.
+Heishan is Class.
+Heixiazigou is Class.
+Hejinhuihe is Class.
+Hekeng is Class.
+Helanshan is Class.
+Heligme is Class.
+Heliotropium is Class.
+Helleborine is Class.
+Helobiae is Class.
+Helodium is Class.
+Helwingiaceae is Class.
+Helxine is Class.
+Hemaji is Class.
+Hemicardion is Class.
+Hemicarex is Class.
+Hemicryptophytes is Class.
+Hemidictyum is Class.
+Hemigramma is Class.
+Hemigraphis is Class.
+Hemionitidaceae is Class.
+Hemiparasites is Class.
+Henglinghu is Class.
+Henryastrum is Class.
+Henslowia is Class.
+Hepaticae is Class.
+Hepingqinglong is Class.
+Heptacodium is Class.
+Heqingzhaoxia is Class.
+Herbertaceae is Class.
+Herbertus is Class.
+Heritiera is Class.
+Herminium is Class.
+Hernandiaceae is Class.
+Heshanyan is Class.
+Heshueisuoluo is Class.
+Heteracia is Class.
+Heterocaryum is Class.
+Heterocladium is Class.
+Heterogonium is Class.
+Heterolamium is Class.
+Heteropolygonatum is Class.
+Heterotrichum is Class.
+Hexadica is Class.
+Hexinia is Class.
+Heyderia is Class.
+Heyehuashidishuiqin is Class.
+Hicoria is Class.
+Hierochloe is Class.
+Hildegardia is Class.
+Himalayacalamus is Class.
+Hippeophyllum is Class.
+Hippocastanaceae is Class.
+Hippochaete is Class.
+Hippocratea is Class.
+Hippocrateaceae is Class.
+Hippuridaceae is Class.
+Hiptage is Class.
+Hirculus is Class.
+Hisutsua is Class.
+Homalia is Class.
+Homocodon is Class.
+Homoeatherum is Class.
+Hondbesseion is Class.
+Honghe is Class.
+Honghuagangqudabanshui is Class.
+Hongshan is Class.
+Hongsongwa is Class.
+Hongtashan is Class.
+Hongtonggouluniao is Class.
+Hongtuzhang is Class.
+Hongzehu is Class.
+Hookeriaceae is Class.
+Horaninovia is Class.
+Hordeum is Class.
+Hosiea is Class.
+Houhe is Class.
+Huagaoxi is Class.
+Huaijiuhe is Class.
+Huainanshidi is Class.
+Huaishahe is Class.
+Huashanlinchang is Class.
+Huaxiqingyan is Class.
+Hueidonghongshulin is Class.
+Hueidonglianhuashan is Class.
+Huifengling is Class.
+Huilongzhou is Class.
+Huitengliang is Class.
+Huiyangdunzi is Class.
+Huiyangjinjie is Class.
+Huizeheijinghe is Class.
+Hulthemia is Class.
+Humahe is Class.
+Hunaniopanax is Class.
+Huodendron is Class.
+Huperzia is Class.
+Huperziaceae is Class.
+Hutou is Class.
+Hydrocera is Class.
+Hydrocharis is Class.
+Hydrocharitaceae is Class.
+Hydrolythrum is Class.
+Hydrosme is Class.
+Hydrotrophus is Class.
+Hygroryza is Class.
+Hylocomiastrum is Class.
+Hymenachne is Class.
+Hymenasplenium is Class.
+Hymenophyllaceae is Class.
+Hymenostylium is Class.
+Hypnaceae is Class.
+Hypnea is Class.
+Hypnodendraceae is Class.
+Hypolepidaceae is Class.
+Hypolepis is Class.
+Hypolytrum is Class.
+Hypopterygiaceae is Class.
+Hystrix is Class.
+Ilex is Class.
+Iljinia is Class.
+Indocourtoisia is Class.
+Indofevillea is Class.
+Indonesia is Class.
+Indopolysolenia is Class.
+InflorescenceStructure is Class.
+Structure is purl.org/obo//PATO#.
+Ione is Class.
+Iozoste is Class.
+Iran is Class.
+Iraq is Class.
+Iresine is Class.
+Iridaceae is Class.
+Irina is Class.
+Isachne is Class.
+Ischaemum is Class.
+Isocladiella is Class.
+Isoetaceae is Class.
+Isometrum is Class.
+Isopterygiopsis is Class.
+Iteadaphne is Class.
+Ixeris is Class.
+Jacea is Class.
+Jackiellaceae is Class.
+Jamaica is Class.
+Jamesoniella is Class.
+Jania is Class.
+Japan is Class.
+Jasminonerium is Class.
+Jiangkou is Class.
+Jiangnan is Class.
+Jiangnanlaoyinggou is Class.
+Jiangximatoushan is Class.
+Jianhe eezhangqiu is Class.
+Jianhu jiulongkou is Class.
+Jiaozishan is Class.
+Jiayinkonglonghuashi is Class.
+Jichengmilu is Class.
+Jiejingkou is Class.
+Jigongzhang is Class.
+Jimo is Class.
+Jimushan is Class.
+Jindaoxia is Class.
+Jingangtai is Class.
+Jinghong is Class.
+Jinghua is Class.
+Jingweishidi is Class.
+Jingzhouxiang is Class.
+Jinhuasuoluo is Class.
+Jinshansandao is Class.
+Jiuchongyan is Class.
+Jiufengshan is Class.
+Jiulong is Class.
+Jiushanheisonglin is Class.
+Jiuzhaigou is Class.
+Jixiandizhipoumian is Class.
+Jizushan is Class.
+Jocaste is Class.
+Jubulaceae is Class.
+Juewushan is Class.
+Juglandaceae is Class.
+Jumahe is Class.
+Juncaceae is Class.
+Juncellus is Class.
+Jungermanniaceae is Class.
+Juniperus is Class.
+Junshanhuniaolei is Class.
+Junzishan is Class.
+Justicia is Class.
+Kailosocarpus is Class.
+Kalanchoe is Class.
+Kallymeniaceae is Class.
+Kalunshan is Class.
+Kaschgaria is Class.
+Keluohe is Class.
+Kengia is Class.
+Kengkou is Class.
+Kerria is Class.
+Keteleeria is Class.
+Ketmia is Class.
+Kingidium is Class.
+Kitigorchis is Class.
+Kittelocharis is Class.
+Kleinhovia is Class.
+Kleinia is Class.
+Knema is Class.
+Knorringia is Class.
+Koelzia is Class.
+Koilodepas is Class.
+Kokonoria is Class.
+Kolkwitzia is Class.
+Komana is Class.
+Kornmanniaceae is Class.
+Koyamacalia is Class.
+Krascheninikovia is Class.
+Krascheninnikovia is Class.
+Kubujishamoningtiaojinji is Class.
+Kyllinga is Class.
+Kyrgyzstan is Class.
+Labahe is Class.
+Lactuca is Class.
+Lagedium is Class.
+Lagerstroemia is Class.
+Laggera is Class.
+Lagochilopsis is Class.
+Lagouniaolei is Class.
+Lagunea is Class.
+Lamium is Class.
+Langcun is Class.
+Langsdorffia is Class.
+Languas is Class.
+Langxi is Class.
+Lansium is Class.
+Laodengshan is Class.
+Laohudongshan is Class.
+Laoyingjian is Class.
+Lappa is Class.
+Lapsana is Class.
+Lapsanastrum is Class.
+Laserpitium is Class.
+Lashihai is Class.
+Lasiolytrum is Class.
+Lassonia is Class.
+Lastrea is Class.
+Lastreopsis is Class.
+Latania is Class.
+Lathraea is Class.
+Latouchea is Class.
+Laurencia is Class.
+Laurentia is Class.
+Lavandula is Class.
+Lawiella is Class.
+LeafStructure is Class.
+Structure is purl.org/obo//PATO#.
+Lecanopteris is Class.
+Lecythidaceae is Class.
+Leeaceae is Class.
+Legousia is Class.
+Lejeuneaceae is Class.
+Lemnaceae is Class.
+Lemnopsis is Class.
+Lepechiniella is Class.
+Lepicaune is Class.
+Lepicoleaceae is Class.
+Lepidadenia is Class.
+Lepidagathis is Class.
+Lepidium is Class.
+Lepidolaenaceae is Class.
+Lepidoneuron is Class.
+Lepidostemon is Class.
+Lepidoziaceae is Class.
+Leptatherum is Class.
+Leptochloa is Class.
+Leptocionium is Class.
+Leptocolea is Class.
+Leptohymenium is Class.
+Leptopterigynandrum is Class.
+Leptorumohra is Class.
+Leptostegia is Class.
+Lepturus is Class.
+Lerchea is Class.
+Lerchenfeldia is Class.
+Leskeaceae is Class.
+Leskeella is Class.
+Lettsomia is Class.
+Leucas is Class.
+Leucobryaceae is Class.
+Leucomeris is Class.
+Leucophanes is Class.
+Leucosceptrum is Class.
+Leucosyke is Class.
+Leveillea is Class.
+Liagoraceae is Class.
+Liangtouyang is Class.
+Liangyeshan is Class.
+Liangzihushidi is Class.
+Lianhuachi is Class.
+Lianhuazhen is Class.
+Liansanpao is Class.
+Lianyungangqiansandao is Class.
+Liaoyangjinbaowan is Class.
+Libya is Class.
+Ligularia is Class.
+Ligularia przewalskii is Class.
+Ligustrina is Class.
+Ligustrum is Class.
+Liliiflorae is Class.
+Linaceae is Class.
+Linaria is Class.
+Lindelofia is Class.
+Lindsaeaceae is Class.
+Lingaoshanhujiao is Class.
+Lingqiuqingtun is Class.
+Lingshoumanshan is Class.
+Linosyris is Class.
+Lipinglaoshanjie is Class.
+Lipinglongwangtan is Class.
+Lipinglubeishan is Class.
+Lipingnongxiangshan is Class.
+Lipingsanlong is Class.
+Lipingsanshengpo is Class.
+Lipingwulijiang is Class.
+Lipingwulongshan is Class.
+Liqigou is Class.
+Liquidambar is Class.
+Liriope is Class.
+Liriopsis is Class.
+Lishan is Class.
+Lithostegia is Class.
+Liudingshan is Class.
+Liuhe is Class.
+Liujiangpandi is Class.
+Liupanshan is Class.
+Liuyangdaweishan is Class.
+Liwangzhang is Class.
+Lixin is Class.
+Lolium is Class.
+Lonchitis is Class.
+Longdouxie is Class.
+Longganhu is Class.
+Longhushanzhonghuaqiushaya is Class.
+Longmenhezi is Class.
+Longmenxidani is Class.
+Longnanjinpenshan is Class.
+Longposhan is Class.
+Longshanluota is Class.
+Longshidian is Class.
+Longwan is Class.
+Longxihongkou is Class.
+Lophatherum is Class.
+Lophiocarpus is Class.
+Lopidium is Class.
+Lorinseria is Class.
+Lourea is Class.
+Lowiaceae is Class.
+Loxogrammaceae is Class.
+Loxogramme is Class.
+Lucaea is Class.
+Luculia is Class.
+Ludolfia is Class.
+Ludwigia is Class.
+Luffa is Class.
+Lukuhe is Class.
+Luliangcaiseshalin is Class.
+Lunularia is Class.
+Luofushan is Class.
+Luojishan is Class.
+Luokeng is Class.
+Luokou is Class.
+Luoxu is Class.
+Lycium is Class.
+Lycopodiaceae is Class.
+Lycopodiastrum is Class.
+Lycopsis is Class.
+Lygodium is Class.
+Lythraceae is Class.
+Machaerina is Class.
+Macraea is Class.
+Macromitrium is Class.
+Magnolia is Class.
+Majiashan is Class.
+Malachium is Class.
+Malawi is Class.
+Malcolmia is Class.
+Malipolaojunshan is Class.
+Mallotus is Class.
+Malpighia is Class.
+Malpighiaceae is Class.
+Malus is Class.
+Malvaceae is Class.
+Malvastrum is Class.
+Mamize is Class.
+Manglietiastrum is Class.
+Manniella is Class.
+Maoniuyan is Class.
+Mapouria is Class.
+Mappa is Class.
+Marantaceae is Class.
+Marattiaceae is Class.
+Marsupella is Class.
+Mastersia is Class.
+Mastixiaceae is Class.
+Mastrucium is Class.
+Matsumurella is Class.
+Mattia is Class.
+Mattiastrum is Class.
+Medicago is Class.
+Megozipa is Class.
+Meibomia is Class.
+Meiothecium is Class.
+Meizhourenzishi is Class.
+Melastomataceae is Class.
+Meliaceae is Class.
+Melicope is Class.
+Mella is Class.
+Menispermaceae is Class.
+Menstruocalamus is Class.
+Metanemone is Class.
+Meteoriaceae is Class.
+Meteoriella is Class.
+Meteorium is Class.
+Metzgeriaceae is Class.
+Mianshan is Class.
+Microcampylopus is Class.
+Microlespedeza is Class.
+Micropodium is Class.
+Microspermae is Class.
+Microtrichomanes is Class.
+Mihoudong is Class.
+Milexishan is Class.
+Miliangdongziranbaohuqu is Class.
+Mingyue is Class.
+Mirabilis is Class.
+Mischocarpus is Class.
+Mitrasacme is Class.
+Mniaceae is Class.
+Mofanghe is Class.
+Moisture plants is Class.
+Molecular is Class.
+Molluginaceae is Class.
+Monocelastrus is Class.
+Monostroma is Class.
+Monostromataceae is Class.
+Monotropastrum is Class.
+Mouretia is Class.
+Muhlenbergia is Class.
+Munchausia is Class.
+Murdannia is Class.
+Muricococcum is Class.
+Myoporaceae is Class.
+Myosotis is Class.
+Myristicaceae is Class.
+Myrmechis is Class.
+Myrsinaceae is Class.
+Myrsine is Class.
+Myrtaceae is Class.
+Myrtiflorae is Class.
+Myurella is Class.
+Myuriaceae is Class.
+Nabalus is Class.
+Najadaceae is Class.
+Nanaohouniao is Class.
+Nanbeihe is Class.
+Nanbiancundizhipoumian is Class.
+Nanchangsanhu is Class.
+Nanchongtaiheluniao is Class.
+Nandaduzigou is Class.
+Nandagangshidiheniaolei is Class.
+Nanfengmian is Class.
+Nangunhe is Class.
+Nanling is Class.
+Nannoglottis is Class.
+Nanocnide is Class.
+Nanpenghe is Class.
+Nanshan is Class.
+Nanwenghe is Class.
+Nanyangkonglongdanhuashiqaun is Class.
+Nanyuehengshan is Class.
+Naolihe is Class.
+Naomugeng is Class.
+Napahai is Class.
+Nardosmia is Class.
+Nardus is Class.
+Narenga is Class.
+Nasturtium is Class.
+Natsiatum is Class.
+Nauru is Class.
+Neckera is Class.
+Neckeraceae is Class.
+Neckeropsis is Class.
+Neilingding-futian is Class.
+Neimenggumukui is Class.
+Neiqiucishenglin is Class.
+Neixiangbaotianman is Class.
+Nelipus is Class.
+Nelumbonaceae is Class.
+Nemalion is Class.
+Nemastomataceae is Class.
+Nemedra is Class.
+Nemocharis is Class.
+Neoaulacolepis is Class.
+Neocheiropteris is Class.
+Neohusnotia is Class.
+Neolamarckia is Class.
+Neomeris is Class.
+Neomolinia is Class.
+Neopicrorhiza is Class.
+Neopogonatum is Class.
+Neottia is Class.
+Nepal is Class.
+Nepenthes is Class.
+Nepeta is Class.
+Nephelochloa is Class.
+Nephrodium is Class.
+Nephrolepidaceae is Class.
+Nephrolepis is Class.
+Neurogramme is Class.
+Neuronia is Class.
+Neurosorus is Class.
+Nevskiella is Class.
+Neyraudia is Class.
+Niaodiaoshan is Class.
+Nicaragua is Class.
+Nicolaia is Class.
+Nidingdaxiagu is Class.
+Nigella is Class.
+Nigrina is Class.
+Nihewan is Class.
+Nimmoia is Class.
+Ningdulianhuashan is Class.
+Ningxitianhuashan is Class.
+Nintooa is Class.
+Nipa is Class.
+Nitophyllum is Class.
+Niuluohe is Class.
+Niutoushan is Class.
+Nivieria is Class.
+Nixilong is Class.
+Niyangshan is Class.
+Nonghua is Class.
+North Korea is Class.
+Nosema is Class.
+Nothodoritis is Class.
+Nothoperanema is Class.
+Nothoscordum is Class.
+Notochaete is Class.
+Notogramma is Class.
+Notolepeum is Class.
+Notothyladaceae is Class.
+Nuihonia is Class.
+Nuomenhan is Class.
+Nuoshuihe is Class.
+Nvyatongdao is Class.
+Nyctaginaceae is Class.
+Nyctago is Class.
+Nymphaea is Class.
+Nymphaeaceae is Class.
+Obione is Class.
+Ochnaceae is Class.
+Octomeria is Class.
+Ocymum is Class.
+Odina is Class.
+Oedipodiaceae is Class.
+Oedipodium is Class.
+Olacaceae is Class.
+Oldenlandia is Class.
+Oleaceae is Class.
+Oleandra is Class.
+Oleandraceae is Class.
+Oligosporus is Class.
+Oligostachyum is Class.
+Omalia is Class.
+Omalotheca is Class.
+Oman is Class.
+Ombrocharis is Class.
+Onagra is Class.
+Onagraceae is Class.
+Oncoba is Class.
+Oncus is Class.
+Onocleaceae is Class.
+Onopordum is Class.
+Operculina is Class.
+Ophelia is Class.
+Ophioderma is Class.
+Ophioglossaceae is Class.
+Ophiorrhiza is Class.
+Ophiuros is Class.
+Opiliaceae is Class.
+Opisthopappus is Class.
+Oplopanax is Class.
+Opulaster is Class.
+Orchidaceae is Class.
+Oreochorte is Class.
+Oreocnide is Class.
+Oreodoxa is Class.
+Oreogenia is Class.
+Oreopanax is Class.
+Orithyia is Class.
+Ornithogalum is Class.
+Ornithopus is Class.
+Orobanchaceae is Class.
+Orobanche is Class.
+Orophea is Class.
+Oroxylum is Class.
+Orthodicranum is Class.
+Orthodon is Class.
+Orthopogon is Class.
+Orthoraphium is Class.
+Orthothecium is Class.
+Orthotrichaceae is Class.
+Oshimella is Class.
+Osmunda is Class.
+Osmundales is Class.
+Osmundastrum is Class.
+Ostericum is Class.
+Ostrya is Class.
+Ostryopsis is Class.
+Osyris is Class.
+Ottelia is Class.
+Oxymitra is Class.
+Oxyspora is Class.
+Pachygone is Class.
+Pachylarnax is Class.
+Paederia is Class.
+Paeoniaceae is Class.
+Paesia is Class.
+Pallaviciniaceae is Class.
+Pandanaceae is Class.
+Panderia is Class.
+Panshan is Class.
+Panyuqu is Class.
+Panzhihuasutiesutie is Class.
+Papaveraceae is Class.
+Papeda is Class.
+Parabarium is Class.
+Paracaryum is Class.
+Paradavallodes is Class.
+Paradombeya is Class.
+Paraglycine is Class.
+Paraisometrum is Class.
+Paralagarosolen is Class.
+Paramanglietia is Class.
+Paramomum is Class.
+Parapentace is Class.
+Paraquilegia is Class.
+Paraschistochila is Class.
+Parashorea is Class.
+Parasitipomoea is Class.
+Paratropia is Class.
+Parietaria is Class.
+Parrotia is Class.
+Parryodes is Class.
+Passerina is Class.
+Passifloraceae is Class.
+Patis is Class.
+Patrinia is Class.
+Pelargonium is Class.
+Pelekium is Class.
+Pelliaceae is Class.
+Pellionia is Class.
+Pengboheijinghe is Class.
+Pennisetum is Class.
+Pentapetes is Class.
+Pentaphylax is Class.
+Pentaphylloides is Class.
+Pentaphyllon is Class.
+Pentapyxis is Class.
+Pentarhizidium is Class.
+Pentas is Class.
+Pentasacme is Class.
+Penzigiella is Class.
+Peplis is Class.
+Peranemaceae is Class.
+PerianthStructure is Class.
+Structure is purl.org/obo//PATO#.
+Periclymenum is Class.
+Perilepta is Class.
+Perilla is Class.
+Peripterygium is Class.
+Peristrophe is Class.
+Pertya is Class.
+Petasites is Class.
+Petrosavia is Class.
+Petrosimonia is Class.
+Phaca is Class.
+Phacellaria is Class.
+Phaenosperma is Class.
+Phaeomeria is Class.
+Pharaceum is Class.
+Phaulopsis is Class.
+Phelipaea is Class.
+Phelipanche is Class.
+Phillyrea is Class.
+Philydraceae is Class.
+Philydrum is Class.
+Phlebochiton is Class.
+Phlomoides is Class.
+Phrymaceae is Class.
+Phycodrys is Class.
+Phyllitis is Class.
+Phylloboea is Class.
+Phyllocactus is Class.
+Phymatodes is Class.
+Physcomitrella is Class.
+Physiotium is Class.
+Physkium is Class.
+Phytolaccaceae is Class.
+Picrasma is Class.
+Picris is Class.
+Picrorhiza is Class.
+Piduhe is Class.
+Pieris is Class.
+Pilea is Class.
+Pinaceae is Class.
+Pinanga is Class.
+Pingfongjie is Class.
+Pinghaihaitanyan is Class.
+Pingshui is Class.
+Pingtanzhongguohou is Class.
+Piperaceae is Class.
+Piperales is Class.
+Pipturus is Class.
+Pishanling is Class.
+Pittosporaceae is Class.
+Pittosporum is Class.
+Pituranthos is Class.
+Pityrogramma is Class.
+Plagiochasma is Class.
+Plagiochila is Class.
+Plagiochilaceae is Class.
+Plagiopus is Class.
+Plagiotheciaceae is Class.
+Planera is Class.
+Platanaceae is Class.
+Platycarya is Class.
+Platyceriaceae is Class.
+Platygyrium is Class.
+Platythamnion is Class.
+Pleiarina is Class.
+Pleione is Class.
+Pleiosorbus is Class.
+Pleomele is Class.
+Pleonosporium is Class.
+Plepeltis is Class.
+Pleuridium is Class.
+Pleurochaete is Class.
+Pleurogramma is Class.
+Pleuropteropyrum is Class.
+Pleurosoriopsidaceae is Class.
+Pleuroweisia is Class.
+Pleuroziopsis is Class.
+Plocamiaceae is Class.
+Plumbaginaceae is Class.
+Plumbago is Class.
+Poaceae is Class.
+Pocockia is Class.
+Podocarpaceae is Class.
+Podocarpales is Class.
+Podoon is Class.
+Podostemaceae is Class.
+Pogocybe is Class.
+Pogonotrophe is Class.
+Poikilospermum is Class.
+Poivrea is Class.
+Poland is Class.
+Polemoniaceae is Class.
+PoliticalRegion is Class.
+Pollia is Class.
+Pollinidium is Class.
+Polychilos is Class.
+Polygalaceae is Class.
+Polygonales is Class.
+Polygonatum is Class.
+Polypodiastrum is Class.
+Polypodium is Class.
+Polypodium vulgare is Class.
+Polyscias is Class.
+Polyspora is Class.
+Polystichopsis is Class.
+Polystichum is Class.
+Polytrias is Class.
+Polytrichastrum is Class.
+Polyura is Class.
+Pomatosace is Class.
+Pommereschea is Class.
+Popospermum is Class.
+Popowia is Class.
+Populus tremula is Class.
+Porella is Class.
+Porolabium is Class.
+Portulaca is Class.
+Portulacaceae is Class.
+Potamogetonaceae is Class.
+Pottiaceae is Class.
+Pouzolzia is Class.
+Poyanghuchangjiangjiangtun is Class.
+Prasiolaceae is Class.
+Preissia is Class.
+Premna is Class.
+Primulales is Class.
+Prismatocarpus is Class.
+Pritchardia is Class.
+Prosaptia is Class.
+Prosopis is Class.
+Prosorus is Class.
+Protomonostroma is Class.
+Psammochloa is Class.
+Psammosilene is Class.
+Pseudarthria is Class.
+Pseudechinolaena is Class.
+Pseudehretia is Class.
+Pseudixus is Class.
+Pseudobastardia is Class.
+Pseudodissochaeta is Class.
+Pseudoeurya is Class.
+Pseudolepicoleaceae is Class.
+Pseudopanax is Class.
+Pseudosasa is Class.
+Pseudosorghum is Class.
+Pseudostreblus is Class.
+Pseudotaxiphyllum is Class.
+Psilopeganum is Class.
+Psilopogon is Class.
+Psilotaceae is Class.
+Psilotrichopsis is Class.
+Psychrogeton is Class.
+Pteridaceae is Class.
+Pteridiaceae is Class.
+Pteridrys is Class.
+Pterigynandrum is Class.
+Pterobryum is Class.
+Pterococcus is Class.
+Pteroptychia is Class.
+Pterostyrax is Class.
+Pterygophyllum is Class.
+Pterygota is Class.
+Ptilidiaceae is Class.
+Ptilopteris is Class.
+Ptychomitriaceae is Class.
+Ptychomniaceae is Class.
+Puccinellia is Class.
+Puduhe is Class.
+Pulicaria is Class.
+Pulingpanlongge is Class.
+Pulmonaria is Class.
+Pycnostelma is Class.
+Pylaisia is Class.
+Pylaisiella is Class.
+Pyrenaria is Class.
+Pyrenocarpa is Class.
+Pyrrosia is Class.
+Qianfoshan is Class.
+Qilinwutaishan is Class.
+Qiliqinhe is Class.
+Qinghua is Class.
+Qinglongshan is Class.
+Qingsong is Class.
+Qingtan is Class.
+Qiqueshan is Class.
+Qishan is Class.
+Qitangshan is Class.
+Qiushuishan is Class.
+Qixin is Class.
+Qixingken is Class.
+Qizhiling is Class.
+Qizimeishan is Class.
+Quercifilix is Class.
+Qutianhu is Class.
+Racomitrium is Class.
+Radicula is Class.
+Radulaceae is Class.
+Rafflesiaceae is Class.
+Ranalisma is Class.
+Ranunculaceae is Class.
+Raolihe is Class.
+Raphia is Class.
+Rapinia is Class.
+Ravenala is Class.
+Reinwardtiodendron is Class.
+Restionaceae is Class.
+Reynoutria is Class.
+Rhagadiolus is Class.
+Rhamnaceae is Class.
+Rhamnoneuron is Class.
+Rhapis is Class.
+Rhipiliopsis is Class.
+Rhizoclonium is Class.
+Rhizogoniaceae is Class.
+Rhizophyllidaceae is Class.
+Rhodobryum is Class.
+Rhodophyceae is Class.
+Rhodymeniaceae is Class.
+Rhynchelytrum is Class.
+Rhynchosia is Class.
+Rhynchospora is Class.
+Rhytachne is Class.
+Rhytidiadelphus is Class.
+Rhytidium is Class.
+Rhytispermum is Class.
+Ribaxueshan is Class.
+Ribes is Class.
+Riccardia is Class.
+Ricciaceae is Class.
+Ricciella is Class.
+Ricciocarpus is Class.
+Richardsonia is Class.
+Richella is Class.
+Richeriella is Class.
+Richteria is Class.
+Riganqiaoshidi is Class.
+Rindera is Class.
+Rinorea is Class.
+Ripidium is Class.
+Rivina is Class.
+Rkazeyanrong is Class.
+Robiquetia is Class.
+Rochelia is Class.
+Roegneria is Class.
+Romania is Class.
+Rompelia is Class.
+Rongchengtianee is Class.
+RootStructure is Class.
+Structure is purl.org/obo//PATO#.
+Rosaceae is Class.
+Rostrinucula is Class.
+Rourea is Class.
+Roureopsis is Class.
+Roydsia is Class.
+Rubia is Class.
+Rubiaceae is Class.
+Rubus is Class.
+Ruchihe is Class.
+Rumohra is Class.
+Ruscus is Class.
+Russia is Class.
+Russowia is Class.
+Ruta is Class.
+Réunion is Class.
+Sabal is Class.
+Sabia is Class.
+Sabiaceae is Class.
+Sabina is Class.
+Sabinella is Class.
+Saccharum is Class.
+Sacciolepis is Class.
+Saccolabiopsis is Class.
+Saccolabium is Class.
+Sagenia is Class.
+Sageretia is Class.
+Sagotia is Class.
+Saguerus is Class.
+Sagus is Class.
+Sahlingia is Class.
+Saint Lucia is Class.
+Saiwudang is Class.
+Sakuraia is Class.
+Salacca is Class.
+Salacia is Class.
+Salicales is Class.
+Salix is Class.
+Salomonia is Class.
+Salsola is Class.
+Salvadoraceae is Class.
+Salvia is Class.
+Salvinia is Class.
+Salviniaceae is Class.
+Salviniales is Class.
+Salweenia is Class.
+Samanea is Class.
+Sambucus is Class.
+Samoa is Class.
+Samolus is Class.
+Sampacca is Class.
+Sanbaishan is Class.
+Sanchezia is Class.
+Sandagu is Class.
+Sandaogouciqiulin is Class.
+Sanduoqiaolulei is Class.
+Sanfengshan is Class.
+Sangganhe is Class.
+Sanggouwan is Class.
+Sanguinaria is Class.
+Sanguisorba is Class.
+Sanicula is Class.
+Saniculiphyllum is Class.
+Sanjiang is Class.
+Sankang is Class.
+Sansevieria is Class.
+Sanshiba is Class.
+Sanshiliujiaohu is Class.
+Sanvitalia is Class.
+Sanxiandong is Class.
+Sanya baoyu is Class.
+Sanyahe hongshulin is Class.
+Sapindaceae is Class.
+Sapindales is Class.
+Sapindopsis is Class.
+Sapindus is Class.
+Saponaria is Class.
+Saposhnikovia is Class.
+Sapotaceae is Class.
+Sapria is Class.
+Saprosma is Class.
+Saraca is Class.
+Sarcandra is Class.
+Sarcocephalus is Class.
+Sarcochlamys is Class.
+Sarcococca is Class.
+Sarcodia is Class.
+Sarcodiaceae is Class.
+Sarcodum is Class.
+Sarcoglyphis is Class.
+Sarcomitrium is Class.
+Sarcopyramis is Class.
+Sarcoscypnus is Class.
+Sarcosperma is Class.
+Sarcostemma is Class.
+Sarcozygium is Class.
+Sargentodoxa is Class.
+Saribus is Class.
+Sarothamnus is Class.
+Sarothra is Class.
+Sarraceniales is Class.
+Saruma is Class.
+Sasa is Class.
+Sasaokaea is Class.
+Sassafras is Class.
+Satureja is Class.
+Satyrium is Class.
+Sauchia is Class.
+Saudi Arabia is Class.
+Sauropus is Class.
+Saururaceae is Class.
+Saururopsis is Class.
+Saururus is Class.
+Saussurea is Class.
+Saxifraga is Class.
+Saxifragaceae is Class.
+Saxiglossum is Class.
+Scabridens is Class.
+Scandicium is Class.
+Scandix is Class.
+Scapania is Class.
+Scapaniaceae is Class.
+Scapaniella is Class.
+Scariola is Class.
+Scepa is Class.
+Sceptridium is Class.
+Sceptrocnide is Class.
+Sceura is Class.
+Schaffneria is Class.
+Schanginia is Class.
+Schaueria is Class.
+Schedonorus is Class.
+Schelhammeria is Class.
+Schellolepis is Class.
+Scheuchzeria is Class.
+Scheuchzeriaceae is Class.
+Schiffneria is Class.
+Schima is Class.
+Schisandra is Class.
+Schisandraceae is Class.
+Schischkinia is Class.
+Schisma is Class.
+Schismus is Class.
+Schistidium is Class.
+Schistocaryum is Class.
+Schistochila is Class.
+Schistochilaceae is Class.
+Schistocodon is Class.
+Schizachne is Class.
+Schizachyrium is Class.
+Schizaeaceae is Class.
+Schizocapsa is Class.
+Schizocodon is Class.
+Schizomitrium is Class.
+Schizomussaenda is Class.
+Schizonepeta is Class.
+Schizopepon is Class.
+Schizophragma is Class.
+Schizostachyum is Class.
+Schizotheca is Class.
+Schizymenia is Class.
+Schizymeniaceae is Class.
+Schlagintweitiella is Class.
+Schmalhausenia is Class.
+Schmidelia is Class.
+Schmidtia is Class.
+Schnabelia is Class.
+Schoberia is Class.
+Schoenoplectus is Class.
+Schoenorchis is Class.
+Schoenoxiphium is Class.
+Schoepfia is Class.
+Schoepfiopsis is Class.
+Schofieldiella is Class.
+Schrankia is Class.
+Schrenkia is Class.
+Schrophulariales is Class.
+Schwetschkeopsis is Class.
+Sciadophyllum is Class.
+Sciaphila is Class.
+Sciaromiopsis is Class.
+Scinaia is Class.
+Scindapsus is Class.
+Sciodaphyllum is Class.
+Sciophytes is Class.
+Scirpus is Class.
+Scitamineae is Class.
+Sclerandrium is Class.
+Scleria is Class.
+Sclerochloa is Class.
+Scleroglossum is Class.
+Scleromitrion is Class.
+Scleropyrum is Class.
+Sclerostachya is Class.
+Sclerostylis is Class.
+Scoparia is Class.
+Scopelophila is Class.
+Scorzonera is Class.
+Scrophularia is Class.
+Scrophulariaceae is Class.
+Scutia is Class.
+Scyphellandra is Class.
+Seaforthia is Class.
+Sebaea is Class.
+Sebdenia is Class.
+Sebdeniaceae is Class.
+Sebifera is Class.
+Secale is Class.
+Sechium is Class.
+Securidaca is Class.
+Securinega is Class.
+Sedum is Class.
+Seguieria is Class.
+Sehima is Class.
+Sekika is Class.
+Selaginella is Class.
+Selaginellaceae is Class.
+Selaginellales is Class.
+Selenipedilum is Class.
+Selenocera is Class.
+Selenodesmium is Class.
+Seligeraceae is Class.
+Seligeria is Class.
+Selincuoheijinghe is Class.
+Selliguea is Class.
+Sellulocalamus is Class.
+Sematophyllaceae is Class.
+Semecarpus is Class.
+Semeiocardium is Class.
+Semeiostachys is Class.
+SemiArid is Class.
+SemiHumid is Class.
+Semiaquilegia is Class.
+Semiarundinaria is Class.
+Semiliquidambar is Class.
+Semiphajus is Class.
+Semnostachya is Class.
+Sempervivella is Class.
+Sempervivum is Class.
+Senacia is Class.
+Sendtnera is Class.
+Senebiera is Class.
+Senecillis is Class.
+Senecio is Class.
+Senegal is Class.
+Senna is Class.
+Sequence is Class.
+Sequence SubClassOf Molecular.
+Serapias is Class.
+Serialbizzia is Class.
+Sericocalyx is Class.
+Seriphidium is Class.
+Serissa is Class.
+Serpicula is Class.
+Serrafalcus is Class.
+Serraticardia is Class.
+Serratula is Class.
+Sersalisia is Class.
+Sesamum is Class.
+Sesbania is Class.
+Sesbania bispinosa is Class.
+Seselopsis is Class.
+Sesuvium is Class.
+Setaria is Class.
+Sethia is Class.
+Setiacis is Class.
+Setulocarya is Class.
+Seutera is Class.
+Severinia is Class.
+Seychelles is Class.
+Shaanxi is Class.
+Shahu is Class.
+Shajiaodongyingshan is Class.
+Shandong is Class.
+Shangbanqiao is Class.
+Shangding is Class.
+Shangxi is Class.
+Shangyouwuzhifeng is Class.
+Shanhe is Class.
+Shanhouchachang is Class.
+Shaniodendron is Class.
+Shankou hongshulin is Class.
+Shanmenshansutiejue is Class.
+Shanshuping is Class.
+Shanwang gushengwuhuashi is Class.
+Shanxi is Class.
+Shapotou is Class.
+Sharpiella is Class.
+Sharwendou is Class.
+Shatianshanzhu is Class.
+Shawolinchang is Class.
+Shaxi is Class.
+Sheareria is Class.
+Shedao-laotieshan is Class.
+Shelihushuiku is Class.
+Shengdengshan is Class.
+Shengrenshan is Class.
+Shenhuwanhaidigusenlinyizhi is Class.
+Shenmuchoubai is Class.
+Shenyangbaiqingzhai is Class.
+Shenyangwulongshan is Class.
+Shenyangxianzihu is Class.
+Sheshangzhenzhushan is Class.
+Shexianqingliangfeng is Class.
+Shibachongxi is Class.
+Shibalianshan is Class.
+Shibalichangxia is Class.
+Shibasuo is Class.
+Shibataea is Class.
+Shihuadong is Class.
+Shiia is Class.
+Shijiuhu is Class.
+Shilin is Class.
+Shilishan is Class.
+Shimashuiku is Class.
+Shimenhupingshan is Class.
+Shimenshan is Class.
+Shitouhezi is Class.
+Shizi is Class.
+Shizishan is Class.
+Shorea is Class.
+Shortia is Class.
+Shoulushan is Class.
+Shueifumiao is Class.
+Shuichengyushe is Class.
+Shuijiang is Class.
+Shuimogou is Class.
+Shuimushan is Class.
+Shulehe is Class.
+Shunchnegquxianrendong is Class.
+Shuozhouzijinshan is Class.
+Shutereia is Class.
+Shuteria is Class.
+Sibaoshan is Class.
+Sibbaldia is Class.
+Sibiraea is Class.
+Sicyos is Class.
+Sida is Class.
+Sideroxylon is Class.
+Siegesbeckia is Class.
+Sierra Leone is Class.
+Sieversia is Class.
+Siguliangshan is Class.
+Sihaidian is Class.
+Silaus is Class.
+Silene is Class.
+Siliquamomum is Class.
+Silybum is Class.
+Simaba is Class.
+Simaroubaceae is Class.
+Simianshan is Class.
+Similisinocarum is Class.
+Sinacalia is Class.
+Sinadoxa is Class.
+Sinansiyetun is Class.
+Sinapis is Class.
+Sinarundinaria is Class.
+Sindechites is Class.
+Sindora is Class.
+Sinephropteris is Class.
+Singapore is Class.
+Sinia is Class.
+Sinoadina is Class.
+Sinoarundinaria is Class.
+Sinobacopa is Class.
+Sinobambusa is Class.
+Sinoboea is Class.
+Sinocalamus is Class.
+Sinochasea is Class.
+Sinocitrus is Class.
+Sinocladia is Class.
+Sinocrassula is Class.
+Sinodielsia is Class.
+Sinodolichos is Class.
+Sinofranchetia is Class.
+Sinojackia is Class.
+Sinojohnstonia is Class.
+Sinojohnstonia chekiangensis is Class.
+Sinolimprichtia is Class.
+Sinomalus is Class.
+Sinomanglietia is Class.
+Sinomarsdenia is Class.
+Sinomenium is Class.
+Sinopanax is Class.
+Sinoplagiospermum is Class.
+Sinopodophyllum is Class.
+Sinopora is Class.
+Sinopteridaceae is Class.
+Sinopteris is Class.
+Sinopyrenaria is Class.
+Sinoradlkofera is Class.
+Sinosassafras is Class.
+Sinosenecio is Class.
+Sinosophiopsis is Class.
+Sinowilsonia is Class.
+Sinskea is Class.
+Sipingshanmenzhongshengdaihuoshan is Class.
+Siraitos is Class.
+Sisarum is Class.
+Sishuihe is Class.
+Sison is Class.
+Sisymbriopsis is Class.
+Sitodium is Class.
+Sium is Class.
+Siwangzhang is Class.
+Sixiannao is Class.
+Siziwangqidongwuhuashi is Class.
+Siziwangqihuyanglin is Class.
+Skimmia is Class.
+Skinneria is Class.
+Slackia is Class.
+Sladeniaceae is Class.
+Slateria is Class.
+Sloanea is Class.
+Slovakia is Class.
+Slovenia is Class.
+Smelowskia is Class.
+Smilax is Class.
+Smithia is Class.
+Smithiodendron is Class.
+Smithorchis is Class.
+Soja is Class.
+Solanaceae is Class.
+Solandra is Class.
+Solanum is Class.
+Solanum melongena is Class.
+Solena is Class.
+Solenostigma is Class.
+Solidago is Class.
+Solieria is Class.
+Solieriaceae is Class.
+Soliva is Class.
+Sonchus is Class.
+Sonchus arvensis is Class.
+Songfengshan is Class.
+Songhuaba is Class.
+Songhuajiangsanhu is Class.
+Songrong is Class.
+Songshan is Class.
+Songzhan is Class.
+Sophiopsis is Class.
+Sopubia is Class.
+Sorbus is Class.
+Sorella is Class.
+Sorghum is Class.
+Sorghum halepense is Class.
+Sorolepidium is Class.
+Soroseris is Class.
+Souliea is Class.
+South Africa is Class.
+South Korea is Class.
+South Sudan is Class.
+Southbya is Class.
+Soyeria is Class.
+Spain is Class.
+Spanioptilon is Class.
+Sparganiaceae is Class.
+Sparganium is Class.
+Spathiflorae is Class.
+Spathodea is Class.
+Spathyema is Class.
+Species is Class.
+Specularia is Class.
+Speirema is Class.
+Spenceria is Class.
+Speranskia is Class.
+Spermacoce is Class.
+Spermadictyon is Class.
+Sphaeralcea is Class.
+Sphaerocarya is Class.
+Sphaerocaryum is Class.
+Sphaerocephalus is Class.
+Sphaerocionium is Class.
+Sphaerococcus is Class.
+Sphaeromariscus is Class.
+Sphaerophysa is Class.
+Sphaeropteris is Class.
+Sphaerostema is Class.
+Sphaerostephanos is Class.
+Sphaerotheciella is Class.
+Sphaerotorrhiza is Class.
+Sphaerotylos is Class.
+Sphagnaceae is Class.
+Sphagnales is Class.
+Sphagnum is Class.
+Sphallerocarpus is Class.
+Sphenoclea is Class.
+Sphenodesme is Class.
+Sphenomeris is Class.
+Spiesia is Class.
+Spinacia is Class.
+Spinifex is Class.
+Spinovitis is Class.
+Spiradiclis is Class.
+Spiridens is Class.
+Spiridentaceae is Class.
+Spirodela is Class.
+Spirospatha is Class.
+Splachnaceae is Class.
+Splachnobryum is Class.
+Spodiopogon is Class.
+Spongiocarpella is Class.
+Sporobolus is Class.
+Sporoxeia is Class.
+Sportella is Class.
+Spruceanthus is Class.
+Spuriopimpinella is Class.
+Spyridia is Class.
+Stachygynandrum is Class.
+Stachyopogon is Class.
+Stachyopsis is Class.
+Stachyphrynium is Class.
+Stachys is Class.
+Stachyuraceae is Class.
+Stachyurus is Class.
+Staintoniella is Class.
+Stapelia is Class.
+Stapfiophyton is Class.
+Staphylea is Class.
+Staphyleaceae is Class.
+Statice is Class.
+Stauntonia is Class.
+Staurochilus is Class.
+Stauroglottis is Class.
+Staurogyne is Class.
+Stauropsis is Class.
+Staurospermum is Class.
+Stebbinsia is Class.
+Steenhammera is Class.
+Stegnogramma is Class.
+Stegonia is Class.
+Stegosia is Class.
+Stellaria is Class.
+Stellariomnium is Class.
+Stellera is Class.
+Stelleropsis is Class.
+Stelmocrypton is Class.
+StemStructure is Class.
+Structure is purl.org/obo//PATO#.
+Stemodia is Class.
+Stemona is Class.
+Stemonaceae is Class.
+Stemonurus is Class.
+Stenactis is Class.
+Stenochlaena is Class.
+Stenochlaenaceae is Class.
+Stenocoelium is Class.
+Stenolejeunea is Class.
+Stenophragma is Class.
+Stenoseris is Class.
+Stenosolenium is Class.
+Stenotaphrum is Class.
+Stenotropis is Class.
+Stephanachne is Class.
+Stephanandra is Class.
+Stephania is Class.
+Stephanocoma is Class.
+Stephanotis is Class.
+Sterculia is Class.
+Sterculiaceae is Class.
+Stereodon is Class.
+Stereophyllum is Class.
+Stereosandra is Class.
+Stereospermum is Class.
+Sterigmostemum is Class.
+Steris is Class.
+Steudelella is Class.
+Steudnera is Class.
+Stevenia is Class.
+Stewartia is Class.
+Sticherus is Class.
+Stictocardia is Class.
+Stigmarota is Class.
+Stigmatodactylus is Class.
+Stilago is Class.
+Stillingia is Class.
+Stilpnolepis is Class.
+Stilpnophleum is Class.
+Stimpsonia is Class.
+Stipa is Class.
+Stipagrostis is Class.
+Stipellaria is Class.
+Stixis is Class.
+Stoechas is Class.
+Stokesiella is Class.
+Strabonia is Class.
+Stracheya is Class.
+Straminergon is Class.
+Stranvaesia is Class.
+Stratiotes is Class.
+Streblotrichum is Class.
+Streblus is Class.
+Strelitzia is Class.
+Strepsilejeunea is Class.
+Strepsilobus is Class.
+Streptocarpus is Class.
+Streptocaulon is Class.
+Streptolirion is Class.
+Streptopus is Class.
+Striga is Class.
+Strigosella is Class.
+Strobilanthes is Class.
+Strobus is Class.
+Stroganowia is Class.
+Strongylodon is Class.
+Strophanthus is Class.
+Strophioblachia is Class.
+Strophiostoma is Class.
+Struckia is Class.
+Struthiopteris is Class.
+Struvea is Class.
+Strychnos is Class.
+Stylidiaceae is Class.
+Stylidium is Class.
+Stylocoryna is Class.
+Stylodiscus is Class.
+Stylonema is Class.
+Styracaceae is Class.
+Styrax is Class.
+Styrophyton is Class.
+Suaeda is Class.
+Suardia is Class.
+Sublimia is Class.
+Sudan is Class.
+Suffrenia is Class.
+Suhongtu is Class.
+Suiyangdahe is Class.
+Suiyanghoushuihou is Class.
+Suiyanghuoqiuba is Class.
+Suiyangshanmujing is Class.
+Suiyangshipanya is Class.
+Suiyangwanlishuiku is Class.
+Suizhongshazhihaianheheiyangshengtai is Class.
+Sumbavia is Class.
+Sumbaviopsis is Class.
+Sumbulus is Class.
+Sumuhe is Class.
+Sumushan is Class.
+Sunania is Class.
+Sunipia is Class.
+Sunitepanyang is Class.
+Sunwuyanjiang is Class.
+Suochong is Class.
+Suoluoshan is Class.
+Suoxiyu is Class.
+Surenus is Class.
+Suriana is Class.
+Suriname is Class.
+Susu is Class.
+Suxianling is Class.
+Suyahushidi is Class.
+Suzukia is Class.
+Swainsona is Class.
+Swaziland is Class.
+Sweden is Class.
+Sweetzia is Class.
+Swertia is Class.
+Swida is Class.
+Swietenia is Class.
+Switzerland is Class.
+Syagrus is Class.
+Sycopsis is Class.
+Sykesia is Class.
+Syllisium is Class.
+Symblepharis is Class.
+Symingtonia is Class.
+Sympagis is Class.
+Symphyllia is Class.
+Symphyllocarpus is Class.
+Symphyocladia is Class.
+Symphyoglossum is Class.
+Symphyosepalum is Class.
+Symphytum is Class.
+Symplocarpus is Class.
+Symplocos is Class.
+Synaphlebium is Class.
+Syncalathium is Class.
+Synchaeta is Class.
+Syndiclis is Class.
+Synedrella is Class.
+Syngramma is Class.
+Synhymenium is Class.
+Synostemon is Class.
+Synotis is Class.
+Synstemon is Class.
+Syntherisma is Class.
+Synurus is Class.
+Syreitschikovia is Class.
+Syrenia is Class.
+Syria is Class.
+Syringa is Class.
+Syringodium is Class.
+Syrrhopodon is Class.
+Syzygiella is Class.
+Syzygium is Class.
+Szechenyia is Class.
+Tacca is Class.
+Taccaceae is Class.
+Taeniolejeunea is Class.
+Taenioma is Class.
+Taenitidaceae is Class.
+Taibaixushuihe is Class.
+Taigongshan is Class.
+Taihangshangmihou is Class.
+Taijiangnangong is Class.
+Taijiding is Class.
+Taishanliedao is Class.
+Taishanzhenhaiwanhongshulin is Class.
+Taitonia is Class.
+Taizhangou is Class.
+Tajikistan is Class.
+Takakiaceae is Class.
+Takakiopsida is Class.
+Takasagoya is Class.
+Takeikadzuchia is Class.
+Talauma is Class.
+Talipariti is Class.
+Tamaricaceae is Class.
+Tamariscella is Class.
+Tanchengyinxing is Class.
+Tanghu is Class.
+Tangjiahe is Class.
+Tangwangheshilin is Class.
+Tapeinophallus is Class.
+Taraktogenos is Class.
+Taraxacum is Class.
+Tarenaya is Class.
+Tarrietia is Class.
+Tashiroea is Class.
+Taxaceae is Class.
+Taxiphyllum is Class.
+Taxithelium is Class.
+Tecoma is Class.
+Tectaria is Class.
+Telanthera is Class.
+Teloxys is Class.
+Tengchongdirehuoshan is Class.
+Tengshan is Class.
+Teonongia is Class.
+Terminthia is Class.
+Ternstroemia is Class.
+Terrestrial plants is Class.
+Tetracentraceae is Class.
+Tetracme is Class.
+Tetradoxa is Class.
+Tetraena is Class.
+Tetraglochidium is Class.
+Tetragoga is Class.
+Tetragonia is Class.
+Tetragonocalamus is Class.
+Tetragyne is Class.
+Tetrameles is Class.
+Tetraphidaceae is Class.
+Tetrathyrium is Class.
+Thailand is Class.
+Thalictrum is Class.
+The Bahamas is Class.
+Thea is Class.
+Theaceae is Class.
+Thecagonum is Class.
+Theliaceae is Class.
+Theligonaceae is Class.
+Thellungiella is Class.
+Themeda is Class.
+Theobroma is Class.
+Thesium is Class.
+Thespesia is Class.
+Thespis is Class.
+Thoracostachyum is Class.
+Thoreliella is Class.
+Thrixgyne is Class.
+Thuidiaceae is Class.
+Thymelaeaceae is Class.
+Thyridium is Class.
+Thyrsia is Class.
+Thysanolaena is Class.
+Thysanospermum is Class.
+Tianeezhou milu is Class.
+Tianfuzishansongrong is Class.
+Tianjin is Class.
+Tiankeng is Class.
+Tianqiaoshan is Class.
+Tianshanzhongbunaisicaodian is Class.
+Tianshengying is Class.
+Tieluganghongshulin is Class.
+Tiemushan is Class.
+Tieshanzhang is Class.
+Tiesiling is Class.
+Tigridiopalma is Class.
+Tiliaceae is Class.
+Tillaea is Class.
+Timaeosia is Class.
+Timber trees is Class.
+Timmiaceae is Class.
+Timouria is Class.
+Toddalia is Class.
+Tongguling is Class.
+Tongguzhang is Class.
+Tongledashan is Class.
+Toricelliaceae is Class.
+Torularia is Class.
+Toxicodendron is Class.
+Trachelospermum is Class.
+Trachomitum is Class.
+Trachylobium is Class.
+Trachynia is Class.
+Trachynotia is Class.
+Trachypodaceae is Class.
+Trachypus is Class.
+Trachythecium is Class.
+Tragopyrum is Class.
+Tragus is Class.
+Trailliaedoxa is Class.
+Treubia is Class.
+Treubiaceae is Class.
+Trevesia is Class.
+Trewia is Class.
+Triarrhena is Class.
+Tricalysia is Class.
+Tricarpelema is Class.
+Tricercandra is Class.
+Triceros is Class.
+Trichocoleaceae is Class.
+Trichogloeopsis is Class.
+Trichoneuron is Class.
+Trichoon is Class.
+Trichostomurn is Class.
+Trichuriella is Class.
+Tridesmis is Class.
+Trifolium repens is Class.
+Trillidium is Class.
+Trinidad and Tobago is Class.
+Triodanis is Class.
+Triosteum is Class.
+Tripolium is Class.
+Trisetum is Class.
+Triumfetta is Class.
+Triuridaceae is Class.
+Trochodendraceae is Class.
+Trochodendron is Class.
+Tropaeolaceae is Class.
+Trophis is Class.
+Truellum is Class.
+Tsengia is Class.
+Tsoongiodendron is Class.
+Tubiflorae is Class.
+Tubocapsicum is Class.
+Tugarinovia is Class.
+Tulotis is Class.
+Tumidinodus is Class.
+Tumion is Class.
+Tunchangbaijiuniao is Class.
+Tunisia is Class.
+Tuoniangjiang is Class.
+Tupistra is Class.
+Turanga is Class.
+Turczaninovia is Class.
+Turgenia is Class.
+Turkey is Class.
+Turkmenistan is Class.
+Turpinia is Class.
+Turraea is Class.
+Turritis is Class.
+Turukhania is Class.
+Tutigaea is Class.
+Typhaceae is Class.
+Udotea is Class.
+Uganda is Class.
+Ukraine is Class.
+Ulmaria is Class.
+Ulotrichaccae is Class.
+Ulotrichales is Class.
+Ulva is Class.
+Umbelliflorae is Class.
+Uncifera is Class.
+United Arab Emirates is Class.
+United Kingdom is Class.
+Unjala is Class.
+Urachne is Class.
+Urena is Class.
+Urobotrya is Class.
+Urochloa is Class.
+Urtica is Class.
+Urticaceae is Class.
+Urticales is Class.
+Utricularia is Class.
+Uzbekistan is Class.
+Valerianaceae is Class.
+Valerianella is Class.
+Valonia is Class.
+Valoniaceae is Class.
+Valoniopsis is Class.
+Vanda is Class.
+Vanieria is Class.
+Varronia is Class.
+Venezuela is Class.
+Venturiella is Class.
+Veratrum is Class.
+Verbenaceae is Class.
+Veronicastrum is Class.
+Vesicularia is Class.
+Vicatia is Class.
+Vicia is Class.
+Vierhapperia is Class.
+Vilfa is Class.
+Violaceae is Class.
+Viscaceae is Class.
+Vittariaceae is Class.
+Vladimiria is Class.
+Vogelia is Class.
+Voitia is Class.
+Vulpia is Class.
+Wahuishan is Class.
+Wanfushan is Class.
+Wangbaohe is Class.
+Wangchi is Class.
+Wanglang is Class.
+Wangmoguizhousutie is Class.
+Wangyedian is Class.
+Wanjianghe is Class.
+Wanlong is Class.
+Wardaster is Class.
+Washingtonia is Class.
+Weichangyudaokou is Class.
+Weifenhe is Class.
+Weigela is Class.
+Weissia is Class.
+Wenchangqilincai is Class.
+Wenchengia is Class.
+Wendlandia is Class.
+Wenganjiangjiehe is Class.
+Wenshanlaojunshan is Class.
+Wiesnerellaceae is Class.
+Wikstroemia is Class.
+Wilsoniella is Class.
+Woodsiaceae is Class.
+Woodwardia is Class.
+Woonyoungia is Class.
+Wrangelia is Class.
+Wudalianchihuoshan is Class.
+Wudihe is Class.
+Wudimagushanzhiyiji is Class.
+Wugachong is Class.
+Wulanbuhe is Class.
+Wulanhadahuoshanqun is Class.
+Wulashan is Class.
+Wulatehouqikonglonghuashi is Class.
+Wulatelenglenglin--mengguyelv is Class.
+Wuliangshan is Class.
+Wumashatuoziyaocai is Class.
+Wurdemaniaceae is Class.
+Wurgenshan is Class.
+Wushidengtujiaoshanhu is Class.
+Wutongqiao is Class.
+Wuxishan is Class.
+Wuyilingshidi is Class.
+Wuyishan is Class.
+Wuzhudao is Class.
+Xeromphis is Class.
+Xiangmoshan is Class.
+Xiangshan is Class.
+Xiangshanzeng is Class.
+Xianheping is Class.
+Xiaohegou is Class.
+Xiaoheisinhelinwa is Class.
+Xiaoheyan is Class.
+Xiaolinghezhonghuabie is Class.
+Xiaonanhai is Class.
+Xiaowutaishan is Class.
+Xihu is Class.
+Ximeishan is Class.
+Xinanlianhuayuyanlu is Class.
+Xincun is Class.
+Xinfengjinpenshan is Class.
+Xingkaihu is Class.
+Xinglongshan is Class.
+Xingmeijian is Class.
+Xingrenqingshuihe is Class.
+Xingshanlongmenhe is Class.
+Xingziliaohuachishidi is Class.
+Xinkaihe is Class.
+Xinluhai is Class.
+Xinmingshan is Class.
+Xinqing is Class.
+Xintaiculaishan is Class.
+Xinyinghongshulin is Class.
+Xishahe is Class.
+Xishan is Class.
+Xishuidashanshu is Class.
+Xitianshan is Class.
+Xiushan is Class.
+Xolisma is Class.
+Xuefengshan is Class.
+Xuezhang is Class.
+Xunbielahe is Class.
+Xylanche is Class.
+Xylinabariopsis is Class.
+Xylopia is Class.
+Xyridaceae is Class.
+Yabulaipanyang is Class.
+Yading is Class.
+Yaluzangbujiangzhongyouheguheijinghe is Class.
+Yaluzangbujiangzhongyouheguoheijinghe is Class.
+Yanboyezeshan is Class.
+Yancheng is Class.
+Yangbishan is Class.
+Yangchengmanghemihou is Class.
+Yangchunbaiyong is Class.
+Yangdali is Class.
+Yangdongshanshierdushui is Class.
+Yangjiajie is Class.
+Yangjiaotangyandong is Class.
+Yangjiaxi is Class.
+Yangkengdong is Class.
+Yangling is Class.
+Yangpubi is Class.
+Yangshimu is Class.
+Yangtianshan is Class.
+Yangzie is Class.
+Yanlongmangshe is Class.
+Yanyingdong is Class.
+Yaorenshan is Class.
+Yaoshan is Class.
+Yaozhang is Class.
+Yejikeng is Class.
+Yele is Class.
+Yeyahu is Class.
+Yezhongheiyehou is Class.
+Yimenkonglonghuashi is Class.
+Yinghushidi is Class.
+Yingkouliaohekou is Class.
+Yingkouyushi is Class.
+Yingzuijie is Class.
+Yintiaoling is Class.
+Yishan is Class.
+Yitang is Class.
+Yitonghuoshanqun is Class.
+Yiwulushan is Class.
+Yiyangzhonghuaqiushaye is Class.
+Yongdedaxueshan is Class.
+Yongjingkonglongzuqun is Class.
+Yongshansanjiangkou is Class.
+Youngia is Class.
+Youxianshuiqinshidi is Class.
+Youyangdani is Class.
+Yua is Class.
+Yudushan is Class.
+Yueshan is Class.
+Yueyahu is Class.
+Yufengshan is Class.
+Yuhe is Class.
+Yuhuatai is Class.
+Yukeng is Class.
+Yunchengtianee is Class.
+Yunfengshan is Class.
+Yunjishan is Class.
+Yunling is Class.
+Yunmengshan is Class.
+Yunnanopilia is Class.
+Yunzhongshan is Class.
+Zea is Class.
+Zengchengyeshengdao is Class.
+Zenia is Class.
+Zeuxine is Class.
+Zezhoumihou is Class.
+Zhadatulin is Class.
+Zhagashenshan is Class.
+Zhangjiajie is Class.
+Zhangjiangkouhongshulin is Class.
+Zhangmuqing is Class.
+Zhangwuqianfoshan is Class.
+Zhaohushan is Class.
+Zhaoqingsanyue is Class.
+Zhenbaodao is Class.
+Zhenganfuyan is Class.
+Zhongkeng is Class.
+Zhongshanbailu is Class.
+Zhougonghe is Class.
+Zhouzhijinsihou is Class.
+Zhuchanggou is Class.
+Zhuchengdashan is Class.
+Zhuengeerqikonglonghuashi is Class.
+Zhujiangkouzhonghuabaijitun is Class.
+Zhushandong is Class.
+Zhushanlinshe is Class.
+Ziboqiguogudou is Class.
+Zimbabwe is Class.
+Zingiberaceae is Class.
+Zixishan is Class.
+Zizania is Class.
+Ziziphora is Class.
+Ziziphus is Class.
+Zollikoferia is Class.
+Zollingeria is Class.
+Zosterostylis is Class.
+Zuojia is Class.
+Zygophyllaceae is Class.
+abortive is Class.
+abruptly pinnate is Class.
+acerose is Class.
+achene is Class.
+acrisol is Class.
+acute is Class.
+adnate is Class.
+agricultural soil is Class.
+air force blue is Class.
+akene is Class.
+alabama crimson is Class.
+alate is Class.
+alloment garden soil is Class.
+alloy orange is Class.
+alluvial soil is Class.
+alternate is Class.
+amber is Class.
+american rose is Class.
+amphitropous ovule is Class.
+ampliate is Class.
+anandrous is Class.
+anatropous ovule is Class.
+ancipital is Class.
+android green is Class.
+angulate is Class.
+anisomerous is Class.
+apex obcordate is Class.
+apiculate is Class.
+apocarpous is Class.
+apopetalous is Class.
+aposepalous is Class.
+approximate is Class.
+aquamarine is Class.
+arete is Class.
+aril is Class.
+aristate is Class.
+aristulate is Class.
+artichoke is Class.
+astylous is Class.
+atomic tangerine is Class.
+aureolin is Class.
+auriculate is Class.
+aurometalsaurus is Class.
+axile placentation is Class.
+azure is Class.
+azure mist is Class.
+azureish white is Class.
+baby blue eyes is Class.
+baker-miller pink is Class.
+ball blue is Class.
+barbie pink is Class.
+basal is Class.
+basaltic hydrotermal vent biome is Class.
+base sagittate is Class.
+basin is Class.
+bathyal zone biome is Class.
+beau blue is Class.
+benthic biome is Class.
+berry is Class.
+bicarpellate is Class.
+bidentate is Class.
+bifoliate is Class.
+bilabiate is Class.
+bilateral is Class.
+bipartite is Class.
+bipetalous is Class.
+bipinnate is Class.
+bipinnatifid is Class.
+biserrate is Class.
+bisque is Class.
+bistre is Class.
+bistre brown is Class.
+biternate is Class.
+bitter lime is Class.
+bittersweet shimmer is Class.
+black olive is Class.
+black soil is Class.
+bleu de france is Class.
+blizzard blue is Class.
+blue is Class.
+blue-gray is Class.
+blue-green is Class.
+blue-magenta violet is Class.
+blue lagoon is Class.
+blue sapphire is Class.
+boulder field is Class.
+brandeis blue is Class.
+brick red is Class.
+bright green is Class.
+bright lavender is Class.
+bright lilac is Class.
+bright navy blue is Class.
+bright turquoise is Class.
+bright ube is Class.
+brilliant azure is Class.
+broadleaf forest biome is Class.
+bronze is Class.
+bronze yellow is Class.
+brown is Class.
+brown-nose is Class.
+buff is Class.
+bulb is Class.
+bulgarian rose is Class.
+bur is Class.
+burlywood is Class.
+burned soil is Class.
+burnt orange is Class.
+burnt sienna is Class.
+butte is Class.
+cadet blue is Class.
+cadmium yellow is Class.
+café noir is Class.
+cal poly green is Class.
+calcarate is Class.
+calcisol is Class.
+cambisol is Class.
+cambridge blue is Class.
+campanulate is Class.
+campy lot ropous ovule is Class.
+capitellate is Class.
+capri is Class.
+capsule is Class.
+caribbean green is Class.
+carinate is Class.
+carmine is Class.
+carmine red is Class.
+carolina blue is Class.
+carrot orange is Class.
+castleton green is Class.
+catalina blue is Class.
+catawba is Class.
+caulicle is Class.
+cauline is Class.
+cave is Class.
+centrifugal inflorescence is Class.
+cerise is Class.
+cerulean blue is Class.
+chalk soil is Class.
+chamoisee is Class.
+champagne is Class.
+chartreuse is Class.
+chernozem is Class.
+cherry blossom pink is Class.
+china pink is Class.
+china rose is Class.
+chlamydeous is Class.
+chocolate is Class.
+chrome yellow is Class.
+cinereous is Class.
+circumscissile capsule is Class.
+cirrhous is Class.
+citrine is Class.
+cladode is Class.
+classic rose is Class.
+clean water is Class.
+cliff is Class.
+coastal dune is Class.
+coffee is Class.
+cold seep biome is Class.
+cold temperature habitat is Class.
+columbia blue is Class.
+complete is Class.
+compound ovary is Class.
+copper red is Class.
+copper rose is Class.
+coral is Class.
+cordovan is Class.
+cormel is Class.
+corn is Class.
+cornflower blue is Class.
+corniculate with small hornlike protuberances is Class.
+corymb is Class.
+corymbose is Class.
+cosmic latte is Class.
+costate is Class.
+coyote brown is Class.
+crater is Class.
+cream is Class.
+creeping is Class.
+cremocarp is Class.
+crenate is Class.
+crenulate is Class.
+crimson red is Class.
+crisped is Class.
+cropland biome is Class.
+cruciform is Class.
+cucullate is Class.
+cultured habitat is Class.
+cuneate is Class.
+cuspidate is Class.
+cyan-blue azure is Class.
+cyan azure is Class.
+cyan cobalt blue is Class.
+cyan cornflower blue is Class.
+cyathiform is Class.
+cyathium is Class.
+cyber grape is Class.
+cyme is Class.
+cymose is Class.
+cymule is Class.
+dangling is Class.
+dark blue is Class.
+dark cyan is Class.
+dark electric blue is Class.
+dark green is Class.
+dark imperial blue is Class.
+dark orange is Class.
+dark orchid is Class.
+dark pastel blue is Class.
+dark pastel purple is Class.
+dark powder blue is Class.
+dark purple is Class.
+dark red is Class.
+dark sky blue is Class.
+dark slate blue is Class.
+dark tangerine is Class.
+dark taupe is Class.
+dark turquoise is Class.
+dark yellow is Class.
+debian red is Class.
+decussate is Class.
+deep carmine is Class.
+deep carrot orange is Class.
+deep cerise is Class.
+deep champagne is Class.
+deep green is Class.
+deep green-cyan turquoise is Class.
+deep jungle green is Class.
+deep koamaru is Class.
+deep maroon is Class.
+deep mauve is Class.
+deep puce is Class.
+deep sky blue is Class.
+deep space sparkle is Class.
+deep taupe is Class.
+deer is Class.
+denim is Class.
+dense settlement biome is Class.
+dentate is Class.
+desaturated cyan is Class.
+desire is Class.
+determinate is Class.
+dextrorse is Class.
+diandrous is Class.
+dicarpellate is Class.
+dichlamydeous is Class.
+dichogamic is Class.
+digitate is Class.
+digynous is Class.
+dilution basin mediterranean sea biome is Class.
+dissected is Class.
+dodger blue is Class.
+dogwood rose is Class.
+dollar bill is Class.
+double is Class.
+drupe is Class.
+dry soil is Class.
+duke blue is Class.
+dune is Class.
+dutch white is Class.
+earth yellow is Class.
+ecru is Class.
+edentate is Class.
+eggshell is Class.
+egyptian blue is Class.
+electric blue is Class.
+electric crimson is Class.
+electric cyan is Class.
+electric green is Class.
+electric indigo is Class.
+electric lavender is Class.
+electric lime is Class.
+electric purple is Class.
+electric ultramarine is Class.
+eminence is Class.
+english green is Class.
+epeiric sea biome is Class.
+eramous is Class.
+erosulate is Class.
+estuarine biome is Class.
+eton blue is Class.
+etramerous is Class.
+explanate is Class.
+exserted is Class.
+extreme high temperature habitat is Class.
+falcate is Class.
+falu red is Class.
+fashion fuchsia is Class.
+fastigiate is Class.
+fertile is Class.
+fibrous roots is Class.
+field drab is Class.
+field soil is Class.
+fire engine red is Class.
+flabellate is Class.
+flame is Class.
+flooded grassland biome is Class.
+flooded savanna biome is Class.
+floral white is Class.
+floricane is Class.
+fluorescent orange is Class.
+fluorescent pink is Class.
+follicle is Class.
+forest green is Class.
+forest soil is Class.
+foveolate is Class.
+free is Class.
+french beige is Class.
+french blue is Class.
+french lime is Class.
+french mauve is Class.
+french plum is Class.
+french puce is Class.
+french rose is Class.
+fresh water biome is Class.
+freshwater biome is Class.
+freshwater lake biome is Class.
+fruticose is Class.
+fruticulose is Class.
+fuchsia pink is Class.
+fuchsia purple is Class.
+fuchsia rose is Class.
+furfuraceous is Class.
+fuzzy wuzzy is Class.
+gainsboro is Class.
+galeiform is Class.
+gamboge is Class.
+gamboge orange is Class.
+gamopetalous is Class.
+ghost white is Class.
+glabrate is Class.
+glandular is Class.
+glaucous is Class.
+glochidiate is Class.
+glomerule is Class.
+golden brown is Class.
+granny smith apple is Class.
+grape is Class.
+gray-blue is Class.
+green is Class.
+green-blue is Class.
+green-yellow is Class.
+gynandrous is Class.
+gynobasic style is Class.
+gypsisol is Class.
+hadal zone biome is Class.
+half-inferior is Class.
+han blue is Class.
+han purple is Class.
+harvard crimson is Class.
+haustorium is Class.
+head is Class.
+heat stressed soil is Class.
+helicoid cyme is Class.
+hesperidiuni is Class.
+high luminance is Class.
+high temperature is Class.
+hirsute is Class.
+hirtellous is Class.
+histosol is Class.
+homogamous is Class.
+honeydew is Class.
+hot pink is Class.
+human-associated habitat is Class.
+humid is Class.
+humus is Class.
+hydrothermal vent biome is Class.
+icterine is Class.
+imparipinnate is Class.
+imperial is Class.
+imperial blue is Class.
+imperial purple is Class.
+imperial red is Class.
+incised is Class.
+included is Class.
+independence is Class.
+indian red is Class.
+indigo is Class.
+indigo dye is Class.
+inequilateral is Class.
+infertile is Class.
+inflorescence spathe is Class.
+intercalary inflorescence is Class.
+international klein blue is Class.
+international orange is Class.
+interruptedly pinnate is Class.
+irregular is Class.
+italian sky blue is Class.
+jade is Class.
+japanese carmine is Class.
+jasper is Class.
+jazzberry jam is Class.
+jelly bean is Class.
+jordy blue is Class.
+jungle green is Class.
+kastanozem is Class.
+keeled is Class.
+kenyan copper is Class.
+kleistogamous is Class.
+kobi is Class.
+kpappose is Class.
+krose is Class.
+laciniate is Class.
+laevigate is Class.
+lanate is Class.
+lanceolate is Class.
+landslide is Class.
+languid lavender is Class.
+lanuginose is Class.
+lanulose is Class.
+lapis lazuli is Class.
+large lake biome is Class.
+large river biome is Class.
+large river delta biome is Class.
+large river headwater biome is Class.
+laurel green is Class.
+lavender blue is Class.
+lavender blush is Class.
+lavender indigo is Class.
+lavender purple is Class.
+lavender rose is Class.
+lawn soil is Class.
+leaf cauline is Class.
+legume is Class.
+lemon is Class.
+lemon chiffon is Class.
+lemon lime is Class.
+lemon meringue is Class.
+lemon yellow is Class.
+lenurple is Class.
+lepidote is Class.
+liana is Class.
+lianas is Class.
+licorice is Class.
+light blue is Class.
+light brown is Class.
+light carmine pink is Class.
+light cobalt blue is Class.
+light cornflower blue is Class.
+light crimson is Class.
+light cyan is Class.
+light french beige is Class.
+light fuchsia pink is Class.
+light khaki is Class.
+light moss green is Class.
+light pastel purple is Class.
+light red ochre is Class.
+light sky blue is Class.
+light steel blue is Class.
+light taupe is Class.
+ligulate is Class.
+lilac is Class.
+limed soil is Class.
+limerick is Class.
+lincoln green is Class.
+linen is Class.
+liseran purple is Class.
+lobulate is Class.
+loculicidal capsule is Class.
+longitudinal is Class.
+low luminance is Class.
+low temperature is Class.
+lustrous is Class.
+magenta haze is Class.
+majorelle blue is Class.
+malachite is Class.
+mammillate is Class.
+manatee is Class.
+manicate is Class.
+marginal sea biome is Class.
+maroon is Class.
+mauve is Class.
+maximum temperature is Class.
+maya blue is Class.
+meat brown is Class.
+mediterranean forest biome is Class.
+mediterranean grassland biome is Class.
+mediterranean woodland biome is Class.
+medium carmine is Class.
+medium electric blue is Class.
+medium lavender magenta is Class.
+medium persian blue is Class.
+medium purple is Class.
+medium sea green is Class.
+medium sky blue is Class.
+medium slate blue is Class.
+medium spring green is Class.
+medium taupe is Class.
+medium turquoise is Class.
+medium vermilion is Class.
+medium violet-red is Class.
+mellow yellow is Class.
+merine coral reef biome is Class.
+midnight blue is Class.
+mikado yellow is Class.
+minimum temperature is Class.
+mixed forest biome is Class.
+mixed inflorescence is Class.
+mode beige is Class.
+monochasial is Class.
+monochasium is Class.
+monoclinous is Class.
+monomerous is Class.
+monostylous is Class.
+monosymmetrical is Class.
+moonstone blue is Class.
+moss green is Class.
+mound is Class.
+mucronulate is Class.
+multicipital is Class.
+muricate is Class.
+muriculate is Class.
+muticous is Class.
+muucronate is Class.
+myrtle green is Class.
+nacreous is Class.
+naples yellow is Class.
+navajo white is Class.
+navy purple is Class.
+neon carrot is Class.
+neritic benthic zone biome is Class.
+neritic littoral zone biome is Class.
+neritic sub-littoral zone biome is Class.
+net-veined is Class.
+nitid is Class.
+nitisol is Class.
+normal temperature is Class.
+north texas green is Class.
+notate is Class.
+nudicaul is Class.
+obcordate is Class.
+obdeltoid is Class.
+oblanceolate is Class.
+oblique is Class.
+obovate is Class.
+ocean biome is Class.
+ocean boat blue is Class.
+ochre is Class.
+ocreate is Class.
+octopetalous is Class.
+office green is Class.
+old burgundy is Class.
+old lace is Class.
+old mauve is Class.
+old rose is Class.
+oligandrous is Class.
+olive is Class.
+olivine is Class.
+onyx is Class.
+opera mauve is Class.
+opposite is Class.
+orchard soil is Class.
+orchid is Class.
+orchid pink is Class.
+orioles orange is Class.
+ornithogenic soil is Class.
+orthocladous is Class.
+orthotropous ovule is Class.
+otter brown is Class.
+outer space is Class.
+oxford blue is Class.
+pachycladous is Class.
+pale blue is Class.
+pale carmine is Class.
+pale cerulean is Class.
+pale chestnut is Class.
+pale copper is Class.
+pale cornflower blue is Class.
+pale cyan is Class.
+pale goldenrod is Class.
+pale magenta is Class.
+pale red-violet is Class.
+pale robin egg blue is Class.
+pale spring bud is Class.
+pale turquoise is Class.
+paleaceous is Class.
+paleolate is Class.
+palmate is Class.
+pandurate is Class.
+panicle is Class.
+paniculate is Class.
+pannose is Class.
+pansy purple is Class.
+papaya whip is Class.
+papilionaceous is Class.
+papillate is Class.
+papillose is Class.
+pappiferous is Class.
+pastel blue is Class.
+pastel magenta is Class.
+pastel orange is Class.
+pastel pink is Class.
+pastel red is Class.
+pastel yellow is Class.
+pasture is Class.
+peach puff is Class.
+pear is Class.
+pearl is Class.
+pearl aqua is Class.
+pearly purple is Class.
+peat soil is Class.
+pedate is Class.
+pelagic biome is Class.
+pellucid is Class.
+peloria is Class.
+pentacyclic is Class.
+pentamerous is Class.
+perfect is Class.
+perfoliate is Class.
+perforate is Class.
+perigynous is Class.
+persian blue is Class.
+persian green is Class.
+persian indigo is Class.
+persian orange is Class.
+persian plum is Class.
+persian rose is Class.
+personate is Class.
+petiolulate is Class.
+phthalo blue is Class.
+picton blue is Class.
+pictorial carmine is Class.
+piggy pink is Class.
+pilose is Class.
+pilosulose is Class.
+pilosulous is Class.
+pineapple is Class.
+pink-orange is Class.
+pink lace is Class.
+pinnatilobate is Class.
+pinnipalmate is Class.
+pistillate is Class.
+pitted is Class.
+plain is Class.
+plantPollinationSystem is Class.
+plantPollinationSystem SubClassOf collectivePlantOrganStructure.
+plicate is Class.
+polar desert biome is Class.
+polyandrous is Class.
+polycarpous is Class.
+polycyclic is Class.
+polygamo-dioecious is Class.
+polygamous is Class.
+polygynous is Class.
+pomp and power is Class.
+popstar is Class.
+poricidal is Class.
+portland orange is Class.
+powder blue is Class.
+prairie is Class.
+primocane is Class.
+princeton orange is Class.
+protandrous is Class.
+pruinate is Class.
+prune is Class.
+pseudomonomerous is Class.
+pseudoscape is Class.
+psychedelic purple is Class.
+pterocaulous is Class.
+puce is Class.
+puce red is Class.
+pullman green is Class.
+pulvinate is Class.
+punctate is Class.
+purple is Class.
+purple pizzazz is Class.
+purple taupe is Class.
+purpureus is Class.
+pustular is Class.
+pustulate is Class.
+pustulose is Class.
+pyxis is Class.
+quadripinnatifid is Class.
+queen blue is Class.
+queen pink is Class.
+quinacridone magenta is Class.
+raceme is Class.
+racemiform is Class.
+racemose is Class.
+ramentaceous is Class.
+ramose is Class.
+ramulose is Class.
+range biome is Class.
+raspberry glace is Class.
+raspberry pink is Class.
+raspberry rose is Class.
+raw umber is Class.
+razzle dazzle rose is Class.
+razzmatazz is Class.
+red is Class.
+red-orange is Class.
+red-purple is Class.
+reef biome is Class.
+reflexecl is Class.
+regalia is Class.
+registration black is Class.
+reniform is Class.
+resolution blue is Class.
+retuse is Class.
+rhizomes is Class.
+rhythm is Class.
+ribbed is Class.
+rich electric blue is Class.
+rich maroon is Class.
+ridge is Class.
+robin egg blue is Class.
+roman silver is Class.
+roridulate is Class.
+rose is Class.
+rose pink is Class.
+rose red is Class.
+rose taupe is Class.
+rosette is Class.
+rosulate is Class.
+rotate  is Class.
+royal azure is Class.
+royal blue is Class.
+royal purple is Class.
+ruddy brown is Class.
+rufous is Class.
+rugate is Class.
+rugose is Class.
+rugulose is Class.
+runcinate is Class.
+rush-like is Class.
+russian green is Class.
+rusty red is Class.
+safety orange is Class.
+sage is Class.
+sagittate is Class.
+salmon pink is Class.
+salt marsh biome is Class.
+sand dune is Class.
+sandy taupe is Class.
+sangria is Class.
+sapphire is Class.
+sapphire blue is Class.
+sarcocaulous is Class.
+sarmentose is Class.
+savanna is Class.
+sawah soil is Class.
+scaberulose is Class.
+scabrellate is Class.
+scabrid is Class.
+scapiform is Class.
+schauss pink is Class.
+school bus yellow is Class.
+sea blue is Class.
+seal brown is Class.
+selective yellow is Class.
+septicidal capsule is Class.
+serrate is Class.
+serrulate is Class.
+sessile is Class.
+setose is Class.
+setulose is Class.
+sheathing is Class.
+silique is Class.
+silver is Class.
+silver lake blue is Class.
+simple is Class.
+sinistrorse is Class.
+slate blue is Class.
+slope is Class.
+small lage biome is Class.
+small river biome is Class.
+smitten is Class.
+smoke is Class.
+snow is Class.
+sonic silver is Class.
+spanish bistre is Class.
+spanish blue is Class.
+spanish carmine is Class.
+spanish crimson is Class.
+spanish orange is Class.
+spanish sky blue is Class.
+spartan crimson is Class.
+spathaceous is Class.
+spathulate is Class.
+spicate is Class.
+spicy mix is Class.
+spike is Class.
+spinirerous is Class.
+spinose is Class.
+spiro disco ball is Class.
+sponge reef biome is Class.
+spring green is Class.
+squamulose is Class.
+stamen alternate is Class.
+stamen haplostemonous is Class.
+stamen opposite is Class.
+staminate is Class.
+steel blue is Class.
+stellate is Class.
+steppe is Class.
+sterile is Class.
+stil de grain yellow is Class.
+stipitate is Class.
+stony desert is Class.
+stool is Class.
+straw is Class.
+strawberry is Class.
+striate is Class.
+strict is Class.
+strigillose is Class.
+strigose is Class.
+strigulose is Class.
+strobile is Class.
+strumose is Class.
+style eccentric is Class.
+stylocarpellous is Class.
+stylodious is Class.
+subacute is Class.
+subscapose is Class.
+subterranean is Class.
+subtidal rocky reef biome is Class.
+subtropical is Class.
+subtropical broadleaf forest biome is Class.
+subtropical desert biome is Class.
+subtropical dry braoaleaf forest biome is Class.
+subtropical grassland biome is Class.
+subtropical moist broadleaf forest biome is Class.
+subtropical savanna biome is Class.
+subtropical shrubland biome is Class.
+subulate is Class.
+sunset orange is Class.
+surculum is Class.
+synandrous is Class.
+tan is Class.
+tangelo is Class.
+tangerine is Class.
+taupe is Class.
+tea green is Class.
+teal is Class.
+teal blue is Class.
+technosol is Class.
+temperate is Class.
+temperate broadleaf forest biome is Class.
+temperate desert biome is Class.
+temperate grassland biome is Class.
+temperate mixed forest biome is Class.
+temperate savanna biome is Class.
+temperate shrubland biome is Class.
+temperate woodland biome is Class.
+temperature is Class.
+tendril-pinnate is Class.
+ternate is Class.
+terrace is Class.
+tesselate is Class.
+tetradynamous is Class.
+thistle is Class.
+thyrse is Class.
+tickle me pink is Class.
+tiffany blue is Class.
+titanium yellow is Class.
+tomato is Class.
+tomentulose is Class.
+toolbox is Class.
+transverse is Class.
+trees is Class.
+triangulate is Class.
+tridentate is Class.
+tridynamous is Class.
+trifid is Class.
+trifoliolate is Class.
+trimerous is Class.
+tripartite is Class.
+tripetalous is Class.
+triplinerved is Class.
+triternate is Class.
+tropical is Class.
+tropical broadleaf forest biome is Class.
+tropical desert biome is Class.
+tropical dry broadleaf forest biome is Class.
+tropical grassland biome is Class.
+tropical moist broadleaf forest biome is Class.
+tropical shrubland biome is Class.
+tropical woodland biome is Class.
+true blue is Class.
+truncate is Class.
+trunk is Class.
+tuber is Class.
+tubercule is Class.
+tuberoid is Class.
+tufts blue is Class.
+tulip is Class.
+tumbleweed is Class.
+turbinate is Class.
+turion is Class.
+turkish rose is Class.
+turquoise is Class.
+turquoise blue is Class.
+turquoise green is Class.
+tuscany is Class.
+twig is Class.
+tyrian purple is Class.
+ua red is Class.
+ucla blue is Class.
+ultra pink is Class.
+ultramafic hydrothermal vent biome is Class.
+ultramarine is Class.
+ultramarine blue is Class.
+umbel is Class.
+umbellate is Class.
+umbelliform is Class.
+unbleached silk is Class.
+uncinate is Class.
+unifoliate is Class.
+unisexual is Class.
+united nations blue is Class.
+university of california gold is Class.
+university of tennessee orange is Class.
+unmellow yellow is Class.
+upland soil is Class.
+upsdell red is Class.
+urban biome is Class.
+urceolate is Class.
+urent is Class.
+usafa blue is Class.
+usc gold is Class.
+utricle is Class.
+vanilla ice is Class.
+vegas gold is Class.
+venetian red is Class.
+venose is Class.
+ventricose is Class.
+verdigris is Class.
+vermilion is Class.
+verrucose is Class.
+versatile is Class.
+verticillaster is Class.
+verticillate is Class.
+very light azure is Class.
+very light tangelo is Class.
+very pale orange is Class.
+village biome is Class.
+villosulous is Class.
+villous is Class.
+vimineous is Class.
+violet-red is Class.
+virgate is Class.
+viridian green is Class.
+viscid is Class.
+vista blue is Class.
+vivid amber is Class.
+vivid cerise is Class.
+vivid gamboge is Class.
+vivid orange is Class.
+vivid orange peel is Class.
+vivid tangelo is Class.
+vivid tangerine is Class.
+vivid vermilion is Class.
+watershed is Class.
+wenge is Class.
+wheat is Class.
+white smoke is Class.
+white smoker biome is Class.
+wild blue yonder is Class.
+wild strawberry is Class.
+wild watermelon is Class.
+willpower orange is Class.
+windsor tan is Class.
+wine is Class.
+wine dregs is Class.
+wood brown is Class.
+xanadu is Class.
+xeric basin biome is Class.
+xeric shrubland biome is Class.
+yale blue is Class.
+yellow is Class.
+yellow-green is Class.
+yellow orange is Class.
+yellow rose is Class.
+zaffre is Class.
+www.w3.org/2002/07/# is Class.
+Anhui is Individual.
+Anhui Types StateProvince.
+Aomen is Individual.
+Aomen Types StateProvince.
+Beijing is Individual.
+Beijing Types StateProvince.
+Chongqing is Individual.
+Chongqing Types StateProvince.
+Fujian is Individual.
+Fujian Types StateProvince.
+Gansu is Individual.
+Gansu Types StateProvince.
+Guangdong is Individual.
+Guangdong Types StateProvince.
+Guangxi is Individual.
+Guangxi Types StateProvince.
+Guizhou is Individual.
+Guizhou Types StateProvince.
+Hainan is Individual.
+Hainan Types StateProvince.
+Hebei is Individual.
+Hebei Types StateProvince.
+Heilongjiang is Individual.
+Heilongjiang Types StateProvince.
+Henan is Individual.
+Henan Types StateProvince.
+Hong Kong is Individual.
+Hong Kong Types StateProvince.
+Hubei is Individual.
+Hubei Types StateProvince.
+Hunan is Individual.
+Hunan Types StateProvince.
+Inner Mongolia is Individual.
+Inner Mongolia Types StateProvince.
+Jiangsu is Individual.
+Jiangsu Types StateProvince.
+Jiangxi is Individual.
+Jiangxi Types StateProvince.
+Jilin is Individual.
+Jilin Types StateProvince.
+Liaoning is Individual.
+Liaoning Types StateProvince.
+Ningxia is Individual.
+Ningxia Types StateProvince.
+Qinghai is Individual.
+Qinghai Types StateProvince.
+Shaanxi is Individual.
+Shaanxi Types StateProvince.
+Shandong is Individual.
+Shandong Types StateProvince.
+Shanghai is Individual.
+Shanghai Types StateProvince.
+Shanxi is Individual.
+Shanxi Types StateProvince.
+Sichuan is Individual.
+Sichuan Types StateProvince.
+Taiwan is Individual.
+Taiwan Types StateProvince.
+Tianjin is Individual.
+Tianjin Types StateProvince.
+Xinjiang is Individual.
+Xinjiang Types StateProvince.
+Xizang is Individual.
+Xizang Types StateProvince.
+Yunan is Individual.
+Yunan Types StateProvince.
+Yunnan is Individual.
+Yunnan Types StateProvince.
+Zhejiang is Individual.
+Zhejiang Types StateProvince.
+abyssal zone biome is Individual.
+abyssal zone biome Types MarineBiome.
+acrisol is Individual.
+acrisol Types Soil.
+agricultural soil is Individual.
+agricultural soil Types Soil.
+alisol is Individual.
+alisol Types Soil.
+alkaline soil is Individual.
+alkaline soil Types Soil.
+alloment garden soil is Individual.
+alloment garden soil Types Soil.
+alluvial soil is Individual.
+alluvial soil Types Soil.
+alpine soil is Individual.
+alpine soil Types Soil.
+ament is Individual.
+ament Types Inflorescence.
+andosol is Individual.
+andosol Types Soil.
+arable soil is Individual.
+arable soil Types Soil.
+arete is Individual.
+arete Types PhysiographicFeature.
+badland is Individual.
+badland Types PhysiographicFeature.
+basaltic hydrotermal vent biome is Individual.
+basaltic hydrotermal vent biome Types MarineBiome.
+basin is Individual.
+basin Types PhysiographicFeature.
+bathyal zone biome is Individual.
+bathyal zone biome Types MarineBiome.
+beach is Individual.
+beach Types PhysiographicFeature.
+benthic biome is Individual.
+benthic biome Types MarineBiome.
+black smoker biome is Individual.
+black smoker biome Types MarineBiome.
+black soil is Individual.
+black soil Types Soil.
+boulder field is Individual.
+boulder field Types PhysiographicFeature.
+broadleaf forest biome is Individual.
+broadleaf forest biome Types ForestBiome.
+bulk soil is Individual.
+bulk soil Types Soil.
+burned soil is Individual.
+burned soil Types Soil.
+butte is Individual.
+butte Types PhysiographicFeature.
+calcisol is Individual.
+calcisol Types Soil.
+cambisol is Individual.
+cambisol Types Soil.
+capitulum is Individual.
+capitulum Types Inflorescence.
+cave is Individual.
+cave Types PhysiographicFeature.
+chalk soil is Individual.
+chalk soil Types Soil.
+chaparral is Individual.
+chaparral Types PhysiographicFeature.
+chernozem is Individual.
+chernozem Types Soil.
+cincinnus is Individual.
+cincinnus Types Inflorescence.
+clay soil is Individual.
+clay soil Types Soil.
+clayly is Individual.
+clayly Types Soil.
+clearing is Individual.
+clearing Types PhysiographicFeature.
+cliff is Individual.
+cliff Types PhysiographicFeature.
+coastal dune is Individual.
+coastal dune Types PhysiographicFeature.
+coastal scrubland is Individual.
+coastal scrubland Types PhysiographicFeature.
+cold seep biome is Individual.
+cold seep biome Types MarineBiome.
+cold temperature habitat is Individual.
+cold temperature habitat Types Extreme.
+compost soil is Individual.
+compost soil Types Soil.
+concentration basin mediterranean biome is Individual.
+concentration basin mediterranean biome Types MarineBiome.
+coniferous forest biome is Individual.
+coniferous forest biome Types ForestBiome.
+connifer woodland is Individual.
+connifer woodland Types PhysiographicFeature.
+conteminated soil is Individual.
+conteminated soil Types Soil.
+corymb is Individual.
+corymb Types Inflorescence.
+crater is Individual.
+crater Types PhysiographicFeature.
+cropland biome is Individual.
+cropland biome Types AnthropogenicTerrestrialBiome.
+cryosol is Individual.
+cryosol Types Soil.
+cvolcanic soil is Individual.
+cvolcanic soil Types Soil.
+cyathium is Individual.
+cyathium Types Inflorescence.
+cyme is Individual.
+cyme Types Inflorescence.
+cymule is Individual.
+cymule Types Inflorescence.
+dense settlement biome is Individual.
+dense settlement biome Types AnthropogenicTerrestrialBiome.
+depression is Individual.
+depression Types PhysiographicFeature.
+desert is Individual.
+desert Types PhysiographicFeature.
+desert scrubland is Individual.
+desert scrubland Types PhysiographicFeature.
+dichasium is Individual.
+dichasium Types Inflorescence.
+dilution basin mediterranean sea biome is Individual.
+dilution basin mediterranean sea biome Types MarineBiome.
+drumlin is Individual.
+drumlin Types PhysiographicFeature.
+dry soil is Individual.
+dry soil Types Soil.
+dune is Individual.
+dune Types PhysiographicFeature.
+durisol is Individual.
+durisol Types Soil.
+elevation is Individual.
+elevation Types PhysiographicFeature.
+enriched soil is Individual.
+enriched soil Types Soil.
+epeiric sea biome is Individual.
+epeiric sea biome Types MarineBiome.
+estuarine biome is Individual.
+estuarine biome Types MarineBiome.
+extraterrestial habitat is Individual.
+extraterrestial habitat Types Extreme.
+extreme high temperature habitat is Individual.
+extreme high temperature habitat Types HighTemperature.
+ferralsol is Individual.
+ferralsol Types Soil.
+fertilized soil is Individual.
+fertilized soil Types Soil.
+field soil is Individual.
+field soil Types Soil.
+flooded grassland biome is Individual.
+flooded grassland biome Types GrasslandBiome.
+flooded savanna biome is Individual.
+flooded savanna biome Types WoodlandBiome.
+forest is Individual.
+forest Types PhysiographicFeature.
+forest soil is Individual.
+forest soil Types Soil.
+fresh water biome is Individual.
+fresh water biome Types FreshwaterBiome.
+freshwater biome is Individual.
+freshwater biome Types FreshwaterBiome.
+freshwater lake biome is Individual.
+freshwater lake biome Types FreshwaterBiome.
+frozen compost soil is Individual.
+frozen compost soil Types Soil.
+garden soil is Individual.
+garden soil Types Soil.
+gleysol is Individual.
+gleysol Types Soil.
+glomerule is Individual.
+glomerule Types Inflorescence.
+grassland is Individual.
+grassland Types PhysiographicFeature.
+grassland soil is Individual.
+grassland soil Types Soil.
+greenhouse soil is Individual.
+greenhouse soil Types Soil.
+gypsisol is Individual.
+gypsisol Types Soil.
+hadal zone biome is Individual.
+hadal zone biome Types MarineBiome.
+haline habitat is Individual.
+haline habitat Types Extreme.
+head is Individual.
+head Types Inflorescence.
+heat stressed soil is Individual.
+heat stressed soil Types Soil.
+helicoid cyme is Individual.
+helicoid cyme Types Inflorescence.
+hill is Individual.
+hill Types PhysiographicFeature.
+histosol is Individual.
+histosol Types Soil.
+humus is Individual.
+humus Types Soil.
+hydromorphic is Individual.
+hydromorphic Types Soil.
+hydrothermal vent biome is Individual.
+hydrothermal vent biome Types MarineBiome.
+hypanthodium is Individual.
+hypanthodium Types Inflorescence.
+intercalary inflorescence is Individual.
+intercalary inflorescence Types Inflorescence.
+jungle soil is Individual.
+jungle soil Types Soil.
+karst is Individual.
+karst Types PhysiographicFeature.
+kastanozem is Individual.
+kastanozem Types Soil.
+landslide is Individual.
+landslide Types PhysiographicFeature.
+large lake biome is Individual.
+large lake biome Types FreshwaterBiome.
+large river biome is Individual.
+large river biome Types FreshwaterBiome.
+large river delta biome is Individual.
+large river delta biome Types FreshwaterBiome.
+large river headwater biome is Individual.
+large river headwater biome Types FreshwaterBiome.
+lawn soil is Individual.
+lawn soil Types Soil.
+leptosol is Individual.
+leptosol Types Soil.
+limed soil is Individual.
+limed soil Types Soil.
+litolitic is Individual.
+litolitic Types Soil.
+lixisol is Individual.
+lixisol Types Soil.
+loam is Individual.
+loam Types Soil.
+luvision is Individual.
+luvision Types Soil.
+luvisol is Individual.
+luvisol Types Soil.
+marginal sea biome is Individual.
+marginal sea biome Types MarineBiome.
+meadow is Individual.
+meadow Types PhysiographicFeature.
+meadow soil is Individual.
+meadow soil Types Soil.
+mediterranean forest biome is Individual.
+mediterranean forest biome Types ForestBiome.
+mediterranean grassland biome is Individual.
+mediterranean grassland biome Types GrasslandBiome.
+mediterranean savanna biome is Individual.
+mediterranean savanna biome Types WoodlandBiome.
+mediterranean sea biome is Individual.
+mediterranean sea biome Types MarineBiome.
+mediterranean woodland biome is Individual.
+mediterranean woodland biome Types WoodlandBiome.
+merine coral reef biome is Individual.
+merine coral reef biome Types MarineBiome.
+mineral deposit is Individual.
+mineral deposit Types PhysiographicFeature.
+mixed forest biome is Individual.
+mixed forest biome Types ForestBiome.
+mixed inflorescence is Individual.
+mixed inflorescence Types Inflorescence.
+monadnock is Individual.
+monadnock Types PhysiographicFeature.
+monochasium is Individual.
+monochasium Types Inflorescence.
+montane desert biome is Individual.
+montane desert biome Types DesertBiome.
+montane grassland biome is Individual.
+montane grassland biome Types GrasslandBiome.
+montane savanna biome is Individual.
+montane savanna biome Types WoodlandBiome.
+montane shrubland biome is Individual.
+montane shrubland biome Types ShrublandBiome.
+mound is Individual.
+mound Types PhysiographicFeature.
+mountain is Individual.
+mountain Types PhysiographicFeature.
+muddy soil is Individual.
+muddy soil Types Soil.
+neritic benthic zone biome is Individual.
+neritic benthic zone biome Types MarineBiome.
+neritic littoral zone biome is Individual.
+neritic littoral zone biome Types MarineBiome.
+neritic sub-littoral zone biome is Individual.
+neritic sub-littoral zone biome Types MarineBiome.
+nitisol is Individual.
+nitisol Types Soil.
+oak woodland is Individual.
+oak woodland Types PhysiographicFeature.
+ocean biome is Individual.
+ocean biome Types MarineBiome.
+orchard soil is Individual.
+orchard soil Types Soil.
+orchid soil is Individual.
+orchid soil Types Soil.
+ornithogenic soil is Individual.
+ornithogenic soil Types Soil.
+panicle is Individual.
+panicle Types Inflorescence.
+pasture is Individual.
+pasture Types PhysiographicFeature.
+peat soil is Individual.
+peat soil Types Soil.
+pelagic biome is Individual.
+pelagic biome Types MarineBiome.
+phaeozem is Individual.
+phaeozem Types Soil.
+plain is Individual.
+plain Types PhysiographicFeature.
+planosol is Individual.
+planosol Types Soil.
+planted forest is Individual.
+planted forest Types PhysiographicFeature.
+plateau is Individual.
+plateau Types PhysiographicFeature.
+pleiochasium is Individual.
+pleiochasium Types Inflorescence.
+plinthosol is Individual.
+plinthosol Types Soil.
+podzol is Individual.
+podzol Types Soil.
+polar desert biome is Individual.
+polar desert biome Types DesertBiome.
+pond soil is Individual.
+pond soil Types Soil.
+prairie is Individual.
+prairie Types PhysiographicFeature.
+pseudanthium is Individual.
+pseudanthium Types Inflorescence.
+raceme is Individual.
+raceme Types Inflorescence.
+range biome is Individual.
+range biome Types AnthropogenicTerrestrialBiome.
+reef biome is Individual.
+reef biome Types MarineBiome.
+regosol is Individual.
+regosol Types Soil.
+ridge is Individual.
+ridge Types PhysiographicFeature.
+rill is Individual.
+rill Types PhysiographicFeature.
+rock is Individual.
+rock Types Soil.
+rocky desert is Individual.
+rocky desert Types PhysiographicFeature.
+salt marsh biome is Individual.
+salt marsh biome Types MarineBiome.
+salty soil is Individual.
+salty soil Types Soil.
+sand is Individual.
+sand Types Soil.
+sandy beach is Individual.
+sandy beach Types PhysiographicFeature.
+sandy desert is Individual.
+sandy desert Types PhysiographicFeature.
+savanna is Individual.
+savanna Types PhysiographicFeature.
+savanna biome is Individual.
+savanna biome Types WoodlandBiome.
+sawah soil is Individual.
+sawah soil Types Soil.
+scrubland is Individual.
+scrubland Types PhysiographicFeature.
+sea beach is Individual.
+sea beach Types PhysiographicFeature.
+seamount is Individual.
+seamount Types PhysiographicFeature.
+slope is Individual.
+slope Types PhysiographicFeature.
+small lage biome is Individual.
+small lage biome Types FreshwaterBiome.
+small river biome is Individual.
+small river biome Types FreshwaterBiome.
+solitary is Individual.
+solitary Types Inflorescence.
+solonchak is Individual.
+solonchak Types Soil.
+solonetz is Individual.
+solonetz Types Soil.
+spadix is Individual.
+spadix Types Inflorescence.
+spike is Individual.
+spike Types Inflorescence.
+spikelet is Individual.
+spikelet Types Inflorescence.
+sponge reef biome is Individual.
+sponge reef biome Types MarineBiome.
+steppe is Individual.
+steppe Types PhysiographicFeature.
+stony desert is Individual.
+stony desert Types PhysiographicFeature.
+strobile is Individual.
+strobile Types Inflorescence.
+subpolar coniferous forest biome is Individual.
+subpolar coniferous forest biome Types ForestBiome.
+subtidal rocky reef biome is Individual.
+subtidal rocky reef biome Types MarineBiome.
+subtropical broadleaf forest biome is Individual.
+subtropical broadleaf forest biome Types ForestBiome.
+subtropical coniferous forest biome is Individual.
+subtropical coniferous forest biome Types ForestBiome.
+subtropical desert biome is Individual.
+subtropical desert biome Types DesertBiome.
+subtropical dry braoaleaf forest biome is Individual.
+subtropical dry braoaleaf forest biome Types ForestBiome.
+subtropical grassland biome is Individual.
+subtropical grassland biome Types GrasslandBiome.
+subtropical moist broadleaf forest biome is Individual.
+subtropical moist broadleaf forest biome Types ForestBiome.
+subtropical savanna biome is Individual.
+subtropical savanna biome Types WoodlandBiome.
+subtropical shrubland biome is Individual.
+subtropical shrubland biome Types ShrublandBiome.
+subtropical woodland biome is Individual.
+subtropical woodland biome Types WoodlandBiome.
+surface soil is Individual.
+surface soil Types Soil.
+technosol is Individual.
+technosol Types Soil.
+temperate broadleaf forest biome is Individual.
+temperate broadleaf forest biome Types ForestBiome.
+temperate coniferous forest biome is Individual.
+temperate coniferous forest biome Types ForestBiome.
+temperate desert biome is Individual.
+temperate desert biome Types DesertBiome.
+temperate grassland biome is Individual.
+temperate grassland biome Types GrasslandBiome.
+temperate mixed forest biome is Individual.
+temperate mixed forest biome Types ForestBiome.
+temperate savanna biome is Individual.
+temperate savanna biome Types WoodlandBiome.
+temperate shrubland biome is Individual.
+temperate shrubland biome Types ShrublandBiome.
+temperate woodland biome is Individual.
+temperate woodland biome Types WoodlandBiome.
+terrace is Individual.
+terrace Types PhysiographicFeature.
+thyrse is Individual.
+thyrse Types Inflorescence.
+tropical broadleaf forest biome is Individual.
+tropical broadleaf forest biome Types ForestBiome.
+tropical coniferous forest biome is Individual.
+tropical coniferous forest biome Types ForestBiome.
+tropical desert biome is Individual.
+tropical desert biome Types DesertBiome.
+tropical dry broadleaf forest biome is Individual.
+tropical dry broadleaf forest biome Types ForestBiome.
+tropical grassland biome is Individual.
+tropical grassland biome Types GrasslandBiome.
+tropical moist broadleaf forest biome is Individual.
+tropical moist broadleaf forest biome Types ForestBiome.
+tropical savanna biome is Individual.
+tropical savanna biome Types WoodlandBiome.
+tropical shrubland biome is Individual.
+tropical shrubland biome Types ShrublandBiome.
+tropical soil is Individual.
+tropical soil Types Soil.
+tropical woodland biome is Individual.
+tropical woodland biome Types WoodlandBiome.
+tundra is Individual.
+tundra Types PhysiographicFeature.
+tunnel is Individual.
+tunnel Types PhysiographicFeature.
+ultramafic hydrothermal vent biome is Individual.
+ultramafic hydrothermal vent biome Types MarineBiome.
+umbel is Individual.
+umbel Types Inflorescence.
+umbellet is Individual.
+umbellet Types Inflorescence.
+umbrisol is Individual.
+umbrisol Types Soil.
+upland soil is Individual.
+upland soil Types Soil.
+urban biome is Individual.
+urban biome Types AnthropogenicTerrestrialBiome.
+valley is Individual.
+valley Types PhysiographicFeature.
+verticillaster is Individual.
+verticillaster Types Inflorescence.
+vertisol is Individual.
+vertisol Types Soil.
+village biome is Individual.
+village biome Types AnthropogenicTerrestrialBiome.
+watershed is Individual.
+watershed Types PhysiographicFeature.
+white smoker biome is Individual.
+white smoker biome Types MarineBiome.
+woodland is Individual.
+woodland Types PhysiographicFeature.
+xeric basin biome is Individual.
+xeric basin biome Types FreshwaterBiome.
+xeric shrubland biome is Individual.
+xeric shrubland biome Types ShrublandBiome.

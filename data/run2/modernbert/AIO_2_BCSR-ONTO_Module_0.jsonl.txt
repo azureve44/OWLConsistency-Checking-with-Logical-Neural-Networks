@@ -1,0 +1,695 @@
+decimal is Datatype.
+integer is Datatype.
+positiveInteger is Datatype.
+string is Datatype.
+forInterval is ObjectProperty.
+forInterval Characteristics Functional.
+forInterval Domain C25197.
+forInterval Range Rec interval.
+forRiskLevel is ObjectProperty.
+forRiskLevel Characteristics Functional.
+forRiskLevel Domain Guideline.
+forRiskLevel Range Risk level.
+gives is ObjectProperty.
+gives Characteristics InverseFunctional.
+gives Domain Guideline.
+gives Range C25197.
+hasAge is ObjectProperty.
+hasAge Characteristics Functional.
+hasAge Domain C14284.
+hasAge Range C25197,.
+hasAge Range Age.
+hasAgeHigh is ObjectProperty.
+hasAgeHigh SubPropertyOf hasAge.
+hasAgeHigh Characteristics Functional.
+hasAgeHigh Domain C14284 and (hasRisk some (hasLevel value High)).
+hasAgeHigh Range Age.
+hasAgeMedium is ObjectProperty.
+hasAgeMedium SubPropertyOf hasAge.
+hasAgeMedium Characteristics Functional.
+hasAgeMedium Domain C14284 and (hasRisk some (hasLevel value Medium)).
+hasAgeMedium Range Age.
+hasAnswer is ObjectProperty.
+hasAnswer Characteristics InverseFunctional.
+hasAnswer Domain Question.
+hasAnswer Range Answer value.
+hasBreastDiseaseValue is ObjectProperty.
+hasBreastDiseaseValue Domain Breast disease history.
+hasBreastDiseaseValue Range Answer value.
+hasFamilyHistory is ObjectProperty.
+hasFamilyHistory Domain Family history.
+hasFamilyHistory Range Answer value.
+hasFirstChildBirthAge is ObjectProperty.
+hasFirstChildBirthAge Characteristics Functional.
+hasFirstChildBirthAge Domain Hormonal history.
+hasFirstChildBirthAge Range Age.
+hasGeneticValue is ObjectProperty.
+hasGeneticValue Domain Genetic mutation history.
+hasGeneticValue Range Answer value.
+hasHeight is ObjectProperty.
+hasHeight Characteristics Functional.
+hasHeight Domain C14284.
+hasHeight Range Height.
+hasHistory is ObjectProperty.
+hasHistory Characteristics InverseFunctional.
+hasHistory Domain C14284.
+hasHistory Range C54625.
+hasHormonalValue is ObjectProperty.
+hasHormonalValue Domain Hormonal history.
+hasHormonalValue Range Answer value.
+hasImaging is ObjectProperty.
+hasImaging Characteristics Functional.
+hasImaging Domain C25197.
+hasImaging Range Imaging.
+hasLevel is ObjectProperty.
+hasLevel Characteristics Functional.
+hasLevel Domain Risk.
+hasLevel Range Risk level.
+hasMenarcheAge is ObjectProperty.
+hasMenarcheAge Characteristics Functional.
+hasMenarcheAge Domain Hormonal history.
+hasMenarcheAge Range Age.
+hasModelQuestion is ObjectProperty.
+hasModelQuestion Characteristics InverseFunctional.
+hasModelQuestion Domain Model.
+hasModelQuestion Range Question.
+hasMotherAge is ObjectProperty.
+hasMotherAge Characteristics Functional.
+hasMotherAge Domain Family history.
+hasMotherAge Range Age.
+hasMotherBreastCancerAge is ObjectProperty.
+hasMotherBreastCancerAge Characteristics Functional.
+hasMotherBreastCancerAge Domain Family history.
+hasMotherBreastCancerAge Range Age.
+hasOvarianDiseaseValue is ObjectProperty.
+hasOvarianDiseaseValue Domain Ovarian disease history.
+hasOvarianDiseaseValue Range Answer value.
+hasPeriodicity is ObjectProperty.
+hasPeriodicity Characteristics Functional.
+hasPeriodicity Domain C25197.
+hasPeriodicity Range Periodicity.
+hasPersonalHistory is ObjectProperty.
+hasPersonalHistory Domain Personal history.
+hasPersonalHistory Range Answer value.
+hasRace is ObjectProperty.
+hasRace Characteristics Functional.
+hasRace Domain C14284.
+hasRace Range Race.
+hasRange is ObjectProperty.
+hasRange Domain Age.
+hasRange Range Rec interval.
+hasRecStrength is ObjectProperty.
+hasRecStrength Characteristics Functional.
+hasRecStrength Domain C25197.
+hasRecStrength Range Recommendation Strength.
+hasRecommendationHigh is ObjectProperty.
+hasRecommendationHigh SubPropertyChain hasAgeHigh o hasRange o intervalOfHigh.
+hasRecommendationHigh Domain C14284.
+hasRecommendationHigh Range C25197 and ( inverse (gives) some (forRiskLevel value High)).
+hasRecommendationMedium is ObjectProperty.
+hasRecommendationMedium SubPropertyChain hasAgeMedium o hasRange o intervalOfMedium.
+hasRecommendationMedium Domain C14284.
+hasRecommendationMedium Range C25197 and ( inverse (gives) some (forRiskLevel value Medium)).
+hasRisk is ObjectProperty.
+hasRisk Domain C14284.
+hasRisk Range Risk.
+hasWeight is ObjectProperty.
+hasWeight Characteristics Functional.
+hasWeight Domain C14284.
+hasWeight Range Weight.
+intervalOfHigh is ObjectProperty.
+intervalOfHigh SubPropertyOf inverse (forInterval).
+intervalOfHigh Characteristics InverseFunctional.
+intervalOfHigh Domain Rec interval.
+intervalOfHigh Range C25197 and ( inverse (gives) some (forRiskLevel value High)).
+intervalOfMedium is ObjectProperty.
+topObjectProperty, is www.w3.org/2002/07/#.
+topObjectProperty, is inverse (forInterval).
+topObjectProperty, Characteristics InverseFunctional.
+topObjectProperty, Domain Rec interval.
+topObjectProperty, Range C25197 and ( inverse (gives) some (forRiskLevel value Medium)).
+predicts is ObjectProperty.
+predicts Characteristics InverseFunctional.
+predicts Domain Model.
+predicts Range Risk.
+www.w3.org/2002/07/# is ObjectProperty.
+age is DataProperty.
+age Characteristics Functional.
+age Domain Age.
+age Range integer.
+answerText is DataProperty.
+answerText Characteristics Functional.
+answerText Domain Answer value.
+answerText Range string.
+height is DataProperty.
+height Characteristics Functional.
+height Domain Height.
+height Range decimal.
+numberOfBiopsies is DataProperty.
+numberOfBiopsies Characteristics Functional.
+numberOfBiopsies Domain Breast disease history or Ovarian disease history.
+numberOfBiopsies Range integer.
+numberOfChilds is DataProperty.
+numberOfChilds Characteristics Functional.
+numberOfChilds Domain Hormonal history.
+numberOfChilds Range integer.
+numberRecentYearsWithoutHormonalTherapy is DataProperty.
+numberRecentYearsWithoutHormonalTherapy Domain Hormonal history.
+numberRecentYearsWithoutHormonalTherapy Range positiveInteger.
+questionText is DataProperty.
+questionText Characteristics Functional.
+questionText Domain Question.
+questionText Range string.
+weight is DataProperty.
+weight Characteristics Functional.
+weight Domain Weight.
+weight Range decimal.
+yearsNumberAnticonceptive is DataProperty.
+yearsNumberAnticonceptive Domain Hormonal history.
+yearsNumberAnticonceptive Range integer.
+C14284 is Class.
+Thing is www.w3.org/2002/07/#.
+C16818 is Class.
+C16818 is equivalent to Magnetic resonance.
+C16818 SubClassOf Imaging.
+C16818 DisjointWith Magnetic resonance.
+C18772 is Class.
+C18772 SubClassOf C54625.
+C25197 is Class.
+Thing is www.w3.org/2002/07/#.
+C54625 is Class.
+Thing is www.w3.org/2002/07/#.
+ACS Model High is Class.
+ACS Model High SubClassOf C14284,.
+ACS Model High SubClassOf hasRisk value ACS model high.
+ACS Model Medium is Class.
+ACS Model Medium SubClassOf C14284,.
+ACS Model Medium SubClassOf hasRisk value ACS model medium.
+Age is Class.
+Thing is www.w3.org/2002/07/#.
+Answer value is Class.
+Thing is www.w3.org/2002/07/#.
+Breast disease history is Class.
+Breast disease history SubClassOf C18772.
+Family history is Class.
+Family history SubClassOf C18772.
+Gail Model High is Class.
+Gail Model High SubClassOf C14284,.
+Gail Model High SubClassOf hasRisk value Gail model high.
+Gail Model Medium is Class.
+Gail Model Medium SubClassOf C14284,.
+Gail Model Medium SubClassOf hasRisk value Gail model medium.
+Genetic mutation history is Class.
+Genetic mutation history SubClassOf C18772.
+Guideline is Class.
+Thing is www.w3.org/2002/07/#.
+Height is Class.
+Thing is www.w3.org/2002/07/#.
+Hormonal history is Class.
+Hormonal history SubClassOf C18772.
+IBIS Model High is Class.
+IBIS Model High SubClassOf C14284,.
+IBIS Model High SubClassOf hasRisk value IBIS model high.
+IBIS Model Medium is Class.
+IBIS Model Medium SubClassOf C14284,.
+IBIS Model Medium SubClassOf hasRisk value IBIS model medium.
+Imaging is Class.
+Thing is www.w3.org/2002/07/#.
+Thing is www.w3.org/2002/07/#.
+Magnetic resonance is Class.
+Magnetic resonance is equivalent to C16818.
+Magnetic resonance SubClassOf Imaging.
+Magnetic resonance DisjointWith C16818.
+Model is Class.
+Thing is www.w3.org/2002/07/#.
+Ovarian disease history is Class.
+Ovarian disease history SubClassOf C18772.
+Periodicity is Class.
+Thing is www.w3.org/2002/07/#.
+Personal history is Class.
+Personal history SubClassOf C18772.
+Question is Class.
+Thing is www.w3.org/2002/07/#.
+Race is Class.
+Thing is www.w3.org/2002/07/#.
+Radiotherapy chest history is Class.
+Radiotherapy chest history SubClassOf C18772.
+Rec interval is Class.
+Thing is www.w3.org/2002/07/#.
+Recommendation Strength is Class.
+Thing is www.w3.org/2002/07/#.
+Risk is Class.
+Thing is www.w3.org/2002/07/#.
+Risk level is Class.
+Thing is www.w3.org/2002/07/#.
+Weight is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2002/07/# SubClassOf IBIS Model Medium.
+www.w3.org/2002/07/# DisjointWith Imaging.
+40 to 44 Age range recommendation is Individual.
+40 to 44 Age range recommendation Types C25197.
+40 to 44 Age range recommendation forInterval Age Range 40 to 44,.
+40 to 44 Age range recommendation hasImaging Screening Mammography,.
+40 to 44 Age range recommendation hasPeriodicity Annual,.
+40 to 44 Age range recommendation hasRecStrength Qualified Recommendation.
+44 to 54 Age range recommendation is Individual.
+44 to 54 Age range recommendation Types C25197.
+44 to 54 Age range recommendation forInterval Age Range 45 to 54,.
+44 to 54 Age range recommendation hasImaging Screening Mammography,.
+44 to 54 Age range recommendation hasPeriodicity Annual,.
+44 to 54 Age range recommendation hasRecStrength Strong Recommendation.
+ACS guideline is Individual.
+ACS guideline Types Guideline.
+ACS guideline forRiskLevel Medium,.
+ACS guideline gives greater than 55 Age range recommendation,.
+ACS guideline gives 40 to 44 Age range recommendation,.
+ACS guideline gives 44 to 54 Age range recommendation.
+ACS model is Individual.
+ACS model Types Model.
+ACS model predicts ACS model high,.
+ACS model predicts ACS model medium.
+ACS model high is Individual.
+ACS model high Types Risk.
+ACS model high hasLevel High.
+ACS model medium is Individual.
+ACS model medium Types Risk.
+ACS model medium hasLevel Medium.
+Age Range 40 to 44 is Individual.
+Age Range 40 to 44 Types Rec interval.
+Age Range 40 to 44 intervalOfMedium 40 to 44 Age range recommendation.
+Age Range 40 to 50 is Individual.
+Age Range 40 to 50 Types Rec interval.
+Age Range 40 to 50 intervalOfHigh high 40 to 50 age recommendation.
+Age Range 45 to 54 is Individual.
+Age Range 45 to 54 Types Rec interval.
+Age Range 45 to 54 intervalOfMedium 44 to 54 Age range recommendation.
+Age gt or eq 55 is Individual.
+Age gt or eq 55 Types Rec interval.
+Age gt or eq 55 intervalOfMedium greater than 55 Age range recommendation.
+Annual is Individual.
+Annual Types Periodicity.
+Annual or Biannual is Individual.
+Annual or Biannual Types Periodicity.
+Gail model is Individual.
+Gail model Types Model.
+Gail model predicts Gail model high,.
+Gail model predicts Gail model medium.
+Gail model high is Individual.
+Gail model high Types Risk.
+Gail model high hasLevel High.
+Gail model medium is Individual.
+Gail model medium Types Risk.
+Gail model medium hasLevel Medium.
+HRisk guideline is Individual.
+HRisk guideline Types Guideline.
+HRisk guideline forRiskLevel High,.
+HRisk guideline gives high 40 to 50 age recommendation.
+High is Individual.
+High Types Risk level.
+IBIS BRCA gen BRCA1 value is Individual.
+IBIS BRCA gen BRCA1 value Types Answer value.
+IBIS BRCA gen BRCA1 value answerText "BRCA1+".
+IBIS BRCA gen BRCA2 value is Individual.
+IBIS BRCA gen BRCA2 value Types Answer value.
+IBIS BRCA gen BRCA2 value answerText "BRCA2+".
+IBIS BRCA gen mother BRCA1 value is Individual.
+IBIS BRCA gen mother BRCA1 value Types Answer value.
+IBIS BRCA gen mother BRCA1 value answerText "BRCA1+".
+IBIS BRCA gen mother BRCA2 value is Individual.
+IBIS BRCA gen mother BRCA2 value Types Answer value.
+IBIS BRCA gen mother BRCA2 value answerText "BRCA2+".
+IBIS BRCA gen mother question is Individual.
+IBIS BRCA gen mother question Types Question.
+IBIS BRCA gen mother question hasAnswer IBIS BRCA gen mother BRCA1 value,.
+IBIS BRCA gen mother question hasAnswer IBIS BRCA gen mother BRCA2 value,.
+IBIS BRCA gen mother question hasAnswer IBIS BRCA gen mother test normal value,.
+IBIS BRCA gen mother question hasAnswer IBIS BRCA gen mother unknown value,.
+¿Gen BRCA?" is questionText  "Madre.
+IBIS BRCA gen mother test normal value is Individual.
+IBIS BRCA gen mother test normal value Types Answer value.
+IBIS BRCA gen mother test normal value answerText "Probado, Normal".
+IBIS BRCA gen mother unknown value is Individual.
+IBIS BRCA gen mother unknown value Types Answer value.
+IBIS BRCA gen mother unknown value answerText "Desconocido".
+IBIS BRCA gen question is Individual.
+IBIS BRCA gen question Types Question.
+IBIS BRCA gen question hasAnswer IBIS BRCA gen BRCA1 value,.
+IBIS BRCA gen question hasAnswer IBIS BRCA gen BRCA2 value,.
+IBIS BRCA gen question hasAnswer IBIS BRCA gen test normal value,.
+IBIS BRCA gen question hasAnswer IBIS BRCA gen unknown value,.
+¿La mujer tiene una mutación en el gen BRCA1 o BRCA2?" is questionText  "Gen NRCA.
+IBIS BRCA gen test normal value is Individual.
+IBIS BRCA gen test normal value Types Answer value.
+IBIS BRCA gen test normal value answerText "Probado, Normal".
+IBIS BRCA gen unknown value is Individual.
+IBIS BRCA gen unknown value Types Answer value.
+IBIS BRCA gen unknown value answerText "Desconocido".
+IBIS age question is Individual.
+IBIS age question Types Question.
+" is questionText  "Edad actual.
+IBIS ahkenazi ancestry no value is Individual.
+IBIS ahkenazi ancestry no value Types Answer value.
+IBIS ahkenazi ancestry no value answerText "No".
+IBIS ahkenazi ancestry yes value is Individual.
+IBIS ahkenazi ancestry yes value Types Answer value.
+IBIS ahkenazi ancestry yes value answerText "Sí".
+IBIS ashkenazi ancestry question is Individual.
+IBIS ashkenazi ancestry question Types Question.
+IBIS ashkenazi ancestry question hasAnswer IBIS ahkenazi ancestry no value,.
+IBIS ashkenazi ancestry question hasAnswer IBIS ahkenazi ancestry yes value,.
+IBIS ashkenazi ancestry question questionText "¿Herencia Ashkenazi?".
+IBIS bilateral bc mother no value is Individual.
+IBIS bilateral bc mother no value Types Answer value.
+IBIS bilateral bc mother no value answerText "No".
+IBIS bilateral bc mother question is Individual.
+IBIS bilateral bc mother question Types Question.
+IBIS bilateral bc mother question hasAnswer IBIS bilateral bc mother no value,.
+IBIS bilateral bc mother question hasAnswer IBIS bilateral bc mother yes value,.
+¿Bilateral?" is questionText  "Madre.
+IBIS bilateral bc mother yes value is Individual.
+IBIS bilateral bc mother yes value Types Answer value.
+IBIS bilateral bc mother yes value answerText "Sí".
+IBIS breast biopsy carcinoma lob is value is Individual.
+IBIS breast biopsy carcinoma lob is value Types Answer value.
+IBIS breast biopsy carcinoma lob is value answerText "Carcinoma lobulillar in situ (CLIS)".
+IBIS breast biopsy hiperplasia atipica value is Individual.
+IBIS breast biopsy hiperplasia atipica value Types Answer value.
+IBIS breast biopsy hiperplasia atipica value answerText "Hiperplasia atípica".
+IBIS breast biopsy hiperplasia no atipia value is Individual.
+IBIS breast biopsy hiperplasia no atipia value Types Answer value.
+IBIS breast biopsy hiperplasia no atipia value answerText "Hiperplasia (no atipia)".
+IBIS breast biopsy question is Individual.
+IBIS breast biopsy question Types Question.
+IBIS breast biopsy question hasAnswer IBIS breast biopsy carcinoma lob is value,.
+IBIS breast biopsy question hasAnswer IBIS breast biopsy hiperplasia atipica value,.
+IBIS breast biopsy question hasAnswer IBIS breast biopsy hiperplasia no atipia value,.
+IBIS breast biopsy question hasAnswer IBIS breast biopsy unknown value,.
+IBIS breast biopsy question hasAnswer IBIS breast biopsy without value,.
+¿Se ha realizado una biopsia de mama la mujer?" is questionText  "Biopsia de mama.
+IBIS breast biopsy unknown value is Individual.
+IBIS breast biopsy unknown value Types Answer value.
+IBIS breast biopsy unknown value answerText "Biopsia previa, resultado desconocido".
+IBIS breast biopsy without value is Individual.
+IBIS breast biopsy without value Types Answer value.
+IBIS breast biopsy without value answerText "Sin biopsia previa / sin enfermedad proliferativa".
+IBIS breast cancer mother no value is Individual.
+IBIS breast cancer mother no value Types Answer value.
+IBIS breast cancer mother no value answerText "No".
+IBIS breast cancer mother question is Individual.
+IBIS breast cancer mother question Types Question.
+IBIS breast cancer mother question hasAnswer IBIS breast cancer mother no value,.
+IBIS breast cancer mother question hasAnswer IBIS breast cancer mother yes value,.
+¿Cáncer de mama?" is questionText  "Madre.
+IBIS breast cancer mother yes value is Individual.
+IBIS breast cancer mother yes value Types Answer value.
+IBIS breast cancer mother yes value answerText "Sí".
+IBIS breast density average value is Individual.
+IBIS breast density average value Types Answer value.
+IBIS breast density average value answerText "Promedio".
+IBIS breast density extrem dense value is Individual.
+IBIS breast density extrem dense value Types Answer value.
+IBIS breast density extrem dense value answerText "extremadamente denso".
+IBIS breast density fatty value is Individual.
+IBIS breast density fatty value Types Answer value.
+IBIS breast density fatty value answerText "Graso".
+IBIS breast density heterog dense value is Individual.
+IBIS breast density heterog dense value Types Answer value.
+IBIS breast density heterog dense value answerText "heterogéneamente denso".
+IBIS breast density question is Individual.
+IBIS breast density question Types Question.
+IBIS breast density question hasAnswer IBIS breast density average value,.
+IBIS breast density question hasAnswer IBIS breast density extrem dense value,.
+IBIS breast density question hasAnswer IBIS breast density fatty value,.
+IBIS breast density question hasAnswer IBIS breast density heterog dense value,.
+IBIS breast density question questionText "Densidad mamaria, si se conoce".
+IBIS first child birth age question is Individual.
+IBIS first child birth age question Types Question.
+IBIS first child birth age question questionText "¿Edad de la mujer cuando dio a luz a su PRIMER hijo vivo?".
+IBIS has childs no value is Individual.
+IBIS has childs no value Types Answer value.
+IBIS has childs no value answerText "No".
+IBIS has childs question is Individual.
+IBIS has childs question Types Question.
+IBIS has childs question hasAnswer IBIS has childs no value,.
+IBIS has childs question hasAnswer IBIS has childs unknown value,.
+IBIS has childs question hasAnswer IBIS has childs yes value,.
+IBIS has childs question questionText "¿La mujer ha dado a luz a uno o más hijos?".
+IBIS has childs unknown value is Individual.
+IBIS has childs unknown value Types Answer value.
+IBIS has childs unknown value answerText "Desconocido".
+IBIS has childs yes value is Individual.
+IBIS has childs yes value Types Answer value.
+IBIS has childs yes value answerText "Sí".
+IBIS has menopause no value is Individual.
+IBIS has menopause no value Types Answer value.
+IBIS has menopause no value answerText "No".
+IBIS has menopause now value is Individual.
+IBIS has menopause now value Types Answer value.
+IBIS has menopause now value answerText "En la monopausia ahora".
+IBIS has menopause question is Individual.
+IBIS has menopause question Types Question.
+IBIS has menopause question hasAnswer IBIS has menopause no value,.
+IBIS has menopause question hasAnswer IBIS has menopause now value,.
+IBIS has menopause question hasAnswer IBIS has menopause unknown value,.
+IBIS has menopause question hasAnswer IBIS has menopause yes value,.
+IBIS has menopause question questionText "¿La mujer ha pasado por la menopausia?".
+IBIS has menopause unknown value is Individual.
+IBIS has menopause unknown value Types Answer value.
+IBIS has menopause unknown value answerText "no sé".
+IBIS has menopause yes value is Individual.
+IBIS has menopause yes value Types Answer value.
+IBIS has menopause yes value answerText "Sí".
+IBIS height question is Individual.
+IBIS height question Types Question.
+" is questionText  "Altura.
+IBIS horm therapy 5 years less value is Individual.
+IBIS horm therapy 5 years less value Types Answer value.
+IBIS horm therapy 5 years less value answerText "Dejó de usarse hace menos de 5 años".
+IBIS horm therapy 5 years more value is Individual.
+IBIS horm therapy 5 years more value Types Answer value.
+IBIS horm therapy 5 years more value answerText "Dejó de usarse hace 5 años o más".
+IBIS horm therapy never value is Individual.
+IBIS horm therapy never value Types Answer value.
+IBIS horm therapy never value answerText "Nunca".
+IBIS horm therapy now value is Individual.
+IBIS horm therapy now value Types Answer value.
+IBIS horm therapy now value answerText "Usuario actual".
+IBIS hormonal therapy question is Individual.
+IBIS hormonal therapy question Types Question.
+IBIS hormonal therapy question hasAnswer IBIS horm therapy 5 years less value,.
+IBIS hormonal therapy question hasAnswer IBIS horm therapy 5 years more value,.
+IBIS hormonal therapy question hasAnswer IBIS horm therapy never value,.
+IBIS hormonal therapy question hasAnswer IBIS horm therapy now value,.
+IBIS hormonal therapy question questionText "¿Uso de la terapia de reemplazo hormonal (TRH)?".
+IBIS menarche age question is Individual.
+IBIS menarche age question Types Question.
+IBIS menarche age question questionText "¿Cuál era la edad de la mujer en el momento de su primer período menstrual?".
+IBIS model is Individual.
+IBIS model Types Model.
+IBIS model hasModelQuestion IBIS BRCA gen mother question,.
+IBIS model hasModelQuestion IBIS BRCA gen question,.
+IBIS model hasModelQuestion IBIS age question,.
+IBIS model hasModelQuestion IBIS ashkenazi ancestry question,.
+IBIS model hasModelQuestion IBIS bilateral bc mother question,.
+IBIS model hasModelQuestion IBIS breast biopsy question,.
+IBIS model hasModelQuestion IBIS breast cancer mother question,.
+IBIS model hasModelQuestion IBIS breast density question,.
+IBIS model hasModelQuestion IBIS first child birth age question,.
+IBIS model hasModelQuestion IBIS has childs question,.
+IBIS model hasModelQuestion IBIS has menopause question,.
+IBIS model hasModelQuestion IBIS height question,.
+IBIS model hasModelQuestion IBIS hormonal therapy question,.
+IBIS model hasModelQuestion IBIS menarche age question,.
+IBIS model hasModelQuestion IBIS mother age bc start question,.
+IBIS model hasModelQuestion IBIS mother age question,.
+IBIS model hasModelQuestion IBIS ovarian cancer mother question,.
+IBIS model hasModelQuestion IBIS ovarian cancer question,.
+IBIS model hasModelQuestion IBIS weight question.
+IBIS model high is Individual.
+IBIS model high Types Risk.
+IBIS model high hasLevel High.
+IBIS model medium is Individual.
+IBIS model medium Types Risk.
+IBIS model medium hasLevel Medium.
+IBIS mother age bc start question is Individual.
+IBIS mother age bc start question Types Question.
+¿Edad de la madre al inicio?" is questionText  "Madre.
+IBIS mother age question is Individual.
+IBIS mother age question Types Question.
+¿Edad actual o al fallecer?" is questionText  "Madre.
+IBIS ovarial cancer mother no value is Individual.
+IBIS ovarial cancer mother no value Types Answer value.
+IBIS ovarial cancer mother no value answerText "No".
+IBIS ovarial cancer mother yes value is Individual.
+IBIS ovarial cancer mother yes value Types Answer value.
+IBIS ovarial cancer mother yes value answerText "Sí".
+IBIS ovarian cancer mother question is Individual.
+IBIS ovarian cancer mother question Types Question.
+IBIS ovarian cancer mother question hasAnswer IBIS ovarial cancer mother no value,.
+IBIS ovarian cancer mother question hasAnswer IBIS ovarial cancer mother yes value,.
+¿Cáncer de ovarios?" is questionText  "Madre.
+IBIS ovarian cancer no value is Individual.
+IBIS ovarian cancer no value Types Answer value.
+IBIS ovarian cancer no value answerText "No".
+IBIS ovarian cancer question is Individual.
+IBIS ovarian cancer question Types Question.
+IBIS ovarian cancer question hasAnswer IBIS ovarian cancer no value,.
+IBIS ovarian cancer question hasAnswer IBIS ovarian cancer yes value,.
+¿La mujer ha tenido cáncer de OVARIO?" is questionText  "Cáncer de ovario.
+IBIS ovarian cancer yes value is Individual.
+IBIS ovarian cancer yes value Types Answer value.
+IBIS ovarian cancer yes value answerText "Sí".
+IBIS weight question is Individual.
+IBIS weight question Types Question.
+" is questionText  "Peso.
+Magnetic resonance is Individual.
+Magnetic resonance Types Magnetic resonance.
+Medium is Individual.
+Medium Types Risk level.
+Qualified Recommendation is Individual.
+Qualified Recommendation Types Recommendation Strength.
+Screening Mammography is Individual.
+Screening Mammography Types C16818.
+Strong Recommendation is Individual.
+Strong Recommendation Types Recommendation Strength.
+Woman1 is Individual.
+Woman1 Types C14284,.
+Woman1 Types ACS Model Medium,.
+Woman1 Types Gail Model Medium.
+Woman1 hasAge age43,.
+Woman1 hasHistory genetic mutation Woman1,.
+Woman1 hasHistory hormonal Woman1,.
+Woman1 hasHistory radiotherapy chest Woman1,.
+Woman1 hasRace african american.
+Woman2 is Individual.
+Woman2 Types C14284,.
+Woman2 Types ACS Model Medium,.
+Woman2 Types Gail Model Medium,.
+Woman2 Types IBIS Model High.
+Woman2 hasAge age56,.
+Woman2 hasHistory genetic mutation Woman2,.
+Woman2 hasHistory hormonal Woman2,.
+Woman2 hasHistory radiotherapy chest Woman2,.
+Woman2 hasRace white.
+Woman3 is Individual.
+Woman3 Types C14284,.
+Woman3 Types IBIS Model Medium.
+Woman3 hasAge age44.
+Woman4 is Individual.
+Woman4 Types C14284,.
+Woman4 Types ACS Model High,.
+Woman4 Types Gail Model High.
+Woman4 hasAge age56,.
+Woman4 hasRace latin hispanic.
+Woman5 is Individual.
+Woman5 Types C14284,.
+Woman5 Types ACS Model Medium,.
+Woman5 Types Gail Model Medium.
+Woman5 hasAge age46,.
+Woman5 hasHistory genetic mutation Woman5,.
+Woman5 hasHistory radiotherapy chest Woman5,.
+Woman5 hasRace white.
+Woman6 is Individual.
+Woman6 Types C14284,.
+Woman6 Types ACS Model Medium.
+Woman6 hasHistory genetic mutation Woman6,.
+Woman6 hasRace white.
+african american is Individual.
+african american Types Race.
+age11 is Individual.
+age11 Types Age.
+age11 age 11.
+age13 is Individual.
+age13 Types Age.
+age13 age 13.
+age28 is Individual.
+age28 Types Age.
+age28 age 28.
+age30 is Individual.
+age30 Types Age.
+age30 hasRange Age Range 40 to 50,.
+age30 age 30.
+age43 is Individual.
+age43 Types Age.
+age43 hasRange Age Range 40 to 44,.
+age43 hasRange Age Range 40 to 50,.
+age43 age 43.
+age44 is Individual.
+age44 Types Age.
+age44 hasRange Age Range 40 to 44,.
+age44 hasRange Age Range 40 to 50,.
+age44 age 44.
+age46 is Individual.
+age46 Types Age.
+age46 hasRange Age Range 40 to 50,.
+age46 hasRange Age Range 45 to 54,.
+age46 age 46.
+age54 is Individual.
+age54 Types Age.
+age54 hasRange Age Range 40 to 50,.
+age54 hasRange Age Range 45 to 54,.
+age54 age 54.
+age56 is Individual.
+age56 Types Age.
+age56 hasRange Age Range 40 to 50,.
+age56 hasRange Age gt or eq 55,.
+age56 age 56.
+alaskan native is Individual.
+alaskan native Types Race.
+american indian is Individual.
+american indian Types Race.
+asian american is Individual.
+asian american Types Race.
+genetic mutation Woman1 is Individual.
+genetic mutation Woman1 Types Genetic mutation history.
+genetic mutation Woman2 is Individual.
+genetic mutation Woman2 Types Genetic mutation history.
+genetic mutation Woman5 is Individual.
+genetic mutation Woman5 Types Genetic mutation history.
+genetic mutation Woman6 is Individual.
+genetic mutation Woman6 Types Genetic mutation history.
+greater than 55 Age range recommendation is Individual.
+greater than 55 Age range recommendation Types C25197.
+greater than 55 Age range recommendation forInterval Age gt or eq 55,.
+greater than 55 Age range recommendation hasImaging Screening Mammography,.
+greater than 55 Age range recommendation hasPeriodicity Annual or Biannual,.
+greater than 55 Age range recommendation hasRecStrength Qualified Recommendation.
+high 40 to 50 age recommendation is Individual.
+high 40 to 50 age recommendation Types C25197.
+high 40 to 50 age recommendation forInterval Age Range 40 to 50,.
+high 40 to 50 age recommendation hasImaging Magnetic resonance,.
+high 40 to 50 age recommendation hasPeriodicity Annual,.
+high 40 to 50 age recommendation hasRecStrength Strong Recommendation.
+hormonal Woman1 is Individual.
+hormonal Woman1 Types Hormonal history.
+hormonal Woman1 hasFirstChildBirthAge age28,.
+hormonal Woman1 hasMenarcheAge age11,.
+hormonal Woman1 numberOfChilds 2,.
+hormonal Woman1 yearsNumberAnticonceptive 10.
+hormonal Woman2 is Individual.
+hormonal Woman2 Types Hormonal history.
+hormonal Woman2 hasFirstChildBirthAge age30,.
+hormonal Woman2 hasMenarcheAge age13,.
+hormonal Woman2 numberOfChilds 1.
+latin hispanic is Individual.
+latin hispanic Types Race.
+radiotherapy chest Woman1 is Individual.
+radiotherapy chest Woman1 Types Radiotherapy chest history.
+radiotherapy chest Woman2 is Individual.
+radiotherapy chest Woman2 Types Radiotherapy chest history.
+radiotherapy chest Woman5 is Individual.
+radiotherapy chest Woman5 Types Radiotherapy chest history.
+radiotherapy chest Woman6 is Individual.
+radiotherapy chest Woman6 Types Radiotherapy chest history.
+white is Individual.
+white Types Race.
+white DisjointClasses C14284,C25197,C54625,Age,Answer value,Guideline,Height,Imaging,Model,Periodicity,Question,Race,Rec interval,Recommendation Strength,Risk,Risk level,Weight.
+white DisjointClasses Breast disease history,Family history,Genetic mutation history,Hormonal history,Ovarian disease history,Personal history,Radiotherapy chest history.
+C14284 and (hasAge some www.w3.org/2002/07/# is Class.
+Thing is hasAgeHigh some www.w3.org/2002/07/#.
+C14284 and (hasAge some www.w3.org/2002/07/# is Class.
+Thing, is hasAgeMedium some www.w3.org/2002/07/#.
+Thing, is hasAgeMedium some.
+Thing), is (Imaging and www.w3.org/2002/07/#.
+Thing), is hasAgeMedium only Imaging.

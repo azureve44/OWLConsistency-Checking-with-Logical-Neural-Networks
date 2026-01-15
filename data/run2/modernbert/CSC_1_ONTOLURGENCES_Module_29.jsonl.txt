@@ -1,0 +1,215 @@
+motifACommeOrigineDiagnostic is ObjectProperty.
+motifACommeSigneMedical is ObjectProperty.
+AbsenceAcquiseDeDents is Class.
+AnomalieDeLaCloisonNasale is Class.
+AutresMotifs is Class.
+AutresMotifs SubClassOf SigneFonctionnelMotif.
+AvulsionDUneDent is Class.
+AvulsionDUneDent SubClassOf AbsenceAcquiseDeDents.
+CardioVasculaireMotif is Class.
+CardioVasculaireMotif SubClassOf SigneFonctionnelMotif.
+CertificatMotif is Class.
+CertificatMotif SubClassOf ExamenAdministratifMotif.
+ChirurgieDuCristallin is Class.
+ChirurgieDuPlexusBrachial is Class.
+ComplicationDeLAnesthesieSedation is Class.
+ConseilMotif is Class.
+ConstipationMaladie is Class.
+ConstipationMotif is Class.
+ConstipationMotif SubClassOf ProblemeDefecationMotif,.
+ConstipationMotif SubClassOf motifACommeSigneMedical some ConstipationMaladie.
+ContusionPulmonaire is Class.
+ContusionPulmonaire SubClassOf LesionPulmonaireEtPleurale.
+CorpsEtrangerDansLeLarynx is Class.
+CorpsEtrangerMotif is Class.
+CorpsEtrangerRectumAnomalieMorphologique is Class.
+CorpsEtrangerRectumMotif is Class.
+CorpsEtrangerRectumMotif SubClassOf CorpsEtrangerMotif,.
+CorpsEtrangerRectumMotif SubClassOf motifACommeSigneMedical some CorpsEtrangerRectumAnomalieMorphologique.
+CorpsEtrangerVoieDigestive is Class.
+CorpsEtrangerVoieDigestiveMotif is Class.
+CorpsEtrangerVoieDigestiveMotif SubClassOf CorpsEtrangerMotif,.
+CorpsEtrangerVoieDigestiveMotif SubClassOf motifACommeSigneMedical some CorpsEtrangerVoieDigestive.
+CorrectionDeMalformationsCongenitalesDesVaisseaux is Class.
+DesirSexuelHypoactifSituationnel is Class.
+DesirSexuelHypoactifSituationnel SubClassOf TroubleDuDesirSexuel.
+DeviationCloisonNasale is Class.
+DeviationCloisonNasale SubClassOf AnomalieDeLaCloisonNasale.
+DiarheeMotif is Class.
+DiarheeMotif SubClassOf ProblemeDefecationMotif,.
+DiarheeMotif SubClassOf motifACommeSigneMedical some Diarrhee.
+Diarrhee is Class.
+DouleurProctoMotif is Class.
+DouleurProctoMotif SubClassOf ProctologieMotif,.
+DouleurProctoMotif SubClassOf motifACommeOrigineDiagnostic some DouleurRectale.
+DouleurRectale is Class.
+EnvironnementMotif is Class.
+EnvironnementMotif SubClassOf SigneFonctionnelMotif.
+ExamenAdministratifMotif is Class.
+ExpositionAuSangMotif is Class.
+ExpositionAuSangMotif SubClassOf ExpositionAuxLiquidesBiologiquesMotif.
+ExpositionAuxLiquidesBiologiquesMotif is Class.
+FermetureDUneFenetreFistuleAortopulmonaire is Class.
+FermetureDUneFenetreFistuleAortopulmonaire SubClassOf CorrectionDeMalformationsCongenitalesDesVaisseaux.
+FissureAnale is Class.
+FissureAnaleMotif is Class.
+FissureAnaleMotif SubClassOf ProctologieMotif,.
+FissureAnaleMotif SubClassOf motifACommeOrigineDiagnostic some FissureAnale.
+GastroEnterologieMotif is Class.
+GastroEnterologieMotif SubClassOf SigneFonctionnelMotif.
+GenitoUrinaireMotif is Class.
+GenitoUrinaireMotif SubClassOf SigneFonctionnelMotif.
+GlycemieMotif is Class.
+GynecologieMotif is Class.
+GynecologieMotif SubClassOf SigneFonctionnelMotif.
+HyperglycemieMotif is Class.
+HyperglycemieMotif SubClassOf GlycemieMotif,.
+HyperglycemieMotif SubClassOf motifACommeSigneMedical some HyperglycemieSigne.
+HyperglycemieSigne is Class.
+HypertensionArterielle is Class.
+HypertensionArterielle DisjointWith SuffocationDueADeLaNourritureDansLeLarynx.
+HypertensionMotif is Class.
+HypertensionMotif SubClassOf TensionMotif,.
+HypertensionMotif SubClassOf motifACommeOrigineDiagnostic some HypertensionArterielle,.
+HypertensionMotif SubClassOf motifACommeOrigineDiagnostic only SuffocationDueADeLaNourritureDansLeLarynx.
+Hypervolemie is Class.
+HypoglycemieMotif is Class.
+HypoglycemieMotif SubClassOf GlycemieMotif,.
+HypoglycemieMotif SubClassOf motifACommeSigneMedical some HypoglycemieSigne.
+HypoglycemieSigne is Class.
+HypotensionIatrogene is Class.
+HypotensionIatrogene SubClassOf HypotensionMotif.
+HypotensionMotif is Class.
+HypotensionMotif SubClassOf TensionMotif,.
+HypotensionMotif SubClassOf motifACommeSigneMedical some HypotensionSigne.
+HypotensionSigne is Class.
+HypothermieDueAUneAnesthesie is Class.
+HypothermieDueAUneAnesthesie SubClassOf ComplicationDeLAnesthesieSedation,.
+HypothermieDueAUneAnesthesie SubClassOf HypothermieMotif.
+HypothermieMotif is Class.
+IRMCerebrale is Class.
+ImplantationDeCristallinArtificiel is Class.
+ImplantationDeCristallinArtificiel SubClassOf ChirurgieDuCristallin.
+LesionPulmonaireEtPleurale is Class.
+MalaiseAvecPCMotif is Class.
+MalaiseAvecPCMotif is equivalent to MalaiseSansPCMotif.
+MalaiseAvecPCMotif SubClassOf MalaiseMotif,.
+MalaiseAvecPCMotif SubClassOf motifACommeSigneMedical some MalaiseAvecPCSigne.
+MalaiseAvecPCMotif DisjointWith MalaiseSansPCMotif.
+MalaiseAvecPCSigne is Class.
+MalaiseMotif is Class.
+MalaiseSansPCMotif is Class.
+MalaiseSansPCMotif is equivalent to MalaiseAvecPCMotif.
+MalaiseSansPCMotif SubClassOf MalaiseMotif,.
+MalaiseSansPCMotif SubClassOf motifACommeSigneMedical some MalaiseSansPCSigne.
+MalaiseSansPCMotif DisjointWith MalaiseAvecPCMotif.
+MalaiseSansPCSigne is Class.
+MembreInferieurChaudRougeMotif is Class.
+MembreInferieurChaudRougeMotif SubClassOf MembreInferieurMotif,.
+MembreInferieurChaudRougeMotif SubClassOf motifACommeSigneMedical some ThromboPhlebiteDesVeinesProfondesDesMembresInferieurs.
+MembreInferieurChaudRougeMotif DisjointWith MembreInferieurFroidSansPoulsMotif.
+MembreInferieurFroidSansPoulsMotif is Class.
+MembreInferieurFroidSansPoulsMotif SubClassOf MembreInferieurMotif,.
+MembreInferieurFroidSansPoulsMotif SubClassOf motifACommeSigneMedical some ThromboseDesArteresDuMembreInferieur.
+MembreInferieurFroidSansPoulsMotif DisjointWith MembreInferieurChaudRougeMotif.
+MembreInferieurMotif is Class.
+ModaliteThetique is Class.
+ModaliteThetique SubClassOf ObjetFonctionnelIntentionnel.
+MotifDeRecours is Class.
+MotifDeRecours SubClassOf PsychiatrieMotif.
+NeurologieMotif is Class.
+NeurologieMotif SubClassOf SigneFonctionnelMotif.
+Neuromyelite is Class.
+NeurotisationDUnNerfSpinalProfondAvecLiberationNerveuseParAbordDirect is Class.
+NeurotisationDUnNerfSpinalProfondAvecLiberationNerveuseParAbordDirect SubClassOf ReparationDeNerfSpinal.
+NeurotisationDUnNerfSpinalProfondSansLiberationNerveuseParAbordDirect is Class.
+NeurotisationDUnNerfSpinalProfondSansLiberationNerveuseParAbordDirect SubClassOf ReparationDeNerfSpinal.
+ORLMotif is Class.
+ORLMotif SubClassOf SigneFonctionnelMotif.
+ObjetFonctionnel is Class.
+ObjetFonctionnelIntentionnel is Class.
+ObjetFonctionnelIntentionnel SubClassOf ObjetFonctionnel.
+ObstetriqueMotif is Class.
+ObstetriqueMotif SubClassOf SigneFonctionnelMotif.
+OedemeDesMembresInferieursMaladie is Class.
+OedemeDesMembresInferieursMotif is Class.
+OedemeDesMembresInferieursMotif SubClassOf MembreInferieurMotif,.
+OedemeDesMembresInferieursMotif SubClassOf motifACommeSigneMedical some OedemeDesMembresInferieursMaladie.
+OphtalmologieMotif is Class.
+OphtalmologieMotif SubClassOf SigneFonctionnelMotif.
+OtiteMoyenneAigueSanglante is Class.
+OtiteMoyenneAigueSanglante SubClassOf OtiteMoyenneSP.
+OtiteMoyenneSP is Class.
+PeauMotif is Class.
+PeauMotif SubClassOf SigneFonctionnelMotif.
+PediatriqueMotif is Class.
+PediatriqueMotif SubClassOf SigneFonctionnelMotif.
+PlastieDuPenis is Class.
+ProblemeDefecationMotif is Class.
+ProblemePansementMotif is Class.
+ProblemePansementMotif SubClassOf ProblemeSuiteChirurgicauxMotif.
+ProblemeSuiteChirurgicauxMotif is Class.
+ProctologieMotif is Class.
+PsychiatrieMotif is Class.
+PsychiatrieMotif SubClassOf SigneFonctionnelMotif.
+ReconstructionDuPrepuceDuPenis is Class.
+ReconstructionDuPrepuceDuPenis SubClassOf PlastieDuPenis.
+RemnographieIRMFonctionnelleDuCerveauPourEtudeDesFonctionsMotrices is Class.
+RemnographieIRMFonctionnelleDuCerveauPourEtudeDesFonctionsMotrices SubClassOf IRMCerebrale.
+RenouvellementOrdonnanceMotif is Class.
+RenouvellementOrdonnanceMotif SubClassOf ConseilMotif.
+ReparationDeNerfSpinal is Class.
+RequisitionMotif is Class.
+RequisitionMotif SubClassOf ExamenAdministratifMotif.
+RespiratoireMotif is Class.
+RespiratoireMotif SubClassOf SigneFonctionnelMotif.
+RetentionHydrique is Class.
+RetentionHydrique SubClassOf Hypervolemie.
+RhumatologieMotif is Class.
+RhumatologieMotif SubClassOf SigneFonctionnelMotif.
+SigneFonctionnelMotif is Class.
+SigneFonctionnelMotif SubClassOf MotifDeRecours.
+StenoseCarotidienne is Class.
+StenoseCarotidienne SubClassOf StenoseDUneArtere.
+StenoseDUneArtere is Class.
+SuffocationDueADeLaNourritureDansLeLarynx is Class.
+SuffocationDueADeLaNourritureDansLeLarynx SubClassOf CorpsEtrangerDansLeLarynx.
+SuffocationDueADeLaNourritureDansLeLarynx DisjointWith HypertensionArterielle.
+SutureAutogreffeEtNeurotisationDuPlexusBrachial is Class.
+SutureAutogreffeEtNeurotisationDuPlexusBrachial SubClassOf ChirurgieDuPlexusBrachial.
+SyndromeDeBrownSequard is Class.
+SyndromeDeBrownSequard SubClassOf Neuromyelite.
+TensionMotif is Class.
+ThromboPhlebiteDesVeinesProfondesDesMembresInferieurs is Class.
+ThromboseDesArteresDuMembreInferieur is Class.
+ThromboseHemorroidaire is Class.
+ThromboseHemorroidaireMotif is Class.
+ThromboseHemorroidaireMotif SubClassOf ProctologieMotif,.
+ThromboseHemorroidaireMotif SubClassOf motifACommeOrigineDiagnostic some ThromboseHemorroidaire.
+TraumastismeCranienMotif is Class.
+TraumatismeCranienAvecPCSigne is Class.
+TraumatismeCranienAvecPerteDeConnaissanceMotif is Class.
+TraumatismeCranienAvecPerteDeConnaissanceMotif SubClassOf TraumastismeCranienMotif,.
+TraumatismeCranienAvecPerteDeConnaissanceMotif SubClassOf motifACommeOrigineDiagnostic some TraumatismeCranienAvecPCSigne.
+TraumatismeCranienAvecPerteDeConnaissanceMotif DisjointWith TraumatismeCranienSansPerteDeConnaissanceMotif.
+TraumatismeCranienSansPCMaladie is Class.
+TraumatismeCranienSansPerteDeConnaissanceMotif is Class.
+TraumatismeCranienSansPerteDeConnaissanceMotif SubClassOf TraumastismeCranienMotif,.
+TraumatismeCranienSansPerteDeConnaissanceMotif SubClassOf motifACommeOrigineDiagnostic some TraumatismeCranienSansPCMaladie.
+TraumatismeCranienSansPerteDeConnaissanceMotif DisjointWith TraumatismeCranienAvecPerteDeConnaissanceMotif.
+TraumatismeDesMembresInferieurs is Class.
+TraumatismeDesMembresInferieursMotif is Class.
+TraumatismeDesMembresInferieursMotif SubClassOf TraumatismeDesMembresMotif,.
+TraumatismeDesMembresInferieursMotif SubClassOf motifACommeOrigineDiagnostic some TraumatismeDesMembresInferieurs.
+TraumatismeDesMembresMotif is Class.
+TraumatismeDesMembresSuperieurs is Class.
+TraumatismeDesMembresSuperieursMotif is Class.
+TraumatismeDesMembresSuperieursMotif SubClassOf TraumatismeDesMembresMotif,.
+TraumatismeDesMembresSuperieursMotif SubClassOf motifACommeOrigineDiagnostic some TraumatismeDesMembresSuperieurs.
+TraumatologieMotif is Class.
+TraumatologieMotif SubClassOf SigneFonctionnelMotif.
+TroubleDuDesirSexuel is Class.
+VomissementsDeSangMotif is Class.
+VomissementsDeSangMotif SubClassOf VomissementsMotif.
+VomissementsMotif is Class.
+www.w3.org/2002/07/# is Class.

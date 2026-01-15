@@ -1,0 +1,67 @@
+describes is ObjectProperty
+is_a is ObjectProperty
+part_of is ObjectProperty
+Alcohol is Class
+Alcohol EquivalentTo is_a some Habits_and_Behavious
+Alcohol SubClassOf Habits_and_Behavious
+Body_Mass_Index is Class
+Body_Mass_Index EquivalentTo describes some Physiological_Characteristics
+Body_Mass_Index SubClassOf Physiological_Characteristics
+Coast is Class
+Coast EquivalentTo is_a some Region
+Coast SubClassOf Region
+Dietary_Intake is Class
+Dietary_Intake SubClassOf Etiology
+Dietary_iodine is Class
+Drug_abuse is Class
+Drug_abuse EquivalentTo is_a some Habits_and_Behavious
+Drug_abuse SubClassOf Habits_and_Behavious
+Environment is Class
+Environment SubClassOf Etiology
+Etiology is Class
+Etiology EquivalentTo describes some Thyroid_Cancer
+Etiology SubClassOf Thyroid_Cancer
+Family_Medical_History is Class
+Family_Medical_History SubClassOf Etiology
+Habits_and_Behavious is Class
+Iodine_Deficiency is Class
+Iodine_Deficiency EquivalentTo describes some Dietary_iodine
+Iodine_Deficiency SubClassOf Dietary_iodine
+Iodine_excess is Class
+Iodine_excess EquivalentTo describes some Dietary_iodine
+Iodine_excess SubClassOf Dietary_iodine
+Lifestyle is Class
+Lifestyle SubClassOf Etiology
+Menstrual_disorder is Class
+Menstrual_disorder SubClassOf Etiology
+Multiple_Endocrine_Neoplasia_Type_2 is Class
+Multiple_Endocrine_Neoplasia_Type_2B is Class
+Multiple_Endocrine_Neoplasia_Type_2B SubClassOf Multiple_Endocrine_Neoplasia_Type_2
+Personal_Medical_History is Class
+Personal_Medical_History SubClassOf Etiology
+Physiological_Characteristics is Class
+Plateau is Class
+Plateau EquivalentTo is_a some Region
+Plateau SubClassOf Region
+Potassium_Iodate is Class
+Potassium_Iodate EquivalentTo describes some Dietary_iodine
+Potassium_Iodate SubClassOf Dietary_iodine
+Region is Class
+Reproductive_history is Class
+Reproductive_history SubClassOf Etiology
+Smoking is Class
+Smoking EquivalentTo is_a some Habits_and_Behavious
+Smoking SubClassOf Habits_and_Behavious
+Thyroid_Cancer is Class
+VI_Level_Lymph_Node_Dissection is Class
+VIa_Level_Lymph_Node_Dissection is Class
+VIa_Level_Lymph_Node_Dissection EquivalentTo part_of some VI_Level_Lymph_Node_Dissection
+VIa_Level_Lymph_Node_Dissection SubClassOf VI_Level_Lymph_Node_Dissection
+VIb_Level_Lymph_Node_Dissection is Class
+VIb_Level_Lymph_Node_Dissection EquivalentTo part_of some VI_Level_Lymph_Node_Dissection
+VIb_Level_Lymph_Node_Dissection SubClassOf VI_Level_Lymph_Node_Dissection
+VId_Level_Lymph_Node_Dissection is Class
+VId_Level_Lymph_Node_Dissection EquivalentTo part_of some VI_Level_Lymph_Node_Dissection
+VId_Level_Lymph_Node_Dissection SubClassOf VI_Level_Lymph_Node_Dissection
+VId_Level_Lymph_Node_Dissection DisjointWith part_of some VI_Level_Lymph_Node_Dissection
+www.w3.org/2002/07/# is Class

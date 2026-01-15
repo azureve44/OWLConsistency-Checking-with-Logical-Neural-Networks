@@ -1,0 +1,148 @@
+affects is ObjectProperty.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+EcologicalPhenomena Range Environment.
+EcologicalPhenomena InverseOf isAffectedBy.
+decreases is ObjectProperty.
+decreases SubPropertyOf affects.
+hasComponent is ObjectProperty.
+increases is ObjectProperty.
+increases SubPropertyOf affects.
+isAffectedBy is ObjectProperty.
+isAffectedBy Domain Environment.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+EcologicalPhenomena InverseOf affects.
+isCharacteristicOf is ObjectProperty.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+Community is www.fao.org/aims/aos/cwr.#.
+Community InverseOf isCharacterizedBy.
+isCharacterizedBy is ObjectProperty.
+isCharacterizedBy InverseOf isCharacteristicOf.
+isPartOf is ObjectProperty.
+BasalArea is Class.
+CommunityStructure is www.fao.org/aims/aos/cwr.#.
+Biodiversity is Class.
+Diversity is www.fao.org/aims/aos/cwr.#.
+BiologicalOrganizationLevel is Class.
+Cerrado is Class.
+Cerrado SubClassOf Ecoregion.
+CerradoDeterminingFactors is Class.
+CerradoDeterminingFactors SubClassOf Environment.
+Climate is Class.
+Climate SubClassOf CerradoDeterminingFactors,.
+Climate SubClassOf hasComponent some Precipitation,.
+Climate SubClassOf hasComponent some RelativeHumidity.
+ComunityDynamics is Class.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+DiversityIndex is Class.
+DrySeason is Class.
+DrySeason DisjointWith WetSeason.
+Ecoregion is Class.
+Ecoregion SubClassOf BiologicalOrganizationLevel,.
+Biosphere is isPartOf some www.fao.org/aims/aos/cwr.#.
+Environment is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is affects some BiologicalOrganizationLevel,.
+Thing, is affects some Species,.
+EcologicalPhenomena is affects some www.fao.org/aims/aos/cwr.#.
+FireIncidence is Class.
+FireIncidence SubClassOf ENVO 01000203,.
+FireIncidence SubClassOf decreases only WoodLayer,.
+FireIncidence SubClassOf increases only GroundLayer.
+FireRegime is Class.
+FireRegime SubClassOf CerradoDeterminingFactors.
+Grass is Class.
+Angiosperm, is www.fao.org/aims/aos/cwr.#.
+Angiosperm, is isPartOf only GroundLayer.
+Angiosperm, DisjointWith Tree.
+Angiosperm, DisjointWith Shrub.
+Angiosperm, DisjointWith HerbaceousPlant.
+GroundLayer is Class.
+VegetationCover is www.fao.org/aims/aos/cwr.#.
+HerbaceousPlant is Class.
+Angiosperm, is www.fao.org/aims/aos/cwr.#.
+Angiosperm, is isPartOf only GroundLayer.
+Angiosperm, DisjointWith Tree.
+Angiosperm, DisjointWith Shrub.
+Angiosperm, DisjointWith Grass.
+Metapopulation is Class.
+Metapopulation SubClassOf BiologicalOrganizationLevel,.
+Metapopulation SubClassOf isPartOf some Species,.
+Community is isPartOf some www.fao.org/aims/aos/cwr.#.
+NumberOfIndividuos is Class.
+PopulationSize is www.fao.org/aims/aos/cwr.#.
+PopulationSize SubClassOf PopulationDynamics,.
+CommunityStructure is www.fao.org/aims/aos/cwr.#.
+PielousEvenness is Class.
+PielousEvenness SubClassOf SpeciesEvenness.
+PopulationDynamics is Class.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+Precipitation is Class.
+Precipitation SubClassOf ENVO 01000203.
+RelativeHumidity is Class.
+RelativeHumidity SubClassOf ENVO 01000203.
+Season is Class.
+Season SubClassOf Environment.
+Shrub is Class.
+Angiosperm, is www.fao.org/aims/aos/cwr.#.
+Angiosperm, is isPartOf only WoodLayer.
+Angiosperm, DisjointWith Tree.
+Angiosperm, DisjointWith HerbaceousPlant.
+Angiosperm, DisjointWith Grass.
+SimpsonsIndex is Class.
+SimpsonsIndex SubClassOf SpeciesDiversity.
+Soil is Class.
+Soil SubClassOf CerradoDeterminingFactors.
+Species is Class.
+SpeciesDiversity is Class.
+SpeciesEvenness is Class.
+SpeciesEvenness SubClassOf DiversityIndex.
+Temperature is Class.
+Temperature SubClassOf ENVO 01000203.
+Tree is Class.
+Tree DisjointWith Shrub.
+Tree DisjointWith HerbaceousPlant.
+Tree DisjointWith Grass.
+TropicalSeason is Class.
+WetSeason is Class.
+WetSeason SubClassOf TropicalSeason.
+WetSeason DisjointWith DrySeason.
+WoodLayer is Class.
+VegetationCover is www.fao.org/aims/aos/cwr.#.
+ENVO 00000428 is Class.
+ENVO 00000428 SubClassOf BiologicalOrganizationLevel,.
+Biosphere is isPartOf some www.fao.org/aims/aos/cwr.#.
+ENVO 00000446 is Class.
+ENVO 00000446 SubClassOf ENVO 00000428.
+ENVO 01000203 is Class.
+ENVO 01000203 SubClassOf Environment.
+www.fao.org/aims/aos/cwr.# is Class.
+VascularPlant is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is Class.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+Thing is www.w3.org/2002/07/#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf Environment.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is Class.
+Community is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is equivalent to NumberOfIndividuos.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf Environment.
+www.fao.org/aims/aos/cwr.# is Class.
+Sample is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf ENVO 00000428.
+www.fao.org/aims/aos/cwr.# is Class.
+Plant is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+PlantCommunity is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+Vegetation is www.fao.org/aims/aos/cwr.#.
+www.w3.org/2002/07/# is Class.

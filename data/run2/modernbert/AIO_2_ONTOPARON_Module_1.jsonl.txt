@@ -1,0 +1,883 @@
+aPourNormalite is ObjectProperty.
+aPourQualitatif is ObjectProperty.
+aPourSigne is ObjectProperty.
+aPourSigne Domain Pathologie.
+aPourSigne Range SigneEtSymptome.
+aPourSigne InverseOf estSigneDe.
+aPourThematique is ObjectProperty.
+estRealisePar is ObjectProperty.
+estSigneDe is ObjectProperty.
+estSigneDe InverseOf aPourSigne.
+porteSur is ObjectProperty.
+utilisePourMedicament is ObjectProperty.
+Activite Professionnelle is Class.
+Activite Professionnelle SubClassOf Situation Professionnelle.
+Etat Civil Celibataire is Class.
+Etat Civil Celibataire SubClassOf Etat Civil Personne.
+Etat Civil Concubin is Class.
+Etat Civil Concubin SubClassOf Etat Civil Personne.
+Etat Civil Decede is Class.
+Etat Civil Decede SubClassOf Etat Civil Personne.
+Etat Civil Divorce is Class.
+Etat Civil Divorce SubClassOf Etat Civil Personne.
+Etat Civil Marie is Class.
+Etat Civil Marie SubClassOf Etat Civil Personne.
+Etat Civil Pacse is Class.
+Etat Civil Pacse SubClassOf Etat Civil Personne.
+Etat Civil Personne is Class.
+Etat Civil Personne SubClassOf Situation Civile,.
+Etat Civil Personne SubClassOf porteSur some Personne.
+Etat Civil Separe is Class.
+Etat Civil Separe SubClassOf Etat Civil Personne.
+Etat Civil Veuf is Class.
+Etat Civil Veuf SubClassOf Etat Civil Personne.
+Inactivite Professionnelle is Class.
+Inactivite Professionnelle SubClassOf Situation Professionnelle.
+Retraite Anticipee is Class.
+Retraite Anticipee SubClassOf Retraite Salariale.
+Retraite Salariale is Class.
+Retraite Salariale SubClassOf Inactivite Professionnelle.
+Situation Civile is Class.
+Situation Civile SubClassOf Etat,.
+Situation Civile SubClassOf aPourThematique some ThematiqueSociale,.
+Situation Civile SubClassOf porteSur some Personne.
+Situation Professionnelle is Class.
+Situation Professionnelle SubClassOf Etat,.
+Situation Professionnelle SubClassOf aPourThematique some ThematiqueSociale,.
+Situation Professionnelle SubClassOf porteSur some Personne.
+Statut is Class.
+Statut SubClassOf Etat,.
+Statut SubClassOf aPourThematique some ThematiqueSociale.
+Statut Civil is Class.
+Statut Civil SubClassOf Statut.
+Statut Habitat is Class.
+Statut Habitat SubClassOf Statut.
+Statut Sans Abris is Class.
+Statut Sans Abris SubClassOf Statut Habitat.
+Entite is Class.
+Thing is www.w3.org/2002/07/#.
+ObjetAbstrait is Class.
+ObjetAbstrait SubClassOf Entite.
+ObjetIdeal is Class.
+ObjetIdeal SubClassOf Entite.
+ObjetIntentionnel is Class.
+Processus is Class.
+BesoinDuPatient is Class.
+BesoinDuPatient SubClassOf Besoin,.
+BesoinDuPatient SubClassOf aPourThematique some ThematiqueBesoinEtDemandePecSociale.
+ProblemeCoordination is Class.
+ProblemeCoordination is equivalent to Probleme and (aPourThematique some ThematiqueDeCoordination).
+ProblemeCoordination SubClassOf Probleme.
+SituationAnxiogene is Class.
+SituationAnxiogene SubClassOf Situation Qualifie.
+SituationComplexe is Class.
+SituationComplexe SubClassOf Situation Qualifie.
+SituationConflictuelle is Class.
+SituationConflictuelle SubClassOf Situation Qualifie.
+SituationPreoccupante is Class.
+SituationPreoccupante SubClassOf Situation Qualifie.
+SituationStress is Class.
+SituationStress SubClassOf Situation Qualifie.
+Situation Qualifie is Class.
+Situation Qualifie SubClassOf Probleme,.
+Situation Qualifie SubClassOf aPourThematique some ThematiqueDeCoordination.
+Abces is Class.
+Abces SubClassOf PathologieInfectieuse.
+AcceptationDesSoinsParLePatient is Class.
+AcceptationDesSoinsParLePatient SubClassOf EtatDeSante,.
+AcceptationDesSoinsParLePatient SubClassOf aPourThematique some ThematiqueMedicale,.
+AcceptationDesSoinsParLePatient SubClassOf aPourThematique some ThematiqueTraitement.
+AccordSuppleanceSpecifiee is Class.
+AccordSuppleanceSpecifiee SubClassOf Accorder.
+AcharnementTherapeutique is Class.
+AcharnementTherapeutique SubClassOf DispositifLegalLieAuxSoins.
+AgentMedical is Class.
+AggravationFonctionnelle is Class.
+AggravationFonctionnelle SubClassOf SigneFonctionnel.
+AlerteMedicale is Class.
+AlerteMedicale SubClassOf ProblemeMedical,.
+AlerteMedicale SubClassOf aPourThematique some ThematiqueMedicale.
+AlerteNutritionnelle is Class.
+AlerteNutritionnelle SubClassOf AlerteMedicale.
+AlerteRespiratoire is Class.
+AlerteRespiratoire SubClassOf AlerteMedicale.
+AlimentationEnterale is Class.
+AlimentationEnterale SubClassOf MethodeDAlimentation.
+AlimentationParenterale is Class.
+AlimentationParenterale SubClassOf MethodeDAlimentation.
+AlimentationPerOs is Class.
+AlimentationPerOs SubClassOf MethodeDAlimentation.
+Antibiotherapie is Class.
+Antibiotherapie SubClassOf TraitementMedicamenteux.
+ApportCalorique is Class.
+ApportCalorique SubClassOf ConsommationAlimentaire.
+ApportHydrique is Class.
+ApportHydrique SubClassOf ConsommationAlimentaire.
+ApportNutritionnel is Class.
+ApportNutritionnel SubClassOf ConsommationAlimentaire.
+ApportProteique is Class.
+ApportProteique SubClassOf ConsommationAlimentaire.
+ArretAlimentation is Class.
+ArretAlimentation SubClassOf ArretDuTraitement.
+ArretDeSoins is Class.
+ArretDeSoins SubClassOf ArretDuTraitement.
+ArretDuTraitement is Class.
+ArretDuTraitement SubClassOf AcceptationDesSoinsParLePatient,.
+ArretDuTraitement SubClassOf aPourThematique some ThematiqueMedicale,.
+ArretDuTraitement SubClassOf aPourThematique some ThematiqueTraitement.
+ArreterVNI is Class.
+ArreterVNI SubClassOf ArretDuTraitement.
+AvisCardiologique is Class.
+AvisCardiologique SubClassOf AvisMedical.
+AvisChirurgical is Class.
+AvisChirurgical SubClassOf AvisMedical.
+AvisDermatologue is Class.
+AvisDermatologue SubClassOf AvisMedical.
+AvisGastroenterologue is Class.
+AvisGastroenterologue SubClassOf AvisMedical.
+AvisMedical is Class.
+AvisMedical SubClassOf Avis,.
+AvisMedical SubClassOf aPourThematique some ThematiqueEvaluationMedicale,.
+AvisMedical SubClassOf aPourThematique some ThematiqueMedicale,.
+AvisMedical SubClassOf estRealisePar some Medecin,.
+AvisMedical SubClassOf porteSur some Personne.
+AvisNeurologique is Class.
+AvisNeurologique SubClassOf AvisMedical.
+AvisPneumologique is Class.
+AvisPneumologique SubClassOf AvisMedical.
+AvisPsychologue is Class.
+AvisPsychologue SubClassOf AvisMedical.
+AvisRhumatologue is Class.
+AvisRhumatologue SubClassOf AvisMedical.
+AvisUrologique is Class.
+AvisUrologique SubClassOf AvisMedical.
+Avis ORL is Class.
+Avis ORL SubClassOf AvisMedical.
+BesoinKine is Class.
+BesoinKine SubClassOf BesoinLieAuxSoins.
+BesoinLieAuxSoins is Class.
+BesoinLieAuxSoins SubClassOf Besoin,.
+BesoinLieAuxSoins SubClassOf aPourThematique some ThematiqueBesoinEtDemandeMedicale,.
+BesoinLieAuxSoins SubClassOf aPourThematique some ThematiqueMedicale.
+BesoinsIDE is Class.
+BesoinsIDE SubClassOf BesoinLieAuxSoins.
+BesoinsSSIAD is Class.
+BesoinsSSIAD SubClassOf BesoinLieAuxSoins.
+BesoinsSoutien is Class.
+BesoinsSoutien SubClassOf BesoinLieAuxSoins.
+BilanNormal is Class.
+BilanNormal is equivalent to aPourNormalite some Normal.
+BilanNormal SubClassOf ResultatExamen.
+BonneObservance is Class.
+BonneObservance SubClassOf ObservanceMedicamenteuse.
+BonneTolerance is Class.
+BonneTolerance SubClassOf ToleranceAuxMedicaments.
+Bruxisme is Class.
+Bruxisme SubClassOf SigneFonctionnel.
+Cancer is Class.
+Cancer SubClassOf Pathologie.
+ConsommationAlimentaire is Class.
+ConsommationAlimentaire SubClassOf Etat.
+ConsommationAlimentaireInsuffisante is Class.
+ConsommationAlimentaireInsuffisante is equivalent to ConsommationAlimentaireQualifie and (aPourQualitatif some Insuffisant).
+ConsommationAlimentaireInsuffisante SubClassOf ConsommationAlimentaireQualifie,.
+ConsommationAlimentaireInsuffisante SubClassOf aPourThematique some ThematiqueNutritionnelle.
+ConsommationAlimentaireMoyenne is Class.
+ConsommationAlimentaireMoyenne is equivalent to ConsommationAlimentaireQualifie and (aPourQualitatif some Moyen).
+ConsommationAlimentaireMoyenne SubClassOf ConsommationAlimentaireQualifie,.
+ConsommationAlimentaireMoyenne SubClassOf aPourThematique some ThematiqueNutritionnelle.
+ConsommationAlimentaireQualifie is Class.
+ConsommationAlimentaireQualifie SubClassOf ConsommationAlimentaire.
+ConsommationAlimentaireSatisfaisante is Class.
+ConsommationAlimentaireSatisfaisante is equivalent to ConsommationAlimentaireQualifie and (aPourQualitatif some Satisfaisant).
+ConsommationAlimentaireSatisfaisante SubClassOf ConsommationAlimentaireQualifie.
+ContreAvisMedical is Class.
+ContreAvisMedical SubClassOf Etat.
+ContreIndication is Class.
+ContreIndication SubClassOf Etat.
+Deces is Class.
+Deces SubClassOf EtatDeSante.
+DermiteSeborrheique is Class.
+DermiteSeborrheique SubClassOf PathologieDuDerme.
+Diabete is Class.
+Diabete SubClassOf PathologieMetabolique.
+Diagnostique is Class.
+Diagnostique SubClassOf Etat,.
+Diagnostique SubClassOf estRealisePar some AgentMedical,.
+Diagnostique SubClassOf porteSur some Pathologie.
+DirectiveAnticipee is Class.
+DirectiveAnticipee SubClassOf DispositifLegalLieAuxSoins.
+DispositifLegalLieAuxSoins is Class.
+DispositifLegalLieAuxSoins SubClassOf Etat,.
+DispositifLegalLieAuxSoins SubClassOf aPourThematique some ThematiqueMedicale,.
+DispositifLegalLieAuxSoins SubClassOf aPourThematique some ThematiqueTraitement,.
+DispositifLegalLieAuxSoins SubClassOf porteSur some FinDeVie,.
+DispositifLegalLieAuxSoins SubClassOf porteSur some Patient.
+EmboliePulmonaire is Class.
+EmboliePulmonaire SubClassOf PathologieRespiratoires.
+EtatAggravation is Class.
+EtatAggravation is equivalent to Etat and (aPourThematique some ThematiqueAggravationMedicale).
+EtatAggravation SubClassOf Etat.
+EtatCognitif is Class.
+EtatCognitif is equivalent to Etat and (aPourThematique some ThematiqueCognitiveEtComportementale).
+EtatCognitif SubClassOf Etat.
+EtatCutane is Class.
+EtatCutane is equivalent to Etat and (aPourThematique some ThematiqueCutane).
+EtatCutane SubClassOf Etat.
+EtatDeSante is Class.
+EtatDeSante SubClassOf Etat,.
+EtatDeSante SubClassOf aPourThematique some ThematiqueMedicale,.
+EtatDeSante SubClassOf porteSur some Patient.
+EtatDouloureux is Class.
+EtatDouloureux is equivalent to Etat and (aPourThematique some ThematiqueDouleur).
+EtatDouloureux SubClassOf Etat.
+EtatLieAuTraitement is Class.
+EtatLieAuTraitement is equivalent to Etat and (aPourThematique some ThematiqueTraitement).
+EtatLieAuTraitement SubClassOf Etat.
+EtatMedical is Class.
+EtatMedical is equivalent to Etat and (aPourThematique some ThematiqueMedicale).
+EtatMedical SubClassOf Etat.
+EtatMoteur is Class.
+EtatMoteur is equivalent to Etat and (aPourThematique some ThematiqueMoteurEtFonctionnelle).
+EtatMoteur SubClassOf Etat.
+EtatNeurologique is Class.
+EtatNeurologique is equivalent to Etat and (aPourThematique some ThematiqueNeurologique).
+EtatNeurologique SubClassOf Etat.
+EtatNutritionnel is Class.
+EtatNutritionnel is equivalent to Etat and (aPourThematique some ThematiqueNutritionnelle).
+EtatNutritionnel SubClassOf Etat.
+EtatPsychique is Class.
+EtatPsychique is equivalent to Etat and (aPourThematique some ThematiquePsychique).
+EtatPsychique SubClassOf Etat.
+EtatPsychique DisjointWith Etat and (aPourThematique some ThematiquePsychique).
+EtatRespiratoire is Class.
+EtatRespiratoire is equivalent to Etat and (aPourThematique some ThematiqueRespiratoire).
+EtatRespiratoire SubClassOf Etat.
+FinDeVie is Class.
+FinDeVie SubClassOf EtatDeSante.
+FormeBulbaire is Class.
+FormeBulbaire SubClassOf ScleroseLateraleAmyotrophique.
+FormeFamiliale is Class.
+FormeFamiliale SubClassOf ScleroseLateraleAmyotrophique.
+FormeSpinale is Class.
+FormeSpinale SubClassOf ScleroseLateraleAmyotrophique.
+Fracture is Class.
+Fracture SubClassOf Traumatisme,.
+Fracture SubClassOf aPourThematique some ThematiqueMoteurEtFonctionnelle,.
+Fracture SubClassOf porteSur some Os.
+FractureDuPoignet is Class.
+FractureDuPoignet SubClassOf Fracture.
+FractureFemur is Class.
+FractureFemur SubClassOf Fracture.
+GastroEnterite is Class.
+GastroEnterite SubClassOf PathologieDigestiveEtNutritionnelles.
+Grippe is Class.
+Grippe SubClassOf PathologieRespiratoires.
+Hydratation is Class.
+Hydratation SubClassOf TraitementPar ApportLiquidien.
+HypertensionArterielle is Class.
+HypertensionArterielle SubClassOf PathologieCardioVasculaire.
+InfectionBronchique is Class.
+InfectionBronchique SubClassOf Pneumopathie.
+InfectionUrinaire is Class.
+InfectionUrinaire SubClassOf PathologieGenitoSphincteriens.
+Laxatif is Class.
+Laxatif SubClassOf TraitementMedicamenteux.
+MajorationDifficulte is Class.
+MajorationDifficulte SubClassOf ImportantProbleme.
+MaladieDAlzheimer is Class.
+MaladieDAlzheimer SubClassOf PathologieNeurologique.
+MaladieDeParkinson is Class.
+MaladieDeParkinson SubClassOf PathologieNeurologique.
+MauvaiseObservance is Class.
+MauvaiseObservance SubClassOf ObservanceMedicamenteuse,.
+MauvaiseObservance SubClassOf aPourThematique some ThematiqueTraitement.
+MauvaiseTolerance is Class.
+MauvaiseTolerance SubClassOf ToleranceAuxMedicaments.
+Medecin is Class.
+Medicament is Class.
+MethodeDAlimentation is Class.
+MethodeDAlimentation SubClassOf Etat,.
+MethodeDAlimentation SubClassOf aPourThematique some ThematiqueNutritionnelle.
+MortSubite is Class.
+MortSubite SubClassOf Deces.
+Motricite is Class.
+Motricite SubClassOf EtatMoteur.
+Mycose is Class.
+Mycose SubClassOf PathologieInfectieuse.
+MycoseBuccale is Class.
+MycoseBuccale SubClassOf Mycose.
+MycoseLinguale is Class.
+MycoseLinguale SubClassOf Mycose.
+ObservanceMedicamenteuse is Class.
+ObservanceMedicamenteuse SubClassOf Etat,.
+ObservanceMedicamenteuse SubClassOf aPourThematique some ThematiqueMedicale.
+Os is Class.
+Pathologie is Class.
+Pathologie SubClassOf Etat,.
+Pathologie SubClassOf aPourSigne some SigneEtSymptome,.
+Pathologie SubClassOf aPourThematique some ThematiqueMedicale.
+PathologieCardioVasculaire is Class.
+PathologieCardioVasculaire SubClassOf Pathologie.
+PathologieDigestiveEtNutritionnelles is Class.
+PathologieDigestiveEtNutritionnelles SubClassOf Pathologie.
+PathologieDuDerme is Class.
+PathologieDuDerme SubClassOf Pathologie,.
+PathologieDuDerme SubClassOf aPourThematique some ThematiqueCutane.
+PathologieGenitoSphincteriens is Class.
+PathologieGenitoSphincteriens SubClassOf Pathologie.
+PathologieInfectieuse is Class.
+PathologieInfectieuse SubClassOf Pathologie.
+PathologieMetabolique is Class.
+PathologieMetabolique SubClassOf Pathologie.
+PathologieNeurologique is Class.
+PathologieNeurologique SubClassOf Pathologie,.
+PathologieNeurologique SubClassOf aPourThematique some ThematiqueNeurologique.
+PathologieRespiratoires is Class.
+PathologieRespiratoires SubClassOf Pathologie,.
+PathologieRespiratoires SubClassOf aPourThematique some ThematiqueRespiratoire.
+Phlebite is Class.
+Phlebite SubClassOf PathologieCardioVasculaire.
+Plainte is Class.
+Plainte SubClassOf SigneFonctionnel.
+Pneumopathie is Class.
+Pneumopathie SubClassOf PathologieRespiratoires.
+ProblemeAuNiveauGastrostomie is Class.
+ProblemeAuNiveauGastrostomie SubClassOf ProblemeLieeASuplleance.
+ProblemeBallonnet is Class.
+ProblemeBallonnet SubClassOf ProblemeLieeASuplleance.
+ProblemeLieeASuplleance is Class.
+ProblemeLieeASuplleance SubClassOf ProblemeMedical,.
+ProblemeLieeASuplleance SubClassOf aPourThematique some ThematiqueTraitement.
+ProblemeLieeTraitement is Class.
+ProblemeLieeTraitement SubClassOf ProblemeMedical.
+ProblemeMasque is Class.
+ProblemeMasque SubClassOf ProblemeLieeASuplleance.
+ProblemeMedical is Class.
+ProblemeMedical is equivalent to Probleme and (aPourThematique some ThematiqueMedicale).
+ProblemeMedical SubClassOf Probleme.
+ProblemeOrdonnance is Class.
+ProblemeOrdonnance SubClassOf ProblemeMedical,.
+ProblemeOrdonnance SubClassOf aPourThematique some ThematiqueMedicale.
+ProblemePositionnement is Class.
+ProblemePositionnement SubClassOf EtatDeSante.
+ProblemeSonde is Class.
+ProblemeSonde SubClassOf ProblemeLieeASuplleance.
+RefusDeSoins is Class.
+RefusDeSoins SubClassOf RefusDeTraitement.
+RefusDeTraitement is Class.
+RefusDeTraitement SubClassOf AcceptationDesSoinsParLePatient.
+RefusGastrostomie is Class.
+RefusGastrostomie SubClassOf RefusDeTraitement.
+RefusVentilation is Class.
+RefusVentilation SubClassOf RefusDeTraitement.
+ResultatExamen is Class.
+ResultatExamen SubClassOf Etat.
+Rhume is Class.
+Rhume SubClassOf PathologieInfectieuse.
+RisqueVital is Class.
+RisqueVital SubClassOf Etat.
+Saturation is Class.
+Saturation SubClassOf Etat.
+ScleroseLateraleAmyotrophique is Class.
+ScleroseLateraleAmyotrophique SubClassOf PathologieNeurologique.
+SigneEtSymptome is Class.
+SigneEtSymptome SubClassOf EtatDeSante.
+SigneFonctionnel is Class.
+SigneFonctionnel SubClassOf SigneEtSymptome.
+SyndromeInflammatoire is Class.
+SyndromeInflammatoire SubClassOf PathologieInfectieuse.
+ToleranceAuxMedicaments is Class.
+ToleranceAuxMedicaments SubClassOf EtatLieAuTraitement,.
+ToleranceAuxMedicaments SubClassOf aPourThematique some ThematiqueMedicale.
+TraitementAntalgique is Class.
+TraitementAntalgique SubClassOf TraitementMedicamenteux.
+TraitementAntibiotique is Class.
+TraitementAntibiotique SubClassOf Antibiotherapie.
+TraitementAnticoagulant is Class.
+TraitementAnticoagulant SubClassOf TraitementMedicamenteux.
+TraitementAntidepresseur is Class.
+TraitementAntidepresseur SubClassOf TraitementMedicamenteux.
+TraitementAnxiolytique is Class.
+TraitementAnxiolytique SubClassOf TraitementMedicamenteux.
+TraitementMedicamenteux is Class.
+TraitementMedicamenteux SubClassOf Processus,.
+TraitementMedicamenteux SubClassOf EtatLieAuTraitement,.
+TraitementMedicamenteux SubClassOf utilisePourMedicament some Medicament.
+TraitementParAVK is Class.
+TraitementParAVK SubClassOf TraitementMedicamenteux.
+TraitementParCorticoide is Class.
+TraitementParCorticoide SubClassOf TraitementMedicamenteux.
+TraitementPar ApportLiquidien is Class.
+TraitementPar ApportLiquidien SubClassOf TraitementMedicamenteux.
+TraitementThymoRegulateur is Class.
+TraitementThymoRegulateur SubClassOf TraitementMedicamenteux.
+Traumatisme is Class.
+Traumatisme SubClassOf Pathologie.
+TraumatismeCranien is Class.
+TraumatismeCranien SubClassOf PathologieNeurologique.
+Trouble is Class.
+Trouble SubClassOf EtatDeSante.
+TroubleCirculatoire is Class.
+TroubleCirculatoire SubClassOf SigneFonctionnel.
+TroubleDuSommeil is Class.
+TroubleDuSommeil SubClassOf SigneFonctionnel.
+Accepter is Class.
+Accepter SubClassOf Choix.
+AccordDefinitif is Class.
+AccordDefinitif SubClassOf ChoixSpecifie.
+AccordDispositif is Class.
+AccordDispositif SubClassOf ChoixSpecifie.
+AccordFavorable is Class.
+AccordFavorable SubClassOf ChoixSpecifie.
+AccordOral is Class.
+AccordOral SubClassOf ChoixSpecifie.
+AccordParMail is Class.
+AccordParMail SubClassOf ChoixSpecifie.
+AccordPersonne is Class.
+AccordPersonne SubClassOf ChoixSpecifie.
+AccordPrincipe is Class.
+AccordPrincipe SubClassOf ChoixSpecifie.
+AccordTelephonique is Class.
+AccordTelephonique SubClassOf ChoixSpecifie.
+Accorder is Class.
+Accorder SubClassOf Choix.
+Agent is Class.
+Attendre is Class.
+Attendre SubClassOf EtatExprime.
+Avis is Class.
+Avis SubClassOf EtatExprime.
+Besoin is Class.
+Besoin SubClassOf EtatExprime.
+BesoinHypothetique is Class.
+BesoinHypothetique SubClassOf EtatExprime.
+BonneEfficacite is Class.
+BonneEfficacite SubClassOf Efficacite.
+Choix is Class.
+Choix SubClassOf EtatExprime.
+ChoixSpecifie is Class.
+ChoixSpecifie SubClassOf Choix.
+Confort is Class.
+Confort SubClassOf EtatExprime.
+Decider is Class.
+Decider SubClassOf Choix.
+Desaccord is Class.
+Desaccord SubClassOf Choix.
+Efficacite is Class.
+Efficacite SubClassOf Etat.
+EfficaciteInsuffisante is Class.
+EfficaciteInsuffisante SubClassOf Efficacite.
+EfficaciteMoyenne is Class.
+EfficaciteMoyenne SubClassOf Efficacite.
+EnCasDeBesoin is Class.
+EnCasDeBesoin SubClassOf BesoinHypothetique.
+Etat is Class.
+Etat SubClassOf Etat Civil Personne,.
+Etat SubClassOf ObjetIntentionnel.
+EtatAutonomie is Class.
+EtatAutonomie SubClassOf Etat,.
+EtatAutonomie SubClassOf aPourThematique some ThematiqueSociale,.
+EtatAutonomie SubClassOf porteSur some Personne.
+EtatExprime is Class.
+EtatExprime SubClassOf Etat.
+GrandeDifficulté is Class.
+GrandeDifficulté SubClassOf ImportantProbleme.
+ImportantProbleme is Class.
+ImportantProbleme SubClassOf Probleme,.
+ImportantProbleme SubClassOf aPourThematique some ThematiqueProblemeSocial.
+Inconfort is Class.
+Inconfort SubClassOf EtatExprime,.
+Inconfort SubClassOf aPourThematique some ThematiqueBesoinEtDemandeMedicale.
+Insuffisant is Class.
+MauvaiseEfficacite is Class.
+MauvaiseEfficacite SubClassOf Efficacite,.
+MauvaiseEfficacite SubClassOf aPourThematique some ThematiqueTraitement.
+Moyen is Class.
+Normal is Class.
+Opposer is Class.
+Opposer SubClassOf Choix.
+Patient is Class.
+Personne is Class.
+Plaindre is Class.
+Plaindre SubClassOf EtatExprime.
+Probleme is Class.
+Probleme SubClassOf Etat.
+Refus is Class.
+Refus SubClassOf Refuser.
+Refuser is Class.
+Refuser SubClassOf Choix.
+Risque is Class.
+Risque SubClassOf Etat.
+Satisfaisant is Class.
+SiBesoin is Class.
+SiBesoin SubClassOf BesoinHypothetique.
+Solution is Class.
+Solution SubClassOf Etat.
+Sortie is Class.
+Sortie SubClassOf Etat.
+Souhaiter is Class.
+Souhaiter SubClassOf Choix.
+ThematiqueAggravationMedicale is Class.
+ThematiqueAideHumaine is Class.
+ThematiqueAideTechnique is Class.
+ThematiqueBesoinEtDemandeMedicale is Class.
+ThematiqueBesoinEtDemandePecSociale is Class.
+ThematiqueCognitiveEtComportementale is Class.
+ThematiqueCutane is Class.
+ThematiqueDeCoordination is Class.
+ThematiqueDouleur is Class.
+ThematiqueEpuisement is Class.
+ThematiqueEpuisement DisjointWith Etat and (aPourThematique some ThematiqueRespiratoire).
+ThematiqueEvaluationMedicale is Class.
+ThematiqueMedicale is Class.
+ThematiqueMoteurEtFonctionnelle is Class.
+ThematiqueNeurologique is Class.
+ThematiqueNutritionnelle is Class.
+ThematiqueProblemeAccessibilite is Class.
+ThematiqueProblemeSocial is Class.
+ThematiquePsychique is Class.
+ThematiqueRespiratoire is Class.
+ThematiqueSociale is Class.
+ThematiqueTraitement is Class.
+AbsenceAideHumaine is Class.
+AbsenceAideHumaine SubClassOf AbsencePriseEnCharge.
+AbsencePriseEnCharge is Class.
+AbsencePriseEnCharge SubClassOf DifficultePEC MedicoSociale.
+AccesLogement is Class.
+AccesLogement SubClassOf AccessibiliteArchitecturale.
+Accessibilite is Class.
+Accessibilite SubClassOf Etat,.
+Accessibilite SubClassOf aPourThematique some ThematiqueSociale.
+AccessibiliteArchitecturale is Class.
+AccessibiliteArchitecturale SubClassOf Accessibilite.
+AccidentDuTravail is Class.
+AccidentDuTravail SubClassOf Inactivite Professionnelle.
+AccordPatient is Class.
+AccordPatient SubClassOf Accorder.
+AccordPriseEnCharge is Class.
+AccordPriseEnCharge SubClassOf PriseEnChargeOptimale.
+Agressivite is Class.
+Agressivite SubClassOf ProblemeComportement.
+AideExterieur is Class.
+AideExterieur SubClassOf AideHumaineSpecifiee.
+AideHumaineSpecifiee is Class.
+AideHumaineSpecifiee SubClassOf Etat,.
+AideHumaineSpecifiee SubClassOf aPourThematique some ThematiqueAideHumaine,.
+AideHumaineSpecifiee SubClassOf aPourThematique some ThematiqueSociale.
+AideImportante is Class.
+AideImportante SubClassOf AidePermanente.
+AideMinimale is Class.
+AideMinimale SubClassOf AidePartielle.
+AideNocturne is Class.
+AideNocturne SubClassOf AideHumaineSpecifiee.
+AidePartielle is Class.
+AidePartielle SubClassOf AideHumaineSpecifiee.
+AidePermanente is Class.
+AidePermanente SubClassOf AideHumaineSpecifiee.
+AidePonctuelle is Class.
+AidePonctuelle SubClassOf AidePartielle.
+AideQuotidienne is Class.
+AideQuotidienne SubClassOf AidePermanente.
+AideTotale is Class.
+AideTotale SubClassOf AidePermanente.
+ArretMaladie is Class.
+ArretMaladie SubClassOf Inactivite Professionnelle.
+ArreterLaPec is Class.
+ArreterLaPec SubClassOf DifficultePEC MedicoSociale.
+AutonomiePersonnelle is Class.
+AutonomiePersonnelle SubClassOf EtatAutonomie.
+AvoirBesoinUneAide is Class.
+AvoirBesoinUneAide SubClassOf BesoinSocial.
+BesoinLieDemarcheAdministrative is Class.
+BesoinLieDemarcheAdministrative SubClassOf BesoinSocial.
+BesoinRepit is Class.
+BesoinRepit SubClassOf BesoinSocial.
+BesoinSocial is Class.
+BesoinSocial SubClassOf Besoin,.
+BesoinSocial SubClassOf aPourThematique some ThematiqueBesoinEtDemandePecSociale,.
+BesoinSocial SubClassOf aPourThematique some ThematiqueSociale.
+BonnePriseEnCharge is Class.
+BonnePriseEnCharge SubClassOf PriseEnChargeOptimale.
+ChoixDuPatient is Class.
+ChoixDuPatient SubClassOf ChoixSpecifie.
+Chomage is Class.
+Chomage SubClassOf Inactivite Professionnelle.
+Colere is Class.
+Colere SubClassOf Etat Emotionnel Negatif.
+ConceptDroitEtJusticeFrancaise is Class.
+ConceptDroitEtJusticeFrancaise SubClassOf Etat,.
+ConceptDroitEtJusticeFrancaise SubClassOf aPourThematique some ThematiqueSociale.
+ConceptLieALaPropriete is Class.
+ConceptLieALaPropriete SubClassOf Etat,.
+ConceptLieALaPropriete SubClassOf aPourThematique some ThematiqueSociale.
+ConceptLieAuComportement is Class.
+ConceptLieAuComportement SubClassOf Etat,.
+ConceptLieAuComportement SubClassOf aPourThematique some ThematiqueSociale,.
+ConceptLieAuComportement SubClassOf porteSur some Patient.
+Concept Relationnel is Class.
+Concept Relationnel SubClassOf Etat,.
+Concept Relationnel SubClassOf aPourThematique some ThematiqueSociale.
+Concept Sentiment is Class.
+Concept Sentiment SubClassOf Etat,.
+Concept Sentiment SubClassOf porteSur some Agent.
+Culpabiliser is Class.
+Culpabiliser SubClassOf Etat Emotionnel Negatif.
+Curatelle is Class.
+Curatelle SubClassOf MesureJudiciaire.
+DifficulteAvecProfessionnel is Class.
+DifficulteAvecProfessionnel SubClassOf DifficulteDePriseEnCharge.
+DifficulteDePriseEnCharge is Class.
+DifficulteDePriseEnCharge SubClassOf DifficultePEC MedicoSociale.
+DifficulteFamiliale is Class.
+DifficulteFamiliale SubClassOf DifficulteDePriseEnCharge.
+DifficulteHabillage is Class.
+DifficulteHabillage SubClassOf ProblemeLieeActiviteDeVieQuotidienne.
+DifficultePEC MedicoSociale is Class.
+DifficultePEC MedicoSociale SubClassOf Probleme,.
+DifficultePEC MedicoSociale SubClassOf aPourThematique some ThematiqueProblemeSocial.
+DifficulteToilette is Class.
+DifficulteToilette SubClassOf ProblemeLieeActiviteDeVieQuotidienne.
+DifficulteTransfert is Class.
+DifficulteTransfert SubClassOf ProblemeLieeActiviteDeVieQuotidienne.
+EchecMiseEnPlace is Class.
+EchecMiseEnPlace SubClassOf DifficultePEC MedicoSociale.
+Enerver is Class.
+Enerver SubClassOf ProblemeComportement.
+EnvironnementFamilial is Class.
+EnvironnementFamilial SubClassOf PlanFamilial.
+Epuisement is Class.
+Epuisement SubClassOf Epuiser.
+EpuisementDeLaPriseEnCharge is Class.
+EpuisementDeLaPriseEnCharge SubClassOf DifficulteDePriseEnCharge.
+Epuiser is Class.
+Epuiser SubClassOf Etat,.
+Epuiser SubClassOf aPourThematique some ThematiqueEpuisement,.
+Epuiser SubClassOf aPourThematique some ThematiqueProblemeSocial,.
+Epuiser SubClassOf aPourThematique some ThematiqueSociale,.
+Epuiser SubClassOf aPourThematique some.
+Epuiser SubClassOf (ThematiqueEpuisement and (Etat and (aPourThematique some ThematiqueRespiratoire))),.
+Epuiser SubClassOf porteSur some Agent,.
+Epuiser SubClassOf aPourThematique only.
+Epuiser SubClassOf (Etat and (aPourThematique some ThematiqueRespiratoire)).
+EtatDeDependance is Class.
+EtatDeDependance SubClassOf EtatAutonomie,.
+EtatDeDependance SubClassOf aPourThematique some ThematiqueProblemeSocial.
+EtatSocial is Class.
+EtatSocial is equivalent to Etat and (aPourThematique some ThematiqueSociale).
+EtatSocial SubClassOf Etat.
+Etat Emotionnel Negatif is Class.
+Etat Emotionnel Negatif SubClassOf Concept Sentiment.
+Etat Emotionnel Positif is Class.
+Etat Emotionnel Positif SubClassOf Concept Sentiment.
+GIR1 is Class.
+GIR1 SubClassOf NiveauAdministratifDependance.
+GIR2 is Class.
+GIR2 SubClassOf NiveauAdministratifDependance.
+GIR3 is Class.
+GIR3 SubClassOf NiveauAdministratifDependance.
+GIR4 is Class.
+GIR4 SubClassOf NiveauAdministratifDependance.
+HabilitationFamiliale is Class.
+HabilitationFamiliale SubClassOf ConceptDroitEtJusticeFrancaise.
+HandicapMoteur is Class.
+HandicapMoteur SubClassOf SituationDeHandicap.
+Heureux is Class.
+Heureux SubClassOf Etat Emotionnel Positif.
+Incurie is Class.
+Incurie SubClassOf ProblemeComportement.
+Independant is Class.
+Independant SubClassOf EtatAutonomie.
+Inquiet is Class.
+Inquiet SubClassOf Etat Emotionnel Negatif.
+Insatisfait is Class.
+Insatisfait SubClassOf Etat Emotionnel Negatif.
+InsuffisancePriseEnCharge is Class.
+InsuffisancePriseEnCharge SubClassOf DifficulteDePriseEnCharge.
+Isolement Amical is Class.
+Isolement Amical SubClassOf Isolement Social.
+Isolement Avec Degre is Class.
+Isolement Avec Degre SubClassOf Isolement Social.
+Isolement Domicile is Class.
+Isolement Domicile SubClassOf Isolement Social.
+Isolement Familial is Class.
+Isolement Familial SubClassOf Isolement Social.
+Isolement Social is Class.
+Isolement Social SubClassOf ConceptLieAuComportement,.
+Isolement Social SubClassOf aPourThematique some ThematiqueProblemeSocial.
+Locataire is Class.
+Locataire SubClassOf ConceptLieALaPropriete.
+LogementAccessible is Class.
+LogementAccessible SubClassOf AccessibiliteArchitecturale.
+LogementInaccessible is Class.
+LogementInaccessible SubClassOf AccessibiliteArchitecturale,.
+LogementInaccessible SubClassOf aPourThematique some ThematiqueProblemeAccessibilite.
+LourdeurPriseEnCharge is Class.
+LourdeurPriseEnCharge SubClassOf DifficulteDePriseEnCharge.
+Maltraitance is Class.
+Maltraitance SubClassOf Concept Relationnel,.
+Maltraitance SubClassOf aPourThematique some ThematiqueProblemeSocial.
+MandatProtectionFuture is Class.
+MandatProtectionFuture SubClassOf MesureJudiciaire.
+Mecontent is Class.
+Mecontent SubClassOf Etat Emotionnel Negatif.
+MeilleurPriseEnCharge is Class.
+MeilleurPriseEnCharge SubClassOf PriseEnChargeOptimale.
+MesureJudiciaire is Class.
+MesureJudiciaire SubClassOf ConceptDroitEtJusticeFrancaise,.
+MesureJudiciaire SubClassOf porteSur some Patient.
+MettreEnDanger is Class.
+MettreEnDanger SubClassOf ConceptLieAuComportement,.
+MettreEnDanger SubClassOf aPourThematique some ThematiqueProblemeSocial.
+MiTempsTherapeutique is Class.
+MiTempsTherapeutique SubClassOf Activite Professionnelle.
+NiveauAdministratifDependance is Class.
+NiveauAdministratifDependance SubClassOf AutonomiePersonnelle.
+PerteDAutonomie is Class.
+PerteDAutonomie SubClassOf EtatAutonomie,.
+PerteDAutonomie SubClassOf aPourThematique some ThematiqueProblemeSocial.
+PlainteExprimerParPatient is Class.
+PlainteExprimerParPatient SubClassOf Plaindre.
+PlanAideHumaine is Class.
+PlanAideHumaine SubClassOf SituationSociale,.
+PlanAideHumaine SubClassOf aPourThematique some ThematiqueAideHumaine.
+PlanFamilial is Class.
+PlanFamilial SubClassOf SituationSociale.
+PlanLogement is Class.
+PlanLogement SubClassOf PlanMateriel.
+PlanMateriel is Class.
+PlanMateriel SubClassOf SituationSociale.
+PrecariteSociale is Class.
+PrecariteSociale SubClassOf Probleme,.
+PrecariteSociale SubClassOf aPourThematique some ThematiqueProblemeSocial.
+Preoccupe is Class.
+Preoccupe SubClassOf Etat Emotionnel Negatif.
+PriseEnChargeAssociation is Class.
+PriseEnChargeAssociation SubClassOf PriseEnChargeMedicoSocial.
+PriseEnChargeAuxiliaireDeVie is Class.
+PriseEnChargeAuxiliaireDeVie SubClassOf PriseEnChargeMedicoSocial.
+PriseEnChargeDeLaFamille is Class.
+PriseEnChargeDeLaFamille SubClassOf PriseEnChargeLieeAAgent.
+PriseEnChargeDesEnfants is Class.
+PriseEnChargeDesEnfants SubClassOf PriseEnChargeLieeAAgent.
+PriseEnChargeDomicile is Class.
+PriseEnChargeDomicile SubClassOf PriseEnChargeMedicoSocial.
+PriseEnChargeDuPatient is Class.
+PriseEnChargeDuPatient SubClassOf PriseEnChargeLieeAAgent.
+PriseEnChargeLieeAAgent is Class.
+PriseEnChargeLieeAAgent SubClassOf PriseEnChargeMedicoSocial,.
+PriseEnChargeLieeAAgent SubClassOf aPourThematique some ThematiqueBesoinEtDemandePecSociale.
+PriseEnChargeMedicoSocial is Class.
+PriseEnChargeMedicoSocial SubClassOf Etat,.
+PriseEnChargeMedicoSocial SubClassOf aPourThematique some ThematiqueSociale.
+PriseEnChargeOptimale is Class.
+PriseEnChargeOptimale SubClassOf PriseEnChargeMedicoSocial.
+PriseEnChargeReseau is Class.
+PriseEnChargeReseau SubClassOf PriseEnChargeMedicoSocial.
+PriseEnCharge SSIAD is Class.
+PriseEnCharge SSIAD SubClassOf PriseEnChargeMedicoSocial.
+PriseEnchargeSociale is Class.
+PriseEnchargeSociale SubClassOf PriseEnChargeMedicoSocial.
+ProblemeAideTechnique is Class.
+ProblemeAideTechnique SubClassOf ProblemeLieeEnvironnement,.
+ProblemeAideTechnique SubClassOf aPourThematique some ThematiqueAideTechnique.
+ProblemeAttelle is Class.
+ProblemeAttelle SubClassOf ProblemeAideTechnique.
+ProblemeComportement is Class.
+ProblemeComportement SubClassOf ConceptLieAuComportement,.
+ProblemeComportement SubClassOf aPourThematique some ThematiqueProblemeSocial,.
+ProblemeComportement SubClassOf aPourThematique some ThematiqueSociale.
+ProblemeConfort is Class.
+ProblemeConfort SubClassOf ProblemeLieeEnvironnement,.
+ProblemeConfort SubClassOf aPourThematique some ThematiqueAideTechnique.
+ProblemeFinancier is Class.
+ProblemeFinancier SubClassOf Probleme,.
+ProblemeFinancier SubClassOf aPourThematique some ThematiqueProblemeSocial,.
+ProblemeFinancier SubClassOf aPourThematique some ThematiqueSociale.
+ProblemeLieeActiviteDeVieQuotidienne is Class.
+ProblemeLieeActiviteDeVieQuotidienne SubClassOf Probleme,.
+ProblemeLieeActiviteDeVieQuotidienne SubClassOf aPourThematique some ThematiqueSociale.
+ProblemeLieeEnvironnement is Class.
+ProblemeLieeEnvironnement SubClassOf Probleme,.
+ProblemeLieeEnvironnement SubClassOf aPourThematique some ThematiqueSociale.
+ProblemeLit is Class.
+ProblemeLit SubClassOf ProblemeAideTechnique.
+ProblemeMaintienADomicile is Class.
+ProblemeMaintienADomicile SubClassOf DifficulteDePriseEnCharge.
+ProblemeMatelas is Class.
+ProblemeMatelas SubClassOf ProblemeAideTechnique.
+ProblemeRelationnel is Class.
+ProblemeRelationnel SubClassOf DifficulteDePriseEnCharge.
+ProblemeSonnette is Class.
+ProblemeSonnette SubClassOf ProblemeAideTechnique.
+ProblemeTransport is Class.
+ProblemeTransport SubClassOf ProblemeLieeEnvironnement,.
+ProblemeTransport SubClassOf aPourThematique some ThematiqueProblemeSocial.
+Proprietaire is Class.
+Proprietaire SubClassOf ConceptLieALaPropriete.
+RefusDePEC is Class.
+RefusDePEC SubClassOf DifficultePEC MedicoSociale.
+RefusDuPatient is Class.
+RefusDuPatient SubClassOf Refuser.
+Relogement is Class.
+Relogement SubClassOf SituationSociale,.
+Relogement SubClassOf aPourThematique some ThematiqueBesoinEtDemandePecSociale.
+Repli Social Important is Class.
+Repli Social Important SubClassOf Isolement Avec Degre.
+Repli Social Progressif is Class.
+Repli Social Progressif SubClassOf Isolement Avec Degre.
+Repli Total is Class.
+Repli Total SubClassOf Isolement Avec Degre.
+RuptureDePriseEnCharge is Class.
+RuptureDePriseEnCharge SubClassOf DifficultePEC MedicoSociale.
+Salarie is Class.
+Salarie SubClassOf Activite Professionnelle.
+SansAscenseur is Class.
+SansAscenseur SubClassOf AccessibiliteArchitecturale,.
+SansAscenseur SubClassOf aPourThematique some ThematiqueProblemeAccessibilite.
+SansDomicileFixe is Class.
+SansDomicileFixe SubClassOf Statut Sans Abris.
+Satisfait is Class.
+Satisfait SubClassOf Etat Emotionnel Positif.
+SauvegardeJustice is Class.
+SauvegardeJustice SubClassOf MesureJudiciaire,.
+SauvegardeJustice SubClassOf aPourThematique some ThematiqueProblemeSocial.
+SituationDeHandicap is Class.
+SituationDeHandicap SubClassOf AutonomiePersonnelle,.
+SituationDeHandicap SubClassOf aPourThematique some ThematiqueProblemeSocial,.
+SituationDeHandicap SubClassOf aPourThematique some ThematiqueSociale.
+SituationIrreguliere is Class.
+SituationIrreguliere SubClassOf SituationSociale,.
+SituationIrreguliere SubClassOf aPourThematique some ThematiqueProblemeSocial,.
+SituationIrreguliere SubClassOf aPourThematique some ThematiqueSociale.
+SituationSociale is Class.
+SituationSociale SubClassOf Etat,.
+SituationSociale SubClassOf aPourThematique some ThematiqueSociale.
+SouhaiterMourir is Class.
+SouhaiterMourir SubClassOf Souhaiter.
+StatutAffectionLongueDuree is Class.
+StatutAffectionLongueDuree SubClassOf StatutLieA Pathologie.
+StatutInvalidité is Class.
+StatutInvalidité SubClassOf StatutLieA Pathologie.
+StatutLieA Pathologie is Class.
+StatutLieA Pathologie SubClassOf Statut.
+StatutReconnaissanceQualiteTravailleurHandicape is Class.
+StatutReconnaissanceQualiteTravailleurHandicape SubClassOf StatutLieA Pathologie.
+StatutSansPapier is Class.
+StatutSansPapier SubClassOf Statut Civil.
+Stresse is Class.
+Stresse SubClassOf Etat Emotionnel Negatif.
+Tristesse is Class.
+Tristesse SubClassOf Etat Emotionnel Negatif.
+Tutelle is Class.
+Tutelle SubClassOf MesureJudiciaire.
+UrgentePriseEnCharge is Class.
+UrgentePriseEnCharge SubClassOf DifficultePEC MedicoSociale.
+Violence is Class.
+Violence SubClassOf ProblemeComportement.
+Violent is Class.
+Violent SubClassOf Violence.
+VivreEnFamille is Class.
+VivreEnFamille SubClassOf PlanFamilial.
+VivreSeul is Class.
+VivreSeul SubClassOf PlanFamilial.
+www.w3.org/2002/07/# is Class.

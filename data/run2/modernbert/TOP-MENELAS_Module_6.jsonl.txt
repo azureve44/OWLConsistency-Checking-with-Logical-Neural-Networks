@@ -1,0 +1,639 @@
+DEFxATTRxVal is ObjectProperty.
+DEFxATTRxVal Domain Attribute.
+DEFxATTRxVal Range value.
+DEFxAbsObjxIdealObj is ObjectProperty.
+DEFxAbsObjxIdealObj Domain AbstractObject.
+DEFxAbsObjxIdealObj Range IdealObject.
+DEFxAbsObjxMetaAbsObj is ObjectProperty.
+DEFxAbsObjxMetaAbsObj SubPropertyOf DEFxAbsObjxIdealObj.
+DEFxChangexSpatialObj is ObjectProperty.
+DEFxChangexSpatialObj SubPropertyOf has view point.
+DEFxCountObjxMassObj is ObjectProperty.
+DEFxCountObjxMassObj SubPropertyOf DEFxPhyObjxPhyObj.
+DEFxCountObjxMassObj Domain countable object.
+DEFxCountObjxMassObj Range mass object.
+DEFxHBxHB is ObjectProperty.
+DEFxHBxHB SubPropertyOf DEFxHBxRealObj.
+DEFxHBxHB Domain human being.
+DEFxHBxHB Range human being.
+DEFxHBxRealObj is ObjectProperty.
+DEFxHBxRealObj SubPropertyOf DEFxPhyObjxPhyObj.
+DEFxHBxRealObj Domain human being.
+DEFxHBxRealObj Range RealObject.
+DEFxHCxStatePhyObj is ObjectProperty.
+DEFxHCxStatePhyObj SubPropertyOf DEFxStatePhyObjxStatePhyObj.
+DEFxICxMetaAbsObject is ObjectProperty.
+DEFxICxMetaAbsObject SubPropertyOf DEFxAbsObjxIdealObj.
+DEFxIOxTempObj is ObjectProperty.
+DEFxIOxTempObj SubPropertyOf has view point.
+DEFxIOxTheticMod is ObjectProperty.
+DEFxIOxTheticMod SubPropertyOf has view point.
+DEFxMassObjxCountObj is ObjectProperty.
+DEFxMassObjxCountObj SubPropertyOf DEFxPhyObjxPhyObj.
+DEFxMassObjxCountObj Domain mass object.
+DEFxMassObjxCountObj Range countable object.
+DEFxMassObjxQuantVal is ObjectProperty.
+DEFxMassObjxQuantVal SubPropertyOf DEFxAbsObjxIdealObj.
+DEFxMassObjxQuantVal Domain mass object.
+DEFxMassObjxQuantVal Range quantitative val.
+DEFxPROPxPROP is ObjectProperty.
+DEFxPROPxPROP Domain Proposition.
+DEFxPROPxPROP Range Proposition.
+DEFxPhyObjxChange is ObjectProperty.
+DEFxPhyObjxChange Domain PhysicalObject.
+DEFxPhyObjxChange Range Change.
+DEFxPhyObjxIC is ObjectProperty.
+DEFxPhyObjxIC SubPropertyOf DEFxPhyObjxChange.
+DEFxPhyObjxIC Domain PhysicalObject.
+DEFxPhyObjxIC Range IntentionalChange.
+DEFxPhyObjxMetaFunctObj is ObjectProperty.
+DEFxPhyObjxMetaFunctObj Domain PhysicalObject.
+DEFxPhyObjxMetaFunctObj Range MetaFunctionalObject.
+DEFxPhyObjxPhyFctObj is ObjectProperty.
+DEFxPhyObjxPhyFctObj SubPropertyOf has view point.
+DEFxPhyObjxPhyFctObj Domain PhysicalObject.
+DEFxPhyObjxPhyFctObj Range physical functional object.
+DEFxPhyObjxPhyObj is ObjectProperty.
+DEFxPhyObjxPhyObj Domain PhysicalObject.
+DEFxPhyObjxPhyObj Range PhysicalObject.
+DEFxPhyObjxProcess is ObjectProperty.
+DEFxPhyObjxProcess SubPropertyOf DEFxPhyObjxChange.
+DEFxPhyObjxProcess Domain PhysicalObject.
+DEFxPhyObjxProcess Range process.
+DEFxProcessxPhyFctObj is ObjectProperty.
+DEFxProcessxPhyFctObj SubPropertyOf has view point.
+DEFxProcessxPhyFctObj Domain process.
+DEFxProcessxPhyFctObj Range physical functional object.
+DEFxRealObjxPsObj is ObjectProperty.
+DEFxRealObjxPsObj SubPropertyOf DEFxPhyObjxPhyObj.
+DEFxRealObjxPsObj Domain RealObject.
+DEFxRealObjxPsObj Range PseudoObject.
+DEFxRealObjxRealObj is ObjectProperty.
+DEFxRealObjxRealObj SubPropertyOf DEFxPhyObjxPhyObj.
+DEFxRealObjxRealObj Domain RealObject.
+DEFxRealObjxRealObj Range RealObject.
+DEFxSTATExSubstratum is ObjectProperty.
+DEFxSTATExSubstratum Domain State.
+DEFxSTATExSubstratum Range Substratum.
+DEFxStateIdealObjxIdealObj is ObjectProperty.
+DEFxStateIdealObjxIdealObj SubPropertyOf DEFxAbsObjxIdealObj.
+DEFxStateIdealObjxIdealObj Domain StateOfIdealObject.
+DEFxStateIdealObjxIdealObj Range IdealObject.
+DEFxStateMindxIO is ObjectProperty.
+DEFxStateMindxIO Domain StateOfMind.
+DEFxStateMindxIO Range IntentionalObject.
+DEFxStateMindxStateMind is ObjectProperty.
+DEFxStateMindxStateMind SubPropertyOf DEFxStateMindxIO.
+DEFxStateMindxStateMind Domain StateOfMind.
+DEFxStateMindxStateMind Range StateOfMind.
+DEFxStateMindxTheticMod is ObjectProperty.
+DEFxStateMindxTheticMod Domain StateOfMind.
+DEFxStateMindxTheticMod Range thetic modality.
+DEFxStatePhyObjxMetaIdealObj is ObjectProperty.
+DEFxStatePhyObjxMetaIdealObj SubPropertyOf DEFxAbsObjxIdealObj.
+DEFxStatePhyObjxMetaIdealObj Domain StateOfPhysicalObject.
+DEFxStatePhyObjxMetaIdealObj Range MetaIdealObject.
+DEFxStatePhyObjxPhyFctObj is ObjectProperty.
+DEFxStatePhyObjxPhyFctObj SubPropertyOf has view point.
+DEFxStatePhyObjxPhyFctObj Domain StateOfPhysicalObject.
+DEFxStatePhyObjxPhyFctObj Range physical functional object.
+DEFxStatePhyObjxPhyObj is ObjectProperty.
+DEFxStatePhyObjxPhyObj SubPropertyOf DEFxSTATExSubstratum.
+DEFxStatePhyObjxPhyObj Domain StateOfPhysicalObject.
+DEFxStatePhyObjxPhyObj Range PhysicalObject.
+DEFxStatePhyObjxSpatialObj is ObjectProperty.
+DEFxStatePhyObjxSpatialObj SubPropertyOf DEFxSTATExSubstratum.
+DEFxStatePhyObjxSpatialObj Domain StateOfPhysicalObject.
+DEFxStatePhyObjxSpatialRoleFct is ObjectProperty.
+DEFxStatePhyObjxSpatialRoleFct Domain StateOfPhysicalObject.
+DEFxStatePhyObjxSpatialRoleFct Range spatial role function.
+DEFxStatePhyObjxStatePhyObj is ObjectProperty.
+DEFxStatePhyObjxStatePhyObj SubPropertyOf DEFxStatexState.
+DEFxStatePhyObjxStatePhyObj Domain StateOfPhysicalObject.
+DEFxStatePhyObjxStatePhyObj Range StateOfPhysicalObject.
+DEFxStatexState is ObjectProperty.
+DEFxStatexState Domain State.
+DEFxStatexState Range State.
+DEFxUnICxMetaAbsObj is ObjectProperty.
+DEFxUnICxMetaAbsObj SubPropertyOf DEFxAbsObjxIdealObj.
+DEFxUnICxMetaAbsObj Domain UnintentionalChange.
+DEFxUnICxMetaAbsObj Range MetaAbstractObject.
+DEFxUnICxPhyObj is ObjectProperty.
+DEFxUnICxPhyObj Domain UnintentionalChange.
+DEFxUnICxPhyObj Range PhysicalObject.
+DEFxUnICxStatePhyObj is ObjectProperty.
+DEFxUnICxStatePhyObj Domain UnintentionalChange.
+DEFxUnICxStatePhyObj Range StateOfPhysicalObject.
+DEFxUnICxUnIC is ObjectProperty.
+DEFxUnICxUnIC Domain UnintentionalChange.
+DEFxUnICxUnIC Range UnintentionalChange.
+acc is ObjectProperty.
+acc SubPropertyOf DEFxHBxHB.
+acc Domain human being.
+acc Range human being.
+after state is ObjectProperty.
+after state SubPropertyOf DEFxUnICxStatePhyObj.
+after state Domain UnintentionalChange.
+after state Range StateOfPhysicalObject.
+altered by is ObjectProperty.
+altered by Domain process.
+altered by Range StateOfPhysicalObject.
+attr is ObjectProperty.
+attr SubPropertyOf has view point.
+attr Domain AbstractObject.
+attr Range Attribute.
+before state is ObjectProperty.
+before state SubPropertyOf DEFxUnICxStatePhyObj.
+before state Domain UnintentionalChange.
+before state Range StateOfPhysicalObject.
+brother of is ObjectProperty.
+brother of SubPropertyOf parent of.
+brother of Domain human being.
+brother of Range human being.
+causally related to is ObjectProperty.
+causally related to SubPropertyOf DEFxStatePhyObjxStatePhyObj.
+causally related to Domain StateOfPhysicalObject.
+causally related to Range StateOfPhysicalObject.
+cause of is ObjectProperty.
+cause of SubPropertyOf causally related to.
+cause of Domain StateOfPhysicalObject.
+cause of Range StateOfPhysicalObject.
+caused by is ObjectProperty.
+caused by SubPropertyOf causally related to.
+caused by Domain StateOfPhysicalObject.
+caused by Range StateOfPhysicalObject.
+component of is ObjectProperty.
+component of SubPropertyOf DEFxRealObjxPsObj.
+component of Domain RealObject.
+component of Range PseudoObject.
+consists in is ObjectProperty.
+consists in SubPropertyOf DEFxStatePhyObjxMetaIdealObj.
+consists in Domain StateOfPhysicalObject.
+consists in Range MetaIdealObject.
+consists loc is ObjectProperty.
+consists loc SubPropertyOf DEFxStatePhyObjxSpatialObj.
+consists loc Domain StateOfPhysicalObject.
+consists of is ObjectProperty.
+consists of SubPropertyOf DEFxStatePhyObjxPhyObj.
+consists of Domain StateOfPhysicalObject.
+consists of Range PhysicalObject.
+constituted of is ObjectProperty.
+constituted of SubPropertyOf DEFxMassObjxCountObj.
+constituted of Domain mass object.
+constituted of Range countable object.
+content is ObjectProperty.
+content SubPropertyOf DEFxStateMindxIO.
+content Domain StateOfMind.
+content Range IntentionalObject.
+countains is ObjectProperty.
+countains SubPropertyOf DEFxCountObjxMassObj.
+countains Domain countable object.
+countains Range mass object.
+cultural aspect is ObjectProperty.
+cultural aspect SubPropertyOf functional aspect.
+cultural aspect Domain CulturalState.
+dedicated to is ObjectProperty.
+dedicated to SubPropertyOf DEFxAbsObjxIdealObj.
+dedicated to Domain PseudoChange.
+dedicated to Range Notion.
+defines area is ObjectProperty.
+defines area SubPropertyOf defines location.
+defines area Domain PhysicalObject.
+defines cultural function is ObjectProperty.
+defines cultural function SubPropertyOf defines systemic function.
+defines cultural function Domain PhysicalObject.
+defines fct is ObjectProperty.
+defines fct SubPropertyOf DEFxPhyObjxPhyFctObj.
+defines fct Domain PhysicalObject.
+defines fct Range physical functional object.
+defines location is ObjectProperty.
+defines location SubPropertyOf defines fct.
+defines location Domain PhysicalObject.
+defines morphology is ObjectProperty.
+defines morphology SubPropertyOf defines fct.
+defines morphology Domain PhysicalObject.
+defines physical function is ObjectProperty.
+defines physical function SubPropertyOf defines systemic function.
+defines physical function Domain PhysicalObject.
+defines position is ObjectProperty.
+defines position SubPropertyOf defines location.
+defines position Domain PhysicalObject.
+defines subarea is ObjectProperty.
+defines subarea SubPropertyOf defines location.
+defines subarea Domain PhysicalObject.
+defines systemic function is ObjectProperty.
+defines systemic function SubPropertyOf defines fct.
+defines systemic function Domain PhysicalObject.
+disease of is ObjectProperty.
+disease of SubPropertyOf DEFxStatePhyObjxPhyObj.
+doesnot own is ObjectProperty.
+doesnot own SubPropertyOf DEFxHBxRealObj.
+doesnot own Domain human being.
+doesnot own Range RealObject.
+dysfunction in is ObjectProperty.
+dysfunction in SubPropertyOf DEFxStatePhyObjxMetaIdealObj.
+dysfunction in Domain StateOfPhysicalObject.
+dysfunction in Range MetaIdealObject.
+dysperforms function is ObjectProperty.
+dysperforms function SubPropertyOf DEFxProcessxPhyFctObj.
+dysperforms function Domain process.
+dysperforms function Range physical functional object.
+father of is ObjectProperty.
+father of SubPropertyOf parent of.
+father of Domain human being.
+father of Range human being.
+focussed on is ObjectProperty.
+focussed on SubPropertyOf DEFxStateIdealObjxIdealObj.
+focussed on Domain StateOfIdealObject.
+focussed on Range IdealObject.
+functional aspect is ObjectProperty.
+functional aspect SubPropertyOf DEFxStatePhyObjxPhyFctObj.
+functional aspect Domain StateOfPhysicalObject.
+functional aspect Range physical functional object.
+functional part is ObjectProperty.
+functional part SubPropertyOf DEFxPhyObjxPhyObj.
+functional part Domain PhysicalObject.
+functional part Range PhysicalObject.
+has for conclusion is ObjectProperty.
+has for conclusion Domain ImplicativeObject.
+has for conclusion Range CategorialForm.
+has for dosage is ObjectProperty.
+has for dosage SubPropertyOf DEFxCountObjxMassObj.
+has for premisse is ObjectProperty.
+has for premisse Domain ImplicativeObject.
+has for premisse Range IntentionalObject.
+has for step is ObjectProperty.
+has for step SubPropertyOf DEFxStatexState.
+has for step Domain Scenario.
+has for step Range State.
+has view point is ObjectProperty.
+has view point Domain AbstractObject.
+has view point Range MetaAbstractObject.
+improvement of is ObjectProperty.
+improvement of SubPropertyOf DEFxStatexState.
+improvement of Domain State.
+improvement of Range State.
+interpretation is ObjectProperty.
+interpretation SubPropertyOf DEFxStatePhyObjxStatePhyObj.
+interpretation Domain StateOfPhysicalObject.
+interpretation Range StateOfPhysicalObject.
+interpretation of is ObjectProperty.
+interpretation of SubPropertyOf DEFxStatePhyObjxStatePhyObj.
+interpretation of Domain StateOfPhysicalObject.
+interpretation of Range StateOfPhysicalObject.
+involved aspect is ObjectProperty.
+involved aspect SubPropertyOf DEFxUnICxMetaAbsObj.
+involved aspect Domain UnintentionalChange.
+involved aspect Range MetaAbstractObject.
+involved change is ObjectProperty.
+involved change SubPropertyOf DEFxUnICxUnIC.
+involved change Domain unintentional change controlling.
+involved change Range UnintentionalChange.
+involved obj is ObjectProperty.
+involved obj SubPropertyOf DEFxUnICxPhyObj.
+involved obj Domain UnintentionalChange.
+involved obj Range PhysicalObject.
+log and is ObjectProperty.
+log and SubPropertyOf DEFxPROPxPROP.
+log and Domain Proposition.
+log and Range Proposition.
+made of is ObjectProperty.
+made of SubPropertyOf DEFxRealObjxRealObj.
+made of Domain RealObject.
+made of Range RealObject.
+mass quantity is ObjectProperty.
+mass quantity SubPropertyOf DEFxMassObjxQuantVal.
+mass quantity Domain mass object.
+mass quantity Range quantitative val.
+mental opp is ObjectProperty.
+mental opp SubPropertyOf motivation.
+mental reinf is ObjectProperty.
+mental reinf SubPropertyOf motivation.
+mental source is ObjectProperty.
+mental source SubPropertyOf motivation.
+morphological aspect is ObjectProperty.
+morphological aspect SubPropertyOf functional aspect.
+morphological aspect Domain MorphoState.
+mother of is ObjectProperty.
+mother of SubPropertyOf parent of.
+mother of Domain human being.
+mother of Range human being.
+motivation is ObjectProperty.
+motivation SubPropertyOf DEFxStateMindxStateMind.
+motivation Domain StateOfMind.
+motivation Range StateOfMind.
+neg is ObjectProperty.
+neg SubPropertyOf DEFxPROPxPROP.
+noetic modality is ObjectProperty.
+noetic modality SubPropertyOf DEFxStateMindxTheticMod.
+noetic modality Domain StateOfMind.
+noetic modality Range thetic modality.
+not causally related to is ObjectProperty.
+not causally related to SubPropertyOf DEFxStatePhyObjxStatePhyObj.
+not causally related to Domain StateOfPhysicalObject.
+not causally related to Range StateOfPhysicalObject.
+not caused by is ObjectProperty.
+not caused by SubPropertyOf DEFxStatePhyObjxStatePhyObj.
+not caused by Domain StateOfPhysicalObject.
+not caused by Range StateOfPhysicalObject.
+object spatial role is ObjectProperty.
+object spatial role SubPropertyOf DEFxPhyObjxMetaFunctObj.
+object spatial role Domain PhysicalObject.
+object spatial role Range spatial role function.
+owns is ObjectProperty.
+owns SubPropertyOf DEFxHBxRealObj.
+owns Domain human being.
+owns Range RealObject.
+parent of is ObjectProperty.
+parent of SubPropertyOf DEFxHBxHB.
+parent of Domain human being.
+parent of Range human being.
+part is ObjectProperty.
+part SubPropertyOf DEFxPhyObjxPhyObj.
+part Domain PhysicalObject.
+part Range PhysicalObject.
+part frag is ObjectProperty.
+part frag SubPropertyOf part.
+part seg is ObjectProperty.
+part seg SubPropertyOf part.
+participate to is ObjectProperty.
+participate to SubPropertyOf DEFxPhyObjxChange.
+participate to Domain human being.
+participate to Range SocialEvent.
+performs function is ObjectProperty.
+performs function SubPropertyOf DEFxProcessxPhyFctObj.
+performs function Domain process.
+performs function Range physical functional object.
+performs process is ObjectProperty.
+performs process SubPropertyOf DEFxPhyObjxProcess.
+performs process Domain PhysicalObject.
+performs process Range process.
+physical aspect is ObjectProperty.
+physical aspect SubPropertyOf functional aspect.
+physical aspect Domain PhysicalState.
+process of is ObjectProperty.
+process of SubPropertyOf DEFxUnICxPhyObj.
+process of Domain process.
+process of Range PhysicalObject.
+relevant property is ObjectProperty.
+relevant property SubPropertyOf DEFxStateIdealObjxIdealObj.
+relevant property Domain StateOfIdealObject.
+relevant property Range IdealObject.
+resides in is ObjectProperty.
+resides in SubPropertyOf DEFxHBxRealObj.
+resides in Domain human being.
+sister of is ObjectProperty.
+sister of SubPropertyOf parent of.
+sister of Domain human being.
+sister of Range human being.
+spatial aspect is ObjectProperty.
+spatial aspect SubPropertyOf functional aspect.
+spatial aspect Domain SpatialState.
+state identity is ObjectProperty.
+state identity SubPropertyOf DEFxStatexState.
+state identity Domain State.
+state identity Range State.
+state in is ObjectProperty.
+state in SubPropertyOf DEFxSTATExSubstratum.
+state localization is ObjectProperty.
+state localization SubPropertyOf DEFxStatePhyObjxSpatialRoleFct.
+state localization Domain StateOfPhysicalObject.
+state localization Range spatial role function.
+state of is ObjectProperty.
+state of SubPropertyOf DEFxSTATExSubstratum.
+state of Domain State.
+state of Range Substratum.
+val is ObjectProperty.
+val SubPropertyOf DEFxATTRxVal.
+val Domain Attribute.
+val Range value.
+val qual is ObjectProperty.
+val qual SubPropertyOf val.
+val qual Domain Attribute.
+val qual Range qualitative val.
+val quant is ObjectProperty.
+val quant SubPropertyOf val.
+val quant Domain Attribute.
+val quant Range quantitative val.
+worsening of is ObjectProperty.
+worsening of SubPropertyOf DEFxStatexState.
+worsening of Domain State.
+worsening of Range State.
+AbductiveObject is Class.
+AbductiveObject SubClassOf ImplicativeObject.
+AbsoluteUnit is Class.
+AbsoluteUnit SubClassOf Unit.
+AbstractObject is Class.
+AbstractObject SubClassOf Substratum.
+AttributDInstanciation is Class.
+AttributDInstanciation SubClassOf Attribute.
+AttributDObjetIntentionnel is Class.
+AttributDObjetIntentionnel SubClassOf Attribute.
+Attribute is Class.
+Attribute SubClassOf MetaAbstractObject.
+CategorialForm is Class.
+CategorialForm SubClassOf IntentionalObject.
+Change is Class.
+ConjunctiveObject is Class.
+ConjunctiveObject SubClassOf CategorialForm.
+CulturalState is Class.
+CulturalState SubClassOf StateOfPhysicalObject.
+DayUnit is Class.
+DayUnit SubClassOf TimeStuff.
+DeductiveObject is Class.
+DeductiveObject SubClassOf ImplicativeObject.
+DerivedNotion is Class.
+DerivedNotion SubClassOf Entity.
+DisjunctiveObject is Class.
+DisjunctiveObject SubClassOf CategorialForm.
+Distance is Class.
+Distance SubClassOf SpatialState.
+Entity is Class.
+GeneralUnit is Class.
+GeneralUnit SubClassOf AbsoluteUnit.
+HourUnit is Class.
+HourUnit SubClassOf TimeStuff.
+IdealObject is Class.
+ImplicativeObject is Class.
+ImplicativeObject SubClassOf CategorialForm.
+Indexical is Class.
+Indexical SubClassOf DerivedNotion.
+InductiveObject is Class.
+InductiveObject SubClassOf ImplicativeObject.
+IntentionalChange is Class.
+IntentionalChange DisjointWith UnintentionalChange.
+IntentionalObject is Class.
+IntentionalObject SubClassOf AbstractObject.
+MaterialForm is Class.
+MentalScenario is Class.
+MentalScenario SubClassOf Scenario.
+MetaAbstractObject is Class.
+MetaFunctionalObject is Class.
+MetaIdealObject is Class.
+MonthUnit is Class.
+MonthUnit SubClassOf TimeStuff.
+MorphoState is Class.
+MorphoState SubClassOf StateOfPhysicalObject.
+Notion is Class.
+PacketYear is Class.
+PacketYear SubClassOf ParticularUnit.
+ParticularUnit is Class.
+ParticularUnit SubClassOf AbsoluteUnit.
+PhysicalObject is Class.
+PhysicalObject SubClassOf AbstractObject.
+PhysicalObjectAttribute is Class.
+PhysicalObjectAttribute SubClassOf Attribute.
+PhysicalScenario is Class.
+PhysicalScenario SubClassOf Scenario.
+PhysicalState is Class.
+PhysicalState SubClassOf StateOfPhysicalObject.
+Proposition is Class.
+Proposition SubClassOf DerivedNotion.
+PseudoChange is Class.
+PseudoChange SubClassOf Change.
+PseudoEvent is Class.
+PseudoEvent SubClassOf PseudoChange.
+PseudoObject is Class.
+PseudoObject SubClassOf PhysicalObject.
+PseudoProcessus is Class.
+PseudoProcessus SubClassOf PseudoChange.
+PseudoState is Class.
+PseudoState SubClassOf State.
+RealChange is Class.
+RealObject is Class.
+RealObject SubClassOf PhysicalObject.
+RealState is Class.
+RealState SubClassOf State.
+Scenario is Class.
+Scenario SubClassOf PseudoState.
+SocialEvent is Class.
+SocialEvent SubClassOf PseudoEvent.
+Something is Class.
+Something SubClassOf DerivedNotion.
+SpatialState is Class.
+SpatialState SubClassOf StateOfPhysicalObject.
+State is Class.
+State SubClassOf MaterialForm.
+StateOfIdealObject is Class.
+StateOfIdealObject SubClassOf RealState.
+StateOfIntentionalObject is Class.
+StateOfIntentionalObject SubClassOf RealState.
+StateOfMind is Class.
+StateOfMind SubClassOf RealState.
+StateOfPhysicalObject is Class.
+StateOfPhysicalObject SubClassOf RealState.
+Substratum is Class.
+TimeStuff is Class.
+TimeStuff SubClassOf DerivedNotion.
+UnintentionalChange is Class.
+UnintentionalChange SubClassOf RealChange.
+UnintentionalChange DisjointWith IntentionalChange.
+Unit is Class.
+YearUnit is Class.
+YearUnit SubClassOf TimeStuff.
+action attr is Class.
+action attr SubClassOf AttributDObjetIntentionnel.
+administrative state is Class.
+administrative state SubClassOf CulturalState.
+agglomerat is Class.
+agglomerat SubClassOf mass object.
+animal is Class.
+animal SubClassOf animate.
+animate is Class.
+animate SubClassOf countable object.
+artificial object is Class.
+artificial object SubClassOf inanimate.
+artificial object DisjointWith natural object.
+bacteria is Class.
+bacteria SubClassOf animate.
+common noun is Class.
+common noun SubClassOf word.
+communication state is Class.
+communication state SubClassOf CulturalState.
+countable object is Class.
+countable object SubClassOf RealObject.
+cultural process is Class.
+cultural process SubClassOf process.
+event is Class.
+event SubClassOf UnintentionalChange.
+frequency attr is Class.
+frequency attr SubClassOf AttributDObjetIntentionnel.
+general category is Class.
+human being is Class.
+human being SubClassOf animate.
+hypo is Class.
+hypo SubClassOf general category.
+inanimate is Class.
+inanimate SubClassOf countable object.
+info object is Class.
+info object SubClassOf PseudoObject.
+informed is Class.
+informed SubClassOf communication state.
+informed DisjointWith unaware of.
+low is Class.
+low SubClassOf hypo.
+manufactured mass object is Class.
+manufactured mass object SubClassOf mass object.
+marginal is Class.
+marginal SubClassOf social state.
+marginal DisjointWith reinserted.
+mass object is Class.
+mass object SubClassOf RealObject.
+min is Class.
+min SubClassOf hypo.
+moderate is Class.
+moderate SubClassOf general category.
+morpho process is Class.
+morpho process SubClassOf process.
+morphologic object is Class.
+morphologic object SubClassOf PseudoObject.
+natural object is Class.
+natural object SubClassOf inanimate.
+natural object DisjointWith artificial object.
+physical functional object is Class.
+physical process is Class.
+physical process SubClassOf process.
+process is Class.
+process SubClassOf UnintentionalChange.
+protocol is Class.
+protocol SubClassOf PseudoProcessus.
+qualitative val is Class.
+quantitative val is Class.
+reinserted is Class.
+reinserted SubClassOf social state.
+reinserted DisjointWith marginal.
+social state is Class.
+social state SubClassOf CulturalState.
+spatial process is Class.
+spatial process SubClassOf process.
+spatial role function is Class.
+state attr is Class.
+state attr SubClassOf AttributDObjetIntentionnel.
+substance is Class.
+substance SubClassOf mass object.
+systemic object is Class.
+systemic object SubClassOf PseudoObject.
+thetic modality is Class.
+tissue is Class.
+tissue SubClassOf mass object.
+trigger is Class.
+trigger SubClassOf unintentional change controlling.
+unaware of is Class.
+unaware of SubClassOf communication state.
+unaware of DisjointWith informed.
+unintentional attr is Class.
+unintentional attr SubClassOf AttributDObjetIntentionnel.
+unintentional change controlling is Class.
+unintentional change controlling SubClassOf UnintentionalChange.
+value is Class.
+vegetal is Class.
+vegetal SubClassOf animate.
+very low is Class.
+very low SubClassOf hypo.
+virus is Class.
+virus SubClassOf animate.
+when big exertion is Class.
+when big exertion SubClassOf when exercise.
+when exercise is Class.
+word is Class.
+www.w3.org/2002/07/# is Class.

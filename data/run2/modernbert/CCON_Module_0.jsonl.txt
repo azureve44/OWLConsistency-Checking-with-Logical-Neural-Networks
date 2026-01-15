@@ -1,0 +1,664 @@
+decreases is ObjectProperty.
+decreases Domain Precipitation.
+decreases Range GroundLayer.
+decreases InverseOf isDecreasedBy.
+hasComponent is ObjectProperty.
+Community is www.fao.org/aims/aos/cwr.#.
+Community Range Species.
+Community InverseOf isPartOf,.
+isPartOf is www.fao.org/aims/aos/cwr.#.
+hasDistribution is ObjectProperty.
+hasDistribution Domain Species.
+hasDistribution Range GeographicalDistribution.
+hasDistribution InverseOf isHabitatOf.
+hasMortality is ObjectProperty.
+Community is www.fao.org/aims/aos/cwr.#.
+Community Range Mortality.
+Community InverseOf isMortalityOf.
+hasNatality is ObjectProperty.
+Population is www.fao.org/aims/aos/cwr.#.
+Population Range Natality.
+Population InverseOf isNatalityOf.
+hasNumberOfIndividuals is ObjectProperty.
+hasNumberOfIndividuals Domain Species.
+hasNumberOfIndividuals Range NumberOfIndividuos.
+hasRecruitment is ObjectProperty.
+Community is www.fao.org/aims/aos/cwr.#.
+Community Range Recruitment.
+Community InverseOf isRecruitmentOf.
+hasSpecificName is ObjectProperty.
+hasSpecificName Domain Species.
+hasSpecificName Range SpecificName.
+hasSpecificName InverseOf isSpecificNameOf.
+hasStatus is ObjectProperty.
+hasStatus Domain Species.
+hasStatus Range ConservationStatus.
+hasStatus InverseOf isStatusOf.
+increases is ObjectProperty.
+increases Domain Precipitation.
+increases Range WoodLayer.
+increases InverseOf isIncreasedBy.
+isCharacteristicOf is ObjectProperty.
+isCharacterizedBy is ObjectProperty.
+Community is www.fao.org/aims/aos/cwr.#.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+isDecreasedBy is ObjectProperty.
+isDecreasedBy Domain GroundLayer.
+isDecreasedBy Range Precipitation.
+isDecreasedBy InverseOf decreases.
+isGrowthOf is ObjectProperty.
+isGrowthOf Domain GrowthRate.
+Community or www.fao.org/aims/aos/cwr.# is www.fao.org/aims/aos/cwr.#.
+isHabitatOf is ObjectProperty.
+isHabitatOf Domain GeographicalDistribution.
+isHabitatOf Range Species.
+isHabitatOf InverseOf hasDistribution.
+isIncreasedBy is ObjectProperty.
+isIncreasedBy Domain WoodLayer.
+isIncreasedBy Range Precipitation.
+isIncreasedBy InverseOf increases.
+isMortalityOf is ObjectProperty.
+isMortalityOf Domain Mortality.
+Community is www.fao.org/aims/aos/cwr.#.
+Community InverseOf hasMortality.
+isNatalityOf is ObjectProperty.
+isNatalityOf Domain Natality.
+Population is www.fao.org/aims/aos/cwr.#.
+Population InverseOf hasNatality.
+isPartOf is ObjectProperty.
+isPartOf Domain Species.
+Community is www.fao.org/aims/aos/cwr.#.
+Community InverseOf hasComponent.
+isRecruitmentOf is ObjectProperty.
+isRecruitmentOf Domain Recruitment.
+Community is www.fao.org/aims/aos/cwr.#.
+Community InverseOf hasRecruitment.
+isSpecificNameOf is ObjectProperty.
+isSpecificNameOf Domain SpecificName.
+isSpecificNameOf Range Species.
+isSpecificNameOf InverseOf hasSpecificName.
+isStatusOf is ObjectProperty.
+isStatusOf Domain ConservationStatus.
+isStatusOf Range Species.
+isStatusOf InverseOf hasStatus.
+www.fao.org/aims/aos/cwr.# is ObjectProperty.
+www.fao.org/aims/aos/cwr.# Domain Species.
+Community is www.fao.org/aims/aos/cwr.#.
+Community InverseOf hasComponent.
+BasalArea is Class.
+CommunityStructure is www.fao.org/aims/aos/cwr.#.
+Biodiversity is Class.
+Diversity is www.fao.org/aims/aos/cwr.#.
+BiologicalOrganizationLevel is Class.
+Thing is www.w3.org/2002/07/#.
+CampoCerrado is Class.
+CampoCerrado SubClassOf Savanna,.
+SavannaHabitat is www.fao.org/aims/aos/cwr.#.
+SavannaHabitat DisjointWith CerradoSensuStricto.
+SavannaHabitat DisjointWith CampoSujo.
+CampoLimpo is Class.
+CampoLimpo SubClassOf TropicalGrassland.
+CampoSujo is Class.
+CampoSujo SubClassOf Savanna,.
+SavannaHabitat is www.fao.org/aims/aos/cwr.#.
+SavannaHabitat DisjointWith CerradoSensuStricto.
+SavannaHabitat DisjointWith CampoCerrado.
+Cerradao is Class.
+Cerradao SubClassOf TropicalSeasonalForest.
+Cerrado is Class.
+Cerrado SubClassOf Ecoregion.
+CerradoDeterminingFactors is Class.
+CerradoDeterminingFactors SubClassOf Environment.
+CerradoSensuLato is Class.
+CerradoSensuLato SubClassOf Cerrado.
+CerradoSensuStricto is Class.
+CerradoSensuStricto SubClassOf Savanna,.
+SavannaHabitat is www.fao.org/aims/aos/cwr.#.
+SavannaHabitat DisjointWith CampoSujo.
+SavannaHabitat DisjointWith CampoCerrado.
+Climate is Class.
+Climate SubClassOf CerradoDeterminingFactors.
+ComunityDynamics is Class.
+EcologicalPhenomena, is www.fao.org/aims/aos/cwr.#.
+PlantCommunity is isCharacteristicOf some www.fao.org/aims/aos/cwr.#.
+ConservationStatus is Class.
+Thing is www.w3.org/2002/07/#.
+Density is Class.
+PopulationDensity is www.fao.org/aims/aos/cwr.#.
+PopulationDensity SubClassOf PopulationDynamics,.
+CommunityStructure is www.fao.org/aims/aos/cwr.#.
+DiameterClassDistribution is Class.
+CommunityStructure is www.fao.org/aims/aos/cwr.#.
+Difference is Class.
+Difference SubClassOf ComunityDynamics.
+DiversityIndex is Class.
+Diversity is www.fao.org/aims/aos/cwr.#.
+DrySeason is Class.
+DrySeason SubClassOf TropicalSeason.
+DrySeason DisjointWith WetSeason.
+Ecoregion is Class.
+Ecoregion SubClassOf BiologicalOrganizationLevel.
+Environment is Class.
+FireRegime is Class.
+FireRegime SubClassOf CerradoDeterminingFactors.
+GeographicalDistribution is Class.
+Thing is www.w3.org/2002/07/#.
+Grass is Class.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Angiosperm DisjointWith Tree.
+GroundLayer is Class.
+VegetationCover, is www.fao.org/aims/aos/cwr.#.
+VegetationCover, is hasComponent some Grass,.
+VegetationCover, is hasComponent some HerbaceousPlant,.
+VegetationCover, is isPartOf only Savanna,.
+VegetationCover, is isPartOf only TropicalGrassland.
+VegetationCover, DisjointWith WoodLayer.
+GrowthRate is Class.
+GrowthRate SubClassOf ComunityDynamics,.
+GrowthRate SubClassOf PopulationDynamics.
+HerbaceousPlant is Class.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Angiosperm DisjointWith Tree.
+Metapopulation is Class.
+Metapopulation SubClassOf BiologicalOrganizationLevel.
+Mortality is Class.
+Mortality SubClassOf ComunityDynamics,.
+Mortality SubClassOf PopulationDynamics.
+Natality is Class.
+Natality SubClassOf PopulationDynamics.
+NumberOfIndividuos is Class.
+PopulationSize is www.fao.org/aims/aos/cwr.#.
+PopulationSize SubClassOf PopulationDynamics,.
+CommunityStructure is www.fao.org/aims/aos/cwr.#.
+PopulationDynamics is Class.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+Precipitation is Class.
+Precipitation SubClassOf ENVO 01000203,.
+Precipitation SubClassOf decreases only GroundLayer,.
+Precipitation SubClassOf increases only WoodLayer.
+Recruitment is Class.
+Recruitment SubClassOf ComunityDynamics.
+RelativeHumidity is Class.
+RelativeHumidity SubClassOf ENVO 01000203.
+Savanna is Class.
+SavannaHabitat is www.fao.org/aims/aos/cwr.#.
+SavannaHabitat SubClassOf ENVO 00000446,.
+TerrestrialHabitat, is www.fao.org/aims/aos/cwr.#.
+TerrestrialHabitat, is isPartOf only CerradoSensuLato.
+Season is Class.
+SeasonalVariation is www.fao.org/aims/aos/cwr.#.
+SeasonalVariation SubClassOf Environment,.
+Periodicity is www.fao.org/aims/aos/cwr.#.
+Shrub is Class.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Angiosperm DisjointWith Tree.
+SimpsonsIndex is Class.
+SimpsonsIndex SubClassOf SpeciesDiversity.
+Soil is Class.
+Soil SubClassOf CerradoDeterminingFactors.
+SorensensSimilarityIndex is Class.
+SorensensSimilarityIndex SubClassOf SpeciesCompositionSimilarity.
+Species is Class.
+Thing is www.w3.org/2002/07/#.
+SpeciesCompositionSimilarity is Class.
+SpeciesCompositionSimilarity SubClassOf DiversityIndex.
+SpeciesDiversity is Class.
+SpeciesDiversity SubClassOf DiversityIndex.
+SpeciesEvenness is Class.
+SpeciesEvenness SubClassOf DiversityIndex.
+SpeciesRichness is Class.
+SpeciesRichness SubClassOf DiversityIndex.
+SpecificName is Class.
+Thing is www.w3.org/2002/07/#.
+Temperature is Class.
+Temperature SubClassOf ENVO 01000203.
+Tree is Class.
+Angiosperm, is www.fao.org/aims/aos/cwr.#.
+Angiosperm, is isPartOf only WoodLayer.
+Angiosperm, DisjointWith Shrub.
+Angiosperm, DisjointWith HerbaceousPlant.
+Angiosperm, DisjointWith Grass.
+TropicalGrassland is Class.
+TropicalGrassland SubClassOf ENVO 00000446,.
+TerrestrialHabitat, is www.fao.org/aims/aos/cwr.#.
+TerrestrialHabitat, is isPartOf some CerradoSensuLato.
+TropicalSeason is Class.
+TropicalSeason SubClassOf Season,.
+SeasonalVariation is www.fao.org/aims/aos/cwr.#.
+TropicalSeasonalForest is Class.
+TropicalSeasonalForest SubClassOf ENVO 00000446,.
+TerrestrialHabitat, is www.fao.org/aims/aos/cwr.#.
+TerrestrialHabitat, is isPartOf only CerradoSensuLato.
+WetSeason is Class.
+WetSeason SubClassOf TropicalSeason.
+WetSeason DisjointWith DrySeason.
+WoodLayer is Class.
+VegetationCover, is www.fao.org/aims/aos/cwr.#.
+VegetationCover, is hasComponent some Shrub,.
+VegetationCover, is hasComponent some Tree,.
+VegetationCover, is isPartOf only Savanna,.
+VegetationCover, is isPartOf only TropicalSeasonalForest.
+VegetationCover, DisjointWith GroundLayer.
+shannonsDiversityIndex is Class.
+shannonsDiversityIndex SubClassOf SpeciesDiversity.
+ENVO 00000428 is Class.
+ENVO 00000428 SubClassOf BiologicalOrganizationLevel.
+ENVO 00000446 is Class.
+TerrestrialHabitat is www.fao.org/aims/aos/cwr.#.
+TerrestrialHabitat SubClassOf ENVO 00000428,.
+Habitat is www.fao.org/aims/aos/cwr.#.
+ENVO 01000203 is Class.
+www.fao.org/aims/aos/cwr.# is Class.
+VascularPlant is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf BiologicalOrganizationLevel.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf BiologicalOrganizationLevel,.
+www.fao.org/aims/aos/cwr.# SubClassOf isCharacterizedBy some ComunityDynamics,.
+CommunityStructure, is isCharacterizedBy some www.fao.org/aims/aos/cwr.#.
+Diversity, is isCharacterizedBy some www.fao.org/aims/aos/cwr.#.
+Diversity, is isPartOf some ENVO 00000428,.
+Ecosystem is isPartOf some www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+EcologicalPhenomena, is www.fao.org/aims/aos/cwr.#.
+PlantCommunity is isCharacteristicOf some www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+EcologicalPhenomena is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf BiologicalOrganizationLevel,.
+www.fao.org/aims/aos/cwr.# SubClassOf isPartOf some Ecoregion,.
+www.fao.org/aims/aos/cwr.# SubClassOf isPartOf some ENVO 00000428.
+www.fao.org/aims/aos/cwr.# is Class.
+Organism is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+Ecosystem, is www.fao.org/aims/aos/cwr.#.
+isPartOf only www.fao.org/aims/aos/cwr.# is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf BiologicalOrganizationLevel,.
+Population is isPartOf some www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf Environment.
+www.fao.org/aims/aos/cwr.# is Class.
+Eukaryote is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+Community is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf BiologicalOrganizationLevel,.
+www.fao.org/aims/aos/cwr.# SubClassOf isPartOf some Metapopulation,.
+www.fao.org/aims/aos/cwr.# SubClassOf isPartOf some Species,.
+Community is isPartOf some www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is equivalent to Density.
+www.fao.org/aims/aos/cwr.# SubClassOf PopulationDynamics,.
+CommunityStructure is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is equivalent to NumberOfIndividuos.
+www.fao.org/aims/aos/cwr.# SubClassOf PopulationDynamics,.
+CommunityStructure is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+Population is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is equivalent to Savanna.
+www.fao.org/aims/aos/cwr.# SubClassOf ENVO 00000446,.
+TerrestrialHabitat is www.fao.org/aims/aos/cwr.#.
+Woodland is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is equivalent to Season.
+www.fao.org/aims/aos/cwr.# SubClassOf Environment,.
+Periodicity is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+Sample is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is equivalent to ENVO 00000446.
+www.fao.org/aims/aos/cwr.# SubClassOf ENVO 00000428,.
+Habitat is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+Plant is www.fao.org/aims/aos/cwr.#.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# is Class.
+www.fao.org/aims/aos/cwr.# SubClassOf ENVO 00000446,.
+TerrestrialHabitat is www.fao.org/aims/aos/cwr.#.
+SavannaHabitat is www.fao.org/aims/aos/cwr.#.
+www.w3.org/2002/07/# is Class.
+Acosmium dasycarpum is Individual.
+Acosmium dasycarpum Types Cerradao,.
+Acosmium dasycarpum Types Savanna,.
+Acosmium dasycarpum Types Species,.
+Acosmium dasycarpum Types WoodLayer.
+Aegiphila lhotzkiana is Individual.
+Aegiphila lhotzkiana Types CerradoSensuLato,.
+Aegiphila lhotzkiana Types Species,.
+Aegiphila lhotzkiana Types WoodLayer.
+Anacardium humile is Individual.
+Anacardium humile Types Species,.
+Anacardium humile Types WoodLayer.
+Annona crassiflora is Individual.
+Annona crassiflora Types Savanna,.
+Annona crassiflora Types Species,.
+Annona crassiflora Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Annona tomentosa is Individual.
+Annona tomentosa Types Species,.
+Annona tomentosa Types WoodLayer.
+Aspidosperma macrocarpon is Individual.
+Aspidosperma macrocarpon Types Savanna,.
+Aspidosperma macrocarpon Types Species,.
+Aspidosperma macrocarpon Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Aspidosperma tomentosum is Individual.
+Aspidosperma tomentosum Types CerradoSensuStricto,.
+Aspidosperma tomentosum Types Species,.
+Aspidosperma tomentosum Types TropicalSeasonalForest.
+Blepharocalyx suaveolens is Individual.
+Blepharocalyx suaveolens Types Species,.
+Blepharocalyx suaveolens Types WoodLayer.
+Byrsonima coccolobifolia is Individual.
+Byrsonima coccolobifolia Types Savanna,.
+Byrsonima coccolobifolia Types Species,.
+Byrsonima coccolobifolia Types WoodLayer.
+Byrsonima crassa is Individual.
+Byrsonima crassa Types CerradoSensuStricto,.
+Byrsonima crassa Types Species,.
+Byrsonima crassa Types WoodLayer.
+Byrsonima verbascifolia is Individual.
+Byrsonima verbascifolia Types CerradoSensuStricto,.
+Byrsonima verbascifolia Types Species,.
+Byrsonima verbascifolia Types WoodLayer.
+Cardiopetalum calophyllum is Individual.
+Cardiopetalum calophyllum Types CampoSujo,.
+Cardiopetalum calophyllum Types Cerradao,.
+Cardiopetalum calophyllum Types Species,.
+Cardiopetalum calophyllum Types WoodLayer.
+Caryocar brasiliense is Individual.
+Caryocar brasiliense Types Cerradao,.
+Caryocar brasiliense Types CerradoSensuStricto,.
+Caryocar brasiliense Types Species,.
+Caryocar brasiliense Types WoodLayer.
+Casearia sylvestris is Individual.
+Casearia sylvestris Types Species,.
+Casearia sylvestris Types WoodLayer.
+Connarus suberosus is Individual.
+Connarus suberosus Types Savanna,.
+Connarus suberosus Types Species,.
+Connarus suberosus Types WoodLayer.
+Couepia grandiflora is Individual.
+Couepia grandiflora Types Savanna,.
+Couepia grandiflora Types Species,.
+Couepia grandiflora Types WoodLayer.
+Cybianthus detergens is Individual.
+Cybianthus detergens Types Species,.
+Cybianthus detergens Types WoodLayer.
+Cybistax antisyphilitica is Individual.
+Cybistax antisyphilitica Types Savanna,.
+Cybistax antisyphilitica Types Species,.
+Cybistax antisyphilitica Types WoodLayer.
+Dalbergia miscolobium is Individual.
+Dalbergia miscolobium Types Savanna,.
+Dalbergia miscolobium Types Species,.
+Dalbergia miscolobium Types TropicalSeasonalForest,.
+Dalbergia miscolobium Types WoodLayer.
+Davilla elliptica is Individual.
+Davilla elliptica Types Savanna,.
+Davilla elliptica Types Species,.
+Davilla elliptica Types WoodLayer.
+Dendropanax cuneatus is Individual.
+Dendropanax cuneatus Types Cerrado,.
+Dendropanax cuneatus Types Species,.
+Dendropanax cuneatus Types WoodLayer.
+Dimorphandra mollis is Individual.
+Dimorphandra mollis Types Savanna,.
+Dimorphandra mollis Types Species,.
+Dimorphandra mollis Types WoodLayer.
+Diospyros burchellii is Individual.
+Diospyros burchellii Types CerradoSensuStricto,.
+Diospyros burchellii Types Species,.
+Diospyros burchellii Types WoodLayer.
+Enterolobium gummiferum is Individual.
+Enterolobium gummiferum Types CerradoSensuStricto,.
+Enterolobium gummiferum Types Species,.
+Enterolobium gummiferum Types WoodLayer.
+Eremanthus glomerulatus is Individual.
+Eremanthus glomerulatus Types CerradoSensuStricto,.
+Eremanthus glomerulatus Types Species,.
+Eremanthus glomerulatus Types WoodLayer.
+Eremanthus goyazensis is Individual.
+Eremanthus goyazensis Types CerradoSensuStricto,.
+Eremanthus goyazensis Types Species,.
+Eremanthus goyazensis Types WoodLayer.
+Eriotheca pubescens is Individual.
+Eriotheca pubescens Types CerradoSensuStricto,.
+Eriotheca pubescens Types Species,.
+Eriotheca pubescens Types WoodLayer.
+Erythroxylum deciduum is Individual.
+Erythroxylum deciduum Types CerradoSensuStricto,.
+Erythroxylum deciduum Types Species,.
+Erythroxylum deciduum Types WoodLayer.
+Erythroxylum suberosum is Individual.
+Erythroxylum suberosum Types CerradoSensuStricto,.
+Erythroxylum suberosum Types Species,.
+Erythroxylum suberosum Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Erythroxylum tortuosum is Individual.
+Erythroxylum tortuosum Types CerradoSensuStricto,.
+Erythroxylum tortuosum Types Species,.
+Erythroxylum tortuosum Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Guapira noxia is Individual.
+Guapira noxia Types CerradoSensuStricto,.
+Guapira noxia Types Species,.
+Guapira noxia Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Guapira salicifolia is Individual.
+Guapira salicifolia Types CerradoSensuStricto,.
+Guapira salicifolia Types Species,.
+Guapira salicifolia Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Hancornia pubescens is Individual.
+Hancornia pubescens Types Cerradao,.
+Hancornia pubescens Types CerradoSensuStricto,.
+Hancornia pubescens Types Species,.
+Hancornia pubescens Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Hancornia speciosa is Individual.
+Hancornia speciosa Types Cerradao,.
+Hancornia speciosa Types CerradoSensuStricto,.
+Hancornia speciosa Types Species,.
+Hancornia speciosa Types WoodLayer.
+Heteropterys byrsonimifolia is Individual.
+Heteropterys byrsonimifolia Types CerradoSensuStricto,.
+Heteropterys byrsonimifolia Types Species,.
+Heteropterys byrsonimifolia Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Hirtella ciliata is Individual.
+Hirtella ciliata Types Species,.
+Hirtella ciliata Types WoodLayer.
+Hymenaea stigonocarpa is Individual.
+Hymenaea stigonocarpa Types Species,.
+Hymenaea stigonocarpa Types WoodLayer.
+Jacaranda decurrens is Individual.
+Jacaranda decurrens Types Species,.
+Jacaranda decurrens Types WoodLayer.
+Kielmeyera coriacea is Individual.
+Kielmeyera coriacea Types CerradoSensuStricto,.
+Kielmeyera coriacea Types Species,.
+Kielmeyera coriacea Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Kielmeyera speciosa is Individual.
+Kielmeyera speciosa Types CerradoSensuStricto,.
+Kielmeyera speciosa Types Species,.
+Kielmeyera speciosa Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Kielmeyera variabilis is Individual.
+Kielmeyera variabilis Types Species,.
+Kielmeyera variabilis Types WoodLayer.
+Lafoensia pacari is Individual.
+Lafoensia pacari Types CerradoSensuStricto,.
+Lafoensia pacari Types Species,.
+Lafoensia pacari Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Mauritia flexuosa is Individual.
+Mauritia flexuosa Types Savanna,.
+Mauritia flexuosa Types Species,.
+Mauritia flexuosa Types TropicalSeasonalForest,.
+Mauritia flexuosa Types WoodLayer.
+Miconia albicans is Individual.
+Miconia albicans Types CerradoSensuStricto,.
+Miconia albicans Types Species,.
+Miconia albicans Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Miconia fallax is Individual.
+Miconia fallax Types CerradoSensuStricto,.
+Miconia fallax Types Species,.
+Miconia fallax Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Miconia ferruginata is Individual.
+Miconia ferruginata Types CerradoSensuStricto,.
+Miconia ferruginata Types Species,.
+Miconia ferruginata Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Miconia pohliana is Individual.
+Miconia pohliana Types CerradoSensuStricto,.
+Miconia pohliana Types Species,.
+Miconia pohliana Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Mimosa claussenii is Individual.
+Mimosa claussenii Types CerradoSensuStricto,.
+Mimosa claussenii Types Species,.
+Mimosa claussenii Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Myracrodruon urundeuva is Individual.
+Myracrodruon urundeuva Types CerradoSensuStricto,.
+Myracrodruon urundeuva Types Species,.
+Myracrodruon urundeuva Types TropicalSeasonalForest,.
+Myracrodruon urundeuva Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Myrsine guianensis is Individual.
+Myrsine guianensis Types CerradoSensuStricto,.
+Myrsine guianensis Types Species,.
+Myrsine guianensis Types TropicalSeasonalForest,.
+Myrsine guianensis Types WoodLayer.
+Neea theifera is Individual.
+Neea theifera Types CerradoSensuStricto,.
+Neea theifera Types Species,.
+Neea theifera Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Ouratea hexasperma is Individual.
+Ouratea hexasperma Types Cerradao,.
+Ouratea hexasperma Types Savanna,.
+Ouratea hexasperma Types Species,.
+Ouratea hexasperma Types WoodLayer.
+Palicourea rigida is Individual.
+Palicourea rigida Types Savanna,.
+Palicourea rigida Types Species,.
+Palicourea rigida Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Periandra mediterranea is Individual.
+Periandra mediterranea Types Species,.
+Periandra mediterranea Types WoodLayer.
+Piptocarpha rotundifolia is Individual.
+Piptocarpha rotundifolia Types CerradoSensuStricto,.
+Piptocarpha rotundifolia Types Species,.
+Piptocarpha rotundifolia Types WoodLayer,.
+Angiosperm is www.fao.org/aims/aos/cwr.#.
+Pisonia graciliflora is Individual.
+Pisonia graciliflora Types Cerradao,.
+Pisonia graciliflora Types CerradoSensuStricto,.
+Pisonia graciliflora Types Species,.
+Pisonia graciliflora Types WoodLayer.
+Pisonia noxia is Individual.
+Pisonia noxia Types CerradoSensuStricto,.
+Pisonia noxia Types Species,.
+Pisonia noxia Types WoodLayer.
+Plenckia populnea is Individual.
+Plenckia populnea Types CerradoSensuStricto,.
+Plenckia populnea Types Species,.
+Plenckia populnea Types WoodLayer.
+Pouteria ramiflora is Individual.
+Pouteria ramiflora Types CerradoSensuStricto,.
+Pouteria ramiflora Types Species,.
+Pouteria ramiflora Types WoodLayer.
+Pterodon pubescens is Individual.
+Pterodon pubescens Types Species,.
+Pterodon pubescens Types WoodLayer.
+Qualea grandiflora is Individual.
+Qualea grandiflora Types CerradoSensuStricto,.
+Qualea grandiflora Types Species,.
+Qualea grandiflora Types WoodLayer.
+Qualea multiflora is Individual.
+Qualea multiflora Types CerradoSensuStricto,.
+Qualea multiflora Types Species,.
+Qualea multiflora Types WoodLayer.
+Qualea parviflora is Individual.
+Qualea parviflora Types CerradoSensuStricto,.
+Qualea parviflora Types Species,.
+Qualea parviflora Types WoodLayer.
+Roupala montana is Individual.
+Roupala montana Types CerradoSensuStricto,.
+Roupala montana Types Species,.
+Roupala montana Types WoodLayer.
+Rourea induta is Individual.
+Rourea induta Types CerradoSensuStricto,.
+Rourea induta Types Species,.
+Rourea induta Types WoodLayer.
+Salacia crassifolia is Individual.
+Salacia crassifolia Types CerradoSensuStricto,.
+Salacia crassifolia Types Species,.
+Salacia crassifolia Types WoodLayer.
+Schefflera  macrocarpa is Individual.
+Schefflera  macrocarpa Types Cerradao,.
+Schefflera  macrocarpa Types CerradoSensuStricto,.
+Schefflera  macrocarpa Types Species,.
+Schefflera  macrocarpa Types WoodLayer.
+Sclerolobium paniculatum is Individual.
+Sclerolobium paniculatum Types CerradoSensuStricto,.
+Sclerolobium paniculatum Types Species,.
+Sclerolobium paniculatum Types WoodLayer.
+Spiranthera odoratissima is Individual.
+Spiranthera odoratissima Types Species,.
+Spiranthera odoratissima Types WoodLayer.
+Stryphnodendron adstringens is Individual.
+Stryphnodendron adstringens Types CerradoSensuStricto,.
+Stryphnodendron adstringens Types Species,.
+Stryphnodendron adstringens Types WoodLayer.
+Styrax ferrugineus is Individual.
+Styrax ferrugineus Types Savanna,.
+Styrax ferrugineus Types Species,.
+Styrax ferrugineus Types WoodLayer.
+Syagrus comosa is Individual.
+Syagrus comosa Types Savanna,.
+Syagrus comosa Types Species,.
+Syagrus comosa Types WoodLayer.
+Syagrus flexuosa is Individual.
+Syagrus flexuosa Types Savanna,.
+Syagrus flexuosa Types Species,.
+Syagrus flexuosa Types WoodLayer.
+Syagrus petraea is Individual.
+Syagrus petraea Types Species,.
+Syagrus petraea Types WoodLayer.
+Symplocos rhamnifolia is Individual.
+Symplocos rhamnifolia Types Species,.
+Symplocos rhamnifolia Types WoodLayer.
+Tabebuia ochracea is Individual.
+Tabebuia ochracea Types Species,.
+Tabebuia ochracea Types WoodLayer.
+Tocoyena formosa is Individual.
+Tocoyena formosa Types Species,.
+Tocoyena formosa Types WoodLayer.
+Vatairea macrocarpa is Individual.
+Vatairea macrocarpa Types Species,.
+Vatairea macrocarpa Types WoodLayer.
+Vellozia squamata is Individual.
+Vellozia squamata Types Species,.
+Vellozia squamata Types WoodLayer.
+Vochysia elliptica is Individual.
+Vochysia elliptica Types Species,.
+Vochysia elliptica Types WoodLayer.
+Vochysia thyrsoidea is Individual.
+Vochysia thyrsoidea Types Species,.
+Vochysia thyrsoidea Types WoodLayer.
+m.0269bcv is Individual.
+m.0269bcv Types WoodLayer.
+m.02r5m6g is Individual.
+m.02r5m6g Types Species,.
+m.02r5m6g Types WoodLayer.

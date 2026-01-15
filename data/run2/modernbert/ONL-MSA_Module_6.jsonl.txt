@@ -1,0 +1,845 @@
+has-for-atomic-part is ObjectProperty.
+has-for-part is ObjectProperty.
+is-a-part-of-during is ObjectProperty.
+is-the-quality-location-of-during is ObjectProperty.
+has-for-maximum-scale-item is ObjectProperty.
+has-for-minimum-scale-item is ObjectProperty.
+is-the-scale-of is ObjectProperty.
+affects-at is ObjectProperty.
+has-for-agent-at is ObjectProperty.
+has-for-date is ObjectProperty.
+has-for-magnitude is ObjectProperty.
+has-for-magnitude Domain scalar-quale.
+has-for-magnitude Range number.
+has-for-unit is ObjectProperty.
+has-for-unit Domain scalar-quale.
+has-for-unit Range unit-of-measure.
+is-a-version-number-of is ObjectProperty.
+is-a-version-number-of Domain version-number.
+is-a-version-number-of Range artefact.
+is-an-atomic-part-of is ObjectProperty.
+is-equal-to is ObjectProperty.
+is-equal-to Domain number.
+is-equal-to Range number.
+is-greater-than is ObjectProperty.
+is-greater-than Domain number.
+is-greater-than Range number.
+is-greater-than InverseOf is-less-than.
+is-greater-than-or-equal-to is ObjectProperty.
+is-greater-than-or-equal-to Domain number.
+is-greater-than-or-equal-to Range number.
+is-greater-than-or-equal-to InverseOf is-less-than-or-equal-to.
+is-less-than is ObjectProperty.
+is-less-than Domain number.
+is-less-than Range number.
+is-less-than InverseOf is-greater-than.
+is-less-than-or-equal-to is ObjectProperty.
+is-less-than-or-equal-to Domain number.
+is-less-than-or-equal-to Range number.
+is-less-than-or-equal-to InverseOf is-greater-than-or-equal-to.
+is-supervised-by-at is ObjectProperty.
+abstract is Class.
+abstract SubClassOf particular,.
+abstract SubClassOf has-for-part only abstract.
+endurant is Class.
+particular is Class.
+perdurant is Class.
+physical-region is Class.
+quale is Class.
+quality is Class.
+region is Class.
+region SubClassOf abstract.
+space-region is Class.
+space-region SubClassOf physical-region,.
+space-region SubClassOf has-for-part only space-region,.
+space-region SubClassOf is-the-quality-location-of-during only spatial-location.
+spatial-location is Class.
+temporal-region is Class.
+time-interval is Class.
+time-interval SubClassOf temporal-region.
+human is Class.
+coded-score is Class.
+coded-score SubClassOf scale-item.
+numerical-score is Class.
+qualitative-scale-item is Class.
+qualitative-scale-item SubClassOf scale-item.
+quantitative-scale-item is Class.
+quantitative-scale-item SubClassOf scale-item.
+scale is Class.
+scale-item is Class.
+scale-item SubClassOf quale,.
+scale-item SubClassOf is-an-atomic-part-of exactly 1 scale.
+score-with-unit-of-measure is Class.
+score-with-unit-of-measure SubClassOf numerical-score,.
+score-with-unit-of-measure SubClassOf scalar-quale.
+score-without-unit-of-measure is Class.
+score-without-unit-of-measure SubClassOf number.
+acronym is Class.
+acronym SubClassOf name.
+artefact is Class.
+article is Class.
+article SubClassOf textual-discourse,.
+article SubClassOf is-a-part-of-during some publication.
+asking is Class.
+complex-number is Class.
+complex-number SubClassOf number.
+conceptual-action is Class.
+date is Class.
+deliberate-producing is Class.
+exacting is Class.
+exacting SubClassOf asking.
+imaginary-number is Class.
+imaginary-number SubClassOf number.
+manufacturing is Class.
+manufacturing SubClassOf deliberate-producing.
+name is Class.
+noun is Class.
+number is Class.
+number SubClassOf quale.
+publication is Class.
+real-number is Class.
+real-number SubClassOf number.
+requesting is Class.
+requesting SubClassOf asking.
+scalar-quale is Class.
+scalar-quale SubClassOf quale,.
+scalar-quale SubClassOf has-for-magnitude some number,.
+scalar-quale SubClassOf has-for-unit some unit-of-measure.
+scientific-article is Class.
+scientific-article SubClassOf article.
+successful-action is Class.
+successfully-manufacturing is Class.
+successfully-manufacturing SubClassOf manufacturing,.
+successfully-manufacturing SubClassOf successful-action,.
+successfully-manufacturing SubClassOf successfully-producing.
+successfully-producing is Class.
+supervisor is Class.
+textual-discourse is Class.
+unit-of-measure is Class.
+unit-of-measure SubClassOf abstract.
+version-number is Class.
+version-number SubClassOf noun,.
+version-number SubClassOf is-a-version-number-of some artefact.
+BDI-II-10v1 is Class.
+BDI-II-11v1 is Class.
+BDI-II-12v1 is Class.
+BDI-II-13v1 is Class.
+BDI-II-14v1 is Class.
+BDI-II-15v1 is Class.
+BDI-II-16v1 is Class.
+BDI-II-17v1 is Class.
+BDI-II-18v1 is Class.
+BDI-II-19v1 is Class.
+BDI-II-1v1 is Class.
+BDI-II-20v1 is Class.
+BDI-II-21v1 is Class.
+BDI-II-2v1 is Class.
+BDI-II-3v1 is Class.
+BDI-II-4v1 is Class.
+BDI-II-5v1 is Class.
+BDI-II-6v1 is Class.
+BDI-II-7v1 is Class.
+BDI-II-8v1 is Class.
+BDI-II-9v1 is Class.
+BDI-IIv1 is Class.
+CDR-CA-v1 is Class.
+CDR-HH-v1 is Class.
+CDR-J-v1 is Class.
+CDR-M-v1 is Class.
+CDR-O-v1 is Class.
+CDR-PC-v1 is Class.
+CDR-SoBv1 is Class.
+CFT-Cv2 is Class.
+CFT-Mv2 is Class.
+EDSS-1v1 is Class.
+EDSS-2v1 is Class.
+EDSS-3v1 is Class.
+EDSS-4v1 is Class.
+EDSS-5v1 is Class.
+EDSS-6v1 is Class.
+EDSS-7v1 is Class.
+EDSSv1 is Class.
+scale-BDI-II-10v1 is Class.
+scale-BDI-II-10v1 SubClassOf scale,.
+scale-BDI-II-10v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-10v1-0,.
+scale-BDI-II-10v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-10v1-1,.
+scale-BDI-II-10v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-10v1-2,.
+scale-BDI-II-10v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-10v1-3,.
+scale-BDI-II-10v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-10v1-3,.
+scale-BDI-II-10v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-10v1-0,.
+scale-BDI-II-10v1 SubClassOf is-the-scale-of exactly 1 BDI-II-10v1.
+scale-BDI-II-11v1 is Class.
+scale-BDI-II-11v1 SubClassOf scale,.
+scale-BDI-II-11v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-11v1-0,.
+scale-BDI-II-11v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-11v1-1,.
+scale-BDI-II-11v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-11v1-2,.
+scale-BDI-II-11v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-11v1-3,.
+scale-BDI-II-11v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-11v1-3,.
+scale-BDI-II-11v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-11v1-0,.
+scale-BDI-II-11v1 SubClassOf is-the-scale-of exactly 1 BDI-II-11v1.
+scale-BDI-II-12v1 is Class.
+scale-BDI-II-12v1 SubClassOf scale,.
+scale-BDI-II-12v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-12v1-0,.
+scale-BDI-II-12v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-12v1-1,.
+scale-BDI-II-12v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-12v1-2,.
+scale-BDI-II-12v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-12v1-3,.
+scale-BDI-II-12v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-12v1-3,.
+scale-BDI-II-12v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-12v1-0,.
+scale-BDI-II-12v1 SubClassOf is-the-scale-of exactly 1 BDI-II-12v1.
+scale-BDI-II-13v1 is Class.
+scale-BDI-II-13v1 SubClassOf scale,.
+scale-BDI-II-13v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-13v1-0,.
+scale-BDI-II-13v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-13v1-1,.
+scale-BDI-II-13v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-13v1-2,.
+scale-BDI-II-13v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-13v1-3,.
+scale-BDI-II-13v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-13v1-3,.
+scale-BDI-II-13v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-13v1-0,.
+scale-BDI-II-13v1 SubClassOf is-the-scale-of exactly 1 BDI-II-13v1.
+scale-BDI-II-14v1 is Class.
+scale-BDI-II-14v1 SubClassOf scale,.
+scale-BDI-II-14v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-14v1-0,.
+scale-BDI-II-14v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-14v1-1,.
+scale-BDI-II-14v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-14v1-2,.
+scale-BDI-II-14v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-14v1-3,.
+scale-BDI-II-14v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-14v1-3,.
+scale-BDI-II-14v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-14v1-0,.
+scale-BDI-II-14v1 SubClassOf is-the-scale-of exactly 1 BDI-II-14v1.
+scale-BDI-II-15v1 is Class.
+scale-BDI-II-15v1 SubClassOf scale,.
+scale-BDI-II-15v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-15v1-0,.
+scale-BDI-II-15v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-15v1-1,.
+scale-BDI-II-15v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-15v1-2,.
+scale-BDI-II-15v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-15v1-3,.
+scale-BDI-II-15v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-15v1-3,.
+scale-BDI-II-15v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-15v1-0,.
+scale-BDI-II-15v1 SubClassOf is-the-scale-of exactly 1 BDI-II-15v1.
+scale-BDI-II-16v1 is Class.
+scale-BDI-II-16v1 SubClassOf scale,.
+scale-BDI-II-16v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-16v1-0,.
+scale-BDI-II-16v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-16v1-1a,.
+scale-BDI-II-16v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-16v1-1b,.
+scale-BDI-II-16v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-16v1-2a,.
+scale-BDI-II-16v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-16v1-2b,.
+scale-BDI-II-16v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-16v1-3a,.
+scale-BDI-II-16v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-16v1-3b,.
+scale-BDI-II-16v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-16v1-3b,.
+scale-BDI-II-16v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-16v1-0,.
+scale-BDI-II-16v1 SubClassOf is-the-scale-of exactly 1 BDI-II-16v1.
+scale-BDI-II-17v1 is Class.
+scale-BDI-II-17v1 SubClassOf scale,.
+scale-BDI-II-17v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-17v1-0,.
+scale-BDI-II-17v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-17v1-1,.
+scale-BDI-II-17v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-17v1-2,.
+scale-BDI-II-17v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-17v1-3,.
+scale-BDI-II-17v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-17v1-3,.
+scale-BDI-II-17v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-17v1-0,.
+scale-BDI-II-17v1 SubClassOf is-the-scale-of exactly 1 BDI-II-17v1.
+scale-BDI-II-18v1 is Class.
+scale-BDI-II-18v1 SubClassOf scale,.
+scale-BDI-II-18v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-18v1-0,.
+scale-BDI-II-18v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-18v1-1a,.
+scale-BDI-II-18v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-18v1-1b,.
+scale-BDI-II-18v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-18v1-2a,.
+scale-BDI-II-18v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-18v1-2b,.
+scale-BDI-II-18v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-18v1-3a,.
+scale-BDI-II-18v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-18v1-3b,.
+scale-BDI-II-18v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-18v1-3b,.
+scale-BDI-II-18v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-18v1-0,.
+scale-BDI-II-18v1 SubClassOf is-the-scale-of exactly 1 BDI-II-18v1.
+scale-BDI-II-19v1 is Class.
+scale-BDI-II-19v1 SubClassOf scale,.
+scale-BDI-II-19v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-19v1-0,.
+scale-BDI-II-19v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-19v1-1,.
+scale-BDI-II-19v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-19v1-2,.
+scale-BDI-II-19v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-19v1-3,.
+scale-BDI-II-19v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-19v1-3,.
+scale-BDI-II-19v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-19v1-0,.
+scale-BDI-II-19v1 SubClassOf is-the-scale-of exactly 1 BDI-II-19v1.
+scale-BDI-II-1v1 is Class.
+scale-BDI-II-1v1 SubClassOf scale,.
+scale-BDI-II-1v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-1v1-0,.
+scale-BDI-II-1v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-1v1-1,.
+scale-BDI-II-1v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-1v1-2,.
+scale-BDI-II-1v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-1v1-3,.
+scale-BDI-II-1v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-1v1-3,.
+scale-BDI-II-1v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-1v1-0,.
+scale-BDI-II-1v1 SubClassOf is-the-scale-of exactly 1 BDI-II-1v1.
+scale-BDI-II-20v1 is Class.
+scale-BDI-II-20v1 SubClassOf scale,.
+scale-BDI-II-20v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-20v1-0,.
+scale-BDI-II-20v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-20v1-1,.
+scale-BDI-II-20v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-20v1-2,.
+scale-BDI-II-20v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-20v1-3,.
+scale-BDI-II-20v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-20v1-3,.
+scale-BDI-II-20v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-20v1-0,.
+scale-BDI-II-20v1 SubClassOf is-the-scale-of exactly 1 BDI-II-20v1.
+scale-BDI-II-21v1 is Class.
+scale-BDI-II-21v1 SubClassOf scale,.
+scale-BDI-II-21v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-21v1-0,.
+scale-BDI-II-21v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-21v1-1,.
+scale-BDI-II-21v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-21v1-2,.
+scale-BDI-II-21v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-21v1-3,.
+scale-BDI-II-21v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-21v1-3,.
+scale-BDI-II-21v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-21v1-0,.
+scale-BDI-II-21v1 SubClassOf is-the-scale-of exactly 1 BDI-II-21v1.
+scale-BDI-II-2v1 is Class.
+scale-BDI-II-2v1 SubClassOf scale,.
+scale-BDI-II-2v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-2v1-0,.
+scale-BDI-II-2v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-2v1-1,.
+scale-BDI-II-2v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-2v1-2,.
+scale-BDI-II-2v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-2v1-3,.
+scale-BDI-II-2v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-2v1-3,.
+scale-BDI-II-2v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-2v1-0,.
+scale-BDI-II-2v1 SubClassOf is-the-scale-of exactly 1 BDI-II-2v1.
+scale-BDI-II-3v1 is Class.
+scale-BDI-II-3v1 SubClassOf scale,.
+scale-BDI-II-3v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-3v1-0,.
+scale-BDI-II-3v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-3v1-1,.
+scale-BDI-II-3v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-3v1-2,.
+scale-BDI-II-3v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-3v1-3,.
+scale-BDI-II-3v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-3v1-3,.
+scale-BDI-II-3v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-3v1-0,.
+scale-BDI-II-3v1 SubClassOf is-the-scale-of exactly 1 BDI-II-3v1.
+scale-BDI-II-4v1 is Class.
+scale-BDI-II-4v1 SubClassOf scale,.
+scale-BDI-II-4v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-4v1-0,.
+scale-BDI-II-4v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-4v1-1,.
+scale-BDI-II-4v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-4v1-2,.
+scale-BDI-II-4v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-4v1-3,.
+scale-BDI-II-4v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-4v1-3,.
+scale-BDI-II-4v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-4v1-0,.
+scale-BDI-II-4v1 SubClassOf is-the-scale-of exactly 1 BDI-II-4v1.
+scale-BDI-II-5v1 is Class.
+scale-BDI-II-5v1 SubClassOf scale,.
+scale-BDI-II-5v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-5v1-0,.
+scale-BDI-II-5v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-5v1-1,.
+scale-BDI-II-5v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-5v1-2,.
+scale-BDI-II-5v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-5v1-3,.
+scale-BDI-II-5v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-5v1-3,.
+scale-BDI-II-5v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-5v1-0,.
+scale-BDI-II-5v1 SubClassOf is-the-scale-of exactly 1 BDI-II-5v1.
+scale-BDI-II-6v1 is Class.
+scale-BDI-II-6v1 SubClassOf scale,.
+scale-BDI-II-6v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-6v1-0,.
+scale-BDI-II-6v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-6v1-1,.
+scale-BDI-II-6v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-6v1-2,.
+scale-BDI-II-6v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-6v1-3,.
+scale-BDI-II-6v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-6v1-3,.
+scale-BDI-II-6v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-6v1-0,.
+scale-BDI-II-6v1 SubClassOf is-the-scale-of exactly 1 BDI-II-6v1.
+scale-BDI-II-7v1 is Class.
+scale-BDI-II-7v1 SubClassOf scale,.
+scale-BDI-II-7v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-7v1-0,.
+scale-BDI-II-7v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-7v1-1,.
+scale-BDI-II-7v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-7v1-2,.
+scale-BDI-II-7v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-7v1-3,.
+scale-BDI-II-7v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-7v1-3,.
+scale-BDI-II-7v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-7v1-0,.
+scale-BDI-II-7v1 SubClassOf is-the-scale-of exactly 1 BDI-II-7v1.
+scale-BDI-II-8v1 is Class.
+scale-BDI-II-8v1 SubClassOf scale,.
+scale-BDI-II-8v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-8v1-0,.
+scale-BDI-II-8v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-8v1-1,.
+scale-BDI-II-8v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-8v1-2,.
+scale-BDI-II-8v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-8v1-3,.
+scale-BDI-II-8v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-8v1-3,.
+scale-BDI-II-8v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-8v1-0,.
+scale-BDI-II-8v1 SubClassOf is-the-scale-of exactly 1 BDI-II-8v1.
+scale-BDI-II-9v1 is Class.
+scale-BDI-II-9v1 SubClassOf scale,.
+scale-BDI-II-9v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-9v1-0,.
+scale-BDI-II-9v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-9v1-1,.
+scale-BDI-II-9v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-9v1-2,.
+scale-BDI-II-9v1 SubClassOf has-for-atomic-part value scale-item-BDI-II-9v1-3,.
+scale-BDI-II-9v1 SubClassOf has-for-maximum-scale-item value scale-item-BDI-II-9v1-3,.
+scale-BDI-II-9v1 SubClassOf has-for-minimum-scale-item value scale-item-BDI-II-9v1-0,.
+scale-BDI-II-9v1 SubClassOf is-the-scale-of exactly 1 BDI-II-9v1.
+scale-BDI-IIv1 is Class.
+scale-BDI-IIv1 SubClassOf scale,.
+scale-BDI-IIv1 SubClassOf is-the-scale-of exactly 1 BDI-IIv1.
+scale-CDR-CA-v1 is Class.
+scale-CDR-CA-v1 SubClassOf scale,.
+scale-CDR-CA-v1 SubClassOf has-for-atomic-part value scale-item-CDR-CA-v1-Mild-1,.
+scale-CDR-CA-v1 SubClassOf has-for-atomic-part value scale-item-CDR-CA-v1-Moderate-2,.
+scale-CDR-CA-v1 SubClassOf has-for-atomic-part value scale-item-CDR-CA-v1-None-0,.
+scale-CDR-CA-v1 SubClassOf has-for-atomic-part value scale-item-CDR-CA-v1-Questionable-0.5,.
+scale-CDR-CA-v1 SubClassOf has-for-atomic-part value scale-item-CDR-CA-v1-Severe-3,.
+scale-CDR-CA-v1 SubClassOf has-for-maximum-scale-item value scale-item-CDR-CA-v1-Severe-3,.
+scale-CDR-CA-v1 SubClassOf has-for-minimum-scale-item value scale-item-CDR-CA-v1-None-0,.
+scale-CDR-CA-v1 SubClassOf is-the-scale-of exactly 1 CDR-CA-v1.
+scale-CDR-HH-v1 is Class.
+scale-CDR-HH-v1 SubClassOf scale,.
+scale-CDR-HH-v1 SubClassOf has-for-atomic-part value scale-item-CDR-HH-v1-Mild-1,.
+scale-CDR-HH-v1 SubClassOf has-for-atomic-part value scale-item-CDR-HH-v1-Moderate-2,.
+scale-CDR-HH-v1 SubClassOf has-for-atomic-part value scale-item-CDR-HH-v1-None-0,.
+scale-CDR-HH-v1 SubClassOf has-for-atomic-part value scale-item-CDR-HH-v1-Questionable-0.5,.
+scale-CDR-HH-v1 SubClassOf has-for-atomic-part value scale-item-CDR-HH-v1-Severe-3,.
+scale-CDR-HH-v1 SubClassOf has-for-maximum-scale-item value scale-item-CDR-HH-v1-Severe-3,.
+scale-CDR-HH-v1 SubClassOf has-for-minimum-scale-item value scale-item-CDR-HH-v1-None-0,.
+scale-CDR-HH-v1 SubClassOf is-the-scale-of exactly 1 CDR-HH-v1.
+scale-CDR-J-v1 is Class.
+scale-CDR-J-v1 SubClassOf scale,.
+scale-CDR-J-v1 SubClassOf has-for-atomic-part value scale-item-CDR-J-v1-Mild-1,.
+scale-CDR-J-v1 SubClassOf has-for-atomic-part value scale-item-CDR-J-v1-Moderate-2,.
+scale-CDR-J-v1 SubClassOf has-for-atomic-part value scale-item-CDR-J-v1-None-0,.
+scale-CDR-J-v1 SubClassOf has-for-atomic-part value scale-item-CDR-J-v1-Questionable-0.5,.
+scale-CDR-J-v1 SubClassOf has-for-atomic-part value scale-item-CDR-J-v1-Severe-3,.
+scale-CDR-J-v1 SubClassOf has-for-maximum-scale-item value scale-item-CDR-J-v1-Severe-3,.
+scale-CDR-J-v1 SubClassOf has-for-minimum-scale-item value scale-item-CDR-J-v1-None-0,.
+scale-CDR-J-v1 SubClassOf is-the-scale-of exactly 1 CDR-J-v1.
+scale-CDR-M-v1 is Class.
+scale-CDR-M-v1 SubClassOf scale,.
+scale-CDR-M-v1 SubClassOf has-for-atomic-part value scale-item-CDR-M-v1-Mild-1,.
+scale-CDR-M-v1 SubClassOf has-for-atomic-part value scale-item-CDR-M-v1-Moderate-2,.
+scale-CDR-M-v1 SubClassOf has-for-atomic-part value scale-item-CDR-M-v1-None-0,.
+scale-CDR-M-v1 SubClassOf has-for-atomic-part value scale-item-CDR-M-v1-Questionable-0.5,.
+scale-CDR-M-v1 SubClassOf has-for-atomic-part value scale-item-CDR-M-v1-Severe-3,.
+scale-CDR-M-v1 SubClassOf has-for-maximum-scale-item value scale-item-CDR-M-v1-Severe-3,.
+scale-CDR-M-v1 SubClassOf has-for-minimum-scale-item value scale-item-CDR-M-v1-None-0,.
+scale-CDR-M-v1 SubClassOf is-the-scale-of exactly 1 CDR-M-v1.
+scale-CDR-O-v1 is Class.
+scale-CDR-O-v1 SubClassOf scale,.
+scale-CDR-O-v1 SubClassOf has-for-atomic-part value scale-item-CDR-O-v1-Mild-1,.
+scale-CDR-O-v1 SubClassOf has-for-atomic-part value scale-item-CDR-O-v1-Moderate-2,.
+scale-CDR-O-v1 SubClassOf has-for-atomic-part value scale-item-CDR-O-v1-None-0,.
+scale-CDR-O-v1 SubClassOf has-for-atomic-part value scale-item-CDR-O-v1-Questionable-0.5,.
+scale-CDR-O-v1 SubClassOf has-for-atomic-part value scale-item-CDR-O-v1-Severe-3,.
+scale-CDR-O-v1 SubClassOf has-for-maximum-scale-item value scale-item-CDR-O-v1-Severe-3,.
+scale-CDR-O-v1 SubClassOf has-for-minimum-scale-item value scale-item-CDR-O-v1-None-0,.
+scale-CDR-O-v1 SubClassOf is-the-scale-of exactly 1 CDR-O-v1.
+scale-CDR-PC-v1 is Class.
+scale-CDR-PC-v1 SubClassOf scale,.
+scale-CDR-PC-v1 SubClassOf has-for-atomic-part value scale-item-CDR-PC-v1-Mild-1,.
+scale-CDR-PC-v1 SubClassOf has-for-atomic-part value scale-item-CDR-PC-v1-Moderate-2,.
+scale-CDR-PC-v1 SubClassOf has-for-atomic-part value scale-item-CDR-PC-v1-None-0,.
+scale-CDR-PC-v1 SubClassOf has-for-atomic-part value scale-item-CDR-PC-v1-Questionable-0.5,.
+scale-CDR-PC-v1 SubClassOf has-for-atomic-part value scale-item-CDR-PC-v1-Severe-3,.
+scale-CDR-PC-v1 SubClassOf has-for-minimum-scale-item value scale-item-CDR-PC-v1-None-0,.
+scale-CDR-PC-v1 SubClassOf is-the-scale-of exactly 1 CDR-PC-v1.
+scale-CDR-SoBv1 is Class.
+scale-CDR-SoBv1 SubClassOf scale,.
+scale-CDR-SoBv1 SubClassOf has-for-atomic-part value scale-item-CDR-SoBv1-CDR-0,.
+scale-CDR-SoBv1 SubClassOf has-for-atomic-part value scale-item-CDR-SoBv1-CDR-0.5,.
+scale-CDR-SoBv1 SubClassOf has-for-atomic-part value scale-item-CDR-SoBv1-CDR-1,.
+scale-CDR-SoBv1 SubClassOf has-for-atomic-part value scale-item-CDR-SoBv1-CDR-2,.
+scale-CDR-SoBv1 SubClassOf has-for-atomic-part value scale-item-CDR-SoBv1-CDR-3,.
+scale-CDR-SoBv1 SubClassOf has-for-maximum-scale-item value scale-item-CDR-SoBv1-CDR-3,.
+scale-CDR-SoBv1 SubClassOf has-for-minimum-scale-item value scale-item-CDR-SoBv1-CDR-0,.
+scale-CDR-SoBv1 SubClassOf is-the-scale-of exactly 1 CDR-SoBv1.
+scale-CFT-Cv2 is Class.
+scale-CFT-Cv2 SubClassOf scale,.
+scale-CFT-Cv2 SubClassOf has-for-atomic-part value scale-item-CFT-Cv2-I,.
+scale-CFT-Cv2 SubClassOf has-for-atomic-part value scale-item-CFT-Cv2-II,.
+scale-CFT-Cv2 SubClassOf has-for-atomic-part value scale-item-CFT-Cv2-III,.
+scale-CFT-Cv2 SubClassOf has-for-atomic-part value scale-item-CFT-Cv2-IV,.
+scale-CFT-Cv2 SubClassOf has-for-atomic-part value scale-item-CFT-Cv2-V,.
+scale-CFT-Cv2 SubClassOf has-for-atomic-part value scale-item-CFT-Cv2-VI,.
+scale-CFT-Cv2 SubClassOf has-for-atomic-part value scale-item-CFT-Cv2-VII,.
+scale-CFT-Cv2 SubClassOf is-the-scale-of exactly 1 CFT-Cv2.
+scale-CFT-Mv2 is Class.
+scale-CFT-Mv2 SubClassOf scale,.
+scale-CFT-Mv2 SubClassOf has-for-atomic-part value scale-item-CFT-Mv2-I,.
+scale-CFT-Mv2 SubClassOf has-for-atomic-part value scale-item-CFT-Mv2-II,.
+scale-CFT-Mv2 SubClassOf has-for-atomic-part value scale-item-CFT-Mv2-III,.
+scale-CFT-Mv2 SubClassOf has-for-atomic-part value scale-item-CFT-Mv2-IV,.
+scale-CFT-Mv2 SubClassOf has-for-atomic-part value scale-item-CFT-Mv2-V,.
+scale-CFT-Mv2 SubClassOf has-for-atomic-part value scale-item-CFT-Mv2-VI,.
+scale-CFT-Mv2 SubClassOf has-for-atomic-part value scale-item-CFT-Mv2-VII,.
+scale-CFT-Mv2 SubClassOf is-the-scale-of exactly 1 CFT-Mv2.
+scale-EDSS-1v1 is Class.
+scale-EDSS-1v1 SubClassOf scale,.
+scale-EDSS-1v1 SubClassOf has-for-atomic-part value scale-item-EDSS-1v1-0,.
+scale-EDSS-1v1 SubClassOf has-for-atomic-part value scale-item-EDSS-1v1-1,.
+scale-EDSS-1v1 SubClassOf has-for-atomic-part value scale-item-EDSS-1v1-2,.
+scale-EDSS-1v1 SubClassOf has-for-atomic-part value scale-item-EDSS-1v1-3,.
+scale-EDSS-1v1 SubClassOf has-for-atomic-part value scale-item-EDSS-1v1-4,.
+scale-EDSS-1v1 SubClassOf has-for-atomic-part value scale-item-EDSS-1v1-5,.
+scale-EDSS-1v1 SubClassOf has-for-atomic-part value scale-item-EDSS-1v1-6,.
+scale-EDSS-1v1 SubClassOf has-for-maximum-scale-item value scale-item-EDSS-1v1-6,.
+scale-EDSS-1v1 SubClassOf has-for-minimum-scale-item value scale-item-EDSS-1v1-0,.
+scale-EDSS-1v1 SubClassOf is-the-scale-of exactly 1 EDSS-1v1.
+scale-EDSS-2v1 is Class.
+scale-EDSS-2v1 SubClassOf scale,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-0,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-1,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-2a,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-2b,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-3a,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-3b,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-3c,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-4a,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-4b,.
+scale-EDSS-2v1 SubClassOf has-for-atomic-part value scale-item-EDSS-2v1-5,.
+scale-EDSS-2v1 SubClassOf has-for-maximum-scale-item value scale-item-EDSS-2v1-5,.
+scale-EDSS-2v1 SubClassOf has-for-minimum-scale-item value scale-item-EDSS-2v1-0,.
+scale-EDSS-2v1 SubClassOf is-the-scale-of exactly 1 EDSS-2v1.
+scale-EDSS-3v1 is Class.
+scale-EDSS-3v1 SubClassOf scale,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-0,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-1,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-2,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-3a,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-3b,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-4a,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-4b,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-4c,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-5a,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-5b,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-5c,.
+scale-EDSS-3v1 SubClassOf has-for-atomic-part value scale-item-EDSS-3v1-6,.
+scale-EDSS-3v1 SubClassOf has-for-maximum-scale-item value scale-item-EDSS-3v1-6,.
+scale-EDSS-3v1 SubClassOf has-for-minimum-scale-item value scale-item-EDSS-3v1-0,.
+scale-EDSS-3v1 SubClassOf is-the-scale-of exactly 1 EDSS-3v1.
+scale-EDSS-4v1 is Class.
+scale-EDSS-4v1 SubClassOf scale,.
+scale-EDSS-4v1 SubClassOf has-for-atomic-part value scale-item-EDSS-4v1-0,.
+scale-EDSS-4v1 SubClassOf has-for-atomic-part value scale-item-EDSS-4v1-1,.
+scale-EDSS-4v1 SubClassOf has-for-atomic-part value scale-item-EDSS-4v1-2,.
+scale-EDSS-4v1 SubClassOf has-for-atomic-part value scale-item-EDSS-4v1-3a,.
+scale-EDSS-4v1 SubClassOf has-for-atomic-part value scale-item-EDSS-4v1-3b,.
+scale-EDSS-4v1 SubClassOf has-for-atomic-part value scale-item-EDSS-4v1-3c,.
+scale-EDSS-4v1 SubClassOf has-for-atomic-part value scale-item-EDSS-4v1-4,.
+scale-EDSS-4v1 SubClassOf has-for-atomic-part value scale-item-EDSS-4v1-5,.
+scale-EDSS-4v1 SubClassOf has-for-atomic-part value scale-item-EDSS-4v1-5b4a7b7208f5c486b4fa8a526466221baecb0931,.
+scale-EDSS-4v1 SubClassOf has-for-maximum-scale-item value scale-item-EDSS-4v1-5,.
+scale-EDSS-4v1 SubClassOf has-for-minimum-scale-item value scale-item-EDSS-4v1-0,.
+scale-EDSS-4v1 SubClassOf is-the-scale-of exactly 1 EDSS-4v1.
+scale-EDSS-5v1 is Class.
+scale-EDSS-5v1 SubClassOf scale,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-0,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-1,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-2a,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-2b,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-3a,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-3b,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-4a,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-4b,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-5a,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-5b,.
+scale-EDSS-5v1 SubClassOf has-for-atomic-part value scale-item-EDSS-5v1-6,.
+scale-EDSS-5v1 SubClassOf has-for-maximum-scale-item value scale-item-EDSS-5v1-6,.
+scale-EDSS-5v1 SubClassOf has-for-minimum-scale-item value scale-item-EDSS-5v1-0,.
+scale-EDSS-5v1 SubClassOf is-the-scale-of exactly 1 EDSS-5v1.
+scale-EDSS-6v1 is Class.
+scale-EDSS-6v1 SubClassOf scale,.
+scale-EDSS-6v1 SubClassOf has-for-atomic-part value scale-item-EDSS-6v1-0,.
+scale-EDSS-6v1 SubClassOf has-for-atomic-part value scale-item-EDSS-6v1-1,.
+scale-EDSS-6v1 SubClassOf has-for-atomic-part value scale-item-EDSS-6v1-2,.
+scale-EDSS-6v1 SubClassOf has-for-atomic-part value scale-item-EDSS-6v1-3,.
+scale-EDSS-6v1 SubClassOf has-for-atomic-part value scale-item-EDSS-6v1-4,.
+scale-EDSS-6v1 SubClassOf has-for-atomic-part value scale-item-EDSS-6v1-5,.
+scale-EDSS-6v1 SubClassOf has-for-atomic-part value scale-item-EDSS-6v1-6,.
+scale-EDSS-6v1 SubClassOf has-for-maximum-scale-item value scale-item-EDSS-6v1-6,.
+scale-EDSS-6v1 SubClassOf has-for-minimum-scale-item value scale-item-EDSS-6v1-0,.
+scale-EDSS-6v1 SubClassOf is-the-scale-of exactly 1 EDSS-6v1.
+scale-EDSS-7v1 is Class.
+scale-EDSS-7v1 SubClassOf scale,.
+scale-EDSS-7v1 SubClassOf has-for-atomic-part value scale-item-EDSS-7v1-0,.
+scale-EDSS-7v1 SubClassOf has-for-atomic-part value scale-item-EDSS-7v1-1a,.
+scale-EDSS-7v1 SubClassOf has-for-atomic-part value scale-item-EDSS-7v1-1b,.
+scale-EDSS-7v1 SubClassOf has-for-atomic-part value scale-item-EDSS-7v1-2,.
+scale-EDSS-7v1 SubClassOf has-for-atomic-part value scale-item-EDSS-7v1-3,.
+scale-EDSS-7v1 SubClassOf has-for-atomic-part value scale-item-EDSS-7v1-4,.
+scale-EDSS-7v1 SubClassOf has-for-atomic-part value scale-item-EDSS-7v1-5,.
+scale-EDSS-7v1 SubClassOf has-for-maximum-scale-item value scale-item-EDSS-7v1-5,.
+scale-EDSS-7v1 SubClassOf has-for-minimum-scale-item value scale-item-EDSS-7v1-0,.
+scale-EDSS-7v1 SubClassOf is-the-scale-of exactly 1 EDSS-7v1.
+scale-EDSSv1 is Class.
+scale-EDSSv1 SubClassOf scale,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-0.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-1.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-1.5,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-10.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-2.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-2.5,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-3.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-3.5,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-4.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-4.5,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-5.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-5.5,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-6.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-6.5,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-7.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-7.5,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-8.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-8.5,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-9.0,.
+scale-EDSSv1 SubClassOf has-for-atomic-part value scale-item-EDSSv1-9.5,.
+scale-EDSSv1 SubClassOf has-for-maximum-scale-item value scale-item-EDSSv1-10.0,.
+scale-EDSSv1 SubClassOf has-for-minimum-scale-item value scale-item-EDSSv1-0.0,.
+scale-EDSSv1 SubClassOf is-the-scale-of exactly 1 EDSSv1.
+MR-examination is Class.
+MR-examination SubClassOf examination.
+behavioural-examination is Class.
+behavioural-examination SubClassOf examination.
+centre is Class.
+cerebral-evoked-potential-examination is Class.
+cerebral-evoked-potential-examination SubClassOf examination.
+coordinator is Class.
+coordinator SubClassOf investigator.
+diagnosis-examination is Class.
+diagnosis-examination SubClassOf examination.
+evaluation-examination is Class.
+evaluation-examination SubClassOf examination.
+examination is Class.
+examination SubClassOf conceptual-action,.
+examination SubClassOf is-supervised-by-at some examination-executive,.
+examination SubClassOf affects-at exactly 1 subject,.
+examination SubClassOf has-for-agent-at exactly 1 centre,.
+examination SubClassOf has-for-date exactly 1 date.
+examination-executive is Class.
+examination-executive SubClassOf investigator.
+follow-up-examination is Class.
+follow-up-examination SubClassOf examination.
+group-name is Class.
+group-name SubClassOf name.
+healthy-volunteer is Class.
+healthy-volunteer SubClassOf human-subject.
+human-subject is Class.
+human-subject SubClassOf human,.
+human-subject SubClassOf subject.
+investigator is Class.
+investigator SubClassOf human,.
+investigator SubClassOf supervisor.
+laboratory-examination is Class.
+laboratory-examination SubClassOf examination.
+main-investigator is Class.
+main-investigator SubClassOf investigator.
+neuro-clinical-examination is Class.
+neuro-clinical-examination SubClassOf examination.
+patient is Class.
+patient SubClassOf human-subject.
+psychological-examination is Class.
+psychological-examination SubClassOf examination.
+researcher is Class.
+researcher SubClassOf human.
+study is Class.
+study-without-examination is Class.
+study-without-examination SubClassOf study.
+subject is Class.
+www.w3.org/2002/07/# is Class.
+scale-item-BDI-II-10v1-0 is Individual.
+scale-item-BDI-II-10v1-1 is Individual.
+scale-item-BDI-II-10v1-2 is Individual.
+scale-item-BDI-II-10v1-3 is Individual.
+scale-item-BDI-II-11v1-0 is Individual.
+scale-item-BDI-II-11v1-1 is Individual.
+scale-item-BDI-II-11v1-2 is Individual.
+scale-item-BDI-II-11v1-3 is Individual.
+scale-item-BDI-II-12v1-0 is Individual.
+scale-item-BDI-II-12v1-1 is Individual.
+scale-item-BDI-II-12v1-2 is Individual.
+scale-item-BDI-II-12v1-3 is Individual.
+scale-item-BDI-II-13v1-0 is Individual.
+scale-item-BDI-II-13v1-1 is Individual.
+scale-item-BDI-II-13v1-2 is Individual.
+scale-item-BDI-II-13v1-3 is Individual.
+scale-item-BDI-II-14v1-0 is Individual.
+scale-item-BDI-II-14v1-1 is Individual.
+scale-item-BDI-II-14v1-2 is Individual.
+scale-item-BDI-II-14v1-3 is Individual.
+scale-item-BDI-II-15v1-0 is Individual.
+scale-item-BDI-II-15v1-1 is Individual.
+scale-item-BDI-II-15v1-2 is Individual.
+scale-item-BDI-II-15v1-3 is Individual.
+scale-item-BDI-II-16v1-0 is Individual.
+scale-item-BDI-II-16v1-1a is Individual.
+scale-item-BDI-II-16v1-1b is Individual.
+scale-item-BDI-II-16v1-2a is Individual.
+scale-item-BDI-II-16v1-2b is Individual.
+scale-item-BDI-II-16v1-3a is Individual.
+scale-item-BDI-II-16v1-3b is Individual.
+scale-item-BDI-II-17v1-0 is Individual.
+scale-item-BDI-II-17v1-1 is Individual.
+scale-item-BDI-II-17v1-2 is Individual.
+scale-item-BDI-II-17v1-3 is Individual.
+scale-item-BDI-II-18v1-0 is Individual.
+scale-item-BDI-II-18v1-1a is Individual.
+scale-item-BDI-II-18v1-1b is Individual.
+scale-item-BDI-II-18v1-2a is Individual.
+scale-item-BDI-II-18v1-2b is Individual.
+scale-item-BDI-II-18v1-3a is Individual.
+scale-item-BDI-II-18v1-3b is Individual.
+scale-item-BDI-II-19v1-0 is Individual.
+scale-item-BDI-II-19v1-1 is Individual.
+scale-item-BDI-II-19v1-2 is Individual.
+scale-item-BDI-II-19v1-3 is Individual.
+scale-item-BDI-II-1v1-0 is Individual.
+scale-item-BDI-II-1v1-1 is Individual.
+scale-item-BDI-II-1v1-2 is Individual.
+scale-item-BDI-II-1v1-3 is Individual.
+scale-item-BDI-II-20v1-0 is Individual.
+scale-item-BDI-II-20v1-1 is Individual.
+scale-item-BDI-II-20v1-2 is Individual.
+scale-item-BDI-II-20v1-3 is Individual.
+scale-item-BDI-II-21v1-0 is Individual.
+scale-item-BDI-II-21v1-1 is Individual.
+scale-item-BDI-II-21v1-2 is Individual.
+scale-item-BDI-II-21v1-3 is Individual.
+scale-item-BDI-II-2v1-0 is Individual.
+scale-item-BDI-II-2v1-1 is Individual.
+scale-item-BDI-II-2v1-2 is Individual.
+scale-item-BDI-II-2v1-3 is Individual.
+scale-item-BDI-II-3v1-0 is Individual.
+scale-item-BDI-II-3v1-1 is Individual.
+scale-item-BDI-II-3v1-2 is Individual.
+scale-item-BDI-II-3v1-3 is Individual.
+scale-item-BDI-II-4v1-0 is Individual.
+scale-item-BDI-II-4v1-1 is Individual.
+scale-item-BDI-II-4v1-2 is Individual.
+scale-item-BDI-II-4v1-3 is Individual.
+scale-item-BDI-II-5v1-0 is Individual.
+scale-item-BDI-II-5v1-1 is Individual.
+scale-item-BDI-II-5v1-2 is Individual.
+scale-item-BDI-II-5v1-3 is Individual.
+scale-item-BDI-II-6v1-0 is Individual.
+scale-item-BDI-II-6v1-1 is Individual.
+scale-item-BDI-II-6v1-2 is Individual.
+scale-item-BDI-II-6v1-3 is Individual.
+scale-item-BDI-II-7v1-0 is Individual.
+scale-item-BDI-II-7v1-1 is Individual.
+scale-item-BDI-II-7v1-2 is Individual.
+scale-item-BDI-II-7v1-3 is Individual.
+scale-item-BDI-II-8v1-0 is Individual.
+scale-item-BDI-II-8v1-1 is Individual.
+scale-item-BDI-II-8v1-2 is Individual.
+scale-item-BDI-II-8v1-3 is Individual.
+scale-item-BDI-II-9v1-0 is Individual.
+scale-item-BDI-II-9v1-1 is Individual.
+scale-item-BDI-II-9v1-2 is Individual.
+scale-item-BDI-II-9v1-3 is Individual.
+scale-item-CDR-CA-v1-Mild-1 is Individual.
+scale-item-CDR-CA-v1-Moderate-2 is Individual.
+scale-item-CDR-CA-v1-None-0 is Individual.
+scale-item-CDR-CA-v1-Questionable-0.5 is Individual.
+scale-item-CDR-CA-v1-Severe-3 is Individual.
+scale-item-CDR-HH-v1-Mild-1 is Individual.
+scale-item-CDR-HH-v1-Moderate-2 is Individual.
+scale-item-CDR-HH-v1-None-0 is Individual.
+scale-item-CDR-HH-v1-Questionable-0.5 is Individual.
+scale-item-CDR-HH-v1-Severe-3 is Individual.
+scale-item-CDR-J-v1-Mild-1 is Individual.
+scale-item-CDR-J-v1-Moderate-2 is Individual.
+scale-item-CDR-J-v1-None-0 is Individual.
+scale-item-CDR-J-v1-Questionable-0.5 is Individual.
+scale-item-CDR-J-v1-Severe-3 is Individual.
+scale-item-CDR-M-v1-Mild-1 is Individual.
+scale-item-CDR-M-v1-Moderate-2 is Individual.
+scale-item-CDR-M-v1-None-0 is Individual.
+scale-item-CDR-M-v1-Questionable-0.5 is Individual.
+scale-item-CDR-M-v1-Severe-3 is Individual.
+scale-item-CDR-O-v1-Mild-1 is Individual.
+scale-item-CDR-O-v1-Moderate-2 is Individual.
+scale-item-CDR-O-v1-None-0 is Individual.
+scale-item-CDR-O-v1-Questionable-0.5 is Individual.
+scale-item-CDR-O-v1-Severe-3 is Individual.
+scale-item-CDR-PC-v1-Mild-1 is Individual.
+scale-item-CDR-PC-v1-Moderate-2 is Individual.
+scale-item-CDR-PC-v1-None-0 is Individual.
+scale-item-CDR-PC-v1-Questionable-0.5 is Individual.
+scale-item-CDR-PC-v1-Severe-3 is Individual.
+scale-item-CDR-SoBv1-CDR-0 is Individual.
+scale-item-CDR-SoBv1-CDR-0.5 is Individual.
+scale-item-CDR-SoBv1-CDR-1 is Individual.
+scale-item-CDR-SoBv1-CDR-2 is Individual.
+scale-item-CDR-SoBv1-CDR-3 is Individual.
+scale-item-CFT-Cv2-I is Individual.
+scale-item-CFT-Cv2-II is Individual.
+scale-item-CFT-Cv2-III is Individual.
+scale-item-CFT-Cv2-IV is Individual.
+scale-item-CFT-Cv2-V is Individual.
+scale-item-CFT-Cv2-VI is Individual.
+scale-item-CFT-Cv2-VII is Individual.
+scale-item-CFT-Mv2-I is Individual.
+scale-item-CFT-Mv2-II is Individual.
+scale-item-CFT-Mv2-III is Individual.
+scale-item-CFT-Mv2-IV is Individual.
+scale-item-CFT-Mv2-V is Individual.
+scale-item-CFT-Mv2-VI is Individual.
+scale-item-CFT-Mv2-VII is Individual.
+scale-item-EDSS-1v1-0 is Individual.
+scale-item-EDSS-1v1-1 is Individual.
+scale-item-EDSS-1v1-2 is Individual.
+scale-item-EDSS-1v1-3 is Individual.
+scale-item-EDSS-1v1-4 is Individual.
+scale-item-EDSS-1v1-5 is Individual.
+scale-item-EDSS-1v1-6 is Individual.
+scale-item-EDSS-2v1-0 is Individual.
+scale-item-EDSS-2v1-1 is Individual.
+scale-item-EDSS-2v1-2a is Individual.
+scale-item-EDSS-2v1-2b is Individual.
+scale-item-EDSS-2v1-3a is Individual.
+scale-item-EDSS-2v1-3b is Individual.
+scale-item-EDSS-2v1-3c is Individual.
+scale-item-EDSS-2v1-4a is Individual.
+scale-item-EDSS-2v1-4b is Individual.
+scale-item-EDSS-2v1-5 is Individual.
+scale-item-EDSS-3v1-0 is Individual.
+scale-item-EDSS-3v1-1 is Individual.
+scale-item-EDSS-3v1-2 is Individual.
+scale-item-EDSS-3v1-3a is Individual.
+scale-item-EDSS-3v1-3b is Individual.
+scale-item-EDSS-3v1-4a is Individual.
+scale-item-EDSS-3v1-4b is Individual.
+scale-item-EDSS-3v1-4c is Individual.
+scale-item-EDSS-3v1-5a is Individual.
+scale-item-EDSS-3v1-5b is Individual.
+scale-item-EDSS-3v1-5c is Individual.
+scale-item-EDSS-3v1-6 is Individual.
+scale-item-EDSS-4v1-0 is Individual.
+scale-item-EDSS-4v1-1 is Individual.
+scale-item-EDSS-4v1-2 is Individual.
+scale-item-EDSS-4v1-3a is Individual.
+scale-item-EDSS-4v1-3b is Individual.
+scale-item-EDSS-4v1-3c is Individual.
+scale-item-EDSS-4v1-4 is Individual.
+scale-item-EDSS-4v1-5 is Individual.
+scale-item-EDSS-4v1-5b4a7b7208f5c486b4fa8a526466221baecb0931 is Individual.
+scale-item-EDSS-5v1-0 is Individual.
+scale-item-EDSS-5v1-1 is Individual.
+scale-item-EDSS-5v1-2a is Individual.
+scale-item-EDSS-5v1-2b is Individual.
+scale-item-EDSS-5v1-3a is Individual.
+scale-item-EDSS-5v1-3b is Individual.
+scale-item-EDSS-5v1-4a is Individual.
+scale-item-EDSS-5v1-4b is Individual.
+scale-item-EDSS-5v1-5a is Individual.
+scale-item-EDSS-5v1-5b is Individual.
+scale-item-EDSS-5v1-6 is Individual.
+scale-item-EDSS-6v1-0 is Individual.
+scale-item-EDSS-6v1-1 is Individual.
+scale-item-EDSS-6v1-2 is Individual.
+scale-item-EDSS-6v1-3 is Individual.
+scale-item-EDSS-6v1-4 is Individual.
+scale-item-EDSS-6v1-5 is Individual.
+scale-item-EDSS-6v1-6 is Individual.
+scale-item-EDSS-7v1-0 is Individual.
+scale-item-EDSS-7v1-1a is Individual.
+scale-item-EDSS-7v1-1b is Individual.
+scale-item-EDSS-7v1-2 is Individual.
+scale-item-EDSS-7v1-3 is Individual.
+scale-item-EDSS-7v1-4 is Individual.
+scale-item-EDSS-7v1-5 is Individual.
+scale-item-EDSSv1-0.0 is Individual.
+scale-item-EDSSv1-1.0 is Individual.
+scale-item-EDSSv1-1.5 is Individual.
+scale-item-EDSSv1-10.0 is Individual.
+scale-item-EDSSv1-2.0 is Individual.
+scale-item-EDSSv1-2.5 is Individual.
+scale-item-EDSSv1-3.0 is Individual.
+scale-item-EDSSv1-3.5 is Individual.
+scale-item-EDSSv1-4.0 is Individual.
+scale-item-EDSSv1-4.5 is Individual.
+scale-item-EDSSv1-5.0 is Individual.
+scale-item-EDSSv1-5.5 is Individual.
+scale-item-EDSSv1-6.0 is Individual.
+scale-item-EDSSv1-6.5 is Individual.
+scale-item-EDSSv1-7.0 is Individual.
+scale-item-EDSSv1-7.5 is Individual.
+scale-item-EDSSv1-8.0 is Individual.
+scale-item-EDSSv1-8.5 is Individual.
+scale-item-EDSSv1-9.0 is Individual.
+scale-item-EDSSv1-9.5 is Individual.
+scale-item-EDSSv1-9.5 DisjointClasses abstract,endurant,perdurant,quality.
+scale-item-EDSSv1-9.5 DisjointClasses MR-examination,behavioural-examination,cerebral-evoked-potential-examination,laboratory-examination,neuro-clinical-examination,psychological-examination.

@@ -1,0 +1,176 @@
+adjacent to is ObjectProperty.
+adjacent to Domain Continuant.
+adjacent to Range Continuant.
+has role is ObjectProperty.
+has role Domain Continuant.
+has role Range Role.
+is entity used in is ObjectProperty.
+located in is ObjectProperty.
+located in Domain Continuant.
+located in Range SpatialRegion.
+Cohort study is Class.
+Concurrent cohort study is Class.
+Concurrent cohort study SubClassOf Cohort study.
+Intervention is Class.
+Intervention is equivalent to is entity used in some intervention context.
+Intervention SubClassOf Entity,.
+Intervention SubClassOf is entity used in some clinical trial context,.
+Intervention SubClassOf is entity used in only ConnectedTemporalRegion.
+add on treatment context is Class.
+add on treatment context SubClassOf pharmacotherapy treatment context.
+clinical treatment context is Class.
+clinical trial context is Class.
+clinical trial context DisjointWith ConnectedTemporalRegion.
+descriptive statistical context is Class.
+diagnosis context is Class.
+diagnosis context SubClassOf clinical observation context.
+disease cause is Class.
+intervention context is Class.
+measure of disease occurrence context is Class.
+measure of disease occurrence context SubClassOf statistical context.
+mechanism of action context is Class.
+mechanism of action context SubClassOf pharmacotherapy treatment context.
+mild stage context is Class.
+mild stage context SubClassOf stage context.
+morbidity context is Class.
+morbidity context SubClassOf descriptive statistical context.
+non pharmacotherapy treatment context is Class.
+non pharmacotherapy treatment context SubClassOf clinical treatment context.
+outcome context is Class.
+outcome context SubClassOf clinical trial context.
+pathology context is Class.
+pathology context SubClassOf clinical phenotypic context.
+pharmacotherapy treatment context is Class.
+pharmacotherapy treatment context SubClassOf clinical treatment context.
+prevalence context is Class.
+prevalence context SubClassOf descriptive statistical context.
+primary measure context is Class.
+primary measure context SubClassOf clinical trial context.
+procedures using biomarkers context is Class.
+procedures using biomarkers context SubClassOf diagnosis context.
+secondary measure context is Class.
+secondary measure context SubClassOf clinical trial context.
+severe stage context is Class.
+severe stage context SubClassOf stage context.
+stage context is Class.
+statistical context is Class.
+study design context is Class.
+study design context SubClassOf clinical trial context.
+surgery context is Class.
+surgery context SubClassOf non pharmacotherapy treatment context.
+Entity is Class.
+Entity SubClassOf SpatialRegion.
+Continuant is Class.
+Continuant is equivalent to DependentContinuant or IndependentContinuant or SpatialRegion.
+Continuant SubClassOf Entity.
+Continuant DisjointWith Occurrent.
+DependentContinuant is Class.
+DependentContinuant SubClassOf Continuant.
+DependentContinuant DisjointWith SpatialRegion.
+IndependentContinuant is Class.
+IndependentContinuant SubClassOf Continuant.
+IndependentContinuant DisjointWith SpatialRegion.
+OneDimensionalRegion is Class.
+OneDimensionalRegion SubClassOf SpatialRegion.
+OneDimensionalRegion DisjointWith ZeroDimensionalRegion.
+OneDimensionalRegion DisjointWith TwoDimensionalRegion.
+OneDimensionalRegion DisjointWith ThreeDimensionalRegion.
+Role is Class.
+SpatialRegion is Class.
+SpatialRegion is equivalent to OneDimensionalRegion or ThreeDimensionalRegion or TwoDimensionalRegion or ZeroDimensionalRegion.
+SpatialRegion SubClassOf Continuant.
+SpatialRegion DisjointWith OneDimensionalRegion or ThreeDimensionalRegion or TwoDimensionalRegion or ZeroDimensionalRegion.
+SpatialRegion DisjointWith IndependentContinuant.
+SpatialRegion DisjointWith DependentContinuant.
+ThreeDimensionalRegion is Class.
+ThreeDimensionalRegion SubClassOf SpatialRegion.
+ThreeDimensionalRegion DisjointWith ZeroDimensionalRegion.
+ThreeDimensionalRegion DisjointWith TwoDimensionalRegion.
+ThreeDimensionalRegion DisjointWith OneDimensionalRegion.
+TwoDimensionalRegion is Class.
+TwoDimensionalRegion SubClassOf SpatialRegion.
+TwoDimensionalRegion DisjointWith ZeroDimensionalRegion.
+TwoDimensionalRegion DisjointWith ThreeDimensionalRegion.
+TwoDimensionalRegion DisjointWith OneDimensionalRegion.
+ZeroDimensionalRegion is Class.
+ZeroDimensionalRegion SubClassOf SpatialRegion.
+ZeroDimensionalRegion DisjointWith TwoDimensionalRegion.
+ZeroDimensionalRegion DisjointWith ThreeDimensionalRegion.
+ZeroDimensionalRegion DisjointWith OneDimensionalRegion.
+ConnectedSpatiotemporalRegion is Class.
+ConnectedSpatiotemporalRegion is equivalent to SpatiotemporalInstant or SpatiotemporalInterval.
+ConnectedSpatiotemporalRegion SubClassOf SpatiotemporalRegion.
+ConnectedSpatiotemporalRegion DisjointWith ScatteredSpatiotemporalRegion.
+ConnectedTemporalRegion is Class.
+ConnectedTemporalRegion is equivalent to TemporalInstant or TemporalInterval.
+ConnectedTemporalRegion SubClassOf TemporalRegion.
+ConnectedTemporalRegion DisjointWith ScatteredTemporalRegion.
+ConnectedTemporalRegion DisjointWith clinical trial context.
+Occurrent is Class.
+Occurrent DisjointWith Continuant.
+ScatteredSpatiotemporalRegion is Class.
+ScatteredSpatiotemporalRegion DisjointWith ConnectedSpatiotemporalRegion.
+ScatteredTemporalRegion is Class.
+ScatteredTemporalRegion DisjointWith ConnectedTemporalRegion.
+SpatiotemporalInstant is Class.
+SpatiotemporalInstant SubClassOf ConnectedSpatiotemporalRegion.
+SpatiotemporalInstant DisjointWith SpatiotemporalInterval.
+SpatiotemporalInterval is Class.
+SpatiotemporalInterval SubClassOf ConnectedSpatiotemporalRegion.
+SpatiotemporalInterval DisjointWith SpatiotemporalInstant.
+SpatiotemporalRegion is Class.
+TemporalInstant is Class.
+TemporalInstant SubClassOf ConnectedTemporalRegion.
+TemporalInstant DisjointWith TemporalInterval.
+TemporalInterval is Class.
+TemporalInterval SubClassOf ConnectedTemporalRegion.
+TemporalInterval DisjointWith TemporalInstant.
+TemporalRegion is Class.
+Antenatal is Class.
+Antenatal SubClassOf Pregnancy time period.
+Country of birth is Class.
+Country of birth SubClassOf Geography.
+Developed Countries is Class.
+Developed Countries SubClassOf Geography.
+Embryo Implantation is Class.
+Embryo Implantation SubClassOf Placental implantation.
+Entity relating to environmental cause is Class.
+Entity relating to environmental cause is equivalent to is entity used in some Environmental features.
+Entity relating to environmental cause SubClassOf disease cause.
+Environmental features is Class.
+Geography is Class.
+Geography SubClassOf TwoDimensionalRegion.
+Incidence rate is Class.
+Later in life is Class.
+Later in life SubClassOf ConnectedTemporalRegion.
+Latitude is Class.
+Latitude SubClassOf Geography.
+Periconceptional is Class.
+Periconceptional SubClassOf TemporalInterval.
+Person time incidence rate is Class.
+Person time incidence rate SubClassOf Incidence rate.
+Placental implantation is Class.
+Pregnancy time period is Class.
+Pregnancy time period SubClassOf ConnectedTemporalRegion.
+Regulation of transcription is Class.
+Splicing variants is Class.
+Splicing variants SubClassOf Regulation of transcription.
+clinical functional phenotype context is Class.
+clinical functional phenotype context SubClassOf clinical observation context.
+clinical main complaint context is Class.
+clinical main complaint context SubClassOf clinical observation context.
+clinical observation context is Class.
+clinical observation context SubClassOf clinical phenotypic context.
+clinical outcome context is Class.
+clinical outcome context SubClassOf clinical phenotypic context.
+clinical phenotypic context is Class.
+early onset context is Class.
+early onset context SubClassOf stage context.
+late onset context is Class.
+late onset context SubClassOf stage context.
+thing related to environmental exposure is Class.
+thing related to environmental exposure SubClassOf Environmental features.
+thing related to gene is Class.
+thing related to variants is Class.
+thing related to variants SubClassOf thing related to gene.
+www.w3.org/2002/07/# is Class.

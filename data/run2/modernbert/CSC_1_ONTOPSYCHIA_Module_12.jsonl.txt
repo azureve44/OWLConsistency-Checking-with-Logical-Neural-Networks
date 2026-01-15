@@ -1,0 +1,217 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+a pour attribut d ordre de grandeur is ObjectProperty.
+a pour membre famille is ObjectProperty.
+a relation premier degre is ObjectProperty.
+est correlatif a is ObjectProperty.
+Axiology is Class.
+Axiology SubClassOf MetaFunctionalObjectQualifier.
+Bad is Class.
+Bad SubClassOf Axiology.
+Good is Class.
+Good SubClassOf Axiology.
+MetaFunctionalObjectQualifier is Class.
+Sufficient is Class.
+Sufficient SubClassOf Axiology.
+Amie Avec Qualificatif is Class.
+Arriere Grand Parent is Class.
+Arriere Grand Pere is Class.
+Arriere Grand Pere SubClassOf Arriere Grand Parent.
+Arriere Grand Pere Maternel Mere is Class.
+Arriere Grand Pere Maternel Mere SubClassOf Arriere Grand Pere.
+Arriere Grand Pere Maternel Pere is Class.
+Arriere Grand Pere Maternel Pere SubClassOf Arriere Grand Pere.
+Arriere Grand Pere Paternel Mere is Class.
+Arriere Grand Pere Paternel Mere SubClassOf Arriere Grand Pere.
+Arriere Grand Pere Paternel Pere is Class.
+Arriere Grand Pere Paternel Pere SubClassOf Arriere Grand Pere.
+Belle Famille is Class.
+Belle Famille SubClassOf Famille Avec Type,.
+Belle Famille SubClassOf a pour membre famille some Membre Famille Recomposee.
+Centre Accueil Therapeutique Temps Partiel is Class.
+Centre Accueil Therapeutique Temps Partiel SubClassOf Centre Soins.
+Centre Soins is Class.
+Curatelle Demande Membre Famille is Class.
+Curatelle Demande Membre Famille SubClassOf Curatelle Demande Personne.
+Curatelle Demande Personne is Class.
+Deces Beau Parent is Class.
+Deces Beau Parent SubClassOf Deces Membre Famille.
+Deces Compagne is Class.
+Deces Compagne SubClassOf Deces Membre Couple.
+Deces Compagnon is Class.
+Deces Compagnon SubClassOf Deces Membre Couple.
+Deces Enfant is Class.
+Deces Enfant SubClassOf Deces Membre Famille.
+Deces Epouse is Class.
+Deces Epouse SubClassOf Deces Membre Couple.
+Deces Epouse DisjointWith .
+Deces Epouse DisjointWith Individu Selon Relation Familiale.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing is www.w3.org/2002/07/#.
+Deces Epoux is Class.
+Deces Epoux SubClassOf Deces Membre Couple.
+Deces Fratrie is Class.
+Deces Fratrie SubClassOf Deces Membre Famille.
+Deces Individu is Class.
+Deces Membre Couple is Class.
+Deces Membre Couple SubClassOf Deces Membre Famille.
+Deces Membre Famille is Class.
+Deces Membre Famille SubClassOf Deces Individu,.
+Deces Membre Famille SubClassOf est correlatif a some Individu Selon Relation Familiale.
+Deces Oncle is Class.
+Deces Oncle SubClassOf Deces Membre Famille.
+Deces Parent is Class.
+Deces Parent SubClassOf Deces Membre Famille.
+Deces Tante is Class.
+Deces Tante SubClassOf Deces Membre Famille.
+Demi Oncle is Class.
+Demi Oncle Maternel is Class.
+Demi Oncle Maternel SubClassOf Demi Oncle.
+Demi Oncle Paternel is Class.
+Demi Oncle Paternel SubClassOf Demi Oncle.
+Demi Tante is Class.
+Demi Tante Maternelle is Class.
+Demi Tante Maternelle SubClassOf Demi Tante.
+Demi Tante Paternelle is Class.
+Demi Tante Paternelle SubClassOf Demi Tante.
+Divorce Fille is Class.
+Divorce Fille SubClassOf Divorce Membre Famille.
+Divorce Fils is Class.
+Divorce Fils SubClassOf Divorce Membre Famille.
+Divorce Membre Famille is Class.
+Divorce Membre Famille SubClassOf Rupture Conjugale Divorce.
+Divorce Parental is Class.
+Divorce Parental SubClassOf Divorce Membre Famille.
+Famille is Class.
+Famille SubClassOf Groupe Individus.
+Famille Adoptive is Class.
+Famille Adoptive SubClassOf Famille Avec Type,.
+Famille Adoptive SubClassOf a pour membre famille some Membre Famille Adoptive.
+Famille Avec Qualificatif is Class.
+Famille Avec Qualificatif SubClassOf Famille.
+Famille Avec Type is Class.
+Famille Avec Type SubClassOf Famille.
+Famille Biologique is Class.
+Famille Biologique SubClassOf Famille Avec Type,.
+Famille Biologique SubClassOf a pour membre famille some Membre Famille Biologique.
+Famille Catholique is Class.
+Famille Catholique SubClassOf Famille Religieuse.
+Famille Catholique Pratiquante is Class.
+Famille Catholique Pratiquante SubClassOf Famille Catholique.
+Famille Maternelle is Class.
+Famille Maternelle SubClassOf Famille Avec Type.
+Famille Monoparentale is Class.
+Famille Monoparentale SubClassOf Famille Avec Type.
+Famille Nombreuse is Class.
+Famille Nombreuse SubClassOf Famille Avec Type.
+Famille Paternelle is Class.
+Famille Paternelle SubClassOf Famille Avec Type.
+Famille Patient is Class.
+Famille Patient SubClassOf Famille.
+Famille Pauvre is Class.
+Famille Pauvre SubClassOf Famille Avec Qualificatif.
+Famille Proche is Class.
+Famille Proche SubClassOf Famille Avec Qualificatif,.
+Famille Proche SubClassOf a relation premier degre some Membre Famille Biologique Premier Degre.
+Famille Religieuse is Class.
+Famille Riche is Class.
+Famille Riche SubClassOf Famille Avec Qualificatif.
+Famille Tradition Catholique is Class.
+Famille Tradition Catholique SubClassOf Famille Catholique.
+Fiancaille is Class.
+Fiancaille Frere is Class.
+Fiancaille Frere SubClassOf Fiancaille Membre Famille.
+Fiancaille Membre Famille is Class.
+Fiancaille Membre Famille SubClassOf Fiancaille,.
+Fiancaille Membre Famille SubClassOf est correlatif a some Individu Selon Relation Familiale.
+Fratrie Biologique is Class.
+Frere Jumeau is Class.
+Frere Jumeau SubClassOf Jumeau Fratrie.
+Grand is Class.
+Grand Mere Maternelle is Class.
+Grand Mere Maternelle SubClassOf Maternal Grandparent.
+Grand Mere Paternelle is Class.
+Grand Mere Paternelle SubClassOf Paternal Grandparent.
+Grand Parent is Class.
+Grand Pere Maternel is Class.
+Grand Pere Maternel SubClassOf Maternal Grandparent.
+Grand Pere Paternel is Class.
+Grand Pere Paternel SubClassOf Paternal Grandparent.
+Grande Famille is Class.
+Grande Famille SubClassOf Famille Avec Qualificatif,.
+Grande Famille SubClassOf a pour attribut d ordre de grandeur some Grand.
+Groupe Individus is Class.
+Homicide Mari is Class.
+Homicide Mari SubClassOf Homicide Membre famille.
+Homicide Membre famille is Class.
+Homicide Membre famille SubClassOf Homicide Par Personne.
+Homicide Par Personne is Class.
+Homicide Soeur is Class.
+Homicide Soeur SubClassOf Homicide Membre famille.
+Individu Selon Relation Familiale is Class.
+Individu Selon Relation Familiale DisjointWith Deces Epouse.
+Jumeau Dizygote is Class.
+Jumeau Dizygote SubClassOf Jumeau Fratrie.
+Jumeau Fratrie is Class.
+Jumeau Fratrie SubClassOf Fratrie Biologique.
+Jumeau Monozygote is Class.
+Jumeau Monozygote SubClassOf Jumeau Fratrie.
+Mariage Civil is Class.
+Mariage Fils is Class.
+Mariage Fils SubClassOf Mariage Membre Famille.
+Mariage Frere is Class.
+Mariage Frere SubClassOf Mariage Membre Famille.
+Mariage Membre Famille is Class.
+Mariage Membre Famille SubClassOf Mariage Civil.
+Mariage Pere is Class.
+Mariage Pere SubClassOf Mariage Membre Famille.
+Mariage Soeur is Class.
+Mariage Soeur SubClassOf Mariage Membre Famille.
+Maternal Grandparent is Class.
+Maternal Grandparent SubClassOf Grand Parent.
+Meilleure Amie is Class.
+Meilleure Amie SubClassOf Amie Avec Qualificatif.
+Membre Famille Adoptive is Class.
+Membre Famille Biologique is Class.
+Membre Famille Biologique SubClassOf Individu Selon Relation Familiale.
+Membre Famille Biologique Premier Degre is Class.
+Membre Famille Biologique Premier Degre SubClassOf Membre Famille Biologique.
+Membre Famille Biologique Second Degre is Class.
+Membre Famille Biologique Second Degre SubClassOf Membre Famille Biologique.
+Membre Famille Biologique Troisieme Degre is Class.
+Membre Famille Biologique Troisieme Degre SubClassOf Membre Famille Biologique.
+Membre Famille Recomposee is Class.
+Paternal Grandparent is Class.
+Paternal Grandparent SubClassOf Grand Parent.
+Remariage is Class.
+Remariage SubClassOf Remariage Pere.
+Remariage Membre Famille is Class.
+Remariage Membre Famille SubClassOf Remariage,.
+Remariage Membre Famille SubClassOf est correlatif a some Individu Selon Relation Familiale,.
+Remariage Membre Famille SubClassOf est correlatif a only Deces Epouse.
+Remariage Mere is Class.
+Remariage Mere SubClassOf Remariage Membre Famille.
+Remariage Pere is Class.
+Remariage Pere SubClassOf Remariage Membre Famille.
+Rupture Conjugale Divorce is Class.
+Service Cardiologie is Class.
+Service Cardiologie SubClassOf Service Interne Hopital.
+Service Interne Hopital is Class.
+Service Nephrologie is Class.
+Service Nephrologie SubClassOf Service Interne Hopital.
+Service Neurologie is Class.
+Service Neurologie SubClassOf Service Interne Hopital.
+Soeur Jumelle is Class.
+Soeur Jumelle SubClassOf Jumeau Fratrie.
+Tante is Class.
+Tante Maternelle is Class.
+Tante Maternelle SubClassOf Tante.
+Tante Paternelle is Class.
+Tante Paternelle SubClassOf Tante.
+Viol is Class.
+Viol Compagne is Class.
+Viol Compagne SubClassOf Viol Membre Famille.
+Viol Membre Famille is Class.
+Viol Membre Famille SubClassOf Viol.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.

@@ -1,0 +1,258 @@
+anyURI is Datatype.
+dateTime is Datatype.
+hexBinary is Datatype.
+string is Datatype.
+has deviation reason is ObjectProperty.
+has deviation reason Characteristics Asymmetric.
+has deviation reason Domain formal care plan.
+has deviation reason Range deviation reason.
+has genre is ObjectProperty.
+has genre Characteristics Asymmetric.
+has genre Domain formal care plan.
+has genre Range classification genre.
+has outcome is ObjectProperty.
+has outcome Characteristics Asymmetric.
+has outcome Domain formal care plan.
+has outcome Range formal care plan,.
+has outcome Range health issue,.
+has outcome Range instruction.
+has quality of evidence is ObjectProperty.
+has quality of evidence Characteristics Asymmetric.
+has quality of evidence Domain formal care plan.
+has quality of evidence Range quality of evidence.
+has related health issue is ObjectProperty.
+has related health issue Characteristics Asymmetric.
+has related health issue Domain formal care plan.
+has related health issue Range related health issue.
+has source file is ObjectProperty.
+has source file Characteristics Asymmetric.
+has source file Domain formal care plan.
+has source file Range source file.
+has strength of recommendation is ObjectProperty.
+has strength of recommendation Characteristics Asymmetric.
+has strength of recommendation Domain formal care plan.
+has strength of recommendation Range strength of recommendation.
+has type is ObjectProperty.
+has type Characteristics Asymmetric.
+has type Domain formal care plan.
+has type Range classification type.
+is a deviation of is ObjectProperty.
+is a deviation of Characteristics Asymmetric.
+is a deviation of Domain formal care plan.
+is a deviation of Range formal care plan.
+is endorsed by is ObjectProperty.
+is endorsed by Characteristics Asymmetric.
+is endorsed by Domain formal care plan.
+is endorsed by Range evidence source.
+is initiated by is ObjectProperty.
+is initiated by Characteristics Asymmetric.
+is initiated by Domain formal care plan.
+is initiated by Range observable condition.
+is issued by is ObjectProperty.
+is issued by Characteristics Asymmetric.
+is issued by Domain formal care plan.
+is issued by Range issuing body.
+is part of is ObjectProperty.
+is part of Domain observable.
+is part of Range observable condition.
+requires resource is ObjectProperty.
+requires resource Characteristics Asymmetric.
+requires resource Domain formal care plan.
+requires resource Range drug,.
+requires resource Range human,.
+requires resource Range infrastructure.
+description is ObjectProperty.
+description Characteristics Asymmetric.
+description Domain formal care plan.
+description Range general description.
+license is ObjectProperty.
+license Characteristics Asymmetric.
+license Domain source file.
+license Range LicenseDocument.
+title is ObjectProperty.
+title Characteristics Asymmetric.
+title Domain formal care plan.
+title Range general title.
+copyright is DataProperty.
+copyright Domain source file.
+copyright Range string.
+file is DataProperty.
+file Domain source file.
+file Range hexBinary.
+format is DataProperty.
+format Domain source file.
+format Range string.
+location is DataProperty.
+location Domain source file.
+location Range string.
+reason is DataProperty.
+reason Domain deviation reason.
+reason Range string.
+url is DataProperty.
+url Domain source file.
+url Range anyURI.
+value is DataProperty.
+value Domain general description,.
+value Domain general title,.
+value Domain instruction.
+value Range string.
+created is DataProperty.
+created Domain deviation reason.
+created Range dateTime.
+created SubPropertyOf date.
+date is DataProperty.
+date Domain source file.
+date Range dateTime.
+issued is DataProperty.
+issued Domain issuing body.
+issued Range dateTime.
+issued SubPropertyOf date.
+observable is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is is part of min 1 observable condition.
+observable expression is Class.
+observable expression is equivalent to observable condition.
+observable expression SubClassOf formal care plan.
+classification is Class.
+classification SubClassOf formal care plan.
+classification genre is Class.
+classification genre SubClassOf classification.
+classification type is Class.
+classification type SubClassOf classification.
+deviation reason is Class.
+deviation reason SubClassOf formal care plan,.
+deviation reason SubClassOf created exactly 1 dateTime.
+drug is Class.
+drug is equivalent to T200.
+drug SubClassOf resource.
+evidence source is Class.
+evidence source is equivalent to Document.
+Thing is www.w3.org/2002/07/#.
+formal care plan is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is has outcome some formal care plan,.
+Thing, is has outcome some health issue,.
+Thing, is has outcome some instruction,.
+Thing, is has outcome some.
+Thing), is (health issue and www.w3.org/2002/07/#.
+Thing), is has type some classification type,.
+Thing), is is a deviation of some formal care plan,.
+Thing), is requires resource some drug,.
+Thing), is requires resource some human,.
+Thing), is requires resource some infrastructure,.
+Thing, is has outcome only www.w3.org/2002/07/#.
+Thing, is has related health issue min 1 related health issue,.
+Thing, is has source file min 1 source file,.
+Thing, is is endorsed by min 1 evidence source,.
+Thing, is is initiated by min 1 observable condition,.
+Thing, is has genre exactly 1 classification genre,.
+Thing, is is issued by exactly 1 issuing body,.
+Thing, is title exactly 1 general title,.
+Thing, is has deviation reason max 1 deviation reason,.
+Thing, is has quality of evidence max 1 quality of evidence,.
+Thing, is has strength of recommendation max 1 strength of recommendation,.
+Thing, is description max 1 general description.
+general description is Class.
+general description SubClassOf general information,.
+general description SubClassOf value exactly 1 string.
+general information is Class.
+general information SubClassOf formal care plan.
+general title is Class.
+general title SubClassOf general information,.
+general title SubClassOf value exactly 1 string.
+health issue is Class.
+health issue is equivalent to C1137110.
+health issue SubClassOf classification,.
+health issue SubClassOf outcome.
+Thing is www.w3.org/2002/07/#.
+human is Class.
+human is equivalent to T090.
+human SubClassOf resource.
+infrastructure is Class.
+infrastructure is equivalent to T074.
+infrastructure SubClassOf resource.
+infrastructure DisjointWith T074.
+instruction is Class.
+instruction SubClassOf outcome,.
+instruction SubClassOf value exactly 1 string.
+issuing body is Class.
+issuing body is equivalent to Organization.
+Thing, is www.w3.org/2002/07/#.
+Thing, is issued exactly 1 dateTime.
+observable condition is Class.
+observable condition is equivalent to observable expression.
+observable condition SubClassOf formal care plan.
+outcome is Class.
+outcome SubClassOf formal care plan.
+quality and level of recommendation is Class.
+quality and level of recommendation SubClassOf formal care plan.
+quality of evidence is Class.
+quality of evidence SubClassOf quality and level of recommendation.
+related health issue is Class.
+related health issue is equivalent to C1137110.
+related health issue SubClassOf classification,.
+related health issue SubClassOf outcome.
+resource is Class.
+Thing is www.w3.org/2002/07/#.
+source file is Class.
+source file SubClassOf formal care plan,.
+source file SubClassOf (file exactly 1 hexBinary) or (url exactly 1 anyURI),.
+source file SubClassOf license max 1 LicenseDocument,.
+source file SubClassOf format exactly 1 string,.
+source file SubClassOf location exactly 1 string,.
+source file SubClassOf copyright max 1 string.
+strength of recommendation is Class.
+strength of recommendation SubClassOf quality and level of recommendation.
+C1137110 is Class.
+C1137110 is equivalent to health issue,.
+C1137110 is equivalent to related health issue.
+C1137110 SubClassOf classification,.
+C1137110 SubClassOf outcome.
+T074 is Class.
+T074 is equivalent to infrastructure.
+T074 SubClassOf resource.
+T074 DisjointWith infrastructure.
+T090 is Class.
+T090 is equivalent to human.
+T090 SubClassOf resource.
+T200 is Class.
+T200 is equivalent to drug.
+T200 SubClassOf resource.
+LicenseDocument is Class.
+Thing is www.w3.org/2002/07/#.
+Document is Class.
+Document is equivalent to evidence source.
+Thing is www.w3.org/2002/07/#.
+Organization is Class.
+Organization is equivalent to issuing body.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2002/07/# DisjointWith health issue.
+clinical guideline is Individual.
+clinical guideline Types classification genre.
+clinical pathway is Individual.
+clinical pathway Types classification genre.
+clinical protocol is Individual.
+clinical protocol Types classification genre.
+high quality of evidence is Individual.
+high quality of evidence Types quality of evidence.
+low quality of evidence is Individual.
+low quality of evidence Types quality of evidence.
+moderate quality of evidence is Individual.
+moderate quality of evidence Types quality of evidence.
+strong strength of recommendation is Individual.
+strong strength of recommendation Types strength of recommendation.
+type diagnostic is Individual.
+type diagnostic Types classification type.
+type management is Individual.
+type management Types classification type.
+type preventive is Individual.
+type preventive Types classification type.
+type treatment is Individual.
+type treatment Types classification type.
+very low quality of evidence is Individual.
+very low quality of evidence Types quality of evidence.
+weak strength of recommendation is Individual.
+weak strength of recommendation Types strength of recommendation.
+has strength of recommendation max 1 strength of recommendation is Class.
+has strength of recommendation max 1 strength of recommendation SubClassOf general information.

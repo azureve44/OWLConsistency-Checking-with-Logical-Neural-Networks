@@ -1,0 +1,154 @@
+has input is ObjectProperty.
+has molecular part is ObjectProperty.
+has molecular part Domain non-covalent complex.
+has molecular part Range Chemical.
+has molecular part InverseOf molecular part of.
+has output is ObjectProperty.
+interacts with is ObjectProperty.
+interacts with Characteristics Symmetric.
+interacts with Domain participant.
+interacts with Range participant.
+molecular part of is ObjectProperty.
+molecular part of InverseOf has molecular part.
+ATPase activity is Class.
+ATPase activity SubClassOf hydrolase activity.
+Activity is Class.
+Thing is www.w3.org/2002/07/#.
+Apoenzyme is Class.
+Apoenzyme SubClassOf apoprotein.
+Chaperone is Class.
+Chaperone SubClassOf Protein Organized by Function.
+Chemical is Class.
+Chemical SubClassOf participant.
+Chemical DisjointWith gene.
+Enzyme is Class.
+Enzyme SubClassOf Protein Organized by Function.
+Gene Product is Class.
+Gene Product SubClassOf Chemical.
+Gene Product DisjointWith non-gene product.
+Glycoprotein is Class.
+Glycoprotein SubClassOf conjugated protein.
+Holoenzyme is Class.
+Holoenzyme SubClassOf Enzyme.
+Hydrolase is Class.
+Hydrolase SubClassOf Enzyme.
+Isomerase is Class.
+Isomerase SubClassOf Enzyme.
+Ligasev is Class.
+Ligasev SubClassOf Enzyme.
+Lipoprotein is Class.
+Lipoprotein SubClassOf conjugated protein.
+Lyase is Class.
+Lyase SubClassOf Enzyme.
+Oxidoreductase is Class.
+Oxidoreductase SubClassOf Enzyme.
+Phosphoprotein is Class.
+Phosphoprotein SubClassOf conjugated protein.
+Protein Complex Subunit is Class.
+Protein Complex Subunit SubClassOf contributor entity,.
+Protein Complex Subunit SubClassOf simple proteinv.
+Protein Organized by Function is Class.
+Protein Organized by Function SubClassOf protein.
+Transferase is Class.
+Transferase SubClassOf Enzyme.
+acceptor is Class.
+acceptor SubClassOf Gene Product.
+active entity is Class.
+active entity SubClassOf participant.
+active enzyme is Class.
+active enzyme is equivalent to Enzyme and active gene product.
+active enzyme SubClassOf Enzyme,.
+active enzyme SubClassOf active gene product.
+active gene product is Class.
+active gene product is equivalent to Gene Product and active entity.
+active gene product SubClassOf Gene Product,.
+active gene product SubClassOf active entity.
+apoprotein is Class.
+apoprotein SubClassOf protein.
+binding is Class.
+biological process is Class.
+carbamoylated protein is Class.
+carbamoylated protein SubClassOf conjugated protein.
+catalyst is Class.
+catalyst SubClassOf Gene Product.
+catalytic activity is Class.
+catalytic activity SubClassOf molecular function.
+coenzyme is Class.
+coenzyme SubClassOf cofactor.
+cofactor is Class.
+compagnon-chaperone is Class.
+compagnon-chaperone SubClassOf Chaperone.
+conjugated protein is Class.
+conjugated protein SubClassOf protein.
+contributor entity is Class.
+contributor entity SubClassOf participant.
+donor is Class.
+donor SubClassOf Gene Product.
+gene is Class.
+gene SubClassOf participant.
+gene DisjointWith Chemical.
+homodimer is Class.
+homodimer SubClassOf protein complex.
+homomultimerisation is Class.
+homomultimerisation SubClassOf protein complex assembly,.
+homomultimerisation SubClassOf has input only Protein Complex Subunit,.
+homomultimerisation SubClassOf has output only protein complex,.
+homomultimerisation SubClassOf has input max 1 participant.
+hydrolase activity is Class.
+hydrolase activity SubClassOf catalytic activity.
+isomerase activity is Class.
+isomerase activity SubClassOf catalytic activity.
+ligase activity is Class.
+ligase activity SubClassOf catalytic activity.
+lyase activity is Class.
+lyase activity SubClassOf catalytic activity.
+metabolite is Class.
+metabolite SubClassOf non-gene product.
+metalloprotein is Class.
+metalloprotein SubClassOf conjugated protein.
+molecular entity is Class.
+molecular entity SubClassOf Chemical.
+molecular function is Class.
+molecular function SubClassOf Activity.
+multimer of simple chemicals is Class.
+multimer of simple chemicals SubClassOf non-covalent complex.
+non-covalent complex is Class.
+non-covalent complex SubClassOf Chemical.
+non-gene product is Class.
+non-gene product SubClassOf Chemical.
+non-gene product DisjointWith Gene Product.
+oxidoreductase activity is Class.
+oxidoreductase activity SubClassOf catalytic activity.
+participant is Class.
+Thing is www.w3.org/2002/07/#.
+protein is Class.
+protein SubClassOf Gene Product.
+protein-cofactor complex is Class.
+protein-cofactor complex SubClassOf protein complex,.
+protein-cofactor complex SubClassOf has molecular part some cofactor.
+protein binding is Class.
+protein binding SubClassOf binding.
+protein chaperoning activity is Class.
+protein complex is Class.
+protein complex SubClassOf non-covalent complex,.
+protein complex SubClassOf protein,.
+protein complex SubClassOf has molecular part some Protein Complex Subunit.
+protein complex DisjointWith simple proteinv.
+protein complex assembly is Class.
+protein complex binding is Class.
+protein complex binding SubClassOf protein binding.
+protein disulfide is Class.
+protein disulfide SubClassOf protein.
+protein dithiol is Class.
+protein dithiol SubClassOf conjugated protein.
+protein folding is Class.
+protein folding SubClassOf protein chaperoning activity.
+simple proteinv is Class.
+simple proteinv SubClassOf protein.
+simple proteinv DisjointWith protein complex.
+spontaneous activity is Class.
+spontaneous activity SubClassOf Activity.
+transferase activity is Class.
+transferase activity SubClassOf catalytic activity.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2002/07/# DisjointClasses Activity,biological process,participant.

@@ -1,0 +1,256 @@
+www.w3.org/2000/01/-schema# is Datatype
+anyURI is Datatype
+boolean is Datatype
+int is Datatype
+string is Datatype
+RO_0000052 is ObjectProperty
+RO_0000052 Characteristics Functional
+RO_0000052 Domain BFO_0000020
+RO_0000052 Range BFO_0000004
+RO_0000052 InverseOf RO_0000053
+RO_0000053 is ObjectProperty
+RO_0000053 InverseOf RO_0000052
+assignedBy is ObjectProperty
+dateIssued is ObjectProperty
+dateTimeInterval is ObjectProperty
+dateTimeValue is ObjectProperty
+degreeCandidacy is ObjectProperty
+degreeCandidacy Domain AdvisingRelationship
+degreeCandidacy Range AcademicDegree
+expirationDate is ObjectProperty
+fundingVehicleFor is ObjectProperty
+fundingVehicleFor Domain Grant
+fundingVehicleFor InverseOf hasFundingVehicle
+grantSubcontractedThrough is ObjectProperty
+grantSubcontractedThrough Domain Grant
+Organization is ns.com/foaf/0.1/
+Organization InverseOf subcontractsGrant
+hasFundingVehicle is ObjectProperty
+hasFundingVehicle InverseOf fundingVehicleFor
+hasSubjectArea is ObjectProperty
+relates is ObjectProperty
+sponsoredBy is ObjectProperty
+sponsoredBy Domain Award
+Organization is ns.com/foaf/0.1/
+Organization InverseOf sponsors
+sponsors is ObjectProperty
+sponsors InverseOf sponsoredBy
+subcontractsGrant is ObjectProperty
+subcontractsGrant InverseOf grantSubcontractedThrough
+supportedInformationResource is ObjectProperty
+validIn is ObjectProperty
+abstract is DataProperty
+description is DataProperty
+hideFromDisplay is DataProperty
+hrJobTitle is DataProperty
+hrJobTitle Domain Position
+isCorrespondingAuthor is DataProperty
+isCorrespondingAuthor Characteristics Functional
+isCorrespondingAuthor Domain Authorship
+isCorrespondingAuthor Range boolean
+licenseNumber is DataProperty
+licenseNumber Domain Licensure
+rank is DataProperty
+geo is DataProperty
+geo Domain Geo
+geo Range anyURI
+language is DataProperty
+organizationName is DataProperty
+organizationName Domain OrganizationName
+organizationName Range string
+sortAs is DataProperty
+timeZone is DataProperty
+ARG_2000021 is Class
+ARG_2000021 SubClassOf BFO_0000019
+ARG_2000022 is Class
+ARG_2000022 SubClassOf BFO_0000019
+BFO_0000002 is Class
+BFO_0000004 is Class
+BFO_0000017 is Class
+BFO_0000017 SubClassOf BFO_0000020
+BFO_0000017 DisjointWith BFO_0000019
+BFO_0000019 is Class
+BFO_0000019 SubClassOf BFO_0000020
+BFO_0000019 DisjointWith BFO_0000017
+BFO_0000020 is Class
+BFO_0000020 SubClassOf BFO_0000002
+BFO_0000023 is Class
+ERO_0000778 is Class
+ERO_0000780 is Class
+ERO_0000780 SubClassOf ERO_0000778
+IAO_0000030 is Class
+OBI_0000571 is Class
+OBI_0000835 is Class
+Organization or ns.com/foaf/0.1/ is (ns.com/foaf/0.1/
+Agent is ns.com/foaf/0.1/
+AcademicDegree is Class
+AcademicTerm is Class
+AcademicTerm SubClassOf DateTimeInterval
+AdviseeRole is Class
+AdvisingRelationship is Class
+AdvisingRelationship SubClassOf Relationship,
+AdvisingRelationship SubClassOf relates some AdviseeRole,
+AdvisingRelationship SubClassOf relates some AdvisorRole,
+Person, is relates some ns.com/foaf/0.1/
+Person, is dateTimeInterval only DateTimeInterval,
+Thing is hasSubjectArea only www.w3.org/2002/07/#
+AdvisorRole is Class
+Authorship is Class
+Authorship SubClassOf Relationship,
+Authorship SubClassOf relates some IAO_0000030,
+Agent, is relates some ns.com/foaf/0.1/
+Agent, is hideFromDisplay only boolean
+Award is Class
+AwardReceipt is Class
+AwardReceipt SubClassOf Relationship,
+AwardReceipt SubClassOf relates some Award,
+Agent, is relates some ns.com/foaf/0.1/
+Organization, is assignedBy only ns.com/foaf/0.1/
+Organization, is dateTimeInterval only DateTimeInterval,
+Organization, is dateTimeValue only DateTimeValue,
+Literal is description only www.w3.org/2000/01/-schema#
+AwardedDegree is Class
+AwardedDegree SubClassOf Relationship,
+AwardedDegree SubClassOf relates some AcademicDegree,
+Person is relates some ns.com/foaf/0.1/
+Certification is Class
+Certification SubClassOf IssuedCredential
+CoPrincipalInvestigatorRole is Class
+CoPrincipalInvestigatorRole SubClassOf InvestigatorRole
+Contract is Class
+Contract SubClassOf Relationship,
+Contract SubClassOf relates some BFO_0000023,
+Agent, is relates some ns.com/foaf/0.1/
+Organization, is assignedBy only ns.com/foaf/0.1/
+Organization, is dateTimeInterval only DateTimeInterval,
+Organization, is supportedInformationResource only IAO_0000030,
+Literal is abstract only www.w3.org/2000/01/-schema#
+CoreLaboratory is Class
+CoreLaboratory SubClassOf ServiceProvidingLaboratory
+Credential is Class
+DateTimeInterval is Class
+DateTimeValue is Class
+Editorship is Class
+Editorship SubClassOf Relationship,
+Editorship SubClassOf relates some IAO_0000030,
+Agent is relates some ns.com/foaf/0.1/
+FacultyAdministrativePosition is Class
+FacultyAdministrativePosition SubClassOf Position
+FacultyMentoringRelationship is Class
+FacultyMentoringRelationship SubClassOf AdvisingRelationship
+FacultyPosition is Class
+FacultyPosition SubClassOf Position
+GeographicLocation is Class
+GraduateAdvisingRelationship is Class
+GraduateAdvisingRelationship SubClassOf AdvisingRelationship
+Grant is Class
+Grant SubClassOf Relationship,
+Grant SubClassOf relates some BFO_0000023,
+Agent, is relates some ns.com/foaf/0.1/
+Organization, is assignedBy only ns.com/foaf/0.1/
+Organization, is dateTimeInterval only DateTimeInterval,
+Organization, is supportedInformationResource only IAO_0000030,
+Literal is abstract only www.w3.org/2000/01/-schema#
+InvestigatorRole is Class
+IssuedCredential is Class
+IssuedCredential SubClassOf Relationship,
+IssuedCredential SubClassOf relates some Credential,
+Agent, is relates some ns.com/foaf/0.1/
+Agent, is dateIssued only DateTimeValue,
+Agent, is expirationDate only DateTimeValue,
+Thing, is hasSubjectArea only www.w3.org/2002/07/#
+Thing, is validIn only GeographicLocation,
+Literal is description only www.w3.org/2000/01/-schema#
+LibrarianPosition is Class
+LibrarianPosition SubClassOf Position
+License is Class
+License SubClassOf Credential
+Licensure is Class
+Licensure SubClassOf IssuedCredential
+NonAcademic is Class
+Person is ns.com/foaf/0.1/
+NonAcademicPosition is Class
+NonAcademicPosition SubClassOf Position
+NonFacultyAcademicPosition is Class
+NonFacultyAcademicPosition SubClassOf Position
+Position is Class
+Position SubClassOf Relationship,
+Organization, is relates some ns.com/foaf/0.1/
+Person, is relates some ns.com/foaf/0.1/
+Person, is dateTimeInterval only DateTimeInterval,
+Person, is rank only int
+PostdocOrFellowAdvisingRelationship is Class
+PostdocOrFellowAdvisingRelationship SubClassOf AdvisingRelationship
+PostdocPosition is Class
+PostdocPosition SubClassOf NonFacultyAcademicPosition
+PrimaryPosition is Class
+PrimaryPosition SubClassOf Position
+Relationship is Class
+Relationship SubClassOf BFO_0000020
+ServiceProvidingLaboratory is Class
+UndergraduateAdvisingRelationship is Class
+UndergraduateAdvisingRelationship SubClassOf AdvisingRelationship
+www.w3.org/2002/07/# is Class
+Cell is Class
+Cell SubClassOf TelephoneType
+Code is Class
+Coworker is Class
+Coworker SubClassOf RelatedType
+Fax is Class
+Fax SubClassOf TelephoneType
+Female is Class
+Female SubClassOf Gender
+Gender is Class
+Gender SubClassOf Code
+Geo is Class
+Geo EquivalentTo (geo some anyURI)
+Geo SubClassOf Geographical
+Geographical is Class
+Home is Class
+Home SubClassOf Type
+Logo is Class
+Logo SubClassOf Organizational
+Male is Class
+Male SubClassOf Gender
+Muse is Class
+Muse SubClassOf RelatedType
+None is Class
+None SubClassOf Gender
+OrganizationName is Class
+OrganizationName EquivalentTo (organizationName some string)
+OrganizationName SubClassOf Organizational
+OrganizationUnitName is Class
+OrganizationUnitName SubClassOf OrganizationName
+Organizational is Class
+Literal)) and ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema# is ((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#
+Thing is www.w3.org/2002/07/#
+Other is Class
+Other SubClassOf Gender
+Pager is Class
+Pager SubClassOf TelephoneType
+Related is Class
+Related SubClassOf Organizational
+RelatedType is Class
+Sibling is Class
+Sibling SubClassOf RelatedType
+TelephoneType is Class
+TelephoneType SubClassOf Code
+Text is Class
+Text SubClassOf TelephoneType
+TextPhone is Class
+TextPhone SubClassOf TelephoneType
+Title is Class
+Title SubClassOf Organizational
+Type is Class
+Type SubClassOf Code
+Unknown is Class
+Unknown SubClassOf Gender
+Video is Class
+Video SubClassOf TelephoneType
+Voice is Class
+Voice SubClassOf TelephoneType
+Work is Class
+Work SubClassOf Type
+ns.com/foaf/0.1/ is Class
+ns.com/foaf/0.1/ is Class
+ns.com/foaf/0.1/ is Class

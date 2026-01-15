@@ -1,0 +1,205 @@
+createdBy is ObjectProperty.
+examinedBy is ObjectProperty.
+examinedBy Domain SubstanceSample.
+examinedBy Range HumanBeing.
+examinedBy InverseOf examines.
+examines is ObjectProperty.
+examines InverseOf examinedBy.
+hasIdentifier is ObjectProperty.
+hasMagnitude is ObjectProperty.
+implements is ObjectProperty.
+sampledBy is ObjectProperty.
+sampledBy Domain SubstanceSample.
+sampledBy Range HumanBeing.
+sampledBy InverseOf samples.
+sampledFrom is ObjectProperty.
+sampledFrom Domain SubstanceSample.
+sampledFrom Range MaterialOrganismalIndependentContinuant or Organism or Site.
+samples is ObjectProperty.
+samples InverseOf sampledBy.
+spatialPositionOf is ObjectProperty.
+spatialPositionOf Domain SpatialRegion.
+spatialPositionOf Range IndependentContinuant.
+storedIn is ObjectProperty.
+undergoes is ObjectProperty.
+undergoesMedicalProcess is ObjectProperty.
+contains is ObjectProperty.
+hasPart is ObjectProperty.
+Address is Class.
+AnteriorSuperiorRenalSegment is Class.
+AntibodyMicroarray is Class.
+AntibodyMicroarray SubClassOf Microarray.
+AntibodyMicroarray DisjointWith TransfectionMicroarray.
+AntibodyMicroarray DisjointWith TissueMicroarray.
+AntibodyMicroarray DisjointWith ProteinMicroarray.
+AntibodyMicroarray DisjointWith DNAMicroarray.
+BioBankingOrganization is Class.
+BloodPlasmaSample is Class.
+BloodPlasmaSample SubClassOf SubstanceSample,.
+BloodPlasmaSample SubClassOf sampledFrom some Organism.
+BloodPlasmaSample DisjointWith UrineSample.
+BloodPlasmaSample DisjointWith HistologicalSample.
+BloodPlasmaSample DisjointWith BloodSample.
+BloodSample is Class.
+BloodSample SubClassOf SubstanceSample,.
+BloodSample SubClassOf sampledFrom some Organism,.
+BloodSample SubClassOf contains min 0 NumberOfBloodCells.
+BloodSample DisjointWith UrineSample.
+BloodSample DisjointWith HistologicalSample.
+BloodSample DisjointWith BloodPlasmaSample.
+BloodSerumSample is Class.
+BloodSerumSample SubClassOf SubstanceSample,.
+BloodSerumSample SubClassOf implements min 0 CatecholaminLevel.
+BoneMarrowProgenitorCellSample is Class.
+BoneMarrowProgenitorCellSample SubClassOf ProgenitorCellSample.
+CatecholaminLevel is Class.
+CerebrospinalLiquidPuncture is Class.
+CerebrospinalLiquidSample is Class.
+CerebrospinalLiquidSample SubClassOf SubstanceSample,.
+CerebrospinalLiquidSample SubClassOf createdBy min 0 CerebrospinalLiquidPuncture,.
+CerebrospinalLiquidSample SubClassOf undergoes min 0 TumorCellCounting,.
+CerebrospinalLiquidSample SubClassOf contains min 0 TumorCell.
+DNAMicroarray is Class.
+DNAMicroarray SubClassOf Microarray.
+DNAMicroarray DisjointWith TransfectionMicroarray.
+DNAMicroarray DisjointWith TissueMicroarray.
+DNAMicroarray DisjointWith ProteinMicroarray.
+DNAMicroarray DisjointWith AntibodyMicroarray.
+EU-RHAB is Class.
+HERATrial is Class.
+HistologicalSample is Class.
+HistologicalSample SubClassOf SubstanceSample,.
+HistologicalSample SubClassOf sampledFrom some Organism.
+HistologicalSample DisjointWith UrineSample.
+HistologicalSample DisjointWith BloodSample.
+HistologicalSample DisjointWith BloodPlasmaSample.
+HumanBeing is Class.
+InferiorRenalSegment is Class.
+LeftKidneyAnteriorSuperiorRenalSegment is Class.
+LeftKidneyAnteriorSuperiorRenalSegment SubClassOf AnteriorSuperiorRenalSegment.
+LeftKidneyAnteriorSuperiorRenalSegment DisjointWith RightKidneyAnteriorSuperiorRenalSegment.
+LeftKidneyInferiorRenalSegment is Class.
+LeftKidneyInferiorRenalSegment SubClassOf InferiorRenalSegment.
+LeftKidneyInferiorRenalSegment DisjointWith RightKidneyInferiorRenalSegment.
+LeftKidneyPosteriorRenalSegment is Class.
+LeftKidneyPosteriorRenalSegment SubClassOf PosteriorRenalSegment.
+LeftKidneyPosteriorRenalSegment DisjointWith RightKidneyPosteriorRenalSegment.
+MaterialOrganismalIndependentContinuant is Class.
+Microarray is Class.
+Microarray SubClassOf ObjectAggregate,.
+Thing is hasIdentifier exactly 1 www.w3.org/2002/07/#.
+NumberOfBloodCells is Class.
+NumberOfStemCells is Class.
+Organism is Class.
+PeripheralBloodSample is Class.
+PeripheralBloodSample SubClassOf BloodSample.
+PeripheralBloodStemCellSample is Class.
+PeripheralBloodStemCellSample SubClassOf StemCellSample.
+PerpheralProgenitorCellSample is Class.
+PerpheralProgenitorCellSample SubClassOf ProgenitorCellSample.
+PortionOfSoftTissue is Class.
+PortionOfSoftTissue SubClassOf FiatObjectPart.
+PosteriorRenalSegment is Class.
+ProgenitorCellSample is Class.
+ProgenitorCellSample SubClassOf SubstanceSample.
+ProteinMicroarray is Class.
+ProteinMicroarray SubClassOf Microarray.
+ProteinMicroarray DisjointWith TransfectionMicroarray.
+ProteinMicroarray DisjointWith TissueMicroarray.
+ProteinMicroarray DisjointWith DNAMicroarray.
+ProteinMicroarray DisjointWith AntibodyMicroarray.
+ResectionLine is Class.
+ResectionLine SubClassOf FiatObjectPart.
+RightKidneyAnteriorSuperiorRenalSegment is Class.
+RightKidneyAnteriorSuperiorRenalSegment DisjointWith LeftKidneyAnteriorSuperiorRenalSegment.
+RightKidneyInferiorRenalSegment is Class.
+RightKidneyInferiorRenalSegment DisjointWith LeftKidneyInferiorRenalSegment.
+RightKidneyPosteriorRenalSegment is Class.
+RightKidneyPosteriorRenalSegment DisjointWith LeftKidneyPosteriorRenalSegment.
+StemCellSample is Class.
+StemCellSample SubClassOf SubstanceSample,.
+StemCellSample SubClassOf hasMagnitude exactly 1 NumberOfStemCells.
+SubstanceSample is Class.
+SubstanceSample SubClassOf FiatObjectPart,.
+SubstanceSample SubClassOf sampledBy some HumanBeing,.
+SubstanceSample SubClassOf storedIn min 0 BioBankingOrganization,.
+Thing is undergoesMedicalProcess min 0 www.w3.org/2002/07/#.
+TissueMicroarray is Class.
+TissueMicroarray SubClassOf Microarray,.
+TissueMicroarray SubClassOf hasPart some HistologicalSample.
+TissueMicroarray DisjointWith TransfectionMicroarray.
+TissueMicroarray DisjointWith ProteinMicroarray.
+TissueMicroarray DisjointWith DNAMicroarray.
+TissueMicroarray DisjointWith AntibodyMicroarray.
+TissueSample is Class.
+TissueSample SubClassOf HistologicalSample.
+TransfectionMicroarray is Class.
+TransfectionMicroarray SubClassOf Microarray.
+TransfectionMicroarray DisjointWith TissueMicroarray.
+TransfectionMicroarray DisjointWith ProteinMicroarray.
+TransfectionMicroarray DisjointWith DNAMicroarray.
+TransfectionMicroarray DisjointWith AntibodyMicroarray.
+TumorCell is Class.
+TumorCellCounting is Class.
+TumorDNASample is Class.
+TumorDNASample SubClassOf SubstanceSample.
+TumorRNASample is Class.
+TumorRNASample SubClassOf SubstanceSample.
+TumorSample is Class.
+TumorSample SubClassOf HistologicalSample.
+UrineSample is Class.
+UrineSample SubClassOf SubstanceSample,.
+UrineSample SubClassOf sampledFrom some Organism,.
+UrineSample SubClassOf implements min 0 CatecholaminLevel.
+UrineSample DisjointWith HistologicalSample.
+UrineSample DisjointWith BloodSample.
+UrineSample DisjointWith BloodPlasmaSample.
+Continuant is Class.
+DependentContinuant is Class.
+DependentContinuant DisjointWith SpatialRegion.
+FiatObjectPart is Class.
+FiatObjectPart SubClassOf MaterialEntity.
+FiatObjectPart DisjointWith Site.
+FiatObjectPart DisjointWith ObjectBoundary.
+FiatObjectPart DisjointWith ObjectAggregate.
+FiatObjectPart DisjointWith Object.
+IndependentContinuant is Class.
+IndependentContinuant DisjointWith SpatialRegion.
+MaterialEntity is Class.
+MaterialEntity is equivalent to FiatObjectPart or Object or ObjectAggregate.
+MaterialEntity SubClassOf IndependentContinuant.
+MaterialEntity DisjointWith Site.
+MaterialEntity DisjointWith ObjectBoundary.
+Object is Class.
+Object SubClassOf MaterialEntity.
+Object DisjointWith ObjectAggregate.
+Object DisjointWith FiatObjectPart.
+ObjectAggregate is Class.
+ObjectAggregate SubClassOf MaterialEntity.
+ObjectAggregate DisjointWith Site.
+ObjectAggregate DisjointWith ObjectBoundary.
+ObjectAggregate DisjointWith Object.
+ObjectAggregate DisjointWith FiatObjectPart.
+ObjectBoundary is Class.
+ObjectBoundary DisjointWith ObjectAggregate.
+ObjectBoundary DisjointWith MaterialEntity.
+ObjectBoundary DisjointWith FiatObjectPart.
+OneDimensionalRegion is Class.
+OneDimensionalRegion SubClassOf SpatialRegion.
+Site is Class.
+Site DisjointWith ObjectAggregate.
+Site DisjointWith MaterialEntity.
+Site DisjointWith FiatObjectPart.
+SpatialRegion is Class.
+SpatialRegion is equivalent to OneDimensionalRegion or ThreeDimensionalRegion or TwoDimensionalRegion or ZeroDimensionalRegion.
+SpatialRegion SubClassOf Continuant,.
+SpatialRegion SubClassOf hasIdentifier min 0 Address.
+SpatialRegion DisjointWith IndependentContinuant.
+SpatialRegion DisjointWith DependentContinuant.
+ThreeDimensionalRegion is Class.
+ThreeDimensionalRegion SubClassOf SpatialRegion.
+TwoDimensionalRegion is Class.
+TwoDimensionalRegion SubClassOf SpatialRegion.
+ZeroDimensionalRegion is Class.
+ZeroDimensionalRegion SubClassOf SpatialRegion.
+www.w3.org/2002/07/# is Class.

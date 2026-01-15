@@ -1,0 +1,631 @@
+decimal is Datatype.
+integer is Datatype.
+hasContextObservation is ObjectProperty.
+hasContextObservation Characteristics Functional.
+hasContextObservation Domain Context.
+hasContextObservation Range Observation.
+hasSourceUnit is ObjectProperty.
+hasSourceUnit Characteristics Functional.
+hasSourceUnit Domain UnitConversion.
+hasSourceUnit Range Unit.
+hasTargetUnit is ObjectProperty.
+hasTargetUnit Characteristics Functional.
+hasTargetUnit Domain UnitConversion.
+hasTargetUnit Range Unit.
+hasValue is ObjectProperty.
+measurementFor is ObjectProperty.
+observationContextFor is ObjectProperty.
+observationContextFor Characteristics Functional.
+observationContextFor Domain Context.
+observationContextFor Range Observation.
+ofCharacteristic is ObjectProperty.
+ofEntity is ObjectProperty.
+standardFor is ObjectProperty.
+usesProtocol is ObjectProperty.
+usesStandard is ObjectProperty.
+hasMultiplier is DataProperty.
+hasMultiplier Characteristics Functional.
+hasMultiplier Domain UnitConversion.
+hasMultiplier Range decimal.
+hasOffset is DataProperty.
+hasOffset Characteristics Functional.
+hasOffset Domain UnitConversion.
+hasOffset Range decimal.
+CarbonNitrogenRatioByAmount is Class.
+CarbonNitrogenRatioByAmount SubClassOf Proportion.
+CarbonNitrogenRatioByMass is Class.
+CarbonNitrogenRatioByMass SubClassOf Proportion.
+DryMass is Class.
+DryMass SubClassOf Mass.
+DryMassPerWetMass is Class.
+DryMassPerWetMass SubClassOf MassPerMass.
+ElectrolyticConductivity SeaWater is Class.
+ElectrolyticConductivity SeaWater is equivalent to Measurement and (measurementFor only.
+ElectrolyticConductivity SeaWater is equivalent to (Observation and (ofEntity only OceanWaterSensorSample))) and (ofCharacteristic only Conductivity) and (usesProtocol only SeabirdElectronicsCTDProtocols) and (usesStandard only SiemensPerMeter).
+ElectrolyticConductivity SeaWater SubClassOf Measurement.
+FreshWater is Class.
+FreshWater SubClassOf Water.
+FreshWaterDiscreteSample is Class.
+FreshWaterDiscreteSample SubClassOf FreshWater.
+FreshWaterSensorSample is Class.
+FreshWaterSensorSample SubClassOf FreshWater.
+Kelp is Class.
+KelpPercentNitrogen is Class.
+KelpPercentNitrogen SubClassOf Measurement.
+Lake is Class.
+Lake SubClassOf OpenWaterBody.
+LakeWaterDiscreteSample is Class.
+LakeWaterDiscreteSample SubClassOf Lake.
+LakeWaterSensorSample is Class.
+LakeWaterSensorSample SubClassOf Lake.
+Macrocystis is Class.
+Macrocystis SubClassOf Kelp.
+Nereocystis is Class.
+Nereocystis SubClassOf Kelp.
+Ocean is Class.
+Ocean SubClassOf OpenWaterBody.
+OceanWaterDiscreteSample is Class.
+OceanWaterDiscreteSample SubClassOf Ocean,.
+OceanWaterDiscreteSample SubClassOf SalineWater.
+OceanWaterSensorSample is Class.
+OceanWaterSensorSample SubClassOf Ocean,.
+OceanWaterSensorSample SubClassOf SalineWater.
+OpenWaterBody is Class.
+PercentNitrogen is Class.
+PercentNitrogen SubClassOf MassPerMass.
+PrecipitationWaterSample is Class.
+PrecipitationWaterSample SubClassOf FreshWaterDiscreteSample.
+SBCSiteName is Class.
+SBCSiteName SubClassOf Name.
+SBC StreamWaterDiscreteSample is Class.
+SBC StreamWaterDiscreteSample SubClassOf FreshWaterDiscreteSample.
+SBC StreamWaterSensorSample is Class.
+SBC StreamWaterSensorSample SubClassOf FreshWaterSensorSample.
+SalineWater is Class.
+SalineWater SubClassOf Water.
+Salmonid is Class.
+SeabirdElectronicsCTDProtocols is Class.
+SockeyeSalmon is Class.
+SockeyeSalmon SubClassOf Salmonid.
+TaggedFish is Class.
+TaggedFish SubClassOf Name.
+TaggedKelpFrond is Class.
+TaggedKelpFrond SubClassOf Name.
+Water is Class.
+WetMass is Class.
+WetMass SubClassOf Mass.
+AcellularAnatomicalStructure is Class.
+AcellularAnatomicalStructure SubClassOf AnatomicalStructure.
+AnatomicalCluster is Class.
+AnatomicalCluster SubClassOf AnatomicalGroup.
+AnatomicalGroup is Class.
+AnatomicalGroup SubClassOf AnatomicalStructure.
+AnatomicalStructure is Class.
+AnatomicalSystem is Class.
+AnatomicalSystem SubClassOf AnatomicalGroup.
+CavitatedCompoundOrgan is Class.
+CavitatedCompoundOrgan SubClassOf CompoundOrgan.
+Cell is Class.
+Cell SubClassOf AnatomicalStructure.
+CellComponent is Class.
+CellComponent SubClassOf AnatomicalStructure.
+CompoundOrgan is Class.
+CompoundOrgan SubClassOf AnatomicalStructure.
+ExtraembryonicStructure is Class.
+ExtraembryonicStructure SubClassOf AnatomicalStructure.
+MultiCellularOrganism is Class.
+MultiCellularOrganism SubClassOf AnatomicalStructure.
+OrgansimSubdivision is Class.
+OrgansimSubdivision SubClassOf AnatomicalStructure.
+Otolith is Class.
+Otolith SubClassOf AcellularAnatomicalStructure.
+Stomach is Class.
+Stomach SubClassOf CavitatedCompoundOrgan.
+SurfaceStructure is Class.
+SurfaceStructure SubClassOf OrgansimSubdivision.
+Ammonium is Class.
+AmmoniumMoleToGram is Class.
+AmmoniumMoleToGram SubClassOf SubstanceConversion,.
+AmmoniumMoleToGram SubClassOf hasSourceUnit only (standardFor only (measurementFor only (ofEntity only Ammonium))),.
+AmmoniumMoleToGram SubClassOf hasTargetUnit only (standardFor only (measurementFor only (ofEntity only Ammonium))),.
+AmmoniumMoleToGram SubClassOf hasMultiplier value 18.03846,.
+AmmoniumMoleToGram SubClassOf hasOffset value 0.
+Carbon is Class.
+Carbon12 is Class.
+Carbon12 SubClassOf Carbon.
+Carbon13 is Class.
+Carbon13 SubClassOf Carbon.
+Carbon14 is Class.
+Carbon14 SubClassOf Carbon.
+ChlorophyllTotal is Class.
+ChlorophyllTotal SubClassOf Pigment.
+GroundWater is Class.
+GroundWater SubClassOf Porewater.
+Nitrogen is Class.
+Nitrogen14 is Class.
+Nitrogen14 SubClassOf Nitrogen.
+Nitrogen15 is Class.
+Nitrogen15 SubClassOf Nitrogen.
+Pigment is Class.
+Porewater is Class.
+Porewater SubClassOf Water.
+SubstanceConversion is Class.
+SubstanceConversion SubClassOf UnitConversion.
+Water is Class.
+BaseUnit is Class.
+BaseUnit SubClassOf Unit.
+CharacteristicQualifier is Class.
+CharacteristicQualifier DisjointWith UnitConversion.
+CompositeUnit is Class.
+CompositeUnit SubClassOf Unit.
+Context is Class.
+Context SubClassOf Measurement,.
+Context SubClassOf hasContextObservation some Observation,.
+Context SubClassOf ofCharacteristic only Relationship.
+Decimal is Class.
+DerivedUnit is Class.
+DerivedUnit SubClassOf Unit.
+Measurement is Class.
+Observation is Class.
+PhysicalCharacteristic is Class.
+Relationship is Class.
+Standard is Class.
+Unit is Class.
+Unit is equivalent to BaseUnit or CompositeUnit or DerivedUnit.
+Unit SubClassOf Standard,.
+Unit SubClassOf standardFor only.
+Unit SubClassOf (Measurement and (hasValue only Decimal)),.
+Unit SubClassOf standardFor only.
+Unit SubClassOf (Measurement and (ofCharacteristic only PhysicalCharacteristic)).
+UnitConversion is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is hasSourceUnit some Unit,.
+Thing, is hasTargetUnit some Unit.
+Thing, DisjointWith CharacteristicQualifier.
+DrainageBasin is Class.
+SubBasin is Class.
+SubBasin SubClassOf DrainageBasin.
+CompositeCurve is Class.
+CompositeCurve SubClassOf SpatialCurve.
+CompositeSolid is Class.
+CompositeSolid SubClassOf SpatialSolid.
+CompositeSurface is Class.
+CompositeSurface SubClassOf SpatialSurface.
+Curve is Class.
+Curve SubClassOf SpatialCurve.
+GeographicCoordinateReferenceSystem is Class.
+GeographicCoordinateReferenceSystem SubClassOf SingleCoordinateReferenceSystem.
+Grid is Class.
+GridCoverage is Class.
+GridCoverage SubClassOf SpatialDiscreetCoverage.
+ImageCoordinateReferenceSystem is Class.
+ImageCoordinateReferenceSystem SubClassOf SingleCoordinateReferenceSystem.
+LineString is Class.
+LineString SubClassOf SpatialCurve.
+MultiCurveCoverage is Class.
+MultiCurveCoverage SubClassOf SpatialDiscreetCoverage.
+MultiPoint is Class.
+MultiPoint SubClassOf SpatialGeometricAggregate.
+MultiPointCoverage is Class.
+MultiPointCoverage SubClassOf SpatialDiscreetCoverage.
+MultiPointCurve is Class.
+MultiPointCurve SubClassOf SpatialGeometricAggregate.
+MultiPointGeometry is Class.
+MultiPointGeometry SubClassOf SpatialGeometricAggregate.
+MultiSolid is Class.
+MultiSolid SubClassOf SpatialGeometricAggregate.
+MultiSolidCoverage is Class.
+MultiSolidCoverage SubClassOf SpatialDiscreetCoverage.
+MultiSurface is Class.
+MultiSurface SubClassOf SpatialGeometricAggregate.
+MultiSurfaceCoverage is Class.
+MultiSurfaceCoverage SubClassOf SpatialDiscreetCoverage.
+OrientableCurve is Class.
+OrientableCurve SubClassOf SpatialCurve.
+OrientableSurface is Class.
+OrientableSurface SubClassOf SpatialSurface.
+Plot is Class.
+Plot SubClassOf Polygon.
+Point is Class.
+Point SubClassOf SpatialGeometricPrimitive.
+Polygon is Class.
+Polygon SubClassOf SpatialSurface.
+PolyhedralSurface is Class.
+PolyhedralSurface SubClassOf Surface.
+RectifiedGrid is Class.
+RectifiedGrid SubClassOf Grid.
+RectifiedGridCoverage is Class.
+RectifiedGridCoverage SubClassOf SpatialDiscreetCoverage.
+SingleCoordinateReferenceSystem is Class.
+SpatialCoverage is Class.
+SpatialCurve is Class.
+SpatialCurve SubClassOf SpatialGeometricPrimitive.
+SpatialDiscreetCoverage is Class.
+SpatialDiscreetCoverage SubClassOf SpatialCoverage.
+SpatialGeometricAggregate is Class.
+SpatialGeometricPrimitive is Class.
+SpatialSolid is Class.
+SpatialSolid SubClassOf SpatialSurface.
+SpatialSurface is Class.
+SpatialSurface SubClassOf SpatialGeometricPrimitive.
+Surface is Class.
+Surface SubClassOf SpatialSurface.
+Transect is Class.
+Transect SubClassOf LineString.
+Waypoint is Class.
+Waypoint SubClassOf Point.
+Acre is Class.
+AcreToMeterSquared is Class.
+AcreToMeterSquared SubClassOf UnitConversion,.
+AcreToMeterSquared SubClassOf hasSourceUnit only Acre,.
+AcreToMeterSquared SubClassOf hasTargetUnit only MeterSquared,.
+AcreToMeterSquared SubClassOf hasMultiplier value 4046.85642,.
+AcreToMeterSquared SubClassOf hasOffset value 0.
+AcreToSquareMeter is Class.
+AcreToSquareMeter SubClassOf UnitConversion,.
+AcreToSquareMeter SubClassOf hasSourceUnit only Acre,.
+AcreToSquareMeter SubClassOf hasTargetUnit only MeterSquared,.
+AcreToSquareMeter SubClassOf hasMultiplier value 4046.8564,.
+AcreToSquareMeter SubClassOf hasOffset value 0.
+AngstromToMeter is Class.
+AngstromToMeter SubClassOf UnitConversion.
+Bar is Class.
+BarToKilopascal is Class.
+BarToKilopascal SubClassOf UnitConversion.
+Bushel is Class.
+BushelToLiter is Class.
+BushelToLiter SubClassOf UnitConversion,.
+BushelToLiter SubClassOf hasSourceUnit only Bushel,.
+BushelToLiter SubClassOf hasTargetUnit only Liter,.
+BushelToLiter SubClassOf hasMultiplier value 35.239072,.
+BushelToLiter SubClassOf hasOffset value 0.
+Celsius is Class.
+CelsiusToKelvin is Class.
+CelsiusToKelvin SubClassOf UnitConversion,.
+CelsiusToKelvin SubClassOf hasSourceUnit only Celsius,.
+CelsiusToKelvin SubClassOf hasTargetUnit only Kelvin,.
+CelsiusToKelvin SubClassOf hasMultiplier value 1,.
+CelsiusToKelvin SubClassOf hasOffset value 273.18.
+CentigramToKilogram is Class.
+CentigramToKilogram SubClassOf UnitConversion.
+CentimeterToMeter is Class.
+CentimeterToMeter SubClassOf UnitConversion.
+CentisecondToSecond is Class.
+CentisecondToSecond SubClassOf UnitConversion.
+Decibar is Class.
+DecibarToBar is Class.
+DecibarToBar SubClassOf UnitConversion,.
+DecibarToBar SubClassOf hasSourceUnit only Decibar,.
+DecibarToBar SubClassOf hasTargetUnit only Bar,.
+DecibarToBar SubClassOf hasMultiplier value 0.1,.
+DecibarToBar SubClassOf hasOffset value 0.0.
+Decigram is Class.
+DecigramToKilogram is Class.
+DecigramToKilogram SubClassOf UnitConversion,.
+DecigramToKilogram SubClassOf hasSourceUnit only Decigram,.
+DecigramToKilogram SubClassOf hasTargetUnit only Kilogram,.
+DecigramToKilogram SubClassOf hasMultiplier value 0.0001,.
+DecigramToKilogram SubClassOf hasOffset value 0.
+Decimeter is Class.
+DecimeterToMeter is Class.
+DecimeterToMeter SubClassOf UnitConversion,.
+DecimeterToMeter SubClassOf hasSourceUnit only Decimeter,.
+DecimeterToMeter SubClassOf hasTargetUnit only Meter,.
+DecimeterToMeter SubClassOf hasMultiplier value 0.1,.
+DecimeterToMeter SubClassOf hasOffset value 0.
+Decisecond is Class.
+DecisecondToSecond is Class.
+DecisecondToSecond SubClassOf UnitConversion,.
+DecisecondToSecond SubClassOf hasSourceUnit only Decisecond,.
+DecisecondToSecond SubClassOf hasTargetUnit only Second,.
+DecisecondToSecond SubClassOf hasMultiplier value 0.1,.
+DecisecondToSecond SubClassOf hasOffset value 0.
+DegreToRadian is Class.
+DegreToRadian SubClassOf UnitConversion.
+Dekagram is Class.
+DekagramToKilogram is Class.
+DekagramToKilogram SubClassOf UnitConversion,.
+DekagramToKilogram SubClassOf hasSourceUnit only Dekagram,.
+DekagramToKilogram SubClassOf hasTargetUnit only Kilogram,.
+DekagramToKilogram SubClassOf hasMultiplier value 0.01,.
+DekagramToKilogram SubClassOf hasOffset value 0.
+DekameterToMeter is Class.
+DekameterToMeter SubClassOf UnitConversion.
+Dekasecond is Class.
+DekasecondToSecond is Class.
+DekasecondToSecond SubClassOf UnitConversion,.
+DekasecondToSecond SubClassOf hasSourceUnit only Dekasecond,.
+DekasecondToSecond SubClassOf hasTargetUnit only Second,.
+DekasecondToSecond SubClassOf hasMultiplier value 10,.
+DekasecondToSecond SubClassOf hasOffset value 0.
+FahrenheitDegree is Class.
+FahrenheitDegreeToKelvin is Class.
+FahrenheitDegreeToKelvin SubClassOf UnitConversion,.
+FahrenheitDegreeToKelvin SubClassOf hasSourceUnit only FahrenheitDegree,.
+FahrenheitDegreeToKelvin SubClassOf hasTargetUnit only Kelvin,.
+FahrenheitDegreeToKelvin SubClassOf hasMultiplier value 0.556,.
+FahrenheitDegreeToKelvin SubClassOf hasOffset value 255.402.
+Fathom is Class.
+FathomToMeter is Class.
+FathomToMeter SubClassOf UnitConversion,.
+FathomToMeter SubClassOf hasSourceUnit only Fathom,.
+FathomToMeter SubClassOf hasTargetUnit only Meter,.
+FathomToMeter SubClassOf hasMultiplier value 1.8288,.
+FathomToMeter SubClassOf hasOffset value 0.
+Foot is Class.
+FootGoldCoastToMeter is Class.
+FootGoldCoastToMeter SubClassOf UnitConversion.
+FootToMeter is Class.
+FootToMeter SubClassOf UnitConversion,.
+FootToMeter SubClassOf hasSourceUnit only Foot,.
+FootToMeter SubClassOf hasTargetUnit only Meter,.
+FootToMeter SubClassOf hasMultiplier value 0.3048,.
+FootToMeter SubClassOf hasOffset value 0.
+Gallon is Class.
+GallonToLiter is Class.
+GallonToLiter SubClassOf UnitConversion,.
+GallonToLiter SubClassOf hasSourceUnit only Gallon,.
+GallonToLiter SubClassOf hasTargetUnit only Liter,.
+GallonToLiter SubClassOf hasMultiplier value 3.78541178,.
+GallonToLiter SubClassOf hasOffset value 0.
+Grad is Class.
+GradToRadian is Class.
+GradToRadian SubClassOf UnitConversion,.
+GradToRadian SubClassOf hasSourceUnit only Grad,.
+GradToRadian SubClassOf hasTargetUnit only Radian,.
+GradToRadian SubClassOf hasMultiplier value 0.015707,.
+GradToRadian SubClassOf hasOffset value 0.
+Gram is Class.
+GramToKilogram is Class.
+GramToKilogram SubClassOf UnitConversion,.
+GramToKilogram SubClassOf hasSourceUnit only Gram,.
+GramToKilogram SubClassOf hasTargetUnit only Kilogram,.
+GramToKilogram SubClassOf hasMultiplier value 0.001,.
+GramToKilogram SubClassOf hasOffset value 0.
+Hectogram is Class.
+HectogramToKilogram is Class.
+HectogramToKilogram SubClassOf UnitConversion,.
+HectogramToKilogram SubClassOf hasSourceUnit only Hectogram,.
+HectogramToKilogram SubClassOf hasTargetUnit only Kilogram,.
+HectogramToKilogram SubClassOf hasMultiplier value 0.1,.
+HectogramToKilogram SubClassOf hasOffset value 0.
+HectometerToMeter is Class.
+HectometerToMeter SubClassOf UnitConversion.
+HectopascalToPascal is Class.
+HectopascalToPascal SubClassOf UnitConversion.
+Hectosecond is Class.
+HectosecondToSecond is Class.
+HectosecondToSecond SubClassOf UnitConversion,.
+HectosecondToSecond SubClassOf hasSourceUnit only Hectosecond,.
+HectosecondToSecond SubClassOf hasTargetUnit only Second,.
+HectosecondToSecond SubClassOf hasMultiplier value 100,.
+HectosecondToSecond SubClassOf hasOffset value 0.
+Hour is Class.
+HourToSecond is Class.
+HourToSecond SubClassOf UnitConversion,.
+HourToSecond SubClassOf hasSourceUnit only Hour,.
+HourToSecond SubClassOf hasTargetUnit only Second,.
+HourToSecond SubClassOf hasMultiplier value 3600,.
+HourToSecond SubClassOf hasOffset value 0.
+InchToMeter is Class.
+InchToMeter SubClassOf UnitConversion.
+Kelvin is Class.
+Kilogram is Class.
+Kilometer is Class.
+KilometerToMeter is Class.
+KilometerToMeter SubClassOf UnitConversion,.
+KilometerToMeter SubClassOf hasSourceUnit only Kilometer,.
+KilometerToMeter SubClassOf hasTargetUnit only Meter,.
+KilometerToMeter SubClassOf hasMultiplier value 1000,.
+KilometerToMeter SubClassOf hasOffset value 0.
+Kilosecond is Class.
+KilosecondToSecond is Class.
+KilosecondToSecond SubClassOf UnitConversion,.
+KilosecondToSecond SubClassOf hasSourceUnit only Kilosecond,.
+KilosecondToSecond SubClassOf hasTargetUnit only Second,.
+KilosecondToSecond SubClassOf hasMultiplier value 1000,.
+KilosecondToSecond SubClassOf hasOffset value 0.
+LinkClarke is Class.
+LinkClarkeToMeter is Class.
+LinkClarkeToMeter SubClassOf UnitConversion,.
+LinkClarkeToMeter SubClassOf hasSourceUnit only LinkClarke,.
+LinkClarkeToMeter SubClassOf hasTargetUnit only Meter,.
+LinkClarkeToMeter SubClassOf hasMultiplier value 0.201166,.
+LinkClarkeToMeter SubClassOf hasOffset value 0.
+Liter is Class.
+LiterToMeterCubed is Class.
+LiterToMeterCubed SubClassOf UnitConversion,.
+LiterToMeterCubed SubClassOf hasSourceUnit only Liter,.
+LiterToMeterCubed SubClassOf hasTargetUnit only MeterCubed,.
+LiterToMeterCubed SubClassOf hasMultiplier value 0.001,.
+LiterToMeterCubed SubClassOf hasOffset value 0.
+Megagram is Class.
+MegagramToKilogram is Class.
+MegagramToKilogram SubClassOf UnitConversion,.
+MegagramToKilogram SubClassOf hasSourceUnit only Megagram,.
+MegagramToKilogram SubClassOf hasTargetUnit only Kilogram,.
+MegagramToKilogram SubClassOf hasMultiplier value 1000,.
+MegagramToKilogram SubClassOf hasOffset value 0.
+Megameter is Class.
+MegameterToMeter is Class.
+MegameterToMeter SubClassOf UnitConversion,.
+MegameterToMeter SubClassOf hasSourceUnit only Megameter,.
+MegameterToMeter SubClassOf hasTargetUnit only Meter,.
+MegameterToMeter SubClassOf hasMultiplier value 1000000,.
+MegameterToMeter SubClassOf hasOffset value 0.
+Megasecond is Class.
+MegasecondToSecond is Class.
+MegasecondToSecond SubClassOf UnitConversion,.
+MegasecondToSecond SubClassOf hasSourceUnit only Megasecond,.
+MegasecondToSecond SubClassOf hasTargetUnit only Second,.
+MegasecondToSecond SubClassOf hasMultiplier value 1000000,.
+MegasecondToSecond SubClassOf hasOffset value 0.
+Meter is Class.
+MeterCubed is Class.
+MeterSquared is Class.
+Microgram is Class.
+MicrogramToKilogram is Class.
+MicrogramToKilogram SubClassOf UnitConversion,.
+MicrogramToKilogram SubClassOf hasSourceUnit only Microgram,.
+MicrogramToKilogram SubClassOf hasTargetUnit only Kilogram,.
+MicrogramToKilogram SubClassOf hasMultiplier value 1000000000,.
+MicrogramToKilogram SubClassOf hasOffset value 0.
+MicrometerToMeter is Class.
+MicrometerToMeter SubClassOf UnitConversion.
+Micron is Class.
+MicronToMeter is Class.
+MicronToMeter SubClassOf UnitConversion,.
+MicronToMeter SubClassOf hasSourceUnit only Micron,.
+MicronToMeter SubClassOf hasTargetUnit only Meter,.
+MicronToMeter SubClassOf hasMultiplier value 1000000,.
+MicronToMeter SubClassOf hasOffset value 0.
+Microsecond is Class.
+MicrosecondToSecond is Class.
+MicrosecondToSecond SubClassOf UnitConversion,.
+MicrosecondToSecond SubClassOf hasSourceUnit only Microsecond,.
+MicrosecondToSecond SubClassOf hasTargetUnit only Second,.
+MicrosecondToSecond SubClassOf hasMultiplier value 1000000,.
+MicrosecondToSecond SubClassOf hasOffset value 0.
+Mile is Class.
+MileToMeter is Class.
+MileToMeter SubClassOf UnitConversion,.
+MileToMeter SubClassOf hasSourceUnit only Mile,.
+MileToMeter SubClassOf hasTargetUnit only Meter,.
+MileToMeter SubClassOf hasMultiplier value 1609.344,.
+MileToMeter SubClassOf hasOffset value 0.
+Millibar is Class.
+MillibarToBar is Class.
+MillibarToBar SubClassOf UnitConversion,.
+MillibarToBar SubClassOf hasSourceUnit only Millibar,.
+MillibarToBar SubClassOf hasTargetUnit only Bar,.
+MillibarToBar SubClassOf hasMultiplier value 0.0010,.
+MillibarToBar SubClassOf hasOffset value 0.0.
+MilligramToKilogram is Class.
+MilligramToKilogram SubClassOf UnitConversion.
+MillimeterToMeter is Class.
+MillimeterToMeter SubClassOf UnitConversion.
+Millisecond is Class.
+MillisecondToSecond is Class.
+MillisecondToSecond SubClassOf UnitConversion,.
+MillisecondToSecond SubClassOf hasSourceUnit only Millisecond,.
+MillisecondToSecond SubClassOf hasTargetUnit only Second,.
+MillisecondToSecond SubClassOf hasMultiplier value 0.001,.
+MillisecondToSecond SubClassOf hasOffset value 0.
+Minute is Class.
+MinuteToSecond is Class.
+MinuteToSecond SubClassOf UnitConversion,.
+MinuteToSecond SubClassOf hasSourceUnit only Minute,.
+MinuteToSecond SubClassOf hasTargetUnit only Second,.
+MinuteToSecond SubClassOf hasMultiplier value 60,.
+MinuteToSecond SubClassOf hasOffset value 0.
+Nanogram is Class.
+NanogramToKilogram is Class.
+NanogramToKilogram SubClassOf UnitConversion,.
+NanogramToKilogram SubClassOf hasSourceUnit only Nanogram,.
+NanogramToKilogram SubClassOf hasTargetUnit only Kilogram,.
+NanogramToKilogram SubClassOf hasMultiplier value 1000000000000,.
+NanogramToKilogram SubClassOf hasOffset value 0.
+NanometerToMeter is Class.
+NanometerToMeter SubClassOf UnitConversion.
+Nanosecond is Class.
+NanosecondToSecond is Class.
+NanosecondToSecond SubClassOf UnitConversion,.
+NanosecondToSecond SubClassOf hasSourceUnit only Nanosecond,.
+NanosecondToSecond SubClassOf hasTargetUnit only Second,.
+NanosecondToSecond SubClassOf hasMultiplier value 1000000000,.
+NanosecondToSecond SubClassOf hasOffset value 0.
+NauticalMileToMeter is Class.
+NauticalMileToMeter SubClassOf UnitConversion.
+NominalDay is Class.
+NominalDayToSecond is Class.
+NominalDayToSecond SubClassOf UnitConversion,.
+NominalDayToSecond SubClassOf hasSourceUnit only NominalDay,.
+NominalDayToSecond SubClassOf hasTargetUnit only Second,.
+NominalDayToSecond SubClassOf hasMultiplier value 86400,.
+NominalDayToSecond SubClassOf hasOffset value 0.
+NominalHour is Class.
+NominalHourToSecond is Class.
+NominalHourToSecond SubClassOf UnitConversion,.
+NominalHourToSecond SubClassOf hasSourceUnit only NominalHour,.
+NominalHourToSecond SubClassOf hasTargetUnit only Second,.
+NominalHourToSecond SubClassOf hasMultiplier value 3600,.
+NominalHourToSecond SubClassOf hasOffset value 0.
+NominalLeapYear is Class.
+NominalLeapYearToSecond is Class.
+NominalLeapYearToSecond SubClassOf UnitConversion,.
+NominalLeapYearToSecond SubClassOf hasSourceUnit only NominalLeapYear,.
+NominalLeapYearToSecond SubClassOf hasTargetUnit only Second,.
+NominalLeapYearToSecond SubClassOf hasMultiplier value 31643326,.
+NominalLeapYearToSecond SubClassOf hasOffset value 0.
+NominalMinute is Class.
+NominalMinuteToSecond is Class.
+NominalMinuteToSecond SubClassOf UnitConversion,.
+NominalMinuteToSecond SubClassOf hasSourceUnit only NominalMinute,.
+NominalMinuteToSecond SubClassOf hasTargetUnit only Second,.
+NominalMinuteToSecond SubClassOf hasMultiplier value 60,.
+NominalMinuteToSecond SubClassOf hasOffset value 0.
+NominalWeek is Class.
+NominalWeekToSecond is Class.
+NominalWeekToSecond SubClassOf UnitConversion,.
+NominalWeekToSecond SubClassOf hasSourceUnit only NominalWeek,.
+NominalWeekToSecond SubClassOf hasTargetUnit only Second,.
+NominalWeekToSecond SubClassOf hasMultiplier value 604800,.
+NominalWeekToSecond SubClassOf hasOffset value 0.
+NominalYear is Class.
+NominalYearToSecond is Class.
+NominalYearToSecond SubClassOf UnitConversion,.
+NominalYearToSecond SubClassOf hasSourceUnit only NominalYear,.
+NominalYearToSecond SubClassOf hasTargetUnit only Second,.
+NominalYearToSecond SubClassOf hasMultiplier value 31556926,.
+NominalYearToSecond SubClassOf hasOffset value 0.
+Pint is Class.
+PintToLiter is Class.
+PintToLiter SubClassOf UnitConversion,.
+PintToLiter SubClassOf hasSourceUnit only Pint,.
+PintToLiter SubClassOf hasTargetUnit only Liter,.
+PintToLiter SubClassOf hasMultiplier value 0.473176473,.
+PintToLiter SubClassOf hasOffset value 0.
+Pound is Class.
+PoundToKilogram is Class.
+PoundToKilogram SubClassOf UnitConversion,.
+PoundToKilogram SubClassOf hasSourceUnit only Pound,.
+PoundToKilogram SubClassOf hasTargetUnit only Kilogram,.
+PoundToKilogram SubClassOf hasMultiplier value 0.4536,.
+PoundToKilogram SubClassOf hasOffset value 0.
+Quart is Class.
+QuartToLiter is Class.
+QuartToLiter SubClassOf UnitConversion,.
+QuartToLiter SubClassOf hasSourceUnit only Quart,.
+QuartToLiter SubClassOf hasTargetUnit only Liter,.
+QuartToLiter SubClassOf hasMultiplier value 0.946352946,.
+QuartToLiter SubClassOf hasOffset value 0.
+Radian is Class.
+Second is Class.
+Ton is Class.
+TonToKilogram is Class.
+TonToKilogram SubClassOf UnitConversion,.
+TonToKilogram SubClassOf hasSourceUnit only Ton,.
+TonToKilogram SubClassOf hasTargetUnit only Kilogram,.
+TonToKilogram SubClassOf hasMultiplier value 907.2,.
+TonToKilogram SubClassOf hasOffset value 0.
+Tonne is Class.
+TonneToKilogram is Class.
+TonneToKilogram SubClassOf UnitConversion,.
+TonneToKilogram SubClassOf hasSourceUnit only Tonne,.
+TonneToKilogram SubClassOf hasTargetUnit only Kilogram,.
+TonneToKilogram SubClassOf hasMultiplier value 1000,.
+TonneToKilogram SubClassOf hasOffset value 0.
+YardIndianToMeter is Class.
+YardIndianToMeter SubClassOf UnitConversion.
+YardToMeter is Class.
+YardToMeter SubClassOf UnitConversion.
+TimeGeometricPrimitive is Class.
+TimePeriod is Class.
+TimePeriod SubClassOf TimeGeometricPrimitive.
+Conductivity is Class.
+Mass is Class.
+MassPerMass is Class.
+Proportion is Class.
+SiemensPerMeter is Class.
+Name is Class.
+www.w3.org/2002/07/# is Class.

@@ -1,0 +1,431 @@
+bearer_of is ObjectProperty
+is_entity_used_in is ObjectProperty
+part_of is ObjectProperty
+Gave_up_before_pregnancy_(Alcohol_intake) is Class
+Gave_up_before_pregnancy_(Alcohol_intake) SubClassOf Alcohol_intake
+Gave_up_during_pregnancy_(Alcohol_intake) is Class
+Gave_up_during_pregnancy_(Alcohol_intake) SubClassOf Alcohol_intake
+Age is Class
+Age SubClassOf Quality,
+Age SubClassOf bearer_of some Risk_factor,
+Age SubClassOf is_entity_used_in some epidemiology_context,
+Age SubClassOf is_entity_used_in some etiological_context
+Age_adjusted_mortality_rate is Class
+Age_adjusted_mortality_rate SubClassOf Mortility_rate
+Age_specific_mortality_rate is Class
+Age_specific_mortality_rate SubClassOf Mortility_rate
+Age_standardized_mortality_rate is Class
+Age_standardized_mortality_rate SubClassOf Standardized_mortality_rate
+Annual_prevalence is Class
+Annual_prevalence SubClassOf prevalence,
+Annual_prevalence SubClassOf is_entity_used_in some prevalence_context
+Birth_defect_rate is Class
+Birth_defect_rate SubClassOf prevalence,
+Birth_defect_rate SubClassOf is_entity_used_in some prevalence_context,
+Birth_defect_rate SubClassOf is_entity_used_in only Middle_class_economic_status
+Cause_specific_mortality_rate is Class
+Cause_specific_mortality_rate SubClassOf Mortility_rate
+Crude_mortality_rate is Class
+Crude_mortality_rate SubClassOf Mortility_rate
+Cumulative_death_rate is Class
+Cumulative_death_rate SubClassOf Mortility_rate
+Death_to_case_ratio is Class
+Death_to_case_ratio SubClassOf rate,
+Death_to_case_ratio SubClassOf is_entity_used_in some descriptive_statistical_context,
+Death_to_case_ratio SubClassOf is_entity_used_in some measure_of_disease_occurrence_context
+Disease_rate_at_autopsy is Class
+Disease_rate_at_autopsy SubClassOf prevalence,
+Disease_rate_at_autopsy SubClassOf is_entity_used_in some prevalence_context
+Distribution is Class
+Distribution SubClassOf Quality,
+Distribution SubClassOf is_entity_used_in some descriptive_statistical_context,
+Distribution SubClassOf is_entity_used_in some measure_of_disease_occurrence_context
+Frequency_measure is Class
+Frequency_measure SubClassOf Quality,
+Frequency_measure SubClassOf is_entity_used_in some descriptive_statistical_context,
+Frequency_measure SubClassOf is_entity_used_in some measure_of_disease_occurrence_context
+Gender is Class
+Gender SubClassOf Quality,
+Gender SubClassOf bearer_of some Risk_factor,
+Gender SubClassOf is_entity_used_in some epidemiology_context
+Life_time_prevalence is Class
+Life_time_prevalence SubClassOf prevalence,
+Life_time_prevalence SubClassOf is_entity_used_in some prevalence_context
+Measure_of_central_location is Class
+Measure_of_central_location SubClassOf Quality,
+Measure_of_central_location SubClassOf is_entity_used_in some descriptive_statistical_context,
+Measure_of_central_location SubClassOf is_entity_used_in some measure_of_disease_occurrence_context
+Measure_of_dispersion is Class
+Measure_of_dispersion SubClassOf Quality,
+Measure_of_dispersion SubClassOf is_entity_used_in some descriptive_statistical_context,
+Measure_of_dispersion SubClassOf is_entity_used_in some measure_of_disease_occurrence_context
+Mortality is Class
+Mortality SubClassOf Quality,
+Mortality SubClassOf is_entity_used_in some descriptive_statistical_context,
+Mortality SubClassOf is_entity_used_in some measure_of_disease_occurrence_context
+Mortility_rate is Class
+Mortility_rate SubClassOf rate,
+Mortility_rate SubClassOf is_entity_used_in some descriptive_statistical_context,
+Mortility_rate SubClassOf is_entity_used_in some measure_of_disease_occurrence_context
+Outcome is Class
+Period_Prevalence is Class
+Period_Prevalence SubClassOf prevalence,
+Period_Prevalence SubClassOf is_entity_used_in some prevalence_context
+Point_prevalence is Class
+Point_prevalence SubClassOf prevalence,
+Point_prevalence SubClassOf is_entity_used_in some prevalence_context
+Prevalence_rate is Class
+Prevalence_rate SubClassOf prevalence,
+Prevalence_rate SubClassOf is_entity_used_in some prevalence_context
+Proportion is Class
+Proportion SubClassOf rate,
+Proportion SubClassOf is_entity_used_in some descriptive_statistical_context,
+Proportion SubClassOf is_entity_used_in some measure_of_disease_occurrence_context
+Race is Class
+Race SubClassOf Quality,
+Race SubClassOf is_entity_used_in some epidemiology_context
+Race_specific_mortality_rate is Class
+Race_specific_mortality_rate SubClassOf Mortility_rate
+Risk_factor is Class
+Sex_specific_mortality_rate is Class
+Sex_specific_mortality_rate SubClassOf Mortility_rate
+Standardized_mortality_rate is Class
+Standardized_mortality_rate SubClassOf Mortility_rate
+Standardized_mortality_ratio is Class
+Standardized_mortality_ratio SubClassOf Standardized_mortality_rate
+Symptoms is Class
+Symptoms SubClassOf Quality,
+Symptoms SubClassOf is_entity_used_in some diagnosis_context
+Trend is Class
+Trend SubClassOf Quality,
+Trend SubClassOf is_entity_used_in some descriptive_statistical_context,
+Trend SubClassOf is_entity_used_in some measure_of_disease_occurrence_context
+clinical_treatment_context is Class
+clinical_trial_context is Class
+descriptive_statistical_context is Class
+diagnosis_context is Class
+epidemiology_context is Class
+etiological_context is Class
+female is Class
+female SubClassOf Gender
+male is Class
+male SubClassOf Gender
+measure_of_disease_occurrence_context is Class
+outcome_measure is Class
+outcome_measure SubClassOf Outcome,
+outcome_measure SubClassOf Quality,
+outcome_measure SubClassOf is_entity_used_in some clinical_trial_context
+prevalence is Class
+prevalence SubClassOf rate,
+prevalence SubClassOf is_entity_used_in some prevalence_context
+prevalence_context is Class
+prevalence_context DisjointWith Middle_class_economic_status
+primary_outcome_measure is Class
+primary_outcome_measure SubClassOf outcome_measure
+rate is Class
+rate SubClassOf Quality,
+rate SubClassOf is_entity_used_in some descriptive_statistical_context
+secondary_outcome_measure is Class
+secondary_outcome_measure SubClassOf outcome_measure
+Quality is Class
+Quality SubClassOf SpecificallyDependentContinuant
+Quality DisjointWith RealizableEntity
+RealizableEntity is Class
+RealizableEntity DisjointWith Quality
+SpecificallyDependentContinuant is Class
+Abdominal_pain is Class
+Abdominal_pain SubClassOf Pain
+Abortion_Habitual is Class
+Abortion_Habitual SubClassOf Gynecological_history
+Academic_progress is Class
+Academic_progress SubClassOf Education_and_schooling_detail
+Age_at_birth is Class
+Age_at_birth SubClassOf Age
+Age_at_leaving_school is Class
+Age_at_leaving_school SubClassOf Education_and_schooling_detail
+Age_at_menarche is Class
+Age_at_menarche SubClassOf Age
+Age_at_onset is Class
+Age_at_onset SubClassOf Age
+Age_at_starting_school is Class
+Age_at_starting_school SubClassOf Education_and_schooling_detail
+Alcohol_abuse is Class
+Alcohol_abuse SubClassOf Alcohol_intake
+Alcohol_intake is Class
+Alcohol_intake SubClassOf Quality
+Asian_race is Class
+Asian_race SubClassOf Race
+Availability_of_caesarean_section is Class
+Availability_of_caesarean_section SubClassOf Availability_of_medical_resources
+Availability_of_medical_resources is Class
+Availability_of_medical_resources SubClassOf Quality
+Basic_attribute_on_pregnancy is Class
+Basic_attribute_on_pregnancy SubClassOf Quality
+Birth is Class
+Birth SubClassOf Basic_attribute_on_pregnancy
+Birth_weight_of_the_pregnant_woman is Class
+Birth_weight_of_the_pregnant_woman SubClassOf Quality
+Black_-_ethnic_group is Class
+Black_-_ethnic_group SubClassOf Race
+Blue-collar_worker is Class
+Blue-collar_worker SubClassOf Employment_detail
+Body_height_measure is Class
+Body_height_measure SubClassOf Body_measure
+Body_mass_index is Class
+Body_mass_index SubClassOf Body_measure
+Body_measure is Class
+Body_measure SubClassOf Quality
+Body_weight_measure is Class
+Body_weight_measure SubClassOf Body_measure
+Borderline_poverty_status is Class
+Borderline_poverty_status SubClassOf Economic_status
+Born_from_pre-eclamptic_mother is Class
+Born_from_pre-eclamptic_mother SubClassOf Basic_attribute_on_pregnancy
+C_H_-_Chronic_disease is Class
+C_H_-_Chronic_disease SubClassOf Medical_history
+C_H_-_Mental_disorder is Class
+C_H_-_Mental_disorder SubClassOf Medical_history
+Cannabis_abuse is Class
+Cannabis_abuse SubClassOf Drug_abuse
+Change_of_partner is Class
+Change_of_partner SubClassOf Marital_status
+Chemical_exposure is Class
+Chemical_exposure SubClassOf Quality
+Climate is Class
+Climate SubClassOf Quality
+Cocaine_abuse is Class
+Cocaine_abuse SubClassOf Drug_abuse
+Codeine_abuse is Class
+Codeine_abuse SubClassOf Drug_abuse
+Cough is Class
+Cough SubClassOf Symptoms
+Current_intake is Class
+Current_intake SubClassOf Alcohol_intake
+Current_pregnancy is Class
+Current_pregnancy SubClassOf Pregnancy
+Details_of_education is Class
+Details_of_education SubClassOf Education_and_schooling_detail
+Diet_poor is Class
+Diet_poor SubClassOf Prenatal_Nutritional_Physiological_Phenomena
+Drug_abuse is Class
+Drug_abuse SubClassOf Quality
+Duration_of_formal_education is Class
+Duration_of_formal_education SubClassOf Education_and_schooling_detail
+Eclampsia is Class
+Economic_independence_status is Class
+Economic_independence_status SubClassOf Economic_status
+Economic_status is Class
+Economic_status SubClassOf Quality
+Education_and_schooling_detail is Class
+Education_and_schooling_detail SubClassOf Quality
+Education_currently_received is Class
+Education_currently_received SubClassOf Education_and_schooling_detail
+Education_received_in_the_past is Class
+Education_received_in_the_past SubClassOf Education_and_schooling_detail
+Educational_achievement is Class
+Educational_achievement SubClassOf Education_and_schooling_detail
+Educational_level_of_guardian_of_subject is Class
+Educational_level_of_guardian_of_subject SubClassOf Education_and_schooling_detail
+Educational_level_of_parent_of_subject is Class
+Educational_level_of_parent_of_subject SubClassOf Education_and_schooling_detail
+Employment_detail is Class
+Employment_detail SubClassOf Quality
+Epigastric_pain is Class
+Epigastric_pain SubClassOf Pain
+Estimated_fetal_gestational_age_at_delivery is Class
+Estimated_fetal_gestational_age_at_delivery SubClassOf Fetal_gestational_age
+Ex-tobacco_user is Class
+Ex-tobacco_user SubClassOf Maternal_tobacco_use
+Fetal_gestational_age is Class
+Fetal_gestational_age SubClassOf Quality
+Fetal_growth_restriction is Class
+Gave_up_before_pregnancy is Class
+Gave_up_before_pregnancy SubClassOf Maternal_tobacco_use
+Gave_up_during_pregnancy is Class
+Gave_up_during_pregnancy SubClassOf Maternal_tobacco_use
+Genetics is Class
+Genetics SubClassOf Quality,
+Genetics SubClassOf bearer_of some Risk_factor
+Gestational_diabetes_mellitus is Class
+Gestational_hypertension is Class
+Gynecological_history is Class
+Gynecological_history SubClassOf Pregnancy
+HELLP_syndrome is Class
+Headache is Class
+Headache SubClassOf Symptoms
+Heroin_abuse is Class
+Heroin_abuse SubClassOf Drug_abuse
+High_physical_activity is Class
+High_physical_activity SubClassOf Physically_active
+Higher_education is Class
+Higher_education SubClassOf Education_and_schooling_detail
+Indian is Class
+Indian SubClassOf Race
+Insulin_resistance is Class
+Insulin_resistance SubClassOf Quality
+Irregularly_used is Class
+Irregularly_used SubClassOf Maternal_tobacco_use
+Lack_of_social_support is Class
+Lack_of_social_support SubClassOf Social_support_status
+Length_of_gestation_at_birth is Class
+Length_of_gestation_at_birth SubClassOf Fetal_gestational_age
+Length_of_gestation_at_time_of_procedure is Class
+Length_of_gestation_at_time_of_procedure SubClassOf Fetal_gestational_age
+Loan_foreclosure_status is Class
+Loan_foreclosure_status SubClassOf Economic_status
+Low_physical_activity is Class
+Low_physical_activity SubClassOf Physically_active
+Lower_class_economic_status is Class
+Lower_class_economic_status SubClassOf Economic_status
+Lower_middle_class_economic_status is Class
+Lower_middle_class_economic_status SubClassOf Economic_status
+Malnourishment is Class
+Malnourishment SubClassOf Prenatal_Nutritional_Physiological_Phenomena
+Marital_status is Class
+Marital_status SubClassOf Quality
+Maternal_mortality_rate is Class
+Maternal_mortality_rate SubClassOf Mortility_rate
+Maternal_tobacco_use is Class
+Maternal_tobacco_use SubClassOf Tobacco_use_and_exposure_-_finding
+Medical_history is Class
+Medical_history SubClassOf Quality,
+Medical_history SubClassOf part_of some Gestational_hypertension
+Methadone_abuse is Class
+Methadone_abuse SubClassOf Drug_abuse
+Methamphetamine_abuse is Class
+Methamphetamine_abuse SubClassOf Drug_abuse
+Middle_class_economic_status is Class
+Middle_class_economic_status SubClassOf Economic_status
+Middle_class_economic_status DisjointWith prevalence_context
+Miscarriage is Class
+Morphine_abuse is Class
+Morphine_abuse SubClassOf Drug_abuse
+Multiparous is Class
+Multiparous SubClassOf Parity
+Multiple_pregnancy is Class
+Multiple_pregnancy SubClassOf Current_pregnancy
+Neonatal_mortality_rate is Class
+Neonatal_mortality_rate SubClassOf Mortility_rate
+Never_intake_alcohol is Class
+Never_intake_alcohol SubClassOf Alcohol_intake
+Never_used_tobacco is Class
+Never_used_tobacco SubClassOf Maternal_tobacco_use
+Nulliparous is Class
+Nulliparous SubClassOf Parity
+Nutritional_condition is Class
+Nutritional_condition SubClassOf Quality
+Oliguria is Class
+Oliguria SubClassOf Symptoms
+Pain is Class
+Pain SubClassOf Symptoms
+Parity is Class
+Parity SubClassOf Basic_attribute_on_pregnancy
+Passive_smoker is Class
+Passive_smoker SubClassOf Maternal_tobacco_use
+Physically_active is Class
+Physically_active SubClassOf Quality
+Poor_education is Class
+Poor_education SubClassOf Education_and_schooling_detail
+Pre-eclampsia is Class
+Pregnancy is Class
+Pregnancy SubClassOf Basic_attribute_on_pregnancy
+Premature_Birth is Class
+Prenatal_Nutritional_Physiological_Phenomena is Class
+Prenatal_Nutritional_Physiological_Phenomena SubClassOf Nutritional_condition
+Prepregnancy_BMI is Class
+Prepregnancy_BMI SubClassOf Body_mass_index
+Previous_HELLP_syndrom is Class
+Previous_HELLP_syndrom SubClassOf Medical_history,
+Previous_HELLP_syndrom SubClassOf part_of some HELLP_syndrome
+Previous_IUGR is Class
+Previous_IUGR SubClassOf Medical_history,
+Previous_IUGR SubClassOf part_of some Fetal_growth_restriction
+Previous_SGA is Class
+Previous_SGA SubClassOf Medical_history
+Previous_eclampsia is Class
+Previous_eclampsia SubClassOf Medical_history,
+Previous_eclampsia SubClassOf part_of some Eclampsia
+Previous_gestational_diabetes is Class
+Previous_gestational_diabetes SubClassOf Medical_history,
+Previous_gestational_diabetes SubClassOf part_of some Gestational_diabetes_mellitus
+Previous_gestational_hypertension is Class
+Previous_gestational_hypertension SubClassOf Medical_history
+Previous_induced_abortion is Class
+Previous_induced_abortion SubClassOf Medical_history,
+Previous_induced_abortion SubClassOf part_of some Termination_of_pregnancy
+Previous_miscarriage is Class
+Previous_miscarriage SubClassOf Medical_history,
+Previous_miscarriage SubClassOf part_of some Miscarriage
+Previous_neonatal_death is Class
+Previous_neonatal_death SubClassOf Medical_history
+Previous_preeclampsia is Class
+Previous_preeclampsia SubClassOf Medical_history,
+Previous_preeclampsia SubClassOf part_of some Pre-eclampsia
+Previous_preterm_delivery is Class
+Previous_preterm_delivery SubClassOf Medical_history,
+Previous_preterm_delivery SubClassOf part_of some Premature_Birth
+Previous_stillbirth is Class
+Previous_stillbirth SubClassOf Medical_history,
+Previous_stillbirth SubClassOf part_of some Stillbirth
+Proteinuria is Class
+Proteinuria SubClassOf Symptoms
+Regularly_used is Class
+Regularly_used SubClassOf Maternal_tobacco_use
+School_attendance is Class
+School_attendance SubClassOf Education_and_schooling_detail
+Schooling is Class
+Schooling SubClassOf Education_and_schooling_detail
+Seasons is Class
+Seasons SubClassOf Climate
+Single_person is Class
+Single_person SubClassOf Marital_status
+Single_pregnancy is Class
+Single_pregnancy SubClassOf Current_pregnancy
+Singleton_delivery is Class
+Singleton_delivery SubClassOf Birth
+Smoking_during_pregnancy is Class
+Smoking_during_pregnancy SubClassOf Maternal_tobacco_use
+Snuff_user is Class
+Snuff_user SubClassOf Maternal_tobacco_use
+Social_context is Class
+Social_context SubClassOf Quality
+Social_support_status is Class
+Social_support_status SubClassOf Social_context
+Stillbirth is Class
+Stopped_smoking is Class
+Stopped_smoking SubClassOf Maternal_tobacco_use
+Substances_used is Class
+Substances_used SubClassOf Quality
+Termination_of_pregnancy is Class
+Tobacco_use_and_exposure_-_finding is Class
+Tobacco_use_and_exposure_-_finding SubClassOf Quality
+Twin_birth is Class
+Twin_birth SubClassOf Birth
+Unsafe_living_conditions is Class
+Unsafe_living_conditions SubClassOf Social_context
+Upper_class_economic_status is Class
+Upper_class_economic_status SubClassOf Economic_status
+Upper_middle_class_economic_status is Class
+Upper_middle_class_economic_status SubClassOf Economic_status
+Vomiting is Class
+Vomiting SubClassOf Symptoms
+White-collar_worker is Class
+White-collar_worker SubClassOf Employment_detail
+White_-_ethnic_group is Class
+White_-_ethnic_group SubClassOf Race
+baseline_state is Class
+baseline_state SubClassOf Quality,
+baseline_state SubClassOf is_entity_used_in some clinical_treatment_context
+body_weigtht_before_14wk is Class
+body_weigtht_before_14wk SubClassOf Body_weight_measure
+marriageable_age is Class
+marriageable_age SubClassOf Age_at_onset
+mixed is Class
+mixed SubClassOf Race
+older_than_marriageable_age is Class
+older_than_marriageable_age SubClassOf Age_at_onset
+prepregnancy_body_weight is Class
+prepregnancy_body_weight SubClassOf Body_weight_measure
+younger_than_marriageable_age is Class
+younger_than_marriageable_age SubClassOf Age_at_onset
+www.w3.org/2002/07/# is Class

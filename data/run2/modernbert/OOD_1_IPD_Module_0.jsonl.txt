@@ -1,0 +1,220 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+Linking relationships for Consequence is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+Linking relationships for Environment is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+Relation between Host and Agent is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+Relation between Host and Vector is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+Relation between Vector and Agent is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+appear unsafe behavior and lead to is ObjectProperty.
+appear unsafe behavior and lead to SubPropertyOf Relation between Host and Agent.
+appear unsafe behavior and lead to Domain Host.
+appear unsafe behavior and lead to Range Agent.
+appear unsafe situation and lead to is ObjectProperty.
+appear unsafe situation and lead to SubPropertyOf Relation between Vector and Agent.
+appear unsafe situation and lead to Domain Vector.
+appear unsafe situation and lead to Range Agent.
+damage is ObjectProperty.
+damage SubPropertyOf Relation between Vector and Agent.
+damage Domain Agent.
+damage Range Vector.
+has negative influence is ObjectProperty.
+has negative influence SubPropertyOf Linking relationships for Environment.
+has negative influence Domain Environment.
+has negative influence Range Host,.
+has negative influence Range Vector.
+injury is ObjectProperty.
+injury SubPropertyOf Relation between Host and Agent.
+injury Domain Agent.
+injury Range Host.
+lead to is ObjectProperty.
+lead to SubPropertyOf Linking relationships for Consequence.
+lead to Domain Agent.
+lead to Range Consequences.
+no touch is ObjectProperty.
+no touch SubPropertyOf Relation between Host and Vector.
+no touch Domain Host.
+no touch Range Vector.
+no touched by is ObjectProperty.
+no touched by SubPropertyOf Relation between Host and Vector.
+no touched by Domain Vector.
+no touched by Range Host.
+no touched by InverseOf no touched by.
+not appear unsafe behavior and lead to is ObjectProperty.
+not appear unsafe behavior and lead to SubPropertyOf Relation between Host and Agent.
+not appear unsafe behavior and lead to Domain Host.
+not appear unsafe behavior and lead to Range Agent.
+not appear unsafe situation and lead to is ObjectProperty.
+not appear unsafe situation and lead to SubPropertyOf Relation between Vector and Agent.
+not appear unsafe situation and lead to Domain Vector.
+not appear unsafe situation and lead to Range Agent.
+not damage is ObjectProperty.
+not damage SubPropertyOf Relation between Vector and Agent.
+not damage Domain Agent.
+not damage Range Vector.
+not injury is ObjectProperty.
+not injury SubPropertyOf Relation between Host and Agent.
+not injury Domain Agent.
+not injury Range Host.
+touch is ObjectProperty.
+touch SubPropertyOf Relation between Host and Vector.
+touch Domain Host.
+touch Range Vector.
+touch InverseOf touched by.
+touched by is ObjectProperty.
+touched by SubPropertyOf Relation between Host and Vector.
+touched by Domain Vector.
+touched by Range Host.
+touched by InverseOf touch.
+www.w3.org/2002/07/# is ObjectProperty.
+Data property of Agent is DataProperty.
+topDataProperty is www.w3.org/2002/07/#.
+Data property of Consequences is DataProperty.
+topDataProperty is www.w3.org/2002/07/#.
+Data property of Environment is DataProperty.
+topDataProperty is www.w3.org/2002/07/#.
+Data property of Host is DataProperty.
+topDataProperty is www.w3.org/2002/07/#.
+Data property of Vector is DataProperty.
+topDataProperty is www.w3.org/2002/07/#.
+has Age of injured person is DataProperty.
+has Age of injured person Domain Host.
+has Age of injured person SubPropertyOf Data property of Host.
+has Body part injured is DataProperty.
+has Body part injured Domain Consequences.
+has Body part injured SubPropertyOf Data property of Consequences.
+has Cause of injury is DataProperty.
+has Cause of injury Domain Agent.
+has Cause of injury SubPropertyOf Data property of Agent.
+has Date of Injury is DataProperty.
+has Date of Injury Domain Environment.
+has Date of Injury SubPropertyOf Data property of Environment.
+has Duration of use of product is DataProperty.
+has Duration of use of product Domain Vector.
+has Duration of use of product SubPropertyOf Data property of Vector.
+has Fire involvement is DataProperty.
+has Fire involvement Domain Agent.
+has Fire involvement SubPropertyOf Data property of Agent.
+has Gender of injured person is DataProperty.
+has Gender of injured person Domain Host.
+has Gender of injured person SubPropertyOf Data property of Host.
+has Hazard is DataProperty.
+has Hazard Domain Agent.
+has Hazard SubPropertyOf Data property of Agent.
+has Manufacturer of product is DataProperty.
+has Manufacturer of product Domain Vector.
+has Manufacturer of product SubPropertyOf Data property of Vector.
+has Mechanism of injury is DataProperty.
+has Mechanism of injury Domain Agent.
+has Mechanism of injury SubPropertyOf Data property of Agent.
+has Number of injured persons is DataProperty.
+has Number of injured persons Domain Consequences.
+has Number of injured persons SubPropertyOf Data property of Consequences.
+has Race and ethnicity is DataProperty.
+has Race and ethnicity Domain Host.
+has Race and ethnicity SubPropertyOf Data property of Host.
+has Residence is DataProperty.
+has Residence Domain Host.
+has Residence SubPropertyOf Data property of Host.
+has Risk mitigation is DataProperty.
+has Risk mitigation Domain Consequences.
+has Risk mitigation SubPropertyOf Data property of Consequences.
+has Severity of harm is DataProperty.
+has Severity of harm Domain Consequences.
+has Severity of harm SubPropertyOf Data property of Consequences.
+has Time of injury is DataProperty.
+has Time of injury Domain Environment.
+has Time of injury SubPropertyOf Data property of Environment.
+has Treatment is DataProperty.
+has Treatment Domain Consequences.
+has Treatment SubPropertyOf Data property of Consequences.
+has Type of injury is DataProperty.
+has Type of injury Domain Consequences.
+has Type of injury SubPropertyOf Data property of Consequences.
+has Type or model of product is DataProperty.
+has Type or model of product Domain Vector.
+has Type or model of product SubPropertyOf Data property of Vector.
+has Weather is DataProperty.
+has Weather Domain Environment.
+has Weather SubPropertyOf Data property of Environment.
+has harm Severity of object is DataProperty.
+has harm Severity of object SubPropertyOf has Severity of harm.
+has harm Severity of person is DataProperty.
+has harm Severity of person SubPropertyOf has Severity of harm.
+with Activity is DataProperty.
+with Activity Domain Environment.
+with Activity SubPropertyOf Data property of Environment.
+with Natural disaster involvement is DataProperty.
+with Natural disaster involvement Domain Environment.
+with Natural disaster involvement SubPropertyOf Data property of Environment.
+with Place of occurrence is DataProperty.
+with Place of occurrence Domain Environment.
+with Place of occurrence SubPropertyOf Data property of Environment.
+has Cognitive/ is DataProperty.
+has Cognitive/ Domain Host.
+has Cognitive/ SubPropertyOf Data property of Host.
+www.w3.org/2002/07/# is DataProperty.
+Agent is Class.
+Agent SubClassOf injury process description ontology.
+Agent DisjointWith Vector.
+Consequences is Class.
+Consequences SubClassOf injury process description ontology.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing is www.w3.org/2002/07/#.
+Environment is Class.
+Environment SubClassOf injury process description ontology.
+Environment DisjointWith Host.
+Host is Class.
+Host SubClassOf injury process description ontology.
+Host DisjointWith Environment.
+Product causing injury is Class.
+Product causing injury SubClassOf Vector.
+Products involved is Class.
+Products involved SubClassOf Vector.
+Vector is Class.
+Vector SubClassOf injury process description ontology.
+Vector DisjointWith Agent.
+injury process description ontology is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2002/07/# SubClassOf Consequences.
+www.w3.org/2000/01/-schema# is Annotations.
+Agent of injury case is Individual.
+Agent of injury case Types Agent.
+Agent of injury case injury Host of injury case,.
+Agent of injury case lead to Consequences of injury case,.
+Agent of injury case not damage Picture book with music playback function,.
+Agent of injury case has Cause of injury "Unstable walking condition",.
+Agent of injury case has Fire involvement "No Fire involvement", has Hazard.
+Agent of injury case has Mechanism of injury "Falling/stumbling by tripping on the same level".
+Consequences of injury case is Individual.
+Consequences of injury case Types Consequences.
+Consequences of injury case has Body part injured "Mouth",.
+Consequences of injury case has Number of injured persons "One person", has Risk mitigation.
+Consequences of injury case has Type of injury "Laceration, cut",.
+Consequences of injury case has harm Severity of person "Minor injury".
+Environment of injury case is Individual.
+Environment of injury case Types Environment.
+Environment of injury case has negative influence Host of injury case,.
+Environment of injury case has negative influence Picture book with music playback function,.
+Environment of injury case has Date of Injury "2006/07/21",.
+Environment of injury case with Activity "Walking with a picture book in hand",.
+Environment of injury case with Place of occurrence "Living room".
+Host of injury case is Individual.
+Host of injury case Types Host.
+Host of injury case appear unsafe behavior and lead to Agent of injury case,.
+Host of injury case touch Picture book with music playback function,.
+Host of injury case has Age of injured person "Under the age of three",.
+Host of injury case has Gender of injured person "Female",.
+Host of injury case has Race and ethnicity "Unknown",.
+Host of injury case has Residence "JAPAN",.
+physical ability  "Very young child (0 – 36 months)" is has Cognitive/.
+Picture book with music playback function is Individual.
+Picture book with music playback function Types Product causing injury.
+Picture book with music playback function not appear unsafe situation and lead to Agent of injury case,.
+Picture book with music playback function touched by Host of injury case,.
+Picture book with music playback function has Duration of use of product "One months".

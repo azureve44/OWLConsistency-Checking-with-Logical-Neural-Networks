@@ -1,0 +1,198 @@
+dateTime is Datatype
+dateTimeStamp is Datatype
+string is Datatype
+BFO_0000051 is ObjectProperty
+creator is ObjectProperty
+creator Domain Resource
+Agent is ns.com/foaf/0.1/
+generatesOutput is ObjectProperty
+generatesOutput Domain Train
+generatesOutput Range Dataset
+hasControllingRights is ObjectProperty
+hasPayload is ObjectProperty
+hasPayload Domain Train
+hasPayload Range Payload
+hasPayload InverseOf isPayloadOf
+hasRequirement is ObjectProperty
+hasTrainType is ObjectProperty
+hasTrainType Domain Train
+implementsInteractionMechanism is ObjectProperty
+implementsInteractionMechanism Domain Train
+implementsInteractionMechanism Range InteractionMechanism
+isControlledBy is ObjectProperty
+isControlledBy Domain Resource
+Agent is ns.com/foaf/0.1/
+isPayloadOf is ObjectProperty
+isPayloadOf Domain Payload
+isPayloadOf Range Train
+isPayloadOf InverseOf hasPayload
+payloadDownloadURL is ObjectProperty
+payloadDownloadURL Domain Payload
+supportsInteractionMechanism is ObjectProperty
+supportsInteractionMechanism Domain DataStation
+supportsInteractionMechanism Range InteractionMechanism
+endDate is DataProperty
+endDate Domain DataStation
+endDate Range dateTime,
+endDate Range dateTimeStamp
+payloadContent is DataProperty
+payloadContent Domain Payload
+payloadContent Range string
+payloadMediaType is DataProperty
+payloadMediaType Domain Payload
+payloadMediaType Range string
+kburger is Class
+luizbonino is Class
+rajaram5 is Class
+Agent is Class
+Agent is ns.com/foaf/0.1/
+Thing is www.w3.org/2002/07/#
+Agent is ns.com/foaf/0.1/
+FAIRDataPoint is Class
+FAIRDataPoint SubClassOf MetadataService
+MetadataService is Class
+MetadataService SubClassOf DataService
+API is Class
+API SubClassOf InteractionMechanism
+APITrain is Class
+APITrain SubClassOf Train,
+APITrain SubClassOf implementsInteractionMechanism some API
+ComputationalArtifact is Class
+ComputationalArtifact SubClassOf Resource
+ComputationalEnvironmentRequirement is Class
+ComputationalEnvironmentRequirement SubClassOf TrainRequirement
+ContainerTrain is Class
+ContainerTrain SubClassOf Train,
+ContainerTrain SubClassOf implementsInteractionMechanism some ExecutableContainer
+DataController is Class
+DataController SubClassOf Agent,
+Agent, is ns.com/foaf/0.1/
+Agent, is hasControllingRights some Dataset,
+Agent, is hasControllingRights only Train
+DataStation is Class
+DataStation SubClassOf DataService,
+DataStation SubClassOf BFO_0000051 some FAIRDataPoint,
+DataStation SubClassOf supportsInteractionMechanism some InteractionMechanism
+Docker is Class
+Docker SubClassOf ExecutableContainer
+DockerTrain is Class
+DockerTrain SubClassOf ContainerTrain,
+DockerTrain SubClassOf implementsInteractionMechanism some Docker
+DockerTrain DisjointWith SingularityTrain
+ExecutableContainer is Class
+ExecutableContainer SubClassOf InteractionMechanism
+FHIRAPI is Class
+FHIRAPI SubClassOf RESTAPI
+FHIRTrain is Class
+FHIRTrain SubClassOf RESTTrain,
+FHIRTrain SubClassOf implementsInteractionMechanism some FHIRAPI
+GraphQL is Class
+GraphQL SubClassOf Query
+GraphQLTrain is Class
+GraphQLTrain SubClassOf QueryTrain,
+GraphQLTrain SubClassOf implementsInteractionMechanism some GraphQL
+InputRequirement is Class
+InputRequirement SubClassOf TrainRequirement
+InteractionMechanism is Class
+Thing is www.w3.org/2002/07/#
+Payload is Class
+Payload SubClassOf Resource
+Python is Class
+PythonTrain is Class
+PythonTrain SubClassOf ScriptTrain,
+PythonTrain SubClassOf implementsInteractionMechanism some Python
+PythonTrain DisjointWith RTrain
+Query is Class
+Query SubClassOf InteractionMechanism
+QueryTrain is Class
+QueryTrain SubClassOf Train,
+QueryTrain SubClassOf implementsInteractionMechanism some Query
+R is Class
+RESTAPI is Class
+RESTAPI SubClassOf API
+RESTTrain is Class
+RESTTrain SubClassOf APITrain,
+RESTTrain SubClassOf implementsInteractionMechanism some RESTAPI
+RTrain is Class
+RTrain SubClassOf ScriptTrain,
+RTrain SubClassOf implementsInteractionMechanism some R
+RTrain DisjointWith PythonTrain
+SPARQL is Class
+SPARQL SubClassOf Query
+SPARQLTrain is Class
+SPARQLTrain SubClassOf QueryTrain,
+SPARQLTrain SubClassOf implementsInteractionMechanism some SPARQL
+SQL is Class
+SQL SubClassOf Query
+SQLTrain is Class
+SQLTrain SubClassOf QueryTrain,
+SQLTrain SubClassOf implementsInteractionMechanism some SQL
+Script is Class
+Script SubClassOf InteractionMechanism
+ScriptTrain is Class
+ScriptTrain SubClassOf Train,
+ScriptTrain SubClassOf implementsInteractionMechanism some Script
+Singularity is Class
+Singularity SubClassOf ExecutableContainer
+SingularityTrain is Class
+SingularityTrain SubClassOf ContainerTrain,
+SingularityTrain SubClassOf implementsInteractionMechanism some Singularity
+SingularityTrain DisjointWith DockerTrain
+StationOwner is Class
+StationOwner SubClassOf Agent,
+Agent, is ns.com/foaf/0.1/
+Agent, is hasControllingRights some DataStation
+TPF is Class
+TPF SubClassOf Query
+Train is Class
+Train SubClassOf ComputationalArtifact,
+Train SubClassOf generatesOutput some Dataset,
+Train SubClassOf hasRequirement some TrainRequirement,
+Train SubClassOf implementsInteractionMechanism some InteractionMechanism
+Train DisjointWith Dataset
+TrainOwner is Class
+TrainOwner SubClassOf Agent,
+Agent, is ns.com/foaf/0.1/
+Agent, is hasControllingRights some Train
+TrainProvider is Class
+TrainProvider SubClassOf Agent,
+Agent is ns.com/foaf/0.1/
+TrainRequirement is Class
+Thing is www.w3.org/2002/07/#
+TriplePatternFragmentTrain is Class
+TriplePatternFragmentTrain SubClassOf QueryTrain,
+TriplePatternFragmentTrain SubClassOf implementsInteractionMechanism some TPF
+API is Class
+Python is Class
+R is Class
+SQL is Class
+Script is Class
+Singularity is Class
+www.w3.org/2002/07/# is Class
+DataService is Class
+DataService SubClassOf Resource
+Dataset is Class
+Dataset SubClassOf Resource
+Dataset DisjointWith Train
+Resource is Class
+Thing is www.w3.org/2002/07/#
+ns.com/foaf/0.1/ is Class
+ns.com/foaf/0.1/ EquivalentTo Agent
+ns.com/foaf/0.1/ DisjointWith Agent
+Docker is Individual
+Docker Types Docker
+ExecutableContainer is Individual
+ExecutableContainer Types ExecutableContainer
+FHIRAPI is Individual
+FHIRAPI Types FHIRAPI
+GraphQL is Individual
+GraphQL Types GraphQL
+Query is Individual
+Query Types Query
+RESTAPI is Individual
+RESTAPI Types RESTAPI
+SPARQL is Individual
+SPARQL Types SPARQL
+TPF is Individual
+TPF Types TPF
+TPF DisjointClasses SPARQLTrain,SQLTrain,TriplePatternFragmentTrain

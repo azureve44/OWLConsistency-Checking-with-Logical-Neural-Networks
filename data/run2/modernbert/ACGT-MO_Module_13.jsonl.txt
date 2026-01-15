@@ -1,0 +1,268 @@
+clinicalStudyLeaderOf is ObjectProperty.
+clinicalStudyLeaderOf Domain HumanBeing.
+clinicalStudyLeaderOf Range ClinicalStudy.
+clinicalStudyLeaderOf InverseOf hasClinicalStudyLeader.
+clinicalTrialLeaderOf is ObjectProperty.
+clinicalTrialLeaderOf Domain HumanBeing.
+clinicalTrialLeaderOf Range ClinicalTrial.
+clinicalTrialLeaderOf InverseOf hasClinicalTrialLeader.
+denies is ObjectProperty.
+denies Domain HumanBeing.
+denies Range Consenting.
+denies InverseOf isDeniedBy.
+fulfils is ObjectProperty.
+hasBloodPressure is ObjectProperty.
+hasBloodPressure Domain HumanBeing.
+hasBloodPressure Range BloodPressure.
+hasClinicalStudyLeader is ObjectProperty.
+hasClinicalStudyLeader InverseOf clinicalStudyLeaderOf.
+hasClinicalTrialLeader is ObjectProperty.
+hasClinicalTrialLeader InverseOf clinicalTrialLeaderOf.
+hasDisease is ObjectProperty.
+hasGender is ObjectProperty.
+hasHabit is ObjectProperty.
+hasHabit Domain HumanBeing.
+hasHeight is ObjectProperty.
+hasIdentifier is ObjectProperty.
+hasMagnitude is ObjectProperty.
+hasMother is ObjectProperty.
+hasPartNeoplasm is ObjectProperty.
+hasProgenitor is ObjectProperty.
+hasQuality is ObjectProperty.
+hasRelative is ObjectProperty.
+hasRole is ObjectProperty.
+hasSibling is ObjectProperty.
+hasSize is ObjectProperty.
+hasSymptom is ObjectProperty.
+hasSymptom Domain HumanBeing.
+hasSymptom Range Symptom.
+hasSymptom InverseOf symptomOf.
+hasWeight is ObjectProperty.
+isDeniedBy is ObjectProperty.
+isDeniedBy InverseOf denies.
+patientAt is ObjectProperty.
+receives is ObjectProperty.
+receivesPreTherapy is ObjectProperty.
+residentOf is ObjectProperty.
+residentOf Domain HumanBeing.
+samples is ObjectProperty.
+samples Domain HumanBeing.
+samples Range SubstanceSample.
+signs is ObjectProperty.
+signs Characteristics Irreflexive.
+signs Domain HumanBeing.
+signs Range Document.
+symptomOf is ObjectProperty.
+symptomOf InverseOf hasSymptom.
+undergoes is ObjectProperty.
+undergoesMedicalProcess is ObjectProperty.
+undertakes is ObjectProperty.
+undertakes Domain HumanBeing.
+undertakes Range ProcessualEntity.
+uses is ObjectProperty.
+hasPart is ObjectProperty.
+participatesIn is ObjectProperty.
+Address is Class.
+Adenomastectomy is Class.
+AdministrativeRole is Class.
+Age is Class.
+AxillaryNodeDissection is Class.
+BiologicalIndependentContinuant is Class.
+BiologicalIndependentContinuant SubClassOf Object,.
+BiologicalIndependentContinuant SubClassOf receivesPreTherapy min 0 PreTherapy.
+BiologicalIndependentContinuant DisjointWith Institution.
+BiologicalIndependentContinuant DisjointWith ChemicalSubstance.
+BloodPressure is Class.
+BodyMassIndex is Class.
+BodySurfaceArea is Class.
+BoostIrradiation is Class.
+Brachytherapy is Class.
+Breast is Class.
+BreastResection is Class.
+CardioPerformanceRating is Class.
+CertaintyLevel is Class.
+ChemicalSubstance is Class.
+ChemicalSubstance DisjointWith BiologicalIndependentContinuant.
+Chemotherapy is Class.
+ChemotherapyCycle is Class.
+ClinicalExamination is Class.
+ClinicalResearch is Class.
+ClinicalStudy is Class.
+ClinicalTrial is Class.
+Computertomography is Class.
+ConsentForm is Class.
+Consenting is Class.
+Document is Class.
+DoseIncrease is Class.
+DoseReduction is Class.
+Drug is Class.
+ECG is Class.
+ECOGPerformanceRating is Class.
+EligibilityCriterion is Class.
+ExtraOrganismalIndependenContinuant is Class.
+ExtraOrganismalIndependenContinuant SubClassOf BiologicalIndependentContinuant.
+Female is Class.
+FemaleHumanBeing is Class.
+FemaleHumanBeing SubClassOf HumanBeing,.
+FemaleHumanBeing SubClassOf hasGender some Female,.
+FemaleHumanBeing SubClassOf hasGender only Female,.
+FemaleHumanBeing SubClassOf undergoes min 0 Hysterectomy,.
+FemaleHumanBeing SubClassOf undergoes min 0 PartialHysterectomy,.
+FemaleHumanBeing SubClassOf undergoes min 0 TotalHysterectomy.
+FirstName is Class.
+FullName is Class.
+GeneTherapy is Class.
+GeneralHealthRating is Class.
+HearingDevice is Class.
+HeartRate is Class.
+Hospital is Class.
+HumanBeing is Class.
+HumanBeing is equivalent to FemaleHumanBeing or MaleHumanBeing.
+HumanBeing SubClassOf Organism,.
+HumanBeing SubClassOf hasMagnitude some Age,.
+HumanBeing SubClassOf hasMagnitude some CardioPerformanceRating,.
+HumanBeing SubClassOf hasMagnitude some ECOGPerformanceRating,.
+HumanBeing SubClassOf hasMagnitude some GeneralHealthRating,.
+HumanBeing SubClassOf hasSize some BodySurfaceArea,.
+HumanBeing SubClassOf hasPart some Breast,.
+HumanBeing SubClassOf hasPart some Lung,.
+HumanBeing SubClassOf denies min 0 Consenting,.
+HumanBeing SubClassOf fulfils min 0 EligibilityCriterion,.
+Thing, is hasDisease min 0 www.w3.org/2002/07/#.
+Thing, is hasIdentifier min 0 Address,.
+Thing, is hasIdentifier min 0 FirstName,.
+Thing, is hasIdentifier min 0 FullName,.
+Thing, is hasIdentifier min 0 Identifier,.
+Thing, is hasIdentifier min 0 LastName,.
+Thing, is hasMagnitude min 0 KarnofskyRating,.
+Thing, is hasMagnitude min 0 LanskyRating,.
+Thing, is hasMagnitude min 0 RFSDays,.
+Thing, is hasPartNeoplasm min 0 www.w3.org/2002/07/#.
+Thing, is hasQuality min 0 CertaintyLevel,.
+Thing, is hasQuality min 0 NumberOfLymphNodes,.
+Thing, is hasRelative min 0 www.w3.org/2002/07/#.
+Thing, is hasRole min 0 MedicalPractitioner,.
+Thing, is hasRole min 0 (AdministrativeRole or ProfessionalRole),.
+Thing, is hasSibling min 0 www.w3.org/2002/07/#.
+Thing, is patientAt min 0 Hospital,.
+Thing, is receives min 0 Drug,.
+Thing, is receives min 0 InformationObject,.
+Thing, is receives min 0 PharmaceuticalSubstance,.
+Thing, is signs min 0 ConsentForm,.
+Thing, is undergoes min 0 Adenomastectomy,.
+Thing, is undergoes min 0 AxillaryNodeDissection,.
+Thing, is undergoes min 0 BoostIrradiation,.
+Thing, is undergoes min 0 Brachytherapy,.
+Thing, is undergoes min 0 BreastResection,.
+Thing, is undergoes min 0 Chemotherapy,.
+Thing, is undergoes min 0 ChemotherapyCycle,.
+Thing, is undergoes min 0 ClinicalExamination,.
+Thing, is undergoes min 0 Computertomography,.
+Thing, is undergoes min 0 DoseIncrease,.
+Thing, is undergoes min 0 DoseReduction,.
+Thing, is undergoes min 0 ECG,.
+Thing, is undergoes min 0 GeneTherapy,.
+Thing, is undergoes min 0 Immunotherapy,.
+Thing, is undergoes min 0 LostToFollowUp,.
+Thing, is undergoes min 0 Lumpectomy,.
+Thing, is undergoes min 0 MUGAScan,.
+Thing, is undergoes min 0 MaddenMastectomy,.
+Thing, is undergoes min 0 MagneticResonanceImaging,.
+Thing, is undergoes min 0 Mastectomy,.
+Thing, is undergoes min 0 Mastopexy,.
+Thing, is undergoes min 0 NuclearImaging,.
+Thing, is undergoes min 0 PartialMastectomy,.
+Thing, is undergoes min 0 PateyMastectomy,.
+Thing, is undergoes min 0 PatientManagement,.
+Thing, is undergoes min 0 ProtocolChange,.
+Thing, is undergoes min 0 PsychosocialCare,.
+Thing, is undergoes min 0 Quadrantectomy,.
+Thing, is undergoes min 0 ReconstructiveBreastSurgery,.
+Thing, is undergoes min 0 Registration,.
+Thing, is undergoes min 0 SegmentalMastectomy,.
+Thing, is undergoes min 0 SkinSparingTotalMastectomy,.
+Thing, is undergoes min 0 SubcutaneousMastectomy,.
+Thing, is undergoes min 0 TotalMastectomy,.
+Thing, is undergoes min 0 ProcessualEntity,.
+Thing, is undergoesMedicalProcess min 0 www.w3.org/2002/07/#.
+Thing, is uses min 0 HearingDevice,.
+Thing, is participatesIn min 0 ClinicalResearch,.
+Thing, is hasBloodPressure exactly 1 www.w3.org/2002/07/#.
+Thing, is hasGender exactly 1 www.w3.org/2002/07/#.
+Thing, is hasHeight exactly 1 www.w3.org/2002/07/#.
+Thing, is hasMagnitude exactly 1 BodyMassIndex,.
+Thing, is hasMother exactly 1 www.w3.org/2002/07/#.
+Thing, is hasProgenitor exactly 1 www.w3.org/2002/07/#.
+Thing, is hasQuality exactly 1 HeartRate,.
+Thing is hasWeight exactly 1 www.w3.org/2002/07/#.
+Hysterectomy is Class.
+Identifier is Class.
+Immunotherapy is Class.
+InformationObject is Class.
+Institution is Class.
+Institution DisjointWith BiologicalIndependentContinuant.
+KarnofskyRating is Class.
+Labor is Class.
+LanskyRating is Class.
+LastName is Class.
+LostToFollowUp is Class.
+Lumpectomy is Class.
+Lung is Class.
+MUGAScan is Class.
+MaddenMastectomy is Class.
+MagneticResonanceImaging is Class.
+Male is Class.
+MaleHumanBeing is Class.
+MaleHumanBeing SubClassOf HumanBeing,.
+MaleHumanBeing SubClassOf not (undergoes some Labor),.
+MaleHumanBeing SubClassOf not (undergoes some Menopause),.
+MaleHumanBeing SubClassOf not (undergoes some Menstruation),.
+MaleHumanBeing SubClassOf not (undergoes some Parturition),.
+MaleHumanBeing SubClassOf not (undergoes some Pregnancy),.
+MaleHumanBeing SubClassOf hasGender some Male,.
+MaleHumanBeing SubClassOf hasPart some Prostate,.
+MaleHumanBeing SubClassOf hasGender only Male.
+Mastectomy is Class.
+Mastopexy is Class.
+MedicalPractitioner is Class.
+Menopause is Class.
+Menstruation is Class.
+NerveTrunk is Class.
+NerveTrunk SubClassOf SegmentOfNeuralTreeOrgan.
+NuclearImaging is Class.
+NumberOfLymphNodes is Class.
+OpticChiasm is Class.
+OpticChiasm SubClassOf NerveTrunk.
+OpticNerve is Class.
+OpticNerve SubClassOf NerveTrunk.
+Organism is Class.
+Organism SubClassOf BiologicalIndependentContinuant.
+OrganismalIndependentContinuant is Class.
+OrganismalIndependentContinuant SubClassOf BiologicalIndependentContinuant.
+PartialHysterectomy is Class.
+PartialMastectomy is Class.
+Parturition is Class.
+PateyMastectomy is Class.
+PatientManagement is Class.
+PharmaceuticalSubstance is Class.
+PreTherapy is Class.
+Pregnancy is Class.
+ProfessionalRole is Class.
+Prostate is Class.
+ProtocolChange is Class.
+PsychosocialCare is Class.
+Quadrantectomy is Class.
+RFSDays is Class.
+ReconstructiveBreastSurgery is Class.
+Registration is Class.
+SegmentOfNeuralTreeOrgan is Class.
+SegmentalMastectomy is Class.
+SkinSparingTotalMastectomy is Class.
+SubcutaneousMastectomy is Class.
+SubstanceSample is Class.
+Symptom is Class.
+TotalHysterectomy is Class.
+TotalMastectomy is Class.
+Object is Class.
+ProcessualEntity is Class.
+www.w3.org/2002/07/# is Class.

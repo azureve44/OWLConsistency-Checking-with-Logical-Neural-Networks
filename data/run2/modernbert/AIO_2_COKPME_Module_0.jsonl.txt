@@ -1,0 +1,283 @@
+decimal is Datatype.
+int is Datatype.
+integer is Datatype.
+string is Datatype.
+diagnoisedFor is ObjectProperty.
+diagnoisedFor Domain Diagnosis.
+hasAdmittedPatient is ObjectProperty.
+hasAdmittedPatient Domain Hospital.
+hasAdmittedTo is ObjectProperty.
+hasAdmittedTo is equivalent to isAdmittedTo,.
+hasAdmittedTo is equivalent to inverse (isAdmittedTo).
+hasAdmittedTo Domain Hospital.
+hasCategory is ObjectProperty.
+hasCategory Domain Diagnosis.
+hasDiagnoisedFor is ObjectProperty.
+hasDiagnoisedFor SubPropertyOf diagnoisedFor.
+hasDiagnoisedFor Domain Diagnosis.
+hasDiagnoisedFor InverseOf isDiagnoisedFor.
+hasHID is ObjectProperty.
+hasPAddress is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty is equivalent to isLocatedAt.
+topObjectProperty Domain PatientAddress.
+topObjectProperty Range isLocatedAt some PatientAddress.
+hasPID is ObjectProperty.
+hasPID Characteristics Functional.
+hasPID Domain Patient.
+hasPhoneN is ObjectProperty.
+hasPhoneN Domain Patient,.
+hasPhoneN Domain hasPhone some string.
+hasPhoneN Range hasPhone some string.
+hasSymptom is ObjectProperty.
+hasSymptom Domain Patient.
+hasSymptom Range Diagnosis.
+hasdistrict is ObjectProperty.
+isAdmittedTo is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty is equivalent to hasAdmittedTo.
+topObjectProperty Characteristics InverseFunctional.
+inverse (isAdmittedTo) is ObjectProperty.
+inverse (isAdmittedTo) is equivalent to hasAdmittedTo.
+isDiagnoisedFor is ObjectProperty.
+isDiagnoisedFor SubPropertyOf diagnoisedFor.
+isDiagnoisedFor Domain Diagnosis.
+isDiagnoisedFor InverseOf hasDiagnoisedFor.
+isLocatedAt is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty is equivalent to hasPAddress.
+topObjectProperty Characteristics InverseFunctional.
+topObjectProperty Domain PatientAddress.
+topObjectProperty Range address some string.
+otherComorbidConditions is ObjectProperty.
+otherComorbidConditions Domain Patient.
+otherComorbidConditions Range OtherComorbidityCondition.
+reported On is ObjectProperty.
+topObjectProperty is www.w3.org/2002/07/#.
+topObjectProperty Domain DateTimeDescription.
+sufferFrom is ObjectProperty.
+sufferFrom Domain OtherComorbidityCondition.
+treatmentProvided is ObjectProperty.
+treatmentProvided Domain Treatment.
+www.w3.org/2002/07/# is ObjectProperty.
+Call to Emergency 108 for Covid-19 testing is DataProperty.
+Call to Emergency 108 for Covid-19 testing Domain Patient.
+Call to Emergency 108 for Covid-19 testing Range string.
+Medicines prescribed with home quarantine advice is DataProperty.
+Medicines prescribed with home quarantine advice Domain Patient.
+Medicines prescribed with home quarantine advice Range string.
+Shift to other hospital is DataProperty.
+Shift to other hospital Domain Patient.
+Shift to other hospital Range string.
+address is DataProperty.
+address Domain Location,.
+address Domain Hospital or Patient.
+address Range string.
+addressLocality is DataProperty.
+addressLocality Domain Location.
+addressLocality Range string.
+addressLocality SubPropertyOf address.
+area is DataProperty.
+area Range string.
+area SubPropertyOf address.
+district is DataProperty.
+district Domain District or Location.
+district Range string.
+district SubPropertyOf address.
+foaf is DataProperty.
+foaf Characteristics Functional.
+age some decimal is foaf.
+age some decimal Range integer.
+topDataProperty is www.w3.org/2002/07/#.
+hasID is DataProperty.
+hasID Characteristics Functional.
+hasID Domain hasPID some PID.
+hasID Range string.
+hasPhone is DataProperty.
+hasPhone Domain hasPhoneN some Phone.
+hasPhone Range string.
+hospitalCode is DataProperty.
+hospitalCode Domain ID,.
+hospitalCode Domain hasHID some ID.
+hospitalCode Range string.
+postalCode is DataProperty.
+postalCode Domain Location.
+postalCode Range integer.
+postalCode SubPropertyOf address.
+reportedDate is DataProperty.
+reportedDate Domain DateTimeDescription.
+reportedDate Range string.
+streetAddress is DataProperty.
+streetAddress Domain Location.
+streetAddress Range string.
+streetAddress SubPropertyOf address.
+www.w3.org/2002/07/# is DataProperty.
+day is DataProperty.
+day Domain DateTimeDescription.
+day Range int.
+day SubPropertyOf reportedDate.
+month is DataProperty.
+month Domain DateTimeDescription.
+month Range string.
+month SubPropertyOf reportedDate.
+year is DataProperty.
+year Domain DateTimeDescription.
+year Range integer.
+year SubPropertyOf reportedDate.
+ns.com/foaf/0.1/ is DataProperty.
+name some string is ns.com/foaf/0.1/.
+name some string Range string.
+Age is Class.
+Age SubClassOf Patient.
+COVID-19 Suspect is Class.
+COVID-19 Suspect is equivalent to Call to Emergency 108 for Covid-19 testing some string.
+COVID-19 Suspect SubClassOf Diagnosis.
+COVID19Suspect is Class.
+COVID19Suspect is equivalent to hasCategory some COVID-19 Suspect.
+COVID19Suspect SubClassOf Patient.
+ClinicalFindings is Class.
+ClinicalFindings SubClassOf OtherComorbidityCondition,.
+Thing is www.w3.org/2002/07/#.
+ComorbidityCondition is Class.
+ComorbidityCondition SubClassOf ClinicalFindings.
+Diagnosis is Class.
+Thing is www.w3.org/2002/07/#.
+District is Class.
+District is equivalent to district some string.
+District SubClassOf Hospital.
+District DisjointWith district some string.
+Hospital is Class.
+Thing is www.w3.org/2002/07/#.
+Thing DisjointWith district some string.
+HospitalAddress is Class.
+HospitalAddress SubClassOf Location.
+ID is Class.
+ID SubClassOf Hospital.
+ILI category is Class.
+ILI category is equivalent to hasCategory some Influenza Like Illness.
+ILI category SubClassOf Patient.
+Influenza Like Illness is Class.
+Influenza Like Illness is equivalent to Medicines prescribed with home quarantine advice some string.
+Influenza Like Illness SubClassOf Diagnosis.
+Location is Class.
+Thing is www.w3.org/2002/07/#.
+Name is Class.
+Name SubClassOf Hospital.
+OtherComorbidityCondition is Class.
+OtherComorbidityCondition SubClassOf ComorbidityCondition.
+OtherComorbidityCondition DisjointWith Patient.
+PID is Class.
+PID SubClassOf Patient.
+Patient is Class.
+Person, is ns.com/foaf/0.1/.
+Person, is hasAdmittedTo some Hospital,.
+Person, is hasAdmittedTo some.
+Person, is (Hospital and (district some string)),.
+Person, is hasCategory some Diagnosis,.
+Person, is hasDiagnoisedFor some Diagnosis,.
+Person, is hasAdmittedTo only (district some string).
+Person, DisjointWith OtherComorbidityCondition.
+PatientAddress is Class.
+PatientAddress SubClassOf Location.
+Phone is Class.
+Phone SubClassOf Patient.
+SARI category is Class.
+SARI category is equivalent to hasCategory some Sever Acute Respiratory Infection.
+SARI category SubClassOf Patient.
+Sever Acute Respiratory Infection is Class.
+Sever Acute Respiratory Infection is equivalent to Shift to other hospital some string.
+Sever Acute Respiratory Infection SubClassOf Diagnosis.
+Treatment is Class.
+Treatment SubClassOf Hospital.
+www.w3.org/2002/07/# is Class.
+DateTimeDescription is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is reported On some DateTimeDescription.
+ns.com/foaf/0.1/ is Class.
+Thing is www.w3.org/2002/07/#.
+ns.com/foaf/0.1/ is Class.
+Agent is ns.com/foaf/0.1/.
+2147483647 is Individual.
+2147483647 Types Phone.
+Covid-19 (Suspect) is Individual.
+ASYMPTOMATIC is Individual.
+ASYMPTOMATIC Types OtherComorbidityCondition.
+Acidity is Individual.
+Acidity Types OtherComorbidityCondition.
+AcuteRespiratoryDistressSyndrome is Individual.
+AcuteRespiratoryDistressSyndrome Types OtherComorbidityCondition.
+Anemia is Individual.
+Anemia Types OtherComorbidityCondition.
+Bagalkot is Individual.
+Bangalore Rural is Individual.
+Bangalore Urban is Individual.
+Belgaum is Individual.
+Breathlessness is Individual.
+Breathlessness Types OtherComorbidityCondition.
+BronchialAsthma is Individual.
+BronchialAsthma Types OtherComorbidityCondition.
+COLUMBIA ASIA HOSPITAL HEBBAL is Individual.
+COPD is Individual.
+COPD Types OtherComorbidityCondition.
+COVID19Suspect is Individual.
+Call to Emergency 108 for Covid-19 testing is Individual.
+Cold is Individual.
+Cold Types OtherComorbidityCondition.
+Cough is Individual.
+Cough Types OtherComorbidityCondition.
+DIARRHOEA is Individual.
+DIARRHOEA Types OtherComorbidityCondition.
+Diabetic is Individual.
+Diabetic Types OtherComorbidityCondition.
+DryCough is Individual.
+DryCough Types OtherComorbidityCondition.
+ExpectorationBreathlessness is Individual.
+ExpectorationBreathlessness Types OtherComorbidityCondition.
+Fever is Individual.
+Fever Types OtherComorbidityCondition.
+FeverCough is Individual.
+FeverCough Types OtherComorbidityCondition.
+FeverCoughWheezing is Individual.
+FeverCoughWheezing Types OtherComorbidityCondition.
+FeverWeaknessBodyacheEpigastricPain is Individual.
+FeverWeaknessBodyacheEpigastricPain Types OtherComorbidityCondition.
+FeverWeaknessPainAbdomen is Individual.
+FeverWeaknessPainAbdomen Types OtherComorbidityCondition.
+H16472 is Individual.
+Heart Disease is Individual.
+Heart Disease Types OtherComorbidityCondition.
+Hypertension is Individual.
+Hypertension Types OtherComorbidityCondition.
+HypoThyorid is Individual.
+HypoThyorid Types OtherComorbidityCondition.
+ILI is Individual.
+ILI Types OtherComorbidityCondition.
+LooseStoolsAssoicatedWithFever is Individual.
+LooseStoolsAssoicatedWithFever Types OtherComorbidityCondition.
+NIL is Individual.
+NIL Types OtherComorbidityCondition.
+Other is Individual.
+Other Types ComorbidityCondition,.
+Other Types OtherComorbidityCondition.
+PNEUMONIA is Individual.
+PNEUMONIA Types OtherComorbidityCondition.
+PneumoniawithLRTI is Individual.
+PneumoniawithLRTI Types OtherComorbidityCondition.
+Screaming is Individual.
+Screaming Types OtherComorbidityCondition.
+ViralFever is Individual.
+ViralFever Types OtherComorbidityCondition.
+XXXX00000001 is Individual.
+XXXX00000001 Types Patient.
+XXXX00000001 hasAdmittedTo COLUMBIA ASIA HOSPITAL HEBBAL,.
+XXXX00000001 hasAdmittedTo H16472,.
+XXXX00000001 hasCategory COVID19Suspect,.
+XXXX00000001 otherComorbidConditions forCovidTest,.
+XXXX00000001 Call to Emergency 108 for Covid-19 testing "",.
+XXXX00000001 hasID "XXXX00000001",.
+XXXX00000001 hasPhone "9900990099",.
+XXXX00000001 hospitalCode "H16472",.
+XXXX00000001 month "March",.
+name  "Ram Gopal" is ns.com/foaf/0.1/.
+forCovidTest is Individual.
+forCovidTest Types OtherComorbidityCondition.

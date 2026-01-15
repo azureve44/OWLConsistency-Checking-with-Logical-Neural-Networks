@@ -1,0 +1,362 @@
+www.w3.org/2000/01/-schema# is Datatype.
+boolean is Datatype.
+string is Datatype.
+FC AssociationRole.cardinality is ObjectProperty.
+FC AssociationRole.cardinality Domain FC AssociationRole.
+FC AssociationRole.cardinality Range Multiplicity.
+FC AssociationRole.relation is ObjectProperty.
+FC AssociationRole.relation Domain FC AssociationRole.
+FC AssociationRole.relation Range FC FeatureAssociation.
+FC AssociationRole.relation InverseOf FC FeatureAssociation.roleName.
+FC AssociationRole.rolePlayer is ObjectProperty.
+FC AssociationRole.rolePlayer Domain FC AssociationRole.
+FC AssociationRole.rolePlayer Range FC FeatureType.
+FC AssociationRole.type is ObjectProperty.
+FC AssociationRole.type Domain FC AssociationRole.
+FC AssociationRole.type Range FC RoleType.
+FC Binding.globalProperty is ObjectProperty.
+FC Binding.globalProperty Domain FC Binding.
+FC Binding.globalProperty Range FC PropertyType.
+FC BoundAssociationRole.rolePlayer is ObjectProperty.
+FC BoundAssociationRole.rolePlayer Domain FC BoundAssociationRole.
+FC BoundAssociationRole.rolePlayer Range FC FeatureType.
+FC BoundFeatureAttribute.valueType is ObjectProperty.
+FC BoundFeatureAttribute.valueType Domain FC BoundFeatureAttribute.
+FC BoundFeatureAttribute.valueType Range TypeName.
+FC CarrierOfCharacteristics.constrainedBy is ObjectProperty.
+FC CarrierOfCharacteristics.constrainedBy Domain FC CarrierOfCharacteristics.
+FC CarrierOfCharacteristics.constrainedBy Range FC Constraint.
+FC CarrierOfCharacteristics.featureType is ObjectProperty.
+FC CarrierOfCharacteristics.featureType Domain FC CarrierOfCharacteristics.
+FC CarrierOfCharacteristics.featureType Range FC FeatureType.
+FC CarrierOfCharacteristics.featureType InverseOf FC FeatureType.carrierOfCharacteristics.
+FC DefinitionReference.definitionSource is ObjectProperty.
+FC DefinitionReference.definitionSource Domain FC DefinitionReference.
+FC DefinitionReference.definitionSource Range FC DefinitionSource.
+FC DefinitionSource.source is ObjectProperty.
+FC DefinitionSource.source Domain FC DefinitionSource.
+FC DefinitionSource.source Range CI Citation.
+FC FeatureAssociation.roleName is ObjectProperty.
+FC FeatureAssociation.roleName Domain FC FeatureAssociation.
+FC FeatureAssociation.roleName Range FC AssociationRole.
+FC FeatureAssociation.roleName InverseOf FC AssociationRole.relation.
+FC FeatureAttribute.listedValue is ObjectProperty.
+FC FeatureAttribute.listedValue Domain FC FeatureAttribute.
+FC FeatureAttribute.listedValue Range FC ListedValue.
+FC FeatureAttribute.valueMeasurementUnit is ObjectProperty.
+FC FeatureAttribute.valueMeasurementUnit Domain FC FeatureAttribute.
+FC FeatureAttribute.valueMeasurementUnit Range UnitOfMeasure.
+FC FeatureAttribute.valueType is ObjectProperty.
+FC FeatureAttribute.valueType Domain FC FeatureAttribute.
+FC FeatureAttribute.valueType Range TypeName.
+FC FeatureCatalogue.definitionSource is ObjectProperty.
+FC FeatureCatalogue.definitionSource Domain FC FeatureCatalogue.
+FC FeatureCatalogue.definitionSource Range FC DefinitionSource.
+FC FeatureCatalogue.featureType is ObjectProperty.
+FC FeatureCatalogue.featureType Domain FC FeatureCatalogue.
+FC FeatureCatalogue.featureType Range FC FeatureType.
+FC FeatureCatalogue.featureType InverseOf FC FeatureType.featureCatalogue.
+FC FeatureCatalogue.globalProperty is ObjectProperty.
+FC FeatureCatalogue.globalProperty Domain FC FeatureCatalogue.
+FC FeatureCatalogue.globalProperty Range FC PropertyType.
+FC FeatureCatalogue.globalProperty InverseOf FC PropertyType.featureCatalogue.
+FC FeatureCatalogue.inheritanceRelation is ObjectProperty.
+FC FeatureCatalogue.inheritanceRelation Domain FC FeatureCatalogue.
+FC FeatureCatalogue.inheritanceRelation Range FC InheritanceRelation.
+FC FeatureCatalogue.producer is ObjectProperty.
+FC FeatureCatalogue.producer Domain FC FeatureCatalogue.
+FC FeatureCatalogue.producer Range CI ResponsibleParty.
+FC FeatureOperation.affectsValuesOf is ObjectProperty.
+FC FeatureOperation.affectsValuesOf Domain FC FeatureOperation.
+FC FeatureOperation.affectsValuesOf Range FC CarrierOfCharacteristics.
+FC FeatureOperation.observesValuesOf is ObjectProperty.
+FC FeatureOperation.observesValuesOf Domain FC FeatureOperation.
+FC FeatureOperation.observesValuesOf Range FC CarrierOfCharacteristics.
+FC FeatureOperation.triggeredByValuesOf is ObjectProperty.
+FC FeatureOperation.triggeredByValuesOf Domain FC FeatureOperation.
+FC FeatureOperation.triggeredByValuesOf Range FC CarrierOfCharacteristics.
+FC FeatureType.aliases is ObjectProperty.
+FC FeatureType.aliases Domain FC FeatureType.
+FC FeatureType.aliases Range LocalName.
+FC FeatureType.carrierOfCharacteristics is ObjectProperty.
+FC FeatureType.carrierOfCharacteristics Domain FC FeatureType.
+FC FeatureType.carrierOfCharacteristics Range FC CarrierOfCharacteristics.
+FC FeatureType.carrierOfCharacteristics InverseOf FC CarrierOfCharacteristics.featureType.
+FC FeatureType.constrainedBy is ObjectProperty.
+FC FeatureType.constrainedBy Domain FC FeatureType.
+FC FeatureType.constrainedBy Range FC Constraint.
+FC FeatureType.definitionReference is ObjectProperty.
+FC FeatureType.definitionReference Domain FC FeatureType.
+FC FeatureType.definitionReference Range FC DefinitionReference.
+FC FeatureType.featureCatalogue is ObjectProperty.
+FC FeatureType.featureCatalogue Domain FC FeatureType.
+FC FeatureType.featureCatalogue Range FC FeatureCatalogue.
+FC FeatureType.featureCatalogue InverseOf FC FeatureCatalogue.featureType.
+FC FeatureType.inheritsFrom is ObjectProperty.
+FC FeatureType.inheritsFrom Domain FC FeatureType.
+FC FeatureType.inheritsFrom Range FC InheritanceRelation.
+FC FeatureType.inheritsFrom InverseOf FC InheritanceRelation.subtype.
+FC FeatureType.inheritsTo is ObjectProperty.
+FC FeatureType.inheritsTo Domain FC FeatureType.
+FC FeatureType.inheritsTo Range FC InheritanceRelation.
+FC FeatureType.inheritsTo InverseOf FC InheritanceRelation.supertype.
+FC FeatureType.typeName is ObjectProperty.
+FC FeatureType.typeName Domain FC FeatureType.
+FC FeatureType.typeName Range LocalName.
+FC InheritanceRelation.subtype is ObjectProperty.
+FC InheritanceRelation.subtype Domain FC InheritanceRelation.
+FC InheritanceRelation.subtype Range FC FeatureType.
+FC InheritanceRelation.subtype InverseOf FC FeatureType.inheritsFrom.
+FC InheritanceRelation.supertype is ObjectProperty.
+FC InheritanceRelation.supertype Domain FC InheritanceRelation.
+FC InheritanceRelation.supertype Range FC FeatureType.
+FC InheritanceRelation.supertype InverseOf FC FeatureType.inheritsTo.
+FC ListedValue.definitionReference is ObjectProperty.
+FC ListedValue.definitionReference Domain FC ListedValue.
+FC ListedValue.definitionReference Range FC DefinitionReference.
+FC PropertyType.cardinality is ObjectProperty.
+FC PropertyType.cardinality Domain FC PropertyType.
+FC PropertyType.cardinality Range Multiplicity.
+FC PropertyType.definitionReference is ObjectProperty.
+FC PropertyType.definitionReference Domain FC PropertyType.
+FC PropertyType.definitionReference Range FC DefinitionReference.
+FC PropertyType.featureCatalogue is ObjectProperty.
+FC PropertyType.featureCatalogue Domain FC PropertyType.
+FC PropertyType.featureCatalogue Range FC FeatureCatalogue.
+FC PropertyType.featureCatalogue InverseOf FC FeatureCatalogue.globalProperty.
+FC PropertyType.memberName is ObjectProperty.
+FC PropertyType.memberName Domain FC PropertyType.
+FC PropertyType.memberName Range LocalName.
+FC AssociationRole.isNavigable is DataProperty.
+FC AssociationRole.isNavigable Domain FC AssociationRole.
+FC AssociationRole.isNavigable Range boolean.
+FC AssociationRole.isOrdered is DataProperty.
+FC AssociationRole.isOrdered Domain FC AssociationRole.
+FC AssociationRole.isOrdered Range boolean.
+FC Binding.description is DataProperty.
+FC Binding.description Domain FC Binding.
+FC Binding.description Range string.
+FC Constraint.description is DataProperty.
+FC Constraint.description Domain FC Constraint.
+FC Constraint.description Range string.
+FC DefinitionReference.sourceIdentifier is DataProperty.
+FC DefinitionReference.sourceIdentifier Domain FC DefinitionReference.
+FC DefinitionReference.sourceIdentifier Range string.
+FC FeatureAttribute.code is DataProperty.
+FC FeatureAttribute.code Domain FC FeatureAttribute.
+FC FeatureAttribute.code Range string.
+FC FeatureCatalogue.functionalLanguage is DataProperty.
+FC FeatureCatalogue.functionalLanguage Domain FC FeatureCatalogue.
+FC FeatureCatalogue.functionalLanguage Range string.
+FC FeatureOperation.formalDefinition is DataProperty.
+FC FeatureOperation.formalDefinition Domain FC FeatureOperation.
+FC FeatureOperation.formalDefinition Range string.
+FC FeatureOperation.signature is DataProperty.
+FC FeatureOperation.signature Domain FC FeatureOperation.
+FC FeatureOperation.signature Range string.
+FC FeatureType.code is DataProperty.
+FC FeatureType.code Domain FC FeatureType.
+FC FeatureType.code Range string.
+FC FeatureType.definition is DataProperty.
+FC FeatureType.definition Domain FC FeatureType.
+FC FeatureType.definition Range string.
+FC FeatureType.isAbstract is DataProperty.
+FC FeatureType.isAbstract Domain FC FeatureType.
+FC FeatureType.isAbstract Range boolean.
+FC InheritanceRelation.description is DataProperty.
+FC InheritanceRelation.description Domain FC InheritanceRelation.
+FC InheritanceRelation.description Range string.
+FC InheritanceRelation.name is DataProperty.
+FC InheritanceRelation.name Domain FC InheritanceRelation.
+FC InheritanceRelation.name Range string.
+FC InheritanceRelation.uniqueInstance is DataProperty.
+FC InheritanceRelation.uniqueInstance Domain FC InheritanceRelation.
+FC InheritanceRelation.uniqueInstance Range boolean.
+FC ListedValue.code is DataProperty.
+FC ListedValue.code Domain FC ListedValue.
+FC ListedValue.code Range string.
+FC ListedValue.definition is DataProperty.
+FC ListedValue.definition Domain FC ListedValue.
+FC ListedValue.definition Range string.
+FC ListedValue.label is DataProperty.
+FC ListedValue.label Domain FC ListedValue.
+FC ListedValue.label Range string.
+FC PropertyType.definition is DataProperty.
+FC PropertyType.definition Domain FC PropertyType.
+FC PropertyType.definition Range string.
+Multiplicity is Class.
+Thing is www.w3.org/2002/07/#.
+LocalName is Class.
+Thing is www.w3.org/2002/07/#.
+TypeName is Class.
+Thing is www.w3.org/2002/07/#.
+UnitOfMeasure is Class.
+Thing is www.w3.org/2002/07/#.
+GF AssociationRole is Class.
+Thing is www.w3.org/2002/07/#.
+GF AssociationType is Class.
+Thing is www.w3.org/2002/07/#.
+GF AttributeType is Class.
+Thing is www.w3.org/2002/07/#.
+GF Constraint is Class.
+Thing is www.w3.org/2002/07/#.
+GF FeatureType is Class.
+Thing is www.w3.org/2002/07/#.
+GF InheritanceRelation is Class.
+Thing is www.w3.org/2002/07/#.
+GF Operation is Class.
+Thing is www.w3.org/2002/07/#.
+GF PropertyType is Class.
+Thing is www.w3.org/2002/07/#.
+FC AssociationRole is Class.
+FC AssociationRole SubClassOf GF AssociationRole,.
+FC AssociationRole SubClassOf FC PropertyType,.
+FC AssociationRole SubClassOf FC AssociationRole.cardinality only Multiplicity,.
+FC AssociationRole SubClassOf FC AssociationRole.relation only FC FeatureAssociation,.
+FC AssociationRole SubClassOf FC AssociationRole.rolePlayer only FC FeatureType,.
+FC AssociationRole SubClassOf FC AssociationRole.type only FC RoleType,.
+Thing, is FC AssociationRole.cardinality exactly 1 www.w3.org/2002/07/#.
+Thing, is FC AssociationRole.type exactly 1 www.w3.org/2002/07/#.
+Thing, is FC AssociationRole.rolePlayer max 1 www.w3.org/2002/07/#.
+Thing, is FC AssociationRole.isNavigable only boolean,.
+Thing, is FC AssociationRole.isOrdered only boolean,.
+Literal, is FC AssociationRole.isNavigable exactly 1 www.w3.org/2000/01/-schema#.
+Literal is FC AssociationRole.isOrdered exactly 1 www.w3.org/2000/01/-schema#.
+FC Binding is Class.
+FC Binding SubClassOf FC CarrierOfCharacteristics,.
+FC Binding SubClassOf FC Binding.globalProperty only FC PropertyType,.
+FC Binding SubClassOf FC Binding.description only string,.
+Literal is FC Binding.description max 1 www.w3.org/2000/01/-schema#.
+FC BoundAssociationRole is Class.
+FC BoundAssociationRole SubClassOf FC Binding,.
+FC BoundAssociationRole SubClassOf FC BoundAssociationRole.rolePlayer only FC FeatureType,.
+Thing is FC BoundAssociationRole.rolePlayer max 1 www.w3.org/2002/07/#.
+FC BoundFeatureAttribute is Class.
+FC BoundFeatureAttribute SubClassOf FC Binding,.
+FC BoundFeatureAttribute SubClassOf FC BoundFeatureAttribute.valueType only TypeName,.
+Thing is FC BoundFeatureAttribute.valueType max 1 www.w3.org/2002/07/#.
+FC CarrierOfCharacteristics is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is FC CarrierOfCharacteristics.constrainedBy only FC Constraint,.
+Thing, is FC CarrierOfCharacteristics.featureType only FC FeatureType,.
+Thing is FC CarrierOfCharacteristics.featureType max 1 www.w3.org/2002/07/#.
+FC Constraint is Class.
+FC Constraint SubClassOf GF Constraint,.
+FC Constraint SubClassOf FC Constraint.description only string,.
+Literal is FC Constraint.description exactly 1 www.w3.org/2000/01/-schema#.
+FC DefinitionReference is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is FC DefinitionReference.definitionSource only FC DefinitionSource,.
+Thing, is FC DefinitionReference.definitionSource exactly 1 www.w3.org/2002/07/#.
+Thing, is FC DefinitionReference.sourceIdentifier only string,.
+Literal is FC DefinitionReference.sourceIdentifier max 1 www.w3.org/2000/01/-schema#.
+FC DefinitionSource is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is FC DefinitionSource.source only CI Citation,.
+Thing is FC DefinitionSource.source exactly 1 www.w3.org/2002/07/#.
+FC FeatureAssociation is Class.
+FC FeatureAssociation SubClassOf GF AssociationType,.
+FC FeatureAssociation SubClassOf FC FeatureType,.
+FC FeatureAssociation SubClassOf FC FeatureAssociation.roleName only FC AssociationRole,.
+Thing is FC FeatureAssociation.roleName min 2 www.w3.org/2002/07/#.
+FC FeatureAttribute is Class.
+FC FeatureAttribute SubClassOf GF AttributeType,.
+FC FeatureAttribute SubClassOf FC PropertyType,.
+FC FeatureAttribute SubClassOf FC FeatureAttribute.listedValue only FC ListedValue,.
+FC FeatureAttribute SubClassOf FC FeatureAttribute.valueMeasurementUnit only UnitOfMeasure,.
+FC FeatureAttribute SubClassOf FC FeatureAttribute.valueType only TypeName,.
+Thing, is FC FeatureAttribute.valueMeasurementUnit max 1 www.w3.org/2002/07/#.
+Thing, is FC FeatureAttribute.valueType max 1 www.w3.org/2002/07/#.
+Thing, is FC FeatureAttribute.code only string,.
+Literal is FC FeatureAttribute.code max 1 www.w3.org/2000/01/-schema#.
+FC FeatureCatalogue is Class.
+FC FeatureCatalogue SubClassOf CT Catalogue,.
+FC FeatureCatalogue SubClassOf FC FeatureCatalogue.definitionSource only FC DefinitionSource,.
+FC FeatureCatalogue SubClassOf FC FeatureCatalogue.featureType only FC FeatureType,.
+FC FeatureCatalogue SubClassOf FC FeatureCatalogue.globalProperty only FC PropertyType,.
+FC FeatureCatalogue SubClassOf FC FeatureCatalogue.inheritanceRelation only FC InheritanceRelation,.
+FC FeatureCatalogue SubClassOf FC FeatureCatalogue.producer only CI ResponsibleParty,.
+Thing, is FC FeatureCatalogue.featureType min 1 www.w3.org/2002/07/#.
+Thing, is FC FeatureCatalogue.producer exactly 1 www.w3.org/2002/07/#.
+Thing, is FC FeatureCatalogue.functionalLanguage only string,.
+Literal is FC FeatureCatalogue.functionalLanguage max 1 www.w3.org/2000/01/-schema#.
+FC FeatureOperation is Class.
+FC FeatureOperation SubClassOf GF Operation,.
+FC FeatureOperation SubClassOf FC PropertyType,.
+FC FeatureOperation SubClassOf FC FeatureOperation.affectsValuesOf only FC CarrierOfCharacteristics,.
+FC FeatureOperation SubClassOf FC FeatureOperation.observesValuesOf only FC CarrierOfCharacteristics,.
+FC FeatureOperation SubClassOf FC FeatureOperation.triggeredByValuesOf only FC CarrierOfCharacteristics,.
+FC FeatureOperation SubClassOf FC FeatureOperation.formalDefinition only string,.
+FC FeatureOperation SubClassOf FC FeatureOperation.signature only string,.
+Literal, is FC FeatureOperation.signature exactly 1 www.w3.org/2000/01/-schema#.
+Literal is FC FeatureOperation.formalDefinition max 1 www.w3.org/2000/01/-schema#.
+FC FeatureType is Class.
+FC FeatureType SubClassOf GF FeatureType,.
+FC FeatureType SubClassOf FC FeatureType.aliases only LocalName,.
+FC FeatureType SubClassOf FC FeatureType.carrierOfCharacteristics only FC CarrierOfCharacteristics,.
+FC FeatureType SubClassOf FC FeatureType.constrainedBy only FC Constraint,.
+FC FeatureType SubClassOf FC FeatureType.definitionReference only FC DefinitionReference,.
+FC FeatureType SubClassOf FC FeatureType.featureCatalogue only FC FeatureCatalogue,.
+FC FeatureType SubClassOf FC FeatureType.inheritsFrom only FC InheritanceRelation,.
+FC FeatureType SubClassOf FC FeatureType.inheritsTo only FC InheritanceRelation,.
+FC FeatureType SubClassOf FC FeatureType.typeName only LocalName,.
+Thing, is FC FeatureType.featureCatalogue exactly 1 www.w3.org/2002/07/#.
+Thing, is FC FeatureType.typeName exactly 1 www.w3.org/2002/07/#.
+Thing, is FC FeatureType.definitionReference max 1 www.w3.org/2002/07/#.
+Thing, is FC FeatureType.code only string,.
+Thing, is FC FeatureType.definition only string,.
+Thing, is FC FeatureType.isAbstract only boolean,.
+Literal, is FC FeatureType.isAbstract exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is FC FeatureType.code max 1 www.w3.org/2000/01/-schema#.
+Literal is FC FeatureType.definition max 1 www.w3.org/2000/01/-schema#.
+FC InheritanceRelation is Class.
+FC InheritanceRelation SubClassOf GF InheritanceRelation,.
+FC InheritanceRelation SubClassOf FC InheritanceRelation.subtype only FC FeatureType,.
+FC InheritanceRelation SubClassOf FC InheritanceRelation.supertype only FC FeatureType,.
+Thing, is FC InheritanceRelation.subtype exactly 1 www.w3.org/2002/07/#.
+Thing, is FC InheritanceRelation.supertype exactly 1 www.w3.org/2002/07/#.
+Thing, is FC InheritanceRelation.description only string,.
+Thing, is FC InheritanceRelation.name only string,.
+Thing, is FC InheritanceRelation.uniqueInstance only boolean,.
+Literal, is FC InheritanceRelation.description exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is FC InheritanceRelation.uniqueInstance exactly 1 www.w3.org/2000/01/-schema#.
+Literal is FC InheritanceRelation.name max 1 www.w3.org/2000/01/-schema#.
+FC ListedValue is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is FC ListedValue.definitionReference only FC DefinitionReference,.
+Thing, is FC ListedValue.definitionReference max 1 www.w3.org/2002/07/#.
+Thing, is FC ListedValue.code only string,.
+Thing, is FC ListedValue.definition only string,.
+Thing, is FC ListedValue.label only string,.
+Literal, is FC ListedValue.label exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is FC ListedValue.code max 1 www.w3.org/2000/01/-schema#.
+Literal is FC ListedValue.definition max 1 www.w3.org/2000/01/-schema#.
+FC PropertyType is Class.
+FC PropertyType SubClassOf GF PropertyType,.
+FC PropertyType SubClassOf FC CarrierOfCharacteristics,.
+FC PropertyType SubClassOf FC PropertyType.cardinality only Multiplicity,.
+FC PropertyType SubClassOf FC PropertyType.definitionReference only FC DefinitionReference,.
+FC PropertyType SubClassOf FC PropertyType.featureCatalogue only FC FeatureCatalogue,.
+FC PropertyType SubClassOf FC PropertyType.memberName only LocalName,.
+Thing, is FC PropertyType.cardinality exactly 1 www.w3.org/2002/07/#.
+Thing, is FC PropertyType.memberName exactly 1 www.w3.org/2002/07/#.
+Thing, is FC PropertyType.definitionReference max 1 www.w3.org/2002/07/#.
+Thing, is FC PropertyType.featureCatalogue max 1 www.w3.org/2002/07/#.
+Thing, is FC PropertyType.definition only string,.
+Literal is FC PropertyType.definition max 1 www.w3.org/2000/01/-schema#.
+FC RoleType is Class.
+CI Citation is Class.
+Thing is www.w3.org/2002/07/#.
+CI ResponsibleParty is Class.
+Thing is www.w3.org/2002/07/#.
+CT Catalogue is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.
+FC RoleType is Individual.
+FC RoleTypeCollection is Individual.
+FC RoleType/ is Individual.
+FC RoleType/ Types FC RoleType.
+FC RoleType/ is Individual.
+FC RoleType/ Types FC RoleType.
+FC RoleType/ is Individual.
+FC RoleType/ Types FC RoleType.

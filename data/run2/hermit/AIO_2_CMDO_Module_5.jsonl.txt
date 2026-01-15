@@ -1,0 +1,30 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty
+string is Datatype
+BFO_0000080 is ObjectProperty
+BFO_0000019 is Class
+BFO_0000030 is Class
+BFO_0000030 DisjointWith 
+BFO_0000030 DisjointWith PATO_0001396
+www.w3.org/2000/01/-schema# is Annotations
+Thing is www.w3.org/2002/07/#
+PATO_0001241 is Class
+PATO_0001241 SubClassOf BFO_0000019,
+PATO_0001241 SubClassOf BFO_0000080 some BFO_0000030,
+PATO_0001241 SubClassOf BFO_0000080 some
+PATO_0001241 SubClassOf (BFO_0000030 and PATO_0001396),
+PATO_0001241 SubClassOf BFO_0000080 only PATO_0001396
+PATO_0001396 is Class
+PATO_0001396 SubClassOf PATO_0001241
+PATO_0001396 DisjointWith BFO_0000030
+PATO_0001995 is Class
+PATO_0001995 SubClassOf PATO_0001241
+PATO_0002016 is Class
+PATO_0002016 SubClassOf PATO_0001241
+PATO_0002182 is Class
+PATO_0002182 SubClassOf PATO_0001241
+www.ifomis.org/vdot/vdot_core.# is Class
+www.ifomis.org/vdot/vdot_core.# SubClassOf PATO_0001241
+www.w3.org/2002/07/# is Class
+www.w3.org/2000/01/-schema# is Annotations
+BFO_0000080 some BFO_0000030 is Class
+BFO_0000080 some BFO_0000030 SubClassOf PATO_0001396

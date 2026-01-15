@@ -1,0 +1,331 @@
+string is Datatype.
+data part of is ObjectProperty.
+data part of Characteristics Transitive.
+data part of Domain data.
+data part of Range data.
+has data part is ObjectProperty.
+has data part Characteristics Transitive.
+has data part Domain data.
+has data part Range data.
+has units is ObjectProperty.
+refers to material continuant is ObjectProperty.
+has value is DataProperty.
+HPLC buffer is Class.
+HPLC buffer SubClassOf HPLC instrumental operating parameter,.
+HPLC buffer SubClassOf substance identifier.
+HPLC chromatogram is Class.
+HPLC chromatogram SubClassOf HPLC experimental data collection.
+HPLC data collection is Class.
+HPLC data collection SubClassOf process associated data collection.
+HPLC detection wavelength is Class.
+HPLC detection wavelength SubClassOf HPLC instrumental operating parameter.
+HPLC detector signal is Class.
+HPLC detector signal SubClassOf HPLC experimentally measured parameter.
+HPLC excitation wavelength is Class.
+HPLC excitation wavelength SubClassOf HPLC instrumental operating parameter.
+HPLC experimental data collection is Class.
+HPLC experimental data collection is equivalent to HPLC data collection and experimentally measured data collection.
+HPLC experimental data collection SubClassOf HPLC data collection,.
+HPLC experimental data collection SubClassOf experimentally measured data collection.
+HPLC experimentally measured parameter is Class.
+HPLC experimentally measured parameter SubClassOf HPLC parameter,.
+HPLC experimentally measured parameter SubClassOf experimentally measured parameter.
+HPLC flowrate is Class.
+HPLC flowrate SubClassOf HPLC instrumental operating parameter.
+HPLC gradient program is Class.
+HPLC gradient program SubClassOf HPLC operating parameter collection.
+HPLC gradient time point is Class.
+HPLC gradient time point SubClassOf HPLC operating parameter collection.
+HPLC injection loop volume is Class.
+HPLC injection loop volume SubClassOf HPLC instrumental operating parameter.
+HPLC instrumental operating parameter is Class.
+HPLC instrumental operating parameter SubClassOf HPLC parameter,.
+HPLC instrumental operating parameter SubClassOf operating parameter.
+HPLC operating parameter collection is Class.
+HPLC operating parameter collection is equivalent to HPLC data collection and operating parameter collection.
+HPLC operating parameter collection SubClassOf HPLC data collection,.
+HPLC operating parameter collection SubClassOf operating parameter collection,.
+HPLC operating parameter collection SubClassOf has data part only.
+HPLC operating parameter collection SubClassOf (HPLC gradient program or HPLC gradient time point or HPLC parameter).
+HPLC parameter is Class.
+HPLC parameter SubClassOf process associated parameter.
+HPLC time parameter is Class.
+HPLC time parameter SubClassOf HPLC experimentally measured parameter,.
+HPLC time parameter SubClassOf HPLC instrumental operating parameter,.
+HPLC time parameter SubClassOf process time parameter.
+HPLC time signal pair is Class.
+HPLC time signal pair SubClassOf HPLC experimental data collection.
+MS analyzer mode is Class.
+MS analyzer mode SubClassOf MS analyzer parameter.
+MS analyzer parameter is Class.
+MS analyzer parameter SubClassOf MS instrumental operating parameter.
+MS data collection is Class.
+MS data collection SubClassOf process associated data collection.
+MS data processing parameter is Class.
+MS data processing parameter SubClassOf MS parameter,.
+MS data processing parameter SubClassOf data processing parameter.
+MS data processing parameter collection is Class.
+MS data processing parameter collection SubClassOf MS operating parameter collection.
+MS experimentally measured parameter is Class.
+MS experimentally measured parameter SubClassOf MS parameter,.
+MS experimentally measured parameter SubClassOf experimentally measured parameter.
+MS instrument setup parameter collection is Class.
+MS instrument setup parameter collection SubClassOf MS operating parameter collection.
+MS instrumental operating parameter is Class.
+MS instrumental operating parameter SubClassOf MS parameter,.
+MS instrumental operating parameter SubClassOf operating parameter.
+MS operating parameter collection is Class.
+MS operating parameter collection is equivalent to MS data collection and operating parameter collection.
+MS operating parameter collection SubClassOf MS data collection,.
+MS operating parameter collection SubClassOf operating parameter collection,.
+MS operating parameter collection SubClassOf has data part only.
+MS operating parameter collection SubClassOf (MS operating parameter collection or MS parameter).
+MS parameter is Class.
+MS parameter SubClassOf process associated parameter.
+MS source MALDI matrix is Class.
+MS source MALDI matrix SubClassOf substance identifier.
+MS source parameter is Class.
+MS source parameter SubClassOf MS instrumental operating parameter.
+MS time parameter is Class.
+MS time parameter SubClassOf MS parameter,.
+MS time parameter SubClassOf process time parameter.
+Masslynx proteinlynx denovo sequencing results data is Class.
+Masslynx proteinlynx denovo sequencing results data SubClassOf denovo sequencing output data collection.
+N-glycosylation consensus presence is Class.
+N-glycosylation consensus presence SubClassOf molecular parameter.
+PEAKS denovo sequencing results data is Class.
+PEAKS denovo sequencing results data SubClassOf denovo sequencing output data collection.
+SemURI is Class.
+SemURI SubClassOf SemURI parameter.
+SemURI concept ID is Class.
+SemURI concept ID SubClassOf SemURI parameter.
+SemURI instance ID is Class.
+SemURI instance ID SubClassOf SemURI parameter.
+SemURI module is Class.
+Thing) is (has data part some SemURI concept ID) and (has data part some SemURI instance ID) and (has data part exactly 2 www.w3.org/2002/07/#.
+Thing) SubClassOf annotation associated data collection.
+SemURI parameter is Class.
+SemURI parameter SubClassOf annotation parameter.
+URL parameter is Class.
+URL parameter SubClassOf annotation parameter.
+absolute amount is Class.
+absolute amount SubClassOf substance amount.
+annotation associated data collection is Class.
+annotation associated data collection SubClassOf data collection.
+annotation parameter is Class.
+annotation parameter SubClassOf parameter.
+biological continuant is Class.
+biological source parameter is Class.
+biological source parameter SubClassOf parameter,.
+biological source parameter SubClassOf refers to material continuant only biological continuant.
+cell is Class.
+component amount is Class.
+component amount SubClassOf substance amount.
+concentration units is Class.
+concentration units SubClassOf physical units.
+data is Class.
+Thing is www.w3.org/2002/07/#.
+data collection is Class.
+data collection SubClassOf data.
+data file URL is Class.
+data file URL SubClassOf URL parameter.
+data processing parameter is Class.
+data processing parameter SubClassOf operating parameter.
+database search data collection is Class.
+database search data collection SubClassOf process associated data collection.
+database search output data collection is Class.
+database search output data collection is equivalent to database search data collection and experimentally measured data collection.
+database search output data collection SubClassOf database search data collection,.
+database search output data collection SubClassOf experimentally measured data collection.
+database search processing parameter collection is Class.
+database search processing parameter collection is equivalent to database search data collection and operating parameter collection.
+database search processing parameter collection SubClassOf database search data collection,.
+database search processing parameter collection SubClassOf operating parameter collection.
+database search results Mascot data is Class.
+database search results Mascot data SubClassOf database search output data collection.
+database search results Sequest data is Class.
+database search results Sequest data SubClassOf database search output data collection.
+database search results Spectrum Mill data is Class.
+database search results Spectrum Mill data SubClassOf database search output data collection.
+denovo sequencing data collection is Class.
+denovo sequencing data collection SubClassOf process associated data collection.
+denovo sequencing output data collection is Class.
+denovo sequencing output data collection is equivalent to denovo sequencing data collection and experimentally measured data collection.
+denovo sequencing output data collection SubClassOf denovo sequencing data collection,.
+denovo sequencing output data collection SubClassOf experimentally measured data collection.
+denovo sequencing processing parameter collection is Class.
+denovo sequencing processing parameter collection is equivalent to denovo sequencing data collection and operating parameter collection.
+denovo sequencing processing parameter collection SubClassOf denovo sequencing data collection,.
+denovo sequencing processing parameter collection SubClassOf operating parameter collection.
+electrical charge units is Class.
+electrical charge units SubClassOf physical units.
+electrical potential units is Class.
+electrical potential units SubClassOf potential units.
+elemental composition is Class.
+elemental composition SubClassOf molecular parameter.
+experimental ion abundance is Class.
+experimental ion abundance SubClassOf MS experimentally measured parameter.
+experimental ion charge is Class.
+experimental ion charge SubClassOf MS experimentally measured parameter.
+experimental mass to charge ratio is Class.
+experimental mass to charge ratio SubClassOf MS experimentally measured parameter.
+experimentally measured data collection is Class.
+experimentally measured data collection SubClassOf data collection.
+experimentally measured parameter is Class.
+experimentally measured parameter SubClassOf parameter.
+flowrate units is Class.
+flowrate units SubClassOf physical units.
+fragment peptide C terminus index is Class.
+fragment peptide C terminus index SubClassOf molecular parameter.
+fragment peptide N terminus index is Class.
+fragment peptide N terminus index SubClassOf molecular parameter.
+gel electrophoresis data collection is Class.
+gel electrophoresis data collection SubClassOf process associated data collection.
+gel electrophoresis experimental data collection is Class.
+gel electrophoresis experimental data collection SubClassOf experimentally measured data collection,.
+gel electrophoresis experimental data collection SubClassOf gel electrophoresis data collection.
+gel electrophoresis processing parameter collection is Class.
+gel electrophoresis processing parameter collection is equivalent to gel electrophoresis data collection and operating parameter collection.
+gel electrophoresis processing parameter collection SubClassOf gel electrophoresis data collection,.
+gel electrophoresis processing parameter collection SubClassOf operating parameter collection.
+ion abundance is Class.
+ion abundance SubClassOf ion parameter.
+ion charge is Class.
+ion charge SubClassOf ion parameter.
+ion parameter is Class.
+ion parameter SubClassOf substance parameter.
+isoelectric point is Class.
+isoelectric point SubClassOf molecular parameter.
+laser pulse intensity units is Class.
+laser pulse intensity units SubClassOf physical units.
+length units is Class.
+length units SubClassOf physical units.
+life-cycle form is Class.
+mass is Class.
+mass SubClassOf ion parameter,.
+mass SubClassOf molecular parameter.
+mass to charge ratio is Class.
+mass to charge ratio SubClassOf ion parameter.
+mass units is Class.
+mass units SubClassOf physical units.
+meta data file URL is Class.
+meta data file URL SubClassOf URL parameter.
+mixture component descriptor is Class.
+mixture component descriptor SubClassOf substance associated data collection,.
+mixture component descriptor SubClassOf has data part some component amount,.
+mixture component descriptor SubClassOf has data part some substance identifier,.
+Thing is has data part exactly 2 www.w3.org/2002/07/#.
+molecular description is Class.
+molecular description SubClassOf molecular parameter.
+molecular parameter is Class.
+molecular parameter SubClassOf substance parameter.
+molecular sequence is Class.
+molecular sequence SubClassOf molecular parameter.
+ms output data collection is Class.
+ms output data collection SubClassOf MS data collection,.
+ms output data collection SubClassOf experimentally measured data collection.
+operating parameter is Class.
+operating parameter SubClassOf parameter.
+operating parameter collection is Class.
+operating parameter collection SubClassOf data collection.
+organ is Class.
+organism is Class.
+parameter is Class.
+parameter SubClassOf data.
+physical units is Class.
+physical units SubClassOf parameter,.
+Thing, is has units exactly 0 www.w3.org/2002/07/#.
+Thing, is has value only string.
+potential units is Class.
+potential units SubClassOf physical units.
+power units is Class.
+power units SubClassOf physical units.
+process associated data collection is Class.
+process associated parameter is Class.
+process time parameter is Class.
+process time parameter SubClassOf process associated parameter.
+processed gel electrophoresis data is Class.
+processed gel electrophoresis data SubClassOf gel electrophoresis experimental data collection.
+raw2mzXML transformation is Class.
+raw2mzXML transformation SubClassOf tranform encoding format.
+raw gel image electrophoresis data is Class.
+raw gel image electrophoresis data SubClassOf gel electrophoresis experimental data collection.
+source cell is Class.
+source cell SubClassOf biological source parameter,.
+source cell SubClassOf refers to material continuant only cell.
+source life-cycle-stage is Class.
+source life-cycle-stage SubClassOf biological source parameter,.
+source life-cycle-stage SubClassOf refers to material continuant only life-cycle form.
+source organ is Class.
+source organ SubClassOf biological source parameter,.
+source organ SubClassOf refers to material continuant only organ.
+source organism is Class.
+source organism SubClassOf biological source parameter,.
+source organism SubClassOf refers to material continuant only organism.
+substance accession number is Class.
+substance accession number SubClassOf substance identifier.
+substance amount is Class.
+substance amount SubClassOf substance parameter.
+substance associated data collection is Class.
+substance associated data collection SubClassOf data collection.
+substance identifier is Class.
+substance identifier SubClassOf substance parameter.
+substance parameter is Class.
+time units is Class.
+time units SubClassOf physical units.
+tranform encoding format is Class.
+tranform encoding format SubClassOf transform data format.
+transform data format is Class.
+volume units is Class.
+volume units SubClassOf physical units.
+www.w3.org/2002/07/# is Class.
+Coulombs is Individual.
+Coulombs Types electrical charge units.
+atomic mass units is Individual.
+atomic mass units Types mass units.
+elementary electrical charge is Individual.
+elementary electrical charge Types electrical charge units.
+grams is Individual.
+grams Types mass units.
+hours is Individual.
+hours Types time units.
+human source is Individual.
+human source Types source organism.
+kilograms is Individual.
+kilograms Types mass units.
+liters is Individual.
+liters Types volume units.
+micrograms is Individual.
+micrograms Types mass units.
+microliters is Individual.
+microliters Types volume units.
+microliters per minute is Individual.
+microliters per minute Types flowrate units.
+micrometers is Individual.
+micrometers Types length units.
+milligrams is Individual.
+milligrams Types mass units.
+milliliters is Individual.
+milliliters Types volume units.
+milliliters per minute is Individual.
+milliliters per minute Types flowrate units.
+millimeters is Individual.
+millimeters Types length units.
+milliseconds is Individual.
+milliseconds Types time units.
+minutes is Individual.
+minutes Types time units.
+molarity units is Individual.
+molarity units Types concentration units.
+nanograms is Individual.
+nanograms Types mass units.
+nanoliters per minute is Individual.
+nanoliters per minute Types flowrate units.
+nanometers is Individual.
+nanometers Types length units.
+negative MS mode is Individual.
+negative MS mode Types MS analyzer mode.
+positive MS mode is Individual.
+positive MS mode Types MS analyzer mode.
+seconds is Individual.
+seconds Types time units.

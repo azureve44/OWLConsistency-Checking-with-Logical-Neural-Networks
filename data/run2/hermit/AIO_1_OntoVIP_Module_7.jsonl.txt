@@ -1,0 +1,265 @@
+can-be-accessed-on is ObjectProperty
+can-be-accessed-on Domain program
+can-be-accessed-on Range network
+can-be-processed-with is ObjectProperty
+can-be-processed-with Domain program
+is-compilable-by is ObjectProperty
+is-compilable-by SubPropertyOf can-be-processed-with
+is-compilable-by Domain compilable-program
+is-compilable-by Range computer
+is-connected-to-during is ObjectProperty
+is-executable-by is ObjectProperty
+is-executable-by SubPropertyOf can-be-processed-with
+is-installed-on-at is ObjectProperty
+is-installed-on-at Domain program
+is-installed-on-at Range execution-platform
+is-interpretable-by is ObjectProperty
+is-interpretable-by SubPropertyOf can-be-processed-with
+is-running-on-at is ObjectProperty
+is-running-on-at SubPropertyOf is-installed-on-at
+is-running-on-at Domain program
+is-well-formed-formula-of is ObjectProperty
+locates is ObjectProperty
+locates Domain resource-location-description-format-expression
+has-for-proper-part-during is ObjectProperty
+is-a-well-formed-formula-of is ObjectProperty
+is-realized-by is ObjectProperty
+is-well-formed-formula-of is ObjectProperty
+BMP-expression is Class
+BMP-expression SubClassOf image-description-language-expression,
+BMP-expression SubClassOf is-a-well-formed-formula-of some BMP-format
+BMP-format is Class
+GIF-expression is Class
+GIF-expression SubClassOf image-description-language-expression,
+GIF-expression SubClassOf is-a-well-formed-formula-of some GIF-format
+GIF-format is Class
+IMA-expression is Class
+IMA-expression SubClassOf image-description-language-expression,
+IMA-expression SubClassOf is-a-well-formed-formula-of some IMA-format
+IMA-file is Class
+IMA-format is Class
+IMG-expression is Class
+IMG-expression SubClassOf image-description-language-expression,
+IMG-expression SubClassOf is-a-well-formed-formula-of some IMG-format
+IMG-format is Class
+JPEG-expression is Class
+JPEG-expression SubClassOf image-description-language-expression,
+JPEG-expression SubClassOf is-a-well-formed-formula-of some JPEG-format
+JPEG-format is Class
+PDF-expression is Class
+PDF-expression SubClassOf document-description-language-expression,
+PDF-expression SubClassOf is-a-well-formed-formula-of some PDF-format
+PDF-format is Class
+RAR-expression is Class
+RAR-expression SubClassOf archive-format-expression,
+RAR-expression SubClassOf is-a-well-formed-formula-of some RAR-format,
+RAR-expression SubClassOf is-a-well-formed-formula-of only domain-specific-computer-language
+RAR-format is Class
+RAR-format DisjointWith domain-specific-computer-language
+URI is Class
+URI SubClassOf resource-location-description-format-expression,
+URI SubClassOf is-a-well-formed-formula-of some URI-format
+URI-format is Class
+URL is Class
+URL SubClassOf URI
+WSDL-language is Class
+WSDL-language SubClassOf XML-format
+XML-expression is Class
+XML-expression SubClassOf markup-language-expression,
+XML-expression SubClassOf is-a-well-formed-formula-of some XML-format
+XML-format is Class
+ZIP-expression is Class
+ZIP-expression SubClassOf archive-format-expression,
+ZIP-expression SubClassOf is-a-well-formed-formula-of some ZIP-format
+ZIP-format is Class
+archive-format is Class
+archive-format-expression is Class
+archive-format-expression SubClassOf data-description-language-expression,
+archive-format-expression SubClassOf is-a-well-formed-formula-of some archive-format
+command-expression is Class
+command-expression SubClassOf domain-specific-computer-language-expression,
+command-expression SubClassOf is-a-well-formed-formula-of some command-language
+command-language is Class
+command-language SubClassOf domain-specific-computer-language
+command-language DisjointWith query-language
+compilable-program is Class
+compilable-program SubClassOf program
+composite-expression is Class
+composite-expression SubClassOf computer-language-expression,
+composite-expression SubClassOf has-for-proper-part-during some computer-language-expression,
+composite-expression SubClassOf is-a-well-formed-formula-of only query-language
+computer is Class
+computer-language-expression is Class
+computer-language-expression SubClassOf formal-expression,
+computer-language-expression SubClassOf is-a-well-formed-formula-of some command-language,
+computer-language-expression SubClassOf is-a-well-formed-formula-of some
+computer-language-expression SubClassOf (command-language and query-language)
+computer-under-linux is Class
+computer-under-linux SubClassOf computer
+computer-under-windows is Class
+computer-under-windows SubClassOf computer
+computing-grid-middleware is Class
+computing-grid-middleware SubClassOf grid-middleware
+connected-computer is Class
+connected-computer SubClassOf computer,
+connected-computer SubClassOf is-connected-to-during some network
+data-description-language is Class
+data-description-language-expression is Class
+data-description-language-expression SubClassOf computer-language-expression,
+data-description-language-expression SubClassOf is-a-well-formed-formula-of some data-description-language
+data-manipulation-language is Class
+data-manipulation-language-expression is Class
+data-manipulation-language-expression SubClassOf computer-language-expression,
+data-manipulation-language-expression SubClassOf is-a-well-formed-formula-of some data-manipulation-language
+document-description-language is Class
+document-description-language-expression is Class
+document-description-language-expression SubClassOf data-description-language-expression,
+document-description-language-expression SubClassOf is-a-well-formed-formula-of some document-description-language
+domain-specific-computer-language is Class
+domain-specific-computer-language SubClassOf data-manipulation-language
+domain-specific-computer-language DisjointWith RAR-format
+domain-specific-computer-language-expression is Class
+domain-specific-computer-language-expression SubClassOf data-manipulation-language-expression,
+domain-specific-computer-language-expression SubClassOf is-a-well-formed-formula-of some domain-specific-computer-language
+executable-program is Class
+executable-program SubClassOf program
+execution-platform is Class
+glite is Class
+glite SubClassOf computing-grid-middleware
+globus-toolkit is Class
+globus-toolkit SubClassOf computing-grid-middleware
+grid-middleware is Class
+high-level-computer-language is Class
+high-level-computer-language SubClassOf computer-language
+high-level-computer-language DisjointWith low-level-computer-language
+image-description-language-expression is Class
+image-description-language-expression SubClassOf data-description-language-expression,
+image-description-language-expression SubClassOf is-a-well-formed-formula-of some image-format
+image-format is Class
+intermediate-code is Class
+intermediate-code SubClassOf program
+intermediate-language is Class
+intermediate-language SubClassOf low-level-computer-language,
+intermediate-language SubClassOf programming-language
+interpretable-program is Class
+interpretable-program SubClassOf program
+lexeme is Class
+lexeme SubClassOf computer-language-expression
+low-level-computer-language is Class
+low-level-computer-language SubClassOf computer-language
+low-level-computer-language DisjointWith high-level-computer-language
+machine-language is Class
+machine-language SubClassOf low-level-computer-language
+markup-language is Class
+markup-language-expression is Class
+markup-language-expression SubClassOf data-description-language-expression,
+markup-language-expression SubClassOf is-a-well-formed-formula-of some markup-language
+medical-image-format is Class
+network is Class
+program is Class
+program SubClassOf programming-language-expression
+programming-language is Class
+programming-language-expression is Class
+programming-language-expression SubClassOf data-manipulation-language-expression,
+programming-language-expression SubClassOf is-a-well-formed-formula-of some programming-language
+query-expression is Class
+query-expression SubClassOf domain-specific-computer-language-expression,
+query-expression SubClassOf is-a-well-formed-formula-of some query-language
+query-language is Class
+query-language SubClassOf domain-specific-computer-language
+query-language DisjointWith command-language
+resource-location-description-format is Class
+resource-location-description-format-expression is Class
+resource-location-description-format-expression SubClassOf data-description-language-expression,
+resource-location-description-format-expression SubClassOf is-a-well-formed-formula-of some resource-location-description-format
+source-code is Class
+source-code SubClassOf program
+unix-file-address is Class
+unix-file-address SubClassOf resource-location-description-format-expression,
+unix-file-address SubClassOf is-a-well-formed-formula-of some unix-file-addressing-format
+unix-file-addressing-format is Class
+windows-file-address is Class
+windows-file-address SubClassOf resource-location-description-format-expression,
+windows-file-address SubClassOf is-a-well-formed-formula-of some windows-file-addressing-format
+windows-file-addressing-format is Class
+word-expression is Class
+word-expression SubClassOf document-description-language-expression,
+word-expression SubClassOf is-a-well-formed-formula-of some word-format
+word-format is Class
+DICOM-SOP-class is Class
+DICOM-SOP-class-expression is Class
+DICOM-SOP-class-expression SubClassOf medical-image-expression,
+DICOM-SOP-class-expression SubClassOf is-well-formed-formula-of some DICOM-SOP-class
+DICOM-SOP-class-expression DisjointWith analyze-expression
+DICOM-SOP-class-expression DisjointWith NIfTI-expression
+DICOM-SOP-class-expression DisjointWith INRIMAGE-expression
+DICOM-SOP-class-expression DisjointWith GIS-expression
+DICOM-SOP-class-expression DisjointWith DICOM-expression
+DICOM-expression is Class
+DICOM-expression SubClassOf medical-image-expression,
+DICOM-expression SubClassOf is-well-formed-formula-of some DICOM-format
+DICOM-expression DisjointWith analyze-expression
+DICOM-expression DisjointWith NIfTI-expression
+DICOM-expression DisjointWith INRIMAGE-expression
+DICOM-expression DisjointWith GIS-expression
+DICOM-expression DisjointWith DICOM-SOP-class-expression
+DICOM-format is Class
+GIS-expression is Class
+GIS-expression SubClassOf medical-image-expression,
+GIS-expression SubClassOf is-well-formed-formula-of some GIS-format,
+GIS-expression SubClassOf is-realized-by exactly 1 IMA-file,
+GIS-expression SubClassOf is-realized-by exactly 1 GIS-header-file
+GIS-expression DisjointWith analyze-expression
+GIS-expression DisjointWith NIfTI-expression
+GIS-expression DisjointWith INRIMAGE-expression
+GIS-expression DisjointWith DICOM-expression
+GIS-expression DisjointWith DICOM-SOP-class-expression
+GIS-format is Class
+GIS-header-file is Class
+INRIMAGE-expression is Class
+INRIMAGE-expression SubClassOf medical-image-expression,
+INRIMAGE-expression SubClassOf is-well-formed-formula-of some INRIMAGE-format,
+INRIMAGE-expression SubClassOf is-realized-by exactly 1 INRIMAGE-file
+INRIMAGE-expression DisjointWith analyze-expression
+INRIMAGE-expression DisjointWith NIfTI-expression
+INRIMAGE-expression DisjointWith GIS-expression
+INRIMAGE-expression DisjointWith DICOM-expression
+INRIMAGE-expression DisjointWith DICOM-SOP-class-expression
+INRIMAGE-file is Class
+INRIMAGE-format is Class
+NIfTI-expression is Class
+NIfTI-expression EquivalentTo analyze-expression
+NIfTI-expression SubClassOf medical-image-expression,
+NIfTI-expression SubClassOf is-well-formed-formula-of some NIfTI-format
+NIfTI-expression DisjointWith analyze-expression
+NIfTI-expression DisjointWith INRIMAGE-expression
+NIfTI-expression DisjointWith GIS-expression
+NIfTI-expression DisjointWith DICOM-expression
+NIfTI-expression DisjointWith DICOM-SOP-class-expression
+NIfTI-format is Class
+analyze-7.5-expression is Class
+analyze-7.5-expression SubClassOf analyze-expression
+analyze-SPM-expression is Class
+analyze-SPM-expression SubClassOf analyze-expression
+analyze-expression is Class
+analyze-expression EquivalentTo NIfTI-expression
+analyze-expression SubClassOf medical-image-expression
+analyze-expression DisjointWith NIfTI-expression
+analyze-expression DisjointWith INRIMAGE-expression
+analyze-expression DisjointWith GIS-expression
+analyze-expression DisjointWith DICOM-expression
+analyze-expression DisjointWith DICOM-SOP-class-expression
+medical-image-expression is Class
+medical-image-expression SubClassOf data-description-language-expression,
+medical-image-expression SubClassOf is-well-formed-formula-of some medical-image-format
+common-noun is Class
+common-noun SubClassOf noun
+complaining is Class
+complaining SubClassOf informing
+computer-language is Class
+formal-expression is Class
+informing is Class
+noun is Class
+www.w3.org/2002/07/# is Class
+is-a-well-formed-formula-of some archive-format is Class
+is-a-well-formed-formula-of some archive-format SubClassOf ZIP-expression

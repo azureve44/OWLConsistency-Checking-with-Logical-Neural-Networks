@@ -1,0 +1,93 @@
+decimal is Datatype.
+string is Datatype.
+belongsToSubject is ObjectProperty.
+belongsToSubject Characteristics Functional.
+belongsToSubject Domain Brain Region.
+belongsToSubject Range Subject.
+belongsToSubject InverseOf hasRegions.
+hasRegions is ObjectProperty.
+hasRegions Characteristics InverseFunctional.
+hasRegions Domain Subject.
+hasRegions Range Brain Region.
+hasRegions InverseOf belongsToSubject.
+age is DataProperty.
+age Characteristics Functional.
+age Domain Subject.
+age Range decimal.
+eTIV is DataProperty.
+eTIV Characteristics Functional.
+eTIV Domain Subject.
+eTIV Range decimal.
+fieldStrength is DataProperty.
+fieldStrength Characteristics Functional.
+fieldStrength Domain Subject.
+fieldStrength Range decimal.
+sex is DataProperty.
+sex Characteristics Functional.
+sex Domain Subject.
+sex Range decimal.
+subjectID is DataProperty.
+subjectID Characteristics Functional.
+subjectID Domain Subject.
+subjectID Range string.
+volume is DataProperty.
+volume Characteristics Functional.
+volume Domain Brain Region.
+volume Range decimal.
+z is DataProperty.
+z Characteristics Functional.
+z Domain Brain Region.
+z Range decimal.
+<https is Class.
+<https SubClassOf Cerebrospinal Fluid.
+<https is Class.
+<https SubClassOf Cerebrospinal Fluid.
+Brain Region is Class.
+Thing is www.w3.org/2002/07/#.
+Thing DisjointWith Subject.
+Brainstem is Class.
+Brainstem SubClassOf Brain Region.
+CSF is Class.
+CSF SubClassOf Cerebrospinal Fluid.
+Cerebellum is Class.
+Cerebellum SubClassOf Brain Region.
+Cerebrospinal Fluid is Class.
+Cerebrospinal Fluid SubClassOf Brain Region.
+Cerebrum is Class.
+Cerebrum SubClassOf Brain Region.
+Left Cerebellum is Class.
+Left Cerebellum SubClassOf Cerebellum.
+Left Cerebellum DisjointWith Right Cerebellum.
+Left Cerebellum Cortex is Class.
+Left Cerebellum Cortex SubClassOf Left Cerebellum.
+Left Cerebellum Cortex DisjointWith Left Cerebellum White Matter.
+Left Cerebellum White Matter is Class.
+Left Cerebellum White Matter SubClassOf Left Cerebellum.
+Left Cerebellum White Matter DisjointWith Left Cerebellum Cortex.
+Left Choroid Plexus is Class.
+Left Choroid Plexus SubClassOf Cerebrospinal Fluid.
+Left Inf-Lat-Vent is Class.
+Left Inf-Lat-Vent SubClassOf Cerebrospinal Fluid.
+Left Lateral Ventricle is Class.
+Left Lateral Ventricle SubClassOf Cerebrospinal Fluid.
+Right Cerebellum is Class.
+Right Cerebellum SubClassOf Cerebellum.
+Right Cerebellum DisjointWith Left Cerebellum.
+Right Cerebellum Cortex is Class.
+Right Cerebellum Cortex SubClassOf Right Cerebellum.
+Right Cerebellum Cortex DisjointWith Right Cerebellum White Matter.
+Right Cerebellum White Matter is Class.
+Right Cerebellum White Matter SubClassOf Right Cerebellum.
+Right Cerebellum White Matter DisjointWith Right Cerebellum Cortex.
+Right Choroid Plexus is Class.
+Right Choroid Plexus SubClassOf Cerebrospinal Fluid.
+Right Inf-Lat-Vent is Class.
+Right Inf-Lat-Vent SubClassOf Cerebrospinal Fluid.
+Right Lateral Ventricle is Class.
+Right Lateral Ventricle SubClassOf Cerebrospinal Fluid.
+Subject is Class.
+Thing is www.w3.org/2002/07/#.
+Thing DisjointWith Brain Region.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2002/07/# DisjointClasses Brainstem,Cerebellum,Cerebrospinal Fluid,Cerebrum.
+//3rd-Ventricle,<https is CSF,Left Choroid Plexus,Left Inf-Lat-Vent,Left Lateral Ventricle,Right Choroid Plexus,Right Inf-Lat-Vent,Right Lateral Ventricle,<https.

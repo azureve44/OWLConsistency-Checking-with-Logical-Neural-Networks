@@ -1,0 +1,337 @@
+string is Datatype.
+lang is Datatype.
+about edge is ObjectProperty.
+about node is ObjectProperty.
+change 1 is ObjectProperty.
+change 2 is ObjectProperty.
+consider is ObjectProperty.
+has direct replacement is ObjectProperty.
+has nondirect replacement is ObjectProperty.
+has textual diff is ObjectProperty.
+node id is ObjectProperty.
+replaced by is ObjectProperty.
+subject is ObjectProperty.
+superclass is ObjectProperty.
+om/ is ObjectProperty.
+om/ is ObjectProperty.
+om/ is ObjectProperty.
+om/ is ObjectProperty.
+om/ is ObjectProperty.
+about node representation is DataProperty.
+annotation property is DataProperty.
+annotation property type is DataProperty.
+associated change set is DataProperty.
+change description is DataProperty.
+datatype is DataProperty.
+language is DataProperty.
+new datatype is DataProperty.
+new language is DataProperty.
+new object type is DataProperty.
+new value is DataProperty.
+new value type is DataProperty.
+object type is DataProperty.
+old datatype is DataProperty.
+old language is DataProperty.
+old object type is DataProperty.
+old value is DataProperty.
+old value type is DataProperty.
+predicate type is DataProperty.
+qualifier is DataProperty.
+subject type is DataProperty.
+subset is DataProperty.
+om/ is DataProperty.
+Error10 is Class.
+Error11 is Class.
+Error12 is Class.
+Error13 is Class.
+Error14 is Class.
+Error20 is Class.
+Error21 is Class.
+Error22 is Class.
+Error23 is Class.
+Error3 is Class.
+Error4 is Class.
+Error5 is Class.
+Thing is www.w3.org/2002/07/#.
+Error6 is Class.
+Thing is www.w3.org/2002/07/#.
+Error7 is Class.
+Error8 is Class.
+Error9 is Class.
+AddNodeToSubset is Class.
+AddNodeToSubset SubClassOf AddToSubset,.
+AddNodeToSubset SubClassOf NodeChange.
+AddToSubset is Class.
+AllowsAutomaticReplacementOfEdges is Class.
+Change is Class.
+Change SubClassOf Error5,.
+Change SubClassOf Error6,.
+Change SubClassOf ChangeLanguageElement.
+ChangeLanguageElement is Class.
+Thing is www.w3.org/2002/07/#.
+ChangeSetSummaryStatistic is Class.
+ChangeSetSummaryStatistic SubClassOf ChangeLanguageElement.
+ClassCreation is Class.
+ClassCreation SubClassOf NodeCreation,.
+Node, is superclass only om/.
+Node, is change description only string.
+Configuration is Class.
+Configuration SubClassOf ChangeLanguageElement.
+Creation is Class.
+Deletion is Class.
+EdgeChange is Class.
+EdgeChange SubClassOf Error22,.
+EdgeChange SubClassOf Error23,.
+EdgeChange SubClassOf SimpleChange,.
+Edge, is about edge only om/.
+Thing, is subject only www.w3.org/2002/07/#.
+Thing, is datatype only string,.
+Thing, is language only lang,.
+Thing, is object type only string.
+EdgeCreation is Class.
+EdgeCreation SubClassOf Creation,.
+EdgeCreation SubClassOf EdgeChange,.
+annotation set only om/ is om/.
+object only om/ is om/.
+predicate only om/ is om/.
+subject only om/ is om/.
+subject only om/ is change description only string,.
+subject only om/ is object type only string,.
+subject only om/ is predicate type only string,.
+subject only om/ is subject type only string.
+EdgeDeletion is Class.
+EdgeDeletion SubClassOf Deletion,.
+EdgeDeletion SubClassOf EdgeChange,.
+annotation set only om/ is om/.
+object only om/ is om/.
+predicate only om/ is om/.
+subject only om/ is om/.
+subject only om/ is change description only string,.
+subject only om/ is object type only string,.
+subject only om/ is predicate type only string,.
+subject only om/ is subject type only string.
+EdgeLogicalInterpretationChange is Class.
+EdgeLogicalInterpretationChange SubClassOf EdgeChange.
+EdgeObsoletion is Class.
+EdgeObsoletion SubClassOf EdgeChange,.
+EdgeObsoletion SubClassOf Obsoletion,.
+annotation set only om/ is om/.
+object only om/ is om/.
+predicate only om/ is om/.
+subject only om/ is om/.
+subject only om/ is change description only string.
+EdgeRewiring is Class.
+EdgeRewiring SubClassOf EdgeChange.
+LanguageTagChange is Class.
+LogicalAxiomChange is Class.
+LogicalAxiomChange SubClassOf SimpleChange.
+MappingCreation is Class.
+MappingCreation SubClassOf Creation,.
+MappingCreation SubClassOf EdgeCreation,.
+annotation set only om/ is om/.
+object only om/ is om/.
+predicate only om/ is om/.
+subject only om/ is om/.
+subject only om/ is change description only string.
+MappingPredicateChange is Class.
+MappingPredicateChange SubClassOf NodeMappingChange,.
+MappingPredicateChange SubClassOf new value only string,.
+MappingPredicateChange SubClassOf old value only string.
+MappingReplacement is Class.
+MappingReplacement SubClassOf NodeMappingChange,.
+MappingReplacement SubClassOf new value only string,.
+MappingReplacement SubClassOf old value only string.
+MetadataAssertionPredicateChange is Class.
+MetadataAssertionPredicateChange SubClassOf NodeMetadataAssertionChange,.
+MetadataAssertionPredicateChange SubClassOf new value only string,.
+MetadataAssertionPredicateChange SubClassOf old value only string.
+MetadataAssertionReplacement is Class.
+MetadataAssertionReplacement SubClassOf NodeMetadataAssertionChange,.
+MetadataAssertionReplacement SubClassOf new value only string,.
+MetadataAssertionReplacement SubClassOf old value only string.
+NameBecomesSynonym is Class.
+NameBecomesSynonym SubClassOf Error11,.
+NameBecomesSynonym SubClassOf Error12,.
+NameBecomesSynonym SubClassOf Error13,.
+NameBecomesSynonym SubClassOf Error14,.
+NameBecomesSynonym SubClassOf NodeSynonymChange,.
+NameBecomesSynonym SubClassOf change 1 only NodeRename,.
+NameBecomesSynonym SubClassOf change 2 only NewSynonym,.
+NameBecomesSynonym SubClassOf change description only string.
+NewMapping is Class.
+NewMapping SubClassOf NodeMappingChange,.
+object only om/ is om/.
+predicate only om/ is om/.
+NewMetadataAssertion is Class.
+NewMetadataAssertion SubClassOf NodeMetadataAssertionChange,.
+object only om/ is om/.
+predicate only om/ is om/.
+NewSynonym is Class.
+NewSynonym SubClassOf NodeSynonymChange,.
+predicate only om/ is om/.
+predicate only om/ is language only lang,.
+predicate only om/ is new value only string,.
+predicate only om/ is qualifier only string.
+NewTextDefinition is Class.
+NewTextDefinition SubClassOf NodeTextDefinitionChange,.
+NewTextDefinition SubClassOf new value only string.
+NodeAnnotationChange is Class.
+NodeAnnotationChange SubClassOf NodeChange,.
+NodeAnnotationChange SubClassOf annotation property only string,.
+NodeAnnotationChange SubClassOf annotation property type only string.
+NodeAnnotationReplacement is Class.
+NodeAnnotationReplacement SubClassOf NodeAnnotationChange.
+NodeChange is Class.
+NodeChange SubClassOf SimpleChange,.
+Node, is about node only om/.
+Node, is about node representation only string,.
+Node, is language only lang.
+NodeCreation is Class.
+NodeCreation SubClassOf Creation,.
+NodeCreation SubClassOf NodeChange,.
+Node, is node id only om/.
+annotation set only om/ is om/.
+ type only OwlTypeEnum, is om/.
+ type only OwlTypeEnum, is change description only string,.
+ type only OwlTypeEnum, is language only lang,.
+name only string is om/.
+NodeDeepening is Class.
+NodeDeepening SubClassOf NodeMove,.
+NodeDeepening SubClassOf change description only string.
+NodeDeletion is Class.
+NodeDeletion SubClassOf Deletion,.
+NodeDeletion SubClassOf NodeChange,.
+NodeDeletion SubClassOf change description only string.
+NodeDirectMerge is Class.
+NodeDirectMerge SubClassOf AllowsAutomaticReplacementOfEdges,.
+NodeDirectMerge SubClassOf NodeObsoletion,.
+Thing, is about node only www.w3.org/2002/07/#.
+Thing, is has direct replacement only www.w3.org/2002/07/#.
+Thing, is change description only string.
+NodeMappingChange is Class.
+NodeMappingChange SubClassOf NodeChange.
+NodeMetadataAssertionChange is Class.
+NodeMetadataAssertionChange SubClassOf NodeChange.
+NodeMove is Class.
+NodeMove SubClassOf EdgeChange,.
+NodeMove SubClassOf change description only string,.
+NodeMove SubClassOf new object type only string,.
+NodeMove SubClassOf old object type only string.
+NodeObsoletion is Class.
+NodeObsoletion SubClassOf Error20,.
+NodeObsoletion SubClassOf Error21,.
+NodeObsoletion SubClassOf NodeChange,.
+NodeObsoletion SubClassOf Obsoletion,.
+Node, is has direct replacement only om/.
+Node, is has nondirect replacement only om/.
+Node, is associated change set only string,.
+Node, is change description only string.
+NodeObsoletionWithDirectReplacement is Class.
+NodeObsoletionWithDirectReplacement SubClassOf AllowsAutomaticReplacementOfEdges,.
+NodeObsoletionWithDirectReplacement SubClassOf NodeObsoletion,.
+Thing, is has direct replacement only www.w3.org/2002/07/#.
+Thing, is change description only string.
+NodeObsoletionWithNoDirectReplacement is Class.
+NodeObsoletionWithNoDirectReplacement SubClassOf NodeObsoletion,.
+Thing, is has nondirect replacement only www.w3.org/2002/07/#.
+Thing, is change description only string.
+NodeRename is Class.
+NodeRename SubClassOf NodeChange,.
+NodeRename SubClassOf has textual diff only TextualDiff,.
+NodeRename SubClassOf change description only string,.
+NodeRename SubClassOf new language only string,.
+NodeRename SubClassOf new value only string,.
+NodeRename SubClassOf old language only string,.
+NodeRename SubClassOf old value only string.
+NodeShallowing is Class.
+NodeShallowing SubClassOf NodeMove,.
+NodeShallowing SubClassOf change description only string.
+NodeSynonymChange is Class.
+NodeSynonymChange SubClassOf NodeChange.
+NodeTextDefinitionChange is Class.
+NodeTextDefinitionChange SubClassOf NodeChange.
+NodeUnobsoletion is Class.
+NodeUnobsoletion SubClassOf Error10,.
+NodeUnobsoletion SubClassOf Error7,.
+NodeUnobsoletion SubClassOf Error8,.
+NodeUnobsoletion SubClassOf Error9,.
+NodeUnobsoletion SubClassOf NodeChange,.
+NodeUnobsoletion SubClassOf Unobsoletion,.
+Node, is consider only om/.
+Node, is replaced by only om/.
+Node, is change description only string.
+ObjectPropertyCreation is Class.
+ObjectPropertyCreation SubClassOf NodeCreation,.
+ObjectPropertyCreation SubClassOf change description only string.
+Obsoletion is Class.
+OwlTypeEnum is Class.
+PlaceUnder is Class.
+PlaceUnder SubClassOf EdgeCreation.
+PredicateChange is Class.
+PredicateChange SubClassOf EdgeChange,.
+PredicateChange SubClassOf change description only string.
+RemoveFromSubset is Class.
+RemoveMapping is Class.
+RemoveMapping SubClassOf NodeMappingChange,.
+object only om/ is om/.
+predicate only om/ is om/.
+RemoveMetadataAssertion is Class.
+RemoveMetadataAssertion SubClassOf NodeMetadataAssertionChange,.
+object only om/ is om/.
+predicate only om/ is om/.
+RemoveNodeFromSubset is Class.
+RemoveNodeFromSubset SubClassOf Error3,.
+RemoveNodeFromSubset SubClassOf Error4,.
+RemoveNodeFromSubset SubClassOf NodeChange,.
+RemoveNodeFromSubset SubClassOf RemoveFromSubset,.
+Thing, is about node only www.w3.org/2002/07/#.
+Thing, is change description only string,.
+Thing, is subset only string.
+RemoveSynonym is Class.
+RemoveSynonym SubClassOf NodeSynonymChange,.
+RemoveSynonym SubClassOf old value only string.
+RemoveTextDefinition is Class.
+RemoveTextDefinition SubClassOf NodeTextDefinitionChange,.
+RemoveTextDefinition SubClassOf old value only string.
+RemoveUnder is Class.
+RemoveUnder SubClassOf EdgeDeletion.
+Session is Class.
+Session SubClassOf ChangeLanguageElement.
+SetLanguageForName is Class.
+SetLanguageForName SubClassOf LanguageTagChange,.
+SetLanguageForName SubClassOf NodeChange,.
+SetLanguageForName SubClassOf change description only string,.
+SetLanguageForName SubClassOf new value only string,.
+SetLanguageForName SubClassOf old value only string.
+SimpleChange is Class.
+SimpleChange SubClassOf Change,.
+SimpleChange SubClassOf new datatype only string,.
+SimpleChange SubClassOf new language only string,.
+SimpleChange SubClassOf new value only string,.
+SimpleChange SubClassOf new value type only string,.
+SimpleChange SubClassOf old datatype only string,.
+SimpleChange SubClassOf old language only string,.
+SimpleChange SubClassOf old value only string,.
+SimpleChange SubClassOf old value type only string.
+SynonymPredicateChange is Class.
+SynonymPredicateChange SubClassOf NodeSynonymChange,.
+SynonymPredicateChange SubClassOf has textual diff only TextualDiff,.
+SynonymPredicateChange SubClassOf new value only string,.
+SynonymPredicateChange SubClassOf old value only string.
+SynonymReplacement is Class.
+SynonymReplacement SubClassOf NodeSynonymChange,.
+SynonymReplacement SubClassOf has textual diff only TextualDiff,.
+SynonymReplacement SubClassOf new value only string,.
+SynonymReplacement SubClassOf old value only string.
+TextDefinitionReplacement is Class.
+TextDefinitionReplacement SubClassOf NodeTextDefinitionChange,.
+TextDefinitionReplacement SubClassOf has textual diff only TextualDiff,.
+TextDefinitionReplacement SubClassOf new value only string,.
+TextDefinitionReplacement SubClassOf old value only string.
+TextualDiff is Class.
+TextualDiff SubClassOf ChangeLanguageElement.
+Unobsoletion is Class.
+om/ is Class.
+om/ is Class.
+om/ is Class.
+www.w3.org/2002/07/# is Class.

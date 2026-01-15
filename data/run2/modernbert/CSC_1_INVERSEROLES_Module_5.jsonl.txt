@@ -1,0 +1,88 @@
+www.w3.org/2000/01/-schema# is Datatype.
+double is Datatype.
+long is Datatype.
+hasDay is DataProperty.
+hasDay Domain RepresentationOfGregorianDateAndUtcTime.
+hasHour is DataProperty.
+hasHour Domain RepresentationOfGregorianDateAndUtcTime.
+hasMinute is DataProperty.
+hasMinute Domain RepresentationOfGregorianDateAndUtcTime.
+hasMonth is DataProperty.
+hasMonth Domain RepresentationOfGregorianDateAndUtcTime.
+hasSecond is DataProperty.
+hasSecond Domain RepresentationOfGregorianDateAndUtcTime.
+hasYear is DataProperty.
+hasYear Domain RepresentationOfGregorianDateAndUtcTime.
+ArrangementOfIndividual is Class.
+AssemblyOfIndividual is Class.
+AssemblyOfIndividual SubClassOf ArrangementOfIndividual.
+AssemblyOfIndividual DisjointWith FeatureWholePart.
+Class is Class.
+Class SubClassOf IndividualDimension.
+ClassOfAbstractObject is Class.
+ClassOfAbstractObject DisjointWith ClassOfIndividual.
+ClassOfArrangedIndividual is Class.
+ClassOfArrangedIndividual SubClassOf ClassOfIndividual.
+ClassOfArrangementOfIndividual is Class.
+ClassOfAssemblyOfIndividual is Class.
+ClassOfAssemblyOfIndividual SubClassOf ClassOfArrangementOfIndividual.
+ClassOfAssemblyOfIndividual DisjointWith Namespace.
+ClassOfAssemblyOfIndividual DisjointWith ClassOfFeatureWholePart.
+ClassOfEvent is Class.
+ClassOfEvent SubClassOf ClassOfIndividual.
+ClassOfExpressInformationRepresentation is Class.
+ClassOfExpressInformationRepresentation is equivalent to ExpressBinary or ExpressBoolean or ExpressInteger or ExpressLogical or ExpressReal or ExpressString.
+ClassOfExpressInformationRepresentation SubClassOf ClassOfInformationRepresentation.
+ClassOfExpressInformationRepresentation DisjointWith ExpressBinary or ExpressBoolean or ExpressInteger or ExpressLogical or ExpressReal or ExpressString.
+ClassOfExpressInformationRepresentation DisjointWith RepresentationOfGregorianDateAndUtcTime.
+ClassOfFeatureWholePart is Class.
+ClassOfFeatureWholePart DisjointWith ClassOfAssemblyOfIndividual.
+ClassOfIndividual is Class.
+ClassOfIndividual SubClassOf Class.
+ClassOfIndividual DisjointWith ClassOfAbstractObject.
+ClassOfInformationRepresentation is Class.
+ClassOfOrganism is Class.
+ClassOfPeriodInTime is Class.
+ClassOfPeriodInTime SubClassOf ClassOfIndividual.
+ClassOfPerson is Class.
+ClassOfPerson SubClassOf ClassOfOrganism.
+ExpressBinary is Class.
+ExpressBinary SubClassOf ClassOfExpressInformationRepresentation.
+ExpressBoolean is Class.
+ExpressBoolean SubClassOf ClassOfExpressInformationRepresentation.
+ExpressInteger is Class.
+ExpressInteger SubClassOf ClassOfExpressInformationRepresentation.
+ExpressLogical is Class.
+ExpressLogical SubClassOf ClassOfExpressInformationRepresentation.
+ExpressReal is Class.
+ExpressReal SubClassOf ClassOfExpressInformationRepresentation.
+ExpressString is Class.
+ExpressString SubClassOf ClassOfExpressInformationRepresentation.
+FeatureWholePart is Class.
+FeatureWholePart DisjointWith AssemblyOfIndividual.
+IndividualDimension is Class.
+IndividualDimension SubClassOf ClassOfIndividual.
+Namespace is Class.
+Namespace DisjointWith ClassOfAssemblyOfIndividual.
+ParticipatingRoleAndDomain is Class.
+ParticipatingRoleAndDomain SubClassOf ClassOfIndividual.
+Property is Class.
+Property SubClassOf ClassOfIndividual.
+RepresentationOfGregorianDateAndUtcTime is Class.
+RepresentationOfGregorianDateAndUtcTime SubClassOf ClassOfInformationRepresentation,.
+RepresentationOfGregorianDateAndUtcTime SubClassOf hasDay only long,.
+RepresentationOfGregorianDateAndUtcTime SubClassOf hasHour only long,.
+RepresentationOfGregorianDateAndUtcTime SubClassOf hasMinute only long,.
+RepresentationOfGregorianDateAndUtcTime SubClassOf hasMonth only long,.
+RepresentationOfGregorianDateAndUtcTime SubClassOf hasSecond only double,.
+RepresentationOfGregorianDateAndUtcTime SubClassOf hasYear only long,.
+Literal, is hasYear exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is hasDay max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasHour max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMinute max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMonth max 1 www.w3.org/2000/01/-schema#.
+Literal is hasSecond max 1 www.w3.org/2000/01/-schema#.
+Literal DisjointWith ClassOfExpressInformationRepresentation.
+Status is Class.
+Status SubClassOf ClassOfIndividual.
+www.w3.org/2002/07/# is Class.

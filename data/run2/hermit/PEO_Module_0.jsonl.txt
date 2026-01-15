@@ -1,0 +1,503 @@
+boolean is Datatype
+date is Datatype
+double is Datatype
+float is Datatype
+int is Datatype
+has_GO_annotation is ObjectProperty
+gene is purl.org/obo//sequence#
+gene Range GO_term
+has_input_value is ObjectProperty
+has_input_value Domain process
+has_input_value Range data_collection or parameter
+has_output_value is ObjectProperty
+has_output_value Domain process
+has_output_value Range data_collection or parameter
+has_primer is ObjectProperty
+gene is purl.org/obo//sequence#
+gene Range primer
+has_region is ObjectProperty
+has_region Domain primer
+region is purl.org/obo//sequence#
+involved_in is ObjectProperty
+involved_in Domain parameter
+involved_in Range data_collection
+is_homologous_to is ObjectProperty
+is_homologous_to SubPropertyOf is_similar_to
+is_identical_to is ObjectProperty
+is_identical_to SubPropertyOf is_similar_to
+is_orthologous_to is ObjectProperty
+is_orthologous_to SubPropertyOf is_similar_to
+is_paralogous_to is ObjectProperty
+is_paralogous_to SubPropertyOf is_similar_to
+is_similar_to is ObjectProperty
+region is purl.org/obo//sequence#
+region is purl.org/obo//sequence#
+has_parameter is ObjectProperty
+has_agent is ObjectProperty
+part_of is ObjectProperty
+preceded_by is ObjectProperty
+paige.ctegd.uga.edu/ParasiteLifecycle.# is ObjectProperty
+organism_strain is paige.ctegd.uga.edu/ParasiteLifecycle.#
+organism_strain is paige.ctegd.uga.edu/ParasiteLifecycle.#
+has_hmm_prob is DataProperty
+has_hmm_prob Domain domain_parameter
+has_hmm_prob Range double
+has_nn_d is DataProperty
+has_nn_d Domain domain_parameter
+has_nn_d Range double
+has_nn_sum is DataProperty
+has_nn_sum Domain domain_parameter
+has_nn_sum Range double
+has_tm_count is DataProperty
+has_tm_count Domain domain_parameter
+has_tm_count Range double
+has_transfection_attempts is DataProperty
+has_transfection_attempts Domain strain_creation_protocol
+has_value is DataProperty
+has_value Domain peptide_count,
+has_value Domain statistical_measure
+has_value Range double
+is_null_mutant is DataProperty
+is_null_mutant Domain strain_creation_protocol
+is_null_mutant Range boolean
+day is DataProperty
+day Characteristics Functional
+day Domain DateTimeDescription
+day Range date
+hour is DataProperty
+hour Characteristics Functional
+hour Domain DateTimeDescription
+hour Range int
+minute is DataProperty
+minute Characteristics Functional
+minute Domain DateTimeDescription
+minute Range int
+second is DataProperty
+second Characteristics Functional
+second Domain DateTimeDescription
+second Range float
+BP_reaction is Class
+COG_info is Class
+COG_info SubClassOf researcher_note
+DBchangelog is Class
+DBchangelog SubClassOf technician_note
+DateCompleted is Class
+DateCompleted SubClassOf DateTimeDescription
+DateOfLastModification is Class
+DateOfLastModification SubClassOf DateTimeDescription
+DateStarted is Class
+DateStarted SubClassOf DateTimeDescription
+GO_term is Class
+GO_term SubClassOf data_collection
+KOlog is Class
+KOlog SubClassOf experiment_justification
+LR_reaction is Class
+SAM_result is Class
+SAM_result SubClassOf data_collection
+Tcruzi_lifecyclestage_subsample is Class
+Tcruzi_lifecyclestage_subsample SubClassOf sample,
+Tcruzi_lifecyclestage_subsample SubClassOf part_of only Tcruzi_sample
+Tcruzi_sample is Class
+Tcruzi_sample SubClassOf sample
+aborted is Class
+accession_number is Class
+accession_number SubClassOf domain_parameter
+allele_designation is Class
+allele_designation SubClassOf laboratory_experiment_parameters
+allele_ko_log is Class
+allele_ko_log SubClassOf researcher_note
+assembly_confidence_notes is Class
+assembly_confidence_notes SubClassOf experiment_notes
+cell_cloning is Class
+cell_cloning SubClassOf strain_creation_process,
+cell_cloning SubClassOf part_of some strain_creation_protocol,
+cell_cloning SubClassOf has_input_value only drug_selected_sample,
+cell_cloning SubClassOf has_output_value only cloned_sample,
+cell_cloning SubClassOf preceded_by only drug_selection
+chr_allele_note is Class
+chr_allele_note SubClassOf researcher_note
+clone_characterization is Class
+cloned_sample is Class
+cloned_sample SubClassOf Tcruzi_sample
+cloned_sample_designate is Class
+cloned_sample_designate SubClassOf cloned_sample
+completed is Class
+construct_creation is Class
+culture_medium is Class
+culture_medium SubClassOf domain_parameter
+culture_parameter is Class
+culture_parameter SubClassOf domain_parameter
+data_source is Class
+data_source SubClassOf agent
+digest_and_purify is Class
+drug is Class
+drug SubClassOf domain_parameter
+drug_attribute is Class
+drug_attribute SubClassOf domain_parameter
+drug_concentration is Class
+drug_concentration SubClassOf drug_attribute
+drug_resistant_plasmid is Class
+plasmid is purl.org/obo//sequence#
+drug_selected_sample is Class
+drug_selected_sample SubClassOf Tcruzi_sample
+drug_selection is Class
+drug_selection SubClassOf strain_creation_process,
+drug_selection SubClassOf has_input_value only transfected_sample,
+drug_selection SubClassOf has_output_value only drug_selected_sample,
+drug_selection SubClassOf has_parameter only
+drug_selection SubClassOf (drug or drug_concentration),
+drug_selection SubClassOf part_of only strain_creation_protocol,
+drug_selection SubClassOf preceded_by only transfection
+experiment_justification is Class
+experiment_justification SubClassOf experiment_notes
+experiment_notes is Class
+experiment_notes SubClassOf laboratory_experiment_parameters
+five_prime_intergenic_forward_region is Class
+five_prime_intergenic_forward_region SubClassOf five_prime_intergenic_region
+five_prime_intergenic_region is Class
+intergenic_region is purl.org/obo//sequence#
+five_prime_intergenic_reverse_region is Class
+five_prime_intergenic_reverse_region SubClassOf five_prime_intergenic_region
+five_prime_primer is Class
+five_prime_primer SubClassOf primer
+five_prime_reverse_primer is Class
+five_prime_reverse_primer SubClassOf five_prime_primer
+freezer is Class
+freezer SubClassOf agent
+freezer_location is Class
+freezer_location SubClassOf spatial_parameter
+gel_purify is Class
+gene_knockout_process is Class
+gene_knockout_process SubClassOf process,
+gene_knockout_process SubClassOf has_agent only researcher
+group_number is Class
+group_number SubClassOf laboratory_experiment_parameters
+high_priority is Class
+hybridization is Class
+hybridization SubClassOf transcriptome_process
+in_progress is Class
+initial_pcr is Class
+kinetoplast_position is Class
+kinetoplast_position SubClassOf spatial_parameter
+knockout_construct_plasmid is Class
+plasmid is purl.org/obo//sequence#
+knockout_plasmid is Class
+knockout_plasmid SubClassOf agent
+knockout_plasmid_construction is Class
+knockout_plasmid_construction SubClassOf plasmid_construction,
+knockout_plasmid_construction SubClassOf has_input_value only
+knockout_plasmid_construction SubClassOf (drug_resistant_plasmid or target_region_plasmid),
+knockout_plasmid_construction SubClassOf has_output_value only knockout_construct_plasmid,
+knockout_plasmid_construction SubClassOf has_parameter only
+knockout_plasmid_construction SubClassOf (allele_designation or experiment_notes or plasmid_construction_step),
+knockout_plasmid_construction SubClassOf part_of only knockout_region_construct_protocol
+knockout_project_protocol is Class
+knockout_project_protocol SubClassOf gene_knockout_process
+knockout_region_construct_protocol is Class
+knockout_region_construct_protocol SubClassOf gene_knockout_process,
+knockout_region_construct_protocol SubClassOf has_parameter only
+gene), is (allele_designation or experiment_notes or purl.org/obo//sequence#
+gene), is part_of only knockout_project_protocol
+labelling is Class
+labelling SubClassOf transcriptome_process
+laboratory_experiment_parameters is Class
+laboratory_experiment_parameters SubClassOf domain_parameter
+log_base2_ratio is Class
+log_base2_ratio SubClassOf statistical_measure
+low_priority is Class
+medium_priority is Class
+microarray_ANOVA_cluster is Class
+microarray_ANOVA_cluster SubClassOf laboratory_experiment_parameters
+microarray_plate_reader is Class
+microarray_plate_reader SubClassOf agent
+midi_prep is Class
+mini_prep1 is Class
+mini_prep2 is Class
+not_started is Class
+nucleic_acid is Class
+nucleic_acid SubClassOf domain_parameter
+oligo_to_gene_assignment is Class
+oligo_to_gene_assignment SubClassOf transcriptome_process
+pathway is Class
+pathway SubClassOf data_collection
+peptide_count is Class
+peptide_count SubClassOf data_collection
+phenotype is Class
+phenotype SubClassOf data_collection
+plasmid_construction is Class
+plasmid_construction SubClassOf process,
+region, is has_input_value only purl.org/obo//sequence#
+plasmid, is has_output_value only purl.org/obo//sequence#
+plasmid, is has_parameter only status,
+plasmid, is preceded_by only sequence_extraction
+plasmid_construction_step is Class
+plasmid_construction_step SubClassOf status
+polymerase_chain_reaction is Class
+polymerase_chain_reaction SubClassOf process
+prehybridization is Class
+prehybridization SubClassOf transcriptome_process
+prime_forward_primer is Class
+prime_forward_primer SubClassOf five_prime_primer
+primer is Class
+primer SubClassOf domain_parameter
+primers_ordered is Class
+priority is Class
+priority SubClassOf laboratory_experiment_parameters
+protein_group_number is Class
+protein_group_number SubClassOf data_collection
+proteome_analysis is Class
+proteome_analysis SubClassOf process,
+proteome_analysis SubClassOf has_input_value only Tcruzi_lifecyclestage_subsample,
+gene, is has_input_value only purl.org/obo//sequence#
+gene, is has_output_value only log_base2_ratio,
+gene, is has_output_value only peptide_count,
+gene, is has_output_value only protein_group_number,
+gene, is has_output_value only sequence_coverage,
+gene, is has_output_value only spectral_count,
+gene, is has_output_value max 2 standard_deviation,
+gene, is has_output_value max 2 Probability
+purity is Class
+purity SubClassOf domain_parameter
+researcher is Class
+researcher SubClassOf agent
+researcher_note is Class
+researcher_note SubClassOf experiment_notes
+sample is Class
+sample SubClassOf data_collection
+sample_characterization is Class
+sample_characterization SubClassOf gene_knockout_process,
+sample_characterization SubClassOf has_input_value only sample
+scanning is Class
+scanning SubClassOf transcriptome_process
+screen1 is Class
+screen2 is Class
+selection is Class
+sequence_coverage is Class
+sequence_coverage SubClassOf drug_selected_sample
+sequence_extraction is Class
+sequence_extraction SubClassOf gene_knockout_process,
+sequence_extraction SubClassOf has_parameter only
+genome or purl.org/obo//sequence# is (accession_number or allele_designation or experiment_notes or purl.org/obo//sequence#
+genome or purl.org/obo//sequence# is part_of only knockout_region_construct_protocol
+signal_intensity is Class
+signal_intensity SubClassOf data_collection
+spectral_count is Class
+spectral_count SubClassOf data_collection
+stage_purity_determination is Class
+stage_purity_determination SubClassOf process,
+stage_purity_determination SubClassOf has_input_value only Tcruzi_sample,
+stage_purity_determination SubClassOf has_output_value only Tcruzi_lifecyclestage_subsample,
+stage_purity_determination SubClassOf has_output_value only purity,
+lifecycle_stage is has_output_value only paige.ctegd.uga.edu/ParasiteLifecycle.#
+stalled is Class
+standard_deviation is Class
+standard_deviation SubClassOf statistical_measure
+statistical_measure is Class
+statistical_measure SubClassOf data_collection
+status is Class
+status SubClassOf laboratory_experiment_parameters
+strain_creation_process is Class
+strain_creation_process SubClassOf process
+strain_creation_protocol is Class
+strain_creation_protocol SubClassOf strain_creation_process,
+strain_creation_protocol SubClassOf has_parameter only
+organism_strain), is (cloned_sample_designate or experiment_notes or status or paige.ctegd.uga.edu/ParasiteLifecycle.#
+organism_strain), is preceded_by only knockout_project_protocol
+strain_summary is Class
+strain_summary SubClassOf experiment_notes
+subset is Class
+subset SubClassOf researcher_note
+target_region_plasmid is Class
+plasmid is purl.org/obo//sequence#
+technician_note is Class
+technician_note SubClassOf experiment_notes
+temperature_condition is Class
+temperature_condition SubClassOf culture_parameter
+three_prime_forward_primer is Class
+three_prime_forward_primer SubClassOf three_prime_primer
+three_prime_intergenic_forward_region is Class
+three_prime_intergenic_forward_region SubClassOf three_prime_intergenic_region
+three_prime_intergenic_region is Class
+intergenic_region is purl.org/obo//sequence#
+three_prime_intergenic_reverse_region is Class
+three_prime_intergenic_reverse_region SubClassOf three_prime_intergenic_region
+three_prime_primer is Class
+three_prime_primer SubClassOf primer
+three_prime_reverse_primer is Class
+three_prime_reverse_primer SubClassOf three_prime_primer
+tranform_LR is Class
+transcriptome_process is Class
+transcriptome_process SubClassOf process,
+microarray_oligonucleotide, is has_input_value only purl.org/obo//sequence#
+gene is has_output_value only purl.org/obo//sequence#
+transfected_genome is Class
+genome is purl.org/obo//sequence#
+transfected_sample is Class
+transfected_sample SubClassOf Tcruzi_sample
+transfection is Class
+transfection SubClassOf strain_creation_process,
+transfection SubClassOf has_input_value only
+transfection SubClassOf (Tcruzi_sample or knockout_construct_plasmid),
+transfection SubClassOf has_output_value only transfected_sample,
+transfection SubClassOf has_parameter only transfection_buffer,
+transfection SubClassOf has_agent only transfection_machine,
+transfection SubClassOf part_of only strain_creation_protocol,
+transfection SubClassOf preceded_by only plasmid_construction
+transfection_buffer is Class
+transfection_buffer SubClassOf domain_parameter
+transfection_machine is Class
+transfection_machine SubClassOf agent
+transform_BP is Class
+troubleshoot is Class
+troubleshooting is Class
+troubleshooting SubClassOf technician_note
+uncloned_characterization is Class
+agent is Class
+Thing is www.w3.org/2002/07/#
+data_collection is Class
+Thing is www.w3.org/2002/07/#
+domain_parameter is Class
+Thing is www.w3.org/2002/07/#
+parameter is Class
+Thing is www.w3.org/2002/07/#
+process is Class
+Thing is www.w3.org/2002/07/#
+spatial_parameter is Class
+Thing is www.w3.org/2002/07/#
+temporal_parameter is Class
+Thing is www.w3.org/2002/07/#
+Gene_Function is Class
+Gene_Function SubClassOf domain_parameter
+Microarray_Analysis is Class
+Microarray_Analysis SubClassOf transcriptome_process,
+Microarray_Analysis SubClassOf has_input_value only Tcruzi_lifecyclestage_subsample,
+microarray_oligonucleotide, is has_input_value only purl.org/obo//sequence#
+microarray_oligonucleotide, is has_output_value only SAM_result,
+microarray_oligonucleotide, is has_output_value only log_base2_ratio,
+microarray_oligonucleotide, is has_output_value only signal_intensity,
+microarray_oligonucleotide, is has_output_value only standard_deviation
+Probability is Class
+Probability SubClassOf statistical_measure
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+amastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+epimastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+metacyclic_trypomastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+trypomastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+amastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+epimastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+metacyclic_trypomastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+trypomastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+lifecycle_stage is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+trypomastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+lifecycle_stage is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+paige.ctegd.uga.edu/ParasiteLifecycle.# SubClassOf domain_parameter
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+paige.ctegd.uga.edu/ParasiteLifecycle.# SubClassOf domain_parameter
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+promastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+trypomastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+paige.ctegd.uga.edu/ParasiteLifecycle.# SubClassOf domain_parameter
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+paige.ctegd.uga.edu/ParasiteLifecycle.# SubClassOf domain_parameter
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+promastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+trypomastigote is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+lifecycle_stage is paige.ctegd.uga.edu/ParasiteLifecycle.#
+paige.ctegd.uga.edu/ParasiteLifecycle.# is Class
+lifecycle_stage is paige.ctegd.uga.edu/ParasiteLifecycle.#
+purl.org/obo//PW# is Class
+purl.org/obo//PW# SubClassOf pathway
+purl.org/obo//PW# is Class
+purl.org/obo//PW# SubClassOf pathway
+purl.org/obo//PW# is Class
+purl.org/obo//PW# SubClassOf pathway
+purl.org/obo//PW# is Class
+purl.org/obo//PW# SubClassOf pathway
+purl.org/obo//PW# is Class
+purl.org/obo//PW# SubClassOf pathway
+purl.org/obo//sequence# is Class
+purl.org/obo//sequence# SubClassOf domain_parameter
+purl.org/obo//sequence# is Class
+region is purl.org/obo//sequence#
+purl.org/obo//sequence# is Class
+purl.org/obo//sequence# SubClassOf domain_parameter
+purl.org/obo//sequence# is Class
+region is purl.org/obo//sequence#
+purl.org/obo//sequence# is Class
+purl.org/obo//sequence# SubClassOf data_collection
+purl.org/obo//sequence# is Class
+purl.org/obo//sequence# SubClassOf data_collection
+purl.org/obo//sequence# is Class
+purl.org/obo//sequence# SubClassOf domain_parameter
+www.w3.org/2002/07/# is Class
+DateTimeDescription is Class
+DateTimeDescription SubClassOf temporal_parameter
+BP_reaction is Individual
+BP_reaction Types plasmid_construction_step
+LR_reaction is Individual
+LR_reaction Types plasmid_construction_step
+aborted is Individual
+aborted Types status
+clone_characterization is Individual
+clone_characterization Types status
+completed is Individual
+completed Types status
+construct_creation is Individual
+construct_creation Types status
+digest_and_purify is Individual
+digest_and_purify Types plasmid_construction_step
+gel_purify is Individual
+gel_purify Types plasmid_construction_step
+high_priority is Individual
+high_priority Types priority
+in_progress is Individual
+in_progress Types status
+initial_pcr is Individual
+initial_pcr Types plasmid_construction_step
+low_priority is Individual
+low_priority Types priority
+medium_priority is Individual
+medium_priority Types priority
+midi_prep is Individual
+midi_prep Types plasmid_construction_step
+mini_prep1 is Individual
+mini_prep1 Types plasmid_construction_step
+mini_prep2 is Individual
+mini_prep2 Types plasmid_construction_step
+not_started is Individual
+not_started Types status
+primers_ordered is Individual
+primers_ordered Types plasmid_construction_step
+screen1 is Individual
+screen1 Types plasmid_construction_step
+screen2 is Individual
+screen2 Types plasmid_construction_step
+selection is Individual
+selection Types status
+stalled is Individual
+stalled Types status
+tranform_LR is Individual
+tranform_LR Types plasmid_construction_step
+transfection is Individual
+transfection Types status
+transform_BP is Individual
+transform_BP Types plasmid_construction_step
+troubleshoot is Individual
+troubleshoot Types status
+uncloned_characterization is Individual
+uncloned_characterization Types status

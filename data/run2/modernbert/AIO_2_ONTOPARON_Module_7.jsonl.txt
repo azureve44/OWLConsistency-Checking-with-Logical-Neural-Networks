@@ -1,0 +1,184 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+aPourThematique is ObjectProperty.
+Service Accueil Urgences is Class.
+Service Accueil Urgences SubClassOf ServicesDesUrgences.
+Statut Sans Abris is Class.
+Attribut is Class.
+ObjetFonctionnel is Class.
+DiscussionSuppleanceRespiratoire is Class.
+DiscussionTracheotomie is Class.
+DiscussionTracheotomie SubClassOf DiscussionSuppleanceRespiratoire.
+MiseEnPlaceAideHumaine is Class.
+MiseEnPlaceAideTechnique is Class.
+MiseEnPlaceAuxiliaire is Class.
+MiseEnPlaceAuxiliaire SubClassOf MiseEnPlaceAideHumaine.
+MiseEnPlaceTeleAlarme is Class.
+MiseEnPlaceTeleAlarme SubClassOf MiseEnPlaceAideTechnique.
+AccordGastrostomie is Class.
+AccordGastrostomie SubClassOf AccordSuppleanceSpecifiee.
+AccordSuppleanceSpecifiee is Class.
+AggravationFonctionnelle is Class.
+AggravationFonctionnelle SubClassOf SigneFonctionnel,.
+AggravationFonctionnelle SubClassOf aPourThematique some ThematiqueMoteurEtFonctionnelle.
+Bruxisme is Class.
+Bruxisme SubClassOf SigneFonctionnel.
+Cardiologue is Class.
+Cardiologue SubClassOf MedecinSpecialiste.
+CompteRenduHospitalisation is Class.
+CompteRendu HDJ is Class.
+CompteRendu HDJ SubClassOf CompteRenduHospitalisation.
+CompteRendu UARD is Class.
+CompteRendu UARD SubClassOf CompteRenduHospitalisation.
+CompteRendu UARD DisjointWith .
+CompteRendu UARD DisjointWith ThematiqueProblemeSocial.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing is www.w3.org/2002/07/#.
+CompteRendu USP is Class.
+CompteRendu USP SubClassOf CompteRenduHospitalisation.
+Constipation is Class.
+DeficitAxial is Class.
+EquipeMedicale is Class.
+EquipeSoignante is Class.
+EquipeSoignante SubClassOf EquipeMedicale.
+EtatDeSante is Class.
+Fecalome is Class.
+Fecalome SubClassOf Constipation.
+Gastrostomie is Class.
+GastrostomiePercutaneeParVoieRadiologique is Class.
+GastrostomiePercutaneeParVoieRadiologique SubClassOf Gastrostomie.
+MedecinSpecialiste is Class.
+OrganeCorticomedullaire is Class.
+Plainte is Class.
+Plainte SubClassOf SigneFonctionnel.
+PlainteRespiratoire is Class.
+PlainteRespiratoire SubClassOf Plainte,.
+PlainteRespiratoire SubClassOf aPourThematique some ThematiqueRespiratoire.
+PriseEnChargeRespiratoire is Class.
+PriseEnChargeTracheotomie is Class.
+PriseEnChargeTracheotomie SubClassOf PriseEnChargeRespiratoire.
+ProblemeFuite is Class.
+ProblemeFuite SubClassOf ProblemeVentilation.
+ProblemeVentilation is Class.
+Rate is Class.
+Rate SubClassOf OrganeCorticomedullaire.
+RefusDeTraitement is Class.
+RefusGastrostomie is Class.
+RefusGastrostomie SubClassOf RefusDeTraitement.
+ReveilNocturne is Class.
+ReveilNocturne SubClassOf TroubleDuSommeil.
+ServicesDesUrgences is Class.
+SigneClinique is Class.
+SigneClinique SubClassOf SigneEtSymptome.
+SigneEtSymptome is Class.
+SigneEtSymptome SubClassOf EtatDeSante.
+SigneFonctionnel is Class.
+SigneFonctionnel SubClassOf SigneEtSymptome.
+SoinInfirmier is Class.
+SoinsDEscarre is Class.
+SoinsDEscarre SubClassOf SoinInfirmier.
+TeteTombante is Class.
+TeteTombante SubClassOf DeficitAxial.
+Tracheotomie is Class.
+Tracheotomie SubClassOf VentilationInvasive.
+TroubleCirculatoire is Class.
+TroubleCirculatoire SubClassOf SigneFonctionnel.
+TroubleDuSommeil is Class.
+TroubleDuSommeil SubClassOf SigneFonctionnel.
+TroubleVasomoteur is Class.
+TroubleVasomoteur SubClassOf TroubleCirculatoire.
+VentilationInvasive is Class.
+ApresMidi is Class.
+ApresMidi SubClassOf Temporalite.
+Droite is Class.
+Droite SubClassOf Lateralite.
+Effet is Class.
+EffetSecondaire is Class.
+EffetSecondaire SubClassOf Effet.
+Episode is Class.
+Episode SubClassOf Evenement.
+Evenement is Class.
+Evenement SubClassOf Temporalite.
+Gauche is Class.
+Gauche SubClassOf Lateralite.
+Homme is Class.
+Homme SubClassOf Humain.
+Humain is Class.
+Lateralite is Class.
+Lateralite SubClassOf Attribut.
+Matin is Class.
+Matin SubClassOf Temporalite.
+Midi is Class.
+Midi SubClassOf Temporalite.
+ModaliteDeVariation is Class.
+Nuit is Class.
+Nuit SubClassOf Temporalite.
+Quotidien is Class.
+Quotidien SubClassOf Temporalite.
+Soir is Class.
+Soir SubClassOf Temporalite.
+Temporalite is Class.
+Temporalite SubClassOf ObjetFonctionnel.
+ThematiqueMoteurEtFonctionnelle is Class.
+ThematiqueProblemeSocial is Class.
+ThematiqueProblemeSocial DisjointWith CompteRendu UARD.
+ThematiqueRespiratoire is Class.
+UniteDeTemps is Class.
+UniteDeTemps SubClassOf Temporalite.
+Variable is Class.
+Variable SubClassOf ModaliteDeVariation.
+AideALaParole is Class.
+Aquatec is Class.
+Aquatec SubClassOf SiegeElevateurDeBain.
+Attelle is Class.
+Attelle SubClassOf AttelleDeRepos.
+AttelleDePoignet is Class.
+AttelleDePoignet SubClassOf Attelle.
+AttelleDeRepos is Class.
+AttelleDeRepos SubClassOf AttelleDePoignet.
+BelleFille is Class.
+BelleFille SubClassOf ProcheFamille.
+ConseillerEnEconomieSocialeEtFamiliale is Class.
+ConseillerEnEconomieSocialeEtFamiliale SubClassOf ProfessionnelSocial.
+DifficulteAvecAuxiliaire is Class.
+DifficulteAvecAuxiliaire SubClassOf DifficulteAvecProfessionnel.
+DifficulteAvecProfessionnel is Class.
+EtablissementEtServicesPourPersonnesAgees is Class.
+EtablissementFinanceur is Class.
+EtablissementMedicoSocial is Class.
+FauteuilCoquille is Class.
+FauteuilCoquille SubClassOf FauteuilRoulantPropulsionManuel.
+FauteuilRoulantPropulsionManuel is Class.
+MarcheAutonome is Class.
+MarcheAutonome SubClassOf Marcher.
+Marcher is Class.
+Pictogramme is Class.
+Pictogramme SubClassOf AideALaParole.
+PieceDeVie is Class.
+ProcheFamille is Class.
+ProfessionnelSocial is Class.
+ReleveurDePiedSouple is Class.
+ReleveurLiberte is Class.
+ReleveurLiberte SubClassOf ReleveurDePiedSouple.
+Salon is Class.
+Salon SubClassOf PieceDeVie.
+SansDomicileFixe is Class.
+SansDomicileFixe SubClassOf Statut Sans Abris,.
+SansDomicileFixe SubClassOf aPourThematique some ThematiqueProblemeSocial,.
+SansDomicileFixe SubClassOf aPourThematique some.
+SansDomicileFixe SubClassOf (CompteRendu UARD and ThematiqueProblemeSocial),.
+SansDomicileFixe SubClassOf aPourThematique only CompteRendu UARD.
+SecuriteSociale is Class.
+SecuriteSociale SubClassOf EtablissementFinanceur.
+ServicePolyvalentAideEtSoinsADomicile is Class.
+ServicePolyvalentAideEtSoinsADomicile SubClassOf EtablissementMedicoSocial.
+ServiceRepasADomicile is Class.
+ServiceRepasADomicile SubClassOf EtablissementEtServicesPourPersonnesAgees.
+SiegeBain is Class.
+SiegeElevateurDeBain is Class.
+SiegeElevateurDeBain SubClassOf SiegeBain.
+TextureAlimentation is Class.
+TextureCoupeFin is Class.
+TextureCoupeFin SubClassOf TextureAlimentation.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.

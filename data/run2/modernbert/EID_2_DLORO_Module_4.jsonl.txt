@@ -1,0 +1,233 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+dependsOn1 is ObjectProperty.
+dependsOn2 is ObjectProperty.
+dependsOn3 is ObjectProperty.
+dependsOn4 is ObjectProperty.
+ATM polymorphism is Class.
+ATM polymorphism SubClassOf Genetic finding.
+Alcohol use is Class.
+Alcohol use SubClassOf Patient history.
+Alpha Beta ratio is Class.
+Alpha Beta ratio SubClassOf non NTCP factor.
+Anatomic tumor loc is Class.
+Anatomic tumor loc SubClassOf Disease finding.
+Ataxia Telangiectasia is Class.
+Ataxia Telangiectasia SubClassOf Hypersensetivity.
+Bayesian Model is Class.
+Thing is www.w3.org/2002/07/#.
+Biological Effective Dose is Class.
+Biological Effective Dose SubClassOf non NTCP factor.
+Cancer Staging is Class.
+Cancer Staging SubClassOf Disease finding.
+Clinical Finding is Class.
+Thing is www.w3.org/2002/07/#.
+Clinician time cost is Class.
+Clinician time cost SubClassOf Time cost.
+Comorbidity is Class.
+Comorbidity SubClassOf Clinical Finding.
+Conceptual parameter is Class.
+Contraindication is Class.
+Contraindication SubClassOf Clinical Finding.
+Decision node is Class.
+Decision node SubClassOf Bayesian Model.
+Diagnosis is Class.
+Diagnosis SubClassOf Disease finding,.
+Diagnosis SubClassOf dependsOn1 some Anatomic tumor loc.
+Disease finding is Class.
+Disease finding SubClassOf Clinical Finding.
+Distant metastasis is Class.
+Distant metastasis SubClassOf Smith et al 2009 model.
+Dose Pelvic Nodes is Class.
+Dose Pelvic Nodes SubClassOf Smith et al 2009 model.
+Dose Per Fraction is Class.
+Dosing Parameter is Class.
+Dosing Parameter SubClassOf Prescription parameter.
+ECOG WHO is Class.
+ECOG WHO SubClassOf Performance Status.
+Equivalent Uniform Dose is Class.
+Equivalent Uniform Dose SubClassOf Smith et al 2009 model,.
+Equivalent Uniform Dose SubClassOf non NTCP factor.
+Extracapsular extension is Class.
+Extracapsular extension SubClassOf Surgical finding.
+Family history is Class.
+Family history SubClassOf Patient history.
+Financial cost is Class.
+Financial cost SubClassOf RT cost.
+Fractionation Parameter is Class.
+GTV is Class.
+GTV SubClassOf Tumor characteristics,.
+www.w3.org/2000/01/-schema# is Annotations.
+www.w3.org/2000/01/-schema# is dependsOn1 some N Stage,.
+www.w3.org/2000/01/-schema# is Annotations.
+www.w3.org/2000/01/-schema# is dependsOn1 some T Stage,.
+www.w3.org/2000/01/-schema# is dependsOn2 some Imaging Modality.
+Genetic finding is Class.
+Genetic finding SubClassOf Clinical Finding.
+Gleason is Class.
+Gleason SubClassOf Lab test finding,.
+Gleason SubClassOf Meyer et al 2004 model,.
+Gleason SubClassOf Smith et al 2009 model.
+HPV status is Class.
+HPV status SubClassOf Comorbidity.
+Histologic Type is Class.
+Histologic Type SubClassOf Tumor characteristics.
+Hypersensetivity is Class.
+Hypersensetivity SubClassOf Contraindication.
+Hypoxia is Class.
+Hypoxia SubClassOf Tumor characteristics.
+Imaging Modality is Class.
+Imaging Modality SubClassOf Medical Imaging.
+Imaging Modality DisjointWith dependsOn2 some Plan Technique.
+Imaging Technique is Class.
+Imaging Technique SubClassOf Medical Imaging.
+Karnofsky is Class.
+Karnofsky SubClassOf Performance Status.
+Lab test finding is Class.
+Lab test finding SubClassOf Clinical Finding.
+Lansky is Class.
+Lansky SubClassOf Performance Status.
+Laterality is Class.
+Laterality SubClassOf Disease finding,.
+Laterality SubClassOf dependsOn3 some Histologic Type.
+M Stage is Class.
+M Stage SubClassOf Cancer Staging,.
+M Stage SubClassOf Meyer et al 2004 model.
+Medical Imaging is Class.
+Medical Imaging SubClassOf Radiology Concept.
+Meyer et al 2004 model is Class.
+Meyer et al 2004 model SubClassOf Bayesian Model.
+NTCP Bladder is Class.
+NTCP Bladder SubClassOf NTCP by site.
+NTCP Lung is Class.
+NTCP Lung SubClassOf NTCP by site.
+NTCP Parotid gland is Class.
+NTCP Parotid gland SubClassOf NTCP by site.
+NTCP by site is Class.
+NTCP by site SubClassOf Radiobiology Concept.
+N Stage is Class.
+N Stage SubClassOf Cancer Staging,.
+N Stage SubClassOf Meyer et al 2004 model.
+Neoadjuvent Therapy is Class.
+Neoadjuvent Therapy SubClassOf Systemic Therapy.
+Nodal Involvement is Class.
+Nodal Involvement SubClassOf Disease finding.
+Number of Rxs is Class.
+Number of Rxs SubClassOf Conceptual parameter,.
+Number of Rxs SubClassOf dependsOn4 some M Stage,.
+Number of Rxs SubClassOf dependsOn4 some N Stage,.
+Number of Rxs SubClassOf dependsOn4 some T Stage.
+Operative timing is Class.
+Operative timing SubClassOf Surgical finding.
+PSA is Class.
+PSA SubClassOf Lab test finding,.
+PSA SubClassOf Meyer et al 2004 model,.
+PSA SubClassOf Smith et al 2009 model.
+PSA control is Class.
+PSA control SubClassOf Smith et al 2009 model.
+PSA doubling time is Class.
+PSA doubling time SubClassOf Smith et al 2009 model,.
+PSA doubling time SubClassOf non NTCP factor.
+Patient history is Class.
+Patient history SubClassOf Clinical Finding.
+Pelvic Nodal Control is Class.
+Pelvic Nodal Control SubClassOf Smith et al 2009 model.
+Pelvic nodal inv is Class.
+Pelvic nodal inv SubClassOf Nodal Involvement,.
+Pelvic nodal inv SubClassOf Smith et al 2009 model,.
+www.w3.org/2000/01/-schema# is Annotations.
+www.w3.org/2000/01/-schema# is dependsOn2 some Gleason,.
+www.w3.org/2000/01/-schema# is Annotations.
+www.w3.org/2000/01/-schema# is dependsOn2 some PSA,.
+www.w3.org/2000/01/-schema# is Annotations.
+www.w3.org/2000/01/-schema# is dependsOn2 some T Stage,.
+www.w3.org/2000/01/-schema# is Annotations.
+www.w3.org/2000/01/-schema# is dependsOn3 some Imaging Modality,.
+www.w3.org/2000/01/-schema# is dependsOn3 only (dependsOn2 some Plan Technique).
+Performance Status is Class.
+Performance Status SubClassOf Clinical Finding.
+Peri RT therapy is Class.
+Peri RT therapy SubClassOf Prescription parameter.
+Plan Technique is Class.
+Prescribed dose is Class.
+Prescribed dose SubClassOf Dosing Parameter.
+Prescription Point is Class.
+Prescription Point SubClassOf Dosing Parameter.
+Prescription parameter is Class.
+Previous neoplasm is Class.
+Previous neoplasm SubClassOf Patient history.
+Previous radiation is Class.
+Previous radiation SubClassOf Contraindication,.
+Previous radiation SubClassOf Patient history.
+Prostate D95 is Class.
+Prostate D95 SubClassOf Smith et al 2009 model.
+Prostate PTV coldVol is Class.
+Prostate PTV coldVol SubClassOf Smith et al 2009 model.
+RBE is Class.
+RBE SubClassOf non NTCP factor.
+RT cost is Class.
+RT delivery time is Class.
+RT delivery time SubClassOf Clinician time cost.
+Radiation Characteristic is Class.
+Radiobiology Concept is Class.
+Thing is www.w3.org/2002/07/#.
+Radiology Concept is Class.
+Resection margin is Class.
+Resection margin SubClassOf Surgical finding.
+Rx Energy is Class.
+Rx Energy SubClassOf Radiation Characteristic,.
+Rx Energy SubClassOf dependsOn2 some Plan Technique.
+Smith et al 2009 model is Class.
+Smith et al 2009 model SubClassOf Bayesian Model.
+Smoking history is Class.
+Smoking history SubClassOf Patient history.
+Surgical finding is Class.
+Surgical finding SubClassOf Clinical Finding.
+Systemic Therapy is Class.
+Systemic Therapy SubClassOf Peri RT therapy.
+TGF Beta1 polymorhpism is Class.
+TGF Beta1 polymorhpism SubClassOf Genetic finding.
+TNM Stage is Class.
+TNM Stage SubClassOf Cancer Staging,.
+TNM Stage SubClassOf dependsOn1 some M Stage,.
+TNM Stage SubClassOf dependsOn1 some N Stage,.
+TNM Stage SubClassOf dependsOn1 some T Stage.
+T Stage is Class.
+T Stage SubClassOf Cancer Staging,.
+T Stage SubClassOf Meyer et al 2004 model,.
+T Stage SubClassOf Smith et al 2009 model.
+Time cost is Class.
+Total Fractions is Class.
+Total Fractions SubClassOf Fractionation Parameter,.
+Total Fractions SubClassOf dependsOn4 some Dose Per Fraction,.
+Total Fractions SubClassOf dependsOn4 some Prescribed dose,.
+Total Fractions SubClassOf dependsOn4 some Treatment Intent.
+Treatment Intent is Class.
+Treatment Intent SubClassOf Conceptual parameter,.
+Treatment Intent SubClassOf dependsOn4 some M Stage,.
+Treatment Intent SubClassOf dependsOn4 some N Stage,.
+Treatment Intent SubClassOf dependsOn4 some T Stage.
+Tumor Type is Class.
+Tumor Type SubClassOf Disease finding.
+Tumor characteristics is Class.
+Tumor characteristics SubClassOf Disease finding.
+Utility node is Class.
+Utility node SubClassOf Bayesian Model.
+Xeroderma Pigmentosum is Class.
+Xeroderma Pigmentosum SubClassOf Hypersensetivity.
+Zubrod is Class.
+Zubrod SubClassOf Performance Status.
+bNED is Class.
+bNED SubClassOf Smith et al 2009 model.
+chest wall separation is Class.
+chest wall separation SubClassOf Disease finding.
+non NTCP factor is Class.
+non NTCP factor SubClassOf Radiobiology Concept.
+num positive nodes is Class.
+num positive nodes SubClassOf Nodal Involvement.
+peri RT neck surgery is Class.
+peri RT neck surgery SubClassOf Peri RT therapy.
+peri stemcell transplant is Class.
+peri stemcell transplant SubClassOf Peri RT therapy.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.

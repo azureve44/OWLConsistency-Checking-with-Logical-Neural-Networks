@@ -1,0 +1,197 @@
+has is ObjectProperty
+hasMeasurementOf is ObjectProperty
+hasSource is ObjectProperty
+isInvolvedIn is ObjectProperty
+isPartOf is ObjectProperty
+isStoredInto is ObjectProperty
+isUsing is ObjectProperty
+AdaptationSoftware is Class
+AdaptationSoftware SubClassOf Software
+AssistedLiving is Class
+AssistedLiving SubClassOf ClinicalProcess
+Bluetooth is Class
+Bluetooth SubClassOf CommunicationsTechnology
+BrainActivity is Class
+BrainActivity SubClassOf Metrics
+BrainActivitySensors is Class
+BrainActivitySensors SubClassOf Sensors,
+BrainActivitySensors SubClassOf hasMeasurementOf some BrainActivity
+ClinicalProcess is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is has some Interaction
+Thing, DisjointWith Software
+Thing, DisjointWith Setting
+Thing, DisjointWith Metrics
+Thing, DisjointWith MachineLearning
+Thing, DisjointWith Impairment
+Thing, DisjointWith Human
+Cognitive is Class
+Cognitive SubClassOf Impairment
+CommunicationsTechnology is Class
+CommunicationsTechnology SubClassOf Hardware
+Computer is Class
+Computer SubClassOf Hardware
+ComputerToPatientInteraction is Class
+ComputerToPatientInteraction SubClassOf Interaction
+ControlStick is Class
+ControlStick SubClassOf Hardware
+DataAnalysisSoftware is Class
+DataAnalysisSoftware SubClassOf Software
+DataClassification is Class
+DataClassification SubClassOf MachineLearning
+DataFusion is Class
+DataFusion SubClassOf MachineLearning
+DataModelling is Class
+DataModelling SubClassOf MachineLearning
+DatabaseManagementSystem is Class
+DatabaseManagementSystem SubClassOf Software
+FeatureSelection is Class
+FeatureSelection SubClassOf MachineLearning
+GameScore is Class
+GameScore SubClassOf Metrics
+HardDiskDrive is Class
+HardDiskDrive SubClassOf Computer
+Hardware is Class
+Thing is www.w3.org/2002/07/#
+Thing DisjointWith Setting
+Thing DisjointWith Impairment
+Thing DisjointWith Human
+HeartBeat is Class
+HeartBeat SubClassOf VitalSigns
+HomeBased is Class
+HomeBased SubClassOf Setting
+Human is Class
+Thing is www.w3.org/2002/07/#
+Thing DisjointWith Software
+Thing DisjointWith Setting
+Thing DisjointWith Metrics
+Thing DisjointWith MachineLearning
+Thing DisjointWith Interaction
+Thing DisjointWith Impairment
+Thing DisjointWith Hardware
+Thing DisjointWith ClinicalProcess
+ICD is Class
+ICD SubClassOf TerminologiesAndClassifications
+Impairment is Class
+Thing is www.w3.org/2002/07/#
+Thing DisjointWith Software
+Thing DisjointWith Setting
+Thing DisjointWith Metrics
+Thing DisjointWith MachineLearning
+Thing DisjointWith Interaction
+Thing DisjointWith Human
+Thing DisjointWith Hardware
+Thing DisjointWith ClinicalProcess
+InPatient is Class
+InPatient SubClassOf Setting
+Interaction is Class
+Thing is www.w3.org/2002/07/#
+Thing DisjointWith Impairment
+Thing DisjointWith Human
+InteractiveGames is Class
+InteractiveGames SubClassOf Software,
+InteractiveGames SubClassOf isUsing some TouchScreen
+InteractiveGaming is Class
+InteractiveGaming SubClassOf RehabilitationActivity,
+InteractiveGaming SubClassOf isPartOf some ClinicalProcess,
+InteractiveGaming SubClassOf isUsing some InteractiveGames
+LowerExtremety is Class
+LowerExtremety SubClassOf Motor
+MachineLearning is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is isInvolvedIn some AdaptationSoftware,
+Thing, is isPartOf some DataAnalysisSoftware,
+Thing, is isPartOf some Robot,
+Thing, is isUsing some Metrics
+Thing, DisjointWith Impairment
+Thing, DisjointWith Human
+Thing, DisjointWith ClinicalProcess
+Metrics is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is hasSource some Patient,
+Thing, is isInvolvedIn some MachineLearning,
+Thing, is isStoredInto some DatabaseManagementSystem
+Thing, DisjointWith Impairment
+Thing, DisjointWith Human
+Thing, DisjointWith ClinicalProcess
+MotionSensor is Class
+MotionSensor SubClassOf Sensors
+Motor is Class
+Motor SubClassOf Impairment
+OutPatient is Class
+OutPatient SubClassOf Setting
+Patient is Class
+Patient SubClassOf Human,
+Patient SubClassOf has some Therapist,
+Patient SubClassOf isInvolvedIn some ClinicalProcess,
+Patient SubClassOf isInvolvedIn some Interaction,
+Patient SubClassOf isInvolvedIn some RehabilitationActivity,
+Patient SubClassOf isPartOf some Setting,
+Patient SubClassOf isUsing some ControlStick,
+Patient SubClassOf isUsing some TouchScreen,
+Patient SubClassOf has min 1 Impairment
+PatientAssessment is Class
+PatientAssessment SubClassOf ClinicalProcess
+PatientMonitoring is Class
+PatientMonitoring SubClassOf ClinicalProcess
+PatientToComputerInteraction is Class
+PatientToComputerInteraction SubClassOf MachineLearning,
+PatientToComputerInteraction SubClassOf isUsing some Hardware
+PhysicalExercise is Class
+PhysicalExercise SubClassOf RehabilitationActivity
+PhysicalPower is Class
+PhysicalPower SubClassOf Metrics
+RehabilitationActivity is Class
+Thing is www.w3.org/2002/07/#
+Robot is Class
+Robot SubClassOf Hardware
+RobotArm is Class
+RobotArm SubClassOf Robot
+Sensors is Class
+Sensors SubClassOf Hardware
+Setting is Class
+Thing is www.w3.org/2002/07/#
+Thing DisjointWith Impairment
+Thing DisjointWith Human
+Thing DisjointWith Hardware
+Thing DisjointWith ClinicalProcess
+Software is Class
+Thing, is www.w3.org/2002/07/#
+Thing, is isUsing some Metrics
+Thing, DisjointWith Impairment
+Thing, DisjointWith Human
+Thing, DisjointWith ClinicalProcess
+SpeechImpairment is Class
+SpeechImpairment SubClassOf Impairment
+SpeechTherapy is Class
+SpeechTherapy SubClassOf RehabilitationActivity
+TerminologiesAndClassifications is Class
+Thing is www.w3.org/2002/07/#
+Therapist is Class
+Therapist SubClassOf Human
+TimeSeriesGraph is Class
+TimeSeriesGraph SubClassOf Visualization
+TouchScreen is Class
+TouchScreen SubClassOf Hardware
+Treatment is Class
+Treatment SubClassOf ClinicalProcess
+UpperExtremety is Class
+UpperExtremety SubClassOf Motor
+VisualImpairment is Class
+VisualImpairment SubClassOf Impairment
+Visualization is Class
+Visualization SubClassOf DataAnalysisSoftware
+VitalSigns is Class
+VitalSigns SubClassOf Metrics
+fNIRs is Class
+fNIRs SubClassOf BrainActivitySensors,
+fNIRs SubClassOf hasMeasurementOf some BrainActivity
+www.w3.org/2002/07/# is Class
+DimitriosZikos is Individual
+DimitriosZikos Types Patient
+MySQL is Individual
+MySQL Types DatabaseManagementSystem
+OracleDB is Individual
+OracleDB Types DatabaseManagementSystem
+VassilisAthitsos is Individual
+VassilisAthitsos Types Therapist

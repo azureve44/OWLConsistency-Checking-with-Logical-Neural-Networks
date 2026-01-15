@@ -1,0 +1,681 @@
+www.w3.org/2000/01/-schema# is Datatype.
+anyURI is Datatype.
+boolean is Datatype.
+int is Datatype.
+string is Datatype.
+hasMember is ObjectProperty.
+hasMember Domain group.
+hasMember Range territory.
+hasMember InverseOf isInGroup.
+isAdministeredBy is ObjectProperty.
+isInGroup is ObjectProperty.
+isInGroup Domain territory.
+isInGroup Range group.
+isInGroup InverseOf hasMember.
+isPredecessorOf is ObjectProperty.
+isPredecessorOf Domain area.
+isPredecessorOf Range area.
+isPredecessorOf InverseOf isSuccessorOf.
+isSuccessorOf is ObjectProperty.
+isSuccessorOf Domain area.
+isSuccessorOf Range area.
+isSuccessorOf InverseOf isPredecessorOf.
+BFO 0000050 is ObjectProperty.
+BFO 0000051 is ObjectProperty.
+citedBy is ObjectProperty.
+citedBy Domain Document.
+citedBy Range Document.
+citedBy InverseOf cites.
+cites is ObjectProperty.
+cites Domain Document.
+cites Range Document.
+cites InverseOf citedBy.
+presentedAt is ObjectProperty.
+presentedAt Domain Document.
+Event is purl.org/NET/c4dm/event.#.
+Event InverseOf presents.
+presents is ObjectProperty.
+presents InverseOf presentedAt.
+reproducedIn is ObjectProperty.
+reproducedIn Domain Document.
+reproducedIn Range Document.
+reproducedIn InverseOf reproduces.
+status is ObjectProperty.
+status Domain Document.
+status Range DocumentStatus.
+translationOf is ObjectProperty.
+translationOf Domain Document.
+translationOf Range Document.
+translationOf InverseOf hasTranslation.
+translator is ObjectProperty.
+translator Domain Document.
+Agent is ns.com/foaf/0.1/.
+Agent InverseOf translatorOf.
+hasGlobalCitationFrequency is ObjectProperty.
+hasGlobalCountDate is ObjectProperty.
+hasGlobalCountDate Domain GlobalCitationCount.
+hasGlobalCountDate Range DateTimeValue.
+hasGlobalCountSource is ObjectProperty.
+hasGlobalCountSource Domain GlobalCitationCount.
+hasGlobalCountSource Range BibliographicInformationSource.
+citesAsDataSource is ObjectProperty.
+facilityFor is ObjectProperty.
+facilityFor Domain Facility.
+facilityFor InverseOf hasFacility.
+features is ObjectProperty.
+hasFacility is ObjectProperty.
+hasFacility InverseOf facilityFor.
+hasGoverningAuthority is ObjectProperty.
+hasSubjectArea is ObjectProperty.
+hasTranslation is ObjectProperty.
+hasTranslation Domain Document.
+hasTranslation Range Document.
+hasTranslation InverseOf translationOf.
+reproduces is ObjectProperty.
+reproduces Domain Document.
+reproduces Range Document.
+reproduces InverseOf reproducedIn.
+translatorOf is ObjectProperty.
+translatorOf InverseOf translator.
+validIn is ObjectProperty.
+documentationFor is ObjectProperty.
+documentationFor Domain Document.
+documentationFor Range ERO 0000004 or ERO 0000005 or ERO 0000006 or ERO 0000014 or ERO 0000020 or ERO 0000071 or ERO 0001716.
+GDPNotes is DataProperty.
+GDPTotalInCurrentPrices is DataProperty.
+GDPUnit is DataProperty.
+GDPYear is DataProperty.
+HDINotes is DataProperty.
+HDITotal is DataProperty.
+HDIUnit is DataProperty.
+HDIYear is DataProperty.
+agriculturalAreaNotes is DataProperty.
+agriculturalAreaTotal is DataProperty.
+agriculturalAreaUnit is DataProperty.
+agriculturalAreaYear is DataProperty.
+codeAGROVOC is DataProperty.
+codeCurrency is DataProperty.
+codeDBPediaID is DataProperty.
+codeFAOSTAT is DataProperty.
+codeFAOTERM is DataProperty.
+codeGAUL is DataProperty.
+codeISO2 is DataProperty.
+codeISO3 is DataProperty.
+codeUN is DataProperty.
+codeUNDP is DataProperty.
+countryAreaNotes is DataProperty.
+countryAreaTotal is DataProperty.
+countryAreaUnit is DataProperty.
+countryAreaYear is DataProperty.
+hasMaxLatitude is DataProperty.
+hasMaxLongitude is DataProperty.
+hasMinLatitude is DataProperty.
+hasMinLongitude is DataProperty.
+landAreaNotes is DataProperty.
+landAreaTotal is DataProperty.
+landAreaUnit is DataProperty.
+landAreaYear is DataProperty.
+nameCurrencyEN is DataProperty.
+nameCurrencyES is DataProperty.
+nameCurrencyFR is DataProperty.
+nameCurrencyIT is DataProperty.
+nameCurrencyRU is DataProperty.
+nameCurrencyZH is DataProperty.
+nameListAR is DataProperty.
+nameListEN is DataProperty.
+nameListES is DataProperty.
+nameListFR is DataProperty.
+nameListIT is DataProperty.
+nameListRU is DataProperty.
+nameListZH is DataProperty.
+nameOfficialAR is DataProperty.
+nameOfficialEN is DataProperty.
+nameOfficialES is DataProperty.
+nameOfficialFR is DataProperty.
+nameOfficialIT is DataProperty.
+nameOfficialRU is DataProperty.
+nameOfficialZH is DataProperty.
+nameShortAR is DataProperty.
+nameShortEN is DataProperty.
+nameShortES is DataProperty.
+nameShortFR is DataProperty.
+nameShortIT is DataProperty.
+nameShortRU is DataProperty.
+nameShortZH is DataProperty.
+nationalityAR is DataProperty.
+nationalityEN is DataProperty.
+nationalityES is DataProperty.
+nationalityFR is DataProperty.
+nationalityIT is DataProperty.
+nationalityRU is DataProperty.
+nationalityZH is DataProperty.
+populationNotes is DataProperty.
+populationTotal is DataProperty.
+populationUnit is DataProperty.
+populationYear is DataProperty.
+validSince is DataProperty.
+validUntil is DataProperty.
+ARG 0000001 is DataProperty.
+ARG 0000001 Domain Document.
+ARG 0000001 Range boolean.
+abstract is DataProperty.
+numPages is DataProperty.
+oclcnum is DataProperty.
+pmid is DataProperty.
+pmid Domain Document.
+volume is DataProperty.
+volume Domain Document.
+hasGlobalCountValue is DataProperty.
+hasGlobalCountValue Domain GlobalCitationCount.
+hasGlobalCountValue Range int.
+seatingCapacity is DataProperty.
+seatingCapacity Characteristics Functional.
+seatingCapacity Domain Room.
+seatingCapacity Range int.
+additionalName is DataProperty.
+additionalName Domain Name.
+additionalName Range string.
+calendarBusy is DataProperty.
+calendarBusy Domain CalendarBusy.
+calendarBusy Range anyURI.
+calendarRequest is DataProperty.
+calendarRequest Domain CalendarRequest.
+calendarRequest Range anyURI.
+email is DataProperty.
+email Domain Email.
+email Range string.
+familyName is DataProperty.
+familyName Domain Name.
+familyName Range string.
+formattedName is DataProperty.
+formattedName Domain FormattedName.
+formattedName Range string.
+geo is DataProperty.
+geo Domain Geo.
+geo Range anyURI.
+givenName is DataProperty.
+givenName Domain Name.
+givenName Range string.
+honorificPrefix is DataProperty.
+honorificPrefix Domain Name.
+honorificPrefix Range string.
+honorificSuffix is DataProperty.
+honorificSuffix Domain Name.
+honorificSuffix Range string.
+language is DataProperty.
+logo is DataProperty.
+logo Domain Logo.
+logo Range anyURI.
+nickName is DataProperty.
+nickName Domain Nickname.
+nickName Range string.
+organizationName is DataProperty.
+organizationName Domain OrganizationName.
+organizationName Range string.
+organizationalUnitName is DataProperty.
+organizationalUnitName Domain OrganizationUnitName.
+organizationalUnitName Range string.
+related is DataProperty.
+related Domain Related.
+related Range anyURI.
+role is DataProperty.
+role Domain Role.
+role Range string.
+sortAs is DataProperty.
+telephone is DataProperty.
+timeZone is DataProperty.
+url is DataProperty.
+area is Class.
+Thing, is www.w3.org/2002/07/#.
+Literal, is codeAGROVOC max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeDBPediaID max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeFAOSTAT max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeFAOTERM max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeGAUL max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeISO2 max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeISO3 max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeUN max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeUNDP max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameListAR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameListEN max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameListES max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameListFR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameListIT max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameListRU max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameListZH max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameOfficialAR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameOfficialEN max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameOfficialES max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameOfficialFR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameOfficialIT max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameOfficialRU max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameOfficialZH max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameShortAR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameShortEN max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameShortES max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameShortFR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameShortIT max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameShortRU max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameShortZH max 1 www.w3.org/2000/01/-schema#.
+Literal, is validSince max 1 www.w3.org/2000/01/-schema#.
+Literal is validUntil max 1 www.w3.org/2000/01/-schema#.
+disputed is Class.
+disputed SubClassOf territory.
+economic region is Class.
+economic region SubClassOf group.
+geographical region is Class.
+geographical region SubClassOf group.
+group is Class.
+group SubClassOf area.
+non self governing is Class.
+non self governing SubClassOf territory,.
+non self governing SubClassOf isAdministeredBy only self governing,.
+Thing, is isAdministeredBy min 1 www.w3.org/2002/07/#.
+Thing is isAdministeredBy max 1 www.w3.org/2002/07/#.
+organization is Class.
+organization SubClassOf group.
+other is Class.
+other SubClassOf territory.
+self governing is Class.
+self governing is equivalent to Country.
+self governing SubClassOf territory,.
+self governing SubClassOf GeopoliticalEntity.
+special group is Class.
+special group SubClassOf group.
+territory is Class.
+territory SubClassOf area,.
+territory SubClassOf GeopoliticalEntity,.
+Literal, is GDPNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is GDPTotalInCurrentPrices max 1 www.w3.org/2000/01/-schema#.
+Literal, is GDPUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is GDPYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is HDINotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is HDITotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is HDIUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is HDIYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is agriculturalAreaNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is agriculturalAreaTotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is agriculturalAreaUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is agriculturalAreaYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is codeCurrency max 1 www.w3.org/2000/01/-schema#.
+Literal, is countryAreaNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is countryAreaTotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is countryAreaUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is countryAreaYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMaxLatitude max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMaxLongitude max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMinLatitude max 1 www.w3.org/2000/01/-schema#.
+Literal, is hasMinLongitude max 1 www.w3.org/2000/01/-schema#.
+Literal, is landAreaNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is landAreaTotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is landAreaUnit max 1 www.w3.org/2000/01/-schema#.
+Literal, is landAreaYear max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyEN max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyES max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyFR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyIT max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyRU max 1 www.w3.org/2000/01/-schema#.
+Literal, is nameCurrencyZH max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityAR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityEN max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityES max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityFR max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityIT max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityRU max 1 www.w3.org/2000/01/-schema#.
+Literal, is nationalityZH max 1 www.w3.org/2000/01/-schema#.
+Literal, is populationNotes max 1 www.w3.org/2000/01/-schema#.
+Literal, is populationTotal max 1 www.w3.org/2000/01/-schema#.
+Literal, is populationUnit max 1 www.w3.org/2000/01/-schema#.
+Literal is populationYear max 1 www.w3.org/2000/01/-schema#.
+ARG 2000376 is Class.
+BFO 0000029 is Class.
+ERO 0000004 is Class.
+ERO 0000005 is Class.
+ERO 0000006 is Class.
+ERO 0000014 is Class.
+ERO 0000016 is Class.
+Interventional study is purl.org/net/OCRe/research.#.
+ERO 0000020 is Class.
+ERO 0000071 is Class.
+ERO 0001716 is Class.
+IAO 0000013 is Class.
+IAO 0000013 SubClassOf AcademicArticle.
+IAO 0000030 is Class.
+IAO 0000032 is Class.
+OBI 0000272 is Class.
+OBI 0000272 SubClassOf Document.
+purl.org/NET/c4dm/event.# is Class.
+purl.org/net/OCRe/research.# is Class.
+Thing is www.w3.org/2002/07/#.
+purl.org/net/OCRe/study design.# is Class.
+Interventional study is purl.org/net/OCRe/research.#.
+AcademicArticle is Class.
+Article is Class.
+Article SubClassOf Document.
+AudioDocument is Class.
+AudioDocument SubClassOf Document.
+AudioVisualDocument is Class.
+AudioVisualDocument SubClassOf Document.
+Bill is Class.
+Bill SubClassOf Legislation.
+Book is Class.
+Book SubClassOf Document.
+BookSection is Class.
+Brief is Class.
+Brief SubClassOf LegalCaseDocument.
+Chapter is Class.
+Chapter SubClassOf BookSection.
+CollectedDocument is Class.
+CollectedDocument SubClassOf Document.
+Document is Class.
+Document SubClassOf IAO 0000030,.
+Document SubClassOf BFO 0000051 only DocumentPart,.
+Document SubClassOf hasGlobalCitationFrequency only GlobalCitationCount,.
+Document SubClassOf citesAsDataSource only Dataset,.
+Agent, is features only ns.com/foaf/0.1/.
+Literal, is abstract only www.w3.org/2000/01/-schema#.
+Literal, is numPages only www.w3.org/2000/01/-schema#.
+Literal is oclcnum only www.w3.org/2000/01/-schema#.
+DocumentPart is Class.
+DocumentPart SubClassOf Document.
+DocumentStatus is Class.
+Thing is www.w3.org/2002/07/#.
+Excerpt is Class.
+Image is Class.
+Image SubClassOf Document.
+LegalCaseDocument is Class.
+LegalDecision is Class.
+LegalDecision SubClassOf LegalCaseDocument.
+LegalDocument is Class.
+LegalDocument SubClassOf Document.
+Legislation is Class.
+Manual is Class.
+Manual SubClassOf Document.
+Manuscript is Class.
+Manuscript SubClassOf Document.
+Note is Class.
+Note SubClassOf Document.
+Patent is Class.
+Patent SubClassOf Document.
+PersonalCommunicationDocument is Class.
+PersonalCommunicationDocument SubClassOf Document.
+Quote is Class.
+Quote SubClassOf Excerpt.
+ReferenceSource is Class.
+ReferenceSource SubClassOf Document.
+Report is Class.
+Report SubClassOf Document.
+Slideshow is Class.
+Slideshow SubClassOf Document.
+Standard is Class.
+Standard SubClassOf Document.
+Statute is Class.
+Statute SubClassOf Legislation.
+Thesis is Class.
+Thesis SubClassOf Document.
+ThesisDegree is Class.
+ThesisDegree SubClassOf AcademicDegree.
+Webpage is Class.
+Webpage SubClassOf Document.
+peerReviewed is Class.
+published is Class.
+BibliographicInformationSource is Class.
+GlobalCitationCount is Class.
+GlobalCitationCount SubClassOf IAO 0000032.
+ClinicalGuideline is Class.
+ClinicalGuideline SubClassOf Document.
+Comment is Class.
+Comment SubClassOf Document.
+Erratum is Class.
+Erratum SubClassOf Document.
+Abstract is Class.
+Abstract SubClassOf Document.
+AcademicDegree is Class.
+AcademicDepartment is Class.
+AcademicDepartment SubClassOf Department.
+Association is Class.
+Organization is ns.com/foaf/0.1/.
+Award is Class.
+Building is Class.
+Building SubClassOf Facility.
+Campus is Class.
+Campus SubClassOf GeographicLocation.
+CaseStudy is Class.
+CaseStudy SubClassOf Document.
+Catalog is Class.
+Catalog SubClassOf Document.
+Center is Class.
+Organization is ns.com/foaf/0.1/.
+Certificate is Class.
+Certificate SubClassOf Credential.
+CoPrincipalInvestigatorRole is Class.
+CoPrincipalInvestigatorRole SubClassOf InvestigatorRole.
+Company is Class.
+ConferencePoster is Class.
+ConferencePoster SubClassOf Document.
+Consortium is Class.
+Organization is ns.com/foaf/0.1/.
+Country is Class.
+Country is equivalent to self governing.
+Country SubClassOf territory,.
+Country SubClassOf GeopoliticalEntity.
+County is Class.
+County SubClassOf GeopoliticalEntity.
+Credential is Class.
+Organization, is hasGoverningAuthority only ns.com/foaf/0.1/.
+Thing, is hasSubjectArea only www.w3.org/2002/07/#.
+Thing, is validIn only GeographicLocation.
+Dataset is Class.
+Dataset SubClassOf Document.
+DateTimeValue is Class.
+DateTimeValuePrecision is Class.
+Department is Class.
+Organization is ns.com/foaf/0.1/.
+Division is Class.
+Division SubClassOf ExtensionUnit.
+EmeritusFaculty is Class.
+Person is ns.com/foaf/0.1/.
+EmeritusLibrarian is Class.
+Person is ns.com/foaf/0.1/.
+EmeritusProfessor is Class.
+EmeritusProfessor SubClassOf EmeritusFaculty.
+ExtensionUnit is Class.
+Organization is ns.com/foaf/0.1/.
+F1000Link is Class.
+F1000Link SubClassOf URL.
+Facility is Class.
+Facility SubClassOf BFO 0000029,.
+Facility SubClassOf BFO 0000050 only BFO 0000029,.
+Facility SubClassOf BFO 0000051 only Facility.
+Foundation is Class.
+Organization is ns.com/foaf/0.1/.
+GeographicLocation is Class.
+GeographicLocation SubClassOf Location,.
+GeographicLocation SubClassOf BFO 0000050 only GeographicLocation,.
+GeographicLocation SubClassOf BFO 0000051 only GeographicLocation.
+GeographicRegion is Class.
+GeographicRegion SubClassOf GeographicLocation.
+GeopoliticalEntity is Class.
+GeopoliticalEntity SubClassOf GeographicRegion.
+GraduateStudent is Class.
+GraduateStudent SubClassOf Student.
+Institute is Class.
+Organization is ns.com/foaf/0.1/.
+InvestigatorRole is Class.
+InvitedTalk is Class.
+InvitedTalk SubClassOf Presentation.
+Laboratory is Class.
+Organization is ns.com/foaf/0.1/.
+Librarian is Class.
+Person is ns.com/foaf/0.1/.
+Library is Class.
+Organization is ns.com/foaf/0.1/.
+License is Class.
+License SubClassOf Credential.
+Location is Class.
+NewsRelease is Class.
+NewsRelease SubClassOf Document.
+NonFacultyAcademic is Class.
+PopulatedPlace is Class.
+PopulatedPlace SubClassOf GeopoliticalEntity.
+Postdoc is Class.
+Postdoc SubClassOf NonFacultyAcademic.
+Presentation is Class.
+PrivateCompany is Class.
+PrivateCompany SubClassOf Company.
+ResearchOrganization is Class.
+Organization is ns.com/foaf/0.1/.
+ResearchProposal is Class.
+ResearchProposal SubClassOf Document.
+Room is Class.
+Room SubClassOf Facility,.
+Room SubClassOf BFO 0000050 only Facility.
+Score is Class.
+Score SubClassOf Document.
+Screenplay is Class.
+Screenplay SubClassOf Document.
+ServiceProvidingLaboratory is Class.
+ServiceProvidingLaboratory SubClassOf Laboratory.
+Speech is Class.
+Speech SubClassOf Document.
+StateOrProvince is Class.
+StateOrProvince SubClassOf GeopoliticalEntity.
+Student is Class.
+Person is ns.com/foaf/0.1/.
+StudentOrganization is Class.
+Organization is ns.com/foaf/0.1/.
+Translation is Class.
+Translation SubClassOf Document.
+UndergraduateStudent is Class.
+UndergraduateStudent SubClassOf Student.
+WorkingPaper is Class.
+WorkingPaper SubClassOf Document.
+submitted is Class.
+yearMonthDayPrecision is Class.
+yearMonthDayTimePrecision is Class.
+yearMonthPrecision is Class.
+yearPrecision is Class.
+Phase0ClinicalTrial is Class.
+Phase0ClinicalTrial SubClassOf ERO 0000016.
+www.w3.org/2002/07/# is Class.
+Acquaintance is Class.
+Acquaintance SubClassOf RelatedType.
+Agent is Class.
+Agent SubClassOf RelatedType.
+Calendar is Class.
+CalendarBusy is Class.
+Literal) is (calendarBusy some anyURI) and (calendarBusy min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Calendar.
+CalendarRequest is Class.
+Literal) is (calendarRequest some anyURI) and (calendarRequest min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Calendar.
+Child is Class.
+Child SubClassOf RelatedType.
+Code is Class.
+Communication is Class.
+Contact is Class.
+Contact SubClassOf RelatedType.
+Coresident is Class.
+Coresident SubClassOf RelatedType.
+Email is Class.
+Literal) is (email only string) and (email min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Communication.
+Explanatory is Class.
+Female is Class.
+Female SubClassOf Gender.
+FormattedName is Class.
+Literal) is (formattedName some string) and (formattedName exactly 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Identification.
+Gender is Class.
+Gender SubClassOf Code.
+Geo is Class.
+Literal) is (geo some anyURI) and (geo min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Geographical.
+Geographical is Class.
+Identification is Class.
+Literal)) and ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema# is ((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#.
+Thing is www.w3.org/2002/07/#.
+Logo is Class.
+Literal) is (logo some anyURI) and (logo min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Organizational.
+Male is Class.
+Male SubClassOf Gender.
+Met is Class.
+Met SubClassOf RelatedType.
+Muse is Class.
+Muse SubClassOf RelatedType.
+Name is Class.
+Literal)) and ((familyName some string) and (familyName max 1 www.w3.org/2000/01/-schema# is ((additionalName some string) and (additionalName min 0 www.w3.org/2000/01/-schema#.
+Literal)) and ((familyName some string) and (familyName max 1 www.w3.org/2000/01/-schema# SubClassOf Identification.
+Nickname is Class.
+Literal) is (nickName some string) and (nickName min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Identification.
+None is Class.
+None SubClassOf Gender.
+OrganizationName is Class.
+Literal) is (organizationName some string) and (organizationName min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Organizational.
+OrganizationUnitName is Class.
+Literal) is (organizationalUnitName some string) and (organizationalUnitName min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf OrganizationName.
+Organizational is Class.
+Literal)) and ((timeZone some string) and (timeZone max 1 www.w3.org/2000/01/-schema# is ((geo some anyURI) and (geo max 1 www.w3.org/2000/01/-schema#.
+Thing is www.w3.org/2002/07/#.
+Other is Class.
+Other SubClassOf Gender.
+Parent is Class.
+Parent SubClassOf RelatedType.
+Photo is Class.
+Photo SubClassOf Identification.
+Related is Class.
+Literal) is (related some anyURI) and (related min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Organizational.
+RelatedType is Class.
+Role is Class.
+Thing is www.w3.org/2002/07/#.
+Sweetheart is Class.
+Sweetheart SubClassOf RelatedType.
+Telephone is Class.
+Literal) is (telephone only anyURI) and (telephone min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Communication.
+TelephoneType is Class.
+Text is Class.
+Text SubClassOf TelephoneType.
+Title is Class.
+Title SubClassOf Organizational.
+URL is Class.
+Literal) is (url only anyURI) and (url min 1 www.w3.org/2000/01/-schema#.
+Literal) SubClassOf Explanatory.
+Unknown is Class.
+Unknown SubClassOf Gender.
+Voice is Class.
+Voice SubClassOf TelephoneType.
+ns.com/foaf/0.1/ is Class.
+ns.com/foaf/0.1/ is Class.
+ns.com/foaf/0.1/ is Class.
+accepted is Individual.
+accepted Types DocumentStatus.
+draft is Individual.
+draft Types DocumentStatus.
+peerReviewed is Individual.
+peerReviewed Types DocumentStatus.
+published is Individual.
+published Types DocumentStatus.
+rejected is Individual.
+rejected Types DocumentStatus.
+unpublished is Individual.
+unpublished Types DocumentStatus.
+inPress is Individual.
+inPress Types DocumentStatus.
+invited is Individual.
+invited Types DocumentStatus.
+submitted is Individual.
+submitted Types DocumentStatus.
+yearMonthDayPrecision is Individual.
+yearMonthDayPrecision Types DateTimeValuePrecision.
+yearMonthDayTimePrecision is Individual.
+yearMonthDayTimePrecision Types DateTimeValuePrecision.
+yearMonthPrecision is Individual.
+yearMonthPrecision Types DateTimeValuePrecision.
+yearPrecision is Individual.
+yearPrecision Types DateTimeValuePrecision.

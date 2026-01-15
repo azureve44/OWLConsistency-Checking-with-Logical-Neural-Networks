@@ -1,0 +1,88 @@
+anyURI is Datatype.
+FGDBOWL 0004 is ObjectProperty.
+FGDBOWL 0005 is ObjectProperty.
+FGDBOWL 0008 is ObjectProperty.
+has activity is ObjectProperty.
+has flybaseid is ObjectProperty.
+has pubmedid is ObjectProperty.
+has flybaselink is DataProperty.
+has pubmedlink is DataProperty.
+Activity is Class.
+Activity is equivalent to FGDBOWL 0004 some Reference.
+Thing is www.w3.org/2002/07/#.
+CGnumber is Class.
+CGnumber is equivalent to FGDBOWL 0005 some Gene,.
+CGnumber is equivalent to has flybaseid only FlybaseID.
+Thing is www.w3.org/2002/07/#.
+FlybaseID is Class.
+FlybaseID is equivalent to has flybaselink only anyURI.
+Thing is www.w3.org/2002/07/#.
+GAG is Class.
+GAG SubClassOf Substrate.
+GAG CS is Class.
+GAG CS SubClassOf GAG.
+GAG HS is Class.
+GAG HS SubClassOf GAG.
+Gene is Class.
+Gram-negative bacteria binding protein 1 is Class.
+Gram-negative bacteria binding protein 1 SubClassOf core protein.
+N-glycan is Class.
+N-glycan SubClassOf Substrate.
+N-glycan core protein is Class.
+N-glycan core protein SubClassOf core protein.
+Notch is Class.
+Notch SubClassOf core protein.
+Notch O-glycan is Class.
+Notch O-glycan SubClassOf O-glycan.
+Nucleotide sugar is Class.
+Nucleotide sugar SubClassOf Substrate.
+O-GlcNAc is Class.
+O-GlcNAc SubClassOf O-glycan.
+O-GlcNac core protein is Class.
+O-GlcNac core protein SubClassOf core protein.
+O-Man is Class.
+O-Man SubClassOf O-glycan.
+O-glycan is Class.
+Protein is Class.
+Protein is equivalent to FGDBOWL 0008 some Substrate,.
+Protein is equivalent to has activity some Activity.
+Thing is www.w3.org/2002/07/#.
+PubmedID is Class.
+PubmedID is equivalent to has pubmedlink some anyURI.
+Thing is www.w3.org/2002/07/#.
+Reference is Class.
+Reference is equivalent to has pubmedid some PubmedID.
+Thing is www.w3.org/2002/07/#.
+Substrate is Class.
+chitin is Class.
+chitin SubClassOf Substrate.
+core protein is Class.
+core protein SubClassOf Protein,.
+core protein SubClassOf Substrate.
+dally is Class.
+dally SubClassOf core protein.
+dally-like is Class.
+dally-like SubClassOf core protein.
+dystroglycan is Class.
+dystroglycan SubClassOf core protein.
+enzyme is Class.
+enzyme SubClassOf Protein.
+glycolipid is Class.
+glycolipid SubClassOf lipid.
+lectin is Class.
+lectin SubClassOf Protein.
+lectin-like is Class.
+lectin-like SubClassOf Protein.
+lipid is Class.
+lipid SubClassOf Substrate.
+muchin type O-glycan is Class.
+muchin type O-glycan SubClassOf O-glycan.
+perlecan is Class.
+perlecan SubClassOf core protein.
+rani phenotype is Class.
+Thing is www.w3.org/2002/07/#.
+syndecan is Class.
+syndecan SubClassOf core protein.
+thrombospondin is Class.
+thrombospondin SubClassOf core protein.
+www.w3.org/2002/07/# is Class.

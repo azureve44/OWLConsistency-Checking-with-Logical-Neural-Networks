@@ -1,0 +1,1075 @@
+dateTime is Datatype.
+double is Datatype.
+integer is Datatype.
+string is Datatype.
+Accion Proyecto is ObjectProperty.
+Accion Proyecto Characteristics Functional.
+Accion Proyecto Domain Accion Comercial.
+Accion Proyecto Range Proyecto.
+Accion Proyecto InverseOf puedeDarAccion.
+Autor is ObjectProperty.
+Autor Domain Articulo.
+Autor Range Empleado Centro.
+Autor InverseOf escribe.
+DesarrolloDaA is ObjectProperty.
+DesarrolloDaA Domain Desarrollo Tecnologico.
+DesarrolloDaA Range Mejora Tecnologica,.
+DesarrolloDaA Range Proceso,.
+DesarrolloDaA Range Producto.
+EvaluaciónDe is ObjectProperty.
+EvaluaciónDe Domain Evaluacion Marcha Proyecto.
+EvaluaciónDe Range Proyecto.
+EvaluaciónDe InverseOf tieneEvaluacion.
+NaceDe is ObjectProperty.
+NaceDe Domain Proyecto.
+NaceDe InverseOf daLugarA.
+ProcesoDaA is ObjectProperty.
+ProcesoDaA Domain Proceso.
+ProcesoDaA Range Producto.
+ProcesoDaA InverseOf vieneDeProceso.
+PromovidoPorCentro is ObjectProperty.
+PromovidoPorCentro SubPropertyOf esPromovidoPor.
+PromovidoPorCentro Domain Ensayo Clinico.
+PromovidoPorCentro Range Centro.
+PromovidoPorCentro InverseOf promueve.
+PromovidoPorFarmaceutica is ObjectProperty.
+PromovidoPorFarmaceutica SubPropertyOf esPromovidoPor.
+PromovidoPorFarmaceutica Domain Ensayo Clinico.
+PromovidoPorFarmaceutica Range Farmaceutica.
+PromovidoPorFarmaceutica InverseOf promueveFarm.
+UAIDeCentro is ObjectProperty.
+UAIDeCentro Characteristics Functional.
+UAIDeCentro Domain UAI.
+UAIDeCentro Range Centro.
+UAIDeCentro InverseOf tieneUAI.
+aPartirDeLicencia is ObjectProperty.
+aPartirDeLicencia Domain Transferencia Tecnologica.
+aPartirDeLicencia Range Licencia.
+acuerdoProviene is ObjectProperty.
+acuerdoProviene Domain Acuerdo Exclusividad.
+acuerdoProviene Range Resultado Proyecto.
+acuerdoProviene InverseOf daLugarAcuerdo.
+arisesFrom is ObjectProperty.
+arisesFrom Domain Proyecto.
+arisesFrom Range Idea.
+arisesFrom InverseOf generates.
+asisteA is ObjectProperty.
+asisteA Domain Director UAI,.
+asisteA Domain Responsable.
+asisteA Range Reunion.
+asisteA InverseOf tieneAsistentes.
+asisteEventos is ObjectProperty.
+asisteEventos Domain Empleado.
+asisteEventos Range Eventos Difusion.
+asisteEventos InverseOf dirigidoA.
+daAConvocatoria is ObjectProperty.
+daAConvocatoria Domain Politica Tecnologica.
+daAConvocatoria Range Convocatoria.
+daLugarA is ObjectProperty.
+daLugarA InverseOf NaceDe.
+daLugarADesarrollo is ObjectProperty.
+daLugarADesarrollo Domain Resultado Proyecto.
+daLugarADesarrollo Range Desarrollo Tecnologico.
+daLugarADesarrollo InverseOf procedeResultados.
+daLugarAEBT is ObjectProperty.
+daLugarAEBT Domain Licencia.
+daLugarAEBT Range EBT.
+daLugarAEBT InverseOf hayLicencia.
+daLugarAcuerdo is ObjectProperty.
+daLugarAcuerdo Domain Resultado Proyecto.
+daLugarAcuerdo Range Acuerdo Exclusividad.
+daLugarAcuerdo InverseOf acuerdoProviene.
+desarrolla is ObjectProperty.
+desarrolla Domain Centro.
+desarrolla Range Ensayo Clinico.
+desarrolla InverseOf esDesarrolladoPor.
+dirige is ObjectProperty.
+dirige Characteristics Functional.
+dirige Domain Responsable.
+dirige Range Centro.
+dirige InverseOf dirigidoPor.
+dirigidaPor is ObjectProperty.
+dirigidaPor Domain UAI.
+dirigidaPor Range Director UAI.
+dirigidoA is ObjectProperty.
+dirigidoA Domain Eventos Difusion.
+dirigidoA Range Empleado.
+dirigidoA InverseOf asisteEventos.
+dirigidoPor is ObjectProperty.
+dirigidoPor Domain Centro.
+dirigidoPor Range Responsable.
+dirigidoPor InverseOf dirige.
+esColaboradoraEn is ObjectProperty.
+esColaboradoraEn Characteristics Functional.
+esColaboradoraEn Domain Organizacion.
+esColaboradoraEn Range ITEMAS.
+esColaboradoraEn InverseOf tieneColaborador.
+esDeEmpleado is ObjectProperty.
+esDeEmpleado Domain Caracteristicas Empleados.
+esDeEmpleado Range Empleado.
+esDeEmpleado InverseOf tieneCaracteristicasEmpleado.
+esDesarrolladoPor is ObjectProperty.
+esDesarrolladoPor Domain Ensayo Clinico.
+esDesarrolladoPor Range Centro.
+esDesarrolladoPor InverseOf desarrolla.
+esFirmadoPor is ObjectProperty.
+esFirmadoPor Domain Acuerdo.
+esFirmadoPor Range Organizacion.
+esFirmadoPor InverseOf firma.
+esMiembroEn is ObjectProperty.
+esMiembroEn Domain Institucion.
+esMiembroEn Range ITEMAS.
+esMiembroEn InverseOf tieneMiembro.
+esOriginadoEn is ObjectProperty.
+esOriginadoEn Domain Objetivo I D i.
+esOriginadoEn Range Politica I D i.
+esOriginadoEn InverseOf originaObjetivo.
+esPromovidoPor is ObjectProperty.
+esPromovidoPor Domain Ensayo Clinico.
+esProtegidoPor is ObjectProperty.
+esProtegidoPor Domain Resultado Proyecto.
+esProtegidoPor Range Derecho Propiedad Industrial.
+esProtegidoPor InverseOf protege.
+esSociaDe is ObjectProperty.
+esSociaDe Domain Organizacion.
+esSociaDe Range Consorcio.
+esSociaDe InverseOf formadoPor.
+esUnInstrumento is ObjectProperty.
+esUnInstrumento Domain Acuerdo.
+esUnInstrumento Range Instrumento Legal.
+esUna is ObjectProperty.
+esUna Domain Vigilancia Tecnologica.
+esUna Range Actividad Innovacion.
+escribe is ObjectProperty.
+escribe Domain Empleado Centro.
+escribe Range Articulo.
+escribe InverseOf Autor.
+estaEnFaseEmbudo is ObjectProperty.
+estaFirmadoEn is ObjectProperty.
+estaFirmadoEn Domain Proyecto.
+estaFirmadoEn Range Contrato I D i.
+estaFirmadoEn InverseOf finalidadContrato.
+estaLicenciadoEn is ObjectProperty.
+estaLicenciadoEn Domain Derecho Propiedad Industrial.
+estaLicenciadoEn Range Licencia.
+estaLicenciadoEn InverseOf licenciaUn.
+existeAccionComercial is ObjectProperty.
+existeAccionComercial Domain F4 Transferencia.
+existeAccionComercial Range Accion Comercial.
+existeInforme is ObjectProperty.
+existeInforme Domain F2 Evaluacion.
+existeInforme Range Informe.
+existeMercado is ObjectProperty.
+existeMercado Domain F5 Mercado.
+existePrototipo is ObjectProperty.
+existePrototipo Domain F3 Desarrollo.
+existePrototipo Range Prototipo Homologacion Ensayo.
+explota is ObjectProperty.
+explota Domain Explotacion.
+finalidadContrato is ObjectProperty.
+finalidadContrato Domain Contrato I D i.
+finalidadContrato Range Proyecto.
+finalidadContrato InverseOf estaFirmadoEn.
+financia is ObjectProperty.
+financiaUAI is ObjectProperty.
+financiaUAI Domain ITEMAS.
+financiaUAI Range Financiacion UAI.
+firma is ObjectProperty.
+firma Domain Organizacion.
+firma Range Acuerdo.
+firma InverseOf esFirmadoPor.
+formaParteDe is ObjectProperty.
+formaParteDe Domain Conocimiento.
+formaParteDe Range Capital Intelectual.
+formaParteDe InverseOf incluyeConocimiento.
+formadoPor is ObjectProperty.
+formadoPor Domain Consorcio.
+formadoPor Range Organizacion.
+formadoPor InverseOf esSociaDe.
+genera is ObjectProperty.
+genera Domain Resultado Proyecto.
+genera Range Conocimiento.
+genera InverseOf surgede.
+generates is ObjectProperty.
+generates Domain Idea.
+generates Range Proyecto.
+generates InverseOf arisesFrom.
+hayLicencia is ObjectProperty.
+hayLicencia Domain EBT.
+hayLicencia Range Licencia.
+hayLicencia InverseOf daLugarAEBT.
+ideaPerteneceA is ObjectProperty.
+ideaPerteneceA Domain Idea.
+ideaPerteneceA Range Empleado Centro.
+ideaPerteneceA InverseOf tieneIdea.
+implicaFase is ObjectProperty.
+includes is ObjectProperty.
+includes Domain Fase Embudo.
+incluye is ObjectProperty.
+incluye Domain Fase Embudo.
+incluye Range Idea.
+incluyeConocimiento is ObjectProperty.
+incluyeConocimiento Domain Capital Intelectual.
+incluyeConocimiento Range Conocimiento.
+incluyeConocimiento InverseOf formaParteDe.
+incluyeProyecto is ObjectProperty.
+incluyeProyecto Domain Convocatoria.
+incluyeProyecto Range Proyecto.
+incluyeProyecto InverseOf tieneConvocatoria.
+licenciaUn is ObjectProperty.
+licenciaUn Domain Licencia.
+licenciaUn Range Derecho Propiedad Industrial.
+licenciaUn InverseOf estaLicenciadoEn.
+llevaACaboProyecto is ObjectProperty.
+llevaACaboProyecto Domain Consorcio.
+llevaACaboProyecto Range Proyecto.
+llevaACaboProyecto InverseOf tieneConsorcio.
+objetivoSistema is ObjectProperty.
+objetivoSistema Domain Sistema Gestion I D i.
+objetivoSistema Range Politica I D i.
+organizaEvento is ObjectProperty.
+organizaEvento Domain UAI.
+organizaEvento Range Eventos Difusion.
+organizaEvento InverseOf organizadosPor.
+organizadosPor is ObjectProperty.
+organizadosPor Domain Eventos Difusion.
+organizadosPor Range UAI.
+organizadosPor InverseOf organizaEvento.
+originaObjetivo is ObjectProperty.
+originaObjetivo Domain Politica I D i.
+originaObjetivo Range Objetivo I D i.
+originaObjetivo InverseOf esOriginadoEn.
+participaEnProyecto is ObjectProperty.
+participaEnProyecto Domain Empresa.
+participaEnProyecto Range Proyecto.
+participaEnProyecto InverseOf participadoPor.
+participaSpinfOff is ObjectProperty.
+participaSpinfOff Domain Institucion.
+participaSpinfOff Range SpinOff.
+participaSpinfOff InverseOf participadaPor.
+participadaPor is ObjectProperty.
+participadaPor Domain SpinOff.
+participadaPor Range Institucion.
+participadaPor InverseOf participaSpinfOff.
+participadoPor is ObjectProperty.
+participadoPor Domain Proyecto.
+participadoPor Range Empresa.
+participadoPor InverseOf participaEnProyecto.
+perteneceACentro is ObjectProperty.
+perteneceACentro Domain Caracteristicas Centro.
+perteneceACentro Range Centro.
+perteneceACentro InverseOf tieneCaracteristicaCentro.
+perteneceAGrupo is ObjectProperty.
+perteneceAGrupo Characteristics Functional.
+perteneceAGrupo Domain Investigador.
+perteneceAGrupo Range Grupo Investigacion.
+perteneceAGrupo InverseOf tieneInvestigador.
+perteneceAProyecto is ObjectProperty.
+perteneceAProyecto Domain Objetivo Proyecto.
+perteneceAProyecto Range Proyecto.
+perteneceAProyecto InverseOf tieneObjetivosProyecto.
+perteneceATrUAI is ObjectProperty.
+perteneceATrUAI Domain Formacion.
+perteneceATrUAI Range trabajaUAI.
+perteneceATrUAI InverseOf tieneFormacion.
+perteneceAUAI is ObjectProperty.
+perteneceAUAI Domain Unidades UAI.
+perteneceAUAI Range UAI.
+perteneceAUAI InverseOf tieneUnidades.
+pertenecePatente is ObjectProperty.
+pertenecePatente Domain Patente.
+pertenecePatente Range Familia Patente.
+perteneceUAI is ObjectProperty.
+perteneceUAI Domain Financiacion UAI.
+perteneceUAI Range UAI.
+planifica is ObjectProperty.
+planifica Domain Planificacion Actividades.
+planifica Range Actividad I D i.
+planifica InverseOf tienenPlanificacion.
+procedeDeEmpleado is ObjectProperty.
+procedeDeEmpleado Domain Idea.
+procedeDeEmpleado Range Empleado Centro.
+procedeDeEmpleado InverseOf tieneIdea.
+procedeResultados is ObjectProperty.
+procedeResultados Domain Desarrollo Tecnologico.
+procedeResultados Range Resultado Proyecto.
+procedeResultados InverseOf daLugarADesarrollo.
+promueve is ObjectProperty.
+promueve Domain Centro.
+promueve Range Ensayo Clinico.
+promueve InverseOf PromovidoPorCentro.
+promueveFarm is ObjectProperty.
+promueveFarm Domain Farmaceutica.
+promueveFarm Range Ensayo Clinico.
+promueveFarm InverseOf PromovidoPorFarmaceutica.
+protege is ObjectProperty.
+protege Domain Derecho Propiedad Industrial.
+protege Range Resultado Proyecto.
+protege InverseOf esProtegidoPor.
+publica is ObjectProperty.
+publica Domain Metodo Diseminacion.
+publica Range Resultado Proyecto.
+puedeDarAInforme is ObjectProperty.
+puedeDarAInforme Domain Proyecto.
+puedeDarAInforme Range Informe.
+puedeDarAInforme InverseOf vieneDe.
+puedeDarAccion is ObjectProperty.
+puedeDarAccion Domain Proyecto.
+puedeDarAccion Range Accion Comercial.
+puedeDarAccion InverseOf Accion Proyecto.
+puedeDarProt is ObjectProperty.
+puedeDarProt Domain Proyecto.
+puedeDarProt Range Prototipo Homologacion Ensayo.
+puedeDarProt InverseOf vieneDePr.
+realizaAccion is ObjectProperty.
+realizaAccion Domain Organizacion.
+realizaAccion Range Accion Comercial.
+realizaAccion InverseOf realizadaPor.
+realizaActividades is ObjectProperty.
+realizaActividades Domain Proyecto.
+realizaActividades Range Actividad I D i.
+realizaInvestigacion is ObjectProperty.
+realizaInvestigacion Domain Grupo Investigacion.
+realizaInvestigacion Range Actividad Investigacion.
+realizadaPor is ObjectProperty.
+realizadaPor Characteristics Functional.
+realizadaPor Domain Accion Comercial.
+realizadaPor Range Organizacion.
+realizadaPor InverseOf realizaAccion.
+regidaPor is ObjectProperty.
+regidaPor Domain Convocatoria.
+regidaPor Range Politica Tecnologica.
+resultadoDe is ObjectProperty.
+resultadoDe Domain Resultado Proyecto.
+resultadoDe Range Proyecto.
+resultadoDe InverseOf tieneResultados.
+surgeDeObjetivo is ObjectProperty.
+surgeDeObjetivo Domain Meta I D i.
+surgeDeObjetivo Range Objetivo I D i.
+surgede is ObjectProperty.
+surgede Domain Conocimiento.
+surgede Range Resultado Proyecto.
+surgede InverseOf genera.
+tiene is ObjectProperty.
+tiene Domain UAI.
+tiene Range Financiacion UAI.
+tieneAsistentes is ObjectProperty.
+tieneAsistentes Domain Reunion.
+tieneAsistentes Range Director UAI,.
+tieneAsistentes Range Responsable.
+tieneAsistentes InverseOf asisteA.
+tieneCapitalIntelectual is ObjectProperty.
+tieneCapitalIntelectual SubPropertyOf tieneCaracteristicaCentro.
+tieneCapitalIntelectual Domain Centro.
+tieneCapitalIntelectual Range Capital Intelectual.
+tieneCaracteristicaCentro is ObjectProperty.
+tieneCaracteristicaCentro Domain Centro.
+tieneCaracteristicaCentro Range Caracteristicas Centro.
+tieneCaracteristicaCentro InverseOf perteneceACentro.
+tieneCaracteristicasEmpleado is ObjectProperty.
+tieneCaracteristicasEmpleado Domain Empleado.
+tieneCaracteristicasEmpleado Range Caracteristicas Empleados.
+tieneCaracteristicasEmpleado InverseOf esDeEmpleado.
+tieneColaborador is ObjectProperty.
+tieneColaborador Domain ITEMAS.
+tieneColaborador Range Organizacion.
+tieneColaborador InverseOf esColaboradoraEn.
+tieneCompetencias is ObjectProperty.
+tieneCompetencias SubPropertyOf tieneCaracteristicasEmpleado.
+tieneCompetencias Domain Empleado.
+tieneCompetencias Range Competencias.
+tieneConsorcio is ObjectProperty.
+tieneConsorcio SubPropertyOf tieneProyecto.
+tieneConsorcio Domain Proyecto.
+tieneConsorcio Range Consorcio.
+tieneConsorcio InverseOf llevaACaboProyecto.
+tieneConvocatoria is ObjectProperty.
+tieneConvocatoria SubPropertyOf tieneProyecto.
+tieneConvocatoria Domain Proyecto.
+tieneConvocatoria Range Convocatoria.
+tieneConvocatoria InverseOf incluyeProyecto.
+tieneCulturaInnovadora is ObjectProperty.
+tieneCulturaInnovadora SubPropertyOf tieneCaracteristicaCentro.
+tieneCulturaInnovadora Domain Centro.
+tieneCulturaInnovadora Range Cultura Innovadora.
+tieneEntidadFinanciera is ObjectProperty.
+tieneEntidadFinanciera Domain Proyecto.
+tieneEntidadFinanciera Range Organizacion.
+tieneEvaluacion is ObjectProperty.
+tieneEvaluacion SubPropertyOf tieneProyecto.
+tieneEvaluacion Domain Proyecto.
+tieneEvaluacion Range Evaluacion Marcha Proyecto.
+tieneEvaluacion InverseOf EvaluaciónDe.
+tieneFormacion is ObjectProperty.
+tieneFormacion Domain trabajaUAI.
+tieneFormacion Range Formacion.
+tieneFormacion InverseOf perteneceATrUAI.
+tieneIdea is ObjectProperty.
+tieneIdea Domain Empleado Centro.
+tieneIdea Range Idea.
+tieneIdea InverseOf ideaPerteneceA,.
+tieneIdea InverseOf procedeDeEmpleado.
+tieneIdeaI is ObjectProperty.
+tieneIdeaI SubPropertyOf tieneIdea.
+tieneIdeaII is ObjectProperty.
+tieneIdeaII SubPropertyOf tieneIdea.
+tieneInvestigador is ObjectProperty.
+tieneInvestigador Domain Grupo Investigacion.
+tieneInvestigador Range Investigador.
+tieneInvestigador InverseOf perteneceAGrupo.
+tieneLicencia is ObjectProperty.
+tieneLicencia Domain Derecho Propiedad Industrial.
+tieneLicencia Range Licencia.
+tieneLicenciaDA is ObjectProperty.
+tieneLicenciaDA SubPropertyOf tieneLicencia.
+tieneLicenciaDA Domain Derecho Autor.
+tieneLicenciaDA Range Licencia.
+tieneLicenciaKH is ObjectProperty.
+tieneLicenciaKH SubPropertyOf tieneLicencia.
+tieneLicenciaKH Domain Know How.
+tieneLicenciaKH Range Licencia.
+tieneLicenciaPI is ObjectProperty.
+tieneLicenciaPI SubPropertyOf tieneLicencia.
+tieneLicenciaPI Domain PI Explotacion.
+tieneLicenciaPI Range Licencia.
+tieneLicenciaPS is ObjectProperty.
+tieneLicenciaPS SubPropertyOf tieneLicencia.
+tieneLicenciaSI is ObjectProperty.
+tieneLicenciaSI SubPropertyOf tieneLicencia.
+tieneLicenciaSI Domain Secreto Industrial.
+tieneLicenciaSI Range Licencia.
+tieneMetaI D i is ObjectProperty.
+tieneMetaI D i SubPropertyOf tieneCaracteristicaCentro.
+tieneMetaI D i Domain Centro.
+tieneMetaI D i Range Meta I D i.
+tieneMiembro is ObjectProperty.
+tieneMiembro Domain ITEMAS.
+tieneMiembro Range Institucion.
+tieneMiembro InverseOf esMiembroEn.
+tieneObjetivoI D i is ObjectProperty.
+tieneObjetivoI D i SubPropertyOf tieneCaracteristicaCentro.
+tieneObjetivoI D i Domain Centro.
+tieneObjetivoI D i Range Objetivo I D i.
+tieneObjetivosProyecto is ObjectProperty.
+tieneObjetivosProyecto SubPropertyOf tieneProyecto.
+tieneObjetivosProyecto Domain Proyecto.
+tieneObjetivosProyecto Range Objetivo Proyecto.
+tieneObjetivosProyecto InverseOf perteneceAProyecto.
+tienePatente is ObjectProperty.
+tienePatente Domain Familia Patente.
+tienePatente Range Patente.
+tienePoliticaI D i is ObjectProperty.
+tienePoliticaI D i SubPropertyOf tieneCaracteristicaCentro.
+tienePoliticaI D i Domain Centro.
+tienePoliticaI D i Range Politica I D i.
+tieneProyecto is ObjectProperty.
+tieneProyecto Domain Proyecto.
+tieneProyecto Range Caracteristicas proyecto.
+tieneResponsabilidades is ObjectProperty.
+tieneResponsabilidades SubPropertyOf tieneCaracteristicasEmpleado.
+tieneResponsabilidades Domain Empleado.
+tieneResponsabilidades Range Responsabilidades.
+tieneResultados is ObjectProperty.
+tieneResultados SubPropertyOf tieneProyecto.
+tieneResultados Domain Proyecto.
+tieneResultados Range Resultado Proyecto.
+tieneResultados InverseOf resultadoDe.
+tieneSistemaGestionI D i is ObjectProperty.
+tieneSistemaGestionI D i SubPropertyOf tieneCaracteristicaCentro.
+tieneSistemaGestionI D i Domain Centro.
+tieneSistemaGestionI D i Range Sistema Gestion I D i.
+tieneUAI is ObjectProperty.
+tieneUAI Characteristics Functional.
+tieneUAI Domain Centro.
+tieneUAI Range UAI.
+tieneUAI InverseOf UAIDeCentro.
+tieneUnidades is ObjectProperty.
+tieneUnidades Domain UAI.
+tieneUnidades Range Unidades UAI.
+tieneUnidades InverseOf perteneceAUAI.
+tienenPlanificacion is ObjectProperty.
+tienenPlanificacion Domain Actividad I D i.
+tienenPlanificacion Range Planificacion Actividades.
+tienenPlanificacion InverseOf planifica.
+trabajaEn is ObjectProperty.
+trabajaEn Characteristics Functional.
+trabajaEn Domain Empleado.
+trabajaEn Range Organizacion.
+transfiere is ObjectProperty.
+transfiere Domain Contrato Transferencia.
+transfiere Range Conocimiento.
+vieneDe is ObjectProperty.
+vieneDe Domain Informe.
+vieneDe Range Proyecto.
+vieneDe InverseOf puedeDarAInforme.
+vieneDePr is ObjectProperty.
+vieneDePr Domain Prototipo Homologacion Ensayo.
+vieneDePr Range Proyecto.
+vieneDePr InverseOf puedeDarProt.
+vieneDeProceso is ObjectProperty.
+vieneDeProceso Domain Producto.
+vieneDeProceso Range Proceso.
+vieneDeProceso InverseOf ProcesoDaA.
+ambitoFormacion is DataProperty.
+ambitoFormacion SubPropertyOf propiedadesFormacion.
+ambitoOrganizacion is DataProperty.
+ambitoOrganizacion Domain Organizacion.
+ambitoOrganizacion Range {"Internacional" , "Nacional"}.
+ambitoOrganizacion SubPropertyOf propiedadesOrganizacion.
+ambitoProyecto is DataProperty.
+ambitoProyecto SubPropertyOf propiedadesProyecto.
+areaEstrategica is DataProperty.
+areaEstrategica Domain Actividad I D i.
+cuantiaEnsayo is DataProperty.
+cuantiaEnsayo SubPropertyOf propiedadesEnsayo.
+cuantiaLicencia is DataProperty.
+cuantiaLicencia Domain Licencia.
+ebitda is DataProperty.
+ebitda SubPropertyOf propiedadesEBT.
+facturacionEBT is DataProperty.
+facturacionEBT SubPropertyOf propiedadesEBT.
+fechaEnsayo is DataProperty.
+fechaEnsayo SubPropertyOf propiedadesEnsayo.
+financiacionITEMAS is DataProperty.
+financiacionITEMAS Domain ITEMAS.
+financiacionITEMAS Range double.
+fondosCaptadosEBT is DataProperty.
+fondosCaptadosEBT SubPropertyOf propiedadesEBT.
+frecuencia is DataProperty.
+frecuencia Domain Reunion.
+gruposTrabajo is DataProperty.
+gruposTrabajo Domain ITEMAS.
+jcr is DataProperty.
+jcr Domain trabajaUAI.
+jerarquia is DataProperty.
+jerarquia Domain Director UAI.
+oficinaPatente is DataProperty.
+propiedadesEBT is DataProperty.
+propiedadesEBT Domain EBT.
+propiedadesEnsayo is DataProperty.
+propiedadesEnsayo Domain Ensayo Clinico.
+propiedadesFormacion is DataProperty.
+propiedadesFormacion Domain Formacion.
+propiedadesOrganizacion is DataProperty.
+propiedadesOrganizacion Domain Organizacion.
+propiedadesProyecto is DataProperty.
+propiedadesProyecto Domain Proyecto.
+resolucion is DataProperty.
+resolucion Domain Convocatoria.
+revista is DataProperty.
+revista Domain Articulo.
+revista Range {"AHCI" , "SCI" , "SSCI"}.
+tipoActividadInnovacion is DataProperty.
+tipoActividadInnovacion Domain Actividad Innovacion.
+tipoActividadInnovacion Range {"InnovacionEnTecnologia" , "InnovacionGestion" , "InnovacionTecnologica"}.
+tipoFormacion is DataProperty.
+tipoFormacion SubPropertyOf propiedadesFormacion.
+tipoIdea is DataProperty.
+tipoIdea Domain Idea.
+tipoIdea Range {"Bio" , "Farma" , "Imagen" , "Materiales Dispositivos" , "Organizativa Asistencial" , "TIC Salud"}.
+tipoOrganizacion is DataProperty.
+tipoOrganizacion Domain Organizacion.
+tipoOrganizacion Range {"Privada" , "Publica"}.
+tipoOrganizacion SubPropertyOf propiedadesOrganizacion.
+tipoProyecto is DataProperty.
+tipoProyecto SubPropertyOf propiedadesProyecto.
+Accion Comercial is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is Accion Proyecto exactly 1 Proyecto,.
+Thing, is implicaFase exactly 1 F4 Transferencia,.
+Thing, is realizadaPor exactly 1 Organizacion.
+Actividad Desarrollo is Class.
+Actividad Desarrollo SubClassOf Actividad I D i.
+Actividad I D i is Class.
+Actividad I D i is equivalent to Actividad Desarrollo or Actividad Innovacion or Actividad Investigacion.
+Thing, is www.w3.org/2002/07/#.
+Thing, is tienenPlanificacion exactly 1 Planificacion Actividades,.
+Thing, is areaEstrategica only string.
+Actividad Innovacion is Class.
+Actividad Innovacion SubClassOf Actividad I D i,.
+Actividad Innovacion SubClassOf tipoActividadInnovacion only string.
+Actividad Investigacion is Class.
+Actividad Investigacion SubClassOf Actividad I D i.
+Acuerdo is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is esFirmadoPor exactly 1 Organizacion,.
+Thing, is esUnInstrumento exactly 1 Instrumento Legal.
+Acuerdo Exclusividad is Class.
+Acuerdo Exclusividad SubClassOf Acuerdo,.
+Acuerdo Exclusividad SubClassOf acuerdoProviene exactly 1 Resultado Proyecto,.
+Acuerdo Exclusividad SubClassOf implicaFase exactly 1 F5 Mercado.
+Alianza is Class.
+Alianza SubClassOf Acuerdo.
+Articulo is Class.
+Articulo SubClassOf Diseminacion Cientifica,.
+Articulo SubClassOf Autor some Empleado Centro,.
+Articulo SubClassOf revista exactly 1 string.
+Capital Intelectual is Class.
+Capital Intelectual SubClassOf Caracteristicas Centro,.
+Capital Intelectual SubClassOf incluyeConocimiento some Conocimiento.
+Caracteristicas Centro is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is perteneceACentro exactly 1 Centro.
+Caracteristicas Empleados is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is esDeEmpleado exactly 1 Empleado.
+Caracteristicas proyecto is Class.
+Thing is www.w3.org/2002/07/#.
+Cargo is Class.
+Cargo SubClassOf Empleado Centro.
+Centro is Class.
+Centro is equivalent to Centro Sanitario or IIS.
+Centro SubClassOf Institucion,.
+Centro SubClassOf desarrolla only Ensayo Clinico,.
+Centro SubClassOf promueve only Ensayo Clinico,.
+Centro SubClassOf tieneUAI only UAI,.
+Centro SubClassOf dirigidoPor exactly 1 Responsable,.
+Centro SubClassOf tieneCapitalIntelectual exactly 1 Capital Intelectual,.
+Centro SubClassOf tieneCulturaInnovadora exactly 1 Cultura Innovadora,.
+Centro SubClassOf tieneMetaI D i exactly 1 Meta I D i,.
+Centro SubClassOf tieneObjetivoI D i exactly 1 Objetivo I D i,.
+Centro SubClassOf tienePoliticaI D i exactly 1 Politica I D i,.
+Centro SubClassOf tieneSistemaGestionI D i exactly 1 Sistema Gestion I D i.
+Centro DisjointWith Fundacion.
+Centro Sanit1 is Class.
+Centro Sanitario is Class.
+Centro Sanitario is equivalent to Centro and (not (IIS)).
+Centro Sanitario SubClassOf Centro.
+Centro Sanitario DisjointWith IIS.
+Competencias is Class.
+Competencias SubClassOf Caracteristicas Empleados.
+Competencias DisjointWith Responsabilidades.
+Conocimiento is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is surgede some Resultado Proyecto,.
+Thing, is formaParteDe exactly 1 Capital Intelectual.
+Consorcio is Class.
+Thing) is Caracteristicas proyecto and (formadoPor some www.w3.org/2002/07/#.
+Thing) SubClassOf Caracteristicas proyecto,.
+Thing) SubClassOf formadoPor some Organizacion,.
+Thing) SubClassOf llevaACaboProyecto some Proyecto.
+Contrato I D i is Class.
+Contrato I D i SubClassOf Acuerdo,.
+Contrato I D i SubClassOf finalidadContrato exactly 1 Proyecto.
+Contrato Transferencia is Class.
+Contrato Transferencia SubClassOf Acuerdo,.
+Contrato Transferencia SubClassOf transfiere exactly 1 Conocimiento.
+Convenio Marco is Class.
+Convenio Marco SubClassOf Acuerdo.
+Convocatoria is Class.
+Convocatoria SubClassOf Caracteristicas proyecto,.
+Convocatoria SubClassOf incluyeProyecto some Proyecto,.
+Convocatoria SubClassOf regidaPor only Politica Tecnologica,.
+Convocatoria SubClassOf resolucion exactly 1 dateTime.
+Cultura Innovadora is Class.
+Cultura Innovadora SubClassOf Caracteristicas Centro.
+Derecho Autor is Class.
+Derecho Autor SubClassOf Tipos,.
+Derecho Autor SubClassOf tieneLicenciaDA exactly 1 Licencia.
+Derecho Propiedad Industrial is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is estaLicenciadoEn exactly 1 Licencia,.
+Thing, is protege exactly 1 Resultado Proyecto.
+Desarrollo Tecnologico is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is (DesarrolloDaA only Mejora Tecnologica) and (DesarrolloDaA only Proceso) and (DesarrolloDaA only Producto),.
+Thing, is procedeResultados exactly 1 Resultado Proyecto.
+Difusion Externa is Class.
+Difusion Externa SubClassOf Eventos Difusion.
+Difusion Externa DisjointWith Difusion Interna.
+Difusion Interna is Class.
+Difusion Interna is equivalent to Eventos Difusion and (dirigidoA some Empleado Centro).
+Difusion Interna SubClassOf Eventos Difusion.
+Difusion Interna DisjointWith Difusion Externa.
+Director is Class.
+Director is equivalent to Responsable and (dirige exactly 1 IIS).
+Director SubClassOf Responsable.
+Director DisjointWith Gerente.
+Director UAI is Class.
+Director UAI is equivalent to trabajaUAI and (dirige exactly 1 UAI).
+Director UAI SubClassOf trabajaUAI,.
+Director UAI SubClassOf asisteA only Reunion,.
+Director UAI SubClassOf jerarquia exactly 1 integer.
+Diseminacion Cientifica is Class.
+Diseminacion Cientifica SubClassOf Metodo Diseminacion.
+Diseno Industrial is Class.
+Diseno Industrial SubClassOf Tipos.
+Donacion is Class.
+Donacion SubClassOf Acuerdo.
+EBT is Class.
+EBT SubClassOf Empresa,.
+EBT SubClassOf hayLicencia exactly 1 Licencia,.
+EBT SubClassOf ebitda exactly 1 double,.
+EBT SubClassOf facturacionEBT exactly 1 double,.
+EBT SubClassOf fondosCaptadosEBT exactly 1 double.
+EBT DisjointWith Farmaceutica.
+Empleado is Class.
+Empleado is equivalent to Empleado Empresa or Empleado Institucion.
+Thing, is www.w3.org/2002/07/#.
+Thing, is tieneCaracteristicasEmpleado some Caracteristicas Empleados,.
+Thing, is asisteEventos only Eventos Difusion,.
+Thing, is trabajaEn exactly 1 Organizacion.
+Empleado1 is Class.
+Empleado Centro is Class.
+Empleado Centro is equivalent to Empleado Institucion and (trabajaEn exactly 1 Centro).
+Empleado Centro SubClassOf Empleado Institucion,.
+Empleado Centro SubClassOf escribe only Articulo,.
+Empleado Centro SubClassOf tieneIdea only Idea.
+Empleado Empresa is Class.
+Empleado Empresa SubClassOf Empleado.
+Empleado Empresa DisjointWith Empleado Institucion.
+Empleado Institucion is Class.
+Empleado Institucion SubClassOf Empleado.
+Empleado Institucion DisjointWith Empleado Empresa.
+Empresa is Class.
+Empresa SubClassOf Organizacion,.
+Empresa SubClassOf participaEnProyecto only Proyecto.
+Empresa DisjointWith Institucion.
+EmpresaBT1 is Class.
+Ensayo is Class.
+Ensayo SubClassOf Prototipo Homologacion Ensayo.
+Ensayo Clinico is Class.
+Ensayo Clinico is equivalent to Medicamento or Producto Sanitario.
+Thing, is www.w3.org/2002/07/#.
+Thing, is (PromovidoPorCentro exactly 1 Centro) or (PromovidoPorFarmaceutica exactly 1 Farmaceutica),.
+Thing, is esDesarrolladoPor exactly 1 Centro,.
+Thing, is cuantiaEnsayo exactly 1 double,.
+Thing, is fechaEnsayo exactly 1 dateTime.
+Estado is Class.
+Estado SubClassOf Derecho Propiedad Industrial.
+Estado Proyecto is Class.
+Estado Proyecto SubClassOf Proyecto.
+Estudio Mercado is Class.
+Estudio Mercado SubClassOf Informe.
+Evaluacion Marcha Proyecto is Class.
+Evaluacion Marcha Proyecto SubClassOf Caracteristicas proyecto,.
+Evaluacion Marcha Proyecto SubClassOf EvaluaciónDe exactly 1 Proyecto Activo.
+Evento is Class.
+Evento SubClassOf Metodo Diseminacion.
+Eventos Difusion is Class.
+Eventos Difusion is equivalent to Difusion Externa or Difusion Interna.
+Eventos Difusion SubClassOf Diseminacion Cientifica,.
+Eventos Difusion SubClassOf organizadosPor only UAI.
+Explotacion is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is explota only.
+Thing, is (Mejora Tecnologica or Proceso or Producto).
+F1 Captacion is Class.
+F1 Captacion SubClassOf Fase Embudo.
+F2 Evaluacion is Class.
+F2 Evaluacion SubClassOf Fase Embudo,.
+F2 Evaluacion SubClassOf daLugarA some Proyecto,.
+F2 Evaluacion SubClassOf existeInforme some Informe.
+F3 Desarrollo is Class.
+F3 Desarrollo SubClassOf Fase Embudo,.
+F3 Desarrollo SubClassOf existePrototipo some Prototipo Homologacion Ensayo.
+F4 Transferencia is Class.
+F4 Transferencia SubClassOf Fase Embudo,.
+F4 Transferencia SubClassOf existeAccionComercial some Accion Comercial.
+F5 Mercado is Class.
+F5 Mercado SubClassOf Fase Embudo,.
+F5 Mercado SubClassOf (existeMercado some Acuerdo Exclusividad) or (existeMercado some Licencia).
+Familia Patente is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is tienePatente some Patente.
+Farmaceutica is Class.
+Farmaceutica SubClassOf Empresa,.
+Farmaceutica SubClassOf promueveFarm only Ensayo Clinico.
+Farmaceutica DisjointWith EBT.
+Fase Embudo is Class.
+Fase Embudo is equivalent to F1 Captacion or F2 Evaluacion or F3 Desarrollo or F4 Transferencia or F5 Mercado.
+Thing is www.w3.org/2002/07/#.
+Financiacion UAI is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is perteneceUAI exactly 1 UAI.
+Formacion is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is perteneceATrUAI exactly 1 trabajaUAI,.
+Thing, is ambitoFormacion exactly 1 string,.
+Thing, is tipoFormacion exactly 1 string.
+Fundacion is Class.
+Fundacion SubClassOf Institucion.
+Fundacion DisjointWith Centro.
+Gerente is Class.
+Gerente is equivalent to Responsable and (dirige exactly 1 Centro Sanitario).
+Gerente SubClassOf Responsable.
+Gerente DisjointWith Director.
+Grupo Investigacion is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is (tieneInvestigador some IC) and (tieneInvestigador min 1 IP),.
+Thing, is realizaInvestigacion some Actividad Investigacion.
+Hardware is Class.
+Hardware SubClassOf Producto.
+Homologacion is Class.
+Homologacion SubClassOf Prototipo Homologacion Ensayo.
+IC is Class.
+IC SubClassOf Investigador.
+IC DisjointWith IP.
+IIS is Class.
+IIS is equivalent to Centro and (not (Centro Sanitario)).
+IIS SubClassOf Centro.
+IIS DisjointWith Centro Sanitario.
+IP is Class.
+IP SubClassOf Investigador.
+IP DisjointWith IC.
+ITEMAS is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is tieneMiembro some Institucion,.
+Thing, is financiaUAI only Financiacion UAI,.
+Thing, is tieneColaborador only Organizacion,.
+Thing, is gruposTrabajo some string,.
+Thing, is financiacionITEMAS exactly 1 double.
+Idea is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is (estaEnFaseEmbudo exactly 1 F1 Captacion) or (estaEnFaseEmbudo exactly 1 F2 Evaluacion),.
+Thing, is generates only Proyecto,.
+Thing, is ideaPerteneceA exactly 1 Empleado Centro,.
+Thing, is tipoIdea exactly 1 string.
+Informe is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is implicaFase exactly 1 F2 Evaluacion,.
+Thing, is vieneDe exactly 1 Proyecto.
+Informe Pantetabilidad is Class.
+Informe Pantetabilidad SubClassOf Informe.
+Informe Valor Producto is Class.
+Informe Valor Producto SubClassOf Informe.
+Institucion is Class.
+Institucion SubClassOf Organizacion,.
+Institucion SubClassOf esMiembroEn only ITEMAS,.
+Institucion SubClassOf participaSpinfOff only SpinOff.
+Institucion DisjointWith Empresa.
+Instrumento Legal is Class.
+Thing is www.w3.org/2002/07/#.
+Investigador is Class.
+Investigador SubClassOf Cargo,.
+Investigador SubClassOf perteneceAGrupo exactly 1 Grupo Investigacion.
+Know How is Class.
+Know How SubClassOf Tipos,.
+Know How SubClassOf tieneLicenciaKH exactly 1 Licencia.
+Licencia is Class.
+Licencia SubClassOf Acuerdo,.
+Licencia SubClassOf daLugarAEBT only EBT,.
+Licencia SubClassOf implicaFase exactly 1 F5 Mercado,.
+Licencia SubClassOf licenciaUn exactly 1 Derecho Propiedad Industrial,.
+Licencia SubClassOf cuantiaLicencia exactly 1 double.
+Licencia1 is Class.
+MTA is Class.
+MTA SubClassOf Acuerdo.
+Marca is Class.
+Marca SubClassOf Tipos.
+Material is Class.
+Material SubClassOf Producto.
+Mecenazgo is Class.
+Mecenazgo SubClassOf Acuerdo.
+Medicamento is Class.
+Medicamento SubClassOf Ensayo Clinico.
+Medicamento DisjointWith Producto Sanitario.
+Mejora Tecnologica is Class.
+Thing is www.w3.org/2002/07/#.
+Meta I D i is Class.
+Meta I D i SubClassOf Caracteristicas Centro,.
+Meta I D i SubClassOf surgeDeObjetivo exactly 1 Objetivo I D i.
+Metodo Diseminacion is Class.
+Metodo Diseminacion is equivalent to publica exactly 1 Resultado Proyecto.
+Thing is www.w3.org/2002/07/#.
+Modelo Utilidad is Class.
+Modelo Utilidad SubClassOf Tipos.
+NDA is Class.
+NDA SubClassOf Acuerdo.
+Naturaleza Proyecto is Class.
+Naturaleza Proyecto SubClassOf Proyecto.
+Noticia is Class.
+Noticia SubClassOf Metodo Diseminacion.
+Objetivo I D i is Class.
+Objetivo I D i SubClassOf Caracteristicas Centro,.
+Objetivo I D i SubClassOf esOriginadoEn exactly 1 Politica I D i.
+Objetivo Proyecto is Class.
+Objetivo Proyecto SubClassOf Caracteristicas proyecto,.
+Objetivo Proyecto SubClassOf perteneceAProyecto exactly 1 Proyecto.
+Organizacion is Class.
+Organizacion is equivalent to Empresa or Institucion.
+Thing, is www.w3.org/2002/07/#.
+Thing, is esSociaDe only Consorcio,.
+Thing, is financia only Proyecto,.
+Thing, is firma only Acuerdo,.
+Thing, is realizaAccion only Accion Comercial,.
+Thing, is esColaboradoraEn max 1 ITEMAS,.
+Thing, is ambitoOrganizacion exactly 1 string,.
+Thing, is tipoOrganizacion exactly 1 string.
+PI Concedida is Class.
+PI Concedida SubClassOf Estado.
+PI Explotacion is Class.
+PI Explotacion SubClassOf Estado,.
+PI Explotacion SubClassOf tieneLicenciaPI exactly 1 Licencia.
+PI Solicitada is Class.
+PI Solicitada SubClassOf Estado.
+Patente is Class.
+Patente SubClassOf Tipos,.
+Patente SubClassOf pertenecePatente exactly 1 Familia Patente,.
+Patente SubClassOf oficinaPatente exactly 1 string.
+Patente1 is Class.
+Planificacion Actividades is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is planifica some Actividad I D i.
+Politica I D i is Class.
+Politica I D i SubClassOf Caracteristicas Centro,.
+Politica I D i SubClassOf originaObjetivo some Objetivo I D i.
+Politica Tecnologica is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is daAConvocatoria only Convocatoria.
+Proceso is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is ProcesoDaA only Producto.
+Producto is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is vieneDeProceso only Proceso.
+Producto Sanitario is Class.
+Producto Sanitario SubClassOf Ensayo Clinico.
+Producto Sanitario DisjointWith Medicamento.
+Prototipo is Class.
+Prototipo SubClassOf Prototipo Homologacion Ensayo.
+Prototipo Homologacion Ensayo is Class.
+Prototipo Homologacion Ensayo is equivalent to Ensayo or Homologacion or Prototipo.
+Thing, is www.w3.org/2002/07/#.
+Thing, is implicaFase exactly 1 F3 Desarrollo,.
+Thing, is vieneDePr exactly 1 Proyecto.
+Proyecto is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is (estaEnFaseEmbudo exactly 1 F3 Desarrollo) or (estaEnFaseEmbudo exactly 1 F4 Transferencia) or (estaEnFaseEmbudo exactly 1 F5 Mercado),.
+Thing, is tieneObjetivosProyecto some Objetivo Proyecto,.
+Thing, is participadoPor only Empresa,.
+Thing, is puedeDarAInforme only Informe,.
+Thing, is puedeDarAccion only Accion Comercial,.
+Thing, is puedeDarProt only Prototipo Homologacion Ensayo,.
+Thing, is tieneConsorcio only Consorcio,.
+Thing, is tieneConvocatoria only Convocatoria,.
+Thing, is tieneEntidadFinanciera only Organizacion,.
+Thing, is tieneProyecto only Caracteristicas proyecto,.
+Thing, is arisesFrom exactly 1 Idea,.
+Thing, is estaFirmadoEn max 1 Contrato I D i,.
+Thing, is ambitoProyecto exactly 1 string,.
+Thing, is tipoProyecto exactly 1 string.
+Proyecto1 is Class.
+Proyecto Activo is Class.
+Proyecto Activo SubClassOf Estado Proyecto,.
+Proyecto Activo SubClassOf tieneResultados only Resultado Proyecto,.
+Proyecto Activo SubClassOf tieneEvaluacion exactly 1 Evaluacion Marcha Proyecto.
+Proyecto Cerrado is Class.
+Proyecto Cerrado SubClassOf Estado Proyecto,.
+Proyecto Cerrado SubClassOf tieneResultados exactly 1 Resultado Proyecto.
+Proyecto Concedido is Class.
+Proyecto Concedido SubClassOf Estado Proyecto.
+Proyecto Denegado is Class.
+Proyecto Denegado SubClassOf Estado Proyecto.
+Proyecto Desarrollo is Class.
+Proyecto Desarrollo SubClassOf Naturaleza Proyecto,.
+Proyecto Desarrollo SubClassOf realizaActividades some Actividad Desarrollo.
+Proyecto Innovacion is Class.
+Proyecto Innovacion SubClassOf Naturaleza Proyecto,.
+Proyecto Innovacion SubClassOf realizaActividades some Actividad Innovacion.
+Proyecto Investigacion is Class.
+Proyecto Investigacion SubClassOf Naturaleza Proyecto,.
+Proyecto Investigacion SubClassOf realizaActividades some Actividad Investigacion.
+Proyecto Solicitado is Class.
+Proyecto Solicitado SubClassOf Estado Proyecto.
+Responsabilidades is Class.
+Responsabilidades SubClassOf Caracteristicas Empleados.
+Responsabilidades DisjointWith Competencias.
+Responsable is Class.
+Responsable SubClassOf Cargo,.
+Responsable SubClassOf asisteA only Reunion,.
+Responsable SubClassOf dirige exactly 1 Centro.
+Resultado1 is Class.
+Resultado Proyecto is Class.
+Resultado Proyecto SubClassOf Caracteristicas proyecto,.
+Resultado Proyecto SubClassOf (resultadoDe exactly 1 Proyecto Activo) or (resultadoDe exactly 1 Proyecto Cerrado),.
+Resultado Proyecto SubClassOf daLugarADesarrollo only Desarrollo Tecnologico,.
+Resultado Proyecto SubClassOf daLugarAcuerdo only Acuerdo Exclusividad,.
+Resultado Proyecto SubClassOf esProtegidoPor only Derecho Propiedad Industrial,.
+Resultado Proyecto SubClassOf genera only Conocimiento.
+Reunion is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is (tieneAsistentes exactly 1 Director UAI) and (tieneAsistentes exactly 1 Responsable),.
+Thing, is frecuencia exactly 1 integer.
+Secreto Industrial is Class.
+Secreto Industrial SubClassOf Tipos,.
+Secreto Industrial SubClassOf tieneLicenciaSI exactly 1 Licencia.
+Servicio is Class.
+Servicio SubClassOf Producto.
+Servicio I D i is Class.
+Servicio I D i SubClassOf Servicio.
+Sistema Gestion I D i is Class.
+Sistema Gestion I D i SubClassOf Caracteristicas Centro,.
+Sistema Gestion I D i SubClassOf objetivoSistema exactly 1 Politica I D i.
+Software is Class.
+Software SubClassOf Producto.
+SpinOff is Class.
+SpinOff is equivalent to EBT and (participadaPor some Institucion).
+SpinOff SubClassOf EBT.
+SpinOff DisjointWith StartUp.
+StartUp is Class.
+StartUp is equivalent to EBT and (not (SpinOff)).
+StartUp SubClassOf EBT.
+StartUp DisjointWith SpinOff.
+Tipos is Class.
+Tipos SubClassOf Derecho Propiedad Industrial.
+Transferencia Tecnologica is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is aPartirDeLicencia exactly 1 Licencia.
+UAI is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is tiene some Financiacion UAI,.
+Thing, is organizaEvento only Eventos Difusion,.
+Thing, is tieneUnidades only Unidades UAI,.
+Thing, is UAIDeCentro exactly 1 Centro,.
+Thing, is dirigidaPor exactly 1 Director UAI.
+Unidad Gestion I D i is Class.
+Unidad Gestion I D i SubClassOf Unidades UAI.
+Unidad Gestion I D i DisjointWith Unidad I D i.
+Unidad I D i is Class.
+Unidad I D i SubClassOf Unidades UAI.
+Unidad I D i DisjointWith Unidad Gestion I D i.
+Unidades UAI is Class.
+Unidades UAI is equivalent to Unidad Gestion I D i or Unidad I D i.
+Thing, is www.w3.org/2002/07/#.
+Thing, is perteneceAUAI exactly 1 UAI.
+Viabilidad Técnica is Class.
+Viabilidad Técnica SubClassOf Informe.
+Vigilancia Tecnologica is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is esUna exactly 1 Actividad Innovacion.
+trabajaUAI is Class.
+trabajaUAI is equivalent to Empleado Centro and (trabajaEn exactly 1 UAI).
+trabajaUAI SubClassOf Empleado Centro,.
+trabajaUAI SubClassOf tieneFormacion some Formacion,.
+trabajaUAI SubClassOf jcr exactly 1 double.
+www.w3.org/2002/07/# is Class.
+Centro Sanit1 is Individual.
+Centro Sanit1 Types IIS.
+Empleado1 is Individual.
+Empleado1 Types Empleado.
+EmpresaBT1 is Individual.
+EmpresaBT1 Types StartUp.
+F5 Mercado is Individual.
+F5 Mercado Types F5 Mercado.
+Licencia1 is Individual.
+Licencia1 Types Licencia.
+Patente1 is Individual.
+Patente1 Types PI Concedida,.
+Patente1 Types Patente.
+Proyecto1 is Individual.
+Proyecto1 Types Proyecto Cerrado,.
+Proyecto1 Types Proyecto Investigacion.
+Resultado1 is Individual.
+Resultado1 Types Resultado Proyecto.
+Resultado1 DisjointClasses Actividad Desarrollo,Actividad Innovacion,Actividad Investigacion.
+Resultado1 DisjointClasses Acuerdo Exclusividad,Alianza,Contrato I D i,Contrato Transferencia,Convenio Marco,Donacion,Licencia,MTA,Mecenazgo,NDA.
+Resultado1 DisjointClasses Diseno Industrial,Marca,Modelo Utilidad,Patente.
+Resultado1 DisjointClasses Ensayo,Homologacion,Prototipo.
+Resultado1 DisjointClasses Estudio Mercado,Informe Pantetabilidad,Informe Valor Producto,Viabilidad Técnica.
+Resultado1 DisjointClasses F1 Captacion,F2 Evaluacion,F3 Desarrollo,F4 Transferencia,F5 Mercado.
+Resultado1 DisjointClasses Hardware,Material,Servicio,Software.
+Resultado1 DisjointClasses Hardware,Material,Software.
+Resultado1 DisjointClasses PI Concedida,PI Explotacion,PI Solicitada.
+Resultado1 DisjointClasses Proyecto Activo,Proyecto Cerrado,Proyecto Concedido,Proyecto Denegado,Proyecto Solicitado.
+Resultado1 DisjointClasses Proyecto Desarrollo,Proyecto Innovacion,Proyecto Investigacion.

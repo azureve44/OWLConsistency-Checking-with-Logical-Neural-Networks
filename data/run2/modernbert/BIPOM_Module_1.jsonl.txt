@@ -1,0 +1,102 @@
+ends with is ObjectProperty.
+has input is ObjectProperty.
+has output is ObjectProperty.
+has participant is ObjectProperty.
+has subprocess is ObjectProperty.
+ATP is Class.
+Activation is Class.
+Activation SubClassOf protein modification process,.
+Activation SubClassOf has output some active gene product.
+Biochemical Process is Class.
+Biochemical Process SubClassOf biological process,.
+Biochemical Process SubClassOf has participant only Chemical.
+Biochemical Reaction is Class.
+Biochemical Reaction SubClassOf Biochemical Process.
+C20633 is Class.
+Chemical is Class.
+Metabolic pathway is Class.
+Metabolic pathway SubClassOf C20633,.
+Metabolic pathway SubClassOf metabolic process,.
+Metabolic pathway SubClassOf has subprocess only metabolic process.
+Metabolic reaction is Class.
+Metabolic reaction SubClassOf Biochemical Reaction,.
+Metabolic reaction SubClassOf metabolic process.
+active gene product is Class.
+addition of a chemical group is Class.
+addition of a chemical group SubClassOf post-translational protein modification,.
+addition of a chemical group SubClassOf has output some conjugated protein.
+biological process is Class.
+biological spontaneous process is Class.
+carbamoylated protein is Class.
+cellular protein modification process is Class.
+cellular protein modification process SubClassOf Biochemical Reaction,.
+cellular protein modification process SubClassOf protein modification process.
+conjugated protein is Class.
+enzymatic metabolic reaction is Class.
+enzymatic metabolic reaction SubClassOf Metabolic reaction.
+enzymatic post-translational protein modification is Class.
+enzymatic post-translational protein modification SubClassOf post-translational protein modification.
+mediated addition of a chemical group is Class.
+mediated addition of a chemical group SubClassOf addition of a chemical group.
+metabolic process is Class.
+metabolic process SubClassOf Biochemical Process,.
+metabolic process SubClassOf has input only metabolite,.
+metabolic process SubClassOf has output only metabolite.
+metabolic process DisjointWith protein modification process.
+metabolite is Class.
+post-translational protein modification is Class.
+post-translational protein modification SubClassOf Biochemical Reaction,.
+post-translational protein modification SubClassOf cellular protein modification process,.
+post-translational protein modification SubClassOf protein modification process,.
+post-translational protein modification SubClassOf has output some protein.
+prosthetic group is Class.
+protein is Class.
+protein activation cascade is Class.
+protein activation cascade SubClassOf protein modification pathway,.
+protein activation cascade SubClassOf ends with some Activation.
+protein carbamoylation is Class.
+protein carbamoylation SubClassOf cellular protein modification process,.
+protein carbamoylation SubClassOf spontaneous addition of a chemical group,.
+protein carbamoylation SubClassOf has input only.
+protein carbamoylation SubClassOf (prosthetic group or protein),.
+protein carbamoylation SubClassOf has output only.
+protein carbamoylation SubClassOf (carbamoylated protein or metabolite).
+protein complex assembly is Class.
+protein complex assembly SubClassOf protein complex subunit organization.
+protein complex disassembly is Class.
+protein complex disassembly SubClassOf protein complex subunit organization.
+protein complex subunit organization is Class.
+protein complex subunit organization SubClassOf post-translational protein modification.
+protein glutathionylation is Class.
+protein glutathionylation SubClassOf cellular protein modification process.
+protein maturation is Class.
+protein maturation SubClassOf protein modification process.
+protein maturation by iron-sulfur cluster transfer is Class.
+protein maturation by iron-sulfur cluster transfer SubClassOf protein maturation.
+protein maturation by protein folding is Class.
+protein maturation by protein folding SubClassOf protein maturation.
+protein modification process is Class.
+protein modification process SubClassOf Biochemical Process,.
+protein modification process SubClassOf has input some protein.
+protein modification process DisjointWith metabolic process.
+protein oxidation is Class.
+protein oxidation SubClassOf cellular protein modification process.
+protein phosphorylation is Class.
+protein phosphorylation SubClassOf cellular protein modification process.
+proton is Class.
+removal of a chemical group is Class.
+removal of a chemical group SubClassOf post-translational protein modification.
+spontaneous addition of a chemical group is Class.
+spontaneous addition of a chemical group SubClassOf addition of a chemical group.
+spontaneous metabolic reaction is Class.
+spontaneous metabolic reaction SubClassOf Metabolic reaction,.
+spontaneous metabolic reaction SubClassOf biological spontaneous process.
+transfer of a chemical group is Class.
+transfer of a chemical group SubClassOf post-translational protein modification.
+transfer of a disulfide bond is Class.
+transfer of a disulfide bond SubClassOf transfer of a chemical group.
+protein modification pathway is Class.
+protein modification pathway SubClassOf C20633,.
+protein modification pathway SubClassOf protein modification process,.
+protein modification pathway SubClassOf has subprocess only protein modification process.
+www.w3.org/2002/07/# is Class.

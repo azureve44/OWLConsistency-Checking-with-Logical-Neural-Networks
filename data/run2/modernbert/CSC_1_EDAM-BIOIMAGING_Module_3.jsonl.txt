@@ -1,0 +1,111 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+has topic is ObjectProperty.
+data Time is Class.
+data Time SubClassOf data  R7sy3JByrUsyKaGNYQ1eSQF.
+data Time-lapse data is Class.
+data Time-lapse data SubClassOf data  R7sy3JByrUsyKaGNYQ1eSQF.
+data  R7Xr4YLUfGpHoI3FnAzgMnA is Class.
+data  R7sy3JByrUsyKaGNYQ1eSQF is Class.
+data  R80aNLt4YY02ByptWQa2yrY is Class.
+data  R80aNLt4YY02ByptWQa2yrY SubClassOf data    Image sensor characteristics.
+data  RCMgLYJyn9WJyCc3bA23xT1 is Class.
+data  RCMgLYJyn9WJyCc3bA23xT1 SubClassOf data Time-lapse data.
+data    Image formation characteristics is Class.
+data    Image formation characteristics SubClassOf data  R80aNLt4YY02ByptWQa2yrY.
+data    Image sensor characteristics is Class.
+data    Image sensor characteristics SubClassOf data    Image formation characteristics.
+data    Instrument distortion characteristics is Class.
+data    Instrument distortion characteristics SubClassOf data    Image formation characteristics.
+data    Instrument response function is Class.
+data    Instrument response function SubClassOf data    Image formation characteristics.
+data    Optical transfer function is Class.
+data    Optical transfer function SubClassOf data    Image formation characteristics.
+data    Point spread function is Class.
+data    Point spread function SubClassOf data    Image formation characteristics.
+data    Spatial coordinates is Class.
+data    Spatial coordinates SubClassOf data  R7Xr4YLUfGpHoI3FnAzgMnA.
+format 1915 is Class.
+format img is Class.
+format img SubClassOf format 1915.
+format ims is Class.
+format ims SubClassOf format 1915.
+format ism is Class.
+format ism SubClassOf format 1915.
+format txt is Class.
+format txt SubClassOf format 1915.
+operation 0004 is Class.
+operation 2945 is Class.
+operation 2945 SubClassOf operation 0004.
+operation 3443 is Class.
+operation 3443 SubClassOf operation 2945.
+operation Active contours is Class.
+operation Active contours SubClassOf operation    Model-based segmentation.
+operation Adaptative thresholding is Class.
+operation Adaptative thresholding SubClassOf operation Image thresholding.
+operation Cell tracking is Class.
+operation Cell tracking SubClassOf operation  RDsrmC9l0bZw9kGJzGMCyY8.
+operation Feature extraction is Class.
+operation Homogeneity is Class.
+operation Homogeneity SubClassOf operation Feature extraction.
+operation Image colocalization is Class.
+operation Image colocalization SubClassOf operation   Colocalisation analysis.
+operation Image thresholding is Class.
+operation Image tracking is Class.
+operation Linear transformation is Class.
+operation Linear transformation SubClassOf operation  R8ANfLkuHu47r739AkhxrId.
+operation Object detection is Class.
+operation Particle tracking is Class.
+operation Particle tracking SubClassOf operation  RDsrmC9l0bZw9kGJzGMCyY8.
+operation Particle tracking DisjointWith .
+operation Particle tracking DisjointWith topic Digital histology.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing is www.w3.org/2002/07/#.
+operation Rotation is Class.
+operation Rotation SubClassOf operation  R8ANfLkuHu47r739AkhxrId.
+operation Shape features is Class.
+operation Shape features SubClassOf operation Feature extraction.
+operation Spot extraction is Class.
+operation Spot extraction SubClassOf operation Object detection.
+operation Texture extraction is Class.
+operation Texture extraction SubClassOf operation Feature extraction.
+operation Watershed is Class.
+operation Watershed SubClassOf operation    Region growing.
+operation  R8ANfLkuHu47r739AkhxrId is Class.
+operation  R9Vc5BV3ZMcLHEL6WEceXbY is Class.
+operation  R9Vc5BV3ZMcLHEL6WEceXbY SubClassOf operation  RLtOI0poPsYRHzgXbAcr2E.
+operation  RBUpi1JSczmHQSf8Q8fDzG5 is Class.
+operation  RBUpi1JSczmHQSf8Q8fDzG5 SubClassOf operation Image tracking.
+operation  RBYLqCqN4rP7Jy5m5mxpTeM is Class.
+operation  RBYLqCqN4rP7Jy5m5mxpTeM SubClassOf operation 2945.
+operation  RDggamr21qZlMqkQmyOdC7l is Class.
+operation  RDggamr21qZlMqkQmyOdC7l SubClassOf operation      Sparse annotation.
+operation  RDsrmC9l0bZw9kGJzGMCyY8 is Class.
+operation  RDsrmC9l0bZw9kGJzGMCyY8 SubClassOf operation Image tracking.
+operation  RLtOI0poPsYRHzgXbAcr2E is Class.
+operation   Colocalisation analysis is Class.
+operation   Pixel-based colocalisation is Class.
+operation   Pixel-based colocalisation SubClassOf operation   Colocalisation analysis.
+operation   Trajectory analysis is Class.
+operation   Trajectory analysis SubClassOf operation Image tracking.
+operation   Wound-healing analysis is Class.
+operation   Wound-healing analysis SubClassOf operation Image tracking,.
+operation   Wound-healing analysis SubClassOf has topic some topic Digital histology,.
+operation   Wound-healing analysis SubClassOf has topic only operation Particle tracking.
+operation    Edge detection is Class.
+operation    Edge detection SubClassOf operation Object detection.
+operation    Model-based segmentation is Class.
+operation    Region growing is Class.
+operation     Cell lineage extraction is Class.
+operation     Cell lineage extraction SubClassOf operation Image tracking.
+operation     Ridge detection is Class.
+operation     Ridge detection SubClassOf operation Object detection.
+operation     Velocity extraction is Class.
+operation     Velocity extraction SubClassOf operation Feature extraction.
+operation      Sparse annotation is Class.
+topic Digital histology is Class.
+topic Digital histology DisjointWith operation Particle tracking.
+topic      Stereology is Class.
+topic      Stereology SubClassOf operation Feature extraction.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.

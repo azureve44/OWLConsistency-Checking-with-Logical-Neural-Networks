@@ -1,0 +1,212 @@
+www.w3.org/2000/01/-schema# is Datatype
+dateTime is Datatype
+int is Datatype
+long is Datatype
+string is Datatype
+administratedBy is ObjectProperty
+administratedBy Domain Schema
+Agent is ns.com/foaf/0.1/
+curatedBy is ObjectProperty
+hasAllele is ObjectProperty
+hasAllele Domain Isolate
+hasAllele Range Allele
+hasDefinedAllele is ObjectProperty
+hasDefinedAllele Domain Locus
+hasDefinedAllele Range Allele
+hasLocus is ObjectProperty
+hasRepeat is ObjectProperty
+hasRepeat Domain RepeatProfilePart
+hasRepeat Range SpaRepeat
+hasRepeatProfilePart is ObjectProperty
+hasRepeatProfilePart Domain SpaAllele
+hasRepeatProfilePart Range RepeatProfilePart
+hasSchemaPart is ObjectProperty
+hasSchemaPart Domain Schema
+hasSchemaPart Range SchemaPart
+hasSequence is ObjectProperty
+hasTypingInformation is ObjectProperty
+hasTypingInformation Domain Isolate
+hasTypingInformation Range TypingInformation
+isAssociatedTo is ObjectProperty
+isFromTaxon is ObjectProperty
+isFromTaxon Domain Isolate
+isFromTaxon Range Taxon
+isOfLocus is ObjectProperty
+isOfLocus Domain Allele
+isOfLocus Range Locus
+isOfTaxon is ObjectProperty
+isOfTaxon Domain Locus
+isOfTaxon Range Taxon
+isolatedAt is ObjectProperty
+isolatedAt Domain Isolate
+isolatedAt Range Place
+isolatedOnMaterial is ObjectProperty
+isolatedOnMaterial Domain Isolate
+isolatedOnMaterial Range ENVO_00010483
+isolatedOnSystem is ObjectProperty
+isolatedOnSystem Domain Isolate
+isolatedOnSystem Range ENVO_01000254
+ownedBy is ObjectProperty
+ownedBy Domain Isolate
+Agent is ns.com/foaf/0.1/
+sentBy is ObjectProperty
+sentBy Domain Isolate
+Agent is ns.com/foaf/0.1/
+KreiswirthID is DataProperty
+KreiswirthID Domain SpaRepeat
+KreiswirthID Range string
+PubMedID is DataProperty
+PubMedID Domain Schema
+PubMedID Range string
+RidomId is DataProperty
+RidomId Domain SpaRepeat
+RidomId Range string
+SRAAcession is DataProperty
+SRAAcession Domain Isolate
+SRAAcession Range string
+dateEntered is DataProperty
+file is DataProperty
+file Domain Sequence
+file Range string
+id is DataProperty
+id Domain Allele
+id Range long
+index is DataProperty
+isolateId is DataProperty
+isolateId Domain Isolate
+isolateId Range string
+nrOfRepeats is DataProperty
+nrOfRepeats Domain VNTRAllele
+nrOfRepeats Range int
+nucleotideSequence is DataProperty
+nucleotideSequence Domain Sequence
+nucleotideSequence Range string
+otherId is DataProperty
+otherId Domain Isolate
+otherId Range string
+sampleCollectionDate is DataProperty
+sampleCollectionDate Domain Isolate
+sampleCollectionDate Range dateTime
+schemaName is DataProperty
+schemaName Domain Schema
+schemaName Range string
+sequenceSize is DataProperty
+sequenceSize Domain VNTRAllele
+sequenceSize Range int
+Place is Class
+Thing is www.w3.org/2002/07/#
+BFO_0000001 is Class
+Thing is www.w3.org/2002/07/#
+BFO_0000002 is Class
+BFO_0000002 SubClassOf BFO_0000001
+BFO_0000004 is Class
+BFO_0000004 SubClassOf BFO_0000002
+BFO_0000005 is Class
+BFO_0000005 SubClassOf BFO_0000002
+BFO_0000019 is Class
+BFO_0000031 is Class
+BFO_0000031 SubClassOf BFO_0000005
+BFO_0000040 is Class
+BFO_0000040 SubClassOf BFO_0000004
+ENVO_00010483 is Class
+ENVO_00010483 SubClassOf BFO_0000040
+ENVO_01000254 is Class
+Thing is www.w3.org/2002/07/#
+OBI_0100026 is Class
+OBI_0100026 SubClassOf BFO_0000040
+SO_0000001 is Class
+SO_0000001 SubClassOf BFO_0000031,
+SO_0000001 SubClassOf SO_0000110
+Agent is ns.com/foaf/0.1/
+SO_0000110 is Class
+Thing is www.w3.org/2002/07/#
+SO_0000657 is Class
+SO_0000657 SubClassOf SO_0001411
+SO_0000726 is Class
+SO_0000726 SubClassOf SO_0001411
+SO_0001060 is Class
+Thing is www.w3.org/2002/07/#
+SO_0001411 is Class
+SO_0001411 SubClassOf SO_0000001
+Allele is Class
+Allele SubClassOf SO_0001060,
+Agent, is curatedBy some ns.com/foaf/0.1/
+Agent, is hasSequence some Sequence,
+Agent, is isOfLocus exactly 1 Locus,
+Agent, is dateEntered max 1 dateTime,
+Agent, is id max 1 string
+Isolate is Class
+Isolate SubClassOf OBI_0100026,
+Agent, is curatedBy some ns.com/foaf/0.1/
+Agent, is hasAllele some Allele,
+Agent, is hasSequence some Sequence,
+Agent, is hasTypingInformation some TypingInformation,
+Agent, is isFromTaxon some Taxon,
+Agent, is isolatedAt some Place,
+Agent, is isolatedOnMaterial some ENVO_00010483,
+Agent, is isolatedOnSystem some ENVO_01000254,
+Agent, is ownedBy some ns.com/foaf/0.1/
+Agent, is sentBy some ns.com/foaf/0.1/
+Agent, is sentBy only SO_0000001,
+Agent, is otherId some string,
+Agent, is SRAAcession max 1 string,
+Agent, is dateEntered max 1 dateTime,
+Agent, is isolateId max 1 string,
+Agent, is sampleCollectionDate max 1 dateTime
+Locus is Class
+Locus SubClassOf SO_0000001,
+Locus SubClassOf hasDefinedAllele some Allele,
+Locus SubClassOf isOfTaxon some Taxon,
+Locus SubClassOf dateEntered max 1 dateTime
+RepeatProfilePart is Class
+RepeatProfilePart SubClassOf BFO_0000019,
+RepeatProfilePart SubClassOf hasRepeat some SpaRepeat,
+RepeatProfilePart SubClassOf index some int
+STAllele is Class
+STAllele EquivalentTo SpaAllele
+STAllele SubClassOf Allele
+STAllele DisjointWith VNTRAllele
+STAllele DisjointWith SpaAllele
+Schema is Class
+Schema SubClassOf BFO_0000019,
+Agent, is administratedBy some ns.com/foaf/0.1/
+Agent, is hasSchemaPart some SchemaPart,
+Agent, is PubMedID max 1 string,
+Agent, is schemaName max 1 string
+SchemaPart is Class
+SchemaPart SubClassOf BFO_0000019,
+SchemaPart SubClassOf hasLocus exactly 1 Locus,
+SchemaPart SubClassOf index max 1 int
+Sequence is Class
+Sequence SubClassOf SO_0000001,
+Literal, is file some www.w3.org/2000/01/-schema#
+Literal, is nucleotideSequence some string
+SequenceBasedTypingInformation is Class
+SequenceBasedTypingInformation SubClassOf TypingInformation
+SpaAllele is Class
+SpaAllele EquivalentTo STAllele
+SpaAllele SubClassOf SO_0000657,
+SpaAllele SubClassOf Allele,
+SpaAllele SubClassOf hasRepeatProfilePart some RepeatProfilePart
+SpaAllele DisjointWith VNTRAllele
+SpaAllele DisjointWith STAllele
+SpaRepeat is Class
+SpaRepeat SubClassOf SO_0000726,
+SpaRepeat SubClassOf hasSequence some Sequence,
+SpaRepeat SubClassOf KreiswirthID some string,
+SpaRepeat SubClassOf RidomId some string
+TypingInformation is Class
+TypingInformation SubClassOf BFO_0000019,
+TypingInformation SubClassOf isAssociatedTo some Taxon
+VNTRAllele is Class
+VNTRAllele SubClassOf SO_0000657,
+VNTRAllele SubClassOf Allele,
+VNTRAllele SubClassOf nrOfRepeats exactly 1 int,
+VNTRAllele SubClassOf sequenceSize max 1 int
+VNTRAllele DisjointWith SpaAllele
+VNTRAllele DisjointWith STAllele
+Taxon is Class
+Thing is www.w3.org/2002/07/#
+www.w3.org/2002/07/# is Class
+ns.com/foaf/0.1/ is Class
+ns.com/foaf/0.1/ DisjointWith SO_0000001

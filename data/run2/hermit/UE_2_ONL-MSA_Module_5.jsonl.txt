@@ -1,0 +1,86 @@
+explores is ObjectProperty
+is-a-variable-of is ObjectProperty
+measures is ObjectProperty
+measures Domain instrument-variable
+measures Range quality
+expresses-at is ObjectProperty
+has-for-data-at is ObjectProperty
+has-for-model-acronym is ObjectProperty
+has-for-result-at is ObjectProperty
+is-a-proper-part-of is ObjectProperty
+quality is Class
+age-dependent-variable is Class
+age-dependent-variable SubClassOf instrument-variable
+assessment-instrument is Class
+coded-score is Class
+coded-variable is Class
+coded-variable SubClassOf instrument-variable
+coded-variable-assessment is Class
+coded-variable-assessment SubClassOf variable-assessment,
+coded-variable-assessment SubClassOf has-for-data-at exactly 1 coded-variable,
+coded-variable-assessment SubClassOf has-for-result-at exactly 1 coded-score
+cultural-skill-dependent-variable is Class
+cultural-skill-dependent-variable SubClassOf instrument-variable
+domain is Class
+instrument-based-assessment is Class
+instrument-definition-article is Class
+instrument-definition-article SubClassOf scientific-article,
+instrument-definition-article SubClassOf expresses-at some definition
+instrument-variable is Class
+instrument-variable SubClassOf subject-data-acquisition-artefact,
+instrument-variable SubClassOf proposition,
+instrument-variable SubClassOf has-for-model-acronym some model-acronym,
+instrument-variable SubClassOf has-for-model-acronym only (measures exactly 1 quality),
+instrument-variable SubClassOf explores exactly 1 domain,
+instrument-variable SubClassOf is-a-variable-of exactly 1 assessment-instrument,
+instrument-variable SubClassOf measures exactly 1 quality
+main-variable is Class
+main-variable SubClassOf instrument-variable
+numerical-variable is Class
+numerical-variable SubClassOf instrument-variable
+numerical-variable-assessment is Class
+numerical-variable-assessment SubClassOf variable-assessment
+score is Class
+secondary-variable is Class
+secondary-variable SubClassOf instrument-variable
+sex-dependent-variable is Class
+sex-dependent-variable SubClassOf instrument-variable
+subject-data-acquisition is Class
+subject-data-acquisition-artefact is Class
+variable-assessment is Class
+variable-assessment SubClassOf subject-data-acquisition,
+variable-assessment SubClassOf has-for-result-at min 1 score,
+variable-assessment SubClassOf has-for-data-at exactly 1 instrument-variable,
+variable-assessment SubClassOf is-a-proper-part-of exactly 1 instrument-based-assessment
+definition is Class
+model-acronym is Class
+model-acronym DisjointWith measures exactly 1 quality
+proposition is Class
+scientific-article is Class
+www.w3.org/2002/07/# is Class
+instr-def-article-AITB-1944 is Individual
+instr-def-article-AITB-1944 Types instrument-definition-article
+instr-def-article-BECK-1996 is Individual
+instr-def-article-BECK-1996 Types instrument-definition-article
+instr-def-article-BENTON-1994 is Individual
+instr-def-article-BENTON-1994 Types instrument-definition-article
+instr-def-article-FOLSTEIN-1975 is Individual
+instr-def-article-FOLSTEIN-1975 Types instrument-definition-article
+instr-def-article-GOLDEN-1978 is Individual
+instr-def-article-GOLDEN-1978 Types instrument-definition-article
+instr-def-article-GOODGLASS-1972 is Individual
+instr-def-article-GOODGLASS-1972 Types instrument-definition-article
+instr-def-article-GROBER-1987 is Individual
+instr-def-article-GROBER-1987 Types instrument-definition-article
+instr-def-article-HUGHES-1982 is Individual
+instr-def-article-HUGHES-1982 Types instrument-definition-article
+instr-def-article-KURTZKE-1983 is Individual
+instr-def-article-KURTZKE-1983 Types instrument-definition-article
+instr-def-article-MORRIS-1993 is Individual
+instr-def-article-MORRIS-1993 Types instrument-definition-article
+instr-def-article-PILLON-1981 is Individual
+instr-def-article-PILLON-1981 Types instrument-definition-article
+instr-def-article-REY-1941 is Individual
+instr-def-article-REY-1941 Types instrument-definition-article
+instr-def-article-WECHSLER-1997 is Individual
+instr-def-article-WECHSLER-1997 Types instrument-definition-article

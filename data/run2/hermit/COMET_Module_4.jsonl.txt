@@ -1,0 +1,104 @@
+annual_production is ObjectProperty
+classification is ObjectProperty
+depth is ObjectProperty
+facility_type is ObjectProperty
+located_at_place is ObjectProperty
+ontology_types is ObjectProperty
+operator is ObjectProperty
+plants is ObjectProperty
+production_capacity is ObjectProperty
+products is ObjectProperty
+reserves is ObjectProperty
+well_type is ObjectProperty
+mixins is ObjectProperty
+<https is Class
+<https SubClassOf PhysicalEntity
+Agent is Class
+Mixin is ClassDefinition#
+AutomatedAgent is Class
+AutomatedAgent SubClassOf PhysicalEntity
+Building is Class
+Building SubClassOf Facility,
+Building SubClassOf located_at_place only Place,
+Thing, is located_at_place min 0 www.w3.org/2002/07/#
+Thing is located_at_place max 1 www.w3.org/2002/07/#
+BuiltEnvironmentFeature is Class
+BuiltEnvironmentFeature SubClassOf PhysicalEntity
+BuiltSystem is Class
+Climate is Class
+Climate SubClassOf EnvironmentalSystem
+ClinicalCohort is Class
+ClinicalCohort SubClassOf PhysicalEntity
+Concept is Class
+CountScalar is Class
+CreativeWork is Class
+CreativeWork SubClassOf PhysicalEntity
+ElectricalGrid is Class
+ElectricalGrid SubClassOf BuiltSystem,
+ElectricalGrid SubClassOf plants only PowerPlant,
+Thing is plants min 0 www.w3.org/2002/07/#
+Entity is Class
+EnvironmentalSystem is Class
+Equipment is Class
+Equipment SubClassOf PhysicalEntity
+ExtractiveIndustryFacility is Class
+ExtractiveIndustryFacility SubClassOf Facility,
+ExtractiveIndustryFacility SubClassOf annual_production only SimpleQuantity,
+ExtractiveIndustryFacility SubClassOf facility_type only ExtractiveIndustryFacilityType,
+ExtractiveIndustryFacility SubClassOf operator only Organization,
+ExtractiveIndustryFacility SubClassOf production_capacity only SimpleQuantity,
+ExtractiveIndustryFacility SubClassOf products only ExtractiveIndustryProduct,
+ExtractiveIndustryFacility SubClassOf reserves only SimpleQuantity,
+Thing, is annual_production min 0 www.w3.org/2002/07/#
+Thing, is facility_type min 0 www.w3.org/2002/07/#
+Thing, is operator min 0 www.w3.org/2002/07/#
+Thing, is production_capacity min 0 www.w3.org/2002/07/#
+Thing, is products min 0 www.w3.org/2002/07/#
+Thing, is reserves min 0 www.w3.org/2002/07/#
+Thing, is annual_production max 1 www.w3.org/2002/07/#
+Thing, is facility_type max 1 www.w3.org/2002/07/#
+Thing, is operator max 1 www.w3.org/2002/07/#
+Thing, is production_capacity max 1 www.w3.org/2002/07/#
+Thing is reserves max 1 www.w3.org/2002/07/#
+ExtractiveIndustryFacilityType is Class
+ExtractiveIndustryProduct is Class
+Facility is Class
+Identified is Class
+MiningFacility is Class
+MiningFacility SubClassOf ExtractiveIndustryFacility
+Organization is Class
+Organization SubClassOf PhysicalEntity
+PhysicalDevice is Class
+PhysicalDevice SubClassOf PhysicalEntity
+PhysicalEntity is Class
+PhysicalEntity SubClassOf Entity,
+PhysicalEntity SubClassOf mixins some Identified,
+PhysicalEntity SubClassOf classification only Concept,
+PhysicalEntity SubClassOf ontology_types only Concept,
+Thing, is classification min 0 www.w3.org/2002/07/#
+Thing, is ontology_types min 0 www.w3.org/2002/07/#
+Thing is classification max 1 www.w3.org/2002/07/#
+PhysicalSystem is Class
+PhysicalSystem SubClassOf PhysicalEntity
+Place is Class
+Place SubClassOf PhysicalEntity
+PowerPlant is Class
+PowerPlant SubClassOf Building
+QuarryFacility is Class
+QuarryFacility SubClassOf ExtractiveIndustryFacility
+RawMaterial is Class
+RawMaterial SubClassOf PhysicalEntity
+SampleMaterial is Class
+SampleMaterial SubClassOf PhysicalEntity
+SimpleQuantity is Class
+WellFacility is Class
+WellFacility SubClassOf ExtractiveIndustryFacility,
+WellFacility SubClassOf depth only SimpleQuantity,
+WellFacility SubClassOf well_type only WellType,
+Thing, is depth min 0 www.w3.org/2002/07/#
+Thing, is well_type min 0 www.w3.org/2002/07/#
+Thing, is depth max 1 www.w3.org/2002/07/#
+Thing is well_type max 1 www.w3.org/2002/07/#
+WellType is Class
+ClassDefinition# is Class
+www.w3.org/2002/07/# is Class

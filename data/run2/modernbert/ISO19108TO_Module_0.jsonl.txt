@@ -1,0 +1,185 @@
+TM RelativePosition is Datatype.
+TM RelativePosition is equivalent to {"After" , "Before" , "Begins" , "BegunBy" , "Contains" , "During" , "EndedBy" , "Ends" , "Equals" , "Meets" , "MetBy" , "OverlappedBy" , "Overlaps"}.
+www.w3.org/2000/01/-schema# is Datatype.
+integer is Datatype.
+string is Datatype.
+TM Edge.end is ObjectProperty.
+TM Edge.end Domain TM Edge.
+TM Edge.end Range TM Node.
+TM Edge.end InverseOf TM Node.previousEdge.
+TM Edge.geometry is ObjectProperty.
+TM Edge.geometry Domain TM Edge.
+TM Edge.geometry Range TM Period.
+TM Edge.geometry InverseOf TM Period.topology.
+TM Edge.start is ObjectProperty.
+TM Edge.start Domain TM Edge.
+TM Edge.start Range TM Node.
+TM Edge.start InverseOf TM Node.nextEdge.
+TM Instant.begunBy is ObjectProperty.
+TM Instant.begunBy Domain TM Instant.
+TM Instant.begunBy Range TM Period.
+TM Instant.begunBy InverseOf TM Period.begin.
+TM Instant.endedBy is ObjectProperty.
+TM Instant.endedBy Domain TM Instant.
+TM Instant.endedBy Range TM Period.
+TM Instant.endedBy InverseOf TM Period.end.
+TM Instant.position is ObjectProperty.
+TM Instant.position Domain TM Instant.
+TM Instant.position Range TM Position.
+TM Instant.topology is ObjectProperty.
+TM Instant.topology Domain TM Instant.
+TM Instant.topology Range TM Node.
+TM Instant.topology InverseOf TM Node.geometry.
+TM Node.geometry is ObjectProperty.
+TM Node.geometry Domain TM Node.
+TM Node.geometry Range TM Instant.
+TM Node.geometry InverseOf TM Instant.topology.
+TM Node.nextEdge is ObjectProperty.
+TM Node.nextEdge Domain TM Node.
+TM Node.nextEdge Range TM Edge.
+TM Node.nextEdge InverseOf TM Edge.start.
+TM Node.previousEdge is ObjectProperty.
+TM Node.previousEdge Domain TM Node.
+TM Node.previousEdge Range TM Edge.
+TM Node.previousEdge InverseOf TM Edge.end.
+TM Period.begin is ObjectProperty.
+TM Period.begin Domain TM Period.
+TM Period.begin Range TM Instant.
+TM Period.begin InverseOf TM Instant.begunBy.
+TM Period.end is ObjectProperty.
+TM Period.end Domain TM Period.
+TM Period.end Range TM Instant.
+TM Period.end InverseOf TM Instant.endedBy.
+TM Period.topology is ObjectProperty.
+TM Period.topology Domain TM Period.
+TM Period.topology Range TM Edge.
+TM Period.topology InverseOf TM Edge.geometry.
+TM TopologicalComplex.primitive is ObjectProperty.
+TM TopologicalComplex.primitive Domain TM TopologicalComplex.
+TM TopologicalComplex.primitive Range TM TopologicalPrimitive.
+TM TopologicalComplex.primitive InverseOf TM TopologicalPrimitive.complex.
+TM TopologicalPrimitive.complex is ObjectProperty.
+TM TopologicalPrimitive.complex Domain TM TopologicalPrimitive.
+TM TopologicalPrimitive.complex Range TM TopologicalComplex.
+TM TopologicalPrimitive.complex InverseOf TM TopologicalComplex.primitive.
+TM IntervalLength.factor is DataProperty.
+TM IntervalLength.factor Domain TM IntervalLength.
+TM IntervalLength.factor Range integer.
+TM IntervalLength.radix is DataProperty.
+TM IntervalLength.radix Domain TM IntervalLength.
+TM IntervalLength.radix Range integer.
+TM IntervalLength.unit is DataProperty.
+TM IntervalLength.unit Domain TM IntervalLength.
+TM IntervalLength.unit Range string.
+TM IntervalLength.value is DataProperty.
+TM IntervalLength.value Domain TM IntervalLength.
+TM IntervalLength.value Range integer.
+TM PeriodDuration.days is DataProperty.
+TM PeriodDuration.days Domain TM PeriodDuration.
+TM PeriodDuration.days Range string.
+TM PeriodDuration.designator is DataProperty.
+TM PeriodDuration.designator Domain TM PeriodDuration.
+TM PeriodDuration.designator Range string.
+TM PeriodDuration.hours is DataProperty.
+TM PeriodDuration.hours Domain TM PeriodDuration.
+TM PeriodDuration.hours Range string.
+TM PeriodDuration.minutes is DataProperty.
+TM PeriodDuration.minutes Domain TM PeriodDuration.
+TM PeriodDuration.minutes Range string.
+TM PeriodDuration.months is DataProperty.
+TM PeriodDuration.months Domain TM PeriodDuration.
+TM PeriodDuration.months Range string.
+TM PeriodDuration.seconds is DataProperty.
+TM PeriodDuration.seconds Domain TM PeriodDuration.
+TM PeriodDuration.seconds Range string.
+TM PeriodDuration.timeIndicator is DataProperty.
+TM PeriodDuration.timeIndicator Domain TM PeriodDuration.
+TM PeriodDuration.timeIndicator Range string.
+TM PeriodDuration.years is DataProperty.
+TM PeriodDuration.years Domain TM PeriodDuration.
+TM PeriodDuration.years Range string.
+TM Complex is Class.
+TM Complex SubClassOf TM Object.
+TM Duration is Class.
+Thing is www.w3.org/2002/07/#.
+TM Edge is Class.
+TM Edge SubClassOf TM TopologicalPrimitive,.
+TM Edge SubClassOf TM Edge.end only TM Node,.
+TM Edge SubClassOf TM Edge.geometry only TM Period,.
+TM Edge SubClassOf TM Edge.start only TM Node,.
+Thing, is TM Edge.end exactly 1 www.w3.org/2002/07/#.
+Thing, is TM Edge.start exactly 1 www.w3.org/2002/07/#.
+Thing is TM Edge.geometry max 1 www.w3.org/2002/07/#.
+TM GeometricPrimitive is Class.
+TM GeometricPrimitive SubClassOf TM Primitive,.
+TM GeometricPrimitive SubClassOf TM Separation.
+TM Instant is Class.
+TM Instant SubClassOf TM GeometricPrimitive,.
+TM Instant SubClassOf TM Instant.begunBy only TM Period,.
+TM Instant SubClassOf TM Instant.endedBy only TM Period,.
+TM Instant SubClassOf TM Instant.position only TM Position,.
+TM Instant SubClassOf TM Instant.topology only TM Node,.
+Thing, is TM Instant.position exactly 1 www.w3.org/2002/07/#.
+Thing is TM Instant.topology max 1 www.w3.org/2002/07/#.
+TM IntervalLength is Class.
+TM IntervalLength SubClassOf TM Duration,.
+TM IntervalLength SubClassOf TM IntervalLength.factor only integer,.
+TM IntervalLength SubClassOf TM IntervalLength.radix only integer,.
+TM IntervalLength SubClassOf TM IntervalLength.unit only string,.
+TM IntervalLength SubClassOf TM IntervalLength.value only integer,.
+Literal, is TM IntervalLength.factor exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is TM IntervalLength.radix exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is TM IntervalLength.unit exactly 1 www.w3.org/2000/01/-schema#.
+Literal is TM IntervalLength.value exactly 1 www.w3.org/2000/01/-schema#.
+TM Node is Class.
+TM Node SubClassOf TM TopologicalPrimitive,.
+TM Node SubClassOf TM Node.geometry only TM Instant,.
+TM Node SubClassOf TM Node.nextEdge only TM Edge,.
+TM Node SubClassOf TM Node.previousEdge only TM Edge,.
+Thing is TM Node.geometry max 1 www.w3.org/2002/07/#.
+TM Object is Class.
+Thing is www.w3.org/2002/07/#.
+TM Order is Class.
+Thing is www.w3.org/2002/07/#.
+TM Period is Class.
+TM Period SubClassOf TM GeometricPrimitive,.
+TM Period SubClassOf TM Period.begin only TM Instant,.
+TM Period SubClassOf TM Period.end only TM Instant,.
+TM Period SubClassOf TM Period.topology only TM Edge,.
+Thing, is TM Period.begin exactly 1 www.w3.org/2002/07/#.
+Thing, is TM Period.end exactly 1 www.w3.org/2002/07/#.
+Thing is TM Period.topology max 1 www.w3.org/2002/07/#.
+TM PeriodDuration is Class.
+TM PeriodDuration SubClassOf TM Duration,.
+TM PeriodDuration SubClassOf TM PeriodDuration.days only string,.
+TM PeriodDuration SubClassOf TM PeriodDuration.designator only string,.
+TM PeriodDuration SubClassOf TM PeriodDuration.hours only string,.
+TM PeriodDuration SubClassOf TM PeriodDuration.minutes only string,.
+TM PeriodDuration SubClassOf TM PeriodDuration.months only string,.
+TM PeriodDuration SubClassOf TM PeriodDuration.seconds only string,.
+TM PeriodDuration SubClassOf TM PeriodDuration.timeIndicator only string,.
+TM PeriodDuration SubClassOf TM PeriodDuration.years only string,.
+Literal, is TM PeriodDuration.designator exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is TM PeriodDuration.days max 1 www.w3.org/2000/01/-schema#.
+Literal, is TM PeriodDuration.hours max 1 www.w3.org/2000/01/-schema#.
+Literal, is TM PeriodDuration.minutes max 1 www.w3.org/2000/01/-schema#.
+Literal, is TM PeriodDuration.months max 1 www.w3.org/2000/01/-schema#.
+Literal, is TM PeriodDuration.seconds max 1 www.w3.org/2000/01/-schema#.
+Literal, is TM PeriodDuration.timeIndicator max 1 www.w3.org/2000/01/-schema#.
+Literal is TM PeriodDuration.years max 1 www.w3.org/2000/01/-schema#.
+TM Primitive is Class.
+TM Primitive SubClassOf TM Object,.
+TM Primitive SubClassOf TM Order.
+TM Separation is Class.
+Thing is www.w3.org/2002/07/#.
+TM TopologicalComplex is Class.
+TM TopologicalComplex SubClassOf TM Complex,.
+TM TopologicalComplex SubClassOf TM TopologicalComplex.primitive only TM TopologicalPrimitive,.
+Thing is TM TopologicalComplex.primitive min 1 www.w3.org/2002/07/#.
+TM TopologicalPrimitive is Class.
+TM TopologicalPrimitive SubClassOf TM Primitive,.
+TM TopologicalPrimitive SubClassOf TM TopologicalPrimitive.complex only TM TopologicalComplex,.
+Thing is TM TopologicalPrimitive.complex exactly 1 www.w3.org/2002/07/#.
+TM Position is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.

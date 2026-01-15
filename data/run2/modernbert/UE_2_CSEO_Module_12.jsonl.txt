@@ -1,0 +1,2993 @@
+string is Datatype.
+has disease staging is ObjectProperty.
+has maximum measurement is ObjectProperty.
+has maximum measurement Domain Age.
+has test result is ObjectProperty.
+has test type is ObjectProperty.
+CSEO 00000955 is ObjectProperty.
+CSEO 00000956 is ObjectProperty.
+CSEO 00000964 is ObjectProperty.
+CSEO 00000968 is ObjectProperty.
+CSEO 00000969 is ObjectProperty.
+CSEO 00000975 is ObjectProperty.
+has value is DataProperty.
+Age is Class.
+Age SubClassOf BioMaterialCharacteristics.
+Allele is Class.
+Allele SubClassOf IndividualGeneticCharacteristics.
+BarrierFacility is Class.
+BarrierFacility SubClassOf GrowthCondition.
+Bedding is Class.
+Bedding SubClassOf EnvironmentalHistory.
+BioMaterialCharacteristics is Class.
+BioMaterialCharacteristics SubClassOf CSEO 03000020.
+BioMaterialPurity is Class.
+BioMaterialPurity SubClassOf BioMaterialCharacteristics.
+BioSourceProvider is Class.
+BioSourceProvider SubClassOf BioMaterialCharacteristics.
+BioSourceType is Class.
+BioSourceType SubClassOf BioMaterialCharacteristics.
+Biometrics is Class.
+Biometrics SubClassOf BioMaterialCharacteristics.
+ChromosomalAberrationClassification is Class.
+ChromosomalAberrationClassification SubClassOf BioMaterialCharacteristics.
+ClinicalHistory is Class.
+ClinicalHistory SubClassOf EnvironmentalHistory.
+Compound is Class.
+ConcentrationUnit is Class.
+ConcentrationUnit SubClassOf CSEO 00000000.
+Cultivar is Class.
+Cultivar SubClassOf StrainOrLine.
+DevelopmentalStage is Class.
+DevelopmentalStage SubClassOf BioMaterialCharacteristics.
+DiseaseStaging is Class.
+DiseaseStaging SubClassOf BioMaterialCharacteristics.
+DiseaseState is Class.
+DiseaseState SubClassOf BioMaterialCharacteristics,.
+DiseaseState SubClassOf has disease staging some DiseaseStaging.
+Ecotype is Class.
+Ecotype SubClassOf StrainOrLine.
+EnvironmentalHistory is Class.
+EnvironmentalHistory SubClassOf BioMaterialCharacteristics.
+FamilyHistory is Class.
+FamilyHistory SubClassOf EnvironmentalHistory.
+FeatureShape is Class.
+FeatureShape SubClassOf Morphology.
+Generation is Class.
+Generation SubClassOf EnvironmentalHistory.
+GeneticModification is Class.
+GeneticModification SubClassOf BioMaterialCharacteristics.
+Genotype is Class.
+Genotype SubClassOf IndividualGeneticCharacteristics.
+GeographicLocation is Class.
+GeographicLocation SubClassOf EnvironmentalHistory.
+GrowthCondition is Class.
+GrowthCondition SubClassOf EnvironmentalHistory.
+Haplotype is Class.
+Haplotype SubClassOf IndividualGeneticCharacteristics.
+Histology is Class.
+Histology SubClassOf BioMaterialCharacteristics.
+Host is Class.
+Host SubClassOf EnvironmentalHistory.
+Individual is Class.
+Individual SubClassOf BioMaterialCharacteristics.
+IndividualGeneticCharacteristics is Class.
+IndividualGeneticCharacteristics SubClassOf BioMaterialCharacteristics,.
+IndividualGeneticCharacteristics SubClassOf has value some string.
+LightUnit is Class.
+LightUnit SubClassOf CSEO 00000000.
+MassUnit is Class.
+MassUnit SubClassOf CSEO 00000000.
+Measurement is Class.
+Measurement SubClassOf CSEO 00000000.
+Observation is Class.
+Observation SubClassOf BioMaterialCharacteristics.
+OrganismStatus is Class.
+OrganismStatus SubClassOf BioMaterialCharacteristics.
+OtherUnit is Class.
+OtherUnit SubClassOf CSEO 00000000.
+PathogenTest is Class.
+PathogenTest SubClassOf EnvironmentalHistory.
+Phenotype is Class.
+Phenotype SubClassOf BioMaterialCharacteristics.
+Ploidy is Class.
+Ploidy SubClassOf IndividualGeneticCharacteristics.
+RadiationUnit is Class.
+RadiationUnit SubClassOf CSEO 00000000.
+SamplingTimePoint is Class.
+SamplingTimePoint SubClassOf EnvironmentalHistory.
+Serotype is Class.
+Serotype SubClassOf BioMaterialCharacteristics.
+StrainOrLine is Class.
+StrainOrLine SubClassOf BioMaterialCharacteristics.
+TargetedCellType is Class.
+TargetedCellType SubClassOf BioMaterialCharacteristics.
+TemperatureUnit is Class.
+TemperatureUnit SubClassOf CSEO 00000000.
+Test is Class.
+Test SubClassOf BioMaterialCharacteristics,.
+Test SubClassOf has test result some TestResult,.
+Test SubClassOf has test type some TestType.
+TestResult is Class.
+TestResult SubClassOf BioMaterialCharacteristics.
+TestType is Class.
+TestType SubClassOf BioMaterialCharacteristics.
+TimeUnit is Class.
+TimeUnit SubClassOf CSEO 00000000.
+TumorGrading is Class.
+TumorGrading SubClassOf BioMaterialCharacteristics.
+Unit is Class.
+Unit SubClassOf CSEO 00000000.
+VolumeUnit is Class.
+VolumeUnit SubClassOf CSEO 00000000.
+AV Block Second Degree is Class.
+AV Block Second Degree Mobitz Type II is Class.
+AV Block Second Degree Mobitz Type II SubClassOf AV Block Second Degree.
+AV Mobitz I is Class.
+AV Mobitz I SubClassOf Electrocardiographic Finding.
+AV Mobitz II is Class.
+AV Mobitz II SubClassOf Electrocardiographic Finding.
+Abnormal Bone Marrow Test Result is Class.
+Abnormal Bone Marrow Test Result SubClassOf Abnormal Hematology Test Result.
+Abnormal Hematology Test Result is Class.
+Abnormal Hematology Test Result SubClassOf Hematopoietic System Finding.
+Abnormal Intraventricular Conduction is Class.
+Abnormal Intraventricular Conduction SubClassOf Electrocardiographic Finding.
+Abnormal Pregnancy is Class.
+Abnormal Pregnancy SubClassOf Pregnancy Complication.
+Abortion is Class.
+Abortion SubClassOf Pregnancy Complication.
+Accelerated Idioventricular Rhythm is Class.
+Accelerated Idioventricular Rhythm SubClassOf Electrocardiographic Finding.
+African is Class.
+Akathisia is Class.
+Akathisia SubClassOf Nervous System Finding.
+Alkalosis is Class.
+Alkalosis SubClassOf Fluid and Electrolyte Manifestation.
+Alpha-Mannosidosis is Class.
+Alpha-Mannosidosis SubClassOf Mannosidosis.
+Alteration Of Cognitive Function is Class.
+Alteration Of Cognitive Function SubClassOf Nervous System Finding.
+Ambiguous Genitalia is Class.
+Ambiguous Genitalia SubClassOf Reproductive System Finding.
+Amenorrhea is Class.
+Amenorrhea SubClassOf Menstrual Disorder.
+American College of Cardiology American Heart Association Lesion Complexity Class is Class.
+American College of Cardiology American Heart Association Lesion Complexity Class SubClassOf Cardiovascular System Finding.
+American College of Cardiology American Heart Association Lesion Complexity Score A is Class.
+American College of Cardiology American Heart Association Lesion Complexity Score A SubClassOf American College of Cardiology American Heart Association Lesion Complexity Class.
+American College of Cardiology American Heart Association Lesion Complexity Score B is Class.
+American College of Cardiology American Heart Association Lesion Complexity Score B SubClassOf American College of Cardiology American Heart Association Lesion Complexity Class.
+American College of Cardiology American Heart Association Lesion Complexity Score C is Class.
+American College of Cardiology American Heart Association Lesion Complexity Score C SubClassOf American College of Cardiology American Heart Association Lesion Complexity Class.
+Aneurysm is Class.
+Aneurysm SubClassOf Cardiovascular System Finding.
+Angina is Class.
+Angina SubClassOf Cardiovascular System Signs and Symptoms.
+Angular Pregnancy is Class.
+Angular Pregnancy SubClassOf Pregnancy Complication.
+Anisochromasia is Class.
+Anisochromasia SubClassOf Abnormal Hematology Test Result.
+Anisocytosis is Class.
+Anisocytosis SubClassOf Abnormal Hematology Test Result.
+Anisopoikilocytosis is Class.
+Anisopoikilocytosis SubClassOf Abnormal Hematology Test Result.
+Anomia is Class.
+Anomia SubClassOf Aphasia.
+Anthracosilicosis is Class.
+Anthracosilicosis SubClassOf Pneumoconiosis.
+Antimicrobial Dose Dependent Susceptibility Result is Class.
+Antimicrobial Dose Dependent Susceptibility Result SubClassOf CSEO 03000020.
+Antimicrobial Resistance Result is Class.
+Antimicrobial Resistance Result SubClassOf CSEO 03000020.
+Aortic Aneurysm is Class.
+Aortic Aneurysm SubClassOf Aneurysm.
+Aortic Injury is Class.
+Aortic Injury SubClassOf Cardiovascular Injury.
+Aortic Stenosis is Class.
+Aortic Stenosis SubClassOf Valvular Stenosis.
+Aphasia is Class.
+Aphasia SubClassOf Nervous System Finding.
+Appearance is Class.
+Appearance SubClassOf CSEO 03000020.
+Arctic Slope Corporation is Class.
+Arctic Slope Corporation SubClassOf Inupiat Eskimo.
+Arrhythmia Requiring Therapy is Class.
+Arrhythmia Requiring Therapy SubClassOf Cardiovascular System Finding.
+Arterial Injury is Class.
+Arterial Injury SubClassOf Cardiovascular Injury.
+Asbestosis is Class.
+Asbestosis SubClassOf Pneumoconiosis.
+Atopobium is Class.
+Atopobium SubClassOf Coriobacteriaceae.
+Atopobium minutum is Class.
+Atopobium minutum SubClassOf Atopobium.
+Atopobium parvulum is Class.
+Atopobium parvulum SubClassOf Atopobium.
+Atopy is Class.
+Atopy SubClassOf Immune System Finding.
+Atrial Flutter is Class.
+Atrial Flutter SubClassOf Electrocardiographic Finding.
+Atrial Premature Complex is Class.
+Atrial Premature Complex SubClassOf Electrocardiographic Finding.
+Atrioventricular Dissociation is Class.
+Atrioventricular Dissociation SubClassOf Electrocardiographic Finding.
+Atrioventricular Nodal Reentry Tachycardia is Class.
+Atrioventricular Nodal Reentry Tachycardia SubClassOf Electrocardiographic Finding.
+Atrioventricular Reentrant Tachycardia is Class.
+Atrioventricular Reentrant Tachycardia SubClassOf Electrocardiographic Finding.
+Atypical Coronary Artery Disease Symptom is Class.
+Atypical Coronary Artery Disease Symptom SubClassOf Cardiovascular System Signs and Symptoms.
+Atypical Lipoma is Class.
+Atypical Lipoma SubClassOf Intermediate Lipomatous Neoplasm.
+Atypical Lymphocytes Present is Class.
+Atypical Lymphocytes Present SubClassOf Abnormal Hematology Test Result.
+Axillary Lymph Node Involvement is Class.
+Axillary Lymph Node Involvement SubClassOf Lymph Node Involvement.
+Axillary Lymphadenopathy is Class.
+Axillary Lymphadenopathy SubClassOf Swollen Gland.
+Azospermia is Class.
+Azospermia SubClassOf Sexual Dysfunction and Infertility.
+B-Symptoms is Class.
+B-Symptoms SubClassOf Hematopoietic System Finding.
+BMT Nephropathy is Class.
+BMT Nephropathy SubClassOf Nephropathy.
+Bacteria is Class.
+Baritosis is Class.
+Baritosis SubClassOf Pneumoconiosis.
+Bartholin s Cyst is Class.
+Bartholin s Cyst SubClassOf Reproductive System Finding.
+Basophilia is Class.
+Basophilia SubClassOf Abnormal Hematology Test Result.
+Benign Bone Neoplasm is Class.
+Benign Mixed Tumor of the Vulva is Class.
+Benign Mixed Tumor of the Vulva SubClassOf Benign Vulvar Neoplasm.
+Benign Ovarian Cyst is Class.
+Benign Ovarian Cyst SubClassOf Ovarian Cyst.
+Benign Sertoli Cell Tumor is Class.
+Benign Sertoli Cell Tumor SubClassOf Benign Testicular Neoplasm,.
+Benign Sertoli Cell Tumor SubClassOf Sertoli Cell Tumor.
+Benign Testicular Neoplasm is Class.
+Benign Testicular Sertoli Cell Tumor is Class.
+Benign Testicular Sertoli Cell Tumor SubClassOf Benign Sertoli Cell Tumor.
+Benign Vulvar Neoplasm is Class.
+Best Overall Response is Class.
+Best Overall Response SubClassOf CSEO 03000020.
+Bigeminy is Class.
+Bigeminy SubClassOf Electrocardiographic Finding.
+Birthing Labor is Class.
+Birthing Labor SubClassOf Pregnancy Finding.
+Black is Class.
+Black SubClassOf Color.
+Bladde Anastomotic Leakage is Class.
+Bladde Anastomotic Leakage SubClassOf Urinary Tract Anastomotic Leakage.
+Bladder Neck Stenosis is Class.
+Bladder Neck Stenosis SubClassOf Urinary Tract Stenosis.
+Bladder Obstruction is Class.
+Bladder Obstruction SubClassOf Urinary Tract Obstruction.
+Bladder Perforation is Class.
+Bladder Perforation SubClassOf Urinary Tract Perforation.
+Bladder Spasm is Class.
+Bladder Spasm SubClassOf Urinary Tract Finding.
+Blast Cells Present is Class.
+Blast Cells Present SubClassOf Abnormal Hematology Test Result.
+Blood Cell Count Ratio Measurement is Class.
+Blood Clot is Class.
+Blood Clot SubClassOf Cardiovascular System Finding.
+Blood Loss is Class.
+Blood Loss SubClassOf Fluid and Electrolyte Manifestation.
+Blood Pooling is Class.
+Blood Pooling SubClassOf Cardiovascular System Finding.
+Blood Pressure Finding is Class.
+Blood Pressure Finding SubClassOf Cardiovascular System Finding.
+Blood Stasis is Class.
+Blood Stasis SubClassOf Cardiovascular System Finding.
+Blue is Class.
+Blue SubClassOf Color.
+Body Frame Size is Class.
+Body Frame Size SubClassOf CSEO 00000002.
+Bone Marrow and Blood Involvement is Class.
+Bone Marrow and Blood Involvement SubClassOf Hematopoietic System Finding.
+Borderline QTcB is Class.
+Borderline QTcB SubClassOf Electrocardiographic Finding,.
+Borderline QTcB SubClassOf CSEO 03000020.
+Borderline QTcF is Class.
+Borderline QTcF SubClassOf Electrocardiographic Finding,.
+Borderline QTcF SubClassOf CSEO 03000020.
+Bradycardia is Class.
+Bradycardia SubClassOf Cardiovascular System Signs and Symptoms.
+Bradycardia Arrest is Class.
+Bradycardia Arrest SubClassOf Cardiac Arrest.
+Breast Cyst is Class.
+Breast Cyst SubClassOf Reproductive System Finding.
+Breast Engorgement is Class.
+Breast Engorgement SubClassOf Pregnancy Finding.
+Breast Swelling is Class.
+Breast Swelling SubClassOf Reproductive System Finding.
+Breech Presentation is Class.
+Breech Presentation SubClassOf Pregnancy Complication.
+Broca s Aphasia is Class.
+Broca s Aphasia SubClassOf Aphasia.
+Brown is Class.
+Brown SubClassOf Color.
+Bundle Branch Block is Class.
+Bursitis is Class.
+Bursitis SubClassOf Non-Neoplastic Soft Tissue Disorder.
+C1 Vertebra is Class.
+C1 Vertebra SubClassOf Vertebral Bone.
+CD4 Lymphocytes Decreased is Class.
+CD4 Lymphocytes Decreased SubClassOf Abnormal Hematology Test Result.
+COLD-PCR is Class.
+COLD-PCR SubClassOf Polymerase Chain Reaction.
+Canadian Cardiovascular Society Grading Scale is Class.
+Canadian Cardiovascular Society Grading Scale SubClassOf Cardiovascular System Finding.
+Canadian Cardiovascular Society Grading Scale Class I is Class.
+Canadian Cardiovascular Society Grading Scale Class I SubClassOf Canadian Cardiovascular Society Grading Scale.
+Canadian Cardiovascular Society Grading Scale Class II is Class.
+Canadian Cardiovascular Society Grading Scale Class II SubClassOf Canadian Cardiovascular Society Grading Scale.
+Canadian Cardiovascular Society Grading Scale Class III is Class.
+Canadian Cardiovascular Society Grading Scale Class III SubClassOf Canadian Cardiovascular Society Grading Scale.
+Canadian Cardiovascular Society Grading Scale Class IV is Class.
+Canadian Cardiovascular Society Grading Scale Class IV SubClassOf Canadian Cardiovascular Society Grading Scale.
+Cardiac Arrest is Class.
+Cardiac Arrest SubClassOf Cardiovascular System Finding.
+Cardiac Arrest Arrhythmia Etiology Unknown is Class.
+Cardiac Arrest Arrhythmia Etiology Unknown SubClassOf Cardiac Arrest.
+Cardiac Arrest Prior to Percutaneous Coronary Intervention is Class.
+Cardiac Arrest Prior to Percutaneous Coronary Intervention SubClassOf Cardiac Arrest.
+Cardiac Valve Injury is Class.
+Cardiac Valve Injury SubClassOf Cardiovascular Injury.
+Cardiovascular Injury is Class.
+Cardiovascular Injury SubClassOf Cardiovascular System Finding.
+Cardiovascular Manifestation is Class.
+Cardiovascular Manifestation SubClassOf Cardiovascular System Signs and Symptoms.
+Cardiovascular System Finding is Class.
+Cardiovascular System Finding SubClassOf CSEO 03000020.
+Cardiovascular System Signs and Symptoms is Class.
+Cardiovascular System Signs and Symptoms SubClassOf Cardiovascular System Finding.
+Cast Present Or Absent is Class.
+Cast Present Or Absent SubClassOf Urine Sediment Analysis Measurement.
+Catalepsy is Class.
+Catalepsy SubClassOf Nervous System Finding.
+Cause of Death is Class.
+Cause of Death SubClassOf CSEO 03000020.
+Cells per Milliliter is Class.
+Cells per Milliliter is equivalent to UO 0000201.
+Cellulomonadaceae is Class.
+Cellulomonas is Class.
+Cellulomonas SubClassOf Cellulomonadaceae.
+Cellulomonas hominis is Class.
+Cellulomonas hominis SubClassOf Cellulomonas.
+Central Nervous System Colloid Cyst is Class.
+Central Nervous System Colloid Cyst SubClassOf Central Nervous System Cyst.
+Central Nervous System Cyst is Class.
+Central Nervous System Cyst SubClassOf Nervous System Finding.
+Central Nervous System Epidermoid Cyst is Class.
+Central Nervous System Epidermoid Cyst SubClassOf Central Nervous System Cyst.
+Central Nervous System Necrotic Lesion is Class.
+Central Nervous System Necrotic Lesion SubClassOf Nervous System Finding.
+Central Nervous System Signs and Symptoms is Class.
+Central Nervous System Signs and Symptoms SubClassOf Neurological Signs and Symptoms.
+Cerebral Aneurysm is Class.
+Cerebral Aneurysm SubClassOf Aneurysm.
+Cerebral Cyst is Class.
+Cerebral Cyst SubClassOf Central Nervous System Cyst.
+Cerebral Edema is Class.
+Cerebral Edema SubClassOf Nervous System Finding.
+Cerebral Gray Matter is Class.
+Cerebral Gray Matter SubClassOf Gray Matter.
+Cerebrospinal Fluid Leakage is Class.
+Cerebrospinal Fluid Leakage SubClassOf Nervous System Finding.
+Cervical Change is Class.
+Cervical Change SubClassOf Reproductive System Finding.
+Cervical Lymphadenopathy is Class.
+Cervical Lymphadenopathy SubClassOf Swollen Gland.
+Change in Emotional State is Class.
+Change in Emotional State SubClassOf Nervous System Finding.
+Change in Uterine Shape is Class.
+Change in Uterine Shape SubClassOf Pregnancy Finding.
+Chickenpox is Class.
+Chickenpox SubClassOf Varicella Zoster Infection.
+Childhood Cerebral Astrocytoma is Class.
+Childhood Cerebral Diffuse Astrocytoma is Class.
+Childhood Cerebral Diffuse Astrocytoma SubClassOf Childhood Cerebral Astrocytoma,.
+Childhood Cerebral Diffuse Astrocytoma SubClassOf Diffuse Astrocytoma.
+Chilkoot is Class.
+Chilkoot SubClassOf Tlingit Haida.
+Chlamydia is Class.
+Chlamydia SubClassOf Chlamydiaceae.
+Chlamydia trachomatis is Class.
+Chlamydia trachomatis SubClassOf Chlamydia.
+Chlamydiaceae is Class.
+Chlamydophila is Class.
+Chlamydophila psittaci is Class.
+Chlamydophila psittaci SubClassOf Chlamydophila.
+Choroid Plexus Cyst is Class.
+Choroid Plexus Cyst SubClassOf Central Nervous System Cyst.
+Chromosome Banding is Class.
+Chronic Bronchitis is Class.
+Chronic Kidney Disease is Class.
+Chronic Lung Disorder is Class.
+Chronic Peritoneal Effusion is Class.
+Chronic Peritoneal Effusion SubClassOf Peritoneal Effusion.
+Chronic Renal Failure is Class.
+Chronic Renal Failure SubClassOf Chronic Kidney Disease,.
+Chronic Renal Failure SubClassOf Renal Failure.
+Chronic Total Coronary Artery Occlusion is Class.
+Chronic Total Coronary Artery Occlusion SubClassOf Chronic Total Occlusion Vessel.
+Chronic Total Occlusion Vessel is Class.
+Chryseomonas is Class.
+Chryseomonas SubClassOf Pseudomonadaceae.
+Chylothorax is Class.
+Circumflex Branch of the Left Coronary Artery is Class.
+Circumflex Branch of the Left Coronary Artery SubClassOf Left Coronary Artery Branch.
+Circumscribed Storiform Collagenoma is Class.
+Circumscribed Storiform Collagenoma SubClassOf Collagen Nevus.
+Clonic Convulsion is Class.
+Clonic Convulsion SubClassOf Neurological Signs and Symptoms.
+Clonus is Class.
+Clonus SubClassOf Neurological Signs and Symptoms.
+Co-Dominant Artery is Class.
+Co-Dominant Artery SubClassOf Coronary Artery Dominance.
+Coal Miner s Pneumoconiosis is Class.
+Coal Miner s Pneumoconiosis SubClassOf Pneumoconiosis.
+Collagen Nevus is Class.
+Colon Inflammatory Polyp is Class.
+Colon Inflammatory Polyp SubClassOf Colorectal Inflammatory Polyp.
+Color is Class.
+Color SubClassOf Appearance.
+Colorectal Inflammatory Polyp is Class.
+Colposcopy is Class.
+Colposcopy SubClassOf Endoscopy.
+Confusion is Class.
+Confusion SubClassOf Nervous System Finding.
+Congenital Chylothorax is Class.
+Congenital Chylothorax SubClassOf Chylothorax.
+Congenital Kyphosis is Class.
+Congenital Kyphosis SubClassOf Kyphosis.
+Conscious State is Class.
+Conscious State SubClassOf Level of Consciousness.
+Core Biopsy is Class.
+Core Biopsy SubClassOf Needle Biopsy.
+Core Biopsy of Pancreas is Class.
+Core Biopsy of Pancreas SubClassOf Core Biopsy.
+Coriobacteriaceae is Class.
+Cornual Pregnancy is Class.
+Cornual Pregnancy SubClassOf Pregnancy Complication.
+Coronary Anomaly is Class.
+Coronary Anomaly SubClassOf Cardiovascular System Finding.
+Coronary Artery Dominance is Class.
+Coronary Artery Dominance SubClassOf Cardiovascular System Finding.
+Coronary Artery Number of Diseased Vessels Excludes Left Main Disease is Class.
+Coronary Artery Number of Diseased Vessels Excludes Left Main Disease SubClassOf Coronary Artery Stenosis.
+Coronary Artery Right Dominance is Class.
+Coronary Artery Right Dominance SubClassOf Coronary Artery Dominance.
+Coronary Artery Stenosis is Class.
+Coronary Artery Stenosis SubClassOf Cardiovascular System Finding.
+Coronary Calcium Score is Class.
+Coronary Calcium Score SubClassOf Cardiovascular System Finding.
+Coronary Culprit Lesion is Class.
+Coronary Culprit Lesion SubClassOf Cardiovascular System Finding.
+Coronary Lesion Complexity is Class.
+Coronary Lesion Complexity SubClassOf Cardiovascular System Finding.
+Coronary Lesions Treated is Class.
+Coronary Lesions Treated SubClassOf Cardiovascular System Finding.
+Coronary Vasospasm is Class.
+Coronary Vasospasm SubClassOf Vasoconstriction.
+Coronary Vessel Bifurcation Lesion is Class.
+Coronary Vessel Bifurcation Lesion SubClassOf Coronary Vessel Lesion.
+Coronary Vessel Lesion is Class.
+Coronary Vessel Lesion SubClassOf Cardiovascular System Finding.
+Corrected QT Interval is Class.
+Corrected QT Interval SubClassOf Electrocardiographic Finding.
+Cow is Class.
+Cow SubClassOf CSEO 00000938.
+Craig is Class.
+Craig SubClassOf Tlingit Haida.
+Craving is Class.
+Craving SubClassOf Nervous System Finding.
+Crohn s Disease is Class.
+Crohn s Disease of Small Intestine is Class.
+Crohn s Disease of Small Intestine SubClassOf Crohn s Disease.
+Crohn s Ileitis is Class.
+Crohn s Ileitis SubClassOf Crohn s Disease of Small Intestine.
+Culture Procedure is Class.
+Cupriavidus is Class.
+Cupriavidus pauculus is Class.
+Cupriavidus pauculus SubClassOf Cupriavidus.
+Cushing s Syndrome is Class.
+Cushing s Syndrome SubClassOf Endocrine Syndrome.
+Cusp Tear is Class.
+Cusp Tear SubClassOf Valvular Heart Disorder.
+Cutaneous Fibrous Histiocytoma is Class.
+Cutaneous Fibrous Histiocytoma Histiocytic Variant is Class.
+Cutaneous Fibrous Histiocytoma Histiocytic Variant SubClassOf Cutaneous Fibrous Histiocytoma.
+Cystinosis is Class.
+Cystinosis SubClassOf Non-Neoplastic Renal Disorder.
+Cytogenetic Analysis is Class.
+Cytopenia is Class.
+Cytopenia SubClassOf Abnormal Hematology Test Result.
+DNA Analysis is Class.
+Dakota is Class.
+Damage Of Vaginal Mucosa is Class.
+Damage Of Vaginal Mucosa SubClassOf Reproductive System Finding.
+Death is Class.
+Death SubClassOf CSEO 00000000.
+Decreased Sperm Count is Class.
+Decreased Sperm Count SubClassOf Reproductive System Finding.
+Dehydration is Class.
+Dehydration SubClassOf Fluid and Electrolyte Manifestation.
+Delayed Puberty is Class.
+Delayed Puberty SubClassOf Reproductive System Finding.
+Depressed Level Of Consciousness is Class.
+Depressed Level Of Consciousness SubClassOf Level of Consciousness.
+Depth is Class.
+Depth SubClassOf Morphology.
+Dermatopathic Lymphadenopathy is Class.
+Dermatopathic Lymphadenopathy SubClassOf Swollen Gland.
+Desulfovibrio is Class.
+Desulfovibrio piger is Class.
+Desulfovibrio piger SubClassOf Desulfovibrio.
+Diagnosis Group is Class.
+Diagnosis Group SubClassOf CSEO 00000782.
+Diameter is Class.
+Diastolic Dysfunction is Class.
+Diastolic Dysfunction SubClassOf Cardiovascular System Finding.
+Diffuse Astrocytoma is Class.
+Diffusion MRI is Class.
+Diffusion MRI SubClassOf Magnetic Resonance Imaging.
+Diminished Pulse is Class.
+Diminished Pulse SubClassOf Cardiovascular System Finding.
+Dissecting Aneurysm is Class.
+Dissecting Aneurysm SubClassOf Aneurysm.
+Dizziness is Class.
+Dizziness SubClassOf Neurological Signs and Symptoms.
+Dysmenorrhea is Class.
+Dysmenorrhea SubClassOf Menstrual Disorder.
+Dyspareunia is Class.
+Dyspareunia SubClassOf Reproductive System Finding.
+Dysphasia is Class.
+Dysphasia SubClassOf Nervous System Finding.
+Dysuria is Class.
+Dysuria SubClassOf Urinary Tract Finding.
+ECG Delta Wave is Class.
+ECG Delta Wave SubClassOf Electrocardiographic Finding.
+EKG Finding Acute Anterior Wall Myocardial Infarction is Class.
+EKG Finding Acute Anterior Wall Myocardial Infarction SubClassOf Electrocardiographic Finding.
+EKG Finding Acute Inferior Wall Myocardial Infarction is Class.
+EKG Finding Acute Inferior Wall Myocardial Infarction SubClassOf Electrocardiographic Finding.
+EKG Finding Acute Lateral Wall Myocardial Infarction is Class.
+EKG Finding Acute Lateral Wall Myocardial Infarction SubClassOf Electrocardiographic Finding.
+EKG Finding Acute Posterior Wall Myocardial Infarction is Class.
+EKG Finding Acute Posterior Wall Myocardial Infarction SubClassOf Electrocardiographic Finding.
+EKG Finding Anterior Wall Myocardial Infarction is Class.
+EKG Finding Anterior Wall Myocardial Infarction SubClassOf Electrocardiographic Finding.
+EKG Finding Atrial Enlargement is Class.
+EKG Finding Atrial Enlargement SubClassOf Electrocardiographic Finding.
+EKG Finding Inferior Wall Myocardial Infarction is Class.
+EKG Finding Inferior Wall Myocardial Infarction SubClassOf Electrocardiographic Finding.
+EKG Finding Lateral Wall Myocardial Infarction is Class.
+EKG Finding Lateral Wall Myocardial Infarction SubClassOf Electrocardiographic Finding.
+EKG Finding Posterior Wall Myocardial Infarction is Class.
+EKG Finding Posterior Wall Myocardial Infarction SubClassOf Electrocardiographic Finding.
+EKG Finding Septal Myocardial Infarction is Class.
+EKG Finding Septal Myocardial Infarction SubClassOf Electrocardiographic Finding.
+EKG Finding Ventricular Hypertrophy is Class.
+EKG Finding Ventricular Hypertrophy SubClassOf Electrocardiographic Finding.
+EKG Normal Axis Deviation is Class.
+EKG Normal Axis Deviation SubClassOf Electrocardiographic Finding.
+EKG ST Segment Depression is Class.
+EKG ST Segment Depression SubClassOf Electrocardiographic Finding.
+EKG ST Segment Elevation is Class.
+EKG ST Segment Elevation SubClassOf Electrocardiographic Finding.
+Early Pregnancy Symptom is Class.
+Early Pregnancy Symptom SubClassOf Pregnancy Finding.
+Early R Wave Progression is Class.
+Early R Wave Progression SubClassOf Electrocardiographic Finding.
+Ectopic Atrial Rhythm is Class.
+Ectopic Atrial Rhythm SubClassOf Electrocardiographic Finding.
+Ectopic Supraventricular Rhythm is Class.
+Ectopic Supraventricular Rhythm SubClassOf Electrocardiographic Finding.
+Ectopic Ventricular Rhythm is Class.
+Ectopic Ventricular Rhythm SubClassOf Electrocardiographic Finding.
+Effusion is Class.
+Effusion SubClassOf Fluid and Electrolyte Manifestation.
+Eggerthella is Class.
+Eggerthella lenta is Class.
+Eggerthella lenta SubClassOf Eggerthella.
+Ejection Fraction Decreased is Class.
+Ejection Fraction Decreased SubClassOf Cardiovascular System Finding.
+Electrical Alternans is Class.
+Electrical Alternans SubClassOf Electrocardiographic Finding.
+Electro-Mechanical Dissociation is Class.
+Electro-Mechanical Dissociation SubClassOf Cardiovascular System Finding.
+Electrocardiogram QRS Complex Shortened is Class.
+Electrocardiogram QRS Complex Shortened SubClassOf Electrocardiographic Finding.
+Electrocardiographic Change is Class.
+Electrocardiographic Change SubClassOf Electrocardiographic Finding.
+Electrocardiographic Finding is Class.
+Electrocardiographic Finding SubClassOf Cardiovascular System Finding.
+Electrolyte Imbalance is Class.
+Electrolyte Imbalance SubClassOf Fluid and Electrolyte Manifestation.
+Elliptocytosis is Class.
+Elliptocytosis SubClassOf Abnormal Hematology Test Result.
+Endocrine Syndrome is Class.
+Endodermal Cyst is Class.
+Endodermal Cyst SubClassOf Central Nervous System Cyst.
+Endoscopy is Class.
+Enlarged Uterus is Class.
+Enlarged Uterus SubClassOf Pregnancy Finding.
+Eosinophilia is Class.
+Eosinophilia SubClassOf Abnormal Hematology Test Result.
+Ependymal Cyst is Class.
+Ependymal Cyst SubClassOf Central Nervous System Cyst.
+Euphoria is Class.
+Euphoria SubClassOf Nervous System Finding.
+Exit Block is Class.
+Exit Block SubClassOf Sinus Node Dysfunction.
+Extensive Bone Marrow and Blood Involvement is Class.
+Extensive Bone Marrow and Blood Involvement SubClassOf Bone Marrow and Blood Involvement.
+Fallopian Tube Anastomotic Leakage is Class.
+Fallopian Tube Anastomotic Leakage SubClassOf Reproductive Anastomotic Leakage.
+Fallopian Tube Obstruction is Class.
+Fallopian Tube Obstruction SubClassOf Reproductive System Obstruction.
+Fallopian Tube Perforation is Class.
+Fallopian Tube Perforation SubClassOf Reproductive System Perforation.
+Fallopian Tube Stenosis is Class.
+Fallopian Tube Stenosis SubClassOf Reproductive System Stenosis.
+False Labor is Class.
+False Labor SubClassOf Pregnancy Finding.
+Fasciculation is Class.
+Fasciculation SubClassOf Nervous System Finding.
+Fetal Heart Rhythm is Class.
+Fetal Heart Rhythm SubClassOf Heart Rhythm.
+Fibrolipoma is Class.
+Fibrolipoma SubClassOf Lipoma.
+First Movement is Class.
+First Movement SubClassOf Pregnancy Finding.
+First Trimester Bleeding is Class.
+First Trimester Bleeding SubClassOf Reproductive System Hemorrhage.
+Fixation is Class.
+Fixation SubClassOf Tissue Processing Technique.
+Fluid and Electrolyte Manifestation is Class.
+Fluid and Electrolyte Manifestation SubClassOf Cardiovascular System Finding.
+Food Craving is Class.
+Food Craving SubClassOf Craving.
+Foot Digit 5 Phalanx is Class.
+Foot Digit 5 Phalanx SubClassOf Foot Phalanx.
+Foot Phalanx is Class.
+Found Dead is Class.
+Found Dead SubClassOf CSEO 03000020.
+Furunculosis is Class.
+Furunculosis SubClassOf Skin Infection.
+Gel Electrophoresis is Class.
+Gelatin Zymography is Class.
+Gelatin Zymography SubClassOf Sodium Dodecylsulfate-Polyacrylamide Gel Electrophoresis.
+General Disorders and Administration Site Conditions Class is Class.
+General Disorders and Administration Site Conditions Class SubClassOf CSEO 00000000.
+Globus Hystericus is Class.
+Globus Hystericus SubClassOf Hysteria.
+Grade III Vesicoureteral Reflux is Class.
+Grade III Vesicoureteral Reflux SubClassOf Vesicoureteral Reflux.
+Grade II Vesicoureteral Reflux is Class.
+Grade II Vesicoureteral Reflux SubClassOf Vesicoureteral Reflux.
+Grade IV Vesicoureteral Reflux is Class.
+Grade IV Vesicoureteral Reflux SubClassOf Vesicoureteral Reflux.
+Grade I Vesicoureteral Reflux is Class.
+Grade I Vesicoureteral Reflux SubClassOf Vesicoureteral Reflux.
+Grade V Vesicoureteral Reflux is Class.
+Grade V Vesicoureteral Reflux SubClassOf Vesicoureteral Reflux.
+Granulosa Cell Tumor is Class.
+Gravid Uterus is Class.
+Gravid Uterus SubClassOf Reproductive System Finding.
+Gray Color is Class.
+Gray Color SubClassOf Color.
+Gray Matter is Class.
+Great Vessel Perforation is Class.
+Great Vessel Perforation SubClassOf Vessel Perforation.
+Green is Class.
+Green SubClassOf Color.
+Guidewire Across Lesion is Class.
+Guidewire Across Lesion SubClassOf Cardiovascular System Finding.
+Hair Coat Color is Class.
+Hair Coat Color SubClassOf Appearance.
+Headache is Class.
+Headache SubClassOf Neurological Signs and Symptoms.
+Heart Block is Class.
+Heart Block SubClassOf Electrocardiographic Finding.
+Heart Injury is Class.
+Heart Injury SubClassOf Cardiovascular Injury.
+Heart Murmur is Class.
+Heart Murmur SubClassOf Cardiovascular System Signs and Symptoms.
+Heart Rhythm is Class.
+Heart Rhythm SubClassOf Cardiovascular System Finding.
+Hematopoietic System Finding is Class.
+Hematopoietic System Finding SubClassOf CSEO 03000020.
+Hematosalpinx is Class.
+Hematosalpinx SubClassOf Reproductive System Hemorrhage.
+Hematospermia is Class.
+Hematospermia SubClassOf Reproductive System Finding.
+Hemoconcentration is Class.
+Hemoconcentration SubClassOf Fluid and Electrolyte Manifestation.
+Hemolysis is Class.
+Hemolysis SubClassOf Abnormal Hematology Test Result.
+Hemolytic Disease of the Newborn is Class.
+Hemolytic Disease of the Newborn SubClassOf Pregnancy Complication.
+Hemorrhagic Complication of Pregnancy is Class.
+Hemorrhagic Complication of Pregnancy SubClassOf Pregnancy Complication.
+High Blood Oxygen Saturation is Class.
+High Blood Oxygen Saturation SubClassOf Fluid and Electrolyte Manifestation.
+High Pulmonary Arterial Wedge Pressure is Class.
+High Pulmonary Arterial Wedge Pressure SubClassOf Cardiovascular System Finding.
+High Risk Pregnancy is Class.
+High Risk Pregnancy SubClassOf Pregnancy Complication.
+Hirsutism is Class.
+Hirsutism SubClassOf Reproductive System Finding.
+Homozygous Hemoglobin C or E Non-disease is Class.
+Homozygous Hemoglobin C or E Non-disease SubClassOf Abnormal Hematology Test Result.
+Hyperactivity is Class.
+Hyperactivity SubClassOf Nervous System Finding.
+Hyperdynamic Ventricular Ejection Fraction is Class.
+Hyperdynamic Ventricular Ejection Fraction SubClassOf Cardiovascular System Finding.
+Hyperemesis Gravidarum is Class.
+Hyperemesis Gravidarum SubClassOf Pregnancy Complication.
+Hyperparathyroidism is Class.
+Hypersplenism is Class.
+Hypersplenism SubClassOf Hematopoietic System Finding.
+Hypertension is Class.
+Hypertension SubClassOf Blood Pressure Finding.
+Hypervolemia is Class.
+Hypervolemia SubClassOf Fluid and Electrolyte Manifestation.
+Hypomenorrhea is Class.
+Hypomenorrhea SubClassOf Menstrual Disorder.
+Hypotension is Class.
+Hypotension SubClassOf Blood Pressure Finding.
+Hypovolemia is Class.
+Hypovolemia SubClassOf Fluid and Electrolyte Manifestation.
+Hysteria is Class.
+Hysteria SubClassOf Nervous System Finding.
+Idioventricular Rhythm is Class.
+Idioventricular Rhythm SubClassOf Cardiovascular System Finding.
+Immature Granulocytes in Peripheral Blood Increased is Class.
+Immature Granulocytes in Peripheral Blood Increased SubClassOf Abnormal Hematology Test Result.
+Immature Granulocytes in Peripheral Blood Under 10 Percent is Class.
+Immature Granulocytes in Peripheral Blood Under 10 Percent SubClassOf Abnormal Hematology Test Result.
+Immune System Finding is Class.
+Immune System Finding SubClassOf CSEO 03000020.
+Immunodeficiency is Class.
+Immunodeficiency SubClassOf Immune System Finding.
+Impaired Circulation is Class.
+Impaired Circulation SubClassOf Cardiovascular System Finding.
+In Hospital Cardiac Arrest is Class.
+In Hospital Cardiac Arrest SubClassOf Cardiac Arrest.
+Incompetent Cervix is Class.
+Incompetent Cervix SubClassOf Pregnancy Complication.
+Incontinence Urinary is Class.
+Incontinence Urinary SubClassOf Urinary Tract Finding.
+Indication is Class.
+Indication SubClassOf CSEO 03000020.
+Ineffective Hematopoiesis Present is Class.
+Ineffective Hematopoiesis Present SubClassOf Abnormal Hematology Test Result.
+Infertility is Class.
+Infertility SubClassOf Sexual Dysfunction and Infertility.
+Injury to Inferior Vena Cava is Class.
+Injury to Inferior Vena Cava SubClassOf Cardiovascular Injury.
+Injury to Jugular Vein is Class.
+Injury to Jugular Vein SubClassOf Cardiovascular Injury.
+Injury to Superior Vena Cava is Class.
+Injury to Superior Vena Cava SubClassOf Cardiovascular Injury.
+Inserted During Procedure and After Percutaneous Coronary Intervention Began is Class.
+Inserted During Procedure and After Percutaneous Coronary Intervention Began SubClassOf Cardiovascular System Finding.
+Inserted During a Non-Percutaneous Coronary Intervention is Class.
+Inserted During a Non-Percutaneous Coronary Intervention SubClassOf Cardiovascular System Finding.
+Inserted During a Procedure but Prior to Percutaneous Coronary Intervention is Class.
+Inserted During a Procedure but Prior to Percutaneous Coronary Intervention SubClassOf Cardiovascular System Finding.
+Intermediate Lipomatous Neoplasm is Class.
+Intra-Atrial Conduction Delay is Class.
+Intra-Atrial Conduction Delay SubClassOf Electrocardiographic Finding.
+Intracranial Aneurysm is Class.
+Intracranial Aneurysm SubClassOf Aneurysm.
+Intracranial Colloid Cyst is Class.
+Intracranial Colloid Cyst SubClassOf Central Nervous System Cyst.
+Intracranial Hypertension is Class.
+Intracranial Hypertension SubClassOf Nervous System Finding.
+Intraspinal Cyst is Class.
+Intraspinal Cyst SubClassOf Central Nervous System Cyst.
+Inupiat Eskimo is Class.
+Irregular Menstruation is Class.
+Irregular Menstruation SubClassOf Menstrual Disorder.
+Irregular Pulse is Class.
+Irregular Pulse SubClassOf Cardiovascular System Finding.
+Irritability is Class.
+Irritability SubClassOf Nervous System Finding.
+Ischemia is Class.
+Ischemia SubClassOf Cardiovascular System Finding.
+Ischemic Myocardium is Class.
+Ischemic Myocardium SubClassOf Cardiovascular System Finding.
+Ischemic Myocardium Percentage is Class.
+Ischemic Myocardium Percentage SubClassOf Ischemic Myocardium.
+Isorhythmic Atrioventricular Dissociation is Class.
+Isorhythmic Atrioventricular Dissociation SubClassOf Electrocardiographic Finding.
+J Point Elevation is Class.
+J Point Elevation SubClassOf Electrocardiographic Finding.
+Joint Effusion is Class.
+Joint Effusion SubClassOf Effusion.
+Junctional Bradycardia is Class.
+Junctional Bradycardia SubClassOf Electrocardiographic Finding.
+Junctional Rhythm is Class.
+Junctional Rhythm SubClassOf Electrocardiographic Finding.
+Juvenile Granulosa Cell Tumor is Class.
+Juvenile Granulosa Cell Tumor SubClassOf Granulosa Cell Tumor.
+Juvenile Type Ovarian Granulosa Cell Tumor is Class.
+Juvenile Type Ovarian Granulosa Cell Tumor SubClassOf Juvenile Granulosa Cell Tumor.
+Kaolin Pneumoconiosis is Class.
+Kaolin Pneumoconiosis SubClassOf Pneumoconiosis.
+Karyotyping is Class.
+Karyotyping SubClassOf Cytogenetic Analysis.
+Kidney Anastomotic Leakage is Class.
+Kidney Anastomotic Leakage SubClassOf Urinary Tract Anastomotic Leakage.
+Kidney Perforation is Class.
+Kidney Perforation SubClassOf Urinary Tract Perforation.
+Killip Class is Class.
+Killip Class SubClassOf Cardiovascular System Finding.
+Killip Class I is Class.
+Killip Class I SubClassOf Killip Class.
+Killip Class II is Class.
+Killip Class II SubClassOf Killip Class.
+Killip Class III is Class.
+Killip Class III SubClassOf Killip Class.
+Killip Class IV is Class.
+Killip Class IV SubClassOf Killip Class.
+Known Bone Marrow Involvement is Class.
+Known Bone Marrow Involvement SubClassOf Hematopoietic System Finding.
+Kyphosis is Class.
+Labor and Delivery Complication is Class.
+Labor and Delivery Complication SubClassOf Pregnancy Complication.
+Laboratory Test Original Result is Class.
+Laboratory Test Original Result SubClassOf CSEO 03000020.
+Lactating is Class.
+Lactating SubClassOf Lactation Status.
+Lactation Status is Class.
+Lactation Status SubClassOf Reproductive System Finding.
+Lactobacillus is Class.
+Lactobacillus johnsonii is Class.
+Lactobacillus johnsonii SubClassOf Lactobacillus.
+Lake Traverse Sioux is Class.
+Lake Traverse Sioux SubClassOf Dakota.
+Large for Gestational Age is Class.
+Large for Gestational Age SubClassOf Pregnancy Complication.
+Laryngeal Web is Class.
+Laryngeal Web SubClassOf Non-Neoplastic Laryngeal Disorder.
+Laryngoscopy is Class.
+Last Menstrual Period is Class.
+Last Menstrual Period SubClassOf Reproductive System Finding.
+Late Pregnancy Bleeding is Class.
+Late Pregnancy Bleeding SubClassOf Pregnancy Complication.
+Left Atrium Dimension is Class.
+Left Atrium Dimension SubClassOf Cardiovascular System Finding.
+Left Bundle Branch Block is Class.
+Left Bundle Branch Block SubClassOf Bundle Branch Block.
+Left Cardiac Artery Dominance is Class.
+Left Cardiac Artery Dominance SubClassOf Coronary Artery Dominance.
+Left Cardiac Ventricular Systolic Dysfunction is Class.
+Left Cardiac Ventricular Systolic Dysfunction SubClassOf Left Ventricular Dysfunction.
+Left Coronary Artery Branch is Class.
+Left Main Coronary Artery Stenosis is Class.
+Left Main Coronary Artery Stenosis SubClassOf Coronary Artery Stenosis.
+Left Ventricle Dimension at End-Diastole is Class.
+Left Ventricle Dimension at End-Diastole SubClassOf Cardiovascular System Finding.
+Left Ventricular Conduction Delay is Class.
+Left Ventricular Conduction Delay SubClassOf Electrocardiographic Finding.
+Left Ventricular Dimension at End-Systole is Class.
+Left Ventricular Dimension at End-Systole SubClassOf Cardiovascular System Finding.
+Left Ventricular Dysfunction is Class.
+Left Ventricular Dysfunction SubClassOf Cardiovascular System Finding.
+Left Ventricular Hypertrophy is Class.
+Left Ventricular Hypertrophy SubClassOf Cardiovascular System Finding.
+Length is Class.
+Length SubClassOf CSEO 00000002.
+Lentigo is Class.
+Lentigo Simplex is Class.
+Lentigo Simplex SubClassOf Lentigo.
+Lethargy is Class.
+Lethargy SubClassOf Neurological Signs and Symptoms.
+Leuconostoc is Class.
+Leuconostoc citreum is Class.
+Leuconostoc citreum SubClassOf Leuconostoc.
+Leukemia Antiquated is Class.
+Leukemoid Reaction is Class.
+Leukemoid Reaction SubClassOf Abnormal Hematology Test Result.
+Leukoerythroblastic Reaction is Class.
+Leukoerythroblastic Reaction SubClassOf Abnormal Hematology Test Result.
+Leukoerythroblastosis is Class.
+Leukoerythroblastosis SubClassOf Abnormal Hematology Test Result.
+Level of Consciousness is Class.
+Level of Consciousness SubClassOf Nervous System Finding.
+Lhermitte s Sign is Class.
+Lhermitte s Sign SubClassOf Neurological Signs and Symptoms.
+Lipoma is Class.
+Location is Class.
+Location SubClassOf CSEO 00000000.
+Loss Of Pulse is Class.
+Loss Of Pulse SubClassOf Cardiovascular System Finding.
+Low Blood Oxygen Saturation is Class.
+Low Blood Oxygen Saturation SubClassOf Fluid and Electrolyte Manifestation.
+Low Cardiac Output is Class.
+Low Cardiac Output SubClassOf Cardiovascular System Finding.
+Low Pulmonary Arterial Wedge Pressure is Class.
+Low Pulmonary Arterial Wedge Pressure SubClassOf Cardiovascular System Finding.
+Low QRS Voltage is Class.
+Low QRS Voltage SubClassOf Electrocardiographic Finding.
+Luminal Carotid Thrombus is Class.
+Luminal Carotid Thrombus SubClassOf Blood Clot.
+Lymph Node Involvement is Class.
+Lymph Node Involvement SubClassOf Hematopoietic System Finding.
+Lymphadenopathy with Polyclonal Hypergammaglobulinemia is Class.
+Lymphadenopathy with Polyclonal Hypergammaglobulinemia SubClassOf Swollen Gland.
+Lymphocytosis is Class.
+Lymphocytosis SubClassOf Hematopoietic System Finding.
+Lymphomatous Involvement of Extranodal Site is Class.
+Lymphomatous Involvement of Extranodal Site SubClassOf Hematopoietic System Finding.
+Macular Hole is Class.
+Macular Hole SubClassOf Non-Neoplastic Retinal Disorder.
+Magnetic Resonance Imaging is Class.
+Mannosidosis is Class.
+Marshallese is Class.
+Marshallese SubClassOf Micronesian.
+Mass Spectrometry is Class.
+Mast Cells 10 Percent or More of Peripheral Blood White Cells is Class.
+Mast Cells 10 Percent or More of Peripheral Blood White Cells SubClassOf Abnormal Hematology Test Result.
+Maternal Complication of Pregnancy is Class.
+Maternal Complication of Pregnancy SubClassOf Pregnancy Complication.
+Maternal Fever is Class.
+Maternal Fever SubClassOf Pregnancy Complication.
+Maternal Hypotension is Class.
+Maternal Hypotension SubClassOf Pregnancy Complication.
+Matted Lymph Nodes Present is Class.
+Matted Lymph Nodes Present SubClassOf Lymph Node Involvement.
+Matted Tumor Mass Present is Class.
+Matted Tumor Mass Present SubClassOf CSEO 03000020.
+Mature Neutrophils Present is Class.
+Mature Neutrophils Present SubClassOf Hematopoietic System Finding.
+Mechanical Circulatory Support in Place at Start of Procedure is Class.
+Mechanical Circulatory Support in Place at Start of Procedure SubClassOf Cardiovascular System Finding.
+Medium is Class.
+Medium SubClassOf CSEO 00000002.
+Meningeal Cyst is Class.
+Meningeal Cyst SubClassOf Central Nervous System Cyst.
+Menopause is Class.
+Menopause SubClassOf Reproductive System Finding.
+Menorrhagia is Class.
+Menorrhagia SubClassOf Menstrual Disorder.
+Menstrual Disorder is Class.
+Menstrual Disorder SubClassOf Reproductive System Finding.
+Metrorrhagia is Class.
+Metrorrhagia SubClassOf Reproductive System Hemorrhage.
+Microaneurysm is Class.
+Microaneurysm SubClassOf Aneurysm.
+Microbiology Specimen Test is Class.
+Micronesian is Class.
+Microscopic Thymoma is Class.
+Microscopic Thymoma SubClassOf Thymoma.
+Mild Cardiac Valve Stenosis is Class.
+Mild Cardiac Valve Stenosis SubClassOf Valvular Stenosis.
+Mild Uterine Contraction is Class.
+Mild Uterine Contraction SubClassOf Pregnancy Finding.
+Mildly Abnormal Ejection Fraction is Class.
+Mildly Abnormal Ejection Fraction SubClassOf Cardiovascular System Finding.
+Missed Menstrual Period is Class.
+Missed Menstrual Period SubClassOf Reproductive System Finding.
+Mitral Stenosis is Class.
+Mitral Stenosis SubClassOf Valvular Stenosis.
+Mixed Mineral Dust Pneumoconiosis is Class.
+Mixed Mineral Dust Pneumoconiosis SubClassOf Pneumoconiosis.
+Mixed Population Lactating Status is Class.
+Mixed Population Lactating Status SubClassOf Lactation Status.
+Mixed Population Pregnancy Status is Class.
+Mixed Population Pregnancy Status SubClassOf Pregnancy Status.
+Moderate Cardiac Valve Stenosis is Class.
+Moderate Cardiac Valve Stenosis SubClassOf Valvular Stenosis.
+Moderately Abnormal Ejection Fraction is Class.
+Moderately Abnormal Ejection Fraction SubClassOf Cardiovascular System Finding.
+Monoclonal B-Cell Lymphocytosis is Class.
+Monoclonal B-Cell Lymphocytosis SubClassOf Lymphocytosis.
+Monocytosis is Class.
+Monocytosis SubClassOf Abnormal Hematology Test Result.
+Morning Sickness is Class.
+Morning Sickness SubClassOf Pregnancy Finding.
+Motor Manifestations is Class.
+Motor Manifestations SubClassOf Neurological Signs and Symptoms.
+Mouse Ovarian Tubulostromal Adenoma is Class.
+Mouse Ovarian Tubulostromal Adenoma SubClassOf Tubulostromal Adenoma.
+Multifocal Atrial Tachycardia is Class.
+Multifocal Atrial Tachycardia SubClassOf Electrocardiographic Finding.
+Multiple Births is Class.
+Multiple Births SubClassOf Reproductive System Finding.
+Multiple Gestation is Class.
+Multiple Gestation SubClassOf Reproductive System Finding.
+Multiple Myeloma-IgA is Class.
+Multiple Myeloma-IgA SubClassOf Hematopoietic System Finding.
+Multiple Myeloma-IgD is Class.
+Multiple Myeloma-IgD SubClassOf Hematopoietic System Finding.
+Multiple Myeloma-IgE is Class.
+Multiple Myeloma-IgE SubClassOf Hematopoietic System Finding.
+Multiple Myeloma-IgG is Class.
+Multiple Myeloma-IgG SubClassOf Hematopoietic System Finding.
+Multiple Myeloma-IgM not Waldenstrom Macroglobulinemia is Class.
+Multiple Myeloma-IgM not Waldenstrom Macroglobulinemia SubClassOf Hematopoietic System Finding.
+Multiple Myeloma-Light Chain Only is Class.
+Multiple Myeloma-Light Chain Only SubClassOf Hematopoietic System Finding.
+Mycosis Fungoides is Class.
+Mycotic Aneurysm is Class.
+Mycotic Aneurysm SubClassOf Aneurysm.
+Myeloblast To Leukocyte Ratio is Class.
+Myeloblast To Leukocyte Ratio SubClassOf Blood Cell Count Ratio Measurement.
+Myelography is Class.
+Myelography SubClassOf Radiography.
+Nasopharyngeal Laryngoscopy is Class.
+Nasopharyngeal Laryngoscopy SubClassOf Laryngoscopy.
+Needle Biopsy is Class.
+Nephropathy is Class.
+Nervous System Finding is Class.
+Nervous System Finding SubClassOf CSEO 03000020.
+Neurogenic Bladder is Class.
+Neurogenic Bladder SubClassOf Urinary Tract Finding.
+Neurological Deficit Or Dysfunction is Class.
+Neurological Deficit Or Dysfunction SubClassOf Nervous System Finding.
+Neurological Signs and Symptoms is Class.
+Neurological Signs and Symptoms SubClassOf Nervous System Finding.
+Neutropenic Fever is Class.
+Neutropenic Fever SubClassOf Hematopoietic System Finding.
+Neutrophil Count 1000 is Class.
+Neutrophil Count 1000 SubClassOf Hematopoietic System Finding.
+Neutrophil Count 500 is Class.
+Neutrophil Count 500 SubClassOf Hematopoietic System Finding.
+Neutrophil Engraftment is Class.
+Neutrophil Engraftment SubClassOf Hematopoietic System Finding.
+Neutrophilia is Class.
+Neutrophilia SubClassOf Abnormal Hematology Test Result.
+Nevus of Ito is Class.
+Nevus of Ito SubClassOf Non-Neoplastic Nevus.
+New York Heart Association Class is Class.
+New York Heart Association Class SubClassOf Cardiovascular System Finding.
+New York Heart Association Class I is Class.
+New York Heart Association Class I SubClassOf New York Heart Association Class.
+New York Heart Association Class II is Class.
+New York Heart Association Class II SubClassOf New York Heart Association Class.
+New York Heart Association Class III is Class.
+New York Heart Association Class III SubClassOf New York Heart Association Class.
+New York Heart Association Class III IV is Class.
+New York Heart Association Class III IV SubClassOf New York Heart Association Class.
+New York Heart Association Class IV is Class.
+New York Heart Association Class IV SubClassOf New York Heart Association Class.
+Nipple Carcinoma is Class.
+No Cardiac Valve Stenosis is Class.
+No Cardiac Valve Stenosis SubClassOf Valvular Stenosis.
+Nocturia is Class.
+Nocturia SubClassOf Urinary Tract Finding.
+Non-Neoplastic Heart Disorder is Class.
+Non-Neoplastic Laryngeal Disorder is Class.
+Non-Neoplastic Nevus is Class.
+Non-Neoplastic Renal Disorder is Class.
+Non-Neoplastic Retinal Disorder is Class.
+Non-Neoplastic Soft Tissue Disorder is Class.
+Non-Sustained Ventricular Tachycardia is Class.
+Non-Sustained Ventricular Tachycardia SubClassOf Electrocardiographic Finding.
+Non-target Response is Class.
+Non-target Response SubClassOf CSEO 03000020.
+Non Complete Response Non Progressive Disease is Class.
+Non Complete Response Non Progressive Disease SubClassOf CSEO 03000020.
+Non Q Wave Myocardial Infarction is Class.
+Non Q Wave Myocardial Infarction SubClassOf Electrocardiographic Finding.
+Normal Pulmonary Arterial Wedge Pressure is Class.
+Normal Pulmonary Arterial Wedge Pressure SubClassOf Cardiovascular System Finding.
+Normal Ventricular Ejection Fraction is Class.
+Normal Ventricular Ejection Fraction SubClassOf Cardiovascular System Finding.
+Not Applicable is Class.
+Not Applicable SubClassOf CSEO 03000020.
+Not Lactating is Class.
+Not Lactating SubClassOf Lactation Status.
+Not Pregnant is Class.
+Not Pregnant SubClassOf Pregnancy Status.
+Not Recovered And Or Not Resolved is Class.
+Not Recovered And Or Not Resolved SubClassOf CSEO 03000020.
+Notched T-Waves is Class.
+Notched T-Waves SubClassOf Electrocardiographic Finding.
+Nuiqsut is Class.
+Nuiqsut SubClassOf Inupiat Eskimo.
+Nystagmus is Class.
+Nystagmus SubClassOf Neurological Signs and Symptoms.
+Obtundation is Class.
+Obtundation SubClassOf Nervous System Finding.
+Ochrobactrum is Class.
+Ochrobactrum intermedium is Class.
+Ochrobactrum intermedium SubClassOf Ochrobactrum.
+Oligospermia is Class.
+Oligospermia SubClassOf Decreased Sperm Count,.
+Oligospermia SubClassOf Sexual Dysfunction and Infertility.
+Orange is Class.
+Orange SubClassOf Color.
+Orthostatic Hypotension is Class.
+Orthostatic Hypotension SubClassOf Hypotension.
+Osteoid Osteoma is Class.
+Osteoid Osteoma SubClassOf Benign Bone Neoplasm,.
+Osteoid Osteoma SubClassOf Osteoma.
+Osteoma is Class.
+Ovarian Cyst is Class.
+Ovarian Cyst SubClassOf Reproductive System Finding.
+Ovarian Endometriotic Cyst is Class.
+Ovarian Endometriotic Cyst SubClassOf Ovarian Cyst.
+Ovarian Hemorrhage is Class.
+Ovarian Hemorrhage SubClassOf Reproductive System Hemorrhage.
+Overall Response is Class.
+Overall Response SubClassOf CSEO 03000020.
+PR Interval is Class.
+PR Interval SubClassOf Electrocardiographic Finding.
+P Wave Abnormality is Class.
+P Wave Abnormality SubClassOf Electrocardiographic Finding.
+P Wave Notched is Class.
+P Wave Notched SubClassOf Electrocardiographic Finding.
+Paced Atrial And Ventricular Rhythm is Class.
+Paced Atrial And Ventricular Rhythm SubClassOf Electrocardiographic Finding.
+Paced Atrial Rhythm is Class.
+Paced Atrial Rhythm SubClassOf Electrocardiographic Finding.
+Paced Rhythm is Class.
+Paced Rhythm SubClassOf Electrocardiographic Finding.
+Paced Ventricular Rhythm is Class.
+Paced Ventricular Rhythm SubClassOf Electrocardiographic Finding.
+Paget s Disease of the Breast is Class.
+Paget s Disease of the Nipple is Class.
+Paget s Disease of the Nipple SubClassOf Nipple Carcinoma,.
+Paget s Disease of the Nipple SubClassOf Paget s Disease of the Breast.
+Palpitations is Class.
+Palpitations SubClassOf Cardiovascular System Signs and Symptoms.
+Passing of Mucus Plug is Class.
+Passing of Mucus Plug SubClassOf Pregnancy Finding.
+Passive Congestion is Class.
+Passive Congestion SubClassOf Tissue Congestion.
+Pelviureteric Junction Obstruction is Class.
+Pelviureteric Junction Obstruction SubClassOf Urinary Tract Obstruction.
+Pericardial Anomaly is Class.
+Pericardial Anomaly SubClassOf Cardiovascular System Finding.
+Perinatal Central Nervous System Depression is Class.
+Perinatal Central Nervous System Depression SubClassOf Nervous System Finding.
+Peripheral Blood Involvement is Class.
+Peripheral Blood Involvement SubClassOf Hematopoietic System Finding.
+Peripheral Ischemia is Class.
+Peripheral Ischemia SubClassOf Ischemia.
+Peritoneal Effusion is Class.
+Perivalvular Leak is Class.
+Perivalvular Leak SubClassOf Cardiovascular System Finding.
+Persistent or Significant Disability or Incapacity is Class.
+Persistent or Significant Disability or Incapacity SubClassOf CSEO 03000020.
+Personality Change is Class.
+Personality Change SubClassOf Nervous System Finding.
+Ph Negative BCR-ABL Negative is Class.
+Ph Negative BCR-ABL Negative SubClassOf Hematopoietic System Finding.
+Ph Negative BCR Positive is Class.
+Ph Negative BCR Positive SubClassOf Hematopoietic System Finding.
+Ph Negative BCR Unknown is Class.
+Ph Negative BCR Unknown SubClassOf Hematopoietic System Finding.
+Ph Positive BCR Negative is Class.
+Ph Positive BCR Negative SubClassOf Hematopoietic System Finding.
+Ph Positive BCR Positive is Class.
+Ph Positive BCR Positive SubClassOf Hematopoietic System Finding.
+Ph Positive BCR Unknown is Class.
+Ph Positive BCR Unknown SubClassOf Hematopoietic System Finding.
+Ph Unknown BCR Negative is Class.
+Ph Unknown BCR Negative SubClassOf Hematopoietic System Finding.
+Ph Unknown BCR Positive is Class.
+Ph Unknown BCR Positive SubClassOf Hematopoietic System Finding.
+Ph Unknown BCR Unknown is Class.
+Ph Unknown BCR Unknown SubClassOf Hematopoietic System Finding.
+Physical Examination Abnormal Finding is Class.
+Physical Examination Abnormal Finding SubClassOf CSEO 03000020.
+Physiologic Lightening is Class.
+Physiologic Lightening SubClassOf Pregnancy Finding.
+Pineal Gland Cyst is Class.
+Pineal Gland Cyst SubClassOf Central Nervous System Cyst.
+Pink is Class.
+Pink SubClassOf Color.
+Pituitary Gland Cyst is Class.
+Pituitary Gland Cyst SubClassOf Central Nervous System Cyst.
+Platelet Count 20000 is Class.
+Platelet Count 20000 SubClassOf Hematopoietic System Finding.
+Platelet Count 50000 is Class.
+Platelet Count 50000 SubClassOf Hematopoietic System Finding.
+Platelet Engraftment is Class.
+Platelet Engraftment SubClassOf Hematopoietic System Finding.
+Pneumoconiosis is Class.
+Pneumoconiosis SubClassOf Chronic Lung Disorder.
+Poikilocytosis is Class.
+Poikilocytosis SubClassOf Abnormal Hematology Test Result.
+Polycystic Ovary Syndrome is Class.
+Polycystic Ovary Syndrome SubClassOf Reproductive System Finding.
+Polyhydramnios is Class.
+Polyhydramnios SubClassOf Pregnancy Complication.
+Polymerase Chain Reaction is Class.
+Polynesian is Class.
+Poor R Wave Progression is Class.
+Poor R Wave Progression SubClassOf Electrocardiographic Finding.
+Poor Vascular Access is Class.
+Poor Vascular Access SubClassOf Cardiovascular System Finding.
+Porphyromonas is Class.
+Porphyromonas gingivalis is Class.
+Porphyromonas gingivalis SubClassOf Porphyromonas.
+Positive Pregnancy Test is Class.
+Positive Pregnancy Test SubClassOf Pregnancy Status.
+Post Abortion Hemorrhage is Class.
+Post Abortion Hemorrhage SubClassOf Reproductive System Hemorrhage.
+Postcoital Bleeding is Class.
+Postcoital Bleeding SubClassOf Reproductive System Hemorrhage.
+Postmenopausal Hemorrhage is Class.
+Postmenopausal Hemorrhage SubClassOf Reproductive System Hemorrhage.
+Postoperative Hypertension is Class.
+Postoperative Hypertension SubClassOf Hypertension.
+Postpartum Hemorrhage is Class.
+Postpartum Hemorrhage SubClassOf Pregnancy Complication.
+Pre-Excitation Syndrome is Class.
+Pre-Excitation Syndrome SubClassOf Non-Neoplastic Heart Disorder.
+Pre T-ALL is Class.
+Pre T-ALL SubClassOf Leukemia Antiquated.
+Precocious Puberty is Class.
+Precocious Puberty SubClassOf Reproductive System Finding.
+Preconception is Class.
+Preconception SubClassOf Pregnancy Status.
+Pregnancy is Class.
+Pregnancy SubClassOf CSEO 03000020.
+Pregnancy Breast Soreness is Class.
+Pregnancy Breast Soreness SubClassOf Pregnancy Finding.
+Pregnancy Complication is Class.
+Pregnancy Complication SubClassOf Reproductive System Finding.
+Pregnancy Finding is Class.
+Pregnancy Finding SubClassOf Reproductive System Finding.
+Pregnancy Outcome is Class.
+Pregnancy Outcome SubClassOf Reproductive System Finding.
+Pregnancy Status is Class.
+Pregnancy Status SubClassOf Reproductive System Finding.
+Pregnancy and Lactation Status is Class.
+Pregnancy and Lactation Status SubClassOf Reproductive System Finding.
+Premature Labor is Class.
+Premature Labor SubClassOf Pregnancy Complication.
+Premature Menopause is Class.
+Premature Menopause SubClassOf Menstrual Disorder.
+Premature Rupture of Membranes is Class.
+Premature Rupture of Membranes SubClassOf Pregnancy Complication.
+Preterm Birth is Class.
+Preterm Birth SubClassOf Pregnancy Complication.
+Preterm Premature Rupture of Membranes is Class.
+Preterm Premature Rupture of Membranes SubClassOf Pregnancy Complication.
+Priapism is Class.
+Priapism SubClassOf Reproductive System Finding.
+Primary Cause of Death is Class.
+Primary Cause of Death SubClassOf Cause of Death.
+Primary Hyperparathyroidism is Class.
+Primary Hyperparathyroidism SubClassOf Hyperparathyroidism.
+Primary Site Unknown is Class.
+Primary Site Unknown SubClassOf CSEO 03000020.
+Prolonged PR Interval is Class.
+Prolonged PR Interval SubClassOf Electrocardiographic Finding.
+Prolonged Partial Thromboplastin Time is Class.
+Prolonged Partial Thromboplastin Time SubClassOf Abnormal Hematology Test Result.
+Prolonged QT Interval is Class.
+Prolonged QT Interval SubClassOf Electrocardiographic Finding.
+Prostate Carcinoma by AJCC v7 Stage is Class.
+Prostatic Hemorrhage is Class.
+Prostatic Hemorrhage SubClassOf Reproductive System Hemorrhage.
+Prostatic Obstruction is Class.
+Prostatic Obstruction SubClassOf Reproductive System Obstruction.
+Prostatic Perforation is Class.
+Prostatic Perforation SubClassOf Reproductive System Perforation.
+Prosthetic Disc Impingement is Class.
+Prosthetic Disc Impingement SubClassOf Cardiovascular System Finding.
+Proximal Left Anterior Descending Coronary Artery Stenosis is Class.
+Proximal Left Anterior Descending Coronary Artery Stenosis SubClassOf Coronary Artery Stenosis.
+Pseudoaneurysm is Class.
+Pseudoaneurysm SubClassOf Cardiovascular System Finding.
+Pseudomonadaceae is Class.
+Psychogenic Vaginismus is Class.
+Psychogenic Vaginismus SubClassOf Vaginismus.
+Pulmonary Function Test is Class.
+Pulmonary Stenosis is Class.
+Pulmonary Stenosis SubClassOf Valvular Stenosis.
+Pulmonary Vein Stenosis is Class.
+Pulmonary Vein Stenosis SubClassOf Venous Stenosis.
+Pulsed-Field Gel Electrophoresis is Class.
+Pulsed-Field Gel Electrophoresis SubClassOf Gel Electrophoresis.
+Punctured Blood Vessel is Class.
+Punctured Blood Vessel SubClassOf Vessel Perforation.
+Purple is Class.
+Purple SubClassOf Color.
+Pyramid of Ferrein is Class.
+Pyramid of Ferrein SubClassOf Renal Pyramid.
+Pyramidal Tract Dysfunction is Class.
+Pyramidal Tract Dysfunction SubClassOf Neurological Signs and Symptoms.
+QRS Complex Abnormality is Class.
+QRS Complex Abnormality SubClassOf Electrocardiographic Finding.
+QRS Complex Absent is Class.
+QRS Complex Absent SubClassOf Electrocardiographic Finding.
+QS Wave is Class.
+QS Wave SubClassOf Electrocardiographic Finding.
+QT Interval is Class.
+QT Interval SubClassOf Electrocardiographic Finding.
+R-Banding is Class.
+R-Banding SubClassOf Chromosome Banding.
+R-R interval is Class.
+R-R interval SubClassOf Electrocardiographic Finding.
+RNA Analysis is Class.
+RSR Prime is Class.
+RSR Prime SubClassOf Electrocardiographic Finding.
+R On T Phenomenon is Class.
+R On T Phenomenon SubClassOf Electrocardiographic Finding.
+R Wave Abnormality is Class.
+R Wave Abnormality SubClassOf Electrocardiographic Finding.
+R Wave Notched is Class.
+R Wave Notched SubClassOf Electrocardiographic Finding.
+Radiography is Class.
+Rat Sertoliform Tubular Adenoma is Class.
+Rat Sertoliform Tubular Adenoma SubClassOf CSEO 03000020.
+Rat Tubulostromal Adenoma is Class.
+Rat Tubulostromal Adenoma SubClassOf Tubulostromal Adenoma.
+Rathke Pouch Cyst is Class.
+Rathke Pouch Cyst SubClassOf Central Nervous System Cyst.
+Reactive Lymphocytosis is Class.
+Reactive Lymphocytosis SubClassOf Lymphocytosis.
+Recovered and or Resolved is Class.
+Recovered and or Resolved SubClassOf CSEO 03000020.
+Red is Class.
+Red SubClassOf Color.
+Regional Lymph Node Involvement is Class.
+Regional Lymph Node Involvement SubClassOf Lymph Node Involvement.
+Renal Cyst is Class.
+Renal Cyst SubClassOf Urinary Tract Finding.
+Renal Failure is Class.
+Renal Hemorrhage is Class.
+Renal Hemorrhage SubClassOf Urinary System Hemorrhage.
+Renal Pyramid is Class.
+Reocclusion is Class.
+Reocclusion SubClassOf Cardiovascular System Finding.
+Reproductive Anastomotic Leakage is Class.
+Reproductive Anastomotic Leakage SubClassOf Reproductive System Finding.
+Reproductive System Finding is Class.
+Reproductive System Finding SubClassOf CSEO 03000020.
+Reproductive System Hemorrhage is Class.
+Reproductive System Hemorrhage SubClassOf Reproductive System Finding.
+Reproductive System Obstruction is Class.
+Reproductive System Obstruction SubClassOf Reproductive System Finding.
+Reproductive System Perforation is Class.
+Reproductive System Perforation SubClassOf Reproductive System Finding.
+Reproductive System Stenosis is Class.
+Reproductive System Stenosis SubClassOf Reproductive System Finding.
+Respiratory Sinus Arrhythmia is Class.
+Respiratory Sinus Arrhythmia SubClassOf Electrocardiographic Finding.
+Resuscitated Cardiac Arrest Event is Class.
+Resuscitated Cardiac Arrest Event SubClassOf Cardiac Arrest.
+Rh Incompatibility is Class.
+Rh Incompatibility SubClassOf Pregnancy Complication.
+Right Ventricular Conduction Delay is Class.
+Right Ventricular Conduction Delay SubClassOf Electrocardiographic Finding.
+Right Ventricular Dysfunction is Class.
+Right Ventricular Dysfunction SubClassOf Cardiovascular System Finding.
+Right Ventricular Failure is Class.
+Right Ventricular Failure SubClassOf Right Ventricular Dysfunction.
+Right Ventricular Hypertrophy is Class.
+Right Ventricular Hypertrophy SubClassOf Cardiovascular System Finding.
+Ruptured Aneurysm is Class.
+Ruptured Aneurysm SubClassOf Aneurysm.
+S3 Gallop is Class.
+S3 Gallop SubClassOf Cardiovascular System Finding.
+ST Elevation Pericarditis is Class.
+ST Elevation Pericarditis SubClassOf CSEO 03000020.
+ST Segment Abnormality is Class.
+ST Segment Abnormality SubClassOf Electrocardiographic Finding.
+S Wave Abnormality is Class.
+S Wave Abnormality SubClassOf Electrocardiographic Finding.
+Sample Size is Class.
+Sample Size SubClassOf CSEO 00000002.
+Sarcoma NCI Grade 2 is Class.
+Seizure is Class.
+Seizure SubClassOf Neurological Signs and Symptoms.
+Semi-conscious State is Class.
+Semi-conscious State SubClassOf Level of Consciousness.
+Sensory Manifestations is Class.
+Sensory Manifestations SubClassOf Neurological Signs and Symptoms.
+Sertoli Cell Tumor is Class.
+Severe Cardiac Valve Stenosis is Class.
+Severe Cardiac Valve Stenosis SubClassOf Valvular Stenosis.
+Severely Abnormal Ventricular Ejection Fraction is Class.
+Severely Abnormal Ventricular Ejection Fraction SubClassOf Cardiovascular System Finding.
+Sexual Dysfunction is Class.
+Sexual Dysfunction SubClassOf Sexual Dysfunction and Infertility.
+Sexual Dysfunction and Infertility is Class.
+Sexual Dysfunction and Infertility SubClassOf Reproductive System Finding.
+Sheep is Class.
+Sheep SubClassOf CSEO 00000938.
+Shock is Class.
+Shock SubClassOf Fluid and Electrolyte Manifestation.
+Short PR Interval is Class.
+Short PR Interval SubClassOf Electrocardiographic Finding.
+Shoulder Dystocia is Class.
+Shoulder Dystocia SubClassOf Pregnancy Complication.
+Silicosis is Class.
+Silicosis SubClassOf Pneumoconiosis.
+Sinus Node Dysfunction is Class.
+Sinus Node Dysfunction SubClassOf Cardiovascular System Finding.
+Sinus Rhythm is Class.
+Sinus Rhythm SubClassOf Heart Rhythm.
+Skin Infection is Class.
+Slate Pneumoconiosis is Class.
+Slate Pneumoconiosis SubClassOf Pneumoconiosis.
+Sodium Dodecylsulfate-Polyacrylamide Gel Electrophoresis is Class.
+Solitary Breast Cyst is Class.
+Solitary Breast Cyst SubClassOf Breast Cyst.
+South Asian is Class.
+Spasticity is Class.
+Spasticity SubClassOf Nervous System Finding.
+Special Histology Staining Method is Class.
+Speech Manifestations is Class.
+Speech Manifestations SubClassOf Neurological Signs and Symptoms.
+Spermatic Cord Anastomotic Leakage is Class.
+Spermatic Cord Anastomotic Leakage SubClassOf Reproductive Anastomotic Leakage.
+Spermatic Cord Hemorrhage is Class.
+Spermatic Cord Hemorrhage SubClassOf Reproductive System Hemorrhage.
+Spermatic Cord Obstruction is Class.
+Spermatic Cord Obstruction SubClassOf Reproductive System Obstruction.
+Spermatic Cord Perforation is Class.
+Spermatic Cord Perforation SubClassOf Reproductive System Perforation.
+Spermatic Cord Stenosis is Class.
+Spermatic Cord Stenosis SubClassOf Reproductive System Stenosis.
+Sphingomonadaceae is Class.
+Sphingomonas is Class.
+Sphingomonas SubClassOf Sphingomonadaceae.
+Sphingomonas paucimobilis is Class.
+Sphingomonas paucimobilis SubClassOf Sphingomonas.
+Splenomegaly is Class.
+Splenomegaly SubClassOf Hematopoietic System Finding.
+Sri Lankan is Class.
+Sri Lankan SubClassOf South Asian.
+Stage IB2 Cervical Cancer is Class.
+Stage IB2 Cervical Cancer SubClassOf Stage IB Cervical Cancer.
+Stage IB Cervical Cancer is Class.
+Stage IIA Prostate Cancer is Class.
+Stage IIA Prostate Cancer SubClassOf Stage II Prostate Cancer AJCC v7.
+Stage IIB Prostate Cancer is Class.
+Stage IIB Prostate Cancer SubClassOf Stage II Prostate Cancer AJCC v7.
+Stage IIC Ovarian Cancer is Class.
+Stage IIC Ovarian Cancer SubClassOf Stage II Ovarian Cancer.
+Stage II Ovarian Cancer is Class.
+Stage II Prostate Adenocarcinoma is Class.
+Stage II Prostate Adenocarcinoma SubClassOf Stage II Prostate Cancer AJCC v7.
+Stage II Prostate Cancer AJCC v7 is Class.
+Stage II Prostate Cancer AJCC v7 SubClassOf Prostate Carcinoma by AJCC v7 Stage.
+Stage II Vulvar Cancer AJCC v7 is Class.
+Stage II Vulvar Cancer AJCC v7 SubClassOf Vulvar Carcinoma by AJCC v7 Stage.
+Stage IVA Vulvar Cancer is Class.
+Stage IVA Vulvar Cancer SubClassOf Stage IV Vulvar Cancer.
+Stage IVB Vulvar Cancer is Class.
+Stage IVB Vulvar Cancer SubClassOf Stage IV Vulvar Cancer.
+Stage IV Vulvar Cancer is Class.
+Stage IV Vulvar Cancer SubClassOf Vulvar Carcinoma by AJCC v6 Stage.
+Stage I Cutaneous T-Cell Lymphoma is Class.
+Stage I Mycosis Fungoides is Class.
+Stage I Mycosis Fungoides SubClassOf Mycosis Fungoides,.
+Stage I Mycosis Fungoides SubClassOf Stage I Cutaneous T-Cell Lymphoma,.
+Stage I Mycosis Fungoides SubClassOf Stage I Mycosis Fungoides and Sezary Syndrome.
+Stage I Mycosis Fungoides and Sezary Syndrome is Class.
+Stained Appearance is Class.
+Stained Appearance SubClassOf Appearance.
+Staphylococcus is Class.
+Staphylococcus pasteuri is Class.
+Staphylococcus pasteuri SubClassOf Staphylococcus.
+Stillbirth is Class.
+Stillbirth SubClassOf Pregnancy Complication.
+Storiform-Pleomorphic Malignant Fibrous Histiocytoma is Class.
+Storiform-Pleomorphic Malignant Fibrous Histiocytoma NCI Grade 2 is Class.
+Storiform-Pleomorphic Malignant Fibrous Histiocytoma NCI Grade 2 SubClassOf Sarcoma NCI Grade 2,.
+Storiform-Pleomorphic Malignant Fibrous Histiocytoma NCI Grade 2 SubClassOf Storiform-Pleomorphic Malignant Fibrous Histiocytoma.
+Streptococcus is Class.
+Streptococcus pneumoniae is Class.
+Streptococcus pneumoniae SubClassOf Streptococcus.
+Substantia Nigra is Class.
+Substantia Nigra SubClassOf Cerebral Gray Matter.
+Superior Cervical Ganglion is Class.
+Superior Cervical Ganglion SubClassOf Sympathetic Ganglion.
+Surgical Menopause is Class.
+Surgical Menopause SubClassOf Menopause.
+Sustained Ventricular Tachycardia is Class.
+Sustained Ventricular Tachycardia SubClassOf Electrocardiographic Finding.
+Swollen Gland is Class.
+Swollen Gland SubClassOf Hematopoietic System Finding.
+Swollen Lymph Node is Class.
+Swollen Lymph Node SubClassOf Hematopoietic System Finding.
+Sympathetic Ganglion is Class.
+Syncope is Class.
+Syncope SubClassOf Nervous System Finding.
+Syncope with High Risk Cardiac Characteristics is Class.
+Syncope with High Risk Cardiac Characteristics SubClassOf Syncope.
+T Wave Abnormality is Class.
+T Wave Abnormality SubClassOf Electrocardiographic Finding.
+Tachycardia is Class.
+Tachycardia SubClassOf Cardiovascular System Signs and Symptoms.
+Tahitian is Class.
+Tahitian SubClassOf Polynesian.
+Talc Pneumoconiosis is Class.
+Talc Pneumoconiosis SubClassOf Pneumoconiosis.
+Tan is Class.
+Tan SubClassOf Color.
+Target Response is Class.
+Target Response SubClassOf CSEO 03000020.
+Tartrate Resistant Acid Phosphatase Positivity is Class.
+Tartrate Resistant Acid Phosphatase Positivity SubClassOf Abnormal Hematology Test Result.
+Temperature is Class.
+Tenakee Springs is Class.
+Tenakee Springs SubClassOf Tlingit Haida.
+Testicular Cyst is Class.
+Testicular Cyst SubClassOf Reproductive System Finding.
+Testicular Epidermoid Cyst is Class.
+Testicular Epidermoid Cyst SubClassOf Testicular Cyst.
+Testicular Granulosa Cell Tumor Juvenile Type is Class.
+Testicular Granulosa Cell Tumor Juvenile Type SubClassOf Juvenile Granulosa Cell Tumor.
+Testicular Hemorrhage is Class.
+Testicular Hemorrhage SubClassOf Reproductive System Hemorrhage.
+Testicular Perforation is Class.
+Testicular Perforation SubClassOf Reproductive System Perforation.
+Thrombocytosis is Class.
+Thrombocytosis SubClassOf Abnormal Hematology Test Result.
+Thrombohemorrhagic Event is Class.
+Thrombohemorrhagic Event SubClassOf Cardiovascular System Finding.
+Thrombolysis in Myocardial Infarction Flow is Class.
+Thrombolysis in Myocardial Infarction Flow SubClassOf Cardiovascular System Finding.
+Thrombolysis in Myocardial Infarction Flow - 0 is Class.
+Thrombolysis in Myocardial Infarction Flow - 0 SubClassOf Thrombolysis in Myocardial Infarction Flow.
+Thrombolysis in Myocardial Infarction Flow - 1 is Class.
+Thrombolysis in Myocardial Infarction Flow - 1 SubClassOf Thrombolysis in Myocardial Infarction Flow.
+Thrombolysis in Myocardial Infarction Flow - 2 is Class.
+Thrombolysis in Myocardial Infarction Flow - 2 SubClassOf Thrombolysis in Myocardial Infarction Flow.
+Thrombolysis in Myocardial Infarction Flow - 3 is Class.
+Thrombolysis in Myocardial Infarction Flow - 3 SubClassOf Thrombolysis in Myocardial Infarction Flow.
+Thymoma is Class.
+Tissue Acidosis is Class.
+Tissue Acidosis SubClassOf Fluid and Electrolyte Manifestation.
+Tissue Congestion is Class.
+Tissue Congestion SubClassOf Cardiovascular System Finding.
+Tissue Dissection is Class.
+Tissue Processing Technique is Class.
+Tlingit Haida is Class.
+Torsades De Pointes is Class.
+Torsades De Pointes SubClassOf Electrocardiographic Finding.
+Traumatic Aneurysm is Class.
+Traumatic Aneurysm SubClassOf Aneurysm.
+Tricuspid Stenosis is Class.
+Tricuspid Stenosis SubClassOf Valvular Stenosis.
+Trigeminy is Class.
+Trigeminy SubClassOf Electrocardiographic Finding.
+Tubulostromal Adenoma is Class.
+Tubulostromal Adenoma SubClassOf CSEO 03000020.
+Tubulostromal Adenoma of the Rat Ovary is Class.
+Tubulostromal Adenoma of the Rat Ovary SubClassOf Tubulostromal Adenoma.
+Turquoise is Class.
+Turquoise SubClassOf Color.
+Twin Hills is Class.
+Twin Hills SubClassOf Yupik Eskimo.
+Type of Valve Dysfunction is Class.
+Type of Valve Dysfunction SubClassOf Cardiovascular System Finding.
+Typical Coronary Artery Disease Symptom is Class.
+Typical Coronary Artery Disease Symptom SubClassOf Cardiovascular System Signs and Symptoms.
+U Waves is Class.
+U Waves SubClassOf Electrocardiographic Finding.
+Undesired Nerve Stimulation is Class.
+Undesired Nerve Stimulation SubClassOf Neurological Signs and Symptoms.
+Unintended Pregnancy is Class.
+Unintended Pregnancy SubClassOf Pregnancy.
+Unspecified State of Consciousness is Class.
+Unspecified State of Consciousness SubClassOf Level of Consciousness.
+Upper GI Series is Class.
+Upper GI Series SubClassOf Radiography.
+Ureter Obstruction is Class.
+Ureter Obstruction SubClassOf Urinary Tract Obstruction.
+Ureteral Stricture is Class.
+Ureteral Stricture SubClassOf Urinary Tract Stenosis.
+Ureteric Anastomotic Leakage is Class.
+Ureteric Anastomotic Leakage SubClassOf Urinary Tract Anastomotic Leakage.
+Ureteric Hemorrhage is Class.
+Ureteric Hemorrhage SubClassOf Urinary System Hemorrhage.
+Ureteric Perforation is Class.
+Ureteric Perforation SubClassOf Urinary Tract Perforation.
+Ureterovesical Obstruction is Class.
+Ureterovesical Obstruction SubClassOf Urinary Tract Obstruction.
+Urethral Anastomotic Leakage is Class.
+Urethral Anastomotic Leakage SubClassOf Urinary Tract Anastomotic Leakage.
+Urethral Cyst is Class.
+Urethral Cyst SubClassOf Urinary Tract Finding.
+Urethral Hemorrhage is Class.
+Urethral Hemorrhage SubClassOf Urinary System Hemorrhage.
+Urethral Obstruction is Class.
+Urethral Obstruction SubClassOf Urinary Tract Obstruction.
+Urethral Perforation is Class.
+Urethral Perforation SubClassOf Urinary Tract Perforation.
+Urethral Stricture is Class.
+Urethral Stricture SubClassOf Urinary Tract Stenosis.
+Urinary Bladder Hemorrhage is Class.
+Urinary Bladder Hemorrhage SubClassOf Urinary System Hemorrhage.
+Urinary Frequency is Class.
+Urinary Frequency SubClassOf Urinary Tract Finding.
+Urinary Retention is Class.
+Urinary Retention SubClassOf Urinary Tract Finding.
+Urinary System Hemorrhage is Class.
+Urinary System Hemorrhage SubClassOf Urinary Tract Finding.
+Urinary Tract Anastomotic Leakage is Class.
+Urinary Tract Anastomotic Leakage SubClassOf Urinary Tract Finding.
+Urinary Tract Finding is Class.
+Urinary Tract Finding SubClassOf CSEO 03000020.
+Urinary Tract Obstruction is Class.
+Urinary Tract Obstruction SubClassOf Urinary Tract Finding.
+Urinary Tract Perforation is Class.
+Urinary Tract Perforation SubClassOf Urinary Tract Finding.
+Urinary Tract Stenosis is Class.
+Urinary Tract Stenosis SubClassOf Urinary Tract Finding.
+Urinary Urgency is Class.
+Urinary Urgency SubClassOf Urinary Tract Finding.
+Urine Discoloration is Class.
+Urine Discoloration SubClassOf Urinary Tract Finding.
+Urine Sediment Analysis Measurement is Class.
+Urostomy Leakage is Class.
+Urostomy Leakage SubClassOf Urinary Tract Finding.
+Urostomy Obstruction is Class.
+Urostomy Obstruction SubClassOf Urinary Tract Obstruction.
+Urostomy Perforation is Class.
+Urostomy Perforation SubClassOf Urinary Tract Perforation.
+Urostomy Site Bleeding is Class.
+Urostomy Site Bleeding SubClassOf Urinary System Hemorrhage.
+Urostomy Stenosis is Class.
+Urostomy Stenosis SubClassOf Urinary Tract Stenosis.
+Uterine Anastomotic Leakage is Class.
+Uterine Anastomotic Leakage SubClassOf Reproductive Anastomotic Leakage.
+Uterine Cervical Stenosis is Class.
+Uterine Cervical Stenosis SubClassOf Reproductive System Stenosis.
+Uterine Contraction is Class.
+Uterine Contraction SubClassOf Pregnancy Finding.
+Uterine Hemorrhage is Class.
+Uterine Hemorrhage SubClassOf Reproductive System Hemorrhage.
+Uterine Involution is Class.
+Uterine Involution SubClassOf Reproductive System Finding.
+Uterine Obstruction is Class.
+Uterine Obstruction SubClassOf Reproductive System Obstruction.
+Uterine Perforation is Class.
+Uterine Perforation SubClassOf Reproductive System Perforation.
+Uterine Souffle is Class.
+Uterine Souffle SubClassOf Pregnancy Finding.
+Vaginal Anastomotic Leakage is Class.
+Vaginal Anastomotic Leakage SubClassOf Reproductive Anastomotic Leakage.
+Vaginal Bleeding is Class.
+Vaginal Bleeding SubClassOf Reproductive System Finding.
+Vaginal Bleeding during Pregnancy is Class.
+Vaginal Bleeding during Pregnancy SubClassOf Pregnancy Complication.
+Vaginal Cyst is Class.
+Vaginal Cyst SubClassOf Reproductive System Finding.
+Vaginal Discharge is Class.
+Vaginal Discharge SubClassOf Reproductive System Finding.
+Vaginal Dryness is Class.
+Vaginal Dryness SubClassOf Reproductive System Finding.
+Vaginal Hemorrhage is Class.
+Vaginal Hemorrhage SubClassOf Reproductive System Hemorrhage.
+Vaginal Infection is Class.
+Vaginal Infection SubClassOf Vaginitis.
+Vaginal Itching is Class.
+Vaginal Itching SubClassOf Reproductive System Finding.
+Vaginal Non-Neoplastic Disorder is Class.
+Vaginal Obstruction is Class.
+Vaginal Obstruction SubClassOf Reproductive System Obstruction.
+Vaginal Perforation is Class.
+Vaginal Perforation SubClassOf Reproductive System Perforation.
+Vaginal Stricture is Class.
+Vaginal Stricture SubClassOf Reproductive System Stenosis.
+Vaginismus is Class.
+Vaginismus SubClassOf Reproductive System Finding.
+Vaginitis is Class.
+Vaginitis SubClassOf Vaginal Non-Neoplastic Disorder.
+Value Below Reference Range is Class.
+Value Below Reference Range SubClassOf CSEO 03000020.
+Valvular Heart Disorder is Class.
+Valvular Stenosis is Class.
+Valvular Stenosis SubClassOf Cardiovascular System Finding.
+Varicella Zoster Infection is Class.
+Varicose Vein is Class.
+Varicose Vein SubClassOf Cardiovascular System Finding.
+Varicose Vein of Lower Extremities is Class.
+Varicose Vein of Lower Extremities SubClassOf Varicose Vein.
+Vas Deferens Anastomotic Leakage is Class.
+Vas Deferens Anastomotic Leakage SubClassOf Reproductive Anastomotic Leakage.
+Vas Deferens Hemorrhage is Class.
+Vas Deferens Hemorrhage SubClassOf Reproductive System Hemorrhage.
+Vas Deferens Obstruction is Class.
+Vas Deferens Obstruction SubClassOf Reproductive System Obstruction.
+Vas Deferens Perforation is Class.
+Vas Deferens Perforation SubClassOf Reproductive System Perforation.
+Vas Deferens Stenosis is Class.
+Vas Deferens Stenosis SubClassOf Reproductive System Stenosis.
+Vascular Regression is Class.
+Vascular Regression SubClassOf Cardiovascular System Finding.
+Vasoconstriction is Class.
+Vasoconstriction SubClassOf Cardiovascular System Finding.
+Vasovagal Response is Class.
+Vasovagal Response SubClassOf Neurological Signs and Symptoms.
+Vasovagal Syncope is Class.
+Vasovagal Syncope SubClassOf Syncope.
+Venous Injury is Class.
+Venous Injury SubClassOf Cardiovascular Injury.
+Venous Stenosis is Class.
+Venous Stenosis SubClassOf Cardiovascular System Finding.
+Ventricular Aneurysm is Class.
+Ventricular Aneurysm SubClassOf Aneurysm.
+Ventricular Couplet is Class.
+Ventricular Couplet SubClassOf Electrocardiographic Finding.
+Ventricular Escape Beat is Class.
+Ventricular Escape Beat SubClassOf Electrocardiographic Finding.
+Ventricular Flutter is Class.
+Ventricular Flutter SubClassOf Electrocardiographic Finding.
+Ventricular Premature Complex is Class.
+Ventricular Premature Complex SubClassOf Electrocardiographic Finding.
+Ventricular Tachycardia Ventricular Fibrillation Arrest is Class.
+Ventricular Tachycardia Ventricular Fibrillation Arrest SubClassOf Cardiac Arrest.
+Vertebral Bone is Class.
+Vertigo is Class.
+Vertigo SubClassOf Neurological Signs and Symptoms.
+Vesicoureteral Reflux is Class.
+Vesicoureteral Reflux SubClassOf Urinary Tract Finding.
+Vessel Perforation is Class.
+Vessel Perforation SubClassOf Cardiovascular System Finding.
+Visceral Artery Ischemia is Class.
+Visceral Artery Ischemia SubClassOf Ischemia.
+Vulvar Carcinoma by AJCC v6 Stage is Class.
+Vulvar Carcinoma by AJCC v7 Stage is Class.
+Weight is Class.
+White Blood Cell Count Increased is Class.
+White Blood Cell Count Increased SubClassOf Abnormal Hematology Test Result.
+White Color is Class.
+White Color SubClassOf Color.
+Wide QRS Tachycardia is Class.
+Wide QRS Tachycardia SubClassOf Electrocardiographic Finding.
+Wolff-Parkinson-White Syndrome is Class.
+Wolff-Parkinson-White Syndrome SubClassOf Pre-Excitation Syndrome.
+Yakutat is Class.
+Yakutat SubClassOf Tlingit Haida.
+Yellow is Class.
+Yellow SubClassOf Color.
+Yolk Sac Adenoma is Class.
+Yolk Sac Adenoma SubClassOf CSEO 03000020.
+Yupik Eskimo is Class.
+Zairean is Class.
+Zairean SubClassOf African.
+Zebrafish is Class.
+Zebrafish Line AB C32 is Class.
+Zebrafish Line AB C32 SubClassOf Zebrafish.
+Zebrafish Line SJA is Class.
+Zebrafish Line SJA SubClassOf Zebrafish.
+Zymbal s Gland Carcinoma is Class.
+Zymbal s Gland Carcinoma SubClassOf CSEO 03000020.
+gp100 154-162-Reactive Peripheral Blood Lymphocytes Present is Class.
+gp100 154-162-Reactive Peripheral Blood Lymphocytes Present SubClassOf Abnormal Hematology Test Result.
+ExO 0000004 is Class.
+ExO 0000008 is Class.
+ExO 0000008 SubClassOf CSEO 00001361.
+ExO 0000011 is Class.
+ExO 0000011 SubClassOf CSEO 00001361.
+ExO 0000025 is Class.
+ExO 0000046 is Class.
+ExO 0000077 is Class.
+PATO 0001241 is Class.
+UO 0000130 is Class.
+UO 0000138 is Class.
+UO 0000138 SubClassOf UO 0000130.
+UO 0000154 is Class.
+UO 0000155 is Class.
+UO 0000155 SubClassOf UO 0000154.
+UO 0000200 is Class.
+UO 0000201 is Class.
+UO 0000201 is equivalent to Cells per Milliliter.
+UO 0000201 SubClassOf UO 0000200.
+UO 0000202 is Class.
+UO 0000204 is Class.
+UO 0000204 SubClassOf UO 0000202.
+UO 0000236 is Class.
+UO 0000238 is Class.
+UO 0000238 SubClassOf UO 0000236.
+UO 0000239 is Class.
+UO 0000240 is Class.
+UO 0000240 SubClassOf UO 0000239.
+UO 0000241 is Class.
+UO 0000241 SubClassOf UO 0000239.
+Abrasion is Class.
+Abrasion SubClassOf Gross Pathology Morphology.
+Accumulation is Class.
+Accumulation SubClassOf Gross Pathology Morphology.
+Acetaldehyde is Class.
+Acetaldehyde SubClassOf CSEO 00001162.
+Acetone is Class.
+Acetone SubClassOf CSEO 00001162.
+Acinar Cell Carcinoma is Class.
+Acinar Cell Carcinoma SubClassOf Neoplastic Morphologies.
+Acinar Cell  Adenoma is Class.
+Acinar Cell  Adenoma SubClassOf Neoplastic Morphologies.
+Acrylonitrile is Class.
+Acrylonitrile SubClassOf CSEO 00001162.
+Adenocarcinoma is Class.
+Adenocarcinoma SubClassOf Neoplastic Morphologies.
+Adenoma is Class.
+Adenoma SubClassOf Neoplastic Morphologies.
+Adhesion is Class.
+Adhesion SubClassOf Gross Pathology Morphology.
+Aldehydes determination is Class.
+Aldehydes determination SubClassOf CSEO 00001549.
+Alopecia is Class.
+Alopecia SubClassOf Gross Pathology Morphology.
+Alveolar basal epithelial is Class.
+Amonia is Class.
+Amonia SubClassOf CSEO 00001162.
+Amputation is Class.
+Amputation SubClassOf Gross Pathology Morphology.
+Aortic smooth muscle cell is Class.
+Arcenc is Class.
+Arcenc SubClassOf CSEO 00001162.
+Arrhenoblastoma is Class.
+Arrhenoblastoma SubClassOf Neoplastic Morphologies.
+Assay is Class.
+Assays is Class.
+Assays SubClassOf CSEO 00000000.
+Astrocytoma is Class.
+Astrocytoma SubClassOf Neoplastic Morphologies.
+Basal Cell Tumor is Class.
+Basal Cell Tumor SubClassOf Neoplastic Morphologies.
+Benign is Class.
+Benign SubClassOf CSEO 00000000.
+Benzene is Class.
+Benzene SubClassOf CSEO 00001162.
+Benzo a pyrene is Class.
+Benzo a pyrene SubClassOf CSEO 00001162.
+Biological Markers is Class.
+Biological Markers SubClassOf CSEO 00000000.
+Biological Process is Class.
+Biological Process SubClassOf CSEO 00000000.
+Blood is Class.
+Blood SubClassOf CSEO 00000000.
+Bronchiolo alveolar Adenocarcinoma is Class.
+Bronchiolo alveolar Adenocarcinoma SubClassOf Neoplastic Morphologies.
+Bronchiolo alveolar Adenoma is Class.
+Bronchiolo alveolar Adenoma SubClassOf Neoplastic Morphologies.
+Butyraldehyde is Class.
+Butyraldehyde SubClassOf CSEO 00001162.
+CSEO 00000000 is Class.
+Thing is www.w3.org/2002/07/#.
+CSEO 00000002 is Class.
+CSEO 00000002 SubClassOf Morphology.
+CSEO 00000004 is Class.
+CSEO 00000004 SubClassOf CSEO 00000002.
+CSEO 00000005 is Class.
+CSEO 00000005 SubClassOf CSEO 00000002.
+CSEO 00000006 is Class.
+CSEO 00000006 SubClassOf CSEO 00000002.
+CSEO 00000007 is Class.
+CSEO 00000007 SubClassOf CSEO 00000002.
+CSEO 00000008 is Class.
+CSEO 00000008 SubClassOf CSEO 00000002.
+CSEO 00000408 is Class.
+CSEO 00000408 SubClassOf Grade.
+CSEO 00000409 is Class.
+CSEO 00000409 SubClassOf CSEO 00000408.
+CSEO 00000410 is Class.
+CSEO 00000410 SubClassOf CSEO 00000408.
+CSEO 00000411 is Class.
+CSEO 00000411 SubClassOf CSEO 00000408.
+CSEO 00000412 is Class.
+CSEO 00000412 SubClassOf CSEO 00000408.
+CSEO 00000413 is Class.
+CSEO 00000413 SubClassOf CSEO 00000408.
+CSEO 00000742 is Class.
+CSEO 00000742 SubClassOf CSEO 00000000.
+CSEO 00000744 is Class.
+CSEO 00000744 SubClassOf CSEO 00000000.
+CSEO 00000746 is Class.
+CSEO 00000746 SubClassOf Process.
+CSEO 00000749 is Class.
+CSEO 00000749 SubClassOf CSEO 00000981.
+CSEO 00000750 is Class.
+CSEO 00000750 SubClassOf CSEO 00000749.
+CSEO 00000754 is Class.
+CSEO 00000754 SubClassOf CSEO 00000981.
+CSEO 00000759 is Class.
+CSEO 00000759 SubClassOf ExO 0000025.
+CSEO 00000760 is Class.
+CSEO 00000760 SubClassOf CSEO 00000759.
+CSEO 00000761 is Class.
+CSEO 00000761 SubClassOf CSEO 00000759.
+CSEO 00000762 is Class.
+CSEO 00000762 SubClassOf CSEO 00000759.
+CSEO 00000763 is Class.
+CSEO 00000763 SubClassOf CSEO 00000759.
+CSEO 00000764 is Class.
+CSEO 00000764 SubClassOf CSEO 00000981.
+CSEO 00000765 is Class.
+CSEO 00000765 SubClassOf CSEO 00000981.
+CSEO 00000766 is Class.
+CSEO 00000766 SubClassOf CSEO 00000981.
+CSEO 00000769 is Class.
+CSEO 00000769 SubClassOf ExO 0000025.
+CSEO 00000770 is Class.
+CSEO 00000770 SubClassOf Cigerette.
+CSEO 00000772 is Class.
+CSEO 00000772 SubClassOf Cigerette.
+CSEO 00000773 is Class.
+CSEO 00000773 SubClassOf CSEO 00000981.
+CSEO 00000774 is Class.
+CSEO 00000776 is Class.
+CSEO 00000776 SubClassOf CSEO 00000774.
+CSEO 00000777 is Class.
+CSEO 00000777 SubClassOf CSEO 00000774.
+CSEO 00000782 is Class.
+CSEO 00000782 SubClassOf CSEO 03000020.
+CSEO 00000784 is Class.
+CSEO 00000784 SubClassOf CSEO 00000782.
+CSEO 00000785 is Class.
+CSEO 00000785 SubClassOf CSEO 00000782.
+CSEO 00000786 is Class.
+CSEO 00000786 SubClassOf CSEO 00000785.
+CSEO 00000787 is Class.
+CSEO 00000787 SubClassOf CSEO 00000786.
+CSEO 00000788 is Class.
+CSEO 00000788 SubClassOf CSEO 00000789.
+CSEO 00000789 is Class.
+CSEO 00000789 SubClassOf CSEO 00000787.
+CSEO 00000790 is Class.
+CSEO 00000790 SubClassOf CSEO 00000789.
+CSEO 00000791 is Class.
+CSEO 00000791 SubClassOf CSEO 00000786.
+CSEO 00000792 is Class.
+CSEO 00000792 SubClassOf CSEO 00000786.
+CSEO 00000794 is Class.
+CSEO 00000794 SubClassOf CSEO 00000786.
+CSEO 00000795 is Class.
+CSEO 00000795 SubClassOf CSEO 00000787.
+CSEO 00000796 is Class.
+CSEO 00000796 SubClassOf CSEO 00000789.
+CSEO 00000799 is Class.
+CSEO 00000799 SubClassOf Lung Diseases.
+CSEO 00000800 is Class.
+CSEO 00000800 SubClassOf CSEO 00000799.
+CSEO 00000801 is Class.
+CSEO 00000801 SubClassOf CSEO 00000799.
+CSEO 00000802 is Class.
+CSEO 00000802 SubClassOf CSEO 00000799.
+CSEO 00000803 is Class.
+CSEO 00000803 SubClassOf CSEO 00000799.
+CSEO 00000804 is Class.
+CSEO 00000804 SubClassOf CSEO 00000803.
+CSEO 00000808 is Class.
+CSEO 00000808 SubClassOf CSEO 00000843.
+CSEO 00000813 is Class.
+CSEO 00000813 SubClassOf CSEO 00000000.
+CSEO 00000814 is Class.
+CSEO 00000814 SubClassOf CSEO 00000000.
+CSEO 00000816 is Class.
+CSEO 00000816 SubClassOf CSEO 00000000.
+CSEO 00000817 is Class.
+CSEO 00000821 is Class.
+CSEO 00000821 SubClassOf ExO 0000046.
+CSEO 00000822 is Class.
+CSEO 00000822 SubClassOf CSEO 00000821.
+CSEO 00000822 DisjointWith CSEO 00000882.
+CSEO 00000827 is Class.
+CSEO 00000828 is Class.
+CSEO 00000830 is Class.
+CSEO 00000830 SubClassOf CSEO 00000828.
+CSEO 00000831 is Class.
+CSEO 00000833 is Class.
+CSEO 00000836 is Class.
+CSEO 00000837 is Class.
+CSEO 00000838 is Class.
+CSEO 00000838 SubClassOf CSEO 00000827.
+CSEO 00000839 is Class.
+CSEO 00000839 SubClassOf CSEO 00000838,.
+CSEO 00000839 SubClassOf CSEO 00000955 some CSEO 00000831,.
+CSEO 00000839 SubClassOf CSEO 00000955 some CSEO 00000891,.
+CSEO 00000839 SubClassOf CSEO 00000955 some CSEO 00000894,.
+CSEO 00000839 SubClassOf CSEO 00000968 some CSEO 00000817,.
+CSEO 00000839 SubClassOf CSEO 00000969 some CSEO 00000967.
+CSEO 00000840 is Class.
+CSEO 00000843 is Class.
+CSEO 00000844 is Class.
+CSEO 00000849 is Class.
+CSEO 00000850 is Class.
+CSEO 00000850 SubClassOf Compound.
+CSEO 00000860 is Class.
+CSEO 00000860 SubClassOf CSEO 00000827.
+CSEO 00000878 is Class.
+CSEO 00000879 is Class.
+CSEO 00000880 is Class.
+CSEO 00000880 SubClassOf CSEO 00000878.
+CSEO 00000882 is Class.
+CSEO 00000882 SubClassOf CSEO 00000879.
+CSEO 00000882 DisjointWith CSEO 00000822.
+CSEO 00000885 is Class.
+CSEO 00000887 is Class.
+CSEO 00000887 SubClassOf CSEO 00000885,.
+CSEO 00000887 SubClassOf CSEO 00000955 some CSEO 00000839,.
+CSEO 00000887 SubClassOf CSEO 00000956 some CSEO 00000837,.
+CSEO 00000887 SubClassOf CSEO 00000975 some CSEO 00000799.
+CSEO 00000888 is Class.
+CSEO 00000891 is Class.
+CSEO 00000894 is Class.
+CSEO 00000899 is Class.
+CSEO 00000899 SubClassOf CSEO 00000000.
+CSEO 00000903 is Class.
+CSEO 00000903 SubClassOf CSEO 00000843.
+CSEO 00000904 is Class.
+CSEO 00000904 SubClassOf CSEO 00000903.
+CSEO 00000908 is Class.
+CSEO 00000908 SubClassOf CSEO 00001361.
+CSEO 00000909 is Class.
+CSEO 00000910 is Class.
+CSEO 00000910 SubClassOf CSEO 00000909.
+CSEO 00000911 is Class.
+CSEO 00000911 SubClassOf CSEO 00000910.
+CSEO 00000912 is Class.
+CSEO 00000913 is Class.
+CSEO 00000913 SubClassOf CSEO 00000912.
+CSEO 00000919 is Class.
+CSEO 00000919 SubClassOf Ingredients.
+CSEO 00000923 is Class.
+CSEO 00000923 SubClassOf CSEO 00001162.
+CSEO 00000927 is Class.
+CSEO 00000927 SubClassOf CSEO 00000000.
+CSEO 00000930 is Class.
+CSEO 00000930 SubClassOf Bacteria,.
+CSEO 00000930 SubClassOf CSEO 00000955 some CSEO 00000822,.
+CSEO 00000930 SubClassOf CSEO 00000955 some CSEO 00000833.
+CSEO 00000931 is Class.
+CSEO 00000931 SubClassOf Bacteria,.
+CSEO 00000931 SubClassOf CSEO 00000955 some CSEO 00000822,.
+CSEO 00000931 SubClassOf CSEO 00000955 some CSEO 00000833.
+CSEO 00000932 is Class.
+CSEO 00000932 SubClassOf Bacteria,.
+CSEO 00000932 SubClassOf CSEO 00000955 some CSEO 00000822,.
+CSEO 00000932 SubClassOf CSEO 00000955 some CSEO 00000833.
+CSEO 00000933 is Class.
+CSEO 00000933 SubClassOf Bacteria,.
+CSEO 00000933 SubClassOf CSEO 00000955 some CSEO 00000822,.
+CSEO 00000933 SubClassOf CSEO 00000955 some CSEO 00000833.
+CSEO 00000934 is Class.
+CSEO 00000936 is Class.
+CSEO 00000936 SubClassOf CSEO 00000934,.
+CSEO 00000936 SubClassOf CSEO 00000955 some CSEO 00000822,.
+CSEO 00000936 SubClassOf CSEO 00000955 some CSEO 00000833.
+CSEO 00000938 is Class.
+CSEO 00000939 is Class.
+CSEO 00000939 SubClassOf CSEO 00000000.
+CSEO 00000950 is Class.
+CSEO 00000950 SubClassOf CSEO 00000934,.
+CSEO 00000950 SubClassOf CSEO 00000955 some CSEO 00000822,.
+CSEO 00000950 SubClassOf CSEO 00000955 some CSEO 00000833.
+CSEO 00000951 is Class.
+CSEO 00000951 SubClassOf CSEO 00000934,.
+CSEO 00000951 SubClassOf CSEO 00000955 some CSEO 00000822,.
+CSEO 00000951 SubClassOf CSEO 00000955 some CSEO 00000833,.
+CSEO 00000951 SubClassOf CSEO 00000955 only CSEO 00000882.
+CSEO 00000960 is Class.
+CSEO 00000960 SubClassOf CSEO 00000961,.
+CSEO 00000960 SubClassOf CSEO 00000964 some CSEO 00000888.
+CSEO 00000961 is Class.
+CSEO 00000967 is Class.
+CSEO 00000971 is Class.
+CSEO 00000971 SubClassOf CSEO 00000000.
+CSEO 00000981 is Class.
+CSEO 00000981 SubClassOf Tobacco Product.
+CSEO 00000983 is Class.
+CSEO 00000983 SubClassOf CSEO 00000879.
+CSEO 00000984 is Class.
+CSEO 00000984 SubClassOf CSEO 00000879.
+CSEO 00000985 is Class.
+CSEO 00000985 SubClassOf CSEO 00000821.
+CSEO 00000990 is Class.
+CSEO 00000993 is Class.
+CSEO 00000993 SubClassOf CSEO 00000836.
+CSEO 00000996 is Class.
+CSEO 00000996 SubClassOf CSEO 00000879.
+CSEO 00000998 is Class.
+CSEO 00000998 SubClassOf CSEO 00000840.
+CSEO 00001009 is Class.
+CSEO 00001009 SubClassOf CSEO 00000843.
+CSEO 00001014 is Class.
+CSEO 00001015 is Class.
+CSEO 00001015 SubClassOf CSEO 00001014.
+CSEO 00001020 is Class.
+CSEO 00001020 SubClassOf CSEO 00000754.
+CSEO 00001021 is Class.
+CSEO 00001024 is Class.
+CSEO 00001024 SubClassOf Weight.
+CSEO 00001028 is Class.
+CSEO 00001028 SubClassOf CSEO 00000843.
+CSEO 00001029 is Class.
+CSEO 00001029 SubClassOf CSEO 00000981.
+CSEO 00001030 is Class.
+CSEO 00001030 SubClassOf CSEO 00000981.
+CSEO 00001039 is Class.
+CSEO 00001039 SubClassOf tobacco blend.
+CSEO 00001040 is Class.
+CSEO 00001040 SubClassOf  2R4F.
+CSEO 00001041 is Class.
+CSEO 00001041 SubClassOf CSEO 00001039.
+CSEO 00001042 is Class.
+CSEO 00001042 SubClassOf CSEO 00001041.
+CSEO 00001046 is Class.
+CSEO 00001046 SubClassOf In vivo model.
+CSEO 00001049 is Class.
+CSEO 00001049 SubClassOf CSEO 00000843.
+CSEO 00001050 is Class.
+CSEO 00001050 SubClassOf CSEO 00000782.
+CSEO 00001057 is Class.
+CSEO 00001057 SubClassOf CSEO 00000784.
+CSEO 00001062 is Class.
+CSEO 00001062 SubClassOf CSEO 00001839.
+CSEO 00001066 is Class.
+CSEO 00001066 SubClassOf CSEO 00001162.
+CSEO 00001067 is Class.
+CSEO 00001076 is Class.
+CSEO 00001076 SubClassOf Smoke.
+CSEO 00001078 is Class.
+CSEO 00001078 SubClassOf CSEO 00000782.
+CSEO 00001080 is Class.
+CSEO 00001080 SubClassOf CSEO 00000843.
+CSEO 00001084 is Class.
+CSEO 00001084 SubClassOf CSEO 00000843.
+CSEO 00001087 is Class.
+CSEO 00001087 SubClassOf CSEO 00000817.
+CSEO 00001089 is Class.
+CSEO 00001089 SubClassOf CSEO 00000843.
+CSEO 00001094 is Class.
+CSEO 00001094 SubClassOf CSEO 00000777.
+CSEO 00001100 is Class.
+CSEO 00001100 SubClassOf Mass Spectrometry.
+CSEO 00001102 is Class.
+CSEO 00001102 SubClassOf Gel Electrophoresis.
+CSEO 00001111 is Class.
+CSEO 00001111 SubClassOf CSEO 00000990.
+CSEO 00001113 is Class.
+CSEO 00001113 SubClassOf ExO 0000077.
+CSEO 00001114 is Class.
+CSEO 00001114 SubClassOf CSEO 00000836.
+CSEO 00001129 is Class.
+CSEO 00001129 SubClassOf CSEO 00000990.
+CSEO 00001132 is Class.
+CSEO 00001132 SubClassOf Allele.
+CSEO 00001133 is Class.
+CSEO 00001133 SubClassOf CSEO 00000990.
+CSEO 00001134 is Class.
+CSEO 00001134 SubClassOf CSEO 00000827.
+CSEO 00001136 is Class.
+CSEO 00001136 SubClassOf CSEO 00000844.
+CSEO 00001139 is Class.
+CSEO 00001139 SubClassOf CSEO 00000849.
+CSEO 00001140 is Class.
+CSEO 00001140 SubClassOf Cell line.
+CSEO 00001145 is Class.
+CSEO 00001145 SubClassOf CSEO 00000782.
+CSEO 00001146 is Class.
+CSEO 00001146 SubClassOf CSEO 00000843.
+CSEO 00001148 is Class.
+CSEO 00001148 SubClassOf Compound.
+CSEO 00001150 is Class.
+CSEO 00001150 SubClassOf CSEO 00000843.
+CSEO 00001162 is Class.
+CSEO 00001162 SubClassOf CSEO 00000774.
+CSEO 00001163 is Class.
+CSEO 00001163 SubClassOf Mass Spectrometry.
+CSEO 00001168 is Class.
+CSEO 00001168 SubClassOf Mass Spectrometry.
+CSEO 00001169 is Class.
+CSEO 00001169 SubClassOf CSEO 00000749.
+CSEO 00001175 is Class.
+CSEO 00001175 SubClassOf CSEO 00001361.
+CSEO 00001176 is Class.
+CSEO 00001176 SubClassOf Disposition.
+CSEO 00001180 is Class.
+CSEO 00001180 SubClassOf CSEO 00000002.
+CSEO 00001181 is Class.
+CSEO 00001181 SubClassOf CSEO 00000981.
+CSEO 00001186 is Class.
+CSEO 00001186 SubClassOf CSEO 00000782.
+CSEO 00001187 is Class.
+CSEO 00001187 SubClassOf CSEO 00000782.
+CSEO 00001188 is Class.
+CSEO 00001188 SubClassOf Sample Generation.
+CSEO 00001190 is Class.
+CSEO 00001190 SubClassOf Chronic Bronchitis.
+CSEO 00001192 is Class.
+CSEO 00001192 SubClassOf Product property assessment.
+CSEO 00001195 is Class.
+CSEO 00001195 SubClassOf ExO 0000004.
+CSEO 00001200 is Class.
+CSEO 00001200 SubClassOf Temperature.
+CSEO 00001202 is Class.
+CSEO 00001202 SubClassOf CSEO 00000749.
+CSEO 00001205 is Class.
+CSEO 00001205 SubClassOf CSEO 00001162.
+CSEO 00001206 is Class.
+CSEO 00001206 SubClassOf CSEO 00000795.
+CSEO 00001207 is Class.
+CSEO 00001209 is Class.
+CSEO 00001209 SubClassOf CSEO 00001207.
+CSEO 00001211 is Class.
+CSEO 00001211 SubClassOf Neoplastic Morphologies.
+CSEO 00001212 is Class.
+CSEO 00001213 is Class.
+CSEO 00001213 SubClassOf CSEO 00001212.
+CSEO 00001216 is Class.
+CSEO 00001216 SubClassOf CSEO 00001207.
+CSEO 00001220 is Class.
+CSEO 00001220 SubClassOf Cigerette.
+CSEO 00001222 is Class.
+CSEO 00001222 SubClassOf Quality.
+CSEO 00001223 is Class.
+CSEO 00001223 SubClassOf Mass Spectrometry.
+CSEO 00001236 is Class.
+CSEO 00001236 SubClassOf CSEO 00000849.
+CSEO 00001241 is Class.
+CSEO 00001241 SubClassOf CSEO 00001207.
+CSEO 00001249 is Class.
+CSEO 00001249 SubClassOf Smoke.
+CSEO 00001253 is Class.
+CSEO 00001253 SubClassOf Tobacco Product.
+CSEO 00001263 is Class.
+CSEO 00001263 SubClassOf CSEO 00001021.
+CSEO 00001264 is Class.
+CSEO 00001264 SubClassOf Compound.
+CSEO 00001267 is Class.
+CSEO 00001267 SubClassOf CSEO 00000981.
+CSEO 00001268 is Class.
+CSEO 00001268 SubClassOf CSEO 00000774.
+CSEO 00001359 is Class.
+CSEO 00001359 SubClassOf Tobacco-related exposure.
+CSEO 00001361 is Class.
+CSEO 00001361 SubClassOf Role.
+CSEO 00001364 is Class.
+CSEO 00001364 SubClassOf Compound.
+CSEO 00001365 is Class.
+CSEO 00001365 SubClassOf Quality.
+CSEO 00001368 is Class.
+CSEO 00001368 SubClassOf Length.
+CSEO 00001370 is Class.
+CSEO 00001370 SubClassOf CSEO 03000020.
+CSEO 00001371 is Class.
+CSEO 00001371 SubClassOf CSEO 00001370.
+CSEO 00001372 is Class.
+CSEO 00001372 SubClassOf CSEO 00001370.
+CSEO 00001373 is Class.
+CSEO 00001373 SubClassOf CSEO 00001370.
+CSEO 00001374 is Class.
+CSEO 00001374 SubClassOf CSEO 00001370.
+CSEO 00001375 is Class.
+CSEO 00001375 SubClassOf CSEO 00001370.
+CSEO 00001376 is Class.
+CSEO 00001376 SubClassOf CSEO 00001370.
+CSEO 00001377 is Class.
+CSEO 00001377 SubClassOf CSEO 00001370.
+CSEO 00001378 is Class.
+CSEO 00001378 SubClassOf CSEO 00001370.
+CSEO 00001381 is Class.
+CSEO 00001381 SubClassOf CSEO 00000002.
+CSEO 00001382 is Class.
+CSEO 00001382 SubClassOf CSEO 00001381.
+CSEO 00001383 is Class.
+CSEO 00001383 SubClassOf CSEO 00001381.
+CSEO 00001386 is Class.
+CSEO 00001387 is Class.
+CSEO 00001387 SubClassOf CSEO 00001386.
+CSEO 00001391 is Class.
+CSEO 00001391 SubClassOf Location.
+CSEO 00001393 is Class.
+CSEO 00001393 SubClassOf CSEO 00000817.
+CSEO 00001397 is Class.
+CSEO 00001397 SubClassOf Diameter.
+CSEO 00001399 is Class.
+CSEO 00001399 SubClassOf Function.
+CSEO 00001400 is Class.
+CSEO 00001400 SubClassOf Function.
+CSEO 00001413 is Class.
+CSEO 00001413 SubClassOf CSEO 00000827.
+CSEO 00001416 is Class.
+CSEO 00001416 SubClassOf Pulmonary Function Test.
+CSEO 00001418 is Class.
+CSEO 00001418 SubClassOf Pulmonary Function Test.
+CSEO 00001420 is Class.
+CSEO 00001420 SubClassOf PATO 0001241.
+CSEO 00001421 is Class.
+CSEO 00001421 SubClassOf CSEO 00001420.
+CSEO 00001423 is Class.
+CSEO 00001423 SubClassOf CSEO 00001421.
+CSEO 00001430 is Class.
+CSEO 00001430 SubClassOf CSEO 00001421.
+CSEO 00001432 is Class.
+CSEO 00001433 is Class.
+CSEO 00001433 SubClassOf CSEO 00001432.
+CSEO 00001436 is Class.
+CSEO 00001436 SubClassOf CSEO 00001432.
+CSEO 00001440 is Class.
+CSEO 00001440 SubClassOf CSEO 00001062.
+CSEO 00001441 is Class.
+CSEO 00001441 SubClassOf CSEO 00001839.
+CSEO 00001442 is Class.
+CSEO 00001442 SubClassOf CSEO 00001839.
+CSEO 00001447 is Class.
+CSEO 00001447 SubClassOf CSEO 00001448.
+CSEO 00001448 is Class.
+CSEO 00001448 SubClassOf CSEO 00001839.
+CSEO 00001449 is Class.
+CSEO 00001449 SubClassOf CSEO 00001448.
+CSEO 00001450 is Class.
+CSEO 00001450 SubClassOf Sample Generation.
+CSEO 00001451 is Class.
+CSEO 00001451 SubClassOf Sample Generation.
+CSEO 00001456 is Class.
+CSEO 00001456 SubClassOf CSEO 00001062.
+CSEO 00001458 is Class.
+CSEO 00001458 SubClassOf CSEO 00001062.
+CSEO 00001459 is Class.
+CSEO 00001459 SubClassOf CSEO 00001062.
+CSEO 00001460 is Class.
+CSEO 00001460 SubClassOf CSEO 00001062.
+CSEO 00001466 is Class.
+CSEO 00001466 SubClassOf Sample quality assessment.
+CSEO 00001469 is Class.
+CSEO 00001469 SubClassOf Aortic smooth muscle cell.
+CSEO 00001470 is Class.
+CSEO 00001470 SubClassOf Embryonic fibroblast cell.
+CSEO 00001471 is Class.
+CSEO 00001471 SubClassOf Alveolar basal epithelial.
+CSEO 00001474 is Class.
+CSEO 00001474 SubClassOf Cell line.
+CSEO 00001475 is Class.
+CSEO 00001475 SubClassOf Cell line.
+CSEO 00001476 is Class.
+CSEO 00001476 SubClassOf Cell line.
+CSEO 00001478 is Class.
+CSEO 00001478 SubClassOf Cell line.
+CSEO 00001483 is Class.
+CSEO 00001483 SubClassOf Cell line.
+CSEO 00001488 is Class.
+CSEO 00001488 SubClassOf Cell line.
+CSEO 00001489 is Class.
+CSEO 00001489 SubClassOf Cell line.
+CSEO 00001492 is Class.
+CSEO 00001492 SubClassOf Cell line.
+CSEO 00001493 is Class.
+CSEO 00001493 SubClassOf Cell line.
+CSEO 00001494 is Class.
+CSEO 00001494 SubClassOf Cell line.
+CSEO 00001495 is Class.
+CSEO 00001495 SubClassOf Cell line.
+CSEO 00001496 is Class.
+CSEO 00001496 SubClassOf Cell line.
+CSEO 00001500 is Class.
+CSEO 00001500 SubClassOf Cell line.
+CSEO 00001501 is Class.
+CSEO 00001501 SubClassOf Cell line.
+CSEO 00001504 is Class.
+CSEO 00001504 SubClassOf Cell line.
+CSEO 00001508 is Class.
+CSEO 00001508 SubClassOf Cell line.
+CSEO 00001509 is Class.
+CSEO 00001509 SubClassOf Cell line.
+CSEO 00001510 is Class.
+CSEO 00001510 SubClassOf Cell line.
+CSEO 00001511 is Class.
+CSEO 00001511 SubClassOf Cell line.
+CSEO 00001519 is Class.
+CSEO 00001519 SubClassOf Cell line.
+CSEO 00001520 is Class.
+CSEO 00001520 SubClassOf Cell line.
+CSEO 00001522 is Class.
+CSEO 00001522 SubClassOf Cell line.
+CSEO 00001523 is Class.
+CSEO 00001523 SubClassOf Cell line.
+CSEO 00001528 is Class.
+CSEO 00001528 SubClassOf CSEO 00001207.
+CSEO 00001529 is Class.
+CSEO 00001529 SubClassOf CSEO 00001207.
+CSEO 00001537 is Class.
+CSEO 00001538 is Class.
+CSEO 00001538 SubClassOf CSEO 00001537.
+CSEO 00001540 is Class.
+CSEO 00001540 SubClassOf CSEO 00001537.
+CSEO 00001541 is Class.
+CSEO 00001541 SubClassOf CSEO 00001537.
+CSEO 00001543 is Class.
+CSEO 00001544 is Class.
+CSEO 00001544 SubClassOf CSEO 00001543.
+CSEO 00001546 is Class.
+CSEO 00001546 SubClassOf CSEO 00001543.
+CSEO 00001548 is Class.
+CSEO 00001548 SubClassOf CSEO 00001543.
+CSEO 00001549 is Class.
+CSEO 00001551 is Class.
+CSEO 00001551 SubClassOf Assay.
+CSEO 00001552 is Class.
+CSEO 00001552 SubClassOf CSEO 00001551.
+CSEO 00001553 is Class.
+CSEO 00001553 SubClassOf CSEO 00001551.
+CSEO 00001554 is Class.
+CSEO 00001554 SubClassOf CSEO 00001551.
+CSEO 00001555 is Class.
+CSEO 00001555 SubClassOf CSEO 00001551.
+CSEO 00001556 is Class.
+CSEO 00001556 SubClassOf CSEO 00001551.
+CSEO 00001557 is Class.
+CSEO 00001557 SubClassOf CSEO 00001551.
+CSEO 00001558 is Class.
+CSEO 00001558 SubClassOf CSEO 00001551.
+CSEO 00001559 is Class.
+CSEO 00001559 SubClassOf CSEO 00001551.
+CSEO 00001560 is Class.
+CSEO 00001560 SubClassOf CSEO 00001551.
+CSEO 00001561 is Class.
+CSEO 00001561 SubClassOf CSEO 00001551.
+CSEO 00001562 is Class.
+CSEO 00001562 SubClassOf CSEO 00001551.
+CSEO 00001563 is Class.
+CSEO 00001563 SubClassOf CSEO 00001551.
+CSEO 00001564 is Class.
+CSEO 00001564 SubClassOf CSEO 00001551.
+CSEO 00001565 is Class.
+CSEO 00001565 SubClassOf CSEO 00001551.
+CSEO 00001567 is Class.
+CSEO 00001567 SubClassOf CSEO 00001551.
+CSEO 00001568 is Class.
+CSEO 00001568 SubClassOf CSEO 00001551.
+CSEO 00001569 is Class.
+CSEO 00001569 SubClassOf CSEO 00001551.
+CSEO 00001571 is Class.
+CSEO 00001571 SubClassOf CSEO 00001551.
+CSEO 00001572 is Class.
+CSEO 00001572 SubClassOf CSEO 00001551.
+CSEO 00001574 is Class.
+CSEO 00001574 SubClassOf CSEO 00001551.
+CSEO 00001575 is Class.
+CSEO 00001575 SubClassOf CSEO 00001551.
+CSEO 00001576 is Class.
+CSEO 00001576 SubClassOf CSEO 00001551.
+CSEO 00001578 is Class.
+CSEO 00001578 SubClassOf CSEO 00001551.
+CSEO 00001579 is Class.
+CSEO 00001579 SubClassOf CSEO 00001551.
+CSEO 00001580 is Class.
+CSEO 00001580 SubClassOf CSEO 00001551.
+CSEO 00001581 is Class.
+CSEO 00001581 SubClassOf CSEO 00001551.
+CSEO 00001582 is Class.
+CSEO 00001582 SubClassOf CSEO 00001551.
+CSEO 00001584 is Class.
+CSEO 00001584 SubClassOf CSEO 00001551.
+CSEO 00001585 is Class.
+CSEO 00001585 SubClassOf CSEO 00001551.
+CSEO 00001587 is Class.
+CSEO 00001587 SubClassOf CSEO 00001551.
+CSEO 00001588 is Class.
+CSEO 00001588 SubClassOf CSEO 00001551.
+CSEO 00001589 is Class.
+CSEO 00001589 SubClassOf CSEO 00001551.
+CSEO 00001590 is Class.
+CSEO 00001590 SubClassOf CSEO 00001551.
+CSEO 00001591 is Class.
+CSEO 00001591 SubClassOf CSEO 00001551.
+CSEO 00001592 is Class.
+CSEO 00001592 SubClassOf CSEO 00001551.
+CSEO 00001593 is Class.
+CSEO 00001593 SubClassOf CSEO 00001551.
+CSEO 00001624 is Class.
+CSEO 00001628 is Class.
+CSEO 00001628 SubClassOf CSEO 00001624.
+CSEO 00001703 is Class.
+CSEO 00001703 SubClassOf Centrifuge.
+CSEO 00001718 is Class.
+CSEO 00001718 SubClassOf GeneticModification.
+CSEO 00001726 is Class.
+CSEO 00001726 SubClassOf CSEO 00001551.
+CSEO 00001728 is Class.
+CSEO 00001728 SubClassOf Tissue Dissection.
+CSEO 00001752 is Class.
+CSEO 00001753 is Class.
+CSEO 00001753 SubClassOf CSEO 00001752.
+CSEO 00001754 is Class.
+CSEO 00001754 SubClassOf CSEO 00001752.
+CSEO 00001760 is Class.
+CSEO 00001760 SubClassOf CSEO 00001752.
+CSEO 00001761 is Class.
+CSEO 00001761 SubClassOf CSEO 00001752.
+CSEO 00001762 is Class.
+CSEO 00001762 SubClassOf CSEO 00001752.
+CSEO 00001764 is Class.
+CSEO 00001792 is Class.
+CSEO 00001792 SubClassOf CSEO 00001764.
+CSEO 00001794 is Class.
+CSEO 00001794 SubClassOf CSEO 00001764.
+CSEO 00001796 is Class.
+CSEO 00001796 SubClassOf CSEO 00001764.
+CSEO 00001800 is Class.
+CSEO 00001800 SubClassOf Special Histology Staining Method.
+CSEO 00001801 is Class.
+CSEO 00001801 SubClassOf CSEO 00001800.
+CSEO 00001802 is Class.
+CSEO 00001802 SubClassOf CSEO 00001800.
+CSEO 00001803 is Class.
+CSEO 00001803 SubClassOf CSEO 00001800.
+CSEO 00001804 is Class.
+CSEO 00001804 SubClassOf DNA Analysis.
+CSEO 00001805 is Class.
+CSEO 00001805 SubClassOf DNA Analysis.
+CSEO 00001806 is Class.
+CSEO 00001806 SubClassOf DNA Analysis.
+CSEO 00001808 is Class.
+CSEO 00001808 SubClassOf DNA Analysis.
+CSEO 00001809 is Class.
+CSEO 00001809 SubClassOf CSEO 00001808.
+CSEO 00001810 is Class.
+CSEO 00001810 SubClassOf DNA Analysis.
+CSEO 00001818 is Class.
+CSEO 00001818 SubClassOf RNA Analysis.
+CSEO 00001820 is Class.
+CSEO 00001820 SubClassOf GeneticModification.
+CSEO 00001821 is Class.
+CSEO 00001821 SubClassOf GeneticModification.
+CSEO 00001822 is Class.
+CSEO 00001822 SubClassOf GeneticModification.
+CSEO 00001823 is Class.
+CSEO 00001823 SubClassOf GeneticModification.
+CSEO 00001824 is Class.
+CSEO 00001824 SubClassOf GeneticModification.
+CSEO 00001825 is Class.
+CSEO 00001825 SubClassOf GeneticModification.
+CSEO 00001826 is Class.
+CSEO 00001826 SubClassOf Special Histology Staining Method.
+CSEO 00001831 is Class.
+CSEO 00001833 is Class.
+CSEO 00001833 SubClassOf CSEO 00001831.
+CSEO 00001835 is Class.
+CSEO 00001835 SubClassOf CSEO 00001839.
+CSEO 00001837 is Class.
+CSEO 00001838 is Class.
+CSEO 00001838 SubClassOf CSEO 00001837.
+CSEO 00001839 is Class.
+CSEO 00001839 SubClassOf Sample Generation.
+CSEO 00001840 is Class.
+CSEO 00001840 SubClassOf Culture Procedure.
+CSEO 00001841 is Class.
+CSEO 00001841 SubClassOf CSEO 00001840.
+CSEO 00001842 is Class.
+CSEO 00001842 SubClassOf CSEO 00001840.
+CSEO 00001843 is Class.
+CSEO 00001843 SubClassOf CSEO 00001840.
+CSEO 00001844 is Class.
+CSEO 00001844 SubClassOf CSEO 00001840.
+CSEO 00001845 is Class.
+CSEO 00001845 SubClassOf CSEO 00001840.
+CSEO 00001847 is Class.
+CSEO 00001847 SubClassOf CSEO 00001840.
+CSEO 00001848 is Class.
+CSEO 00001848 SubClassOf Dehydration.
+CSEO 00001880 is Class.
+CSEO 00001880 SubClassOf Microbiology Specimen Test.
+CSEO 00001883 is Class.
+CSEO 00001883 SubClassOf DNA Analysis.
+CSEO 00001884 is Class.
+CSEO 00001884 SubClassOf CSEO 00001551.
+CSEO 00001886 is Class.
+CSEO 00001886 SubClassOf Clinical activity.
+CSEO 02000051 is Class.
+CSEO 02000051 SubClassOf Lung Cancer.
+CSEO 02000053 is Class.
+CSEO 02000053 SubClassOf Lung Cancer.
+CSEO 03000020 is Class.
+CSEO 03000020 SubClassOf Disposition.
+CSEO 03000049 is Class.
+CSEO 03000049 SubClassOf CSEO 03000020.
+C Cell Adenoma is Class.
+C Cell Adenoma SubClassOf Neoplastic Morphologies.
+C Cell Carcinoma is Class.
+C Cell Carcinoma SubClassOf Neoplastic Morphologies.
+Cadmium is Class.
+Cadmium SubClassOf CSEO 00001162.
+Calculus is Class.
+Calculus SubClassOf Gross Pathology Morphology.
+Capri is Class.
+Capri SubClassOf CSEO 00001067.
+Carbon Monoxide is Class.
+Carbon Monoxide SubClassOf CSEO 00001162.
+Carcinoid Tumor is Class.
+Carcinoid Tumor SubClassOf Neoplastic Morphologies.
+Carcinoma is Class.
+Carcinoma SubClassOf Neoplastic Morphologies.
+Carcinosarcoma is Class.
+Carcinosarcoma SubClassOf Neoplastic Morphologies.
+Cell line is Class.
+Cellulose Acetate based filter is Class.
+Cellulose Acetate based filter SubClassOf CSEO 00000777.
+Centrifuge is Class.
+Chemodectoma is Class.
+Chemodectoma SubClassOf Neoplastic Morphologies.
+Cholangiocarcinoma is Class.
+Cholangiocarcinoma SubClassOf Neoplastic Morphologies.
+Cholangiofibroma is Class.
+Cholangiofibroma SubClassOf Neoplastic Morphologies.
+Cholangioma is Class.
+Cholangioma SubClassOf Neoplastic Morphologies.
+Chondroma is Class.
+Chondroma SubClassOf Neoplastic Morphologies.
+Chondrosarcoma is Class.
+Chondrosarcoma SubClassOf Neoplastic Morphologies.
+Chordoma is Class.
+Chordoma SubClassOf Neoplastic Morphologies.
+Choriocarcinoma is Class.
+Choriocarcinoma SubClassOf Neoplastic Morphologies.
+Chromium is Class.
+Chromium SubClassOf CSEO 00001162.
+Cigarette Smoke Exposure is Class.
+Cigarette Smoke Exposure SubClassOf CSEO 00001359.
+Cigarette Smoking is Class.
+Cigarette Smoking SubClassOf Tobacco Smoking.
+Cigarette User is Class.
+Cigarette User SubClassOf CSEO 00000000.
+Cigerette is Class.
+Clinical activity is Class.
+Colorimetry is Class.
+Colorimetry SubClassOf CSEO 00001551.
+Contents is Class.
+Contents SubClassOf Gross Pathology Morphology.
+Cotinine is Class.
+Cotinine SubClassOf CSEO 00000000.
+Craniopharyngioma is Class.
+Craniopharyngioma SubClassOf Neoplastic Morphologies.
+Crust is Class.
+Crust SubClassOf Gross Pathology Morphology.
+Cyst is Class.
+Cyst SubClassOf Gross Pathology Morphology.
+Cystadenocarcinoma is Class.
+Cystadenocarcinoma SubClassOf Neoplastic Morphologies.
+Cystadenoma is Class.
+Cystadenoma SubClassOf Neoplastic Morphologies.
+Deduoma is Class.
+Deduoma SubClassOf Neoplastic Morphologies.
+Deformity is Class.
+Deformity SubClassOf Gross Pathology Morphology.
+Dermoid is Class.
+Dermoid SubClassOf Neoplastic Morphologies.
+Dilation is Class.
+Dilation SubClassOf Gross Pathology Morphology.
+Discoloration is Class.
+Discoloration SubClassOf Gross Pathology Morphology.
+Diverticulm is Class.
+Diverticulm SubClassOf Gross Pathology Morphology.
+Dysgerminoma is Class.
+Dysgerminoma SubClassOf Neoplastic Morphologies.
+Embryonal Carcinoma is Class.
+Embryonal Carcinoma SubClassOf Neoplastic Morphologies.
+Embryonic fibroblast cell is Class.
+Endometrial Stromal Polyp is Class.
+Endometrial Stromal Polyp SubClassOf Neoplastic Morphologies.
+Endometrial Stromal Sarcoma is Class.
+Endometrial Stromal Sarcoma SubClassOf Neoplastic Morphologies.
+Enlarged is Class.
+Enlarged SubClassOf Gross Pathology Morphology.
+Ependyoma is Class.
+Ependyoma SubClassOf Neoplastic Morphologies.
+Erythroleukemia is Class.
+Erythroleukemia SubClassOf Neoplastic Morphologies.
+Ex cigarette User is Class.
+Ex cigarette User SubClassOf CSEO 00000789.
+Exposure Type is Class.
+Fibroadenocarcinoma is Class.
+Fibroadenocarcinoma SubClassOf Neoplastic Morphologies.
+Fibroadenoma is Class.
+Fibroadenoma SubClassOf Neoplastic Morphologies.
+Fibropapilloma is Class.
+Fibropapilloma SubClassOf Neoplastic Morphologies.
+Fibrosarcoma is Class.
+Fibrosarcoma SubClassOf Neoplastic Morphologies.
+Fibrous Histiocytoma is Class.
+Fibrous Histiocytoma SubClassOf Neoplastic Morphologies.
+Fluid is Class.
+Fluid SubClassOf Gross Pathology Morphology.
+Fluorometry is Class.
+Fluorometry SubClassOf CSEO 00001551.
+Focus is Class.
+Focus SubClassOf Gross Pathology Morphology.
+Follicular Cell Adenoma is Class.
+Follicular Cell Adenoma SubClassOf Neoplastic Morphologies.
+Follicular Cell Carcinoma is Class.
+Follicular Cell Carcinoma SubClassOf Neoplastic Morphologies.
+Foreign Body is Class.
+Foreign Body SubClassOf Gross Pathology Morphology.
+Formaldehyde is Class.
+Formaldehyde SubClassOf CSEO 00001162.
+Fracture is Class.
+Fracture SubClassOf Gross Pathology Morphology.
+Ganglioglioma is Class.
+Ganglioglioma SubClassOf Neoplastic Morphologies.
+Ganglioneuroblastoma is Class.
+Ganglioneuroblastoma SubClassOf Neoplastic Morphologies.
+Giant Cell Tumor is Class.
+Giant Cell Tumor SubClassOf Neoplastic Morphologies.
+Grade is Class.
+Grade SubClassOf CSEO 03000020.
+Granulosa Cell Tumor is Class.
+Granulosa Cell Tumor SubClassOf Neoplastic Morphologies.
+Granulosa Theca Cell Tumor is Class.
+Granulosa Theca Cell Tumor SubClassOf Neoplastic Morphologies.
+Greem is Class.
+Greem SubClassOf Qualifier.
+Gross Pathology Morphology is Class.
+Gross Pathology Morphology SubClassOf Morphology.
+Hemangioma is Class.
+Hemangioma SubClassOf Neoplastic Morphologies.
+Hemangiopericytoma is Class.
+Hemangiopericytoma SubClassOf Neoplastic Morphologies.
+Hemangiosarcoma is Class.
+Hemangiosarcoma SubClassOf Neoplastic Morphologies.
+Hemorrhagic is Class.
+Hemorrhagic SubClassOf Qualifier.
+Hepatoblastoma is Class.
+Hepatoblastoma SubClassOf Neoplastic Morphologies.
+Hepatocellular Adenoma is Class.
+Hepatocellular Adenoma SubClassOf Neoplastic Morphologies.
+Hepatocellular Carcinoma is Class.
+Hepatocellular Carcinoma SubClassOf Neoplastic Morphologies.
+Hepatocholangiocellular Adenoma is Class.
+Hepatocholangiocellular Adenoma SubClassOf Neoplastic Morphologies.
+Hepatocholangiocellular Carcinoma is Class.
+Hepatocholangiocellular Carcinoma SubClassOf Neoplastic Morphologies.
+Hernia is Class.
+Hernia SubClassOf Gross Pathology Morphology.
+Hibernoma is Class.
+Hibernoma SubClassOf Neoplastic Morphologies.
+Histiocystic Sarcoma is Class.
+Histiocystic Sarcoma SubClassOf Neoplastic Morphologies.
+Histiocytoma is Class.
+Histiocytoma SubClassOf Neoplastic Morphologies.
+Homorrhage is Class.
+Homorrhage SubClassOf Gross Pathology Morphology.
+Hydrogen Cyanide is Class.
+Hydrogen Cyanide SubClassOf CSEO 00001162.
+Hydroquinone is Class.
+Hydroquinone SubClassOf CSEO 00001162.
+In vivo model is Class.
+Ingredients is Class.
+Ingredients SubClassOf CSEO 00001361.
+Interstitial Cell Adenoma is Class.
+Interstitial Cell Adenoma SubClassOf Neoplastic Morphologies.
+Interstitilal Cell Carcinoma is Class.
+Interstitilal Cell Carcinoma SubClassOf Neoplastic Morphologies.
+Intussusception is Class.
+Intussusception SubClassOf Gross Pathology Morphology.
+Islet Cell Adenoma is Class.
+Islet Cell Adenoma SubClassOf Neoplastic Morphologies.
+Islet Cell Carcinoma is Class.
+Islet Cell Carcinoma SubClassOf Neoplastic Morphologies.
+Isoprene is Class.
+Isoprene SubClassOf CSEO 00001162.
+Ito Cell Tumor is Class.
+Ito Cell Tumor SubClassOf Neoplastic Morphologies.
+Keratoacanthoma is Class.
+Keratoacanthoma SubClassOf Neoplastic Morphologies.
+Laceration is Class.
+Laceration SubClassOf Gross Pathology Morphology.
+Large Grandular Cell Leukemia is Class.
+Large Grandular Cell Leukemia SubClassOf Neoplastic Morphologies.
+Lead is Class.
+Lead SubClassOf CSEO 00001162.
+Leiomyoma is Class.
+Leiomyoma SubClassOf Neoplastic Morphologies.
+Leiomyosarcoma is Class.
+Leiomyosarcoma SubClassOf Neoplastic Morphologies.
+Lesion is Class.
+Lesion SubClassOf Gross Pathology Morphology.
+Less than 0.2 cm is Class.
+Less than 0.2 cm SubClassOf CSEO 00000002.
+Linear is Class.
+Linear SubClassOf Qualifier.
+Lipoma is Class.
+Lipoma SubClassOf Neoplastic Morphologies.
+Liposarcoma is Class.
+Liposarcoma SubClassOf Neoplastic Morphologies.
+Luminometry is Class.
+Luminometry SubClassOf CSEO 00001551.
+Lung Cancer is Class.
+Lung Diseases is Class.
+Luteoma is Class.
+Luteoma SubClassOf Neoplastic Morphologies.
+Lymphangioma is Class.
+Lymphangioma SubClassOf Neoplastic Morphologies.
+Lymphangiosarcoma is Class.
+Lymphangiosarcoma SubClassOf Neoplastic Morphologies.
+Lymphoma is Class.
+Lymphoma SubClassOf Neoplastic Morphologies.
+Malignant Melanoma is Class.
+Malignant Melanoma SubClassOf Neoplastic Morphologies.
+Marked is Class.
+Marked SubClassOf Grade.
+Mass is Class.
+Mass SubClassOf Gross Pathology Morphology.
+Mast Cell Tumor is Class.
+Mast Cell Tumor SubClassOf Neoplastic Morphologies.
+Medulloblastoma is Class.
+Medulloblastoma SubClassOf Neoplastic Morphologies.
+Melanoma is Class.
+Melanoma SubClassOf Neoplastic Morphologies.
+Meningioma is Class.
+Meningioma SubClassOf Neoplastic Morphologies.
+Mercury is Class.
+Mercury SubClassOf CSEO 00001162.
+Mesenchymal Tumor is Class.
+Mesenchymal Tumor SubClassOf Neoplastic Morphologies.
+Mesothelioma is Class.
+Mesothelioma SubClassOf Neoplastic Morphologies.
+Methyl ethyl ketone is Class.
+Methyl ethyl ketone SubClassOf CSEO 00001162.
+Mild is Class.
+Mild SubClassOf Grade.
+Minimal is Class.
+Minimal SubClassOf Grade.
+Mixed Acinar slet Cell Tumor is Class.
+Mixed Acinar slet Cell Tumor SubClassOf Neoplastic Morphologies.
+Mixed Glioma is Class.
+Mixed Glioma SubClassOf Neoplastic Morphologies.
+Mixed Gonadal Stromal Carcinoma is Class.
+Mixed Gonadal Stromal Carcinoma SubClassOf Neoplastic Morphologies.
+Mixed Gonadal  Adenoma is Class.
+Mixed Gonadal  Adenoma SubClassOf Neoplastic Morphologies.
+Mixed Mullerian Tumor is Class.
+Mixed Mullerian Tumor SubClassOf Neoplastic Morphologies.
+Mixed Tumor is Class.
+Mixed Tumor SubClassOf Neoplastic Morphologies.
+Moderate is Class.
+Moderate SubClassOf Grade.
+Morphology is Class.
+Morphology SubClassOf CSEO 03000020.
+Mottled is Class.
+Mottled SubClassOf Qualifier.
+Mouse is Class.
+Mouse SubClassOf CSEO 00000000.
+Myeloepithelioma is Class.
+Myeloepithelioma SubClassOf Neoplastic Morphologies.
+Myelolipoma is Class.
+Myelolipoma SubClassOf Neoplastic Morphologies.
+Myxoma is Class.
+Myxoma SubClassOf Neoplastic Morphologies.
+Myxosarcoma is Class.
+Myxosarcoma SubClassOf Neoplastic Morphologies.
+Neoplastic Morphologies is Class.
+Neoplastic Morphologies SubClassOf Morphology.
+Nephroblastoma is Class.
+Nephroblastoma SubClassOf Neoplastic Morphologies.
+Neural Crest Tumor is Class.
+Neural Crest Tumor SubClassOf Neoplastic Morphologies.
+Neuroblastoma is Class.
+Neuroblastoma SubClassOf Neoplastic Morphologies.
+Neuroendocrine Cell Tumor is Class.
+Neuroendocrine Cell Tumor SubClassOf Neoplastic Morphologies.
+Nickel is Class.
+Nickel SubClassOf CSEO 00001162.
+Nitric Oxide is Class.
+Nitric Oxide SubClassOf CSEO 00001162.
+Nodule is Class.
+Nodule SubClassOf Gross Pathology Morphology.
+Obstruction is Class.
+Obstruction SubClassOf Gross Pathology Morphology.
+Opaque is Class.
+Opaque SubClassOf Qualifier.
+Pale is Class.
+Pale SubClassOf Qualifier.
+Parasite is Class.
+Parasite SubClassOf Gross Pathology Morphology.
+Parliament is Class.
+Parliament SubClassOf CSEO 00001067.
+Perforation is Class.
+Perforation SubClassOf Gross Pathology Morphology.
+Phenol is Class.
+Phenol SubClassOf CSEO 00001162.
+Pigmentation is Class.
+Pigmentation SubClassOf Gross Pathology Morphology.
+Pink is Class.
+Pink SubClassOf Qualifier.
+Product property assessment is Class.
+Prolapse is Class.
+Prolapse SubClassOf Gross Pathology Morphology.
+Purple is Class.
+Purple SubClassOf Qualifier.
+Pyridine is Class.
+Pyridine SubClassOf CSEO 00001162.
+Qualifier is Class.
+Qualifier SubClassOf CSEO 03000020.
+Quinoline is Class.
+Quinoline SubClassOf CSEO 00001162.
+Red is Class.
+Red SubClassOf Qualifier.
+Resorcinol is Class.
+Resorcinol SubClassOf CSEO 00001162.
+Rodent model is Class.
+Rodent model SubClassOf CSEO 00001046.
+Roughened is Class.
+Roughened SubClassOf Qualifier.
+Rupture is Class.
+Rupture SubClassOf Gross Pathology Morphology.
+Salem is Class.
+Salem SubClassOf CSEO 00001067.
+Sample Generation is Class.
+Sample quality assessment is Class.
+Scar is Class.
+Scar SubClassOf Gross Pathology Morphology.
+Selenium is Class.
+Selenium SubClassOf CSEO 00001162.
+Small is Class.
+Small SubClassOf Gross Pathology Morphology.
+Smoke is Class.
+Sobranie is Class.
+Sobranie SubClassOf CSEO 00001067.
+Soft is Class.
+Soft SubClassOf Qualifier.
+Styrene is Class.
+Styrene SubClassOf CSEO 00001162.
+Tan is Class.
+Tan SubClassOf Qualifier.
+Thick is Class.
+Thick SubClassOf Gross Pathology Morphology.
+Thin is Class.
+Thin SubClassOf Gross Pathology Morphology.
+Tobacco-related exposure is Class.
+Tobacco-related exposure SubClassOf CSEO 00000746.
+Tobacco Product is Class.
+Tobacco Product SubClassOf CSEO 00001361.
+Tobacco Smoking is Class.
+Toluene is Class.
+Toluene SubClassOf CSEO 00001162.
+Torsion is Class.
+Torsion SubClassOf Gross Pathology Morphology.
+Transgenic model is Class.
+Transgenic model SubClassOf CSEO 00001046.
+Ulcer is Class.
+Ulcer SubClassOf Gross Pathology Morphology.
+Yellow is Class.
+Yellow SubClassOf Qualifier.
+ 1-Aminonaphthalene is Class.
+ 1-Aminonaphthalene SubClassOf CSEO 00001162.
+ 1 3-Butadiene is Class.
+ 1 3-Butadiene SubClassOf CSEO 00001162.
+ 2-Aminonaphthalene is Class.
+ 2-Aminonaphthalene SubClassOf CSEO 00001162.
+ 2R4F is Class.
+ 2R4F SubClassOf CSEO 00001039.
+ 3-Aminobipheny is Class.
+ 3-Aminobipheny SubClassOf CSEO 00001162.
+ 3R4F is Class.
+ 3R4F SubClassOf CSEO 00001039.
+ 4-Aminobiphenyl is Class.
+ 4-Aminobiphenyl SubClassOf CSEO 00001162.
+carcinogens is Class.
+carcinogens SubClassOf CSEO 00001361.
+ganglioneuroma is Class.
+ganglioneuroma SubClassOf Neoplastic Morphologies.
+m p-Cresol is Class.
+m p-Cresol SubClassOf CSEO 00001162.
+nicotine is Class.
+nicotine SubClassOf CSEO 00001162.
+nikotine is Class.
+nikotine SubClassOf CSEO 00000000.
+o-Cresol is Class.
+o-Cresol SubClassOf CSEO 00001162.
+paper is Class.
+paper SubClassOf CSEO 00000000.
+sbPBS is Class.
+sbPBS SubClassOf Exposure Type.
+tobacco blend is Class.
+Disposition is Class.
+Function is Class.
+Quality is Class.
+Role is Class.
+Process is Class.
+www.w3.org/2002/07/# is Class.

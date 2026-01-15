@@ -1,0 +1,281 @@
+is-connected-to-during is ObjectProperty.
+is-connected-to-during Domain computer.
+is-connected-to-during Range network.
+is-the-compression-of is ObjectProperty.
+is-the-compression-of Domain archive-file.
+is-the-compression-of Range file.
+is-a-part-of-during is ObjectProperty.
+allows-to-carry-out is ObjectProperty.
+expresses-at is ObjectProperty.
+has-for-contributor is ObjectProperty.
+has-for-contributor Domain artefact.
+has-for-contributor Range contributor.
+has-for-contributor InverseOf is-contributor-of.
+has-for-version-number is ObjectProperty.
+has-for-version-number Domain artefact.
+has-for-version-number Range version-number.
+has-for-version-number InverseOf is-a-version-number-of.
+is-a-result-of-at is ObjectProperty.
+is-a-version-number-of is ObjectProperty.
+is-a-version-number-of InverseOf has-for-version-number.
+is-capable-to-perform is ObjectProperty.
+is-contributor-of is ObjectProperty.
+is-contributor-of InverseOf has-for-contributor.
+realizes is ObjectProperty.
+realizes-at is ObjectProperty.
+has-for-role-name is ObjectProperty.
+has-for-type-name is ObjectProperty.
+supervises-as-coordinator-at is ObjectProperty.
+supervises-as-coordinator-at Domain coordinator.
+supervises-as-coordinator-at Range study.
+RAR-file is Class.
+RAR-file SubClassOf archive-file.
+ZIP-file is Class.
+ZIP-file SubClassOf archive-file.
+archive-file is Class.
+archive-file SubClassOf binary-file,.
+archive-file SubClassOf is-the-compression-of min 1 file,.
+archive-file SubClassOf realizes-at exactly 1 archive-format-expression.
+archive-format-expression is Class.
+binary-document-file is Class.
+binary-document-file SubClassOf binary-file.
+binary-file is Class.
+binary-file SubClassOf file.
+cluster is Class.
+cluster SubClassOf distributed-platform.
+computer is Class.
+computer SubClassOf execution-platform,.
+computer SubClassOf physical-platform,.
+computer SubClassOf storage-platform,.
+computer SubClassOf is-capable-to-perform some storing-programs,.
+computer SubClassOf is-capable-to-perform only special-file.
+computer DisjointWith distributed-platform.
+computer-under-linux is Class.
+computer-under-linux SubClassOf computer.
+computer-under-windows is Class.
+computer-under-windows SubClassOf computer.
+computing-grid is Class.
+computing-grid SubClassOf execution-platform,.
+computing-grid SubClassOf grid.
+computing-grid-middleware is Class.
+computing-grid-middleware SubClassOf grid-middleware.
+connected-computer is Class.
+connected-computer SubClassOf computer.
+device-file is Class.
+device-file SubClassOf special-file.
+directory is Class.
+directory SubClassOf special-file.
+distributed-platform is Class.
+distributed-platform DisjointWith computer.
+execution-platform is Class.
+file is Class.
+glite-grid is Class.
+glite-grid SubClassOf computing-grid,.
+glite-grid SubClassOf storage-grid.
+grid is Class.
+grid SubClassOf distributed-platform.
+grid-middleware is Class.
+grid-middleware SubClassOf middleware.
+image-file is Class.
+image-file SubClassOf binary-file.
+library is Class.
+library SubClassOf artefact.
+linux is Class.
+linux SubClassOf unix.
+markup-file is Class.
+markup-file SubClassOf text-file.
+medical-image-file is Class.
+middleware is Class.
+network is Class.
+network SubClassOf artefact.
+operating-system is Class.
+physical-platform is Class.
+platform is Class.
+platform SubClassOf artefact.
+regular-file is Class.
+regular-file SubClassOf file.
+software is Class.
+software SubClassOf artefact.
+special-file is Class.
+special-file SubClassOf file.
+special-file DisjointWith storing-programs.
+stderr is Class.
+stderr SubClassOf stream-file.
+storage-grid is Class.
+storage-grid SubClassOf grid,.
+storage-grid SubClassOf storage-platform.
+storage-grid-middleware is Class.
+storage-grid-middleware SubClassOf grid-middleware.
+storage-platform is Class.
+storing-programs is Class.
+storing-programs DisjointWith special-file.
+stream-file is Class.
+stream-file SubClassOf special-file.
+symbolic-link is Class.
+symbolic-link SubClassOf special-file.
+text-file is Class.
+text-file SubClassOf file.
+unix is Class.
+unix SubClassOf operating-system.
+windows is Class.
+windows SubClassOf operating-system.
+endurant is Class.
+DICOM-file is Class.
+DICOM-file DisjointWith NII-file.
+GIS-header-file is Class.
+GIS-header-file is equivalent to NII-file.
+GIS-header-file DisjointWith NII-file.
+INRIMAGE-file is Class.
+INRIMAGE-file DisjointWith NII-file.
+NIFTI-header-file is Class.
+NIFTI-header-file DisjointWith NII-file.
+NII-file is Class.
+NII-file is equivalent to GIS-header-file.
+NII-file SubClassOf medical-image-file,.
+NII-file SubClassOf realizes some NIfTI-expression.
+NII-file DisjointWith analyze-header-file.
+NII-file DisjointWith NIFTI-header-file.
+NII-file DisjointWith INRIMAGE-file.
+NII-file DisjointWith GIS-header-file.
+NII-file DisjointWith DICOM-file.
+NIfTI-expression is Class.
+analyze-header-file is Class.
+analyze-header-file DisjointWith NII-file.
+artefact is Class.
+artefact SubClassOf endurant,.
+artefact SubClassOf is-a-result-of-at some successfully-producing.
+article is Class.
+article SubClassOf textual-discourse,.
+article SubClassOf is-a-part-of-during some publication.
+axiom is Class.
+axiom SubClassOf logical-expression.
+axiom DisjointWith logical-operator.
+concept is Class.
+contributor is Class.
+discourse is Class.
+experimental-artefact is Class.
+experimental-artefact SubClassOf happening-consequent.
+expression is Class.
+expression SubClassOf artefact.
+gestual-discourse is Class.
+gestual-discourse SubClassOf discourse.
+happening-consequent is Class.
+inscription is Class.
+inscription SubClassOf artefact.
+lexical-item is Class.
+lexical-item SubClassOf linguistic-expression.
+linguistic-expression is Class.
+logical-expression is Class.
+logical-operator is Class.
+logical-operator SubClassOf logical-expression.
+logical-operator DisjointWith axiom.
+manufactured-object is Class.
+manufactured-object SubClassOf artefact.
+name is Class.
+non-physical-artefact is Class.
+non-physical-artefact SubClassOf artefact.
+noun is Class.
+noun SubClassOf lexical-item.
+proposition is Class.
+publication is Class.
+publication SubClassOf text.
+scientific-article is Class.
+scientific-article SubClassOf article,.
+scientific-article SubClassOf is-a-part-of-during some scientific-publication.
+scientific-publication is Class.
+serial-number is Class.
+serial-number SubClassOf name.
+successfully-producing is Class.
+technical-artefact is Class.
+technical-artefact SubClassOf artefact.
+term is Class.
+term SubClassOf linguistic-expression,.
+term SubClassOf expresses-at some concept.
+term DisjointWith text.
+text is Class.
+text SubClassOf linguistic-expression,.
+text SubClassOf expresses-at some proposition.
+text DisjointWith term.
+textual-discourse is Class.
+textual-discourse SubClassOf discourse,.
+textual-discourse SubClassOf text.
+tool is Class.
+tool SubClassOf artefact.
+version-number is Class.
+CT-dataset-acquisition is Class.
+CT-equipment is Class.
+CT-equipment SubClassOf dataset-acquisition-equipment,.
+CT-equipment SubClassOf allows-to-carry-out some CT-dataset-acquisition.
+EEG-dataset-acquisition is Class.
+EEG-equipment is Class.
+EEG-equipment SubClassOf dataset-acquisition-equipment,.
+EEG-equipment SubClassOf allows-to-carry-out some EEG-dataset-acquisition.
+MEG-dataset-acquisition is Class.
+MEG-equipment is Class.
+MEG-equipment SubClassOf dataset-acquisition-equipment,.
+MEG-equipment SubClassOf allows-to-carry-out some MEG-dataset-acquisition.
+MR-contrast-agent is Class.
+MR-contrast-agent SubClassOf contrast-agent,.
+MR-contrast-agent SubClassOf allows-to-carry-out some MR-dataset-acquisition.
+MR-dataset-acquisition is Class.
+MR-equipment is Class.
+MR-equipment SubClassOf dataset-acquisition-equipment,.
+MR-equipment SubClassOf allows-to-carry-out some MR-dataset-acquisition.
+PET-dataset-acquisition is Class.
+PET-equipment is Class.
+PET-equipment SubClassOf dataset-acquisition-equipment,.
+PET-equipment SubClassOf allows-to-carry-out some PET-dataset-acquisition.
+SPECT-dataset-acquisition is Class.
+SPECT-equipment is Class.
+SPECT-equipment SubClassOf dataset-acquisition-equipment,.
+SPECT-equipment SubClassOf allows-to-carry-out some SPECT-dataset-acquisition.
+body-coil is Class.
+body-coil SubClassOf coil,.
+body-coil SubClassOf has-for-type-name value body.
+coil is Class.
+contrast-agent is Class.
+dataset-acquisition-equipment is Class.
+gadolinium-as-contrast-agent is Class.
+gadolinium-as-contrast-agent SubClassOf MR-contrast-agent.
+head-coil is Class.
+head-coil SubClassOf coil,.
+head-coil SubClassOf has-for-type-name value head.
+inversion-recovery-single-echo-spin-echo-sequence is Class.
+inversion-recovery-single-echo-spin-echo-sequence SubClassOf single-echo-spin-echo-sequence.
+multi-channel-coil is Class.
+multi-channel-coil SubClassOf coil.
+multi-channel-coil DisjointWith one-channel-coil.
+one-channel-coil is Class.
+one-channel-coil SubClassOf coil.
+one-channel-coil DisjointWith multi-channel-coil.
+receiving-coil is Class.
+receiving-coil SubClassOf coil,.
+receiving-coil SubClassOf has-for-role-name value receiving.
+single-echo-spin-echo-sequence is Class.
+surface-coil is Class.
+surface-coil SubClassOf coil,.
+surface-coil SubClassOf has-for-type-name value surface.
+transmitting-coil is Class.
+transmitting-coil SubClassOf coil,.
+transmitting-coil SubClassOf has-for-role-name value transmitting.
+uspio-as-contrast-agent is Class.
+uspio-as-contrast-agent SubClassOf MR-contrast-agent.
+coordinator is Class.
+coordinator SubClassOf investigator,.
+coordinator SubClassOf supervises-as-coordinator-at some multi-centre-study.
+gerontologist is Class.
+gerontologist SubClassOf medical-doctor.
+investigator is Class.
+medical-doctor is Class.
+multi-centre-study is Class.
+study is Class.
+www.w3.org/2002/07/# is Class.
+body is Individual.
+head is Individual.
+receiving is Individual.
+surface is Individual.
+transmitting is Individual.
+transmitting DisjointClasses CT-equipment,EEG-equipment,MEG-equipment,MR-equipment,PET-equipment,SPECT-equipment.
+transmitting DisjointClasses body-coil,head-coil,surface-coil.
+is-the-compression-of min 1 file is Class.
+is-the-compression-of min 1 file SubClassOf RAR-file.

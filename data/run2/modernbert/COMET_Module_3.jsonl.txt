@@ -1,0 +1,219 @@
+area is ObjectProperty.
+collected from is ObjectProperty.
+depth is ObjectProperty.
+follows procedure is ObjectProperty.
+material collected is ObjectProperty.
+mining method is ObjectProperty.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification,.
+<https SubClassOf PermissibleValue.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+<https is Class.
+<https SubClassOf HealthcareEncounterClassification.
+OBI 0002492 is Class.
+OBI 0002492 SubClassOf CaseOrControlEnum,.
+OBI 0002492 SubClassOf PermissibleValue.
+OBI 0002493 is Class.
+OBI 0002493 SubClassOf CaseOrControlEnum,.
+OBI 0002493 SubClassOf PermissibleValue.
+PATO 0001421 is Class.
+PATO 0001421 SubClassOf PersonStatus,.
+PATO 0001421 SubClassOf PermissibleValue.
+PATO 0001422 is Class.
+PATO 0001422 SubClassOf PersonStatus,.
+PATO 0001422 SubClassOf PermissibleValue.
+CaseOrControlEnum is Class.
+CaseOrControlEnum is equivalent to OBI 0002492 or OBI 0002493.
+CaseOrControlEnum SubClassOf EnumDefinition.
+CreationMetadata is Class.
+Mixin is ClassDefinition#.
+DataGenerationFromSample is Class.
+DataGenerationFromSample SubClassOf InvestigativeProcess.
+EngineeringSpecification is Class.
+EngineeringSpecification SubClassOf Procedure.
+ExtractiveIndustryFacility is Class.
+ExtractiveIndustryFacilityType is Class.
+MINING FACILITY or ExtractiveIndustryFacilityType# is ExtractiveIndustryFacilityType#.
+MINING FACILITY or ExtractiveIndustryFacilityType# SubClassOf EnumDefinition.
+ExtractiveIndustryProductType is Class.
+COAL or ExtractiveIndustryProductType# is ExtractiveIndustryProductType#.
+COAL or ExtractiveIndustryProductType# SubClassOf EnumDefinition.
+FinanicialOrganizationEnum is Class.
+FinanicialOrganizationEnum SubClassOf EnumDefinition.
+FoodPreparation is Class.
+FoodPreparation SubClassOf PlannedProcess,.
+FoodPreparation SubClassOf follows procedure only FoodRecipe,.
+Thing, is follows procedure min 0 www.w3.org/2002/07/#.
+Thing is follows procedure max 1 www.w3.org/2002/07/#.
+FoodRecipe is Class.
+FossilFuelType is Class.
+COAL or FossilFuelType# is FossilFuelType#.
+COAL or FossilFuelType# SubClassOf EnumDefinition.
+HealthcareEncounterClassification is Class.
+//HealthcareEncounterClassification#Ambulance+Visit or <https is <https.
+//HealthcareEncounterClassification#Ambulance+Visit or <https SubClassOf EnumDefinition.
+HumanLanguageCodeEnum is Class.
+HumanLanguageCodeEnum SubClassOf EnumDefinition.
+InvestigativeProcess is Class.
+InvestigativeProtocolEnum is Class.
+InvestigativeProtocolEnum SubClassOf EnumDefinition.
+LandformEnum is Class.
+LandformEnum SubClassOf EnumDefinition.
+MaterialCollection is Class.
+MaterialCollection SubClassOf PlannedProcess.
+MiningFacility is Class.
+MiningFacility SubClassOf ExtractiveIndustryFacility,.
+MiningFacility SubClassOf area only SimpleQuantity,.
+MiningFacility SubClassOf depth only SimpleQuantity,.
+MiningFacility SubClassOf mining method only MiningMethod,.
+Thing, is area min 0 www.w3.org/2002/07/#.
+Thing, is depth min 0 www.w3.org/2002/07/#.
+Thing, is mining method min 0 www.w3.org/2002/07/#.
+Thing, is area max 1 www.w3.org/2002/07/#.
+Thing, is depth max 1 www.w3.org/2002/07/#.
+Thing is mining method max 1 www.w3.org/2002/07/#.
+MiningMethod is Class.
+IN SITU or MiningMethod# is MiningMethod#.
+IN SITU or MiningMethod# SubClassOf EnumDefinition.
+OrganismTaxonEnum is Class.
+OrganismTaxonEnum SubClassOf EnumDefinition.
+OrganizationPersonnelRelationshipEnum is Class.
+OrganizationPersonnelRelationshipEnum SubClassOf EnumDefinition.
+OutcomeType is Class.
+FN or OutcomeType# is OutcomeType#.
+FN or OutcomeType# SubClassOf EnumDefinition.
+PersonStatus is Class.
+UNKNOWN is PATO 0001421 or PATO 0001422 or PersonStatus#.
+UNKNOWN SubClassOf EnumDefinition.
+PhysicalEntity is Class.
+PlannedProcess is Class.
+Procedure is Class.
+RelativeTimeEnum is Class.
+AFTER or RelativeTimeEnum# is RelativeTimeEnum#.
+AFTER or RelativeTimeEnum# SubClassOf EnumDefinition.
+SampleCollectionProcess is Class.
+SampleCollectionProcess SubClassOf InvestigativeProcess,.
+SampleCollectionProcess SubClassOf collected from only PhysicalEntity,.
+SampleCollectionProcess SubClassOf material collected only SampleMaterial,.
+Thing, is collected from min 0 www.w3.org/2002/07/#.
+Thing, is material collected min 0 www.w3.org/2002/07/#.
+Thing, is collected from max 1 www.w3.org/2002/07/#.
+Thing is material collected max 1 www.w3.org/2002/07/#.
+SampleMaterial is Class.
+SampleProcessingEnum is Class.
+SampleProcessingEnum SubClassOf EnumDefinition.
+SimpleQuantity is Class.
+StudyDesignEnum is Class.
+StudyDesignEnum SubClassOf EnumDefinition.
+WellType is Class.
+GAS or WellType# is WellType#.
+GAS or WellType# SubClassOf EnumDefinition.
+ExtractiveIndustryFacilityType# is Class.
+ExtractiveIndustryFacilityType# SubClassOf ExtractiveIndustryFacilityType,.
+ExtractiveIndustryFacilityType# SubClassOf PermissibleValue.
+ExtractiveIndustryFacilityType# is Class.
+ExtractiveIndustryFacilityType# SubClassOf ExtractiveIndustryFacilityType,.
+ExtractiveIndustryFacilityType# SubClassOf PermissibleValue.
+ExtractiveIndustryFacilityType# is Class.
+ExtractiveIndustryFacilityType# SubClassOf ExtractiveIndustryFacilityType,.
+ExtractiveIndustryFacilityType# SubClassOf PermissibleValue.
+ExtractiveIndustryProductType# is Class.
+ExtractiveIndustryProductType# SubClassOf ExtractiveIndustryProductType.
+ExtractiveIndustryProductType# is Class.
+ExtractiveIndustryProductType# SubClassOf ExtractiveIndustryProductType.
+ExtractiveIndustryProductType# is Class.
+ExtractiveIndustryProductType# SubClassOf ExtractiveIndustryProductType,.
+ExtractiveIndustryProductType# SubClassOf PermissibleValue.
+ExtractiveIndustryProductType# is Class.
+ExtractiveIndustryProductType# SubClassOf ExtractiveIndustryProductType,.
+ExtractiveIndustryProductType# SubClassOf PermissibleValue.
+ExtractiveIndustryProductType# is Class.
+ExtractiveIndustryProductType# SubClassOf ExtractiveIndustryProductType,.
+ExtractiveIndustryProductType# SubClassOf PermissibleValue.
+ExtractiveIndustryProductType# is Class.
+ExtractiveIndustryProductType# SubClassOf ExtractiveIndustryProductType.
+ExtractiveIndustryProductType# is Class.
+ExtractiveIndustryProductType# SubClassOf ExtractiveIndustryProductType,.
+ExtractiveIndustryProductType# SubClassOf PermissibleValue.
+ExtractiveIndustryProductType# is Class.
+ExtractiveIndustryProductType# SubClassOf ExtractiveIndustryProductType,.
+ExtractiveIndustryProductType# SubClassOf PermissibleValue.
+FossilFuelType# is Class.
+FossilFuelType# SubClassOf FossilFuelType,.
+FossilFuelType# SubClassOf PermissibleValue.
+FossilFuelType# is Class.
+FossilFuelType# SubClassOf FossilFuelType,.
+FossilFuelType# SubClassOf PermissibleValue.
+FossilFuelType# is Class.
+FossilFuelType# SubClassOf FossilFuelType,.
+FossilFuelType# SubClassOf PermissibleValue.
+MiningMethod# is Class.
+MiningMethod# SubClassOf MiningMethod,.
+MiningMethod# SubClassOf PermissibleValue.
+MiningMethod# is Class.
+MiningMethod# SubClassOf MiningMethod,.
+MiningMethod# SubClassOf PermissibleValue.
+MiningMethod# is Class.
+MiningMethod# SubClassOf MiningMethod,.
+MiningMethod# SubClassOf PermissibleValue.
+MiningMethod# is Class.
+MiningMethod# SubClassOf MiningMethod,.
+MiningMethod# SubClassOf PermissibleValue.
+OutcomeType# is Class.
+OutcomeType# SubClassOf OutcomeType,.
+OutcomeType# SubClassOf PermissibleValue.
+OutcomeType# is Class.
+OutcomeType# SubClassOf OutcomeType,.
+OutcomeType# SubClassOf PermissibleValue.
+OutcomeType# is Class.
+OutcomeType# SubClassOf OutcomeType,.
+OutcomeType# SubClassOf PermissibleValue.
+OutcomeType# is Class.
+OutcomeType# SubClassOf OutcomeType,.
+OutcomeType# SubClassOf PermissibleValue.
+PersonStatus# is Class.
+PersonStatus# SubClassOf PersonStatus,.
+PersonStatus# SubClassOf PermissibleValue.
+RelativeTimeEnum# is Class.
+RelativeTimeEnum# SubClassOf RelativeTimeEnum,.
+RelativeTimeEnum# SubClassOf PermissibleValue.
+RelativeTimeEnum# is Class.
+RelativeTimeEnum# SubClassOf RelativeTimeEnum,.
+RelativeTimeEnum# SubClassOf PermissibleValue.
+RelativeTimeEnum# is Class.
+RelativeTimeEnum# SubClassOf RelativeTimeEnum,.
+RelativeTimeEnum# SubClassOf PermissibleValue.
+WellType# is Class.
+WellType# SubClassOf WellType,.
+WellType# SubClassOf PermissibleValue.
+WellType# is Class.
+WellType# SubClassOf WellType,.
+WellType# SubClassOf PermissibleValue.
+WellType# is Class.
+WellType# SubClassOf WellType,.
+WellType# SubClassOf PermissibleValue.
+WellType# is Class.
+WellType# SubClassOf WellType,.
+WellType# SubClassOf PermissibleValue.
+EnumDefinition is Class.
+Thing is www.w3.org/2002/07/#.
+PermissibleValue is Class.
+ClassDefinition# is Class.
+www.w3.org/2002/07/# is Class.

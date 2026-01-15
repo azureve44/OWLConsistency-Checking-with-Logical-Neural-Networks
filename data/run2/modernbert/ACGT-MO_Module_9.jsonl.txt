@@ -1,0 +1,390 @@
+creates is ObjectProperty.
+followUpOf is ObjectProperty.
+followUpOf Domain MedicalProcess.
+followUpOf Range MedicalProcess.
+followUpOf InverseOf hasFollowUp.
+hasFollowUp is ObjectProperty.
+hasFollowUp Domain MedicalProcess.
+hasFollowUp Range MedicalProcess.
+hasFollowUp InverseOf followUpOf.
+hasIdentifier is ObjectProperty.
+hasOutcome is ObjectProperty.
+hasPatient is ObjectProperty.
+hasPlace is ObjectProperty.
+hasQuality is ObjectProperty.
+implements is ObjectProperty.
+makesUseOfTechnicalObject is ObjectProperty.
+makesUseOfTechnicalObject Domain MedicalProcess.
+makesUseOfTechnicalObject Range IndependentContinuant.
+makesUseOfTechnicalObject InverseOf usedInMedicalProcess.
+pictures is ObjectProperty.
+pictures Domain Imaging.
+pictures Range OrganismalIndependentContinuant.
+promptedBy is ObjectProperty.
+reveals is ObjectProperty.
+undergoneBy is ObjectProperty.
+undertakenBy is ObjectProperty.
+usedInMedicalProcess is ObjectProperty.
+usedInMedicalProcess InverseOf makesUseOfTechnicalObject.
+hasAgent is ObjectProperty.
+hasPart is ObjectProperty.
+hasParticipant is ObjectProperty.
+ALPLevel is Class.
+ALTCount is Class.
+ANC is Class.
+ANC SubClassOf HematologicalBiochemicalTest,.
+ANC SubClassOf reveals some ANCount,.
+ANC SubClassOf reveals only ANCount.
+ANCount is Class.
+ASTCount is Class.
+AlkalinePhosphataseTest is Class.
+AlkalinePhosphataseTest SubClassOf HematologicalBiochemicalTest,.
+AlkalinePhosphataseTest SubClassOf reveals some ALPLevel,.
+AlkalinePhosphataseTest SubClassOf reveals only ALPLevel.
+Audiometry is Class.
+Audiometry SubClassOf DiagnosticProcess.
+Autopsy is Class.
+Autopsy SubClassOf DiagnosticProcess.
+Autopsy DisjointWith UrineExam.
+Autopsy DisjointWith Surveillance.
+Autopsy DisjointWith SputumExam.
+Autopsy DisjointWith PregnancyTest.
+Autopsy DisjointWith MacropathologicalExamination.
+Autopsy DisjointWith HistologicalExamination.
+Autopsy DisjointWith HematologicalBiochemicalTest.
+Autopsy DisjointWith CytologicalExamination.
+Biopsy is Class.
+Biopsy is equivalent to BiopsyWithIncision or BiopsyWithoutIncision.
+Biopsy SubClassOf DiagnosticProcess,.
+Biopsy SubClassOf hasOutcome some HistologicalSample,.
+Biopsy SubClassOf undergoneBy some Organism.
+Biopsy DisjointWith ClinicalExamination.
+BiopsyNeedle is Class.
+BiopsyWithIncision is Class.
+BiopsyWithIncision SubClassOf Biopsy.
+BiopsyWithIncision DisjointWith BiopsyWithoutIncision.
+BiopsyWithoutIncision is Class.
+BiopsyWithoutIncision SubClassOf Biopsy,.
+BiopsyWithoutIncision SubClassOf hasParticipant min 0 BiopsyNeedle.
+BiopsyWithoutIncision DisjointWith BiopsyWithIncision.
+BloodPressureMeasuringProcess is Class.
+BloodPressureMeasuringProcess SubClassOf DiagnosticProcess.
+BoneScintigraphy is Class.
+BoneScintigraphy SubClassOf Scintigraphy.
+CellCounting is Class.
+CellCounting SubClassOf DiagnosticProcess.
+CerebrospinalLiquidPuncture is Class.
+CerebrospinalLiquidPuncture SubClassOf DiagnosticProcess,.
+CerebrospinalLiquidPuncture SubClassOf creates min 0 CerebrospinalLiquidSample.
+CerebrospinalLiquidSample is Class.
+ChemicalSubstance is Class.
+ClinicalExamination is Class.
+ClinicalExamination SubClassOf DiagnosticProcess,.
+ClinicalExamination SubClassOf undergoneBy some Organism.
+ClinicalExamination DisjointWith Biopsy.
+Computertomography is Class.
+Computertomography SubClassOf Imaging,.
+Computertomography SubClassOf hasParticipant min 0 ChemicalSubstance.
+Computertomography DisjointWith Ultrasound.
+Computertomography DisjointWith RoentgenologicalImaging.
+Computertomography DisjointWith MagneticResonanceImaging.
+ConeBiopsy is Class.
+ConeBiopsy SubClassOf BiopsyWithoutIncision.
+CoreNeedleBiopsy is Class.
+CoreNeedleBiopsy SubClassOf BiopsyWithoutIncision.
+CountingPlatelets is Class.
+CountingPlatelets SubClassOf HematologicalBiochemicalTest,.
+CountingPlatelets SubClassOf reveals some PlateletCount,.
+CountingPlatelets SubClassOf reveals only PlateletCount.
+CountingRedBloodCells is Class.
+CountingRedBloodCells SubClassOf HematologicalBiochemicalTest,.
+CountingRedBloodCells SubClassOf reveals some TotalRBC,.
+CountingRedBloodCells SubClassOf reveals only TotalRBC.
+CytogeneticExamination is Class.
+CytogeneticExamination SubClassOf DiagnosticProcess.
+CytologicalExamination is Class.
+CytologicalExamination SubClassOf DiagnosticProcess.
+CytologicalExamination DisjointWith UrineExam.
+CytologicalExamination DisjointWith Surveillance.
+CytologicalExamination DisjointWith SputumExam.
+CytologicalExamination DisjointWith PregnancyTest.
+CytologicalExamination DisjointWith MacropathologicalExamination.
+CytologicalExamination DisjointWith HistologicalExamination.
+CytologicalExamination DisjointWith HematologicalBiochemicalTest.
+CytologicalExamination DisjointWith Autopsy.
+DCISHistologicalAssessment is Class.
+DCISHistologicalAssessment SubClassOf HistologicalExamination.
+DiagnosticProcess is Class.
+DiagnosticProcess SubClassOf MedicalProcess.
+DifferentiationClass is Class.
+ECG is Class.
+ECG SubClassOf DiagnosticProcess,.
+ECG SubClassOf reveals some ESV,.
+ECG SubClassOf undergoneBy some Organism.
+EPOLevelTest is Class.
+EPOLevelTest SubClassOf HematologicalBiochemicalTest.
+ER is Class.
+ERHistologicalAssessment is Class.
+ERHistologicalAssessment SubClassOf HistologicalExamination,.
+ERHistologicalAssessment SubClassOf reveals some ERStatus,.
+ERHistologicalAssessment SubClassOf hasPart some IHC,.
+ERHistologicalAssessment SubClassOf hasParticipant some ER.
+ERStatus is Class.
+ESV is Class.
+Echocardiography is Class.
+Echocardiography SubClassOf Ultrasound.
+EndOfFrequencyRecordingProcess is Class.
+EndOfFrequencyRecordingProcess SubClassOf RecordingProcessEnd.
+EndOfFrequencyRecordingProcess DisjointWith EndOfWeightRecordingProcess.
+EndOfFrequencyRecordingProcess DisjointWith EndOfPressureRecordingProcess.
+EndOfPressureRecordingProcess is Class.
+EndOfPressureRecordingProcess DisjointWith EndOfFrequencyRecordingProcess.
+EndOfWeightRecordingProcess is Class.
+EndOfWeightRecordingProcess DisjointWith EndOfFrequencyRecordingProcess.
+EndoscopicBiopsy is Class.
+EndoscopicBiopsy SubClassOf BiopsyWithoutIncision.
+FineNeedleBiopsy is Class.
+FineNeedleBiopsy SubClassOf BiopsyWithoutIncision.
+HbTest is Class.
+HbTest SubClassOf HematologicalBiochemicalTest,.
+HbTest SubClassOf reveals some HemoglobinConcentration,.
+HbTest SubClassOf reveals only HemoglobinConcentration.
+HematologicalBiochemicalTest is Class.
+HematologicalBiochemicalTest SubClassOf DiagnosticProcess,.
+HematologicalBiochemicalTest SubClassOf undergoneBy some Organism.
+HematologicalBiochemicalTest DisjointWith UrineExam.
+HematologicalBiochemicalTest DisjointWith Surveillance.
+HematologicalBiochemicalTest DisjointWith SputumExam.
+HematologicalBiochemicalTest DisjointWith PregnancyTest.
+HematologicalBiochemicalTest DisjointWith MacropathologicalExamination.
+HematologicalBiochemicalTest DisjointWith HistologicalExamination.
+HematologicalBiochemicalTest DisjointWith CytologicalExamination.
+HematologicalBiochemicalTest DisjointWith Autopsy.
+HemoglobinConcentration is Class.
+HistologicalExamination is Class.
+HistologicalExamination SubClassOf DiagnosticProcess,.
+HistologicalExamination SubClassOf undergoneBy some MaterialOrganismalIndependentContinuant,.
+HistologicalExamination SubClassOf undergoneBy some Organism,.
+HistologicalExamination SubClassOf reveals only HistologicalType,.
+HistologicalExamination SubClassOf implements min 0 JournalNumber.
+HistologicalExamination DisjointWith UrineExam.
+HistologicalExamination DisjointWith Surveillance.
+HistologicalExamination DisjointWith SputumExam.
+HistologicalExamination DisjointWith PregnancyTest.
+HistologicalExamination DisjointWith MacropathologicalExamination.
+HistologicalExamination DisjointWith HematologicalBiochemicalTest.
+HistologicalExamination DisjointWith CytologicalExamination.
+HistologicalExamination DisjointWith Autopsy.
+HistologicalSample is Class.
+HistologicalType is Class.
+HistopathologicTypeAssessment is Class.
+HistopathologicTypeAssessment SubClassOf HistologicalExamination.
+HumanBeing is Class.
+IHC is Class.
+Identifier is Class.
+Imaging is Class.
+Imaging SubClassOf DiagnosticProcess,.
+Imaging SubClassOf hasOutcome some MedicalImage,.
+Imaging SubClassOf pictures min 1 OrganismalIndependentContinuant.
+ImmunohistochemicalExamination is Class.
+ImmunohistochemicalExamination SubClassOf DiagnosticProcess.
+Inking is Class.
+Inking SubClassOf DiagnosticProcess.
+Institution is Class.
+IntentionalProcess is Class.
+InvasiveDuctalCarcinomaAssessment is Class.
+InvasiveDuctalCarcinomaAssessment SubClassOf HistopathologicTypeAssessment.
+InvasiveLobularCarcinomaAssessment is Class.
+InvasiveLobularCarcinomaAssessment SubClassOf HistopathologicTypeAssessment.
+JournalNumber is Class.
+LCISHistologicalAssessment is Class.
+LCISHistologicalAssessment SubClassOf HistologicalExamination.
+LocalRadiologist is Class.
+LocalRadiologist SubClassOf Radiologist.
+LumbarCerebrospinalFluidPuncture is Class.
+LumbarCerebrospinalFluidPuncture SubClassOf CerebrospinalLiquidPuncture.
+MUGAScan is Class.
+MUGAScan SubClassOf NuclearImaging.
+MacropathologicalExamination is Class.
+MacropathologicalExamination SubClassOf DiagnosticProcess.
+MacropathologicalExamination DisjointWith UrineExam.
+MacropathologicalExamination DisjointWith Surveillance.
+MacropathologicalExamination DisjointWith SputumExam.
+MacropathologicalExamination DisjointWith PregnancyTest.
+MacropathologicalExamination DisjointWith HistologicalExamination.
+MacropathologicalExamination DisjointWith HematologicalBiochemicalTest.
+MacropathologicalExamination DisjointWith CytologicalExamination.
+MacropathologicalExamination DisjointWith Autopsy.
+MagneticResonanceImaging is Class.
+MagneticResonanceImaging SubClassOf Imaging,.
+MagneticResonanceImaging SubClassOf hasParticipant min 0 ChemicalSubstance.
+MagneticResonanceImaging DisjointWith Ultrasound.
+MagneticResonanceImaging DisjointWith RoentgenologicalImaging.
+MagneticResonanceImaging DisjointWith Computertomography.
+MaleHumanBeing is Class.
+MalignancyRelatedDiagnosticProcess is Class.
+MalignancyRelatedDiagnosticProcess SubClassOf DiagnosticProcess.
+MaterialOrganismalIndependentContinuant is Class.
+MedicalImage is Class.
+MedicalProcess is Class.
+MedicalProcess is equivalent to DiagnosticProcess or TherapeuticProcess.
+MedicalProcess SubClassOf IntentionalProcess,.
+MedicalProcess SubClassOf hasAgent some HumanBeing,.
+MedicalProcess SubClassOf hasParticipant some Organism,.
+Thing, is followUpOf min 0 www.w3.org/2002/07/#.
+Thing, is hasFollowUp min 0 www.w3.org/2002/07/#.
+Thing, is hasIdentifier min 0 Identifier,.
+Thing, is hasPatient min 1 www.w3.org/2002/07/#.
+Thing, is hasPlace min 1 Institution,.
+Thing, is hasQuality min 0 Toxicity,.
+Thing, is promptedBy min 0 ProcessualEntity,.
+Thing is undertakenBy min 1 www.w3.org/2002/07/#.
+MicropathologicalExamination is Class.
+MicropathologicalExamination SubClassOf DiagnosticProcess.
+MoleculargeneticExamination is Class.
+MoleculargeneticExamination SubClassOf DiagnosticProcess.
+Neoplasm is Class.
+NeurologicalExamination is Class.
+NeurologicalExamination SubClassOf DiagnosticProcess.
+NodalStatus is Class.
+NodalStatusAssessment is Class.
+NodalStatusAssessment SubClassOf TumorClassAssessment,.
+NodalStatusAssessment SubClassOf reveals some NodalStatus,.
+NodalStatusAssessment SubClassOf undergoneBy some Organism,.
+NodalStatusAssessment SubClassOf reveals only NodalStatus.
+NuclearImaging is Class.
+NuclearImaging SubClassOf Imaging.
+OphtalmologicalDiagnosticProcess is Class.
+OphtalmologicalDiagnosticProcess SubClassOf DiagnosticProcess.
+Organism is Class.
+OrganismalIndependentContinuant is Class.
+PR is Class.
+PRHistologicalAssessment is Class.
+PRHistologicalAssessment SubClassOf HistologicalExamination,.
+PRHistologicalAssessment SubClassOf reveals some PRStatus,.
+PRHistologicalAssessment SubClassOf hasPart some IHC,.
+PRHistologicalAssessment SubClassOf hasParticipant some PR.
+PRStatus is Class.
+PlateletCount is Class.
+PregnancyStatus is Class.
+PregnancyTest is Class.
+PregnancyTest SubClassOf DiagnosticProcess,.
+PregnancyTest SubClassOf not (undergoneBy some MaleHumanBeing),.
+PregnancyTest SubClassOf reveals some PregnancyStatus,.
+PregnancyTest SubClassOf undergoneBy some Organism,.
+PregnancyTest SubClassOf reveals only PregnancyStatus.
+PregnancyTest DisjointWith UrineExam.
+PregnancyTest DisjointWith Surveillance.
+PregnancyTest DisjointWith SputumExam.
+PregnancyTest DisjointWith MacropathologicalExamination.
+PregnancyTest DisjointWith HistologicalExamination.
+PregnancyTest DisjointWith HematologicalBiochemicalTest.
+PregnancyTest DisjointWith CytologicalExamination.
+PregnancyTest DisjointWith Autopsy.
+PrenatalDiagnosticProcess is Class.
+PrenatalDiagnosticProcess SubClassOf DiagnosticProcess.
+ProphylacticCheckUp is Class.
+ProphylacticCheckUp SubClassOf DiagnosticProcess.
+PunchBiopsy is Class.
+PunchBiopsy SubClassOf BiopsyWithoutIncision.
+Radiologist is Class.
+RecordingProcessEnd is Class.
+ReferenceRoentgenologicalImaging is Class.
+ReferenceRoentgenologicalImaging SubClassOf RoentgenologicalImaging.
+RhabdoidTumorPredispositionSyndromProcess is Class.
+RhabdoidTumorPredispositionSyndromProcess SubClassOf SyndromeProcess.
+RoentgenologicalImaging is Class.
+RoentgenologicalImaging SubClassOf Imaging.
+RoentgenologicalImaging DisjointWith Ultrasound.
+RoentgenologicalImaging DisjointWith MagneticResonanceImaging.
+RoentgenologicalImaging DisjointWith Computertomography.
+Scintigraphy is Class.
+Scintigraphy SubClassOf Imaging.
+Screening is Class.
+Screening SubClassOf DiagnosticProcess.
+SerumCreatinineConcentration is Class.
+SerumCreatinineTest is Class.
+SerumCreatinineTest SubClassOf HematologicalBiochemicalTest,.
+SerumCreatinineTest SubClassOf reveals some SerumCreatinineConcentration.
+SputumExam is Class.
+SputumExam SubClassOf DiagnosticProcess,.
+SputumExam SubClassOf undergoneBy some Organism.
+SputumExam DisjointWith UrineExam.
+SputumExam DisjointWith Surveillance.
+SputumExam DisjointWith PregnancyTest.
+SputumExam DisjointWith MacropathologicalExamination.
+SputumExam DisjointWith HistologicalExamination.
+SputumExam DisjointWith HematologicalBiochemicalTest.
+SputumExam DisjointWith CytologicalExamination.
+SputumExam DisjointWith Autopsy.
+SurfaceBiopsy is Class.
+SurfaceBiopsy SubClassOf BiopsyWithoutIncision.
+Surveillance is Class.
+Surveillance SubClassOf DiagnosticProcess.
+Surveillance DisjointWith UrineExam.
+Surveillance DisjointWith SputumExam.
+Surveillance DisjointWith PregnancyTest.
+Surveillance DisjointWith MacropathologicalExamination.
+Surveillance DisjointWith HistologicalExamination.
+Surveillance DisjointWith HematologicalBiochemicalTest.
+Surveillance DisjointWith CytologicalExamination.
+Surveillance DisjointWith Autopsy.
+SyndromeProcess is Class.
+TherapeuticProcess is Class.
+TherapeuticProcess SubClassOf MedicalProcess.
+TotalBilirubin is Class.
+TotalBilirubinTest is Class.
+TotalBilirubinTest SubClassOf HematologicalBiochemicalTest,.
+TotalBilirubinTest SubClassOf reveals some TotalBilirubin,.
+TotalBilirubinTest SubClassOf reveals only TotalBilirubin.
+TotalRBC is Class.
+Toxicity is Class.
+TransaminaseBiochemistry is Class.
+TransaminaseBiochemistry SubClassOf HematologicalBiochemicalTest,.
+TransaminaseBiochemistry SubClassOf reveals some ALTCount,.
+TransaminaseBiochemistry SubClassOf reveals some ASTCount,.
+TransaminaseBiochemistry SubClassOf reveals only.
+TransaminaseBiochemistry SubClassOf (ALTCount or ASTCount).
+TroponinTest is Class.
+TroponinTest SubClassOf HematologicalBiochemicalTest.
+TrucutBiopsy is Class.
+TrucutBiopsy SubClassOf BiopsyWithoutIncision.
+TumorCellCounting is Class.
+TumorCellCounting SubClassOf CellCounting.
+TumorClassAssessment is Class.
+TumorClassAssessment SubClassOf DiagnosticProcess.
+TumorGradeAssessment is Class.
+TumorGradeAssessment SubClassOf TumorClassAssessment,.
+TumorGradeAssessment SubClassOf reveals some DifferentiationClass,.
+TumorGradeAssessment SubClassOf undergoneBy some Neoplasm,.
+TumorGradeAssessment SubClassOf undergoneBy some Organism,.
+TumorGradeAssessment SubClassOf reveals only DifferentiationClass.
+Ultrasound is Class.
+Ultrasound SubClassOf Imaging.
+Ultrasound DisjointWith RoentgenologicalImaging.
+Ultrasound DisjointWith MagneticResonanceImaging.
+Ultrasound DisjointWith Computertomography.
+UrineExam is Class.
+UrineExam SubClassOf DiagnosticProcess,.
+UrineExam SubClassOf undergoneBy some Organism,.
+UrineExam SubClassOf hasParticipant some UrineSample.
+UrineExam DisjointWith Surveillance.
+UrineExam DisjointWith SputumExam.
+UrineExam DisjointWith PregnancyTest.
+UrineExam DisjointWith MacropathologicalExamination.
+UrineExam DisjointWith HistologicalExamination.
+UrineExam DisjointWith HematologicalBiochemicalTest.
+UrineExam DisjointWith CytologicalExamination.
+UrineExam DisjointWith Autopsy.
+UrineSample is Class.
+VentricularCerebrospinalFluidPuncture is Class.
+VentricularCerebrospinalFluidPuncture SubClassOf CerebrospinalLiquidPuncture.
+WBC is Class.
+WBC SubClassOf HematologicalBiochemicalTest,.
+WBC SubClassOf reveals some WBCCount,.
+WBC SubClassOf reveals only WBCCount.
+WBCCount is Class.
+SIOP2001/ is Class.
+IndependentContinuant is Class.
+ProcessualEntity is Class.
+www.w3.org/2002/07/# is Class.

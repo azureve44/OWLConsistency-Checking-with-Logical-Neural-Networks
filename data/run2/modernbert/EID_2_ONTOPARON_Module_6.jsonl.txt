@@ -1,0 +1,354 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+aPourThematique is ObjectProperty.
+estLeLieuExercice is ObjectProperty.
+estPartieDe is ObjectProperty.
+estRealisePar is ObjectProperty.
+exerceA is ObjectProperty.
+Service Interne Hopital is Class.
+Service Interne Hopital SubClassOf Service Sante,.
+Service Interne Hopital SubClassOf estPartieDe some Hopital.
+Service Moyen Sejour is Class.
+Service Moyen Sejour SubClassOf Service Interne Hopital.
+Service Neurologie is Class.
+Service Neurologie SubClassOf Service Interne Hopital.
+Service Sante is Class.
+Axiologie is Class.
+Axiologie SubClassOf QualitatifObjetMetaFonctionnel.
+BonneQualite is Class.
+BonneQualite SubClassOf ModaliteDeQualite.
+Eviter is Class.
+Eviter SubClassOf ModaliteDeVolonte.
+Intensite is Class.
+Intensite SubClassOf QualitatifObjetMetaFonctionnel.
+Interdiction is Class.
+Interdiction SubClassOf Interdire.
+ModaliteDeQualite is Class.
+ModaliteDeVolonte is Class.
+ModaliteDeontique is Class.
+ModaliteThetique is Class.
+ModaliteThetique SubClassOf ObjetFonctionnel.
+Normalité is Class.
+Normalité SubClassOf QualitatifObjetMetaFonctionnel.
+ObjetAbstrait is Class.
+ObjetFonctionnel is Class.
+ObjetFonctionnel SubClassOf MetaObjetAbstrait.
+ObjetIntentionnel is Class.
+ObjetIntentionnel SubClassOf ObjetAbstrait.
+PointDeVue is Class.
+Processus is Class.
+Processus SubClassOf ObjetIntentionnel.
+QualiteMoyenne is Class.
+QualiteMoyenne SubClassOf ModaliteDeQualite.
+Typicalite is Class.
+Typicalite SubClassOf QualitatifObjetMetaFonctionnel.
+ExplorationFonctionnelle is Class.
+AppelDeConjoint is Class.
+AppelDeConjoint SubClassOf AppelRecuDeEntourageEtPatient.
+AppelRecuDeEntourageEtPatient is Class.
+AvoirProposer is Class.
+AvoirProposer SubClassOf ConseilCoordination.
+ConseilAdaptation is Class.
+ConseilAdaptation SubClassOf ConseilNutritionnel.
+ConseilCoordination is Class.
+ConseilCoordination SubClassOf Conseiller,.
+ConseilCoordination SubClassOf aPourThematique some ThematiqueDeCoordination,.
+ConseilCoordination SubClassOf estRealisePar some CoordinateurReseauSla,.
+ConseilCoordination SubClassOf estRealisePar only Foie.
+ConseilEnrichissement is Class.
+ConseilEnrichissement SubClassOf ConseilNutritionnel.
+ConseilHydratation is Class.
+ConseilHydratation SubClassOf ConseilNutritionnel.
+ConseilNutritionnel is Class.
+ConseilNutritionnel SubClassOf ConseilCoordination,.
+ConseilNutritionnel SubClassOf aPourThematique some ThematiqueBesoinEtDemandeMedicale.
+ConseilsErgo is Class.
+ConseilsErgo SubClassOf ConseilCoordination.
+CoordinateurReseauSla is Class.
+CoordinateurReseauSla DisjointWith Foie.
+DiscussionIntubation is Class.
+DiscussionIntubation SubClassOf DiscussionSuppleanceRespiratoire.
+DiscussionSuppleanceRespiratoire is Class.
+DonnerCoordonnee is Class.
+DonnerCoordonnee SubClassOf DonnerInformation.
+DonnerInformation is Class.
+InformationStaff is Class.
+InformationStaff SubClassOf TransmissionRecueCentreExpert.
+MailDeProfessionelCentreExpert is Class.
+MailDeProfessionelCentreExpert SubClassOf TransmissionRecueCentreExpert.
+MiseEnPlaceAideTechnique is Class.
+MiseEnPlaceControleEnvironnement is Class.
+MiseEnPlaceControleEnvironnement SubClassOf MiseEnPlaceAideTechnique.
+MiseEnPlaceSonnette is Class.
+MiseEnPlaceSonnette SubClassOf MiseEnPlaceAideTechnique.
+PropositionAideTechnique is Class.
+PropositionAideTechnique SubClassOf ConseilCoordination.
+PropositionDispositif is Class.
+PropositionDispositif SubClassOf ConseilCoordination.
+PropositionEvaluation is Class.
+PropositionEvaluation SubClassOf ConseilCoordination.
+PropositionTraitement is Class.
+PropositionTraitement SubClassOf ConseilCoordination.
+PropositionVersAgent is Class.
+PropositionVersAgent SubClassOf ConseilCoordination.
+RetourAssistanteSociale is Class.
+RetourAssistanteSociale SubClassOf TransmissionRecueCentreExpert.
+RetourNeurologue is Class.
+RetourNeurologue SubClassOf TransmissionRecueCentreExpert.
+TranmissionCoordinateurSLA is Class.
+TranmissionCoordinateurSLA SubClassOf TransmissionFaite.
+TransmissionFaite is Class.
+TransmissionRecue is Class.
+TransmissionRecueCentreExpert is Class.
+TransmissionRecueCentreExpert SubClassOf TransmissionRecue.
+AggravationAtteinteMotrice is Class.
+AggravationAtteinteMotrice SubClassOf Paralysie,.
+AggravationAtteinteMotrice SubClassOf aPourThematique some ThematiqueAggravationMedicale.
+AggravationAtteinteMotriceMembres is Class.
+AggravationAtteinteMotriceMembres SubClassOf AggravationAtteinteMotrice.
+AlerteMedicale is Class.
+AlerteNutritionnelle is Class.
+AlerteNutritionnelle SubClassOf AlerteMedicale.
+AlimentationDifficile is Class.
+AlimentationDifficile SubClassOf TroubleAlimentaire.
+AtteinteAxiale is Class.
+AtteinteAxiale SubClassOf Paralysie.
+AtteinteHemicorps is Class.
+AtteinteHemicorps SubClassOf Paralysie.
+Ballonnet is Class.
+Ballonnet SubClassOf SondeDeGastrostomie.
+CabinetDOrthophonie is Class.
+CabinetDOrthophonie SubClassOf CabinetProfessionnelDeSante.
+CabinetDeKinesitherapie is Class.
+CabinetDeKinesitherapie SubClassOf CabinetProfessionnelDeSante.
+CabinetInfirmier is Class.
+CabinetInfirmier SubClassOf CabinetProfessionnelDeSante,.
+CabinetInfirmier SubClassOf estLeLieuExercice some Infirmier.
+CabinetMedical is Class.
+CabinetMedical SubClassOf CabinetProfessionnelDeSante.
+CabinetProfessionnelDeSante is Class.
+CabinetProfessionnelDeSante SubClassOf StructureMedicaleDeVille.
+CadreDeSante is Class.
+CadreDeSante SubClassOf ProfessionnelParamedical.
+CentreExpertSla is Class.
+Coeur is Class.
+Coeur SubClassOf OrganeAvecPartiesDOrganeCreuses.
+CompteRenduMedicaux is Class.
+CompteRenduNutritionnel is Class.
+CompteRenduNutritionnel SubClassOf CompteRenduMedicaux.
+DeficitAxial is Class.
+DeficitAxial SubClassOf AtteinteAxiale.
+DouleurArticulaire is Class.
+DouleurCervicale is Class.
+DouleurCervicale SubClassOf DouleurRachidienne.
+DouleurLombaire is Class.
+DouleurLombaire SubClassOf DouleurRachidienne.
+DouleurRachidienne is Class.
+DouleurRachidienne SubClassOf DouleurArticulaire.
+DouleurSacree is Class.
+DouleurSacree SubClassOf DouleurRachidienne.
+EpreuvesFonctionnellesDeLAppareilRespiratoire is Class.
+EpreuvesFonctionnellesDeLAppareilRespiratoire SubClassOf ExplorationFonctionnelle.
+ErgoCentreSla is Class.
+ErgoCentreSla SubClassOf ProfessionnelDuCentreExpert.
+ExamenRadiologique is Class.
+Foie is Class.
+Foie SubClassOf OrganeLobulaire.
+Foie DisjointWith .
+Foie DisjointWith CoordinateurReseauSla.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing is www.w3.org/2002/07/#.
+Gastrostomie is Class.
+Gastrostomie SubClassOf PriseEnChargeNutritionnelle.
+Hopital is Class.
+Hypersalivation is Class.
+HypersalivationImportante is Class.
+HypersalivationImportante SubClassOf Hypersalivation.
+IncontinenceAnale is Class.
+IncontinenceAnale SubClassOf TroubleFecal.
+Infirmier is Class.
+Intelligibilite is Class.
+IntelligibiliteFluctuante is Class.
+IntelligibiliteFluctuante SubClassOf Intelligibilite.
+Ligament is Class.
+Ligament SubClassOf OrganeNonParenchymateux.
+Ophtalmologie is Class.
+Ophtalmologie SubClassOf Service Interne Hopital.
+OrdonnanceSortie is Class.
+OrdonnanceSortie SubClassOf Prescription.
+OrganeAvecPartiesDOrganeCreuses is Class.
+OrganeAvecPartiesDOrganeCreuses SubClassOf OrganeCreux.
+OrganeCreux is Class.
+OrganeLobulaire is Class.
+OrganeLobulaire SubClassOf OrganeParenchymateux.
+OrganeNonParenchymateux is Class.
+OrganeParenchymateux is Class.
+Os is Class.
+Os SubClassOf OrganeAvecPartiesDOrganeCreuses.
+Pancreas is Class.
+Pancreas SubClassOf OrganeLobulaire.
+Paralysie is Class.
+Poumon is Class.
+Poumon SubClassOf OrganeLobulaire.
+Prescription is Class.
+PriseEnChargeMedicale is Class.
+PriseEnChargeNutritionnelle is Class.
+PriseEnChargeNutritionnelle SubClassOf PriseEnChargeMedicale.
+ProfessionelDeSante is Class.
+ProfessionnelDuCentreExpert is Class.
+ProfessionnelDuCentreExpert SubClassOf ProfessionelDeSante,.
+ProfessionnelDuCentreExpert SubClassOf exerceA some CentreExpertSla.
+ProfessionnelParamedical is Class.
+Prostate is Class.
+Prostate SubClassOf OrganeLobulaire.
+RadiographieConventionnelle is Class.
+RadiographieConventionnelle SubClassOf ExamenRadiologique.
+RadiologieInterventionnelle is Class.
+RadiologieInterventionnelle SubClassOf ServiceDeRadiologie.
+Reeducation is Class.
+ReeducationFonctionnelle is Class.
+ReeducationFonctionnelle SubClassOf Reeducation,.
+ReeducationFonctionnelle SubClassOf aPourThematique some ThematiqueMoteurEtFonctionnelle.
+Scanner is Class.
+Scanner SubClassOf ExamenRadiologique.
+ServiceDAideMedicaleUrgente is Class.
+ServiceDAideMedicaleUrgente SubClassOf Service Interne Hopital.
+ServiceDUrologie is Class.
+ServiceDUrologie SubClassOf Service Interne Hopital.
+ServiceDeCardiologie is Class.
+ServiceDeCardiologie SubClassOf Service Interne Hopital.
+ServiceDeChirurgie is Class.
+ServiceDeChirurgie SubClassOf Service Interne Hopital.
+ServiceDeGastro-Enterologie is Class.
+ServiceDeGastro-Enterologie SubClassOf Service Interne Hopital.
+ServiceDeGeriatrie is Class.
+ServiceDeGeriatrie SubClassOf Service Interne Hopital.
+ServiceDeMedecineGenerale is Class.
+ServiceDeMedecineGenerale SubClassOf Service Interne Hopital.
+ServiceDePneumologie is Class.
+ServiceDePneumologie SubClassOf Service Interne Hopital.
+ServiceDeRadiologie is Class.
+ServiceDeRadiologie SubClassOf Service Interne Hopital.
+ServiceDeReanimation is Class.
+ServiceDeReanimation SubClassOf Service Interne Hopital.
+ServiceDeSoinsDeSuiteDeReeducation is Class.
+ServiceDeSoinsDeSuiteDeReeducation SubClassOf Service Interne Hopital.
+ServiceDietetique is Class.
+ServiceDietetique SubClassOf Service Interne Hopital.
+ServiceLongSejour is Class.
+ServiceLongSejour SubClassOf Service Interne Hopital.
+ServicesDesUrgences is Class.
+ServicesDesUrgences SubClassOf Service Interne Hopital.
+SoinsIntensif is Class.
+SoinsIntensif SubClassOf ServiceDeReanimation.
+SondeDeGastrostomie is Class.
+Spirometrie is Class.
+Spirometrie SubClassOf EpreuvesFonctionnellesDeLAppareilRespiratoire.
+StructureMedicaleDeVille is Class.
+TroubleAlimentaire is Class.
+TroubleFecal is Class.
+UHCD is Class.
+UHCD SubClassOf Service Interne Hopital.
+Unite is Class.
+Unite SubClassOf Service Interne Hopital.
+AccordPersonne is Class.
+AccordPersonne SubClassOf ChoixSpecifie.
+ChoixSpecifie is Class.
+Conseiller is Class.
+Etat is Class.
+Etat SubClassOf ObjetIntentionnel.
+Interdire is Class.
+Interdire SubClassOf ModaliteDeontique.
+MetaObjetAbstrait is Class.
+ModaliteDInstallation is Class.
+QualitatifObjetMetaFonctionnel is Class.
+QualitatifObjetMetaFonctionnel SubClassOf PointDeVue.
+Recent is Class.
+Recent SubClassOf ModaliteDInstallation.
+RoleAcquis is Class.
+RoleAcquis SubClassOf ValeurIntentionnelle.
+Temporalite is Class.
+Temporalite SubClassOf ObjetFonctionnel.
+ThematiqueAggravationMedicale is Class.
+ThematiqueBesoinEtDemandeMedicale is Class.
+ThematiqueDeCoordination is Class.
+ThematiqueMoteurEtFonctionnelle is Class.
+ThematiqueSociale is Class.
+ValeurIntentionnelle is Class.
+ValeurIntentionnelle SubClassOf ValeurQualitative.
+ValeurQualitative is Class.
+AlarmeMedicoSociale is Class.
+AlarmeMedicoSociale SubClassOf EtablissementEtServicesPourPersonnesAgees.
+Allocation is Class.
+AllocationCompensatriceTiercePersonne is Class.
+AllocationCompensatriceTiercePersonne SubClassOf Allocation.
+BesoinAideTechnique is Class.
+BesoinLevePersonne is Class.
+BesoinLevePersonne SubClassOf BesoinAideTechnique.
+BesoinLieDemarcheAdministrative is Class.
+BesoinOrdonnance is Class.
+BesoinOrdonnance SubClassOf BesoinLieDemarcheAdministrative.
+CanneSimple is Class.
+CanneSimple SubClassOf CannesEtBequilles.
+CanneTripode is Class.
+CanneTripode SubClassOf CannesEtBequilles.
+CannesEtBequilles is Class.
+CentreLocalDInformationEtDeCoordination is Class.
+CentreLocalDInformationEtDeCoordination SubClassOf EtablissementEtServicesPourPersonnesAgees.
+CuisineLieux is Class.
+CuisineLieux SubClassOf PieceDeVie.
+Deplacement is Class.
+DeplacementInterieur is Class.
+DeplacementInterieur SubClassOf Deplacement.
+DicteeVocale is Class.
+DicteeVocale SubClassOf LogicielDeReconnaissanceVocale.
+DifficulteDePriseEnCharge is Class.
+EtablissementDHebergementPourPersonneAgeesDependantes is Class.
+EtablissementDHebergementPourPersonneAgeesDependantes SubClassOf EtablissementEtServicesPourPersonnesAgees.
+EtablissementEtServicesPourPersonnesAgees is Class.
+EtablissementEtServicesPourPersonnesAgees SubClassOf EtablissementMedicoSocial.
+EtablissementMedicoSocial is Class.
+Finacement MDPH is Class.
+Financement PCH is Class.
+Financement PCH SubClassOf Finacement MDPH.
+FoyerLogement is Class.
+FoyerLogement SubClassOf EtablissementEtServicesPourPersonnesAgees.
+LevePersonne is Class.
+LevePersonneTraditionnel is Class.
+LevePersonneTraditionnel SubClassOf LevePersonne.
+LevePersonneVerticalisateur is Class.
+LevePersonneVerticalisateur SubClassOf LevePersonne.
+Logiciel is Class.
+LogicielDeReconnaissanceVocale is Class.
+LogicielDeReconnaissanceVocale SubClassOf Logiciel.
+MembreFamille is Class.
+NotificationMdph is Class.
+Orientation MAS is Class.
+Orientation MAS SubClassOf NotificationMdph.
+Orientation SAMSAH is Class.
+Orientation SAMSAH SubClassOf NotificationMdph.
+PetitDejeuner is Class.
+PetitDejeuner SubClassOf Repas.
+PetitEnfant is Class.
+PetitEnfant SubClassOf MembreFamille.
+PetitFils is Class.
+PetitFils SubClassOf PetitEnfant.
+PetiteFille is Class.
+PetiteFille SubClassOf PetitEnfant.
+PieceDeVie is Class.
+ProblemeRelationnel is Class.
+ProblemeRelationnel SubClassOf DifficulteDePriseEnCharge,.
+ProblemeRelationnel SubClassOf aPourThematique some ThematiqueSociale.
+ProcheFamille is Class.
+Repas is Class.
+ReseauGérontologique is Class.
+ReseauGérontologique SubClassOf EtablissementEtServicesPourPersonnesAgees.
+ServiceRepasADomicile is Class.
+ServiceRepasADomicile SubClassOf EtablissementEtServicesPourPersonnesAgees.
+Tante is Class.
+Tante SubClassOf ProcheFamille.
+Violence is Class.
+Violent is Class.
+Violent SubClassOf Violence.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.

@@ -1,0 +1,75 @@
+approaches is ObjectProperty
+belongs_to is ObjectProperty
+is_a is ObjectProperty
+kind_of is ObjectProperty
+perfoms is ObjectProperty
+types_of is ObjectProperty
+utilize is ObjectProperty
+1000BASEX is Class
+1000BASEX SubClassOf Gigabit_Ethernet,
+1000BASEX SubClassOf kind_of some Gigabit_Ethernet
+802.11_a_OFDM_Waveform is Class
+802.11_a_OFDM_Waveform SubClassOf WLAN,
+802.11_a_OFDM_Waveform SubClassOf belongs_to some WLAN
+802.11_b is Class
+802.11_b SubClassOf WLAN,
+802.11_b SubClassOf belongs_to some WLAN
+802.3X is Class
+802.3X SubClassOf 1000BASEX
+T is Class
+SONET/ is Class
+SONET/ SubClassOf Protocol
+AAL is Class
+ATM is Class
+ATM SubClassOf Packet_Switching,
+ATM SubClassOf Protocol
+Access_Switch is Class
+Alcatel-Lucent is Class
+MOS is T
+CBR is Class
+CBR SubClassOf Type_1
+Cat3 is Class
+Cat3 SubClassOf Unshielded_Twisted_Pain,
+Cat3 SubClassOf kind_of some Unshielded_Twisted_Pain
+Cloud_Managed_Access_Switch is Class
+Cloud_Managed_Access_Switch SubClassOf Access_Switch,
+Cloud_Managed_Access_Switch SubClassOf is_a some Access_Switch
+Computer_Networks is Class
+Ethernet is Class
+Ethernet SubClassOf Protocol
+FTTC is Class
+FTTC SubClassOf FTTX,
+FTTC SubClassOf types_of some FTTX
+FTTX is Class
+Fram_Relay is Class
+Fram_Relay SubClassOf Packet_Switching
+Gigabit_Ethernet is Class
+HMAC is Class
+HMAC SubClassOf Hash_and_Mac_Algebra,
+HMAC SubClassOf perfoms some Hash_and_Mac_Algebra
+Hash_and_Mac_Algebra is Class
+Internet_Protocol is Class
+Internet_Protocol SubClassOf Protocol
+Packet_Switching is Class
+Packet_Switching SubClassOf Switched,
+Packet_Switching SubClassOf approaches some Switched
+Protocol is Class
+Protocol SubClassOf Computer_Networks
+Switched is Class
+Type_1 is Class
+Type_1 SubClassOf AAL
+Type_2 is Class
+Type_2 SubClassOf AAL
+Type_5 is Class
+Type_5 SubClassOf AAL
+Unshielded_Twisted_Pain is Class
+VBR-RT is Class
+VBR-RT SubClassOf Type_2
+Virtual_Circuit is Class
+Virtual_Circuit SubClassOf Virtual_Path
+Virtual_Path is Class
+WLAN is Class
+X.25 is Class
+X.25 SubClassOf Packet_Switching,
+X.25 SubClassOf utilize some Packet_Switching
+www.w3.org/2002/07/# is Class

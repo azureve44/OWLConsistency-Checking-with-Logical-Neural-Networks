@@ -1,0 +1,1029 @@
+www.w3.org/2000/01/-schema# is Datatype.
+boolean is Datatype.
+int is Datatype.
+string is Datatype.
+applicableToClass is ObjectProperty.
+applicableToClass Domain Shape.
+editor is ObjectProperty.
+editor Domain PropertyShape.
+editor Range Editor.
+reifiableBy is ObjectProperty.
+reifiableBy Domain PropertyShape.
+reifiableBy Range NodeShape.
+viewer is ObjectProperty.
+viewer Domain PropertyShape.
+viewer Range Viewer.
+hasReference is ObjectProperty.
+hasReference Domain ObjectCollection.
+hasReference Range VirtualColumn.
+hasScope is ObjectProperty.
+hasScope Domain ObjectCollection.
+hasScope Range ObjectCollection.
+SIO 000008 is ObjectProperty.
+SIO 000011 is ObjectProperty.
+SIO 000020 is ObjectProperty.
+SIO 000028 is ObjectProperty.
+SIO 000053 is ObjectProperty.
+SIO 000059 is ObjectProperty.
+SIO 000059 Characteristics Irreflexive.
+SIO 000059 Domain SIO 000616.
+SIO 000059 InverseOf SIO 000095.
+SIO 000062 is ObjectProperty.
+SIO 000068 is ObjectProperty.
+SIO 000093 is ObjectProperty.
+SIO 000095 is ObjectProperty.
+SIO 000095 InverseOf SIO 000059.
+SIO 000210 is ObjectProperty.
+SIO 000212 is ObjectProperty.
+SIO 000213 is ObjectProperty.
+SIO 000214 is ObjectProperty.
+SIO 000217 is ObjectProperty.
+SIO 000272 is ObjectProperty.
+SIO 000273 is ObjectProperty.
+SIO 000332 is ObjectProperty.
+SIO 000338 is ObjectProperty.
+SIO 000355 is ObjectProperty.
+SIO 000369 is ObjectProperty.
+SIO 000420 is ObjectProperty.
+SIO 000422 is ObjectProperty.
+SIO 000422 Characteristics Transitive.
+SIO 000422 Domain SIO 000275.
+SIO 000422 Range SIO 000275.
+SIO 000422 InverseOf SIO 000424.
+SIO 000424 is ObjectProperty.
+SIO 000424 Characteristics Transitive.
+SIO 000424 Domain SIO 000275.
+SIO 000424 Range SIO 000275.
+SIO 000424 InverseOf SIO 000422.
+SIO 000427 is ObjectProperty.
+SIO 000427 SubPropertyOf SIO 000424.
+SIO 000477 is ObjectProperty.
+SIO 000477 SubPropertyOf SIO 000422.
+SIO 000482 is ObjectProperty.
+SIO 000482 Characteristics Symmetric.
+SIO 000482 Domain SIO 000275.
+SIO 000482 Range SIO 000275.
+SIO 000484 is ObjectProperty.
+SIO 000484 SubPropertyOf SIO 000482.
+SIO 000490 is ObjectProperty.
+SIO 000490 SubPropertyOf SIO 000482.
+SIO 000491 is ObjectProperty.
+SIO 000491 SubPropertyOf SIO 000482.
+SIO 000563 is ObjectProperty.
+SIO 000628 is ObjectProperty.
+SIO 000631 is ObjectProperty.
+SIO 000632 is ObjectProperty.
+SIO 000668 is ObjectProperty.
+SIO 000671 is ObjectProperty.
+SIO 000674 is ObjectProperty.
+SIO 000975 is ObjectProperty.
+SIO 001277 is ObjectProperty.
+SIO 001277 Domain SIO 000089.
+SIO 001277 InverseOf SIO 001278.
+SIO 001278 is ObjectProperty.
+SIO 001278 InverseOf SIO 001277.
+group is ObjectProperty.
+group Domain PropertyShape.
+group Range PropertyGroup.
+path is ObjectProperty.
+path Domain PropertyShape.
+property is ObjectProperty.
+property Domain Shape.
+property Range PropertyShape.
+rule is ObjectProperty.
+rule Domain Shape.
+rule Range Rule.
+severity is ObjectProperty.
+severity Domain Shape.
+severity Range Severity.
+sparql is ObjectProperty.
+sparql Domain Shape.
+sparql Range SPARQLConstraint.
+target is ObjectProperty.
+target Domain Shape.
+target Range Target.
+targetClass is ObjectProperty.
+targetClass Domain Shape.
+targetObjectsOf is ObjectProperty.
+targetObjectsOf Domain Shape.
+targetSubjectsOf is ObjectProperty.
+targetSubjectsOf Domain Shape.
+composite is DataProperty.
+composite Domain PropertyShape.
+composite Range boolean.
+hidden is DataProperty.
+hidden Domain PropertyShape.
+hidden Range boolean.
+indexed is DataProperty.
+indexed Domain PropertyShape.
+indexed Range boolean.
+mimeTypes is DataProperty.
+mimeTypes Domain PropertyShape.
+mimeTypes Range string.
+neverMaterialize is DataProperty.
+neverMaterialize Domain PropertyShape.
+neverMaterialize Range boolean.
+hasLastCounter is DataProperty.
+hasLastCounter Domain ObjectCollection.
+hasLastCounter Range int.
+SIO 000300 is DataProperty.
+Editor is Class.
+FailureTestCaseResult is Class.
+FailureTestCaseResult SubClassOf TestCaseResult.
+ScriptValidator is Class.
+ScriptValidator SubClassOf Validator.
+SubSetOfConstraintComponent-subSetOf is Class.
+SuccessTestCaseResult is Class.
+SuccessTestCaseResult SubClassOf TestCaseResult.
+TestCaseResult is Class.
+TestCaseResult SubClassOf AbstractResult.
+Viewer is Class.
+Cohort is Class.
+Cohort SubClassOf SIO 000620.
+LocationCollection is Class.
+LocationCollection SubClassOf ObjectCollection.
+MatchingCollection is Class.
+MatchingCollection SubClassOf ObjectCollection.
+ObjectCollection is Class.
+Thing is www.w3.org/2002/07/#.
+PossibleValue is Class.
+PossibleValue SubClassOf SIO 001259.
+QualityValue is Class.
+QualityValue SubClassOf SIO 000138.
+QualityVariable is Class.
+QualityVariable SubClassOf SIO 000138.
+QuantityVariable is Class.
+QuantityVariable SubClassOf SIO 000138.
+SampleCollection is Class.
+SampleCollection SubClassOf ObjectCollection.
+SubjectGroup is Class.
+SubjectGroup SubClassOf ObjectCollection.
+TimeCollection is Class.
+TimeCollection SubClassOf ObjectCollection.
+VirtualColumn is Class.
+InstrumentOperatingMode is Class.
+InstrumentOperatingMode SubClassOf SIO 000510.
+MassSpectrometer is Class.
+ResonanceIonizationMassSpectrometer is Class.
+ResonanceIonizationMassSpectrometer SubClassOf MassSpectrometer.
+SIO 000000 is Class.
+SIO 000006 is Class.
+SIO 000009 is Class.
+SIO 000009 SubClassOf SIO 000015.
+SIO 000010 is Class.
+SIO 000010 SubClassOf SIO 000009,.
+SIO 000010 SubClassOf SIO 000059 only SIO 000776.
+SIO 000012 is Class.
+SIO 000012 SubClassOf SIO 000620.
+SIO 000015 is Class.
+SIO 000015 SubClassOf SIO 000776,.
+SIO 000015 SubClassOf SIO 000053 only SIO 000015.
+SIO 000030 is Class.
+SIO 000067 is Class.
+SIO 000067 SubClassOf SIO 000602,.
+SIO 000067 SubClassOf SIO 000059 only SIO 000115.
+SIO 000069 is Class.
+SIO 000069 SubClassOf SIO 000602,.
+SIO 000069 SubClassOf SIO 000062 some.
+SIO 000069 SubClassOf (SIO 000006 and (SIO 000355 some SIO 000337)).
+SIO 000072 is Class.
+SIO 000075 is Class.
+SIO 000075 SubClassOf SIO 000015.
+SIO 000078 is Class.
+SIO 000078 SubClassOf SIO 000015.
+SIO 000079 is Class.
+SIO 000079 SubClassOf SIO 000078.
+SIO 000080 is Class.
+SIO 000080 SubClassOf SIO 001194.
+SIO 000080 DisjointWith SIO 000448.
+SIO 000081 is Class.
+SIO 000081 SubClassOf SIO 000080.
+SIO 000082 is Class.
+SIO 000082 SubClassOf SIO 000081.
+SIO 000083 is Class.
+SIO 000083 SubClassOf SIO 000904.
+SIO 000085 is Class.
+SIO 000085 SubClassOf SIO 000113.
+SIO 000087 is Class.
+SIO 000087 SubClassOf SIO 000148.
+SIO 000088 is Class.
+SIO 000088 SubClassOf SIO 000148.
+SIO 000089 is Class.
+SIO 000089 is equivalent to SIO 000069 and (SIO 000059 only SIO 000069).
+SIO 000089 SubClassOf SIO 000069,.
+SIO 000089 SubClassOf SIO 000213 some SIO 000396.
+SIO 000090 is Class.
+SIO 000090 SubClassOf SIO 000136,.
+SIO 000090 SubClassOf SIO 000338 some SIO 000000,.
+SIO 000090 SubClassOf SIO 000369 some SIO 000337,.
+SIO 000090 SubClassOf SIO 000420 some SIO 000015.
+SIO 000091 is Class.
+SIO 000091 SubClassOf SIO 000090.
+SIO 000094 is Class.
+SIO 000094 SubClassOf SIO 000075.
+SIO 000097 is Class.
+SIO 000097 SubClassOf SIO 000602.
+SIO 000098 is Class.
+SIO 000098 SubClassOf SIO 000097.
+SIO 000099 is Class.
+SIO 000099 SubClassOf SIO 000097.
+SIO 000100 is Class.
+SIO 000100 SubClassOf SIO 000097.
+SIO 000101 is Class.
+SIO 000101 SubClassOf SIO 000097.
+SIO 000102 is Class.
+SIO 000102 SubClassOf SIO 000101.
+SIO 000103 is Class.
+SIO 000103 SubClassOf SIO 000097.
+SIO 000104 is Class.
+SIO 000104 SubClassOf SIO 000078.
+SIO 000105 is Class.
+SIO 000105 SubClassOf SIO 000612,.
+SIO 000105 SubClassOf SIO 000210 some SIO 000000,.
+SIO 000105 SubClassOf SIO 000332 some SIO 000000.
+SIO 000107 is Class.
+SIO 000107 SubClassOf SIO 000111.
+SIO 000108 is Class.
+SIO 000108 SubClassOf SIO 000078.
+SIO 000110 is Class.
+SIO 000110 SubClassOf SIO 000651,.
+SIO 000110 SubClassOf SIO 000273 some SIO 000113.
+SIO 000111 is Class.
+SIO 000111 SubClassOf SIO 000171.
+SIO 000113 is Class.
+SIO 000113 SubClassOf SIO 000483.
+SIO 000114 is Class.
+SIO 000114 SubClassOf SIO 000078,.
+SIO 000114 SubClassOf SIO 000028 some SIO 001040,.
+SIO 000114 SubClassOf SIO 000273 some SIO 000108.
+SIO 000115 is Class.
+SIO 000115 SubClassOf SIO 000179.
+SIO 000116 is Class.
+SIO 000116 SubClassOf SIO 000179.
+SIO 000122 is Class.
+SIO 000122 SubClassOf SIO 000342.
+SIO 000123 is Class.
+SIO 000123 SubClassOf SIO 000342.
+SIO 000124 is Class.
+SIO 000124 SubClassOf SIO 000342.
+SIO 000125 is Class.
+SIO 000125 SubClassOf SIO 000342.
+SIO 000126 is Class.
+SIO 000126 SubClassOf SIO 000342.
+SIO 000127 is Class.
+SIO 000127 SubClassOf SIO 000094.
+SIO 000129 is Class.
+SIO 000129 SubClassOf SIO 000148.
+SIO 000130 is Class.
+SIO 000130 SubClassOf SIO 000075.
+SIO 000131 is Class.
+SIO 000131 SubClassOf SIO 000130.
+SIO 000131 DisjointWith SIO 001197.
+SIO 000133 is Class.
+SIO 000133 SubClassOf SIO 000275.
+SIO 000135 is Class.
+SIO 000135 SubClassOf SIO 000136.
+SIO 000136 is Class.
+SIO 000136 SubClassOf SIO 000078,.
+SIO 000136 SubClassOf SIO 000563 only SIO 000000.
+SIO 000137 is Class.
+SIO 000137 SubClassOf SIO 000326.
+SIO 000138 is Class.
+SIO 000138 SubClassOf SIO 000289.
+SIO 000140 is Class.
+SIO 000140 SubClassOf SIO 000101.
+SIO 000144 is Class.
+SIO 000144 SubClassOf SIO 000920.
+SIO 000147 is Class.
+SIO 000147 SubClassOf SIO 000133.
+SIO 000148 is Class.
+SIO 000148 SubClassOf SIO 000651.
+SIO 000150 is Class.
+SIO 000150 SubClassOf SIO 000289,.
+SIO 000150 SubClassOf SIO 000059 some SIO 000000.
+SIO 000151 is Class.
+SIO 000151 SubClassOf SIO 000148.
+SIO 000152 is Class.
+SIO 000152 SubClassOf SIO 000148.
+SIO 000165 is Class.
+SIO 000165 SubClassOf SIO 000087.
+SIO 000166 is Class.
+SIO 000166 SubClassOf SIO 000165.
+SIO 000167 is Class.
+SIO 000167 SubClassOf SIO 000165.
+SIO 000168 is Class.
+SIO 000168 SubClassOf SIO 000165.
+SIO 000169 is Class.
+SIO 000169 SubClassOf SIO 000148.
+SIO 000170 is Class.
+SIO 000170 SubClassOf SIO 000148.
+SIO 000171 is Class.
+SIO 000171 SubClassOf SIO 000651.
+SIO 000173 is Class.
+SIO 000173 SubClassOf SIO 000287.
+SIO 000174 is Class.
+SIO 000174 SubClassOf SIO 000171.
+SIO 000176 is Class.
+SIO 000176 SubClassOf SIO 000171.
+SIO 000177 is Class.
+SIO 000177 SubClassOf SIO 000944.
+SIO 000179 is Class.
+SIO 000179 SubClassOf SIO 000275.
+SIO 000180 is Class.
+SIO 000180 SubClassOf SIO 000179.
+SIO 000185 is Class.
+SIO 000185 SubClassOf SIO 000179.
+SIO 000220 is Class.
+SIO 000220 SubClassOf SIO 000238.
+SIO 000237 is Class.
+SIO 000237 SubClassOf SIO 000179.
+SIO 000238 is Class.
+SIO 000238 SubClassOf SIO 000075.
+SIO 000239 is Class.
+SIO 000239 SubClassOf SIO 000238.
+SIO 000256 is Class.
+SIO 000256 SubClassOf SIO 000136,.
+SIO 000256 SubClassOf SIO 000217 some SIO 000268,.
+SIO 000256 SubClassOf SIO 000332 some SIO 000000.
+SIO 000259 is Class.
+SIO 000259 SubClassOf SIO 000256.
+SIO 000261 is Class.
+SIO 000261 SubClassOf SIO 000256.
+SIO 000262 is Class.
+SIO 000262 SubClassOf SIO 000256.
+SIO 000268 is Class.
+SIO 000275 is Class.
+SIO 000275 SubClassOf SIO 000078,.
+SIO 000275 SubClassOf SIO 000114 or SIO 000483.
+SIO 000280 is Class.
+SIO 000280 SubClassOf SIO 000238.
+SIO 000281 is Class.
+SIO 000281 SubClassOf SIO 000238.
+SIO 000282 is Class.
+SIO 000282 SubClassOf SIO 000280.
+SIO 000284 is Class.
+SIO 000284 SubClassOf SIO 000256.
+SIO 000285 is Class.
+SIO 000285 SubClassOf SIO 000012.
+SIO 000287 is Class.
+SIO 000287 SubClassOf SIO 000009.
+SIO 000289 is Class.
+SIO 000289 SubClassOf SIO 000075,.
+SIO 000289 SubClassOf SIO 000059 only SIO 000000.
+SIO 000295 is Class.
+SIO 000295 SubClassOf SIO 000616.
+SIO 000297 is Class.
+SIO 000297 SubClassOf SIO 001194.
+SIO 000298 is Class.
+SIO 000298 SubClassOf SIO 000651,.
+SIO 000298 SubClassOf SIO 000068 some SIO 000651.
+SIO 000299 is Class.
+SIO 000299 SubClassOf SIO 000298.
+SIO 000302 is Class.
+SIO 000302 SubClassOf SIO 000148.
+SIO 000304 is Class.
+SIO 000304 SubClassOf SIO 000148.
+SIO 000306 is Class.
+SIO 000306 SubClassOf SIO 000148.
+SIO 000315 is Class.
+SIO 000315 SubClassOf SIO 000090.
+SIO 000320 is Class.
+SIO 000321 is Class.
+SIO 000321 SubClassOf SIO 000320.
+SIO 000326 is Class.
+SIO 000326 SubClassOf SIO 000275.
+SIO 000337 is Class.
+SIO 000337 SubClassOf SIO 000256.
+SIO 000342 is Class.
+SIO 000342 is equivalent to SIO 000275 and (SIO 000272 some SIO 000275).
+SIO 000342 SubClassOf SIO 000275,.
+SIO 000342 SubClassOf SIO 000272 some SIO 000275.
+SIO 000350 is Class.
+SIO 000350 SubClassOf SIO 001087.
+SIO 000360 is Class.
+SIO 000360 SubClassOf SIO 000256.
+SIO 000367 is Class.
+SIO 000367 SubClassOf SIO 000075.
+SIO 000368 is Class.
+SIO 000368 SubClassOf SIO 000075.
+SIO 000385 is Class.
+SIO 000396 is Class.
+SIO 000396 SubClassOf SIO 001194.
+SIO 000400 is Class.
+SIO 000401 is Class.
+SIO 000402 is Class.
+SIO 000403 is Class.
+SIO 000403 SubClassOf SIO 000620.
+SIO 000419 is Class.
+SIO 000419 SubClassOf SIO 000080.
+SIO 000437 is Class.
+SIO 000437 is equivalent to SIO 000507 and (SIO 000369 only.
+SIO 000437 is equivalent to (SIO 000400 or SIO 000401)) and (SIO 000369 exactly 1 SIO 000400) and (SIO 000369 exactly 1 SIO 000401).
+SIO 000437 SubClassOf SIO 000507.
+SIO 000440 is Class.
+SIO 000440 is equivalent to SIO 000507 and (SIO 000369 exactly 1 SIO 000400) and (SIO 000369 exactly 1 SIO 000401) and (SIO 000369 exactly 1 SIO 000402).
+SIO 000440 SubClassOf SIO 000507.
+SIO 000441 is Class.
+SIO 000441 is equivalent to SIO 000507 and (SIO 000369 only SIO 000402) and (SIO 000369 exactly 1 SIO 000402).
+SIO 000441 SubClassOf SIO 000507.
+SIO 000448 is Class.
+SIO 000448 SubClassOf SIO 001194,.
+SIO 000448 SubClassOf SIO 000093 some SIO 000080.
+SIO 000448 DisjointWith SIO 000080.
+SIO 000449 is Class.
+SIO 000449 SubClassOf SIO 000448.
+SIO 000449 DisjointWith SIO 000468.
+SIO 000464 is Class.
+SIO 000464 SubClassOf SIO 000150.
+SIO 000465 is Class.
+SIO 000465 SubClassOf SIO 000507,.
+SIO 000465 SubClassOf SIO 000020 some SIO 000000.
+SIO 000468 is Class.
+SIO 000468 SubClassOf SIO 000448.
+SIO 000468 DisjointWith SIO 000449.
+SIO 000472 is Class.
+SIO 000472 SubClassOf SIO 000069.
+SIO 000483 is Class.
+SIO 000483 SubClassOf SIO 000078,.
+SIO 000483 SubClassOf SIO 000273 min 2 SIO 000114.
+SIO 000493 is Class.
+SIO 000493 SubClassOf SIO 000113.
+SIO 000500 is Class.
+SIO 000500 SubClassOf SIO 001335.
+SIO 000501 is Class.
+SIO 000502 is Class.
+SIO 000502 SubClassOf SIO 000506,.
+SIO 000502 SubClassOf SIO 000273 some SIO 000501.
+SIO 000503 is Class.
+SIO 000503 SubClassOf SIO 000506,.
+SIO 000503 SubClassOf SIO 000068 some SIO 000505.
+SIO 000504 is Class.
+SIO 000504 SubClassOf SIO 000506,.
+SIO 000504 SubClassOf SIO 000028 some SIO 000503.
+SIO 000505 is Class.
+SIO 000505 SubClassOf SIO 000506.
+SIO 000506 is Class.
+SIO 000506 SubClassOf SIO 000015.
+SIO 000507 is Class.
+SIO 000507 SubClassOf SIO 000506.
+SIO 000508 is Class.
+SIO 000508 SubClassOf SIO 000532.
+SIO 000509 is Class.
+SIO 000509 SubClassOf SIO 000532.
+SIO 000510 is Class.
+SIO 000510 SubClassOf SIO 000612,.
+SIO 000510 SubClassOf SIO 000210 some SIO 000000.
+SIO 000511 is Class.
+SIO 000511 is equivalent to SIO 000512 or SIO 000516 or SIO 000539.
+SIO 000511 SubClassOf SIO 000608.
+SIO 000512 is Class.
+SIO 000512 SubClassOf SIO 000511.
+SIO 000516 is Class.
+SIO 000516 SubClassOf SIO 000511.
+SIO 000517 is Class.
+SIO 000517 SubClassOf SIO 000505.
+SIO 000518 is Class.
+SIO 000518 SubClassOf SIO 000517.
+SIO 000520 is Class.
+SIO 000520 SubClassOf SIO 000505.
+SIO 000532 is Class.
+SIO 000532 SubClassOf SIO 000507.
+SIO 000534 is Class.
+SIO 000534 SubClassOf SIO 000511.
+SIO 000535 is Class.
+SIO 000535 SubClassOf SIO 000511.
+SIO 000539 is Class.
+SIO 000539 SubClassOf SIO 000511.
+SIO 000545 is Class.
+SIO 000545 SubClassOf SIO 000506,.
+SIO 000545 SubClassOf SIO 000369 min 2 SIO 000512.
+SIO 000546 is Class.
+SIO 000546 SubClassOf SIO 000506,.
+SIO 000546 SubClassOf SIO 000616,.
+SIO 000546 SubClassOf SIO 000059 only SIO 000507.
+SIO 000565 is Class.
+SIO 000565 SubClassOf SIO 000566.
+SIO 000566 is Class.
+SIO 000566 SubClassOf SIO 000368.
+SIO 000567 is Class.
+SIO 000567 SubClassOf SIO 000569.
+SIO 000568 is Class.
+SIO 000568 SubClassOf SIO 000569.
+SIO 000569 is Class.
+SIO 000569 SubClassOf SIO 000368.
+SIO 000585 is Class.
+SIO 000585 SubClassOf SIO 000256.
+SIO 000602 is Class.
+SIO 000602 SubClassOf SIO 000015.
+SIO 000608 is Class.
+SIO 000608 SubClassOf SIO 000506.
+SIO 000612 is Class.
+SIO 000612 SubClassOf SIO 000015,.
+SIO 000612 SubClassOf SIO 000632 some SIO 000000.
+SIO 000613 is Class.
+SIO 000616 is Class.
+SIO 000616 SubClassOf SIO 000289,.
+SIO 000616 SubClassOf SIO 000059 some SIO 000000.
+SIO 000617 is Class.
+SIO 000617 SubClassOf SIO 000289,.
+SIO 000617 SubClassOf SIO 000059 exactly 0 SIO 000000.
+SIO 000618 is Class.
+SIO 000618 SubClassOf SIO 000090.
+SIO 000619 is Class.
+SIO 000619 SubClassOf SIO 000012.
+SIO 000620 is Class.
+SIO 000620 SubClassOf SIO 000010,.
+Thing is www.w3.org/2002/07/#.
+SIO 000626 is Class.
+SIO 000647 is Class.
+SIO 000647 SubClassOf SIO 000510,.
+SIO 000647 SubClassOf SIO 000632 some SIO 000006.
+SIO 000647 DisjointWith SIO 000648.
+SIO 000648 is Class.
+SIO 000648 SubClassOf SIO 000510,.
+SIO 000648 SubClassOf Entity.
+SIO 000648 DisjointWith SIO 000647.
+SIO 000651 is Class.
+SIO 000651 SubClassOf SIO 000078.
+SIO 000675 is Class.
+SIO 000683 is Class.
+SIO 000683 SubClassOf SIO 000256.
+SIO 000688 is Class.
+SIO 000688 SubClassOf SIO 000012.
+SIO 000693 is Class.
+SIO 000693 SubClassOf SIO 000012.
+SIO 000740 is Class.
+SIO 000740 SubClassOf SIO 000608.
+SIO 000741 is Class.
+SIO 000741 SubClassOf SIO 000465.
+SIO 000750 is Class.
+SIO 000750 SubClassOf SIO 000602.
+SIO 000752 is Class.
+SIO 000752 SubClassOf SIO 000602,.
+SIO 000752 SubClassOf SIO 000053 some SIO 000755,.
+SIO 000752 SubClassOf SIO 000671 some SIO 000115.
+SIO 000753 is Class.
+SIO 000753 SubClassOf SIO 000602,.
+SIO 000753 SubClassOf SIO 000338 only.
+Literal) and (SIO 000300 only www.w3.org/2000/01/-schema# is (SIO 000755 and (SIO 000300 some www.w3.org/2000/01/-schema#.
+Literal) and (SIO 000300 only www.w3.org/2000/01/-schema# is SIO 000008 min 0 SIO 000116.
+SIO 000754 is Class.
+SIO 000754 SubClassOf SIO 000602,.
+SIO 000754 SubClassOf SIO 000093 some SIO 000750.
+SIO 000755 is Class.
+SIO 000755 SubClassOf SIO 000602,.
+SIO 000755 SubClassOf SIO 000628 some SIO 000000.
+SIO 000756 is Class.
+SIO 000756 SubClassOf SIO 000602,.
+SIO 000756 SubClassOf SIO 000093 some SIO 000750.
+SIO 000757 is Class.
+SIO 000757 SubClassOf SIO 000753,.
+SIO 000757 SubClassOf SIO 000093 some SIO 000754.
+SIO 000759 is Class.
+SIO 000759 SubClassOf SIO 000755,.
+SIO 000759 SubClassOf SIO 000008 some SIO 000675.
+SIO 000760 is Class.
+SIO 000760 SubClassOf SIO 000755.
+SIO 000761 is Class.
+SIO 000761 SubClassOf SIO 000755,.
+SIO 000761 SubClassOf SIO 000212 some SIO 000755.
+SIO 000762 is Class.
+SIO 000762 SubClassOf SIO 000602,.
+SIO 000762 SubClassOf SIO 000369 some SIO 000753,.
+Literal is SIO 000300 some www.w3.org/2000/01/-schema#.
+SIO 000763 is Class.
+SIO 000763 SubClassOf SIO 000762,.
+SIO 000763 SubClassOf not (SIO 000300 value "null"),.
+SIO 000763 SubClassOf SIO 000674 some SIO 000752.
+SIO 000764 is Class.
+SIO 000764 SubClassOf SIO 000762,.
+SIO 000764 SubClassOf SIO 000631 some SIO 000762.
+SIO 000776 is Class.
+SIO 000785 is Class.
+SIO 000785 SubClassOf SIO 000136.
+SIO 000786 is Class.
+SIO 000786 SubClassOf SIO 000078.
+SIO 000805 is Class.
+SIO 000810 is Class.
+SIO 000810 is equivalent to SIO 010461 or SIO 010464.
+SIO 000810 SubClassOf SIO 000805.
+SIO 000859 is Class.
+SIO 000859 SubClassOf SIO 000864.
+SIO 000864 is Class.
+SIO 000897 is Class.
+SIO 000897 SubClassOf SIO 000075,.
+SIO 000897 SubClassOf SIO 000628 min 2 SIO 000000.
+SIO 000898 is Class.
+SIO 000898 SubClassOf SIO 000897.
+SIO 000904 is Class.
+SIO 000904 SubClassOf SIO 000080.
+SIO 000906 is Class.
+SIO 000906 SubClassOf SIO 000904.
+SIO 000907 is Class.
+SIO 000907 SubClassOf SIO 000904.
+SIO 000911 is Class.
+SIO 000911 SubClassOf SIO 000904.
+SIO 000912 is Class.
+SIO 000913 is Class.
+SIO 000914 is Class.
+SIO 000915 is Class.
+SIO 000915 SubClassOf SIO 000912,.
+SIO 000915 SubClassOf SIO 000338 some.
+Literal)) is (SIO 000000 and (SIO 000300 some www.w3.org/2000/01/-schema#.
+SIO 000916 is Class.
+SIO 000916 SubClassOf SIO 000915.
+SIO 000917 is Class.
+SIO 000917 SubClassOf SIO 000915.
+SIO 000920 is Class.
+SIO 000920 SubClassOf SIO 000367.
+SIO 000921 is Class.
+SIO 000921 SubClassOf SIO 000367.
+SIO 000922 is Class.
+SIO 000922 SubClassOf SIO 000904.
+SIO 000923 is Class.
+SIO 000923 SubClassOf SIO 000898.
+SIO 000924 is Class.
+SIO 000924 SubClassOf SIO 001194.
+SIO 000930 is Class.
+SIO 000930 SubClassOf SIO 000904.
+SIO 000931 is Class.
+SIO 000931 SubClassOf SIO 000904.
+SIO 000933 is Class.
+SIO 000933 SubClassOf SIO 000904.
+SIO 000937 is Class.
+SIO 000937 SubClassOf SIO 000904.
+SIO 000940 is Class.
+SIO 000940 SubClassOf SIO 000904.
+SIO 000942 is Class.
+SIO 000942 SubClassOf SIO 000179.
+SIO 000944 is Class.
+SIO 000944 SubClassOf SIO 000075.
+SIO 000946 is Class.
+SIO 000946 SubClassOf SIO 000904.
+SIO 000947 is Class.
+SIO 000947 SubClassOf SIO 000904.
+SIO 000977 is Class.
+SIO 000977 SubClassOf SIO 000786.
+SIO 000978 is Class.
+SIO 000978 SubClassOf SIO 000786.
+SIO 000979 is Class.
+SIO 000979 SubClassOf SIO 000786.
+SIO 000980 is Class.
+SIO 000980 SubClassOf SIO 000104.
+SIO 000981 is Class.
+SIO 000981 SubClassOf SIO 000104.
+SIO 000982 is Class.
+SIO 000982 SubClassOf SIO 000104.
+SIO 000983 is Class.
+SIO 000983 SubClassOf SIO 000897,.
+SIO 000983 SubClassOf SIO 000628 some SIO 010035,.
+SIO 000983 SubClassOf SIO 000628 some SIO 010299.
+SIO 000993 is Class.
+SIO 000993 SubClassOf SIO 000897,.
+SIO 000993 SubClassOf (SIO 000628 some SIO 010004) and (SIO 000628 some SIO 010299).
+SIO 001017 is Class.
+SIO 001017 SubClassOf SIO 000136.
+SIO 001025 is Class.
+SIO 001025 SubClassOf SIO 000256.
+SIO 001026 is Class.
+SIO 001026 SubClassOf SIO 000148.
+SIO 001040 is Class.
+SIO 001040 SubClassOf SIO 000078.
+SIO 001061 is Class.
+SIO 001061 SubClassOf SIO 000620.
+SIO 001063 is Class.
+SIO 001063 SubClassOf SIO 000620.
+SIO 001064 is Class.
+SIO 001064 SubClassOf SIO 000620.
+SIO 001070 is Class.
+SIO 001070 SubClassOf SIO 000367.
+SIO 001071 is Class.
+SIO 001072 is Class.
+SIO 001073 is Class.
+SIO 001073 SubClassOf SIO 000651,.
+SIO 001073 SubClassOf (SIO 000008 some SIO 001071) and (SIO 000008 some SIO 001072).
+SIO 001087 is Class.
+SIO 001087 SubClassOf SIO 000385.
+SIO 001107 is Class.
+SIO 001116 is Class.
+SIO 001116 SubClassOf SIO 000150.
+SIO 001117 is Class.
+SIO 001117 SubClassOf SIO 000150.
+SIO 001118 is Class.
+SIO 001118 SubClassOf SIO 000150.
+SIO 001120 is Class.
+SIO 001120 SubClassOf SIO 000983.
+SIO 001121 is Class.
+SIO 001121 SubClassOf SIO 000983.
+SIO 001127 is Class.
+SIO 001127 SubClassOf SIO 001145.
+SIO 001128 is Class.
+SIO 001128 SubClassOf SIO 001127.
+SIO 001129 is Class.
+SIO 001129 SubClassOf SIO 001127.
+SIO 001145 is Class.
+SIO 001165 is Class.
+SIO 001165 SubClassOf SIO 000602.
+SIO 001166 is Class.
+SIO 001166 SubClassOf SIO 000136,.
+SIO 001166 SubClassOf SIO 000668 some SIO 000000.
+SIO 001167 is Class.
+SIO 001167 SubClassOf SIO 000256.
+SIO 001168 is Class.
+SIO 001168 SubClassOf SIO 001194.
+SIO 001170 is Class.
+SIO 001170 SubClassOf SIO 001194,.
+SIO 001170 SubClassOf SIO 000053 some SIO 001370.
+SIO 001171 is Class.
+SIO 001171 SubClassOf SIO 000897.
+SIO 001172 is Class.
+SIO 001172 SubClassOf SIO 001171.
+SIO 001183 is Class.
+SIO 001183 SubClassOf SIO 000256.
+SIO 001187 is Class.
+SIO 001187 SubClassOf SIO 000752,.
+SIO 001187 SubClassOf SIO 000093 some SIO 000754.
+SIO 001194 is Class.
+SIO 001194 SubClassOf SIO 000015.
+SIO 001196 is Class.
+SIO 001196 SubClassOf SIO 000136.
+SIO 001197 is Class.
+SIO 001197 SubClassOf SIO 000130.
+SIO 001197 DisjointWith SIO 000131.
+SIO 001241 is Class.
+SIO 001241 SubClassOf SIO 000616.
+SIO 001246 is Class.
+SIO 001246 SubClassOf SIO 000289.
+SIO 001250 is Class.
+SIO 001250 SubClassOf SIO 000897,.
+SIO 001250 SubClassOf SIO 000628 some SIO 001107,.
+SIO 001250 SubClassOf SIO 000628 some SIO 010004.
+SIO 001251 is Class.
+SIO 001251 SubClassOf SIO 001246.
+SIO 001252 is Class.
+SIO 001252 SubClassOf SIO 001246.
+SIO 001253 is Class.
+SIO 001253 SubClassOf SIO 001246.
+SIO 001254 is Class.
+SIO 001254 SubClassOf SIO 001246.
+SIO 001257 is Class.
+SIO 001257 SubClassOf SIO 000897,.
+SIO 001257 SubClassOf SIO 000628 some SIO 010004,.
+SIO 001257 SubClassOf SIO 000628 some SIO 010035.
+SIO 001258 is Class.
+SIO 001258 SubClassOf SIO 000075,.
+SIO 001258 SubClassOf SIO 000095 some SIO 000289.
+SIO 001259 is Class.
+SIO 001259 SubClassOf SIO 001258,.
+SIO 001259 SubClassOf SIO 000095 some SIO 000616.
+SIO 001260 is Class.
+SIO 001260 SubClassOf SIO 001258,.
+SIO 001260 SubClassOf SIO 000628 some SIO 000000,.
+SIO 001260 SubClassOf SIO 000975 some SIO 000150.
+SIO 001261 is Class.
+SIO 001261 SubClassOf SIO 001260.
+SIO 001300 is Class.
+SIO 001300 SubClassOf SIO 000602.
+SIO 001301 is Class.
+SIO 001301 SubClassOf SIO 001300.
+SIO 001301 DisjointWith SIO 001302.
+SIO 001302 is Class.
+SIO 001302 SubClassOf SIO 001300.
+SIO 001302 DisjointWith SIO 001301.
+SIO 001316 is Class.
+SIO 001316 SubClassOf SIO 000150.
+SIO 001317 is Class.
+SIO 001317 SubClassOf SIO 000116.
+SIO 001318 is Class.
+SIO 001318 SubClassOf SIO 001317.
+SIO 001330 is Class.
+SIO 001330 SubClassOf SIO 000069.
+SIO 001333 is Class.
+SIO 001333 SubClassOf SIO 000608.
+SIO 001334 is Class.
+SIO 001334 SubClassOf SIO 000511.
+SIO 001335 is Class.
+SIO 001335 SubClassOf SIO 000507.
+SIO 001336 is Class.
+SIO 001337 is Class.
+SIO 001337 SubClassOf SIO 000897,.
+SIO 001337 SubClassOf SIO 000628 exactly 2 SIO 001336.
+SIO 001370 is Class.
+SIO 001370 SubClassOf SIO 001194.
+SIO 001373 is Class.
+SIO 001373 SubClassOf SIO 000148.
+SIO 001377 is Class.
+SIO 001377 SubClassOf SIO 000089.
+SIO 001380 is Class.
+SIO 001380 SubClassOf SIO 000616.
+SIO 001382 is Class.
+SIO 001382 SubClassOf SIO 000616.
+SIO 001385 is Class.
+SIO 001385 SubClassOf SIO 000090.
+SIO 001394 is Class.
+SIO 001394 SubClassOf SIO 000256.
+SIO 001395 is Class.
+SIO 001395 SubClassOf SIO 010346,.
+SIO 001395 SubClassOf SIO 000273 min 2 SIO 010334.
+SIO 001418 is Class.
+SIO 001418 SubClassOf SIO 001259.
+SIO 001419 is Class.
+SIO 001419 SubClassOf SIO 000616.
+SIO 001420 is Class.
+SIO 001420 SubClassOf SIO 001259.
+SIO 001421 is Class.
+SIO 001421 SubClassOf SIO 000616.
+SIO 001429 is Class.
+SIO 001429 SubClassOf SIO 000075.
+SIO 001430 is Class.
+SIO 001430 SubClassOf SIO 001434.
+SIO 001431 is Class.
+SIO 001431 SubClassOf SIO 001429.
+SIO 001432 is Class.
+SIO 001432 SubClassOf SIO 000075,.
+SIO 001432 SubClassOf SIO 000059 min 0 SIO 001430.
+SIO 001433 is Class.
+SIO 001433 SubClassOf SIO 001434.
+SIO 001434 is Class.
+SIO 001434 SubClassOf SIO 001429,.
+SIO 001434 SubClassOf SIO 000053 only.
+SIO 001434 SubClassOf (SIO 001429 and (SIO 000008 some SIO 000613)).
+SIO 001435 is Class.
+SIO 001435 SubClassOf SIO 000897,.
+SIO 001435 SubClassOf SIO 000628 exactly 2 SIO 010004.
+SIO 001436 is Class.
+SIO 001436 SubClassOf SIO 000897,.
+SIO 001436 SubClassOf SIO 000628 exactly 2 SIO 010299.
+SIO 001437 is Class.
+SIO 001437 SubClassOf SIO 000897,.
+SIO 001437 SubClassOf SIO 000628 exactly 2 SIO 010035.
+SIO 001438 is Class.
+SIO 001438 SubClassOf SIO 000897,.
+SIO 001438 SubClassOf SIO 000628 exactly 2 SIO 010043.
+SIO 001439 is Class.
+SIO 001439 SubClassOf SIO 000897.
+SIO 001440 is Class.
+SIO 001440 SubClassOf SIO 000897.
+SIO 010004 is Class.
+SIO 010007 is Class.
+SIO 010008 is Class.
+SIO 010015 is Class.
+SIO 010015 SubClassOf SIO 000030,.
+SIO 010015 SubClassOf SIO 000011 some SIO 010007,.
+SIO 010015 SubClassOf SIO 000210 some.
+SIO 010015 SubClassOf (SIO 000626 and (SIO 000011 some SIO 010007)).
+SIO 010019 is Class.
+SIO 010019 SubClassOf SIO 000472.
+SIO 010035 is Class.
+SIO 010043 is Class.
+SIO 010053 is Class.
+SIO 010053 SubClassOf SIO 001196.
+SIO 010060 is Class.
+SIO 010060 SubClassOf SIO 001196.
+SIO 010066 is Class.
+SIO 010066 SubClassOf SIO 000616.
+SIO 010299 is Class.
+SIO 010334 is Class.
+SIO 010346 is Class.
+SIO 010360 is Class.
+SIO 010360 SubClassOf SIO 001087.
+SIO 010461 is Class.
+SIO 010461 SubClassOf SIO 000810.
+SIO 010464 is Class.
+SIO 010464 SubClassOf SIO 000810.
+SIO 010531 is Class.
+SIO 010531 SubClassOf SIO 000130.
+SIO 010673 is Class.
+SIO 010673 SubClassOf SIO 001196.
+SIO 011119 is Class.
+SIO 011120 is Class.
+SIO 011120 SubClassOf SIO 000396,.
+SIO 011120 SubClassOf SIO 000028 some SIO 000072,.
+SIO 011120 SubClassOf SIO 000028 some SIO 011121,.
+SIO 011120 SubClassOf SIO 000214 some SIO 011119.
+SIO 011121 is Class.
+SIO 011123 is Class.
+SIO 011123 SubClassOf SIO 000472.
+SIO 011130 is Class.
+SIO 011130 SubClassOf SIO 011120.
+SIO 011131 is Class.
+SIO 011131 SubClassOf SIO 000616.
+www.w3.org/2002/07/# is Class.
+Entity is Class.
+KeyEntityPair is Class.
+KeyEntityPair SubClassOf SIO 000069.
+AbstractResult is Class.
+JSValidator is Class.
+JSValidator SubClassOf Validator.
+Literal is Class.
+NodeShape is Class.
+NodeShape SubClassOf Shape.
+Parameter is Class.
+Parameter SubClassOf PropertyShape.
+PropertyGroup is Class.
+PropertyShape is Class.
+PropertyShape SubClassOf Shape.
+Rule is Class.
+SPARQLAskValidator is Class.
+SPARQLAskValidator SubClassOf Validator.
+SPARQLConstraint is Class.
+SPARQLSelectValidator is Class.
+SPARQLSelectValidator SubClassOf Validator.
+Severity is Class.
+Shape is Class.
+Target is Class.
+Validator is Class.
+ConstraintReificationShape-message is Individual.
+ConstraintReificationShape-message Types PropertyShape.
+ConstraintReificationShape-severity is Individual.
+ConstraintReificationShape-severity Types PropertyShape.
+ScriptAPIShape-generateClass is Individual.
+ScriptAPIShape-generateClass Types PropertyShape.
+ScriptAPIShape-generatePrefixClasses is Individual.
+ScriptAPIShape-generatePrefixClasses Types PropertyShape.
+ScriptAPIShape-generatePrefixConstants is Individual.
+ScriptAPIShape-generatePrefixConstants Types PropertyShape.
+Schema-privateShape is Individual.
+Schema-privateShape Types PropertyShape.
+Schema-protectedClass is Individual.
+Schema-protectedClass Types PropertyShape.
+Schema-protectedShape is Individual.
+Schema-protectedShape Types PropertyShape.
+Schema-publicClass is Individual.
+Schema-publicClass Types PropertyShape.
+Schema-publicNamespace is Individual.
+Schema-publicNamespace Types PropertyShape.
+Schema-publicShape is Individual.
+Schema-publicShape Types PropertyShape.
+PropertyShapeShape-name is Individual.
+PropertyShapeShape-name Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  is Individual.
+  Types PropertyShape.
+  DisjointClasses SIO 000913,SIO 000914,SIO 000915.
+  DisjointClasses SIO 001395,SIO 010007,SIO 010008.

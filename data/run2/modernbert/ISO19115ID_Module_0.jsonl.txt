@@ -1,0 +1,375 @@
+MD TopicCategoryCode is Datatype.
+MD TopicCategoryCode is equivalent to {"biota" , "boundaries" , "climatologyMeteorologyAtmosphere" , "economy" , "elevation" , "environment" , "farming" , "geoscientificInformation" , "health" , "imageryBaseMapsEarthCover" , "inlandWaters" , "intelligenceMilitary" , "location" , "oceans" , "planningCadastre" , "society" , "structure" , "transportation" , "utilitiesCommunication"}.
+www.w3.org/2000/01/-schema# is Datatype.
+dateTime is Datatype.
+integer is Datatype.
+string is Datatype.
+MD AggregateInformation.aggregateDataSetIdentifier is ObjectProperty.
+MD AggregateInformation.aggregateDataSetIdentifier Domain MD AggregateInformation.
+MD AggregateInformation.aggregateDataSetIdentifier Range MD Identifier.
+MD AggregateInformation.aggregateDataSetName is ObjectProperty.
+MD AggregateInformation.aggregateDataSetName Domain MD AggregateInformation.
+MD AggregateInformation.aggregateDataSetName Range CI Citation.
+MD AggregateInformation.associationType is ObjectProperty.
+MD AggregateInformation.associationType Domain MD AggregateInformation.
+MD AggregateInformation.associationType Range DS AssociationTypeCode.
+MD AggregateInformation.initiativeType is ObjectProperty.
+MD AggregateInformation.initiativeType Domain MD AggregateInformation.
+MD AggregateInformation.initiativeType Range DS InitiativeTypeCode.
+MD DataIdentification.characterSet is ObjectProperty.
+MD DataIdentification.characterSet Domain MD DataIdentification.
+MD DataIdentification.characterSet Range MD CharacterSetCode.
+MD DataIdentification.extent is ObjectProperty.
+MD DataIdentification.extent Domain MD DataIdentification.
+MD DataIdentification.extent Range EX Extent.
+MD DataIdentification.spatialRepresentationType is ObjectProperty.
+MD DataIdentification.spatialRepresentationType Domain MD DataIdentification.
+MD DataIdentification.spatialRepresentationType Range MD SpatialRepresentationTypeCode.
+MD DataIdentification.spatialResolution is ObjectProperty.
+MD DataIdentification.spatialResolution Domain MD DataIdentification.
+MD DataIdentification.spatialResolution Range MD Resolution.
+MD Identification.aggregationInfo is ObjectProperty.
+MD Identification.aggregationInfo Domain MD Identification.
+MD Identification.aggregationInfo Range MD AggregateInformation.
+MD Identification.citation is ObjectProperty.
+MD Identification.citation Domain MD Identification.
+MD Identification.citation Range CI Citation.
+MD Identification.descriptiveKeywords is ObjectProperty.
+MD Identification.descriptiveKeywords Domain MD Identification.
+MD Identification.descriptiveKeywords Range MD Keywords.
+MD Identification.graphicOverview is ObjectProperty.
+MD Identification.graphicOverview Domain MD Identification.
+MD Identification.graphicOverview Range MD BrowseGraphic.
+MD Identification.pointOfContact is ObjectProperty.
+MD Identification.pointOfContact Domain MD Identification.
+MD Identification.pointOfContact Range CI ResponsibleParty.
+MD Identification.resourceConstraints is ObjectProperty.
+MD Identification.resourceConstraints Domain MD Identification.
+MD Identification.resourceConstraints Range MD Constraints.
+MD Identification.resourceFormat is ObjectProperty.
+MD Identification.resourceFormat Domain MD Identification.
+MD Identification.resourceFormat Range MD Format.
+MD Identification.resourceMaintenance is ObjectProperty.
+MD Identification.resourceMaintenance Domain MD Identification.
+MD Identification.resourceMaintenance Range MD MaintenanceInformation.
+MD Identification.resourceSpecificUsage is ObjectProperty.
+MD Identification.resourceSpecificUsage Domain MD Identification.
+MD Identification.resourceSpecificUsage Range MD Usage.
+MD Identification.status is ObjectProperty.
+MD Identification.status Domain MD Identification.
+MD Identification.status Range MD ProgressCode.
+MD Keywords.thesaurusName is ObjectProperty.
+MD Keywords.thesaurusName Domain MD Keywords.
+MD Keywords.thesaurusName Range CI Citation.
+MD Keywords.type is ObjectProperty.
+MD Keywords.type Domain MD Keywords.
+MD Keywords.type Range MD KeywordTypeCode.
+MD Usage.userContactInfo is ObjectProperty.
+MD Usage.userContactInfo Domain MD Usage.
+MD Usage.userContactInfo Range CI ResponsibleParty.
+uDistance.distance is ObjectProperty.
+uDistance.distance Domain uDistance.
+uDistance.distance Range Distance.
+uEquivalentScale.equivalentScale is ObjectProperty.
+uEquivalentScale.equivalentScale Domain uEquivalentScale.
+uEquivalentScale.equivalentScale Range MD RepresentativeFraction.
+MD BrowseGraphic.fileDescription is DataProperty.
+MD BrowseGraphic.fileDescription Domain MD BrowseGraphic.
+MD BrowseGraphic.fileDescription Range string.
+MD BrowseGraphic.fileName is DataProperty.
+MD BrowseGraphic.fileName Domain MD BrowseGraphic.
+MD BrowseGraphic.fileName Range string.
+MD BrowseGraphic.fileType is DataProperty.
+MD BrowseGraphic.fileType Domain MD BrowseGraphic.
+MD BrowseGraphic.fileType Range string.
+MD DataIdentification.environmentDescription is DataProperty.
+MD DataIdentification.environmentDescription Domain MD DataIdentification.
+MD DataIdentification.environmentDescription Range string.
+MD DataIdentification.language is DataProperty.
+MD DataIdentification.language Domain MD DataIdentification.
+MD DataIdentification.language Range string.
+MD DataIdentification.supplementalInformation is DataProperty.
+MD DataIdentification.supplementalInformation Domain MD DataIdentification.
+MD DataIdentification.supplementalInformation Range string.
+MD DataIdentification.topicCategory is DataProperty.
+MD DataIdentification.topicCategory Domain MD DataIdentification.
+MD DataIdentification.topicCategory Range MD TopicCategoryCode.
+MD Identification.abstract is DataProperty.
+MD Identification.abstract Domain MD Identification.
+MD Identification.abstract Range string.
+MD Identification.credit is DataProperty.
+MD Identification.credit Domain MD Identification.
+MD Identification.credit Range string.
+MD Identification.purpose is DataProperty.
+MD Identification.purpose Domain MD Identification.
+MD Identification.purpose Range string.
+MD Keywords.keyword is DataProperty.
+MD Keywords.keyword Domain MD Keywords.
+MD Keywords.keyword Range string.
+MD RepresentativeFraction.denominator is DataProperty.
+MD RepresentativeFraction.denominator Domain MD RepresentativeFraction.
+MD RepresentativeFraction.denominator Range integer.
+MD Usage.specificUsage is DataProperty.
+MD Usage.specificUsage Domain MD Usage.
+MD Usage.specificUsage Range string.
+MD Usage.usageDateTime is DataProperty.
+MD Usage.usageDateTime Domain MD Usage.
+MD Usage.usageDateTime Range dateTime.
+MD Usage.userDeterminedLimitations is DataProperty.
+MD Usage.userDeterminedLimitations Domain MD Usage.
+MD Usage.userDeterminedLimitations Range string.
+Distance is Class.
+Thing is www.w3.org/2002/07/#.
+CI Citation is Class.
+Thing is www.w3.org/2002/07/#.
+CI ResponsibleParty is Class.
+Thing is www.w3.org/2002/07/#.
+MD Constraints is Class.
+Thing is www.w3.org/2002/07/#.
+MD Format is Class.
+Thing is www.w3.org/2002/07/#.
+EX Extent is Class.
+Thing is www.w3.org/2002/07/#.
+DS Association is Class.
+Thing is www.w3.org/2002/07/#.
+DS AssociationTypeCode is Class.
+DS InitiativeTypeCode is Class.
+MD AggregateInformation is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is MD AggregateInformation.aggregateDataSetIdentifier only MD Identifier,.
+Thing, is MD AggregateInformation.aggregateDataSetName only CI Citation,.
+Thing, is MD AggregateInformation.associationType only DS AssociationTypeCode,.
+Thing, is MD AggregateInformation.initiativeType only DS InitiativeTypeCode,.
+Thing, is MD AggregateInformation.associationType exactly 1 www.w3.org/2002/07/#.
+Thing, is MD AggregateInformation.aggregateDataSetIdentifier max 1 www.w3.org/2002/07/#.
+Thing, is MD AggregateInformation.aggregateDataSetName max 1 www.w3.org/2002/07/#.
+Thing is MD AggregateInformation.initiativeType max 1 www.w3.org/2002/07/#.
+MD BrowseGraphic is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is MD BrowseGraphic.fileDescription only string,.
+Thing, is MD BrowseGraphic.fileName only string,.
+Thing, is MD BrowseGraphic.fileType only string,.
+Literal, is MD BrowseGraphic.fileDescription max 1 www.w3.org/2000/01/-schema#.
+Literal, is MD BrowseGraphic.fileName max 1 www.w3.org/2000/01/-schema#.
+Literal is MD BrowseGraphic.fileType max 1 www.w3.org/2000/01/-schema#.
+MD CharacterSetCode is Class.
+MD DataIdentification is Class.
+MD DataIdentification SubClassOf MD Identification,.
+MD DataIdentification SubClassOf MD DataIdentification.characterSet only MD CharacterSetCode,.
+MD DataIdentification SubClassOf MD DataIdentification.extent only EX Extent,.
+MD DataIdentification SubClassOf MD DataIdentification.spatialRepresentationType only MD SpatialRepresentationTypeCode,.
+MD DataIdentification SubClassOf MD DataIdentification.spatialResolution only MD Resolution,.
+MD DataIdentification SubClassOf MD DataIdentification.environmentDescription only string,.
+MD DataIdentification SubClassOf MD DataIdentification.language only string,.
+MD DataIdentification SubClassOf MD DataIdentification.supplementalInformation only string,.
+MD DataIdentification SubClassOf MD DataIdentification.topicCategory only MD TopicCategoryCode,.
+Literal, is MD DataIdentification.language min 1 www.w3.org/2000/01/-schema#.
+Literal, is MD DataIdentification.environmentDescription max 1 www.w3.org/2000/01/-schema#.
+Literal is MD DataIdentification.supplementalInformation max 1 www.w3.org/2000/01/-schema#.
+MD Identification is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is MD Identification.aggregationInfo only MD AggregateInformation,.
+Thing, is MD Identification.citation only CI Citation,.
+Thing, is MD Identification.descriptiveKeywords only MD Keywords,.
+Thing, is MD Identification.graphicOverview only MD BrowseGraphic,.
+Thing, is MD Identification.pointOfContact only CI ResponsibleParty,.
+Thing, is MD Identification.resourceConstraints only MD Constraints,.
+Thing, is MD Identification.resourceFormat only MD Format,.
+Thing, is MD Identification.resourceMaintenance only MD MaintenanceInformation,.
+Thing, is MD Identification.resourceSpecificUsage only MD Usage,.
+Thing, is MD Identification.status only MD ProgressCode,.
+Thing, is MD Identification.citation exactly 1 www.w3.org/2002/07/#.
+Thing, is MD Identification.abstract only string,.
+Thing, is MD Identification.credit only string,.
+Thing, is MD Identification.purpose only string,.
+Literal, is MD Identification.abstract exactly 1 www.w3.org/2000/01/-schema#.
+Literal is MD Identification.purpose max 1 www.w3.org/2000/01/-schema#.
+MD KeywordTypeCode is Class.
+MD Keywords is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is MD Keywords.thesaurusName only CI Citation,.
+Thing, is MD Keywords.type only MD KeywordTypeCode,.
+Thing, is MD Keywords.thesaurusName max 1 www.w3.org/2002/07/#.
+Thing, is MD Keywords.type max 1 www.w3.org/2002/07/#.
+Thing, is MD Keywords.keyword only string,.
+Literal is MD Keywords.keyword min 1 www.w3.org/2000/01/-schema#.
+MD ProgressCode is Class.
+MD RepresentativeFraction is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is MD RepresentativeFraction.denominator only integer,.
+Literal is MD RepresentativeFraction.denominator exactly 1 www.w3.org/2000/01/-schema#.
+MD Resolution is Class.
+MD Resolution is equivalent to uDistance or uEquivalentScale.
+Thing is www.w3.org/2002/07/#.
+MD ServiceIdentification is Class.
+MD ServiceIdentification SubClassOf MD Identification.
+MD SpatialRepresentationTypeCode is Class.
+MD Usage is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is MD Usage.userContactInfo only CI ResponsibleParty,.
+Thing, is MD Usage.userContactInfo min 1 www.w3.org/2002/07/#.
+Thing, is MD Usage.specificUsage only string,.
+Thing, is MD Usage.usageDateTime only dateTime,.
+Thing, is MD Usage.userDeterminedLimitations only string,.
+Literal, is MD Usage.specificUsage exactly 1 www.w3.org/2000/01/-schema#.
+Literal, is MD Usage.usageDateTime max 1 www.w3.org/2000/01/-schema#.
+Literal is MD Usage.userDeterminedLimitations max 1 www.w3.org/2000/01/-schema#.
+uDistance is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is uDistance.distance only Distance,.
+Thing is uDistance.distance exactly 1 www.w3.org/2002/07/#.
+uEquivalentScale is Class.
+Thing, is www.w3.org/2002/07/#.
+Thing, is uEquivalentScale.equivalentScale only MD RepresentativeFraction,.
+Thing is uEquivalentScale.equivalentScale exactly 1 www.w3.org/2002/07/#.
+MD MaintenanceInformation is Class.
+Thing is www.w3.org/2002/07/#.
+MD Identifier is Class.
+Thing is www.w3.org/2002/07/#.
+www.w3.org/2002/07/# is Class.
+MD CharacterSetCode/(reservedforfutureuse) is Individual.
+MD CharacterSetCode/(reservedforfutureuse) Types MD CharacterSetCode.
+MD CharacterSetCode/8859part10 is Individual.
+MD CharacterSetCode/8859part10 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part11 is Individual.
+MD CharacterSetCode/8859part11 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part13 is Individual.
+MD CharacterSetCode/8859part13 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part14 is Individual.
+MD CharacterSetCode/8859part14 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part15 is Individual.
+MD CharacterSetCode/8859part15 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part16 is Individual.
+MD CharacterSetCode/8859part16 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part1 is Individual.
+MD CharacterSetCode/8859part1 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part2 is Individual.
+MD CharacterSetCode/8859part2 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part3 is Individual.
+MD CharacterSetCode/8859part3 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part4 is Individual.
+MD CharacterSetCode/8859part4 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part5 is Individual.
+MD CharacterSetCode/8859part5 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part6 is Individual.
+MD CharacterSetCode/8859part6 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part7 is Individual.
+MD CharacterSetCode/8859part7 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part8 is Individual.
+MD CharacterSetCode/8859part8 Types MD CharacterSetCode.
+MD CharacterSetCode/8859part9 is Individual.
+MD CharacterSetCode/8859part9 Types MD CharacterSetCode.
+DS AssociationTypeCode is Individual.
+DS AssociationTypeCodeCollection is Individual.
+DS InitiativeTypeCode is Individual.
+DS InitiativeTypeCodeCollection is Individual.
+MD CharacterSetCode is Individual.
+MD CharacterSetCodeCollection is Individual.
+MD KeywordTypeCode is Individual.
+MD KeywordTypeCodeCollection is Individual.
+MD ProgressCode is Individual.
+MD ProgressCodeCollection is Individual.
+MD SpatialRepresentationTypeCode is Individual.
+MD SpatialRepresentationTypeCodeCollection is Individual.
+DS AssociationTypeCode/ is Individual.
+DS AssociationTypeCode/ Types DS AssociationTypeCode.
+DS AssociationTypeCode/ is Individual.
+DS AssociationTypeCode/ Types DS AssociationTypeCode.
+DS AssociationTypeCode/ is Individual.
+DS AssociationTypeCode/ Types DS AssociationTypeCode.
+DS AssociationTypeCode/ is Individual.
+DS AssociationTypeCode/ Types DS AssociationTypeCode.
+DS AssociationTypeCode/ is Individual.
+DS AssociationTypeCode/ Types DS AssociationTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+DS InitiativeTypeCode/ is Individual.
+DS InitiativeTypeCode/ Types DS InitiativeTypeCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD CharacterSetCode/ is Individual.
+MD CharacterSetCode/ Types MD CharacterSetCode.
+MD KeywordTypeCode/ is Individual.
+MD KeywordTypeCode/ Types MD KeywordTypeCode.
+MD KeywordTypeCode/ is Individual.
+MD KeywordTypeCode/ Types MD KeywordTypeCode.
+MD KeywordTypeCode/ is Individual.
+MD KeywordTypeCode/ Types MD KeywordTypeCode.
+MD KeywordTypeCode/ is Individual.
+MD KeywordTypeCode/ Types MD KeywordTypeCode.
+MD KeywordTypeCode/ is Individual.
+MD KeywordTypeCode/ Types MD KeywordTypeCode.
+MD ProgressCode/ is Individual.
+MD ProgressCode/ Types MD ProgressCode.
+MD ProgressCode/ is Individual.
+MD ProgressCode/ Types MD ProgressCode.
+MD ProgressCode/ is Individual.
+MD ProgressCode/ Types MD ProgressCode.
+MD ProgressCode/ is Individual.
+MD ProgressCode/ Types MD ProgressCode.
+MD ProgressCode/ is Individual.
+MD ProgressCode/ Types MD ProgressCode.
+MD ProgressCode/ is Individual.
+MD ProgressCode/ Types MD ProgressCode.
+MD ProgressCode/ is Individual.
+MD ProgressCode/ Types MD ProgressCode.
+MD SpatialRepresentationTypeCode/ is Individual.
+MD SpatialRepresentationTypeCode/ Types MD SpatialRepresentationTypeCode.
+MD SpatialRepresentationTypeCode/ is Individual.
+MD SpatialRepresentationTypeCode/ Types MD SpatialRepresentationTypeCode.
+MD SpatialRepresentationTypeCode/ is Individual.
+MD SpatialRepresentationTypeCode/ Types MD SpatialRepresentationTypeCode.
+MD SpatialRepresentationTypeCode/ is Individual.
+MD SpatialRepresentationTypeCode/ Types MD SpatialRepresentationTypeCode.
+MD SpatialRepresentationTypeCode/ is Individual.
+MD SpatialRepresentationTypeCode/ Types MD SpatialRepresentationTypeCode.
+MD SpatialRepresentationTypeCode/ is Individual.
+MD SpatialRepresentationTypeCode/ Types MD SpatialRepresentationTypeCode.

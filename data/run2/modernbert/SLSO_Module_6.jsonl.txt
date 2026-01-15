@@ -1,0 +1,366 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+BFO 0000050 is ObjectProperty.
+BFO 0000051 is ObjectProperty.
+GENO 0000580 is ObjectProperty.
+GENO 0000726 is ObjectProperty.
+IAO 0000219 is ObjectProperty.
+RO 0000079 is ObjectProperty.
+RO 0000079 Domain BFO 0000034.
+RO 0000079 InverseOf RO 0000085.
+RO 0000085 is ObjectProperty.
+RO 0000085 Domain BFO 0000004.
+RO 0000085 Range BFO 0000034.
+RO 0000085 InverseOf RO 0000079.
+RO 0000087 is ObjectProperty.
+RO 0000087 Domain BFO 0000004.
+RO 0000087 Range BFO 0000023.
+RO 0000091 is ObjectProperty.
+RO 0000091 Domain BFO 0000004.
+RO 0000091 Range BFO 0000016.
+RO 0000091 InverseOf RO 0000092.
+RO 0000092 is ObjectProperty.
+RO 0000092 InverseOf RO 0000091.
+RO 0001000 is ObjectProperty.
+RO 0001000 Domain BFO 0000004.
+RO 0001000 Range BFO 0000004.
+RO 0001000 InverseOf RO 0001001.
+RO 0001001 is ObjectProperty.
+RO 0001001 InverseOf RO 0001000.
+RO 0001025 is ObjectProperty.
+RO 0001025 Characteristics Transitive.
+RO 0001025 Domain BFO 0000004.
+RO 0001025 Range BFO 0000004,.
+RO 0001025 Range BFO 0000004 and (not (BFO 0000006)).
+RO 0002162 is ObjectProperty.
+RO 0002202 is ObjectProperty.
+RO 0002202 Characteristics Transitive.
+RO 0002202 Domain BFO 0000004.
+RO 0002202 Range BFO 0000004.
+RO 0002202 InverseOf RO 0002203.
+RO 0002203 is ObjectProperty.
+RO 0002203 InverseOf RO 0002202.
+RO 0002207 is ObjectProperty.
+RO 0002207 SubPropertyOf RO 0002202.
+RO 0002215 is ObjectProperty.
+RO 0002215 Domain BFO 0000004.
+RO 0002215 Range BFO 0000015.
+RO 0002219 is ObjectProperty.
+RO 0002219 SubPropertyOf RO 0002220.
+RO 0002220 is ObjectProperty.
+RO 0002220 Domain BFO 0000004.
+RO 0002220 Range BFO 0000004.
+RO 0002221 is ObjectProperty.
+RO 0002221 SubPropertyOf RO 0002220.
+RO 0002225 is ObjectProperty.
+RO 0002225 SubPropertyOf RO 0002202.
+RO 0002327 is ObjectProperty.
+RO 0002327 SubPropertyOf RO 0002215.
+RO 0002494 is ObjectProperty.
+RO 0002494 SubPropertyOf RO 0002202.
+RO 0002495 is ObjectProperty.
+has prefix is ObjectProperty.
+SLSO 0001060 is DataProperty.
+SLSO 0001060 Domain SLSO 0000044.
+SLSO 0001081 is DataProperty.
+SLSO 0001081 Domain SLSO 0000044.
+BFO 0000002 is Class.
+BFO 0000003 is Class.
+BFO 0000004 is Class.
+BFO 0000004 SubClassOf BFO 0000002,.
+BFO 0000004 SubClassOf BFO 0000050 only BFO 0000004.
+BFO 0000004 DisjointWith BFO 0000031.
+BFO 0000004 DisjointWith BFO 0000020.
+BFO 0000006 is Class.
+BFO 0000006 SubClassOf BFO 0000141.
+BFO 0000015 is Class.
+BFO 0000016 is Class.
+BFO 0000020 is Class.
+BFO 0000020 DisjointWith BFO 0000004.
+BFO 0000023 is Class.
+BFO 0000031 is Class.
+BFO 0000031 DisjointWith BFO 0000004.
+BFO 0000034 is Class.
+BFO 0000034 SubClassOf BFO 0000016.
+BFO 0000040 is Class.
+BFO 0000040 SubClassOf BFO 0000004.
+BFO 0000040 DisjointWith BFO 0000141.
+BFO 0000141 is Class.
+BFO 0000141 SubClassOf BFO 0000004.
+BFO 0000141 DisjointWith BFO 0000051 some BFO 0000040.
+BFO 0000141 DisjointWith BFO 0000040.
+GENO 0000481 is Class.
+GENO 0000481 SubClassOf GENO 0000897.
+GENO 0000514 is Class.
+GENO 0000660 is Class.
+GENO 0000660 SubClassOf GENO 0000897.
+GENO 0000714 is Class.
+GENO 0000714 SubClassOf GENO 0000897,.
+GENO 0000714 SubClassOf GENO 0000919,.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing, is GENO 0000580 some www.w3.org/2002/07/#.
+www.w3.org/2000/01/-schema# is Annotations.
+www.w3.org/2000/01/-schema# is GENO 0000726 some GENO 0000481.
+GENO 0000715 is Class.
+GENO 0000715 SubClassOf GENO 0000897.
+GENO 0000897 is Class.
+GENO 0000897 is equivalent to GENO 0000481 or (BFO 0000051 some GENO 0000481) or (GENO 0000726 some.
+GENO 0000897 is equivalent to (GENO 0000481 or GENO 0000660)) or (IAO 0000219 some.
+GENO 0000897 is equivalent to (GENO 0000481 or GENO 0000660 or GENO 0000715)).
+GENO 0000897 SubClassOf BFO 0000031,.
+GENO 0000897 SubClassOf RO 0002162 some OBI 0100026.
+GENO 0000919 is Class.
+GO 0006281 is Class.
+GO 0006281 SubClassOf GO 0006974.
+GO 0006950 is Class.
+GO 0006974 is Class.
+GO 0006974 SubClassOf GO 0033554.
+GO 0033554 is Class.
+GO 0033554 SubClassOf GO 0006950,.
+GO 0033554 SubClassOf GO 0051716.
+GO 0051716 is Class.
+NCBITaxon 117570 is Class.
+NCBITaxon 117571 is Class.
+NCBITaxon 117571 SubClassOf NCBITaxon 117570.
+NCBITaxon 1437010 is Class.
+NCBITaxon 1437010 SubClassOf NCBITaxon 9347.
+NCBITaxon 207598 is Class.
+NCBITaxon 207598 SubClassOf NCBITaxon 9604.
+NCBITaxon 314295 is Class.
+NCBITaxon 32525 is Class.
+NCBITaxon 33208 is Class.
+NCBITaxon 33213 is Class.
+NCBITaxon 33213 SubClassOf NCBITaxon 6072.
+NCBITaxon 6072 is Class.
+NCBITaxon 6072 SubClassOf NCBITaxon 33208.
+NCBITaxon 8287 is Class.
+NCBITaxon 8287 SubClassOf NCBITaxon 117571.
+NCBITaxon 9347 is Class.
+NCBITaxon 9347 SubClassOf NCBITaxon 32525.
+NCBITaxon 9604 is Class.
+NCBITaxon 9604 SubClassOf NCBITaxon 314295.
+OBI 0000321 is Class.
+OBI 0000374 is Class.
+OBI 0000374 SubClassOf BFO 0000034.
+OBI 0000462 is Class.
+OBI 0000754 is Class.
+OBI 0000764 is Class.
+OBI 0000774 is Class.
+OBI 0000979 is Class.
+OBI 0001004 is Class.
+OBI 0002227 is Class.
+OBI 0002248 is Class.
+OBI 0002294 is Class.
+OBI 0002315 is Class.
+OBI 0002334 is Class.
+OBI 0002344 is Class.
+OBI 0002346 is Class.
+OBI 0002364 is Class.
+OBI 0100026 is Class.
+PO 0006001 is Class.
+PO 0006001 SubClassOf PO 0009008.
+PO 0006210 is Class.
+PO 0009002 is Class.
+PO 0009002 DisjointWith PO 0009008.
+PO 0009005 is Class.
+PO 0009005 SubClassOf PO 0025004.
+PO 0009007 is Class.
+PO 0009007 DisjointWith PO 0009008.
+PO 0009008 is Class.
+PO 0009008 SubClassOf PO 0025496.
+PO 0009008 DisjointWith PO 0009007.
+PO 0009008 DisjointWith PO 0009002.
+PO 0009013 is Class.
+PO 0020144 is Class.
+PO 0020144 SubClassOf PO 0009013,.
+PO 0020144 SubClassOf BFO 0000051 some PO 0006210.
+PO 0020148 is Class.
+PO 0020148 SubClassOf PO 0020144.
+PO 0025004 is Class.
+PO 0025004 SubClassOf PO 0009008.
+PO 0025029 is Class.
+PO 0025029 SubClassOf PO 0025004.
+PO 0025496 is Class.
+RBO 00015012 is Class.
+RBO 00015012 SubClassOf UBERON 0000000.
+SDDO 3000101 is Class.
+SLSO 0000044 is Class.
+SLSO 0000044 SubClassOf SDDO 3000101.
+UBERON 0000000 is Class.
+UBERON 0000000 SubClassOf BFO 0000003.
+UBERON 0000061 is Class.
+UBERON 0000307 is Class.
+UBERON 0000465 is Class.
+UBERON 0000465 SubClassOf UBERON 0001062.
+UBERON 0000467 is Class.
+UBERON 0000476 is Class.
+UBERON 0000479 is Class.
+UBERON 0000483 is Class.
+UBERON 0000923 is Class.
+UBERON 0000924 is Class.
+UBERON 0000924 SubClassOf UBERON 0000923,.
+UBERON 0000924 SubClassOf RO 0002202 some UBERON 0006601,.
+UBERON 0000924 SubClassOf RO 0002495 some UBERON 0006601.
+UBERON 0001004 is Class.
+UBERON 0001004 SubClassOf UBERON 0000467.
+UBERON 0001004 DisjointWith UBERON 0002416.
+UBERON 0001062 is Class.
+UBERON 0001062 SubClassOf BFO 0000004.
+UBERON 0002384 is Class.
+UBERON 0002384 SubClassOf UBERON 0000479.
+UBERON 0002416 is Class.
+UBERON 0002416 DisjointWith UBERON 0001004.
+UBERON 0003570 is Class.
+UBERON 0003570 SubClassOf UBERON 0002384.
+UBERON 0005764 is Class.
+UBERON 0005764 SubClassOf UBERON 0000476,.
+UBERON 0005764 SubClassOf BFO 0000050 some UBERON 0000061.
+UBERON 0005769 is Class.
+UBERON 0005769 SubClassOf UBERON 0005764,.
+UBERON 0005769 SubClassOf BFO 0000050 some UBERON 0000483.
+UBERON 0006598 is Class.
+UBERON 0006601 is Class.
+UBERON 0006601 SubClassOf UBERON 0006598,.
+UBERON 0006601 SubClassOf BFO 0000050 some UBERON 0000307.
+UBERON 0015329 is Class.
+UBERON 0015329 SubClassOf UBERON 0005769.
+UO 0000046 is Class.
+UO 0000064 is Class.
+UO 0000064 is equivalent to UO 1000062 and (has prefix some UO 0000299),.
+UO 0000064 is equivalent to {UO 0000064}.
+UO 0000064 SubClassOf UO 1000062,.
+UO 0000064 SubClassOf has prefix some UO 0000299.
+UO 0000086 is Class.
+UO 0000086 is equivalent to UO 1010049 and (has prefix some UO 0000294),.
+UO 0000086 is equivalent to {UO 0000086}.
+UO 0000086 SubClassOf UO 1010049,.
+UO 0000086 SubClassOf has prefix some UO 0000294.
+UO 0000134 is Class.
+UO 0000134 is equivalent to {UO 0000134}.
+UO 0000134 SubClassOf UO 1000134.
+UO 0000139 is Class.
+UO 0000139 is equivalent to UO 1000137 and (has prefix some UO 0000299),.
+UO 0000139 is equivalent to {UO 0000139}.
+UO 0000139 SubClassOf UO 1000137,.
+UO 0000139 SubClassOf has prefix some UO 0000299.
+UO 0000153 is Class.
+UO 0000153 is equivalent to {UO 0000153}.
+UO 0000153 SubClassOf UO 1000153.
+UO 0000158 is Class.
+UO 0000158 is equivalent to {UO 0000158}.
+UO 0000158 SubClassOf UO 1000158.
+UO 0000162 is Class.
+UO 0000162 is equivalent to {UO 0000162}.
+UO 0000162 SubClassOf UO 1000162.
+UO 0000169 is Class.
+UO 0000169 is equivalent to {UO 0000169}.
+UO 0000169 SubClassOf UO 1000169.
+UO 0000201 is Class.
+UO 0000201 is equivalent to {UO 0000201}.
+UO 0000201 SubClassOf UO 1000201.
+UO 0000204 is Class.
+UO 0000204 is equivalent to {UO 0000204}.
+UO 0000204 SubClassOf UO 1000204.
+UO 0000244 is Class.
+UO 0000244 is equivalent to {UO 0000244}.
+UO 0000244 SubClassOf UO 1000244.
+UO 0000294 is Class.
+UO 0000294 SubClassOf UO 0000046.
+UO 0000298 is Class.
+UO 0000299 is Class.
+UO 0000304 is Class.
+UO 0000304 SubClassOf UO 0000046.
+UO 0000314 is Class.
+UO 0000314 is equivalent to {UO 0000314}.
+UO 0000314 SubClassOf UO 1000314.
+UO 0000329 is Class.
+UO 0000329 SubClassOf UO 0000244.
+UO 0000330 is Class.
+UO 0000330 SubClassOf UO 0000244.
+UO 0010061 is Class.
+UO 0010061 is equivalent to UO 1010060 and (has prefix some UO 0000298),.
+UO 0010061 is equivalent to {UO 0010061}.
+UO 0010061 SubClassOf UO 1010060,.
+UO 0010061 SubClassOf has prefix some UO 0000298.
+UO 1000062 is Class.
+UO 1000134 is Class.
+UO 1000137 is Class.
+UO 1000153 is Class.
+UO 1000158 is Class.
+UO 1000162 is Class.
+UO 1000169 is Class.
+UO 1000201 is Class.
+UO 1000204 is Class.
+UO 1000244 is Class.
+UO 1000314 is Class.
+UO 1010049 is Class.
+UO 1010060 is Class.
+Box is Class.
+DCMIType is Class.
+Thing is www.w3.org/2002/07/#.
+MESH is Class.
+TGN is Class.
+LinkRole is Class.
+LinkRole SubClassOf Role.
+LymphaticVessel is Class.
+Thing is www.w3.org/2002/07/#.
+MotorizedBicycle is Class.
+MotorizedBicycle SubClassOf Vehicle.
+OrganizationRole is Class.
+OrganizationRole SubClassOf Role.
+PerformanceRole is Class.
+PerformanceRole SubClassOf Role.
+Role is Class.
+Thing is www.w3.org/2002/07/#.
+Vehicle is Class.
+www.w3.org/2002/07/# is Class.
+Coworker is Class.
+Coworker SubClassOf RelatedType.
+Date is Class.
+Date SubClassOf RelatedType.
+Home is Class.
+Home SubClassOf Type.
+Internet is Class.
+Internet SubClassOf Type.
+Parcel is Class.
+Parcel SubClassOf Type.
+RelatedType is Class.
+Tel is Class.
+Thing is www.w3.org/2002/07/#.
+Type is Class.
+ns.com/foaf/0.1/ is Class.
+ns.com/foaf/0.1/ SubClassOf BFO 0000004.
+UO 0000064 is Individual.
+UO 0000086 is Individual.
+UO 0000134 is Individual.
+UO 0000139 is Individual.
+UO 0000153 is Individual.
+UO 0000158 is Individual.
+UO 0000162 is Individual.
+UO 0000169 is Individual.
+UO 0000201 is Individual.
+UO 0000204 is Individual.
+UO 0000244 is Individual.
+UO 0000314 is Individual.
+UO 0010061 is Individual.
+Collection is Individual.
+Collection Types DCMIType.
+Dataset is Individual.
+Dataset Types DCMIType.
+Event is Individual.
+Event Types DCMIType.
+Image is Individual.
+Image Types DCMIType.
+InteractiveResource is Individual.
+InteractiveResource Types DCMIType.
+PhysicalObject is Individual.
+PhysicalObject Types DCMIType.
+Service is Individual.
+Service Types DCMIType.
+Software is Individual.
+Software Types DCMIType.
+Sound is Individual.
+Sound Types DCMIType.
+Text is Individual.
+Text Types DCMIType.
+Text DisjointClasses BFO 0000004,BFO 0000020,BFO 0000031.

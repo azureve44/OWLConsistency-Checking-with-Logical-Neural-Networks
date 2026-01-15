@@ -1,0 +1,287 @@
+www.w3.org/2000/01/-schema# is AnnotationProperty.
+string is Datatype.
+address is ObjectProperty.
+aggregationOf is ObjectProperty.
+applies is ObjectProperty.
+asksFor is ObjectProperty.
+attests is ObjectProperty.
+authorizes is ObjectProperty.
+becomes is ObjectProperty.
+commissions is ObjectProperty.
+compliesWith is ObjectProperty.
+componentOf is ObjectProperty.
+concerns is ObjectProperty.
+contributesToAchivementOf is ObjectProperty.
+delivers is ObjectProperty.
+derivesFrom is ObjectProperty.
+determines is ObjectProperty.
+extracts is ObjectProperty.
+givesWayTo is ObjectProperty.
+has is ObjectProperty.
+hasTopic is ObjectProperty.
+implements is ObjectProperty.
+impliesAccessTo is ObjectProperty.
+impliesTheRightToCommunicate is ObjectProperty.
+includes is ObjectProperty.
+informs is ObjectProperty.
+initiatedDuring is ObjectProperty.
+isAccessedDuring is ObjectProperty.
+isAssignedTo is ObjectProperty.
+isBasedUpon is ObjectProperty.
+isCentredOn is ObjectProperty.
+isExpressedBy is ObjectProperty.
+isExtractedFrom is ObjectProperty.
+isFunding is ObjectProperty.
+isImportedInto is ObjectProperty.
+isIssuedBy is ObjectProperty.
+isReceivedAs is ObjectProperty.
+isRecordedIn is ObjectProperty.
+isStoredOn is ObjectProperty.
+isTheResultOf is ObjectProperty.
+isUsedAsLabelFor is ObjectProperty.
+justifies is ObjectProperty.
+motivates is ObjectProperty.
+permits is ObjectProperty.
+refersTo is ObjectProperty.
+regulates is ObjectProperty.
+requires is ObjectProperty.
+resultsIn is ObjectProperty.
+targets is ObjectProperty.
+triggers is ObjectProperty.
+authorization by law is Class.
+authorization by law SubClassOf Mental-Object.
+automatedCare is Class.
+automatic medical device is Class.
+automatic medical device SubClassOf medical device,.
+automatic medical device SubClassOf delivers some automatedCare.
+care activity is Class.
+care activity directory is Class.
+care activity directory SubClassOf Mental-Object,.
+care activity directory SubClassOf includes min 1 care provider activity.
+care activity mandate is Class.
+care activity mandate SubClassOf care matter.
+www.w3.org/2000/01/-schema# is Annotations.
+Thing, health record extract is www.w3.org/2002/07/#.
+care activity period is Class.
+care activity period element is Class.
+care actor is Class.
+care commitment is Class.
+care information is Class.
+care information SubClassOf Mental-Object.
+care information for import is Class.
+care information for import SubClassOf care information,.
+care information for import SubClassOf isImportedInto exactly 1 professional health record.
+care matter is Class.
+care matter SubClassOf Mental-Object,.
+care matter SubClassOf State,.
+care matter SubClassOf derivesFrom some care matter,.
+care matter SubClassOf impliesAccessTo some health record,.
+care matter SubClassOf isRecordedIn some health record,.
+care matter SubClassOf isUsedAsLabelFor some health record component,.
+care matter SubClassOf isUsedAsLabelFor some health record extract,.
+care matter SubClassOf isUsedAsLabelFor only care activity mandate,.
+care matter SubClassOf regulates min 1 healthcare process,.
+care matter SubClassOf concerns exactly 1 subject of care,.
+care matter SubClassOf isAssignedTo exactly 1 care actor,.
+care matter SubClassOf requires exactly 1 care commitment,.
+care matter SubClassOf requires max 1 authorization by law,.
+care matter SubClassOf requires max 1 informed consent.
+care period mandate is Class.
+care period mandate SubClassOf care matter,.
+care period mandate SubClassOf authorizes some care provider activity,.
+care period mandate SubClassOf commissions min 1 healthcare service,.
+care period mandate SubClassOf hasTopic min 1 care matter,.
+care period mandate SubClassOf commissions exactly 1 mandated period of care.
+care plan is Class.
+care plan SubClassOf Mental-Object,.
+care plan SubClassOf address some health thread,.
+care plan SubClassOf compliesWith some clinical guideline,.
+care plan SubClassOf implements some protocol,.
+care plan SubClassOf isBasedUpon some core carePlan,.
+care plan SubClassOf address min 1 health issue,.
+care plan SubClassOf isTheResultOf min 1 care planning,.
+care plan SubClassOf targets min 1 health objective,.
+care plan SubClassOf targets min 1 healthcare goal.
+care planning is Class.
+care planning SubClassOf Mental-Object,.
+care planning SubClassOf isBasedUpon some clinical guideline.
+care provider activity is Class.
+certificate related to a healthcare matter is Class.
+certificate related to a healthcare matter SubClassOf Mental-Object,.
+certificate related to a healthcare matter SubClassOf aggregationOf min 1 health record component,.
+certificate related to a healthcare matter SubClassOf attests min 1 care matter,.
+certificate related to a healthcare matter SubClassOf isIssuedBy min 1 care actor.
+clinical guideline is Class.
+clinical guideline SubClassOf Mental-Object,.
+clinical guideline SubClassOf isCentredOn min 1 health issue.
+clinical pathway is Class.
+clinical pathway SubClassOf Mental-Object,.
+clinical pathway SubClassOf address min 1 health condition,.
+clinical pathway SubClassOf informs min 1 core carePlan,.
+clinical pathway SubClassOf refersTo min 1 clinical guideline.
+clinical process is Class.
+clinical process SubClassOf healthcare process,.
+clinical process SubClassOf address min 1 health issue,.
+clinical process SubClassOf includes min 1 mandated period of care,.
+clinical process SubClassOf has max 1 clinical process interest.
+clinical process interest is Class.
+clinical report is Class.
+clinical report SubClassOf health record extract,.
+clinical report SubClassOf isReceivedAs some non-ratified healthcare information.
+consent competence is Class.
+consent competence SubClassOf Mental-Object.
+contact is Class.
+continuity facilitator mandate is Class.
+continuity facilitator mandate SubClassOf care matter,.
+continuity facilitator mandate SubClassOf hasTopic some health thread,.
+continuity facilitator mandate SubClassOf applies min 1 care period mandate.
+core carePlan is Class.
+core carePlan SubClassOf Mental-Object.
+data repository is Class.
+data repository SubClassOf Mental-Object.
+demand for care is Class.
+demand for care SubClassOf Mental-Object,.
+demand for care SubClassOf justifies some demand mandate,.
+demand for care SubClassOf asksFor min 1 care provider activity,.
+demand for care SubClassOf concerns min 1 care matter,.
+demand for care SubClassOf triggers max 1 care period mandate.
+demand for initial contact is Class.
+demand for initial contact SubClassOf demand for care,.
+demand for initial contact SubClassOf resultsIn max 1 initial contact.
+demand mandate is Class.
+demand mandate SubClassOf care matter,.
+demand mandate SubClassOf givesWayTo some care period mandate,.
+demand mandate SubClassOf permits some continuity facilitator mandate,.
+demand mandate SubClassOf permits some mandate to export personal information,.
+demand mandate SubClassOf hasTopic min 1 care matter.
+discharge report is Class.
+discharge report SubClassOf clinical report.
+electronic health record component is Class.
+electronic health record component SubClassOf health record component.
+electronic health record extract is Class.
+electronic health record extract SubClassOf health record extract,.
+electronic health record extract SubClassOf isExtractedFrom some sharable data repository,.
+electronic health record extract SubClassOf isImportedInto some sharable data repository,.
+electronic health record extract SubClassOf aggregationOf min 1 electronic health record component.
+electronic patient summary is Class.
+electronic patient summary SubClassOf electronic health record extract.
+health concern is Class.
+health concern SubClassOf health record extract.
+health condition is Class.
+health condition SubClassOf health issue.
+health issue is Class.
+health issue SubClassOf care matter,.
+health issue SubClassOf determines some care activity period element.
+health need is Class.
+health objective is Class.
+health objective SubClassOf Mental-Object,.
+health objective SubClassOf address min 1 health need.
+health record is Class.
+health record SubClassOf data repository,.
+health record SubClassOf isAccessedDuring min 1 care activity,.
+health record SubClassOf isAccessedDuring min 1 care activity period,.
+health record SubClassOf isStoredOn min 1 medium,.
+health record SubClassOf concerns exactly 1 subject of care.
+health record component is Class.
+health record component SubClassOf data repository,.
+health record component SubClassOf componentOf some health record component.
+health record extract is Class.
+health record extract SubClassOf Mental-Object,.
+health record extract SubClassOf extracts min 1 health record component,.
+health record extract SubClassOf isExtractedFrom exactly 1 health record.
+health record extract DisjointWith care activity mandate.
+health thread is Class.
+healthcare funds is Class.
+healthcare funds SubClassOf resource,.
+healthcare funds SubClassOf isFunding some healthcare resource.
+healthcare goal is Class.
+healthcare goal SubClassOf Mental-Object,.
+healthcare goal SubClassOf contributesToAchivementOf min 1 health objective.
+healthcare information request is Class.
+healthcare information request SubClassOf request.
+healthcare process is Class.
+healthcare professional entitlement is Class.
+healthcare professional entitlement SubClassOf Mental-Object.
+healthcare resource is Class.
+healthcare resource SubClassOf resource.
+healthcare service is Class.
+healthcare service directory is Class.
+healthcare service directory SubClassOf Mental-Object.
+informed consent is Class.
+informed consent SubClassOf Mental-Object,.
+informed consent SubClassOf requires exactly 1 consent competence.
+initial contact is Class.
+mandate to export personal information is Class.
+mandate to export personal information SubClassOf care matter,.
+mandate to export personal information SubClassOf hasTopic min 1 care matter,.
+mandate to export personal information SubClassOf impliesTheRightToCommunicate min 1 health record extract.
+mandated period of care is Class.
+medical device is Class.
+medical device SubClassOf Physical-Object.
+medium is Class.
+medium SubClassOf Physical-Object.
+multi-professional carePlan is Class.
+multi-professional carePlan SubClassOf care plan.
+non-ratified healthcare information is Class.
+non-ratified healthcare information SubClassOf care information,.
+non-ratified healthcare information SubClassOf becomes some care information for import,.
+non-ratified healthcare information SubClassOf isRecordedIn some health record.
+personal health record is Class.
+personal health record SubClassOf health record.
+product is Class.
+product SubClassOf Physical-Object.
+professional health record is Class.
+professional health record SubClassOf health record.
+protocol is Class.
+protocol SubClassOf clinical guideline.
+reason for demand for care is Class.
+reason for demand for care SubClassOf Mental-Object,.
+reason for demand for care SubClassOf isExpressedBy some subject of care proxy,.
+reason for demand for care SubClassOf motivates some demand for care,.
+reason for demand for care SubClassOf isExpressedBy max 1 subject of care.
+referral is Class.
+referral SubClassOf demand for care,.
+referral SubClassOf initiatedDuring some contact,.
+referral SubClassOf asksFor exactly 1 care commitment.
+request is Class.
+request SubClassOf demand for care.
+resource is Class.
+resource SubClassOf Non-Physical-Object.
+sharable data repository is Class.
+sharable data repository SubClassOf data repository.
+subject of care is Class.
+subject of care proxy is Class.
+summarized healthcare information repository is Class.
+summarized healthcare information repository SubClassOf sharable data repository.
+uniprofessional carePlan is Class.
+uniprofessional carePlan SubClassOf care plan.
+MedicationRequest is Class.
+MedicationRequest SubClassOf request.
+Agentive-Social-Object is Class.
+Agentive-Social-Object SubClassOf Social-Object.
+Mental-Object is Class.
+Mental-Object SubClassOf Non-Physical-Object.
+Natural-Person is Class.
+Natural-Person SubClassOf Physical-Object.
+Non-Physical-Object is Class.
+Thing is www.w3.org/2002/07/#.
+Physical-Object is Class.
+Thing is www.w3.org/2002/07/#.
+Social-Agent is Class.
+Social-Agent SubClassOf Agentive-Social-Object.
+Social-Object is Class.
+Social-Object SubClassOf Non-Physical-Object.
+Socially-Constructed-Person is Class.
+Socially-Constructed-Person SubClassOf Social-Agent.
+State is Class.
+administrative division is Class.
+administrative division SubClassOf location.
+location is Class.
+location SubClassOf Physical-Object.
+socialRecord is Class.
+socialRecord SubClassOf data repository,.
+socialRecord SubClassOf concerns exactly 1 subject of care.
+socialcareReport is Class.
+socialcareReport SubClassOf health record extract.
+www.w3.org/2002/07/# is Class.
+www.w3.org/2000/01/-schema# is Annotations.
