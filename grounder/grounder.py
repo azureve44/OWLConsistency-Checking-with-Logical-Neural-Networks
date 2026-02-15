@@ -66,8 +66,10 @@ def ground_file(txt_path: Path, out_path: Path):
 
 def main():
     base = Path(__file__).parent
-    in_dir = base / "../data/run2/nlm"
-    out_dir = base / "../data/run2/grounded"
+    # in_dir = base / "../data/run2/nlm"
+    # out_dir = base / "../data/run2/grounded"
+    in_dir = base / "../data/ir"
+    out_dir = base / "../data/ir/grounded"
 
     out_dir.mkdir(parents=True, exist_ok=True)
     
