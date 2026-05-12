@@ -1,0 +1,207 @@
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: rabbitmq_user
+      RABBITMQ_DEFAULT_PASS: rabbitmq_password
+    ports:
+      - "15672:15672" # Management API port
+    volumes:
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+    networks:
+      - rabbitmq_network
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres_user
+      POSTGRES_PASSWORD: postgress_password
+      POSTGRES_DB: data_processing
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - postgres_network
+  start:
+    build: ./initial_publish
+    container_name: initial_publish
+    environment:
+      - RABBITMQ_QUEUE_OUTPUT=Ontologies
+      - RABBITMQ_HOST=rabbitmq
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgress_password
+      - POSTGRES_DB=data_processing
+    volumes:
+      - ./data:/input
+      - ./data/ont_modules/:/output
+    depends_on:
+      - rabbitmq
+      - postgres
+    networks:
+      - rabbitmq_network
+      - postgres_network
+#  modularization:
+#    build: ./OAPT
+#    restart: unless-stopped
+#    deploy:
+#      replicas: 1
+#    environment:
+#      - RABBITMQ_QUEUE_INPUT=Ontologies
+#      - RABBITMQ_QUEUE_OUTPUT=Modules_Modify
+#      - RABBITMQ_HOST=rabbitmq
+#      - POSTGRES_HOST=postgres
+#      - POSTGRES_USER=postgres_user
+#      - POSTGRES_PASSWORD=postgress_password
+#      - POSTGRES_DB=data_processing
+#      - OAPT_MERGE_EXTRACTION_SOURCE=false
+#      - OAPT_ENABLE_IMPORT_MAPPING=false
+#    volumes:
+#      - ./data:/input
+#      - ./data/ont_modules:/app/output
+#    depends_on:
+#      - rabbitmq
+#      - postgres
+#    networks:
+#      - rabbitmq_network
+#      - postgres_network
+  department-splitter:
+    build:
+      context: ./Department_Splitter
+    container_name: department_splitter
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - RABBITMQ_USER=rabbitmq_user
+      - RABBITMQ_PASS=rabbitmq_password
+      - RABBITMQ_QUEUE_INPUT=Ontologies
+      - RABBITMQ_QUEUE_OUTPUT=Modules_Preprocess
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=data_processing
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgress_password
+      - INPUT_ROOT=/input
+      - OUTPUT_ROOT=/output
+    volumes:
+      - ./data:/input
+      - ./data/ont_modules:/output
+    depends_on:
+      - rabbitmq
+      - postgres
+    restart: unless-stopped
+    networks:
+      - rabbitmq_network
+      - postgres_network
+  modification:
+    build: ./OWL_Ontology_Modification/Modification
+    restart: unless-stopped
+    deploy:
+      replicas: 2
+    environment:
+      - RABBITMQ_QUEUE_INPUT=Modules_Modify
+      - RABBITMQ_QUEUE_OUTPUT=Modules_Preprocess
+      - RABBITMQ_HOST=rabbitmq
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgress_password
+      - POSTGRES_DB=data_processing
+    volumes:
+      - ./data/ont_modules:/input
+      - ./data/ont_modules:/output
+    depends_on:
+      - rabbitmq
+      - postgres
+    networks:
+      - rabbitmq_network
+      - postgres_network
+  preprocess:
+    build: ./Preprocessing
+    restart: unless-stopped
+    deploy:
+      replicas: 1
+    environment:
+      - RABBITMQ_QUEUE_INPUT=Modules_Preprocess
+      - RABBITMQ_QUEUE_OUTPUT=Prefix_Removal
+      - RABBITMQ_HOST=rabbitmq
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=postgress_password
+      - POSTGRES_DB=data_processing
+    volumes:
+      - ./data/ont_modules:/input
+      - ./data/processed_modules:/output
+    depends_on:
+      - rabbitmq
+      - postgres
+    networks:
+      - rabbitmq_network
+      - postgres_network
+  prefix_removal:
+    build: ./Prefix_Removal
+    restart: unless-stopped
+    environment:
+      - RABBITMQ_QUEUE_INPUT=Prefix_Removal
+      - RABBITMQ_QUEUE_OUTPUT=Translation
+    volumes:
+      - ./data/processed_modules:/input
+      - ./data/prefixless_modules:/output
+    depends_on:
+      - rabbitmq
+      - postgres
+      - preprocess
+    networks:
+      - rabbitmq_network
+      - postgres_network
+  translation:
+    build: ./Translation
+    restart: unless-stopped
+    environment:
+      - RABBITMQ_QUEUE_INPUT=Translation
+      - RABBITMQ_QUEUE_OUTPUT=filtering
+    volumes:
+      - ./data/prefixless_modules:/input
+      - ./data/triples:/output
+    networks:
+      - rabbitmq_network
+      - postgres_network
+  filtering:
+    build: ./Tokenization
+    restart: unless-stopped
+    deploy:
+      replicas: 2
+    environment:
+      - MAX_THREADS=16
+      - RABBITMQ_QUEUE_INPUT=filtering
+      - RABBITMQ_QUEUE_OUTPUT=Modules_Modify
+    volumes:
+      - ./data/triples:/input
+      - ./data/filtered_modules:/output
+      - ./data/filtered_modules/consistent/500:/output500
+      - ./data/filtered_modules/consistent/1000:/output1000
+      - ./data/filtered_modules/consistent/4000:/output4000
+      - ./data/filtered_modules/inconsistent/500:/output500InC
+      - ./data/filtered_modules/inconsistent/1000:/output1000InC
+      - ./data/filtered_modules/inconsistent/4000:/output4000InC
+      - ./data/filtered_modules/overThreshold:/output10000
+      - ./data/filtered_modules/overThreshold:/output10000InC
+    networks:
+      - rabbitmq_network
+      - postgres_network
+  embedding:
+      build: ./embed
+      restart: unless-stopped
+      deploy:
+        replicas: 10
+      volumes:
+        - ./data/ont_modules_inconsistent_rdf:/input_inconsistent/
+        - ./data/ont_modules:/input_consistent/
+        - ../GLaMoR_Model_Training/embeddings/:/output/
+      networks:
+        - rabbitmq_network
+volumes:
+  pg_data:
+networks:
+  rabbitmq_network:
+    driver: bridge
+  postgres_network:
+    driver: bridge
