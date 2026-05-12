@@ -1,0 +1,796 @@
+package fusion.oapt.general.cc;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.zip.DataFormatException;
+import java.util.zip.GZIPInputStream;
+
+import org.apache.jena.ontology.OntClass;
+import org.apache.jena.ontology.OntDocumentManager;
+import org.apache.jena.ontology.OntModel;
+import org.apache.jena.ontology.OntModelSpec;
+import org.apache.jena.ontology.OntProperty;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
+
+
+import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
+import org.semanticweb.owlapi.io.StreamDocumentSource;
+import org.semanticweb.owlapi.model.IRI;
+import org.semanticweb.owlapi.model.MissingImportHandlingStrategy;
+import org.semanticweb.owlapi.model.OWLDocumentFormat;
+import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLOntologyAlreadyExistsException;
+import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyID;
+import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration;
+import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
+import org.semanticweb.owlapi.model.AddOntologyAnnotation;
+import org.semanticweb.owlapi.model.AxiomType;
+import org.semanticweb.owlapi.model.OWLAnnotation;
+import org.semanticweb.owlapi.util.SimpleIRIMapper;
+
+import ru.avicomp.ontapi.OntApiException;
+import ru.avicomp.ontapi.OntManagers;
+import ru.avicomp.ontapi.OntologyModel;
+import fr.inrialpes.exmo.ontowrap.OntowrapException;
+import fusion.oapt.model.Constant;
+import fusion.oapt.model.Node;
+import fusion.oapt.model.NodeList;
+import fusion.oapt.model.RBGModel;
+import fusion.oapt.model.RBGModelFactory;
+import fusion.oapt.model.modelImpl.RBGModelImpl;
+
+public class ModelBuild {
+
+	private static final boolean ENABLE_IMPORT_MAPPING =
+			readBooleanFlag("oapt.enableImportMapping", "OAPT_ENABLE_IMPORT_MAPPING", false);
+	private static final boolean ENABLE_IMPORT_PROCESSING =
+                        readBooleanFlag("oapt.enableImportProcessing", "OAPT_ENABLE_IMPORT_PROCESSING",
+                                        readBooleanFlag("oapt.enableImportedAxioms", "OAPT_ENABLE_IMPORTED_AXIOMS", false));
+
+	public  RBGModel rbgmModel;
+	public static String fn1;
+	public static String wd;
+	public static int [] ConnexionArray = null;
+	public static float [] MinAngleRule = null;
+	private  OntModel OntModel = null;
+	public static OntModel model=null;
+	private OWLOntology OwlModel=null;
+	public static NodeList entities = null;
+	private  LinkedHashMap <String, Integer> indexNodeClassArray ;
+	private  LinkedHashMap <String, Integer> indexNodeClassArray2;
+	int NumCH;
+    public static  String [] SortedNameOnt;
+    public static boolean analysisTest = false;
+    public static  int colorIndex;
+    public int NumEntity;
+    public  static String ontologyName = null;
+    private  String nameOnt=null;
+    private Boolean check;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    public ModelBuild()
+    {
+    	rbgmModel=new RBGModelImpl();
+    	indexNodeClassArray=new LinkedHashMap<String, Integer>();
+    	indexNodeClassArray2=new LinkedHashMap<String, Integer>();
+    	NumCH=1;
+    	SortedNameOnt= null;
+    	OntModel=null;
+    	OwlModel=null;
+    	NumEntity=0;
+    	check=false;
+    }
+
+    public ModelBuild(String OntName)
+    {
+    	rbgmModel=new RBGModelImpl();
+    	indexNodeClassArray=new LinkedHashMap<String, Integer>();
+    	indexNodeClassArray2=new LinkedHashMap<String, Integer>();
+    	NumCH=1;
+    	SortedNameOnt= null;
+       	Coordinator.FinishPartitioning = false;
+       	OntModel=null;
+       	OwlModel=null;
+    	nameOnt=OntName;
+    	NumEntity=0;
+    	check=false;
+    }
+
+    public String getOntoName()
+    {
+    	return nameOnt;
+    }
+
+   public OWLOntology getOWLModel()
+   {
+	   if(OwlModel==null)
+		   build();
+	   return OwlModel;
+   }
+   public RBGModel getRBGModel()
+   {
+	   if(rbgmModel==null)
+		   build();
+	   return rbgmModel;
+   }
+    public OntModel getModel()
+    {
+    	if(OntModel==null)
+ 		   build();
+    	return OntModel;
+    }
+
+    public void build()
+    {
+    	InputStream in=null;
+    	InputStream fileStream=null;
+    	if(nameOnt.endsWith(".owl") || nameOnt.endsWith(".rdf") || nameOnt.endsWith(".obo") || nameOnt.endsWith(".ttl"))
+			try {
+				System.out.println(System.getProperty("user.dir"));
+				in = new FileInputStream(nameOnt);
+			} catch (FileNotFoundException e2) {
+				// TODO Auto-generated catch block
+				e2.printStackTrace();
+			}
+		else if(nameOnt.endsWith(".gz"))
+    		{
+    			try {
+					fileStream = new FileInputStream(new File(nameOnt));
+					in= new GZIPInputStream(fileStream);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+    		}
+    	else
+    	{
+    		System.out.println("Sorry!! invalid ontology file format");
+    		return ;
+    	}
+
+    	// Getting manager:
+        OWLOntologyManager manager = OntManagers.createONT();
+        if (ENABLE_IMPORT_MAPPING) {
+                configureImportMappings(nameOnt, manager);
+        } else {
+                System.out.println("[OAPT-ModelBuild] import mapping disabled by default");
+        }
+        OWLOntologyLoaderConfiguration config = new OWLOntologyLoaderConfiguration();
+        config = config.setMissingImportHandlingStrategy(MissingImportHandlingStrategy.SILENT);
+        StreamDocumentSource documentSource = new StreamDocumentSource(in);
+
+        // Creating an ontology:
+        OWLOntology owl = null;
+		OWLOntology effectiveOwl = null;
+        try{
+        	 System.out.println("\t loading....."+nameOnt);
+             owl = manager.loadOntologyFromOntologyDocument(documentSource, config);
+             System.out.println(nameOnt+"\t is loaded as OWLOntology.....");
+             System.out.println("[OAPT-DIAG|MODELBUILD_DIRECT] subClass=" + owl.getAxiomCount(AxiomType.SUBCLASS_OF)
+                     + " disjoint=" + owl.getAxiomCount(AxiomType.DISJOINT_CLASSES)
+                     + " equiv=" + owl.getAxiomCount(AxiomType.EQUIVALENT_CLASSES)
+                     + " domain=" + owl.getAxiomCount(AxiomType.OBJECT_PROPERTY_DOMAIN)
+                     + " range=" + owl.getAxiomCount(AxiomType.OBJECT_PROPERTY_RANGE));
+             Set<OWLOntology> closure = owl.getImportsClosure();
+             System.out.println("[OAPT-ModelBuild] imports=" + owl.getImportsDeclarations().size()
+                     + " closureOntologies=" + closure.size()
+                     + " closureSubClass=" + countAxiomsInClosure(closure, AxiomType.SUBCLASS_OF)
+                     + " closureDisjoint=" + countAxiomsInClosure(closure, AxiomType.DISJOINT_CLASSES)
+                     + " closureDomain=" + countAxiomsInClosure(closure, AxiomType.OBJECT_PROPERTY_DOMAIN)
+                     + " closureRange=" + countAxiomsInClosure(closure, AxiomType.OBJECT_PROPERTY_RANGE));
+             System.out.println("[OAPT-DIAG|MODELBUILD_CLOSURE] subClass=" + countAxiomsInClosure(closure, AxiomType.SUBCLASS_OF)
+                     + " disjoint=" + countAxiomsInClosure(closure, AxiomType.DISJOINT_CLASSES)
+                     + " equiv=" + countAxiomsInClosure(closure, AxiomType.EQUIVALENT_CLASSES)
+                     + " domain=" + countAxiomsInClosure(closure, AxiomType.OBJECT_PROPERTY_DOMAIN)
+                     + " range=" + countAxiomsInClosure(closure, AxiomType.OBJECT_PROPERTY_RANGE));
+			 effectiveOwl = ENABLE_IMPORT_PROCESSING ? owl : createOntologyWithoutImports(owl);
+			 Set<OWLOntology> effectiveClosure = effectiveOwl.getImportsClosure();
+			 System.out.println("[OAPT-ModelBuild] import processing enabled=" + ENABLE_IMPORT_PROCESSING
+                                         + " effectiveClosureOntologies=" + effectiveClosure.size());
+                         if (!ENABLE_IMPORT_PROCESSING && effectiveOwl != owl) {
+                                 System.out.println("[OAPT-ModelBuild] stripped owl:imports from active ontology view");
+                         }
+			 System.out.println("[OAPT-DIAG|MODELBUILD_EFFECTIVE] subClass=" + countAxiomsInClosure(effectiveClosure, AxiomType.SUBCLASS_OF)
+					 + " disjoint=" + countAxiomsInClosure(effectiveClosure, AxiomType.DISJOINT_CLASSES)
+					 + " equiv=" + countAxiomsInClosure(effectiveClosure, AxiomType.EQUIVALENT_CLASSES)
+					 + " domain=" + countAxiomsInClosure(effectiveClosure, AxiomType.OBJECT_PROPERTY_DOMAIN)
+					 + " range=" + countAxiomsInClosure(effectiveClosure, AxiomType.OBJECT_PROPERTY_RANGE));
+        }
+        catch (OWLOntologyAlreadyExistsException e) {
+    		// exception is thrown if there is an ontology with the same ID already in memory
+    		OWLOntologyID id = e.getOntologyID();
+    		 owl = manager.getOntology( id );
+    		    if ( owl == null )
+					try {
+						throw new OntowrapException("Already loaded [owl cache failure] " +  e );
+					} catch (OntowrapException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+    		} catch ( OWLOntologyCreationException oocex ) {
+    		    oocex.printStackTrace();
+    		    try {
+					throw new OntowrapException("Cannot load " +  oocex );
+				} catch (OntowrapException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+    		}
+        catch(OntApiException|StackOverflowError| OutOfMemoryError | IllegalArgumentException e)
+        {
+
+        }
+
+        int size=0;
+        OntDocumentManager mgr;
+        OntModelSpec spec;
+        OWLDocumentFormat format=null;
+    	if(owl!=null)
+    	{
+          format= manager.getOntologyFormat(owl);
+		  System.out.println("the ontology format\t"+format.toString());
+		  OwlModel=effectiveOwl != null ? effectiveOwl : owl;
+        // =====================================
+        // Interacting using jena-API interface:
+        // =====================================
+		Model model = ((OntologyModel) OwlModel).asGraphModel();
+        mgr = new OntDocumentManager();
+	 	mgr.setProcessImports(ENABLE_IMPORT_PROCESSING);
+        spec = new OntModelSpec(OntModelSpec.OWL_MEM);
+	    spec.setDocumentManager(mgr);
+	    //spec.setReasoner(reasoner);
+	    OntModel = ModelFactory.createOntologyModel(spec, model);
+        OntModel.setStrictMode(false);
+        rbgmModel = RBGModelFactory.createModel("PBM_MODEL");
+        logModelBuildPhase("before_build_rbgm", "format=" + format.toString());
+        long buildRbgStart = System.currentTimeMillis();
+        try {
+                 buildrbgmModel();
+                 logModelBuildPhase("after_build_rbgm", buildRbgStart, "");
+                 long rbgPauseStart = System.currentTimeMillis();
+                 Thread.sleep(4000);
+                 logModelBuildPhase("after_rbgm_pause", rbgPauseStart, "waitMs=4000");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        logModelBuildPhase("before_named_class_count", "");
+        long namedClassCountStart = System.currentTimeMillis();
+        try{
+        size=rbgmModel.getNamedClassNodes().size();
+        logModelBuildPhase("after_named_class_count", namedClassCountStart, "namedClassNodeCount=" + size);
+         }
+        catch(ConcurrentModificationException e)
+        {
+                logModelBuildPhase("named_class_count_retry", namedClassCountStart, "reason=ConcurrentModificationException");
+                try {
+                                long retryPauseStart = System.currentTimeMillis();
+                                Thread.sleep(4000);
+                                logModelBuildPhase("after_named_class_retry_pause", retryPauseStart, "waitMs=4000");
+                                size=rbgmModel.getNodes().size();
+                                logModelBuildPhase("after_named_class_retry", namedClassCountStart, "fallbackNodeCount=" + size);
+                        } catch (InterruptedException |OutOfMemoryError e1) {
+                                // TODO Auto-generated catch block
+                                e1.printStackTrace();
+                        }
+        }}
+    if(size==0 ||owl==null)
+    {
+    logModelBuildPhase("fallback_enter", "namedClassNodeCount=" + size + " owlNull=" + (owl == null));
+    if(format!=null){
+    if(!format.toString().contains("RDF/XML"))
+        {
+        logModelBuildPhase("before_change_format", "format=" + format.toString());
+        long changeFormatStart = System.currentTimeMillis();
+        changeFormat(nameOnt,owl, manager);
+        logModelBuildPhase("after_change_format", changeFormatStart, "updatedOntologyPath=" + nameOnt);
+        }}
+    try{
+            OntModel=null;
+            rbgmModel=null;
+    logModelBuildPhase("before_buildMo", "ontologyPath=" + nameOnt);
+    long buildMoStart = System.currentTimeMillis();
+    buildMo();
+    logModelBuildPhase("after_buildMo", buildMoStart, "ontModelNull=" + (OntModel == null) + " rbgmNull=" + (rbgmModel == null));
+               }
+           catch(Exception e)
+           {
+                logModelBuildPhase("buildMo_exception", "exception=" + e.getClass().getSimpleName());
+           }
+    }
+    	model=OntModel;
+
+         wd = "."+File.separator+"output"+File.separator;
+         File file = new File(wd);
+         if (file.exists() == false) {
+                file.mkdir();
+            }
+         String filepath1 = nameOnt;
+     	 filepath1="file:"+filepath1;
+         fn1 = new File(filepath1).getName();
+         String []stfn = fn1.split("\\.");
+         ontologyName = stfn[0];
+    	 entities = new NodeList();
+    	 indexNodeClassArray = new LinkedHashMap<String, Integer>();
+    	 indexNodeClassArray2 = new LinkedHashMap<String, Integer>();
+    	 int x=0;
+      	 for (Iterator<Node> i = rbgmModel.listNamedClassNodes(); i.hasNext();)
+    	 {
+    		Node tt = i.next();
+    		if (tt.getLocalName() != null){
+	    		entities.add(tt);
+	            indexNodeClassArray2.put(entities.get(x).getLocalName(), x);
+	            indexNodeClassArray.put(entities.get(x).toString(), x);//new:samira
+	            x++;
+    		}
+    	 }
+    	 NumEntity = entities.size();
+        //Add properties
+         for (Iterator<Node> i = rbgmModel.listPropertyNodes(); i.hasNext();) {
+                Node tt = i.next();
+                if (tt.getLocalName() != null){
+                        entities.add(tt);
+                    indexNodeClassArray2.put(entities.get(x).getLocalName(), x);
+                    indexNodeClassArray.put(entities.get(x).toString(), x);//new:samira
+                    x++;
+                }
+        }
+        if (NumEntity == 0 && OntModel != null && rbgmModel != null) {
+                logModelBuildPhase("entity_fallback_enter",
+                                "jenaNamedClasses=" + OntModel.listNamedClasses().toList().size()
+                                + " currentEntities=" + entities.size());
+                long entityFallbackStart = System.currentTimeMillis();
+                x = populateEntitiesFromOntModel(x);
+                logModelBuildPhase("entity_fallback_exit", entityFallbackStart,
+                                "numEntity=" + NumEntity + " entitiesSize=" + entities.size());
+        }
+        System.out.println(entities.size()+"	"+filepath1+"	 the number of concepts	"+OntModel.listNamedClasses().toList().size()+"	"+NumEntity+"	"
+        +entities.size()+"	"+rbgmModel.getNodes().size());
+        if(Controller.CheckBuildModel==false)
+        {
+        	Controller.CheckBuildModel=true;
+
+        }
+    }
+
+    private void buildMo()
+    {
+    	OntDocumentManager mgr = new OntDocumentManager();
+	 	mgr.setProcessImports(ENABLE_IMPORT_PROCESSING);
+	    OntModelSpec spec = new OntModelSpec(OntModelSpec.OWL_MEM);
+	    spec.setDocumentManager(mgr);
+	    OntModel = ModelFactory.createOntologyModel(spec, null);
+	    String filepath1 = nameOnt;
+    	filepath1="file:"+filepath1;
+   	    if(nameOnt.endsWith(".owl")||(nameOnt.endsWith(".rdf")))
+        {
+     logModelBuildPhase("buildMo_before_read", "source=" + filepath1);
+     long readStart = System.currentTimeMillis();
+     OntModel.read(filepath1,null);
+     logModelBuildPhase("buildMo_after_read", readStart, "jenaSize=" + OntModel.size());
+     // reasoner.bindSchema(OntModel);
+         OntModel.setStrictMode(false);
+         logModelBuildPhase("buildMo_before_createRbg", "");
+         long createRbgStart = System.currentTimeMillis();
+         rbgmModel = RBGModelFactory.createModel("PBM_MODEL");
+           logModelBuildPhase("buildMo_after_createRbg", createRbgStart, "");
+           long setOntModelStart = System.currentTimeMillis();
+           rbgmModel.setOntModel(OntModel);
+           logModelBuildPhase("buildMo_after_setOntModel", setOntModelStart, "");
+           long namedClassesStart = System.currentTimeMillis();
+           int fallbackNamedClasses = OntModel.listNamedClasses().toList().size();
+           logModelBuildPhase("buildMo_after_namedClasses", namedClassesStart, "namedClasses=" + fallbackNamedClasses);
+       }
+   	  else if(nameOnt.endsWith(".gz"))
+    	{
+    		InputStream fileStream=null;
+   		try {
+   			fileStream = new FileInputStream(new File(nameOnt));
+   		} catch (FileNotFoundException e) {
+   			// TODO Auto-generated catch block
+   			e.printStackTrace();
+   		}
+      	    InputStream gzips=null;
+   		try {
+   			gzips = new GZIPInputStream(fileStream);
+
+   		} catch (IOException e) {
+   			// TODO Auto-generated catch block
+   			e.printStackTrace();
+   		}
+    		OntModel.read(gzips, "");
+   	        OntModel.setStrictMode(false);//
+   	        rbgmModel = RBGModelFactory.createModel("PBM_MODEL");
+   	        rbgmModel.setOntModel(OntModel);
+    	}
+
+    }
+
+    private static String unzipFunction(String file)
+	        throws IOException, DataFormatException {
+	    //Allocate resources.
+	    FileInputStream fis = new FileInputStream(file);
+	    FileOutputStream fos = new FileOutputStream(file.substring(0, file.indexOf(".gz")));
+	    GZIPInputStream gzis = new GZIPInputStream(fis);
+	    byte[] buffer = new byte[1024];
+	    int len = 0;
+
+	    //Extract compressed content.
+	    while ((len = gzis.read(buffer)) > 0) {
+	        fos.write(buffer, 0, len);
+	    }
+
+	    //Release resources.
+	    fos.close();
+	    fis.close();
+	    gzis.close();
+	    buffer = null;
+	 return fos.toString();
+
+	    }
+
+
+  private void changeFormat(String name,OWLOntology owl, OWLOntologyManager manager)
+  {
+	  OWLDocumentFormat rdfxmlFormat = new RDFXMLDocumentFormat();
+	  if(name.endsWith(".owl"))
+		{
+			 manager.setOntologyFormat(owl, rdfxmlFormat);
+			 File temp=new File(name.substring(0, name.indexOf(".owl")));
+
+			 checkTemp1();
+			 String wdn = "."+File.separator+"temp1"+File.separator;
+	         File f= new File(wdn);
+	         if (f.exists() == false) {
+	                f.mkdir();
+	            }
+			 File file = null;
+			try {
+				file = File.createTempFile(name.substring(0, name.indexOf(".owl")), ".owl",f);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}//new File("."+File.separator+"temp1"+File.separator));
+			 try {
+				manager.saveOntology(owl, rdfxmlFormat, IRI.create(file));
+			} catch (OWLOntologyStorageException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 File ff=new File(nameOnt);
+			 String str=ff.getName().substring(0, ff.getName().length());
+			 File newFile = new File(file.getParent(), str);//
+			 try {
+				Files.move(file.toPath(), newFile.toPath());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 nameOnt=newFile.getAbsolutePath();
+			 temp.deleteOnExit();
+		}
+		 if(name.endsWith(".gz"))
+		 {
+			try {
+				try {
+					unzipFunction(name);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} catch (DataFormatException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 manager.removeOntology(owl);
+			 File temp=new File(name.substring(0, name.indexOf(".gz")));
+			 FileInputStream fin = null;
+			try {
+				fin = new FileInputStream (temp);
+			} catch (FileNotFoundException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			 checkTemp1();
+			 String wdn = "."+File.separator+"temp1"+File.separator;
+	         File f= new File(wdn);
+	         if (f.exists() == false) {
+	                f.mkdir();
+	            }
+			 File file = null;
+			try {
+				file = File.createTempFile(name.substring(0, name.indexOf(".owl")), ".owl",f);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}//new File("."+File.separator+"temp1"+File.separator));
+			 try {
+				owl=manager.loadOntologyFromOntologyDocument(fin);
+			} catch (OWLOntologyCreationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 try {
+				manager.saveOntology(owl, rdfxmlFormat, IRI.create(file));
+			} catch (OWLOntologyStorageException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 File ff=new File(nameOnt);
+			 String str=ff.getName().substring(0, ff.getName().indexOf(".gz"));
+			 File newFile = new File(file.getParent(), str);//
+			 try {
+				Files.move(file.toPath(), newFile.toPath());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			 nameOnt=newFile.getAbsolutePath();
+			 System.out.println("the file\t"+nameOnt);
+			 temp.deleteOnExit();
+		 }
+
+  }
+
+  private static void checkTemp1()
+  {
+  	File folder=new File("."+File.separator+"temp1"+File.separator);
+  	if(folder.isDirectory()){
+  	for (File file: folder.listFiles()) {
+  		if (!file.isDirectory()) file.delete();
+      }}
+  }
+
+  private void buildrbgmModel()
+  {
+        logModelBuildPhase("buildrbgm_sync_start", "jenaSize=" + (OntModel != null ? OntModel.size() : -1));
+        long syncBuildStart = System.currentTimeMillis();
+        rbgmModel.setOntModel(OntModel);
+        check=false;
+        logModelBuildPhase("buildrbgm_sync_done", syncBuildStart,
+                        "nodeCount=" + (rbgmModel != null ? rbgmModel.getNodes().size() : -1));
+  }
+
+
+  ////////////////// Another Build model for other ontology formats
+    public  void BuildModelOnt1(InputStream nameOnt, String filepath)
+    {
+    	InputStream filepath1 = null;
+    	filepath1=nameOnt;
+
+    	OntDocumentManager mgr = new OntDocumentManager();
+        mgr.setProcessImports(false);
+        OntModelSpec spec = new OntModelSpec(OntModelSpec.OWL_MEM);
+       spec.setDocumentManager(mgr);
+        OntModel = ModelFactory.createOntologyModel(spec, null);
+        OntModel.read(filepath1, "");
+        OntModel.setStrictMode(false);//
+        rbgmModel = RBGModelFactory.createModel("PBM_MODEL");
+        //rbgmModel = RBGModelFactory.createModel("GMO_MODEL");
+        rbgmModel.setOntModel(OntModel);
+
+      	entities = new NodeList();
+    	indexNodeClassArray = (LinkedHashMap<String, Integer>) new LinkedHashMap<String, Integer>();
+    	indexNodeClassArray2 = (LinkedHashMap<String, Integer>) new LinkedHashMap<String, Integer>();
+    	int x=0;
+    	for (Iterator<Node> i = rbgmModel.listNamedClassNodes(); i.hasNext();) {
+    		entities.add(i.next());
+            indexNodeClassArray2.put(entities.get(x).getLocalName(), x);
+            indexNodeClassArray.put(entities.get(x).toString(), x);//new:samira
+            x++;
+        }
+
+
+    	//Add properties
+        for (Iterator<Node> i = rbgmModel.listPropertyNodes(); i.hasNext();) {
+        	entities.add(i.next());
+            indexNodeClassArray2.put(entities.get(x).getLocalName(), x);
+            indexNodeClassArray.put(entities.get(x).toString(), x);//new:samira
+            x++;
+        }
+
+    }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public  int  findIndex(String nameX ){
+
+    	int indexed = -1;
+    	if (nameX == "[STATEMENT]"){
+    		indexed = -1;
+    	}else{
+
+    	if (nameX != null){
+    		if (nameX.equals("Thing")) {
+    			indexed = 1;
+    	} else{
+    		if (indexNodeClassArray.get(nameX) == null ){
+    			indexed = -1;
+    		}else{
+        		indexed = indexNodeClassArray.get(nameX);
+    		}
+    	}
+    	}}
+    	return indexed;
+    }
+    public  int  findIndexName(String nameX ){
+
+    	int indexed = -1;
+    	if (nameX == "[STATEMENT]"){
+    		indexed = -1;
+    	}else{
+
+    	if (nameX != null){
+    		if (nameX.equals("Thing")) {
+    			indexed = 1;
+    	} else{
+    		if (indexNodeClassArray2.get(nameX) == null ){
+    			indexed = -1;
+    		}else{
+        		indexed = indexNodeClassArray2.get(nameX);
+    		}
+    	}
+    	}}
+    	return indexed;
+    }
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ public static ArrayList<Node> Connexion(Node iclass)
+ {
+	 ArrayList<Node> ConnexionNode=new ArrayList<Node>();
+
+	 NodeList Subs= iclass.getNamedSubs();
+	 if (Subs != null) {
+		 for (int i=0; i< Subs.size(); i++){
+			 ConnexionNode.add(Subs.get(i));
+		 }
+	 }
+	 NodeList Supers = iclass.getNamedSupers();
+	 if (Supers != null ){
+		 for (int i=0; i< Supers.size(); i++){
+			 ConnexionNode.add(Supers.get(i));
+		 }
+	 }
+ 			return ConnexionNode;
+ 	}
+
+ public static void main(String args[]) throws OWLOntologyCreationException, IOException
+ {
+
+     double start=System.currentTimeMillis();
+   String fp1 = "D:/owl/owl/envo.owl.gz";
+ //    String fp2 = "D:/owl/ncit.owl.gz";
+     String fp3="D:/alsayed_SVN/AquaDiva/rdf/study.owl";
+
+    Controller con=new Controller(fp1);
+    con.runPartition();
+     ModelBuild model=  new ModelBuild(fp3);
+     model.build();
+     double end=System.currentTimeMillis();
+     System.out.println(model.getOWLModel()+"\t The  build model time---->"+(end-start)*.001+"\t sec \t"+model);
+     System.out.println("The optimal num. of partition time---->"+(end-start)*.001+"\t sec \t"+model.OntModel.size()+"\t"+
+        model.rbgmModel.getClassNodes().size());
+
+ }
+
+
+ private int populateEntitiesFromOntModel(int startIndex) {
+         int index = startIndex;
+         for (Iterator<OntClass> i = OntModel.listNamedClasses(); i.hasNext();) {
+                 OntClass ontClass = i.next();
+                 if (ontClass == null || ontClass.isAnon() || ontClass.getNameSpace() == null
+                                 || Constant.isBuiltInNs(ontClass.getNameSpace())) {
+                         continue;
+                 }
+                 Node node = rbgmModel.getNode(ontClass);
+                 if (node == null && ontClass.getURI() != null) {
+                         node = rbgmModel.getNode(ontClass.getURI());
+                 }
+                 index = addEntityNode(node, index);
+         }
+         NumEntity = entities.size();
+         for (Iterator<OntProperty> i = OntModel.listAllOntProperties(); i.hasNext();) {
+                 OntProperty ontProperty = i.next();
+                 if (ontProperty == null || ontProperty.isAnon() || ontProperty.getNameSpace() == null
+                                 || Constant.isBuiltInNs(ontProperty.getNameSpace())) {
+                         continue;
+                 }
+                 Node node = rbgmModel.getNode(ontProperty);
+                 if (node == null && ontProperty.getURI() != null) {
+                         node = rbgmModel.getNode(ontProperty.getURI());
+                 }
+                 index = addEntityNode(node, index);
+         }
+         return index;
+ }
+ private int addEntityNode(Node node, int index) {
+         if (node == null || node.getLocalName() == null) {
+                 return index;
+         }
+         if (indexNodeClassArray.containsKey(node.toString())) {
+                 return index;
+         }
+         entities.add(node);
+         indexNodeClassArray2.put(node.getLocalName(), index);
+         indexNodeClassArray.put(node.toString(), index);
+         return index + 1;
+ }
+ private void logModelBuildPhase(String phase, long startedAtMillis, String details) {
+         long elapsedMillis = startedAtMillis >= 0 ? System.currentTimeMillis() - startedAtMillis : -1;
+         String elapsedPart = startedAtMillis >= 0 ? " elapsedMs=" + elapsedMillis : "";
+         System.out.println("[OAPT-DIAG|MODELBUILD_PROGRESS] ontology=" + nameOnt
+                         + " phase=" + phase
+                         + elapsedPart
+                         + (details != null && details.length() > 0 ? " " + details : ""));
+ }
+
+ private void logModelBuildPhase(String phase, String details) {
+         logModelBuildPhase(phase, -1, details);
+ }
+
+ private static boolean readBooleanFlag(String systemPropertyName, String envVarName, boolean defaultValue) {
+	 String value = System.getProperty(systemPropertyName);
+	 if (value == null || value.trim().isEmpty()) {
+		 value = System.getenv(envVarName);
+	 }
+	 if (value == null || value.trim().isEmpty()) {
+		 return defaultValue;
+	 }
+	 return Boolean.parseBoolean(value.trim());
+ }
+
+ private static void configureImportMappings(String ontologyPath, OWLOntologyManager manager) {
+     Path source = Paths.get(ontologyPath).toAbsolutePath();
+     Path localBench = source.getParent() != null ? source.getParent().resolve("univ-bench.owl") : null;
+     if (localBench != null && localBench.toFile().exists()) {
+         IRI localIri = IRI.create(localBench.toUri());
+         manager.getIRIMappers().add(new SimpleIRIMapper(
+                 IRI.create("http://swat.cse.lehigh.edu/onto/univ-bench.owl"), localIri));
+         manager.getIRIMappers().add(new SimpleIRIMapper(
+                 IRI.create("https://swat.cse.lehigh.edu/onto/univ-bench.owl"), localIri));
+         System.out.println("[OAPT-ModelBuild] mapped univ-bench import to " + localBench);
+     } else {
+         System.out.println("[OAPT-ModelBuild] local univ-bench.owl not found next to source ontology: " + source);
+     }
+ }
+
+ private static int countAxiomsInClosure(Set<OWLOntology> closure, AxiomType<?> axiomType) {
+     int count = 0;
+     for (OWLOntology ontology : closure) {
+         count += ontology.getAxiomCount(axiomType);
+     }
+     return count;
+ }
+
+
+ private static OWLOntology createOntologyWithoutImports(OWLOntology source) {
+     try {
+         OWLOntologyManager localManager = OntManagers.createONT();
+         OWLOntology copy = localManager.createOntology(source.getOntologyID());
+         localManager.addAxioms(copy, source.getAxioms());
+         for (OWLAnnotation annotation : source.getAnnotations()) {
+             localManager.applyChange(new AddOntologyAnnotation(copy, annotation));
+         }
+         return copy;
+     } catch (OWLOntologyCreationException e) {
+         System.out.println("[OAPT-ModelBuild] failed to strip imports, falling back to original ontology: " + e.getMessage());
+         return source;
+     }
+ }
+}
