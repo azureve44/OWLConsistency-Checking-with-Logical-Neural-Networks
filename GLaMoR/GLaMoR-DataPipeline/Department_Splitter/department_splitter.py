@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-Department-based modularization for consolidated LUBM ontologies.
-Replaces OAPT for the consolidated University*.owl intake path.
+Department-based modularization for consolidated LUBM ontologies
+Flow: RabbitMQ(Ontologies) -> split by Department -> RabbitMQ(Modules_Preprocess)
+Each output module contains one department's ABox + its referenced TBox slice
 """
 import os
 import time
 import traceback
 from pathlib import Path
-from typing import Optional, Set
+from typing import List, Optional, Set
 import pika
 import psycopg2
 import rdflib
@@ -25,6 +26,7 @@ POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "postgress_password")
 INPUT_ROOT = Path(os.getenv("INPUT_ROOT", "/input"))
 OUTPUT_ROOT = Path(os.getenv("OUTPUT_ROOT", "/output"))
 STATUS_CLUSTER = os.getenv("MODULARIZATION_CLUSTER", "department-splitter")
+# Schema-level OWL/RDF types — used to distinguish TBox from ABox triples
 CLASS_PROPERTY_TYPES = [
     OWL.Class,
     OWL.ObjectProperty,
@@ -35,6 +37,7 @@ CLASS_PROPERTY_TYPES = [
     OWL.TransitiveProperty,
     OWL.SymmetricProperty,
 ]
+# Predicates that carry schema-level semantics
 SCHEMA_PREDICATES = {
     RDF.type,
     RDFS.subClassOf,
@@ -58,6 +61,7 @@ def is_department_class(term) -> bool:
 def is_department_local(term, department_uri: URIRef) -> bool:
     return isinstance(term, URIRef) and str(term).startswith(str(department_uri))
 def setup_database():
+    # NOTE: DDL includes 'cluster' and 'error_message' columns required by mark_status()
     conn = psycopg2.connect(
         host=POSTGRES_HOST,
         database=POSTGRES_DB,
@@ -69,8 +73,10 @@ def setup_database():
         """
         CREATE TABLE IF NOT EXISTS modularization (
             id SERIAL PRIMARY KEY,
-            file_name VARCHAR(255),
+            file_name VARCHAR(255) UNIQUE,
             status VARCHAR(50),
+            cluster VARCHAR(255),
+            error_message TEXT,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
         """
@@ -78,7 +84,9 @@ def setup_database():
     conn.commit()
     return conn, cur
 def extract_tbox(graph: rdflib.Graph) -> rdflib.Graph:
+    """Extract TBox: all schema-typed entities + schema-predicate triples involving LUBM terms."""
     tbox = rdflib.Graph()
+    # Pass 1: collect triples for all OWL schema-typed subjects (classes, properties)
     for class_type in CLASS_PROPERTY_TYPES:
         for subject in graph.subjects(RDF.type, class_type):
             for predicate, obj in graph.predicate_objects(subject):
@@ -88,6 +96,7 @@ def extract_tbox(graph: rdflib.Graph) -> rdflib.Graph:
                     continue
                 if is_lubm_term(incoming_subject):
                     tbox.add((incoming_subject, incoming_predicate, subject))
+    # Pass 2: catch remaining schema-predicate triples touching any LUBM term
     for subject, predicate, obj in graph:
         if predicate == RDF.type:
             if is_lubm_term(subject):
@@ -96,25 +105,45 @@ def extract_tbox(graph: rdflib.Graph) -> rdflib.Graph:
         if predicate in SCHEMA_PREDICATES and (is_lubm_term(subject) or is_lubm_term(obj)):
             tbox.add((subject, predicate, obj))
     return tbox
-def find_departments(graph: rdflib.Graph):
-    return sorted({subject for subject, obj in graph.subject_objects(RDF.type) if is_department_class(obj)}, key=str)
-def find_university_uri(graph: rdflib.Graph, department_uri: URIRef):
+def find_departments(graph: rdflib.Graph) -> List[URIRef]:
+    """Return all Department instances, sorted by URI for deterministic output"""
+    return sorted(
+        {subject for subject, obj in graph.subject_objects(RDF.type) if is_department_class(obj)},
+        key=str,
+    )
+def find_university_uri(graph: rdflib.Graph, department_uri: URIRef) -> Optional[URIRef]:
+    """Heuristic: locate the University this department belongs to via object URI prefix
+    Fragile — relies on local name starting with 'University'"""
     for obj in graph.objects(department_uri, None):
         if isinstance(obj, URIRef) and local_name(obj).startswith("University"):
             return obj
     return None
 def build_department_subgraph(graph: rdflib.Graph, department_uri: URIRef) -> rdflib.Graph:
+    """Slice the full graph to triples relevant to one department
+    Keeps triples where subject/object:
+    - is local to this department (URI-prefix match)
+    - is the department or university root node
+    - is a LUBM schema term (cross-department vocabulary)
+    Also copies non-URI literals attached to the university node
+    """
     subgraph = rdflib.Graph()
     university_uri = find_university_uri(graph, department_uri)
     for subject, predicate, obj in graph:
         subject_local = is_department_local(subject, department_uri)
         object_local = is_department_local(obj, department_uri)
         touches_department_root = subject == department_uri or obj == department_uri
-        touches_university = university_uri is not None and (subject == university_uri or obj == university_uri)
+        touches_university = university_uri is not None and (
+            subject == university_uri or obj == university_uri
+        )
         if subject_local or object_local or touches_department_root:
-            if isinstance(subject, URIRef) and not (subject_local or touches_department_root or subject == university_uri or is_lubm_term(subject)):
+            # Skip foreign URIRefs that aren't LUBM terms or university/dept roots
+            if isinstance(subject, URIRef) and not (
+                subject_local or touches_department_root or subject == university_uri or is_lubm_term(subject)
+            ):
                 continue
-            if isinstance(obj, URIRef) and not (object_local or touches_department_root or obj == university_uri or is_lubm_term(obj)):
+            if isinstance(obj, URIRef) and not (
+                object_local or touches_department_root or obj == university_uri or is_lubm_term(obj)
+            ):
                 continue
             subgraph.add((subject, predicate, obj))
             continue
@@ -123,11 +152,13 @@ def build_department_subgraph(graph: rdflib.Graph, department_uri: URIRef) -> rd
             if is_department_local(other, department_uri) or other == department_uri:
                 subgraph.add((subject, predicate, obj))
     if university_uri is not None:
+        # Preserve university literals (e.g. labels) shared across departments
         for predicate, obj in graph.predicate_objects(university_uri):
             if not isinstance(obj, URIRef):
                 subgraph.add((university_uri, predicate, obj))
     return subgraph
 def extract_referenced_tbox(tbox: rdflib.Graph, local_subgraph: rdflib.Graph) -> rdflib.Graph:
+    """Transitive closure over TBox: seed from terms in the local subgraph, expand until stable"""
     seed_terms: Set[URIRef] = set()
     for subject, predicate, obj in local_subgraph:
         if is_lubm_term(subject):
@@ -137,6 +168,7 @@ def extract_referenced_tbox(tbox: rdflib.Graph, local_subgraph: rdflib.Graph) ->
         if is_lubm_term(obj):
             seed_terms.add(obj)
     referenced_tbox = rdflib.Graph()
+    # Fixpoint: keep pulling in TBox triples that touch any known seed term
     changed = True
     while changed:
         changed = False
@@ -158,8 +190,9 @@ def extract_referenced_tbox(tbox: rdflib.Graph, local_subgraph: rdflib.Graph) ->
                 changed = True
     return referenced_tbox
 def safe_department_name(dept_uri: URIRef) -> str:
+    """Sanitize department URI local name for filenames (`:` and `.` -> `_`)"""
     return local_name(dept_uri).replace(":", "_").replace(".", "_")
-def process_file(input_path: Path, output_dir: Path):
+def process_file(input_path: Path, output_dir: Path) -> List[str]:
     graph = rdflib.Graph()
     graph.parse(input_path, format="application/rdf+xml")
     tbox = extract_tbox(graph)
@@ -187,6 +220,7 @@ def process_file(input_path: Path, output_dir: Path):
     log(f"Generated {len(module_names)} modules for {base_name}")
     return module_names
 def mark_status(cur, conn, file_name: str, status: str, error_message: Optional[str] = None):
+    """Upsert processing status into DB. On conflict (file_name), overwrite status/cluster/error"""
     try:
         cur.execute(
             "INSERT INTO modularization (file_name, status, cluster, error_message) VALUES (%s, %s, %s, %s) "
@@ -198,6 +232,8 @@ def mark_status(cur, conn, file_name: str, status: str, error_message: Optional[
         conn.rollback()
         raise
 def on_message(channel, method, properties, body, conn, cur):
+    """RabbitMQ message callback. body = UTF-8 filename relative to INPUT_ROOT
+    Publishes one message per generated module to QUEUE_OUTPUT."""
     del properties
     file_name = body.decode().strip()
     log(f"Processing: {file_name}")
@@ -224,6 +260,7 @@ def on_message(channel, method, properties, body, conn, cur):
         channel.basic_ack(delivery_tag=method.delivery_tag)
 def start_worker():
     conn, cur = setup_database()
+    # Reconnect loop — resilient to RabbitMQ restarts
     while True:
         try:
             credentials = pika.PlainCredentials(RABBITMQ_USER, RABBITMQ_PASS)
