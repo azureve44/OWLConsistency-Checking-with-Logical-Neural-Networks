@@ -16,7 +16,7 @@ import sys
 import time
 from collections import Counter
 from datetime import timedelta
-from typing import List, Tuple
+from typing import Any, List, Tuple
 import numpy as np
 import pandas as pd
 import torch
@@ -71,14 +71,19 @@ print(f"[device] {DEVICE}"
       + (f" ({torch.cuda.get_device_name(0)})" if DEVICE.type == "cuda" else ""))
 
 def _fmt_time(seconds: float) -> str:
+    """Format elapsed seconds as HH:MM:SS.ss"""
     t = timedelta(seconds=seconds).total_seconds()
     h = int(t // 3600)
     m = int((t % 3600) // 60)
     s = t - h * 3600 - m * 60
     return f"{h:02d}:{m:02d}:{s:05.2f}"
-def is_injected(val) -> bool:
+def is_injected(val: Any) -> bool:
+    """True if val is non-null and not the string 'none'"""
     return pd.notna(val) and str(val).strip().lower() != "none"
-def parse_body(body) -> List[Tuple[str, str, str]]:
+def parse_body(body: Any) -> List[Tuple[str, str, str]]:
+    """Parse body column into (subject, predicate, object) string triples
+    Accepts a python-literal string or a plain list; returns [] on any error
+    """
     if isinstance(body, str):
         try:
             triples = ast.literal_eval(body)
@@ -96,10 +101,13 @@ def parse_body(body) -> List[Tuple[str, str, str]]:
         out.append((str(s).strip(), str(p).strip(), str(o).strip()))
     return out
 def _norm_iri(s: str) -> str:
+    """Collapse whitespace and strip trailing commas from an IRI string"""
     return re.sub(r"\s+", " ", s.strip().rstrip(",").strip())
 def _norm_pred(p: str) -> str:
+    """Strip leading/trailing whitespace from a predicate string"""
     return p.strip()
 def seed_everything(seed: int) -> None:
+    """Seed random, numpy, torch and cuda for full reproducibility"""
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -129,7 +137,8 @@ def build_predicate_vocab(train_df: pd.DataFrame,
 def encode_dataframe(df: pd.DataFrame,
                      pred_vocab: dict,
                      max_entities: int = MAX_ENTITIES,
-                     max_triples: int = MAX_TRIPLES):
+                     max_triples: int = MAX_TRIPLES,
+                     ) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, dict]:
     """Encode each ontology row into compact triple arrays.
     Returns
 
@@ -258,7 +267,7 @@ def build_adj(spo_t: torch.Tensor,
         adj[mb, ms, mo, mp] = 1.0
     return adj
 def batch_num_nodes(n_ents_t: torch.Tensor) -> int:
-    """Smallest dense N needed for this batch, clamped to [1, MAX_ENTITIES]."""
+    """Smallest dense N needed for this batch, clamped to [1, MAX_ENTITIES]"""
     if n_ents_t.numel() == 0:
         return 1
     return max(1, min(int(n_ents_t.max().item()), MAX_ENTITIES))
@@ -283,6 +292,17 @@ class OntologyNLM(nn.Module):
                  io_residual: bool    = NLM_IO_RESIDUAL,
                  clf_hidden_dim: int  = CLF_HIDDEN_DIM,
                  dropout: float       = DROPOUT):
+        """
+        n_pred_ch     : total predicate channels (UNK=0 + vocab)
+        nlm_depth     : number of NLM layers
+        nlm_breadth   : max arity handled (2 = binary relations)
+        nlm_attributes: output features per arity per layer
+        nlm_hidden_dim: hidden units in each logic-layer MLP
+        pred_emb_dim  : linear projection dim for predicate channels before NLM
+        io_residual   : re-inject inputs at every layer (see NLM_IO_RESIDUAL)
+        clf_hidden_dim: hidden dim of the 2-layer classifier head
+        dropout       : dropout rate in classifier head
+        """
         super().__init__()
         if nlm_hidden_dim is None:
             nlm_hidden_dim = list(NLM_HIDDEN_DIM)
@@ -331,7 +351,10 @@ class OntologyNLM(nn.Module):
             if isinstance(m, nn.Linear):
                 nn.init.kaiming_uniform_(m.weight, nonlinearity='relu')
                 nn.init.zeros_(m.bias)
-    def _run_nlm_masked(self, unary, adj, ent_msk):
+    def _run_nlm_masked(self,
+                        unary: torch.Tensor,
+                        adj: torch.Tensor,
+                        ent_msk: torch.Tensor) -> list:
         """
         Run LogicMachine layer-by-layer, re-masking padded entity slots
         between layers so that the Reducer's min/max never see padding
@@ -367,6 +390,11 @@ class OntologyNLM(nn.Module):
                 outputs_io = [merge(o, ff) for o, ff in zip(outputs_io, f)]
         return outputs_io if self._io_residual else f
     def forward(self, adj: torch.Tensor, n_ents: torch.Tensor) -> torch.Tensor:
+        """
+        adj    : [B, N, N, n_pred_ch]  multi-hot adjacency (float32)
+        n_ents : [B]                   valid entity counts per graph
+        Returns raw logits [B] (no sigmoid); use BCEWithLogitsLoss during training
+        """
         B, N = adj.shape[0], adj.shape[1]
         t_idx   = torch.arange(N, device=adj.device).unsqueeze(0)   # [1, N]
         ent_msk = (t_idx < n_ents.unsqueeze(1))                     # [B, N] bool
@@ -400,6 +428,9 @@ class OntologyNLM(nn.Module):
         return self.classifier(pooled).squeeze(-1)  # raw logits [B]
 def iterate_balanced_batches(idx_pos: np.ndarray, idx_neg: np.ndarray,
                              batch_size: int, rng: np.random.Generator):
+    """Yield balanced index arrays of ~batch_size (half pos / half neg)
+    Iterates over the longer class; exhausted class is resampled with replacement
+    """
     half = max(batch_size // 2, 1)
     rng.shuffle(idx_pos)
     rng.shuffle(idx_neg)
@@ -421,6 +452,9 @@ def evaluate_split(model: OntologyNLM,
                    Y_np: np.ndarray,
                    n_pred_ch: int,
                    batch_size: int = EVAL_BATCH_SIZE) -> dict:
+    """Full inference pass over a split; sets model to eval mode
+    Returns dict: acc, bacc, prec, rec, f1, inference_seconds
+    """
     model.eval()
     n = Y_np.shape[0]
     y_pred = np.zeros(n, dtype=np.int64)
@@ -444,8 +478,10 @@ def evaluate_split(model: OntologyNLM,
     }
 
 def _snapshot(model: nn.Module) -> dict:
+    """Deep-copy model state_dict to CPU (used for best-epoch checkpointing)"""
     return {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
 def _restore(model: nn.Module, snap: dict) -> None:
+    """Load a CPU snapshot back into model on DEVICE"""
     model.load_state_dict({k: v.to(DEVICE) for k, v in snap.items()})
 def run_one_seed(split_data: tuple,
                  n_pred_ch: int,
@@ -457,7 +493,7 @@ def run_one_seed(split_data: tuple,
     """
     Train NLM for one random seed
     split_data = (train_tuple, val_tuple, test_tuple)
-    Each tuple: (spo_t, lengths_t, n_ents_t, Y_t
+    Each tuple: (spo_t, lengths_t, n_ents_t, Y_t)
     shuffled_fixed=True: train all epochs, return final-epoch model
     """
     seed_everything(seed)
@@ -562,7 +598,10 @@ def run_one_seed(split_data: tuple,
 def _run_all_seeds(label: str,
                    split_data: tuple,
                    n_pred_ch: int,
-                   shuffle_train_labels: bool = False):
+                   shuffle_train_labels: bool = False) -> None:
+    """Run run_one_seed for every seed in SEEDS; print aggregated metrics and LaTeX table row
+    shuffle_train_labels: randomly permute train labels (sanity check / control experiment)
+    """
     print(f"\n{'#'*78}\n# Experiment: {label}"
           f"{'  [shuffled train labels]' if shuffle_train_labels else ''}\n{'#'*78}")
     (spo_tr, len_tr, nent_tr, Y_tr), va, te = split_data
@@ -621,7 +660,8 @@ def _run_all_seeds(label: str,
     )
     print("="*78)
 
-def main():
+def main() -> None:
+    """Load data, build vocab, encode splits, run real-label and optional shuffled-label experiments"""
     print("Loading CSVs ...")
     train_df = pd.read_csv(TRAIN_CSV)
     val_df   = pd.read_csv(VAL_CSV)

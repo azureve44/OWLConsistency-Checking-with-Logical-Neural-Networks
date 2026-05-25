@@ -8,7 +8,7 @@ We learn:
     - a triple encoder MLP   f_triple : R^{3E} -> R^H
     - a set encoder          g_onto    : pool({f_triple(t)}) -> R^H
     - an LTN predicate       Inconsistent(x) : R^H -> [0,1]   (sigmoid MLP)
-* LTN axioms (Real Logic, t-norm: product / aggregator: pMeanError p=2):
+ LTN axioms (Real Logic, t-norm: product / aggregator: pMeanError p=2):
         Forall  x_pos in INCONSISTENT_ONTOLOGIES :   Inconsistent(x_pos)
         Forall  x_neg in CONSISTENT_ONTOLOGIES   : ~ Inconsistent(x_neg)
   Training maximises SatAgg (loss = 1 - sat_agg)
@@ -32,26 +32,35 @@ import os
 
 # CUDA libs bootstrap (must run BEFORE import tensorflow)
 def _bootstrap_cuda_libs():
+    """
+    Prepend nvidia-* lib dirs to LD_LIBRARY_PATH, then re-exec the process
+    so TF picks them up on startup - no-op if already bootstrapped or no nvidia pkg
+    """
     import sys, glob, importlib.util
+    # guard: skip if already re-executed
     if os.environ.get('_LTN_CUDA_BOOTSTRAPPED') == '1':
         return
     try:
         spec = importlib.util.find_spec('nvidia')
     except (ValueError, ModuleNotFoundError):
         return
+    # no nvidia package installed
     if spec is None or not spec.submodule_search_locations:
         return
     base = spec.submodule_search_locations[0]
+    # collect all .../nvidia/*/lib dirs
     lib_dirs = sorted({d for d in glob.glob(os.path.join(base, '*/lib'))
                        if os.path.isdir(d)})
     if not lib_dirs:
         return
     cur = os.environ.get('LD_LIBRARY_PATH', '')
     new = ':'.join(lib_dirs) + (':' + cur if cur else '')
+    # already set correctly - avoid infinite re-exec loop
     if cur == new:
         return
     os.environ['LD_LIBRARY_PATH'] = new
     os.environ['_LTN_CUDA_BOOTSTRAPPED'] = '1'
+    # replace current process image - argv is preserved
     os.execv(sys.executable, [sys.executable] + sys.argv)
 
 _bootstrap_cuda_libs()
@@ -74,33 +83,48 @@ from sklearn.metrics import (accuracy_score, f1_score, precision_score,
                              recall_score)
 import ltn  # logictensornetworks (TF backend)
 
+#  Data paths
 TRAIN_CSV = "path/to/nsplits/train_data.csv"
 VAL_CSV   = "path/to/nsplits/eval_data.csv"
 TEST_CSV  = "path/to/nsplits/test_data.csv"
-EMB_DIM         = 128
-HID_DIM         = 512
-MAX_VOCAB       = 20000
-MAX_TRIPLES     = 256
-BATCH_SIZE      = 64           # bigger batch -> much better GPU utilisation
-EPOCHS          = 80          # upper bound
-LEARNING_RATE   = 3e-4
-P_MEAN_ERROR    = 2
-SEEDS           = [0,1,2,3,4]
-THRESHOLD       = 0.5
-EARLY_STOP_PATIENCE   = 16
-EARLY_STOP_MIN_DELTA  = 1e-3
-# Shuffled-labels sanity-check
-# permutation of the train labels (val/test labels stay real)
-RUN_SHUFFLED_LABEL_CONTROL = False
-SHUFFLE_SEED_OFFSET = 1000  # decouple shuffle RNG from training RNG
-os.environ.setdefault("TF_CPP_MIN_LOG_LEVEL", "2")
 
+# Model architecture
+EMB_DIM         = 128           # token embedding size
+HID_DIM         = 512           # MLP hidden size (also OntologyEncoder output)
+
+#  Vocabulary / encoding
+MAX_VOCAB       = 20000         # hard cap on vocab entries
+MAX_TRIPLES     = 256           # triples per ontology (truncate / pad to this)
+
+#  Training hyperparameters
+BATCH_SIZE      = 64            # bigger batch -> much better GPU utilisation
+EPOCHS          = 80            # upper bound
+LEARNING_RATE   = 3e-4
+P_MEAN_ERROR    = 2             # p for pMeanError t-norm / aggregator
+SEEDS           = [0,1,2,3,4]  # independent runs for mean ± std reporting
+
+#  Evaluation
+THRESHOLD       = 0.5           # sigmoid cut-off -> binary prediction
+
+#  Early stopping
+EARLY_STOP_PATIENCE   = 16      # epochs without improvement before stopping
+EARLY_STOP_MIN_DELTA  = 1e-3   # minimum val_acc gain to count as improvement
+
+#  Shuffled-labels sanity-check
+# permutes train labels only (val/test stay real) to verify the model learns
+RUN_SHUFFLED_LABEL_CONTROL = False
+SHUFFLE_SEED_OFFSET = 1000      # decouple shuffle RNG from training RNG
+
+os.environ.setdefault("TF_CPP_MIN_LOG_LEVEL", "2")  # suppress TF C++ info logs
+
+#  GPU setup
 _gpus = tf.config.list_physical_devices('GPU')
 if _gpus:
     try:
+        # enable memory growth to avoid pre-allocating full VRAM
         for _g in _gpus:
             tf.config.experimental.set_memory_growth(_g, True)
-        # Pin to a single GPU
+        # pin to a single GPU
         tf.config.set_visible_devices(_gpus[0], 'GPU')
         print(f'[GPU] using {_gpus[0].name} (of {len(_gpus)} visible)')
     except RuntimeError as _e:
@@ -108,18 +132,25 @@ if _gpus:
 else:
     print('[GPU] none detected; running on CPU')
 
+#  Utilities
+
 def _fmt_time(seconds: float) -> str:
-    """HH:MM:SS.ss"""
+    """seconds -> HH:MM:SS.ss string"""
     td = timedelta(seconds=seconds)
     total = td.total_seconds()
     h = int(total // 3600)
     m = int((total % 3600) // 60)
     s = total - h * 3600 - m * 60
     return f"{h:02d}:{m:02d}:{s:05.2f}"
+
 def is_injected(val) -> bool:
+    """True when injected_pattern cell holds a real pattern (not NaN / 'None')"""
     return pd.notna(val) and str(val).strip().lower() != "none"
+
+#  Triple parsing
+
 def parse_body(body) -> List[Tuple[str, str, str]]:
-    """stringified list of triples -> tuples"""
+    """stringified list of triples -> list of (s, p, o) string tuples"""
     if isinstance(body, str):
         try:
             triples = ast.literal_eval(body)
@@ -131,25 +162,36 @@ def parse_body(body) -> List[Tuple[str, str, str]]:
         return []
     out = []
     for t in triples:
+        # skip malformed entries
         if not isinstance(t, (list, tuple)) or len(t) != 3:
             continue
         s, p, o = t
         out.append((str(s).strip(), str(p).strip(), str(o).strip()))
     return out
+
+# OWL/DL restriction + boolean operators used as structural markers in objects
 _OP_TOKENS = {"some", "only", "max", "min", "exactly", "inverse",
               "and", "or", "not"}
+
 def tokenise_obj(o: str) -> List[str]:
     """
-    tokeniser for object expressions like 'P some C', 'PsomeC',
-    'inverse(P) some C', 'P max 1 C'
+    Split object expression on non-word boundaries
+    handles: 'P some C', 'PsomeC', 'inverse(P) some C', 'P max 1 C'
     """
     o = o.strip().rstrip(",")
     parts = re.split(r"(\W+)", o)
     return [p.strip() for p in parts if p and p.strip() and p.strip() != ","]
 
-PAD_TOKEN = "<PAD>"
-UNK_TOKEN = "<UNK>"
+#  Vocabulary
+
+PAD_TOKEN = "<PAD>"  # index 0 - padding
+UNK_TOKEN = "<UNK>"  # index 1 - out-of-vocabulary
+
 def build_vocab(df: pd.DataFrame, max_vocab: int = MAX_VOCAB) -> dict:
+    """
+    Count all s / p / o tokens across the train split
+    returns {token: int_id} capped at max_vocab
+    """
     counter: Counter = Counter()
     for body in df["body"]:
         for s, p, o in parse_body(body):
@@ -157,17 +199,20 @@ def build_vocab(df: pd.DataFrame, max_vocab: int = MAX_VOCAB) -> dict:
             counter[p] += 1
             for tok in tokenise_obj(o):
                 counter[tok] += 1
-    most = counter.most_common(max_vocab - 2)
+    most = counter.most_common(max_vocab - 2)  # reserve 2 slots for PAD/UNK
     vocab = {PAD_TOKEN: 0, UNK_TOKEN: 1}
     for tok, _ in most:
         vocab[tok] = len(vocab)
     return vocab
+
 def _detect_op(o_toks: List[str]) -> str:
+    """Return first OWL restriction keyword found in token list, else ''"""
     for t in o_toks:
         tl = t.lower()
         if tl in {"some", "only", "max", "min", "exactly", "inverse"}:
             return tl
     return ""
+
 def augment_vocab_with_pred_ops(df: pd.DataFrame, vocab: dict) -> dict:
     """
     Add 'predicate::op' composite tokens so the predicate slot can
@@ -183,28 +228,42 @@ def augment_vocab_with_pred_ops(df: pd.DataFrame, vocab: dict) -> dict:
         if k not in vocab and len(vocab) < MAX_VOCAB:
             vocab[k] = len(vocab)
     return vocab
+
+#  Encoding helpers
+
 def encode_pred(pred: str, o_toks: List[str], vocab: dict) -> int:
+    """
+    Encode predicate as 'pred::op' composite id when an op is present
+    falls back to plain pred id, then UNK
+    """
     op = _detect_op(o_toks)
     key = f"{pred}::{op}" if op else pred
     if key in vocab:
         return vocab[key]
     return vocab.get(pred, vocab[UNK_TOKEN])
+
 def encode_obj(o_toks: List[str], vocab: dict) -> int:
-    """First non-operator token wins
-    fall back to first token/ PAD
+    """
+    First non-operator token wins
+    falls back to first token / PAD
     """
     for t in o_toks:
         if t.lower() not in _OP_TOKENS:
             return vocab.get(t, vocab[UNK_TOKEN])
     return vocab.get(o_toks[0], vocab[UNK_TOKEN]) if o_toks else vocab[PAD_TOKEN]
+
 def encode_ontology(triples: Sequence[Tuple[str, str, str]],
                     vocab: dict,
                     max_triples: int = MAX_TRIPLES
                     ) -> Tuple[np.ndarray, np.ndarray, np.ndarray, int]:
+    """
+    Encode one ontology as three padded int32 arrays [max_triples]
+    returns s_ids, p_ids, o_ids, actual_length
+    """
     s_ids = np.zeros(max_triples, dtype=np.int32)
     p_ids = np.zeros(max_triples, dtype=np.int32)
     o_ids = np.zeros(max_triples, dtype=np.int32)
-    n = min(len(triples), max_triples)
+    n = min(len(triples), max_triples)  # truncate if over cap
     for i in range(n):
         s, p, o = triples[i]
         o_toks = tokenise_obj(o)
@@ -212,15 +271,22 @@ def encode_ontology(triples: Sequence[Tuple[str, str, str]],
         p_ids[i] = encode_pred(p, o_toks, vocab)
         o_ids[i] = encode_obj(o_toks, vocab)
     return s_ids, p_ids, o_ids, n
+
 def encode_dataframe(df: pd.DataFrame, vocab: dict
                      ) -> Tuple[np.ndarray, np.ndarray, np.ndarray,
                                 np.ndarray, np.ndarray]:
+    """
+    Batch-encode a full split into numpy arrays
+    returns S, P, O  [N, MAX_TRIPLES]  int32
+            L        [N]               int32  (actual triple count per row)
+            Y        [N]               int32  (1 = inconsistent, 0 = consistent)
+    """
     n = len(df)
     S = np.zeros((n, MAX_TRIPLES), dtype=np.int32)
     P = np.zeros((n, MAX_TRIPLES), dtype=np.int32)
     O = np.zeros((n, MAX_TRIPLES), dtype=np.int32)
-    L = np.zeros(n, dtype=np.int32)
-    Y = np.zeros(n, dtype=np.int32)
+    L = np.zeros(n, dtype=np.int32)   # lengths
+    Y = np.zeros(n, dtype=np.int32)   # labels
     for i, (_, row) in enumerate(df.iterrows()):
         triples = parse_body(row["body"])
         s_ids, p_ids, o_ids, ln = encode_ontology(triples, vocab)
@@ -231,6 +297,8 @@ def encode_dataframe(df: pd.DataFrame, vocab: dict
         Y[i] = 1 if is_injected(row["injected_pattern"]) else 0
     return S, P, O, L, Y
 
+#  Model
+
 class OntologyEncoder(keras.Model):
     """
     Pools triple embeddings into a single ontology vector
@@ -239,42 +307,62 @@ class OntologyEncoder(keras.Model):
         lengths              : int32  [B]
     output:
         ontology embedding   : float32 [B, H]
+    Architecture:
+        embed(s), embed(p), embed(o) -> concat [B,T,3E]
+        triple_mlp           -> [B,T,H]
+        mean-pool + max-pool -> concat [B,2H]
+        onto_mlp             -> [B,H]
     """
     def __init__(self, vocab_size: int, emb_dim: int = EMB_DIM,
                  hid_dim: int = HID_DIM, **kwargs):
         super().__init__(**kwargs)
+        # shared embedding table for s, p, o tokens
         self.embed = keras.layers.Embedding(vocab_size, emb_dim)
+        # per-triple representation: [3E] -> [H]
         self.triple_mlp = keras.Sequential([
             keras.layers.Dense(hid_dim, activation="relu"),
             keras.layers.Dense(hid_dim, activation="relu"),
         ])
+        # combines mean + max pool: [2H] -> [H]
         self.onto_mlp = keras.Sequential([
             keras.layers.Dense(hid_dim, activation="relu"),
             keras.layers.Dense(hid_dim, activation="relu"),
         ])
+
     def call(self, inputs):
         s_ids, p_ids, o_ids, lengths = inputs
+        # embed each slot
         s_e = self.embed(s_ids)
         p_e = self.embed(p_ids)
         o_e = self.embed(o_ids)
         triple_in = tf.concat([s_e, p_e, o_e], axis=-1)        # [B,T,3E]
         triple_h  = self.triple_mlp(triple_in)                  # [B,T,H]
+
+        # padding mask: 1 for real triples, 0 for padding
         T = tf.shape(s_ids)[1]
         rng = tf.range(T)[None, :]
         mask = tf.cast(rng < lengths[:, None], tf.float32)      # [B,T]
-        mask_exp = mask[..., None]
-        # Mean pool
+        mask_exp = mask[..., None]                               # [B,T,1] for broadcasting
+
+        # mean pool over real triples
         sum_h = tf.reduce_sum(triple_h * mask_exp, axis=1)
         denom = tf.maximum(tf.reduce_sum(mask, axis=1, keepdims=True), 1.0)
         mean_h = sum_h / denom                                   # [B,H]
-        # Max pool
+
+        # max pool - fill padded positions with -inf before reduce
         very_neg = tf.fill(tf.shape(triple_h), tf.constant(-1e9))
         masked_h = tf.where(mask_exp > 0, triple_h, very_neg)
         max_h = tf.reduce_max(masked_h, axis=1)                  # [B,H]
+
         pooled = tf.concat([mean_h, max_h], axis=-1)             # [B,2H]
         return self.onto_mlp(pooled)                             # [B,H]
+
+
 class InconsistentScorer(keras.Model):
-    """LTN predicate body: ontology embedding -> [0,1]"""
+    """
+    LTN predicate body: ontology embedding -> inconsistency score in [0,1]
+    sigmoid output used directly by ltn.Predicate
+    """
     def __init__(self, hid_dim: int = HID_DIM, **kwargs):
         super().__init__(**kwargs)
         self.net = keras.Sequential([
@@ -282,39 +370,64 @@ class InconsistentScorer(keras.Model):
             keras.layers.Dense(hid_dim // 2, activation="relu"),
             keras.layers.Dense(1, activation="sigmoid"),
         ])
+
     def call(self, x):
+        # squeeze trailing dim: [B,1] -> [B]
         return tf.squeeze(self.net(x), axis=-1)
 
+#  LTN setup
+
 def set_seed(seed: int) -> None:
+    """Fix Python / NumPy / TF RNGs for reproducibility"""
     random.seed(seed)
     np.random.seed(seed)
     tf.random.set_seed(seed)
+
 def make_axioms_fn(encoder: OntologyEncoder, scorer: InconsistentScorer):
+    """
+    Build LTN axiom closure and predicate wrapper
+    Axioms (product t-norm, pMeanError aggregator):
+        Forall x_pos: Inconsistent(x_pos)
+        Forall x_neg: NOT Inconsistent(x_neg)
+    returns (axioms_fn, inconsistent_pred)
+    """
     Not    = ltn.Wrapper_Connective(ltn.fuzzy_ops.Not_Std())
     Forall = ltn.Wrapper_Quantifier(
         ltn.fuzzy_ops.Aggreg_pMeanError(p=P_MEAN_ERROR), semantics="forall")
     SatAgg = ltn.Wrapper_Formula_Aggregator(
         ltn.fuzzy_ops.Aggreg_pMeanError(p=P_MEAN_ERROR))
     inconsistent_pred = ltn.Predicate(scorer)
+
     def axioms(pos_inputs, neg_inputs):
+        # encode batch -> ltn Variables
         emb_pos = encoder(pos_inputs)
         emb_neg = encoder(neg_inputs)
         x_pos = ltn.Variable("x_pos", emb_pos)
         x_neg = ltn.Variable("x_neg", emb_neg)
-        ax_pos = Forall(x_pos, inconsistent_pred(x_pos))
-        ax_neg = Forall(x_neg, Not(inconsistent_pred(x_neg)))
-        sat = SatAgg([ax_pos, ax_neg])
+        ax_pos = Forall(x_pos, inconsistent_pred(x_pos))           # pos axiom
+        ax_neg = Forall(x_neg, Not(inconsistent_pred(x_neg)))      # neg axiom
+        sat = SatAgg([ax_pos, ax_neg])                              # aggregate sat
         return sat, ax_pos, ax_neg
+
     return axioms, inconsistent_pred
+
+#  Batch iteration
+
 def iterate_batches(idx_pos: np.ndarray, idx_neg: np.ndarray,
                     batch_size: int, rng: np.random.Generator):
+    """
+    Balanced batch generator: half pos / half neg per step
+    wraps shorter class via random over-sampling when exhausted
+    yields (pos_idx, neg_idx) arrays
+    """
     half = max(batch_size // 2, 1)
     rng.shuffle(idx_pos)
     rng.shuffle(idx_neg)
     n = max(len(idx_pos), len(idx_neg))
     for start in range(0, n, half):
-        p = idx_pos[start:start + half] if len(idx_pos) else np.array([], dtype=np.int64)
+        p  = idx_pos[start:start + half] if len(idx_pos) else np.array([], dtype=np.int64)
         ng = idx_neg[start:start + half] if len(idx_neg) else np.array([], dtype=np.int64)
+        # over-sample from shorter class when its slice is exhausted
         if len(p) == 0 and len(idx_pos):
             p = rng.choice(idx_pos, size=half, replace=True)
         if len(ng) == 0 and len(idx_neg):
@@ -322,8 +435,11 @@ def iterate_batches(idx_pos: np.ndarray, idx_neg: np.ndarray,
         if len(p) == 0 and len(ng) == 0:
             continue
         yield np.asarray(p), np.asarray(ng)
+
+#  Device tensor helpers
+
 def make_gpu_tensors(S, P, O, L):
-    """Upload split tensors to device once"""
+    """Upload split arrays to device as tf.constants (one-time transfer)"""
     return (
         tf.constant(S, dtype=tf.int32),
         tf.constant(P, dtype=tf.int32),
@@ -332,13 +448,21 @@ def make_gpu_tensors(S, P, O, L):
     )
 
 def gather_inputs_tf(tensors, idx):
+    """Gather rows by index from on-device split tensors -> (S, P, O, L) batch"""
     S_t, P_t, O_t, L_t = tensors
     idx = tf.cast(idx, tf.int32)
     return (tf.gather(S_t, idx),
             tf.gather(P_t, idx),
             tf.gather(O_t, idx),
             tf.gather(L_t, idx))
+
+#  Inference
+
 def predict_scores(encoder, scorer, tensors, n, batch_size=256):
+    """
+    Run encoder + scorer over full split in mini-batches
+    returns float32 [N] sigmoid scores
+    """
     out = np.zeros(n, dtype=np.float32)
     for start in range(0, n, batch_size):
         end = min(start + batch_size, n)
@@ -348,7 +472,12 @@ def predict_scores(encoder, scorer, tensors, n, batch_size=256):
         # noinspection PyCallingNonCallable
         out[start:end] = scorer(emb).numpy()
     return out
+
 def evaluate_split(encoder, scorer, tensors, Y, threshold=THRESHOLD):
+    """
+    Compute acc / prec / rec / f1 + inference wall-time for one split
+    returns metric dict
+    """
     t0 = time.perf_counter()
     scores = predict_scores(encoder, scorer, tensors, len(Y))
     y_pred = (scores >= threshold).astype(np.int32)
@@ -360,15 +489,24 @@ def evaluate_split(encoder, scorer, tensors, Y, threshold=THRESHOLD):
         "f1":   f1_score(Y, y_pred, zero_division=0),
         "inference_seconds": inf_secs,
     }
+
+#  Training loop
+
 def run_one_seed(train_data, val_data, test_data, vocab_size: int,
                  seed: int, epochs: int, lr: float, verbose: bool = True):
+    """
+    Full train / eval cycle for a single seed
+    - uploads all splits to device once
+    - compiles train_step with tf.function
+    - early-stops on val_acc; restores best weights at end
+    returns dict with per-split metrics, timing, and epoch history
+    """
     set_seed(seed)
     S_tr, P_tr, O_tr, L_tr, Y_tr = train_data
     S_va, P_va, O_va, L_va, Y_va = val_data
     S_te, P_te, O_te, L_te, Y_te = test_data
 
-    # Upload each split once
-    # subsequent batching is pure on-device gather
+    # upload each split once; subsequent batching is pure on-device gather
     train_tensors = make_gpu_tensors(S_tr, P_tr, O_tr, L_tr)
     val_tensors   = make_gpu_tensors(S_va, P_va, O_va, L_va)
     test_tensors  = make_gpu_tensors(S_te, P_te, O_te, L_te)
@@ -376,7 +514,7 @@ def run_one_seed(train_data, val_data, test_data, vocab_size: int,
     encoder = OntologyEncoder(vocab_size=vocab_size)
     scorer  = InconsistentScorer()
 
-    # Build models so .trainable_variables is populated
+    # warm-up forward pass to populate .trainable_variables before tf.function trace
     warm_idx = tf.range(min(2, len(S_tr)), dtype=tf.int32)
     # noinspection PyCallingNonCallable
     _ = encoder(gather_inputs_tf(train_tensors, warm_idx))
@@ -388,7 +526,7 @@ def run_one_seed(train_data, val_data, test_data, vocab_size: int,
     optimizer = tf.keras.optimizers.Adam(learning_rate=lr)
     trainables = encoder.trainable_variables + scorer.trainable_variables
 
-    # Single graph-compiled train step
+    # graph-compiled train step - traced once per input signature
     @tf.function(input_signature=[
         tf.TensorSpec(shape=[None], dtype=tf.int32),
         tf.TensorSpec(shape=[None], dtype=tf.int32),
@@ -398,7 +536,7 @@ def run_one_seed(train_data, val_data, test_data, vocab_size: int,
         neg_inputs = gather_inputs_tf(train_tensors, neg_idx)
         with tf.GradientTape() as tape:
             sat, _, _ = axioms_fn(pos_inputs, neg_inputs)
-            loss = 1.0 - sat.tensor
+            loss = 1.0 - sat.tensor           # minimise 1 - SatAgg
         grads = tape.gradient(loss, trainables)
         optimizer.apply_gradients(zip(grads, trainables))
         return sat.tensor
@@ -409,6 +547,7 @@ def run_one_seed(train_data, val_data, test_data, vocab_size: int,
     if verbose:
         print(f"  [seed {seed}] train pos={len(idx_pos)} neg={len(idx_neg)}")
 
+    # early-stopping state
     best_val_acc = -1.0
     best_weights = None
     best_epoch = -1
@@ -420,12 +559,14 @@ def run_one_seed(train_data, val_data, test_data, vocab_size: int,
         ep_t0 = time.perf_counter()
         sat_acc = tf.constant(0.0, dtype=tf.float32)
         n_steps = 0
+
         for pos_idx, neg_idx in iterate_batches(idx_pos.copy(), idx_neg.copy(),
                                                 BATCH_SIZE, rng):
             sat_t = train_step(tf.constant(pos_idx, dtype=tf.int32),
                                tf.constant(neg_idx, dtype=tf.int32))
-            sat_acc += sat_t          # stays on device, no per-step sync
+            sat_acc += sat_t     # accumulate on device - no per-step CPU sync
             n_steps += 1
+
         train_sat = float(sat_acc.numpy() / max(n_steps, 1))
 
         val_metrics = evaluate_split(encoder, scorer, val_tensors, Y_va)
@@ -438,6 +579,7 @@ def run_one_seed(train_data, val_data, test_data, vocab_size: int,
                   f"val_f1={val_metrics['f1']:.4f} "
                   f"| epoch_time={time.perf_counter() - ep_t0:.1f}s")
 
+        # checkpoint best weights when val_acc improves by MIN_DELTA
         if val_metrics["acc"] > best_val_acc + EARLY_STOP_MIN_DELTA:
             best_val_acc = val_metrics["acc"]
             best_epoch = epoch
@@ -459,12 +601,14 @@ def run_one_seed(train_data, val_data, test_data, vocab_size: int,
 
     train_seconds = time.perf_counter() - t0
 
+    # restore best checkpoint before final evaluation
     if best_weights is not None:
         for v, w in zip(encoder.trainable_variables, best_weights[0]):
             v.assign(w)
         for v, w in zip(scorer.trainable_variables, best_weights[1]):
             v.assign(w)
 
+    # final metrics on all splits using restored weights
     train_metrics = evaluate_split(encoder, scorer, train_tensors, Y_tr)
     val_metrics   = evaluate_split(encoder, scorer, val_tensors,   Y_va)
     test_metrics  = evaluate_split(encoder, scorer, test_tensors,  Y_te)
@@ -486,10 +630,14 @@ def run_one_seed(train_data, val_data, test_data, vocab_size: int,
         "stopped_epoch": epoch,
     }
 
+#  Multi-seed driver
+
 def _run_all_seeds(label: str, train_data, val_data, test_data,
                    vocab_size: int, shuffle_train_labels: bool = False):
     """
-    Run SEEDS x training pipeline
+    Run full pipeline over all SEEDS
+    optionally permutes train labels for the sanity-check experiment
+    prints aggregated mean +/- std and a LaTeX paper-table row
     """
     print(f"\n{'#' * 78}\n# Experiment: {label}"
           f"{'  [shuffled train labels]' if shuffle_train_labels else ''}"
@@ -502,18 +650,23 @@ def _run_all_seeds(label: str, train_data, val_data, test_data,
             S, P, O, L, Y = train_data
             shuf_rng = np.random.default_rng(seed + SHUFFLE_SEED_OFFSET)
             Y_shuf = Y.copy()
-            shuf_rng.shuffle(Y_shuf)
+            shuf_rng.shuffle(Y_shuf)   # permute only train labels
             td = (S, P, O, L, Y_shuf)
         run = run_one_seed(td, val_data, test_data,
                            vocab_size=vocab_size,
                            seed=seed, epochs=EPOCHS, lr=LEARNING_RATE,
                            verbose=True)
         all_runs.append(run)
+
+    # helper: mean ± std for metric key across all seeds
     def agg(split, key):
         vals = np.array([r[split][key] for r in all_runs])
         return vals.mean(), vals.std()
+
     train_secs = np.array([r["train_seconds"] for r in all_runs])
     test_inf   = np.array([r["test"]["inference_seconds"] for r in all_runs])
+
+    # aggregated table
     print("\n" + "=" * 78)
     print(f"Aggregated over {len(SEEDS)} seeds (mean +/- std) -- {label}")
     print("=" * 78)
@@ -528,6 +681,8 @@ def _run_all_seeds(label: str, train_data, val_data, test_data,
               f"F1 {f_m*100:5.2f} +/-{f_s*100:.2f}")
     print(f"  Training (wall): {_fmt_time(train_secs.mean())}  +/-{train_secs.std():.2f}s")
     print(f"  Test inference:  {_fmt_time(test_inf.mean())}  +/-{test_inf.std():.3f}s")
+
+    # LaTeX row for paper table (acc / prec / rec / train-time / infer-time)
     a_m, a_s = agg("test", "acc")
     p_m, p_s = agg("test", "prec")
     r_m, r_s = agg("test", "rec")
@@ -544,7 +699,11 @@ def _run_all_seeds(label: str, train_data, val_data, test_data,
     )
     print("=" * 78)
     return all_runs
+
+#  Entry point
+
 def main():
+    # load all splits
     print("Loading CSVs ...")
     train_df = pd.read_csv(TRAIN_CSV)
     val_df   = pd.read_csv(VAL_CSV)
@@ -553,26 +712,33 @@ def main():
     print(f"  pos: train={train_df['injected_pattern'].apply(is_injected).sum()} "
           f"val={val_df['injected_pattern'].apply(is_injected).sum()} "
           f"test={test_df['injected_pattern'].apply(is_injected).sum()}")
+
+    # vocab built from train only to avoid val/test leakage
     print("Building vocab from train split ...")
     vocab = build_vocab(train_df, max_vocab=MAX_VOCAB)
     vocab = augment_vocab_with_pred_ops(train_df, vocab)
     print(f"  vocab size = {len(vocab)} (capped at {MAX_VOCAB})")
+
+    # encode all splits with the shared train vocab
     print("Tensorising splits ...")
     train_data = encode_dataframe(train_df, vocab)
     val_data   = encode_dataframe(val_df,   vocab)
     test_data  = encode_dataframe(test_df,  vocab)
     print(f"  triple-tensor shape per split: {train_data[0].shape}, "
           f"{val_data[0].shape}, {test_data[0].shape}")
-    # Main run: real labels
+
+    # main experiment: real labels
     _run_all_seeds("LTN",
                    train_data, val_data, test_data,
                    vocab_size=len(vocab),
                    shuffle_train_labels=False)
-    #Sanity-check: shuffled train labels
+
+    # optional sanity-check: shuffled train labels should yield ~chance performance
     if RUN_SHUFFLED_LABEL_CONTROL:
         _run_all_seeds("LTN",
                        train_data, val_data, test_data,
                        vocab_size=len(vocab),
                        shuffle_train_labels=True)
+
 if __name__ == "__main__":
     main()

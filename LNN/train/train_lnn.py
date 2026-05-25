@@ -1,7 +1,19 @@
 """
-data-aware OR initialization
-per-group top-k feature filtering
-diagnostics
+
+Flow:
+  CSV -> raw triple features -> vocab selection (df / supervised)
+  -> optional absence expansion -> per-group top-K filter
+  -> IBM LNN with or-neurons per feature group -> multi-seed evaluation
+
+Model:
+  One Or-neuron per feature group, combined by a final Or-neuron.
+  Signed-evidence mode adds a symmetric ``Consistent`` head when
+  train size >= SIGNED_EVIDENCE_MIN_TRAIN.
+
+Usage::
+
+    python train_lnn.py --train t.csv --val v.csv --test e.csv [options]
+    python train_lnn.py --dry_run_features   # inspect vocab, skip LNN load
 """
 from __future__ import annotations
 import argparse
@@ -36,24 +48,25 @@ DEFAULT_FINAL_INIT_WEIGHT = 0.2
 DEFAULT_FINAL_INIT_BIAS = -1.0
 DEFAULT_NORMALIZE_INIT = True
 DEFAULT_TOP_K_PER_GROUP = 10
-SHUFFLE_SEED_OFFSET = 1000
-FEATURE_PRESENT_BOUNDS = (0.75, 1.0)
-FEATURE_ABSENT_BOUNDS = (0.0, 0.25)
-_OP_TOKENS = {"some", "only", "max", "min", "exactly", "inverse", "and", "or", "not"}
-_COUNT_BUCKETS = [1, 2, 3, 5, 10, 20, 50, 100, 200, 500, 1000]
-_LENGTH_BUCKETS = [64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
-ONTOLOGY_RULE_NAMES = [ #not used
+SHUFFLE_SEED_OFFSET = 1000           # offset applied to seed when shuffling labels
+FEATURE_PRESENT_BOUNDS = (0.75, 1.0) # LNN [lower, upper] belief for an active feature
+FEATURE_ABSENT_BOUNDS = (0.0, 0.25)  # reserved; absent features currently use Fact.FALSE
+_OP_TOKENS = {"some", "only", "max", "min", "exactly", "inverse", "and", "or", "not"}  # OWL class-expression keywords
+_COUNT_BUCKETS = [1, 2, 3, 5, 10, 20, 50, 100, 200, 500, 1000]   # thresholds for n_* bucket features
+_LENGTH_BUCKETS = [64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]  # thresholds for tokenized_length features
+ONTOLOGY_RULE_NAMES = [  # defined for future use; not wired into the default training path
     "rule_subclass_cycle",
     "rule_disjoint_subclass_conflict",
     "rule_disjoint_equivalent_mix",
     "rule_property_constraint_mix",
     "rule_negated_restriction",
 ]
-SIGNED_EVIDENCE_MIN_TRAIN = 1000
+SIGNED_EVIDENCE_MIN_TRAIN = 1000  # min train samples before polarity estimation is reliable
 
 # Raw feature extraction / CSV loading helpers
 
 def set_csv_field_limit() -> None:
+    """Raise csv.field_size_limit to sys.maxsize, halving on OverflowError"""
     limit = sys.maxsize
     while True:
         try:
@@ -62,10 +75,12 @@ def set_csv_field_limit() -> None:
         except OverflowError:
             limit //= 10
 
-def is_injected(val) -> bool:
+def is_injected(val: object) -> bool:
+    """True if val is a non-empty, non-null, non-'none' string"""
     return pd.notna(val) and str(val).strip().lower() not in {"", "none", "nan"}
 
-def parse_body(body) -> List[Tuple[str, str, str]]:
+def parse_body(body: object) -> List[Tuple[str, str, str]]:
+    """Parse a body string-or-list into ``(subject, predicate, object)`` triples"""
     if isinstance(body, str):
         try:
             triples = ast.literal_eval(body)
@@ -84,9 +99,11 @@ def parse_body(body) -> List[Tuple[str, str, str]]:
     return out
 
 def _norm_space(s: str) -> str:
+    """Collapse runs of whitespace in s to a single space"""
     return re.sub(r"\s+", " ", str(s).strip())
 
 def _safe_feature_value(s: str, max_len: int = 96) -> str:
+    """Normalize whitespace and truncate s to max_len chars"""
     s = _norm_space(s)
     if len(s) > max_len:
         s = s[:max_len] + "…"
@@ -106,6 +123,7 @@ def tokenise_obj(o: str) -> List[str]:
     return toks
 
 def _ops_in_obj(o: str) -> Set[str]:
+    """OWL operator tokens present in o, e.g. ``{'some', 'and'}``"""
     ops = set()
     lower = f" {_norm_space(o).lower()} "
     for op in _OP_TOKENS:
@@ -114,11 +132,13 @@ def _ops_in_obj(o: str) -> Set[str]:
     return ops
 
 def _bucket_features(prefix: str, value: int, buckets: Sequence[int]) -> Iterable[str]:
+    """Yield ``prefix>={b}`` for each threshold b that value meets"""
     for b in buckets:
         if value >= b:
             yield f"{prefix}>={b}"
 
 def _has_subclass_cycle(edges: Sequence[Tuple[str, str]]) -> bool:
+    """True if the subclass edge list contains a directed cycle (DFS)"""
     graph: Dict[str, Set[str]] = defaultdict(set)
     nodes: Set[str] = set()
     for child, parent in edges:
@@ -254,6 +274,7 @@ def extract_raw_features(row: Mapping[str, object], body_column: str = "body") -
 
 @dataclass
 class SplitData:
+    """Holds ids, labels and raw feature sets for one data split"""
     name: str
     ids: List[str]
     labels: np.ndarray
@@ -266,13 +287,15 @@ class SplitData:
         return int(len(self.labels) - self.labels.sum())
 
 def label_from_row(row: Mapping[str, object], label_source: str, positive_consistency: str) -> int:
+    """Return 1 (positive) or 0 from a CSV row using the configured label strategy"""
     if label_source == "injected_pattern":
         return 1 if is_injected(row.get("injected_pattern")) else 0
     if label_source == "consistency":
         return 1 if str(row.get("consistency", "")).strip().lower() == positive_consistency.lower() else 0
     raise ValueError(f"Unsupported label_source: {label_source}")
 
-def load_split(path: str, split_name: str, args) -> SplitData:
+def load_split(path: str, split_name: str, args: "argparse.Namespace") -> SplitData:
+    """Read a CSV split, optionally subsample it, and extract raw features"""
     df = pd.read_csv(path)
     if args.sample_frac < 1.0:
         y_tmp = df.apply(lambda r: label_from_row(r, args.label_source, args.positive_consistency), axis=1)
@@ -298,6 +321,7 @@ def load_split(path: str, split_name: str, args) -> SplitData:
     return SplitData(split_name, ids, np.asarray(labels, dtype=np.int64), feature_sets)
 
 def build_feature_vocab(train_features: Sequence[Set[str]], max_features: int, min_df: int) -> List[str]:
+    """Top-max_features features by document frequency (train-only, >= min_df)"""
     df_counter: Counter = Counter()
     for feats in train_features:
         df_counter.update(feats)
@@ -344,12 +368,15 @@ def build_feature_vocab_supervised(
     return [feat for feat, _score, _df, _pr, _nr in scored[:max_features]]
 
 def is_absence_feature(feature_name: str) -> bool:
+    """True if feature_name encodes a feature-absence predicat"""
     return feature_name.startswith("ABSENT::")
 
 def base_feature_name(feature_name: str) -> str:
+    """Strip the ``ABSENT::`` prefix, if present"""
     return feature_name[len("ABSENT::"):] if is_absence_feature(feature_name) else feature_name
 
 def model_feature_active(feature_name: str, raw_features: Set[str]) -> bool:
+    """True if the logical predicate fires: present-feature in set, or absent-feature not in set"""
     base = base_feature_name(feature_name)
     present = base in raw_features
     return (not present) if is_absence_feature(feature_name) else present
@@ -421,7 +448,7 @@ def _install_matplotlib_stub() -> None:
     sys.modules["matplotlib.pyplot"] = pyplot
 
 def _install_numpy_compat_aliases() -> None:
-    """ see above"""
+    """Patch removed NumPy 2.x aliases (float_, int_, bool_, …) so LNN can import"""
     alias_map = {
         "float_": np.float64,
         "complex_": np.complex128,
@@ -442,6 +469,7 @@ def _install_numpy_compat_aliases() -> None:
 # LNN helper layer
 
 def _fmt_time(seconds: float) -> str:
+    """Format seconds as ``HH:MM:SS.ss``"""
     td = timedelta(seconds=float(seconds))
     total = td.total_seconds()
     h = int(total // 3600)
@@ -450,6 +478,7 @@ def _fmt_time(seconds: float) -> str:
     return f"{h:02d}:{m:02d}:{s:05.2f}"
 
 def set_seed(seed: int) -> None:
+    """Seed Python, NumPy, and (if available) PyTorch RNGs"""
     random.seed(seed)
     np.random.seed(seed)
     try:
@@ -461,6 +490,7 @@ def set_seed(seed: int) -> None:
         pass
 
 def parse_seeds(seed_arg: str) -> List[int]:
+    """Parse a comma-separated seed string into a non-empty list of ints"""
     seeds = []
     for part in str(seed_arg).split(','):
         part = part.strip()
@@ -471,6 +501,7 @@ def parse_seeds(seed_arg: str) -> List[int]:
     return seeds
 
 def binary_metrics(y_true: Sequence[int], y_pred: Sequence[int], scores: Optional[Sequence[float]] = None) -> Dict[str, float]:
+    """Compute acc, bacc, prec, rec, f1 and confusion-matrix counts; optionally score stats"""
     yt = np.asarray(y_true, dtype=np.int64)
     yp = np.asarray(y_pred, dtype=np.int64)
     tp = int(((yt == 1) & (yp == 1)).sum())
@@ -496,6 +527,7 @@ def binary_metrics(y_true: Sequence[int], y_pred: Sequence[int], scores: Optiona
     return out
 
 def best_threshold_for_bacc(y_true: Sequence[int], scores: Sequence[float]) -> Tuple[float, float]:
+    """Return ``(threshold, bacc)`` maximising balanced accuracy on scores"""
     yt = np.asarray(y_true, dtype=np.int64)
     sc = np.asarray(scores, dtype=float)
     if len(sc) == 0:
@@ -514,6 +546,7 @@ def best_threshold_for_bacc(y_true: Sequence[int], scores: Sequence[float]) -> T
     return best_t, best_bacc
 
 def best_threshold_for_metric(y_true: Sequence[int], scores: Sequence[float], metric: str) -> Tuple[float, float]:
+    """Return ``(threshold, metric_value)`` maximising metric; ties broken by bacc then lower threshold"""
     yt = np.asarray(y_true, dtype=np.int64)
     sc = np.asarray(scores, dtype=float)
     if len(sc) == 0:
@@ -538,6 +571,7 @@ def best_threshold_for_metric(y_true: Sequence[int], scores: Sequence[float], me
     return best_t, best_value
 
 def score_class_summary(y_true: Sequence[int], scores: Sequence[float]) -> Dict[str, float]:
+    """Per-class (pos/neg) score statistics: mean, std, min, q25, median, q75, max"""
     yt = np.asarray(y_true, dtype=np.int64)
     sc = np.asarray(scores, dtype=float)
     out: Dict[str, float] = {}
@@ -554,7 +588,8 @@ def score_class_summary(y_true: Sequence[int], scores: Sequence[float]) -> Dict[
             out[f"{name}_score_max"] = float(vals.max())
     return out
 
-def _import_lnn():
+def _import_lnn() -> tuple:
+    """Install compatibility shims, then import and return the core LNN symbols"""
     _install_numpy_compat_aliases()
     _install_matplotlib_stub()
     from lnn import Predicate, Variable, Fact, Model, World, Iff, Or, And, Implies, Not, Loss, Direction
@@ -562,6 +597,7 @@ def _import_lnn():
 
 @dataclass
 class NativeLNNArtifacts:
+    """All IBM-LNN objects produced by ``build_native_lnn``; passed between training helpers"""
     model: object
     feature_preds: Dict[str, object]
     ontology_rule_preds: Dict[str, object]
@@ -583,8 +619,8 @@ class NativeLNNArtifacts:
     Direction: object
     Loss: object
 
-def _init_or_neuron(formula, weight: float, bias: float, normalize: bool = False) -> None:
-    """Neutral-ish initialization for Or neuron"""
+def _init_or_neuron(formula: object, weight: float, bias: float, normalize: bool = False) -> None:
+    """Fill all Or-neuron weights with weight (optionally 1/√n scaled) and bias"""
     try:
         import torch  # type: ignore
         with torch.no_grad():
@@ -646,12 +682,13 @@ def ontology_rule_atoms_from_features(feats: Set[str]) -> Set[str]:
         out.add("rule_negated_restriction")
     return out
 
-def make_balanced_or(Or, formulas: Sequence[object], init_weight: float, init_bias: float, normalize_init: bool):
+def make_balanced_or(Or: object, formulas: Sequence[object], init_weight: float, init_bias: float, normalize_init: bool) -> Optional[object]:
+    """Wrap formulas in a learnable Or-neuron, or return the single formula directly"""
     if not formulas:
         return None
     if len(formulas) == 1:
         return formulas[0]
-    formula = Or(*formulas, activation={"bias_learning": True, "weights_learning": True})
+    formula = Or(formulas, activation={"bias_learning": True, "weights_learning": True})
     _init_or_neuron(formula, init_weight, init_bias, normalize=normalize_init)
     return formula
 
@@ -712,7 +749,7 @@ def build_native_lnn(
         if len(inputs) == 1:
             # Avoid IBM LNN unary connective grounding shape issues.
             return inputs[0]
-        formula = Or(*inputs, activation={"bias_learning": True, "weights_learning": True})
+        formula = Or(inputs, activation={"bias_learning": True, "weights_learning": True})
         _init_or_neuron(formula, weight, bias, normalize=normalize_init)
         return formula
     for group_name, group_feats in feature_groups.items():
@@ -740,7 +777,7 @@ def build_native_lnn(
     if len(group_decision_formulas) == 1:
         final_or = group_decision_formulas[0]
     else:
-        final_or = Or(*group_decision_formulas, activation={"bias_learning": True, "weights_learning": True})
+        final_or = Or(group_decision_formulas, activation={"bias_learning": True, "weights_learning": True})
         _init_or_neuron(final_or, final_init_weight, final_init_bias, normalize=normalize_init)
     all_formulas["OR_final"] = final_or
     model.add_knowledge(Iff(target(x), final_or), world=World.OPEN)
@@ -752,7 +789,7 @@ def build_native_lnn(
         if len(consistent_decision_formulas) == 1:
             consistent_final_or = consistent_decision_formulas[0]
         else:
-            consistent_final_or = Or(*consistent_decision_formulas, activation={"bias_learning": True, "weights_learning": True})
+            consistent_final_or = Or(consistent_decision_formulas, activation={"bias_learning": True, "weights_learning": True})
             _init_or_neuron(consistent_final_or, final_init_weight, final_init_bias, normalize=normalize_init)
         all_formulas["OR_consistent_final"] = consistent_final_or
         model.add_knowledge(Iff(consistent(x), consistent_final_or), world=World.OPEN)
@@ -788,6 +825,7 @@ def build_native_lnn(
     )
 
 def add_split_facts(art: NativeLNNArtifacts, split: SplitData, feature_vocab: Sequence[str], with_labels: bool) -> None:
+    """Populate LNN predicates with feature observations; attach labels if with_labels"""
     Fact = art.Fact
     feature_data: Dict[str, Dict[str, object]] = {feat: {} for feat in feature_vocab}
     ontology_rule_data: Dict[str, Dict[str, object]] = {name: {} for name in art.ontology_rule_preds}
@@ -840,7 +878,8 @@ def add_split_facts(art: NativeLNNArtifacts, split: SplitData, feature_vocab: Se
             except Exception:
                 pass
 
-def resolve_inference_direction(art: NativeLNNArtifacts, inference_direction: str):
+def resolve_inference_direction(art: NativeLNNArtifacts, inference_direction: str) -> Optional[object]:
+    """Map a direction name to the LNN Direction enum value, or None for bidirectional"""
     direction = str(inference_direction).lower()
     if direction == "bidirectional":
         return None
@@ -850,7 +889,8 @@ def resolve_inference_direction(art: NativeLNNArtifacts, inference_direction: st
         return art.Direction.DOWNWARD
     raise ValueError(f"Unsupported inference direction: {inference_direction}")
 
-def infer_model(art: NativeLNNArtifacts, inference_direction: str, max_infer_steps: int = 0):
+def infer_model(art: NativeLNNArtifacts, inference_direction: str, max_infer_steps: int = 0) -> object:
+    """Run ``model.infer`` with the resolved direction and optional step cap"""
     direction = resolve_inference_direction(art, inference_direction)
     kw = {}
     if max_infer_steps and max_infer_steps > 0:
@@ -859,7 +899,8 @@ def infer_model(art: NativeLNNArtifacts, inference_direction: str, max_infer_ste
         return art.model.infer(**kw)
     return art.model.infer(direction=direction, **kw)
 
-def _formula_bounds(formula, oid: str) -> Tuple[float, float, str]:
+def _formula_bounds(formula: object, oid: str) -> Tuple[float, float, str]:
+    """Return ``(lower, upper, state_str)`` for formula at ontology id oid"""
     try:
         data = formula.get_data(oid)
         if "torch" in sys.modules:
@@ -885,6 +926,7 @@ def _formula_bounds(formula, oid: str) -> Tuple[float, float, str]:
     return 0.0, 1.0, state
 
 def bound_summary_for_split(art: NativeLNNArtifacts, split: SplitData) -> Dict[str, float]:
+    """Aggregate mean lower/upper bounds and contradiction counts over a split"""
     inc_l, inc_u, con_l, con_u = [], [], [], []
     for oid in split.ids:
         l, u, _ = _formula_bounds(art.final_disjunction, oid)
@@ -907,7 +949,8 @@ def bound_summary_for_split(art: NativeLNNArtifacts, split: SplitData) -> Dict[s
         })
     return out
 
-def _formula_score(formula, oid: str) -> Tuple[float, str]:
+def _formula_score(formula: object, oid: str) -> Tuple[float, str]:
+    """Scalar score in [0,1] for formula at oid: midpoint of the belief interval"""
     try:
         data = formula.get_data(oid)
         if "torch" in sys.modules:
@@ -931,7 +974,8 @@ def _formula_score(formula, oid: str) -> Tuple[float, str]:
         return 0.0, state
     return 0.5, state
 
-def _target_or_final_score(primary, fallback, oid: str, fallback_prefix: str) -> Tuple[float, str]:
+def _target_or_final_score(primary: object, fallback: object, oid: str, fallback_prefix: str) -> Tuple[float, str]:
+    """Score primary; fall back to fallback when primary is UNKNOWN/MISSING"""
     score, state = _formula_score(primary, oid)
     if state.endswith("UNKNOWN") or state == "MISSING":
         score, state = _formula_score(fallback, oid)
@@ -939,6 +983,7 @@ def _target_or_final_score(primary, fallback, oid: str, fallback_prefix: str) ->
     return score, state
 
 def score_split(art: NativeLNNArtifacts, split: SplitData, feature_vocab: Sequence[str], inference_direction: str, prediction_mode: str, max_infer_steps: int) -> Tuple[List[float], Counter, float]:
+    """Add facts, run inference, return ``(scores, state_counts, elapsed_seconds)``"""
     t0 = time.perf_counter()
     add_split_facts(art, split, feature_vocab, with_labels=False)
     infer_model(art, inference_direction, max_infer_steps)
@@ -953,8 +998,10 @@ def score_split(art: NativeLNNArtifacts, split: SplitData, feature_vocab: Sequen
             )
             con_l, con_u, _ = _formula_bounds(art.consistent_final_disjunction, oid)
             if prediction_mode == "bounds":
+                # Combine inc lower-bound with (1 - con upper-bound): agreement -> high score
                 score = max(0.0, min(1.0, 0.5 * (inc_l + (1.0 - con_u))))
             else:
+                # Shift difference into [0,1]: pure inconsistent -> 1, pure consistent -> 0
                 score = max(0.0, min(1.0, 0.5 * (inc_score - con_score + 1.0)))
             state = f"Signed(inc={inc_state},con={con_state})"
         else:
@@ -964,6 +1011,7 @@ def score_split(art: NativeLNNArtifacts, split: SplitData, feature_vocab: Sequen
     return scores, states, time.perf_counter() - t0
 
 def state_counts_for_split(art: NativeLNNArtifacts, split: SplitData, names: Sequence[str]) -> Dict[str, Dict[str, int]]:
+    """Count LNN state labels (TRUE/FALSE/UNKNOWN/…) per formula over split"""
     out: Dict[str, Dict[str, int]] = {}
     for name in names:
         formula = art.all_formulas[name]
@@ -977,6 +1025,7 @@ def state_counts_for_split(art: NativeLNNArtifacts, split: SplitData, names: Seq
     return out
 
 def format_state_counts(counts: Mapping[str, Mapping[str, int]], max_items: int = 4) -> str:
+    """One-line summary of state-count dicts for console logging"""
     parts = []
     for name, c in counts.items():
         top = ",".join(f"{k.split('.')[-1]}:{v}" for k, v in Counter(c).most_common(max_items))
@@ -984,6 +1033,7 @@ def format_state_counts(counts: Mapping[str, Mapping[str, int]], max_items: int 
     return "  ".join(parts)
 
 def evaluate_split(art: NativeLNNArtifacts, split: SplitData, feature_vocab: Sequence[str], threshold: float, split_name: str, inference_direction: str, prediction_mode: str, max_infer_steps: int) -> Dict[str, float]:
+    """Score split, print metrics, and return the full metrics dict"""
     scores, states, infer_s = score_split(art, split, feature_vocab, inference_direction, prediction_mode, max_infer_steps)
     y_pred = [1 if s >= threshold else 0 for s in scores]
     m = binary_metrics(split.labels, y_pred, scores)
@@ -1007,7 +1057,8 @@ def evaluate_split(art: NativeLNNArtifacts, split: SplitData, feature_vocab: Seq
         print("          target states: " + ", ".join(f"{k}:{v}" for k, v in states.most_common(4)), flush=True)
     return m
 
-def _loss_to_float(loss_value) -> float:
+def _loss_to_float(loss_value: object) -> float:
+    """Recursively reduce a nested loss value (tensor / list / scalar) to a Python float"""
     if isinstance(loss_value, (list, tuple)):
         vals = [_loss_to_float(v) for v in loss_value]
         return float(sum(vals)) if vals else 0.0
@@ -1018,8 +1069,8 @@ def _loss_to_float(loss_value) -> float:
     except Exception:
         return 0.0
 
-def _train_return_loss(train_return) -> Tuple[float, List[float]]:
-    """Extract scalar total/components from LNN Model.train(...)"""
+def _train_return_loss(train_return: object) -> Tuple[float, List[float]]:
+    """Unpack ``Model.train(...)`` output into ``(total_loss, per-component list)``"""
     try:
         (running_loss, loss_history), _inference_history = train_return
     except Exception:
@@ -1108,6 +1159,7 @@ def train_native_lnn(
                 flush=True,
             )
         history.append(rec)
+        # ── early stopping ────────────────────────────────────────────────
         if early_stopping and epoch > early_stopping_warmup:
             if best_loss - final_loss > early_stopping_min_delta:
                 best_loss = final_loss
@@ -1153,11 +1205,11 @@ def print_aggregate(label: str, runs: Sequence[Mapping[str, object]]) -> None:
         r_m, r_s = _agg(runs, split, "rec")
         f_m, f_s = _agg(runs, split, "f1")
         print(
-            f"  {split:>5s} : Acc {a_m*100:5.2f} +/-{a_s*100:.2f}  "
-            f"BAcc {b_m*100:5.2f} +/-{b_s*100:.2f}  "
-            f"Prec {p_m*100:5.2f} +/-{p_s*100:.2f}  "
-            f"Rec {r_m*100:5.2f} +/-{r_s*100:.2f}  "
-            f"F1 {f_m*100:5.2f} +/-{f_s*100:.2f}"
+            f"  {split:>5s} : Acc {a_m100:5.2f} +/-{a_s100:.2f}  "
+            f"BAcc {b_m100:5.2f} +/-{b_s100:.2f}  "
+            f"Prec {p_m100:5.2f} +/-{p_s100:.2f}  "
+            f"Rec {r_m100:5.2f} +/-{r_s100:.2f}  "
+            f"F1 {f_m100:5.2f} +/-{f_s100:.2f}"
         )
     print(f"  Training (wall): {_fmt_time(train_secs.mean())}  +/-{train_secs.std():.2f}s")
     print(f"  Test inference:  {_fmt_time(test_inf.mean())}  +/-{test_inf.std():.3f}s")
@@ -1169,15 +1221,16 @@ def print_aggregate(label: str, runs: Sequence[Mapping[str, object]]) -> None:
     print("=" * 78)
     print(
         f"{label} & "
-        f"${a_m*100:5.2f}_{{({a_s*100:.2f})}}$ & "
-        f"${p_m*100:5.2f}_{{({p_s*100:.2f})}}$ & "
-        f"${r_m*100:5.2f}_{{({r_s*100:.2f})}}$ & "
+        f"${a_m100:5.2f}_{{({a_s100:.2f})}}$ & "
+        f"${p_m100:5.2f}_{{({p_s100:.2f})}}$ & "
+        f"${r_m100:5.2f}_{{({r_s100:.2f})}}$ & "
         f"{_fmt_time(train_secs.mean())} & "
         f"{_fmt_time(test_inf.mean())} \\\\"  # LaTeX row ending
     )
     print("=" * 78)
 
 def save_json(path: str, payload: Mapping[str, object]) -> None:
+    """Serialise payload as indented JSON, creating parent directories as needed"""
     parent = os.path.dirname(os.path.abspath(path))
     if parent:
         os.makedirs(parent, exist_ok=True)
@@ -1185,6 +1238,7 @@ def save_json(path: str, payload: Mapping[str, object]) -> None:
         json.dump(payload, fh, indent=2)
 
 def validate_args(args: argparse.Namespace) -> None:
+    """Validate CLI args and populate derived fields (loss_list, loss_coeffs, early_stopping_warmup)"""
     if not (0 < args.sample_frac <= 1):
         raise ValueError("--sample_frac must satisfy 0 < sample_frac <= 1")
     if args.max_features <= 0 or args.min_df <= 0 or args.epochs <= 0 or args.lr <= 0:
@@ -1219,7 +1273,8 @@ def validate_args(args: argparse.Namespace) -> None:
         "uncertainty": args.uncertainty_coeff,
     }
 
-def load_splits_and_features(args: argparse.Namespace):
+def load_splits_and_features(args: "argparse.Namespace") -> Tuple[SplitData, SplitData, SplitData, List[str], List[str]]:
+    """Load all three splits and build the feature vocabulary from the train split only"""
     set_csv_field_limit()
     train_split = load_split(args.train, "train", args)
     val_split = load_split(args.val, "val", args)
@@ -1300,7 +1355,7 @@ def robust_best_threshold(
         return median, float(m["bacc"] if metric == "bacc" else m.get(metric, m["bacc"])), float(m["bacc"])
     return best_t, best_value, best_bacc
 
-def _expected_feature_rates(train_split, feature_vocab):
+def _expected_feature_rates(train_split: SplitData, feature_vocab: Sequence[str]) -> Dict[str, float]:
     """Per-feature activation rate on the training split"""
     n = max(1, len(train_split.ids))
     rates = {}
@@ -1312,7 +1367,7 @@ def _expected_feature_rates(train_split, feature_vocab):
         rates[feat] = active / n
     return rates
 
-def data_aware_reinit_or_neurons(art, train_split, feature_vocab, c: float = 0.5,
+def data_aware_reinit_or_neurons(art: NativeLNNArtifacts, train_split: SplitData, feature_vocab: Sequence[str], c: float = 0.5,
                                  verbose: bool = True) -> None:
     """Re-initialise each OR neuron so its output sits near c/2 (~0.25)
     for a typical train sample"""
@@ -1405,7 +1460,7 @@ def data_aware_reinit_or_neurons(art, train_split, feature_vocab, c: float = 0.5
             if verbose:
                 print(f"  (warn: could not re-init OR_consistent_final: {exc})")
 
-def perturb_or_neurons(art, std_frac: float, seed: int, verbose: bool = True) -> None:
+def perturb_or_neurons(art: NativeLNNArtifacts, std_frac: float, seed: int, verbose: bool = True) -> None:
     """
     Apply small seed-dependent Gaussian noise to every OR neuron's per-input
     weights so different --seeds land in different parameter basins
@@ -1446,7 +1501,11 @@ def perturb_or_neurons(art, std_frac: float, seed: int, verbose: bool = True) ->
     if verbose:
         print(f"    init noise: perturbed {perturbed} OR neurons with std_frac={std_frac:.3g} (seed={seed})")
 
-def add_split_facts_no_pred_labels(art, split, feature_vocab, with_labels: bool) -> None:
+def add_split_facts_no_pred_labels(art: NativeLNNArtifacts, split: SplitData, feature_vocab: Sequence[str], with_labels: bool) -> None:
+    """Like ``add_split_facts`` but only labels the trainable OR formulas, not the open-world predicates.
+
+    Used during training so the OPEN-world pred labels do not interfere with LNN supervision.
+    """
     Fact = art.Fact
     feature_data = {feat: {} for feat in feature_vocab}
     ontology_rule_data = {name: {} for name in art.ontology_rule_preds}
@@ -1500,7 +1559,7 @@ def add_split_facts_no_pred_labels(art, split, feature_vocab, with_labels: bool)
             except Exception:
                 pass
 
-def filter_top_k_per_group(feature_vocab, train_split, top_k: int):
+def filter_top_k_per_group(feature_vocab: Sequence[str], train_split: SplitData, top_k: int) -> List[str]:
     """
     Return a feature subset keeping only the top-K most label-correlated
     features per logical group, computed on the train split only
@@ -1532,7 +1591,8 @@ def filter_top_k_per_group(feature_vocab, train_split, top_k: int):
     keep_set = set(keep)
     return [f for f in feature_vocab if f in keep_set]
 
-def dump_neuron_params(art, label: str, max_groups: int = 6) -> None:
+def dump_neuron_params(art: NativeLNNArtifacts, label: str, max_groups: int = 6) -> None:
+    """Print weight/bias statistics for the first max_groups Or-neurons (debug aid)"""
     try:
         import torch  # type: ignore
     except Exception:
@@ -1596,6 +1656,7 @@ def run_one_seed_fixed(
     init_noise_std_frac: float = 0.05,
     debug_neurons: bool = False,
 ) -> Dict[str, object]:
+    """Full train-eval cycle for one seed: build LNN, init, train, tune threshold, evaluate all splits"""
     set_seed(seed)
     train_for_seed = train_split
     if shuffle_train_labels:
@@ -1706,8 +1767,9 @@ def run_one_seed_fixed(
     }
 
 def parse_args() -> argparse.Namespace:
+    """Define and parse all CLI arguments"""
     p = argparse.ArgumentParser(
-        description="LNN",
+        description="LNN trainer for OWL ontology consistency classification.",
     )
     p.add_argument("--train", default=TRAIN_CSV)
     p.add_argument("--val", default=VAL_CSV)
@@ -1791,6 +1853,7 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 def main() -> None:
+    """Entry point: parse args, load data, run multi-seed experiment, print/save results"""
     args = parse_args()
     validate_args(args)
     print("Loading CSV splits and extracting raw features ...", flush=True)
