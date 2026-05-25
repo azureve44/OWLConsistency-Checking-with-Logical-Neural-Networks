@@ -12,7 +12,7 @@ import sys
 import time
 from collections import Counter
 from datetime import timedelta
-from typing import List, Tuple
+from typing import Any, Dict, Iterator, List, Tuple
 import numpy as np
 import pandas as pd
 import torch
@@ -30,13 +30,15 @@ from utils.global_p import (                       # noqa: E402
     X, Y, TRAIN, TOTAL_BATCH_SIZE, K_OR_LENGTH,
     PREDICTION, LOSS, EMBEDDING_L2,
 )
-# config
+# -- config ------------------------------------------------------------------
+# data
 TRAIN_CSV = "/media/nvme2n1/lniederberger/models/nsplits/train_data.csv"
 VAL_CSV   = "/media/nvme2n1/lniederberger/models/nsplits/eval_data.csv"
 TEST_CSV  = "/media/nvme2n1/lniederberger/models/nsplits/test_data.csv"
 MAX_TRIPLES        = 2048 # 512 commented param for bioportal
 MAX_LOCAL_ENTITY   = 1024   # local entity ids: 2..(MAX_LOCAL_ENTITY+1); overflow -> UNK_ID
 MIN_PRED_FREQ      = 1
+# model
 V_VECTOR_SIZE = 32 #64
 LAYERS        = 1 #1
 R_LOGIC       = 1e-3
@@ -44,6 +46,7 @@ R_LENGTH      = 1e-4
 SIM_SCALE     = 5 #10
 SIM_ALPHA     = 0.0
 PROJ_DROPOUT  = 0.1
+# training
 EPOCHS                = 60 #30
 BATCH_SIZE            = 16
 LEARNING_RATE         = 1e-4 #3e-4
@@ -51,6 +54,8 @@ WEIGHT_DECAY          = 1e-4
 L2_BIAS               = 0
 LOSS_SUM              = 1
 GRAD_CLIP             = 2.0 # was 5.0 ?too aggressive? -> f1 crash from 0.69 to 0.33 in one epoch!!
+USE_COSINE_LR         = True   # cosine annealing from LEARNING_RATE -> LEARNING_RATE/100
+# evaluation
 THRESHOLD             = 0.5 # .55
 SWEEP_VAL_THRESHOLD   = True
 VAL_THRESHOLD_METRIC  = 'bacc'
@@ -59,7 +64,7 @@ EARLY_STOP_PATIENCE   = 16 #10
 EARLY_STOP_MIN_DELTA  = 0.0
 EARLY_STOP_METRIC     = 'bacc' # 'acc' | 'bacc' | 'f1'. bacc=(TPR+TNR)/2 - immune to
                               # 'predict-all-positive' trap that pumps F1 to 0.667.
-USE_COSINE_LR         = True   # cosine annealing from LEARNING_RATE -> LEARNING_RATE/100
+# control
 SHUFFLED_USE_FIXED_EPOCHS = True  # control: no val-based selection, eval final-epoch,
 SEEDS                 =  [0, 1, 2, 3, 4] # [0]
 RUN_SHUFFLED_LABEL_CONTROL = False # True
@@ -68,10 +73,11 @@ USE_REPEATED_RESPLITS = False
 REPEATED_RESPLIT_COUNT = 5
 REPEATED_RESPLIT_SEED = 42
 RESPLIT_VAL_RATIO = None  # derive from original train/val sizes when None
+# ----------------------------------------------------------------------------
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"[device] {DEVICE}"
       + (f" ({torch.cuda.get_device_name(0)})" if DEVICE.type == 'cuda' else ''))
-# 2. helpers
+# helpers
 def _fmt_time(seconds: float) -> str:
     td = timedelta(seconds=seconds)
     total = td.total_seconds()
@@ -79,9 +85,11 @@ def _fmt_time(seconds: float) -> str:
     m = int((total % 3600) // 60)
     s = total - h * 3600 - m * 60
     return f"{h:02d}:{m:02d}:{s:05.2f}"
-def is_injected(val) -> bool:
+def is_injected(val: Any) -> bool:
+    """True if val is a non-null, non-'none' injected pattern label"""
     return pd.notna(val) and str(val).strip().lower() != 'none'
-def parse_body(body) -> List[Tuple[str, str, str]]:
+def parse_body(body: Any) -> List[Tuple[str, str, str]]:
+    """Parse body field to a list of (s, p, o) string triples"""
     if isinstance(body, str):
         try:
             triples = ast.literal_eval(body)
@@ -98,7 +106,6 @@ def parse_body(body) -> List[Tuple[str, str, str]]:
         s, p, o = t
         out.append((str(s).strip(), str(p).strip(), str(o).strip()))
     return out
-
 def canonicalize_triples(triples: List[Tuple[str, str, str]]) -> List[Tuple[str, str, str]]:
     """Normalize ontology bodies  !!NOT USED!! """
     return sorted(
@@ -111,7 +118,8 @@ def _norm_iri(s: str) -> str:
     return s
 def _norm_pred(p: str) -> str:
     return p.strip()
-def seed_everything(seed: int):
+def seed_everything(seed: int) -> None:
+    """Set all RNG seeds for reproducibility"""
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
@@ -119,27 +127,28 @@ def seed_everything(seed: int):
         torch.cuda.manual_seed_all(seed)
 # vocab + per-ontology-local encoding
 PAD_ID, UNK_ID = 0, 1
-FIRST_REAL_ID  = 2
-def build_predicate_vocab(train_df: pd.DataFrame, min_freq: int = MIN_PRED_FREQ) -> dict:
-    """predicates are the only globally-shared symbol  Train-only with UNK"""
+FIRST_REAL_ID  = 2  # 0=PAD, 1=UNK
+def build_predicate_vocab(train_df: pd.DataFrame, min_freq: int = MIN_PRED_FREQ) -> Dict[str, int]:
+    """Global predicate vocab built from train only; unseen predicates map to UNK"""
     counter: Counter = Counter()
     for body in train_df['body']:
         for _, p, _ in parse_body(body):
             counter[_norm_pred(p)] += 1
-    vocab = {}
+    vocab: Dict[str, int] = {}
     nxt = FIRST_REAL_ID
     for tok, c in counter.most_common():
         if c >= min_freq:
             vocab[tok] = nxt
             nxt += 1
     return vocab
-def encode_dataframe(df: pd.DataFrame, pred_vocab: dict,
+def encode_dataframe(df: pd.DataFrame, pred_vocab: Dict[str, int],
                      atom_vocab: dict, atom_to_spo: list,
-                     max_triples: int = MAX_TRIPLES):
-    """For each ontology row, give every distinct IRI a *local* id 2.. (capped
-    at MAX_LOCAL_ENTITY+1, overflow -> UNK).
-    Build atoms keyed by (s_local, p_global, o_local) and re-use ids across ontologies whenever the
-    same triple (in the local sense) recurs
+                     max_triples: int = MAX_TRIPLES,
+                     ) -> Tuple[np.ndarray, np.ndarray, np.ndarray, dict]:
+    """Encode each ontology row into atom-id sequences with per-ontology local entity ids
+    Mutates atom_vocab and atom_to_spo in-place across calls to share atom ids across splits
+    Local entity ids are scoped to a single row; overflow beyond MAX_LOCAL_ENTITY maps to UNK
+    Returns X (n, 1, max_triples), L (n,), Y (n,) and a stats dict
     """
     n = len(df)
     Xa = np.zeros((n, 1, max_triples), dtype=np.int64)
@@ -157,9 +166,10 @@ def encode_dataframe(df: pd.DataFrame, pred_vocab: dict,
             L[i] = 1
             Ya[i] = 1.0 if is_injected(row["injected_pattern"]) else 0.0
             continue
-        # Local entity table for THIS ontology only
+        # local entity table scoped to this ontology row
         seen_ent: dict = {}
         def local_id(iri: str) -> int:
+            """Return the local int id for an IRI, assigning a new one if unseen"""
             nonlocal n_ent_overflow
             iri = _norm_iri(iri)
             if iri in seen_ent:
@@ -200,7 +210,10 @@ def encode_dataframe(df: pd.DataFrame, pred_vocab: dict,
         avg_local_entities=n_local_entities_total / max(n, 1),
         max_local_entities=max_ent_in_one,
     )
-def to_device_tensors(X_arr, L_arr, Y_arr):
+def to_device_tensors(
+        X_arr: np.ndarray, L_arr: np.ndarray, Y_arr: np.ndarray,
+) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+    """Cast numpy arrays to long/float tensors on DEVICE"""
     return (
         torch.as_tensor(X_arr, dtype=torch.long,  device=DEVICE),
         torch.as_tensor(L_arr, dtype=torch.long,  device=DEVICE),
@@ -208,11 +221,15 @@ def to_device_tensors(X_arr, L_arr, Y_arr):
     )
 # compositional embedding: shared entity table + global predicate table
 class LocalEntityTripleEmbedding(nn.Module):
-    """
-    Looks up an atom-id, indexes into ''atom_to_spo'' to get
-    (s_local, p_global, o_local), embeds via a shared entity table
-    (subjects and objects share parameters) and a global predicate table,
-    then projects to V
+    """Replaces NLR's default feature embeddings with a compositional SPO lookup
+    Resolves an atom-id via atom_to_spo to (s_local, p_global, o_local),
+    looks up each in a shared entity table (subject=object weights) and a
+    global predicate table, then projects the concat to v_size
+    Args:
+        n_local_ent: entity vocab size (covers all local ids + PAD/UNK)
+        n_pred:      global predicate vocab size
+        v_size:      output embedding dimension
+        atom_to_spo: (n_atoms, 3) long tensor mapping atom-id -> (s, p, o)
     """
     def __init__(self, n_local_ent: int, n_pred: int,
                  v_size: int, atom_to_spo: torch.Tensor):
@@ -234,7 +251,11 @@ class LocalEntityTripleEmbedding(nn.Module):
         return self.dropout(self.proj(torch.cat([s, p, o], dim=-1)))  # (..., V)
 # class-balanced batch iterator
 def iterate_balanced_batches(idx_pos: np.ndarray, idx_neg: np.ndarray,
-                             batch_size: int, rng: np.random.Generator):
+                             batch_size: int, rng: np.random.Generator,
+                             ) -> Iterator[np.ndarray]:
+    """Yield balanced batches of ~half positive, half negative indices
+    Iterates for max(|pos|, |neg|) steps; exhausted class is resampled with replacement
+    """
     half = max(batch_size // 2, 1)
     rng.shuffle(idx_pos)
     rng.shuffle(idx_neg)
@@ -242,6 +263,7 @@ def iterate_balanced_batches(idx_pos: np.ndarray, idx_neg: np.ndarray,
     for start in range(0, n, half):
         p  = idx_pos[start:start + half] if len(idx_pos) else np.array([], dtype=np.int64)
         ng = idx_neg[start:start + half] if len(idx_neg) else np.array([], dtype=np.int64)
+        # resample with replacement when a class slice runs out
         if len(p)  == 0 and len(idx_pos): p  = rng.choice(idx_pos, size=half, replace=True)
         if len(ng) == 0 and len(idx_neg): ng = rng.choice(idx_neg, size=half, replace=True)
         if len(p) == 0 and len(ng) == 0:
@@ -250,6 +272,7 @@ def iterate_balanced_batches(idx_pos: np.ndarray, idx_neg: np.ndarray,
 # model construction (with embedding swap)
 def build_model(n_atoms: int, n_local_ent: int, n_pred: int,
                 atom_to_spo: torch.Tensor, seed: int) -> NLR:
+    """Instantiate NLR and swap its default embeddings for LocalEntityTripleEmbedding"""
     model = NLR(
         variable_num=n_atoms,
         v_vector_size=V_VECTOR_SIZE,
@@ -276,10 +299,12 @@ def build_model(n_atoms: int, n_local_ent: int, n_pred: int,
     if DEVICE.type == "cuda":
         model = model.cuda()
     return model
-def make_feed_dict(X_t, L_t, Y_t, idx, train: bool):
+def make_feed_dict(X_t: torch.Tensor, L_t: torch.Tensor, Y_t: torch.Tensor,
+                   idx: torch.Tensor, train: bool) -> dict:
+    """Build an NLR feed dict for a batch, trimming sequence dim to actual max length"""
     Xb = X_t[idx]
     A_max = int(L_t[idx].max().item())
-    A_max = max(A_max, 1)
+    A_max = max(A_max, 1)  # guard against empty batch
     Xb = Xb[:, :, :A_max].contiguous()
     return {
         X:                 Xb,
@@ -290,7 +315,12 @@ def make_feed_dict(X_t, L_t, Y_t, idx, train: bool):
     }
 # train / evaluate one seed (same structure)
 @torch.no_grad()
-def collect_split_predictions(model: NLR, tensors, batch_size: int = 256):
+def collect_split_predictions(
+        model: NLR,
+        tensors: Tuple[torch.Tensor, torch.Tensor, torch.Tensor],
+        batch_size: int = 256,
+) -> Tuple[np.ndarray, np.ndarray, float]:
+    """Run inference over a full split; return (y_true, y_prob, elapsed_seconds)"""
     X_t, L_t, Y_t = tensors
     n = Y_t.size(0)
     model.eval()
@@ -305,8 +335,9 @@ def collect_split_predictions(model: NLR, tensors, batch_size: int = 256):
         prob = out[PREDICTION].detach().cpu().numpy()
         y_prob[start:end] = prob
     return y_true, y_prob, time.perf_counter() - t0
-
-def _metrics_from_probs(y_true: np.ndarray, y_prob: np.ndarray, threshold: float, inf_seconds: float):
+def _metrics_from_probs(y_true: np.ndarray, y_prob: np.ndarray,
+                        threshold: float, inf_seconds: float) -> Dict[str, float]:
+    """Threshold probabilities and compute classification metrics"""
     y_pred = (y_prob >= threshold).astype(np.int64)
     return {
         "acc":  accuracy_score(y_true, y_pred),
@@ -317,8 +348,11 @@ def _metrics_from_probs(y_true: np.ndarray, y_prob: np.ndarray, threshold: float
         "threshold": float(threshold),
         "inference_seconds": inf_seconds,
     }
-
-def select_best_threshold(y_true: np.ndarray, y_prob: np.ndarray, metric: str = VAL_THRESHOLD_METRIC):
+def select_best_threshold(y_true: np.ndarray, y_prob: np.ndarray,
+                          metric: str = VAL_THRESHOLD_METRIC) -> float:
+    """Grid-search VAL_THRESHOLD_GRID for the threshold maximising metric;
+    ties broken by proximity to default THRESHOLD
+    """
     if not SWEEP_VAL_THRESHOLD or len(np.unique(y_true)) < 2:
         return THRESHOLD
     best_threshold = THRESHOLD
@@ -333,20 +367,32 @@ def select_best_threshold(y_true: np.ndarray, y_prob: np.ndarray, metric: str = 
             best_distance = distance
             best_threshold = float(threshold)
     return best_threshold
-
-def evaluate_split(model: NLR, tensors, batch_size: int = 256, threshold: float = THRESHOLD):
+def evaluate_split(model: NLR,
+                   tensors: Tuple[torch.Tensor, torch.Tensor, torch.Tensor],
+                   batch_size: int = 256,
+                   threshold: float = THRESHOLD) -> Dict[str, float]:
+    """Collect predictions and return a metrics dict for a split"""
     y_true, y_prob, inf_seconds = collect_split_predictions(model, tensors, batch_size=batch_size)
     return _metrics_from_probs(y_true, y_prob, threshold=float(threshold), inf_seconds=inf_seconds)
-def _snapshot_state(model: nn.Module):
+def _snapshot_state(model: nn.Module) -> Dict[str, torch.Tensor]:
+    """CPU-clone model state dict for best-checkpoint tracking"""
     return {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
-def _load_state(model: nn.Module, snap):
+def _load_state(model: nn.Module, snap: Dict[str, torch.Tensor]) -> None:
+    """Restore model weights from a CPU snapshot"""
     model.load_state_dict({k: v.to(DEVICE) for k, v in snap.items()})
-def run_one_seed(train_tensors, val_tensors, test_tensors,
-                 n_atoms: int, n_local_ent: int, n_pred: int,
-                 atom_to_spo: torch.Tensor,
-                 seed: int, epochs: int = EPOCHS, lr: float = LEARNING_RATE,
-                 verbose: bool = True,
-                 shuffled_fixed: bool = False):
+def run_one_seed(
+        train_tensors: Tuple[torch.Tensor, torch.Tensor, torch.Tensor],
+        val_tensors:   Tuple[torch.Tensor, torch.Tensor, torch.Tensor],
+        test_tensors:  Tuple[torch.Tensor, torch.Tensor, torch.Tensor],
+        n_atoms: int, n_local_ent: int, n_pred: int,
+        atom_to_spo: torch.Tensor,
+        seed: int, epochs: int = EPOCHS, lr: float = LEARNING_RATE,
+        verbose: bool = True,
+        shuffled_fixed: bool = False,
+) -> dict:
+    """Train NLR for one seed and return train/val/test metrics.
+    shuffled_fixed: skip early stopping and best-state restore (shuffled-label control)
+    """
     seed_everything(seed)
     model = build_model(n_atoms=n_atoms, n_local_ent=n_local_ent, n_pred=n_pred,
                         atom_to_spo=atom_to_spo, seed=seed)
@@ -401,7 +447,7 @@ def run_one_seed(train_tensors, val_tensors, test_tensors,
         if scheduler is not None:
             scheduler.step()
         if shuffled_fixed:
-            # Train all epochs, the final model is evaluated below.
+            # control run: train all epochs, no early stopping, no best-state restore
             best_state = None
             best_epoch = epoch
             best_val_acc = val_m[EARLY_STOP_METRIC]
@@ -449,10 +495,16 @@ def run_one_seed(train_tensors, val_tensors, test_tensors,
         "best_epoch": best_epoch, "stopped_epoch": last_epoch,
     }
 # driver
-def _run_all_seeds(label: str, train_tensors, val_tensors, test_tensors,
-                   n_atoms: int, n_local_ent: int, n_pred: int,
-                   atom_to_spo: torch.Tensor,
-                   shuffle_train_labels: bool = False):
+def _run_all_seeds(
+        label: str,
+        train_tensors: Tuple[torch.Tensor, torch.Tensor, torch.Tensor],
+        val_tensors:   Tuple[torch.Tensor, torch.Tensor, torch.Tensor],
+        test_tensors:  Tuple[torch.Tensor, torch.Tensor, torch.Tensor],
+        n_atoms: int, n_local_ent: int, n_pred: int,
+        atom_to_spo: torch.Tensor,
+        shuffle_train_labels: bool = False,
+) -> list:
+    """Run all SEEDS, print per-seed and aggregated results, return list of run dicts"""
     print(f"\n{'#' * 78}\n# Experiment: {label}"
           f"{'  [shuffled train labels]' if shuffle_train_labels else ''}"
           f"\n{'#' * 78}")
@@ -508,7 +560,8 @@ def _run_all_seeds(label: str, train_tensors, val_tensors, test_tensors,
     )
     print("=" * 78)
     return all_runs
-def _summarize_runs(label: str, all_runs):
+def _summarize_runs(label: str, all_runs: list) -> None:
+    """Print aggregated stats over an arbitrary list of run result dicts"""
     def agg(split, key):
         v = np.array([r[split][key] for r in all_runs])
         return v.mean(), v.std()
@@ -543,10 +596,10 @@ def _summarize_runs(label: str, all_runs):
         f"{_fmt_time(test_inf.mean())}"
     )
     print("=" * 78)
-
 def _encode_and_run_experiment(label: str, train_df: pd.DataFrame,
                                val_df: pd.DataFrame, test_df: pd.DataFrame,
-                               shuffle_train_labels: bool = False):
+                               shuffle_train_labels: bool = False) -> list:
+    """Build vocab, encode all splits, and run all seeds for one experiment"""
     print("Building predicate vocabulary (train-only) ...")
     pred_vocab = build_predicate_vocab(train_df)
     n_pred = len(pred_vocab) + FIRST_REAL_ID
@@ -554,6 +607,7 @@ def _encode_and_run_experiment(label: str, train_df: pd.DataFrame,
     print(f"  predicates: {len(pred_vocab):,d} unique  (n_pred={n_pred})")
     print(f"  local entity table size (shared subj/obj): n_local_ent={n_local_ent}")
     atom_vocab: dict = {}
+    # pre-seed atom list with PAD and UNK sentinels at indices 0 and 1
     atom_to_spo: list = [(PAD_ID, PAD_ID, PAD_ID),
                          (UNK_ID, UNK_ID, UNK_ID)]
     atom_vocab[(PAD_ID, PAD_ID, PAD_ID)] = PAD_ID
@@ -577,8 +631,8 @@ def _encode_and_run_experiment(label: str, train_df: pd.DataFrame,
                           n_atoms=n_atoms, n_local_ent=n_local_ent, n_pred=n_pred,
                           atom_to_spo=atom_to_spo_t,
                           shuffle_train_labels=shuffle_train_labels)
-
-def main():
+def main() -> None:
+    """Entry point: load CSVs, optionally run repeated resplits, run experiments"""
     print(f"[NLR_SRC] {NLR_SRC}")
     print("Loading CSVs ...")
     train_df = pd.read_csv(TRAIN_CSV)
@@ -586,7 +640,6 @@ def main():
     test_df  = pd.read_csv(TEST_CSV)
     print(f"  train={len(train_df)}  val={len(val_df)}  test={len(test_df)}")
     print(f"  pos: train={train_df['injected_pattern'].apply(is_injected).sum()} val={val_df['injected_pattern'].apply(is_injected).sum()} test={test_df['injected_pattern'].apply(is_injected).sum()}")
-
     if USE_REPEATED_RESPLITS:
         pool_df = pd.concat([train_df, val_df], ignore_index=True)
         val_ratio = RESPLIT_VAL_RATIO if RESPLIT_VAL_RATIO is not None else (len(val_df) / max(len(pool_df), 1))
@@ -621,6 +674,5 @@ def main():
         _encode_and_run_experiment("NLR", train_df, val_df, test_df, shuffle_train_labels=False)
         if RUN_SHUFFLED_LABEL_CONTROL:
             _encode_and_run_experiment("NLR", train_df, val_df, test_df, shuffle_train_labels=True)
-
 if __name__ == "__main__":
     main()
