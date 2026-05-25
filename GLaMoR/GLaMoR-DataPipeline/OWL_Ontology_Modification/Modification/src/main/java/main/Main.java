@@ -22,15 +22,39 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
+
+/**
+ * Anti-pattern injection pipeline
+ * Loads OWL ontologies, detects injectable anti-patterns, and writes augmented variants to disk
+ *
+ * Pre-seeding context:
+ * Department modules extracted from LUBM ontologies are structurally thin , mostly ABox instance data
+ * Many anti-patterns require TBox-level prerequisites (allValuesFrom, disjointClasses, etc) that are absent by default
+ * OntologyProfile + missingSignalsForPattern() make absent prerequisites explicit in the logs
+ * Multi-pass injection partially automates pre-seeding pass N axioms can unlock patterns in pass N+1
+ * If a module has zero relevant TBox signals, manual pre-seeding is still required before injection succeeds
+ */
 public class Main {
+
+    // Known anti-pattern prefixes , used to skip already-processed output files
     private static final List<String> PREFIXES = List.of("EID", "AIO", "OIL", "CSC", "OILWI", "OILWPI", "OOD", "OOR", "SOSINETO", "UE", "UEWI1", "UEWI2", "UEWIP", "UEWPI");
+
+    // I/O paths , overridable via env
     private static final String INPUT_PATH = System.getenv().getOrDefault("INPUT_PATH", "/input");
     private static final String OUTPUT_PATH = System.getenv().getOrDefault("OUTPUT_PATH", "/output");
+
+    // Multi-pass controls , each pass sees axioms injected by the previous one
     private static final boolean ENABLE_MULTI_PASS = Boolean.parseBoolean(System.getenv().getOrDefault("ENABLE_MULTI_PASS", "true"));
     private static final int MAX_INJECTION_PASSES = Integer.parseInt(System.getenv().getOrDefault("MAX_INJECTION_PASSES", "3"));
+
+    // Thread pool size for concurrent file processing
     private static final int MODIFICATION_THREADS = Integer.parseInt(System.getenv().getOrDefault("MODIFICATION_THREADS", "16"));
+
+    // Optional allowlist , empty means all patterns are enabled
     private static final Set<String> ENABLED_PATTERN_NAMES = parseEnabledPatternNames(System.getenv("ENABLED_PATTERNS"));
     private static final List<Anti_Pattern> consideredAntiPattern = buildConsideredAntiPatternList();
+
+    /** Snapshot of axiom counts used for pre-flight pattern eligibility checks */
     private static final class OntologyProfile {
         final int someValuesFrom;
         final int allValuesFrom;
@@ -39,6 +63,7 @@ public class Main {
         final int objectPropertyAssertions;
         final int subPropertyAxioms;
         final int inversePropertyAxioms;
+
         OntologyProfile(int someValuesFrom,
                         int allValuesFrom,
                         int maxCardinality,
@@ -54,6 +79,7 @@ public class Main {
             this.subPropertyAxioms = subPropertyAxioms;
             this.inversePropertyAxioms = inversePropertyAxioms;
         }
+
         @Override
         public String toString() {
             return "someValuesFrom=" + someValuesFrom
@@ -65,6 +91,8 @@ public class Main {
                     + " inverseOf=" + inversePropertyAxioms;
         }
     }
+
+    /** All registered anti-patterns in declaration order */
     private static List<Anti_Pattern> allAntiPatterns() {
         return List.of(
                 new EID(),
@@ -83,6 +111,11 @@ public class Main {
                 new UEWPI()
         );
     }
+
+    /**
+     * Parses comma-separated pattern names from an env string
+     * Returns empty set if the value is null or blank , interpreted as "all patterns"
+     */
     private static Set<String> parseEnabledPatternNames(String raw) {
         if (raw == null || raw.trim().isEmpty()) {
             return Collections.emptySet();
@@ -93,6 +126,11 @@ public class Main {
                 .map(String::toUpperCase)
                 .collect(Collectors.toCollection(LinkedHashSet::new));
     }
+
+    /**
+     * Filters allAntiPatterns() by ENABLED_PATTERN_NAMES
+     * Logs a warning for any unrecognised names; throws if the result is empty
+     */
     private static List<Anti_Pattern> buildConsideredAntiPatternList() {
         List<Anti_Pattern> all = allAntiPatterns();
         if (ENABLED_PATTERN_NAMES.isEmpty()) {
@@ -114,11 +152,15 @@ public class Main {
         }
         return filtered;
     }
+
+    /** True if the filename already carries a known anti-pattern prefix , signals an already-processed file */
     private static boolean hasKnownPatternPrefix(String fileName) {
         String name = baseName(fileName);
         String prefix = name.split("_", 2)[0];
         return PREFIXES.contains(prefix);
     }
+
+    /** Entry point , discovers input files and dispatches injection tasks to the thread pool */
     public static void main(String[] args) {
         File inputDir = new File(INPUT_PATH);
         File[] dir = inputDir.listFiles();
@@ -150,6 +192,11 @@ public class Main {
             Thread.currentThread().interrupt();
         }
     }
+
+    /**
+     * Loads an OWL ontology from file using the provided manager
+     * Returns null on any load failure
+     */
     private static OWLOntology loadOntology(File file, OWLOntologyManager manager) {
         try {
             OWLOntology ontology = manager.loadOntologyFromOntologyDocument(file);
@@ -162,12 +209,19 @@ public class Main {
             return null;
         }
     }
+
+    /** Extracts the trailing filename component from an arbitrary path string */
     private static String baseName(String path) {
         if (path == null) return "";
         String p = path.trim().replace("\\", "/");
         int idx = p.lastIndexOf('/');
         return idx >= 0 ? p.substring(idx + 1) : p;
     }
+
+    /**
+     * Resolves an ontology file reference to an absolute File
+     * Handles bare filenames, /input/-prefixed paths, and ../input/-relative paths
+     */
     private static File resolveOntologyFile(String payload) {
         String p = payload == null ? "" : payload.trim();
         if (p.isEmpty()) {
@@ -181,6 +235,8 @@ public class Main {
         }
         return new File(INPUT_PATH, baseName(p));
     }
+
+    /** Sums counts of a specific axiom type across all ontologies in an imports closure */
     private static int countAxiomsInClosure(Set<OWLOntology> closure, AxiomType<?> axiomType) {
         int count = 0;
         for (OWLOntology o : closure) {
@@ -188,6 +244,8 @@ public class Main {
         }
         return count;
     }
+
+    /** Sums logical axiom counts across all ontologies in an imports closure */
     private static int countLogicalAxiomsInClosure(Set<OWLOntology> closure) {
         int count = 0;
         for (OWLOntology o : closure) {
@@ -195,6 +253,11 @@ public class Main {
         }
         return count;
     }
+
+    /**
+     * Builds an axiom-count profile from subclass restriction types and selected property/disjoint counts
+     * Used by missingSignalsForPattern() to short-circuit patterns that cannot structurally match
+     */
     private static OntologyProfile buildProfile(OWLOntology ontology) {
         int someValuesFrom = (int) ontology.axioms(AxiomType.SUBCLASS_OF)
                 .filter(ax -> ax.getSuperClass().getClassExpressionType().equals(ClassExpressionType.OBJECT_SOME_VALUES_FROM))
@@ -215,6 +278,11 @@ public class Main {
                 ontology.getAxiomCount(AxiomType.INVERSE_OBJECT_PROPERTIES)
         );
     }
+
+    /**
+     * Returns the structural prerequisite signals absent for a named pattern given a profile
+     * Empty list = no known prerequisites , pattern check proceeds regardless
+     */
     private static List<String> missingSignalsForPattern(String patternName, OntologyProfile profile) {
         List<String> missingSignals = new ArrayList<>();
         switch (patternName) {
@@ -245,6 +313,8 @@ public class Main {
         }
         return missingSignals;
     }
+
+    /** Creates an isolated copy of an ontology in a fresh manager , preserves imports declarations and all axioms */
     private static OWLOntology cloneOntology(OWLOntology source) throws OWLOntologyCreationException {
         OWLOntologyManager snapshotManager = OWLManager.createOWLOntologyManager();
         OWLOntology snapshot = source.getOntologyID().isAnonymous()
@@ -256,6 +326,12 @@ public class Main {
         snapshotManager.addAxioms(snapshot, source.getAxioms());
         return snapshot;
     }
+
+    /**
+     * Clones the source ontology, injects the given axioms, and serialises to outputFile
+     * Preserves the original document format; falls back to FunctionalSyntax on null
+     * Returns true on success
+     */
     private static boolean saveInjectedVariant(OWLOntology sourceOntology,
                                                List<OWLAxiom> injectionAxioms,
                                                File outputFile) {
@@ -281,6 +357,13 @@ public class Main {
         }
         return false;
     }
+
+    /**
+     * Core injection loop for a single ontology file
+     * Each pass: checks all enabled patterns, saves one output file per hit,
+     * then mutates the working ontology so the next pass builds on prior injections
+     * Returns the list of output filenames created
+     */
     public static List<String> executeInjection(String filepath) {
         List<String> newFiles = new LinkedList<>();
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
@@ -296,8 +379,11 @@ public class Main {
         }
         OWLOntology ontology = loadOntology(file, manager);
         if (ontology == null) return newFiles;
+
         Set<OWLOntology> importsClosure = ontology.getImportsClosure();
         OntologyProfile profile = buildProfile(ontology);
+
+        // pre-flight diagnostics , axiom profile, imports closure stats, pattern prerequisites
         System.out.println(file.getPath() + ": Checking for pattern");
         System.out.println("Axiom profile " + file.getName()
                 + " | subClass=" + ontology.getAxiomCount(AxiomType.SUBCLASS_OF)
@@ -318,14 +404,18 @@ public class Main {
                 + " closureDomain=" + countAxiomsInClosure(importsClosure, AxiomType.OBJECT_PROPERTY_DOMAIN)
                 + " closureRange=" + countAxiomsInClosure(importsClosure, AxiomType.OBJECT_PROPERTY_RANGE));
         System.out.println("Pattern prerequisites " + file.getName() + " | " + profile);
+
         Set<OWLAxiom> injectedAxiomSet = new HashSet<>();
         int passLimit = ENABLE_MULTI_PASS ? Math.max(1, MAX_INJECTION_PASSES) : 1;
+
         for (int pass = 1; pass <= passLimit; pass++) {
             Map<String, List<OWLAxiom>> possibleInjections = new LinkedHashMap<>();
+
             for (Anti_Pattern pattern : consideredAntiPattern) {
                 try {
                     Optional<List<OWLAxiom>> injectablePattern = pattern.checkForPossiblePatternCompletion(ontology);
                     if (injectablePattern.isPresent()) {
+                        // skip axioms already present in the ontology or injected in a prior pass
                         List<OWLAxiom> freshAxioms = injectablePattern.get().stream()
                                 .filter(ax -> !ontology.containsAxiom(ax))
                                 .filter(injectedAxiomSet::add)
@@ -360,6 +450,7 @@ public class Main {
                     t.printStackTrace();
                 }
             }
+
             if (possibleInjections.isEmpty()) {
                 if (pass == 1) {
                     System.out.println("No injectable anti-pattern found for " + file.getName());
@@ -368,6 +459,8 @@ public class Main {
                 }
                 break;
             }
+
+            // save one output file per pattern hit this pass
             for (Map.Entry<String, List<OWLAxiom>> injection : possibleInjections.entrySet()) {
                 String patternName = injection.getKey();
                 List<OWLAxiom> injectionAxioms = injection.getValue();
@@ -379,15 +472,20 @@ public class Main {
                     System.out.println("Successfully saved Ontology with pattern " + patternName + " pass=" + pass + ": " + outputName);
                 }
             }
+
+            // mutate working ontology so the next pass can build on this pass's injections
             for (List<OWLAxiom> injectionAxioms : possibleInjections.values()) {
                 for (OWLAxiom injectionAxiom : injectionAxioms) {
                     manager.addAxiom(ontology, injectionAxiom);
                 }
             }
+
             if (!ENABLE_MULTI_PASS) {
                 break;
             }
         }
+
         return newFiles;
     }
 }
+
